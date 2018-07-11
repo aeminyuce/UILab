@@ -8,4 +8,4 @@ Compatible with all modern browsers and IE9+
 
 ## Copyright and License
 
-Copyright [ahmeteminyuce] under the [MIT license](LICENSE.md).
+Copyright [ahmeteminyuce] under the [MIT license](LICENSE).
