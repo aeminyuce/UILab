@@ -1,7 +1,7 @@
 # UI Lab
 
 CSS and JavaScript Tools.
-* [Documentation Examples](docs/examples.html)
+* [Documentation Examples](https://ahmeteminyuce.github.io/UILab/docs/examples.html)
 
 ## Browser Support
 
