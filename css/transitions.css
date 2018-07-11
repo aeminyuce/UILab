@@ -1,5 +1,5 @@
 /* transitions */
-[class*="ease-"] { -webkit-backface-visibility: hidden; transition-duration: .15s; transition-timing-function: ease-out; }
+[class*="ease-"] { transition-duration: .15s; transition-timing-function: ease-out; }
 .no-transitions,.no-transitions-all [class*="ease-"],.no-transitions-all [class*="ease-"]:before,.no-transitions-all [class*="ease-"]:after { transition-property: none !important; }
 
 .ease-fast { transition-duration: .1s; }

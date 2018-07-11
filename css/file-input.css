@@ -1,5 +1,5 @@
 /* file input */
-.file{ vertical-align: middle; line-height: normal; min-height: 32px; border: solid 1px rgba(0,0,0,.25); overflow: hidden; display: block; position: relative; }
+.file{ vertical-align: middle; line-height: normal; min-height: 32px; border: solid 1px rgba(0,0,0,.15); overflow: hidden; display: block; position: relative; }
 .file,.file input { cursor: pointer; }
 .file input { vertical-align: middle; width: 100%; height: 30px; overflow: hidden; position: absolute; top: 0; left: 0; z-index: 1; opacity: 0; }
 .file.dual-bordered input { height: 28px; }

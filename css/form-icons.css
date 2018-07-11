@@ -7,12 +7,12 @@
 .text-icon > button.icon { background-color: rgba(255,255,255,.0); border: 0; cursor: pointer; }
 .text-icon > button.icon:hover { opacity: .75; }
 
-.text-icon > input,.text-icon-right > input,.text-icon-both > input { padding-right: 24px; }
-.text-icon-left > input,.text-icon-both > input { padding-left: 24px; }
-.text-icon-md > input,.text-icon-md.text-icon-right > input,.text-icon-md.text-icon-both > input { padding-right: 28px; }
-.text-icon-md.text-icon-left > input,.text-icon-md.text-icon-both > input { padding-left: 28px; }
-.text-icon-lg > input,.text-icon-lg.text-icon-right > input,.text-icon-lg.text-icon-both > input { padding-right: 34px; }
-.text-icon-lg.text-icon-left > input,.text-icon-lg.text-icon-both > input { padding-left: 34px; }
+.text-icon > input,.text-icon-right > input,.text-icon-both > input { padding-right: 24px !important; }
+.text-icon-left > input,.text-icon-both > input { padding-left: 24px !important; }
+.text-icon-md > input,.text-icon-md.text-icon-right > input,.text-icon-md.text-icon-both > input { padding-right: 28px !important; }
+.text-icon-md.text-icon-left > input,.text-icon-md.text-icon-both > input { padding-left: 28px !important; }
+.text-icon-lg > input,.text-icon-lg.text-icon-right > input,.text-icon-lg.text-icon-both > input { padding-right: 34px !important; }
+.text-icon-lg.text-icon-left > input,.text-icon-lg.text-icon-both > input { padding-left: 34px !important; }
 
 .text-icon-left > input { padding-right: 5px; }
 
