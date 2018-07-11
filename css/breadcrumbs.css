@@ -1,0 +1,12 @@
+/* breadcrumbs */
+.breadcrumbs:not(:last-child) { margin-bottom: 10px; }
+.breadcrumbs li:not(:first-child):before { content: "/ "; color: rgba(0,0,0,.25); vertical-align: bottom; margin-right: 10px; display: inline-block; }
+.breadcrumbs li:not(:last-child) { margin-right: 5px; }
+.breadcrumbs li a { vertical-align: text-bottom; display: inline-block; }
+
+@media (max-width: 767px) {
+    .breadcrumbs { text-align: center; margin-top: 5px; }
+    .breadcrumbs li:not(:last-child) { margin-right: 2px; }
+    .breadcrumbs li:not(:first-child):before { content: ""; margin-right: 0; }
+    .breadcrumbs li:not(:last-child):after { content: ","; }
+}

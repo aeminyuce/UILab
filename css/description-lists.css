@@ -1,0 +1,12 @@
+/* description lists */
+dl:not(:last-child) { margin-bottom: 20px; }
+dt { font-weight: 700; }
+
+@media (min-width: 768px) {
+    .dl-horizontal dt { white-space: nowrap; text-overflow: ellipsis; width: 170px; float: left; overflow: hidden; clear: left; position: relative; }
+    .dl-horizontal dt:after { content: ":"; position: absolute; right: 0; }
+    .dl-horizontal dd { margin-left: 180px; }
+}
+@media (max-width: 767px) {
+    .dl-horizontal dd { margin-bottom: 5px; }
+}

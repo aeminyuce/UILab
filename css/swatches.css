@@ -1,0 +1,60 @@
+/* swatches */
+.ui-x-light,.ui-x-light .icon:not([class*="ui-"]),.ui-x-light a:not([class*="ui-"]),.ui-x-light button:not([class*="ui-"]) { color: #000; }
+.ui-light,.ui-light .icon:not([class*="ui-"]),.ui-light a:not([class*="ui-"]),.ui-light button:not([class*="ui-"]) { color: #000; }
+.ui-dark,.ui-dark .icon:not([class*="ui-"]),.ui-dark a:not([class*="ui-"]),.ui-dark button:not([class*="ui-"]) { color: #fff; }
+.ui-x-dark,.ui-x-dark .icon:not([class*="ui-"]),.ui-x-dark a:not([class*="ui-"]),.ui-x-dark button:not([class*="ui-"]) { color: #fff; }
+
+.x-light-ui,.x-light-ui v { color: rgba(255,255,255,.65); }
+.light-ui,.light-ui a:not([class*="ui-"]) { color: rgba(255,255,255,.45); }
+.dark-ui,.dark-ui a:not([class*="ui-"]) { color: rgba(0,0,0,.45); }
+.x-dark-ui,.x-dark-ui a:not([class*="ui-"]) { color: rgba(0,0,0,.65); }
+
+.theme-white.ui-light,.theme-white .ui-light:not([class*="theme-"]) { background-color: #fff; }
+.theme-white.ui-text,.theme-white .ui-text:not([class*="theme-"]) { color: #fff; }
+.theme-white.ui-border,.theme-white .ui-border:not([class*="theme-"]) { border-color: #fff; }
+
+.theme-black.ui-dark,.theme-black .ui-dark:not([class*="theme-"]) { background-color: #181818; }
+.theme-black.ui-text,.theme-black .ui-text:not([class*="theme-"]) { color: #181818; }
+.theme-black.ui-border,.theme-black .ui-border:not([class*="theme-"]) { border-color: #181818; }
+
+.theme-gray.ui-x-light,.theme-gray .ui-x-light:not([class*="theme-"]) { background-color: #f5f5f5; }
+.theme-gray.ui-light,.theme-gray .ui-light:not([class*="theme-"]) { background-color: #ededed; }
+.theme-gray.ui-dark,.theme-gray .ui-dark:not([class*="theme-"]) { background-color: #ccc; }
+.theme-gray.ui-text,.theme-gray .ui-text:not([class*="theme-"]) { color: #ccc; }
+.theme-gray.ui-border,.theme-gray .ui-border:not([class*="theme-"]) { border-color: #ccc; }
+.theme-gray.ui-x-dark,.theme-gray .ui-x-dark:not([class*="theme-"]) { background-color: #aaa; }
+
+.theme-green.ui-x-light,.theme-green .ui-x-light:not([class*="theme-"]) { background-color: #d8fcdc; }
+.theme-green.ui-light,.theme-green .ui-light:not([class*="theme-"]) { background-color: #adf7b5; }
+.theme-green.ui-dark,.theme-green .ui-dark:not([class*="theme-"]) { background-color: #2dbd3a; }
+.theme-green.ui-text,.theme-green .ui-text:not([class*="theme-"]) { color: #2dbd3a; }
+.theme-green.ui-border,.theme-green .ui-border:not([class*="theme-"]) { border-color: #2dbd3a; }
+.theme-green.ui-x-dark,.theme-green .ui-x-dark:not([class*="theme-"]) { background-color: #13a420; }
+
+.theme-yellow.ui-x-light,.theme-yellow .ui-x-light:not([class*="theme-"]) { background-color: #fff4dc; }
+.theme-yellow.ui-light,.theme-yellow .ui-light:not([class*="theme-"]) { background-color: #ffdfa2; }
+.theme-yellow.ui-dark,.theme-yellow .ui-dark:not([class*="theme-"]) { background-color: #ffa600; }
+.theme-yellow.ui-text,.theme-yellow .ui-text:not([class*="theme-"]) { color: #ffa600; }
+.theme-yellow.ui-border,.theme-yellow .ui-border:not([class*="theme-"]) { border-color: #ffa600; }
+.theme-yellow.ui-x-dark,.theme-yellow .ui-x-dark:not([class*="theme-"]) { background-color: #d98d00; }
+
+.theme-orange.ui-x-light,.theme-orange .ui-x-light:not([class*="theme-"]) { background-color: #ffebd8; }
+.theme-orange.ui-light,.theme-orange .ui-light:not([class*="theme-"]) { background-color: #ffcea1; }
+.theme-orange.ui-dark,.theme-orange .ui-dark:not([class*="theme-"]) { background-color: #f47500; }
+.theme-orange.ui-text,.theme-orange .ui-text:not([class*="theme-"]) { color: #f47500; }
+.theme-orange.ui-border,.theme-orange .ui-border:not([class*="theme-"]) { border-color: #f47500; }
+.theme-orange.ui-x-dark,.theme-orange .ui-x-dark:not([class*="theme-"]) { background-color: #dd6a00; }
+
+.theme-red.ui-x-light,.theme-red .ui-x-light:not([class*="theme-"]) { background-color: #ffd9dc; }
+.theme-red.ui-light,.theme-red .ui-light:not([class*="theme-"]) { background-color: #ffa7ad; }
+.theme-red.ui-dark,.theme-red .ui-dark:not([class*="theme-"]) { background-color: #dc000f; }
+.theme-red.ui-text,.theme-red .ui-text:not([class*="theme-"]) { color: #dc000f; }
+.theme-red.ui-border,.theme-red .ui-border:not([class*="theme-"]) { border-color: #dc000f; }
+.theme-red.ui-x-dark,.theme-red .ui-x-dark:not([class*="theme-"]) { background-color: #bb000d; }
+
+.theme-blue.ui-x-light,.theme-blue .ui-x-light:not([class*="theme-"]) { background-color: #daebff; }
+.theme-blue.ui-light,.theme-blue .ui-light:not([class*="theme-"]) { background-color: #a7d1ff; }
+.theme-blue.ui-dark,.theme-blue .ui-dark:not([class*="theme-"]) { background-color: #235ea0; }
+.theme-blue.ui-text,.theme-blue .ui-text:not([class*="theme-"]) { color: #235ea0; }
+.theme-blue.ui-border,.theme-blue .ui-border:not([class*="theme-"]) { border-color: #235ea0; }
+.theme-blue.ui-x-dark,.theme-blue .ui-x-dark:not([class*="theme-"]) { background-color: #1a4778; }

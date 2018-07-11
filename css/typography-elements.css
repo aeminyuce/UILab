@@ -1,0 +1,20 @@
+/* typography elements */
+.lead { font-size: 21px; line-height: 1.4; margin-bottom: 20px; }
+.semibold { font-weight: 500 !important; }
+.regular { font-weight: normal !important; }
+.thin { font-weight: 200 !important; }
+.italic { font-style: italic; !important; }
+.overline { text-decoration: line-through; }
+
+.lowercase { text-transform: lowercase; }
+.uppercase { text-transform: uppercase; }
+.capitalize { text-transform: capitalize; }
+.initialism { font-size: 90%; text-transform: uppercase; }
+
+.no-line-height { line-height: normal !important; }
+.word-break-all { word-break: break-all; }
+
+abbr[title] { cursor: help; }
+
+address:not(:last-child) { margin-bottom: 20px; }
+address { font-style: normal; }

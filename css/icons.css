@@ -1,0 +1,14 @@
+/* icons */
+.icon:not(.sprite) { text-align: center; vertical-align: middle; line-height: normal !important; display: inline-block; }
+button.icon { background-color: rgba(0,0,0,0); }
+
+.icon:not(.sprite).icon-xxs { font-size: 8px; vertical-align: -5%; width: 1.18em; }
+.icon:not(.sprite).icon-xs { font-size: 10px; vertical-align: -10%; width: 1.11em; }
+.icon:not(.sprite).icon-sm { font-size: 14px; vertical-align: -17.5%; width: 1.073em; }
+.icon:not(.sprite).icon-md { font-size: 18px; vertical-align: -22.5%; width: 1.057em; }
+.icon:not(.sprite).icon-lg { font-size: 24px; vertical-align: -25%; width: 1.043em; }
+.icon:not(.sprite).icon-xl { font-size: 32px; vertical-align: -32.5%; width: 1.032em; }
+.icon:not(.sprite).icon-xxl { font-size: 48px; vertical-align: -40%; width: 1.029em; }
+
+.icon-mirror-v { transform: scaleY(-1); }
+.icon-mirror-h { transform: scaleX(-1); }

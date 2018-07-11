@@ -1,0 +1,16 @@
+/* icon notifiers */
+.notifier { position: relative; }
+.notifier:after { content: ""; width: 40%; height: 40%; background-color: red; border-radius: 60px; position: absolute; top: -8%; right: -8%; z-index: 1; }
+
+[data-notifier]:not(.icon-xs):not(.icon-xxs):after { content: attr(data-notifier); color: #fff; font-size: 46%; font-family: Arial, sans-serif; text-align: center; min-width: 74%; width: auto; height: 75%; padding: 11% 16%; }
+[data-notifier].icon-md:after { padding-top: 8% !important; padding-bottom: 8% !important; }
+[data-notifier].icon-lg:after { padding-top: 12% !important; padding-bottom: 12% !important; }
+
+.notifier-yellow:after { background-color: #ffa600; }
+.notifier-green:after { background-color: #2dbd3a; }
+.notifier-orange:after { background-color: #f47500; }
+.notifier-blue:after { background-color: #235ea0; }
+.notifier-white:after { background-color: white; }
+.notifier-white[data-notifier]:after { color: #000; }
+.notifier-gray:after { background-color: gray; }
+.notifier-black:after { background-color: black; }

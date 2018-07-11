@@ -1,0 +1,16 @@
+/* file input */
+.file{ vertical-align: middle; line-height: normal; min-height: 32px; border: solid 1px rgba(0,0,0,.25); overflow: hidden; display: block; position: relative; }
+.file,.file input { cursor: pointer; }
+.file input { vertical-align: middle; width: 100%; height: 30px; overflow: hidden; position: absolute; top: 0; left: 0; z-index: 1; opacity: 0; }
+.file.dual-bordered input { height: 28px; }
+
+.table .file { min-width: 120px; }
+
+.file .btn { line-height: 16px; width: 128px; height: 30px; float: left; }
+.file.dual-bordered .btn { width: 126px; }
+.file .btn.rounded { border-radius: 2px 0 0 2px; }
+.file.dual-bordered .btn { height: 28px; }
+.file:hover .btn { background-color: rgba(0,0,0,.15); }
+
+.file > span { white-space: nowrap; text-overflow: ellipsis; line-height: 30px; width: 100%; padding-right: 10px; padding-left: 135px; overflow: hidden; display: block; position: absolute; }
+.file.dual-bordered > span {line-height: 28px; }

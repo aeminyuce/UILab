@@ -1,0 +1,36 @@
+/*
+ Toggle Password JS
+ Toggle Password JS requires Events JS
+*/
+
+/*globals document, selector, events */
+function togglePasswordFnc() {
+
+    'use strict';
+
+    events.on(document, 'click', '.toggle-password', function () {
+
+        var t, p, id = this.getAttribute('data-id');
+
+        if (id === null) {
+
+            p = events.closest(this, '.text');
+            if (p.length === 1) {
+                t = selector('input', p);
+            }
+
+        } else { t = selector('#' + id)[0]; }
+
+        if (t.getAttribute('type') === 'password') { t.setAttribute('type', 'text'); } else { t.setAttribute('type', 'password'); }
+
+    });
+
+}
+
+/*!loader */
+events.onload(function () {
+
+    'use strict';
+    togglePasswordFnc();
+
+});

@@ -1,0 +1,19 @@
+/* button holder */
+.btn-holder > .btn { float: left; }
+.btn-holder > .btn:last-child { border-right: 0; }
+
+.btn-holder.show-6 > .btn { width: 16.666666%; }
+.btn-holder.show-5 > .btn { width: 20%; }
+.btn-holder.show-4 > .btn { width: 25%; }
+.btn-holder.show-3 > .btn { width: 33.333333%; }
+.btn-holder.show-2 > .btn { width: 50%; }
+.btn-holder.show-1 > .btn { width: 100%; }
+
+.btn-holder-inline > .btn { margin-right: -2px !important; margin-left: -2px !important; }
+
+@media (max-width: 767px) {
+    .btn-holder.sm-responsive > .btn { width: 100%; border-right: 0; float: inherit; }
+}
+@media (max-width: 480px) {
+    .btn-holder.xs-responsive > .btn { width: 100%; border-right: 0; float: inherit; }
+}

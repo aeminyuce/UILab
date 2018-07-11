@@ -1,0 +1,20 @@
+/* animated-links */
+[class*="link-"]:after,[class*="underline-"]:after { content: ""; height: 1px; display: block; position: absolute; bottom: 1px; }
+[class*="link-"]:hover,[class*="underline-"]:hover { text-decoration: none; }
+button[class*="link-"],button[class*="underline-"] { background-color: rgba(0,0,0,0); border: 0; bottom: 0; }
+
+[class*="link-"],[class*="underline-"] { white-space: nowrap !important; line-height: normal !important; display: inline-block; position: relative; }
+[class*="link-"]:after { width: 0; left: 50%; opacity: 0; }
+html:not(.mobile) [class*="link-"]:hover:after { width: 100%; left: 0; opacity: 1; }
+
+[class*="underline-"]:after { width: 100%; background-color: currentColor; left: 0; }
+html:not(.mobile) [class*="underline-"]:hover:after { width: 0; left: 50%; opacity: 1; }
+
+.ease-link:after { transition-property: width, left, opacity; transition-duration: .3s; }
+
+.link-default:after,.underline-default:after { background-color: currentColor; }
+.link-green:after,.underline-green:after { background-color: #2dbd3a; }
+.link-yellow:after,.underline-yellow:after { background-color: #cb7a00; }
+.link-red:after,.underline-red:after { background-color: #dc000f; }
+.link-blue:after,.underline-blue:after { background-color: #235ea0; }
+.link-orange:after,.underline-orange:after { background-color: #f47500; }

@@ -1,0 +1,54 @@
+/* typography */
+h1,h2,h3,h4,h5,h6 { font-weight: normal; line-height: 1.24em; margin-bottom: 0; }
+h1:not(:last-child),h2:not(:last-child),h3:not(:last-child),h4:not(:last-child),h5:not(:last-child),h6:not(:last-child) { margin-bottom: 10px; }
+h1 > small,h2 > small,h3 > small,h4 > small,h5 > small,h6 > small { font-size: 14px !important; line-height: normal !important; }
+
+h1 { font-size: 36px; }
+h2 { font-size: 30px; }
+h3 { font-size: 24px; }
+h4 { font-size: 18px; }
+h5 { font-size: 14px; }
+h6 { font-size: 12px; }
+
+@media (max-width: 480px) {
+    h1,h2,h3,h4,h5,h6 { text-align: center; }
+    h1 > small,h2 > small,h3 > small,h4 > small,h5 > small,h6 > small { text-align: center; display: block; }
+}
+
+body,a { color: #000; }
+a:hover { text-decoration: underline; }
+
+.xx-smallest { font-size: 7px !important; }
+.x-smallest { font-size: 8px !important; }
+.smallest { font-size: 9px !important; }
+.xx-small { font-size: 10px !important; }
+.x-small { font-size: 11px !important; }
+.small { font-size: 12px !important; }
+.default { font-size: 14px !important; }
+.large { font-size: 16px !important; }
+.x-large { font-size: 18px !important; }
+.xx-large { font-size: 22px !important; }
+.largest { font-size: 28px !important; }
+.x-largest { font-size: 38px !important; }
+.xx-largest { font-size: 48px !important; }
+
+.xx-light,.xx-light a { color: #fff !important; }
+.x-light,.x-light a { color: #f6f6f6 !important; }
+.light,.light a { color: #c5c5c5 !important; }
+.dark,.dark a { color: #999 !important; }
+.x-dark,.x-dark a { color: #777 !important; }
+.xx-dark,.xx-dark a { color: #000 !important; }
+
+.font-green,.font-green a { color: #2dbd3a !important; }
+.font-yellow,.font-yellow a { color: #ffa600 !important; }
+.font-red,.font-red a { color: #dc000f !important; }
+.font-blue,.font-blue a { color: #235ea0 !important; }
+.font-orange,.font-orange a { color: #f47500 !important; }
+.font-default,.font-default a { color: #000 !important; }
+
+.bold { font-weight: bold !important; }
+
+.underline { text-decoration: underline; }
+a.underline:hover,button.underline:hover { text-decoration: none; }
+
+.ellipsis { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
