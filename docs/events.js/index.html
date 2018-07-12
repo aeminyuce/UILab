@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Events JS</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            body { font: 14px/1.42857143 Arial, sans-serif; }
+            ul {
+                list-style: none;
+                padding-left: 0;
+            }
+            li {
+                color: #999;
+                font-size: 12px;
+                font-weight: bold;
+                line-height: normal;
+                background-color: #f7f7f7;
+                padding: 8px 10px;
+                margin-bottom: 3px;
+                border: solid 1px #e5e5e5;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            li:hover {
+                background-color: #eee;
+                border-color: #ccc;
+            }
+            li i {
+                color: #383838;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: normal;
+                display: block;
+            }
+            li b {
+                margin-top: 3px;
+                margin-left: 10px;
+                display: block;
+            }
+        </style>
+
+        <script src="../../js/selector.js"></script>
+        <script src="../../js/events.js"></script>
+        <script>
+            events.on(window, 'load', function () {
+
+                /* add events */
+                events.on('.btn-click-add', 'click', function () {
+                    alert('Button click.');
+                });
+                events.on('.btn-mousedown-add', 'mousedown', function () {
+                    alert('Button mousedown.');
+                });
+
+                /* remove events */
+                events.on('.btn-click-remove', 'click', function () {
+                    alert('Button click.');
+                });
+                events.off('.btn-click-remove', 'click');
+                events.on('.btn-mousedown-remove', 'mousedown', function () {
+                    alert('Button mousedown.');
+                });
+                events.off('.btn-mousedown-remove', 'mousedown');
+
+                /* trigger events */
+                events.on('.btn-click-trigger', 'click', function () {
+                    events.trigger('.btn-click-add', 'click');
+                });
+                events.on('.btn-mousedown-trigger', 'click', function () {
+                    events.trigger('.btn-mousedown-add', 'mousedown');
+                });
+
+                /* check classname */
+                events.on('.btn-click-check', 'click', function () {
+                    alert(events.hasClass(this, 'new-class'));
+                });
+
+                /* add/remove classname */
+                events.on('.btn-class-add', 'click', function () {
+                    events.addClass(this, 'new-class');
+                    alert(this.className);
+                });
+                events.on('.btn-class-remove', 'click', function () {
+                    events.removeClass(this, 'old-class');
+                    alert(this.className);
+                });
+
+                /* show/hide element */
+                events.on('.btn-show', 'click', function () {
+                    events.show('.btn-show i');
+                });
+                events.on('.btn-hide', 'click', function () {
+                    events.hide('.btn-hide i');
+                });
+
+                /* .each() run for each matched element */
+                events.on('.btn-each', 'click', function () {
+                    events.each('.btn-each b', function () {
+                        console.log(this.innerHTML);
+                    });
+                });
+
+                /* .closest() Returns the first ancestor */
+                events.on('.btn-closest', 'click', function () {
+                    var el = events.closest('.btn-closest', 'div.parent');
+                    console.log(el);
+                });
+
+            });
+        </script>
+
+    </head>
+    <body>
+
+        <h1>Events JS Examples</h1>
+        <h3>Events JS requires Selector JS.</h3>
+        <p>Events JS is a simple javascript creating and triggering events. Please, click and check the event results.</p>
+
+        <h4>Add events:</h4>
+        <ul>
+            <li class="btn-click-add">
+                Add click event:
+                <i>events.on('.btn-click-add', 'click', function () { alert('Button click.'); });</i>
+            </li>
+            <li class="btn-mousedown-add">
+                Add mousedown event:
+                <i>events.on('.btn-mousedown-add', 'mousedown', function () { alert('Button mousedown.'); });</i>
+            </li>
+        </ul>
+
+        <h4>Remove events:</h4>
+        <ul>
+            <li class="btn-click-remove">
+                Remove click event:
+                <i>events.off('.btn-click-remove', 'click');</i>
+            </li>
+            <li class="btn-mousedown-remove">
+                Remove mousedown event:
+                <i>events.off('.btn-mousedown-remove', 'mousedown');</i>
+            </li>
+        </ul>
+
+        <h4>Trigger events:</h4>
+        <ul>
+            <li class="btn-click-trigger">
+                Trigger click event:
+                <i>events.trigger('.btn-click-trigger', 'click');</i>
+            </li>
+            <li class="btn-mousedown-trigger">
+                Trigger mousedown event:
+                <i>events.trigger('.btn-mousedown-trgigger', 'mousedown');</i>
+            </li>
+        </ul>
+
+        <h4>Check classname:</h4>
+        <ul>
+            <li class="btn-click-check new-class">
+                Check element has a class named "new-class":
+                <i>events.hasClass('.btn-click-check', 'new-class');</i>
+            </li>
+        </ul>
+
+        <h4>Add/Remove classname:</h4>
+        <ul>
+            <li class="btn-class-add">
+                Add a class name "new-class":
+                <i>events.addClass('.btn-class-add', 'new-class');</i>
+            </li>
+            <li class="btn-class-remove old-class">
+                Remove a class named "old-class":
+                <i>events.removeClass('.btn-class-remove', 'old-class');</i>
+            </li>
+        </ul>
+
+        <h4>Show/Hide element:</h4>
+        <ul>
+            <li class="btn-show">
+                Show element "&lt;i&gt;":
+                <i style="display: none;">events.show('.btn-show i');</i>
+            </li>
+            <li class="btn-hide">
+                Hide element "&lt;i&gt;":
+                <i>events.hide('.btn-hide i');</i>
+            </li>
+        </ul>
+
+        <h4>.each() Run for each matched element:</h4>
+        <ul>
+            <li class="btn-each">
+                Check the console to see the results:
+                <i>events.each('.btn-each b', function () { console.log(this.innerHTML); });</i>
+                <b>First matched element</b>
+                <b>Second matched element</b>
+                <b>Third matched element</b>
+            </li>
+        </ul>
+
+        <h4>.closest() Returns the first ancestor:</h4>
+        <div class="parent third-ancestor">
+            <div class="parent second-ancestor">
+                <div class="parent first-ancestor">
+                    <ul>
+                        <li class="btn-closest">
+                            Check the console to see the results:
+                            <i>events.closest('.btn-closest', 'div.parent');</i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <p>* Compatible with all modern browsers and IE9+</p>
+
+    </body>
+</html>
