@@ -2,7 +2,7 @@
 
 Selector JS is a simple javascript selector to select HTML elements.
 
-* [Documentation Examples](https://ahmeteminyuce.github.io/UILabs/docs/selector.js/index.html)
+* [Documentation Examples](https://ahmeteminyuce.github.io/UILab/docs/selector.js/index.html)
 
 
 **Select tagname:**
