@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Selector JS</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            body { font: 14px/1.42857143 Arial, sans-serif; }
+            ul {
+                list-style: none;
+                padding-left: 0;
+            }
+            li {
+                color: #999;
+                font-size: 12px;
+                font-weight: bold;
+                line-height: normal;
+                background-color: #f7f7f7;
+                padding: 8px 10px;
+                margin-bottom: 3px;
+                border: solid 1px #e5e5e5;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            li:hover {
+                background-color: #eee;
+                border-color: #ccc;
+            }
+            li i {
+                color: #383838;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: normal;
+                display: block;
+            }
+        </style>
+
+        <script src="../../js/selector.js"></script>
+
+    </head>
+    <body>
+
+        <h1>Selector JS Examples</h1>
+        <p>Selector JS is a simple javascript selector to select HTML elements. Please, click and check the console to see returned element/array/nodelist.</p>
+
+        <ul>
+            <li onclick="console.log(selector('li'));">
+                Select tagname:
+                <i>selector('li');</i>
+            </li>
+            <li onclick="console.log(selector('li, i'));">
+                Select multiple tagname:
+                <i>selector('li, i');</i>
+            </li>
+            <li onclick="console.log(selector('li')[0]);">
+                Select first tagname:
+                <i>selector('li')[0];</i>
+            </li>
+            <li onclick="console.log(selector('li:last-child'));">
+                Select CSS3 last-child of tagname:
+                <i>selector('li:last-child');</i>
+            </li>
+            <li onclick="console.log(selector('.select-classname'));" class="select-classname">
+                Select Classname:
+                <i>selector('.select-classname');</i>
+            </li>
+            <li onclick="console.log(selector('#select-id'));" id="select-id">
+                Select id:
+                <i>selector('#select-id');</i>
+            </li>
+            <li onclick="console.log(selector('[onclick]'));">
+                Select with attribute:
+                <i>selector('[onclick]');</i>
+            </li>
+        </ul>
+
+        <ul>
+            <li onclick="console.log(selector(document));">
+                Select document:
+                <i>selector(document);</i>
+            </li>
+            <li onclick="console.log(selector(window));">
+                Select window:
+                <i>selector(window);</i>
+            </li>
+            <li onclick="console.log(selector(this));">
+                Select this element:
+                <i>selector(this);</i>
+            </li>
+        </ul>
+
+        <ul>
+            <li onclick="console.log(selector('i', this));">
+                Find tagname in this element:
+                <i>selector('i', this);</i>
+            </li>
+            <li onclick="console.log(selector('.inner-classname', '.outer-classname'));" class="outer-classname">
+                Find classname in selected classname:
+                <i class="inner-classname">selector('.inner-classname', '.outer-classname');</i>
+            </li>
+            <li onclick="console.log(selector('#inner-id', '.outer-classname2'));" class="outer-classname2">
+                Find id in selected classname:
+                <i id="inner-id">selector('#inner-id', '.outer-classname2');</i>
+            </li>
+        </ul>
+
+        <p>* Compatible with all modern browsers and IE9+</p>
+
+    </body>
+</html>
