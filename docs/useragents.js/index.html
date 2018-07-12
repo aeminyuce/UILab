@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Useragents JS</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            body { font: 14px/1.42857143 Arial, sans-serif; }
+            div {
+                color: #383838;
+                line-height: normal;
+                background-color: #f7f7f7;
+                padding: 8px 10px;
+                margin-bottom: 3px;
+                border-radius: 4px;
+            }
+            div > b {
+                color: #999;
+                font-size: 12px;
+                margin-top: 3px;
+                display: block;
+            }
+            div > i {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: normal;
+                margin: 10px 0 10px 10px;
+                display: block;
+            }
+            div > span {
+                margin-top: 3px;
+                display: block;
+            }
+        </style>
+
+        <script src="../../js/selector.js"></script>
+        <script src="../../js/events.js"></script>
+        <script src="../../js/useragents.js"></script>
+        <script>
+            events.on(window, 'load', function () {
+
+                var results = selector(document)[0].getAttribute('class'),
+                    variables = selector('.variables li'),
+                    portrait = selector('span.p')[0],
+                    landscape = selector('span.l')[0];
+
+                selector('.results i')[0].innerHTML = results;
+
+                variables[0].append(useragents.ie);
+                variables[1].append(useragents.ie9);
+                variables[2].append(useragents.edge);
+                variables[3].append(useragents.mobile);
+                variables[4].append(useragents.ios);
+                variables[5].append(useragents.android);
+                variables[6].append(useragents.androidOld);
+                variables[7].append(useragents.androidWebView);
+
+                events.on(document, 'useragents:portrait', function () {
+                    portrait.innerHTML = 'true';
+                    landscape.innerHTML = 'false';
+                });
+                events.on(document, 'useragents:landscape', function () {
+                    portrait.innerHTML = 'false';
+                    landscape.innerHTML = 'true';
+                });
+
+            });
+        </script>
+
+    </head>
+    <body>
+
+        <h1>Useragents JS Examples</h1>
+        <h3>Events JS requires Selector JS.</h3>
+        <p>Useragents JS is a simple javascript detecting browsers, devices and operating systems.</p>
+
+        <div class="results">
+            <b>User agents:</b>
+            <i></i>
+        </div>
+
+        <div class="variables">
+            <b>Variables:</b>
+            <ul>
+                <li>useragents.ie: </li>
+                <li>useragents.ie9: </li>
+                <li>useragents.edge: </li>
+                <li>useragents.mobile: </li>
+                <li>useragents.ios: </li>
+                <li>useragents.android: </li>
+                <li>useragents.androidOld: </li>
+                <li>useragents.androidWebView: </li>
+            </ul>
+        </div>
+
+        <div class="mobileevents">
+            <b>Mobile orientation change events:</b>
+            <span>Please, change orientation of your device to see the results:</span>
+            <i>events.on(document, 'useragents:portrait'); <span class="p"></span></i>
+            <i>events.on(document, 'useragents:landscape'); <span class="l"></span></i>
+        </div>
+
+        <p>* Compatible with all modern browsers and IE9+</p>
+
+    </body>
+</html>
