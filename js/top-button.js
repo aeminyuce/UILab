@@ -12,13 +12,52 @@ var topButton = {
 
 };
 
+function topButtonTogglerFnc() {
+
+    'use strict';
+
+    var ua, btn;
+
+    ua = navigator.userAgent.toLowerCase();
+    btn = selector('.top-button');
+
+    if (topButton.target === '') {
+
+        if (ua.indexOf('edge') > -1 || (ua.indexOf('mobile') > -1 && ua.indexOf('apple') > -1)) {
+            window.topButtonScrollTarget = document.body; // edge and ios devices returns document.documentElement = 0
+
+        } else {
+            window.topButtonScrollTarget = document.documentElement;
+        }
+
+    } else { window.topButtonScrollTarget = selector(topButton.target)[0]; }
+
+    if (window.topButtonScrollTarget.scrollTop > 50) {
+
+        if (!events.hasClass(btn, 'open')) {
+
+            events.addClass(btn, 'open');
+            setTimeout(function () { events.addClass(btn, 'open-ease'); }, 150);
+
+        }
+
+    } else {
+
+        if (events.hasClass(btn, 'open')) {
+
+            events.removeClass(btn, 'open-ease');
+            setTimeout(function () { events.removeClass(btn, 'open'); }, 150);
+
+        }
+    }
+
+}
+
 function topButtonFnc() {
 
     'use strict';
 
-    var ua, titleText, userLang, html, btn, scrollTarget;
-
-    ua = navigator.userAgent.toLowerCase();
+    var titleText, userLang, html;
 
     userLang = (navigator.language || navigator.userLanguage).split('-')[0];
     if (userLang === 'tr') { titleText = 'Yukarı Dön!'; } else { titleText = 'Back To Top!'; }
@@ -29,51 +68,16 @@ function topButtonFnc() {
         );
 
     selector('body')[0].insertAdjacentHTML('beforeend', html);
-    btn = selector('.top-button');
 
-    window.topButtonToggler = function () {
-
-        if (topButton.target === '') {
-
-            if (ua.indexOf('edge') > -1 || (ua.indexOf('mobile') > -1 && ua.indexOf('apple') > -1)) {
-                scrollTarget = document.body; // edge and ios devices returns document.documentElement = 0
-
-            } else {
-                scrollTarget = document.documentElement;
-            }
-
-        } else { scrollTarget = selector(topButton.target)[0]; }
-
-        if (scrollTarget.scrollTop > 50) {
-
-            if (!events.hasClass(btn, 'open')) {
-
-                events.addClass(btn, 'open');
-                setTimeout(function () { events.addClass(btn, 'open-ease'); }, 150);
-
-            }
-
-        } else {
-
-            if (events.hasClass(btn, 'open')) {
-
-                events.removeClass(btn, 'open-ease');
-                setTimeout(function () { events.removeClass(btn, 'open'); }, 150);
-
-            }
-        }
-
-    };
-
-    window.topButtonToggler();
+    topButtonTogglerFnc();
 
     events.on('.top-button', 'click', function () {
 
         clearInterval(window.topButtonAnimate);
         window.topButtonAnimate = setInterval(function () {
 
-            scrollTarget.scrollTop -= '65';
-            if (scrollTarget.scrollTop === 0) { clearInterval(window.topButtonAnimate); }
+            window.topButtonScrollTarget.scrollTop -= '65';
+            if (window.topButtonScrollTarget.scrollTop === 0) { clearInterval(window.topButtonAnimate); }
 
         }, 10);
 
@@ -93,6 +97,6 @@ events.onload(function () {
 events.on(window, 'scroll', function () {
 
     'use strict';
-    window.topButtonToggler();
+    topButtonTogglerFnc();
 
 });
