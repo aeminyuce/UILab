@@ -8,8 +8,6 @@ function numberFnc() {
 
     'use strict';
 
-    var ctrlv = false;
-
     events.on(document, 'keypress', '.text > .number', function (e) {
 
         var c, isRefresh = false;

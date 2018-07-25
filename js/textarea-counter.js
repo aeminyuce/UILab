@@ -21,6 +21,8 @@ function textareaCounterFnc() {
 
         if (length <= 0) {
 
+            length = 0;
+
             p.setAttribute('data-change', '0');
             t.value = v.substring(0, total);
 
@@ -43,8 +45,20 @@ function textareaCounterFnc() {
     };
     window.loadtextareaCounters();
 
-    events.on(document, 'keyup', '.textarea[data-counter] textarea', function () {
-        window.textareaCounter(this);
+    events.on(document, 'keydown keypress paste', '.textarea[data-counter] textarea', function (e) {
+
+        if (e.type === 'keydown' && e.ctrlKey) {
+
+            var that = this;
+
+            setTimeout(function () {
+                window.textareaCounter(that);
+            }, 0);
+
+        } else {
+            window.textareaCounter(this);
+        }
+
     });
 
 }
