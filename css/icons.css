@@ -1,14 +1,14 @@
 /* icons */
-.icon:not(.sprite) { text-align: center; vertical-align: middle; line-height: normal !important; display: inline-block; }
+.icon { text-align: center; vertical-align: middle; line-height: 100% !important; display: inline-block; }
 button.icon { background-color: rgba(0,0,0,0); }
 
-.icon.icon-xxs { font-size: 9px; vertical-align: -5%; width: 9px; }
-.icon.icon-xs { font-size: 11px; vertical-align: -10%; width: 11px; }
-.icon.icon-sm { font-size: 15px; vertical-align: -15%; width: 15px; }
-.icon.icon-md { font-size: 17px; vertical-align: -20%; width: 17px; }
-.icon.icon-lg { font-size: 24px; vertical-align: -25%; width: 24px; }
-.icon.icon-xl { font-size: 31px; vertical-align: -30%; width: 31px; }
-.icon.icon-xxl { font-size: 48px; vertical-align: -40%; width: 48px; }
+.icon:not(.sprite).icon-xxs { font-size: 9px; width: 10px; height: 10px; }
+.icon:not(.sprite).icon-xs { font-size: 11px; width: 12px; height: 12px; }
+.icon:not(.sprite).icon-sm { font-size: 15px; width: 16px; height: 16px; }
+.icon:not(.sprite).icon-md { font-size: 17px; width: 18px; height: 18px; }
+.icon:not(.sprite).icon-lg { font-size: 24px; width: 24px; height: 24px; }
+.icon:not(.sprite).icon-xl { font-size: 31px; width: 32px; height: 32px; }
+.icon:not(.sprite).icon-xxl { font-size: 48px; width: 48px; height: 48px; }
 
 .icon-mirror-v { transform: scaleY(-1); }
 .icon-mirror-h { transform: scaleX(-1); }
