@@ -3,7 +3,7 @@
  Events JS requires Selector JS
 */
 
-/*globals window, document, selector, Event, navigator, setTimeout, DOMParser */
+/*globals window, document, selector, Event, navigator, NodeList, setTimeout, DOMParser */
 var events = {
 
     onload: function (callback) {
@@ -43,7 +43,7 @@ var events = {
 
                 };
 
-            } else if (typeof t === 'object' && typeof e === 'string') { // custom events
+            } else if (typeof t === 'object' && !NodeList.prototype.isPrototypeOf(t) && typeof e === 'string') { // custom events
 
                 isWindow = Object.prototype.toString.call(t) === '[object Window]'; // detect window events
                 if (isWindow) { l = selector(t); } else { l = selector(t)[0]; }
@@ -190,15 +190,19 @@ var events = {
     toggleClass: function (t, name) {
 
         'use strict';
-        var arr, index, l = selector(t), i = 0;
+        var arr, index, l = selector(t), i = 0, j = 0;
+        name = name.split(' ');
 
         for (i = 0; i < l.length; i += 1) {
 
             arr = l[i].className.split(' ');
-            index = arr.indexOf(name);
-            if (index >= 0) { arr.splice(index, 1); } else { arr.push(name); }
-            l[i].className = arr.join(' ');
+            for (j = 0; j < name.length; j += 1) {
 
+                index = arr.indexOf(name[j]);
+                if (index >= 0) { arr.splice(index, 1); } else { arr.push(name[j]); }
+                l[i].className = arr.join(' ');
+
+            }
         }
 
     },
@@ -206,12 +210,16 @@ var events = {
 
         'use strict';
 
-        var l = selector(t), i = 0,
-            re = new RegExp('(\\s|^)' + name + '(\\s|$)'),
-            rex = new RegExp('^\\s+|\\s+$');
+        var l = selector(t), i = 0, j = 0, rex = new RegExp('^\\s+|\\s+$'), re;
+        name = name.split(' ');
 
         for (i = 0; i < l.length; i += 1) {
-            l[i].className = l[i].className.replace(re, ' ').replace(rex, '');
+            for (j = 0; j < name.length; j += 1) {
+
+                re = new RegExp('(\\s|^)' + name[j] + '(\\s|$)');
+                l[i].className = l[i].className.replace(re, ' ').replace(rex, '');
+
+            }
         }
 
     },
