@@ -1,6 +1,6 @@
 /* buttons */
 .btn { text-align: center; vertical-align: middle; line-height: 20px; height: 32px; background-color: rgba(0,0,0,.08); padding-top: 6px; padding-bottom: 6px; display: inline-block; }
-.btn.input { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .btn:not(.btn-passive) { cursor: pointer; }
 .btn:not(.btn-block):not(.btn-multitext).no-padding-h { width: 32px !important; }
 .btn:hover { text-decoration: none; }
