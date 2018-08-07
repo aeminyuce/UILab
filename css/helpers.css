@@ -198,10 +198,10 @@ html:not(.mobile) .scale:hover { transform: scale(1.06); }
 .list-custom,.list-inline { margin-bottom: 0; }
 .list-inline ul,.list-inline ol,.list-inline li { display: inline-block; }
 
-.list-column-2,.list-column-3,.list-column-4,.list-column-5,.list-column-6 { overflow: hidden; }
+[class*="list-column-"] { overflow: hidden; }
 
 @media (min-width: 481px) {
-    .list-column-2 > li,.list-column-3 > li,.list-column-4 > li,.list-column-5 > li,.list-column-6 > li { float: left; }
+    [class*="list-column-"] > li { float: left; }
     .list-column-2 > li { width: 50%; }
     .list-column-3 > li { width: 33.333333%; }
     .list-column-4 > li { width: 25%; }
@@ -209,7 +209,7 @@ html:not(.mobile) .scale:hover { transform: scale(1.06); }
     .list-column-6 > li { width: 16.666666%; }
 }
 @media (max-width: 480px) {
-    .list-column-2,.list-column-3,.list-column-4,.list-column-5,.list-column-6 { width: 100%; }
+    [class*="list-column-"] { width: 100%; }
 }
 
 .sp1,.sp2,.sp3,.sp4,.sp5,.sp10,.sp15,.sp20,.sp25,.sp30 { width: 100%; display: block; clear: both !important; }
