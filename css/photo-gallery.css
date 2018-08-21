@@ -8,7 +8,7 @@
 .photo-gallery:before,.photo-gallery:after { content: ""; display: table; }
 .photo-gallery:after { clear: both; }
 
-.photo-gallery .img { width: 100%; height: 220px; background: #ddd; overflow: hidden; display: block; position: relative; }
+.photo-gallery .img { width: 100%; height: 254px; background: #ddd; overflow: hidden; display: block; position: relative; }
 .photo-gallery .img:after { content: ""; display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1; opacity: 0; }
 html:not(.mobile) .photo-gallery .img:hover:after,.photo-gallery .img.hover-touch:after { opacity: 1; }
 
