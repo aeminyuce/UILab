@@ -1,14 +1,22 @@
 /* icons */
-.icon { text-align: center; vertical-align: middle; line-height: 100% !important; display: inline-block; }
+.icon,.icon-inline:before { text-align: center; vertical-align: middle; line-height: 100% !important; display: inline-block; }
 button.icon { background-color: rgba(0,0,0,0); }
 
-.icon:not(.sprite).icon-xxs { font-size: 9px; width: 10px; height: 10px; }
-.icon:not(.sprite).icon-xs { font-size: 11px; width: 12px; height: 12px; }
-.icon:not(.sprite).icon-sm { font-size: 15px; width: 16px; height: 16px; }
-.icon:not(.sprite).icon-md { font-size: 17px; width: 18px; height: 18px; }
-.icon:not(.sprite).icon-lg { font-size: 24px; width: 24px; height: 24px; }
-.icon:not(.sprite).icon-xl { font-size: 31px; width: 32px; height: 32px; }
-.icon:not(.sprite).icon-xxl { font-size: 48px; width: 48px; height: 48px; }
+.icon-inline:not(.inline-right):before { margin-right: 7px; }
+.icon-inline.inline-right:before { margin-left: 7px; float: right; position: relative; top: 50%; transform: translateY(-50%); }
 
-.icon-mirror-v { transform: scaleY(-1); }
-.icon-mirror-h { transform: scaleX(-1); }
+.icon:not(.sprite).icon-xxs,.icon-inline:not(.sprite).icon-xxs:before { font-size: 9px; width: 10px; height: 10px; }
+.icon:not(.sprite).icon-xs,.icon-inline:not(.sprite).icon-xx:before { font-size: 11px; width: 12px; height: 12px; }
+.icon:not(.sprite).icon-sm,.icon-inline:not(.sprite).icon-sm:before { font-size: 15px; width: 16px; height: 16px; }
+.icon:not(.sprite).icon-md,.icon-inline:not(.sprite).icon-md:before { font-size: 17px; width: 18px; height: 18px; }
+.icon:not(.sprite).icon-lg,.icon-inline:not(.sprite).icon-lg:before { font-size: 24px; width: 24px; height: 24px; }
+.icon:not(.sprite).icon-xl,.icon-inline:not(.sprite).icon-xl:before { font-size: 31px; width: 32px; height: 32px; }
+.icon:not(.sprite).icon-xxl,.icon-inline:not(.sprite).icon-xxl:before { font-size: 48px; width: 48px; height: 48px; }
+
+.icon-mirror-v:not(.icon-inline) { transform: scaleY(-1); }
+.icon-mirror-h:not(.icon-inline) { transform: scaleX(-1); }
+
+.icon-inline:not(.inline-right).icon-mirror-v:before { transform: scaleY(-1); }
+.icon-inline.inline-right.icon-mirror-v:before { transform: translateY(-50%) scaleY(-1); }
+.icon-inline:not(.inline-right).icon-mirror-h:before { transform: scaleX(-1); }
+.icon-inline.inline-right.icon-mirror-h:before { transform: translateY(-50%) scaleX(-1); }
