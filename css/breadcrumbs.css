@@ -4,7 +4,7 @@
 .breadcrumbs li:not(:last-child) { margin-right: 5px; }
 .breadcrumbs li a { vertical-align: text-bottom; display: inline-block; }
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
     .breadcrumbs { text-align: center; margin-top: 5px; }
     .breadcrumbs li:not(:last-child) { margin-right: 2px; }
     .breadcrumbs li:not(:first-child):before { content: ""; margin-right: 0; }
