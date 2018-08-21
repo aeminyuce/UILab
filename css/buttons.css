@@ -21,7 +21,6 @@ input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .btn.top-bordered.dual-bordered { padding-top: 4px; }
 .btn.bottom-bordered.dual-bordered { padding-bottom: 4px; }
 
-.btn > .icon,.btn.icon-inline:before { color: #000; }
 .btn > .icon:not(.no-opacity),.btn.icon-inline:before { opacity: .45; }
 .btn.ui-dark > .icon,.btn.ui-x-dark > .icon { opacity: 1; }
 .btn.ui-dark.icon-inline:before,.btn.ui-x-dark.icon-inline:before { color: #fff; opacity: 1; }
