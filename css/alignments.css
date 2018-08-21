@@ -1,7 +1,7 @@
 /* alignments */
-.align-center { text-align: center !important; }
-.align-right { text-align: right !important; }
-.align-left { text-align: left !important; }
+.align-center.align-center * { text-align: center !important; }
+.align-right,.align-right * { text-align: right !important; }
+.align-left,.align-left * { text-align: left !important; }
 .align-justify { text-align: justify !important; }
 .align-nowrap { white-space: nowrap !important; }
 
@@ -10,24 +10,24 @@
 .align-bottom { vertical-align: bottom !important; }
 
 @media (min-width: 1200px) {
-    .lg-align-center { text-align: center !important; } .lg-align-left { text-align: left !important; } .lg-align-right { text-align: right !important; }
+    .lg-align-center,.lg-align-center * { text-align: center !important; } .lg-align-left,.lg-align-left * { text-align: left !important; } .lg-align-right,.lg-align-right * { text-align: right !important; }
 }
 @media (max-width: 959px) and (min-width: 768px) {
-    .md-align-center { text-align: center !important; } .md-align-left { text-align: left !important; } .md-align-right { text-align: right !important; }
+    .md-align-center,.md-align-center * { text-align: center !important; } .md-align-left,.md-align-left * { text-align: left !important; } .md-align-right,.md-align-right * { text-align: right !important; }
 }
 @media (max-width: 767px) and (min-width: 481px) {
     /* do not group */
-    .md-align-center { text-align: center !important; } .md-align-left { text-align: left !important; } .md-align-right { text-align: right !important; }
-    .sm-align-center { text-align: center !important; } .sm-align-left { text-align: left !important; } .sm-align-right { text-align: right !important; }
+    .md-align-center,.md-align-center * { text-align: center !important; } .md-align-left,.md-align-left * { text-align: left !important; } .md-align-right,.md-align-right * { text-align: right !important; }
+    .sm-align-center,.sm-align-center * { text-align: center !important; } .sm-align-left,.sm-align-left * { text-align: left !important; } .sm-align-right,.sm-align-right * { text-align: right !important; }
     /* do not group */
 }
 @media (max-width: 480px) {
     /* do not group */
-    .md-align-center { text-align: center !important; } .md-align-left { text-align: left !important; } .md-align-right { text-align: right !important; }
-    .sm-align-center { text-align: center !important; } .sm-align-left { text-align: left !important; } .sm-align-right { text-align: right !important; }
-    .xs-align-center { text-align: center !important; } .xs-align-left { text-align: left !important; } .xs-align-right { text-align: right !important; }
+    .md-align-center,.md-align-center * { text-align: center !important; } .md-align-left,.md-align-left * { text-align: left !important; } .md-align-right,.md-align-right * { text-align: right !important; }
+    .sm-align-center,.sm-align-center * { text-align: center !important; } .sm-align-left,.sm-align-left * { text-align: left !important; } .sm-align-right,.sm-align-right * { text-align: right !important; }
+    .xs-align-center,.xs-align-center * { text-align: center !important; } .xs-align-left,.xs-align-left * { text-align: left !important; } .xs-align-right,.xs-align-right * { text-align: right !important; }
     /* do not group */
 }
 @media (min-width: 1680px) {
-    .xl-align-center { text-align: center !important; } .xl-align-left { text-align: left !important; } .xl-align-right { text-align: right !important; }
+    .xl-align-center,.xl-align-center * { text-align: center !important; } .xl-align-left,.xl-align-left * { text-align: left !important; } .xl-align-right,.xl-align-right * { text-align: right !important; }
 }
