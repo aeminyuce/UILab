@@ -215,6 +215,7 @@ html:not(.mobile) .scale:hover { transform: scale(1.06); }
 .sp1,.sp2,.sp3,.sp4,.sp5,.sp10,.sp15,.sp20,.sp25,.sp30 { width: 100%; display: block; clear: both !important; }
 .sp1 { height: 1px; } .sp2 { height: 2px; } .sp3 { height: 3px; } .sp4 { height: 4px; } .sp5 { height: 5px; } .sp10 { height: 10px; } .sp15 { height: 15px; } .sp20 { height: 20px; } .sp25 { height: 25px; } .sp30 { height: 30px; }
 
+.list-spacer-1 li { margin-bottom: 1px; } .list-spacer-1 ul,.list-spacer-1 ol { margin-top: 1px !important; }
 .list-spacer-5 li { margin-bottom: 5px; } .list-spacer-5 ul,.list-spacer-5 ol { margin-top: 5px !important; }
 .list-spacer-10 li { margin-bottom: 10px; } .list-spacer-10 ul,.list-spacer-10 ol { margin-top: 10px !important; }
 .list-spacer-15 li { margin-bottom: 15px; } .list-spacer-15 ul,.list-spacer-15 ol { margin-top: 15px !important; }
