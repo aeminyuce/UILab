@@ -21,9 +21,10 @@ input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .btn.top-bordered.dual-bordered { padding-top: 4px; }
 .btn.bottom-bordered.dual-bordered { padding-bottom: 4px; }
 
-.btn > .icon { color: #000; }
-.btn > .icon:not(.no-opacity) { opacity: .45; }
+.btn > .icon,.btn.icon-inline:before { color: #000; }
+.btn > .icon:not(.no-opacity),.btn.icon-inline:before { opacity: .45; }
 .btn.ui-dark > .icon,.btn.ui-x-dark > .icon { opacity: 1; }
+.btn.ui-dark.icon-inline:before,.btn.ui-x-dark.icon-inline:before { color: #fff; opacity: 1; }
 
 .btn-lg { font-size: 16px; line-height: 22px; height: 42px; padding-top: 10px; padding-bottom: 10px; }
 .btn-lg:not(.btn-block):not(.btn-multitext).no-padding-h { width: 42px !important; }.btn-lg.rounded { border-radius: 6px; }
@@ -78,10 +79,6 @@ input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 
 html:not(.mobile) .btn:not(.no-hover):not([class*="ui-"]):not(.btn-passive):hover { background-color: rgba(0,0,0,.15); }
 html:not(.mobile) .btn.btn-invisible:not(.no-hover):not([class*="ui-"]):not(.btn-passive):hover { background-color: rgba(0,0,0,.075); }
-
-.btn-toggle-icon.toggled > .icon { transform: scaleY(-1); }
-.btn-swap-icon:not(.swapped) > .icon:not(.active) { display: none; }
-.btn-swap-icon.swapped > .icon.active { display: none; }
 
 .btn-condensed { line-height: 12px !important; }
 .pagination:not(:last-child) { margin-bottom: 20px; }
