@@ -3,7 +3,7 @@
  Number JS requires Events JS
 */
 
-/*globals document, events */
+/*globals document, events, setTimeout */
 function numberFnc() {
 
     'use strict';
@@ -28,7 +28,7 @@ function numberFnc() {
 
     });
 
-    events.on(document, 'paste', '.text > .number', function (e) {
+    events.on(document, 'paste', '.text > .number', function () {
 
         var i, re, that, getValues, newValues, maxLength;
 

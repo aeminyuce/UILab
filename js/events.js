@@ -10,11 +10,22 @@ var events = {
 
         'use strict';
 
-        if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
-            callback();
+        if (document.attachEvent) {
+
+            if (document.readyState === 'complete') {
+                callback();
+            } else {
+                document.addEventListener('DOMContentLoaded', callback);
+            }
 
         } else {
-            document.addEventListener('DOMContentLoaded', callback);
+
+            if (document.readyState !== 'loading') {
+                callback();
+            } else {
+                document.addEventListener('DOMContentLoaded', callback);
+            }
+
         }
 
     },
@@ -25,10 +36,11 @@ var events = {
 
         fnc = function (e) {
 
-            if (typeof t === 'string' && typeof e === 'undefined') {
+            if (typeof t === 'string' && e === undefined) {
                 return;
+            }
 
-            } else if (typeof callback !== 'undefined') { // delegate
+            if (callback !== undefined) { // delegate
 
                 f = function (event) {
 
@@ -43,34 +55,39 @@ var events = {
 
                 };
 
-            } else if (typeof t === 'object' && !NodeList.prototype.isPrototypeOf(t) && typeof e === 'string') { // custom events
+            } else {
 
-                isWindow = Object.prototype.toString.call(t) === '[object Window]'; // detect window events
-                if (isWindow) { l = selector(t); } else { l = selector(t)[0]; }
+                f = that;
 
-                // detecting IE
-                isMSIE = /*@cc_on!@*/false;
-                ie = false;
+                if (typeof t === 'object' && !NodeList.prototype.isPrototypeOf(t) && typeof e === 'string') { // custom events
 
-                if (isMSIE || !!document.documentMode || navigator.userAgent.toLowerCase().indexOf('edge') > -1) { ie = true; }
+                    isWindow = Object.prototype.toString.call(t) === '[object Window]'; // detect window events
+                    if (isWindow) { l = selector(t); } else { l = selector(t)[0]; }
 
-                if (isWindow && ie) { // disable ie window event firing on ready
-                    setTimeout(function () { l.addEventListener(e, that, true); }, 150);
+                    // detecting IE
+                    isMSIE = /*@cc_on!@*/false;
+                    ie = false;
 
-                } else { l.addEventListener(e, that, true); }
-                return;
+                    if (isMSIE || !!document.documentMode || navigator.userAgent.toLowerCase().indexOf('edge') > -1) { ie = true; }
 
-            } else { f = that; }
+                    if (isWindow && ie) { // disable ie window event firing on ready
+                        setTimeout(function () { l.addEventListener(e, that, true); }, 150);
+
+                    } else { l.addEventListener(e, that, true); }
+
+                }
+
+            }
 
             handlerFnc = function (pt, pe) {
 
-                if (typeof window.eventHandlers === 'undefined') { window.eventHandlers = {}; }
-                if (typeof window.eventHandlers[pt] === 'undefined') { window.eventHandlers[pt] = {}; }
-                if (typeof window.eventHandlers[pt][pe] === 'undefined') { window.eventHandlers[pt][pe] = []; }
+                if (window.eventHandlers === undefined) { window.eventHandlers = {}; }
+                if (window.eventHandlers[pt] === undefined) { window.eventHandlers[pt] = {}; }
+                if (window.eventHandlers[pt][pe] === undefined) { window.eventHandlers[pt][pe] = []; }
 
                 window.eventHandlers[pt][pe].push(f);
 
-                if (typeof pe !== 'function' && typeof f !== 'undefined') {
+                if (typeof pe !== 'function' && f !== undefined) {
                     pt.addEventListener(pe.split('.')[0], f, true); // split for event naming
 
                 } else { return; }
@@ -102,10 +119,10 @@ var events = {
 
             handlerFnc = function (pt, pe) {
 
-                if (typeof window.eventHandlers[pt] !== 'undefined') {
+                if (window.eventHandlers[pt] !== undefined) {
 
                     events = window.eventHandlers[pt][pe];
-                    if (typeof events !== 'undefined') {
+                    if (events !== undefined) {
                         for (j = 0; j < events.length; j += 1) { pt.removeEventListener(pe.split('.')[0], events[j], true); } // split for event naming
                     }
 
@@ -289,16 +306,14 @@ var events = {
 
             return html.body.innerHTML;
 
-        } else {
-
-            parser = new DOMParser();
-
-            html = parser.parseFromString(value, 'text/html');
-            html = html.querySelector('body').innerHTML;
-
-            return html;
-
         }
+
+        parser = new DOMParser();
+
+        html = parser.parseFromString(value, 'text/html');
+        html = html.querySelector('body').innerHTML;
+
+        return html;
 
     },
     clone: function (t) {
@@ -306,7 +321,7 @@ var events = {
         'use strict';
         var l = selector(t)[0], html;
 
-        if (typeof l !== 'undefined') {
+        if (l !== undefined) {
 
             html = events.parser(selector(t)[0].innerHTML);
             return html;

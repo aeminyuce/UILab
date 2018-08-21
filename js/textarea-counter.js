@@ -3,7 +3,7 @@
  Textarea Counter JS requires Events JS
 */
 
-/*globals window, document, selector, events */
+/*globals window, document, selector, events, setTimeout */
 function textareaCounterFnc() {
 
     'use strict';

@@ -28,13 +28,15 @@ function ajax(method, target, callback) {
     'use strict';
     var newMethod, newTarget;
 
-    if (typeof method !== 'string' || typeof method === 'undefined') {
+    if (typeof method !== 'string' || method === undefined) {
         return;
-    } else { newMethod = method; }
+    }
+    newMethod = method;
 
-    if (typeof target !== 'string' || typeof target === 'undefined') {
+    if (typeof target !== 'string' || target === undefined) {
         return;
-    } else { newTarget = target; }
+    }
+    newTarget = target;
 
     window.ajaxRequest = new XMLHttpRequest();
     window.ajaxRequest.open(newMethod, newTarget, true);
@@ -58,7 +60,7 @@ function ajax(method, target, callback) {
 
             if (window.ajaxClassNames !== null) {
 
-                window.ajaxClassNames = window.ajaxClassNames.toString().match(/"+[\w\s\d\-\_\=]+"/g).toString().replace(/\"/g, '').replace(/\,/g, ' ').split(' ');
+                window.ajaxClassNames = window.ajaxClassNames.toString().match(/"+[\w\s\d\-\_\=]+"/g).toString().replace(/\"/g, '').replace(/,/g, ' ').split(' ');
                 window.ajaxClassNames = window.ajaxClassNames.filter(uniqueClassNames);
 
                 events.trigger(document, 'ajaxCallbacks'); // set custom event

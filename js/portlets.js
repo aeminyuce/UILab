@@ -3,7 +3,7 @@
  Portlets JS requires Events JS
 */
 
-/*globals document, events */
+/*globals document, events, setTimeout */
 var portletsFnc = function () {
 
     'use strict';
