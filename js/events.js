@@ -204,6 +204,23 @@ var events = {
         }
 
     },
+    removeClass: function (t, name) {
+
+        'use strict';
+
+        var l = selector(t), i = 0, j = 0, rex = new RegExp('^\\s+|\\s+$'), re;
+        name = name.split(' ');
+
+        for (i = 0; i < l.length; i += 1) {
+            for (j = 0; j < name.length; j += 1) {
+
+                re = new RegExp('(\\s|^)' + name[j] + '(\\s|$)');
+                l[i].className = l[i].className.replace(re, ' ').replace(rex, '');
+
+            }
+        }
+
+    },
     toggleClass: function (t, name) {
 
         'use strict';
@@ -218,23 +235,6 @@ var events = {
                 index = arr.indexOf(name[j]);
                 if (index >= 0) { arr.splice(index, 1); } else { arr.push(name[j]); }
                 l[i].className = arr.join(' ');
-
-            }
-        }
-
-    },
-    removeClass: function (t, name) {
-
-        'use strict';
-
-        var l = selector(t), i = 0, j = 0, rex = new RegExp('^\\s+|\\s+$'), re;
-        name = name.split(' ');
-
-        for (i = 0; i < l.length; i += 1) {
-            for (j = 0; j < name.length; j += 1) {
-
-                re = new RegExp('(\\s|^)' + name[j] + '(\\s|$)');
-                l[i].className = l[i].className.replace(re, ' ').replace(rex, '');
 
             }
         }
@@ -294,7 +294,7 @@ var events = {
         for (i = 0; i < l.length; i += 1) { l[i].style.height = value; }
 
     },
-    parser: function (value) {
+    parser: function (text) {
 
         'use strict';
         var parser, html;
@@ -302,7 +302,7 @@ var events = {
         if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
 
             html = document.implementation.createHTMLDocument('');
-            html.body.innerHTML = value;
+            html.body.innerHTML = text;
 
             return html.body.innerHTML;
 
@@ -310,7 +310,7 @@ var events = {
 
         parser = new DOMParser();
 
-        html = parser.parseFromString(value, 'text/html');
+        html = parser.parseFromString(text, 'text/html');
         html = html.querySelector('body').innerHTML;
 
         return html;

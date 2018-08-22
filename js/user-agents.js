@@ -13,7 +13,7 @@ var useragents = {
     ios: false,
     android: false,
     androidOld: false,
-    nativeBrowser: false // it returns true on Jelly Bean and older versions and old native browser web view apps togerther.
+    nativeBrowser: false // It returns true on Jelly Bean and older versions and old native browser web view apps together.
 
 };
 
