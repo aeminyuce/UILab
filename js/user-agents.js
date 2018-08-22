@@ -9,7 +9,7 @@ var useragents = {
     ie: false,
     ie9: false,
     edge: false,
-    mobile: true,
+    mobile: false,
     ios: false,
     android: false,
     androidOld: false,
@@ -75,38 +75,38 @@ function useragentsFnc() {
         events.addClass(document, 'mobile');
         useragents.mobile = true;
 
+        if (ua.indexOf('apple') > -1) {
+
+            events.addClass(document, 'ios');
+            events.removeClass(document, 'mac');
+            useragents.ios = true;
+
+        }
+
+        if (ua.indexOf('android') > -1) {
+
+            if (ua.indexOf('mozilla/5.0') > -1 && ua.indexOf('applewebkit') > -1 && ua.indexOf('version/') > -1) {
+
+                events.removeClass(document, 'chrome');
+                events.removeClass(document, 'safari');
+
+                events.addClass(document, 'android-browser');
+                useragents.nativeBrowser = true;
+
+            }
+
+            events.addClass(document, 'android');
+            events.removeClass(document, 'ios');
+
+            if (useragents.nativeBrowser || parseFloat(ua.match(/android\s([0-9\.]*)/)[1], 10) < parseFloat('4.4')) { // Jelly Bean and before with stock browser is androidOld
+                useragents.androidOld = true;
+            }
+
+            useragents.android = true;
+            useragents.ios = false;
+        }
+
     } else { events.removeClass(document, 'ios'); }
-
-    if (ua.indexOf('apple') > -1) {
-
-        events.addClass(document, 'ios');
-        events.removeClass(document, 'mac');
-        useragents.ios = true;
-
-    }
-
-    if (ua.indexOf('android') > -1) {
-
-        if (ua.indexOf('mozilla/5.0') > -1 && ua.indexOf('applewebkit') > -1 && ua.indexOf('version/') > -1) {
-
-            events.removeClass(document, 'chrome');
-            events.removeClass(document, 'safari');
-
-            events.addClass(document, 'android-browser');
-            useragents.nativeBrowser = true;
-
-        }
-
-        events.addClass(document, 'android');
-        events.removeClass(document, 'ios');
-
-        if (useragents.nativeBrowser || parseFloat(ua.match(/android\s([0-9\.]*)/)[1], 10) < parseFloat('4.4')) { // Jelly Bean and before with stock browser is androidOld
-            useragents.androidOld = true;
-        }
-
-        useragents.android = true;
-        useragents.ios = false;
-    }
 
 }
 
