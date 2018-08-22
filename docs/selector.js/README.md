@@ -1,4 +1,4 @@
-# Selector JS 1.0.0
+# Selector JS
 
 Selector JS is a simple javascript selector to select HTML elements.
 

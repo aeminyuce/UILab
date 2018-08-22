@@ -1,10 +1,10 @@
-# Useragents JS 1.0.0
+# User Agents JS
 
-Useragents JS requires Events JS.
+User Agents JS requires Events JS.
 
 * [Events JS](https://ahmeteminyuce.github.io/UILab/docs/events.js/index.html)
 
-Useragents JS is a simple javascript detecting browsers, devices and operating systems.
+User Agents JS is a simple javascript detecting browsers, devices and operating systems.
 
 * [Documentation Examples](https://ahmeteminyuce.github.io/UILab/docs/useragents.js/index.html)
 
@@ -25,11 +25,5 @@ useragents.mobile
 useragents.ios
 useragents.android
 useragents.androidOld
-useragents.androidWebView
-```
-
-**Mobile orientation change events:**
-```
-events.on(document, 'useragents:portrait', function);
-events.on(document, 'useragents:landscape', function);
+nativeBrowser: false // It returns true on Jelly Bean and older versions and old native browser web view apps together.
 ```
