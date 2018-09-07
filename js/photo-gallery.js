@@ -87,13 +87,16 @@ function photoGalleryFnc() {
         if (e.type === 'touchend') {
 
             if (events.hasClass(that, 'has-info')) {
+
                 if (!events.hasClass(that, 'hover-touch')) {
 
                     events.removeClass(images, 'hover-touch');
                     events.addClass(that, 'hover-touch');
                     return;
 
-                } else { events.removeClass(images, 'hover-touch'); }
+                }
+                events.removeClass(images, 'hover-touch');
+
             } else { events.removeClass(images, 'hover-touch'); }
 
         }
@@ -407,11 +410,9 @@ function photoGalleryFnc() {
         // touch events: pinch to zoom
         events.on(preview, 'touchstart', function (e) {
 
-            if (e.target.getAttribute('src') === null) {
-                return;
+            if (e.target.getAttribute('src') === null) { return; }
 
-            } else { e.preventDefault(); }
-
+            e.preventDefault();
             var sx, sy, x, y, pinchStart, pinch, matrix, newScale, msx, msy, mx, my, w, h, coverH, screenW, screenH;
 
             w = img.clientWidth;

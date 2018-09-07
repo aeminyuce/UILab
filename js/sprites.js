@@ -52,7 +52,7 @@ function spritesFnc() {
             for (i = 0; i < splitSpriteImages.length; i += 1) {
 
                 sName = splitSpriteImages[i].split('.');
-                if (typeof splitSpriteImageSizes[i] !== 'undefined') { sSize = splitSpriteImageSizes[i].split('x'); } else { sSize = ['0', '0']; }
+                if (splitSpriteImageSizes[i] !== undefined) { sSize = splitSpriteImageSizes[i].split('x'); } else { sSize = ['0', '0']; }
 
                 if (selector('.sprite[class*="' + sName[0] + '-"]').length > 0) {
 

@@ -10,7 +10,7 @@ function slideNewsResizerFnc() {
     var slider, nav, screenW;
 
     slider = selector('.slide-news')[0];
-    if (typeof slider !== 'undefined') {
+    if (slider !== undefined) {
 
         screenW = selector(document)[0].offsetWidth;
         events.width(selector('li', slider), screenW + 'px');
@@ -57,7 +57,7 @@ function slideNewsFnc() {
     var i, html, total, slider;
 
     slider = selector('.slide-news')[0];
-    if (typeof slider !== 'undefined') {
+    if (slider !== undefined) {
 
         total = (selector('li', slider).length - 1);
 

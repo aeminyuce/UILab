@@ -18,7 +18,6 @@ var portletsFnc = function () {
             parentEl.parentNode.removeChild(parentEl);
         }, 300);
 
-
     });
 
 };

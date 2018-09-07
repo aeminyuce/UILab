@@ -63,7 +63,7 @@ function swatchesFnc() {
 
                 getAlpha = hoverColor[3];
 
-                if (typeof getAlpha !== 'undefined') {
+                if (getAlpha !== undefined) {
                     a = getAlpha;
 
                 } else { a = "1"; }

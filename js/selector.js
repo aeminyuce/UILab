@@ -10,58 +10,51 @@ var selector = function (item, outer) {
 
     if (typeof item === 'object') {
 
-        if (NodeList.prototype.isPrototypeOf(item)) { // if item property has selector(item) nodelist
-            return item;
+        if (NodeList.prototype.isPrototypeOf(item)) { return item; } // if item property has selector(item) nodelist
 
-        } else {
+        objName = Object.prototype.toString.call(item);
 
-            objName = Object.prototype.toString.call(item);
-            if (objName === '[object HTMLDocument]' || objName === '[object Document]') {
+        if (objName === '[object HTMLDocument]' || objName === '[object Document]') {
 
-                if (selector.document === undefined) { selector.document = document.querySelectorAll('html'); }
-                call = selector.document;
-                return call;
-
-            } else if (objName === '[object Window]') { // window object
-                return window;
-
-            } else if (objName === '[object Array]') { // array object
-                return item;
-
-            } else { // "this" object
-                return [item]; // converting object for event loops
-            }
+            if (selector.document === undefined) { selector.document = document.querySelectorAll('html'); }
+            call = selector.document;
+            return call;
 
         }
 
-    } else {
+        if (objName === '[object Window]') {  return window; } // window object
+        if (objName === '[object Array]') {  return item; } // array object
 
-        if (typeof outer !== 'undefined') { // find items in outer elements
-
-            if (typeof outer !== 'object') {
-                outerEl = document.querySelectorAll(outer); // convert to array
-            } else { outerEl = outer; }
-
-            if (outerEl.length !== undefined) { // "this" object
-
-                outerElLength = outerEl.length;
-                for (i = 0; i < outerElLength; i += 1) {
-
-                    outerElIndex = outerEl[i].querySelectorAll(item);
-                    if (outerElLength === 1) {
-                        foundEl = outerElIndex[0];
-                    } else {
-                        foundEl = foundEl.concat(outerElIndex); // merge arrays
-                    }
-
-                }
-
-            } else { foundEl = outerEl.querySelectorAll(item); }
-
-            return foundEl;
-
-        } else { return document.querySelectorAll(item); }
+        return [item]; // "this" object, [] converting object for event loops
 
     }
+
+    if (outer !== undefined) { // find items in outer elements
+
+        if (typeof outer !== 'object') {
+            outerEl = document.querySelectorAll(outer); // convert to array
+        } else { outerEl = outer; }
+
+        if (outerEl.length !== undefined) { // "this" object
+
+            outerElLength = outerEl.length;
+            for (i = 0; i < outerElLength; i += 1) {
+
+                outerElIndex = outerEl[i].querySelectorAll(item);
+                if (outerElLength === 1) {
+                    foundEl = outerElIndex[0];
+                } else {
+                    foundEl = foundEl.concat(outerElIndex); // merge arrays
+                }
+
+            }
+
+        } else { foundEl = outerEl.querySelectorAll(item); }
+
+        return foundEl;
+
+    }
+
+    return document.querySelectorAll(item);
 
 };
