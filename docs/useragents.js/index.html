@@ -1,115 +1,116 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>UI Lab, User Agents JS</title>
-        <meta name="keywords" content="uilab, css, javascript, User Agents JS">
-        <meta name="description" content="UI Lab CSS and JavaScript Tools." />
-        <meta name="author" content="Ahmet Emin Yüce"/>
+<html lang="en">
 
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+<head>
+    <title>UI Lab, User Agents JS</title>
+    <meta name="keywords" content="uilab, css, javascript, User Agents JS">
+    <meta name="description" content="UI Lab CSS and JavaScript Tools." />
+    <meta name="author" content="Ahmet Emin Yüce"/>
 
-        <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
-        <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 
-        <!-- CSS Tools -->
-        <link rel="stylesheet" href="../../css/alignments.css" />
-        <link rel="stylesheet" href="../../css/buttons.css" />
-        <link rel="stylesheet" href="../../css/grid.css" />
-        <link rel="stylesheet" href="../../css/helpers.css" />
-        <link rel="stylesheet" href="../../css/icons.css" />
-        <link rel="stylesheet" href="../../css/margins.css" />
-        <link rel="stylesheet" href="../../css/paddings.css" />
-        <link rel="stylesheet" href="../../css/portlets.css" />
-        <link rel="stylesheet" href="../../css/reset.css" />
-        <link rel="stylesheet" href="../../css/transitions.css" />
-        <link rel="stylesheet" href="../../css/typography.css" />
-        <link rel="stylesheet" href="../../css/swatches.css" />
+    <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
 
-        <!-- Javascript Tools -->
-        <script src="../../js/selector.js"></script>
-        <script src="../../js/events.js"></script>
-        <script src="../../js/user-agents.js"></script>
+    <!-- CSS Tools -->
+    <link rel="stylesheet" href="../../css/alignments.css" />
+    <link rel="stylesheet" href="../../css/buttons.css" />
+    <link rel="stylesheet" href="../../css/grid.css" />
+    <link rel="stylesheet" href="../../css/helpers.css" />
+    <link rel="stylesheet" href="../../css/icons.css" />
+    <link rel="stylesheet" href="../../css/margins.css" />
+    <link rel="stylesheet" href="../../css/paddings.css" />
+    <link rel="stylesheet" href="../../css/portlets.css" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/transitions.css" />
+    <link rel="stylesheet" href="../../css/typography.css" />
+    <link rel="stylesheet" href="../../css/swatches.css" />
 
-        <!-- font icons CSS -->
-        <link rel="stylesheet" href="../../../UIIcons/font-icons/outline/font-icons.css" />
+    <!-- Javascript Tools -->
+    <script src="../../js/selector.js"></script>
+    <script src="../../js/events.js"></script>
+    <script src="../../js/user-agents.js"></script>
 
-        <!-- custom CSS -->
-        <style>
-            body { background-color: #f9f9f9; }
-            header { min-height: 64px; }
-        </style>
+    <!-- font icons CSS -->
+    <link rel="stylesheet" href="../../../UIIcons/font-icons/outline/font-icons.css" />
 
-        <script>
-            events.onload(function () {
+    <!-- custom CSS -->
+    <style>
+        body { background-color: #f9f9f9; }
+        header { min-height: 64px; }
+    </style>
 
-                var results = selector(document)[0].getAttribute('class'),
-                    variables = selector('.variables li'),
-                    portrait = selector('span.p')[0],
-                    landscape = selector('span.l')[0];
+    <script>
+        events.onload(function () {
 
-                selector('.results i')[0].innerHTML = results;
+            var results = selector(document)[0].getAttribute('class'),
+                variables = selector('.variables li'),
+                portrait = selector('span.p')[0],
+                landscape = selector('span.l')[0];
 
-                variables[0].append(useragents.ie);
-                variables[1].append(useragents.ie9);
-                variables[2].append(useragents.edge);
-                variables[3].append(useragents.mobile);
-                variables[4].append(useragents.ios);
-                variables[5].append(useragents.android);
-                variables[6].append(useragents.androidOld);
-                variables[7].append(useragents.nativeBrowser);
+            selector('.results i')[0].innerHTML = results;
 
-            });
-        </script>
+            variables[0].append(useragents.ie);
+            variables[1].append(useragents.ie9);
+            variables[2].append(useragents.edge);
+            variables[3].append(useragents.mobile);
+            variables[4].append(useragents.ios);
+            variables[5].append(useragents.android);
+            variables[6].append(useragents.androidOld);
+            variables[7].append(useragents.nativeBrowser);
 
-    </head>
-    <body>
+        });
+    </script>
 
-        <!-- header -->
-        <header class="container no-gutter theme-blue ui-dark">
-            <div class="col-12">
-                <a href="../examples.html" class="btn btn-lg no-padding-h rounded ease-bg margin-10-r"><i class="icon icon-md no-opacity icon-angle-left"></i></a>
-                <span class="inline-block align-middle x-large">UI Lab, User Agents JS</span>
-            </div>
-        </header>
+</head>
+<body>
 
-        <!-- documentation examples -->
-        <main class="container">
-            <div class="fixed">
-                <div class="row row-lg-padding">
-                    <div class="col-12">
+    <!-- header -->
+    <header class="container no-gutter theme-blue ui-dark">
+        <div class="col-12">
+            <a href="../examples.html" class="btn btn-lg no-padding-h rounded ease-bg margin-10-r"><i class="icon icon-md no-opacity icon-angle-left"></i></a>
+            <span class="inline-block align-middle x-large">UI Lab, User Agents JS</span>
+        </div>
+    </header>
 
-                        <div class="portlet-warning padding-15 rounded shadow">
-                            <h4>User Agents JS is a simple javascript detecting browsers, devices and operating systems.</h4>
-                            <h5>User Agents JS requires Selector JS.</h5>
-                            <strong>See your browser results listed below.</strong>
-                            <span class="sp5"></span>
-                            <a href="https://github.com/ahmeteminyuce/UILab/tree/master/docs/useragents.js" class="btn circle ease-bg">User Agents JS Github</a>
-                        </div>
+    <!-- documentation examples -->
+    <main class="container">
+        <div class="fixed">
+            <div class="row row-lg-padding">
+                <div class="col-12">
 
-                        <div class="portlet large padding-15 rounded shadow results">
-                            <b>User agents:</b>
-                            <i></i>
-                        </div>
-
-                        <div class="portlet large padding-15 rounded shadow variables">
-                            <b>Variables:</b>
-                            <ul>
-                                <li><b>useragents.ie:</b> </li>
-                                <li><b>useragents.ie9:</b> </li>
-                                <li><b>useragents.edge:</b> </li>
-                                <li><b>useragents.mobile:</b> </li>
-                                <li><b>useragents.ios:</b> </li>
-                                <li><b>useragents.android:</b> </li>
-                                <li><b>useragents.androidOld:</b> </li>
-                                <li><b>useragents.nativeBrowser:</b> </li>
-                            </ul>
-                        </div>
-
+                    <div class="portlet-warning padding-15 rounded shadow">
+                        <h4>User Agents JS is a simple javascript detecting browsers, devices and operating systems.</h4>
+                        <h5>User Agents JS requires Selector JS.</h5>
+                        <strong>See your browser results listed below.</strong>
+                        <span class="sp5"></span>
+                        <a href="https://github.com/ahmeteminyuce/UILab/tree/master/docs/useragents.js" class="btn circle ease-bg">User Agents JS Github</a>
                     </div>
+
+                    <div class="portlet large padding-15 rounded shadow results">
+                        <b>User agents:</b>
+                        <i></i>
+                    </div>
+
+                    <div class="portlet large padding-15 rounded shadow variables">
+                        <b>Variables:</b>
+                        <ul>
+                            <li><b>useragents.ie:</b> </li>
+                            <li><b>useragents.ie9:</b> </li>
+                            <li><b>useragents.edge:</b> </li>
+                            <li><b>useragents.mobile:</b> </li>
+                            <li><b>useragents.ios:</b> </li>
+                            <li><b>useragents.android:</b> </li>
+                            <li><b>useragents.androidOld:</b> </li>
+                            <li><b>useragents.nativeBrowser:</b> </li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
-        </main>
+        </div>
+    </main>
 
-    </body>
+</body>
 </html>
