@@ -190,17 +190,19 @@ var events = {
 
         'use strict';
 
-        var arr, l = selector(t), i = 0,
-            re = new RegExp('^\\s+|\\s+$');
+        var arr, l = selector(t), i = 0, j = 0, re = new RegExp('^\\s+|\\s+$');
+        name = name.split(' ');
 
         for (i = 0; i < l.length; i += 1) {
+            for (j = 0; j < name.length; j += 1) {
 
-            arr = l[i].className.split(' ');
-            if (arr.indexOf(name) === -1) {
-                l[i].className += ' ' + name;
-                l[i].className.replace(re, '');
+                arr = l[i].className.split(' ');
+                if (arr.indexOf(name[j]) === -1) {
+                    l[i].className += ' ' + name[j];
+                    l[i].className.replace(re, '');
+                }
+
             }
-
         }
 
     },
