@@ -67,3 +67,4 @@
 .ease-transform { transition-property: transform; }
 .ease-fill { transition-property: fill; }
 .ease-layout { transition-property: transform, opacity; }
+.ease-shadow { transition-property: box-shadow; }
