@@ -1,8 +1,8 @@
 /* popup box */
 .popup-box-opened { overflow: hidden; }
-.popup-box-opened body { width: 100%; height: 100%; overflow: hidden; position: fixed; top; 0; left: 0; }
+.popup-box-opened body { width: 100%; height: 100%; overflow: hidden; position: fixed; top: 0; left: 0; }
 
-.popup-box { width: 100%; min-width: 320px; height: 100%; background-color: rgba(0,0,0,.65); padding: 0 10px; position: fixed; top; 0; right: 0; bottom: 0; left: 0; z-index: 91; }
+.popup-box { width: 100%; min-width: 320px; height: 100%; background-color: rgba(0,0,0,.65); padding: 0 10px; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 91; }
 .popup-box:not(.open) { display: none; }
 .popup-box:not(.open-ease) { opacity: 0; }
 
