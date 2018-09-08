@@ -1,2 +1,7 @@
 /* sticky header */
-header.sticky { width: 100%; background-color: rgba(255,255,255,.75); position: fixed; top: 0; right: 0; left: 0; z-index: 89; box-shadow: 0 1px 3px rgba(0,0,0,.15); }
+.ease-sticky { transition-property: top opacity; transition-duration: .3s; }
+
+.sticky-header-active body { padding-top: 101px; } /* change your header height */
+
+header.sticky { background-color: rgba(255,255,255,.75); position: fixed; top: -100%; right: 0; left: 0; z-index: 89; box-shadow: 0 1px 3px rgba(0,0,0,.15); opacity: 0; }
+header.sticky-ease { top: 0; opacity: 1; }
