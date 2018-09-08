@@ -8,10 +8,9 @@ function stickyHeader() {
 
     'use strict';
 
-    var ua, header, windowTarget;
+    var ua, windowTarget;
 
     ua = navigator.userAgent.toLowerCase();
-    header = selector('header');
 
     if (ua.indexOf('edge') > -1 || (ua.indexOf('mobile') > -1 && ua.indexOf('apple') > -1)) {
         windowTarget = document.body; // edge and ios devices returns document.documentElement = 0
@@ -20,20 +19,11 @@ function stickyHeader() {
         windowTarget = document.documentElement;
     }
 
-    if (windowTarget.scrollTop > 50) {
-
-        events.addClass(document, 'sticky-header-active');
-        events.addClass(header, 'sticky ease-sticky');
-
-        setTimeout(function () {
-            events.addClass(header, 'sticky-ease');
-        }, 0);
+    if (windowTarget.scrollTop > 0) {
+        events.addClass(document, 'sticky-header');
 
     } else {
-
-        events.removeClass(document, 'sticky-header-active');
-        events.removeClass(header, 'sticky-ease sticky ease-sticky');
-
+        events.removeClass(document, 'sticky-header');
     }
 
 }
