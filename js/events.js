@@ -32,7 +32,7 @@ var events = {
     on: function (t, e, that, callback) {
 
         'use strict';
-        var arr, f, fnc, handlerFnc, targetEl, isWindow, l, isMSIE, ie, i = 0, j = 0, k = 0;
+        var arr, f, fnc, handlerFnc, targetEl, isWindowEvent, l, isMSIE, ie, eName, i = 0, j = 0, k = 0;
 
         fnc = function (e) {
 
@@ -58,11 +58,10 @@ var events = {
             } else {
 
                 f = that;
-
                 if (typeof t === 'object' && !NodeList.prototype.isPrototypeOf(t) && typeof e === 'string') { // custom events
 
-                    isWindow = Object.prototype.toString.call(t) === '[object Window]'; // detect window events
-                    if (isWindow) { l = selector(t); } else { l = selector(t)[0]; }
+                    isWindowEvent = Object.prototype.toString.call(t) === '[object Window]'; // detect window events
+                    if (isWindowEvent) { l = selector(t); } else { l = selector(t)[0]; }
 
                     // detecting IE
                     isMSIE = /*@cc_on!@*/false;
@@ -70,7 +69,7 @@ var events = {
 
                     if (isMSIE || !!document.documentMode || navigator.userAgent.toLowerCase().indexOf('edge') > -1) { ie = true; }
 
-                    if (isWindow && ie) { // disable ie window event firing on ready
+                    if (isWindowEvent && ie) { // disable ie window event firing on ready
                         setTimeout(function () { l.addEventListener(e, that, true); }, 150);
 
                     } else { l.addEventListener(e, that, true); }
@@ -88,7 +87,16 @@ var events = {
                 window.eventHandlers[pt][pe].push(f);
 
                 if (typeof pe !== 'function' && f !== undefined) {
-                    pt.addEventListener(pe.split('.')[0], f, true); // split for event naming
+
+                    eName = pe.split('.')[0]; // split for event naming, get the event name without name
+
+                    if (eName === 'mouseenter' || eName === 'mouseleave' || eName === 'mouseover' || eName === 'mouseout') { // control closest events
+
+                        if (!(events.closest(e.target, pt).length === 1)) {
+                            pt.addEventListener(eName, f, true);
+                        }
+
+                    } else { pt.addEventListener(eName, f, true); }
 
                 } else { return; }
 
@@ -96,7 +104,7 @@ var events = {
 
             l = selector(t);
 
-            if (isWindow) { handlerFnc(l, e); } else {
+            if (isWindowEvent) { handlerFnc(l, e); } else {
                 for (i = 0; i < l.length; i += 1) { handlerFnc(l[i], e); }
             }
 
