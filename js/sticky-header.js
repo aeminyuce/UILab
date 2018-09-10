@@ -3,27 +3,22 @@
  Sticky Header JS requires Events JS
 */
 
-/*globals window, document, events, selector, navigator, setTimeout */
+/*globals window, events, selector */
 function stickyHeader() {
 
     'use strict';
 
-    var ua, windowTarget;
+    var header = selector('header');
+    if (window.pageYOffset > header[0].offsetTop) {
 
-    ua = navigator.userAgent.toLowerCase();
-
-    if (ua.indexOf('edge') > -1 || (ua.indexOf('mobile') > -1 && ua.indexOf('apple') > -1)) {
-        windowTarget = document.body; // edge and ios devices returns document.documentElement = 0
-
-    } else {
-        windowTarget = document.documentElement;
-    }
-
-    if (windowTarget.scrollTop > 0) {
-        events.addClass(document, 'sticky-header');
+        selector('body')[0].style.paddingTop = header[0].offsetHeight + 'px';
+        events.addClass(header, 'sticky');
 
     } else {
-        events.removeClass(document, 'sticky-header');
+
+        selector('body')[0].style.paddingTop = '0';
+        events.removeClass(header, 'sticky');
+
     }
 
 }
