@@ -14,7 +14,7 @@
 .dropdown.submenu-top ul { margin-bottom: 1px; bottom: 100%; }
 .dropdown.open .btn-invisible { background-color: rgba(0,0,0,.075) !important; }
 
-.dropdown ul { min-width: 200px; max-width: 744px; background-color: #fff; position: absolute; }
+.dropdown ul { list-style: none; min-width: 200px; max-width: 744px; background-color: #fff; padding: 0; margin-bottom: 0; position: absolute; }
 .dropdown ul.circle { border-radius: 16px; }
 .dropdown ul:not([class*="bordered"]).v-scroll { max-height: 300px; }
 .dropdown ul.bordered:not(.dual-bordered).v-scroll { max-height: 302px; }
