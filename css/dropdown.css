@@ -20,7 +20,8 @@
 .dropdown ul.bordered:not(.dual-bordered).v-scroll { max-height: 302px; }
 .dropdown ul.dual-bordered.v-scroll { max-height: 304px; }
 .dropdown li,.dropdown li a { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
-.dropdown li { text-align: left; line-height: 20px; height: 30px; }
+.dropdown li { line-height: 20px; height: 30px; }
+.dropdown li, .dropdown li * { text-align: left !important; }
 .dropdown li:not(.sep) { padding: 5px 10px; }
 .dropdown li.sep { height: 1px; background-color: rgba(0,0,0,.1); }
 .dropdown li > a { padding: 5px 10px; margin: -5px -10px; display: block; }
