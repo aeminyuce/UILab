@@ -171,16 +171,10 @@ function dropdownFnc() {
         'mouseleave',
         '.dropdown.open-hover.open',
 
-        function (e) {
+        function () {
 
             clearTimeout(window.dropdownLeaveTimer);
-            window.dropdownLeaveTimer = setTimeout(function () {
-
-                if (!(events.closest(e.target, '.dropdown').length === 1)) {
-                    dropdownClose();
-                }
-
-            }, 300);
+            window.dropdownLeaveTimer = setTimeout(function () { dropdownClose(); }, 300);
 
         });
 
