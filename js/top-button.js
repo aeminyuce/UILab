@@ -3,7 +3,7 @@
  Top Button JS requires Events JS
 */
 
-/*globals window, document, events, selector, navigator, setTimeout ,setInterval, clearInterval */
+/*globals window, events, selector, navigator, setTimeout ,setInterval, clearInterval */
 var topButton = {
 
     classes: 'circle',
@@ -16,23 +16,9 @@ function topButtonTogglerFnc() {
 
     'use strict';
 
-    var ua, btn;
+    var btn = selector('.top-button');
 
-    ua = navigator.userAgent.toLowerCase();
-    btn = selector('.top-button');
-
-    if (topButton.target === '') {
-
-        if (ua.indexOf('edge') > -1 || (ua.indexOf('mobile') > -1 && ua.indexOf('apple') > -1)) {
-            window.topButtonScrollTarget = document.body; // edge and ios devices returns document.documentElement = 0
-
-        } else {
-            window.topButtonScrollTarget = document.documentElement;
-        }
-
-    } else { window.topButtonScrollTarget = selector(topButton.target)[0]; }
-
-    if (window.topButtonScrollTarget.scrollTop > 50) {
+    function showTopBtn() {
 
         if (!events.hasClass(btn, 'open')) {
 
@@ -41,7 +27,9 @@ function topButtonTogglerFnc() {
 
         }
 
-    } else {
+    }
+
+    function hideTopBtn() {
 
         if (events.hasClass(btn, 'open')) {
 
@@ -49,6 +37,23 @@ function topButtonTogglerFnc() {
             setTimeout(function () { events.removeClass(btn, 'open'); }, 150);
 
         }
+
+    }
+
+    if (topButton.target === '') {
+
+        window.topButtonScrollTarget = window;
+        window.topButtonScrollPos = window.topButtonScrollTarget.topButtonScrollTarget.pageYOffset;
+
+        if (window.topButtonScrollPos > 50) { showTopBtn(); } else { hideTopBtn(); }
+
+    } else {
+
+        window.topButtonScrollTarget = selector(topButton.target)[0];
+        window.topButtonScrollPos = window.topButtonScrollTarget.topButtonScrollTarget.scrollTop;
+
+        if (window.topButtonScrollPos > 50) { showTopBtn(); } else { hideTopBtn(); }
+
     }
 
 }
@@ -76,8 +81,10 @@ function topButtonFnc() {
         clearInterval(window.topButtonAnimate);
         window.topButtonAnimate = setInterval(function () {
 
-            window.topButtonScrollTarget.scrollTop -= '65';
-            if (window.topButtonScrollTarget.scrollTop === 0) { clearInterval(window.topButtonAnimate); }
+            window.topButtonScrollPos -= 65;
+
+            window.topButtonScrollTarget.scrollTo(0, window.topButtonScrollPos);
+            if (window.topButtonScrollPos <= 0) { clearInterval(window.topButtonAnimate); }
 
         }, 10);
 
