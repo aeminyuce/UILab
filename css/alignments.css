@@ -1,5 +1,5 @@
 /* alignments */
-.align-center.align-center * { text-align: center !important; }
+.align-center,.align-center * { text-align: center !important; }
 .align-right,.align-right * { text-align: right !important; }
 .align-left,.align-left * { text-align: left !important; }
 .align-justify { text-align: justify !important; }
