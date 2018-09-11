@@ -3,7 +3,7 @@
  Dropdown JS requires Events JS
 */
 
-/*globals window, document, selector, events, navigator, setTimeout, clearTimeout */
+/*globals window, document, selector, events, setTimeout, clearTimeout */
 var dropdown = {
     windowPositionTarget: ''
 };
@@ -39,14 +39,11 @@ function dropdownFnc() {
         e.preventDefault();
         e.stopPropagation();
 
-        var ua, win, list, alignSize, parent, btnHeight, subMenuHeight, offset, screenW, screenH, leftSpace, listWidth, offsetWidth;
-
-        ua = navigator.userAgent.toLowerCase();
-
-        leftSpace = 0;
+        var win, list, alignSize, parent, btnHeight, subMenuHeight, offset, screenW, screenH, leftSpace, listWidth, offsetWidth;
 
         parent = t.parentNode;
         offset = parent.getBoundingClientRect();
+
         list = selector('ul', parent);
 
         if (!events.hasClass(parent, 'open')) {
@@ -58,11 +55,6 @@ function dropdownFnc() {
                 events.addClass(parent, 'open');
 
                 if (dropdown.windowPositionTarget === '') {
-
-                    if (ua.indexOf('edge') > -1 || (ua.indexOf('mobile') > -1 && ua.indexOf('apple') > -1)) {
-                        win = document.body; // edge and ios devices returns document.documentElement = 0
-
-                    } else { win = document.documentElement; }
 
                     leftSpace = 0;
                     screenW = window.innerWidth;
