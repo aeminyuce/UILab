@@ -102,7 +102,7 @@ function dropdownFnc() {
                         events.addClass(parent, 'submenu-top');
 
                     } else {
-                        list[0].style.height = (list.height() - (offset.top + parseInt(btnHeight + subMenuHeight, 10) - screenH) - 15) + 'px';
+                        list[0].style.height = (list[0].offsetHeight - (offset.top + parseInt(btnHeight + subMenuHeight, 10) - screenH) - 15) + 'px';
                     }
 
                 }
