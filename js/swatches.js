@@ -21,7 +21,7 @@ function swatchesFnc() {
             'mouseenter',
             'a[class*="ui-"]:not(.ui-text):not(.ui-border):not(.opacity):not(.opacity-more):not(.no-hover),.btn[class*="ui-"]:not(.ui-text):not(.ui-border):not(.opacity):not(.opacity-more):not(.no-hover),.hover',
 
-            function (e) {
+            function () {
 
                 var disabled, r, g, b, a, getStyle, style, currentColor, hoverColor, getAlpha;
 
@@ -30,8 +30,6 @@ function swatchesFnc() {
                 if (disabled !== null) {
                     if (disabled === 'false') { return; }
                 }
-
-                if ((events.closest(e.target, this).length === 1)) { return; }
 
                 currentColor = window.getComputedStyle(this);
                 currentColor = currentColor.getPropertyValue('background-color');

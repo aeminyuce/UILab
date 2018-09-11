@@ -32,7 +32,7 @@ var events = {
     on: function (t, e, that, callback) {
 
         'use strict';
-        var arr, f, fnc, handlerFnc, targetEl, isWindowEvent, l, isMSIE, ie, eName, i = 0, j = 0, k = 0;
+        var arr, f, fnc, handlerFnc, targetEl, isWindowEvent, l, isMSIE, eName, ie, i = 0, j = 0, k = 0;
 
         fnc = function (e) {
 
@@ -44,11 +44,23 @@ var events = {
 
                 f = function (event) {
 
+                    eName = e.split('.')[0]; // split for event naming, get the event name without name
                     targetEl = selector(that); // catches future updated DOM!
+
                     for (j = 0; j < targetEl.length; j += 1) {
 
-                        if (event.target === targetEl[j] || events.closest(event.target, targetEl[j]).length === 1) {
-                            callback.call(targetEl[j], event, event.toElement);
+                        if (eName === 'mouseenter' || eName === 'mouseleave' || eName === 'mouseover' || eName === 'mouseout') { // control non-closest events
+
+                            if (event.target === targetEl[j]) {
+                                callback.call(targetEl[j], event, event.toElement);
+                            }
+
+                        } else {
+
+                            if (event.target === targetEl[j] || events.closest(event.target, targetEl[j]).length === 1) {
+                                callback.call(targetEl[j], event, event.toElement);
+                            }
+
                         }
 
                     }
@@ -87,16 +99,7 @@ var events = {
                 window.eventHandlers[pt][pe].push(f);
 
                 if (typeof pe !== 'function' && f !== undefined) {
-
-                    eName = pe.split('.')[0]; // split for event naming, get the event name without name
-
-                    if (eName === 'mouseenter' || eName === 'mouseleave' || eName === 'mouseover' || eName === 'mouseout') { // control closest events
-
-                        if (!(events.closest(e.target, pt).length === 1)) {
-                            pt.addEventListener(eName, f, true);
-                        }
-
-                    } else { pt.addEventListener(eName, f, true); }
+                    pt.addEventListener(pe.split('.')[0], f, true); // split for event naming, get the event name without name
 
                 } else { return; }
 
