@@ -14,6 +14,10 @@
 .row { margin-right: -10px; margin-left: -10px; display: block; }
 .row.show-gutter { margin-left: 0px; margin-right: 0px; }
 
+.row.row-equal-height { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; flex-wrap: wrap; }
+.row.row-equal-height > [class*="col-"]:not(.col-static) { flex-direction: column; }
+/* ie9 not supported row equal heights */
+
 .row-xs-padding { margin-right: -1px; margin-left: -1px; }
 .row-xs-padding > [class*="col-"] { padding: 1px; }
 .row-xs-padding-ver > [class*="col-"] { padding-top: 1px; padding-bottom: 1px; }
