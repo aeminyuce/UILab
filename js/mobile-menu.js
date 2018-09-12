@@ -39,6 +39,7 @@ function mobileMenuFnc() {
                 setTimeout(function () {
 
                     events.addClass(panel, easeClassname);
+                    events.addClass(document, 'mobile-menu-opened-before');
 
                     events.on(document, 'mobilemenu:open');
                     events.trigger(document, 'mobilemenu:open'); // set custom event
@@ -52,7 +53,7 @@ function mobileMenuFnc() {
             } else { // close
 
                 events.removeClass(panel, easeClassname);
-                events.removeClass(document, 'mobile-menu-opened');
+                events.removeClass(document, 'mobile-menu-opened mobile-menu-opened-before');
 
                 window.scrollTo(0, window.mobileMenuPageYPosition);
 
