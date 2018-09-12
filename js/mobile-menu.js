@@ -3,7 +3,7 @@
  Mobile Menu JS requires Events JS
 */
 
-/*globals document, selector, events, setTimeout */
+/*globals window, document, selector, events, setTimeout */
 function mobileMenuFnc() {
 
     'use strict';
@@ -33,7 +33,7 @@ function mobileMenuFnc() {
 
                 } else { html = events.clone('.add-mobile-menu'); }
 
-                events.addClass(document, 'mobile-menu-opened');
+                window.mobileMenuPageYPosition = window.pageYOffset;
                 events.addClass(panel, classname + ' show-' + position);
 
                 setTimeout(function () {
@@ -43,15 +43,21 @@ function mobileMenuFnc() {
                     events.on(document, 'mobilemenu:open');
                     events.trigger(document, 'mobilemenu:open'); // set custom event
 
+                    setTimeout(function () {
+                        events.addClass(document, 'mobile-menu-opened');
+                    }, 150);
+
                 }, 10);
 
             } else { // close
 
                 events.removeClass(panel, easeClassname);
+                events.removeClass(document, 'mobile-menu-opened');
+
+                window.scrollTo(0, window.mobileMenuPageYPosition);
 
                 setTimeout(function () {
 
-                    events.removeClass(document, 'mobile-menu-opened');
                     events.removeClass(panel, classname);
                     events.removeClass(panel, classname + ' show-' + position);
 
