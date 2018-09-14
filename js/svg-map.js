@@ -4,7 +4,6 @@
 */
 
 /*globals window, events, selector, setTimeout */
-/* svg map */
 function svgMap() {
 
     'use strict';
