@@ -1,0 +1,12 @@
+/* svg map */
+.svg-map { position: relative; }
+.ie:not(.edge) .svg-map svg { width: auto; height: 206px; }
+.svg-map svg g path { fill: #eee; stroke: #fff; stroke-width: 1.5; cursor: pointer; }
+html:not(.mobile) .svg-map svg g path:hover { fill: #009fe3 !important; }
+.svg-map svg g.active path { fill: #00dcdd; }
+
+.svg-map .toolbar { position: fixed; z-index: 1; opacity: .94; }
+.svg-map .toolbar:not(.open) { display: block; }
+.svg-map .toolbar:not(.open-ease) { opacity: 0; }
+.svg-map .toolbar span { color: #000; text-align: center; font-weight: bold; width: 160px; height: 40px; background: #f9f9f9; padding: 10px; display: inline-block; border-radius: 4px; }
+.svg-map .toolbar span:after { content: ""; width: 14px; height: 14px; background: #f9f9f9; margin-left: -7px; display: block; position: absolute; top: 32px; left: 50%; border-radius: 4px; transform: rotate(45deg); }
