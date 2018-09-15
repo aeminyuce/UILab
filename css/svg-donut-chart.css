@@ -1,0 +1,8 @@
+/* svg donut chart */
+@keyframes donut-chart { from { stroke-dashoffset: 440; } }
+
+.donut-chart { position: relative; }
+.donut-chart strong { text-align: center; width: 100%; position: absolute; top: 50%; transform: translateY(-50%); }
+.donut-chart svg { width: 100%; height: auto; margin: 0 auto; -ms-transform: rotate(-90deg); transform: rotate(-90deg); }
+.donut-chart circle { fill: none; stroke-width: 8; stroke-linecap: round; stroke-dasharray: 440; transform-origin: 50% 50%; }
+html:not(.ie):not(.edge) .donut-chart circle { animation: donut-chart 1s ease-out forwards; }
