@@ -3,7 +3,7 @@
  SVG Map requires Events JS
 */
 
-/*globals window, events, selector, setTimeout */
+/*globals window, events, selector, setTimeout, clearTimeout */
 function svgMap() {
 
     'use strict';
@@ -52,6 +52,7 @@ function svgMap() {
 
     function toolbarClose() {
 
+        clearTimeout(window.SVGMapToolbarTimer);
         events.removeClass(toolbar, 'open-ease');
 
         setTimeout(function () {
@@ -62,6 +63,7 @@ function svgMap() {
 
     events.on(map, 'mousemove', function (e) {
 
+        clearTimeout(window.SVGMapToolbarTimer);
         toolbar.setAttribute('style', 'top: ' + (e.clientY - (toolbar.offsetHeight + 14)) + 'px; left:' + (e.clientX - (toolbar.offsetWidth / 2)) + 'px;');
 
         if (e.target.toString() === '[object SVGPathElement]') {
@@ -70,13 +72,18 @@ function svgMap() {
 
         if (e.target.toString() === '[object SVGSVGElement]') {
             toolbarClose();
+
         } else {
 
-            events.addClass(toolbar, 'open');
+            window.SVGMapToolbarTimer = setTimeout(function () {
 
-            setTimeout(function () {
-                events.addClass(toolbar, 'open-ease');
-            }, 0);
+                events.addClass(toolbar, 'open');
+
+                setTimeout(function () {
+                    events.addClass(toolbar, 'open-ease');
+                }, 0);
+
+            }, 300);
 
         }
 
