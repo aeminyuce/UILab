@@ -55,8 +55,11 @@ function useragentsFnc() {
         events.removeClass(document, 'chrome');
 
         if (ua.indexOf('edge') > -1) {
+
             useragents.edge = true;
+            events.removeClass(document, 'ie');
             events.addClass(document, 'edge');
+
         }
 
     }
