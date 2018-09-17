@@ -1,16 +1,27 @@
 /* icon notifiers */
 .notifier { position: relative; }
-.notifier:after { content: ""; width: 40%; height: 40%; background-color: red; border-radius: 60px; position: absolute; top: -8%; right: -8%; z-index: 1; }
+.notifier:after { content: ""; background-color: red; padding: 2px; border-radius: 200px; position: absolute; z-index: 1; }
 
-[data-notifier]:not(.icon-xs):not(.icon-xxs):after { content: attr(data-notifier); color: #fff; font-size: 46%; font-family: Arial, sans-serif; text-align: center; min-width: 74%; width: auto; height: 75%; padding: 11% 16%; }
-[data-notifier].icon-md:after { padding-top: 8% !important; padding-bottom: 8% !important; }
-[data-notifier].icon-lg:after { padding-top: 12% !important; padding-bottom: 12% !important; }
+.notifier.icon-xxs:after { min-width: 4px; height: 4px; top: -1px; right: 0; }
+.notifier.icon-xs:after { min-width: 5px; height: 5px; top: -2px; right: -1px; }
+.notifier.icon-sm:after { min-width: 6px; height: 6px; top: -2px; right: 0; }
+.notifier.icon-md:after { min-width: 8px; height: 8px; top: -3px; right: -2px; }
+.notifier.icon-lg:after { min-width: 10px; height: 10px; top: -3px; right: -2px; }
+.notifier.icon-xl:after { min-width: 12px; height: 12px; top: -3px; right: -2px; }
+.notifier.icon-xxl:after { min-width: 14px; height: 14px; top: -2px; right: 4px; }
+
+.notifier[data-notifier]:after { content: attr(data-notifier); color: #fff; font-family: Arial, sans-serif; line-height: 100%; text-align: center; }
+
+.notifier[data-notifier].icon-xxs:after,.notifier[data-notifier].icon-xs:after,.notifier[data-notifier].icon-sm:after { content : ""; }
+.notifier[data-notifier].icon-md:after { font-size: 32%; transform: scale(1.4); }
+.notifier[data-notifier].icon-lg:after { font-size: 30%; transform: scale(1.4); }
+.notifier[data-notifier].icon-xl:after { font-size: 28%; transform: scale(1.6); }
+.notifier[data-notifier].icon-xxl:after { font-size: 22%; transform: scale(1.8); }
 
 .notifier-yellow:after { background-color: #ffa600; }
 .notifier-green:after { background-color: #2dbd3a; }
 .notifier-orange:after { background-color: #f47500; }
 .notifier-blue:after { background-color: #235ea0; }
-.notifier-white:after { background-color: white; }
-.notifier-white[data-notifier]:after { color: #000; }
+.notifier-white:after { color: #000 !important; background-color: white; }
 .notifier-gray:after { background-color: gray; }
 .notifier-black:after { background-color: black; }
