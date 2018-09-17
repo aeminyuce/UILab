@@ -44,7 +44,7 @@ var events = {
 
                 f = function (event) {
 
-                    eName = e.split('.')[0]; // split for event naming, get the event name without name
+                    eName = e.split('.')[0]; // split for event naming
                     targetEl = selector(that); // catches future updated DOM!
 
                     for (j = 0; j < targetEl.length; j += 1) {
@@ -72,19 +72,18 @@ var events = {
                 f = that;
                 if (typeof t === 'object' && !NodeList.prototype.isPrototypeOf(t) && typeof e === 'string') { // custom events
 
-                    isWindowEvent = Object.prototype.toString.call(t) === '[object Window]'; // detect window events
+                    // detect window events
+                    isWindowEvent = Object.prototype.toString.call(t) === '[object Window]';
                     if (isWindowEvent) { l = selector(t); } else { l = selector(t)[0]; }
 
-                    // detecting IE
                     isMSIE = /*@cc_on!@*/false;
                     ie = false;
+                    if (isMSIE || !!document.documentMode || navigator.userAgent.toLowerCase().indexOf('edge') > -1) { ie = true; } // detecting IE
 
-                    if (isMSIE || !!document.documentMode || navigator.userAgent.toLowerCase().indexOf('edge') > -1) { ie = true; }
-
-                    if (isWindowEvent && ie) { // disable ie window event firing on ready
+                    // disable ie window event firing on ready
+                    if (isWindowEvent && ie) {
                         setTimeout(function () { l.addEventListener(e, that, true); }, 150);
-
-                    } else { l.addEventListener(e, that, true); }
+                    }
 
                 }
 
@@ -99,7 +98,7 @@ var events = {
                 window.eventHandlers[pt][pe].push(f);
 
                 if (typeof pe !== 'function' && f !== undefined) {
-                    pt.addEventListener(pe.split('.')[0], f, true); // split for event naming, get the event name without name
+                    pt.addEventListener(pe.split('.')[0], f, true); // split for event naming
 
                 } else { return; }
 
@@ -134,7 +133,11 @@ var events = {
 
                     events = window.eventHandlers[pt][pe];
                     if (events !== undefined) {
-                        for (j = 0; j < events.length; j += 1) { pt.removeEventListener(pe.split('.')[0], events[j], true); } // split for event naming
+
+                        for (j = 0; j < events.length; j += 1) {
+                            pt.removeEventListener(pe.split('.')[0], events[j], true); // split for event naming
+                        }
+
                     }
 
                 }
