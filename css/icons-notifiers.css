@@ -10,13 +10,13 @@
 .notifier.icon-xl:after { min-width: 12px; height: 12px; top: -3px; right: -2px; }
 .notifier.icon-xxl:after { min-width: 14px; height: 14px; top: -2px; right: 4px; }
 
-.notifier[data-notifier]:after { content: attr(data-notifier); color: #fff; font-family: Arial, sans-serif; line-height: 100%; text-align: center; }
+.notifier[data-notifier]:after { content: attr(data-notifier); color: #fff; font-family: Arial, sans-serif; text-align: center; }
 
 .notifier[data-notifier].icon-xxs:after,.notifier[data-notifier].icon-xs:after,.notifier[data-notifier].icon-sm:after { content : ""; }
-.notifier[data-notifier].icon-md:after { font-size: 32%; transform: scale(1.4); }
-.notifier[data-notifier].icon-lg:after { font-size: 30%; transform: scale(1.4); }
-.notifier[data-notifier].icon-xl:after { font-size: 28%; transform: scale(1.6); }
-.notifier[data-notifier].icon-xxl:after { font-size: 22%; transform: scale(1.8); }
+.notifier[data-notifier].icon-md:after { font-size: 32%; line-height: 70%; transform: scale(1.4); }
+.notifier[data-notifier].icon-lg:after { font-size: 30%; line-height: 90%; transform: scale(1.4); }
+.notifier[data-notifier].icon-xl:after { font-size: 28%; line-height: 95%; transform: scale(1.6); }
+.notifier[data-notifier].icon-xxl:after { font-size: 22%; line-height: 95%; transform: scale(1.8); }
 
 .notifier-yellow:after { background-color: #ffa600; }
 .notifier-green:after { background-color: #2dbd3a; }

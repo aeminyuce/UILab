@@ -17,14 +17,16 @@
 .dropdown ul:not([class*="bordered"]).v-scroll { max-height: 204px; }
 .dropdown ul.bordered:not(.dual-bordered).v-scroll { max-height: 206px; }
 .dropdown ul.dual-bordered.v-scroll { max-height: 208px; }
+
 .dropdown li:not(:last-child) { border-bottom: solid 1px rgba(0,0,0,.075); }
-.dropdown li,.dropdown li a { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
-.dropdown li,.dropdown li * { text-align: left !important; }
 .dropdown li:not(.sep) { line-height: 20px; min-height: 30px; padding: 10px; }
 .dropdown li.sep { height: 1px; background-color: rgba(0,0,0,.1); }
+html:not(.mobile) .dropdown li:hover { background-color: rgba(0,0,0,.075); }
+
+.dropdown li,.dropdown li a,.dropdown li > label { font-size: 15px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.dropdown li,.dropdown li * { text-align: left !important; }
 .dropdown li > a { line-height: normal; padding: 10px; margin: -10px; display: block; }
 .dropdown li > a:hover { text-decoration: none; }
 .dropdown li > label { padding: 10px; margin: -10px; overflow: hidden; display: block; position: relative;  cursor: pointer; }
 .dropdown li.selected > label { background-color: rgba(0,0,0,.075); }
 .dropdown li > label input { position: relative; left: -20000px; }
-html:not(.mobile) .dropdown li:hover { background-color: rgba(0,0,0,.075); }
