@@ -1,8 +1,6 @@
 /* dropdown */
 .ease-dropdown { transition-property: margin-top, opacity; }
 .ease-dropdown li { transition-property: background-color; transition-duration: .15s; }
-.ease-dropdown.ease-fast li { transition-duration: .1s; }
-.ease-dropdown.ease-slow li { transition-duration: .4s; }
 
 .dropdown { vertical-align: top; display: inline-block; position: relative; }
 .dropdown.open { z-index: 19; }
