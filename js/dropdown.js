@@ -19,12 +19,17 @@ function dropdownClose() {
 
     setTimeout(function () {
 
-        list = selector('ul', t[0])[0];
-        if (list.getAttribute('style') !== null) {
-            list.removeAttribute('style');
-        }
+        events.each(t, function () {
 
-        events.removeClass(t, 'submenu-top open');
+            list = selector('ul', this)[0];
+
+            if (list.getAttribute('style') !== null) {
+                list.removeAttribute('style');
+            }
+
+            events.removeClass(t, 'submenu-top open');
+
+        });
 
     }, 150);
 
@@ -115,14 +120,18 @@ function dropdownFnc() {
 
             if (e.type === 'click') {
 
-                events.on(document, 'click.dropdownClose', function (ev) {
+                setTimeout(function () {
 
-                    if (ev.button !== 2) {
-                        dropdownClose();
-                        events.off(document, 'click.dropdownClose');
-                    }
+                    events.on(document, 'click.dropdownClose', function (ev) {
 
-                });
+                        if (ev.button !== 2) {
+                            dropdownClose();
+                            events.off(document, 'click.dropdownClose');
+                        }
+
+                    });
+
+                }, 0); // don not remove zero timer
 
             }
 
@@ -135,9 +144,7 @@ function dropdownFnc() {
         'click',
         '.dropdown:not(.open-hover):not(.open) > .btn',
 
-        function (e) {
-            dropdownOpen(e, this);
-        });
+        function (e) { dropdownOpen(e, this); });
 
     events.on(document,
         'mouseenter',
@@ -157,6 +164,17 @@ function dropdownFnc() {
         function () {
             clearTimeout(window.dropdownLeaveTimer);
         });
+
+    // form toggle events
+    events.on('.dropdown li > label', 'click', function () {
+
+        var p = events.closest(this, '.dropdown');
+        selector('.btn > .value-toggle', p).textContent = this.textContent;
+
+        events.removeClass(selector('li.selected', p), 'selected');
+        events.addClass(this.parentNode, 'selected');
+
+    });
 
     //close events
     events.on(document,
