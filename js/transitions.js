@@ -50,12 +50,12 @@ function pauseTransitionsFnc() { // close transitions on window resizing
 
     'use strict';
 
-    clearTimeout(window.stopTransitionsOnResizing);
+    clearTimeout(window.stopTransitionsOnEvent);
     events.addClass(document, 'no-transitions-all');
 
-    window.stopTransitionsOnResizing = setTimeout(function () {
+    window.stopTransitionsOnEvent = setTimeout(function () {
         events.removeClass(document, 'no-transitions-all');
-    }, 150);
+    }, 300);
 
 }
 
@@ -69,6 +69,14 @@ events.onload(function () {
 
 /*!resize loader*/
 events.on(window, 'resize', function () {
+
+    'use strict';
+    pauseTransitionsFnc();
+
+});
+
+/*!scroll loader*/
+events.on(window, 'scroll', function () {
 
     'use strict';
     pauseTransitionsFnc();
