@@ -5,4 +5,4 @@
 @keyframes progress { from { background-position: 40px 0; } to { background-position: 0 0; } }
 .animate-progress { animation: progress 3s linear infinite; }
 
-.animate-stop, .animate-stop-all * { animation: none !important; }
+.animate-stop,.animate-stop-all,.animate-stop-all * { animation: none !important; }
