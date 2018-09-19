@@ -32,7 +32,7 @@ function transitionsFnc() {
 
     if (transitions.effects) {
 
-        // wait page preload to start effects
+        // wait page preload to start transitions
         if (transitions.preload) {
 
             events.addClass(document, 'no-transitions-all');
@@ -42,20 +42,24 @@ function transitionsFnc() {
 
         }
 
-    } else { events.addClass(document, 'no-transitions-all'); }
+    } else { events.addClass(document, 'no-transitions-all animate-stop-all'); }
 
 }
 
-function pauseTransitionsFnc() { // close transitions on window resizing
+function pauseTransitionsFnc() { // close transitions and animations on window resizing
 
     'use strict';
 
-    clearTimeout(window.stopTransitionsOnEvent);
-    events.addClass(document, 'no-transitions-all');
+    if (transitions.effects) {
 
-    window.stopTransitionsOnEvent = setTimeout(function () {
-        events.removeClass(document, 'no-transitions-all');
-    }, 300);
+        clearTimeout(window.stopTransitionsOnEvent);
+        events.addClass(document, 'no-transitions-all animate-stop-all');
+
+        window.stopTransitionsOnEvent = setTimeout(function () {
+            events.removeClass(document, 'no-transitions-all animate-stop-all');
+        }, 300);
+
+    }
 
 }
 
