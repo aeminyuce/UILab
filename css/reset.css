@@ -11,7 +11,7 @@ svg { fill: rgba(0,0,0,0); stroke: rgba(0,0,0,0); }
 
 :focus { outline-style: none; outline: 0; }
 a,a:active,a:hover { word-wrap: break-word; text-decoration: none; }
-.android * { -webkit-tap-highlight-color: rgba(255, 255, 255, 0); -webkit-tap-highlight-color: transparent; }
+.mobile * { -webkit-tap-highlight-color: rgba(255, 255, 255, 0); -webkit-tap-highlight-color: transparent; }
 
 input::-moz-focus-inner,button::-moz-focus-inner { padding: 0; border: 0; }
 input:-webkit-autofill { -webkit-transition-delay: 9999s; -webkit-transition: color 0s ease-out, background-color 9999s ease-out; }
