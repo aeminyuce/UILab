@@ -7,14 +7,6 @@
 var formsFnc = function () {
 
     'use strict';
-    var mobile;
-
-    if (navigator.userAgent.toLowerCase().indexOf('mobile') > -1) { // detecting mobile
-        mobile = true;
-    }
-
-    // mobile keypad event
-    events.on(document, 'forms:keypadopen forms:keypadclose');
 
     // form focus
     function formFocus(t, type) {
@@ -39,7 +31,11 @@ var formsFnc = function () {
 
         }
 
-        if (mobile) {
+        if (navigator.userAgent.toLowerCase().indexOf('mobile') > -1) { // detecting mobile
+
+            // mobile keypad event
+            events.on(document, 'forms:keypadopen forms:keypadclose');
+
             if (type === 'add') {
                 events.addClass(document, 'mobile-keyboard');
                 events.trigger(document, 'forms:keypadopen'); // set custom event
