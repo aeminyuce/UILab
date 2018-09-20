@@ -3,12 +3,18 @@
  SVG Map requires Events JS
 */
 
-/*globals window, events, selector, setTimeout, clearTimeout */
+/*globals window, events, selector, setTimeout, navigator, clearTimeout */
 function svgMap() {
 
     'use strict';
 
-    var map, arr, g, i, data, opacity, toolbar, toolbarContent;
+    var map, arr, g, p, i, data, opacity, toolbar, toolbarContent, mobile, current;
+
+    mobile = false;
+
+    if (navigator.userAgent.toLowerCase().indexOf('mobile') > -1) { // detecting mobile
+        mobile = true;
+    }
 
     map = selector('.svg-map');
     if (map.length !== 1) { return; }
@@ -37,7 +43,7 @@ function svgMap() {
             opacity = opacity.toFixed(2);
 
             if (opacity > 1) { opacity = 1; }
-            if (opacity < 0.5) { opacity = 0.25; } /* optional */
+            if (opacity < 0.5) { opacity = 0.5; } /* optional */
 
             selector('path', this)[0].setAttribute('style', 'opacity: ' + opacity + ';');
 
@@ -50,7 +56,7 @@ function svgMap() {
     toolbar = selector('.toolbar', map);
     toolbarContent = selector('span', toolbar)[0];
 
-    function toolbarClose() {
+    window.SVGMapToolbarClose = function () {
 
         clearTimeout(window.SVGMapToolbarTimer);
         events.removeClass(toolbar, 'open-ease');
@@ -59,7 +65,7 @@ function svgMap() {
             events.removeClass(toolbar, 'open');
         }, 150);
 
-    }
+    };
 
     events.on(map, 'mousemove', function (e) {
 
@@ -67,11 +73,25 @@ function svgMap() {
         toolbar.setAttribute('style', 'top: ' + (e.clientY - (toolbar.offsetHeight + 14)) + 'px; left:' + (e.clientX - (toolbar.offsetWidth / 2)) + 'px;');
 
         if (e.target.toString() === '[object SVGPathElement]') {
-            toolbarContent.innerHTML = e.target.getAttribute('id') + ': ' + e.target.parentNode.getAttribute('data-size');
+
+            p = e.target.parentNode;
+            toolbarContent.innerHTML = e.target.getAttribute('id') + ': ' + p.getAttribute('data-size');
+
+            if (mobile) {
+
+                current = selector('.svg-map [data-current]');
+                if (current.length > 0) {
+                    current[0].removeAttribute('data-current');
+                }
+
+                p.setAttribute('data-current', '');
+
+            }
+
         }
 
         if (e.target.toString() === '[object SVGSVGElement]') {
-            toolbarClose();
+            window.SVGMapToolbarClose();
 
         } else {
 
@@ -89,11 +109,21 @@ function svgMap() {
 
     });
 
-    events.on(map, 'mouseleave', toolbarClose);
+    events.on(map, 'mouseleave', window.SVGMapToolbarClose);
 
-    events.on(g, 'click', function () {
-        window.location = this.getAttribute('data-href');
-    });
+    if (!mobile) {
+
+        events.on(g, 'click', function () {
+            window.location = this.getAttribute('data-href');
+        });
+
+    } else {
+
+        events.on(toolbar, 'touchstart', function () {
+            window.location = selector('.svg-map [data-current]')[0].getAttribute('data-href');
+        });
+
+    }
 
 }
 
@@ -102,5 +132,13 @@ events.onload(function () {
 
     'use strict';
     svgMap();
+
+});
+
+/*!scroll loader*/
+events.on(window, 'scroll', function () {
+
+    'use strict';
+    window.SVGMapToolbarClose();
 
 });
