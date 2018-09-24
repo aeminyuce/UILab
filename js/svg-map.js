@@ -107,12 +107,27 @@ function svgMap() {
 
         }
 
+        if (mobile) {
+
+            events.on('body', 'touchstart.SVGMapToolbarClose', function (e) {
+
+                if (e.target.toString() !== '[object SVGPathElement]') {
+
+                    events.off('body', 'touchstart.SVGMapToolbarClose');
+                    window.SVGMapToolbarClose();
+
+                }
+
+            });
+
+        }
+
     }
-    events.on(map, 'mouseleave', window.SVGMapToolbarClose);
 
     if (!mobile) {
 
         events.on(map, 'mousemove', function (e) { showToolbar(e); });
+        events.on(map, 'mouseleave', window.SVGMapToolbarClose);
 
         events.on(g, 'click', function () {
             window.location = this.getAttribute('data-href');
@@ -121,6 +136,7 @@ function svgMap() {
     } else {
 
         events.on(map, 'click', function (e) { showToolbar(e); });
+
         events.on(toolbar, 'click', function () {
             window.location = selector('.svg-map [data-current]')[0].getAttribute('data-href');
         });
