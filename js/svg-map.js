@@ -67,7 +67,7 @@ function svgMap() {
 
     };
 
-    events.on(map, 'mousemove', function (e) {
+    function showToolbar(e) {
 
         clearTimeout(window.SVGMapToolbarTimer);
         toolbar.setAttribute('style', 'top: ' + (e.clientY - (toolbar.offsetHeight + 14)) + 'px; left:' + (e.clientX - (toolbar.offsetWidth / 2)) + 'px;');
@@ -107,11 +107,12 @@ function svgMap() {
 
         }
 
-    });
-
+    }
     events.on(map, 'mouseleave', window.SVGMapToolbarClose);
 
     if (!mobile) {
+
+        events.on(map, 'mousemove', function (e) { showToolbar(e); });
 
         events.on(g, 'click', function () {
             window.location = this.getAttribute('data-href');
@@ -119,7 +120,8 @@ function svgMap() {
 
     } else {
 
-        events.on(toolbar, 'touchstart', function () {
+        events.on(map, 'click', function (e) { showToolbar(e); });
+        events.on(toolbar, 'click', function () {
             window.location = selector('.svg-map [data-current]')[0].getAttribute('data-href');
         });
 
