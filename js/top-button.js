@@ -43,14 +43,14 @@ function topButtonTogglerFnc() {
     if (topButton.target === '') {
 
         window.topButtonScrollTarget = window;
-        window.topButtonScrollPos = window.topButtonScrollTarget.topButtonScrollTarget.pageYOffset;
+        window.topButtonScrollPos = window.topButtonScrollTarget.pageYOffset;
 
         if (window.topButtonScrollPos > 50) { showTopBtn(); } else { hideTopBtn(); }
 
     } else {
 
         window.topButtonScrollTarget = selector(topButton.target)[0];
-        window.topButtonScrollPos = window.topButtonScrollTarget.topButtonScrollTarget.scrollTop;
+        window.topButtonScrollPos = window.topButtonScrollTarget.scrollTop;
 
         if (window.topButtonScrollPos > 50) { showTopBtn(); } else { hideTopBtn(); }
 
@@ -81,7 +81,7 @@ function topButtonFnc() {
         clearInterval(window.topButtonAnimate);
         window.topButtonAnimate = setInterval(function () {
 
-            window.topButtonScrollPos -= 65;
+            window.topButtonScrollPos -= (window.topButtonScrollPos / 4);
 
             window.topButtonScrollTarget.scrollTo(0, window.topButtonScrollPos);
             if (window.topButtonScrollPos <= 0) { clearInterval(window.topButtonAnimate); }
