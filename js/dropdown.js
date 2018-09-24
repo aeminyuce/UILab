@@ -57,7 +57,6 @@ function dropdownFnc() {
             setTimeout(function () {
 
                 events.removeClass('.dropdown.open', 'open');
-                events.addClass(parent, 'open');
 
                 if (dropdown.windowPositionTarget === '') {
 
@@ -112,9 +111,15 @@ function dropdownFnc() {
 
                 }
 
-                setTimeout(function () {
-                    events.addClass(parent, 'open-ease');
-                }, 50);
+                clearTimeout(window.dropdownOpenTimer);
+                window.dropdownOpenTimer = setTimeout(function () {
+
+                    events.addClass(parent, 'open');
+                    setTimeout(function () {
+                        events.addClass(parent, 'open-ease');
+                    }, 50);
+
+                }, 150);
 
             }, 0); // don not remove zero timer
 
@@ -152,7 +157,7 @@ function dropdownFnc() {
 
         function (e) {
 
-            clearTimeout(window.dropdownLeaveTimer);
+            clearTimeout(window.dropdownCloseTimer);
             dropdownOpen(e, this);
 
         });
@@ -162,7 +167,7 @@ function dropdownFnc() {
         'html:not(.mobile) .dropdown.open-hover.open > .btn,html:not(.mobile) .dropdown.open-hover.open ul',
 
         function () {
-            clearTimeout(window.dropdownLeaveTimer);
+            clearTimeout(window.dropdownCloseTimer);
         });
 
     // form toggle events
@@ -179,12 +184,14 @@ function dropdownFnc() {
     //close events
     events.on(document,
         'mouseleave',
-        '.dropdown.open-hover.open',
+        '.dropdown.open-hover',
 
         function () {
 
-            clearTimeout(window.dropdownLeaveTimer);
-            window.dropdownLeaveTimer = setTimeout(function () { dropdownClose(); }, 300);
+            clearTimeout(window.dropdownCloseTimer);
+            clearTimeout(window.dropdownOpenTimer);
+
+            window.dropdownCloseTimer = setTimeout(function () { dropdownClose(); }, 300);
 
         });
 
