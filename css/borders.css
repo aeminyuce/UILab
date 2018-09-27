@@ -1,0 +1,30 @@
+/* border */
+.bordered,.top-bordered,.right-bordered,.bottom-bordered,.left-bordered { border-style: solid; border-color: rgba(0,0,0,.075); }
+.bordered { border: solid 1px rgba(0,0,0,.075); }
+.top-bordered { border-width: 1px 0 0 0; }
+.right-bordered { border-width: 0 1px 0 0; }
+.bottom-bordered { border-width: 0 0 1px 0; }
+.left-bordered { border-width: 0 0 0 1px; }
+
+.hor-bordered { border-right: solid 1px rgba(0,0,0,.075); border-left: solid 1px rgba(0,0,0,.075); border-top: 0 !important; border-bottom: 0 !important; }
+.ver-bordered { border-top: solid 1px rgba(0,0,0,.075); border-bottom: solid 1px rgba(0,0,0,.075); border-right: 0 !important; border-left: 0 !important; }
+
+.dark-bordered { border-color: rgba(0,0,0,.15) !important; }
+
+.large-bordered { border-width: 5px !important; }
+.large-bordered.top-bordered { border-width: 5px 0 0 0 !important; }
+.large-bordered.right-bordered { border-width: 0 5px 0 0 !important; }
+.large-bordered.bottom-bordered { border-width: 0 0 5px 0 !important; }
+.large-bordered.left-bordered { border-width: 0 0 0 5px !important; }
+
+.dual-bordered { border-width: 2px !important; }
+.dual-bordered.top-bordered { border-width: 2px 0 0 0 !important; }
+.dual-bordered.right-bordered { border-width: 0 2px 0 0 !important; }
+.dual-bordered.bottom-bordered { border-width: 0 0 2px 0 !important; }
+.dual-bordered.left-bordered { border-width: 0 0 0 2px !important; }
+
+.no-bordered { border-width: 0 !important; }
+.no-bordered-top { border-top-width: 0 !important; }
+.no-bordered-right { border-right-width: 0 !important; }
+.no-bordered-bottom { border-bottom-width: 0 !important; }
+.no-bordered-left { border-left-width: 0 !important; }
