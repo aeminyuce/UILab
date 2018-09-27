@@ -30,6 +30,8 @@ function countdownFnc() {
                 arr[i].s = 59;
 
                 m = selector('.m', this)[0]; // minute
+                if (m === undefined) { return; }
+
                 arr[i].m = parseInt(m.textContent, 10);
 
                 if (arr[i].m <= 0) {
@@ -37,17 +39,21 @@ function countdownFnc() {
                     arr[i].m = 59;
 
                     h = selector('.h', this)[0]; // hour
+                    if (h === undefined) { return; }
+
                     arr[i].h = parseInt(h.textContent, 10);
 
                     if (arr[i].h <= 0) {
 
-                        arr[i].h = 23;
-
                         d = selector('.d', this)[0]; // day
+                        if (d === undefined) { return; }
                         arr[i].d = parseInt(d.textContent, 10);
 
-                        if (arr[i].d <= 0) { arr[i].d = 0; } else { arr[i].d -= 1; }
+                        if (arr[i].d <= 0) { arr[i].d = 0; return; }
+                        arr[i].d -= 1;
                         d.textContent = arr[i].d;
+
+                        arr[i].h = 23;
 
                     } else { arr[i].h -= 1; }
                     h.textContent = arr[i].h;
