@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>UI Lab, Photo Preview</title>
+    <meta name="keywords" content="uilab, css, javascript, photo preview">
+    <meta name="description" content="UI Lab CSS and JavaScript Tools." />
+    <meta name="author" content="Ahmet Emin Yüce"/>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
+
+    <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/alignments.css" />
+    <link rel="stylesheet" href="../css/buttons.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/helpers.css" />
+    <link rel="stylesheet" href="../css/icons.css" />
+    <link rel="stylesheet" href="../css/margins.css" />
+    <link rel="stylesheet" href="../css/paddings.css" />
+    <link rel="stylesheet" href="../css/portlets.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/sticky-header.css" />
+    <link rel="stylesheet" href="../css/transitions.css" />
+    <link rel="stylesheet" href="../css/typography.css" />
+    <link rel="stylesheet" href="../css/swatches.css" />
+    <link rel="stylesheet" href="../css/top-button.css" />
+
+    <link rel="stylesheet" href="../css/photo-preview.css" />
+
+    <!-- Javascript Tools -->
+    <script src="../js/selector.js"></script>
+    <script src="../js/events.js"></script>
+    <script src="../js/ajax.js"></script>
+    <script src="../js/sticky-header.js"></script>
+    <script src="../js/top-button.js"></script>
+
+    <script src="../js/photo-preview.js"></script>
+
+    <!-- font icons CSS -->
+    <link rel="stylesheet" href="../../UIIcons/font-icons/outline/font-icons.css" />
+
+    <!-- custom CSS -->
+    <style>
+        body { background-color: #f9f9f9; }
+        header { min-height: 64px; }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="container no-gutter theme-blue ui-dark">
+        <div class="col-12">
+            <a href="examples.html" class="btn btn-lg no-padding-h rounded ease-bg margin-10-r"><i class="icon icon-md no-opacity icon-angle-left"></i></a>
+            <span class="inline-block x-large align-middle">UI Lab, Photo Preview</span>
+        </div>
+    </header>
+
+    <!-- documentation examples -->
+    <main class="container">
+        <div class="fixed">
+            <div class="row row-lg-padding">
+                <div class="col-12">
+
+                    <div class="portlet rounded padding-15 shadow">
+                        <div class="row row-xs-padding">
+                            <div class="col-6 sm-responsive">
+                                <span class="photo-preview ease-bank-color">
+                                    <i class="preview-loader icon icon-xxl icon-loader ease-opacity"></i>
+                                    <span class="ease-1st-opacity">
+                                        <img data-src="images/image_01.jpg,images/image_02.jpg,images/image_03.jpg" alt="Image info here 1">
+                                    </span>
+                                    <div class="preview-nav"></div>
+                                    <button title="Previous Photo" class="preview-left ease-opacity" type="button"><i class="icon icon-xl icon-angle-left"></i></button>
+                                    <button title="Next Photo" class="preview-right ease-opacity" type="button"><i class="icon icon-xl icon-angle-right"></i></button>
+                                </span>
+                            </div>
+                            <div class="col-6 sm-responsive">
+                                <span class="photo-preview ease-bank-color">
+                                    <i class="preview-loader icon icon-xxl icon-loader ease-opacity"></i>
+                                    <span class="ease-1st-opacity">
+                                        <img data-src="images/image_02.jpg,images/image_03.jpg,images/image_01.jpg" alt="Image info here 2">
+                                    </span>
+                                    <div class="preview-nav"></div>
+                                    <button title="Previous Photo" class="preview-left ease-opacity" type="button"><i class="icon icon-xl icon-angle-left"></i></button>
+                                    <button title="Next Photo" class="preview-right ease-opacity" type="button"><i class="icon icon-xl icon-angle-right"></i></button>
+                                </span>
+                            </div>
+                            <div class="col-6 sm-responsive">
+                                <span class="photo-preview ease-bank-color">
+                                    <i class="preview-loader icon icon-xxl icon-loader ease-opacity"></i>
+                                    <span class="ease-1st-opacity">
+                                        <img data-src="images/image_03.jpg,images/image_01.jpg,images/image_02.jpg" alt="Image info here 3">
+                                    </span>
+                                    <div class="preview-nav"></div>
+                                    <button title="Previous Photo" class="preview-left ease-opacity" type="button"><i class="icon icon-xl icon-angle-left"></i></button>
+                                    <button title="Next Photo" class="preview-right ease-opacity" type="button"><i class="icon icon-xl icon-angle-right"></i></button>
+                                </span>
+                            </div>
+                            <div class="col-6 sm-responsive">
+                                <span class="photo-preview ease-bank-color">
+                                    <i class="preview-loader icon icon-xxl icon-loader ease-opacity"></i>
+                                    <span class="ease-1st-opacity">
+                                        <img data-src="images/image_01.jpg,images/image_02.jpg,images/image_03.jpg" alt="Image info here 4">
+                                    </span>
+                                    <div class="preview-nav"></div>
+                                    <button title="Previous Photo" class="preview-left ease-opacity" type="button"><i class="icon icon-xl icon-angle-left"></i></button>
+                                    <button title="Next Photo" class="preview-right ease-opacity" type="button"><i class="icon icon-xl icon-angle-right"></i></button>
+                                </span>
+                            </div>
+                            <div class="col-6 sm-responsive">
+                                <span class="photo-preview ease-bank-color">
+                                    <i class="preview-loader icon icon-xxl icon-loader ease-opacity"></i>
+                                    <span class="ease-1st-opacity">
+                                        <img data-src="images/image_01.jpg,images/image_02.jpg,images/image_03.jpg" alt="Image info here 5">
+                                    </span>
+                                    <div class="preview-nav"></div>
+                                    <button title="Previous Photo" class="preview-left ease-opacity" type="button"><i class="icon icon-xl icon-angle-left"></i></button>
+                                    <button title="Next Photo" class="preview-right ease-opacity" type="button"><i class="icon icon-xl icon-angle-right"></i></button>
+                                </span>
+                            </div>
+                            <div class="col-6 sm-responsive">
+                                <span class="photo-preview ease-bank-color">
+                                    <i class="preview-loader icon icon-xxl icon-loader ease-opacity"></i>
+                                    <span class="ease-1st-opacity">
+                                        <img data-src="images/image_02.jpg,images/image_03.jpg,images/image_01.jpg" alt="Image info here 6">
+                                    </span>
+                                    <div class="preview-nav"></div>
+                                    <button title="Previous Photo" class="preview-left ease-opacity" type="button"><i class="icon icon-xl icon-angle-left"></i></button>
+                                    <button title="Next Photo" class="preview-right ease-opacity" type="button"><i class="icon icon-xl icon-angle-right"></i></button>
+                                </span>
+                            </div>
+                            <div class="col-6 sm-responsive">
+                                <span class="photo-preview ease-bank-color">
+                                    <i class="preview-loader icon icon-xxl icon-loader ease-opacity"></i>
+                                    <span class="ease-1st-opacity">
+                                        <img data-src="images/image_03.jpg,images/image_01.jpg,images/image_02.jpg" alt="Image info here 7">
+                                    </span>
+                                    <div class="preview-nav"></div>
+                                    <button title="Previous Photo" class="preview-left ease-opacity" type="button"><i class="icon icon-xl icon-angle-left"></i></button>
+                                    <button title="Next Photo" class="preview-right ease-opacity" type="button"><i class="icon icon-xl icon-angle-right"></i></button>
+                                </span>
+                            </div>
+                            <div class="col-6 sm-responsive">
+                                <span class="photo-preview ease-bank-color">
+                                    <i class="preview-loader icon icon-xxl icon-loader ease-opacity"></i>
+                                    <span class="ease-1st-opacity">
+                                        <img data-src="images/image_01.jpg,images/image_02.jpg,images/image_03.jpg" alt="Image info here 8">
+                                    </span>
+                                    <div class="preview-nav"></div>
+                                    <button title="Previous Photo" class="preview-left ease-opacity" type="button"><i class="icon icon-xl icon-angle-left"></i></button>
+                                    <button title="Next Photo" class="preview-right ease-opacity" type="button"><i class="icon icon-xl icon-angle-right"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
