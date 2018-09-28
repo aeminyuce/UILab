@@ -100,6 +100,14 @@ events.onload(function () {
 
 });
 
+/*!resize loader*/
+events.on(window, 'resize', function () {
+
+    'use strict';
+    topButtonTogglerFnc();
+
+});
+
 /*!scroll loader*/
 events.on(window, 'scroll', function () {
 
