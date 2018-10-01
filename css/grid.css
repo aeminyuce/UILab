@@ -15,7 +15,7 @@
 .row.show-gutter { margin-left: 0px; margin-right: 0px; }
 
 /* ie9 not supported row equal heights */
-.row-equal-height { display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex-wrap: wrap; }
+.row-equal-height { display: -webkit-box !important; display: -ms-flexbox !important; display: -webkit-flex !important; display: flex !important; flex-wrap: wrap; }
 .row-equal-height > [class*="col-"]:not(.col-static) { flex-direction: column; }
 
 .row-xs-padding { margin-right: -1px; margin-left: -1px; }
