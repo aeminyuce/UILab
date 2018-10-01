@@ -31,7 +31,7 @@ events.onload(function () {
 
 });
 
-/*!scroll loader*/
+/*!scroll loader */
 events.on(window, 'scroll', function () {
 
     'use strict';

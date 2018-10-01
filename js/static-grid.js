@@ -76,7 +76,7 @@ events.onload(function () {
 
 });
 
-/*!resize loader*/
+/*!resize loader */
 events.on(window, 'resize', function () {
 
     'use strict';

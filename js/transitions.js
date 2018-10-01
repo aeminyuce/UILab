@@ -82,7 +82,7 @@ events.onload(function () {
 
 });
 
-/*!resize loader*/
+/*!resize loader */
 events.on(window, 'resize', function () {
 
     'use strict';
@@ -90,7 +90,7 @@ events.on(window, 'resize', function () {
 
 });
 
-/*!scroll loader*/
+/*!scroll loader */
 events.on(window, 'scroll', function () {
 
     'use strict';
