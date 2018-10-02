@@ -60,7 +60,7 @@ function pauseTransitionsFnc() { // close transitions and animations on window r
 
             window.stopTransitionsOnEvent = setTimeout(function () {
                 events.removeClass(document, 'no-transitions-all');
-            }, 300);
+            }, 1000);
 
         }
 
@@ -68,7 +68,7 @@ function pauseTransitionsFnc() { // close transitions and animations on window r
 
         window.stopTransitionsOnEvent = setTimeout(function () {
             events.removeClass('.animate-control', 'animate-stop-all');
-        }, 300);
+        }, 1000);
 
     }
 
