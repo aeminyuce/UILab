@@ -11,21 +11,32 @@ var formsFnc = function () {
     // form focus
     function formFocus(t, type) {
 
-        var i, p, c = ['text', 'select', 'select-multi', 'textarea'], h = events.closest(t, '.form-holder');
+        var i, parent, classes, holder;
 
-        if (h.length === 1) {
+        classes = ['text', 'select', 'select-multi', 'textarea'];
+        holder = events.closest(t, '.form-holder');
+
+        if (holder.length === 1) {
 
             events.removeClass('.form-holder-focus', 'form-holder-focus');
-            if (type === 'add') { events.addClass(h, 'form-holder-focus'); }
+            if (type === 'add') {
+                events.addClass(holder, 'form-holder-focus');
+            }
 
         } else { events.removeClass('.form-focus', 'form-focus'); }
 
-        for (i = 0; i < c.length; i += 1) {
+        for (i = 0; i < classes.length; i += 1) {
 
-            p = events.closest(t, '.' + c[i]);
+            parent = events.closest(t, '.' + classes[i]);
 
-            if (p.length === 1) {
-                if (type === 'add') { events.addClass(p, 'form-focus'); } else { events.removeClass(p, 'form-focus'); }
+            if (parent.length === 1) {
+
+                if (type === 'add') {
+                    events.addClass(parent, 'form-focus');
+                } else {
+                    events.removeClass(parent, 'form-focus');
+                }
+
                 break;
             }
 
