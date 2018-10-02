@@ -12,7 +12,7 @@ var photoSlider = {
 function photoSliderLoader() {
 
     'use strict';
-    var slider, arr, j, screenH, scrollPos, images, newImage, nav;
+    var slider, j, screenH, scrollPos, images, nav;
 
     if (photoSlider.target === '') {
 
@@ -28,33 +28,33 @@ function photoSliderLoader() {
 
     images = selector('.photo-slider img');
 
-    arr = [];
-    newImage = [];
-
     events.each(images, function (i) {
 
         if (images[i].src === '' && (images[i].getBoundingClientRect().top <= (screenH + scrollPos) + 50)) {
 
-            newImage[i] = new Image();
+            window.photoSliderIndex[i] = [];
+            window.photoSliderIndex[i][0] = new Image();
 
-            arr = images[i].getAttribute('data-src').replace(/[\s]/g, '').split(',');
-            newImage[i].src = arr[0];
+            window.photoSliderCount[i] = images[i].getAttribute('data-src').replace(/[\s]/g, '').split(',');
+            window.photoSliderIndex[i][0].src = window.photoSliderCount[i][0];
 
-            newImage[i].addEventListener('load', function () {
+            images[i].setAttribute('data-index', i);
 
-                images[i].src = newImage[i].src;
+            window.photoSliderIndex[i][0].addEventListener('load', function () {
+
+                images[i].src = window.photoSliderIndex[i][0].src;
 
                 slider = events.closest(images[i], '.photo-slider')[0];
                 nav = selector('.slider-nav', slider)[0];
 
                 if (nav.innerHTML === "") {
 
-                    for (j = 0; j < arr.length; j += 1) {
+                    for (j = 0; j < window.photoSliderCount[i].length; j += 1) {
 
                         if (j === 0) {
-                            nav.innerHTML += events.parser('<span class="selected ease-layout"></span>');
+                            nav.innerHTML += events.parser('<i class="selected ease-layout"></i>');
                         } else {
-                            nav.innerHTML += events.parser('<span class="ease-layout"></span>');
+                            nav.innerHTML += events.parser('<i class="ease-layout"></i>');
                         }
 
                     }
@@ -73,6 +73,10 @@ function photoSliderLoader() {
 function photoSliderFnc() {
 
     'use strict';
+
+    window.photoSliderIndex = [];
+    window.photoSliderCount = [];
+
     photoSliderLoader();
 
     events.on(document,
@@ -81,13 +85,12 @@ function photoSliderFnc() {
         function (e) {
 
             e.preventDefault();
-            var slider, img, arr, count, total, dots;
+            var slider, i, img, count, total, dots;
 
             slider = events.closest(this, '.photo-slider')[0];
             if (slider === undefined) { return; }
 
             img = selector('img', slider)[0];
-            arr = img.getAttribute('data-src').replace(/[\s]/g, '').split(',');
 
             if (img.getAttribute('data-count') === null) {
 
@@ -96,7 +99,9 @@ function photoSliderFnc() {
 
             } else { count = parseInt(img.getAttribute('data-count'), 10); }
 
-            total = (arr.length - 1);
+            i = img.getAttribute('data-index');
+            total = (window.photoSliderCount[i].length - 1);
+
             if (events.hasClass(this, 'slide-right')) {
 
                 if (count >= total) { count = total; return; }
@@ -110,18 +115,32 @@ function photoSliderFnc() {
             }
 
             img.setAttribute('data-count', count);
-            img.src = arr[count];
 
-            dots = selector('.slider-nav span', slider);
+            dots = selector('.slider-nav i', slider);
 
             events.removeClass(dots, 'selected');
             events.addClass(dots[count], 'selected');
 
             events.removeClass(slider, 'loader-pause');
 
-            img.addEventListener('load', function () {
+            if (window.photoSliderIndex[i][count] === undefined) {
+
+                window.photoSliderIndex[i][count] = new Image();
+                window.photoSliderIndex[i][count].src = window.photoSliderCount[i][count];
+
+                window.photoSliderIndex[i][count].addEventListener('load', function () {
+
+                    img.src = window.photoSliderIndex[i][count].src;
+                    events.addClass(slider, 'loader-pause');
+
+                }, false);
+
+            } else {
+
+                img.src = window.photoSliderIndex[i][count].src;
                 events.addClass(slider, 'loader-pause');
-            }, false);
+
+            }
 
         });
 

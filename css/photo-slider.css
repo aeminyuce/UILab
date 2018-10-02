@@ -9,9 +9,9 @@
 .photo-slider img { width: 100%; display: inline-block; position: relative; z-index: 2; }
 .photo-slider:not(.loader-pause) img { opacity: 0; }
 
-.photo-slider .slider-nav { text-align: center; line-height: 6px; position: absolute; right: 0; bottom: 20px; left: 0; z-index: 3; cursor: default; }
-.photo-slider .slider-nav span { width: 6px; height: 6px; background-color: rgba(255,255,255,.65); margin: 0 3px; display: inline-block; border-radius: 50%; }
-.photo-slider .slider-nav span.selected { background-color: rgba(255,255,255,1); transform: scale(1.75); }
+.photo-slider .slider-nav { text-align: center; line-height: 6px; display: block; position: absolute; right: 0; bottom: 20px; left: 0; z-index: 3; cursor: default; }
+.photo-slider .slider-nav i { width: 6px; height: 6px; background-color: rgba(255,255,255,.65); margin: 0 3px; display: inline-block; border-radius: 50%; }
+.photo-slider .slider-nav i.selected { background-color: rgba(255,255,255,1); transform: scale(1.75); }
 
 .photo-slider button { color: #fff; background-color: rgba(0,0,0,.15); padding: 10px; border: 0; position: absolute; top: 50%; z-index: 10; transform: translateY(-50%); }
 .photo-slider button:not(:hover) { opacity: .45; }
