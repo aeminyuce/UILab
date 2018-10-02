@@ -1,5 +1,5 @@
 /* form icons */
-.text-icon > .icon,.select > .icon,.mobile .select-multi > .icon { position: absolute; top: 50%; right: 5px; opacity: .45; cursor: default; transform: translateY(-50%); }
+.text-icon > .icon { position: absolute; top: 50%; right: 5px; opacity: .45; cursor: default; transform: translateY(-50%); }
 
 .text-icon-left > .icon,.text-icon-both > .text-icon-left { right: inherit; left: 5px; }
 .text-icon-both > .text-icon-right { right: 5px; }

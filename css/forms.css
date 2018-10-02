@@ -15,6 +15,8 @@
 .dual-bordered .text input,.dual-bordered .select select,.text.dual-bordered input,.select.dual-bordered select { line-height: 18px; height: 28px; }
 .dual-bordered.textarea textarea { line-height: 18px; }
 
+.select > .icon,.mobile .select-multi > .icon { position: absolute; top: 50%; right: 5px; opacity: .45; cursor: default; transform: translateY(-50%); }
+
 .select select { position: relative; z-index: 2; }
 html:not(.ie9) .select select { padding-right: 24px; }
 .ie .select select:focus::-ms-value { color: inherit; background-color: rgba(255,255,255,0); }
