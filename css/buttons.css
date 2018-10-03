@@ -46,8 +46,8 @@ html:not(.mobile) .btn.ui-dark:hover > .icon,html:not(.mobile) .btn.ui-x-dark:ho
 
 .btn-invisible:not(:hover) { background-color: rgba(0,0,0,0); }
 
-html:not(.mobile) .btn:not(.no-hover):not([class*="ui-"]):not(.btn-passive):hover { background-color: rgba(0,0,0,.15); }
-html:not(.mobile) .btn.btn-invisible:not(.no-hover):not([class*="ui-"]):not(.btn-passive):hover { background-color: rgba(0,0,0,.075); }
+html:not(.mobile) .btn:not(.no-hover):not([class*="ui-"]):not(.btn-passive):not(.swatch-active):hover { background-color: rgba(0,0,0,.15); }
+html:not(.mobile) .btn.btn-invisible:not(.no-hover):not([class*="ui-"]):not(.btn-passive):not(.swatch-active):hover { background-color: rgba(0,0,0,.075); }
 
 .pagination:not(:last-child) { margin-bottom: 20px; }
 

@@ -68,7 +68,7 @@ function swatchesFnc() {
 
                 } else { a = "1"; }
 
-                this.setAttribute('style', style + 'background-color: rgb(' + r + ',' + g + ',' + b + ',' + a + ') !important;');
+                this.setAttribute('style', style + 'background-color: rgba(' + r + ',' + g + ',' + b + ',' + a + ') !important;');
 
             });
 
