@@ -8,69 +8,61 @@ function mobileMenuFnc() {
 
     'use strict';
 
-    events.on(
+    function closeMobileMenu(panel) {
 
-        '[class*="show-mobile-menu-"],.close-mobile-menu',
-        'click',
+        events.removeClass(panel, 'open-ease');
+        events.removeClass(document, 'mobile-menu-opened mobile-menu-opened-before');
 
-        function () {
+        window.scrollTo(0, window.mobileMenuPageYPosition);
 
-            var panel, importers, i, html = '', position = 'left', classname = 'open', easeClassname = 'open-ease';
+        setTimeout(function () {
+            events.removeClass(panel, 'open');
+        }, 150);
 
-            panel = selector('.mobile-menu');
-            if (!events.hasClass(panel, classname)) { // open
+        events.off('.close-mobile-menu', 'click');
 
-                if (events.hasClass(this, 'show-mobile-menu-right')) {
-                    position = 'right';
-                }
+    }
 
-                importers = selector('.add-mobile-menu[data-import]').length;
-                if (importers > 1) {
+    events.on(document, 'click', '[class*="show-mobile-menu-"]', function () {
 
-                    for (i = 1; i < (importers + 1); i += 1) {
-                        html += events.clone('.add-mobile-menu[data-import="' + i + '"]');
-                    }
+        var panel, importers, i, html = '', position = 'left';
 
-                } else { html = events.clone('.add-mobile-menu'); }
-
-                window.mobileMenuPageYPosition = window.pageYOffset;
-                events.addClass(panel, classname + ' show-' + position);
-
-                setTimeout(function () {
-
-                    events.addClass(panel, easeClassname);
-                    events.addClass(document, 'mobile-menu-opened-before');
-
-                    events.on(document, 'mobilemenu:open');
-                    events.trigger(document, 'mobilemenu:open'); // set custom event
-
-                    setTimeout(function () {
-                        events.addClass(document, 'mobile-menu-opened');
-                    }, 150);
-
-                }, 10);
-
-            } else { // close
-
-                events.removeClass(panel, easeClassname);
-                events.removeClass(document, 'mobile-menu-opened mobile-menu-opened-before');
-
-                window.scrollTo(0, window.mobileMenuPageYPosition);
-
-                setTimeout(function () {
-
-                    events.removeClass(panel, classname);
-                    events.removeClass(panel, classname + ' show-' + position);
-
-                }, 150);
-
-            }
-
-            selector('.mobile-menu-content')[0].innerHTML = html;
-
+        if (events.hasClass(this, 'show-mobile-menu-right')) {
+            position = 'right';
         }
 
-    );
+        panel = selector('.mobile-menu.show-' + position);
+        importers = selector('.add-mobile-menu-' + position + '[data-import]').length;
+
+        if (importers > 1) {
+
+            for (i = 1; i < (importers + 1); i += 1) {
+                html += events.clone('.add-mobile-menu-' + position + '[data-import="' + i + '"]');
+            }
+
+        } else { html = events.clone('.add-mobile-menu-' + position); }
+
+        window.mobileMenuPageYPosition = window.pageYOffset;
+        events.addClass(panel, 'open');
+
+        setTimeout(function () {
+
+            events.addClass(panel, 'open-ease');
+            events.addClass(document, 'mobile-menu-opened-before');
+
+            events.on(document, 'mobilemenu:open');
+            events.trigger(document, 'mobilemenu:open'); // set custom event
+
+            setTimeout(function () {
+                events.addClass(document, 'mobile-menu-opened');
+            }, 150);
+
+        }, 10);
+
+        selector('.mobile-menu-content', panel).innerHTML = html;
+        events.on('.close-mobile-menu', 'click', function () { closeMobileMenu(panel); });
+
+    });
 
 }
 
