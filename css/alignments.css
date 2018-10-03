@@ -1,7 +1,7 @@
 /* alignments */
-.align-center,.align-center * { text-align: center !important; }
 .align-right,.align-right * { text-align: right !important; }
 .align-left,.align-left * { text-align: left !important; }
+.align-center,.align-center * { text-align: center !important; }
 .align-justify { text-align: justify !important; }
 .align-nowrap { white-space: nowrap !important; }
 
