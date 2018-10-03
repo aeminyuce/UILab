@@ -1,5 +1,6 @@
 /* buttons */
-.btn { text-align: center; vertical-align: middle; height: 32px; background-color: rgba(0,0,0,.08); padding-top: 6px; padding-bottom: 6px; display: inline-block; }
+.btn { vertical-align: middle; height: 32px; background-color: rgba(0,0,0,.08); padding-top: 6px; padding-bottom: 6px; display: inline-block; }
+.btn:not([class*="align-"]),.btn.align-center { text-align: center !important; }
 input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .btn:not(.btn-passive) { cursor: pointer; }
 .btn:not(.btn-block):not(.btn-multitext).no-padding-h { width: 32px !important; }
