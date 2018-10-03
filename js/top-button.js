@@ -23,7 +23,7 @@ function topButtonTogglerFnc() {
         if (!events.hasClass(btn, 'open')) {
 
             events.addClass(btn, 'open');
-            setTimeout(function () { events.addClass(btn, 'open-ease'); }, 150);
+            setTimeout(function () { events.addClass(btn, 'open-ease'); }, 400);
 
         }
 
@@ -34,7 +34,7 @@ function topButtonTogglerFnc() {
         if (events.hasClass(btn, 'open')) {
 
             events.removeClass(btn, 'open-ease');
-            setTimeout(function () { events.removeClass(btn, 'open'); }, 150);
+            setTimeout(function () { events.removeClass(btn, 'open'); }, 400);
 
         }
 
