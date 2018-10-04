@@ -1,5 +1,6 @@
 /* list group */
 .ease-list-group li,.ease-list-group li > a { transition-property: background-color; transition-duration: .15s; }
+.no-transitions-all .ease-list-group li,.no-transitions-all .ease-list-group li > a { transition-property: none !important; }
 
 .list-group:not(:last-child),.list-group li:not(:last-child) { border-bottom: solid 1px rgba(0,0,0,.1); }
 .list-group ul[class*="list-column-"] { margin-bottom: -1px; }

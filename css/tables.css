@@ -1,5 +1,6 @@
 /* tables */
 .ease-table tr,.ease-table th,.ease-table td { transition-property: background-color; transition-duration: .15s; }
+.no-transitions-all .ease-table tr,.no-transitions-all .ease-table th,.no-transitions-all .ease-table td { transition-property: none !important; }
 
 .table { width: 100%; background-color: #fff; }
 .table:not(:last-child) { margin-bottom: 20px; }

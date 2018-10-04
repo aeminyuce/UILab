@@ -3,6 +3,7 @@
 
 .ease-photo-gallery .img:after,.ease-photo-gallery .img.has-info > span { transition-property: opacity; transition-duration: .15s; }
 .ease-photo-gallery .img > .icon { transition-property: transform; transition-duration: .15s; }
+.no-transitions-all .ease-photo-gallery .img:after,.no-transitions-all .ease-photo-gallery .img.has-info > span,.no-transitions-all .ease-photo-gallery .img > .icon { transition-property: none !important; }
 
 .photo-gallery { list-style: none; padding: 0; margin-bottom: 0; display: block; }
 .photo-gallery:before,.photo-gallery:after { content: ""; display: table; }
