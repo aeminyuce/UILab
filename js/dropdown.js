@@ -46,15 +46,15 @@ function dropdownFnc() {
 
         var win, list, alignSize, parent, btnHeight, subMenuHeight, offset, screenW, screenH, leftSpace, listWidth, offsetWidth;
 
-        parent = t.parentNode;
-        offset = parent.getBoundingClientRect();
-
-        list = selector('ul', parent);
-
         if (!events.hasClass(parent, 'open')) {
 
             events.removeClass('.dropdown.open', 'open-ease');
             setTimeout(function () {
+
+                parent = t.parentNode;
+                offset = parent.getBoundingClientRect();
+
+                list = selector('ul', parent);
 
                 events.removeClass('.dropdown.open', 'open');
 
@@ -74,12 +74,12 @@ function dropdownFnc() {
 
                 }
 
-                listWidth = list[0].offsetWidth;
                 offsetWidth = parent.offsetWidth;
+                listWidth = list[0].offsetWidth;
 
                 alignSize = (listWidth - offsetWidth) / 2;
 
-                if (offsetWidth > listWidth) {
+                if ((offsetWidth > 200) && (offsetWidth > listWidth)) {
                     list[0].style.minWidth = offsetWidth + 'px';
                 }
 
