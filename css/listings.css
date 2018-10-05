@@ -1,5 +1,7 @@
 /* listings */
-[class*="list-column-"] { overflow: hidden; }
+/* grid */
+[class*="list-column-"]:before,[class*="list-column-"]:after { content: ""; display: table; }
+[class*="list-column-"]:after { clear: both; }
 
 .list-spacer-1 li { margin-bottom: 1px; } .list-spacer-1 ul,.list-spacer-1 ol { margin-top: 1px !important; }
 .list-spacer-5 li { margin-bottom: 5px; } .list-spacer-5 ul,.list-spacer-5 ol { margin-top: 5px !important; }
