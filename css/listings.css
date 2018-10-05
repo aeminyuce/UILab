@@ -1,5 +1,4 @@
 /* listings */
-/* grid */
 [class*="list-column-"]:before,[class*="list-column-"]:after { content: ""; display: table; }
 [class*="list-column-"]:after { clear: both; }
 
