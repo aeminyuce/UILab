@@ -70,6 +70,7 @@
     <script src="../js/events.js"></script>
 
     <script src="../js/android-multi-select.js"></script>
+    <script src="../js/currency-spinner.js"></script>
     <script src="../js/dropdown.js"></script>
     <script src="../js/file-input.js"></script>
     <script src="../js/form-icons.js"></script>
@@ -83,7 +84,7 @@
     <script src="../js/portlets.js"></script>
     <script src="../js/retina-images.js"></script>
     <script src="../js/slide-news.js"></script>
-    <script src="../js/spinner.js"></script>
+    <script src="../js/form-spinner.js"></script>
     <script src="../js/sprites.js"></script>
     <script src="../js/static-grid.js"></script>
     <script src="../js/sticky-header.js"></script>
@@ -2261,7 +2262,7 @@
                                 </div>
 
                                 <div class="col-4">
-                                    <label class="form-grid" for="form04">Spinner Input</label>
+                                    <label class="form-grid" for="form04">Spinner Form</label>
                                 </div>
                                 <div class="col-8">
                                     <label class="form-label" for="spinnerinput">Form Label</label>
@@ -2284,6 +2285,33 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+
+                                <div class="col-4">
+                                    <label class="form-grid" for="form04">Currency Spinner</label>
+                                </div>
+                                <div class="col-8">
+                                    <form action="#">
+                                        <div class="form-holder currency-spinner"">
+                                            <div class="row row-no-padding show-gutter">
+                                                <div class="col-static no-responsive">
+                                                    <div class="static-32">
+                                                        <button class="currency-down btn no-padding-h bordered dual-bordered rounded ease-all"><i class="icon icon-sm icon-minus"></i></button>
+                                                    </div>
+                                                    <div class="row row-no-padding">
+                                                        <div class="col-12">
+                                                            <div class="text rounded dual-bordered ease-form">
+                                                                <input type="text" value="645.000,50" min="645.000,50" step="5.000,25" maxlength="12">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="static-32">
+                                                        <button class="currency-up btn no-padding-h bordered dual-bordered rounded ease-all"><i class="icon icon-sm icon-plus"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
 
                                 <div class="col-4">
