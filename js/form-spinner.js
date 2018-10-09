@@ -1,10 +1,10 @@
 /*
- Spinner JS
- Spinner JS requires Events JS
+ Form Spinner JS
+ Form Spinner JS requires Events JS
 */
 
 /*globals window, document, selector, events */
-function spinnerFnc() {
+function spinnerFormFnc() {
 
     'use strict';
 
@@ -46,7 +46,7 @@ function spinnerFnc() {
 events.onload(function () {
 
     'use strict';
-    spinnerFnc();
+    spinnerFormFnc();
 
 });
 
