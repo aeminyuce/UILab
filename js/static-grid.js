@@ -55,7 +55,7 @@ function staticGridFnc() {
 
         };
 
-        screenW = selector(document)[0].offsetWidth;
+        screenW = window.innerWidth;
 
         fnc('xs', screenW < 481);
         fnc('sm', screenW < 768);

@@ -3,7 +3,7 @@
  Slide News JS requires Events JS
 */
 
-/*globals window, selector, events, navigator, document, setInterval, clearInterval */
+/*globals window, selector, events, navigator, setInterval, clearInterval */
 function slideNewsResizerFnc() {
 
     'use strict';
@@ -12,7 +12,7 @@ function slideNewsResizerFnc() {
     slider = selector('.slide-news')[0];
     if (slider !== undefined) {
 
-        screenW = selector(document)[0].offsetWidth;
+        screenW = window.innerWidth;
         events.width(selector('li', slider), screenW + 'px');
 
         // detecting ie9
@@ -24,6 +24,7 @@ function slideNewsResizerFnc() {
         }
 
         nav = selector('.slide-nav span');
+
         events.removeClass(nav, 'selected');
         events.addClass(nav[window.slideNewsCount], 'selected');
 
@@ -61,7 +62,7 @@ function slideNewsFnc() {
 
         total = (selector('li', slider).length - 1);
 
-        events.width(selector('li', slider), selector(document)[0].offsetWidth + 'px');
+        events.width(selector('li', slider), window.innerWidth + 'px');
 
         // show/hide slider buttons
         if (total > 1) {

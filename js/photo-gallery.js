@@ -102,7 +102,7 @@ function photoGalleryFnc() {
         }
 
         // get page scroll position
-        if (selector(document)[0].offsetWidth < 960) {
+        if (window.innerWidth < 960) {
 
             if (ua.indexOf('mobile') > -1 && ua.indexOf('apple') > -1) {
                 window.photoGalleryScrollPos = document.body.scrollTop; // ios
@@ -245,7 +245,7 @@ function photoGalleryFnc() {
             events.removeClass(preview, 'open-ease');
             events.removeClass(document, 'photo-preview-opened');
 
-            if (selector(document)[0].offsetWidth < 960) {
+            if (window.innerWidth < 960) {
 
                 if (ua.indexOf('mobile') > -1 && ua.indexOf('apple') > -1) {
                     document.body.scrollTop = window.photoGalleryScrollPos; // ios
@@ -462,8 +462,8 @@ function photoGalleryFnc() {
             msx = e.targetTouches[0].pageX;
             msy = e.targetTouches[0].pageY;
 
-            screenW = selector(document)[0].offsetWidth;
-            screenH = selector(document)[0].offsetHeight;
+            screenW = window.innerWidth;
+            screenH = window.innerHeight;
 
             coverH = events.hasClass(img, 'cover-h');
 
