@@ -20,8 +20,8 @@
 .photo-slider .slide-right { border-radius: 4px 0 0 4px; right: 0; }
 
 @media (min-width: 481px) {
-    .photo-slider img { height: 380px; }
+    .photo-slider img { height: 450px; }
 }
 @media (max-width: 480px) {
-    .photo-slider img { height: 260px; }
+    .photo-slider img { height: 280px; }
 }
