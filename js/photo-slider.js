@@ -30,7 +30,7 @@ function photoSliderLoader() {
 
     events.each(images, function (i) {
 
-        if (images[i].src === '' && (images[i].getBoundingClientRect().top <= (screenH + scrollPos) + 50)) {
+        if (images[i].getBoundingClientRect().top <= (screenH + scrollPos) + 50) {
 
             window.photoSliderIndex[i] = [];
             window.photoSliderIndex[i][0] = new Image();
