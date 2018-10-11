@@ -3,7 +3,39 @@
  Carousel JS requires Events JS
 */
 
-/*globals window, document, selector, events, navigator */
+/*globals window, document, selector, events, navigator, Image */
+function carouselLazyImages(col, i) {
+
+    'use strict';
+
+    var images = selector('.carousel');
+    images = selector('.content .img[data-src]', images[i]);
+
+    if (images.length > 0) {
+
+        window.carouselLoadImgs[i] = [];
+        events.each(images, function (l) {
+
+            if (l >= col) { return; }
+            var img = this;
+
+            window.carouselLoadImgs[i][l] = new Image();
+            window.carouselLoadImgs[i][l].src = img.getAttribute('data-src');
+
+            window.carouselLoadImgs[i][l].addEventListener('load', function () {
+
+                img.src = window.carouselLoadImgs[i][l].src;
+                img.removeAttribute('data-src');
+
+                window.carouselLoadImgs[i][l] = '';
+
+            }, false);
+
+        });
+
+    }
+
+}
 function carouselResizerFnc(i, that) {
 
     'use strict';
@@ -23,18 +55,16 @@ function carouselResizerFnc(i, that) {
         if (window.innerWidth > 767) {
 
             col = window.carouselCols[i];
-
             navSides = Math.ceil(contents.length / window.carouselCols[i]);
-            navDotsSize = navSides - navDotsLength;
 
         } else {
 
             col = window.carouselColsMobile[i];
-
             navSides = Math.ceil(contents.length / window.carouselColsMobile[i]);
-            navDotsSize = navSides - navDotsLength;
 
         }
+
+        navDotsSize = (navSides - navDotsLength);
 
         for (j = 0; j < navDotsSize; j += 1) {
             navDots.innerHTML += events.parser('<i class="ease-layout"></i>');
@@ -56,22 +86,25 @@ function carouselResizerFnc(i, that) {
 
         }
 
+        if (window.carouselCounts[i] > (navSides - 1)) { window.carouselCounts[i] = (navSides - 1); }
+
         events.removeClass(navDotsIn, 'selected');
-        events.addClass(navDotsIn[0], 'selected');
+        events.addClass(navDotsIn[window.carouselCounts[i]], 'selected');
 
         slider = selector('.carousel-slider', that[i]);
-        that[i].setAttribute('data-count', '0');
 
         // detecting ie9
         if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
-            slider[0].style.marginLeft = '0px';
+            slider[0].style.marginLeft = '-' + (window.carouselCounts[i] * that[i].offsetWidth) + 'px';
 
         } else {
-            slider[0].style.transform = 'translateX(0px)';
+            slider[0].style.transform = 'translateX(-' + (window.carouselCounts[i] * that[i].offsetWidth) + 'px)';
         }
 
         events.width(slider, ((that[i].offsetWidth / col) * contents.length) * 2 + 'px');
         events.width(contents, (that[i].offsetWidth / col) + 'px');
+
+        carouselLazyImages(col, i);
 
     }
 
@@ -95,6 +128,9 @@ function carouselFnc() {
 
         window.carouselCols = [];
         window.carouselColsMobile = [];
+
+        window.carouselCounts = [];
+        window.carouselLoadImgs = [];
 
         events.each(carousels, function (j) {
 
@@ -125,9 +161,9 @@ function carouselFnc() {
 
             }
 
+            window.carouselCounts[j] = 0;
             carouselResizerFnc(j, carousels);
 
-            this.setAttribute('data-id', j);
             events.addClass(this, 'active');
 
         });
@@ -135,7 +171,7 @@ function carouselFnc() {
         // Events
         events.on(document, 'click', '.carousel .carousel-prev,.carousel .carousel-next', function () {
 
-            var col, that, count, slider, contents, i, max, navDots;
+            var col, that, slider, contents, i, max, navDots;
 
             that = events.closest(this, '.carousel');
             navDots = selector('.carousel-nav .dots i', that[0]);
@@ -143,7 +179,7 @@ function carouselFnc() {
             slider = selector('.carousel-slider', that[0]);
             contents = selector('.content', slider[0]);
 
-            i = that[0].getAttribute('data-id');
+            i = Array.prototype.slice.call(selector('.carousel')).indexOf(that[0]);
 
             if (window.innerWidth > 767) {
                 col = window.carouselCols[i];
@@ -153,36 +189,32 @@ function carouselFnc() {
             }
 
             col = Number(col);
-            max = Math.ceil(contents.length / col);
-            max -= 1;
-
-            count = that[0].getAttribute('data-count');
-            if (count === null) { count = 0; } else { count = Number(count); }
+            max = Math.ceil(contents.length / col) - 1;
 
             if (events.hasClass(this, 'carousel-next')) {
 
-                count += 1;
-                if (count > max) { count = max; }
+                window.carouselCounts[i] += 1;
+                if (window.carouselCounts[i] > max) { window.carouselCounts[i] = max; }
 
             } else {
 
-                count -= 1;
-                if (count < 0) { count = 0; }
+                window.carouselCounts[i] -= 1;
+                if (window.carouselCounts[i] < 0) { window.carouselCounts[i] = 0; }
 
             }
 
-            that[0].setAttribute('data-count', count);
-
             events.removeClass(navDots, 'selected');
-            events.addClass(navDots[count], 'selected');
+            events.addClass(navDots[window.carouselCounts[i]], 'selected');
 
             // detecting ie9
             if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
-                slider[0].style.marginLeft = '-' + (count * that[0].offsetWidth) + 'px';
+                slider[0].style.marginLeft = '-' + (window.carouselCounts[i] * that[0].offsetWidth) + 'px';
 
             } else {
-                slider[0].style.transform = 'translateX(-' + (count * that[0].offsetWidth) + 'px)';
+                slider[0].style.transform = 'translateX(-' + (window.carouselCounts[i] * that[0].offsetWidth) + 'px)';
             }
+
+            carouselLazyImages(col, i);
 
         });
 
