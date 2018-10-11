@@ -83,7 +83,7 @@ function photoGalleryFnc() {
         parent = events.closest(that, '.photo-gallery')[0];
 
         if (parent === undefined) {
-            parent = events.closest(that, '.photo-gallery-call')[0];
+            parent = events.closest(that, '.photo-gallery-passive')[0];
         }
 
         images = selector('.img', parent);
@@ -529,7 +529,7 @@ function photoGalleryFnc() {
         var target = this.getAttribute('data-target');
 
         if (target === null) { return; }
-        galleryFnc(e, selector(target)[0]);
+        galleryFnc(e, selector(target + ' .img')[0]);
 
     });
 
