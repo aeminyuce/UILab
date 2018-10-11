@@ -7,23 +7,23 @@
 function slideNewsResizerFnc() {
 
     'use strict';
-    var slider, nav, screenW;
+    var slider, nav, parentWidth;
 
     slider = selector('.slide-news')[0];
     if (slider !== undefined) {
 
-        screenW = window.innerWidth;
-        events.width(selector('li', slider), screenW + 'px');
+        parentWidth = slider.offsetWidth;
+        events.width(selector('li', slider), parentWidth + 'px');
 
         // detecting ie9
         if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
-            selector('ul', slider)[0].style.marginLeft = '-' + (window.slideNewsCount * screenW) + 'px';
+            selector('ul', slider)[0].style.marginLeft = '-' + (window.slideNewsCount * parentWidth) + 'px';
 
         } else {
-            selector('ul', slider)[0].style.transform = 'translateX(-' + (window.slideNewsCount * screenW) + 'px)';
+            selector('ul', slider)[0].style.transform = 'translateX(-' + (window.slideNewsCount * parentWidth) + 'px)';
         }
 
-        nav = selector('.slide-nav span');
+        nav = selector('.slide-nav i');
 
         events.removeClass(nav, 'selected');
         events.addClass(nav[window.slideNewsCount], 'selected');
@@ -62,15 +62,15 @@ function slideNewsFnc() {
 
         total = (selector('li', slider).length - 1);
 
-        events.width(selector('li', slider), window.innerWidth + 'px');
+        events.width(selector('li', slider), slider.offsetWidth + 'px');
 
         // show/hide slider buttons
         if (total > 1) {
 
             events.show('.slide-next,.slide-nav');
 
-            html = '<span class="selected ease-bg"></span>';
-            for (i = 0; i < total; i += 1) { html += '<span class="ease-bg"></span>'; }
+            html = '<i class="selected ease-bg"></i>';
+            for (i = 0; i < total; i += 1) { html += '<i class="ease-bg"></i>'; }
 
             selector('.slide-nav')[0].innerHTML = html;
 
