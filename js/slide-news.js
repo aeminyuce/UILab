@@ -69,8 +69,8 @@ function slideNewsFnc() {
 
             events.show('.slide-next,.slide-nav');
 
-            html = '<i class="selected ease-bg"></i>';
-            for (i = 0; i < total; i += 1) { html += '<i class="ease-bg"></i>'; }
+            html = '<i class="selected ease-layout"></i>';
+            for (i = 0; i < total; i += 1) { html += '<i class="ease-layout"></i>'; }
 
             selector('.slide-nav')[0].innerHTML = html;
 
