@@ -81,6 +81,11 @@ function photoGalleryFnc() {
 
         ua = navigator.userAgent.toLowerCase();
         parent = events.closest(that, '.photo-gallery')[0];
+
+        if (parent === undefined) {
+            parent = events.closest(that, '.photo-gallery-call')[0];
+        }
+
         images = selector('.img', parent);
 
         // mobile and touch screens: show data titles first
@@ -116,7 +121,14 @@ function photoGalleryFnc() {
         // get images and titles
         events.each(images, function () {
 
-            loadedImages.push(this.getAttribute('href'));
+            var href = this.getAttribute('href');
+
+            if (href !== null) {
+                loadedImages.push(href);
+
+            } else {
+                loadedImages.push(this.getAttribute('data-href'));
+            }
 
             if (events.hasClass(this, 'has-info')) {
                 loadedTitles.push(selector('span', this)[0].innerHTML);
@@ -463,7 +475,7 @@ function photoGalleryFnc() {
             msy = e.targetTouches[0].pageY;
 
             screenW = window.innerWidth;
-            screenH = window.innerHeight;
+            screenH = selector(document)[0].offsetHeight;
 
             coverH = events.hasClass(img, 'cover-h');
 
@@ -511,6 +523,15 @@ function photoGalleryFnc() {
     }
 
     events.on(document, 'click touchend', '.photo-gallery .img', function (e) { galleryFnc(e, this); });
+
+    events.on(document, 'click', '.photo-gallery-call', function (e) {
+
+        var target = this.getAttribute('data-target');
+
+        if (target === null) { return; }
+        galleryFnc(e, selector(target)[0]);
+
+    });
 
 }
 
