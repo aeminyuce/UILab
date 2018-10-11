@@ -63,7 +63,7 @@ function photoSliderLoader() {
 
                 events.addClass(slider, 'loader-pause');
 
-            });
+            }, false);
 
         } else { return; }
 

@@ -54,20 +54,14 @@ function pauseTransitionsFnc() { // close transitions and animations on window r
 
     if (transitions.effects) {
 
-        if (transitions.preload) {
-
-            events.addClass(document, 'no-transitions-all');
-
-            window.stopTransitionsOnEvent = setTimeout(function () {
-                events.removeClass(document, 'no-transitions-all');
-            }, 300);
-
-        }
-
+        events.addClass(document, 'no-transitions-all');
         events.addClass('.animate-control', 'animate-stop-all');
 
         window.stopTransitionsOnEvent = setTimeout(function () {
+
+            events.removeClass(document, 'no-transitions-all');
             events.removeClass('.animate-control', 'animate-stop-all');
+
         }, 300);
 
     }
