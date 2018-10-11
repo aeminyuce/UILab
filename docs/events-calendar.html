@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UI Lab, Events Calendar</title>
+    <meta name="keywords" content="uilab, css, javascript, events calendar">
+    <meta name="description" content="UI Lab CSS and JavaScript Tools." />
+    <meta name="author" content="Ahmet Emin Yüce"/>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
+
+    <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/alignments.css" />
+    <link rel="stylesheet" href="../css/buttons.css" />
+    <link rel="stylesheet" href="../css/borders.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/helpers.css" />
+    <link rel="stylesheet" href="../css/icons.css" />
+    <link rel="stylesheet" href="../css/margins.css" />
+    <link rel="stylesheet" href="../css/paddings.css" />
+    <link rel="stylesheet" href="../css/portlets.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/sticky-header.css" />
+    <link rel="stylesheet" href="../css/transitions.css" />
+    <link rel="stylesheet" href="../css/typography.css" />
+    <link rel="stylesheet" href="../css/swatches.css" />
+    <link rel="stylesheet" href="../css/top-button.css" />
+
+    <link rel="stylesheet" href="../css/events-calendar.css" />
+
+    <!-- Javascript Tools -->
+    <script src="../js/selector.js"></script>
+    <script src="../js/events.js"></script>
+    <script src="../js/sticky-header.js"></script>
+    <script src="../js/top-button.js"></script>
+
+    <!-- font icons CSS -->
+    <link rel="stylesheet" href="../../UIIcons/font-icons/outline/font-icons.css" />
+
+    <!-- custom CSS -->
+    <style>
+        body { background-color: #f9f9f9; }
+        header { min-height: 64px; }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="container no-gutter theme-blue ui-dark">
+        <div class="col-12">
+            <a href="examples.html" class="btn btn-lg no-padding-h rounded ease-bg margin-10-r"><i class="icon icon-md no-opacity icon-angle-left"></i></a>
+            <span class="inline-block x-large align-middle">UI Lab, Events Calendar</span>
+        </div>
+    </header>
+
+    <!-- documentation examples -->
+    <main class="container">
+        <div class="fixed">
+            <div class="row row-lg-padding">
+                <div class="col-12">
+
+                    <div class="portlet padding-10 rounded shadow">
+                        <div class="events-calendar theme-blue tab-content open">
+                            <div class="month">
+                                <ul>
+                                    <button type="button" class="prev btn btn-lg no-padding-h rounded ease-bg" title="Prev Month"><i class="icon no-opacity icon-md icon-angle-left"></i></button>
+                                    <button type="button" class="next btn btn-lg no-padding-h rounded ease-bg" title="Next Month"><i class="icon no-opacity icon-md icon-angle-right"></i></button>
+                                    <span class="title"><strong>June</strong>2018</span>
+                                </ul>
+                            </div>
+                            <div class="h-scroll">
+                                <ul class="weeks">
+                                    <li>Mon</li>
+                                    <li>Tue</li>
+                                    <li>Wed</li>
+                                    <li>Thu</li>
+                                    <li>Fri</li>
+                                    <li>Sat</li>
+                                    <li>Sun</li>
+
+                                    <li>Mon</li>
+                                    <li>Tue</li>
+                                    <li>Wed</li>
+                                    <li>Thu</li>
+                                    <li>Fri</li>
+                                    <li>Sat</li>
+                                    <li>Sun</li>
+
+                                    <li>Mon</li>
+                                    <li>Tue</li>
+                                    <li>Wed</li>
+                                    <li>Thu</li>
+                                    <li>Fri</li>
+                                    <li>Sat</li>
+                                    <li>Sun</li>
+
+                                    <li>Mon</li>
+                                    <li>Tue</li>
+                                    <li>Wed</li>
+                                    <li>Thu</li>
+                                    <li>Fri</li>
+                                    <li>Sat</li>
+                                    <li>Sun</li>
+
+                                    <li>Mon</li>
+                                    <li>Tue</li>
+                                    <li>Wed</li>
+                                </ul>
+                                <div class="days">
+                                    <ul>
+                                        <li>
+                                            <i class="active ui-dark">1</i>
+                                            <a href="#" class="btn btn-multitext rounded ease-bg" data-days="1">
+                                                <img class="ease-transform" src="images/image_01.jpg" alt="">
+                                                <strong>Event Title</strong>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <i>2</i>
+                                            <a href="#" class="btn btn-multitext rounded ease-bg" data-days="3">
+                                                <img class="ease-transform" src="images/image_02.jpg" alt="">
+                                                <strong>Event Title</strong>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </a>
+                                        </li>
+                                        <li><i>3</i></li>
+                                        <li><i>4</i></li>
+                                        <li>
+                                            <i>5</i>
+                                            <a href="#" class="btn btn-multitext rounded ease-bg" data-days="1">
+                                                <img class="ease-transform" src="images/image_03.jpg" alt="">
+                                                <strong>Event Title</strong>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </a>
+                                        </li>
+                                        <li class="weekend"><i>6</i></li>
+                                        <li class="weekend"><i>7</i></li>
+                                        <li>
+                                            <i>8</i>
+                                            <a href="#" class="btn btn-multitext rounded ease-bg" data-days="2">
+                                                <img class="ease-transform" src="images/image_04.jpg" alt="">
+                                                <strong>Event Title</strong>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </a>
+                                        </li>
+                                        <li><i>9</i></li>
+                                        <li><i>10</i></li>
+                                        <li><i>11</i></li>
+                                        <li><i>12</i></li>
+                                        <li class="weekend"><i>13</i></li>
+                                        <li class="weekend"><i>14</i></li>
+                                        <li>
+                                            <i>15</i>
+                                            <a href="#" class="btn btn-multitext rounded ease-bg" data-days="4">
+                                                <img class="ease-transform" src="images/image_05.jpg" alt="">
+                                                <strong>Event Title</strong>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </a>
+                                        </li>
+                                        <li><i>16</i></li>
+                                        <li><i>17</i></li>
+                                        <li><i>18</i></li>
+                                        <li><i>19</i></li>
+                                        <li class="weekend"><i>20</i></li>
+                                        <li class="weekend"><i>21</i></li>
+                                        <li><i>22</i></li>
+                                        <li>
+                                            <i>23</i>
+                                            <a href="#" class="btn btn-multitext rounded ease-bg" data-days="2">
+                                                <img class="ease-transform" src="images/image_06.jpg" alt="">
+                                                <strong>Event Title</strong>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </a>
+                                        </li>
+                                        <li><i>24</i></li>
+                                        <li><i>25</i></li>
+                                        <li><i>26</i></li>
+                                        <li class="weekend"><i>27</i></li>
+                                        <li class="weekend"><i>28</i></li>
+                                        <li>
+                                            <i>29</i>
+                                            <a href="#" class="btn btn-multitext rounded ease-bg" data-days="1">
+                                                <img class="ease-transform" src="images/image_07.jpg" alt="">
+                                                <strong>Event Title</strong>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </a>
+                                        </li>
+                                        <li><i>30</i></li>
+                                        <li><i>31</i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
