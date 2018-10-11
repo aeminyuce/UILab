@@ -526,10 +526,26 @@ function photoGalleryFnc() {
 
     events.on(document, 'click', '.photo-gallery-call', function (e) {
 
-        var target = this.getAttribute('data-target');
+        var target, count;
+
+        target = this.getAttribute('data-target');
+        count = this.getAttribute('data-count');
 
         if (target === null) { return; }
-        galleryFnc(e, selector(target + ' .img')[0]);
+
+        if (count === null) {
+            count = 0;
+
+        } else {
+
+            count = Number(count);
+            if (!count || count === '') {
+                count = 0;
+            }
+
+        }
+
+        galleryFnc(e, selector(target + ' .img')[count]);
 
     });
 
