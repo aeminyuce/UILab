@@ -17,16 +17,17 @@
 .events-calendar .weeks li { color: #666; text-align: center; padding: 5px 0; }
 
 .events-calendar .h-scroll { border-left: solid 1px rgba(0,0,0,.08); border-right: solid 1px rgba(0,0,0,.08); }
-.events-calendar .days li { height: 320px; background-color: #fff; padding: 10px; border-style: solid; border-width: 0 1px 1px 0; border-color: rgba(0,0,0,.08); position: relative; }
-.events-calendar .days li:before { content: ""; width: 100%; height: 56px; display: block; border-bottom: dashed 1px #ddd; position: absolute; top: 0; left: 0; }
+.events-calendar .days li { height: 480px; background-color: #fff; padding: 10px; border-style: solid; border-width: 0 1px 1px 0; border-color: rgba(0,0,0,.08); position: relative; }
+.events-calendar .days li:before { content: ""; width: 100%; height: 54px; display: block; border-bottom: dashed 1px #ddd; position: absolute; top: 0; left: 0; }
 .events-calendar .days li.weekend { background-color: rgba(0,0,0,.025); }
 .events-calendar .days li i { font-size: 15px; font-style: normal; text-align: center; line-height: 32px; width: 32px; height: 32px; display: block; border-radius: 50%; }
 .events-calendar .days li .active { font-weight: bold; }
 .events-calendar .days li .active:not([class*="ui-"]) { background-color: rgba(0,0,0,.8); }
 
-.events-calendar .days li .btn { text-align: left; line-height: normal; width: 90%; background-color: #fff; padding: 10px !important; margin-top: 31px; position: absolute; z-index: 1; box-shadow: 2px 4px 20px rgba(0,0,0,.15); }
-.events-calendar .days li .btn img { width: 100%; max-width: 260px; height: auto; margin-bottom: 10px; }
-.events-calendar .days li .btn strong { margin-bottom: 5px; display: block; }
+.events-calendar .days li .btn { text-align: left; line-height: normal; width: 90%; background-color: #fff; padding: 10px !important; margin-top: 22px; position: absolute; z-index: 1; box-shadow: 2px 4px 20px rgba(0,0,0,.15); }
+.events-calendar .days li .btn img { width: 100%; max-width: 358px; height: auto; max-height: 320px; margin-bottom: 10px; }
+html:not(.mobile) .events-calendar .days li .btn:hover img{ transform: scale(1.05); }
+.events-calendar .days li .btn strong { font-size: 16px; margin-bottom: 5px; display: block; }
 
 .events-calendar .days li .btn[data-days="1"] { width: 90%; }
 .events-calendar .days li .btn[data-days="2"] { width: 190%; }
