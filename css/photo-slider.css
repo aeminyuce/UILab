@@ -18,10 +18,3 @@
 .photo-slider button:hover { background-color: rgba(0,0,0,.35); }
 .photo-slider .slide-left { border-radius: 0 4px 4px 0; left: 0; }
 .photo-slider .slide-right { border-radius: 4px 0 0 4px; right: 0; }
-
-@media (min-width: 481px) {
-    .photo-slider img { height: 450px; }
-}
-@media (max-width: 480px) {
-    .photo-slider img { height: 280px; }
-}
