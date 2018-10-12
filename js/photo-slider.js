@@ -26,7 +26,7 @@ function photoSliderLoader() {
 
     }
 
-    images = selector('.photo-slider img');
+    images = selector('.photo-slider img[data-src]');
 
     events.each(images, function (i) {
 
