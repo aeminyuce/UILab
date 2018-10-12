@@ -32,24 +32,24 @@ function photoSliderLoader() {
 
         if (images[i].getBoundingClientRect().top <= (screenH + scrollPos) + 50) {
 
-            window.photoSliderIndex[i] = [];
-            window.photoSliderIndex[i][0] = new Image();
+            window.photoSliderLoaded[i] = [];
+            window.photoSliderLoaded[i][0] = new Image();
 
-            window.photoSliderCount[i] = images[i].getAttribute('data-src').replace(/[\s]/g, '').split(',');
-            window.photoSliderIndex[i][0].src = window.photoSliderCount[i][0];
+            window.photoSliderSrcList[i] = images[i].getAttribute('data-src').replace(/[\s]/g, '').split(',');
+            window.photoSliderLoaded[i][0].src = window.photoSliderSrcList[i][0];
 
-            images[i].setAttribute('data-index', i);
+            images[i].removeAttribute('data-src');
 
-            window.photoSliderIndex[i][0].addEventListener('load', function () {
+            window.photoSliderLoaded[i][0].addEventListener('load', function () {
 
-                images[i].src = window.photoSliderIndex[i][0].src;
+                images[i].src = window.photoSliderLoaded[i][0].src;
 
                 slider = events.closest(images[i], '.photo-slider')[0];
                 nav = selector('.slider-nav', slider)[0];
 
                 if (nav.innerHTML === "") {
 
-                    for (j = 0; j < window.photoSliderCount[i].length; j += 1) {
+                    for (j = 0; j < window.photoSliderSrcList[i].length; j += 1) {
 
                         if (j === 0) {
                             nav.innerHTML += events.parser('<i class="selected ease-layout"></i>');
@@ -74,7 +74,8 @@ function photoSliderFnc() {
 
     'use strict';
 
-    window.photoSliderIndex = [];
+    window.photoSliderSrcList = [];
+    window.photoSliderLoaded = [];
     window.photoSliderCount = [];
 
     photoSliderLoader();
@@ -85,59 +86,52 @@ function photoSliderFnc() {
         function (e) {
 
             e.preventDefault();
-            var slider, i, img, count, total, dots;
+            var slider, i, img, total, dots;
 
             slider = events.closest(this, '.photo-slider')[0];
             if (slider === undefined) { return; }
 
             img = selector('img', slider)[0];
 
-            if (img.getAttribute('data-count') === null) {
+            i = Array.prototype.slice.call(selector('.photo-slider')).indexOf(slider);
+            if (window.photoSliderCount[i] === undefined) { window.photoSliderCount[i] = 0; }
 
-                count = 0;
-                img.setAttribute('data-count', count);
-
-            } else { count = parseInt(img.getAttribute('data-count'), 10); }
-
-            i = img.getAttribute('data-index');
-            total = (window.photoSliderCount[i].length - 1);
+            total = (window.photoSliderSrcList[i].length - 1);
 
             if (events.hasClass(this, 'slide-right')) {
 
-                if (count >= total) { count = total; return; }
-                count += 1;
+                if (window.photoSliderCount[i] >= total) { window.photoSliderCount[i] = total; return; }
+                window.photoSliderCount[i] += 1;
 
             } else {
 
-                if (count <= 0) { count = 0; return; }
-                count -= 1;
+                if (window.photoSliderCount[i] <= 0) { window.photoSliderCount[i] = 0; return; }
+                window.photoSliderCount[i] -= 1;
 
             }
-
-            img.setAttribute('data-count', count);
 
             dots = selector('.slider-nav i', slider);
 
             events.removeClass(dots, 'selected');
-            events.addClass(dots[count], 'selected');
+            events.addClass(dots[window.photoSliderCount[i]], 'selected');
 
             events.removeClass(slider, 'loader-pause');
 
-            if (window.photoSliderIndex[i][count] === undefined) {
+            if (window.photoSliderLoaded[i][window.photoSliderCount[i]] === undefined) {
 
-                window.photoSliderIndex[i][count] = new Image();
-                window.photoSliderIndex[i][count].src = window.photoSliderCount[i][count];
+                window.photoSliderLoaded[i][window.photoSliderCount[i]] = new Image();
+                window.photoSliderLoaded[i][window.photoSliderCount[i]].src = window.photoSliderSrcList[i][window.photoSliderCount[i]];
 
-                window.photoSliderIndex[i][count].addEventListener('load', function () {
+                window.photoSliderLoaded[i][window.photoSliderCount[i]].addEventListener('load', function () {
 
-                    img.src = window.photoSliderIndex[i][count].src;
+                    img.src = window.photoSliderLoaded[i][window.photoSliderCount[i]].src;
                     events.addClass(slider, 'loader-pause');
 
                 }, false);
 
             } else {
 
-                img.src = window.photoSliderIndex[i][count].src;
+                img.src = window.photoSliderLoaded[i][window.photoSliderCount[i]].src;
                 events.addClass(slider, 'loader-pause');
 
             }
