@@ -203,7 +203,10 @@ var events = {
                     if (window.eventHandlers[pt][pe] !== undefined) {
 
                         for (j = 0; j < window.eventHandlers[pt][pe].length; j += 1) {
+
                             pt.removeEventListener(pe.split('.')[0], window.eventHandlers[pt][pe][j], true); // split for event naming
+                            window.eventHandlers[pt][pe].splice(window.eventHandlers[pt][pe][j] ,1); // remove event from eventHandlers array
+
                         }
 
                     }
