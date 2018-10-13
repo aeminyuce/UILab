@@ -10,20 +10,49 @@ var events = {
 
         'use strict';
 
+        var handlerFnc, i;
+
+        handlerFnc = function (pt, pe) {
+
+            if (window.eventHandlers === undefined) { window.eventHandlers = {}; }
+            if (window.eventHandlers[pt] === undefined) { window.eventHandlers[pt] = {}; }
+            if (window.eventHandlers[pt][pe] === undefined) { window.eventHandlers[pt][pe] = []; }
+
+            window.eventHandlers[pt][pe].push(callback);
+
+            if (typeof pe !== 'function' && callback !== undefined) {
+
+                // merge repeated events
+                if (window.eventHandlers[pt][pe].length === 1) {
+                    pt.addEventListener(pe.split('.')[0], function (ev) { // split for event naming
+
+                        for (i = 0; i < window.eventHandlers[pt][pe].length; i += 1) {
+                            window.eventHandlers[pt][pe][i](ev);
+                        }
+
+                    }, true);
+                }
+
+            } else { return; }
+
+        };
+
         if (document.attachEvent) {
 
             if (document.readyState === 'complete') {
                 callback();
+
             } else {
-                document.addEventListener('DOMContentLoaded', callback);
+                handlerFnc(document, 'DOMContentLoaded');
             }
 
         } else {
 
             if (document.readyState !== 'loading') {
                 callback();
+
             } else {
-                document.addEventListener('DOMContentLoaded', callback);
+                handlerFnc(document, 'DOMContentLoaded');
             }
 
         }
@@ -32,13 +61,15 @@ var events = {
     on: function (t, e, that, callback) {
 
         'use strict';
-        var arr, f, fnc, handlerFnc, targetEl, isWindowEvent, l, isMSIE, eName, ie, i = 0, j = 0, k = 0;
+        var arr, f, fnc, handlerFnc, targetEl, objName, isWindowEvent, l, customEvent, isMSIE, eName, delegate,
+            i = 0, j = 0, k = 0, m = 0;
 
         fnc = function (e) {
 
-            if (typeof t === 'string' && e === undefined) {
-                return;
-            }
+            if (typeof t === 'string' && e === undefined) { return; }
+
+            delegate = false;
+            customEvent = false;
 
             if (callback !== undefined) { // delegate
 
@@ -67,22 +98,38 @@ var events = {
 
                 };
 
+                delegate = true;
+
             } else {
 
                 f = that;
-                if (typeof t === 'object' && !NodeList.prototype.isPrototypeOf(t) && typeof e === 'string') { // custom events
+
+
+                // filter events.on(object, event, function) events
+                if (typeof t === 'object' && !NodeList.prototype.isPrototypeOf(t) && typeof e === 'string') {
 
                     // detect window events
                     isWindowEvent = Object.prototype.toString.call(t) === '[object Window]';
-                    if (isWindowEvent) { l = selector(t); } else { l = selector(t)[0]; }
+                    if (isWindowEvent) {
 
-                    isMSIE = /*@cc_on!@*/false;
-                    ie = false;
-                    if (isMSIE || !!document.documentMode || navigator.userAgent.toLowerCase().indexOf('edge') > -1) { ie = true; } // detecting IE
+                        // disable ie duplicate window event firing on ready
+                        isMSIE = /*@cc_on!@*/false;
 
-                    // disable ie window event firing on ready
-                    if (isWindowEvent && ie) {
-                        setTimeout(function () { l.addEventListener(e, that, true); }, 150);
+                        if (isMSIE || !!document.documentMode || navigator.userAgent.toLowerCase().indexOf('edge') > -1) {
+
+                            setTimeout(function () {
+                                l.addEventListener(e, that, true);
+                            }, 150);
+
+                        }
+
+                    }
+
+                    // detect custom events
+                    objName = Object.prototype.toString.call(t);
+
+                    if (objName === '[object HTMLDocument]' || objName === '[object Document]') {
+                        customEvent = true;
                     }
 
                 }
@@ -98,7 +145,23 @@ var events = {
                 window.eventHandlers[pt][pe].push(f);
 
                 if (typeof pe !== 'function' && f !== undefined) {
-                    pt.addEventListener(pe.split('.')[0], f, true); // split for event naming
+
+                    if (delegate || isWindowEvent || customEvent) {
+
+                        // merge repeated events
+                        if (window.eventHandlers[pt][pe].length === 1) {
+                            pt.addEventListener(pe.split('.')[0], function (ev) { // split for event naming
+
+                                for (m = 0; m < window.eventHandlers[pt][pe].length; m += 1) {
+                                    window.eventHandlers[pt][pe][m](ev);
+                                }
+
+                            }, true);
+                        }
+
+                    } else {
+                        pt.addEventListener(pe.split('.')[0], f, true); // split for event naming
+                    }
 
                 } else { return; }
 
@@ -106,8 +169,15 @@ var events = {
 
             l = selector(t);
 
-            if (isWindowEvent) { handlerFnc(l, e); } else {
-                for (i = 0; i < l.length; i += 1) { handlerFnc(l[i], e); }
+            if (isWindowEvent) {
+                handlerFnc(l, e);
+
+            } else {
+
+                for (i = 0; i < l.length; i += 1) {
+                    handlerFnc(l[i], e);
+                }
+
             }
 
         };
@@ -123,23 +193,20 @@ var events = {
     off: function (t, e) {
 
         'use strict';
-        var arr, events, fnc, handlerFnc, l, i = 0, j = 0, k = 0;
+        var arr, fnc, handlerFnc, l, i = 0, j = 0, k = 0;
 
         fnc = function (e) {
 
             handlerFnc = function (pt, pe) {
 
                 if (window.eventHandlers[pt] !== undefined) {
+                    if (window.eventHandlers[pt][pe] !== undefined) {
 
-                    events = window.eventHandlers[pt][pe];
-                    if (events !== undefined) {
-
-                        for (j = 0; j < events.length; j += 1) {
-                            pt.removeEventListener(pe.split('.')[0], events[j], true); // split for event naming
+                        for (j = 0; j < window.eventHandlers[pt][pe].length; j += 1) {
+                            pt.removeEventListener(pe.split('.')[0], window.eventHandlers[pt][pe][j], true); // split for event naming
                         }
 
                     }
-
                 }
 
             };
