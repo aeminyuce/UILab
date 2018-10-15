@@ -8,7 +8,9 @@ function carouselLazyImages(col, i) {
 
     'use strict';
 
-    var images = selector('.carousel');
+    var images, img = [];
+
+    images = selector('.carousel');
     images = selector('.content .img[data-src]', images[i]);
 
     if (images.length > 0) {
@@ -17,15 +19,16 @@ function carouselLazyImages(col, i) {
         events.each(images, function (l) {
 
             if (l >= col) { return; }
-            var img = this;
+            img[l] = this;
 
             window.carouselLoadImgs[i][l] = new Image();
-            window.carouselLoadImgs[i][l].src = img.getAttribute('data-src');
+            window.carouselLoadImgs[i][l].src = img[l].getAttribute('data-src');
 
             window.carouselLoadImgs[i][l].addEventListener('load', function () {
 
-                img.src = window.carouselLoadImgs[i][l].src;
-                img.removeAttribute('data-src');
+                img[l].src = window.carouselLoadImgs[i][l].src;
+                img[l].removeAttribute('data-src');
+                events.addClass(img[l], 'loaded');
 
                 window.carouselLoadImgs[i][l] = '';
 
