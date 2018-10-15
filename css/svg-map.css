@@ -2,7 +2,7 @@
 .svg-map { position: relative; }
 .ie:not(.edge) .svg-map svg { width: auto; height: 206px; }
 .svg-map svg g path { fill: #eee; stroke: #fff; stroke-width: 1.5; cursor: pointer; }
-.svg-map svg g path:hover { fill: #009fe3 !important; }
+.svg-map svg g path:hover { fill: #009fe3 !important; opacity: 1 !important; }
 .svg-map svg g.active path { fill: #00dcdd; }
 
 .svg-map .toolbar { display: block; position: fixed; z-index: 1; opacity: .94; }
