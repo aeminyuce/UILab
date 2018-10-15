@@ -12,7 +12,7 @@ var photoSlider = {
 function photoSliderLoader() {
 
     'use strict';
-    var slider, j, screenH, scrollPos, images, nav;
+    var slider, p, j, screenH, scrollPos, images, nav;
 
     if (photoSlider.target === '') {
 
@@ -36,6 +36,18 @@ function photoSliderLoader() {
             window.photoSliderLoaded[i][0] = new Image();
 
             window.photoSliderSrcList[i] = images[i].getAttribute('data-src').replace(/[\s]/g, '').split(',');
+
+            if (window.photoSliderSrcList[i].length <= 1) {
+
+                p = this.parentNode;
+
+                events.hide(selector('.slide-left', p));
+                events.hide(selector('.slide-right', p));
+                events.hide(selector('.slider-nav', p));
+
+            }
+
+            if (!window.photoSliderSrcList[i][0].match(/(\.png|\.gif|\.jpeg|\.jpg)$/g)) { return; }
             window.photoSliderLoaded[i][0].src = window.photoSliderSrcList[i][0];
 
             images[i].removeAttribute('data-src');
