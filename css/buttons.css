@@ -19,7 +19,8 @@ input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 html:not(.mobile) .btn.ui-dark:hover > .icon,html:not(.mobile) .btn.ui-x-dark:hover > .icon { opacity: 1 !important; }
 
 .btn-lg { font-size: 16px; height: 42px; padding-top: 10px; padding-bottom: 10px; }
-.btn-lg:not(.btn-block):not(.btn-multitext).no-padding-h { width: 42px !important; }.btn-lg.rounded { border-radius: 6px; }
+.btn-lg:not(.btn-block):not(.btn-multitext).no-padding-h { width: 42px !important; }
+.btn-lg.rounded { border-radius: 6px; }
 
 .btn-sm { font-size: 12px; height: 26px; padding-top: 5px; padding-bottom: 5px; }
 .btn-sm:not(.btn-block):not(.btn-multitext).no-padding-h { width: 26px !important; }
@@ -53,6 +54,11 @@ html:not(.mobile) .btn.btn-invisible:not(.no-hover):not([class*="ui-"]):not(.btn
 
 @media (max-width: 767px) {
     .pagination > .btn:not(.prev):not(.next):not(.btn-active) { display: none; }
+    .pagination .btn { min-width: 32px; padding-right: 8px !important; padding-left: 8px !important; }
+    .pagination .btn-lg { min-width: 42px; }
+    .pagination .btn-sm { min-width: 26px; }
+    .pagination .btn-xs { min-width: 22px; }
+    .pagination .btn-xxs { min-width: 14px; }
 }
 @media (min-width: 481px) {
     .btn.circle { padding-right: 20px; padding-left: 20px;}
