@@ -13,10 +13,12 @@ var selector = function (item, outer) {
         if (NodeList.prototype.isPrototypeOf(item)) { return item; } // if item property has selector(item) nodelist
 
         objName = Object.prototype.toString.call(item);
+        if (objName === '[object HTMLDocument]' || objName === '[object Document]') { // detect document
 
-        if (objName === '[object HTMLDocument]' || objName === '[object Document]') {
+            if (selector.document === undefined) {
+                selector.document = document.querySelectorAll('html');
+            }
 
-            if (selector.document === undefined) { selector.document = document.querySelectorAll('html'); }
             call = selector.document;
             return call;
 
