@@ -50,16 +50,6 @@ html:not(.mobile) .btn.ui-dark:hover > .icon,html:not(.mobile) .btn.ui-x-dark:ho
 html:not(.mobile) .btn:not(.no-hover):not([class*="ui-"]):not(.btn-passive):not(.swatch-active):hover { background-color: rgba(0,0,0,.15); }
 html:not(.mobile) .btn.btn-invisible:not(.no-hover):not([class*="ui-"]):not(.btn-passive):not(.swatch-active):hover { background-color: rgba(0,0,0,.075); }
 
-.pagination:not(:last-child) { margin-bottom: 20px; }
-
-@media (max-width: 767px) {
-    .pagination > .btn:not(.prev):not(.next):not(.btn-active) { display: none; }
-    .pagination .btn { min-width: 32px; padding-right: 8px !important; padding-left: 8px !important; }
-    .pagination .btn-lg { min-width: 42px; }
-    .pagination .btn-sm { min-width: 26px; }
-    .pagination .btn-xs { min-width: 22px; }
-    .pagination .btn-xxs { min-width: 14px; }
-}
 @media (min-width: 481px) {
     .btn.circle { padding-right: 20px; padding-left: 20px;}
 
