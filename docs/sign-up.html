@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UI Lab, Sign Up Page</title>
+    <meta name="keywords" content="uilab, css, javascript, sign up page">
+    <meta name="description" content="UI Lab CSS and JavaScript Tools." />
+    <meta name="author" content="Ahmet Emin Yüce"/>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
+
+    <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/alignments.css" />
+    <link rel="stylesheet" href="../css/buttons.css" />
+    <link rel="stylesheet" href="../css/borders.css" />
+    <link rel="stylesheet" href="../css/custom-forms.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <link rel="stylesheet" href="../css/form-icons.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/helpers.css" />
+    <link rel="stylesheet" href="../css/icons.css" />
+    <link rel="stylesheet" href="../css/margins.css" />
+    <link rel="stylesheet" href="../css/paddings.css" />
+    <link rel="stylesheet" href="../css/portlets.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/sticky-header.css" />
+    <link rel="stylesheet" href="../css/transitions.css" />
+    <link rel="stylesheet" href="../css/typography.css" />
+    <link rel="stylesheet" href="../css/static-grid.css" />
+    <link rel="stylesheet" href="../css/swatches.css" />
+    <link rel="stylesheet" href="../css/top-button.css" />
+
+    <!-- Javascript Tools -->
+    <script src="../js/selector.js"></script>
+    <script src="../js/events.js"></script>
+    <script src="../js/sticky-header.js"></script>
+    <script src="../js/swatches.js"></script>
+    <script src="../js/toggle-password.js"></script>
+    <script src="../js/top-button.js"></script>
+    <script src="../js/user-agents.js"></script>
+
+    <!-- font icons CSS -->
+    <link rel="stylesheet" href="../../UIIcons/font-icons/outline/font-icons.css" />
+
+    <!-- custom CSS -->
+    <style>
+        body { background-color: #3773b6; }
+        header { min-height: 64px; }
+
+        .login-image { background: url(images/image_vertical_01.jpg) no-repeat center center; background-size: cover; }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="container no-gutter theme-blue ui-dark">
+        <div class="col-8 col-sm-12 col-xs-12 no-responsive">
+            <a href="examples.html" class="btn btn-lg no-padding-h circle ease-bg margin-10-r"><i class="icon icon-md no-opacity icon-angle-left"></i></a>
+            <span class="inline-block x-large align-middle">UI Lab, Sign Up Page</span>
+        </div>
+        <div class="col-4 align-right hidden-sm no-responsive">
+            <a href="sign-in.html" class="btn btn-lg btn-responsive align-center padding-30-h circle ease-bg">You have already account? <i class="icon icon-md margin-10-l no-opacity icon-user-accepted"></i></a>
+        </div>
+    </header>
+
+    <!-- documentation examples -->
+    <main class="container no-gutter">
+        <div class="fixed">
+
+            <div class="row padding-30-v xs-no-padding-t margin-30-t sm-no-margin-t">
+                <div class="col-8 offset-2">
+                    <div class="col-static portlet rounded shadow-lg sm-responsive">
+
+                        <!-- login image -->
+                        <div class="row row-no-padding full-height rounded-left hidden-sm login-image"></div>
+
+                        <!-- login form -->
+                        <div class="static-350 left-bordered padding-30">
+
+                            <form action="#">
+
+                                <h3 class="margin-30-b">Create your account</h3>
+                                <p class="margin-30-b">Sign up to create, discover and connect with the global community.</p>
+
+                                <label for="fullname" class="form-label">Full Name</label>
+                                <div class="text text-lg dual-bordered rounded ease-form">
+                                    <input id="fullname" type="text" placeholder="Enter name">
+                                </div>
+                                <p class="hint error hidden">Enter name.</p>
+
+                                <span class="sp15"></span>
+
+                                <label for="email" class="form-label">Email</label>
+                                <div class="text text-lg dual-bordered rounded ease-form">
+                                    <input id="email" type="text" placeholder="Enter email">
+                                </div>
+                                <p class="hint error hidden">Enter email.</p>
+
+                                <span class="sp15"></span>
+
+                                <label for="username" class="form-label">User Name</label>
+                                <div class="text text-lg dual-bordered rounded ease-form">
+                                    <input id="username" type="text" placeholder="Enter username">
+                                </div>
+                                <p class="hint error hidden">Enter username.</p>
+
+                                <span class="sp15"></span>
+
+                                <label for="password" class="form-label">Password</label>
+                                <div class="text text-lg text-icon dual-bordered rounded ease-form">
+                                    <span title="Show/Hide Password" class="toggle-password icon icon-md icon-eye ease-opacity"></span>
+                                    <input id="password" type="password" placeholder="Enter password">
+                                </div>
+                                <p class="hint error hidden">Enter password.</p>
+
+                                <span class="sp10"></span>
+
+                                <div class="check-custom rounded dual-bordered ease-form">
+                                    <input id="terms" type="checkbox">
+                                    <i class="icon ease-opacity"></i>
+                                </div>
+                                <label for="terms" class="label-custom">I agree <a href="#" target="_blank"><b>Terms of User</b></a></label>
+                                <p class="hint error hidden">Accept terms.</p>
+
+                                <span class="sp30"></span>
+
+                                <div class="padding-15-t">
+                                    <button type="submit" class="btn btn-lg btn-block circle theme-yellow ui-dark ease-bg"><b>SIGN UP</b></button>
+                                    <a class="btn btn-lg btn-block visible-sm margin-15-t circle ease-bg" href="sign-in.html">You have already account?</a>
+                                </div>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
