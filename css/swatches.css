@@ -54,7 +54,7 @@
 
 .theme-blue.ui-x-light,.theme-blue .ui-x-light:not([class*="theme-"]) { background-color: #daebff; }
 .theme-blue.ui-light,.theme-blue .ui-light:not([class*="theme-"]) { background-color: #a7d1ff; }
-.theme-blue.ui-dark,.theme-blue .ui-dark:not([class*="theme-"]) { background-color: #235ea0; }
-.theme-blue.ui-text,.theme-blue .ui-text:not([class*="theme-"]) { color: #235ea0; }
-.theme-blue.ui-border,.theme-blue .ui-border:not([class*="theme-"]) { border-color: #235ea0; }
-.theme-blue.ui-x-dark,.theme-blue .ui-x-dark:not([class*="theme-"]) { background-color: #1a4778; }
+.theme-blue.ui-dark,.theme-blue .ui-dark:not([class*="theme-"]) { background-color: #3773b6; }
+.theme-blue.ui-text,.theme-blue .ui-text:not([class*="theme-"]) { color: #3773b6; }
+.theme-blue.ui-border,.theme-blue .ui-border:not([class*="theme-"]) { border-color: #3773b6; }
+.theme-blue.ui-x-dark,.theme-blue .ui-x-dark:not([class*="theme-"]) { background-color: #255a93; }
