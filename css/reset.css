@@ -34,7 +34,7 @@ img { vertical-align: middle; display: inline-block; border: 0; }
 
 hr { height: 1px; background-color: rgba(0,0,0,.15); margin-top: 20px; margin-bottom: 20px; box-sizing: content-box; border: 0; }
 q { quotes: "\201C" "\201D" "\2018" "\2019"; }
-p:not(:last-child) { margin-bottom: 20px; }
+p:not(:last-child):not(.hint) { margin-bottom: 20px; }
 
 [hidden] { display: none; }
 
