@@ -122,12 +122,6 @@ html:not(.portrait) .visible-portrait { display: none !important; }
 .circle-bottom { border-radius: 0 0 1000px 1000px; }
 .circle-left { border-radius: 1000px 0 0 1000px; }
 
-.bg-45-light { background: linear-gradient(45deg, transparent 25%, rgba(255,255,255,.25) 25%, rgba(255,255,255,.25) 50%, transparent 50%, transparent 75%, rgba(255,255,255,.25) 75%); background-size: 20px 20px; }
-.bg-45-dark { background: linear-gradient(45deg, transparent 25%, rgba(0,0,0,.05) 25%, rgba(0,0,0,.05) 50%, transparent 50%, transparent 75%, rgba(0,0,0,.05) 75%); background-size: 20px 20px; }
-.bg-45-xs { background-size: 5px 5px; }
-.bg-45-sm { background-size: 10px 10px; }
-.bg-45-lg { background-size: 40px 40px; }
-
 .shadow-sm { box-shadow: 0 1px 3px rgba(0,0,0,.05); }
 .shadow { box-shadow: 0 1px 3px rgba(0,0,0,.15); }
 .shadow-lg { box-shadow: 0 5px 15px rgba(0,0,0,.3); }
