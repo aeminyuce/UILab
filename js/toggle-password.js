@@ -8,7 +8,7 @@ function togglePasswordFnc() {
 
     'use strict';
 
-    events.on(document, 'click', '.toggle-password', function () {
+    events.on(document, 'click touchend', '.toggle-password', function () {
 
         var t, p, id = this.getAttribute('data-id');
 
