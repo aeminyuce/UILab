@@ -79,10 +79,10 @@ html:not(.mobile) .select-multi > .icon { display: none; }
 .form-focus > ::-moz-placeholder { color: #c5c5c5; opacity: 1; }
 /* do not group */
 
-@media (min-width: 960px) {
+@media (min-width: 768px) {
     .form-grid { line-height: 32px; }
 }
-@media (max-width: 959px) {
+@media (max-width: 767px) {
     .row [class*="col-"] > .form-grid { margin-bottom: -15px; }
     .row-no-padding [class*="col-"] > .form-grid { margin-top: 10px; margin-bottom: 5px; }
     .row-xs-padding [class*="col-"] > .form-grid,.row-xs-padding-ver [class*="col-"] > .form-grid { margin-bottom: 3px; }
