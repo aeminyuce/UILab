@@ -4,10 +4,6 @@
 */
 
 /*globals window, document, selector, events, setTimeout, clearTimeout */
-var dropdown = {
-    windowPositionTarget: ''
-};
-
 function dropdownClose() {
 
     'use strict';
@@ -44,7 +40,7 @@ function dropdownFnc() {
         e.preventDefault();
         e.stopPropagation();
 
-        var win, list, alignSize, parent, btnHeight, subMenuHeight, offset, screenW, screenH, leftSpace, listWidth, offsetWidth;
+        var list, alignSize, parent, btnHeight, subMenuHeight, offset, listWidth;
 
         if (!events.hasClass(parent, 'open')) {
 
@@ -58,40 +54,22 @@ function dropdownFnc() {
 
                 events.removeClass('.dropdown.open', 'open');
 
-                if (dropdown.windowPositionTarget === '') {
-
-                    leftSpace = 0;
-                    screenW = window.innerWidth;
-                    screenH = window.innerHeight;
-
-                } else {
-
-                    win = selector(dropdown.windowPositionTarget)[0];
-
-                    leftSpace = win.offset().left;
-                    screenW = win.offsetWidth;
-                    screenH = win.offsetHeight;
-
-                }
-
-                offsetWidth = parent.offsetWidth;
                 listWidth = list[0].offsetWidth;
+                alignSize = (listWidth - parent.offsetWidth) / 2;
 
-                alignSize = (listWidth - offsetWidth) / 2;
-
-                if ((offsetWidth > 200) && (offsetWidth > listWidth)) {
-                    list[0].style.minWidth = offsetWidth + 'px';
+                if ((parent.offsetWidth > 200) && (parent.offsetWidth > listWidth)) {
+                    list[0].style.minWidth = parent.offsetWidth + 'px';
                 }
 
-                if (events.hasClass(parent, 'submenu-left') || (offset.left + list[0].style.offsetWidth + 15) > screenW) {
+                if (events.hasClass(parent, 'submenu-left') || (offset.left + list[0].style.offsetWidth + 15) > window.innerWidth) {
 
-                    if ((offset.left - (listWidth - offsetWidth) - 15) > leftSpace) {
+                    if ((offset.left - (listWidth - parent.offsetWidth) - 15) > 0) {
                         list[0].style.right = 0;
                     }
 
                 } else if (events.hasClass(parent, 'submenu-center')) {
 
-                    if ((offset.left - alignSize > leftSpace) && (alignSize > 0)) {
+                    if ((offset.left - alignSize > 0) && (alignSize > 0)) {
                         list[0].style.marginLeft = -alignSize + 'px';
                     }
 
@@ -100,13 +78,13 @@ function dropdownFnc() {
                 btnHeight = t.offsetHeight;
                 subMenuHeight = list[0].offsetHeight;
 
-                if (offset.top + parseInt(btnHeight + subMenuHeight, 10) >= screenH) {
+                if (offset.top + parseInt(btnHeight + subMenuHeight, 10) >= window.innerHeight) {
 
                     if (offset.top - parseInt(btnHeight + subMenuHeight, 10) + btnHeight > 0) {
                         events.addClass(parent, 'submenu-top');
 
                     } else {
-                        list[0].style.height = (list[0].offsetHeight - (offset.top + parseInt(btnHeight + subMenuHeight, 10) - screenH) - 15) + 'px';
+                        list[0].style.height = (list[0].offsetHeight - (offset.top + parseInt(btnHeight + subMenuHeight, 10) - window.innerHeight) - 15) + 'px';
                     }
 
                 }

@@ -4,33 +4,15 @@
 */
 
 /*globals window, document, selector, events, Image */
-var photoSlider = {
-
-    target: ''
-
-};
 function photoSliderLoader() {
 
     'use strict';
-    var slider, j, screenH, scrollPos, images, nav;
-
-    if (photoSlider.target === '') {
-
-        screenH = window.innerHeight;
-        scrollPos = window.pageYOffset;
-
-    } else {
-
-        screenH = selector(photoSlider.target)[0].offsetHeight;
-        scrollPos = selector(photoSlider.target)[0].scrollTop;
-
-    }
+    var slider, j, images, nav;
 
     images = selector('.photo-slider img[data-src]');
-
     events.each(images, function (i) {
 
-        if (images[i].getBoundingClientRect().top <= (screenH + scrollPos) + 50) {
+        if (images[i].getBoundingClientRect().top <= (window.innerHeight + window.pageYOffset) + 50) {
 
             window.photoSliderLoaded[i] = [];
             window.photoSliderLoaded[i][0] = new Image();
