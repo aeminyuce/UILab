@@ -1,0 +1,19 @@
+/* autocomplete */
+
+.autocomplete { overflow: visible; }
+.autocomplete.open { z-index: 19; }
+.autocomplete ul { width: 100%; background-color: #fff; position: absolute; }
+.autocomplete:not(.open) ul { display: none; }
+
+.autocomplete:not(.submenu-top):not(.dual-bordered):not(.no-bordered) ul { margin-top: 2px; }
+.autocomplete.dual-bordered:not(.submenu-top) ul,.autocomplete.no-bordered:not(.submenu-top) ul { margin-top: 3px; }
+
+.autocomplete.submenu-top ul { bottom: 100%; }
+.autocomplete.submenu-top:not(.dual-bordered):not(.no-bordered) ul { margin-bottom: 2px; }
+.autocomplete.submenu-top.dual-bordered ul { margin-bottom: 3px; }
+.autocomplete.submenu-top.no-bordered ul { margin-bottom: 1px; }
+
+.autocomplete ul.circle { border-radius: 16px; }
+.autocomplete li { white-space: nowrap; text-overflow: ellipsis; text-align: left; line-height: 20px; height: 30px; padding: 5px 10px; overflow: hidden; }
+.autocomplete li:nth-child(5) ~ li { display: none; }
+html:not(.mobile) .autocomplete li:hover,.autocomplete li.selected { background-color: rgba(0,0,0,.075); cursor: default; }
