@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../css/android-multi-select.css" />
     <link rel="stylesheet" href="../css/animated-links.css" />
     <link rel="stylesheet" href="../css/animations.css" />
+    <link rel="stylesheet" href="../css/autocomplete.css" />
     <link rel="stylesheet" href="../css/blockquotes.css" />
     <link rel="stylesheet" href="../css/borders.css" />
     <link rel="stylesheet" href="../css/breadcrumbs.css" />
@@ -63,7 +64,9 @@
     <script src="../js/selector.js"></script>
     <script src="../js/events.js"></script>
 
+    <script src="../js/ajax.js"></script>
     <script src="../js/android-multi-select.js"></script>
+    <script src="../js/autocomplete.js"></script>
     <script src="../js/currency-spinner.js"></script>
     <script src="../js/dropdown.js"></script>
     <script src="../js/file-input.js"></script>
@@ -488,33 +491,19 @@
                     </div>
 
                     <div class="portlet rounded shadow">
-                        <div class="content-side padding-15 bottom-bordered">
-                            <h4>Description Lists</h4>
+                        <div class="content-side padding-15 ver-bordered">
+                            <h4>Progress Bar</h4>
                         </div>
                         <div class="content-side padding-15">
-                            <dl>
-                                <dt>Description lists</dt>
-                                <dd>A description list is perfect for defining terms.</dd>
-                                <dt>Euismod</dt>
-                                <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
-                                <dd>Donec id elit non mi porta gravida at eget metus.</dd>
-                                <dt>Malesuada porta</dt>
-                                <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
-                            </dl>
-                        </div>
-                        <div class="content-side padding-15 bottom-bordered">
-                            <h4>Horizontal Description Lists</h4>
-                        </div>
-                        <div class="content-side padding-15">
-                            <dl class="dl-horizontal">
-                                <dt>Description lists</dt>
-                                <dd>A description list is perfect for defining terms.</dd>
-                                <dt>Euismod</dt>
-                                <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
-                                <dd>Donec id elit non mi porta gravida at eget metus.</dd>
-                                <dt>Malesuada porta</dt>
-                                <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
-                            </dl>
+                            <div class="progress-bar progress-sm rounded">
+                                <span class="theme-green ui-dark" style="width: 45%;"></span><span class="theme-yellow ui-dark" style="width: 15%;"></span>
+                            </div>
+                            <div class="progress-bar rounded">
+                                <span class="theme-red ui-dark" style="width: 75%;"></span>
+                            </div>
+                            <div class="progress-bar progress-lg rounded">
+                                <span class="theme-yellow ui-dark" style="width: 35%;"></span>
+                            </div>
                         </div>
                     </div>
 
@@ -663,19 +652,33 @@
                     </div>
 
                     <div class="portlet rounded shadow">
-                        <div class="content-side padding-15 ver-bordered">
-                            <h4>Progress Bar</h4>
+                        <div class="content-side padding-15 bottom-bordered">
+                            <h4>Description Lists</h4>
                         </div>
                         <div class="content-side padding-15">
-                            <div class="progress-bar progress-sm rounded">
-                                <span class="theme-green ui-dark" style="width: 45%;"></span><span class="theme-yellow ui-dark" style="width: 15%;"></span>
-                            </div>
-                            <div class="progress-bar rounded">
-                                <span class="theme-red ui-dark" style="width: 75%;"></span>
-                            </div>
-                            <div class="progress-bar progress-lg rounded">
-                                <span class="theme-yellow ui-dark" style="width: 35%;"></span>
-                            </div>
+                            <dl>
+                                <dt>Description lists</dt>
+                                <dd>A description list is perfect for defining terms.</dd>
+                                <dt>Euismod</dt>
+                                <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                                <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+                                <dt>Malesuada porta</dt>
+                                <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+                            </dl>
+                        </div>
+                        <div class="content-side padding-15 bottom-bordered">
+                            <h4>Horizontal Description Lists</h4>
+                        </div>
+                        <div class="content-side padding-15">
+                            <dl class="dl-horizontal">
+                                <dt>Description lists</dt>
+                                <dd>A description list is perfect for defining terms.</dd>
+                                <dt>Euismod</dt>
+                                <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                                <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+                                <dt>Malesuada porta</dt>
+                                <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+                            </dl>
                         </div>
                     </div>
 
@@ -1575,6 +1578,54 @@
 
                     <div class="portlet rounded shadow">
                         <div class="content-side padding-15 bottom-bordered">
+                            <h4>List Group</h4>
+                        </div>
+                        <div class="content-side">
+                            <div class="list-group list-striped">
+                                <ul class="list-custom has-photo has-icon ease-1st-bg">
+                                    <li>
+                                        <a href="#">
+                                            <i class="list-icon icon icon-sm icon-angle-right ease-opacity"></i>
+                                            <img class="img-photo circle" src="images/profile-image.jpg" alt="">
+                                            <strong class="large block">Title</strong>
+                                            <span class="dark">Sub text here</span>
+                                            <p>Lorem ipsum dolor sit amet.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="list-icon icon icon-sm icon-angle-right ease-opacity"></i>
+                                            <span class="img-photo circle theme-orange ui-dark"><i class="icon icon-md icon-calendar"></i></span>
+                                            <strong class="large block">Title</strong>
+                                            <span class="dark">Sub text here</span>
+                                            <p>Lorem ipsum dolor sit amet.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="list-icon icon icon-sm icon-angle-right ease-opacity"></i>
+                                            <span class="img-photo circle theme-yellow ui-dark">HY</span>
+                                            <strong class="large block">Title</strong>
+                                            <span class="dark">Sub text here</span>
+                                            <p>Lorem ipsum dolor sit amet.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="list-icon icon icon-sm icon-angle-right ease-opacity"></i>
+                                            <span class="img-photo circle theme-green ui-dark">EKY</span>
+                                            <strong class="large block">Title</strong>
+                                            <span class="dark">Sub text here</span>
+                                            <p>Lorem ipsum dolor sit amet.</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portlet rounded shadow">
+                        <div class="content-side padding-15 bottom-bordered">
                             <h4>Alert Windows</h4>
                         </div>
                         <div class="content-side padding-15">
@@ -2136,7 +2187,7 @@
                         <div class="content-side padding-15 bottom-bordered">
                             <h4>Large Forms</h4>
                         </div>
-                        <div class="content-side padding-10">
+                        <div class="content-side padding-15 bottom-bordered">
                             <label for="fullname" class="form-label">Full Name</label>
                             <div class="text text-lg dual-bordered rounded ease-form">
                                 <input id="fullname" type="text" placeholder="Enter name">
@@ -2155,55 +2206,103 @@
                                 </select>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="portlet rounded shadow">
-                        <div class="content-side padding-15 bottom-bordered">
-                            <h4>List Group</h4>
+                        <div class="content-side padding-15 bottom-bordered light-bordered">
+                            <h4>Autocomplete Form</h4>
                         </div>
-                        <div class="content-side">
-                            <div class="list-group list-striped">
-                                <ul class="list-custom has-photo has-icon ease-1st-bg">
-                                    <li>
-                                        <a href="#">
-                                            <i class="list-icon icon icon-sm icon-angle-right ease-opacity"></i>
-                                            <img class="img-photo circle" src="images/profile-image.jpg" alt="">
-                                            <strong class="large block">Title</strong>
-                                            <span class="dark">Sub text here</span>
-                                            <p>Lorem ipsum dolor sit amet.</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="list-icon icon icon-sm icon-angle-right ease-opacity"></i>
-                                            <span class="img-photo circle theme-orange ui-dark"><i class="icon icon-md icon-calendar"></i></span>
-                                            <strong class="large block">Title</strong>
-                                            <span class="dark">Sub text here</span>
-                                            <p>Lorem ipsum dolor sit amet.</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="list-icon icon icon-sm icon-angle-right ease-opacity"></i>
-                                            <span class="img-photo circle theme-yellow ui-dark">HY</span>
-                                            <strong class="large block">Title</strong>
-                                            <span class="dark">Sub text here</span>
-                                            <p>Lorem ipsum dolor sit amet.</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="list-icon icon icon-sm icon-angle-right ease-opacity"></i>
-                                            <span class="img-photo circle theme-green ui-dark">EKY</span>
-                                            <strong class="large block">Title</strong>
-                                            <span class="dark">Sub text here</span>
-                                            <p>Lorem ipsum dolor sit amet.</p>
-                                        </a>
-                                    </li>
-                                </ul>
+                        <div class="content-side padding-5">
+                            <div class="row row-md-padding-ver">
+                                <div class="col-8">
+                                    <div data-src="dummy1.json" data-val="name" class="autocomplete text rounded dual-bordered ease-form">
+                                        <input type="text" placeholder="JSON example">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div data-src="search.php" data-val="name" class="autocomplete text rounded dual-bordered ease-form">
+                                        <input type="text" placeholder="PHP example">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-side padding-15 ver-bordered light-bordered">
+                            <h4>Autocomplete Form with Sending Values</h4>
+                        </div>
+                        <div class="content-side padding-5">
+                            <div class="row row-md-padding-ver">
+                                <div class="col-12">
+                                    <div class="autocompleteTarget check-custom rounded dual-bordered ease-form">
+                                        <input id="bankamiTarget" type="checkbox">
+                                        <i class="icon ease-opacity"></i>
+                                    </div>
+                                    <div class="autocompleteTarget radio-custom dual-bordered ease-form">
+                                         <input id="subemiTarget" type="radio">
+                                         <i class="icon ease-opacity"></i>
+                                    </div>
+                                    <div class="autocompleteTarget text form-inline rounded dual-bordered ease-form">
+                                        <input id="autocompleteTarget01" type="text" value="AKBANK">
+                                    </div>
+                                    <div class="autocompleteTarget select form-inline rounded dual-bordered ease-form">
+                                        <span class="icon icon-sm icon-angle-down ease-opacity"></span>
+                                        <select id="autocompleteTarget02">
+                                            <option>BAŞBURU BELGELERİ</option>
+                                            <option>RAPOR</option>
+                                            <option>TAKBİS</option>
+                                        </select>
+                                    </div>
+                                    <div class="autocompleteTarget textarea focus-multi form-inline rounded dual-bordered ease-form">
+                                        <textarea id="autocompleteTarget03">Açıklama Metni Burada</textarea>
+                                    </div>
+                                </div>
+                                <div class="col-6 break-6">
+                                    <div data-src="search.php" data-val="name" data-id="autocompleteTarget01" class="autocomplete text rounded dual-bordered ease-form">
+                                        <input type="text" placeholder="PHP example with sending data-id">
+                                    </div>
+                                </div>
+                                <div class="col-6 break-6">
+                                    <div data-src="search.php" data-val="name" data-class="autocompleteTarget" class="autocomplete text rounded dual-bordered ease-form">
+                                        <input type="text" placeholder="PHP example with sending data-class">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-side padding-15 ver-bordered light-bordered">
+                            <h4>Autocomplete Form with Pulling Values</h4>
+                        </div>
+                        <div class="content-side padding-5">
+                            <div class="row row-md-padding-ver">
+                                <div class="col-12">
+                                    <div class="check-custom rounded dual-bordered ease-form">
+                                        <input id="bankami" type="checkbox">
+                                        <i class="icon ease-opacity"></i>
+                                    </div>
+                                    <div class="radio-custom dual-bordered ease-form">
+                                         <input id="subemi" type="radio">
+                                         <i class="icon ease-opacity"></i>
+                                    </div>
+                                    <div class="text form-inline rounded dual-bordered ease-form">
+                                        <input id="bankaadi1" type="text" placeholder="Banka Adı">
+                                    </div>
+                                    <div class="select form-inline rounded dual-bordered ease-form">
+                                        <span class="icon icon-sm icon-angle-down ease-opacity"></span>
+                                        <select id="bankaadi2">
+                                            <option value="">Seçiniz</option>
+                                            <option value="AKBANK">AKBANK</option>
+                                            <option value="HALKBANK">HALKBANK</option>
+                                            <option value="İŞ BANKASI">İŞ BANKASI</option>
+                                        </select>
+                                    </div>
+                                    <div class="textarea focus-multi form-inline rounded dual-bordered ease-form">
+                                        <textarea id="bankaadi3"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-6 break-6">
+                                    <div data-src="search.php" data-val="name" class="autocomplete autocomplete-pull text rounded dual-bordered ease-form">
+                                        <input type="text" placeholder="PHP example with pulling values">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="portlet rounded shadow">
                         <div class="content-side padding-15 bottom-bordered">
                             <h4>Notifier Icons</h4>
