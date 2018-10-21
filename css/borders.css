@@ -11,17 +11,17 @@
 
 .dark-bordered { border-color: rgba(0,0,0,.15) !important; }
 
-.large-bordered { border-width: 5px !important; }
-.large-bordered.top-bordered { border-width: 5px 0 0 0 !important; }
-.large-bordered.right-bordered { border-width: 0 5px 0 0 !important; }
-.large-bordered.bottom-bordered { border-width: 0 0 5px 0 !important; }
-.large-bordered.left-bordered { border-width: 0 0 0 5px !important; }
-
 .dual-bordered { border-width: 2px !important; }
 .dual-bordered.top-bordered { border-width: 2px 0 0 0 !important; }
 .dual-bordered.right-bordered { border-width: 0 2px 0 0 !important; }
 .dual-bordered.bottom-bordered { border-width: 0 0 2px 0 !important; }
 .dual-bordered.left-bordered { border-width: 0 0 0 2px !important; }
+
+.large-bordered { border-width: 5px !important; }
+.large-bordered.top-bordered { border-width: 5px 0 0 0 !important; }
+.large-bordered.right-bordered { border-width: 0 5px 0 0 !important; }
+.large-bordered.bottom-bordered { border-width: 0 0 5px 0 !important; }
+.large-bordered.left-bordered { border-width: 0 0 0 5px !important; }
 
 .no-bordered { border-width: 0 !important; }
 .no-bordered-top { border-top-width: 0 !important; }
