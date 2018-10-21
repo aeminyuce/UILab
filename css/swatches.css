@@ -58,3 +58,17 @@
 .theme-blue.ui-text,.theme-blue .ui-text:not([class*="theme-"]) { color: #3773b6; }
 .theme-blue.ui-border,.theme-blue .ui-border:not([class*="theme-"]) { border-color: #3773b6; }
 .theme-blue.ui-x-dark,.theme-blue .ui-x-dark:not([class*="theme-"]) { background-color: #255a93; }
+
+.theme-default.ui-x-light,.theme-default .ui-x-light:not([class*="theme-"]) { background-color: #deecff; }
+.theme-default.ui-light,.theme-default .ui-light:not([class*="theme-"]) { background-color: #aed1ff; }
+.theme-default.ui-dark,.theme-default .ui-dark:not([class*="theme-"]) { background-color: #364860; }
+.theme-default.ui-text,.theme-default .ui-text:not([class*="theme-"]) { color: #364860; }
+.theme-default.ui-border,.theme-default .ui-border:not([class*="theme-"]) { border-color: #364860; }
+.theme-default.ui-x-dark,.theme-default .ui-x-dark:not([class*="theme-"]) { background-color: #2a3950; }
+
+.theme-default2.ui-x-light,.theme-default2 .ui-x-light:not([class*="theme-"]) { background-color: #dce5ff; }
+.theme-default2.ui-light,.theme-default2 .ui-light:not([class*="theme-"]) { background-color: #a8beff; }
+.theme-default2.ui-dark,.theme-default2 .ui-dark:not([class*="theme-"]) { background-color: #647bc1; }
+.theme-default2.ui-text,.theme-default2 .ui-text:not([class*="theme-"]) { color: #647bc1; }
+.theme-default2.ui-border,.theme-default2 .ui-border:not([class*="theme-"]) { border-color: #647bc1; }
+.theme-default2.ui-x-dark,.theme-default2 .ui-x-dark:not([class*="theme-"]) { background-color: #647bc1; }
