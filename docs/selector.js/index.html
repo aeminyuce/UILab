@@ -16,6 +16,7 @@
     <!-- CSS Tools -->
     <link rel="stylesheet" href="../../css/alignments.css" />
     <link rel="stylesheet" href="../../css/buttons.css" />
+    <link rel="stylesheet" href="../../css/borders.css" />
     <link rel="stylesheet" href="../../css/grid.css" />
     <link rel="stylesheet" href="../../css/helpers.css" />
     <link rel="stylesheet" href="../../css/icons.css" />
@@ -39,21 +40,17 @@
     <!-- font icons CSS -->
     <link rel="stylesheet" href="../../../UIIcons/font-icons/outline/font-icons.css" />
 
-    <!-- custom CSS -->
-    <style>
-        body { background-color: #f9f9f9; }
-        header { min-height: 64px; }
-    </style>
-
 </head>
 
 <body>
 
     <!-- header -->
-    <header class="container no-gutter theme-blue ui-dark">
-        <div class="col-12">
-            <a href="../examples.html" class="btn btn-lg no-padding-h circle ease-bg margin-10-r"><i class="icon icon-md no-opacity icon-angle-left"></i></a>
-            <span class="inline-block align-middle x-large">UI Lab, Selector JS</span>
+    <header class="container theme-default ui-dark">
+        <div class="row theme-default2 ui-border top-bordered dual-bordered">
+            <div class="col-12">
+                <a href="../examples.html" class="btn btn-lg no-padding-h circle ease-bg margin-10-r"><i class="icon icon-md no-opacity icon-angle-left"></i></a>
+                <span class="inline-block align-middle x-large">UI Lab, Selector JS</span>
+            </div>
         </div>
     </header>
 
@@ -61,9 +58,9 @@
     <main class="container no-gutter">
         <div class="fixed">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 padding-30">
 
-                    <div class="portlet-warning padding-15 rounded shadow">
+                    <div class="portlet-warning padding-15 rounded theme-gray ui-x-light">
                         <h4>Selector JS is a simple javascript selector to select HTML elements.</h4>
                         Please, <strong>click the buttons listed below and check the console</strong> to see returned element/array/nodelist.
                         <span class="sp5"></span>
@@ -71,61 +68,61 @@
                     </div>
 
                     <ul class="list-unstyled list-spacer-5 align-left">
-                        <li class="btn btn-lg btn-multitext btn-block rounded bordered ease-bg" onclick="console.log(selector('li'));">
+                        <li class="btn btn-lg btn-multitext btn-block rounded ease-bg" onclick="console.log(selector('li'));">
                             <strong>Select tagname:</strong><br>
                             <i>selector('li');</i>
                         </li>
-                        <li class="btn btn-lg btn-multitext btn-block rounded bordered ease-bg" onclick="console.log(selector('li, i'));">
+                        <li class="btn btn-lg btn-multitext btn-block rounded ease-bg" onclick="console.log(selector('li, i'));">
                             <strong>Select multiple tagname:</strong><br>
                             <i>selector('li, i');</i>
                         </li>
-                        <li class="btn btn-lg btn-multitext btn-block rounded bordered ease-bg" onclick="console.log(selector('li')[0]);">
+                        <li class="btn btn-lg btn-multitext btn-block rounded ease-bg" onclick="console.log(selector('li')[0]);">
                             <strong>Select first tagname:</strong><br>
                             <i>selector('li')[0];</i>
                         </li>
-                        <li class="btn btn-lg btn-multitext btn-block rounded bordered ease-bg" onclick="console.log(selector('li:last-child'));">
+                        <li class="btn btn-lg btn-multitext btn-block rounded ease-bg" onclick="console.log(selector('li:last-child'));">
                             <strong>Select CSS3 last-child of tagname:</strong><br>
                             <i>selector('li:last-child');</i>
                         </li>
-                        <li class="btn btn-lg btn-multitext btn-block rounded bordered ease-bg" onclick="console.log(selector('.select-classname'));" class="select-classname">
+                        <li class="btn btn-lg btn-multitext btn-block rounded ease-bg" onclick="console.log(selector('.select-classname'));" class="select-classname">
                             <strong>Select Classname:</strong><br>
                             <i>selector('.select-classname');</i>
                         </li>
-                        <li class="btn btn-lg btn-multitext btn-block rounded bordered ease-bg" onclick="console.log(selector('#select-id'));" id="select-id">
+                        <li class="btn btn-lg btn-multitext btn-block rounded ease-bg" onclick="console.log(selector('#select-id'));" id="select-id">
                             <strong>Select id:</strong><br>
                             <i>selector('#select-id');</i>
                         </li>
-                        <li class="btn btn-lg btn-multitext btn-block rounded bordered ease-bg" onclick="console.log(selector('[onclick]'));">
+                        <li class="btn btn-lg btn-multitext btn-block rounded ease-bg" onclick="console.log(selector('[onclick]'));">
                             <strong>Select with attribute:</strong><br>
                             <i>selector('[onclick]');</i>
                         </li>
                     </ul>
 
                     <ul class="list-unstyled list-spacer-5 align-left">
-                        <li class="btn btn-lg btn-multitext btn-block rounded bordered ease-bg" onclick="console.log(selector(document));">
+                        <li class="btn btn-lg btn-multitext btn-block rounded ease-bg" onclick="console.log(selector(document));">
                             <strong>Select document:</strong><br>
                             <i>selector(document);</i>
                         </li>
-                        <li class="btn btn-lg btn-multitext btn-block rounded bordered ease-bg" onclick="console.log(selector(window));">
+                        <li class="btn btn-lg btn-multitext btn-block rounded ease-bg" onclick="console.log(selector(window));">
                             <strong>Select window:</strong><br>
                             <i>selector(window);</i>
                         </li>
-                        <li class="btn btn-lg btn-multitext btn-block rounded bordered ease-bg" onclick="console.log(selector(this));">
+                        <li class="btn btn-lg btn-multitext btn-block rounded ease-bg" onclick="console.log(selector(this));">
                             <strong>Select this element:</strong><br>
                             <i>selector(this);</i>
                         </li>
                     </ul>
 
                     <ul class="list-unstyled list-spacer-5 align-left">
-                        <li class="btn btn-lg btn-multitext btn-block rounded bordered ease-bg" onclick="console.log(selector('i', this));">
+                        <li class="btn btn-lg btn-multitext btn-block rounded ease-bg" onclick="console.log(selector('i', this));">
                             <strong>Find tagname in this element:</strong><br>
                             <i>selector('i', this);</i>
                         </li>
-                        <li class="btn btn-lg btn-multitext btn-block rounded bordered ease-bg" onclick="console.log(selector('.inner-classname', '.outer-classname'));" class="outer-classname">
+                        <li class="btn btn-lg btn-multitext btn-block rounded ease-bg" onclick="console.log(selector('.inner-classname', '.outer-classname'));" class="outer-classname">
                             <strong>Find classname in selected classname:</strong><br>
                             <i class="inner-classname">selector('.inner-classname', '.outer-classname');</i>
                         </li>
-                        <li class="btn btn-lg btn-multitext btn-block rounded bordered ease-bg" onclick="console.log(selector('#inner-id', '.outer-classname2'));" class="outer-classname2">
+                        <li class="btn btn-lg btn-multitext btn-block rounded ease-bg" onclick="console.log(selector('#inner-id', '.outer-classname2'));" class="outer-classname2">
                             <strong>Find id in selected classname:</strong><br>
                             <i id="inner-id">selector('#inner-id', '.outer-classname2');</i>
                         </li>

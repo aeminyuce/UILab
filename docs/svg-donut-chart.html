@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="../css/icons.css" />
     <link rel="stylesheet" href="../css/margins.css" />
     <link rel="stylesheet" href="../css/paddings.css" />
-    <link rel="stylesheet" href="../css/portlets.css" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/sticky-header.css" />
     <link rel="stylesheet" href="../css/transitions.css" />
@@ -45,21 +44,17 @@
     <!-- font icons CSS -->
     <link rel="stylesheet" href="../../UIIcons/font-icons/outline/font-icons.css" />
 
-    <!-- custom CSS -->
-    <style>
-        body { background-color: #f9f9f9; }
-        header { min-height: 64px; }
-    </style>
-
 </head>
 
 <body>
 
     <!-- header -->
-    <header class="container no-gutter theme-blue ui-dark">
-        <div class="col-12">
-            <a href="examples.html" class="btn btn-lg no-padding-h circle ease-bg margin-10-r"><i class="icon icon-md no-opacity icon-angle-left"></i></a>
-            <span class="inline-block x-large align-middle">UI Lab, SVG Donut Chart</span>
+    <header class="container theme-default ui-dark">
+        <div class="row theme-default2 ui-border top-bordered dual-bordered">
+            <div class="col-12">
+                <a href="examples.html" class="btn btn-lg no-padding-h circle ease-bg margin-10-r"><i class="icon icon-md no-opacity icon-angle-left"></i></a>
+                <span class="inline-block x-large align-middle">UI Lab, SVG Donut Chart</span>
+            </div>
         </div>
     </header>
 
@@ -67,83 +62,81 @@
     <main class="container no-gutter">
         <div class="fixed">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 padding-30">
 
-                    <div class="portlet padding-30 rounded shadow">
-                        <div class="row">
-                            <div class="col-3 col-sm-6 xs-responsive">
-                                <div class="donut-chart">
-                                    <strong>HTML</strong>
-                                    <svg viewBox="0 0 160 160">
-                                        <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="25" />
-                                    </svg>
-                                </div>
+                    <div class="row">
+                        <div class="col-3 col-sm-6 xs-responsive">
+                            <div class="donut-chart">
+                                <strong>HTML</strong>
+                                <svg viewBox="0 0 160 160">
+                                    <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="25" />
+                                </svg>
                             </div>
-                            <div class="col-3 col-sm-6 xs-responsive">
-                                <div class="donut-chart">
-                                    <strong>CSS</strong>
-                                    <svg viewBox="0 0 160 160">
-                                        <circle r="69.85699" cy="80" cx="80" stroke="#a4e87b" data-percent="50" />
-                                    </svg>
-                                </div>
+                        </div>
+                        <div class="col-3 col-sm-6 xs-responsive">
+                            <div class="donut-chart">
+                                <strong>CSS</strong>
+                                <svg viewBox="0 0 160 160">
+                                    <circle r="69.85699" cy="80" cx="80" stroke="#a4e87b" data-percent="50" />
+                                </svg>
                             </div>
-                            <div class="col-3 col-sm-6 xs-responsive">
-                                <div class="donut-chart">
-                                    <strong>JS</strong>
-                                    <svg viewBox="0 0 160 160">
-                                        <circle r="69.85699" cy="80" cx="80" stroke="#cd7be8" data-percent="75" />
-                                    </svg>
-                                </div>
+                        </div>
+                        <div class="col-3 col-sm-6 xs-responsive">
+                            <div class="donut-chart">
+                                <strong>JS</strong>
+                                <svg viewBox="0 0 160 160">
+                                    <circle r="69.85699" cy="80" cx="80" stroke="#cd7be8" data-percent="75" />
+                                </svg>
                             </div>
-                            <div class="col-3 col-sm-6 xs-responsive">
-                                <div class="donut-chart">
-                                    <strong>PHP</strong>
-                                    <svg viewBox="0 0 160 160">
-                                        <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="100" />
-                                    </svg>
-                                </div>
+                        </div>
+                        <div class="col-3 col-sm-6 xs-responsive">
+                            <div class="donut-chart">
+                                <strong>PHP</strong>
+                                <svg viewBox="0 0 160 160">
+                                    <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="100" />
+                                </svg>
                             </div>
-                            <div class="col-3 col-sm-6 xs-responsive">
-                                <div class="donut-chart">
-                                    <strong>Multiple Donuts</strong>
-                                    <svg viewBox="0 0 160 160">
-                                        <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="15" />
-                                        <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="85" />
-                                    </svg>
-                                </div>
+                        </div>
+                        <div class="col-3 col-sm-6 xs-responsive">
+                            <div class="donut-chart">
+                                <strong>Multiple Donuts</strong>
+                                <svg viewBox="0 0 160 160">
+                                    <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="15" />
+                                    <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="85" />
+                                </svg>
                             </div>
-                            <div class="col-3 col-sm-6 xs-responsive">
-                                <div class="donut-chart">
-                                    <strong>Multiple Donuts</strong>
-                                    <svg viewBox="0 0 160 160">
-                                        <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="10" />
-                                        <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="60" />
-                                        <circle r="69.85699" cy="80" cx="80" stroke="#cd7be8" data-percent="30" />
-                                    </svg>
-                                </div>
+                        </div>
+                        <div class="col-3 col-sm-6 xs-responsive">
+                            <div class="donut-chart">
+                                <strong>Multiple Donuts</strong>
+                                <svg viewBox="0 0 160 160">
+                                    <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="10" />
+                                    <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="60" />
+                                    <circle r="69.85699" cy="80" cx="80" stroke="#cd7be8" data-percent="30" />
+                                </svg>
                             </div>
-                            <div class="col-3 col-sm-6 xs-responsive">
-                                <div class="donut-chart">
-                                    <strong>Multiple Donuts</strong>
-                                    <svg viewBox="0 0 160 160">
-                                        <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="10" />
-                                        <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="20" />
-                                        <circle r="69.85699" cy="80" cx="80" stroke="#cd7be8" data-percent="30" />
-                                        <circle r="69.85699" cy="80" cx="80" stroke="#a4e87b" data-percent="40" />
-                                    </svg>
-                                </div>
+                        </div>
+                        <div class="col-3 col-sm-6 xs-responsive">
+                            <div class="donut-chart">
+                                <strong>Multiple Donuts</strong>
+                                <svg viewBox="0 0 160 160">
+                                    <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="10" />
+                                    <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="20" />
+                                    <circle r="69.85699" cy="80" cx="80" stroke="#cd7be8" data-percent="30" />
+                                    <circle r="69.85699" cy="80" cx="80" stroke="#a4e87b" data-percent="40" />
+                                </svg>
                             </div>
-                            <div class="col-3 col-sm-6 xs-responsive">
-                                <div class="donut-chart">
-                                    <strong>Multiple Donuts</strong>
-                                    <svg viewBox="0 0 160 160">
-                                        <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="20" />
-                                        <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="20" />
-                                        <circle r="69.85699" cy="80" cx="80" stroke="#cd7be8" data-percent="20" />
-                                        <circle r="69.85699" cy="80" cx="80" stroke="#a4e87b" data-percent="20" />
-                                        <circle r="69.85699" cy="80" cx="80" stroke="#75dbe7" data-percent="20" />
-                                    </svg>
-                                </div>
+                        </div>
+                        <div class="col-3 col-sm-6 xs-responsive">
+                            <div class="donut-chart">
+                                <strong>Multiple Donuts</strong>
+                                <svg viewBox="0 0 160 160">
+                                    <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="20" />
+                                    <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="20" />
+                                    <circle r="69.85699" cy="80" cx="80" stroke="#cd7be8" data-percent="20" />
+                                    <circle r="69.85699" cy="80" cx="80" stroke="#a4e87b" data-percent="20" />
+                                    <circle r="69.85699" cy="80" cx="80" stroke="#75dbe7" data-percent="20" />
+                                </svg>
                             </div>
                         </div>
                     </div>

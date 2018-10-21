@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>UIlab Examples</title>
+    <title>UI Lab: CSS and JavaScript Tools</title>
     <meta name="keywords" content="uilab, css, javascript, tools, examples">
     <meta name="description" content="UI Lab CSS and JavaScript Tools." />
     <meta name="author" content="Ahmet Emin Yüce"/>
@@ -95,31 +95,71 @@
     <!-- font icons CSS -->
     <link rel="stylesheet" href="../../UIIcons/font-icons/outline/font-icons.css" />
 
-    <!-- custom CSS -->
-    <style>
-        body { background-color: #f9f9f9; }
-        header { min-height: 64px; }
-    </style>
-
 </head>
 
 <body>
 
     <!-- header -->
-    <header class="container no-gutter theme-blue ui-dark">
-        <div class="col-12">
-            <button class="btn btn-lg right show-mobile-menu-right no-padding-h rounded ease-bg visible-md"><i class="icon no-opacity icon-lg icon-bars"></i></button>
-            <h1 class="align-left">UI Lab <small>CSS and JavaScript Tools.</small></h1>
+    <header class="container theme-default ui-dark">
+        <div class="row theme-default2 ui-border top-bordered dual-bordered">
+            <div class="col-static no-responsive">
+                <div class="static-250 align-center md-align-left padding-15 theme-default ui-x-dark">
+                    <a title="UI Lab: CSS and JavaScript Tools" href="examples.html"><img class="retina" src="images/uilab-logo.png" height="32" alt=""></a>
+                </div>
+                <div class="row">
+                    <div class="col-12 padding-15-r">
+                        <button class="btn btn-lg btn-invisible no-padding-h right rounded show-mobile-menu-right ease-bg visible-md"><i class="icon icon-lg icon-bars no-opacity"></i></button>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
     <!-- documentation examples -->
     <main class="container no-gutter">
         <div class="col-static">
-            <div class="row">
-                <div class="col-12">
 
-                    <h4>Breadcrumbs</h4>
+            <!-- sidebar -->
+            <div class="static-250 hidden-md align-left padding-25-v theme-gray ui-light add-mobile-menu-right">
+                <h5 class="bold dark padding-15-h">EXAMPLE PAGES</h5>
+                <ul class="list-unstyled ease-2nd-all theme-default2">
+                    <li><a class="btn btn-lg btn-block btn-invisible left-bordered large-bordered ui-border" href="sign-in.html">Sign In Page</a></li>
+                    <li><a class="btn btn-lg btn-block btn-invisible left-bordered large-bordered ui-border" href="sign-up.html">Sign Up Page</a></li>
+                </ul>
+                <h5 class="bold dark padding-15-h">COMPONENTS</h5>
+                <ul class="list-unstyled ease-2nd-all theme-default2">
+                    <li><a class="btn btn-lg btn-block btn-invisible left-bordered large-bordered ui-border" href="carousel.html">Carousel</a></li>
+                    <li><a class="btn btn-lg btn-block btn-invisible left-bordered large-bordered ui-border" href="photo-gallery.html">Photo Gallery</a></li>
+                    <li><a class="btn btn-lg btn-block btn-invisible left-bordered large-bordered ui-border" href="photo-slider.html">Photo Slider</a></li>
+                    <li><a class="btn btn-lg btn-block btn-invisible left-bordered large-bordered ui-border" href="news-slider.html">News Slider</a></li>
+                    <li><a class="btn btn-lg btn-block btn-invisible left-bordered large-bordered ui-border" href="events-calendar.html">Events Calendar</a></li>
+                    <li><a class="btn btn-lg btn-block btn-invisible left-bordered large-bordered ui-border" href="svg-donut-chart.html">SVG Donut Chart</a></li>
+                    <li><a class="btn btn-lg btn-block btn-invisible left-bordered large-bordered ui-border" href="svg-map.html">SVG Map</a></li>
+                    <li><a class="btn btn-lg btn-block btn-invisible left-bordered large-bordered ui-border" href="countdown.html">Countdown</a></li>
+                    <li><a class="btn btn-lg btn-block btn-invisible left-bordered large-bordered ui-border" href="steps.html">Steps</a></li>
+                    <li><a class="btn btn-lg btn-block btn-invisible left-bordered large-bordered ui-border" href="custom-tables.html">Custom Tables</a></li>
+                </ul>
+                <h5 class="bold dark padding-15-h">JAVASCRIPT</h5>
+                <ul class="list-unstyled ease-2nd-all theme-default2">
+                    <li><a class="btn btn-lg btn-block btn-invisible left-bordered large-bordered ui-border" href="selector.js/index.html">Selector JS</a></li>
+                    <li><a class="btn btn-lg btn-block btn-invisible left-bordered large-bordered ui-border" href="events.js/index.html">Events JS</a></li>
+                    <li><a class="btn btn-lg btn-block btn-invisible left-bordered large-bordered ui-border" href="useragents.js/index.html">User Agents JS</a></li>
+                    <!--<li><a class="btn btn-lg btn-block btn-invisible left-bordered large-bordered ui-border" href="orientation.js/index.html">Orientation JS</a></li>-->
+                    <!--<li><a class="btn btn-lg btn-block btn-invisible left-bordered large-bordered ui-border" href="ajax.js/index.html">Ajax JS</a></li>-->
+                </ul>
+                <h5 class="bold dark padding-15-h">LINKS</h5>
+                <ul class="list-unstyled ease-2nd-all theme-default2">
+                    <li><a class="btn btn-lg btn-block btn-invisible left-bordered large-bordered ui-border" href="https://github.com/ahmeteminyuce/UILab">UI Lab Github</a></li>
+                    <li><a class="btn btn-lg btn-block btn-invisible left-bordered large-bordered ui-border" href="https://github.com/ahmeteminyuce/UIIcons">UI Icons Github</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                <div class="col-12 padding-30">
+
+                    <h1 class="align-left margin-30-v">UI Lab <small class="dark">CSS and JavaScript Tools</small></h1>
+
+                    <h4>Breadcrumbs Example</h4>
                     <div class="breadcrumbs">
                         <ul class="list-inline dark ease-2nd-link">
                             <li><a class="link-default" href="#">Home</a></li>
@@ -128,11 +168,13 @@
                         </ul>
                     </div>
 
-                    <div class="portlet rounded shadow">
-                        <div class="content-side padding-15 bottom-bordered">
-                            <h4>Responsive Grid System <small class=dark>Secondary text</small></h4>
+                    <span class="sp20"></span>
+
+                    <div class="portlet rounded">
+                        <div class="content-side padding-15-v">
+                            <h4>Responsive Grid System</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <div class="row">
                                 <div class="col-1 bordered" style="background: #f4f4f4;">.col-1</div>
                                 <div class="col-1 bordered" style="background: #f4f4f4;">.col-1</div>
@@ -161,10 +203,10 @@
                                 <div class="col-6 bordered" style="background: #f4f4f4;">.col-6</div>
                             </div>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <strong>Static Grid</strong>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <div class="row">
                                 <div class="col-static no-responsive">
                                    <div class="row">
@@ -220,10 +262,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <strong>.no-responsive Column Reset</strong>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <div class="row">
                                 <div class="col-8 no-responsive bordered" style="background: #f4f4f4;">.col-8 .no-responsive</div>
                                 <div class="col-4 no-responsive bordered" style="background: #f4f4f4;">.col-4 .no-responsive</div>
@@ -234,19 +276,19 @@
                                 <div class="col-4 no-responsive bordered" style="background: #f4f4f4;">.col-4 .no-responsive</div>
                             </div>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <strong>.lg-responsive Column Reset</strong>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <div class="row">
                                 <div class="col-8 lg-responsive bordered" style="background: #f4f4f4;">.col-8 .lg-responsive</div>
                                 <div class="col-4 lg-responsive bordered" style="background: #f4f4f4;">.col-4 .lg-responsive</div>
                             </div>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <strong>.xs-responsive Column Reset</strong>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <div class="row">
                                 <div class="col-8 xs-responsive bordered" style="background: #f4f4f4;">.col-8 .xs-responsive</div>
                                 <div class="col-4 xs-responsive bordered" style="background: #f4f4f4;">.col-4 .xs-responsive</div>
@@ -257,10 +299,10 @@
                                 <div class="col-4 xs-responsive bordered" style="background: #f4f4f4;">.col-4 .xs-responsive</div>
                             </div>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Column Wrapping</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <div class="row">
                                 <div class="col-3 break-9 bordered" style="background: #f4f4f4;">.col-3 .break-9</div>
                                 <div class="col-9 bordered" style="background: #f4f4f4;">.col-9</div>
@@ -268,10 +310,10 @@
                                 <div class="col-6 bordered" style="background: #f4f4f4;">.col-6</div>
                             </div>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Nesting Columns</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <div class="row">
                                 <div class="col-9 bordered" style="background: #f4f4f4;">
                                     Level 1: .col-9
@@ -282,10 +324,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Column Offsetting</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <div class="row">
                                 <div class="col-4 bordered" style="background: #f4f4f4;">.col-4</div>
                                 <div class="col-4 offset-4 bordered" style="background: #f4f4f4;">.col-4 .offset-4</div>
@@ -293,10 +335,10 @@
                                 <div class="col-3 offset-3 bordered" style="background: #f4f4f4;">.col-3 .offset-3</div>
                             </div>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Column Ordering</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <div class="row">
                                 <div class="col-9 push-3 bordered" style="background: #f4f4f4;">.col-9 .push-3</div>
                                 <div class="col-3 pull-9 bordered" style="background: #f4f4f4;">.col-3 .pull-9</div>
@@ -306,13 +348,13 @@
 
                 </div>
 
-                <div class="col-6">
+                <div class="col-6 padding-30">
 
-                    <div class="portlet rounded shadow">
-                        <div class="content-side padding-15 bottom-bordered">
+                    <div class="portlet rounded">
+                        <div class="content-side padding-15-v">
                             <h4>Headings</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <h1>h1 Heading <small class="dark">Secondary text</small></h1>
                             <h2>h2 Heading <small class="dark">Secondary text</small></h2>
                             <h3>h3 Heading <small class="dark">Secondary text</small></h3>
@@ -320,10 +362,10 @@
                             <h5>h5 Heading <small class="dark">Secondary text</small></h5>
                             <h6>h6 Heading <small class="dark">Secondary text</small></h6>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Font Colors</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <div class="theme-gray ui-dark">
                                 <span class="xx-light">.xx-light</span>
                                 <span class="x-light">.x-light</span>
@@ -337,10 +379,10 @@
                             <span class="font-red">.font-red</span>
                             <span class="font-orange">.font-orange</span>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Links</h4>
                         </div>
-                        <div class="content-side padding-15 ease-1st-link">
+                        <div class="content-side padding-15-v ease-1st-link">
                             <button class="link-default">Button Link</button> <a class="link-default" href="#">Ease Link</a> <a class="link-default" href="#">Ease Link</a> <button class="underline-default">Underline Button</button> <a class="underline-default" href="#">Underline</a>
                             <br>
                             <button class="link-red font-red">Button Link</button> <a class="link-red font-red" href="#">Ease Link</a> <a class="link-red" href="#">Ease Link</a> <a class="underline-red" href="#">Underline</a>
@@ -351,10 +393,10 @@
                             <br>
                             <button class="link-green font-green">Button Link</button> <a class="link-green font-green" href="#">Ease Link</a> <a class="link-green" href="#">Ease Link</a> <a class="underline-green" href="#">Underline</a> <a href="#" class="underline">Classic Underline</a>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Font Sizes</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <span class="xx-largest">.xx-largest</span>
                             <span class="x-largest">.x-largest</span>
                             <span class="largest">.largest</span>
@@ -373,11 +415,11 @@
                         </div>
                     </div>
 
-                    <div class="portlet rounded shadow">
-                        <div class="content-side padding-15 bottom-bordered">
+                    <div class="portlet rounded">
+                        <div class="content-side padding-15-v">
                             <h4>Unordered Lists</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <ul>
                                 <li>Lorem ipsum dolor sit amet</li>
                                 <li>Consectetur adipiscing elit</li>
@@ -396,10 +438,10 @@
                                 <li>Eget porttitor lorem</li>
                             </ul>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Ordered Lists</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <ol>
                                 <li>Lorem ipsum dolor sit amet</li>
                                 <li>Consectetur adipiscing elit</li>
@@ -411,10 +453,10 @@
                                 <li>Eget porttitor lorem</li>
                             </ol>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Unstyled Lists</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <ul class="list-unstyled">
                                 <li>Lorem ipsum dolor sit amet</li>
                                 <li>Consectetur adipiscing elit</li>
@@ -433,10 +475,10 @@
                                 <li>Eget porttitor lorem</li>
                             </ul>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>List Columns</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <ul class="list-unstyled list-column-2">
                                 <li>Lorem ipsum dolor sit amet</li>
                                 <li>Consectetur adipiscing elit</li>
@@ -490,11 +532,11 @@
                         </div>
                     </div>
 
-                    <div class="portlet rounded shadow">
-                        <div class="content-side padding-15 ver-bordered">
+                    <div class="portlet rounded">
+                        <div class="content-side padding-15-v">
                             <h4>Progress Bar</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <div class="progress-bar progress-sm rounded">
                                 <span class="theme-green ui-dark" style="width: 45%;"></span><span class="theme-yellow ui-dark" style="width: 15%;"></span>
                             </div>
@@ -508,19 +550,20 @@
                     </div>
 
                 </div>
-                <div class="col-6">
 
-                    <div class="portlet rounded shadow">
-                        <div class="content-side padding-15 bottom-bordered">
+                <div class="col-6 padding-30">
+
+                    <div class="portlet rounded">
+                        <div class="content-side padding-15-v">
                             <h4>Lead</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Text Elements</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <div class="row row-no-padding">
                                 <div class="col-6">
                                     <mark>Marked Text</mark>
@@ -556,10 +599,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Alignment Classes</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <span class="align-left">.align-left</span>
                             <br>
                             <span class="align-center">.align-center</span>
@@ -571,10 +614,10 @@
                             <p class="align-justify no-margin"><strong>.align-justify:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae faucibus orci. Etiam bibendum arcu sodales velit iaculis, a semper arcu gravida.</p>
                             <!--<p class="align-nowrap no-margin"><strong>.align-nowrap:</strong> Lorem ipsum dolor sit amet.</p>-->
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Transformation Classes</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <span class="lowercase">lowercase</span>
                             <br>
                             <span class="uppercase">uppercase</span>
@@ -583,10 +626,10 @@
                             <br>
                             <span class="initialism">initialism</span>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Addresses</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <address>
                                 <strong>Twitter, Inc.</strong><br>
                                 1355 Market Street, Suite 900<br>
@@ -598,10 +641,10 @@
                                 <a class="link-default ease-link" href="mailto:#">first.last@example.com</a>
                             </address>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Blockquotes</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <blockquote>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                                 <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
@@ -617,45 +660,45 @@
                         </div>
                     </div>
 
-                    <div class="portlet rounded shadow">
-                        <div class="content-side padding-15 bottom-bordered">
+                    <div class="portlet rounded">
+                        <div class="content-side padding-15-v">
                             <h4>Inline Code</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             For example, <code>&lt;section&gt;</code> should be wrapped as inline.
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>User Input Code</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
                             To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Basic Block Code</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Variables</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Sample Output</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <samp>This text is meant to be treated as sample output from a computer program.</samp>
                         </div>
                     </div>
 
-                    <div class="portlet rounded shadow">
-                        <div class="content-side padding-15 bottom-bordered">
+                    <div class="portlet rounded">
+                        <div class="content-side padding-15-v">
                             <h4>Description Lists</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <dl>
                                 <dt>Description lists</dt>
                                 <dd>A description list is perfect for defining terms.</dd>
@@ -666,10 +709,10 @@
                                 <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
                             </dl>
                         </div>
-                        <div class="content-side padding-15 bottom-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Horizontal Description Lists</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <dl class="dl-horizontal">
                                 <dt>Description lists</dt>
                                 <dd>A description list is perfect for defining terms.</dd>
@@ -684,12 +727,12 @@
 
                 </div>
 
-                <div class="col-12">
-                    <div class="portlet rounded shadow">
-                        <div class="content-side padding-15 bottom-bordered">
+                <div class="col-12 padding-30">
+                    <div class="portlet rounded">
+                        <div class="content-side padding-15-v">
                             <h4>Tables</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <table class="table">
                                 <caption>Optional table caption.</caption>
                                 <thead>
@@ -722,10 +765,10 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>No Separated Rows</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <table class="table no-separated">
                                 <thead>
                                     <tr>
@@ -757,10 +800,10 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Striped Rows</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
@@ -792,10 +835,10 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Bordered Table</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <div class="row">
                                 <div class="col-6">
                                     <table class="table table-bordered">
@@ -879,10 +922,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Hover Rows</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <table class="table table-hover ease-table">
                                 <thead>
                                     <tr>
@@ -908,10 +951,10 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Condensed Table</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <table class="table table-condensed">
                                 <thead>
                                     <tr>
@@ -949,10 +992,10 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Rows Swatches</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <table class="table table-hover ease-table">
                                 <thead>
                                     <tr>
@@ -1008,10 +1051,10 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Table Sidebar</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <table class="table table-sidebar">
                                 <thead>
                                     <tr>
@@ -1037,10 +1080,10 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Responsive Table</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <div class="table-responsive">
                                 <table class="table table-striped">
                                     <thead>
@@ -1113,10 +1156,10 @@
                                 </table>
                             </div>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Scrollable Table</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <div class="table-scrollable">
                                 <table class="table table-striped">
                                     <thead>
@@ -1192,23 +1235,23 @@
                     </div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-6 padding-30">
 
-                        <div class="portlet rounded shadow">
-                            <div class="content-side padding-15 bottom-bordered">
+                        <div class="portlet rounded">
+                            <div class="content-side padding-15-v">
                                 <h4>Button Sizes</h4>
                             </div>
-                            <div class="content-side padding-15 ease-1st-bg">
+                            <div class="content-side padding-15-v ease-1st-bg">
                                 <a class="btn margin-5-b btn-lg circle" href="#">Large Button <i class="icon icon-md icon-trash"></i></a>
                                 <a class="btn margin-5-b circle" href="#">Default Button <i class="icon icon-sm icon-trash"></i></a>
                                 <a class="btn margin-5-b btn-sm circle" href="#">Small Button <i class="icon icon-sm icon-trash"></i></a>
                                 <a class="btn margin-5-b btn-xs circle" href="#">Extra Small Button <i class="icon icon-sm icon-trash"></i></a>
                                 <a class="btn margin-5-b btn-xxs circle" href="#">2x Extra Small Button <i class="icon icon-xs icon-trash"></i></a>
                             </div>
-                            <div class="content-side padding-15 ver-bordered">
+                            <div class="content-side padding-15-v">
                                 <h4>Dropdown Buttons</h4>
                             </div>
-                            <div class="content-side padding-15">
+                            <div class="content-side padding-15-v">
                                 <div class="row">
                                     <div class="col-6">
                                         <div class="dropdown">
@@ -1275,10 +1318,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="content-side padding-15 ver-bordered">
+                            <div class="content-side padding-15-v">
                                 <h4>Dropdown Forms</h4>
                             </div>
-                            <div class="content-side padding-15">
+                            <div class="content-side padding-15-v">
                                 <div class="row">
                                     <div class="col-6">
                                         <div class="dropdown">
@@ -1302,10 +1345,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="content-side padding-15 ver-bordered">
+                            <div class="content-side padding-15-v">
                                 <h4>Button Swatches</h4>
                             </div>
-                            <div class="content-side padding-15 ease-1st-bg">
+                            <div class="content-side padding-15-v ease-1st-bg">
                                 <div class="row row-md-padding-ver">
                                     <div class="col-6">
                                         <a class="btn btn-block circle theme-red ui-dark" href="#">Link</a>
@@ -1327,7 +1370,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="content-side padding-15">
+                            <div class="content-side padding-15-v">
                                 <div class="row">
                                     <div class="col-6">
                                         <div class="dropdown btn-block">
@@ -1355,10 +1398,10 @@
                                     </div>
                                 </div>
                             </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Buttons with Inline Icons</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <div class="row">
                                 <div class="col-6">
                                     <a class="btn btn-lg btn-block icon-inline icon-md icon-save circle ease-bg" href="#">Inline Icon Button</a>
@@ -1384,10 +1427,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Block Level Buttons</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <div class="row">
                                 <div class="col-6">
                                     <a class="btn btn-lg btn-block circle ease-bg theme-blue ui-dark" href="#">Block Level Button</a>
@@ -1423,10 +1466,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Active &amp; Passive Buttons</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <div class="ease-1st-bg">
                                 <a class="btn btn-active margin-5-b circle" href="#">Active Link</a>
                                 <button class="btn btn-active margin-5-b circle">Active Button</button>
@@ -1439,10 +1482,10 @@
                                 <input class="btn btn-passive circle" value="Passive Submit">
                             </div>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Multitext Buttons</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <div class="align-center ease-1st-bg">
                                 <a href="#" class="btn btn-lg btn-multitext static-200 rounded">Multitext Button Multitext Button</a>
                                 <a href="#" class="btn btn-multitext static-150 rounded">Multitext Button Multitext Button</a>
@@ -1450,10 +1493,10 @@
                                 <a href="#" class="btn btn-xs btn-multitext static-100 rounded">Multitext Button Multitext Button</a>
                             </div>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Pagination Buttons</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <div class="pagination align-center ease-1st-bg">
                                 <a class="btn prev circle" href="#"><i class="icon icon-sm icon-angle-left"></i></a>
                                 <a class="btn circle" href="#">1</a>
@@ -1465,10 +1508,10 @@
                                 <a class="btn next circle" href="#"><i class="icon icon-sm icon-angle-right"></i></a>
                             </div>
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Tab Buttons</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
 
                             <div class="btn-tabs" data-classes="theme-orange ui-dark">
                                 <div class="margin-10-v md-align-center ease-1st-bg">
@@ -1486,10 +1529,10 @@
                             </div>
 
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Stripes (IE9 Not Supported)</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
 
                             <div class="row">
                                 <div class="col-6 no-responsive theme-yellow ui-x-light stripe-light">
@@ -1549,10 +1592,10 @@
                             </div>
 
                         </div>
-                        <div class="content-side padding-15 ver-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Button Holder</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
 
                             <div class="row">
                                 <div class="col-6">
@@ -1576,8 +1619,8 @@
                         </div>
                     </div>
 
-                    <div class="portlet rounded shadow">
-                        <div class="content-side padding-15 bottom-bordered">
+                    <div class="portlet rounded">
+                        <div class="content-side padding-15-v">
                             <h4>List Group</h4>
                         </div>
                         <div class="content-side">
@@ -1624,11 +1667,11 @@
                         </div>
                     </div>
 
-                    <div class="portlet rounded shadow">
-                        <div class="content-side padding-15 bottom-bordered">
+                    <div class="portlet rounded">
+                        <div class="content-side padding-15-v">
                             <h4>Alert Windows</h4>
                         </div>
-                        <div class="content-side padding-15">
+                        <div class="content-side padding-15-v">
                             <div class="portlet-success padding-15 rounded shadow">
                                 <button class="portlet-close icon icon-xs icon-remove ease-opacity"></button>
                                 <h4>Title</h4>
@@ -1653,10 +1696,10 @@
                     </div>
 
                 </div>
-                <div class="col-6">
+                <div class="col-6 padding-30">
 
-                    <div class="portlet rounded shadow">
-                        <div class="content-side padding-15 bottom-bordered">
+                    <div class="portlet rounded">
+                        <div class="content-side padding-15-v">
                             <h4>Forms</h4>
                         </div>
                         <div class="content-side padding-10 bottom-bordered">
@@ -2184,10 +2227,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="content-side padding-15 bottom-bordered">
+                        <div class="content-side padding-15-v">
                             <h4>Large Forms</h4>
                         </div>
-                        <div class="content-side padding-15 bottom-bordered">
+                        <div class="content-side padding-15-v">
                             <label for="fullname" class="form-label">Full Name</label>
                             <div class="text text-lg dual-bordered rounded ease-form">
                                 <input id="fullname" type="text" placeholder="Enter name">
@@ -2206,7 +2249,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="content-side padding-15 bottom-bordered light-bordered">
+                        <div class="content-side padding-15-v light-bordered">
                             <h4>Autocomplete Form</h4>
                         </div>
                         <div class="content-side padding-5">
@@ -2223,7 +2266,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="content-side padding-15 ver-bordered light-bordered">
+                        <div class="content-side padding-15-v light-bordered">
                             <h4>Autocomplete Form with Sending Values</h4>
                         </div>
                         <div class="content-side padding-5">
@@ -2264,7 +2307,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="content-side padding-15 ver-bordered light-bordered">
+                        <div class="content-side padding-15-v light-bordered">
                             <h4>Autocomplete Form with Pulling Values</h4>
                         </div>
                         <div class="content-side padding-5">
@@ -2303,8 +2346,8 @@
                         </div>
                     </div>
 
-                    <div class="portlet rounded shadow">
-                        <div class="content-side padding-15 bottom-bordered">
+                    <div class="portlet rounded">
+                        <div class="content-side padding-15-v">
                             <h4>Notifier Icons</h4>
                         </div>
                         <div class="content-side padding-30 align-center bottom-bordered">
@@ -2344,50 +2387,16 @@
 
             </div>
 
-            <!-- sidebar -->
-            <div class="static-250 hidden-md theme-gray ui-light add-mobile-menu-right align-left">
-                <h4 class="margin-10">Example Pages</h4>
-                <ul class="list-unstyled list-spacer-1 margin-5-b ease-2nd-bg">
-                    <li><a class="btn btn-lg btn-block icon-inline inline-right icon-xs icon-angle-right" href="sign-in.html">Sign In Page</a></li>
-                    <li><a class="btn btn-lg btn-block icon-inline inline-right icon-xs icon-angle-right" href="sign-up.html">Sign Up Page</a></li>
-                </ul>
-                <h4 class="margin-10">Components</h4>
-                <ul class="list-unstyled list-spacer-1 margin-5-b ease-2nd-bg">
-                    <li><a class="btn btn-lg btn-block icon-inline inline-right icon-xs icon-angle-right" href="carousel.html">Carousel</a></li>
-                    <li><a class="btn btn-lg btn-block icon-inline inline-right icon-xs icon-angle-right" href="photo-gallery.html">Photo Gallery</a></li>
-                    <li><a class="btn btn-lg btn-block icon-inline inline-right icon-xs icon-angle-right" href="photo-slider.html">Photo Slider</a></li>
-                    <li><a class="btn btn-lg btn-block icon-inline inline-right icon-xs icon-angle-right" href="news-slider.html">News Slider</a></li>
-                    <li><a class="btn btn-lg btn-block icon-inline inline-right icon-xs icon-angle-right" href="events-calendar.html">Events Calendar</a></li>
-                    <li><a class="btn btn-lg btn-block icon-inline inline-right icon-xs icon-angle-right" href="svg-donut-chart.html">SVG Donut Chart</a></li>
-                    <li><a class="btn btn-lg btn-block icon-inline inline-right icon-xs icon-angle-right" href="svg-map.html">SVG Map</a></li>
-                    <li><a class="btn btn-lg btn-block icon-inline inline-right icon-xs icon-angle-right" href="countdown.html">Countdown</a></li>
-                    <li><a class="btn btn-lg btn-block icon-inline inline-right icon-xs icon-angle-right" href="steps.html">Steps</a></li>
-                    <li><a class="btn btn-lg btn-block icon-inline inline-right icon-xs icon-angle-right" href="custom-tables.html">Custom Tables</a></li>
-                </ul>
-                <h4 class="margin-10">Javascript</h4>
-                <ul class="list-unstyled list-spacer-1 margin-5-b ease-2nd-bg">
-                    <li><a class="btn btn-lg btn-block icon-inline inline-right icon-xs icon-angle-right" href="selector.js/index.html">Selector JS</a></li>
-                    <li><a class="btn btn-lg btn-block icon-inline inline-right icon-xs icon-angle-right" href="events.js/index.html">Events JS</a></li>
-                    <li><a class="btn btn-lg btn-block icon-inline inline-right icon-xs icon-angle-right" href="useragents.js/index.html">User Agents JS</a></li>
-                    <!--<li><a class="btn btn-lg btn-block icon-inline inline-right icon-xs icon-angle-right" href="orientation.js/index.html">Orientation JS</a></li>-->
-                    <!--<li><a class="btn btn-lg btn-block icon-inline inline-right icon-xs icon-angle-right" href="ajax.js/index.html">Ajax JS</a></li>-->
-                </ul>
-                <h4 class="margin-10">Links</h4>
-                <ul class="list-unstyled list-spacer-1 ease-2nd-bg">
-                    <li><a class="btn btn-lg btn-block icon-inline inline-right icon-xs icon-angle-right" href="https://github.com/ahmeteminyuce/UILab">UI Lab Github</a></li>
-                    <li><a class="btn btn-lg btn-block icon-inline inline-right icon-xs icon-angle-right" href="https://github.com/ahmeteminyuce/UIIcons">UI Icons Github</a></li>
-                </ul>
-            </div>
         </div>
     </main>
 
     <!-- mobile menu -->
-    <div class="mobile-menu show-right visible-md theme-blue ui-dark ease-layout ease-in-out">
-        <button title="Kapat" class="btn no-padding-h btn-lg btn-invisible ease-bg close-mobile-menu"><i class="icon icon-lg icon-remove no-opacity"></i></button>
-        <div class="mobile-menu-title bottom-bordered">
-            <b class="large">UI Lab</b><br>CSS and JavaScript Tools.
+    <div class="mobile-menu show-right visible-md theme-gray ui-x-light ease-layout ease-in-out">
+        <button title="Kapat" class="btn no-padding-h btn-lg btn-invisible rounded ease-bg close-mobile-menu"><i class="icon icon-lg icon-remove no-opacity"></i></button>
+        <div class="mobile-menu-title sm-align-center ui-light">
+            <a title="UI Lab: CSS and JavaScript Tools" href="examples.html"><img class="retina" src="images/uilab-logo-dark.png" height="42" alt=""></a>
         </div>
-        <div class="mobile-menu-content align-left v-scroll"></div>
+        <div class="mobile-menu-content padding-25-v no-padding-h align-left sm-align-center v-scroll"></div>
     </div>
 
 </body>

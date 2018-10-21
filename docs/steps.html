@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="../css/icons.css" />
     <link rel="stylesheet" href="../css/margins.css" />
     <link rel="stylesheet" href="../css/paddings.css" />
-    <link rel="stylesheet" href="../css/portlets.css" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/sticky-header.css" />
     <link rel="stylesheet" href="../css/transitions.css" />
@@ -41,21 +40,17 @@
     <!-- font icons CSS -->
     <link rel="stylesheet" href="../../UIIcons/font-icons/outline/font-icons.css" />
 
-    <!-- custom CSS -->
-    <style>
-        body { background-color: #f9f9f9; }
-        header { min-height: 64px; }
-    </style>
-
 </head>
 
 <body>
 
     <!-- header -->
-    <header class="container no-gutter theme-blue ui-dark">
-        <div class="col-12">
-            <a href="examples.html" class="btn btn-lg no-padding-h circle ease-bg margin-10-r"><i class="icon icon-md no-opacity icon-angle-left"></i></a>
-            <span class="inline-block x-large align-middle">UI Lab, Steps</span>
+    <header class="container theme-default ui-dark">
+        <div class="row theme-default2 ui-border top-bordered dual-bordered">
+            <div class="col-12">
+                <a href="examples.html" class="btn btn-lg no-padding-h circle ease-bg margin-10-r"><i class="icon icon-md no-opacity icon-angle-left"></i></a>
+                <span class="inline-block x-large align-middle">UI Lab, Steps</span>
+            </div>
         </div>
     </header>
 
@@ -63,80 +58,78 @@
     <main class="container no-gutter">
         <div class="fixed">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 padding-30">
 
-                    <div class="portlet rounded shadow">
-                        <div class="content-side padding-30 bottom-bordered">
-                            <ul class="steps-bar steps-bar-column-3">
-                                <li class="active">Step Name Here</li>
-                                <li>Step Name Here</li>
-                                <li>Step Name Here</li>
-                            </ul>
-                            <span class="sp5"></span>
-                            <ul class="steps-bar steps-bar-column-3 theme-yellow ui-text">
-                                <li>Step Name Here</li>
-                                <li class="active">Step Name Here</li>
-                                <li>Step Name Here</li>
-                            </ul>
-                        </div>
+                    <div class="padding-30-b">
+                        <ul class="steps-bar steps-bar-column-3">
+                            <li class="active">Step Name Here</li>
+                            <li>Step Name Here</li>
+                            <li>Step Name Here</li>
+                        </ul>
+                        <span class="sp5"></span>
+                        <ul class="steps-bar steps-bar-column-3 theme-yellow ui-text">
+                            <li>Step Name Here</li>
+                            <li class="active">Step Name Here</li>
+                            <li>Step Name Here</li>
+                        </ul>
+                    </div>
 
-                        <div class="content-side padding-30 bottom-bordered">
-                            <ul class="steps-bar steps-bar-column-5">
-                                <li>Step Name Here</li>
-                                <li>Step Name Here</li>
-                                <li class="active">Step Name Here</li>
-                                <li>Step Name Here</li>
-                                <li>Step Name Here</li>
-                            </ul>
-                            <span class="sp5"></span>
-                            <ul class="steps-bar steps-bar-column-5 theme-orange ui-text">
-                                <li>Step Name Here</li>
-                                <li>Step Name Here</li>
-                                <li>Step Name Here</li>
-                                <li class="active">Step Name Here</li>
-                                <li>Step Name Here</li>
-                            </ul>
-                        </div>
+                    <div class="padding-30-v">
+                        <ul class="steps-bar steps-bar-column-5">
+                            <li>Step Name Here</li>
+                            <li>Step Name Here</li>
+                            <li class="active">Step Name Here</li>
+                            <li>Step Name Here</li>
+                            <li>Step Name Here</li>
+                        </ul>
+                        <span class="sp5"></span>
+                        <ul class="steps-bar steps-bar-column-5 theme-orange ui-text">
+                            <li>Step Name Here</li>
+                            <li>Step Name Here</li>
+                            <li>Step Name Here</li>
+                            <li class="active">Step Name Here</li>
+                            <li>Step Name Here</li>
+                        </ul>
+                    </div>
 
-                        <div class="content-side padding-30">
-                            <ul class="steps-bar steps-bar-column-4">
-                                <li>
-                                    <i class="icon icon-tick icon-md"></i>
-                                    Step Name Here
-                                </li>
-                                <li class="active">
-                                    <i class="icon icon-tick icon-md"></i>
-                                    Step Name Here
-                                </li>
-                                <li>
-                                    <i class="icon icon-user icon-md"></i>
-                                    Step Name Here
-                                </li>
-                                <li>
-                                    <i class="icon icon-marker icon-md"></i>
-                                    Step Name Here
-                                </li>
-                            </ul>
-                            <span class="sp5"></span>
-                            <ul class="steps-bar steps-bar-column-4 steps-icon">
-                                <li>
-                                    <i class="icon icon-tick icon-md"></i>
-                                    Step Name Here
-                                </li>
-                                <li class="active">
-                                    <i class="icon icon-tick icon-md"></i>
-                                    Step Name Here
-                                </li>
-                                <li>
-                                    <i class="icon icon-user icon-md"></i>
-                                    Step Name Here
-                                </li>
-                                <li>
-                                    <i class="icon icon-marker icon-md"></i>
-                                    Step Name Here
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="padding-30-t">
+                        <ul class="steps-bar steps-bar-column-4">
+                            <li>
+                                <i class="icon icon-tick icon-md"></i>
+                                Step Name Here
+                            </li>
+                            <li class="active">
+                                <i class="icon icon-tick icon-md"></i>
+                                Step Name Here
+                            </li>
+                            <li>
+                                <i class="icon icon-user icon-md"></i>
+                                Step Name Here
+                            </li>
+                            <li>
+                                <i class="icon icon-marker icon-md"></i>
+                                Step Name Here
+                            </li>
+                        </ul>
+                        <span class="sp5"></span>
+                        <ul class="steps-bar steps-bar-column-4 steps-icon">
+                            <li>
+                                <i class="icon icon-tick icon-md"></i>
+                                Step Name Here
+                            </li>
+                            <li class="active">
+                                <i class="icon icon-tick icon-md"></i>
+                                Step Name Here
+                            </li>
+                            <li>
+                                <i class="icon icon-user icon-md"></i>
+                                Step Name Here
+                            </li>
+                            <li>
+                                <i class="icon icon-marker icon-md"></i>
+                                Step Name Here
+                            </li>
+                        </ul>
                     </div>
 
                 </div>
