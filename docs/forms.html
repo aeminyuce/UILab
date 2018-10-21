@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UI Lab, Forms</title>
+    <meta name="keywords" content="uilab, responsive, design system, css, javascript, forms">
+    <meta name="description" content="CSS & JavaScript powered responsive design system." />
+    <meta name="author" content="Ahmet Emin Yüce"/>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
+
+    <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/buttons.css" />
+    <link rel="stylesheet" href="../css/borders.css" />
+    <link rel="stylesheet" href="../css/dropdown.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/helpers.css" />
+    <link rel="stylesheet" href="../css/icons.css" />
+    <link rel="stylesheet" href="../css/margins.css" />
+    <link rel="stylesheet" href="../css/paddings.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/static-grid.css" />
+    <link rel="stylesheet" href="../css/sticky-header.css" />
+    <link rel="stylesheet" href="../css/transitions.css" />
+    <link rel="stylesheet" href="../css/typography.css" />
+    <link rel="stylesheet" href="../css/swatches.css" />
+    <link rel="stylesheet" href="../css/top-button.css" />
+
+    <link rel="stylesheet" href="../css/android-multi-select.css" />
+    <link rel="stylesheet" href="../css/autocomplete.css" />
+    <link rel="stylesheet" href="../css/custom-forms.css" />
+    <link rel="stylesheet" href="../css/dropdown.css" />
+    <link rel="stylesheet" href="../css/file-input.css" />
+    <link rel="stylesheet" href="../css/form-holder.css" />
+    <link rel="stylesheet" href="../css/form-icons.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <link rel="stylesheet" href="../css/ie9-placeholders.css" />
+    <link rel="stylesheet" href="../css/textarea-counter.css" />
+
+    <!-- Javascript Tools -->
+    <script src="../js/selector.js"></script>
+    <script src="../js/events.js"></script>
+    <script src="../js/sticky-header.js"></script>
+    <script src="../js/static-grid.js"></script>
+    <script src="../js/top-button.js"></script>
+    <script src="../js/transitions.js"></script>
+    <script src="../js/user-agents.js"></script>
+
+    <script src="../js/ajax.js"></script>
+    <script src="../js/android-multi-select.js"></script>
+    <script src="../js/autocomplete.js"></script>
+    <script src="../js/currency-spinner.js"></script>
+    <script src="../js/file-input.js"></script>
+    <script src="../js/form-icons.js"></script>
+    <script src="../js/forms.js"></script>
+    <script src="../js/ie9-placeholders.js"></script>
+    <script src="../js/indeterminate.js"></script>
+    <script src="../js/number.js"></script>
+    <script src="../js/form-spinner.js"></script>
+    <script src="../js/textarea-counter.js"></script>
+    <script src="../js/toggle-password.js"></script>
+    <script src="../js/toggle-textarea.js"></script>
+
+    <!-- font icons CSS -->
+    <link rel="stylesheet" href="../../UIIcons/font-icons/outline/font-icons.css" />
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="container theme-default ui-dark">
+        <div class="row theme-default2 ui-border top-bordered dual-bordered">
+            <div class="col-12">
+                <a href="examples.html" class="btn btn-lg no-padding-h circle ease-bg margin-10-r"><i class="icon icon-md no-opacity icon-angle-left"></i></a>
+                <h1 class="x-large inline-block">UI Lab, Forms</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- documentation examples -->
+    <main class="container no-gutter">
+        <div class="fixed">
+            <div class="row">
+                <div class="col-12 padding-30">
+
+                    <h4>Forms</h4>
+                    <div class="row padding-30-b">
+                        <div class="col-4">
+                            <label class="form-grid" for="form01">Label</label>
+                        </div>
+                        <div class="col-8">
+                            <div class="text form-disabled rounded dual-bordered ease-form">
+                                <input id="form01" type="text" disabled value="123456">
+                            </div>
+                            <p class="hint">Lorem ipsum dolor sit amet.</p>
+                        </div>
+
+                        <div class="col-4">
+                            <label class="form-grid" for="form2">Error Form</label>
+                        </div>
+                        <div class="col-8">
+                            <div class="text rounded dual-bordered ease-form theme-red ui-border">
+                                <input id="form2" type="text" value="123456">
+                            </div>
+                            <p class="hint theme-red ui-text">Your message is here.</p>
+                        </div>
+
+                        <div class="col-4">
+                            <label class="form-grid" for="form3">Warning Form</label>
+                        </div>
+                        <div class="col-8">
+                            <div class="text rounded dual-bordered ease-form theme-yellow ui-border">
+                                <input id="form3" type="text" value="123456">
+                            </div>
+                            <p class="hint theme-yellow ui-text">Your message is here.</p>
+                        </div>
+
+                        <div class="col-4">
+                            <label class="form-grid" for="form4">Confirmed Form</label>
+                        </div>
+                        <div class="col-8">
+                            <div class="text rounded dual-bordered ease-form theme-green ui-border">
+                                <input id="form4" type="text" value="123456">
+                            </div>
+                            <p class="hint theme-green ui-text">Your message is here.</p>
+                        </div>
+
+                        <div class="col-4">
+                            <label class="form-grid" for="form04">Toggle Password</label>
+                        </div>
+                        <div class="col-8">
+                            <div class="row row-no-padding-ver">
+                                <div class="col-6 no-responsive">
+                                    <label class="form-label" for="form03">Label</label>
+                                </div>
+                                <div class="col-6 no-responsive align-right">
+                                    <a data-id="my-password" class="btn toggle-password btn-xs btn-invisible dark rounded ease-bg">Show/Hide password with id</a>
+                                </div>
+                            </div>
+                            <div class="text text-icon rounded dual-bordered ease-form">
+                                <input id="my-password" type="password" placeholder="Toggle Password with Text Icon">
+                            </div>
+                            <span class="sp5"></span>
+                            <div class="text text-icon rounded dual-bordered ease-form">
+                                <span title="Show/Hide Password" class="toggle-password icon icon-md icon-eye ease-opacity"></span>
+                                <input type="password" placeholder="Toggle Password Example">
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <label class="form-grid" for="form04">Spinner Form</label>
+                        </div>
+                        <div class="col-8">
+                            <label class="form-label" for="spinnerinput">Form Label</label>
+                            <div class="form-holder form-spinner">
+                                <div class="row row-no-padding show-gutter">
+                                    <div class="col-static no-responsive">
+                                        <div class="row row-no-padding">
+                                            <div class="col-12">
+                                                <div class="text rounded dual-bordered ease-form">
+                                                    <input id="spinnerinput" type="text" value="3" min="2" max="5" class="number align-right">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="static-32">
+                                            <button class="btn spinner-down no-padding-h bordered dual-bordered rounded ease-all"><i class="icon icon-sm icon-minus"></i></button>
+                                        </div>
+                                        <div class="static-32">
+                                            <button class="btn spinner-up no-padding-h bordered dual-bordered rounded ease-all"><i class="icon icon-sm icon-plus"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <label class="form-grid" for="form04">Currency Spinner</label>
+                        </div>
+                        <div class="col-8">
+                            <form action="#">
+                                <div class="form-holder currency-spinner">
+                                    <div class="row row-no-padding show-gutter">
+                                        <div class="col-static no-responsive">
+                                            <div class="static-32">
+                                                <button class="currency-down btn no-padding-h bordered dual-bordered rounded ease-all"><i class="icon icon-sm icon-minus"></i></button>
+                                            </div>
+                                            <div class="row row-no-padding">
+                                                <div class="col-12">
+                                                    <div class="text rounded dual-bordered ease-form">
+                                                        <input type="text" value="645.000,50" min="645.000,50" step="5.000,25" maxlength="12" autocomplete="off">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="static-32">
+                                                <button class="currency-up btn no-padding-h bordered dual-bordered rounded ease-all"><i class="icon icon-sm icon-plus"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-4">
+                            <label class="form-grid" for="form04">Keypad</label>
+                        </div>
+                        <div class="col-8">
+                            <label class="form-label" for="creditcard">Credit Card Number</label>
+                            <div class="form-holder">
+                                <div class="row row-no-padding show-gutter align-center ease-2nd-form">
+                                    <div class="col-3 no-responsive">
+                                        <div class="text rounded dual-bordered">
+                                            <input id="creditcard" maxlength="4" type="text" class="number">
+                                        </div>
+                                    </div>
+                                    <div class="col-3 no-responsive">
+                                        <div class="text rounded dual-bordered">
+                                            <input maxlength="4" type="text" class="number">
+                                        </div>
+                                    </div>
+                                    <div class="col-3 no-responsive">
+                                        <div class="text rounded dual-bordered">
+                                            <input maxlength="4" type="text" class="number">
+                                        </div>
+                                    </div>
+                                    <div class="col-3 no-responsive">
+                                        <div class="text rounded dual-bordered">
+                                            <input maxlength="4" type="text" class="number">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="sp5"></span>
+                            <label class="form-label" for="cvv2">CVV2</label>
+                            <span class="clearfix"></span>
+                            <div class="text form-inline rounded dual-bordered ease-form">
+                                <input id="cvv2" type="text" maxlength="3" class="number align-center">
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">Form Label</label>
+                            <div class="form-holder">
+                                <div class="row row-no-padding show-gutter">
+
+                                    <div class="col-5 no-responsive">
+                                        <div class="text rounded dual-bordered ease-form">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-2 no-responsive">
+                                        <div class="select rounded dual-bordered ease-form">
+                                            <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                                            <select>
+                                                <option value="1">%18</option>
+                                                <option value="2">Second option</option>
+                                                <option value="3">Third option</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 no-responsive">
+                                        <div class="text rounded dual-bordered ease-form">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">Form Label</label>
+                            <div class="form-holder">
+                                <div class="row row-no-padding show-gutter">
+                                    <div class="col-static no-responsive">
+                                        <div class="row row-no-padding">
+                                            <div class="col-12">
+                                                <div class="text rounded dual-bordered ease-form">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="static-100">
+                                            <div class="select rounded dual-bordered ease-form">
+                                                <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                                                <select>
+                                                    <option value="1">%18</option>
+                                                    <option value="2">Second option</option>
+                                                    <option value="3">Third option</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row row-no-padding">
+                                            <div class="col-12">
+                                                <div class="text rounded dual-bordered ease-form">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-holder">
+                                <label class="form-label">Form Label</label>
+                                <div class="row row-no-padding show-gutter">
+                                    <div class="col-5 no-responsive">
+                                        <div class="text rounded dual-bordered ease-form">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-2 no-responsive">
+                                        <div class="select rounded dual-bordered ease-form">
+                                            <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                                            <select>
+                                                <option value="1">%18</option>
+                                                <option value="2">Second option</option>
+                                                <option value="3">Third option</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 no-responsive">
+                                        <div class="text rounded dual-bordered ease-form">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label">Form Label</label>
+                            <div class="form-holder">
+                                <div class="row row-no-padding show-gutter">
+                                    <div class="col-static no-responsive">
+                                        <div class="static-100">
+                                            <div class="select rounded dual-bordered ease-form">
+                                                <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                                                <select>
+                                                    <option value="1">%18</option>
+                                                    <option value="2">Second option</option>
+                                                    <option value="3">Third option</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row row-no-padding">
+                                            <div class="col-12">
+                                                <div class="text rounded dual-bordered ease-form">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row row-no-padding">
+                                            <div class="col-12">
+                                                <div class="text rounded dual-bordered ease-form">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label">Form Label</label>
+                            <div class="form-holder">
+                                <div class="row row-no-padding show-gutter">
+                                    <div class="col-static no-responsive">
+                                        <div class="row row-no-padding">
+                                            <div class="col-12">
+                                                <div class="text rounded dual-bordered ease-form">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row row-no-padding">
+                                            <div class="col-12">
+                                                <div class="text rounded dual-bordered ease-form">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="static-100">
+                                            <div class="select rounded dual-bordered ease-form">
+                                                <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                                                <select>
+                                                    <option value="1">%18</option>
+                                                    <option value="2">Second option</option>
+                                                    <option value="3">Third option</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                             <div class="row row-no-padding-ver">
+                                 <div class="col-6 no-responsive">
+                                     <label class="form-label" for="form5">Label</label>
+                                 </div>
+                                 <div class="col-6 no-responsive align-right">
+                                    <a class="small dark link-default ease-link" href="#">Top Right Link</a>
+                                 </div>
+                             </div>
+                             <div class="text margin-5-b rounded dual-bordered ease-form">
+                                 <input id="form5" type="text">
+                             </div>
+                             <div class="row row-no-padding-ver">
+                                 <div class="col-6 no-responsive">
+                                     <label class="form-label" for="form6">Label</label>
+                                 </div>
+                                 <div class="col-6 no-responsive align-right">
+                                    <a class="btn btn-xs btn-invisible dark rounded ease-bg">Button</a>
+                                 </div>
+                             </div>
+                             <div class="text margin-5-b rounded dual-bordered ease-form">
+                                 <input id="form6" type="text">
+                             </div>
+                             <div class="row row-no-padding-ver">
+                                 <div class="col-6 no-responsive">
+                                     <label class="form-label" for="form7">Label</label>
+                                 </div>
+                                 <div class="col-6 no-responsive align-right">
+                                    <div class="dropdown">
+                                        <button class="btn btn-xs btn-invisible dark rounded ease-bg">Dropdown Button <i class="icon-toggle icon icon-xxs margin-2-l icon-angle-down"></i></button>
+                                        <ul class="bordered dual-bordered rounded shadow ease-dropdown">
+                                            <li><a href="#">Dropdown Link</a></li>
+                                            <li><a href="#">Dropdown Link</a></li>
+                                            <li><a href="#">Dropdown Link</a></li>
+                                            <li><a href="#">Dropdown Link</a></li>
+                                            <li><a href="#">Dropdown Link</a></li>
+                                        </ul>
+                                    </div>
+                                 </div>
+                             </div>
+                             <div class="text margin-5-b rounded dual-bordered ease-form">
+                                 <input id="form7" type="text">
+                             </div>
+                             <label class="form-label" for="form8">Label</label>
+                             <div class="text margin-5-b rounded dual-bordered ease-form">
+                                 <input id="form8" type="text">
+                             </div>
+                             <div class="text margin-5-b rounded dual-bordered ease-form">
+                                 <input type="text">
+                             </div>
+                             <div class="text margin-5-b rounded dual-bordered ease-form">
+                                 <input class="number" type="text" placeholder="Number">
+                             </div>
+                             <div class="text margin-5-b rounded dual-bordered ease-form">
+                                 <input type="text" placeholder="Placeholder Text">
+                             </div>
+                             <form action="#succesfull">
+                                 <div class="text text-icon submit-enter text-icon-left margin-5-b rounded dual-bordered ease-form">
+                                     <button type="submit" class="submit-icon icon icon-sm icon-search ease-opacity"></button>
+                                     <input type="text" placeholder="Placeholder Text">
+                                 </div>
+                                 <div class="text text-icon submit-enter text-icon-right margin-5-b rounded dual-bordered ease-form">
+                                     <button type="submit" class="submit-icon icon icon-sm icon-search ease-opacity"></button>
+                                     <input type="text" placeholder="Placeholder Text">
+                                 </div>
+                                 <div class="text text-icon submit-enter text-icon-both margin-5-b rounded dual-bordered ease-form">
+                                     <i class="icon text-icon-left icon-sm icon-search ease-opacity"></i>
+                                     <i class="icon text-icon-right icon-sm icon-angle-right ease-opacity"></i>
+                                     <input type="text" placeholder="icon-sm">
+                                 </div>
+                                <div class="text text-icon text-icon-md submit-enter text-icon-both margin-5-b rounded dual-bordered ease-form">
+                                     <i class="icon text-icon-left icon-md icon-search ease-opacity"></i>
+                                     <i class="icon text-icon-right icon-md icon-angle-right ease-opacity"></i>
+                                     <input type="text" placeholder="icon-md">
+                                </div>
+                                <div class="text text-icon text-icon-lg submit-enter text-icon-both margin-5-b rounded dual-bordered ease-form">
+                                     <i class="icon text-icon-left icon-lg icon-search ease-opacity"></i>
+                                     <i class="icon text-icon-right icon-lg icon-angle-right ease-opacity"></i>
+                                     <input type="text" placeholder="icon-lg">
+                                 </div>
+                             </form>
+                             <div class="padding-15 margin-5-b theme-default2 ui-dark">
+
+                                 <div class="text form-light margin-5-b rounded dual-bordered ease-form">
+                                     <input type="text" placeholder=".form-light in dark swatch">
+                                 </div>
+                                 <div class="text text-icon margin-5-b form-light rounded dual-bordered ease-form">
+                                     <i class="icon icon-sm icon-search ease-opacity"></i>
+                                     <input type="text" placeholder="Placeholder Text">
+                                 </div>
+
+                             </div>
+                             <div class="select margin-5-b rounded dual-bordered ease-form">
+                                 <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                                 <select>
+                                     <option value="0">Select</option>
+                                     <option value="1">Value 1</option>
+                                     <option value="2">Value 2</option>
+                                 </select>
+                             </div>
+                             <div class="select margin-5-b rounded dual-bordered ease-form">
+                                 <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                                 <select>
+                                     <optgroup label="Title">
+                                         <option value="0">Select</option>
+                                         <option value="1">Value 1</option>
+                                         <option value="2">Value 2</option>
+                                     </optgroup>
+                                     <optgroup label="Title">
+                                         <option value="3">Value 3</option>
+                                         <option value="4">Value 4</option>
+                                         <option value="5">Value 5</option>
+                                     </optgroup>
+                                 </select>
+                             </div>
+                             <div class="select-multi margin-5-b rounded dual-bordered ease-form">
+                                 <select multiple size="6">
+                                         <option value="1">Value 1</option>
+                                         <option value="2">Value 2</option>
+                                         <option value="3">Value 3</option>
+                                         <option value="4">Value 4</option>
+                                         <option value="5">Value 5</option>
+                                         <option value="6">Value 6</option>
+                                         <option value="7">Value 7</option>
+                                         <option value="8">Value 8</option>
+                                         <option value="9">Value 9</option>
+                                         <option value="10">Value 10</option>
+                                 </select>
+                             </div>
+                             <div class="select-multi margin-5-b rounded dual-bordered ease-form">
+                                 <select multiple size="6">
+                                     <optgroup label="Title">
+                                         <option value="0">Select</option>
+                                         <option value="1">Value 1</option>
+                                         <option value="2">Value 2</option>
+                                     </optgroup>
+                                     <optgroup label="Title">
+                                         <option value="3">Value 3</option>
+                                         <option value="4">Value 4</option>
+                                         <option value="5">Value 5</option>
+                                     </optgroup>
+                                 </select>
+                             </div>
+                             <div class="file margin-5-b rounded dual-bordered ease-form">
+                                 <input type="file">
+                                 <div class="btn rounded ease-bg">Gözat</div>
+                                 <span>Dosya seçiniz.</span>
+                             </div>
+                             <div class="textarea margin-5-b rounded dual-bordered ease-form">
+                                 <textarea placeholder="Placeholder Text"></textarea>
+                             </div>
+                             <div class="textarea margin-5-b rounded dual-bordered ease-form" data-counter="255">
+                                 <textarea>Lorem ipsum dolor sit amet.</textarea>
+                             </div>
+                             <div>
+                                 <div class="check-custom rounded dual-bordered ease-form">
+                                     <input id="check-test" type="checkbox" checked>
+                                     <i class="icon ease-opacity"></i>
+                                 </div>
+                                 <label for="check-test" class="label-custom">Remember me</label>
+                            </div>
+                            <div>
+                                 <div class="check-custom rounded dual-bordered ease-form">
+                                     <input id="check-test2" type="checkbox" class="indeterminate">
+                                     <i class="icon ease-all"></i>
+                                 </div>
+                                 <label for="check-test2" class="label-custom">Indeterminate</label>
+                            </div>
+                            <div>
+                                 <div class="radio-custom dual-bordered ease-form">
+                                     <input id="radio-test1" type="radio" name="radiotest1" checked>
+                                     <i class="icon ease-opacity"></i>
+                                 </div>
+                                 <label for="radio-test1" class="label-custom">Radio1</label>
+
+                                 <div class="radio-custom dual-bordered ease-form">
+                                     <input id="radio-test2" type="radio" name="radiotest1">
+                                     <i class="icon ease-opacity"></i>
+                                 </div>
+                                 <label for="radio-test2" class="label-custom">Radio2</label>
+
+                                <div class="radio-custom dual-bordered ease-form">
+                                     <input id="radio-test3" type="radio" name="radiotest1">
+                                     <i class="icon ease-opacity"></i>
+                                 </div>
+                                 <label for="radio-test3" class="label-custom">Radio3</label>
+                             </div>
+                             <div>
+                                <div class="switch-custom dual-bordered ease-form">
+                                    <input id="switch-me" type="checkbox">
+                                    <i class="icon ease-form-custom"></i>
+                                </div>
+                                <label for="switch-me">Switch Me</label>
+                             </div>
+                             <div>
+                                <div class="switch-custom dual-bordered ease-form">
+                                    <input id="switch-me2" type="checkbox" class="indeterminate">
+                                    <i class="icon ease-form-custom"></i>
+                                </div>
+                                <label for="switch-me2">Indeterminate</label>
+                             </div>
+                             <label class="check">
+                                 <input type="checkbox"> Remember me
+                             </label>
+                             <label class="radio">
+                                 <input type="radio" name="radiotest2"> Radio1
+                             </label>
+                             <label class="radio">
+                                 <input type="radio" name="radiotest2"> Radio2
+                             </label>
+                             <label class="radio">
+                                 <input type="radio" name="radiotest2"> Radio3
+                             </label>
+                        </div>
+                    </div>
+
+                    <h4>Large Forms</h4>
+                    <div class="padding-30-b">
+                        <label for="fullname" class="form-label">Full Name</label>
+                        <div class="text text-lg dual-bordered rounded ease-form">
+                            <input id="fullname" type="text" placeholder="Enter name">
+                        </div>
+
+                        <span class="sp10"></span>
+
+                        <label for="age" class="form-label">Your Age</label>
+                        <div class="select select-lg rounded dual-bordered ease-form">
+                            <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                            <select id="age">
+                                <option value="0">Select your age</option>
+                                <option value="1">Under 20</option>
+                                <option value="2">21- 30</option>
+                                <option value="3">31 - 40</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <h4>Autocomplete Form</h4>
+                    <div class="padding-5">
+                        <div class="row row-md-padding-ver">
+                            <div class="col-8">
+                                <div data-src="dummy1.json" data-val="name" class="autocomplete text rounded dual-bordered ease-form">
+                                    <input type="text" placeholder="JSON example">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div data-src="search.php" data-val="name" class="autocomplete text rounded dual-bordered ease-form">
+                                    <input type="text" placeholder="PHP example">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Autocomplete Form with Sending Values</h4>
+                    <div class="padding-5">
+                        <div class="row row-md-padding-ver">
+                            <div class="col-12">
+                                <div class="autocompleteTarget check-custom rounded dual-bordered ease-form">
+                                    <input id="bankamiTarget" type="checkbox">
+                                    <i class="icon ease-opacity"></i>
+                                </div>
+                                <div class="autocompleteTarget radio-custom dual-bordered ease-form">
+                                     <input id="subemiTarget" type="radio">
+                                     <i class="icon ease-opacity"></i>
+                                </div>
+                                <div class="autocompleteTarget text form-inline rounded dual-bordered ease-form">
+                                    <input id="autocompleteTarget01" type="text" value="AKBANK">
+                                </div>
+                                <div class="autocompleteTarget select form-inline rounded dual-bordered ease-form">
+                                    <span class="icon icon-sm icon-angle-down ease-opacity"></span>
+                                    <select id="autocompleteTarget02">
+                                        <option>BAŞBURU BELGELERİ</option>
+                                        <option>RAPOR</option>
+                                        <option>TAKBİS</option>
+                                    </select>
+                                </div>
+                                <div class="autocompleteTarget textarea focus-multi form-inline rounded dual-bordered ease-form">
+                                    <textarea id="autocompleteTarget03">Açıklama Metni Burada</textarea>
+                                </div>
+                            </div>
+                            <div class="col-6 break-6">
+                                <div data-src="search.php" data-val="name" data-id="autocompleteTarget01" class="autocomplete text rounded dual-bordered ease-form">
+                                    <input type="text" placeholder="PHP example with sending data-id">
+                                </div>
+                            </div>
+                            <div class="col-6 break-6">
+                                <div data-src="search.php" data-val="name" data-class="autocompleteTarget" class="autocomplete text rounded dual-bordered ease-form">
+                                    <input type="text" placeholder="PHP example with sending data-class">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Autocomplete Form with Pulling Values</h4>
+                    <div class="padding-5">
+                        <div class="row row-md-padding-ver">
+                            <div class="col-12">
+                                <div class="check-custom rounded dual-bordered ease-form">
+                                    <input id="bankami" type="checkbox">
+                                    <i class="icon ease-opacity"></i>
+                                </div>
+                                <div class="radio-custom dual-bordered ease-form">
+                                     <input id="subemi" type="radio">
+                                     <i class="icon ease-opacity"></i>
+                                </div>
+                                <div class="text form-inline rounded dual-bordered ease-form">
+                                    <input id="bankaadi1" type="text" placeholder="Banka Adı">
+                                </div>
+                                <div class="select form-inline rounded dual-bordered ease-form">
+                                    <span class="icon icon-sm icon-angle-down ease-opacity"></span>
+                                    <select id="bankaadi2">
+                                        <option value="">Seçiniz</option>
+                                        <option value="AKBANK">AKBANK</option>
+                                        <option value="HALKBANK">HALKBANK</option>
+                                        <option value="İŞ BANKASI">İŞ BANKASI</option>
+                                    </select>
+                                </div>
+                                <div class="textarea focus-multi form-inline rounded dual-bordered ease-form">
+                                    <textarea id="bankaadi3"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-6 break-6">
+                                <div data-src="search.php" data-val="name" class="autocomplete autocomplete-pull text rounded dual-bordered ease-form">
+                                    <input type="text" placeholder="PHP example with pulling values">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
