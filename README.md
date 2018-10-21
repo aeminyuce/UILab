@@ -1,6 +1,6 @@
 # UI Lab
 
-CSS and JavaScript Tools.
+CSS & JavaScript powered responsive design system.
 * [Documentation Examples](https://ahmeteminyuce.github.io/UILab/docs/examples.html)
 
 ## Browser Support
