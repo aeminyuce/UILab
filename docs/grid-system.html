@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UI Lab, Grid System</title>
+    <meta name="keywords" content="uilab, responsive, design system, css, javascript, grid system">
+    <meta name="description" content="UI Lab CSS and JavaScript Tools." />
+    <meta name="author" content="Ahmet Emin Yüce"/>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
+
+    <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/alignments.css" />
+    <link rel="stylesheet" href="../css/buttons.css" />
+    <link rel="stylesheet" href="../css/borders.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/helpers.css" />
+    <link rel="stylesheet" href="../css/icons.css" />
+    <link rel="stylesheet" href="../css/margins.css" />
+    <link rel="stylesheet" href="../css/paddings.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/static-grid.css" />
+    <link rel="stylesheet" href="../css/sticky-header.css" />
+    <link rel="stylesheet" href="../css/transitions.css" />
+    <link rel="stylesheet" href="../css/typography.css" />
+    <link rel="stylesheet" href="../css/swatches.css" />
+    <link rel="stylesheet" href="../css/top-button.css" />
+
+    <link rel="stylesheet" href="../css/steps.css" />
+
+    <!-- Javascript Tools -->
+    <script src="../js/selector.js"></script>
+    <script src="../js/events.js"></script>
+    <script src="../js/static-grid.js"></script>
+    <script src="../js/sticky-header.js"></script>
+    <script src="../js/top-button.js"></script>
+
+    <!-- font icons CSS -->
+    <link rel="stylesheet" href="../../UIIcons/font-icons/outline/font-icons.css" />
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="container theme-default ui-dark">
+        <div class="row theme-default2 ui-border top-bordered dual-bordered">
+            <div class="col-12">
+                <a href="examples.html" class="btn btn-lg no-padding-h circle ease-bg margin-10-r"><i class="icon icon-md no-opacity icon-angle-left"></i></a>
+                <span class="inline-block x-large align-middle">UI Lab, Grid System</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- documentation examples -->
+    <main class="container no-gutter">
+        <div class="fixed">
+            <div class="row">
+                <div class="col-12 padding-30">
+
+                    <h4>Responsive Grid System</h4>
+                    <div class="padding-30-b theme-default2">
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="ui-x-light padding-15 rounded">.col-8</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="ui-x-light padding-15 rounded">.col-4</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="ui-x-light padding-15 rounded">.col-4</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="ui-x-light padding-15 rounded">.col-4</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="ui-x-light padding-15 rounded">.col-4</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="ui-x-light padding-15 rounded">.col-6</div>
+                            </div>
+                            <div class="col-6">
+                                <div class="ui-x-light padding-15 rounded">.col-6</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Static Grid</h4>
+                    <div class="padding-30-b theme-default2">
+                        <div class="row">
+                            <div class="col-static no-responsive">
+                               <div class="row">
+                                    <div class="col-6 no-responsive">
+                                        <div class="ui-x-light padding-15 rounded">.col-6 .no-responsive</div>
+                                    </div>
+                                    <div class="col-6 no-responsive">
+                                        <div class="ui-x-light padding-15 rounded">.col-6 .no-responsive</div>
+                                    </div>
+                                </div>
+                                <div class="static-250 padding-10 order-lg-first">
+                                    <div class="ui-light padding-15 rounded">.static-250 .no-responsive</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 no-responsive">
+                                        <div class="ui-x-light padding-15 rounded">.col-6 .no-responsive</div>
+                                    </div>
+                                    <div class="col-6 no-responsive">
+                                        <div class="ui-x-light padding-15 rounded">.col-6 .no-responsive</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-static no-responsive">
+                                <div class="static-250 padding-10 order-lg-last">
+                                    <div class="ui-light padding-15 rounded">.static-250 .no-responsive</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 no-responsive">
+                                        <div class="ui-x-light padding-15 rounded">.col-6 .no-responsive</div>
+                                    </div>
+                                    <div class="col-6 no-responsive">
+                                        <div class="ui-x-light padding-15 rounded">.col-6 .no-responsive</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-static no-responsive">
+                                <div class="static-250 padding-10 order-md-last">
+                                    <div class="ui-light padding-15 rounded">.static-250 .no-responsive</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 no-responsive">
+                                        <div class="ui-x-light padding-15 rounded">.col-6 .no-responsive</div>
+                                    </div>
+                                    <div class="col-6 no-responsive">
+                                        <div class="ui-x-light padding-15 rounded">.col-6 .no-responsive</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-static no-responsive">
+                                <div class="row">
+                                    <div class="col-6 no-responsive">
+                                        <div class="ui-x-light padding-15 rounded">.col-6 .no-responsive</div>
+                                    </div>
+                                    <div class="col-6 no-responsive">
+                                        <div class="ui-x-light padding-15 rounded">.col-6 .no-responsive</div>
+                                    </div>
+                                </div>
+                                <div class="static-250 padding-10 order-md-first">
+                                    <div class="ui-light padding-15 rounded">.static-250 .no-responsive</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-static">
+                                <div class="static-250 padding-10">
+                                    <div class="ui-light padding-15 rounded">.static-250</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="ui-x-light padding-15 rounded">.col-6</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="ui-x-light padding-15 rounded">.col-6</div>
+                                    </div>
+                                </div>
+                                <div class="static-250 padding-10">
+                                    <div class="ui-light padding-15 rounded">.static-250</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-static">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="ui-x-light padding-15 rounded">.col-6</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="ui-x-light padding-15 rounded">.col-6</div>
+                                    </div>
+                                </div>
+                                <div class="static-400 padding-10">
+                                    <div class="ui-x-light padding-15 rounded">.static-400</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="ui-x-light padding-15 rounded">.col-6</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="ui-x-light padding-15 rounded">.col-6</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>no-responsive Column Reset</h4>
+                    <div class="padding-30-b theme-default2">
+                        <div class="row">
+                            <div class="col-8 no-responsive">
+                                <div class="ui-x-light padding-15 rounded">.col-8 .no-responsive</div>
+                            </div>
+                            <div class="col-4 no-responsive">
+                                <div class="ui-x-light padding-15 rounded">.col-4 .no-responsive</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 no-responsive">
+                                <div class="ui-x-light padding-15 rounded">.col-4 .no-responsive</div>
+                            </div>
+                            <div class="col-4 no-responsive">
+                                <div class="ui-x-light padding-15 rounded">.col-4 .no-responsive</div>
+                            </div>
+                            <div class="col-4 no-responsive">
+                                <div class="ui-x-light padding-15 rounded">.col-4 .no-responsive</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>lg-responsive Column Reset</h4>
+                    <div class="padding-30-b theme-default2">
+                        <div class="row">
+                            <div class="col-8 lg-responsive">
+                                <div class="ui-x-light padding-15 rounded">.col-8 .lg-responsive</div>
+                            </div>
+                            <div class="col-4 lg-responsive">
+                                <div class="ui-x-light padding-15 rounded">.col-4 .lg-responsive</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>xs-responsive Column Reset</h4>
+                    <div class="padding-30-b theme-default2">
+                        <div class="row">
+                            <div class="col-8 xs-responsive">
+                                <div class="ui-x-light padding-15 rounded">.col-8 .xs-responsive</div>
+                            </div>
+                            <div class="col-4 xs-responsive">
+                                <div class="ui-x-light padding-15 rounded">.col-4 .xs-responsive</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 xs-responsive">
+                                <div class="ui-x-light padding-15 rounded">.col-4 .xs-responsive</div>
+                            </div>
+                            <div class="col-4 xs-responsive">
+                                <div class="ui-x-light padding-15 rounded">.col-4 .xs-responsive</div>
+                            </div>
+                            <div class="col-4 xs-responsive">
+                                <div class="ui-x-light padding-15 rounded">.col-4 .xs-responsive</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Column Wrapping</h4>
+                    <div class="padding-30-b theme-default2">
+                        <div class="row">
+                            <div class="col-3 break-9">
+                                <div class="ui-x-light padding-15 rounded">.col-3 .break-9</div>
+                            </div>
+                            <div class="col-9">
+                                <div class="ui-x-light padding-15 rounded">.col-9</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="ui-x-light padding-15 rounded">.col-4</div>
+                            </div>
+                            <div class="col-6">
+                                <div class="ui-x-light padding-15 rounded">.col-6</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Nesting Columns</h4>
+                    <div class="padding-30-b theme-default2">
+                        <div class="row">
+                            <div class="col-9 ui-x-light rounded">
+                                Level 1: .col-9
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="ui-light padding-15 rounded">level 2: .col-6</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="ui-light padding-15 rounded">level 2: .col-6</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Column Offsetting</h4>
+                    <div class="padding-30-b theme-default2">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="ui-x-light padding-15 rounded">.col-4</div>
+                            </div>
+                            <div class="col-4 offset-4">
+                                <div class="ui-x-light padding-15 rounded">.col-4 .offset-4</div>
+                            </div>
+                            <div class="col-3 offset-3">
+                                <div class="ui-x-light padding-15 rounded">.col-3 .offset-3</div>
+                            </div>
+                            <div class="col-3 offset-3">
+                                <div class="ui-x-light padding-15 rounded">.col-3 .offset-3</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Column Ordering</h4>
+                    <div class="padding-30-b theme-default2">
+                        <div class="row">
+                            <div class="col-9 push-3">
+                                <div class="ui-x-light padding-15 rounded">.col-9 .push-3</div>
+                            </div>
+                            <div class="col-3 pull-9">
+                                <div class="ui-x-light padding-15 rounded">.col-3 .pull-9</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
