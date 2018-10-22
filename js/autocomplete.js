@@ -6,7 +6,7 @@
 /*globals window, document, selector, events, ajax, clearTimeout, setTimeout */
 var autocomplete = {
 
-    classes : 'shadow-lg',
+    classes : 'bordered dual-bordered rounded shadow',
     customLetters : { "İ": "i", "I": "ı", "Ş": "ş", "Ğ": "ğ", "Ü": "ü", "Ö": "ö", "Ç": "ç" }
 
 };
@@ -14,15 +14,17 @@ var autocomplete = {
 function autocompleteFnc() {
 
     'use strict';
-    var eventsTarget, pullValues;
+    var eventsTarget, pullValues, readValues, customLowerCase;
 
     pullValues = [];
+    readValues = [];
+
     window.autocompetePool = [];
 
     // pull values
     function pullValuesFnc(selectedVal) {
 
-        var input, type, readValues = [], forend = false, i = 0, j = 0;
+        var input, type, forend = false, i = 0, j = 0;
 
         if (pullValues.length === 'undefined') {
             readValues = pullValues; // is object
@@ -63,18 +65,17 @@ function autocompleteFnc() {
     // custom lowercase
     (function () {
 
-        var k, re, chars = '(([', keys = Object.keys(autocomplete.customLetters);
+        var k, re, chars, keys;
 
-        for (k = 0; k < keys.length; k += 1) {
-            chars += keys[k];
-        }
+        keys = Object.keys(autocomplete.customLetters); // returns array
 
+        chars = '(([';
+        for (k = 0; k < keys.length; k += 1) { chars += keys[k]; }
         chars += ']))';
+
         re = new RegExp(chars, 'g');
 
-        String.prototype.customLowerCase = function () {
-
-            var string = this;
+        customLowerCase = function (string) {
 
             string = string.replace(/["'\[\]\{\}()]/g, '').replace(re, function (l) {
                 return autocomplete.customLetters[l];
@@ -91,7 +92,7 @@ function autocompleteFnc() {
 
     events.on(document, 'keyup', eventsTarget, function (e) {
 
-        var p, list, navEl, navElNext, v, vID, showLines, timerShowLines, offset, offsetTop, screenH, tHeight, dHeight, j, m, i, txt, getKeys, k, isGetVal, getVal, timerGetKeys, src, dataId, dataClass, send, input, type, dataName, dataID, n;
+        var i, j, k, n, p, list, listItems, navSelected, navSelectedNext, v, vID, key, createDropdown, timerShowLines, offset, offsetTop, screenH, tHeight, dHeight, m, txt, getVal, src, dataId, dataClass, send, input, type, dataName, dataID;
 
         p = this.parentNode;
         list = selector('ul', p);
@@ -101,183 +102,75 @@ function autocompleteFnc() {
             if (e.keyCode === 38 || e.keyCode === 40) {
 
                 // navigate the list
-                if (selector('li', list).length > 0) {
+                listItems = selector('li', list[0]);
+                if (listItems !== undefined) {
 
-                    navEl = selector('li.selected', list);
-                    if (navEl.length > 0) {
+                    if (listItems.length > 0) {
 
-                        if (e.keyCode === 38) {
+                        navSelected = selector('li.selected', list[0]);
+                        if (navSelected !== undefined) {
 
-                            // arrow up
-                            navElNext = navEl[0].previousElementSibling;
+                            if (navSelected.length === 0) {
 
-                            if (navElNext.length > 0) {
-                                events.addClass(navElNext, 'selected');
+                                if (e.keyCode === 40) { // arrow down
+                                    events.addClass(listItems[0], 'selected');
+                                }
 
-                            } else { return; }
+                            } else {
 
-                        } else if (e.keyCode === 40) {
+                                if (e.keyCode === 38) { // arrow up
 
-                            // arrow down
-                            navElNext = navEl[0].nextElementSibling;
+                                    navSelectedNext = navSelected.previousElementSibling;
 
-                            if (navElNext.length > 0) {
-                                events.addClass(navElNext, 'selected');
+                                    if (navSelectedNext !== null) {
+                                        events.addClass(navSelectedNext, 'selected');
 
-                            } else { return; }
+                                    } else { return; }
 
-                        }
+                                } else if (e.keyCode === 40) { // arrow down
 
-                        events.removeClass(navEl, 'selected');
+                                    navSelectedNext = navSelected.nextElementSibling;
 
-                    } else {
+                                    if (navSelectedNext !== null) {
+                                        events.addClass(navSelectedNext, 'selected');
 
-                        if (e.keyCode === 40) {
-                            events.addClass(selector('li', list)[0], 'selected'); // arrow down
+                                    } else { return; }
+
+                                }
+
+                                events.removeClass(navSelected, 'selected');
+
+                            }
+
+                            this.value = selector('li.selected', list).textContent;
+
                         }
 
                     }
 
-                    this.value = selector('li.selected', list)[0].textContent;
                 }
 
-            } else if (e.keyCode === 13) {
-                list.innerHTml = '';
+            } else if (e.keyCode === 13 || e.keyCode === 27) {
+
+                if (list.length >= 1) {
+                    list[0].innerHTML = '';
+                }
 
             } else if (e.keyCode !== 16 && e.keyCode !== 17 && e.keyCode !== 18) {
 
                 v = this.value;
 
-                v = v.customLowerCase();
+                v = customLowerCase(v);
                 v = v.replace(/\s+$/g, ''); // remove the last space
 
                 vID = this.getAttribute('id');
 
                 if (v !== '') {
 
-                    showLines = function (value) {
-
-                        function createDropdown() {
-
-                            // calculate the dropdown position
-                            clearTimeout(timerShowLines);
-                            timerShowLines = setTimeout(function () {
-
-                                offset = p.getBoundingClientRect();
-                                offsetTop = (offset.top - window.scrollTop());
-
-                                events.removeClass(p, 'submenu-top');
-
-                                screenH = selector(document)[0].offsetHeight;
-
-                                tHeight = p.offsetHeight;
-                                dHeight = list[0].offsetHeight;
-
-                                if (offsetTop + parseInt(tHeight + dHeight, 10) >= screenH) {
-
-                                    if (offsetTop - parseInt(tHeight + dHeight, 10) + tHeight > 0) {
-                                        events.addClass(p, 'submenu-top');
-
-                                    } else {
-                                        list.style.height = (dHeight - (offsetTop + parseInt(tHeight + dHeight, 10) - screenH) - 15) + 'px';
-                                    }
-
-                                }
-
-                            }, 10);
-
-                            // show max. number of lines: 5
-                            j += 1;
-                            if (j > 5) { return; }
-
-                        }
-
-                        if (typeof value === 'boolean') { return; } // booleans not supported!
-                        m = value;
-
-                        if (typeof value === 'number') {
-
-                            m = m.toString().match(v, 'g');
-                            if (m !== null) {
-
-                                createDropdown();
-
-                                // create lines
-                                txt = '';
-                                for (i = 0; i < value.toString().length; i += 1) {
-
-                                    if (i ===  value.toString().indexOf(m)) { txt += '<strong>'; }
-                                    if (i === (value.toString().indexOf(m) + v.length)) { txt += '</strong>'; }
-
-                                    txt += value.toString().charAt(i);
-                                }
-
-                                list[0].insertAdjacentHTML('afterbegin', '<li>' + txt + '</li>');
-
-                            }
-
-                        } else {
-
-                            m = m.customLowerCase().match(v, 'g');
-                            if (m !== null) {
-
-                                createDropdown();
-
-                                // create lines
-                                txt = '';
-                                for (i = 0; i < value.length; i += 1) {
-
-                                    if (i ===  value.customLowerCase().indexOf(m)) { txt += '<strong>'; }
-                                    if (i === (value.customLowerCase().indexOf(m) + v.length)) { txt += '</strong>'; }
-
-                                    txt += value.charAt(i);
-                                }
-
-                                list[0].insertAdjacentHTML('afterbegin', '<li>' + txt + '</li>');
-
-                            }
-                        }
-
-                    };
-
-                    getKeys = function (key, value) {
-
-                        if (isGetVal) {
-
-                            // get user defined key value
-                            if (key === getVal) {
-
-                                k += 1;
-                                showLines(value);
-
-                            }
-
-                            clearTimeout(timerGetKeys);
-                            timerGetKeys = setTimeout(function () {
-
-                                // detect the source have the value of "data-val" attribute
-                                if (k === 0) {
-                                    throw new Error('Autocomplete Alert: Source not have the value of "data-val" attribute!');
-                                }
-
-                            }, 10);
-
-                        } else {
-
-                            // get all key values
-                            showLines(value);
-
-                        }
-
-                        events.addClass(selector('ul', p), autocomplete.classes);
-
-                    };
-
-                    j = 0;
-                    k = 0;
-
                     src = p.getAttribute('data-src');
-                    if (src !== null) {
+                    getVal = p.getAttribute('data-val');
+
+                    if (src !== null && getVal !== null) {
 
                         // send values
                         dataId = p.getAttribute('id');
@@ -335,56 +228,122 @@ function autocompleteFnc() {
 
                             if (status === 'success') {
 
-                                list.innerHTML = '';
                                 response = JSON.parse(response);
+                                if (response.length !== 'undefined') {
 
-                                if (response.length === 'undefined') {
+                                    createDropdown = function () {
 
-                                    // is single object
+                                        // create dropdown
+                                        clearTimeout(timerShowLines);
+                                        timerShowLines = setTimeout(function () {
+
+                                            events.addClass(list, autocomplete.classes);
+
+                                            offset = p.getBoundingClientRect();
+                                            offsetTop = (offset.top - window.scrollTop);
+
+                                            events.removeClass(p, 'submenu-top');
+
+                                            screenH = selector(document)[0].offsetHeight;
+
+                                            tHeight = p.offsetHeight;
+                                            dHeight = list[0].offsetHeight;
+
+                                            if (offsetTop + parseInt(tHeight + dHeight, 10) >= screenH) {
+
+                                                if (offsetTop - parseInt(tHeight + dHeight, 10) + tHeight > 0) {
+                                                    events.addClass(p, 'submenu-top');
+
+                                                } else {
+                                                    list[0].style.height = (dHeight - (offsetTop + parseInt(tHeight + dHeight, 10) - screenH) - 15) + 'px';
+                                                }
+
+                                            }
+
+                                        }, 10);
+
+                                    };
+
+                                    k = 0;
+                                    list[0].innerHTML = '';
+
                                     for (i = 0; i < response.length; i += 1) {
 
-                                        for (j = 0; j < response[i].length; j += 1) {
-                                            getKeys(response[i], response[i][j]);
-                                        }
+                                        key = response[i][getVal];
+                                        txt = '';
 
+                                        if (key !== null) {
+
+                                            if (typeof key === 'boolean') { return; } // booleans not supported!
+                                            m = key;
+
+                                            if (typeof key === 'number') {
+                                                m = m.toString().match(v, 'g');
+
+                                            } else {
+
+                                                m = customLowerCase(m);
+                                                m = m.match(v, 'g');
+
+                                            }
+
+                                            if (m !== null) {
+
+                                                createDropdown();
+
+                                                // show max. number of lines: 5
+                                                k += 1;
+                                                if (k > 5) { return; }
+
+                                                // create lines
+                                                if (typeof key === 'number') {
+
+                                                    for (j = 0; j < key.toString().length; j += 1) {
+
+                                                        if (j ===  key.toString().indexOf(m)) { txt += '<strong>'; }
+                                                        if (j === (key.toString().indexOf(m) + v.length)) { txt += '</strong>'; }
+
+                                                        txt += key.toString().charAt(j);
+
+                                                    }
+
+                                                } else {
+
+                                                    for (j = 0; j < key.length; j += 1) {
+
+                                                        if (j === customLowerCase(key).indexOf(m)) { txt += '<strong>'; }
+                                                        if (j === (customLowerCase(key).indexOf(m) + v.length)) { txt += '</strong>'; }
+
+                                                        txt += key.charAt(j);
+
+                                                    }
+
+                                                }
+
+                                                list[0].insertAdjacentHTML('beforeend', '<li>' + txt + '</li>');
+
+                                            }
+
+                                        }
                                     }
 
                                 } else {
-
-                                    // is object group
-                                    for (i = 0; i < response.length; i += 1) {
-
-                                        for (j = 0; j < response[i].length; j += 1) {
-                                            getKeys(response[i], response[i][j]);
-                                        }
-
-                                    }
-
+                                    throw new Error('Autocomplete Alert: Source is not in correct JSON format!');
                                 }
 
                                 if (events.hasClass(p, 'autocomplete-pull')) {
                                     pullValues = response; // pull values
                                 }
 
-                            } else { // ajax fail
-                                throw new Error('Autocomplete Alert: Source is not in correct JSON format or not loaded!');
+                                response = '';
+
                             }
 
                         });
 
                     } else { return; }
 
-                    isGetVal = p.getAttribute('data-val');
-                    if (isGetVal) {
-
-                        getVal = p.getAttribute('data-val');
-                        if (getVal === '') {
-                            throw new Error('Autocomplete Alert: Your "data-val" attribute is empty!');
-                        }
-
-                    }
-
-                } else { list.innerHTML = ''; }
+                } else { list[0].innerHTML = ''; }
 
             }
 
@@ -412,8 +371,6 @@ function autocompleteFnc() {
 
             }
 
-        } else if (e.keyCode === 27) {
-            events.trigger(this, 'blur');
         }
 
     });
@@ -426,7 +383,7 @@ function autocompleteFnc() {
         if (!events.hasClass(p, 'open')) {
 
             events.addClass(p, 'open');
-            p.insertAdjacentHTML('afterbegin', '<ul class="list-custom ease-dropdown"></ul>');
+            p.insertAdjacentHTML('beforeend', '<ul class="list-custom ease-dropdown open"></ul>');
 
         }
 
@@ -434,11 +391,16 @@ function autocompleteFnc() {
 
     events.on(document, 'blur', eventsTarget, function () {
 
-        var p = this.parentNode;
+        var p, list;
+
         pullValues = [];
+        readValues = [];
+
+        p = this.parentNode;
+        list = selector('ul', p);
 
         events.removeClass(p, 'open');
-        p.removeChild(selector('ul', p));
+        if (list.length >= 1) { p.removeChild(list[0]); }
 
     });
 

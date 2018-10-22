@@ -1,8 +1,8 @@
 /* autocomplete */
 
-.autocomplete { overflow: visible; }
+.autocomplete { overflow: visible !important; }
 .autocomplete.open { z-index: 19; }
-.autocomplete ul { width: 100%; background-color: #fff; position: absolute; }
+.autocomplete.open ul { width: 100%; background-color: #fff; position: absolute; }
 .autocomplete:not(.open) ul { display: none; }
 
 .autocomplete:not(.submenu-top):not(.dual-bordered):not(.no-bordered) ul { margin-top: 2px; }
@@ -15,5 +15,4 @@
 
 .autocomplete ul.circle { border-radius: 16px; }
 .autocomplete li { white-space: nowrap; text-overflow: ellipsis; text-align: left; line-height: 20px; height: 30px; padding: 5px 10px; overflow: hidden; }
-.autocomplete li:nth-child(5) ~ li { display: none; }
 html:not(.mobile) .autocomplete li:hover,.autocomplete li.selected { background-color: rgba(0,0,0,.075); cursor: default; }
