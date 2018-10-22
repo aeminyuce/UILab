@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="../css/icons.css" />
     <link rel="stylesheet" href="../css/margins.css" />
     <link rel="stylesheet" href="../css/paddings.css" />
+    <link rel="stylesheet" href="../css/portlets.css" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/sticky-header.css" />
     <link rel="stylesheet" href="../css/transitions.css" />
@@ -41,12 +42,17 @@
     <!-- font icons CSS -->
     <link rel="stylesheet" href="../../UIIcons/font-icons/outline/font-icons.css" />
 
+    <!-- custom CSS -->
+    <style>
+        body { background: url(images/page_bg_01.jpg) no-repeat center center; background-size: cover; }
+    </style>
+
 </head>
 
 <body>
 
     <!-- header -->
-    <header class="container theme-default ui-dark">
+    <header class="container">
         <div class="row theme-default2 ui-border top-bordered dual-bordered">
             <div class="col-12">
                 <a href="examples.html" class="btn btn-lg no-padding-h circle ease-bg margin-10-r"><i class="icon icon-md no-opacity icon-angle-left"></i></a>
@@ -54,6 +60,7 @@
             </div>
         </div>
     </header>
+    <!-- header -->
 
     <!-- documentation examples -->
     <main class="container no-gutter">
@@ -61,7 +68,7 @@
             <div class="row">
                 <div class="col-12 padding-30">
 
-                    <div class="events-calendar theme-blue tab-content open">
+                    <div class="events-calendar portlet rounded shadow-lg">
                         <div class="month">
                             <ul>
                                 <button type="button" class="prev btn btn-lg no-padding-h rounded ease-bg" title="Prev Month"><i class="icon no-opacity icon-md icon-angle-left"></i></button>
@@ -110,9 +117,9 @@
                             <div class="days">
                                 <ul>
                                     <li>
-                                        <i class="active ui-dark">1</i>
+                                        <i class="active theme-red ui-x-dark">1</i>
                                         <a href="#" class="btn btn-multitext rounded ease-bg" data-days="1">
-                                            <img class="ease-transform" src="images/image_01.jpg" alt="">
+                                            <img class="ease-transform" src="images/image_08.jpg" alt="">
                                             <strong>Event Title</strong>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                         </a>
@@ -120,7 +127,7 @@
                                     <li>
                                         <i>2</i>
                                         <a href="#" class="btn btn-multitext rounded ease-bg" data-days="3">
-                                            <img class="ease-transform" src="images/image_02.jpg" alt="">
+                                            <img class="ease-transform" src="images/image_04.jpg" alt="">
                                             <strong>Event Title</strong>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                         </a>
@@ -130,7 +137,7 @@
                                     <li>
                                         <i>5</i>
                                         <a href="#" class="btn btn-multitext rounded ease-bg" data-days="1">
-                                            <img class="ease-transform" src="images/image_03.jpg" alt="">
+                                            <img class="ease-transform" src="images/image_06.jpg" alt="">
                                             <strong>Event Title</strong>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                         </a>

@@ -50,9 +50,11 @@
     <!-- custom CSS -->
     <style>
         body { background-color: #364860; }
-        header { min-height: 64px; }
+        .login-image { background: url(images/image_vertical_01.jpg) no-repeat center left; background-size: cover; }
 
-        .login-image { background: url(images/image_vertical_01.jpg) no-repeat center center; background-size: cover; }
+        @media (min-width: 768px) {
+            body { background-image: linear-gradient(to right, #4e5462 49.99%, #fff 49.99%); }
+        }
     </style>
 
 </head>
@@ -60,14 +62,14 @@
 <body>
 
     <!-- header -->
-    <header class="container theme-default ui-dark">
+    <header class="container">
         <div class="row theme-default2 ui-border top-bordered dual-bordered">
-            <div class="col-8 col-sm-12 col-xs-12 no-responsive">
+            <div class="col-8 col-sm-12 col-xs-12 xx-light no-responsive">
                 <a href="examples.html" class="btn btn-lg no-padding-h circle ease-bg margin-10-r"><i class="icon icon-md no-opacity icon-angle-left"></i></a>
                 <h1 class="x-large inline-block">UI Lab, Sign In Page</h1>
             </div>
             <div class="col-4 align-right hidden-sm no-responsive">
-                <a href="sign-up.html" class="btn btn-lg btn-responsive align-center padding-30-h circle ease-bg">Create your account <i class="icon icon-md margin-10-l no-opacity icon-user"></i></a>
+                <a href="sign-up.html" class="btn btn-lg btn-responsive align-center padding-30-h circle theme-default ui-dark ease-bg">Create your account <i class="icon icon-md margin-10-l no-opacity icon-user"></i></a>
             </div>
         </div>
     </header>
@@ -78,60 +80,65 @@
 
             <div class="row padding-30-v xs-no-padding-t margin-30-t sm-no-margin-t">
                 <div class="col-8 offset-2">
-                    <div class="col-static portlet rounded shadow-lg sm-responsive">
 
-                        <!-- login image -->
-                        <div class="row row-no-padding full-height rounded-left hidden-sm login-image"></div>
+                    <div class="portlet rounded shadow-lg">
+                        <div class="row row-equal-height">
 
-                        <!-- login form -->
-                        <div class="static-350 left-bordered padding-30">
+                            <!-- login image -->
+                            <div class="col-6 padding-30 rounded-left hidden-sm sm-responsive login-image"></div>
 
-                            <form action="#">
+                            <!-- login form -->
+                            <div class="col-6 padding-30 sm-responsive">
 
-                                <h3 class="margin-30-b">Login to continue</h3>
-                                <p class="margin-30-b">Sign in to create, discover and connect with the global community.</p>
+                                <form action="#">
 
-                                <label for="username" class="form-label">User Name</label>
-                                <div class="text text-lg dual-bordered rounded ease-form">
-                                    <input id="username" type="text" placeholder="Enter username">
-                                </div>
-                                <p class="hint error hidden">Enter name.</p>
+                                    <h3 class="margin-30-b">Login to continue</h3>
+                                    <p class="margin-30-b">Sign in to create, discover and connect with the global community.</p>
 
-                                <span class="sp15"></span>
+                                    <label for="username" class="form-label">User Name</label>
+                                    <div class="text text-lg dual-bordered rounded ease-form">
+                                        <input id="username" type="text" placeholder="Enter username">
+                                    </div>
+                                    <p class="hint error hidden">Enter name.</p>
 
-                                <label for="password" class="form-label">Password</label>
-                                <div class="text text-lg text-icon dual-bordered rounded ease-form">
-                                    <span title="Show/Hide Password" class="toggle-password icon icon-md icon-eye ease-opacity"></span>
-                                    <input id="password" type="password" placeholder="Enter password">
-                                </div>
-                                <p class="hint error hidden">Wrong password.</p>
+                                    <span class="sp15"></span>
 
-                                <span class="sp10"></span>
+                                    <label for="password" class="form-label">Password</label>
+                                    <div class="text text-lg text-icon dual-bordered rounded ease-form">
+                                        <span title="Show/Hide Password" class="toggle-password icon icon-md icon-eye ease-opacity"></span>
+                                        <input id="password" type="password" placeholder="Enter password">
+                                    </div>
+                                    <p class="hint error hidden">Wrong password.</p>
 
-                                <div class="check-custom rounded dual-bordered ease-form">
-                                    <input id="remember" type="checkbox" checked>
-                                    <i class="icon ease-opacity"></i>
-                                </div>
-                                <label for="remember" class="label-custom">Remember me</label>
+                                    <span class="sp10"></span>
 
-                                <span class="sp30"></span>
+                                    <div class="check-custom rounded dual-bordered ease-form">
+                                        <input id="remember" type="checkbox" checked>
+                                        <i class="icon ease-opacity"></i>
+                                    </div>
+                                    <label for="remember" class="label-custom">Remember me</label>
 
-                                <div class="padding-15-t">
-                                    <button type="submit" class="btn btn-lg btn-block circle theme-yellow ui-dark ease-bg"><b>LOGIN</b></button>
-                                    <a class="btn btn-lg btn-block visible-sm margin-15-t circle ease-bg" href="sign-up.html">Create your account</a>
-                                </div>
-                                <div class="align-center padding-30-t">
-                                    <a class="x-dark" href="#">Forgot password?</a>
-                                </div>
+                                    <span class="sp30"></span>
 
-                            </form>
+                                    <div class="padding-15-t">
+                                        <button type="submit" class="btn btn-lg btn-block circle theme-yellow ui-dark ease-bg"><b>LOGIN</b></button>
+                                        <a class="btn btn-lg btn-block visible-sm margin-15-t circle ease-bg" href="sign-up.html">Create your account</a>
+                                    </div>
+                                    <div class="align-center padding-30-t">
+                                        <a class="x-dark" href="#">Forgot password?</a>
+                                    </div>
 
+                                </form>
+
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
 
         </div>
+
     </main>
 
 </body>
