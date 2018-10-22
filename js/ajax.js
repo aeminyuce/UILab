@@ -13,7 +13,37 @@
                 target[0].innerHTML = response;
 
             } else {
-                target[0].innerHTML = response;
+                throw new Error('Ajax Alert: Source not loaded!');
+            }
+
+        }
+
+    });
+
+ JSON Example:
+
+    ajax('GET', 'ajaxtest.php?name=value&name=value', function (response, status) {
+
+        var i, target;
+
+        target = selector('.ajaxTarget');
+        if (target.length > 0) {
+
+            if (status === 'success') {
+
+                response = JSON.parse(response);
+                if (response.length !== 'undefined') {
+
+                    for (i = 0; i < response.length; i += 1) {
+                        if (response[i] !== null) {
+                            console.log(response[i]["your json key"]);
+                        }
+                    }
+
+                } else {
+                    throw new Error('Ajax Alert: Source is not in correct JSON format!');
+                }
+
             }
 
         }
