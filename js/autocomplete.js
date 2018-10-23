@@ -14,59 +14,15 @@ var autocomplete = {
 function autocompleteFnc() {
 
     'use strict';
-    var eventsTarget, pullValues, readValues, customLowerCase;
+    var customLowerCase, pullValues, formEvents;
 
     pullValues = [];
-    readValues = [];
-
     window.autocompetePool = [];
-
-    // pull values
-    function pullValuesFnc(selectedVal) {
-
-        var input, type, forend = false, i = 0, j = 0;
-
-        if (pullValues.length === 'undefined') {
-            readValues = pullValues; // is object
-
-        } else {
-
-            // is object group
-            for (i = 0; i < pullValues.length; i += 1) {
-
-                for (j = 0; j < pullValues[i].length; j += 1) {
-                    if (pullValues[i][j] === selectedVal) { forend = true; }
-                }
-
-                if (forend) { return; }
-
-            }
-
-            readValues[pullValues[i]] = pullValues[j];
-
-        }
-
-        for (i = 0; i < readValues.length; i += 1) {
-
-            input = selector('#' + readValues[i][0])[0];
-            type = input.getAttribute('type');
-
-            if (type === 'checkbox' || type === 'radio') {
-                input.checked = true;
-
-            } else {
-                input.value = readValues[i][1];
-            }
-
-        }
-
-    }
 
     // custom lowercase
     (function () {
 
         var k, re, chars, keys;
-
         keys = Object.keys(autocomplete.customLetters); // returns array
 
         chars = '(([';
@@ -87,12 +43,54 @@ function autocompleteFnc() {
 
     }());
 
+    // pull values
+    function pullValuesFnc(key, value) {
+
+        var forms, type, getKey, getValue, i, j;
+
+        if (pullValues.length !== 'undefined') {
+
+            for (i = 0; i < pullValues.length; i += 1) {
+
+                if (pullValues[i][key] === value) {
+
+                    getKey = Object.keys(pullValues[i]); // returns array
+                    getKey.splice(getKey.indexOf(key), 1);
+
+                    for (j = 0; j < getKey.length; j += 1) {
+
+                        getValue = pullValues[i][getKey[j]];
+                        forms = selector('[data-pull="' + getKey[j] + '"]');
+
+                        if (forms.length > 0) {
+
+                            type = forms[0].getAttribute('type');
+
+                            if (type === 'checkbox' || type === 'radio') {
+                                forms[0].checked = getValue;
+
+                            } else {
+                                forms[0].value = getValue;
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
     // Events
-    eventsTarget = selector('.text.autocomplete > [type="text"]');
+    formEvents = selector('.text.autocomplete > [type="text"]');
 
-    events.on(document, 'keyup', eventsTarget, function (e) {
+    events.on(document, 'keyup', formEvents, function (e) {
 
-        var i, j, k, n, p, list, listItems, navSelected, navSelectedNext, v, vID, key, createDropdown, timerShowLines, offset, offsetTop, screenH, tHeight, dHeight, m, txt, getVal, src, dataId, dataClass, send, input, type, dataName, dataID;
+        var i, j, k, n, p, list, listItems, navSelected, navIndex, v, formId, key, createDropdown, timerShowLines, offset, tHeight, dHeight, m, txt, getVal, src, dataId, dataClass, send, input, type;
 
         p = this.parentNode;
         list = selector('ul', p);
@@ -103,56 +101,41 @@ function autocompleteFnc() {
 
                 // navigate the list
                 listItems = selector('li', list[0]);
-                if (listItems !== undefined) {
+                if (listItems.length > 0) {
 
-                    if (listItems.length > 0) {
+                    navSelected = selector('li.selected', list[0]);
+                    if (navSelected.length > 0) {
 
-                        navSelected = selector('li.selected', list[0]);
-                        if (navSelected !== undefined) {
+                        navIndex = Array.prototype.slice.call(listItems).indexOf(navSelected[0]);
 
-                            if (navSelected.length === 0) {
+                        if (e.keyCode === 40) { // arrow down
 
-                                if (e.keyCode === 40) { // arrow down
-                                    events.addClass(listItems[0], 'selected');
-                                }
+                            navIndex += 1;
+                            if (navIndex >= listItems.length) { navIndex = 0; }
 
-                            } else {
+                        } else if (e.keyCode === 38) { // arrow up
 
-                                if (e.keyCode === 38) { // arrow up
-
-                                    navSelectedNext = navSelected.previousElementSibling;
-
-                                    if (navSelectedNext !== null) {
-                                        events.addClass(navSelectedNext, 'selected');
-
-                                    } else { return; }
-
-                                } else if (e.keyCode === 40) { // arrow down
-
-                                    navSelectedNext = navSelected.nextElementSibling;
-
-                                    if (navSelectedNext !== null) {
-                                        events.addClass(navSelectedNext, 'selected');
-
-                                    } else { return; }
-
-                                }
-
-                                events.removeClass(navSelected, 'selected');
-
-                            }
-
-                            this.value = selector('li.selected', list).textContent;
+                            navIndex -= 1;
+                            if (navIndex < 0) { navIndex = 0; }
 
                         }
 
+                    } else if (e.keyCode === 40) { // arrow down
+                        navIndex = 0;
                     }
+
+                    events.removeClass(navSelected, 'selected');
+                    events.addClass(listItems[navIndex], 'selected');
+
+                    this.value = listItems[navIndex].textContent;
 
                 }
 
             } else if (e.keyCode === 13 || e.keyCode === 27) {
 
                 if (list.length >= 1) {
+
+                    events.removeClass(p, 'open');
                     list[0].innerHTML = '';
                 }
 
@@ -163,27 +146,26 @@ function autocompleteFnc() {
                 v = customLowerCase(v);
                 v = v.replace(/\s+$/g, ''); // remove the last space
 
-                vID = this.getAttribute('id');
-
                 if (v !== '') {
 
                     src = p.getAttribute('data-src');
                     getVal = p.getAttribute('data-val');
 
-                    if (src !== null && getVal !== null) {
+                    if (src !== null && src !== '' && getVal !== null && getVal !== '') {
 
-                        // send values
-                        dataId = p.getAttribute('id');
-                        dataClass = p.getAttribute('class');
+                        // sending source id with value
+                        formId = this.getAttribute('id');
 
-                        if (vID) {
-                            send = 'valueID=' + vID + '&value=' + v;
+                        if (formId !== null && formId !== '') {
+                            send = 'valueId=' + formId + '&value=' + v;
 
                         } else {
                             send = 'value=' + v;
                         }
 
-                        if (dataId !== null) {
+                        // sending target id with value
+                        dataId = p.getAttribute('data-id');
+                        if (dataId !== null && dataId !== '') {
 
                             input = selector('#' + dataId)[0];
                             type = input.getAttribute('type');
@@ -197,21 +179,47 @@ function autocompleteFnc() {
 
                         }
 
-                        if (dataClass !== null) {
+                        // sending target class names with value
+                        dataClass = p.getAttribute('data-class');
+                        if (dataClass !== null && dataClass !== '') {
 
                             events.each('.' + dataClass, function () {
 
+                                var formType, name, id;
+
                                 input = selector('input,select,textarea', this)[0];
 
-                                type = input.getAttribute('type');
-                                dataName = input.getAttribute('data-name');
-                                dataID = input.getAttribute('id');
+                                formType = input.getAttribute('type');
+                                id = input.getAttribute('id');
+                                name = input.getAttribute('name');
 
-                                if (type === 'checkbox' || type === 'radio') {
-                                    send += '&' + dataName + '[val]=' + input.checked + '&' + dataName + '[id]=' + dataID;
+                                if (name === null || name === '') {
+
+                                    if (formType === 'checkbox' || formType === 'radio') {
+                                        send += '&' + id + '=' + input.checked;
+
+                                    } else {
+                                        send += '&' + id + '=' + input.value;
+                                    }
+
+                                } else if (id === null || id === '') {
+
+                                    if (formType === 'checkbox' || formType === 'radio') {
+                                        send += '&' + name + '=' + input.checked;
+
+                                    } else {
+                                        send += '&' + name + '=' + input.value;
+                                    }
 
                                 } else {
-                                    send += '&' + dataName + '[val]=' + input.value + '&' + dataName + '[id]=' + dataID;
+
+                                    if (formType === 'checkbox' || formType === 'radio') {
+                                        send += '&' + name + '[val]=' + input.checked + '&' + name + '[id]=' + id;
+
+                                    } else {
+                                        send += '&' + name + '[val]=' + input.value + '&' + name + '[id]=' + id;
+                                    }
+
                                 }
 
                             });
@@ -240,22 +248,17 @@ function autocompleteFnc() {
                                             events.addClass(list, autocomplete.classes);
 
                                             offset = p.getBoundingClientRect();
-                                            offsetTop = (offset.top - window.scrollTop);
-
-                                            events.removeClass(p, 'submenu-top');
-
-                                            screenH = selector(document)[0].offsetHeight;
 
                                             tHeight = p.offsetHeight;
                                             dHeight = list[0].offsetHeight;
 
-                                            if (offsetTop + parseInt(tHeight + dHeight, 10) >= screenH) {
+                                            if (offset.top + parseInt(tHeight + dHeight, 10) >= window.innerHeight) {
 
-                                                if (offsetTop - parseInt(tHeight + dHeight, 10) + tHeight > 0) {
+                                                if (offset.top - parseInt(tHeight + dHeight, 10) + tHeight > 0) {
                                                     events.addClass(p, 'submenu-top');
 
                                                 } else {
-                                                    list[0].style.height = (dHeight - (offsetTop + parseInt(tHeight + dHeight, 10) - screenH) - 15) + 'px';
+                                                    list[0].style.height = (dHeight - (offset.top + parseInt(tHeight + dHeight, 10) - window.innerHeight) - 15) + 'px';
                                                 }
 
                                             }
@@ -265,6 +268,10 @@ function autocompleteFnc() {
                                     };
 
                                     k = 0;
+
+                                    events.addClass(p, 'open');
+                                    events.removeClass(p, 'submenu-top');
+
                                     list[0].innerHTML = '';
 
                                     for (i = 0; i < response.length; i += 1) {
@@ -343,7 +350,12 @@ function autocompleteFnc() {
 
                     } else { return; }
 
-                } else { list[0].innerHTML = ''; }
+                } else {
+
+                    events.removeClass(list, 'open');
+                    list[0].innerHTML = '';
+
+                }
 
             }
 
@@ -351,12 +363,16 @@ function autocompleteFnc() {
 
     });
 
-    events.on(document, 'keydown', eventsTarget, function (e) {
+    events.on(document, 'keydown', formEvents, function (e) {
 
         if (e.keyCode === 13) {
 
-            var p = this.parentNode;
+            var p, key;
+
+            p = this.parentNode;
             if (selector('li.selected', p).length > 0) {
+
+                events.removeClass(p, 'open');
 
                 if (!events.hasClass(p, 'auto-submit')) { // auto submit
 
@@ -366,7 +382,13 @@ function autocompleteFnc() {
                 }
 
                 if (events.hasClass(p, 'autocomplete-pull')) {
-                    pullValuesFnc(this.value); // pull values
+
+                    key = p.getAttribute('data-val');
+
+                    if (key !== null && key !== '') {
+                        pullValuesFnc(key, this.value); // pull values
+                    }
+
                 }
 
             }
@@ -375,46 +397,50 @@ function autocompleteFnc() {
 
     });
 
-    events.on(document, 'focus', eventsTarget, function () {
+    events.on(document, 'focus', formEvents, function () {
 
         var p = this.parentNode;
         this.setAttribute('autocomplete', 'off');
 
-        if (!events.hasClass(p, 'open')) {
+        events.addClass(p, 'open');
+        events.removeClass(p, 'submenu-top');
 
-            events.addClass(p, 'open');
-            p.insertAdjacentHTML('beforeend', '<ul class="list-custom ease-dropdown open"></ul>');
-
-        }
+        p.insertAdjacentHTML('beforeend', '<ul class="ease-autocomplete"></ul>');
 
     });
 
-    events.on(document, 'blur', eventsTarget, function () {
+    events.on(document, 'blur', formEvents, function () {
 
         var p, list;
-
         pullValues = [];
-        readValues = [];
 
         p = this.parentNode;
         list = selector('ul', p);
 
         events.removeClass(p, 'open');
-        if (list.length >= 1) { p.removeChild(list[0]); }
+        if (list.length > 0) { p.removeChild(list[0]); }
 
     });
 
     events.on(document, 'mousedown', '.text.autocomplete.open li', function () {
 
-        var p = events.closest(this, '.autocomplete');
-        selector('[type="text"]', p).value = this.textContent;
+        var p, key;
 
-        if (events.hasClass(p, 'autocomplete-pull')) {
-            pullValuesFnc(this.textContent); // pull values
-        }
+        p = events.closest(this, '.autocomplete');
+        selector('[type="text"]', p).value = this.textContent;
 
         if (events.hasClass(p, 'auto-submit')) {
             events.closest(this, 'form').submit(); // auto submit
+        }
+
+        if (events.hasClass(p, 'autocomplete-pull')) {
+
+            key = p[0].getAttribute('data-val');
+
+            if (key !== null && key !== '') {
+                pullValuesFnc(key, this.textContent); // pull values
+            }
+
         }
 
     });
