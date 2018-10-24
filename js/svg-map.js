@@ -78,7 +78,7 @@ function svgMap() {
         if (e.target.toString() === '[object SVGPathElement]') {
 
             p = e.target.parentNode;
-            toolbarContent.innerHTML = e.target.getAttribute('id') + ': ' + p.getAttribute('data-size');
+            toolbarContent.innerHTML = e.target.id + ': ' + p.getAttribute('data-size');
 
             if (mobile) {
 
