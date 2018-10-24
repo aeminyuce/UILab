@@ -37,14 +37,16 @@ var selector = function (item, outer) {
             outerEl = document.querySelectorAll(outer); // convert to array
         } else { outerEl = outer; }
 
+        outerElLength = outerEl.length;
         if (outerEl.length !== undefined) { // "this" object
 
-            outerElLength = outerEl.length;
             for (i = 0; i < outerElLength; i += 1) {
 
                 outerElIndex = outerEl[i].querySelectorAll(item);
+
                 if (outerElLength === 1) {
                     foundEl = outerElIndex[0];
+
                 } else {
                     foundEl = foundEl.concat(outerElIndex); // merge arrays
                 }
