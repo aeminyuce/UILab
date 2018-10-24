@@ -22,21 +22,35 @@
 
  JSON Example:
 
+    var myJSONRequests = [];
+
     ajax('GET', 'ajaxtest.php?name=value&name=value', function (response, status) {
 
-        var i, target;
+        var i, n, target;
 
         target = selector('.ajaxTarget');
         if (target.length > 0) {
 
+            // abort still processing previous json requests (optional)
+            for (n = 0; n < myJSONRequests.length; n += 1) {
+
+                myJSONRequests[n].abort();
+                myJSONRequests.splice(n, 1);
+
+            }
+
+            myJSONRequests.push(xhr);
+
             if (status === 'success') {
+
+                myJSONRequests = []; // (optional)
 
                 response = JSON.parse(response);
                 if (response.length !== 'undefined') {
 
                     for (i = 0; i < response.length; i += 1) {
                         if (response[i] !== null) {
-                            console.log(response[i]["your json key"]);
+                            console.log(response[i]["your json key of value"]);
                         }
                     }
 
@@ -80,7 +94,7 @@ function ajax(method, target, callback) {
 
         if (window.ajaxRequest.status >= 200 && window.ajaxRequest.status < 400) {
 
-            callback(window.ajaxRequest.responseText, 'success');
+            callback(window.ajaxRequest.responseText, 'success', window.ajaxRequest);
 
             // ajax callbacks
             events.on(document, 'ajaxCallbacks');
@@ -97,11 +111,11 @@ function ajax(method, target, callback) {
 
             }
 
-        } else { callback('', 'error'); }
+        } else { callback('', 'error', window.ajaxRequest); }
 
     };
 
-    window.ajaxRequest.onerror = function () { callback(null, 'error'); };
+    window.ajaxRequest.onerror = function () { callback('', 'error', window.ajaxRequest); };
 
 }
 
