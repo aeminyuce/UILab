@@ -14,10 +14,10 @@ var autocomplete = {
 function autocompleteFnc() {
 
     'use strict';
-    var customLowerCase, pullValues, formEvents;
+    var customLowerCase, pullValues, formEvents, autocompleteRequests;
 
     pullValues = [];
-    window.autocompetePool = [];
+    autocompleteRequests = [];
 
     // custom lowercase
     (function () {
@@ -43,7 +43,7 @@ function autocompleteFnc() {
 
     }());
 
-    // pull values
+    // pulling values
     function pullValuesFnc(key, value) {
 
         var forms, type, getKey, getValue, i, j;
@@ -90,7 +90,7 @@ function autocompleteFnc() {
 
     events.on(document, 'keyup', formEvents, function (e) {
 
-        var i, j, k, n, p, list, listItems, navSelected, navIndex, v, formId, key, createDropdown, timerShowLines, offset, tHeight, dHeight, m, txt, getVal, src, dataId, dataClass, send, input, type;
+        var i, j, k, n, p, list, listItems, navSelected, navIndex, v, key, createDropdown, timerShowLines, offset, tHeight, dHeight, m, txt, getVal, src, dataId, dataClass, send, input, type;
 
         p = this.parentNode;
         list = selector('ul', p);
@@ -153,11 +153,9 @@ function autocompleteFnc() {
 
                     if (src !== null && src !== '' && getVal !== null && getVal !== '') {
 
-                        // sending source id with value
-                        formId = this.getAttribute('id');
-
-                        if (formId !== null && formId !== '') {
-                            send = 'valueId=' + formId + '&value=' + v;
+                        // sending source name with value
+                        if (this.name !== '') {
+                            send = this.name + '=' + v;
 
                         } else {
                             send = 'value=' + v;
@@ -171,10 +169,23 @@ function autocompleteFnc() {
                             type = input.getAttribute('type');
 
                             if (type === 'checkbox' || type === 'radio') {
-                                send += '&' + dataId + '=' + input.checked;
+
+                                if (input.name !== '') {
+                                    send += '&' + input.name + '=' + input.checked;
+
+                                } else {
+                                    send += '&' + dataId + '=' + input.checked;
+                                }
 
                             } else {
-                                send += '&' + dataId + '=' + input.value;
+
+                                if (input.name !== '') {
+                                    send += '&' + input.name + '=' + input.value;
+
+                                } else {
+                                    send += '&' + dataId + '=' + input.value;
+                                }
+
                             }
 
                         }
@@ -185,39 +196,24 @@ function autocompleteFnc() {
 
                             events.each('.' + dataClass, function () {
 
-                                var formType, name, id;
-
                                 input = selector('input,select,textarea', this)[0];
 
-                                formType = input.getAttribute('type');
-                                id = input.getAttribute('id');
-                                name = input.getAttribute('name');
+                                if (input.type === 'checkbox' || input.type === 'radio') {
 
-                                if (name === null || name === '') {
-
-                                    if (formType === 'checkbox' || formType === 'radio') {
-                                        send += '&' + id + '=' + input.checked;
+                                    if (input.name !== '') {
+                                        send += '&' + input.name + '=' + input.checked;
 
                                     } else {
-                                        send += '&' + id + '=' + input.value;
-                                    }
-
-                                } else if (id === null || id === '') {
-
-                                    if (formType === 'checkbox' || formType === 'radio') {
-                                        send += '&' + name + '=' + input.checked;
-
-                                    } else {
-                                        send += '&' + name + '=' + input.value;
+                                        send += '&' + input.id + '=' + input.checked;
                                     }
 
                                 } else {
 
-                                    if (formType === 'checkbox' || formType === 'radio') {
-                                        send += '&' + name + '[val]=' + input.checked + '&' + name + '[id]=' + id;
+                                    if (input.name !== '') {
+                                        send += '&' + input.name + '=' + input.value;
 
                                     } else {
-                                        send += '&' + name + '[val]=' + input.value + '&' + name + '[id]=' + id;
+                                        send += '&' + input.id + '=' + input.value;
                                     }
 
                                 }
@@ -226,15 +222,21 @@ function autocompleteFnc() {
 
                         }
 
-                        ajax('POST', src + '?' + send, function (response, status) {
+                        ajax('POST', src + '?' + send, function (response, status, xhr) {
 
-                            for (n = 0; n < window.autocompetePool; n += 1) {
-                                window.autocompetePool[n].abort();
+                            // abort still processing previous autocomplete requests
+                            for (n = 0; n < autocompleteRequests.length; n += 1) {
+
+                                autocompleteRequests[n].abort();
+                                autocompleteRequests.splice(n, 1);
+
                             }
 
-                            window.autocompetePool.push(response);
+                            autocompleteRequests.push(xhr);
 
                             if (status === 'success') {
+
+                                autocompleteRequests = [];
 
                                 response = JSON.parse(response);
                                 if (response.length !== 'undefined') {
@@ -339,7 +341,7 @@ function autocompleteFnc() {
                                 }
 
                                 if (events.hasClass(p, 'autocomplete-pull')) {
-                                    pullValues = response; // pull values
+                                    pullValues = response; // pulling values
                                 }
 
                                 response = '';
@@ -386,7 +388,7 @@ function autocompleteFnc() {
                     key = p.getAttribute('data-val');
 
                     if (key !== null && key !== '') {
-                        pullValuesFnc(key, this.value); // pull values
+                        pullValuesFnc(key, this.value); // pulling values
                     }
 
                 }
@@ -438,7 +440,7 @@ function autocompleteFnc() {
             key = p[0].getAttribute('data-val');
 
             if (key !== null && key !== '') {
-                pullValuesFnc(key, this.textContent); // pull values
+                pullValuesFnc(key, this.textContent); // pulling values
             }
 
         }
