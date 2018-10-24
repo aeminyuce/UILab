@@ -170,20 +170,20 @@ function autocompleteFnc() {
 
                             if (type === 'checkbox' || type === 'radio') {
 
-                                if (input.name !== '') {
-                                    send += '&' + input.name + '=' + input.checked;
+                                if (input.id !== '') {
+                                    send += '&' + dataId + '=' + input.checked;
 
                                 } else {
-                                    send += '&' + dataId + '=' + input.checked;
+                                    send += '&' + input.name + '=' + input.checked;
                                 }
 
                             } else {
 
-                                if (input.name !== '') {
-                                    send += '&' + input.name + '=' + input.value;
+                                if (input.id !== '') {
+                                    send += '&' + dataId + '=' + input.value;
 
                                 } else {
-                                    send += '&' + dataId + '=' + input.value;
+                                    send += '&' + input.name + '=' + input.value;
                                 }
 
                             }
@@ -200,20 +200,20 @@ function autocompleteFnc() {
 
                                 if (input.type === 'checkbox' || input.type === 'radio') {
 
-                                    if (input.name !== '') {
-                                        send += '&' + input.name + '=' + input.checked;
+                                    if (input.id !== '') {
+                                        send += '&' + input.id + '=' + input.checked;
 
                                     } else {
-                                        send += '&' + input.id + '=' + input.checked;
+                                        send += '&' + input.name + '=' + input.checked;
                                     }
 
                                 } else {
 
-                                    if (input.name !== '') {
-                                        send += '&' + input.name + '=' + input.value;
+                                    if (input.id !== '') {
+                                        send += '&' + input.id + '=' + input.value;
 
                                     } else {
-                                        send += '&' + input.id + '=' + input.value;
+                                        send += '&' + input.name + '=' + input.value;
                                     }
 
                                 }
