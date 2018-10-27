@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>UI Lab, Product Listing</title>
+    <meta name="keywords" content="uilab, responsive, design system, css, javascript, product listing">
+    <meta name="description" content="CSS & JavaScript powered responsive design system." />
+    <meta name="author" content="Ahmet Emin Yüce"/>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
+
+    <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/alignments.css" />
+    <link rel="stylesheet" href="../css/buttons.css" />
+    <link rel="stylesheet" href="../css/borders.css" />
+    <link rel="stylesheet" href="../css/custom-forms.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <link rel="stylesheet" href="../css/helpers.css" />
+    <link rel="stylesheet" href="../css/icons.css" />
+    <link rel="stylesheet" href="../css/listings.css" />
+    <link rel="stylesheet" href="../css/margins.css" />
+    <link rel="stylesheet" href="../css/mobile-menu.css" />
+    <link rel="stylesheet" href="../css/paddings.css" />
+    <link rel="stylesheet" href="../css/pagination.css" />
+    <link rel="stylesheet" href="../css/portlets.css" />
+    <link rel="stylesheet" href="../css/progress-bar.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/static-grid.css" />
+    <link rel="stylesheet" href="../css/sticky-header.css" />
+    <link rel="stylesheet" href="../css/transitions.css" />
+    <link rel="stylesheet" href="../css/typography.css" />
+    <link rel="stylesheet" href="../css/typography-elements.css" />
+    <link rel="stylesheet" href="../css/swatches.css" />
+    <link rel="stylesheet" href="../css/top-button.css" />
+
+    <link rel="stylesheet" href="../css/photo-slider.css" />
+
+    <!-- Javascript Tools -->
+    <script src="../js/selector.js"></script>
+    <script src="../js/events.js"></script>
+
+    <script src="../js/forms.js"></script>
+    <script src="../js/mobile-menu.js"></script>
+    <script src="../js/static-grid.js"></script>
+    <script src="../js/sticky-header.js"></script>
+    <script src="../js/swatches.js"></script>
+    <script src="../js/top-button.js"></script>
+    <script src="../js/transitions.js"></script>
+    <script src="../js/user-agents.js"></script>
+
+    <script src="../js/photo-slider.js"></script>
+
+    <!-- font icons CSS -->
+    <link rel="stylesheet" href="../../UIIcons/font-icons/outline/font-icons.css" />
+
+    <!-- custom CSS -->
+    <style>
+        body { background-color: #f9f9f9; }
+        a.portlet:hover { text-decoration: none; }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="container theme-default ui-dark">
+        <div class="row theme-default2 ui-border top-bordered dual-bordered">
+            <div class="col-12">
+                <a href="examples.html" class="btn btn-lg no-padding-h circle ease-bg margin-10-r"><i class="icon icon-md no-opacity icon-long-arrow-left"></i></a>
+                <h1 class="x-large inline-block">UI Lab, Product Listing</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- documentation examples -->
+    <main class="container no-gutter">
+        <div class="col-static no-responsive padding-30-v">
+
+            <div class="static-300 padding-10 hidden-md add-mobile-menu-left" data-import="1">
+                <div class="padding-30 md-no-padding rounded theme-gray ui-light">
+                    <form action="#">
+
+                        <!-- sidebar: start -->
+                        <div class="text dual-bordered rounded ease-form">
+                            <input type="text" placeholder="Search by keyword.">
+                        </div>
+
+                        <h4 class="margin-30-t">Categories</h4>
+                        <ul class="list-unstyled list-spacer-15">
+                            <li><a class="dark" href="#">Men's</a></li>
+                            <li><a class="dark" href="#">Accessories</a></li>
+                            <li>
+                                <a href="#"><b>Watches</b></a>
+                                <ul class="list-unstyled padding-15-l">
+                                    <li><a href="#">Analog</a></li>
+                                    <li><a href="#">Chronograph</a></li>
+                                    <li><a href="#">Digital</a></li>
+                                    <li><a href="#">Band Strap</a></li>
+                                    <li><a href="#">Bracelet Strap</a></li>
+                                    <li><a href="#">Casual</a></li>
+                                    <li><a href="#">Luxury</a></li>
+                                    <li><a href="#">Smart</a></li>
+                                    <li><a href="#">Sport</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <span class="sp10"></span>
+
+                        <div class="padding-15-v ver-bordered">
+                            <div class="switch-custom right dual-bordered ease-form">
+                                <input id="switch1" type="checkbox" checked>
+                                <i class="icon ease-form-custom theme"></i>
+                            </div>
+                            <label for="switch1" class="label-custom padding-5-v block"><i class="icon x-dark icon-md margin-10-r icon-finish"></i>2-Days Delivery</label>
+
+                            <span class="sp5"></span>
+
+                            <div class="switch-custom right dual-bordered ease-form">
+                                <input id="switch2" type="checkbox" checked>
+                                <i class="icon ease-form-custom theme"></i>
+                            </div>
+                            <label for="switch2" class="label-custom padding-5-v block"><i class="icon x-dark icon-md margin-10-r icon-arrow-down"></i>Deals</label>
+                        </div>
+
+                        <h4 class="margin-30-t">Brand</h4>
+                        <div>
+                            <div class="check-custom dual-bordered rounded ease-form">
+                                <input id="check1" type="checkbox">
+                                <i class="icon ease-opacity"></i>
+                            </div>
+                            <label for="check1" class="label-custom">AX Armani Exchange</label>
+                        </div>
+                        <div>
+                            <div class="check-custom dual-bordered rounded ease-form">
+                                <input id="check2" type="checkbox">
+                                <i class="icon ease-opacity"></i>
+                            </div>
+                            <label for="check2" class="label-custom">Baume Et Mercier</label>
+                        </div>
+                        <div>
+                            <div class="check-custom dual-bordered rounded ease-form">
+                                <input id="check3" type="checkbox">
+                                <i class="icon ease-opacity"></i>
+                            </div>
+                            <label for="check3" class="label-custom">Bertucci</label>
+                        </div>
+                        <div>
+                            <div class="check-custom dual-bordered rounded ease-form">
+                                <input id="check4" type="checkbox" checked>
+                                <i class="icon ease-opacity"></i>
+                            </div>
+                            <label for="check4" class="label-custom">Seiko</label>
+                        </div>
+                        <div>
+                            <div class="check-custom dual-bordered rounded ease-form">
+                                <input id="check5" type="checkbox" checked>
+                                <i class="icon ease-opacity"></i>
+                            </div>
+                            <label for="check5" class="label-custom">Mavado</label>
+                        </div>
+
+                        <span class="sp5"></span>
+                        <button class="btn btn-xs circle ease-bg">See All Brands</button>
+
+                        <h4 class="margin-30-t">Watch Brand Material</h4>
+                        <div>
+                            <div class="check-custom dual-bordered rounded ease-form">
+                                <input id="check6" type="checkbox" checked>
+                                <i class="icon ease-opacity"></i>
+                            </div>
+                            <label for="check6" class="label-custom">Nylon</label>
+                        </div>
+                        <div>
+                            <div class="check-custom dual-bordered rounded ease-form">
+                                <input id="check7" type="checkbox" checked>
+                                <i class="icon ease-opacity"></i>
+                            </div>
+                            <label for="check7" class="label-custom">Silicone</label>
+                        </div>
+                        <div>
+                            <div class="check-custom dual-bordered rounded ease-form">
+                                <input id="check8" type="checkbox" checked>
+                                <i class="icon ease-opacity"></i>
+                            </div>
+                            <label for="check8" class="label-custom">Ceramic</label>
+                        </div>
+                        <div>
+                            <div class="check-custom dual-bordered rounded ease-form">
+                                <input id="check9" type="checkbox">
+                                <i class="icon ease-opacity"></i>
+                            </div>
+                            <label for="check9" class="label-custom">Gold</label>
+                        </div>
+                        <div>
+                            <div class="check-custom dual-bordered rounded ease-form">
+                                <input id="check10" type="checkbox">
+                                <i class="icon ease-opacity"></i>
+                            </div>
+                            <label for="check10" class="label-custom">Fabric</label>
+                        </div>
+
+                        <span class="sp5"></span>
+                        <button class="btn btn-xs circle ease-bg">See All Brands Materials</button>
+
+                        <h4 class="margin-30-t">Ratings</h4>
+                        <div class="progress-bar progress-sm rounded static-200 margin-5-b">
+                            <span class="theme-yellow ui-dark" style="width: 90%;"></span>
+                        </div>
+                        <div class="margin-15-b">
+                            <div class="radio-custom dual-bordered rounded ease-form">
+                                <input id="radio1" type="radio" name="ratings" checked>
+                                <i class="icon ease-opacity"></i>
+                            </div>
+                            <label for="radio1" class="label-custom">90% &amp; Up</label>
+                        </div>
+                        <div class="progress-bar progress-sm rounded static-200 margin-5-b">
+                            <span class="theme-yellow ui-dark" style="width: 80%;"></span>
+                        </div>
+                        <div class="margin-15-b">
+                            <div class="radio-custom dual-bordered rounded ease-form">
+                                <input id="radio2" type="radio" name="ratings">
+                                <i class="icon ease-opacity"></i>
+                            </div>
+                            <label for="radio2" class="label-custom">80% &amp; Up</label>
+                        </div>
+                        <div class="progress-bar progress-sm rounded static-200 margin-5-b">
+                            <span class="theme-yellow ui-dark" style="width: 60%;"></span>
+                        </div>
+                        <div class="margin-15-b">
+                            <div class="radio-custom dual-bordered rounded ease-form">
+                                <input id="radio3" type="radio" name="ratings">
+                                <i class="icon ease-opacity"></i>
+                            </div>
+                            <label for="radio3" class="label-custom">60% &amp; Up</label>
+                        </div>
+                        <div class="progress-bar progress-sm rounded static-200 margin-5-b">
+                            <span class="theme-yellow ui-dark" style="width: 50%;"></span>
+                        </div>
+                        <div class="margin-15-b">
+                            <div class="radio-custom dual-bordered rounded ease-form">
+                                <input id="radio4" type="radio" name="ratings">
+                                <i class="icon ease-opacity"></i>
+                            </div>
+                            <label for="radio4" class="label-custom">50% &amp; Down</label>
+                        </div>
+
+                        <span class="sp30"></span>
+                        <button type="submit" class="btn btn-lg btn-block circle theme-default2 ui-dark ease-bg"><b>SEARCH</b></button>
+                        <!-- sidebar: end -->
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 sm-no-padding-t">
+
+                    <div class="row sm-align-center">
+                        <div class="col-6 sm-responsive form-summary sm-no-padding-b">
+                            <span class="large"><b>504</b> items</span>
+                        </div>
+                        <div class="col-6 sm-responsive align-right sm-no-padding-t">
+                            <form action="#">
+                                <button type="button" class="btn no-padding-h align-center show-mobile-menu-left rounded ease-bg visible-md"><i class="icon icon-md icon-filter ease-opacity"></i></button>
+                                <div class="select dual-bordered rounded form-inline ease-form">
+                                    <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                                    <select>
+                                        <option value="1" checked>Sort by Relevance</option>
+                                        <option value="2">Top Rated</option>
+                                        <option value="3">Price (Low to High)</option>
+                                        <option value="4">Price (High to Low)</option>
+                                    </select>
+                                </div>
+                                <div class="select dual-bordered rounded form-inline ease-form">
+                                    <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                                    <select>
+                                        <option value="12" checked>Show 12</option>
+                                        <option value="24">Show 24</option>
+                                        <option value="36">Show 36</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- list: start -->
+                    <div class="row row-equal-height ease-2nd-transform">
+                        <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
+                            <a class="full-height padding-10 portlet rounded scale" href="#">
+                                <span class="photo-slider margin-10-b">
+                                    <i class="slider-loader icon icon-xl icon-loader"></i>
+                                    <img src="images/product_blank.gif" data-src="images/product_01.jpg,images/product_02.jpg,images/product_03.jpg,images/product_04.jpg,images/product_05.jpg" alt="Image 1">
+                                    <span class="slider-nav"></span>
+                                    <button title="Prev" class="slide-left ease-opacity"><i class="icon icon-xl icon-angle-left"></i></button>
+                                    <button title="Next" class="slide-right ease-opacity"><i class="icon icon-xl icon-angle-right"></i></button>
+                                </span>
+                                <b class="x-large">Seiko</b>
+                                <span class="x-dark block margin-10-v">Seiko Watches Men's SNA411 Parker Stainless Steel Watch, 42mm</span>
+                                <span class="progress-bar progress-sm rounded static-150">
+                                    <span class="theme-yellow ui-dark" style="width: 90%;"></span>
+                                </span>
+                                <b>90%</b> <span class="dark">24 Reviews</span>
+                                <span class="sp20"></span>
+                                <b class="x-large">$164.98</b>
+                                <span class="x-dark block"><i class="icon icon-sm icon-finish margin-10-r"></i>2-Days delivery</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
+                            <a class="full-height padding-10 portlet rounded scale" href="#">
+                                <span class="photo-slider margin-10-b">
+                                    <i class="slider-loader icon icon-xl icon-loader"></i>
+                                    <img src="images/product_blank.gif" data-src="images/product_02.jpg,images/product_03.jpg,images/product_04.jpg,images/product_05.jpg,images/product_06.jpg" alt="Image 2">
+                                    <span class="slider-nav"></span>
+                                    <button title="Prev" class="slide-left ease-opacity"><i class="icon icon-xl icon-angle-left"></i></button>
+                                    <button title="Next" class="slide-right ease-opacity"><i class="icon icon-xl icon-angle-right"></i></button>
+                                </span>
+                                <b class="x-large">Movado</b>
+                                <span class="x-dark block margin-10-v">Movado Men's 2100002 Museum Leather Watch, 38mm</span>
+                                <span class="progress-bar progress-sm rounded static-150">
+                                    <span class="theme-yellow ui-dark" style="width: 82%;"></span>
+                                </span>
+                                <b>82%</b> <span class="dark">16 Reviews</span>
+                                <span class="sp20"></span>
+                                <b class="x-large font-red">$79.95</b> <b class="overline">$99.99</b>
+                                <span class="x-dark block"><i class="icon icon-sm margin-10-r icon-arrow-down"></i>20% off</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
+                            <a class="full-height padding-10 portlet rounded scale" href="#">
+                                <span class="photo-slider margin-10-b">
+                                    <i class="slider-loader icon icon-xl icon-loader"></i>
+                                    <img src="images/product_blank.gif" data-src="images/product_03.jpg,images/product_04.jpg,images/product_05.jpg,images/product_06.jpg,images/product_07.jpg" alt="Image 3">
+                                    <span class="slider-nav"></span>
+                                    <button title="Prev" class="slide-left ease-opacity"><i class="icon icon-xl icon-angle-left"></i></button>
+                                    <button title="Next" class="slide-right ease-opacity"><i class="icon icon-xl icon-angle-right"></i></button>
+                                </span>
+                                <b class="x-large">Seiko</b>
+                                <span class="x-dark block margin-10-v">Seiko Watches Men's SNA411 Parker Stainless Steel Watch, 42mm</span>
+                                <span class="progress-bar progress-sm rounded static-150">
+                                    <span class="theme-yellow ui-dark" style="width: 90%;"></span>
+                                </span>
+                                <b>90%</b> <span class="dark">24 Reviews</span>
+                                <span class="sp20"></span>
+                                <b class="x-large">$164.98</b>
+                                <span class="x-dark block"><i class="icon icon-sm icon-finish margin-10-r"></i>2-Days delivery</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
+                            <a class="full-height padding-10 portlet rounded scale" href="#">
+                                <span class="photo-slider margin-10-b">
+                                    <i class="slider-loader icon icon-xl icon-loader"></i>
+                                    <img src="images/product_blank.gif" data-src="images/product_04.jpg,images/product_05.jpg,images/product_06.jpg,images/product_07.jpg,images/product_08.jpg" alt="Image 4">
+                                    <span class="slider-nav"></span>
+                                    <button title="Prev" class="slide-left ease-opacity"><i class="icon icon-xl icon-angle-left"></i></button>
+                                    <button title="Next" class="slide-right ease-opacity"><i class="icon icon-xl icon-angle-right"></i></button>
+                                </span>
+                                <b class="x-large">Movado</b>
+                                <span class="x-dark block margin-10-v">Movado Men's 2100002 Museum Leather Watch, 38mm</span>
+                                <span class="progress-bar progress-sm rounded static-150">
+                                    <span class="theme-yellow ui-dark" style="width: 82%;"></span>
+                                </span>
+                                <b>82%</b> <span class="dark">16 Reviews</span>
+                                <span class="sp20"></span>
+                                <b class="x-large font-red">$79.95</b> <b class="overline">$99.99</b>
+                                <span class="x-dark block"><i class="icon icon-sm margin-10-r icon-arrow-down"></i>20% off</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
+                            <a class="full-height padding-10 portlet rounded scale" href="#">
+                                <span class="photo-slider margin-10-b">
+                                    <i class="slider-loader icon icon-xl icon-loader"></i>
+                                    <img src="images/product_blank.gif" data-src="images/product_05.jpg,images/product_06.jpg,images/product_07.jpg,images/product_08.jpg,images/product_09.jpg" alt="Image 5">
+                                    <span class="slider-nav"></span>
+                                    <button title="Prev" class="slide-left ease-opacity"><i class="icon icon-xl icon-angle-left"></i></button>
+                                    <button title="Next" class="slide-right ease-opacity"><i class="icon icon-xl icon-angle-right"></i></button>
+                                </span>
+                                <b class="x-large">Seiko</b>
+                                <span class="x-dark block margin-10-v">Seiko Watches Men's SNA411 Parker Stainless Steel Watch, 42mm</span>
+                                <span class="progress-bar progress-sm rounded static-150">
+                                    <span class="theme-yellow ui-dark" style="width: 90%;"></span>
+                                </span>
+                                <b>90%</b> <span class="dark">24 Reviews</span>
+                                <span class="sp20"></span>
+                                <b class="x-large">$164.98</b>
+                                <span class="x-dark block"><i class="icon icon-sm icon-finish margin-10-r"></i>2-Days delivery</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
+                            <a class="full-height padding-10 portlet rounded scale" href="#">
+                                <span class="photo-slider margin-10-b">
+                                    <i class="slider-loader icon icon-xl icon-loader"></i>
+                                    <img src="images/product_blank.gif" data-src="images/product_06.jpg,images/product_07.jpg,images/product_08.jpg,images/product_09.jpg,images/product_10.jpg" alt="Image 6">
+                                    <span class="slider-nav"></span>
+                                    <button title="Prev" class="slide-left ease-opacity"><i class="icon icon-xl icon-angle-left"></i></button>
+                                    <button title="Next" class="slide-right ease-opacity"><i class="icon icon-xl icon-angle-right"></i></button>
+                                </span>
+                                <b class="x-large">Movado</b>
+                                <span class="x-dark block margin-10-v">Movado Men's 2100002 Museum Leather Watch, 38mm</span>
+                                <span class="progress-bar progress-sm rounded static-150">
+                                    <span class="theme-yellow ui-dark" style="width: 82%;"></span>
+                                </span>
+                                <b>82%</b> <span class="dark">16 Reviews</span>
+                                <span class="sp20"></span>
+                                <b class="x-large font-red">$79.95</b> <b class="overline">$99.99</b>
+                                <span class="x-dark block"><i class="icon icon-sm margin-10-r icon-arrow-down"></i>20% off</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
+                            <a class="full-height padding-10 portlet rounded scale" href="#">
+                                <span class="photo-slider margin-10-b">
+                                    <i class="slider-loader icon icon-xl icon-loader"></i>
+                                    <img src="images/product_blank.gif" data-src="images/product_07.jpg,images/product_02.jpg,images/product_03.jpg,images/product_04.jpg,images/product_05.jpg" alt="Image 7">
+                                    <span class="slider-nav"></span>
+                                    <button title="Prev" class="slide-left ease-opacity"><i class="icon icon-xl icon-angle-left"></i></button>
+                                    <button title="Next" class="slide-right ease-opacity"><i class="icon icon-xl icon-angle-right"></i></button>
+                                </span>
+                                <b class="x-large">Seiko</b>
+                                <span class="x-dark block margin-10-v">Seiko Watches Men's SNA411 Parker Stainless Steel Watch, 42mm</span>
+                                <span class="progress-bar progress-sm rounded static-150">
+                                    <span class="theme-yellow ui-dark" style="width: 90%;"></span>
+                                </span>
+                                <b>90%</b> <span class="dark">24 Reviews</span>
+                                <span class="sp20"></span>
+                                <b class="x-large">$164.98</b>
+                                <span class="x-dark block"><i class="icon icon-sm icon-finish margin-10-r"></i>2-Days delivery</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
+                            <a class="full-height padding-10 portlet rounded scale" href="#">
+                                <span class="photo-slider margin-10-b">
+                                    <i class="slider-loader icon icon-xl icon-loader"></i>
+                                    <img src="images/product_blank.gif" data-src="images/product_08.jpg,images/product_03.jpg,images/product_04.jpg,images/product_05.jpg,images/product_06.jpg" alt="Image 8">
+                                    <span class="slider-nav"></span>
+                                    <button title="Prev" class="slide-left ease-opacity"><i class="icon icon-xl icon-angle-left"></i></button>
+                                    <button title="Next" class="slide-right ease-opacity"><i class="icon icon-xl icon-angle-right"></i></button>
+                                </span>
+                                <b class="x-large">Movado</b>
+                                <span class="x-dark block margin-10-v">Movado Men's 2100002 Museum Leather Watch, 38mm</span>
+                                <span class="progress-bar progress-sm rounded static-150">
+                                    <span class="theme-yellow ui-dark" style="width: 82%;"></span>
+                                </span>
+                                <b>82%</b> <span class="dark">16 Reviews</span>
+                                <span class="sp20"></span>
+                                <b class="x-large font-red">$79.95</b> <b class="overline">$99.99</b>
+                                <span class="x-dark block"><i class="icon icon-sm margin-10-r icon-arrow-down"></i>20% off</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
+                            <a class="full-height padding-10 portlet rounded scale" href="#">
+                                <span class="photo-slider margin-10-b">
+                                    <i class="slider-loader icon icon-xl icon-loader"></i>
+                                    <img src="images/product_blank.gif" data-src="images/product_09.jpg,images/product_04.jpg,images/product_05.jpg,images/product_06.jpg,images/product_07.jpg" alt="Image 9">
+                                    <span class="slider-nav"></span>
+                                    <button title="Prev" class="slide-left ease-opacity"><i class="icon icon-xl icon-angle-left"></i></button>
+                                    <button title="Next" class="slide-right ease-opacity"><i class="icon icon-xl icon-angle-right"></i></button>
+                                </span>
+                                <b class="x-large">Seiko</b>
+                                <span class="x-dark block margin-10-v">Seiko Watches Men's SNA411 Parker Stainless Steel Watch, 42mm</span>
+                                <span class="progress-bar progress-sm rounded static-150">
+                                    <span class="theme-yellow ui-dark" style="width: 90%;"></span>
+                                </span>
+                                <b>90%</b> <span class="dark">24 Reviews</span>
+                                <span class="sp20"></span>
+                                <b class="x-large">$164.98</b>
+                                <span class="x-dark block"><i class="icon icon-sm icon-finish margin-10-r"></i>2-Days delivery</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
+                            <a class="full-height padding-10 portlet rounded scale" href="#">
+                                <span class="photo-slider margin-10-b">
+                                    <i class="slider-loader icon icon-xl icon-loader"></i>
+                                    <img src="images/product_blank.gif" data-src="images/product_10.jpg,images/product_05.jpg,images/product_06.jpg,images/product_07.jpg,images/product_08.jpg" alt="Image 10">
+                                    <span class="slider-nav"></span>
+                                    <button title="Prev" class="slide-left ease-opacity"><i class="icon icon-xl icon-angle-left"></i></button>
+                                    <button title="Next" class="slide-right ease-opacity"><i class="icon icon-xl icon-angle-right"></i></button>
+                                </span>
+                                <b class="x-large">Movado</b>
+                                <span class="x-dark block margin-10-v">Movado Men's 2100002 Museum Leather Watch, 38mm</span>
+                                <span class="progress-bar progress-sm rounded static-150">
+                                    <span class="theme-yellow ui-dark" style="width: 82%;"></span>
+                                </span>
+                                <b>82%</b> <span class="dark">16 Reviews</span>
+                                <span class="sp20"></span>
+                                <b class="x-large font-red">$79.95</b> <b class="overline">$99.99</b>
+                                <span class="x-dark block"><i class="icon icon-sm margin-10-r icon-arrow-down"></i>20% off</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
+                            <a class="full-height padding-10 portlet rounded scale" href="#">
+                                <span class="photo-slider margin-10-b">
+                                    <i class="slider-loader icon icon-xl icon-loader"></i>
+                                    <img src="images/product_blank.gif" data-src="images/product_01.jpg,images/product_02.jpg,images/product_03.jpg,images/product_04.jpg,images/product_05.jpg" alt="Image 1">
+                                    <span class="slider-nav"></span>
+                                    <button title="Prev" class="slide-left ease-opacity"><i class="icon icon-xl icon-angle-left"></i></button>
+                                    <button title="Next" class="slide-right ease-opacity"><i class="icon icon-xl icon-angle-right"></i></button>
+                                </span>
+                                <b class="x-large">Seiko</b>
+                                <span class="x-dark block margin-10-v">Seiko Watches Men's SNA411 Parker Stainless Steel Watch, 42mm</span>
+                                <span class="progress-bar progress-sm rounded static-150">
+                                    <span class="theme-yellow ui-dark" style="width: 90%;"></span>
+                                </span>
+                                <b>90%</b> <span class="dark">24 Reviews</span>
+                                <span class="sp20"></span>
+                                <b class="x-large">$164.98</b>
+                                <span class="x-dark block"><i class="icon icon-sm icon-finish margin-10-r"></i>2-Days delivery</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
+                            <a class="full-height padding-10 portlet rounded scale" href="#">
+                                <span class="photo-slider margin-10-b">
+                                    <i class="slider-loader icon icon-xl icon-loader"></i>
+                                    <img src="images/product_blank.gif" data-src="images/product_02.jpg,images/product_03.jpg,images/product_04.jpg,images/product_05.jpg,images/product_06.jpg" alt="Image 2">
+                                    <span class="slider-nav"></span>
+                                    <button title="Prev" class="slide-left ease-opacity"><i class="icon icon-xl icon-angle-left"></i></button>
+                                    <button title="Next" class="slide-right ease-opacity"><i class="icon icon-xl icon-angle-right"></i></button>
+                                </span>
+                                <b class="x-large">Movado</b>
+                                <span class="x-dark block margin-10-v">Movado Men's 2100002 Museum Leather Watch, 38mm</span>
+                                <span class="progress-bar progress-sm rounded static-150">
+                                    <span class="theme-yellow ui-dark" style="width: 82%;"></span>
+                                </span>
+                                <b>82%</b> <span class="dark">16 Reviews</span>
+                                <span class="sp20"></span>
+                                <b class="x-large font-red">$79.95</b> <b class="overline">$99.99</b>
+                                <span class="x-dark block"><i class="icon icon-sm margin-10-r icon-arrow-down"></i>20% off</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- list: end -->
+
+                    <!-- pagination: start <-->
+                    <div class="row margin-20-t">
+                        <div class="col-12">
+                            <div class="pagination align-center ease-1st-bg">
+                            <a class="btn prev circle" href="#"><i class="icon icon-sm icon-angle-left"></i></a>
+                            <a class="btn circle" href="#">1</a>
+                            <a class="btn btn-active circle theme-default2 ui-dark" href="#">2</a>
+                            <a class="btn btn-passive circle" href="#">...</a>
+                            <a class="btn circle" href="#">3</a>
+                            <a class="btn circle" href="#">4</a>
+                            <a class="btn circle" href="#">5</a>
+                            <a class="btn next circle" href="#"><i class="icon icon-sm icon-angle-right"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- pagination: end -->
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- mobile menu -->
+    <div class="mobile-menu show-left visible-md ease-layout ease-in-out">
+        <button title="Kapat" class="btn no-padding-h btn-lg btn-invisible circle ease-bg close-mobile-menu"><i class="icon icon-lg icon-remove no-opacity"></i></button>
+        <div class="mobile-menu-title padding-20-v x-large">
+            Filters
+        </div>
+        <div class="mobile-menu-content v-scroll theme-gray ui-light"></div>
+    </div>
+
+</body>
+</html>
