@@ -6,7 +6,7 @@
 /*globals window, document, selector, events */
 var currencySpinner = {
 
-    decimals: true
+    decimals: false
 
 };
 
