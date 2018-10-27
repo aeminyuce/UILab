@@ -1,7 +1,7 @@
 /* portlets */
 .ease-portlet-close { transition-property: transform, opacity; }
 
-.portlet,[class*="portlet-"]:not(.portlet-close) { background-color: #fff; position: relative; }
+.portlet,[class*="portlet-"]:not(.portlet-close) { background-color: #fff; display: block; position: relative; }
 .portlet:not(:last-child),[class*="portlet-"]:not(:last-child) { margin-bottom: 20px; }
 .portlet > .row,[class*="portlet-"] > .row,.content-side > .row { margin-left: inherit; margin-right: inherit; }
 [class*="portlet-"].rounded { border-top-left-radius: 0 !important; border-bottom-left-radius: 0 !important; }

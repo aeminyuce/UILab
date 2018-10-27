@@ -1,7 +1,7 @@
 /* progress bar */
-.progress-bar { height: 8px; background-color: #eee; display: block; overflow: hidden; }
+.progress-bar { height: 8px; background-color: #ddd; display: block; overflow: hidden; }
 .progress-bar:not(:last-child) { margin-bottom: 10px; }
-.progress-bar > span { height: 100%; background-color: #d9d9d9; float: left; }
+.progress-bar > span { height: 100%; background-color: #b3b3b3; float: left; }
 
 .progress-sm,.progress-sm .progress-bar { height: 4px; }
 .progress-sm.rounded,.progress-sm .progress-bar.rounded { border-radius: 2px; }
