@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UI Lab, Real Estate Details</title>
+    <meta name="keywords" content="uilab, responsive, design system, css, javascript, real estate details">
+    <meta name="description" content="CSS & JavaScript powered responsive design system." />
+    <meta name="author" content="Ahmet Emin Yüce"/>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
+
+    <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/animations.css" />
+    <link rel="stylesheet" href="../css/alignments.css" />
+    <link rel="stylesheet" href="../css/buttons.css" />
+    <link rel="stylesheet" href="../css/borders.css" />
+    <link rel="stylesheet" href="../css/carousel.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/helpers.css" />
+    <link rel="stylesheet" href="../css/icons.css" />
+    <link rel="stylesheet" href="../css/listings.css" />
+    <link rel="stylesheet" href="../css/margins.css" />
+    <link rel="stylesheet" href="../css/paddings.css" />
+    <link rel="stylesheet" href="../css/portlets.css" />
+    <link rel="stylesheet" href="../css/photo-gallery.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/static-grid.css" />
+    <link rel="stylesheet" href="../css/sticky-header.css" />
+    <link rel="stylesheet" href="../css/transitions.css" />
+    <link rel="stylesheet" href="../css/typography.css" />
+    <link rel="stylesheet" href="../css/stripes.css" />
+    <link rel="stylesheet" href="../css/swatches.css" />
+    <link rel="stylesheet" href="../css/svg-donut-chart.css" />
+    <link rel="stylesheet" href="../css/top-button.css" />
+
+    <!-- Javascript Tools -->
+    <script src="../js/selector.js"></script>
+    <script src="../js/events.js"></script>
+
+    <script src="../js/carousel.js"></script>
+    <script src="../js/countdown.js"></script>
+    <script src="../js/currency-spinner.js"></script>
+    <script src="../js/forms.js"></script>
+    <script src="../js/photo-gallery.js"></script>
+    <script src="../js/static-grid.js"></script>
+    <script src="../js/sticky-header.js"></script>
+    <script src="../js/swatches.js"></script>
+    <script src="../js/svg-donut-chart.js"></script>
+    <script src="../js/top-button.js"></script>
+    <script src="../js/transitions.js"></script>
+    <script src="../js/user-agents.js"></script>
+
+    <!-- font icons CSS -->
+    <link rel="stylesheet" href="../../UIIcons/font-icons/outline/font-icons.css" />
+
+    <!-- custom CSS -->
+    <style>
+
+        body { background-color: #f9f9f9; }
+
+        .detail-gallery { position: relative; }
+        .detail-gallery img { display: block; position: relative; z-index: 2; }
+        .detail-gallery img,.detail-holder img { width: 100%; display: inline-block; position: relative; z-index: 1; cursor: pointer; }
+        html:not(.mobile) .detail-gallery:not(.detail-loader) img:hover { opacity: .8; }
+        .mobile .detail-gallery img { opacity: .8; }
+
+        .detail-gallery .icon { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+        .detail-gallery .icon-loader { margin: -20px 0 0 -20px; }
+
+        .detail-gallery .detail-loader { background-color: rgba(0,0,0,.075); }
+        .detail-gallery.detail-loader img { opacity: 0; }
+        .detail-gallery.detail-loader .icon-zoom { display: none; }
+        .detail-gallery.detail-loader .icon-loader { opacity: .45; animation: detail-loader 3s linear infinite; }
+        .detail-gallery:not(.detail-loader) .icon-loader { display: none; }
+
+        #detail-carousel { margin: 15px -2px 0 -2px; }
+        #detail-carousel .img { border: solid 2px #fff; cursor: pointer; }
+        #detail-carousel .img.selected { border-color: #ffa600; }
+        html:not(.mobile) #detail-carousel .img:not(.selected):not(:hover) { opacity: .65; }
+
+    </style>
+
+    <script>
+
+        events.onload(function () {
+
+            'use strict';
+
+            events.on('#detail-carousel .img', 'click', function () {
+
+                var parent, target, thumbs, index, newImg;
+
+                parent = selector('.detail-gallery');
+                target = selector('img', parent);
+                thumbs = selector('#detail-carousel .img');
+
+                index = Array.prototype.slice.call(thumbs).indexOf(this);
+                target.setAttribute('data-count', index);
+
+                events.addClass(parent, 'detail-loader');
+
+                newImg = new Image();
+                newImg.src = this.getAttribute('data-href');
+
+                newImg.addEventListener('load', function () {
+
+                    target.src = newImg.src;
+                    events.removeClass(parent, 'detail-loader');
+
+                });
+
+                events.removeClass(thumbs, 'selected');
+                events.addClass(this, 'selected');
+
+            });
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="container theme-default ui-dark">
+        <div class="row theme-default2 ui-border top-bordered dual-bordered">
+            <div class="col-12">
+                <a href="examples.html" class="btn btn-lg no-padding-h circle ease-bg margin-10-r"><i class="icon icon-md no-opacity icon-long-arrow-left"></i></a>
+                <h1 class="x-large inline-block">UI Lab, Real Estate Details</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- documentation examples -->
+    <main class="container no-gutter">
+        <div class="fixed padding-30-v">
+
+            <div class="portlet padding-15 sm-no-padding rounded">
+                <div class="col-static">
+
+                    <div class="row">
+                        <div class="col-12">
+
+                            <div class="detail-gallery">
+                                <img src="images/house_01.jpg" class="rounded photo-gallery-call cursor-pointer img-responsive ease-opacity" data-target="#detail-carousel" data-count="0" alt="">
+                                <i class="icon-zoom icon icon-xxl icon-search-plus"></i>
+                                <i class="icon-loader icon icon-xxl icon-loader"></i>
+                            </div>
+
+                            <div id="detail-carousel" class="carousel margin-15-b" data-col="6" data-col-mobile="3">
+                                <div class="carousel-slider ease-2nd-opacity ease-transform ease-slow photo-gallery-passive">
+                                    <div class="content">
+                                        <img class="img rounded selected" src="images/blank.gif" data-src="images/house_01.jpg" data-href="images/house_01.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_02.jpg" data-href="images/house_02.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_03.jpg" data-href="images/house_03.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_04.jpg" data-href="images/house_04.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_05.jpg" data-href="images/house_05.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_01.jpg" data-href="images/house_01.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_02.jpg" data-href="images/house_02.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_03.jpg" data-href="images/house_03.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_04.jpg" data-href="images/house_04.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_05.jpg" data-href="images/house_05.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="carousel-nav">
+                                    <button class="carousel-prev btn btn-lg btn-invisible no-padding-h rounded ease-bg"><i class="icon icon-lg icon-angle-left"></i></button>
+                                    <span class="dots"></span>
+                                    <button class="carousel-next btn btn-lg btn-invisible no-padding-h rounded ease-bg"><i class="icon icon-lg icon-angle-right"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="rounded theme-gray ui-x-light">
+                                <div class="padding-30">
+                                    <h3>Power Saving Statistics</h3>
+                                    <ul class="list-unstyled">
+                                        <li><b>Power per Month:</b> 4,86 kWp</li>
+                                        <li><b>Yearly Output:</b> 4900 kWp</li>
+                                    </ul>
+                                    <div class="row row-lg-padding">
+                                        <div class="col-3 col-sm-6 col-xs-6 no-responsive">
+                                            <div class="donut-chart">
+                                                <strong class="dark"><span class="large xx-dark">Interior</span><br>4,9/5</strong>
+                                                <svg viewBox="0 0 160 160">
+                                                    <circle r="69.85699" cy="80" cx="80" stroke="#2dbd3a" data-percent="96" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 col-sm-6 col-xs-6 no-responsive">
+                                            <div class="donut-chart">
+                                                <strong class="dark"><span class="large xx-dark">Exterior</span><br>4/5</strong>
+                                                <svg viewBox="0 0 160 160">
+                                                    <circle r="69.85699" cy="80" cx="80" stroke="#2dbd3a" data-percent="88" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 col-sm-6 col-xs-6 no-responsive">
+                                            <div class="donut-chart">
+                                                <strong class="dark"><span class="large xx-dark">Quality</span><br>4/5</strong>
+                                                <svg viewBox="0 0 160 160">
+                                                    <circle r="69.85699" cy="80" cx="80" stroke="#ffa600" data-percent="86" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 col-sm-6 col-xs-6 no-responsive">
+                                            <div class="donut-chart">
+                                                <strong class="dark"><span class="large xx-dark">Savings</span><br>3.9/5</strong>
+                                                <svg viewBox="0 0 160 160">
+                                                    <circle r="69.85699" cy="80" cx="80" stroke="#f47500" data-percent="80" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="x-dark small align-center padding-10">
+                                        <b>Yearly Savings Costs: $18.970</b>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="static-350 padding-10">
+
+                        <div class="align-center margin-15-b theme-default2">
+                            <div class="padding-10-v ui-dark margin-1-b rounded-top">
+                                <ul class="list-inline countdown no-user-select">
+                                    <li class="padding-5"><i class="icon icon-xl icon-clock opacity-more ease-opacity"></i></li>
+                                    <li class="padding-5"><b class="d xx-large block">12</b>Days</li>
+                                    <li class="padding-5"><b class="h xx-large block">22</b>Hours</li>
+                                    <li class="padding-5"><b class="m xx-large block">01</b>Minutes</li>
+                                    <li class="padding-5"><b class="s xx-large block">17</b>Seconds</li>
+                                </ul>
+                            </div>
+                            <div class="padding-5 ui-dark rounded-bottom stripe-dark animate-progress">
+                                <b class="small light-ui">Closing Date: 10 August, 2018, Friday</b>
+                            </div>
+                        </div>
+
+                        <div class="align-center margin-15-b theme-default2">
+                            <div class="padding-20 theme-gray ui-x-light">
+                                <i class="icon ui-text icon-lg icon-floor-plan"></i>
+                                <span class="large inline-block margin-10-r">7+1</span>
+                                <i class="icon ui-text icon-lg icon-home-width"></i>
+                                <span class="large inline-block margin-10-r">628m<sup>2</sup></span>
+                                <i class="icon ui-text icon-lg icon-floor-number"></i> Ground Floor
+                                <span class="sp10"></span>
+                                <i class="icon dark icon-md icon-marker"></i> Nashville, Tenessee
+                            </div>
+                            <div class="padding-10 rounded-bottom theme-gray ui-light">
+                                Real Estate ID: <b>RE-616</b>
+                            </div>
+                        </div>
+
+                        <div class="margin-15-b rounded theme-gray ui-x-light">
+                            <div class="padding-15-v padding-30-h bottom-bordered">
+                                <div class="largest bold">$630.000</div>
+                                <span class="dark">LATEST OFFER</span>
+                            </div>
+                            <div class="padding-30">
+                                <div class="x-dark margin-15-b"><b>Min. Offer Amount: $5000</b><br>Automatic 5% deposit required. This could changed, depending on market.</div>
+                                <form action="#">
+                                    <div class="col-static no-responsive currency-spinner">
+                                        <div class="static-50">
+                                            <button class="currency-down btn no-padding-h btn-lg btn-block rounded-left ease-bg" type="button"><i class="icon icon-md icon-minus"></i></button>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 no-padding">
+                                                <div class="text text-lg dual-bordered ease-form">
+                                                    <input class="bold align-center x-large" type="text" value="645.000" min="645.000" step="5.000" maxlength="12" autocomplete="off">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="static-50">
+                                            <button class="currency-up btn no-padding-h btn-lg btn-block rounded-right ease-bg" type="button"><i class="icon icon-md icon-plus"></i></button>
+                                        </div>
+                                    </div>
+                                    <span class="sp15"></span>
+                                    <button class="btn btn-lg btn-block rounded theme-green ui-dark ease-bg" type="submit">MAKE OFFER</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="padding-15-v padding-30-h rounded bordered">
+                            <ul class="list-unstyled dark list-spacer-15">
+                                <li><b class="block">Type</b>Single Family</li>
+                                <li><b class="block">Beds</b>4</li>
+                                <li><b class="block">Baths</b>2</li>
+                                <li><b class="block">Year Build</b>2009</li>
+                                <li><b class="block">Heating</b>Air Cooling</li>
+                                <li><b class="block">Parking</b>2 Spaces</li>
+                                <li><b class="block">Sqft</b>2,980m<sup>2</sup></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
