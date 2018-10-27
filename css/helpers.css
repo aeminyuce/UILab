@@ -147,7 +147,7 @@ html:not(.mobile) .scale-more:hover { transform: scale(1.2); }
 .list-unstyled,.list-custom,.list-custom ul,.list-custom ol,.list-inline,.list-inline ul,.list-inline ol { list-style: none; padding: 0; }
 .list-unstyled:not(:last-child) { margin-bottom: 20px; }
 .list-custom,.list-inline { margin-bottom: 0; }
-.list-inline ul,.list-inline ol,.list-inline li { display: inline-block; }
+.list-inline ul,.list-inline ol,.list-inline li { vertical-align: middle; display: inline-block; }
 
 .sp1,.sp2,.sp3,.sp4,.sp5,.sp10,.sp15,.sp20,.sp25,.sp30 { width: 100%; display: block; clear: both !important; }
 .sp1 { height: 1px; } .sp2 { height: 2px; } .sp3 { height: 3px; } .sp4 { height: 4px; } .sp5 { height: 5px; } .sp10 { height: 10px; } .sp15 { height: 15px; } .sp20 { height: 20px; } .sp25 { height: 25px; } .sp30 { height: 30px; }
