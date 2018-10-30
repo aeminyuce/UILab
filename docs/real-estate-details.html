@@ -26,8 +26,9 @@
     <link rel="stylesheet" href="../css/listings.css" />
     <link rel="stylesheet" href="../css/margins.css" />
     <link rel="stylesheet" href="../css/paddings.css" />
-    <link rel="stylesheet" href="../css/portlets.css" />
     <link rel="stylesheet" href="../css/photo-gallery.css" />
+    <link rel="stylesheet" href="../css/portlets.css" />
+    <link rel="stylesheet" href="../css/product-gallery.css" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/static-grid.css" />
     <link rel="stylesheet" href="../css/sticky-header.css" />
@@ -47,6 +48,7 @@
     <script src="../js/currency-spinner.js"></script>
     <script src="../js/forms.js"></script>
     <script src="../js/photo-gallery.js"></script>
+    <script src="../js/product-gallery.js"></script>
     <script src="../js/static-grid.js"></script>
     <script src="../js/sticky-header.js"></script>
     <script src="../js/swatches.js"></script>
@@ -60,68 +62,8 @@
 
     <!-- custom CSS -->
     <style>
-
         body { background-color: #f9f9f9; }
-
-        .detail-gallery { min-height: 210px; position: relative; }
-        .detail-gallery img { display: block; position: relative; z-index: 2; }
-        .detail-gallery img,.detail-holder img { width: 100%; display: inline-block; position: relative; z-index: 1; cursor: pointer; }
-        html:not(.mobile) .detail-gallery:not(.detail-loader) img:hover { opacity: .8; }
-        .mobile .detail-gallery img { opacity: .8; }
-
-        .detail-gallery .icon { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
-        .detail-gallery .icon-loader { margin: -20px 0 0 -20px; }
-
-        .detail-gallery .detail-loader { background-color: rgba(0,0,0,.075); }
-        .detail-gallery.detail-loader img { opacity: 0; }
-        .detail-gallery.detail-loader .icon-zoom { display: none; }
-        .detail-gallery.detail-loader .icon-loader { opacity: .45; animation: detail-loader 3s linear infinite; }
-        .detail-gallery:not(.detail-loader) .icon-loader { display: none; }
-
-        #detail-carousel { margin: 15px -2px 0 -2px; }
-        #detail-carousel .img { border: solid 2px #fff; cursor: pointer; }
-        #detail-carousel .img.selected { border-color: #ffa600; }
-        html:not(.mobile) #detail-carousel .img:not(.selected):not(:hover) { opacity: .65; }
-
     </style>
-
-    <script>
-
-        events.onload(function () {
-
-            'use strict';
-
-            events.on('#detail-carousel .img', 'click', function () {
-
-                var parent, target, thumbs, index, newImg;
-
-                parent = selector('.detail-gallery');
-                target = selector('img', parent);
-                thumbs = selector('#detail-carousel .img');
-
-                index = Array.prototype.slice.call(thumbs).indexOf(this);
-                target.setAttribute('data-count', index);
-
-                events.addClass(parent, 'detail-loader');
-
-                newImg = new Image();
-                newImg.src = this.getAttribute('data-href');
-
-                newImg.addEventListener('load', function () {
-
-                    target.src = newImg.src;
-                    events.removeClass(parent, 'detail-loader');
-
-                });
-
-                events.removeClass(thumbs, 'selected');
-                events.addClass(this, 'selected');
-
-            });
-
-        });
-
-    </script>
 
 </head>
 
@@ -147,50 +89,65 @@
                     <div class="row">
                         <div class="col-12">
 
-                            <div class="detail-gallery">
-                                <img src="images/house_01.jpg" class="rounded photo-gallery-call cursor-pointer img-responsive ease-opacity" data-target="#detail-carousel" data-count="0" alt="">
-                                <i class="icon-zoom icon icon-xxl icon-search-plus"></i>
-                                <i class="icon-loader icon icon-xxl icon-loader"></i>
-                            </div>
-
-                            <div id="detail-carousel" class="carousel margin-15-b" data-col="6" data-col-mobile="3">
-                                <div class="carousel-slider ease-2nd-opacity ease-transform ease-slow photo-gallery-passive">
-                                    <div class="content">
-                                        <img class="img rounded selected" src="images/blank.gif" data-src="images/house_01.jpg" data-href="images/house_01.jpg" alt="">
+                            <div class="product-gallery">
+                                <div class="detail">
+                                    <img src="images/house_01.jpg" class="rounded photo-gallery-call cursor-pointer img-responsive ease-opacity" data-target="#detail-carousel" data-count="0" alt="">
+                                    <i class="icon-zoom icon icon-xxl icon-search-plus"></i>
+                                    <i class="icon-loader icon icon-xxl icon-loader"></i>
+                                </div>
+                                <div id="detail-carousel" class="thumbs carousel" data-col="6" data-col-mobile="3">
+                                    <div class="carousel-slider ease-2nd-opacity ease-transform ease-slow photo-gallery-passive">
+                                        <div class="content">
+                                            <img class="img rounded selected" src="images/blank.gif" data-src="images/house_01.jpg" data-href="images/house_01.jpg" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <img class="img rounded" src="images/blank.gif" data-src="images/house_02.jpg" data-href="images/house_02.jpg" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <img class="img rounded" src="images/blank.gif" data-src="images/house_03.jpg" data-href="images/house_03.jpg" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <img class="img rounded" src="images/blank.gif" data-src="images/house_04.jpg" data-href="images/house_04.jpg" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <img class="img rounded" src="images/blank.gif" data-src="images/house_05.jpg" data-href="images/house_05.jpg" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <img class="img rounded" src="images/blank.gif" data-src="images/house_01.jpg" data-href="images/house_01.jpg" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <img class="img rounded" src="images/blank.gif" data-src="images/house_02.jpg" data-href="images/house_02.jpg" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <img class="img rounded" src="images/blank.gif" data-src="images/house_03.jpg" data-href="images/house_03.jpg" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <img class="img rounded" src="images/blank.gif" data-src="images/house_04.jpg" data-href="images/house_04.jpg" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <img class="img rounded" src="images/blank.gif" data-src="images/house_05.jpg" data-href="images/house_05.jpg" alt="">
+                                        </div>
                                     </div>
-                                    <div class="content">
-                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_02.jpg" data-href="images/house_02.jpg" alt="">
-                                    </div>
-                                    <div class="content">
-                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_03.jpg" data-href="images/house_03.jpg" alt="">
-                                    </div>
-                                    <div class="content">
-                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_04.jpg" data-href="images/house_04.jpg" alt="">
-                                    </div>
-                                    <div class="content">
-                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_05.jpg" data-href="images/house_05.jpg" alt="">
-                                    </div>
-                                    <div class="content">
-                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_01.jpg" data-href="images/house_01.jpg" alt="">
-                                    </div>
-                                    <div class="content">
-                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_02.jpg" data-href="images/house_02.jpg" alt="">
-                                    </div>
-                                    <div class="content">
-                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_03.jpg" data-href="images/house_03.jpg" alt="">
-                                    </div>
-                                    <div class="content">
-                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_04.jpg" data-href="images/house_04.jpg" alt="">
-                                    </div>
-                                    <div class="content">
-                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_05.jpg" data-href="images/house_05.jpg" alt="">
+                                    <div class="carousel-nav">
+                                        <button class="carousel-prev btn btn-lg btn-invisible no-padding-h rounded ease-bg"><i class="icon icon-lg icon-angle-left"></i></button>
+                                        <span class="dots"></span>
+                                        <button class="carousel-next btn btn-lg btn-invisible no-padding-h rounded ease-bg"><i class="icon icon-lg icon-angle-right"></i></button>
                                     </div>
                                 </div>
-                                <div class="carousel-nav">
-                                    <button class="carousel-prev btn btn-lg btn-invisible no-padding-h rounded ease-bg"><i class="icon icon-lg icon-angle-left"></i></button>
-                                    <span class="dots"></span>
-                                    <button class="carousel-next btn btn-lg btn-invisible no-padding-h rounded ease-bg"><i class="icon icon-lg icon-angle-right"></i></button>
+                                <!-- if you don't want to use carousel:
+                                <div id="detail-carousel" class="thumbs ease-1st-opacity">
+                                    <span class="img-holder"><img class="img rounded selected" src="images/house_01.jpg" data-href="images/house_01.jpg" alt=""></span>
+                                    <span class="img-holder"><img class="img rounded" src="images/house_02.jpg" data-href="images/house_02.jpg" alt=""></span>
+                                    <span class="img-holder"><img class="img rounded" src="images/house_03.jpg" data-href="images/house_03.jpg" alt=""></span>
+                                    <span class="img-holder"><img class="img rounded" src="images/house_04.jpg" data-href="images/house_04.jpg" alt=""></span>
+                                    <span class="img-holder"><img class="img rounded" src="images/house_05.jpg" data-href="images/house_05.jpg" alt=""></span>
+                                    <span class="img-holder"><img class="img rounded" src="images/house_01.jpg" data-href="images/house_01.jpg" alt=""></span>
+                                    <span class="img-holder"><img class="img rounded" src="images/house_02.jpg" data-href="images/house_02.jpg" alt=""></span>
+                                    <span class="img-holder"><img class="img rounded" src="images/house_03.jpg" data-href="images/house_03.jpg" alt=""></span>
+                                    <span class="img-holder"><img class="img rounded" src="images/house_04.jpg" data-href="images/house_04.jpg" alt=""></span>
+                                    <span class="img-holder"><img class="img rounded" src="images/house_05.jpg" data-href="images/house_05.jpg" alt=""></span>
                                 </div>
+                                -->
                             </div>
 
                             <div class="rounded theme-gray ui-x-light">
