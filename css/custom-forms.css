@@ -9,7 +9,7 @@
 
 .check-custom > .icon,.radio-custom > .icon,.switch-custom > .icon { content: ""; width: 14px; height: 14px; display: block; position: absolute; top: 3px; left: 3px;}
 .check-custom > .icon,.radio-custom > .icon { background-color: rgba(0,0,0,.65); }
-.switch-custom > .icon { background-color: rgba(0,0,0,.15); }
+.switch-custom > input:not(:checked) + .icon { background-color: rgba(0,0,0,.15); }
 .check-custom > .icon,.radio-custom > .icon { opacity: 0; }
 .check-custom.dual-bordered > .icon,.radio-custom.dual-bordered > .icon,.switch-custom.dual-bordered > .icon { top: 2px; left: 2px; }
 .check-custom > .icon { border-radius: 1px; }
@@ -17,7 +17,8 @@
 
 .check-custom input:checked + .icon,.check-custom input:indeterminate + .icon,.radio-custom input:checked + .icon { opacity: 1; }
 .check-custom input:indeterminate + .icon { height: 3px; top: 8px; }
-.switch-custom input:checked + .icon { background-color: #2dbd3a; left: 25px; }
+.switch-custom input:checked + .icon { left: 25px; }
+.switch-custom input:checked + .icon:not([class*="ui-"]) { background-color: #2dbd3a; }
 .switch-custom input:indeterminate + .icon { background-color: #ffa600; left: 14px; }
 .switch-custom.dual-bordered input:checked + .icon { left: 24px; }
 .switch-custom.dual-bordered input:indeterminate + .icon { left: 13px; }
