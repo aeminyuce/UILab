@@ -527,7 +527,23 @@ function photoGalleryFnc() {
 
     }
 
-    events.on(document, 'click touchend', '.photo-gallery a.img', function (e) { galleryFnc(e, this); });
+    events.on(document, 'click', '.photo-gallery a.img', function (e) { galleryFnc(e, this); });
+
+    events.on(document, 'touchstart touchmove touchend', '.photo-gallery a.img', function (e) {
+
+        if (e.type === 'touchstart') {
+            window.photoGalleryTouchmove = false;
+        }
+
+        if (e.type === 'touchmove') {
+            window.photoGalleryTouchmove = true;
+        }
+
+        if (e.type === 'touchend' && window.photoGalleryTouchmove === false) {
+            galleryFnc(e, this);
+        }
+
+    });
 
     events.on(document, 'click', '.photo-gallery-call', function (e) {
 
