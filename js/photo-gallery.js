@@ -30,7 +30,7 @@ function photoGalleryFnc() {
 
             var img, newImg, imgLength, imgFnc;
 
-            img = selector('.img img', gallery[galleryCounter]);
+            img = selector('a.img img', gallery[galleryCounter]);
             imgLength = img.length - 1;
 
             imgFnc = function () {
@@ -74,7 +74,7 @@ function photoGalleryFnc() {
 
     }
 
-    function galleryFnc(e, that) {
+    function galleryFnc(e, that, call) {
 
         e.preventDefault();
         var i, ua, parent, images, preview, html, index, loader, newImg, img, imgPosX, imgPosY, info, imgZoom, lastTouchEnd, waitPinchZoom;
@@ -86,7 +86,12 @@ function photoGalleryFnc() {
             parent = events.closest(that, '.photo-gallery-passive')[0];
         }
 
-        images = selector('.img', parent);
+        if (call === undefined) {
+            images = selector('a.img', parent);
+
+        } else {
+            images = selector('.img', parent);
+        }
 
         // mobile and touch screens: show data titles first
         if (e.type === 'touchend') {
@@ -522,7 +527,7 @@ function photoGalleryFnc() {
 
     }
 
-    events.on(document, 'click touchend', '.photo-gallery .img', function (e) { galleryFnc(e, this); });
+    events.on(document, 'click touchend', '.photo-gallery a.img', function (e) { galleryFnc(e, this); });
 
     events.on(document, 'click', '.photo-gallery-call', function (e) {
 
@@ -545,7 +550,7 @@ function photoGalleryFnc() {
 
         }
 
-        galleryFnc(e, selector(target + ' .img')[count]);
+        galleryFnc(e, selector(target + ' .img')[count], 'call');
 
     });
 

@@ -7,8 +7,8 @@
 .carousel-slider { width: 20000px; overflow: hidden; }
 .carousel-slider > .content { margin-bottom: 5px; overflow: hidden; float: left; }
 .carousel:not(.active) .carousel-slider > .content { width: 1px; }
-.carousel-slider > .content .img { width: 100%; height: auto; }
-.carousel-slider > .content .img:not(.loaded) { background-color: #ddd; animation: carousel-img-loader 3s linear infinite; }
+.carousel-slider > .content img.img { width: 100%; height: auto; }
+.carousel-slider > .content img.img:not(.loaded) { background-color: #ddd; animation: carousel-img-loader 3s linear infinite; }
 
 /* ie9 not supported row equal heights */
 .carousel-slider { display: -webkit-box !important; display: -ms-flexbox !important; display: -webkit-flex !important; display: flex !important; flex-wrap: wrap; }

@@ -11,7 +11,7 @@ function carouselLazyImages(col, i) {
     var images, img = [];
 
     images = selector('.carousel');
-    images = selector('.content .img[data-src]', images[i]);
+    images = selector('.content img.img[data-src]', images[i]);
 
     if (images.length > 0) {
 
