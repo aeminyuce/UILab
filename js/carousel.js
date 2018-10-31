@@ -91,6 +91,8 @@ function carouselResizerFnc(i, that) {
 
         if (window.carouselCounts[i] > (navSides - 1)) { window.carouselCounts[i] = (navSides - 1); }
 
+        that[i].setAttribute('data-content', (window.carouselCounts[i] + 1));
+
         events.removeClass(navDotsIn, 'selected');
         events.addClass(navDotsIn[window.carouselCounts[i]], 'selected');
 
@@ -205,6 +207,8 @@ function carouselFnc() {
                 if (window.carouselCounts[i] < 0) { window.carouselCounts[i] = 0; }
 
             }
+
+            that[0].setAttribute('data-content', (window.carouselCounts[i] + 1));
 
             events.removeClass(navDots, 'selected');
             events.addClass(navDots[window.carouselCounts[i]], 'selected');
