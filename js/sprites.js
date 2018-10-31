@@ -8,7 +8,7 @@ var sprites = {
 
     spritePath: '', // ex: img/
     spriteImages: '', // ex: 'file.ext' or 'file1.ext,file2.ext'
-    spriteImageSizes: '', // ex: '640x480px' or '640x480px,800x600px'
+    spriteImageSizes: '', // ex: '640x480' or '640x480px,800x600'
 
     spriteVersion: '', // ex: ?v=1.0
 
