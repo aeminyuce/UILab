@@ -8,15 +8,23 @@ function stickyHeader() {
 
     'use strict';
 
-    var header = selector('header');
+    var header, stickyStatic;
+
+    header = selector('header');
+    stickyStatic = events.hasClass(header, 'sticky-static');
+
     if (window.pageYOffset > header[0].offsetTop) {
 
-        selector('body')[0].style.paddingTop = header[0].offsetHeight + 'px';
+        if (!stickyStatic) {
+            selector('body')[0].style.paddingTop = header[0].offsetHeight + 'px';
+        }
         events.addClass(header, 'sticky');
 
     } else {
 
-        selector('body')[0].style.paddingTop = '0';
+        if (!stickyStatic) {
+            selector('body')[0].style.paddingTop = '0';
+        }
         events.removeClass(header, 'sticky');
 
     }

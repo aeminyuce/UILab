@@ -1,2 +1,2 @@
 /* sticky header */
-header.sticky { width: 100%; position: fixed; top: 0; right: 0; left: 0; z-index: 89; }
+header.sticky,header.sticky-static { width: 100%; position: fixed; top: 0; right: 0; left: 0; z-index: 89; }
