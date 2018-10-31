@@ -45,7 +45,8 @@ html:not(.mobile) .btn.ui-dark:hover > .icon,html:not(.mobile) .btn.ui-x-dark:ho
 .btn-active { box-shadow: inset 0 1px 3px rgba(0,0,0,.15); }
 .btn-block { width: 100%; display: block; }
 
-.btn-invisible:not(:hover) { background-color: rgba(0,0,0,0); border-color: rgba(0,0,0,0) !important; }
+.btn-invisible:not(:hover) { background-color: rgba(0,0,0,0); }
+.btn-invisible-border:not(:hover) { border-color: rgba(0,0,0,0) !important; }
 
 html:not(.mobile) .btn:not(.no-hover):not([class*="ui-"]):not(.btn-passive):not(.swatch-active):hover { background-color: rgba(0,0,0,.15); }
 html:not(.mobile) .btn.btn-invisible:not(.no-hover):not([class*="ui-"]):not(.btn-passive):not(.swatch-active):hover { background-color: rgba(0,0,0,.075); }
