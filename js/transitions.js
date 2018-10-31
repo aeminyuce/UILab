@@ -46,7 +46,7 @@ function transitionsFnc() {
 
 }
 
-function pauseTransitionsFnc() { // close transitions and animations on window resizing
+function pauseTransitionsFnc() { // close transitions and animations on window resizing and window scrolling
 
     'use strict';
 
