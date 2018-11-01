@@ -1,43 +1,56 @@
 /* buttons */
 .btn { text-align: center; vertical-align: middle; height: 32px; background-color: rgba(0,0,0,.08); padding-top: 6px; padding-bottom: 6px; display: inline-block; }
 input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
-.btn:not(.btn-passive) { cursor: pointer; }
 .btn:not(.btn-block):not(.btn-multitext).no-padding-h { width: 32px !important; }
-.btn:hover { text-decoration: none; }
+.btn:not(.btn-passive) { cursor: pointer; }
+.btn:not([class*="bordered"]) { border-width: 0; }
 .btn:not(.btn-multitext) { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+.btn:hover { text-decoration: none; }
+
 .btn.btn-multitext { word-wrap: break-word; height: auto !important; min-height: 32px; }
 .btn-sm.btn-multitext { min-height: 26px; }
 .btn-xs.btn-multitext { min-height: 22px; }
 .btn-xxs.btn-multitext { min-height: 16px; }
 
 .btn:not(.circle) { padding-right: 10px; padding-left: 10px; }
-.btn:not([class*="bordered"]) { border-width: 0; }
+.btn:not(.btn-xs):not(.btn-xxs).circle { padding-right: 20px; padding-left: 20px;}
 
 .btn > .icon:not(.no-opacity),.btn.icon-inline:before { opacity: .45; }
 .btn.ui-dark > .icon,.btn.ui-x-dark > .icon { opacity: 1; }
 .btn.ui-dark.icon-inline:before,.btn.ui-x-dark.icon-inline:before { color: #fff; opacity: 1; }
 html:not(.mobile) .btn.ui-dark:hover > .icon,html:not(.mobile) .btn.ui-x-dark:hover > .icon { opacity: 1 !important; }
 
-.btn-lg { font-size: 16px; height: 42px; padding-top: 10px; padding-bottom: 10px; }
+.btn-lg { font-size: 16px; height: 42px; }
 .btn-lg:not(.btn-block):not(.btn-multitext).no-padding-h { width: 42px !important; }
+.btn-lg:not([class*="bordered"]) { padding-top: 10px; padding-bottom: 10px; }
+.btn-lg.bordered { padding-top: 9px; padding-bottom: 9px; }
+.btn-lg.dual-bordered { padding-top: 8px; padding-bottom: 8px; }
 .btn-lg.rounded { border-radius: 6px; }
 
-.btn-sm { font-size: 12px; height: 26px; padding-top: 5px; padding-bottom: 5px; }
+.btn-sm { font-size: 12px; height: 26px; }
 .btn-sm:not(.btn-block):not(.btn-multitext).no-padding-h { width: 26px !important; }
+.btn-sm:not([class*="bordered"]) { padding-top: 5px; padding-bottom: 5px; }
+.btn-sm.bordered { padding-top: 4px; padding-bottom: 4px; }
+.btn-sm.dual-bordered { padding-top: 3px; padding-bottom: 3px; }
 .btn-sm.rounded { border-radius: 3px; }
 .btn-sm:not(.circle) { padding-right: 8px; padding-left: 8px; }
 
-.btn-xs { font-size: 11px; height: 22px; padding-top: 4px; padding-bottom: 4px; }
+.btn-xs { font-size: 11px; height: 22px; }
 .btn-xs:not(.btn-block):not(.btn-multitext).no-padding-h { width: 22px !important; }
+.btn-xs:not([class*="bordered"]) { padding-top: 4px; padding-bottom: 4px; }
+.btn-xs.bordered { padding-top: 3px; padding-bottom: 3px; }
+.btn-xs.dual-bordered { padding-top: 2px; padding-bottom: 2px; }
 .btn-xs.rounded { border-radius: 2px; }
 .btn-xs:not(.circle) { padding-right: 5px; padding-left: 5px; }
-.btn-xs.circle { padding-right: 10px !important; padding-left: 10px !important; }
+.btn-xs.circle { padding-right: 10px; padding-left: 10px; }
 
-.btn-xxs { font-size: 10px; height: 18px; padding-top: 2px; padding-bottom: 2px; }
+.btn-xxs { font-size: 10px; height: 18px; }
 .btn-xxs:not(.btn-block):not(.btn-multitext).no-padding-h { width: 14px !important; }
+.btn-xxs:not([class*="bordered"]) { padding-top: 2px; padding-bottom: 2px; }
+.btn-xxs.bordered { padding-top: 1px; padding-bottom: 1px; }
 .btn-xxs.rounded { border-radius: 2px; }
 .btn-xxs:not(.circle) { padding-right: 2px; padding-left: 2px; }
-.btn-xxs.circle { padding-right: 6px !important; padding-left: 6px !important; }
+.btn-xxs.circle { padding-right: 6px; padding-left: 6px; }
 
 .btn-passive { opacity: .75; cursor: default; }
 .btn-passive:hover { cursor: not-allowed; }
@@ -51,16 +64,7 @@ html:not(.mobile) .btn.ui-dark:hover > .icon,html:not(.mobile) .btn.ui-x-dark:ho
 html:not(.mobile) .btn:not(.no-hover):not([class*="ui-"]):not(.btn-passive):not(.swatch-active):hover { background-color: rgba(0,0,0,.15); }
 html:not(.mobile) .btn.btn-invisible:not(.no-hover):not([class*="ui-"]):not(.btn-passive):not(.swatch-active):hover { background-color: rgba(0,0,0,.075); }
 
-@media (min-width: 481px) {
-    .btn.circle { padding-right: 20px; padding-left: 20px;}
-
-    .btn-lg:not(.circle) { padding-right: 15px; padding-left: 15px; }
-    .btn-lg.circle { padding-right: 30px; padding-left: 30px; }
-
-    .btn-sm.circle { padding-right: 16px; padding-left: 16px; }
-}
 @media (max-width: 480px) {
-    .btn.circle,.btn-lg,.btn-sm.circle { padding-right: 10px; padding-left: 10px; }
-    .btn-responsive { min-width: 100% !important; width: 100% !important; max-width: 100% !important; display: block; }
+    .btn-responsive { width: 100% !important; display: block; }
     .btn-responsive:not(:last-child) { margin-bottom: 5px; }
 }
