@@ -15,11 +15,6 @@
 .ease-slow3x,.ease-slow3x[class*="ease-1st-"] > *,.ease-slow3x[class*="ease-2nd-"] > * > * { transition-duration: 1.2s; }
 .ease-slow4x,.ease-slow4x[class*="ease-1st-"] > *,.ease-slow4x[class*="ease-2nd-"] > * > * { transition-duration: 1.6s; }
 .ease-slow5x,.ease-slow5x[class*="ease-1st-"] > *,.ease-slow5x[class*="ease-2nd-"] > * > * { transition-duration: 2s; }
-.ease-slow6x,.ease-slow6x[class*="ease-1st-"] > *,.ease-slow6x[class*="ease-2nd-"] > * > * { transition-duration: 2.4s; }
-.ease-slow7x,.ease-slow7x[class*="ease-1st-"] > *,.ease-slow7x[class*="ease-2nd-"] > * > * { transition-duration: 2.8s; }
-.ease-slow8x,.ease-slow8x[class*="ease-1st-"] > *,.ease-slow8x[class*="ease-2nd-"] > * > * { transition-duration: 3.2s; }
-.ease-slow9x,.ease-slow9x[class*="ease-1st-"] > *,.ease-slow9x[class*="ease-2nd-"] > * > * { transition-duration: 3.6s; }
-.ease-slow10x,.ease-slow10x[class*="ease-1st-"] > *,.ease-slow10x[class*="ease-2nd-"] > * > * { transition-duration: 4s; }
 
 .ease-all { transition-property: all; }
 .ease-color,.ease-1st-color > *,.ease-2nd-color > * > * { transition-property: color; }
