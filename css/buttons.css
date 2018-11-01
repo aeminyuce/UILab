@@ -4,7 +4,7 @@ input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .btn:not(.btn-block):not(.btn-multitext).no-padding-h { width: 32px !important; }
 .btn:not(.btn-passive) { cursor: pointer; }
 .btn:not([class*="bordered"]) { border-width: 0; }
-.btn:not(.btn-multitext) { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+.btn:not(.btn-multitext) { white-space: nowrap; overflow: hidden; }
 .btn:hover { text-decoration: none; }
 
 .btn.btn-multitext { word-wrap: break-word; height: auto !important; min-height: 32px; }
@@ -66,5 +66,5 @@ html:not(.mobile) .btn.btn-invisible:not(.no-hover):not([class*="ui-"]):not(.btn
 
 @media (max-width: 480px) {
     .btn-responsive { width: 100% !important; display: block; }
-    .btn-responsive:not(:last-child) { margin-bottom: 5px; }
+    .btn-responsive:not(:last-child) { margin-bottom: 10px; }
 }
