@@ -108,13 +108,13 @@ html:not(.portrait) .visible-portrait { display: none !important; }
 .scroll { overflow: auto !important; }
 .v-scroll { overflow-x: hidden !important; overflow-y: auto !important; }
 .h-scroll { overflow-x: auto !important; overflow-y: hidden !important; }
-.no-scroll { overflow: hidden !important; }
+.no-scroll,.no-overflow { overflow: hidden !important; }
 
-.rounded { border-radius: 4px; }
-.rounded-top { border-radius: 4px 4px 0 0; }
-.rounded-right { border-radius: 0 4px 4px 0; }
-.rounded-bottom { border-radius: 0 0 4px 4px; }
-.rounded-left { border-radius: 4px 0 0 4px; }
+.rounded { border-radius: 6px; }
+.rounded-top { border-radius: 6px 6px 0 0; }
+.rounded-right { border-radius: 0 6px 6px 0; }
+.rounded-bottom { border-radius: 0 0 6px 6px; }
+.rounded-left { border-radius: 6px 0 0 6px; }
 
 .circle { border-radius: 1000px; }
 .circle-top { border-radius: 1000px 1000px 0 0; }
