@@ -16,7 +16,7 @@
 .clear-button { color: inherit; font-weight: inherit; text-align: inherit; background-color: rgba(0,0,0,0); border: 0; }
 .img-responsive { width: 100% !important; height: auto !important; }
 
-.show,.visible { display: block !important; }
+.visible { display: block !important; }
 .hidden { display: none !important; }
 
 html:not(.android) .visible-android { display: none !important; }
