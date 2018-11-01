@@ -3,7 +3,32 @@
  Carousel JS requires Events JS
 */
 
-/*globals window, document, selector, events, navigator, Image */
+/*globals window, document, selector, events, navigator, Image, setTimeout */
+function carouselAnimate(content, time) {
+
+    'use strict';
+    var animates, total, i = 0;
+
+    animates = selector('.carousel-animate:not(.show)', content);
+
+    total = animates.length;
+    if (total === 0) { return; }
+
+    function show() {
+
+        setTimeout(function () {
+
+            events.addClass(animates[i], 'show');
+
+            i += 1;
+            if (i < total) { show(); }
+
+        }, time);
+
+    }
+    show();
+
+}
 function carouselLazyImages(col, i) {
 
     'use strict';
@@ -42,7 +67,7 @@ function carouselLazyImages(col, i) {
 function carouselResizerFnc(i, that) {
 
     'use strict';
-    var col, j, k, slider, contents, navDots, navDotsIn, navDotsLength, navDotsSize, navSides;
+    var col, j, k, slider, contents, thisContent, animate, navDots, navDotsIn, navDotsLength, navDotsSize, navSides;
 
     if (that === undefined) {
         that = selector('.carousel');
@@ -90,6 +115,18 @@ function carouselResizerFnc(i, that) {
         }
 
         if (window.carouselCounts[i] > (navSides - 1)) { window.carouselCounts[i] = (navSides - 1); }
+
+        thisContent = contents[window.carouselCounts[i]];
+        animate = thisContent.getAttribute('data-animate');
+
+        if (animate !== null) {
+
+            if (animate === '') { animate = 150; }
+            setTimeout(function () { // wait for dom load
+                carouselAnimate(thisContent, animate);
+            }, 300);
+
+        }
 
         that[i].setAttribute('data-content', (window.carouselCounts[i] + 1));
 
@@ -176,7 +213,7 @@ function carouselFnc() {
         // Events
         events.on(document, 'click', '.carousel .carousel-prev,.carousel .carousel-next', function () {
 
-            var col, that, slider, contents, i, max, navDots;
+            var col, that, slider, contents, thisContent, animate, animateWait, i, max, navDots;
 
             that = events.closest(this, '.carousel');
             navDots = selector('.carousel-nav .dots i', that[0]);
@@ -205,6 +242,39 @@ function carouselFnc() {
 
                 window.carouselCounts[i] -= 1;
                 if (window.carouselCounts[i] < 0) { window.carouselCounts[i] = 0; }
+
+            }
+
+            thisContent = contents[window.carouselCounts[i]];
+            animate = thisContent.getAttribute('data-animate');
+
+            if (animate !== null) {
+
+                animateWait = 150;
+                if (animate === '') { animate = 150; }
+
+                if (events.hasClass(thisContent, 'ease-fast')) {
+                    animateWait = 100;
+
+                } else if (events.hasClass(thisContent, 'ease-slow')) {
+                    animateWait = 400;
+
+                } else if (events.hasClass(thisContent, 'ease-slow2x')) {
+                    animateWait = 800;
+
+                } else if (events.hasClass(thisContent, 'ease-slow3x')) {
+                    animateWait = 1200;
+
+                } else if (events.hasClass(thisContent, 'ease-slow4x')) {
+                    animateWait = 1600;
+
+                } else if (events.hasClass(thisContent, 'ease-slow5x')) {
+                    animateWait = 2000;
+                }
+
+                setTimeout(function () { // wait for min. ease time
+                    carouselAnimate(thisContent, animate);
+                }, animateWait);
 
             }
 
