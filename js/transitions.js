@@ -7,6 +7,7 @@
 var transitions = {
 
     effects: true,
+    pause: false, // close transitions and animations on window resizing and window scrolling
     preload: false, // wait page preload to start effects
     ie: true,
     android: true,
@@ -46,18 +47,18 @@ function transitionsFnc() {
 
 }
 
-function pauseTransitionsFnc() { // close transitions and animations on window resizing and window scrolling
+function pauseTransitionsFnc() {
 
     'use strict';
 
-    clearTimeout(window.stopTransitionsOnEvent);
+    if (transitions.effects && transitions.pause) {
 
-    if (transitions.effects) {
+        clearTimeout(window.pauseTransitions);
 
         events.addClass(document, 'no-transitions-all');
         events.addClass('.animate-control', 'animate-stop-all');
 
-        window.stopTransitionsOnEvent = setTimeout(function () {
+        window.pauseTransitions = setTimeout(function () {
 
             events.removeClass(document, 'no-transitions-all');
             events.removeClass('.animate-control', 'animate-stop-all');
