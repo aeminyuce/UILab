@@ -69,7 +69,7 @@ function swatchesFnc() {
                 } else { a = '1'; }
 
                 if (r === 255 && g === 255 && b === 255 && a === '1') {
-                    a = '0.75';
+                    a = '0.8';
 
                 } else { a = Math.ceil(a); }
 
