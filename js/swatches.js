@@ -51,24 +51,29 @@ function swatchesFnc() {
 
                 r = parseInt(hoverColor[0], 10);
                 r += ((255 - r) * 20) / 100;
-                if (r > 255) { r = 255; } else if (r < 0) { r = 0; }
+                if (r > 255) { r = 255; }
 
                 g = parseInt(hoverColor[1], 10);
                 g += ((255 - g) * 20) / 100;
-                if (g > 255) { g = 255; } else if (g < 0) { g = 0; }
+                if (g > 255) { g = 255; }
 
                 b = parseInt(hoverColor[2], 10);
                 b += ((255 - b) * 20) / 100;
-                if (b > 255) { b = 255; } else if (b < 0) { b = 0; }
+                if (b > 255) { b = 255; }
 
                 getAlpha = hoverColor[3];
 
                 if (getAlpha !== undefined) {
                     a = getAlpha;
 
-                } else { a = "1"; }
+                } else { a = '1'; }
 
-                this.setAttribute('style', style + 'background-color: rgba(' + Math.ceil(r) + ',' + Math.ceil(g) + ',' + Math.ceil(b) + ',' + Math.ceil(a) + ') !important;');
+                if (r === 255 && g === 255 && b === 255 && a === '1') {
+                    a = '0.75';
+
+                } else { a = Math.ceil(a); }
+
+                this.setAttribute('style', style + 'background-color: rgba(' + Math.ceil(r) + ',' + Math.ceil(g) + ',' + Math.ceil(b) + ',' + a + ') !important;');
 
             });
 
