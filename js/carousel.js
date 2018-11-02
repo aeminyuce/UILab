@@ -4,7 +4,7 @@
 */
 
 /*globals window, document, selector, events, navigator, Image, setTimeout */
-function carouselAnimate(content, time) {
+function carouselAnimate(content, time, wait) {
 
     'use strict';
     var animates, total, i = 0;
@@ -14,19 +14,23 @@ function carouselAnimate(content, time) {
     total = animates.length;
     if (total === 0) { return; }
 
-    function show() {
+    setTimeout(function () { // wait for dom loading or slider ease time
 
-        setTimeout(function () {
+        function show() {
 
-            events.addClass(animates[i], 'show');
+            setTimeout(function () {
 
-            i += 1;
-            if (i < total) { show(); }
+                events.addClass(animates[i], 'show');
 
-        }, time);
+                i += 1;
+                if (i < total) { show(); }
 
-    }
-    show();
+            }, time);
+
+        }
+        show();
+
+    }, wait);
 
 }
 function carouselLazyImages(col, i) {
@@ -122,9 +126,7 @@ function carouselResizerFnc(i, that) {
         if (animate !== null) {
 
             if (animate === '') { animate = 150; }
-            setTimeout(function () { // wait for dom load
-                carouselAnimate(contents[window.carouselCounts[i]], animate);
-            }, 300);
+            carouselAnimate(contents[window.carouselCounts[i]], animate, 300);
 
         }
 
@@ -248,8 +250,8 @@ function carouselFnc() {
             animate = contents[window.carouselCounts[i]].getAttribute('data-animate');
             if (animate !== null) {
 
-                animateWait = 150;
                 if (animate === '') { animate = 150; }
+                animateWait = 150;
 
                 if (events.hasClass(slider, 'ease-fast')) {
                     animateWait = 100;
@@ -270,9 +272,7 @@ function carouselFnc() {
                     animateWait = 2000;
                 }
 
-                setTimeout(function () { // wait for min. ease time
-                    carouselAnimate(contents[window.carouselCounts[i]], animate);
-                }, animateWait);
+                carouselAnimate(contents[window.carouselCounts[i]], animate, animateWait);
 
             }
 
