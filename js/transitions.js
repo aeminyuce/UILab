@@ -7,8 +7,9 @@
 var transitions = {
 
     effects: true,
-    pause: false, // close transitions and animations on window resizing and window scrolling
-    preload: false, // wait page preload to start effects
+    pauseScroll: false, // close transitions and animations on window resizing
+    pauseResize: true, // close transitions and animations on window scrolling
+    preload: true, // wait page preload to start effects
     ie: true,
     android: true,
     androidOld: false
@@ -47,23 +48,27 @@ function transitionsFnc() {
 
 }
 
-function pauseTransitionsFnc() {
+function pauseTransitionsFnc(eName) {
 
     'use strict';
 
-    if (transitions.effects && transitions.pause) {
+    if (transitions.effects) {
 
-        clearTimeout(window.pauseTransitions);
+        if ((eName === 'scroll' && transitions.pauseScroll) || (eName === 'resize' && transitions.pauseResize)) {
 
-        events.addClass(document, 'no-transitions-all');
-        events.addClass('.animate-control', 'animate-stop-all');
+            clearTimeout(window.pauseTransitions);
 
-        window.pauseTransitions = setTimeout(function () {
+            events.addClass(document, 'no-transitions-all');
+            events.addClass('.animate-control', 'animate-stop-all');
 
-            events.removeClass(document, 'no-transitions-all');
-            events.removeClass('.animate-control', 'animate-stop-all');
+            window.pauseTransitions = setTimeout(function () {
 
-        }, 300);
+                events.removeClass(document, 'no-transitions-all');
+                events.removeClass('.animate-control', 'animate-stop-all');
+
+            }, 300);
+
+        }
 
     }
 
@@ -81,7 +86,7 @@ events.onload(function () {
 events.on(window, 'resize', function () {
 
     'use strict';
-    pauseTransitionsFnc();
+    pauseTransitionsFnc('resize');
 
 });
 
@@ -89,6 +94,6 @@ events.on(window, 'resize', function () {
 events.on(window, 'scroll', function () {
 
     'use strict';
-    pauseTransitionsFnc();
+    pauseTransitionsFnc('scroll');
 
 });
