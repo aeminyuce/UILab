@@ -3,7 +3,7 @@
  Carousel JS requires Events JS
 */
 
-/*globals window, document, selector, events, navigator, Image, setTimeout */
+/*globals window, document, selector, events, navigator, Image, setTimeout, setInterval, clearInterval */
 function carouselAnimate(content, time, wait) {
 
     'use strict';
@@ -165,7 +165,7 @@ function carouselResizerFnc(i, that) {
 function carouselFnc() {
 
     'use strict';
-    var carousels;
+    var carousels, carouselNav;
 
     carousels = selector('.carousel');
     if (carousels.length > 0) {
@@ -176,10 +176,111 @@ function carouselFnc() {
         window.carouselCounts = [];
         window.carouselLoadImgs = [];
 
+        window.carouselAutoSlider = [];
+        window.carouselAutoTimer = [];
+
+        carouselNav = function (that, direction) {
+
+            var col, slider, contents, animate, wait, i, max, navDots;
+
+            navDots = selector('.carousel-nav .dots i', that);
+
+            slider = selector('.carousel-slider', that);
+            contents = selector('.content', slider[0]);
+
+            i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
+
+            if (window.innerWidth > 767) {
+                col = window.carouselCols[i];
+
+            } else {
+                col = window.carouselColsMobile[i];
+            }
+
+            col = Number(col);
+            max = Math.ceil(contents.length / col) - 1;
+
+            if (direction === 'next') {
+
+                window.carouselCounts[i] += 1;
+                if (window.carouselCounts[i] > max) { window.carouselCounts[i] = 0; }
+
+            } else if (direction === 'prev') {
+
+                window.carouselCounts[i] -= 1;
+                if (window.carouselCounts[i] < 0) { window.carouselCounts[i] = 0; }
+
+            }
+
+            // get carousel slide speed
+            wait = 150;
+
+            if (events.hasClass(slider, 'ease-fast')) {
+                wait = 100;
+
+            } else if (events.hasClass(slider, 'ease-slow')) {
+                wait = 400;
+
+            } else if (events.hasClass(slider, 'ease-slow2x')) {
+                wait = 800;
+
+            } else if (events.hasClass(slider, 'ease-slow3x')) {
+                wait = 1200;
+
+            } else if (events.hasClass(slider, 'ease-slow4x')) {
+                wait = 1600;
+
+            } else if (events.hasClass(slider, 'ease-slow5x')) {
+                wait = 2000;
+            }
+
+            // wait auto slider to slide completed
+            if (window.carouselAutoSlider[i] !== undefined) {
+
+                clearInterval(window.carouselAutoSlider[i]);
+                setTimeout(function () {
+
+                    window.carouselAutoSlider[i] = setInterval(function () {
+                        carouselNav(that, 'next');
+
+                    }, window.carouselAutoTimer[i]);
+
+                }, wait);
+
+            }
+
+            // detect carousel animates
+            animate = contents[window.carouselCounts[i]].getAttribute('data-animate');
+            if (animate !== null) {
+
+                if (animate === '') { animate = 150; }
+                carouselAnimate(contents[window.carouselCounts[i]], animate, wait);
+
+            }
+
+            that.setAttribute('data-content', (window.carouselCounts[i] + 1));
+
+            events.removeClass(navDots, 'selected');
+            events.addClass(navDots[window.carouselCounts[i]], 'selected');
+
+            // detecting ie9
+            if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
+                slider[0].style.marginLeft = '-' + (window.carouselCounts[i] * that.offsetWidth) + 'px';
+
+            } else {
+                slider[0].style.transform = 'translateX(-' + (window.carouselCounts[i] * that.offsetWidth) + 'px)';
+            }
+
+            carouselLazyImages(col, i);
+
+        };
+
         events.each(carousels, function (j) {
 
-            window.carouselCols[j] = this.getAttribute('data-col');
-            window.carouselColsMobile[j] = this.getAttribute('data-col-mobile');
+            var that = this;
+
+            window.carouselCols[j] = that.getAttribute('data-col');
+            window.carouselColsMobile[j] = that.getAttribute('data-col-mobile');
 
             if (window.carouselCols[j] === null) {
                 window.carouselCols[j] = 1;
@@ -206,90 +307,54 @@ function carouselFnc() {
             }
 
             window.carouselCounts[j] = 0;
-            carouselResizerFnc(j, carousels);
 
-            events.addClass(this, 'active');
+            carouselResizerFnc(j, carousels);
+            events.addClass(that, 'active');
+
+            // auto slider
+            window.carouselAutoTimer[j] = that.getAttribute('data-slide');
+            if (window.carouselAutoTimer[j] !== null) {
+
+                if (window.carouselAutoTimer[j] === '') { window.carouselAutoTimer[j] = 8000; }
+
+                window.carouselAutoSlider[j] = setInterval(function () {
+                    carouselNav(that, 'next');
+                }, window.carouselAutoTimer[j]);
+
+            }
 
         });
 
         // Events
-        events.on(document, 'click', '.carousel .carousel-prev,.carousel .carousel-next', function () {
+        events.on(document, 'click', '.carousel-prev,.carousel-next', function () {
 
-            var col, that, slider, contents, animate, animateWait, i, max, navDots;
+            var that, direction;
+            if (events.hasClass(this, 'carousel-next')) { direction = 'next'; } else { direction = 'prev'; }
 
-            that = events.closest(this, '.carousel');
-            navDots = selector('.carousel-nav .dots i', that[0]);
+            that = events.closest(this, '.carousel')[0];
+            carouselNav(that, direction);
 
-            slider = selector('.carousel-slider', that[0]);
-            contents = selector('.content', slider[0]);
+        });
 
-            i = Array.prototype.slice.call(selector('.carousel')).indexOf(that[0]);
+        events.on(document, 'mouseenter', '.carousel[data-slide]', function () {
 
-            if (window.innerWidth > 767) {
-                col = window.carouselCols[i];
+            var i = Array.prototype.slice.call(selector('.carousel')).indexOf(this);
+            clearInterval(window.carouselAutoSlider[i]);
 
-            } else {
-                col = window.carouselColsMobile[i];
-            }
+        });
 
-            col = Number(col);
-            max = Math.ceil(contents.length / col) - 1;
+        events.on(document, 'mouseleave', '.carousel[data-slide]', function () {
 
-            if (events.hasClass(this, 'carousel-next')) {
+            var i, that;
 
-                window.carouselCounts[i] += 1;
-                if (window.carouselCounts[i] > max) { window.carouselCounts[i] = max; }
+            that = this;
+            i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
 
-            } else {
+            clearInterval(window.carouselAutoSlider[i]);
+            window.carouselAutoSlider[i] = setInterval(function () {
+                carouselNav(that, 'next');
 
-                window.carouselCounts[i] -= 1;
-                if (window.carouselCounts[i] < 0) { window.carouselCounts[i] = 0; }
-
-            }
-
-            animate = contents[window.carouselCounts[i]].getAttribute('data-animate');
-            if (animate !== null) {
-
-                if (animate === '') { animate = 150; }
-                animateWait = 150;
-
-                if (events.hasClass(slider, 'ease-fast')) {
-                    animateWait = 100;
-
-                } else if (events.hasClass(slider, 'ease-slow')) {
-                    animateWait = 400;
-
-                } else if (events.hasClass(slider, 'ease-slow2x')) {
-                    animateWait = 800;
-
-                } else if (events.hasClass(slider, 'ease-slow3x')) {
-                    animateWait = 1200;
-
-                } else if (events.hasClass(slider, 'ease-slow4x')) {
-                    animateWait = 1600;
-
-                } else if (events.hasClass(slider, 'ease-slow5x')) {
-                    animateWait = 2000;
-                }
-
-                carouselAnimate(contents[window.carouselCounts[i]], animate, animateWait);
-
-            }
-
-            that[0].setAttribute('data-content', (window.carouselCounts[i] + 1));
-
-            events.removeClass(navDots, 'selected');
-            events.addClass(navDots[window.carouselCounts[i]], 'selected');
-
-            // detecting ie9
-            if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
-                slider[0].style.marginLeft = '-' + (window.carouselCounts[i] * that[0].offsetWidth) + 'px';
-
-            } else {
-                slider[0].style.transform = 'translateX(-' + (window.carouselCounts[i] * that[0].offsetWidth) + 'px)';
-            }
-
-            carouselLazyImages(col, i);
+            }, window.carouselAutoTimer[i]);
 
         });
 
