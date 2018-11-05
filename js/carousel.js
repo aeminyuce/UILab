@@ -84,7 +84,10 @@
         var col, j, k, slider, contents, animate, navDots, navDotsIn, navDotsLength, navDotsSize, navSides;
 
         if (that === undefined) {
+
+            i = 0;
             that = selector('.carousel');
+
         }
 
         function fnc() {
@@ -364,6 +367,65 @@
                 }, autoTimer[i]);
 
             });
+
+            /* touchmove events
+            events.on(document, 'touchstart', '.carousel', function (e) {
+
+                var i, startx, starty, currentx, currenty, startMove, move, that, slider;
+
+                that = this;
+
+                slider = selector('.carousel-slider', that);
+                i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
+
+                startx = e.targetTouches[0].pageX;
+                starty = e.targetTouches[0].pageY;
+
+                startMove = window.getComputedStyle(slider[0]).getPropertyValue('transform'); // matrix(xZoom, 0, 0, yZoom, xPos, yPos)
+                startMove = startMove.replace('matrix', '').replace(/[\,\(\)\s]/g, ' ').replace(/\s\s/g, '|'); // select only numbers
+                startMove = startMove.split('|')[4];
+
+                events.on(that, 'touchmove', function (e) {
+
+                    currentx = e.targetTouches[0].pageX;
+                    currenty = e.targetTouches[0].pageY;
+
+                    if (Math.abs(startx - currentx) > 10 &&  Math.abs(starty - currenty) < 10) {
+
+                        move = -(startx - currentx) - startMove;
+
+                        if (move > 0) {
+                            move = 0;
+
+                        } else if (move < -(slider[0].offsetWidth)) {
+                            move = -(slider[0].offsetWidth);
+
+                        }
+
+                        slider[0].style.transform = 'translateX(' + move + 'px)';
+
+                    }
+
+                    clearInterval(autoSlider[i]);
+                    clearTimeout(autoTimeouts[i]);
+
+                    events.addClass(slider, 'no-transitions');
+
+                });
+
+                events.on(that, 'touchend', function () {
+
+                    events.removeClass(slider, 'no-transitions');
+
+                    autoSlider[i] = setInterval(function () {
+                        carouselNav(that, 'next');
+
+                    }, autoTimer[i]);
+
+                });
+
+            });
+            */
 
         }
 
