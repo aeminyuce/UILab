@@ -3,78 +3,73 @@
  Textarea Counter JS requires Events JS
 */
 
-/*globals window, document, selector, events, setTimeout */
-function textareaCounterFnc() {
+(function () {
 
     'use strict';
+    /*globals document, selector, events, ajax, setTimeout */
 
-    // textarea counter
-    window.textareaCounter = function (t) {
+    var loadCounters;
 
-        var p, v, total, length;
+    function counterFnc() {
 
-        p = t.parentElement;
-        v = t.value;
+        function counter(t) {
 
-        total = p.getAttribute('data-counter');
-        length = (total - v.length);
+            var p, v, total, length;
 
-        if (length <= 0) {
+            p = t.parentElement;
+            v = t.value;
 
-            length = 0;
+            total = p.getAttribute('data-counter');
+            length = (total - v.length);
 
-            p.setAttribute('data-change', '0');
-            t.value = v.substring(0, total);
+            if (length <= 0) {
+
+                length = 0;
+
+                p.setAttribute('data-change', '0');
+                t.value = v.substring(0, total);
+
+            }
+
+            events.addClass(p, 'change');
+            p.setAttribute('data-change', length);
+
+            return false;
 
         }
 
-        events.addClass(p, 'change');
-        p.setAttribute('data-change', length);
+        loadCounters = function () {
 
-        return false;
+            events.each('.textarea[data-counter]:not(.change)', function () {
 
-    };
+                var textarea = selector('textarea', this)[0];
+                counter(textarea);
 
-    window.loadtextareaCounters = function () {
-        events.each('.textarea[data-counter]:not(.change)', function () {
+            });
 
-            var textarea = selector('textarea', this)[0];
-            window.textareaCounter(textarea);
+        };
+        loadCounters();
+
+        // Events
+        events.on(document, 'keydown keypress paste', '.textarea[data-counter] textarea', function (e) {
+
+            if (e.type === 'keydown' && e.ctrlKey) {
+
+                var that = this;
+                setTimeout(function () { counter(that); }, 0);
+
+            } else { counter(this); }
 
         });
-    };
-    window.loadtextareaCounters();
 
-    events.on(document, 'keydown keypress paste', '.textarea[data-counter] textarea', function (e) {
+    }
 
-        if (e.type === 'keydown' && e.ctrlKey) {
+    // Loaders
+    events.onload(counterFnc);
 
-            var that = this;
-
-            setTimeout(function () {
-                window.textareaCounter(that);
-            }, 0);
-
-        } else {
-            window.textareaCounter(this);
-        }
-
+    // ajax callback loader: requires Ajax JS
+    events.on(document, 'ajaxCallbacks', function () {
+        if (ajax.ajaxRequest.responseText.indexOf('data-counter="') > 0) { loadCounters(); }
     });
 
-}
-
-/*!loader */
-events.onload(function () {
-
-    'use strict';
-    textareaCounterFnc();
-
-});
-
-/*!ajax callback loader: requires Ajax JS */
-events.on(document, 'ajaxCallbacks', function () {
-
-    'use strict';
-    if (window.ajaxRequest.responseText.indexOf('data-counter="') > 0) { window.loadtextareaCounters(); }
-
-});
+}());

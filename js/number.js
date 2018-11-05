@@ -3,80 +3,80 @@
  Number JS requires Events JS
 */
 
-/*globals document, events, setTimeout */
-function numberFnc() {
+(function () {
 
     'use strict';
+    /*globals document, events, setTimeout */
 
-    events.on(document, 'keypress', '.text > .number', function (e) {
+    function numberFnc() {
 
-        var c, isRefresh = false;
+        // Events
+        events.on(document, 'keypress', '.text > .number', function (e) {
 
-        if (e.which) {
-            c = e.which;
+            var c, isRefresh = false;
 
-        } else {
+            if (e.which) {
+                c = e.which;
 
-            c = e.keyCode;
-            if (c === 116) { isRefresh = true; }
+            } else {
 
-        }
+                c = e.keyCode;
+                if (c === 116) { isRefresh = true; }
 
-        if (c !== 8 && c !== 9 && c !== 35 && c !== 36 && c !== 37 && c !== 39 && c !== 46 && !isRefresh && (c < 48 || c > 57)) {
-            e.preventDefault();
-        }
+            }
 
-    });
+            if (c !== 8 && c !== 9 && c !== 35 && c !== 36 && c !== 37 && c !== 39 && c !== 46 && !isRefresh && (c < 48 || c > 57)) {
+                e.preventDefault();
+            }
 
-    events.on(document, 'paste', '.text > .number', function () {
+        });
 
-        var i, re, that, getValues, newValues, maxLength;
+        events.on(document, 'paste', '.text > .number', function () {
 
-        that = this;
+            var i, re, that, getValues, newValues, maxLength;
 
-        maxLength = that.getAttribute('maxlength');
-        that.removeAttribute('maxlength');
+            that = this;
 
-        setTimeout(function () {
+            maxLength = that.getAttribute('maxlength');
+            that.removeAttribute('maxlength');
 
-            newValues = '';
-            getValues = that.value.match(new RegExp(/[0-9]/, 'g'));
+            setTimeout(function () {
 
-            if (getValues !== null) {
+                newValues = '';
+                getValues = that.value.match(new RegExp(/[0-9]/, 'g'));
 
-                for (i = 0; i < getValues.length; i += 1) {
-                    newValues += getValues[i];
+                if (getValues !== null) {
+
+                    for (i = 0; i < getValues.length; i += 1) {
+                        newValues += getValues[i];
+                    }
+
+                } else {
+
+                    that.value = newValues;
+                    return false;
+
                 }
 
-            } else {
+                if (maxLength !== null) {
 
-                that.value = newValues;
-                return false;
+                    re = '[0-9]{1,' + maxLength + '}';
+                    re = new RegExp(re, 'g');
 
-            }
+                    that.value = newValues.match(re)[0];
+                    that.setAttribute('maxlength', maxLength);
 
-            if (maxLength !== null) {
+                } else {
+                    that.value = newValues;
+                }
 
-                re = '[0-9]{1,' + maxLength + '}';
-                re = new RegExp(re, 'g');
+            }, 0);
 
-                that.value = newValues.match(re)[0];
-                that.setAttribute('maxlength', maxLength);
+        });
 
-            } else {
-                that.value = newValues;
-            }
+    }
 
-        }, 0);
+    // Loaders
+    events.onload(numberFnc);
 
-    });
-
-}
-
-/*!loader */
-events.onload(function () {
-
-    'use strict';
-    numberFnc();
-
-});
+}());

@@ -3,29 +3,28 @@
  Portlets JS requires Events JS
 */
 
-/*globals document, events, setTimeout */
-var portletsFnc = function () {
+(function () {
 
     'use strict';
+    /*globals document, events, setTimeout */
 
-    // portlet close button
-    events.on(document, 'click', '.portlet-close', function () {
+    function portletsFnc() {
 
-        var parentEl = this.parentElement;
+        // Events
+        events.on(document, 'click', '.portlet-close', function () {
 
-        events.addClass(parentEl, 'portlet-closing ease-close-portlet');
-        setTimeout(function () {
-            parentEl.parentNode.removeChild(parentEl);
-        }, 300);
+            var parentEl = this.parentElement;
+            events.addClass(parentEl, 'portlet-closing ease-close-portlet');
 
-    });
+            setTimeout(function () {
+                parentEl.parentNode.removeChild(parentEl);
+            }, 300);
 
-};
+        });
 
-/*!loader */
-events.onload(function () {
+    }
 
-    'use strict';
-    portletsFnc();
+    // Loaders
+    events.onload(portletsFnc);
 
-});
+}());

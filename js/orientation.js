@@ -3,50 +3,42 @@
  Orientation JS requires Events JS
 */
 
-/*globals window, document, events, navigator */
-
-function orientationFnc() {
+(function () {
 
     'use strict';
+    /*globals window, document, events, navigator */
 
-    if (navigator.userAgent.toLowerCase().indexOf('mobile') > -1) {
+    // Events
+    function orientationFnc() {
 
-        events.on(document, 'useragents:portrait useragents:landscape');
+        if (navigator.userAgent.toLowerCase().indexOf('mobile') > -1) {
 
-        if (window.matchMedia('(orientation: portrait)').matches) {
+            events.on(document, 'useragents:portrait useragents:landscape');
 
-            events.removeClass(document, 'landscape');
-            events.addClass(document, 'portrait');
+            if (window.matchMedia('(orientation: portrait)').matches) {
 
-            events.trigger(document, 'useragents:portrait'); // set custom event
+                events.removeClass(document, 'landscape');
+                events.addClass(document, 'portrait');
 
-        }
+                events.trigger(document, 'useragents:portrait'); // set custom event
 
-        if (window.matchMedia('(orientation: landscape)').matches) {
+            }
 
-            events.removeClass(document, 'portrait');
-            events.addClass(document, 'landscape');
+            if (window.matchMedia('(orientation: landscape)').matches) {
 
-            events.trigger(document, 'useragents:landscape'); // set custom event
+                events.removeClass(document, 'portrait');
+                events.addClass(document, 'landscape');
+
+                events.trigger(document, 'useragents:landscape'); // set custom event
+
+            }
 
         }
 
     }
 
-}
+    // Loaders
+    events.onload(orientationFnc);
+    events.on(window, 'resize', orientationFnc);
 
-/*!loader */
-events.onload(function () {
-
-    'use strict';
-    orientationFnc();
-
-});
-
-/*!resize loader */
-events.on(window, 'resize', function () {
-
-    'use strict';
-    orientationFnc();
-
-});
+}());

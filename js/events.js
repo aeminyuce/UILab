@@ -3,7 +3,7 @@
  Events JS requires Selector JS
 */
 
-/*globals window, document, selector, Event, navigator, NodeList, setTimeout, DOMParser */
+/*globals document, selector, Event, navigator, NodeList, setTimeout, DOMParser */
 var events = {
 
     onload: function (callback) {
@@ -14,20 +14,20 @@ var events = {
 
         handlerFnc = function (pt, pe) {
 
-            if (window.eventHandlers === undefined) { window.eventHandlers = {}; }
-            if (window.eventHandlers[pt] === undefined) { window.eventHandlers[pt] = {}; }
-            if (window.eventHandlers[pt][pe] === undefined) { window.eventHandlers[pt][pe] = []; }
+            if (events.handlers === undefined) { events.handlers = {}; }
+            if (events.handlers[pt] === undefined) { events.handlers[pt] = {}; }
+            if (events.handlers[pt][pe] === undefined) { events.handlers[pt][pe] = []; }
 
-            window.eventHandlers[pt][pe].push(callback);
+            events.handlers[pt][pe].push(callback);
 
             if (typeof pe !== 'function' && callback !== undefined) {
 
                 // merge repeated events
-                if (window.eventHandlers[pt][pe].length === 1) {
+                if (events.handlers[pt][pe].length === 1) {
                     pt.addEventListener(pe.split('.')[0], function (ev) { // split for event naming
 
-                        for (i = 0; i < window.eventHandlers[pt][pe].length; i += 1) {
-                            window.eventHandlers[pt][pe][i](ev);
+                        for (i = 0; i < events.handlers[pt][pe].length; i += 1) {
+                            events.handlers[pt][pe][i](ev);
                         }
 
                     }, true);
@@ -138,22 +138,22 @@ var events = {
 
             handlerFnc = function (pt, pe) {
 
-                if (window.eventHandlers === undefined) { window.eventHandlers = {}; }
-                if (window.eventHandlers[pt] === undefined) { window.eventHandlers[pt] = {}; }
-                if (window.eventHandlers[pt][pe] === undefined) { window.eventHandlers[pt][pe] = []; }
+                if (events.handlers === undefined) { events.handlers = {}; }
+                if (events.handlers[pt] === undefined) { events.handlers[pt] = {}; }
+                if (events.handlers[pt][pe] === undefined) { events.handlers[pt][pe] = []; }
 
-                window.eventHandlers[pt][pe].push(f);
+                events.handlers[pt][pe].push(f);
 
                 if (typeof pe !== 'function' && f !== undefined) {
 
                     if (delegate || isWindowEvent || customEvent) {
 
                         // merge repeated events
-                        if (window.eventHandlers[pt][pe].length === 1) {
+                        if (events.handlers[pt][pe].length === 1) {
                             pt.addEventListener(pe.split('.')[0], function (ev) { // split for event naming
 
-                                for (m = 0; m < window.eventHandlers[pt][pe].length; m += 1) {
-                                    window.eventHandlers[pt][pe][m](ev);
+                                for (m = 0; m < events.handlers[pt][pe].length; m += 1) {
+                                    events.handlers[pt][pe][m](ev);
                                 }
 
                             }, true);
@@ -199,13 +199,13 @@ var events = {
 
             handlerFnc = function (pt, pe) {
 
-                if (window.eventHandlers[pt] !== undefined) {
-                    if (window.eventHandlers[pt][pe] !== undefined) {
+                if (events.handlers[pt] !== undefined) {
+                    if (events.handlers[pt][pe] !== undefined) {
 
-                        for (j = 0; j < window.eventHandlers[pt][pe].length; j += 1) {
+                        for (j = 0; j < events.handlers[pt][pe].length; j += 1) {
 
-                            pt.removeEventListener(pe.split('.')[0], window.eventHandlers[pt][pe][j], true); // split for event naming
-                            window.eventHandlers[pt][pe].splice(window.eventHandlers[pt][pe][j], 1); // remove event from eventHandlers array
+                            pt.removeEventListener(pe.split('.')[0], events.handlers[pt][pe][j], true); // split for event naming
+                            events.handlers[pt][pe].splice(events.handlers[pt][pe][j], 1); // remove event from eventHandlers array
 
                         }
 

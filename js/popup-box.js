@@ -3,90 +3,90 @@
  Popup Box JS requires Events JS
 */
 
-/*globals window, document, selector, events, setTimeout */
-function popupBoxFnc() {
+(function () {
 
     'use strict';
-    var panel, closePanel, setCookie, getCookie, classname = 'open', easeClass = 'open-ease';
+    /*globals window, document, selector, events, setTimeout */
 
-    panel = selector('.popup-box');
+    function popupBoxFnc() {
 
-    if (panel.length > 0) {
+        var panel, closePanel, setCookie, getCookie;
+        panel = selector('.popup-box');
 
-        setCookie = function (cname, cvalue, exdays) {
+        if (panel.length > 0) {
 
-            var d = new Date(), path, expires;
+            setCookie = function (cname, cvalue, exdays) {
 
-            if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" || window.location.hostname === "") {
-                path = 'http://127.0.0.1/';
+                var d = new Date(), path, expires;
 
-            } else { path = ''; }
+                if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" || window.location.hostname === "") {
+                    path = 'http://127.0.0.1/';
 
-            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-            expires = 'expires=' + d.toUTCString();
-            document.cookie = cname + '=' + cvalue + '; path=' + path + expires;
+                } else { path = ''; }
 
-        };
+                d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+                expires = 'expires=' + d.toUTCString();
+                document.cookie = cname + '=' + cvalue + '; path=' + path + expires;
 
-        getCookie = function (cname) {
+            };
 
-            var i, c, name, ca;
-            name = cname + '=';
-            ca = document.cookie.split(';');
+            getCookie = function (cname) {
 
-            for (i = 0; i < ca.length; i += 1) {
+                var i, c, name, ca;
+                name = cname + '=';
+                ca = document.cookie.split(';');
 
-                c = ca[i];
+                for (i = 0; i < ca.length; i += 1) {
 
-                while (c.charAt(0) === ' ') { c = c.substring(1); }
-                if (c.indexOf(name) === 0) { return c.substring(name.length, c.length); }
+                    c = ca[i];
 
-            }
+                    while (c.charAt(0) === ' ') { c = c.substring(1); }
+                    if (c.indexOf(name) === 0) { return c.substring(name.length, c.length); }
 
-            return '';
+                }
 
-        };
+                return '';
 
-        if (getCookie('popupBoxOpenedBefore')) { return; }
-        setCookie('popupBoxOpenedBefore', true, 1);
+            };
 
-        panel = panel[0];
+            if (getCookie('popupBoxOpenedBefore')) { return; }
+            setCookie('popupBoxOpenedBefore', true, 1);
 
-        events.addClass(panel, classname);
-        events.addClass(document, 'popup-box-opened');
+            panel = panel[0];
 
-        setTimeout(function () {
-            events.addClass(panel, easeClass);
-        }, 10);
-
-        closePanel = function () {
-
-            events.removeClass(panel, easeClass);
-            events.off('body', 'keydown.closePanel');
+            events.addClass(panel, 'open');
+            events.addClass(document, 'popup-box-opened');
 
             setTimeout(function () {
+                events.addClass(panel, 'open-ease');
+            }, 10);
 
-                events.removeClass(panel, classname);
-                events.removeClass(document, 'popup-box-opened');
+            closePanel = function () {
 
-            }, 150);
+                events.removeClass(panel, 'open-ease');
+                events.off('body', 'keydown.closePanel');
 
-        };
+                setTimeout(function () {
 
-        events.on('body', 'keydown.closePanel', function (e) {
-            if (e.keyCode === 27) { closePanel(); } // esc
-        });
+                    events.removeClass(panel, 'open');
+                    events.removeClass(document, 'popup-box-opened');
 
-        events.on('.close-popup-box', 'click', closePanel);
+                }, 150);
+
+            };
+
+            // Events
+            events.on('body', 'keydown.closePanel', function (e) {
+                if (e.keyCode === 27) { closePanel(); } // esc
+            });
+
+            events.on('.close-popup-box', 'click', closePanel);
+
+        }
 
     }
 
-}
+    // Loaders
+    events.onload(popupBoxFnc);
 
-/*!loader */
-events.onload(function () {
-
-    'use strict';
-    popupBoxFnc();
-
-});
+}());

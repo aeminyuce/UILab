@@ -3,7 +3,6 @@
  User Agents JS requires Events JS
 */
 
-/*globals document, navigator, events */
 var useragents = {
 
     ie: false,
@@ -17,106 +16,106 @@ var useragents = {
 
 };
 
-function useragentsFnc() {
+(function () {
 
     'use strict';
+    /*globals document, navigator, events */
 
-    var ua, isMSIE, userLang;
+    function useragentsFnc() {
 
-    userLang = (navigator.language || navigator.userLanguage).split('-')[0];
-    events.addClass(document, userLang);
+        var ua, isMSIE, userLang;
 
-    ua = navigator.userAgent.toLowerCase();
+        userLang = (navigator.language || navigator.userLanguage).split('-')[0];
+        events.addClass(document, userLang);
 
-    if (ua.indexOf('firefox') > -1) { events.addClass(document, 'firefox'); }
-    if (ua.indexOf('safari') > -1) { events.addClass(document, 'safari'); }
+        ua = navigator.userAgent.toLowerCase();
 
-    if (ua.indexOf('chrome') > -1) {
+        if (ua.indexOf('firefox') > -1) { events.addClass(document, 'firefox'); }
+        if (ua.indexOf('safari') > -1) { events.addClass(document, 'safari'); }
 
-        events.addClass(document, 'chrome');
-        events.removeClass(document, 'safari');
+        if (ua.indexOf('chrome') > -1) {
 
-    }
-
-    if (ua.indexOf('opera') > -1 || ua.indexOf('opr') > -1) {
-
-        events.addClass(document, 'opera');
-        events.removeClass(document, 'safari');
-        events.removeClass(document, 'chrome');
-
-    }
-
-    isMSIE = /*@cc_on!@*/false;
-    if (isMSIE || !!document.documentMode || ua.indexOf('edge') > -1) {
-
-        useragents.ie = true;
-
-        events.addClass(document, 'ie');
-        events.removeClass(document, 'chrome');
-
-        if (ua.indexOf('edge') > -1) {
-
-            useragents.edge = true;
-            events.removeClass(document, 'ie');
-            events.addClass(document, 'edge');
+            events.addClass(document, 'chrome');
+            events.removeClass(document, 'safari');
 
         }
 
-    }
-    if (ua.indexOf('msie 9') > -1) {
+        if (ua.indexOf('opera') > -1 || ua.indexOf('opr') > -1) {
 
-        useragents.ie9 = true;
-        events.addClass(document, 'ie9');
-
-    }
-
-    if (navigator.appVersion.indexOf('Win') !== -1) { events.addClass(document, 'windows'); }
-    if (navigator.appVersion.indexOf('Mac') !== -1) { events.addClass(document, 'mac'); }
-
-    if (ua.indexOf('mobile') > -1) {
-
-        events.addClass(document, 'mobile');
-        useragents.mobile = true;
-
-        if (ua.indexOf('apple') > -1) {
-
-            events.addClass(document, 'ios');
-            events.removeClass(document, 'mac');
-            useragents.ios = true;
+            events.addClass(document, 'opera');
+            events.removeClass(document, 'safari');
+            events.removeClass(document, 'chrome');
 
         }
 
-        if (ua.indexOf('android') > -1) {
+        isMSIE = /*@cc_on!@*/false;
+        if (isMSIE || !!document.documentMode || ua.indexOf('edge') > -1) {
 
-            if (ua.indexOf('mozilla/5.0') > -1 && ua.indexOf('applewebkit') > -1 && ua.indexOf('version/') > -1) {
+            useragents.ie = true;
 
-                events.removeClass(document, 'chrome');
-                events.removeClass(document, 'safari');
+            events.addClass(document, 'ie');
+            events.removeClass(document, 'chrome');
 
-                events.addClass(document, 'android-browser');
-                useragents.nativeBrowser = true;
+            if (ua.indexOf('edge') > -1) {
+
+                useragents.edge = true;
+                events.removeClass(document, 'ie');
+                events.addClass(document, 'edge');
 
             }
 
-            events.addClass(document, 'android');
-            events.removeClass(document, 'ios');
+        }
+        if (ua.indexOf('msie 9') > -1) {
 
-            if (useragents.nativeBrowser || parseFloat(ua.match(/android\s([0-9\.]*)/)[1], 10) < parseFloat('4.4')) { // Jelly Bean and before with stock browser is androidOld
-                useragents.androidOld = true;
-            }
+            useragents.ie9 = true;
+            events.addClass(document, 'ie9');
 
-            useragents.android = true;
-            useragents.ios = false;
         }
 
-    } else { events.removeClass(document, 'ios'); }
+        if (navigator.appVersion.indexOf('Win') !== -1) { events.addClass(document, 'windows'); }
+        if (navigator.appVersion.indexOf('Mac') !== -1) { events.addClass(document, 'mac'); }
 
-}
+        if (ua.indexOf('mobile') > -1) {
 
-/*!loader */
-events.onload(function () {
+            events.addClass(document, 'mobile');
+            useragents.mobile = true;
 
-    'use strict';
-    useragentsFnc();
+            if (ua.indexOf('apple') > -1) {
 
-});
+                events.addClass(document, 'ios');
+                events.removeClass(document, 'mac');
+                useragents.ios = true;
+
+            }
+
+            if (ua.indexOf('android') > -1) {
+
+                if (ua.indexOf('mozilla/5.0') > -1 && ua.indexOf('applewebkit') > -1 && ua.indexOf('version/') > -1) {
+
+                    events.removeClass(document, 'chrome');
+                    events.removeClass(document, 'safari');
+
+                    events.addClass(document, 'android-browser');
+                    useragents.nativeBrowser = true;
+
+                }
+
+                events.addClass(document, 'android');
+                events.removeClass(document, 'ios');
+
+                if (useragents.nativeBrowser || parseFloat(ua.match(/android\s([0-9\.]*)/)[1], 10) < parseFloat('4.4')) { // Jelly Bean and before with stock browser is androidOld
+                    useragents.androidOld = true;
+                }
+
+                useragents.android = true;
+                useragents.ios = false;
+            }
+
+        } else { events.removeClass(document, 'ios'); }
+
+    }
+
+    // Loaders
+    events.onload(useragentsFnc);
+
+}());

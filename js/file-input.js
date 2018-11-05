@@ -3,21 +3,20 @@
  File Input JS requires Events JS
 */
 
-/*globals document, selector, events */
-var fileInputFnc = function () {
+(function () {
 
     'use strict';
+    /*globals document, selector, events */
 
-    events.on(document, 'change', '.file input', function () {
-        selector('span', this.parentElement)[0].innerHTML = this.value;
-    });
+    function fileInputFnc() {
 
-};
+        events.on(document, 'change', '.file input', function () {
+            selector('span', this.parentElement)[0].innerHTML = this.value;
+        });
 
-/*!loader */
-events.onload(function () {
+    }
 
-    'use strict';
-    fileInputFnc();
+    // Loaders
+    events.onload(fileInputFnc);
 
-});
+}());

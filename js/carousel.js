@@ -3,377 +3,374 @@
  Carousel JS requires Events JS
 */
 
-/*globals window, document, selector, events, navigator, Image, setTimeout, setInterval, clearInterval */
-function carouselAnimate(content, time, wait) {
+(function () {
 
     'use strict';
-    var animates, total, i = 0;
+    /*globals window, document, selector, events, navigator, Image, setTimeout, clearTimeout, setInterval, clearInterval */
 
-    animates = selector('.carousel-animate:not(.show)', content);
+    var
+        cols = [],
+        colsMobile = [],
+        counts = [],
+        loadedImgs = [],
+        autoSlider = [],
+        autoTimer = [],
+        autoTimeouts = [];
 
-    total = animates.length;
-    if (total === 0) { return; }
+    function carouselAnimate(content, time, wait) {
 
-    setTimeout(function () { // wait for dom loading or slider ease time
+        var animates, i = 0;
+        animates = selector('.carousel-animate:not(.show)', content);
 
-        function show() {
+        if (animates.length === 0) { return; }
 
-            setTimeout(function () {
 
-                events.addClass(animates[i], 'show');
+        setTimeout(function () { // wait for dom loading or slider ease time
 
-                i += 1;
-                if (i < total) { show(); }
+            function show() {
 
-            }, time);
-
-        }
-        show();
-
-    }, wait);
-
-}
-function carouselLazyImages(col, i) {
-
-    'use strict';
-
-    var images, img = [];
-
-    images = selector('.carousel');
-    images = selector('.content img.img[data-src]', images[i]);
-
-    if (images.length > 0) {
-
-        window.carouselLoadImgs[i] = [];
-        events.each(images, function (l) {
-
-            if (l >= col) { return; }
-            img[l] = this;
-
-            window.carouselLoadImgs[i][l] = new Image();
-            window.carouselLoadImgs[i][l].src = img[l].getAttribute('data-src');
-
-            window.carouselLoadImgs[i][l].addEventListener('load', function () {
-
-                img[l].src = window.carouselLoadImgs[i][l].src;
-                img[l].removeAttribute('data-src');
-                events.addClass(img[l], 'loaded');
-
-                window.carouselLoadImgs[i][l] = '';
-
-            }, false);
-
-        });
-
-    }
-
-}
-function carouselResizerFnc(i, that) {
-
-    'use strict';
-    var col, j, k, slider, contents, animate, navDots, navDotsIn, navDotsLength, navDotsSize, navSides;
-
-    if (that === undefined) {
-        that = selector('.carousel');
-    }
-
-    function fnc() {
-
-        contents = selector('.content', that[i]);
-        navDots = selector('.carousel-nav .dots', that[i])[0];
-
-        navDotsLength = selector('i', navDots).length;
-
-        if (window.innerWidth > 767) {
-
-            col = window.carouselCols[i];
-            navSides = Math.ceil(contents.length / window.carouselCols[i]);
-
-        } else {
-
-            col = window.carouselColsMobile[i];
-            navSides = Math.ceil(contents.length / window.carouselColsMobile[i]);
-
-        }
-
-        navDotsSize = (navSides - navDotsLength);
-
-        for (j = 0; j < navDotsSize; j += 1) {
-            navDots.innerHTML += events.parser('<i class="ease-layout"></i>');
-        }
-
-        navDotsIn = selector('.carousel-nav .dots i', that[i]);
-
-        if (navDotsSize < 0) {
-
-            for (k = navSides; k < navDotsLength; k += 1) {
-                navDotsIn[k].style.display = 'none';
-            }
-
-        } else {
-
-            for (k = 0; k < navDotsLength; k += 1) {
-                navDotsIn[k].style.display = '';
-            }
-
-        }
-
-        if (window.carouselCounts[i] > (navSides - 1)) {
-            window.carouselCounts[i] = (navSides - 1);
-        }
-
-        animate = contents[window.carouselCounts[i]].getAttribute('data-animate');
-        if (animate !== null) {
-
-            if (animate === '') { animate = 150; }
-            carouselAnimate(contents[window.carouselCounts[i]], animate, 300);
-
-        }
-
-        that[i].setAttribute('data-content', (window.carouselCounts[i] + 1));
-
-        events.removeClass(navDotsIn, 'selected');
-        events.addClass(navDotsIn[window.carouselCounts[i]], 'selected');
-
-        slider = selector('.carousel-slider', that[i]);
-
-        // detecting ie9
-        if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
-            slider[0].style.marginLeft = '-' + (window.carouselCounts[i] * that[i].offsetWidth) + 'px';
-
-        } else {
-            slider[0].style.transform = 'translateX(-' + (window.carouselCounts[i] * that[i].offsetWidth) + 'px)';
-        }
-
-        events.width(slider, ((that[i].offsetWidth / col) * contents.length) * 2 + 'px');
-        events.width(contents, (that[i].offsetWidth / col) + 'px');
-
-        carouselLazyImages(col, i);
-
-    }
-
-    if (that.length > 0) {
-
-        if (i === undefined) {
-            for (i = 0; i < that.length; i += 1) { fnc(); }
-
-        } else { fnc(); }
-
-    }
-
-}
-function carouselFnc() {
-
-    'use strict';
-    var carousels, carouselNav;
-
-    carousels = selector('.carousel');
-    if (carousels.length > 0) {
-
-        window.carouselCols = [];
-        window.carouselColsMobile = [];
-
-        window.carouselCounts = [];
-        window.carouselLoadImgs = [];
-
-        window.carouselAutoSlider = [];
-        window.carouselAutoTimer = [];
-
-        carouselNav = function (that, direction) {
-
-            var col, slider, contents, animate, wait, i, max, navDots;
-
-            navDots = selector('.carousel-nav .dots i', that);
-
-            slider = selector('.carousel-slider', that);
-            contents = selector('.content', slider[0]);
-
-            i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
-
-            if (window.innerWidth > 767) {
-                col = window.carouselCols[i];
-
-            } else {
-                col = window.carouselColsMobile[i];
-            }
-
-            col = Number(col);
-            max = Math.ceil(contents.length / col) - 1;
-
-            if (direction === 'next') {
-
-                window.carouselCounts[i] += 1;
-                if (window.carouselCounts[i] > max) { window.carouselCounts[i] = 0; }
-
-            } else if (direction === 'prev') {
-
-                window.carouselCounts[i] -= 1;
-                if (window.carouselCounts[i] < 0) { window.carouselCounts[i] = 0; }
-
-            }
-
-            // get carousel slide speed
-            wait = 150;
-
-            if (events.hasClass(slider, 'ease-fast')) {
-                wait = 100;
-
-            } else if (events.hasClass(slider, 'ease-slow')) {
-                wait = 400;
-
-            } else if (events.hasClass(slider, 'ease-slow2x')) {
-                wait = 800;
-
-            } else if (events.hasClass(slider, 'ease-slow3x')) {
-                wait = 1200;
-
-            } else if (events.hasClass(slider, 'ease-slow4x')) {
-                wait = 1600;
-
-            } else if (events.hasClass(slider, 'ease-slow5x')) {
-                wait = 2000;
-            }
-
-            // wait auto slider to slide completed
-            if (window.carouselAutoSlider[i] !== undefined) {
-
-                clearInterval(window.carouselAutoSlider[i]);
                 setTimeout(function () {
 
-                    window.carouselAutoSlider[i] = setInterval(function () {
-                        carouselNav(that, 'next');
+                    events.addClass(animates[i], 'show');
 
-                    }, window.carouselAutoTimer[i]);
+                    i += 1;
+                    if (i < animates.length) { show(); }
 
-                }, wait);
+                }, time);
+
+            }
+            show();
+
+        }, wait);
+
+    }
+
+    function carouselLazyImages(col, i) {
+
+        var images, img = [];
+
+        images = selector('.carousel');
+        images = selector('.content img.img[data-src]', images[i]);
+
+        if (images.length > 0) {
+
+            loadedImgs[i] = [];
+            events.each(images, function (l) {
+
+                if (l >= col) { return; }
+                img[l] = this;
+
+                loadedImgs[i][l] = new Image();
+                loadedImgs[i][l].src = img[l].getAttribute('data-src');
+
+                loadedImgs[i][l].addEventListener('load', function () {
+
+                    img[l].src = loadedImgs[i][l].src;
+                    img[l].removeAttribute('data-src');
+                    events.addClass(img[l], 'loaded');
+
+                    loadedImgs[i][l] = '';
+
+                }, false);
+
+            });
+
+        }
+
+    }
+
+    function carouselResizerFnc(i, that) {
+
+        var col, j, k, slider, contents, animate, navDots, navDotsIn, navDotsLength, navDotsSize, navSides;
+
+        if (that === undefined) {
+            that = selector('.carousel');
+        }
+
+        function fnc() {
+
+            contents = selector('.content', that[i]);
+            navDots = selector('.carousel-nav .dots', that[i])[0];
+
+            navDotsLength = selector('i', navDots).length;
+
+            if (window.innerWidth > 767) {
+
+                col = cols[i];
+                navSides = Math.ceil(contents.length / cols[i]);
+
+            } else {
+
+                col = colsMobile[i];
+                navSides = Math.ceil(contents.length / colsMobile[i]);
 
             }
 
-            // detect carousel animates
-            animate = contents[window.carouselCounts[i]].getAttribute('data-animate');
+            navDotsSize = (navSides - navDotsLength);
+
+            for (j = 0; j < navDotsSize; j += 1) {
+                navDots.innerHTML += events.parser('<i class="ease-layout"></i>');
+            }
+
+            navDotsIn = selector('.carousel-nav .dots i', that[i]);
+
+            if (navDotsSize < 0) {
+
+                for (k = navSides; k < navDotsLength; k += 1) {
+                    navDotsIn[k].style.display = 'none';
+                }
+
+            } else {
+
+                for (k = 0; k < navDotsLength; k += 1) {
+                    navDotsIn[k].style.display = '';
+                }
+
+            }
+
+            if (counts[i] > (navSides - 1)) {
+                counts[i] = (navSides - 1);
+            }
+
+            animate = contents[counts[i]].getAttribute('data-animate');
             if (animate !== null) {
 
                 if (animate === '') { animate = 150; }
-                carouselAnimate(contents[window.carouselCounts[i]], animate, wait);
+                carouselAnimate(contents[counts[i]], animate, 300);
 
             }
 
-            that.setAttribute('data-content', (window.carouselCounts[i] + 1));
+            that[i].setAttribute('data-content', (counts[i] + 1));
 
-            events.removeClass(navDots, 'selected');
-            events.addClass(navDots[window.carouselCounts[i]], 'selected');
+            events.removeClass(navDotsIn, 'selected');
+            events.addClass(navDotsIn[counts[i]], 'selected');
+
+            slider = selector('.carousel-slider', that[i]);
 
             // detecting ie9
             if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
-                slider[0].style.marginLeft = '-' + (window.carouselCounts[i] * that.offsetWidth) + 'px';
+                slider[0].style.marginLeft = '-' + (counts[i] * that[i].offsetWidth) + 'px';
 
             } else {
-                slider[0].style.transform = 'translateX(-' + (window.carouselCounts[i] * that.offsetWidth) + 'px)';
+                slider[0].style.transform = 'translateX(-' + (counts[i] * that[i].offsetWidth) + 'px)';
             }
+
+            events.width(slider, ((that[i].offsetWidth / col) * contents.length) * 2 + 'px');
+            events.width(contents, (that[i].offsetWidth / col) + 'px');
 
             carouselLazyImages(col, i);
 
-        };
+        }
 
-        events.each(carousels, function (j) {
+        if (that.length > 0) {
 
-            var that = this;
+            if (i === undefined) {
+                for (i = 0; i < that.length; i += 1) { fnc(); }
 
-            window.carouselCols[j] = that.getAttribute('data-col');
-            window.carouselColsMobile[j] = that.getAttribute('data-col-mobile');
+            } else { fnc(); }
 
-            if (window.carouselCols[j] === null) {
-                window.carouselCols[j] = 1;
-
-            } else {
-
-                window.carouselCols[j] = Number(window.carouselCols[j]);
-                if (!window.carouselCols[j] || window.carouselCols[j] === '0' || window.carouselCols[j] === '') {
-                    window.carouselCols[j] = 1;
-                }
-
-            }
-
-            if (window.carouselColsMobile[j] === null) {
-                window.carouselColsMobile[j] = window.carouselCols[j];
-
-            } else {
-
-                window.carouselColsMobile[j] = Number(window.carouselColsMobile[j]);
-                if (!window.carouselColsMobile[j] || window.carouselColsMobile[j] === '0' || window.carouselColsMobile[j] === '') {
-                    window.carouselColsMobile[j] = window.carouselCols[j];
-                }
-
-            }
-
-            window.carouselCounts[j] = 0;
-
-            carouselResizerFnc(j, carousels);
-            events.addClass(that, 'active');
-
-            // auto slider
-            window.carouselAutoTimer[j] = that.getAttribute('data-slide');
-            if (window.carouselAutoTimer[j] !== null) {
-
-                if (window.carouselAutoTimer[j] === '') { window.carouselAutoTimer[j] = 8000; }
-
-                window.carouselAutoSlider[j] = setInterval(function () {
-                    carouselNav(that, 'next');
-                }, window.carouselAutoTimer[j]);
-
-            }
-
-        });
-
-        // Events
-        events.on(document, 'click', '.carousel-prev,.carousel-next', function () {
-
-            var that, direction;
-            if (events.hasClass(this, 'carousel-next')) { direction = 'next'; } else { direction = 'prev'; }
-
-            that = events.closest(this, '.carousel')[0];
-            carouselNav(that, direction);
-
-        });
-
-        events.on(document, 'mouseenter', '.carousel[data-slide]', function () {
-
-            var i = Array.prototype.slice.call(selector('.carousel')).indexOf(this);
-            clearInterval(window.carouselAutoSlider[i]);
-
-        });
-
-        events.on(document, 'mouseleave', '.carousel[data-slide]', function () {
-
-            var i, that;
-
-            that = this;
-            i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
-
-            clearInterval(window.carouselAutoSlider[i]);
-            window.carouselAutoSlider[i] = setInterval(function () {
-                carouselNav(that, 'next');
-
-            }, window.carouselAutoTimer[i]);
-
-        });
+        }
 
     }
 
-}
+    function carouselFnc() {
 
-/*!loader */
-events.onload(function () {
+        var carousels, carouselNav;
+        carousels = selector('.carousel');
 
-    'use strict';
-    carouselFnc();
+        if (carousels.length > 0) {
 
-});
+            carouselNav = function (that, direction) {
 
-/*!resize loader */
-events.on(window, 'resize', function () {
+                var col, slider, contents, animate, wait, i, max, navDots;
 
-    'use strict';
-    carouselResizerFnc();
+                navDots = selector('.carousel-nav .dots i', that);
 
-});
+                slider = selector('.carousel-slider', that);
+                contents = selector('.content', slider[0]);
+
+                i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
+
+                if (window.innerWidth > 767) {
+                    col = cols[i];
+
+                } else {
+                    col = colsMobile[i];
+                }
+
+                col = Number(col);
+                max = Math.ceil(contents.length / col) - 1;
+
+                if (direction === 'next') {
+
+                    counts[i] += 1;
+                    if (counts[i] > max) { counts[i] = 0; }
+
+                } else if (direction === 'prev') {
+
+                    counts[i] -= 1;
+                    if (counts[i] < 0) { counts[i] = 0; }
+
+                }
+
+                // get carousel slide speed
+                wait = 150;
+
+                if (events.hasClass(slider, 'ease-fast')) {
+                    wait = 100;
+
+                } else if (events.hasClass(slider, 'ease-slow')) {
+                    wait = 400;
+
+                } else if (events.hasClass(slider, 'ease-slow2x')) {
+                    wait = 800;
+
+                } else if (events.hasClass(slider, 'ease-slow3x')) {
+                    wait = 1200;
+
+                } else if (events.hasClass(slider, 'ease-slow4x')) {
+                    wait = 1600;
+
+                } else if (events.hasClass(slider, 'ease-slow5x')) {
+                    wait = 2000;
+                }
+
+                // wait auto slider to slide completed
+                if (autoSlider[i] !== undefined) {
+
+                    clearInterval(autoSlider[i]);
+                    clearTimeout(autoTimeouts[i]);
+
+                    autoTimeouts[i] = setTimeout(function () {
+
+                        autoSlider[i] = setInterval(function () {
+                            carouselNav(that, 'next');
+
+                        }, autoTimer[i]);
+
+                    }, wait);
+
+                }
+
+                // detect carousel animates
+                animate = contents[counts[i]].getAttribute('data-animate');
+                if (animate !== null) {
+
+                    if (animate === '') { animate = 150; }
+                    carouselAnimate(contents[counts[i]], animate, wait);
+
+                }
+
+                that.setAttribute('data-content', (counts[i] + 1));
+
+                events.removeClass(navDots, 'selected');
+                events.addClass(navDots[counts[i]], 'selected');
+
+                // detecting ie9
+                if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
+                    slider[0].style.marginLeft = '-' + (counts[i] * that.offsetWidth) + 'px';
+
+                } else {
+                    slider[0].style.transform = 'translateX(-' + (counts[i] * that.offsetWidth) + 'px)';
+                }
+
+                carouselLazyImages(col, i);
+
+            };
+
+            events.each(carousels, function (j) {
+
+                var that = this;
+
+                cols[j] = that.getAttribute('data-col');
+                colsMobile[j] = that.getAttribute('data-col-mobile');
+
+                if (cols[j] === null) {
+                    cols[j] = 1;
+
+                } else {
+
+                    cols[j] = Number(cols[j]);
+                    if (!cols[j] || cols[j] === '0' || cols[j] === '') {
+                        cols[j] = 1;
+                    }
+
+                }
+
+                if (colsMobile[j] === null) {
+                    colsMobile[j] = cols[j];
+
+                } else {
+
+                    colsMobile[j] = Number(colsMobile[j]);
+                    if (!colsMobile[j] || colsMobile[j] === '0' || colsMobile[j] === '') {
+                        colsMobile[j] = cols[j];
+                    }
+
+                }
+
+                counts[j] = 0;
+
+                carouselResizerFnc(j, carousels);
+                events.addClass(that, 'active');
+
+                // auto slider
+                autoTimer[j] = that.getAttribute('data-slide');
+                if (autoTimer[j] !== null) {
+
+                    if (autoTimer[j] === '') { autoTimer[j] = 8000; }
+
+                    autoSlider[j] = setInterval(function () {
+                        carouselNav(that, 'next');
+                    }, autoTimer[j]);
+
+                }
+
+            });
+
+            // Events
+            events.on(document, 'click', '.carousel-prev,.carousel-next', function () {
+
+                var that, direction;
+                if (events.hasClass(this, 'carousel-next')) { direction = 'next'; } else { direction = 'prev'; }
+
+                that = events.closest(this, '.carousel')[0];
+                carouselNav(that, direction);
+
+            });
+
+            events.on(document, 'mouseenter', '.carousel[data-slide]', function () {
+
+                var i = Array.prototype.slice.call(selector('.carousel')).indexOf(this);
+
+                clearInterval(autoSlider[i]);
+                clearTimeout(autoTimeouts[i]);
+
+            });
+
+            events.on(document, 'mouseleave', '.carousel[data-slide]', function () {
+
+                var i, that;
+
+                that = this;
+                i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
+
+                clearInterval(autoSlider[i]);
+                clearTimeout(autoTimeouts[i]);
+
+                autoSlider[i] = setInterval(function () {
+                    carouselNav(that, 'next');
+
+                }, autoTimer[i]);
+
+            });
+
+        }
+
+    }
+
+    // Loaders
+    events.onload(carouselFnc);
+    events.on(window, 'resize', carouselResizerFnc);
+
+}());

@@ -3,89 +3,86 @@
  Countdown JS requires Events JS
 */
 
-/*globals window, document, selector, events, setInterval, clearInterval */
-function countdownFnc() {
+(function () {
 
     'use strict';
+    /*globals document, selector, events, ajax, setInterval, clearInterval */
 
-    var countdown, j, arr, d, h, m, s;
+    var countdownTimer;
 
-    countdown = selector('.countdown');
+    function countdownFnc() {
 
-    arr = [];
-    for (j = 0; j < countdown.length; j += 1) { arr[j] = []; }
+        var countdown, j, arr, d, h, m, s;
+        countdown = selector('.countdown');
 
-    clearInterval(window.countdownTimer);
-    window.countdownTimer = setInterval(function () {
+        arr = [];
+        for (j = 0; j < countdown.length; j += 1) { arr[j] = []; }
 
-        events.each(countdown, function (i) {
+        clearInterval(countdownTimer);
+        countdownTimer = setInterval(function () {
 
-            s = selector('.s', this)[0]; // second
-            if (s === undefined) { return; }
+            events.each(countdown, function (i) {
 
-            arr[i].s = parseInt(s.textContent, 10);
+                s = selector('.s', this)[0]; // second
+                if (s === undefined) { return; }
 
-            if (arr[i].s <= 0) {
+                arr[i].s = parseInt(s.textContent, 10);
 
-                arr[i].s = 59;
+                if (arr[i].s <= 0) {
 
-                m = selector('.m', this)[0]; // minute
-                if (m === undefined) { return; }
+                    arr[i].s = 59;
 
-                arr[i].m = parseInt(m.textContent, 10);
+                    m = selector('.m', this)[0]; // minute
+                    if (m === undefined) { return; }
 
-                if (arr[i].m <= 0) {
+                    arr[i].m = parseInt(m.textContent, 10);
 
-                    arr[i].m = 59;
+                    if (arr[i].m <= 0) {
 
-                    h = selector('.h', this)[0]; // hour
-                    if (h === undefined) { return; }
+                        arr[i].m = 59;
 
-                    arr[i].h = parseInt(h.textContent, 10);
+                        h = selector('.h', this)[0]; // hour
+                        if (h === undefined) { return; }
 
-                    if (arr[i].h <= 0) {
+                        arr[i].h = parseInt(h.textContent, 10);
 
-                        d = selector('.d', this)[0]; // day
-                        if (d === undefined) { return; }
-                        arr[i].d = parseInt(d.textContent, 10);
+                        if (arr[i].h <= 0) {
 
-                        if (arr[i].d <= 0) { arr[i].d = 0; return; }
-                        arr[i].d -= 1;
-                        d.textContent = arr[i].d;
+                            d = selector('.d', this)[0]; // day
+                            if (d === undefined) { return; }
+                            arr[i].d = parseInt(d.textContent, 10);
 
-                        arr[i].h = 23;
+                            if (arr[i].d <= 0) { arr[i].d = 0; return; }
+                            arr[i].d -= 1;
+                            d.textContent = arr[i].d;
 
-                    } else { arr[i].h -= 1; }
-                    h.textContent = arr[i].h;
+                            arr[i].h = 23;
 
-                } else { arr[i].m -= 1; }
+                        } else { arr[i].h -= 1; }
+                        h.textContent = arr[i].h;
 
-                if (arr[i].m.toString().length === 1) { arr[i].m = '0' + arr[i].m.toString(); }
-                m.textContent = arr[i].m;
+                    } else { arr[i].m -= 1; }
 
-            } else { arr[i].s -= 1; }
+                    if (arr[i].m.toString().length === 1) { arr[i].m = '0' + arr[i].m.toString(); }
+                    m.textContent = arr[i].m;
 
-            if (arr[i].s.toString().length === 1) { arr[i].s = '0' + arr[i].s.toString(); }
-            s.textContent = arr[i].s;
+                } else { arr[i].s -= 1; }
 
-        });
+                if (arr[i].s.toString().length === 1) { arr[i].s = '0' + arr[i].s.toString(); }
+                s.textContent = arr[i].s;
 
-    }, 1000);
+            });
 
-}
+        }, 1000);
 
-/*!loader */
-events.onload(function () {
+    }
 
-    'use strict';
-    countdownFnc();
+    // Loaders
+    events.onload(countdownFnc);
 
-});
+    // ajax callback loader: requires Ajax JS
+    events.on(document, 'ajaxCallbacks', function () {
+        if (ajax.ajaxClassNames.indexOf('countdown') > -1) { countdownFnc(); }
+    });
 
-/*!ajax callback loader: requires Ajax JS */
-events.on(document, 'ajaxCallbacks', function () {
-
-    'use strict';
-    if (window.ajaxClassNames.indexOf('countdown') > -1) { countdownFnc(); }
-
-});
+}());

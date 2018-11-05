@@ -2,8 +2,6 @@
  Autocomplete JS
  Autocomplete JS requires Events JS, Ajax JS
 */
-
-/*globals window, document, selector, events, ajax, clearTimeout, setTimeout */
 var autocomplete = {
 
     classes : 'bordered dual-bordered rounded shadow',
@@ -11,66 +9,72 @@ var autocomplete = {
 
 };
 
-function autocompleteFnc() {
+(function () {
 
     'use strict';
-    var customLowerCase, pullValues, formEvents, autocompleteRequests;
+    /*globals window, document, selector, events, ajax, clearTimeout, setTimeout */
 
-    pullValues = [];
-    autocompleteRequests = [];
+    function autocompleteFnc() {
 
-    // custom lowercase
-    (function () {
+        var customLowerCase, pullValues, formEvents, autocompleteRequests;
 
-        var k, re, chars, keys;
-        keys = Object.keys(autocomplete.customLetters); // returns array
+        pullValues = [];
+        autocompleteRequests = [];
 
-        chars = '(([';
-        for (k = 0; k < keys.length; k += 1) { chars += keys[k]; }
-        chars += ']))';
+        // custom lowercase
+        (function () {
 
-        re = new RegExp(chars, 'g');
+            var k, re, chars, keys;
+            keys = Object.keys(autocomplete.customLetters); // returns array
 
-        customLowerCase = function (string) {
+            chars = '(([';
+            for (k = 0; k < keys.length; k += 1) { chars += keys[k]; }
+            chars += ']))';
 
-            string = string.replace(/["'\[\]\{\}()]/g, '').replace(re, function (l) {
-                return autocomplete.customLetters[l];
-            });
+            re = new RegExp(chars, 'g');
 
-            return string.toLowerCase();
+            customLowerCase = function (string) {
 
-        };
+                string = string.replace(/["'\[\]\{\}()]/g, '').replace(re, function (l) {
+                    return autocomplete.customLetters[l];
+                });
 
-    }());
+                return string.toLowerCase();
 
-    // pulling values
-    function pullValuesFnc(key, value) {
+            };
 
-        var forms, type, getKey, getValue, i, j;
+        }());
 
-        if (pullValues.length !== 'undefined') {
+        // pulling values
+        function pullValuesFnc(key, value) {
 
-            for (i = 0; i < pullValues.length; i += 1) {
+            var forms, type, getKey, getValue, i, j;
 
-                if (pullValues[i][key] === value) {
+            if (pullValues.length !== 'undefined') {
 
-                    getKey = Object.keys(pullValues[i]); // returns array
-                    getKey.splice(getKey.indexOf(key), 1);
+                for (i = 0; i < pullValues.length; i += 1) {
 
-                    for (j = 0; j < getKey.length; j += 1) {
+                    if (pullValues[i][key] === value) {
 
-                        getValue = pullValues[i][getKey[j]];
-                        forms = selector('[data-pull="' + getKey[j] + '"]');
+                        getKey = Object.keys(pullValues[i]); // returns array
+                        getKey.splice(getKey.indexOf(key), 1);
 
-                        if (forms.length > 0) {
+                        for (j = 0; j < getKey.length; j += 1) {
 
-                            type = forms[0].getAttribute('type');
+                            getValue = pullValues[i][getKey[j]];
+                            forms = selector('[data-pull="' + getKey[j] + '"]');
 
-                            if (type === 'checkbox' || type === 'radio') {
-                                forms[0].checked = getValue;
+                            if (forms.length > 0) {
 
-                            } else {
-                                forms[0].value = getValue;
+                                type = forms[0].getAttribute('type');
+
+                                if (type === 'checkbox' || type === 'radio') {
+                                    forms[0].checked = getValue;
+
+                                } else {
+                                    forms[0].value = getValue;
+                                }
+
                             }
 
                         }
@@ -83,125 +87,93 @@ function autocompleteFnc() {
 
         }
 
-    }
+        // Events
+        formEvents = selector('.text.autocomplete > [type="text"]');
 
-    // Events
-    formEvents = selector('.text.autocomplete > [type="text"]');
+        events.on(document, 'keyup', formEvents, function (e) {
 
-    events.on(document, 'keyup', formEvents, function (e) {
+            var i, j, k, n, p, list, listItems, navSelected, navIndex, v, key, createDropdown, timerShowLines, offset, tHeight, dHeight, m, txt, getVal, src, dataId, dataClass, send, input, type;
 
-        var i, j, k, n, p, list, listItems, navSelected, navIndex, v, key, createDropdown, timerShowLines, offset, tHeight, dHeight, m, txt, getVal, src, dataId, dataClass, send, input, type;
+            p = this.parentNode;
+            list = selector('ul', p);
 
-        p = this.parentNode;
-        list = selector('ul', p);
+            if (p.getAttribute('data-src') !== null) {
 
-        if (p.getAttribute('data-src') !== null) {
+                if (e.keyCode === 38 || e.keyCode === 40) {
 
-            if (e.keyCode === 38 || e.keyCode === 40) {
+                    // navigate the list
+                    listItems = selector('li', list[0]);
+                    if (listItems.length > 0) {
 
-                // navigate the list
-                listItems = selector('li', list[0]);
-                if (listItems.length > 0) {
+                        navSelected = selector('li.selected', list[0]);
+                        if (navSelected.length > 0) {
 
-                    navSelected = selector('li.selected', list[0]);
-                    if (navSelected.length > 0) {
+                            navIndex = Array.prototype.slice.call(listItems).indexOf(navSelected[0]);
 
-                        navIndex = Array.prototype.slice.call(listItems).indexOf(navSelected[0]);
+                            if (e.keyCode === 40) { // arrow down
 
-                        if (e.keyCode === 40) { // arrow down
+                                navIndex += 1;
+                                if (navIndex >= listItems.length) { navIndex = 0; }
 
-                            navIndex += 1;
-                            if (navIndex >= listItems.length) { navIndex = 0; }
+                            } else if (e.keyCode === 38) { // arrow up
 
-                        } else if (e.keyCode === 38) { // arrow up
-
-                            navIndex -= 1;
-                            if (navIndex < 0) { navIndex = 0; }
-
-                        }
-
-                    } else if (e.keyCode === 40) { // arrow down
-                        navIndex = 0;
-                    }
-
-                    events.removeClass(navSelected, 'selected');
-                    events.addClass(listItems[navIndex], 'selected');
-
-                    this.value = listItems[navIndex].textContent;
-
-                }
-
-            } else if (e.keyCode === 13 || e.keyCode === 27) {
-
-                if (list.length >= 1) {
-
-                    events.removeClass(p, 'open');
-                    list[0].innerHTML = '';
-                }
-
-            } else if (e.keyCode !== 16 && e.keyCode !== 17 && e.keyCode !== 18) {
-
-                v = this.value;
-
-                v = customLowerCase(v);
-                v = v.replace(/\s+$/g, ''); // remove the last space
-
-                if (v !== '') {
-
-                    src = p.getAttribute('data-src');
-                    getVal = p.getAttribute('data-val');
-
-                    if (src !== null && src !== '' && getVal !== null && getVal !== '') {
-
-                        // sending source name with value
-                        if (this.name !== '') {
-                            send = this.name + '=' + v;
-
-                        } else {
-                            send = 'value=' + v;
-                        }
-
-                        // sending target id with value
-                        dataId = p.getAttribute('data-id');
-                        if (dataId !== null && dataId !== '') {
-
-                            input = selector('#' + dataId)[0];
-                            type = input.getAttribute('type');
-
-                            if (type === 'checkbox' || type === 'radio') {
-
-                                if (input.id !== '') {
-                                    send += '&' + dataId + '=' + input.checked;
-
-                                } else {
-                                    send += '&' + input.name + '=' + input.checked;
-                                }
-
-                            } else {
-
-                                if (input.id !== '') {
-                                    send += '&' + dataId + '=' + input.value;
-
-                                } else {
-                                    send += '&' + input.name + '=' + input.value;
-                                }
+                                navIndex -= 1;
+                                if (navIndex < 0) { navIndex = 0; }
 
                             }
 
+                        } else if (e.keyCode === 40) { // arrow down
+                            navIndex = 0;
                         }
 
-                        // sending target class names with value
-                        dataClass = p.getAttribute('data-class');
-                        if (dataClass !== null && dataClass !== '') {
+                        events.removeClass(navSelected, 'selected');
+                        events.addClass(listItems[navIndex], 'selected');
 
-                            events.each('.' + dataClass, function () {
+                        this.value = listItems[navIndex].textContent;
 
-                                input = selector('input,select,textarea', this)[0];
+                    }
 
-                                if (input.type === 'checkbox' || input.type === 'radio') {
+                } else if (e.keyCode === 13 || e.keyCode === 27) {
+
+                    if (list.length >= 1) {
+
+                        events.removeClass(p, 'open');
+                        list[0].innerHTML = '';
+                    }
+
+                } else if (e.keyCode !== 16 && e.keyCode !== 17 && e.keyCode !== 18) {
+
+                    v = this.value;
+
+                    v = customLowerCase(v);
+                    v = v.replace(/\s+$/g, ''); // remove the last space
+
+                    if (v !== '') {
+
+                        src = p.getAttribute('data-src');
+                        getVal = p.getAttribute('data-val');
+
+                        if (src !== null && src !== '' && getVal !== null && getVal !== '') {
+
+                            // sending source name with value
+                            if (this.name !== '') {
+                                send = this.name + '=' + v;
+
+                            } else {
+                                send = 'value=' + v;
+                            }
+
+                            // sending target id with value
+                            dataId = p.getAttribute('data-id');
+                            if (dataId !== null && dataId !== '') {
+
+                                input = selector('#' + dataId)[0];
+                                type = input.getAttribute('type');
+
+                                if (type === 'checkbox' || type === 'radio') {
 
                                     if (input.id !== '') {
-                                        send += '&' + input.id + '=' + input.checked;
+                                        send += '&' + dataId + '=' + input.checked;
 
                                     } else {
                                         send += '&' + input.name + '=' + input.checked;
@@ -210,7 +182,7 @@ function autocompleteFnc() {
                                 } else {
 
                                     if (input.id !== '') {
-                                        send += '&' + input.id + '=' + input.value;
+                                        send += '&' + dataId + '=' + input.value;
 
                                     } else {
                                         send += '&' + input.name + '=' + input.value;
@@ -218,241 +190,268 @@ function autocompleteFnc() {
 
                                 }
 
-                            });
-
-                        }
-
-                        ajax('POST', src + '?' + send, function (response, status, xhr) {
-
-                            // abort still processing previous autocomplete requests
-                            for (n = 0; n < autocompleteRequests.length; n += 1) {
-
-                                autocompleteRequests[n].abort();
-                                autocompleteRequests.splice(n, 1);
-
                             }
 
-                            autocompleteRequests.push(xhr);
+                            // sending target class names with value
+                            dataClass = p.getAttribute('data-class');
+                            if (dataClass !== null && dataClass !== '') {
 
-                            if (status === 'success') {
+                                events.each('.' + dataClass, function () {
 
-                                autocompleteRequests = [];
+                                    input = selector('input,select,textarea', this)[0];
 
-                                response = JSON.parse(response);
-                                if (response.length !== 'undefined') {
+                                    if (input.type === 'checkbox' || input.type === 'radio') {
 
-                                    createDropdown = function () {
+                                        if (input.id !== '') {
+                                            send += '&' + input.id + '=' + input.checked;
 
-                                        // create dropdown
-                                        clearTimeout(timerShowLines);
-                                        timerShowLines = setTimeout(function () {
-
-                                            events.addClass(list, autocomplete.classes);
-
-                                            offset = p.getBoundingClientRect();
-
-                                            tHeight = p.offsetHeight;
-                                            dHeight = list[0].offsetHeight;
-
-                                            if (offset.top + parseInt(tHeight + dHeight, 10) >= window.innerHeight) {
-
-                                                if (offset.top - parseInt(tHeight + dHeight, 10) + tHeight > 0) {
-                                                    events.addClass(p, 'submenu-top');
-
-                                                } else {
-                                                    list[0].style.height = (dHeight - (offset.top + parseInt(tHeight + dHeight, 10) - window.innerHeight) - 15) + 'px';
-                                                }
-
-                                            }
-
-                                        }, 10);
-
-                                    };
-
-                                    k = 0;
-
-                                    events.addClass(p, 'open');
-                                    events.removeClass(p, 'submenu-top');
-
-                                    list[0].innerHTML = '';
-
-                                    for (i = 0; i < response.length; i += 1) {
-
-                                        key = response[i][getVal];
-                                        txt = '';
-
-                                        if (key !== null) {
-
-                                            if (typeof key === 'boolean') { return; } // booleans not supported!
-                                            m = key;
-
-                                            if (typeof key === 'number') {
-                                                m = m.toString().match(v, 'g');
-
-                                            } else {
-
-                                                m = customLowerCase(m);
-                                                m = m.match(v, 'g');
-
-                                            }
-
-                                            if (m !== null) {
-
-                                                createDropdown();
-
-                                                // show max. number of lines: 5
-                                                k += 1;
-                                                if (k > 5) { return; }
-
-                                                // create lines
-                                                if (typeof key === 'number') {
-
-                                                    for (j = 0; j < key.toString().length; j += 1) {
-
-                                                        if (j ===  key.toString().indexOf(m)) { txt += '<strong>'; }
-                                                        if (j === (key.toString().indexOf(m) + v.length)) { txt += '</strong>'; }
-
-                                                        txt += key.toString().charAt(j);
-
-                                                    }
-
-                                                } else {
-
-                                                    for (j = 0; j < key.length; j += 1) {
-
-                                                        if (j === customLowerCase(key).indexOf(m)) { txt += '<strong>'; }
-                                                        if (j === (customLowerCase(key).indexOf(m) + v.length)) { txt += '</strong>'; }
-
-                                                        txt += key.charAt(j);
-
-                                                    }
-
-                                                }
-
-                                                list[0].insertAdjacentHTML('beforeend', '<li>' + txt + '</li>');
-
-                                            }
-
+                                        } else {
+                                            send += '&' + input.name + '=' + input.checked;
                                         }
+
+                                    } else {
+
+                                        if (input.id !== '') {
+                                            send += '&' + input.id + '=' + input.value;
+
+                                        } else {
+                                            send += '&' + input.name + '=' + input.value;
+                                        }
+
                                     }
 
-                                } else {
-                                    throw new Error('Autocomplete Alert: Source is not in correct JSON format!');
-                                }
-
-                                if (events.hasClass(p, 'autocomplete-pull')) {
-                                    pullValues = response; // pulling values
-                                }
-
-                                response = '';
+                                });
 
                             }
 
-                        });
+                            ajax('POST', src + '?' + send, function (response, status, xhr) {
 
-                    } else { return; }
+                                // abort still processing previous autocomplete requests
+                                for (n = 0; n < autocompleteRequests.length; n += 1) {
 
-                } else {
+                                    autocompleteRequests[n].abort();
+                                    autocompleteRequests.splice(n, 1);
 
-                    events.removeClass(list, 'open');
-                    list[0].innerHTML = '';
+                                }
 
-                }
+                                autocompleteRequests.push(xhr);
 
-            }
+                                if (status === 'success') {
 
-        }
+                                    autocompleteRequests = [];
 
-    });
+                                    response = JSON.parse(response);
+                                    if (response.length !== 'undefined') {
 
-    events.on(document, 'keydown', formEvents, function (e) {
+                                        createDropdown = function () {
 
-        if (e.keyCode === 13) {
+                                            // create dropdown
+                                            clearTimeout(timerShowLines);
+                                            timerShowLines = setTimeout(function () {
 
-            var p, key;
+                                                events.addClass(list, autocomplete.classes);
 
-            p = this.parentNode;
-            if (selector('li.selected', p).length > 0) {
+                                                offset = p.getBoundingClientRect();
 
-                events.removeClass(p, 'open');
+                                                tHeight = p.offsetHeight;
+                                                dHeight = list[0].offsetHeight;
 
-                if (!events.hasClass(p, 'auto-submit')) { // auto submit
+                                                if (offset.top + parseInt(tHeight + dHeight, 10) >= window.innerHeight) {
 
-                    e.preventDefault();
-                    e.stopPropagation();
+                                                    if (offset.top - parseInt(tHeight + dHeight, 10) + tHeight > 0) {
+                                                        events.addClass(p, 'submenu-top');
 
-                }
+                                                    } else {
+                                                        list[0].style.height = (dHeight - (offset.top + parseInt(tHeight + dHeight, 10) - window.innerHeight) - 15) + 'px';
+                                                    }
 
-                if (events.hasClass(p, 'autocomplete-pull')) {
+                                                }
 
-                    key = p.getAttribute('data-val');
+                                            }, 10);
 
-                    if (key !== null && key !== '') {
-                        pullValuesFnc(key, this.value); // pulling values
+                                        };
+
+                                        k = 0;
+
+                                        events.addClass(p, 'open');
+                                        events.removeClass(p, 'submenu-top');
+
+                                        list[0].innerHTML = '';
+
+                                        for (i = 0; i < response.length; i += 1) {
+
+                                            key = response[i][getVal];
+                                            txt = '';
+
+                                            if (key !== null) {
+
+                                                if (typeof key === 'boolean') { return; } // booleans not supported!
+                                                m = key;
+
+                                                if (typeof key === 'number') {
+                                                    m = m.toString().match(v, 'g');
+
+                                                } else {
+
+                                                    m = customLowerCase(m);
+                                                    m = m.match(v, 'g');
+
+                                                }
+
+                                                if (m !== null) {
+
+                                                    createDropdown();
+
+                                                    // show max. number of lines: 5
+                                                    k += 1;
+                                                    if (k > 5) { return; }
+
+                                                    // create lines
+                                                    if (typeof key === 'number') {
+
+                                                        for (j = 0; j < key.toString().length; j += 1) {
+
+                                                            if (j ===  key.toString().indexOf(m)) { txt += '<strong>'; }
+                                                            if (j === (key.toString().indexOf(m) + v.length)) { txt += '</strong>'; }
+
+                                                            txt += key.toString().charAt(j);
+
+                                                        }
+
+                                                    } else {
+
+                                                        for (j = 0; j < key.length; j += 1) {
+
+                                                            if (j === customLowerCase(key).indexOf(m)) { txt += '<strong>'; }
+                                                            if (j === (customLowerCase(key).indexOf(m) + v.length)) { txt += '</strong>'; }
+
+                                                            txt += key.charAt(j);
+
+                                                        }
+
+                                                    }
+
+                                                    list[0].insertAdjacentHTML('beforeend', '<li>' + txt + '</li>');
+
+                                                }
+
+                                            }
+                                        }
+
+                                    } else {
+                                        throw new Error('Autocomplete Alert: Source is not in correct JSON format!');
+                                    }
+
+                                    if (events.hasClass(p, 'autocomplete-pull')) {
+                                        pullValues = response; // pulling values
+                                    }
+
+                                    response = '';
+
+                                }
+
+                            });
+
+                        } else { return; }
+
+                    } else {
+
+                        events.removeClass(list, 'open');
+                        list[0].innerHTML = '';
+
                     }
 
                 }
 
             }
 
-        }
+        });
 
-    });
+        events.on(document, 'keydown', formEvents, function (e) {
 
-    events.on(document, 'focus', formEvents, function () {
+            if (e.keyCode === 13) {
 
-        var p = this.parentNode;
-        this.setAttribute('autocomplete', 'off');
+                var p, key;
 
-        events.addClass(p, 'open');
-        events.removeClass(p, 'submenu-top');
+                p = this.parentNode;
+                if (selector('li.selected', p).length > 0) {
 
-        p.insertAdjacentHTML('beforeend', '<ul class="ease-autocomplete"></ul>');
+                    events.removeClass(p, 'open');
 
-    });
+                    if (!events.hasClass(p, 'auto-submit')) { // auto submit
 
-    events.on(document, 'blur', formEvents, function () {
+                        e.preventDefault();
+                        e.stopPropagation();
 
-        var p, list;
-        pullValues = [];
+                    }
 
-        p = this.parentNode;
-        list = selector('ul', p);
+                    if (events.hasClass(p, 'autocomplete-pull')) {
 
-        events.removeClass(p, 'open');
-        if (list.length > 0) { p.removeChild(list[0]); }
+                        key = p.getAttribute('data-val');
 
-    });
+                        if (key !== null && key !== '') {
+                            pullValuesFnc(key, this.value); // pulling values
+                        }
 
-    events.on(document, 'mousedown', '.text.autocomplete.open li', function () {
+                    }
 
-        var p, key;
+                }
 
-        p = events.closest(this, '.autocomplete');
-        selector('[type="text"]', p).value = this.textContent;
-
-        if (events.hasClass(p, 'auto-submit')) {
-            events.closest(this, 'form').submit(); // auto submit
-        }
-
-        if (events.hasClass(p, 'autocomplete-pull')) {
-
-            key = p[0].getAttribute('data-val');
-
-            if (key !== null && key !== '') {
-                pullValuesFnc(key, this.textContent); // pulling values
             }
 
-        }
+        });
 
-    });
+        events.on(document, 'focus', formEvents, function () {
 
-}
+            var p = this.parentNode;
+            this.setAttribute('autocomplete', 'off');
 
-/*!loader */
-events.onload(function () {
+            events.addClass(p, 'open');
+            events.removeClass(p, 'submenu-top');
 
-    'use strict';
-    autocompleteFnc();
+            p.insertAdjacentHTML('beforeend', '<ul class="ease-autocomplete"></ul>');
 
-});
+        });
+
+        events.on(document, 'blur', formEvents, function () {
+
+            var p, list;
+            pullValues = [];
+
+            p = this.parentNode;
+            list = selector('ul', p);
+
+            events.removeClass(p, 'open');
+            if (list.length > 0) { p.removeChild(list[0]); }
+
+        });
+
+        events.on(document, 'mousedown', '.text.autocomplete.open li', function () {
+
+            var p, key;
+
+            p = events.closest(this, '.autocomplete');
+            selector('[type="text"]', p).value = this.textContent;
+
+            if (events.hasClass(p, 'auto-submit')) {
+                events.closest(this, 'form').submit(); // auto submit
+            }
+
+            if (events.hasClass(p, 'autocomplete-pull')) {
+
+                key = p[0].getAttribute('data-val');
+
+                if (key !== null && key !== '') {
+                    pullValuesFnc(key, this.textContent); // pulling values
+                }
+
+            }
+
+        });
+
+    }
+
+    // Loaders
+    events.onload(autocompleteFnc);
+
+}());

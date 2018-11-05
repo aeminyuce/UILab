@@ -3,47 +3,48 @@
  Tabs JS requires Events JS
 */
 
-/*globals document, selector, events */
-var tabsFnc = function () {
+(function () {
 
     'use strict';
+    /*globals document, selector, events */
 
-    events.on(document, 'click', '.btn-tabs .btn-tab', function () {
+    function tabsFnc() {
 
-        var parent, tabs, index, contents, classes;
+        // Events
+        events.on(document, 'click', '.btn-tabs .btn-tab', function () {
 
-        if (!events.hasClass(this, 'active')) {
+            var parent, tabs, index, contents, classes;
 
-            parent = events.closest(this, '.btn-tabs')[0];
-            tabs = selector('.btn-tab', parent);
+            if (!events.hasClass(this, 'active')) {
 
-            index = Array.prototype.slice.call(tabs).indexOf(this);
-            contents = selector('.tab-content', parent);
+                parent = events.closest(this, '.btn-tabs')[0];
+                tabs = selector('.btn-tab', parent);
 
-            classes = parent.getAttribute('data-classes');
-            if (classes) {
+                index = Array.prototype.slice.call(tabs).indexOf(this);
+                contents = selector('.tab-content', parent);
 
-                events.removeClass(tabs, classes);
-                events.addClass(tabs[index], classes);
+                classes = parent.getAttribute('data-classes');
+                if (classes) {
+
+                    events.removeClass(tabs, classes);
+                    events.addClass(tabs[index], classes);
+
+                }
+
+                events.removeClass(tabs, 'active');
+                events.addClass(tabs[index], 'active');
+
+                events.removeClass(contents, 'open');
+                events.addClass(contents[index], 'open');
 
             }
 
-            events.removeClass(tabs, 'active');
-            events.addClass(tabs[index], 'active');
+        });
 
-            events.removeClass(contents, 'open');
-            events.addClass(contents[index], 'open');
+    }
 
-        }
+    // Loaders
+    events.onload(tabsFnc);
 
-    });
 
-};
-
-/*!loader */
-events.onload(function () {
-
-    'use strict';
-    tabsFnc();
-
-});
+}());

@@ -3,57 +3,58 @@
  Form Spinner JS requires Events JS
 */
 
-/*globals window, document, selector, events */
-function spinnerFormFnc() {
+(function () {
 
     'use strict';
+    /*globals document, selector, events, ajax */
 
-    events.on(document, 'click', '.spinner-up,.spinner-down', function () {
+    var checkSpinnerForms;
 
-        var p = events.closest(this, '.form-spinner'), input = selector('[type="text"]', p),
+    function spinnerFormFnc() {
 
-            val = Number(input.value),
-            max = input.getAttribute('max'),
-            min = input.getAttribute('min');
+        // Events
+        events.on(document, 'click', '.spinner-up,.spinner-down', function () {
 
-        if (events.hasClass(this, 'spinner-up')) {
-            val += 1;
-            if (val >= max) { val = max; }
+            var p = events.closest(this, '.form-spinner'), input = selector('[type="text"]', p),
 
-        } else {
-            val -= 1;
-            if (val <= min) { val = min; }
+                val = Number(input.value),
+                max = input.getAttribute('max'),
+                min = input.getAttribute('min');
 
-        }
+            if (events.hasClass(this, 'spinner-up')) {
+                val += 1;
+                if (val >= max) { val = max; }
 
-        input.value = val;
+            } else {
+                val -= 1;
+                if (val <= min) { val = min; }
 
-    });
+            }
 
-    window.checkSpinnerForms = function () {
+            input.value = val;
 
-        events.each('.form-spinner', function () {
-            var t = selector('[type="text"]', this)[0];
-            t.value = t.getAttribute('value');
         });
 
-    };
-    window.checkSpinnerForms();
+        checkSpinnerForms = function () {
 
-}
+            events.each('.form-spinner', function () {
 
-/*!loader */
-events.onload(function () {
+                var t = selector('[type="text"]', this)[0];
+                t.value = t.getAttribute('value');
 
-    'use strict';
-    spinnerFormFnc();
+            });
 
-});
+        };
+        checkSpinnerForms();
 
-/*!ajax callback loader: requires Ajax JS */
-events.on(document, 'ajaxCallbacks', function () {
+    }
 
-    'use strict';
-    if (window.ajaxClassNames.indexOf('form-spinner') > -1) { window.checkSpinnerForms(); }
+    // Loaders
+    events.onload(spinnerFormFnc);
 
-});
+    // ajax callback loader: requires Ajax JS
+    events.on(document, 'ajaxCallbacks', function () {
+        if (ajax.ajaxClassNames.indexOf('form-spinner') > -1) { checkSpinnerForms(); }
+    });
+
+}());

@@ -66,8 +66,8 @@
 
 */
 
-/*globals window, document, events, XMLHttpRequest */
-function ajax(method, target, callback) {
+/*globals document, events, XMLHttpRequest */
+var ajax = function (method, target, callback) {
 
     'use strict';
     var newMethod, newTarget;
@@ -82,47 +82,39 @@ function ajax(method, target, callback) {
     }
     newTarget = target;
 
-    window.ajaxRequest = new XMLHttpRequest();
-    window.ajaxRequest.open(newMethod, newTarget, true);
-    window.ajaxRequest.send();
+    ajax.ajaxRequest = new XMLHttpRequest();
+    ajax.ajaxRequest.open(newMethod, newTarget, true);
+    ajax.ajaxRequest.send();
 
-    window.ajaxRequest.onload = function () {
+    ajax.ajaxRequest.onload = function () {
 
         function uniqueClassNames(value, index, self) {
             return self.indexOf(value) === index;
         }
 
-        if (window.ajaxRequest.status >= 200 && window.ajaxRequest.status < 400) {
+        if (ajax.ajaxRequest.status >= 200 && ajax.ajaxRequest.status < 400) {
 
-            callback(window.ajaxRequest.responseText, 'success', window.ajaxRequest);
+            callback(ajax.ajaxRequest.responseText, 'success', ajax.ajaxRequest);
 
             // ajax callbacks
             events.on(document, 'ajaxCallbacks');
 
             // get list of real classnames
-            window.ajaxClassNames = window.ajaxRequest.responseText.match(/\sclass=\"+[\w\s\d\-\_\=]+\"[\s\>]/g);
+            ajax.ajaxClassNames = ajax.ajaxRequest.responseText.match(/\sclass=\"+[\w\s\d\-\_\=]+\"[\s\>]/g);
 
-            if (window.ajaxClassNames !== null) {
+            if (ajax.ajaxClassNames !== null) {
 
-                window.ajaxClassNames = window.ajaxClassNames.toString().match(/"+[\w\s\d\-\_\=]+"/g).toString().replace(/\"/g, '').replace(/,/g, ' ').split(' ');
-                window.ajaxClassNames = window.ajaxClassNames.filter(uniqueClassNames);
+                ajax.ajaxClassNames = ajax.ajaxClassNames.toString().match(/"+[\w\s\d\-\_\=]+"/g).toString().replace(/\"/g, '').replace(/,/g, ' ').split(' ');
+                ajax.ajaxClassNames = ajax.ajaxClassNames.filter(uniqueClassNames);
 
                 events.trigger(document, 'ajaxCallbacks'); // set custom event
 
             }
 
-        } else { callback('', 'error', window.ajaxRequest); }
+        } else { callback('', 'error', ajax.ajaxRequest); }
 
     };
 
-    window.ajaxRequest.onerror = function () { callback('', 'error', window.ajaxRequest); };
+    ajax.ajaxRequest.onerror = function () { callback('', 'error', ajax.ajaxRequest); };
 
-}
-
-/*!loader */
-events.onload(function () {
-
-    'use strict';
-    ajax();
-
-});
+};

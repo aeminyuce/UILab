@@ -3,34 +3,39 @@
  Toggle Password JS requires Events JS
 */
 
-/*globals document, selector, events */
-function togglePasswordFnc() {
+(function () {
 
     'use strict';
+    /*globals document, selector, events */
 
-    events.on(document, 'click touchend', '.toggle-password', function () {
+    function togglePasswordFnc() {
 
-        var t, p, id = this.getAttribute('data-id');
+        // Events
+        events.on(document, 'click touchend', '.toggle-password', function () {
 
-        if (id === null) {
+            var t, p, id = this.getAttribute('data-id');
 
-            p = events.closest(this, '.text');
-            if (p.length === 1) {
-                t = selector('input', p);
+            if (id === null) {
+
+                p = events.closest(this, '.text');
+                if (p.length === 1) {
+                    t = selector('input', p);
+                }
+
+            } else { t = selector('#' + id)[0]; }
+
+            if (t.getAttribute('type') === 'password') {
+                t.setAttribute('type', 'text');
+
+            } else {
+                t.setAttribute('type', 'password');
             }
 
-        } else { t = selector('#' + id)[0]; }
+        });
 
-        if (t.getAttribute('type') === 'password') { t.setAttribute('type', 'text'); } else { t.setAttribute('type', 'password'); }
+    }
 
-    });
+    // Loaders
+    events.onload(togglePasswordFnc);
 
-}
-
-/*!loader */
-events.onload(function () {
-
-    'use strict';
-    togglePasswordFnc();
-
-});
+}());

@@ -3,60 +3,56 @@
  SVG Donut Chart JS requires Events JS
 */
 
-/*globals window, document, selector, events */
-function donutChart() {
+(function () {
 
     'use strict';
+    /*globals document, selector, events, ajax */
 
-    var chart, percent, angle, arrPercent, arrAngle;
+    function donutChart() {
 
-    arrPercent = [];
-    arrAngle = [];
+        var chart, percent, angle, arrPercent, arrAngle;
 
-    chart = selector('.donut-chart');
-    if (chart.length > 0) {
+        arrPercent = [];
+        arrAngle = [];
 
-        events.each(chart, function () {
+        chart = selector('.donut-chart');
+        if (chart.length > 0) {
 
-            events.each(selector('circle', this), function (index) {
+            events.each(chart, function () {
 
-                percent = this.getAttribute('data-percent');
-                arrPercent.push(percent);
+                events.each(selector('circle', this), function (index) {
 
-                this.setAttribute('stroke-dashoffset', Math.floor(440 - (percent * 4.4)));
+                    percent = this.getAttribute('data-percent');
+                    arrPercent.push(percent);
 
-                if (index > 0) {
+                    this.setAttribute('stroke-dashoffset', Math.floor(440 - (percent * 4.4)));
 
-                    angle = Math.floor(arrAngle[index - 1] + ((arrPercent[index - 1]) * 3.6));
-                    arrAngle.push(angle);
+                    if (index > 0) {
 
-                    this.setAttribute('style', '-ms-transform: rotate(' + angle + 'deg); transform: rotate(' + angle + 'deg);');
+                        angle = Math.floor(arrAngle[index - 1] + ((arrPercent[index - 1]) * 3.6));
+                        arrAngle.push(angle);
 
-                } else { arrAngle.push(0); }
+                        this.setAttribute('style', '-ms-transform: rotate(' + angle + 'deg); transform: rotate(' + angle + 'deg);');
+
+                    } else { arrAngle.push(0); }
+
+                });
+
+                arrPercent = [];
+                arrAngle = [];
 
             });
 
-            arrPercent = [];
-            arrAngle = [];
-
-        });
+        }
 
     }
 
-}
+    // Loaders
+    events.onload(donutChart);
 
-/*!loader */
-events.onload(function () {
+    // ajax callback loader: requires Ajax JS
+    events.on(document, 'ajaxCallbacks', function () {
+        if (ajax.ajaxClassNames.indexOf('donut-chart') > -1) { donutChart(); }
+    });
 
-    'use strict';
-    donutChart();
-
-});
-
-/*!ajax callback loader: requires Ajax JS */
-events.on(document, 'ajaxCallbacks', function () {
-
-    'use strict';
-    if (window.ajaxClassNames.indexOf('donut-chart') > -1) { donutChart(); }
-
-});
+}());

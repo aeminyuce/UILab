@@ -3,60 +3,60 @@
  IE9 Placeholders JS requires Events JS
 */
 
-/*globals window, document, selector, events, navigator, setTimeout */
-function ie9PlaceholdersFnc() {
+(function () {
 
     'use strict';
+    /*globals document, selector, events, ajax, navigator, setTimeout */
 
-    if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
+    var checkPlaceholders;
 
-        window.checkie9Placeholders = function () {
-            events.each('input[placeholder]', function () {
+    function ie9PlaceholdersFnc() {
 
-                var p = this.parentElement;
+        if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
 
-                if (this.value.length !== 0) { events.addClass(p, 'hide-placeholder'); }
-                if (!p.getAttribute('data-placeholder')) { p.setAttribute('data-placeholder', this.getAttribute('placeholder')); }
+            checkPlaceholders = function () {
+                events.each('input[placeholder]', function () {
+
+                    var p = this.parentElement;
+
+                    if (this.value.length !== 0) { events.addClass(p, 'hide-placeholder'); }
+                    if (!p.getAttribute('data-placeholder')) { p.setAttribute('data-placeholder', this.getAttribute('placeholder')); }
+
+                });
+            };
+            checkPlaceholders();
+
+            // Events
+            events.on('[data-placeholder]', 'mousedown', function () { selector('input[placeholder]', this)[0].focus(); });
+
+            events.on(document, 'keydown', '[data-placeholder] input[placeholder]', function () {
+
+                var t = this, p = t.parentElement;
+
+                setTimeout(function () {
+                    if (t.value.length > 0) { events.addClass(p, 'hide-placeholder'); } else { events.removeClass(p, 'hide-placeholder'); }
+                }, 10);
 
             });
-        };
 
-        window.checkie9Placeholders();
-        events.on('[data-placeholder]', 'mousedown', function () { selector('input[placeholder]', this)[0].focus(); });
+            events.on(document, 'blur', '[data-placeholder] input[placeholder]', function () {
+                if (this.value.length === 0) { events.removeClass(this.parentElement, 'hide-placeholder'); }
+            });
 
-        events.on(document, 'keydown', '[data-placeholder] input[placeholder]', function () {
-
-            var t = this, p = t.parentElement;
-
-            setTimeout(function () {
-                if (t.value.length > 0) { events.addClass(p, 'hide-placeholder'); } else { events.removeClass(p, 'hide-placeholder'); }
-            }, 10);
-
-        });
-
-        events.on(document, 'blur', '[data-placeholder] input[placeholder]', function () {
-            if (this.value.length === 0) { events.removeClass(this.parentElement, 'hide-placeholder'); }
-        });
+        }
 
     }
 
-}
+    // Loaders
+    events.onload(ie9PlaceholdersFnc);
 
-/*!loader */
-events.onload(function () {
+    // ajax callback loader: requires Ajax JS
+    events.on(document, 'ajaxCallbacks', function () {
 
-    'use strict';
-    ie9PlaceholdersFnc();
+        if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
+            if (ajax.ajaxRequest.responseText.indexOf('placeholder=') > 0) { checkPlaceholders(); }
+        }
 
-});
+    });
 
-/*!ajax callback loader: requires Ajax JS */
-events.on(document, 'ajaxCallbacks', function () {
-
-    'use strict';
-
-    if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
-        if (window.ajaxRequest.responseText.indexOf('placeholder=') > 0) { window.checkie9Placeholders(); }
-    }
-
-});
+}());

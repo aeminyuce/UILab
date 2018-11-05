@@ -3,28 +3,28 @@
  Indeterminate JS requires Events JS
 */
 
-/*globals document, events */
-function indeterminateFnc() {
+(function () {
 
     'use strict';
+    /*globals document, events */
 
-    events.on(document, 'click', 'input[type="checkbox"].indeterminate', function () {
+    function indeterminateFnc() {
 
-        if (this.readOnly) {
-            this.checked = this.readOnly = false;
+        // Events
+        events.on(document, 'click', 'input[type="checkbox"].indeterminate', function () {
 
-        } else if (!this.checked) {
-            this.readOnly = this.indeterminate = true;
-        }
+            if (this.readOnly) {
+                this.checked = this.readOnly = false;
 
-    });
+            } else if (!this.checked) {
+                this.readOnly = this.indeterminate = true;
+            }
 
-}
+        });
 
-/*!loader */
-events.onload(function () {
+    }
 
-    'use strict';
-    indeterminateFnc();
+    /*!loader */
+    events.onload(indeterminateFnc);
 
-});
+}());

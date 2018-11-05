@@ -3,46 +3,38 @@
  Sticky Header JS requires Events JS
 */
 
-/*globals window, events, selector */
-function stickyHeader() {
+(function () {
 
     'use strict';
 
-    var header, stickyStatic;
+    /*globals window, events, selector */
+    function stickyHeader() {
 
-    header = selector('header');
-    stickyStatic = events.hasClass(header, 'sticky-static');
+        var header, stickyStatic;
 
-    if (window.pageYOffset > header[0].offsetTop) {
+        header = selector('header');
+        stickyStatic = events.hasClass(header, 'sticky-static');
 
-        if (!stickyStatic) {
-            selector('body')[0].style.paddingTop = header[0].offsetHeight + 'px';
+        if (window.pageYOffset > header[0].offsetTop) {
+
+            if (!stickyStatic) {
+                selector('body')[0].style.paddingTop = header[0].offsetHeight + 'px';
+            }
+            events.addClass(header, 'sticky');
+
+        } else {
+
+            if (!stickyStatic) {
+                selector('body')[0].style.paddingTop = '0';
+            }
+            events.removeClass(header, 'sticky');
+
         }
-        events.addClass(header, 'sticky');
-
-    } else {
-
-        if (!stickyStatic) {
-            selector('body')[0].style.paddingTop = '0';
-        }
-        events.removeClass(header, 'sticky');
 
     }
 
-}
+    // Loaders
+    events.onload(stickyHeader);
+    events.on(window, 'scroll', stickyHeader);
 
-/*!loader */
-events.onload(function () {
-
-    'use strict';
-    stickyHeader();
-
-});
-
-/*!scroll loader */
-events.on(window, 'scroll', function () {
-
-    'use strict';
-    stickyHeader();
-
-});
+}());

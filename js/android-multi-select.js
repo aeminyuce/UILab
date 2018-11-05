@@ -3,86 +3,86 @@
  Android Multi Select JS requires Events JS
 */
 
-/*globals window, document, selector, events, navigator */
-function androidMultiselectFnc() {
+(function () {
 
     'use strict';
+    /*globals document, selector, events, ajax, navigator */
 
-    var titleText, userLang, multiSelects, i, select, options, selected, html;
+    var checkMultiselects;
 
-    userLang = (navigator.language || navigator.userLanguage).split('-')[0];
-    if (userLang === 'tr') { titleText = 'Öğe'; } else { titleText = 'Item(s)'; }
+    function androidMultiselectFnc() {
 
-    window.checkAndroidMultiSelects = function () {
+        var titleText, userLang, multiSelects, i, select, options, selected, html;
 
-        multiSelects = selector('.android .select-multi:not(.checked-for-android)');
-        if (multiSelects.length > 0) {
+        userLang = (navigator.language || navigator.userLanguage).split('-')[0];
+        if (userLang === 'tr') { titleText = 'Öğe'; } else { titleText = 'Item(s)'; }
 
-            events.each(multiSelects, function () {
+        checkMultiselects = function () {
 
-                selected = [];
+            multiSelects = selector('.android .select-multi:not(.checked-for-android)');
+            if (multiSelects.length > 0) {
 
-                select = selector('select', this)[0];
-                options = select.options;
+                events.each(multiSelects, function () {
 
-                for (i = 0; i < options.length; i += 1) {
-                    if (options[i].selected) { selected.push(options[i].value); }
-                }
+                    selected = [];
 
-                html = events.parser('<option selected disabled>' + selected.length + ' ' + titleText + '</option>');
-                select.insertAdjacentHTML('afterbegin', html); //https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML
+                    select = selector('select', this)[0];
+                    options = select.options;
 
-                events.addClass(this, 'checked-for-android');
+                    for (i = 0; i < options.length; i += 1) {
+                        if (options[i].selected) { selected.push(options[i].value); }
+                    }
 
-            });
+                    html = events.parser('<option selected disabled>' + selected.length + ' ' + titleText + '</option>');
+                    select.insertAdjacentHTML('afterbegin', html); //https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML
 
-        }
+                    events.addClass(this, 'checked-for-android');
 
-    };
-    window.checkAndroidMultiSelects();
+                });
 
-    events.on(document, 'change', '.android .select-multi select', function () {
+            }
 
-        selected = [];
-        options = this.options;
+        };
+        checkMultiselects();
 
-        for (i = 0; i < options.length; i += 1) {
-            if (options[i].selected) { selected.push(options[i].value); }
-        }
+        // Events
+        events.on(document, 'change', '.android .select-multi select', function () {
 
-        options[0].innerHTML = (selected.length - 1) + ' ' + titleText;
-        events.trigger(this, 'blur');
+            selected = [];
+            options = this.options;
 
-    });
+            for (i = 0; i < options.length; i += 1) {
+                if (options[i].selected) { selected.push(options[i].value); }
+            }
 
+            options[0].innerHTML = (selected.length - 1) + ' ' + titleText;
+            events.trigger(this, 'blur');
 
-    events.on(document, 'reset', '.android form', function () {
-
-        options = this.querySelectorAll('select'); // getting html porperties (not nodelist!)
-
-        events.each(options, function () {
-            this.options[0].innerHTML = '0 ' + titleText;
         });
 
-    });
 
-}
+        events.on(document, 'reset', '.android form', function () {
 
-/*!loader */
-events.onload(function () {
+            options = this.querySelectorAll('select'); // getting html porperties (not nodelist!)
 
-    'use strict';
-    androidMultiselectFnc();
+            events.each(options, function () {
+                this.options[0].innerHTML = '0 ' + titleText;
+            });
 
-});
+        });
 
-/*!ajax callback loader: requires Ajax JS */
-events.on(document, 'ajaxCallbacks', function () {
-
-    'use strict';
-
-    if (navigator.userAgent.toLowerCase().indexOf('android') > -1) {
-        if (window.ajaxClassNames.indexOf('select-multi') > -1) { window.checkAndroidMultiSelects(); }
     }
 
-});
+    // Loaders
+    events.onload(androidMultiselectFnc);
+
+    // ajax callback loader: requires Ajax JS
+    events.on(document, 'ajaxCallbacks', function () {
+
+        if (navigator.userAgent.toLowerCase().indexOf('android') > -1) {
+            if (ajax.ajaxClassNames.indexOf('select-multi') > -1) { checkMultiselects(); }
+        }
+
+    });
+
+}());

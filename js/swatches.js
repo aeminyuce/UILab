@@ -3,103 +3,103 @@
  Swatches JS requires Events JS
 */
 
-/*globals window, document, events, navigator */
-function swatchesFnc() {
+(function () {
 
     'use strict';
+    /*globals window, document, events, navigator */
 
-    var mobile;
+    var mobile = false;
 
-    if (navigator.userAgent.toLowerCase().indexOf('mobile') > -1) { // detecting mobile
-        mobile = true;
-    }
+    function swatchesFnc() {
 
-    if (!mobile) {
+        if (navigator.userAgent.toLowerCase().indexOf('mobile') > -1) { // detecting mobile
+            mobile = true;
+        }
 
-        events.on(document,
+        if (!mobile) {
 
-            'mouseenter',
-            'a[class*="ui-"]:not(.ui-text):not(.ui-border):not(.opacity):not(.opacity-more):not(.no-hover),.btn[class*="ui-"]:not(.ui-text):not(.ui-border):not(.opacity):not(.opacity-more):not(.no-hover),.hover',
+            // Events
+            events.on(document,
 
-            function () {
+                'mouseenter',
+                'a[class*="ui-"]:not(.ui-text):not(.ui-border):not(.opacity):not(.opacity-more):not(.no-hover),.btn[class*="ui-"]:not(.ui-text):not(.ui-border):not(.opacity):not(.opacity-more):not(.no-hover),.hover',
 
-                var disabled, r, g, b, a, getStyle, style, currentColor, hoverColor, getAlpha;
+                function () {
 
-                disabled = this.getAttribute('data-swatch'); // if data-swatch="false" stop running!
+                    var disabled, r, g, b, a, getStyle, style, currentColor, hoverColor, getAlpha;
 
-                if (disabled !== null) {
-                    if (disabled === 'false') { return; }
-                }
+                    disabled = this.getAttribute('data-swatch'); // if data-swatch="false" stop running!
 
-                currentColor = window.getComputedStyle(this);
-                currentColor = currentColor.getPropertyValue('background-color');
+                    if (disabled !== null) {
+                        if (disabled === 'false') { return; }
+                    }
 
-                hoverColor = (currentColor.slice(currentColor.indexOf('(') + 1, currentColor.indexOf(')')).split(','));
+                    currentColor = window.getComputedStyle(this);
+                    currentColor = currentColor.getPropertyValue('background-color');
 
-                events.addClass(this, 'swatch-active');
-                getStyle = this.getAttribute('style');
+                    hoverColor = (currentColor.slice(currentColor.indexOf('(') + 1, currentColor.indexOf(')')).split(','));
 
-                style = '';
+                    events.addClass(this, 'swatch-active');
+                    getStyle = this.getAttribute('style');
 
-                if (getStyle !== null && getStyle !== '') {
+                    style = '';
 
-                    style = getStyle.toString();
-                    this.setAttribute('data-style', style);
-                    style += ' ';
+                    if (getStyle !== null && getStyle !== '') {
 
-                } else { style = ''; }
+                        style = getStyle.toString();
+                        this.setAttribute('data-style', style);
+                        style += ' ';
 
-                r = parseInt(hoverColor[0], 10);
-                r += ((255 - r) * 20) / 100;
-                if (r > 255) { r = 255; }
+                    } else { style = ''; }
 
-                g = parseInt(hoverColor[1], 10);
-                g += ((255 - g) * 20) / 100;
-                if (g > 255) { g = 255; }
+                    r = parseInt(hoverColor[0], 10);
+                    r += ((255 - r) * 20) / 100;
+                    if (r > 255) { r = 255; }
 
-                b = parseInt(hoverColor[2], 10);
-                b += ((255 - b) * 20) / 100;
-                if (b > 255) { b = 255; }
+                    g = parseInt(hoverColor[1], 10);
+                    g += ((255 - g) * 20) / 100;
+                    if (g > 255) { g = 255; }
 
-                getAlpha = hoverColor[3];
+                    b = parseInt(hoverColor[2], 10);
+                    b += ((255 - b) * 20) / 100;
+                    if (b > 255) { b = 255; }
 
-                if (getAlpha !== undefined) {
-                    a = getAlpha;
+                    getAlpha = hoverColor[3];
 
-                } else { a = '1'; }
+                    if (getAlpha !== undefined) {
+                        a = getAlpha;
 
-                if (r === 255 && g === 255 && b === 255 && a === '1') {
-                    a = '0.8';
+                    } else { a = '1'; }
 
-                } else { a = Math.ceil(a); }
+                    if (r === 255 && g === 255 && b === 255 && a === '1') {
+                        a = '0.8';
 
-                this.setAttribute('style', style + 'background-color: rgba(' + Math.ceil(r) + ',' + Math.ceil(g) + ',' + Math.ceil(b) + ',' + a + ') !important;');
+                    } else { a = Math.ceil(a); }
+
+                    this.setAttribute('style', style + 'background-color: rgba(' + Math.ceil(r) + ',' + Math.ceil(g) + ',' + Math.ceil(b) + ',' + a + ') !important;');
+
+                });
+
+            events.on(document, 'mouseleave', '.swatch-active', function () {
+
+                var getDataStyle = this.getAttribute('data-style');
+
+                if (getDataStyle !== null && getDataStyle !== '') {
+
+                    this.setAttribute('style', this.getAttribute('data-style').toString());
+                    this.removeAttribute('data-style');
+
+                } else { this.removeAttribute('style'); }
+
+                events.removeClass(this, 'swatch-active');
 
             });
 
-        events.on(document, 'mouseleave', '.swatch-active', function () {
-
-            var getDataStyle = this.getAttribute('data-style');
-
-            if (getDataStyle !== null && getDataStyle !== '') {
-
-                this.setAttribute('style', this.getAttribute('data-style').toString());
-                this.removeAttribute('data-style');
-
-            } else { this.removeAttribute('style'); }
-
-            events.removeClass(this, 'swatch-active');
-
-        });
+        }
 
     }
 
-}
+    // Loaders
+    events.onload(swatchesFnc);
 
-/*!loader */
-events.onload(function () {
-
-    'use strict';
-    swatchesFnc();
-
-});
+}());

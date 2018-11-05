@@ -3,46 +3,47 @@
  Product Gallery JS requires Events JS
 */
 
-/*globals selector, events, Image */
-var productGalleryFnc = function () {
+(function () {
 
     'use strict';
+    /*globals selector, events, Image */
 
-    events.on('.product-gallery .thumbs .img', 'click', function () {
+    function productGalleryFnc() {
 
-        var parent, detail, target, thumbs, index, newImg;
+        // Events
+        events.on('.product-gallery .thumbs .img', 'click', function () {
 
-        parent = events.closest(this, '.product-gallery');
-        detail = selector('.detail', parent[0]);
-        target = selector('img', detail);
-        thumbs = selector('.thumbs .img', parent[0]);
+            var parent, detail, target, thumbs, index, newImg;
 
-        index = Array.prototype.slice.call(thumbs).indexOf(this);
-        target.setAttribute('data-count', index);
+            parent = events.closest(this, '.product-gallery');
 
-        events.addClass(detail, 'detail-loader');
+            detail = selector('.detail', parent[0]);
+            target = selector('img', detail);
+            thumbs = selector('.thumbs .img', parent[0]);
 
-        newImg = new Image();
-        newImg.src = this.getAttribute('data-href');
+            index = Array.prototype.slice.call(thumbs).indexOf(this);
+            target.setAttribute('data-count', index);
 
-        newImg.addEventListener('load', function () {
+            events.addClass(detail, 'detail-loader');
 
-            target.src = newImg.src;
-            events.removeClass(detail, 'detail-loader');
+            newImg = new Image();
+            newImg.src = this.getAttribute('data-href');
+
+            newImg.addEventListener('load', function () {
+
+                target.src = newImg.src;
+                events.removeClass(detail, 'detail-loader');
+
+            });
+
+            events.removeClass(thumbs, 'selected');
+            events.addClass(this, 'selected');
 
         });
 
-        events.removeClass(thumbs, 'selected');
-        events.addClass(this, 'selected');
+    }
 
-    });
+    // Loaders
+    events.onload(productGalleryFnc);
 
-};
-
-/*!loader */
-events.onload(function () {
-
-    'use strict';
-    productGalleryFnc();
-
-});
+}());
