@@ -12,6 +12,7 @@
         cols = [],
         colsMobile = [],
         counts = [],
+        loadingImgs = [],
         loadedImgs = [],
         autoSlider = [],
         autoTimer = [],
@@ -45,31 +46,33 @@
 
     }
 
-    function carouselLazyImages(col, i) {
+    function carouselLazyImages(that, col, i, ev) {
 
-        var images, img = [];
-
-        images = selector('.carousel');
-        images = selector('.content img.img[data-src]', images[i]);
+        var images;
+        images = selector('.content img.img[data-src]', that);
 
         if (images.length > 0) {
 
+            loadingImgs[i] = [];
             loadedImgs[i] = [];
+
             events.each(images, function (l) {
 
-                if (l >= col) { return; }
-                img[l] = this;
+                if (ev === undefined && l >= col) { return; } // control col length
+                loadedImgs[i][l] = this;
 
-                loadedImgs[i][l] = new Image();
-                loadedImgs[i][l].src = img[l].getAttribute('data-src');
+                loadingImgs[i][l] = new Image();
+                loadingImgs[i][l].src = loadedImgs[i][l].getAttribute('data-src');
 
-                loadedImgs[i][l].addEventListener('load', function () {
+                loadedImgs[i][l].removeAttribute('data-src');
 
-                    img[l].src = loadedImgs[i][l].src;
-                    img[l].removeAttribute('data-src');
-                    events.addClass(img[l], 'loaded');
+                loadingImgs[i][l].addEventListener('load', function () {
 
-                    loadedImgs[i][l] = '';
+                    loadedImgs[i][l].src = loadingImgs[i][l].src;
+                    events.addClass(loadedImgs[i][l], 'loaded');
+
+                    loadingImgs[i][l] = [];
+                    loadedImgs[i][l] = [];
 
                 }, false);
 
@@ -158,10 +161,10 @@
                 slider[0].style.transform = 'translateX(-' + (counts[i] * that[i].offsetWidth) + 'px)';
             }
 
-            events.width(slider, ((that[i].offsetWidth / col) * contents.length) * 2 + 'px');
+            events.width(slider, ((that[i].offsetWidth / col) * contents.length) * 2 + 'px'); // why: (offsetWidth * 2) for window resizing
             events.width(contents, (that[i].offsetWidth / col) + 'px');
 
-            carouselLazyImages(col, i);
+            carouselLazyImages(that[i], col, i);
 
         }
 
@@ -277,7 +280,7 @@
                     slider[0].style.transform = 'translateX(-' + (counts[i] * that.offsetWidth) + 'px)';
                 }
 
-                carouselLazyImages(col, i);
+                carouselLazyImages(that, col, i);
 
             };
 
@@ -313,9 +316,9 @@
                 }
 
                 counts[j] = 0;
+                events.addClass(that, 'active');
 
                 carouselResizerFnc(j, carousels);
-                events.addClass(that, 'active');
 
                 // auto slider
                 autoTimer[j] = that.getAttribute('data-slide');
@@ -368,21 +371,34 @@
 
             });
 
-            /* touchmove events
+            // touchmove events
             events.on(document, 'touchstart', '.carousel', function (e) {
 
-                var i, startx, starty, currentx, currenty, startMove, move, that, slider;
+                var i, startx, starty, currentx, currenty, touchMove, startDate, startMove, move, that, slider, sliderMax, col, navDotsIn;
 
-                that = this;
-
-                slider = selector('.carousel-slider', that);
-                i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
+                touchMove = false;
 
                 startx = e.targetTouches[0].pageX;
                 starty = e.targetTouches[0].pageY;
 
-                startMove = window.getComputedStyle(slider[0]).getPropertyValue('transform'); // matrix(xZoom, 0, 0, yZoom, xPos, yPos)
+                that = this;
+                startDate = new Date().getTime();
+
+                slider = selector('.carousel-slider', that)[0];
+                navDotsIn = selector('.carousel-nav .dots i', that);
+
+                i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
+
+                if (window.innerWidth > 767) {
+                    col = cols[i];
+
+                } else {
+                    col = colsMobile[i];
+                }
+
+                startMove = window.getComputedStyle(slider).getPropertyValue('transform'); // matrix(xZoom, 0, 0, yZoom, xPos, yPos)
                 startMove = startMove.replace('matrix', '').replace(/[\,\(\)\s]/g, ' ').replace(/\s\s/g, '|'); // select only numbers
+
                 startMove = startMove.split('|')[4];
 
                 events.on(that, 'touchmove', function (e) {
@@ -390,42 +406,69 @@
                     currentx = e.targetTouches[0].pageX;
                     currenty = e.targetTouches[0].pageY;
 
-                    if (Math.abs(startx - currentx) > 10 &&  Math.abs(starty - currenty) < 10) {
+                    if (Math.abs(startx - currentx) > 10 && Math.abs(starty - currenty) < 10) {
 
-                        move = -(startx - currentx) - startMove;
+                        touchMove = true;
+
+                        move = (startMove - (startx - currentx));
+                        sliderMax = -(slider.offsetWidth / 2); // why? (offsetWidth / 2), search => why
 
                         if (move > 0) {
                             move = 0;
 
-                        } else if (move < -(slider[0].offsetWidth)) {
-                            move = -(slider[0].offsetWidth);
-
+                        } else if (move < sliderMax) {
+                            move = sliderMax;
                         }
 
-                        slider[0].style.transform = 'translateX(' + move + 'px)';
+                        slider.style.transform = 'translateX(' + move + 'px)';
+                        carouselLazyImages(that, col, i, 'touchmove');
 
-                    }
+                        clearInterval(autoSlider[i]);
+                        clearTimeout(autoTimeouts[i]);
 
-                    clearInterval(autoSlider[i]);
-                    clearTimeout(autoTimeouts[i]);
+                        events.addClass(document, 'carousel-touchmove');
+                        slider.style.transitionDuration = '.15s';
 
-                    events.addClass(slider, 'no-transitions');
+                    } else { return; }
 
                 });
 
-                events.on(that, 'touchend', function () {
+                events.on(document, 'touchend', function () {
 
-                    events.removeClass(slider, 'no-transitions');
+                    if (touchMove) {
 
-                    autoSlider[i] = setInterval(function () {
-                        carouselNav(that, 'next');
+                        counts[i] = Math.abs(move) / that.offsetWidth;
 
-                    }, autoTimer[i]);
+                        if (new Date().getTime() - startDate < 1200) { // control touch speed
+                            counts[i] = Math.ceil(counts[i]);
+
+                        } else {
+                            counts[i] = Math.round(counts[i]);
+                        }
+
+                        slider.style.transform = 'translateX(' + -(counts[i] * that.offsetWidth) + 'px)';
+
+                        events.removeClass(navDotsIn, 'selected');
+                        events.addClass(navDotsIn[counts[i]], 'selected');
+
+                        autoSlider[i] = setInterval(function () {
+                            carouselNav(that, 'next');
+
+                        }, autoTimer[i]);
+
+                        events.removeClass(document, 'carousel-touchmove');
+                        slider.style.transitionDuration = '';
+
+                    }
+
+                    touchMove = false;
+
+                    events.off(that, 'touchmove');
+                    events.off(document, 'touchend');
 
                 });
 
             });
-            */
 
         }
 
