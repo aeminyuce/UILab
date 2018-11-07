@@ -331,7 +331,6 @@
                     }, autoTimer[j]);
 
                 }
-
             });
 
             // Events
@@ -374,7 +373,7 @@
             // touchmove events
             events.on(document, 'touchstart', '.carousel', function (e) {
 
-                var i, startx, starty, currentx, currenty, touchMove, startDate, startMove, move, that, slider, sliderMax, col, navDotsIn;
+                var i, startx, starty, currentx, currenty, startMove, touchMove, move, that, slider, sliderMax, col, navDotsIn, touchEndTimer;
 
                 touchMove = false;
 
@@ -382,7 +381,6 @@
                 starty = e.targetTouches[0].pageY;
 
                 that = this;
-                startDate = new Date().getTime();
 
                 slider = selector('.carousel-slider', that)[0];
                 navDotsIn = selector('.carousel-nav .dots i', that);
@@ -401,17 +399,51 @@
 
                 startMove = startMove.split('|')[4];
 
+                events.off(that, 'touchmove');
                 events.on(that, 'touchmove', function (e) {
+
+                    if (e.cancelable) { // touchstart or touchmove with preventDefault we need this. Because, now Chrome and Android browsers preventDefault automatically.
+                        e.preventDefault();
+                    }
 
                     currentx = e.targetTouches[0].pageX;
                     currenty = e.targetTouches[0].pageY;
 
-                    if (Math.abs(startx - currentx) > 10 && Math.abs(starty - currenty) < 10) {
 
+                    if (Math.abs(startx - currentx) > 10 && Math.abs(starty - currenty) < 10) {
                         touchMove = true;
+                    }
+
+                    if (touchMove) {
+
+                        clearTimeout(touchEndTimer);
 
                         move = (startMove - (startx - currentx));
-                        sliderMax = -(slider.offsetWidth / 2); // why? (offsetWidth / 2), search => why
+                        slider.style.transform = 'translateX(' + move + 'px)';
+
+                        carouselLazyImages(that, col, i, 'touchmove');
+
+                        // auto slider
+                        if (autoTimer[i] !== null) {
+
+                            clearInterval(autoSlider[i]);
+                            clearTimeout(autoTimeouts[i]);
+
+                        }
+
+                        events.addClass(document, 'carousel-touchmove');
+                        slider.style.transitionDuration = '.1s';
+
+                    }
+
+                });
+
+                events.off(document, 'touchend');
+                events.on(document, 'touchend', function () {
+
+                    if (touchMove) {
+
+                        sliderMax = -((slider.offsetWidth / 2) - that.offsetWidth); // why? (offsetWidth / 2), search => why
 
                         if (move > 0) {
                             move = 0;
@@ -420,44 +452,48 @@
                             move = sliderMax;
                         }
 
-                        slider.style.transform = 'translateX(' + move + 'px)';
-                        carouselLazyImages(that, col, i, 'touchmove');
-
-                        clearInterval(autoSlider[i]);
-                        clearTimeout(autoTimeouts[i]);
-
-                        events.addClass(document, 'carousel-touchmove');
-                        slider.style.transitionDuration = '.15s';
-
-                    } else { return; }
-
-                });
-
-                events.on(document, 'touchend', function () {
-
-                    if (touchMove) {
-
                         counts[i] = Math.abs(move) / that.offsetWidth;
 
-                        if (new Date().getTime() - startDate < 1200) { // control touch speed
-                            counts[i] = Math.ceil(counts[i]);
+                        if (currentx < 0) {
+                            currentx = 0;
+
+                        } else if (currentx > that.offsetWidth) {
+                            currentx = that.offsetWidth;
+                        }
+
+                        if ((currentx - startx) > 0) {
+                            counts[i] = Math.floor(counts[i]);
 
                         } else {
-                            counts[i] = Math.round(counts[i]);
+                            counts[i] = Math.ceil(counts[i]);
                         }
 
                         slider.style.transform = 'translateX(' + -(counts[i] * that.offsetWidth) + 'px)';
+                        that.setAttribute('data-content', (counts[i] + 1));
 
                         events.removeClass(navDotsIn, 'selected');
                         events.addClass(navDotsIn[counts[i]], 'selected');
 
-                        autoSlider[i] = setInterval(function () {
-                            carouselNav(that, 'next');
+                        clearTimeout(touchEndTimer);
+                        touchEndTimer = setTimeout(function () {
 
-                        }, autoTimer[i]);
+                            // auto slider
+                            if (autoTimer[i] !== null) {
 
-                        events.removeClass(document, 'carousel-touchmove');
-                        slider.style.transitionDuration = '';
+                                clearInterval(autoSlider[i]);
+                                clearTimeout(autoTimeouts[i]);
+
+                                autoSlider[i] = setInterval(function () {
+                                    carouselNav(that, 'next');
+
+                                }, autoTimer[i]);
+
+                            }
+
+                            slider.style.transitionDuration = '';
+                            events.removeClass(document, 'carousel-touchmove');
+
+                        }, 100);
 
                     }
 

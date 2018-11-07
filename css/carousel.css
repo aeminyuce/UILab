@@ -1,8 +1,7 @@
 /* carousel */
 @keyframes carousel-img-loader { 0% { opacity: .3; } 50% { opacity: 1; } 100% { opacity: .3; } }
 
-.carousel-touchmove { overflow: hidden !important; }
-.carousel-touchmove body { touch-action: none; } /* disable all touch events on body */
+.carousel-touchmove body { height: 100%; overflow: hidden; }
 
 .carousel { overflow: hidden; position: relative; }
 .carousel:not(.active) { opacity: 0; }
