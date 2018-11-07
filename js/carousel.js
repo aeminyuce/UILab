@@ -14,6 +14,7 @@
         counts = [],
         loadingImgs = [],
         loadedImgs = [],
+        contentsEase = [],
         autoSlider = [],
         autoTimer = [],
         autoTimeouts = [];
@@ -188,7 +189,7 @@
 
             carouselNav = function (that, direction) {
 
-                var col, slider, contents, animate, wait, i, max, navDots;
+                var col, slider, contents, animate, i, max, navDots;
 
                 navDots = selector('.carousel-nav .dots i', that);
 
@@ -220,28 +221,28 @@
                 }
 
                 // get carousel slide speed
-                wait = 150;
+                contentsEase[i] = 150;
 
                 if (events.hasClass(slider, 'ease-fast')) {
-                    wait = 100;
+                    contentsEase[i] = 100;
 
                 } else if (events.hasClass(slider, 'ease-slow')) {
-                    wait = 400;
+                    contentsEase[i] = 400;
 
                 } else if (events.hasClass(slider, 'ease-slow2x')) {
-                    wait = 800;
+                    contentsEase[i] = 800;
 
                 } else if (events.hasClass(slider, 'ease-slow3x')) {
-                    wait = 1200;
+                    contentsEase[i] = 1200;
 
                 } else if (events.hasClass(slider, 'ease-slow4x')) {
-                    wait = 1600;
+                    contentsEase[i] = 1600;
 
                 } else if (events.hasClass(slider, 'ease-slow5x')) {
-                    wait = 2000;
+                    contentsEase[i] = 2000;
                 }
 
-                // wait auto slider to slide completed
+                // wait auto slider until slide completed
                 if (autoSlider[i] !== undefined) {
 
                     clearInterval(autoSlider[i]);
@@ -254,7 +255,7 @@
 
                         }, autoTimer[i]);
 
-                    }, wait);
+                    }, contentsEase[i]);
 
                 }
 
@@ -263,7 +264,7 @@
                 if (animate !== null) {
 
                     if (animate === '') { animate = 150; }
-                    carouselAnimate(contents[counts[i]], animate, wait);
+                    carouselAnimate(contents[counts[i]], animate, contentsEase[i]);
 
                 }
 
@@ -373,7 +374,7 @@
             // touchmove events
             events.on(document, 'touchstart', '.carousel', function (e) {
 
-                var i, startx, starty, currentx, currenty, startMove, touchMove, move, that, slider, sliderMax, col, navDotsIn, touchEndTimer;
+                var i, startx, starty, currentx, currenty, startMove, touchMove, move, that, slider, sliderMax, col, navDotsIn, touchEndTimer, animate, contents;
 
                 touchMove = false;
 
@@ -399,8 +400,8 @@
 
                 startMove = startMove.split('|')[4];
 
-                events.off(that, 'touchmove');
-                events.on(that, 'touchmove', function (e) {
+                events.off(document, 'touchmove');
+                events.on(document, 'touchmove', function (e) {
 
                     if (e.cancelable) { // touchstart or touchmove with preventDefault we need this. Because, now Chrome and Android browsers preventDefault automatically.
                         e.preventDefault();
@@ -423,7 +424,7 @@
 
                         carouselLazyImages(that, col, i, 'touchmove');
 
-                        // auto slider
+                        // wait auto slider when touchmove
                         if (autoTimer[i] !== null) {
 
                             clearInterval(autoSlider[i]);
@@ -477,7 +478,7 @@
                         clearTimeout(touchEndTimer);
                         touchEndTimer = setTimeout(function () {
 
-                            // auto slider
+                            // wait auto slider until touchmove ends
                             if (autoTimer[i] !== null) {
 
                                 clearInterval(autoSlider[i]);
@@ -487,6 +488,17 @@
                                     carouselNav(that, 'next');
 
                                 }, autoTimer[i]);
+
+                            }
+
+                            // detect carousel animates
+                            contents = selector('.content', that);
+                            animate = contents[counts[i]].getAttribute('data-animate');
+
+                            if (animate !== null) {
+
+                                if (animate === '') { animate = 150; }
+                                carouselAnimate(contents[counts[i]], animate, contentsEase[i]);
 
                             }
 
