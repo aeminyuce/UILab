@@ -433,6 +433,8 @@
                         }
 
                         events.addClass(document, 'carousel-touchmove');
+
+                        that.style.transitionDuration = '.1s';
                         slider.style.transitionDuration = '.1s';
 
                     }
@@ -502,7 +504,9 @@
 
                             }
 
+                            that.style.transitionDuration = '';
                             slider.style.transitionDuration = '';
+
                             events.removeClass(document, 'carousel-touchmove');
 
                         }, 100);
