@@ -16,11 +16,11 @@ var photoGallery = {
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, Image, navigator, setTimeout */
+    /*globals window, document, selector, events, Image, navigator, setTimeout, clearTimeout */
 
     var
-        photoGalleryScrollPos,
-        photoGalleryTouchmove;
+        storePageYPosition,
+        galleryTouchMove;
 
     function photoGalleryFnc() {
 
@@ -122,10 +122,10 @@ var photoGallery = {
             if (window.innerWidth < 960) {
 
                 if (ua.indexOf('mobile') > -1 && ua.indexOf('apple') > -1) {
-                    photoGalleryScrollPos = document.body.scrollTop; // ios
+                    storePageYPosition = document.body.scrollTop; // ios
 
                 } else {
-                    photoGalleryScrollPos = document.documentElement.scrollTop; // android
+                    storePageYPosition = document.documentElement.scrollTop; // android
                 }
 
             }
@@ -272,10 +272,10 @@ var photoGallery = {
                 if (window.innerWidth < 960) {
 
                     if (ua.indexOf('mobile') > -1 && ua.indexOf('apple') > -1) {
-                        document.body.scrollTop = photoGalleryScrollPos; // ios
+                        document.body.scrollTop = storePageYPosition; // ios
 
                     } else {
-                        document.documentElement.scrollTop = photoGalleryScrollPos; // andorid
+                        document.documentElement.scrollTop = storePageYPosition; // andorid
                     }
 
                 }
@@ -540,16 +540,22 @@ var photoGallery = {
 
         events.on(document, 'touchstart touchmove touchend', '.photo-gallery a.img', function (e) {
 
+            var timer;
+
             if (e.type === 'touchstart') {
-                photoGalleryTouchmove = false;
+                galleryTouchMove = false;
             }
 
             if (e.type === 'touchmove') {
-                photoGalleryTouchmove = true;
+                galleryTouchMove = true;
             }
 
-            if (e.type === 'touchend' && photoGalleryTouchmove === false) {
-                galleryFnc(e, this);
+            if (e.type === 'touchend' && galleryTouchMove === false) {
+
+                clearTimeout(timer);
+                timer = setTimeout(function () {
+                    galleryFnc(e, this);
+                }, 50);
             }
 
         });
