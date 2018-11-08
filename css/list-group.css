@@ -8,7 +8,6 @@
 .list-group li { position: relative; }
 .list-group li > p { margin-bottom: 0; }
 .list-group li > a {  margin: -10px; display: block; }
-.list-group li > a:hover { text-decoration: none; }
 
 .list-group [class*="has-icon"] .list-icon { text-align: right; position: absolute; top: 50%; right: 10px; transform: translateY(-50%); opacity: .45; }
 html:not(.mobile) .list-group [class*="has-icon"] li > a:hover .list-icon { opacity: .75; }

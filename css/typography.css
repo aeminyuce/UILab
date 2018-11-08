@@ -16,7 +16,6 @@ h6 { font-size: 12px; }
 }
 
 body,a { color: #000; }
-a:hover { text-decoration: underline; }
 
 .xx-smallest { font-size: 7px !important; }
 .x-smallest { font-size: 8px !important; }
@@ -50,5 +49,7 @@ a:hover { text-decoration: underline; }
 
 .underline { text-decoration: underline; }
 a.underline:hover,button.underline:hover { text-decoration: none; }
+
+.hoverline:hover { text-decoration: underline; }
 
 .ellipsis { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }

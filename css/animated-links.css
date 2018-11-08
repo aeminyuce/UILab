@@ -2,7 +2,6 @@
 .ease-link:after,.ease-1st-link > *:after,.ease-2nd-link > * > *:after { transition-property: width, left, opacity; transition-duration: .3s; }
 
 [class*="link-"]:after,[class*="underline-"]:after { content: ""; height: 1px; display: block; position: absolute; bottom: 1px; }
-[class*="link-"]:hover,[class*="underline-"]:hover { text-decoration: none; }
 button[class*="link-"],button[class*="underline-"] { background-color: rgba(0,0,0,0); border: 0; bottom: 0; }
 
 [class*="link-"],[class*="underline-"] { white-space: nowrap !important; line-height: normal !important; display: inline-block; position: relative; }
