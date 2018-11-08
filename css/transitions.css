@@ -30,7 +30,7 @@
 .ease-left,.ease-1st-left > *,.ease-2nd-left > * > * { transition-property: left; }
 .ease-opacity,.ease-1st-opacity > *,.ease-2nd-opacity > * > * { transition-property: opacity; }
 .ease-transform,.ease-1st-transform > *,.ease-2nd-transform > * > * { transition-property: transform; }
-.ease-layout,.ease-1st-layout > *,.ease-2nd-layout > * > * { transition-property: transform, opacity; }
+.ease-layout,.ease-1st-layout > *,.ease-2nd-layout > * > * { transition-property: transform, opacity, shadow; }
 .ease-shadow,.ease-1st-shadow > *,.ease-2nd-shadow > * > * { transition-property: box-shadow; }
 .ease-fill,.ease-1st-fill > *,.ease-2nd-fill > * > * { transition-property: fill; }
 
