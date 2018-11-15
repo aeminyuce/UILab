@@ -39,8 +39,6 @@
 
     function dropdownFnc() {
 
-        'use strict';
-
         function dropdownOpen(e, t) {
 
             e.preventDefault();
@@ -50,18 +48,24 @@
 
             if (!events.hasClass(parent, 'open')) {
 
+                parent = t.parentNode;
+
                 events.removeClass('.dropdown.open', 'open-ease');
                 setTimeout(function () {
 
-                    parent = t.parentNode;
+                    events.removeClass('.dropdown.open', 'open');
+
+                    clearTimeout(dropdownOpenTimer);
+                    events.addClass(parent, 'open');
+
+                    dropdownOpenTimer = setTimeout(function () {
+                        events.addClass(parent, 'open-ease');
+                    }, 50);
+
                     offset = parent.getBoundingClientRect();
 
                     list = selector('ul', parent);
-
-                    events.removeClass('.dropdown.open', 'open');
-
                     listWidth = list[0].offsetWidth;
-                    alignSize = (listWidth - parent.offsetWidth) / 2;
 
                     if ((parent.offsetWidth > 200) && (parent.offsetWidth > listWidth)) {
                         list[0].style.minWidth = parent.offsetWidth + 'px';
@@ -74,6 +78,8 @@
                         }
 
                     } else if (events.hasClass(parent, 'submenu-center')) {
+
+                        alignSize = Math.abs(listWidth - parent.offsetWidth) / 2;
 
                         if ((offset.left - alignSize > 0) && (alignSize > 0)) {
                             list[0].style.marginLeft = -alignSize + 'px';
@@ -94,16 +100,6 @@
                         }
 
                     }
-
-                    clearTimeout(dropdownOpenTimer);
-                    dropdownOpenTimer = setTimeout(function () {
-
-                        events.addClass(parent, 'open');
-                        setTimeout(function () {
-                            events.addClass(parent, 'open-ease');
-                        }, 50);
-
-                    }, 150);
 
                 }, 0); // don not remove zero timer
 
