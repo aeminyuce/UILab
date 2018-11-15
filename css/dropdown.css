@@ -6,7 +6,7 @@
 .dropdown { vertical-align: top; display: inline-block; position: relative; }
 .dropdown.open { z-index: 19; }
 .dropdown > .btn { width: 100%; }
-.dropdown.open-ease > .btn .icon-toggle { line-height: 100% !important; transform: scaleY(-1); }
+.dropdown.open-ease > .btn .icon-toggle { transform: scaleY(-1); }
 .dropdown:not(.open) ul { display: none; }
 .dropdown:not(.open-ease) ul { opacity: 0; }
 .dropdown:not(.submenu-top) ul { margin-top: 10px; }
