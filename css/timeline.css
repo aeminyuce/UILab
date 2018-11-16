@@ -1,0 +1,42 @@
+/* timeline */
+.timeline { list-style: none; padding: 0; position: relative; }
+.timeline:after { content: ""; width: 2px; background-color: rgba(0,0,0,.15); border-radius: 1px; position: absolute; top: 0; bottom: 0; }
+.timeline.ui-text:after { background-color: currentColor; }
+.timeline:not(:last-child) { margin-bottom: 20px; }
+
+.timeline li { vertical-align: top; display: block; position: relative; }
+.timeline li:not(:last-child) { margin-bottom: 15px; }
+
+.timeline li:before,.timeline li:after { content: ""; display: block; position: absolute; top: 50%; transform: translateY(-50%); z-index: 1; }
+.timeline li:before { width: 30px; height: 2px; background-color: rgba(0,0,0,.15); }
+.timeline li:after { width: 14px; height: 14px; background-color: #fff; border: solid 2px rgba(0,0,0,.15); border-radius: 50%; }
+.timeline.ui-text li:before { background-color: currentColor; }
+.timeline.ui-text li:after { border-color: currentColor; }
+
+.timeline li > [class*="img-photo"] { margin-left: 15px; position: relative; z-index: 1; transform: translateY(50%); }
+
+.timeline li > span { background-color: #fff; padding: 15px; display: block; position: relative; }
+.timeline li > .img-photo-lg + span { padding-top: 45px; }
+.timeline li > .img-photo + span { padding-top: 30px; }
+.timeline li > .img-photo-md + span { padding-top: 25px; }
+.timeline li > .img-photo-sm + span { padding-top: 20px; }
+
+@media (min-width: 768px) {
+    .timeline:after { margin-left: -1px; left: 50%; }
+
+    .timeline li { width: 50%; }
+
+    .timeline li:nth-child(2n+1):before { right: 0; }
+    .timeline li:nth-child(2n+1):after { right: -7px; }
+    .timeline li:nth-child(2n+2):before { left: 0; }
+    .timeline li:nth-child(2n+2):after { left: -7px; }
+
+    .timeline li:nth-child(2n+1) { padding-right: 30px; }
+    .timeline li:nth-child(2n+2) { padding-left: 30px; left: 50%; }
+}
+@media (max-width: 767px) {
+    .timeline:after { left: 6px; }
+
+    .timeline li { padding-left: 30px; }
+    .timeline li:before,.timeline li:after { left: 0; }
+}
