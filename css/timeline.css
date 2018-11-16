@@ -16,10 +16,10 @@
 .timeline li > [class*="img-photo"] { margin-left: 15px; position: relative; z-index: 1; transform: translateY(50%); }
 
 .timeline li > .card { background-color: #fff; padding: 15px; display: block; position: relative; }
-.timeline li > .img-photo-lg + .card { padding-top: 45px; }
-.timeline li > .img-photo + .card { padding-top: 30px; }
-.timeline li > .img-photo-md + .card { padding-top: 25px; }
-.timeline li > .img-photo-sm + .card { padding-top: 20px; }
+.timeline li > .img-photo-lg + .card { padding-top: 50px; }
+.timeline li > .img-photo + .card { padding-top: 35px; }
+.timeline li > .img-photo-md + .card { padding-top: 30px; }
+.timeline li > .img-photo-sm + .card { padding-top: 25px; }
 
 @media (min-width: 768px) {
     .timeline:after { margin-left: -1px; left: 50%; }
