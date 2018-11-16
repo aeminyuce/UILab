@@ -8,5 +8,5 @@
 .svg-map .toolbar { display: block; position: fixed; z-index: 1; opacity: .94; }
 .svg-map .toolbar:not(.open) { left: -20000px !important; }
 .svg-map .toolbar:not(.open-ease) { opacity: 0; }
-.svg-map .toolbar span { color: #fff; text-align: center; font-weight: bold; width: 160px; height: 40px; background: #333; padding: 10px; display: inline-block; border-radius: 6px; }
-.svg-map .toolbar span:after { content: ""; width: 14px; height: 14px; background: #333; margin-left: -7px; display: block; position: absolute; top: 32px; left: 50%; border-radius: 4px; transform: rotate(45deg); }
+.svg-map .toolbar span { color: #fff; text-align: center; font-weight: bold; width: 160px; height: 40px; background-color: #333; padding: 10px; display: inline-block; border-radius: 6px; }
+.svg-map .toolbar span:after { content: ""; width: 14px; height: 14px; background-color: #333; margin-left: -7px; display: block; position: absolute; top: 32px; left: 50%; border-radius: 4px; transform: rotate(45deg); }
