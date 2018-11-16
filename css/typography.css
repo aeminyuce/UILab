@@ -1,6 +1,6 @@
 /* typography */
 h1,h2,h3,h4,h5,h6 { font-weight: normal; line-height: 1.24em; margin-bottom: 0; }
-h1:not(:last-child),h2:not(:last-child),h3:not(:last-child),h4:not(:last-child),h5:not(:last-child),h6:not(:last-child) { margin-bottom: 10px; }
+h1:not(:last-child),h2:not(:last-child),h3:not(:last-child),h4:not(:last-child),h5:not(:last-child),h6:not(:last-child) { margin-bottom: 20px; }
 h1 > small,h2 > small,h3 > small,h4 > small,h5 > small,h6 > small { font-size: 14px !important; line-height: normal !important; }
 
 h1 { font-size: 36px; }
