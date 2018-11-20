@@ -6,15 +6,23 @@
 .block { display: block !important; }
 .inline-block { display: inline-block !important; }
 .rtl { direction: rtl; }
-.set-relative { position: relative; }
-.set-absolute { position: absolute; }
-.set-fixed { position: fixed; }
 .full-width { width: 100%; }
 .full-height { height: 100%; }
 .no-user-select { -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
 .highlight:not(:last-child) { margin-bottom: 20px; }
 .clear-button { color: inherit; font-weight: inherit; text-align: inherit; background-color: rgba(0,0,0,0); border: 0; }
 .img-responsive { width: 100% !important; height: auto !important; }
+
+.set-relative { position: relative; }
+.set-absolute { position: absolute; }
+.set-fixed { position: fixed; }
+.set-top { top: 0; }
+.set-right { right: 0; }
+.set-bottom { bottom: 0; }
+.set-left { left: 0; }
+.set-middle { left: 50%; transform: translate(-50%,50%); }
+.set-middle-x { left: 50%; transform: translateX(-50%); }
+.set-middle-y { top: 50%; transform: translateY(-50%); }
 
 .visible { display: block !important; }
 .hidden { display: none !important; }
