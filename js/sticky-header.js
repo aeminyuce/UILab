@@ -11,23 +11,27 @@
     function stickyHeader() {
 
         var header, stickyStatic;
-
         header = selector('header');
-        stickyStatic = events.hasClass(header, 'sticky-static');
 
-        if (window.pageYOffset > header[0].offsetTop) {
+        if (header.length > 0) {
 
-            if (!stickyStatic) {
-                selector('body')[0].style.paddingTop = header[0].offsetHeight + 'px';
+            stickyStatic = events.hasClass(header, 'sticky-static');
+
+            if (window.pageYOffset > header[0].offsetTop) {
+
+                if (!stickyStatic) {
+                    selector('body')[0].style.paddingTop = header[0].offsetHeight + 'px';
+                }
+                events.addClass(header, 'sticky');
+
+            } else {
+
+                if (!stickyStatic) {
+                    selector('body')[0].style.paddingTop = '0';
+                }
+                events.removeClass(header, 'sticky');
+
             }
-            events.addClass(header, 'sticky');
-
-        } else {
-
-            if (!stickyStatic) {
-                selector('body')[0].style.paddingTop = '0';
-            }
-            events.removeClass(header, 'sticky');
 
         }
 
