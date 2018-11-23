@@ -558,7 +558,6 @@ var photoGallery = {
 
             }
 
-
         });
 
         events.on(document, 'click', '.photo-gallery-call', function (e) {
