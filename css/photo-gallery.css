@@ -92,7 +92,7 @@ html:not(.mobile) .preview-prev:hover,html:not(.mobile) .preview-next:hover { ba
     .photo-preview > img.cover-h { width: auto; height: 96%; }
 }
 @media (max-width: 480px) {
-    .photo-gallery > li .img { height: 116px; }
+    .photo-gallery > li .img { height: 120px; }
     .photo-preview > img.cover-h { width: auto; max-width: 100%; }
 }
 @media (max-width: 380px) {
