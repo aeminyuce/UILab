@@ -20,7 +20,8 @@ var photoGallery = {
 
     var
         storePageYPosition,
-        galleryTouchMove;
+        pageTouchmove,
+        pageTouchmoveTimer;
 
     function photoGalleryFnc() {
 
@@ -536,27 +537,27 @@ var photoGallery = {
         }
 
         // Events
-        events.on(document, 'click', '.photo-gallery a.img', function (e) { galleryFnc(e, this); });
+        events.on(document, 'click touchmove touchend', '.photo-gallery a.img', function (e) {
 
-        events.on(document, 'touchstart touchmove touchend', '.photo-gallery a.img', function (e) {
+            if (e.type === 'click') {
+                galleryFnc(e, this);
 
-            var timer;
+            } else {
 
-            if (e.type === 'touchstart') {
-                galleryTouchMove = false;
+                if (e.type === 'touchmove') {
+                    pageTouchmove = true;
+                }
+
+                if (e.type === 'touchend' && pageTouchmove === false) {
+
+                    clearTimeout(pageTouchmoveTimer);
+                    pageTouchmoveTimer = setTimeout(function () {
+                        galleryFnc(e, this);
+                    }, 50);
+                }
+
             }
 
-            if (e.type === 'touchmove') {
-                galleryTouchMove = true;
-            }
-
-            if (e.type === 'touchend' && galleryTouchMove === false) {
-
-                clearTimeout(timer);
-                timer = setTimeout(function () {
-                    galleryFnc(e, this);
-                }, 50);
-            }
 
         });
 
