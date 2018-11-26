@@ -395,7 +395,7 @@ var photoGallery = {
 
             events.on(img, 'touchend dblclick', function (e) {
 
-                var touchesLength, now, leftLimit, rightLimit, topLimit, bottomLimit, screenW, screenH, w, h, coverH;
+                var touchesLength, now, leftLimit, rightLimit, topLimit, bottomLimit, screenW, screenH, w, h;
 
                 if (e.type === 'dblclick') { // added double click to zoom for desktop
                     touchesLength = 1;
@@ -442,9 +442,7 @@ var photoGallery = {
                         w = img.clientWidth;
                         h = img.clientHeight;
 
-                        coverH = events.hasClass(img, 'cover-h');
-
-                        if (imgZoom > 1 && ((!coverH && (w * imgZoom) > screenW) || (coverH && (h * imgZoom) > screenH))) { // control image exceeds window size
+                        if (imgZoom > 1 && (((w * imgZoom) > screenW) || (h * imgZoom) > screenH)) { // control image exceeds window size
 
                             imgTouchmove = false;
 
@@ -481,7 +479,7 @@ var photoGallery = {
                 if (e.target.getAttribute('src') === null) { return; }
 
                 e.preventDefault();
-                var sx, sy, x, y, pinchStart, pinch, matrix, newScale, msx, msy, w, h, coverH, screenW, screenH;
+                var sx, sy, x, y, pinchStart, pinch, matrix, newScale, msx, msy, w, h, screenW, screenH;
 
                 w = img.clientWidth;
                 h = img.clientHeight;
@@ -533,11 +531,9 @@ var photoGallery = {
                 screenW = window.innerWidth;
                 screenH = selector(document)[0].offsetHeight;
 
-                coverH = events.hasClass(img, 'cover-h');
-
                 events.on(this, 'touchmove', function (e) {
 
-                    if (imgZoom > 1 && ((!coverH && (w * imgZoom) > screenW) || (coverH && (h * imgZoom) > screenH))) { // control image exceeds window size
+                    if (imgZoom > 1 && (((w * imgZoom) > screenW) || (h * imgZoom) > screenH)) { // control image exceeds window size
 
                         events.addClass(img, 'pause-easing');
                         imgTouchmove = true;
@@ -559,15 +555,13 @@ var photoGallery = {
                 if (e.target.getAttribute('src') === null || mobile) { return; }
 
                 e.preventDefault();
-                var msx, msy, screenW, screenH, w, h, coverH, matrix;
+                var msx, msy, screenW, screenH, w, h, matrix;
 
                 msx = e.clientX;
                 msy = e.clientY;
 
                 screenW = window.innerWidth;
                 screenH = selector(document)[0].offsetHeight;
-
-                coverH = events.hasClass(img, 'cover-h');
 
                 w = img.clientWidth;
                 h = img.clientHeight;
@@ -579,7 +573,7 @@ var photoGallery = {
 
                 events.on(img, 'mousemove', function (e) {
 
-                    if (imgZoom > 1 && ((!coverH && (w * imgZoom) > screenW) || (coverH && (h * imgZoom) > screenH))) { // control image exceeds window size
+                    if (imgZoom > 1 && (((w * imgZoom) > screenW) || (h * imgZoom) > screenH)) { // control image exceeds window size
 
                         events.addClass(img, 'pause-easing');
 
@@ -598,15 +592,15 @@ var photoGallery = {
 
                     var leftLimit, rightLimit, topLimit, bottomLimit;
 
-                    if ((!coverH && (w * imgZoom) > screenW) || (coverH && (h * imgZoom) > screenH)) { // control image exceeds window size
+                    if (imgZoom > 1 && (((w * imgZoom) > screenW) || (h * imgZoom) > screenH)) { // control image exceeds window size
 
-                        leftLimit = ((((w * imgZoom) / 2) - (screenW / 2)) / screenW) * 100;
+                        leftLimit = ((((w * imgZoom) / 2) - (screenW / 2)) / screenW) * 100 - 50;
                         rightLimit = -leftLimit - 100;
 
                         if (imgPosX > leftLimit) { imgPosX = leftLimit; }
                         if (imgPosX < rightLimit) { imgPosX = rightLimit; }
 
-                        topLimit = ((((h * imgZoom) / 2) - (screenH / 2)) / screenH) * 100;
+                        topLimit = ((((h * imgZoom) / 2) - (screenH / 2)) / screenH) * 100 - 35;
                         bottomLimit = -topLimit - 100;
 
                         if (imgPosY > topLimit) { imgPosY = topLimit; }
