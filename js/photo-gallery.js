@@ -19,15 +19,19 @@ var photoGallery = {
     /*globals window, document, selector, events, Image, navigator, setTimeout, clearTimeout */
 
     var
-        storePageYPosition,
+        imgTouchmove,
         pageTouchmove,
         pageTouchmoveTimer;
 
     function photoGalleryFnc() {
 
-        var gallery, galleryCounter, imgCounter, checkImages, loadedImages = [], loadedTitles = [];
+        var ua, mobile, gallery, galleryCounter, imgCounter, pageYPos, checkImages, loadedImages = [], loadedTitles = [];
+
+        ua = navigator.userAgent.toLowerCase();
+        if (ua.indexOf('mobile') > -1 && ua.indexOf('apple') > -1) { mobile = true; } else { mobile = false; }
 
         gallery = selector('.photo-gallery');
+
         if (gallery.length > 0) {
 
             galleryCounter = 0;
@@ -85,9 +89,8 @@ var photoGallery = {
         function galleryFnc(e, that, call) {
 
             e.preventDefault();
-            var i, ua, parent, images, preview, html, index, loader, newImg, img, imgPosX, imgPosY, info, imgZoom, lastTouchEnd, waitPinchZoom;
+            var i, parent, images, preview, html, index, loader, newImg, img, imgPosX, imgPosY, info, imgZoom, lastTouchEnd, waitPinchZoom;
 
-            ua = navigator.userAgent.toLowerCase();
             parent = events.closest(that, '.photo-gallery')[0];
 
             if (parent === undefined) {
@@ -122,11 +125,11 @@ var photoGallery = {
             // get page scroll position
             if (window.innerWidth < 960) {
 
-                if (ua.indexOf('mobile') > -1 && ua.indexOf('apple') > -1) {
-                    storePageYPosition = document.body.scrollTop; // ios
+                if (mobile) {
+                    pageYPos = document.body.scrollTop; // ios
 
                 } else {
-                    storePageYPosition = document.documentElement.scrollTop; // android
+                    pageYPos = document.documentElement.scrollTop; // android
                 }
 
             }
@@ -272,11 +275,11 @@ var photoGallery = {
 
                 if (window.innerWidth < 960) {
 
-                    if (ua.indexOf('mobile') > -1 && ua.indexOf('apple') > -1) {
-                        document.body.scrollTop = storePageYPosition; // ios
+                    if (mobile) {
+                        document.body.scrollTop = pageYPos; // ios
 
                     } else {
-                        document.documentElement.scrollTop = storePageYPosition; // andorid
+                        document.documentElement.scrollTop = pageYPos; // andorid
                     }
 
                 }
@@ -383,7 +386,6 @@ var photoGallery = {
             });
 
             // touch events: double tap to zoom
-            lastTouchEnd = 0;
             waitPinchZoom = false;
 
             imgPosX = '-50';
@@ -391,42 +393,82 @@ var photoGallery = {
 
             imgZoom = 1;
 
-            events.on(img, 'touchend', function (e) {
+            events.on(img, 'touchend dblclick', function (e) {
 
-                setTimeout(function () {
-                    waitPinchZoom = false;
-                }, 50);
+                var touchesLength, now, leftLimit, rightLimit, topLimit, bottomLimit, screenW, screenH, w, h, coverH;
 
-                events.removeClass(img, 'preview-touch');
-                events.off(preview, 'touchmove');
+                if (e.type === 'dblclick') { // added double click to zoom for desktop
+                    touchesLength = 1;
 
-                if (e.changedTouches.length === 1 && !waitPinchZoom) { // control number of touches
+                } else {
 
-                    var now = new Date().getTime();
-                    if (now - lastTouchEnd <= 200) {
+                    touchesLength = e.changedTouches.length;
+
+                    setTimeout(function () {
+                        waitPinchZoom = false;
+                    }, 50);
+
+                }
+
+                if (touchesLength === 1 && !waitPinchZoom) { // control number of touches
+
+                    now = new Date().getTime();
+
+                    if ((e.type === 'touchend' && ((now - lastTouchEnd) <= 200 && (now - lastTouchEnd) > 0)) || e.type === 'dblclick') {
 
                         e.preventDefault();
-
                         if (events.hasClass(this, 'preview-zoom')) {
 
                             imgPosX = '-50';
                             imgPosY = '-50';
 
                             imgZoom = 1;
-
                             events.removeClass(this, 'preview-zoom');
-                            img.style.transform = 'translate(' + imgPosX + '%,' + imgPosY + '%) scale(' + imgZoom + ')';
 
                         } else {
 
-                            imgZoom = 6;
-
+                            if (e.type === 'dblclick') { imgZoom = 3; } else { imgZoom = 6; }
                             events.addClass(this, 'preview-zoom');
+
+                        }
+
+                        img.style.transform = 'translate(' + imgPosX + '%,' + imgPosY + '%) scale(' + imgZoom + ')';
+
+                    } else if (imgTouchmove) {
+
+                        screenW = window.innerWidth;
+                        screenH = selector(document)[0].offsetHeight;
+
+                        w = img.clientWidth;
+                        h = img.clientHeight;
+
+                        coverH = events.hasClass(img, 'cover-h');
+
+                        if (imgZoom > 1 && ((!coverH && (w * imgZoom) > screenW) || (coverH && (h * imgZoom) > screenH))) { // control image exceeds window size
+
+                            imgTouchmove = false;
+
+                            leftLimit = ((((w * imgZoom) / 2) - (screenW / 2)) / w) * 100 - 50;
+                            rightLimit = -leftLimit - 100;
+
+                            if (imgPosX > leftLimit) { imgPosX = leftLimit; }
+                            if (imgPosX < rightLimit) { imgPosX = rightLimit; }
+
+                            topLimit = ((((h * imgZoom) / 2) - (screenH / 2)) / h) * 100 - 105;
+                            bottomLimit = -topLimit - 100;
+
+                            if (imgPosY > topLimit) { imgPosY = topLimit; }
+                            if (imgPosY < bottomLimit) { imgPosY = bottomLimit; }
+
                             img.style.transform = 'translate(' + imgPosX + '%,' + imgPosY + '%) scale(' + imgZoom + ')';
 
                         }
 
+                        events.off(preview, 'touchmove');
+                        events.removeClass(img, 'pause-easing');
+
                     }
+
                     lastTouchEnd = now;
 
                 }
@@ -439,7 +481,7 @@ var photoGallery = {
                 if (e.target.getAttribute('src') === null) { return; }
 
                 e.preventDefault();
-                var sx, sy, x, y, pinchStart, pinch, matrix, newScale, msx, msy, mx, my, w, h, coverH, screenW, screenH;
+                var sx, sy, x, y, pinchStart, pinch, matrix, newScale, msx, msy, w, h, coverH, screenW, screenH;
 
                 w = img.clientWidth;
                 h = img.clientHeight;
@@ -477,7 +519,7 @@ var photoGallery = {
 
                         if (imgZoom > 6) { imgZoom = 6; }
 
-                        events.addClass(img, 'preview-touch');
+                        events.addClass(img, 'pause-easing');
                         img.style.transform = 'translate(' + imgPosX + '%,' + imgPosY + '%) scale(' + imgZoom + ')';
 
                     });
@@ -495,40 +537,87 @@ var photoGallery = {
 
                 events.on(this, 'touchmove', function (e) {
 
-                    var leftLimit, rightLimit, topLimit, bottomLimit;
+                    if (imgZoom > 1 && ((!coverH && (w * imgZoom) > screenW) || (coverH && (h * imgZoom) > screenH))) { // control image exceeds window size
 
-                    mx = e.targetTouches[0].pageX;
-                    my = e.targetTouches[0].pageY;
+                        events.addClass(img, 'pause-easing');
+                        imgTouchmove = true;
 
-                    if ((!coverH && (w * imgZoom) > screenW) || (coverH && (h * imgZoom) > screenH)) { // control image exceeds window size
-
-                        events.addClass(img, 'preview-touch');
-
-                        imgPosX = parseFloat((mx - msx) / w) * 100 + parseFloat((matrix[4] / w) * 100);
-                        imgPosY = parseFloat((my - msy) / h) * 100 + parseFloat((matrix[5] / h) * 100);
-
-                        leftLimit = ((((w * imgZoom) / 2) - screenW) / w) * 100;
-                        rightLimit = -((((w * imgZoom) / 2) - screenW) / w) * 100 - 100;
-
-                        if (imgPosX > leftLimit) { imgPosX = leftLimit; }
-                        if (imgPosX < rightLimit) { imgPosX = rightLimit; }
-
-                        topLimit = ((((h * imgZoom) / 2) - (screenH / 2)) / h) * 100 - 100;
-                        bottomLimit = -((((h * imgZoom) / 2) - screenH) / h) * 100;
-
-                        if (imgPosY > topLimit) { imgPosY = topLimit; }
-                        if (imgPosY < bottomLimit) { imgPosY = bottomLimit; }
-
-                    } else {
-
-                        events.removeClass(img, 'preview-touch');
-
-                        imgPosX = '-50';
-                        imgPosY = '-50';
+                        imgPosX = parseFloat((e.targetTouches[0].pageX - msx) / w) * 100 + parseFloat((matrix[4] / w) * 100);
+                        imgPosY = parseFloat((e.targetTouches[0].pageY - msy) / h) * 100 + parseFloat((matrix[5] / h) * 100);
 
                     }
 
                     img.style.transform = 'translate(' + imgPosX + '%,' + imgPosY + '%) scale(' + imgZoom + ')';
+
+                });
+
+            });
+
+            // mousemove for zoomed image on desktop
+            events.on(document, 'mousedown', '.photo-preview img.preview-zoom', function (e) {
+
+                if (e.target.getAttribute('src') === null || mobile) { return; }
+
+                e.preventDefault();
+                var msx, msy, screenW, screenH, w, h, coverH, matrix;
+
+                msx = e.clientX;
+                msy = e.clientY;
+
+                screenW = window.innerWidth;
+                screenH = selector(document)[0].offsetHeight;
+
+                coverH = events.hasClass(img, 'cover-h');
+
+                w = img.clientWidth;
+                h = img.clientHeight;
+
+                matrix = window.getComputedStyle(img).getPropertyValue('transform'); // matrix(xZoom, 0, 0, yZoom, xPos, yPos)
+
+                matrix = matrix.replace('matrix', '').replace(/[\,\(\)\s]/g, ' ').replace(/\s\s/g, '|'); // select only numbers
+                matrix = matrix.split('|');
+
+                events.on(img, 'mousemove', function (e) {
+
+                    if (imgZoom > 1 && ((!coverH && (w * imgZoom) > screenW) || (coverH && (h * imgZoom) > screenH))) { // control image exceeds window size
+
+                        events.addClass(img, 'pause-easing');
+
+                        imgPosX = parseFloat((e.clientX - msx) / w) * 100 + parseFloat((matrix[4] / w) * 100);
+                        imgPosY = parseFloat((e.clientY - msy) / h) * 100 + parseFloat((matrix[5] / h) * 100);
+
+                        img.style.transform = 'translate(' + imgPosX + '%,' + imgPosY + '%) scale(' + imgZoom + ')';
+
+                    }
+
+                });
+
+                events.on(img, 'mouseup mouseleave', function () {
+
+                    if (mobile) { return; }
+
+                    var leftLimit, rightLimit, topLimit, bottomLimit;
+
+                    if ((!coverH && (w * imgZoom) > screenW) || (coverH && (h * imgZoom) > screenH)) { // control image exceeds window size
+
+                        leftLimit = ((((w * imgZoom) / 2) - (screenW / 2)) / screenW) * 100;
+                        rightLimit = -leftLimit - 100;
+
+                        if (imgPosX > leftLimit) { imgPosX = leftLimit; }
+                        if (imgPosX < rightLimit) { imgPosX = rightLimit; }
+
+                        topLimit = ((((h * imgZoom) / 2) - (screenH / 2)) / screenH) * 100;
+                        bottomLimit = -topLimit - 100;
+
+                        if (imgPosY > topLimit) { imgPosY = topLimit; }
+                        if (imgPosY < bottomLimit) { imgPosY = bottomLimit; }
+
+                        img.style.transform = 'translate(' + imgPosX + '%,' + imgPosY + '%) scale(' + imgZoom + ')';
+
+                    }
+
+                    events.off(img, 'mousemove mouseup mouseleave');
+                    events.removeClass(img, 'pause-easing');
 
                 });
 

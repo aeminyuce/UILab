@@ -49,7 +49,7 @@ html:not(.mobile) .preview-prev:hover,html:not(.mobile) .preview-next:hover { ba
 
 .photo-preview > img { display: inline-block; position: relative; top: 50%; left: 50%; transform: translate(-50%,-50%); box-shadow: 0 5px 30px rgba(0,0,0,.75); }
 .photo-preview > .preview-zoom { z-index: 5; }
-.photo-preview > .preview-touch { transition-duration: 0s; }
+.photo-preview > .pause-easing { transition-duration: 0s; }
 .photo-preview > img:not(.open) { display: none; }
 .photo-preview > img:not(.open-ease) { opacity: 0; }
 
