@@ -25,7 +25,7 @@ var photoGallery = {
 
     function photoGalleryFnc() {
 
-        var ua, mobile, gallery, galleryCounter, imgCounter, pageYPos, checkImages, loadedImages = [], loadedTitles = [];
+        var ua, mobile, gallery, galleryCounter, imgCounter, pageYPos, checkImages, imgWidth, imgHeight, loadedImages = [], loadedTitles = [];
 
         ua = navigator.userAgent.toLowerCase();
         if (ua.indexOf('mobile') > -1 && ua.indexOf('apple') > -1) { mobile = true; } else { mobile = false; }
@@ -196,6 +196,9 @@ var photoGallery = {
                 if (img.naturalWidth / img.naturalHeight < 1.33) {
                     events.addClass(img, 'cover-h');
                 }
+
+                imgWidth = img.width;
+                imgHeight = img.height;
 
                 events.addClass(loader, 'pause');
                 events.hide(loader);
@@ -395,7 +398,7 @@ var photoGallery = {
 
             events.on(img, 'touchend dblclick', function (e) {
 
-                var touchesLength, now, leftLimit, rightLimit, topLimit, bottomLimit, screenW, screenH, w, h;
+                var touchesLength, now, horLimit, verLimit;
 
                 if (e.type === 'dblclick') { // added double click to zoom for desktop
                     touchesLength = 1;
@@ -436,28 +439,18 @@ var photoGallery = {
 
                     } else if (imgTouchmove) {
 
-                        screenW = screen.width;
-                        screenH = screen.height;
-                        //screenH = selector(document)[0].offsetHeight;
-
-                        w = img.clientWidth;
-                        h = img.clientHeight;
-
-                        if (imgZoom > 1 && (((w * imgZoom) > screenW) || (h * imgZoom) > screenH)) { // control image exceeds window size
+                        if (imgZoom > 1 && (((imgWidth * imgZoom) > screen.width) || (imgHeight * imgZoom) > screen.height)) { // control image exceeds window size
 
                             imgTouchmove = false;
 
-                            leftLimit = ((((w * imgZoom) - screenW) / (w * imgZoom)) * 100) / 2;
-                            rightLimit = -(leftLimit + 100);
+                            horLimit = ((((imgWidth * imgZoom) - screen.width) / (imgWidth * imgZoom)) * 100) + 100;
+                            verLimit = ((((imgHeight * imgZoom) - screen.height) / (imgHeight * imgZoom)) * 100) + 100;
 
-                            if (imgPosX > leftLimit) { imgPosX = leftLimit; }
-                            if (imgPosX < rightLimit) { imgPosX = rightLimit; }
+                            if (imgPosX < -horLimit - 100) { imgPosX = -horLimit - 100; } // left
+                            if (imgPosX > horLimit) { imgPosX = horLimit; } // right
 
-                            topLimit = ((((h * imgZoom) - screenH) / (h * imgZoom)) * 100) / 2;
-                            bottomLimit = -(topLimit + 100);
-
-                            if (imgPosY > topLimit) { imgPosY = topLimit; }
-                            if (imgPosY < bottomLimit) { imgPosY = bottomLimit; }
+                            if (imgPosY < -verLimit - 100) { imgPosY = -verLimit - 100; } // top
+                            if (imgPosY > verLimit) { imgPosY = verLimit; } // bottom
 
                             img.style.transform = 'translate(' + imgPosX + '%,' + imgPosY + '%) scale(' + imgZoom + ')';
 
@@ -480,10 +473,7 @@ var photoGallery = {
                 if (e.target.getAttribute('src') === null) { return; }
 
                 e.preventDefault();
-                var sx, sy, x, y, pinchStart, pinch, matrix, newScale, msx, msy, w, h, screenW, screenH;
-
-                w = img.clientWidth;
-                h = img.clientHeight;
+                var sx, sy, x, y, pinchStart, pinch, matrix, newScale, msx, msy;
 
                 matrix = window.getComputedStyle(img).getPropertyValue('transform'); // matrix(xZoom, 0, 0, yZoom, xPos, yPos)
 
@@ -506,7 +496,7 @@ var photoGallery = {
 
                         pinch = Math.sqrt(x * x + y * y); // the pythagorean distance between two points
 
-                        newScale = ((pinch - pinchStart) / pinch) * ((w / h) * 2);
+                        newScale = ((pinch - pinchStart) / pinch) * ((imgWidth / imgHeight) * 2);
                         imgZoom = parseFloat(matrix[3]) + parseFloat(newScale);
 
                         if (imgZoom <= 1) {
@@ -529,18 +519,15 @@ var photoGallery = {
                 msx = e.targetTouches[0].pageX;
                 msy = e.targetTouches[0].pageY;
 
-                screenW = window.innerWidth;
-                screenH = selector(document)[0].offsetHeight;
-
                 events.on(this, 'touchmove', function (e) {
 
-                    if (imgZoom > 1 && (((w * imgZoom) > screenW) || (h * imgZoom) > screenH)) { // control image exceeds window size
+                    if (imgZoom > 1 && (((imgWidth * imgZoom) > screen.width) || (imgHeight * imgZoom) > screen.height)) { // control image exceeds window size
 
                         events.addClass(img, 'pause-easing');
                         imgTouchmove = true;
 
-                        imgPosX = parseFloat((e.targetTouches[0].pageX - msx) / w) * 100 + parseFloat((matrix[4] / w) * 100);
-                        imgPosY = parseFloat((e.targetTouches[0].pageY - msy) / h) * 100 + parseFloat((matrix[5] / h) * 100);
+                        imgPosX = parseFloat((e.targetTouches[0].pageX - msx) / imgWidth) * 100 + parseFloat((matrix[4] / imgWidth) * 100);
+                        imgPosY = parseFloat((e.targetTouches[0].pageY - msy) / imgHeight) * 100 + parseFloat((matrix[5] / imgHeight) * 100);
 
                     }
 
@@ -556,16 +543,10 @@ var photoGallery = {
                 if (e.target.getAttribute('src') === null || mobile) { return; }
 
                 e.preventDefault();
-                var msx, msy, screenW, screenH, w, h, matrix;
+                var msx, msy, matrix;
 
                 msx = e.clientX;
                 msy = e.clientY;
-
-                screenW = screen.width;
-                screenH = screen.height;
-
-                w = img.clientWidth;
-                h = img.clientHeight;
 
                 matrix = window.getComputedStyle(img).getPropertyValue('transform'); // matrix(xZoom, 0, 0, yZoom, xPos, yPos)
 
@@ -574,12 +555,12 @@ var photoGallery = {
 
                 events.on(img, 'mousemove', function (e) {
 
-                    if (imgZoom > 1 && (((w * imgZoom) > screenW) || (h * imgZoom) > screenH)) { // control image exceeds window size
+                    if (imgZoom > 1 && (((imgWidth * imgZoom) > screen.width) || (imgHeight * imgZoom) > screen.height)) { // control image exceeds window size
 
                         events.addClass(img, 'pause-easing');
 
-                        imgPosX = parseFloat((e.clientX - msx) / w) * 100 + parseFloat((matrix[4] / w) * 100);
-                        imgPosY = parseFloat((e.clientY - msy) / h) * 100 + parseFloat((matrix[5] / h) * 100);
+                        imgPosX = parseFloat((e.clientX - msx) / imgWidth) * 100 + parseFloat((matrix[4] / imgWidth) * 100);
+                        imgPosY = parseFloat((e.clientY - msy) / imgHeight) * 100 + parseFloat((matrix[5] / imgHeight) * 100);
 
                         img.style.transform = 'translate(' + imgPosX + '%,' + imgPosY + '%) scale(' + imgZoom + ')';
 
@@ -591,21 +572,18 @@ var photoGallery = {
 
                     if (mobile) { return; }
 
-                    var leftLimit, rightLimit, topLimit, bottomLimit;
+                    if (imgZoom > 1 && (((imgWidth * imgZoom) > screen.width) || (imgHeight * imgZoom) > screen.height)) { // control image exceeds window size
 
-                    if (imgZoom > 1 && (((w * imgZoom) > screenW) || (h * imgZoom) > screenH)) { // control image exceeds window size
+                        var horLimit, verLimit;
 
-                        leftLimit = ((((w * imgZoom) - screenW) / screenW) * 100) / 2;
-                        rightLimit = -(leftLimit + 100);
+                        horLimit = (((imgWidth * imgZoom) - screen.width) / (imgWidth * imgZoom)) * 100;
+                        verLimit = (((imgHeight * imgZoom) - screen.height) / (imgHeight * imgZoom)) * 100;
 
-                        if (imgPosX > leftLimit) { imgPosX = leftLimit; }
-                        if (imgPosX < rightLimit) { imgPosX = rightLimit; }
+                        if (imgPosX < -horLimit - 100) { imgPosX = -horLimit - 100; } // left
+                        if (imgPosX > horLimit) { imgPosX = horLimit; } // right
 
-                        topLimit = ((((h * imgZoom) - screenH) / screenH) * 100) / 2;
-                        bottomLimit = -(topLimit + 100);
-
-                        if (imgPosY > topLimit) { imgPosY = topLimit; }
-                        if (imgPosY < bottomLimit) { imgPosY = bottomLimit; }
+                        if (imgPosY < -verLimit - 100) { imgPosY = -verLimit - 100; } // top
+                        if (imgPosY > verLimit) { imgPosY = verLimit; } // bottom
 
                         img.style.transform = 'translate(' + imgPosX + '%,' + imgPosY + '%) scale(' + imgZoom + ')';
 
