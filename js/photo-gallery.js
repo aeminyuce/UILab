@@ -16,7 +16,7 @@ var photoGallery = {
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, Image, navigator, setTimeout, clearTimeout */
+    /*globals window, document, selector, events, Image, navigator, setTimeout, clearTimeout, screen */
 
     var
         imgTouchmove,
@@ -436,8 +436,9 @@ var photoGallery = {
 
                     } else if (imgTouchmove) {
 
-                        screenW = window.innerWidth;
-                        screenH = selector(document)[0].offsetHeight;
+                        screenW = screen.width;
+                        screenH = screen.height;
+                        //screenH = selector(document)[0].offsetHeight;
 
                         w = img.clientWidth;
                         h = img.clientHeight;
@@ -446,14 +447,14 @@ var photoGallery = {
 
                             imgTouchmove = false;
 
-                            leftLimit = ((((w * imgZoom) / 2) - (screenW / 2)) / w) * 100 - 50;
-                            rightLimit = -leftLimit - 100;
+                            leftLimit = ((((w * imgZoom) - screenW) / (w * imgZoom)) * 100) / 2;
+                            rightLimit = -(leftLimit + 100);
 
                             if (imgPosX > leftLimit) { imgPosX = leftLimit; }
                             if (imgPosX < rightLimit) { imgPosX = rightLimit; }
 
-                            topLimit = ((((h * imgZoom) / 2) - (screenH / 2)) / h) * 100 - 105;
-                            bottomLimit = -topLimit - 100;
+                            topLimit = ((((h * imgZoom) - screenH) / (h * imgZoom)) * 100) / 2;
+                            bottomLimit = -(topLimit + 100);
 
                             if (imgPosY > topLimit) { imgPosY = topLimit; }
                             if (imgPosY < bottomLimit) { imgPosY = bottomLimit; }
@@ -560,8 +561,8 @@ var photoGallery = {
                 msx = e.clientX;
                 msy = e.clientY;
 
-                screenW = window.innerWidth;
-                screenH = selector(document)[0].offsetHeight;
+                screenW = screen.width;
+                screenH = screen.height;
 
                 w = img.clientWidth;
                 h = img.clientHeight;
@@ -594,14 +595,14 @@ var photoGallery = {
 
                     if (imgZoom > 1 && (((w * imgZoom) > screenW) || (h * imgZoom) > screenH)) { // control image exceeds window size
 
-                        leftLimit = ((((w * imgZoom) / 2) - (screenW / 2)) / screenW) * 100 - 50;
-                        rightLimit = -leftLimit - 100;
+                        leftLimit = ((((w * imgZoom) - screenW) / screenW) * 100) / 2;
+                        rightLimit = -(leftLimit + 100);
 
                         if (imgPosX > leftLimit) { imgPosX = leftLimit; }
                         if (imgPosX < rightLimit) { imgPosX = rightLimit; }
 
-                        topLimit = ((((h * imgZoom) / 2) - (screenH / 2)) / screenH) * 100 - 35;
-                        bottomLimit = -topLimit - 100;
+                        topLimit = ((((h * imgZoom) - screenH) / screenH) * 100) / 2;
+                        bottomLimit = -(topLimit + 100);
 
                         if (imgPosY > topLimit) { imgPosY = topLimit; }
                         if (imgPosY < bottomLimit) { imgPosY = bottomLimit; }
