@@ -10,7 +10,7 @@
 
     function donutChart() {
 
-        var chart, percent, angle, arrPercent, arrAngle;
+        var chart, circles, percent, angle, arrPercent, arrAngle;
 
         arrPercent = [];
         arrAngle = [];
@@ -20,7 +20,12 @@
 
             events.each(chart, function () {
 
-                events.each(selector('circle', this), function (index) {
+                circles = selector('circle', this);
+                if (circles.length > 1) {
+                    events.addClass(this, 'multiple');
+                }
+
+                events.each(circles, function (index) {
 
                     percent = this.getAttribute('data-percent');
                     arrPercent.push(percent);
@@ -34,7 +39,9 @@
 
                         this.setAttribute('style', '-ms-transform: rotate(' + angle + 'deg); transform: rotate(' + angle + 'deg);');
 
-                    } else { arrAngle.push(0); }
+                    } else {
+                        arrAngle.push(0);
+                    }
 
                 });
 
