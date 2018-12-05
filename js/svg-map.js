@@ -53,7 +53,7 @@
 
             if (data > 0) {
 
-                this.setAttribute('class', 'active');
+                events.addClass(this, 'active');
 
                 opacity = Math.sqrt(data) / Math.sqrt(arr[0]);
                 opacity = opacity.toFixed(2);
