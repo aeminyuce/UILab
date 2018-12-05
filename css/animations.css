@@ -4,7 +4,7 @@
   animation shorthand:
   name | duration | timing-function | delay | iteration-count | direction | fill-mode | play-state
   animation: name 3s ease-in 1s infinite reverse both running;
-  
+
 */
 @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 .animate-spin { animation: spin 3s linear infinite; }
