@@ -265,7 +265,14 @@ var events = {
         var re, l = selector(t), i = 0;
 
         for (i = 0; i < l.length; i += 1) {
-            re =  new RegExp('(^| )' + name + '( |$)', 'gi').test(l[i].className);
+
+            if (l[i].tagName.toLowerCase() === 'svg') { // check SVG elements
+                re =  new RegExp('(^| )' + name + '( |$)', 'gi').test(l[i].className.baseVal);
+
+            } else {
+                re =  new RegExp('(^| )' + name + '( |$)', 'gi').test(l[i].className);
+            }
+
         }
         return re;
 
@@ -280,10 +287,26 @@ var events = {
         for (i = 0; i < l.length; i += 1) {
             for (j = 0; j < name.length; j += 1) {
 
-                arr = l[i].className.split(' ');
-                if (arr.indexOf(name[j]) === -1) {
-                    l[i].className += ' ' + name[j];
-                    l[i].className.replace(re, '');
+                if (l[i].tagName.toLowerCase() === 'svg') { // check SVG elements
+
+                    arr = l[i].className.baseVal.split(' ');
+                    if (arr.indexOf(name[j]) === -1) {
+
+                        l[i].className.baseVal += ' ' + name[j];
+                        l[i].className.baseVal.replace(re, '');
+
+                    }
+
+                } else {
+
+                    arr = l[i].className.split(' ');
+                    if (arr.indexOf(name[j]) === -1) {
+
+                        l[i].className += ' ' + name[j];
+                        l[i].className.replace(re, '');
+
+                    }
+
                 }
 
             }
@@ -301,7 +324,13 @@ var events = {
             for (j = 0; j < name.length; j += 1) {
 
                 re = new RegExp('(\\s|^)' + name[j] + '(\\s|$)');
-                l[i].className = l[i].className.replace(re, ' ').replace(rex, '');
+
+                if (l[i].tagName.toLowerCase() === 'svg') { // check SVG elements
+                    l[i].className.baseVal = l[i].className.baseVal.replace(re, ' ').replace(rex, '');
+
+                } else {
+                    l[i].className = l[i].className.replace(re, ' ').replace(rex, '');
+                }
 
             }
         }
@@ -310,17 +339,31 @@ var events = {
     toggleClass: function (t, name) {
 
         'use strict';
-        var arr, index, l = selector(t), i = 0, j = 0;
+        var svg, arr, index, l = selector(t), i = 0, j = 0;
         name = name.split(' ');
 
         for (i = 0; i < l.length; i += 1) {
 
-            arr = l[i].className.split(' ');
+            svg = l[i].tagName.toLowerCase() === 'svg';
+
+            if (svg) { // check SVG elements
+                arr = l[i].className.baseVal.split(' ');
+
+            } else {
+                arr = l[i].className.split(' ');
+            }
+
             for (j = 0; j < name.length; j += 1) {
 
                 index = arr.indexOf(name[j]);
                 if (index >= 0) { arr.splice(index, 1); } else { arr.push(name[j]); }
-                l[i].className = arr.join(' ');
+
+                if (svg) { // check SVG elements
+                    l[i].className.baseVal = arr.join(' ');
+
+                } else {
+                    l[i].className = arr.join(' ');
+                }
 
             }
         }
