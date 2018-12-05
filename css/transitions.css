@@ -32,7 +32,10 @@
 .ease-transform,.ease-1st-transform > *,.ease-2nd-transform > * > * { transition-property: transform; }
 .ease-layout,.ease-1st-layout > *,.ease-2nd-layout > * > * { transition-property: transform, opacity, shadow; }
 .ease-shadow,.ease-1st-shadow > *,.ease-2nd-shadow > * > * { transition-property: box-shadow; }
+
+.ease-svg,.ease-1st-svg > *,.ease-2nd-svg > * > * { transition-property: fill, stroke; }
 .ease-fill,.ease-1st-fill > *,.ease-2nd-fill > * > * { transition-property: fill; }
+.ease-stroke,.ease-1st-stroke > *,.ease-2nd-stroke > * > * { transition-property: stroke; }
 
 .ease-default,.ease-default[class*="ease-1st-"] > *,.ease-default[class*="ease-2nd-"] > * > * { transition-timing-function: ease; }
 .ease-linear,.ease-linear[class*="ease-1st-"] > *,.ease-linear[class*="ease-2nd-"] > * > * { transition-timing-function: linear; }
