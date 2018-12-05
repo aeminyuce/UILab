@@ -262,11 +262,13 @@ var events = {
     hasClass: function (t, name) {
 
         'use strict';
-        var re, l = selector(t), i = 0;
+
+        var svg, re, l = selector(t), i = 0;
+        svg = ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'];
 
         for (i = 0; i < l.length; i += 1) {
 
-            if (l[i].tagName.toLowerCase() === 'svg') { // check SVG elements
+            if (svg.indexOf(l[i].tagName.toLowerCase()) !== -1) { // check SVG and own elements
                 re =  new RegExp('(^| )' + name + '( |$)', 'gi').test(l[i].className.baseVal);
 
             } else {
@@ -281,13 +283,15 @@ var events = {
 
         'use strict';
 
-        var arr, l = selector(t), i = 0, j = 0, re = new RegExp('^\\s+|\\s+$');
+        var svg, arr, l = selector(t), i = 0, j = 0, re = new RegExp('^\\s+|\\s+$');
+
         name = name.split(' ');
+        svg = ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'];
 
         for (i = 0; i < l.length; i += 1) {
             for (j = 0; j < name.length; j += 1) {
 
-                if (l[i].tagName.toLowerCase() === 'svg') { // check SVG elements
+                if (svg.indexOf(l[i].tagName.toLowerCase()) !== -1) { // check SVG and own elements
 
                     arr = l[i].className.baseVal.split(' ');
                     if (arr.indexOf(name[j]) === -1) {
@@ -317,15 +321,17 @@ var events = {
 
         'use strict';
 
-        var l = selector(t), i = 0, j = 0, rex = new RegExp('^\\s+|\\s+$'), re;
+        var svg, l = selector(t), i = 0, j = 0, rex = new RegExp('^\\s+|\\s+$'), re;
+
         name = name.split(' ');
+        svg = ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'];
 
         for (i = 0; i < l.length; i += 1) {
             for (j = 0; j < name.length; j += 1) {
 
                 re = new RegExp('(\\s|^)' + name[j] + '(\\s|$)');
 
-                if (l[i].tagName.toLowerCase() === 'svg') { // check SVG elements
+                if (svg.indexOf(l[i].tagName.toLowerCase()) !== -1) { // check SVG and own elements
                     l[i].className.baseVal = l[i].className.baseVal.replace(re, ' ').replace(rex, '');
 
                 } else {
@@ -340,13 +346,13 @@ var events = {
 
         'use strict';
         var svg, arr, index, l = selector(t), i = 0, j = 0;
+
         name = name.split(' ');
+        svg = ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'];
 
         for (i = 0; i < l.length; i += 1) {
 
-            svg = l[i].tagName.toLowerCase() === 'svg';
-
-            if (svg) { // check SVG elements
+            if (svg.indexOf(l[i].tagName.toLowerCase()) !== -1) { // check SVG and own elements
                 arr = l[i].className.baseVal.split(' ');
 
             } else {
@@ -358,7 +364,7 @@ var events = {
                 index = arr.indexOf(name[j]);
                 if (index >= 0) { arr.splice(index, 1); } else { arr.push(name[j]); }
 
-                if (svg) { // check SVG elements
+                if (svg.indexOf(l[i].tagName.toLowerCase()) !== -1) { // check SVG and own elements
                     l[i].className.baseVal = arr.join(' ');
 
                 } else {
