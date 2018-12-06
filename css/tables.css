@@ -28,20 +28,19 @@
 
 .table-scrollable { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .table-scrollable .table { margin-bottom: 0 !important; }
-.table-scrollable > .table tr > th,.table-scrollable > .table tr > td { white-space: nowrap; }
+.table-scrollable > .table tr > * { white-space: nowrap; }
 
 .table-nowrap th,.table-nowrap td { white-space: nowrap; text-overflow: ''; overflow: hidden; }
 
-.table-striped tr:nth-child(even)[class*="ui-"] th,.table-striped tr:nth-child(even)[class*="ui-"] td { background-color: rgba(0,0,0,.025); }
-.table-striped tr:nth-child(even):not([class*="ui-"]),.table-striped tr:nth-child(even):not([class*="ui-"]) { background-color: rgba(0,0,0,.025); }
+.table-striped tr:nth-child(even)[class*="ui-"] { background-color: rgba(0,0,0,.025); }
+.table-striped tr:nth-child(even):not([class*="ui-"]) { background-color: rgba(0,0,0,.025); }
 
 .btn-table { margin-top: -5px !important; margin-bottom: -5px !important; }
 
-html:not(.mobile) .table-hover tbody tr[class*="ui-"]:hover th,html:not(.mobile) .table-hover tbody tr[class*="ui-"]:hover td { background-color: rgba(0,0,0,.06); }
-html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover,html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover { background-color: rgba(0,0,0,.06); }
+html:not(.mobile) .table-hover tbody tr[class*="ui-"]:hover > *,html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover { background-color: rgba(0,0,0,.06); }
 
 @media (max-width: 959px) {
     .table-responsive { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
     .table-responsive .table { margin-bottom: 0 !important; }
-    .table-responsive > .table tr > th,.table-responsive > .table tr > td { white-space: nowrap; }
+    .table-responsive > .table tr > * { white-space: nowrap; }
 }
