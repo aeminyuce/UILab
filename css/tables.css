@@ -37,7 +37,7 @@
 
 .btn-table { margin-top: -5px !important; margin-bottom: -5px !important; }
 
-html:not(.mobile) .table-hover tbody tr[class*="ui-"]:hover > *,html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover { background-color: rgba(0,0,0,.06); }
+html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover,html:not(.mobile) .table-hover tbody tr[class*="ui-"]:hover > * { background-color: rgba(0,0,0,.06); }
 
 @media (max-width: 959px) {
     .table-responsive { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
