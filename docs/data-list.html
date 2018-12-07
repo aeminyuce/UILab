@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UI Lab, Data List</title>
+    <meta name="keywords" content="uilab, responsive, design system, css, javascript, data list">
+    <meta name="description" content="CSS & JavaScript powered responsive design system." />
+    <meta name="author" content="Ahmet Emin Yüce"/>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
+
+    <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/alignments.css" />
+    <link rel="stylesheet" href="../css/buttons.css" />
+    <link rel="stylesheet" href="../css/borders.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <link rel="stylesheet" href="../css/form-icons.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/helpers.css" />
+    <link rel="stylesheet" href="../css/icons.css" />
+    <link rel="stylesheet" href="../css/margins.css" />
+    <link rel="stylesheet" href="../css/paddings.css" />
+    <link rel="stylesheet" href="../css/pagination.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/sticky-header.css" />
+    <link rel="stylesheet" href="../css/transitions.css" />
+    <link rel="stylesheet" href="../css/typography.css" />
+    <link rel="stylesheet" href="../css/swatches.css" />
+    <link rel="stylesheet" href="../css/top-button.css" />
+
+    <link rel="stylesheet" href="../css/data-list.css" />
+
+    <!-- Javascript Tools -->
+    <script src="../js/selector.js"></script>
+    <script src="../js/events.js"></script>
+    <script src="../js/forms.js"></script>
+    <script src="../js/form-icons.js"></script>
+    <script src="../js/sticky-header.js"></script>
+    <script src="../js/swatches.js"></script>
+    <script src="../js/top-button.js"></script>
+    <script src="../js/transitions.js"></script>
+    <script src="../js/user-agents.js"></script>
+
+    <script src="../js/data-list.js"></script>
+
+    <!-- font icons CSS -->
+    <link rel="stylesheet" href="../../UIIcons/font-icons/outline/font-icons.css" />
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="container theme-default ui-dark">
+        <div class="row theme-default2 ui-border top-bordered dual-bordered">
+            <div class="col-12">
+                <a href="examples.html" class="btn btn-lg btn-square circle ease-bg margin-10-r"><i class="icon icon-md no-opacity icon-long-arrow-left"></i></a>
+                <h1 class="x-large inline-block">UI Lab, Data List</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- documentation examples -->
+    <main class="container no-gutter">
+        <div class="fixed">
+            <div class="row">
+                <div class="col-12 padding-30-v">
+
+                    <h2>Employee List Report</h2>
+                    <div class="data-list bordered ease-data-list">
+
+                        <div class="row">
+                            <div class="col-5 xs-responsive">
+                                <div class="text text-icon text-icon-left rounded dual-bordered ease-form">
+                                    <i class="icon icon-sm icon-search text-icon-left ease-opacity"></i>
+                                    <input class="data-filter" type="text" placeholder="Search">
+                                </div>
+                            </div>
+                            <div class="col-7 xs-responsive ease-1st-form align-right xs-align-center">
+                                <div class="select form-inline-responsive rounded dual-bordered">
+                                    <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                                    <select class="data-filter" data-order="3">
+                                        <option>Name</option>
+                                        <option value="John Doe">John Doe</option>
+                                        <option value="Mary Doe">Mary Doe</option>
+                                        <option value="Mike Taylor">Mike Taylor</option>
+                                        <option value="Angelina May">Angelina May</option>
+                                    </select>
+                                </div>
+                                <div class="select form-inline-responsive rounded dual-bordered">
+                                    <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                                    <select class="data-filter" data-order="5">
+                                        <option>Age</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="29">29</option>
+                                    </select>
+                                </div>
+                                <div class="select form-inline-responsive rounded dual-bordered">
+                                    <span class="icon icon-sm icon-angle-down ease-opacity"></span>
+                                    <select class="data-show">
+                                        <option value="5">5</option>
+                                        <option value="10">10</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="all">All</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-xs-padding ease-2nd-bg">
+                            <div class="col-4 no-responsive">
+                                <button class="btn align-left padding-5-h btn-block" data-sort="1"><i class="icon icon-sm icon-sort"></i> Name</button>
+                            </div>
+                            <div class="col-4 no-responsive">
+                                <button class="btn align-left padding-5-h btn-block" data-sort="2"><i class="icon icon-sm icon-sort"></i> Age</button>
+                            </div>
+                            <div class="col-4 no-responsive">
+                                <button class="btn align-left padding-5-h btn-block" data-sort="3"><i class="icon icon-sm icon-sort"></i> Job</button>
+                            </div>
+                        </div>
+
+                        <div class="data-content padding-10">
+                            <div class="row row-no-padding row-equal-height">
+                                <div class="col-4 xs-responsive">
+                                    John Doe
+                                </div>
+                                <div class="col-4 xs-responsive">
+                                    25
+                                </div>
+                                <div class="col-4 xs-responsive">
+                                    Designer
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data-content padding-10">
+                            <div class="row row-no-padding row-equal-height">
+                                <div class="col-4 xs-responsive">
+                                    Mary Doe
+                                </div>
+                                <div class="col-4 xs-responsive">
+                                    24
+                                </div>
+                                <div class="col-4 xs-responsive">
+                                    Developer
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data-content padding-10">
+                            <div class="row row-no-padding row-equal-height">
+                                <div class="col-4 xs-responsive">
+                                    Mike Taylor
+                                </div>
+                                <div class="col-4 xs-responsive">
+                                    29
+                                </div>
+                                <div class="col-4 xs-responsive">
+                                    Developer
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data-content padding-10">
+                            <div class="row row-no-padding row-equal-height">
+                                <div class="col-4 xs-responsive">
+                                    Angelina May
+                                </div>
+                                <div class="col-4 xs-responsive">
+                                    25
+                                </div>
+                                <div class="col-4 xs-responsive">
+                                    Researcher
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row xs-align-center">
+                            <div class="col-6 xs-responsive">
+                                <div class="padding-5-v">
+                                    Toplam <b class="data-total"></b> adet.
+                                </div>
+                            </div>
+                            <div class="col-6 xs-responsive align-right">
+                                <div class="data-paging" data-classes="btn-active bold">
+                                    <button class="prev btn rounded ease-bg"><i class="icon icon-xs icon-angle-left"></i></button>
+                                    <button class="btn rounded ease-bg"></button>
+                                    <button class="next btn rounded ease-bg"><i class="icon icon-xs icon-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128387411-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-128387411-1');
+    </script>
+
+</body>
+</html>
