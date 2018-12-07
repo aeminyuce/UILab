@@ -170,7 +170,7 @@ var photoGallery = {
             index = Array.prototype.slice.call(images).indexOf(that);
 
             html = events.parser('<div class="photo-preview ease-opacity">' +
-                    '<button title="Kapat" class="btn no-padding-h btn-lg btn-invisible ease-bg close-photo-preview"><i class="icon icon-lg ' + photoGallery.closeIcon + ' no-opacity"></i></button>' +
+                    '<button title="Kapat" class="btn btn-square btn-lg btn-invisible ease-bg close-photo-preview"><i class="icon icon-lg ' + photoGallery.closeIcon + ' no-opacity"></i></button>' +
                     '<button type="button" class="preview-prev ease-bg"><i class="icon ' + photoGallery.prevIcon + ' icon-xl"></i></button>' +
                     '<button type="button" class="preview-next ease-bg"><i class="icon ' + photoGallery.nextIcon + ' icon-xl"></i></button>' +
                     '<i class="preview-loader icon icon-xxl ' + photoGallery.loaderIcon + '"></i>' +
