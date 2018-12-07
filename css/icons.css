@@ -1,5 +1,5 @@
 /* icons */
-.icon,.icon-inline:before { text-align: center; vertical-align: middle; line-height: 100% !important; display: inline-block; transform: translateY(-5%); }
+.icon,.icon-inline:before { text-align: center !important; vertical-align: middle; line-height: 100% !important; display: inline-block; transform: translateY(-5%); }
 button.icon { background-color: rgba(0,0,0,0); }
 
 .icon-inline:not(.inline-right):before { margin-right: 7px; }
