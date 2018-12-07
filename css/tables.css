@@ -1,6 +1,6 @@
 /* tables */
-.ease-table tr,.ease-table th,.ease-table td { transition-property: background-color; transition-duration: .15s; }
-.no-transitions-all .ease-table tr,.no-transitions-all .ease-table th,.no-transitions-all .ease-table td { transition-property: none !important; }
+.ease-table tr { transition-property: background-color; transition-duration: .15s; }
+.no-transitions-all .ease-table tr { transition-property: none !important; }
 
 .table { width: 100%; background-color: #fff; }
 .table:not(:last-child) { margin-bottom: 20px; }
@@ -37,7 +37,7 @@
 
 .btn-table { margin-top: -5px !important; margin-bottom: -5px !important; }
 
-html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover,html:not(.mobile) .table-hover tbody tr[class*="ui-"]:hover > * { background-color: rgba(0,0,0,.06); }
+html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover { background-color: rgba(0,0,0,.06); }
 
 @media (max-width: 959px) {
     .table-responsive { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
