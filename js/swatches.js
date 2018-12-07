@@ -26,12 +26,12 @@
 
                 function () {
 
-                    var disabled, r, g, b, a, getStyle, style, currentColor, hoverColor, getAlpha;
+                    var disabled, r, g, b, a, currentColor, hoverColor, getAlpha;
 
-                    disabled = this.getAttribute('data-swatch'); // if data-swatch="false" stop running!
+                    disabled = this.getAttribute('data-swatch');
 
                     if (disabled !== null) {
-                        if (disabled === 'false') { return; }
+                        if (disabled === 'false') { return; } // if data-swatch="false" stop running!
                     }
 
                     currentColor = window.getComputedStyle(this);
@@ -40,28 +40,17 @@
                     hoverColor = (currentColor.slice(currentColor.indexOf('(') + 1, currentColor.indexOf(')')).split(','));
 
                     events.addClass(this, 'swatch-active');
-                    getStyle = this.getAttribute('style');
-
-                    style = '';
-
-                    if (getStyle !== null && getStyle !== '') {
-
-                        style = getStyle.toString();
-                        this.setAttribute('data-style', style);
-                        style += ' ';
-
-                    } else { style = ''; }
 
                     r = parseInt(hoverColor[0], 10);
-                    r += ((255 - r) * 20) / 100;
+                    r += ((255 - r) * 22) / 100;
                     if (r > 255) { r = 255; }
 
                     g = parseInt(hoverColor[1], 10);
-                    g += ((255 - g) * 20) / 100;
+                    g += ((255 - g) * 22) / 100;
                     if (g > 255) { g = 255; }
 
                     b = parseInt(hoverColor[2], 10);
-                    b += ((255 - b) * 20) / 100;
+                    b += ((255 - b) * 22) / 100;
                     if (b > 255) { b = 255; }
 
                     getAlpha = hoverColor[3];
@@ -76,21 +65,13 @@
 
                     } else { a = Math.ceil(a); }
 
-                    this.setAttribute('style', style + 'background-color: rgba(' + Math.ceil(r) + ',' + Math.ceil(g) + ',' + Math.ceil(b) + ',' + a + ') !important;');
+                    this.style.backgroundColor  = 'rgba(' + Math.ceil(r) + ',' + Math.ceil(g) + ',' + Math.ceil(b) + ',' + a + ')';
 
                 });
 
             events.on(document, 'mouseleave', '.swatch-active', function () {
 
-                var getDataStyle = this.getAttribute('data-style');
-
-                if (getDataStyle !== null && getDataStyle !== '') {
-
-                    this.setAttribute('style', this.getAttribute('data-style').toString());
-                    this.removeAttribute('data-style');
-
-                } else { this.removeAttribute('style'); }
-
+                this.style.removeProperty('background-color');
                 events.removeClass(this, 'swatch-active');
 
             });
