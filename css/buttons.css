@@ -1,7 +1,7 @@
 /* buttons */
 .btn { text-align: center; vertical-align: middle; height: 32px; background-color: rgba(0,0,0,.08); padding-top: 6px; padding-bottom: 6px; display: inline-block; }
 input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
-.btn:not(.btn-block):not(.btn-multitext).no-padding-h { width: 32px !important; }
+.btn-square { width: 32px; padding-left: 0 !important; padding-right: 0 !important; }
 .btn:not(.btn-passive) { cursor: pointer; }
 .btn:not([class*="bordered"]) { border-width: 0; }
 .btn:not(.btn-multitext) { white-space: nowrap; overflow: hidden; }
@@ -20,20 +20,20 @@ input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 html:not(.mobile) .btn.ui-dark:hover > .icon,html:not(.mobile) .btn.ui-x-dark:hover > .icon { opacity: 1 !important; }
 
 .btn-lg { font-size: 16px; height: 42px; padding-top: 10px; padding-bottom: 10px; }
-.btn-lg:not(.btn-block):not(.btn-multitext).no-padding-h { width: 42px !important; }
+.btn-lg.btn-square { width: 42px; }
 .btn-lg.bordered { padding-top: 9px; padding-bottom: 9px; }
 .btn-lg.dual-bordered { padding-top: 8px; padding-bottom: 8px; }
 .btn-lg.rounded { border-radius: 8px; }
 
 .btn-sm { font-size: 12px; height: 26px; padding-top: 5px; padding-bottom: 5px; }
-.btn-sm:not(.btn-block):not(.btn-multitext).no-padding-h { width: 26px !important; }
+.btn-sm.btn-square { width: 26px; }
 .btn-sm.bordered { padding-top: 4px; padding-bottom: 4px; }
 .btn-sm.dual-bordered { padding-top: 3px; padding-bottom: 3px; }
 .btn-sm.rounded { border-radius: 4px; }
 .btn-sm:not(.circle) { padding-right: 8px; padding-left: 8px; }
 
 .btn-xs { font-size: 11px; height: 22px; padding-top: 4px; padding-bottom: 4px; }
-.btn-xs:not(.btn-block):not(.btn-multitext).no-padding-h { width: 22px !important; }
+.btn-xs.btn-square { width: 22px; }
 .btn-xs.bordered { padding-top: 3px; padding-bottom: 3px; }
 .btn-xs.dual-bordered { padding-top: 2px; padding-bottom: 2px; }
 .btn-xs.rounded { border-radius: 3px; }
@@ -41,7 +41,7 @@ html:not(.mobile) .btn.ui-dark:hover > .icon,html:not(.mobile) .btn.ui-x-dark:ho
 .btn-xs.circle { padding-right: 10px; padding-left: 10px; }
 
 .btn-xxs { font-size: 10px; height: 18px; padding-top: 2px; padding-bottom: 2px; }
-.btn-xxs:not(.btn-block):not(.btn-multitext).no-padding-h { width: 14px !important; }
+.btn-xxs.btn-square { width: 14px; }
 .btn-xxs.bordered { padding-top: 1px; padding-bottom: 1px; }
 .btn-xxs.rounded { border-radius: 2px; }
 .btn-xxs:not(.circle) { padding-right: 2px; padding-left: 2px; }

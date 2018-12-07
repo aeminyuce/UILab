@@ -14,7 +14,7 @@
 .steps-bar:not(.steps-icon) { counter-reset: step; }
 .steps-bar li:not(.steps-icon):before { content: counter(step); counter-increment: step; }
 .steps-bar.steps-icon li:before { content: ""; }
-.steps-bar.steps-icon li > .icon { position: absolute; top: 50%; left: 50%; z-index: 2; transform: translate(-50%,-100%); }
+.steps-bar.steps-icon li > .icon { font-size: 18px; width: 18px; height: 18px; margin-top: -20px; position: absolute; left: 50%; z-index: 2; transform: translate(-50%,-50%); }
 
 .steps-bar[class*="theme-"] li { color: currentColor; }
 .steps-bar[class*="theme-"] li:before { border-color: currentColor; }

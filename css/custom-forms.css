@@ -1,5 +1,5 @@
 /* custom forms */
-.ease-form-custom { transition-property: background-color, left, opacity; }
+.ease-form-custom { transition-property: height, background-color, top, left, opacity; }
 
 .check-custom,.radio-custom,.switch-custom { vertical-align: middle; height: 22px; margin-top: 5px; margin-bottom: 5px; border: solid 1px rgba(0,0,0,.15); overflow: hidden; display: inline-block; position: relative; }
 .check-custom,.radio-custom { width: 22px; }
@@ -7,21 +7,21 @@
 .switch-custom { width: 44px; border-radius: 11px; }
 .check-custom input,.radio-custom input,.switch-custom input { width: 140%; height: 140%; display: block; position: absolute; top: -20%; left: -20%; z-index: 1; opacity: 0; }
 
-.check-custom > .icon,.radio-custom > .icon,.switch-custom > .icon { content: ""; width: 14px; height: 14px; display: block; position: absolute; top: 3px; left: 3px;}
-.check-custom > .icon,.radio-custom > .icon { background-color: rgba(0,0,0,.65); }
-.switch-custom > input:not(:checked) + .icon { background-color: rgba(0,0,0,.15); }
-.check-custom > .icon,.radio-custom > .icon { opacity: 0; }
-.check-custom.dual-bordered > .icon,.radio-custom.dual-bordered > .icon,.switch-custom.dual-bordered > .icon { top: 2px; left: 2px; }
-.check-custom > .icon { border-radius: 1px; }
-.radio-custom > .icon,.switch-custom > .icon { border-radius: 7px; }
+.check-custom > i,.radio-custom > i,.switch-custom > i { content: ""; width: 14px; height: 14px; display: block; position: absolute; top: 3px; left: 3px; }
+.check-custom > i,.radio-custom > i { background-color: rgba(0,0,0,.65); }
+.switch-custom > input:not(:checked) + i { background-color: rgba(0,0,0,.15); }
+.check-custom > i,.radio-custom > i { opacity: 0; }
+.check-custom.dual-bordered > i,.radio-custom.dual-bordered > i,.switch-custom.dual-bordered > i { top: 2px; left: 2px; }
+.check-custom > i { border-radius: 3px; }
+.radio-custom > i,.switch-custom > i { border-radius: 7px; }
 
-.check-custom input:checked + .icon,.check-custom input:indeterminate + .icon,.radio-custom input:checked + .icon { opacity: 1; }
-.check-custom input:indeterminate + .icon { height: 3px; top: 8px; }
-.switch-custom input:checked + .icon { left: 25px; }
-.switch-custom input:checked + .icon:not([class*="ui-"]) { background-color: #2dbd3a; }
-.switch-custom input:indeterminate + .icon { background-color: #ffa600; left: 14px; }
-.switch-custom.dual-bordered input:checked + .icon { left: 24px; }
-.switch-custom.dual-bordered input:indeterminate + .icon { left: 13px; }
+.check-custom input:checked + i,.check-custom input:indeterminate + i,.radio-custom input:checked + i { opacity: 1; }
+.check-custom input:indeterminate + i { height: 3px; top: 8px; }
+.switch-custom input:checked + i { left: 25px; }
+.switch-custom input:checked + i:not([class*="ui-"]) { background-color: #2dbd3a; }
+.switch-custom input:indeterminate + i { background-color: #ffa600; left: 14px; }
+.switch-custom.dual-bordered input:checked + i { left: 24px; }
+.switch-custom.dual-bordered input:indeterminate + i { left: 13px; }
 
 .check-custom:not(.right) + label,.radio-custom:not(.right) + label,.switch-custom:not(.right) + label { vertical-align: middle; margin-left: 2px; }
 
