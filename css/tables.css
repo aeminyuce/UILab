@@ -31,8 +31,6 @@
 .table-scrollable > .table tr > * { white-space: nowrap; }
 
 .table-nowrap th,.table-nowrap td { white-space: nowrap; text-overflow: ''; overflow: hidden; }
-
-.table-striped tr:nth-child(even)[class*="ui-"] { background-color: rgba(0,0,0,.025); }
 .table-striped tr:nth-child(even):not([class*="ui-"]) { background-color: rgba(0,0,0,.025); }
 
 .btn-table { margin-top: -5px !important; margin-bottom: -5px !important; }
