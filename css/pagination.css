@@ -1,5 +1,7 @@
 /* pagination */
 .pagination:not(:last-child) { margin-bottom: 20px; }
+
+.pagination .btn-active { font-weight: bold; }
 .pagination .btn > .icon + .icon { margin-left: -5px; }
 
 @media (max-width: 767px) {
