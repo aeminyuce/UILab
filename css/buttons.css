@@ -12,7 +12,7 @@ input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .btn-xxs.btn-multitext { min-height: 16px; }
 
 .btn:not(.circle) { padding-right: 10px; padding-left: 10px; }
-.btn:not(.btn-xs):not(.btn-xxs).circle { padding-right: 20px; padding-left: 20px;}
+.btn:not(.btn-xs):not(.btn-xxs).circle { padding-right: 16px; padding-left: 16px;}
 
 .btn > .icon:not(.no-opacity),.btn.icon-inline:before { opacity: .45; }
 .btn.ui-dark > .icon,.btn.ui-x-dark > .icon { opacity: 1; }
