@@ -57,8 +57,8 @@
                 if (dataSrcLists[i].length > 1) {
 
                     events.addClass(selector('button', slider[i]), 'show');
-
                     events.addClass(nav, 'show');
+
                     if (nav.innerHTML === "") {
 
                         for (j = 0; j < dataSrcLists[i].length; j += 1) {
