@@ -7,6 +7,7 @@
 .pagination .btn-xs { min-width: 22px; }
 .pagination .btn-xxs { min-width: 14px; }
 
+.pagination .btn > .icon { opacity: 1 !important; }
 .pagination .btn > .icon + .icon { margin-left: -5px; }
 
 @media (max-width: 767px) {
