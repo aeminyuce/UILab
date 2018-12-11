@@ -1,7 +1,7 @@
 /* pagination */
 .pagination:not(:last-child) { margin-bottom: 20px; }
 
-.pagination .btn { min-width: 32px; }
+.pagination .btn { text-align: center !important; min-width: 32px; }
 .pagination .btn-lg { min-width: 42px; }
 .pagination .btn-sm { min-width: 26px; }
 .pagination .btn-xs { min-width: 22px; }
