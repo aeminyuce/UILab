@@ -30,7 +30,10 @@
         // Events
         events.on(document, 'click', '[class*="show-mobile-menu-"]', function () {
 
-            var panel, importers, i, html = '', position = 'left';
+            var panel, importers, i, html, position;
+
+            html = '';
+            position = 'left';
 
             if (events.hasClass(this, 'show-mobile-menu-right')) {
                 position = 'right';
@@ -66,6 +69,8 @@
 
             selector('.mobile-menu-content', panel).innerHTML = html;
             events.on('.close-mobile-menu', 'click', function () { closeMobileMenu(panel); });
+
+            html = '';
 
         });
 
