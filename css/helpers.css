@@ -10,7 +10,7 @@
 .full-height { height: 100%; }
 .no-user-select { -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
 .highlight:not(:last-child) { margin-bottom: 20px; }
-.clear-button { color: inherit; font-weight: inherit; text-align: inherit; background-color: rgba(0,0,0,0); border: 0; }
+.clear-button { color: inherit; text-align: inherit; background-color: rgba(0,0,0,0); border: 0; }
 .img-responsive { width: 100% !important; height: auto !important; }
 
 .set-relative { position: relative; }
