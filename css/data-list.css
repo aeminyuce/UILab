@@ -1,0 +1,20 @@
+/* data grid */
+.ease-data-list .data-content { transition-property: background-color; transition-duration: .15s; }
+.ease-data-list.ease-fast .data-content { transition-duration: .1s; }
+.ease-data-list.ease-slow .data-content { transition-duration: .4s; }
+
+.data-list.bordered { border-color: #ddd; }
+
+.data-list [data-sort] .icon { opacity: 1 !important; }
+
+.data-list .data-content { padding: 10px; border-bottom: solid 1px #ddd; }
+.data-list:not(.data-show-all) .data-content:not(.show) { display: none; }
+.data-list .data-content.even { background-color: rgba(0,0,0,.025); }
+
+html:not(.mobile) .data-list .data-content:not([class*="ui-"]):hover { background-color: rgba(0,0,0,.06); }
+html:not(.mobile) .data-list .data-content:not([class*="ui-"]):nth-child(odd):hover { background-color: rgba(0,0,0,.06); }
+.data-list .data-content.even:not([class*="ui-"]) { background-color: rgba(0,0,0,.025); }
+
+.data-list > .row,.data-list .data-content > .row { margin-left: inherit; margin-right: inherit; }
+
+.data-list .data-paging button:not(.btn) { color: inherit; background-color: rgba(0,0,0,0); border: 0; }
