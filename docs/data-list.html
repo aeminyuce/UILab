@@ -71,43 +71,43 @@
                 <div class="col-12 padding-30-v">
 
                     <h2>Employee List Report</h2>
-                    <div class="data-list bordered ease-data-list">
+                    <div class="data-list data-striped bordered ease-data-list rounded">
 
                         <div class="row">
                             <div class="col-5 xs-responsive">
                                 <div class="text text-icon text-icon-left rounded dual-bordered ease-form">
                                     <i class="icon icon-sm icon-search text-icon-left ease-opacity"></i>
-                                    <input class="data-filter" type="text" placeholder="Search">
+                                    <input class="data-filter" type="text" placeholder="Search" autocomplete="off">
                                 </div>
                             </div>
                             <div class="col-7 xs-responsive ease-1st-form align-right xs-align-center">
                                 <div class="select form-inline-responsive rounded dual-bordered">
                                     <i class="icon icon-sm icon-angle-down ease-opacity"></i>
-                                    <select class="data-filter" data-order="3">
+                                    <select class="data-filter" data-order="3" autocomplete="off">
                                         <option>Name</option>
-                                        <option value="John Doe">John Doe</option>
-                                        <option value="Mary Doe">Mary Doe</option>
-                                        <option value="Mike Taylor">Mike Taylor</option>
-                                        <option value="Angelina May">Angelina May</option>
+                                        <option>John Doe</option>
+                                        <option>Mary Doe</option>
+                                        <option>Mike Taylor</option>
+                                        <option>Angelina May</option>
                                     </select>
                                 </div>
                                 <div class="select form-inline-responsive rounded dual-bordered">
                                     <i class="icon icon-sm icon-angle-down ease-opacity"></i>
-                                    <select class="data-filter" data-order="5">
+                                    <select class="data-filter" data-order="5" autocomplete="off">
                                         <option>Age</option>
-                                        <option value="24">24</option>
-                                        <option value="25">25</option>
-                                        <option value="29">29</option>
+                                        <option>24</option>
+                                        <option>25</option>
+                                        <option>29</option>
                                     </select>
                                 </div>
                                 <div class="select form-inline-responsive rounded dual-bordered">
                                     <span class="icon icon-sm icon-angle-down ease-opacity"></span>
-                                    <select class="data-show">
-                                        <option value="5">5</option>
-                                        <option value="10">10</option>
-                                        <option value="20">20</option>
-                                        <option value="50">50</option>
-                                        <option value="all">All</option>
+                                    <select class="data-show" autocomplete="off">
+                                        <option>5</option>
+                                        <option>10</option>
+                                        <option>20</option>
+                                        <option>50</option>
+                                        <option>All</option>
                                     </select>
                                 </div>
                             </div>
@@ -115,67 +115,539 @@
 
                         <div class="row row-xs-padding ease-2nd-bg">
                             <div class="col-4 no-responsive">
-                                <button class="btn align-left padding-5-h btn-block" data-sort="1"><i class="icon icon-sm icon-sort"></i> Name</button>
+                                <button class="btn align-left padding-5-h btn-block" data-sort="1"><i class="icon icon-xs icon-sort"></i> Name</button>
                             </div>
                             <div class="col-4 no-responsive">
-                                <button class="btn align-left padding-5-h btn-block" data-sort="2"><i class="icon icon-sm icon-sort"></i> Age</button>
+                                <button class="btn align-left padding-5-h btn-block" data-sort="2" data-type="number"><i class="icon icon-xs icon-sort"></i> Age</button>
                             </div>
                             <div class="col-4 no-responsive">
-                                <button class="btn align-left padding-5-h btn-block" data-sort="3"><i class="icon icon-sm icon-sort"></i> Job</button>
+                                <button class="btn align-left padding-5-h btn-block" data-sort="3"><i class="icon icon-xs icon-sort"></i> Job</button>
                             </div>
                         </div>
 
-                        <div class="data-content padding-10">
-                            <div class="row row-no-padding row-equal-height">
-                                <div class="col-4 xs-responsive">
-                                    John Doe
-                                </div>
-                                <div class="col-4 xs-responsive">
-                                    25
-                                </div>
-                                <div class="col-4 xs-responsive">
-                                    Designer
-                                </div>
-                            </div>
-                        </div>
-                        <div class="data-content padding-10">
-                            <div class="row row-no-padding row-equal-height">
-                                <div class="col-4 xs-responsive">
-                                    Mary Doe
-                                </div>
-                                <div class="col-4 xs-responsive">
-                                    24
-                                </div>
-                                <div class="col-4 xs-responsive">
-                                    Developer
+                        <div class="data-container">
+
+                            <div class="data-content" data-val="John Doe|25|Designer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        John Doe
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        25
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Designer
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="data-content padding-10">
-                            <div class="row row-no-padding row-equal-height">
-                                <div class="col-4 xs-responsive">
-                                    Mike Taylor
-                                </div>
-                                <div class="col-4 xs-responsive">
-                                    29
-                                </div>
-                                <div class="col-4 xs-responsive">
-                                    Developer
-                                </div>
-                            </div>
-                        </div>
-                        <div class="data-content padding-10">
-                            <div class="row row-no-padding row-equal-height">
-                                <div class="col-4 xs-responsive">
-                                    Angelina May
-                                </div>
-                                <div class="col-4 xs-responsive">
-                                    25
-                                </div>
-                                <div class="col-4 xs-responsive">
-                                    Researcher
+                            <div class="data-content" data-val="Mary Doe|24|Developer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Mary Doe
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        24
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Developer
+                                    </div>
                                 </div>
                             </div>
+                            <div class="data-content" data-val="Mike Taylor|29|Developer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Mike Taylor
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        29
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Developer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Angelina May|25|Researcher">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Angelina May
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        25
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Researcher
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="John Doe|25|Designer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        John Doe
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        25
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Designer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Mary Doe|24|Developer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Mary Doe
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        24
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Developer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Mike Taylor|29|Developer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Mike Taylor
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        29
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Developer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Angelina May|25|Researcher">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Angelina May
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        25
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Researcher
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="John Doe|25|Designer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        John Doe
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        25
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Designer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Mary Doe|24|Developer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Mary Doe
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        24
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Developer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Mike Taylor|29|Developer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Mike Taylor
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        29
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Developer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Angelina May|25|Researcher">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Angelina May
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        25
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Researcher
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="John Doe|25|Designer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        John Doe
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        25
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Designer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Mary Doe|24|Developer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Mary Doe
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        24
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Developer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Mike Taylor|29|Developer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Mike Taylor
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        29
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Developer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Angelina May|25|Researcher">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Angelina May
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        25
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Researcher
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="John Doe|25|Designer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        John Doe
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        25
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Designer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Mary Doe|24|Developer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Mary Doe
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        24
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Developer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Mike Taylor|29|Developer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Mike Taylor
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        29
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Developer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Angelina May|25|Researcher">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Angelina May
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        25
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Researcher
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="John Doe|25|Designer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        John Doe
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        25
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Designer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Mary Doe|24|Developer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Mary Doe
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        24
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Developer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Mike Taylor|29|Developer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Mike Taylor
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        29
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Developer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Angelina May|25|Researcher">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Angelina May
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        25
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Researcher
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="John Doe|25|Designer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        John Doe
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        25
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Designer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Mary Doe|24|Developer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Mary Doe
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        24
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Developer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Mike Taylor|29|Developer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Mike Taylor
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        29
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Developer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Angelina May|25|Researcher">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Angelina May
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        25
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Researcher
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="John Doe|25|Designer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        John Doe
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        25
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Designer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Mary Doe|24|Developer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Mary Doe
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        24
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Developer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Mike Taylor|29|Developer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Mike Taylor
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        29
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Developer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Angelina May|25|Researcher">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Angelina May
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        25
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Researcher
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="John Doe|25|Designer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        John Doe
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        25
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Designer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Mary Doe|24|Developer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Mary Doe
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        24
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Developer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Mike Taylor|29|Developer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Mike Taylor
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        29
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Developer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Angelina May|25|Researcher">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Angelina May
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        25
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Researcher
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="John Doe|25|Designer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        John Doe
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        25
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Designer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Mary Doe|24|Developer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Mary Doe
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        24
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Developer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Mike Taylor|29|Developer">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Mike Taylor
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        29
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Developer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-content" data-val="Angelina May|25|Researcher">
+                                <div class="row row-no-padding row-equal-height">
+                                    <div class="col-4 xs-responsive">
+                                        Angelina May
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        25
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        Researcher
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
 
                         <div class="row xs-align-center">
@@ -185,11 +657,7 @@
                                 </div>
                             </div>
                             <div class="col-6 xs-responsive align-right">
-                                <div class="data-paging" data-classes="btn-active bold">
-                                    <button class="prev btn rounded ease-bg"><i class="icon icon-xs icon-angle-left"></i></button>
-                                    <button class="btn rounded ease-bg"></button>
-                                    <button class="next btn rounded ease-bg"><i class="icon icon-xs icon-angle-right"></i></button>
-                                </div>
+                                <div class="data-paging pagination ease-1st-bg" data-default="btn rounded" data-active="theme-default ui-dark"></div>
                             </div>
                         </div>
 
