@@ -153,7 +153,7 @@ var dataList = {
 
         // paging
         paging = selector('.data-paging', that);
-        if (pagingCount[id] === undefined) {
+        if (pagingCount[id] === undefined || pagingCount[id] === 0) {
 
             if (paging.length > 0) {
 
@@ -348,13 +348,13 @@ var dataList = {
 
         sortIndex = this.getAttribute('data-sort');
 
-        if (sortIndex === null && sortIndex === '' && sortIndex === '0') {
+        if (sortIndex === null || sortIndex === '' || sortIndex === '0') {
             sortIndex = 0;
 
         } else { sortIndex = Number(sortIndex) - 1; }
 
         sortType = this.getAttribute('data-type');
-        if (sortType !== null) { sortType = ''; }
+        if (sortType === null) { sortType = ''; }
 
         list = selector('.data-content', temp);
         events.each(list, function () {
@@ -416,6 +416,107 @@ var dataList = {
         buttons = '';
         list = '';
 
+    });
+
+    // data-filter
+    function dataFilter(t) {
+
+        var that, id, filters, val, vals, sortType, sortIndex, indexes, list;
+
+        that = events.closest(t, '.data-list')[0];
+
+        vals = [];
+        indexes = [];
+
+        // read all filter values
+        filters = selector('.data-filter', that);
+        events.each(filters, function () {
+
+            val = '';
+
+            if (this.type === 'checkbox' || this.type === 'radio') {
+                if (this.checked) { val = this.value; }
+
+            } else {
+                val = this.value;
+            }
+
+            val = val.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
+            if (val !== '') {
+
+                sortType = this.getAttribute('data-type');
+                if (sortType === null) { sortType = ''; }
+
+                if (sortType !== 'number') {
+                    vals.push(customLowerCase(val));
+
+                } else {
+                    vals.push(val);
+                }
+                sortIndex = this.getAttribute('data-index');
+
+                if (sortIndex !== null) {
+
+                    if (sortIndex === '' || sortIndex === '0') {
+                        sortIndex = 0;
+
+                    } else {
+                        sortIndex = Number(sortIndex) - 1;
+                    }
+
+                    indexes.push(sortIndex);
+
+                } else { indexes.push(''); }
+
+            }
+
+        });
+
+        // filter datas
+        if (vals.length > 0) {
+
+            list = selector('.data-content', that);
+            events.each(list, function () {
+
+                /*
+                for (i = 0; i < vals.length; i += 1) {
+
+                    if (indexes[i] === "") {
+
+
+                    } else {
+
+                        if (list[i].getAttribute('data-content').match(new RegExp(vals[i]indexes[i], 'g')) !== null) {
+                            events.addClass(list[i]);
+                        }
+
+                    }
+
+                }
+                */
+
+            });
+
+        }
+
+        // load filtered data
+        id = that.getAttribute('data-id');
+        loadData(that, id);
+
+        // empty variables
+        vals = [];
+        indexes = [];
+
+        filters = '';
+
+    }
+
+    events.on(document, 'keyup', '.data-list .data-filter[type="text"]', function () {
+        dataFilter(this);
+    });
+
+    events.on(document, 'change', '.data-list .data-filter:not([type="text"])', function () {
+        dataFilter(this);
     });
 
     // Loaders
