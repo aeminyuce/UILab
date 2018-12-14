@@ -8,6 +8,8 @@
 .data-list [data-sort] .icon { opacity: 1 !important; }
 
 .data-list .data-content { padding: 10px; border-bottom: solid 1px #ddd; }
+.data-list .data-content:before,.data-list .data-content:after { content: ""; display: table; }
+.data-list .data-content:after { clear: both; }
 .data-list:not(.data-show-all) .data-content:not(.show) { display: none; }
 .data-list .data-content.even { background-color: rgba(0,0,0,.025); }
 

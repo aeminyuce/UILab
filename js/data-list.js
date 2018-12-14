@@ -22,12 +22,24 @@ var dataList = {
 (function () {
 
     'use strict';
-    /*globals document, selector, events, ajax */
+    /*globals window,document, selector, events, sessionStorage, performance, ajax */
 
     var
-        temp = document.createDocumentFragment(),
+        testStorage = true,
+        startListID = 0,
+
         pagingCount = [],
-        customLowerCase;
+
+        customLowerCase,
+        temp = document.createDocumentFragment();
+
+    // test for storage is now supported?
+    try {
+        sessionStorage.setItem('dataListTest', 0);
+
+    } catch (e) {
+        testStorage = false;
+    }
 
     // custom lowercase
     (function () {
@@ -128,6 +140,12 @@ var dataList = {
         html = events.parser(html);
         paging[0].innerHTML = html;
 
+        // set paging to storage
+        if (testStorage && sessionStorage !== undefined) {
+            sessionStorage.setItem(id + '-paging', pagingCount[id]);
+        }
+
+        // empty variables
         classes = '';
         html = '';
 
@@ -230,13 +248,19 @@ var dataList = {
 
         events.each('.data-list:not(.passive)', function () {
 
-            var date, id;
-
             // define id
-            date = new Date().getTime().toString();
-            id = date.substr(date.length - 4);
+            startListID += 1;
+            var id = 'dataList-' + startListID;
 
             this.setAttribute('data-id', id);
+
+            // check stored variables
+            if (testStorage && sessionStorage !== undefined) {
+
+                dataList.showCount = Number(sessionStorage.getItem(id + '-show'));
+                pagingCount[id] = Number(sessionStorage.getItem(id + '-paging'));
+
+            }
 
             // load data
             events.addClass(this, 'passive');
@@ -288,6 +312,12 @@ var dataList = {
         } else {
 
             dataList.showCount = this.value;
+
+            // set show count to storage
+            if (testStorage && sessionStorage !== undefined) {
+                sessionStorage.setItem(id + '-show', dataList.showCount);
+            }
+
             events.removeClass(that, 'data-show-all');
 
         }
@@ -299,7 +329,7 @@ var dataList = {
     // data-sort
     events.on(document, 'click', '.data-list [data-sort]', function () {
 
-        var that, id, buttons, isAsc, dataContainer, list, next, sortIndex, sortType, arr, arrSorted;
+        var that, id, buttons, isAsc, dataContainer, list, sortIndex, sortType, arr, arrSorted;
 
         that = events.closest(this, '.data-list')[0];
         id = that.getAttribute('data-id');
@@ -339,9 +369,7 @@ var dataList = {
 
         // sort
         dataContainer = selector('.data-container', that)[0];
-
-        next = dataContainer.nextSibling;
-        temp.appendChild(dataContainer);
+        temp.innerHTML = events.parser(dataContainer.innerHTML);
 
         arr = [];
         arrSorted = [];
@@ -356,7 +384,7 @@ var dataList = {
         sortType = this.getAttribute('data-type');
         if (sortType === null) { sortType = ''; }
 
-        list = selector('.data-content', temp);
+        list = selector('.data-content', temp[0]);
         events.each(list, function () {
 
             var val = this.getAttribute('data-val');
@@ -374,9 +402,6 @@ var dataList = {
             }
 
         });
-
-        dataContainer = selector('.data-container', temp)[0];
-        dataContainer.innerHTML = '';
 
         if (isAsc) {
 
@@ -400,13 +425,14 @@ var dataList = {
 
         events.each(list, function (i) {
 
-            dataContainer.appendChild(list[arr.indexOf(arrSorted[i])]);
+            temp.appendChild(list[arr.indexOf(arrSorted[i])]);
             arr[arr.indexOf(arrSorted[i])] = '';
 
         });
 
         // load sorted data
-        that.insertBefore(temp, next);
+        dataContainer.appendChild(temp);
+        pagingCount[id] = 1;
         loadData(that, id);
 
         // empty variables
@@ -517,6 +543,33 @@ var dataList = {
 
     events.on(document, 'change', '.data-list .data-filter:not([type="text"])', function () {
         dataFilter(this);
+    });
+
+    // clear stored variables when page refreshing
+    events.on(window, 'beforeunload', function () {
+
+        if (testStorage && sessionStorage !== undefined) {
+
+            if (window.performance) {
+                if (performance.navigation.type !== 1) { // The Navigation Timing API: if === 1 means page refreshed
+
+                    var dataLists, id;
+                    dataLists = selector('.data-list');
+
+                    events.each(dataLists, function () {
+
+                        id = this.getAttribute('data-id');
+
+                        sessionStorage.setItem(id + '-show', 0);
+                        sessionStorage.setItem(id + '-paging', 0);
+
+                    });
+
+                }
+            }
+
+        }
+
     });
 
     // Loaders
