@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../css/alignments.css" />
     <link rel="stylesheet" href="../css/buttons.css" />
     <link rel="stylesheet" href="../css/borders.css" />
+    <link rel="stylesheet" href="../css/custom-forms.css" />
     <link rel="stylesheet" href="../css/forms.css" />
     <link rel="stylesheet" href="../css/form-icons.css" />
     <link rel="stylesheet" href="../css/grid.css" />
@@ -74,13 +75,13 @@
                     <div class="data-list data-striped bordered ease-data-list rounded">
 
                         <div class="row">
-                            <div class="col-5 xs-responsive">
+                            <div class="col-5 sm-responsive">
                                 <div class="text text-icon text-icon-left rounded dual-bordered ease-form">
                                     <i class="icon icon-sm icon-search text-icon-left ease-opacity"></i>
                                     <input class="data-filter" type="text" placeholder="Search">
                                 </div>
                             </div>
-                            <div class="col-7 xs-responsive ease-1st-form align-right xs-align-center">
+                            <div class="col-7 sm-responsive ease-1st-form align-right sm-align-left">
                                 <div class="select form-inline-responsive rounded dual-bordered">
                                     <i class="icon icon-sm icon-angle-down ease-opacity"></i>
                                     <select class="data-filter" data-index="1">
@@ -100,6 +101,12 @@
                                         <option>29</option>
                                     </select>
                                 </div>
+                                <div class="check-custom rounded dual-bordered ease-form">
+                                    <input id="ages" class="data-filter" data-index="2" type="checkbox" value="25">
+                                    <i class="ease-form-custom"></i>
+                                </div>
+                                <label for="ages" class="label-custom margin-5-r">Only 25 Ages</label>
+                                <span class="sp10 visible-xs"></span>
                                 <div class="select form-inline-responsive rounded dual-bordered">
                                     <span class="icon icon-sm icon-angle-down ease-opacity"></span>
                                     <select class="data-show">
