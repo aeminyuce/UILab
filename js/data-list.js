@@ -5,7 +5,6 @@
 
 var dataList = {
 
-    showCount : '10',
     valueSplit : '|',
 
     sortIcon : 'icon icon-xs icon-sort',
@@ -28,12 +27,14 @@ var dataList = {
         testStorage = true,
         startListID = 0,
 
+        loadedVals = [],
+        showCount = [],
         pagingCount = [],
 
         customLowerCase,
         temp = document.createDocumentFragment();
 
-    // test for storage is now supported?
+    // test for storage is supported?
     try {
         sessionStorage.setItem('dataListTest', 0);
 
@@ -79,12 +80,12 @@ var dataList = {
         activeClass = paging[0].getAttribute('data-active');
         if (activeClass === null) { activeClass = ''; }
 
-        if (dataList.showCount === '') {
+        if (showCount[id] === undefined || showCount[id] === 0) {
             total = 1;
 
         } else {
 
-            total = Math.ceil(listLength / dataList.showCount);
+            total = Math.ceil(listLength / showCount[id]);
             if (total < 1) { total = 1; }
 
         }
@@ -154,39 +155,29 @@ var dataList = {
     // data loader
     function loadData(that, id) {
 
-        var i, list, listLength, paging, dataTotal, dataShow, isEven, dataStriped;
+        var i, list, listLength, paging, dataTotal, isEven, dataStriped;
 
         list = selector('.data-content', that);
         listLength = list.length;
 
-        // calculate dataShow
-        dataShow = selector('select.data-show', that)[0];
-        if (dataShow !== undefined) {
-
-            if (!isNaN(Number(dataShow.value))) {
-                dataList.showCount = dataShow.value;
-            }
-
-        }
-
         // paging
         paging = selector('.data-paging', that);
-        if (pagingCount[id] === undefined || pagingCount[id] === 0) {
+        if (paging.length > 0) {
 
-            if (paging.length > 0) {
+            if (pagingCount[id] === undefined || pagingCount[id] === 0) {
 
                 pagingCount[id] = 1; // paging available
                 createPaging(paging, id, listLength); // create paging buttons
 
             } else {
-
-                pagingCount[id] = 0; // paging not available
-                events.addClass(that, 'data-show-all');
-
+                createPaging(paging, id, listLength); // update paging buttons
             }
 
         } else {
-            createPaging(paging, id, listLength); // update paging buttons
+
+            pagingCount[id] = 0; // paging not available
+            events.addClass(that, 'data-show-all');
+
         }
 
         // total data
@@ -224,9 +215,9 @@ var dataList = {
 
         }
 
-        if (dataList.showCount !== '' && pagingCount[id] > 0) {
+        if (showCount[id] > 0 && pagingCount[id] > 0) {
 
-            for (i = (pagingCount[id] - 1) * dataList.showCount; i < pagingCount[id] * dataList.showCount; i += 1) {
+            for (i = (pagingCount[id] - 1) * showCount[id]; i < pagingCount[id] * showCount[id]; i += 1) {
                 evenList(list[i]);
             }
 
@@ -240,33 +231,6 @@ var dataList = {
 
         // empty variables
         list = '';
-
-    }
-
-    // first loading
-    function dataListFnc() {
-
-        events.each('.data-list:not(.passive)', function () {
-
-            // define id
-            startListID += 1;
-            var id = 'dataList-' + startListID;
-
-            this.setAttribute('data-id', id);
-
-            // check stored variables
-            if (testStorage && sessionStorage !== undefined) {
-
-                dataList.showCount = Number(sessionStorage.getItem(id + '-show'));
-                pagingCount[id] = Number(sessionStorage.getItem(id + '-paging'));
-
-            }
-
-            // load data
-            events.addClass(this, 'passive');
-            loadData(this, id);
-
-        });
 
     }
 
@@ -304,22 +268,21 @@ var dataList = {
 
         if (isNaN(Number(this.value))) {
 
-            dataList.showCount = '';
+            showCount[id] = 0;
             pagingCount[id] = 1;
 
             events.addClass(that, 'data-show-all');
 
         } else {
 
-            dataList.showCount = this.value;
-
-            // set show count to storage
-            if (testStorage && sessionStorage !== undefined) {
-                sessionStorage.setItem(id + '-show', dataList.showCount);
-            }
-
+            showCount[id] = this.value;
             events.removeClass(that, 'data-show-all');
 
+        }
+
+        // set show count to storage
+        if (testStorage && sessionStorage !== undefined) {
+            sessionStorage.setItem(id + '-show', showCount[id]);
         }
 
         loadData(that, id);
@@ -445,56 +408,75 @@ var dataList = {
     });
 
     // data-filter
-    function dataFilter(t) {
+    function dataFilter(that, firstLoading) {
 
-        var that, id, filters, val, vals, sortType, sortIndex, indexes, list;
+        var id, filters, val, vals, sortType, sortIndex, indexes, list;
 
-        that = events.closest(t, '.data-list')[0];
+        id = that.getAttribute('data-id');
 
         vals = [];
         indexes = [];
 
         // read all filter values
         filters = selector('.data-filter', that);
-        events.each(filters, function () {
+        events.each(filters, function (i) {
 
-            val = '';
+            if (firstLoading) {
 
-            if (this.type === 'checkbox' || this.type === 'radio') {
-                if (this.checked) { val = this.value; }
+                vals = loadedVals[id].split(',');
+
+                if (this.type === 'checkbox' || this.type === 'radio') {
+                    if (vals[i] !== '') { this.checked = true; }
+
+                } else if (this.tagName === 'SELECT') {
+                    this.selectedIndex = vals[i];
+
+                } else {
+                    this.value = vals[i];
+                }
+
 
             } else {
-                val = this.value;
-            }
 
-            val = val.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
-            if (val !== '') {
+                val = '';
+
+                if (this.type === 'checkbox' || this.type === 'radio') {
+                    if (this.checked) { val = this.value; }
+
+                } else if (this.tagName === 'SELECT') {
+                    val = this.selectedIndex.toString();
+
+                } else {
+                    val = this.value;
+                }
+
+                val = val.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
 
                 sortType = this.getAttribute('data-type');
                 if (sortType === null) { sortType = ''; }
 
-                if (sortType !== 'number') {
-                    vals.push(customLowerCase(val));
+                if (sortType === 'number') {
+                    vals.push(val);
 
                 } else {
-                    vals.push(val);
+                    vals.push(customLowerCase(val));
                 }
-                sortIndex = this.getAttribute('data-index');
-
-                if (sortIndex !== null) {
-
-                    if (sortIndex === '' || sortIndex === '0') {
-                        sortIndex = 0;
-
-                    } else {
-                        sortIndex = Number(sortIndex) - 1;
-                    }
-
-                    indexes.push(sortIndex);
-
-                } else { indexes.push(''); }
 
             }
+
+            sortIndex = this.getAttribute('data-index');
+            if (sortIndex !== null) {
+
+                if (sortIndex === '' || sortIndex === '0') {
+                    sortIndex = 0;
+
+                } else {
+                    sortIndex = Number(sortIndex) - 1;
+                }
+
+                indexes.push(sortIndex);
+
+            } else { indexes.push(''); }
 
         });
 
@@ -523,10 +505,14 @@ var dataList = {
 
             });
 
+            // set filters to storage
+            if (testStorage && sessionStorage !== undefined) {
+                sessionStorage.setItem(id + '-vals', vals.toString());
+            }
+
         }
 
         // load filtered data
-        id = that.getAttribute('data-id');
         loadData(that, id);
 
         // empty variables
@@ -538,12 +524,71 @@ var dataList = {
     }
 
     events.on(document, 'keyup', '.data-list .data-filter[type="text"]', function () {
-        dataFilter(this);
+
+        var that = events.closest(this, '.data-list')[0];
+        dataFilter(that, false);
+
     });
 
     events.on(document, 'change', '.data-list .data-filter:not([type="text"])', function () {
-        dataFilter(this);
+
+        var that = events.closest(this, '.data-list')[0];
+        dataFilter(that, false);
+
     });
+
+    // first loading
+    function dataListFnc() {
+
+        events.each('.data-list:not(.passive)', function () {
+
+            var id, dataShow;
+
+            // define id
+            startListID += 1;
+            id = 'dataList-' + startListID;
+
+            this.setAttribute('data-id', id);
+
+            // check stored variables
+            if (testStorage && sessionStorage !== undefined) {
+
+                loadedVals[id] = sessionStorage.getItem(id + '-vals');
+                showCount[id] = Number(sessionStorage.getItem(id + '-show'));
+                pagingCount[id] = Number(sessionStorage.getItem(id + '-paging'));
+
+            }
+
+            // calculate data-show
+            dataShow = selector('select.data-show', this)[0];
+            if (dataShow !== undefined) {
+
+                if (showCount[id] === undefined || showCount[id] === 0) {
+
+                    if (!isNaN(Number(dataShow.value))) {
+                        showCount[id] = dataShow.value;
+                    }
+
+                }
+
+                if (dataShow.value !== showCount[id]) {
+                    dataShow.value = showCount[id];
+                }
+
+            }
+
+            // load values
+            if (loadedVals[id] !== undefined && loadedVals[id].length > 0) {
+                dataFilter(this, true);
+            }
+
+            // load data
+            events.addClass(this, 'passive');
+            loadData(this, id);
+
+        });
+
+    }
 
     // clear stored variables when page refreshing
     events.on(window, 'beforeunload', function () {
@@ -560,6 +605,7 @@ var dataList = {
 
                         id = this.getAttribute('data-id');
 
+                        sessionStorage.setItem(id + '-vals', '');
                         sessionStorage.setItem(id + '-show', 0);
                         sessionStorage.setItem(id + '-paging', 0);
 
