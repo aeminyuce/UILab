@@ -133,7 +133,7 @@ var dataList = {
         }
 
         classes = 'next ' + defaultClass;
-        if (i === total + 1) { classes += ' btn-passive'; }
+        if (pagingCount[id] === total) { classes += ' btn-passive'; }
 
         classes = classes.replace(re, ' ').replace(rex, '');
         html += '<button class="' + classes + '"><i class="' + dataList.nextIcon + '"></i></button>\n';
@@ -157,7 +157,13 @@ var dataList = {
 
         var i, list, listLength, paging, dataTotal, isEven, dataStriped;
 
-        list = selector('.data-content', that);
+        if (events.hasClass(that, 'data-filtered')) {
+            list = selector('.data-content.filtered', that);
+
+        } else {
+            list = selector('.data-content', that);
+        }
+
         listLength = list.length;
 
         // paging
@@ -254,7 +260,6 @@ var dataList = {
         }
 
         loadData(that, id);
-
 
     });
 
@@ -396,6 +401,7 @@ var dataList = {
         // load sorted data
         dataContainer.appendChild(temp);
         pagingCount[id] = 1;
+
         loadData(that, id);
 
         // empty variables
@@ -410,7 +416,7 @@ var dataList = {
     // data-filter
     function dataFilter(that, firstLoading) {
 
-        var id, filters, val, vals, sortType, sortIndex, indexes, list;
+        var id, filters, val, vals, index, sortType, sortIndex, indexes, list, dataContainer, j, contentVal, contentArr, activeFilters, passed;
 
         id = that.getAttribute('data-id');
 
@@ -429,12 +435,20 @@ var dataList = {
                     if (vals[i] !== '') { this.checked = true; }
 
                 } else if (this.tagName === 'SELECT') {
-                    this.selectedIndex = vals[i];
+                    for (j = 0; j < this.options.length; j += 1) {
+
+                        if (customLowerCase(this.options[j].innerText) === vals[i]) {
+
+                            index = Array.prototype.slice.call(this.options).indexOf(this.options[j]);
+                            this.selectedIndex = index;
+
+                        }
+
+                    }
 
                 } else {
                     this.value = vals[i];
                 }
-
 
             } else {
 
@@ -442,9 +456,6 @@ var dataList = {
 
                 if (this.type === 'checkbox' || this.type === 'radio') {
                     if (this.checked) { val = this.value; }
-
-                } else if (this.tagName === 'SELECT') {
-                    val = this.selectedIndex.toString();
 
                 } else {
                     val = this.value;
@@ -480,35 +491,78 @@ var dataList = {
 
         });
 
-        // filter datas
+        // filter
         if (vals.length > 0) {
 
-            list = selector('.data-content', that);
-            events.each(list, function () {
+            activeFilters = vals.filter(function (filterVal) {
+                return filterVal !== '';
+            });
 
-                /*
-                for (i = 0; i < vals.length; i += 1) {
+            dataContainer = selector('.data-container', that)[0];
+            temp.innerHTML = events.parser(dataContainer.innerHTML);
 
-                    if (indexes[i] === "") {
+            list = selector('.data-content', temp[0]);
 
+            if (activeFilters.length > 0) {
 
-                    } else {
+                events.addClass(that, 'data-filtered');
+                events.each(list, function () {
 
-                        if (list[i].getAttribute('data-content').match(new RegExp(vals[i]indexes[i], 'g')) !== null) {
-                            events.addClass(list[i]);
+                    passed = [];
+
+                    contentVal = this.getAttribute('data-val');
+                    if (contentVal !== null && contentVal !== '') {
+
+                        contentVal = customLowerCase(contentVal);
+                        contentArr = contentVal.split(dataList.valueSplit);
+
+                        for (j = 0; j < vals.length; j += 1) {
+
+                            if (vals[j] !== '') {
+
+                                if (indexes[j] === '') {
+
+                                    if (contentVal.replace(/\|/g, ' ').match(vals[j]) !== null) { // contain
+                                        passed.push('pass');
+                                    }
+
+                                } else {
+
+                                    if (contentArr[indexes[j]] === vals[j]) { // equal
+                                        passed.push('pass');
+                                    }
+
+                                }
+
+                            }
+
                         }
 
                     }
 
-                }
-                */
+                    if (activeFilters.length === passed.length) {
+                        events.addClass(this, 'filtered');
 
-            });
+                    } else {
+                        events.removeClass(this, 'filtered');
+                    }
+
+                });
+
+            } else {
+
+                events.removeClass(that, 'data-filtered');
+                events.removeClass(list, 'filtered');
+
+            }
 
             // set filters to storage
             if (testStorage && sessionStorage !== undefined) {
                 sessionStorage.setItem(id + '-vals', vals.toString());
             }
+
+            // load filtered data
+            dataContainer.appendChild(temp);
 
         }
 
@@ -518,8 +572,11 @@ var dataList = {
         // empty variables
         vals = [];
         indexes = [];
+        contentArr = [];
 
         filters = '';
+        list = '';
+        contentVal = '';
 
     }
 
@@ -540,7 +597,7 @@ var dataList = {
     // first loading
     function dataListFnc() {
 
-        events.each('.data-list:not(.passive)', function () {
+        events.each('.data-list:not(.data-list-loaded)', function () {
 
             var id, dataShow;
 
@@ -565,25 +622,33 @@ var dataList = {
 
                 if (showCount[id] === undefined || showCount[id] === 0) {
 
-                    if (!isNaN(Number(dataShow.value))) {
+                    if (isNaN(Number(dataShow.value))) {
+
+                        showCount[id] = 0;
+                        pagingCount[id] = 1;
+
+                        events.addClass(this, 'data-show-all');
+
+                    } else {
                         showCount[id] = dataShow.value;
                     }
 
                 }
 
-                if (dataShow.value !== showCount[id]) {
-                    dataShow.value = showCount[id];
-                }
 
             }
 
             // load values
-            if (loadedVals[id] !== undefined && loadedVals[id].length > 0) {
-                dataFilter(this, true);
+            if (loadedVals[id] !== undefined && loadedVals[id] !== null) {
+
+                if (loadedVals[id].length > 0) {
+                    dataFilter(this, true);
+                }
+
             }
 
             // load data
-            events.addClass(this, 'passive');
+            events.addClass(this, 'data-list-loaded');
             loadData(this, id);
 
         });

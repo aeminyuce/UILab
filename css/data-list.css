@@ -10,8 +10,10 @@
 .data-list .data-content { padding: 10px; border-bottom: solid 1px #ddd; }
 .data-list .data-content:before,.data-list .data-content:after { content: ""; display: table; }
 .data-list .data-content:after { clear: both; }
-.data-list:not(.data-show-all) .data-content:not(.show) { display: none; }
 .data-list .data-content.even { background-color: rgba(0,0,0,.025); }
+
+.data-list:not(.data-show-all) .data-content:not(.show) { display: none; }
+.data-list.data-filtered.data-show-all .data-content:not(.filtered) { display: none; }
 
 html:not(.mobile) .data-list .data-content:not([class*="ui-"]):hover { background-color: rgba(0,0,0,.06); }
 html:not(.mobile) .data-list .data-content:not([class*="ui-"]):nth-child(odd):hover { background-color: rgba(0,0,0,.06); }
