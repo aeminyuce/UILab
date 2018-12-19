@@ -12,4 +12,4 @@
 .img-photo-lg:not(img) { font-size: 24px; line-height: 70px; }
 .img-photo:not(img) { font-size: 16px; line-height: 40px; }
 .img-photo-sm:not(img) { font-size: 14px; line-height: 30px; }
-.img-photo-xs:not(img) { font-size: 12px; line-height: 20px; padding: 5px 2px;}
+.img-photo-xs:not(img) { font-size: 12px; line-height: 20px; padding: 5px 2px; }
