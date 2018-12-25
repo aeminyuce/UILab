@@ -34,7 +34,7 @@ html:not(.ie9) .select select { padding-right: 29px; }
 html:not(.mobile) .select-multi > .icon { display: none; }
 
 .textarea.circle { border-radius: 16px; }
-.textarea.focus-multi textarea { height: 28px; }
+.toggle-textarea:not(.form-focus) textarea { height: 28px; }
 
 .check,.radio { vertical-align: middle; display: inline-block; }
 
