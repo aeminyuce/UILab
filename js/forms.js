@@ -3,12 +3,20 @@
  Forms JS requires Events JS
 */
 
+var forms = {};
+
 (function () {
 
     'use strict';
-    /*globals document, events, navigator */
+    /*globals document, selector, events, navigator */
 
-    function formsFnc() {
+    forms.Start = function () {
+
+        var mobile;
+
+        if (navigator.userAgent.toLowerCase().indexOf('mobile') > -1) { // detecting mobile
+            mobile = true;
+        }
 
         function formFocus(t, type) {
 
@@ -43,7 +51,7 @@
 
             }
 
-            if (navigator.userAgent.toLowerCase().indexOf('mobile') > -1) { // detecting mobile
+            if (mobile) { // detecting mobile
 
                 // mobile keypad event
                 events.on(document, 'forms:keypadopen forms:keypadclose');
@@ -86,9 +94,31 @@
                 formFocus(this, 'remove');
             });
 
-    }
+        // file inputs
+        events.on(document, 'change', '.file input', function () {
+            selector('span', this.parentElement)[0].innerHTML = this.value;
+        });
+
+        // form icons
+        if (mobile) { // fix: buttons not clicked on form focus at mobile devices
+
+            events.on(document,
+
+                'mousedown',
+                '.text-icon > button.icon,.text-icon > input.icon',
+
+                function (e) {
+
+                    e.stopPropagation();
+                    events.trigger(this, 'click');
+
+                });
+
+        }
+
+    };
 
     // Loaders
-    events.onload(formsFnc);
+    events.onload(forms.Start);
 
 }());
