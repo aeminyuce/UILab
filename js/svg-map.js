@@ -10,7 +10,7 @@
 
     var toolbarTimer;
 
-    function svgMapClose() {
+    function toolbarClose() {
 
         var toolbar = selector('.svg-map .toolbar');
 
@@ -96,7 +96,7 @@
             }
 
             if (e.target.toString() === '[object SVGSVGElement]') {
-                svgMapClose();
+                toolbarClose();
 
             } else {
 
@@ -120,7 +120,7 @@
                     if (e.target.toString() !== '[object SVGPathElement]') {
 
                         events.off('body', 'touchstart.SVGMapToolbarClose');
-                        svgMapClose();
+                        toolbarClose();
 
                     }
 
@@ -134,7 +134,7 @@
         if (!mobile) {
 
             events.on(map, 'mousemove', function (e) { showToolbar(e); });
-            events.on(map, 'mouseleave', svgMapClose);
+            events.on(map, 'mouseleave', toolbarClose);
 
             events.on(g, 'click', function () {
                 window.location = this.getAttribute('data-href');
@@ -154,6 +154,6 @@
 
     // Loaders
     events.onload(svgMap);
-    events.on(window, 'scroll', svgMapClose);
+    events.on(window, 'scroll', toolbarClose);
 
 }());
