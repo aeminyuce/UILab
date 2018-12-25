@@ -3,12 +3,14 @@
  Retina Images JS requires Events JS
 */
 
+var retinaImages = {};
+
 (function () {
 
     'use strict';
     /*globals window, document, events, ajax */
 
-    function retinaImagesFnc() {
+    retinaImages.Start = function () {
 
         if (window.devicePixelRatio > 1) {
 
@@ -23,14 +25,14 @@
             });
 
         }
-    }
+    };
 
     // Loaders
-    events.onload(retinaImagesFnc);
+    events.onload(retinaImages.Start);
 
     // ajax callback loader: requires Ajax JS
     events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.ajaxClassNames.indexOf('retina') > -1) { retinaImagesFnc(); }
+        if (ajax.ajaxClassNames.indexOf('retina') > -1) { retinaImages.Start(); }
     });
 
 }());

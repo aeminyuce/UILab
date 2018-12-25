@@ -3,6 +3,8 @@
  Countdown JS requires Events JS
 */
 
+var countdown = {};
+
 (function () {
 
     'use strict';
@@ -10,7 +12,7 @@
 
     var countdownTimer;
 
-    function countdownFnc() {
+    countdown.Start = function () {
 
         var countdown, j, arr, d, h, m, s;
         countdown = selector('.countdown');
@@ -75,14 +77,14 @@
 
         }, 1000);
 
-    }
+    };
 
     // Loaders
-    events.onload(countdownFnc);
+    events.onload(countdown.Start);
 
     // ajax callback loader: requires Ajax JS
     events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.ajaxClassNames.indexOf('countdown') > -1) { countdownFnc(); }
+        if (ajax.ajaxClassNames.indexOf('countdown') > -1) { countdown.Start(); }
     });
 
 }());

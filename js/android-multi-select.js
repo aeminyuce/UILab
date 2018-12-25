@@ -3,6 +3,8 @@
  Android Multi Select JS requires Events JS
 */
 
+var androidMultiselect = {};
+
 (function () {
 
     'use strict';
@@ -10,7 +12,7 @@
 
     var checkMultiselects;
 
-    function androidMultiselectFnc() {
+    androidMultiselect.Start = function () {
 
         var titleText, userLang, multiSelects, i, select, options, selected, html;
 
@@ -71,10 +73,10 @@
 
         });
 
-    }
+    };
 
     // Loaders
-    events.onload(androidMultiselectFnc);
+    events.onload(androidMultiselect.Start);
 
     // ajax callback loader: requires Ajax JS
     events.on(document, 'ajaxCallbacks', function () {

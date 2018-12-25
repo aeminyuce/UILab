@@ -3,6 +3,8 @@
  Textarea Counter JS requires Events JS
 */
 
+var textareaCounter = {};
+
 (function () {
 
     'use strict';
@@ -10,7 +12,7 @@
 
     var loadCounters;
 
-    function counterFnc() {
+    textareaCounter.Start = function () {
 
         function counter(t) {
 
@@ -62,10 +64,10 @@
 
         });
 
-    }
+    };
 
     // Loaders
-    events.onload(counterFnc);
+    events.onload(textareaCounter.Start);
 
     // ajax callback loader: requires Ajax JS
     events.on(document, 'ajaxCallbacks', function () {

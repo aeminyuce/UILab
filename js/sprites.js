@@ -19,7 +19,7 @@ var sprites = {
     'use strict';
     /*globals window, document, selector, events, ajax */
 
-    function spritesFnc() {
+    sprites.Start = function () {
 
         if (sprites.spriteImages !== '' && selector('.sprite').length > 0) {
 
@@ -66,14 +66,14 @@ var sprites = {
 
         }
 
-    }
+    };
 
     // Loaders
-    events.onload(spritesFnc);
+    events.onload(sprites.Start);
 
     // ajax callback loader: requires Ajax JS
     events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.ajaxClassNames.indexOf('sprite') > -1) { spritesFnc(); }
+        if (ajax.ajaxClassNames.indexOf('sprite') > -1) { sprites.Start(); }
     });
 
 }());

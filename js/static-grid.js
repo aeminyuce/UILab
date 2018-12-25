@@ -3,12 +3,14 @@
  Static Grid JS requires Events JS
 */
 
+var staticGrid = {};
+
 (function () {
 
     'use strict';
     /*globals window, document, selector, events, ajax */
 
-    function staticGridFnc() {
+    staticGrid.Start = function () {
 
         var screenW, fnc, o, p, siblings, i;
 
@@ -81,15 +83,15 @@
 
         }
 
-    }
+    };
 
     // Loaders
-    events.onload(staticGridFnc);
-    events.on(window, 'resize', staticGridFnc);
+    events.onload(staticGrid.Start);
+    events.on(window, 'resize', staticGrid.Start);
 
     // ajax callback loader: requires Ajax JS
     events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.ajaxClassNames.indexOf('order-') > -1) { staticGridFnc(); }
+        if (ajax.ajaxClassNames.indexOf('order-') > -1) { staticGrid.Start(); }
     });
 
 }());

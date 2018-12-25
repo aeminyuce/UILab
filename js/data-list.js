@@ -595,7 +595,7 @@ var dataList = {
     });
 
     // first loading
-    function dataListFnc() {
+    dataList.Start = function () {
 
         events.each('.data-list:not(.data-list-loaded)', function () {
 
@@ -653,7 +653,7 @@ var dataList = {
 
         });
 
-    }
+    };
 
     // clear stored variables when page refreshing
     events.on(window, 'beforeunload', function () {
@@ -684,11 +684,11 @@ var dataList = {
     });
 
     // Loaders
-    events.onload(dataListFnc);
+    events.onload(dataList.Start);
 
     // ajax callback loader: requires Ajax JS
     events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.ajaxClassNames.indexOf('data-list') > -1) { dataListFnc(); }
+        if (ajax.ajaxClassNames.indexOf('data-list') > -1) { dataList.Start(); }
     });
 
 }());

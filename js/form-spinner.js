@@ -3,6 +3,8 @@
  Form Spinner JS requires Events JS
 */
 
+var spinnerForm = {};
+
 (function () {
 
     'use strict';
@@ -10,7 +12,7 @@
 
     var checkSpinnerForms;
 
-    function spinnerFormFnc() {
+    spinnerForm.Start = function () {
 
         // Events
         events.on(document, 'click', '.spinner-up,.spinner-down', function () {
@@ -47,10 +49,10 @@
         };
         checkSpinnerForms();
 
-    }
+    };
 
     // Loaders
-    events.onload(spinnerFormFnc);
+    events.onload(spinnerForm.Start);
 
     // ajax callback loader: requires Ajax JS
     events.on(document, 'ajaxCallbacks', function () {

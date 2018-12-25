@@ -3,6 +3,8 @@
  IE9 Placeholders JS requires Events JS
 */
 
+var ie9Placeholders = {};
+
 (function () {
 
     'use strict';
@@ -10,7 +12,7 @@
 
     var checkPlaceholders;
 
-    function ie9PlaceholdersFnc() {
+    ie9Placeholders.Start = function () {
 
         if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
 
@@ -45,10 +47,10 @@
 
         }
 
-    }
+    };
 
     // Loaders
-    events.onload(ie9PlaceholdersFnc);
+    events.onload(ie9Placeholders.Start);
 
     // ajax callback loader: requires Ajax JS
     events.on(document, 'ajaxCallbacks', function () {

@@ -3,12 +3,14 @@
  SVG Donut Chart JS requires Events JS
 */
 
+var donutChart = {};
+
 (function () {
 
     'use strict';
     /*globals document, selector, events, ajax */
 
-    function donutChart() {
+    donutChart.Start = function () {
 
         var chart, circles, percent, angle, arrPercent, arrAngle;
 
@@ -52,14 +54,14 @@
 
         }
 
-    }
+    };
 
     // Loaders
-    events.onload(donutChart);
+    events.onload(donutChart.Start);
 
     // ajax callback loader: requires Ajax JS
     events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.ajaxClassNames.indexOf('donut-chart') > -1) { donutChart(); }
+        if (ajax.ajaxClassNames.indexOf('donut-chart') > -1) { donutChart.Start(); }
     });
 
 }());
