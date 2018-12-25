@@ -1,6 +1,5 @@
 /* transitions */
 [class*="ease-"],[class*="ease-1st-"] > *,[class*="ease-2nd-"] > * > * { transition-duration: .15s; transition-timing-function: ease-out; }
-[class*="ease-"][class*="ease-1st-"],[class*="ease-"][class*="ease-2nd-"] { transition-property: none; }
 
 .no-transitions,.no-transitions[class*="ease-1st-"] > *,.no-transitions[class*="ease-2nd-"] > * > *,
 .no-transitions:before,.no-transitions[class*="ease-1st-"] > *:before,.no-transitions[class*="ease-2nd-"] > * > *:before,
