@@ -599,7 +599,7 @@ var dataList = {
 
         events.each('.data-list:not(.data-list-loaded)', function () {
 
-            var id, dataShow;
+            var id, dataShow, index, i;
 
             // define id
             startListID += 1;
@@ -618,23 +618,39 @@ var dataList = {
 
             // calculate data-show
             dataShow = selector('select.data-show', this)[0];
-            if (dataShow !== undefined) {
+            if (showCount[id] === 0) {
 
-                if (showCount[id] === undefined || showCount[id] === 0) {
+                if (dataShow !== undefined) {
 
-                    if (isNaN(Number(dataShow.value))) {
+                    if (showCount[id] === undefined || showCount[id] === 0) {
 
-                        showCount[id] = 0;
-                        pagingCount[id] = 1;
+                        if (isNaN(Number(dataShow.value))) {
 
-                        events.addClass(this, 'data-show-all');
+                            showCount[id] = 0;
+                            pagingCount[id] = 1;
 
-                    } else {
-                        showCount[id] = dataShow.value;
+                            events.addClass(this, 'data-show-all');
+
+                        } else {
+                            showCount[id] = dataShow.value;
+                        }
+
                     }
 
                 }
 
+            } else {
+
+                for (i = 0; i < dataShow.options.length; i += 1) {
+
+                    if (Number(customLowerCase(dataShow.options[i].innerText)) === showCount[id]) {
+
+                        index = Array.prototype.slice.call(dataShow.options).indexOf(dataShow.options[i]);
+                        dataShow.selectedIndex = index;
+
+                    }
+
+                }
 
             }
 
