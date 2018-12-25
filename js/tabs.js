@@ -3,12 +3,14 @@
  Tabs JS requires Events JS
 */
 
+var tabs = {};
+
 (function () {
 
     'use strict';
     /*globals document, selector, events */
 
-    function tabsFnc() {
+    tabs.Start = function () {
 
         // Events
         events.on(document, 'click', '.btn-tabs .btn-tab', function () {
@@ -41,10 +43,9 @@
 
         });
 
-    }
+    };
 
     // Loaders
-    events.onload(tabsFnc);
-
+    events.onload(tabs.Start);
 
 }());

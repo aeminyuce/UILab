@@ -3,6 +3,8 @@
  SVG Map requires Events JS
 */
 
+var svgMap = {};
+
 (function () {
 
     'use strict';
@@ -10,7 +12,7 @@
 
     var toolbarTimer;
 
-    function toolbarClose() {
+    function toolbarCloseFnc() {
 
         var toolbar = selector('.svg-map .toolbar');
 
@@ -23,7 +25,7 @@
 
     }
 
-    function svgMap() {
+    svgMap.Start = function () {
 
         var map, arr, g, p, i, data, opacity, toolbar, toolbarContent, mobile, current;
         mobile = false;
@@ -96,7 +98,7 @@
             }
 
             if (e.target.toString() === '[object SVGSVGElement]') {
-                toolbarClose();
+                toolbarCloseFnc();
 
             } else {
 
@@ -115,12 +117,12 @@
             if (mobile) {
 
                 // Events
-                events.on('body', 'touchstart.SVGMapToolbarClose', function (e) {
+                events.on('body', 'touchstart.SVGMaptoolbarCloseFnc', function (e) {
 
                     if (e.target.toString() !== '[object SVGPathElement]') {
 
-                        events.off('body', 'touchstart.SVGMapToolbarClose');
-                        toolbarClose();
+                        events.off('body', 'touchstart.SVGMaptoolbarCloseFnc');
+                        toolbarCloseFnc();
 
                     }
 
@@ -134,7 +136,7 @@
         if (!mobile) {
 
             events.on(map, 'mousemove', function (e) { showToolbar(e); });
-            events.on(map, 'mouseleave', toolbarClose);
+            events.on(map, 'mouseleave', toolbarCloseFnc);
 
             events.on(g, 'click', function () {
                 window.location = this.getAttribute('data-href');
@@ -150,10 +152,10 @@
 
         }
 
-    }
+    };
 
     // Loaders
-    events.onload(svgMap);
-    events.on(window, 'scroll', toolbarClose);
+    events.onload(svgMap.Start);
+    events.on(window, 'scroll', toolbarCloseFnc);
 
 }());

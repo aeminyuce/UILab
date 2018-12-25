@@ -3,12 +3,14 @@
  Popup Box JS requires Events JS
 */
 
+var popupBox = {};
+
 (function () {
 
     'use strict';
     /*globals window, document, selector, events, setTimeout */
 
-    function popupBoxFnc() {
+    popupBox.Start = function () {
 
         var panel, closePanel, setCookie, getCookie;
         panel = selector('.popup-box');
@@ -84,9 +86,9 @@
 
         }
 
-    }
+    };
 
     // Loaders
-    events.onload(popupBoxFnc);
+    events.onload(popupBox.Start);
 
 }());

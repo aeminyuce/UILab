@@ -65,7 +65,7 @@ var topButton = {
 
     }
 
-    function topButtonFnc() {
+    topButton.Start = function () {
 
         var titleText, userLang, html;
 
@@ -95,10 +95,10 @@ var topButton = {
 
         });
 
-    }
+    };
 
     // Loaders
-    events.onload(topButtonFnc);
+    events.onload(topButton.Start);
     events.on(window, 'resize', togglerFnc);
     events.on(window, 'scroll', togglerFnc);
 

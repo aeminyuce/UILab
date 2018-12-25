@@ -3,6 +3,8 @@
  Dropdown JS requires Events JS
 */
 
+var dropdown = {};
+
 (function () {
 
     'use strict';
@@ -12,7 +14,7 @@
         dropdownOpenTimer,
         dropdownCloseTimer;
 
-    function dropdownClose() {
+    function dropdownCloseFnc() {
 
         var t, list;
 
@@ -37,7 +39,7 @@
 
     }
 
-    function dropdownFnc() {
+    dropdown.Start = function () {
 
         function dropdownOpen(e, t) {
 
@@ -110,7 +112,7 @@
                         events.on(document, 'click.dropdownClose', function (ev) {
 
                             if (ev.button !== 2) {
-                                dropdownClose();
+                                dropdownCloseFnc();
                                 events.off(document, 'click.dropdownClose');
                             }
 
@@ -172,13 +174,13 @@
                 clearTimeout(dropdownCloseTimer);
                 clearTimeout(dropdownOpenTimer);
 
-                dropdownCloseTimer = setTimeout(function () { dropdownClose(); }, 300);
+                dropdownCloseTimer = setTimeout(function () { dropdownCloseFnc(); }, 300);
 
             });
 
-    }
+    };
 
     // Loaders
-    events.onload(dropdownFnc);
+    events.onload(dropdown.Start);
 
 }());

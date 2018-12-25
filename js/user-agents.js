@@ -21,7 +21,7 @@ var useragents = {
     'use strict';
     /*globals document, navigator, events */
 
-    function useragentsFnc() {
+    useragents.Start = function () {
 
         var ua, isMSIE, userLang;
 
@@ -113,9 +113,9 @@ var useragents = {
 
         } else { events.removeClass(document, 'ios'); }
 
-    }
+    };
 
     // Loaders
-    events.onload(useragentsFnc);
+    events.onload(useragents.Start);
 
 }());

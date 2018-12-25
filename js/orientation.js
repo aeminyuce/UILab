@@ -3,13 +3,15 @@
  Orientation JS requires Events JS
 */
 
+var orientation = {};
+
 (function () {
 
     'use strict';
     /*globals window, document, events, navigator */
 
     // Events
-    function orientationFnc() {
+    orientation.Start = function () {
 
         if (navigator.userAgent.toLowerCase().indexOf('mobile') > -1) {
 
@@ -35,10 +37,10 @@
 
         }
 
-    }
+    };
 
     // Loaders
-    events.onload(orientationFnc);
-    events.on(window, 'resize', orientationFnc);
+    events.onload(orientation.Start);
+    events.on(window, 'resize', orientation.Start);
 
 }());

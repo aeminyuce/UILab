@@ -3,12 +3,14 @@
  Toggle Password JS requires Events JS
 */
 
+var togglePassword = {};
+
 (function () {
 
     'use strict';
     /*globals document, selector, events */
 
-    function togglePasswordFnc() {
+    togglePassword.Start = function () {
 
         // Events
         events.on(document, 'click touchend', '.toggle-password', function () {
@@ -33,9 +35,9 @@
 
         });
 
-    }
+    };
 
     // Loaders
-    events.onload(togglePasswordFnc);
+    events.onload(togglePassword.Start);
 
 }());

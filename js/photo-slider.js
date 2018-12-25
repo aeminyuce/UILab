@@ -3,6 +3,8 @@
  Photo Slider JS requires Events JS
 */
 
+var photoSlider = {};
+
 (function () {
 
     'use strict';
@@ -87,7 +89,7 @@
         });
 
     }
-    function photoSliderFnc() {
+    photoSlider.Start = function () {
 
         photoSliderLoader();
 
@@ -157,10 +159,10 @@
 
             });
 
-    }
+    };
 
     // Loaders
-    events.onload(photoSliderFnc);
+    events.onload(photoSlider.Start);
     events.on(window, 'resize', photoSliderLoader);
     events.on(window, 'scroll', photoSliderLoader);
 

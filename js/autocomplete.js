@@ -14,7 +14,7 @@ var autocomplete = {
     'use strict';
     /*globals window, document, selector, events, ajax, clearTimeout, setTimeout */
 
-    function autocompleteFnc() {
+    autocomplete.Start = function () {
 
         var customLowerCase, pullValues, formEvents, autocompleteRequests;
 
@@ -449,9 +449,9 @@ var autocomplete = {
 
         });
 
-    }
+    };
 
     // Loaders
-    events.onload(autocompleteFnc);
+    events.onload(autocomplete.Start);
 
 }());

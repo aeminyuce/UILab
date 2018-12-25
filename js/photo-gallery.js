@@ -23,7 +23,7 @@ var photoGallery = {
         pageTouchmove,
         pageTouchmoveTimer;
 
-    function photoGalleryFnc() {
+    photoGallery.Start = function () {
 
         var ua, mobile, gallery, galleryCounter, imgCounter, pageYPos, checkImages, imgWidth, imgHeight, loadedImages = [], loadedTitles = [];
 
@@ -647,9 +647,9 @@ var photoGallery = {
 
         });
 
-    }
+    };
 
     // Loaders
-    events.onload(photoGalleryFnc);
+    events.onload(photoGallery.Start);
 
 }());

@@ -3,12 +3,14 @@
  Sticky Header JS requires Events JS
 */
 
+var stickyHeader = {};
+
 (function () {
 
     'use strict';
 
     /*globals window, events, selector */
-    function stickyHeader() {
+    stickyHeader.Start = function () {
 
         var header, stickyStatic;
         header = selector('header');
@@ -35,10 +37,10 @@
 
         }
 
-    }
+    };
 
     // Loaders
-    events.onload(stickyHeader);
-    events.on(window, 'scroll', stickyHeader);
+    events.onload(stickyHeader.Start);
+    events.on(window, 'scroll', stickyHeader.Start);
 
 }());

@@ -3,12 +3,14 @@
  Product Gallery JS requires Events JS
 */
 
+var productGallery = {};
+
 (function () {
 
     'use strict';
     /*globals selector, events, Image */
 
-    function productGalleryFnc() {
+    productGallery.Start = function () {
 
         // Events
         events.on('.product-gallery .thumbs .img', 'click', function () {
@@ -41,9 +43,9 @@
 
         });
 
-    }
+    };
 
     // Loaders
-    events.onload(productGalleryFnc);
+    events.onload(productGallery.Start);
 
 }());

@@ -3,6 +3,8 @@
  Carousel JS requires Events JS
 */
 
+var carousel = {};
+
 (function () {
 
     'use strict';
@@ -180,7 +182,7 @@
 
     }
 
-    function carouselFnc() {
+    carousel.Start = function () {
 
         var carousels, carouselNav;
         carousels = selector('.carousel');
@@ -524,10 +526,10 @@
 
         }
 
-    }
+    };
 
     // Loaders
-    events.onload(carouselFnc);
+    events.onload(carousel.Start);
     events.on(window, 'resize', carouselResizerFnc);
 
 }());

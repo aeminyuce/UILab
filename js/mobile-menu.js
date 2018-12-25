@@ -3,6 +3,8 @@
  Mobile Menu JS requires Events JS
 */
 
+var mobileMenu = {};
+
 (function () {
 
     'use strict';
@@ -10,7 +12,7 @@
 
     var storePageYPosition;
 
-    function mobileMenuFnc() {
+    mobileMenu.Start = function () {
 
         function closeMobileMenu(panel) {
 
@@ -74,9 +76,9 @@
 
         });
 
-    }
+    };
 
     // Loaders
-    events.onload(mobileMenuFnc);
+    events.onload(mobileMenu.Start);
 
 }());

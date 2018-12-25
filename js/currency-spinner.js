@@ -14,7 +14,7 @@ var currencySpinner = {
 
     var cacheCurrencySpinner;
 
-    function currencySpinnerFnc() {
+    currencySpinner.Start = function () {
 
         function convert(s) {
 
@@ -225,9 +225,9 @@ var currencySpinner = {
 
             });
 
-    }
+    };
 
     // Loaders
-    events.onload(currencySpinnerFnc);
+    events.onload(currencySpinner.Start);
 
 }());

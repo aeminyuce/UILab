@@ -3,12 +3,14 @@
  Number JS requires Events JS
 */
 
+var number = {};
+
 (function () {
 
     'use strict';
     /*globals document, events, setTimeout */
 
-    function numberFnc() {
+    number.Start = function () {
 
         // Events
         events.on(document, 'keypress', '.text > .number', function (e) {
@@ -74,9 +76,9 @@
 
         });
 
-    }
+    };
 
     // Loaders
-    events.onload(numberFnc);
+    events.onload(number.Start);
 
 }());

@@ -22,7 +22,7 @@ var transitions = {
 
     var pauseTransitions;
 
-    function transitionsFnc() {
+    transitions.Start = function () {
 
         if (useragents.ie9) { transitions.effects = false; }
 
@@ -50,7 +50,7 @@ var transitions = {
 
         } else { events.addClass(document, 'no-transitions-all animate-stop-all'); }
 
-    }
+    };
 
     function pauseTransitionsFnc(eName) {
 
@@ -77,7 +77,7 @@ var transitions = {
     }
 
     // Loaders
-    events.onload(transitionsFnc);
+    events.onload(transitions.Start);
 
     events.on(window, 'resize', function () {
         pauseTransitionsFnc('resize');

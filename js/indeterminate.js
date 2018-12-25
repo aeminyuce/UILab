@@ -3,12 +3,14 @@
  Indeterminate JS requires Events JS
 */
 
+var indeterminate = {};
+
 (function () {
 
     'use strict';
     /*globals document, events */
 
-    function indeterminateFnc() {
+    indeterminate.Start = function () {
 
         // Events
         events.on(document, 'click', 'input[type="checkbox"].indeterminate', function () {
@@ -22,9 +24,9 @@
 
         });
 
-    }
+    };
 
     /*!loader */
-    events.onload(indeterminateFnc);
+    events.onload(indeterminate.Start);
 
 }());

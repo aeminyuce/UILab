@@ -3,6 +3,8 @@
  Swatches JS requires Events JS
 */
 
+var swatches = {};
+
 (function () {
 
     'use strict';
@@ -10,7 +12,7 @@
 
     var mobile = false;
 
-    function swatchesFnc() {
+    swatches.Start = function () {
 
         if (navigator.userAgent.toLowerCase().indexOf('mobile') > -1) { // detecting mobile
             mobile = true;
@@ -78,9 +80,9 @@
 
         }
 
-    }
+    };
 
     // Loaders
-    events.onload(swatchesFnc);
+    events.onload(swatches.Start);
 
 }());

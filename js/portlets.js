@@ -3,12 +3,14 @@
  Portlets JS requires Events JS
 */
 
+var portlets = {};
+
 (function () {
 
     'use strict';
     /*globals document, events, setTimeout */
 
-    function portletsFnc() {
+    portlets.Start = function () {
 
         // Events
         events.on(document, 'click', '.portlet-close', function () {
@@ -22,9 +24,9 @@
 
         });
 
-    }
+    };
 
     // Loaders
-    events.onload(portletsFnc);
+    events.onload(portlets.Start);
 
 }());

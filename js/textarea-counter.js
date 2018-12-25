@@ -42,7 +42,7 @@ var textareaCounter = {};
 
         loadCounters = function () {
 
-            events.each('.textarea[data-counter]:not(.change)', function () {
+            events.each('.textarea[data-counter]:not(.toggle-textarea):not(.change)', function () {
 
                 var textarea = selector('textarea', this)[0];
                 counter(textarea);
