@@ -4,7 +4,7 @@
 .ui-dark,.ui-dark .icon:not([class*="ui-"]),.ui-dark a:not([class*="ui-"]),.ui-dark button:not([class*="ui-"]) { color: #fff; }
 .ui-x-dark,.ui-x-dark .icon:not([class*="ui-"]),.ui-x-dark a:not([class*="ui-"]),.ui-x-dark button:not([class*="ui-"]) { color: #fff; }
 
-.x-light-ui,.x-light-ui v { color: rgba(255,255,255,.65); }
+.x-light-ui,.x-light-ui a:not([class*="ui-"]) { color: rgba(255,255,255,.65); }
 .light-ui,.light-ui a:not([class*="ui-"]) { color: rgba(255,255,255,.45); }
 .dark-ui,.dark-ui a:not([class*="ui-"]) { color: rgba(0,0,0,.45); }
 .x-dark-ui,.x-dark-ui a:not([class*="ui-"]) { color: rgba(0,0,0,.65); }
