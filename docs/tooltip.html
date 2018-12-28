@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UI Lab, Tooltip</title>
+    <meta name="keywords" content="uilab, responsive, design system, css, javascript, tooltip">
+    <meta name="description" content="CSS & JavaScript powered responsive design system." />
+    <meta name="author" content="Ahmet Emin Yüce"/>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
+
+    <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/alignments.css" />
+    <link rel="stylesheet" href="../css/buttons.css" />
+    <link rel="stylesheet" href="../css/borders.css" />
+    <link rel="stylesheet" href="../css/custom-forms.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <link rel="stylesheet" href="../css/form-icons.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/helpers.css" />
+    <link rel="stylesheet" href="../css/icons.css" />
+    <link rel="stylesheet" href="../css/margins.css" />
+    <link rel="stylesheet" href="../css/paddings.css" />
+    <link rel="stylesheet" href="../css/pagination.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/sticky-header.css" />
+    <link rel="stylesheet" href="../css/transitions.css" />
+    <link rel="stylesheet" href="../css/typography.css" />
+    <link rel="stylesheet" href="../css/swatches.css" />
+    <link rel="stylesheet" href="../css/top-button.css" />
+
+    <link rel="stylesheet" href="../css/tooltip.css" />
+
+    <!-- Javascript Tools -->
+    <script src="../js/selector.js"></script>
+    <script src="../js/events.js"></script>
+    <script src="../js/forms.js"></script>
+    <script src="../js/sticky-header.js"></script>
+    <script src="../js/swatches.js"></script>
+    <script src="../js/top-button.js"></script>
+    <script src="../js/transitions.js"></script>
+    <script src="../js/user-agents.js"></script>
+
+    <script src="../js/tooltip.js"></script>
+
+    <!-- font icons CSS -->
+    <link rel="stylesheet" href="../../UIIcons/font-icons/outline/font-icons.css" />
+
+</head>
+
+<body>
+
+    <header class="container theme-default ui-dark">
+        <div class="row theme-default2 ui-border top-bordered dual-bordered">
+            <div class="col-12">
+                <a href="examples.html" class="btn btn-lg btn-square circle ease-bg margin-10-r"><i class="icon icon-md no-opacity icon-long-arrow-left"></i></a>
+                <h1 class="x-large inline-block">UI Lab, Tooltip</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- documentation examples -->
+    <main class="container no-gutter">
+        <div class="fixed">
+            <div class="row row-equal-height padding-30-v">
+
+                <div class="col-12">
+                    <div class="ease-1st-bg theme-default">
+                        <button class="btn margin-5-b rounded ui-dark" data-tooltip="t" title="Tooltip <b>Top</b>">Tooltip <b>Top</b></button>
+                        <button class="btn margin-5-b rounded ui-dark" data-tooltip="b" title="Tooltip <u>Bottom</u>">Tooltip <b>Bottom</b></button>
+                        <button class="btn margin-5-b rounded ui-dark" data-tooltip="r" title="Tooltip <i>Right</i>">Tooltip <b>Right</b></button>
+                        <button class="btn margin-5-b rounded ui-dark" data-tooltip="l" title="Tooltip <em>Left</em>">Tooltip <b>Left</b></button>
+                        <span class="sp30"></span>
+                        <button class="btn margin-5-b rounded ui-dark" data-tooltip="tr" title="Tooltip <b>Top Right</b>">Tooltip <b>Top Right</b></button>
+                        <button class="btn margin-5-b rounded ui-dark" data-tooltip="tl" title="Tooltip <u>Top Left</u>">Tooltip <b>Top Left</b></button>
+                        <button class="btn margin-5-b rounded ui-dark" data-tooltip="br" title="Tooltip <i>Bottom Right</i>">Tooltip <b>Bottom Right</b></button>
+                        <button class="btn margin-5-b rounded ui-dark" data-tooltip="bl" title="Tooltip <em>Bottom Left</em>">Tooltip <b>Bottom Left</b></button>
+                    </div>
+
+                    <!-- html tooltip
+                    <div class="ease-1st-opacity">
+                        <span data-html="tooltip-example-01" data-open="click" class="tooltip tooltip-top icon icon-sm icon-alert"></span>
+                        <span data-html="tooltip-example-02" class="tooltip tooltip-bottom icon icon-sm icon-question"></span>
+                    </div>
+
+                    <span id="tooltip-example-01" class="hidden">
+                        <i class="icon icon-sm icon-alert"></i>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum sollicitudin ipsum ut ultrices. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum nec dignissim risus. Vivamus pellentesque sem felis, sit amet sodales nulla varius ac. Maecenas laoreet consectetur metus, id pretium tellus molestie non. Etiam vel feugiat nibh. Nullam pulvinar venenatis egestas. In vestibulum in felis in venenatis. Sed consequat quam sed interdum egestas. Donec ultrices leo mattis dolor finibus ullamcorper. In feugiat gravida commodo. Cras ultrices nunc felis, vitae tristique risus ornare et.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum sollicitudin ipsum ut ultrices. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum nec dignissim risus. Vivamus pellentesque sem felis, sit amet sodales nulla varius ac. Maecenas laoreet consectetur metus, id pretium tellus molestie non. Etiam vel feugiat nibh. Nullam pulvinar venenatis egestas. In vestibulum in felis in venenatis. Sed consequat quam sed interdum egestas. Donec ultrices leo mattis dolor finibus ullamcorper. In feugiat gravida commodo. Cras ultrices nunc felis, vitae tristique risus ornare et.
+                    </span>
+
+                    <span id="tooltip-example-02" class="hidden">
+                        <i class="icon icon-sm icon-alert"></i>
+                        Your html message here!
+                    </span>
+                    -->
+
+                    <!-- form example
+                    <div class="text text-icon rounded dual-bordered">
+                        <span title="Your message here!" class="tooltip tooltip-top-left icon icon-sm icon-question ease-opacity" data-defaultTheme="theme-black ui-dark"></span>
+                        <input type="text" placeholder="Placeholder Text">
+                    </div>
+
+                    <span class="sp5"></span>
+
+                    <div class="text text-icon text-icon-left rounded dual-bordered">
+                        <span title="Your message here!" class="tooltip tooltip-bottom-right icon icon-sm icon-question ease-opacity" data-defaultTheme="theme-black ui-dark"></span>
+                        <input type="text" placeholder="Placeholder Text">
+                    </div>
+                -->
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128387411-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-128387411-1');
+    </script>
+
+</body>
+</html>
