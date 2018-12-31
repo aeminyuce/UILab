@@ -15,14 +15,17 @@
     <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
 
     <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/autocomplete.css" />
     <link rel="stylesheet" href="../css/alignments.css" />
     <link rel="stylesheet" href="../css/buttons.css" />
     <link rel="stylesheet" href="../css/borders.css" />
     <link rel="stylesheet" href="../css/custom-forms.css" />
     <link rel="stylesheet" href="../css/grid.css" />
     <link rel="stylesheet" href="../css/forms.css" />
+    <link rel="stylesheet" href="../css/form-icons.css" />
     <link rel="stylesheet" href="../css/helpers.css" />
     <link rel="stylesheet" href="../css/icons.css" />
+    <link rel="stylesheet" href="../css/ie9-placeholders.css" />
     <link rel="stylesheet" href="../css/listings.css" />
     <link rel="stylesheet" href="../css/margins.css" />
     <link rel="stylesheet" href="../css/mobile-menu.css" />
@@ -45,7 +48,9 @@
     <script src="../js/selector.js"></script>
     <script src="../js/events.js"></script>
 
+    <script src="../js/autocomplete.js"></script>
     <script src="../js/forms.js"></script>
+    <script src="../js/ie9-placeholders.js"></script>
     <script src="../js/mobile-menu.js"></script>
     <script src="../js/static-grid.js"></script>
     <script src="../js/sticky-header.js"></script>
@@ -87,8 +92,9 @@
                     <form action="#">
 
                         <!-- sidebar: start -->
-                        <div class="text dual-bordered rounded ease-form">
-                            <input type="text" placeholder="Search by keyword.">
+                        <div data-id="watches" data-val="name" class="autocomplete text text-icon text-icon-left dual-bordered rounded ease-form">
+                            <i class="icon text-icon-left icon-sm icon-search ease-opacity"></i>
+                            <input type="text" placeholder="Search by keyword." autocomplete="off">
                         </div>
 
                         <h4 class="margin-30-t">Categories</h4>
@@ -551,6 +557,32 @@
                         </div>
                     </div>
                     <!-- pagination: end -->
+
+                    <pre id="watches" class="hidden">
+                        <code>
+                            [
+                              {"name": "AX Armani Exchange"},
+                              {"name": "Baume Et Mercier"},
+                              {"name": "Bertucci"},
+                              {"name": "Seiko"},
+                              {"name": "Mavado"},
+                              {"name": "Nylon"},
+                              {"name": "Silicone"},
+                              {"name": "Ceramic"},
+                              {"name": "Gold"},
+                              {"name": "Fabric"},
+                              {"name": "Analog"},
+                              {"name": "Chronograph"},
+                              {"name": "Digital"},
+                              {"name": "Band Strap"},
+                              {"name": "Bracelet Strap"},
+                              {"name": "Casual"},
+                              {"name": "Luxury"},
+                              {"name": "Smart"},
+                              {"name": "Sport"}
+                            ]
+                        </code>
+                    </pre>
 
                 </div>
             </div>
