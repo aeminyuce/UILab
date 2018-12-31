@@ -103,7 +103,7 @@ var dropdown = {};
 
                     }
 
-                }, 0); // don not remove zero timer
+                }, 0); // do not remove zero timer
 
                 if (e.type === 'click') {
 
@@ -118,7 +118,7 @@ var dropdown = {};
 
                         });
 
-                    }, 0); // don not remove zero timer
+                    }, 0); // do not remove zero timer
 
                 }
 
