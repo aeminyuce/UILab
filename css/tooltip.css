@@ -1,7 +1,7 @@
 /* tooltip*/
 .ease-tooltip { transition-property: top, left, opacity; }
 
-.tooltip { min-width: 36px; max-width: 680px; display: inline-block; position: absolute; z-index: 99; }
+.tooltip { min-width: 36px; max-width: 680px; position: absolute; z-index: 99; }
 .tooltip:not([class*="ui-"]) { color: #fff; background-color: #181818; }
 .tooltip:not(.open) { display: none; }
 .tooltip:not(.open-ease) { opacity: 0; }

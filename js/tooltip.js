@@ -20,7 +20,7 @@ var tooltip = {
         removeTimer2x,
         pageTouchmove,
         pageTouchmoveTimer,
-        touchControl
+        touchControl;
 
     function removeFnc() {
 
@@ -76,7 +76,7 @@ var tooltip = {
                     '</span>' +
                 '</div>');
 
-            selector('body')[0].insertAdjacentHTML('beforeend', html);
+            selector('body')[0].insertAdjacentHTML('afterbegin', html);
             win = selector('.tooltip');
 
         }
