@@ -16,9 +16,8 @@ var autocomplete = {
 
     autocomplete.Start = function () {
 
-        var customLowerCase, pullValues, formEvents, autocompleteRequests;
+        var customLowerCase, formEvents, autocompleteRequests;
 
-        pullValues = [];
         autocompleteRequests = [];
 
         // custom lowercase
@@ -45,186 +44,189 @@ var autocomplete = {
 
         }());
 
-        // pulling values
-        function pullValuesFnc(key, value) {
-
-            var forms, type, getKey, getValue, i, j;
-
-            if (pullValues.length !== 'undefined') {
-
-                for (i = 0; i < pullValues.length; i += 1) {
-
-                    if (pullValues[i][key] === value) {
-
-                        getKey = Object.keys(pullValues[i]); // returns array
-                        getKey.splice(getKey.indexOf(key), 1);
-
-                        for (j = 0; j < getKey.length; j += 1) {
-
-                            getValue = pullValues[i][getKey[j]];
-                            forms = selector('[data-pull="' + getKey[j] + '"]');
-
-                            if (forms.length > 0) {
-
-                                type = forms[0].getAttribute('type');
-
-                                if (type === 'checkbox' || type === 'radio') {
-                                    forms[0].checked = getValue;
-
-                                } else {
-                                    forms[0].value = getValue;
-                                }
-
-                            }
-
-                        }
-
-                    }
-
-                }
-
-            }
-
-        }
-
         // Events
         formEvents = selector('.text.autocomplete > [type="text"]');
 
         events.on(document, 'keyup', formEvents, function (e) {
 
-            var i, j, k, n, p, list, listItems, navSelected, navIndex, v, key, createDropdown, timerShowLines, offset, tHeight, dHeight, m, txt, getVal, src, dataId, dataClass, send, input, type;
+            var i, j, k, n, p, list, listItems, navSelected, navIndex, v, key, checkData, createDropdown, timerShowLines, offset, tHeight, dHeight, m, txt, getVal, id, src;
 
             p = this.parentNode;
             list = selector('ul', p);
 
-            if (p.getAttribute('data-src') !== null) {
+            if (e.keyCode === 38 || e.keyCode === 40) {
 
-                if (e.keyCode === 38 || e.keyCode === 40) {
+                // navigate the list
+                listItems = selector('li', list[0]);
+                if (listItems.length > 0) {
 
-                    // navigate the list
-                    listItems = selector('li', list[0]);
-                    if (listItems.length > 0) {
+                    navSelected = selector('li.selected', list[0]);
+                    if (navSelected.length > 0) {
 
-                        navSelected = selector('li.selected', list[0]);
-                        if (navSelected.length > 0) {
+                        navIndex = Array.prototype.slice.call(listItems).indexOf(navSelected[0]);
 
-                            navIndex = Array.prototype.slice.call(listItems).indexOf(navSelected[0]);
+                        if (e.keyCode === 40) { // arrow down
 
-                            if (e.keyCode === 40) { // arrow down
+                            navIndex += 1;
+                            if (navIndex >= listItems.length) { navIndex = 0; }
 
-                                navIndex += 1;
-                                if (navIndex >= listItems.length) { navIndex = 0; }
+                        } else if (e.keyCode === 38) { // arrow up
 
-                            } else if (e.keyCode === 38) { // arrow up
+                            navIndex -= 1;
+                            if (navIndex < 0) { navIndex = 0; }
 
-                                navIndex -= 1;
-                                if (navIndex < 0) { navIndex = 0; }
-
-                            }
-
-                        } else if (e.keyCode === 40) { // arrow down
-                            navIndex = 0;
                         }
 
-                        events.removeClass(navSelected, 'selected');
-                        events.addClass(listItems[navIndex], 'selected');
+                    } else if (e.keyCode === 40) { // arrow down
+                        navIndex = 0;
 
-                        this.value = listItems[navIndex].textContent;
+                    } else { return; }
 
-                    }
+                    events.removeClass(navSelected, 'selected');
+                    events.addClass(listItems[navIndex], 'selected');
 
-                } else if (e.keyCode === 13 || e.keyCode === 27) {
+                    this.value = listItems[navIndex].textContent;
 
-                    if (list.length >= 1) {
+                }
 
-                        events.removeClass(p, 'open');
-                        list[0].innerHTML = '';
-                    }
+            } else if (e.keyCode === 13 || e.keyCode === 27) {
 
-                } else if (e.keyCode !== 16 && e.keyCode !== 17 && e.keyCode !== 18) {
+                if (list.length >= 1) {
 
-                    v = this.value;
+                    events.removeClass(p, 'open');
+                    list[0].innerHTML = '';
+                }
 
-                    v = customLowerCase(v);
-                    v = v.replace(/\s+$/g, ''); // remove the last space
+            } else if (e.keyCode !== 16 && e.keyCode !== 17 && e.keyCode !== 18) {
 
-                    if (v !== '') {
+                v = this.value;
 
-                        src = p.getAttribute('data-src');
-                        getVal = p.getAttribute('data-val');
+                v = customLowerCase(v);
+                v = v.replace(/\s+$/g, ''); // remove the last space
 
-                        if (src !== null && src !== '' && getVal !== null && getVal !== '') {
+                if (v !== '') {
 
-                            // sending source name with value
-                            if (this.name !== '') {
-                                send = this.name + '=' + v;
+                    checkData = function (response) {
 
-                            } else {
-                                send = 'value=' + v;
-                            }
+                        response = JSON.parse(response);
+                        if (response.length !== 'undefined') {
 
-                            // sending target id with value
-                            dataId = p.getAttribute('data-id');
-                            if (dataId !== null && dataId !== '') {
+                            createDropdown = function () {
 
-                                input = selector('#' + dataId)[0];
-                                type = input.getAttribute('type');
+                                // create dropdown
+                                clearTimeout(timerShowLines);
+                                timerShowLines = setTimeout(function () {
 
-                                if (type === 'checkbox' || type === 'radio') {
+                                    events.addClass(list, autocomplete.classes);
 
-                                    if (input.id !== '') {
-                                        send += '&' + dataId + '=' + input.checked;
+                                    offset = p.getBoundingClientRect();
 
-                                    } else {
-                                        send += '&' + input.name + '=' + input.checked;
+                                    tHeight = p.offsetHeight;
+                                    dHeight = list[0].offsetHeight;
+
+                                    if (offset.top + parseInt(tHeight + dHeight, 10) >= window.innerHeight) {
+
+                                        if (offset.top - parseInt(tHeight + dHeight, 10) + tHeight > 0) {
+                                            events.addClass(p, 'submenu-top');
+
+                                        } else {
+                                            list[0].style.height = (dHeight - (offset.top + parseInt(tHeight + dHeight, 10) - window.innerHeight) - 15) + 'px';
+                                        }
+
                                     }
 
-                                } else {
+                                }, 10);
 
-                                    if (input.id !== '') {
-                                        send += '&' + dataId + '=' + input.value;
+                            };
+
+                            k = 0;
+
+                            events.addClass(p, 'open');
+                            events.removeClass(p, 'submenu-top');
+
+                            list[0].innerHTML = '';
+
+                            for (i = 0; i < response.length; i += 1) {
+
+                                key = response[i][getVal];
+                                txt = '';
+
+                                if (key !== null) {
+
+                                    if (typeof key === 'boolean') { return; } // booleans not supported!
+                                    m = key;
+
+                                    if (typeof key === 'number') {
+                                        m = m.toString().match(v, 'g');
 
                                     } else {
-                                        send += '&' + input.name + '=' + input.value;
+
+                                        m = customLowerCase(m);
+                                        m = m.match(v, 'g');
+
+                                    }
+
+                                    if (m !== null) {
+
+                                        createDropdown();
+
+                                        // show max. number of lines: 5
+                                        k += 1;
+                                        if (k > 5) { return; }
+
+                                        // create lines
+                                        if (typeof key === 'number') {
+
+                                            for (j = 0; j < key.toString().length; j += 1) {
+
+                                                if (j ===  key.toString().indexOf(m)) { txt += '<strong>'; }
+                                                if (j === (key.toString().indexOf(m) + v.length)) { txt += '</strong>'; }
+
+                                                txt += key.toString().charAt(j);
+
+                                            }
+
+                                        } else {
+
+                                            for (j = 0; j < key.length; j += 1) {
+
+                                                if (j === customLowerCase(key).indexOf(m)) { txt += '<strong>'; }
+                                                if (j === (customLowerCase(key).indexOf(m) + v.length)) { txt += '</strong>'; }
+
+                                                txt += key.charAt(j);
+
+                                            }
+
+                                        }
+
+                                        list[0].insertAdjacentHTML('beforeend', '<li>' + txt + '</li>');
+
                                     }
 
                                 }
-
                             }
 
-                            // sending target class names with value
-                            dataClass = p.getAttribute('data-class');
-                            if (dataClass !== null && dataClass !== '') {
+                        } else {
+                            throw new Error('Autocomplete Alert: Source is not in correct JSON format!');
+                        }
 
-                                events.each('.' + dataClass, function () {
+                        response = '';
 
-                                    input = selector('input,select,textarea', this)[0];
+                    };
 
-                                    if (input.type === 'checkbox' || input.type === 'radio') {
+                    id = p.getAttribute('data-id');
 
-                                        if (input.id !== '') {
-                                            send += '&' + input.id + '=' + input.checked;
+                    src = p.getAttribute('data-src');
+                    getVal = p.getAttribute('data-val');
 
-                                        } else {
-                                            send += '&' + input.name + '=' + input.checked;
-                                        }
+                    if (getVal !== null && getVal !== '') {
 
-                                    } else {
+                        if (id !== null && id !== '') { // get inner json data
+                            checkData(selector('#' + id)[0].textContent);
 
-                                        if (input.id !== '') {
-                                            send += '&' + input.id + '=' + input.value;
+                        } else if (src !== null && src !== '') { // get json data with ajax
 
-                                        } else {
-                                            send += '&' + input.name + '=' + input.value;
-                                        }
-
-                                    }
-
-                                });
-
-                            }
-
-                            ajax('POST', src + '?' + send, function (response, status, xhr) {
+                            ajax('POST', src, function (response, status, xhr) {
 
                                 // abort still processing previous autocomplete requests
                                 for (n = 0; n < autocompleteRequests.length; n += 1) {
@@ -235,131 +237,24 @@ var autocomplete = {
                                 }
 
                                 autocompleteRequests.push(xhr);
-
                                 if (status === 'success') {
 
                                     autocompleteRequests = [];
-
-                                    response = JSON.parse(response);
-                                    if (response.length !== 'undefined') {
-
-                                        createDropdown = function () {
-
-                                            // create dropdown
-                                            clearTimeout(timerShowLines);
-                                            timerShowLines = setTimeout(function () {
-
-                                                events.addClass(list, autocomplete.classes);
-
-                                                offset = p.getBoundingClientRect();
-
-                                                tHeight = p.offsetHeight;
-                                                dHeight = list[0].offsetHeight;
-
-                                                if (offset.top + parseInt(tHeight + dHeight, 10) >= window.innerHeight) {
-
-                                                    if (offset.top - parseInt(tHeight + dHeight, 10) + tHeight > 0) {
-                                                        events.addClass(p, 'submenu-top');
-
-                                                    } else {
-                                                        list[0].style.height = (dHeight - (offset.top + parseInt(tHeight + dHeight, 10) - window.innerHeight) - 15) + 'px';
-                                                    }
-
-                                                }
-
-                                            }, 10);
-
-                                        };
-
-                                        k = 0;
-
-                                        events.addClass(p, 'open');
-                                        events.removeClass(p, 'submenu-top');
-
-                                        list[0].innerHTML = '';
-
-                                        for (i = 0; i < response.length; i += 1) {
-
-                                            key = response[i][getVal];
-                                            txt = '';
-
-                                            if (key !== null) {
-
-                                                if (typeof key === 'boolean') { return; } // booleans not supported!
-                                                m = key;
-
-                                                if (typeof key === 'number') {
-                                                    m = m.toString().match(v, 'g');
-
-                                                } else {
-
-                                                    m = customLowerCase(m);
-                                                    m = m.match(v, 'g');
-
-                                                }
-
-                                                if (m !== null) {
-
-                                                    createDropdown();
-
-                                                    // show max. number of lines: 5
-                                                    k += 1;
-                                                    if (k > 5) { return; }
-
-                                                    // create lines
-                                                    if (typeof key === 'number') {
-
-                                                        for (j = 0; j < key.toString().length; j += 1) {
-
-                                                            if (j ===  key.toString().indexOf(m)) { txt += '<strong>'; }
-                                                            if (j === (key.toString().indexOf(m) + v.length)) { txt += '</strong>'; }
-
-                                                            txt += key.toString().charAt(j);
-
-                                                        }
-
-                                                    } else {
-
-                                                        for (j = 0; j < key.length; j += 1) {
-
-                                                            if (j === customLowerCase(key).indexOf(m)) { txt += '<strong>'; }
-                                                            if (j === (customLowerCase(key).indexOf(m) + v.length)) { txt += '</strong>'; }
-
-                                                            txt += key.charAt(j);
-
-                                                        }
-
-                                                    }
-
-                                                    list[0].insertAdjacentHTML('beforeend', '<li>' + txt + '</li>');
-
-                                                }
-
-                                            }
-                                        }
-
-                                    } else {
-                                        throw new Error('Autocomplete Alert: Source is not in correct JSON format!');
-                                    }
-
-                                    if (events.hasClass(p, 'autocomplete-pull')) {
-                                        pullValues = response; // pulling values
-                                    }
-
-                                    response = '';
+                                    checkData(response);
 
                                 }
 
                             });
 
-                        } else { return; }
+                        }
 
-                    } else {
 
-                        events.removeClass(list, 'open');
-                        list[0].innerHTML = '';
+                    } else { return; }
 
-                    }
+                } else {
+
+                    events.removeClass(list, 'open');
+                    list[0].innerHTML = '';
 
                 }
 
@@ -371,9 +266,7 @@ var autocomplete = {
 
             if (e.keyCode === 13) {
 
-                var p, key;
-
-                p = this.parentNode;
+                var p = this.parentNode;
                 if (selector('li.selected', p).length > 0) {
 
                     events.removeClass(p, 'open');
@@ -382,16 +275,6 @@ var autocomplete = {
 
                         e.preventDefault();
                         e.stopPropagation();
-
-                    }
-
-                    if (events.hasClass(p, 'autocomplete-pull')) {
-
-                        key = p.getAttribute('data-val');
-
-                        if (key !== null && key !== '') {
-                            pullValuesFnc(key, this.value); // pulling values
-                        }
 
                     }
 
@@ -416,7 +299,6 @@ var autocomplete = {
         events.on(document, 'blur', formEvents, function () {
 
             var p, list;
-            pullValues = [];
 
             p = this.parentNode;
             list = selector('ul', p);
@@ -428,23 +310,11 @@ var autocomplete = {
 
         events.on(document, 'mousedown', '.text.autocomplete.open li', function () {
 
-            var p, key;
-
-            p = events.closest(this, '.autocomplete');
+            var p = events.closest(this, '.autocomplete');
             selector('[type="text"]', p).value = this.textContent;
 
             if (events.hasClass(p, 'auto-submit')) {
                 events.closest(this, 'form').submit(); // auto submit
-            }
-
-            if (events.hasClass(p, 'autocomplete-pull')) {
-
-                key = p[0].getAttribute('data-val');
-
-                if (key !== null && key !== '') {
-                    pullValuesFnc(key, this.textContent); // pulling values
-                }
-
             }
 
         });
