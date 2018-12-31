@@ -19,7 +19,8 @@ var tooltip = {
         removeTimer,
         removeTimer2x,
         pageTouchmove,
-        pageTouchmoveTimer;
+        pageTouchmoveTimer,
+        touchControl
 
     function removeFnc() {
 
@@ -171,27 +172,31 @@ var tooltip = {
 
     }
 
-    function tooltipFnc(e, that) {
+    function tooltipFnc(that, type) {
 
         var title;
-        if ((e.type === 'mouseenter' || e.type === 'touchend') && that.title !== '') {
+        if (type === 'open' && that.title !== '') {
 
             createFnc(that, that.title);
 
             that.setAttribute('data-title', that.title);
             that.removeAttribute('title');
 
+            events.addClass(that, 'tooltip-active');
+
         } else {
 
             title = that.getAttribute('data-title');
             if (title !== null && title !== '') {
 
-                if (e.type === 'mouseleave') {
+                if (type === 'close') {
 
                     removeFnc(that);
 
                     that.title = title;
                     that.removeAttribute('data-title');
+
+                    events.removeClass(that, 'tooltip-active');
 
                 }
 
@@ -206,10 +211,19 @@ var tooltip = {
         // Events
         events.on(document, 'mouseenter mouseleave', '[data-tooltip]', function (e) {
 
-            var ua = navigator.userAgent.toLowerCase();
+            var ua, type;
+
+            ua = navigator.userAgent.toLowerCase();
             if (ua.indexOf('mobile') > -1 && ua.indexOf('apple') > -1) { return; }
 
-            tooltipFnc(e, this);
+            if (e.type === 'mouseenter') {
+                type = 'open';
+
+            } else {
+                type = 'close';
+            }
+
+            tooltipFnc(this, type);
 
         });
 
@@ -218,7 +232,9 @@ var tooltip = {
             var that = this;
 
             if (e.type === 'touchstart') {
+
                 pageTouchmove = false;
+                touchControl = events.hasClass(that, 'tooltip-active');
 
             } else if (e.type === 'touchmove') {
                 pageTouchmove = true;
@@ -226,10 +242,19 @@ var tooltip = {
 
             if (e.type === 'touchend' && pageTouchmove === false) {
 
-                clearTimeout(pageTouchmoveTimer);
+                if (!touchControl) { e.preventDefault(); }
 
+                clearTimeout(pageTouchmoveTimer);
                 pageTouchmoveTimer = setTimeout(function () {
-                    tooltipFnc(e, that);
+
+                    tooltipFnc(that, 'open');
+                    events.on(document, 'touchend.tooltipClose', function () {
+
+                        tooltipFnc(that, 'close');
+                        events.off(document, 'touchend.tooltipClose');
+
+                    });
+
                 }, 50);
 
             }
