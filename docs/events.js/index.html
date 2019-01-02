@@ -147,12 +147,6 @@
                 this.insertAdjacentHTML('beforeend', html);
             });
 
-            /* .clone() Clone and parse inner contents of element */
-            events.on('.btn-clone', 'click', function () {
-                var button = events.clone('.btn-clone span');
-                this.insertAdjacentHTML('beforeend', button);
-            });
-
         });
     </script>
 
@@ -337,16 +331,6 @@
                     <ul class="list-unstyled list-spacer-5 align-left">
                         <li class="btn btn-lg btn-multitext btn-block rounded ease-bg btn-parser">
                             <i class="block">events.parser('&lt;a href="#" class="btn margin-5 circle ease-bg">Button created with parser.&lt;/a&gt;');</i>
-                        </li>
-                    </ul>
-
-                    <h4>.clone() Clone and parse inner contents of element:</h4>
-                    <ul class="list-unstyled list-spacer-5 align-left">
-                        <li class="btn btn-lg btn-multitext btn-block rounded ease-bg btn-clone">
-                            <i class="block">events.clone('.btn-clone span');</i>
-                            <span>
-                                <a href="#" class="btn margin-5 circle ease-bg">Link Button</a>
-                            </span>
                         </li>
                     </ul>
 
