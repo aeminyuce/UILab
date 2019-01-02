@@ -452,19 +452,6 @@ var events = {
 
         return html;
 
-    },
-    clone: function (t) {
-
-        'use strict';
-        var l = selector(t)[0], html;
-
-        if (l !== undefined) {
-
-            html = events.parser(selector(t)[0].innerHTML);
-            return html;
-
-        }
-
     }
 
 };
