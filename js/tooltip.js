@@ -209,7 +209,7 @@ var tooltip = {
     tooltip.Start = function () {
 
         // Events
-        events.on(document, 'mouseenter mouseleave', '[data-tooltip]', function (e) {
+        events.on(document, 'mouseenter mouseleave', '[data-tooltip]:not([data-only="mobile"])', function (e) {
 
             var ua, type;
 
@@ -227,7 +227,7 @@ var tooltip = {
 
         });
 
-        events.on(document, 'touchstart touchmove touchend', '[data-tooltip]', function (e) {
+        events.on(document, 'touchstart touchmove touchend', '[data-tooltip]:not([data-only="desktop"])', function (e) {
 
             var that = this;
 
