@@ -13,6 +13,6 @@
 
 .close-mobile-menu { position: fixed; top: 10px; right: 10px; z-index: 10; }
 
-.mobile-menu-title { height: 66px; padding: 10px; }
+.mobile-menu-title { height: 66px; padding: 10px; position: relative; z-index: 1; }
 .mobile-menu-content { padding: 10px; position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
 .mobile-menu-title + .mobile-menu-content { top: 66px; }
