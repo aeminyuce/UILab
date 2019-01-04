@@ -15,22 +15,16 @@ html:not(.mobile) .list-group [class*="has-icon"] li > a:hover .list-icon { opac
 
 .list-group .has-icon-xxl li,.list-group .has-icon-xxl li > a { padding-right: 68px; }
 .list-group .has-icon-xxl li > a { margin-right: -68px; }
-
 .list-group .has-icon-xl li,.list-group .has-icon-xl li > a { padding-right: 52px; }
 .list-group .has-icon-xl li > a { margin-right: -52px; }
-
 .list-group .has-icon-lg li,.list-group .has-icon-lg li > a { padding-right: 44px; }
 .list-group .has-icon-lg li > a { margin-right: -44px; }
-
 .list-group .has-icon li,.list-group .has-icon li > a { padding-right: 38px; }
 .list-group .has-icon li > a { margin-right: -38px; }
-
 .list-group .has-icon-sm li,.list-group .has-icon-sm li > a { padding-right: 34px; }
 .list-group .has-icon-sm li > a { margin-right: -34px; }
-
 .list-group .has-icon-xs li,.list-group .has-icon-xs li > a { padding-right: 29px; }
 .list-group .has-icon-xs li > a { margin-right: -29px; }
-
 .list-group .has-icon-xxs li,.list-group .has-icon-xxs li > a { padding-right: 28px; }
 .list-group .has-icon-xxs li > a { margin-right: -28px; }
 
@@ -38,13 +32,10 @@ html:not(.mobile) .list-group [class*="has-icon"] li > a:hover .list-icon { opac
 
 .list-group .has-photo-lg li,.list-group .has-photo-lg li > a { min-height: 100px; padding-left: 100px; }
 .list-group .has-photo-lg li > a { margin-left: -100px; }
-
 .list-group .has-photo li,.list-group .has-photo li > a { min-height: 70px; padding-left: 70px; }
 .list-group .has-photo li > a { margin-left: -70px; }
-
 .list-group .has-photo-sm li,.list-group .has-photo-sm li > a { min-height: 60px; padding-left: 60px; }
 .list-group .has-photo-sm li > a { margin-left: -60px; }
-
 .list-group .has-photo-xs li,.list-group .has-photo-xs li > a { min-height: 50px; padding-left: 50px; }
 .list-group .has-photo-xs li > a { margin-left: -50px; }
 
