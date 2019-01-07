@@ -2,6 +2,9 @@
 .container:before,.container:after,.fixed:before,.fixed:after,.row:not(.row-equal-height):before,.row:not(.row-equal-height):after,[class*="col-"]:not(.col-static):before,[class*="col-"]:not(.col-static):after { content: ""; display: table; }
 .container:after,.fixed:after,.row:not(.row-equal-height):after,[class*="col-"]:not(.col-static):after { clear: both; }
 
+.ie9 .row-equal-height:before,.ie9 .row-equal-height:after { content: ""; display: table; }
+.ie9 .row-equal-height:after,[class*="col-"]:not(.col-static):after { clear: both; }
+
 .container,.fixed { width: 100%; padding-right: 10px; padding-left: 10px; }
 .ie main.container { display: inline-block; }
 .fixed { margin-left: auto; margin-right: auto; }
