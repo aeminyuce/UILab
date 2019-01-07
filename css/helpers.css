@@ -151,7 +151,7 @@ html:not(.portrait) .visible-portrait { display: none !important; }
 
 html:not(.mobile) .opacity:hover,html:not(.mobile) .opacity-more:hover { opacity: 1 !important; }
 
-html:not(.mobile) .scale:hover { transform: scale(1.04); }
+html:not(.mobile) .scale:hover { transform: scale(1.06); }
 html:not(.mobile) .scale-more:hover { transform: scale(1.2); }
 
 .list-unstyled,.list-custom,.list-custom ul,.list-custom ol,.list-inline,.list-inline ul,.list-inline ol { list-style: none; padding: 0; }
