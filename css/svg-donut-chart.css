@@ -5,6 +5,7 @@
 .donut-chart strong { text-align: center; width: 100%; position: absolute; top: 50%; transform: translateY(-50%); }
 .donut-chart svg { width: 100%; height: auto; margin: 0 auto; -ms-transform: rotate(-90deg); transform: rotate(-90deg); }
 .donut-chart circle { fill: none; stroke-width: 8; stroke-dasharray: 440; transform-origin: 50% 50%; }
+.donut-chart circle.bg { stroke: #eee; }
 .donut-chart:not(.multiple) circle { stroke-linecap: round; }
 
-html:not(.ie):not(.edge):not(.mobile) .donut-chart circle { animation: donut-chart 1s ease-out forwards; }
+html:not(.ie):not(.edge):not(.mobile) .donut-chart circle:not(.bg) { animation: donut-chart 1s ease-out forwards; }
