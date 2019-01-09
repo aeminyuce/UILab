@@ -141,7 +141,7 @@ var tooltip = {
             // check screen limits
             posRecall = '';
 
-            if (sourceRect.top - window.pageYOffset + calc.ver < 0) { // top
+            if (sourceRect.top - window.pageYOffset + calc.ver < -window.pageYOffset) { // top
                 posRecall += 'b';
 
             } else if (sourceRect.top + window.pageYOffset + winRect.height + calc.ver > screen.height + window.pageYOffset) { // bottom
