@@ -96,7 +96,7 @@ html:not(.mobile) .select-multi > .icon { display: none; }
     .form-summary-xs:not(.no-responsive) { line-height: 22px; }
 }
 @media (max-width: 480px) {
-    .form-inline-responsive { min-width: 100% !important; width: 100% !important; max-width: 100% !important; display: block !important; }
+    .form-inline-responsive { width: 100% !important; display: block !important; }
     .form-inline-responsive:not(:last-child) { margin-bottom: 5px; }
 
     .form-summary.no-responsive { line-height: 32px; }

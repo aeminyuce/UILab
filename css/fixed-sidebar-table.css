@@ -5,4 +5,4 @@ html:not(.ie9) .table-fixed-sidebar [class*="static-"] .table thead,html:not(.ie
 html:not(.ie9) .table-fixed-sidebar [class*="static-"] .table thead { position: relative; z-index: 1; }
 html:not(.ie9) .table-fixed-sidebar [class*="static-"] .table thead:not([class*="ui-"]) { background-color: #fff; }
 html:not(.ie9) .table-fixed-sidebar [class*="static-"] .table tbody { max-height: 309px; }
-html:not(.ie9) .table-fixed-sidebar [class*="static-"] .table th,html:not(.ie9) .table-fixed-sidebar [class*="static-"] .table td { min-width: 2000px; width: 2000px; max-width: 2000px; }
+html:not(.ie9) .table-fixed-sidebar [class*="static-"] .table th,html:not(.ie9) .table-fixed-sidebar [class*="static-"] .table td { width: 2000px; }
