@@ -15,9 +15,9 @@
 .data-list:not(.data-show-all) .data-content:not(.show) { display: none; }
 .data-list.data-filtered.data-show-all .data-content:not(.filtered) { display: none; }
 
-html:not(.mobile) .data-list .data-content:not([class*="ui-"]):hover { background-color: rgba(0,0,0,.06); }
-html:not(.mobile) .data-list .data-content:not([class*="ui-"]):nth-child(odd):hover { background-color: rgba(0,0,0,.06); }
-.data-list .data-content.even:not([class*="ui-"]) { background-color: rgba(0,0,0,.025); }
+html:not(.mobile) .data-hover .data-content:not([class*="ui-"]):hover { background-color: rgba(0,0,0,.06); }
+html:not(.mobile) .data-hover .data-content:not([class*="ui-"]):nth-child(odd):hover { background-color: rgba(0,0,0,.06); }
+.data-hover .data-content.even:not([class*="ui-"]) { background-color: rgba(0,0,0,.025); }
 
 .data-list > .row,.data-list .data-content > .row { margin-left: inherit; margin-right: inherit; }
 
