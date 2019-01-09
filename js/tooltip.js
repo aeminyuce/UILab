@@ -160,6 +160,7 @@ var tooltip = {
 
                 pos = posRecall;
                 calc.Fnc();
+
             }
 
             win[0].style.top = (sourceRect.top + window.pageYOffset + calc.ver) + 'px';
