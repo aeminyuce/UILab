@@ -1,6 +1,6 @@
 /*
- Data Grid JS
- Data Grid JS requires Events JS
+ Data List JS
+ Data List JS requires Events JS
 */
 
 var dataList = {
