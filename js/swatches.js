@@ -73,7 +73,13 @@ var swatches = {};
 
             events.on(document, 'mouseleave', '.swatch-active', function () {
 
-                this.style.removeProperty('background-color');
+                if (this.style.length === 1) {
+                    this.removeAttribute('style');
+
+                } else {
+                    this.style.removeProperty('background-color');
+                }
+
                 events.removeClass(this, 'swatch-active');
 
             });

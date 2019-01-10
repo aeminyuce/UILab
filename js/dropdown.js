@@ -12,7 +12,8 @@ var dropdown = {};
 
     var
         dropdownOpenTimer,
-        dropdownCloseTimer;
+        dropdownCloseTimer,
+        listStyles;
 
     function dropdownCloseFnc() {
 
@@ -27,8 +28,16 @@ var dropdown = {};
 
                 list = selector('ul', this)[0];
 
-                if (list.getAttribute('style') !== null) {
+                if (listStyles === 0) {
                     list.removeAttribute('style');
+
+                } else {
+
+                    list.style.removeProperty('min-width');
+                    list.style.removeProperty('right');
+                    list.style.removeProperty('margin-left');
+                    list.style.removeProperty('height');
+
                 }
 
                 events.removeClass(t, 'submenu-top open');
@@ -67,6 +76,8 @@ var dropdown = {};
                     offset = parent.getBoundingClientRect();
 
                     list = selector('ul', parent);
+
+                    listStyles = list[0].style.length;
                     listWidth = list[0].offsetWidth;
 
                     if ((parent.offsetWidth > 200) && (parent.offsetWidth > listWidth)) {
