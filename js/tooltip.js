@@ -175,27 +175,29 @@ var tooltip = {
 
     function tooltipFnc(that, type) {
 
-        var title;
-        if (type === 'open' && that.title !== '') {
+        var title, dataTitle;
 
-            createFnc(that, that.title);
+        title = that.getAttribute('title'); // don't change to that.title
+        if (type === 'open' && title !== null && title !== '') {
 
-            that.setAttribute('data-title', that.title);
+            createFnc(that, title);
+
+            that.setAttribute('data-title', title);
             that.removeAttribute('title');
 
             events.addClass(that, 'tooltip-active');
 
         } else {
 
-            title = that.getAttribute('data-title');
-            if (title !== null && title !== '') {
+            dataTitle = that.getAttribute('data-title');
+            if (dataTitle !== null && dataTitle !== '') {
 
                 if (type === 'close') {
 
                     removeFnc(that);
 
-                    that.title = title;
                     that.removeAttribute('data-title');
+                    that.setAttribute('title', dataTitle);
 
                     events.removeClass(that, 'tooltip-active');
 
