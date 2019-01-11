@@ -6,7 +6,7 @@ input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .btn-square { width: 32px; padding-left: 0 !important; padding-right: 0 !important; }
 .btn:not(.btn-passive) { cursor: pointer; }
 .btn:not([class*="bordered"]) { border-width: 0; }
-.btn:not(.btn-multitext) { white-space: nowrap; overflow: hidden; }
+.btn:not(.btn-multitext) { white-space: nowrap; }
 
 .btn.btn-multitext { word-wrap: break-word; height: auto !important; min-height: 32px; }
 .btn-sm.btn-multitext { min-height: 26px; }
