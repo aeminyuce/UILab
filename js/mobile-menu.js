@@ -141,7 +141,7 @@ var mobileMenu = {
                     index = importers[i].getAttribute('data-import');
 
                     if (index !== null && index !== '') {
-                        moveFnc(i);
+                        moveFnc(index);
 
                     } else { return; }
 
