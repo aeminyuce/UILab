@@ -12,7 +12,7 @@ var donutChart = {};
 
     donutChart.Start = function () {
 
-        var chart, circles, percent, angle, arrPercent, arrAngle;
+        var chart, circles, percent, dashoffset, angle, arrPercent, arrAngle;
 
         arrPercent = [];
         arrAngle = [];
@@ -32,7 +32,10 @@ var donutChart = {};
                     percent = this.getAttribute('data-percent');
                     arrPercent.push(percent);
 
-                    this.setAttribute('stroke-dashoffset', Math.floor(440 - (percent * 4.4)));
+                    dashoffset = Math.floor(440 - (percent * 4.4));
+                    if (dashoffset < 0) { dashoffset = 0; }
+                    
+                    this.setAttribute('stroke-dashoffset', dashoffset);
 
                     if (index > 0) {
 
