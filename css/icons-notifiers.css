@@ -1,18 +1,16 @@
 /* icon notifiers */
 .notifier { position: relative; }
-.notifier:after { content: ""; background-color: red; border-radius: 200px; position: absolute; z-index: 1; }
+.notifier:after { content: ""; background-color: red; margin-left: -33%; border-radius: 200px; position: absolute; top: -6px; left: 100%; z-index: 1; }
+.notifier.icon-xxs:after,.notifier.icon-xs:after,.notifier.icon-sm:after { top: -3px; }
 
-.notifier.icon-xxs:after { min-width: 4px; height: 4px; top: -1px; right: 0; }
-.notifier.icon-xs:after { min-width: 5px; height: 5px; top: -2px; right: -1px; }
-.notifier.icon-sm:after { min-width: 6px; height: 6px; top: -2px; right: 0; }
-.notifier.icon-md:after { min-width: 10px; height: 10px; top: -5px; right: -2px; }
-.notifier.icon-lg:after { min-width: 10px; height: 10px; top: -4px; right: -2px; }
-.notifier.icon-xl:after { min-width: 12px; height: 12px; top: -4px; right: -2px; }
-.notifier.icon-xxl:after { min-width: 14px; height: 14px; top: -3px; right: 4px; }
+.notifier.icon-xxs:after { min-width: 4px; height: 4px; }
+.notifier.icon-xs:after { min-width: 5px; height: 5px; }
+.notifier.icon-sm:after { min-width: 6px; height: 6px; }
+.notifier.icon-md:after,.notifier.icon-lg:after { min-width: 10px; height: 10px; }
+.notifier.icon-xl:after { min-width: 12px; height: 12px; }
+.notifier.icon-xxl:after { min-width: 14px; height: 14px; }
 
-.notifier[data-notifier]:after { content: attr(data-notifier); color: #fff; font-family: sans-serif !important; text-align: center; line-height: normal; padding: 1px 3px; transform: scale(1.6); }
-
-.notifier[data-notifier].icon-xxs:after,.notifier[data-notifier].icon-xs:after,.notifier[data-notifier].icon-sm:after { content : ""; }
+.notifier[data-notifier]:not(.icon-xxs):not(.icon-xs):not(.icon-sm):after { content: attr(data-notifier); color: #fff; font-family: sans-serif !important; text-align: center; line-height: normal; padding: 1px 3px; transform: scale(1.6); }
 .notifier[data-notifier].icon-md:after,.notifier[data-notifier].icon-lg:after { font-size: 8px; }
 .notifier[data-notifier].icon-xl:after { font-size: 9px; }
 .notifier[data-notifier].icon-xxl:after { font-size: 11px; }
