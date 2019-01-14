@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="../css/grid.css" />
     <link rel="stylesheet" href="../css/helpers.css" />
     <link rel="stylesheet" href="../css/icons.css" />
+    <link rel="stylesheet" href="../css/ie9-placeholders.css" />
     <link rel="stylesheet" href="../css/margins.css" />
     <link rel="stylesheet" href="../css/paddings.css" />
     <link rel="stylesheet" href="../css/portlets.css" />
@@ -37,6 +38,7 @@
     <!-- Javascript Tools -->
     <script src="../js/selector.js"></script>
     <script src="../js/events.js"></script>
+    <script src="../js/ie9-placeholders.js"></script>
     <script src="../js/sticky-header.js"></script>
     <script src="../js/swatches.js"></script>
     <script src="../js/toggle-password.js"></script>
@@ -50,7 +52,7 @@
     <!-- custom CSS -->
     <style>
         body { background-color: #202c2a; }
-        .login-image { background: url(images/image_vertical_02.jpg) no-repeat center right; background-size: cover; }
+        .login-image { background: no-repeat center right; background-size: cover; }
 
         @media (min-width: 768px) {
             body { background-image: linear-gradient(to right, #202c2a 49.99%, #fff 49.99%); }
@@ -85,7 +87,10 @@
                         <div class="row row-equal-height">
 
                             <!-- login image -->
-                            <div class="col-6 padding-30 rounded-left hidden-sm sm-responsive login-image"></div>
+                            <div class="col-6 hidden-ie9 padding-30 rounded-left hidden-sm sm-responsive login-image" style="background-image: url(images/image_vertical_02.jpg);"></div>
+                            <div class="col-6 visible-ie9 no-padding no-overflow hidden-sm sm-responsive login-img">
+                                <img class="full-height rounded-left" src="images/image_vertical_02.jpg" alt="">
+                            </div>
 
                             <!-- login form -->
                             <div class="col-6 padding-30 sm-responsive">
