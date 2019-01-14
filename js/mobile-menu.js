@@ -107,7 +107,7 @@ var mobileMenu = {
         // Events
         events.on(document, 'click', '[class*="show-mobile-menu-"]', function () {
 
-            var importers, moveFnc, id, wrapper, index, i, position, panel;
+            var importers, moveFnc, id, wrapper, i, index, indexArr, indexSort, position, panel;
 
             position = 'left';
             temp = document.createDocumentFragment();
@@ -116,35 +116,49 @@ var mobileMenu = {
                 position = 'right';
             }
 
-            moveFnc = function (j) {
+            moveFnc = function (that, j) {
 
                 wrapper = document.createDocumentFragment();
+
                 id = new Date().getTime();
+                id = id.toString();
+                id = id.substring(id.length - 4, id.length) + j;
 
-                importers[j].insertAdjacentHTML('beforebegin', '<div class="mm-' + id + '" style="display: none;"></div>');
+                that.insertAdjacentHTML('beforebegin', '<div class="mm-' + id + '" style="display: none;"></div>');
 
-                importers[j].setAttribute('data-mm', id);
-                wrapper.appendChild(importers[j]);
+                that.setAttribute('data-mm', id);
+                wrapper.appendChild(that);
 
                 temp.appendChild(wrapper);
 
             };
 
+            indexSort = function (a, b) {
+                return a - b;
+            };
+
             importers = selector('.add-mobile-menu-' + position);
             if (importers.length === 1) {
-                moveFnc(0);
+                moveFnc(importers[0], 0);
 
             } else if (importers.length > 1) {
 
+                indexArr = [];
                 for (i = 0; i < importers.length; i += 1) {
 
                     index = importers[i].getAttribute('data-import');
 
                     if (index !== null && index !== '') {
-                        moveFnc(index);
+                        indexArr.push(index);
 
                     } else { return; }
 
+                }
+
+                indexArr.sort(indexSort);
+
+                for (i = 0; i < importers.length; i += 1) {
+                    moveFnc(selector('[data-import="' + indexArr[i] + '"]')[0], i);
                 }
 
             } else { return; }
