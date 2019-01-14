@@ -43,8 +43,11 @@ html:not(.mobile) .select-multi > .icon { display: none; }
 .warning { background-color: #fffaef !important; }
 .warning { border-color: #ffa600 !important; }
 
-.hint { font-size: 12px; margin-top: 5px; margin-bottom: 0; display: block; }
-.hint.error { color: #dc000f; }
+.hint,.required-msg { font-size: 12px; margin-top: 5px; margin-bottom: 0 !important; }
+.hint,.required-msg.show { display: block; }
+.hint.error,.required-msg { color: #dc000f; }
+.required-msg { background-color: #ffeded; padding: 10px; }
+.required-msg:not(.show) { display: none; }
 
 .form-inline,.form-inline-responsive { display: inline-block !important; }
 .form-disabled *,.form-readonly * { color: #555; cursor: not-allowed; }

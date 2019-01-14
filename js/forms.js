@@ -12,7 +12,7 @@ var forms = {};
 
     forms.Start = function () {
 
-        var mobile;
+        var mobile, required;
 
         if (navigator.userAgent.toLowerCase().indexOf('mobile') > -1) { // detecting mobile
             mobile = true;
@@ -97,6 +97,57 @@ var forms = {};
         // file inputs
         events.on(document, 'change', '.file input', function () {
             selector('span', this.parentElement)[0].innerHTML = this.value;
+        });
+
+        // required forms
+        required = function (that) {
+
+            var p, next, showMsg, showErr, min, max;
+
+            p = events.closest(that, '.text')[0];
+            next = p.nextElementSibling;
+
+            showMsg = false;
+
+            if (events.hasClass(next, 'required-msg')) {
+                showMsg = true;
+            }
+
+            // show error
+            showErr = function () {
+
+                events.addClass(p, 'error');
+                if (showMsg) {
+                    events.addClass(next, 'show');
+                }
+
+            };
+
+            // hide error
+            events.removeClass(p, 'error');
+            if (showMsg) {
+                events.removeClass(next, 'show');
+            }
+
+            // check value is empty
+            if (that.value === '') { showErr(); }
+
+            // check min
+            min = that.getAttribute('minlength');
+            if (min !== null && min !== '' && !isNaN(min)) {
+                if (that.value.length < min) { showErr(); }
+            }
+
+            // check max
+            max = that.getAttribute('maxlength');
+            if (max !== null && max !== '' && !isNaN(max)) {
+                if (that.value.length > max) { showErr(); }
+            }
+
+        };
+
+        events.on(document, 'blur', '.text input.required', function () {
+            required(this);
         });
 
         // form icons
