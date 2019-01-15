@@ -55,7 +55,6 @@ html:not(.mobile) .select-multi > .icon { display: none; }
 .form-table { margin-top: -5px !important; margin-bottom: -5px !important; }
 .form-label,.form-grid { font-size: 13px; line-height: normal; opacity: .6; }
 .form-label { margin-bottom: 5px; display: inline-block; }
-.form-grid { display: block; }
 
 .form-light { border-color: rgba(255,255,255,.3); }
 .form-light > input,.form-light > select,.form-light > textarea,.mobile .select-multi.form-light:before,.form-light > .icon { color: #fff; }
@@ -84,10 +83,12 @@ html:not(.mobile) .select-multi > .icon { display: none; }
 /* do not group */
 
 @media (min-width: 768px) {
-    .form-grid { line-height: 32px; }
+    .form-grid { line-height: 32px; display: inline-block; }
 }
 @media (max-width: 767px) {
+    .form-grid { display: block; }
     .row [class*="col-"] > .form-grid { margin-bottom: -15px; }
+
     .row-no-padding [class*="col-"] > .form-grid { margin-top: 10px; margin-bottom: 5px; }
     .row-xs-padding [class*="col-"] > .form-grid,.row-xs-padding-ver [class*="col-"] > .form-grid { margin-bottom: 3px; }
     .row-sm-padding [class*="col-"] > .form-grid,.row-sm-padding-ver [class*="col-"] > .form-grid { margin-bottom: 0; }
