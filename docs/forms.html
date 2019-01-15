@@ -64,6 +64,11 @@
     <!-- font icons CSS -->
     <link rel="stylesheet" href="../../UIIcons/font-icons/outline/font-icons.css" />
 
+    <!-- custom CSS -->
+    <style>
+        body { background-color: #f9f9f9; }
+    </style>
+
 </head>
 
 <body>
@@ -293,21 +298,21 @@
                         <span class="sp15"></span>
 
                         <div>
-                           <div class="switch-custom dual-bordered ease-form">
+                           <div class="switch-custom rounded dual-bordered ease-form">
                                <input id="switch1" type="checkbox" checked>
                                <i class="ease-form-custom"></i>
                            </div>
                            <label for="switch1">Custom Switch</label>
                         </div>
                         <div>
-                           <div class="switch-custom dual-bordered ease-form">
+                           <div class="switch-custom rounded dual-bordered ease-form">
                                <input id="switch2" type="checkbox" checked>
                                <i class="theme-default2 ui-dark ease-form-custom"></i>
                            </div>
                            <label for="switch2">Custom Switch with Swatches</label>
                         </div>
                         <div>
-                           <div class="switch-custom dual-bordered ease-form">
+                           <div class="switch-custom rounded dual-bordered ease-form">
                                <input id="switch3" type="checkbox" class="indeterminate">
                                <i class="ease-form-custom"></i>
                            </div>
@@ -816,7 +821,7 @@
                     </div>
 
                     <h4>Required Forms</h4>
-                    <div class="row">
+                    <div class="row padding-30-b">
                         <div class="col-4">
                             <label class="form-grid" for="required1">Required with message</label>
                         </div>
@@ -879,6 +884,135 @@
                                 </div>
                             </div>
                             <p class="required-msg rounded">Minimum length is 3 characters</p>
+                        </div>
+                    </div>
+
+                    <h4>Diffrerent Form Styles</h4>
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="form-grid">Thin bordered with no radius style:</label>
+                        </div>
+                        <div class="col-8 ease-1st-form">
+
+                            <div class="text margin-10-b">
+                                <input type="text">
+                            </div>
+                            <div class="select margin-10-b">
+                                <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                                <select>
+                                    <option value="1">Select</option>
+                                    <option value="2">Second option</option>
+                                    <option value="3">Third option</option>
+                                </select>
+                            </div>
+                            <div class="textarea margin-10-b">
+                                <textarea placeholder="Textarea"></textarea>
+                            </div>
+                            <div>
+                                <div class="check-custom">
+                                    <input type="checkbox" checked>
+                                    <i class="ease-form-custom"></i>
+                                </div>
+                                <label class="label-custom">Custom Checkbox</label>
+                            </div>
+                            <div>
+                                <div class="radio-custom">
+                                    <input type="radio" checked>
+                                    <i class="ease-form-custom"></i>
+                                </div>
+                                <label class="label-custom">Custom Radio</label>
+                            </div>
+                            <div>
+                               <div class="switch-custom">
+                                   <input type="checkbox" checked>
+                                   <i class="ease-form-custom"></i>
+                               </div>
+                               <label>Custom Switch</label>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <label class="form-grid">Inner shadow with no radius and no bordered style:</label>
+                        </div>
+                        <div class="col-8 ease-1st-form">
+
+                            <div class="text margin-10-b inner-shadow no-bordered">
+                                <input type="text">
+                            </div>
+                            <div class="select margin-10-b inner-shadow no-bordered">
+                                <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                                <select>
+                                    <option value="1">Select</option>
+                                    <option value="2">Second option</option>
+                                    <option value="3">Third option</option>
+                                </select>
+                            </div>
+                            <div class="textarea margin-10-b inner-shadow no-bordered">
+                                <textarea placeholder="Textarea"></textarea>
+                            </div>
+                            <div>
+                                <div class="check-custom inner-shadow no-bordered">
+                                    <input type="checkbox" checked>
+                                    <i class="ease-form-custom"></i>
+                                </div>
+                                <label class="label-custom">Custom Checkbox</label>
+                            </div>
+                            <div>
+                                <div class="radio-custom inner-shadow no-bordered">
+                                    <input type="radio" checked>
+                                    <i class="ease-form-custom"></i>
+                                </div>
+                                <label class="label-custom">Custom Radio</label>
+                            </div>
+                            <div>
+                               <div class="switch-custom inner-shadow no-bordered">
+                                   <input type="checkbox" checked>
+                                   <i class="ease-form-custom"></i>
+                               </div>
+                               <label>Custom Switch</label>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <label class="form-grid">Using swatches with no radius and no bordered style:</label>
+                        </div>
+                        <div class="col-8 ease-1st-form theme-default2">
+
+                            <div class="text margin-10-b rounded no-bordered ui-x-light">
+                                <input type="text">
+                            </div>
+                            <div class="select margin-10-b rounded no-bordered ui-x-light">
+                                <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                                <select>
+                                    <option value="1">Select</option>
+                                    <option value="2">Second option</option>
+                                    <option value="3">Third option</option>
+                                </select>
+                            </div>
+                            <div class="textarea margin-10-b rounded no-bordered ui-x-light">
+                                <textarea placeholder="Textarea"></textarea>
+                            </div>
+                            <div>
+                                <div class="check-custom rounded no-bordered ui-x-light">
+                                    <input type="checkbox" checked>
+                                    <i class="ui-dark ease-form-custom"></i>
+                                </div>
+                                <label class="label-custom">Custom Checkbox</label>
+                            </div>
+                            <div>
+                                <div class="radio-custom rounded no-bordered ui-x-light">
+                                    <input type="radio" checked>
+                                    <i class="ui-dark ease-form-custom"></i>
+                                </div>
+                                <label class="label-custom">Custom Radio</label>
+                            </div>
+                            <div>
+                               <div class="switch-custom rounded no-bordered ui-x-light">
+                                   <input type="checkbox" checked>
+                                   <i class="ui-dark ease-form-custom"></i>
+                               </div>
+                               <label>Custom Switch</label>
+                            </div>
                         </div>
                     </div>
 
