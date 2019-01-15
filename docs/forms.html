@@ -14,6 +14,7 @@
     <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
 
     <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/animations.css" />
     <link rel="stylesheet" href="../css/alignments.css" />
     <link rel="stylesheet" href="../css/buttons.css" />
     <link rel="stylesheet" href="../css/borders.css" />
@@ -83,417 +84,270 @@
             <div class="row">
                 <div class="col-12 padding-30">
 
-                    <h4>Forms</h4>
+                    <h4>Forms in Grid System</h4>
                     <div class="row padding-30-b">
                         <div class="col-4">
-                            <label class="form-grid" for="form01">Label</label>
+                            <label class="form-grid" for="standard-form">Label</label>
                         </div>
                         <div class="col-8">
                             <div class="text rounded dual-bordered ease-form">
-                                <input id="form01" type="text" value="123456">
+                                <input id="standard-form" type="text" value="123456">
                             </div>
-                            <p class="hint">Lorem ipsum dolor sit amet.</p>
+                            <p class="hint dark">Form hint</p>
                         </div>
 
                         <div class="col-4">
-                            <label class="form-grid" for="form01">Label</label>
+                            <label class="form-grid" for="disabled-form">Label</label>
                         </div>
                         <div class="col-8">
                             <div class="text form-disabled rounded dual-bordered ease-form">
-                                <input id="form01" type="text" disabled value="Disabled">
+                                <input id="disabled-form" type="text" disabled value="Disabled Form">
                             </div>
-                            <p class="hint">Lorem ipsum dolor sit amet.</p>
+                            <p class="hint dark">Form hint</p>
                         </div>
 
                         <div class="col-4">
-                            <label class="form-grid" for="form2">Error Form</label>
+                            <label class="form-grid" for="error-form">Error Form</label>
                         </div>
                         <div class="col-8">
                             <div class="text rounded dual-bordered ease-form theme-red ui-border">
-                                <input id="form2" type="text" value="123456">
+                                <input id="error-form" type="text" value="123456">
                             </div>
                             <p class="hint theme-red ui-text">Your message is here.</p>
                         </div>
 
                         <div class="col-4">
-                            <label class="form-grid" for="form3">Warning Form</label>
+                            <label class="form-grid" for="warning-form">Warning Form</label>
                         </div>
                         <div class="col-8">
                             <div class="text rounded dual-bordered ease-form theme-yellow ui-border">
-                                <input id="form3" type="text" value="123456">
+                                <input id="warning-form" type="text" value="123456">
                             </div>
                             <p class="hint theme-yellow ui-text">Your message is here.</p>
                         </div>
 
                         <div class="col-4">
-                            <label class="form-grid" for="form4">Confirmed Form</label>
+                            <label class="form-grid" for="confirmed-form">Confirmed Form</label>
                         </div>
                         <div class="col-8">
                             <div class="text rounded dual-bordered ease-form theme-green ui-border">
-                                <input id="form4" type="text" value="123456">
+                                <input id="confirmed-form" type="text" value="123456">
                             </div>
                             <p class="hint theme-green ui-text">Your message is here.</p>
                         </div>
 
-                        <div class="col-12">
-                            <label class="form-label">Form Label</label>
-                            <div class="form-holder">
-                                <div class="row row-no-padding show-gutter">
-
-                                    <div class="col-5 no-responsive">
-                                        <div class="text rounded dual-bordered ease-form">
-                                            <input type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-2 no-responsive">
-                                        <div class="select rounded dual-bordered ease-form">
-                                            <i class="icon icon-sm icon-angle-down ease-opacity"></i>
-                                            <select>
-                                                <option value="1">%18</option>
-                                                <option value="2">Second option</option>
-                                                <option value="3">Third option</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-5 no-responsive">
-                                        <div class="text rounded dual-bordered ease-form">
-                                            <input type="text">
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <label class="form-label">Form Label</label>
-                            <div class="form-holder">
-                                <div class="row row-no-padding show-gutter">
-                                    <div class="col-static no-responsive">
-                                        <div class="row row-no-padding">
-                                            <div class="col-12">
-                                                <div class="text rounded dual-bordered ease-form">
-                                                    <input type="text">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="static-100">
-                                            <div class="select rounded dual-bordered ease-form">
-                                                <i class="icon icon-sm icon-angle-down ease-opacity"></i>
-                                                <select>
-                                                    <option value="1">%18</option>
-                                                    <option value="2">Second option</option>
-                                                    <option value="3">Third option</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="row row-no-padding">
-                                            <div class="col-12">
-                                                <div class="text rounded dual-bordered ease-form">
-                                                    <input type="text">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-holder">
-                                <label class="form-label">Form Label</label>
-                                <div class="row row-no-padding show-gutter">
-                                    <div class="col-5 no-responsive">
-                                        <div class="text rounded dual-bordered ease-form">
-                                            <input type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-2 no-responsive">
-                                        <div class="select rounded dual-bordered ease-form">
-                                            <i class="icon icon-sm icon-angle-down ease-opacity"></i>
-                                            <select>
-                                                <option value="1">%18</option>
-                                                <option value="2">Second option</option>
-                                                <option value="3">Third option</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-5 no-responsive">
-                                        <div class="text rounded dual-bordered ease-form">
-                                            <input type="text">
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="col-6">
+                            <label class="form-label">Inner Label</label>
+                            <div class="text rounded dual-bordered ease-form">
+                                <input type="text">
                             </div>
                         </div>
                         <div class="col-6">
-                            <label class="form-label">Form Label</label>
-                            <div class="form-holder">
-                                <div class="row row-no-padding show-gutter">
-                                    <div class="col-static no-responsive">
-                                        <div class="static-100">
-                                            <div class="select rounded dual-bordered ease-form">
-                                                <i class="icon icon-sm icon-angle-down ease-opacity"></i>
-                                                <select>
-                                                    <option value="1">%18</option>
-                                                    <option value="2">Second option</option>
-                                                    <option value="3">Third option</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="row row-no-padding">
-                                            <div class="col-12">
-                                                <div class="text rounded dual-bordered ease-form">
-                                                    <input type="text">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row row-no-padding">
-                                            <div class="col-12">
-                                                <div class="text rounded dual-bordered ease-form">
-                                                    <input type="text">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <label class="form-label">Inner Label</label>
+                            <div class="text rounded dual-bordered ease-form">
+                                <input type="text" placeholder="Placeholder Text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Select Forms</h4>
+                    <div class="padding-30-b">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="select rounded dual-bordered ease-form">
+                                    <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                                    <select>
+                                        <option value="0">Select</option>
+                                        <option value="1">Value 1</option>
+                                        <option value="2">Value 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="select rounded dual-bordered ease-form">
+                                    <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                                    <select>
+                                        <optgroup label="Title">
+                                            <option value="0">Select with groups</option>
+                                            <option value="1">Value 1</option>
+                                            <option value="2">Value 2</option>
+                                        </optgroup>
+                                        <optgroup label="Title">
+                                            <option value="3">Value 3</option>
+                                            <option value="4">Value 4</option>
+                                            <option value="5">Value 5</option>
+                                        </optgroup>
+                                    </select>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <label class="form-label">Form Label</label>
-                            <div class="form-holder">
-                                <div class="row row-no-padding show-gutter">
-                                    <div class="col-static no-responsive">
-                                        <div class="row row-no-padding">
-                                            <div class="col-12">
-                                                <div class="text rounded dual-bordered ease-form">
-                                                    <input type="text">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row row-no-padding">
-                                            <div class="col-12">
-                                                <div class="text rounded dual-bordered ease-form">
-                                                    <input type="text">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="static-100">
-                                            <div class="select rounded dual-bordered ease-form">
-                                                <i class="icon icon-sm icon-angle-down ease-opacity"></i>
-                                                <select>
-                                                    <option value="1">%18</option>
-                                                    <option value="2">Second option</option>
-                                                    <option value="3">Third option</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
+                        <div class="select-multi margin-10-b rounded dual-bordered ease-form">
+                            <select multiple size="6">
+                                    <option value="1">Value 1</option>
+                                    <option value="2">Value 2</option>
+                                    <option value="3">Value 3</option>
+                                    <option value="4">Value 4</option>
+                                    <option value="5">Value 5</option>
+                                    <option value="6">Value 6</option>
+                                    <option value="7">Value 7</option>
+                                    <option value="8">Value 8</option>
+                                    <option value="9">Value 9</option>
+                                    <option value="10">Value 10</option>
+                            </select>
                         </div>
-                        <div class="col-12">
-                             <div class="row row-no-padding-ver">
-                                 <div class="col-6 no-responsive">
-                                     <label class="form-label" for="form5">Label</label>
-                                 </div>
-                                 <div class="col-6 no-responsive align-right">
-                                    <a class="small dark hoverline ease-link" href="#">Top Right Link</a>
-                                 </div>
-                             </div>
-                             <div class="text margin-5-b rounded dual-bordered ease-form">
-                                 <input id="form5" type="text">
-                             </div>
-                             <div class="row row-no-padding-ver">
-                                 <div class="col-6 no-responsive">
-                                     <label class="form-label" for="form6">Label</label>
-                                 </div>
-                                 <div class="col-6 no-responsive align-right">
-                                    <a class="btn btn-xs btn-invisible dark rounded ease-bg">Button</a>
-                                 </div>
-                             </div>
-                             <div class="text margin-5-b rounded dual-bordered ease-form">
-                                 <input id="form6" type="text">
-                             </div>
-                             <div class="row row-no-padding-ver">
-                                 <div class="col-6 no-responsive">
-                                     <label class="form-label" for="form7">Label</label>
-                                 </div>
-                                 <div class="col-6 no-responsive align-right">
-                                    <div class="dropdown">
-                                        <button class="btn btn-xs btn-invisible dark rounded ease-bg">Dropdown Button <i class="icon-toggle icon icon-xxs margin-2-l icon-angle-down"></i></button>
-                                        <ul class="bordered dual-bordered rounded shadow ease-dropdown">
-                                            <li><a href="#">Dropdown Link</a></li>
-                                            <li><a href="#">Dropdown Link</a></li>
-                                            <li><a href="#">Dropdown Link</a></li>
-                                            <li><a href="#">Dropdown Link</a></li>
-                                            <li><a href="#">Dropdown Link</a></li>
-                                        </ul>
-                                    </div>
-                                 </div>
-                             </div>
-                             <div class="text margin-5-b rounded dual-bordered ease-form">
-                                 <input id="form7" type="text">
-                             </div>
-                             <label class="form-label" for="form8">Label</label>
-                             <div class="text margin-5-b rounded dual-bordered ease-form">
-                                 <input id="form8" type="text">
-                             </div>
-                             <div class="text margin-5-b rounded dual-bordered ease-form">
-                                 <input type="text">
-                             </div>
-                             <div class="text margin-5-b rounded dual-bordered ease-form">
-                                 <input type="text" placeholder="Placeholder Text">
-                             </div>
-                             <div class="padding-15 margin-15-v rounded theme-default2 ui-dark">
+                        <div class="select-multi margin-10-b rounded dual-bordered ease-form">
+                            <select multiple size="6">
+                                <optgroup label="Title">
+                                    <option value="0">Select</option>
+                                    <option value="1">Value 1</option>
+                                    <option value="2">Value 2</option>
+                                </optgroup>
+                                <optgroup label="Title">
+                                    <option value="3">Value 3</option>
+                                    <option value="4">Value 4</option>
+                                    <option value="5">Value 5</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
 
-                                 <div class="text form-light margin-5-b rounded dual-bordered ease-form">
-                                     <input type="text" placeholder=".form-light in dark swatch">
-                                 </div>
-                                 <div class="text text-icon margin-5-b form-light rounded dual-bordered ease-form">
-                                     <i class="icon icon-sm icon-search ease-opacity"></i>
-                                     <input type="text" placeholder="Placeholder Text">
-                                 </div>
+                    <h4>Texarea Forms</h4>
+                    <div class="padding-30-b">
+                        <div class="textarea margin-10-b rounded dual-bordered ease-form">
+                            <textarea placeholder="Placeholder Text"></textarea>
+                        </div>
+                        <div class="textarea toggle-textarea margin-10-b rounded dual-bordered ease-form">
+                            <textarea placeholder="Toggle textarea example"></textarea>
+                        </div>
+                        <div class="textarea rounded dual-bordered ease-form" data-counter="255">
+                            <textarea>Textare with counter.</textarea>
+                        </div>
+                    </div>
 
-                             </div>
-                             <div class="select margin-5-b rounded dual-bordered ease-form">
-                                 <i class="icon icon-sm icon-angle-down ease-opacity"></i>
-                                 <select>
-                                     <option value="0">Select</option>
-                                     <option value="1">Value 1</option>
-                                     <option value="2">Value 2</option>
-                                 </select>
-                             </div>
-                             <div class="select margin-5-b rounded dual-bordered ease-form">
-                                 <i class="icon icon-sm icon-angle-down ease-opacity"></i>
-                                 <select>
-                                     <optgroup label="Title">
-                                         <option value="0">Select</option>
-                                         <option value="1">Value 1</option>
-                                         <option value="2">Value 2</option>
-                                     </optgroup>
-                                     <optgroup label="Title">
-                                         <option value="3">Value 3</option>
-                                         <option value="4">Value 4</option>
-                                         <option value="5">Value 5</option>
-                                     </optgroup>
-                                 </select>
-                             </div>
-                             <div class="select-multi margin-5-b rounded dual-bordered ease-form">
-                                 <select multiple size="6">
-                                         <option value="1">Value 1</option>
-                                         <option value="2">Value 2</option>
-                                         <option value="3">Value 3</option>
-                                         <option value="4">Value 4</option>
-                                         <option value="5">Value 5</option>
-                                         <option value="6">Value 6</option>
-                                         <option value="7">Value 7</option>
-                                         <option value="8">Value 8</option>
-                                         <option value="9">Value 9</option>
-                                         <option value="10">Value 10</option>
-                                 </select>
-                             </div>
-                             <div class="select-multi margin-5-b rounded dual-bordered ease-form">
-                                 <select multiple size="6">
-                                     <optgroup label="Title">
-                                         <option value="0">Select</option>
-                                         <option value="1">Value 1</option>
-                                         <option value="2">Value 2</option>
-                                     </optgroup>
-                                     <optgroup label="Title">
-                                         <option value="3">Value 3</option>
-                                         <option value="4">Value 4</option>
-                                         <option value="5">Value 5</option>
-                                     </optgroup>
-                                 </select>
-                             </div>
-                             <div class="file margin-5-b rounded dual-bordered ease-form">
-                                 <input type="file">
-                                 <div class="btn rounded ease-bg">Gözat</div>
-                                 <span>Dosya seçiniz.</span>
-                             </div>
-                             <div class="textarea margin-5-b rounded dual-bordered ease-form">
-                                 <textarea placeholder="Placeholder Text"></textarea>
-                             </div>
-                             <div class="textarea toggle-textarea margin-5-b rounded dual-bordered ease-form">
-                                 <textarea placeholder="Toggle textarea example"></textarea>
-                             </div>
-                             <div class="textarea rounded dual-bordered ease-form" data-counter="255">
-                                 <textarea>Lorem ipsum dolor sit amet.</textarea>
-                             </div>
+                    <h4>File Input</h4>
+                    <div class="padding-30-b">
+                        <div class="file rounded dual-bordered ease-form">
+                            <input type="file">
+                            <div class="btn rounded ease-bg">Browse</div>
+                            <span>Choose file.</span>
+                        </div>
+                    </div>
 
-                             <span class="sp15"></span>
+                    <h4>Checks and Radios</h4>
+                    <div class="padding-30-b">
+                        <label class="check">
+                            <input type="checkbox" checked> Checkbox
+                        </label>
+                        <span class="sp10"></span>
+                        <label class="check">
+                            <input class="indeterminate" type="checkbox"> Indeterminate
+                        </label>
+                        <span class="sp10"></span>
+                        <label class="radio">
+                            <input type="radio" name="radiotest1"> Radio1
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="radiotest1"> Radio2
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="radiotest1"> Radio3
+                        </label>
 
-                             <div>
-                                 <div class="check-custom rounded dual-bordered ease-form">
-                                     <input id="check-test" type="checkbox" checked>
-                                     <i class="ease-form-custom"></i>
-                                 </div>
-                                 <label for="check-test" class="label-custom">Remember me</label>
+                        <span class="sp15"></span>
+
+                        <div>
+                            <div class="check-custom rounded dual-bordered ease-form">
+                                <input id="custom-check" type="checkbox" checked>
+                                <i class="ease-form-custom"></i>
                             </div>
-                            <div>
-                                 <div class="check-custom rounded dual-bordered ease-form">
-                                     <input id="check-test2" type="checkbox" class="indeterminate">
-                                     <i class="ease-form-custom"></i>
-                                 </div>
-                                 <label for="check-test2" class="label-custom">Indeterminate</label>
+                            <label for="custom-check" class="label-custom">Custom Checkbox</label>
+                       </div>
+                       <div>
+                            <div class="check-custom rounded dual-bordered ease-form">
+                                <input id="indeterminate" type="checkbox" class="indeterminate">
+                                <i class="ease-form-custom"></i>
                             </div>
-                            <div>
-                                 <div class="radio-custom dual-bordered ease-form">
-                                     <input id="radio-test1" type="radio" name="radiotest1" checked>
-                                     <i class="ease-form-custom"></i>
-                                 </div>
-                                 <label for="radio-test1" class="label-custom">Radio1</label>
+                            <label for="indeterminate" class="label-custom">Custom Indeterminate</label>
+                       </div>
+                       <div>
+                            <div class="radio-custom dual-bordered ease-form">
+                                <input id="radio1" type="radio" name="radiotest2" checked>
+                                <i class="ease-form-custom"></i>
+                            </div>
+                            <label for="radio1" class="label-custom">Custom Radio1</label>
 
-                                 <div class="radio-custom dual-bordered ease-form">
-                                     <input id="radio-test2" type="radio" name="radiotest1">
-                                     <i class="ease-form-custom"></i>
-                                 </div>
-                                 <label for="radio-test2" class="label-custom">Radio2</label>
+                            <div class="radio-custom dual-bordered ease-form">
+                                <input id="radio2" type="radio" name="radiotest2">
+                                <i class="ease-form-custom"></i>
+                            </div>
+                            <label for="radio2" class="label-custom">Custom Radio2</label>
 
-                                <div class="radio-custom dual-bordered ease-form">
-                                     <input id="radio-test3" type="radio" name="radiotest1">
-                                     <i class="ease-form-custom"></i>
-                                 </div>
-                                 <label for="radio-test3" class="label-custom">Radio3</label>
-                             </div>
+                           <div class="radio-custom dual-bordered ease-form">
+                                <input id="radio3" type="radio" name="radiotest2">
+                                <i class="ease-form-custom"></i>
+                            </div>
+                            <label for="radio3" class="label-custom">Custom Radio3</label>
+                        </div>
 
-                             <span class="sp15"></span>
+                        <span class="sp15"></span>
 
-                             <div>
-                                <div class="switch-custom dual-bordered ease-form">
-                                    <input id="switch-me" type="checkbox">
-                                    <i class="ease-form-custom"></i>
-                                </div>
-                                <label for="switch-me">Switch Me</label>
-                             </div>
-                             <div>
-                                <div class="switch-custom dual-bordered ease-form">
-                                    <input id="switch-me2" type="checkbox">
-                                    <i class="theme-default2 ui-dark ease-form-custom"></i>
-                                </div>
-                                <label for="switch-me2">Switch Me</label>
-                             </div>
-                             <div>
-                                <div class="switch-custom dual-bordered ease-form">
-                                    <input id="switch-me3" type="checkbox" class="indeterminate">
-                                    <i class="ease-form-custom"></i>
-                                </div>
-                                <label for="switch-me3">Indeterminate</label>
-                             </div>
+                        <div>
+                           <div class="switch-custom dual-bordered ease-form">
+                               <input id="switch1" type="checkbox" checked>
+                               <i class="ease-form-custom"></i>
+                           </div>
+                           <label for="switch1">Custom Switch</label>
+                        </div>
+                        <div>
+                           <div class="switch-custom dual-bordered ease-form">
+                               <input id="switch2" type="checkbox" checked>
+                               <i class="theme-default2 ui-dark ease-form-custom"></i>
+                           </div>
+                           <label for="switch2">Custom Switch with Swatches</label>
+                        </div>
+                        <div>
+                           <div class="switch-custom dual-bordered ease-form">
+                               <input id="switch3" type="checkbox" class="indeterminate">
+                               <i class="ease-form-custom"></i>
+                           </div>
+                           <label for="switch3">Indeterminate Switch</label>
+                        </div>
+                    </div>
 
-                             <span class="sp15"></span>
+                    <h4>Inline Forms</h4>
+                    <div class="padding-30-b">
+                        <div class="text margin-10-b rounded dual-bordered form-inline ease-form">
+                            <input type="text">
+                        </div>
+                        <div class="select margin-10-b rounded dual-bordered form-inline ease-form">
+                            <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                            <select>
+                                <option value="1">Select</option>
+                                <option value="2">Second option</option>
+                                <option value="3">Third option</option>
+                            </select>
+                        </div>
+                        <div class="textarea toggle-textarea margin-10-b rounded dual-bordered form-inline ease-form">
+                            <textarea placeholder="Textarea"></textarea>
+                        </div>
 
-                             <label class="check">
-                                 <input type="checkbox"> Remember me
-                             </label>
-                             <label class="radio">
-                                 <input type="radio" name="radiotest2"> Radio1
-                             </label>
-                             <label class="radio">
-                                 <input type="radio" name="radiotest2"> Radio2
-                             </label>
-                             <label class="radio">
-                                 <input type="radio" name="radiotest2"> Radio3
-                             </label>
+                        <span class="sp15"></span>
+
+                        <h5 class="dark">Responsive Inline Forms</h5>
+                        <div class="text margin-10-b rounded dual-bordered form-inline-responsive ease-form">
+                            <input type="text">
+                        </div>
+                        <div class="select margin-10-b rounded dual-bordered form-inline-responsive ease-form">
+                            <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                            <select>
+                                <option value="1">Select</option>
+                                <option value="2">Second option</option>
+                                <option value="3">Third option</option>
+                            </select>
+                        </div>
+                        <div class="textarea toggle-textarea margin-10-b rounded dual-bordered form-inline-responsive ease-form">
+                            <textarea placeholder="Textarea"></textarea>
                         </div>
                     </div>
 
@@ -546,7 +400,28 @@
                         </div>
                     </div>
 
-                    <h4>Submit With Form Icons<h4>
+                    <h4>Large Forms</h4>
+                    <div class="padding-30-b">
+                        <label for="fullname" class="form-label">Full Name</label>
+                        <div class="text text-lg dual-bordered rounded ease-form">
+                            <input id="fullname" type="text" placeholder="Enter name">
+                        </div>
+
+                        <span class="sp10"></span>
+
+                        <label for="age" class="form-label">Your Age</label>
+                        <div class="select select-lg rounded dual-bordered ease-form">
+                            <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                            <select id="age">
+                                <option value="0">Select your age</option>
+                                <option value="1">Under 20</option>
+                                <option value="2">21- 30</option>
+                                <option value="3">31 - 40</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <h4>Submit with Form Icons<h4>
                     <div class="padding-30-b">
                         <form action="#post-succesful">
                             <div class="text text-icon submit-enter text-icon-right rounded dual-bordered ease-form">
@@ -554,6 +429,243 @@
                                 <input type="text" placeholder="Submit with icon or press enter key">
                             </div>
                         </form>
+                    </div>
+
+                    <h4>Forms with Actions</h4>
+                    <div class="padding-30-b">
+                        <div class="row row-sm-padding-ver">
+                            <div class="col-6 no-responsive">
+                                <label class="form-label">Label</label>
+                            </div>
+                            <div class="col-6 no-responsive align-right">
+                               <a class="small dark underline ease-link" href="#">Top Right Link</a>
+                            </div>
+                        </div>
+                        <div class="text margin-10-b rounded dual-bordered ease-form">
+                            <input type="text">
+                        </div>
+
+                        <div class="row row-sm-padding-ver">
+                            <div class="col-6 no-responsive">
+                                <label class="form-label">Label</label>
+                            </div>
+                            <div class="col-6 no-responsive align-right">
+                               <a class="btn btn-xs dark rounded ease-bg">Button</a>
+                            </div>
+                        </div>
+                        <div class="text margin-10-b rounded dual-bordered ease-form">
+                            <input type="text">
+                        </div>
+
+                        <div class="row row-sm-padding-ver">
+                            <div class="col-6 no-responsive">
+                                <label class="form-label">Label</label>
+                            </div>
+                            <div class="col-6 no-responsive align-right">
+                               <div class="dropdown submenu-left">
+                                   <button class="btn btn-xs btn-invisible dark rounded ease-bg">Dropdown Button <i class="icon-toggle icon icon-xxs icon-angle-down no-opacity"></i></button>
+                                   <ul class="bordered dual-bordered rounded shadow ease-dropdown">
+                                       <li><a href="#">Dropdown Link</a></li>
+                                       <li><a href="#">Dropdown Link</a></li>
+                                       <li><a href="#">Dropdown Link</a></li>
+                                   </ul>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="text rounded dual-bordered ease-form">
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <h4>Forms in Dark Swatches</h4>
+                    <div class="padding-15 margin-30-b rounded theme-default2 ui-dark">
+                        <div class="text form-light margin-10-b rounded dual-bordered ease-form">
+                            <input type="text">
+                        </div>
+                        <div class="text text-icon form-light margin-10-b rounded dual-bordered ease-form">
+                            <i class="icon icon-sm icon-search ease-opacity"></i>
+                            <input type="text" placeholder="With text icon">
+                        </div>
+                        <div class="text text-lg text-icon text-icon-left text-icon-lg form-light rounded dual-bordered ease-form">
+                            <i class="icon icon-lg icon-search ease-opacity"></i>
+                            <input type="text" placeholder="With text icon">
+                        </div>
+                    </div>
+
+                    <h4>Form Holders</h4>
+                    <div class="row padding-30-b">
+                        <div class="col-12">
+                            <label class="form-label">Form Holder with Grid System</label>
+                            <div class="form-holder margin-10-b">
+                                <div class="row row-no-padding show-gutter">
+
+                                    <div class="col-5 no-responsive">
+                                        <div class="text rounded dual-bordered ease-form">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-2 no-responsive">
+                                        <div class="select rounded dual-bordered ease-form">
+                                            <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                                            <select>
+                                                <option value="1">Select</option>
+                                                <option value="2">Second option</option>
+                                                <option value="3">Third option</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 no-responsive">
+                                        <div class="text rounded dual-bordered ease-form">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label">Form Holder with Static Grid</label>
+                            <div class="form-holder">
+                                <div class="row row-no-padding show-gutter">
+
+                                    <div class="col-static no-responsive">
+                                        <div class="static-100">
+                                            <div class="select rounded dual-bordered ease-form">
+                                                <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                                                <select>
+                                                    <option value="1">Select</option>
+                                                    <option value="2">Second option</option>
+                                                    <option value="3">Third option</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row row-no-padding">
+                                            <div class="col-12">
+                                                <div class="text rounded dual-bordered ease-form">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row row-no-padding">
+                                            <div class="col-12">
+                                                <div class="text rounded dual-bordered ease-form">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label">Form Holder with Static Grid</label>
+                            <div class="form-holder margin-10-b">
+                                <div class="row row-no-padding show-gutter">
+
+                                    <div class="col-static no-responsive">
+                                        <div class="row row-no-padding">
+                                            <div class="col-12">
+                                                <div class="text rounded dual-bordered ease-form">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="static-100">
+                                            <div class="select rounded dual-bordered ease-form">
+                                                <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                                                <select>
+                                                    <option value="1">Select</option>
+                                                    <option value="2">Second option</option>
+                                                    <option value="3">Third option</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row row-no-padding">
+                                            <div class="col-12">
+                                                <div class="text rounded dual-bordered ease-form">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label">Form Holder with Static Grid</label>
+                            <div class="form-holder">
+                                <div class="row row-no-padding show-gutter">
+
+                                    <div class="col-static no-responsive">
+                                        <div class="row row-no-padding">
+                                            <div class="col-12">
+                                                <div class="text rounded dual-bordered ease-form">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row row-no-padding">
+                                            <div class="col-12">
+                                                <div class="text rounded dual-bordered ease-form">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="static-100">
+                                            <div class="select rounded dual-bordered ease-form">
+                                                <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                                                <select>
+                                                    <option value="1">Select</option>
+                                                    <option value="2">Second option</option>
+                                                    <option value="3">Third option</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label">Form Holder with Static Grid</label>
+                            <div class="form-holder">
+                                <div class="row row-no-padding show-gutter">
+
+                                    <div class="col-static no-responsive">
+                                        <div class="row row-no-padding">
+                                            <div class="col-12">
+                                                <div class="text rounded dual-bordered ease-form">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="static-100">
+                                            <div class="select rounded dual-bordered ease-form">
+                                                <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                                                <select>
+                                                    <option value="1">Select</option>
+                                                    <option value="2">Second option</option>
+                                                    <option value="3">Third option</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="static-100">
+                                            <div class="select rounded dual-bordered ease-form">
+                                                <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                                                <select>
+                                                    <option value="1">Select</option>
+                                                    <option value="2">Second option</option>
+                                                    <option value="3">Third option</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <h4>Special Forms</h4>
@@ -624,7 +736,7 @@
                         </div>
                         <div class="col-8">
                             <label class="form-label" for="creditcard">Credit Card Number</label>
-                            <div class="form-holder">
+                            <div class="form-holder margin-10-b">
                                 <div class="row row-no-padding show-gutter align-center ease-2nd-form">
                                     <div class="col-3 no-responsive">
                                         <div class="text rounded dual-bordered">
@@ -648,7 +760,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <span class="sp5"></span>
+
                             <label class="form-label" for="cvv2">CVV2</label>
                             <span class="clearfix"></span>
                             <div class="text form-inline rounded dual-bordered ease-form">
@@ -660,7 +772,7 @@
                             <label class="form-grid" for="my-password">Toggle Password</label>
                         </div>
                         <div class="col-8">
-                            <div class="row row-no-padding-ver">
+                            <div class="row row-sm-padding-ver">
                                 <div class="col-6 no-responsive">
                                     <label class="form-label" for="form03">Label</label>
                                 </div>
@@ -668,70 +780,73 @@
                                     <a data-id="my-password" class="btn toggle-password btn-xs btn-invisible dark rounded ease-bg">Show/Hide password with id</a>
                                 </div>
                             </div>
-                            <div class="text text-icon rounded dual-bordered ease-form">
+                            <div class="text text-icon margin-10-b rounded dual-bordered ease-form">
                                 <input id="my-password" type="password" placeholder="Toggle Password with Text Icon">
                             </div>
-                            <span class="sp5"></span>
+
                             <div class="text text-icon rounded dual-bordered ease-form">
                                 <span title="Show/Hide Password" class="toggle-password icon icon-md icon-eye ease-opacity"></span>
                                 <input type="password" placeholder="Toggle Password Example">
                             </div>
                         </div>
+
+                        <div class="col-4">
+                            <label class="form-grid" for="captcha">Captcha</label>
+                        </div>
+                        <div class="col-8">
+                            <div class="form-holder">
+                                <div class="row row-no-padding show-gutter ease-2nd-form">
+                                    <div class="col-static no-responsive">
+                                        <div class="static-100">
+                                            <img class="bordered dual-bordered rounded ease-border" src="images/captcha.jpg" alt="">
+                                        </div>
+                                        <div class="static-42">
+                                            <button class="btn btn-lg btn-square bordered dual-bordered ease-button" data-tooltip title="Yenile">
+                                                <i class="icon icon-md icon-refresh"></i> <!-- for loading process add "animate-spin" -->
+                                            </button>
+                                        </div>
+                                        <div class="row row-no-padding">
+                                            <div class="text text-lg dual-bordered rounded ease-form">
+                                                <input id="captcha" type="text" maxlength="4" placeholder="Please enter code">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <h4>Required Forms</h4>
-                    <div class="row padding-30-b">
+                    <div class="row">
                         <div class="col-4">
-                            <label class="form-grid" for="validate-form01">Required with message</label>
+                            <label class="form-grid" for="required1">Required with message</label>
                         </div>
                         <div class="col-8">
                             <div class="text rounded dual-bordered ease-form">
-                                <input class="required" id="validate-form01" type="text" placeholder="Type your name">
+                                <input class="required" id="required1" type="text" placeholder="Type your name">
                             </div>
                             <p class="required-msg">Please, type your name.</p>
                             <i class="hint dark">* Required</i>
                         </div>
                         <div class="col-4">
-                            <label class="form-grid" for="validate-form02">Required with no message</label>
+                            <label class="form-grid" for="required2">Required with no message</label>
                         </div>
                         <div class="col-8">
                             <div class="text rounded dual-bordered ease-form">
-                                <input class="required" id="validate-form02" type="text">
+                                <input class="required" id="required2" type="text">
                             </div>
                             <i class="hint dark">* Required</i>
                         </div>
                         <div class="col-4">
-                            <label class="form-grid" for="validate-form03">Required with min and max length</label>
+                            <label class="form-grid" for="required3">Required with min and max length</label>
                         </div>
                         <div class="col-8">
                             <div class="text rounded dual-bordered ease-form">
-                                <input class="required" id="validate-form03" type="text" minlength="3" maxlength="20">
+                                <input class="required" id="required3" type="text" minlength="3" maxlength="10">
                             </div>
-                            <ul class="required-msg rounded">
-                                <li>Minimum length is 3</li>
-                                <li>Maximum length is 20</li>
-                            </ul>
+                            <p class="required-msg rounded">Minimum length is 3 characters</p>
                             <i class="hint dark">* Required</i>
                         </div>
-                    </div>
-
-                    <h4>Large Forms</h4>
-                    <label for="fullname" class="form-label">Full Name</label>
-                    <div class="text text-lg dual-bordered rounded ease-form">
-                        <input id="fullname" type="text" placeholder="Enter name">
-                    </div>
-
-                    <span class="sp10"></span>
-
-                    <label for="age" class="form-label">Your Age</label>
-                    <div class="select select-lg rounded dual-bordered ease-form">
-                        <i class="icon icon-sm icon-angle-down ease-opacity"></i>
-                        <select id="age">
-                            <option value="0">Select your age</option>
-                            <option value="1">Under 20</option>
-                            <option value="2">21- 30</option>
-                            <option value="3">31 - 40</option>
-                        </select>
                     </div>
 
                 </div>
