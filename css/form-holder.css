@@ -20,3 +20,9 @@
 .form-holder [class*="col-"]:not(:last-child) .text.rounded,.form-holder [class*="col-"]:not(:last-child) .select.rounded,.form-holder [class*="col-"]:not(:last-child) .btn.rounded,.form-holder [class*="col-"]:not(:last-child) img.rounded,
 .form-holder .col-static > [class*="row"]:not(:last-child) .text.rounded,.form-holder .col-static > [class*="row"]:not(:last-child) .select.rounded,.form-holder .col-static > [class*="row"]:not(:last-child) .btn.rounded,.form-holder .col-static > [class*="row"]:not(:last-child) img.rounded,
 .form-holder [class*="static-"]:not(:last-child) .text.rounded,.form-holder [class*="static-"]:not(:last-child) .select.rounded,.form-holder [class*="static-"]:not(:last-child) .btn.rounded,.form-holder [class*="static-"]:not(:last-child) img.rounded { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+
+.form-holder.error .text,.form-holder.error .select,
+.form-holder.error .btn.bordered,.form-holder.error .btn[class*="-bordered"],
+.form-holder.error img.bordered,.form-holder.error img[class*="-bordered"] { border-color: #dc000f !important; }
+
+.form-holder.error .text,.form-holder.error .select { background-color: #fffcfc !important; }
