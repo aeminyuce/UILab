@@ -855,22 +855,45 @@
                         </div>
 
                         <div class="col-4">
-                            <label class="form-grid" for="required4">Required with select forms.</label>
+                            <label class="form-grid" for="required4">Required with password and min length</label>
+                        </div>
+                        <div class="col-8">
+                            <div class="text rounded dual-bordered ease-form">
+                                <input class="required" id="required4" type="password" minlength="8">
+                            </div>
+                            <p class="required-msg rounded">Minimum length is 8 characters</p>
+                            <i class="hint dark">* Required</i>
+                        </div>
+
+                        <div class="col-4">
+                            <label class="form-grid" for="required5">Required with e-mail and min length</label>
+                        </div>
+                        <div class="col-8">
+                            <div class="text rounded dual-bordered ease-form">
+                                <input class="required" id="required5" type="email" minlength="10">
+                            </div>
+                            <p class="required-msg rounded">Minimum length is 10 characters</p>
+                            <i class="hint dark">* Required</i>
+                        </div>
+
+                        <div class="col-4">
+                            <label class="form-grid" for="required6">Required with select forms.</label>
                         </div>
                         <div class="col-8">
                             <div class="select rounded dual-bordered ease-form">
                                 <i class="icon icon-sm icon-angle-down ease-opacity"></i>
-                                <select class="required">
+                                <select id="required6" class="required">
                                     <option value="">Select</option>
                                     <option>First</option>
                                     <option>Second</option>
                                 </select>
                             </div>
                             <p class="required-msg rounded">Please, select any option.</p>
+                            <i class="hint dark">* Required</i>
                         </div>
 
                         <div class="col-4">
-                            <label class="form-grid" for="required5">Required with form holders</label>
+                            <label class="form-grid" for="required7">Required with form holders</label>
                         </div>
                         <div class="col-8">
                             <div class="form-holder">
@@ -880,7 +903,7 @@
                                         <div class="row row-no-padding">
                                             <div class="col-12">
                                                 <div class="text rounded dual-bordered ease-form">
-                                                    <input id="required5" class="required" type="text" placeholder="Keyword">
+                                                    <input id="required7" class="required" type="text" placeholder="Keyword">
                                                 </div>
                                             </div>
                                         </div>
@@ -905,6 +928,7 @@
                                     <li>Select a category.</li>
                                 </ul>
                             </div>
+                            <i class="hint dark">* Required</i>
                         </div>
                     </div>
 
