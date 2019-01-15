@@ -732,15 +732,15 @@
                         </div>
 
                         <div class="col-4">
-                            <label class="form-grid" for="creditcard">Keypad</label>
+                            <label class="form-grid" for="creditcard">Credit Card Form</label>
                         </div>
                         <div class="col-8">
-                            <label class="form-label" for="creditcard">Credit Card Number</label>
+                            <label class="form-label">Credit Card Number</label>
                             <div class="form-holder margin-10-b">
                                 <div class="row row-no-padding show-gutter align-center ease-2nd-form">
                                     <div class="col-3 no-responsive">
                                         <div class="text rounded dual-bordered">
-                                            <input id="creditcard" maxlength="4" type="text" class="number">
+                                            <input maxlength="4" type="text" class="number">
                                         </div>
                                     </div>
                                     <div class="col-3 no-responsive">
@@ -761,10 +761,9 @@
                                 </div>
                             </div>
 
-                            <label class="form-label" for="cvv2">CVV2</label>
-                            <span class="clearfix"></span>
-                            <div class="text form-inline rounded dual-bordered ease-form">
-                                <input id="cvv2" type="text" maxlength="3" class="number align-center">
+                            <label class="form-label block" for="cvv2">CVV2</label>
+                            <div class="text rounded dual-bordered form-inline-responsive ease-form">
+                                <input type="text" maxlength="3" class="number align-center">
                             </div>
                         </div>
 
@@ -801,7 +800,7 @@
                                             <img class="bordered dual-bordered rounded ease-border" src="images/captcha.jpg" alt="">
                                         </div>
                                         <div class="static-42">
-                                            <button class="btn btn-lg btn-square bordered dual-bordered ease-button" data-tooltip title="Yenile">
+                                            <button class="btn btn-lg btn-square bordered dual-bordered ease-button" data-tooltip title="Refresh">
                                                 <i class="icon icon-md icon-refresh"></i> <!-- for loading process add "animate-spin" -->
                                             </button>
                                         </div>
@@ -828,6 +827,7 @@
                             <p class="required-msg">Please, type your name.</p>
                             <i class="hint dark">* Required</i>
                         </div>
+
                         <div class="col-4">
                             <label class="form-grid" for="required2">Required with no message</label>
                         </div>
@@ -837,6 +837,7 @@
                             </div>
                             <i class="hint dark">* Required</i>
                         </div>
+
                         <div class="col-4">
                             <label class="form-grid" for="required3">Required with min and max length</label>
                         </div>
@@ -846,6 +847,38 @@
                             </div>
                             <p class="required-msg rounded">Minimum length is 3 characters</p>
                             <i class="hint dark">* Required</i>
+                        </div>
+
+                        <div class="col-4">
+                            <label class="form-grid" for="required4">Required with form holders</label>
+                        </div>
+                        <div class="col-8">
+                            <div class="form-holder">
+                                <div class="row row-no-padding show-gutter">
+
+                                    <div class="col-static no-responsive">
+                                        <div class="row row-no-padding">
+                                            <div class="col-12">
+                                                <div class="text rounded dual-bordered ease-form">
+                                                    <input id="required4" class="required" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="static-200">
+                                            <div class="select rounded dual-bordered ease-form">
+                                                <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                                                <select>
+                                                    <option value="1">Select</option>
+                                                    <option value="2">Second option</option>
+                                                    <option value="3">Third option</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <p class="required-msg rounded">Minimum length is 3 characters</p>
                         </div>
                     </div>
 
