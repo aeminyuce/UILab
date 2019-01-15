@@ -13,4 +13,3 @@
 .file:hover .btn { background-color: rgba(0,0,0,.15); }
 
 .file > span { white-space: nowrap; text-overflow: ellipsis; line-height: 30px; width: 100%; padding-right: 10px; padding-left: 135px; overflow: hidden; display: block; position: absolute; }
-.file.dual-bordered > span {line-height: 28px; }
