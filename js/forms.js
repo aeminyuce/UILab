@@ -100,54 +100,88 @@ var forms = {};
         });
 
         // required forms
-        required = function (that) {
+        required = function (that, type) {
 
-            var p, checkHolder, next, showMsg, showErr, min;
+            var p, checkHolder, checkForms, holderForms, next, showMsg, showErr, min, val;
 
-            checkHolder = events.closest(that, '.form-holder')[0];
-            if (checkHolder === undefined) {
-                p = events.closest(that, '.text')[0];
+            checkForms = function (t) {
 
-            } else { p = checkHolder; }
+                showMsg = false;
 
-            showMsg = false;
-
-            if (events.hasClass(next, 'required-msg')) {
-
-                showMsg = true;
                 next = p.nextElementSibling;
+                if (events.hasClass(next, 'required-msg')) {
+                    showMsg = true;
+                }
 
-            }
+                // show error
+                showErr = function () {
 
-            // show error
-            showErr = function () {
+                    events.addClass(p, 'error');
+                    if (showMsg) {
+                        events.addClass(next, 'show');
+                    }
 
-                events.addClass(p, 'error');
+                };
+
+                // hide error
+                events.removeClass(p, 'error');
                 if (showMsg) {
-                    events.addClass(next, 'show');
+                    events.removeClass(next, 'show');
+                }
+
+                // get value
+                val = t.value;
+                val = val.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
+
+                // check value is empty
+                if (val === '') { showErr(); }
+
+                if (type === 'text') {
+
+                    // check min
+                    min = t.getAttribute('minlength');
+
+                    if (min !== null && min !== '' && !isNaN(min)) {
+                        if (val.length < min) { showErr(); }
+                    }
+
                 }
 
             };
 
-            // hide error
-            events.removeClass(p, 'error');
-            if (showMsg) {
-                events.removeClass(next, 'show');
-            }
+            checkHolder = events.closest(that, '.form-holder')[0];
+            if (checkHolder === undefined) {
 
-            // check value is empty
-            if (that.value === '') { showErr(); }
+                p = events.closest(that, '.' + type)[0];
+                checkForms(that);
 
-            // check min
-            min = that.getAttribute('minlength');
-            if (min !== null && min !== '' && !isNaN(min)) {
-                if (that.value.length < min) { showErr(); }
+            } else {
+
+                p = checkHolder;
+
+                holderForms = selector('.text input.required,.select select.required', p);
+                events.each(holderForms, function () {
+
+                    checkForms(this);
+                    if (this.type === 'text') {
+                        type = 'text';
+
+                    } else if (this.tagName === 'SELECT') {
+                        type = 'select';
+                    }
+
+                });
+
             }
 
         };
 
-        events.on(document, 'blur', '.text input.required', function () {
-            required(this);
+        events.on(document, 'keyup blur', '.text input.required', function () {
+            required(this, 'text');
+        });
+
+        events.on(document, 'change blur', '.select select.required', function () {
+            required(this, 'select');
         });
 
         // form icons
