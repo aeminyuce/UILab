@@ -102,15 +102,21 @@ var forms = {};
         // required forms
         required = function (that) {
 
-            var p, next, showMsg, showErr, min, max;
+            var p, checkHolder, next, showMsg, showErr, min;
 
-            p = events.closest(that, '.text')[0];
-            next = p.nextElementSibling;
+            checkHolder = events.closest(that, '.form-holder')[0];
+            if (checkHolder === undefined) {
+                p = events.closest(that, '.text')[0];
+
+            } else { p = checkHolder; }
 
             showMsg = false;
 
             if (events.hasClass(next, 'required-msg')) {
+
                 showMsg = true;
+                next = p.nextElementSibling;
+
             }
 
             // show error
@@ -136,12 +142,6 @@ var forms = {};
             min = that.getAttribute('minlength');
             if (min !== null && min !== '' && !isNaN(min)) {
                 if (that.value.length < min) { showErr(); }
-            }
-
-            // check max
-            max = that.getAttribute('maxlength');
-            if (max !== null && max !== '' && !isNaN(max)) {
-                if (that.value.length > max) { showErr(); }
             }
 
         };
