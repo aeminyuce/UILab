@@ -12,7 +12,7 @@ var forms = {};
 
     forms.Start = function () {
 
-        var mobile, required;
+        var mobile;
 
         if (navigator.userAgent.toLowerCase().indexOf('mobile') > -1) { // detecting mobile
             mobile = true;
@@ -97,95 +97,6 @@ var forms = {};
         // file inputs
         events.on(document, 'change', '.file input', function () {
             selector('span', this.parentElement)[0].innerHTML = this.value;
-        });
-
-        // required forms
-        required = function (that, type) {
-
-            var p, parentType, checkHolder, checkForms, holderForms, next, showMsg, hideErr, showErr, min, val;
-
-            hideErr = function () {
-
-                showMsg = false;
-                next = p.nextElementSibling;
-
-                if (events.hasClass(next, 'required-msg')) { showMsg = true; }
-
-                events.removeClass(p, 'error');
-                if (showMsg) { events.removeClass(next, 'show'); }
-
-            };
-
-            checkForms = function (t) {
-
-                // show error
-                showErr = function () {
-
-                    events.addClass(p, 'error');
-                    if (showMsg) {
-                        events.addClass(next, 'show');
-                    }
-
-                };
-
-                // get value
-                val = t.value;
-                val = val.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
-
-                // check value is empty
-                if (val === '') { showErr(); }
-
-                if (type !== 'select') {
-
-                    // check min
-                    min = t.getAttribute('minlength');
-
-                    if (min !== null && min !== '' && !isNaN(min)) {
-                        if (val.length < min) { showErr(); }
-                    }
-
-                }
-
-            };
-
-            checkHolder = events.closest(that, '.form-holder')[0];
-            if (checkHolder === undefined) { // single forms
-
-                parentType = type;
-                if (type !== 'select') { parentType = 'text'; }
-
-                p = events.closest(that, '.' + parentType)[0];
-                hideErr();
-                checkForms(that);
-
-            } else { // form holders
-
-                p = checkHolder;
-
-                holderForms = selector('.text input.required,.select select.required', p);
-                hideErr();
-
-                events.each(holderForms, function () {
-
-                    checkForms(this);
-
-                    if (this.tagName === 'SELECT') {
-                        type = 'select';
-
-                    } else { type = this.type; }
-
-                });
-
-            }
-
-        };
-
-        events.on(document, 'keyup blur', '.text input.required', function () {
-            required(this, this.type);
-        });
-
-        events.on(document, 'change blur', '.select select.required', function () {
-            required(this, 'select');
         });
 
         // form icons
