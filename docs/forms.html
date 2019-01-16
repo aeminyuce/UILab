@@ -58,6 +58,7 @@
     <script src="../js/indeterminate.js"></script>
     <script src="../js/number.js"></script>
     <script src="../js/form-spinner.js"></script>
+    <script src="../js/required-forms.js"></script>
     <script src="../js/textarea-counter.js"></script>
     <script src="../js/toggle-password.js"></script>
 
@@ -428,7 +429,7 @@
 
                     <h4>Submit with Form Icons<h4>
                     <div class="padding-30-b">
-                        <form action="#post-succesful">
+                        <form action="#succesful">
                             <div class="text text-icon submit-enter text-icon-right rounded dual-bordered ease-form">
                                 <button type="submit" class="submit-icon icon icon-sm icon-search ease-opacity"></button>
                                 <input type="text" placeholder="Submit with icon or press enter key">
@@ -713,27 +714,25 @@
                             <label class="form-grid" for="currency">Currency Spinner</label>
                         </div>
                         <div class="col-8">
-                            <form action="#">
-                                <div class="form-holder currency-spinner">
-                                    <div class="row row-no-padding show-gutter">
-                                        <div class="col-static no-responsive">
-                                            <div class="static-32">
-                                                <button class="currency-down btn btn-square bordered dual-bordered rounded ease-all"><i class="icon icon-sm icon-minus"></i></button>
-                                            </div>
-                                            <div class="row row-no-padding">
-                                                <div class="col-12">
-                                                    <div class="text rounded dual-bordered ease-form">
-                                                        <input id="currency" type="text" value="645.000" min="645.000" step="5.000" maxlength="12" autocomplete="off">
-                                                    </div>
+                            <div class="form-holder currency-spinner">
+                                <div class="row row-no-padding show-gutter">
+                                    <div class="col-static no-responsive">
+                                        <div class="static-32">
+                                            <button class="currency-down btn btn-square bordered dual-bordered rounded ease-all"><i class="icon icon-sm icon-minus"></i></button>
+                                        </div>
+                                        <div class="row row-no-padding">
+                                            <div class="col-12">
+                                                <div class="text rounded dual-bordered ease-form">
+                                                    <input id="currency" type="text" value="645.000" min="645.000" step="5.000" maxlength="12" autocomplete="off">
                                                 </div>
                                             </div>
-                                            <div class="static-32">
-                                                <button class="currency-up btn btn-square bordered dual-bordered rounded ease-all"><i class="icon icon-sm icon-plus"></i></button>
-                                            </div>
+                                        </div>
+                                        <div class="static-32">
+                                            <button class="currency-up btn btn-square bordered dual-bordered rounded ease-all"><i class="icon icon-sm icon-plus"></i></button>
                                         </div>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
                         </div>
 
                         <div class="col-4">
@@ -821,115 +820,117 @@
                     </div>
 
                     <h4>Required Forms</h4>
-                    <div class="row padding-30-b">
-                        <div class="col-4">
-                            <label class="form-grid" for="required1">Required with message</label>
-                        </div>
-                        <div class="col-8">
-                            <div class="text rounded dual-bordered ease-form">
-                                <input class="required" id="required1" type="text" placeholder="Type your name">
+                    <div class="padding-30-b">
+                        <form action="#succesful">
+                            <div class="col-4">
+                                <label class="form-grid" for="required1">Required with message</label>
                             </div>
-                            <p class="required-msg">Please, type your name.</p>
-                            <i class="hint dark">* Required</i>
-                        </div>
-
-                        <div class="col-4">
-                            <label class="form-grid" for="required2">Required with no message</label>
-                        </div>
-                        <div class="col-8">
-                            <div class="text rounded dual-bordered ease-form">
-                                <input class="required" id="required2" type="text">
+                            <div class="col-8">
+                                <div class="text rounded dual-bordered ease-form">
+                                    <input class="required" id="required1" type="text" placeholder="Type your name">
+                                </div>
+                                <p class="required-msg">Please, type your name.</p>
+                                <i class="hint dark">* Required</i>
                             </div>
-                            <i class="hint dark">* Required</i>
-                        </div>
 
-                        <div class="col-4">
-                            <label class="form-grid" for="required3">Required with min and max length</label>
-                        </div>
-                        <div class="col-8">
-                            <div class="text rounded dual-bordered ease-form">
-                                <input class="required" id="required3" type="text" minlength="3" maxlength="10">
+                            <div class="col-4">
+                                <label class="form-grid" for="required2">Required with no message</label>
                             </div>
-                            <p class="required-msg rounded">Minimum length is 3 characters</p>
-                            <i class="hint dark">* Required</i>
-                        </div>
-
-                        <div class="col-4">
-                            <label class="form-grid" for="required4">Required with password and min length</label>
-                        </div>
-                        <div class="col-8">
-                            <div class="text rounded dual-bordered ease-form">
-                                <input class="required" id="required4" type="password" minlength="8">
+                            <div class="col-8">
+                                <div class="text rounded dual-bordered ease-form">
+                                    <input class="required" id="required2" type="text">
+                                </div>
+                                <i class="hint dark">* Required</i>
                             </div>
-                            <p class="required-msg rounded">Minimum length is 8 characters</p>
-                            <i class="hint dark">* Required</i>
-                        </div>
 
-                        <div class="col-4">
-                            <label class="form-grid" for="required5">Required with e-mail and min length</label>
-                        </div>
-                        <div class="col-8">
-                            <div class="text rounded dual-bordered ease-form">
-                                <input class="required" id="required5" type="email" minlength="10">
+                            <div class="col-4">
+                                <label class="form-grid" for="required3">Required with min and max length</label>
                             </div>
-                            <p class="required-msg rounded">Minimum length is 10 characters</p>
-                            <i class="hint dark">* Required</i>
-                        </div>
-
-                        <div class="col-4">
-                            <label class="form-grid" for="required6">Required with select forms.</label>
-                        </div>
-                        <div class="col-8">
-                            <div class="select rounded dual-bordered ease-form">
-                                <i class="icon icon-sm icon-angle-down ease-opacity"></i>
-                                <select id="required6" class="required">
-                                    <option value="">Select</option>
-                                    <option>First</option>
-                                    <option>Second</option>
-                                </select>
+                            <div class="col-8">
+                                <div class="text rounded dual-bordered ease-form">
+                                    <input class="required" id="required3" type="text" minlength="3" maxlength="10">
+                                </div>
+                                <p class="required-msg rounded">Minimum length is 3 characters.</p>
+                                <i class="hint dark">* Required</i>
                             </div>
-                            <p class="required-msg rounded">Please, select any option.</p>
-                            <i class="hint dark">* Required</i>
-                        </div>
 
-                        <div class="col-4">
-                            <label class="form-grid" for="required7">Required with form holders</label>
-                        </div>
-                        <div class="col-8">
-                            <div class="form-holder">
-                                <div class="row row-no-padding show-gutter">
+                            <div class="col-4">
+                                <label class="form-grid" for="required4">Required with password and min length</label>
+                            </div>
+                            <div class="col-8">
+                                <div class="text rounded dual-bordered ease-form">
+                                    <input class="required" id="required4" type="password" minlength="8">
+                                </div>
+                                <p class="required-msg rounded">Minimum length is 8 characters.</p>
+                                <i class="hint dark">* Required</i>
+                            </div>
 
-                                    <div class="col-static no-responsive">
-                                        <div class="row row-no-padding">
-                                            <div class="col-12">
-                                                <div class="text rounded dual-bordered ease-form">
-                                                    <input id="required7" class="required" type="text" placeholder="Keyword">
+                            <div class="col-4">
+                                <label class="form-grid" for="required5">Required with email</label>
+                            </div>
+                            <div class="col-8">
+                                <div class="text rounded dual-bordered ease-form">
+                                    <input class="required" id="required5" type="email">
+                                </div>
+                                <p class="required-msg rounded">Enter a valid email.</p>
+                                <i class="hint dark">* Required</i>
+                            </div>
+
+                            <div class="col-4">
+                                <label class="form-grid" for="required6">Required with select forms.</label>
+                            </div>
+                            <div class="col-8">
+                                <div class="select rounded dual-bordered ease-form">
+                                    <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                                    <select id="required6" class="required">
+                                        <option value="">Select</option>
+                                        <option>First</option>
+                                        <option>Second</option>
+                                    </select>
+                                </div>
+                                <p class="required-msg rounded">Please, select any option.</p>
+                                <i class="hint dark">* Required</i>
+                            </div>
+
+                            <div class="col-4">
+                                <label class="form-grid" for="required7">Required with form holders</label>
+                            </div>
+                            <div class="col-8">
+                                <div class="form-holder">
+                                    <div class="row row-no-padding show-gutter">
+
+                                        <div class="col-static no-responsive">
+                                            <div class="row row-no-padding">
+                                                <div class="col-12">
+                                                    <div class="text rounded dual-bordered ease-form">
+                                                        <input id="required7" class="required" type="text" placeholder="Keyword">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="static-200">
+                                                <div class="select rounded dual-bordered ease-form">
+                                                    <i class="icon icon-sm icon-angle-down ease-opacity"></i>
+                                                    <select class="required">
+                                                        <option value="">Category</option>
+                                                        <option>First</option>
+                                                        <option>Second</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="static-200">
-                                            <div class="select rounded dual-bordered ease-form">
-                                                <i class="icon icon-sm icon-angle-down ease-opacity"></i>
-                                                <select class="required">
-                                                    <option value="">Category</option>
-                                                    <option>First</option>
-                                                    <option>Second</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
 
+                                    </div>
                                 </div>
+                                <div class="required-msg rounded">
+                                    <b>Please, complete these actions:</b>
+                                    <ul>
+                                        <li>Type a keyword.</li>
+                                        <li>Select a category.</li>
+                                    </ul>
+                                </div>
+                                <i class="hint dark">* Required</i>
                             </div>
-                            <div class="required-msg rounded">
-                                <b>Please, complete these actions:</b>
-                                <ul>
-                                    <li>Type a keyword.</li>
-                                    <li>Select a category.</li>
-                                </ul>
-                            </div>
-                            <i class="hint dark">* Required</i>
-                        </div>
+                        </form>
                     </div>
 
                     <h4>Diffrerent Form Styles</h4>
