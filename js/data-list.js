@@ -155,7 +155,7 @@ var dataList = {
     // data loader
     function loadData(that, id) {
 
-        var i, list, listLength, paging, dataTotal, isEven, dataStriped;
+        var i, list, paging, dataTotal, isEven, dataStriped;
 
         if (events.hasClass(that, 'data-filtered')) {
             list = selector('.data-content.filtered', that);
@@ -164,8 +164,6 @@ var dataList = {
             list = selector('.data-content', that);
         }
 
-        listLength = list.length;
-
         // paging
         paging = selector('.data-paging', that);
         if (paging.length > 0) {
@@ -173,10 +171,10 @@ var dataList = {
             if (pagingCount[id] === undefined || pagingCount[id] === 0) {
 
                 pagingCount[id] = 1; // paging available
-                createPaging(paging, id, listLength); // create paging buttons
+                createPaging(paging, id, list.length); // create paging buttons
 
             } else {
-                createPaging(paging, id, listLength); // update paging buttons
+                createPaging(paging, id, list.length); // update paging buttons
             }
 
         } else {
@@ -190,7 +188,7 @@ var dataList = {
         dataTotal = selector('.data-total', that);
 
         if (dataTotal.length > 0) {
-            dataTotal[0].textContent = listLength;
+            dataTotal[0].textContent = list.length;
         }
 
         // define even elements and visible datas
@@ -229,7 +227,7 @@ var dataList = {
 
         } else {
 
-            for (i = 0; i < listLength; i += 1) {
+            for (i = 0; i < list.length; i += 1) {
                 evenList(list[i]);
             }
 
