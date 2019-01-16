@@ -23,7 +23,9 @@ var requiredForms = {};
 
                 if (events.hasClass(next, 'required-msg')) { showMsg = true; }
 
+                events.addClass(that, 'success');
                 events.removeClass(p, 'error');
+
                 if (showMsg) { events.removeClass(next, 'show'); }
 
             };
@@ -33,7 +35,9 @@ var requiredForms = {};
                 // show error
                 showErr = function () {
 
+                    events.removeClass(t, 'success');
                     events.addClass(p, 'error');
+
                     if (showMsg) {
                         events.addClass(next, 'show');
                     }
@@ -111,6 +115,25 @@ var requiredForms = {};
 
         events.on(document, 'change blur', '.select select.required', function () {
             required(this, 'select');
+        });
+
+        events.on(document, 'submit', 'form', function (e) {
+
+            var forms, success;
+
+            forms = selector('.text input.required,.select select.required');
+            success = selector('.text input.required.success,.select select.required.success');
+
+            if (forms.length > 0 && (forms.length !== success.length)) {
+
+                e.preventDefault();
+
+                events.each(forms, function () {
+                    events.trigger(this, 'blur');
+                });
+
+            }
+
         });
 
     };
