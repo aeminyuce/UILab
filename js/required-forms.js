@@ -12,9 +12,18 @@ var requiredForms = {};
 
     requiredForms.Start = function () {
 
+        var eventForms = [
+
+            '.text input.required',
+            '.select select.required',
+            '.textarea textarea.required',
+            '.required-accept input.required'
+
+        ];
+
         function required(that, type) {
 
-            var p, parentType, checkHolder, checkForms, holderForms, next, showMsg, hideErr, showErr, min, val, reMail;
+            var p, parentType, checkHolder, checkForms, holderForms, next, showMsg, hideErr, showErr, min, val, reMail, radios, radiosCheck, i;
 
             hideErr = function () {
 
@@ -23,7 +32,15 @@ var requiredForms = {};
 
                 if (events.hasClass(next, 'required-msg')) { showMsg = true; }
 
-                events.addClass(that, 'success');
+                if (that.type === 'radio') {
+
+                    radios = selector('[type="radio"][name="' + that.name + '"]');
+                    events.addClass(radios, 'success');
+
+                } else {
+                    events.addClass(that, 'success');
+                }
+
                 events.removeClass(p, 'error');
 
                 if (showMsg) { events.removeClass(next, 'show'); }
@@ -35,7 +52,15 @@ var requiredForms = {};
                 // show error
                 showErr = function () {
 
-                    events.removeClass(t, 'success');
+                    if (t.type === 'radio') {
+
+                        radios = selector('[type="radio"][name="' + that.name + '"]');
+                        events.removeClass(radios, 'success');
+
+                    } else {
+                        events.removeClass(t, 'success');
+                    }
+
                     events.addClass(p, 'error');
 
                     if (showMsg) {
@@ -44,16 +69,45 @@ var requiredForms = {};
 
                 };
 
-                // get value
-                val = t.value.toLowerCase();
-                val = val.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
+                // check value
+                if (type !== 'required-accept') {
 
-                // check value is empty
-                if (val === '') { showErr(); }
+                    val = t.value.toLowerCase();
+                    val = val.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
 
+                    if (val === '') { showErr(); }
+
+                } else {
+
+                    if (t.type === 'radio') {
+
+                        radiosCheck = 0;
+                        radios = selector('[type="radio"][name="' + t.name + '"]');
+
+                        for (i = 0; i < radios.length; i += 1) {
+                            if (radios[i].checked) { radiosCheck += 1; }
+                        }
+
+                        if (radiosCheck === 0) { showErr(); }
+
+                    } else {
+
+                        if (!t.checked) {
+
+                            if (events.hasClass(t, 'indeterminate') && t.indeterminate) {
+                                return;
+                            }
+                            showErr();
+
+                        }
+
+                    }
+
+                }
+
+                // check min
                 if (type !== 'select') {
 
-                    // check min
                     min = t.getAttribute('minlength');
 
                     if (min !== null && min !== '' && !isNaN(min)) {
@@ -62,6 +116,7 @@ var requiredForms = {};
 
                 }
 
+                // check email
                 if (type === 'email') {
 
                     reMail = new RegExp('^[a-z0-9][a-z0-9-_\\.]+@([a-z]|[a-z0-9]?[a-z0-9-]+[a-z0-9])\\.[a-z0-9]{2,10}(?:\\.[a-z]{2,10})?$');
@@ -75,9 +130,13 @@ var requiredForms = {};
             if (checkHolder === undefined) { // single forms
 
                 parentType = type;
-                if (type !== 'select') { parentType = 'text'; }
+
+                if (type !== 'select' && type !== 'textarea' && type !== 'required-accept') {
+                    parentType = 'text';
+                }
 
                 p = events.closest(that, '.' + parentType)[0];
+
                 hideErr();
                 checkForms(that);
 
@@ -85,7 +144,7 @@ var requiredForms = {};
 
                 p = checkHolder;
 
-                holderForms = selector('.text input.required,.select select.required', p);
+                holderForms = selector(eventForms[0] + ',' +  eventForms[1], p); // only eventForms[0] and eventForms[1] needed!
                 hideErr();
 
                 events.each(holderForms, function () {
@@ -109,22 +168,22 @@ var requiredForms = {};
         }
 
         // Events
-        events.on(document, 'keyup blur', '.text input.required', function () {
-            required(this, this.type);
-        });
-
-        events.on(document, 'change blur', '.select select.required', function () {
-            required(this, 'select');
-        });
-
         events.on(document, 'submit', 'form', function (e) {
 
-            var forms, success;
+            var i, forms, success;
 
-            forms = selector('.text input.required,.select select.required');
-            success = selector('.text input.required.success,.select select.required.success');
+            success = 0;
 
-            if (forms.length > 0 && (forms.length !== success.length)) {
+            forms = selector(eventForms.toString());
+            forms = selector(forms, this);
+
+            for (i = 0; i < forms.length; i += 1) {
+                if (events.hasClass(forms[i], 'success')) {
+                    success += 1;
+                }
+            }
+
+            if (forms.length > 0 && (forms.length !== success)) {
 
                 e.preventDefault();
 
@@ -134,6 +193,22 @@ var requiredForms = {};
 
             }
 
+        });
+
+        events.on(document, 'keyup blur', eventForms[0], function () {
+            required(this, this.type);
+        });
+
+        events.on(document, 'change blur', eventForms[1], function () {
+            required(this, 'select');
+        });
+
+        events.on(document, 'keyup blur', eventForms[2], function () {
+            required(this, 'textarea');
+        });
+
+        events.on(document, 'change blur', eventForms[3], function () {
+            required(this, 'required-accept');
         });
 
     };
