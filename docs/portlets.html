@@ -14,6 +14,7 @@
     <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
 
     <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/alignments.css" />
     <link rel="stylesheet" href="../css/buttons.css" />
     <link rel="stylesheet" href="../css/borders.css" />
     <link rel="stylesheet" href="../css/grid.css" />
@@ -37,6 +38,7 @@
     <script src="../js/top-button.js"></script>
     <script src="../js/transitions.js"></script>
     <script src="../js/user-agents.js"></script>
+    <script src="../js/swatches.js"></script>
 
     <script src="../js/portlets.js"></script>
 
@@ -68,39 +70,100 @@
             <div class="row">
                 <div class="col-12 padding-30">
 
-                    <h4>Portlets</h4>
-                    <div class="portlet margin-30-b rounded shadow">
-                        <div class="content-side padding-15 bottom-bordered">
-                            <h4>Portlet Title</h4>
-                        </div>
-                        <div class="content-side padding-15 bottom-bordered">
+                    <h4>Portlet Example</h4>
+                    <div class="padding-30-b">
+                        <div class="portlet padding-15 rounded shadow">
+                            <h4 class="margin-15-b">Portlet Title</h4>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie. Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus. In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
-                        </div>
-                        <div class="content-side padding-15 rounded-bottom theme-gray ui-x-light">
-                            Portlet Footer
                         </div>
                     </div>
 
-                    <h4>Alert Windows</h4>
-                    <div class="portlet-success padding-15 rounded shadow">
-                        <button class="portlet-close icon icon-xs icon-remove ease-opacity"></button>
-                        <h4>Title</h4>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                    <h4>Portlets with Sides</h4>
+                    <div class="padding-30-b">
+                        <div class="portlet rounded shadow">
+                            <div class="content-side padding-15 bottom-bordered">
+                                <h4><i class="icon icon-lg icon-user margin-15-r"></i>Portlet Title</h4>
+                            </div>
+                            <div class="content-side padding-15 bottom-bordered">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
+                            </div>
+                            <div class="content-side padding-15 bottom-bordered">
+                                Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus.
+                            </div>
+                            <div class="content-side padding-15 bottom-bordered">
+                                In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
+                            </div>
+                            <div class="content-side padding-15 bottom-bordered theme-gray ui-x-light">
+                                <h5 class="bold x-dark">Portlet Sub Title</h5>
+                            </div>
+                            <div class="content-side padding-15 bottom-bordered">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
+                            </div>
+                            <div class="content-side padding-15 bottom-bordered">
+                                In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
+                            </div>
+                            <div class="content-side padding-15 rounded-bottom theme-gray ui-x-light">
+                                Portlet Footer
+                            </div>
+                        </div>
+
+                        <div class="portlet rounded shadow">
+                            <div class="content-side padding-15 bottom-bordered">
+                                <h4><i class="icon icon-lg icon-favorite margin-15-r"></i>Portlet Title</h4>
+                            </div>
+                            <div class="content-side padding-15 bottom-bordered">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie. Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus. In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
+                            </div>
+                            <div class="content-side padding-15 align-right sm-align-center ease-2nd-bg">
+                                <form  action="#">
+                                    <button type="button" class="btn padding-30-h btn-invisible bordered dual-bordered circle">Cancel</button>
+                                    <button type="submit" class="btn padding-30-h circle theme-green ui-dark">Accept</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    <div class="portlet-danger padding-15 rounded shadow">
-                        <button class="portlet-close icon icon-xs icon-remove ease-opacity"></button>
-                        <h4>Title</h4>
-                        <p>Lorem ipsum dolor sit amet.</p>
+
+                    <h4>Portlet Messages</h4>
+                    <div class="padding-30-b">
+                        <div class="portlet-success padding-15 rounded shadow">
+                            <button class="close-portlet icon icon-xs icon-remove ease-opacity"></button>
+                            <h4>Message Title</h4>
+                            <p>Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
+                        </div>
+                        <div class="portlet-danger padding-15 rounded shadow">
+                            <button class="close-portlet icon icon-xs icon-remove ease-opacity"></button>
+                            <h4>Message Title</h4>
+                            <p>Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
+                        </div>
+                        <div class="portlet-warning padding-15 rounded">
+                            <button class="close-portlet icon icon-xs icon-remove ease-opacity"></button>
+                            <h4>Message Title</h4>
+                            <p>Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
+                        </div>
+                        <div class="portlet-info padding-15 rounded shadow">
+                            <button class="close-portlet icon icon-xs icon-remove ease-opacity"></button>
+                            <h4>Message Title</h4>
+                            <p>Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
+                        </div>
                     </div>
-                    <div class="portlet-warning padding-15 rounded theme-gray ui-light">
-                        <button class="portlet-close icon icon-xs icon-remove ease-opacity"></button>
-                        <h4>Title</h4>
-                        <p>Lorem ipsum dolor sit amet.</p>
+
+                    <h4>Portlets with Swatches</h4>
+                    <div class="portlet rounded theme-default ui-x-light ui-border">
+                        <div class="content-side padding-30">
+                            <h4>Portlet Title</h4>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
+                            <span class="sp15"></span>
+                            <a href="#" class="btn circle ui-dark ease-bg">Outgoing Link</a>
+                        </div>
+                        <div class="content-side padding-30-h padding-15-v rounded-bottom ui-light">
+                            Portlet Footer
+                        </div>
                     </div>
-                    <div class="portlet-info padding-15 rounded shadow">
-                        <button class="portlet-close icon icon-xs icon-remove ease-opacity"></button>
-                        <h4>Title</h4>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="portlet-warning padding-30 rounded theme-default2 ui-x-light ui-border">
+                        <h4>Message Title</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
+                        <span class="sp15"></span>
+                        <a href="#" class="btn circle ui-dark ease-bg">Outgoing Link</a>
                     </div>
 
                 </div>
