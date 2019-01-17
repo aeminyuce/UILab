@@ -13,10 +13,10 @@ var portlets = {};
     portlets.Start = function () {
 
         // Events
-        events.on(document, 'click', '.portlet-close', function () {
+        events.on(document, 'click', '.close-portlet', function () {
 
             var parentEl = this.parentElement;
-            events.addClass(parentEl, 'portlet-closing ease-close-portlet');
+            events.addClass(parentEl, 'closing-portlet ease-portlet-close');
 
             setTimeout(function () {
                 parentEl.parentNode.removeChild(parentEl);
