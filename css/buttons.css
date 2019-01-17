@@ -3,6 +3,8 @@
 
 .btn { text-align: center; vertical-align: middle; height: 32px; background-color: rgba(0,0,0,.08); padding-top: 6px; padding-bottom: 6px; display: inline-block; }
 input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+.btn.bordered { padding-top: 5px; padding-bottom: 5px; }
+.btn.dual-bordered { padding-top: 4px; padding-bottom: 4px; }
 .btn-square { width: 32px; padding-left: 0 !important; padding-right: 0 !important; }
 .btn:not(.btn-passive) { cursor: pointer; }
 .btn:not([class*="bordered"]) { border-width: 0; }
@@ -43,7 +45,7 @@ html:not(.mobile) .btn.ui-dark:hover > .icon,html:not(.mobile) .btn.ui-x-dark:ho
 .btn-xs.circle { padding-right: 10px; padding-left: 10px; }
 
 .btn-xxs { font-size: 10px; height: 18px; padding-top: 2px; padding-bottom: 2px; }
-.btn-xxs.btn-square { width: 14px; }
+.btn-xxs.btn-square { width: 18px; }
 .btn-xxs.bordered { padding-top: 1px; padding-bottom: 1px; }
 .btn-xxs.rounded { border-radius: 2px; }
 .btn-xxs:not(.circle) { padding-right: 2px; padding-left: 2px; }
@@ -55,7 +57,11 @@ html:not(.mobile) .btn.ui-dark:hover > .icon,html:not(.mobile) .btn.ui-x-dark:ho
 .btn-active { font-weight: bold; }
 .btn-block { width: 100%; display: block; }
 
-.btn-invisible:not(:hover) { background-color: rgba(0,0,0,0); }
+.btn-invisible:not([class*="ui-"]):not(:hover) { color: #000; }
+.btn-invisible.ui-dark:not(.ui-text),.btn-invisible.ui-x-dark:not(.ui-text) { color: #000; }
+.btn-invisible.ui-dark:hover,.btn-invisible.ui-x-dark:hover { color: #fff; }
+.btn-invisible:not(:hover) { background-color: rgba(0,0,0,0) !important; }
+
 .btn-invisible-border:not(:hover) { border-color: rgba(0,0,0,0) !important; }
 
 html:not(.mobile) .btn:not(.no-hover):not([class*="ui-"]):not(.btn-passive):not(.swatch-active):hover { background-color: rgba(0,0,0,.15); }
