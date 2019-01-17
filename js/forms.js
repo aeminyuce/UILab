@@ -116,6 +116,19 @@ var forms = {};
 
         }
 
+        // clear with form icons
+        events.on(document, 'click', '.text > .clear-form', function () {
+
+            var form = selector('input', this.parentElement)[0];
+            form.value = '';
+
+        });
+
+        // submit with form icons
+        events.on(document, 'click', '.text > [type="submit"]', function () {
+            events.closest(this, 'form')[0].submit();
+        });
+
     };
 
     // Loaders
