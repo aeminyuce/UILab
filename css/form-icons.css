@@ -16,6 +16,3 @@
 .text-icon-lg.text-icon-left > input,.text-icon-lg.text-icon-both > input { padding-left: 34px !important; }
 
 .text-icon-left > input { padding-right: 5px; }
-
-.text.submit-enter .submit-icon { cursor: pointer; }
-.text.submit-enter .submit-icon:hover { opacity: .75; }
