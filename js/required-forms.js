@@ -3,12 +3,14 @@
  Required Forms JS requires Events JS
 */
 
-var requiredForms = {};
+var requiredForms = {
+    target: ''
+};
 
 (function () {
 
     'use strict';
-    /*globals document, selector, events */
+    /*globals window, document, selector, events, setInterval, clearInterval */
 
     requiredForms.Start = function () {
 
@@ -170,17 +172,30 @@ var requiredForms = {};
         // Events
         events.on(document, 'submit', 'form', function (e) {
 
-            var i, forms, success;
+            var i, forms, success, getIndex, getRect, scrollIndex, scrollTarget, scrollPos, scrollAnimate;
 
             success = 0;
+            getIndex = 0;
 
             forms = selector(eventForms.toString());
             forms = selector(forms, this);
 
             for (i = 0; i < forms.length; i += 1) {
+
                 if (events.hasClass(forms[i], 'success')) {
                     success += 1;
+
+                } else {
+
+                    if (getIndex === 0) {
+
+                        getIndex = 1;
+                        scrollIndex = i;
+
+                    }
+
                 }
+
             }
 
             if (forms.length > 0 && (forms.length !== success)) {
@@ -192,6 +207,32 @@ var requiredForms = {};
                 });
 
             }
+
+            if (requiredForms.target === '') {
+
+                scrollTarget = window;
+                scrollPos = scrollTarget.pageYOffset;
+
+
+            } else {
+
+                scrollTarget = selector(requiredForms.target)[0];
+                scrollPos = scrollTarget.scrollTop;
+
+            }
+
+            getRect = forms[scrollIndex].getBoundingClientRect();
+            scrollIndex = getRect.top - (getRect.height * 2) + scrollPos;
+
+            clearInterval(scrollAnimate);
+            scrollAnimate = setInterval(function () {
+
+                scrollPos -= 10;
+
+                scrollTarget.scrollTo(scrollIndex, scrollPos);
+                if (scrollPos + 10 <= scrollIndex) { clearInterval(scrollAnimate); }
+
+            }, 2);
 
         });
 
