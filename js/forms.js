@@ -120,7 +120,9 @@ var forms = {};
         events.on(document, 'click', '.text > .clear-form', function () {
 
             var form = selector('input', this.parentElement)[0];
+
             form.value = '';
+            events.trigger(form, 'keydown keyup change');
 
         });
 
