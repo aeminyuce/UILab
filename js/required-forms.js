@@ -174,10 +174,12 @@ var requiredForms = {
 
             var i, forms, success, getIndex, getRect, scrollIndex, scrollTarget, scrollPos, scrollAnimate;
 
+            forms = selector(eventForms.toString());
+            if (forms.length === 0) { return; }
+
             success = 0;
             getIndex = 0;
 
-            forms = selector(eventForms.toString());
             forms = selector(forms, this);
 
             for (i = 0; i < forms.length; i += 1) {
