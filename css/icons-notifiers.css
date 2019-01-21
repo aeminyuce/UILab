@@ -10,7 +10,8 @@
 .notifier.icon-xl:after { min-width: 12px; height: 12px; }
 .notifier.icon-xxl:after { min-width: 14px; height: 14px; }
 
-.notifier[data-notifier]:not(.icon-xxs):not(.icon-xs):not(.icon-sm):after { content: attr(data-notifier); color: #fff; font-family: sans-serif !important; text-align: center; line-height: normal; padding: 1px 3px; transform: scale(1.6); }
+.notifier[data-notifier]:not(.icon-xxs):not(.icon-xs):not(.icon-sm):after { content: attr(data-notifier); color: #fff; font-family: Arial, sans-serif !important; text-align: center; line-height: normal; padding: 1px 3px; transform: scale(1.6); }
+.mobile .notifier[data-notifier]:not(.icon-xxs):not(.icon-xs):not(.icon-sm):after { line-height: 1; }
 .notifier[data-notifier].icon-md:after,.notifier[data-notifier].icon-lg:after { font-size: 8px; }
 .notifier[data-notifier].icon-xl:after { font-size: 9px; }
 .notifier[data-notifier].icon-xxl:after { font-size: 11px; }
