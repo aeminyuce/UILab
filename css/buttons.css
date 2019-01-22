@@ -18,7 +18,6 @@ input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .btn:not(.circle) { padding-right: 10px; padding-left: 10px; }
 .btn:not(.btn-xs):not(.btn-xxs).circle { padding-right: 16px; padding-left: 16px;}
 
-.btn:not(.btn-square) .icon { vertical-align: baseline; }
 .btn-square:not(.btn-xs):not(.btn-xxs) .icon { line-height: .90 !important; }
 .btn .icon:not(.no-opacity),.btn.icon-inline:before { opacity: .45; }
 .btn.ui-dark .icon,.btn.ui-x-dark .icon { opacity: 1; }
@@ -31,7 +30,7 @@ html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hove
 .btn-lg.dual-bordered { padding-top: 8px; padding-bottom: 8px; }
 .btn-lg.rounded { border-radius: 8px; }
 
-.btn-sm { font-size: 12px; line-height:16px; height: 26px; padding-top: 5px; padding-bottom: 5px; }
+.btn-sm { font-size: 12px; line-height: 16px; height: 26px; padding-top: 5px; padding-bottom: 5px; }
 .btn-sm.btn-square { width: 26px; }
 .btn-sm.bordered { padding-top: 4px; padding-bottom: 4px; }
 .btn-sm.dual-bordered { padding-top: 3px; padding-bottom: 3px; }
