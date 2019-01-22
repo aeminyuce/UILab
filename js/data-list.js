@@ -414,7 +414,7 @@ var dataList = {
     // data-filter
     function dataFilter(that, firstLoading) {
 
-        var id, filters, val, vals, index, sortType, sortIndex, indexes, list, dataContainer, j, contentVal, contentArr, activeFilters, passed;
+        var id, filters, val, vals, index, sortType, sortIndex, indexes, list, dataContainer, j, contentVal, contentArr, activeFilters, passed, checkAll;
 
         id = that.getAttribute('data-id');
 
@@ -500,6 +500,28 @@ var dataList = {
             temp.innerHTML = events.parser(dataContainer.innerHTML);
 
             list = selector('.data-content', temp[0]);
+
+            // remove checked
+            checkAll = selector('.data-check-all', that);
+
+            if (checkAll.length > 0) {
+
+                events.each(checkAll, function () {
+                    this.checked = false;
+                });
+
+            }
+
+            events.each(list, function () {
+
+                if (events.hasClass(this, 'checked')) {
+
+                    events.removeClass(this, 'checked');
+                    selector('.data-check', this)[0].checked = false;
+
+                }
+
+            });
 
             if (activeFilters.length > 0) {
 
@@ -589,6 +611,74 @@ var dataList = {
 
         var that = events.closest(this, '.data-list')[0];
         dataFilter(that, false);
+
+    });
+
+    // data check
+    events.on(document, 'change', '.data-list .data-check-all', function () {
+
+        var that, list, form, checked, checkFnc, uncheckFnc;
+
+        that = events.closest(this, '.data-list')[0];
+        list = selector('.data-content', that);
+
+        checked = this.checked;
+
+        checkFnc = function (t) {
+
+            if (!events.hasClass(t, 'checked')) {
+
+                form = selector('.data-check', t)[0];
+                if (form !== undefined) {
+
+                    events.addClass(t, 'checked');
+                    form.checked = true;
+
+                }
+
+            }
+
+        };
+
+        uncheckFnc = function (t) {
+
+            if (events.hasClass(t, 'checked')) {
+
+                form = selector('.data-check', t)[0];
+                if (form !== undefined) {
+
+                    events.removeClass(t, 'checked');
+                    form.checked = false;
+
+                }
+
+            }
+
+        };
+
+        events.each(list, function () {
+
+            if (checked) {
+
+                if (events.hasClass(that, 'data-filtered')) {
+
+                    if (events.hasClass(this, 'filtered')) {
+                        checkFnc(this);
+
+                    } else { uncheckFnc(this); }
+
+                } else { checkFnc(this); }
+
+            } else { uncheckFnc(this); }
+
+        });
+
+    });
+
+    events.on(document, 'change', '.data-list .data-check', function () {
+
+        var that = events.closest(this, '.data-content')[0];
+        events.toggleClass(that, 'checked');
 
     });
 
