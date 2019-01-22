@@ -52,7 +52,7 @@ html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hove
 .btn-xxs:not(.circle) { padding-right: 2px; padding-left: 2px; }
 .btn-xxs.circle { padding-right: 6px; padding-left: 6px; }
 
-.btn-passive { opacity: .45; cursor: default; }
+.btn-passive { opacity: .6; cursor: default; }
 .btn-passive:hover { cursor: not-allowed; }
 
 .btn-active { font-weight: bold; }
