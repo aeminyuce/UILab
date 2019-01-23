@@ -8,7 +8,11 @@ var forms = {};
 (function () {
 
     'use strict';
-    /*globals document, selector, events, navigator, setTimeout */
+    /*globals document, selector, events, navigator, ajax, setTimeout */
+
+    var
+        clearForms,
+        loadClearForms;
 
     forms.Start = function () {
 
@@ -75,6 +79,43 @@ var forms = {};
 
         }
 
+        // clear with form icons
+        clearForms = function (that) {
+
+            var btn = selector('.clear-form', that.parentElement)[0];
+
+            if (that.value !== '') {
+
+                events.addClass(btn, 'open');
+
+                setTimeout(function () {
+                    events.addClass(btn, 'open-ease');
+                }, 10);
+
+            } else {
+
+                events.removeClass(btn, 'open-ease');
+
+                setTimeout(function () {
+                    events.removeClass(btn, 'open');
+                }, 150);
+
+            }
+
+        };
+
+        loadClearForms = function () {
+
+            events.each('.text.has-clear input', function () {
+
+                var that = this;
+                setTimeout(function () { clearForms(that); }, 0);
+
+            });
+
+        };
+        loadClearForms();
+
         // Events
         events.on(document,
 
@@ -116,16 +157,6 @@ var forms = {};
 
         }
 
-        // clear with form icons
-        events.on(document, 'click', '.text > .clear-form', function () {
-
-            var form = selector('input', this.parentElement)[0];
-
-            form.value = '';
-            events.trigger(form, 'keydown keyup change');
-
-        });
-
         // submit with form icons
         events.on(document, 'click', '.text > [type="submit"]', function () {
             events.closest(this, 'form')[0].submit();
@@ -148,9 +179,28 @@ var forms = {};
 
         });
 
+        // clear with form icons
+        events.on(document, 'change keyup', '.text.has-clear input', function () {
+            clearForms(this);
+        });
+
+        events.on(document, 'click', '.text.has-clear .clear-form', function () {
+
+            var form = selector('input', this.parentElement)[0];
+
+            form.value = '';
+            events.trigger(form, 'keydown keyup change');
+
+        });
+
     };
 
     // Loaders
     events.onload(forms.Start);
+
+    // ajax callback loader: requires Ajax JS
+    events.on(document, 'ajaxCallbacks', function () {
+        if (ajax.ajaxRequest.responseText.indexOf('clear-form="') > 0) { loadClearForms(); }
+    });
 
 }());

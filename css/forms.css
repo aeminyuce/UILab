@@ -44,6 +44,9 @@ html:not(.mobile) .select-multi > .icon { display: none; }
 .warning { background-color: #fffaef !important; }
 .warning { border-color: #ffa600 !important; }
 
+.clear-form:not(.open) { display: none; }
+.clear-form:not(.open-ease) { opacity: 0; }
+
 .hint,.required-msg { font-size: 12px; margin-top: 5px; margin-bottom: 0 !important; }
 .hint,.required-msg.show { display: block; }
 .hint.error,.required-msg { color: #dc000f; }
