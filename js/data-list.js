@@ -678,7 +678,13 @@ var dataList = {
     events.on(document, 'change', '.data-list .data-check', function () {
 
         var that = events.closest(this, '.data-content')[0];
-        events.toggleClass(that, 'checked');
+
+        if (this.checked) {
+            events.addClass(that, 'checked');
+
+        } else {
+            events.removeClass(that, 'checked');
+        }
 
     });
 
