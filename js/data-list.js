@@ -677,13 +677,19 @@ var dataList = {
 
     events.on(document, 'change', '.data-list .data-check', function () {
 
-        var that = events.closest(this, '.data-content')[0];
+        var that, list;
+
+        that = events.closest(that, '.data-list')[0];
+        list = events.closest(this, '.data-content')[0];
 
         if (this.checked) {
-            events.addClass(that, 'checked');
+            events.addClass(list, 'checked');
 
         } else {
-            events.removeClass(that, 'checked');
+
+            events.removeClass(list, 'checked');
+            selector('.data-check-all', that)[0].checked = false;
+
         }
 
     });
