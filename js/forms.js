@@ -8,7 +8,7 @@ var forms = {};
 (function () {
 
     'use strict';
-    /*globals document, selector, events, navigator */
+    /*globals document, selector, events, navigator, setTimeout */
 
     forms.Start = function () {
 
@@ -129,6 +129,23 @@ var forms = {};
         // submit with form icons
         events.on(document, 'click', '.text > [type="submit"]', function () {
             events.closest(this, 'form')[0].submit();
+        });
+
+        // trigger custom events on form Submit
+        events.on(document, 'reset', 'form', function (e) {
+
+            var forms = Array.prototype.slice.call(e.target);
+
+            setTimeout(function () { // wait for form reset started on DOM
+
+                events.each(forms, function () {
+                    if (!events.hasClass(this, 'required')) { // discard reequired forms
+                        events.trigger(this, 'keydown keyup change');
+                    }
+                });
+
+            }, 0);
+
         });
 
     };
