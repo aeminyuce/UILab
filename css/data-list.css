@@ -11,7 +11,7 @@
 .data-list .data-content:before,.data-list .data-content:after { content: ""; display: table; }
 .data-list .data-content:after { clear: both; }
 .data-list .data-content.even { background-color: rgba(0,0,0,.025); }
-.data-list .data-content.checked { background-color: rgba(220,0,15,.1) !important; }
+.data-list .data-content.checked { background-color: rgba(255,166,0,.1) !important; }
 
 .data-list:not(.data-show-all) .data-content:not(.show) { display: none; }
 .data-list.data-filtered.data-show-all .data-content:not(.filtered) { display: none; }
