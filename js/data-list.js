@@ -677,7 +677,7 @@ var dataList = {
 
     events.on(document, 'change', '.data-list .data-check', function () {
 
-        var that, list;
+        var that, list, checkAll;
 
         that = events.closest(that, '.data-list')[0];
         list = events.closest(this, '.data-content')[0];
@@ -688,7 +688,11 @@ var dataList = {
         } else {
 
             events.removeClass(list, 'checked');
-            selector('.data-check-all', that)[0].checked = false;
+            checkAll = selector('.data-check-all', that)[0];
+
+            if (selector('.data-check-all', that)[0] !== undefined) {
+                checkAll.checked = false;
+            }
 
         }
 
