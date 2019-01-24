@@ -10,13 +10,13 @@ var loadingButton = {
 (function () {
 
     'use strict';
-    /*globals selector, events */
+    /*globals selector, events, document */
 
     loadingButton.Start = function () {
 
         loadingButton.toggle = function (that) {
 
-            var l, i, re, rex, html;
+            var l, i, re, rex, styles, html;
 
             l = selector(that);
 
@@ -32,10 +32,11 @@ var loadingButton = {
                     re = new RegExp('\\s+\\s');
                     rex = new RegExp('^\\s|\\s+$');
 
-                    loadingButton.spinner = loadingButton.spinner.replace(re, ' ').replace(rex, '');
+                    styles = loadingButton.spinner;
+                    styles = styles.replace(re, ' ').replace(rex, '');
 
                     html = '<span class="loading-spinner ease-opacity">' +
-                            '<i class="' + loadingButton.spinner + '"></i>' +
+                            '<i class="' + styles + '"></i>' +
                         '</span>' +
                         '<span class="loading-label ease-opacity">' + l[i].innerHTML + '</div>';
 
@@ -49,6 +50,14 @@ var loadingButton = {
             }
 
         };
+
+        // Events
+        events.on(document, 'click', '.btn.loading', function (e) {
+
+            e.preventDefault();
+            e.stopPropagation();
+
+        });
 
     };
 
