@@ -61,8 +61,7 @@ var events = {
     on: function (t, e, that, callback) {
 
         'use strict';
-        var arr, f, fnc, handlerFnc, targetEl, objName, isWindowEvent, l, customEvent, isMSIE, eName, delegate,
-            i = 0, j = 0, k = 0, m = 0;
+        var arr, f, fnc, handlerFnc, targetEl, objName, isWindowEvent, l, customEvent, isMSIE, eName, delegate, i, j, k, m;
 
         fnc = function (e) {
 
@@ -103,7 +102,6 @@ var events = {
             } else {
 
                 f = that;
-
 
                 // filter events.on(object, event, function) events
                 if (typeof t === 'object' && !NodeList.prototype.isPrototypeOf(t) && typeof e === 'string') {
@@ -193,7 +191,7 @@ var events = {
     off: function (t, e) {
 
         'use strict';
-        var arr, fnc, handlerFnc, l, i = 0, j = 0, k = 0;
+        var arr, fnc, handlerFnc, l, i, j, k;
 
         fnc = function (e) {
 
@@ -219,7 +217,13 @@ var events = {
             if (l.length === 0) { // detect window events
                 handlerFnc(l, e);
 
-            } else { for (i = 0; i < l.length; i += 1) { handlerFnc(l[i], e); } }
+            } else {
+
+                for (i = 0; i < l.length; i += 1) {
+                    handlerFnc(l[i], e);
+                }
+
+            }
 
         };
 
@@ -234,7 +238,7 @@ var events = {
     trigger: function (t, e) {
 
         'use strict';
-        var arr, fnc, event, l, i = 0, j = 0;
+        var arr, fnc, event, l, i, j;
 
         fnc = function (e) {
 
@@ -263,7 +267,7 @@ var events = {
 
         'use strict';
 
-        var svg, re, l = selector(t), i = 0;
+        var svg, re, l = selector(t), i;
         svg = ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'];
 
         for (i = 0; i < l.length; i += 1) {
@@ -283,7 +287,7 @@ var events = {
 
         'use strict';
 
-        var svg, arr, l = selector(t), i = 0, j = 0, re = new RegExp('^\\s+|\\s+$');
+        var svg, arr, l = selector(t), i, j, re = new RegExp('^\\s+|\\s+$');
 
         name = name.split(' ');
         svg = ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'];
@@ -321,7 +325,7 @@ var events = {
 
         'use strict';
 
-        var svg, l = selector(t), i = 0, j = 0, rex = new RegExp('^\\s+|\\s+$'), re;
+        var svg, l = selector(t), i, j, rex = new RegExp('^\\s+|\\s+$'), re;
 
         name = name.split(' ');
         svg = ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'];
@@ -345,7 +349,7 @@ var events = {
     toggleClass: function (t, name) {
 
         'use strict';
-        var svg, isSvgElements, arr, index, l = selector(t), i = 0, j = 0;
+        var svg, isSvgElements, arr, index, l = selector(t), i, j;
 
         name = name.split(' ');
         svg = ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'];
@@ -380,28 +384,28 @@ var events = {
     show: function (t) {
 
         'use strict';
-        var l = selector(t), i = 0;
+        var l = selector(t), i;
         for (i = 0; i < l.length; i += 1) { l[i].style.display = 'block'; }
 
     },
     hide: function (t) {
 
         'use strict';
-        var l = selector(t), i = 0;
+        var l = selector(t), i;
         for (i = 0; i < l.length; i += 1) { l[i].style.display = 'none'; }
 
     },
     each: function (t, callback) {
 
         'use strict';
-        var l = selector(t), i = 0;
+        var l = selector(t), i;
         for (i = 0; i < l.length; i += 1) { callback.call(l[i], i); }
 
     },
     closest: function (t, outer) {
 
         'use strict';
-        var l, o, i = 0, j = 0, p;
+        var l, o, i, j, p;
 
         if (typeof outer !== 'object') { o = selector(outer); } else { o = [outer]; }
         l = selector(t);
@@ -409,8 +413,10 @@ var events = {
         for (i = 0; i < l.length; i += 1) {
             p = l[i].parentNode;
             while (p) {
+
                 for (j = 0; j < o.length; j += 1) { if (p === o[j]) { return selector(p); } }
                 p = p.parentNode;
+
             }
         }
 
@@ -420,14 +426,14 @@ var events = {
     width: function (t, value) {
 
         'use strict';
-        var l = selector(t), i = 0;
+        var l = selector(t), i;
         for (i = 0; i < l.length; i += 1) { l[i].style.width = value; }
 
     },
     height: function (t, value) {
 
         'use strict';
-        var l = selector(t), i = 0;
+        var l = selector(t), i;
         for (i = 0; i < l.length; i += 1) { l[i].style.height = value; }
 
     },
