@@ -1,7 +1,9 @@
 /* buttons */
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
 .ease-btn,.ease-1st-btn > *,.ease-2nd-btn > * > * { transition-property: color, background-color, border-color; }
 
-.btn { text-align: center; vertical-align: middle; line-height: 20px; height: 32px; background-color: rgba(0,0,0,.08); padding-top: 6px; padding-bottom: 6px; display: inline-block; }
+.btn { text-align: center; vertical-align: middle; line-height: 20px; height: 32px; background-color: rgba(0,0,0,.08); padding-top: 6px; padding-bottom: 6px; display: inline-block; position: relative; }
 input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .btn.bordered { padding-top: 5px; padding-bottom: 5px; }
 .btn.dual-bordered { padding-top: 4px; padding-bottom: 4px; }
@@ -67,6 +69,12 @@ html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hove
 
 html:not(.mobile) .btn:not(.no-hover):not([class*="ui-"]):not(.btn-passive):not(.swatch-active):hover { background-color: rgba(0,0,0,.15); }
 html:not(.mobile) .btn.btn-invisible:not(.no-hover):not([class*="ui-"]):not(.btn-passive):not(.swatch-active):hover { background-color: rgba(0,0,0,.075); }
+
+.btn:not(.loading) .loading-spinner,.btn.loading .loading-label { opacity: 0; }
+.btn .loading-spinner { position: absolute; top: 50%; left: 50%; z-index: 1; transform: translate(-50%,-50%); }
+.btn.loading .loading-spinner { z-index: 3; }
+.btn.loading .loading-spinner .icon { animation: spin 1.5s linear infinite; }
+.btn .loading-label { position: relative; z-index: 2; }
 
 @media (max-width: 480px) {
     .btn-responsive { width: 100% !important; display: block; }
