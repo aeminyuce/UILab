@@ -3,7 +3,7 @@
 .semibold { font-weight: 500 !important; }
 .regular { font-weight: normal !important; }
 .thin { font-weight: 200 !important; }
-.italic { font-style: italic; !important; }
+.italic { font-style: italic !important; }
 .overline { text-decoration: line-through; }
 
 .lowercase { text-transform: lowercase; }
