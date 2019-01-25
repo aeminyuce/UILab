@@ -5,9 +5,9 @@
 
 var tooltip = {
 
-    theme: 'theme-black ui-dark', // use swatches
+    theme: '', // use swatches
     border: '', // ex: 'bordered','dual-bordered', 'large-bordered' etc.
-    classes: 'rounded' // class names form tooltip content
+    classes: 'rounded' // class names for tooltip content
 };
 
 (function () {
