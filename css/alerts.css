@@ -1,0 +1,57 @@
+/* alerts */
+.alerts-bg-opened { overflow: hidden; }
+.mobile.alerts-bg-opened body { width: 100%; height: 100%; overflow: hidden; position: fixed; top: 0; left: 0; }
+
+.alerts-bg { width: 100%; min-width: 320px; height: 100%; background-color: rgba(0,0,0,.65); position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 90; }
+.alerts-bg:not(.open) { display: none; }
+.alerts-bg:not(.open-ease) { opacity: 0; }
+
+.alerts-dialog { min-width: 280px; max-width: 680px; background-color: #fff; min-height: 60px; position: fixed; top: 50%; left: 50%; z-index: 91; transform: translate(-50%,-50%); }
+.alerts-dialog:not(.show) { display: none; }
+.alerts-dialog:not(.show-ease) { opacity: 0; transform: translate(-50%,-50%) scale(.8); }
+
+.dialog-msg { text-align: center; font-size: 16px; padding: 30px 10px; }
+
+.dialog-buttons { text-align: right; background-color: rgba(0,0,0,.05); padding: 10px 10px 5px 10px; }
+.alerts-dialog.rounded .dialog-buttons { border-radius: 0 0 4px 4px; }
+.dialog-buttons button { font-weight: bold; text-align: center; vertical-align: middle; line-height: 20px; min-width: 68px; height: 32px; padding: 6px 12px; margin-bottom: 5px; display: inline-block; border: 0; border-radius: 4px; }
+.dialog-buttons button:not(:last-child) { margin-right: 5px; }
+
+button.dialog-error,button.dialog-success { color: #fff !important; }
+
+button.dialog-error { background-color: #dc000f; }
+button.dialog-error:focus { box-shadow: 0 0 10px #dc000f; }
+html:not(.mobile) button.dialog-error:hover { background-color: #e43944; }
+
+button.dialog-success { background-color: #2dbd3a; }
+button.dialog-success:focus { box-shadow: 0 0 10px #2dbd3a; }
+html:not(.mobile) button.dialog-success:hover { background-color: #5ccc66; }
+
+button.dialog-custom { background-color: rgba(0,0,0,.08); }
+button.dialog-custom:focus { box-shadow: 0 0 10px #777; }
+html:not(.mobile) button.dialog-custom:hover { background-color: rgba(0,0,0,.15); }
+
+.alerts-msg { text-align: center; width: 280px; min-height: 30px; padding: 10px; position: fixed; z-index: 91; cursor: pointer; }
+.alerts-msg:hover { opacity: .9; }
+.alerts-msg:not(.show) { display: none; }
+.alerts-msg:not(.show-ease) { opacity: 0; }
+
+.alerts-msg:not([class*="ui-"]) { color: #fff; background-color: #181818; }
+.alerts-msg.success { background-color: #2dbd3a; }
+.alerts-msg.warning { background-color: #ffa600; }
+.alerts-msg.danger { background-color: #dc000f; }
+
+.alerts-msg.tr { top: 20px; right: 20px; }
+.alerts-msg.tl { top: 20px; left: 20px; }
+.alerts-msg.br { bottom: 20px; right: 20px; }
+.alerts-msg.bl { bottom: 20px; left: 20px; }
+
+.alerts-msg.tr:not(.show-ease),.alerts-msg.tl:not(.show-ease) { transform: translateY(-40px); }
+.alerts-msg.br:not(.show-ease),.alerts-msg.bl:not(.show-ease) { transform: translateY(40px); }
+
+.close-alert { border: 0; position: absolute; top: 10px; right: 10px; z-index: 1; opacity: .45; cursor: pointer; }
+html:not(.mobile) .close-alert:hover { opacity: .75; }
+
+@media (max-width: 959px) {
+    .alerts-bg { background-color: #111; }
+}
