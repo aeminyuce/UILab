@@ -13,8 +13,9 @@ var tabs = {};
     tabs.Start = function () {
 
         // Events
-        events.on(document, 'click', '.btn-tabs .btn-tab', function () {
+        events.on(document, 'click', '.btn-tabs .btn-tab', function (e) {
 
+            e.preventDefault();
             var parent, tabs, index, contents, classes;
 
             if (!events.hasClass(this, 'active')) {
