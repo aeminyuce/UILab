@@ -202,7 +202,7 @@ var alerts = {
 
                                 setTimeout(function () { // wait for closing dialog and showing messages
                                     set.callback.call(that, that.value);
-                                }, 150);
+                                }, 300);
 
                             }
 
