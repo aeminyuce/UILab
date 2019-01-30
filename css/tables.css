@@ -22,7 +22,7 @@
 .table-sidebar td:first-of-type { font-weight: bold; border-right: solid 1px #ddd; }
 .table-sidebar-center td:nth-child(2) { font-weight: bold; border-right: solid 1px #ddd; border-left: solid 1px #ddd; }
 
-.table.bordered { border-color: #ddd; }
+.table[class*="bordered"] { border-color: #ddd; }
 .table-bordered th:not(:last-child),.table-bordered td:not(:last-child) { border-right: solid 1px #ddd; }
 .table-valign td,.table-valign th { vertical-align: middle !important; }
 

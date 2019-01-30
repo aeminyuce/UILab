@@ -3,7 +3,7 @@
 .ease-data-list.ease-fast .data-content { transition-duration: .1s; }
 .ease-data-list.ease-slow .data-content { transition-duration: .4s; }
 
-.data-list.bordered { border-color: #ddd; }
+.data-list[class*="bordered"] { border-color: #ddd; }
 
 .data-list [data-sort] .icon { opacity: 1 !important; }
 
