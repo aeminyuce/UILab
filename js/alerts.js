@@ -65,7 +65,7 @@ var alerts = {
             if (cancelCloseDialog) {
 
                 events.off('body', 'keydown.closeAlertsDialog');
-                events.off('.alerts-dialog .close-alert,.alerts-bg', 'click.closeAlertsDialog');
+                events.off('.close-alert,.alerts-bg', 'click.closeAlertsDialog');
 
             }
 
@@ -232,7 +232,7 @@ var alerts = {
 
                         };
 
-                        events.on('.alerts-dialog .close-alert,.alerts-bg', 'click.closeAlertsDialog', userCloseDialog);
+                        events.on('.close-alert,.alerts-bg', 'click.closeAlertsDialog', userCloseDialog);
 
                         events.on('body', 'keydown.closeAlertsDialog', function (e) {
                             if (e.keyCode === 27) { userCloseDialog(); } // esc
