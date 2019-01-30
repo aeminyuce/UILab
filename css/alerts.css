@@ -33,7 +33,7 @@ button.dialog-custom:focus { box-shadow: 0 0 10px #777; }
 html:not(.mobile) button.dialog-custom:hover { background-color: rgba(0,0,0,.15); }
 
 .alerts-msg { text-align: center; width: 280px; min-height: 30px; padding: 10px; position: fixed; z-index: 91; cursor: pointer; }
-.alerts-msg:hover { opacity: .9; }
+html:not(.mobile) .alerts-msg:hover { opacity: .9; }
 .alerts-msg:not(.show) { display: none; }
 .alerts-msg:not(.show-ease) { opacity: 0; }
 

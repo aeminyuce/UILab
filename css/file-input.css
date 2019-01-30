@@ -10,6 +10,6 @@
 .file.dual-bordered .btn { width: 126px; }
 .file .btn.rounded { border-radius: 3px 0 0 3px; }
 .file.dual-bordered .btn { height: 28px; }
-.file:hover .btn { background-color: rgba(0,0,0,.15); }
+html:not(.mobile) .file:hover .btn { background-color: rgba(0,0,0,.15); }
 
 .file > span { white-space: nowrap; text-overflow: ellipsis; line-height: 30px; width: 100%; padding-right: 10px; padding-left: 135px; overflow: hidden; display: block; position: absolute; }

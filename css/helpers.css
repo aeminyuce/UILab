@@ -134,7 +134,7 @@ html:not(.portrait) .visible-portrait { display: none !important; }
 .shadow { box-shadow: 0 1px 3px rgba(0,0,0,.15); }
 .shadow-lg { box-shadow: 0 5px 15px rgba(0,0,0,.15); }
 
-.hover-shadow:hover { box-shadow: 0 5px 15px rgba(0,0,0,.2); }
+html:not(.mobile) .hover-shadow:hover { box-shadow: 0 5px 15px rgba(0,0,0,.2); }
 
 .inner-shadow-sm { box-shadow: inset 0 1px 3px rgba(0,0,0,.05); }
 .inner-shadow { box-shadow: inset 0 1px 3px rgba(0,0,0,.15); }
