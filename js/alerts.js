@@ -13,7 +13,7 @@ var alerts = {
     messageTimer: '3000', // miliseconds, wait for atomatically close messages
 
     closeIcon: 'icon icon-xs icon-remove'
-    
+
 };
 
 (function () {
@@ -79,8 +79,8 @@ var alerts = {
             if (set === undefined) { return; }
             if (set.msg === undefined) { return; }
 
-            dialog = selector('.alerts-dialog')[0]; // prevent multiple dialogues
-            if (dialog !== undefined) { return; }
+            dialog = selector('.alerts-dialog')[0];
+            if (dialog !== undefined) { return; } // prevent multiple dialogues
 
             if (navigator.userAgent.toLowerCase().indexOf('mobile') > -1) { // detecting mobile
                 mobile = true;
