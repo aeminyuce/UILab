@@ -1,6 +1,6 @@
 /* borders */
 .bordered,.top-bordered,.right-bordered,.bottom-bordered,.left-bordered { border-style: solid; border-color: rgba(0,0,0,.075); }
-.bordered { border: solid 1px rgba(0,0,0,.075); }
+.bordered { border-width: 1px; }
 .top-bordered { border-width: 1px 0 0 0; }
 .right-bordered { border-width: 0 1px 0 0; }
 .bottom-bordered { border-width: 0 0 1px 0; }
