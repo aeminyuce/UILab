@@ -384,7 +384,9 @@ var photoGallery = {
                 if (e.keyCode === 39) {
                     navigateGallery('next');
 
-                } else { navigateGallery('prev'); }
+                } else if (e.keyCode === 37) {
+                    navigateGallery('prev');
+                }
 
             });
 
