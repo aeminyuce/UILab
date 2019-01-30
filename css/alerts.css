@@ -10,7 +10,7 @@
 .alerts-dialog:not(.show) { display: none; }
 .alerts-dialog:not(.show-ease) { opacity: 0; transform: translate(-50%,-50%) scale(.8); }
 
-.dialog-msg { text-align: center; font-size: 16px; padding: 30px 10px; }
+.dialog-msg { text-align: center; font-size: 16px; }
 
 .dialog-buttons { text-align: right; background-color: rgba(0,0,0,.05); padding: 10px 10px 5px 10px; }
 .alerts-dialog.rounded .dialog-buttons { border-radius: 0 0 4px 4px; }
@@ -54,4 +54,10 @@ html:not(.mobile) .close-alert:hover { opacity: .75; }
 
 @media (max-width: 959px) {
     .alerts-bg { background-color: #111; }
+}
+@media (min-width: 768px) {
+    .dialog-msg { padding: 30px; }
+}
+@media (max-width: 767px) {
+    .dialog-msg { padding: 30px 10px; }
 }
