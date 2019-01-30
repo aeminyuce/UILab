@@ -119,8 +119,8 @@
 
                     <b class="margin-5-b block">Submit form example:</b>
                     <pre class="rounded margin-5-b">return alerts.dialog({<br>    msg: 'Submit this form?',<br>    success: 'Yes',<br>    error: 'No',<br>    callback: function (value) {<br>        if (value === 'success') {<br>            document.getElementById('submitForm').submit();<br>        }<br>    }<br>});</pre>
-                    <form id="submitForm" action="#succesful">
-                        <button type="submit" class="btn rounded theme-default2 ui-dark ease-btn" onclick="return alerts.dialog({msg: 'Submit this form?', success: 'Yes', error: 'No', callback: function (value) { if (value === 'success') { document.getElementById('submitForm').submit(); } }});">Submit Form</button>
+                    <form id="submitForm" action="#succesful" onsubmit="return alerts.dialog({msg: 'Submit this form?', success: 'Yes', error: 'No', callback: function (value) { if (value === 'success') { document.getElementById('submitForm').submit(); } }});">
+                        <button type="submit" class="btn rounded theme-default2 ui-dark ease-btn">Submit Form</button>
                     </form>
 
                 </div>

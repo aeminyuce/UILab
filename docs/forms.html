@@ -14,6 +14,7 @@
     <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
 
     <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/alerts.css" />
     <link rel="stylesheet" href="../css/animations.css" />
     <link rel="stylesheet" href="../css/alignments.css" />
     <link rel="stylesheet" href="../css/buttons.css" />
@@ -44,6 +45,7 @@
     <!-- Javascript Tools -->
     <script src="../js/selector.js"></script>
     <script src="../js/events.js"></script>
+    <script src="../js/alerts.js"></script>
     <script src="../js/sticky-header.js"></script>
     <script src="../js/static-grid.js"></script>
     <script src="../js/top-button.js"></script>
@@ -819,7 +821,7 @@
 
                     <h4>Required Forms</h4>
                     <div class="padding-30-b">
-                        <form action="#succesful">
+                        <form action="#succesful" onsubmit="return alerts.dialog({msg: 'Submit this form?', success: 'Yes', error: 'No', callback: function (value) { if (value === 'success') { document.getElementById('submitForm').submit(); } }});">
                             <div class="row">
                                 <div class="col-4">
                                     <label class="form-grid" for="required1">Required with message</label>
