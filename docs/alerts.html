@@ -73,20 +73,31 @@
                     <pre class="rounded">alerts.dialog({ msg: '', success: '', error: '', custom: { value: 'button text', value: 'button text' }, callback });</pre>
                     <dl class="dl-horizontal padding-15 rounded bordered">
                         <dt>msg</dt>
-                        <dd>Required. Your dialog text.</dd>
-                        <dt>success</dt>
-                        <dd>Optional. Set success button text.</dd>
-                        <dd class="margin-15-b">Success button returns a value: <code>'success'</code></dd>
+                        <dd class="margin-15-b">
+                            Required. Your dialog text.<br>
+                            success<br>
+                            Optional. Set success button text.<br>
+                            Success button returns a value: <code>'success'</code>
+                        </dd>
+
                         <dt>error</dt>
-                        <dd>Optional. Set error button text.</dd>
-                        <dd class="margin-15-b">Error button returns a value: <code>'error'</code></dd>
+                        <dd class="margin-15-b">
+                            Optional. Set error button text.<br>
+                            Error button returns a value: <code>'error'</code>
+                        </dd>
+
                         <dt>custom</dt>
-                        <dd>Optional. Set custom buttons.</dd>
-                        <dd>Custom buttons returns defined own value.</dd>
-                        <dd class="margin-15-b">Example usage: <code>{value: 'button text', value: 'button text'}</code></dd>
+                        <dd class="margin-15-b">
+                            Optional. Set custom buttons.<br>
+                            Custom buttons returns defined own value.<br>
+                            Example usage: <code>{value: 'button text', value: 'button text'}</code>
+                        </dd>
+
                         <dt>callback</dt>
-                        <dd>Optional. Set a callback function when dialog returns a value.</dd>
-                        <dd>Example usage: <code>function (value) {}</code></dd>
+                        <dd>
+                            Optional. Set a callback function when dialog returns a value.<br>
+                            Example usage: <code>function (value) {}</code>
+                        </dd>
                     </dl>
 
                 </div>
@@ -132,12 +143,14 @@
                     <dl class="dl-horizontal padding-15 rounded bordered">
                         <dt>msg</dt>
                         <dd class="margin-15-b">Required. Your alert message.</dd>
+
                         <dt>pos</dt>
                         <dd class="margin-15-b">
                             Optional. Set message position.<br>
                             Default value: <code>'br'</code><br>
                             Available values: <code>'tr', 'tl', 'br', 'bl'</code>
                         </dd>
+
                         <dt>theme</dt>
                         <dd>
                             Optional. Set message theme.<br>
