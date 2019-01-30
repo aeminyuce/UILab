@@ -13,6 +13,7 @@ var alerts = {
     messageTimer: '3000', // miliseconds, wait for atomatically close messages
 
     closeIcon: 'icon icon-xs icon-remove'
+    
 };
 
 (function () {
