@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UI Lab, Modal</title>
+    <meta name="keywords" content="uilab, responsive, design system, css, javascript, modal">
+    <meta name="description" content="CSS & JavaScript powered responsive design system." />
+    <meta name="author" content="Ahmet Emin Yüce"/>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
+
+    <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/alignments.css" />
+    <link rel="stylesheet" href="../css/buttons.css" />
+    <link rel="stylesheet" href="../css/borders.css" />
+    <link rel="stylesheet" href="../css/code.css" />
+    <link rel="stylesheet" href="../css/description-lists.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/helpers.css" />
+    <link rel="stylesheet" href="../css/icons.css" />
+    <link rel="stylesheet" href="../css/margins.css" />
+    <link rel="stylesheet" href="../css/paddings.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/static-grid.css" />
+    <link rel="stylesheet" href="../css/sticky-header.css" />
+    <link rel="stylesheet" href="../css/transitions.css" />
+    <link rel="stylesheet" href="../css/typography.css" />
+    <link rel="stylesheet" href="../css/swatches.css" />
+    <link rel="stylesheet" href="../css/top-button.css" />
+
+    <link rel="stylesheet" href="../css/modal.css" />
+
+    <!-- Javascript Tools -->
+    <script src="../js/selector.js"></script>
+    <script src="../js/events.js"></script>
+    <script src="../js/sticky-header.js"></script>
+    <script src="../js/swatches.js"></script>
+    <script src="../js/top-button.js"></script>
+    <script src="../js/transitions.js"></script>
+    <script src="../js/user-agents.js"></script>
+
+    <script src="../js/modal.js"></script>
+
+    <!-- font icons CSS -->
+    <link rel="stylesheet" href="../../UIIcons/font-icons/outline/font-icons.css" />
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="container theme-default ui-dark">
+        <div class="row theme-default2 ui-border top-bordered dual-bordered">
+            <div class="col-12">
+                <a href="examples.html" class="btn btn-lg btn-square circle ease-btn margin-10-r"><i class="icon icon-md no-opacity icon-long-arrow-left"></i></a>
+                <h1 class="x-large inline-block">UI Lab, Modal</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- documentation examples -->
+    <main class="container no-gutter">
+        <div class="fixed padding-30-v theme-default">
+            <div class="row">
+
+                <div class="col-12">
+
+                    <h4>Examples</h4>
+                    <pre class="rounded">modal.open({ source, type, size, closable, callback });</pre>
+
+                    <dl class="dl-horizontal padding-15 rounded bordered">
+                        <dt>source</dt>
+                        <dd class="margin-15-b">
+                            Required. Set the source of modal.<br>
+                            Available values: <code>id or classname</code>
+                        </dd>
+
+                        <dt>type</dt>
+                        <dd class="margin-15-b">
+                            Optional. Set the different source type of modal.<br>
+                            Available values: <code>'ajax', 'iframe'</code>
+                        </dd>
+
+                        <dt>size</dt>
+                        <dd class="margin-15-b">
+                            Optional. Set the size of modal.<br>
+                            Default value: <code>'md'</code><br>
+                            Available values: <code>'lg', 'md', 'sm', {'width', 'height'}</code>
+                        </dd>
+
+                        <dt>closable</dt>
+                        <dd class="margin-15-b">
+                            Optional. Set the visibility of close controls of modal.<br>
+                            Default value: <code>true</code><br>
+                            Available values: <code>true, false</code>
+                        </dd>
+
+                        <dt>callback</dt>
+                        <dd>
+                            Optional. Set a callback function after modal opens.<br>
+                            Example usage: <code>function (value) {}</code>
+                        </dd>
+                    </dl>
+
+                </div>
+                <div class="col-12">
+
+                    <pre class="rounded margin-5-b">modal.open({<br>    source: '#modalId'<br>});</pre>
+                    <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: '#modalId'});">Run Code</button>
+
+                    <span class="sp15"></span>
+
+                    <pre class="rounded margin-5-b">modal.open({<br>    source: '.modalClassname',<br>    closable: false<br>});</pre>
+                    <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: '.modalClassname', closable: false});">Run Code</button>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- modal sources -->
+    <div id="modalId" class="modal modalClassname theme-default">
+        <div class="modal-header bottom-bordered ui-dark">
+            <h4>Modal Header</h4>
+            <button class="btn circle ui-x-dark ease-btn">Header Button</button>
+        </div>
+        <div class="modal-container large padding-30">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec tincidunt eros. Vivamus a est id dui ultricies congue vel et tellus. Nam ac velit mi. Donec vitae suscipit enim, nec consectetur nisl. Quisque ac posuere lectus. Morbi quam diam, cursus et metus at, lobortis iaculis tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus lectus nibh, non elementum justo facilisis a. Aliquam erat volutpat. Vestibulum auctor et diam eget eleifend. Donec blandit ligula aliquam mi lacinia lacinia. Cras ac bibendum urna. Suspendisse posuere ullamcorper enim, non varius diam mattis vehicula. Donec nec lacinia diam.
+            <img class="sm-img-responsive automargin margin-30-v rounded shadow-lg" src="images/image_05.jpg" width="614" alt="">
+            Pellentesque congue eget elit vitae rutrum. Morbi bibendum dignissim convallis. Etiam lacinia quam et ipsum convallis, a congue metus sagittis. Nunc posuere iaculis nulla, nec rutrum neque condimentum at. Donec nec elementum sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor libero sem, sed bibendum elit viverra vitae.
+            <br><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec tincidunt eros. Vivamus a est id dui ultricies congue vel et tellus. Nam ac velit mi. Donec vitae suscipit enim, nec consectetur nisl. Quisque ac posuere lectus. Morbi quam diam, cursus et metus at, lobortis iaculis tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus lectus nibh, non elementum justo facilisis a. Aliquam erat volutpat. Vestibulum auctor et diam eget eleifend. Donec blandit ligula aliquam mi lacinia lacinia. Cras ac bibendum urna. Suspendisse posuere ullamcorper enim, non varius diam mattis vehicula. Donec nec lacinia diam.
+        </div>
+        <div class="modal-footer top-bordered ease-1st-btn">
+            <button type="button" class="btn padding-30-h btn-invisible dual-bordered circle" onclick="modal.close();">Cancel</button>
+            <button type="submit" class="btn padding-30-h circle theme-green ui-dark" onclick="modal.close();">Accept</button>
+        </div>
+    </div>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128387411-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-128387411-1');
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+/* modal */
+.modal-bg-opened { overflow: hidden; }
+.mobile.modal-bg-opened body { width: 100%; height: 100%; overflow: hidden; position: fixed; top: 0; left: 0; }
+
+.modal-bg { width: 100%; min-width: 320px; height: 100%; background-color: rgba(0,0,0,.65); position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 89; }
+.modal-bg:not(.open) { display: none; }
+.modal-bg:not(.open-ease) { opacity: 0; }
+
+.modal-win { width: 90%; height: 100%; max-height: 92%; background-color: #fff; backface-visibility: hidden; }
+.modal-win.show { position: fixed; top: 50%; left: 50%; z-index: 90; transform: translate(-50%,-50%) scale(1) perspective(0) rotateX(0); transform-origin: center bottom; }
+.ie9 .modal-win { transform: translate(-50%,-50%); }
+.modal-win:not(.show) { display: none; }
+.modal-win:not(.show-ease) { opacity: 0; transform: translate(-50%,-75%) scale(0.96) perspective(600px) rotateX(10deg); }
+
+.modal-win.lg { max-width: 1200px; }
+.modal-win.md { max-width: 960px; }
+.modal-win.sm { max-width: 480px; }
+
+.modal { display: none; }
+.modal-win .modal { height: 100%; display: block; }
+.modal-win .modal.has-header { padding-top: 52px !important;  }
+.modal-win .modal.has-footer { padding-bottom: 52px !important;  }
+
+.modal-header,.modal-footer { text-overflow: ellipsis; white-space: nowrap; text-align: right; height: 52px; background-color: rgba(0,0,0,.04); padding: 10px; overflow: hidden; position: absolute; right: 0; left: 0; z-index: 1; }
+.modal-win.rounded .modal-header { border-radius: 5px 5px 0 0; top: 0; }
+.modal-win.rounded .modal-footer { border-radius: 0 0 5px 5px; bottom: 0; }
+
+.modal-header h1,.modal-header h2,.modal-header h3,.modal-header h4,.modal-header h5,.modal-header h6 { font-size: 18px !important; line-height: 32px; float: left; }
+
+.modal-header .btn-lg,.modal-footer .btn-lg { margin: -5px 0; }
+.modal-header .btn-sm,.modal-footer .btn-sm { margin: 3px 0; }
+.modal-header .btn-xs,.modal-footer .btn-xs { margin: 5px 0; }
+.modal-header .btn-xxs,.modal-footer .btn-xxs { margin: 8px 0; }
+
+.modal-container { min-width: 280px; min-height: 220px; max-height: 100%; padding: 10px; overflow: auto; -webkit-overflow-scrolling: touch; }
+
+.close-modal { color: #fff !important; width: 25px; height: 25px; background-color: rgba(0,0,0,.65); border: 0; border-radius: 100%; position: absolute; top: -12px; right: -12px; z-index: 10; cursor: pointer; }
+html:not(.mobile) .close-modal:hover { background-color: rgba(0,0,0,1); }
+
+@media (max-width: 959px) {
+    .modal-bg { background-color: #111; }
+}
