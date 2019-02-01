@@ -13,9 +13,9 @@
 .dialog-msg { text-align: center; font-size: 16px; }
 
 .dialog-buttons { text-align: right; background-color: rgba(0,0,0,.05); padding: 10px 10px 5px 10px; }
-.alerts-dialog.rounded .dialog-buttons { border-radius: 0 0 4px 4px; }
+.alerts-dialog.rounded .dialog-buttons { border-radius: 0 0 6px 6px; }
 .dialog-buttons button { font-weight: bold; text-align: center; vertical-align: middle; line-height: 20px; min-width: 68px; height: 32px; padding: 6px 12px; margin-bottom: 5px; display: inline-block; border: 0; }
-.alerts-dialog.rounded button { border-radius: 4px; }
+.alerts-dialog.rounded button { border-radius: 6px; }
 .dialog-buttons button:not(:last-child) { margin-right: 5px; }
 
 button.dialog-error,button.dialog-success { color: #fff !important; }
