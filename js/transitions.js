@@ -6,8 +6,8 @@
 var transitions = {
 
     effects: true,
-    pauseScroll: false, // close transitions and animations on window resizing
-    pauseResize: true, // close transitions and animations on window scrolling
+    pauseScroll: false, // close transitions and animations on window scrolling
+    pauseResize: false, // close transitions and animations on window resizing
     preload: true, // wait page preload to start effects
     ie: true,
     android: true,
