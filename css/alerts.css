@@ -6,9 +6,10 @@
 .alerts-bg:not(.open) { display: none; }
 .alerts-bg:not(.open-ease) { opacity: 0; }
 
-.alerts-dialog { min-width: 280px; max-width: 680px; background-color: #fff; min-height: 60px; position: fixed; top: 50%; left: 50%; z-index: 98; transform: translate(-50%,-50%); }
+.alerts-dialog { min-width: 280px; max-width: 680px; background-color: #fff; min-height: 60px; position: fixed; top: 51.333333%; left: 51.333%; z-index: 98; transform: translate(-50%,-50%) scale(1) perspective(0) rotateX(0); transform-origin: center bottom; }
+.ie9 .modal-dialog { transform: translate(-50%,-50%); }
 .alerts-dialog:not(.show) { display: none; }
-.alerts-dialog:not(.show-ease) { opacity: 0; transform: translate(-50%,-50%) scale(.8); }
+.alerts-dialog:not(.show-ease) { opacity: 0; transform: translate(-50%,-75%) scale(0.96) perspective(400px) rotateX(30deg); }
 
 .dialog-msg { text-align: center; font-size: 16px; }
 
@@ -32,7 +33,7 @@ button.dialog-custom { background-color: rgba(0,0,0,.08); }
 button.dialog-custom:focus { box-shadow: 0 0 10px #777; }
 html:not(.mobile) button.dialog-custom:hover { background-color: rgba(0,0,0,.15); }
 
-.alerts-msg { text-align: center; width: 280px; min-height: 30px; padding: 10px; position: fixed; z-index: 91; cursor: pointer; }
+.alerts-msg { text-align: center; width: 280px; min-height: 30px; padding: 10px; position: fixed; z-index: 99; cursor: pointer; }
 html:not(.mobile) .alerts-msg:hover { opacity: .9; }
 .alerts-msg:not(.show) { display: none; }
 .alerts-msg:not(.show-ease) { opacity: 0; }
