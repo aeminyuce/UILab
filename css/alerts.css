@@ -6,7 +6,7 @@
 .alerts-bg:not(.open) { display: none; }
 .alerts-bg:not(.open-ease) { opacity: 0; }
 
-.alerts-dialog { min-width: 280px; max-width: 680px; background-color: #fff; min-height: 60px; position: fixed; top: 51.333333%; left: 51.333%; z-index: 98; transform: translate(-50%,-50%) scale(1) perspective(0) rotateX(0); transform-origin: center bottom; }
+.alerts-dialog { min-width: 280px; max-width: 680px; background-color: #fff; min-height: 60px; position: fixed; top: 50%; left: 50%; z-index: 98; transform: translate(-50%,-50%) scale(1) perspective(0) rotateX(0); transform-origin: center bottom; }
 .ie9 .modal-dialog { transform: translate(-50%,-50%); }
 .alerts-dialog:not(.show) { display: none; }
 .alerts-dialog:not(.show-ease) { opacity: 0; transform: translate(-50%,-75%) scale(0.96) perspective(400px) rotateX(30deg); }
