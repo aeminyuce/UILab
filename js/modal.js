@@ -24,9 +24,9 @@ var modal = {
 
     modal.Start = function () {
 
-        modal.close = function () {
+        modal.close = function (callback) {
 
-            var win, bg;
+            var win, bg, removeModal;
 
             win = selector('.modal-win.show');
             if (win.length === 0) { return; }
@@ -38,7 +38,16 @@ var modal = {
             setTimeout(function () {
 
                 events.each(win, function () {
-                    events.removeClass(this, 'show');
+
+                    removeModal = selector('.modal-remove', win[0]).length;
+
+                    if (removeModal > 0) { // remove modal window
+                        win[0].parentNode.removeChild(win[0]);
+
+                    } else { // hide modal window
+                        events.removeClass(this, 'show');
+                    }
+
                 });
 
                 bg = selector('.modal-bg');
@@ -48,7 +57,20 @@ var modal = {
                 if (mobile) { window.scrollTo(0, pageYPosition); }
 
                 setTimeout(function () {
+
                     events.removeClass(bg, 'open');
+
+                    // callback
+                    if (callback !== undefined) {
+
+                        if (typeof callback !== 'function') { return; }
+
+                        setTimeout(function () { // wait for closing modal
+                            callback.call();
+                        }, 150);
+
+                    }
+
                 }, 150);
 
             }, 150);
@@ -57,13 +79,12 @@ var modal = {
 
         modal.open = function (set) {
 
-            var styles, closeBtn, nonClosable, createdBefore, created, temp, size, sizeArr, bg, html, win, content;
+            var styles, closeBtn, nonClosable, typeArr, type, created, temp, getSize, size, customSize, sizeArr, bg, html, win, content;
 
             if (set === undefined) { return; }
             if (set.source === undefined) { return; }
 
-            // hide opened modal windows and prevent multiple modal windows
-            modal.close();
+            modal.close(); // hide opened modal windows and prevent multiple modal windows
 
             if (navigator.userAgent.toLowerCase().indexOf('mobile') > -1) { // detecting mobile
                 mobile = true;
@@ -79,66 +100,30 @@ var modal = {
                 if (!set.closable) { nonClosable = true; }
             }
 
-            // get source
-            createdBefore = false;
+            // create modal
+            function createModal() {
 
-            if (set.type === undefined) { // inner sources
-
-                // check the modal created before
-                set.source = selector(set.source);
-                if (set.source[0] === undefined) { return; }
-
-                created = events.closest(set.source, '.modal-win');
-
-                if (created.length > 0) {
-
-                    events.addClass(created, 'active');
-                    win = selector('.modal-win.active')[0];
-
-                    createdBefore = true;
-
-                } else {
-
-                    temp = document.createDocumentFragment();
-
-                    events.each(set.source, function (i) {
-                        temp.appendChild(set.source[i]);
-                    });
-
-                    set.source = temp;
-
-                }
-
-            }
-
-            if (!createdBefore) {
-
-                // set modal size
-                size = 'md';
-                if (set.size !== undefined) {
-
-                    sizeArr = ['lg', 'md', 'sm'];
-                    if (sizeArr.indexOf(set.size) < 0) { size = set.size; }
-
-                }
-
-                // create modal
-                styles = size + ' ' + modal.classes + ' ease-layout';
+                styles = modal.classes + ' ease-layout';
                 styles = styles.replace(re, ' ').replace(rex, '');
 
                 bg = selector('.modal-bg')[0];
 
-                html = '<div class="modal-win active ' + styles + '"></div>';
+                html = '<div class="modal-win active">' +
+                            '<div class="modal-content ' + styles + '"></div>' +
+                        '</div>';
+
                 if (bg === undefined) { html += '<div class="modal-bg ease-opacity"></div>'; }
 
                 html = events.parser(html);
                 selector('body')[0].insertAdjacentHTML('beforeend', html);
 
                 win = selector('.modal-win.active')[0];
-                win.appendChild(set.source);
+                content = selector('.modal-content', win)[0];
 
-                // check header and footer availability
-                content = selector('.modal', win)[0];
+            }
+
+            // check header and footer availability
+            function checkHeaderFooter() {
 
                 if (selector('.modal-header', content)[0] !== undefined) {
                     events.addClass(content, 'has-header');
@@ -147,6 +132,95 @@ var modal = {
                 if (selector('.modal-footer', content)[0] !== undefined) {
                     events.addClass(content, 'has-footer');
                 }
+
+            }
+
+            // get source
+            if (set.type === undefined) { // inner sources
+
+                // check the modal created before
+                set.source = selector(set.source);
+                if (set.source[0] === undefined) { return; }
+
+                created = events.closest(set.source, '.modal-win');
+                if (created.length > 0) { // modal created before
+
+                    events.addClass(created, 'active');
+                    win = selector('.modal-win.active')[0];
+
+                    content = selector('.modal-content', win)[0];
+
+                } else { // create modal
+
+                    // move source
+                    temp = document.createDocumentFragment();
+
+                    events.each(set.source, function (i) {
+                        temp.appendChild(set.source[i]);
+                    });
+
+                    createModal();
+                    content.appendChild(temp);
+                    checkHeaderFooter();
+
+                }
+
+            } else { // other source types
+
+                typeArr = ['ajax', 'iframe'];
+
+                if (typeArr.indexOf(set.type) > -1) {
+                    type = set.type;
+                }
+
+                if (type === 'iframe') { // iframe sources
+
+                    temp = events.parser('<iframe class="modal-iframe modal-remove" src="' + set.source + '" frameborder="0" allowfullscreen></iframe>');
+
+                    createModal();
+                    content.insertAdjacentHTML('beforeend', temp);
+
+                }
+
+            }
+
+            // set modal size
+            events.removeClass(content, 'lg md sm fullscreen');
+
+            content.style.removeProperty('max-width');
+            content.style.removeProperty('max-height');
+
+            if (set.size === undefined) {
+
+                size = 'md';
+                events.addClass(content, size);
+
+            } else {
+
+                getSize = function () {
+
+                    size = 'md';
+
+                    sizeArr = ['lg', 'md', 'sm', 'fullscreen'];
+                    if (sizeArr.indexOf(set.size) > -1) {
+                        size = set.size;
+                    }
+
+                    events.addClass(content, size);
+
+                };
+
+                customSize = set.size.split('x'); // check custom size
+                if (customSize.length === 2) {
+
+                    if (customSize[0].match(/^[0-9]+$/) !== null && customSize[1].match(/^[0-9]+$/) !== null) {
+
+                        content.style.maxWidth = customSize[0] + 'px';
+                        content.style.maxHeight = customSize[1] + 'px';
+
+                    } else { getSize(); }
+
+                } else { getSize(); }
 
             }
 
@@ -159,24 +233,28 @@ var modal = {
             }
 
             // add/remove close button
+            closeBtn = selector('.close-modal', win)[0];
+
             if (nonClosable) {
 
-                closeBtn = selector('.close-modal', win)[0];
-
                 if (closeBtn !== undefined) {
-                    win.removeChild(closeBtn);
+                    closeBtn.parentNode.removeChild(closeBtn);
                 }
 
             } else {
 
-                modal.closeIcon = modal.closeIcon.replace(re, ' ').replace(rex, '');
+                if (closeBtn === undefined) {
 
-                closeBtn = '<button class="close-modal ease-bg">' +
-                                '<i class="' + modal.closeIcon + '"></i>' +
-                            '</button>';
+                    modal.closeIcon = modal.closeIcon.replace(re, ' ').replace(rex, '');
 
-                closeBtn = events.parser(closeBtn);
-                win.insertAdjacentHTML('afterbegin', closeBtn);                
+                    closeBtn = '<button class="close-modal ease-bg">' +
+                                    '<i class="' + modal.closeIcon + '"></i>' +
+                                '</button>';
+
+                    closeBtn = events.parser(closeBtn);
+                    content.insertAdjacentHTML('afterbegin', closeBtn);
+
+                }
 
             }
 
@@ -196,6 +274,15 @@ var modal = {
 
                         events.addClass(win, 'show-ease');
                         events.removeClass(win, 'active');
+
+                        // callback
+                        if (set.callback !== undefined) {
+
+                            setTimeout(function () { // wait for modal dom is ready
+                                set.callback.call(content);
+                            }, 300);
+
+                        }
 
                     }, 10);
 

@@ -69,8 +69,8 @@
 
                 <div class="col-12">
 
-                    <h4>Examples</h4>
-                    <pre class="rounded">modal.open({ source, type, size, closable, callback });</pre>
+                    <h4>Open Modal</h4>
+                    <pre class="rounded">modal.open({ source, size, type, closable, callback });</pre>
 
                     <dl class="dl-horizontal padding-15 rounded bordered">
                         <dt>source</dt>
@@ -79,17 +79,17 @@
                             Available values: <code>id or classname</code>
                         </dd>
 
-                        <dt>type</dt>
-                        <dd class="margin-15-b">
-                            Optional. Set the different source type of modal.<br>
-                            Available values: <code>'ajax', 'iframe'</code>
-                        </dd>
-
                         <dt>size</dt>
                         <dd class="margin-15-b">
                             Optional. Set the size of modal.<br>
                             Default value: <code>'md'</code><br>
-                            Available values: <code>'lg', 'md', 'sm', {'width', 'height'}</code>
+                            Available values: <code>'lg', 'md', 'sm', 'fullscreen', {'width', 'height'}</code>
+                        </dd>
+
+                        <dt>type</dt>
+                        <dd class="margin-15-b">
+                            Optional. Set the different source type of modal.<br>
+                            Available values: <code>'ajax', 'iframe'</code>
                         </dd>
 
                         <dt>closable</dt>
@@ -102,20 +102,122 @@
                         <dt>callback</dt>
                         <dd>
                             Optional. Set a callback function after modal opens.<br>
-                            Example usage: <code>function (value) {}</code>
+                            Example usage: <code>function () {}</code>
                         </dd>
                     </dl>
 
                 </div>
+
+                <div class="col-12 no-padding-b">
+                    <b class="margin-5-b block">Examples:</b>
+                </div>
+                <div class="col-6 no-padding-v">
+
+                    <i class="x-dark margin-5-b block">Open modal window with id.</i>
+                    <pre class="rounded margin-5-b">modal.open({<br>    source: '#myModalId'<br>});</pre>
+                    <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: '#myModalId'});">Run Code</button>
+
+                </div>
+                <div class="col-6 no-padding-t">
+
+                    <i class="x-dark margin-5-b block">Open modal window with class name.</i>
+                    <pre class="rounded margin-5-b">modal.open({<br>    source: '.myModal'<br>});</pre>
+                    <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: '.myModal'});">Run Code</button>
+
+                </div>
+
+                <div class="col-12 no-padding-b">
+                    <b class="margin-5-b block">Size:</b>
+                </div>
+                <div class="col-6 no-padding-v">
+
+                    <i class="x-dark margin-5-b block">Open large size modal window.</i>
+                    <pre class="rounded margin-5-b">modal.open({<br>    source: '.myModal',<br>    size: 'lg'<br>});</pre>
+                    <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: '.myModal', size: 'lg'});">Run Code</button>
+
+                </div>
+                <div class="col-6 no-padding-t">
+
+                    <i class="x-dark margin-5-b block">Open default (medium) size modal window.</i>
+                    <pre class="rounded margin-5-b">modal.open({<br>    source: '.myModal',<br>    size: 'md'<br>});</pre>
+                    <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: '.myModal', size: 'md'});">Run Code</button>
+
+                </div>
+                <div class="col-6 no-padding-t">
+
+                    <i class="x-dark margin-5-b block">Open small size modal window.</i>
+                    <pre class="rounded margin-5-b">modal.open({<br>    source: '.myModal',<br>    size: 'sm'<br>});</pre>
+                    <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: '.myModal', size: 'sm'});">Run Code</button>
+
+                </div>
+                <div class="col-6 no-padding-t">
+
+                    <i class="x-dark margin-5-b block">Open fullscreen modal window.</i>
+                    <pre class="rounded margin-5-b">modal.open({<br>    source: '.myModal',<br>    size: 'fullscreen'<br>});</pre>
+                    <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: '.myModal', size: 'fullscreen'});">Run Code</button>
+
+                </div>
+                <div class="col-6 no-padding-t">
+
+                    <i class="x-dark margin-5-b block">Open custom size modal window.</i>
+                    <pre class="rounded margin-5-b">modal.open({<br>    source: '.myModal',<br>    size: '560x315'<br>});</pre>
+                    <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: '.myModal', size: '560x315'});">Run Code</button>
+
+                </div>
+
                 <div class="col-12">
 
-                    <pre class="rounded margin-5-b">modal.open({<br>    source: '#modalId'<br>});</pre>
-                    <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: '#modalId'});">Run Code</button>
+                    <b>Type:</b>
+                    <i class="x-dark margin-5-b block">Open links with iframe modal.</i>
+                    <pre class="rounded margin-5-b">modal.open({<br>    source: 'https://www.youtube.com/embed/Ct6BUPvE2sM',<br>    size: '640x360',<br>    type: 'iframe'<br>});</pre>
+                    <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: 'https://www.youtube.com/embed/Ct6BUPvE2sM', size: '640x360', type: 'iframe'});">Run Code</button>
 
                     <span class="sp15"></span>
 
-                    <pre class="rounded margin-5-b">modal.open({<br>    source: '.modalClassname',<br>    closable: false<br>});</pre>
-                    <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: '.modalClassname', closable: false});">Run Code</button>
+                    <pre class="rounded margin-5-b">modal.open({<br>    source: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d770809.0860158126!2d28.45174621544522!3d41.003964328513874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1549286679927',<br>    size: 'fullscreen',<br>    type: 'iframe'<br>});</pre>
+                    <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d770809.0860158126!2d28.45174621544522!3d41.003964328513874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1549286679927', size: 'fullscreen', type: 'iframe'});">Run Code</button>
+
+                </div>
+
+                <div class="col-12">
+
+                    <b>Closable:</b>
+                    <i class="x-dark margin-5-b block">Close modal window with footer buttons.</i>
+                    <pre class="rounded margin-5-b">modal.open({<br>    source: '.myModal',<br>    closable: false<br>});</pre>
+                    <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: '.myModal', closable: false});">Run Code</button>
+
+                </div>
+
+                <div class="col-12">
+
+                    <b>Callback:</b>
+                    <i class="x-dark margin-5-b block">Callback call after open modal.</i>
+                    <pre class="rounded margin-5-b">modal.open({<br>    source: '.myModal',<br>    callback: function () {<br>        alert('Modal opened!');<br>    }<br>});</pre>
+                    <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: '.myModal', callback: function () { alert('Modal opened!'); }});">Run Code</button>
+
+                </div>
+
+                <div class="col-12">
+
+                    <h4>Close Modal</h4>
+                    <pre class="rounded">modal.close(callback);</pre>
+
+                    <dl class="dl-horizontal padding-15 rounded bordered">
+                        <dt>callback</dt>
+                        <dd>
+                            Optional. Set a callback function after modal closes.<br>
+                            Example usage: <code>function () {}</code>
+                        </dd>
+                    </dl>
+
+                </div>
+
+                <div class="col-12 no-padding-b">
+                    <pre class="rounded margin-5-b">modal.close();</pre>
+
+                    <span class="sp15"></span>
+
+                    <pre class="rounded margin-5-b">modal.close({<br>    function () {<br>        alert('Modal closed!');<br>    }<br>});</pre>
 
                 </div>
 
@@ -124,19 +226,20 @@
     </main>
 
     <!-- modal sources -->
-    <div id="modalId" class="modal modalClassname theme-default">
-        <div class="modal-header bottom-bordered ui-dark">
+    <div id="myModalId" class="modal myModal theme-default">
+        <div class="modal-header ui-dark">
             <h4>Modal Header</h4>
             <button class="btn circle ui-x-dark ease-btn">Header Button</button>
         </div>
         <div class="modal-container large padding-30">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec tincidunt eros. Vivamus a est id dui ultricies congue vel et tellus. Nam ac velit mi. Donec vitae suscipit enim, nec consectetur nisl. Quisque ac posuere lectus. Morbi quam diam, cursus et metus at, lobortis iaculis tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus lectus nibh, non elementum justo facilisis a. Aliquam erat volutpat. Vestibulum auctor et diam eget eleifend. Donec blandit ligula aliquam mi lacinia lacinia. Cras ac bibendum urna. Suspendisse posuere ullamcorper enim, non varius diam mattis vehicula. Donec nec lacinia diam.
-            <img class="sm-img-responsive automargin margin-30-v rounded shadow-lg" src="images/image_05.jpg" width="614" alt="">
+            <img class="img-responsive margin-30-v rounded" src="images/image_05.jpg" alt="">
             Pellentesque congue eget elit vitae rutrum. Morbi bibendum dignissim convallis. Etiam lacinia quam et ipsum convallis, a congue metus sagittis. Nunc posuere iaculis nulla, nec rutrum neque condimentum at. Donec nec elementum sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor libero sem, sed bibendum elit viverra vitae.
             <br><br>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec tincidunt eros. Vivamus a est id dui ultricies congue vel et tellus. Nam ac velit mi. Donec vitae suscipit enim, nec consectetur nisl. Quisque ac posuere lectus. Morbi quam diam, cursus et metus at, lobortis iaculis tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus lectus nibh, non elementum justo facilisis a. Aliquam erat volutpat. Vestibulum auctor et diam eget eleifend. Donec blandit ligula aliquam mi lacinia lacinia. Cras ac bibendum urna. Suspendisse posuere ullamcorper enim, non varius diam mattis vehicula. Donec nec lacinia diam.
         </div>
-        <div class="modal-footer top-bordered ease-1st-btn">
+        <div class="modal-footer ease-1st-btn">
+            <button type="button" class="btn padding-30-h btn-invisible dual-bordered circle" onclick="modal.close(function () { alert('Modal closed!'); });">Callback</button>
             <button type="button" class="btn padding-30-h btn-invisible dual-bordered circle" onclick="modal.close();">Cancel</button>
             <button type="submit" class="btn padding-30-h circle theme-green ui-dark" onclick="modal.close();">Accept</button>
         </div>
