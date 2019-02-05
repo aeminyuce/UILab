@@ -114,8 +114,8 @@
                 <div class="col-6 no-padding-v">
 
                     <i class="x-dark margin-5-b block">Open modal window with id.</i>
-                    <pre class="rounded margin-5-b">modal.open({<br>    source: '#myModalId'<br>});</pre>
-                    <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: '#myModalId'});">Run Code</button>
+                    <pre class="rounded margin-5-b">modal.open({<br>    source: '#myModalId01'<br>});</pre>
+                    <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: '#myModalId01'});">Run Code</button>
 
                 </div>
                 <div class="col-6 no-padding-t">
@@ -168,14 +168,24 @@
                 <div class="col-12">
 
                     <b>Type:</b>
-                    <i class="x-dark margin-5-b block">Open links with iframe modal.</i>
+                    <i class="x-dark margin-5-b block">
+                        Open links with iframe modal.<br>
+                        Youtube embed link example:
+                    </i>
                     <pre class="rounded margin-5-b">modal.open({<br>    source: 'https://www.youtube.com/embed/Ct6BUPvE2sM',<br>    size: '640x360',<br>    type: 'iframe'<br>});</pre>
                     <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: 'https://www.youtube.com/embed/Ct6BUPvE2sM', size: '640x360', type: 'iframe'});">Run Code</button>
 
                     <span class="sp15"></span>
 
+                    <i class="x-dark margin-5-b block">Google map embed link example:</i>
                     <pre class="rounded margin-5-b">modal.open({<br>    source: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d770809.0860158126!2d28.45174621544522!3d41.003964328513874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1549286679927',<br>    size: 'fullscreen',<br>    type: 'iframe'<br>});</pre>
                     <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d770809.0860158126!2d28.45174621544522!3d41.003964328513874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1549286679927', size: 'fullscreen', type: 'iframe'});">Run Code</button>
+
+                    <span class="sp15"></span>
+
+                    <i class="x-dark margin-5-b block">Google map embed link with header and footer:</i>
+                    <pre class="rounded margin-5-b">modal.open({<br>    source: '#myModal02'<br>    size: 'fullscreen'<br>});</pre>
+                    <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: '#myModalId02', size: 'fullscreen'});">Run Code</button>
 
                 </div>
 
@@ -226,14 +236,14 @@
     </main>
 
     <!-- modal sources -->
-    <div id="myModalId" class="modal myModal theme-default">
+    <div id="myModalId01" class="modal myModal theme-default">
         <div class="modal-header ui-dark">
             <h4>Modal Header</h4>
             <button class="btn circle ui-x-dark ease-btn">Header Button</button>
         </div>
         <div class="modal-container large padding-30">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec tincidunt eros. Vivamus a est id dui ultricies congue vel et tellus. Nam ac velit mi. Donec vitae suscipit enim, nec consectetur nisl. Quisque ac posuere lectus. Morbi quam diam, cursus et metus at, lobortis iaculis tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus lectus nibh, non elementum justo facilisis a. Aliquam erat volutpat. Vestibulum auctor et diam eget eleifend. Donec blandit ligula aliquam mi lacinia lacinia. Cras ac bibendum urna. Suspendisse posuere ullamcorper enim, non varius diam mattis vehicula. Donec nec lacinia diam.
-            <img class="img-responsive margin-30-v rounded" src="images/image_05.jpg" alt="">
+            <img class="img-responsive margin-30-v rounded automargin block shadow-lg" src="images/image_05.jpg" style="max-width: 700px" alt="">
             Pellentesque congue eget elit vitae rutrum. Morbi bibendum dignissim convallis. Etiam lacinia quam et ipsum convallis, a congue metus sagittis. Nunc posuere iaculis nulla, nec rutrum neque condimentum at. Donec nec elementum sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor libero sem, sed bibendum elit viverra vitae.
             <br><br>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec tincidunt eros. Vivamus a est id dui ultricies congue vel et tellus. Nam ac velit mi. Donec vitae suscipit enim, nec consectetur nisl. Quisque ac posuere lectus. Morbi quam diam, cursus et metus at, lobortis iaculis tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus lectus nibh, non elementum justo facilisis a. Aliquam erat volutpat. Vestibulum auctor et diam eget eleifend. Donec blandit ligula aliquam mi lacinia lacinia. Cras ac bibendum urna. Suspendisse posuere ullamcorper enim, non varius diam mattis vehicula. Donec nec lacinia diam.
@@ -242,6 +252,18 @@
             <button type="button" class="btn padding-30-h btn-invisible dual-bordered circle" onclick="modal.close(function () { alert('Modal closed!'); });">Callback</button>
             <button type="button" class="btn padding-30-h btn-invisible dual-bordered circle" onclick="modal.close();">Cancel</button>
             <button type="submit" class="btn padding-30-h circle theme-green ui-dark" onclick="modal.close();">Accept</button>
+        </div>
+    </div>
+
+    <div id="myModalId02" class="modal">
+        <div class="modal-header">
+            <h4>Modal Header</h4>
+        </div>
+        <div class="modal-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d770809.0860158126!2d28.45174621544522!3d41.003964328513874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1549286679927" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="modal-footer ease-1st-btn">
+            <button type="submit" class="btn padding-30-h circle theme-green ui-dark" onclick="modal.close();">Save</button>
         </div>
     </div>
 

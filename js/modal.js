@@ -1,19 +1,19 @@
 /*
  Modal JS
- Modal JS requires Events JS
+ Autocomplete JS requires Events JS, Ajax JS
 */
 
 var modal = {
 
     classes: 'rounded shadow-lg',
-    closeIcon: 'icon icon-xxs icon-remove'
+    closeIcon: 'icon icon-xs icon-remove'
 
 };
 
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, navigator, setTimeout */
+    /*globals window, document, selector, events, navigator, setTimeout, ajax */
 
     var
         mobile,
@@ -135,6 +135,123 @@ var modal = {
 
             }
 
+            // complete modal
+            function showModal() {
+
+                // set modal size
+                events.removeClass(content, 'lg md sm fullscreen');
+
+                content.style.removeProperty('top');
+                content.style.removeProperty('left');
+
+                content.style.removeProperty('max-width');
+                content.style.removeProperty('max-height');
+
+                if (set.size === undefined) {
+
+                    size = 'md';
+                    events.addClass(content, size);
+
+                } else {
+
+                    getSize = function () {
+
+                        size = 'md';
+
+                        sizeArr = ['lg', 'md', 'sm', 'fullscreen'];
+                        if (sizeArr.indexOf(set.size) > -1) {
+                            size = set.size;
+                        }
+
+                        events.addClass(content, size);
+
+                    };
+
+                    customSize = set.size.split('x'); // check custom size
+                    if (customSize.length === 2) {
+
+                        if (customSize[0].match(/^[0-9]+$/) !== null && customSize[1].match(/^[0-9]+$/) !== null) {
+
+                            content.style.maxWidth = customSize[0] + 'px';
+                            content.style.maxHeight = customSize[1] + 'px';
+
+                        } else { getSize(); }
+
+                    } else { getSize(); }
+
+                }
+
+                // set closable
+                if (nonClosable) {
+                    events.removeClass(win, 'closable');
+
+                } else {
+                    events.addClass(win, 'closable');
+                }
+
+                // add/remove close button
+                closeBtn = selector('.close-modal', win)[0];
+
+                if (nonClosable) {
+
+                    if (closeBtn !== undefined) {
+                        closeBtn.parentNode.removeChild(closeBtn);
+                    }
+
+                } else {
+
+                    if (closeBtn === undefined) {
+
+                        modal.closeIcon = modal.closeIcon.replace(re, ' ').replace(rex, '');
+
+                        closeBtn = '<button class="close-modal ease-bg">' +
+                                        '<i class="' + modal.closeIcon + '"></i>' +
+                                    '</button>';
+
+                        closeBtn = events.parser(closeBtn);
+                        content.insertAdjacentHTML('afterbegin', closeBtn);
+
+                    }
+
+                }
+
+                // show modal
+                bg = selector('.modal-bg');
+                events.addClass(bg, 'open');
+
+                setTimeout(function () {
+
+                    events.addClass(bg, 'open-ease');
+                    setTimeout(function () {
+
+                        events.addClass(document, 'modal-bg-opened');
+                        events.addClass(win, 'show');
+
+                        content.style.top = Math.floor((bg[0].offsetHeight - content.offsetHeight) / 2) + 'px';
+                        content.style.left = Math.floor((bg[0].offsetWidth - content.offsetWidth) / 2) + 'px';
+
+                        setTimeout(function () {
+
+                            events.addClass(win, 'show-ease');
+                            events.removeClass(win, 'active');
+
+                            // callback
+                            if (set.callback !== undefined) {
+
+                                setTimeout(function () { // wait for modal dom is ready
+                                    set.callback.call(content);
+                                }, 300);
+
+                            }
+
+                        }, 10);
+
+                    }, 150);
+
+                }, 10);
+
+            }
+
             // get source
             if (set.type === undefined) { // inner sources
 
@@ -149,6 +266,7 @@ var modal = {
                     win = selector('.modal-win.active')[0];
 
                     content = selector('.modal-content', win)[0];
+                    showModal();
 
                 } else { // create modal
 
@@ -161,7 +279,9 @@ var modal = {
 
                     createModal();
                     content.appendChild(temp);
+
                     checkHeaderFooter();
+                    showModal();
 
                 }
 
@@ -180,115 +300,30 @@ var modal = {
                     createModal();
                     content.insertAdjacentHTML('beforeend', temp);
 
-                }
+                    showModal();
 
-            }
+                } else if (type === 'ajax') { // ajax sources
 
-            // set modal size
-            events.removeClass(content, 'lg md sm fullscreen');
+                    ajax('POST', set.source, function (response, status) {
 
-            content.style.removeProperty('max-width');
-            content.style.removeProperty('max-height');
+                        if (status === 'success') {
 
-            if (set.size === undefined) {
+                            temp = '<div class="modal modal-remove">' + response + '</div>';
+                            temp = events.parser(temp);
 
-                size = 'md';
-                events.addClass(content, size);
+                            createModal();
+                            content.insertAdjacentHTML('beforeend', temp);
 
-            } else {
-
-                getSize = function () {
-
-                    size = 'md';
-
-                    sizeArr = ['lg', 'md', 'sm', 'fullscreen'];
-                    if (sizeArr.indexOf(set.size) > -1) {
-                        size = set.size;
-                    }
-
-                    events.addClass(content, size);
-
-                };
-
-                customSize = set.size.split('x'); // check custom size
-                if (customSize.length === 2) {
-
-                    if (customSize[0].match(/^[0-9]+$/) !== null && customSize[1].match(/^[0-9]+$/) !== null) {
-
-                        content.style.maxWidth = customSize[0] + 'px';
-                        content.style.maxHeight = customSize[1] + 'px';
-
-                    } else { getSize(); }
-
-                } else { getSize(); }
-
-            }
-
-            // set closable
-            if (nonClosable) {
-                events.removeClass(win, 'closable');
-
-            } else {
-                events.addClass(win, 'closable');
-            }
-
-            // add/remove close button
-            closeBtn = selector('.close-modal', win)[0];
-
-            if (nonClosable) {
-
-                if (closeBtn !== undefined) {
-                    closeBtn.parentNode.removeChild(closeBtn);
-                }
-
-            } else {
-
-                if (closeBtn === undefined) {
-
-                    modal.closeIcon = modal.closeIcon.replace(re, ' ').replace(rex, '');
-
-                    closeBtn = '<button class="close-modal ease-bg">' +
-                                    '<i class="' + modal.closeIcon + '"></i>' +
-                                '</button>';
-
-                    closeBtn = events.parser(closeBtn);
-                    content.insertAdjacentHTML('afterbegin', closeBtn);
-
-                }
-
-            }
-
-            // show modal
-            bg = selector('.modal-bg');
-            events.addClass(bg, 'open');
-
-            setTimeout(function () {
-
-                events.addClass(bg, 'open-ease');
-                setTimeout(function () {
-
-                    events.addClass(document, 'modal-bg-opened');
-                    events.addClass(win, 'show');
-
-                    setTimeout(function () {
-
-                        events.addClass(win, 'show-ease');
-                        events.removeClass(win, 'active');
-
-                        // callback
-                        if (set.callback !== undefined) {
-
-                            setTimeout(function () { // wait for modal dom is ready
-                                set.callback.call(content);
-                            }, 300);
+                            checkHeaderFooter();
+                            showModal();
 
                         }
 
-                    }, 10);
+                    });
 
-                }, 150);
+                }
 
-            }, 10);
+            }
 
             return false;
 
@@ -313,5 +348,20 @@ var modal = {
 
     // Loaders
     events.onload(modal.Start);
+    events.on(window, 'resize', function () {
+
+        var win, bg;
+
+        win = selector('.modal-win.show .modal-content:not(.fullscreen)')[0];
+        if (win !== undefined) {
+
+            bg = selector('.modal-bg')[0];
+
+            win.style.top = Math.floor((bg.offsetHeight - win.offsetHeight) / 2) + 'px';
+            win.style.left = Math.floor((bg.offsetWidth - win.offsetWidth) / 2) + 'px';
+
+        }
+
+    });
 
 }());
