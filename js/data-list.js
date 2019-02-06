@@ -808,7 +808,7 @@ var dataList = {
 
     // ajax callback loader: requires Ajax JS
     events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.ajaxClassNames.indexOf('data-list') > -1) { dataList.Start(); }
+        if (ajax.classNames.indexOf('data-list') > -1) { dataList.Start(); }
     });
 
 }());

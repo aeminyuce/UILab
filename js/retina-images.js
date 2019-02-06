@@ -32,7 +32,7 @@ var retinaImages = {};
 
     // ajax callback loader: requires Ajax JS
     events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.ajaxClassNames.indexOf('retina') > -1) { retinaImages.Start(); }
+        if (ajax.classNames.indexOf('retina') > -1) { retinaImages.Start(); }
     });
 
 }());

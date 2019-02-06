@@ -83,7 +83,7 @@ var sprites = {
 
     // ajax callback loader: requires Ajax JS
     events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.ajaxClassNames.indexOf('sprite') > -1) { sprites.Start(); }
+        if (ajax.classNames.indexOf('sprite') > -1) { sprites.Start(); }
     });
 
 }());

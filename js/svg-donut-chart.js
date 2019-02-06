@@ -64,7 +64,7 @@ var donutChart = {};
 
     // ajax callback loader: requires Ajax JS
     events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.ajaxClassNames.indexOf('donut-chart') > -1) { donutChart.Start(); }
+        if (ajax.classNames.indexOf('donut-chart') > -1) { donutChart.Start(); }
     });
 
 }());

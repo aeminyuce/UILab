@@ -82,7 +82,7 @@ var androidMultiselect = {};
     events.on(document, 'ajaxCallbacks', function () {
 
         if (navigator.userAgent.toLowerCase().indexOf('android') > -1) {
-            if (ajax.ajaxClassNames.indexOf('select-multi') > -1) { checkMultiselects(); }
+            if (ajax.classNames.indexOf('select-multi') > -1) { checkMultiselects(); }
         }
 
     });

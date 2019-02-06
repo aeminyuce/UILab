@@ -84,7 +84,7 @@ var countdown = {};
 
     // ajax callback loader: requires Ajax JS
     events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.ajaxClassNames.indexOf('countdown') > -1) { countdown.Start(); }
+        if (ajax.classNames.indexOf('countdown') > -1) { countdown.Start(); }
     });
 
 }());

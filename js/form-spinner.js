@@ -56,7 +56,7 @@ var spinnerForm = {};
 
     // ajax callback loader: requires Ajax JS
     events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.ajaxClassNames.indexOf('form-spinner') > -1) { checkSpinnerForms(); }
+        if (ajax.classNames.indexOf('form-spinner') > -1) { checkSpinnerForms(); }
     });
 
 }());

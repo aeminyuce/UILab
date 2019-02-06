@@ -56,7 +56,7 @@ var ie9Placeholders = {};
     events.on(document, 'ajaxCallbacks', function () {
 
         if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
-            if (ajax.ajaxRequest.responseText.indexOf('placeholder=') > 0) { checkPlaceholders(); }
+            if (ajax.request.responseText.indexOf('placeholder=') > 0) { checkPlaceholders(); }
         }
 
     });
