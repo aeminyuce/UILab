@@ -212,7 +212,7 @@ var forms = {};
 
     // ajax callback loader: requires Ajax JS
     events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.ajaxRequest.responseText.indexOf('clear-form="') > 0) { loadClearForms(); }
+        if (ajax.classNames.indexOf('clear-form') > 0) { loadClearForms(); }
     });
 
 }());
