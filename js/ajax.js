@@ -82,39 +82,39 @@ var ajax = function (method, target, callback) {
     }
     newTarget = target;
 
-    ajax.ajaxRequest = new XMLHttpRequest();
-    ajax.ajaxRequest.open(newMethod, newTarget, true);
-    ajax.ajaxRequest.send();
+    ajax.request = new XMLHttpRequest();
+    ajax.request.open(newMethod, newTarget, true);
+    ajax.request.send();
 
-    ajax.ajaxRequest.onload = function () {
+    ajax.request.onload = function () {
 
         function uniqueClassNames(value, index, self) {
             return self.indexOf(value) === index;
         }
 
-        if (ajax.ajaxRequest.status >= 200 && ajax.ajaxRequest.status < 400) {
+        if (ajax.request.status >= 200 && ajax.request.status < 400) {
 
-            callback(ajax.ajaxRequest.responseText, 'success', ajax.ajaxRequest);
+            callback(ajax.request.responseText, 'success', ajax.request);
 
             // ajax callbacks
             events.on(document, 'ajaxCallbacks');
 
             // get list of real classnames
-            ajax.ajaxClassNames = ajax.ajaxRequest.responseText.match(/\sclass=\"+[\w\s\d\-\_\=]+\"[\s\>]/g);
+            ajax.classNames = ajax.request.responseText.match(/\sclass=\"+[\w\s\d\-\_\=]+\"[\s\>]/g);
 
-            if (ajax.ajaxClassNames !== null) {
+            if (ajax.classNames !== null) {
 
-                ajax.ajaxClassNames = ajax.ajaxClassNames.toString().match(/"+[\w\s\d\-\_\=]+"/g).toString().replace(/\"/g, '').replace(/,/g, ' ').split(' ');
-                ajax.ajaxClassNames = ajax.ajaxClassNames.filter(uniqueClassNames);
+                ajax.classNames = ajax.classNames.toString().match(/"+[\w\s\d\-\_\=]+"/g).toString().replace(/\"/g, '').replace(/,/g, ' ').split(' ');
+                ajax.classNames = ajax.classNames.filter(uniqueClassNames);
 
                 events.trigger(document, 'ajaxCallbacks'); // set custom event
 
             }
 
-        } else { callback('', 'error', ajax.ajaxRequest); }
+        } else { callback('', 'error', ajax.request); }
 
     };
 
-    ajax.ajaxRequest.onerror = function () { callback('', 'error', ajax.ajaxRequest); };
+    ajax.request.onerror = function () { callback('', 'error', ajax.request); };
 
 };
