@@ -60,7 +60,7 @@ html:not(.mobile) .select-multi > .icon { display: none; }
 .form-label,.form-grid { font-size: 13px; line-height: normal; opacity: .6; }
 .form-label { margin-bottom: 5px; display: inline-block; }
 
-.form-light { border-color: rgba(255,255,255,.3); }
+.form-light { border-color: rgba(255,255,255,.3) !important; }
 .form-light > input,.form-light > select,.form-light > textarea,.mobile .select-multi.form-light:before,.form-light > .icon { color: #fff; }
 .form-light > input:-webkit-autofill:not(:focus) { -webkit-text-fill-color: white !important; }
 
