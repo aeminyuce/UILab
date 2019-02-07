@@ -139,7 +139,7 @@ var modal = {
             function showModal() {
 
                 // set modal size
-                events.removeClass(content, 'lg md sm fullscreen');
+                events.removeClass(content, 'lg md sm fullscreen inline');
 
                 content.style.removeProperty('top');
                 content.style.removeProperty('left');
@@ -158,7 +158,7 @@ var modal = {
 
                         size = 'md';
 
-                        sizeArr = ['lg', 'md', 'sm', 'fullscreen'];
+                        sizeArr = ['lg', 'md', 'sm', 'fullscreen', 'inline'];
                         if (sizeArr.indexOf(set.size) > -1) {
                             size = set.size;
                         }

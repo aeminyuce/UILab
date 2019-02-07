@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="../css/borders.css" />
     <link rel="stylesheet" href="../css/code.css" />
     <link rel="stylesheet" href="../css/description-lists.css" />
+    <link rel="stylesheet" href="../css/form-icons.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
     <link rel="stylesheet" href="../css/grid.css" />
     <link rel="stylesheet" href="../css/helpers.css" />
     <link rel="stylesheet" href="../css/icons.css" />
@@ -37,6 +39,8 @@
     <!-- Javascript Tools -->
     <script src="../js/selector.js"></script>
     <script src="../js/events.js"></script>
+    <script src="../js/forms.js"></script>
+    <script src="../js/ie9-placeholders.js"></script>
     <script src="../js/sticky-header.js"></script>
     <script src="../js/swatches.js"></script>
     <script src="../js/top-button.js"></script>
@@ -83,7 +87,7 @@
                         <dd class="margin-15-b">
                             Optional. Set the size of modal.<br>
                             Default value: <code>'md'</code><br>
-                            Available values: <code>'lg', 'md', 'sm', 'fullscreen', {'width', 'height'}</code>
+                            Available values: <code>'lg', 'md', 'sm', 'fullscreen', inline, {'width', 'height'}</code>
                         </dd>
 
                         <dt>type</dt>
@@ -159,7 +163,14 @@
                 </div>
                 <div class="col-6 no-padding-t">
 
-                    <i class="x-dark margin-5-b block">Open custom size modal window.</i>
+                    <i class="x-dark margin-5-b block">Open inline modal window.</i>
+                    <pre class="rounded margin-5-b">modal.open({<br>    source: '.modal-search',<br>    size: 'inline'<br>});</pre>
+                    <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: '.modal-search', size: 'inline'});">Run Code</button>
+
+                </div>
+                <div class="col-6 no-padding-t">
+
+                    <i class="x-dark margin-5-b block">Open fixed size modal window.</i>
                     <pre class="rounded margin-5-b">modal.open({<br>    source: '.myModal',<br>    size: '560x315'<br>});</pre>
                     <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: '.myModal', size: '560x315'});">Run Code</button>
 
@@ -270,6 +281,26 @@
             <div class="modal-buttons">
                 <button type="submit" class="btn padding-30-h circle theme-green ui-dark" onclick="modal.close();">Save</button>
             </div>
+        </div>
+    </div>
+
+    <div class="modal-search theme-default ui-x-dark modal">
+        <div class="modal-container padding-30">
+            <h4>Search</h4>
+            <form action="#successful">
+                <div class="col-static sm-responsive">
+                    <div class="row row-md-padding">
+                        <div class="col-12">
+                            <div class="text text-lg rounded dual-bordered form-light ease-form">
+                                <input type="text" placeholder="Enter keyword">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="static-150 padding-5">
+                        <button class="btn btn-lg btn-block rounded ui-dark ease-btn" type="submit">Search<i class="icon icon-md icon-search margin-10-l"></i></button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 
