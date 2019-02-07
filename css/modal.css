@@ -20,15 +20,22 @@
 
 .modal { display: none; }
 .modal-win .modal { height: 100%; display: block; }
+.modal-content.rounded .modal { border-radius: 5px; }
 .modal-content.has-header .modal { padding-top: 52px !important; }
 .modal-content.has-footer .modal { padding-bottom: 52px !important; }
 
-.modal-header,.modal-footer { text-overflow: ellipsis; white-space: nowrap; text-align: right; height: 52px; background-color: rgba(0,0,0,.04); padding: 10px; overflow: hidden; position: absolute; right: 0; left: 0; z-index: 9; }
+.modal-header,.modal-container,.modal-footer { min-width: 280px; }
+.modal-header,.modal-footer { text-overflow: ellipsis; white-space: nowrap; height: 52px; background-color: rgba(0,0,0,.04); padding: 10px; overflow: hidden; position: absolute; right: 0; left: 0; z-index: 9; }
+.modal-header > .row,.modal-container > .row,.modal-footer > .row { margin-top: -10px; margin-right: inherit; margin-bottom: -10px; margin-left: inherit; }
+.modal-header > .fixed,.modal-container > .fixed,.modal-footer > .fixed { padding-right: 0; padding-left: 0; margin-top: -10px; margin-bottom: -10px; }
+
 .modal-header { top: 0; }
 .modal-footer { bottom: 0; }
-.modal-content.fullscreen .modal-header { padding-right: 52px; }
 .modal-content:not(.fullscreen).rounded .modal-header { border-radius: 5px 5px 0 0; }
 .modal-content:not(.fullscreen).rounded .modal-footer { border-radius: 0 0 5px 5px; }
+
+.modal-buttons { float: right; }
+.modal-content.fullscreen .modal-header .modal-buttons { padding-right: 42px; }
 
 .modal-header h1,.modal-header h2,.modal-header h3,.modal-header h4,.modal-header h5,.modal-header h6 { font-size: 18px !important; line-height: 32px; float: left; }
 
@@ -37,7 +44,7 @@
 .modal-header .btn-xs,.modal-footer .btn-xs { margin: 5px 0; }
 .modal-header .btn-xxs,.modal-footer .btn-xxs { margin: 8px 0; }
 
-.modal-container { min-width: 280px; min-height: 20px; height: 100%; max-height: 100%; padding: 10px; overflow: auto; position: relative; -webkit-overflow-scrolling: touch; }
+.modal-container { min-height: 20px; height: 100%; max-height: 100%; padding: 10px; overflow: auto; position: relative; -webkit-overflow-scrolling: touch; }
 .modal-container > iframe { width: 100%; height: 100%; overflow: hidden; position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
 
 .modal-iframe { width: 100%; height: 100%; overflow: hidden; }
