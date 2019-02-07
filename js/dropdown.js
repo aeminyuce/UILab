@@ -107,9 +107,6 @@ var dropdown = {};
 
                         if (offset.top - parseInt(btnHeight + subMenuHeight, 10) + btnHeight > 0) {
                             events.addClass(parent, 'submenu-top');
-
-                        } else {
-                            list[0].style.height = (list[0].offsetHeight - (offset.top + parseInt(btnHeight + subMenuHeight, 10) - window.innerHeight) - 15) + 'px';
                         }
 
                     }
