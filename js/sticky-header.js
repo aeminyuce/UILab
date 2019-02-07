@@ -41,6 +41,8 @@ var stickyHeader = {};
 
     // Loaders
     events.onload(stickyHeader.Start);
+
     events.on(window, 'scroll', stickyHeader.Start);
+    events.on(window, 'resize', stickyHeader.Start); // for custom header animations
 
 }());
