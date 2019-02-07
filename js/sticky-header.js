@@ -9,7 +9,7 @@ var stickyHeader = {};
 
     'use strict';
 
-    /*globals window, events, selector */
+    /*globals window, document, events, selector */
     stickyHeader.Start = function () {
 
         var header, stickyStatic;
@@ -24,6 +24,8 @@ var stickyHeader = {};
                 if (!stickyStatic) {
                     selector('body')[0].style.paddingTop = header[0].offsetHeight + 'px';
                 }
+
+                events.addClass(document, 'sticky-header');
                 events.addClass(header, 'sticky');
 
             } else {
@@ -31,6 +33,8 @@ var stickyHeader = {};
                 if (!stickyStatic) {
                     selector('body')[0].style.paddingTop = '0';
                 }
+
+                events.removeClass(document, 'sticky-header');
                 events.removeClass(header, 'sticky');
 
             }
