@@ -6,7 +6,7 @@
 var tooltip = {
 
     theme: '', // use swatches
-    border: '', // ex: 'bordered','dual-bordered', 'large-bordered' etc.
+    border: '', // ex: 'bordered', 'dual-bordered', 'large-bordered' etc.
     classes: 'rounded' // class names for tooltip content
 };
 
