@@ -14,6 +14,8 @@
 .dropdown.open .btn-invisible { background-color: rgba(0,0,0,.075) !important; }
 
 .dropdown ul { list-style: none; min-width: 260px; max-width: 744px; background-color: #fff; padding: 0; margin-bottom: 0; position: absolute; }
+.mobile-menu .dropdown ul { position: static; box-shadow: none; }
+.mobile-menu .dropdown:not(:last-child) ul { margin-bottom: 10px !important; }
 .dropdown ul.circle { border-radius: 16px; }
 .dropdown ul:not([class*="bordered"]).v-scroll { max-height: 204px; }
 .dropdown ul.bordered:not(.dual-bordered).v-scroll { max-height: 206px; }
