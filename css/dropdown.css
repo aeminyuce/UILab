@@ -26,7 +26,7 @@
 .dropdown li.sep { height: 1px; background-color: rgba(0,0,0,.75); }
 html:not(.mobile) .dropdown li:hover { background-color: rgba(0,0,0,.05); background-clip: padding-box; }
 
-.dropdown li,.dropdown li a,.dropdown li > label { font-size: 15px; line-height: 24px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.dropdown li,.dropdown li a,.dropdown li > label { font-size: 15px; line-height: 24px; overflow: hidden; }
 .dropdown li,.dropdown li * { text-align: left !important; }
 .dropdown li > a { line-height: normal; padding: 10px; margin: -10px; display: block; }
 .dropdown li > label { padding: 10px; margin: -10px; overflow: hidden; display: block; position: relative;  cursor: pointer; }
