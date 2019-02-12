@@ -23,16 +23,22 @@ var mobileMenu = {
 
     function closeMobileMenu(panel) {
 
-        var i, id, el, contents;
+        var i, id, el, contents, bg;
+
+        bg = selector('.mobile-menu-bg')[0];
 
         events.removeClass(panel, 'open-ease');
+        events.removeClass(bg, 'open-ease');
         events.removeClass(document, 'mobile-menu-opened mobile-menu-opened-before');
 
         window.scrollTo(0, pageYPosition);
 
         setTimeout(function () {
+
             events.removeClass(panel, 'open');
-        }, 150);
+            events.removeClass(bg, 'open');
+
+        }, 400);
 
         contents = selector('[data-mm]');
 
@@ -107,7 +113,7 @@ var mobileMenu = {
         // Events
         events.on(document, 'click', '[class*="show-mobile-menu-"]', function () {
 
-            var importers, moveFnc, id, wrapper, i, index, indexArr, indexSort, position, panel;
+            var importers, moveFnc, id, wrapper, i, index, indexArr, indexSort, position, bg, panel;
 
             position = 'left';
             temp = document.createDocumentFragment();
@@ -169,11 +175,21 @@ var mobileMenu = {
             panel = selector('.mobile-menu.show-' + position);
             selector('.mobile-menu-content', panel).appendChild(temp);
 
+            bg = selector('.mobile-menu-bg')[0];
+            if (bg === undefined) {
+
+                selector('body')[0].insertAdjacentHTML('beforeend', '<div class="mobile-menu-bg ease-slow ease-layout"></div>');
+                bg = selector('.mobile-menu-bg')[0];
+
+            }
+
             events.addClass(panel, 'open');
+            events.addClass(bg, 'open');
 
             setTimeout(function () {
 
                 events.addClass(panel, 'open-ease');
+                events.addClass(bg, 'open-ease');
                 events.addClass(document, 'mobile-menu-opened-before');
 
                 events.on(document, 'mobilemenu:open');
@@ -181,13 +197,20 @@ var mobileMenu = {
 
                 setTimeout(function () {
                     events.addClass(document, 'mobile-menu-opened');
-                }, 150);
+                }, 400);
 
             }, 10);
 
             events.on('.close-mobile-menu', 'click', function () {
                 closeMobileMenu(panel);
             });
+
+        });
+
+        events.on(document, 'click', '.mobile-menu-bg', function () {
+
+            var panel = selector('.mobile-menu.open');
+            closeMobileMenu(panel);
 
         });
 
