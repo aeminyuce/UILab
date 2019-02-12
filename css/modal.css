@@ -13,7 +13,7 @@
 .modal-content:not(.inline) { height: 100%; }
 .modal-content:not(.fullscreen) { width: 90%; max-height: 92%; }
 .modal-content.fullscreen { width: 100%; border-radius: 0 !important; }
-.modal-win:not(.show-ease) .modal-content { opacity: 0; transform: scale(0.8); }
+.modal-win:not(.show-ease) .modal-content { opacity: 0; transform: translateY(20%); }
 
 .modal-content.lg { max-width: 1200px; }
 .modal-content.md { max-width: 960px; }
