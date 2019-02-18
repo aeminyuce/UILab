@@ -119,9 +119,13 @@ var dropdown = {};
 
                         events.on(document, 'click.dropdownClose', function (ev) {
 
-                            if (ev.button !== 2) {
-                                dropdownCloseFnc();
-                                events.off(document, 'click.dropdownClose');
+                            if (selector('ul.content', parent)[0] !== undefined) { // define only listing contents
+
+                                if (ev.button !== 2) {
+                                    dropdownCloseFnc();
+                                    events.off(document, 'click.dropdownClose');
+                                }
+
                             }
 
                         });
