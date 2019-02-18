@@ -26,7 +26,7 @@ var dropdown = {};
 
             events.each(t, function () {
 
-                list = selector('ul', this)[0];
+                list = selector('.content', this)[0];
 
                 if (listStyles === 0) {
                     list.removeAttribute('style');
@@ -75,7 +75,7 @@ var dropdown = {};
 
                     offset = parent.getBoundingClientRect();
 
-                    list = selector('ul', parent);
+                    list = selector('.content', parent);
 
                     listStyles = list[0].style.length;
                     listWidth = list[0].offsetWidth;
@@ -155,7 +155,7 @@ var dropdown = {};
 
         events.on(document,
             'mouseenter',
-            'html:not(.mobile) .dropdown.open-hover.open > .btn,html:not(.mobile) .dropdown.open-hover.open ul',
+            'html:not(.mobile) .dropdown.open-hover.open > .btn,html:not(.mobile) .dropdown.open-hover.open .content',
 
             function () {
                 clearTimeout(dropdownCloseTimer);
