@@ -4,7 +4,9 @@
 .no-transitions-all .ease-list-group li,.no-transitions-all .ease-list-group li > a,.no-transitions-all .ease-list-group li [class*="has-icon"] .list-icon { transition-property: none !important; }
 
 .list-group:not(:last-child),.list-group li:not(:last-child) { border-bottom: solid 1px rgba(0,0,0,.1); }
-.list-group ul[class*="list-column-"] { margin-bottom: -1px; }
+.list-group > ul,.list-group > ol { list-style: none; padding: 0; }
+.list-group > ul { margin-bottom: 0; }
+.list-group > ul[class*="list-column-"] { margin-bottom: -1px; }
 .list-group li,.list-group li > a { line-height: normal; padding: 10px; }
 .list-group li { position: relative; }
 .list-group li > p { margin-bottom: 0; }
