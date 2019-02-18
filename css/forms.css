@@ -39,7 +39,11 @@ html:not(.mobile) .select-multi > .icon { display: none; }
 
 .check,.radio { vertical-align: middle; display: inline-block; }
 
-.error { background-color: #fffcfc !important; border-color: #dc000f !important; }
+.form-light { border-color: rgba(255,255,255,.3) !important; }
+.form-light > input,.form-light > select,.form-light > textarea,.mobile .select-multi.form-light:before,.form-light > .icon { color: #fff; }
+.form-light > input:-webkit-autofill:not(:focus) { -webkit-text-fill-color: white !important; }
+
+.error { border-color: #dc000f !important; }
 
 .warning { background-color: #fffaef !important; }
 .warning { border-color: #ffa600 !important; }
@@ -59,10 +63,6 @@ html:not(.mobile) .select-multi > .icon { display: none; }
 .form-table { margin-top: -5px !important; margin-bottom: -5px !important; }
 .form-label,.form-grid { font-size: 13px; line-height: normal; opacity: .6; }
 .form-label { margin-bottom: 5px; display: inline-block; }
-
-.form-light { border-color: rgba(255,255,255,.3) !important; }
-.form-light > input,.form-light > select,.form-light > textarea,.mobile .select-multi.form-light:before,.form-light > .icon { color: #fff; }
-.form-light > input:-webkit-autofill:not(:focus) { -webkit-text-fill-color: white !important; }
 
 /* do not group */
 ::-webkit-input-placeholder { color: #999; }
