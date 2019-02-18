@@ -119,12 +119,15 @@ var dropdown = {};
 
                         events.on(document, 'click.dropdownClose', function (ev) {
 
-                            if (selector('ul.content', parent)[0] !== undefined) { // define only listing contents
+                            // prevent for non listing contents
+                            if (events.closest(ev.target, '.content')[0] !== undefined) {
+                                return;
+                            }
 
-                                if (ev.button !== 2) {
-                                    dropdownCloseFnc();
-                                    events.off(document, 'click.dropdownClose');
-                                }
+                            if (ev.button !== 2) {
+
+                                dropdownCloseFnc();
+                                events.off(document, 'click.dropdownClose');
 
                             }
 
