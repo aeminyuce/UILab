@@ -46,6 +46,7 @@ var forms = {};
 
                     if (type === 'add') {
                         events.addClass(parent, 'form-focus');
+
                     } else {
                         events.removeClass(parent, 'form-focus');
                     }
@@ -167,12 +168,15 @@ var forms = {};
 
                 });
 
-        }
+            // submit with form icons (ios fix)
+            events.on(document, 'click', '.text > [type="submit"]', function () {
 
-        // submit with form icons
-        events.on(document, 'click', '.text > [type="submit"]', function () {
-            events.closest(this, 'form')[0].submit();
-        });
+                var form = events.closest(this, '.text')[0];
+                events.trigger(form, 'submit');
+
+            });
+
+        }
 
         // trigger custom events on form Submit
         events.on(document, 'reset', 'form', function (e) {
@@ -182,7 +186,7 @@ var forms = {};
             setTimeout(function () { // wait for form reset started on DOM
 
                 events.each(forms, function () {
-                    if (!events.hasClass(this, 'required')) { // discard reequired forms
+                    if (!events.hasClass(this, 'required')) { // discard required forms
                         events.trigger(this, 'keydown keyup change');
                     }
                 });
