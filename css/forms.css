@@ -68,8 +68,11 @@ html:not(.mobile) .select-multi > .icon { display: none; }
 ::-webkit-input-placeholder { color: #999; }
 ::-moz-placeholder { color: #999; opacity: 1; }
 
-.form-light > input::-webkit-input-placeholder { color: #fff; }
-.form-light > input::-moz-placeholder { color: #fff; opacity: 1; }
+.form-light > ::-webkit-input-placeholder { color: #fff; }
+.form-light > ::-moz-placeholder { color: #fff; opacity: 1; }
+
+.form-light.form-focus > ::-webkit-input-placeholder { color: #999; }
+.form-light.form-focus > ::-moz-placeholder { color: #999; opacity: 1; }
 /* do not group */
 
 .form-focus { border-color: rgba(0,0,0,.35); }
