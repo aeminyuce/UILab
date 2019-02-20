@@ -16,17 +16,34 @@ var tabs = {};
         events.on(document, 'click', '.btn-tabs .btn-tab', function (e) {
 
             e.preventDefault();
-            var parent, tabs, index, contents, classes;
+            var parent, tabs, index, contents, classes, toggle;
 
-            if (!events.hasClass(this, 'active')) {
+            parent = events.closest(this, '.btn-tabs')[0];
+            tabs = selector('.btn-tab', parent);
 
-                parent = events.closest(this, '.btn-tabs')[0];
-                tabs = selector('.btn-tab', parent);
+            index = Array.prototype.slice.call(tabs).indexOf(this);
+            contents = selector('.tab-content', parent);
 
-                index = Array.prototype.slice.call(tabs).indexOf(this);
-                contents = selector('.tab-content', parent);
+            toggle = false;
+            if (events.hasClass(this, 'btn-toggle')) { toggle = true; }
 
-                classes = parent.getAttribute('data-classes');
+            classes = parent.getAttribute('data-classes');
+
+            if (events.hasClass(this, 'active')) {
+
+                if (toggle) {
+
+                    if (classes) {
+                        events.toggleClass(tabs[index], classes);
+                    }
+
+                    events.toggleClass(tabs[index], 'active');
+                    events.toggleClass(contents[index], 'open');
+
+                }
+
+            } else {
+
                 if (classes) {
 
                     events.removeClass(tabs, classes);
@@ -35,9 +52,9 @@ var tabs = {};
                 }
 
                 events.removeClass(tabs, 'active');
-                events.addClass(tabs[index], 'active');
-
                 events.removeClass(contents, 'open');
+
+                events.addClass(tabs[index], 'active');
                 events.addClass(contents[index], 'open');
 
             }
