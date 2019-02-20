@@ -24,10 +24,7 @@
 .ease-margin,.ease-1st-margin > *,.ease-2nd-margin > * > * { transition-property: margin; }
 .ease-border,.ease-1st-border > *,.ease-border > * > * { transition-property: border-color; }
 .ease-position,.ease-1st-position > *,.ease-2nd-position > * > * { transition-property: top, right, bottom, left; }
-.ease-opacity,.ease-1st-opacity > *,.ease-2nd-opacity > * > * { transition-property: opacity; }
-.ease-transform,.ease-1st-transform > *,.ease-2nd-transform > * > * { transition-property: transform; }
 .ease-layout,.ease-1st-layout > *,.ease-2nd-layout > * > * { transition-property: transform, opacity, shadow; }
-.ease-shadow,.ease-1st-shadow > *,.ease-2nd-shadow > * > * { transition-property: box-shadow; }
 .ease-svg,.ease-1st-svg > *,.ease-2nd-svg > * > * { transition-property: fill, stroke; }
 
 .ease-default,.ease-default[class*="ease-1st-"] > *,.ease-default[class*="ease-2nd-"] > * > * { transition-timing-function: ease; }
