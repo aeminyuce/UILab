@@ -30,7 +30,7 @@ html:not(.mobile) .list-group [class*="has-icon"] li > a:hover .list-icon { opac
 .list-group .has-icon-xxs li,.list-group .has-icon-xxs li > a { padding-right: 28px; }
 .list-group .has-icon-xxs li > a { margin-right: -28px; }
 
-.list-group [class*="has-photo"] [class*="img-photo"] { position: absolute; top: 50%; left: 10px; transform: translateY(-50%); }
+.list-group [class*="has-photo"] [class*="img-photo"] { position: absolute; top: 10px; left: 10px; }
 
 .list-group .has-photo-lg li,.list-group .has-photo-lg li > a { min-height: 100px; padding-left: 100px; }
 .list-group .has-photo-lg li > a { margin-left: -100px; }
