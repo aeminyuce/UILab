@@ -91,7 +91,7 @@ var carousel = {};
 
         if (that === undefined) {
 
-            i = 0;
+            i = undefined;
             that = selector('.carousel');
 
         }
