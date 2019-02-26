@@ -13,8 +13,8 @@
 .clear-button { color: inherit; text-align: inherit; background-color: rgba(0,0,0,0); border: 0; }
 .img-responsive { width: 100% !important; height: auto !important; }
 
-.set-relative { position: relative; }
-.set-absolute { position: absolute; }
+.set-relative { position: relative !important; }
+.set-absolute { position: absolute !important; }
 .set-fixed { position: fixed; }
 .set-top { top: 0; }
 .set-right { right: 0; }
