@@ -53,7 +53,7 @@ var modal = {
                 bg = selector('.modal-bg');
                 events.removeClass(bg, 'open-ease');
 
-                events.removeClass(document, 'modal-opened');
+                events.removeClass(document, 'modal-bg-opened');
                 if (mobile) { window.scrollTo(0, pageYPosition); }
 
                 setTimeout(function () {
@@ -224,7 +224,7 @@ var modal = {
                     events.addClass(bg, 'open-ease');
                     setTimeout(function () {
 
-                        events.addClass(document, 'modal-opened');
+                        events.addClass(document, 'modal-bg-opened');
                         events.addClass(win, 'show');
 
                         content.style.top = Math.floor((bg[0].offsetHeight - content.offsetHeight) / 2) + 'px';
