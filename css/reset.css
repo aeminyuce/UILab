@@ -39,5 +39,5 @@ p:not(:last-child):not(.hint) { margin-bottom: 20px; }
 [hidden] { display: none; }
 
 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { /* chrome retina display fix */
-    .chrome body { transform: translateZ(0); backface-visibility: hidden; perspective: 1000; }
+    .mac.chrome body { backface-visibility: hidden; perspective: 1000; }
 }
