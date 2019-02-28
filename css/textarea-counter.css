@@ -1,7 +1,9 @@
 /* textarea counter */
-.textarea:not(.toggle-textarea)[data-counter]:before { content: attr(data-counter); color: #777; font-size: 9px; text-align: right; line-height: 12px; width: 100%; height: 13px; background-color: rgba(0,0,0,.035); padding: 1px 5px; display: block; position: absolute; bottom: 0; left: 0; z-index: 1; }
+.textarea:not(.toggle-textarea)[data-counter]:before { content: attr(data-counter); font-size: 9px; text-align: right; line-height: 12px; width: 100%; height: 13px; padding: 1px 5px; display: block; position: absolute; bottom: 0; left: 0; z-index: 1; }
+.textarea:not(.form-light):not(.toggle-textarea)[data-counter]:before { color: #777; background-color: rgba(0,0,0,.035); }
+.textarea.form-light:not(.toggle-textarea)[data-counter]:before { color: #fff; background-color: rgba(255,255,255,.35); }
 .textarea:not(.toggle-textarea)[data-counter] textarea { margin-bottom: 13px; }
 .textarea:not(.toggle-textarea)[data-counter].change:before { content: attr(data-change); }
 
-.error[data-counter]:before { background-color: #ffd9dc; }
-.warning[data-counter]:before { background-color: #fff2d9; }
+.error[data-counter]:before { color: #dc000f !important; background-color: #ffd9dc !important; }
+.warning[data-counter]:before { color: #ffa600 !important; background-color: #fff2d9 !important; }
