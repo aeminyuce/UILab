@@ -5,7 +5,7 @@
 
 var modal = {
 
-    classes: 'rounded shadow-lg',
+    classes: 'shadow-lg',
     closeIcon: 'icon icon-xs icon-remove'
 
 };
@@ -112,7 +112,7 @@ var modal = {
                             '<div class="modal-content ' + styles + '"></div>' +
                         '</div>';
 
-                if (bg === undefined) { html += '<div class="modal-bg ease-opacity"></div>'; }
+                if (bg === undefined) { html += '<div class="modal-bg ease-layout"></div>'; }
 
                 html = events.parser(html);
                 selector('body')[0].insertAdjacentHTML('beforeend', html);
@@ -146,6 +146,7 @@ var modal = {
 
                 content.style.removeProperty('max-width');
                 content.style.removeProperty('max-height');
+                content.style.removeProperty('height');
 
                 if (set.size === undefined) {
 
@@ -229,6 +230,10 @@ var modal = {
 
                         content.style.top = Math.floor((bg[0].offsetHeight - content.offsetHeight) / 2) + 'px';
                         content.style.left = Math.floor((bg[0].offsetWidth - content.offsetWidth) / 2) + 'px';
+
+                        if (size === 'inline') {
+                            content.style.height = content.offsetHeight + 'px';
+                        }
 
                         setTimeout(function () {
 
