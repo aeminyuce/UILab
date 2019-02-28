@@ -48,6 +48,7 @@
     <script src="../js/alerts.js"></script>
     <script src="../js/sticky-header.js"></script>
     <script src="../js/static-grid.js"></script>
+    <script src="../js/swatches.js"></script>
     <script src="../js/top-button.js"></script>
     <script src="../js/transitions.js"></script>
     <script src="../js/user-agents.js"></script>
@@ -93,50 +94,50 @@
 
                     <h4>Forms in Grid System</h4>
                     <div class="row padding-30-b">
-                        <div class="col-4">
+                        <div class="col-3">
                             <label class="form-grid" for="standard-form">Label</label>
                         </div>
-                        <div class="col-8">
+                        <div class="col-9">
                             <div class="text rounded dual-bordered ease-form">
                                 <input id="standard-form" type="text" value="123456">
                             </div>
                             <p class="hint dark">Form hint</p>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-3">
                             <label class="form-grid" for="disabled-form">Label</label>
                         </div>
-                        <div class="col-8">
+                        <div class="col-9">
                             <div class="text form-disabled rounded dual-bordered ease-form">
                                 <input id="disabled-form" type="text" disabled value="Disabled Form">
                             </div>
                             <p class="hint dark">Form hint</p>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-3">
                             <label class="form-grid" for="error-form">Error Form</label>
                         </div>
-                        <div class="col-8">
+                        <div class="col-9">
                             <div class="text rounded dual-bordered ease-form theme-red ui-border">
                                 <input id="error-form" type="text" value="123456">
                             </div>
                             <p class="hint theme-red ui-text">Your message is here.</p>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-3">
                             <label class="form-grid" for="warning-form">Warning Form</label>
                         </div>
-                        <div class="col-8">
+                        <div class="col-9">
                             <div class="text rounded dual-bordered ease-form theme-yellow ui-border">
                                 <input id="warning-form" type="text" value="123456">
                             </div>
                             <p class="hint theme-yellow ui-text">Your message is here.</p>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-3">
                             <label class="form-grid" for="confirmed-form">Confirmed Form</label>
                         </div>
-                        <div class="col-8">
+                        <div class="col-9">
                             <div class="text rounded dual-bordered ease-form theme-green ui-border">
                                 <input id="confirmed-form" type="text" value="123456">
                             </div>
@@ -407,9 +408,21 @@
 
                     <h4>Large Forms</h4>
                     <div class="padding-30-b">
-                        <label for="fullname" class="form-label">Full Name</label>
+                        <div class="row">
+                            <div class="col-3">
+                                <label class="form-grid form-lg" for="fullname01">Full Name</label>
+                            </div>
+                            <div class="col-9">
+                                <div class="text text-lg dual-bordered rounded ease-form">
+                                    <input id="fullname01" type="text" placeholder="Enter name">
+                                </div>
+                                <p class="hint dark">Form hint</p>
+                            </div>
+                        </div>
+
+                        <label for="fullname02" class="form-label">Full Name</label>
                         <div class="text text-lg dual-bordered rounded ease-form">
-                            <input id="fullname" type="text" placeholder="Enter name">
+                            <input id="fullname02" type="text" placeholder="Enter name">
                         </div>
 
                         <span class="sp10"></span>
@@ -663,19 +676,19 @@
 
                     <h4>Special Forms</h4>
                     <div class="row padding-30-b">
-                        <div class="col-4">
+                        <div class="col-3">
                             <label class="form-grid" for="number">Number Form</label>
                         </div>
-                        <div class="col-8">
+                        <div class="col-9">
                             <div class="text rounded dual-bordered ease-form">
                                 <input id="number" class="number" type="text" placeholder="Number">
                             </div>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-3">
                             <label class="form-grid" for="spinner">Spinner Form</label>
                         </div>
-                        <div class="col-8">
+                        <div class="col-9">
                             <div class="form-holder form-spinner">
                                 <div class="row row-no-padding">
                                     <div class="col-static no-responsive">
@@ -697,10 +710,10 @@
                             </div>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-3">
                             <label class="form-grid" for="currency">Currency Spinner</label>
                         </div>
-                        <div class="col-8">
+                        <div class="col-9">
                             <div class="form-holder currency-spinner">
                                 <div class="row row-no-padding">
                                     <div class="col-static no-responsive">
@@ -722,10 +735,10 @@
                             </div>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-3">
                             <label class="form-grid" for="creditcard">Credit Card Form</label>
                         </div>
-                        <div class="col-8">
+                        <div class="col-9">
                             <label class="form-label">Credit Card Number</label>
                             <div class="form-holder margin-10-b">
                                 <div class="row row-no-padding align-center ease-2nd-form">
@@ -758,10 +771,10 @@
                             </div>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-3">
                             <label class="form-grid" for="my-password">Toggle Password</label>
                         </div>
-                        <div class="col-8">
+                        <div class="col-9">
                             <div class="row row-sm-padding-ver">
                                 <div class="col-6 no-responsive">
                                     <label class="form-label" for="form03">Label</label>
@@ -780,10 +793,10 @@
                             </div>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-3">
                             <label class="form-grid" for="captcha">Captcha</label>
                         </div>
-                        <div class="col-8">
+                        <div class="col-9">
                             <div class="form-holder">
                                 <div class="row row-no-padding ease-2nd-form">
                                     <div class="col-static no-responsive">
@@ -810,10 +823,10 @@
                     <div class="padding-30-b">
                         <form action="#succesful" onsubmit="return alerts.dialog({msg: 'Submit this form?', success: 'Yes', error: 'No', callback: function (value) { if (value === 'success') { document.getElementById('submitForm').submit(); } }});">
                             <div class="row">
-                                <div class="col-4">
+                                <div class="col-3">
                                     <label class="form-grid" for="required1">Required with message</label>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-9">
                                     <div class="text rounded dual-bordered ease-form">
                                         <input class="required" id="required1" type="text" placeholder="Type your name">
                                     </div>
@@ -821,20 +834,20 @@
                                     <i class="hint dark">* Required</i>
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-3">
                                     <label class="form-grid" for="required2">Required with no message</label>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-9">
                                     <div class="text rounded dual-bordered ease-form">
                                         <input class="required" id="required2" type="text">
                                     </div>
                                     <i class="hint dark">* Required</i>
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-3">
                                     <label class="form-grid" for="required3">Required with min and max length</label>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-9">
                                     <div class="text rounded dual-bordered ease-form">
                                         <input class="required" id="required3" type="text" minlength="3" maxlength="10">
                                     </div>
@@ -842,10 +855,10 @@
                                     <i class="hint dark">* Required</i>
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-3">
                                     <label class="form-grid" for="required4">Required with password and min length</label>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-9">
                                     <div class="text rounded dual-bordered ease-form">
                                         <input class="required" id="required4" type="password" minlength="8">
                                     </div>
@@ -853,10 +866,10 @@
                                     <i class="hint dark">* Required</i>
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-3">
                                     <label class="form-grid" for="required5">Required with email</label>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-9">
                                     <div class="text rounded dual-bordered ease-form">
                                         <input class="required" id="required5" type="email">
                                     </div>
@@ -864,10 +877,10 @@
                                     <i class="hint dark">* Required</i>
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-3">
                                     <label class="form-grid" for="required6">Required with select forms.</label>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-9">
                                     <div class="select rounded dual-bordered ease-form">
                                         <i class="icon icon-sm icon-angle-down ease-layout"></i>
                                         <select id="required6" class="required">
@@ -880,10 +893,10 @@
                                     <i class="hint dark">* Required</i>
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-3">
                                     <label class="form-grid" for="required7">Required with form holders</label>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-9">
                                     <div class="form-holder">
                                         <div class="row row-no-padding">
 
@@ -919,10 +932,10 @@
                                     <i class="hint dark">* Required</i>
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-3">
                                     <label class="form-grid" for="required8">Required with textarea forms and min length.</label>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-9">
                                     <div class="textarea margin-10-b rounded dual-bordered ease-form">
                                         <textarea id="required8" class="required" placeholder="Write your comments." minlength="10"></textarea>
                                     </div>
@@ -930,10 +943,10 @@
                                     <i class="hint dark">* Required</i>
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-3">
                                     <label class="form-grid" for="required9">Required with checkboxes.</label>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-9">
                                     <div class="required-accept">
                                         <label class="check">
                                             <input id="required9" class="required" type="checkbox"> Checkbox
@@ -943,10 +956,10 @@
                                     <i class="hint dark">* Required for accepting <a href="#" class="underline">Terms and Conditions.</a></i>
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-3">
                                     <label class="form-grid" for="required10">Required with indeterminate checkboxes.</label>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-9">
                                     <div class="required-accept">
                                         <label class="check">
                                             <input id="required10" class="required indeterminate" type="checkbox"> Indeterminate
@@ -956,10 +969,10 @@
                                     <i class="hint dark">* Required for accepting <a href="#" class="underline">Terms and Conditions.</a></i>
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-3">
                                     <label class="form-grid" for="required11">Required with custom checks.</label>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-9">
                                     <div class="required-accept">
                                         <div class="check-custom rounded dual-bordered">
                                             <input id="required11" class="required" type="checkbox">
@@ -971,10 +984,10 @@
                                     <i class="hint dark">* Required</a></i>
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-3">
                                     <label class="form-grid" for="required12">Required with radios.</label>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-9">
                                     <div class="required-accept">
                                         <label class="radio">
                                             <input id="required12" class="required" type="radio" name="radiotest3"> Radio1
@@ -990,10 +1003,10 @@
                                     <i class="hint dark">* Required</i>
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-3">
                                     <label class="form-grid" for="required13">Required with custom radios.</label>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-9">
                                     <div class="required-accept">
                                         <div class="radio-custom dual-bordered ease-form">
                                             <input id="required13" class="required" type="radio" name="radiotest4">
@@ -1015,10 +1028,10 @@
                                     <i class="hint dark">* Required</i>
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-3">
                                     <label class="form-grid" for="required14">Required with custom checks.</label>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-9">
                                     <div class="required-accept">
                                         <div class="switch-custom rounded dual-bordered ease-form">
                                             <input id="required14" class="required" type="checkbox">
@@ -1030,7 +1043,7 @@
                                     <i class="hint dark">* Required for accepting <a href="#" class="underline">Terms and Conditions.</a></i>
                                 </div>
 
-                                <div class="col-8 push-4 ease-1st-btn">
+                                <div class="col-9 push-3 ease-1st-btn">
                                     <button type="reset" class="btn rounded">Reset Form</button>
                                     <button type="submit" class="btn rounded theme-default2 ui-dark">Submit Form</button>
                                 </div>
@@ -1070,10 +1083,10 @@
 
                     <h4>Different Form Styles</h4>
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-3">
                             <label class="form-grid">Thin bordered with no radius style:</label>
                         </div>
-                        <div class="col-8 ease-1st-form">
+                        <div class="col-9 ease-1st-form">
 
                             <div class="text margin-10-b">
                                 <input type="text">
@@ -1107,10 +1120,10 @@
                            <label>Custom Switch</label>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-3">
                             <label class="form-grid">Inner shadow with no radius and no bordered style:</label>
                         </div>
-                        <div class="col-8 ease-1st-form">
+                        <div class="col-9 ease-1st-form">
 
                             <div class="text margin-10-b inner-shadow no-bordered">
                                 <input type="text">
@@ -1144,10 +1157,10 @@
                            <label>Custom Switch</label>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-3">
                             <label class="form-grid">Using swatches with no radius and no bordered style:</label>
                         </div>
-                        <div class="col-8 ease-1st-form theme-default2">
+                        <div class="col-9 ease-1st-form theme-default2">
 
                             <div class="text margin-10-b rounded no-bordered ui-x-light">
                                 <input type="text">
