@@ -89,10 +89,11 @@ html:not(.mobile) .select-multi > .icon { display: none; }
 .form-focus > ::-moz-placeholder { color: #c5c5c5; opacity: 1; }
 /* do not group */
 
-@media (min-width: 768px) {
+@media (min-width: 960px) {
     .form-grid { line-height: 32px; display: inline-block; }
+    .form-grid.form-lg { line-height: 42px; }
 }
-@media (max-width: 767px) {
+@media (max-width: 959px) {
     .form-grid { display: block; }
     .row [class*="col-"] > .form-grid { margin-bottom: -15px; }
 
