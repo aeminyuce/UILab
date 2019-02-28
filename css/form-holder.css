@@ -7,7 +7,11 @@
 
 .form-holder-focus .text,.form-holder-focus .select,
 .form-holder-focus .btn[class*="bordered"],
-.form-holder-focus img[class*="bordered"] { border-color: rgba(0,0,0,.5); }
+.form-holder-focus img[class*="bordered"] { border-color: rgba(0,0,0,.85); }
+
+.form-holder-focus .form-light.text,.form-holder-focus .form-light.select,
+.form-holder-focus .btn[class*="bordered"],
+.form-holder-focus img[class*="bordered"] { border-color: rgba(255,255,255,1) !important; }
 
 .form-holder [class*="col-"]:not(:last-child) .text,.form-holder [class*="col-"]:not(:last-child) .select,.form-holder [class*="col-"]:not(:last-child) .btn,.form-holder [class*="col-"]:not(:last-child) img,
 .form-holder .col-static > [class*="row"]:not(:last-child) .text,.form-holder .col-static > [class*="row"]:not(:last-child) .select,.form-holder .col-static > [class*="row"]:not(:last-child) .btn,.form-holder .col-static > [class*="row"]:not(:last-child) img,

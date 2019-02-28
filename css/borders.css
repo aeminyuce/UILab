@@ -5,7 +5,7 @@
 .large-bordered { border-width: 5px !important; }
 .no-bordered { border-width: 0 !important; }
 
-.light-bordered { border-color: rgba(255,255,255,.15) !important; }
+.light-bordered { border-color: rgba(255,255,255,.3) !important; }
 .dark-bordered { border-color: rgba(0,0,0,.35) !important; }
 
 .top-bordered { border-right: 0 !important; border-bottom: 0 !important; border-left: 0 !important; }
