@@ -185,9 +185,6 @@ var requiredForms = {
 
             }
 
-            e.preventDefault();
-            e.stopPropagation();
-
             if (forms.length === 0) { return; }
 
             success = 0;
