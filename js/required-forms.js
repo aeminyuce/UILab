@@ -172,10 +172,21 @@ var requiredForms = {
         // Events
         events.on(document, 'submit', 'form', function (e) {
 
-            var i, forms, success, getIndex, getRect, scrollIndex, scrollTarget, scrollPos, scrollAnimate;
+            var i, elems, forms, success, getIndex, getRect, scrollIndex, scrollTarget, scrollPos, scrollAnimate;
 
-            forms = selector(eventForms.toString());
-            forms = selector(forms, this);
+            forms = [];
+            elems = e.target.elements; // get submitted element list
+
+            for (i = 0; i < elems.length; i += 1) { // filter required elements
+
+                if (events.hasClass(elems[i], 'required')) {
+                    forms.push(elems[i]);
+                }
+
+            }
+
+            e.preventDefault();
+            e.stopPropagation();
 
             if (forms.length === 0) { return; }
 
