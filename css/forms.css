@@ -40,7 +40,7 @@ html:not(.mobile) .select-multi > .icon { display: none; }
 .check,.radio { vertical-align: middle; display: inline-block; }
 
 .form-light { border-color: rgba(255,255,255,.3) !important; }
-.form-light > input,.form-light > select,.form-light > textarea,.mobile .select-multi.form-light:before,.form-light > .icon { color: #fff; }
+.form-light > input,.form-light > select:not(:focus),.form-light > textarea,.mobile .select-multi.form-light:before,.form-light > .icon { color: #fff; }
 .form-light > input:-webkit-autofill:not(:focus) { -webkit-text-fill-color: white !important; }
 
 .error { border-color: #dc000f !important; }
