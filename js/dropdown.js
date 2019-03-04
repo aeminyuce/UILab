@@ -8,7 +8,7 @@ var dropdown = {};
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, setTimeout, clearTimeout */
+    /*globals window, document, selector, events, setTimeout, clearTimeout , screen*/
 
     var
         dropdownOpenTimer,
@@ -57,9 +57,8 @@ var dropdown = {};
 
             var list, alignSize, parent, btnHeight, subMenuHeight, offset, listWidth;
 
+            parent = t.parentNode;
             if (!events.hasClass(parent, 'open')) {
-
-                parent = t.parentNode;
 
                 events.removeClass('.dropdown.open', 'open-ease');
                 setTimeout(function () {
@@ -75,19 +74,18 @@ var dropdown = {};
 
                     offset = parent.getBoundingClientRect();
 
-                    list = selector('.content', parent);
-
-                    listStyles = list[0].style.length;
-                    listWidth = list[0].offsetWidth;
-
-                    if ((parent.offsetWidth > 200) && (parent.offsetWidth > listWidth)) {
-                        list[0].style.minWidth = parent.offsetWidth + 'px';
+                    list = selector('.content', parent)[0];
+                    if (screen.width < 481) {
+                        list.style.minWidth = parent.offsetWidth + 'px';
                     }
 
-                    if (events.hasClass(parent, 'submenu-left') || (offset.left + list[0].style.offsetWidth + 15) > window.innerWidth) {
+                    listStyles = list.style.length;
+                    listWidth = list.offsetWidth;
+
+                    if (events.hasClass(parent, 'submenu-left') || (offset.left + list.style.offsetWidth + 15) > window.innerWidth) {
 
                         if ((offset.left - (listWidth - parent.offsetWidth) - 15) > 0) {
-                            list[0].style.right = 0;
+                            list.style.right = 0;
                         }
 
                     } else if (events.hasClass(parent, 'submenu-center')) {
@@ -95,13 +93,13 @@ var dropdown = {};
                         alignSize = Math.abs(listWidth - parent.offsetWidth) / 2;
 
                         if ((offset.left - alignSize > 0) && (alignSize > 0)) {
-                            list[0].style.marginLeft = -alignSize + 'px';
+                            list.style.marginLeft = -alignSize + 'px';
                         }
 
                     }
 
                     btnHeight = t.offsetHeight;
-                    subMenuHeight = list[0].offsetHeight;
+                    subMenuHeight = list.offsetHeight;
 
                     if (offset.top + parseInt(btnHeight + subMenuHeight, 10) >= window.innerHeight) {
 
@@ -177,6 +175,11 @@ var dropdown = {};
             events.removeClass(selector('li.selected', p), 'selected');
             events.addClass(this.parentNode, 'selected');
 
+            clearTimeout(dropdownCloseTimer);
+            clearTimeout(dropdownOpenTimer);
+
+            dropdownCloseFnc();
+
         });
 
         // close events
@@ -189,7 +192,9 @@ var dropdown = {};
                 clearTimeout(dropdownCloseTimer);
                 clearTimeout(dropdownOpenTimer);
 
-                dropdownCloseTimer = setTimeout(function () { dropdownCloseFnc(); }, 300);
+                dropdownCloseTimer = setTimeout(function () {
+                    dropdownCloseFnc();
+                }, 300);
 
             });
 
