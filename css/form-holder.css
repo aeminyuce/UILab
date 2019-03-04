@@ -7,7 +7,7 @@
 
 .form-holder-focus .text,.form-holder-focus .select,
 .form-holder-focus .btn[class*="bordered"],
-.form-holder-focus img[class*="bordered"] { border-color: rgba(0,0,0,.85); }
+.form-holder-focus img[class*="bordered"] { border-color: rgba(0,0,0,.35); }
 
 .form-holder-focus .form-light.text,.form-holder-focus .form-light.select,
 .form-holder-focus .btn.light-bordered[class*="bordered"],
