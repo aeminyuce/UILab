@@ -96,9 +96,6 @@ var ajax = function (method, target, callback) {
 
             callback(ajax.request.responseText, 'success', ajax.request);
 
-            // ajax callbacks
-            events.on(document, 'ajaxCallbacks');
-
             // get list of real classnames
             ajax.classNames = ajax.request.responseText.match(/\sclass=\"+[\w\s\d\-\_\=]+\"[\s\>]/g);
 
@@ -107,6 +104,7 @@ var ajax = function (method, target, callback) {
                 ajax.classNames = ajax.classNames.toString().match(/"+[\w\s\d\-\_\=]+"/g).toString().replace(/\"/g, '').replace(/,/g, ' ').split(' ');
                 ajax.classNames = ajax.classNames.filter(uniqueClassNames);
 
+                // ajax callbacks
                 events.trigger(document, 'ajaxCallbacks'); // set custom event
 
             }
