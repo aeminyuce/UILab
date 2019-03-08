@@ -144,8 +144,7 @@ var modal = {
                 content.style.removeProperty('top');
                 content.style.removeProperty('left');
 
-                content.style.removeProperty('max-width');
-                content.style.removeProperty('max-height');
+                content.style.removeProperty('width');
                 content.style.removeProperty('height');
 
                 if (set.size === undefined) {
@@ -173,8 +172,8 @@ var modal = {
 
                         if (customSize[0].match(/^[0-9]+$/) !== null && customSize[1].match(/^[0-9]+$/) !== null) {
 
-                            content.style.maxWidth = customSize[0] + 'px';
-                            content.style.maxHeight = customSize[1] + 'px';
+                            content.style.width = customSize[0] + 'px';
+                            content.style.height = customSize[1] + 'px';
 
                         } else { getSize(); }
 
@@ -231,7 +230,7 @@ var modal = {
                         content.style.top = Math.floor((bg[0].offsetHeight - content.offsetHeight) / 2) + 'px';
                         content.style.left = Math.floor((bg[0].offsetWidth - content.offsetWidth) / 2) + 'px';
 
-                        if (size === 'inline') {
+                        if (size !== undefined && size !== 'fullscreen') { // inherit fixed size && fulscreen
                             content.style.height = content.offsetHeight + 'px';
                         }
 

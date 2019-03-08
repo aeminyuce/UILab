@@ -10,14 +10,13 @@
 .modal-win:not(.show) { display: none; }
 
 .modal-content { min-width: 280px; background-color: #fff; position: fixed; }
-.modal-content:not(.inline) { height: 100%; }
 .modal-content:not(.fullscreen) { width: 90%; max-height: 92%; }
-.modal-content.fullscreen { width: 100%; border-radius: 0 !important; }
+.modal-content.fullscreen { width: 100%; height: 100%; border-radius: 0 !important; }
 .modal-win:not(.show-ease) .modal-content { opacity: 0; transform: translateY(10px); }
 
-.modal-content.lg { max-width: 1200px; }
-.modal-content.md { max-width: 960px; }
-.modal-content.sm { max-width: 480px; }
+.modal-content.lg { max-width: 1200px; min-height: 300px; }
+.modal-content.md { max-width: 960px; min-height: 240px; }
+.modal-content.sm { max-width: 480px; min-height: 120px; }
 .modal-content.inline { width: auto; }
 
 .modal { display: none; }
