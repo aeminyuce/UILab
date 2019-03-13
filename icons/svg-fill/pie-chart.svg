@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="pie-chart" class="cls-1" d="M11.972,21a10.138,10.138,0,0,1-6.348-2.212l7.34-7.162L12.973,1.477A9.881,9.881,0,0,1,22,11.214,9.91,9.91,0,0,1,11.972,21Zm-1-20.012v9.247H1.492A10.4,10.4,0,0,1,10.969.988Zm-8.2,17.785a11.542,11.542,0,0,1-2.784-6.58H9.516Z" transform="translate(0 -1)"/>
+</svg>

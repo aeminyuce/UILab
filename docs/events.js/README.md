@@ -1,12 +1,7 @@
 # Events JS
 
 Events JS requires Selector JS.
-
-* [Selector JS](https://ahmeteminyuce.github.io/UILab/docs/selector.js/index.html)
-
 Events JS is a simple javascript creating and triggering events.
-
-* [Documentation Examples](https://ahmeteminyuce.github.io/UILab/docs/events.js/index.html)
 
 
 **Page load event:**

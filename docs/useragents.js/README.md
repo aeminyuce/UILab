@@ -1,12 +1,7 @@
 # User Agents JS
 
 User Agents JS requires Events JS.
-
-* [Events JS](https://ahmeteminyuce.github.io/UILab/docs/events.js/index.html)
-
 User Agents JS is a simple javascript detecting browsers, devices and operating systems.
-
-* [Documentation Examples](https://ahmeteminyuce.github.io/UILab/docs/useragents.js/index.html)
 
 
 **User agents:**

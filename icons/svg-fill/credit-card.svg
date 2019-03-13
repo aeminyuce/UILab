@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="credit-card" class="cls-1" d="M23,19H1a1,1,0,0,1-1-1V11H24v7A1,1,0,0,1,23,19ZM6,13H4a1,1,0,0,0,0,2H6A1,1,0,0,0,6,13Zm7,0H9a1,1,0,0,0,0,2h4A1,1,0,0,0,13,13ZM0,4A1,1,0,0,1,1,3H23a1,1,0,0,1,1,1V7H0V4Z" transform="translate(0 -3)"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="plus-circle" class="cls-1" d="M12,24A12,12,0,1,1,24,12,12,12,0,0,1,12,24Zm7-13a1,1,0,0,0-1-1H14V6a1,1,0,0,0-1-1H11a1,1,0,0,0-1,1v4H6a1,1,0,0,0-1,1v2a1,1,0,0,0,1,1h4v4a1,1,0,0,0,1,1h2a1,1,0,0,0,1-1V14h4a1,1,0,0,0,1-1V11Z"/>
+</svg>

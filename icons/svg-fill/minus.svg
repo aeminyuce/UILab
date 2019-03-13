@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="4" viewBox="0 0 20 4">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="minus" class="cls-1" d="M22,11a1,1,0,0,0-1-1H3a1,1,0,0,0-1,1v2a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V11Z" transform="translate(-2 -10)"/>
+</svg>

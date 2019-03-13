@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="usb-driver" class="cls-1" d="M17,21H13v2a1,1,0,0,1-2,0V21H7a2,2,0,0,1-2-2V7H19V19A2,2,0,0,1,17,21ZM17,9H7v9a1,1,0,0,0,1,1h8a1,1,0,0,0,1-1V9ZM7,1A1,1,0,0,1,8,0h8a1,1,0,0,1,1,1V6H7V1Zm6,3h2V2H13V4ZM9,4h2V2H9V4Z" transform="translate(-5)"/>
+</svg>

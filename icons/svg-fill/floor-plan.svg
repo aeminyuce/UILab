@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="floor-plan" class="cls-1" d="M22.5,24H1.5A1.5,1.5,0,0,1,0,22.5V1.5A1.5,1.5,0,0,1,1.5,0h10a1.5,1.5,0,0,1,0,3H3V21H9V15H7.5a1.5,1.5,0,0,1,0-3h5a1.5,1.5,0,0,1,0,3H12v6h9V15H19.5a1.5,1.5,0,0,1,0-3H21V3H19.5a1.5,1.5,0,0,1,0-3h3A1.5,1.5,0,0,1,24,1.5v21A1.5,1.5,0,0,1,22.5,24Z"/>
+</svg>

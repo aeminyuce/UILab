@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 22 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="buildings" class="cls-1" d="M22,24H19a1,1,0,0,1-1-1V21H16v2a1,1,0,0,1-1,1H9a1,1,0,0,1-1-1V20H6v3a1,1,0,0,1-1,1H2a1,1,0,0,1-1-1V1A1,1,0,0,1,2,0H12a1,1,0,0,1,1,1V6h9a1,1,0,0,1,1,1V23A1,1,0,0,1,22,24ZM21,8H12a1,1,0,0,1-1-1V2H3V22H4V19a1,1,0,0,1,1-1H9a1,1,0,0,1,1,1v3h4V20a1,1,0,0,1,1-1h4a1,1,0,0,1,1,1v2h1V8Zm-3,6h2v3H18V14Zm0-5h2v3H18V9Zm-4,5h2v3H14V14Zm0-5h2v3H14V9ZM8,13h2v3H8V13ZM8,8h2v3H8V8ZM8,3h2V6H8V3ZM4,13H6v3H4V13ZM4,8H6v3H4V8ZM4,3H6V6H4V3Z" transform="translate(-1)"/>
+</svg>

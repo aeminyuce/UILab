@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="13" viewBox="0 0 24 13">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="angle-up" class="cls-1" d="M23.705,17.688a1.01,1.01,0,0,1-1.424,0L11.993,7.437,1.707,17.7A1.008,1.008,0,0,1,.283,16.279L11.267,5.314a1.056,1.056,0,0,1,1.454.011L23.705,16.269A1,1,0,0,1,23.705,17.688Z" transform="translate(0 -5)"/>
+</svg>
