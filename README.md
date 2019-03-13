@@ -3,7 +3,6 @@
 # UI Lab
 
 CSS & JavaScript powered responsive design system.
-* [Documentation Examples](https://ahmeteminyuce.github.io/UILab/docs/examples.html)
 
 ## Browser Support
 
