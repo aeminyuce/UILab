@@ -1,12 +1,10 @@
 /* breadcrumbs */
 .breadcrumbs:not(:last-child) { margin-bottom: 10px; }
-.breadcrumbs li:not(:first-child):before { content: "/ "; color: rgba(0,0,0,.25); vertical-align: bottom; margin-right: 10px; display: inline-block; }
-.breadcrumbs li:not(:last-child) { margin-right: 5px; }
-.breadcrumbs li a,.breadcrumbs li b { display: inline-block; }
+.breadcrumbs:not(.no-separated) > ul > li:not(:first-child):before { content: "/"; color: rgba(0,0,0,.25); vertical-align: middle; margin-right: 10px; display: inline-block; }
+.breadcrumbs > ul > li:not(:last-child) { margin-right: 5px; }
+.breadcrumbs > ul > li > a,.breadcrumbs > ul > li > b { display: inline-block; }
 
 @media (max-width: 480px) {
     .breadcrumbs { text-align: center; margin-top: 5px; }
-    .breadcrumbs li:not(:last-child) { margin-right: 2px; }
-    .breadcrumbs li:not(:first-child):before { content: ""; margin-right: 0; }
-    .breadcrumbs li:not(:last-child):after { content: ","; }
+    .breadcrumbs > ul > li { margin-bottom: 5px; }
 }
