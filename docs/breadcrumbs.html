@@ -16,6 +16,7 @@
     <!-- CSS Tools -->
     <link rel="stylesheet" href="../css/buttons.css" />
     <link rel="stylesheet" href="../css/borders.css" />
+    <link rel="stylesheet" href="../css/dropdown.css" />
     <link rel="stylesheet" href="../css/grid.css" />
     <link rel="stylesheet" href="../css/helpers.css" />
     <link rel="stylesheet" href="../css/icons.css" />
@@ -33,6 +34,7 @@
     <!-- Javascript Tools -->
     <script src="../js/selector.js"></script>
     <script src="../js/events.js"></script>
+    <script src="../js/dropdown.js"></script>
     <script src="../js/sticky-header.js"></script>
     <script src="../js/top-button.js"></script>
     <script src="../js/transitions.js"></script>
@@ -61,12 +63,114 @@
             <div class="row">
                 <div class="col-12 padding-30">
 
-                    <h4>Breadcrumbs Example</h4>
+                    <h4>Breadcrumbs Examples</h4>
                     <div class="breadcrumbs">
-                        <ul class="list-inline dark ease-2nd-link">
+                        <ul class="list-inline dark">
                             <li><a class="hoverline" href="#">Home</a></li>
                             <li><a class="hoverline" href="#">Search Results</a></li>
                             <li><a class="hoverline" href="#">Content Details</a></li>
+                        </ul>
+                    </div>
+
+                    <span class="sp15"></span>
+
+                    <div class="breadcrumbs">
+                        <ul class="list-inline dark">
+                            <li><a class="hoverline" href="#"><i class="icon icon-xs icon-home"></i></a></li>
+                            <li><a class="hoverline" href="#">Search Results</a></li>
+                            <li><b>Content Details</b></li>
+                        </ul>
+                    </div>
+
+                    <span class="sp15"></span>
+
+                    <div class="breadcrumbs theme-default2">
+                        <ul class="list-inline">
+                            <li><a class="hoverline ui-text" href="#"><i class="icon icon-xs icon-home"></i></a></li>
+                            <li><a class="hoverline ui-text" href="#">Search Results</a></li>
+                            <li><b class="ui-text">Content Details</b></li>
+                        </ul>
+                    </div>
+
+                    <span class="sp15"></span>
+
+                    <div class="breadcrumbs">
+                        <ul class="list-inline ease-2nd-btn">
+                            <li><a class="btn rounded" href="#"><i class="icon icon-xs icon-home margin-5-r"></i> Home</a></li>
+                            <li><a class="btn rounded" href="#">Search Results</a></li>
+                            <li><button class="btn btn-passive rounded">Content Details</button></li>
+                        </ul>
+                    </div>
+
+                    <span class="sp15"></span>
+
+                    <div class="breadcrumbs theme-default2">
+                        <ul class="list-inline ease-2nd-btn">
+                            <li><a class="btn rounded ui-dark" href="#"><i class="icon icon-xs icon-home margin-5-r"></i> Home</a></li>
+                            <li><a class="btn rounded ui-dark" href="#">Search Results</a></li>
+                            <li><button class="btn btn-passive rounded ui-dark">Content Details</button></li>
+                        </ul>
+                    </div>
+
+                    <span class="sp15"></span>
+
+                    <div class="breadcrumbs">
+                        <ul class="list-inline ease-2nd-btn">
+                            <li><a class="btn rounded" href="#"><i class="icon icon-xs icon-home margin-5-r"></i> Home</a></li>
+                            <li><a class="btn rounded" href="#">Search Results</a></li>
+                            <li><b class="dark">Content Details</b></li>
+                        </ul>
+                    </div>
+
+                    <span class="sp15"></span>
+
+                    <div class="breadcrumbs no-separated">
+                        <ul class="list-inline ease-2nd-btn">
+                            <li><a class="btn rounded" href="#"><i class="icon icon-xs icon-home margin-5-r"></i> Home</a></li>
+                            <li><a class="btn rounded" href="#"><i class="icon icon-xs icon-angle-left margin-5-r"></i> Search Results</a></li>
+                            <li><a class="btn rounded" href="#"><i class="icon icon-xs icon-angle-left margin-5-r"></i> Content Details</a></li>
+                        </ul>
+                    </div>
+
+                    <span class="sp15"></span>
+
+                    <div class="breadcrumbs no-separated">
+                        <ul class="list-inline ease-2nd-btn">
+                            <li><a class="btn rounded" href="#"><i class="icon icon-xs icon-home"></i></a></li>
+                            <li>
+                                <span class="dropdown">
+                                    <button class="btn rounded ease-btn">
+                                        <i class="icon icon-md icon-ellipsis-hor"></i>
+                                    </button>
+                                    <ul class="content theme-gray ui-x-light rounded ease-dropdown">
+                                        <li><a href="#">Search Results</a></li>
+                                        <li><a href="#">Content Details</a></li>
+                                        <li><a href="#">Detail Options</a></li>
+                                    </ul>
+                                </span>
+                            </li>
+                            <li><a class="btn rounded" href="#">Detail Items</a></li>
+                        </ul>
+                    </div>
+
+                    <span class="sp15"></span>
+
+                    <div class="breadcrumbs no-separated theme-default2">
+                        <ul class="list-inline ease-2nd-btn">
+                            <li><a class="btn rounded ui-dark" href="#"><i class="icon icon-xs icon-home"></i></a></li>
+                            <li>
+                                <span class="dropdown">
+                                    <button class="btn rounded ui-dark ease-btn">
+                                        <i class="icon icon-md icon-ellipsis-hor"></i>
+                                    </button>
+                                    <ul class="content theme-gray ui-x-light rounded ease-dropdown">
+                                        <li><a href="#">Search Results</a></li>
+                                        <li><a href="#">Content Details</a></li>
+                                        <li><a href="#">Detail Options</a></li>
+                                    </ul>
+                                </span>
+                            </li>
+                            <li><a class="btn rounded ui-dark" href="#">Detail Items</a></li>
                         </ul>
                     </div>
 
