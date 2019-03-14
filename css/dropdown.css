@@ -3,7 +3,7 @@
 .ease-dropdown li { transition-property: background-color; transition-duration: .15s; }
 .no-transitions-all .ease-dropdown li { transition-property: none !important; }
 
-.dropdown { vertical-align: top; display: inline-block; position: relative; }
+.dropdown { vertical-align: middle; display: inline-block; position: relative; }
 .dropdown.open { z-index: 19; }
 .dropdown > .btn { width: 100%; }
 .dropdown.open-ease > .btn .icon-toggle { transform: scaleY(-1); }
@@ -38,5 +38,6 @@ html:not(.mobile) .dropdown ul.content > li:hover { background-color: rgba(0,0,0
     .dropdown ul.content > li:not(.sep) { padding: 10px; }
 }
 @media (max-width: 480px) {
+    .dropdown:not(.submenu-left):not(.submenu-center) .content { left: 0; }
     .dropdown ul.content > li:not(.sep) { padding: 10px 15px 10px 10px; }
 }
