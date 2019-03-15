@@ -3,7 +3,7 @@
  Events JS requires Selector JS
 */
 
-/*globals document, selector, Event, navigator, NodeList, setTimeout, DOMParser */
+/*globals document, selector, Event, navigator, NodeList, setTimeout */
 var events = {
 
     onload: function (callback) {
@@ -435,28 +435,6 @@ var events = {
         'use strict';
         var l = selector(t), i;
         for (i = 0; i < l.length; i += 1) { l[i].style.height = value; }
-
-    },
-    parser: function (text) {
-
-        'use strict';
-        var parser, html;
-
-        if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
-
-            html = document.implementation.createHTMLDocument('');
-            html.body.innerHTML = text;
-
-            return html.body.innerHTML;
-
-        }
-
-        parser = new DOMParser();
-
-        html = parser.parseFromString(text, 'text/html');
-        html = html.querySelector('body').innerHTML;
-
-        return html;
 
     }
 
