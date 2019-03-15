@@ -149,8 +149,6 @@ var alerts = {
                 html += '<div class="alerts-bg ease-opacity"></div>';
             }
 
-            html = events.parser(html);
-
             selector('body')[0].insertAdjacentHTML('beforeend', html);
             events.addClass(document, 'alerts-bg-opened');
 
@@ -288,8 +286,6 @@ var alerts = {
             if (holder === undefined) { html += '<div class="alerts-msg-holder">'; }
             html += '<div class="alerts-msg ' + styles + '">' + set.msg + '</div>';
             if (holder === undefined) { html += '</div>'; }
-
-            html = events.parser(html);
 
             if (holder === undefined) {
                 selector('body')[0].insertAdjacentHTML('beforeend', html);

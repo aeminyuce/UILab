@@ -113,8 +113,6 @@ var modal = {
                         '</div>';
 
                 if (bg === undefined) { html += '<div class="modal-bg ease-layout"></div>'; }
-
-                html = events.parser(html);
                 selector('body')[0].insertAdjacentHTML('beforeend', html);
 
                 win = selector('.modal-win.active')[0];
@@ -208,7 +206,6 @@ var modal = {
                                         '<i class="' + modal.closeIcon + '"></i>' +
                                     '</button>';
 
-                        closeBtn = events.parser(closeBtn);
                         content.insertAdjacentHTML('afterbegin', closeBtn);
 
                     }
@@ -299,7 +296,7 @@ var modal = {
 
                 if (type === 'iframe') { // iframe sources
 
-                    temp = events.parser('<iframe class="modal-iframe modal-remove" src="' + set.source + '" frameborder="0" allowfullscreen></iframe>');
+                    temp = '<iframe class="modal-iframe modal-remove" src="' + set.source + '" frameborder="0" allowfullscreen></iframe>';
 
                     createModal();
                     content.insertAdjacentHTML('beforeend', temp);
@@ -313,7 +310,6 @@ var modal = {
                         if (status === 'success') {
 
                             temp = '<div class="modal modal-remove">' + response + '</div>';
-                            temp = events.parser(temp);
 
                             createModal();
                             content.insertAdjacentHTML('beforeend', temp);

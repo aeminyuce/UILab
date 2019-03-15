@@ -72,10 +72,9 @@ var topButton = {
         userLang = (navigator.language || navigator.userLanguage).split('-')[0];
         if (userLang === 'tr') { titleText = 'Yukarı Dön!'; } else { titleText = 'Back To Top!'; }
 
-        html = events.parser('<button class="top-button ' + topButton.classes + ' ease-opacity" title="' + titleText + '">' +
+        html = '<button class="top-button ' + topButton.classes + ' ease-opacity" title="' + titleText + '">' +
             '<i class="' + topButton.icon + ' ease-transform"></i>' +
-            '</button>'
-            );
+            '</button>';
 
         selector('body')[0].insertAdjacentHTML('beforeend', html);
         togglerFnc();

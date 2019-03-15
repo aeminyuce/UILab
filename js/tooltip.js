@@ -68,13 +68,13 @@ var tooltip = {
             arrowStyles = tooltip.border + ' ' + tooltip.theme;
             arrowStyles = arrowStyles.replace(re, ' ').replace(rex, '');
 
-            html = events.parser('<div class="tooltip ' + winStyles + ' ease-tooltip">' +
+            html = '<div class="tooltip ' + winStyles + ' ease-tooltip">' +
                     '<div class="tooltip-content">' + title + '</div>' +
                     '<span>' +
                         '<i class="bg ' + arrowStyles + '"></i>' +
                         '<i class="' + tooltip.theme + '"></i>' +
                     '</span>' +
-                '</div>');
+                '</div>';
 
             selector('body')[0].insertAdjacentHTML('afterbegin', html);
             win = selector('.tooltip');

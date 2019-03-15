@@ -35,7 +35,7 @@ var androidMultiselect = {};
                         if (options[i].selected) { selected.push(options[i].value); }
                     }
 
-                    html = events.parser('<option selected disabled>' + selected.length + ' ' + titleText + '</option>');
+                    html = '<option selected disabled>' + selected.length + ' ' + titleText + '</option>';
                     select.insertAdjacentHTML('afterbegin', html); //https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML
 
                     events.addClass(this, 'checked-for-android');

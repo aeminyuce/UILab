@@ -169,15 +169,14 @@ var photoGallery = {
             // create gallery
             index = Array.prototype.slice.call(images).indexOf(that);
 
-            html = events.parser('<div class="photo-preview ease-opacity">' +
+            html = '<div class="photo-preview ease-opacity">' +
                     '<button class="btn btn-square btn-lg btn-invisible ease-bg close-photo-preview"><i class="icon icon-lg ' + photoGallery.closeIcon + ' no-opacity"></i></button>' +
                     '<button type="button" class="preview-prev ease-bg"><i class="icon ' + photoGallery.prevIcon + ' icon-xl"></i></button>' +
                     '<button type="button" class="preview-next ease-bg"><i class="icon ' + photoGallery.nextIcon + ' icon-xl"></i></button>' +
                     '<i class="preview-loader icon icon-xxl ' + photoGallery.loaderIcon + '"></i>' +
                     '<span class="preview-info ease-transform"></span>' +
                     '<img class="ease-layout">' +
-                '</div>'
-                );
+                '</div>';
 
             selector('body')[0].insertAdjacentHTML('beforeend', html);
             preview = selector('.photo-preview');
