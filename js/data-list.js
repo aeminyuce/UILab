@@ -1,6 +1,6 @@
 /*
  Data List JS
- Data List JS requires Events JS
+ Data List JS requires Events JS, Parser JS
 */
 
 var dataList = {
@@ -21,7 +21,7 @@ var dataList = {
 (function () {
 
     'use strict';
-    /*globals window,document, selector, events, sessionStorage, performance, ajax */
+    /*globals window, document, selector, events, sessionStorage, performance, ajax, parser */
 
     var
         testStorage = true,
@@ -138,7 +138,7 @@ var dataList = {
         classes = classes.replace(re, ' ').replace(rex, '');
         html += '<button class="' + classes + '"><i class="' + dataList.nextIcon + '"></i></button>\n';
 
-        html = events.parser(html);
+        html = parser(html);
         paging[0].innerHTML = html;
 
         // set paging to storage
@@ -335,7 +335,7 @@ var dataList = {
 
         // sort
         dataContainer = selector('.data-container', that)[0];
-        temp.innerHTML = events.parser(dataContainer.innerHTML);
+        temp.innerHTML = parser(dataContainer.innerHTML);
 
         arr = [];
         arrSorted = [];
@@ -497,7 +497,7 @@ var dataList = {
             });
 
             dataContainer = selector('.data-container', that)[0];
-            temp.innerHTML = events.parser(dataContainer.innerHTML);
+            temp.innerHTML = parser(dataContainer.innerHTML);
 
             list = selector('.data-content', temp[0]);
 
