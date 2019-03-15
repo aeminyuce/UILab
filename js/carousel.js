@@ -87,7 +87,7 @@ var carousel = {};
 
     function carouselResizerFnc(i, that) {
 
-        var col, j, k, slider, contents, animate, navDots, navDotsIn, navDotsLength, navDotsSize, navSides;
+        var col, j, k, slider, contents, animate, navDots, navDotsEl, navDotsLength, navDotsSize, navDotsHtml, navSides;
 
         if (that === undefined) {
 
@@ -116,23 +116,25 @@ var carousel = {};
             }
 
             navDotsSize = (navSides - navDotsLength);
+            navDotsHtml = '';
 
             for (j = 0; j < navDotsSize; j += 1) {
-                navDots.innerHTML += events.parser('<i class="ease-layout"></i>');
+                navDotsHtml += '<i class="ease-layout"></i>';
             }
 
-            navDotsIn = selector('.carousel-nav .dots i', that[i]);
+            navDots.insertAdjacentHTML('beforeend', navDotsHtml);
+            navDotsEl = selector('.carousel-nav .dots i', that[i]);
 
             if (navDotsSize < 0) {
 
                 for (k = navSides; k < navDotsLength; k += 1) {
-                    navDotsIn[k].style.display = 'none';
+                    navDotsEl[k].style.display = 'none';
                 }
 
             } else {
 
                 for (k = 0; k < navDotsLength; k += 1) {
-                    navDotsIn[k].style.display = '';
+                    navDotsEl[k].style.display = '';
                 }
 
             }
@@ -151,8 +153,8 @@ var carousel = {};
 
             that[i].setAttribute('data-content', (counts[i] + 1));
 
-            events.removeClass(navDotsIn, 'selected');
-            events.addClass(navDotsIn[counts[i]], 'selected');
+            events.removeClass(navDotsEl, 'selected');
+            events.addClass(navDotsEl[counts[i]], 'selected');
 
             slider = selector('.carousel-slider', that[i]);
 
@@ -376,7 +378,7 @@ var carousel = {};
             // touchmove events
             events.on(document, 'touchstart', '.carousel', function (e) {
 
-                var i, startx, starty, currentx, currenty, startMove, touchMove, move, that, slider, sliderMax, col, navDotsIn, touchEndTimer, animate, contents;
+                var i, startx, starty, currentx, currenty, startMove, touchMove, move, that, slider, sliderMax, col, navDotsEl, touchEndTimer, animate, contents;
 
                 touchMove = false;
 
@@ -386,7 +388,7 @@ var carousel = {};
                 that = this;
 
                 slider = selector('.carousel-slider', that)[0];
-                navDotsIn = selector('.carousel-nav .dots i', that);
+                navDotsEl = selector('.carousel-nav .dots i', that);
 
                 i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
 
@@ -476,8 +478,8 @@ var carousel = {};
                         slider.style.transform = 'translateX(' + -(counts[i] * that.offsetWidth) + 'px)';
                         that.setAttribute('data-content', (counts[i] + 1));
 
-                        events.removeClass(navDotsIn, 'selected');
-                        events.addClass(navDotsIn[counts[i]], 'selected');
+                        events.removeClass(navDotsEl, 'selected');
+                        events.addClass(navDotsEl[counts[i]], 'selected');
 
                         clearTimeout(touchEndTimer);
                         touchEndTimer = setTimeout(function () {
