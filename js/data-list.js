@@ -1,6 +1,6 @@
 /*
  Data List JS
- Data List JS requires Events JS, Parser JS
+ Data List JS requires Events JS
 */
 
 var dataList = {
@@ -21,7 +21,7 @@ var dataList = {
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, sessionStorage, performance, ajax, parser */
+    /*globals window, document, selector, events, navigator, sessionStorage, performance, ajax, DOMParser */
 
     var
         testStorage = true,
@@ -65,6 +65,29 @@ var dataList = {
         };
 
     }());
+
+    // parser
+    function parser(text) {
+
+        var html;
+
+        if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
+
+            html = document.implementation.createHTMLDocument('');
+            html.body.innerHTML = text;
+
+            return html.body.innerHTML;
+
+        }
+
+        parser.item = new DOMParser();
+
+        html = parser.item.parseFromString(text, 'text/html');
+        html = html.querySelector('body').innerHTML;
+
+        return html;
+
+    }
 
     // create paging
     function createPaging(paging, id, listLength) {
