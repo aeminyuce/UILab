@@ -422,20 +422,6 @@ var events = {
 
         return [];
 
-    },
-    width: function (t, value) {
-
-        'use strict';
-        var l = selector(t), i;
-        for (i = 0; i < l.length; i += 1) { l[i].style.width = value; }
-
-    },
-    height: function (t, value) {
-
-        'use strict';
-        var l = selector(t), i;
-        for (i = 0; i < l.length; i += 1) { l[i].style.height = value; }
-
     }
 
 };

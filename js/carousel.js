@@ -166,8 +166,13 @@ var carousel = {};
                 slider[0].style.transform = 'translateX(-' + (counts[i] * that[i].offsetWidth) + 'px)';
             }
 
-            events.width(slider, ((that[i].offsetWidth / col) * contents.length) * 2 + 'px'); // why: (offsetWidth * 2) for window resizing
-            events.width(contents, (that[i].offsetWidth / col) + 'px');
+            for (j = 0; j < slider.length; j += 1) {
+                slider[j].style.width = ((that[i].offsetWidth / col) * contents.length) * 2 + 'px'; // why: (offsetWidth * 2) for window resizing
+            }
+
+            for (j = 0; j < contents.length; j += 1) {
+                contents[j].style.width = (that[i].offsetWidth / col) + 'px';
+            }
 
             carouselLazyImages(that[i], col, i);
 
