@@ -129,24 +129,6 @@
                 console.log(el);
             });
 
-            /* Set the width of elements */
-            events.on('.btn-set-width', 'click', function () {
-                events.width('.btn-set-width b', '250px');
-                alert('<b> elements width set to 250px');
-            });
-
-            /* Set the height of elements */
-            events.on('.btn-set-height', 'click', function () {
-                events.height('.btn-set-height b', '100px');
-                alert('<b> elements height set to 100px');
-            });
-
-            /* .parser() Parse text to html */
-            events.on('.btn-parser', 'click', function () {
-                var html = events.parser('<a href="#" class="btn margin-5 circle ease-btn">Button created with parser.</a>');
-                this.insertAdjacentHTML('beforeend', html);
-            });
-
         });
     </script>
 
@@ -306,33 +288,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <h4>Set the width of elements:</h4>
-                    <ul class="list-unstyled list-spacer-5 align-left">
-                        <li class="btn btn-lg btn-multitext btn-block rounded ease-btn btn-set-width">
-                            <i>events.width('.btn-set-width b', '250px');</i><br><br>
-                            <b class="padding-10 margin-1-b block theme-gray ui-light">First element</b>
-                            <b class="padding-10 margin-1-b block theme-gray ui-light">Second element</b>
-                            <b class="padding-10 block theme-gray ui-light">Third element</b>
-                        </li>
-                    </ul>
-
-                    <h4>Set the height of elements:</h4>
-                    <ul class="list-unstyled list-spacer-5 align-left">
-                        <li class="btn btn-lg btn-multitext btn-block rounded ease-btn btn-set-height">
-                            <i>events.height('.btn-set-height b', '100px');</i><br><br>
-                            <b class="padding-10 margin-1-b block theme-gray ui-light">First element</b>
-                            <b class="padding-10 margin-1-b block theme-gray ui-light">Second element</b>
-                            <b class="padding-10 block theme-gray ui-light">Third element</b>
-                        </li>
-                    </ul>
-
-                    <h4>.parser() Parse text to html:</h4>
-                    <ul class="list-unstyled list-spacer-5 align-left">
-                        <li class="btn btn-lg btn-multitext btn-block rounded ease-btn btn-parser">
-                            <i class="block">events.parser('&lt;a href="#" class="btn margin-5 circle ease-btn">Button created with parser.&lt;/a&gt;');</i>
-                        </li>
-                    </ul>
 
                 </div>
             </div>

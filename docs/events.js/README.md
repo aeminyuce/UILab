@@ -91,23 +91,3 @@ events.each(element, function);
 ```
 events.closest(element, element);
 ```
-
-**Set the width of elements:**
-```
-events.width(element, value);
-```
-
-**Set the height of elements:**
-```
-events.height(element, value);
-```
-
-**.parser() Parse text to html:**
-```
-events.parser(text);
-```
-
-**.clone() Clone and parse inner contents of element:**
-```
-events.clone(element);
-```
