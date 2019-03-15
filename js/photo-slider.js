@@ -18,7 +18,7 @@ var photoSlider = {};
     /*globals window, document, selector, events, Image */
     function photoSliderLoader() {
 
-        var slider, j, images, dataSrc, nav;
+        var slider, j, images, dataSrc, nav, navHtml;
 
         slider = selector('.photo-slider');
         images = selector('.photo-slider img');
@@ -61,17 +61,21 @@ var photoSlider = {};
                     events.addClass(selector('button', slider[i]), 'show');
                     events.addClass(nav, 'show');
 
-                    if (nav.innerHTML === "") {
+                    if (nav.innerHTML === '') {
+
+                        navHtml = '';
 
                         for (j = 0; j < dataSrcLists[i].length; j += 1) {
 
                             if (j === 0) {
-                                nav.innerHTML += events.parser('<i class="selected ease-layout"></i>');
+                                navHtml += '<i class="selected ease-layout"></i>';
                             } else {
-                                nav.innerHTML += events.parser('<i class="ease-layout"></i>');
+                                navHtml += '<i class="ease-layout"></i>';
                             }
 
                         }
+
+                        nav.insertAdjacentHTML('beforeend', navHtml);
 
                     }
 
