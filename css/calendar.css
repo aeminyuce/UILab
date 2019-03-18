@@ -1,13 +1,18 @@
 /* calendar */
-.calendar { background-color: #fff; padding: 5px; display: block; }
+.calendar { background-color: #fff; padding: 5px; display: block; position: relative; -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
+.calendar:not(.active) { display: none; }
 
 .calendar table { width: 100%; table-layout: fixed; }
 .calendar table,.calendar table * { text-align: center; }
 
-.calendar caption { min-height: 52px; background-color: rgba(0,0,0,.045); margin-bottom: 5px; position: relative; }
+.calendar caption { min-height: 52px; background-color: rgba(0,0,0,.15); margin-bottom: 5px; position: relative; }
+.calendar:not(.ui-dark):not(.ui-x-dark) caption { background-color: rgba(0,0,0,.065); }
 .calendar.rounded caption,.calendar.rounded caption button { border-radius: 6px; }
 .calendar caption button { line-height: 22px; width: 42px; height: 42px; background-color: rgba(0,0,0,0); padding: 10px display: block; border: 0; position: absolute; top: 50%; transform: translateY(-50%); }
-html:not(.mobile ) .calendar caption button:hover { background-color: rgba(0,0,0,.08); }
+.calendar caption button .icon { opacity: .45; }
+
+html:not(.mobile ) .calendar caption button:hover { background-color: rgba(0,0,0,.15); }
+html:not(.mobile ) .calendar:not(.ui-dark):not(.ui-x-dark) caption button:hover { background-color: rgba(0,0,0,.08); }
 
 .calendar-prev { left: 5px; }
 .calendar-next { right: 5px; }
@@ -15,5 +20,11 @@ html:not(.mobile ) .calendar caption button:hover { background-color: rgba(0,0,0
 .calendar-title { font-size: 18px; display: inline-block; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
 
 .calendar.rounded table { border-radius: 6px; }
-.calendar table td,.calendar table th { padding: 10px; }
+.calendar table th,.calendar table td { padding: 10px; position: relative; }
 .calendar table th { font-weight: bold; vertical-align: bottom !important; }
+.calendar table td.passive { opacity: .35; }
+
+.calendar table td.today b { position: relative; z-index: 2; }
+.calendar table td.today span { background-color: rgba(255,255,255,.15); display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1; }
+.calendar.rounded table td.today span { border-radius: 6px; }
+.calendar:not(.ui-dark):not(.ui-x-dark) table td.today span { background-color: rgba(0,0,0,.075); }

@@ -64,9 +64,33 @@
 
     <!-- documentation examples -->
     <main class="container no-gutter">
-        <div class="col-4 col-md-6 offset-4 offset-md-3 sm-responsive">
+        <div class="fixed padding-30-v theme-default">
 
-            <div class="calendar rounded"></div>
+            <div class="row">
+                <div class="col-12">
+                    <h4>Calendar Examples</h4>
+                </div>
+                <div class="col-4 col-md-6 sm-responsive">
+                    <b class="margin-5-b block">Previous Month:</b>
+                    <div class="calendar rounded" data-date="prev"></div>
+                </div>
+                <div class="col-4 col-md-6 sm-responsive">
+                    <b class="margin-5-b block">Current Month:</b>
+                    <div class="calendar rounded shadow-lg ui-dark"></div>
+                </div>
+                <div class="col-4 col-md-6 sm-responsive">
+                    <b class="margin-5-b block">Next Month:</b>
+                    <div class="calendar rounded" data-date="next"></div>
+                </div>
+                <div class="col-6 sm-responsive">
+                    <b class="margin-5-b block">Show Defined Month: 10</b>
+                    <div class="calendar rounded" data-date="10"></div>
+                </div>
+                <div class="col-6 sm-responsive">
+                    <b class="margin-5-b block">Show Defined Year and Month: 2012,1</b>
+                    <div class="calendar rounded" data-date="2012,1"></div>
+                </div>
+            </div>
 
         </div>
     </main>
