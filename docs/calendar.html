@@ -15,6 +15,7 @@
 
     <!-- CSS Tools -->
     <link rel="stylesheet" href="../css/buttons.css" />
+    <link rel="stylesheet" href="../css/borders.css" />
     <link rel="stylesheet" href="../css/grid.css" />
     <link rel="stylesheet" href="../css/helpers.css" />
     <link rel="stylesheet" href="../css/icons.css" />
@@ -64,31 +65,47 @@
 
     <!-- documentation examples -->
     <main class="container no-gutter">
-        <div class="fixed padding-30-v theme-default">
+        <div class="fixed padding-30-v">
 
-            <div class="row">
-                <div class="col-12">
-                    <h4>Calendar Examples</h4>
+            <h4>Calendar Styles</h4>
+            <div class="row row-equal-height padding-30-b">
+                <div class="col-4 col-md-6 sm-responsive">
+                    <div class="calendar"></div>
                 </div>
                 <div class="col-4 col-md-6 sm-responsive">
-                    <b class="margin-5-b block">Previous Month:</b>
-                    <div class="calendar rounded" data-date="prev"></div>
+                    <div class="calendar rounded"></div>
                 </div>
                 <div class="col-4 col-md-6 sm-responsive">
-                    <b class="margin-5-b block">Current Month:</b>
-                    <div class="calendar rounded shadow-lg ui-dark"></div>
+                    <div class="calendar rounded shadow"></div>
                 </div>
                 <div class="col-4 col-md-6 sm-responsive">
-                    <b class="margin-5-b block">Next Month:</b>
-                    <div class="calendar rounded" data-date="next"></div>
+                    <div class="calendar no-padding margin-5 shadow-lg theme-blue ui-x-dark"></div>
+                </div>
+                <div class="col-4 col-md-6 sm-responsive">
+                    <div class="calendar rounded theme-default2 ui-x-dark"></div>
+                </div>
+                <div class="col-4 col-md-6 sm-responsive">
+                    <div class="calendar rounded shadow-lg theme-default ui-dark"></div>
+                </div>
+            </div>
+
+            <h4>Calendars with Defined Dates</h4>
+            <div class="row row-equal-height padding-30-b">
+                <div class="col-6 sm-responsive">
+                    <b class="margin-5-b block">Previous Month: data-date="prev"</b>
+                    <div class="calendar rounded shadow" data-date="prev"></div>
                 </div>
                 <div class="col-6 sm-responsive">
-                    <b class="margin-5-b block">Show Defined Month: 10</b>
-                    <div class="calendar rounded" data-date="10"></div>
+                    <b class="margin-5-b block">Next Month: data-date="next"</b>
+                    <div class="calendar rounded shadow" data-date="next"></div>
                 </div>
                 <div class="col-6 sm-responsive">
-                    <b class="margin-5-b block">Show Defined Year and Month: 2012,1</b>
-                    <div class="calendar rounded" data-date="2012,1"></div>
+                    <b class="margin-5-b block">Show Defined Month: data-date="10"</b>
+                    <div class="calendar rounded shadow" data-date="10"></div>
+                </div>
+                <div class="col-6 sm-responsive">
+                    <b class="margin-5-b block">Show Defined Year and Month: data-date="2012,1"</b>
+                    <div class="calendar rounded shadow" data-date="2012,1"></div>
                 </div>
             </div>
 

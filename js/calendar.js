@@ -5,20 +5,23 @@
 
 var calendar = {
 
-    startDayofWeek: 1, // 0: Sunday, 1: Monday
-
     days: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
     months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
 
-    prevIcon: 'icon-angle-left',
-    nextIcon: 'icon-angle-right'
+    dateFormat : 'mm/dd/yyyy', // mm/dd/yyyy or dd/mm/yyyy
+    startDayofWeek: 1, // 0: Sunday, 1: Monday
+    
+    fillWeekends: true, // true: fills dark color to weekends' background
+
+    prevIcon: 'icon-angle-left', // header's previous button icon
+    nextIcon: 'icon-angle-right' // header's next button icon
 
 };
 
 (function () {
 
     'use strict';
-    /*globals document, selector, events,  navigator, ajax, DOMParser */
+    /*globals document, selector, events,  navigator, setTimeout, ajax, DOMParser */
 
     var checkCalendars;
 
@@ -52,67 +55,67 @@ var calendar = {
 
         createFnc = function (that, innerDate) {
 
-            var date, year, month, today, setDate, getDate, html, i, j, sysDays, activeDay, days, prevLastDay, firstDay, lastDay;
+            var date, today, getAttr, html, i, j, sysDays, activeDay, days, prevLastDay, firstDay, lastDay;
 
             date = new Date();
+            getAttr = that.getAttribute('data-date');
 
-            month = date.getMonth();
-            today = new Date().getFullYear() + ' ' + new Date().getMonth() + ' ' + date.getDate();
+            if (getAttr !== null && getAttr !== '') {
 
-            if (innerDate === undefined) {
-                setDate = that.getAttribute('data-date');
+                getAttr = getAttr.split(',');
+                if (getAttr.length === 1) { // set only month
 
-            } else { setDate = innerDate; }
+                    if (!isNaN(Number(getAttr[0])) && getAttr[0].length <= 2) {
 
-            if (setDate !== null && setDate !== '') {
-
-                if (setDate === 'prev') {
-                    date.setMonth(month - 1);
-
-                } else if (setDate === 'next') {
-                    date.setMonth(month + 1);
-
-                } else {
-
-                    getDate = setDate.split(',');
-                    if (getDate.length === 1) { // set only month
-
-                        if (!isNaN(Number(getDate[0])) && getDate[0].length <= 2) {
-
-                            if (getDate[0] === 0) { getDate[0] = 1; }
-                            date.setMonth(getDate[0] - 1);
-
-                        }
-
-                    } else if (getDate.length === 2) { // set year and month
-
-                        if (!isNaN(Number(getDate[0])) && getDate[0].length === 4) {
-                            if (!isNaN(Number(getDate[1])) && getDate[1].length <= 2) {
-
-                                date.setFullYear(getDate[0]);
-
-                                if (getDate[1] === '0') { getDate[1] = 1; }
-                                date.setMonth(getDate[1] - 1);
-
-                            }
-                        }
+                        if (getAttr[0] === 0) { getAttr[0] = 1; }
+                        date.setMonth(getAttr[0] - 1);
 
                     }
+
+                } else if (getAttr.length === 2) { // set year and month
+
+                    if (!isNaN(Number(getAttr[0])) && getAttr[0].length === 4) {
+                        if (!isNaN(Number(getAttr[1])) && getAttr[1].length <= 2) {
+
+                            date.setFullYear(getAttr[0]);
+
+                            if (getAttr[1] === '0') { getAttr[1] = 1; }
+                            date.setMonth(getAttr[1] - 1);
+
+                        }
+                    }
+
                 }
 
-                month = date.getMonth();
+                if (innerDate === undefined) {
+                    innerDate = getAttr.toString();
+                }
+
+                if (innerDate === 'prev') {
+                    date.setMonth(date.getMonth() - 1);
+
+                } else if (innerDate === 'next') {
+                    date.setMonth(date.getMonth() + 1);
+                }
 
             }
 
-            year = date.getFullYear();
+            that.setAttribute('data-date', date.getFullYear() + ',' + (date.getMonth() + 1));
 
-            html = '<table>' +
+            html = '<table class="';
+
+            if (calendar.fillWeekends) {
+                html += 'fill-weekends ';
+            }
+
+            html += 'ease-layout ease-slow ease-in-out">' +
                         '<caption>' +
                             '<button class="calendar-prev ease-btn">' +
                                 '<i class="icon icon-md ' + calendar.prevIcon + '"></i>' +
                             '</button>' +
-                            '<span class="calendar-title">' +
-                                '<b>' + calendar.months[month] + '</b> ' + year +
+                            '<span class="calendar-title ease-1st-btn">' +
+                                '<span class="calendar-month">' + calendar.months[date.getMonth()] + '</span>' +
+                                '<span class="calendar-year">' + date.getFullYear() + '</span>' +
                             '</span>' +
                             '<button class="calendar-next ease-btn">' +
                                 '<i class="icon icon-md ' + calendar.nextIcon + '"></i>' +
@@ -126,8 +129,7 @@ var calendar = {
 
             html += '<tbody>';
 
-            firstDay = new Date(year, month, 1);
-
+            firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
             if (calendar.startDayofWeek === 0) {
 
                 sysDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']; // don't update to your language
@@ -142,15 +144,17 @@ var calendar = {
 
             if (firstDay < 1) { firstDay = 7; }
 
-            prevLastDay = new Date(year, month, 0).getDate();
+            prevLastDay = new Date(date.getFullYear(), date.getMonth(), 0).getDate();
             days = prevLastDay - (firstDay - 1);
 
-            lastDay = new Date(year, (month + 1), 0).getDate();
+            lastDay = new Date(date.getFullYear(), (date.getMonth() + 1), 0).getDate();
+
             activeDay = false;
+            today = new Date().getFullYear() + ' ' + new Date().getMonth() + ' ' + date.getDate();
 
             for (i = 0; i < 6; i += 1) {
 
-                html += '<tr>';
+                html += '<tr class="ease-2nd-btn">';
 
                 for (j = 0; j < 7; j += 1) {
 
@@ -170,15 +174,15 @@ var calendar = {
 
                     if (activeDay) {
 
-                        if ((year + ' ' + month + ' ' + days) === today) {
-                            html += '<td class="today"><b>' + days + '</b><span></span></td>';
+                        if ((date.getFullYear() + ' ' + date.getMonth() + ' ' + days) === today) { // today
+                            html += '<td class="today"><button>' + days + '</button><span></span></td>';
 
-                        } else {
-                            html += '<td>' + days + '</td>';
+                        } else { // other days
+                            html += '<td><button>' + days + '</button></td>';
                         }
 
-                    } else {
-                        html += '<td class="passive">' + days + '</td>';
+                    } else { // passive days
+                        html += '<td class="passive"><span>' + days + '</span></td>';
                     }
 
                     days += 1;
@@ -203,7 +207,7 @@ var calendar = {
 
         checkCalendars = function () {
 
-            calendars = selector('.calendar');
+            calendars = selector('.calendar:not(.active)');
             if (calendars.length > 0) {
 
                 events.each(calendars, function () {
@@ -226,6 +230,31 @@ var calendar = {
             } else {
                 createFnc(that, 'prev');
             }
+
+        });
+
+        events.on(document, 'click', '.calendar-month,.calendar-year', function () {
+
+            var that, html;
+
+            that = events.closest(this, '.calendar')[0];
+            events.addClass(that, 'top-pane');
+
+            html = '<div class="pane ease-layout ease-slow ease-in-out">';
+
+            if (events.hasClass(this, 'calendar-month')) {
+                html += 'months';
+
+            } else {
+                html += 'years';
+            }
+
+            html += '</div>';
+            that.insertAdjacentHTML('afterbegin', html);
+
+            setTimeout(function () {
+                events.addClass(that, 'show-pane');
+            }, 10);
 
         });
 
