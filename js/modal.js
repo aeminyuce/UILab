@@ -202,7 +202,7 @@ var modal = {
 
                         modal.closeIcon = modal.closeIcon.replace(re, ' ').replace(rex, '');
 
-                        closeBtn = '<button class="close-modal ease-bg">' +
+                        closeBtn = '<button class="close-modal ease-btn">' +
                                         '<i class="' + modal.closeIcon + '"></i>' +
                                     '</button>';
 

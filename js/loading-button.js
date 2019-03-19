@@ -35,10 +35,10 @@ var loadingButton = {
                     styles = loadingButton.spinner;
                     styles = styles.replace(re, ' ').replace(rex, '');
 
-                    html = '<span class="loading-spinner ease-opacity">' +
+                    html = '<span class="loading-spinner ease-layout">' +
                             '<i class="' + styles + '"></i>' +
                         '</span>' +
-                        '<span class="loading-label ease-opacity">' + l[i].innerHTML + '</div>';
+                        '<span class="loading-label ease-layout">' + l[i].innerHTML + '</div>';
 
                     l[i].innerHTML = html;
                     events.addClass(l[i], 'loading');

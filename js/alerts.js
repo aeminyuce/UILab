@@ -123,7 +123,7 @@ var alerts = {
                 // create close icon
                 cancelCloseDialog = true;
 
-                closeIcon = alerts.closeIcon + ' ease-opacity';
+                closeIcon = alerts.closeIcon + ' ease-layout';
                 closeIcon = closeIcon.replace(re, ' ').replace(rex, '');
 
                 closeBtn = '<button class="close-alert ' + closeIcon + '"></button>';
@@ -140,13 +140,13 @@ var alerts = {
             html = '<div class="alerts-dialog ' + styles + '">' +
                         closeBtn +
                         '<div class="dialog-msg">' + set.msg + '</div>' +
-                        '<div class="dialog-buttons ease-1st-bg">' +
+                        '<div class="dialog-buttons ease-1st-btn">' +
                             buttons +
                         '</div>' +
                     '</div>';
 
             if (bg === undefined) {
-                html += '<div class="alerts-bg ease-opacity"></div>';
+                html += '<div class="alerts-bg ease-layout"></div>';
             }
 
             selector('body')[0].insertAdjacentHTML('beforeend', html);
