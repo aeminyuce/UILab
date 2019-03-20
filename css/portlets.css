@@ -1,6 +1,4 @@
 /* portlets */
-.ease-close-portlet { transition-property: transform, opacity; }
-
 .portlet,[class*="portlet-"] { background-color: #fff; display: block; position: relative; }
 .portlet:not(:last-child),[class*="portlet-"]:not(:last-child) { margin-bottom: 20px; }
 
