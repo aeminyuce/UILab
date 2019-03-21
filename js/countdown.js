@@ -14,68 +14,80 @@ var countdown = {};
 
     countdown.Start = function () {
 
-        var countdown, j, arr, d, h, m, s;
+        var countdown, arr, calc;
+
         countdown = selector('.countdown');
+        if (countdown.length === 0) { return; }
 
         arr = [];
-        for (j = 0; j < countdown.length; j += 1) { arr[j] = []; }
 
-        clearInterval(countdownTimer);
-        countdownTimer = setInterval(function () {
+        events.each(countdown, function (i) {
+
+            var
+                date = new Date(),
+
+                day = selector('.d', this)[0],
+                hour = selector('.h', this)[0],
+                minute = selector('.m', this)[0],
+                sec = selector('.s', this)[0];
+
+            if (day !== undefined) { date.setDate(date.getDate() + Number(day.textContent)); }
+            if (hour !== undefined) { date.setHours(date.getHours() + Number(hour.textContent)); }
+            if (minute !== undefined) { date.setMinutes(date.getMinutes() + Number(minute.textContent)); }
+            if (sec !== undefined) { date.setSeconds(date.getSeconds() + Number(sec.textContent)); }
+
+            arr[i] = date.getTime();
+
+        });
+
+        calc = function (ms) {
+
+            var
+                days = Math.floor(ms / (24 * 60 * 60 * 1000)),
+                daysMs = ms % (24 * 60 * 60 * 1000),
+
+                hours = Math.floor(daysMs / (60 * 60 * 1000)),
+                hoursMs = ms % (60 * 60 * 1000),
+
+                minutes = Math.floor(hoursMs / (60 * 1000)),
+                minutesMs = ms % (60 * 1000),
+
+                sec = Math.floor(minutesMs / 1000) + 1;
+
+            if (days < 0) { days = 0; }
+            if (hours < 0) { hours = 0; }
+            if (minutes < 0) { minutes = 0; }
+            if (sec < 0) { sec = 0; }
+
+            return days + ':' + hours + ':' + minutes + ':' + sec;
+
+        };
+
+        function drawFnc() {
 
             events.each(countdown, function (i) {
 
-                s = selector('.s', this)[0]; // second
-                if (s === undefined) { return; }
+                var
+                    dateLeft = calc(arr[i] - new Date()),
 
-                arr[i].s = parseInt(s.textContent, 10);
+                    day = selector('.d', this)[0],
+                    hour = selector('.h', this)[0],
+                    minute = selector('.m', this)[0],
+                    sec = selector('.s', this)[0];
 
-                if (arr[i].s <= 0) {
+                dateLeft = dateLeft.split(':');
 
-                    arr[i].s = 59;
-
-                    m = selector('.m', this)[0]; // minute
-                    if (m === undefined) { return; }
-
-                    arr[i].m = parseInt(m.textContent, 10);
-
-                    if (arr[i].m <= 0) {
-
-                        arr[i].m = 59;
-
-                        h = selector('.h', this)[0]; // hour
-                        if (h === undefined) { return; }
-
-                        arr[i].h = parseInt(h.textContent, 10);
-
-                        if (arr[i].h <= 0) {
-
-                            d = selector('.d', this)[0]; // day
-                            if (d === undefined) { return; }
-                            arr[i].d = parseInt(d.textContent, 10);
-
-                            if (arr[i].d <= 0) { arr[i].d = 0; return; }
-                            arr[i].d -= 1;
-                            d.textContent = arr[i].d;
-
-                            arr[i].h = 23;
-
-                        } else { arr[i].h -= 1; }
-                        h.textContent = arr[i].h;
-
-                    } else { arr[i].m -= 1; }
-
-                    if (arr[i].m.toString().length === 1) { arr[i].m = '0' + arr[i].m.toString(); }
-                    m.textContent = arr[i].m;
-
-                } else { arr[i].s -= 1; }
-
-                if (arr[i].s.toString().length === 1) { arr[i].s = '0' + arr[i].s.toString(); }
-                s.textContent = arr[i].s;
+                if (day !== undefined) { day.textContent = dateLeft[0]; }
+                if (hour !== undefined) { hour.textContent = dateLeft[1]; }
+                if (minute !== undefined) { minute.textContent = dateLeft[2]; }
+                if (sec !== undefined) { sec.textContent = dateLeft[3]; }
 
             });
 
-        }, 1000);
+        }
+
+        clearInterval(countdownTimer);
+        countdownTimer = setInterval(drawFnc, 1000);
 
     };
 
