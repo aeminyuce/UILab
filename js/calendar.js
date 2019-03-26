@@ -21,9 +21,12 @@ var calendar = {
 (function () {
 
     'use strict';
-    /*globals document, selector, events,  navigator, setTimeout, ajax, DOMParser */
+    /*globals window, document, selector, events,  navigator, setTimeout, clearTimeout, ajax, DOMParser */
 
-    var checkCalendars;
+    var
+        checkCalendars,
+
+        pickerOpenTimer;
 
     // parser
     function parser(text) {
@@ -358,7 +361,7 @@ var calendar = {
 
                 }
 
-            }, 10);
+            }, 20);
 
         });
 
@@ -386,6 +389,102 @@ var calendar = {
             setTimeout(function () {
                 that.removeChild(selector('.panel', that)[0]);
             }, 400);
+
+        });
+
+        // close picker
+        function pickerCloseFnc(form) {
+
+            var picker = selector('.calendar', form)[0];
+            if (picker === undefined) { return; }
+
+            events.removeClass(picker, 'open-ease');
+            setTimeout(function () {
+
+                form.removeChild(picker);
+                events.removeClass(form, 'picker-top');
+
+            }, 150);
+
+        }
+
+        // show picker
+        events.on(document, 'focus', '.text.calendar-picker > [type="text"]', function () {
+
+            var forms, val, form, offset, html, picker, formHeight, pickerHeight;
+
+            // close all other opened pickers
+            forms = selector('.calendar-picker');
+
+            events.each(forms, function () {
+                pickerCloseFnc(this);
+            });
+
+            // check value
+            if (this.value !== '') {
+
+                val = this.value.split('/');
+                if (val.length === 3) {
+                    console.log('value detected.');
+                }
+
+            }
+
+            // create picker
+            form = this.parentElement;
+            offset = form.getBoundingClientRect();
+
+            html = '<div class="calendar';
+
+            if (events.hasClass(form, 'rounded')) {
+                html += ' rounded';
+            }
+
+            html += ' ease-opacity"></div>';
+            form.insertAdjacentHTML('beforeend', html);
+
+            picker = selector('.calendar', form)[0];
+            createFnc(picker);
+
+            setTimeout(function () {
+
+                // check picker position
+                formHeight = form.offsetHeight;
+                pickerHeight = picker.offsetHeight;
+
+                if (offset.top + parseInt(formHeight + pickerHeight, 10) >= window.innerHeight) {
+
+                    if (offset.top - parseInt(formHeight + pickerHeight, 10) + formHeight > 0) {
+                        events.addClass(form, 'picker-top');
+                    }
+
+                }
+
+                // show picker
+                clearTimeout(pickerOpenTimer);
+
+                pickerOpenTimer = setTimeout(function () {
+                    events.addClass(picker, 'open-ease');
+                }, 10);
+
+            }, 0);
+
+            // close calendar picker
+            events.on(document, 'mousedown.pickerClose', function (ev) {
+
+                // prevent for picker elements
+                if (events.closest(ev.target, '.calendar-picker')[0] !== undefined) {
+                    return;
+                }
+
+                if (ev.button !== 2) {
+
+                    pickerCloseFnc(form);
+                    events.off(document, 'mousedown.pickerClose');
+
+                }
+
+            });
 
         });
 
