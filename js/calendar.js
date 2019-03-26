@@ -284,7 +284,7 @@ var calendar = {
         // change month and year with panel
         events.on(document, 'click', '.calendar-month,.calendar-year', function () {
 
-            var that, date, year, years, month, html, i, panelType, scrollPos;
+            var that, date, year, years, month, html, i, panelType, getList, getSelected, getIndex;
 
             date = new Date();
             that = events.closest(this, '.calendar')[0];
@@ -348,10 +348,13 @@ var calendar = {
                 // scroll to active year
                 if (panelType === 'year') {
 
-                    scrollPos = selector('.calendar .panel li button.selected')[0];
-                    scrollPos = scrollPos.getBoundingClientRect();
+                    getList = selector('.panel li button', that);
+                    getSelected = selector('.panel li button.selected', that)[0];
 
-                    selector('.panel', that)[0].scrollTo(0, scrollPos.y);
+                    getIndex = Math.floor(Array.prototype.slice.call(getList).indexOf(getSelected) / 12);
+                    selector('.panel', that)[0].scrollTop = (getIndex * (that.offsetHeight - 10)); // IE, EDGE: scrollTo() not supported for div element
+
+                    getList = '';
 
                 }
 
