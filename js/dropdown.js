@@ -82,7 +82,7 @@ var dropdown = {};
                     listStyles = list.style.length;
                     listWidth = list.offsetWidth;
 
-                    if (events.hasClass(parent, 'submenu-left') || (offset.left + listWidth + 15) > window.innerWidth) {
+                    if (events.hasClass(parent, 'submenu-left') || (offset.left + listWidth + 15) > window.innerWidth) { // 15px: scrollbar size
 
                         if ((offset.left - (listWidth - parent.offsetWidth) - 15) > 0) {
                             list.style.right = 0;
@@ -122,7 +122,7 @@ var dropdown = {};
                                 return;
                             }
 
-                            if (ev.button !== 2) {
+                            if (ev.button !== 2) { // inherited right clicks
 
                                 dropdownCloseFnc();
                                 events.off(document, 'click.dropdownClose');
