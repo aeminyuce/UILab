@@ -410,10 +410,30 @@ var calendar = {
 
         }
 
+        // check value
+        function checkValue(that) {
+
+            if (that.value !== '') {
+
+                var val = that.value.split('/');
+                if (val.length === 3 && val[0].length <= 2 && val[1].length <= 2 && val[2].length === 4) {
+
+                    if (!isNaN(val[0]) && !isNaN(val[1]) && !isNaN(val[2])) {
+                        return val[2] + ',' + val[1] + ',' + val[0];
+                    }
+
+                }
+
+                return '';
+
+            }
+
+        }
+
         // show picker
         events.on(document, 'focus', '.text.calendar-picker > [type="text"]', function () {
 
-            var forms, val, form, offset, html, picker, formHeight, pickerWidth, pickerHeight;
+            var forms, form, offset, html, picker, newDate, formHeight, pickerWidth, pickerHeight;
 
             // close all other opened pickers
             forms = selector('.calendar-picker');
@@ -421,16 +441,6 @@ var calendar = {
             events.each(forms, function () {
                 pickerCloseFnc(this);
             });
-
-            // check value
-            if (this.value !== '') {
-
-                val = this.value.split('/');
-                if (val.length === 3) {
-                    console.log('value detected.');
-                }
-
-            }
 
             // create picker
             form = this.parentElement;
@@ -445,7 +455,16 @@ var calendar = {
             form.insertAdjacentHTML('beforeend', html);
 
             picker = selector('.calendar', form)[0];
-            createFnc(picker);
+
+            // check value
+            newDate = checkValue(this);
+
+            if (newDate === '') {
+                createFnc(picker);
+
+            } else {
+                createFnc(picker, newDate);
+            }
 
             setTimeout(function () {
 
@@ -453,7 +472,6 @@ var calendar = {
                 offset = form.getBoundingClientRect();
 
                 formHeight = form.offsetHeight;
-
                 pickerWidth = picker.offsetWidth;
                 pickerHeight = picker.offsetHeight;
 
