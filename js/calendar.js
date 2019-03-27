@@ -26,7 +26,8 @@ var calendar = {
     var
         checkCalendars,
 
-        pickerOpenTimer;
+        pickerOpenTimer,
+        pickerCloseTimer;
 
     // parser
     function parser(text) {
@@ -148,14 +149,14 @@ var calendar = {
 
             html += '>' +
                         '<caption>' +
-                            '<button class="calendar-prev">' +
+                            '<button tabindex="-1" class="calendar-prev">' +
                                 '<i class="icon icon-md ' + calendar.prevIcon + '"></i>' +
                             '</button>' +
                             '<span class="calendar-title ease-bg">' +
-                                '<button class="calendar-month">' + calendar.months[date.getMonth()] + '</button>' +
-                                '<button class="calendar-year">' + date.getFullYear() + '</button>' +
+                                '<button tabindex="-1" class="calendar-month">' + calendar.months[date.getMonth()] + '</button>' +
+                                '<button tabindex="-1" class="calendar-year">' + date.getFullYear() + '</button>' +
                             '</span>' +
-                            '<button class="calendar-next">' +
+                            '<button tabindex="-1" class="calendar-next">' +
                                 '<i class="icon icon-md ' + calendar.nextIcon + '"></i>' +
                             '</button>' +
                         '</caption>' +
@@ -213,10 +214,10 @@ var calendar = {
                     if (activeDay) {
 
                         if ((date.getFullYear() + ' ' + date.getMonth() + ' ' + days) === today) { // today
-                            html += '<td class="today"><button>' + days + '</button><span></span></td>';
+                            html += '<td class="today"><button tabindex="-1">' + days + '</button><span></span></td>';
 
                         } else { // other days
-                            html += '<td><button>' + days + '</button></td>';
+                            html += '<td><button tabindex="-1">' + days + '</button></td>';
                         }
 
                     } else { // passive days
@@ -269,7 +270,6 @@ var calendar = {
         checkCalendars();
 
         // Events
-
         // calendar navigation
         events.on(document, 'click', '.calendar-prev,.calendar-next', function () {
 
@@ -308,7 +308,7 @@ var calendar = {
 
                 for (i = 1920; i <= years; i += 1) {
 
-                    html += '<li><button ';
+                    html += '<li><button tabindex="-1" ';
 
                     if (year === i) {
                         html += 'class="selected" ';
@@ -325,7 +325,7 @@ var calendar = {
                 month = calendar.months[date.getMonth()];
                 for (i = 0; i < calendar.months.length; i += 1) {
 
-                    html += '<li><button ';
+                    html += '<li><button tabindex="-1" ';
 
                     if (month === calendar.months[i]) {
                         html += 'class="selected" ';
@@ -399,10 +399,12 @@ var calendar = {
             if (picker === undefined) { return; }
 
             events.removeClass(picker, 'open-ease');
-            setTimeout(function () {
+
+            clearTimeout(pickerCloseTimer);
+            pickerCloseTimer = setTimeout(function () {
 
                 form.removeChild(picker);
-                events.removeClass(form, 'picker-top');
+                events.removeClass(form, 'picker-left picker-top');
 
             }, 150);
 
@@ -411,7 +413,7 @@ var calendar = {
         // show picker
         events.on(document, 'focus', '.text.calendar-picker > [type="text"]', function () {
 
-            var forms, val, form, offset, html, picker, formHeight, pickerHeight;
+            var forms, val, form, offset, html, picker, formHeight, pickerWidth, pickerHeight;
 
             // close all other opened pickers
             forms = selector('.calendar-picker');
@@ -432,7 +434,6 @@ var calendar = {
 
             // create picker
             form = this.parentElement;
-            offset = form.getBoundingClientRect();
 
             html = '<div class="calendar';
 
@@ -449,8 +450,20 @@ var calendar = {
             setTimeout(function () {
 
                 // check picker position
+                offset = form.getBoundingClientRect();
+
                 formHeight = form.offsetHeight;
+
+                pickerWidth = picker.offsetWidth;
                 pickerHeight = picker.offsetHeight;
+
+                if (offset.left + pickerWidth + 15 > window.innerWidth) { // 15px: scrollbar size
+
+                    if ((offset.left - (pickerWidth - form.offsetWidth) - 15) > 0) {
+                        events.addClass(form, 'picker-left');
+                    }
+
+                }
 
                 if (offset.top + parseInt(formHeight + pickerHeight, 10) >= window.innerHeight) {
 
@@ -469,7 +482,7 @@ var calendar = {
 
             }, 0);
 
-            // close calendar picker
+            // add close event
             events.on(document, 'mousedown.pickerClose', function (ev) {
 
                 // prevent for picker elements
@@ -477,7 +490,7 @@ var calendar = {
                     return;
                 }
 
-                if (ev.button !== 2) {
+                if (ev.button !== 2) { // inherited right clicks
 
                     pickerCloseFnc(form);
                     events.off(document, 'mousedown.pickerClose');
@@ -485,6 +498,14 @@ var calendar = {
                 }
 
             });
+
+        });
+
+        // close picker on blur
+        events.on(document, 'blur', '.text.calendar-picker > [type="text"]', function () {
+
+            pickerCloseFnc(this.parentElement);
+            events.off(document, 'mousedown.pickerClose');
 
         });
 
