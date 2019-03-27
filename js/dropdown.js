@@ -82,7 +82,7 @@ var dropdown = {};
                     listStyles = list.style.length;
                     listWidth = list.offsetWidth;
 
-                    if (events.hasClass(parent, 'submenu-left') || (offset.left + list.style.offsetWidth + 15) > window.innerWidth) {
+                    if (events.hasClass(parent, 'submenu-left') || (offset.left + listWidth + 15) > window.innerWidth) {
 
                         if ((offset.left - (listWidth - parent.offsetWidth) - 15) > 0) {
                             list.style.right = 0;
