@@ -21,13 +21,9 @@ var calendar = {
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events,  navigator, setTimeout, clearTimeout, ajax, DOMParser */
+    /*globals window, document, selector, events,  navigator, setTimeout, ajax, DOMParser */
 
-    var
-        checkCalendars,
-
-        pickerOpenTimer,
-        pickerCloseTimer;
+    var checkCalendars;
 
     // parser
     function parser(text) {
@@ -104,17 +100,52 @@ var calendar = {
 
         }
 
-        // create calendar table
-        function createFnc(that, newDate) {
+        // check calendar-picker value
+        function checkPickerVal(that) {
 
-            var date, today, container, html, i, j, sysDays, activeDay, days, prevLastDay, firstDay, lastDay;
+            if (that.value !== '') {
+
+                var val = that.value.split('/');
+                if (val.length === 3 && val[0].length <= 2 && val[1].length <= 2 && val[2].length === 4) {
+
+                    if (!isNaN(val[0]) && !isNaN(val[1]) && !isNaN(val[2])) {
+                        return val[2] + ',' + val[1] + ',' + val[0];
+                    }
+
+                }
+
+                return '';
+
+            }
+
+        }
+
+        // create calendar table
+        function createFnc(that, newDate, picker) {
+
+            var date, today, pickerDate, newDay, container, html, i, j, sysDays, activeDay, days, prevLastDay, firstDay, lastDay;
 
             date = new Date();
+            newDay = '';
 
             // set new date
             if (newDate !== undefined) {
 
                 if (newDate === 'prev' || newDate === 'next') {
+
+                    if (picker) { // called from calendar-picker
+
+                        // check value
+                        pickerDate = checkPickerVal(picker);
+                        if (pickerDate !== undefined) {
+
+                            pickerDate = pickerDate.split(',');
+                            newDay = pickerDate[2];
+
+                        }
+
+                    }
+
                     getAttr(that, date, newDate); // get data-date
 
                 } else {
@@ -123,6 +154,8 @@ var calendar = {
 
                     date.setFullYear(newDate[0]);
                     date.setMonth(newDate[1]);
+
+                    if (newDate[2] !== undefined) { newDay = newDate[2]; } // defined a new day from calendar-picker
 
                 }
 
@@ -213,8 +246,8 @@ var calendar = {
 
                     if (activeDay) {
 
-                        if ((date.getFullYear() + ' ' + date.getMonth() + ' ' + days) === today) { // today
-                            html += '<td class="today"><button tabindex="-1">' + days + '</button><span></span></td>';
+                        if ((newDay !== '' && (Number(newDay) === days)) || ((date.getFullYear() + ' ' + date.getMonth() + ' ' + days) === today)) { // new defined day or today
+                            html += '<td class="activeday"><button tabindex="-1">' + days + '</button></td>';
 
                         } else { // other days
                             html += '<td><button tabindex="-1">' + days + '</button></td>';
@@ -273,13 +306,35 @@ var calendar = {
         // calendar navigation
         events.on(document, 'click', '.calendar-prev,.calendar-next', function () {
 
-            var that = events.closest(this, '.calendar')[0];
+            var that, picker, form;
+
+            that = events.closest(this, '.calendar')[0];
+            picker = events.closest(that, '.calendar-picker')[0]; // check called from calendar-picker
 
             if (events.hasClass(this, 'calendar-next')) {
-                createFnc(that, 'next');
+
+                if (picker === undefined) {
+                    createFnc(that, 'next');
+
+                } else { // calendar-picker
+
+                    form = selector('[type="text"]', picker)[0];
+                    createFnc(that, 'next', form);
+
+                }
 
             } else {
-                createFnc(that, 'prev');
+
+                if (picker === undefined) {
+                    createFnc(that, 'prev');
+
+                } else { // calendar-picker
+
+                    form = selector('[type="text"]', picker)[0];
+                    createFnc(that, 'prev', form);
+
+                }
+
             }
 
         });
@@ -393,58 +448,71 @@ var calendar = {
         });
 
         // close picker
-        function pickerCloseFnc(form) {
+        function pickerCloseFnc(type) {
 
-            var picker = selector('.calendar', form)[0];
-            if (picker === undefined) { return; }
+            var allPickers = selector('.calendar-picker .calendar');
 
-            events.removeClass(picker, 'open-ease');
-
-            clearTimeout(pickerCloseTimer);
-            pickerCloseTimer = setTimeout(function () {
+            function removePicker(form, picker) {
 
                 form.removeChild(picker);
                 events.removeClass(form, 'picker-left picker-top');
 
-            }, 150);
+            }
 
-        }
+            if (type === 'keydown') { // when the user holds the tab button continuously
 
-        // check value
-        function checkValue(that) {
+                events.each(allPickers, function (i) {
 
-            if (that.value !== '') {
+                    events.removeClass(this, 'open-ease');
+                    setTimeout(function () {
 
-                var val = that.value.split('/');
-                if (val.length === 3 && val[0].length <= 2 && val[1].length <= 2 && val[2].length === 4) {
+                        var that, form;
 
-                    if (!isNaN(val[0]) && !isNaN(val[1]) && !isNaN(val[2])) {
-                        return val[2] + ',' + val[1] + ',' + val[0];
-                    }
+                        that = selector('.calendar-picker .calendar')[i];
+                        if (that === undefined) { return; }
 
-                }
+                        form = that.parentElement;
+                        removePicker(form, that);
 
-                return '';
+                    }, 150);
+
+                });
+
+            } else {
+
+                events.each(allPickers, function () {
+
+                    var that, form;
+
+                    that = this;
+                    form = that.parentElement;
+
+                    events.removeClass(that, 'open-ease');
+
+                    setTimeout(function () {
+                        removePicker(form, that);
+                    }, 150);
+
+                });
 
             }
 
         }
 
         // show picker
-        events.on(document, 'focus', '.text.calendar-picker > [type="text"]', function () {
+        events.on(document, 'focus', '.calendar-picker > [type="text"]', function () {
 
-            var forms, form, offset, html, picker, newDate, formHeight, pickerWidth, pickerHeight;
+            var form, offset, html, picker, newDate, formHeight, pickerWidth, pickerHeight;
 
-            // close all other opened pickers
-            forms = selector('.calendar-picker');
+            // check duplicate
+            form = this.parentElement;
+            if (selector('.calendar', form).length > 0) { return; }
 
-            events.each(forms, function () {
-                pickerCloseFnc(this);
-            });
+            // remove close events
+            events.off('body', 'mousedown.pickerClose');
+            events.off('.calendar-picker > [type="text"]', 'keydown.pickerClose');
 
             // create picker
-            form = this.parentElement;
-
             html = '<div class="calendar';
 
             if (events.hasClass(form, 'rounded')) {
@@ -457,7 +525,7 @@ var calendar = {
             picker = selector('.calendar', form)[0];
 
             // check value
-            newDate = checkValue(this);
+            newDate = checkPickerVal(this);
 
             if (newDate === '') {
                 createFnc(picker);
@@ -492,38 +560,45 @@ var calendar = {
                 }
 
                 // show picker
-                clearTimeout(pickerOpenTimer);
-
-                pickerOpenTimer = setTimeout(function () {
+                setTimeout(function () {
                     events.addClass(picker, 'open-ease');
                 }, 10);
 
             }, 0);
 
-            // add close event
-            events.on(document, 'mousedown.pickerClose', function (ev) {
+            // add close events
+            events.on('body', 'mousedown.pickerClose', function (ev) {
 
                 // prevent for picker elements
-                if (events.closest(ev.target, '.calendar-picker')[0] !== undefined) {
+                if (events.closest(ev.target, form)[0] !== undefined) {
                     return;
                 }
 
                 if (ev.button !== 2) { // inherited right clicks
 
-                    pickerCloseFnc(form);
-                    events.off(document, 'mousedown.pickerClose');
+                    pickerCloseFnc();
+
+                    // remove close events
+                    events.off('body', 'mousedown.pickerClose');
+                    events.off('.calendar-picker > [type="text"]', 'keydown.pickerClose');
 
                 }
 
             });
 
-        });
+            events.on(this, 'keydown.pickerClose', function (ev) {
 
-        // close picker on blur
-        events.on(document, 'blur', '.text.calendar-picker > [type="text"]', function () {
+                if (ev.keyCode === 9) { // TAB button
 
-            pickerCloseFnc(this.parentElement);
-            events.off(document, 'mousedown.pickerClose');
+                    pickerCloseFnc(ev.type);
+
+                    // remove close events
+                    events.off('body', 'mousedown.pickerClose');
+                    events.off('.calendar-picker > [type="text"]', 'keydown.pickerClose');
+
+                }
+
+            });
 
         });
 
