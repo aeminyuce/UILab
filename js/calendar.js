@@ -62,7 +62,7 @@ var calendar = {
 
                     if (!isNaN(Number(attr[0])) && attr[0].length <= 2) {
 
-                        if (attr[0] === 0) { attr[0] = 1; }
+                        if (attr[0] === '0') { attr[0] = 1; }
                         date.setMonth(attr[0] - 1);
 
                     }
@@ -109,7 +109,7 @@ var calendar = {
                 if (val.length === 3 && val[0].length <= 2 && val[1].length <= 2 && val[2].length === 4) {
 
                     if (!isNaN(val[0]) && !isNaN(val[1]) && !isNaN(val[2])) {
-                        return val[2] + ',' + val[1] + ',' + val[0];
+                        return Number(val[2]) + ',' + Number(val[1] - 1) + ',' + Number(val[0]);
                     }
 
                 }
@@ -123,27 +123,21 @@ var calendar = {
         // create calendar table
         function createFnc(that, newDate, picker) {
 
-            var date, today, pickerDate, newDay, container, html, i, j, sysDays, activeDay, days, prevLastDay, firstDay, lastDay;
+            var date, today, pickerDay, container, html, i, j, sysDays, activeDay, days, prevLastDay, firstDay, lastDay;
 
             date = new Date();
-            newDay = '';
+            date.setDate(1); // for the prev and next implementations
+
+            pickerDay = '';
 
             // set new date
             if (newDate !== undefined) {
 
                 if (newDate === 'prev' || newDate === 'next') {
 
+
                     if (picker) { // called from calendar-picker
-
-                        // check value
-                        pickerDate = checkPickerVal(picker);
-                        if (pickerDate !== undefined) {
-
-                            pickerDate = pickerDate.split(',');
-                            newDay = pickerDate[2];
-
-                        }
-
+                        pickerDay = checkPickerVal(picker); // check value
                     }
 
                     getAttr(that, date, newDate); // get data-date
@@ -155,7 +149,9 @@ var calendar = {
                     date.setFullYear(newDate[0]);
                     date.setMonth(newDate[1]);
 
-                    if (newDate[2] !== undefined) { newDay = newDate[2]; } // defined a new day from calendar-picker
+                    if (newDate[2] !== undefined) { // defined a new day from calendar-picker
+                        pickerDay = Number(newDate[0]) + ',' +  Number(newDate[1]) + ',' + Number(newDate[2]);
+                    }
 
                 }
 
@@ -222,7 +218,7 @@ var calendar = {
             lastDay = new Date(date.getFullYear(), (date.getMonth() + 1), 0).getDate();
 
             activeDay = false;
-            today = new Date().getFullYear() + ' ' + new Date().getMonth() + ' ' + date.getDate();
+            today = new Date().getFullYear() + ' ' + new Date().getMonth() + ' ' + new Date().getDate();
 
             for (i = 0; i < 6; i += 1) {
 
@@ -246,11 +242,24 @@ var calendar = {
 
                     if (activeDay) {
 
-                        if ((newDay !== '' && (Number(newDay) === days)) || ((date.getFullYear() + ' ' + date.getMonth() + ' ' + days) === today)) { // new defined day or today
-                            html += '<td class="activeday"><button tabindex="-1">' + days + '</button></td>';
+                        if (date.getFullYear() + ' ' + date.getMonth() + ' ' + days === today) { // today
+                            html += '<td class="today"><button tabindex="-1">' + days + '</button></td>';
 
                         } else { // other days
-                            html += '<td><button tabindex="-1">' + days + '</button></td>';
+
+                            if (pickerDay !== '') { // defined a new day from calendar-picker
+
+                                if (date.getFullYear() + ',' + date.getMonth() + ',' + days === pickerDay) {
+                                    html += '<td class="pickerday"><button tabindex="-1">' + days + '</button></td>';
+
+                                } else {
+                                    html += '<td><button tabindex="-1">' + days + '</button></td>';
+                                }
+
+                            } else {
+                                html += '<td><button tabindex="-1">' + days + '</button></td>';
+                            }
+
                         }
 
                     } else { // passive days

@@ -52,13 +52,13 @@ html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) caption .calendar-titl
 .calendar td button { width: 100%; background: transparent; padding: 8px; display: block; border: 0; }
 .calendar.rounded td button { border-radius: 6px; }
 
-.calendar td.activeday button { font-weight: bold; background-color: rgba(255,255,255,.225); }
-html:not(.mobile) .calendar td.activeday button:hover { background-color: rgba(255,255,255,.3); }
-.calendar:not(.ui-dark):not(.ui-x-dark) td.activeday button { background-color: rgba(0,0,0,.125); }
-html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) td.activeday button:hover { background-color: rgba(0,0,0,.2); }
+.calendar td.today button,.calendar td.pickerday button { font-weight: bold; background-color: rgba(255,255,255,.225); }
+html:not(.mobile) .calendar td.today button:hover,html:not(.mobile) .calendar td.pickerday button:hover { background-color: rgba(255,255,255,.3); }
+.calendar:not(.ui-dark):not(.ui-x-dark) td.today button,.calendar:not(.ui-dark):not(.ui-x-dark) td.pickerday button { background-color: rgba(0,0,0,.125); }
+html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) td.today button:hover,html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) td.pickerday button:hover { background-color: rgba(0,0,0,.2); }
 
-html:not(.mobile) .calendar td:not(.activeday) button:hover { background-color: rgba(255,255,255,.125); }
-html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) td:not(.activeday) button:hover { background-color: rgba(0,0,0,.075); }
+html:not(.mobile) .calendar td:not(.today):not(.pickerday) button:hover { background-color: rgba(255,255,255,.125); }
+html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) td:not(.today):not(.pickerday) button:hover { background-color: rgba(0,0,0,.075); }
 
 .calendar td.passive span { line-height: 20px; padding: 8px; display: block; }
 
