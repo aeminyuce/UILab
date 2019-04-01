@@ -7,7 +7,7 @@
 input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .btn.bordered { padding-top: 5px; padding-bottom: 5px; }
 .btn.dual-bordered { padding-top: 4px; padding-bottom: 4px; }
-.btn-square { width: 32px; padding-left: 0 !important; padding-right: 0 !important; }
+.btn-square { width: 32px; }
 .btn:not(.btn-passive) { cursor: pointer; }
 .btn:not([class*="bordered"]) { border-width: 0; }
 .btn:not(.btn-multitext) { white-space: nowrap; }
@@ -77,6 +77,15 @@ html:not(.mobile) .btn.btn-invisible:not(.no-hover):not([class*="ui-"]):not(.btn
 .btn .loading-label { position: relative; z-index: 2; }
 .btn.loading .loading-label { opacity: .3 !important; }
 
+@media (min-width: 768px) {
+    .btn-square { padding-left: 0 !important; padding-right: 0 !important; }
+}
+@media (max-width: 767px) {
+    .btn-sm-responsive { width: 100% !important; display: block; }
+    .btn-sm-responsive:not(:last-child) { margin-bottom: 10px; }
+
+    .btn-square:not(.btn-responsive):not(.btn-sm-responsive) { padding-left: 0 !important; padding-right: 0 !important; }
+}
 @media (max-width: 480px) {
     .btn-responsive { width: 100% !important; display: block; }
     .btn-responsive:not(:last-child) { margin-bottom: 10px; }
