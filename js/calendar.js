@@ -184,14 +184,14 @@ var calendar = {
 
             html += '>' +
                         '<caption>' +
-                            '<button tabindex="-1" class="calendar-prev">' +
+                            '<button type="button" tabindex="-1" class="calendar-prev">' +
                                 '<i class="icon icon-md ' + calendar.prevIcon + '"></i>' +
                             '</button>' +
                             '<span class="calendar-title ease-bg">' +
-                                '<button tabindex="-1" class="calendar-month">' + calendar.months[date.getMonth()] + '</button>' +
-                                '<button tabindex="-1" class="calendar-year">' + date.getFullYear() + '</button>' +
+                                '<button type="button" tabindex="-1" class="calendar-month">' + calendar.months[date.getMonth()] + '</button>' +
+                                '<button type="button" tabindex="-1" class="calendar-year">' + date.getFullYear() + '</button>' +
                             '</span>' +
-                            '<button tabindex="-1" class="calendar-next">' +
+                            '<button type="button" tabindex="-1" class="calendar-next">' +
                                 '<i class="icon icon-md ' + calendar.nextIcon + '"></i>' +
                             '</button>' +
                         '</caption>' +
@@ -249,21 +249,21 @@ var calendar = {
                     if (activeDay) {
 
                         if (date.getFullYear() + ' ' + date.getMonth() + ' ' + days === today) { // today
-                            html += '<td class="today"><button tabindex="-1">' + days + '</button></td>';
+                            html += '<td class="today"><button type="button" tabindex="-1">' + days + '</button></td>';
 
                         } else { // other days
 
                             if (pickerDay !== '') { // defined a new day from calendar-picker
 
                                 if (date.getFullYear() + ',' + date.getMonth() + ',' + days === pickerDay) {
-                                    html += '<td class="pickerday"><button tabindex="-1">' + days + '</button></td>';
+                                    html += '<td class="pickerday"><button type="button" tabindex="-1">' + days + '</button></td>';
 
                                 } else {
-                                    html += '<td><button tabindex="-1">' + days + '</button></td>';
+                                    html += '<td><button type="button" tabindex="-1">' + days + '</button></td>';
                                 }
 
                             } else {
-                                html += '<td><button tabindex="-1">' + days + '</button></td>';
+                                html += '<td><button type="button" tabindex="-1">' + days + '</button></td>';
                             }
 
                         }
@@ -378,7 +378,7 @@ var calendar = {
 
                 for (i = 1920; i <= years; i += 1) {
 
-                    html += '<li><button tabindex="-1" ';
+                    html += '<li><button type="button" tabindex="-1" ';
 
                     if (year === i) {
                         html += 'class="selected" ';
@@ -395,7 +395,7 @@ var calendar = {
                 month = calendar.months[date.getMonth()];
                 for (i = 0; i < calendar.months.length; i += 1) {
 
-                    html += '<li><button tabindex="-1" ';
+                    html += '<li><button type="button" tabindex="-1" ';
 
                     if (month === calendar.months[i]) {
                         html += 'class="selected" ';
