@@ -1,4 +1,6 @@
 /* calendar */
+.ease-calendar { transition-property: opacity; }
+
 .ease-calendar button { transition-property: background-color; transition-duration: .15s; }
 .no-transitions-all .ease-calendar button { transition-property: none !important; }
 

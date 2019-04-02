@@ -8,7 +8,7 @@ var calendar = {
     days: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
     months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
 
-    dateFormat : 1, // 1: mm/dd/yyyy, 0: dd/mm/yyyy
+    dateFormat : 1, // 0: dd/mm/yyyy, 1: mm/dd/yyyy
     startDayofWeek: 1, // 0: Sunday, 1: Monday
 
     fillWeekends: true, // true: fills dark color to weekends' background
@@ -100,8 +100,8 @@ var calendar = {
 
         }
 
-        // check calendar-picker value
-        function checkPickerVal(that) {
+        // get calendar-picker value
+        function pickerVal(that) {
 
             if (that.value !== '') {
 
@@ -109,7 +109,13 @@ var calendar = {
                 if (val.length === 3 && val[0].length <= 2 && val[1].length <= 2 && val[2].length === 4) {
 
                     if (!isNaN(val[0]) && !isNaN(val[1]) && !isNaN(val[2])) {
-                        return Number(val[2]) + ',' + Number(val[1] - 1) + ',' + Number(val[0]);
+
+                        if (calendar.dateFormat === 1) {
+                            return Number(val[2]) + ',' + Number(val[0] - 1) + ',' + Number(val[1]); // mm/dd/yyyy
+                        }
+
+                        return Number(val[2]) + ',' + Number(val[1] - 1) + ',' + Number(val[0]); // dd/mm/yyyy
+
                     }
 
                 }
@@ -137,7 +143,7 @@ var calendar = {
 
 
                     if (picker) { // called from calendar-picker
-                        pickerDay = checkPickerVal(picker); // check value
+                        pickerDay = pickerVal(picker); // check value
                     }
 
                     getAttr(that, date, newDate); // get data-date
@@ -457,7 +463,7 @@ var calendar = {
         });
 
         // close picker
-        function pickerCloseFnc(type) {
+        function pickerCloseFnc(type, target) {
 
             var allPickers = selector('.calendar-picker .calendar');
 
@@ -468,7 +474,7 @@ var calendar = {
 
             }
 
-            if (type === 'keydown') { // when the user holds the tab button continuously
+            if (type === 'continuous') { // when the user holds the tab button continuously
 
                 events.each(allPickers, function (i) {
 
@@ -506,20 +512,26 @@ var calendar = {
 
             }
 
+            // remove events
+            events.off('body', 'mousedown.pickerClose');
+            events.off(target, 'keydown.pickerClose keyup.pickerChange');
+
         }
 
         // show picker
         events.on(document, 'focus', '.calendar-picker > [type="text"]', function () {
 
-            var form, offset, html, picker, newDate, formHeight, pickerWidth, pickerHeight;
+            var that, form, offset, html, picker, inputDate, formHeight, pickerWidth, pickerHeight;
+
+            that = this;
 
             // check duplicate
-            form = this.parentElement;
+            form = that.parentElement;
             if (selector('.calendar', form).length > 0) { return; }
 
-            // remove close events
+            // remove events
             events.off('body', 'mousedown.pickerClose');
-            events.off('.calendar-picker > [type="text"]', 'keydown.pickerClose');
+            events.off(that, 'keydown.pickerClose keyup.pickerChange');
 
             // create picker
             html = '<div class="calendar';
@@ -528,19 +540,19 @@ var calendar = {
                 html += ' rounded';
             }
 
-            html += ' ease-opacity"></div>';
+            html += ' ease-calendar"></div>';
             form.insertAdjacentHTML('beforeend', html);
 
             picker = selector('.calendar', form)[0];
 
             // check value
-            newDate = checkPickerVal(this);
+            inputDate = pickerVal(that);
 
-            if (newDate === '') {
+            if (inputDate === '') {
                 createFnc(picker);
 
             } else {
-                createFnc(picker, newDate);
+                createFnc(picker, inputDate);
             }
 
             setTimeout(function () {
@@ -575,7 +587,7 @@ var calendar = {
 
             }, 0);
 
-            // add close events
+            // close events
             events.on('body', 'mousedown.pickerClose', function (ev) {
 
                 // prevent for picker elements
@@ -584,30 +596,69 @@ var calendar = {
                 }
 
                 if (ev.button !== 2) { // inherited right clicks
-
-                    pickerCloseFnc();
-
-                    // remove close events
-                    events.off('body', 'mousedown.pickerClose');
-                    events.off('.calendar-picker > [type="text"]', 'keydown.pickerClose');
-
+                    pickerCloseFnc('default', that);
                 }
 
             });
 
-            events.on(this, 'keydown.pickerClose', function (ev) {
+            events.on(that, 'keydown.pickerClose', function (ev) {
 
-                if (ev.keyCode === 9) { // TAB button
-
-                    pickerCloseFnc(ev.type);
-
-                    // remove close events
-                    events.off('body', 'mousedown.pickerClose');
-                    events.off('.calendar-picker > [type="text"]', 'keydown.pickerClose');
-
+                if (ev.keyCode === 9 || ev.keyCode === 13 || ev.keyCode === 27) { // Tab || Enter || Esc
+                    pickerCloseFnc('continuous', that);
                 }
 
             });
+
+            // change event
+            events.on(that, 'keyup.pickerChange', function () {
+
+                inputDate = pickerVal(this); // check value
+
+                if (inputDate === '') {
+                    createFnc(picker);
+
+                } else {
+                    createFnc(picker, inputDate);
+                }
+
+            });
+
+        });
+
+        // picker buttons
+        events.on(document, 'click', '.calendar-picker .calendar td button', function () {
+
+            var date, day, month, picker, that, form;
+
+            date = new Date();
+
+            picker = events.closest(this, '.calendar-picker')[0];
+
+            that = selector('.calendar', picker)[0];
+            form = selector('[type="text"]', picker)[0];
+
+            getAttr(that, date); // get data-date
+            date.setDate(this.textContent); // set new day
+
+            // set values to input form
+            day = date.getDate().toString();
+            if (day.length === 1) { day = '0' + day; }
+
+            month = date.getMonth();
+            month += 1;
+
+            month = month.toString();
+            if (month.length === 1) { month = '0' + month; }
+
+            if (calendar.dateFormat === 1) {
+                form.value = month + '/' + day + '/' + date.getFullYear(); // mm/dd/yyyy
+
+            } else {
+                form.value = day + '/' + month + '/' + date.getFullYear(); // dd/mm/yyyy
+            }
+
+            // close picker
+            pickerCloseFnc('default', form);
 
         });
 
