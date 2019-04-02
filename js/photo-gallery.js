@@ -296,8 +296,7 @@ var photoGallery = {
 
                 }, 150);
 
-                events.off('body', 'keydown.previewClose');
-                events.off('body', 'keydown.previewNav');
+                events.off('body', 'keydown.previewClose keydown.previewNav');
 
             }
 
