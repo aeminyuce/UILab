@@ -83,10 +83,12 @@ html:not(.mobile) .btn.btn-invisible:not(.no-hover):not([class*="ui-"]):not(.btn
 @media (max-width: 767px) {
     .btn-sm-responsive { width: 100% !important; display: block; }
     .btn-sm-responsive:not(:last-child) { margin-bottom: 10px; }
+    .mobile-menu .btn-sm-responsive:not(:last-child) { margin-bottom: 2px; }
 
     .btn-square:not(.btn-responsive):not(.btn-sm-responsive) { padding-left: 0 !important; padding-right: 0 !important; }
 }
 @media (max-width: 480px) {
     .btn-responsive { width: 100% !important; display: block; }
     .btn-responsive:not(:last-child) { margin-bottom: 10px; }
+    .mobile-menu .btn-responsive:not(:last-child) { margin-bottom: 2px; }
 }
