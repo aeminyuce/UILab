@@ -5,8 +5,8 @@
 
 var mobileMenu = {
 
-    visibleLeft: 'md', // 'xs', 'sm', 'md'
-    visibleRight: 'md' // 'xs', 'sm', 'md'
+    visibleLeft: 'md', // 'xs', 'sm', 'md', 'lg'
+    visibleRight: 'md' // 'xs', 'sm', 'md', 'lg'
 
 };
 
@@ -59,8 +59,8 @@ var mobileMenu = {
 
     }
 
-    //visibleArr = [{'xs': 481}, {'sm': 768}, {'md': 960}];
-    visibleArr = ['xs', 'sm', 'md'];
+    //visibleArr = [{'xs': 481}, {'sm': 768}, {'md': 960}, {'md': 1200}];
+    visibleArr = ['xs', 'sm', 'md', 'lg'];
 
     function checkScreen() {
 
@@ -70,7 +70,10 @@ var mobileMenu = {
 
         screenLimits = function () {
 
-            if (mobileMenu.visibleLeft === 'md') {
+            if (mobileMenu.visibleLeft === 'lg') {
+                max = 1200;
+
+            } else if (mobileMenu.visibleLeft === 'md') {
                 max = 960;
 
             } else if (mobileMenu.visibleLeft === 'sm') {
