@@ -12,11 +12,16 @@ var carousel = {};
 
     var
         cols = [],
+        colsTablet = [],
         colsMobile = [],
+
         counts = [],
+
         loadingImgs = [],
         loadedImgs = [],
+
         contentsEase = [],
+
         autoSlider = [],
         autoTimer = [],
         autoTimeouts = [];
@@ -24,10 +29,10 @@ var carousel = {};
     function carouselAnimate(content, time, wait) {
 
         var animates, i = 0;
-        animates = selector('.carousel-animate:not(.show)', content);
+        animates = selector('.carousel-animate', content);
 
         if (animates.length === 0) { return; }
-
+        events.removeClass(animates, 'show');
 
         setTimeout(function () { // wait for dom loading or slider ease time
 
@@ -51,8 +56,7 @@ var carousel = {};
 
     function carouselLazyImages(that, col, i, ev) {
 
-        var images;
-        images = selector('.content img.img[data-src]', that);
+        var images = selector('.content img.img[data-src]', that);
 
         if (images.length > 0) {
 
@@ -62,13 +66,13 @@ var carousel = {};
             events.each(images, function (l) {
 
                 if (ev === undefined && l >= col) { return; } // control col length
+
                 loadedImgs[i][l] = this;
 
                 loadingImgs[i][l] = new Image();
                 loadingImgs[i][l].src = loadedImgs[i][l].getAttribute('data-src');
 
                 loadedImgs[i][l].removeAttribute('data-src');
-
                 loadingImgs[i][l].addEventListener('load', function () {
 
                     loadedImgs[i][l].src = loadingImgs[i][l].src;
@@ -87,7 +91,7 @@ var carousel = {};
 
     function carouselResizerFnc(i, that) {
 
-        var col, j, k, slider, contents, animate, navDots, navDotsEl, navDotsLength, navDotsSize, navDotsHtml, navSides;
+        var col, j, k, slider, contents, animate, navDots, navDotsEl, navDotsLength, navDotsSize, navDotsHtml, navSides, navSide;
 
         if (that === undefined) {
 
@@ -103,18 +107,17 @@ var carousel = {};
 
             navDotsLength = selector('i', navDots).length;
 
-            if (window.innerWidth > 767) {
-
+            if (window.innerWidth > 959) {
                 col = cols[i];
-                navSides = Math.ceil(contents.length / cols[i]);
+
+            } else if (window.innerWidth > 767 && window.innerWidth < 960) {
+                col = colsTablet[i];
 
             } else {
-
                 col = colsMobile[i];
-                navSides = Math.ceil(contents.length / colsMobile[i]);
-
             }
 
+            navSides = Math.ceil(contents.length / col);
             navDotsSize = (navSides - navDotsLength);
             navDotsHtml = '';
 
@@ -153,17 +156,19 @@ var carousel = {};
 
             that[i].setAttribute('data-content', (counts[i] + 1));
 
+            navSide = Math.round(counts[i] * navSides / contents.length);
+
             events.removeClass(navDotsEl, 'selected');
-            events.addClass(navDotsEl[counts[i]], 'selected');
+            events.addClass(navDotsEl[navSide], 'selected');
 
             slider = selector('.carousel-slider', that[i]);
 
             // detecting ie9
             if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
-                slider[0].style.marginLeft = '-' + (counts[i] * that[i].offsetWidth) + 'px';
+                slider[0].style.marginLeft = '-' + (counts[i] * contents[i].offsetWidth) + 'px';
 
             } else {
-                slider[0].style.transform = 'translateX(-' + (counts[i] * that[i].offsetWidth) + 'px)';
+                slider[0].style.transform = 'translateX(-' + (counts[i] * contents[i].offsetWidth) + 'px)';
             }
 
             for (j = 0; j < slider.length; j += 1) {
@@ -198,7 +203,7 @@ var carousel = {};
 
             carouselNav = function (that, direction) {
 
-                var col, slider, contents, animate, i, max, navDots;
+                var col, slider, contents, animate, i, navDots, navSide;
 
                 navDots = selector('.carousel-nav .dots i', that);
 
@@ -207,20 +212,20 @@ var carousel = {};
 
                 i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
 
-                if (window.innerWidth > 767) {
+                if (window.innerWidth > 959) {
                     col = cols[i];
+
+                } else if (window.innerWidth > 767 && window.innerWidth < 960) {
+                    col = colsTablet[i];
 
                 } else {
                     col = colsMobile[i];
                 }
 
-                col = Number(col);
-                max = Math.ceil(contents.length / col) - 1;
-
                 if (direction === 'next') {
 
                     counts[i] += 1;
-                    if (counts[i] > max) { counts[i] = 0; }
+                    if (counts[i] > contents.length - col) { counts[i] = 0; }
 
                 } else if (direction === 'prev') {
 
@@ -279,15 +284,17 @@ var carousel = {};
 
                 that.setAttribute('data-content', (counts[i] + 1));
 
+                navSide = Math.round(counts[i] * Math.ceil(contents.length / col) / contents.length);
+
                 events.removeClass(navDots, 'selected');
-                events.addClass(navDots[counts[i]], 'selected');
+                events.addClass(navDots[navSide], 'selected');
 
                 // detecting ie9
                 if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
-                    slider[0].style.marginLeft = '-' + (counts[i] * that.offsetWidth) + 'px';
+                    slider[0].style.marginLeft = '-' + (counts[i] * contents[i].offsetWidth) + 'px';
 
                 } else {
-                    slider[0].style.transform = 'translateX(-' + (counts[i] * that.offsetWidth) + 'px)';
+                    slider[0].style.transform = 'translateX(-' + (counts[i] * contents[i].offsetWidth) + 'px)';
                 }
 
                 carouselLazyImages(that, col, i);
@@ -299,6 +306,7 @@ var carousel = {};
                 var that = this;
 
                 cols[j] = that.getAttribute('data-col');
+                colsTablet[j] = that.getAttribute('data-col-tablet');
                 colsMobile[j] = that.getAttribute('data-col-mobile');
 
                 if (cols[j] === null) {
@@ -309,6 +317,18 @@ var carousel = {};
                     cols[j] = Number(cols[j]);
                     if (!cols[j] || cols[j] === '0' || cols[j] === '') {
                         cols[j] = 1;
+                    }
+
+                }
+
+                if (colsTablet[j] === null) {
+                    colsTablet[j] = cols[j];
+
+                } else {
+
+                    colsTablet[j] = Number(colsTablet[j]);
+                    if (!colsTablet[j] || colsTablet[j] === '0' || colsTablet[j] === '') {
+                        colsTablet[j] = cols[j];
                     }
 
                 }
@@ -383,7 +403,7 @@ var carousel = {};
             // touchmove events
             events.on(document, 'touchstart', '.carousel', function (e) {
 
-                var i, startx, starty, currentx, currenty, startMove, touchMove, move, that, slider, sliderMax, col, navDotsEl, touchEndTimer, animate, contents;
+                var i, startx, starty, currentx, currenty, startMove, touchMove, move, that, slider, sliderMax, col, navDotsEl, navSide, touchEndTimer, animate, contents;
 
                 touchMove = false;
 
@@ -397,8 +417,11 @@ var carousel = {};
 
                 i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
 
-                if (window.innerWidth > 767) {
+                if (window.innerWidth > 959) {
                     col = cols[i];
+
+                } else if (window.innerWidth > 767 && window.innerWidth < 960) {
+                    col = colsTablet[i];
 
                 } else {
                     col = colsMobile[i];
@@ -455,7 +478,8 @@ var carousel = {};
 
                     if (touchMove) {
 
-                        sliderMax = -((slider.offsetWidth / 2) - that.offsetWidth); // why? (offsetWidth / 2), search => why
+                        contents = selector('.content', that);
+                        sliderMax = -((contents.length - col) * contents[i].offsetWidth);
 
                         if (move > 0) {
                             move = 0;
@@ -464,13 +488,13 @@ var carousel = {};
                             move = sliderMax;
                         }
 
-                        counts[i] = Math.abs(move) / that.offsetWidth;
+                        counts[i] = Math.abs(move) / contents[i].offsetWidth;
 
                         if (currentx < 0) {
                             currentx = 0;
 
-                        } else if (currentx > that.offsetWidth) {
-                            currentx = that.offsetWidth;
+                        } else if (currentx > contents[i].offsetWidth) {
+                            currentx = contents[i].offsetWidth;
                         }
 
                         if ((currentx - startx) > 0) {
@@ -480,11 +504,13 @@ var carousel = {};
                             counts[i] = Math.ceil(counts[i]);
                         }
 
-                        slider.style.transform = 'translateX(' + -(counts[i] * that.offsetWidth) + 'px)';
+                        slider.style.transform = 'translateX(' + -(counts[i] * contents[i].offsetWidth) + 'px)';
                         that.setAttribute('data-content', (counts[i] + 1));
 
+                        navSide = Math.round(counts[i] * Math.ceil(contents.length / col) / contents.length);
+
                         events.removeClass(navDotsEl, 'selected');
-                        events.addClass(navDotsEl[counts[i]], 'selected');
+                        events.addClass(navDotsEl[navSide], 'selected');
 
                         clearTimeout(touchEndTimer);
                         touchEndTimer = setTimeout(function () {
@@ -503,7 +529,6 @@ var carousel = {};
                             }
 
                             // detect carousel animates
-                            contents = selector('.content', that);
                             animate = contents[counts[i]].getAttribute('data-animate');
 
                             if (animate !== null) {
