@@ -117,9 +117,13 @@ var dropdown = {};
 
                         events.on(document, 'click.dropdownClose', function (ev) {
 
+                            var content = events.closest(ev.target, '.content')[0];
+
                             // prevent for non listing contents
-                            if (events.closest(ev.target, '.content')[0] !== undefined) {
-                                return;
+                            if (content !== undefined) {
+                                if (events.closest(content, '.dropdown')[0] !== undefined) { // check other .content class names
+                                    return;
+                                }
                             }
 
                             if (ev.button !== 2) { // inherited right clicks
