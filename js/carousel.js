@@ -107,10 +107,10 @@ var carousel = {};
 
             navDotsLength = selector('i', navDots).length;
 
-            if (window.innerWidth > 959) {
+            if (window.innerWidth > 1199) {
                 col = cols[i];
 
-            } else if (window.innerWidth > 767 && window.innerWidth < 960) {
+            } else if (window.innerWidth > 767 && window.innerWidth < 1200) {
                 col = colsTablet[i];
 
             } else {
@@ -172,7 +172,7 @@ var carousel = {};
             }
 
             for (j = 0; j < slider.length; j += 1) {
-                slider[j].style.width = ((that[i].offsetWidth / col) * contents.length) * 2 + 'px'; // why: (offsetWidth * 2) for window resizing
+                slider[j].style.width = (that[i].offsetWidth / col) * contents.length + 'px';
             }
 
             for (j = 0; j < contents.length; j += 1) {
@@ -212,10 +212,10 @@ var carousel = {};
 
                 i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
 
-                if (window.innerWidth > 959) {
+                if (window.innerWidth > 1199) {
                     col = cols[i];
 
-                } else if (window.innerWidth > 767 && window.innerWidth < 960) {
+                } else if (window.innerWidth > 767 && window.innerWidth < 1200) {
                     col = colsTablet[i];
 
                 } else {
@@ -403,7 +403,7 @@ var carousel = {};
             // touchmove events
             events.on(document, 'touchstart', '.carousel', function (e) {
 
-                var i, startx, starty, currentx, currenty, startMove, touchMove, move, that, slider, sliderMax, col, navDotsEl, navSide, touchEndTimer, animate, contents;
+                var i, startx, starty, currentx, currenty, startMove, touchMove, move, that, slider, animates, sliderMax, col, navDotsEl, navSide, touchEndTimer, animate, contents;
 
                 touchMove = false;
 
@@ -417,10 +417,10 @@ var carousel = {};
 
                 i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
 
-                if (window.innerWidth > 959) {
+                if (window.innerWidth > 1199) {
                     col = cols[i];
 
-                } else if (window.innerWidth > 767 && window.innerWidth < 960) {
+                } else if (window.innerWidth > 767 && window.innerWidth < 1200) {
                     col = colsTablet[i];
 
                 } else {
@@ -432,8 +432,11 @@ var carousel = {};
 
                 startMove = startMove.split('|')[4];
 
-                events.off(document, 'touchmove.carousel');
-                events.on(document, 'touchmove.carousel', function (e) {
+                animates = selector('.carousel-animate', that);
+                events.removeClass(animates, 'show');
+
+                events.off(document, 'touchmove');
+                events.on(document, 'touchmove', function (e) {
 
                     if (e.cancelable) { // touchstart or touchmove with preventDefault we need this. Because, now Chrome and Android browsers preventDefault automatically.
                         e.preventDefault();
@@ -514,6 +517,28 @@ var carousel = {};
                         clearTimeout(touchEndTimer);
                         touchEndTimer = setTimeout(function () {
 
+                            // get carousel slide speed
+                            contentsEase[i] = 150;
+
+                            if (events.hasClass(slider, 'ease-fast')) {
+                                contentsEase[i] = 100;
+
+                            } else if (events.hasClass(slider, 'ease-slow')) {
+                                contentsEase[i] = 400;
+
+                            } else if (events.hasClass(slider, 'ease-slow2x')) {
+                                contentsEase[i] = 800;
+
+                            } else if (events.hasClass(slider, 'ease-slow3x')) {
+                                contentsEase[i] = 1200;
+
+                            } else if (events.hasClass(slider, 'ease-slow4x')) {
+                                contentsEase[i] = 1600;
+
+                            } else if (events.hasClass(slider, 'ease-slow5x')) {
+                                contentsEase[i] = 2000;
+                            }
+
                             // wait auto slider until touchmove ends
                             if (autoTimer[i] !== null) {
 
@@ -548,7 +573,7 @@ var carousel = {};
 
                     touchMove = false;
 
-                    events.off(that, 'touchmove.carousel');
+                    events.off(that, 'touchmove');
                     events.off(document, 'touchend.carousel');
 
                 });
