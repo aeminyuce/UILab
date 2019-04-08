@@ -432,8 +432,8 @@ var carousel = {};
 
                 startMove = startMove.split('|')[4];
 
-                events.off(document, 'touchmove');
-                events.on(document, 'touchmove', function (e) {
+                events.off(document, 'touchmove.carousel');
+                events.on(document, 'touchmove.carousel', function (e) {
 
                     if (e.cancelable) { // touchstart or touchmove with preventDefault we need this. Because, now Chrome and Android browsers preventDefault automatically.
                         e.preventDefault();
@@ -441,7 +441,6 @@ var carousel = {};
 
                     currentx = e.targetTouches[0].pageX;
                     currenty = e.targetTouches[0].pageY;
-
 
                     if (Math.abs(startx - currentx) > 10 && Math.abs(starty - currenty) < 10) {
                         touchMove = true;
@@ -473,8 +472,8 @@ var carousel = {};
 
                 });
 
-                events.off(document, 'touchend');
-                events.on(document, 'touchend', function () {
+                events.off(document, 'touchend.carousel');
+                events.on(document, 'touchend.carousel', function () {
 
                     if (touchMove) {
 
@@ -549,8 +548,8 @@ var carousel = {};
 
                     touchMove = false;
 
-                    events.off(that, 'touchmove');
-                    events.off(document, 'touchend');
+                    events.off(that, 'touchmove.carousel');
+                    events.off(document, 'touchend.carousel');
 
                 });
 
