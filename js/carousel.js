@@ -26,13 +26,16 @@ var carousel = {};
         autoTimer = [],
         autoTimeouts = [];
 
-    function carouselAnimate(content, time, wait) {
+    function carouselAnimate(content, time, wait, type) {
 
-        var animates, i = 0;
-        animates = selector('.carousel-animate', content);
+        var animateEls, i = 0;
+        animateEls = selector('.carousel-animate', content);
 
-        if (animates.length === 0) { return; }
-        events.removeClass(animates, 'show');
+        if (animateEls.length === 0) { return; }
+
+        if (type !== 'resize') {
+            events.removeClass(animateEls, 'show');
+        }
 
         setTimeout(function () { // wait for dom loading or slider ease time
 
@@ -40,10 +43,10 @@ var carousel = {};
 
                 setTimeout(function () {
 
-                    events.addClass(animates[i], 'show');
+                    events.addClass(animateEls[i], 'show');
 
                     i += 1;
-                    if (i < animates.length) { show(); }
+                    if (i < animateEls.length) { show(); }
 
                 }, time);
 
@@ -89,16 +92,9 @@ var carousel = {};
 
     }
 
-    function carouselResizerFnc(i, that) {
+    function carouselResizerFnc(i, that, type) {
 
         var col, j, k, slider, contents, animate, navDots, navDotsEl, navDotsLength, navDotsSize, navDotsHtml, navSides, navSide;
-
-        if (that === undefined) {
-
-            i = undefined;
-            that = selector('.carousel');
-
-        }
 
         function fnc() {
 
@@ -107,10 +103,10 @@ var carousel = {};
 
             navDotsLength = selector('i', navDots).length;
 
-            if (window.innerWidth > 1199) {
+            if (window.innerWidth > 959) {
                 col = cols[i];
 
-            } else if (window.innerWidth > 767 && window.innerWidth < 1200) {
+            } else if (window.innerWidth > 767 && window.innerWidth < 960) {
                 col = colsTablet[i];
 
             } else {
@@ -118,7 +114,8 @@ var carousel = {};
             }
 
             navSides = Math.ceil(contents.length / col);
-            navDotsSize = (navSides - navDotsLength);
+            navDotsSize = navSides - navDotsLength;
+
             navDotsHtml = '';
 
             for (j = 0; j < navDotsSize; j += 1) {
@@ -130,7 +127,7 @@ var carousel = {};
 
             if (navDotsSize < 0) {
 
-                for (k = navSides; k < navDotsLength; k += 1) {
+                for (k = Math.abs(navDotsSize); k < navDotsLength; k += 1) {
                     navDotsEl[k].style.display = 'none';
                 }
 
@@ -146,13 +143,20 @@ var carousel = {};
                 counts[i] = (navSides - 1);
             }
 
-            animate = contents[counts[i]].getAttribute('data-animate');
-            if (animate !== null) {
+            // detect carousel animates
+            events.each(contents, function (l) {
 
-                if (animate === '') { animate = 150; }
-                carouselAnimate(contents[counts[i]], animate, 300);
+                if (l + 1 > col) { return; }
 
-            }
+                animate = this.getAttribute('data-animate');
+                if (animate !== null) {
+
+                    if (animate === '') { animate = 150; }
+                    carouselAnimate(this, animate, 300, type);
+
+                }
+
+            });
 
             that[i].setAttribute('data-content', (counts[i] + 1));
 
@@ -212,10 +216,10 @@ var carousel = {};
 
                 i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
 
-                if (window.innerWidth > 1199) {
+                if (window.innerWidth > 959) {
                     col = cols[i];
 
-                } else if (window.innerWidth > 767 && window.innerWidth < 1200) {
+                } else if (window.innerWidth > 767 && window.innerWidth < 960) {
                     col = colsTablet[i];
 
                 } else {
@@ -266,7 +270,6 @@ var carousel = {};
 
                         autoSlider[i] = setInterval(function () {
                             carouselNav(that, 'next');
-
                         }, autoTimer[i]);
 
                     }, contentsEase[i]);
@@ -274,13 +277,17 @@ var carousel = {};
                 }
 
                 // detect carousel animates
-                animate = contents[counts[i]].getAttribute('data-animate');
-                if (animate !== null) {
+                events.each(contents, function () {
 
-                    if (animate === '') { animate = 150; }
-                    carouselAnimate(contents[counts[i]], animate, contentsEase[i]);
+                    animate = this.getAttribute('data-animate');
+                    if (animate !== null) {
 
-                }
+                        if (animate === '') { animate = 150; }
+                        carouselAnimate(this, animate, contentsEase[i], 'static');
+
+                    }
+
+                });
 
                 that.setAttribute('data-content', (counts[i] + 1));
 
@@ -348,7 +355,7 @@ var carousel = {};
                 counts[j] = 0;
                 events.addClass(that, 'active');
 
-                carouselResizerFnc(j, carousels);
+                carouselResizerFnc(j, carousels, 'static');
 
                 // auto slider
                 autoTimer[j] = that.getAttribute('data-slide');
@@ -403,7 +410,7 @@ var carousel = {};
             // touchmove events
             events.on(document, 'touchstart', '.carousel', function (e) {
 
-                var i, startx, starty, currentx, currenty, startMove, touchMove, move, that, slider, animates, sliderMax, col, navDotsEl, navSide, touchEndTimer, animate, contents;
+                var i, startx, starty, currentx, currenty, startMove, touchMove, move, that, slider, animateEls, sliderMax, col, navDotsEl, navSide, touchEndTimer, animate, contents;
 
                 touchMove = false;
 
@@ -432,15 +439,15 @@ var carousel = {};
 
                 startMove = startMove.split('|')[4];
 
-                animates = selector('.carousel-animate', that);
-                events.removeClass(animates, 'show');
-
                 events.off(document, 'touchmove');
                 events.on(document, 'touchmove', function (e) {
 
                     if (e.cancelable) { // touchstart or touchmove with preventDefault we need this. Because, now Chrome and Android browsers preventDefault automatically.
                         e.preventDefault();
                     }
+
+                    animateEls = selector('.carousel-animate', that);
+                    events.removeClass(animateEls, 'show');
 
                     currentx = e.targetTouches[0].pageX;
                     currenty = e.targetTouches[0].pageY;
@@ -553,14 +560,17 @@ var carousel = {};
                             }
 
                             // detect carousel animates
-                            animate = contents[counts[i]].getAttribute('data-animate');
+                            events.each(contents, function () {
 
-                            if (animate !== null) {
+                                animate = this.getAttribute('data-animate');
+                                if (animate !== null) {
 
-                                if (animate === '') { animate = 150; }
-                                carouselAnimate(contents[counts[i]], animate, contentsEase[i]);
+                                    if (animate === '') { animate = 150; }
+                                    carouselAnimate(this, animate, contentsEase[i], 'touch');
 
-                            }
+                                }
+
+                            });
 
                             that.style.transitionDuration = '';
                             slider.style.transitionDuration = '';
@@ -586,6 +596,15 @@ var carousel = {};
 
     // Loaders
     events.onload(carousel.Start);
-    events.on(window, 'resize', carouselResizerFnc);
+    events.on(window, 'resize', function () {
+
+        var i, that;
+
+        i = undefined;
+        that = selector('.carousel');
+
+        carouselResizerFnc(i, that, 'resize');
+
+    });
 
 }());
