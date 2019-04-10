@@ -22,16 +22,16 @@
 
 .carousel-animate:not(.show) { opacity: 0; }
 
-.carousel-animate.bring-back:not(.show) { transform: scale(.5); }
-.carousel-animate.bring-front:not(.show) { transform: scale(1.5); }
+.carousel-animate.bring-back:not(.show) { transform: scale(.85); }
+.carousel-animate.bring-front:not(.show) { transform: scale(1.15); }
 
-.carousel-animate.bring-top:not(.show) { transform: translateY(-50px); }
-.carousel-animate.bring-top-right:not(.show) { transform: translate(50px,-50px); }
-.carousel-animate.bring-top-left:not(.show) { transform: translate(-50px,-50px); }
+.carousel-animate.bring-top:not(.show) { transform: translateY(-15px); }
+.carousel-animate.bring-top-right:not(.show) { transform: translate(15px,-15px); }
+.carousel-animate.bring-top-left:not(.show) { transform: translate(-15px,-15px); }
 
-.carousel-animate.bring-bottom:not(.show) { transform: translateY(50px); }
-.carousel-animate.bring-bottom-right:not(.show) { transform: translate(50px,50px); }
-.carousel-animate.bring-bottom-left:not(.show) { transform: translate(-50px,50px); }
+.carousel-animate.bring-bottom:not(.show) { transform: translateY(15px); }
+.carousel-animate.bring-bottom-right:not(.show) { transform: translate(15px,15px); }
+.carousel-animate.bring-bottom-left:not(.show) { transform: translate(-15px,15px); }
 
-.carousel-animate.bring-right:not(.show) { transform: translateX(50px); }
-.carousel-animate.bring-left:not(.show) { transform: translateX(-50px); }
+.carousel-animate.bring-right:not(.show) { transform: translateX(15px); }
+.carousel-animate.bring-left:not(.show) { transform: translateX(-15px); }
