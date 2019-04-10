@@ -6,8 +6,8 @@
 var carousel = {
 
     mobile: 767, // data-col-mobile breakdown
-    tablet: 959// data-col-tablet breakdown
-    
+    tablet: 959 // data-col-tablet breakdown
+
 };
 
 (function () {
@@ -32,7 +32,10 @@ var carousel = {
         autoTimeouts = [],
 
         resizeTimer,
-        carouselNav;
+        carouselNav,
+
+        isScrollingTimer,
+        isScrolling = false;
 
     function carouselAnimate(content, time, wait, type) {
 
@@ -429,6 +432,13 @@ var carousel = {
                 e.preventDefault();
                 e.stopPropagation();
 
+                isScrolling = true;
+                clearTimeout(isScrollingTimer);
+
+                isScrollingTimer = setTimeout(function () {
+                    isScrolling = false;
+                }, 150);
+
             });
 
             // touchmove events
@@ -436,6 +446,7 @@ var carousel = {
 
                 var i, startx, starty, currentx, currenty, startMove, touchMove, move, that, slider, sliderMax, col, navDotsEl, navSide, touchEndTimer, animate, contents;
 
+                if (isScrolling) { return; }
                 touchMove = false;
 
                 startx = e.targetTouches[0].pageX;
@@ -465,6 +476,8 @@ var carousel = {
 
                 events.off(document, 'touchmove');
                 events.on(document, 'touchmove', function (e) {
+
+                    if (isScrolling) { return; }
 
                     if (e.cancelable) { // touchstart or touchmove with preventDefault we need this. Because, now Chrome and Android browsers preventDefault automatically.
                         e.preventDefault();
