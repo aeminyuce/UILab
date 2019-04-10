@@ -136,6 +136,8 @@ var events = {
 
             handlerFnc = function (pt, pe) {
 
+                if (f === undefined) { return; }
+
                 if (events.handlers === undefined) { events.handlers = {}; }
                 if (events.handlers[pt] === undefined) { events.handlers[pt] = {}; }
                 if (events.handlers[pt][pe] === undefined) { events.handlers[pt][pe] = []; }
