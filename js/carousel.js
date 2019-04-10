@@ -3,7 +3,12 @@
  Carousel JS requires Events JS
 */
 
-var carousel = {};
+var carousel = {
+
+    mobile: 767, // data-col-mobile breakdown
+    tablet: 959// data-col-tablet breakdown
+    
+};
 
 (function () {
 
@@ -24,7 +29,10 @@ var carousel = {};
 
         autoSlider = [],
         autoTimer = [],
-        autoTimeouts = [];
+        autoTimeouts = [],
+
+        resizeTimer,
+        carouselNav;
 
     function carouselAnimate(content, time, wait, type) {
 
@@ -33,7 +41,7 @@ var carousel = {};
 
         if (animateEls.length === 0) { return; }
 
-        if (type !== 'resize') {
+        if (type === 'static') {
             events.removeClass(animateEls, 'show');
         }
 
@@ -44,7 +52,6 @@ var carousel = {};
                 setTimeout(function () {
 
                     events.addClass(animateEls[i], 'show');
-
                     i += 1;
                     if (i < animateEls.length) { show(); }
 
@@ -103,10 +110,10 @@ var carousel = {};
 
             navDotsLength = selector('i', navDots).length;
 
-            if (window.innerWidth > 959) {
+            if (window.innerWidth > carousel.tablet) {
                 col = cols[i];
 
-            } else if (window.innerWidth > 767 && window.innerWidth < 960) {
+            } else if (window.innerWidth > carousel.mobile && window.innerWidth <= carousel.tablet) {
                 col = colsTablet[i];
 
             } else {
@@ -200,9 +207,37 @@ var carousel = {};
 
     carousel.Start = function () {
 
-        var carousels, carouselNav;
-        carousels = selector('.carousel');
+        var carousels;
 
+        // get carousel slide speed
+        function getSlideSpeed(slider, ease, i) {
+
+            ease = 150;
+
+            if (events.hasClass(slider, 'ease-fast')) {
+                ease = 100;
+
+            } else if (events.hasClass(slider, 'ease-slow')) {
+                ease = 400;
+
+            } else if (events.hasClass(slider, 'ease-slow2x')) {
+                ease = 800;
+
+            } else if (events.hasClass(slider, 'ease-slow3x')) {
+                ease = 1200;
+
+            } else if (events.hasClass(slider, 'ease-slow4x')) {
+                ease = 1600;
+
+            } else if (events.hasClass(slider, 'ease-slow5x')) {
+                ease = 2000;
+            }
+
+            contentsEase[i] = ease;
+
+        }
+
+        carousels = selector('.carousel');
         if (carousels.length > 0) {
 
             carouselNav = function (that, direction) {
@@ -216,10 +251,10 @@ var carousel = {};
 
                 i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
 
-                if (window.innerWidth > 959) {
+                if (window.innerWidth > carousel.tablet) {
                     col = cols[i];
 
-                } else if (window.innerWidth > 767 && window.innerWidth < 960) {
+                } else if (window.innerWidth > carousel.mobile && window.innerWidth <= carousel.tablet) {
                     col = colsTablet[i];
 
                 } else {
@@ -238,27 +273,7 @@ var carousel = {};
 
                 }
 
-                // get carousel slide speed
-                contentsEase[i] = 150;
-
-                if (events.hasClass(slider, 'ease-fast')) {
-                    contentsEase[i] = 100;
-
-                } else if (events.hasClass(slider, 'ease-slow')) {
-                    contentsEase[i] = 400;
-
-                } else if (events.hasClass(slider, 'ease-slow2x')) {
-                    contentsEase[i] = 800;
-
-                } else if (events.hasClass(slider, 'ease-slow3x')) {
-                    contentsEase[i] = 1200;
-
-                } else if (events.hasClass(slider, 'ease-slow4x')) {
-                    contentsEase[i] = 1600;
-
-                } else if (events.hasClass(slider, 'ease-slow5x')) {
-                    contentsEase[i] = 2000;
-                }
+                getSlideSpeed(slider, contentsEase[i], i); // get carousel slide speed
 
                 // wait auto slider until slide completed
                 if (autoSlider[i] !== undefined) {
@@ -308,6 +323,7 @@ var carousel = {};
 
             };
 
+            // load carousels
             events.each(carousels, function (j) {
 
                 var that = this;
@@ -368,6 +384,7 @@ var carousel = {};
                     }, autoTimer[j]);
 
                 }
+
             });
 
             // Events
@@ -402,15 +419,22 @@ var carousel = {};
 
                 autoSlider[i] = setInterval(function () {
                     carouselNav(that, 'next');
-
                 }, autoTimer[i]);
+
+            });
+
+            // prevent touch events when inline scrolling
+            events.on(document, 'scroll', '.carousel .scroll,.carousel .v-scroll,.carousel .h-scroll', function (e) {
+
+                e.preventDefault();
+                e.stopPropagation();
 
             });
 
             // touchmove events
             events.on(document, 'touchstart', '.carousel', function (e) {
 
-                var i, startx, starty, currentx, currenty, startMove, touchMove, move, that, slider, animateEls, sliderMax, col, navDotsEl, navSide, touchEndTimer, animate, contents;
+                var i, startx, starty, currentx, currenty, startMove, touchMove, move, that, slider, sliderMax, col, navDotsEl, navSide, touchEndTimer, animate, contents;
 
                 touchMove = false;
 
@@ -424,10 +448,10 @@ var carousel = {};
 
                 i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
 
-                if (window.innerWidth > 1199) {
+                if (window.innerWidth > carousel.tablet) {
                     col = cols[i];
 
-                } else if (window.innerWidth > 767 && window.innerWidth < 1200) {
+                } else if (window.innerWidth > carousel.mobile && window.innerWidth <= carousel.tablet) {
                     col = colsTablet[i];
 
                 } else {
@@ -445,9 +469,6 @@ var carousel = {};
                     if (e.cancelable) { // touchstart or touchmove with preventDefault we need this. Because, now Chrome and Android browsers preventDefault automatically.
                         e.preventDefault();
                     }
-
-                    animateEls = selector('.carousel-animate', that);
-                    events.removeClass(animateEls, 'show');
 
                     currentx = e.targetTouches[0].pageX;
                     currenty = e.targetTouches[0].pageY;
@@ -524,27 +545,7 @@ var carousel = {};
                         clearTimeout(touchEndTimer);
                         touchEndTimer = setTimeout(function () {
 
-                            // get carousel slide speed
-                            contentsEase[i] = 150;
-
-                            if (events.hasClass(slider, 'ease-fast')) {
-                                contentsEase[i] = 100;
-
-                            } else if (events.hasClass(slider, 'ease-slow')) {
-                                contentsEase[i] = 400;
-
-                            } else if (events.hasClass(slider, 'ease-slow2x')) {
-                                contentsEase[i] = 800;
-
-                            } else if (events.hasClass(slider, 'ease-slow3x')) {
-                                contentsEase[i] = 1200;
-
-                            } else if (events.hasClass(slider, 'ease-slow4x')) {
-                                contentsEase[i] = 1600;
-
-                            } else if (events.hasClass(slider, 'ease-slow5x')) {
-                                contentsEase[i] = 2000;
-                            }
+                            getSlideSpeed(slider, contentsEase[i], i); // get carousel slide speed
 
                             // wait auto slider until touchmove ends
                             if (autoTimer[i] !== null) {
@@ -554,7 +555,6 @@ var carousel = {};
 
                                 autoSlider[i] = setInterval(function () {
                                     carouselNav(that, 'next');
-
                                 }, autoTimer[i]);
 
                             }
@@ -598,12 +598,47 @@ var carousel = {};
     events.onload(carousel.Start);
     events.on(window, 'resize', function () {
 
-        var i, that;
+        var i, that, slider;
 
         i = undefined;
-        that = selector('.carousel');
 
+        that = selector('.carousel');
         carouselResizerFnc(i, that, 'resize');
+
+        events.each(that, function () {
+
+            slider = selector('.carousel-slider', this)[0];
+
+            this.style.transitionDuration = '0s';
+            slider.style.transitionDuration = '0s';
+
+        });
+
+        // wait auto slider until resize compeleted
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function () {
+
+            events.each(that, function (i) {
+
+                slider = selector('.carousel-slider', that[i])[0];
+
+                if (autoTimer[i] !== null) {
+
+                    clearInterval(autoSlider[i]);
+                    clearTimeout(autoTimeouts[i]);
+
+                    autoSlider[i] = setInterval(function () {
+                        carouselNav(that[i], 'next');
+                    }, autoTimer[i]);
+
+                }
+
+                that[i].style.transitionDuration = '';
+                slider.style.transitionDuration = '';
+
+            });
+
+        }, 150);
 
     });
 
