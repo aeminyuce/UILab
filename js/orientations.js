@@ -1,9 +1,9 @@
 /*
- Orientation JS
- Orientation JS requires Events JS
+ Orientations JS
+ Orientations JS requires Events JS
 */
 
-var orientation = {};
+var orientations = {};
 
 (function () {
 
@@ -11,18 +11,18 @@ var orientation = {};
     /*globals window, document, events, navigator */
 
     // Events
-    orientation.Start = function () {
+    orientations.Start = function () {
 
         if (navigator.userAgent.toLowerCase().indexOf('mobile') > -1) {
 
-            events.on(document, 'useragents:portrait useragents:landscape');
+            events.on(document, 'orientation:portrait orientation:landscape');
 
             if (window.matchMedia('(orientation: portrait)').matches) {
 
                 events.removeClass(document, 'landscape');
                 events.addClass(document, 'portrait');
 
-                events.trigger(document, 'useragents:portrait'); // set custom event
+                events.trigger(document, 'orientation:portrait'); // set custom event
 
             }
 
@@ -31,7 +31,7 @@ var orientation = {};
                 events.removeClass(document, 'portrait');
                 events.addClass(document, 'landscape');
 
-                events.trigger(document, 'useragents:landscape'); // set custom event
+                events.trigger(document, 'orientation:landscape'); // set custom event
 
             }
 
@@ -40,7 +40,7 @@ var orientation = {};
     };
 
     // Loaders
-    events.onload(orientation.Start);
-    events.on(window, 'resize', orientation.Start);
+    events.onload(orientations.Start);
+    events.on(window, 'resize', orientations.Start);
 
 }());
