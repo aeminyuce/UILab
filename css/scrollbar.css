@@ -1,15 +1,16 @@
 /* scrollbar */
-.scrollbar::-webkit-scrollbar { width: 8px; background-color: rgba(255,255,255,0); }
-.scrollbar::-webkit-scrollbar-thumb { background-color: rgba(0,0,0,.1); border-radius: 4px; }
-.scrollbar::-webkit-scrollbar-thumb:hover { background-color: rgba(0,0,0,.15); }
-.scrollbar::-webkit-scrollbar-thumb:active { background-color: rgba(0,0,0,.25); }
-.scrollbar::-webkit-scrollbar-track { background-color: rgba(0,0,0,0); }
+::-webkit-scrollbar { width: 8px; height: 8px; background-color: rgba(255,255,255,0); }
+body::-webkit-scrollbar { width: 12px; height: 12px; }
+::-webkit-scrollbar-thumb { background-color: rgba(0,0,0,.1); border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover { background-color: rgba(0,0,0,.15); }
+::-webkit-scrollbar-thumb:active { background-color: rgba(0,0,0,.25); }
+::-webkit-scrollbar-track { background-color: rgba(0,0,0,0); }
 
-.ui-x-dark.scrollbar::-webkit-scrollbar-thumb,.ui-dark.scrollbar::-webkit-scrollbar-thumb,
-.ui-x-dark .scrollbar::-webkit-scrollbar-thumb,.ui-dark .scrollbar::-webkit-scrollbar-thumb { background-color: rgba(255,255,255,.2); }
+.ui-x-dark::-webkit-scrollbar-thumb,.ui-dark::-webkit-scrollbar-thumb,
+.ui-x-dark ::-webkit-scrollbar-thumb,.ui-dark ::-webkit-scrollbar-thumb { background-color: rgba(255,255,255,.2); }
 
-.ui-x-dark.scrollbar::-webkit-scrollbar-thumb:hover,.ui-dark.scrollbar::-webkit-scrollbar-thumb:hover,
-.ui-x-dark .scrollbar::-webkit-scrollbar-thumb:hover,.ui-dark .scrollbar::-webkit-scrollbar-thumb:hover { background-color: rgba(255,255,255,.25); }
+.ui-x-dark::-webkit-scrollbar-thumb:hover,.ui-dark::-webkit-scrollbar-thumb:hover,
+.ui-x-dark ::-webkit-scrollbar-thumb:hover,.ui-dark ::-webkit-scrollbar-thumb:hover { background-color: rgba(255,255,255,.25); }
 
-.ui-x-dark.scrollbar::-webkit-scrollbar-thumb:active,.ui-dark.scrollbar::-webkit-scrollbar-thumb:active,
-.ui-x-dark .scrollbar::-webkit-scrollbar-thumb:active,.ui-dark .scrollbar::-webkit-scrollbar-thumb:active { background-color: rgba(255,255,255,.35); }
+.ui-x-dark::-webkit-scrollbar-thumb:active,.ui-dark::-webkit-scrollbar-thumb:active,
+.ui-x-dark ::-webkit-scrollbar-thumb:active,.ui-dark ::-webkit-scrollbar-thumb:active { background-color: rgba(255,255,255,.35); }
