@@ -177,20 +177,20 @@ var carousel = {
 
             slider = selector('.carousel-slider', that[i]);
 
-            // detecting ie9
-            if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
-                slider[0].style.marginLeft = '-' + (counts[i] * contents[i].offsetWidth) + 'px';
-
-            } else {
-                slider[0].style.transform = 'translateX(-' + (counts[i] * contents[i].offsetWidth) + 'px)';
-            }
-
             for (j = 0; j < slider.length; j += 1) {
                 slider[j].style.width = (that[i].offsetWidth / col) * contents.length + 'px';
             }
 
             for (j = 0; j < contents.length; j += 1) {
                 contents[j].style.width = (that[i].offsetWidth / col) + 'px';
+            }
+
+            // detecting ie9
+            if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
+                slider[0].style.marginLeft = '-' + (counts[i] * contents[i].offsetWidth) + 'px';
+
+            } else {
+                slider[0].style.transform = 'translateX(-' + (counts[i] * contents[i].offsetWidth) + 'px)';
             }
 
             carouselLazyImages(that[i], col, i);
@@ -614,9 +614,7 @@ var carousel = {
         var i, that, slider;
 
         i = undefined;
-
         that = selector('.carousel');
-        carouselResizerFnc(i, that, 'resize');
 
         events.each(that, function () {
 
@@ -652,6 +650,8 @@ var carousel = {
             });
 
         }, 150);
+
+        carouselResizerFnc(i, that, 'resize');
 
     });
 
