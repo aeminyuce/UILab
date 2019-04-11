@@ -16,6 +16,8 @@
 .carousel-slider { display: -webkit-box !important; display: -ms-flexbox !important; display: -webkit-flex !important; display: flex !important; flex-wrap: wrap; }
 .carousel-slider > .content { flex-direction: column; }
 
+.carousel .scroll,.carousel .v-scroll,.carousel .h-scroll { -webkit-overflow-scrolling: auto; } /* mobile: disable inline scrolling */
+
 .carousel .carousel-nav { line-height: 6px; display: block; cursor: default; }
 .carousel .carousel-nav .dots i { width: 7px; height: 7px; background-color: currentColor; margin: 0 3px; display: inline-block; border-radius: 50%; opacity: .45; }
 .carousel .carousel-nav .dots i.selected { background-color: currentColor; opacity: 1; transform: scale(1.5); }

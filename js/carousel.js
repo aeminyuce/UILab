@@ -455,6 +455,8 @@ var carousel = {
                 that = this;
 
                 slider = selector('.carousel-slider', that)[0];
+
+                contents = selector('.content', that);
                 navDotsEl = selector('.carousel-nav .dots i', that);
 
                 i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
@@ -473,6 +475,9 @@ var carousel = {
                 startMove = startMove.replace('matrix', '').replace(/[\,\(\)\s]/g, ' ').replace(/\s\s/g, '|'); // select only numbers
 
                 startMove = startMove.split('|')[4];
+
+                that.style.transitionDuration = '0s';
+                slider.style.transitionDuration = '0s';
 
                 events.off(document, 'touchmove');
                 events.on(document, 'touchmove', function (e) {
@@ -494,7 +499,16 @@ var carousel = {
 
                         clearTimeout(touchEndTimer);
 
+                        sliderMax = -((contents.length - col) * contents[i].offsetWidth);
                         move = (startMove - (startx - currentx));
+
+                        if (move > 0) {
+                            move = 0;
+
+                        } else if (move < sliderMax) {
+                            move = sliderMax;
+                        }
+
                         slider.style.transform = 'translateX(' + move + 'px)';
 
                         carouselLazyImages(that, col, i, 'touchmove');
@@ -509,28 +523,18 @@ var carousel = {
 
                         events.addClass(document, 'carousel-touchmove');
 
-                        that.style.transitionDuration = '.1s';
-                        slider.style.transitionDuration = '.1s';
-
                     }
 
                 });
 
-                events.off(document, 'touchend.carousel');
-                events.on(document, 'touchend.carousel', function () {
+                events.off(document, 'touchend.carousel touchcancel.carousel');
+                events.on(document, 'touchend.carousel touchcancel.carousel', function () {
 
                     if (touchMove) {
 
-                        contents = selector('.content', that);
-                        sliderMax = -((contents.length - col) * contents[i].offsetWidth);
+                        var beforeCount;
 
-                        if (move > 0) {
-                            move = 0;
-
-                        } else if (move < sliderMax) {
-                            move = sliderMax;
-                        }
-
+                        beforeCount = counts[i];
                         counts[i] = Math.abs(move) / contents[i].offsetWidth;
 
                         if (currentx < 0) {
@@ -545,6 +549,10 @@ var carousel = {
 
                         } else {
                             counts[i] = Math.ceil(counts[i]);
+                        }
+
+                        if (Math.abs(startx - currentx) < 35) {
+                            counts[i] = beforeCount;
                         }
 
                         slider.style.transform = 'translateX(' + -(counts[i] * contents[i].offsetWidth) + 'px)';
@@ -585,19 +593,19 @@ var carousel = {
 
                             });
 
-                            that.style.transitionDuration = '';
-                            slider.style.transitionDuration = '';
-
                             events.removeClass(document, 'carousel-touchmove');
 
                         }, 100);
+
+                        that.style.transitionDuration = '';
+                        slider.style.transitionDuration = '';
 
                     }
 
                     touchMove = false;
 
                     events.off(that, 'touchmove');
-                    events.off(document, 'touchend.carousel');
+                    events.off(document, 'touchend.carousel touchcancel.carousel');
 
                 });
 
