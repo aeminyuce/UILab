@@ -1,7 +1,7 @@
 /* calendar */
 .ease-calendar { transition-property: opacity; }
 
-.ease-calendar button { transition-property: background-color; transition-duration: .15s; }
+.ease-calendar button { transition-property: background-color, opacity; transition-duration: .15s; }
 .no-transitions-all .ease-calendar button { transition-property: none !important; }
 
 .calendar { background-color: #fff; padding: 5px; overflow: hidden; display: block; position: relative; -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
@@ -54,10 +54,12 @@ html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) caption .calendar-titl
 .calendar td button { width: 100%; background: transparent; padding: 8px; display: block; border: 0; }
 .calendar.rounded td button { border-radius: 6px; }
 
-.calendar td.today button,.calendar td.pickerday button { font-weight: bold; background-color: rgba(255,255,255,.225); }
-html:not(.mobile) .calendar td.today button:hover,html:not(.mobile) .calendar td.pickerday button:hover { background-color: rgba(255,255,255,.3); }
-.calendar:not(.ui-dark):not(.ui-x-dark) td.today button,.calendar:not(.ui-dark):not(.ui-x-dark) td.pickerday button { background-color: rgba(0,0,0,.125); }
-html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) td.today button:hover,html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) td.pickerday button:hover { background-color: rgba(0,0,0,.2); }
+.calendar td.today button,.calendar td.pickerday button { font-weight: bold; }
+.calendar td.today button:not([class*="ui-"]),.calendar td.pickerday button { background-color: rgba(255,255,255,.225); }
+html:not(.mobile) .calendar td.today button:not([class*="ui-"]):hover,html:not(.mobile) .calendar td.pickerday button:hover { background-color: rgba(255,255,255,.3); }
+.calendar:not(.ui-dark):not(.ui-x-dark) td.today button:not([class*="ui-"]),.calendar:not(.ui-dark):not(.ui-x-dark) td.pickerday button { background-color: rgba(0,0,0,.125); }
+html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) td.today button:not([class*="ui-"]):hover,html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) td.pickerday button:hover { background-color: rgba(0,0,0,.2); }
+html:not(.mobile) .calendar td.today button[class*="ui-"]:hover { opacity: .75; }
 
 html:not(.mobile) .calendar td:not(.today):not(.pickerday) button:hover { background-color: rgba(255,255,255,.125); }
 html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) td:not(.today):not(.pickerday) button:hover { background-color: rgba(0,0,0,.075); }

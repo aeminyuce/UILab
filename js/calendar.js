@@ -14,7 +14,9 @@ var calendar = {
     fillWeekends: true, // true: fills dark color to weekends' background
 
     prevIcon: 'icon-angle-left', // header's previous button icon
-    nextIcon: 'icon-angle-right' // header's next button icon
+    nextIcon: 'icon-angle-right', // header's next button icon
+
+    todayTheme : '' // use swatches
 
 };
 
@@ -249,7 +251,7 @@ var calendar = {
                     if (activeDay) {
 
                         if (date.getFullYear() + ' ' + date.getMonth() + ' ' + days === today) { // today
-                            html += '<td class="today"><button type="button" tabindex="-1">' + days + '</button></td>';
+                            html += '<td class="today"><button class="' + calendar.todayTheme + '" type="button" tabindex="-1">' + days + '</button></td>';
 
                         } else { // other days
 
