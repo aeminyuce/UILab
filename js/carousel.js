@@ -546,7 +546,7 @@ var carousel = {
 
                         if ((currentx - startx) > 0) { // slide to right
 
-                            if (counts[i].toFixed(2).substring(2) < 75) {
+                            if (counts[i].toFixed(2).substring(2) < 85) {
                                 counts[i] = Math.floor(counts[i]);
 
                             } else {
@@ -555,7 +555,7 @@ var carousel = {
 
                         } else { // slide to left
 
-                            if (counts[i].toFixed(2).substring(2) > 25) {
+                            if (counts[i].toFixed(2).substring(2) > 15) {
                                 counts[i] = Math.ceil(counts[i]);
 
                             } else {
