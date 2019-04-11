@@ -18,9 +18,9 @@ var tooltip = {
     var
         removeTimer,
         removeTimer2x,
-        pageTouchmove,
         pageTouchmoveTimer,
-        touchControl;
+        touchControl,
+        isScrolling;
 
     function removeFnc() {
 
@@ -235,17 +235,27 @@ var tooltip = {
             var that = this;
 
             if (e.type === 'touchstart') {
-
-                pageTouchmove = false;
                 touchControl = events.hasClass(that, 'tooltip-active');
-
-            } else if (e.type === 'touchmove') {
-                pageTouchmove = true;
             }
 
-            if (e.type === 'touchend' && pageTouchmove === false) {
+            events.off(that, 'touchmove.tooltipClose');
 
-                if (!touchControl) { e.preventDefault(); }
+            events.on(that, 'touchmove.tooltipClose', function () {
+                isScrolling = true;
+            });
+
+            if (e.type === 'touchend') {
+
+                if (isScrolling) {
+
+                    isScrolling = false;
+                    return;
+
+                }
+
+                if (!touchControl && e.cancelable && e.defaultPrevented) { // touchstart or touchmove with preventDefault we need this. Because, now Chrome and Android browsers preventDefault automatically.
+                    e.preventDefault();
+                }
 
                 clearTimeout(pageTouchmoveTimer);
                 pageTouchmoveTimer = setTimeout(function () {
