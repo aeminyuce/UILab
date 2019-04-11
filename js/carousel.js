@@ -544,15 +544,24 @@ var carousel = {
                             currentx = contents[i].offsetWidth;
                         }
 
-                        if ((currentx - startx) > 0) {
-                            counts[i] = Math.floor(counts[i]);
+                        if ((currentx - startx) > 0) { // slide to right
 
-                        } else {
-                            counts[i] = Math.ceil(counts[i]);
-                        }
+                            if (counts[i].toFixed(2).substring(2) < 75) {
+                                counts[i] = Math.floor(counts[i]);
 
-                        if (Math.abs(startx - currentx) < 35) {
-                            counts[i] = beforeCount;
+                            } else {
+                                counts[i] = beforeCount;
+                            }
+
+                        } else { // slide to left
+
+                            if (counts[i].toFixed(2).substring(2) > 25) {
+                                counts[i] = Math.ceil(counts[i]);
+
+                            } else {
+                                counts[i] = beforeCount;
+                            }
+
                         }
 
                         slider.style.transform = 'translateX(' + -(counts[i] * contents[i].offsetWidth) + 'px)';
