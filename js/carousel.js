@@ -476,9 +476,6 @@ var carousel = {
 
                 startMove = startMove.split('|')[4];
 
-                that.style.transitionDuration = '0s';
-                slider.style.transitionDuration = '0s';
-
                 events.off(document, 'touchmove');
                 events.on(document, 'touchmove', function (e) {
 
@@ -496,6 +493,9 @@ var carousel = {
                     }
 
                     if (touchMove) {
+
+                        that.style.transitionDuration = '0s';
+                        slider.style.transitionDuration = '0s';
 
                         clearTimeout(touchEndTimer);
 
