@@ -38,7 +38,7 @@
 .modal-buttons { float: right; }
 .modal-content.fullscreen .modal-header .modal-buttons { padding-right: 42px; }
 
-.modal-header h1,.modal-header h2,.modal-header h3,.modal-header h4,.modal-header h5,.modal-header h6 { font-size: 18px !important; line-height: 32px; float: left; }
+.modal-header h1,.modal-header h2,.modal-header h3,.modal-header h4,.modal-header h5,.modal-header h6 { font-size: 18px !important; text-overflow: ellipsis; line-height: 32px; max-width: 100%; overflow: hidden; float: left; }
 
 .modal-header .btn-lg,.modal-footer .btn-lg { margin: -5px 0; }
 .modal-header .btn-sm,.modal-footer .btn-sm { margin: 3px 0; }
