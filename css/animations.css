@@ -1,5 +1,10 @@
+/* animations */
+.animate-stop,.animate-stop:before,.animate-stop:after,
+.animate-stop-all,.animate-stop-all:before,.animate-stop-all:after,
+.animate-stop-all *,.animate-stop-all *:before,.animate-stop-all *:after { animation: none !important; }
+
 /*
- animations
+ custom animations
 
   animation shorthand:
   name | duration | timing-function | delay | iteration-count | direction | fill-mode | play-state
@@ -11,8 +16,3 @@
 
 @keyframes progress { from { background-position: 40px 0; } to { background-position: 0 0; } }
 .animate-progress { animation: progress 3s linear infinite; }
-
-/* animations */
-.animate-stop,.animate-stop:before,.animate-stop:after,
-.animate-stop-all,.animate-stop-all:before,.animate-stop-all:after,
-.animate-stop-all *,.animate-stop-all *:before,.animate-stop-all *:after { animation: none !important; }
