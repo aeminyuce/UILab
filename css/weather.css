@@ -55,6 +55,7 @@ html:not(.mobile) .weather .infos .bottom a:hover { opacity: .65; }
 .weather .cloud,.weather .cloud-heavy { width: 1486px; height: 100%; background: no-repeat; top: 0; left: 0; z-index: 1; animation: cloud 220s linear infinite; }
 .night .cloud,.night .cloud-heavy { animation: cloud-night 220s linear infinite; }
 .weather [data-graphs*="cloud-heavy"]:after { background: rgba(0,0,0,.2); }
+.night[data-graphs*="cloud-heavy"]:after { background: rgba(0,0,0,.3); }
 
 .weather .stars { width: 100%; height: 100%; background: no-repeat top center; top: 0; left: 0; }
 .weather .graphs:not(.night) .stars { display: none; }
@@ -63,6 +64,8 @@ html:not(.mobile) .weather .infos .bottom a:hover { opacity: .65; }
 
 @media (min-width: 481px) {
     .weather .infos .top { padding: 30px 30px 15px 30px; }
+    .weather .infos ul { margin: 0 15px; }
+
     .weather .infos .bottom { padding: 0 30px 30px 30px; }
 }
 @media (max-width: 480px) {
