@@ -1,0 +1,71 @@
+/* weather */
+.weather { color: #fff; overflow: hidden; position: relative; -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
+
+.weather .infos { width: 100%; position: relative; z-index: 2; }
+.weather .infos .top,.weather .infos .bottom { display: block; }
+
+.weather .infos .top > b,.weather .infos .top > span { font-weight: 300; text-shadow: 0 1px 1px rgba(0,0,0,.25); vertical-align: middle; display: inline-block; }
+.weather .infos .top > b { font-size: 64px; letter-spacing: -0.025em; line-height: 48px; position: relative; }
+.weather .infos .top > span { font-size: 18px; line-height: normal; padding-left: 20px; }
+.weather .infos .top > span span { margin-bottom: -2px; display: block; }
+.weather .infos .top > span b { font-size: 13px; font-weight: 300; opacity: .8; }
+
+.weather .infos ul:before,.weather .infos ul:after,.weather .infos .bottom:before,.weather .infos .bottom:after { content: ""; display: table; }
+.weather .infos ul:after,.weather .infos .bottom:after { clear: both; }
+
+.weather .infos .bottom { opacity: .65; }
+.weather .infos .bottom > a { color: #fff; overflow: hidden; float: left; }
+html:not(.mobile) .weather .infos .bottom a:hover { opacity: .65; }
+
+.weather .infos .bottom > span { float: right; }
+.weather .infos .bottom > span .icon { margin: -2px 0 0 2px; }
+
+.weather .infos li { text-align: center; width: 20%; float: left; }
+.weather .infos li > b,.weather .infos li > span { padding: 15px 0; display: block; }
+.weather .infos li > b { opacity: .8; }
+.weather .infos li b { font-size: 16px; font-weight: normal; }
+.weather .infos li > span b { font-weight: normal; line-height: 12px; display: inline-block; position: relative; }
+.weather .infos li > span b:before { content: ""; display: table; clear: both; }
+.weather .infos li > span span { display: block; }
+.weather .infos li > span span b { opacity: .65; }
+
+.weather .infos .top > b:after,.weather .infos li > span b:after { content: ""; display: block; border: solid 2px #fff; border-radius: 6px; position: absolute; top: 0; }
+.weather .infos .top > b:after { width: 12px; height: 12px; right: -13px; box-shadow: 0 1px 1px rgba(0,0,0,.25); }
+.weather .infos li > span b:after { width: 6px; height: 6px; border-width: 1px; right: -7px; }
+
+.weather .graphs { height: 100%; overflow: hidden; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1; }
+.weather .graphs:not(.night) { background-image: linear-gradient(to bottom right, #7ecaff, #0c75ed); }
+.weather .graphs.night { background-image: linear-gradient(to bottom right, #2a5881, #0a2740); }
+.ie9 .weather .graphs:not(.night) { background: #51a9f8; }
+.ie9 .weather .graphs.night { background: #20496d; }
+.weather .graphs:after { content: ""; display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+
+.weather .graphs > div { position: absolute; }
+
+@keyframes sun { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+.weather .sun { width: 500px; height: 500px; background: no-repeat; top: -220px; right: -220px; animation: sun 100s linear infinite; }
+.night .sun { display: none; }
+.weather .cloud + .sun { opacity: .8; }
+.weather .cloud-heavy + .sun { opacity: .65; }
+
+@keyframes cloud { 0% { transform: translateX(0); opacity: 0; } 5% { opacity: .8; } 75% { opacity: .8; } 100% { transform: translateX(-100%); opacity: 0; } }
+@keyframes cloud-night { 0% { transform: translateX(0); opacity: 0; } 5% { opacity: .2; } 75% { opacity: .2; } 100% { transform: translateX(-100%); opacity: 0; } }
+
+.weather .cloud,.weather .cloud-heavy { width: 1486px; height: 100%; background: no-repeat; top: 0; left: 0; z-index: 1; animation: cloud 220s linear infinite; }
+.night .cloud,.night .cloud-heavy { animation: cloud-night 220s linear infinite; }
+.weather [data-graphs*="cloud-heavy"]:after { background: rgba(0,0,0,.2); }
+
+.weather .stars { width: 100%; height: 100%; background: no-repeat top center; top: 0; left: 0; }
+.weather .graphs:not(.night) .stars { display: none; }
+.weather .cloud + .stars { opacity: .45; }
+.weather .cloud-heavy + .stars { opacity: .25; }
+
+@media (min-width: 481px) {
+    .weather .infos .top { padding: 30px 30px 15px 30px; }
+    .weather .infos .bottom { padding: 0 30px 30px 30px; }
+}
+@media (max-width: 480px) {
+    .weather .infos .top { padding: 15px; }
+    .weather .infos .bottom { padding: 0 10px 15px 10px; }
+}
