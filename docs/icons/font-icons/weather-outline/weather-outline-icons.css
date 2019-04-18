@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'weather-outline-icons';
-  src:  url('fonts/weather-outline-icons.eot?ds9cgt');
-  src:  url('fonts/weather-outline-icons.eot?ds9cgt#iefix') format('embedded-opentype'),
-    url('fonts/weather-outline-icons.ttf?ds9cgt') format('truetype'),
-    url('fonts/weather-outline-icons.woff?ds9cgt') format('woff'),
-    url('fonts/weather-outline-icons.svg?ds9cgt#weather-outline-icons') format('svg');
+  src:  url('fonts/weather-outline-icons.eot?47a7v7');
+  src:  url('fonts/weather-outline-icons.eot?47a7v7#iefix') format('embedded-opentype'),
+    url('fonts/weather-outline-icons.ttf?47a7v7') format('truetype'),
+    url('fonts/weather-outline-icons.woff?47a7v7') format('woff'),
+    url('fonts/weather-outline-icons.svg?47a7v7#weather-outline-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -60,9 +60,15 @@
 .icon-sun:before {
   content: "\e90b";
 }
-.icon-temperature:before {
+.icon-sunrise:before {
   content: "\e90c";
 }
-.icon-wind:before {
+.icon-sunset:before {
   content: "\e90d";
+}
+.icon-temperature:before {
+  content: "\e90e";
+}
+.icon-wind:before {
+  content: "\e90f";
 }
