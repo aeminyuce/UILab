@@ -84,7 +84,7 @@ var weather = {
                     if (night[0].length === 1) { night[0] = '0' + night[0]; } // sunset hour
                     if (night[1].length === 1) { night[1] = '0' + night[1]; } // sunset minute
 
-                    if (hour > night[0] && minute > night[1]) { // night
+                    if ((hour === night[0] && minute > night[1]) || hour > night[0]) { // night
                         events.addClass(graphs, 'night');
 
                     } else { // day
