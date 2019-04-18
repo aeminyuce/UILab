@@ -72,21 +72,20 @@
     <main class="container no-gutter">
         <div class="fixed padding-30-v">
 
-            <h4>Day Examples</h4>
+            <h4>Dynamically Day &amp; Night Examples</h4>
             <div class="row row-equal-height padding-30-b">
                 <div class="col-4 col-md-6 sm-responsive">
 
                     <b class="margin-5-b block">data-graphs="sun"</b>
                     <div class="weather rounded shadow-lg">
-                        <div class="infos">
-                            <span class="top">
+                        <div class="details">
+                            <div class="top">
                                 <b>33</b>
                                 <span>
-                                    <span>Sunny</span>
-                                    <b class="w-date"></b>
+                                    Sunny <b class="w-date"></b>
                                 </span>
-                            </span>
-                            <ul class="list-custom">
+                            </div>
+                            <ul class="days">
                                 <li>
                                     <b>Wed</b>
                                     <i class="icon icon-lg icon-weather icon-temperature"></i>
@@ -128,18 +127,29 @@
                                     </span>
                                 </li>
                             </ul>
-                            <span class="bottom">
-                                <a class="ease-layout" href="#">
-                                    <i class="icon icon-xs icon-marker"></i>
-                                    Istanbul
-                                </a>
-                                <span>
-                                    <span class="w-clock"></span>
-                                    <i class="icon icon-xs icon-clock"></i>
-                                </span>
-                            </span>
+                            <div class="bottom">
+                                <ul class="info">
+                                    <li><a class="ease-layout" href="#">ISTANBUL</a></li>
+                                    <li>0% <b>Chance of Rain</b></li>
+                                    <li>74% <b>Humidity</b></li>
+                                    <li>30<sup>o</sup> <b>Feels Like</b></li>
+                                </ul>
+                                <ul class="clocks">
+                                    <li>
+                                        <span class="w-clock"></span>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunrise">05:53</span>
+                                        <i class="icon icon-sm icon-weather icon-sunrise"></i>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunset">19:59</span>
+                                        <i class="icon icon-sm icon-weather icon-sunset"></i>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="graphs" data-graphs="sun"></div>
+                        <div class="graphs" data-graphs="stars"></div>
                     </div>
 
                 </div>
@@ -147,15 +157,14 @@
 
                     <b class="margin-5-b block">data-graphs="cloud sun"</b>
                     <div class="weather rounded shadow-lg">
-                        <div class="infos">
-                            <span class="top">
+                        <div class="details">
+                            <div class="top">
                                 <b>12</b>
                                 <span>
-                                    <span>Cloudy</span>
-                                    <b class="w-date"></b>
+                                    Cloudy <b class="w-date"></b>
                                 </span>
-                            </span>
-                            <ul class="list-custom">
+                            </div>
+                            <ul class="days">
                                 <li>
                                     <b>Wed</b>
                                     <i class="icon icon-lg icon-weather icon-cloud-sun"></i>
@@ -197,16 +206,27 @@
                                     </span>
                                 </li>
                             </ul>
-                            <span class="bottom">
-                                <a class="ease-layout" href="#">
-                                    <i class="icon icon-xs icon-marker"></i>
-                                    Istanbul
-                                </a>
-                                <span>
-                                    <span class="w-clock"></span>
-                                    <i class="icon icon-xs icon-clock"></i>
-                                </span>
-                            </span>
+                            <div class="bottom">
+                                <ul class="info">
+                                    <li><a class="ease-layout" href="#">ISTANBUL</a></li>
+                                    <li>0% <b>Chance of Rain</b></li>
+                                    <li>78% <b>Humidity</b></li>
+                                    <li>11<sup>o</sup> <b>Feels Like</b></li>
+                                </ul>
+                                <ul class="clocks">
+                                    <li>
+                                        <span class="w-clock"></span>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunrise">05:53</span>
+                                        <i class="icon icon-sm icon-weather icon-sunrise"></i>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunset">19:59</span>
+                                        <i class="icon icon-sm icon-weather icon-sunset"></i>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="graphs" data-graphs="cloud sun"></div>
                     </div>
@@ -216,15 +236,14 @@
 
                     <b class="margin-5-b block">data-graphs="cloud-heavy sun"</b>
                     <div class="weather rounded shadow-lg">
-                        <div class="infos">
-                            <span class="top">
+                        <div class="details">
+                            <div class="top">
                                 <b>2</b>
                                 <span>
-                                    <span>Mostly Cloudy</span>
-                                    <b class="w-date"></b>
+                                    Mostly Cloudy <b class="w-date"></b>
                                 </span>
-                            </span>
-                            <ul class="list-custom">
+                            </div>
+                            <ul class="days">
                                 <li>
                                     <b>Wed</b>
                                     <i class="icon icon-lg icon-weather icon-fog"></i>
@@ -266,16 +285,27 @@
                                     </span>
                                 </li>
                             </ul>
-                            <span class="bottom">
-                                <a class="ease-layout" href="#">
-                                    <i class="icon icon-xs icon-marker"></i>
-                                    Istanbul
-                                </a>
-                                <span>
-                                    <span class="w-clock"></span>
-                                    <i class="icon icon-xs icon-clock"></i>
-                                </span>
-                            </span>
+                            <div class="bottom">
+                                <ul class="info">
+                                    <li><a class="ease-layout" href="#">ISTANBUL</a></li>
+                                    <li>4% <b>Chance of Rain</b></li>
+                                    <li>86% <b>Humidity</b></li>
+                                    <li>0<sup>o</sup> <b>Feels Like</b></li>
+                                </ul>
+                                <ul class="clocks">
+                                    <li>
+                                        <span class="w-clock"></span>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunrise">05:53</span>
+                                        <i class="icon icon-sm icon-weather icon-sunrise"></i>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunset">19:59</span>
+                                        <i class="icon icon-sm icon-weather icon-sunset"></i>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="graphs" data-graphs="cloud-heavy sun"></div>
                     </div>
@@ -283,17 +313,16 @@
                 </div>
                 <div class="col-4 col-md-6 sm-responsive">
 
-                    <b class="margin-5-b block">data-graphs="fog cloud"</b>
+                    <b class="margin-5-b block">data-graphs="fog"</b>
                     <div class="weather rounded shadow-lg">
-                        <div class="infos">
-                            <span class="top">
+                        <div class="details">
+                            <div class="top">
                                 <b>11</b>
                                 <span>
-                                    <span>Foggy</span>
-                                    <b class="w-date"></b>
+                                    Foggy <b class="w-date"></b>
                                 </span>
-                            </span>
-                            <ul class="list-custom">
+                            </div>
+                            <ul class="days">
                                 <li>
                                     <b>Wed</b>
                                     <i class="icon icon-lg icon-weather icon-cloud"></i>
@@ -335,18 +364,108 @@
                                     </span>
                                 </li>
                             </ul>
-                            <span class="bottom">
-                                <a class="ease-layout" href="#">
-                                    <i class="icon icon-xs icon-marker"></i>
-                                    Istanbul
-                                </a>
-                                <span>
-                                    <span class="w-clock"></span>
-                                    <i class="icon icon-xs icon-clock"></i>
-                                </span>
-                            </span>
+                            <div class="bottom">
+                                <ul class="info">
+                                    <li><a class="ease-layout" href="#">ISTANBUL</a></li>
+                                    <li>0% <b>Chance of Rain</b></li>
+                                    <li>82% <b>Humidity</b></li>
+                                    <li>11<sup>o</sup> <b>Feels Like</b></li>
+                                </ul>
+                                <ul class="clocks">
+                                    <li>
+                                        <span class="w-clock"></span>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunrise">05:53</span>
+                                        <i class="icon icon-sm icon-weather icon-sunrise"></i>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunset">19:59</span>
+                                        <i class="icon icon-sm icon-weather icon-sunset"></i>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="graphs" data-graphs="fog cloud"></div>
+                        <div class="graphs" data-graphs="fog"></div>
+                    </div>
+
+                </div>
+                <div class="col-4 col-md-6 sm-responsive">
+
+                    <b class="margin-5-b block">data-graphs="bolt"</b>
+                    <div class="weather rounded shadow-lg">
+                        <div class="details">
+                            <div class="top">
+                                <b>28</b>
+                                <span>
+                                    Thunderstorm <b class="w-date"></b>
+                                </span>
+                            </div>
+                            <ul class="days">
+                                <li>
+                                    <b>Wed</b>
+                                    <i class="icon icon-lg icon-weather icon-rain"></i>
+                                    <span>
+                                        <b>36</b>
+                                        <span><b>28</b></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <b>Thu</b>
+                                    <i class="icon icon-lg icon-weather icon-rain"></i>
+                                    <span>
+                                        <b>32</b>
+                                        <span><b>26</b></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <b>Fri</b>
+                                    <i class="icon icon-lg icon-weather icon-cloud"></i>
+                                    <span>
+                                        <b>31</b>
+                                        <span><b>24</b></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <b>Sat</b>
+                                    <i class="icon icon-lg icon-weather icon-cloud-sun"></i>
+                                    <span>
+                                        <b>29</b>
+                                        <span><b>23</b></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <b>Sun</b>
+                                    <i class="icon icon-lg icon-weather icon-sun"></i>
+                                    <span>
+                                        <b>28</b>
+                                        <span><b>22</b></span>
+                                    </span>
+                                </li>
+                            </ul>
+                            <div class="bottom">
+                                <ul class="info">
+                                    <li><a class="ease-layout" href="#">ISTANBUL</a></li>
+                                    <li>60% <b>Chance of Rain</b></li>
+                                    <li>94% <b>Humidity</b></li>
+                                    <li>28<sup>o</sup> <b>Feels Like</b></li>
+                                </ul>
+                                <ul class="clocks">
+                                    <li>
+                                        <span class="w-clock"></span>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunrise">05:53</span>
+                                        <i class="icon icon-sm icon-weather icon-sunrise"></i>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunset">19:59</span>
+                                        <i class="icon icon-sm icon-weather icon-sunset"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="graphs" data-graphs="bolt"></div>
                     </div>
 
                 </div>
@@ -354,15 +473,14 @@
 
                     <b class="margin-5-b block">data-graphs="rain"</b>
                     <div class="weather rounded shadow-lg">
-                        <div class="infos">
-                            <span class="top">
+                        <div class="details">
+                            <div class="top">
                                 <b>28</b>
                                 <span>
-                                    <span>Rainy</span>
-                                    <b class="w-date"></b>
+                                    Rainy <b class="w-date"></b>
                                 </span>
-                            </span>
-                            <ul class="list-custom">
+                            </div>
+                            <ul class="days">
                                 <li>
                                     <b>Wed</b>
                                     <i class="icon icon-lg icon-weather icon-rain"></i>
@@ -404,16 +522,27 @@
                                     </span>
                                 </li>
                             </ul>
-                            <span class="bottom">
-                                <a class="ease-layout" href="#">
-                                    <i class="icon icon-xs icon-marker"></i>
-                                    Istanbul
-                                </a>
-                                <span>
-                                    <span class="w-clock"></span>
-                                    <i class="icon icon-xs icon-clock"></i>
-                                </span>
-                            </span>
+                            <div class="bottom">
+                                <ul class="info">
+                                    <li><a class="ease-layout" href="#">ISTANBUL</a></li>
+                                    <li>60% <b>Chance of Rain</b></li>
+                                    <li>94% <b>Humidity</b></li>
+                                    <li>28<sup>o</sup> <b>Feels Like</b></li>
+                                </ul>
+                                <ul class="clocks">
+                                    <li>
+                                        <span class="w-clock"></span>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunrise">05:53</span>
+                                        <i class="icon icon-sm icon-weather icon-sunrise"></i>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunset">19:59</span>
+                                        <i class="icon icon-sm icon-weather icon-sunset"></i>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="graphs" data-graphs="rain"></div>
                     </div>
@@ -421,86 +550,16 @@
                 </div>
                 <div class="col-4 col-md-6 sm-responsive">
 
-                    <b class="margin-5-b block">data-graphs="rain cloud"</b>
-                    <div class="weather rounded shadow-lg">
-                        <div class="infos">
-                            <span class="top">
-                                <b>28</b>
-                                <span>
-                                    <span>Rainy</span>
-                                    <b class="w-date"></b>
-                                </span>
-                            </span>
-                            <ul class="list-custom">
-                                <li>
-                                    <b>Wed</b>
-                                    <i class="icon icon-lg icon-weather icon-rain"></i>
-                                    <span>
-                                        <b>36</b>
-                                        <span><b>28</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Thu</b>
-                                    <i class="icon icon-lg icon-weather icon-rain"></i>
-                                    <span>
-                                        <b>32</b>
-                                        <span><b>26</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Fri</b>
-                                    <i class="icon icon-lg icon-weather icon-cloud"></i>
-                                    <span>
-                                        <b>31</b>
-                                        <span><b>24</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Sat</b>
-                                    <i class="icon icon-lg icon-weather icon-cloud-sun"></i>
-                                    <span>
-                                        <b>29</b>
-                                        <span><b>23</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Sun</b>
-                                    <i class="icon icon-lg icon-weather icon-sun"></i>
-                                    <span>
-                                        <b>28</b>
-                                        <span><b>22</b></span>
-                                    </span>
-                                </li>
-                            </ul>
-                            <span class="bottom">
-                                <a class="ease-layout" href="#">
-                                    <i class="icon icon-xs icon-marker"></i>
-                                    Istanbul
-                                </a>
-                                <span>
-                                    <span class="w-clock"></span>
-                                    <i class="icon icon-xs icon-clock"></i>
-                                </span>
-                            </span>
-                        </div>
-                        <div class="graphs" data-graphs="rain cloud"></div>
-                    </div>
-
-                </div>
-                <div class="col-4 col-md-6 sm-responsive">
-
                     <b class="margin-5-b block">data-graphs="bolt rain-heavy"</b>
                     <div class="weather rounded shadow-lg">
-                        <div class="infos">
-                            <span class="top">
+                        <div class="details">
+                            <div class="top">
                                 <b>10</b>
                                 <span>
-                                    <span>Mostly Rainy</span>
-                                    <b class="w-date"></b>
+                                    Mostly Rainy <b class="w-date"></b>
                                 </span>
-                            </span>
-                            <ul class="list-custom">
+                            </div>
+                            <ul class="days">
                                 <li>
                                     <b>Wed</b>
                                     <i class="icon icon-lg icon-weather icon-bolt"></i>
@@ -542,16 +601,27 @@
                                     </span>
                                 </li>
                             </ul>
-                            <span class="bottom">
-                                <a class="ease-layout" href="#">
-                                    <i class="icon icon-xs icon-marker"></i>
-                                    Istanbul
-                                </a>
-                                <span>
-                                    <span class="w-clock"></span>
-                                    <i class="icon icon-xs icon-clock"></i>
-                                </span>
-                            </span>
+                            <div class="bottom">
+                                <ul class="info">
+                                    <li><a class="ease-layout" href="#">ISTANBUL</a></li>
+                                    <li>80% <b>Chance of Rain</b></li>
+                                    <li>96% <b>Humidity</b></li>
+                                    <li>8<sup>o</sup> <b>Feels Like</b></li>
+                                </ul>
+                                <ul class="clocks">
+                                    <li>
+                                        <span class="w-clock"></span>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunrise">05:53</span>
+                                        <i class="icon icon-sm icon-weather icon-sunrise"></i>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunset">19:59</span>
+                                        <i class="icon icon-sm icon-weather icon-sunset"></i>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="graphs" data-graphs="bolt rain-heavy"></div>
                     </div>
@@ -559,86 +629,16 @@
                 </div>
                 <div class="col-4 col-md-6 sm-responsive">
 
-                    <b class="margin-5-b block">data-graphs="bolt rain-heavy cloud-heavy"</b>
-                    <div class="weather rounded shadow-lg">
-                        <div class="infos">
-                            <span class="top">
-                                <b>10</b>
-                                <span>
-                                    <span>Mostly Rainy</span>
-                                    <b class="w-date"></b>
-                                </span>
-                            </span>
-                            <ul class="list-custom">
-                                <li>
-                                    <b>Wed</b>
-                                    <i class="icon icon-lg icon-weather icon-bolt"></i>
-                                    <span>
-                                        <b>12</b>
-                                        <span><b>9</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Thu</b>
-                                    <i class="icon icon-lg icon-weather icon-rain-heavy"></i>
-                                    <span>
-                                        <b>11</b>
-                                        <span><b>8</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Fri</b>
-                                    <i class="icon icon-lg icon-weather icon-rain-heavy"></i>
-                                    <span>
-                                        <b>10</b>
-                                        <span><b>7</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Sat</b>
-                                    <i class="icon icon-lg icon-weather icon-rain"></i>
-                                    <span>
-                                        <b>9</b>
-                                        <span><b>5</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Sun</b>
-                                    <i class="icon icon-lg icon-weather icon-clouds"></i>
-                                    <span>
-                                        <b>8</b>
-                                        <span><b>4</b></span>
-                                    </span>
-                                </li>
-                            </ul>
-                            <span class="bottom">
-                                <a class="ease-layout" href="#">
-                                    <i class="icon icon-xs icon-marker"></i>
-                                    Istanbul
-                                </a>
-                                <span>
-                                    <span class="w-clock"></span>
-                                    <i class="icon icon-xs icon-clock"></i>
-                                </span>
-                            </span>
-                        </div>
-                        <div class="graphs" data-graphs="bolt rain-heavy cloud-heavy"></div>
-                    </div>
-
-                </div>
-                <div class="col-4 col-md-6 sm-responsive">
-
                     <b class="margin-5-b block">data-graphs="rain snow"</b>
                     <div class="weather rounded shadow-lg">
-                        <div class="infos">
-                            <span class="top">
+                        <div class="details">
+                            <div class="top">
                                 <b>2</b>
                                 <span>
-                                    <span>Rain and Snow</span>
-                                    <b class="w-date"></b>
+                                    Rain and Snow <b class="w-date"></b>
                                 </span>
-                            </span>
-                            <ul class="list-custom">
+                            </div>
+                            <ul class="days">
                                 <li>
                                     <b>Wed</b>
                                     <i class="icon icon-lg icon-weather icon-rain-snow"></i>
@@ -680,16 +680,27 @@
                                     </span>
                                 </li>
                             </ul>
-                            <span class="bottom">
-                                <a class="ease-layout" href="#">
-                                    <i class="icon icon-xs icon-marker"></i>
-                                    Istanbul
-                                </a>
-                                <span>
-                                    <span class="w-clock"></span>
-                                    <i class="icon icon-xs icon-clock"></i>
-                                </span>
-                            </span>
+                            <div class="bottom">
+                                <ul class="info">
+                                    <li><a class="ease-layout" href="#">ISTANBUL</a></li>
+                                    <li>0% <b>Chance of Rain</b></li>
+                                    <li>78% <b>Humidity</b></li>
+                                    <li>-2<sup>o</sup> <b>Feels Like</b></li>
+                                </ul>
+                                <ul class="clocks">
+                                    <li>
+                                        <span class="w-clock"></span>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunrise">05:53</span>
+                                        <i class="icon icon-sm icon-weather icon-sunrise"></i>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunset">19:59</span>
+                                        <i class="icon icon-sm icon-weather icon-sunset"></i>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="graphs" data-graphs="snow rain"></div>
                     </div>
@@ -699,15 +710,14 @@
 
                     <b class="margin-5-b block">data-graphs="snow"</b>
                     <div class="weather rounded shadow-lg">
-                        <div class="infos">
-                            <span class="top">
+                        <div class="details">
+                            <div class="top">
                                 <b>0</b>
                                 <span>
-                                    <span>Snow</span>
-                                    <b class="w-date"></b>
+                                    Snow <b class="w-date"></b>
                                 </span>
-                            </span>
-                            <ul class="list-custom">
+                            </div>
+                            <ul class="days">
                                 <li>
                                     <b>Wed</b>
                                     <i class="icon icon-lg icon-weather icon-snow"></i>
@@ -749,16 +759,27 @@
                                     </span>
                                 </li>
                             </ul>
-                            <span class="bottom">
-                                <a class="ease-layout" href="#">
-                                    <i class="icon icon-xs icon-marker"></i>
-                                    Istanbul
-                                </a>
-                                <span>
-                                    <span class="w-clock"></span>
-                                    <i class="icon icon-xs icon-clock"></i>
-                                </span>
-                            </span>
+                            <div class="bottom">
+                                <ul class="info">
+                                    <li><a class="ease-layout" href="#">ISTANBUL</a></li>
+                                    <li>0% <b>Chance of Rain</b></li>
+                                    <li>78% <b>Humidity</b></li>
+                                    <li>-2<sup>o</sup> <b>Feels Like</b></li>
+                                </ul>
+                                <ul class="clocks">
+                                    <li>
+                                        <span class="w-clock"></span>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunrise">05:53</span>
+                                        <i class="icon icon-sm icon-weather icon-sunrise"></i>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunset">19:59</span>
+                                        <i class="icon icon-sm icon-weather icon-sunset"></i>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="graphs" data-graphs="snow"></div>
                     </div>
@@ -766,21 +787,342 @@
                 </div>
             </div>
 
-            <h4>Night Examples</h4>
+            <h4>No Graphics with Dynamically Day & Night Examples</h4>
             <div class="row row-equal-height padding-30-b">
-                <div class="col-4 col-md-6 sm-responsive">
+                <div class="col-6 sm-responsive">
 
-                    <b class="margin-5-b block">class="night"<br>data-graphs="stars shooting-star"</b>
                     <div class="weather rounded shadow-lg">
-                        <div class="infos">
-                            <span class="top">
+                        <div class="details">
+                            <div class="top">
+                                <b>36</b>
+                                <span>
+                                    Clear <b class="w-date"></b>
+                                </span>
+                            </div>
+                            <ul class="days">
+                                <li>
+                                    <b>Wed</b>
+                                    <i class="icon icon-lg icon-weather icon-temperature"></i>
+                                    <span>
+                                        <b>36</b>
+                                        <span><b>28</b></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <b>Thu</b>
+                                    <i class="icon icon-lg icon-weather icon-sun"></i>
+                                    <span>
+                                        <b>32</b>
+                                        <span><b>26</b></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <b>Fri</b>
+                                    <i class="icon icon-lg icon-weather icon-sun"></i>
+                                    <span>
+                                        <b>31</b>
+                                        <span><b>24</b></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <b>Sat</b>
+                                    <i class="icon icon-lg icon-weather icon-cloud-sun"></i>
+                                    <span>
+                                        <b>29</b>
+                                        <span><b>23</b></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <b>Sun</b>
+                                    <i class="icon icon-lg icon-weather icon-cloud-sun"></i>
+                                    <span>
+                                        <b>28</b>
+                                        <span><b>22</b></span>
+                                    </span>
+                                </li>
+                            </ul>
+                            <div class="bottom">
+                                <ul class="info">
+                                    <li><a class="ease-layout" href="#">ISTANBUL</a></li>
+                                    <li>0% <b>Chance of Rain</b></li>
+                                    <li>61% <b>Humidity</b></li>
+                                    <li>35<sup>o</sup> <b>Feels Like</b></li>
+                                </ul>
+                                <ul class="clocks">
+                                    <li>
+                                        <span class="w-clock"></span>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunrise">05:53</span>
+                                        <i class="icon icon-sm icon-weather icon-sunrise"></i>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunset">19:59</span>
+                                        <i class="icon icon-sm icon-weather icon-sunset"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="graphs"></div>
+                    </div>
+
+                </div>
+                <div class="col-6 sm-responsive">
+
+                    <div class="weather rounded shadow-lg">
+                        <div class="details">
+                            <div class="top">
+                                <b>9</b>
+                                <span>
+                                    Cloudy <b class="w-date"></b>
+                                </span>
+                            </div>
+                            <ul class="days">
+                                <li>
+                                    <b>Wed</b>
+                                    <i class="icon icon-lg icon-weather icon-cloud-moon"></i>
+                                    <span>
+                                        <b>12</b>
+                                        <span><b>9</b></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <b>Thu</b>
+                                    <i class="icon icon-lg icon-weather icon-moon"></i>
+                                    <span>
+                                        <b>11</b>
+                                        <span><b>8</b></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <b>Fri</b>
+                                    <i class="icon icon-lg icon-weather icon-cloud-moon"></i>
+                                    <span>
+                                        <b>10</b>
+                                        <span><b>7</b></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <b>Sat</b>
+                                    <i class="icon icon-lg icon-weather icon-cloud-moon"></i>
+                                    <span>
+                                        <b>9</b>
+                                        <span><b>5</b></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <b>Sun</b>
+                                    <i class="icon icon-lg icon-weather icon-cloud"></i>
+                                    <span>
+                                        <b>8</b>
+                                        <span><b>4</b></span>
+                                    </span>
+                                </li>
+                            </ul>
+                            <div class="bottom">
+                                <ul class="info">
+                                    <li><a class="ease-layout" href="#">ISTANBUL</a></li>
+                                    <li>0% <b>Chance of Rain</b></li>
+                                    <li>80% <b>Humidity</b></li>
+                                    <li>8<sup>o</sup> <b>Feels Like</b></li>
+                                </ul>
+                                <ul class="clocks">
+                                    <li>
+                                        <span class="w-clock"></span>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunrise">05:53</span>
+                                        <i class="icon icon-sm icon-weather icon-sunrise"></i>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunset">19:59</span>
+                                        <i class="icon icon-sm icon-weather icon-sunset"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="graphs night"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <h4>Static Day Examples</h4>
+            <div class="row row-equal-height padding-30-b">
+                <div class="col-6 sm-responsive">
+
+                    <b class="margin-5-b block">class="static" data-graphs="sun"</b>
+                    <div class="weather rounded shadow-lg">
+                        <div class="details">
+                            <div class="top">
+                                <b>36</b>
+                                <span>
+                                    Clear <b class="w-date"></b>
+                                </span>
+                            </div>
+                            <ul class="days">
+                                <li>
+                                    <b>Wed</b>
+                                    <i class="icon icon-lg icon-weather icon-temperature"></i>
+                                    <span>
+                                        <b>36</b>
+                                        <span><b>28</b></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <b>Thu</b>
+                                    <i class="icon icon-lg icon-weather icon-sun"></i>
+                                    <span>
+                                        <b>32</b>
+                                        <span><b>26</b></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <b>Fri</b>
+                                    <i class="icon icon-lg icon-weather icon-sun"></i>
+                                    <span>
+                                        <b>31</b>
+                                        <span><b>24</b></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <b>Sat</b>
+                                    <i class="icon icon-lg icon-weather icon-cloud-sun"></i>
+                                    <span>
+                                        <b>29</b>
+                                        <span><b>23</b></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <b>Sun</b>
+                                    <i class="icon icon-lg icon-weather icon-cloud-sun"></i>
+                                    <span>
+                                        <b>28</b>
+                                        <span><b>22</b></span>
+                                    </span>
+                                </li>
+                            </ul>
+                            <div class="bottom">
+                                <ul class="info">
+                                    <li><a class="ease-layout" href="#">ISTANBUL</a></li>
+                                    <li>0% <b>Chance of Rain</b></li>
+                                    <li>61% <b>Humidity</b></li>
+                                    <li>35<sup>o</sup> <b>Feels Like</b></li>
+                                </ul>
+                                <ul class="clocks">
+                                    <li>
+                                        <span class="w-clock"></span>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunrise">05:53</span>
+                                        <i class="icon icon-sm icon-weather icon-sunrise"></i>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunset">19:59</span>
+                                        <i class="icon icon-sm icon-weather icon-sunset"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="graphs static" data-graphs="sun"></div>
+                    </div>
+
+                </div>
+                <div class="col-6 sm-responsive">
+
+                    <b class="margin-5-b block">class="static" data-graphs="cloud sun"</b>
+                    <div class="weather rounded shadow-lg">
+                        <div class="details">
+                            <div class="top">
+                                <b>11</b>
+                                <span>
+                                    Cloudy <b class="w-date"></b>
+                                </span>
+                            </div>
+                            <ul class="days">
+                                <li>
+                                    <b>Wed</b>
+                                    <i class="icon icon-lg icon-weather icon-cloud-sun"></i>
+                                    <span>
+                                        <b>12</b>
+                                        <span><b>9</b></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <b>Thu</b>
+                                    <i class="icon icon-lg icon-weather icon-sun"></i>
+                                    <span>
+                                        <b>11</b>
+                                        <span><b>8</b></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <b>Fri</b>
+                                    <i class="icon icon-lg icon-weather icon-cloud-sun"></i>
+                                    <span>
+                                        <b>10</b>
+                                        <span><b>7</b></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <b>Sat</b>
+                                    <i class="icon icon-lg icon-weather icon-cloud-sun"></i>
+                                    <span>
+                                        <b>9</b>
+                                        <span><b>5</b></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <b>Sun</b>
+                                    <i class="icon icon-lg icon-weather icon-cloud"></i>
+                                    <span>
+                                        <b>8</b>
+                                        <span><b>4</b></span>
+                                    </span>
+                                </li>
+                            </ul>
+                            <div class="bottom">
+                                <ul class="info">
+                                    <li><a class="ease-layout" href="#">ISTANBUL</a></li>
+                                    <li>0% <b>Chance of Rain</b></li>
+                                    <li>77% <b>Humidity</b></li>
+                                    <li>11<sup>o</sup> <b>Feels Like</b></li>
+                                </ul>
+                                <ul class="clocks">
+                                    <li>
+                                        <span class="w-clock"></span>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunrise">05:53</span>
+                                        <i class="icon icon-sm icon-weather icon-sunrise"></i>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunset">19:59</span>
+                                        <i class="icon icon-sm icon-weather icon-sunset"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="graphs static" data-graphs="cloud sun"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <h4>Static Night Examples</h4>
+            <div class="row row-equal-height padding-30-b">
+                <div class="col-6 sm-responsive">
+
+                    <b class="margin-5-b block">class="static night" data-graphs="stars"</b>
+                    <div class="weather rounded shadow-lg">
+                        <div class="details">
+                            <div class="top">
                                 <b>30</b>
                                 <span>
-                                    <span>Clear</span>
-                                    <b class="w-date"></b>
+                                    Clear <b class="w-date"></b>
                                 </span>
-                            </span>
-                            <ul class="list-custom">
+                            </div>
+                            <ul class="days">
                                 <li>
                                     <b>Wed</b>
                                     <i class="icon icon-lg icon-weather icon-moon"></i>
@@ -822,34 +1164,44 @@
                                     </span>
                                 </li>
                             </ul>
-                            <span class="bottom">
-                                <a class="ease-layout" href="#">
-                                    <i class="icon icon-xs icon-marker"></i>
-                                    Istanbul
-                                </a>
-                                <span>
-                                    <span class="w-clock"></span>
-                                    <i class="icon icon-xs icon-clock"></i>
-                                </span>
-                            </span>
+                            <div class="bottom">
+                                <ul class="info">
+                                    <li><a class="ease-layout" href="#">ISTANBUL</a></li>
+                                    <li>0% <b>Chance of Rain</b></li>
+                                    <li>74% <b>Humidity</b></li>
+                                    <li>30<sup>o</sup> <b>Feels Like</b></li>
+                                </ul>
+                                <ul class="clocks">
+                                    <li>
+                                        <span class="w-clock"></span>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunrise">05:53</span>
+                                        <i class="icon icon-sm icon-weather icon-sunrise"></i>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunset">19:59</span>
+                                        <i class="icon icon-sm icon-weather icon-sunset"></i>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="graphs night" data-graphs="stars shooting-star"></div>
+                        <div class="graphs static night" data-graphs="stars"></div>
                     </div>
 
                 </div>
-                <div class="col-4 col-md-6 sm-responsive">
+                <div class="col-6 sm-responsive">
 
-                    <b class="margin-5-b block">class="night"<br>data-graphs="cloud stars"</b>
+                    <b class="margin-5-b block">class="static night" data-graphs="cloud stars"</b>
                     <div class="weather rounded shadow-lg">
-                        <div class="infos">
-                            <span class="top">
+                        <div class="details">
+                            <div class="top">
                                 <b>9</b>
                                 <span>
-                                    <span>Cloudy</span>
-                                    <b class="w-date"></b>
+                                    Cloudy <b class="w-date"></b>
                                 </span>
-                            </span>
-                            <ul class="list-custom">
+                            </div>
+                            <ul class="days">
                                 <li>
                                     <b>Wed</b>
                                     <i class="icon icon-lg icon-weather icon-cloud-moon"></i>
@@ -860,7 +1212,7 @@
                                 </li>
                                 <li>
                                     <b>Thu</b>
-                                    <i class="icon icon-lg icon-weather icon-cloud"></i>
+                                    <i class="icon icon-lg icon-weather icon-moon"></i>
                                     <span>
                                         <b>11</b>
                                         <span><b>8</b></span>
@@ -868,7 +1220,7 @@
                                 </li>
                                 <li>
                                     <b>Fri</b>
-                                    <i class="icon icon-lg icon-weather icon-clouds"></i>
+                                    <i class="icon icon-lg icon-weather icon-cloud-moon"></i>
                                     <span>
                                         <b>10</b>
                                         <span><b>7</b></span>
@@ -876,7 +1228,7 @@
                                 </li>
                                 <li>
                                     <b>Sat</b>
-                                    <i class="icon icon-lg icon-weather icon-bolt"></i>
+                                    <i class="icon icon-lg icon-weather icon-cloud-moon"></i>
                                     <span>
                                         <b>9</b>
                                         <span><b>5</b></span>
@@ -884,113 +1236,137 @@
                                 </li>
                                 <li>
                                     <b>Sun</b>
-                                    <i class="icon icon-lg icon-weather icon-rain"></i>
+                                    <i class="icon icon-lg icon-weather icon-cloud"></i>
                                     <span>
                                         <b>8</b>
                                         <span><b>4</b></span>
                                     </span>
                                 </li>
                             </ul>
-                            <span class="bottom">
-                                <a class="ease-layout" href="#">
-                                    <i class="icon icon-xs icon-marker"></i>
-                                    Istanbul
-                                </a>
-                                <span>
-                                    <span class="w-clock"></span>
-                                    <i class="icon icon-xs icon-clock"></i>
-                                </span>
-                            </span>
+                            <div class="bottom">
+                                <ul class="info">
+                                    <li><a class="ease-layout" href="#">ISTANBUL</a></li>
+                                    <li>0% <b>Chance of Rain</b></li>
+                                    <li>80% <b>Humidity</b></li>
+                                    <li>8<sup>o</sup> <b>Feels Like</b></li>
+                                </ul>
+                                <ul class="clocks">
+                                    <li>
+                                        <span class="w-clock"></span>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunrise">05:53</span>
+                                        <i class="icon icon-sm icon-weather icon-sunrise"></i>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunset">19:59</span>
+                                        <i class="icon icon-sm icon-weather icon-sunset"></i>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="graphs night" data-graphs="cloud stars"></div>
+                        <div class="graphs static night" data-graphs="cloud stars"></div>
                     </div>
 
                 </div>
-                <div class="col-4 col-md-6 sm-responsive">
+            </div>
 
-                    <b class="margin-5-b block">class="night"<br>data-graphs="cloud-heavy stars"</b>
+            <h4>No Graphics with Static Examples</h4>
+            <div class="row row-equal-height padding-30-b">
+                <div class="col-6 sm-responsive">
+
+                    <b class="margin-5-b block">class="static"</b>
                     <div class="weather rounded shadow-lg">
-                        <div class="infos">
-                            <span class="top">
-                                <b>-2</b>
+                        <div class="details">
+                            <div class="top">
+                                <b>36</b>
                                 <span>
-                                    <span>Mostly Cloudy</span>
-                                    <b class="w-date"></b>
+                                    Clear <b class="w-date"></b>
                                 </span>
-                            </span>
-                            <ul class="list-custom">
+                            </div>
+                            <ul class="days">
                                 <li>
                                     <b>Wed</b>
-                                    <i class="icon icon-lg icon-weather icon-fog"></i>
+                                    <i class="icon icon-lg icon-weather icon-temperature"></i>
                                     <span>
-                                        <b>3</b>
-                                        <span><b>-4</b></span>
+                                        <b>36</b>
+                                        <span><b>28</b></span>
                                     </span>
                                 </li>
                                 <li>
                                     <b>Thu</b>
-                                    <i class="icon icon-lg icon-weather icon-rain"></i>
+                                    <i class="icon icon-lg icon-weather icon-sun"></i>
                                     <span>
-                                        <b>2</b>
-                                        <span><b>-6</b></span>
+                                        <b>32</b>
+                                        <span><b>26</b></span>
                                     </span>
                                 </li>
                                 <li>
                                     <b>Fri</b>
-                                    <i class="icon icon-lg icon-weather icon-rain-heavy"></i>
+                                    <i class="icon icon-lg icon-weather icon-sun"></i>
                                     <span>
-                                        <b>1</b>
-                                        <span><b>-8</b></span>
+                                        <b>31</b>
+                                        <span><b>24</b></span>
                                     </span>
                                 </li>
                                 <li>
                                     <b>Sat</b>
-                                    <i class="icon icon-lg icon-weather icon-rain-snow"></i>
+                                    <i class="icon icon-lg icon-weather icon-cloud-sun"></i>
                                     <span>
-                                        <b>0</b>
-                                        <span><b>-10</b></span>
+                                        <b>29</b>
+                                        <span><b>23</b></span>
                                     </span>
                                 </li>
                                 <li>
                                     <b>Sun</b>
-                                    <i class="icon icon-lg icon-weather icon-snow"></i>
+                                    <i class="icon icon-lg icon-weather icon-cloud-sun"></i>
                                     <span>
-                                        <b>-3</b>
-                                        <span><b>-15</b></span>
+                                        <b>28</b>
+                                        <span><b>22</b></span>
                                     </span>
                                 </li>
                             </ul>
-                            <span class="bottom">
-                                <a class="ease-layout" href="#">
-                                    <i class="icon icon-xs icon-marker"></i>
-                                    Istanbul
-                                </a>
-                                <span>
-                                    <span class="w-clock"></span>
-                                    <i class="icon icon-xs icon-clock"></i>
-                                </span>
-                            </span>
+                            <div class="bottom">
+                                <ul class="info">
+                                    <li><a class="ease-layout" href="#">ISTANBUL</a></li>
+                                    <li>0% <b>Chance of Rain</b></li>
+                                    <li>61% <b>Humidity</b></li>
+                                    <li>35<sup>o</sup> <b>Feels Like</b></li>
+                                </ul>
+                                <ul class="clocks">
+                                    <li>
+                                        <span class="w-clock"></span>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunrise">05:53</span>
+                                        <i class="icon icon-sm icon-weather icon-sunrise"></i>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunset">19:59</span>
+                                        <i class="icon icon-sm icon-weather icon-sunset"></i>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="graphs night" data-graphs="cloud-heavy stars"></div>
+                        <div class="graphs static"></div>
                     </div>
 
                 </div>
-                <div class="col-4 col-md-6 sm-responsive">
+                <div class="col-6 sm-responsive">
 
-                    <b class="margin-5-b block">class="night"<br>data-graphs="stars fog cloud"</b>
+                    <b class="margin-5-b block">class="static night"</b>
                     <div class="weather rounded shadow-lg">
-                        <div class="infos">
-                            <span class="top">
+                        <div class="details">
+                            <div class="top">
                                 <b>9</b>
                                 <span>
-                                    <span>Foggy</span>
-                                    <b class="w-date"></b>
+                                    Cloudy <b class="w-date"></b>
                                 </span>
-                            </span>
-                            <ul class="list-custom">
+                            </div>
+                            <ul class="days">
                                 <li>
                                     <b>Wed</b>
-                                    <i class="icon icon-lg icon-weather icon-cloud"></i>
+                                    <i class="icon icon-lg icon-weather icon-cloud-moon"></i>
                                     <span>
                                         <b>12</b>
                                         <span><b>9</b></span>
@@ -998,7 +1374,7 @@
                                 </li>
                                 <li>
                                     <b>Thu</b>
-                                    <i class="icon icon-lg icon-weather icon-cloud"></i>
+                                    <i class="icon icon-lg icon-weather icon-moon"></i>
                                     <span>
                                         <b>11</b>
                                         <span><b>8</b></span>
@@ -1006,7 +1382,7 @@
                                 </li>
                                 <li>
                                     <b>Fri</b>
-                                    <i class="icon icon-lg icon-weather icon-clouds"></i>
+                                    <i class="icon icon-lg icon-weather icon-cloud-moon"></i>
                                     <span>
                                         <b>10</b>
                                         <span><b>7</b></span>
@@ -1014,7 +1390,7 @@
                                 </li>
                                 <li>
                                     <b>Sat</b>
-                                    <i class="icon icon-lg icon-weather icon-clouds"></i>
+                                    <i class="icon icon-lg icon-weather icon-cloud-moon"></i>
                                     <span>
                                         <b>9</b>
                                         <span><b>5</b></span>
@@ -1022,439 +1398,36 @@
                                 </li>
                                 <li>
                                     <b>Sun</b>
-                                    <i class="icon icon-lg icon-weather icon-clouds"></i>
-                                    <span>
-                                        <b>8</b>
-                                        <span><b>4</b></span>
-                                    </span>
-                                </li>
-                            </ul>
-                            <span class="bottom">
-                                <a class="ease-layout" href="#">
-                                    <i class="icon icon-xs icon-marker"></i>
-                                    Istanbul
-                                </a>
-                                <span>
-                                    <span class="w-clock"></span>
-                                    <i class="icon icon-xs icon-clock"></i>
-                                </span>
-                            </span>
-                        </div>
-                        <div class="graphs night" data-graphs="stars fog cloud"></div>
-                    </div>
-
-                </div>
-                <div class="col-4 col-md-6 sm-responsive">
-
-                    <b class="margin-5-b block">class="night"<br>data-graphs="rain"</b>
-                    <div class="weather rounded shadow-lg">
-                        <div class="infos">
-                            <span class="top">
-                                <b>26</b>
-                                <span>
-                                    <span>Rainy</span>
-                                    <b class="w-date"></b>
-                                </span>
-                            </span>
-                            <ul class="list-custom">
-                                <li>
-                                    <b>Wed</b>
-                                    <i class="icon icon-lg icon-weather icon-rain"></i>
-                                    <span>
-                                        <b>36</b>
-                                        <span><b>26</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Thu</b>
-                                    <i class="icon icon-lg icon-weather icon-rain"></i>
-                                    <span>
-                                        <b>32</b>
-                                        <span><b>26</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Fri</b>
                                     <i class="icon icon-lg icon-weather icon-cloud"></i>
                                     <span>
-                                        <b>31</b>
-                                        <span><b>24</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Sat</b>
-                                    <i class="icon icon-lg icon-weather icon-cloud-sun"></i>
-                                    <span>
-                                        <b>29</b>
-                                        <span><b>23</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Sun</b>
-                                    <i class="icon icon-lg icon-weather icon-sun"></i>
-                                    <span>
-                                        <b>28</b>
-                                        <span><b>22</b></span>
-                                    </span>
-                                </li>
-                            </ul>
-                            <span class="bottom">
-                                <a class="ease-layout" href="#">
-                                    <i class="icon icon-xs icon-marker"></i>
-                                    Istanbul
-                                </a>
-                                <span>
-                                    <span class="w-clock"></span>
-                                    <i class="icon icon-xs icon-clock"></i>
-                                </span>
-                            </span>
-                        </div>
-                        <div class="graphs night" data-graphs="rain"></div>
-                    </div>
-
-                </div>
-                <div class="col-4 col-md-6 sm-responsive">
-
-                    <b class="margin-5-b block">class="night"<br>data-graphs="rain cloud"</b>
-                    <div class="weather rounded shadow-lg">
-                        <div class="infos">
-                            <span class="top">
-                                <b>26</b>
-                                <span>
-                                    <span>Rainy</span>
-                                    <b class="w-date"></b>
-                                </span>
-                            </span>
-                            <ul class="list-custom">
-                                <li>
-                                    <b>Wed</b>
-                                    <i class="icon icon-lg icon-weather icon-rain"></i>
-                                    <span>
-                                        <b>36</b>
-                                        <span><b>26</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Thu</b>
-                                    <i class="icon icon-lg icon-weather icon-rain"></i>
-                                    <span>
-                                        <b>32</b>
-                                        <span><b>26</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Fri</b>
-                                    <i class="icon icon-lg icon-weather icon-cloud"></i>
-                                    <span>
-                                        <b>31</b>
-                                        <span><b>24</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Sat</b>
-                                    <i class="icon icon-lg icon-weather icon-cloud-sun"></i>
-                                    <span>
-                                        <b>29</b>
-                                        <span><b>23</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Sun</b>
-                                    <i class="icon icon-lg icon-weather icon-sun"></i>
-                                    <span>
-                                        <b>28</b>
-                                        <span><b>22</b></span>
-                                    </span>
-                                </li>
-                            </ul>
-                            <span class="bottom">
-                                <a class="ease-layout" href="#">
-                                    <i class="icon icon-xs icon-marker"></i>
-                                    Istanbul
-                                </a>
-                                <span>
-                                    <span class="w-clock"></span>
-                                    <i class="icon icon-xs icon-clock"></i>
-                                </span>
-                            </span>
-                        </div>
-                        <div class="graphs night" data-graphs="rain cloud"></div>
-                    </div>
-
-                </div>
-                <div class="col-4 col-md-6 sm-responsive">
-
-                    <b class="margin-5-b block">class="night"<br>data-graphs="bolt rain-heavy"</b>
-                    <div class="weather rounded shadow-lg">
-                        <div class="infos">
-                            <span class="top">
-                                <b>8</b>
-                                <span>
-                                    <span>Mostly Rainy</span>
-                                    <b class="w-date"></b>
-                                </span>
-                            </span>
-                            <ul class="list-custom">
-                                <li>
-                                    <b>Wed</b>
-                                    <i class="icon icon-lg icon-weather icon-bolt"></i>
-                                    <span>
-                                        <b>12</b>
-                                        <span><b>9</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Thu</b>
-                                    <i class="icon icon-lg icon-weather icon-rain-heavy"></i>
-                                    <span>
-                                        <b>11</b>
-                                        <span><b>8</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Fri</b>
-                                    <i class="icon icon-lg icon-weather icon-rain-heavy"></i>
-                                    <span>
-                                        <b>10</b>
-                                        <span><b>7</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Sat</b>
-                                    <i class="icon icon-lg icon-weather icon-rain"></i>
-                                    <span>
-                                        <b>9</b>
-                                        <span><b>5</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Sun</b>
-                                    <i class="icon icon-lg icon-weather icon-clouds"></i>
-                                    <span>
                                         <b>8</b>
                                         <span><b>4</b></span>
                                     </span>
                                 </li>
                             </ul>
-                            <span class="bottom">
-                                <a class="ease-layout" href="#">
-                                    <i class="icon icon-xs icon-marker"></i>
-                                    Istanbul
-                                </a>
-                                <span>
-                                    <span class="w-clock"></span>
-                                    <i class="icon icon-xs icon-clock"></i>
-                                </span>
-                            </span>
+                            <div class="bottom">
+                                <ul class="info">
+                                    <li><a class="ease-layout" href="#">ISTANBUL</a></li>
+                                    <li>0% <b>Chance of Rain</b></li>
+                                    <li>80% <b>Humidity</b></li>
+                                    <li>8<sup>o</sup> <b>Feels Like</b></li>
+                                </ul>
+                                <ul class="clocks">
+                                    <li>
+                                        <span class="w-clock"></span>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunrise">05:53</span>
+                                        <i class="icon icon-sm icon-weather icon-sunrise"></i>
+                                    </li>
+                                    <li>
+                                        <span class="w-sunset">19:59</span>
+                                        <i class="icon icon-sm icon-weather icon-sunset"></i>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="graphs night" data-graphs="bolt rain-heavy"></div>
-                    </div>
-
-                </div>
-                <div class="col-4 col-md-6 sm-responsive">
-
-                    <b class="margin-5-b block">class="night"<br>data-graphs="bolt rain-heavy cloud-heavy"</b>
-                    <div class="weather rounded shadow-lg">
-                        <div class="infos">
-                            <span class="top">
-                                <b>8</b>
-                                <span>
-                                    <span>Mostly Rainy</span>
-                                    <b class="w-date"></b>
-                                </span>
-                            </span>
-                            <ul class="list-custom">
-                                <li>
-                                    <b>Wed</b>
-                                    <i class="icon icon-lg icon-weather icon-bolt"></i>
-                                    <span>
-                                        <b>12</b>
-                                        <span><b>9</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Thu</b>
-                                    <i class="icon icon-lg icon-weather icon-rain-heavy"></i>
-                                    <span>
-                                        <b>11</b>
-                                        <span><b>8</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Fri</b>
-                                    <i class="icon icon-lg icon-weather icon-rain-heavy"></i>
-                                    <span>
-                                        <b>10</b>
-                                        <span><b>7</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Sat</b>
-                                    <i class="icon icon-lg icon-weather icon-rain"></i>
-                                    <span>
-                                        <b>9</b>
-                                        <span><b>5</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Sun</b>
-                                    <i class="icon icon-lg icon-weather icon-clouds"></i>
-                                    <span>
-                                        <b>8</b>
-                                        <span><b>4</b></span>
-                                    </span>
-                                </li>
-                            </ul>
-                            <span class="bottom">
-                                <a class="ease-layout" href="#">
-                                    <i class="icon icon-xs icon-marker"></i>
-                                    Istanbul
-                                </a>
-                                <span>
-                                    <span class="w-clock"></span>
-                                    <i class="icon icon-xs icon-clock"></i>
-                                </span>
-                            </span>
-                        </div>
-                        <div class="graphs night" data-graphs="bolt rain-heavy cloud-heavy"></div>
-                    </div>
-
-                </div>
-                <div class="col-4 col-md-6 sm-responsive">
-
-                    <b class="margin-5-b block">class="night"<br>data-graphs="rain snow"</b>
-                    <div class="weather rounded shadow-lg">
-                        <div class="infos">
-                            <span class="top">
-                                <b>1</b>
-                                <span>
-                                    <span>Rain and Snow</span>
-                                    <b class="w-date"></b>
-                                </span>
-                            </span>
-                            <ul class="list-custom">
-                                <li>
-                                    <b>Wed</b>
-                                    <i class="icon icon-lg icon-weather icon-rain-snow"></i>
-                                    <span>
-                                        <b>3</b>
-                                        <span><b>-4</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Thu</b>
-                                    <i class="icon icon-lg icon-weather icon-rain-snow"></i>
-                                    <span>
-                                        <b>2</b>
-                                        <span><b>-6</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Fri</b>
-                                    <i class="icon icon-lg icon-weather icon-snow"></i>
-                                    <span>
-                                        <b>1</b>
-                                        <span><b>-8</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Sat</b>
-                                    <i class="icon icon-lg icon-weather icon-rain"></i>
-                                    <span>
-                                        <b>0</b>
-                                        <span><b>-10</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Sun</b>
-                                    <i class="icon icon-lg icon-weather icon-rain-heavy"></i>
-                                    <span>
-                                        <b>-3</b>
-                                        <span><b>-15</b></span>
-                                    </span>
-                                </li>
-                            </ul>
-                            <span class="bottom">
-                                <a class="ease-layout" href="#">
-                                    <i class="icon icon-xs icon-marker"></i>
-                                    Istanbul
-                                </a>
-                                <span>
-                                    <span class="w-clock"></span>
-                                    <i class="icon icon-xs icon-clock"></i>
-                                </span>
-                            </span>
-                        </div>
-                        <div class="graphs night" data-graphs="snow rain"></div>
-                    </div>
-
-                </div>
-                <div class="col-4 col-md-6 sm-responsive">
-
-                    <b class="margin-5-b block">class="night"<br>data-graphs="snow"</b>
-                    <div class="weather rounded shadow-lg">
-                        <div class="infos">
-                            <span class="top">
-                                <b>-4</b>
-                                <span>
-                                    <span>Snow</span>
-                                    <b class="w-date"></b>
-                                </span>
-                            </span>
-                            <ul class="list-custom">
-                                <li>
-                                    <b>Wed</b>
-                                    <i class="icon icon-lg icon-weather icon-snow"></i>
-                                    <span>
-                                        <b>3</b>
-                                        <span><b>-4</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Thu</b>
-                                    <i class="icon icon-lg icon-weather icon-snow"></i>
-                                    <span>
-                                        <b>2</b>
-                                        <span><b>-6</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Fri</b>
-                                    <i class="icon icon-lg icon-weather icon-snow"></i>
-                                    <span>
-                                        <b>1</b>
-                                        <span><b>-8</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Sat</b>
-                                    <i class="icon icon-lg icon-weather icon-rain-snow"></i>
-                                    <span>
-                                        <b>0</b>
-                                        <span><b>-10</b></span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>Sun</b>
-                                    <i class="icon icon-lg icon-weather icon-rain"></i>
-                                    <span>
-                                        <b>-3</b>
-                                        <span><b>-15</b></span>
-                                    </span>
-                                </li>
-                            </ul>
-                            <span class="bottom">
-                                <a class="ease-layout" href="#">
-                                    <i class="icon icon-xs icon-marker"></i>
-                                    Istanbul
-                                </a>
-                                <span>
-                                    <span class="w-clock"></span>
-                                    <i class="icon icon-xs icon-clock"></i>
-                                </span>
-                            </span>
-                        </div>
-                        <div class="graphs night" data-graphs="snow"></div>
+                        <div class="graphs static night"></div>
                     </div>
 
                 </div>
