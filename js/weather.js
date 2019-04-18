@@ -8,10 +8,7 @@ var weather = {
     days: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
     months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
 
-    graphPath: 'images/weather/', // animation graphics folder
-
-    dateTarget : '.w-date', // use css selectors
-    clockTarget : '.w-clock' // use css selectors
+    graphPath: 'images/weather/' // animation graphics folder
 
 };
 
@@ -31,9 +28,9 @@ var weather = {
 
     weather.Start = function () {
 
-        function dateFnc() {
+        var date, dateText, clockText, clockHtml, minute, hour, day, month, night, graphs;
 
-            var  dateTarget, clockTarget, date, dateText, clockText, minute, hour, day, month;
+        function dateFnc() {
 
             // date
             date = new Date();
@@ -50,9 +47,7 @@ var weather = {
             dateText += ', ' + day + ' ' + month + ' ' + date.getFullYear();
             if (dateLoaded !== dateText) {
 
-                dateTarget = selector(weather.dateTarget);
-
-                events.each(dateTarget, function () {
+                events.each('.w-date', function () {
                     this.textContent = dateText;
                 });
 
@@ -68,12 +63,34 @@ var weather = {
             if (minute.length === 1) { minute = '0' + minute; }
 
             clockText = hour + ':' + minute;
+            clockHtml = '<b>' + hour + '</b><b>' + minute + '</b>';
+
             if (clockLoaded !== clockText) {
 
-                clockTarget = selector(weather.clockTarget);
+                events.each('.w-clock', function () {
+                    this.innerHTML = clockHtml;
+                });
 
-                events.each(clockTarget, function () {
-                    this.textContent = clockText;
+                // night
+                events.each('.w-sunset', function () {
+
+                    graphs = events.closest(this, '.weather');
+                    graphs = selector('.graphs:not(.static)', graphs);
+
+                    if (graphs === undefined) { return; }
+
+                    night = this.textContent.split(':');
+
+                    if (night[0].length === 1) { night[0] = '0' + night[0]; } // sunset hour
+                    if (night[1].length === 1) { night[1] = '0' + night[1]; } // sunset minute
+
+                    if (hour > night[0] && minute > night[1]) { // night
+                        events.addClass(graphs, 'night');
+
+                    } else { // day
+                        events.removeClass(graphs, 'night');
+                    }
+
                 });
 
             }
@@ -82,14 +99,14 @@ var weather = {
 
         }
 
-        // load date and clock
+        // check date, clock and night
         dateFnc();
         setInterval(dateFnc, 1000);
 
         // load animation graphics
         loadGraphs = function () {
 
-            var graphs, i, html;
+            var i, html, staticEffects;
 
             graphs = selector('.weather .graphs:not(.loaded)');
             events.each(graphs, function () {
@@ -104,13 +121,46 @@ var weather = {
                         if (data.length > 0) {
 
                             html = '';
+
+                            night = false;
+                            staticEffects = events.hasClass(this, 'static'); // check static weathers
+
                             events.addClass(this, 'loaded');
 
+                            if (!staticEffects) {
+                                night = events.hasClass(this, 'night');
+                            }
+
                             for (i = 0; i < data.length; i += 1) {
+
+                                if (!staticEffects) { // only dynamic weathers
+
+                                    if (night) { // for converting sun to stars
+
+                                        if (data[i] === 'sun') {
+                                            html += '<div class="stars" style="background-image: url(' + weather.graphPath + 'stars.png);"></div>';
+                                        }
+
+                                    } else { // for converting starts to sun
+
+                                        if (data[i] === 'stars') {
+                                            html += '<div class="sun" style="background-image: url(' + weather.graphPath + 'sun.png);"></div>';
+                                        }
+
+                                    }
+
+                                    if (data.length === 1 && (data[i] === 'sun' || data[i] === 'stars')) { // add shooting star if wather is clear
+                                        html += '<div class="shooting-star" style="background-image: url(' + weather.graphPath + 'shooting-star.png);"></div>';
+                                    }
+
+                                }
+
                                 html += '<div class="' + data[i] + '" style="background-image: url(' + weather.graphPath + data[i] + '.png);"></div>';
+
                             }
 
                             this.insertAdjacentHTML('beforeend', html);
+                            html = '';
 
                         }
 
