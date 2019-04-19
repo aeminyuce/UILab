@@ -5,14 +5,14 @@
 .weather .details { width: 100%; position: relative; z-index: 2; }
 
 .weather .top { padding: 30px 10px 20px 10px; }
-.weather .top > b,.weather .top > span { font-weight: 300; text-shadow: 0 1px 1px rgba(0,0,0,.3); vertical-align: middle; display: inline-block; }
-.weather .top > b { font-size: 64px; letter-spacing: -0.025em; line-height: 48px; position: relative; }
-.weather .top > span { font-size: 22px; line-height: normal; padding-left: 20px; }
+.weather .w-degree,.weather .top > span { font-weight: 300; text-shadow: 0 1px 1px rgba(0,0,0,.3); vertical-align: middle; display: inline-block; }
+.weather .w-degree { font-size: 64px; letter-spacing: -0.025em; line-height: 48px; margin-right: 20px; position: relative; }
+.weather .top > span { font-size: 22px; line-height: normal; }
 
 .weather .w-date { font-size: 18px; font-weight: 300; display: block; }
 
-.weather .top > b:after,.weather .days li > span b:after { content: ""; display: block; border: solid 2px #fff; border-radius: 6px; position: absolute; top: 0; }
-.weather .top > b:after { width: 12px; height: 12px; right: -13px; box-shadow: 0 1px 1px rgba(0,0,0,.3); }
+.weather .w-degree:after,.weather .days li > span b:after { content: ""; display: block; border: solid 2px #fff; border-radius: 6px; position: absolute; top: 0; }
+.weather .w-degree:after { width: 12px; height: 12px; right: -13px; box-shadow: 0 1px 1px rgba(0,0,0,.3); }
 .weather .days li > span b:after { width: 6px; height: 6px; border-width: 1px; right: -7px; }
 
 .weather ul,.weather ul { list-style: none; padding: 0; margin-bottom: 0; }

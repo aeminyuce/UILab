@@ -28,7 +28,7 @@ var weather = {
 
     weather.Start = function () {
 
-        var date, dateText, clockText, clockHtml, minute, hour, day, month, that, graphs, sun, sunrise, sunset, icons;
+        var date, dateText, dateHtml, clockText, clockHtml, minute, hour, day, month, that, graphs, sun, sunrise, sunset, icons;
 
         // load animation graphics
         loadGraphs = function () {
@@ -115,11 +115,13 @@ var weather = {
             month = date.getMonth();
             month = weather.months[month];
 
-            dateText += ', ' + day + ' ' + month + ' ' + date.getFullYear();
+            dateHtml = '<span class="w-dayname">' + dateText + '</span>, ' + month + ' ' + day + ', ' + date.getFullYear();
+            dateText = dateText + ', ' + month + ' ' + day + ', ' + date.getFullYear();
+
             if (dateLoaded !== dateText) {
 
                 events.each('.w-date', function () {
-                    this.textContent = dateText;
+                    this.innerHTML = dateHtml;
                 });
 
             }
@@ -133,8 +135,8 @@ var weather = {
             minute = date.getMinutes().toString();
             if (minute.length === 1) { minute = '0' + minute; }
 
-            clockText = hour + ':' + minute;
             clockHtml = '<b>' + hour + '</b><b>' + minute + '</b>';
+            clockText = hour + ':' + minute;
 
             if (clockLoaded !== clockText) {
 
@@ -166,7 +168,7 @@ var weather = {
                     // sun positioning
                     sun = selector('.sun', graphs)[0];
                     if (sun !== undefined) {
-                        sun.style.left = parseInt((hour - sunrise[0]) * 100 / (sunset[0] - sunrise[0])) + '%';
+                        sun.style.left = parseInt((hour - sunrise[0]) * 100 / (sunset[0] - sunrise[0]), 10) + '%';
                     }
 
                     // convert to day or night
