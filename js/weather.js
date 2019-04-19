@@ -150,13 +150,9 @@ var weather = {
                     if (sunset[0].length === 1) { sunset[0] = '0' + sunset[0]; } // sunset hour
                     if (sunset[1].length === 1) { sunset[1] = '0' + sunset[1]; } // sunset minute
 
-                    // sun positioning
-                    sun = selector('.sun', graphs)[0];
-                    if (sun !== undefined) {
-                        sun.style.left = parseInt((hour - sunrise[0]) * 100 / (sunset[0] - sunrise[0]), 10) + '%';
-                    }
-
                     // convert to day or night
+                    sun = selector('.sun', graphs)[0];
+
                     if (((hour === sunrise[0] && minute < sunrise[1]) || hour < sunrise[0]) || ((hour === sunset[0] && minute > sunset[1]) || hour > sunset[0])) { // night
 
                         events.addClass(graphs, 'night');
@@ -172,6 +168,11 @@ var weather = {
                         events.addClass(icons, 'icon-cloud-moon');
                         events.removeClass(icons, 'icon-cloud-sun');
 
+                        // sun positioning
+                        if (sun !== undefined) {
+                            sun.style.removeProperty('left');
+                        }
+
                     } else { // day
 
                         events.removeClass(graphs, 'night');
@@ -186,6 +187,11 @@ var weather = {
 
                         events.addClass(icons, 'icon-cloud-sun');
                         events.removeClass(icons, 'icon-cloud-moon');
+
+                        // sun positioning
+                        if (sun !== undefined) {
+                            sun.style.left = parseInt((hour - sunrise[0]) * 100 / (sunset[0] - sunrise[0]), 10) + '%';
+                        }
 
                     }
 
