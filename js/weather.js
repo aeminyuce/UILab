@@ -28,7 +28,7 @@ var weather = {
 
     weather.Start = function () {
 
-        var date, dateText, clockText, clockHtml, minute, hour, day, month, night, graphs;
+        var date, dateText, clockText, clockHtml, minute, hour, day, month, that, graphs,  sunrise, sunset, icons;
 
         function dateFnc() {
 
@@ -74,21 +74,54 @@ var weather = {
                 // night
                 events.each('.w-sunset', function () {
 
-                    graphs = events.closest(this, '.weather');
-                    graphs = selector('.graphs:not(.static)', graphs);
+                    that = events.closest(this, '.weather')[0];
 
+                    graphs = selector('.graphs:not(.static)', that);
                     if (graphs === undefined) { return; }
 
-                    night = this.textContent.split(':');
+                    sunrise = selector('.w-sunrise', that)[0];
+                    if (sunrise === undefined) { return; }
 
-                    if (night[0].length === 1) { night[0] = '0' + night[0]; } // sunset hour
-                    if (night[1].length === 1) { night[1] = '0' + night[1]; } // sunset minute
+                    sunrise = sunrise.textContent.split(':');
 
-                    if ((hour === night[0] && minute > night[1]) || hour > night[0]) { // night
+                    if (sunrise[0].length === 1) { sunrise[0] = '0' + sunrise[0]; } // sunrise hour
+                    if (sunrise[1].length === 1) { sunrise[1] = '0' + sunrise[1]; } // sunrise minute
+
+                    sunset = this.textContent.split(':');
+
+                    if (sunset[0].length === 1) { sunset[0] = '0' + sunset[0]; } // sunset hour
+                    if (sunset[1].length === 1) { sunset[1] = '0' + sunset[1]; } // sunset minute
+
+                    if (((hour === sunrise[0] && minute < sunrise[1]) || hour < sunrise[0]) || ((hour === sunset[0] && minute > sunset[1]) || hour > sunset[0])) { // night
+
                         events.addClass(graphs, 'night');
 
+                        // convert sun icons to moon
+                        icons = selector('.icon-sun', that);
+
+                        events.addClass(icons, 'icon-moon');
+                        events.removeClass(icons, 'icon-sun');
+
+                        icons = selector('.icon-cloud-sun', that);
+
+                        events.addClass(icons, 'icon-cloud-moon');
+                        events.removeClass(icons, 'icon-cloud-sun');
+
                     } else { // day
+
                         events.removeClass(graphs, 'night');
+
+                        // convert moon icons to sun
+                        icons = selector('.icon-moon', that);
+
+                        events.addClass(icons, 'icon-sun');
+                        events.removeClass(icons, 'icon-moon');
+
+                        icons = selector('.icon-cloud-moon', that);
+
+                        events.addClass(icons, 'icon-cloud-sun');
+                        events.removeClass(icons, 'icon-cloud-moon');
+
                     }
 
                 });
@@ -122,20 +155,20 @@ var weather = {
 
                             html = '';
 
-                            night = false;
+                            sunset = false;
                             staticEffects = events.hasClass(this, 'static'); // check static weathers
 
                             events.addClass(this, 'loaded');
 
                             if (!staticEffects) {
-                                night = events.hasClass(this, 'night');
+                                sunset = events.hasClass(this, 'night');
                             }
 
                             for (i = 0; i < data.length; i += 1) {
 
                                 if (!staticEffects) { // only dynamic weathers
 
-                                    if (night) { // for converting sun to stars
+                                    if (sunset) { // for converting sun to stars
 
                                         if (data[i] === 'sun') {
                                             html += '<div class="stars" style="background-image: url(' + weather.graphPath + 'stars.png);"></div>';
