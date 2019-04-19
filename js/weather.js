@@ -55,18 +55,18 @@ var weather = {
 
                                 // for converting sun to stars or starts to sun
                                 if (data[i] === 'sun') {
-                                    html += '<div class="stars" style="background-image: url(' + weather.graphPath + 'stars.png);"></div>';
+                                    html += '<div class="stars ease-position ease-slow2x" style="background-image: url(' + weather.graphPath + 'stars.png);"></div>';
                                 }
 
                                 if (data[i] === 'stars') {
-                                    html += '<div class="sun" style="background-image: url(' + weather.graphPath + 'sun.png);"></div>';
+                                    html += '<div class="sun ease-position ease-slow2x" style="background-image: url(' + weather.graphPath + 'sun.png);"></div>';
                                 }
 
                                 if (data.length === 1 && (data[i] === 'sun' || data[i] === 'stars')) { // add shooting star if wather is clear
                                     html += '<div class="shooting-star" style="background-image: url(' + weather.graphPath + 'shooting-star.png);"></div>';
                                 }
 
-                                html += '<div class="' + data[i] + '" style="background-image: url(' + weather.graphPath + data[i] + '.png);"></div>';
+                                html += '<div class="' + data[i] + ' ease-position ease-slow2x" style="background-image: url(' + weather.graphPath + data[i] + '.png);"></div>';
 
                             }
 

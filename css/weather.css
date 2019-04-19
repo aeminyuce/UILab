@@ -48,6 +48,9 @@ html:not(.mobile) .weather .info a:hover { opacity: .65; }
 .weather .w-clock b:first-child:after { content: ":"; animation: clock 2s linear infinite; }
 
 .weather .graphs { height: 100%; overflow: hidden; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1; }
+.weather .graphs:not(.night) { background: #51a9f8; }
+.weather .graphs.night { background: #20496d; }
+
 .weather .graphs:after { content: ""; display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
 
 .weather [data-graphs*="cloud-heavy"]:after,.weather [data-graphs*="rain"]:after,
@@ -55,12 +58,6 @@ html:not(.mobile) .weather .info a:hover { opacity: .65; }
 
 .night[data-graphs*="cloud-heavy"]:after,.night[data-graphs*="rain"]:after,
 .night[data-graphs*="snow"]:after,.night[data-graphs*="bolt"]:after { background: rgba(0,0,0,.3); }
-
-.weather .graphs:not(.night) { background: linear-gradient(to bottom right, #7ecaff, #0c75ed); }
-.weather .graphs.night { background: linear-gradient(to bottom right, #2a5881, #0a2740); }
-
-.ie9 .weather .graphs:not(.night) { background: #51a9f8; }
-.ie9 .weather .graphs.night { background: #20496d; }
 
 .weather .graphs > div { position: absolute; }
 
