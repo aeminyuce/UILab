@@ -28,113 +28,7 @@ var weather = {
 
     weather.Start = function () {
 
-        var date, dateText, clockText, clockHtml, minute, hour, day, month, that, graphs,  sunrise, sunset, icons;
-
-        function dateFnc() {
-
-            // date
-            date = new Date();
-
-            day = date.getDay();
-            dateText = weather.days[day];
-
-            day = day.toString();
-            if (day.length === 1) { day = '0' + day; }
-
-            month = date.getMonth();
-            month = weather.months[month];
-
-            dateText += ', ' + day + ' ' + month + ' ' + date.getFullYear();
-            if (dateLoaded !== dateText) {
-
-                events.each('.w-date', function () {
-                    this.textContent = dateText;
-                });
-
-            }
-
-            dateLoaded = dateText;
-
-            // clock
-            hour = date.getHours().toString();
-            if (hour.length === 1) { hour = '0' + hour; }
-
-            minute = date.getMinutes().toString();
-            if (minute.length === 1) { minute = '0' + minute; }
-
-            clockText = hour + ':' + minute;
-            clockHtml = '<b>' + hour + '</b><b>' + minute + '</b>';
-
-            if (clockLoaded !== clockText) {
-
-                events.each('.w-clock', function () {
-                    this.innerHTML = clockHtml;
-                });
-
-                // night
-                events.each('.w-sunset', function () {
-
-                    that = events.closest(this, '.weather')[0];
-
-                    graphs = selector('.graphs:not(.static)', that);
-                    if (graphs === undefined) { return; }
-
-                    sunrise = selector('.w-sunrise', that)[0];
-                    if (sunrise === undefined) { return; }
-
-                    sunrise = sunrise.textContent.split(':');
-
-                    if (sunrise[0].length === 1) { sunrise[0] = '0' + sunrise[0]; } // sunrise hour
-                    if (sunrise[1].length === 1) { sunrise[1] = '0' + sunrise[1]; } // sunrise minute
-
-                    sunset = this.textContent.split(':');
-
-                    if (sunset[0].length === 1) { sunset[0] = '0' + sunset[0]; } // sunset hour
-                    if (sunset[1].length === 1) { sunset[1] = '0' + sunset[1]; } // sunset minute
-
-                    if (((hour === sunrise[0] && minute < sunrise[1]) || hour < sunrise[0]) || ((hour === sunset[0] && minute > sunset[1]) || hour > sunset[0])) { // night
-
-                        events.addClass(graphs, 'night');
-
-                        // convert sun icons to moon
-                        icons = selector('.icon-sun', that);
-
-                        events.addClass(icons, 'icon-moon');
-                        events.removeClass(icons, 'icon-sun');
-
-                        icons = selector('.icon-cloud-sun', that);
-
-                        events.addClass(icons, 'icon-cloud-moon');
-                        events.removeClass(icons, 'icon-cloud-sun');
-
-                    } else { // day
-
-                        events.removeClass(graphs, 'night');
-
-                        // convert moon icons to sun
-                        icons = selector('.icon-moon', that);
-
-                        events.addClass(icons, 'icon-sun');
-                        events.removeClass(icons, 'icon-moon');
-
-                        icons = selector('.icon-cloud-moon', that);
-
-                        events.addClass(icons, 'icon-cloud-sun');
-                        events.removeClass(icons, 'icon-cloud-moon');
-
-                    }
-
-                });
-
-            }
-
-            clockLoaded = clockText;
-
-        }
-
-        // check date, clock and night
-        dateFnc();
-        setInterval(dateFnc, 1000);
+        var date, dateText, clockText, clockHtml, minute, hour, day, month, that, graphs, sun, sunrise, sunset, icons;
 
         // load animation graphics
         loadGraphs = function () {
@@ -182,10 +76,10 @@ var weather = {
 
                                     }
 
-                                    if (data.length === 1 && (data[i] === 'sun' || data[i] === 'stars')) { // add shooting star if wather is clear
-                                        html += '<div class="shooting-star" style="background-image: url(' + weather.graphPath + 'shooting-star.png);"></div>';
-                                    }
+                                }
 
+                                if (data.length === 1 && (data[i] === 'sun' || data[i] === 'stars')) { // add shooting star if wather is clear
+                                    html += '<div class="shooting-star" style="background-image: url(' + weather.graphPath + 'shooting-star.png);"></div>';
                                 }
 
                                 html += '<div class="' + data[i] + '" style="background-image: url(' + weather.graphPath + data[i] + '.png);"></div>';
@@ -206,6 +100,119 @@ var weather = {
         };
 
         loadGraphs();
+
+        function dateFnc() {
+
+            // date
+            date = new Date();
+
+            day = date.getDay();
+            dateText = weather.days[day];
+
+            day = day.toString();
+            if (day.length === 1) { day = '0' + day; }
+
+            month = date.getMonth();
+            month = weather.months[month];
+
+            dateText += ', ' + day + ' ' + month + ' ' + date.getFullYear();
+            if (dateLoaded !== dateText) {
+
+                events.each('.w-date', function () {
+                    this.textContent = dateText;
+                });
+
+            }
+
+            dateLoaded = dateText;
+
+            // clock
+            hour = date.getHours().toString();
+            if (hour.length === 1) { hour = '0' + hour; }
+
+            minute = date.getMinutes().toString();
+            if (minute.length === 1) { minute = '0' + minute; }
+
+            clockText = hour + ':' + minute;
+            clockHtml = '<b>' + hour + '</b><b>' + minute + '</b>';
+
+            if (clockLoaded !== clockText) {
+
+                events.each('.w-clock', function () {
+                    this.innerHTML = clockHtml;
+                });
+
+                // check sunrise and sunset
+                events.each('.w-sunset', function () {
+
+                    that = events.closest(this, '.weather')[0];
+
+                    graphs = selector('.graphs:not(.static)', that)[0];
+                    if (graphs === undefined) { return; }
+
+                    sunrise = selector('.w-sunrise', that)[0];
+                    if (sunrise === undefined) { return; }
+
+                    sunrise = sunrise.textContent.split(':');
+
+                    if (sunrise[0].length === 1) { sunrise[0] = '0' + sunrise[0]; } // sunrise hour
+                    if (sunrise[1].length === 1) { sunrise[1] = '0' + sunrise[1]; } // sunrise minute
+
+                    sunset = this.textContent.split(':');
+
+                    if (sunset[0].length === 1) { sunset[0] = '0' + sunset[0]; } // sunset hour
+                    if (sunset[1].length === 1) { sunset[1] = '0' + sunset[1]; } // sunset minute
+
+                    // sun positioning
+                    sun = selector('.sun', graphs)[0];
+                    if (sun !== undefined) {
+                        sun.style.left = parseInt((hour - sunrise[0]) * 100 / (sunset[0] - sunrise[0])) + '%';
+                    }
+
+                    // convert to day or night
+                    if (((hour === sunrise[0] && minute < sunrise[1]) || hour < sunrise[0]) || ((hour === sunset[0] && minute > sunset[1]) || hour > sunset[0])) { // night
+
+                        events.addClass(graphs, 'night');
+
+                        // convert sun icons to moon
+                        icons = selector('.icon-sun', that);
+
+                        events.addClass(icons, 'icon-moon');
+                        events.removeClass(icons, 'icon-sun');
+
+                        icons = selector('.icon-cloud-sun', that);
+
+                        events.addClass(icons, 'icon-cloud-moon');
+                        events.removeClass(icons, 'icon-cloud-sun');
+
+                    } else { // day
+
+                        events.removeClass(graphs, 'night');
+
+                        // convert moon icons to sun
+                        icons = selector('.icon-moon', that);
+
+                        events.addClass(icons, 'icon-sun');
+                        events.removeClass(icons, 'icon-moon');
+
+                        icons = selector('.icon-cloud-moon', that);
+
+                        events.addClass(icons, 'icon-cloud-sun');
+                        events.removeClass(icons, 'icon-cloud-moon');
+
+                    }
+
+                });
+
+            }
+
+            clockLoaded = clockText;
+
+        }
+
+        // check date, clock and night
+        dateFnc();
+        setInterval(dateFnc, 1000);
 
     };
 
