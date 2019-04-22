@@ -1,4 +1,11 @@
 /* weather */
+.ease-weather .graphs,.ease-weather .graphs > div { transition-duration: .8s; }
+.ease-weather .graphs { transition-property: background-color; }
+.ease-weather .graphs > div { transition-property: left; }
+.ease-weather .info a { transition-property: opacity; transition-duration: .15s; }
+
+.no-transitions-all .ease-weather .graphs,.no-transitions-all .ease-weather .graphs > div,.no-transitions-all .ease-weather .info a { transition-property: none !important; }
+
 .weather,.weather a { color: #fff; }
 .weather { overflow: hidden; position: relative; -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
 
