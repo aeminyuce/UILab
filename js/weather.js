@@ -28,7 +28,9 @@ var weather = {
 
     weather.Start = function () {
 
-        var date, dateText, dateHtml, clockText, clockHtml, minute, hour, day, month, that, graphs, sun, sunrise, sunset, icons;
+        var date, dateText, dateHtml, clockText, clockHtml, minute, hour, day, month, that, graphs, animations, sun, sunrise, sunset, icons;
+
+        animations = [];
 
         // load animation graphics
         loadGraphs = function () {
@@ -48,6 +50,7 @@ var weather = {
                         if (data.length > 0) {
 
                             html = '';
+                            animations = [];
 
                             events.addClass(this, 'loaded');
 
@@ -55,19 +58,23 @@ var weather = {
 
                                 // for converting sun to stars or starts to sun
                                 if (data[i] === 'sun') {
-                                    html += '<div class="stars ease-position ease-slow2x" style="background-image: url(' + weather.graphPath + 'stars.png);"></div>';
-                                }
+                                    animations.push('stars');
 
-                                if (data[i] === 'stars') {
-                                    html += '<div class="sun ease-position ease-slow2x" style="background-image: url(' + weather.graphPath + 'sun.png);"></div>';
+                                } else if (data[i] === 'stars') {
+                                    animations.push('sun');
                                 }
 
                                 if (data.length === 1 && (data[i] === 'sun' || data[i] === 'stars')) { // add shooting star if wather is clear
-                                    html += '<div class="shooting-star" style="background-image: url(' + weather.graphPath + 'shooting-star.png);"></div>';
+                                    animations.push('shooting-star');
                                 }
 
-                                html += '<div class="' + data[i] + ' ease-position ease-slow2x" style="background-image: url(' + weather.graphPath + data[i] + '.png);"></div>';
+                                animations.push(data[i]);
 
+                            }
+
+                            // create animations
+                            for (i = 0; i < animations.length; i += 1) {
+                                html += '<div class="' + animations[i] + '" style="background-image: url(' + weather.graphPath + animations[i] + '.png);"></div>';
                             }
 
                             this.insertAdjacentHTML('beforeend', html);
