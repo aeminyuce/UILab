@@ -56,11 +56,10 @@ var weather = {
 
                             for (i = 0; i < data.length; i += 1) {
 
-                                // for converting sun to stars or starts to sun
-                                if (data[i] === 'sun') {
+                                if (data[i] === 'sun') { // convert sun to stars
                                     animations.push('stars');
 
-                                } else if (data[i] === 'stars') {
+                                } else if (data[i] === 'stars') { // convert stars to sun
                                     animations.push('sun');
                                 }
 
@@ -68,7 +67,7 @@ var weather = {
                                     animations.push('shooting-star');
                                 }
 
-                                animations.push(data[i]);
+                                animations.push(data[i]); // add other animations
 
                             }
 
