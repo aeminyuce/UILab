@@ -50,7 +50,7 @@
 
                     for (i = 0; i < response.length; i += 1) {
                         if (response[i] !== null) {
-                            console.log(response[i]["your json key of value"]);
+                            console.log(response[i].yourJSONvalue);
                         }
                     }
 
