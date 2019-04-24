@@ -144,6 +144,7 @@ var modal = {
 
                 content.style.removeProperty('width');
                 content.style.removeProperty('height');
+                content.style.removeProperty('min-height');
 
                 if (set.size === undefined) {
 
@@ -227,8 +228,8 @@ var modal = {
                         content.style.top = Math.floor((bg[0].offsetHeight - content.offsetHeight) / 2) + 'px';
                         content.style.left = Math.floor((bg[0].offsetWidth - content.offsetWidth) / 2) + 'px';
 
-                        if (size !== undefined && size !== 'fullscreen') { // inherit fixed size && fulscreen
-                            content.style.height = content.offsetHeight + 'px';
+                        if (size !== undefined && size !== 'fullscreen') { // inherit fixed size && fullscreen
+                            content.style.minHeight = content.offsetHeight + 'px';
                         }
 
                         setTimeout(function () {
