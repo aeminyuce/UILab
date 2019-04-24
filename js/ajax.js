@@ -24,7 +24,7 @@
 
     var myJSONRequests = [];
 
-    ajax('GET', 'ajaxtest.php?name=value&name=value', function (response, status) {
+    ajax('GET', 'ajaxtest.php?name=value&name=value', function (response, status, xhr) {
 
         var i, n, target;
 
