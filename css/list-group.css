@@ -1,5 +1,5 @@
 /* list group */
-.ease-list-group li,.ease-list-group li > a,.ease-list-group .list-icon { transition-property: background-color; transition-duration: .15s; }
+.ease-list-group li,.ease-list-group li > a { transition-property: background-color; transition-duration: .15s; }
 .ease-list-group .list-icon { transition-property: opacity; transition-duration: .15s; }
 .no-transitions-all .ease-list-group li,.no-transitions-all .ease-list-group li > a,.no-transitions-all .ease-list-group li .list-icon { transition-property: none !important; }
 
