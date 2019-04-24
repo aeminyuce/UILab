@@ -1,6 +1,6 @@
 /*
  Modal JS
- Autocomplete JS requires Events JS, Ajax JS
+ Modal JS requires Events JS, Ajax JS
 */
 
 var modal = {
