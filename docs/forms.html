@@ -857,34 +857,45 @@
                                 </div>
 
                                 <div class="col-3">
-                                    <label class="form-grid" for="required4">Required with password and min length</label>
+                                    <label class="form-grid" for="required4">Required with min and max number</label>
                                 </div>
                                 <div class="col-9">
                                     <div class="text rounded dual-bordered ease-form">
-                                        <input class="required" id="required4" type="password" minlength="8">
+                                        <input class="required" id="required4" type="text" minnumber="-5" maxnumber="10">
+                                    </div>
+                                    <p class="required-msg rounded">Minimum number is -5 and maximum number is 10.</p>
+                                    <i class="hint dark">* Required</i>
+                                </div>
+
+                                <div class="col-3">
+                                    <label class="form-grid" for="required5">Required with password and min length</label>
+                                </div>
+                                <div class="col-9">
+                                    <div class="text rounded dual-bordered ease-form">
+                                        <input class="required" id="required5" type="password" minlength="8">
                                     </div>
                                     <p class="required-msg rounded">Minimum length is 8 characters.</p>
                                     <i class="hint dark">* Required</i>
                                 </div>
 
                                 <div class="col-3">
-                                    <label class="form-grid" for="required5">Required with email</label>
+                                    <label class="form-grid" for="required6">Required with email</label>
                                 </div>
                                 <div class="col-9">
                                     <div class="text rounded dual-bordered ease-form">
-                                        <input class="required" id="required5" type="email">
+                                        <input class="required" id="required6" type="email">
                                     </div>
                                     <p class="required-msg rounded">Enter a valid email.</p>
                                     <i class="hint dark">* Required</i>
                                 </div>
 
                                 <div class="col-3">
-                                    <label class="form-grid" for="required6">Required with select forms.</label>
+                                    <label class="form-grid" for="required7">Required with select forms.</label>
                                 </div>
                                 <div class="col-9">
                                     <div class="select rounded dual-bordered ease-form">
                                         <i class="icon icon-sm icon-angle-down ease-layout"></i>
-                                        <select id="required6" class="required">
+                                        <select id="required7" class="required">
                                             <option value="">Select</option>
                                             <option>First</option>
                                             <option>Second</option>
@@ -895,7 +906,7 @@
                                 </div>
 
                                 <div class="col-3">
-                                    <label class="form-grid" for="required7">Required with form holders</label>
+                                    <label class="form-grid" for="required8">Required with form holders</label>
                                 </div>
                                 <div class="col-9">
                                     <div class="form-holder">
@@ -905,7 +916,7 @@
                                                 <div class="row row-no-padding">
                                                     <div class="col-12">
                                                         <div class="text rounded dual-bordered ease-form">
-                                                            <input id="required7" class="required" type="text" placeholder="Keyword">
+                                                            <input id="required8" class="required" type="text" placeholder="Keyword">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -934,23 +945,23 @@
                                 </div>
 
                                 <div class="col-3">
-                                    <label class="form-grid" for="required8">Required with textarea forms and min length.</label>
+                                    <label class="form-grid" for="required9">Required with textarea forms and min length.</label>
                                 </div>
                                 <div class="col-9">
                                     <div class="textarea margin-10-b rounded dual-bordered ease-form">
-                                        <textarea id="required8" class="required" placeholder="Write your comments." minlength="10"></textarea>
+                                        <textarea id="required9" class="required" placeholder="Write your comments." minlength="10"></textarea>
                                     </div>
                                     <p class="required-msg rounded">Please, write your comments more than 10 characters.</p>
                                     <i class="hint dark">* Required</i>
                                 </div>
 
                                 <div class="col-3">
-                                    <label class="form-grid" for="required9">Required with checkboxes.</label>
+                                    <label class="form-grid" for="required10">Required with checkboxes.</label>
                                 </div>
                                 <div class="col-9">
                                     <div class="required-accept">
                                         <label class="check">
-                                            <input id="required9" class="required" type="checkbox"> Checkbox
+                                            <input id="required10" class="required" type="checkbox"> Checkbox
                                         </label>
                                     </div>
                                     <p class="required-msg rounded">Please, read and accept Terms and Conditions.</p>
@@ -958,12 +969,12 @@
                                 </div>
 
                                 <div class="col-3">
-                                    <label class="form-grid" for="required10">Required with indeterminate checkboxes.</label>
+                                    <label class="form-grid" for="required11">Required with indeterminate checkboxes.</label>
                                 </div>
                                 <div class="col-9">
                                     <div class="required-accept">
                                         <label class="check">
-                                            <input id="required10" class="required indeterminate" type="checkbox"> Indeterminate
+                                            <input id="required11" class="required indeterminate" type="checkbox"> Indeterminate
                                         </label>
                                     </div>
                                     <p class="required-msg rounded">Please, read and accept Terms and Conditions.</p>
@@ -971,27 +982,27 @@
                                 </div>
 
                                 <div class="col-3">
-                                    <label class="form-grid" for="required11">Required with custom checks.</label>
+                                    <label class="form-grid" for="required12">Required with custom checks.</label>
                                 </div>
                                 <div class="col-9">
                                     <div class="required-accept">
                                         <div class="check-custom rounded dual-bordered">
-                                            <input id="required11" class="required" type="checkbox">
+                                            <input id="required12" class="required" type="checkbox">
                                             <i class="ease-form-custom"></i>
                                         </div>
-                                        <label for="required11" class="label-custom">Custom Checkbox</label>
+                                        <label for="required13" class="label-custom">Custom Checkbox</label>
                                     </div>
                                     <p class="required-msg rounded">Please, check this checkbox.</p>
                                     <i class="hint dark">* Required</a></i>
                                 </div>
 
                                 <div class="col-3">
-                                    <label class="form-grid" for="required12">Required with radios.</label>
+                                    <label class="form-grid" for="required13">Required with radios.</label>
                                 </div>
                                 <div class="col-9">
                                     <div class="required-accept">
                                         <label class="radio">
-                                            <input id="required12" class="required" type="radio" name="radiotest3"> Radio1
+                                            <input id="required14" class="required" type="radio" name="radiotest3"> Radio1
                                         </label>
                                         <label class="radio">
                                             <input class="required" type="radio" name="radiotest3"> Radio2
@@ -1005,40 +1016,40 @@
                                 </div>
 
                                 <div class="col-3">
-                                    <label class="form-grid" for="required13">Required with custom radios.</label>
+                                    <label class="form-grid" for="required14">Required with custom radios.</label>
                                 </div>
                                 <div class="col-9">
                                     <div class="required-accept">
                                         <div class="radio-custom dual-bordered ease-form">
-                                            <input id="required13" class="required" type="radio" name="radiotest4">
+                                            <input id="required15" class="required" type="radio" name="radiotest4">
                                             <i class="ease-form-custom"></i>
                                         </div>
-                                        <label for="required13" class="label-custom">Custom Radio1</label>
+                                        <label for="required15" class="label-custom">Custom Radio1</label>
                                         <div class="radio-custom dual-bordered ease-form">
-                                            <input id="required132" class="required"type="radio" name="radiotest4">
+                                            <input id="required152" class="required"type="radio" name="radiotest4">
                                             <i class="ease-form-custom"></i>
                                         </div>
-                                        <label for="required132" class="label-custom">Custom Radio2</label>
+                                        <label for="required152" class="label-custom">Custom Radio2</label>
                                         <div class="radio-custom dual-bordered ease-form">
-                                            <input id="required133" class="required" type="radio" name="radiotest4">
+                                            <input id="required153" class="required" type="radio" name="radiotest4">
                                             <i class="ease-form-custom"></i>
                                         </div>
-                                        <label for="required133" class="label-custom">Custom Radio2</label>
+                                        <label for="required153" class="label-custom">Custom Radio2</label>
                                     </div>
                                     <p class="required-msg rounded">Please, select any option.</p>
                                     <i class="hint dark">* Required</i>
                                 </div>
 
                                 <div class="col-3">
-                                    <label class="form-grid" for="required14">Required with custom checks.</label>
+                                    <label class="form-grid" for="required16">Required with custom checks.</label>
                                 </div>
                                 <div class="col-9">
                                     <div class="required-accept">
                                         <div class="switch-custom rounded dual-bordered ease-form">
-                                            <input id="required14" class="required" type="checkbox">
+                                            <input id="required16" class="required" type="checkbox">
                                             <i class="ease-form-custom"></i>
                                         </div>
-                                        <label for="required14">Custom Switch</label>
+                                        <label for="required16">Custom Switch</label>
                                     </div>
                                     <p class="required-msg rounded">Please, read and accept Terms and Conditions.</p>
                                     <i class="hint dark">* Required for accepting <a href="#" class="underline">Terms and Conditions.</a></i>
