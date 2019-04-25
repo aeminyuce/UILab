@@ -57,6 +57,7 @@ html:not(.mobile) .weather .info a:hover { opacity: .65; }
 .weather .graphs { height: 100%; overflow: hidden; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1; }
 .weather .graphs:not(.night) { background: #51a9f8; }
 .weather .graphs.night { background: #20496d; }
+.weather.rounded .graphs { border-radius: 6px; }
 
 .weather .graphs:after { content: ""; display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
 
