@@ -16,6 +16,6 @@
 .ie9 .text.dual-bordered[data-placeholder]:after { line-height: 18px; height: 28px; }
 .ie9 .hide-placeholder:after { display: none; }
 
-.ie9 [data-placeholder]:after { color: #999; }
+.ie9 [data-placeholder]:after { color: rgba(0,0,0,.4); }
 .ie9 .form-light[data-placeholder]:after { color: #fff; }
-.ie9 .form-focus[data-placeholder]:after { color: #c5c5c5; }
+.ie9 .form-focus[data-placeholder]:after { color: rgba(0,0,0,.23); }
