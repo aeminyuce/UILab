@@ -229,7 +229,10 @@ var modal = {
                         content.style.left = Math.floor((bg[0].offsetWidth - content.offsetWidth) / 2) + 'px';
 
                         if (size !== undefined && size !== 'fullscreen') { // inherit fixed size && fullscreen
+
+                            content.style.width = content.offsetWidth + 'px';
                             content.style.minHeight = content.offsetHeight + 'px';
+
                         }
 
                         setTimeout(function () {
