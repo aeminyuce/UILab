@@ -43,8 +43,8 @@ html:not(.mobile) .select-multi > .icon { display: none; }
 .form-light > input,.form-light > select:not(:focus),.form-light > textarea,.mobile .select-multi.form-light:before,.form-light > .icon { color: #fff; }
 .form-light > input:-webkit-autofill:not(:focus) { -webkit-text-fill-color: white !important; }
 
-.error { background-color: rgba(220,0,15,.1) !important; border-color: #dc000f !important; }
-.warning { background-color: rgba(255,166,0,.1) !important; border-color: #ffa600 !important; }
+.error:not(.form-holder) { background-color: rgba(220,0,15,.1) !important; border-color: #dc000f !important; }
+.warning:not(.form-holder) { background-color: rgba(255,166,0,.1) !important; border-color: #ffa600 !important; }
 
 .clear-form:not(.open) { display: none; }
 .clear-form:not(.open-ease) { opacity: 0; }
