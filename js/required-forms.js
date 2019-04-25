@@ -25,7 +25,7 @@ var requiredForms = {
 
         function required(that, type) {
 
-            var p, parentType, checkHolder, checkForms, holderForms, next, showMsg, hideErr, showErr, min, val, reMail, radios, radiosCheck, i;
+            var p, parentType, checkHolder, checkForms, holderForms, next, showMsg, hideErr, showErr, min, max, val, reMail, radios, radiosCheck, i;
 
             hideErr = function () {
 
@@ -114,6 +114,29 @@ var requiredForms = {
 
                     if (min !== null && min !== '' && !isNaN(min)) {
                         if (val.length < min) { showErr(); }
+                    }
+
+                }
+
+                // check min and max numbers
+                if (type !== 'select') {
+
+                    min = t.getAttribute('minnumber');
+                    if (min !== null && min !== '' && !isNaN(min)) {
+
+                        if (!isNaN(val)) {
+                            if (Number(val) < Number(min)) { showErr(); }
+                        } else { showErr(); }
+
+                    }
+
+                    max = t.getAttribute('maxnumber');
+                    if (max !== null && max !== '' && !isNaN(max)) {
+
+                        if (!isNaN(val)) {
+                            if (Number(val) > Number(max)) { showErr(); }
+                        } else { showErr(); }
+
                     }
 
                 }
