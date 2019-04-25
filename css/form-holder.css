@@ -29,4 +29,10 @@
 .form-holder.error .btn[class*="bordered"],
 .form-holder.error img[class*="bordered"] { border-color: #dc000f !important; }
 
-.form-holder.error .text,.form-holder.error .select { background-color: #fffcfc !important; }
+.form-holder.error .text,.form-holder.error .select { background-color: rgba(220,0,15,.1); }
+
+.form-holder.warning .text,.form-holder.warning .select,
+.form-holder.warning .btn[class*="bordered"],
+.form-holder.warning img[class*="bordered"] { border-color: #ffa600 !important; }
+
+.form-holder.warning .text,.form-holder.warning .select { background-color: rgba(255,166,0,.1); }
