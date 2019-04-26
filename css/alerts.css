@@ -21,15 +21,15 @@
 button.dialog-error,button.dialog-success { color: #fff !important; }
 
 button.dialog-error { background-color: #dc000f; }
-button.dialog-error:focus { box-shadow: 0 0 10px #dc000f; }
+button.dialog-error:focus { box-shadow: 0 0 0 3px rgba(220,0,15,.35); }
 html:not(.mobile) button.dialog-error:hover { background-color: #e43944; }
 
 button.dialog-success { background-color: #2dbd3a; }
-button.dialog-success:focus { box-shadow: 0 0 10px #2dbd3a; }
+button.dialog-success:focus { box-shadow: 0 0 0 3px rgba(45,189,58,.35); }
 html:not(.mobile) button.dialog-success:hover { background-color: #5ccc66; }
 
 button.dialog-custom { background-color: rgba(0,0,0,.08); }
-button.dialog-custom:focus { box-shadow: 0 0 10px #777; }
+button.dialog-custom:focus { box-shadow: 0 0 0 3px rgba(0,0,0,.15); }
 html:not(.mobile) button.dialog-custom:hover { background-color: rgba(0,0,0,.15); }
 
 .alerts-msg { text-align: center; width: 280px; min-height: 30px; padding: 10px; position: fixed; z-index: 99; cursor: pointer; }
