@@ -5,6 +5,8 @@
 
 .btn { text-align: center; vertical-align: middle; line-height: 20px; height: 32px; background-color: rgba(0,0,0,.08); padding-top: 6px; padding-bottom: 6px; display: inline-block; position: relative; }
 input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+.btn:focus { box-shadow: 0 0 0 3px rgba(0,0,0,.15); }
+
 .btn.bordered { padding-top: 5px; padding-bottom: 5px; }
 .btn.dual-bordered { padding-top: 4px; padding-bottom: 4px; }
 .btn-square { width: 32px; }
