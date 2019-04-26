@@ -64,6 +64,23 @@ var textareaCounter = {};
 
         });
 
+        events.on(document, 'reset', 'form', function () {
+
+            var i, that;
+
+            that = selector('.textarea[data-counter] textarea');
+            if (that.length === 0) { return; }
+
+            setTimeout(function () {
+
+                for (i = 0; i < that.length; i += 1) {
+                    counter(that[i]);
+                }
+
+            }, 0);
+
+        });
+
     };
 
     // Loaders
