@@ -5,7 +5,7 @@
 
 .dropdown { vertical-align: middle; display: inline-block; position: relative; }
 .dropdown.open { z-index: 19; }
-.dropdown > .btn { width: 100%; }
+.dropdown > .btn:not(.btn-square) { width: 100%; }
 .dropdown.open-ease > .btn .icon-toggle { transform: scaleY(-1); }
 .dropdown:not(.open) .content { display: none; }
 .dropdown:not(.open-ease) .content { opacity: 0; }
@@ -38,6 +38,7 @@ html:not(.mobile) .dropdown ul.content > li:hover { background-color: rgba(0,0,0
 .dropdown ul.content.has-icon > li a { padding-right: 38px; margin-right: -38px; }
 .dropdown ul.content.has-icon > li .list-icon { position: absolute; top: 50%; right: 10px; transform: translateY(-50%); opacity: .45; }
 
+.dropdown ul.content.has-grid { min-width: 200px; }
 .dropdown ul.content.has-grid > li:not(.sep) { text-align: center; width: 50%; float: left; }
 .dropdown ul.content.has-grid li:not(.sep):not(:nth-last-child(2)):not(:last-child) { border-bottom: solid 1px rgba(0,0,0,.045); }
 .dropdown ul.content.has-grid li:not(.sep):nth-child(n+1) { border-right: solid 1px rgba(0,0,0,.045); }

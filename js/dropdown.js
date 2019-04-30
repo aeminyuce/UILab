@@ -73,9 +73,9 @@ var dropdown = {};
                     }, 50);
 
                     offset = parent.getBoundingClientRect();
-
                     list = selector('.content', parent)[0];
-                    if (screen.width < 481) {
+
+                    if (screen.width < 481 && !events.hasClass(list, 'has-grid')) {
                         list.style.minWidth = parent.offsetWidth + 'px';
                     }
 
