@@ -479,6 +479,7 @@ var carousel = {
                 events.off(document, 'touchmove');
                 events.on(document, 'touchmove', function (e) {
 
+                    if (events.hasClass(document, 'photo-preview-opened')) { return; } // stop if photo gallery is opened
                     if (isScrolling) { return; }
 
                     if (e.cancelable && e.defaultPrevented) { // touchstart or touchmove with preventDefault we need this. Because, now Chrome and Android browsers preventDefault automatically.
