@@ -169,10 +169,10 @@ var photoGallery = {
             // create gallery
             index = Array.prototype.slice.call(images).indexOf(that);
 
-            html = '<div class="photo-preview ease-layout ease-1st-btn">' +
-                    '<button class="btn btn-square btn-lg btn-invisible close-photo-preview"><i class="icon icon-lg ' + photoGallery.closeIcon + ' no-opacity"></i></button>' +
-                    '<button type="button" class="preview-prev"><i class="icon ' + photoGallery.prevIcon + ' icon-xl"></i></button>' +
-                    '<button type="button" class="preview-next"><i class="icon ' + photoGallery.nextIcon + ' icon-xl"></i></button>' +
+            html = '<div class="photo-preview ease-layout">' +
+                    '<button class="btn btn-square btn-lg btn-invisible close-photo-preview ease-btn"><i class="icon icon-lg ' + photoGallery.closeIcon + ' no-opacity"></i></button>' +
+                    '<button type="button" class="preview-prev ease-btn"><i class="icon ' + photoGallery.prevIcon + ' icon-xl"></i></button>' +
+                    '<button type="button" class="preview-next ease-btn"><i class="icon ' + photoGallery.nextIcon + ' icon-xl"></i></button>' +
                     '<i class="preview-loader icon icon-xxl ' + photoGallery.loaderIcon + '"></i>' +
                     '<span class="preview-info ease-layout"></span>' +
                     '<img class="ease-layout">' +
