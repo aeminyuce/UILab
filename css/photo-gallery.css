@@ -57,10 +57,11 @@ html:not(.mobile) .preview-prev:hover,html:not(.mobile) .preview-next:hover { ba
 .close-photo-preview .icon { color: #fff; }
 
 @media (min-width: 960px) {
-    .photo-gallery > li:not(:first-child) { width: 20%; }
-    .photo-gallery > li:first-child { width: 40%; }
-    .photo-gallery > li:not(:first-child) .img { height: 180px; }
-    .photo-gallery > li:first-child .img { height: 360px; }
+    .photo-gallery > li { width: 20%; }
+    .photo-gallery > li .img { height: 180px; }
+
+    .photo-gallery.has-cover > li:first-child { width: 40%; }
+    .photo-gallery.has-cover > li:first-child .img { height: 360px; }
 
     .photo-preview > img:not(.cover-h):not(.preview-zoom) { max-width: 1200px; max-height: 96%; }
 }
