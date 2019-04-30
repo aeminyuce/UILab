@@ -5,8 +5,6 @@
 
 .btn { text-align: center; vertical-align: middle; line-height: 20px; height: 32px; background-color: rgba(0,0,0,.08); padding-top: 6px; padding-bottom: 6px; display: inline-block; position: relative; }
 input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
-.btn:focus { box-shadow: 0 0 0 3px rgba(0,0,0,.15); }
-
 .btn.bordered { padding-top: 5px; padding-bottom: 5px; }
 .btn.dual-bordered { padding-top: 4px; padding-bottom: 4px; }
 .btn-square { width: 32px; }
@@ -52,6 +50,7 @@ html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hove
 .btn-xxs { font-size: 10px; line-height: 14px; height: 18px; padding-top: 2px; padding-bottom: 2px; }
 .btn-xxs.btn-square { width: 18px; }
 .btn-xxs.bordered { padding-top: 1px; padding-bottom: 1px; }
+.btn-xxs.dual-bordered { padding-top: 0; padding-bottom: 0; }
 .btn-xxs.rounded { border-radius: 2px; }
 .btn-xxs:not(.circle) { padding-right: 2px; padding-left: 2px; }
 .btn-xxs.circle { padding-right: 6px; padding-left: 6px; }
