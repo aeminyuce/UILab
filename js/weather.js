@@ -97,7 +97,7 @@ var weather = {
             // date
             date = new Date();
 
-            day = date.getDay();
+            day = date.getDay() - 1;
             dateText = weather.days[day];
 
             day = day.toString();
