@@ -1,6 +1,6 @@
 /* ie9 placeholders */
 .ie9 [data-placeholder] { position: relative; }
-.ie9 [data-placeholder]:after { content: attr(data-placeholder); padding: 5px; position: absolute; top: 0; left: 0; }
+.ie9 [data-placeholder]:after { content: attr(data-placeholder); line-height: normal; padding: 5px; position: absolute; top: 0; left: 0; }
 .ie9 [data-placeholder].text-lg:after { padding: 10px; }
 
 .ie9 .text-icon:not(.text-icon-left)[data-placeholder]:after,.ie9 .text-icon-both[data-placeholder]:after { padding-right: 24px; }

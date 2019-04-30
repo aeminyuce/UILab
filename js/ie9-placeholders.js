@@ -10,39 +10,54 @@ var ie9Placeholders = {};
     'use strict';
     /*globals document, selector, events, ajax, navigator, setTimeout */
 
-    var checkPlaceholders;
-
     ie9Placeholders.Start = function () {
 
         if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
 
-            checkPlaceholders = function () {
-                events.each('input[placeholder]', function () {
+            events.each('[placeholder]', function () {
 
-                    var p = this.parentElement;
+                var p = this.parentElement;
 
-                    if (this.value.length !== 0) { events.addClass(p, 'hide-placeholder'); }
-                    if (!p.getAttribute('data-placeholder')) { p.setAttribute('data-placeholder', this.getAttribute('placeholder')); }
+                if (this.value.length !== 0) {
+                    events.addClass(p, 'hide-placeholder');
+                }
 
-                });
-            };
-            checkPlaceholders();
+                if (!p.getAttribute('data-placeholder')) {
+                    p.setAttribute('data-placeholder', this.getAttribute('placeholder'));
+                }
+
+            });
 
             // Events
-            events.on('[data-placeholder]', 'mousedown', function () { selector('input[placeholder]', this)[0].focus(); });
+            events.off('[data-placeholder]', 'mousedown');
+            events.off(document, 'keydown blur', '[data-placeholder] [placeholder]');
 
-            events.on(document, 'keydown', '[data-placeholder] input[placeholder]', function () {
+            events.on('[data-placeholder]', 'mousedown', function () {
+                selector('[placeholder]', this)[0].focus();
+            });
+
+            events.on(document, 'keydown', '[data-placeholder] [placeholder]', function () {
 
                 var t = this, p = t.parentElement;
-
                 setTimeout(function () {
-                    if (t.value.length > 0) { events.addClass(p, 'hide-placeholder'); } else { events.removeClass(p, 'hide-placeholder'); }
+
+                    if (t.value.length > 0) {
+                        events.addClass(p, 'hide-placeholder');
+
+                    } else {
+                        events.removeClass(p, 'hide-placeholder');
+                    }
+
                 }, 10);
 
             });
 
-            events.on(document, 'blur', '[data-placeholder] input[placeholder]', function () {
-                if (this.value.length === 0) { events.removeClass(this.parentElement, 'hide-placeholder'); }
+            events.on(document, 'blur', '[data-placeholder] [placeholder]', function () {
+
+                if (this.value.length === 0) {
+                    events.removeClass(this.parentElement, 'hide-placeholder');
+                }
+
             });
 
         }
@@ -56,7 +71,7 @@ var ie9Placeholders = {};
     events.on(document, 'ajaxCallbacks', function () {
 
         if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
-            if (ajax.request.responseText.indexOf('placeholder=') > 0) { checkPlaceholders(); }
+            if (ajax.request.responseText.indexOf('placeholder=') > 0) { ie9Placeholders.Start(); }
         }
 
     });
