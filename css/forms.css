@@ -9,7 +9,7 @@
 .table textarea { min-width: 160px; }
 
 .text input,.select select,.select-multi select,.textarea textarea { width: 100%; background-color: rgba(255,255,255,0); border: 0; }
-.text input:not([class*="align-"]),.select select:not([class*="align-"]),.select-multi select:not([class*="align-"]),.textarea textarea:not([class*="align-"]) { text-align: left !important; }
+.text:not([class*="align-"]) input:not([class*="align-"]),.select:not([class*="align-"]) select:not([class*="align-"]),.select-multi:not([class*="align-"]) select:not([class*="align-"]),.textarea:not([class*="align-"]) textarea:not([class*="align-"]) { text-align: left !important; }
 .text input,.select select,.select-multi select { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .text input,.select select,.textarea textarea { line-height: 20px; padding: 5px; border-radius: 0/* border radius fix for Chrome*/; }
 .text input,.select select { height: 30px; overflow: hidden; }
