@@ -232,7 +232,9 @@ var tooltip = {
 
         events.on(document, 'touchstart touchmove touchend', '[data-tooltip]:not([data-only="desktop"])', function (e) {
 
-            var that = this;
+            var ua, that;
+
+            that = this;
 
             if (e.type === 'touchstart') {
                 touchControl = events.hasClass(that, 'tooltip-active');
@@ -253,8 +255,19 @@ var tooltip = {
 
                 }
 
-                if (!touchControl && e.cancelable && e.defaultPrevented) { // touchstart or touchmove with preventDefault we need this. Because, now Chrome and Android browsers preventDefault automatically.
-                    e.preventDefault();
+                ua = navigator.userAgent.toLowerCase();
+                if (ua.indexOf('mobile') > -1 && ua.indexOf('apple') > -1) {
+
+                    if (!touchControl) {
+                        e.preventDefault();
+                    }
+
+                } else {
+
+                    if (!touchControl && e.cancelable && e.defaultPrevented) { // touchstart or touchmove with preventDefault we need this. Because, now Chrome and Android browsers preventDefault automatically.
+                        e.preventDefault();
+                    }
+
                 }
 
                 clearTimeout(pageTouchmoveTimer);
