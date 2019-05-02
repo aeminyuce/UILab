@@ -1,0 +1,17 @@
+/* image editor */
+.image-editor { background-color: #f9f9f9; overflow: hidden; position: relative; }
+
+.editor-list > .row,.editor-panel form > .row,.editor-nav > .row { margin-left: 0; margin-right: 0; }
+.editor-panel,.editor-nav { min-height: 52px; background-color: rgba(255,255,255,.45); margin: 2px 2px 0 2px; }
+
+.editor-wrapper,.editor-list { min-height: 520px; }
+
+.editor-wrapper { background-color: #f9f9f9; display: none; position: absolute; top: 2px; right: 2px; bottom: 2px; left: 2px; z-index: 1; }
+.editor-canvas { background: repeat left top; }
+
+.editor-list { padding: 5px; }
+.editor-list .img-holder { background-color: #fff; padding: 10px; }
+.editor-list .img-holder .img { display: block; }
+.editor-list .img-holder img { width: 100%; height: auto; }
+.editor-list .img-holder .img:not(:first-child) { margin-top: 10px; }
+.editor-list .img-holder .img:not(:last-child) { margin-bottom: 10px; }

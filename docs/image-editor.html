@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UI Lab, Image Editor</title>
+    <meta name="keywords" content="uilab, responsive, design system, css, javascript, image editor">
+    <meta name="description" content="CSS & JavaScript powered responsive design system." />
+    <meta name="author" content="Ahmet Emin Yüce"/>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
+
+    <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/alignments.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
+    <link rel="stylesheet" href="../css/buttons.css" />
+    <link rel="stylesheet" href="../css/borders.css" />
+    <link rel="stylesheet" href="../css/custom-forms.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <link rel="stylesheet" href="../css/file-input.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/helpers.css" />
+    <link rel="stylesheet" href="../css/icons.css" />
+    <link rel="stylesheet" href="../css/margins.css" />
+    <link rel="stylesheet" href="../css/paddings.css" />
+    <link rel="stylesheet" href="../css/photo-gallery.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/scrollbar.css" />
+    <link rel="stylesheet" href="../css/sticky-header.css" />
+    <link rel="stylesheet" href="../css/transitions.css" />
+    <link rel="stylesheet" href="../css/typography.css" />
+    <link rel="stylesheet" href="../css/swatches.css" />
+    <link rel="stylesheet" href="../css/top-button.css" />
+
+    <link rel="stylesheet" href="../css/image-editor.css" />
+
+    <!-- Javascript Tools -->
+    <script src="../js/selector.js"></script>
+    <script src="../js/events.js"></script>
+    <script src="../js/forms.js"></script>
+    <script src="../js/photo-gallery.js"></script>
+    <script src="../js/sticky-header.js"></script>
+    <script src="../js/swatches.js"></script>
+    <script src="../js/top-button.js"></script>
+    <script src="../js/transitions.js"></script>
+    <script src="../js/user-agents.js"></script>
+
+    <script src="../js/image-editor.js"></script>
+
+    <!-- font icons CSS -->
+    <link rel="stylesheet" href="icons/font-icons/outline/font-icons.css" />
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="container theme-default ui-dark">
+        <div class="row theme-default2 ui-border top-bordered dual-bordered">
+            <div class="col-12">
+                <a href="examples.html" class="btn btn-lg btn-square circle ease-btn margin-10-r"><i class="icon icon-md no-opacity icon-long-arrow-left"></i></a>
+                <h1 class="x-large inline-block">UI Lab, Image Editor</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- documentation examples -->
+    <main class="container no-gutter">
+        <div class="padding-30-v padding-10-h">
+
+            <div class="image-editor rounded inner-shadow-sm theme-default">
+
+                <div class="editor-panel rounded-top shadow-sm">
+                    <form action="#successful">
+                        <div class="row">
+                            <div class="col-4 no-responsive hidden-xs">
+                                <div class="large padding-5-v">
+                                    Image Editor
+                                </div>
+                            </div>
+                            <div class="col-8 col-xs-12 align-right xs-align-center no-responsive">
+                                <div class="file rounded no-bordered form-inline ease-form">
+                                    <input type="file">
+                                    <div class="btn rounded ui-dark ease-btn">Add Images <i class="icon margin-5-l icon-xs icon-plus"></i></div>
+                                </div>
+                                <span class="align-center ease-1st-btn">
+                                    <button type="submit" class="btn rounded">Save <i class="icon no-opacity icon-sm icon-save"></i></button>
+                                    <button type="button" class="btn btn-square rounded"><i class="icon no-opacity icon-sm icon-trash"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="editor-wrapper">
+                    <div class="editor-nav">
+
+                    </div>
+                    <div class="editor-canvas" style="background-image: url(images/image-editor/editor-bg.png)">
+
+                    </div>
+                </div>
+
+                <div class="editor-list photo-gallery">
+                    <div class="row row-md-padding row-equal-height">
+                        <div class="col-lg-2 col-3 col-md-4 col-sm-6 xs-responsive">
+                            <div class="img-holder shadow-sm">
+                                <div class="check-custom rounded dual-bordered ease-form">
+                                    <input type="checkbox">
+                                    <i class="ease-form-custom"></i>
+                                </div>
+                                <div class="right ease-1st-btn">
+                                    <button class="btn btn-square btn-invisible rounded"><i class="icon icon-sm icon-trash"></i></button>
+                                    <button class="btn btn-square btn-invisible rounded"><i class="icon icon-sm icon-settings"></i></button>
+                                </div>
+                                <a class="img scale ease-layout" href="images/image_01.jpg"><img src="images/thumb_01.jpg" alt=""></a>
+                                <span class="dark right">32kb</span>
+                                <span>image_01.jpg<br><i class="dark">Image Tag</i></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-3 col-md-4 col-sm-6 xs-responsive">
+                            <div class="img-holder shadow-sm">
+                                <div class="check-custom rounded dual-bordered ease-form">
+                                    <input type="checkbox">
+                                    <i class="ease-form-custom"></i>
+                                </div>
+                                <div class="right ease-1st-btn">
+                                    <button class="btn btn-square btn-invisible rounded"><i class="icon icon-sm icon-trash"></i></button>
+                                    <button class="btn btn-square btn-invisible rounded"><i class="icon icon-sm icon-settings"></i></button>
+                                </div>
+                                <a class="img scale ease-layout" href="images/image_02.jpg"><img src="images/thumb_02.jpg" alt=""></a>
+                                <span class="dark right">16kb</span>
+                                <span>image_02.jpg<br><i class="dark">Image Tag</i></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-3 col-md-4 col-sm-6 xs-responsive">
+                            <div class="img-holder shadow-sm">
+                                <div class="check-custom rounded dual-bordered ease-form">
+                                    <input type="checkbox">
+                                    <i class="ease-form-custom"></i>
+                                </div>
+                                <div class="right ease-1st-btn">
+                                    <button class="btn btn-square btn-invisible rounded"><i class="icon icon-sm icon-trash"></i></button>
+                                    <button class="btn btn-square btn-invisible rounded"><i class="icon icon-sm icon-settings"></i></button>
+                                </div>
+                                <a class="img scale ease-layout" href="images/image_03.jpg"><img src="images/thumb_03.jpg" alt=""></a>
+                                <span class="dark right">21kb</span>
+                                <span>image_03.jpg<br><i class="dark">Image Tag</i></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-3 col-md-4 col-sm-6 xs-responsive">
+                            <div class="img-holder shadow-sm">
+                                <div class="check-custom rounded dual-bordered ease-form">
+                                    <input type="checkbox">
+                                    <i class="ease-form-custom"></i>
+                                </div>
+                                <div class="right ease-1st-btn">
+                                    <button class="btn btn-square btn-invisible rounded"><i class="icon icon-sm icon-trash"></i></button>
+                                    <button class="btn btn-square btn-invisible rounded"><i class="icon icon-sm icon-settings"></i></button>
+                                </div>
+                                <a class="img scale ease-layout" href="images/image_04.jpg"><img src="images/thumb_04.jpg" alt=""></a>
+                                <span class="dark right">29kb</span>
+                                <span>image_04.jpg<br><i class="dark">Image Tag</i></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-3 col-md-4 col-sm-6 xs-responsive">
+                            <div class="img-holder shadow-sm">
+                                <div class="check-custom rounded dual-bordered ease-form">
+                                    <input type="checkbox">
+                                    <i class="ease-form-custom"></i>
+                                </div>
+                                <div class="right ease-1st-btn">
+                                    <button class="btn btn-square btn-invisible rounded"><i class="icon icon-sm icon-trash"></i></button>
+                                    <button class="btn btn-square btn-invisible rounded"><i class="icon icon-sm icon-settings"></i></button>
+                                </div>
+                                <a class="img scale ease-layout" href="images/image_05.jpg"><img src="images/thumb_05.jpg" alt=""></a>
+                                <span class="dark right">18kb</span>
+                                <span>image_05.jpg<br><i class="dark">Image Tag</i></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-3 col-md-4 col-sm-6 xs-responsive">
+                            <div class="img-holder shadow-sm">
+                                <div class="check-custom rounded dual-bordered ease-form">
+                                    <input type="checkbox">
+                                    <i class="ease-form-custom"></i>
+                                </div>
+                                <div class="right ease-1st-btn">
+                                    <button class="btn btn-square btn-invisible rounded"><i class="icon icon-sm icon-trash"></i></button>
+                                    <button class="btn btn-square btn-invisible rounded"><i class="icon icon-sm icon-settings"></i></button>
+                                </div>
+                                <a class="img scale ease-layout" href="images/image_06.jpg"><img src="images/thumb_06.jpg" alt=""></a>
+                                <span class="dark right">11kb</span>
+                                <span>image_06.jpg<br><i class="dark">Image Tag</i></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-3 col-md-4 col-sm-6 xs-responsive">
+                            <div class="img-holder shadow-sm">
+                                <div class="check-custom rounded dual-bordered ease-form">
+                                    <input type="checkbox">
+                                    <i class="ease-form-custom"></i>
+                                </div>
+                                <div class="right ease-1st-btn">
+                                    <button class="btn btn-square btn-invisible rounded"><i class="icon icon-sm icon-trash"></i></button>
+                                    <button class="btn btn-square btn-invisible rounded"><i class="icon icon-sm icon-settings"></i></button>
+                                </div>
+                                <a class="img scale ease-layout" href="images/image_07.jpg"><img src="images/thumb_07.jpg" alt=""></a>
+                                <span class="dark right">14kb</span>
+                                <span>image_07.jpg<br><i class="dark">Image Tag</i></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-3 col-md-4 col-sm-6 xs-responsive">
+                            <div class="img-holder shadow-sm">
+                                <div class="check-custom rounded dual-bordered ease-form">
+                                    <input type="checkbox">
+                                    <i class="ease-form-custom"></i>
+                                </div>
+                                <div class="right ease-1st-btn">
+                                    <button class="btn btn-square btn-invisible rounded"><i class="icon icon-sm icon-trash"></i></button>
+                                    <button class="btn btn-square btn-invisible rounded"><i class="icon icon-sm icon-settings"></i></button>
+                                </div>
+                                <a class="img scale ease-layout" href="images/image_08.jpg"><img src="images/thumb_08.jpg" alt=""></a>
+                                <span class="dark right">15kb</span>
+                                <span>image_08.jpg<br><i class="dark">Image Tag</i></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-3 col-md-4 col-sm-6 xs-responsive">
+                            <div class="img-holder shadow-sm">
+                                <div class="check-custom rounded dual-bordered ease-form">
+                                    <input type="checkbox">
+                                    <i class="ease-form-custom"></i>
+                                </div>
+                                <div class="right ease-1st-btn">
+                                    <button class="btn btn-square btn-invisible rounded"><i class="icon icon-sm icon-trash"></i></button>
+                                    <button class="btn btn-square btn-invisible rounded"><i class="icon icon-sm icon-settings"></i></button>
+                                </div>
+                                <a class="img scale ease-layout" href="images/image_09.jpg"><img src="images/thumb_09.jpg" alt=""></a>
+                                <span class="dark right">25kb</span>
+                                <span>image_09.jpg<br><i class="dark">Image Tag</i></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-3 col-md-4 col-sm-6 xs-responsive">
+                            <div class="img-holder shadow-sm">
+                                <div class="check-custom rounded dual-bordered ease-form">
+                                    <input type="checkbox">
+                                    <i class="ease-form-custom"></i>
+                                </div>
+                                <div class="right ease-1st-btn">
+                                    <button class="btn btn-square btn-invisible rounded"><i class="icon icon-sm icon-trash"></i></button>
+                                    <button class="btn btn-square btn-invisible rounded"><i class="icon icon-sm icon-settings"></i></button>
+                                </div>
+                                <a class="img scale ease-layout" href="images/image_10.jpg"><img src="images/thumb_10.jpg" alt=""></a>
+                                <span class="dark right">28kb</span>
+                                <span>image_10.jpg<br><i class="dark">Image Tag</i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
