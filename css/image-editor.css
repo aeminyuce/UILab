@@ -15,3 +15,7 @@
 .editor-list .img-holder img { width: 100%; height: auto; }
 .editor-list .img-holder .img:not(:first-child) { margin-top: 10px; }
 .editor-list .img-holder .img:not(:last-child) { margin-bottom: 10px; }
+
+@media (min-width: 482px) {
+    .editor-panel h3,.editor-panel h4,.editor-panel h5,.editor-panel h6 { line-height: 32px; }
+}
