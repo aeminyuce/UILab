@@ -9,7 +9,7 @@
   font-style: normal;
 }
 
-.icon,.icon-inline:before {
+.icon {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'font-icons' !important;
   speak: none;
