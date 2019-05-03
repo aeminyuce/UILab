@@ -115,9 +115,11 @@ var photoGallery = {
 
                         events.removeClass(images, 'hover-touch');
                         events.addClass(that, 'hover-touch');
+
                         return;
 
                     }
+
                     events.removeClass(images, 'hover-touch');
 
                 } else { events.removeClass(images, 'hover-touch'); }
@@ -601,24 +603,27 @@ var photoGallery = {
         }
 
         // Events
-        events.on(document, 'click touchmove touchend', '.photo-gallery a.img', function (e) {
+        events.on(document, 'click', '.photo-gallery a.img', function (e) {
 
-            if (e.type === 'click') {
-                galleryFnc(e, this);
+            if (mobile) { return; }
 
-            } else {
+            e.preventDefault();
+            galleryFnc(e, this);
 
-                if (e.type === 'touchmove') {
-                    pageTouchmove = true;
-                }
+        });
 
-                if (e.type === 'touchend' && pageTouchmove === false) {
+        events.on(document, 'touchmove touchend', '.photo-gallery a.img', function (e) {
 
-                    clearTimeout(pageTouchmoveTimer);
-                    pageTouchmoveTimer = setTimeout(function () {
-                        galleryFnc(e, this);
-                    }, 50);
-                }
+            e.preventDefault();
+
+            pageTouchmove = false;
+            if (e.type === 'touchmove') { pageTouchmove = true; }
+
+            var that = this;
+            if (e.type === 'touchend' && pageTouchmove === false) {
+
+                clearTimeout(pageTouchmoveTimer);
+                pageTouchmoveTimer = setTimeout(function () { galleryFnc(e, that); }, 50);
 
             }
 
