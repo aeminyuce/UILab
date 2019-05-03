@@ -2,27 +2,27 @@
 .image-editor { background-color: #f9f9f9; overflow: hidden; position: relative; }
 
 .editor-list > .row,.editor-panel > .row,.editor-nav > .row { margin-left: 0; margin-right: 0; }
-
 .editor-panel,.editor-nav { min-height: 52px; background-color: rgba(255,255,255,.45); margin: 2px 2px 0 2px; }
 
-.editor-wrapper { min-height: 520px; background-color: #f9f9f9; display: none; position: absolute; top: 2px; right: 2px; bottom: 2px; left: 2px; z-index: 1; }
-.editor-canvas { background: repeat left top; }
+.editor-list .add-img { min-height: 140px; height: 100%; background-color: #fff; padding: 10px; overflow: hidden; position: relative; }
+.editor-list .add-img > div,.editor-list .add-img input { position: absolute; top: 10px; right: 10px; bottom: 10px; left: 10px; }
+.editor-list .add-img > div { background-color: rgba(0,0,0,.045); padding: 10px; overflow: hidden; z-index: 2; }
+html:not(.mobile) .editor-list .add-img > div:hover { background-color: rgba(0,0,0,.075); }
+.editor-list .add-img > div > span { color: #777; text-align: center; line-height: normal; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+.editor-list .add-img input { z-index: 1; opacity: 0; }
+.editor-list .add-img .icon { margin: 0 auto 15px auto; display: block; opacity: .45; }
 
 .editor-list { padding: 5px; }
-.editor-list .img-holder { height: 100%; background-color: #fff; padding: 10px; }
+.editor-list .img-holder { height: 100%; background-color: #fff; padding: 10px; overflow: hidden; }
 .editor-list .img-holder .img { display: block; position: relative; }
 .editor-list .img-holder img { width: 100%; height: auto; }
 .editor-list .img-holder .img:not(:first-child) { margin-top: 10px; }
 .editor-list .img-holder .img:not(:last-child) { margin-bottom: 10px; }
 
-.editor-list .add-img { min-height: 200px; height: 100%; background-color: #fff; padding: 10px; position: relative; }
-.editor-list .add-img > div,.editor-list .add-img input { position: absolute; top: 10px; right: 10px; bottom: 10px; left: 10px; }
-.editor-list .add-img > div { background-color: rgba(0,0,0,.045); padding: 10px; z-index: 2; }
-html:not(.mobile) .editor-list .add-img > div:hover { background-color: rgba(0,0,0,.075); }
-.editor-list .add-img > div > span { color: #777; font-size: 16px; text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
-.editor-list .add-img input { z-index: 1; opacity: 0; }
-.editor-list .add-img .icon { margin: 0 auto 15px auto; display: block; opacity: .45; }
+.editor-wrapper { min-height: 520px; background-color: #f9f9f9; display: none; position: absolute; top: 2px; right: 2px; bottom: 2px; left: 2px; z-index: 1; }
+.editor-canvas { background: repeat left top; }
 
 @media (min-width: 482px) {
     .editor-panel h3,.editor-panel h4,.editor-panel h5,.editor-panel h6 { line-height: 32px; }
+    .editor-list .add-img > div > span { font-size: 16px; }
 }

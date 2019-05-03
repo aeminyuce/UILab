@@ -14,6 +14,7 @@
     <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
 
     <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/alerts.css" />
     <link rel="stylesheet" href="../css/alignments.css" />
     <link rel="stylesheet" href="../css/animations.css" />
     <link rel="stylesheet" href="../css/buttons.css" />
@@ -40,6 +41,7 @@
     <!-- Javascript Tools -->
     <script src="../js/selector.js"></script>
     <script src="../js/events.js"></script>
+    <script src="../js/alerts.js"></script>
     <script src="../js/forms.js"></script>
     <script src="../js/photo-gallery.js"></script>
     <script src="../js/sticky-header.js"></script>
@@ -73,7 +75,7 @@
 
             <div class="image-editor rounded inner-shadow-sm theme-default">
 
-                <form action="#successful" method="post" enctype="multipart/form-data">
+                <form action="image-editor-loader.php" method="post" enctype="multipart/form-data">
 
                     <div class="editor-panel rounded-top shadow-sm">
                         <div class="row">
@@ -83,7 +85,7 @@
                             <div class="col-8 col-xs-12 align-right xs-align-center xs-responsive">
                                 <span class="align-center ease-1st-btn">
                                     <button type="button" class="btn btn-invisible rounded">Remove <i class="icon no-opacity icon-sm icon-trash"></i></button>
-                                    <button type="submit" class="btn rounded padding-20-h ui-dark">Save <i class="icon margin-5-l icon-sm icon-save"></i></button>
+                                    <button type="submit" name="send" class="btn rounded padding-20-h ui-dark">Save Changes <i class="icon margin-5-l icon-sm icon-save"></i></button>
                                 </span>
                             </div>
                         </div>
@@ -91,7 +93,7 @@
 
                     <div class="editor-list photo-gallery ease-photo-gallery">
                         <div class="row row-md-padding row-equal-height">
-                            <div class="col-lg-2 col-3 col-md-4 col-sm-6 xs-responsive">
+                            <div class="col-lg-2 col-3 col-md-4 col-sm-6 col-xs-6 no-responsive">
                                 <div class="add-img shadow-sm">
                                     <div class="ease-bg">
                                         <input type="file" name="images[]" multiple>
@@ -99,7 +101,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-3 col-md-4 col-sm-6 xs-responsive">
+                            <div class="col-lg-2 col-3 col-md-4 col-sm-6 col-xs-6 no-responsive">
                                 <div class="img-holder shadow-sm">
                                     <a class="img has-info" href="images/image_01.jpg">
                                         <i class="icon icon-search-plus icon-md"></i>
@@ -116,7 +118,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-3 col-md-4 col-sm-6 xs-responsive">
+                            <div class="col-lg-2 col-3 col-md-4 col-sm-6 col-xs-6 no-responsive">
                                 <div class="img-holder shadow-sm">
                                     <a class="img has-info" href="images/image_01.jpg">
                                         <i class="icon icon-search-plus icon-md"></i>
@@ -133,7 +135,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-3 col-md-4 col-sm-6 xs-responsive">
+                            <div class="col-lg-2 col-3 col-md-4 col-sm-6 col-xs-6 no-responsive">
                                 <div class="img-holder shadow-sm">
                                     <a class="img has-info" href="images/image_01.jpg">
                                         <i class="icon icon-search-plus icon-md"></i>
@@ -150,7 +152,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-3 col-md-4 col-sm-6 xs-responsive">
+                            <div class="col-lg-2 col-3 col-md-4 col-sm-6 col-xs-6 no-responsive">
                                 <div class="img-holder shadow-sm">
                                     <a class="img has-info" href="images/image_01.jpg">
                                         <i class="icon icon-search-plus icon-md"></i>
@@ -167,7 +169,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-3 col-md-4 col-sm-6 xs-responsive">
+                            <div class="col-lg-2 col-3 col-md-4 col-sm-6 col-xs-6 no-responsive">
                                 <div class="img-holder shadow-sm">
                                     <a class="img has-info" href="images/image_01.jpg">
                                         <i class="icon icon-search-plus icon-md"></i>
@@ -184,7 +186,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-3 col-md-4 col-sm-6 xs-responsive">
+                            <div class="col-lg-2 col-3 col-md-4 col-sm-6 col-xs-6 no-responsive">
                                 <div class="img-holder shadow-sm">
                                     <a class="img has-info" href="images/image_01.jpg">
                                         <i class="icon icon-search-plus icon-md"></i>
@@ -201,7 +203,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-3 col-md-4 col-sm-6 xs-responsive">
+                            <div class="col-lg-2 col-3 col-md-4 col-sm-6 col-xs-6 no-responsive">
                                 <div class="img-holder shadow-sm">
                                     <a class="img has-info" href="images/image_01.jpg">
                                         <i class="icon icon-search-plus icon-md"></i>
@@ -218,7 +220,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-3 col-md-4 col-sm-6 xs-responsive">
+                            <div class="col-lg-2 col-3 col-md-4 col-sm-6 col-xs-6 no-responsive">
                                 <div class="img-holder shadow-sm">
                                     <a class="img has-info" href="images/image_01.jpg">
                                         <i class="icon icon-search-plus icon-md"></i>
@@ -235,7 +237,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-3 col-md-4 col-sm-6 xs-responsive">
+                            <div class="col-lg-2 col-3 col-md-4 col-sm-6 col-xs-6 no-responsive">
                                 <div class="img-holder shadow-sm">
                                     <a class="img has-info" href="images/image_01.jpg">
                                         <i class="icon icon-search-plus icon-md"></i>
@@ -252,7 +254,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-3 col-md-4 col-sm-6 xs-responsive">
+                            <div class="col-lg-2 col-3 col-md-4 col-sm-6 col-xs-6 no-responsive">
                                 <div class="img-holder shadow-sm">
                                     <a class="img has-info" href="images/image_01.jpg">
                                         <i class="icon icon-search-plus icon-md"></i>
