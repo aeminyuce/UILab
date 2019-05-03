@@ -43,7 +43,9 @@ var photoGallery = {
                 var img, newImg, imgLength, imgFnc;
 
                 img = selector('a.img img', gallery[galleryCounter]);
+
                 imgLength = img.length - 1;
+                if (imgLength < 0) { return; }
 
                 imgFnc = function () {
 
