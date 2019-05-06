@@ -138,7 +138,13 @@ var forms = {};
 
         // file inputs
         events.on(document, 'change', '.file input', function () {
-            selector('span', this.parentElement)[0].innerHTML = this.value;
+
+            var info = selector('span', this.parentElement)[0];
+
+            if (info !== undefined) {
+                info.innerHTML = this.value;
+            }
+
         });
 
         // indeterminate
