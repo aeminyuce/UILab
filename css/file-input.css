@@ -4,14 +4,14 @@
 .file.dual-bordered input { height: 28px; }
 .file.no-bordered input { height: 32px; }
 
-.table .file { min-width: 110px; }
+.table .file { min-width: 120px; }
 
-.file .btn { text-align: center !important; width: 118px; height: 30px; float: left; }
+.file .btn { text-align: center !important; width: 128px; height: 30px; float: left; }
 .file:not(.no-bordered) .btn { line-height: 16px; }
-.file.dual-bordered .btn { width: 116px; }
+.file.dual-bordered .btn { width: 126px; }
 .file .btn.rounded { border-radius: 3px 0 0 3px; }
 .file.dual-bordered .btn { height: 28px; }
-.file.no-bordered .btn { width: 120px; height: 32px;}
+.file.no-bordered .btn { width: 130px; height: 32px;}
 html:not(.mobile) .file:hover .btn { background-color: rgba(0,0,0,.15); }
 
 .file > span { white-space: nowrap; text-overflow: ellipsis; line-height: 30px; width: 100%; padding-right: 10px; padding-left: 135px; overflow: hidden; display: block; position: absolute; }
