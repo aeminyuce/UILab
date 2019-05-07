@@ -15,7 +15,7 @@ var imageEditor = {
 (function () {
 
     'use strict';
-    /*globals document, events, selector, navigator, Image, FileReader */
+    /*globals document, events, selector, navigator, setTimeout, Image, FileReader */
 
     imageEditor.Start = function () {
 
@@ -101,7 +101,7 @@ var imageEditor = {
                             // create html
                             list.insertAdjacentHTML('afterbegin',
 
-                                '<li>' +
+                                '<li class="open-ease">' +
                                     '<span class="check-custom rounded dual-bordered ease-form">' +
                                         '<input type="checkbox">' +
                                         '<i class="ease-form-custom"></i>' +
@@ -112,6 +112,21 @@ var imageEditor = {
                                     '<button class="btn btn-square btn-invisible rounded ease-btn"><i class="icon icon-sm icon-trash"></i></button>' +
                                 '</li>');
 
+                            // end of allowed images
+                            if (i === allowed.length - 1) {
+
+                                setTimeout(function () {
+                                    events.removeClass(selector('li.open-ease', list), 'open-ease');
+                                }, 10);
+
+                                // empty variables
+                                allowed = [];
+                                readers = [];
+                                img = [];
+                                calc = [];
+
+                            }
+
                         };
 
                     };
@@ -119,12 +134,6 @@ var imageEditor = {
                     readers[i].readAsDataURL(allowed[i]);
 
                 });
-
-                // empty variables
-                //allowed = [];
-                readers = [];
-                img = [];
-                calc = [];
 
             }
 
