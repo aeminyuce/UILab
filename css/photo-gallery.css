@@ -2,7 +2,6 @@
 @keyframes preview-loader { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
 .ease-photo-gallery .img:after,.ease-photo-gallery .img.has-info > span { transition-property: opacity; transition-duration: .15s; }
-.ease-photo-gallery .img > .icon { transition-property: transform; transition-duration: .15s; }
 .no-transitions-all .ease-photo-gallery .img:after,.no-transitions-all .ease-photo-gallery .img.has-info > span,.no-transitions-all .ease-photo-gallery .img > .icon { transition-property: none !important; }
 
 .photo-gallery { list-style: none; padding: 0; margin-bottom: 0; display: block; }
@@ -15,9 +14,6 @@
 .photo-gallery .img { width: 100%; background: #ddd; overflow: hidden; display: block; position: relative; }
 .photo-gallery .img:after { content: ""; display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1; opacity: 0; }
 html:not(.mobile) .photo-gallery .img:hover:after,.photo-gallery .img.hover-touch:after { opacity: 1; }
-
-.photo-gallery .img > .icon { color: #fff; position: absolute; bottom: 10px; right: 10px; z-index: 4; opacity: .65; transform: translateX(100px); }
-html:not(.mobile) .photo-gallery .img:hover > .icon,.photo-gallery .img.hover-touch > .icon { transform: translateX(0); }
 
 .photo-gallery > li .img img { width: auto; height: 100%; position: absolute; left: 50%; transform: translate(-50%,0); }
 .photo-gallery > li .img img.cover-h { width: 100%; height: auto; top: 50%; left: 0; transform: translate(0,-50%); }
@@ -72,12 +68,12 @@ html:not(.mobile) .preview-prev:hover,html:not(.mobile) .preview-next:hover { ba
     .photo-preview > img:not(.cover-h):not(.preview-zoom) { width: 100%; height: auto; }
 }
 @media (min-width: 768px) {
-    .photo-gallery .img.has-info > span,.photo-gallery .img.has-info.hover-touch > span { top: 20px; right: 20px; bottom: 30px; left: 20px; }
+    .photo-gallery .img.has-info > span,.photo-gallery .img.has-info.hover-touch > span { top: 20px; right: 20px; bottom: 20px; left: 20px; }
     .preview-info { width: 620px; }
     .close-photo-preview { right: 20px; }
 }
 @media (max-width: 767px) {
-    .photo-gallery .img.has-info > span,.photo-gallery .img.has-info.hover-touch > span { line-height: 14px; top: 10px; right: 10px; bottom: 30px; left: 10px; }
+    .photo-gallery .img.has-info > span,.photo-gallery .img.has-info.hover-touch > span { line-height: 14px; top: 10px; right: 10px; bottom: 10px; left: 10px; }
     .preview-info { width: 300px; }
     .photo-gallery > li { width: 33.333332%; }
 
