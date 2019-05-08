@@ -303,7 +303,7 @@ var events = {
                     if (arr.indexOf(name[j]) === -1) {
 
                         l[i].className.baseVal += ' ' + name[j];
-                        l[i].className.baseVal.replace(re, '');
+                        l[i].className.baseVal = l[i].className.baseVal.replace(re, '');
 
                     }
 
@@ -313,7 +313,7 @@ var events = {
                     if (arr.indexOf(name[j]) === -1) {
 
                         l[i].className += ' ' + name[j];
-                        l[i].className.replace(re, '');
+                        l[i].className = l[i].className.replace(re, '');
 
                     }
 
@@ -341,7 +341,13 @@ var events = {
                     l[i].className.baseVal = l[i].className.baseVal.replace(re, ' ').replace(rex, '');
 
                 } else {
+
                     l[i].className = l[i].className.replace(re, ' ').replace(rex, '');
+
+                    if (l[i].className === '') {
+                        l[i].removeAttribute('class');
+                    }
+
                 }
 
             }
@@ -351,7 +357,7 @@ var events = {
     toggleClass: function (t, name) {
 
         'use strict';
-        var svg, isSvgElements, arr, index, l = selector(t), i, j;
+        var svg, isSvgElements, arr, index, l = selector(t), i, j, re = new RegExp('^\\s+|\\s+$');
 
         name = name.split(' ');
         svg = ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'];
@@ -376,7 +382,14 @@ var events = {
                     l[i].className.baseVal = arr.join(' ');
 
                 } else {
-                    l[i].className = arr.join(' ');
+
+                    arr = arr.join(' ').replace(re, '');
+
+                    if (arr.length === 0) {
+                        l[i].removeAttribute('class');
+
+                    } else { l[i].className = arr; }
+
                 }
 
             }
