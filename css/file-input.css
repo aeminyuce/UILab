@@ -7,7 +7,7 @@
 .table .file { min-width: 120px; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 
 .file .btn { text-align: center !important; width: 128px; height: 30px; float: left; }
-.file:not(.no-bordered) .btn { line-height: 16px; }
+.file:not(.no-bordered) .btn { line-height: 18px; }
 .file.dual-bordered .btn { width: 126px; }
 .file .btn.rounded { border-radius: 3px 0 0 3px; }
 .file.dual-bordered .btn { height: 28px; }
