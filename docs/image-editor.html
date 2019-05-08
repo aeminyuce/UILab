@@ -15,7 +15,6 @@
 
     <!-- CSS Tools -->
     <link rel="stylesheet" href="../css/alerts.css" />
-    <link rel="stylesheet" href="../css/alignments.css" />
     <link rel="stylesheet" href="../css/animations.css" />
     <link rel="stylesheet" href="../css/buttons.css" />
     <link rel="stylesheet" href="../css/borders.css" />
@@ -71,140 +70,28 @@
     <main class="container no-gutter">
         <div class="fixed padding-30-v">
 
-            <div class="image-editor rounded theme-default ease-image-editor">
+            <div class="image-editor bordered rounded shadow-sm ease-image-editor">
 
-                <form name="send" action="php/image-editor.php" method="post" enctype="multipart/form-data">
-
-                    <div class="editor-panel rounded-top">
-                        <div class="row">
-                            <div class="col-4 xs-responsive xs-no-padding-b">
-                                <h4>Image Editor</h4>
-                            </div>
-                            <div class="col-8 col-xs-12 align-right xs-align-center xs-responsive">
-                                <span class="align-center ease-1st-btn">
-                                    <button type="button" class="btn btn-invisible rounded">Remove <i class="icon no-opacity icon-sm icon-trash"></i></button>
-                                    <div class="file rounded form-inline ui-dark hover">
-                                        <input type="file" name="images[]" multiple>
-                                        <div class="btn">Add Images <i class="icon no-opacity margin-5-l icon-sm icon-plus"></i></div>
-                                    </div>
-                                </span>
-                            </div>
+                <div class="editor-panel theme-default">
+                    <h4>Image Editor</h4>
+                    <form name="send" action="php/image-editor.php" method="post" enctype="multipart/form-data">
+                        <div class="file rounded form-inline ui-dark hover ease-btn">
+                            <input type="file" name="images[]" multiple>
+                            <div class="btn">Add New Images <i class="icon margin-5-l no-opacity icon-xs icon-plus"></i></div>
                         </div>
-                    </div>
-
-                    <ul class="editor-list">
-                        <li>
-                            <span class="check-custom rounded dual-bordered ease-form">
-                                <input type="checkbox">
-                                <i class="ease-form-custom"></i>
-                            </span>
-                            <span class="name">image_vertical_01.jpg</span>
-                            <span class="img"><img src="images/image_vertical_01.jpg" alt=""></span>
-                            <span class="info">32kb</span>
-                            <button class="btn btn-square btn-invisible rounded ease-btn"><i class="icon icon-sm icon-trash"></i></button>
-                        </li>
-                        <li>
-                            <span class="check-custom rounded dual-bordered ease-form">
-                                <input type="checkbox">
-                                <i class="ease-form-custom"></i>
-                            </span>
-                            <span class="name">image_02.jpg</span>
-                            <span class="img"><img src="images/image_02.jpg" alt=""></span>
-                            <span class="info">16kb</span>
-                            <button class="btn btn-square btn-invisible rounded ease-btn"><i class="icon icon-sm icon-trash"></i></button>
-                        </li>
-                        <li>
-                            <span class="check-custom rounded dual-bordered ease-form">
-                                <input type="checkbox">
-                                <i class="ease-form-custom"></i>
-                            </span>
-                            <span class="name">image_03.jpg</span>
-                            <span class="img"><img src="images/image_03.jpg" alt=""></span>
-                            <span class="info">21kb</span>
-                            <button class="btn btn-square btn-invisible rounded ease-btn"><i class="icon icon-sm icon-trash"></i></button>
-                        </li>
-                        <li>
-                            <span class="check-custom rounded dual-bordered ease-form">
-                                <input type="checkbox">
-                                <i class="ease-form-custom"></i>
-                            </span>
-                            <span class="name">image_04.jpg</span>
-                            <span class="img"><img src="images/image_04.jpg" alt=""></span>
-                            <span class="info">29kb</span>
-                            <button class="btn btn-square btn-invisible rounded ease-btn"><i class="icon icon-sm icon-trash"></i></button>
-                        </li>
-                        <li>
-                            <span class="check-custom rounded dual-bordered ease-form">
-                                <input type="checkbox">
-                                <i class="ease-form-custom"></i>
-                            </span>
-                            <span class="name">image_05.jpg</span>
-                            <span class="img"><img src="images/image_05.jpg" alt=""></span>
-                            <span class="info">18kb</span>
-                            <button class="btn btn-square btn-invisible rounded ease-btn"><i class="icon icon-sm icon-trash"></i></button>
-                        </li>
-                        <li>
-                            <span class="check-custom rounded dual-bordered ease-form">
-                                <input type="checkbox">
-                                <i class="ease-form-custom"></i>
-                            </span>
-                            <span class="name">image_06.jpg</span>
-                            <span class="img"><img src="images/image_06.jpg" alt=""></span>
-                            <span class="info">11kb</span>
-                            <button class="btn btn-square btn-invisible rounded ease-btn"><i class="icon icon-sm icon-trash"></i></button>
-                        </li>
-                        <li>
-                            <span class="check-custom rounded dual-bordered ease-form">
-                                <input type="checkbox">
-                                <i class="ease-form-custom"></i>
-                            </span>
-                            <span class="name">image_07.jpg</span>
-                            <span class="img"><img src="images/image_07.jpg" alt=""></span>
-                            <span class="info">14kb</span>
-                            <button class="btn btn-square btn-invisible rounded ease-btn"><i class="icon icon-sm icon-trash"></i></button>
-                        </li>
-                        <li>
-                            <span class="check-custom rounded dual-bordered ease-form">
-                                <input type="checkbox">
-                                <i class="ease-form-custom"></i>
-                            </span>
-                            <span class="name">image_08.jpg</span>
-                            <span class="img"><img src="images/image_08.jpg" alt=""></span>
-                            <span class="info">15kb</span>
-                            <button class="btn btn-square btn-invisible rounded ease-btn"><i class="icon icon-sm icon-trash"></i></button>
-                        </li>
-                        <li>
-                            <span class="check-custom rounded dual-bordered ease-form">
-                                <input type="checkbox">
-                                <i class="ease-form-custom"></i>
-                            </span>
-                            <span class="name">image_09.jpg</span>
-                            <span class="img"><img src="images/image_09.jpg" alt=""></span>
-                            <span class="info">25kb</span>
-                            <button class="btn btn-square btn-invisible rounded ease-btn"><i class="icon icon-sm icon-trash"></i></button>
-                        </li>
-                        <li>
-                            <span class="check-custom rounded dual-bordered ease-form">
-                                <input type="checkbox">
-                                <i class="ease-form-custom"></i>
-                            </span>
-                            <span class="name">image_10.jpg</span>
-                            <span class="img"><img src="images/image_10.jpg" alt=""></span>
-                            <span class="info">28kb</span>
-                            <button class="btn btn-square btn-invisible rounded ease-btn"><i class="icon icon-sm icon-trash"></i></button>
-                        </li>
-                    </ul>
-
-                </form>
-
-                <div class="editor-wrapper">
-                    <div class="editor-nav">
-
-                    </div>
-                    <div class="editor-canvas" style="background-image: url(images/image-editor/editor-bg.png)">
-
-                    </div>
+                    </form>
                 </div>
+
+                <div class="editor-tools theme-default2 ease-1st-btn">
+                    <span class="check-custom left rounded dual-bordered ease-form">
+                        <input type="checkbox">
+                        <i class="ease-form-custom"></i>
+                    </span>
+                    <button class="editor-remove btn rounded">Remove <i class="icon margin-5-l no-opacity icon-sm icon-trash"></i></button>
+                    <button class="editor-upload btn rounded ui-dark">Upload <i class="icon margin-5-l no-opacity icon-sm icon-upload"></i></button>
+                </div>
+
+                <ul class="editor-list"></ul>
 
             </div>
 

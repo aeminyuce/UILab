@@ -22,7 +22,7 @@ var imageEditor = {
         // Events
         events.on(document, 'change', '.image-editor input[type="file"]', function () {
 
-            var i, ext, c, ctx, img, calc, size, allowed, readers, list;
+            var i, ext, c, ctx, data, img, w, h, size, allowed, readers, editor, list, tools;
 
             if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) { // IE9 not supported filereader API
                 return;
@@ -52,14 +52,19 @@ var imageEditor = {
 
                 // load and resize images
                 readers = [];
+
                 img = [];
-                calc = [];
+                w = [];
+                h = [];
 
                 c = document.createElement("canvas");
                 ctx = c.getContext("2d");
 
-                list = events.closest(this, '.image-editor')[0];
-                list = selector('.editor-list', list)[0];
+                editor = events.closest(this, '.image-editor')[0];
+                events.addClass(editor, 'loading');
+
+                list = selector('.editor-list', editor)[0];
+                tools = selector('.editor-tools', editor)[0];
 
                 events.each(allowed, function (i) {
 
@@ -72,28 +77,33 @@ var imageEditor = {
                         img[i].onload = function () {
 
                             // resize images to default
-                            if (img[i].width > img[i].height) { // horizontal image
+                            w[i] = img[i].width;
+                            h[i] = img[i].height;
 
-                                calc[i] = (img[i].height * imageEditor.width) / img[i].width;
+                            if (w[i] > h[i]) {
 
-                                c.width = imageEditor.width;
-                                c.height = calc[i];
+                                // horizontal image
+                                if (w[i] > imageEditor.width) {
+                                    h[i] = (h[i] * imageEditor.width) / w[i];
+                                }
 
-                                ctx.drawImage(img[i], 0, 0, imageEditor.width, calc[i]);
+                            } else {
 
-                            } else { // vertical image
-
-                                calc[i] = (img[i].width * imageEditor.height) / img[i].height;
-
-                                c.width = calc[i];
-                                c.height = imageEditor.height;
-
-                                ctx.drawImage(img[i], 0, 0, calc[i], imageEditor.height);
+                                // vertical image
+                                if (h[i] > imageEditor.height) {
+                                    w[i] = (w[i] * imageEditor.height) / h[i];
+                                }
 
                             }
 
+                            c.width = w[i];
+                            c.height = h[i];
+
+                            ctx.drawImage(img[i], 0, 0, w[i], h[i]);
+                            data = c.toDataURL("image/jpeg");
+
                             // calculate new image file size from new base64
-                            size = c.toDataURL("image/jpeg").length - 'data:image/png;base64,'.length;
+                            size = data.length - 'data:image/png;base64,'.length;
                             size = (4 * Math.ceil(size / 3) * 0.5624896334383812) / 1000;
 
                             size = size.toFixed(0);
@@ -107,23 +117,34 @@ var imageEditor = {
                                         '<i class="ease-form-custom"></i>' +
                                     '</span>' +
                                     '<span class="name">' + allowed[i].name + '</span>' +
-                                    '<span class="img"><img src="' + c.toDataURL("image/jpeg") + '" alt=""></span>' +
+                                    '<span class="img"><img src="' + data + '" alt=""></span>' +
                                     '<span class="info">' + size + 'kb</span>' +
                                     '<button class="btn btn-square btn-invisible rounded ease-btn"><i class="icon icon-sm icon-trash"></i></button>' +
                                 '</li>');
 
-                            // end of allowed images
+                            // end of loaded images
                             if (i === allowed.length - 1) {
 
-                                setTimeout(function () {
-                                    events.removeClass(selector('li.open-ease', list), 'open-ease');
-                                }, 10);
+                                events.addClass(list, 'open');
+                                events.addClass(tools, 'open');
 
-                                // empty variables
-                                allowed = [];
-                                readers = [];
-                                img = [];
-                                calc = [];
+                                setTimeout(function () {
+
+                                    events.removeClass(selector('li.open-ease', list), 'open-ease');
+
+                                    // empty variables
+                                    allowed = [];
+                                    readers = [];
+
+                                    img = [];
+                                    w = [];
+                                    h = [];
+
+                                }, 0);
+
+                                setTimeout(function () {
+                                    events.removeClass(editor, 'loading');
+                                }, 150);
 
                             }
 
