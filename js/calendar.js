@@ -23,32 +23,9 @@ var calendar = {
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events,  navigator, setTimeout, ajax, DOMParser */
+    /*globals window, document, selector, events, setTimeout, ajax */
 
     var checkCalendars;
-
-    // parser
-    function parser(text) {
-
-        var html;
-
-        if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
-
-            html = document.implementation.createHTMLDocument('');
-            html.body.innerHTML = text;
-
-            return html.body.innerHTML;
-
-        }
-
-        parser.item = new DOMParser();
-
-        html = parser.item.parseFromString(text, 'text/html');
-        html = html.querySelector('body').innerHTML;
-
-        return html;
-
-    }
 
     // first loading
     calendar.Start = function () {
@@ -131,7 +108,7 @@ var calendar = {
         // create calendar table
         function createFnc(that, newDate, picker) {
 
-            var date, today, pickerDay, container, html, i, j, sysDays, activeDay, days, prevLastDay, firstDay, lastDay;
+            var date, today, pickerDay, container, html, i, j, sysDays, activeDay, days, prevLastDay, firstDay, lastDay, table;
 
             date = new Date();
             date.setDate(1); // for the prev and next implementations
@@ -288,14 +265,14 @@ var calendar = {
             if (container === undefined) {
 
                 html += '</div>';
-
-                html = parser(html);
-                that.innerHTML = html;
+                that.insertAdjacentHTML('afterbegin', html);
 
             } else {
 
-                html = parser(html);
-                container.innerHTML = html;
+                table = selector('table', container)[0];
+                container.removeChild(table);
+
+                container.insertAdjacentHTML('afterbegin', html);
 
             }
 
