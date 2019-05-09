@@ -179,11 +179,6 @@ var dropdown = {};
             events.removeClass(selector('li.selected', p), 'selected');
             events.addClass(this.parentNode, 'selected');
 
-            clearTimeout(dropdownCloseTimer);
-            clearTimeout(dropdownOpenTimer);
-
-            dropdownCloseFnc();
-
         });
 
         // close events
@@ -201,6 +196,15 @@ var dropdown = {};
                 }, 300);
 
             });
+
+        events.on('.dropdown li', 'mouseup', function () {
+
+            clearTimeout(dropdownCloseTimer);
+            clearTimeout(dropdownOpenTimer);
+
+            dropdownCloseFnc();
+
+        });
 
     };
 
