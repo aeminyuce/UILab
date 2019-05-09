@@ -19,29 +19,28 @@ var imageEditor = {
 
     imageEditor.Start = function () {
 
-        // Events
-        events.on(document, 'change', '.image-editor input[type="file"]', function () {
+        function loadFiles(that, files) {
 
-            var i, ext, c, ctx, data, img, w, h, size, allowed, readers, editor, list, tools;
+            var i, ext, c, ctx, data, img, w, h, size, allowed, readers, editor, listCont, list, tools, loaded;
 
             if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) { // IE9 not supported filereader API
                 return;
             }
 
-            if (this.files.length > 0) {
+            if (files.length > 0) {
 
                 // check allowed file types
                 allowed = [];
 
-                for (i = 0; i < this.files.length; i += 1) {
+                for (i = 0; i < files.length; i += 1) {
 
-                    ext = this.files[i].name.split('.')[1].toLowerCase();
+                    ext = files[i].name.split('.')[1].toLowerCase();
                     if (ext !== null) {
 
                         ext = ext.toString();
 
                         if (imageEditor.types.indexOf(ext) > -1) {
-                            allowed.push(this.files[i]);
+                            allowed.push(files[i]);
                         }
 
                     }
@@ -57,14 +56,18 @@ var imageEditor = {
                 w = [];
                 h = [];
 
+                loaded = 0;
+
                 c = document.createElement("canvas");
                 ctx = c.getContext("2d");
 
-                editor = events.closest(this, '.image-editor')[0];
+                editor = events.closest(that, '.image-editor')[0];
                 events.addClass(editor, 'loading');
 
-                list = selector('.editor-list', editor)[0];
                 tools = selector('.editor-tools', editor)[0];
+
+                listCont = selector('.editor-list', editor)[0];
+                list = selector('.editor-list ul', editor)[0];
 
                 events.each(allowed, function (i) {
 
@@ -109,52 +112,85 @@ var imageEditor = {
                             size = size.toFixed(0);
 
                             // create html
-                            list.insertAdjacentHTML('afterbegin',
+                            list.insertAdjacentHTML('beforeend',
 
                                 '<li class="open-ease">' +
-                                    '<span class="check-custom rounded dual-bordered ease-form">' +
-                                        '<input type="checkbox">' +
-                                        '<i class="ease-form-custom"></i>' +
-                                    '</span>' +
-                                    '<span class="name">' + allowed[i].name + '</span>' +
+                                    '<label>' +
+                                        '<span class="check-custom rounded dual-bordered ease-form">' +
+                                            '<input type="checkbox">' +
+                                            '<i class="ease-form-custom"></i>' +
+                                        '</span>' +
+                                        '<span class="name">' + allowed[i].name + '</span>' +
+                                    '</label>' +
                                     '<span class="img"><img src="' + data + '" alt=""></span>' +
-                                    '<span class="info">' + size + 'kb</span>' +
-                                    '<button class="btn btn-square btn-invisible rounded ease-btn"><i class="icon icon-sm icon-trash"></i></button>' +
+                                    '<span class="size">' + size + 'kb</span>' +
+                                    '<span class="tag">No Tag</span>' +
                                 '</li>');
 
-                            // end of loaded images
-                            if (i === allowed.length - 1) {
-
-                                events.addClass(list, 'open');
-                                events.addClass(tools, 'open');
-
-                                setTimeout(function () {
-
-                                    events.removeClass(selector('li.open-ease', list), 'open-ease');
-
-                                    // empty variables
-                                    allowed = [];
-                                    readers = [];
-
-                                    img = [];
-                                    w = [];
-                                    h = [];
-
-                                }, 0);
-
-                                setTimeout(function () {
-                                    events.removeClass(editor, 'loading');
-                                }, 150);
-
-                            }
-
                         };
+
+                    };
+
+                    // end of loaded images
+                    readers[i].onloadend = function () {
+
+                        loaded += 1;
+                        if (loaded === allowed.length) {
+
+                            events.addClass(tools, 'open');
+                            events.addClass(listCont, 'open');
+
+                            setTimeout(function () {
+
+                                events.addClass(tools, 'open-ease');
+                                events.removeClass(selector('li.open-ease', listCont), 'open-ease');
+
+                                // empty variables
+                                allowed = [];
+                                readers = [];
+
+                                img = [];
+                                w = [];
+                                h = [];
+
+                            }, 10);
+
+                            setTimeout(function () {
+                                events.removeClass(editor, 'loading');
+                            }, 150);
+
+                        }
 
                     };
 
                     readers[i].readAsDataURL(allowed[i]);
 
                 });
+
+            }
+
+        }
+
+        // Events
+        events.on(document, 'change', '.image-editor input[type="file"]', function () {
+            loadFiles(this, this.files);
+        });
+
+        events.on(document, 'dragenter dragover dragleave drop', '.image-editor', function (e) {
+
+            e.preventDefault();
+            e.stopPropagation();
+
+            if (e.type === 'dragenter' || e.type === 'dragover') {
+                events.addClass(this, 'drop-highlight');
+
+            } else {
+
+                events.removeClass(this, 'drop-highlight');
+
+                if (e.type === 'drop') {
+                    loadFiles(this, e.dataTransfer.files);
+                }
 
             }
 
