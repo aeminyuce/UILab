@@ -144,7 +144,6 @@ var modal = {
 
                 content.style.removeProperty('width');
                 content.style.removeProperty('height');
-                content.style.removeProperty('min-height');
 
                 if (set.size === undefined) {
 
@@ -231,7 +230,7 @@ var modal = {
                         if (size !== undefined && size !== 'fullscreen') { // inherit fixed size && fullscreen
 
                             content.style.width = content.offsetWidth + 'px';
-                            content.style.minHeight = content.offsetHeight + 'px';
+                            content.style.height = content.offsetHeight + 'px';
 
                         }
 
@@ -309,20 +308,23 @@ var modal = {
 
                 } else if (type === 'ajax') { // ajax sources
 
-                    ajax('POST', set.source, function (response, status) {
+                    ajax({
+                        url : set.source,
+                        callback: function (status, response) {
 
-                        if (status === 'success') {
+                            if (status === 'success') {
 
-                            temp = '<div class="modal modal-remove">' + response + '</div>';
+                                temp = '<div class="modal modal-remove">' + response + '</div>';
 
-                            createModal();
-                            content.insertAdjacentHTML('beforeend', temp);
+                                createModal();
+                                content.insertAdjacentHTML('beforeend', temp);
 
-                            checkHeaderFooter();
-                            showModal();
+                                checkHeaderFooter();
+                                showModal();
+
+                            }
 
                         }
-
                     });
 
                 }

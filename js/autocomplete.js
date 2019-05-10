@@ -49,7 +49,7 @@ var autocomplete = {
 
         events.on(document, 'keyup', formEvents, function (e) {
 
-            var i, j, k, n, p, list, listItems, navSelected, navIndex, v, key, checkData, createDropdown, timerShowLines, offset, tHeight, dHeight, m, txt, getVal, id, src;
+            var i, j, k, n, p, list, listItems, navSelected, navIndex, v, key, checkData, createDropdown, timerShowLines, offset, tHeight, dHeight, m, txt, getVal, src;
 
             p = this.parentNode;
             list = selector('ul', p);
@@ -214,36 +214,35 @@ var autocomplete = {
 
                     };
 
-                    id = p.getAttribute('data-id');
-
-                    src = p.getAttribute('data-src');
                     getVal = p.getAttribute('data-val');
 
                     if (getVal !== null && getVal !== '') {
 
-                        if (id !== null && id !== '') { // get inner json data
-                            checkData(selector('#' + id)[0].textContent);
+                        src = p.getAttribute('data-src');
+                        if (src !== null && src !== '') {
 
-                        } else if (src !== null && src !== '') { // get json data with ajax
+                            // get json data with ajax
+                            ajax({
+                                url : src,
+                                callback: function (status, response, xhr) {
 
-                            ajax('POST', src, function (response, status, xhr) {
+                                    // abort still processing previous autocomplete requests
+                                    for (n = 0; n < autocompleteRequests.length; n += 1) {
 
-                                // abort still processing previous autocomplete requests
-                                for (n = 0; n < autocompleteRequests.length; n += 1) {
+                                        autocompleteRequests[n].abort();
+                                        autocompleteRequests.splice(n, 1);
 
-                                    autocompleteRequests[n].abort();
-                                    autocompleteRequests.splice(n, 1);
+                                    }
+
+                                    autocompleteRequests.push(xhr);
+                                    if (status === 'success') {
+
+                                        autocompleteRequests = [];
+                                        checkData(response);
+
+                                    }
 
                                 }
-
-                                autocompleteRequests.push(xhr);
-                                if (status === 'success') {
-
-                                    autocompleteRequests = [];
-                                    checkData(response);
-
-                                }
-
                             });
 
                         }
