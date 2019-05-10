@@ -40,6 +40,7 @@
     <!-- Javascript Tools -->
     <script src="../js/selector.js"></script>
     <script src="../js/events.js"></script>
+    <script src="../js/ajax.js"></script>
     <script src="../js/forms.js"></script>
     <script src="../js/ie9-placeholders.js"></script>
     <script src="../js/sticky-header.js"></script>
@@ -180,6 +181,12 @@
                 <div class="col-12">
 
                     <b>Type:</b>
+                    <i class="x-dark margin-5-b block">Open links with ajax modal.</i>
+                    <pre class="rounded margin-5-b">modal.open({<br>    source: 'php/ajax-modal.php'<br>    size: 'lg',<br>    type: 'ajax'<br>});</pre>
+                    <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: 'php/ajax-modal.php', size: 'lg', type: 'ajax'});">Run Code</button>
+
+                    <span class="sp15"></span>
+
                     <i class="x-dark margin-5-b block">
                         Open links with iframe modal.<br>
                         Youtube embed link example:
