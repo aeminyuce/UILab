@@ -48,7 +48,7 @@
     <!-- Javascript Tools -->
     <script src="../js/selector.js"></script>
     <script src="../js/events.js"></script>
-
+    <script src="../js/ajax.js"></script>
     <script src="../js/autocomplete.js"></script>
     <script src="../js/forms.js"></script>
     <script src="../js/ie9-placeholders.js"></script>
@@ -94,7 +94,7 @@
                         <form action="#">
 
                             <!-- sidebar: start -->
-                            <div data-id="watches" data-val="name" class="autocomplete text text-icon text-icon-left dual-bordered rounded ease-form">
+                            <div data-src="json/watches.json" data-val="name" class="autocomplete text text-icon text-icon-left dual-bordered rounded ease-form">
                                 <i class="icon text-icon-left icon-sm icon-search ease-layout"></i>
                                 <input type="text" placeholder="Search by keyword." autocomplete="off">
                             </div>
@@ -560,32 +560,6 @@
                         </div>
                     </div>
                     <!-- pagination: end -->
-
-                    <pre id="watches" class="hidden">
-                        <code>
-                            [
-                              {"name": "AX Armani Exchange"},
-                              {"name": "Baume Et Mercier"},
-                              {"name": "Bertucci"},
-                              {"name": "Seiko"},
-                              {"name": "Mavado"},
-                              {"name": "Nylon"},
-                              {"name": "Silicone"},
-                              {"name": "Ceramic"},
-                              {"name": "Gold"},
-                              {"name": "Fabric"},
-                              {"name": "Analog"},
-                              {"name": "Chronograph"},
-                              {"name": "Digital"},
-                              {"name": "Band Strap"},
-                              {"name": "Bracelet Strap"},
-                              {"name": "Casual"},
-                              {"name": "Luxury"},
-                              {"name": "Smart"},
-                              {"name": "Sport"}
-                            ]
-                        </code>
-                    </pre>
 
                 </div>
             </div>
