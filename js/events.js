@@ -61,7 +61,7 @@ var events = {
     on: function (t, e, that, callback) {
 
         'use strict';
-        var arr, f, fnc, handlerFnc, targetEl, objName, isWindowEvent, l, customEvent, isMSIE, eName, delegate, i, j, k, m;
+        var arr, f, fnc, handlerFnc, targetEl, objName, isWindowEvent, l, customEvent, isMSIE, eName, nonClosest, delegate, i, j, k, m;
 
         fnc = function (e) {
 
@@ -77,9 +77,11 @@ var events = {
                     eName = e.split('.')[0]; // split for event naming
                     targetEl = selector(that); // catches future updated DOM!
 
+                    nonClosest = ['mouseenter', 'mouseleave', 'mouseout', 'mouseover']; // non-closest events
+
                     for (j = 0; j < targetEl.length; j += 1) {
 
-                        if (eName === 'mouseenter' || eName === 'mouseleave' || eName === 'mouseover' || eName === 'mouseout') { // control non-closest events
+                        if (nonClosest.indexOf(eName) > -1) { // control non-closest events
 
                             if (event.target === targetEl[j]) {
                                 callback.call(targetEl[j], event, event.toElement);
