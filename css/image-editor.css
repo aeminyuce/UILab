@@ -13,10 +13,22 @@
 .image-editor.drop-highlight { background-color: #f5f5f5; }
 
 .editor-panel { text-align: right; min-height: 52px; padding: 15px; }
-.image-editor.loading .file { background-image: linear-gradient(45deg, rgba(255,255,255,0) 25%, rgba(255,255,255,.25) 25%, rgba(255,255,255,.25) 50%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 75%, rgba(255,255,255,.25) 75%); background-size: 20px 20px; animation: editor-loader 1s linear infinite; }
 
 .editor-panel > .row { margin-left: 0; margin-right: 0; }
 .editor-panel h3,.editor-panel h4,.editor-panel h5,.editor-panel h6 { font-size: 18px; line-height: 32px; margin-bottom: 0; float: left; }
+
+.image-editor.loading .file,.image-editor.uploading .editor-upload { background-image: linear-gradient(45deg, rgba(255,255,255,0) 25%, rgba(255,255,255,.25) 25%, rgba(255,255,255,.25) 50%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 75%, rgba(255,255,255,.25) 75%); background-size: 20px 20px; animation: editor-loader 1s linear infinite; }
+
+.image-editor .file { display: inline-block; }
+.image-editor .file .btn b { font-weight: normal; }
+
+html:not(.ie9) .image-editor .file .btn .icon { margin-left: 10px; }
+html:not(.ie9) .image-editor .file span { display: none; }
+
+.ie9 .image-editor .file { width: 232px; }
+.ie9 .image-editor .file .btn { min-width: 32px; }
+.ie9 .image-editor .file .btn b { display: none; }
+.ie9 .image-editor .file span { text-align: left; padding-left: 42px; }
 
 .editor-tools { min-height: 52px; background-color: rgba(0,0,0,.035); padding: 15px; }
 .editor-tools:not(.open) { display: none; }
@@ -26,7 +38,7 @@
 .editor-list:not(.open),.drop-highlight .editor-list { background-color: rgba(255,255,255,.45); margin: 0 15px 15px 15px; border: dashed 2px rgba(0,0,0,.125); border-radius: 6px; }
 
 .editor-list > .icon { position: absolute; top: 50%; left: 50%; z-index: 1; opacity: .15; transform: translate(-50%, -50%); }
-.editor-list.open > .icon { display: none; }
+.editor-list.open > .icon,.ie9 .editor-list { display: none; }
 .drop-highlight .editor-list > .icon { display: block; opacity: .45; }
 
 .editor-list ul { list-style: none; padding: 10px; margin-bottom: 0; display: block; }

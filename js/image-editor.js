@@ -15,16 +15,19 @@ var imageEditor = {
 (function () {
 
     'use strict';
-    /*globals document, events, selector, navigator, setTimeout, Image, FileReader */
+    /*globals document, events, selector, navigator, setTimeout, Image, FileReader, FormData, ajax */
 
     imageEditor.Start = function () {
 
-        function loadFiles(that, files) {
+        function loadFiles(editor, files) {
 
-            var i, ext, c, ctx, data, img, w, h, size, allowed, readers, editor, listCont, list, tools, loaded;
+            var i, ext, c, ctx, data, img, w, h, size, allowed, readers, listCont, list, tools, loaded;
 
             if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) { // IE9 not supported filereader API
+
+                events.trigger(selector('button[type="submit"]', editor)[0], 'click');
                 return;
+
             }
 
             if (files.length > 0) {
@@ -61,9 +64,7 @@ var imageEditor = {
                 c = document.createElement("canvas");
                 ctx = c.getContext("2d");
 
-                editor = events.closest(that, '.image-editor')[0];
                 events.addClass(editor, 'loading');
-
                 tools = selector('.editor-tools', editor)[0];
 
                 listCont = selector('.editor-list', editor)[0];
@@ -106,7 +107,7 @@ var imageEditor = {
                             data = c.toDataURL("image/jpeg");
 
                             // calculate new image file size from new base64
-                            size = data.length - 'data:image/png;base64,'.length;
+                            size = data.split(',')[1].length;
                             size = (4 * Math.ceil(size / 3) * 0.5624896334383812) / 1000;
 
                             size = size.toFixed(0);
@@ -172,14 +173,14 @@ var imageEditor = {
         }
 
         // Events
-        events.on(document, 'change', '.image-editor input[type="file"]', function () {
-            loadFiles(this, this.files);
-        });
-
         events.on(document, 'dragenter dragover dragleave drop', '.image-editor', function (e) {
 
             e.preventDefault();
             e.stopPropagation();
+
+            if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
+                return;
+            }
 
             if (e.type === 'dragenter' || e.type === 'dragover') {
                 events.addClass(this, 'drop-highlight');
@@ -193,6 +194,59 @@ var imageEditor = {
                 }
 
             }
+
+        });
+
+        events.on(document, 'change', '.image-editor input[type="file"]', function () {
+
+            var editor = events.closest(this, '.image-editor')[0];
+            loadFiles(editor, this.files);
+
+        });
+
+        events.on(document, 'submit', '.image-editor form', function (e) {
+
+            if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) { // IE9 not supported FormData API
+                return;
+            }
+
+            e.preventDefault();
+
+            var formData, editor, list, file, size, tag;
+            formData = new FormData();
+
+            editor = events.closest(this, '.image-editor')[0];
+            list = selector('.editor-list ul > li', editor);
+
+            events.each(list, function (i) {
+
+                file = selector('.img img', this)[0].src;
+                formData.append('files[' + i + ']', file); // add base64 images
+
+                size = selector('.size', this)[0].textContent;
+                formData.append('sizes[' + i + ']', size); // add image sizes
+
+                tag = selector('.tag', this)[0].textContent;
+                formData.append('tags[' + i + ']', tag); // add image tags
+
+            });
+
+            events.addClass(editor, 'uploading');
+
+            ajax({
+                url : this.action,
+                data: formData,
+                callback: function (status) {
+
+                    if (status === 'success') {
+                        events.removeClass(editor, 'uploading');
+
+                    } else {
+                        throw new Error('Ajax Alert: Images not uploaded!');
+                    }
+
+                }
+            });
 
         });
 
