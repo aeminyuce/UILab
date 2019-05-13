@@ -16,6 +16,8 @@ var calendar = {
     prevIcon: 'icon-angle-left', // header's previous button icon
     nextIcon: 'icon-angle-right', // header's next button icon
 
+    detailsIcon: 'icon-calendar',
+
     todayTheme : '' // use swatches
 
 };
@@ -108,7 +110,7 @@ var calendar = {
         // create calendar table
         function createFnc(that, newDate, picker) {
 
-            var date, today, pickerDay, container, html, i, j, sysDays, activeDay, days, prevLastDay, firstDay, lastDay, table;
+            var date, today, pickerDay, container, details, html, i, j, sysDays, activeDay, days, prevLastDay, firstDay, lastDay, table, src;
 
             date = new Date();
             date.setDate(1); // for the prev and next implementations
@@ -147,6 +149,33 @@ var calendar = {
             // set new data-date
             that.setAttribute('data-date', date.getFullYear() + ',' + (date.getMonth() + 1));
 
+            // check details
+            details = '';
+            src = that.getAttribute('data-src');
+            if (src !== null && src !== '') {
+                details = '<tfoot class="details">' +
+                    '<tr>' +
+                        '<td colspan="7">' +
+                            '<ul>' +
+                                '<li><i class="icon icon-md ' + calendar.detailsIcon + '"></i> Lorem ipsum dolor.</li>' +
+                                '<li><i class="icon icon-md ' + calendar.detailsIcon + '"></i> Lorem ipsum dolor.</li>' +
+                                '<li><i class="icon icon-md ' + calendar.detailsIcon + '"></i> Lorem ipsum dolor.</li>' +
+                                '<li><i class="icon icon-md ' + calendar.detailsIcon + '"></i> Lorem ipsum dolor.</li>' +
+                                '<li><i class="icon icon-md ' + calendar.detailsIcon + '"></i> Lorem ipsum dolor.</li>' +
+                                '<li><i class="icon icon-md ' + calendar.detailsIcon + '"></i> Lorem ipsum dolor.</li>' +
+                                '<li><i class="icon icon-md ' + calendar.detailsIcon + '"></i> Lorem ipsum dolor.</li>' +
+                                '<li><i class="icon icon-md ' + calendar.detailsIcon + '"></i> Lorem ipsum dolor.</li>' +
+                                '<li><i class="icon icon-md ' + calendar.detailsIcon + '"></i> Lorem ipsum dolor.</li>' +
+                                '<li><i class="icon icon-md ' + calendar.detailsIcon + '"></i> Lorem ipsum dolor.</li>' +
+                                '<li><i class="icon icon-md ' + calendar.detailsIcon + '"></i> Lorem ipsum dolor.</li>' +
+                                '<li><i class="icon icon-md ' + calendar.detailsIcon + '"></i> Lorem ipsum dolor.</li>' +
+                                '<li><i class="icon icon-md ' + calendar.detailsIcon + '"></i> Lorem ipsum dolor.</li>' +
+                            '</ul>' +
+                        '</td>' +
+                    '</tr>' +
+                    '</tfoot>';
+            }
+
             // create table
             html = '';
             container = selector('.calendar-container', that)[0];
@@ -162,19 +191,19 @@ var calendar = {
             }
 
             html += '>' +
-                        '<caption>' +
-                            '<button type="button" tabindex="-1" class="calendar-prev">' +
-                                '<i class="icon icon-md ' + calendar.prevIcon + '"></i>' +
-                            '</button>' +
-                            '<span class="calendar-title ease-bg">' +
-                                '<button type="button" tabindex="-1" class="calendar-month">' + calendar.months[date.getMonth()] + '</button>' +
-                                '<button type="button" tabindex="-1" class="calendar-year">' + date.getFullYear() + '</button>' +
-                            '</span>' +
-                            '<button type="button" tabindex="-1" class="calendar-next">' +
-                                '<i class="icon icon-md ' + calendar.nextIcon + '"></i>' +
-                            '</button>' +
-                        '</caption>' +
-                    '<thead>';
+                '<caption>' +
+                    '<button type="button" tabindex="-1" class="calendar-prev">' +
+                        '<i class="icon icon-md ' + calendar.prevIcon + '"></i>' +
+                    '</button>' +
+                    '<span class="calendar-title ease-bg">' +
+                        '<button type="button" tabindex="-1" class="calendar-month">' + calendar.months[date.getMonth()] + '</button>' +
+                        '<button type="button" tabindex="-1" class="calendar-year">' + date.getFullYear() + '</button>' +
+                    '</span>' +
+                    '<button type="button" tabindex="-1" class="calendar-next">' +
+                        '<i class="icon icon-md ' + calendar.nextIcon + '"></i>' +
+                    '</button>' +
+                '</caption>' +
+                '<thead>';
 
             for (i = 0; i < calendar.days.length; i += 1) {
                 html += '<th>' + calendar.days[i] + '</th>';
@@ -260,6 +289,7 @@ var calendar = {
             }
 
             html += '</tbody>' +
+                    details + // add details
                 '</table>';
 
             if (container === undefined) {
@@ -342,7 +372,6 @@ var calendar = {
             that = events.closest(this, '.calendar')[0];
 
             getAttr(that, date);
-            events.addClass(that, 'top-panel');
 
             // create panel
             html = '<div class="panel ease-layout ease-slow ease-in-out">' +
@@ -360,7 +389,10 @@ var calendar = {
                     html += '<li><button type="button" tabindex="-1" ';
 
                     if (year === i) {
-                        html += 'class="selected" ';
+                        html += 'class="call selected" ';
+
+                    } else {
+                        html += 'class="call" ';
                     }
 
                     html += 'name="' + i + '">' + i + '</button></li>';
@@ -377,7 +409,10 @@ var calendar = {
                     html += '<li><button type="button" tabindex="-1" ';
 
                     if (month === calendar.months[i]) {
-                        html += 'class="selected" ';
+                        html += 'class="call selected" ';
+
+                    } else {
+                        html += 'class="call" ';
                     }
 
                     html += 'name="' + i + '">' + calendar.months[i] + '</button></li>';
@@ -400,8 +435,8 @@ var calendar = {
                 // scroll to active year
                 if (panelType === 'year') {
 
-                    getList = selector('.panel li button', that);
-                    getSelected = selector('.panel li button.selected', that)[0];
+                    getList = selector('.calendar .panel .call', that);
+                    getSelected = selector('.calendar .panel .call.selected', that)[0];
 
                     getIndex = Math.floor(Array.prototype.slice.call(getList).indexOf(getSelected) / 12);
                     selector('.panel', that)[0].scrollTop = (getIndex * (that.offsetHeight - 10)); // IE, EDGE: scrollTo() not supported for div element
@@ -415,7 +450,7 @@ var calendar = {
         });
 
         // close panel
-        events.on(document, 'click', '.calendar .panel li button', function () {
+        events.on(document, 'click', '.calendar .panel .call', function () {
 
             var that, date;
 
@@ -605,7 +640,7 @@ var calendar = {
         });
 
         // picker buttons
-        events.on(document, 'click', '.calendar-picker .calendar td button', function () {
+        events.on(document, 'click', '.calendar-picker .calendar tbody td button', function () {
 
             var date, day, month, picker, that, form;
 
@@ -638,6 +673,34 @@ var calendar = {
 
             // close picker
             pickerCloseFnc('default', form);
+
+        });
+
+        // toggle details
+        events.on(document, 'click', '.calendar[data-src] td button', function () {
+
+            var that, details;
+
+            that = events.closest(this, '.calendar')[0];
+            details = selector('.details', that)[0];
+
+            if (events.hasClass(that, 'show-details')) {
+
+                events.removeClass(that, 'show-details');
+
+                setTimeout(function () {
+                    events.removeClass(details, 'open');
+                }, 20);
+
+            } else {
+
+                events.addClass(details, 'open');
+
+                setTimeout(function () {
+                    events.addClass(that, 'show-details');
+                }, 20);
+
+            }
 
         });
 
