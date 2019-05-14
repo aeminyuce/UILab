@@ -106,7 +106,7 @@ var weather = {
             month = date.getMonth();
             month = weather.months[month];
 
-            dateHtml = '<span class="w-dayname">' + dateText + '</span>, ' + month + ' ' + day + ', ' + date.getFullYear();
+            dateHtml = '<span class="w-dayname">' + dateText + '</span>, ' + month + ' ' + date.getDate() + ', ' + date.getFullYear();
             dateText = dateText + ', ' + month + ' ' + day + ', ' + date.getFullYear();
 
             if (dateLoaded !== dateText) {
