@@ -240,9 +240,6 @@ var imageEditor = {
 
                     if (status === 'success') {
                         events.removeClass(editor, 'uploading');
-
-                    } else {
-                        throw new Error('Ajax Alert: Images not uploaded!');
                     }
 
                 }

@@ -15,9 +15,6 @@
 
                 if (status === 'success') {
                     target[0].innerHTML = response;
-
-                } else {
-                    throw new Error('Ajax Alert: Source not loaded!');
                 }
 
             }
@@ -63,8 +60,6 @@
                             }
                         }
 
-                    } else {
-                        throw new Error('Ajax Alert: Source is not in correct JSON format!');
                     }
 
                 }

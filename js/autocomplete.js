@@ -206,8 +206,6 @@ var autocomplete = {
                                 }
                             }
 
-                        } else {
-                            throw new Error('Ajax Alert: Autocomplete source is not in correct JSON format!');
                         }
 
                         response = '';
