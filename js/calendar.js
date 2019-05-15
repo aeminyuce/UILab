@@ -1,6 +1,6 @@
 /*
  Calendar JS
- Calendar JS requires Events JS
+ Calendar JS requires Events JS, Ajax JS
 */
 
 var calendar = {
@@ -15,8 +15,7 @@ var calendar = {
 
     prevIcon: 'icon-angle-left', // header's previous button icon
     nextIcon: 'icon-angle-right', // header's next button icon
-
-    detailsIcon: 'icon-calendar',
+    backIcon: 'icon-angle-left', // detail's back button icon
 
     todayTheme : '' // use swatches
 
@@ -110,7 +109,7 @@ var calendar = {
         // create calendar table
         function createFnc(that, newDate, picker) {
 
-            var date, today, pickerDay, container, details, html, i, j, sysDays, activeDay, days, prevLastDay, firstDay, lastDay, table, src;
+            var date, today, pickerDay, container, html, i, j, sysDays, activeDay, days, prevLastDay, firstDay, lastDay, src, keys, dday, details;
 
             date = new Date();
             date.setDate(1); // for the prev and next implementations
@@ -148,33 +147,6 @@ var calendar = {
 
             // set new data-date
             that.setAttribute('data-date', date.getFullYear() + ',' + (date.getMonth() + 1));
-
-            // check details
-            details = '';
-            src = that.getAttribute('data-src');
-            if (src !== null && src !== '') {
-                details = '<tfoot class="details">' +
-                    '<tr>' +
-                        '<td colspan="7">' +
-                            '<ul>' +
-                                '<li><i class="icon icon-md ' + calendar.detailsIcon + '"></i> Lorem ipsum dolor.</li>' +
-                                '<li><i class="icon icon-md ' + calendar.detailsIcon + '"></i> Lorem ipsum dolor.</li>' +
-                                '<li><i class="icon icon-md ' + calendar.detailsIcon + '"></i> Lorem ipsum dolor.</li>' +
-                                '<li><i class="icon icon-md ' + calendar.detailsIcon + '"></i> Lorem ipsum dolor.</li>' +
-                                '<li><i class="icon icon-md ' + calendar.detailsIcon + '"></i> Lorem ipsum dolor.</li>' +
-                                '<li><i class="icon icon-md ' + calendar.detailsIcon + '"></i> Lorem ipsum dolor.</li>' +
-                                '<li><i class="icon icon-md ' + calendar.detailsIcon + '"></i> Lorem ipsum dolor.</li>' +
-                                '<li><i class="icon icon-md ' + calendar.detailsIcon + '"></i> Lorem ipsum dolor.</li>' +
-                                '<li><i class="icon icon-md ' + calendar.detailsIcon + '"></i> Lorem ipsum dolor.</li>' +
-                                '<li><i class="icon icon-md ' + calendar.detailsIcon + '"></i> Lorem ipsum dolor.</li>' +
-                                '<li><i class="icon icon-md ' + calendar.detailsIcon + '"></i> Lorem ipsum dolor.</li>' +
-                                '<li><i class="icon icon-md ' + calendar.detailsIcon + '"></i> Lorem ipsum dolor.</li>' +
-                                '<li><i class="icon icon-md ' + calendar.detailsIcon + '"></i> Lorem ipsum dolor.</li>' +
-                            '</ul>' +
-                        '</td>' +
-                    '</tr>' +
-                    '</tfoot>';
-            }
 
             // create table
             html = '';
@@ -257,21 +229,33 @@ var calendar = {
                     if (activeDay) {
 
                         if (date.getFullYear() + ' ' + date.getMonth() + ' ' + days === today) { // today
-                            html += '<td class="today"><button class="' + calendar.todayTheme + '" type="button" tabindex="-1">' + days + '</button></td>';
+                            html += '<td class="today">' +
+                                    '<button class="' + calendar.todayTheme + '" type="button" tabindex="-1">' + days + '</button>' +
+                                '</td>';
 
                         } else { // other days
 
                             if (pickerDay !== '') { // defined a new day from calendar-picker
 
                                 if (date.getFullYear() + ',' + date.getMonth() + ',' + days === pickerDay) {
-                                    html += '<td class="pickerday"><button type="button" tabindex="-1">' + days + '</button></td>';
+
+                                    html += '<td data-day="' + days + '" class="pickerday">' +
+                                            '<button type="button" tabindex="-1">' + days + '</button>' +
+                                        '</td>';
 
                                 } else {
-                                    html += '<td><button type="button" tabindex="-1">' + days + '</button></td>';
+
+                                    html += '<td data-day="' + days + '">' +
+                                            '<button type="button" tabindex="-1">' + days + '</button>' +
+                                        '</td>';
                                 }
 
                             } else {
-                                html += '<td><button type="button" tabindex="-1">' + days + '</button></td>';
+
+                                html += '<td data-day="' + days + '">' +
+                                        '<button type="button" tabindex="-1">' + days + '</button>' +
+                                    '</td>';
+
                             }
 
                         }
@@ -289,7 +273,6 @@ var calendar = {
             }
 
             html += '</tbody>' +
-                    details + // add details
                 '</table>';
 
             if (container === undefined) {
@@ -299,10 +282,104 @@ var calendar = {
 
             } else {
 
-                table = selector('table', container)[0];
-                container.removeChild(table);
-
+                container.innerHTML = '';
                 container.insertAdjacentHTML('afterbegin', html);
+
+            }
+
+            // check details
+            src = that.getAttribute('data-src');
+            if (src !== null && src !== '') {
+
+                details = '';
+
+                // get json data with ajax
+                ajax({
+                    url : src,
+                    callback: function (status, response) {
+
+                        if (status === 'success') {
+
+                            response = JSON.parse(response);
+                            if (response.length === 'undefined') { return; }
+
+                            for (i = 0; i < response.length; i += 1) {
+
+                                if (response[i] === null) { return; }
+
+                                if (Number(response[i].year) === date.getFullYear()) {
+                                    if (Number(response[i].month) === date.getMonth() + 1) {
+
+                                        // select detailed days
+                                        dday = selector('[data-day="' + response[i].day + '"]', that);
+                                        events.addClass(dday, 'toggle-details');
+
+                                        // create details html
+                                        details += '<li>' +
+                                            '<strong>' + response[i].day + '</strong>' +
+                                            '<b>' + response[i].dayName + '</b><br>';
+
+                                        keys = Object.keys(response[i].details);
+
+                                        for (j = 0; j < keys.length; j += 1) {
+                                            details += '<span><i>' + keys[j] + '</i> ' + response[i].details[keys[j]] + '</span>';
+                                        }
+
+                                        details += '</li>';
+
+                                    }
+                                }
+
+                            }
+
+                            container = selector('.calendar-container', that)[0];
+                            if (events.hasClass(that, 'show-details')) {
+
+                                setTimeout(function () {
+                                    events.addClass(selector('.details', container), 'open');
+                                }, 20);
+
+                            }
+
+                            if (details !== '') {
+
+                                details = '<div class="details">' +
+                                            '<button class="toggle-details" type="button" tabindex="-1">' +
+                                                '<i class="icon icon-md ' + calendar.backIcon + '"></i>' +
+                                            '</button>' +
+                                        '<ul>' + details + '</ul>' +
+                                    '</div>';
+
+                                events.addClass(container, 'has-details'); // enable buttons click event
+
+                            } else {
+
+                                details = '<div class="details no-details">' +
+                                        '<button class="toggle-details" type="button" tabindex="-1">' +
+                                            '<i class="icon icon-md ' + calendar.backIcon + '"></i>' +
+                                        '</button>' +
+                                        '<ul>' +
+                                            '<li>' +
+                                                '<strong></strong>' +
+                                                '<b></b><br>' +
+                                                '<span></span>' +
+                                                '<span></span>' +
+                                                '<span></span>' +
+                                            '</li>' +
+                                        '</ul>' +
+                                    '</div>';
+
+                                events.removeClass(container, 'has-details'); // disable buttons click event
+
+                            }
+
+                            container.insertAdjacentHTML('afterbegin', details);
+                            details = '';
+
+                        }
+
+                    }
+                });
 
             }
 
@@ -677,7 +754,7 @@ var calendar = {
         });
 
         // toggle details
-        events.on(document, 'click', '.calendar[data-src] td button', function () {
+        events.on(document, 'click', '.calendar .toggle-details', function () {
 
             var that, details;
 
