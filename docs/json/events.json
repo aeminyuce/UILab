@@ -1,0 +1,47 @@
+[
+  {
+      "year": "2019",
+      "month": "6",
+      "day": "12",
+      "dayName": "Wednesday",
+      "details": {
+          "11:00": "<a href=\"#\" target=\"_blank\">Lorem ipsum dolor.</a>",
+          "14:00": "<a href=\"#\" target=\"_blank\">Lorem ipsum dolor sit amet.</a>",
+          "19:00": "<a href=\"#\" target=\"_blank\">Lorem ipsum.</a>"
+      }
+  },
+  {
+      "year": "2019",
+      "month": "6",
+      "day": "15",
+      "dayName": "Friday",
+      "details": {
+          "19:00": "<a href=\"#\" target=\"_blank\">Lorem ipsum.</a>"
+      }
+  },
+  {
+      "year": "2019",
+      "month": "7",
+      "day": "2",
+      "dayName": "Wednesday",
+      "details": {
+          "11:00": "<a href=\"#\" target=\"_blank\">Lorem ipsum dolor.</a>",
+          "14:00": "<a href=\"#\" target=\"_blank\">Lorem ipsum dolor sit amet.</a>",
+          "13:30": "<a href=\"#\" target=\"_blank\">Lorem ipsum.</a>",
+          "15:00": "<a href=\"#\" target=\"_blank\">Lorem ipsum dolor.</a>",
+          "17:00": "<a href=\"#\" target=\"_blank\">Lorem ipsum dolor sit amet.</a>",
+          "19:00": "<a href=\"#\" target=\"_blank\">Lorem ipsum.</a>"
+      }
+  },
+  {
+      "year": "2019",
+      "month": "7",
+      "day": "9",
+      "dayName": "Friday",
+      "details": {
+          "14:00": "<a href=\"#\" target=\"_blank\">Lorem ipsum dolor sit amet.</a>",
+          "15:00": "<a href=\"#\" target=\"_blank\">Lorem ipsum dolor.</a>",
+          "19:00": "<a href=\"#\" target=\"_blank\">Lorem ipsum.</a>"
+      }
+  }
+]
