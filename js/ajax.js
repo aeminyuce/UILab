@@ -87,28 +87,30 @@ var ajax = function (set) { // type, url, data, callback
         set.type = 'POST';
     }
 
-    ajax.request = new XMLHttpRequest();
-    ajax.request.open(set.type, set.url, true);
+    var i = new Date().getTime();
+
+    ajax.request[i] = new XMLHttpRequest();
+    ajax.request[i].open(set.type, set.url, true);
 
     if (set.data !== '' && set.data !== undefined) {
-        ajax.request.send(set.data);
+        ajax.request[i].send(set.data);
 
     } else {
-        ajax.request.send();
+        ajax.request[i].send();
     }
 
-    ajax.request.onload = function () {
+    ajax.request[i].onload = function () {
 
         function uniqueClassNames(value, index, self) {
             return self.indexOf(value) === index;
         }
 
-        if (ajax.request.status >= 200 && ajax.request.status < 400) {
+        if (ajax.request[i].status >= 200 && ajax.request[i].status < 400) {
 
-            set.callback('success', ajax.request.responseText, ajax.request);
+            set.callback('success', ajax.request[i].responseText, ajax.request[i]);
 
             // get list of real classnames
-            ajax.classNames = ajax.request.responseText.match(/\sclass=\"+[\w\s\d\-\_\=]+\"[\s\>]/g);
+            ajax.classNames = ajax.request[i].responseText.match(/\sclass=\"+[\w\s\d\-\_\=]+\"[\s\>]/g);
 
             if (ajax.classNames !== null) {
 
@@ -120,12 +122,13 @@ var ajax = function (set) { // type, url, data, callback
 
             }
 
-        } else { set.callback('error', '', ajax.request); }
+        } else { set.callback('error', '', ajax.request[i]); }
 
     };
 
-    ajax.request.onerror = function () {
-        set.callback('error', '', ajax.request);
+    ajax.request[i].onerror = function () {
+        set.callback('error', '', ajax.request[i]);
     };
 
 };
+ajax.request = [];
