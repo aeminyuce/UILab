@@ -16,9 +16,10 @@ var autocomplete = {
 
     autocomplete.Start = function () {
 
-        var customLowerCase, formEvents, autocompleteRequests;
-
-        autocompleteRequests = [];
+        var
+            customLowerCase,
+            formEvents,
+            autocompleteRequests  = [];
 
         // custom lowercase
         (function () {
@@ -222,7 +223,7 @@ var autocomplete = {
                             // get json data with ajax
                             ajax({
                                 url : src,
-                                callback: function (status, response, xhr) {
+                                beforesend: function (xhr) {
 
                                     // abort still processing previous autocomplete requests
                                     for (n = 0; n < autocompleteRequests.length; n += 1) {
@@ -233,11 +234,12 @@ var autocomplete = {
                                     }
 
                                     autocompleteRequests.push(xhr);
+
+                                },
+                                callback: function (status, response) {
+
                                     if (status === 'success') {
-
-                                        autocompleteRequests = [];
                                         checkData(response);
-
                                     }
 
                                 }
