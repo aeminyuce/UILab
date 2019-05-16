@@ -315,7 +315,7 @@ var calendar = {
                                         events.addClass(dday, 'toggle-details');
 
                                         // create details html
-                                        details += '<li>' +
+                                        details += '<li data-d="' + response[i].day + '">' +
                                             '<strong>' + response[i].day + '</strong>' +
                                             '<b>' + response[i].dayName + '</b><br>';
 
@@ -756,7 +756,7 @@ var calendar = {
         // toggle details
         events.on(document, 'click', '.calendar .toggle-details', function () {
 
-            var that, details;
+            var that, details, day, i, list, scroll;
 
             that = events.closest(this, '.calendar')[0];
             details = selector('.details', that)[0];
@@ -767,7 +767,7 @@ var calendar = {
 
                 setTimeout(function () {
                     events.removeClass(details, 'open');
-                }, 20);
+                }, 300);
 
             } else {
 
@@ -776,6 +776,23 @@ var calendar = {
                 setTimeout(function () {
                     events.addClass(that, 'show-details');
                 }, 20);
+
+                scroll = 0;
+
+                day = this.getAttribute('data-day');
+                list = selector('.details li', that);
+
+                for (i = 0; i < list.length; i += 1) {
+
+                    if (list[i].getAttribute('data-d') === day) {
+                        break;
+                    }
+
+                    scroll += list[i].offsetHeight + 10; // 10: margin-bottom size
+
+                }
+
+                selector('ul', details)[0].scrollTop = scroll; // IE, EDGE: scrollTo() not supported for div element
 
             }
 
