@@ -788,7 +788,7 @@ var calendar = {
                         break;
                     }
 
-                    scroll += list[i].offsetHeight + 10; // 10: margin-bottom size
+                    scroll += list[i].offsetHeight + 20; // 20: margin-bottom size
 
                 }
 

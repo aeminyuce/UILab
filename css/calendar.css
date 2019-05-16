@@ -56,7 +56,8 @@ html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) caption .calendar-titl
 .calendar tbody td button { width: 100%; background: transparent; padding: 8px; display: block; border: 0; position: relative; }
 .calendar.rounded td button { border-radius: 6px; }
 
-.calendar tbody td.toggle-details button:after { content: ""; width: 6px; height: 6px; background-color: #dc000f; margin-left: -3px; display: block; border-radius: 100%; position: absolute; bottom: 3px; left: 50%; }
+.calendar tbody td.toggle-details button:after { content: ""; width: 6px; height: 6px; background: rgba(255,255,255,.65); margin-left: -3px; display: block; border-radius: 100%; position: absolute; bottom: 3px; left: 50%; }
+.calendar:not(.ui-dark):not(.ui-x-dark) tbody td.toggle-details button:after { background: #bbb; }
 
 html:not(.mobile) .calendar tbody td:not(.today):not(.pickerday) button:hover { background-color: rgba(255,255,255,.125); }
 html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) td:not(.today):not(.pickerday) button:hover { background-color: rgba(0,0,0,.075); }
@@ -90,7 +91,7 @@ html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) .details > button:hove
 .calendar .details ul,.calendar .details ul * { text-align: left !important; }
 .calendar .details ul { height: 100%; overflow-x: hidden !important; overflow-y: auto !important; -webkit-overflow-scrolling: touch; }
 .calendar .details li { min-height: 10px; padding: 10px; display: block; }
-.calendar .details li:not(:last-child) { margin-bottom: 10px; }
+.calendar .details li:not(:last-child) { margin-bottom: 20px; }
 .calendar.rounded .details li { padding-left: 65px; border-radius: 6px; }
 .calendar .details li > strong { font-size: 42px; font-weight: 300; letter-spacing: -0.025em; text-align: center !important; line-height: 40px; width: 45px; margin-left: -55px; float: left; }
 .calendar .details li > b { font-size: 15px; margin: 10px 0 15px 0; display: inline-block; }
