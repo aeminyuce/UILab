@@ -505,6 +505,9 @@ var photoGallery = {
 
                         if (imgZoom <= 1) {
 
+                            imgPosX = '-50';
+                            imgPosY = '-50';
+
                             imgZoom = 1;
                             events.removeClass(img, 'preview-zoom');
 
