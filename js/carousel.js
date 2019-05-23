@@ -88,6 +88,8 @@ var carousel = {
                 loadedImgs[i][l].removeAttribute('data-src');
                 loadingImgs[i][l].addEventListener('load', function () {
 
+                    if (loadingImgs[i][l] === undefined) { return; }
+
                     loadedImgs[i][l].src = loadingImgs[i][l].src;
                     events.addClass(loadedImgs[i][l], 'loaded');
 
@@ -109,6 +111,8 @@ var carousel = {
         function fnc() {
 
             contents = selector('.content', that[i]);
+            if (contents.length === 0) { return; }
+
             navDots = selector('.carousel-nav .dots', that[i])[0];
 
             navDotsLength = selector('i', navDots).length;
