@@ -1,5 +1,5 @@
 /* dropdown */
-.ease-dropdown { transition-property: margin-top, opacity; }
+.ease-dropdown { transition-property:opacity; transition-duration: .15s; transition-timing-function: ease-in-out; }
 .ease-dropdown li { transition-property: background-color; transition-duration: .15s; }
 .no-transitions-all .ease-dropdown li { transition-property: none !important; }
 
