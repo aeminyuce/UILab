@@ -95,12 +95,25 @@ html:not(.mobile) .select-multi > .icon { display: none; }
 }
 @media (max-width: 959px) {
     .form-grid { display: block; }
-    .row [class*="col-"] > .form-grid { margin-bottom: -15px; }
+    .row [class*="col-"]:not(.sm-responsive) > .form-grid { margin-bottom: -15px; }
 
-    .row-no-padding [class*="col-"] > .form-grid { margin-top: 10px; margin-bottom: 5px; }
-    .row-xs-padding [class*="col-"] > .form-grid,.row-xs-padding-ver [class*="col-"] > .form-grid { margin-bottom: 3px; }
-    .row-sm-padding [class*="col-"] > .form-grid,.row-sm-padding-ver [class*="col-"] > .form-grid { margin-bottom: 0; }
-    .row-md-padding [class*="col-"] > .form-grid,.row-md-padding-ver [class*="col-"] > .form-grid { margin-bottom: -5px; }
+    .row-no-padding [class*="col-"]:not(.sm-responsive) > .form-grid { margin-top: 10px; margin-bottom: 5px; }
+    .row-xs-padding [class*="col-"]:not(.sm-responsive) > .form-grid,.row-xs-padding-ver [class*="col-"]:not(.sm-responsive) > .form-grid { margin-bottom: 3px; }
+    .row-sm-padding [class*="col-"]:not(.sm-responsive) > .form-grid,.row-sm-padding-ver [class*="col-"]:not(.sm-responsive) > .form-grid { margin-bottom: 0; }
+    .row-md-padding [class*="col-"]:not(.sm-responsive) > .form-grid,.row-md-padding-ver [class*="col-"]:not(.sm-responsive) > .form-grid { margin-bottom: -5px; }
+}
+@media (min-width: 768px) and (max-width: 959px) {
+    .sm-responsive > .form-grid { line-height: 32px; display: inline-block; }
+    .sm-responsive > .form-grid.form-lg { line-height: 42px; }
+}
+@media (max-width: 767px) {
+    .sm-responsive > .form-grid { display: block; }
+    .row [class*="col-"].sm-responsive > .form-grid { margin-bottom: -15px; }
+
+    .row-no-padding [class*="col-"].sm-responsive > .form-grid { margin-top: 10px; margin-bottom: 5px; }
+    .row-xs-padding [class*="col-"].sm-responsive > .form-grid,.row-xs-padding-ver [class*="col-"].sm-responsive > .form-grid { margin-bottom: 3px; }
+    .row-sm-padding [class*="col-"].sm-responsive > .form-grid,.row-sm-padding-ver [class*="col-"].sm-responsive > .form-grid { margin-bottom: 0; }
+    .row-md-padding [class*="col-"].sm-responsive > .form-grid,.row-md-padding-ver [class*="col-"].sm-responsive > .form-grid { margin-bottom: -5px; }
 }
 @media (min-width: 481px) {
     .form-summary:not(.no-responsive) { line-height: 32px; }
