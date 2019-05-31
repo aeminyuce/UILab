@@ -53,7 +53,7 @@ var textareaCounter = {};
         loadCounters();
 
         // Events
-        events.on(document, 'keydown keypress paste', '.textarea[data-counter] textarea', function (e) {
+        events.on(document, 'keydown keypress change', '.textarea[data-counter] textarea', function (e) {
 
             if (e.type === 'keydown' && e.ctrlKey) {
 
