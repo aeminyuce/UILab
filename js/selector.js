@@ -35,10 +35,13 @@ var selector = function (item, outer) {
 
         if (typeof outer !== 'object') {
             outerEl = document.querySelectorAll(outer); // convert to array
+
         } else { outerEl = outer; }
 
         outerElLength = outerEl.length;
-        if (outerEl.length !== undefined) { // "this" object
+
+        // discard "this" object && form object (form element not returns "this", it returns all form elements)
+        if (outerEl.length !== undefined && Array.prototype.slice.call(outerEl).length === 1) {
 
             for (i = 0; i < outerElLength; i += 1) {
 
@@ -53,7 +56,9 @@ var selector = function (item, outer) {
 
             }
 
-        } else { foundEl = outerEl.querySelectorAll(item); }
+        } else { // "this" object
+            foundEl = outerEl.querySelectorAll(item);
+        }
 
         return foundEl;
 
