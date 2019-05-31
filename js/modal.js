@@ -144,6 +144,7 @@ var modal = {
 
                 content.style.removeProperty('width');
                 content.style.removeProperty('height');
+                content.style.removeProperty('min-height');
 
                 if (set.size === undefined) {
 
@@ -230,7 +231,13 @@ var modal = {
                         if (size !== undefined && size !== 'fullscreen') { // inherit fixed size && fullscreen
 
                             content.style.width = content.offsetWidth + 'px';
-                            content.style.height = content.offsetHeight + 'px';
+
+                            if (selector('.modal', content)[0].offsetHeight > content.offsetHeight) { // large contents has fixed and scrollable height
+                                content.style.height = content.offsetHeight + 'px';
+
+                            } else { // small contents has elastic height
+                                content.style.minHeight = content.offsetHeight + 'px';
+                            }
 
                         }
 
