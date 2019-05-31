@@ -187,15 +187,29 @@ var forms = {};
         // trigger custom events on form Submit
         events.on(document, 'reset', 'form', function (e) {
 
-            var forms = Array.prototype.slice.call(e.target);
+            var forms, errors, reqMessages;
+
+            forms = Array.prototype.slice.call(e.target);
+
+            errors = selector('.error', this);
+            reqMessages = selector('.required-msg', this);
 
             setTimeout(function () { // wait for form reset started on DOM
 
                 events.each(forms, function () {
+
+                    // trigger defined events after form clear
                     if (!events.hasClass(this, 'required')) { // discard required forms
                         events.trigger(this, 'keydown keyup change');
                     }
+
                 });
+
+                // remove errors
+                events.removeClass(errors, 'error');
+
+                // remove error messages
+                events.removeClass(reqMessages, 'show');
 
             }, 0);
 
