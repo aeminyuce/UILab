@@ -213,6 +213,14 @@ var requiredForms = {
             success = 0;
             getIndex = 0;
 
+            if (forms.length !== success) {
+
+                events.each(forms, function () {
+                    events.trigger(this, 'blur');
+                });
+
+            }
+
             for (i = 0; i < forms.length; i += 1) {
 
                 if (events.hasClass(forms[i], 'success')) {
@@ -231,42 +239,38 @@ var requiredForms = {
 
             }
 
-            if (forms.length > 0 && (forms.length !== success)) {
+            if (forms.length !== success) {
 
                 e.preventDefault();
                 e.stopPropagation();
 
-                events.each(forms, function () {
-                    events.trigger(this, 'blur');
-                });
+                if (requiredForms.target === '') {
+
+                    scrollTarget = window;
+                    scrollPos = scrollTarget.pageYOffset;
+
+
+                } else {
+
+                    scrollTarget = selector(requiredForms.target)[0];
+                    scrollPos = scrollTarget.scrollTop;
+
+                }
+
+                getRect = forms[scrollIndex].getBoundingClientRect();
+                scrollIndex = getRect.top - (getRect.height * 2) + scrollPos;
+
+                clearInterval(scrollAnimate);
+                scrollAnimate = setInterval(function () {
+
+                    scrollPos -= 10;
+
+                    scrollTarget.scrollTo(scrollIndex, scrollPos);
+                    if (scrollPos + 10 <= scrollIndex) { clearInterval(scrollAnimate); }
+
+                }, 2);
 
             } else { return; }
-
-            if (requiredForms.target === '') {
-
-                scrollTarget = window;
-                scrollPos = scrollTarget.pageYOffset;
-
-
-            } else {
-
-                scrollTarget = selector(requiredForms.target)[0];
-                scrollPos = scrollTarget.scrollTop;
-
-            }
-
-            getRect = forms[scrollIndex].getBoundingClientRect();
-            scrollIndex = getRect.top - (getRect.height * 2) + scrollPos;
-
-            clearInterval(scrollAnimate);
-            scrollAnimate = setInterval(function () {
-
-                scrollPos -= 10;
-
-                scrollTarget.scrollTo(scrollIndex, scrollPos);
-                if (scrollPos + 10 <= scrollIndex) { clearInterval(scrollAnimate); }
-
-            }, 2);
 
         });
 
