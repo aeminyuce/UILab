@@ -51,8 +51,8 @@ html:not(.mobile) .select-multi > .icon { display: none; }
 
 .hint,.required-msg { font-size: 12px; margin-top: 5px; margin-bottom: 0 !important; }
 .hint,.required-msg.show { display: block; }
-.hint.error,.required-msg { color: #dc000f; }
-.required-msg { background-color: #ffeded; padding: 10px; }
+.hint.error,.required-msg { color: #f73d49; }
+.required-msg { background-color: rgba(220,0,15,.065); padding: 10px; }
 .required-msg:not(.show) { display: none; }
 
 .form-inline,.form-inline-responsive { display: inline-block !important; }
