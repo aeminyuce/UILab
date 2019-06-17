@@ -299,19 +299,21 @@ var carousel = {
                 }
 
                 // detect carousel animates
-                events.each(contents, function () {
+                if (contents.length > 1 && contents.length !== col) { // stop reloading animates when content length is not enough
 
-                    if (contents.length <= 1) { return; } // stop reloading animates when content length is not enough
-                    animate = this.getAttribute('data-animate');
+                    events.each(contents, function () {
 
-                    if (animate !== null) {
+                        animate = this.getAttribute('data-animate');
+                        if (animate !== null) {
 
-                        if (animate === '') { animate = 150; }
-                        carouselAnimate(this, animate, contentsEase[i], 'static');
+                            if (animate === '') { animate = 150; }
+                            carouselAnimate(this, animate, contentsEase[i], 'static');
 
-                    }
+                        }
 
-                });
+                    });
+
+                }
 
                 that.setAttribute('data-content', (counts[i] + 1));
 
