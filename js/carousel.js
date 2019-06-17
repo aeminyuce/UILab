@@ -301,7 +301,9 @@ var carousel = {
                 // detect carousel animates
                 events.each(contents, function () {
 
+                    if (contents.length <= 1) { return; } // stop reloading animates when content length is not enough
                     animate = this.getAttribute('data-animate');
+
                     if (animate !== null) {
 
                         if (animate === '') { animate = 150; }
