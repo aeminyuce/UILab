@@ -295,8 +295,8 @@ var carousel = {
 
                 i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
 
-                navDots = selector('.carousel-nav .dots', that[i]);
-                navDotsEl = selector('.carousel-nav .dots i', that[i]);
+                navDots = selector('.carousel-nav .dots', that);
+                navDotsEl = selector('.carousel-nav .dots i', that);
 
                 if (window.innerWidth > carousel.tablet) {
                     col = cols[i];
