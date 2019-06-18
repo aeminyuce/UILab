@@ -18,9 +18,12 @@
 
 .carousel .scroll > *,.carousel .v-scroll > *,.carousel .h-scroll > * { -webkit-transform: translateZ(0); } /* ios: disappearing elements fix */
 
-.carousel .carousel-nav { line-height: 6px; display: block; cursor: default; }
+.carousel .carousel-nav { white-space: nowrap; line-height: 6px; overflow: hidden; display: block; cursor: default; }
 .carousel .carousel-nav .dots i { width: 7px; height: 7px; background-color: currentColor; margin: 0 3px; display: inline-block; border-radius: 50%; opacity: .45; }
 .carousel .carousel-nav .dots i.selected { background-color: currentColor; opacity: 1; transform: scale(1.5); }
+
+.carousel .carousel-nav .dots.filtered i:not(.show):not(.selected) { display: none; }
+.carousel .carousel-nav .dots.filtered i.faded { opacity: .15; }
 
 .carousel-animate:not(.show) { opacity: 0; }
 

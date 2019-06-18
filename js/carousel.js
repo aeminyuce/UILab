@@ -6,7 +6,9 @@
 var carousel = {
 
     mobile: 767, // data-col-mobile breakdown
-    tablet: 959 // data-col-tablet breakdown
+    tablet: 959, // data-col-tablet breakdown
+
+    showMaxDots: 10 // 5+ numbers, allowed size for dots number exceeds
 
 };
 
@@ -104,6 +106,41 @@ var carousel = {
 
     }
 
+    function filterDots(navDots, navDotsEl, navSide) {
+
+        if (carousel.showMaxDots < 5) { return; }
+
+        events.removeClass(navDots, 'filtered');
+        events.removeClass(navDotsEl, 'show faded');
+
+        if (navDotsEl.length > carousel.showMaxDots) {
+
+            events.addClass(navDots, 'filtered');
+
+            if ((navSide - 1) > -1) {
+
+                events.addClass(navDotsEl[navSide - 1], 'show');
+
+                if ((navSide - 2) > -1) {
+                    events.addClass(navDotsEl[navSide - 2], 'show faded');
+                }
+
+            }
+
+            if ((navSide + 1) < navDotsEl.length) {
+
+                events.addClass(navDotsEl[navSide + 1], 'show');
+
+                if ((navSide + 2) < navDotsEl.length) {
+                    events.addClass(navDotsEl[navSide + 2], 'show faded');
+                }
+
+            }
+
+        }
+
+    }
+
     function carouselResizerFnc(i, that, type) {
 
         var col, j, k, slider, contents, animate, navDots, navDotsEl, navDotsLength, navDotsSize, navDotsHtml, navSides, navSide;
@@ -179,6 +216,8 @@ var carousel = {
             events.removeClass(navDotsEl, 'selected');
             events.addClass(navDotsEl[navSide], 'selected');
 
+            filterDots(navDots, navDotsEl, navSide); // filter dots when dots number exceeds
+
             slider = selector('.carousel-slider', that[i]);
 
             for (j = 0; j < slider.length; j += 1) {
@@ -249,14 +288,15 @@ var carousel = {
 
             carouselNav = function (that, direction) {
 
-                var col, slider, contents, animate, i, navDots, navSide;
-
-                navDots = selector('.carousel-nav .dots i', that);
+                var col, slider, contents, animate, i, navDots, navDotsEl, navSide;
 
                 slider = selector('.carousel-slider', that);
                 contents = selector('.content', slider[0]);
 
                 i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
+
+                navDots = selector('.carousel-nav .dots', that[i]);
+                navDotsEl = selector('.carousel-nav .dots i', that[i]);
 
                 if (window.innerWidth > carousel.tablet) {
                     col = cols[i];
@@ -319,8 +359,10 @@ var carousel = {
 
                 navSide = Math.round(counts[i] * Math.ceil(contents.length / col) / contents.length);
 
-                events.removeClass(navDots, 'selected');
-                events.addClass(navDots[navSide], 'selected');
+                events.removeClass(navDotsEl, 'selected');
+                events.addClass(navDotsEl[navSide], 'selected');
+
+                filterDots(navDots, navDotsEl, navSide); // filter dots when dots number exceeds
 
                 // detecting ie9
                 if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
@@ -541,7 +583,8 @@ var carousel = {
 
                     if (touchMove) {
 
-                        var beforeCount;
+                        var beforeCount, navDots;
+                        navDots = selector('.carousel-nav .dots', that[i])[0];
 
                         beforeCount = counts[i];
                         counts[i] = Math.abs(move) / contents[i].offsetWidth;
@@ -580,6 +623,8 @@ var carousel = {
 
                         events.removeClass(navDotsEl, 'selected');
                         events.addClass(navDotsEl[navSide], 'selected');
+
+                        filterDots(navDots, navDotsEl, navSide); // filter dots when dots number exceeds
 
                         clearTimeout(touchEndTimer);
                         touchEndTimer = setTimeout(function () {
