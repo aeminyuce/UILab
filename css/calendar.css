@@ -69,7 +69,7 @@ html:not(.mobile) .calendar tbody td.today button:not([class*="ui-"]):hover { ba
 html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) td.today button:not([class*="ui-"]):hover { background-color: rgba(0,0,0,.2); }
 html:not(.mobile) .calendar tbody td.today button[class*="ui-"]:hover { opacity: .75; }
 
-.calendar tbody td.pickerday button { color: #fff; font-weight: bold; background-color: #3773b6; }
+.calendar tbody td.pickerday button { color: #fff !important; font-weight: bold; background-color: #3773b6; }
 html:not(.mobile) .calendar tbody td.pickerday button:hover { opacity: .75; }
 
 .calendar tbody td.passive span { line-height: 20px; padding: 8px; display: block; }
@@ -134,7 +134,7 @@ html:not(.mobile) .calendar .panel .call.selected:hover { background-color: rgba
 html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) .panel .call.selected:hover { background-color: rgba(0,0,0,.2); }
 
 .text.calendar-picker { color: #333; overflow: visible !important; }
-.text.calendar-picker button,.text.calendar-picker .icon { color: #333; }
+.text.calendar-picker button:not([class*="ui-"]),.text.calendar-picker button:not([class*="ui-"]) .icon { color: #333; }
 
 .text .calendar { width: 100%; max-width: 744px; position: absolute; z-index: 10; box-shadow: 0 5px 15px rgba(0,0,0,.15); }
 .text .calendar:not(.open-ease) { opacity: 0; }
