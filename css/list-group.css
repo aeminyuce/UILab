@@ -41,8 +41,7 @@ html:not(.mobile) .list-group li > a:hover .list-icon { opacity: .75; }
 .list-group .has-photo-xs li,.list-group .has-photo-xs li > a { min-height: 50px; padding-left: 50px; }
 .list-group .has-photo-xs li > a { margin-left: -50px; }
 
-html:not(.mobile) .list-group:not(.list-striped) li:not([class*="ui-"]) > a:hover { background-color: rgba(0,0,0,.035); }
-html:not(.mobile) .list-group.list-striped li:not([class*="ui-"]):hover { background-color: rgba(0,0,0,.035); }
+html:not(.mobile) .list-group li:not([class*="ui-"]):hover { background-color: rgba(0,0,0,.035); }
 
 html:not(.mobile) .list-group.list-striped li:nth-child(odd):not([class*="ui-"]) { background-color: rgba(0,0,0,.01); }
 html:not(.mobile) .list-group.list-striped li:nth-child(odd):not([class*="ui-"]):hover { background-color: rgba(0,0,0,.045); }
