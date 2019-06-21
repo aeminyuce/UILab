@@ -40,6 +40,7 @@
     <script src="../js/selector.js"></script>
     <script src="../js/events.js"></script>
     <script src="../js/ie9-placeholders.js"></script>
+    <script src="../js/required-forms.js"></script>
     <script src="../js/sticky-header.js"></script>
     <script src="../js/swatches.js"></script>
     <script src="../js/toggle-password.js"></script>
@@ -101,28 +102,30 @@
                                     <h3 class="margin-30-b">Login to continue</h3>
                                     <p class="margin-30-b">Sign in to create, discover and connect with the global community.</p>
 
-                                    <label for="username" class="form-label">User Name</label>
+                                    <label class="form-label">User Name</label>
                                     <div class="text text-lg dual-bordered rounded ease-form">
-                                        <input id="username" type="text" placeholder="Enter username">
+                                        <input class="required" type="text" placeholder="Enter user name" minlength="3">
                                     </div>
-                                    <p class="hint error hidden">Enter name.</p>
+                                    <p class="required-msg rounded">Enter user name.</p>
 
                                     <span class="sp15"></span>
 
-                                    <label for="password" class="form-label">Password</label>
+                                    <label class="form-label">Password</label>
                                     <div class="text text-lg text-icon dual-bordered rounded ease-form">
                                         <span title="Show/Hide Password" class="toggle-password icon icon-md icon-eye ease-layout"></span>
-                                        <input id="password" type="password" placeholder="Enter password">
+                                        <input class="required" type="password" placeholder="Enter password" minlength="8">
                                     </div>
-                                    <p class="hint error hidden">Wrong password.</p>
+                                    <p class="required-msg rounded">Minimum length is 8 characters.</p>
 
                                     <span class="sp10"></span>
 
-                                    <div class="check-custom rounded dual-bordered ease-form">
-                                        <input id="remember" type="checkbox" checked>
-                                        <i class="ease-form-custom"></i>
-                                    </div>
-                                    <label for="remember" class="label-custom">Remember me</label>
+                                    <label class="custom">
+                                        <span class="check-custom rounded dual-bordered ease-form">
+                                            <input type="checkbox" checked>
+                                            <i class="ease-form-custom"></i>
+                                        </span>
+                                        <b>Remember me</b>
+                                    </label>
 
                                     <span class="sp30"></span>
 

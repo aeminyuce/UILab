@@ -53,8 +53,8 @@ html:not(.mobile) .editor-list ul > li .img img:hover { transform: translate(-50
 .editor-list ul > li .img:not(:first-child) { margin-top: 10px; }
 .editor-list ul > li .img:not(:last-child) { margin-bottom: 10px; }
 
-.editor-list ul > li .check-custom { margin: 0; float: left; }
-.editor-list ul > li .name { white-space: nowrap; text-overflow: ellipsis; padding: 2px 0 2px 5px; overflow: hidden; display: block; }
+.editor-list ul > li .check-custom { margin-top: 0; margin-bottom: 0; float: left; }
+.editor-list ul > li .name { white-space: nowrap; text-overflow: ellipsis; padding-left: 5px; margin-top: 0; margin-bottom: 0; overflow: hidden; display: block; }
 .editor-list ul > li .size,.editor-list ul > li .tag { color: #777; font-size: 13px; }
 .editor-list ul > li .size { margin-right: 10px; display: inline-block; }
 .editor-list ul > li .tag { float: right; }

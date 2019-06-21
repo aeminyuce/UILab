@@ -40,6 +40,7 @@
     <script src="../js/selector.js"></script>
     <script src="../js/events.js"></script>
     <script src="../js/ie9-placeholders.js"></script>
+    <script src="../js/required-forms.js"></script>
     <script src="../js/sticky-header.js"></script>
     <script src="../js/swatches.js"></script>
     <script src="../js/toggle-password.js"></script>
@@ -101,45 +102,49 @@
                                     <h3 class="margin-30-b">Create your account</h3>
                                     <p class="margin-30-b">Sign up to create, discover and connect with the global community.</p>
 
-                                    <label for="fullname" class="form-label">Full Name</label>
+                                    <label class="form-label">Full Name</label>
                                     <div class="text text-lg dual-bordered rounded ease-form">
-                                        <input id="fullname" type="text" placeholder="Enter name">
+                                        <input class="required" type="text" placeholder="Enter name" minlength="3">
                                     </div>
-                                    <p class="hint error hidden">Enter name.</p>
+                                    <p class="required-msg rounded">Enter name.</p>
 
                                     <span class="sp15"></span>
 
-                                    <label for="email" class="form-label">Email</label>
+                                    <label class="form-label">Email</label>
                                     <div class="text text-lg dual-bordered rounded ease-form">
-                                        <input id="email" type="text" placeholder="Enter email">
+                                        <input class="required" type="email" placeholder="Enter email">
                                     </div>
-                                    <p class="hint error hidden">Enter email.</p>
+                                    <p class="required-msg rounded">Enter a valid email.</p>
 
                                     <span class="sp15"></span>
 
-                                    <label for="username" class="form-label">User Name</label>
+                                    <label class="form-label">User Name</label>
                                     <div class="text text-lg dual-bordered rounded ease-form">
-                                        <input id="username" type="text" placeholder="Enter username">
+                                        <input class="required" type="text" placeholder="Enter user name" minlength="3">
                                     </div>
-                                    <p class="hint error hidden">Enter username.</p>
+                                    <p class="required-msg rounded">Enter user name.</p>
 
                                     <span class="sp15"></span>
 
-                                    <label for="password" class="form-label">Password</label>
+                                    <label class="form-label">Password</label>
                                     <div class="text text-lg text-icon dual-bordered rounded ease-form">
                                         <span title="Show/Hide Password" class="toggle-password icon icon-md icon-eye ease-layout"></span>
-                                        <input id="password" type="password" placeholder="Enter password">
+                                        <input class="required" type="password" placeholder="Enter password" minlength="8">
                                     </div>
-                                    <p class="hint error hidden">Enter password.</p>
+                                    <p class="required-msg rounded">Minimum length is 8 characters.</p>
 
                                     <span class="sp10"></span>
 
-                                    <div class="check-custom rounded dual-bordered ease-form">
-                                        <input id="terms" type="checkbox">
-                                        <i class="ease-form-custom"></i>
+                                    <div class="required-accept">
+                                        <label class="custom">
+                                            <div class="check-custom rounded dual-bordered ease-form">
+                                                <input class="required" type="checkbox">
+                                                <i class="ease-form-custom"></i>
+                                            </div>
+                                            <b>I agree <a class="hoverline" href="#" target="_blank"><b>Terms of User</b></a></b>
+                                        </label>
                                     </div>
-                                    <label for="terms" class="label-custom">I agree <a class="hoverline" href="#" target="_blank"><b>Terms of User</b></a></label>
-                                    <p class="hint error hidden">Accept terms.</p>
+                                    <p class="required-msg rounded">Accept terms.</p>
 
                                     <span class="sp30"></span>
 

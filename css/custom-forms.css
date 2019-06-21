@@ -20,15 +20,13 @@
 .switch-custom input:not(:indeterminate):not(:checked)  + i { transform: translate(-125%,-50%); }
 .switch-custom input:indeterminate + i { background-color: #ffa600; }
 
-.check-custom:not(.right) + label,.radio-custom:not(.right) + label,.switch-custom:not(.right) + label { vertical-align: middle; margin-left: 2px; }
+label.custom > b { font-weight: normal; vertical-align: middle; line-height: 23px; margin-top: 5px; margin-left: 2px; display: inline-block; }
 
 @media (min-width: 481px) {
-    label + .check-custom,label + .radio-custom,label + .switch-custom { margin-left: 10px; }
+    label.custom + label.custom:not(.block) { margin-left: 10px; }
+    label.custom > b { margin-bottom: 5px; }
 }
 @media (max-width: 480px) {
-    .check-custom:not(.right) + label,.radio-custom:not(.right) + label,.switch-custom:not(.right) + label { margin-top: -26px; display: block; }
-    .check-custom.dual-bordered + label,.radio-custom.dual-bordered:not(.right) + label,.switch-custom.dual-bordered:not(.right) + label { margin-top: -25px; }
-    .check-custom:not(.right) + label:last-child,.radio-custom:not(.right) + label:last-child,.switch-custom:not(.right) + label:last-child { margin-bottom: 0; }
-    .check-custom:not(.right) + label,.radio-custom:not(.right) + label { margin-left: 27px; }
-    .switch-custom:not(.right) + label { margin-left: 54px; }
+    label.custom + label.custom { display: block; }
+    label.custom > .check-custom,label.custom > .radio-custom,label.custom > .switch-custom,label.custom > b { margin-bottom: 0; }
 }

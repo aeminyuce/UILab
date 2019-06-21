@@ -116,12 +116,12 @@ var imageEditor = {
                             list.insertAdjacentHTML('beforeend',
 
                                 '<li class="open-ease">' +
-                                    '<label>' +
+                                    '<label class="custom">' +
                                         '<span class="check-custom rounded dual-bordered ease-form">' +
                                             '<input type="checkbox">' +
                                             '<i class="ease-form-custom"></i>' +
                                         '</span>' +
-                                        '<span class="name">' + allowed[i].name + '</span>' +
+                                        '<b class="name">' + allowed[i].name + '</b>' +
                                     '</label>' +
                                     '<span class="img"><img src="' + data + '" alt=""></span>' +
                                     '<span class="size">' + size + 'kb</span>' +

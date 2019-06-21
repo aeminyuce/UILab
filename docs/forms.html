@@ -252,7 +252,7 @@
                             <input class="indeterminate" type="checkbox"> Indeterminate
                         </label>
 
-                        <span class="clearfix"></span>
+                        <span class="sp5"></span>
 
                         <label class="radio">
                             <input type="radio" name="radiotest1"> Radio1
@@ -266,52 +266,68 @@
 
                         <span class="sp10"></span>
 
-                        <div class="check-custom rounded dual-bordered ease-form">
-                            <input id="custom-check" type="checkbox" checked>
-                            <i class="ease-form-custom"></i>
-                        </div>
-                        <label for="custom-check" class="label-custom">Custom Checkbox</label>
-                        <div class="check-custom rounded dual-bordered ease-form">
-                            <input id="indeterminate" type="checkbox" class="indeterminate">
-                            <i class="ease-form-custom"></i>
-                        </div>
-                        <label for="indeterminate" class="label-custom">Custom Indeterminate</label>
+                        <label class="custom">
+                            <span class="check-custom rounded dual-bordered ease-form">
+                                <input type="checkbox" checked>
+                                <i class="ease-form-custom"></i>
+                            </span>
+                            <b>Custom Checkbox</b>
+                        </label>
+                        <label class="custom">
+                            <div class="check-custom rounded dual-bordered ease-form">
+                                <input type="checkbox" class="indeterminate">
+                                <i class="ease-form-custom"></i>
+                            </div>
+                            <b>Custom Indeterminate</b>
+                        </label>
 
                         <span class="clearfix"></span>
 
-                        <div class="radio-custom dual-bordered ease-form">
-                            <input id="radio1" type="radio" name="radiotest2" checked>
-                            <i class="ease-form-custom"></i>
-                        </div>
-                        <label for="radio1" class="label-custom">Custom Radio1</label>
-                        <div class="radio-custom dual-bordered ease-form">
-                            <input id="radio2" type="radio" name="radiotest2">
-                            <i class="ease-form-custom"></i>
-                        </div>
-                        <label for="radio2" class="label-custom">Custom Radio2</label>
-                        <div class="radio-custom dual-bordered ease-form">
-                            <input id="radio3" type="radio" name="radiotest2">
-                            <i class="ease-form-custom"></i>
-                        </div>
-                        <label for="radio3" class="label-custom">Custom Radio3</label>
+                        <label class="custom">
+                            <span class="radio-custom dual-bordered ease-form">
+                                <input type="radio" name="radiotest2" checked>
+                                <i class="ease-form-custom"></i>
+                            </span>
+                            <b>Custom Radio1</b>
+                        </label>
+                        <label class="custom">
+                            <span class="radio-custom dual-bordered ease-form">
+                                <input type="radio" name="radiotest2">
+                                <i class="ease-form-custom"></i>
+                            </span>
+                            <b>Custom Radio2</b>
+                        </label>
+                        <label class="custom">
+                            <span class="radio-custom dual-bordered ease-form">
+                                <input type="radio" name="radiotest2">
+                                <i class="ease-form-custom"></i>
+                            </span>
+                            <b>Custom Radio3</b>
+                        </label>
 
-                        <span class="sp15"></span>
+                        <span class="sp10"></span>
 
-                       <div class="switch-custom rounded dual-bordered ease-form">
-                           <input id="switch1" type="checkbox" checked>
-                           <i class="ease-form-custom"></i>
-                       </div>
-                       <label for="switch1">Custom Switch</label>
-                       <div class="switch-custom rounded dual-bordered ease-form">
-                           <input id="switch2" type="checkbox" checked>
-                           <i class="theme-default2 ui-dark ease-form-custom"></i>
-                       </div>
-                       <label for="switch2">Custom Switch with Swatches</label>
-                       <div class="switch-custom rounded dual-bordered ease-form">
-                           <input id="switch3" type="checkbox" class="indeterminate">
-                           <i class="ease-form-custom"></i>
-                       </div>
-                       <label for="switch3">Indeterminate Switch</label>
+                        <label class="custom">
+                            <span class="switch-custom rounded dual-bordered ease-form">
+                                <input type="checkbox" checked>
+                                <i class="ease-form-custom"></i>
+                            </span>
+                            <b>Custom Switch</b>
+                        </label>
+                        <label class="custom">
+                            <span class="switch-custom rounded dual-bordered ease-form">
+                                 <input type="checkbox" checked>
+                                 <i class="theme-default2 ui-dark ease-form-custom"></i>
+                            </span>
+                            <b>Custom Switch with Swatches</b>
+                        </label>
+                        <label class="custom">
+                            <span class="switch-custom rounded dual-bordered ease-form">
+                                  <input type="checkbox" class="indeterminate">
+                                  <i class="ease-form-custom"></i>
+                            </span>
+                            <b>Indeterminate Switch</b>
+                        </label>
                     </div>
 
                     <h4>Inline Forms</h4>
@@ -506,12 +522,12 @@
                             <div class="form-holder margin-10-b">
                                 <div class="row row-no-padding">
 
-                                    <div class="col-5 no-responsive">
+                                    <div class="col-5 col-xs-4 no-responsive">
                                         <div class="text rounded dual-bordered ease-form">
                                             <input type="text">
                                         </div>
                                     </div>
-                                    <div class="col-2 no-responsive">
+                                    <div class="col-2 col-xs-4 no-responsive">
                                         <div class="select rounded dual-bordered ease-form">
                                             <i class="icon icon-sm icon-angle-down ease-layout"></i>
                                             <select>
@@ -521,7 +537,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-5 no-responsive">
+                                    <div class="col-5 col-xs-4 no-responsive">
                                         <div class="text rounded dual-bordered ease-form">
                                             <input type="text">
                                         </div>
@@ -999,11 +1015,13 @@
                                 </div>
                                 <div class="col-9">
                                     <div class="required-accept">
-                                        <div class="check-custom rounded dual-bordered">
-                                            <input id="required13" class="required" type="checkbox">
-                                            <i class="ease-form-custom"></i>
-                                        </div>
-                                        <label for="required13" class="label-custom">Custom Checkbox</label>
+                                        <label class="custom">
+                                            <span class="check-custom rounded dual-bordered">
+                                                <input id="required13" class="required" type="checkbox">
+                                                <i class="ease-form-custom"></i>
+                                            </span>
+                                            <b>Custom Checkbox</b>
+                                        </label>
                                     </div>
                                     <p class="required-msg rounded">Please, check this checkbox.</p>
                                     <i class="hint dark">* Required</a></i>
@@ -1033,21 +1051,27 @@
                                 </div>
                                 <div class="col-9">
                                     <div class="required-accept">
-                                        <div class="radio-custom dual-bordered ease-form">
-                                            <input id="required15" class="required" type="radio" name="radiotest4">
-                                            <i class="ease-form-custom"></i>
-                                        </div>
-                                        <label for="required15" class="label-custom">Custom Radio1</label>
-                                        <div class="radio-custom dual-bordered ease-form">
-                                            <input id="required152" class="required"type="radio" name="radiotest4">
-                                            <i class="ease-form-custom"></i>
-                                        </div>
-                                        <label for="required152" class="label-custom">Custom Radio2</label>
-                                        <div class="radio-custom dual-bordered ease-form">
-                                            <input id="required153" class="required" type="radio" name="radiotest4">
-                                            <i class="ease-form-custom"></i>
-                                        </div>
-                                        <label for="required153" class="label-custom">Custom Radio2</label>
+                                        <label class="custom">
+                                            <span class="radio-custom dual-bordered ease-form">
+                                                <input id="required15" class="required" type="radio" name="radiotest4">
+                                                <i class="ease-form-custom"></i>
+                                            </span>
+                                            <b>Custom Radio1</b>
+                                        </label>
+                                        <label class="custom">
+                                            <span class="radio-custom dual-bordered ease-form">
+                                                <input class="required" type="radio" name="radiotest4">
+                                                <i class="ease-form-custom"></i>
+                                            </span>
+                                            <b>Custom Radio2</b>
+                                        </label>
+                                        <label class="custom">
+                                            <span class="radio-custom dual-bordered ease-form">
+                                                <input class="required" type="radio" name="radiotest4">
+                                                <i class="ease-form-custom"></i>
+                                            </span>
+                                            <b>Custom Radio2</b>
+                                        </label>
                                     </div>
                                     <p class="required-msg rounded">Please, select any option.</p>
                                     <i class="hint dark">* Required</i>
@@ -1058,11 +1082,13 @@
                                 </div>
                                 <div class="col-9">
                                     <div class="required-accept">
-                                        <div class="switch-custom rounded dual-bordered ease-form">
-                                            <input id="required16" class="required" type="checkbox">
-                                            <i class="ease-form-custom"></i>
-                                        </div>
-                                        <label for="required16">Custom Switch</label>
+                                        <label class="custom">
+                                            <span class="switch-custom rounded dual-bordered ease-form">
+                                                <input id="required16" class="required" type="checkbox">
+                                                <i class="ease-form-custom"></i>
+                                            </span>
+                                            <b>Custom Switch</b>
+                                        </label>
                                     </div>
                                     <p class="required-msg rounded">Please, read and accept Terms and Conditions.</p>
                                     <i class="hint dark">* Required for accepting <a href="#" class="underline">Terms and Conditions.</a></i>
@@ -1274,21 +1300,28 @@
                                 <textarea placeholder="Textarea"></textarea>
                             </div>
 
-                            <div class="check-custom">
-                                <input type="checkbox" checked>
-                                <i class="ease-form-custom"></i>
-                            </div>
-                            <label class="label-custom">Custom Checkbox</label>
-                            <div class="radio-custom">
-                                <input type="radio" checked>
-                                <i class="ease-form-custom"></i>
-                            </div>
-                            <label class="label-custom">Custom Radio</label>
-                           <div class="switch-custom">
-                               <input type="checkbox" checked>
-                               <i class="ease-form-custom"></i>
-                           </div>
-                           <label>Custom Switch</label>
+                            <label class="custom">
+                                <span class="check-custom">
+                                    <input type="checkbox" checked>
+                                    <i class="ease-form-custom"></i>
+                                </span>
+                                <b>Custom Checkbox</b>
+                            </label>
+                            <label class="custom">
+                                <span class="radio-custom">
+                                    <input type="radio" checked>
+                                    <i class="ease-form-custom"></i>
+                                </span>
+                                <b>Custom Radio</b>
+                            </label>
+                            <label class="custom">
+                                <span class="switch-custom">
+                                    <input type="checkbox" checked>
+                                    <i class="ease-form-custom"></i>
+                                </span>
+                                <b>Custom Switch</b>
+                            </label>
+
                         </div>
 
                         <div class="col-3">
@@ -1317,21 +1350,28 @@
                                 <textarea placeholder="Textarea"></textarea>
                             </div>
 
-                            <div class="check-custom inner-shadow no-bordered">
-                                <input type="checkbox" checked>
-                                <i class="ease-form-custom"></i>
-                            </div>
-                            <label class="label-custom">Custom Checkbox</label>
-                            <div class="radio-custom inner-shadow no-bordered">
-                                <input type="radio" checked>
-                                <i class="ease-form-custom"></i>
-                            </div>
-                            <label class="label-custom">Custom Radio</label>
-                           <div class="switch-custom inner-shadow no-bordered">
-                               <input type="checkbox" checked>
-                               <i class="ease-form-custom"></i>
-                           </div>
-                           <label>Custom Switch</label>
+                            <label class="custom">
+                                <span class="check-custom inner-shadow no-bordered">
+                                    <input type="checkbox" checked>
+                                    <i class="ease-form-custom"></i>
+                                </span>
+                                <b>Custom Checkbox</b>
+                            </label>
+                            <label class="custom">
+                                <span class="radio-custom inner-shadow no-bordered">
+                                    <input type="radio" checked>
+                                    <i class="ease-form-custom"></i>
+                                </span>
+                                <b>Custom Radio</b>
+                            </label>
+                            <label class="custom">
+                                <span class="switch-custom inner-shadow no-bordered">
+                                    <input type="checkbox" checked>
+                                    <i class="ease-form-custom"></i>
+                                </span>
+                                <b>Custom Switch</b>
+                            </label>
+
                         </div>
 
                         <div class="col-3">
@@ -1360,21 +1400,28 @@
                                 <textarea placeholder="Textarea"></textarea>
                             </div>
 
-                            <div class="check-custom rounded no-bordered ui-x-light">
-                                <input type="checkbox" checked>
-                                <i class="ui-dark ease-form-custom"></i>
-                            </div>
-                            <label class="label-custom">Custom Checkbox</label>
-                            <div class="radio-custom rounded no-bordered ui-x-light">
-                                <input type="radio" checked>
-                                <i class="ui-dark ease-form-custom"></i>
-                            </div>
-                            <label class="label-custom">Custom Radio</label>
-                            <div class="switch-custom rounded no-bordered ui-x-light">
-                                <input type="checkbox" checked>
-                                <i class="ui-dark ease-form-custom"></i>
-                            </div>
-                            <label>Custom Switch</label>
+                            <label class="custom">
+                                <span class="check-custom ui-x-light">
+                                    <input type="checkbox" checked>
+                                    <i class="ui-dark ease-form-custom"></i>
+                                </span>
+                                <b>Custom Checkbox</b>
+                            </label>
+                            <label class="custom">
+                                <span class="radio-custom ui-x-light">
+                                    <input type="radio" checked>
+                                    <i class="ui-dark ease-form-custom"></i>
+                                </span>
+                                <b>Custom Radio</b>
+                            </label>
+                            <label class="custom">
+                                <span class="switch-custom ui-x-light">
+                                    <input type="checkbox" checked>
+                                    <i class="ui-dark ease-form-custom"></i>
+                                </span>
+                                <b>Custom Switch</b>
+                            </label>
+
                         </div>
                     </div>
 
