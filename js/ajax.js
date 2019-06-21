@@ -83,7 +83,7 @@ var ajax = function (set) { // type, url, data, callback
         set.type = 'POST';
     }
 
-    var i = ajax.request.length + 1;
+    var i = ajax.request.length;
 
     ajax.request[i] = new XMLHttpRequest();
     ajax.request[i].open(set.type, set.url, true);
@@ -118,6 +118,7 @@ var ajax = function (set) { // type, url, data, callback
                 });
 
                 // ajax callbacks
+                ajax.text = ajax.request[i].responseText;
                 events.trigger(document, 'ajaxCallbacks'); // set custom event
 
             }

@@ -88,7 +88,7 @@ var textareaCounter = {};
 
     // ajax callback loader: requires Ajax JS
     events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.request.responseText.indexOf('data-counter="') > 0) { loadCounters(); }
+        if (ajax.text.indexOf('data-counter="') > 0) { loadCounters(); }
     });
 
 }());
