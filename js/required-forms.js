@@ -19,7 +19,8 @@ var requiredForms = {
             '.text input.required',
             '.select select.required',
             '.textarea textarea.required',
-            '.required-accept input.required'
+            '.required-accept input.required',
+            '.file input.required'
 
         ];
 
@@ -156,7 +157,7 @@ var requiredForms = {
 
                 parentType = type;
 
-                if (type !== 'select' && type !== 'textarea' && type !== 'required-accept') {
+                if (type !== 'select' && type !== 'textarea' && type !== 'required-accept' && type !== 'file') {
                     parentType = 'text';
                 }
 
@@ -288,6 +289,10 @@ var requiredForms = {
 
         events.on(document, 'change blur', eventForms[3], function () {
             required(this, 'required-accept');
+        });
+
+        events.on(document, 'change blur', eventForms[4], function () {
+            required(this, 'file');
         });
 
     };
