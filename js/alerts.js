@@ -12,7 +12,7 @@ var alerts = {
     messageClasses: 'rounded shadow-lg',
     messageTimer: '3000', // miliseconds, wait for atomatically close messages
 
-    closeIcon: 'icon icon-xs icon-remove'
+    closeIcon: 'icon icon-sm icon-remove'
 
 };
 
@@ -126,8 +126,9 @@ var alerts = {
                 closeIcon = alerts.closeIcon + ' ease-layout';
                 closeIcon = closeIcon.replace(re, ' ').replace(rex, '');
 
-                closeBtn = '<button class="close-alert ' + closeIcon + '"></button>';
-
+                closeBtn = '<button class="close-alert ease-layout">' +
+                        '<i class="icon ' + closeIcon + '"></i>' +
+                    '</button>';
             }
 
             // create dialog

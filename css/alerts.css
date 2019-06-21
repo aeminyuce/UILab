@@ -50,7 +50,7 @@ html:not(.mobile) .alerts-msg:hover { opacity: .9; }
 .alerts-msg.tr:not(.show-ease),.alerts-msg.tl:not(.show-ease) { transform: translateY(-40px); }
 .alerts-msg.br:not(.show-ease),.alerts-msg.bl:not(.show-ease) { transform: translateY(40px); }
 
-.close-alert { border: 0; position: absolute; top: 10px; right: 10px; z-index: 1; opacity: .45; cursor: pointer; }
+.close-alert { background: transparent; padding: 5px; border: 0; position: absolute; top: 5px; right: 5px; z-index: 1; opacity: .45; cursor: pointer; }
 html:not(.mobile) .close-alert:hover { opacity: .75; }
 
 @media (max-width: 959px) {
