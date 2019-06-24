@@ -122,7 +122,7 @@ html:not(.mobile) .select-multi > .icon { display: none; }
 }
 @media (max-width: 480px) {
     .form-inline-responsive { width: 100% !important; display: block !important; }
-    .form-inline-responsive:not(:last-child) { margin-bottom: 5px; }
+    .form-inline-responsive:not(:last-child):not(.highlight) { margin-bottom: 5px; }
 
     .form-summary.no-responsive { line-height: 32px; }
     .form-summary-sm.no-responsive { line-height: 26px; }
