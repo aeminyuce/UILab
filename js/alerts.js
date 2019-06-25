@@ -12,7 +12,7 @@ var alerts = {
     messageClasses: 'rounded shadow-lg',
     messageTimer: '3000', // miliseconds, wait for atomatically close messages
 
-    closeIcon: 'icon icon-sm icon-remove'
+    closeIcon: 'icon icon-xs icon-remove'
 
 };
 
