@@ -21,7 +21,7 @@ var dataList = {
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, navigator, sessionStorage, performance, ajax, DOMParser */
+    /*globals window, document, selector, events, sessionStorage, performance, ajax */
 
     var
         testStorage = true,
@@ -65,29 +65,6 @@ var dataList = {
         };
 
     }());
-
-    // parser
-    function parser(text) {
-
-        var html;
-
-        if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
-
-            html = document.implementation.createHTMLDocument('');
-            html.body.innerHTML = text;
-
-            return html.body.innerHTML;
-
-        }
-
-        parser.item = new DOMParser();
-
-        html = parser.item.parseFromString(text, 'text/html');
-        html = html.querySelector('body').innerHTML;
-
-        return html;
-
-    }
 
     // create paging
     function createPaging(paging, id, listLength) {
@@ -161,8 +138,8 @@ var dataList = {
         classes = classes.replace(re, ' ').replace(rex, '');
         html += '<button class="' + classes + '"><i class="' + dataList.nextIcon + '"></i></button>\n';
 
-        html = parser(html);
-        paging[0].innerHTML = html;
+        paging[0].innerHTML = '';
+        paging[0].insertAdjacentHTML('beforeend', html);
 
         // set paging to storage
         if (testStorage && sessionStorage !== undefined) {
@@ -358,7 +335,11 @@ var dataList = {
 
         // sort
         dataContainer = selector('.data-container', that)[0];
-        temp.innerHTML = parser(dataContainer.innerHTML);
+
+        list = selector('.data-content', dataContainer);
+        events.each(list, function () {
+            temp.appendChild(this);
+        });
 
         arr = [];
         arrSorted = [];
@@ -373,7 +354,7 @@ var dataList = {
         sortType = this.getAttribute('data-type');
         if (sortType === null) { sortType = ''; }
 
-        list = selector('.data-content', temp[0]);
+        list = selector('.data-content', temp);
         events.each(list, function () {
 
             var val = this.getAttribute('data-val');
@@ -520,9 +501,13 @@ var dataList = {
             });
 
             dataContainer = selector('.data-container', that)[0];
-            temp.innerHTML = parser(dataContainer.innerHTML);
 
-            list = selector('.data-content', temp[0]);
+            list = selector('.data-content', dataContainer);
+            events.each(list, function () {
+                temp.appendChild(this);
+            });
+
+            list = selector('.data-content', temp);
 
             // remove checked
             checkAll = selector('.data-check-all', that);
