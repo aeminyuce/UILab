@@ -1,4 +1,6 @@
 /* listings */
+.list-spacing:not(.list-custom) li:not(:last-child) { padding-right: 10px; }
+
 [class*="list-column-"]:before,[class*="list-column-"]:after { content: ""; display: table; }
 [class*="list-column-"]:after { clear: both; }
 
@@ -10,7 +12,7 @@
 .list-spacer-25 li { margin-bottom: 25px; } .list-spacer-25 ul,.list-spacer-25 ol { margin-top: 25px !important; }
 .list-spacer-30 li { margin-bottom: 30px; } .list-spacer-30 ul,.list-spacer-30 ol { margin-top: 30px !important; }
 
-[class*="list-spacer-"]:not([class*="list-column-"]) li:last-child { margin-bottom: 0 !important; }
+[class*="list-spacer-"]:not([class*="list-column-"]):not(.list-inline) li:last-child { margin-bottom: 0 !important; }
 
 @media (min-width: 481px) {
     [class*="list-column-"] > li { float: left; }
@@ -19,6 +21,9 @@
     .list-column-4 > li { width: 25%; }
     .list-column-5 > li { width: 20%; }
     .list-column-6 > li { width: 16.666666%; }
+
+    .list-column-2.list-spacing > li:nth-child(2n),.list-column-3.list-spacing > li:nth-child(3n),.list-column-3.list-spacing > li:nth-child(3n),
+    .list-column-4.list-spacing > li:nth-child(4n),.list-column-5.list-spacing > li:nth-child(5n),.list-column-6.list-spacing > li:nth-child(5n) { padding-right: inherit; }
 }
 @media (max-width: 480px) {
     [class*="list-column-"] { width: 100%; }
