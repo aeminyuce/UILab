@@ -1,6 +1,6 @@
 /*
- SVG Donut Chart JS
- SVG Donut Chart JS requires Events JS
+ Donut Chart JS
+ Donut Chart JS requires Events JS
 */
 
 var donutChart = {};
@@ -34,7 +34,7 @@ var donutChart = {};
 
                     dashoffset = Math.floor(440 - (percent * 4.4));
                     if (dashoffset < 0) { dashoffset = 0; }
-                    
+
                     this.setAttribute('stroke-dashoffset', dashoffset);
 
                     if (index > 0) {

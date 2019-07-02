@@ -1,4 +1,4 @@
-/* svg donut chart */
+/* donut chart */
 @keyframes donut-chart { from { stroke-dashoffset: 440; } }
 
 .donut-chart { text-align: left !important; display: block; position: relative; }
