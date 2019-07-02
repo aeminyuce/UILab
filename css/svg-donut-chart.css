@@ -2,7 +2,7 @@
 @keyframes donut-chart { from { stroke-dashoffset: 440; } }
 
 .donut-chart { text-align: left !important; display: block; position: relative; }
-.donut-chart strong { text-align: center; width: 100%; position: absolute; top: 50%; transform: translateY(-50%); }
+.donut-chart strong { text-align: center; width: 100%; position: absolute; top: 50%; z-index: 1; transform: translateY(-50%); }
 .donut-chart svg { width: 100%; height: auto; margin: 0 auto; -ms-transform: rotate(-90deg); transform: rotate(-90deg); }
 .donut-chart circle { fill: none; stroke-width: 8; stroke-dasharray: 440; transform-origin: 50% 50%; }
 .donut-chart circle.bg { stroke: #eee; }
