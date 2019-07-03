@@ -38,6 +38,10 @@ var donutChart = {};
 
                     this.setAttribute('stroke-dashoffset', dashoffset);
 
+                    if (index === 0) {
+                        events.addClass(this, 'active');
+                    }
+
                     if (index > 0) {
 
                         angle = Math.floor(arrAngle[index - 1] + ((arrPercent[index - 1]) * 3.6));
