@@ -12,19 +12,15 @@ var donutChart = {};
 
     donutChart.Start = function () {
 
-        console.log(111);
-
         var chart, circles, percent, dashoffset, angle, arrPercent, arrAngle;
 
         arrPercent = [];
         arrAngle = [];
 
-        chart = selector('.donut-chart:not(.loaded)');
+        chart = selector('.donut-chart');
         if (chart.length > 0) {
 
             events.each(chart, function () {
-
-                events.addClass(this, 'loaded');
 
                 circles = selector('circle', this);
                 if (circles.length > 1) {
