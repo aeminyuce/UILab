@@ -22,7 +22,8 @@ var donutChart = {};
 
             events.each(chart, function () {
 
-                circles = selector('circle', this);
+                circles = selector('circle:not(.bg)', this);
+
                 if (circles.length > 1) {
                     events.addClass(this, 'multiple');
                 }
@@ -42,11 +43,26 @@ var donutChart = {};
                         angle = Math.floor(arrAngle[index - 1] + ((arrPercent[index - 1]) * 3.6));
                         arrAngle.push(angle);
 
-                        this.setAttribute('style', '-ms-transform: rotate(' + angle + 'deg); transform: rotate(' + angle + 'deg);');
+                        /*
+                            In svg elements CSS only transforms NOT cross browser! All IE browsers not supported!
 
-                    } else {
-                        arrAngle.push(0);
-                    }
+                            How to make transform-origin: 50% 50%?
+                            rotate supported inside this: // rotate(angle, centerWidth, centerHeight)
+
+                            Ex:
+                            <rect x='65' y='65' width='150' height='80' transform='rotate(45 140 105)' />
+
+                            angle: 45
+                            centerWidth: 140 = 65 + 150/2
+                            centerHeight: 105 = 65 +  80/2
+
+                        */
+
+                        this.setAttribute('transform', 'rotate(' + angle + ' 80 80)');
+
+                    } else { arrAngle.push(0); }
+
+                    events.addClass(this, 'loaded');
 
                 });
 
