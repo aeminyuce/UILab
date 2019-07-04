@@ -3,17 +3,21 @@
 @keyframes pie-spin-r { 0% { -ms-transform: rotate(0deg); transform: rotate(0deg); } }
 
 .pie-chart { color: #3773b6; background-color: rgba(0,0,0,.05); list-style: none; padding: 0; margin-bottom: 0; display: block; border-radius: 50%; position: relative; }
-.pie-chart[data-text]:before { content: attr(data-text); color: #000; font-weight: bold; text-align: center; line-height: normal; min-width: 16px; min-height: 16px; background: #fff; padding: 4px 8px; display: inline-block; border-radius: 1000px; position: absolute; top: 50%; left: 50%; z-index: 1; transform: translate(-50%,-50%); }
+.pie-chart[data-text]:before { content: attr(data-text); color: #000; font-weight: bold; text-align: center; line-height: normal; min-width: 26px; min-height: 26px; background: #fff; padding: 4px 8px; display: inline-block; border-radius: 1000px; position: absolute; top: 50%; left: 50%; z-index: 1; transform: translate(-50%,-50%); }
 
 .pie-chart li { width: 100%; height: 100%; border-radius: 50%; }
+.pie-chart:not(.loaded) li { opacity: 0; }
 .pie-chart li:first-child { position: relative; }
 .pie-chart li:not(:first-child) { position: absolute; top: 0; left: 0; }
 
 .pie-chart li span { width: 50%; height: 100%; overflow: hidden; display: block; position: absolute; top: 0; }
-.pie-chart li .l { left: 0; }
+.pie-chart li .l { overflow: visible; left: 0; }
 .pie-chart li .r { left: 50%; }
 
 .pie-chart li span:before { content: ""; background-color: currentColor; width: 100%; height: 100%; position: absolute; }
-.pie-chart li .l:before { left: 100%; border-radius: 0 1000px 1000px 0; -ms-transform-origin: left; transform-origin: left; animation: pie-spin-l 2s ease-out forwards; }
-.pie-chart li .r:before { left: -100%; border-radius: 1000px 0 0 1000px; -ms-transform-origin: right; transform-origin: right; animation: pie-spin-r 2s ease-in forwards; }
-.pie-chart li .l + .r:before { animation: pie-spin-r 1s ease-in forwards; }
+.pie-chart li .l:before { left: 100%; border-radius: 0 1000px 1000px 0; -ms-transform-origin: left; transform-origin: left; }
+.pie-chart li .r:before { left: -100%; border-radius: 1000px 0 0 1000px; -ms-transform-origin: right; transform-origin: right; }
+
+.pie-chart.loaded li .l:before { animation: pie-spin-l 2s ease-out forwards; }
+.pie-chart.loaded li .r:before { animation: pie-spin-r 2s ease-in forwards; }
+.pie-chart.loaded li .l + .r:before { animation: pie-spin-r 1s ease-in forwards; }

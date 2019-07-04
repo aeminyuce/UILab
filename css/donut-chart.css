@@ -1,10 +1,13 @@
 /* donut chart */
+.ease-donut-chart circle { transition-property: stroke-dashoffset; transition-duration: 2s; transition-timing-function: ease-in-out; }
+.no-transitions-all .ease-donut-chart circle { transition-property: none !important; }
+
 .donut-chart { text-align: left !important; display: block; position: relative; }
 
 .donut-chart strong { text-align: center; width: 100%; position: absolute; top: 50%; z-index: 1; transform: translateY(-50%); }
 .donut-chart svg { width: 100%; height: auto; margin: 0 auto; -ms-transform: rotate(-90deg); transform: rotate(-90deg); }
 
-.donut-chart circle { fill: none; stroke-width: 6; stroke-dasharray: 440; transition-property: stroke-dashoffset; transition-timing-function: ease-in-out; transition-duration: 2s; }
+.donut-chart circle { fill: none; stroke-width: 6; stroke-dasharray: 440; }
 .donut-chart circle.active,.donut-chart.multiple circle:not(.bg) { stroke-width: 8; }
 .donut-chart circle.bg { stroke: rgba(0,0,0,.05); }
 .donut-chart circle:not(.loaded):not(.bg) { stroke-dashoffset: 440; }

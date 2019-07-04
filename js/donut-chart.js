@@ -8,7 +8,7 @@ var donutChart = {};
 (function () {
 
     'use strict';
-    /*globals document, selector, events, ajax */
+    /*globals document, selector, events, setTimeout, ajax */
 
     donutChart.Start = function () {
 
@@ -30,16 +30,18 @@ var donutChart = {};
 
                 events.each(circles, function (index) {
 
-                    percent = this.getAttribute('data-percent');
+                    var that = this;
+
+                    percent = that.getAttribute('data-percent');
                     arrPercent.push(percent);
 
                     dashoffset = Math.floor(440 - (percent * 4.4));
                     if (dashoffset < 0) { dashoffset = 0; }
 
-                    this.setAttribute('stroke-dashoffset', dashoffset);
+                    that.setAttribute('stroke-dashoffset', dashoffset);
 
                     if (index === 0) {
-                        events.addClass(this, 'active');
+                        events.addClass(that, 'active');
                     }
 
                     if (index > 0) {
@@ -62,11 +64,20 @@ var donutChart = {};
 
                         */
 
-                        this.setAttribute('transform', 'rotate(' + angle + ' 80 80)');
+                        that.setAttribute('transform', 'rotate(' + angle + ' 80 80)');
 
                     } else { arrAngle.push(0); }
 
-                    events.addClass(this, 'loaded');
+                    if (events.hasClass(document, 'no-transitions-all animate-stop-all')) {
+                        events.addClass(that, 'loaded');
+
+                    } else { // wait for page preload
+
+                        setTimeout(function () {
+                            events.addClass(that, 'loaded');
+                        }, 300);
+
+                    }
 
                 });
 

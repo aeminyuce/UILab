@@ -8,7 +8,7 @@ var pieChart = {};
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, ajax */
+    /*globals window, document, selector, events, setTimeout, ajax */
 
     pieChart.Start = function () {
 
@@ -91,10 +91,25 @@ var pieChart = {};
 
         events.each(chart, function () {
 
-            elems = selector('li', this);
-            this.style.height = this.offsetWidth + 'px';
+            var that = this;
 
-            events.each(elems, function () { loadFnc(this); });
+            elems = selector('li', that);
+            this.style.height = that.offsetWidth + 'px';
+
+            events.each(elems, function () {
+                loadFnc(this);
+            });
+
+            if (events.hasClass(document, 'no-transitions-all animate-stop-all')) {
+                events.addClass(that, 'loaded');
+
+            } else { // wait for page preload
+
+                setTimeout(function () { // wait for page preload
+                    events.addClass(that, 'loaded');
+                }, 300);
+
+            }
 
         });
 
