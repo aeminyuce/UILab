@@ -8,17 +8,22 @@ var pieChart = {};
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, setTimeout, ajax */
+    /*globals window, document, selector, events, navigator, setTimeout, ajax */
 
     var loadCharts;
 
     function chartsResizer() {
 
-        var chart = selector('.pie-chart');
+        var chart, elems;
+
+        chart = selector('.pie-chart');
         if (chart.length < 1) { return; }
 
         events.each(chart, function () {
-            this.style.height = this.offsetWidth + 'px';
+
+            elems = selector('ul', this)[0];
+            elems.style.height = elems.offsetWidth + 'px';
+
         });
 
     }
@@ -27,21 +32,20 @@ var pieChart = {};
 
         loadCharts = function () {
 
-            var chart, elems, i, deg, loadFnc, arr, fill, percent, html;
+            var chart, elems, deg, textDeg, loadFnc, arr, fill, percent, html;
 
             chart = selector('.pie-chart');
             if (chart.length < 1) { return; }
 
             arr = [];
 
-            loadFnc = function (that) {
+            loadFnc = function (parent, that, i) {
 
                 percent = that.getAttribute('data-percent');
 
                 if (percent === null && percent === '') {
                     percent = 0;
                 }
-
 
                 fill = that.getAttribute('data-fill');
 
@@ -60,6 +64,18 @@ var pieChart = {};
                 }
 
                 that.insertAdjacentHTML('beforeEnd', html);
+
+                if (arr[i - 1] === undefined) {
+                    arr[i - 1] = 0;
+                }
+
+                textDeg = arr[i - 1] - 90 + (deg / 2);
+
+                html = '<span style="-ms-transform: rotate(' + textDeg + 'deg) translateY(-50%); transform: rotate(' + textDeg + 'deg) translateY(-50%);">' +
+                        '<i style="-ms-transform: rotate(' + -textDeg + 'deg); transform: rotate(' + -textDeg + 'deg);">' + percent + '%</i>' +
+                    '</span>';
+
+                parent.insertAdjacentHTML('beforeEnd', html);
 
                 if (elems.length > 0) {
 
@@ -82,20 +98,31 @@ var pieChart = {};
                 var that = this;
 
                 elems = selector('li', that);
-                this.style.height = that.offsetWidth + 'px';
+                selector('ul', this)[0].style.height = that.offsetWidth + 'px';
 
-                events.each(elems, function () {
-                    loadFnc(this);
+                events.each(elems, function (i) {
+                    loadFnc(that, this, i);
                 });
 
                 if (events.hasClass(document, 'no-transitions-all animate-stop-all')) {
-                    events.addClass(that, 'loaded');
+                    events.addClass(that, 'open open-ease');
 
-                } else { // wait for page preload
+                } else {
 
-                    setTimeout(function () { // wait for page preload
-                        events.addClass(that, 'loaded');
-                    }, 300);
+                    // detecting ie9
+                    if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
+                        events.addClass(that, 'open open-ease');
+
+                    } else {
+
+                        setTimeout(function () { // wait for page preload
+
+                            events.addClass(that, 'open');
+                            setTimeout(function () { events.addClass(that, 'open-ease'); }, 2000); // wait for animation complete
+
+                        }, 300);
+
+                    }
 
                 }
 
