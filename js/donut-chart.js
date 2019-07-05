@@ -70,6 +70,7 @@ var donutChart = {};
                         if (events.hasClass(document, 'no-transitions-all animate-stop-all')) {
 
                             events.addClass(that, 'loaded');
+
                             setTimeout(function () {
                                 that.style.transitionDuration = '.15s';
                             }, 2000);
@@ -79,6 +80,7 @@ var donutChart = {};
                             setTimeout(function () {
 
                                 events.addClass(that, 'loaded');
+
                                 setTimeout(function () {
                                     that.style.transitionDuration = '.15s';
                                 }, 2000);
@@ -100,42 +102,56 @@ var donutChart = {};
         loadCharts();
 
         // Events
-        events.on(document, 'mouseenter touchend', '.donut-chart circle[data-title]', function () {
+        events.on(document, 'mouseenter mouseleave touchend', '.donut-chart circle[data-title]', function (e) {
 
-            var that, svg, circle, chart, msg, title;
+            var that, svg, circle, chart, msg, msgTitle, title;
 
             that = this;
             chart = events.closest(that, '.donut-chart')[0];
 
-            if (events.hasClass(chart, 'multiple')) { // bring to front hovered circle element. z-index not working with SVG elements!
-
-                svg = that.parentNode;
-                svg.insertBefore(that, svg.lastChild);
-
-            }
-
-            // show titles
+            msg = selector('strong', chart)[0];
             circle = selector('circle', chart);
 
             setTimeout(function () {
-
                 events.removeClass(circle, 'selected');
-                events.addClass(that, 'selected');
-
             }, 0);
 
-            msg = selector('strong', chart)[0];
-            if (msg === undefined) {
+            if (e.type === 'mouseleave') {
+                msg.innerHTML = msg.getAttribute('data-msg');
 
-                chart.insertAdjacentHTML('beforeEnd', '<strong></strong>');
-                msg = selector('strong', chart)[0];
+            } else {
 
-            }
+                if (events.hasClass(chart, 'multiple')) { // bring to front hovered circle element. z-index not working with SVG elements!
 
-            title = that.getAttribute('data-title');
+                    svg = that.parentNode;
+                    svg.insertBefore(that, svg.lastChild);
 
-            if (title !== null && title !== '') {
-                msg.textContent = title;
+                }
+
+                // show titles
+                if (msg === undefined) {
+
+                    chart.insertAdjacentHTML('beforeEnd', '<strong></strong>');
+                    msg = selector('strong', chart)[0];
+
+                }
+
+                msgTitle = msg.getAttribute('data-msg');
+
+                if (msgTitle === null) {
+                    msg.setAttribute('data-msg', msg.innerHTML);
+                }
+
+                title = that.getAttribute('data-title');
+
+                if (title !== null && title !== '') {
+                    msg.innerHTML = title;
+                }
+
+                setTimeout(function () {
+                    events.addClass(that, 'selected');
+                }, 0);
+
             }
 
         });
