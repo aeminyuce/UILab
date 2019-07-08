@@ -6,7 +6,7 @@
 var selector = function (item, outer) {
 
     'use strict';
-    var objName, call, outerEl, outerElLength, outerElIndex, foundEl = [], i = 0;
+    var objName, call, outerEl, outerElIndex, foundEl = [], i = 0;
 
     if (typeof item === 'object') {
 
@@ -38,16 +38,14 @@ var selector = function (item, outer) {
 
         } else { outerEl = outer; }
 
-        outerElLength = outerEl.length;
-
         // discard "this" object && form object (form element not returns "this", it returns all form elements)
         if (outerEl.length !== undefined && Array.prototype.slice.call(outerEl).length === 1) {
 
-            for (i = 0; i < outerElLength; i += 1) {
+            for (i = 0; i < outerEl.length; i += 1) {
 
                 outerElIndex = outerEl[i].querySelectorAll(item);
 
-                if (outerElLength === 1) {
+                if (outerEl.length === 1) {
                     foundEl = outerElIndex[0];
 
                 } else {
