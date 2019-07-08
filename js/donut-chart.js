@@ -8,7 +8,7 @@ var donutChart = {};
 (function () {
 
     'use strict';
-    /*globals document, selector, events, setTimeout, ajax */
+    /*globals document,  selector, events, navigator, setTimeout, ajax */
 
     var loadCharts;
 
@@ -16,7 +16,7 @@ var donutChart = {};
 
         loadCharts = function () {
 
-            var chart, circles, percent, dashoffset, angle, arrPercent, arrAngle;
+            var chart, circles, percent, dashoffset, angle, arrPercent, arrAngle, isMSIE;
 
             arrPercent = [];
             arrAngle = [];
@@ -67,17 +67,16 @@ var donutChart = {};
 
                         } else { arrAngle.push(0); }
 
-                        if (events.hasClass(document, 'no-transitions-all animate-stop-all')) {
+                        // detecting ie
+                        isMSIE = /*@cc_on!@*/false;
+                        if (isMSIE || !!document.documentMode || navigator.userAgent.indexOf('edge') > -1) {
 
                             events.addClass(that, 'loaded');
+                            that.style.transitionDuration = '.15s';
 
-                            setTimeout(function () {
-                                that.style.transitionDuration = '.15s';
-                            }, 2000);
+                        } else {
 
-                        } else { // wait for page preload
-
-                            setTimeout(function () {
+                            if (events.hasClass(document, 'no-transitions-all animate-stop-all')) {
 
                                 events.addClass(that, 'loaded');
 
@@ -85,7 +84,19 @@ var donutChart = {};
                                     that.style.transitionDuration = '.15s';
                                 }, 2000);
 
-                            }, 300);
+                            } else { // wait for page preload
+
+                                setTimeout(function () {
+
+                                    events.addClass(that, 'loaded');
+
+                                    setTimeout(function () {
+                                        that.style.transitionDuration = '.15s';
+                                    }, 2000);
+
+                                }, 300);
+
+                            }
 
                         }
 
@@ -117,6 +128,8 @@ var donutChart = {};
             }, 0);
 
             if (e.type === 'mouseleave') {
+
+                events.removeClass(chart, 'active');
                 msg.innerHTML = msg.getAttribute('data-msg');
 
             } else {
@@ -143,13 +156,15 @@ var donutChart = {};
                 }
 
                 title = that.getAttribute('data-title');
-
-                if (title !== null && title !== '') {
-                    msg.innerHTML = title;
-                }
-
                 setTimeout(function () {
+
+                    if (title !== null && title !== '') {
+                        msg.innerHTML = title;
+                    }
+
                     events.addClass(that, 'selected');
+                    events.addClass(chart, 'active');
+
                 }, 0);
 
             }
