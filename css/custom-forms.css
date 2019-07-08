@@ -14,7 +14,7 @@
 .check-custom input,.radio-custom input,.switch-custom input { width: 140%; height: 140%; display: block; position: absolute; top: -20%; left: -20%; z-index: 1; opacity: 0; }
 .check-custom input:checked + i,.check-custom input:indeterminate + i,.radio-custom input:checked + i { opacity: 1; }
 .check-custom input:indeterminate + i { height: 4px; }
-.switch-custom input:not(:checked) + i { background-color: rgba(0,0,0,.15); }
+.switch-custom input:not(:checked) + i,.switch-custom input:not(:checked) + i[class*="ui-"] { background-color: rgba(0,0,0,.15); }
 .switch-custom input:checked + i { transform: translate(25%,-50%); }
 .switch-custom input:checked + i:not([class*="ui-"]) { background-color: #2dbd3a; }
 .switch-custom input:not(:indeterminate):not(:checked)  + i { transform: translate(-125%,-50%); }
