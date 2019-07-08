@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UI Lab, Generator</title>
+    <meta name="keywords" content="uilab, responsive, design system, css, javascript, grid system">
+    <meta name="description" content="CSS & JavaScript powered responsive design system." />
+    <meta name="author" content="Ahmet Emin Yüce"/>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
+
+    <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/buttons.css" />
+    <link rel="stylesheet" href="../css/borders.css" />
+    <link rel="stylesheet" href="../css/custom-forms.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/helpers.css" />
+    <link rel="stylesheet" href="../css/icons.css" />
+    <link rel="stylesheet" href="../css/ie9-placeholders.css" />
+    <link rel="stylesheet" href="../css/margins.css" />
+    <link rel="stylesheet" href="../css/paddings.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/scrollbar.css" />
+    <link rel="stylesheet" href="../css/static-grid.css" />
+    <link rel="stylesheet" href="../css/sticky-header.css" />
+    <link rel="stylesheet" href="../css/transitions.css" />
+    <link rel="stylesheet" href="../css/typography.css" />
+    <link rel="stylesheet" href="../css/swatches.css" />
+    <link rel="stylesheet" href="../css/top-button.css" />
+
+    <!-- Javascript Tools -->
+    <script src="../js/selector.js"></script>
+    <script src="../js/events.js"></script>
+    <script src="../js/ajax.js"></script>
+    <script src="../js/forms.js"></script>
+    <script src="../js/ie9-placeholders.js"></script>
+    <script src="../js/static-grid.js"></script>
+    <script src="../js/sticky-header.js"></script>
+    <script src="../js/transitions.js"></script>
+    <script src="../js/top-button.js"></script>
+    <script src="../js/user-agents.js"></script>
+
+    <!-- font icons CSS -->
+    <link rel="stylesheet" href="icons/font-icons/outline/font-icons.css" />
+
+    <!-- custom js -->
+    <script>
+
+        function pullFiles(that, type) {
+
+            var holder, list, result, pullResults, count, countFnc;
+
+            holder = events.closest(that, '.generate-holder')[0];
+            list = selector('input:checked', holder);
+            result = selector('textarea', holder)[0];
+
+            pullResults = '';
+            count = 0;
+
+            countFnc = function () {
+
+                if (list.length < 1) { return; }
+
+                ajax({
+
+                    url : '../' + type + '/' + list[count].getAttribute('value') + '.css',
+                    callback: function (status, response) {
+
+                        if (status === 'success') {
+
+                            pullResults += response + '\n';
+
+                            if (count < list.length - 1) {
+
+                                count +=1;
+                                countFnc();
+
+                            } else {
+
+                                result.value = pullResults;
+                                pullResults = '';
+
+                            }
+
+                        }
+
+                    }
+
+                });
+
+            };
+
+            countFnc();
+
+        }
+
+        function generator() {
+
+            // Events
+            events.on('.generate-btn', 'click', function () {
+                pullFiles(this, this.name);
+            });
+
+            events.on('.copy-btn', 'click', function () {
+
+                var holder = events.closest(this, '.generate-holder')[0];
+
+                selector('textarea', holder)[0].select();
+                document.execCommand("copy");
+
+            });
+
+        }
+
+        events.onload(generator);
+
+    </script>
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="container theme-default ui-dark">
+        <div class="row theme-default2 ui-border top-bordered dual-bordered">
+            <div class="col-12">
+                <a href="index.html" class="btn btn-lg btn-square circle ease-btn margin-10-r"><i class="icon icon-md no-opacity icon-long-arrow-left"></i></a>
+                <h1 class="x-large inline-block">UI Lab, Generator</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- documentation examples -->
+    <main class="container no-gutter">
+        <div class="fixed">
+            <div class="row">
+                <div class="col-12 padding-30">
+
+                    <h4>CSS Generator</h4>
+                    <div class="generate-holder padding-30-b theme-default2">
+
+                        <div class="generate-list row row-sm-padding-ver row-equal-height">
+                            <div class="col-lg-5x col-3 col-md-4 col-sm-6 xs-responsive">
+                                <label class="custom">
+                                    <span class="switch-custom rounded dual-bordered ease-form">
+                                         <input type="checkbox" name="alerts" value="alerts">
+                                         <i class="ui-dark ease-form-custom"></i>
+                                    </span>
+                                    <b>Alerts</b>
+                                </label>
+                            </div>
+                            <div class="col-lg-5x col-3 col-md-4 col-sm-6 xs-responsive">
+                                <label class="custom">
+                                    <span class="switch-custom rounded dual-bordered ease-form">
+                                         <input type="checkbox" name="alignments" value="alignments">
+                                         <i class="ui-dark ease-form-custom"></i>
+                                    </span>
+                                    <b>Alignments</b>
+                                </label>
+                            </div>
+                            <div class="col-lg-5x col-3 col-md-4 col-sm-6 xs-responsive">
+                                <label class="custom">
+                                    <span class="switch-custom rounded dual-bordered ease-form">
+                                         <input type="checkbox" name="android multi select" value="android-multi-select">
+                                         <i class="ui-dark ease-form-custom"></i>
+                                    </span>
+                                    <b>Android Multi Select</b>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="textarea margin-15-b rounded dual-bordered ease-form">
+                                    <textarea class="large" rows="8" placeholder="Generated code will be here!"></textarea>
+                                </div>
+                                <div class="ease-1st-btn">
+                                    <button name="css" class="generate-btn btn btn-responsive btn-lg padding-20-h ui-dark circle">Generate CSS</button>
+                                    <button class="copy-btn btn btn-responsive btn-lg padding-20-h circle">
+                                        Copy to Clipboard
+                                        <i class="icon icon-md icon-files no-opacity margin-5-l"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <h4>JS Generator</h4>
+                    <div class="padding-30-b theme-default2">
+                        <div class="row">
+                            <div class="col-12">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
