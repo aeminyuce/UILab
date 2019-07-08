@@ -1,6 +1,6 @@
 /*
  Pie Chart JS
- Pie Chart JS requires Events JS
+ Pie Chart JS requires Events JS, Tooltip JS
 */
 
 var pieChart = {};
@@ -32,7 +32,7 @@ var pieChart = {};
 
         loadCharts = function () {
 
-            var chart, elems, deg, textDeg, loadFnc, arr, fill, percent, html;
+            var chart, elems, deg, textDeg, loadFnc, arr, fill, percent, html, title, msgHolder, msg;
 
             chart = selector('.pie-chart');
             if (chart.length < 1) { return; }
@@ -75,7 +75,26 @@ var pieChart = {};
                         '<i style="-ms-transform: rotate(' + -textDeg + 'deg); transform: rotate(' + -textDeg + 'deg);">' + percent + '%</i>' +
                     '</span>';
 
-                parent.insertAdjacentHTML('beforeEnd', html);
+                msgHolder = selector('div', parent)[0];
+                if (msgHolder === undefined) {
+
+                    parent.insertAdjacentHTML('beforeEnd', '<div></div>');
+                    msgHolder = selector('div', parent)[0];
+
+                }
+
+                msgHolder.insertAdjacentHTML('beforeEnd', html);
+
+                title = that.getAttribute('data-title');
+                if (title !== null && title !== '') { // add tooltip for data-title attributes
+
+                    msg = selector('span', msgHolder)[i];
+                    msg = selector('i', msg)[0];
+
+                    msg.setAttribute('data-tooltip', '');
+                    msg.setAttribute('title', title);
+
+                }
 
                 if (elems.length > 0) {
 
@@ -132,6 +151,37 @@ var pieChart = {};
 
         loadCharts();
         chartsResizer();
+
+        // Events
+        events.on(document, 'mouseenter mouseleave touchend', '.pie-chart > div span i', function (e) {
+
+            var i, chart, elems, msg;
+
+            chart = events.closest(this, '.pie-chart')[0];
+            elems = selector('li', chart);
+
+            if (e.type === 'mouseleave') {
+
+                events.each(elems, function () {
+                    this.style.removeProperty('opacity');
+                });
+
+            } else {
+
+                msg = selector('div', chart)[0];
+                msg = selector('span', msg);
+
+                i = Array.prototype.slice.call(msg).indexOf(this.parentElement);
+
+                events.each(elems, function () {
+                    this.style.opacity = '.25';
+                });
+
+                elems[i].style.removeProperty('opacity');
+
+            }
+
+        });
 
     };
 

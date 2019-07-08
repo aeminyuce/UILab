@@ -2,18 +2,15 @@
 @keyframes pie-spin-l { 0% { opacity: 0; } 49% { opacity: 0; } 50% { -ms-transform: rotate(0deg); transform: rotate(0deg); opacity: 1; } }
 @keyframes pie-spin-r { 0% { -ms-transform: rotate(0deg); transform: rotate(0deg); } }
 
-.ease-pie-chart > span { transition-property: opacity; transition-duration: .3s; }
-.no-transitions-all .ease-pie-chart > span { transition-property: none !important; }
+.ease-pie-chart li,.ease-pie-chart > div span { transition-property: opacity; transition-duration: .3s; }
+.no-transitions-all .ease-pie-chart li,.no-transitions-all .ease-pie-chart > div span { transition-property: none !important; }
 
 .pie-chart { position: relative; -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
 .pie-chart[data-text]:before { content: attr(data-text); font-weight: bold; text-align: center; line-height: 14px; min-height: 16px; background: #fff; padding: 4px 8px; display: inline-block; border-radius: 1000px; position: absolute; top: 50%; left: 50%; z-index: 2; transform: translate(-50%,-50%); }
 
-.pie-chart > span { display: block; position: absolute; top: 50%; right: 0; left: 50%; z-index: 1; transform-origin: left top; }
-.pie-chart:not(.open-ease) > span { opacity: 0; }
-.pie-chart > span i { color: #666; font-size: 11px; font-style: normal; font-weight: bold; line-height: 11px; background: #fff; padding: 2px 4px; border-radius: 1000px; float: right; }
-
-.pie-chart:not([data-text]) > span i { margin-right: 20%; }
-.pie-chart[data-text] > span i { margin-right: 5px; float: right; }
+.pie-chart > div span { display: block; position: absolute; top: 50%; right: 0; left: 50%; z-index: 1; transform-origin: left top; }
+.pie-chart:not(.open-ease) > div span { opacity: 0; }
+.pie-chart > div span i { color: #666; font-size: 11px; font-style: normal; font-weight: bold; line-height: 11px; background: #fff; padding: 2px 4px;  margin-right: 5px; border-radius: 1000px; float: right; }
 
 .pie-chart ul { color: #3773b6; list-style: none; padding: 0; margin-bottom: 0; overflow: hidden; display: block; border-radius: 50%; position: relative; }
 .pie-chart ul:after { content: ""; background-color: rgba(0,0,0,.05); display: block; border-radius: 50%; position: absolute; top: 5px; right: 5px; bottom: 5px; left: 5px; }
