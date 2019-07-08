@@ -65,6 +65,7 @@ var useragents = {
             }
 
         }
+
         if (ua.indexOf('msie 9') > -1) {
 
             useragents.ie9 = true;
