@@ -1,4 +1,4 @@
-/* icon notifiers */
+/* icons notifiers */
 .notifier { position: relative; }
 .notifier:after { content: ""; background-color: red; margin-left: -33%; border-radius: 200px; position: absolute; top: -6px; left: 100%; z-index: 1; }
 .notifier.icon-xxs:after,.notifier.icon-xs:after,.notifier.icon-sm:after { top: -3px; }
