@@ -1,6 +1,6 @@
 /*
  Sticky Header JS
- Sticky Header JS requires Events JS
+ Sticky Header JS requires Selector Js, Events JS
 */
 
 var stickyHeader = {};

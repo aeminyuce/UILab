@@ -1,6 +1,6 @@
 /*
  Photo Slider JS
- Photo Slider JS requires Events JS
+ Photo Slider JS requires Selector Js, Events JS
 */
 
 var photoSlider = {};

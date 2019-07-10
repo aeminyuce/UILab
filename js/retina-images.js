@@ -1,6 +1,6 @@
 /*
  Retina Images JS
- Retina Images JS requires Events JS
+ Retina Images JS requires Selector Js, Events JS
 */
 
 var retinaImages = {};

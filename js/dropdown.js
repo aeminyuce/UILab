@@ -1,6 +1,6 @@
 /*
  Dropdown JS
- Dropdown JS requires Events JS
+ Dropdown JS requires Selector Js, Events JS
 */
 
 var dropdown = {};

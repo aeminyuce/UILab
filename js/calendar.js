@@ -1,6 +1,6 @@
 /*
  Calendar JS
- Calendar JS requires Events JS, Ajax JS
+ Calendar JS requires Selector Js, Events JS, Ajax JS
 */
 
 var calendar = {

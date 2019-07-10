@@ -1,6 +1,6 @@
 /*
  Sprites JS
- Sprites JS requires Events JS
+ Sprites JS requires Selector Js, Events JS
 */
 
 var sprites = {

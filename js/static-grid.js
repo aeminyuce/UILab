@@ -1,6 +1,6 @@
 /*
  Static Grid JS
- Static Grid JS requires Events JS
+ Static Grid JS requires Selector Js, Events JS
 */
 
 var staticGrid = {};

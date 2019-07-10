@@ -1,6 +1,6 @@
 /*
  Countdown JS
- Countdown JS requires Events JS
+ Countdown JS requires Selector Js, Events JS
 */
 
 var countdown = {};

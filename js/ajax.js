@@ -1,6 +1,9 @@
 /*
  Ajax JS
- Ajax JS requires Events JS
+ Ajax JS requires Selector Js, Events JS
+*/
+
+/*
 
  Example:
 

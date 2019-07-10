@@ -1,6 +1,6 @@
 /*
  Form Spinner JS
- Form Spinner JS requires Events JS
+ Form Spinner JS requires Selector Js, Events JS
 */
 
 var spinnerForm = {};

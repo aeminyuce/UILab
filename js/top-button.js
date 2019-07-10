@@ -1,6 +1,6 @@
 /*
  Top Button JS
- Top Button JS requires Events JS
+ Top Button JS requires Selector Js, Events JS
 */
 
 var topButton = {

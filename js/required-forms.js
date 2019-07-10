@@ -1,6 +1,6 @@
 /*
  Required Forms JS
- Required Forms JS requires Events JS
+ Required Forms JS requires Selector Js, Events JS
 */
 
 var requiredForms = {

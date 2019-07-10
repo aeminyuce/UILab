@@ -1,6 +1,6 @@
 /*
  Forms JS
- Forms JS requires Events JS
+ Forms JS requires Selector Js, Events JS
 */
 
 var forms = {};

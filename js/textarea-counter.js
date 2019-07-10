@@ -1,6 +1,6 @@
 /*
  Textarea Counter JS
- Textarea Counter JS requires Events JS
+ Textarea Counter JS requires Selector Js, Events JS
 */
 
 var textareaCounter = {};

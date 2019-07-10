@@ -1,6 +1,6 @@
 /*
  Loading Button JS
- Loading Button JS requires Events JS
+ Loading Button JS requires Selector Js, Events JS
 */
 
 var loadingButton = {

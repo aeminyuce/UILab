@@ -1,6 +1,6 @@
 /*
  Transitions JS
- Transitions JS requires Events JS, Useragents JS
+ Transitions JS requires Selector Js, Events JS, User Agents JS
 */
 
 var transitions = {

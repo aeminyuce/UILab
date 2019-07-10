@@ -1,6 +1,6 @@
 /*
  User Agents JS
- User Agents JS requires Events JS
+ User Agents JS requires Selector Js, Events JS
 */
 
 var useragents = {

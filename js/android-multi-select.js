@@ -1,6 +1,6 @@
 /*
  Android Multi Select JS
- Android Multi Select JS requires Events JS
+ Android Multi Select JS requires Selector Js, Events JS
 */
 
 var androidMultiselect = {};

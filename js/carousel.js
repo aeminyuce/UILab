@@ -1,6 +1,6 @@
 /*
  Carousel JS
- Carousel JS requires Events JS
+ Carousel JS requires Selector Js, Events JS
 */
 
 var carousel = {

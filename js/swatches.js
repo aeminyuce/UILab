@@ -1,6 +1,6 @@
 /*
  Swatches JS
- Swatches JS requires Events JS
+ Swatches JS requires Selector Js, Events JS
 */
 
 var swatches = {};

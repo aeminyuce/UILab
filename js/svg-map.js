@@ -1,6 +1,6 @@
 /*
- SVG Map
- SVG Map requires Events JS
+ SVG Map JS
+ SVG Map requires Selector Js, Events JS
 */
 
 var svgMap = {};

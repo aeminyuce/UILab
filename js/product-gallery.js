@@ -1,6 +1,6 @@
 /*
  Product Gallery JS
- Product Gallery JS requires Events JS
+ Product Gallery JS requires Selector Js, Events JS
 */
 
 var productGallery = {};

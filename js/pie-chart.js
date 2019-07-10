@@ -1,6 +1,6 @@
 /*
  Pie Chart JS
- Pie Chart JS requires Events JS, Tooltip JS
+ Pie Chart JS requires Selector Js, Events JS, Tooltip JS
 */
 
 var pieChart = {};

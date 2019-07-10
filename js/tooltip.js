@@ -1,6 +1,6 @@
 /*
  Tooltip JS
- Tooltip JS requires Events JS
+ Tooltip JS requires Selector Js, Events JS
 */
 
 var tooltip = {

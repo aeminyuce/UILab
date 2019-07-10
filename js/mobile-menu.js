@@ -1,6 +1,6 @@
 /*
  Mobile Menu JS
- Mobile Menu JS requires Events JS
+ Mobile Menu JS requires Selector Js, Events JS
 */
 
 var mobileMenu = {

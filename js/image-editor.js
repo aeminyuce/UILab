@@ -1,6 +1,6 @@
 /*
  Image Editor JS
- Image Editor JS requires Events JS, Ajax JS
+ Image Editor JS requires Selector Js, Events JS, Ajax JS
 */
 
 var imageEditor = {

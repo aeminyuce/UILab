@@ -1,6 +1,6 @@
 /*
  Portlets JS
- Portlets JS requires Events JS
+ Portlets JS requires Selector Js, Events JS
 */
 
 var portlets = {};

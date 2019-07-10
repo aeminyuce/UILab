@@ -1,6 +1,6 @@
 /*
  IE9 Placeholders JS
- IE9 Placeholders JS requires Events JS
+ IE9 Placeholders JS requires Selector Js, Events JS
 */
 
 var ie9Placeholders = {};

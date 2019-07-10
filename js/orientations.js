@@ -1,6 +1,6 @@
 /*
  Orientations JS
- Orientations JS requires Events JS
+ Orientations JS requires Selector Js, Events JS
 */
 
 var orientations = {};

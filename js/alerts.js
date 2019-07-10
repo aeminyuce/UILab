@@ -1,6 +1,6 @@
 /*
  Alerts JS
- Alerts JS requires Events JS
+ Alerts JS requires Selector Js, Events JS
 */
 
 var alerts = {

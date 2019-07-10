@@ -1,6 +1,6 @@
 /*
  Modal JS
- Modal JS requires Events JS, Ajax JS
+ Modal JS requires Selector Js, Events JS, Ajax JS
 */
 
 var modal = {

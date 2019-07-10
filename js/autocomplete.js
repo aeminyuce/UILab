@@ -1,6 +1,6 @@
 /*
  Autocomplete JS
- Autocomplete JS requires Events JS, Ajax JS
+ Autocomplete JS requires Selector Js, Events JS, Ajax JS
 */
 var autocomplete = {
 

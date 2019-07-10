@@ -1,6 +1,6 @@
 /*
  Donut Chart JS
- Donut Chart JS requires Events JS
+ Donut Chart JS requires Selector Js, Events JS
 */
 
 var donutChart = {};

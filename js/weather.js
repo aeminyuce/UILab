@@ -1,6 +1,6 @@
 /*
  Weather JS
- Weather JS requires Events JS
+ Weather JS requires Selector Js, Events JS
 */
 
 var weather = {

@@ -1,6 +1,6 @@
 /*
  Tabs JS
- Tabs JS requires Events JS
+ Tabs JS requires Selector Js, Events JS
 */
 
 var tabs = {};

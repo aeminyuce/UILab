@@ -1,6 +1,6 @@
 /*
  Photo Gallery JS
- Photo Gallery JS requires Events JS
+ Photo Gallery JS requires Selector Js, Events JS
 */
 
 var photoGallery = {

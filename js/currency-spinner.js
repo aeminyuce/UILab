@@ -1,6 +1,6 @@
 /*
  Currency Spinner JS
- Currency Spinner JS requires Events JS
+ Currency Spinner JS requires Selector Js, Events JS
 */
 
 var currencySpinner = {

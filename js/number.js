@@ -1,6 +1,6 @@
 /*
  Number JS
- Number JS requires Events JS
+ Number JS requires Selector Js, Events JS
 */
 
 var number = {};

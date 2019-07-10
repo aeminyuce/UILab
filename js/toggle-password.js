@@ -1,6 +1,6 @@
 /*
  Toggle Password JS
- Toggle Password JS requires Events JS
+ Toggle Password JS requires Selector Js, Events JS
 */
 
 var togglePassword = {};

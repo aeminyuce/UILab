@@ -1,6 +1,6 @@
 /*
  Data List JS
- Data List JS requires Events JS
+ Data List JS requires Selector Js, Events JS
 */
 
 var dataList = {
