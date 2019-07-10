@@ -93,7 +93,7 @@
                                 } else {
 
                                     result.value = pullResults;
-                                    result.scrollTo(0, 0);
+                                    result.scrollTop = 0; // IE, EDGE: scrollTo() not supported for textarea element
 
                                     fileSize = encodeURIComponent(pullResults).match(/%[89ABab]/g);
                                     fileSize = pullResults.length + (fileSize ? fileSize.length : 0);
@@ -132,7 +132,9 @@
                 });
 
                 reader = new FileReader(); // filereader API
+
                 file = that.files[0];
+                if (file === null) { return; }
 
                 ext = file.name.match(/\.[0-9a-z]+$/i)[0];
                 if (ext === '.' + that.name) {
@@ -212,7 +214,9 @@
                 events.on('.generate-clear', 'click', function () {
 
                     var holder = events.closest(this, '.generate-holder')[0];
+
                     selector('textarea', holder)[0].value = '';
+                    selector('.generate-size', holder)[0].innerHTML = '0 kb';
 
                 });
 
