@@ -54,223 +54,260 @@
     <!-- custom js -->
     <script>
 
-        function pullFiles(that) {
+        (function () {
 
-            var holder, list, result, pullResults, count, countFnc, fileSize;
+            'use strict';
+            /*globals document, selector, events, setTimeout, ajax, FileReader */
 
-            holder = events.closest(that, '.generate-holder')[0];
-            list = selector('input:checked:not(.generate-toggle)', holder);
-            result = selector('textarea', holder)[0];
+            function pullFiles(that) {
 
-            pullResults = '';
-            count = 0;
+                var holder, list, result, pullResults, count, countFnc, fileSize;
 
-            countFnc = function () {
+                holder = events.closest(that, '.generate-holder')[0];
+                list = selector('input:checked:not(.generate-toggle)', holder);
+                result = selector('textarea', holder)[0];
 
-                if (list.length < 1) { return; }
+                pullResults = '';
+                count = 0;
 
-                ajax({
+                countFnc = function () {
 
-                    url : list[count].getAttribute('value'),
-                    callback: function (status, response) {
+                    if (list.length < 1) { return; }
 
-                        if (status === 'success') {
+                    ajax({
 
-                            pullResults += response;
+                        url : list[count].getAttribute('value'),
+                        callback: function (status, response) {
 
-                            if (count < list.length - 1) {
+                            if (status === 'success') {
 
-                                count +=1;
-                                pullResults += '\n';
+                                pullResults += response;
 
-                                countFnc();
+                                if (count < list.length - 1) {
 
-                            } else {
+                                    count += 1;
+                                    pullResults += '\n';
 
-                                result.value = pullResults;
-                                result.scrollTo(0, 0);
+                                    countFnc();
 
-                                fileSize = encodeURIComponent(pullResults).match(/%[89ABab]/g);
-                                fileSize = pullResults.length + (fileSize ? fileSize.length : 0)
-                                fileSize = fileSize / 1024;
+                                } else {
 
-                                fileSize = fileSize.toFixed(2);
+                                    result.value = pullResults;
+                                    result.scrollTo(0, 0);
 
-                                selector('.generate-size', holder)[0].innerHTML = fileSize + ' kb';
+                                    fileSize = encodeURIComponent(pullResults).match(/%[89ABab]/g);
+                                    fileSize = pullResults.length + (fileSize ? fileSize.length : 0);
+                                    fileSize = fileSize / 1024;
 
-                                pullResults = '';
+                                    fileSize = fileSize.toFixed(2);
+
+                                    selector('.generate-size', holder)[0].innerHTML = fileSize + ' kb';
+
+                                    pullResults = '';
+
+                                }
 
                             }
 
                         }
 
-                    }
+                    });
 
+                };
+
+                countFnc();
+
+            }
+
+            function readFiles(that) {
+
+                var i, holder, forms, elems, list, reader, ext, file, getTypes, count, toggler;
+
+                holder = events.closest(that, '.generate-holder')[0];
+                elems = selector('input', holder);
+                list = selector('input:not(.generate-toggle)', holder);
+
+                events.each(elems, function () {
+                    this.checked = false;
                 });
 
-            };
+                reader = new FileReader(); // filereader API
+                file = that.files[0];
 
-            countFnc();
+                ext = file.name.match(/\.[0-9a-z]+$/i)[0];
+                if (ext === '.' + that.name) {
 
-        }
+                    reader.readAsText(file, "UTF-8");
+                    reader.onload = function (ev) {
 
-        function readFiles(that) {
+                        getTypes = ev.target.result.match(/\/\*+[\w\d\s\,]+\*\//g);
+                        if (getTypes === null) { return; }
 
-            var i, holder, list, reader, file, getTypes, scrollTarget, scrollPos, scrollAnimate;
+                        for (i = 0; i < getTypes.length; i += 1) {
 
-            holder = events.closest(that, '.generate-holder')[0];
-            list = selector('input:not(.generate-toggle)', holder);
-
-            reader = new FileReader(); // filereader API
-            file = that.files[0];
-
-            reader.readAsText(file, "UTF-8");
-            reader.onload = function (ev) {
-
-                getTypes = ev.target.result.match(/\/\*.*?\*\//g);
-
-                if (getTypes === null) { return; }
-
-                for (i = 0; i < getTypes.length; i += 1) {
-                    getTypes[i] = getTypes[i].replace(/\/\* /g, '').replace(/ \*\//g, '');
-                }
-
-                events.each(list, function () {
-
-                    if (getTypes.includes(this.name)) {
-                        this.checked = true;
-
-                    } else {
-                        this.checked = false;
-                    }
-
-                });
-
-                that.value = '';
-
-                setTimeout(function () {
-
-                    pullFiles(that);
-                    scrollTarget = selector('textarea', holder)[0].getBoundingClientRect().top;
-
-                    scrollPos = 0;
-                    clearInterval(scrollAnimate);
-
-                    scrollAnimate = setInterval(function () {
-
-                        scrollPos += 10;
-                        window.scrollTo(0, scrollPos);
-
-                        if (scrollPos >= scrollTarget) {
-
-                            clearInterval(scrollAnimate);
-
-                            setTimeout(function () {
-                                events.trigger('.generate-copy', 'click');
-                            }, 10);
-
+                            getTypes[i] = getTypes[i].replace(/\/\* /g, '').replace(/ \*\//g, '');
+                            getTypes[i] = getTypes[i].toLowerCase();
                         }
 
-                    }, 10);
+                        setTimeout(function () {
 
-                }, 150);
+                            events.each(list, function () {
 
-                // empty variables
-                getTypes = [];
+                                if (getTypes.toString().indexOf(this.name) > -1) {
+                                    this.checked = true;
 
-            };
-
-        }
-
-        function generator() {
-
-            // Events
-            events.on('.generate-import', 'change', function () {
-                readFiles(this);
-            });
-
-            events.on('.generate-btn', 'click', function () {
-                pullFiles(this);
-            });
-
-            events.on('.generate-clear', 'click', function () {
-
-                var holder = events.closest(this, '.generate-holder')[0];
-                selector('textarea', holder)[0].value = '';
-
-            });
-
-            events.on('.generate-copy', 'click', function () {
-
-                var holder = events.closest(this, '.generate-holder')[0];
-
-                selector('textarea', holder)[0].select();
-                document.execCommand("copy");
-
-            });
-
-            events.on('.generate-toggle', 'change', function () {
-
-                var forms, elems, same, index;
-
-                forms = events.closest(this, '.generate-forms')[0];
-                elems = selector('input', forms);
-
-                if (this.checked) {
-
-                    events.each(elems, function () {
-
-                        this.checked = true;
-
-                        same = selector('input[name="' + this.name + '"]');
-                        if (this.checked && same.length > 1) {
-
-                            index = Array.prototype.slice.call(same).indexOf(this);
-                            events.each(same, function (i) {
-
-                                if (i !== 0) {
+                                } else {
                                     this.checked = false;
                                 }
 
                             });
 
-                        }
+                            // check selected all properties
+                            forms = selector('.generate-forms', holder);
+                            events.each(forms, function () {
 
-                    });
+                                count = 0;
 
-                } else {
+                                elems = selector('input:not(.generate-toggle)', this);
+                                toggler = selector('.generate-toggle', this)[0];
+
+                                events.each(elems, function () {
+                                    if (this.checked) { count += 1; }
+                                });
+
+
+                                if (elems.length > 0 && count === elems.length) {
+                                    toggler.checked = true;
+
+                                } else {
+                                    toggler.checked = false;
+                                }
+
+                            });
+
+                            // empty variables
+                            getTypes = [];
+
+                        }, 300);
+
+                    };
+
+                }
+
+                that.value = '';
+
+            }
+
+            function generator() {
+
+                // Events
+                events.on('.generate-import', 'change', function () {
+                    readFiles(this);
+                });
+
+                events.on('.generate-btn', 'click', function () {
+                    pullFiles(this);
+                });
+
+                events.on('.generate-clear', 'click', function () {
+
+                    var holder = events.closest(this, '.generate-holder')[0];
+                    selector('textarea', holder)[0].value = '';
+
+                });
+
+                events.on('.generate-copy', 'click', function () {
+
+                    var holder = events.closest(this, '.generate-holder')[0];
+
+                    selector('textarea', holder)[0].select();
+                    document.execCommand("copy");
+
+                });
+
+                events.on('.generate-toggle', 'change', function () {
+
+                    var forms, elems, same;
+
+                    forms = events.closest(this, '.generate-forms')[0];
+                    elems = selector('input', forms);
+
+                    if (this.checked) {
+
+                        events.each(elems, function () {
+
+                            this.checked = true;
+
+                            same = selector('input[data-same="' + this.getAttribute('data-same') + '"]');
+                            if (this.checked && same.length > 1) {
+
+                                events.each(same, function (i) {
+
+                                    if (i !== 0) {
+                                        this.checked = false;
+                                    }
+
+                                });
+
+                            }
+
+                        });
+
+                    } else {
+
+                        events.each(elems, function () {
+                            this.checked = false;
+                        });
+
+                    }
+
+                });
+
+                events.on('.generate-forms input:not(.generate-toggle)', 'change', function () {
+
+                    var same, index, forms, elems, count, toggler;
+
+                    // check same type css files, ex: font icons
+                    same = selector('input[data-same="' + this.getAttribute('data-same') + '"]');
+                    if (this.checked && same.length > 1) {
+
+                        index = Array.prototype.slice.call(same).indexOf(this);
+                        events.each(same, function (i) {
+
+                            if (i !== index) {
+                                this.checked = false;
+                            }
+
+                        });
+
+                    }
+
+                    // check selected all properties
+                    count = 0;
+
+                    forms = events.closest(this, '.generate-forms')[0];
+                    elems = selector('input:not(.generate-toggle)', forms);
+
+                    toggler = selector('.generate-toggle', forms)[0];
 
                     events.each(elems, function () {
-                        this.checked = false;
+                        if (this.checked) { count += 1; }
                     });
 
-                }
+                    if (count === elems.length) {
+                        toggler.checked = true;
 
-            });
+                    } else {
+                        toggler.checked = false;
+                    }
 
-            events.on('.generate-forms input:not(.generate-toggle)', 'change', function () {
+                });
 
-                var same, index;
+            }
 
-                same = selector('input[name="' + this.name + '"]');
-                if (this.checked && same.length > 1) {
+            events.onload(generator);
 
-                    index = Array.prototype.slice.call(same).indexOf(this);
-                    events.each(same, function (i) {
-
-                        if (i !== index) {
-                            this.checked = false;
-                        }
-
-                    });
-
-                }
-
-            });
-
-        }
-
-        events.onload(generator);
+        }());
 
     </script>
 
@@ -297,9 +334,9 @@
                     <h4>CSS Generator</h4>
                     <div class="generate-holder padding-30-b theme-default2">
 
-                        <div class="file file-lg rounded margin-30-b circle theme-default ui-dark ease-form form-inline-responsive">
-                            <input class="generate-import" type="file">
-                            <div class="btn rounded padding-20-h xs-no-float block ease-btn">
+                        <div class="file file-lg margin-30-b rounded circle ui-dark hover ease-form form-inline-responsive">
+                            <input name="css" class="generate-import" type="file">
+                            <div class="btn btn-invisible rounded padding-20-h xs-no-float block ease-btn">
                                 Read from CSS File
                                 <i class="icon icon-sm icon-download no-opacity margin-5-l"></i>
                             </div>
@@ -397,17 +434,17 @@
 
                                     <label class="custom block">
                                         <span class="switch-custom rounded dual-bordered ease-form">
-                                             <input type="checkbox" name="animations" value="../css/animations.css" checked>
-                                             <i class="ui-dark ease-form-custom"></i>
-                                        </span>
-                                        <b>Animations</b>
-                                    </label>
-                                    <label class="custom block">
-                                        <span class="switch-custom rounded dual-bordered ease-form">
                                              <input type="checkbox" name="transitions" value="../css/transitions.css" checked>
                                              <i class="ui-dark ease-form-custom"></i>
                                         </span>
                                         <b>Transitions</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="animations" value="../css/animations.css" checked>
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Animations</b>
                                     </label>
                                     <label class="custom block">
                                         <span class="switch-custom rounded dual-bordered ease-form">
@@ -452,13 +489,6 @@
                                     </label>
                                     <label class="custom block">
                                         <span class="switch-custom rounded dual-bordered ease-form">
-                                             <input type="checkbox" name="button holder" value="../css/button-holder.css">
-                                             <i class="ui-dark ease-form-custom"></i>
-                                        </span>
-                                        <b>Button Holder</b>
-                                    </label>
-                                    <label class="custom block">
-                                        <span class="switch-custom rounded dual-bordered ease-form">
                                              <input type="checkbox" name="dropdown" value="../css/dropdown.css">
                                              <i class="ui-dark ease-form-custom"></i>
                                         </span>
@@ -470,6 +500,13 @@
                                              <i class="ui-dark ease-form-custom"></i>
                                         </span>
                                         <b>Pagination</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="button holder" value="../css/button-holder.css">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Button Holder</b>
                                     </label>
                                 </div>
 
@@ -613,7 +650,7 @@
 
                                     <label class="custom block">
                                         <span class="switch-custom rounded dual-bordered ease-form">
-                                            <input type="checkbox" name="tables" value="../css/tables.css">
+                                            <input type="checkbox" name="tables" value="../css/tables.css" checked>
                                              <i class="ui-dark ease-form-custom"></i>
                                         </span>
                                         <b>Tables</b>
@@ -657,6 +694,20 @@
 
                                     <label class="custom block">
                                         <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="list group" value="../css/list-group.css" checked>
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>List Group</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="portlets" value="../css/portlets.css" checked>
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Portlets</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
                                              <input type="checkbox" name="breadcrumbs" value="../css/breadcrumbs.css">
                                              <i class="ui-dark ease-form-custom"></i>
                                         </span>
@@ -664,24 +715,10 @@
                                     </label>
                                     <label class="custom block">
                                         <span class="switch-custom rounded dual-bordered ease-form">
-                                             <input type="checkbox" name="list group" value="../css/list-group.css">
-                                             <i class="ui-dark ease-form-custom"></i>
-                                        </span>
-                                        <b>List Group</b>
-                                    </label>
-                                    <label class="custom block">
-                                        <span class="switch-custom rounded dual-bordered ease-form">
                                              <input type="checkbox" name="photo images" value="../css/photo-images.css">
                                              <i class="ui-dark ease-form-custom"></i>
                                         </span>
                                         <b>Photo Images</b>
-                                    </label>
-                                    <label class="custom block">
-                                        <span class="switch-custom rounded dual-bordered ease-form">
-                                             <input type="checkbox" name="portlets" value="../css/portlets.css">
-                                             <i class="ui-dark ease-form-custom"></i>
-                                        </span>
-                                        <b>Portlets</b>
                                     </label>
                                     <label class="custom block">
                                         <span class="switch-custom rounded dual-bordered ease-form">
@@ -781,21 +818,21 @@
 
                                     <label class="custom block">
                                         <span class="switch-custom rounded dual-bordered ease-form">
-                                             <input type="checkbox" name="font-icons" value="icons/font-icons/outline/font-icons.css" checked>
+                                             <input type="checkbox" data-same="font-icons" name="outline icons" value="icons/font-icons/outline/font-icons.css" checked>
                                              <i class="ui-dark ease-form-custom"></i>
                                         </span>
                                         <b>Outline Icons</b>
                                     </label>
                                     <label class="custom block">
                                         <span class="switch-custom rounded dual-bordered ease-form">
-                                             <input type="checkbox" name="font-icons" value="icons/font-icons/fill/font-icons.css">
+                                             <input type="checkbox" data-same="font-icons" name="fill icons" value="icons/font-icons/fill/font-icons.css">
                                              <i class="ui-dark ease-form-custom"></i>
                                         </span>
                                         <b>Fill Icons</b>
                                     </label>
                                     <label class="custom block">
                                         <span class="switch-custom rounded dual-bordered ease-form">
-                                             <input type="checkbox" name="weather-outline-icons" value="icons/font-icons/weather-outline/weather-outline-icons.css">
+                                             <input type="checkbox" name="weather outline icons" value="icons/font-icons/weather-outline/weather-outline-icons.css">
                                              <i class="ui-dark ease-form-custom"></i>
                                         </span>
                                         <b>Weather Outline Icons</b>
@@ -816,6 +853,27 @@
                                         <b class="x-dark">Select/Deselect All</b>
                                     </label>
 
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="mobile menu" value="../css/mobile-menu.css" checked>
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Mobile Menu</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="modal" value="../css/modal.css" checked>
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Modal</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="tooltip" value="../css/tooltip.css" checked>
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Tooltip</b>
+                                    </label>
                                     <label class="custom block">
                                         <span class="switch-custom rounded dual-bordered ease-form">
                                              <input type="checkbox" name="alerts" value="../css/alerts.css">
@@ -860,20 +918,6 @@
                                     </label>
                                     <label class="custom block">
                                         <span class="switch-custom rounded dual-bordered ease-form">
-                                             <input type="checkbox" name="mobile menu" value="../css/mobile-menu.css">
-                                             <i class="ui-dark ease-form-custom"></i>
-                                        </span>
-                                        <b>Mobile Menu</b>
-                                    </label>
-                                    <label class="custom block">
-                                        <span class="switch-custom rounded dual-bordered ease-form">
-                                             <input type="checkbox" name="modal" value="../css/modal.css">
-                                             <i class="ui-dark ease-form-custom"></i>
-                                        </span>
-                                        <b>Modal</b>
-                                    </label>
-                                    <label class="custom block">
-                                        <span class="switch-custom rounded dual-bordered ease-form">
                                              <input type="checkbox" name="photo gallery" value="../css/photo-gallery.css">
                                              <i class="ui-dark ease-form-custom"></i>
                                         </span>
@@ -892,13 +936,6 @@
                                              <i class="ui-dark ease-form-custom"></i>
                                         </span>
                                         <b>Photo Slider</b>
-                                    </label>
-                                    <label class="custom block">
-                                        <span class="switch-custom rounded dual-bordered ease-form">
-                                             <input type="checkbox" name="tooltip" value="../css/tooltip.css">
-                                             <i class="ui-dark ease-form-custom"></i>
-                                        </span>
-                                        <b>Tooltip</b>
                                     </label>
                                     <label class="custom block">
                                         <span class="switch-custom rounded dual-bordered ease-form">
@@ -954,8 +991,8 @@
                                 <div class="textarea margin-15-b rounded dual-bordered ease-form">
                                     <textarea class="x-dark large padding-10" rows="6" placeholder="Generated CSS will be here!"></textarea>
                                     <div>
-                                        <button title="Clear form!" class="generate-clear btn btn-square margin-5 right rounded ease-btn">
-                                            <i class="icon icon-sm icon-trash"></i>
+                                        <button title="Clear form!" class="generate-clear btn btn-square btn-invisible margin-4-v margin-10-r right rounded ease-btn">
+                                            <i class="icon icon-sm icon-trash no-opacity"></i>
                                         </button>
                                         <div class="padding-10 theme-gray ui-x-light">
                                             Calculated file size:
@@ -965,8 +1002,8 @@
                                 </div>
 
                                 <div class="ease-1st-btn">
-                                    <button class="generate-btn btn btn-responsive btn-lg padding-20-h theme-green ui-dark circle">Generate CSS</button>
-                                    <button class="generate-copy btn btn-responsive btn-lg padding-20-h ui-dark circle">
+                                    <button class="generate-btn btn btn-responsive btn-lg padding-20-h ui-dark circle">Generate CSS</button>
+                                    <button class="generate-copy btn btn-responsive btn-lg padding-20-h circle">
                                         Copy to Clipboard
                                         <i class="icon icon-sm icon-files no-opacity margin-5-l"></i>
                                     </button>
@@ -978,12 +1015,458 @@
                     </div>
 
                     <h4>JS Generator</h4>
-                    <div class="padding-30-b theme-default2">
-                        <div class="row">
-                            <div class="col-12">
+                    <div class="generate-holder padding-30-b theme-default">
+
+                        <div class="file file-lg margin-30-b rounded circle ui-dark hover ease-form form-inline-responsive">
+                            <input name="js" class="generate-import" type="file">
+                            <div class="btn btn-invisible rounded padding-20-h xs-no-float block ease-btn">
+                                Read from JS File
+                                <i class="icon icon-sm icon-download no-opacity margin-5-l"></i>
+                            </div>
+                        </div>
+
+                        <div class="generate-list row row-sm-padding-ver row-equal-height">
+                            <div class="col-3 col-md-4 col-sm-6 xs-responsive">
+
+                                <h5 class="bold align-left margin-10-b">Core</h5>
+
+                                <div class="generate-forms margin-20-b">
+                                    <label class="custom margin-5-b block opacity ease-opacity">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input class="generate-toggle" type="checkbox">
+                                             <i class="ease-form-custom"></i>
+                                        </span>
+                                        <b class="x-dark">Select/Deselect All</b>
+                                    </label>
+
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="selector js" value="../js/selector.js" checked>
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Selector</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="events js" value="../js/events.js" checked>
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Events</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="static grid js" value="../js/static-grid.js" checked>
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Static Grid</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="swatches js" value="../js/swatches.js" checked>
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Swatches</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="user agents js" value="../js/user-agents.js" checked>
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>User Agents</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="ajax js" value="../js/ajax.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Ajax</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="orientations js" value="../js/orientations.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Orientations</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="retina images js" value="../js/retina-images.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Retina Images</b>
+                                    </label>
+                                </div>
+
+                                <h5 class="bold align-left margin-10-b">Effects</h5>
+
+                                <div class="generate-forms margin-20-b">
+                                    <label class="custom margin-5-b block opacity ease-opacity">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input class="generate-toggle" type="checkbox" checked>
+                                             <i class="ease-form-custom"></i>
+                                        </span>
+                                        <b class="x-dark">Select/Deselect All</b>
+                                    </label>
+
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="transitions js" value="../js/transitions.js" checked>
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Transitions</b>
+                                    </label>
+                                </div>
+
+                                <h5 class="bold align-left margin-10-b">Buttons</h5>
+
+                                <div class="generate-forms margin-20-b">
+                                    <label class="custom margin-5-b block opacity ease-opacity">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input class="generate-toggle" type="checkbox">
+                                             <i class="ease-form-custom"></i>
+                                        </span>
+                                        <b class="x-dark">Select/Deselect All</b>
+                                    </label>
+
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="top button js" value="../js/top-button.js" checked>
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Top Button</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="dropdown js" value="../js/dropdown.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Dropdown</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="loading button js" value="../js/loading-button.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Loading Button</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="tabs js" value="../js/tabs.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Tabs</b>
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="col-3 col-md-4 col-sm-6 xs-responsive">
+
+                                <h5 class="bold align-left margin-10-b">Forms</h5>
+
+                                <div class="generate-forms margin-20-b">
+                                    <label class="custom margin-5-b block opacity ease-opacity">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input class="generate-toggle" type="checkbox">
+                                             <i class="ease-form-custom"></i>
+                                        </span>
+                                        <b class="x-dark">Select/Deselect All</b>
+                                    </label>
+
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="forms js" value="../js/forms.js" checked>
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Forms</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="ie9 placeholders js" value="../js/ie9-placeholders.js" checked>
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>IE9 Placeholders</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="autocomplete js" value="../js/autocomplete.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Autocomplete</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="android multi select js" value="../js/android-multi-select.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Android Multi Select</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="currency spinner js" value="../js/currency-spinner.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Currency Spinner</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="form spinner js" value="../js/form-spinner.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Form Spinner</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="number js" value="../js/number.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Number</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="required forms js" value="../js/required-forms.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Required Forms</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="textarea counter js" value="../js/textarea-counter.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Textarea Counter</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="toggle password js" value="../js/toggle-password.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Toggle Password</b>
+                                    </label>
+                                </div>
+
+                                <h5 class="bold align-left margin-10-b">Layout</h5>
+
+                                <div class="generate-forms margin-20-b">
+                                    <label class="custom margin-5-b block opacity ease-opacity">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input class="generate-toggle" type="checkbox">
+                                             <i class="ease-form-custom"></i>
+                                        </span>
+                                        <b class="x-dark">Select/Deselect All</b>
+                                    </label>
+
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="portlets js" value="../js/portlets.js" checked>
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Portlets</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="sticky header js" value="../js/sticky-header.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Sticky Header</b>
+                                    </label>
+                                </div>
+
+                                <h5 class="bold align-left margin-10-b">Icons</h5>
+
+                                <div class="generate-forms margin-20-b">
+                                    <label class="custom margin-5-b block opacity ease-opacity">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input class="generate-toggle" type="checkbox">
+                                             <i class="ease-form-custom"></i>
+                                        </span>
+                                        <b class="x-dark">Select/Deselect All</b>
+                                    </label>
+
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="sprites js" value="../js/sprites.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Sprites</b>
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="col-3 col-md-4 col-sm-6 xs-responsive">
+
+                                <h5 class="bold align-left margin-10-b">Components</h5>
+
+                                <div class="generate-forms margin-20-b">
+                                    <label class="custom margin-5-b block opacity ease-opacity">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input class="generate-toggle" type="checkbox">
+                                             <i class="ease-form-custom"></i>
+                                        </span>
+                                        <b class="x-dark">Select/Deselect All</b>
+                                    </label>
+
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="mobile menu js" value="../js/mobile-menu.js" checked>
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Mobile Menu</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="modal js" value="../js/modal.js" checked>
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Modal</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="tooltip js" value="../js/tooltip.js" checked>
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Tooltip</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="alerts js" value="../js/alerts.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Alerts</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="calendar js" value="../js/calendar.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Calendar</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="carousel js" value="../js/carousel.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Carousel</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="countdown js" value="../js/countdown.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Countdown</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="data list js" value="../js/data-list.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Data List</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="image editor js" value="../js/image-editor.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Image Editor</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="photo gallery js" value="../js/photo-gallery.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Photo Gallery</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="product gallery js" value="../js/product-gallery.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Product Gallery</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="photo slider js" value="../js/photo-slider.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Photo Slider</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="weather js" value="../js/weather.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Weather</b>
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="col-3 col-md-4 col-sm-6 xs-responsive">
+
+                                <h5 class="bold align-left margin-10-b">Charts</h5>
+
+                                <div class="generate-forms margin-20-b">
+                                    <label class="custom margin-5-b block opacity ease-opacity">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input class="generate-toggle" type="checkbox">
+                                             <i class="ease-form-custom"></i>
+                                        </span>
+                                        <b class="x-dark">Select/Deselect All</b>
+                                    </label>
+
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="donut chart js" value="../js/donut-chart.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Donut chart</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="pie chart js" value="../js/pie-chart.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>Pie chart</b>
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                             <input type="checkbox" name="svg map js" value="../js/svg-map.js">
+                                             <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        <b>SVG Map</b>
+                                    </label>
+                                </div>
 
                             </div>
                         </div>
+
+                        <div class="row">
+                            <div class="col-12 no-padding-t">
+
+                                <label class="form-label">JS Codes:</label>
+
+                                <div class="textarea margin-15-b rounded dual-bordered ease-form">
+                                    <textarea class="x-dark large padding-10" rows="6" placeholder="Generated JS will be here!"></textarea>
+                                    <div>
+                                        <button title="Clear form!" class="generate-clear btn btn-square btn-invisible margin-4-v margin-10-r right rounded ease-btn">
+                                            <i class="icon icon-sm icon-trash no-opacity"></i>
+                                        </button>
+                                        <div class="padding-10 theme-gray ui-x-light">
+                                            Calculated file size:
+                                            <b class="generate-size">0 Kb</b>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ease-1st-btn">
+                                    <button class="generate-btn btn btn-responsive btn-lg padding-20-h ui-dark circle">Generate JS</button>
+                                    <button class="generate-copy btn btn-responsive btn-lg padding-20-h circle">
+                                        Copy to Clipboard
+                                        <i class="icon icon-sm icon-files no-opacity margin-5-l"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
