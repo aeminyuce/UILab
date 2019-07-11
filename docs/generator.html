@@ -57,7 +57,7 @@
         (function () {
 
             'use strict';
-            /*globals document, selector, events, setTimeout, ajax, FileReader */
+            /*globals document, selector, events, navigator, alert, setTimeout, ajax, FileReader */
 
             function pullFiles(that) {
 
@@ -82,17 +82,17 @@
                             if (status === 'success') {
 
                                 pullResults += response;
-
                                 if (count < list.length - 1) {
 
                                     count += 1;
                                     pullResults += '\n';
-
                                     countFnc();
 
                                 } else {
 
                                     result.value = pullResults;
+                                    events.trigger(result, 'keydown');
+
                                     result.scrollTop = 0; // IE, EDGE: scrollTo() not supported for textarea element
 
                                     fileSize = encodeURIComponent(pullResults).match(/%[89ABab]/g);
@@ -122,6 +122,13 @@
             function readFiles(that) {
 
                 var i, holder, forms, elems, list, reader, ext, file, getTypes, count, toggler;
+
+                if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) { // detecting IE9
+
+                    alert('FileReader API not supported!');
+                    return;
+
+                }
 
                 holder = events.closest(that, '.generate-holder')[0];
                 elems = selector('input', holder);
@@ -213,9 +220,14 @@
 
                 events.on('.generate-clear', 'click', function () {
 
-                    var holder = events.closest(this, '.generate-holder')[0];
+                    var holder, form;
 
-                    selector('textarea', holder)[0].value = '';
+                    holder = events.closest(this, '.generate-holder')[0];
+                    form = selector('textarea', holder)[0];
+
+                    form.value = '';
+                    events.trigger(form, 'keydown');
+
                     selector('.generate-size', holder)[0].innerHTML = '0 kb';
 
                 });
