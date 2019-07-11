@@ -8,7 +8,7 @@ var donutChart = {};
 (function () {
 
     'use strict';
-    /*globals document,  selector, events, navigator, setTimeout, ajax */
+    /*globals document, selector, events, navigator, setTimeout, ajax */
 
     var loadCharts;
 
