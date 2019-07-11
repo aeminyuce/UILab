@@ -41,6 +41,7 @@
     <script src="../js/ajax.js"></script>
     <script src="../js/forms.js"></script>
     <script src="../js/ie9-placeholders.js"></script>
+    <script src="../js/loading-button.js"></script>
     <script src="../js/static-grid.js"></script>
     <script src="../js/sticky-header.js"></script>
     <script src="../js/swatches.js"></script>
@@ -121,7 +122,7 @@
 
             function readFiles(that) {
 
-                var i, holder, forms, elems, list, reader, ext, file, getTypes, count, toggler;
+                var i, holder, forms, elems, list, btn, reader, ext, file, getTypes, count, toggler;
 
                 if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) { // detecting IE9
 
@@ -134,14 +135,24 @@
                 elems = selector('input', holder);
                 list = selector('input:not(.generate-toggle)', holder);
 
-                events.each(elems, function () {
-                    this.checked = false;
-                });
-
                 reader = new FileReader(); // filereader API
 
                 file = that.files[0];
-                if (file === null) { return; }
+                if (file === null) {
+
+                    that.value = '';
+                    return;
+                    
+                }
+
+                btn = that.parentElement;
+                btn = selector('.btn', btn)[0];
+
+                loadingButton.toggle(btn); // show loading
+
+                events.each(elems, function () {
+                    this.checked = false;
+                });
 
                 ext = file.name.match(/\.[0-9a-z]+$/i)[0];
                 if (ext === '.' + that.name) {
@@ -150,7 +161,18 @@
                     reader.onload = function (ev) {
 
                         getTypes = ev.target.result.match(/\/\*+[\w\d\s\,]+\*\//g);
-                        if (getTypes === null) { return; }
+
+                        if (getTypes === null) {
+
+                            setTimeout(function () {
+                                loadingButton.toggle(btn); // hide loading
+                            }, 150);
+
+                            that.value = '';
+
+                            return;
+
+                        }
 
                         for (i = 0; i < getTypes.length; i += 1) {
 
@@ -194,12 +216,22 @@
 
                             });
 
+                            setTimeout(function () {
+                                loadingButton.toggle(btn); // hide loading
+                            }, 150);
+
                             // empty variables
                             getTypes = [];
 
                         }, 300);
 
                     };
+
+                } else {
+
+                    setTimeout(function () {
+                        loadingButton.toggle(btn); // hide loading
+                    }, 150);
 
                 }
 
@@ -350,7 +382,7 @@
                     <h4>CSS Generator</h4>
                     <div class="generate-holder padding-30-b theme-default2">
 
-                        <div class="file file-lg margin-30-b rounded circle ui-dark hover ease-form form-inline-responsive">
+                        <div class="file file-lg margin-30-b rounded circle no-bordered ui-dark hover ease-form form-inline-responsive">
                             <input name="css" class="generate-import" type="file">
                             <div class="btn btn-invisible rounded padding-20-h xs-no-float block ease-btn">
                                 Read from CSS File
