@@ -39,6 +39,35 @@ html:not(.mobile) .select-multi > .icon { display: none; }
 
 .check,.radio { vertical-align: middle; display: inline-block; }
 
+.file { vertical-align: middle; line-height: normal; min-height: 32px; border: solid 1px rgba(0,0,0,.15); overflow: hidden; display: block; position: relative; }
+.file input { vertical-align: middle; width: 100%; height: 30px; overflow: hidden; position: absolute; top: 0; left: 0; z-index: 3; opacity: 0; } /* don't change z-index! */
+.file.dual-bordered input { height: 28px; }
+.file.no-bordered input { height: 32px; }
+
+.file.file-lg { min-height: 42px; }
+.file.file-lg input { height: 40px; }
+.file.file-lg.dual-bordered input { height: 38px; }
+.file.file-lg.no-bordered input { height: 42px; }
+
+.table .file { min-width: 120px; }
+
+.file .btn { text-align: center !important; min-width: 128px; height: 30px; float: left; }
+.file .btn.rounded { border-radius: 3px 0 0 3px; }
+
+.file:not(.no-bordered) .btn { line-height: 18px; }
+.file.dual-bordered .btn { min-width: 126px; height: 28px; }
+.file.no-bordered .btn { min-width: 130px; height: 32px;}
+html:not(.mobile) .file:hover .btn { background-color: rgba(0,0,0,.15); }
+
+.file.file-lg .btn { font-size: 16px; height: 40px; }
+
+.file.file-lg:not(.no-bordered) .btn { line-height: 28px; }
+.file.file-lg.dual-bordered .btn { height: 38px; }
+.file.file-lg.no-bordered .btn { line-height: 30px; height: 42px;}
+
+.file > span { white-space: nowrap; text-overflow: ellipsis; line-height: 30px; width: 100%; padding-right: 10px; padding-left: 135px; overflow: hidden; display: block; position: absolute; }
+.file.file-lg > span { font-size: 16px; line-height: 40px; }
+
 .form-light { border-color: rgba(255,255,255,.3) !important; }
 .form-light > input,.form-light > select:not(:focus),.form-light > textarea,.mobile .select-multi.form-light:before,.form-light > .icon { color: #fff; }
 .form-light > input:-webkit-autofill:not(:focus) { -webkit-text-fill-color: white !important; }
