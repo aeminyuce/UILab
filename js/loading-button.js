@@ -19,7 +19,6 @@ var loadingButton = {
             var l, i, re, rex, styles, html;
 
             l = selector(that);
-
             for (i = 0; i < l.length; i += 1) {
 
                 if (!events.hasClass(l[i], 'btn')) { return; }
@@ -36,7 +35,7 @@ var loadingButton = {
                     styles = styles.replace(re, ' ').replace(rex, '');
 
                     html = '<span class="loading-spinner ease-layout">' +
-                            '<i class="' + styles + '"></i>' +
+                            '<i class="' + styles + ' no-opacity"></i>' +
                         '</span>' +
                         '<span class="loading-label ease-layout">' + l[i].innerHTML + '</div>';
 

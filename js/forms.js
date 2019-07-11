@@ -139,7 +139,7 @@ var forms = {};
         // file inputs
         events.on(document, 'change', '.file input', function () {
 
-            var info = selector('span', this.parentElement)[0];
+            var info = selector('span:not([class])', this.parentElement)[0];
 
             if (info !== undefined) {
                 info.innerHTML = this.value;
