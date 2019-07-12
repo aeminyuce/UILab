@@ -3,7 +3,12 @@
  Line Chart JS requires Selector Js, Events JS
 */
 
-var lineChart = {};
+var lineChart = {
+
+    rows: 5, // set default chart rows
+    rowsHeight: 45 // set default height of single row in pixels
+
+};
 
 (function () {
 
@@ -12,157 +17,188 @@ var lineChart = {};
 
     var loadCharts;
 
+    // generate random color
+    function randomColor(brightness) { // Six levels of brightness from 0 to 5, 0 being the darkest
+
+        var mix, rgb, mixedrgb;
+
+        mix = [brightness * 51, brightness * 51, brightness * 51]; // 51 => 255 / 5
+        rgb = [Math.random() * 256, Math.random() * 256, Math.random() * 256];
+
+        mixedrgb = [rgb[0] + mix[0], rgb[1] + mix[1], rgb[2] + mix[2]].map(function (x) { return Math.round(x / 2.0); });
+
+        return "rgb(" + mixedrgb.join(',') + ")";
+
+    }
+
+    // convert datas as unique and desc
+    function makeUniqueDesc(data) {
+
+        var arr = data.filter(function (item, pos) {
+            return data.indexOf(item) === pos;
+        });
+
+        arr = arr.sort(function (a, b) {
+            return b - a;
+        });
+
+        return arr;
+
+    }
+
     lineChart.Start = function () {
 
+        // chart loader
         loadCharts = function () {
 
-            var chart, lines, maxY, i, j, l, m, x, y, c, dx, html, polyline, dots, links, points, pointsX, total, info, max, uniq, uniqDigits, uniqMax, yuniq, yuniqDigits, yuniqMax;
+            var chart, size, rows, rowsHeight, lines, i, j, x, y, yMax, yUnique, yUniqueLength, posX, posY, html, color, dotsHolder, dots, dotsX, links, total, name, info;
 
             chart = selector('.line-chart');
             if (chart.length === 0) { return; }
 
-            events.each(chart, function (k) {
+            // load charts
+            events.each(chart, function (current) {
 
                 lines = selector('.line', this);
                 if (lines.length === 0) { return; }
 
-                maxY = 0;
-                m = [];
+                // set height of chart
+                size = this.getAttribute('data-size');
+                this.removeAttribute('data-size');
 
+                rows = lineChart.rows;
+                rowsHeight = lineChart.rowsHeight;
+
+                if (size !== null && size !== '') {
+
+                    size = size.split(',');
+                    if (!isNaN(size[0]) && !isNaN(size[1])) {
+
+                        rows = size[0];
+                        rowsHeight = size[1];
+
+                    }
+
+                }
+
+                this.style.height = rows * rowsHeight + 'px';
+
+                // read all x parameters
+                x = this.getAttribute('data-x');
+
+                if (x !== null && x !== '') {
+                    x = x.split(',');
+
+                } else { return; }
+
+                // read all y parameters
+                y = [];
                 events.each(lines, function () {
 
-                    y = this.getAttribute('data-y');
-                    if (y !== null && y !== '') { m.push(y); }
+                    var data = this.getAttribute('data-y');
+                    if (data !== null && data !== '') { y.push(data.split(',')); }
 
                 });
 
-                events.each(lines, function (z) {
+                // get maximum value of y
+                yMax = y.toString().split(',');
+                yMax = makeUniqueDesc(yMax)[0]; // convert data as unique and desc
 
-                    x = [];
-                    y = m[z].split(',');
+                // start chart info html
+                info = '<ul>';
 
-                    polyline = selector('polyline', this)[0];
-                    if (polyline.length === 0) { return; }
+                // check all lines
+                events.each(lines, function (k) {
 
-                    x = chart[k].getAttribute('data-x');
+                    // get unique y parameters for this line
+                    yUnique = makeUniqueDesc(y[k]); // convert data as unique and desc
 
-                    if (x !== null && x !== '') {
-                        x = x.split(',');
+                    if (yUnique[1] < 5) {
 
-                    } else { return; }
-
-                    uniq = m.filter(function (item, pos) {
-                        return m.indexOf(item) === pos;
-                    });
-
-                    uniq = uniq.sort(function (a, b) {
-                        return b - a;
-                    });
-
-                    uniqDigits = uniq[0];
-                    uniqMax = uniqDigits.split(',')[0];
-
-                    if (uniqDigits[1] < 5) {
-
-                        uniqMax += 5;
-                        l = (uniqDigits.length - 1);
+                        yMax += 5;
+                        yUniqueLength = (yUnique.length - 1);
 
                     } else {
 
-                        uniqMax = parseInt(uniqMax, 10) + 1;
-                        l = uniqDigits.length;
+                        yMax = parseInt(yMax, 10) + 1;
+                        yUniqueLength = yUnique.length;
 
                     }
 
-                    for (i = 1; i < l; i += 1) {
-                        uniqMax += 0;
+                    for (i = 1; i < yUniqueLength; i += 1) {
+                        yMax += 0;
                     }
 
-                    uniqMax = parseInt(uniqMax, 10);
+                    // set random color for this line
+                    color = randomColor(3);
 
-                    yuniq = y.filter(function (item, pos) {
-                        return y.indexOf(item) === pos;
-                    });
+                    // create x coordinate parameters
+                    posX = this.offsetWidth / (x.length - 1);
+                    if (k === 0) {
 
-                    yuniq = yuniq.sort(function (a, b) {
-                        return b - a;
-                    });
+                        html = '<div class="posx">';
 
-                    yuniqDigits = yuniq[0];
-                    yuniqMax =  Math.ceil(yuniqDigits / 5) * 5;
+                        for (i = 0; i < x.length; i += 1) {
+                            html += '<span style="width: ' + posX + 'px; margin-left: ' + -(posX / 2) + 'px; left: ' + i * posX + 'px;">' + x[i] + '</span>';
+                        }
 
-                    if (maxY < yuniqMax) {
-                        maxY = yuniqMax;
+                        html += '</div>';
+                        chart[current].insertAdjacentHTML('beforeEnd', html);
+
                     }
 
-                    dots = selector('.dots', this)[0];
-                    links = dots.getAttribute('data-links');
+                    // create y coordinate parameters
+                    if (k === 0) {
+
+                        html = '<div class="posy">';
+
+                        for (i = 0; i <= rows; i += 1) {
+                            html += '<span style="bottom: ' + ((i * (this.offsetHeight / rows)) - 8) + 'px;">' + parseInt((yMax / rows) * i, 10) + '</span>';
+                        }
+
+                        html += '</div>';
+                        chart[current].insertAdjacentHTML('beforeEnd', html);
+
+                    }
+
+                    // create dot links
+                    html = '';
+                    total = 0;
+
+                    dots = [];
+                    dotsX = [];
+
+                    dotsHolder = selector('.dots-holder', this)[0];
+                    links = dotsHolder.getAttribute('data-links');
 
                     if (links !== null && links !== '') {
                         links = links.split(',');
 
                     } else { return; }
 
-                    total = 0;
-                    dx = this.offsetWidth / (x.length - 1);
+                    for (i = 0; i < y[k].length; i += 1) {
 
-                    points = [];
-                    pointsX = [];
+                        dotsX.push(i * posX);
+                        if (y[k][i] === '') { y[k][i] = 0; }
 
-                    // create x coordinate parameters
-                    if (z === 0) {
-
-                        html = '<div class="dx">';
-
-                        for (i = 0; i < x.length; i += 1) {
-                            html += '<span style="width: ' + dx + 'px; margin-left: ' + -(dx / 2) + 'px; left: ' + (i * dx) + 'px;">' + x[i] + '</span>';
-                        }
-
-                        html += '</div>';
-                        chart[k].insertAdjacentHTML('afterBegin', html);
+                        html += '<a data-title="' + y[k][i] + '" href="' + links[i] + '" style="color: ' + color + '; left: ' + i * posX + 'px;"></a>';
+                        total += parseInt(y[k][i], 10);
 
                     }
 
-                    // create y coordinate parameters
-                    if (z === 0) {
-
-                        html = '<div class="dy">';
-
-                        for (i = 0; i < 6; i += 1) {
-                            html += '<span style="bottom: ' + ((i * (this.offsetHeight / 5)) - 8) + 'px;">' + parseInt((maxY / 5) * i, 10) + '</span>';
-                        }
-
-                        html += '</div>';
-                        chart[k].insertAdjacentHTML('afterBegin', html);
-
-                    }
-
-                    // create dot links
-                    html = '';
-                    for (i = 0; i < y.length; i += 1) {
-
-                        pointsX.push(i * dx);
-                        if (y[i] === '') { y[i] = 0; }
-
-                        html += '<a data-title="' + y[i] + '" class="' + polyline.getAttribute('class') + '" href="' + links[i] + '" style="left: ' + (i * dx) + 'px;"></a>';
-                        total += parseInt(y[i], 10);
-
-                    }
-
-                    dots.insertAdjacentHTML('beforeEnd', html);
+                    dotsHolder.insertAdjacentHTML('beforeEnd', html);
 
                     // set dot links' vertical positions
-                    for (i = 0; i < y.length; i += 1) {
+                    for (i = 0; i < y[k].length; i += 1) {
 
                         for (j = 0; j < x.length; j += 1) {
 
-                            if (y.length > 0 && (y[i] === yuniq[j])) {
+                            if (y[k].length > 0 && (y[k][i] === yUnique[j])) {
 
-                                max = uniqMax;
-                                c = (this.offsetHeight * y[i]) / max;
+                                posY = (this.offsetHeight * y[k][i]) / yMax;
 
-                                points.push(pointsX[i] + ',' + c);
-                                selector('a', dots)[i].style.bottom = (c - 6) + 'px';
+                                dots.push(dotsX[i] + ',' + posY);
+                                selector('a', dotsHolder)[i].style.bottom = (posY - 6) + 'px';
 
                                 break;
 
@@ -172,19 +208,33 @@ var lineChart = {};
 
                     }
 
-                    // create dots' total info
-                    info = selector('.info div', chart[k]);
-                    info = selector('b', info[z])[0];
+                    // create polyline
+                    html = '<svg>' +
+                            '<polyline points="' + dots + '" stroke="' + color + '" />' +
+                        '</svg>';
 
-                    info.textContent = total;
+                    this.insertAdjacentHTML('beforeEnd', html);
 
-                    // set polyline points
-                    polyline.setAttribute('points', points);
+                    // create lines' total numbers
+                    info += '<li><span style="background: ' + color + '"></span>';
+                    name = this.getAttribute('data-name');
+
+                    if (name !== null && name !== '') {
+                        info += name + ': <b>' + total;
+
+                    } else {
+                        info += '<b>' + total;
+                    }
+
+                    info += '</b></li>'
 
                 });
 
-            });
+                // create chart info
+                info += '</ul>';
+                this.insertAdjacentHTML('beforeEnd', info);
 
+            });
 
         };
 
