@@ -226,7 +226,7 @@ var lineChart = {
                         info += '<b>' + total;
                     }
 
-                    info += '</b></li>'
+                    info += '</b></li>';
 
                 });
 
