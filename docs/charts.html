@@ -330,24 +330,26 @@
                     <h4 class="lg-align-center">Line Chart Examples</h4>
 
                     <div class="row row-lg-padding-ver">
-                        <div class="col-12 sm-responsive">
+                        <div class="col-12">
 
-                            <div class="line-chart" data-x="Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday">
-                                <div class="info">
-                                    <div><span class="theme-default ui-dark"></span> 1st Week: <b></b></div>
-                                    <div><span class="theme-default2 ui-dark"></span> 2nd Week: <b></b></div>
+                            <div class="line-chart ease-line-chart" data-x="Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday">
+                                <div class="line" data-y="159,120,20,120,80,0,20">
+                                    <span class="dots-holder" data-links="#1,#2,#3,#4,#5,#6,#7"></span>
                                 </div>
-                                <div class="line" data-y="159,120,20,118,80,0,20">
-                                    <span class="dots" data-links="#1,#2,#3,#4,#5,#6,#7"></span>
-                                    <svg>
-                                        <polyline class="theme-default ui-text" />
-                                    </svg>
+                                <div class="line" data-y="55,70,92,55,89,98,116">
+                                    <span class="dots-holder" data-links="#1,#2,#3,#4,#5,#6,#7"></span>
                                 </div>
-                                <div class="line" data-y="55,70,92,48,89,98,116">
-                                    <span class="dots" data-links="#1,#2,#3,#4,#5,#6,#7"></span>
-                                    <svg>
-                                        <polyline class="theme-default2 ui-text" />
-                                    </svg>
+                            </div>
+
+                        </div>
+                        <div class="col-12">
+
+                            <div class="line-chart ease-line-chart" data-size="10,35" data-x="Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday"> <!-- data-size(rows, rowsHeight) -->
+                                <div class="line" data-name="1st Week" data-y="159,120,20,120,80,0,20">
+                                    <span class="dots-holder" data-links="#1,#2,#3,#4,#5,#6,#7"></span>
+                                </div>
+                                <div class="line" data-name="2nd Week" data-y="55,70,92,55,89,98,116">
+                                    <span class="dots-holder" data-links="#1,#2,#3,#4,#5,#6,#7"></span>
                                 </div>
                             </div>
 
