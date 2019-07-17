@@ -1,0 +1,25 @@
+/* charts */
+.ease-charts circle { transition-property: all; transition-duration: .15s; }
+.no-transitions-all .ease-charts circle { transition-property: none !important; }
+
+.charts { -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
+.charts ul { list-style: none; vertical-align: middle; padding: 0; display: inline-block; }
+.charts ul.part { display: none; }
+
+.charts svg { width: 100%; }
+.charts svg path { stroke-linecap: round; }
+
+.charts svg circle { fill: #fff; cursor: pointer; }
+html:not(.mobile) .charts svg circle:hover { r: 8; }
+
+.charts svg .grids { stroke: rgba(0,0,0,.15); }
+.charts svg .grids line { shape-rendering: crispEdges; }
+
+.charts svg text { fill: #777; font-size: 10px; }
+.charts svg .x-labels { text-anchor: middle; }
+.charts svg .y-labels { text-anchor: end; }
+
+.charts .info { text-align: center; fill: black; display: block; }
+.charts .info li { color: #777; margin: 0 5px 2px 5px; display: inline-block; }
+.charts .info li b { color: #000; }
+.charts .info li span { vertical-align: middle; width: 13px; height: 13px; margin: -2px 5px 0 0; display: inline-block; border-radius: 50%; }

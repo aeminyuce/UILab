@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="../css/swatches.css" />
     <link rel="stylesheet" href="../css/top-button.css" />
 
+    <link rel="stylesheet" href="../css/charts.css" />
     <link rel="stylesheet" href="../css/donut-chart.css" />
     <link rel="stylesheet" href="../css/pie-chart.css" />
     <link rel="stylesheet" href="../css/line-chart.css" />
@@ -45,6 +46,7 @@
     <script src="../js/tooltip.js"></script>
     <script src="../js/user-agents.js"></script>
 
+    <script src="../js/charts.js"></script>
     <script src="../js/donut-chart.js"></script>
     <script src="../js/pie-chart.js"></script>
     <script src="../js/line-chart.js"></script>
@@ -70,6 +72,76 @@
     <main class="container no-gutter">
         <div class="fixed">
             <div class="row">
+                <div class="col-lg-8 push-lg-2 col-12 padding-30-v">
+
+                    <h4 class="lg-align-center">Charts Examples</h4>
+
+                        <div class="col-12">
+
+                            <div class="charts ease-charts" data-size="10,35" data-x="Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday">
+                                <ul class="part" data-name="1st Week">
+                                    <li data-y="159" data-link="#1"></li>
+                                    <li data-y="120" data-link="#2"></li>
+                                    <li data-y="20" data-link="#3"></li>
+                                    <li data-y="120" data-link="#4"></li>
+                                    <li data-y="80" data-link="#5"></li>
+                                    <li data-y="0" data-link="#6"></li>
+                                    <li data-y="20" data-link="#7"></li>
+                                </ul>
+                                <ul class="part" data-name="2nd Week">
+                                    <li data-y="55" data-link="#1"></li>
+                                    <li data-y="70" data-link="#2"></li>
+                                    <li data-y="92" data-link="#3"></li>
+                                    <li data-y="55" data-link="#4"></li>
+                                    <li data-y="89" data-link="#5"></li>
+                                    <li data-y="98" data-link="#6"></li>
+                                    <li data-y="116" data-link="#7"></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="col-12">
+
+                            <div class="line-chart ease-line-chart" data-x="Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday">
+                                <div class="line" data-y="120,36,77,140,90,65,78">
+                                    <span class="dots-holder" data-links="#1,#2,#3,#4,#5,#6,#7"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12">
+
+                            <div class="line-chart ease-line-chart" data-x="Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday">
+                                <div class="line" data-name="1st Week" data-y="159,120,20,120,80,0,20">
+                                    <span class="dots-holder" data-links="#1,#2,#3,#4,#5,#6,#7"></span>
+                                </div>
+                                <div class="line" data-name="2nd Week" data-y="55,70,92,55,89,98,116">
+                                    <span class="dots-holder" data-links="#1,#2,#3,#4,#5,#6,#7"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12">
+
+                            <div class="line-chart ease-line-chart" data-size="15,35" data-x="Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday"> <!-- data-size(rows, rowsHeight) -->
+                                <div class="line" data-name="1st Week" data-y="1962,996,1003,2985,3205,3620,1056">
+                                    <span class="dots-holder" data-links="#1,#2,#3,#4,#5,#6,#7"></span>
+                                </div>
+                                <div class="line" data-name="2nd Week" data-y="1712,1365,2013,2685,2770,3125,3456">
+                                    <span class="dots-holder" data-links="#1,#2,#3,#4,#5,#6,#7"></span>
+                                </div>
+                                <div class="line" data-name="3rd Week" data-y="909,1016,723,1315,1417,1839,1940">
+                                    <span class="dots-holder" data-links="#1,#2,#3,#4,#5,#6,#7"></span>
+                                </div>
+                                <div class="line" data-name="4th Week" data-y="2104,1896,1713,2016,995,726,777">
+                                    <span class="dots-holder" data-links="#1,#2,#3,#4,#5,#6,#7"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
                 <div class="col-lg-8 push-lg-2 col-12 padding-30-v">
 
                     <h4 class="lg-align-center">Donut Chart Examples</h4>
@@ -325,53 +397,7 @@
                     </div>
 
                 </div>
-                <div class="col-lg-8 push-lg-2 col-12 padding-30-v">
 
-                    <h4 class="lg-align-center">Line Chart Examples</h4>
-
-                    <div class="row row-lg-padding-ver">
-                        <div class="col-12">
-
-                            <div class="line-chart ease-line-chart" data-x="Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday">
-                                <div class="line" data-y="120,36,77,140,90,65,78">
-                                    <span class="dots-holder" data-links="#1,#2,#3,#4,#5,#6,#7"></span>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-12">
-
-                            <div class="line-chart ease-line-chart" data-x="Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday">
-                                <div class="line" data-name="1st Week" data-y="159,120,20,120,80,0,20">
-                                    <span class="dots-holder" data-links="#1,#2,#3,#4,#5,#6,#7"></span>
-                                </div>
-                                <div class="line" data-name="2nd Week" data-y="55,70,92,55,89,98,116">
-                                    <span class="dots-holder" data-links="#1,#2,#3,#4,#5,#6,#7"></span>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-12">
-
-                            <div class="line-chart ease-line-chart" data-size="15,35" data-x="Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday"> <!-- data-size(rows, rowsHeight) -->
-                                <div class="line" data-name="1st Week" data-y="1962,996,1003,2985,3205,3620,1056">
-                                    <span class="dots-holder" data-links="#1,#2,#3,#4,#5,#6,#7"></span>
-                                </div>
-                                <div class="line" data-name="2nd Week" data-y="1712,1365,2013,2685,2770,3125,3456">
-                                    <span class="dots-holder" data-links="#1,#2,#3,#4,#5,#6,#7"></span>
-                                </div>
-                                <div class="line" data-name="3rd Week" data-y="909,1016,723,1315,1417,1839,1940">
-                                    <span class="dots-holder" data-links="#1,#2,#3,#4,#5,#6,#7"></span>
-                                </div>
-                                <div class="line" data-name="4th Week" data-y="2104,1896,1713,2016,995,726,777">
-                                    <span class="dots-holder" data-links="#1,#2,#3,#4,#5,#6,#7"></span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
             </div>
         </div>
     </main>
