@@ -10,7 +10,7 @@ var charts = {
 
     top: 10, // set top space (px)
     right: 25, // set right space (px)
-    bottom: 0, // set bottom space (px)
+    bottom: 20, // set bottom space (px)
     left: 50, // set left space (px)
 
     gridstroke: 1, // set grid stroke width
