@@ -8,14 +8,14 @@ var charts = {
     rows: 5, // set number of rows
     rowsHeight: 50, // set height of single row (px)
 
-    top: 10, // set top space (px)
-    right: 25, // set right space (px)
+    top: 12, // set top space (px)
+    right: 20, // set right space (px)
     bottom: 20, // set bottom space (px)
     left: 50, // set left space (px)
 
-    gridstroke: 2, // set grid stroke width
+    gridstroke: 1, // set grid stroke width
     linestroke: 2, // set line chart stroke width
-    circlesize: 5 // set circle size
+    circlesize: 6 // set circle size
 
 };
 
@@ -45,7 +45,7 @@ var charts = {
         // chart loader
         loadCharts = function () {
 
-            var i, j, chart, parts, data, x, y, yMax, link, size, rows, rowsHeight, yUnique, yUniqueLength, posX, posY, html, color, circles, total, name;
+            var i, j, chart, parts, data, x, y, yMax, yMaxDiff, link, size, rows, rowsHeight, posX, posY, html, color, circles, total, name;
 
             chart = selector('.charts');
             if (chart.length === 0) { return; }
@@ -58,6 +58,28 @@ var charts = {
 
                 data = [];
                 data.name = [];
+
+                // calculate height of chart
+                size = this.getAttribute('data-size');
+                this.removeAttribute('data-size');
+
+                rows = charts.rows;
+                rowsHeight = charts.rowsHeight;
+
+                if (size !== null && size !== '') {
+
+                    size = size.split(',');
+                    if (!isNaN(size[0]) && !isNaN(size[1])) {
+
+                        rows = parseInt(size[0], 10);
+                        rowsHeight = size[1];
+
+                    }
+
+                }
+
+                data.width = this.offsetWidth;
+                data.height = rows * rowsHeight;
 
                 // read all x parameters
                 x = this.getAttribute('data-x');
@@ -100,55 +122,23 @@ var charts = {
                 // get maximum value of all y datas
                 yMax = yMax.toString().split(',');
 
-                // convert arrays as unique and desc
-                yUnique = yMax.filter(function (item, pos) {
+                yMax = yMax.filter(function (item, pos) { // convert array as unique
                     return yMax.indexOf(item) === pos;
                 });
 
-                yUnique = yMax.sort(function (a, b) {
+                yMax = yMax.sort(function (a, b) { // convert array as desc
                     return b - a;
                 });
 
-                yMax = parseInt(yUnique, 10);
-                yUniqueLength = yUnique.length;
+                yMax = parseInt(yMax, 10);
+                yMaxDiff = yMax;
 
-                if (yUnique[1] < 5) {
-
-                    yMax += 5;
-                    yUniqueLength -= 1;
-
-                } else {
-                    yMax += 1;
-                }
-
-                for (i = 1; i < yUniqueLength; i += 1) {
-                    yMax += 0;
-                }
-
-                // calculate height of chart
-                size = this.getAttribute('data-size');
-                this.removeAttribute('data-size');
-
-                rows = charts.rows;
-                rowsHeight = charts.rowsHeight;
-
-                if (size !== null && size !== '') {
-
-                    size = size.split(',');
-                    if (!isNaN(size[0]) && !isNaN(size[1])) {
-
-                        rows = size[0];
-                        rowsHeight = size[1];
-
-                    }
-
-                }
-
-                data.width = this.offsetWidth;
-                data.height = rows * rowsHeight;
+                yMax = Math.ceil(yMax / rows) * rows; // convert yMax to divide with rows
+                yMaxDiff = yMax - yMaxDiff; // difference with divisible yMax
 
                 // start html
                 html = '<svg>';
+                circles = '';
 
                 // create grids
                 posX = (data.width - (charts.right + charts.left)) / (x.length - 1);
@@ -157,13 +147,13 @@ var charts = {
                 for (i = 0; i < x.length; i += 1) {
 
                     html += '<text x="' + (charts.left + (i * posX)) + '" y="' + (data.height - charts.bottom + 20) + '">' + x[i] + '</text>' +
-                            '<line x1="' + (charts.left + (i * posX)) + '" x2="' + (charts.left + (i * posX)) + '" y1="0" ';
+                            '<line x1="' + (charts.left + (i * posX)) + '" x2="' + (charts.left + (i * posX)) + '" y1="' + charts.top + '" ';
 
                     if (i === 0) { // root of x grid
-                        html += 'y2="' + (data.height - (charts.bottom + (charts.gridstroke / 2))) + '" class="root" stroke-width="' + charts.gridstroke + '"';
+                        html += 'y2="' + Math.ceil(data.height - (charts.bottom + (charts.gridstroke / 2))) + '" class="root" stroke-width="' + charts.gridstroke + '"';
 
                     } else {
-                        html += 'y2="' + (data.height - charts.bottom) + '"';
+                        html += 'y2="' + (data.height - charts.bottom) + '" stroke-dasharray="4"';
                     }
 
                     html += '></line>';
@@ -178,20 +168,20 @@ var charts = {
                     posY = parseInt((i * (data.height - (charts.top + charts.bottom)) / rows) + charts.top, 10);
 
                     html += '<text x="' + (charts.left - 10) + '" y="' + (posY + 4) + '">' + parseInt(yMax / rows, 10) * (rows - i) + '</text>' +
-                            '<line x2="' + data.width + '" y1="' + posY + '" y2="' + posY + '" ';
+                            '<line x2="' + (data.width - charts.right + 1) + '" y1="' + posY + '" y2="' + posY + '" ';
 
                     if (i >= rows) { // root of y grid
-                        html += 'x1="' + (charts.left - (charts.gridstroke / 2)) + '" class="root" stroke-width="' + charts.gridstroke + '"';
+                        html += 'x1="' + Math.ceil(charts.left - (charts.gridstroke / 2)) + '" class="root" stroke-width="' + charts.gridstroke + '"';
 
                     } else {
-                        html += 'x1="' + (charts.left + (charts.gridstroke / 2)) + '"';
+                        html += 'x1="' + Math.floor(charts.left + charts.gridstroke) + '" stroke-dasharray="4"';
                     }
 
                     html += '></line>';
 
                 }
 
-                html += '</g>';
+                html += '</g><g>';
 
                 // create svg contents
                 events.each(parts, function (j) {
@@ -202,14 +192,15 @@ var charts = {
                     color = randomColor(3);
 
                     // create paths and circles
-                    circles = '';
-
-                    html += '<g>' +
-                        '<path d="';
+                    html += '<path d="';
 
                     for (i = 0; i < y.length; i += 1) {
 
                         posY = data.height - (((data.height - (charts.top + charts.bottom)) * y[i]) / yMax) - charts.bottom;
+
+                        if (parseInt(y[i], 10) >= yMax - yMaxDiff) { // apply difference to maximum numbers
+                            posY += yMaxDiff;
+                        }
 
                         // create paths
                         if (i === 0) {
@@ -236,14 +227,14 @@ var charts = {
                         circles += '<circle cx="' + ((i * posX) + charts.left) + '" cy="' + posY + '" r="' + charts.circlesize + '" stroke="' + color + '" stroke-width="' + charts.linestroke + '" data-tooltip title="' + y[i] + '"';
 
                         if (data[j].links[i] !== '') { // check links
-                            circles += 'onclick="location.href = \'' + data[j].links[i] + '\';"';
+                            circles += ' onclick="location.href = \'' + data[j].links[i] + '\';"';
                         }
 
                         circles += '/>';
 
                     }
 
-                    html += '" fill="transparent" stroke="' + color + '" stroke-width="' + charts.linestroke + '" />' + circles + '</g>';
+                    html += '" fill="transparent" stroke="' + color + '" stroke-width="' + charts.linestroke + '" />';
 
                     // get data names
                     name = this.getAttribute('data-name');
@@ -258,7 +249,7 @@ var charts = {
                 });
 
                 // close svg tag
-                html += '</svg>';
+                html += circles + '</g></svg>';
 
                 // create info
                 total = 0;
