@@ -22,7 +22,7 @@ var charts = {
 (function () {
 
     'use strict';
-    /*globals document, selector, events, ajax */
+    /*globals window, document, selector, events, ajax */
 
     var loadCharts;
 
@@ -45,7 +45,7 @@ var charts = {
         // chart loader
         loadCharts = function () {
 
-            var i, j, chart, parts, data, x, y, yMax, yMaxDiff, link, size, rows, rowsHeight, posX, posY, html, circles, total, name;
+            var i, j, chart, parts, data, x, y, yMax, yMaxDiff, link, size, rows, rowsHeight, posX, posY, html, circles, total, name, svg, info;
 
             chart = selector('.charts');
             if (chart.length === 0) { return; }
@@ -276,8 +276,14 @@ var charts = {
 
                 html += '</ul>';
 
+                // remove tags
+                svg = selector('svg', this)[0];
+                if (svg !== undefined) { this.removeChild(svg); }
+
+                info = selector('infoinfo', this)[0];
+                if (info !== undefined) { this.removeChild(info); }
+
                 // parse html
-                this.innerHTML = '';
                 this.insertAdjacentHTML('beforeEnd', html);
 
                 // set height of chart
@@ -297,6 +303,7 @@ var charts = {
 
     // Loaders
     events.onload(charts.Start);
+    events.on(window, 'resize', loadCharts);
 
     // ajax callback loader: requires Ajax JS
     events.on(document, 'ajaxCallbacks', function () {

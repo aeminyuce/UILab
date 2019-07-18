@@ -7,6 +7,7 @@
 .charts ul.part { display: none; }
 
 .charts svg { width: 100%; }
+.charts svg g { display: block; }
 .charts svg path { stroke-linecap: round; }
 
 .charts svg line { shape-rendering: crispEdges; }
