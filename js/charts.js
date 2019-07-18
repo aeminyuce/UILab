@@ -40,21 +40,6 @@ var charts = {
 
     }
 
-    // convert datas as unique and desc
-    function makeUniqueDesc(data) {
-
-        var arr = data.filter(function (item, pos) {
-            return data.indexOf(item) === pos;
-        });
-
-        arr = arr.sort(function (a, b) {
-            return b - a;
-        });
-
-        return arr;
-
-    }
-
     charts.Start = function () {
 
         // chart loader
@@ -114,7 +99,31 @@ var charts = {
 
                 // get maximum value of all y datas
                 yMax = yMax.toString().split(',');
-                yMax = makeUniqueDesc(yMax)[0]; // convert data as unique and desc
+
+                // convert arrays as unique and desc
+                yUnique = yMax.filter(function (item, pos) {
+                    return yMax.indexOf(item) === pos;
+                });
+
+                yUnique = yMax.sort(function (a, b) {
+                    return b - a;
+                });
+
+                yMax = parseInt(yUnique, 10);
+                yUniqueLength = yUnique.length;
+
+                if (yUnique[1] < 5) {
+
+                    yMax += 5;
+                    yUniqueLength -= 1;
+
+                } else {
+                    yMax += 1;
+                }
+
+                for (i = 1; i < yUniqueLength; i += 1) {
+                    yMax += 0;
+                }
 
                 // calculate height of chart
                 size = this.getAttribute('data-size');
@@ -170,23 +179,6 @@ var charts = {
 
                     y = data[j].y;
 
-                    // get unique y parameters for this part
-                    yUnique = makeUniqueDesc(y); // convert data as unique and desc
-                    yUniqueLength = yUnique.length;
-
-                    if (yUnique[1] < 5) {
-
-                        yMax += 5;
-                        yUniqueLength -= 1;
-
-                    } else {
-                        yMax = parseInt(yMax, 10) + 1;
-                    }
-
-                    for (i = 1; i < yUniqueLength; i += 1) {
-                        yMax += 0;
-                    }
-
                     // set random color for this part
                     color = randomColor(3);
 
@@ -222,7 +214,13 @@ var charts = {
                         */
 
                         // create circles
-                        circles += '<circle cx="' + ((i * posX) + charts.left + (charts.gridstroke / 2)) + '" cy="' + (posY + (charts.gridstroke / 2)) + '" r="' + charts.circlesize + '" stroke="' + color + '" stroke-width="' + charts.linestroke + '" onclick="location.href = \'' + data[j].links[i] + '\';" data-tooltip title="' + y[i] + '"/>';
+                        circles += '<circle cx="' + ((i * posX) + charts.left + (charts.gridstroke / 2)) + '" cy="' + (posY + (charts.gridstroke / 2)) + '" r="' + charts.circlesize + '" stroke="' + color + '" stroke-width="' + charts.linestroke + '" data-tooltip title="' + y[i] + '"';
+
+                        if (data[j].links[i] !== '') { // check links
+                            circles += 'onclick="location.href = \'' + data[j].links[i] + '\';"';
+                        }
+
+                        circles += '/>';
 
                     }
 
