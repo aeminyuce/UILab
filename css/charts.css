@@ -9,15 +9,16 @@
 .charts svg { width: 100%; }
 .charts svg path { stroke-linecap: round; }
 
+.charts svg line { shape-rendering: crispEdges; }
+.charts svg line.root { stroke: #ccc; }
+.charts svg line:not(.root) { stroke: rgba(0,0,0,.075); stroke-width: 1; }
+
 .charts svg circle { fill: #fff; cursor: pointer; }
 html:not(.mobile) .charts svg circle:hover { r: 8; }
 
-.charts svg .grids { stroke: rgba(0,0,0,.15); }
-.charts svg .grids line { shape-rendering: crispEdges; }
-
 .charts svg text { fill: #777; font-size: 10px; }
-.charts svg .x-labels { text-anchor: middle; }
-.charts svg .y-labels { text-anchor: end; }
+.charts svg .x { text-anchor: middle; }
+.charts svg .y { text-anchor: end; }
 
 .charts .info { text-align: center; fill: black; display: block; }
 .charts .info li { color: #777; margin: 0 5px 2px 5px; display: inline-block; }

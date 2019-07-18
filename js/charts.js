@@ -13,7 +13,7 @@ var charts = {
     bottom: 20, // set bottom space (px)
     left: 50, // set left space (px)
 
-    gridstroke: 1, // set grid stroke width
+    gridstroke: 2, // set grid stroke width
     linestroke: 2, // set line chart stroke width
     circlesize: 5 // set circle size
 
@@ -152,24 +152,43 @@ var charts = {
 
                 // create grids
                 posX = (data.width - (charts.right + charts.left)) / (x.length - 1);
-
-                html += '<g class="grids" stroke-width="' + charts.gridstroke + '">' +
-                        '<line x1="' + (charts.left - (charts.gridstroke / 2)) + '" x2="' + data.width + '" y1="' + (data.height - charts.bottom) + '" y2="' + (data.height - charts.bottom) + '"></line>' + // x grid
-                        '<line x1="' + charts.left + '" x2="' + charts.left + '" y1="' + charts.gridstroke + '" y2="' + (data.height - (charts.bottom + (charts.gridstroke / 2))) + '"></line>' + // y grid
-                    '</g>';
-
-                // create labels
-                html += '<g class="x-labels">';
+                html += '<g class="x">';
 
                 for (i = 0; i < x.length; i += 1) {
-                    html += '<text x="' + ((i * posX) + charts.left) + '" y="' + (data.height - charts.bottom + 20) + '">' + x[i] + '</text>';
+
+                    html += '<text x="' + (charts.left + (i * posX)) + '" y="' + (data.height - charts.bottom + 20) + '">' + x[i] + '</text>' +
+                            '<line x1="' + (charts.left + (i * posX)) + '" x2="' + (charts.left + (i * posX)) + '" y1="0" ';
+
+                    if (i === 0) { // root of x grid
+                        html += 'y2="' + (data.height - (charts.bottom + (charts.gridstroke / 2))) + '" class="root" stroke-width="' + charts.gridstroke + '"';
+
+                    } else {
+                        html += 'y2="' + (data.height - charts.bottom) + '"';
+                    }
+
+                    html += '></line>';
+
                 }
 
                 html += '</g>' +
-                    '<g class="y-labels">';
+                    '<g class="y">';
 
                 for (i = 0; i <= rows; i += 1) {
-                    html += '<text x="' + (charts.left - 10) + '" y="' + parseInt((i * (data.height - (charts.top + charts.bottom + 2)) / rows) + (charts.top + 6), 10) + '">' + parseInt(yMax / rows, 10) * (rows - i) + '</text>';
+
+                    posY = parseInt((i * (data.height - (charts.top + charts.bottom)) / rows) + charts.top, 10);
+
+                    html += '<text x="' + (charts.left - 10) + '" y="' + (posY + 4) + '">' + parseInt(yMax / rows, 10) * (rows - i) + '</text>' +
+                            '<line x2="' + data.width + '" y1="' + posY + '" y2="' + posY + '" ';
+
+                    if (i >= rows) { // root of y grid
+                        html += 'x1="' + (charts.left - (charts.gridstroke / 2)) + '" class="root" stroke-width="' + charts.gridstroke + '"';
+
+                    } else {
+                        html += 'x1="' + (charts.left + (charts.gridstroke / 2)) + '"';
+                    }
+
+                    html += '></line>';
+
                 }
 
                 html += '</g>';
@@ -214,7 +233,7 @@ var charts = {
                         */
 
                         // create circles
-                        circles += '<circle cx="' + ((i * posX) + charts.left + (charts.gridstroke / 2)) + '" cy="' + (posY + (charts.gridstroke / 2)) + '" r="' + charts.circlesize + '" stroke="' + color + '" stroke-width="' + charts.linestroke + '" data-tooltip title="' + y[i] + '"';
+                        circles += '<circle cx="' + ((i * posX) + charts.left) + '" cy="' + posY + '" r="' + charts.circlesize + '" stroke="' + color + '" stroke-width="' + charts.linestroke + '" data-tooltip title="' + y[i] + '"';
 
                         if (data[j].links[i] !== '') { // check links
                             circles += 'onclick="location.href = \'' + data[j].links[i] + '\';"';
