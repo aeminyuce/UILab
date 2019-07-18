@@ -45,7 +45,7 @@ var charts = {
         // chart loader
         loadCharts = function () {
 
-            var i, j, chart, parts, data, x, y, yMax, yMaxDiff, link, size, rows, rowsHeight, posX, posY, html, color, circles, total, name;
+            var i, j, chart, parts, data, x, y, yMax, yMaxDiff, link, size, rows, rowsHeight, posX, posY, html, circles, total, name;
 
             chart = selector('.charts');
             if (chart.length === 0) { return; }
@@ -58,6 +58,7 @@ var charts = {
 
                 data = [];
                 data.name = [];
+                data.color = [];
 
                 // calculate height of chart
                 size = this.getAttribute('data-size');
@@ -189,7 +190,7 @@ var charts = {
                     y = data[j].y;
 
                     // set random color for this part
-                    color = randomColor(3);
+                    data.color.push(randomColor(3));
 
                     // create paths and circles
                     html += '<path d="';
@@ -224,7 +225,7 @@ var charts = {
                         */
 
                         // create circles
-                        circles += '<circle cx="' + ((i * posX) + charts.left) + '" cy="' + posY + '" r="' + charts.circlesize + '" stroke="' + color + '" stroke-width="' + charts.linestroke + '" data-tooltip title="' + y[i] + '"';
+                        circles += '<circle cx="' + ((i * posX) + charts.left) + '" cy="' + posY + '" r="' + charts.circlesize + '" stroke="' + data.color[j] + '" stroke-width="' + charts.linestroke + '" data-tooltip title="' + y[i] + '"';
 
                         if (data[j].links[i] !== '') { // check links
                             circles += ' onclick="location.href = \'' + data[j].links[i] + '\';"';
@@ -234,7 +235,7 @@ var charts = {
 
                     }
 
-                    html += '" fill="transparent" stroke="' + color + '" stroke-width="' + charts.linestroke + '" />';
+                    html += '" fill="transparent" stroke="' + data.color[j] + '" stroke-width="' + charts.linestroke + '" />';
 
                     // get data names
                     name = this.getAttribute('data-name');
@@ -260,8 +261,7 @@ var charts = {
                     for (j = 0; j < data[i].y.length; j += 1) {
                         total += parseInt(data[i].y[j], 10);
                     }
-
-                    html += '<li><span style="background: ' + color + '"></span>';
+                    html += '<li><span style="background: ' + data.color[i] + '"></span>';
 
                     if (data.name[i] === '') {
                         html += '<b>' + total;
