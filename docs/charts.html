@@ -74,11 +74,11 @@
 
                     <h4 class="lg-align-center">Line Charts Examples</h4>
 
-                        <div class="row row-lg-padding-ver">
+                        <div class="row row-lg-padding-ver row-equal-height">
                             <div class="col-6">
-                                <h5 class="bold align-center">Chart of Week Days</h5>
-                                <div class="line-charts ease-line-charts" data-x="Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday">
-                                    <ul class="part">
+                                <h5 class="bold align-center">Line Chart</h5>
+                                <div class="line-charts ease-line-charts" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                                    <ul class="line">
                                         <li data-y="84"></li>
                                         <li data-y="56"></li>
                                         <li data-y="112"></li>
@@ -90,9 +90,9 @@
                                 </div>
                             </div>
                             <div class="col-6">
-                                <h5 class="bold align-center">Chart of Last Two Weeks</h5>
-                                <div class="line-charts ease-line-charts" data-size="10,25" data-x="Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday">
-                                    <ul class="part" data-name="1st Week">
+                                <h5 class="bold align-center">Multiple Line Charts</h5>
+                                <div class="line-charts ease-line-charts" data-size="10,25" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                                    <ul class="line" data-name="1st">
                                         <li data-y="55" data-link="#1"></li>
                                         <li data-y="70" data-link="#2"></li>
                                         <li data-y="92" data-link="#3"></li>
@@ -101,7 +101,7 @@
                                         <li data-y="98" data-link="#6"></li>
                                         <li data-y="116" data-link="#7"></li>
                                     </ul>
-                                    <ul class="part" data-name="2nd Week">
+                                    <ul class="line" data-name="2nd">
                                         <li data-y="120" data-link="#2"></li>
                                         <li data-y="20" data-link="#3"></li>
                                         <li data-y="159" data-link="#1"></li>
@@ -112,44 +112,35 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <h5 class="bold align-center">Chart of Weeks</h5>
-                                <div class="line-charts ease-line-charts" data-size="8,40" data-x="Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday">
-                                    <ul class="part" data-name="1st Week">
-                                        <li data-y="2104" data-link="#1"></li>
-                                        <li data-y="1896" data-link="#2"></li>
-                                        <li data-y="1713" data-link="#3"></li>
-                                        <li data-y="2016" data-link="#4"></li>
-                                        <li data-y="995" data-link="#5"></li>
-                                        <li data-y="726" data-link="#6"></li>
-                                        <li data-y="1519" data-link="#7"></li>
+                            <div class="col-6">
+                                <h5 class="bold align-center">Curved Line Charts</h5>
+                                <div class="line-charts ease-line-charts" data-size="10,25" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                                    <ul class="line" data-name="1st" data-type="curved">
+                                        <li data-y="55" data-link="#1"></li>
+                                        <li data-y="70" data-link="#2"></li>
+                                        <li data-y="92" data-link="#3"></li>
+                                        <li data-y="55" data-link="#4"></li>
+                                        <li data-y="89" data-link="#5"></li>
+                                        <li data-y="98" data-link="#6"></li>
+                                        <li data-y="116" data-link="#7"></li>
                                     </ul>
-                                    <ul class="part" data-name="2nd Week">
-                                        <li data-y="1712" data-link="#1"></li>
-                                        <li data-y="0" data-link="#2"></li>
-                                        <li data-y="2013" data-link="#3"></li>
-                                        <li data-y="2685" data-link="#4"></li>
-                                        <li data-y="512" data-link="#5"></li>
-                                        <li data-y="3125" data-link="#6"></li>
-                                        <li data-y="2171" data-link="#7"></li>
+                                    <ul class="line" data-name="2nd" data-type="curved">
+                                        <li data-y="120" data-link="#2"></li>
+                                        <li data-y="20" data-link="#3"></li>
+                                        <li data-y="159" data-link="#1"></li>
+                                        <li data-y="120" data-link="#4"></li>
+                                        <li data-y="60" data-link="#5"></li>
+                                        <li data-y="0" data-link="#6"></li>
+                                        <li data-y="20" data-link="#7"></li>
                                     </ul>
-                                    <ul class="part" data-name="3rd Week">
-                                        <li data-y="909" data-link="#1"></li>
-                                        <li data-y="340" data-link="#2"></li>
-                                        <li data-y="723" data-link="#3"></li>
-                                        <li data-y="1315" data-link="#4"></li>
-                                        <li data-y="1417" data-link="#5"></li>
-                                        <li data-y="1839" data-link="#6"></li>
-                                        <li data-y="2440" data-link="#7"></li>
-                                    </ul>
-                                    <ul class="part" data-name="4th Week">
-                                        <li data-y="1962" data-link="#1"></li>
-                                        <li data-y="996" data-link="#2"></li>
-                                        <li data-y="1003" data-link="#3"></li>
-                                        <li data-y="3171" data-link="#4"></li>
-                                        <li data-y="1863" data-link="#5"></li>
-                                        <li data-y="3620" data-link="#6"></li>
-                                        <li data-y="1056" data-link="#7"></li>
+                                    <ul class="line" data-name="3rd" data-type="curved">
+                                        <li data-y="32" data-link="#2"></li>
+                                        <li data-y="52" data-link="#3"></li>
+                                        <li data-y="117" data-link="#1"></li>
+                                        <li data-y="85" data-link="#4"></li>
+                                        <li data-y="137" data-link="#5"></li>
+                                        <li data-y="144" data-link="#6"></li>
+                                        <li data-y="59" data-link="#7"></li>
                                     </ul>
                                 </div>
                             </div>
