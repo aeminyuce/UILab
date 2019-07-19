@@ -100,8 +100,12 @@
                                     fileSize = fileSize / 1024;
 
                                     fileSize = fileSize.toFixed(2);
-
                                     selector('.generate-size', holder)[0].innerHTML = fileSize + ' kb';
+
+                                    // empty variables
+                                    setTimeout(function () {
+                                        loadingButton.toggle(that); // hide loading
+                                    }, 150);
 
                                     pullResults = '';
 
@@ -115,6 +119,7 @@
 
                 };
 
+                loadingButton.toggle(that); // show loading
                 countFnc();
 
             }
