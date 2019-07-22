@@ -13,7 +13,7 @@
 .line-charts svg g { display: block; }
 
 .line-charts svg path { stroke-linecap: round; stroke-dashoffset: 1000; stroke-dasharray: 1000; }
-.line-charts.loaded svg path { animation: line-draw 3s .6s ease-in forwards; }
+.line-charts.loaded svg path { animation: line-draw 2s .6s ease-in forwards; }
 
 .line-charts svg line { shape-rendering: crispEdges; }
 .line-charts svg line.root { stroke: #ccc; }
