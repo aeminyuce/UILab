@@ -1,5 +1,8 @@
 /* line charts */
-.ease-line-charts circle { transition-property: stroke-width; transition-duration: .15s; }
+@keyframes line-draw { to { stroke-dashoffset: 0; } }
+@keyframes line-circles { to { opacity: 1; } }
+
+.ease-line-charts circle { transition-property: stroke-width, opacity; transition-duration: .15s; }
 .no-transitions-all .ease-line-charts circle { transition-property: none !important; }
 
 .line-charts { -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
@@ -8,13 +11,16 @@
 
 .line-charts svg { width: 100%; }
 .line-charts svg g { display: block; }
-.line-charts svg path { stroke-linecap: round; }
+
+.line-charts svg path { stroke-linecap: round; stroke-dashoffset: 1000; stroke-dasharray: 1000; }
+.line-charts.loaded svg path { animation: line-draw 3s .6s ease-in forwards; }
 
 .line-charts svg line { shape-rendering: crispEdges; }
 .line-charts svg line.root { stroke: #ccc; }
 .line-charts svg line:not(.root) { stroke: rgba(0,0,0,.1); stroke-width: 1; }
 
-.line-charts svg circle { fill: #fff; }
+.line-charts svg circle { fill: #fff; opacity: 0; }
+.line-charts.loaded svg circle { animation: line-circles .6s forwards; }
 .line-charts svg circle[onclick] { cursor: pointer; }
 html:not(.mobile) .line-charts svg circle:hover { stroke-width: 4; }
 
