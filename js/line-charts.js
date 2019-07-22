@@ -43,7 +43,7 @@ var lineCharts = {
     // load charts
     lineCharts.Start = function () {
 
-        var i, j, charts, lines, data, x, y, yMax, yMaxDiff, link, size, rows, rowsHeight, posX, posY, html, type, circles, total, name;
+        var i, j, charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, circles, total, name;
 
         loadCharts = function (that) {
 
@@ -62,6 +62,7 @@ var lineCharts = {
                 if (lines.length === 0) { return; }
 
                 data = [];
+
                 data.name = [];
                 data.color = [];
                 data.backup = [];
@@ -119,7 +120,7 @@ var lineCharts = {
                     });
 
                     if (data.x.length === data[i].y.length) {
-                        yMax.push(data[i].y); // push y datas to calculate the maximum value of all datas
+                        yMax.push(data[i].y); // push y datas to calculate the max value of all datas
 
                     } else {
                         data.pass = true; // x and y datas are not equal
@@ -129,7 +130,7 @@ var lineCharts = {
 
                 if (data.pass) { return; }
 
-                // get maximum value of all y datas
+                // get min and max values of all y datas
                 yMax = yMax.toString().split(',');
 
                 yMax = yMax.filter(function (item, pos) { // convert array as unique
@@ -140,24 +141,23 @@ var lineCharts = {
                     return b - a;
                 });
 
-                yMax = parseInt(yMax, 10);
-                yMaxDiff = yMax;
-
-                yMax = Math.ceil(yMax / rows) * rows; // convert yMax to divide with rows
-                yMaxDiff = yMax - yMaxDiff; // difference with divisible yMax
+                yMin = parseInt(yMax[yMax.length - 1], 10);
+                yMax = Math.ceil((parseInt(yMax[0], 10) - yMin) / rows) * rows + yMin; // convert yMax to divide with rows
 
                 // start html
                 html = '<svg>';
                 circles = '';
 
                 // create grids
-                posX = (data.width - (lineCharts.right + lineCharts.left)) / (x.length - 1);
+                col = (data.width - (lineCharts.right + lineCharts.left)) / (x.length - 1);
                 html += '<g class="x">';
 
                 for (i = 0; i < x.length; i += 1) {
 
-                    html += '<text x="' + (lineCharts.left + (i * posX)) + '" y="' + (data.height - lineCharts.bottom + 20) + '">' + x[i] + '</text>' +
-                            '<line x1="' + (lineCharts.left + (i * posX)) + '" x2="' + (lineCharts.left + (i * posX)) + '" y1="' + lineCharts.top + '" ';
+                    posX = (i * col) + lineCharts.left;
+
+                    html += '<text x="' + posX + '" y="' + (data.height - lineCharts.bottom + 20) + '">' + x[i] + '</text>' +
+                            '<line x1="' + posX + '" x2="' + posX + '" y1="' + lineCharts.top + '" ';
 
                     if (i === 0) { // root of x grid
                         html += 'y2="' + Math.ceil(data.height - (lineCharts.bottom + (lineCharts.gridStroke / 2))) + '" class="root" stroke-width="' + lineCharts.gridStroke + '"';
@@ -177,7 +177,7 @@ var lineCharts = {
 
                     posY = parseInt((i * (data.height - (lineCharts.top + lineCharts.bottom)) / rows) + lineCharts.top, 10);
 
-                    html += '<text x="' + (lineCharts.left - 10) + '" y="' + (posY + 4) + '">' + parseInt(yMax / rows, 10) * (rows - i) + '</text>' +
+                    html += '<text x="' + (lineCharts.left - 10) + '" y="' + (posY + 4) + '">' + (parseInt((yMax - yMin) / rows, 10) * (rows - i) + yMin) + '</text>' +
                             '<line x2="' + (data.width - lineCharts.right + 1) + '" y1="' + posY + '" y2="' + posY + '" ';
 
                     if (i >= rows) { // root of y grid
@@ -211,11 +211,8 @@ var lineCharts = {
 
                     for (i = 0; i < y.length; i += 1) {
 
-                        posY = data.height - (((data.height - (lineCharts.top + lineCharts.bottom)) * y[i]) / yMax) - lineCharts.bottom;
-
-                        if (parseInt(y[i], 10) >= yMax - yMaxDiff) { // apply difference to maximum numbers
-                            posY += yMaxDiff;
-                        }
+                        posX = (i * col) + lineCharts.left;
+                        posY = data.height - (data.height + (((data.height - (lineCharts.top + lineCharts.bottom)) * (y[i] - yMax)) / (yMax - yMin)) - lineCharts.top);
 
                         // get line type
                         type = this.getAttribute('data-type');
@@ -228,34 +225,34 @@ var lineCharts = {
                         if (type === 'default') { // default
 
                             if (i === 0) { // start point
-                                html += 'M' + ((i * posX) + lineCharts.left) + ' ' + posY;
+                                html += 'M' + posX + ' ' + posY;
 
                             } else { // other points
-                                html += ' L ' + ((i * posX) + lineCharts.left) + ' ' + posY;
+                                html += ' L ' + posX + ' ' + posY;
                             }
 
                         } else if (type === 'curved') { // curved
 
                             if (i === 0) { // start point
-                                html += 'M' + ((i * posX) + lineCharts.left) + ' ' + posY;
+                                html += 'M' + posX + ' ' + posY;
 
                             } else if (i === 1) { // start curves
 
-                                html += ' C ' + i * posX + ' ' + posY + ',' +
-                                    ' ' + i * posX + ' ' + posY + ',' +
-                                    ' ' + ((i * posX) + lineCharts.left) + ' ' + posY;
+                                html += ' C ' + i * col + ' ' + posY + ',' +
+                                    ' ' + i * col + ' ' + posY + ',' +
+                                    ' ' + posX + ' ' + posY;
 
                             } else { // other curves
 
-                                html += ' S ' + i * posX + ' ' + posY + ',' +
-                                    ' ' + ((i * posX) + lineCharts.left) + ' ' + posY;
+                                html += ' S ' + i * col + ' ' + posY + ',' +
+                                    ' ' + posX + ' ' + posY;
 
                             }
 
                         }
 
                         // create circles
-                        circles += '<circle cx="' + ((i * posX) + lineCharts.left) + '" cy="' + posY + '" r="' + lineCharts.circleSize + '" stroke="' + data.color[j] + '" stroke-width="' + lineCharts.lineStroke + '" data-tooltip title="' + y[i] + '"';
+                        circles += '<circle cx="' + posX + '" cy="' + posY + '" r="' + lineCharts.circleSize + '" stroke="' + data.color[j] + '" stroke-width="' + lineCharts.lineStroke + '" data-tooltip title="' + y[i] + '"';
 
                         if (data[j].links[i] !== '') { // check links
                             circles += ' onclick="location.href = \'' + data[j].links[i] + '\';"';
