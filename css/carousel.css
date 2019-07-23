@@ -1,5 +1,6 @@
 /* carousel */
 @keyframes carousel-img-loader { 0% { opacity: .3; } 50% { opacity: 1; } 100% { opacity: .3; } }
+@keyframes carousel-gallery-loader { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
 .carousel-touchmove body { height: 100%; overflow: hidden; }
 
@@ -40,3 +41,27 @@
 
 .carousel-animate.bring-right:not(.show) { transform: translateX(15px); }
 .carousel-animate.bring-left:not(.show) { transform: translateX(-15px); }
+
+.carousel-gallery .detail { min-height: 210px; position: relative; }
+.carousel-gallery .detail img { display: block; position: relative; z-index: 2; }
+.carousel-gallery .detail img,.carousel-gallery .detail.detail-holder img { width: 100%; display: inline-block; position: relative; z-index: 1; cursor: pointer; }
+html:not(.mobile) .carousel-gallery .detail:not(.detail-loader) img:hover { opacity: .8; }
+.mobile .carousel-gallery .detail img { opacity: .8; }
+
+.carousel-gallery .detail .icon { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+.carousel-gallery .detail .icon-loader { margin: -20px 0 0 -20px; }
+
+.carousel-gallery .detail.detail-loader { background-color: rgba(0,0,0,.075); }
+.carousel-gallery .detail.detail-loader img { opacity: 0; }
+.carousel-gallery .detail.detail-loader .icon-zoom { display: none; }
+.carousel-gallery .detail.detail-loader .icon-loader { opacity: .45; animation: carousel-gallery-loader 3s linear infinite; }
+.carousel-gallery .detail:not(.detail-loader) .icon-loader { display: none; }
+
+.carousel-gallery .thumbs { margin: 15px -2px; }
+.carousel-gallery .thumbs:before,.carousel-gallery .thumbs:after { content: ""; display: table; }
+.carousel-gallery .thumbs:after { clear: both; }
+.carousel-gallery .thumbs .img-holder { width: 20%; padding: 2px; float: left; }
+.carousel-gallery .thumbs .img-holder img { width: 100%; height: auto; }
+.carousel-gallery .thumbs .img { border: solid 2px #fff; cursor: pointer; }
+.carousel-gallery .thumbs .img.selected { border-color: #ffa600; }
+html:not(.mobile) .carousel-gallery .thumbs .img:not(.selected):not(:hover) { opacity: .65; }
