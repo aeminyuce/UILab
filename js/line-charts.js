@@ -262,7 +262,7 @@ var lineCharts = {
                         }
 
                         // create circles
-                        circles += '<circle cx="' + posX + '" cy="' + posY + '" r="' + lineCharts.circleSize + '" stroke="' + data.color[j] + '" stroke-width="' + lineCharts.lineStroke + '" data-tooltip title="' + y[i] + '"';
+                        circles += '<circle cx="' + posX + '" cy="' + posY + '" r="' + lineCharts.circleSize + '" fill="' + data.color[j] + '" stroke="' + data.color[j] + '" stroke-width="0" data-tooltip title="' + y[i] + '"';
 
                         if (lineCharts.lineStroke === 0) {
                             circles += ' fill="' + data.color[j] + '"';
