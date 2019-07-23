@@ -62,6 +62,6 @@ html:not(.mobile) .carousel-gallery .detail:not(.detail-loader) img:hover { opac
 .carousel-gallery .thumbs:after { clear: both; }
 .carousel-gallery .thumbs .img-holder { width: 20%; padding: 2px; float: left; }
 .carousel-gallery .thumbs .img-holder img { width: 100%; height: auto; }
-.carousel-gallery .thumbs .img { border: solid 2px #fff; cursor: pointer; }
+.carousel-gallery .thumbs .img { border: solid 2px transparent; cursor: pointer; }
 .carousel-gallery .thumbs .img.selected { border-color: #ffa600; }
 html:not(.mobile) .carousel-gallery .thumbs .img:not(.selected):not(:hover) { opacity: .65; }
