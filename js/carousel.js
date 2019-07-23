@@ -87,13 +87,14 @@ var carousel = {
                 loadingImgs[i][l] = new Image();
                 loadingImgs[i][l].src = loadedImgs[i][l].getAttribute('data-src');
 
-                loadedImgs[i][l].removeAttribute('data-src');
                 loadingImgs[i][l].addEventListener('load', function () {
 
                     if (loadingImgs[i][l] === undefined) { return; }
 
                     loadedImgs[i][l].src = loadingImgs[i][l].src;
                     events.addClass(loadedImgs[i][l], 'loaded');
+
+                    loadedImgs[i][l].removeAttribute('data-src');
 
                     loadingImgs[i][l] = [];
                     loadedImgs[i][l] = [];
