@@ -49,15 +49,6 @@
     <!-- font icons CSS -->
     <link rel="stylesheet" href="icons/font-icons/outline/font-icons.css" />
 
-    <!-- custom CSS -->
-    <style>
-        body { background-color: #e6ddd8; }
-
-        @media (min-width: 768px) {
-            body { background-image: linear-gradient(110deg, #e6ddd8 40%, #fff 40%); }
-        }
-    </style>
-
 </head>
 
 <body>
@@ -78,7 +69,9 @@
             <div class="row">
                 <div class="col-12 padding-30-v">
 
+                    <h4>Carousel Examples</h4>
                     <div class="padding-30-b">
+
                         <div class="carousel" data-col="1" data-slide="4000">
                             <div class="carousel-slider ease-2nd-layout ease-layout ease-slow2x ease-in-out">
 
@@ -286,6 +279,70 @@
                                 <span class="dots dark"></span>
                                 <button class="carousel-next btn btn-lg btn-invisible btn-square rounded"><i class="icon icon-lg icon-angle-right"></i></button>
                             </div>
+                        </div>
+                    </div>
+
+                    <h5 class="bold">Carousel Gallery Example</h5>
+                    <div class="padding-30-b">
+                        <div class="carousel-gallery">
+                            <div class="detail">
+                                <img src="images/house_01.jpg" class="rounded photo-gallery-call cursor-pointer img-responsive ease-layout" data-target="#detail-carousel" data-count="0" alt="">
+                                <i class="icon-zoom icon icon-xxl icon-search-plus"></i>
+                                <i class="icon-loader icon icon-xxl icon-loader"></i>
+                            </div>
+                            <div id="detail-carousel" class="thumbs carousel" data-col="6" data-col-mobile="3">
+                                <div class="carousel-slider ease-2nd-layout ease-layout ease-slow photo-gallery-passive">
+                                    <div class="content">
+                                        <img class="img rounded selected" src="images/blank.gif" data-src="images/house_01.jpg" data-href="images/house_01.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_02.jpg" data-href="images/house_02.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_03.jpg" data-href="images/house_03.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_04.jpg" data-href="images/house_04.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_05.jpg" data-href="images/house_05.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_01.jpg" data-href="images/house_01.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_02.jpg" data-href="images/house_02.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_03.jpg" data-href="images/house_03.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_04.jpg" data-href="images/house_04.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_05.jpg" data-href="images/house_05.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="carousel-nav align-center ease-1st-bg">
+                                    <button class="carousel-prev btn btn-lg btn-invisible btn-square rounded"><i class="icon icon-lg icon-angle-left"></i></button>
+                                    <span class="dots dark"></span>
+                                    <button class="carousel-next btn btn-lg btn-invisible btn-square rounded"><i class="icon icon-lg icon-angle-right"></i></button>
+                                </div>
+                            </div>
+                            <!-- if you don't want to use carousel:
+                            <div id="detail-carousel" class="thumbs ease-1st-layout">
+                                <span class="img-holder"><img class="img rounded selected" src="images/house_01.jpg" data-href="images/house_01.jpg" alt=""></span>
+                                <span class="img-holder"><img class="img rounded" src="images/house_02.jpg" data-href="images/house_02.jpg" alt=""></span>
+                                <span class="img-holder"><img class="img rounded" src="images/house_03.jpg" data-href="images/house_03.jpg" alt=""></span>
+                                <span class="img-holder"><img class="img rounded" src="images/house_04.jpg" data-href="images/house_04.jpg" alt=""></span>
+                                <span class="img-holder"><img class="img rounded" src="images/house_05.jpg" data-href="images/house_05.jpg" alt=""></span>
+                                <span class="img-holder"><img class="img rounded" src="images/house_01.jpg" data-href="images/house_01.jpg" alt=""></span>
+                                <span class="img-holder"><img class="img rounded" src="images/house_02.jpg" data-href="images/house_02.jpg" alt=""></span>
+                                <span class="img-holder"><img class="img rounded" src="images/house_03.jpg" data-href="images/house_03.jpg" alt=""></span>
+                                <span class="img-holder"><img class="img rounded" src="images/house_04.jpg" data-href="images/house_04.jpg" alt=""></span>
+                                <span class="img-holder"><img class="img rounded" src="images/house_05.jpg" data-href="images/house_05.jpg" alt=""></span>
+                            </div>
+                            -->
                         </div>
                     </div>
 
