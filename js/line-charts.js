@@ -45,7 +45,7 @@ var lineCharts = {
     // load charts
     lineCharts.Start = function () {
 
-        var i, j, charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, circles, total, name;
+        var i, j, charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, paths, circles, total, name;
 
         loadCharts = function (that, resizer) {
 
@@ -153,7 +153,6 @@ var lineCharts = {
 
                 // start html
                 html = '<svg>';
-                circles = '';
 
                 // create grids
                 col = (data.width - (lineCharts.right + lineCharts.left)) / (x.length - 1);
@@ -205,8 +204,12 @@ var lineCharts = {
                 html += '</g><g>';
 
                 // create svg contents
+                circles = '';
+                pathStart = [];
+
                 events.each(lines, function (j) {
 
+                    paths = '';
                     y = data[j].y;
 
                     // set color
@@ -218,8 +221,6 @@ var lineCharts = {
                     }
 
                     // create paths and circles
-                    html += '<path d="';
-
                     for (i = 0; i < y.length; i += 1) {
 
                         posX = (i * col) + lineCharts.left;
@@ -227,37 +228,35 @@ var lineCharts = {
 
                         // get line type
                         type = this.getAttribute('data-type');
-
-                        if (type === null || type === '') {
-                            type = 'default';
-                        }
+                        if (type === null) { type = ''; }
 
                         // create lines
-                        if (type === 'default') { // default
+                        if (i === 0) { // start point
 
-                            if (i === 0) { // start point
-                                html += 'M' + posX + ' ' + posY;
+                            pathStart.x = posX;
+                            pathStart.y = posY;
 
-                            } else { // other points
-                                html += ' L ' + posX + ' ' + posY;
-                            }
+                        }
 
-                        } else if (type === 'curved') { // curved
+                        if (type.indexOf('curved') > -1) { // curved
 
-                            if (i === 0) { // start point
-                                html += 'M' + posX + ' ' + posY;
+                            if (i === 1) { // start curves
 
-                            } else if (i === 1) { // start curves
-
-                                html += ' C ' + i * col + ' ' + posY + ',' +
+                                paths += ' C ' + i * col + ' ' + posY + ',' +
                                     ' ' + i * col + ' ' + posY + ',' +
                                     ' ' + posX + ' ' + posY;
 
-                            } else { // other curves
+                            } else if (i > 0) { // other curves
 
-                                html += ' S ' + i * col + ' ' + posY + ',' +
+                                paths += ' S ' + i * col + ' ' + posY + ',' +
                                     ' ' + posX + ' ' + posY;
 
+                            }
+
+                        } else { // default
+
+                            if (i > 0) { // other points
+                                paths += ' L ' + posX + ' ' + posY;
                             }
 
                         }
@@ -272,12 +271,25 @@ var lineCharts = {
                         if (data[j].links[i] !== '') { // check links
                             circles += ' onclick="location.href = \'' + data[j].links[i] + '\';"';
                         }
-
                         circles += '/>';
 
                     }
 
-                    html += '" stroke="' + data.color[j] + '" stroke-width="' + lineCharts.lineStroke + '" />';
+                    // create paths
+                    html += '<path d="M ' + pathStart.x + ' ' + pathStart.y +
+                        paths +
+                        '" stroke="' + data.color[j] + '" stroke-width="' + lineCharts.lineStroke + '" />';
+
+                    if (type.indexOf('filled') > -1) { // add filled paths
+
+                        html += '<path d="M ' + (pathStart.x  + (lineCharts.gridStroke / 2)) + ' ' + pathStart.y +
+                            paths +
+                            ' V ' + (data.height - lineCharts.bottom - (lineCharts.gridStroke / 2)) +
+                            ' H ' + (lineCharts.left + (lineCharts.gridStroke / 2)) + ' Z ' +
+
+                            '" stroke="0" fill="' + data.color[j] + '" stroke-width="' + lineCharts.lineStroke + '" class="filled" />';
+
+                    }
 
                     // get data names
                     name = this.getAttribute('data-name');
