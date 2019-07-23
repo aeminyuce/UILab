@@ -16,6 +16,8 @@ var lineCharts = {
     bottom: 20, // set bottom space (px)
     left: 35, // set left space (px)
 
+    showBgGrid: true, // set showing bg grid
+
     gridStroke: 1, // set grid stroke width
     lineStroke: 2, // set line chart stroke width
     circleSize: 4 // set circle size
@@ -27,8 +29,8 @@ var lineCharts = {
     'use strict';
     /*globals window, document, selector, events, ajax */
 
-    var chartsResizer,
-        loadCharts;
+    var loadCharts,
+        chartsResizer;
 
     // resize charts
     chartsResizer = function () {
@@ -36,7 +38,7 @@ var lineCharts = {
         var charts = selector('.line-charts.loaded');
         if (charts.length === 0) { return; }
 
-        loadCharts(charts);
+        loadCharts(charts, true);
 
     };
 
@@ -45,7 +47,7 @@ var lineCharts = {
 
         var i, j, charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, circles, total, name;
 
-        loadCharts = function (that) {
+        loadCharts = function (that, resizer) {
 
             if (that !== undefined) {
                 charts = that;
@@ -67,7 +69,12 @@ var lineCharts = {
                 data.color = [];
                 data.backup = [];
 
-                events.addClass(this, 'loaded');
+                if (resizer !== undefined && resizer) {
+                    events.addClass(this, 'loaded resized');
+
+                } else {
+                    events.addClass(this, 'loaded');
+                }
 
                 // calculate height of chart
                 size = this.getAttribute('data-size');
@@ -155,9 +162,11 @@ var lineCharts = {
                 for (i = 0; i < x.length; i += 1) {
 
                     posX = (i * col) + lineCharts.left;
+                    html += '<text x="' + posX + '" y="' + (data.height - lineCharts.bottom + 20) + '">' + x[i] + '</text>';
 
-                    html += '<text x="' + posX + '" y="' + (data.height - lineCharts.bottom + 20) + '">' + x[i] + '</text>' +
-                            '<line x1="' + posX + '" x2="' + posX + '" y1="' + lineCharts.top + '" ';
+                    if (i === 0 || lineCharts.showBgGrid) {
+                        html += '<line x1="' + posX + '" x2="' + posX + '" y1="' + lineCharts.top + '" ';
+                    }
 
                     if (i === 0) { // root of x grid
                         html += 'y2="' + Math.ceil(data.height - (lineCharts.bottom + (lineCharts.gridStroke / 2))) + '" class="root" stroke-width="' + lineCharts.gridStroke + '"';
@@ -176,9 +185,11 @@ var lineCharts = {
                 for (i = 0; i <= rows; i += 1) {
 
                     posY = parseInt((i * (data.height - (lineCharts.top + lineCharts.bottom)) / rows) + lineCharts.top, 10);
+                    html += '<text x="' + (lineCharts.left - 10) + '" y="' + (posY + 4) + '">' + (parseInt((yMax - yMin) / rows, 10) * (rows - i) + yMin) + '</text>';
 
-                    html += '<text x="' + (lineCharts.left - 10) + '" y="' + (posY + 4) + '">' + (parseInt((yMax - yMin) / rows, 10) * (rows - i) + yMin) + '</text>' +
-                            '<line x2="' + (data.width - lineCharts.right + 1) + '" y1="' + posY + '" y2="' + posY + '" ';
+                    if (i === rows || lineCharts.showBgGrid) {
+                        html += '<line x2="' + (data.width - lineCharts.right + 1) + '" y1="' + posY + '" y2="' + posY + '" ';
+                    }
 
                     if (i >= rows) { // root of y grid
                         html += 'x1="' + Math.ceil(lineCharts.left - (lineCharts.gridStroke / 2)) + '" class="root" stroke-width="' + lineCharts.gridStroke + '"';
@@ -254,6 +265,10 @@ var lineCharts = {
                         // create circles
                         circles += '<circle cx="' + posX + '" cy="' + posY + '" r="' + lineCharts.circleSize + '" stroke="' + data.color[j] + '" stroke-width="' + lineCharts.lineStroke + '" data-tooltip title="' + y[i] + '"';
 
+                        if (lineCharts.lineStroke === 0) {
+                            circles += ' fill="' + data.color[j] + '"';
+                        }
+
                         if (data[j].links[i] !== '') { // check links
                             circles += ' onclick="location.href = \'' + data[j].links[i] + '\';"';
                         }
@@ -262,7 +277,7 @@ var lineCharts = {
 
                     }
 
-                    html += '" fill="transparent" stroke="' + data.color[j] + '" stroke-width="' + lineCharts.lineStroke + '" />';
+                    html += '" stroke="' + data.color[j] + '" stroke-width="' + lineCharts.lineStroke + '" />';
 
                     // get data names
                     name = this.getAttribute('data-name');
