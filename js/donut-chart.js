@@ -94,7 +94,7 @@ var donutChart = {};
                                         that.style.transitionDuration = '.15s';
                                     }, 2000);
 
-                                }, 300);
+                                }, 310);
 
                             }
 
