@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="../css/progress-bar.css" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/scrollbar.css" />
+    <link rel="stylesheet" href="../css/stripes.css" />
     <link rel="stylesheet" href="../css/static-grid.css" />
     <link rel="stylesheet" href="../css/sticky-header.css" />
     <link rel="stylesheet" href="../css/transitions.css" />
@@ -65,11 +66,6 @@
     <!-- font icons CSS -->
     <link rel="stylesheet" href="icons/font-icons/outline/font-icons.css" />
 
-    <!-- custom CSS -->
-    <style>
-        body { background-color: #f9f9f9; }
-    </style>
-
 </head>
 
 <body>
@@ -86,146 +82,91 @@
 
     <!-- documentation examples -->
     <main class="container no-gutter">
-        <div class="col-static no-responsive padding-30-v padding-15-h">
+        <div class="fixed">
+            <div class="col-static no-responsive padding-30-v padding-15-h">
 
-            <div class="static-300 padding-10 hidden-md">
-                <div class="add-mobile-menu-left">
-                    <div class="padding-30 md-no-padding rounded theme-gray ui-light">
-                        <form action="#">
+                <div class="static-250 padding-10 hidden-md">
+                    <div class="add-mobile-menu-left">
 
-                            <!-- sidebar: start -->
-                            <div data-src="json/watches.json" data-val="name" class="autocomplete text text-icon text-icon-left dual-bordered rounded ease-form">
+                        <div class="portlet padding-15 rounded theme-default2 ui-x-dark">
+                            <div data-src="json/watches.json" data-val="name" class="autocomplete text text-icon text-icon-md text-icon-left dual-bordered rounded ease-form form-light">
                                 <i class="icon text-icon-left icon-sm icon-search ease-layout"></i>
-                                <input type="text" placeholder="Search by keyword." autocomplete="off">
+                                <input type="text" placeholder="Search" autocomplete="off">
                             </div>
 
-                            <h4 class="margin-30-t">Categories</h4>
-                            <ul class="list-unstyled list-spacer-15">
-                                <li><a class="dark" href="#">Men's</a></li>
-                                <li><a class="dark" href="#">Accessories</a></li>
+                            <span class="sp20"></span>
+
+                            <h5 class="margin-15-b x-light-ui">CATEGORIES</h5>
+                            <ul class="list-unstyled list-spacer-10">
+                                <li><a href="#">Headphones</a></li>
                                 <li>
-                                    <a href="#"><b>Watches</b></a>
+                                    <a href="#"><b>Over-Ear Headphones</b></a>
                                     <ul class="list-unstyled padding-15-l">
-                                        <li><a class="hoverline" href="#">Analog</a></li>
-                                        <li><a class="hoverline" href="#">Chronograph</a></li>
-                                        <li><a class="hoverline" href="#">Digital</a></li>
-                                        <li><a class="hoverline" href="#">Band Strap</a></li>
-                                        <li><a class="hoverline" href="#">Bracelet Strap</a></li>
-                                        <li><a class="hoverline" href="#">Casual</a></li>
-                                        <li><a class="hoverline" href="#">Luxury</a></li>
-                                        <li><a class="hoverline" href="#">Smart</a></li>
-                                        <li><a class="hoverline" href="#">Sport</a></li>
+                                        <li><a class="hoverline" href="#">Sony</a></li>
+                                        <li><a class="hoverline" href="#">Logitech</a></li>
+                                        <li><a class="hoverline" href="#">JBL</a></li>
+                                        <li><a class="hoverline" href="#">Beats</a></li>
+                                        <li><a class="hoverline" href="#">Pioneer</a></li>
                                     </ul>
                                 </li>
                             </ul>
+                        </div>
 
-                            <span class="sp10"></span>
-
-                            <div class="padding-15-v ver-bordered">
-                                <label class="custom">
-                                    <span class="switch-custom right rounded dual-bordered ease-form">
-                                        <input type="checkbox" checked>
-                                        <i class="ease-form-custom"></i>
-                                    </span>
-                                    <b><i class="icon x-dark icon-md margin-10-r icon-finish"></i>2-Days Delivery</b>
-                                </label>
-
-                                <span class="sp5"></span>
-
-                                <label class="custom">
-                                    <span class="switch-custom right rounded dual-bordered ease-form">
-                                        <input type="checkbox" checked>
-                                        <i class="ease-form-custom"></i>
-                                    </span>
-                                    <b><i class="icon x-dark icon-md margin-10-r icon-arrow-down"></i>Deals</b>
-                                </label>
-                            </div>
-
-                            <h4 class="margin-30-t">Brand</h4>
-                            <label class="custom block">
-                                <span class="check-custom dual-bordered rounded ease-form">
-                                    <input type="checkbox">
-                                    <i class="ease-form-custom"></i>
-                                </span>
-                                <b>AX Armani Exchange</b>
-                            </label>
-                            <label class="custom block">
-                                <span class="check-custom dual-bordered rounded ease-form">
-                                    <input type="checkbox">
-                                    <i class="ease-form-custom"></i>
-                                </span>
-                                <b>Baume Et Mercier</b>
-                            </label>
-                            <label class="custom block">
-                                <span class="check-custom dual-bordered rounded ease-form">
-                                    <input type="checkbox">
-                                    <i class="ease-form-custom"></i>
-                                </span>
-                                <b>Bertucci</b>
-                            </label>
-                            <label class="custom block">
-                                <span class="check-custom dual-bordered rounded ease-form">
+                        <div class="portlet padding-15 rounded theme-default2 ui-dark">
+                            <h5 class="margin-10-b x-light-ui">PROMOTIONS</h5>
+                            <label class="custom">
+                                <span class="switch-custom right rounded dual-bordered ease-form form-light">
                                     <input type="checkbox" checked>
-                                    <i class="ease-form-custom"></i>
+                                    <i class="ui-x-light ease-form-custom"></i>
                                 </span>
-                                <b>Seiko</b>
-                            </label>
-                            <label class="custom block">
-                                <span class="check-custom dual-bordered rounded ease-form">
-                                    <input type="checkbox" checked>
-                                    <i class="ease-form-custom"></i>
-                                </span>
-                                <b>Mavado</b>
+                                <b><i class="icon icon-md margin-10-r icon-finish"></i>Fast Delivery</b>
                             </label>
 
                             <span class="sp5"></span>
-                            <button class="btn btn-xs circle ease-btn">See All Brands</button>
 
-                            <h4 class="margin-30-t">Watch Brand Material</h4>
+                            <label class="custom">
+                                <span class="switch-custom right rounded dual-bordered ease-form form-light">
+                                    <input type="checkbox" checked>
+                                    <i class="ui-x-light ease-form-custom"></i>
+                                </span>
+                                <b><i class="icon icon-md margin-10-r icon-tag"></i>Deals</b>
+                            </label>
+                        </div>
+
+                        <div class="portlet padding-15 rounded theme-gray ui-x-light">
+
+                            <h5 class="margin-10-b x-dark">CONNECTIONS</h5>
                             <label class="custom block">
                                 <span class="check-custom dual-bordered rounded ease-form">
                                     <input type="checkbox" checked>
                                     <i class="ease-form-custom"></i>
                                 </span>
-                                <b>Nylon</b>
+                                <b>Bluetooth <span class="dark">11</span></b>
                             </label>
                             <label class="custom block">
                                 <span class="check-custom dual-bordered rounded ease-form">
                                     <input type="checkbox" checked>
                                     <i class="ease-form-custom"></i>
                                 </span>
-                                <b>Silicone</b>
-                            </label>
-                            <label class="custom block">
-                                <span class="check-custom dual-bordered rounded ease-form">
-                                    <input type="checkbox" checked>
-                                    <i class="ease-form-custom"></i>
-                                </span>
-                                <b>Ceramic</b>
+                                <b>Wired <span class="dark">9</span></b>
                             </label>
                             <label class="custom block">
                                 <span class="check-custom dual-bordered rounded ease-form">
                                     <input type="checkbox">
                                     <i class="ease-form-custom"></i>
                                 </span>
-                                <b>Gold</b>
-                            </label>
-                            <label class="custom block">
-                                <span class="check-custom dual-bordered rounded ease-form">
-                                    <input type="checkbox">
-                                    <i class="ease-form-custom"></i>
-                                </span>
-                                <b>Fabric</b>
+                                <b>Radio Channel <span class="dark">17</span></b>
                             </label>
 
                             <span class="sp5"></span>
-                            <button class="btn btn-xs circle ease-btn">See All Brands Materials</button>
+                            <button class="btn btn-xs circle ease-btn">See All</button>
+                            <span class="sp30"></span>
 
-                            <h4 class="margin-30-t">Ratings</h4>
-                            <div class="progress-bar progress-sm rounded static-200 margin-5-b">
-                                <span class="theme-yellow ui-dark" style="width: 90%;"></span>
+                            <h5 class="margin-15-b x-dark">RATINGS</h5>
+                            <div class="progress-bar progress-sm rounded margin-5-b">
+                                <span class="theme-green ui-dark stripe-light" style="width: 90%;"></span>
                             </div>
-                            <label class="custom block margin-15-b">
+                            <label class="custom block margin-10-b">
                                 <span class="radio-custom dual-bordered rounded ease-form">
                                     <input type="radio" name="ratings" checked>
                                     <i class="ease-form-custom"></i>
@@ -233,10 +174,10 @@
                                 <b>90% &amp; Up</b>
                             </label>
 
-                            <div class="progress-bar progress-sm rounded static-200 margin-5-b">
-                                <span class="theme-yellow ui-dark" style="width: 80%;"></span>
+                            <div class="progress-bar progress-sm rounded margin-5-b">
+                                <span class="theme-yellow ui-dark stripe-light" style="width: 80%;"></span>
                             </div>
-                            <label class="custom block margin-15-b">
+                            <label class="custom block margin-10-b">
                                 <span class="radio-custom dual-bordered rounded ease-form">
                                     <input type="radio" name="ratings">
                                     <i class="ease-form-custom"></i>
@@ -244,10 +185,10 @@
                                 <b>80% &amp; Up</b>
                             </label>
 
-                            <div class="progress-bar progress-sm rounded static-200 margin-5-b">
-                                <span class="theme-yellow ui-dark" style="width: 60%;"></span>
+                            <div class="progress-bar progress-sm rounded margin-5-b">
+                                <span class="theme-orange ui-dark stripe-light" style="width: 60%;"></span>
                             </div>
-                            <label class="custom block margin-15-b">
+                            <label class="custom block margin-10-b">
                                 <span class="radio-custom dual-bordered rounded ease-form">
                                     <input type="radio" name="ratings">
                                     <i class="ease-form-custom"></i>
@@ -255,10 +196,10 @@
                                 <b>60% &amp; Up</b>
                             </label>
 
-                            <div class="progress-bar progress-sm rounded static-200 margin-5-b">
-                                <span class="theme-yellow ui-dark" style="width: 50%;"></span>
+                            <div class="progress-bar progress-sm rounded margin-5-b">
+                                <span class="theme-red ui-dark stripe-light" style="width: 50%;"></span>
                             </div>
-                            <label class="custom block margin-15-b">
+                            <label class="custom block margin-10-b">
                                 <span class="radio-custom dual-bordered rounded ease-form">
                                     <input type="radio" name="ratings">
                                     <i class="ease-form-custom"></i>
@@ -266,311 +207,314 @@
                                 <b>50% &amp; Up</b>
                             </label>
 
-                            <span class="sp30"></span>
-                            <button type="submit" class="btn btn-lg btn-block circle theme-default2 ui-dark ease-btn"><b>SEARCH</b></button>
-                            <!-- sidebar: end -->
+                            <span class="sp10"></span>
+                            <button type="submit" class="btn btn-lg btn-block circle theme-green ui-x-dark ease-btn"><b>SEARCH</b></button>
 
-                        </form>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-12 sm-no-padding-t">
+                <div class="row">
+                    <div class="col-12 sm-no-padding-t">
 
-                    <div class="row sm-align-center">
-                        <div class="col-6 sm-responsive form-summary sm-no-padding-b">
-                            <span class="large"><b>504</b> items</span>
+                        <div class="row sm-align-center">
+                            <div class="col-6 sm-responsive form-summary sm-no-padding-b">
+                                <span class="large">Found <b>47</b> products</span>
+                            </div>
+                            <div class="col-6 sm-responsive align-right sm-no-padding">
+                                <form action="#">
+                                    <button type="button" class="btn btn-square align-center show-mobile-menu-left rounded ease-btn visible-md"><i class="icon icon-md icon-filter"></i></button>
+                                    <div class="select dual-bordered rounded form-inline ease-form">
+                                        <i class="icon icon-sm icon-angle-down ease-layout"></i>
+                                        <select>
+                                            <option value="1" checked>Sort by</option>
+                                            <option value="2">Top Rated</option>
+                                            <option value="3">Price (Low to High)</option>
+                                            <option value="4">Price (High to Low)</option>
+                                        </select>
+                                    </div>
+                                    <div class="select dual-bordered rounded form-inline ease-form">
+                                        <i class="icon icon-sm icon-angle-down ease-layout"></i>
+                                        <select>
+                                            <option value="12" checked>Show 12</option>
+                                            <option value="24">Show 24</option>
+                                            <option value="36">Show 36</option>
+                                        </select>
+                                    </div>
+                                    <span class="align-center ease-1st-btn">
+                                        <button class="btn btn-square rounded"><i class="icon icon-md icon-grid-col"></i></button>
+                                        <button class="btn btn-square rounded theme-default2 ui-dark"><i class="icon icon-md icon-grid-row"></i></button>
+                                    </span>
+                                </form>
+                            </div>
                         </div>
-                        <div class="col-6 sm-responsive align-right sm-no-padding">
-                            <form action="#">
-                                <button type="button" class="btn btn-square align-center show-mobile-menu-left rounded ease-btn visible-md"><i class="icon icon-md icon-filter"></i></button>
-                                <div class="select dual-bordered rounded form-inline ease-form">
-                                    <i class="icon icon-sm icon-angle-down ease-layout"></i>
-                                    <select>
-                                        <option value="1" checked>Sort by Relevance</option>
-                                        <option value="2">Top Rated</option>
-                                        <option value="3">Price (Low to High)</option>
-                                        <option value="4">Price (High to Low)</option>
-                                    </select>
-                                </div>
-                                <div class="select dual-bordered rounded form-inline ease-form">
-                                    <i class="icon icon-sm icon-angle-down ease-layout"></i>
-                                    <select>
-                                        <option value="12" checked>Show 12</option>
-                                        <option value="24">Show 24</option>
-                                        <option value="36">Show 36</option>
-                                    </select>
-                                </div>
-                            </form>
+
+                        <!-- list: start -->
+                        <div class="row row-equal-height ease-2nd-layout">
+                            <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
+                                <a class="full-height padding-15 portlet rounded shadow-lg hover-shadow ease-layout" href="#">
+                                    <span class="photo-slider margin-10-b">
+                                        <i class="slider-loader icon icon-xl icon-loader"></i>
+                                        <img src="images/product_blank.gif" data-src="images/product_01.jpg,images/product_02.jpg,images/product_03.jpg,images/product_04.jpg,images/product_05.jpg" alt="Image 1">
+                                        <span class="slider-nav"></span>
+                                        <button title="Prev" class="slide-left rounded ease-layout"><i class="icon icon-md icon-angle-left"></i></button>
+                                        <button title="Next" class="slide-right rounded ease-layout"><i class="icon icon-md icon-angle-right"></i></button>
+                                    </span>
+                                    <b class="x-large">Red</b>
+                                    <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
+                                    <span class="progress-bar progress-sm rounded static-150">
+                                        <span class="theme-green ui-dark stripe-light" style="width: 90%;"></span>
+                                    </span>
+                                    <b>90%</b> <span class="dark">24 Reviews</span>
+                                    <span class="sp20"></span>
+                                    <b class="x-large">$164.98</b>
+                                    <span class="dark block"><i class="icon icon-sm icon-finish margin-5-r"></i><b>Fast Delivery</b></span>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
+                                <a class="full-height padding-15 portlet rounded shadow-lg hover-shadow ease-layout" href="#">
+                                    <span class="photo-slider margin-10-b">
+                                        <i class="slider-loader icon icon-xl icon-loader"></i>
+                                        <img src="images/product_blank.gif" data-src="images/product_02.jpg,images/product_03.jpg,images/product_04.jpg,images/product_05.jpg,images/product_01.jpg" alt="Image 2">
+                                        <span class="slider-nav"></span>
+                                        <button title="Prev" class="slide-left rounded ease-layout"><i class="icon icon-md icon-angle-left"></i></button>
+                                        <button title="Next" class="slide-right rounded ease-layout"><i class="icon icon-md icon-angle-right"></i></button>
+                                    </span>
+                                    <b class="x-large">Purple</b>
+                                    <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
+                                    <span class="progress-bar progress-sm rounded static-150">
+                                        <span class="theme-yellow ui-dark stripe-light" style="width: 82%;"></span>
+                                    </span>
+                                    <b>82%</b> <span class="dark">16 Reviews</span>
+                                    <span class="sp20"></span>
+                                    <b class="x-large font-red">$79.95</b> <b class="overline">$99.99</b>
+                                    <span class="dark block"><i class="icon icon-sm margin-5-r icon-tag"></i><b>20% off</b></span>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
+                                <a class="full-height padding-15 portlet rounded shadow-lg hover-shadow ease-layout" href="#">
+                                    <span class="photo-slider margin-10-b">
+                                        <i class="slider-loader icon icon-xl icon-loader"></i>
+                                        <img src="images/product_blank.gif" data-src="images/product_03.jpg,images/product_04.jpg,images/product_05.jpg,images/product_01.jpg,images/product_02.jpg" alt="Image 3">
+                                        <span class="slider-nav"></span>
+                                        <button title="Prev" class="slide-left rounded ease-layout"><i class="icon icon-md icon-angle-left"></i></button>
+                                        <button title="Next" class="slide-right rounded ease-layout"><i class="icon icon-md icon-angle-right"></i></button>
+                                    </span>
+                                    <b class="x-large">Blue</b>
+                                    <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
+                                    <span class="progress-bar progress-sm rounded static-150">
+                                        <span class="theme-green ui-dark stripe-light" style="width: 90%;"></span>
+                                    </span>
+                                    <b>90%</b> <span class="dark">24 Reviews</span>
+                                    <span class="sp20"></span>
+                                    <b class="x-large">$164.98</b>
+                                    <span class="dark block"><i class="icon icon-sm icon-finish margin-5-r"></i><b>Fast Delivery</b></span>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
+                                <a class="full-height padding-15 portlet rounded shadow-lg hover-shadow ease-layout" href="#">
+                                    <span class="photo-slider margin-10-b">
+                                        <i class="slider-loader icon icon-xl icon-loader"></i>
+                                        <img src="images/product_blank.gif" data-src="images/product_04.jpg,images/product_05.jpg,images/product_01.jpg,images/product_02.jpg,images/product_03.jpg" alt="Image 4">
+                                        <span class="slider-nav"></span>
+                                        <button title="Prev" class="slide-left rounded ease-layout"><i class="icon icon-md icon-angle-left"></i></button>
+                                        <button title="Next" class="slide-right rounded ease-layout"><i class="icon icon-md icon-angle-right"></i></button>
+                                    </span>
+                                    <b class="x-large">White</b>
+                                    <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
+                                    <span class="progress-bar progress-sm rounded static-150">
+                                        <span class="theme-orange ui-dark stripe-light" style="width: 62%;"></span>
+                                    </span>
+                                    <b>82%</b> <span class="dark">16 Reviews</span>
+                                    <span class="sp20"></span>
+                                    <b class="x-large font-red">$79.95</b> <b class="overline">$99.99</b>
+                                    <span class="dark block"><i class="icon icon-sm margin-5-r icon-tag"></i><b>20% off</b></span>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
+                                <a class="full-height padding-15 portlet rounded shadow-lg hover-shadow ease-layout" href="#">
+                                    <span class="photo-slider margin-10-b">
+                                        <i class="slider-loader icon icon-xl icon-loader"></i>
+                                        <img src="images/product_blank.gif" data-src="images/product_05.jpg,images/product_01.jpg,images/product_02.jpg,images/product_03.jpg,images/product_04.jpg" alt="Image 5">
+                                        <span class="slider-nav"></span>
+                                        <button title="Prev" class="slide-left rounded ease-layout"><i class="icon icon-md icon-angle-left"></i></button>
+                                        <button title="Next" class="slide-right rounded ease-layout"><i class="icon icon-md icon-angle-right"></i></button>
+                                    </span>
+                                    <b class="x-large">Black</b>
+                                    <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
+                                    <span class="progress-bar progress-sm rounded static-150">
+                                        <span class="theme-green ui-dark stripe-light" style="width: 90%;"></span>
+                                    </span>
+                                    <b>90%</b> <span class="dark">24 Reviews</span>
+                                    <span class="sp20"></span>
+                                    <b class="x-large">$164.98</b>
+                                    <span class="dark block"><i class="icon icon-sm icon-finish margin-5-r"></i><b>Fast Delivery</b></span>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
+                                <a class="full-height padding-15 portlet rounded shadow-lg hover-shadow ease-layout" href="#">
+                                    <span class="photo-slider margin-10-b">
+                                        <i class="slider-loader icon icon-xl icon-loader"></i>
+                                        <img src="images/product_blank.gif" data-src="images/product_01.jpg,images/product_02.jpg,images/product_03.jpg,images/product_04.jpg,images/product_05.jpg" alt="Image 6">
+                                        <span class="slider-nav"></span>
+                                        <button title="Prev" class="slide-left rounded ease-layout"><i class="icon icon-md icon-angle-left"></i></button>
+                                        <button title="Next" class="slide-right rounded ease-layout"><i class="icon icon-md icon-angle-right"></i></button>
+                                    </span>
+                                    <b class="x-large">Red</b>
+                                    <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
+                                    <span class="progress-bar progress-sm rounded static-150">
+                                        <span class="theme-yellow ui-dark stripe-light" style="width: 82%;"></span>
+                                    </span>
+                                    <b>82%</b> <span class="dark">16 Reviews</span>
+                                    <span class="sp20"></span>
+                                    <b class="x-large font-red">$79.95</b> <b class="overline">$99.99</b>
+                                    <span class="dark block"><i class="icon icon-sm margin-5-r icon-tag"></i><b>20% off</b></span>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
+                                <a class="full-height padding-15 portlet rounded shadow-lg hover-shadow ease-layout" href="#">
+                                    <span class="photo-slider margin-10-b">
+                                        <i class="slider-loader icon icon-xl icon-loader"></i>
+                                        <img src="images/product_blank.gif" data-src="images/product_02.jpg,images/product_02.jpg,images/product_03.jpg,images/product_04.jpg,images/product_05.jpg" alt="Image 7">
+                                        <span class="slider-nav"></span>
+                                        <button title="Prev" class="slide-left rounded ease-layout"><i class="icon icon-md icon-angle-left"></i></button>
+                                        <button title="Next" class="slide-right rounded ease-layout"><i class="icon icon-md icon-angle-right"></i></button>
+                                    </span>
+                                    <b class="x-large">Purple</b>
+                                    <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
+                                    <span class="progress-bar progress-sm rounded static-150">
+                                        <span class="theme-green ui-dark stripe-light" style="width: 90%;"></span>
+                                    </span>
+                                    <b>90%</b> <span class="dark">24 Reviews</span>
+                                    <span class="sp20"></span>
+                                    <b class="x-large">$164.98</b>
+                                    <span class="dark block"><i class="icon icon-sm icon-finish margin-5-r"></i><b>Fast Delivery</b></span>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
+                                <a class="full-height padding-15 portlet rounded shadow-lg hover-shadow ease-layout" href="#">
+                                    <span class="photo-slider margin-10-b">
+                                        <i class="slider-loader icon icon-xl icon-loader"></i>
+                                        <img src="images/product_blank.gif" data-src="images/product_03.jpg,images/product_03.jpg,images/product_04.jpg,images/product_05.jpg,images/product_01.jpg" alt="Image 8">
+                                        <span class="slider-nav"></span>
+                                        <button title="Prev" class="slide-left rounded ease-layout"><i class="icon icon-md icon-angle-left"></i></button>
+                                        <button title="Next" class="slide-right rounded ease-layout"><i class="icon icon-md icon-angle-right"></i></button>
+                                    </span>
+                                    <b class="x-large">Blue</b>
+                                    <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
+                                    <span class="progress-bar progress-sm rounded static-150">
+                                        <span class="theme-red ui-dark stripe-light" style="width: 58%;"></span>
+                                    </span>
+                                    <b>82%</b> <span class="dark">16 Reviews</span>
+                                    <span class="sp20"></span>
+                                    <b class="x-large font-red">$79.95</b> <b class="overline">$99.99</b>
+                                    <span class="dark block"><i class="icon icon-sm margin-5-r icon-tag"></i><b>20% off</b></span>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
+                                <a class="full-height padding-15 portlet rounded shadow-lg hover-shadow ease-layout" href="#">
+                                    <span class="photo-slider margin-10-b">
+                                        <i class="slider-loader icon icon-xl icon-loader"></i>
+                                        <img src="images/product_blank.gif" data-src="images/product_04.jpg,images/product_04.jpg,images/product_05.jpg,images/product_01.jpg,images/product_02.jpg" alt="Image 9">
+                                        <span class="slider-nav"></span>
+                                        <button title="Prev" class="slide-left rounded ease-layout"><i class="icon icon-md icon-angle-left"></i></button>
+                                        <button title="Next" class="slide-right rounded ease-layout"><i class="icon icon-md icon-angle-right"></i></button>
+                                    </span>
+                                    <b class="x-large">White</b>
+                                    <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
+                                    <span class="progress-bar progress-sm rounded static-150">
+                                        <span class="theme-green ui-dark stripe-light" style="width: 90%;"></span>
+                                    </span>
+                                    <b>90%</b> <span class="dark">24 Reviews</span>
+                                    <span class="sp20"></span>
+                                    <b class="x-large">$164.98</b>
+                                    <span class="dark block"><i class="icon icon-sm icon-finish margin-5-r"></i><b>Fast Delivery</b></span>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
+                                <a class="full-height padding-15 portlet rounded shadow-lg hover-shadow ease-layout" href="#">
+                                    <span class="photo-slider margin-10-b">
+                                        <i class="slider-loader icon icon-xl icon-loader"></i>
+                                        <img src="images/product_blank.gif" data-src="images/product_05.jpg,images/product_05.jpg,images/product_01.jpg,images/product_02.jpg,images/product_03.jpg" alt="Image 10">
+                                        <span class="slider-nav"></span>
+                                        <button title="Prev" class="slide-left rounded ease-layout"><i class="icon icon-md icon-angle-left"></i></button>
+                                        <button title="Next" class="slide-right rounded ease-layout"><i class="icon icon-md icon-angle-right"></i></button>
+                                    </span>
+                                    <b class="x-large">Black</b>
+                                    <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
+                                    <span class="progress-bar progress-sm rounded static-150">
+                                        <span class="theme-yellow ui-dark stripe-light" style="width: 82%;"></span>
+                                    </span>
+                                    <b>82%</b> <span class="dark">16 Reviews</span>
+                                    <span class="sp20"></span>
+                                    <b class="x-large font-red">$79.95</b> <b class="overline">$99.99</b>
+                                    <span class="dark block"><i class="icon icon-sm margin-5-r icon-tag"></i><b>20% off</b></span>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
+                                <a class="full-height padding-15 portlet rounded shadow-lg hover-shadow ease-layout" href="#">
+                                    <span class="photo-slider margin-10-b">
+                                        <i class="slider-loader icon icon-xl icon-loader"></i>
+                                        <img src="images/product_blank.gif" data-src="images/product_01.jpg,images/product_02.jpg,images/product_03.jpg,images/product_04.jpg,images/product_05.jpg" alt="Image 1">
+                                        <span class="slider-nav"></span>
+                                        <button title="Prev" class="slide-left rounded ease-layout"><i class="icon icon-md icon-angle-left"></i></button>
+                                        <button title="Next" class="slide-right rounded ease-layout"><i class="icon icon-md icon-angle-right"></i></button>
+                                    </span>
+                                    <b class="x-large">Red</b>
+                                    <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
+                                    <span class="progress-bar progress-sm rounded static-150">
+                                        <span class="theme-green ui-dark stripe-light" style="width: 90%;"></span>
+                                    </span>
+                                    <b>90%</b> <span class="dark">24 Reviews</span>
+                                    <span class="sp20"></span>
+                                    <b class="x-large">$164.98</b>
+                                    <span class="dark block"><i class="icon icon-sm icon-finish margin-5-r"></i><b>Fast Delivery</b></span>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
+                                <a class="full-height padding-15 portlet rounded shadow-lg hover-shadow ease-layout" href="#">
+                                    <span class="photo-slider margin-10-b">
+                                        <i class="slider-loader icon icon-xl icon-loader"></i>
+                                        <img src="images/product_blank.gif" data-src="images/product_02.jpg,images/product_03.jpg,images/product_04.jpg,images/product_05.jpg,images/product_01.jpg" alt="Image 2">
+                                        <span class="slider-nav"></span>
+                                        <button title="Prev" class="slide-left rounded ease-layout"><i class="icon icon-md icon-angle-left"></i></button>
+                                        <button title="Next" class="slide-right rounded ease-layout"><i class="icon icon-md icon-angle-right"></i></button>
+                                    </span>
+                                    <b class="x-large">Purple</b>
+                                    <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
+                                    <span class="progress-bar progress-sm rounded static-150">
+                                        <span class="theme-yellow ui-dark stripe-light" style="width: 82%;"></span>
+                                    </span>
+                                    <b>82%</b> <span class="dark">16 Reviews</span>
+                                    <span class="sp20"></span>
+                                    <b class="x-large font-red">$79.95</b> <b class="overline">$99.99</b>
+                                    <span class="dark block"><i class="icon icon-sm margin-5-r icon-tag"></i><b>20% off</b></span>
+                                </a>
+                            </div>
                         </div>
+                        <!-- list: end -->
+
+                        <!-- pagination: start <-->
+                        <div class="row margin-20-t">
+                            <div class="col-12">
+                                <div class="pagination align-center ease-1st-bg">
+                                <a class="btn prev circle" href="#"><i class="icon icon-xs icon-angle-left no-opacity"></i></a>
+                                <a class="btn circle" href="#">1</a>
+                                <a class="btn btn-active circle theme-default2 ui-dark" href="#">2</a>
+                                <a class="btn btn-passive circle" href="#">...</a>
+                                <a class="btn circle" href="#">3</a>
+                                <a class="btn circle" href="#">4</a>
+                                <a class="btn circle" href="#">5</a>
+                                <a class="btn next circle" href="#"><i class="icon icon-xs icon-angle-right no-opacity"></i></a>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- pagination: end -->
+
                     </div>
-
-                    <!-- list: start -->
-                    <div class="row row-equal-height ease-2nd-layout">
-                        <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
-                            <a class="full-height padding-15 portlet rounded hover-shadow scale" href="#">
-                                <span class="photo-slider margin-10-b">
-                                    <i class="slider-loader icon icon-xl icon-loader"></i>
-                                    <img src="images/product_blank.gif" data-src="images/product_01.jpg,images/product_02.jpg,images/product_03.jpg,images/product_04.jpg,images/product_05.jpg" alt="Image 1">
-                                    <span class="slider-nav"></span>
-                                    <button title="Prev" class="slide-left rounded ease-layout"><i class="icon icon-xl icon-angle-left"></i></button>
-                                    <button title="Next" class="slide-right rounded ease-layout"><i class="icon icon-xl icon-angle-right"></i></button>
-                                </span>
-                                <b class="x-large">Seiko</b>
-                                <span class="x-dark block margin-10-v">Seiko Watches Men's SNA411 Parker Stainless Steel Watch, 42mm</span>
-                                <span class="progress-bar progress-sm rounded static-150">
-                                    <span class="theme-yellow ui-dark" style="width: 90%;"></span>
-                                </span>
-                                <b>90%</b> <span class="dark">24 Reviews</span>
-                                <span class="sp20"></span>
-                                <b class="x-large">$164.98</b>
-                                <span class="x-dark block"><i class="icon icon-sm icon-finish margin-10-r"></i>2-Days delivery</span>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
-                            <a class="full-height padding-15 portlet rounded hover-shadow scale" href="#">
-                                <span class="photo-slider margin-10-b">
-                                    <i class="slider-loader icon icon-xl icon-loader"></i>
-                                    <img src="images/product_blank.gif" data-src="images/product_02.jpg,images/product_03.jpg,images/product_04.jpg,images/product_05.jpg,images/product_06.jpg" alt="Image 2">
-                                    <span class="slider-nav"></span>
-                                    <button title="Prev" class="slide-left rounded ease-layout"><i class="icon icon-xl icon-angle-left"></i></button>
-                                    <button title="Next" class="slide-right rounded ease-layout"><i class="icon icon-xl icon-angle-right"></i></button>
-                                </span>
-                                <b class="x-large">Movado</b>
-                                <span class="x-dark block margin-10-v">Movado Men's 2100002 Museum Leather Watch, 38mm</span>
-                                <span class="progress-bar progress-sm rounded static-150">
-                                    <span class="theme-yellow ui-dark" style="width: 82%;"></span>
-                                </span>
-                                <b>82%</b> <span class="dark">16 Reviews</span>
-                                <span class="sp20"></span>
-                                <b class="x-large font-red">$79.95</b> <b class="overline">$99.99</b>
-                                <span class="x-dark block"><i class="icon icon-sm margin-10-r icon-arrow-down"></i>20% off</span>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
-                            <a class="full-height padding-15 portlet rounded hover-shadow scale" href="#">
-                                <span class="photo-slider margin-10-b">
-                                    <i class="slider-loader icon icon-xl icon-loader"></i>
-                                    <img src="images/product_blank.gif" data-src="images/product_03.jpg,images/product_04.jpg,images/product_05.jpg,images/product_06.jpg,images/product_07.jpg" alt="Image 3">
-                                    <span class="slider-nav"></span>
-                                    <button title="Prev" class="slide-left rounded ease-layout"><i class="icon icon-xl icon-angle-left"></i></button>
-                                    <button title="Next" class="slide-right rounded ease-layout"><i class="icon icon-xl icon-angle-right"></i></button>
-                                </span>
-                                <b class="x-large">Seiko</b>
-                                <span class="x-dark block margin-10-v">Seiko Watches Men's SNA411 Parker Stainless Steel Watch, 42mm</span>
-                                <span class="progress-bar progress-sm rounded static-150">
-                                    <span class="theme-yellow ui-dark" style="width: 90%;"></span>
-                                </span>
-                                <b>90%</b> <span class="dark">24 Reviews</span>
-                                <span class="sp20"></span>
-                                <b class="x-large">$164.98</b>
-                                <span class="x-dark block"><i class="icon icon-sm icon-finish margin-10-r"></i>2-Days delivery</span>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
-                            <a class="full-height padding-15 portlet rounded hover-shadow scale" href="#">
-                                <span class="photo-slider margin-10-b">
-                                    <i class="slider-loader icon icon-xl icon-loader"></i>
-                                    <img src="images/product_blank.gif" data-src="images/product_04.jpg,images/product_05.jpg,images/product_06.jpg,images/product_07.jpg,images/product_08.jpg" alt="Image 4">
-                                    <span class="slider-nav"></span>
-                                    <button title="Prev" class="slide-left rounded ease-layout"><i class="icon icon-xl icon-angle-left"></i></button>
-                                    <button title="Next" class="slide-right rounded ease-layout"><i class="icon icon-xl icon-angle-right"></i></button>
-                                </span>
-                                <b class="x-large">Movado</b>
-                                <span class="x-dark block margin-10-v">Movado Men's 2100002 Museum Leather Watch, 38mm</span>
-                                <span class="progress-bar progress-sm rounded static-150">
-                                    <span class="theme-yellow ui-dark" style="width: 82%;"></span>
-                                </span>
-                                <b>82%</b> <span class="dark">16 Reviews</span>
-                                <span class="sp20"></span>
-                                <b class="x-large font-red">$79.95</b> <b class="overline">$99.99</b>
-                                <span class="x-dark block"><i class="icon icon-sm margin-10-r icon-arrow-down"></i>20% off</span>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
-                            <a class="full-height padding-15 portlet rounded hover-shadow scale" href="#">
-                                <span class="photo-slider margin-10-b">
-                                    <i class="slider-loader icon icon-xl icon-loader"></i>
-                                    <img src="images/product_blank.gif" data-src="images/product_05.jpg,images/product_06.jpg,images/product_07.jpg,images/product_08.jpg,images/product_09.jpg" alt="Image 5">
-                                    <span class="slider-nav"></span>
-                                    <button title="Prev" class="slide-left rounded ease-layout"><i class="icon icon-xl icon-angle-left"></i></button>
-                                    <button title="Next" class="slide-right rounded ease-layout"><i class="icon icon-xl icon-angle-right"></i></button>
-                                </span>
-                                <b class="x-large">Seiko</b>
-                                <span class="x-dark block margin-10-v">Seiko Watches Men's SNA411 Parker Stainless Steel Watch, 42mm</span>
-                                <span class="progress-bar progress-sm rounded static-150">
-                                    <span class="theme-yellow ui-dark" style="width: 90%;"></span>
-                                </span>
-                                <b>90%</b> <span class="dark">24 Reviews</span>
-                                <span class="sp20"></span>
-                                <b class="x-large">$164.98</b>
-                                <span class="x-dark block"><i class="icon icon-sm icon-finish margin-10-r"></i>2-Days delivery</span>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
-                            <a class="full-height padding-15 portlet rounded hover-shadow scale" href="#">
-                                <span class="photo-slider margin-10-b">
-                                    <i class="slider-loader icon icon-xl icon-loader"></i>
-                                    <img src="images/product_blank.gif" data-src="images/product_06.jpg,images/product_07.jpg,images/product_08.jpg,images/product_09.jpg,images/product_10.jpg" alt="Image 6">
-                                    <span class="slider-nav"></span>
-                                    <button title="Prev" class="slide-left rounded ease-layout"><i class="icon icon-xl icon-angle-left"></i></button>
-                                    <button title="Next" class="slide-right rounded ease-layout"><i class="icon icon-xl icon-angle-right"></i></button>
-                                </span>
-                                <b class="x-large">Movado</b>
-                                <span class="x-dark block margin-10-v">Movado Men's 2100002 Museum Leather Watch, 38mm</span>
-                                <span class="progress-bar progress-sm rounded static-150">
-                                    <span class="theme-yellow ui-dark" style="width: 82%;"></span>
-                                </span>
-                                <b>82%</b> <span class="dark">16 Reviews</span>
-                                <span class="sp20"></span>
-                                <b class="x-large font-red">$79.95</b> <b class="overline">$99.99</b>
-                                <span class="x-dark block"><i class="icon icon-sm margin-10-r icon-arrow-down"></i>20% off</span>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
-                            <a class="full-height padding-15 portlet rounded hover-shadow scale" href="#">
-                                <span class="photo-slider margin-10-b">
-                                    <i class="slider-loader icon icon-xl icon-loader"></i>
-                                    <img src="images/product_blank.gif" data-src="images/product_07.jpg,images/product_02.jpg,images/product_03.jpg,images/product_04.jpg,images/product_05.jpg" alt="Image 7">
-                                    <span class="slider-nav"></span>
-                                    <button title="Prev" class="slide-left rounded ease-layout"><i class="icon icon-xl icon-angle-left"></i></button>
-                                    <button title="Next" class="slide-right rounded ease-layout"><i class="icon icon-xl icon-angle-right"></i></button>
-                                </span>
-                                <b class="x-large">Seiko</b>
-                                <span class="x-dark block margin-10-v">Seiko Watches Men's SNA411 Parker Stainless Steel Watch, 42mm</span>
-                                <span class="progress-bar progress-sm rounded static-150">
-                                    <span class="theme-yellow ui-dark" style="width: 90%;"></span>
-                                </span>
-                                <b>90%</b> <span class="dark">24 Reviews</span>
-                                <span class="sp20"></span>
-                                <b class="x-large">$164.98</b>
-                                <span class="x-dark block"><i class="icon icon-sm icon-finish margin-10-r"></i>2-Days delivery</span>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
-                            <a class="full-height padding-15 portlet rounded hover-shadow scale" href="#">
-                                <span class="photo-slider margin-10-b">
-                                    <i class="slider-loader icon icon-xl icon-loader"></i>
-                                    <img src="images/product_blank.gif" data-src="images/product_08.jpg,images/product_03.jpg,images/product_04.jpg,images/product_05.jpg,images/product_06.jpg" alt="Image 8">
-                                    <span class="slider-nav"></span>
-                                    <button title="Prev" class="slide-left rounded ease-layout"><i class="icon icon-xl icon-angle-left"></i></button>
-                                    <button title="Next" class="slide-right rounded ease-layout"><i class="icon icon-xl icon-angle-right"></i></button>
-                                </span>
-                                <b class="x-large">Movado</b>
-                                <span class="x-dark block margin-10-v">Movado Men's 2100002 Museum Leather Watch, 38mm</span>
-                                <span class="progress-bar progress-sm rounded static-150">
-                                    <span class="theme-yellow ui-dark" style="width: 82%;"></span>
-                                </span>
-                                <b>82%</b> <span class="dark">16 Reviews</span>
-                                <span class="sp20"></span>
-                                <b class="x-large font-red">$79.95</b> <b class="overline">$99.99</b>
-                                <span class="x-dark block"><i class="icon icon-sm margin-10-r icon-arrow-down"></i>20% off</span>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
-                            <a class="full-height padding-15 portlet rounded hover-shadow scale" href="#">
-                                <span class="photo-slider margin-10-b">
-                                    <i class="slider-loader icon icon-xl icon-loader"></i>
-                                    <img src="images/product_blank.gif" data-src="images/product_09.jpg,images/product_04.jpg,images/product_05.jpg,images/product_06.jpg,images/product_07.jpg" alt="Image 9">
-                                    <span class="slider-nav"></span>
-                                    <button title="Prev" class="slide-left rounded ease-layout"><i class="icon icon-xl icon-angle-left"></i></button>
-                                    <button title="Next" class="slide-right rounded ease-layout"><i class="icon icon-xl icon-angle-right"></i></button>
-                                </span>
-                                <b class="x-large">Seiko</b>
-                                <span class="x-dark block margin-10-v">Seiko Watches Men's SNA411 Parker Stainless Steel Watch, 42mm</span>
-                                <span class="progress-bar progress-sm rounded static-150">
-                                    <span class="theme-yellow ui-dark" style="width: 90%;"></span>
-                                </span>
-                                <b>90%</b> <span class="dark">24 Reviews</span>
-                                <span class="sp20"></span>
-                                <b class="x-large">$164.98</b>
-                                <span class="x-dark block"><i class="icon icon-sm icon-finish margin-10-r"></i>2-Days delivery</span>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
-                            <a class="full-height padding-15 portlet rounded hover-shadow scale" href="#">
-                                <span class="photo-slider margin-10-b">
-                                    <i class="slider-loader icon icon-xl icon-loader"></i>
-                                    <img src="images/product_blank.gif" data-src="images/product_10.jpg,images/product_05.jpg,images/product_06.jpg,images/product_07.jpg,images/product_08.jpg" alt="Image 10">
-                                    <span class="slider-nav"></span>
-                                    <button title="Prev" class="slide-left rounded ease-layout"><i class="icon icon-xl icon-angle-left"></i></button>
-                                    <button title="Next" class="slide-right rounded ease-layout"><i class="icon icon-xl icon-angle-right"></i></button>
-                                </span>
-                                <b class="x-large">Movado</b>
-                                <span class="x-dark block margin-10-v">Movado Men's 2100002 Museum Leather Watch, 38mm</span>
-                                <span class="progress-bar progress-sm rounded static-150">
-                                    <span class="theme-yellow ui-dark" style="width: 82%;"></span>
-                                </span>
-                                <b>82%</b> <span class="dark">16 Reviews</span>
-                                <span class="sp20"></span>
-                                <b class="x-large font-red">$79.95</b> <b class="overline">$99.99</b>
-                                <span class="x-dark block"><i class="icon icon-sm margin-10-r icon-arrow-down"></i>20% off</span>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
-                            <a class="full-height padding-15 portlet rounded hover-shadow scale" href="#">
-                                <span class="photo-slider margin-10-b">
-                                    <i class="slider-loader icon icon-xl icon-loader"></i>
-                                    <img src="images/product_blank.gif" data-src="images/product_01.jpg,images/product_02.jpg,images/product_03.jpg,images/product_04.jpg,images/product_05.jpg" alt="Image 1">
-                                    <span class="slider-nav"></span>
-                                    <button title="Prev" class="slide-left rounded ease-layout"><i class="icon icon-xl icon-angle-left"></i></button>
-                                    <button title="Next" class="slide-right rounded ease-layout"><i class="icon icon-xl icon-angle-right"></i></button>
-                                </span>
-                                <b class="x-large">Seiko</b>
-                                <span class="x-dark block margin-10-v">Seiko Watches Men's SNA411 Parker Stainless Steel Watch, 42mm</span>
-                                <span class="progress-bar progress-sm rounded static-150">
-                                    <span class="theme-yellow ui-dark" style="width: 90%;"></span>
-                                </span>
-                                <b>90%</b> <span class="dark">24 Reviews</span>
-                                <span class="sp20"></span>
-                                <b class="x-large">$164.98</b>
-                                <span class="x-dark block"><i class="icon icon-sm icon-finish margin-10-r"></i>2-Days delivery</span>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-4 col-sm-6 xs-responsive">
-                            <a class="full-height padding-15 portlet rounded hover-shadow scale" href="#">
-                                <span class="photo-slider margin-10-b">
-                                    <i class="slider-loader icon icon-xl icon-loader"></i>
-                                    <img src="images/product_blank.gif" data-src="images/product_02.jpg,images/product_03.jpg,images/product_04.jpg,images/product_05.jpg,images/product_06.jpg" alt="Image 2">
-                                    <span class="slider-nav"></span>
-                                    <button title="Prev" class="slide-left rounded ease-layout"><i class="icon icon-xl icon-angle-left"></i></button>
-                                    <button title="Next" class="slide-right rounded ease-layout"><i class="icon icon-xl icon-angle-right"></i></button>
-                                </span>
-                                <b class="x-large">Movado</b>
-                                <span class="x-dark block margin-10-v">Movado Men's 2100002 Museum Leather Watch, 38mm</span>
-                                <span class="progress-bar progress-sm rounded static-150">
-                                    <span class="theme-yellow ui-dark" style="width: 82%;"></span>
-                                </span>
-                                <b>82%</b> <span class="dark">16 Reviews</span>
-                                <span class="sp20"></span>
-                                <b class="x-large font-red">$79.95</b> <b class="overline">$99.99</b>
-                                <span class="x-dark block"><i class="icon icon-sm margin-10-r icon-arrow-down"></i>20% off</span>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- list: end -->
-
-                    <!-- pagination: start <-->
-                    <div class="row margin-20-t">
-                        <div class="col-12">
-                            <div class="pagination align-center ease-1st-bg">
-                            <a class="btn prev circle" href="#"><i class="icon icon-xs icon-angle-left no-opacity"></i></a>
-                            <a class="btn circle" href="#">1</a>
-                            <a class="btn btn-active circle theme-default2 ui-dark" href="#">2</a>
-                            <a class="btn btn-passive circle" href="#">...</a>
-                            <a class="btn circle" href="#">3</a>
-                            <a class="btn circle" href="#">4</a>
-                            <a class="btn circle" href="#">5</a>
-                            <a class="btn next circle" href="#"><i class="icon icon-xs icon-angle-right no-opacity"></i></a>
-                        </div>
-                        </div>
-                    </div>
-                    <!-- pagination: end -->
-
                 </div>
-            </div>
 
+            </div>
         </div>
     </main>
 
