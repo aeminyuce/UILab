@@ -24,7 +24,7 @@
 .ease-margin,.ease-1st-margin > *,.ease-2nd-margin > * > * { transition-property: margin; }
 .ease-border,.ease-1st-border > *,.ease-border > * > * { transition-property: border-color; }
 .ease-position,.ease-1st-position > *,.ease-2nd-position > * > * { transition-property: top, right, bottom, left; }
-.ease-layout,.ease-1st-layout > *,.ease-2nd-layout > * > * { transition-property: transform, opacity, shadow; }
+.ease-layout,.ease-1st-layout > *,.ease-2nd-layout > * > * { transition-property: transform, opacity, box-shadow; }
 .ease-svg,.ease-1st-svg > *,.ease-2nd-svg > * > * { transition-property: fill, stroke; }
 
 .ease-default,.ease-default[class*="ease-1st-"] > *,.ease-default[class*="ease-2nd-"] > * > * { transition-timing-function: ease; }
