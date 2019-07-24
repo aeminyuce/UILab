@@ -24,8 +24,10 @@
     <link rel="stylesheet" href="../css/helpers.css" />
     <link rel="stylesheet" href="../css/icons.css" />
     <link rel="stylesheet" href="../css/listings.css" />
+    <link rel="stylesheet" href="../css/line-charts.css" />
     <link rel="stylesheet" href="../css/margins.css" />
     <link rel="stylesheet" href="../css/paddings.css" />
+    <link rel="stylesheet" href="../css/pie-chart.css" />
     <link rel="stylesheet" href="../css/photo-gallery.css" />
     <link rel="stylesheet" href="../css/portlets.css" />
     <link rel="stylesheet" href="../css/reset.css" />
@@ -47,12 +49,14 @@
     <script src="../js/carousel.js"></script>
     <script src="../js/countdown.js"></script>
     <script src="../js/currency-spinner.js"></script>
+    <script src="../js/donut-chart.js"></script>
     <script src="../js/forms.js"></script>
+    <script src="../js/line-charts.js"></script>
+    <script src="../js/pie-chart.js"></script>
     <script src="../js/photo-gallery.js"></script>
     <script src="../js/static-grid.js"></script>
     <script src="../js/sticky-header.js"></script>
     <script src="../js/swatches.js"></script>
-    <script src="../js/donut-chart.js"></script>
     <script src="../js/tooltip.js"></script>
     <script src="../js/top-button.js"></script>
     <script src="../js/transitions.js"></script>
@@ -61,10 +65,25 @@
     <!-- font icons CSS -->
     <link rel="stylesheet" href="icons/font-icons/outline/font-icons.css" />
 
-    <!-- custom CSS -->
-    <style>
-        body { background-color: #f9f9f9; }
-    </style>
+    <!-- custom js -->
+    <script>
+
+        lineCharts.rows = 5; // set number of rows
+        lineCharts.rowsHeight = 15; // set height of single row (px)
+
+        lineCharts.top = 18; // set bottom space (px)
+        lineCharts.bottom = 0; // set bottom space (px)
+        lineCharts.left = 6; // set left space (px)
+
+        lineCharts.showBgGrid = false; // set showing bg grid
+        lineCharts.showGridText = false; // set showing grid numbers
+        lineCharts.showInfo = false; // set showing info
+
+        lineCharts.curveSize = 24; // set extra curve size
+
+        lineCharts.gridStroke = 0; // set grid stroke width
+
+    </script>
 
 </head>
 
@@ -84,203 +103,249 @@
     <main class="container no-gutter">
         <div class="fixed padding-30-v">
 
-            <div class="portlet padding-15 sm-no-padding rounded">
-                <div class="col-static">
+            <div class="col-static">
 
-                    <div class="row">
-                        <div class="col-12">
+                <div class="row">
+                    <div class="col-12">
 
-                            <div class="carousel-gallery">
-                                <div class="detail">
-                                    <img src="images/house_01.jpg" class="rounded photo-gallery-call cursor-pointer img-responsive ease-layout" data-target="#detail-carousel" data-count="0" alt="">
-                                    <i class="icon-zoom icon icon-xxl icon-search-plus"></i>
-                                    <i class="icon-loader icon icon-xxl icon-loader"></i>
-                                </div>
-                                <div id="detail-carousel" class="thumbs carousel" data-col="6" data-col-tablet="4" data-col-mobile="3">
-                                    <div class="carousel-slider ease-2nd-layout ease-layout ease-slow photo-gallery-passive">
-                                        <div class="content">
-                                            <img class="img rounded selected" src="images/blank.gif" data-src="images/house_01.jpg" data-href="images/house_01.jpg" alt="">
-                                        </div>
-                                        <div class="content">
-                                            <img class="img rounded" src="images/blank.gif" data-src="images/house_02.jpg" data-href="images/house_02.jpg" alt="">
-                                        </div>
-                                        <div class="content">
-                                            <img class="img rounded" src="images/blank.gif" data-src="images/house_03.jpg" data-href="images/house_03.jpg" alt="">
-                                        </div>
-                                        <div class="content">
-                                            <img class="img rounded" src="images/blank.gif" data-src="images/house_04.jpg" data-href="images/house_04.jpg" alt="">
-                                        </div>
-                                        <div class="content">
-                                            <img class="img rounded" src="images/blank.gif" data-src="images/house_05.jpg" data-href="images/house_05.jpg" alt="">
-                                        </div>
-                                        <div class="content">
-                                            <img class="img rounded" src="images/blank.gif" data-src="images/house_01.jpg" data-href="images/house_01.jpg" alt="">
-                                        </div>
-                                        <div class="content">
-                                            <img class="img rounded" src="images/blank.gif" data-src="images/house_02.jpg" data-href="images/house_02.jpg" alt="">
-                                        </div>
-                                        <div class="content">
-                                            <img class="img rounded" src="images/blank.gif" data-src="images/house_03.jpg" data-href="images/house_03.jpg" alt="">
-                                        </div>
-                                        <div class="content">
-                                            <img class="img rounded" src="images/blank.gif" data-src="images/house_04.jpg" data-href="images/house_04.jpg" alt="">
-                                        </div>
-                                        <div class="content">
-                                            <img class="img rounded" src="images/blank.gif" data-src="images/house_05.jpg" data-href="images/house_05.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="carousel-nav align-center ease-1st-bg">
-                                        <button class="carousel-prev btn btn-invisible btn-square rounded"><i class="icon icon-md icon-angle-left"></i></button>
-                                        <span class="dots dark"></span>
-                                        <button class="carousel-next btn btn-invisible btn-square rounded"><i class="icon icon-md icon-angle-right"></i></button>
-                                    </div>
-                                </div>
-                                <!-- if you don't want to use carousel:
-                                <div id="detail-carousel" class="thumbs ease-1st-layout">
-                                    <span class="img-holder"><img class="img rounded selected" src="images/house_01.jpg" data-href="images/house_01.jpg" alt=""></span>
-                                    <span class="img-holder"><img class="img rounded" src="images/house_02.jpg" data-href="images/house_02.jpg" alt=""></span>
-                                    <span class="img-holder"><img class="img rounded" src="images/house_03.jpg" data-href="images/house_03.jpg" alt=""></span>
-                                    <span class="img-holder"><img class="img rounded" src="images/house_04.jpg" data-href="images/house_04.jpg" alt=""></span>
-                                    <span class="img-holder"><img class="img rounded" src="images/house_05.jpg" data-href="images/house_05.jpg" alt=""></span>
-                                    <span class="img-holder"><img class="img rounded" src="images/house_01.jpg" data-href="images/house_01.jpg" alt=""></span>
-                                    <span class="img-holder"><img class="img rounded" src="images/house_02.jpg" data-href="images/house_02.jpg" alt=""></span>
-                                    <span class="img-holder"><img class="img rounded" src="images/house_03.jpg" data-href="images/house_03.jpg" alt=""></span>
-                                    <span class="img-holder"><img class="img rounded" src="images/house_04.jpg" data-href="images/house_04.jpg" alt=""></span>
-                                    <span class="img-holder"><img class="img rounded" src="images/house_05.jpg" data-href="images/house_05.jpg" alt=""></span>
-                                </div>
-                                -->
+                        <div class="carousel-gallery">
+                            <div class="detail">
+                                <img src="images/house_01.jpg" class="rounded photo-gallery-call cursor-pointer img-responsive ease-layout" data-target="#detail-carousel" data-count="0" alt="">
+                                <i class="icon-zoom icon icon-xxl icon-search-plus"></i>
+                                <i class="icon-loader icon icon-xxl icon-loader"></i>
                             </div>
-
-                            <div class="rounded theme-gray ui-x-light">
-                                <div class="padding-30">
-                                    <h3>Power Saving Statistics</h3>
-                                    <ul class="list-unstyled">
-                                        <li><b>Power per Month:</b> 4,86 kWp</li>
-                                        <li><b>Yearly Output:</b> 4900 kWp</li>
-                                    </ul>
-                                    <div class="row row-lg-padding">
-                                        <div class="col-3 col-sm-6 col-xs-6 no-responsive">
-                                            <div class="donut-chart ease-donut-chart">
-                                                <strong class="dark"><span class="large xx-dark">Interior</span><br>4,9/5</strong>
-                                                <svg viewBox="0 0 160 160">
-                                                    <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
-                                                    <circle r="69.85699" cy="80" cx="80" stroke="#2dbd3a" data-percent="96" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <div class="col-3 col-sm-6 col-xs-6 no-responsive">
-                                            <div class="donut-chart ease-donut-chart">
-                                                <strong class="dark"><span class="large xx-dark">Exterior</span><br>4/5</strong>
-                                                <svg viewBox="0 0 160 160">
-                                                    <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
-                                                    <circle r="69.85699" cy="80" cx="80" stroke="#2dbd3a" data-percent="88" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <div class="col-3 col-sm-6 col-xs-6 no-responsive">
-                                            <div class="donut-chart ease-donut-chart">
-                                                <strong class="dark"><span class="large xx-dark">Quality</span><br>4/5</strong>
-                                                <svg viewBox="0 0 160 160">
-                                                    <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
-                                                    <circle r="69.85699" cy="80" cx="80" stroke="#ffa600" data-percent="86" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <div class="col-3 col-sm-6 col-xs-6 no-responsive">
-                                            <div class="donut-chart ease-donut-chart">
-                                                <strong class="dark"><span class="large xx-dark">Savings</span><br>3.9/5</strong>
-                                                <svg viewBox="0 0 160 160">
-                                                    <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
-                                                    <circle r="69.85699" cy="80" cx="80" stroke="#f47500" data-percent="80" />
-                                                </svg>
-                                            </div>
-                                        </div>
+                            <div id="detail-carousel" class="thumbs carousel" data-col="6" data-col-tablet="4" data-col-mobile="3">
+                                <div class="carousel-slider ease-2nd-layout ease-layout ease-slow photo-gallery-passive">
+                                    <div class="content">
+                                        <img class="img rounded selected" src="images/blank.gif" data-src="images/house_01.jpg" data-href="images/house_01.jpg" alt="">
                                     </div>
-                                    <div class="x-dark small align-center padding-10">
-                                        <b>Yearly Savings Costs: $18.970</b>
+                                    <div class="content">
+                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_02.jpg" data-href="images/house_02.jpg" alt="">
                                     </div>
+                                    <div class="content">
+                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_03.jpg" data-href="images/house_03.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_04.jpg" data-href="images/house_04.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_05.jpg" data-href="images/house_05.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_01.jpg" data-href="images/house_01.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_02.jpg" data-href="images/house_02.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_03.jpg" data-href="images/house_03.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_04.jpg" data-href="images/house_04.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <img class="img rounded" src="images/blank.gif" data-src="images/house_05.jpg" data-href="images/house_05.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="carousel-nav align-center ease-1st-bg">
+                                    <button class="carousel-prev btn btn-invisible btn-square rounded"><i class="icon icon-md icon-angle-left"></i></button>
+                                    <span class="dots dark"></span>
+                                    <button class="carousel-next btn btn-invisible btn-square rounded"><i class="icon icon-md icon-angle-right"></i></button>
                                 </div>
                             </div>
+                        </div>
 
+                        <div class="bordered rounded">
+                            <div class="padding-30 theme-gray ui-x-light">
+                                <h3 class="margin-10-b">
+                                    <i class="icon icon-xl icon-flash-on margin-5-r"></i>
+                                    Power Saving Statistics
+                                </h3>
+                                <ul class="list-unstyled">
+                                    <li><b>Power per Month:</b> 4,86 kWp</li>
+                                    <li><b>Yearly Output:</b> 4900 kWp</li>
+                                </ul>
+                            </div>
+                            <div class="padding-15-v padding-30-h bottom-bordered">
+                                <div class="row row-equal-height row-lg-padding">
+                                    <div class="col-5x col-sm-4 col-xs-6 no-responsive">
+                                        <div class="pie-chart ease-pie-chart" data-text="Total">
+                                            <ul>
+                                                <li data-percent="78" data-fill="#a4e87b"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-5x col-sm-4 col-xs-6 no-responsive">
+                                        <div class="donut-chart ease-donut-chart">
+                                            <strong class="dark"><span class="large xx-dark">Interior</span><br>4,9/5</strong>
+                                            <svg viewBox="0 0 160 160">
+                                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                                <circle r="69.85699" cy="80" cx="80" stroke="#75dbe7" data-percent="96" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col-5x col-sm-4 col-xs-6 no-responsive">
+                                        <div class="donut-chart ease-donut-chart">
+                                            <strong class="dark"><span class="large xx-dark">Exterior</span><br>4/5</strong>
+                                            <svg viewBox="0 0 160 160">
+                                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                                <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="88" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col-5x col-sm-4 col-xs-6 no-responsive">
+                                        <div class="donut-chart ease-donut-chart">
+                                            <strong class="dark"><span class="large xx-dark">Quality</span><br>4/5</strong>
+                                            <svg viewBox="0 0 160 160">
+                                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                                <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="86" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col-5x col-sm-4 col-xs-6 no-responsive">
+                                        <div class="donut-chart ease-donut-chart">
+                                            <strong class="dark"><span class="large xx-dark">Savings</span><br>3.9/5</strong>
+                                            <svg viewBox="0 0 160 160">
+                                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                                <circle r="69.85699" cy="80" cx="80" stroke="#cd7be8" data-percent="80" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="small align-center padding-10">
+                                    <b>Yearly Savings Costs: $18.970</b>
+                                </div>
+                            </div>
+                            <div class="padding-30">
+                                Each villa has been meticulously designed to meet all the demands that a luxury villa has to provide as well as offer a contemporary image of great beauty.
+                                <span class="sp20"></span>
+                                A large basement will locate another bedroom service, bathroom and common areas that can be allocated to gym, cinema, game room…
+                                <span class="sp20"></span>
+                                A unique opportunity in a highly sought after location that begins to be considered as the New Golden Mile.
+                                <span class="sp20"></span>
+                                The development of 3 luxury villas is planned in the residential neighborhood of Bel Air.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="static-400 order-md-first padding-10">
+
+                    <div class="align-center margin-1-b theme-default2">
+                        <div class="padding-10-v ui-x-dark rounded-top">
+                            <ul class="list-inline countdown no-user-select">
+                                <li class="padding-10"><i class="icon icon-xl icon-clock" data-tooltip="b" title="Countdown to bid closing!"></i></li>
+                                <li class="padding-5"><b class="d xx-large block">12</b>Days</li>
+                                <li class="padding-5"><b class="h xx-large block">22</b>Hours</li>
+                                <li class="padding-5"><b class="m xx-large block">01</b>Minutes</li>
+                                <li class="padding-5"><b class="s xx-large block">17</b>Seconds</li>
+                            </ul>
+                        </div>
+                        <div class="padding-5 ui-dark stripe-dark animate-progress">
+                            <b class="small xx-light">Closing Date: 10 August, 2018, Friday</b>
                         </div>
                     </div>
 
-                    <div class="static-350 padding-10">
+                    <div class="align-center margin-20-b theme-default rounded-bottom bordered">
+                        <div class="padding-20 theme-gray">
+                            <i class="icon ui-text icon-lg icon-floor-plan"></i>
+                            <span class="large inline-block margin-10-r">7+1</span>
+                            <i class="icon ui-text icon-lg icon-home-width"></i>
+                            <span class="large inline-block margin-10-r">628m<sup>2</sup></span>
+                            <i class="icon ui-text icon-lg icon-floor-number"></i> Ground Floor
+                            <span class="sp10"></span>
+                            <i class="icon dark icon-md icon-marker"></i> New York
+                        </div>
+                        <div class="padding-10 theme-gray ui-x-light">
+                            Real Estate ID: <b>RE-616</b>
+                        </div>
+                    </div>
 
-                        <div class="align-center margin-15-b theme-default2">
-                            <div class="padding-10-v ui-dark margin-1-b rounded-top">
-                                <ul class="list-inline countdown no-user-select">
-                                    <li class="padding-5"><i class="icon icon-xl icon-clock opacity-more ease-layout" data-tooltip="b" title="Countdown to bid closing!"></i></li>
-                                    <li class="padding-5"><b class="d xx-large block">12</b>Days</li>
-                                    <li class="padding-5"><b class="h xx-large block">22</b>Hours</li>
-                                    <li class="padding-5"><b class="m xx-large block">01</b>Minutes</li>
-                                    <li class="padding-5"><b class="s xx-large block">17</b>Seconds</li>
+                    <div class="margin-20-b rounded theme-gray bordered">
+                        <div class="padding-15-t padding-30-h no-padding-b">
+                            <b>Previous Offers / <span style="color: #ff9f40;">Averages</span></b>
+                            <div class="line-charts ease-line-charts" data-x="1,2,3,4,5">
+                                <ul class="line" data-type="curved filled">
+                                    <li data-y="820000"></li>
+                                    <li data-y="380000"></li>
+                                    <li data-y="140000"></li>
+                                    <li data-y="490000"></li>
+                                    <li data-y="560000"></li>
+                                </ul>
+                                <ul class="line" data-type="curved filled">
+                                    <li data-y="510000"></li>
+                                    <li data-y="860000"></li>
+                                    <li data-y="360000"></li>
+                                    <li data-y="1260000"></li>
+                                    <li data-y="820000"></li>
                                 </ul>
                             </div>
-                            <div class="padding-5 ui-dark rounded-bottom stripe-dark animate-progress">
-                                <b class="small light-ui">Closing Date: 10 August, 2018, Friday</b>
-                            </div>
                         </div>
-
-                        <div class="align-center margin-15-b theme-default2">
-                            <div class="padding-20 theme-gray ui-x-light">
-                                <i class="icon ui-text icon-lg icon-floor-plan"></i>
-                                <span class="large inline-block margin-10-r">7+1</span>
-                                <i class="icon ui-text icon-lg icon-home-width"></i>
-                                <span class="large inline-block margin-10-r">628m<sup>2</sup></span>
-                                <i class="icon ui-text icon-lg icon-floor-number"></i> Ground Floor
-                                <span class="sp10"></span>
-                                <i class="icon dark icon-md icon-marker"></i> Nashville, Tennessee
-                            </div>
-                            <div class="padding-10 rounded-bottom theme-gray ui-light">
-                                Real Estate ID: <b>RE-616</b>
-                            </div>
+                        <div class="padding-15-v padding-30-h theme-gray ui-x-light">
+                            <div class="largest bold">$640.000</div>
+                            <span class="dark">LATEST OFFER</span>
                         </div>
-
-                        <div class="margin-15-b rounded theme-gray ui-x-light">
-                            <div class="padding-15-v padding-30-h bottom-bordered">
-                                <div class="largest bold">$640.000</div>
-                                <span class="dark">LATEST OFFER</span>
+                        <div class="padding-30 padding-15-t">
+                            <div class="margin-15-b"><b>Min. Offer Amount: $5000</b><br>
+                                <span class="x-dark">Automatic 5% deposit required.</span>
                             </div>
-                            <div class="padding-30">
-                                <div class="x-dark margin-15-b"><b>Min. Offer Amount: $5000</b><br>Automatic 5% deposit required. This could changed, depending on market.</div>
-                                <form action="#">
-                                    <div class="col-static no-responsive currency-spinner">
-                                        <div class="static-50">
-                                            <button class="currency-down btn no-padding-h btn-lg btn-block rounded-left ease-btn" type="button"><i class="icon icon-md icon-minus"></i></button>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12 no-padding">
-                                                <div class="text text-lg dual-bordered ease-form">
-                                                    <input class="bold align-center x-large" type="text" value="645.000" min="645.000" step="5.000" maxlength="12" autocomplete="off">
-                                                </div>
+                            <form action="#">
+                                <div class="col-static no-responsive currency-spinner">
+                                    <div class="static-50">
+                                        <button class="currency-down btn no-padding-h btn-lg btn-block rounded-left ease-btn" type="button">
+                                            <i class="icon icon-md icon-minus"></i>
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 no-padding">
+                                            <div class="text text-lg no-bordered theme-gray ui-x-light ease-form">
+                                                <input class="bold align-center x-large" type="text" value="645.000" min="645.000" step="5.000" maxlength="12" autocomplete="off">
                                             </div>
                                         </div>
-                                        <div class="static-50">
-                                            <button class="currency-up btn no-padding-h btn-lg btn-block rounded-right ease-btn" type="button"><i class="icon icon-md icon-plus"></i></button>
-                                        </div>
                                     </div>
-                                    <span class="sp15"></span>
-                                    <button class="btn btn-lg btn-block rounded theme-green ui-dark ease-btn" type="submit">MAKE OFFER</button>
-                                </form>
-                            </div>
+                                    <div class="static-50">
+                                        <button class="currency-up btn no-padding-h btn-lg btn-block rounded-right theme-green ui-dark ease-btn" type="button">
+                                            <i class="icon icon-md icon-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <span class="sp15"></span>
+                                <button class="btn btn-lg btn-block rounded theme-green ui-x-dark ease-btn" type="submit">MAKE OFFER</button>
+                            </form>
                         </div>
+                    </div>
 
-                        <div class="padding-15-v padding-30-h rounded bordered">
-                            <ul class="list-unstyled dark list-spacer-15">
-                                <li><b class="block">Type</b>Single Family</li>
-                                <li><b class="block">Beds</b>4</li>
-                                <li><b class="block">Baths</b>2</li>
-                                <li><b class="block">Year Build</b>2009</li>
-                                <li><b class="block">Heating</b>Air Cooling</li>
-                                <li><b class="block">Parking</b>2 Spaces</li>
-                                <li><b class="block">Sqft</b>2,980m<sup>2</sup></li>
-                            </ul>
-                        </div>
-
+                    <div class="padding-20-v padding-30 rounded bordered">
+                        <a class="btn btn-lg btn-block btn-multitext rounded-top ease-btn" href="#">
+                            <i class="icon icon-lg icon-picture no-opacity margin-5-r"></i>
+                            All The HD Images
+                        </a>
+                        <span class="sp1"></span>
+                        <a class="btn btn-lg btn-block btn-multitext rounded-bottom theme-default2 ui-dark ease-btn" href="#">
+                            <i class="icon icon-lg icon-file-pdf no-opacity margin-5-r"></i>
+                            Property Brochure
+                        </a>
+                        <span class="sp2"></span>
+                        <span class="sp25"></span>
+                        <h4>Other Details</h4>
+                        <ul class="list-unstyled list-spacer-15">
+                            <li>
+                                <b class="large block margin-5-b">Build Surface</b>
+                                <i class="icon ui-text icon-lg icon-home-width margin-5-r x-dark"></i>
+                                <span class="x-dark">628m<sup>2</sup></span>
+                            </li>
+                            <li><b class="large block margin-5-b">Heating/Cooling System</b><span class="x-dark">Air Cooling</span></li>
+                            <li><b class="large block margin-5-b">Bedrooms</b><span class="x-dark">4</span></li>
+                            <li><b class="large block margin-5-b">Bathrooms/Guest toilets</b><span class="x-dark">3</span></li>
+                            <li><b class="large block margin-5-b">Year of Build</b><span class="x-dark">2019</span></li>
+                            <li><b class="large block margin-5-b">House Type</b><span class="x-dark">Single Family</span></li>
+                            <li><b class="large block margin-5-b">Parking</b><span class="x-dark">2 Spaces</span></li>
+                        </ul>
                     </div>
 
                 </div>
+
             </div>
 
         </div>
