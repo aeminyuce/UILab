@@ -20,6 +20,8 @@ var lineCharts = {
     showGridText: true, // set showing grid numbers
     showInfo: true, // set showing info
 
+    curveSize: 0, // set extra curve size
+
     gridStroke: 1, // set grid stroke width
     lineStroke: 2, // set line chart stroke width
     circleSize: 4 // set circle size
@@ -250,13 +252,13 @@ var lineCharts = {
 
                             if (i === 1) { // start curves
 
-                                paths += ' C ' + i * col + ' ' + posY + ',' +
-                                    ' ' + i * col + ' ' + posY + ',' +
+                                paths += ' C ' + ((i * col) - lineCharts.curveSize) + ' ' + posY + ',' +
+                                    ' ' + ((i * col) - lineCharts.curveSize) + ' ' + posY + ',' +
                                     ' ' + posX + ' ' + posY;
 
                             } else if (i > 0) { // other curves
 
-                                paths += ' S ' + i * col + ' ' + posY + ',' +
+                                paths += ' S ' + ((i * col) - lineCharts.curveSize) + ' ' + posY + ',' +
                                     ' ' + posX + ' ' + posY;
 
                             }
