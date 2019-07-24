@@ -12,11 +12,13 @@ var lineCharts = {
     colors: ['#36a2eb', '#ff9f40', '#ff6384', '#9966ff', '#4bc0c0', '#ffcd56', '#84594d', '#bbc451', '#6a6a6a', '#647bc1'],
 
     top: 6, // set top space (px)
-    right: 10, // set right space (px)
-    bottom: 20, // set bottom space (px)
+    right: 6, // set right space (px)
+    bottom: 15, // set bottom space (px)
     left: 35, // set left space (px)
 
     showBgGrid: true, // set showing bg grid
+    showGridText: true, // set showing grid numbers
+    showInfo: true, // set showing info
 
     gridStroke: 1, // set grid stroke width
     lineStroke: 2, // set line chart stroke width
@@ -161,7 +163,10 @@ var lineCharts = {
                 for (i = 0; i < x.length; i += 1) {
 
                     posX = (i * col) + lineCharts.left;
-                    html += '<text x="' + posX + '" y="' + (data.height - lineCharts.bottom + 20) + '">' + x[i] + '</text>';
+
+                    if (lineCharts.showGridText) {
+                        html += '<text x="' + posX + '" y="' + (data.height - lineCharts.bottom + 20) + '">' + x[i] + '</text>';
+                    }
 
                     if (i === 0 || lineCharts.showBgGrid) {
                         html += '<line x1="' + posX + '" x2="' + posX + '" y1="' + lineCharts.top + '" ';
@@ -184,7 +189,10 @@ var lineCharts = {
                 for (i = 0; i <= rows; i += 1) {
 
                     posY = parseInt((i * (data.height - (lineCharts.top + lineCharts.bottom)) / rows) + lineCharts.top, 10);
-                    html += '<text x="' + (lineCharts.left - 10) + '" y="' + (posY + 4) + '">' + (parseInt((yMax - yMin) / rows, 10) * (rows - i) + yMin) + '</text>';
+
+                    if (lineCharts.showGridText) {
+                        html += '<text x="' + (lineCharts.left - 10) + '" y="' + (posY + 4) + '">' + (parseInt((yMax - yMin) / rows, 10) * (rows - i) + yMin) + '</text>';
+                    }
 
                     if (i === rows || lineCharts.showBgGrid) {
                         html += '<line x2="' + (data.width - lineCharts.right + 1) + '" y1="' + posY + '" y2="' + posY + '" ';
@@ -307,28 +315,32 @@ var lineCharts = {
                 html += circles + '</g></svg>';
 
                 // create info
-                total = 0;
-                html += '<ul class="info">';
+                if (lineCharts.showInfo) {
 
-                for (i = 0; i < lines.length; i += 1) {
+                    total = 0;
+                    html += '<ul class="info">';
 
-                    for (j = 0; j < data[i].y.length; j += 1) {
-                        total += parseInt(data[i].y[j], 10);
+                    for (i = 0; i < lines.length; i += 1) {
+
+                        for (j = 0; j < data[i].y.length; j += 1) {
+                            total += parseInt(data[i].y[j], 10);
+                        }
+                        html += '<li><span style="background: ' + data.color[i] + '"></span>';
+
+                        if (data.name[i] === '') {
+                            html += '<b>' + total;
+
+                        } else {
+                            html += data.name[i] + ': <b>' + total;
+                        }
+
+                        html += '</b></li>';
+
                     }
-                    html += '<li><span style="background: ' + data.color[i] + '"></span>';
 
-                    if (data.name[i] === '') {
-                        html += '<b>' + total;
-
-                    } else {
-                        html += data.name[i] + ': <b>' + total;
-                    }
-
-                    html += '</b></li>';
+                    html += '</ul>';
 
                 }
-
-                html += '</ul>';
 
                 // parse html
                 this.innerHTML = data.backup;
