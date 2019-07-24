@@ -131,8 +131,8 @@ html:not(.portrait) .visible-portrait { display: none !important; }
 .circle-left { border-radius: 1000px 0 0 1000px; }
 
 .shadow-sm { box-shadow: 0 1px 3px rgba(0,0,0,.05); }
-.shadow { box-shadow: 0 1px 3px rgba(0,0,0,.15); }
-.shadow-lg { box-shadow: 0 5px 15px rgba(0,0,0,.15); }
+.shadow { box-shadow: 0 1px 3px rgba(0,0,0,.10); }
+.shadow-lg { box-shadow: 0 5px 15px rgba(0,0,0,.10); }
 
 html:not(.mobile) .hover-shadow:hover { box-shadow: 0 5px 15px rgba(0,0,0,.2); }
 
