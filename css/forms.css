@@ -15,7 +15,11 @@
 .text input,.select select { height: 30px; overflow: hidden; }
 .text.text-lg input,.select.select-lg select { font-size: 16px; line-height: 30px; height: 40px; padding-right: 10px; padding-left: 10px; }
 
-.dual-bordered .text input,.dual-bordered .select select,.text.dual-bordered input,.select.dual-bordered select { line-height: 18px; height: 28px; }
+.no-bordered .text input,.no-bordered .select select,.text.no-bordered input,.select.no-bordered select { line-height: 22px; height: 30px; }
+.no-bordered .text.text-lg input,.no-bordered .select.select-lg select,.text.no-bordered.text-lg input,.select.no-bordered.select-lg select { line-height: 30px; height: 40px; }
+.no-bordered.textarea textarea { line-height: 20px; }
+
+.dual-bordered .text input,.dual-bordered .select select,.text.dual-bordered input,.select.dual-bordered select { line-height: 20px; height: 28px; }
 .dual-bordered .text.text-lg input,.dual-bordered .select.select-lg select,.text.dual-bordered.text-lg input,.select.dual-bordered.select-lg select { line-height: 28px; height: 38px; }
 .dual-bordered.textarea textarea { line-height: 18px; }
 
