@@ -20,7 +20,7 @@ var lineCharts = {
     showGridText: true, // set showing grid numbers
     showInfo: true, // set showing info
 
-    curveSize: 0, // set extra curve size
+    curveSize: 24, // set curve size
 
     gridStroke: 1, // set grid stroke width
     lineStroke: 2, // set line chart stroke width
