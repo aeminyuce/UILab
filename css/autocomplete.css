@@ -6,7 +6,7 @@
 .autocomplete { overflow: visible !important; }
 .autocomplete.open { z-index: 19; }
 
-.autocomplete ul { list-style: none; min-width: 200px; width: 100%; max-width: 744px; background-color: #fff; padding: 0; margin-bottom: 0; position: absolute; }
+.autocomplete ul { color: #000; list-style: none; min-width: 200px; width: 100%; max-width: 744px; background-color: #fff; padding: 0; margin-bottom: 0; position: absolute; }
 .autocomplete:not(.open) ul { display: none; }
 
 .autocomplete:not(.submenu-top):not(.dual-bordered):not(.no-bordered) ul { margin-top: 2px; }
