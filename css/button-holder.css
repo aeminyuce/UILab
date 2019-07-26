@@ -1,7 +1,20 @@
 /* button holder */
-.btn-holder > .btn { float: left; }
-.btn-holder > .btn:last-child { border-right: 0; }
+.btn-holder:before,.btn-holder:after { content: ""; display: table; }
+.btn-holder:after { clear: both; }
 
+.btn-holder > .btn { float: left; }
+.btn-holder > .btn:not(:first-child):not(:last-child) { border-radius: 0; }
+
+.btn-holder:not(.sm-responsive):not(.xs-responsive) > .btn:not(:first-child):not(:last-child) { border-radius: 0; }
+.btn-holder:not(.sm-responsive):not(.xs-responsive) > .btn:not(:first-child) { border-left: 0; }
+
+.btn-holder:not(.sm-responsive):not(.xs-responsive) > .btn:first-child { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+.btn-holder:not(.sm-responsive):not(.xs-responsive) > .btn:first-child:not(.bordered):not(.dual-bordered) { border-left: 0; }
+
+.btn-holder:not(.sm-responsive):not(.xs-responsive) > .btn:last-child { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+.btn-holder:not(.sm-responsive):not(.xs-responsive) > .btn:last-child:not(.bordered):not(.dual-bordered) { border-right: 0; }
+
+.btn-holder.show-7 > .btn { width: 14.277777%; }
 .btn-holder.show-6 > .btn { width: 16.666666%; }
 .btn-holder.show-5 > .btn { width: 20%; }
 .btn-holder.show-4 > .btn { width: 25%; }
@@ -11,9 +24,41 @@
 
 .btn-holder-inline > .btn { margin-right: -2px !important; margin-left: -2px !important; }
 
+@media (min-width: 768px) {
+    .btn-holder.sm-responsive > .btn:not(:first-child) { border-left: 0; }
+
+    .btn-holder.sm-responsive > .btn:first-child { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+    .btn-holder.sm-responsive > .btn:first-child:not(.bordered):not(.dual-bordered) { border-left: 0; }
+
+    .btn-holder.sm-responsive > .btn:last-child { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+    .btn-holder.sm-responsive > .btn:last-child:not(.bordered):not(.dual-bordered) { border-right: 0; }
+}
 @media (max-width: 767px) {
-    .btn-holder.sm-responsive > .btn { width: 100%; border-right: 0; float: inherit; }
+    .btn-holder.sm-responsive > .btn { width: 100%; float: inherit; }
+    .btn-holder.sm-responsive > .btn:not(:first-child) { border-top: 0; }
+
+    .btn-holder.sm-responsive > .btn:first-child { border-bottom-right-radius: 0; border-bottom-left-radius: 0; }
+    .btn-holder.sm-responsive > .btn:first-child:not(.bordered):not(.dual-bordered) { border-top: 0; }
+
+    .btn-holder.sm-responsive > .btn:last-child { border-top-right-radius: 0; border-top-left-radius: 0; }
+    .btn-holder.sm-responsive > .btn:last-child:not(.bordered):not(.dual-bordered) { border-bottom: 0; }
+}
+@media (min-width: 481px) {
+    .btn-holder.xs-responsive > .btn:not(:first-child) { border-left: 0; }
+
+    .btn-holder.xs-responsive > .btn:first-child { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+    .btn-holder.xs-responsive > .btn:first-child:not(.bordered):not(.dual-bordered) { border-left: 0; }
+
+    .btn-holder.xs-responsive > .btn:last-child { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+    .btn-holder.xs-responsive > .btn:last-child:not(.bordered):not(.dual-bordered) { border-right: 0; }
 }
 @media (max-width: 480px) {
-    .btn-holder.xs-responsive > .btn { width: 100%; border-right: 0; float: inherit; }
+    .btn-holder.xs-responsive > .btn { width: 100%; float: inherit; }
+    .btn-holder.xs-responsive > .btn:not(:first-child) { border-top: 0; }
+
+    .btn-holder.xs-responsive > .btn:first-child { border-bottom-right-radius: 0; border-bottom-left-radius: 0; }
+    .btn-holder.xs-responsive > .btn:first-child:not(.bordered):not(.dual-bordered) { border-top: 0; }
+
+    .btn-holder.xs-responsive > .btn:last-child { border-top-right-radius: 0; border-top-left-radius: 0; }
+    .btn-holder.xs-responsive > .btn:last-child:not(.bordered):not(.dual-bordered) { border-bottom: 0; }
 }
