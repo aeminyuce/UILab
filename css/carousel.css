@@ -7,8 +7,8 @@
 .carousel { width: auto; overflow: hidden; position: relative; }
 .carousel:not(.active) { opacity: 0; }
 
-.carousel-slider { width: 20000px; overflow: hidden; }
-.carousel-slider > .content { margin-bottom: 5px; overflow: hidden; float: left; }
+.carousel-slider { width: 20000px; }
+.carousel-slider > .content { margin-bottom: 5px; float: left; }
 .carousel:not(.active) .carousel-slider > .content { width: 1px; }
 .carousel-slider > .content img.img { width: 100%; height: auto; }
 .carousel-slider > .content img.img:not(.loaded) { background-color: #ddd; animation: carousel-img-loader 3s linear infinite; }
