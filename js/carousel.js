@@ -144,7 +144,7 @@ var carousel = {
 
     function carouselResizerFnc(i, that, type) {
 
-        var col, j, k, slider, contents, animate, navDots, navDotsEl, navDotsLength, navDotsSize, navDotsHtml, navSides, navSide;
+        var col, j, k, slider, contents, animate, navDots, navDotsEl, navDotsLength, navDotsSize, navDotsHtml, navSides, navSide, halfSized, size;
 
         function fnc() {
 
@@ -152,7 +152,6 @@ var carousel = {
             if (contents.length === 0) { return; }
 
             navDots = selector('.carousel-nav .dots', that[i])[0];
-
             navDotsLength = selector('i', navDots).length;
 
             if (window.innerWidth > carousel.tablet) {
@@ -219,22 +218,31 @@ var carousel = {
 
             filterDots(navDots, navDotsEl, navSide); // filter dots when dots number exceeds
 
+            halfSized = events.hasClass(that[i], 'half-sized');
             slider = selector('.carousel-slider', that[i]);
 
-            for (j = 0; j < slider.length; j += 1) {
-                slider[j].style.width = (that[i].offsetWidth / col) * contents.length + 'px';
-            }
+            size = col;
+            if (halfSized && col > 1) { size -= 0.5; }
+
+            size = Math.ceil((that[i].offsetWidth) / size) * contents.length;
+            slider[0].style.width = size + 'px';
 
             for (j = 0; j < contents.length; j += 1) {
-                contents[j].style.width = (that[i].offsetWidth / col) + 'px';
+
+                size = col;
+                if (halfSized && col > 1) { size -= 0.5; }
+                size = Math.ceil(that[i].offsetWidth / size);
+
+                contents[j].style.width = size + 'px';
+
             }
 
             // detecting ie9
             if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
-                slider[0].style.marginLeft = '-' + (counts[i] * contents[i].offsetWidth) + 'px';
+                slider[0].style.marginLeft = '-' + (counts[i] * contents[0].offsetWidth) + 'px';
 
             } else {
-                slider[0].style.transform = 'translateX(-' + (counts[i] * contents[i].offsetWidth) + 'px)';
+                slider[0].style.transform = 'translateX(-' + (counts[i] * contents[0].offsetWidth) + 'px)';
             }
 
             carouselLazyImages(that[i], col, i);
@@ -289,7 +297,7 @@ var carousel = {
 
             carouselNav = function (that, direction) {
 
-                var col, slider, contents, animate, i, navDots, navDotsEl, navSide;
+                var col, slider, contents, animate, i, navDots, navDotsEl, navSide, slide, halfSized;
 
                 slider = selector('.carousel-slider', that);
                 contents = selector('.content', slider[0]);
@@ -364,13 +372,20 @@ var carousel = {
                 events.addClass(navDotsEl[navSide], 'selected');
 
                 filterDots(navDots, navDotsEl, navSide); // filter dots when dots number exceeds
+                slide = counts[i] * contents[0].offsetWidth;
+
+                halfSized = events.hasClass(that, 'half-sized');
+
+                if (halfSized && (counts[i] === contents.length - col)) {
+                    slide += contents[0].offsetWidth / 2;
+                }
 
                 // detecting ie9
                 if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
-                    slider[0].style.marginLeft = '-' + (counts[i] * contents[i].offsetWidth) + 'px';
+                    slider[0].style.marginLeft = '-' + slide + 'px';
 
                 } else {
-                    slider[0].style.transform = 'translateX(-' + (counts[i] * contents[i].offsetWidth) + 'px)';
+                    slider[0].style.transform = 'translateX(-' + slide + 'px)';
                 }
 
                 carouselLazyImages(that, col, i);
@@ -468,9 +483,6 @@ var carousel = {
                 that = this;
                 i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
 
-                clearInterval(autoSlider[i]);
-                clearTimeout(autoTimeouts[i]);
-
                 autoSlider[i] = setInterval(function () {
                     carouselNav(that, 'next');
                 }, autoTimer[i]);
@@ -551,7 +563,7 @@ var carousel = {
 
                         clearTimeout(touchEndTimer);
 
-                        sliderMax = -((contents.length - col) * contents[i].offsetWidth);
+                        sliderMax = -((contents.length - col) * contents[0].offsetWidth);
                         move = (startMove - (startx - currentx));
 
                         if (move > 0) {
@@ -588,13 +600,13 @@ var carousel = {
                         navDots = selector('.carousel-nav .dots', that[i])[0];
 
                         beforeCount = counts[i];
-                        counts[i] = Math.abs(move) / contents[i].offsetWidth;
+                        counts[i] = Math.abs(move) / contents[0].offsetWidth;
 
                         if (currentx < 0) {
                             currentx = 0;
 
-                        } else if (currentx > contents[i].offsetWidth) {
-                            currentx = contents[i].offsetWidth;
+                        } else if (currentx > contents[0].offsetWidth) {
+                            currentx = contents[0].offsetWidth;
                         }
 
                         if ((currentx - startx) > 0) { // slide to right
@@ -617,7 +629,7 @@ var carousel = {
 
                         }
 
-                        slider.style.transform = 'translateX(' + -(counts[i] * contents[i].offsetWidth) + 'px)';
+                        slider.style.transform = 'translateX(' + -(counts[i] * contents[0].offsetWidth) + 'px)';
                         that.setAttribute('data-content', (counts[i] + 1));
 
                         navSide = Math.round(counts[i] * Math.ceil(contents.length / col) / contents.length);
