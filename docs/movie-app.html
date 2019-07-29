@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>UI Lab, Movie App</title>
+    <meta name="keywords" content="uilab, responsive, design system, css, javascript, movie app">
+    <meta name="description" content="CSS & JavaScript powered responsive design system." />
+    <meta name="author" content="Ahmet Emin Yüce"/>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
+
+    <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/alignments.css" />
+    <link rel="stylesheet" href="../css/buttons.css" />
+    <link rel="stylesheet" href="../css/borders.css" />
+    <link rel="stylesheet" href="../css/carousel.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <link rel="stylesheet" href="../css/form-icons.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/helpers.css" />
+    <link rel="stylesheet" href="../css/icons.css" />
+    <link rel="stylesheet" href="../css/icons-notifiers.css" />
+    <link rel="stylesheet" href="../css/ie9-placeholders.css" />
+    <link rel="stylesheet" href="../css/listings.css" />
+    <link rel="stylesheet" href="../css/margins.css" />
+    <link rel="stylesheet" href="../css/photo-images.css" />
+    <link rel="stylesheet" href="../css/paddings.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/scrollbar.css" />
+    <link rel="stylesheet" href="../css/static-grid.css" />
+    <link rel="stylesheet" href="../css/sticky-header.css" />
+    <link rel="stylesheet" href="../css/transitions.css" />
+    <link rel="stylesheet" href="../css/typography.css" />
+    <link rel="stylesheet" href="../css/swatches.css" />
+    <link rel="stylesheet" href="../css/top-button.css" />
+
+    <!-- Javascript Tools -->
+    <script src="../js/selector.js"></script>
+    <script src="../js/events.js"></script>
+
+    <script src="../js/carousel.js"></script>
+    <script src="../js/ie9-placeholders.js"></script>
+    <script src="../js/forms.js"></script>
+    <script src="../js/sticky-header.js"></script>
+    <script src="../js/top-button.js"></script>
+    <script src="../js/static-grid.js"></script>
+    <script src="../js/swatches.js"></script>
+    <script src="../js/transitions.js"></script>
+    <script src="../js/user-agents.js"></script>
+
+    <!-- font icons CSS -->
+    <link rel="stylesheet" href="icons/font-icons/outline/font-icons.css" />
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="container theme-default ui-dark">
+        <div class="row theme-default2 ui-border top-bordered dual-bordered">
+            <div class="col-12">
+                <a href="index.html" class="btn btn-lg btn-square circle ease-btn margin-10-r"><i class="icon icon-md no-opacity icon-long-arrow-left"></i></a>
+                <h1 class="x-large inline-block">UI Lab, Movie App</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- documentation examples -->
+    <main class="container no-gutter">
+        <div class="fixed">
+            <div class="row">
+                <div class="col-static padding-30-v sm-responsive">
+                    <div class="static-200 padding-30 align-left">
+
+                        <h5 class="dark padding-15-h">LIBRARY</h5>
+                        <ul class="list-unstyled list-spacer-15 large bold theme-default2 ease-2nd-btn">
+                            <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">TV Shows</a></li>
+                            <li><a class="btn btn-lg btn-block circle" href="#">Films</a></li>
+                            <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Sports</a></li>
+                            <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Music Concerts</a></li>
+                            <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Comedy</a></li>
+                            <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Other</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="row row-no-padding">
+                        <div class="col-12">
+
+                            <div class="padding-30">
+                                <div class="row row-no-padding-ver row-equal-height">
+                                    <div class="col-6">
+                                        <div class="text text-lg text-icon text-icon-lg text-icon-left circle no-bordered theme-gray ui-x-light ease-form">
+                                            <i class="icon icon-md icon-search ease-layout margin-5-l"></i>
+                                            <input type="text" placeholder="Search for movies, TV shows...">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 align-right">
+                                        <span class="dark align-center margin-20-r ease-1st-btn">
+                                            <button class="btn btn-square btn-lg btn-invisible circle">
+                                                <i class="icon icon-md icon-user no-opacity"></i>
+                                            </button>
+                                            <button class="btn btn-square btn-lg btn-invisible circle">
+                                                <i class="icon icon-md icon-bell notifier no-opacity"></i>
+                                            </button>
+                                            <button class="btn btn-square btn-lg btn-invisible circle">
+                                                <i class="icon icon-md icon-settings no-opacity"></i>
+                                            </button>
+                                        </span>
+                                        <img class="img-photo img-photo-sm circle margin-15-l right" src="images/profile-image.jpg" alt="">
+                                        <span class="padding-5-t right">
+                                            aeminyuce <span class="small dark block">Premium</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="padding-30-h">
+                                <h3 class="bold">Now Showing</h3>
+                            </div>
+
+                            <div class="carousel half-sized" data-col="4" data-col-tablet="2" data-col-mobile="1">
+                                <div class="carousel-slider margin-15 ease-layout ease-slow ease-in-out">
+                                    <div class="content padding-15">
+                                        <a class="block hover-shadow scale ease-layout" href="#"><img class="img-responsive rounded" src="images/movie_01.jpg" alt=""></a>
+                                    </div>
+                                    <div class="content padding-15">
+                                        <a class="block hover-shadow scale ease-layout" href="#"><img class="img-responsive rounded" src="images/movie_02.jpg" alt=""></a>
+                                    </div>
+                                    <div class="content padding-15">
+                                        <a class="block hover-shadow scale ease-layout" href="#"><img class="img-responsive rounded" src="images/movie_03.jpg" alt=""></a>
+                                    </div>
+                                    <div class="content padding-15">
+                                        <a class="block hover-shadow scale ease-layout" href="#"><img class="img-responsive rounded" src="images/movie_04.jpg" alt=""></a>
+                                    </div>
+                                    <div class="content padding-15">
+                                        <a class="block hover-shadow scale ease-layout" href="#"><img class="img-responsive rounded" src="images/movie_01.jpg" alt=""></a>
+                                    </div>
+                                    <div class="content padding-15">
+                                        <a class="block hover-shadow scale ease-layout" href="#"><img class="img-responsive rounded" src="images/movie_02.jpg" alt=""></a>
+                                    </div>
+                                    <div class="content padding-15">
+                                        <a class="block hover-shadow scale ease-layout" href="#"><img class="img-responsive rounded" src="images/movie_03.jpg" alt=""></a>
+                                    </div>
+                                    <div class="content padding-15">
+                                        <a class="block hover-shadow scale ease-layout" href="#"><img class="img-responsive rounded" src="images/movie_04.jpg" alt=""></a>
+                                    </div>
+                                    <div class="content padding-15">
+                                        <a class="block hover-shadow scale ease-layout" href="#"><img class="img-responsive rounded" src="images/movie_01.jpg" alt=""></a>
+                                    </div>
+                                    <div class="content padding-15">
+                                        <a class="block hover-shadow scale ease-layout" href="#"><img class="img-responsive rounded" src="images/movie_02.jpg" alt=""></a>
+                                    </div>
+                                    <div class="content padding-15">
+                                        <a class="block hover-shadow scale ease-layout" href="#"><img class="img-responsive rounded" src="images/movie_03.jpg" alt=""></a>
+                                    </div>
+                                    <div class="content padding-15">
+                                        <a class="block hover-shadow scale ease-layout" href="#"><img class="img-responsive rounded" src="images/movie_04.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="carousel-nav align-center ease-1st-bg">
+                                    <button class="carousel-prev btn btn-invisible btn-square rounded"><i class="icon icon-angle-left"></i></button>
+                                    <span class="dots dark"></span>
+                                    <button class="carousel-next btn btn-invisible btn-square rounded"><i class="icon icon-angle-right"></i></button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
