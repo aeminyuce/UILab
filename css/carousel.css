@@ -7,10 +7,11 @@
 .carousel { width: auto; overflow: hidden; position: relative; }
 .carousel:not(.active) { opacity: 0; }
 
-.carousel-slider { width: 20000px; overflow: hidden; }
-.carousel-slider > .content { margin-bottom: 5px; overflow: hidden; float: left; }
+.carousel-slider { width: 20000px; }
+.carousel-slider > .content { margin-bottom: 5px; float: left; }
 .carousel:not(.active) .carousel-slider > .content { width: 1px; }
-.carousel-slider > .content img.img { width: 100%; height: auto; }
+.carousel-slider > .content .img { display: block; }
+.carousel-slider > .content img.img { width: 100%; height: auto;  }
 .carousel-slider > .content img.img:not(.loaded) { background-color: #ddd; animation: carousel-img-loader 3s linear infinite; }
 
 /* ie9 not supported row equal heights */
@@ -45,7 +46,6 @@
 .carousel-gallery .detail { min-height: 210px; position: relative; }
 .carousel-gallery .detail img { display: block; position: relative; z-index: 2; }
 .carousel-gallery .detail img,.carousel-gallery .detail.detail-holder img { width: 100%; display: inline-block; position: relative; z-index: 1; cursor: pointer; }
-html:not(.mobile) .carousel-gallery .detail:not(.detail-loader) img:hover { opacity: .8; }
 .mobile .carousel-gallery .detail img { opacity: .8; }
 
 .carousel-gallery .detail .icon { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
@@ -64,4 +64,3 @@ html:not(.mobile) .carousel-gallery .detail:not(.detail-loader) img:hover { opac
 .carousel-gallery .thumbs .img-holder img { width: 100%; height: auto; }
 .carousel-gallery .thumbs .img { border: solid 2px transparent; cursor: pointer; }
 .carousel-gallery .thumbs .img.selected { border-color: #ffa600; }
-html:not(.mobile) .carousel-gallery .thumbs .img:not(.selected):not(:hover) { opacity: .65; }
