@@ -61,7 +61,7 @@ html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hove
 .btn-block { width: 100%; display: block; }
 
 .btn-invisible.ui-dark:not(.ui-text),.btn-invisible.ui-x-dark:not(.ui-text) { color: #000; }
-.btn-invisible.ui-dark:hover,.btn-invisible.ui-x-dark:hover { color: #fff; }
+.btn-invisible.ui-dark:hover,.btn-invisible.ui-x-dark:hover { color: #fff !important; }
 .btn-invisible:not(:hover) { background-color: rgba(0,0,0,0) !important; }
 
 .btn-invisible-border:not(:hover) { border-color: rgba(0,0,0,0) !important; }
