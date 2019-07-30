@@ -224,18 +224,14 @@ var carousel = {
             size = col;
             if (halfSized && col > 1) { size -= 0.5; }
 
-            size = Math.ceil((that[i].offsetWidth) / size) * contents.length;
-            slider[0].style.width = size + 'px';
+            size = Math.ceil(that[i].offsetWidth / size);
 
             for (j = 0; j < contents.length; j += 1) {
-
-                size = col;
-                if (halfSized && col > 1) { size -= 0.5; }
-                size = Math.ceil(that[i].offsetWidth / size);
-
                 contents[j].style.width = size + 'px';
-
             }
+
+            size = size * contents.length;
+            slider[0].style.width = size + 'px';
 
             // detecting ie9
             if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
