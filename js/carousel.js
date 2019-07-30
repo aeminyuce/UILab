@@ -5,8 +5,11 @@
 
 var carousel = {
 
-    mobile: 767, // data-col-mobile breakdown
-    tablet: 959, // data-col-tablet breakdown
+    xl: 1680,
+    lg: 1200,
+    md: 959,
+    sm: 767,
+    xs: 468,
 
     showMaxDots: 10 // 5+ numbers, allowed size for dots number exceeds
 
@@ -19,8 +22,12 @@ var carousel = {
 
     var
         cols = [],
-        colsTablet = [],
-        colsMobile = [],
+
+        colsXL = [],
+        colsLG = [],
+        colsMD = [],
+        colsSM = [],
+        colsXS = [],
 
         counts = [],
 
@@ -38,6 +45,33 @@ var carousel = {
 
         isScrollingTimer,
         isScrolling = false;
+
+    function getCols(i) {
+
+        var col;
+
+        if (window.innerWidth >= carousel.xl) {
+            col = colsXL[i];
+
+        } else if (window.innerWidth < carousel.xl && window.innerWidth >= carousel.lg) {
+            col = colsLG[i];
+
+        } else if (window.innerWidth <= carousel.md && window.innerWidth > carousel.sm) {
+            col = colsMD[i];
+
+        } else if (window.innerWidth <= carousel.sm && window.innerWidth > carousel.xs) {
+            col = colsSM[i];
+
+        } else if (window.innerWidth <= carousel.xs) {
+            col = colsXS[i];
+
+        } else {
+            col = cols[i];
+        }
+
+        return col;
+
+    }
 
     function carouselAnimate(content, time, wait, type) {
 
@@ -89,7 +123,7 @@ var carousel = {
 
                 loadingImgs[i][l].addEventListener('load', function () {
 
-                    if (loadingImgs[i][l] === undefined) { return; }
+                    if (loadingImgs[i][l] === undefined || loadingImgs[i][l].length === 0) { return; }
 
                     loadedImgs[i][l].src = loadingImgs[i][l].src;
                     events.addClass(loadedImgs[i][l], 'loaded');
@@ -154,15 +188,7 @@ var carousel = {
             navDots = selector('.carousel-nav .dots', that[i])[0];
             navDotsLength = selector('i', navDots).length;
 
-            if (window.innerWidth > carousel.tablet) {
-                col = cols[i];
-
-            } else if (window.innerWidth > carousel.mobile && window.innerWidth <= carousel.tablet) {
-                col = colsTablet[i];
-
-            } else {
-                col = colsMobile[i];
-            }
+            col = getCols(i); // get responsive cols
 
             navSides = Math.ceil(contents.length / col);
             navDotsSize = navSides - navDotsLength;
@@ -303,15 +329,7 @@ var carousel = {
                 navDots = selector('.carousel-nav .dots', that);
                 navDotsEl = selector('.carousel-nav .dots i', that);
 
-                if (window.innerWidth > carousel.tablet) {
-                    col = cols[i];
-
-                } else if (window.innerWidth > carousel.mobile && window.innerWidth <= carousel.tablet) {
-                    col = colsTablet[i];
-
-                } else {
-                    col = colsMobile[i];
-                }
+                col = getCols(i); // get responsive cols
 
                 if (direction === 'next') {
 
@@ -394,9 +412,14 @@ var carousel = {
                 var that = this;
 
                 cols[j] = that.getAttribute('data-col');
-                colsTablet[j] = that.getAttribute('data-col-tablet');
-                colsMobile[j] = that.getAttribute('data-col-mobile');
 
+                colsXL[j] = that.getAttribute('data-col-xl');
+                colsLG[j] = that.getAttribute('data-col-lg');
+                colsMD[j] = that.getAttribute('data-col-md');
+                colsSM[j] = that.getAttribute('data-col-sm');
+                colsXS[j] = that.getAttribute('data-col-xs');
+
+                // data-col
                 if (cols[j] === null) {
                     cols[j] = 1;
 
@@ -409,26 +432,67 @@ var carousel = {
 
                 }
 
-                if (colsTablet[j] === null) {
-                    colsTablet[j] = cols[j];
+                // data-col-xl
+                if (colsXL[j] === null) {
+                    colsXL[j] = cols[j];
 
                 } else {
 
-                    colsTablet[j] = Number(colsTablet[j]);
-                    if (!colsTablet[j] || colsTablet[j] === '0' || colsTablet[j] === '') {
-                        colsTablet[j] = cols[j];
+                    colsXL[j] = Number(colsXL[j]);
+                    if (!colsXL[j] || colsXL[j] === '0' || colsXL[j] === '') {
+                        colsXL[j] = cols[j];
                     }
 
                 }
 
-                if (colsMobile[j] === null) {
-                    colsMobile[j] = cols[j];
+                // data-col-lg
+                if (colsLG[j] === null) {
+                    colsLG[j] = cols[j];
 
                 } else {
 
-                    colsMobile[j] = Number(colsMobile[j]);
-                    if (!colsMobile[j] || colsMobile[j] === '0' || colsMobile[j] === '') {
-                        colsMobile[j] = cols[j];
+                    colsLG[j] = Number(colsLG[j]);
+                    if (!colsLG[j] || colsLG[j] === '0' || colsLG[j] === '') {
+                        colsLG[j] = cols[j];
+                    }
+
+                }
+
+                // data-col-md
+                if (colsMD[j] === null) {
+                    colsMD[j] = cols[j];
+
+                } else {
+
+                    colsMD[j] = Number(colsMD[j]);
+                    if (!colsMD[j] || colsMD[j] === '0' || colsMD[j] === '') {
+                        colsMD[j] = cols[j];
+                    }
+
+                }
+
+                // data-col-sm
+                if (colsSM[j] === null) {
+                    colsSM[j] = cols[j];
+
+                } else {
+
+                    colsSM[j] = Number(colsSM[j]);
+                    if (!colsSM[j] || colsSM[j] === '0' || colsSM[j] === '') {
+                        colsSM[j] = cols[j];
+                    }
+
+                }
+
+                // data-col-xs
+                if (colsXS[j] === null) {
+                    colsXS[j] = cols[j];
+
+                } else {
+
+                    colsXS[j] = Number(colsXS[j]);
+                    if (!colsXS[j] || colsXS[j] === '0' || colsXS[j] === '') {
+                        colsXS[j] = cols[j];
                     }
 
                 }
@@ -519,16 +583,7 @@ var carousel = {
                 navDotsEl = selector('.carousel-nav .dots i', that);
 
                 i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
-
-                if (window.innerWidth > carousel.tablet) {
-                    col = cols[i];
-
-                } else if (window.innerWidth > carousel.mobile && window.innerWidth <= carousel.tablet) {
-                    col = colsTablet[i];
-
-                } else {
-                    col = colsMobile[i];
-                }
+                col = getCols(i); // get responsive cols
 
                 startMove = window.getComputedStyle(slider).getPropertyValue('transform'); // matrix(xZoom, 0, 0, yZoom, xPos, yPos)
                 startMove = startMove.replace('matrix', '').replace(/[\,\(\)\s]/g, ' ').replace(/\s\s/g, '|'); // select only numbers
