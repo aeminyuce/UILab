@@ -8,7 +8,7 @@
 .carousel:not(.active) { opacity: 0; }
 
 .carousel-slider { width: 20000px; }
-.carousel-slider > .content { margin-bottom: 5px; float: left; }
+.carousel-slider > .content { float: left; }
 .carousel:not(.active) .carousel-slider > .content { width: 1px; }
 .carousel-slider > .content img.img { width: 100%; height: auto; }
 .carousel-slider > .content img.img:not(.loaded) { background-color: #ddd; animation: carousel-img-loader 3s linear infinite; }
@@ -19,7 +19,7 @@
 
 .carousel .scroll > *,.carousel .v-scroll > *,.carousel .h-scroll > * { -webkit-transform: translateZ(0); } /* ios: disappearing elements fix */
 
-.carousel .carousel-nav { white-space: nowrap; line-height: 6px; overflow: hidden; display: block; cursor: default; }
+.carousel .carousel-nav { white-space: nowrap; line-height: 6px; margin-top: 5px; overflow: hidden; display: block; cursor: default; }
 .carousel .carousel-nav .dots i { width: 7px; height: 7px; background-color: currentColor; margin: 0 3px; display: inline-block; border-radius: 50%; opacity: .45; }
 .carousel .carousel-nav .dots i.selected { background-color: currentColor; opacity: 1; transform: scale(1.5); }
 
