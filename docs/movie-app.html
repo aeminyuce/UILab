@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="../css/margins.css" />
     <link rel="stylesheet" href="../css/photo-images.css" />
     <link rel="stylesheet" href="../css/paddings.css" />
+    <link rel="stylesheet" href="../css/portlets.css" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/scrollbar.css" />
     <link rel="stylesheet" href="../css/static-grid.css" />
@@ -54,7 +55,16 @@
     <script src="../js/user-agents.js"></script>
 
     <!-- font icons CSS -->
-    <link rel="stylesheet" href="icons/font-icons/outline/font-icons.css" />
+    <link rel="stylesheet" href="icons/font-icons/fill/font-icons.css" />
+
+    <!-- custom fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap">
+
+    <!-- custom CSS -->
+    <style>
+        body,input,button,textarea,select { font-family: 'Lato', sans-serif; }
+        body { background: url(images/page_bg_02.jpg) no-repeat center center; background-size: cover; }
+    </style>
 
 </head>
 
@@ -71,106 +81,212 @@
     </header>
 
     <!-- documentation examples -->
-    <main class="container no-gutter">
-        <div class="fixed">
-            <div class="row">
-                <div class="col-static padding-30-v sm-responsive">
-                    <div class="static-200 padding-30 align-left">
+    <main class="container no-gutter ui-dark">
+        <div class="col-static sm-responsive">
+            <div class="static-200 padding-15 align-left">
 
-                        <h5 class="dark padding-15-h">LIBRARY</h5>
-                        <ul class="list-unstyled list-spacer-15 large bold theme-default2 ease-2nd-btn">
-                            <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">TV Shows</a></li>
-                            <li><a class="btn btn-lg btn-block circle" href="#">Films</a></li>
-                            <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Sports</a></li>
-                            <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Music Concerts</a></li>
-                            <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Comedy</a></li>
-                            <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Other</a></li>
-                        </ul>
+                <h5 class="light-ui padding-15">LIBRARY</h5>
+                <ul class="list-unstyled list-spacer-15 large bold theme-default2 ease-2nd-btn">
+                    <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">TV Shows</a></li>
+                    <li><a class="btn btn-lg btn-block circle" href="#">Films</a></li>
+                    <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Sports</a></li>
+                    <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Music Concerts</a></li>
+                    <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Comedy</a></li>
+                    <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Other</a></li>
+                </ul>
 
+            </div>
+            <div class="row row-no-padding">
+                <div class="col-12">
+
+                    <div class="padding-15">
+                        <div class="row row-equal-height">
+                            <div class="col-6">
+                                <div class="text text-lg text-icon text-icon-lg text-icon-left circle ease-form form-light">
+                                    <i class="icon icon-sm icon-search ease-layout margin-5-l"></i>
+                                    <input type="text" placeholder="Search for movies, TV shows...">
+                                </div>
+                            </div>
+                            <div class="col-6 align-right sm-align-center">
+                                <span class="align-center margin-20-r ease-1st-btn">
+                                    <button class="btn btn-square btn-lg btn-invisible circle">
+                                        <i class="icon icon-md icon-user no-opacity"></i>
+                                    </button>
+                                    <button class="btn btn-square btn-lg btn-invisible circle">
+                                        <i class="icon icon-md icon-bell notifier no-opacity"></i>
+                                    </button>
+                                    <button class="btn btn-square btn-lg btn-invisible circle">
+                                        <i class="icon icon-md icon-settings no-opacity"></i>
+                                    </button>
+                                </span>
+                                <span class="inline-block right sm-no-float">
+                                    <img class="img-photo img-photo-sm circle margin-10-l right" src="images/profile-image.jpg" alt="">
+                                    <span class="margin-3-t inline-block">aeminyuce</span>
+                                    <span class="small light-ui block">Premium</span>
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="row row-no-padding">
-                        <div class="col-12">
 
-                            <div class="padding-30">
-                                <div class="row row-no-padding-ver row-equal-height">
-                                    <div class="col-6">
-                                        <div class="text text-lg text-icon text-icon-lg text-icon-left circle no-bordered theme-gray ui-x-light ease-form">
-                                            <i class="icon icon-md icon-search ease-layout margin-5-l"></i>
-                                            <input type="text" placeholder="Search for movies, TV shows...">
+                    <div class="col-static">
+                        <div class="row row-no-padding">
+                            <div class="col-12">
+
+                                <h2 class="bold padding-15-h">Now Showing</h2>
+                                <div class="carousel half-sized margin-15-r md-no-margin-r" data-col-xl="7" data-col-lg="5" data-col="3" data-col-md="4" data-col-sm="4" data-col-xs="2">
+                                    <div class="carousel-slider ease-layout ease-slow ease-in-out">
+                                        <div class="content padding-15">
+                                            <a class="block scale ease-layout" href="#">
+                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_01.jpg" alt="">
+                                                <b class="large">Captain Marvel</b>
+                                                <span class="x-light-ui margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
+                                                <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
+                                                <span class="inline-block margin-2-l margin-10-r">
+                                                    7,0 <span class="x-small light-ui">/10</span> &nbsp; 7+
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="content padding-15">
+                                            <a class="block scale ease-layout" href="#">
+                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_02.jpg" alt="">
+                                                <b class="large">Avengers: Endgame</b>
+                                                <span class="x-light-ui margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
+                                                <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
+                                                <span class="inline-block margin-2-l margin-10-r">
+                                                    8,7 <span class="x-small light-ui">/10</span> &nbsp; 8+
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="content padding-15">
+                                            <a class="block scale ease-layout" href="#">
+                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_03.jpg" alt="">
+                                                <b class="large">Captain America</b>
+                                                <span class="x-light-ui margin-5-b block">2014 &nbsp; Action, Sci-Fi</span>
+                                                <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
+                                                <span class="inline-block margin-2-l margin-10-r">
+                                                    7,8 <span class="x-small light-ui">/10</span> &nbsp; 13+
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="content padding-15">
+                                            <a class="block scale ease-layout" href="#">
+                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_04.jpg" alt="">
+                                                <b class="large">Ant-Man</b>
+                                                <span class="x-light-ui margin-5-b block">2015 &nbsp; Action, Comedy</span>
+                                                <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
+                                                <span class="inline-block margin-2-l margin-10-r">
+                                                    7,3 <span class="x-small light-ui">/10</span> &nbsp; 13+
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="content padding-15">
+                                            <a class="block scale ease-layout" href="#">
+                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_05.jpg" alt="">
+                                                <b class="large">Venom</b>
+                                                <span class="x-light-ui margin-5-b block">2018 &nbsp; Action, Thriller</span>
+                                                <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
+                                                <span class="inline-block margin-2-l margin-10-r">
+                                                    6,7 <span class="x-small light-ui">/10</span> &nbsp; 15+
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="content padding-15">
+                                            <a class="block scale ease-layout" href="#">
+                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_06.jpg" alt="">
+                                                <b class="large">Justice League</b>
+                                                <span class="x-light-ui margin-5-b block">2017 &nbsp; Action, Fantasy</span>
+                                                <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
+                                                <span class="inline-block margin-2-l margin-10-r">
+                                                    6,4 <span class="x-small light-ui">/10</span> &nbsp; 13+
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="content padding-15">
+                                            <a class="block scale ease-layout" href="#">
+                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_01.jpg" alt="">
+                                                <b class="large">Captain Marvel</b>
+                                                <span class="x-light-ui margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
+                                                <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
+                                                <span class="inline-block margin-2-l margin-10-r">
+                                                    7,0 <span class="x-small light-ui">/10</span> &nbsp; 7+
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="content padding-15">
+                                            <a class="block scale ease-layout" href="#">
+                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_02.jpg" alt="">
+                                                <b class="large">Avengers: Endgame</b>
+                                                <span class="x-light-ui margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
+                                                <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
+                                                <span class="inline-block margin-2-l margin-10-r">
+                                                    8,7 <span class="x-small light-ui">/10</span> &nbsp; 8+
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="content padding-15">
+                                            <a class="block scale ease-layout" href="#">
+                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_03.jpg" alt="">
+                                                <b class="large">Captain America</b>
+                                                <span class="x-light-ui margin-5-b block">2014 &nbsp; Action, Sci-Fi</span>
+                                                <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
+                                                <span class="inline-block margin-2-l margin-10-r">
+                                                    7,8 <span class="x-small light-ui">/10</span> &nbsp; 13+
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="content padding-15">
+                                            <a class="block scale ease-layout" href="#">
+                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_04.jpg" alt="">
+                                                <b class="large">Ant-Man</b>
+                                                <span class="x-light-ui margin-5-b block">2015 &nbsp; Action, Comedy</span>
+                                                <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
+                                                <span class="inline-block margin-2-l margin-10-r">
+                                                    7,3 <span class="x-small light-ui">/10</span> &nbsp; 13+
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="content padding-15">
+                                            <a class="block scale ease-layout" href="#">
+                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_05.jpg" alt="">
+                                                <b class="large">Venom</b>
+                                                <span class="x-light-ui margin-5-b block">2018 &nbsp; Action, Thriller</span>
+                                                <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
+                                                <span class="inline-block margin-2-l margin-10-r">
+                                                    6,7 <span class="x-small light-ui">/10</span> &nbsp; 15+
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="content padding-15">
+                                            <a class="block scale ease-layout" href="#">
+                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_06.jpg" alt="">
+                                                <b class="large">Justice League</b>
+                                                <span class="x-light-ui margin-5-b block">2017 &nbsp; Action, Fantasy</span>
+                                                <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
+                                                <span class="inline-block margin-2-l margin-10-r">
+                                                    6,4 <span class="x-small light-ui">/10</span> &nbsp; 13+
+                                                </span>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="col-6 align-right">
-                                        <span class="dark align-center margin-20-r ease-1st-btn">
-                                            <button class="btn btn-square btn-lg btn-invisible circle">
-                                                <i class="icon icon-md icon-user no-opacity"></i>
-                                            </button>
-                                            <button class="btn btn-square btn-lg btn-invisible circle">
-                                                <i class="icon icon-md icon-bell notifier no-opacity"></i>
-                                            </button>
-                                            <button class="btn btn-square btn-lg btn-invisible circle">
-                                                <i class="icon icon-md icon-settings no-opacity"></i>
-                                            </button>
-                                        </span>
-                                        <img class="img-photo img-photo-sm circle margin-15-l right" src="images/profile-image.jpg" alt="">
-                                        <span class="padding-5-t right">
-                                            aeminyuce <span class="small dark block">Premium</span>
-                                        </span>
+                                    <div class="carousel-nav align-center ease-1st-bg">
+                                        <button class="carousel-prev btn btn-invisible btn-square rounded"><i class="icon icon-md icon-angle-left"></i></button>
+                                        <span class="dots"></span>
+                                        <button class="carousel-next btn btn-invisible btn-square rounded"><i class="icon icon-md icon-angle-right"></i></button>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="padding-30-h">
-                                <h3 class="bold">Now Showing</h3>
                             </div>
+                        </div>
+                        <div class="static-400 padding-15-h">
 
-                            <div class="carousel half-sized" data-col="4" data-col-tablet="2" data-col-mobile="1">
-                                <div class="carousel-slider margin-15 ease-layout ease-slow ease-in-out">
-                                    <div class="content padding-15">
-                                        <a class="block hover-shadow scale ease-layout" href="#"><img class="img-responsive rounded" src="images/movie_01.jpg" alt=""></a>
-                                    </div>
-                                    <div class="content padding-15">
-                                        <a class="block hover-shadow scale ease-layout" href="#"><img class="img-responsive rounded" src="images/movie_02.jpg" alt=""></a>
-                                    </div>
-                                    <div class="content padding-15">
-                                        <a class="block hover-shadow scale ease-layout" href="#"><img class="img-responsive rounded" src="images/movie_03.jpg" alt=""></a>
-                                    </div>
-                                    <div class="content padding-15">
-                                        <a class="block hover-shadow scale ease-layout" href="#"><img class="img-responsive rounded" src="images/movie_04.jpg" alt=""></a>
-                                    </div>
-                                    <div class="content padding-15">
-                                        <a class="block hover-shadow scale ease-layout" href="#"><img class="img-responsive rounded" src="images/movie_01.jpg" alt=""></a>
-                                    </div>
-                                    <div class="content padding-15">
-                                        <a class="block hover-shadow scale ease-layout" href="#"><img class="img-responsive rounded" src="images/movie_02.jpg" alt=""></a>
-                                    </div>
-                                    <div class="content padding-15">
-                                        <a class="block hover-shadow scale ease-layout" href="#"><img class="img-responsive rounded" src="images/movie_03.jpg" alt=""></a>
-                                    </div>
-                                    <div class="content padding-15">
-                                        <a class="block hover-shadow scale ease-layout" href="#"><img class="img-responsive rounded" src="images/movie_04.jpg" alt=""></a>
-                                    </div>
-                                    <div class="content padding-15">
-                                        <a class="block hover-shadow scale ease-layout" href="#"><img class="img-responsive rounded" src="images/movie_01.jpg" alt=""></a>
-                                    </div>
-                                    <div class="content padding-15">
-                                        <a class="block hover-shadow scale ease-layout" href="#"><img class="img-responsive rounded" src="images/movie_02.jpg" alt=""></a>
-                                    </div>
-                                    <div class="content padding-15">
-                                        <a class="block hover-shadow scale ease-layout" href="#"><img class="img-responsive rounded" src="images/movie_03.jpg" alt=""></a>
-                                    </div>
-                                    <div class="content padding-15">
-                                        <a class="block hover-shadow scale ease-layout" href="#"><img class="img-responsive rounded" src="images/movie_04.jpg" alt=""></a>
-                                    </div>
-                                </div>
-                                <div class="carousel-nav align-center ease-1st-bg">
-                                    <button class="carousel-prev btn btn-invisible btn-square rounded"><i class="icon icon-angle-left"></i></button>
-                                    <span class="dots dark"></span>
-                                    <button class="carousel-next btn btn-invisible btn-square rounded"><i class="icon icon-angle-right"></i></button>
-                                </div>
+                            <span class="sp30 visible-md"></span>
+                            <div class="portlet full-height padding-30 rounded shadow">
+                                aaaa
                             </div>
 
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
