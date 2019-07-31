@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="../css/ie9-placeholders.css" />
     <link rel="stylesheet" href="../css/listings.css" />
     <link rel="stylesheet" href="../css/margins.css" />
+    <link rel="stylesheet" href="../css/mobile-menu.css" />
     <link rel="stylesheet" href="../css/photo-images.css" />
     <link rel="stylesheet" href="../css/paddings.css" />
     <link rel="stylesheet" href="../css/portlets.css" />
@@ -50,6 +51,7 @@
     <script src="../js/carousel.js"></script>
     <script src="../js/ie9-placeholders.js"></script>
     <script src="../js/forms.js"></script>
+    <script src="../js/mobile-menu.js"></script>
     <script src="../js/sticky-header.js"></script>
     <script src="../js/top-button.js"></script>
     <script src="../js/static-grid.js"></script>
@@ -65,9 +67,15 @@
 
     <!-- custom CSS -->
     <style>
+
         body,input,button,textarea,select { font-family: 'Lato', sans-serif; }
         body { background: url(images/page_bg_02.jpg) no-repeat top center; background-size: cover; }
         .rounded { border-radius: 12px; }
+
+        @media (max-width: 959px) {
+            .md-static-57 { width: 57px; }
+        }
+
     </style>
 
 </head>
@@ -86,25 +94,27 @@
 
     <!-- documentation examples -->
     <main class="container no-gutter padding-30-b margin-30-b ui-dark">
-        <div class="col-static sm-responsive">
-            <div class="static-200 padding-15 align-left">
+        <div class="col-static no-responsive">
+            <div class="static-200 md-static-57 padding-15 hidden-md">
 
-                <h5 class="light-ui padding-15">LIBRARY</h5>
-                <ul class="list-unstyled list-spacer-15 large bold theme-default2 ease-2nd-btn">
-                    <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">TV Shows</a></li>
-                    <li><a class="btn btn-lg btn-block circle" href="#">Films</a></li>
-                    <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Sports</a></li>
-                    <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Music Concerts</a></li>
-                    <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Comedy</a></li>
-                    <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Other</a></li>
-                </ul>
+                <div class="align-left add-mobile-menu-left">
+                    <h5 class="light-ui padding-15">LIBRARY</h5>
+                    <ul class="list-unstyled list-spacer-15 large bold theme-default2 ease-2nd-btn">
+                        <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">TV Shows</a></li>
+                        <li><a class="btn btn-lg btn-block circle" href="#">Films</a></li>
+                        <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Sports</a></li>
+                        <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Music Concerts</a></li>
+                        <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Comedy</a></li>
+                        <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Other</a></li>
+                    </ul>
 
-                <h5 class="light-ui padding-15">NEWS &amp; EVENTS</h5>
-                <ul class="list-unstyled list-spacer-15 large bold theme-default2 ease-2nd-btn">
-                    <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">News</a></li>
-                    <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Community</a></li>
-                    <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Events</a></li>
-                </ul>
+                    <h5 class="light-ui padding-15">NEWS &amp; EVENTS</h5>
+                    <ul class="list-unstyled list-spacer-15 large bold theme-default2 ease-2nd-btn">
+                        <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">News</a></li>
+                        <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Community</a></li>
+                        <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Events</a></li>
+                    </ul>
+                </div>
 
             </div>
             <div class="row row-no-padding">
@@ -120,6 +130,9 @@
                             </div>
                             <div class="col-6 align-right sm-align-center">
                                 <span class="align-center margin-20-r ease-1st-btn">
+                                    <button class="btn btn-square btn-lg btn-invisible circle left sm-no-float show-mobile-menu-left visible-md">
+                                        <i class="icon icon-md icon-bars no-opacity"></i>
+                                    </button>
                                     <button class="btn btn-square btn-lg btn-invisible circle">
                                         <i class="icon icon-md icon-user no-opacity"></i>
                                     </button>
@@ -405,6 +418,17 @@
             </div>
         </div>
     </main>
+
+    <!-- mobile menu -->
+    <div class="mobile-menu show-left theme-default2 ui-dark ease-layout ease-slow ease-in-out">
+        <button class="btn btn-square btn-lg btn-invisible rounded ease-btn close-mobile-menu">
+            <i class="icon icon-md icon-remove no-opacity"></i>
+        </button>
+        <div class="mobile-menu-title padding-20-v x-large bottom-bordered">
+            Categories
+        </div>
+        <div class="mobile-menu-content no-padding v-scroll"></div>
+    </div>
 
 </body>
 </html>
