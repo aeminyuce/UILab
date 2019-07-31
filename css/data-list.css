@@ -2,8 +2,6 @@
 .ease-data-list .data-content { transition-property: background-color; transition-duration: .15s; }
 .no-transitions-all .ease-data-list .data-content { transition-property: none !important; }
 
-.data-list[class*="bordered"] { border-color: #ddd; }
-
 .data-list [data-sort] .icon { opacity: 1 !important; }
 
 .data-list .data-content:not([class*="col-"]) { padding: 10px; border-bottom: solid 1px #ddd; }
