@@ -16,6 +16,7 @@
     <!-- CSS Tools -->
     <link rel="stylesheet" href="../css/alignments.css" />
     <link rel="stylesheet" href="../css/buttons.css" />
+    <link rel="stylesheet" href="../css/calendar.css" />
     <link rel="stylesheet" href="../css/borders.css" />
     <link rel="stylesheet" href="../css/data-list.css" />
     <link rel="stylesheet" href="../css/dropdown.css" />
@@ -25,11 +26,13 @@
     <link rel="stylesheet" href="../css/helpers.css" />
     <link rel="stylesheet" href="../css/icons.css" />
     <link rel="stylesheet" href="../css/icons-notifiers.css" />
+    <link rel="stylesheet" href="../css/line-charts.css" />
     <link rel="stylesheet" href="../css/listings.css" />
     <link rel="stylesheet" href="../css/margins.css" />
     <link rel="stylesheet" href="../css/mobile-menu.css" />
     <link rel="stylesheet" href="../css/paddings.css" />
     <link rel="stylesheet" href="../css/photo-images.css" />
+    <link rel="stylesheet" href="../css/pie-chart.css" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/portlets.css" />
     <link rel="stylesheet" href="../css/scrollbar.css" />
@@ -46,11 +49,16 @@
     <!-- Javascript Tools -->
     <script src="../js/selector.js"></script>
     <script src="../js/events.js"></script>
+
+    <script src="../js/ajax.js"></script>
+    <script src="../js/calendar.js"></script>
     <script src="../js/countdown.js"></script>
     <script src="../js/data-list.js"></script>
     <script src="../js/dropdown.js"></script>
     <script src="../js/forms.js"></script>
+    <script src="../js/line-charts.js"></script>
     <script src="../js/mobile-menu.js"></script>
+    <script src="../js/pie-chart.js"></script>
     <script src="../js/portlets.js"></script>
     <script src="../js/static-grid.js"></script>
     <script src="../js/sticky-header.js"></script>
@@ -62,11 +70,18 @@
     <script src="../js/user-agents.js"></script>
 
     <!-- font icons CSS -->
-    <link rel="stylesheet" href="icons/font-icons/outline/font-icons.css" />
+    <link rel="stylesheet" href="icons/font-icons/fill/font-icons.css" />
+
+    <!-- custom fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap">
 
     <!-- custom CSS -->
     <style>
-        body { background-color: #f9f9f9; }
+        body,input,button,textarea,select { font-family: 'Lato', sans-serif; }
+        body { background: #fdfdfd; }
+        .rounded { border-radius: 10px; }
+        .sidebar { background-image: linear-gradient(150deg, #13b2ed, #1075ca); }
+        .profile { background-color: rgba(0,0,0,.15); }
     </style>
 
 </head>
@@ -95,285 +110,259 @@
 
     <!-- documentation examples -->
     <main class="container no-gutter">
-        <div class="col-static sm-responsive">
+        <div class="col-static">
 
             <!-- sidebar -->
-            <div class="static-300 padding-15-h padding-15-v sm-no-padding-v theme-default ui-x-dark">
-                <div class="padding-15-v">
+            <div class="sidebar static-300 padding-15-h padding-15-v ui-x-dark">
 
-                    <!-- profile -->
-                    <div class="padding-30-v sm-no-padding-v rounded theme-default2 ui-dark set-relative shadow">
-                        <div class="align-center padding-10-v">
-                            <button class="btn btn-sm btn-invisible margin-5 rounded set-absolute set-top set-left ease-btn" data-tooltip="r" title="Show messages">
-                                <i class="icon icon-sm icon-message no-opacity notifier"></i>
+                <span class="sp15 hidden-md"></span>
+
+                <!-- profile -->
+                <div class="profile padding-30-v sm-no-padding-v rounded set-relative">
+                    <div class="align-center padding-10-v">
+                        <button class="btn btn-invisible margin-10 rounded set-absolute set-top set-left ease-btn" data-tooltip="r" title="Show messages">
+                            <i class="icon icon-md icon-message no-opacity notifier"></i>
+                        </button>
+                        <div class="dropdown margin-10 set-absolute set-top set-right">
+                            <button class="btn btn-invisible rounded ease-btn" data-tooltip="r" title="Settings">
+                                <i class="icon icon-md icon-ellipsis-hor no-opacity"></i>
                             </button>
-                            <div class="dropdown margin-5 set-absolute set-top set-right">
-                                <button class="btn btn-sm btn-invisible rounded ease-btn" data-tooltip="r" title="Settings">
-                                    <i class="icon icon-sm icon-ellipsis-hor no-opacity"></i>
-                                </button>
-                                <ul class="content xx-dark rounded shadow-lg ease-dropdown">
-                                    <li><a href="#"><i class="icon dark icon-sm icon-customer margin-10-r"></i>Edit Profile</a></li>
-                                    <li><a href="#"><i class="icon dark icon-sm icon-user margin-10-r"></i>Change Profile Photo</a></li>
-                                    <li><a href="#"><i class="icon dark icon-sm icon-key margin-10-r"></i>Change Password</a></li>
-                                    <li><a href="#"><i class="icon font-red icon-sm icon-logout margin-10-r"></i>Log Out</a></li>
-                                </ul>
-                            </div>
-                            <div class="padding-10 circle inline-block ui-x-dark">
-                                <a class="scale-more ease-layout" href="#" data-tooltip="r" title="Show your profile">
-                                    <img class="img-photo-lg circle shadow" src="images/profile-image.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="x-large padding-10-t margin-3-t">
-                                A. Emin Yuce
-                            </div>
-                            <span class="x-light-ui">Supervisor</span>
-                            <div class="countdown x-large margin-10-t">
-                                <div data-tooltip title="Idle time">
-                                    <i class="icon icon-sm icon-clock margin-5-r x-light-ui"></i>
-                                    <span class="align-middle">
-                                        <span class="h">00</span>:<span class="m">59</span>:<span class="s">59</span>
-                                    </span>
-                                </div>
+                            <ul class="content xx-dark rounded shadow-lg ease-dropdown">
+                                <li><a href="#"><i class="icon dark icon-sm icon-customer margin-10-r"></i>Edit Profile</a></li>
+                                <li><a href="#"><i class="icon dark icon-sm icon-user margin-10-r"></i>Change Profile Photo</a></li>
+                                <li><a href="#"><i class="icon dark icon-sm icon-key margin-10-r"></i>Change Password</a></li>
+                                <li><a href="#"><i class="icon font-red icon-sm icon-logout margin-10-r"></i>Log Out</a></li>
+                            </ul>
+                        </div>
+                        <div class="padding-4 circle inline-block theme-yellow ui-x-dark">
+                            <a class="scale ease-layout" href="#" data-tooltip="r" title="Show your profile">
+                                <img class="img-photo-lg circle shadow" src="images/profile-image.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="x-large padding-10-t margin-3-t">
+                            A. Emin Yuce
+                        </div>
+                        <span class="x-light-ui">Supervisor</span>
+                        <div class="countdown x-large margin-10-t">
+                            <div data-tooltip title="Idle time">
+                                <i class="icon icon-sm icon-clock margin-3-r x-light-ui"></i>
+                                <span class="align-middle x-light-ui">
+                                    <span class="h">00</span>:<span class="m">59</span>:<span class="s">59</span>
+                                </span>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- nav -->
-                    <nav class="margin-30-t hidden-md">
-                        <ul class="xx-light align-left list-unstyled ease-2nd-button theme-default2 add-mobile-menu-right" data-import="1">
-                            <li>
-                                <a class="btn btn-lg btn-block margin-5-b btn-invisible right-bordered large-bordered ui-border" href="#">
-                                    <i class="icon icon-lg icon-pie-chart no-opacity margin-15-r"></i>
-                                    Dashboard
-                                </a>
-                            </li>
-                            <li>
-                                <a class="btn btn-lg btn-block margin-5-b btn-invisible btn-invisible-border right-bordered large-bordered ui-border" href="#">
-                                    <i class="icon icon-lg icon-bank no-opacity x-light-ui margin-15-r"></i>
-                                    <span class="x-light-ui">Companies</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="btn btn-lg btn-block margin-5-b btn-invisible btn-invisible-border right-bordered large-bordered ui-border" href="#">
-                                    <i class="icon icon-lg icon-user-accepted no-opacity x-light-ui margin-15-r"></i>
-                                    <span class="x-light-ui">Employees</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="btn btn-lg btn-block margin-5-b btn-invisible btn-invisible-border right-bordered large-bordered ui-border" href="#">
-                                    <i class="icon icon-lg icon-credit-card-accepted no-opacity x-light-ui margin-15-r"></i>
-                                    <span class="x-light-ui">Payments</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="btn btn-lg btn-block margin-5-b btn-invisible btn-invisible-border right-bordered large-bordered ui-border" href="#">
-                                    <i class="icon icon-lg icon-calendar no-opacity x-light-ui margin-15-r"></i>
-                                    <span class="x-light-ui">Events</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="btn btn-lg btn-block margin-5-b btn-invisible btn-invisible-border right-bordered large-bordered ui-border" href="#">
-                                    <i class="icon icon-lg icon-doc no-opacity x-light-ui margin-15-r"></i>
-                                    <span class="x-light-ui">Documents</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="btn btn-lg btn-block margin-5-b btn-invisible btn-invisible-border right-bordered large-bordered ui-border" href="#">
-                                    <i class="icon icon-lg icon-files no-opacity x-light-ui margin-15-r"></i>
-                                    <span class="x-light-ui">Files</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="btn btn-lg btn-block margin-5-b btn-invisible btn-invisible-border right-bordered large-bordered ui-border" href="#">
-                                    <i class="icon icon-lg icon-table no-opacity x-light-ui margin-15-r"></i>
-                                    <span class="x-light-ui">Lists</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="btn btn-lg btn-block margin-5-b btn-invisible btn-invisible-border right-bordered large-bordered ui-border" href="#">
-                                    <i class="icon icon-lg icon-chart-outcome no-opacity x-light-ui margin-15-r"></i>
-                                    <span class="x-light-ui">Statistics</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                <!-- nav -->
+                <nav class="margin-20-v hidden-md">
+                    <ul class="xx-light align-left list-unstyled ease-2nd-button add-mobile-menu-right" data-import="1">
+                        <li>
+                            <a class="btn btn-lg btn-block margin-5-b btn-invisible left-bordered large-bordered" style="border-color: #94daf4;" href="#">
+                                <i class="icon icon-lg icon-pie-chart no-opacity margin-15-r"></i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-lg btn-block margin-5-b btn-invisible btn-invisible-border left-bordered large-bordered" href="#">
+                                <i class="icon icon-lg icon-bank no-opacity margin-15-r"></i>
+                                Companies
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-lg btn-block margin-5-b btn-invisible btn-invisible-border left-bordered large-bordered" href="#">
+                                <i class="icon icon-lg icon-user-accepted no-opacity margin-15-r"></i>
+                                Employees
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-lg btn-block margin-5-b btn-invisible btn-invisible-border left-bordered large-bordered" href="#">
+                                <i class="icon icon-lg icon-credit-card-accepted no-opacity margin-15-r"></i>
+                                Payments
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-lg btn-block margin-5-b btn-invisible btn-invisible-border left-bordered large-bordered" href="#">
+                                <i class="icon icon-lg icon-calendar no-opacity margin-15-r"></i>
+                                Events
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-lg btn-block margin-5-b btn-invisible btn-invisible-border left-bordered large-bordered" href="#">
+                                <i class="icon icon-lg icon-doc no-opacity margin-15-r"></i>
+                                Documents
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-lg btn-block margin-5-b btn-invisible btn-invisible-border left-bordered large-bordered" href="#">
+                                <i class="icon icon-lg icon-table no-opacity margin-15-r"></i>
+                                Lists
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-lg btn-block margin-5-b btn-invisible btn-invisible-border left-bordered large-bordered" href="#">
+                                <i class="icon icon-lg icon-chart-outcome no-opacity margin-15-r"></i>
+                                Statistics
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="hidden-md">
+
+                    <span class="sp5"></span>
 
                     <!-- tips -->
-                    <div class="hidden-md">
-                        <div class="portlet padding-15 margin-30-t rounded theme-green ui-x-dark shadow add-mobile-menu-right" data-import="2">
-                            <button class="close-portlet icon icon-xs icon-remove ease-layout"></button>
-                            <i class="icon icon-md icon-heart-fill margin-10-r"></i><b>System Tips</b>
-                            <span class="sp5"></span>
-                            <i>Lorem ipsum dolor sit amet.</i>
-                            <span class="sp15"></span>
-                            <button class="btn btn-block circle ease-btn"><b>Got it!</b></button>
-                        </div>
+                    <div class="portlet padding-15 rounded theme-green ui-x-dark shadow-lg add-mobile-menu-right" data-import="2">
+                        <button class="close-portlet icon icon-xs icon-remove ease-layout"></button>
+                        <i class="icon icon-md icon-heart-fill margin-10-r"></i><b>System Tips</b>
+                        <span class="sp5"></span>
+                        <span class="large">Your stats have been backed up.</span>
+                        <span class="sp15"></span>
+                        <button class="btn btn-block circle ease-btn"><b>Got it!</b></button>
                     </div>
 
                 </div>
+
             </div>
 
-            <div class="row padding-5">
+            <div class="row padding-30-h padding-20-v">
 
-                <div class="padding-15 sm-no-padding">
+                <div class="row">
+                    <div class="col-7 lg-responsive">
 
-                    <div class="col-static lg-responsive">
-                        <div class="row">
-                            <div class="col-12">
+                        <!-- charts -->
+                        <div class="portlet rounded shadow-lg">
+                            <div class="content-side padding-15 rounded-top bottom-bordered">
+                                <a href="#" class="btn right circle ease-btn hidden-xs">
+                                    More<i class="icon icon-xs icon-angle-right margin-5-l"></i>
+                                </a>
+                                <h4 class="margin-5-b">Averages of Work</h4>
+                                <div class="x-dark xs-align-center">
+                                    Finished per Month <b>263</b> works.
+                                </div>
+                                <a href="#" class="btn btn-block margin-10-t circle ease-btn visible-xs">
+                                    Show More
+                                    <i class="icon icon-xs icon-angle-right margin-10-l"></i>
+                                </a>
+                            </div>
+                            <div class="content-side padding-30">
 
-                                <!-- charts -->
-                                <div class="portlet rounded shadow">
-                                    <div class="content-side padding-15 bottom-bordered">
-                                        <a href="#" class="btn right circle ease-btn hidden-xs">
-                                            More
-                                            <i class="icon icon-xs icon-angle-right margin-10-l"></i>
-                                        </a>
-                                        <h4 class="margin-10-b">Averages of Work</h4>
-                                        <div class="xs-align-center">
-                                            <b>Finished per Month:</b> 263 works
+                                <span class="sp25"></span>
+
+                                <div class="row row-md-padding">
+                                    <div class="col-4 xs-responsive">
+                                        <div class="donut-chart ease-donut-chart xs-static-150 lg-static-150 automargin">
+                                            <strong>
+                                                <i class="icon icon-xl icon-flag" style="color: #69aff4;"></i>
+                                                <b style="font-weight: normal;" class="dark margin-10-t margin-5-t block">Last Month</b>
+                                                <b class="large">220</b>
+                                            </strong>
+                                            <svg viewBox="0 0 160 160">
+                                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                                <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="90" />
+                                            </svg>
                                         </div>
-                                        <a href="#" class="btn btn-block margin-10-t circle ease-btn visible-xs">
-                                            Show More
-                                            <i class="icon icon-xs icon-angle-right margin-10-l"></i>
-                                        </a>
                                     </div>
-                                    <div class="content-side padding-15">
-                                        <div class="row row-md-padding">
-                                            <div class="col-4 xs-responsive">
-                                                <div class="donut-chart ease-donut-chart xs-static-150 lg-static-150 automargin">
-                                                    <strong>
-                                                        <i class="icon icon-xl icon-flag theme-default ui-text"></i>
-                                                        <span class="sp5"></span>
-                                                        <b>Last Month</b><br>
-                                                        <span class="dark">220</span>
-                                                    </strong>
-                                                    <svg viewBox="0 0 160 160">
-                                                        <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
-                                                        <circle r="69.85699" cy="80" cx="80" stroke="#364860" data-percent="90" />
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                            <div class="col-4 xs-responsive">
-                                                <div class="donut-chart ease-donut-chart xs-static-150 lg-static-150 automargin">
-                                                    <strong>
-                                                        <i class="icon icon-xl icon-finish theme-default ui-text"></i>
-                                                        <span class="sp5"></span>
-                                                        <b>Last Year</b><br>
-                                                        <span class="dark">2275</span>
-                                                    </strong>
-                                                    <svg viewBox="0 0 160 160">
-                                                        <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
-                                                        <circle r="69.85699" cy="80" cx="80" stroke="#364860" data-percent="79" />
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                            <div class="col-4 xs-responsive">
-                                                <div class="donut-chart ease-donut-chart xs-static-150 lg-static-150 automargin">
-                                                    <strong>
-                                                        <i class="icon icon-xl icon-chart-outcome theme-default2 ui-text"></i>
-                                                        <span class="sp5"></span>
-                                                        <b>Profit</b><br>
-                                                        <span class="dark">3,9/5</span>
-                                                    </strong>
-                                                    <svg viewBox="0 0 160 160">
-                                                        <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
-                                                        <circle r="69.85699" cy="80" cx="80" stroke="#647bc1" data-percent="61" />
-                                                    </svg>
-                                                </div>
-                                            </div>
+                                    <div class="col-4 xs-responsive">
+                                        <div class="donut-chart ease-donut-chart xs-static-150 lg-static-150 automargin">
+                                            <strong>
+                                                <i class="icon icon-xl icon-finish" style="color: #75dbe7;"></i>
+                                                <b style="font-weight: normal;" class="dark margin-10-t margin-5-t block">Last Year</b>
+                                                <b class="large">2275</b>
+                                            </strong>
+                                            <svg viewBox="0 0 160 160">
+                                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                                <circle r="69.85699" cy="80" cx="80" stroke="#75dbe7" data-percent="79" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 xs-responsive">
+                                        <div class="pie-chart ease-pie-chart xs-static-150 lg-static-150 automargin" data-text="Profit">
+                                            <ul>
+                                                <li data-percent="66" data-fill="#cd7be8" data-title="66%"></li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
 
+                                <span class="sp20"></span>
+                                <span class="sp4"></span>
+
                             </div>
                         </div>
-                        <div class="static-300 padding-10">
 
-                            <!-- calendar -->
-                            <div class="portlet rounded padding-5 shadow">
-                                <table class="table table-ultra-condensed align-center no-separated rounded">
-                                    <caption class="rounded margin-10-b padding-25-v">
-                                        <b>January</b> 2019
-                                    </caption>
-                                    <thead>
-                                        <tr>
-                                            <th class="padding-1-t padding-10-b">Mon</th>
-                                            <th class="padding-1-t padding-10-b">Tue</th>
-                                            <th class="padding-1-t padding-10-b">Wed</th>
-                                            <th class="padding-1-t padding-10-b">Thu</th>
-                                            <th class="padding-1-t padding-10-b">Fri</th>
-                                            <th class="padding-1-t padding-10-b">Sat</th>
-                                            <th class="padding-1-t padding-10-b">Sun</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="theme-default2">
-                                        <tr class="ease-2nd-btn">
-                                            <td class="padding-2"></td>
-                                            <td class="padding-2"><a href="#" class="btn btn-invisible btn-sm btn-block rounded">1</a></td>
-                                            <td class="padding-2"><a href="#" class="btn btn-invisible btn-sm btn-block rounded">2</a></td>
-                                            <td class="padding-2"><a href="#" class="btn btn-invisible btn-sm btn-block rounded">3</a></td>
-                                            <td class="padding-2"><a href="#" class="btn btn-invisible btn-sm btn-block rounded">4</a></td>
-                                            <td class="padding-2"><a href="#" class="btn btn-invisible btn-sm btn-block rounded">5</a></td>
-                                            <td class="padding-2"><a href="#" class="btn btn-invisible btn-sm btn-block rounded">6</a></td>
-                                        </tr>
-                                        <tr class="ease-2nd-btn">
-                                            <td class="padding-2"><a href="#" class="btn btn-invisible btn-sm btn-block rounded">7</a></td>
-                                            <td class="padding-2"><a href="#" class="btn btn-invisible btn-sm btn-block rounded">8</a></td>
-                                            <td class="padding-2"><a href="#" class="btn btn-sm btn-block rounded ui-dark">9</a></td>
-                                            <td class="padding-2"><a href="#" class="btn btn-sm btn-block rounded ui-dark">10</a></td>
-                                            <td class="padding-2"><a href="#" class="btn btn-sm btn-block rounded ui-dark">11</a></td>
-                                            <td class="padding-2"><a href="#" class="btn btn-invisible btn-sm btn-block rounded">12</a></td>
-                                            <td class="padding-2"><a href="#" class="btn btn-invisible btn-sm btn-block rounded">13</a></td>
-                                        </tr>
-                                        <tr class="ease-2nd-btn">
-                                            <td class="padding-2"><a href="#" class="btn btn-invisible btn-sm btn-block rounded">14</a></td>
-                                            <td class="padding-2"><a href="#" class="btn btn-invisible btn-sm btn-block rounded">15</a></td>
-                                            <td class="padding-2"><a href="#" class="btn btn-sm btn-block rounded ui-dark">16</a></td>
-                                            <td class="padding-2"><a href="#" class="btn btn-invisible btn-sm btn-block rounded">17</a></td>
-                                            <td class="padding-2"><a href="#" class="btn btn-invisible btn-sm btn-block rounded">18</a></td>
-                                            <td class="padding-2"><a href="#" class="btn btn-invisible btn-sm btn-block rounded">19</a></td>
-                                            <td class="padding-2"><a href="#" class="btn btn-invisible btn-sm btn-block rounded">20</a></td>
-                                        </tr>
-                                        <tr class="ease-2nd-btn">
-                                            <td class="padding-2"><a href="#" class="btn btn-sm btn-block rounded ui-dark">21</a></td>
-                                            <td class="padding-2"><a href="#" class="btn btn-invisible btn-sm btn-block rounded">22</a></td>
-                                            <td class="padding-2"><a href="#" class="btn btn-sm btn-block rounded ui-dark">23</a></td>
-                                            <td class="padding-2"><a href="#" class="btn btn-invisible btn-sm btn-block rounded">24</a></td>
-                                            <td class="padding-2"><a href="#" class="btn btn-sm btn-block rounded theme-red ui-x-light">25</a></td>
-                                            <td class="padding-2"><a href="#" class="btn btn-sm btn-block rounded theme-red ui-x-light">26</a></td>
-                                            <td class="padding-2"><a href="#" class="btn btn-invisible btn-sm btn-block rounded">27</a></td>
-                                        </tr>
-                                        <tr class="ease-2nd-btn">
-                                            <td class="padding-2"><a href="#" class="btn btn-sm btn-block rounded ui-dark">28</a></td>
-                                            <td class="padding-2"><a href="#" class="btn btn-invisible btn-sm btn-block rounded">29</a></td>
-                                            <td class="padding-2"><a href="#" class="btn btn-sm btn-block rounded theme-red ui-x-light">30</a></td>
-                                            <td class="padding-2"><a href="#" class="btn btn-invisible btn-sm btn-block rounded">31</a></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                        </div>
                     </div>
+                    <div class="col-5 lg-responsive">
+                        <div class="calendar ease-calendar rounded shadow-lg" data-src="json/events.json" data-date="2019,6"></div>
+                    </div>
+                </div>
 
-                    <!-- employee list -->
-                    <div class="padding-10">
-                        <h4>Employee List</h4>
-                        <div class="data-list data-striped data-hover portlet rounded shadow ease-data-list">
+                <div class="row">
+                    <div class="col-7 lg-responsive">
+
+                        <div class="portlet rounded shadow-lg">
+
+                            <div class="content-side padding-15 rounded-top bottom-bordered">
+                                <h4 class="margin-5-b">Last Week Stats</h4>
+                                <div class="x-dark xs-align-center">
+                                    Maximum value of profit <b>159</b> packages.
+                                </div>
+                            </div>
+
+                            <div class="padding-15">
+
+                                <span class="sp4"></span>
+
+                                <div class="line-charts ease-line-charts" data-size="5,57" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                                    <ul class="line" data-name="1st" data-type="filled curved">
+                                        <li data-y="55" data-link="#1"></li>
+                                        <li data-y="70" data-link="#2"></li>
+                                        <li data-y="92" data-link="#3"></li>
+                                        <li data-y="55" data-link="#4"></li>
+                                        <li data-y="89" data-link="#5"></li>
+                                        <li data-y="98" data-link="#6"></li>
+                                        <li data-y="116" data-link="#7"></li>
+                                    </ul>
+                                    <ul class="line" data-name="2nd" data-type="filled curved">
+                                        <li data-y="120" data-link="#1"></li>
+                                        <li data-y="20" data-link="#2"></li>
+                                        <li data-y="159" data-link="#3"></li>
+                                        <li data-y="120" data-link="#4"></li>
+                                        <li data-y="60" data-link="#5"></li>
+                                        <li data-y="0" data-link="#6"></li>
+                                        <li data-y="20" data-link="#7"></li>
+                                    </ul>
+                                    <ul class="line" data-name="3rd" data-type="filled curved">
+                                        <li data-y="32" data-link="#1"></li>
+                                        <li data-y="52" data-link="#2"></li>
+                                        <li data-y="117" data-link="#3"></li>
+                                        <li data-y="85" data-link="#4"></li>
+                                        <li data-y="137" data-link="#5"></li>
+                                        <li data-y="144" data-link="#6"></li>
+                                        <li data-y="59" data-link="#7"></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-5 lg-responsive">
+
+                        <!-- employee list -->
+                        <div class="data-list data-striped data-hover portlet rounded shadow-lg theme-gray ease-data-list">
 
                             <div class="row">
                                 <div class="col-5 sm-responsive sm-no-padding-b">
-                                    <div class="text text-icon text-icon-both rounded dual-bordered has-clear ease-form">
+                                    <div class="text text-icon text-icon-both rounded no-bordered ui-x-light has-clear ease-form">
                                         <i class="icon icon-sm icon-search text-icon-left ease-layout"></i>
                                         <button class="clear-form icon icon-xs icon-remove ease-layout"></button>
                                         <input class="data-filter" type="text" placeholder="Search">
                                     </div>
                                 </div>
                                 <div class="col-7 sm-responsive ease-1st-form align-right sm-align-left">
-                                    <div class="select form-inline-responsive rounded dual-bordered">
+                                    <div class="select form-inline-responsive rounded no-bordered ui-x-light">
                                         <i class="icon icon-sm icon-angle-down ease-layout"></i>
                                         <select class="data-filter" data-index="1">
                                             <option value="">Name</option>
@@ -383,7 +372,7 @@
                                             <option>Bob Pool</option>
                                         </select>
                                     </div>
-                                    <div class="select form-inline-responsive rounded dual-bordered">
+                                    <div class="select form-inline-responsive rounded no-bordered ui-x-light">
                                         <i class="icon icon-sm icon-angle-down ease-layout"></i>
                                         <select class="data-filter" data-index="2" data-type="number">
                                             <option value="">Age</option>
@@ -392,9 +381,10 @@
                                             <option>29</option>
                                         </select>
                                     </div>
-                                    <div class="select form-inline-responsive rounded dual-bordered">
+                                    <div class="select form-inline-responsive rounded no-bordered ui-x-light">
                                         <span class="icon icon-sm icon-angle-down ease-layout"></span>
                                         <select class="data-show">
+                                            <option>5</option>
                                             <option>15</option>
                                             <option>30</option>
                                             <option>All</option>
@@ -403,398 +393,352 @@
                                 </div>
                             </div>
 
-                            <div class="row row-xs-padding ease-2nd-bg">
+                            <div class="row row-xs-padding ui-x-light ease-2nd-bg">
                                 <div class="col-5 no-responsive">
-                                    <button class="btn align-left btn-block" data-sort="1"><i class="icon icon-xs icon-sort"></i> Name</button>
+                                    <button class="btn btn-invisible align-left btn-block" data-sort="1">
+                                        <i class="icon icon-xs icon-sort"></i> Name
+                                    </button>
                                 </div>
                                 <div class="col-3 no-responsive">
-                                    <button class="btn align-left btn-block" data-sort="2" data-type="number"><i class="icon icon-xs icon-sort"></i> Age</button>
+                                    <button class="btn btn-invisible align-left btn-block" data-sort="2" data-type="number">
+                                        <i class="icon icon-xs icon-sort"></i> Age
+                                    </button>
                                 </div>
                                 <div class="col-4 no-responsive">
-                                    <button class="btn align-left btn-block" data-sort="3"><i class="icon icon-xs icon-sort"></i> Job</button>
+                                    <button class="btn btn-invisible align-left btn-block" data-sort="3">
+                                        <i class="icon icon-xs icon-sort"></i> Job
+                                    </button>
                                 </div>
                             </div>
 
                             <div class="data-container">
 
-                                <div class="data-content" data-val="John Doe|25|Designer">
+                                <div class="data-content no-bordered" data-val="John Doe|25|Designer">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image.jpg" alt="">John Doe
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            25
+                                            <div class="padding-5-v margin-4-v">25</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Designer
+                                            <div class="padding-5-v margin-4-v">Designer</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="Mary Doe|24|Designer">
+                                <div class="data-content no-bordered" data-val="Mary Doe|24|Designer">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image2.jpg" alt="">Mary Doe
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            24
+                                            <div class="padding-5-v margin-4-v">24</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Designer
+                                            <div class="padding-5-v margin-4-v">Designer</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="Mike Taylor|29|Developer">
+                                <div class="data-content no-bordered" data-val="Mike Taylor|29|Developer">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image.jpg" alt="">Mike Taylor
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            29
+                                            <div class="padding-5-v margin-4-v">29</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Developer
+                                            <div class="padding-5-v margin-4-v">Developer</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="Bob Pool|25|Designer">
+                                <div class="data-content no-bordered" data-val="Bob Pool|25|Designer">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image3.jpg" alt="">Bob Pool
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            25
+                                            <div class="padding-5-v margin-4-v">25</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Designer
+                                            <div class="padding-5-v margin-4-v">Designer</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="John Doe|24|Designer">
+                                <div class="data-content no-bordered" data-val="John Doe|24|Designer">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image.jpg" alt="">John Doe
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            24
+                                            <div class="padding-5-v margin-4-v">24</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Designer
+                                            <div class="padding-5-v margin-4-v">Designer</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="Mary Doe|24|Researcher">
+                                <div class="data-content no-bordered" data-val="Mary Doe|24|Researcher">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image2.jpg" alt="">Mary Doe
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            24
+                                            <div class="padding-5-v margin-4-v">24</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Researcher
+                                            <div class="padding-5-v margin-4-v">Researcher</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="Mike Taylor|29|Developer">
+                                <div class="data-content no-bordered" data-val="Mike Taylor|29|Developer">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image.jpg" alt="">Mike Taylor
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            29
+                                            <div class="padding-5-v margin-4-v">29</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Developer
+                                            <div class="padding-5-v margin-4-v">Developer</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="Bob Pool|25|Designer">
+                                <div class="data-content no-bordered" data-val="Bob Pool|25|Designer">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image3.jpg" alt="">Bob Pool
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            25
+                                            <div class="padding-5-v margin-4-v">25</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Designer
+                                            <div class="padding-5-v margin-4-v">Designer</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="John Doe|25|Developer">
+                                <div class="data-content no-bordered" data-val="John Doe|25|Developer">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image.jpg" alt="">John Doe
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            25
+                                            <div class="padding-5-v margin-4-v">25</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Developer
+                                            <div class="padding-5-v margin-4-v">Developer</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="Mary Doe|24|Developer">
+                                <div class="data-content no-bordered" data-val="Mary Doe|24|Developer">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image2.jpg" alt="">Mary Doe
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            24
+                                            <div class="padding-5-v margin-4-v">24</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Developer
+                                            <div class="padding-5-v margin-4-v">Developer</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="Mike Taylor|29|Developer">
+                                <div class="data-content no-bordered" data-val="Mike Taylor|29|Developer">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image.jpg" alt="">Mike Taylor
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            29
+                                            <div class="padding-5-v margin-4-v">29</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Developer
+                                            <div class="padding-5-v margin-4-v">Developer</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="Bob Pool|25|Researcher">
+                                <div class="data-content no-bordered" data-val="Bob Pool|25|Researcher">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image3.jpg" alt="">Bob Pool
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            25
+                                            <div class="padding-5-v margin-4-v">25</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Researcher
+                                            <div class="padding-5-v margin-4-v">Researcher</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="John Doe|25|Researcher">
+                                <div class="data-content no-bordered" data-val="John Doe|25|Researcher">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image.jpg" alt="">John Doe
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            25
+                                            <div class="padding-5-v margin-4-v">25</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Researcher
+                                            <div class="padding-5-v margin-4-v">Researcher</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="Mary Doe|24|Developer">
+                                <div class="data-content no-bordered" data-val="Mary Doe|24|Developer">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image2.jpg" alt="">Mary Doe
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            24
+                                            <div class="padding-5-v margin-4-v">24</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Developer
+                                            <div class="padding-5-v margin-4-v">Developer</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="Mike Taylor|29|Developer">
+                                <div class="data-content no-bordered" data-val="Mike Taylor|29|Developer">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image.jpg" alt="">Mike Taylor
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            29
+                                            <div class="padding-5-v margin-4-v">29</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Developer
+                                            <div class="padding-5-v margin-4-v">Developer</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="Bob Pool|25|Researcher">
+                                <div class="data-content no-bordered" data-val="Bob Pool|25|Researcher">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image3.jpg" alt="">Bob Pool
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            25
+                                            <div class="padding-5-v margin-4-v">25</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Researcher
+                                            <div class="padding-5-v margin-4-v">Researcher</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="John Doe|24|Designer">
+                                <div class="data-content no-bordered" data-val="John Doe|24|Designer">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image.jpg" alt="">John Doe
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            24
+                                            <div class="padding-5-v margin-4-v">24</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Designer
+                                            <div class="padding-5-v margin-4-v">Designer</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="Mary Doe|24|Researcher">
+                                <div class="data-content no-bordered" data-val="Mary Doe|24|Researcher">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image2.jpg" alt="">Mary Doe
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            24
+                                            <div class="padding-5-v margin-4-v">24</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Researcher
+                                            <div class="padding-5-v margin-4-v">Researcher</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="Mike Taylor|29|Developer">
+                                <div class="data-content no-bordered" data-val="Mike Taylor|29|Developer">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image.jpg" alt="">Mike Taylor
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            29
+                                            <div class="padding-5-v margin-4-v">29</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Developer
+                                            <div class="padding-5-v margin-4-v">Developer</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="Bob Pool|25|Developer">
+                                <div class="data-content no-bordered" data-val="Bob Pool|25|Developer">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image3.jpg" alt="">Bob Pool
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            25
+                                            <div class="padding-5-v margin-4-v">25</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Developer
+                                            <div class="padding-5-v margin-4-v">Developer</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="John Doe|25|Researcher">
+                                <div class="data-content no-bordered" data-val="John Doe|25|Researcher">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image.jpg" alt="">John Doe
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            25
+                                            <div class="padding-5-v margin-4-v">25</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Researcher
+                                            <div class="padding-5-v margin-4-v">Researcher</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="Mary Doe|24|Developer">
+                                <div class="data-content no-bordered" data-val="Mary Doe|24|Developer">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image2.jpg" alt="">Mary Doe
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            24
+                                            <div class="padding-5-v margin-4-v">24</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Developer
+                                            <div class="padding-5-v margin-4-v">Developer</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="Mike Taylor|29|Developer">
+                                <div class="data-content no-bordered" data-val="Mike Taylor|29|Developer">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image.jpg" alt="">Mike Taylor
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            29
+                                            <div class="padding-5-v margin-4-v">29</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Developer
+                                            <div class="padding-5-v margin-4-v">Developer</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="Bob Pool|25|Designer">
+                                <div class="data-content no-bordered" data-val="Bob Pool|25|Designer">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image3.jpg" alt="">Bob Pool
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            25
+                                            <div class="padding-5-v margin-4-v">25</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Designer
+                                            <div class="padding-5-v margin-4-v">Designer</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="John Doe|24|Developer">
+                                <div class="data-content no-bordered" data-val="John Doe|24|Developer">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image.jpg" alt="">John Doe
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            24
+                                            <div class="padding-5-v margin-4-v">24</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Developer
+                                            <div class="padding-5-v margin-4-v">Developer</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="Mary Doe|24|Developer">
-                                    <div class="row row-no-padding row-equal-height">
-                                        <div class="col-5 no-responsive">
-                                            <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image2.jpg" alt="">Mary Doe
-                                        </div>
-                                        <div class="col-3 no-responsive">
-                                            24
-                                        </div>
-                                        <div class="col-4 no-responsive">
-                                            Developer
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="data-content" data-val="Mike Taylor|29|Designer">
-                                    <div class="row row-no-padding row-equal-height">
-                                        <div class="col-5 no-responsive">
-                                            <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image.jpg" alt="">Mike Taylor
-                                        </div>
-                                        <div class="col-3 no-responsive">
-                                            29
-                                        </div>
-                                        <div class="col-4 no-responsive">
-                                            Designer
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="data-content" data-val="Bob Pool|25|Researcher">
-                                    <div class="row row-no-padding row-equal-height">
-                                        <div class="col-5 no-responsive">
-                                            <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image3.jpg" alt="">Bob Pool
-                                        </div>
-                                        <div class="col-3 no-responsive">
-                                            25
-                                        </div>
-                                        <div class="col-4 no-responsive">
-                                            Researcher
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="data-content" data-val="John Doe|25|Designer">
-                                    <div class="row row-no-padding row-equal-height">
-                                        <div class="col-5 no-responsive">
-                                            <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image.jpg" alt="">John Doe
-                                        </div>
-                                        <div class="col-3 no-responsive">
-                                            25
-                                        </div>
-                                        <div class="col-4 no-responsive">
-                                            Designer
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="data-content" data-val="Mary Doe|24|Developer">
+                                <div class="data-content no-bordered" data-val="Mary Doe|24|Developer">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image2.jpg" alt="">Mary Doe
@@ -807,154 +751,208 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="Mike Taylor|29|Researcher">
+                                <div class="data-content no-bordered" data-val="Mike Taylor|29|Designer">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image.jpg" alt="">Mike Taylor
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            29
+                                            <div class="padding-5-v margin-4-v">29</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Researcher
+                                            <div class="padding-5-v margin-4-v">Designer</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="Bob Pool|25|Researcher">
+                                <div class="data-content no-bordered" data-val="Bob Pool|25|Researcher">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image3.jpg" alt="">Bob Pool
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            25
+                                            <div class="padding-5-v margin-4-v">25</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Researcher
+                                            <div class="padding-5-v margin-4-v">Researcher</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="John Doe|25|Designer">
+                                <div class="data-content no-bordered" data-val="John Doe|25|Designer">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image.jpg" alt="">John Doe
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            25
+                                            <div class="padding-5-v margin-4-v">25</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Designer
+                                            <div class="padding-5-v margin-4-v">Designer</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="Mary Doe|24|Developer">
+                                <div class="data-content no-bordered" data-val="Mary Doe|24|Developer">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image2.jpg" alt="">Mary Doe
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            24
+                                            <div class="padding-5-v margin-4-v">24</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Developer
+                                            <div class="padding-5-v margin-4-v">Developer</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="Mike Taylor|29|Developer">
+                                <div class="data-content no-bordered" data-val="Mike Taylor|29|Researcher">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image.jpg" alt="">Mike Taylor
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            29
+                                            <div class="padding-5-v margin-4-v">29</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Developer
+                                            <div class="padding-5-v margin-4-v">Researcher</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="Bob Pool|25|Researcher">
+                                <div class="data-content no-bordered" data-val="Bob Pool|25|Researcher">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image3.jpg" alt="">Bob Pool
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            25
+                                            <div class="padding-5-v margin-4-v">25</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Researcher
+                                            <div class="padding-5-v margin-4-v">Researcher</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="John Doe|24|Researcher">
+                                <div class="data-content no-bordered" data-val="John Doe|25|Designer">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image.jpg" alt="">John Doe
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            24
+                                            <div class="padding-5-v margin-4-v">25</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Researcher
+                                            <div class="padding-5-v margin-4-v">Designer</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="Mary Doe|24|Developer">
+                                <div class="data-content no-bordered" data-val="Mary Doe|24|Developer">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image2.jpg" alt="">Mary Doe
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            24
+                                            <div class="padding-5-v margin-4-v">24</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Developer
+                                            <div class="padding-5-v margin-4-v">Developer</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="Mike Taylor|29|Developer">
+                                <div class="data-content no-bordered" data-val="Mike Taylor|29|Developer">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image.jpg" alt="">Mike Taylor
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            29
+                                            <div class="padding-5-v margin-4-v">29</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Developer
+                                            <div class="padding-5-v margin-4-v">Developer</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="data-content" data-val="Bob Pool|25|Researcher">
+                                <div class="data-content no-bordered" data-val="Bob Pool|25|Researcher">
                                     <div class="row row-no-padding row-equal-height">
                                         <div class="col-5 no-responsive">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image3.jpg" alt="">Bob Pool
                                         </div>
                                         <div class="col-3 no-responsive">
-                                            25
+                                            <div class="padding-5-v margin-4-v">25</div>
                                         </div>
                                         <div class="col-4 no-responsive">
-                                            Researcher
+                                            <div class="padding-5-v margin-4-v">Researcher</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="data-content no-bordered" data-val="John Doe|24|Researcher">
+                                    <div class="row row-no-padding row-equal-height">
+                                        <div class="col-5 no-responsive">
+                                            <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image.jpg" alt="">John Doe
+                                        </div>
+                                        <div class="col-3 no-responsive">
+                                            <div class="padding-5-v margin-4-v">24</div>
+                                        </div>
+                                        <div class="col-4 no-responsive">
+                                            <div class="padding-5-v margin-4-v">Researcher</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="data-content no-bordered" data-val="Mary Doe|24|Developer">
+                                    <div class="row row-no-padding row-equal-height">
+                                        <div class="col-5 no-responsive">
+                                            <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image2.jpg" alt="">Mary Doe
+                                        </div>
+                                        <div class="col-3 no-responsive">
+                                            <div class="padding-5-v margin-4-v">24</div>
+                                        </div>
+                                        <div class="col-4 no-responsive">
+                                            <div class="padding-5-v margin-4-v">Developer</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="data-content no-bordered" data-val="Mike Taylor|29|Developer">
+                                    <div class="row row-no-padding row-equal-height">
+                                        <div class="col-5 no-responsive">
+                                            <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image.jpg" alt="">Mike Taylor
+                                        </div>
+                                        <div class="col-3 no-responsive">
+                                            <div class="padding-5-v margin-4-v">29</div>
+                                        </div>
+                                        <div class="col-4 no-responsive">
+                                            <div class="padding-5-v margin-4-v">Developer</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="data-content no-bordered" data-val="Bob Pool|25|Researcher">
+                                    <div class="row row-no-padding row-equal-height">
+                                        <div class="col-5 no-responsive">
+                                            <img class="img-photo-sm margin-10-r hidden-xs circle" src="images/profile-image3.jpg" alt="">Bob Pool
+                                        </div>
+                                        <div class="col-3 no-responsive">
+                                            <div class="padding-5-v margin-4-v">25</div>
+                                        </div>
+                                        <div class="col-4 no-responsive">
+                                            <div class="padding-5-v margin-4-v">Researcher</div>
                                         </div>
                                     </div>
                                 </div>
 
                             </div>
 
-                            <div class="row xs-align-center">
+                            <div class="row xs-align-center top-bordered">
                                 <div class="col-6 xs-responsive">
                                     <div class="padding-5-v">
-                                        Total <b class="data-total"></b>.
+                                        Total <b class="data-total"></b>
                                     </div>
                                 </div>
                                 <div class="col-6 xs-responsive align-right">
-                                    <div class="data-paging pagination ease-1st-bg" data-default="btn rounded" data-active="theme-default ui-dark"></div>
+                                    <div class="data-paging pagination ease-1st-bg" data-default="btn rounded" data-active="theme-default2 ui-dark"></div>
                                 </div>
                             </div>
 
                         </div>
-                    </div>
 
+                    </div>
                 </div>
+
+                <span class="sp15"></span>
 
             </div>
 
