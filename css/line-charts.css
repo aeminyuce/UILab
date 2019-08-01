@@ -17,7 +17,7 @@
 .line-charts svg path:not([fill]) { fill: transparent; }
 .line-charts.resized svg path.filled { opacity: .075; }
 
-.line-charts:not(.resized) svg path { stroke-dashoffset: 1000; stroke-dasharray: 1000; }
+.line-charts:not(.resized) svg path { stroke-dashoffset: 2000; stroke-dasharray: 2000; }
 .line-charts:not(.resized) svg path.filled { transform: translateY(15px); opacity: 0; }
 .line-charts.loaded:not(.resized) svg path { animation: line-draw 2s .6s ease-in forwards; }
 .line-charts.loaded:not(.resized) svg path.filled { animation: line-filled .6s forwards; }
@@ -37,7 +37,7 @@ html:not(.mobile) .line-charts svg circle:hover { stroke-width: 4; }
 
 .no-transitions-all.animate-stop-all .line-charts svg circle,.ie .line-charts svg circle { transform: translateY(0); opacity: 1; }
 
-.line-charts svg text { fill: currentColor; font-size: 10px; }
+.line-charts svg text { fill: currentColor; font-size: 10px; opacity: .65; }
 .line-charts svg .x { text-anchor: middle; }
 .line-charts svg .y { text-anchor: end; }
 
