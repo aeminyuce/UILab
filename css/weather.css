@@ -7,9 +7,11 @@
 .weather:before,.weather:after,.weather .days:before,.weather .days:after { content: ""; display: table; }
 .weather:after,.weather .days:after { clear: both; }
 
-.weather { position: relative; -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
+.weather { position: relative; }
 .weather.night,.weather.night a { color: #fff; }
 .weather .details { width: 100%; position: relative; z-index: 2; }
+
+.weather .now,.weather .days { -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
 
 .weather .now { text-align: center; padding: 60px 15px 30px 15px; }
 .weather .w-degree,.weather .now > span { font-weight: 300; }
