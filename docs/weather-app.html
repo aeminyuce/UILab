@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UI Lab, Weather App</title>
+    <meta name="keywords" content="uilab, responsive, design system, css, javascript, weather app">
+    <meta name="description" content="CSS & JavaScript powered responsive design system." />
+    <meta name="author" content="Ahmet Emin Yüce"/>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
+
+    <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/alignments.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
+    <link rel="stylesheet" href="../css/buttons.css" />
+    <link rel="stylesheet" href="../css/borders.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/helpers.css" />
+    <link rel="stylesheet" href="../css/icons.css" />
+    <link rel="stylesheet" href="../css/margins.css" />
+    <link rel="stylesheet" href="../css/paddings.css" />
+    <link rel="stylesheet" href="../css/portlets.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/scrollbar.css" />
+    <link rel="stylesheet" href="../css/sticky-header.css" />
+    <link rel="stylesheet" href="../css/transitions.css" />
+    <link rel="stylesheet" href="../css/typography.css" />
+    <link rel="stylesheet" href="../css/typography-elements.css" />
+    <link rel="stylesheet" href="../css/swatches.css" />
+    <link rel="stylesheet" href="../css/top-button.css" />
+    <link rel="stylesheet" href="../css/weather.css" />
+
+    <!-- Javascript Tools -->
+    <script src="../js/selector.js"></script>
+    <script src="../js/events.js"></script>
+
+    <script src="../js/forms.js"></script>
+    <script src="../js/sticky-header.js"></script>
+    <script src="../js/swatches.js"></script>
+    <script src="../js/top-button.js"></script>
+    <script src="../js/transitions.js"></script>
+    <script src="../js/user-agents.js"></script>
+    <script src="../js/weather.js"></script>
+
+    <!-- font icons CSS -->
+    <link rel="stylesheet" href="icons/font-icons/outline/font-icons.css" />
+    <link rel="stylesheet" href="icons/font-icons/weather-outline/weather-outline-icons.css" />
+
+    <!-- custom CSS -->
+    <style>
+        body { background-color: #f9f9f9; }
+        .rounded,.weather.rounded .graphs { border-radius: 32px; }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="container theme-default ui-dark">
+        <div class="row theme-default2 ui-border top-bordered dual-bordered">
+            <div class="col-12">
+                <a href="index.html" class="btn btn-lg btn-square circle ease-btn margin-10-r"><i class="icon icon-md no-opacity icon-long-arrow-left"></i></a>
+                <h1 class="x-large inline-block">UI Lab, Weather App</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- documentation examples -->
+    <main class="container no-gutter">
+        <div class="fixed padding-30-v">
+
+            <div class="row row-equal-height padding-30-b">
+                <div class="col-4 offset-2 col-md-6 offset-md-0 sm-responsive">
+
+                    <div class="weather rounded ease-weather">
+                        <div class="details">
+                            <div class="now">
+                                <b class="w-degree">33</b>
+                                <span>
+                                    Clear <b class="w-date"></b>
+                                </span>
+                            </div>
+                            <ul class="days">
+                                <li><b>Now</b><i class="icon icon-lg icon-weather icon-temperature"></i><span>36</span></li>
+                                <li>14<i class="icon icon-lg icon-weather icon-sun"></i><span>32</span></li>
+                                <li>15<i class="icon icon-lg icon-weather icon-sun"></i><span>31</span></li>
+                                <li>16<i class="icon icon-lg icon-weather icon-cloud-sun"></i><span>29</span></li>
+                                <li>17<i class="icon icon-lg icon-weather icon-wind"></i><span>28</span></li>
+                                <li>18<i class="icon icon-lg icon-weather icon-sun"></i><span>32</span></li>
+                                <li>19<i class="icon icon-lg icon-weather icon-sun"></i><span>31</span></li>
+                                <li><b>20:00</b><i class="icon icon-lg icon-weather icon-sunset"></i><b>Sunset</b></li>
+                                <li>21<i class="icon icon-lg icon-weather icon-moon"></i><span>32</span></li>
+                                <li>22<i class="icon icon-lg icon-weather icon-moon"></i><span>32</span></li>
+                                <li>23<i class="icon icon-lg icon-weather icon-moon"></i><span>31</span></li>
+                                <li>24<i class="icon icon-lg icon-weather icon-cloud-moon"></i><span>29</span></li>
+                            </ul>
+                            <div class="portlet xx-dark align-center rounded shadow-lg">
+                                <div class="content-side xx-dark padding-20">
+                                    <i class="icon icon-lg icon-clock"></i>
+                                    <span class="w-clock largest thin inline-block margin-5-l"></span><br>
+                                    <span class="x-dark large thin">ISTANBUL</span>
+                                </div>
+                                <div class="content-side padding-10 top-bordered theme-gray ui-x-light">
+                                    <span class="large thin inline-block">19:59</span>
+                                    <i class="icon icon-md icon-weather icon-sunrise"></i>
+                                    <span class="large thin inline-block">05:53</span>
+                                    <i class="icon icon-md icon-weather icon-sunset"></i>
+                                </div>
+                                <div class="content-side padding-10">
+                                    <ul class="list-unstyled dark">
+                                        <li>0% Chance of Rain</li>
+                                        <li>74% Humidity</li>
+                                        <li>30<sup>o</sup> Feels Like</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphs" data-graphs="clear" data-day="05:53,19:59"></div>
+                    </div>
+
+                </div>
+                <div class="col-4 col-md-6 sm-responsive">
+
+                    <div class="weather rounded ease-weather">
+                        <div class="details">
+                            <div class="now">
+                                <b class="w-degree">33</b>
+                                <span>
+                                    Clear <b class="w-date"></b>
+                                </span>
+                            </div>
+                            <ul class="days">
+                                <li><b>Now</b><i class="icon icon-lg icon-weather icon-moon"></i><span>32</span></li>
+                                <li>22<i class="icon icon-lg icon-weather icon-moon"></i><span>32</span></li>
+                                <li>23<i class="icon icon-lg icon-weather icon-moon"></i><span>31</span></li>
+                                <li>24<i class="icon icon-lg icon-weather icon-cloud-moon"></i><span>29</span></li>
+                                <li>01<i class="icon icon-lg icon-weather icon-wind"></i><span>28</span></li>
+                                <li>02<i class="icon icon-lg icon-weather icon-moon"></i><span>32</span></li>
+                                <li>03<i class="icon icon-lg icon-weather icon-moon"></i><span>31</span></li>
+                                <li>04<i class="icon icon-lg icon-weather icon-moon"></i><span>32</span></li>
+                                <li><b>05:00</b><i class="icon icon-lg icon-weather icon-sunrise"></i><b>Sunrise</b></li>
+                                <li>06<i class="icon icon-lg icon-weather icon-sun"></i><span>32</span></li>
+                                <li>07<i class="icon icon-lg icon-weather icon-sun"></i><span>31</span></li>
+                                <li>08<i class="icon icon-lg icon-weather icon-cloud-sun"></i><span>29</span></li>
+                            </ul>
+                            <div class="portlet xx-dark align-center rounded shadow-lg">
+                                <div class="content-side xx-dark padding-20">
+                                    <i class="icon icon-lg icon-clock"></i>
+                                    <span class="w-clock largest thin inline-block margin-5-l"></span><br>
+                                    <span class="x-dark large thin">ISTANBUL</span>
+                                </div>
+                                <div class="content-side padding-10 top-bordered theme-gray ui-x-light">
+                                    <span class="large thin inline-block">19:59</span>
+                                    <i class="icon icon-md icon-weather icon-sunrise"></i>
+                                    <span class="large thin inline-block">05:53</span>
+                                    <i class="icon icon-md icon-weather icon-sunset"></i>
+                                </div>
+                                <div class="content-side padding-10">
+                                    <ul class="list-unstyled dark">
+                                        <li>0% Chance of Rain</li>
+                                        <li>74% Humidity</li>
+                                        <li>30<sup>o</sup> Feels Like</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphs" data-graphs="clear" data-day="19:59,05:53"></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
