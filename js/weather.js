@@ -28,7 +28,7 @@ var weather = {
 
     weather.Start = function () {
 
-        var date, dateText, dateHtml, clockText, clockHtml, minute, hour, day, month, that, graphs, animations, sun, sunrise, sunset, icons;
+        var date, dateText, dateHtml, clockText, clockHtml, minute, hour, day, month, that, graphs, animations, sun, sunPos, sunrise, sunset, icons;
 
         animations = [];
 
@@ -56,14 +56,25 @@ var weather = {
 
                             for (i = 0; i < data.length; i += 1) {
 
-                                if (data[i] === 'sun') { // convert sun to stars
+                                if (data[i] === 'clear') { // convert sun to stars
                                     animations.push('stars');
 
                                 } else if (data[i] === 'stars') { // convert stars to sun
-                                    animations.push('sun');
+                                    animations.push('clear');
                                 }
 
-                                if (data.length === 1 && (data[i] === 'sun' || data[i] === 'stars')) { // add shooting star if wather is clear
+                                if (data.length === 1 && (data[i] === 'cloud' || data[i] === 'fog')) { // add sun and stars for cloudy and foggy weather
+
+                                    animations.push('clear');
+                                    animations.push('stars');
+
+                                }
+
+                                if (data[i] === 'cloud-heavy') { // add stars for mostly cloudy weather
+                                    animations.push('stars');
+                                }
+
+                                if (data.length === 1 && (data[i] === 'clear' || data[i] === 'stars')) { // add shooting star if weather is clear
                                     animations.push('shooting-star');
                                 }
 
@@ -126,7 +137,7 @@ var weather = {
             minute = date.getMinutes().toString();
             if (minute.length === 1) { minute = '0' + minute; }
 
-            clockHtml = '<b>' + hour + '</b><b>' + minute + '</b>';
+            clockHtml = '<span>' + hour + '</span><span>' + minute + '</span>';
             clockText = hour + ':' + minute;
 
             if (clockLoaded !== clockText) {
@@ -136,32 +147,34 @@ var weather = {
                 });
 
                 // check sunrise and sunset
-                events.each('.w-sunset', function () {
+                graphs = selector('.weather .graphs[data-day]');
+                events.each(graphs, function () {
 
-                    that = events.closest(this, '.weather')[0];
+                    sunPos = this.getAttribute('data-day');
+                    if (sunPos === null || sunPos === '') { return; }
 
-                    graphs = selector('.graphs', that)[0];
-                    if (graphs === undefined) { return; }
+                    sunPos = sunPos.split(',');
+                    if (sunPos.length !== 2) { return; }
 
-                    sunrise = selector('.w-sunrise', that)[0];
-                    if (sunrise === undefined) { return; }
-
-                    sunrise = sunrise.textContent.split(':');
+                    sunrise = sunPos[0].split(':');
+                    if (sunrise.length !== 2) { return; }
 
                     if (sunrise[0].length === 1) { sunrise[0] = '0' + sunrise[0]; } // sunrise hour
                     if (sunrise[1].length === 1) { sunrise[1] = '0' + sunrise[1]; } // sunrise minute
 
-                    sunset = this.textContent.split(':');
+                    sunset = sunPos[1].split(':');
+                    if (sunset.length !== 2) { return; }
 
                     if (sunset[0].length === 1) { sunset[0] = '0' + sunset[0]; } // sunset hour
                     if (sunset[1].length === 1) { sunset[1] = '0' + sunset[1]; } // sunset minute
 
                     // convert to day or night
-                    sun = selector('.sun', graphs)[0];
+                    sun = selector('.clear', this)[0];
+                    that = events.closest(this, '.weather')[0];
 
                     if (((hour === sunrise[0] && minute < sunrise[1]) || hour < sunrise[0]) || ((hour === sunset[0] && minute > sunset[1]) || hour > sunset[0])) { // night
 
-                        events.addClass(graphs, 'night');
+                        events.addClass(that, 'night');
 
                         // convert sun icons to moon
                         icons = selector('.icon-sun', that);
@@ -181,7 +194,7 @@ var weather = {
 
                     } else { // day
 
-                        events.removeClass(graphs, 'night');
+                        events.removeClass(that, 'night');
 
                         // convert moon icons to sun
                         icons = selector('.icon-moon', that);
