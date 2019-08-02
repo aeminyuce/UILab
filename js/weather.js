@@ -28,7 +28,7 @@ var weather = {
 
     weather.Start = function () {
 
-        var date, dateText, dateHtml, clockText, clockHtml, minute, hour, day, month, that, graphs, animations, sun, sunPos, sunrise, sunset, icons;
+        var date, dateText, dateHtml, clockText, clockHtml, minute, hour, day, month, that, graphs, animations, sun, sunPos, sunrise, sunset;
 
         animations = [];
 
@@ -168,24 +168,13 @@ var weather = {
                     if (sunset[0].length === 1) { sunset[0] = '0' + sunset[0]; } // sunset hour
                     if (sunset[1].length === 1) { sunset[1] = '0' + sunset[1]; } // sunset minute
 
-                    // convert to day or night
+                    // convert day or night
                     sun = selector('.clear', this)[0];
                     that = events.closest(this, '.weather')[0];
 
                     if (((hour === sunrise[0] && minute < sunrise[1]) || hour < sunrise[0]) || ((hour === sunset[0] && minute > sunset[1]) || hour > sunset[0])) { // night
 
                         events.addClass(that, 'night');
-
-                        // convert sun icons to moon
-                        icons = selector('.icon-sun', that);
-
-                        events.addClass(icons, 'icon-moon');
-                        events.removeClass(icons, 'icon-sun');
-
-                        icons = selector('.icon-cloud-sun', that);
-
-                        events.addClass(icons, 'icon-cloud-moon');
-                        events.removeClass(icons, 'icon-cloud-sun');
 
                         // sun positioning
                         if (sun !== undefined) {
@@ -195,17 +184,6 @@ var weather = {
                     } else { // day
 
                         events.removeClass(that, 'night');
-
-                        // convert moon icons to sun
-                        icons = selector('.icon-moon', that);
-
-                        events.addClass(icons, 'icon-sun');
-                        events.removeClass(icons, 'icon-moon');
-
-                        icons = selector('.icon-cloud-moon', that);
-
-                        events.addClass(icons, 'icon-cloud-sun');
-                        events.removeClass(icons, 'icon-cloud-moon');
 
                         // sun positioning
                         if (sun !== undefined) {
