@@ -18,20 +18,23 @@
     <link rel="stylesheet" href="../css/animations.css" />
     <link rel="stylesheet" href="../css/buttons.css" />
     <link rel="stylesheet" href="../css/borders.css" />
+    <link rel="stylesheet" href="../css/carousel.css" />
     <link rel="stylesheet" href="../css/forms.css" />
     <link rel="stylesheet" href="../css/grid.css" />
     <link rel="stylesheet" href="../css/helpers.css" />
     <link rel="stylesheet" href="../css/icons.css" />
+    <link rel="stylesheet" href="../css/listings.css" />
     <link rel="stylesheet" href="../css/margins.css" />
     <link rel="stylesheet" href="../css/paddings.css" />
     <link rel="stylesheet" href="../css/portlets.css" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/scrollbar.css" />
     <link rel="stylesheet" href="../css/sticky-header.css" />
+    <link rel="stylesheet" href="../css/swatches.css" />
+    <link rel="stylesheet" href="../css/tables.css" />
     <link rel="stylesheet" href="../css/transitions.css" />
     <link rel="stylesheet" href="../css/typography.css" />
     <link rel="stylesheet" href="../css/typography-elements.css" />
-    <link rel="stylesheet" href="../css/swatches.css" />
     <link rel="stylesheet" href="../css/top-button.css" />
     <link rel="stylesheet" href="../css/weather.css" />
 
@@ -39,6 +42,7 @@
     <script src="../js/selector.js"></script>
     <script src="../js/events.js"></script>
 
+    <script src="../js/carousel.js"></script>
     <script src="../js/forms.js"></script>
     <script src="../js/sticky-header.js"></script>
     <script src="../js/swatches.js"></script>
@@ -54,7 +58,8 @@
     <!-- custom CSS -->
     <style>
         body { background-color: #f9f9f9; }
-        .rounded,.weather.rounded .graphs { border-radius: 32px; }
+        .rounded,.weather.rounded .graphs { border-radius: 60px; }
+        .all-day { background-image: linear-gradient(135deg, #97aaee, #ac89ec); }
     </style>
 
 </head>
@@ -75,7 +80,7 @@
     <main class="container no-gutter">
         <div class="fixed padding-30-v">
 
-            <div class="row row-equal-height padding-30-b">
+            <div class="row row-equal-height row-lg-padding padding-30-b">
                 <div class="col-4 offset-2 col-md-6 offset-md-0 sm-responsive">
 
                     <div class="weather rounded ease-weather">
@@ -84,6 +89,7 @@
                                 <b class="w-degree">33</b>
                                 <span>
                                     Clear <b class="w-date"></b>
+                                    <a class="x-large margin-5-t block opacity ease-layout" href="#">Istanbul</a>
                                 </span>
                             </div>
                             <ul class="days">
@@ -100,24 +106,102 @@
                                 <li>23<i class="icon icon-lg icon-weather icon-moon"></i><span>31</span></li>
                                 <li>24<i class="icon icon-lg icon-weather icon-cloud-moon"></i><span>29</span></li>
                             </ul>
-                            <div class="portlet xx-dark align-center rounded shadow-lg">
-                                <div class="content-side xx-dark padding-20">
-                                    <i class="icon icon-lg icon-clock"></i>
-                                    <span class="w-clock largest thin inline-block margin-5-l"></span><br>
-                                    <span class="x-dark large thin">ISTANBUL</span>
+                            <div class="carousel portlet rounded shadow-lg" data-col="1">
+                                <div class="carousel-slider ease-2nd-layout ease-layout ease-slow ease-in-out">
+
+                                    <div class="content xx-dark padding-30 no-padding-b">
+                                        <h3 class="bold margin-15-v">Next Week</h3>
+                                        <table class="table table-striped no-separated">
+                                            <tr>
+                                                <td class="x-dark large">Tuesday</th>
+                                                <td><i class="icon icon-lg icon-weather icon-sun"></i></td>
+                                                <td class="align-right large">
+                                                    <span class="deg margin-20-r">36</span>
+                                                    <span class="deg dark">28</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="x-dark large">Wednesday</th>
+                                                <td><i class="icon icon-lg icon-weather icon-sun"></i></td>
+                                                <td class="align-right large">
+                                                    <span class="deg margin-20-r">32</span>
+                                                    <span class="deg dark">26</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="x-dark large">Thursday</th>
+                                                <td><i class="icon icon-lg icon-weather icon-cloud-sun"></i></td>
+                                                <td class="align-right large">
+                                                    <span class="deg margin-20-r">26</span>
+                                                    <span class="deg dark">18</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="x-dark large">Friday</th>
+                                                <td><i class="icon icon-lg icon-weather icon-rain"></i></td>
+                                                <td class="align-right large">
+                                                    <span class="deg margin-20-r">21</span>
+                                                    <span class="deg dark">16</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="x-dark large">Saturday</th>
+                                                <td><i class="icon icon-lg icon-weather icon-clouds"></i></td>
+                                                <td class="align-right large">
+                                                    <span class="deg margin-20-r">23</span>
+                                                    <span class="deg dark">18</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="x-dark large">Sunday</th>
+                                                <td><i class="icon icon-lg icon-weather icon-cloud"></i></td>
+                                                <td class="align-right large">
+                                                    <span class="deg margin-20-r">24</span>
+                                                    <span class="deg dark">17</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="x-dark large">Monday</th>
+                                                <td><i class="icon icon-lg icon-weather icon-cloud-sun"></i></td>
+                                                <td class="align-right large">
+                                                    <span class="deg margin-20-r">27</span>
+                                                    <span class="deg dark">19</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="content padding-30 no-padding-b">
+                                        <div class="padding-15 no-padding-t xx-dark">
+                                            <h3 class="bold margin-15-v">Details</h3>
+                                            <span class="sp3"></span>
+                                            <p class="large margin-5-b">
+                                                Today: Sunny currently. The high will be 32<sup>o</sup>.
+                                                Partly cloudy tonight with a low of 28<sup>o</sup>.
+                                            </p>
+                                        </div>
+                                        <div class="all-day largest xx-light align-center padding-10 circle">
+                                            <i class="icon icon-lg icon-weather icon-sunrise"></i>
+                                            <span class="thin inline-block margin-30-r">05:53</span>
+                                            <span class="thin inline-block">19:59</span>
+                                            <i class="icon icon-lg icon-weather icon-sunset"></i>
+                                        </div>
+                                        <div class="padding-15 xx-dark align-center">
+                                            <ul class="list-unstyled list-column-2">
+                                                <li><span class="xx-large">0%</span><br><span class="x-dark">Chance of Rain</span></li>
+                                                <li><span class="xx-large">74%</span><br><span class="x-dark">Humidity</span></li>
+                                                <li><span class="xx-large">30<sup>o</sup></span><br><span class="x-dark">Feels Like</span></li>
+                                                <li><span class="xx-large">7 km</span><br><span class="x-dark">Wind</span></li>
+                                                <li><span class="xx-large">7</span><br><span class="x-dark">UV Index</span></li>
+                                                <li><span class="xx-large">10.0 mi</span><br><span class="x-dark">Visibility</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <div class="content-side padding-10 top-bordered theme-gray ui-x-light">
-                                    <span class="large thin inline-block">19:59</span>
-                                    <i class="icon icon-md icon-weather icon-sunrise"></i>
-                                    <span class="large thin inline-block">05:53</span>
-                                    <i class="icon icon-md icon-weather icon-sunset"></i>
-                                </div>
-                                <div class="content-side padding-10">
-                                    <ul class="list-unstyled dark">
-                                        <li>0% Chance of Rain</li>
-                                        <li>74% Humidity</li>
-                                        <li>30<sup>o</sup> Feels Like</li>
-                                    </ul>
+                                <div class="carousel-nav xx-dark align-center padding-10-b no-margin-t ease-1st-bg">
+                                    <button class="carousel-prev btn btn-invisible btn-square rounded"><i class="icon icon-md icon-angle-left"></i></button>
+                                    <span class="dots dark"></span>
+                                    <button class="carousel-next btn btn-invisible btn-square rounded"><i class="icon icon-md icon-angle-right"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -132,7 +216,8 @@
                             <div class="now">
                                 <b class="w-degree">33</b>
                                 <span>
-                                    Clear <b class="w-date"></b>
+                                    Partly Cloudy <b class="w-date"></b>
+                                    <a class="x-large margin-5-t block opacity ease-layout" href="#">Istanbul</a>
                                 </span>
                             </div>
                             <ul class="days">
@@ -149,28 +234,106 @@
                                 <li>07<i class="icon icon-lg icon-weather icon-sun"></i><span>31</span></li>
                                 <li>08<i class="icon icon-lg icon-weather icon-cloud-sun"></i><span>29</span></li>
                             </ul>
-                            <div class="portlet xx-dark align-center rounded shadow-lg">
-                                <div class="content-side xx-dark padding-20">
-                                    <i class="icon icon-lg icon-clock"></i>
-                                    <span class="w-clock largest thin inline-block margin-5-l"></span><br>
-                                    <span class="x-dark large thin">ISTANBUL</span>
+                            <div class="carousel portlet rounded shadow-lg" data-col="1">
+                                <div class="carousel-slider ease-2nd-layout ease-layout ease-slow ease-in-out">
+
+                                    <div class="content padding-30 no-padding-b">
+                                        <div class="padding-15 no-padding-t xx-dark">
+                                            <h3 class="bold margin-15-v">Details</h3>
+                                            <span class="sp3"></span>
+                                            <p class="large margin-5-b">
+                                                Today: Sunny currently. The high will be 32<sup>o</sup>.
+                                                Partly cloudy tonight with a low of 28<sup>o</sup>.
+                                            </p>
+                                        </div>
+                                        <div class="all-day largest xx-light align-center padding-10 circle">
+                                            <i class="icon icon-lg icon-weather icon-sunrise"></i>
+                                            <span class="thin inline-block margin-30-r">05:53</span>
+                                            <span class="thin inline-block">19:59</span>
+                                            <i class="icon icon-lg icon-weather icon-sunset"></i>
+                                        </div>
+                                        <div class="padding-15 xx-dark align-center">
+                                            <ul class="list-unstyled list-column-2">
+                                                <li><span class="xx-large">0%</span><br><span class="x-dark">Chance of Rain</span></li>
+                                                <li><span class="xx-large">74%</span><br><span class="x-dark">Humidity</span></li>
+                                                <li><span class="xx-large">30<sup>o</sup></span><br><span class="x-dark">Feels Like</span></li>
+                                                <li><span class="xx-large">7 km</span><br><span class="x-dark">Wind</span></li>
+                                                <li><span class="xx-large">7</span><br><span class="x-dark">UV Index</span></li>
+                                                <li><span class="xx-large">10.0 mi</span><br><span class="x-dark">Visibility</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="content xx-dark padding-30 no-padding-b">
+                                        <h3 class="bold margin-15-v">Next Week</h3>
+                                        <table class="table table-striped no-separated">
+                                            <tr>
+                                                <td class="x-dark large">Tuesday</th>
+                                                <td><i class="icon icon-lg icon-weather icon-sun"></i></td>
+                                                <td class="align-right large">
+                                                    <span class="deg margin-20-r">36</span>
+                                                    <span class="deg dark">28</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="x-dark large">Wednesday</th>
+                                                <td><i class="icon icon-lg icon-weather icon-sun"></i></td>
+                                                <td class="align-right large">
+                                                    <span class="deg margin-20-r">32</span>
+                                                    <span class="deg dark">26</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="x-dark large">Thursday</th>
+                                                <td><i class="icon icon-lg icon-weather icon-cloud-sun"></i></td>
+                                                <td class="align-right large">
+                                                    <span class="deg margin-20-r">26</span>
+                                                    <span class="deg dark">18</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="x-dark large">Friday</th>
+                                                <td><i class="icon icon-lg icon-weather icon-rain"></i></td>
+                                                <td class="align-right large">
+                                                    <span class="deg margin-20-r">21</span>
+                                                    <span class="deg dark">16</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="x-dark large">Saturday</th>
+                                                <td><i class="icon icon-lg icon-weather icon-clouds"></i></td>
+                                                <td class="align-right large">
+                                                    <span class="deg margin-20-r">23</span>
+                                                    <span class="deg dark">18</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="x-dark large">Sunday</th>
+                                                <td><i class="icon icon-lg icon-weather icon-cloud"></i></td>
+                                                <td class="align-right large">
+                                                    <span class="deg margin-20-r">24</span>
+                                                    <span class="deg dark">17</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="x-dark large">Monday</th>
+                                                <td><i class="icon icon-lg icon-weather icon-cloud-sun"></i></td>
+                                                <td class="align-right large">
+                                                    <span class="deg margin-20-r">27</span>
+                                                    <span class="deg dark">19</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
                                 </div>
-                                <div class="content-side padding-10 top-bordered theme-gray ui-x-light">
-                                    <span class="large thin inline-block">19:59</span>
-                                    <i class="icon icon-md icon-weather icon-sunrise"></i>
-                                    <span class="large thin inline-block">05:53</span>
-                                    <i class="icon icon-md icon-weather icon-sunset"></i>
-                                </div>
-                                <div class="content-side padding-10">
-                                    <ul class="list-unstyled dark">
-                                        <li>0% Chance of Rain</li>
-                                        <li>74% Humidity</li>
-                                        <li>30<sup>o</sup> Feels Like</li>
-                                    </ul>
+                                <div class="carousel-nav xx-dark align-center padding-10-b no-margin-t ease-1st-bg">
+                                    <button class="carousel-prev btn btn-invisible btn-square rounded"><i class="icon icon-md icon-angle-left"></i></button>
+                                    <span class="dots dark"></span>
+                                    <button class="carousel-next btn btn-invisible btn-square rounded"><i class="icon icon-md icon-angle-right"></i></button>
                                 </div>
                             </div>
                         </div>
-                        <div class="graphs" data-graphs="clear" data-day="19:59,05:53"></div>
+                        <div class="graphs" data-graphs="cloud" data-day="19:59,05:53"></div>
                     </div>
 
                 </div>
