@@ -8,15 +8,16 @@
 .weather:after,.weather .days:after { clear: both; }
 
 .weather { position: relative; }
-.weather.night,.weather.night a { color: #fff; }
+.weather.night,.weather.night a,.weather.night .icon { color: #fff; }
 .weather .details { width: 100%; position: relative; z-index: 2; }
 
 .weather .now,.weather .days { -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
 
-.weather .w-degree:after,.weather .days li > span:after { content: ""; display: block; border: solid 2px currentColor; border-radius: 20px; position: absolute; top: 0; }
+.weather .w-degree:after,.weather .deg:after,.weather .days li > span:after { content: ""; display: block; border: solid 2px currentColor; border-radius: 20px; position: absolute; top: 0; }
 .weather .w-degree:after { width: 16px; height: 16px; right: -20px; }
-.weather .days li > span:after { width: 6px; height: 6px; border-width: 1px; right: -7px; }
+.weather .days li > span:after,.weather .deg:after { width: 6px; height: 6px; border-width: 1px; right: -7px; }
 
+.weather .deg { vertical-align: middle; margin-right: 6px; display: inline-block; position: relative; }
 .weather .now { text-align: center; padding: 60px 15px 30px 15px; }
 .weather .w-degree,.weather .now > span { font-weight: 300; }
 .weather .w-degree { font-size: 72px; letter-spacing: -0.025em; line-height: 60px; margin-bottom: 15px; display: inline-block; position: relative; }
