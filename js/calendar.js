@@ -8,7 +8,7 @@ var calendar = {
     days: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
     months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
 
-    dateFormat : 1, // 0: dd/mm/yyyy, 1: mm/dd/yyyy
+    dateFormat: 1, // 0: dd/mm/yyyy, 1: mm/dd/yyyy
     startDayofWeek: 1, // 0: Sunday, 1: Monday
 
     fillWeekends: true, // true: fills dark color to weekends' background
@@ -17,7 +17,7 @@ var calendar = {
     nextIcon: 'icon-angle-right', // header's next button icon
     backIcon: 'icon-angle-left', // detail's back button icon
 
-    todayTheme : '' // use swatches
+    todayTheme: '' // use swatches
 
 };
 
