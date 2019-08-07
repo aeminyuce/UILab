@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="../css/alignments.css" />
     <link rel="stylesheet" href="../css/buttons.css" />
     <link rel="stylesheet" href="../css/borders.css" />
-    <link rel="stylesheet" href="../css/calendar.css" />
     <link rel="stylesheet" href="../css/carousel.css" />
     <link rel="stylesheet" href="../css/forms.css" />
     <link rel="stylesheet" href="../css/form-icons.css" />
@@ -47,7 +46,6 @@
     <script src="../js/events.js"></script>
 
     <script src="../js/ajax.js"></script>
-    <script src="../js/calendar.js"></script>
     <script src="../js/carousel.js"></script>
     <script src="../js/ie9-placeholders.js"></script>
     <script src="../js/forms.js"></script>
@@ -68,15 +66,16 @@
     <!-- custom CSS -->
     <style>
 
-        body,input,button,textarea,select { font-family: 'Lato', sans-serif; }
-        body { background: url(images/page_bg_01.jpg) no-repeat top center; background-size: cover; }
         .rounded { border-radius: 12px; }
+        .sidebar,.mobile-menu { background-image: linear-gradient(135deg, #97aaee, #ac89ec); }
+        .sidebar .selected,.mobile-menu .selected { background-image: linear-gradient(135deg, #ff6f70, #db66e4); }
 
         @media (max-width: 959px) {
             .md-static-57 { width: 57px; }
         }
 
-    </style>
+    </style>
+
 
 </head>
 
@@ -93,23 +92,25 @@
     </header>
 
     <!-- documentation examples -->
-    <main class="container no-gutter padding-30-b margin-30-b ui-dark">
+    <main class="container no-gutter">
         <div class="col-static no-responsive">
-            <div class="static-200 md-static-57 padding-15 hidden-md">
+            <div class="sidebar static-200 md-static-57 padding-5 ui-dark hidden-md">
 
-                <div class="align-left add-mobile-menu-left">
-                    <h5 class="light-ui padding-15">LIBRARY</h5>
-                    <ul class="list-unstyled list-spacer-15 large bold theme-default2 ease-2nd-btn">
+                <div class="align-left padding-10 add-mobile-menu-left">
+                    <h5 class="x-light-ui padding-15 margin-5-b">LIBRARY</h5>
+                    <ul class="list-unstyled list-spacer-15 large bold ease-2nd-btn">
                         <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">TV Shows</a></li>
-                        <li><a class="btn btn-lg btn-block circle" href="#">Films</a></li>
+                        <li><a class="btn btn-lg btn-block circle selected hover shadow-lg" href="#">Films</a></li>
                         <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Sports</a></li>
                         <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Music Concerts</a></li>
                         <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Comedy</a></li>
                         <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Other</a></li>
                     </ul>
 
-                    <h5 class="light-ui padding-15">NEWS &amp; EVENTS</h5>
-                    <ul class="list-unstyled list-spacer-15 large bold theme-default2 ease-2nd-btn">
+                    <span class="sp30"></span>
+
+                    <h5 class="x-light-ui padding-15 margin-5-b">NEWS &amp; EVENTS</h5>
+                    <ul class="list-unstyled list-spacer-15 large bold ease-2nd-btn">
                         <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">News</a></li>
                         <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Community</a></li>
                         <li><a class="btn btn-lg btn-block btn-invisible circle" href="#">Events</a></li>
@@ -120,16 +121,18 @@
             <div class="row row-no-padding">
                 <div class="col-12">
 
-                    <div class="padding-15">
-                        <div class="row row-equal-height">
+                    <div class="padding-30">
+
+                        <div class="row row-equal-height row-no-padding-ver">
                             <div class="col-6">
-                                <div class="text text-lg text-icon text-icon-lg text-icon-left circle dual-bordered ease-form form-light">
-                                    <i class="icon icon-sm icon-search ease-layout margin-5-l"></i>
+                                <div class="text text-lg text-icon text-icon-lg text-icon-left margin-15-b circle no-bordered theme-gray ui-light ease-form">
+                                    <i class="icon icon-sm icon-search ease-layout margin-5-l no-opacity"></i>
                                     <input type="text" placeholder="Search for movies, TV shows...">
                                 </div>
                             </div>
                             <div class="col-6 align-right sm-align-center">
-                                <span class="align-center margin-20-r ease-1st-btn">
+                                <span class="sp15 visible-md"></span>
+                                <span class="align-center x-dark margin-20-r ease-1st-btn">
                                     <button class="btn btn-square btn-lg btn-invisible circle left sm-no-float show-mobile-menu-left visible-md">
                                         <i class="icon icon-md icon-bars no-opacity"></i>
                                     </button>
@@ -149,270 +152,280 @@
                                 <span class="inline-block right sm-no-float">
                                     <img class="img-photo img-photo-sm circle margin-10-l right" src="images/profile-image.jpg" alt="">
                                     <span class="margin-3-t inline-block">aeminyuce</span>
-                                    <span class="small light-ui block">Premium</span>
+                                    <span class="small x-dark block">Premium</span>
                                 </span>
                             </div>
                         </div>
-                    </div>
+                        
+                        <span class="sp30"></span>
 
-                    <div class="col-static">
-                        <div class="row row-no-padding">
-                            <div class="col-12">
-
-                                <h2 class="bold padding-15 no-padding-b">Now Showing</h2>
-
-                                <div class="carousel half-sized margin-15-r md-no-margin-r" data-col-xl="7" data-col-lg="5" data-col="3" data-col-md="4" data-col-sm="4" data-col-xs="2">
-                                    <div class="carousel-slider ease-layout ease-slow ease-in-out">
-                                        <div class="content padding-15">
-                                            <a class="block scale ease-layout" href="#">
-                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_01.jpg" alt="">
-                                                <b class="large">Captain Marvel</b>
-                                                <span class="x-light-ui margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
-                                                <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
-                                                <span class="inline-block margin-2-l margin-10-r">
-                                                    7,0 <span class="x-small light-ui">/10</span> &nbsp; 7+
-                                                </span>
+                        <div class="col-lg-10 col-12">
+                            <div class="col-static">
+                                <div class="static-350 padding-15-v rounded" style="background: #000;">
+                                    <iframe class="no-bordered full-width block rounded shadow-lg" src="https://www.imdb.com/videoembed/vi4235180569" allowfullscreen height="145"></iframe>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 padding-30-l no-padding-v md-no-padding">
+                                        <span class="sp15 visible-md"></span>
+                                        <h2 class="bold margin-5-b">Related Videos</h2>
+                                        <b class="large">Captain Marvel (2019)</b>
+                                        <p class="margin-10-v">
+                                            After crashing an experimental aircraft, Air Force pilot Carol Danvers is discovered by the Kree and trained as a member of the elite Starforce Military under the command of her mentor Yon-Rogg. Six years later, after escaping to Earth while under attack by the Skrulls.
+                                        </p>
+                                        <div class="padding-10-v right">
+                                            <i class="icon icon-xs icon-angle-left opacity-more ease-layout"></i>
+                                            <span class="inline-block margin-5-h">13 of 20</span>
+                                            <i class="icon icon-xs icon-angle-right opacity-more ease-layout"></i>
+                                        </div>
+                                        <div class="padding-15-h">
+                                            <a style="margin-left: -15px;" href="#"><img class="img-photo-sm dual-bordered circle" style="border-color: #fff;" src="images/profile-image.jpg" alt=""></a>
+                                            <a style="margin-left: -15px;" href="#"><img class="img-photo-sm dual-bordered circle" style="border-color: #fff;" src="images/profile-image2.jpg" alt=""></a>
+                                            <a style="margin-left: -15px;" href="#"><img class="img-photo-sm dual-bordered circle" style="border-color: #fff;" src="images/profile-image3.jpg" alt=""></a>
+                                            <a class="margin-15-l inline-block opacity ease-layout" href="#">
+                                                See full cast
+                                                <i class="icon icon-xxs icon-angle-right margin-5-l"></i>
                                             </a>
                                         </div>
-                                        <div class="content padding-15">
-                                            <a class="block scale ease-layout" href="#">
-                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_02.jpg" alt="">
-                                                <b class="large">Avengers: Endgame</b>
-                                                <span class="x-light-ui margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
-                                                <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
-                                                <span class="inline-block margin-2-l margin-10-r">
-                                                    8,7 <span class="x-small light-ui">/10</span> &nbsp; 8+
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="content padding-15">
-                                            <a class="block scale ease-layout" href="#">
-                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_03.jpg" alt="">
-                                                <b class="large">Captain America</b>
-                                                <span class="x-light-ui margin-5-b block">2014 &nbsp; Action, Sci-Fi</span>
-                                                <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
-                                                <span class="inline-block margin-2-l margin-10-r">
-                                                    7,8 <span class="x-small light-ui">/10</span> &nbsp; 13+
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="content padding-15">
-                                            <a class="block scale ease-layout" href="#">
-                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_04.jpg" alt="">
-                                                <b class="large">Ant-Man</b>
-                                                <span class="x-light-ui margin-5-b block">2015 &nbsp; Action, Comedy</span>
-                                                <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
-                                                <span class="inline-block margin-2-l margin-10-r">
-                                                    7,3 <span class="x-small light-ui">/10</span> &nbsp; 13+
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="content padding-15">
-                                            <a class="block scale ease-layout" href="#">
-                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_05.jpg" alt="">
-                                                <b class="large">Venom</b>
-                                                <span class="x-light-ui margin-5-b block">2018 &nbsp; Action, Thriller</span>
-                                                <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
-                                                <span class="inline-block margin-2-l margin-10-r">
-                                                    6,7 <span class="x-small light-ui">/10</span> &nbsp; 15+
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="content padding-15">
-                                            <a class="block scale ease-layout" href="#">
-                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_06.jpg" alt="">
-                                                <b class="large">Justice League</b>
-                                                <span class="x-light-ui margin-5-b block">2017 &nbsp; Action, Fantasy</span>
-                                                <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
-                                                <span class="inline-block margin-2-l margin-10-r">
-                                                    6,4 <span class="x-small light-ui">/10</span> &nbsp; 13+
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="content padding-15">
-                                            <a class="block scale ease-layout" href="#">
-                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_01.jpg" alt="">
-                                                <b class="large">Captain Marvel</b>
-                                                <span class="x-light-ui margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
-                                                <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
-                                                <span class="inline-block margin-2-l margin-10-r">
-                                                    7,0 <span class="x-small light-ui">/10</span> &nbsp; 7+
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="content padding-15">
-                                            <a class="block scale ease-layout" href="#">
-                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_02.jpg" alt="">
-                                                <b class="large">Avengers: Endgame</b>
-                                                <span class="x-light-ui margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
-                                                <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
-                                                <span class="inline-block margin-2-l margin-10-r">
-                                                    8,7 <span class="x-small light-ui">/10</span> &nbsp; 8+
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="content padding-15">
-                                            <a class="block scale ease-layout" href="#">
-                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_03.jpg" alt="">
-                                                <b class="large">Captain America</b>
-                                                <span class="x-light-ui margin-5-b block">2014 &nbsp; Action, Sci-Fi</span>
-                                                <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
-                                                <span class="inline-block margin-2-l margin-10-r">
-                                                    7,8 <span class="x-small light-ui">/10</span> &nbsp; 13+
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="content padding-15">
-                                            <a class="block scale ease-layout" href="#">
-                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_04.jpg" alt="">
-                                                <b class="large">Ant-Man</b>
-                                                <span class="x-light-ui margin-5-b block">2015 &nbsp; Action, Comedy</span>
-                                                <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
-                                                <span class="inline-block margin-2-l margin-10-r">
-                                                    7,3 <span class="x-small light-ui">/10</span> &nbsp; 13+
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="content padding-15">
-                                            <a class="block scale ease-layout" href="#">
-                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_05.jpg" alt="">
-                                                <b class="large">Venom</b>
-                                                <span class="x-light-ui margin-5-b block">2018 &nbsp; Action, Thriller</span>
-                                                <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
-                                                <span class="inline-block margin-2-l margin-10-r">
-                                                    6,7 <span class="x-small light-ui">/10</span> &nbsp; 15+
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="content padding-15">
-                                            <a class="block scale ease-layout" href="#">
-                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_06.jpg" alt="">
-                                                <b class="large">Justice League</b>
-                                                <span class="x-light-ui margin-5-b block">2017 &nbsp; Action, Fantasy</span>
-                                                <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
-                                                <span class="inline-block margin-2-l margin-10-r">
-                                                    6,4 <span class="x-small light-ui">/10</span> &nbsp; 13+
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-nav align-center ease-1st-bg">
-                                        <button class="carousel-prev btn btn-invisible btn-square rounded"><i class="icon icon-md icon-angle-left"></i></button>
-                                        <span class="dots"></span>
-                                        <button class="carousel-next btn btn-invisible btn-square rounded"><i class="icon icon-md icon-angle-right"></i></button>
                                     </div>
                                 </div>
-
-                                <h2 class="bold padding-15 no-padding-b">Categories</h2>
-
-                                <div class="carousel half-sized margin-15-r md-no-margin-r" data-col-xl="6" data-col-lg="4" data-col="3" data-col-md="4" data-col-sm="4" data-col-xs="2">
-                                    <div class="carousel-slider ease-layout ease-slow ease-in-out">
-                                        <div class="content padding-15">
-                                            <a class="block scale ease-layout" href="#">
-                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_category_01.jpg" alt="">
-                                                <b class="large">Action</b>
-                                            </a>
-                                        </div>
-                                        <div class="content padding-15">
-                                            <a class="block scale ease-layout" href="#">
-                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_category_02.jpg" alt="">
-                                                <b class="large">Adventure</b>
-                                            </a>
-                                        </div>
-                                        <div class="content padding-15">
-                                            <a class="block scale ease-layout" href="#">
-                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_category_03.jpg" alt="">
-                                                <b class="large">Comedy</b>
-                                            </a>
-                                        </div>
-                                        <div class="content padding-15">
-                                            <a class="block scale ease-layout" href="#">
-                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_category_04.jpg" alt="">
-                                                <b class="large">Sci-Fi</b>
-                                            </a>
-                                        </div>
-                                        <div class="content padding-15">
-                                            <a class="block scale ease-layout" href="#">
-                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_category_05.jpg" alt="">
-                                                <b class="large">Animation</b>
-                                            </a>
-                                        </div>
-                                        <div class="content padding-15">
-                                            <a class="block scale ease-layout" href="#">
-                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_category_06.jpg" alt="">
-                                                <b class="large">Horror</b>
-                                            </a>
-                                        </div>
-                                        <div class="content padding-15">
-                                            <a class="block scale ease-layout" href="#">
-                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_category_01.jpg" alt="">
-                                                <b class="large">Action</b>
-                                            </a>
-                                        </div>
-                                        <div class="content padding-15">
-                                            <a class="block scale ease-layout" href="#">
-                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_category_02.jpg" alt="">
-                                                <b class="large">Adventure</b>
-                                            </a>
-                                        </div>
-                                        <div class="content padding-15">
-                                            <a class="block scale ease-layout" href="#">
-                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_category_03.jpg" alt="">
-                                                <b class="large">Comedy</b>
-                                            </a>
-                                        </div>
-                                        <div class="content padding-15">
-                                            <a class="block scale ease-layout" href="#">
-                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_category_04.jpg" alt="">
-                                                <b class="large">Sci-Fi</b>
-                                            </a>
-                                        </div>
-                                        <div class="content padding-15">
-                                            <a class="block scale ease-layout" href="#">
-                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_category_05.jpg" alt="">
-                                                <b class="large">Animation</b>
-                                            </a>
-                                        </div>
-                                        <div class="content padding-15">
-                                            <a class="block scale ease-layout" href="#">
-                                                <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_category_06.jpg" alt="">
-                                                <b class="large">Horror</b>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-nav align-center ease-1st-bg">
-                                        <button class="carousel-prev btn btn-invisible btn-square rounded"><i class="icon icon-md icon-angle-left"></i></button>
-                                        <span class="dots"></span>
-                                        <button class="carousel-next btn btn-invisible btn-square rounded"><i class="icon icon-md icon-angle-right"></i></button>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
-                        <div class="static-400 padding-15-h">
 
-                            <span class="sp30 visible-md"></span>
+                        <div class="clearfix"></div>
 
-                            <div class="portlet xx-dark full-height padding-15 rounded shadow-lg">
-                                <div class="right">
-                                    <i class="icon icon-xs icon-angle-left opacity-more ease-layout"></i>
-                                    <span class="x-dark inline-block">13 of 20</span>
-                                    <i class="icon icon-xs icon-angle-right opacity-more ease-layout"></i>
+                    </div>
+
+                    <div class="padding-15-h">
+                        <h2 class="bold padding-15 no-padding-b">Now Showing</h2>
+
+                        <div class="carousel half-sized margin-15-r md-no-margin-r" data-col-xl="8" data-col-lg="6" data-col="3" data-col-md="4" data-col-sm="4" data-col-xs="2">
+                            <div class="carousel-slider ease-layout ease-slow ease-in-out">
+                                <div class="content padding-15">
+                                    <a class="block scale ease-layout" href="#">
+                                        <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_01.jpg" alt="">
+                                        <b class="large">Captain Marvel</b>
+                                        <span class="x-dark margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
+                                        <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
+                                        <span class="inline-block margin-2-l margin-10-r">
+                                            7,0 <span class="dark">/10</span> &nbsp; 7+
+                                        </span>
+                                    </a>
                                 </div>
-                                <h4 class="margin-5-b">Related Videos</h4>
-                                <h5 class="margin-15-b">Captain Marvel (2019)</h5>
-                                <iframe class="no-bordered rounded full-width shadow" src="https://www.imdb.com/videoembed/vi4235180569" allowfullscreen height="141"></iframe>
-                                <p class="x-dark margin-5-t">
-                                    <b>"Connection" TV Spot (0:31)</b>
-                                    <span class="sp5"></span>
-                                    Carol Danvers becomes one of the universe's most powerful heroes when Earth is caught in the middle of a galactic war between two alien races.
-                                </p>
-                                <h4 class="margin-15-b">Coming Soon</h4>
-                                <div class="calendar no-padding ease-calendar rounded" data-src="json/events.json" data-date="2019,6"></div>
+                                <div class="content padding-15">
+                                    <a class="block scale ease-layout" href="#">
+                                        <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_02.jpg" alt="">
+                                        <b class="large">Avengers: Endgame</b>
+                                        <span class="x-dark margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
+                                        <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
+                                        <span class="inline-block margin-2-l margin-10-r">
+                                            8,7 <span class="dark">/10</span> &nbsp; 8+
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="content padding-15">
+                                    <a class="block scale ease-layout" href="#">
+                                        <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_03.jpg" alt="">
+                                        <b class="large">Captain America</b>
+                                        <span class="x-dark margin-5-b block">2014 &nbsp; Action, Sci-Fi</span>
+                                        <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
+                                        <span class="inline-block margin-2-l margin-10-r">
+                                            7,8 <span class="dark">/10</span> &nbsp; 13+
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="content padding-15">
+                                    <a class="block scale ease-layout" href="#">
+                                        <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_04.jpg" alt="">
+                                        <b class="large">Ant-Man</b>
+                                        <span class="x-dark margin-5-b block">2015 &nbsp; Action, Comedy</span>
+                                        <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
+                                        <span class="inline-block margin-2-l margin-10-r">
+                                            7,3 <span class="dark">/10</span> &nbsp; 13+
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="content padding-15">
+                                    <a class="block scale ease-layout" href="#">
+                                        <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_05.jpg" alt="">
+                                        <b class="large">Venom</b>
+                                        <span class="x-dark margin-5-b block">2018 &nbsp; Action, Thriller</span>
+                                        <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
+                                        <span class="inline-block margin-2-l margin-10-r">
+                                            6,7 <span class="dark">/10</span> &nbsp; 15+
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="content padding-15">
+                                    <a class="block scale ease-layout" href="#">
+                                        <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_06.jpg" alt="">
+                                        <b class="large">Justice League</b>
+                                        <span class="x-dark margin-5-b block">2017 &nbsp; Action, Fantasy</span>
+                                        <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
+                                        <span class="inline-block margin-2-l margin-10-r">
+                                            6,4 <span class="dark">/10</span> &nbsp; 13+
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="content padding-15">
+                                    <a class="block scale ease-layout" href="#">
+                                        <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_01.jpg" alt="">
+                                        <b class="large">Captain Marvel</b>
+                                        <span class="x-dark margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
+                                        <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
+                                        <span class="inline-block margin-2-l margin-10-r">
+                                            7,0 <span class="dark">/10</span> &nbsp; 7+
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="content padding-15">
+                                    <a class="block scale ease-layout" href="#">
+                                        <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_02.jpg" alt="">
+                                        <b class="large">Avengers: Endgame</b>
+                                        <span class="x-dark margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
+                                        <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
+                                        <span class="inline-block margin-2-l margin-10-r">
+                                            8,7 <span class="dark">/10</span> &nbsp; 8+
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="content padding-15">
+                                    <a class="block scale ease-layout" href="#">
+                                        <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_03.jpg" alt="">
+                                        <b class="large">Captain America</b>
+                                        <span class="x-dark margin-5-b block">2014 &nbsp; Action, Sci-Fi</span>
+                                        <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
+                                        <span class="inline-block margin-2-l margin-10-r">
+                                            7,8 <span class="dark">/10</span> &nbsp; 13+
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="content padding-15">
+                                    <a class="block scale ease-layout" href="#">
+                                        <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_04.jpg" alt="">
+                                        <b class="large">Ant-Man</b>
+                                        <span class="x-dark margin-5-b block">2015 &nbsp; Action, Comedy</span>
+                                        <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
+                                        <span class="inline-block margin-2-l margin-10-r">
+                                            7,3 <span class="dark">/10</span> &nbsp; 13+
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="content padding-15">
+                                    <a class="block scale ease-layout" href="#">
+                                        <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_05.jpg" alt="">
+                                        <b class="large">Venom</b>
+                                        <span class="x-dark margin-5-b block">2018 &nbsp; Action, Thriller</span>
+                                        <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
+                                        <span class="inline-block margin-2-l margin-10-r">
+                                            6,7 <span class="dark">/10</span> &nbsp; 15+
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="content padding-15">
+                                    <a class="block scale ease-layout" href="#">
+                                        <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_06.jpg" alt="">
+                                        <b class="large">Justice League</b>
+                                        <span class="x-dark margin-5-b block">2017 &nbsp; Action, Fantasy</span>
+                                        <i class="icon icon-xs icon-favorite-fill font-yellow"></i>
+                                        <span class="inline-block margin-2-l margin-10-r">
+                                            6,4 <span class="dark">/10</span> &nbsp; 13+
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
+                            <div class="carousel-nav align-center ease-1st-bg">
+                                <button class="carousel-prev btn btn-invisible btn-square rounded"><i class="icon icon-md icon-angle-left"></i></button>
+                                <span class="dots dark"></span>
+                                <button class="carousel-next btn btn-invisible btn-square rounded"><i class="icon icon-md icon-angle-right"></i></button>
+                            </div>
+                        </div>
 
+                        <h2 class="bold padding-15 no-padding-b">Categories</h2>
+
+                        <div class="carousel half-sized margin-15-r md-no-margin-r" data-col-xl="6" data-col-lg="6" data-col="3" data-col-md="4" data-col-sm="4" data-col-xs="2">
+                            <div class="carousel-slider ease-layout ease-slow ease-in-out">
+                                <div class="content padding-15">
+                                    <a class="block scale ease-layout" href="#">
+                                        <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_category_01.jpg" alt="">
+                                        <b class="large">Action</b>
+                                    </a>
+                                </div>
+                                <div class="content padding-15">
+                                    <a class="block scale ease-layout" href="#">
+                                        <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_category_02.jpg" alt="">
+                                        <b class="large">Adventure</b>
+                                    </a>
+                                </div>
+                                <div class="content padding-15">
+                                    <a class="block scale ease-layout" href="#">
+                                        <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_category_03.jpg" alt="">
+                                        <b class="large">Comedy</b>
+                                    </a>
+                                </div>
+                                <div class="content padding-15">
+                                    <a class="block scale ease-layout" href="#">
+                                        <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_category_04.jpg" alt="">
+                                        <b class="large">Sci-Fi</b>
+                                    </a>
+                                </div>
+                                <div class="content padding-15">
+                                    <a class="block scale ease-layout" href="#">
+                                        <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_category_05.jpg" alt="">
+                                        <b class="large">Animation</b>
+                                    </a>
+                                </div>
+                                <div class="content padding-15">
+                                    <a class="block scale ease-layout" href="#">
+                                        <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_category_06.jpg" alt="">
+                                        <b class="large">Horror</b>
+                                    </a>
+                                </div>
+                                <div class="content padding-15">
+                                    <a class="block scale ease-layout" href="#">
+                                        <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_category_01.jpg" alt="">
+                                        <b class="large">Action</b>
+                                    </a>
+                                </div>
+                                <div class="content padding-15">
+                                    <a class="block scale ease-layout" href="#">
+                                        <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_category_02.jpg" alt="">
+                                        <b class="large">Adventure</b>
+                                    </a>
+                                </div>
+                                <div class="content padding-15">
+                                    <a class="block scale ease-layout" href="#">
+                                        <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_category_03.jpg" alt="">
+                                        <b class="large">Comedy</b>
+                                    </a>
+                                </div>
+                                <div class="content padding-15">
+                                    <a class="block scale ease-layout" href="#">
+                                        <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_category_04.jpg" alt="">
+                                        <b class="large">Sci-Fi</b>
+                                    </a>
+                                </div>
+                                <div class="content padding-15">
+                                    <a class="block scale ease-layout" href="#">
+                                        <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_category_05.jpg" alt="">
+                                        <b class="large">Animation</b>
+                                    </a>
+                                </div>
+                                <div class="content padding-15">
+                                    <a class="block scale ease-layout" href="#">
+                                        <img class="img-responsive rounded block margin-15-b shadow hover-shadow ease-layout" src="images/movie_category_06.jpg" alt="">
+                                        <b class="large">Horror</b>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-nav align-center ease-1st-bg">
+                                <button class="carousel-prev btn btn-invisible btn-square rounded"><i class="icon icon-md icon-angle-left"></i></button>
+                                <span class="dots dark"></span>
+                                <button class="carousel-next btn btn-invisible btn-square rounded"><i class="icon icon-md icon-angle-right"></i></button>
+                            </div>
                         </div>
                     </div>
+
+                    <span class="sp30"></span>
 
                 </div>
             </div>
@@ -420,7 +433,7 @@
     </main>
 
     <!-- mobile menu -->
-    <div class="mobile-menu show-left theme-default2 ui-dark ease-layout ease-slow ease-in-out">
+    <div class="mobile-menu show-left ui-dark ease-layout ease-slow ease-in-out">
         <button class="btn btn-square btn-lg btn-invisible rounded ease-btn close-mobile-menu">
             <i class="icon icon-md icon-remove no-opacity"></i>
         </button>
