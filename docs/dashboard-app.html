@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UI Lab, Dashboard App</title>
+    <meta name="keywords" content="uilab, responsive, design system, css, javascript, dashboard app">
+    <meta name="description" content="CSS & JavaScript powered responsive design system." />
+    <meta name="author" content="Ahmet Emin Yüce"/>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
+
+    <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/alignments.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
+    <link rel="stylesheet" href="../css/buttons.css" />
+    <link rel="stylesheet" href="../css/borders.css" />
+    <link rel="stylesheet" href="../css/carousel.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <link rel="stylesheet" href="../css/form-icons.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/helpers.css" />
+    <link rel="stylesheet" href="../css/icons.css" />
+    <link rel="stylesheet" href="../css/listings.css" />
+    <link rel="stylesheet" href="../css/line-charts.css" />
+    <link rel="stylesheet" href="../css/margins.css" />
+    <link rel="stylesheet" href="../css/paddings.css" />
+    <link rel="stylesheet" href="../css/portlets.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/scrollbar.css" />
+    <link rel="stylesheet" href="../css/swatches.css" />
+    <link rel="stylesheet" href="../css/tables.css" />
+    <link rel="stylesheet" href="../css/tooltip.css" />
+    <link rel="stylesheet" href="../css/transitions.css" />
+    <link rel="stylesheet" href="../css/typography.css" />
+    <link rel="stylesheet" href="../css/top-button.css" />
+
+    <!-- Javascript Tools -->
+    <script src="../js/selector.js"></script>
+    <script src="../js/events.js"></script>
+
+    <script src="../js/carousel.js"></script>
+    <script src="../js/forms.js"></script>
+    <script src="../js/line-charts.js"></script>
+    <script src="../js/swatches.js"></script>
+    <script src="../js/tooltip.js"></script>
+    <script src="../js/top-button.js"></script>
+    <script src="../js/transitions.js"></script>
+    <script src="../js/user-agents.js"></script>
+
+    <!-- font icons CSS -->
+    <link rel="stylesheet" href="icons/font-icons/fill/font-icons.css" />
+
+    <!-- custom CSS -->
+    <style>
+        body { background-color: #f9f9f9; }
+
+        .app { background-image: linear-gradient(45deg, #013a77, #00acce); border-radius: 30px; }
+        .rounded:not(.tooltip) { border-radius: 16px; }
+
+        .bg1 { background-color: rgba(255,255,255,.35); }
+        .bg2 { background-color: rgba(255,255,255,.2); }
+        .bg1:hover,.bg2:hover { background-color: rgba(255,255,255,.5) !important; }
+
+        .theme-app.ui-x-light,.theme-app .ui-x-light:not([class*="theme-"]) { background-color: #dcebff; }
+        .theme-app.ui-light,.theme-app .ui-light:not([class*="theme-"]) { background-color: #a9ceff; }
+        .theme-app.ui-dark,.theme-app .ui-dark:not([class*="theme-"]) { background-color: #134486; }
+        .theme-app.ui-text,.theme-app .ui-text { color: #134486; }
+        .theme-app.ui-border,.theme-app .ui-border { border-color: #134486; }
+        .theme-app.ui-x-dark,.theme-app .ui-x-dark:not([class*="theme-"]) { background-color: #113a72; }
+
+        .theme-app2.ui-x-light,.theme-app2 .ui-x-light:not([class*="theme-"]) { background-color: #d8faff; }
+        .theme-app2.ui-light,.theme-app2 .ui-light:not([class*="theme-"]) { background-color: #a6f4ff; }
+        .theme-app2.ui-dark,.theme-app2 .ui-dark:not([class*="theme-"]) { background-color: #00cbe7; }
+        .theme-app2.ui-text,.theme-app2 .ui-text { color: #00cbe7; }
+        .theme-app2.ui-border,.theme-app2 .ui-border { border-color: #00cbe7; }
+        .theme-app2.ui-x-dark,.theme-app2 .ui-x-dark:not([class*="theme-"]) { background-color: #00b8dd; }
+    </style>
+
+    <!-- custom js -->
+    <script>
+
+        lineCharts.colors = ['#00cbe7', '#ff9f40', '#ff6384', '#9966ff', '#4bc0c0', '#ffcd56', '#84594d', '#bbc451', '#6a6a6a', '#647bc1'];
+
+        lineCharts.bottom = 0; // set bottom space (px)
+        lineCharts.left = 6; // set left space (px)
+
+        lineCharts.showBgGrid = false; // set showing bg grid
+        lineCharts.showGridText = false; // set showing grid numbers
+        lineCharts.showInfo = false; // set showing info
+
+        lineCharts.gridStroke = 0; // set grid stroke width
+
+    </script>
+
+</head>
+
+<body>
+
+    <!-- documentation examples -->
+    <main class="container no-gutter">
+        <div class="fixed padding-30-v">
+
+            <div class="row row-lg-padding padding-30-b">
+                <div class="col-4 offset-2 col-md-6 offset-md-0 sm-responsive">
+
+                    <div class="app padding-15 theme-app ui-dark">
+                        
+                        <h4 class="margin-10-v">Current Reports</h4>
+
+                        <div class="row row-md-padding margin-20-b ease-2nd-btn">
+
+                            <div class="col-4">
+                                <a class="btn btn-multi no-line-height padding-10-v block rounded bg1 shadow" href="#">
+                                    <span class="x-largest thin">23</span>
+                                    <span class="x-light-ui block">
+                                        <i class="icon icon-xs icon-user no-opacity margin-3-r"></i>
+                                        <span class="small">Waiting</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a class="btn btn-multi no-line-height padding-10-v block rounded bg1 shadow" href="#">
+                                    <span class="x-largest thin">258</span>
+                                    <span class="x-light-ui block">
+                                        <i class="icon icon-xs icon-user no-opacity margin-3-r"></i>
+                                        <span class="small">Expert</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a class="btn btn-multi no-line-height padding-10-v block rounded bg1 shadow" href="#">
+                                    <span class="x-largest thin">49</span>
+                                    <span class="x-light-ui block">
+                                        <i class="icon icon-xs icon-user no-opacity margin-3-r"></i>
+                                        <span class="small">First Audit</span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="col-4">
+                                <a class="btn btn-multi no-line-height padding-10-v block rounded bg2" href="#">
+                                    <span class="largest">23</span>
+                                    <span class="x-light-ui block">
+                                        <span class="small">Second Audit</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a class="btn btn-multi no-line-height padding-10-v block rounded bg2" href="#">
+                                    <span class="largest">20</span>
+                                    <span class="x-light-ui block">
+                                        <span class="small">Paused</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a class="btn btn-multi no-line-height padding-10-v block rounded bg2" href="#">
+                                    <span class="largest">68</span>
+                                    <span class="light-ui block">
+                                        <span class="small">Delayed</span>
+                                    </span>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <h4>Last Week Reports</h4>
+
+                        <div class="line-charts margin-15-b ease-line-charts" data-size="5,15" data-x="1,2,3,4,5,6,7">
+                            <ul class="line" data-type="curved filled">
+                                <li data-y="159"></li>
+                                <li data-y="120"></li>
+                                <li data-y="20"></li>
+                                <li data-y="118"></li>
+                                <li data-y="37"></li>
+                                <li data-y="0"></li>
+                                <li data-y="76"></li>
+                            </ul>
+                            <ul class="line" data-type="curved filled">
+                                <li data-y="55"></li>
+                                <li data-y="70"></li>
+                                <li data-y="92"></li>
+                                <li data-y="48"></li>
+                                <li data-y="166"></li>
+                                <li data-y="98"></li>
+                                <li data-y="116"></li>
+                            </ul>
+                        </div>
+
+                        <div class="text text-icon text-icon-left text-icon-lg text-lg dual-bordered margin-15-b rounded form-light ease-form">
+                            <i class="icon icon-sm icon-search margin-5-l ease-layout"></i>
+                            <input type="text" placeholder="Search">
+                        </div>
+
+                        <div class="portlet padding-15 rounded shadow-lg">
+                            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-4 col-md-6 sm-responsive">
+
+                    2
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
