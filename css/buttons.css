@@ -10,12 +10,12 @@ input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .btn-square { width: 32px; }
 .btn:not(.btn-passive) { cursor: pointer; }
 .btn:not([class*="bordered"]) { border-width: 0; }
-.btn:not(.btn-multitext) { white-space: nowrap; }
+.btn:not(.btn-multi) { white-space: nowrap; }
 
-.btn.btn-multitext { word-wrap: break-word; height: auto !important; min-height: 32px; }
-.btn-sm.btn-multitext { min-height: 26px; }
-.btn-xs.btn-multitext { min-height: 22px; }
-.btn-xxs.btn-multitext { min-height: 16px; }
+.btn.btn-multi { word-wrap: break-word; height: auto !important; min-height: 32px; }
+.btn-sm.btn-multi { min-height: 26px; }
+.btn-xs.btn-multi { min-height: 22px; }
+.btn-xxs.btn-multi { min-height: 16px; }
 
 .btn:not(.circle) { padding-right: 10px; padding-left: 10px; }
 .btn:not(.btn-xs):not(.btn-xxs).circle { padding-right: 16px; padding-left: 16px;}
@@ -58,7 +58,6 @@ html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hove
 .btn-passive:hover { cursor: not-allowed; }
 
 .btn-active { font-weight: bold; }
-.btn-block { width: 100%; display: block; }
 
 .btn-invisible.ui-dark:not(.ui-text),.btn-invisible.ui-x-dark:not(.ui-text) { color: #000; }
 .btn-invisible.ui-dark:hover,.btn-invisible.ui-x-dark:hover { color: #fff !important; }
