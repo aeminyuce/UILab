@@ -1,6 +1,6 @@
 /* static grid */
 .col-static { width: 100%; display: table; table-layout: fixed; }
-.col-static > .row,.col-static > [class*="static-"] { vertical-align: top; display: table-cell; }
+.col-static > .row,.col-static > [class*="static-"] { vertical-align: top; display: table-cell !important; }
 .col-static > .row { width: 100%; margin-left: inherit; margin-right: inherit; table-layout: fixed; }
 
 .static-0 { width: 0; } .static-50 { width: 50px; } .static-100 { width: 100px; } .static-150 { width: 150px; } .static-200 { width: 200px; } .static-250 { width: 250px; } .static-300 { width: 300px; } .static-350 { width: 350px; } .static-400 { width: 400px; } .static-450 { width: 450px; } .static-500 { width: 500px; } .static-550 { width: 550px; } .static-600 { width: 600px; }
