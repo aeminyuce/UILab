@@ -56,14 +56,9 @@
 
     <!-- custom CSS -->
     <style>
-        body { background-color: #f9f9f9; }
-
-        .app { background-image: linear-gradient(45deg, #013a77, #00acce); border-radius: 30px; }
+        .app { background-image: linear-gradient(180deg, #00cbe7, #113a72, #113a72); border-radius: 42px; }
+        .portlet { border-radius: 36px; }
         .rounded:not(.tooltip) { border-radius: 16px; }
-
-        .bg1 { background-color: rgba(255,255,255,.35); }
-        .bg2 { background-color: rgba(255,255,255,.2); }
-        .bg1:hover,.bg2:hover { background-color: rgba(255,255,255,.5) !important; }
 
         .theme-app.ui-x-light,.theme-app .ui-x-light:not([class*="theme-"]) { background-color: #dcebff; }
         .theme-app.ui-light,.theme-app .ui-light:not([class*="theme-"]) { background-color: #a9ceff; }
@@ -83,16 +78,16 @@
     <!-- custom js -->
     <script>
 
-        lineCharts.colors = ['#00cbe7', '#ff9f40', '#ff6384', '#9966ff', '#4bc0c0', '#ffcd56', '#84594d', '#bbc451', '#6a6a6a', '#647bc1'];
+        lineCharts.colors = ['#134486', '#00cbe7', '#ff6384', '#9966ff', '#4bc0c0', '#ffcd56', '#84594d', '#bbc451', '#6a6a6a', '#647bc1'];
 
         lineCharts.bottom = 0; // set bottom space (px)
         lineCharts.left = 6; // set left space (px)
 
         lineCharts.showBgGrid = false; // set showing bg grid
         lineCharts.showGridText = false; // set showing grid numbers
-        lineCharts.showInfo = false; // set showing info
 
         lineCharts.gridStroke = 0; // set grid stroke width
+
 
     </script>
 
@@ -107,97 +102,134 @@
             <div class="row row-lg-padding padding-30-b">
                 <div class="col-4 offset-2 col-md-6 offset-md-0 sm-responsive">
 
-                    <div class="app padding-15 theme-app ui-dark">
+                    <div class="app padding-5 theme-app ui-dark">
                         
-                        <h4 class="margin-10-v">Current Reports</h4>
-
-                        <div class="row row-md-padding margin-20-b ease-2nd-btn">
-
-                            <div class="col-4">
-                                <a class="btn btn-multi no-line-height padding-10-v block rounded bg1 shadow" href="#">
-                                    <span class="x-largest thin">23</span>
-                                    <span class="x-light-ui block">
-                                        <i class="icon icon-xs icon-user no-opacity margin-3-r"></i>
-                                        <span class="small">Waiting</span>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="col-4">
-                                <a class="btn btn-multi no-line-height padding-10-v block rounded bg1 shadow" href="#">
-                                    <span class="x-largest thin">258</span>
-                                    <span class="x-light-ui block">
-                                        <i class="icon icon-xs icon-user no-opacity margin-3-r"></i>
-                                        <span class="small">Expert</span>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="col-4">
-                                <a class="btn btn-multi no-line-height padding-10-v block rounded bg1 shadow" href="#">
-                                    <span class="x-largest thin">49</span>
-                                    <span class="x-light-ui block">
-                                        <i class="icon icon-xs icon-user no-opacity margin-3-r"></i>
-                                        <span class="small">First Audit</span>
-                                    </span>
-                                </a>
-                            </div>
-
-                            <div class="col-4">
-                                <a class="btn btn-multi no-line-height padding-10-v block rounded bg2" href="#">
-                                    <span class="largest">23</span>
-                                    <span class="x-light-ui block">
-                                        <span class="small">Second Audit</span>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="col-4">
-                                <a class="btn btn-multi no-line-height padding-10-v block rounded bg2" href="#">
-                                    <span class="largest">20</span>
-                                    <span class="x-light-ui block">
-                                        <span class="small">Paused</span>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="col-4">
-                                <a class="btn btn-multi no-line-height padding-10-v block rounded bg2" href="#">
-                                    <span class="largest">68</span>
-                                    <span class="light-ui block">
-                                        <span class="small">Delayed</span>
-                                    </span>
-                                </a>
-                            </div>
-
-                        </div>
-
-                        <h4>Last Week Reports</h4>
-
-                        <div class="line-charts margin-15-b ease-line-charts" data-size="5,15" data-x="1,2,3,4,5,6,7">
-                            <ul class="line" data-type="curved filled">
-                                <li data-y="159"></li>
-                                <li data-y="120"></li>
-                                <li data-y="20"></li>
-                                <li data-y="118"></li>
-                                <li data-y="37"></li>
-                                <li data-y="0"></li>
-                                <li data-y="76"></li>
-                            </ul>
-                            <ul class="line" data-type="curved filled">
-                                <li data-y="55"></li>
-                                <li data-y="70"></li>
-                                <li data-y="92"></li>
-                                <li data-y="48"></li>
-                                <li data-y="166"></li>
-                                <li data-y="98"></li>
-                                <li data-y="116"></li>
-                            </ul>
-                        </div>
-
-                        <div class="text text-icon text-icon-left text-icon-lg text-lg dual-bordered margin-15-b rounded form-light ease-form">
+                        <!-- <div class="text text-icon text-icon-left text-icon-lg text-lg dual-bordered margin-15-b rounded form-light ease-form">
                             <i class="icon icon-sm icon-search margin-5-l ease-layout"></i>
                             <input type="text" placeholder="Search">
+                        </div> -->
+
+                        <div class="portlet xx-dark padding-10-t no-margin-b">
+                            <div class="content-side padding-15 align-center">
+                                    <img src="images/logo-reports.png" alt="Logo" height="26">
+                            </div>
+                            <div class="content-side padding-15 no-padding-b">
+                                <h4>Current Reports</h4>
+                            </div>
+                            <div class="content-side padding-10">
+                                <div class="row row-md-padding ease-2nd-btn theme-app">
+                                    <div class="col-4">
+                                        <a class="btn btn-multi no-line-height padding-10-v block rounded ui-light" href="#">
+                                            <span class="x-largest thin">23</span>
+                                            <span class="x-dark-ui block">
+                                                <i class="icon icon-xs icon-user no-opacity margin-3-r"></i>
+                                                <span class="small">Waiting</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="btn btn-multi no-line-height padding-10-v block rounded ui-light" href="#">
+                                            <span class="x-largest thin">258</span>
+                                            <span class="x-dark-ui block">
+                                                <i class="icon icon-xs icon-user no-opacity margin-3-r"></i>
+                                                <span class="small">Expert</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="btn btn-multi no-line-height padding-10-v block rounded ui-light" href="#">
+                                            <span class="x-largest thin">49</span>
+                                            <span class="x-dark-ui block">
+                                                <i class="icon icon-xs icon-user no-opacity margin-3-r"></i>
+                                                <span class="small">First Audit</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="row row-md-padding ease-2nd-btn theme-app2">
+                                    <div class="col-4">
+                                        <a class="btn btn-multi no-line-height padding-10-v block rounded ui-light" href="#">
+                                            <span class="largest">23</span>
+                                            <span class="x-dark-ui block">
+                                                <span class="small">Second Audit</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="btn btn-multi no-line-height padding-10-v block rounded ui-light" href="#">
+                                            <span class="largest">20</span>
+                                            <span class="x-dark-ui block">
+                                                <span class="small">Paused</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="btn btn-multi no-line-height padding-10-v block rounded ui-light" href="#">
+                                            <span class="largest">68</span>
+                                            <span class="x-dark-ui block">
+                                                <span class="small">Delayed</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-side padding-15 no-padding-b">
+                                <h4>Last Week Reports</h4>
+                            </div>
+                            <div class="content-side padding-15">
+                                <div class="line-charts margin-15-b ease-line-charts" data-size="5,15" data-x="1,2,3,4,5,6,7">
+                                    <ul class="line" data-type="curved filled">
+                                        <li data-y="159"></li>
+                                        <li data-y="120"></li>
+                                        <li data-y="20"></li>
+                                        <li data-y="118"></li>
+                                        <li data-y="37"></li>
+                                        <li data-y="0"></li>
+                                        <li data-y="76"></li>
+                                    </ul>
+                                    <ul class="line" data-type="curved filled">
+                                        <li data-y="55"></li>
+                                        <li data-y="70"></li>
+                                        <li data-y="92"></li>
+                                        <li data-y="48"></li>
+                                        <li data-y="166"></li>
+                                        <li data-y="98"></li>
+                                        <li data-y="116"></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="portlet padding-15 rounded shadow-lg">
-                            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <span class="sp5"></span>
+
+                        <div class="padding-5-v">
+                            <div class="row row-no-padding ease-2nd-btn">
+                                <div class="col-3 no-responsive">
+                                    <button class="btn btn-multi btn-invisible block rounded">
+                                        <i class="icon icon-lg icon-home no-opacity"></i>
+                                        <span class="small block x-light-ui">Home</span>
+                                    </button>
+                                </div>
+                                <div class="col-3 no-responsive">
+                                    <button class="btn btn-multi btn-invisible block rounded">
+                                        <i class="icon icon-lg icon-search"></i>
+                                        <span class="small block x-light-ui">Search</span>
+                                    </button>
+                                </div>
+                                <div class="col-3 no-responsive">
+                                    <button class="btn btn-multi btn-invisible block rounded">
+                                        <i class="icon icon-lg icon-message"></i>
+                                        <span class="small block x-light-ui">Chat</span>
+                                    </button>
+                                </div>
+                                <div class="col-3 no-responsive">
+                                    <button class="btn btn-multi btn-invisible block rounded">
+                                        <i class="icon icon-lg icon-user"></i>
+                                        <span class="small block x-light-ui">Profile</span>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
