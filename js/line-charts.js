@@ -49,7 +49,7 @@ var lineCharts = {
     // load charts
     lineCharts.Start = function () {
 
-        var i, j, charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, paths, percent, circles, total, name;
+        var i, j, charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, paths, circles, total, name;
 
         loadCharts = function (that, resizer) {
 
@@ -252,17 +252,17 @@ var lineCharts = {
 
                         if (type.indexOf('curved') > -1) { // curved
 
-                            percent = parseInt((lineCharts.curveSize * (i * col)) / 100);
+                            data.percent = parseInt((lineCharts.curveSize * (i * col)) / 100);
 
                             if (i === 1) { // start curves
 
-                                paths += ' C ' + ((i * col) - percent) + ' ' + (posY - percent) + ',' +
-                                    ' ' + ((i * col) - percent) + ' ' + posY + ',' +
+                                paths += ' C ' + ((i * col) - data.percent) + ' ' + (posY - data.percent) + ',' +
+                                    ' ' + ((i * col) - data.percent) + ' ' + posY + ',' +
                                     ' ' + posX + ' ' + posY;
 
                             } else if (i > 0) { // other curves
 
-                                paths += ' S ' + ((i * col) - percent) + ' ' + posY + ',' +
+                                paths += ' S ' + ((i * col) - data.percent) + ' ' + posY + ',' +
                                     ' ' + posX + ' ' + posY;
 
                             }
@@ -353,7 +353,7 @@ var lineCharts = {
                 this.insertAdjacentHTML('beforeEnd', html);
 
                 // set height of chart
-                selector('svg', this)[0].style.height = (data.height + 20) + 'px';
+                selector('svg', this)[0].style.height = (data.height + 15) + 'px';
 
                 // empty variables
                 data = [];
