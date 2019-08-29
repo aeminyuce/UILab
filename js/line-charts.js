@@ -20,7 +20,7 @@ var lineCharts = {
     showGridText: true, // set showing grid numbers
     showInfo: true, // set showing info
 
-    curveSize: 24, // set curve size
+    curveSize: 14, // set curve size (percent)
 
     gridStroke: 1, // set grid stroke width
     lineStroke: 2, // set line chart stroke width
@@ -49,7 +49,7 @@ var lineCharts = {
     // load charts
     lineCharts.Start = function () {
 
-        var i, j, charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, paths, circles, total, name;
+        var i, j, charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, paths, percent, circles, total, name;
 
         loadCharts = function (that, resizer) {
 
@@ -211,11 +211,13 @@ var lineCharts = {
 
                 }
 
-                html += '</g><g>';
+                html += '</g>';
 
                 // create svg contents
                 circles = '';
                 pathStart = [];
+
+                html += '<g style="transform: translateX(' + lineCharts.left + 'px)">';
 
                 events.each(lines, function (j) {
 
@@ -233,7 +235,7 @@ var lineCharts = {
                     // create paths and circles
                     for (i = 0; i < y.length; i += 1) {
 
-                        posX = (i * col) + lineCharts.left;
+                        posX = i * col;
                         posY = data.height - (data.height + (((data.height - (lineCharts.top + lineCharts.bottom)) * (y[i] - yMax)) / (yMax - yMin)) - lineCharts.top);
 
                         // get line type
@@ -250,15 +252,17 @@ var lineCharts = {
 
                         if (type.indexOf('curved') > -1) { // curved
 
+                            percent = parseInt((lineCharts.curveSize * (i * col)) / 100);
+
                             if (i === 1) { // start curves
 
-                                paths += ' C ' + ((i * col) - lineCharts.curveSize) + ' ' + posY + ',' +
-                                    ' ' + ((i * col) - lineCharts.curveSize) + ' ' + posY + ',' +
+                                paths += ' C ' + ((i * col) - percent) + ' ' + (posY - percent) + ',' +
+                                    ' ' + ((i * col) - percent) + ' ' + posY + ',' +
                                     ' ' + posX + ' ' + posY;
 
                             } else if (i > 0) { // other curves
 
-                                paths += ' S ' + ((i * col) - lineCharts.curveSize) + ' ' + posY + ',' +
+                                paths += ' S ' + ((i * col) - percent) + ' ' + posY + ',' +
                                     ' ' + posX + ' ' + posY;
 
                             }
@@ -295,7 +299,7 @@ var lineCharts = {
                         html += '<path d="M ' + (pathStart.x  + (lineCharts.gridStroke / 2)) + ' ' + pathStart.y +
                             paths +
                             ' V ' + (data.height - lineCharts.bottom - (lineCharts.gridStroke / 2)) +
-                            ' H ' + (lineCharts.left + (lineCharts.gridStroke / 2)) + ' Z ' +
+                            ' H ' + (lineCharts.gridStroke / 2) + ' Z ' +
 
                             '" stroke="0" fill="' + data.color[j] + '" stroke-width="' + lineCharts.lineStroke + '" class="filled" />';
 
