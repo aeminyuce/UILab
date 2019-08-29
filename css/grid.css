@@ -9,13 +9,10 @@
 .no-gutter { padding-right: 0 !important; padding-left: 0 !important; }
 
 .row { margin-right: -10px; margin-left: -10px; }
-html:not(.ie9) .row { display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex-wrap: wrap; }
-.ie9 .row { display: block; }
+.row { display: block; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex-wrap: wrap; }
 
 [class*="col-"] { min-height: 1px; }
-[class*="col-"]:not(.col-static) { padding: 10px; }
-html:not(.ie9) [class*="col-"]:not(.col-static) { flex-direction: column; }
-.ie9 [class*="col-"]:not(.col-static) { display: block; float: left; }
+[class*="col-"]:not(.col-static) { padding: 10px; display: block; float: left; flex-direction: column; }
 
 .row-xs-padding,.row-xs-padding-hor { margin-right: -1px; margin-left: -1px; }
 .row-xs-padding > [class*="col-"] { padding: 1px; }
