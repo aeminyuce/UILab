@@ -3,7 +3,7 @@
 .left { float: left; }
 .right { float: right; }
 .clearfix { clear: both !important; display: block; }
-.block { display: block !important; }
+.block { width: 100%; display: block !important; }
 .inline-block { vertical-align: middle; display: inline-block !important; }
 .rtl { direction: rtl; }
 .full-width { width: 100%; }
