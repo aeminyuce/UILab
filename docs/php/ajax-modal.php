@@ -13,8 +13,8 @@
 </div>
 <div class="modal-footer ease-1st-btn">
     <div class="modal-buttons">
-        <button type="button" class="btn padding-30-h btn-invisible dual-bordered circle" onclick="modal.close(function () { alert('Modal closed!'); });">Callback</button>
-        <button type="button" class="btn padding-30-h btn-invisible dual-bordered circle" onclick="modal.close();">Cancel</button>
+        <button type="button" class="btn padding-30-h btn-ghost dual-bordered circle" onclick="modal.close(function () { alert('Modal closed!'); });">Callback</button>
+        <button type="button" class="btn padding-30-h btn-ghost dual-bordered circle" onclick="modal.close();">Cancel</button>
         <button type="submit" class="btn padding-30-h circle theme-green ui-dark" onclick="modal.close();">Accept</button>
     </div>
 </div>
