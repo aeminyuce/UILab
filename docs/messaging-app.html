@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UI Lab, Messaging App</title>
+    <meta name="keywords" content="uilab, responsive, design system, css, javascript, messaging app">
+    <meta name="description" content="CSS & JavaScript powered responsive design system." />
+    <meta name="author" content="Ahmet Emin Yüce"/>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
+
+    <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/alignments.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
+    <link rel="stylesheet" href="../css/buttons.css" />
+    <link rel="stylesheet" href="../css/borders.css" />
+    <link rel="stylesheet" href="../css/data-list.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <link rel="stylesheet" href="../css/form-icons.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/helpers.css" />
+    <link rel="stylesheet" href="../css/icons.css" />
+    <link rel="stylesheet" href="../css/icons-notifiers.css" />
+    <link rel="stylesheet" href="../css/margins.css" />
+    <link rel="stylesheet" href="../css/paddings.css" />
+    <link rel="stylesheet" href="../css/photo-images.css" />
+    <link rel="stylesheet" href="../css/portlets.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <!-- <link rel="stylesheet" href="../css/scrollbar.css" /> -->
+    <link rel="stylesheet" href="../css/static-grid.css" />
+    <link rel="stylesheet" href="../css/swatches.css" />
+    <link rel="stylesheet" href="../css/tabs.css" />
+    <link rel="stylesheet" href="../css/transitions.css" />
+    <link rel="stylesheet" href="../css/typography.css" />
+
+    <!-- Javascript Tools -->
+    <script src="../js/selector.js"></script>
+    <script src="../js/events.js"></script>
+
+    <script src="../js/data-list.js"></script>
+    <script src="../js/forms.js"></script>
+    <script src="../js/static-grid.js"></script>
+    <script src="../js/swatches.js"></script>
+    <script src="../js/tabs.js"></script>
+    <script src="../js/transitions.js"></script>
+    <script src="../js/user-agents.js"></script>
+
+    <!-- font icons CSS -->
+    <link rel="stylesheet" href="icons/font-icons/fill/font-icons.css" />
+
+    <!-- custom CSS -->
+    <style>
+        body { background-color: #eceef5; }
+
+        .app { background-color: #f7f8fb; border-radius: 42px; }
+        .portlet { height: 700px; border-radius: 36px; }
+        .data-container { height: 532px; }
+        .rounded:not(.btn-square) { border-radius: 16px; }
+        .contacts { white-space: nowrap; }
+
+        .theme-app.ui-x-light,.theme-app .ui-x-light:not([class*="theme-"]) { background-color: #e1eeff; }
+        .theme-app.ui-light,.theme-app .ui-light:not([class*="theme-"]) { background-color: #94c3ff; }
+        .theme-app.ui-dark,.theme-app .ui-dark:not([class*="theme-"]) { background-color: #0070ff; }
+        .theme-app.ui-text,.theme-app .ui-text { color: #0070ff; }
+        .theme-app.ui-border,.theme-app .ui-border { border-color: #0070ff; }
+        .theme-app.ui-x-dark,.theme-app .ui-x-dark:not([class*="theme-"]) { background-color: #005acc; }
+
+        .theme-app2.ui-x-light,.theme-app2 .ui-x-light:not([class*="theme-"]) { background-color: #fddee4; }
+        .theme-app2.ui-light,.theme-app2 .ui-light:not([class*="theme-"]) { background-color: #f3aebb; }
+        .theme-app2.ui-dark,.theme-app2 .ui-dark:not([class*="theme-"]) { background-color: #ff103b; }
+        .theme-app2.ui-text,.theme-app2 .ui-text { color: #ff103b; }
+        .theme-app2.ui-border,.theme-app2 .ui-border { border-color: #ff103b; }
+        .theme-app2.ui-x-dark,.theme-app2 .ui-x-dark:not([class*="theme-"]) { background-color: #cf1335; }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- documentation examples -->
+    <main class="container no-gutter">
+        <div class="fixed padding-30-v">
+
+            <div class="row row-lg-padding padding-30-b">
+                <div class="col-4 offset-2 col-md-6 offset-md-0 sm-responsive">
+
+                    <div class="app padding-15 theme-app">
+                        
+                        <div class="portlet no-margin-b">
+
+                            <div class="content-side padding-15 no-padding-b">
+                                <div class="col-static no-responsive">
+                                    <div class="static-50">
+                                        <button class="btn btn-ghost btn-square circle ui-x-light ease-btn">
+                                            <i class="icon icon-sm icon-user no-opacity ui-text notifier"></i>
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 align-center padding-3-v">
+                                            <img src="images/logo-reports.png" alt="Logo" height="26">
+                                        </div>
+                                    </div>
+                                    <div class="static-50 align-right">
+                                        <button class="btn align-center btn-ghost btn-square circle ui-x-light ease-btn">
+                                            <i class="icon icon-sm icon-settings no-opacity ui-text"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content-side padding-10">
+                                
+                                <div class="dual-bordered margin-5-v padding-10 circle">
+                                    <div class="btn-tabs contacts circle h-scroll">
+                                        <img class="btn-tab img-photo circle" src="images/profile-image.jpg" alt="">
+                                        <img class="btn-tab img-photo circle" src="images/profile-image2.jpg" alt="">
+                                        <span class="btn-tab img-photo circle ui-x-light ui-text"><span>HY</span></span>
+                                        <img class="btn-tab img-photo circle" src="images/profile-image3.jpg" alt="">
+                                        <span class="btn-tab img-photo circle ui-x-light ui-text"><span>EK</span></span>
+                                        <span class="btn-tab img-photo circle ui-x-light ui-text"><span>CY</span></span>
+                                        <span class="btn-tab img-photo circle ui-x-light ui-text"><span>AEY</span></span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        
+                        <span class="sp5"></span>
+
+                        <div class="padding-10 no-padding-b">
+                            <div class="row row-no-padding ease-2nd-btn">
+                                <div class="col-3 no-responsive">
+                                    <button class="btn btn-multi btn-ghost padding-10-t block rounded dark-ui">
+                                        <i class="icon icon-lg icon-home no-opacity"></i>
+                                        <span class="small block">Home</span>
+                                    </button>
+                                </div>
+                                <div class="col-3 no-responsive">
+                                    <button class="btn btn-multi btn-ghost padding-10-t block rounded dark-ui">
+                                        <i class="icon icon-lg icon-search no-opacity"></i>
+                                        <span class="small block">Search</span>
+                                    </button>
+                                </div>
+                                <div class="col-3 no-responsive">
+                                    <button class="btn btn-multi btn-ghost padding-10-t block rounded ui-text">
+                                        <i class="icon icon-lg icon-message no-opacity notifier" data-notifier="2"></i>
+                                        <span class="small block">Chat</span>
+                                    </button>
+                                </div>
+                                <div class="col-3 no-responsive">
+                                    <button class="btn btn-multi btn-ghost padding-10-t block rounded dark-ui">
+                                        <i class="icon icon-lg icon-user no-opacity"></i>
+                                        <span class="small block">Profile</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-4 col-md-6 sm-responsive">
+
+                    <div class="app padding-15 theme-app">
+                    
+                        <div class="portlet no-margin-b">
+
+                            <div class="content-side padding-15 no-padding-b">
+                                <div class="col-static no-responsive">
+                                    <div class="static-50">
+                                        <button class="btn btn-ghost btn-square circle ui-x-light ease-btn">
+                                            <i class="icon icon-sm icon-user no-opacity ui-text notifier"></i>
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 align-center padding-3-v">
+                                            <img src="images/logo-reports.png" alt="Logo" height="26">
+                                        </div>
+                                    </div>
+                                    <div class="static-50 align-right">
+                                        <button class="btn align-center btn-ghost btn-square circle ui-x-light ease-btn">
+                                            <i class="icon icon-sm icon-settings no-opacity ui-text"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content-side padding-10">
+                                ...
+                            </div>
+
+                        </div>
+                        
+                        <span class="sp5"></span>
+
+                        <div class="padding-10 no-padding-b">
+                            <div class="row row-no-padding ease-2nd-btn">
+                                <div class="col-3 no-responsive">
+                                    <button class="btn btn-multi btn-ghost padding-10-t block rounded dark-ui">
+                                        <i class="icon icon-lg icon-home no-opacity"></i>
+                                        <span class="small block">Home</span>
+                                    </button>
+                                </div>
+                                <div class="col-3 no-responsive">
+                                    <button class="btn btn-multi btn-ghost padding-10-t block rounded dark-ui">
+                                        <i class="icon icon-lg icon-search no-opacity"></i>
+                                        <span class="small block">Search</span>
+                                    </button>
+                                </div>
+                                <div class="col-3 no-responsive">
+                                    <button class="btn btn-multi btn-ghost padding-10-t block rounded dark-ui">
+                                        <i class="icon icon-lg icon-message no-opacity notifier" data-notifier="2"></i>
+                                        <span class="small block">Chat</span>
+                                    </button>
+                                </div>
+                                <div class="col-3 no-responsive">
+                                    <button class="btn btn-multi btn-ghost padding-10-t block rounded ui-text">
+                                        <i class="icon icon-lg icon-user no-opacity"></i>
+                                        <span class="small block">Profile</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
