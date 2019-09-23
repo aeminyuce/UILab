@@ -110,7 +110,7 @@ html:not(.mobile) .file:hover .btn { background-color: rgba(0,0,0,.15); }
 
 .form-focus { border-color: rgba(0,0,0,.35); }
 .form-focus:not(.form-readonly) { background-color: #fff !important; }
-.form-focus > input,.form-focus > select,.form-focus > textarea,.form-focus > .icon { color: #000 !important; }
+.form-focus > input,.form-focus > select,.form-focus > textarea,.form-focus > .icon:not([class*="ui-"]) { color: #000 !important; }
 .form-focus.text-icon > .icon,.form-focus.select > .icon,.mobile .form-focus.select-multi > .icon { opacity: 1; }
 
 .sprite.focus,.form-focus > .sprite.active { display: none; }
