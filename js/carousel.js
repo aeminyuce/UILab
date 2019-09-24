@@ -11,7 +11,8 @@ var carousel = {
     sm: 767,
     xs: 468,
 
-    showMaxDots: 10 // 5+ numbers, allowed size for dots number exceeds
+    showMaxDots: 10, // 5+ numbers, allowed size for dots number exceeds
+    halfSize: 0.5 // set percent of default half size
 
 };
 
@@ -248,7 +249,7 @@ var carousel = {
             slider = selector('.carousel-slider', that[i]);
 
             size = col;
-            if (halfSized && col > 1) { size -= 0.5; }
+            if (halfSized && col > 1) { size -= carousel.halfSize; }
 
             size = Math.ceil(that[i].offsetWidth / size);
 
@@ -391,7 +392,7 @@ var carousel = {
                 halfSized = events.hasClass(that, 'half-sized');
 
                 if (halfSized && (counts[i] === contents.length - col)) {
-                    slide += contents[0].offsetWidth / 2;
+                    slide += contents[0].offsetWidth * carousel.halfSize;
                 }
 
                 // detecting ie9
