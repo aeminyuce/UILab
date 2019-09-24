@@ -25,12 +25,13 @@
     <link rel="stylesheet" href="../css/helpers.css" />
     <link rel="stylesheet" href="../css/icons.css" />
     <link rel="stylesheet" href="../css/icons-notifiers.css" />
+    <link rel="stylesheet" href="../css/list-group.css" />
     <link rel="stylesheet" href="../css/margins.css" />
     <link rel="stylesheet" href="../css/paddings.css" />
     <link rel="stylesheet" href="../css/photo-images.css" />
     <link rel="stylesheet" href="../css/portlets.css" />
     <link rel="stylesheet" href="../css/reset.css" />
-    <!-- <link rel="stylesheet" href="../css/scrollbar.css" /> -->
+    <link rel="stylesheet" href="../css/scrollbar.css" />
     <link rel="stylesheet" href="../css/static-grid.css" />
     <link rel="stylesheet" href="../css/swatches.css" />
     <link rel="stylesheet" href="../css/tabs.css" />
@@ -56,12 +57,6 @@
     <style>
         body { background-color: #eceef5; }
 
-        .app { background-color: #f7f8fb; border-radius: 42px; }
-        .portlet { height: 700px; border-radius: 36px; }
-        .data-container { height: 532px; }
-        .rounded:not(.btn-square) { border-radius: 16px; }
-        .contacts { white-space: nowrap; }
-
         .theme-app.ui-x-light,.theme-app .ui-x-light:not([class*="theme-"]) { background-color: #e1eeff; }
         .theme-app.ui-light,.theme-app .ui-light:not([class*="theme-"]) { background-color: #94c3ff; }
         .theme-app.ui-dark,.theme-app .ui-dark:not([class*="theme-"]) { background-color: #0070ff; }
@@ -75,7 +70,54 @@
         .theme-app2.ui-text,.theme-app2 .ui-text { color: #ff103b; }
         .theme-app2.ui-border,.theme-app2 .ui-border { border-color: #ff103b; }
         .theme-app2.ui-x-dark,.theme-app2 .ui-x-dark:not([class*="theme-"]) { background-color: #cf1335; }
+
+        .static-35 { width: 35px; }
+
+        .app { background-color: #f7f8fb; border-radius: 42px; }
+        .portlet { height: 700px; border-radius: 36px; }
+        .data-container { height: 532px; }
+        .rounded:not(.btn-square) { border-radius: 16px; }
+        .tab-content { border-radius: 28px; }
+
+        .contacts { white-space: nowrap; }
+        .contacts li { border: solid 3px transparent; position: relative; }
+        .contacts li:after { content: attr(data-msg); color: #fff; font-size: 11px; font-weight: bold; text-align: center; width: 18px; height: 18px; background-color: #ff103b; display: block; border: solid 2px #fff; border-radius: 50%; position: absolute; bottom: -2px; right: -2px; }
+        .contacts li.online:after { background-color: #16ca53; }
+
+        .messages { height: 436px; }
+        .messages li { max-width: 80%; padding-left: 35px; clear: both; }
+        .messages li:not(:last-child) { margin-bottom: 3px; }
+        .messages li.left + .right,.messages li.right + .left { margin-top: 25px; }
+        .messages li [class*="img-photo"] { margin-left: -35px; float: left; }
+
+        .messages li > span:not([class*="img-photo"]) { padding: 5px 10px; display: inline-block; border-radius: 16px; }
+
+        .send { background-color: #fff; }
     </style>
+
+    <!-- custom js -->
+    <script>
+
+        (function () {
+
+            'use strict';
+            events.onload(function () {
+
+                function scroller() {
+
+                    var opened = selector('.open .messages')[0];
+                    opened.scrollTo(0, opened.offsetHeight);
+
+                }
+
+                scroller();
+                events.on('.contacts li', 'click', scroller);
+
+            });
+        
+        }());
+
+    </script>
 
 </head>
 
@@ -114,16 +156,390 @@
 
                             <div class="content-side padding-10">
                                 
-                                <div class="dual-bordered margin-5-v padding-10 circle">
-                                    <div class="btn-tabs contacts circle h-scroll">
-                                        <img class="btn-tab img-photo circle" src="images/profile-image.jpg" alt="">
-                                        <img class="btn-tab img-photo circle" src="images/profile-image2.jpg" alt="">
-                                        <span class="btn-tab img-photo circle ui-x-light ui-text"><span>HY</span></span>
-                                        <img class="btn-tab img-photo circle" src="images/profile-image3.jpg" alt="">
-                                        <span class="btn-tab img-photo circle ui-x-light ui-text"><span>EK</span></span>
-                                        <span class="btn-tab img-photo circle ui-x-light ui-text"><span>CY</span></span>
-                                        <span class="btn-tab img-photo circle ui-x-light ui-text"><span>AEY</span></span>
+                                <div class="btn-tabs" data-classes="theme-app ui-border">
+
+                                    <ul class="contacts list-inline margin-5-t margin-10-b ease-1st-border h-scroll">
+                                        <li class="btn-tab circle online theme-app ui-border active">
+                                            <img class="img-photo circle" src="images/profile-image.jpg" alt="">
+                                        </li>
+                                        <li class="btn-tab circle online" data-msg="2">
+                                            <img class="img-photo circle" src="images/profile-image2.jpg" alt="">
+                                        </li>
+                                        <li class="btn-tab circle offline">
+                                            <span class="img-photo circle ui-x-light"><span>MT</span></span>
+                                        </li>
+                                        <li class="btn-tab circle">
+                                            <img class="img-photo circle" src="images/profile-image3.jpg" alt="">
+                                        </li>
+                                        <li class="btn-tab circle">
+                                            <span class="img-photo circle ui-x-light"><span>MD</span></span>
+                                        </li>
+                                        <li class="btn-tab circle">
+                                            <span class="img-photo circle ui-x-light"><span>JD</span></span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="tab-content padding-10 dual-bordered open">
+                                        <div class="row no-margin circle theme-gray ui-x-light">
+                                            <div class="col-6 no-responsive">
+                                                <h5 class="bold">John Doe</h5>
+                                            </div>
+                                            <div class="col-6 no-responsive align-right">
+                                                <span class="dark">Online</span>
+                                            </div>
+                                        </div>
+
+                                        <span class="sp10"></span>
+                                        
+                                        <ul class="messages list-custom margin-10-b v-scroll">
+                                            <li class="left">
+                                                <img class="img-photo-xs circle" src="images/profile-image.jpg" alt="">
+                                                <span class="ui-x-light">Hey</span>
+                                            </li>
+                                            <li class="left">
+                                                <span class="ui-x-light">Did you check the latest reports?</span>
+                                            </li>
+                                            <li class="right">
+                                                <span class="ui-dark">Sorry</span>
+                                            </li>
+                                            <li class="right">
+                                                <span class="ui-dark">Not yet!</span>
+                                            </li>
+                                            <li class="left">
+                                                <img class="img-photo-xs circle" src="images/profile-image.jpg" alt="">
+                                                <span class="ui-x-light">Ok</span>
+                                            </li>
+                                            <li class="left">
+                                                <span class="ui-x-light">I need them and i am waiting for you</span>
+                                            </li>
+                                            <li class="right">
+                                                <span class="ui-dark">But, i  will get back to you as soon as possible.</span>
+                                            </li>
+                                            <li class="left">
+                                                <img class="img-photo-xs circle" src="images/profile-image.jpg" alt="">
+                                                <span class="ui-x-light">Ok i am waiting...</span>
+                                            </li>
+                                            <li class="left">
+                                                <img class="img-photo-xs circle" src="images/profile-image.jpg" alt="">
+                                                <span class="ui-x-light">Thank you</span>
+                                            </li>
+                                            <li class="right">
+                                                <span class="ui-dark">Ok</span>
+                                            </li>
+                                        </ul>
+                                        <div class="send col-static no-responsive padding-5 circle theme-gray ui-x-light">
+                                            <div class="static-35">
+                                                <img class="img-photo-xs margin-1 circle" src="images/profile-image3.jpg" alt="">
+                                            </div>
+                                            <div class="row row-no-padding">
+                                                <div class="text text-icon text-icon-right no-bordered padding-2 circle ease-form">
+                                                    <button class="icon icon-md icon-message no-opacity theme-app ui-text ease-layout"></button>
+                                                    <input type="text" placeholder="Type your message">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <div class="tab-content padding-10 dual-bordered">
+                                        <div class="row no-margin circle theme-gray ui-x-light">
+                                            <div class="col-6 no-responsive">
+                                                <h5 class="bold">Mary Doe</h5>
+                                            </div>
+                                            <div class="col-6 no-responsive align-right">
+                                                <span class="dark">Online</span>
+                                            </div>
+                                        </div>
+
+                                        <span class="sp10"></span>
+
+                                        <ul class="messages list-custom margin-10-b v-scroll">
+                                            <li class="left">
+                                                <img class="img-photo-xs circle" src="images/profile-image2.jpg" alt="">
+                                                <span class="ui-x-light">Hey</span>
+                                            </li>
+                                            <li class="left">
+                                                <span class="ui-x-light">Did you check the latest reports?</span>
+                                            </li>
+                                            <li class="right">
+                                                <span class="ui-dark">Sorry</span>
+                                            </li>
+                                            <li class="right">
+                                                <span class="ui-dark">Not yet!</span>
+                                            </li>
+                                            <li class="left">
+                                                <img class="img-photo-xs circle" src="images/profile-image2.jpg" alt="">
+                                                <span class="ui-x-light">Ok</span>
+                                            </li>
+                                            <li class="left">
+                                                <span class="ui-x-light">I need them and i am waiting for you</span>
+                                            </li>
+                                            <li class="right">
+                                                <span class="ui-dark">But, i  will get back to you as soon as possible.</span>
+                                            </li>
+                                            <li class="left">
+                                                <img class="img-photo-xs circle" src="images/profile-image2.jpg" alt="">
+                                                <span class="ui-x-light">Ok i am waiting...</span>
+                                            </li>
+                                            <li class="left">
+                                                <img class="img-photo-xs circle" src="images/profile-image2.jpg" alt="">
+                                                <span class="ui-x-light">Thank you</span>
+                                            </li>
+                                            <li class="right">
+                                                <span class="ui-dark">Ok</span>
+                                            </li>
+                                        </ul>
+                                        <div class="send col-static no-responsive padding-5 circle theme-gray ui-x-light">
+                                            <div class="static-35">
+                                                <img class="img-photo-xs margin-1 circle" src="images/profile-image3.jpg" alt="">
+                                            </div>
+                                            <div class="row row-no-padding">
+                                                <div class="text text-icon text-icon-right no-bordered padding-2 circle ease-form">
+                                                    <button class="icon icon-md icon-message no-opacity theme-app ui-text ease-layout"></button>
+                                                    <input type="text" placeholder="Type your message">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content padding-10 dual-bordered">
+                                        <div class="row no-margin circle theme-gray ui-x-light">
+                                            <div class="col-6 no-responsive">
+                                                <h5 class="bold">Mike Taylor</h5>
+                                            </div>
+                                            <div class="col-6 no-responsive align-right">
+                                                <span class="dark">Today 09:22</span>
+                                            </div>
+                                        </div>
+
+                                        <span class="sp10"></span>
+
+                                        <ul class="messages list-custom margin-10-b v-scroll">
+                                            <li class="left">
+                                                <span class="img-photo-xs circle"><span>HY</span></span>
+                                                <span class="ui-x-light">Hey</span>
+                                            </li>
+                                            <li class="left">
+                                                <span class="ui-x-light">Did you check the latest reports?</span>
+                                            </li>
+                                            <li class="right">
+                                                <span class="ui-dark">Sorry</span>
+                                            </li>
+                                            <li class="right">
+                                                <span class="ui-dark">Not yet!</span>
+                                            </li>
+                                            <li class="left">
+                                                <span class="img-photo-xs circle"><span>HY</span></span>
+                                                <span class="ui-x-light">Ok</span>
+                                            </li>
+                                            <li class="left">
+                                                <span class="ui-x-light">I need them and i am waiting for you</span>
+                                            </li>
+                                            <li class="right">
+                                                <span class="ui-dark">But, i  will get back to you as soon as possible.</span>
+                                            </li>
+                                            <li class="left">
+                                                <span class="img-photo-xs circle"><span>HY</span></span>
+                                                <span class="ui-x-light">Ok i am waiting...</span>
+                                            </li>
+                                            <li class="left">
+                                                <span class="img-photo-xs circle"><span>HY</span></span>
+                                                <span class="ui-x-light">Thank you</span>
+                                            </li>
+                                            <li class="right">
+                                                <span class="ui-dark">Ok</span>
+                                            </li>
+                                        </ul>
+                                        <div class="send col-static no-responsive padding-5 circle theme-gray ui-x-light">
+                                            <div class="static-35">
+                                                <img class="img-photo-xs margin-1 circle" src="images/profile-image3.jpg" alt="">
+                                            </div>
+                                            <div class="row row-no-padding">
+                                                <div class="text text-icon text-icon-right no-bordered padding-2 circle ease-form">
+                                                    <button class="icon icon-md icon-message no-opacity theme-app ui-text ease-layout"></button>
+                                                    <input type="text" placeholder="Type your message">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content padding-10 dual-bordered">
+                                        <div class="row no-margin circle theme-gray ui-x-light">
+                                            <div class="col-6 no-responsive">
+                                                <h5 class="bold">John Doe</h5>
+                                            </div>
+                                            <div class="col-6 no-responsive align-right">
+                                                <span class="dark">1 day ago</span>
+                                            </div>
+                                        </div>
+
+                                        <span class="sp10"></span>
+                                            
+                                        <ul class="messages list-custom margin-10-b v-scroll">
+                                            <li class="left">
+                                                <img class="img-photo-xs circle" src="images/profile-image3.jpg" alt="">
+                                                <span class="ui-x-light">Hey</span>
+                                            </li>
+                                            <li class="left">
+                                                <span class="ui-x-light">Did you check the latest reports?</span>
+                                            </li>
+                                            <li class="right">
+                                                <span class="ui-dark">Sorry</span>
+                                            </li>
+                                            <li class="right">
+                                                <span class="ui-dark">Not yet!</span>
+                                            </li>
+                                            <li class="left">
+                                                <img class="img-photo-xs circle" src="images/profile-image3.jpg" alt="">
+                                                <span class="ui-x-light">Ok</span>
+                                            </li>
+                                            <li class="left">
+                                                <span class="ui-x-light">I need them and i am waiting for you</span>
+                                            </li>
+                                            <li class="right">
+                                                <span class="ui-dark">But, i  will get back to you as soon as possible.</span>
+                                            </li>
+                                            <li class="left">
+                                                <img class="img-photo-xs circle" src="images/profile-image3.jpg" alt="">
+                                                <span class="ui-x-light">Ok i am waiting...</span>
+                                            </li>
+                                            <li class="left">
+                                                <img class="img-photo-xs circle" src="images/profile-image3.jpg" alt="">
+                                                <span class="ui-x-light">Thank you</span>
+                                            </li>
+                                            <li class="right">
+                                                <span class="ui-dark">Ok</span>
+                                            </li>
+                                        </ul>
+                                        <div class="send col-static no-responsive padding-5 circle theme-gray ui-x-light">
+                                            <div class="static-35">
+                                                <img class="img-photo-xs margin-1 circle" src="images/profile-image3.jpg" alt="">
+                                            </div>
+                                            <div class="row row-no-padding">
+                                                <div class="text text-icon text-icon-right no-bordered padding-2 circle ease-form">
+                                                    <button class="icon icon-md icon-message no-opacity theme-app ui-text ease-layout"></button>
+                                                    <input type="text" placeholder="Type your message">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content padding-10 dual-bordered">
+                                        <div class="row no-margin circle theme-gray ui-x-light">
+                                            <div class="col-6 no-responsive">
+                                                <h5 class="bold">Mary Doe</h5>
+                                            </div>
+                                            <div class="col-6 no-responsive align-right">
+                                                <span class="dark">2 days ago</span>
+                                            </div>
+                                        </div>
+
+                                        <span class="sp10"></span>
+                                        
+                                        <ul class="messages list-custom margin-10-b v-scroll">
+                                            <li class="left">
+                                                <span class="img-photo-xs circle"><span>EK</span></span>
+                                                <span class="ui-x-light">Hey</span>
+                                            </li>
+                                            <li class="left">
+                                                <span class="ui-x-light">Did you check the latest reports?</span>
+                                            </li>
+                                            <li class="right">
+                                                <span class="ui-dark">Sorry</span>
+                                            </li>
+                                            <li class="right">
+                                                <span class="ui-dark">Not yet!</span>
+                                            </li>
+                                            <li class="left">
+                                                <span class="img-photo-xs circle"><span>EK</span></span>
+                                                <span class="ui-x-light">Ok</span>
+                                            </li>
+                                            <li class="left">
+                                                <span class="ui-x-light">I need them and i am waiting for you</span>
+                                            </li>
+                                            <li class="right">
+                                                <span class="ui-dark">But, i  will get back to you as soon as possible.</span>
+                                            </li>
+                                            <li class="left">
+                                                <span class="img-photo-xs circle"><span>EK</span></span>
+                                                <span class="ui-x-light">Ok i am waiting...</span>
+                                            </li>
+                                            <li class="left">
+                                                <span class="img-photo-xs circle"><span>EK</span></span>
+                                                <span class="ui-x-light">Thank you</span>
+                                            </li>
+                                            <li class="right">
+                                                <span class="ui-dark">Ok</span>
+                                            </li>
+                                        </ul>
+                                        <div class="send col-static no-responsive padding-5 circle theme-gray ui-x-light">
+                                            <div class="static-35">
+                                                <img class="img-photo-xs margin-1 circle" src="images/profile-image3.jpg" alt="">
+                                            </div>
+                                            <div class="row row-no-padding">
+                                                <div class="text text-icon text-icon-right no-bordered padding-2 circle ease-form">
+                                                    <button class="icon icon-md icon-message no-opacity theme-app ui-text ease-layout"></button>
+                                                    <input type="text" placeholder="Type your message">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content padding-10 dual-bordered">
+                                        <div class="row no-margin circle theme-gray ui-x-light">
+                                            <div class="col-6 no-responsive">
+                                                <h5 class="bold">John Doe</h5>
+                                            </div>
+                                            <div class="col-6 no-responsive align-right">
+                                                <span class="dark">3 days ago</span>
+                                            </div>
+                                        </div>
+
+                                        <span class="sp10"></span>
+                                            
+                                        <ul class="messages list-custom margin-10-b v-scroll">
+                                            <li class="left">
+                                                <span class="img-photo-xs circle"><span>CY</span></span>
+                                                <span class="ui-x-light">Hey</span>
+                                            </li>
+                                            <li class="left">
+                                                <span class="ui-x-light">Did you check the latest reports?</span>
+                                            </li>
+                                            <li class="right">
+                                                <span class="ui-dark">Sorry</span>
+                                            </li>
+                                            <li class="right">
+                                                <span class="ui-dark">Not yet!</span>
+                                            </li>
+                                            <li class="left">
+                                                <span class="img-photo-xs circle"><span>CY</span></span>
+                                                <span class="ui-x-light">Ok</span>
+                                            </li>
+                                            <li class="left">
+                                                <span class="ui-x-light">I need them and i am waiting for you</span>
+                                            </li>
+                                            <li class="right">
+                                                <span class="ui-dark">But, i  will get back to you as soon as possible.</span>
+                                            </li>
+                                            <li class="left">
+                                                <span class="img-photo-xs circle"><span>CY</span></span>
+                                                <span class="ui-x-light">Ok i am waiting...</span>
+                                            </li>
+                                            <li class="left">
+                                                <span class="img-photo-xs circle"><span>CY</span></span>
+                                                <span class="ui-x-light">Thank you</span>
+                                            </li>
+                                            <li class="right">
+                                                <span class="ui-dark">Ok</span>
+                                            </li>
+                                        </ul>
+                                        <div class="send col-static no-responsive padding-5 circle theme-gray ui-x-light">
+                                            <div class="static-35">
+                                                <img class="img-photo-xs margin-1 circle" src="images/profile-image3.jpg" alt="">
+                                            </div>
+                                            <div class="row row-no-padding">
+                                                <div class="text text-icon text-icon-right no-bordered padding-2 circle ease-form">
+                                                    <button class="icon icon-md icon-message no-opacity theme-app ui-text ease-layout"></button>
+                                                    <input type="text" placeholder="Type your message">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
 
                             </div>
@@ -191,7 +607,86 @@
                             </div>
 
                             <div class="content-side padding-10">
-                                ...
+                                
+                                <div class="align-center padding-30 margin-5-t margin-15-b rounded dual-bordered">
+                                    <img class="img-photo-lg circle" src="images/profile-image.jpg" alt="">
+                                    <span class="sp20"></span>
+                                    <span class="x-large inline-block margin-3-l">John Doe</span>
+                                    <span class="sp2"></span>
+                                    <b class="xx-small inline-block circle padding-5-h padding-3-v theme-app2 ui-dark">SD</b>
+                                    <span class="x-dark inline-block margin-3-l">Audit Staff</span>
+                                </div>
+                                
+                                <h5 class="bold margin-10-b">Settings</h5>
+                                <div class="list-group rounded no-bordered theme-gray ui-x-light">
+                                    <ul class="has-icon-xs ease-list-group">
+                                        <li>
+                                            <a href="#">
+                                                <i class="list-icon icon icon-xs icon-angle-right"></i>
+                                                Account
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="list-icon icon icon-xs icon-angle-right"></i>
+                                                Dashboard
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="list-icon icon icon-xs icon-angle-right"></i>
+                                                Notifications
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="list-icon icon icon-xs icon-angle-right"></i>
+                                                Privacy and Safety
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <span class="sp15"></span>
+
+                                <h5 class="bold margin-10-b">General</h5>
+                                
+                                <div class="list-group rounded no-bordered theme-gray ui-x-light">
+                                    <ul class="has-icon-xs ease-list-group">
+                                        <li>
+                                            <a href="#">
+                                                <i class="list-icon icon icon-xs icon-angle-right"></i>
+                                                Data Usage
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="list-icon icon icon-xs icon-angle-right"></i>
+                                                Accessibility
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="list-icon icon icon-xs icon-angle-right"></i>
+                                                About Reports
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <span class="sp25"></span>
+
+                                <div class="list-group rounded theme-app2 ui-dark">
+                                    <ul class="has-icon-xs ease-list-group">
+                                        <li>
+                                            <a href="#">
+                                                <i class="list-icon icon icon-sm icon-logout no-opacity"></i>
+                                                Sign Out
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
                             </div>
 
                         </div>
