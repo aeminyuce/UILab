@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UI Lab, Sign In Page</title>
+    <meta name="keywords" content="uilab, responsive, design system, css, javascript, sign in page">
+    <meta name="description" content="CSS & JavaScript powered responsive design system." />
+    <meta name="author" content="Ahmet Emin Yüce"/>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
+
+    <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/alignments.css" />
+    <link rel="stylesheet" href="../css/buttons.css" />
+    <link rel="stylesheet" href="../css/borders.css" />
+    <link rel="stylesheet" href="../css/custom-forms.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <link rel="stylesheet" href="../css/form-icons.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/helpers.css" />
+    <link rel="stylesheet" href="../css/icons.css" />
+    <link rel="stylesheet" href="../css/ie9-placeholders.css" />
+    <link rel="stylesheet" href="../css/margins.css" />
+    <link rel="stylesheet" href="../css/paddings.css" />
+    <link rel="stylesheet" href="../css/portlets.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/scrollbar.css" />
+    <link rel="stylesheet" href="../css/transitions.css" />
+    <link rel="stylesheet" href="../css/typography.css" />
+    <link rel="stylesheet" href="../css/static-grid.css" />
+    <link rel="stylesheet" href="../css/swatches.css" />
+
+    <!-- Javascript Tools -->
+    <script src="../js/selector.js"></script>
+    <script src="../js/events.js"></script>
+
+    <script src="../js/forms.js"></script>
+    <script src="../js/ie9-placeholders.js"></script>
+    <script src="../js/required-forms.js"></script>
+    <script src="../js/toggle-password.js"></script>
+    <script src="../js/transitions.js"></script>
+    <script src="../js/user-agents.js"></script>
+
+    <!-- font icons CSS -->
+    <link rel="stylesheet" href="icons/font-icons/fill/font-icons.css" />
+
+    <!-- custom CSS -->
+    <style>
+        html,body { height: 100%; }
+
+        .forms-holder,.content-holder { min-height: 560px; }
+
+        .content-holder { background-image: linear-gradient(110deg, #624494, #080550, #6f113e); }
+        .ie9 .content-holder { background-color: #624494; }
+        .content-holder .icon { font-size: 96px; }
+        .content-holder > .set-absolute { z-index: 1; }
+
+        .form-btn { background-image: linear-gradient(130deg, #8366b9,#6f113e); }
+        .ie9 .form-btn { background-color: #8366b9; }
+
+        .content-btn { min-width: 26%; background-image: linear-gradient(130deg, #7adc81,#23a72e); }
+        .ie9 .content-btn {background-color: #23a72e; }
+        
+        .content-container > .icon { font-size: 160px; position: absolute; top: 12%; right: 8%; transform: rotate(-12deg); }
+
+        .content-icons .icon { position: absolute; }
+        .content-icons .icon:nth-child(1) { font-size: 52px; bottom: 112px; left: 82px; opacity: .25; transform: rotate(12deg); }
+        .content-icons .icon:nth-child(2) { font-size: 28px; bottom: 32px; left: 24px; opacity: .075; transform: rotate(-12deg); }
+        .content-icons .icon:nth-child(3) { font-size: 64px; top: 22px; left: 22px; opacity: .15; transform: rotate(-12deg); }
+        .content-icons .icon:nth-child(4) { font-size: 64px; bottom: 42px; right: 92px; opacity: .3; transform: rotate(-12deg); }
+        .content-icons .icon:nth-child(5) { font-size: 246px; top: 48px; right: 29%; opacity: .1; transform: rotate(12deg); }
+
+        @media (min-width: 768px) {
+            .form-container { background-color: #f6f4fc; padding: 8% 0 8% 10% !important; }
+            .content-container { background-image: linear-gradient(110deg, #e2d2ff, #f0e2f9); padding: 8% 10% 8% 0 !important; }
+            .ie9 .content-container { background-color: #f0e2f9; }
+
+            .forms-holder,.content-holder > .set-absolute { padding: 10%; }
+        }
+        @media (max-width: 767px) {
+            body { background-color: #e2d2ff; }
+            .form-container { padding: 50px 10px !important; }
+
+            .forms-holder,.content-holder > .set-absolute { padding: 30px; }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- documentation examples -->
+    <main class="container full-height no-gutter">
+
+        <div class="row row-no-padding full-height">
+            <div class="form-container col-5 col-md-6 sm-responsive">
+                
+                <div class="forms-holder portlet shadow-lg">
+                    <form action="#">
+
+                        <h3 class="margin-30-b">Login to continue</h3>
+                        <p class="dark large">Sign in to create, discover and connect with the global community.</p>
+
+                        <label class="form-label x-dark">User Name</label>
+                        <div class="text text-lg circle dual-bordered ease-form">
+                            <input class="required" type="text" placeholder="Enter user name" minlength="3" autocomplete="username">
+                        </div>
+                        <p class="required-msg circle">Enter user name.</p>
+
+                        <span class="sp15"></span>
+
+                        <label class="form-label x-dark">Password</label>
+                        <div class="text text-lg text-icon text-icon-lg circle dual-bordered ease-form">
+                            <span title="Show/Hide Password" class="toggle-password icon icon-md margin-5-r icon-eye ease-layout"></span>
+                            <input class="required" type="password" placeholder="Enter password" minlength="8" autocomplete="current-password">
+                        </div>
+                        <p class="required-msg circle">Minimum length is 8 characters.</p>
+
+                        <span class="sp15"></span>
+
+                        <label class="custom">
+                            <span class="check-custom rounded dual-bordered ease-form">
+                                <input type="checkbox" checked>
+                                <i class="ease-form-custom"></i>
+                            </span>
+                            <b>Remember me</b>
+                        </label>
+
+                        <span class="sp30"></span>
+                        
+                        <button type="submit" class="form-btn btn btn-lg xx-light block circle scale ease-layout"><b>LOGIN</b></button>
+                        <span class="sp15"></span>
+                        <a class="btn btn-lg x-dark circle block scale ease-layout" href="#">Forgot password?</a>
+
+                    </form>
+                </div>
+
+            </div>
+            <div class="content-container col-7 col-md-6 sm-responsive hidden-sm">
+
+                <div class="content-holder align-center no-overflow set-relative ui-dark shadow-lg">
+
+                    <div class="full-width set-absolute set-middle">
+                        <i class="icon icon-customer"></i>
+                        <i class="icon icon-xl icon-plus margin-15-l hidden-md"></i>
+                        <span class="sp30"></span>
+                        <h1 class="thin hidden-md">Create your account</h1>
+                        <p class="x-large thin">Sign up to create, discover and connect with the global community.</p>
+                        <span class="sp30"></span>
+                        <button class="content-btn btn btn-lg circle scale ease-layout">SIGN UP</button>
+                    </div>
+
+                    <div class="content-icons">
+                        <i class="icon icon-plus"></i>
+                        <i class="icon icon-plus"></i>
+                        <i class="icon icon-plus"></i>
+                        <i class="icon icon-plus"></i>
+                        <i class="icon icon-plus"></i>
+                    </div>
+
+                </div>
+
+                <i class="icon xx-light icon-plus"></i>
+
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
