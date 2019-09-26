@@ -8,7 +8,7 @@ var weather = {
     days: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
     months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
 
-    graphPath: 'images/weather/' // animation graphics folder
+    graphPath: 'img/weather/' // animation graphics folder
 
 };
 
