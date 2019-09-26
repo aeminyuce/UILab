@@ -2,12 +2,9 @@
 .align-right,.align-right * { text-align: right !important; }
 .align-left,.align-left * { text-align: left !important; }
 .align-center,.align-center * { text-align: center !important; }
+
 .align-justify { text-align: justify !important; }
 .align-nowrap { white-space: nowrap !important; }
-
-.align-top { vertical-align: top !important; }
-.align-middle { vertical-align: middle !important; }
-.align-bottom { vertical-align: bottom !important; }
 
 @media (min-width: 1200px) {
     .lg-align-center,.lg-align-center * { text-align: center !important; } .lg-align-left,.lg-align-left * { text-align: left !important; } .lg-align-right,.lg-align-right * { text-align: right !important; }
