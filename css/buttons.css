@@ -65,8 +65,8 @@ html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hove
 
 .btn-ghost-border:not(:hover) { border-color: rgba(0,0,0,0) !important; }
 
-html:not(.mobile) .btn:not(.no-hover):not([class*="ui-"]):not(.btn-passive):not(.swatch-active):hover { background-color: rgba(0,0,0,.15); }
-html:not(.mobile) .btn.btn-ghost:not(.no-hover):not([class*="ui-"]):not(.btn-passive):not(.swatch-active):hover { background-color: rgba(0,0,0,.075); }
+html:not(.mobile) .btn:not([class*="ui-"]):not(.btn-passive):not(.swatch-active):hover { background-color: rgba(0,0,0,.15); }
+html:not(.mobile) .btn.btn-ghost:not([class*="ui-"]):not(.btn-passive):not(.swatch-active):hover { background-color: rgba(0,0,0,.075); }
 
 .btn .loading-spinner { position: absolute; top: 50%; left: 50%; z-index: 1; transform: translate(-50%,-50%); }
 .btn.loading .loading-spinner { z-index: 3; }
