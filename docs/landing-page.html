@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UI Lab, Landing Page</title>
+    <meta name="keywords" content="uilab, responsive, design system, css, javascript, landing page">
+    <meta name="description" content="CSS & JavaScript powered responsive design system." />
+    <meta name="author" content="Ahmet Emin Yüce"/>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
+
+    <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/reset.css" />
+
+    <link rel="stylesheet" href="../css/alignments.css" />
+    <link rel="stylesheet" href="../css/buttons.css" />
+    <link rel="stylesheet" href="../css/borders.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/helpers.css" />
+    <link rel="stylesheet" href="../css/icons.css" />
+    <link rel="stylesheet" href="../css/margins.css" />
+    <link rel="stylesheet" href="../css/mobile-menu.css" />
+    <link rel="stylesheet" href="../css/paddings.css" />
+    <link rel="stylesheet" href="../css/portlets.css" />
+    <link rel="stylesheet" href="../css/scrollbar.css" />
+    <link rel="stylesheet" href="../css/static-grid.css" />
+    <link rel="stylesheet" href="../css/swatches.css" />
+    <link rel="stylesheet" href="../css/tabs.css" />
+    <link rel="stylesheet" href="../css/top-button.css" />
+    <link rel="stylesheet" href="../css/transitions.css" />
+    <link rel="stylesheet" href="../css/typography.css" />
+
+
+    <!-- Javascript Tools -->
+    <script src="../js/selector.js"></script>
+    <script src="../js/events.js"></script>
+
+    <script src="../js/mobile-menu.js"></script>
+    <script src="../js/retina-images.js"></script>
+    <script src="../js/swatches.js"></script>
+    <script src="../js/tabs.js"></script>
+    <script src="../js/top-button.js"></script>
+    <script src="../js/transitions.js"></script>
+    <script src="../js/user-agents.js"></script>
+
+    <!-- font icons CSS -->
+    <link rel="stylesheet" href="icons/font-icons/outline/font-icons.css" />
+
+    <!-- custom fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap">
+
+    <!-- custom CSS -->
+    <style>
+        body { font-family: 'Lato'; }
+
+        .theme-farmer2.ui-x-light,.theme-farmer2 .ui-x-light:not([class*="theme-"]) { background-color: #e3f7cf; }
+        .theme-farmer2.ui-light,.theme-farmer2 .ui-light:not([class*="theme-"]) { background-color: #b2e77d; }
+        .theme-farmer2.ui-dark,.theme-farmer2 .ui-dark:not([class*="theme-"]) { background-color: #5fbf00; }
+        .theme-farmer2.ui-text,.theme-farmer2 .ui-text { color: #5fbf00; }
+        .theme-farmer2.ui-border,.theme-farmer2 .ui-border { border-color: #5fbf00; }
+        .theme-farmer2.ui-x-dark,.theme-farmer2 .ui-x-dark:not([class*="theme-"]) { background-color: #489100; }
+
+        .theme-farmer.ui-x-light,.theme-farmer .ui-x-light:not([class*="theme-"]) { background-color: #ffec71; }
+        .theme-farmer.ui-light,.theme-farmer .ui-light:not([class*="theme-"]) { background-color: #ffde00; }
+        .theme-farmer.ui-dark,.theme-farmer .ui-dark:not([class*="theme-"]) { background-color: #f9b404; }
+        .theme-farmer.ui-text,.theme-farmer .ui-text { color: #f9b404; }
+        .theme-farmer.ui-border,.theme-farmer .ui-border { border-color: #f9b404; }
+        .theme-farmer.ui-x-dark,.theme-farmer .ui-x-dark:not([class*="theme-"]) { background-color: #ac7b00; }
+
+        .header-content,.header-slogan { background: no-repeat center center; background-size: cover; }
+        .header-content:after,.header-slogan:after { content: "";  position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+        .header-content > .fixed,.header-slogan > div { z-index: 1; }
+
+        .header-tab01 { background-image: url(img/agriculture/lg01.jpg); }
+        .header-tab02 { background-image: url(img/agriculture/lg02.jpg); }
+        .header-tab03 { background-image: url(img/agriculture/lg03.jpg); }
+
+        .header-content:after { background-color: rgba(77,204,114,0.55); }
+        
+        .header-slogan { background-image: url(img/agriculture/md01.jpg); }
+        .header-slogan:after { background-color: rgba(255,221,136,.25); }
+        .header-slogan > div { background-color: rgba(249,180,4,.75); }
+    </style>
+
+    <!-- custom js -->
+    <script>
+        visibleLeft = 'sm'; // 'xs', 'sm', 'md', 'lg'
+    </script>
+
+</head>
+
+<body>
+
+    <header class="container no-gutter">
+
+        <div class="bottom-bordered theme-farmer2">
+            <div class="fixed padding-20-v sm-no-padding-v">
+                <div class="row">
+                    <div class="col-4 no-responsive md-align-center">
+                        <a href="#"><img src="img/agriculture/logo.png" height="42" alt="Agriculture Logo" class="retina"></a>
+                    </div>
+                    <div class="col-8 no-responsive bold align-right">
+
+                        <div class="hidden-sm">
+                            <div class="ease-1st-btn add-mobile-menu-right" data-import="1">
+                                <a class="btn btn-sm-responsive btn-lg btn-ghost ui-text ui-dark" href="#">
+                                    <i class="icon icon-sm icon-home margin-5-r margin-2-b visible-sm"></i>
+                                    Home
+                                </a>
+                                <a class="btn btn-sm-responsive btn-lg btn-ghost ui-text ui-dark" href="#">Products</a>
+                                <a class="btn btn-sm-responsive btn-lg btn-ghost ui-text ui-dark" href="#">Team</a>
+                                <a class="btn btn-sm-responsive btn-lg btn-ghost ui-text ui-dark" href="#">Pricing</a>
+                                <a class="btn btn-sm-responsive btn-lg btn-ghost ui-text ui-dark" href="#">Contact</a>
+                                <span class="inline-block margin-10-h hidden-sm"></span>
+                                <span class="sp10 visible-sm"></span>
+                                <a class="btn btn-sm-responsive btn-lg ui-dark" href="#">
+                                    <i class="icon icon-sm icon-user-accepted margin-5-r margin-2-b visible-sm"></i>
+                                    Login
+                                </a>
+                                <a class="btn btn-sm-responsive btn-lg ui-dark" href="#">
+                                    <i class="icon icon-sm icon-user margin-5-r margin-2-b visible-sm"></i>
+                                    Sign Up
+                                </a>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-lg btn-square btn-ghost align-center ui-text ease-btn show-mobile-menu-right visible-sm">
+                            <i class="icon icon-lg icon-bars no-opacity"></i>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-tabs" data-classes="ui-text bottom-bordered large-bordered ui-border">
+
+            <div class="fixed padding-10-t theme-farmer2">
+                <div class="row row-no-padding-ver">
+                    <div class="col-12 x-dark align-center ease-1st-btn">
+                        <button class="btn-tab btn btn-responsive btn-ghost btn-lg margin-1-b ui-text bottom-bordered large-bordered ui-border active">
+                            <i class="icon icon-sm icon-factory ui-text margin-3-r no-opacity ease-color"></i>
+                            Long Term Investment
+                        </button>
+                        <button class="btn-tab btn btn-responsive btn-ghost btn-lg margin-1-b">
+                            <i class="icon icon-md icon-comments ui-text margin-3-r no-opacity ease-color"></i>
+                            Connect with Our Farmers
+                        </button>
+                        <button class="btn-tab btn btn-responsive btn-ghost btn-lg margin-1-b">
+                            <i class="icon icon-md icon-land ui-text margin-3-r no-opacity ease-color"></i>
+                            Social Impact Investment
+                        </button>
+                    </div>
+                </div>
+                <span class="sp10 visible-sm"></span>
+            </div>
+    
+            <div class="header-content header-tab01 tab-content padding-30-v set-relative theme-farmer ui-dark open">
+                <div class="fixed padding-30-v set-relative">
+                    <div class="row row-lg-padding">
+                        <div class="col-8 md-align-center">
+                            <h1 class="xx-largest bold margin-30-t">A New Way to Invest<br>in Agriculture</h1>
+                            <p class="xx-large thin">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
+                            <a href="#" class="btn btn-lg btn-responsive padding-30-h ui-dark hover-shadow scale ease-all"><b>Invest Now</b></a>
+                        </div>
+                        <div class="col-4">
+    
+                            <div class="header-slogan padding-30 set-relative">
+                                <div class="align-center padding-15 set-relative">
+                                    <span class="sp15"></span>
+                                    <i class="icon icon-xxl icon-factory"></i>
+                                    <span class="sp30"></span>
+                                    <h3 class="bold xx-large">Long term investment</h3>
+                                    <p class="x-large">Consider terms that have long term investment program.</p>
+                                    <a href="#" class="btn btn-lg block theme-orange ui-dark ease-btn"><b>Learn more</b></a>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-content header-tab02 tab-content padding-30-v set-relative theme-farmer ui-dark">
+                <div class="fixed padding-30-v set-relative">
+                    <div class="row row-lg-padding">
+                        <div class="col-8 md-align-center">
+                            <h1 class="xx-largest bold margin-30-t">A New Way to Invest<br>in Agriculture</h1>
+                            <p class="xx-large thin">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
+                            <a href="#" class="btn btn-lg btn-responsive padding-30-h ui-dark hover-shadow scale ease-all"><b>Invest Now</b></a>
+                        </div>
+                        <div class="col-4">
+    
+                            <div class="header-slogan padding-30 set-relative">
+                                <div class="align-center padding-15 set-relative">
+                                    <span class="sp15"></span>
+                                    <i class="icon icon-xxl icon-factory"></i>
+                                    <span class="sp30"></span>
+                                    <h3 class="bold xx-large">Connect with Our Farmers</h3>
+                                    <p class="x-large">Consider terms that connect with our farmers program.</p>
+                                    <a href="#" class="btn btn-lg block theme-orange ui-dark ease-btn"><b>Learn more</b></a>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-content header-tab03 tab-content padding-30-v set-relative theme-farmer ui-dark">
+                <div class="fixed padding-30-v set-relative">
+                    <div class="row row-lg-padding">
+                        <div class="col-8 md-align-center">
+                            <h1 class="xx-largest bold margin-30-t">A New Way to Invest<br>in Agriculture</h1>
+                            <p class="xx-large thin">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
+                            <a href="#" class="btn btn-lg btn-responsive padding-30-h ui-dark hover-shadow scale ease-all"><b>Invest Now</b></a>
+                        </div>
+                        <div class="col-4">
+    
+                            <div class="header-slogan padding-30 set-relative">
+                                <div class="align-center padding-15 set-relative">
+                                    <span class="sp15"></span>
+                                    <i class="icon icon-xxl icon-factory"></i>
+                                    <span class="sp30"></span>
+                                    <h3 class="bold xx-large">Social Impact Investment</h3>
+                                    <p class="x-large">Consider terms that have social impact investment program.</p>
+                                    <a href="#" class="btn btn-lg block theme-orange ui-dark ease-btn"><b>Learn more</b></a>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+
+    </header>
+
+    <main class="container no-gutter">
+
+    </main>
+
+    <!-- mobile menu -->
+    <div class="mobile-menu show-right theme-farmer2 ui-dark ease-layout ease-slow ease-in-out">
+        <button class="btn btn-square btn-lg btn-ghost ease-btn close-mobile-menu">
+            <i class="icon icon-md icon-remove no-opacity"></i>
+        </button>
+        <div class="mobile-menu-title bottom-bordered light-bordered">
+            <a href="#"><img class="retina" src="img/agriculture/logo-invert.png" height="42" alt=""></a>
+        </div>
+        <div class="mobile-menu-content xx-light theme-farmer no-padding v-scroll"></div>
+    </div>
+
+</body>
+</html>
