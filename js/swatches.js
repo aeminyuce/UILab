@@ -24,7 +24,7 @@ var swatches = {};
             events.on(document,
 
                 'mouseenter',
-                'a[class*="ui-"]:not(.ui-text):not(.ui-border):not(.opacity):not(.opacity-more):not(.btn-ghost):not(.no-hover),.btn[class*="ui-"]:not(.ui-text):not(.ui-border):not(.opacity):not(.opacity-more):not(.btn-ghost):not(.no-hover),.hover',
+                '.hover,a[class*="ui-"]:not(.opacity):not(.opacity-more),.btn[class*="ui-"]:not(.opacity):not(.opacity-more):not(.btn-ghost)',
 
                 function () {
 
@@ -44,15 +44,15 @@ var swatches = {};
                     events.addClass(this, 'swatch-active');
 
                     r = parseInt(hoverColor[0], 10);
-                    r += ((255 - r) * 22) / 100;
+                    r += ((255 - r) * 32) / 100;
                     if (r > 255) { r = 255; }
 
                     g = parseInt(hoverColor[1], 10);
-                    g += ((255 - g) * 22) / 100;
+                    g += ((255 - g) * 32) / 100;
                     if (g > 255) { g = 255; }
 
                     b = parseInt(hoverColor[2], 10);
-                    b += ((255 - b) * 22) / 100;
+                    b += ((255 - b) * 32) / 100;
                     if (b > 255) { b = 255; }
 
                     getAlpha = hoverColor[3];
