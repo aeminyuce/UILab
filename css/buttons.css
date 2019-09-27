@@ -60,7 +60,7 @@ html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hove
 .btn-active { font-weight: bold; }
 
 .btn-ghost.ui-dark:not(.ui-text),.btn-ghost.ui-x-dark:not(.ui-text) { color: #000; }
-.btn-ghost.ui-dark:hover,.btn-ghost.ui-x-dark:hover { color: #fff !important; }
+.btn-ghost.ui-dark:hover,.btn-ghost.ui-x-dark:hover,.btn-ghost.ui-dark:hover .icon,.btn-ghost.ui-x-dark:hover .icon { color: #fff !important; }
 .btn-ghost:not(:hover) { background-color: rgba(0,0,0,0) !important; }
 
 .btn-ghost-border:not(:hover) { border-color: rgba(0,0,0,0) !important; }
