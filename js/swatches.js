@@ -24,7 +24,7 @@ var swatches = {};
             events.on(document,
 
                 'mouseenter',
-                '.hover,a[class*="ui-"]:not(.opacity):not(.opacity-more),.btn[class*="ui-"]:not(.opacity):not(.opacity-more):not(.btn-ghost)',
+                '.hover,.btn[class*="ui-"]:not(.opacity):not(.opacity-more):not(.btn-ghost)',
 
                 function () {
 
