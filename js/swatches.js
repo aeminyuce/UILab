@@ -44,15 +44,15 @@ var swatches = {};
                     events.addClass(this, 'swatch-active');
 
                     r = parseInt(hoverColor[0], 10);
-                    r += ((255 - r) * 32) / 100;
+                    r += ((255 - r) * 22) / 100;
                     if (r > 255) { r = 255; }
 
                     g = parseInt(hoverColor[1], 10);
-                    g += ((255 - g) * 32) / 100;
+                    g += ((255 - g) * 22) / 100;
                     if (g > 255) { g = 255; }
 
                     b = parseInt(hoverColor[2], 10);
-                    b += ((255 - b) * 32) / 100;
+                    b += ((255 - b) * 22) / 100;
                     if (b > 255) { b = 255; }
 
                     getAlpha = hoverColor[3];
