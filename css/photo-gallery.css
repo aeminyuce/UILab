@@ -19,7 +19,7 @@ html:not(.mobile) .photo-gallery .img:hover:after,.photo-gallery .img.hover-touc
 .photo-gallery > li .img img.cover-h { width: 100%; height: auto; top: 50%; left: 0; transform: translate(0,-50%); }
 
 .photo-gallery .img.has-info:after,.photo-gallery .img.has-info.hover-touch:after { background-color: rgba(0,0,0,.65); }
-.photo-gallery .img.has-info > span,.photo-gallery .img.has-info.hover-touch > span { color: #fff; font-size: 13px; text-align: left; overflow: hidden; display: block; position: absolute; z-index: 2; opacity: 0; }
+.photo-gallery .img.has-info > span,.photo-gallery .img.has-info.hover-touch > span { color: #fff; text-align: left; overflow: hidden; display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 2; opacity: 0; }
 html:not(.mobile) .photo-gallery .img.has-info:hover > span,.photo-gallery .img.has-info.hover-touch > span { opacity: 1; }
 
 .photo-gallery .img:not(.has-info):after { background-color: rgba(255,255,255,.25); }
@@ -68,12 +68,12 @@ html:not(.mobile) .preview-prev:hover,html:not(.mobile) .preview-next:hover { ba
     .photo-preview > img:not(.cover-h):not(.preview-zoom) { width: 100%; height: auto; }
 }
 @media (min-width: 768px) {
-    .photo-gallery .img.has-info > span,.photo-gallery .img.has-info.hover-touch > span { top: 20px; right: 20px; bottom: 20px; left: 20px; }
+    .photo-gallery .img.has-info > span,.photo-gallery .img.has-info.hover-touch > span { padding: 20px; }
     .preview-info { width: 620px; }
     .close-photo-preview { right: 20px; }
 }
 @media (max-width: 767px) {
-    .photo-gallery .img.has-info > span,.photo-gallery .img.has-info.hover-touch > span { top: 10px; right: 10px; bottom: 10px; left: 10px; }
+    .photo-gallery .img.has-info > span,.photo-gallery .img.has-info.hover-touch > span { padding: 10px; }
     .preview-info { width: 300px; }
     .photo-gallery > li { width: 33.333332%; }
 
@@ -83,6 +83,7 @@ html:not(.mobile) .preview-prev:hover,html:not(.mobile) .preview-next:hover { ba
     .photo-gallery > li .img { height: 180px; }
 }
 @media (max-width: 620px) {
+    .photo-gallery .img.has-info > span,.photo-gallery .img.has-info.hover-touch > span { font-size: 14px !important; }
     .photo-gallery > li .img { height: 130px; }
 }
 @media (min-width: 481px) {
