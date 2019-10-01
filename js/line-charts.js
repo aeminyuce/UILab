@@ -12,7 +12,7 @@ var lineCharts = {
     colors: ['#36a2eb', '#ff9f40', '#ff6384', '#9966ff', '#4bc0c0', '#ffcd56', '#84594d', '#bbc451', '#6a6a6a', '#647bc1'],
 
     top: 6, // set top space (px)
-    right: 6, // set right space (px)
+    right: 8, // set right space (px)
     bottom: 15, // set bottom space (px)
     left: 35, // set left space (px)
 
