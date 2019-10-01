@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="../css/grid.css" />
     <link rel="stylesheet" href="../css/helpers.css" />
     <link rel="stylesheet" href="../css/icons.css" />
+    <link rel="stylesheet" href="../css/line-charts.css" />
     <link rel="stylesheet" href="../css/margins.css" />
     <link rel="stylesheet" href="../css/mobile-menu.css" />
     <link rel="stylesheet" href="../css/paddings.css" />
@@ -32,6 +33,7 @@
     <link rel="stylesheet" href="../css/static-grid.css" />
     <link rel="stylesheet" href="../css/swatches.css" />
     <link rel="stylesheet" href="../css/tabs.css" />
+    <link rel="stylesheet" href="../css/tooltip.css" />
     <link rel="stylesheet" href="../css/top-button.css" />
     <link rel="stylesheet" href="../css/transitions.css" />
     <link rel="stylesheet" href="../css/typography.css" />
@@ -42,11 +44,13 @@
     <script src="../js/events.js"></script>
 
     <script src="../js/carousel.js"></script>
+    <script src="../js/line-charts.js"></script>
     <script src="../js/mobile-menu.js"></script>
     <script src="../js/photo-gallery.js"></script>
     <script src="../js/retina-images.js"></script>
     <script src="../js/swatches.js"></script>
     <script src="../js/tabs.js"></script>
+    <script src="../js/tooltip.js"></script>
     <script src="../js/top-button.js"></script>
     <script src="../js/transitions.js"></script>
     <script src="../js/user-agents.js"></script>
@@ -61,15 +65,15 @@
     <style>
         body { font-family: 'Lato'; background-color: #fffefb; }
 
-        .theme-farmer2.ui-x-light,.theme-farmer2 .ui-x-light:not([class*="theme-"]) { background-color: #d3f8df; }
-        .theme-farmer2.ui-light,.theme-farmer2 .ui-light:not([class*="theme-"]) { background-color: #97f3b6; }
+        .theme-farmer2.ui-x-light,.theme-farmer2 .ui-x-light:not([class*="theme-"]) { background-color: #e1fcea; }
+        .theme-farmer2.ui-light,.theme-farmer2 .ui-light:not([class*="theme-"]) { background-color: #befcd3; }
         .theme-farmer2.ui-dark,.theme-farmer2 .ui-dark:not([class*="theme-"]) { background-color: #11da54; }
         .theme-farmer2.ui-text,.theme-farmer2 .ui-text { color: #11da54; }
         .theme-farmer2.ui-border,.theme-farmer2 .ui-border { border-color: #11da54; }
         .theme-farmer2.ui-x-dark,.theme-farmer2 .ui-x-dark:not([class*="theme-"]) { background-color: #00a838; }
 
-        .theme-farmer.ui-x-light,.theme-farmer .ui-x-light:not([class*="theme-"]) { background-color: #f7e8c4; }
-        .theme-farmer.ui-light,.theme-farmer .ui-light:not([class*="theme-"]) { background-color: #eece7d; }
+        .theme-farmer.ui-x-light,.theme-farmer .ui-x-light:not([class*="theme-"]) { background-color: #fcf6e6; }
+        .theme-farmer.ui-light,.theme-farmer .ui-light:not([class*="theme-"]) { background-color: #f3deaa; }
         .theme-farmer.ui-dark,.theme-farmer .ui-dark:not([class*="theme-"]) { background-color: #ffba0c; }
         .theme-farmer.ui-text,.theme-farmer .ui-text { color: #ffba0c; }
         .theme-farmer.ui-border,.theme-farmer .ui-border { border-color: #ffba0c; }
@@ -91,8 +95,6 @@
         .highlight-links { margin-top: -80px; z-index: 1; }
         .highlight-links .carousel { margin: 0 -15px; }
 
-        .news-tabs { background-color: rgba(0,0,0,.015); }
-
         @media (min-width: 1200px) {
             .banner-content:after { background-color: rgba(17,218,84,.35); }
         }
@@ -106,7 +108,10 @@
 
     <!-- custom js -->
     <script>
+
         visibleLeft = 'sm'; // 'xs', 'sm', 'md', 'lg'
+        lineCharts.colors = ['#ffba0c', '#11da54', '#ff6384', '#9966ff', '#4bc0c0', '#ffcd56', '#84594d', '#bbc451', '#6a6a6a', '#647bc1'];
+
     </script>
 
 </head>
@@ -353,7 +358,7 @@
                             <i class="icon ui-text icon-xxl icon-jump"></i>
                             <span class="sp20"></span>
                             <h3 class="xx-large margin-10-b">Hardscaping</h3>
-                            <p class="large x-dark">Placing int the şandscape with great pleasure.</p>
+                            <p class="large x-dark">Placing int the landscape with great pleasure.</p>
                             <a href="#" class="btn btn-lg btn-ghost block ui-text ui-dark ease-btn"><b>Learn more</b></a>
                         </div>
                     </div>
@@ -397,7 +402,7 @@
                             <i class="icon ui-text icon-xxl icon-jump"></i>
                             <span class="sp20"></span>
                             <h3 class="xx-large margin-10-b">Hardscaping</h3>
-                            <p class="large x-dark">Placing int the şandscape with great pleasure.</p>
+                            <p class="large x-dark">Placing int the landscape with great pleasure.</p>
                             <a href="#" class="btn btn-lg btn-ghost block ui-text ui-dark ease-btn"><b>Learn more</b></a>
                         </div>
                     </div>
@@ -414,325 +419,351 @@
         <!-- highlight links: end -->
 
         <!-- news: start -->
-        <div class="fixed margin-30-b theme-farmer2">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="bold margin-10-b">News</h2>
-                    <h3 class="ui-text">Follow our activities.</h3>
-                </div>
-            </div>
-        </div>
-        <div class="news-tabs btn-tabs ver-bordered padding-10-v theme-farmer2" data-classes="ui-text bottom-bordered large-bordered ui-border">
-
-            <div class="fixed">
-                <div class="row row-no-padding-ver">
-                    <div class="col-12 align-center ease-1st-btn">
-                        <button class="btn-tab btn btn-responsive btn-ghost btn-lg margin-1-b ui-text bottom-bordered large-bordered ui-border active">
-                            <i class="icon icon-sm icon-building ui-text margin-5-r no-opacity ease-color"></i>
-                            Company
-                        </button>
-                        <button class="btn-tab btn btn-responsive btn-ghost btn-lg margin-1-b">
-                            <i class="icon icon-md icon-message ui-text margin-5-r no-opacity ease-color"></i>
-                            Social
-                        </button>
-                        <button class="btn-tab btn btn-responsive btn-ghost btn-lg margin-1-b">
-                            <i class="icon icon-md icon-customer ui-text margin-5-r no-opacity ease-color"></i>
-                            Customers
-                        </button>
-                    </div>
-                </div>
-                <span class="sp10 visible-sm"></span>
-            </div>
-
-            <div class="tab-content padding-10 open">
+        <div class="padding-30-v theme-farmer ui-x-light">
+            <div class="fixed margin-30-b">
                 <div class="row">
-                    <div class="col-3 col-md-6 sm-responsive">
-                        <a class="portlet hover-shadow shadow ease-layout" href="#">
-
-                            <span class="padding-15 block">
-                                <b class="xx-large margin-15-b block">Nam feugiat nec mi id tristique.</b>
-                                <img class="img-responsive margin-15-b" src="img/agriculture/news02.jpg" alt="Agriculture News">
-                                <span class="x-dark large">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
-                            </span>
-
-                            <span class="small ui-text top-bordered padding-10 block">
-                                <i class="icon icon-xs icon-clock margin-2-r"></i>
-                                <b class="inline-block margin-10-r">SEPTEMBER 30, 2019</b>
-
-                                <i class="icon icon-xs icon-eye margin-2-r"></i>
-                                <b class="inline-block margin-10-r">116</b>
-
-                                <i class="icon icon-xs icon-message margin-2-r"></i>
-                                <b class="inline-block">2</b>
-                            </span>
-
-                        </a>
+                    <div class="col-12">
+                        <h2 class="bold margin-10-b">News</h2>
+                        <h3 class="ui-text">Follow our activities.</h3>
                     </div>
-                    <div class="col-3 col-md-6 sm-responsive">
-                        <a class="portlet hover-shadow shadow ease-layout" href="#">
-
-                            <span class="padding-15 block">
-                                <b class="xx-large margin-15-b block">Eu sodales mauris dignissim ut.</b>
-                                <img class="img-responsive margin-15-b" src="img/agriculture/news01.jpg" alt="Agriculture News">
-                                <span class="x-dark large">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
-                            </span>
-
-                            <span class="small ui-text top-bordered padding-10 block">
-                                <i class="icon icon-xs icon-clock margin-2-r"></i>
-                                <b class="inline-block margin-10-r">SEPTEMBER 21, 2019</b>
-
-                                <i class="icon icon-xs icon-eye margin-2-r"></i>
-                                <b class="inline-block margin-10-r">147</b>
-
-                                <i class="icon icon-xs icon-message margin-2-r"></i>
-                                <b class="inline-block">8</b>
-                            </span>
-
-                        </a>
-                    </div>
-                    <div class="col-3 col-md-6 sm-responsive">
-                        <a class="portlet hover-shadow shadow ease-layout" href="#">
-
-                            <span class="padding-15 block">
-                                <b class="xx-large margin-15-b block">Fusce nec lacus in augue rhoncus.</b>
-                                <img class="img-responsive margin-15-b" src="img/agriculture/news03.jpg" alt="Agriculture News">
-                                <span class="x-dark large">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
-                            </span>
-
-                            <span class="small ui-text top-bordered padding-10 block">
-                                <i class="icon icon-xs icon-clock margin-2-r"></i>
-                                <b class="inline-block margin-10-r">SEPTEMBER 09, 2019</b>
-
-                                <i class="icon icon-xs icon-eye margin-2-r"></i>
-                                <b class="inline-block margin-10-r">205</b>
-
-                                <i class="icon icon-xs icon-message margin-2-r"></i>
-                                <b class="inline-block">12</b>
-                            </span>
-
-                        </a>
-                    </div>
-                    <div class="col-3 col-md-6 sm-responsive">
-                        <a class="portlet hover-shadow shadow ease-layout" href="#">
-
-                            <span class="padding-15 block">
-                                <b class="xx-large margin-15-b block">Cras aliquet placerat est, nec.</b>
-                                <img class="img-responsive margin-15-b" src="img/agriculture/news04.jpg" alt="Agriculture News">
-                                <span class="x-dark large">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
-                            </span>
-
-                            <span class="small ui-text top-bordered padding-10 block">
-                                <i class="icon icon-xs icon-clock margin-2-r"></i>
-                                <b class="inline-block margin-10-r">SEPTEMBER 01, 2019</b>
-
-                                <i class="icon icon-xs icon-eye margin-2-r"></i>
-                                <b class="inline-block margin-10-r">279</b>
-
-                                <i class="icon icon-xs icon-message margin-2-r"></i>
-                                <b class="inline-block">19</b>
-                            </span>
-
-                        </a>
-                    </div>
-                </div>
-                <div class="align-center margin-25-t">
-                    <a href="#" class="btn btn-lg btn-responsive padding-30-h theme-farmer ui-dark ease-btn">
-                        View all company news <i class="icon icon-sm icon-angle-right margin-5-l"></i>
-                    </a>
                 </div>
             </div>
-            <div class="tab-content padding-10">
-                <div class="row">
-                    <div class="col-3 col-md-6 sm-responsive">
-                        <a class="portlet hover-shadow shadow ease-layout" href="#">
-
-                            <span class="padding-15 block">
-                                <b class="xx-large margin-15-b block">Eu sodales mauris dignissim ut.</b>
-                                <img class="img-responsive margin-15-b" src="img/agriculture/news01.jpg" alt="Agriculture News">
-                                <span class="x-dark large">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
-                            </span>
-
-                            <span class="small ui-text top-bordered padding-10 block">
-                                <i class="icon icon-xs icon-clock margin-2-r"></i>
-                                <b class="inline-block margin-10-r">SEPTEMBER 21, 2019</b>
-
-                                <i class="icon icon-xs icon-eye margin-2-r"></i>
-                                <b class="inline-block margin-10-r">147</b>
-
-                                <i class="icon icon-xs icon-message margin-2-r"></i>
-                                <b class="inline-block">8</b>
-                            </span>
-
-                        </a>
+            <div class="btn-tabs" data-classes="ui-text bottom-bordered large-bordered ui-border">
+    
+                <div class="fixed">
+                    <div class="row row-no-padding-ver">
+                        <div class="col-12 align-center ease-1st-btn">
+                            <button class="btn-tab btn btn-responsive btn-ghost btn-lg margin-1-b ui-text bottom-bordered large-bordered ui-border active">
+                                <i class="icon icon-sm icon-building ui-text margin-5-r no-opacity ease-color"></i>
+                                Company
+                            </button>
+                            <button class="btn-tab btn btn-responsive btn-ghost btn-lg margin-1-b">
+                                <i class="icon icon-md icon-message ui-text margin-5-r no-opacity ease-color"></i>
+                                Social
+                            </button>
+                            <button class="btn-tab btn btn-responsive btn-ghost btn-lg margin-1-b">
+                                <i class="icon icon-md icon-customer ui-text margin-5-r no-opacity ease-color"></i>
+                                Customers
+                            </button>
+                        </div>
                     </div>
-                    <div class="col-3 col-md-6 sm-responsive">
-                        <a class="portlet hover-shadow shadow ease-layout" href="#">
-
-                            <span class="padding-15 block">
-                                <b class="xx-large margin-15-b block">Nam feugiat nec mi id tristique.</b>
-                                <img class="img-responsive margin-15-b" src="img/agriculture/news02.jpg" alt="Agriculture News">
-                                <span class="x-dark large">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
-                            </span>
-
-                            <span class="small ui-text top-bordered padding-10 block">
-                                <i class="icon icon-xs icon-clock margin-2-r"></i>
-                                <b class="inline-block margin-10-r">SEPTEMBER 30, 2019</b>
-
-                                <i class="icon icon-xs icon-eye margin-2-r"></i>
-                                <b class="inline-block margin-10-r">116</b>
-
-                                <i class="icon icon-xs icon-message margin-2-r"></i>
-                                <b class="inline-block">2</b>
-                            </span>
-
-                        </a>
+                    <span class="sp10 visible-sm"></span>
+                </div>
+    
+                <div class="tab-content padding-10 open">
+                    <div class="row">
+                        <div class="col-3 col-md-6 sm-responsive">
+                            <a class="portlet hover-shadow hover-up shadow ease-layout" href="#">
+    
+                                <span class="padding-15 block">
+                                    <b class="xx-large block">Ready to modern agriculture.</b>
+                                    <b class="dark margin-15-b block">Company</b>
+    
+                                    <img class="img-responsive margin-15-b" src="img/agriculture/news02.jpg" alt="Agriculture News">
+                                    <span class="x-dark large">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
+                                </span>
+    
+                                <span class="small dark top-bordered padding-10 block">
+                                    <i class="icon icon-xs icon-clock margin-2-r"></i>
+                                    <b class="inline-block margin-10-r">SEPTEMBER 30, 2019</b>
+    
+                                    <i class="icon icon-xs icon-eye margin-2-r"></i>
+                                    <b class="inline-block margin-10-r">116</b>
+    
+                                    <i class="icon icon-xs icon-message margin-2-r"></i>
+                                    <b class="inline-block">2</b>
+                                </span>
+    
+                            </a>
+                        </div>
+                        <div class="col-3 col-md-6 sm-responsive">
+                            <a class="portlet hover-shadow hover-up shadow ease-layout" href="#">
+    
+                                <span class="padding-15 block">
+                                    <b class="xx-large block">Farmers happy now.</b>
+                                    <b class="dark margin-15-b block">Company</b>
+    
+                                    <img class="img-responsive margin-15-b" src="img/agriculture/news01.jpg" alt="Agriculture News">
+                                    <span class="x-dark large">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
+                                </span>
+    
+                                <span class="small dark top-bordered padding-10 block">
+                                    <i class="icon icon-xs icon-clock margin-2-r"></i>
+                                    <b class="inline-block margin-10-r">SEPTEMBER 21, 2019</b>
+    
+                                    <i class="icon icon-xs icon-eye margin-2-r"></i>
+                                    <b class="inline-block margin-10-r">147</b>
+    
+                                    <i class="icon icon-xs icon-message margin-2-r"></i>
+                                    <b class="inline-block">8</b>
+                                </span>
+    
+                            </a>
+                        </div>
+                        <div class="col-3 col-md-6 sm-responsive">
+                            <a class="portlet hover-shadow hover-up shadow ease-layout" href="#">
+    
+                                <span class="padding-15 block">
+                                    <b class="xx-large block">New market prospects.</b>
+                                    <b class="dark margin-15-b block">Company</b>
+    
+                                    <img class="img-responsive margin-15-b" src="img/agriculture/news03.jpg" alt="Agriculture News">
+                                    <span class="x-dark large">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
+                                </span>
+    
+                                <span class="small dark top-bordered padding-10 block">
+                                    <i class="icon icon-xs icon-clock margin-2-r"></i>
+                                    <b class="inline-block margin-10-r">SEPTEMBER 09, 2019</b>
+    
+                                    <i class="icon icon-xs icon-eye margin-2-r"></i>
+                                    <b class="inline-block margin-10-r">205</b>
+    
+                                    <i class="icon icon-xs icon-message margin-2-r"></i>
+                                    <b class="inline-block">12</b>
+                                </span>
+    
+                            </a>
+                        </div>
+                        <div class="col-3 col-md-6 sm-responsive">
+                            <a class="portlet hover-shadow hover-up shadow ease-layout" href="#">
+    
+                                <span class="padding-15 block">
+                                    <b class="xx-large block">About product breeding</b>
+                                    <b class="dark margin-15-b block">Company</b>
+    
+                                    <img class="img-responsive margin-15-b" src="img/agriculture/news04.jpg" alt="Agriculture News">
+                                    <span class="x-dark large">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
+                                </span>
+    
+                                <span class="small dark top-bordered padding-10 block">
+                                    <i class="icon icon-xs icon-clock margin-2-r"></i>
+                                    <b class="inline-block margin-10-r">SEPTEMBER 01, 2019</b>
+    
+                                    <i class="icon icon-xs icon-eye margin-2-r"></i>
+                                    <b class="inline-block margin-10-r">279</b>
+    
+                                    <i class="icon icon-xs icon-message margin-2-r"></i>
+                                    <b class="inline-block">19</b>
+                                </span>
+    
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-3 col-md-6 sm-responsive">
-                        <a class="portlet hover-shadow shadow ease-layout" href="#">
-
-                            <span class="padding-15 block">
-                                <b class="xx-large margin-15-b block">Cras aliquet placerat est, nec.</b>
-                                <img class="img-responsive margin-15-b" src="img/agriculture/news04.jpg" alt="Agriculture News">
-                                <span class="x-dark large">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
-                            </span>
-
-                            <span class="small ui-text top-bordered padding-10 block">
-                                <i class="icon icon-xs icon-clock margin-2-r"></i>
-                                <b class="inline-block margin-10-r">SEPTEMBER 01, 2019</b>
-
-                                <i class="icon icon-xs icon-eye margin-2-r"></i>
-                                <b class="inline-block margin-10-r">279</b>
-
-                                <i class="icon icon-xs icon-message margin-2-r"></i>
-                                <b class="inline-block">19</b>
-                            </span>
-
-                        </a>
-                    </div>
-                    <div class="col-3 col-md-6 sm-responsive">
-                        <a class="portlet hover-shadow shadow ease-layout" href="#">
-
-                            <span class="padding-15 block">
-                                <b class="xx-large margin-15-b block">Fusce nec lacus in augue rhoncus.</b>
-                                <img class="img-responsive margin-15-b" src="img/agriculture/news03.jpg" alt="Agriculture News">
-                                <span class="x-dark large">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
-                            </span>
-
-                            <span class="small ui-text top-bordered padding-10 block">
-                                <i class="icon icon-xs icon-clock margin-2-r"></i>
-                                <b class="inline-block margin-10-r">SEPTEMBER 09, 2019</b>
-
-                                <i class="icon icon-xs icon-eye margin-2-r"></i>
-                                <b class="inline-block margin-10-r">205</b>
-
-                                <i class="icon icon-xs icon-message margin-2-r"></i>
-                                <b class="inline-block">12</b>
-                            </span>
-
+                    <div class="align-center padding-30-t padding-10-b">
+                        <a href="#" class="btn btn-lg btn-responsive padding-30-h ui-dark ease-btn">
+                            <b>View all company news</b> <i class="icon icon-sm icon-angle-right margin-5-l"></i>
                         </a>
                     </div>
                 </div>
-                <div class="align-center margin-25-t">
-                    <a href="#" class="btn btn-lg btn-responsive padding-30-h theme-farmer ui-dark ease-btn">
-                        View all social news <i class="icon icon-sm icon-angle-right margin-5-l"></i>
-                    </a>
+                <div class="tab-content padding-10">
+                    <div class="row">
+                        <div class="col-3 col-md-6 sm-responsive">
+                            <a class="portlet hover-shadow shadow ease-layout" href="#">
+    
+                                <span class="padding-15 block">
+                                    <b class="xx-large block">Farmers happy now.</b>
+                                    <b class="dark margin-15-b block">Social</b>
+    
+                                    <img class="img-responsive margin-15-b" src="img/agriculture/news01.jpg" alt="Agriculture News">
+                                    <span class="x-dark large">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
+                                </span>
+    
+                                <span class="small dark top-bordered padding-10 block">
+                                    <i class="icon icon-xs icon-clock margin-2-r"></i>
+                                    <b class="inline-block margin-10-r">SEPTEMBER 21, 2019</b>
+    
+                                    <i class="icon icon-xs icon-eye margin-2-r"></i>
+                                    <b class="inline-block margin-10-r">147</b>
+    
+                                    <i class="icon icon-xs icon-message margin-2-r"></i>
+                                    <b class="inline-block">8</b>
+                                </span>
+    
+                            </a>
+                        </div>
+                        <div class="col-3 col-md-6 sm-responsive">
+                            <a class="portlet hover-shadow shadow ease-layout" href="#">
+    
+                                <span class="padding-15 block">
+                                    <b class="xx-large block">New market prospects.</b>
+                                    <b class="dark margin-15-b block">Social</b>
+    
+                                    <img class="img-responsive margin-15-b" src="img/agriculture/news03.jpg" alt="Agriculture News">
+                                    <span class="x-dark large">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
+                                </span>
+    
+                                <span class="small dark top-bordered padding-10 block">
+                                    <i class="icon icon-xs icon-clock margin-2-r"></i>
+                                    <b class="inline-block margin-10-r">SEPTEMBER 09, 2019</b>
+    
+                                    <i class="icon icon-xs icon-eye margin-2-r"></i>
+                                    <b class="inline-block margin-10-r">205</b>
+    
+                                    <i class="icon icon-xs icon-message margin-2-r"></i>
+                                    <b class="inline-block">12</b>
+                                </span>
+    
+                            </a>
+                        </div>
+                        <div class="col-3 col-md-6 sm-responsive">
+                            <a class="portlet hover-shadow shadow ease-layout" href="#">
+    
+                                <span class="padding-15 block">
+                                    <b class="xx-large block">About product breeding</b>
+                                    <b class="dark margin-15-b block">Social</b>
+    
+                                    <img class="img-responsive margin-15-b" src="img/agriculture/news04.jpg" alt="Agriculture News">
+                                    <span class="x-dark large">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
+                                </span>
+    
+                                <span class="small dark top-bordered padding-10 block">
+                                    <i class="icon icon-xs icon-clock margin-2-r"></i>
+                                    <b class="inline-block margin-10-r">SEPTEMBER 01, 2019</b>
+    
+                                    <i class="icon icon-xs icon-eye margin-2-r"></i>
+                                    <b class="inline-block margin-10-r">279</b>
+    
+                                    <i class="icon icon-xs icon-message margin-2-r"></i>
+                                    <b class="inline-block">19</b>
+                                </span>
+    
+                            </a>
+                        </div>
+                        <div class="col-3 col-md-6 sm-responsive">
+                            <a class="portlet hover-shadow shadow ease-layout" href="#">
+    
+                                <span class="padding-15 block">
+                                    <b class="xx-large block">Ready to modern agriculture.</b>
+                                    <b class="dark margin-15-b block">Social</b>
+    
+                                    <img class="img-responsive margin-15-b" src="img/agriculture/news02.jpg" alt="Agriculture News">
+                                    <span class="x-dark large">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
+                                </span>
+    
+                                <span class="small dark top-bordered padding-10 block">
+                                    <i class="icon icon-xs icon-clock margin-2-r"></i>
+                                    <b class="inline-block margin-10-r">SEPTEMBER 30, 2019</b>
+    
+                                    <i class="icon icon-xs icon-eye margin-2-r"></i>
+                                    <b class="inline-block margin-10-r">116</b>
+    
+                                    <i class="icon icon-xs icon-message margin-2-r"></i>
+                                    <b class="inline-block">2</b>
+                                </span>
+    
+                            </a>
+                        </div>
+                    </div>
+                    <div class="align-center padding-30-t padding-10-b">
+                        <a href="#" class="btn btn-lg btn-responsive padding-30-h ui-dark ease-btn">
+                            <b>View all social news</b> <i class="icon icon-sm icon-angle-right margin-5-l"></i>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="tab-content padding-10">
-                <div class="row">
-                    <div class="col-3 col-md-6 sm-responsive">
-                        <a class="portlet hover-shadow shadow ease-layout" href="#">
-
-                            <span class="padding-15 block">
-                                <b class="xx-large margin-15-b block">Eu sodales mauris dignissim ut.</b>
-                                <img class="img-responsive margin-15-b" src="img/agriculture/news01.jpg" alt="Agriculture News">
-                                <span class="x-dark large">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
-                            </span>
-
-                            <span class="small ui-text top-bordered padding-10 block">
-                                <i class="icon icon-xs icon-clock margin-2-r"></i>
-                                <b class="inline-block margin-10-r">SEPTEMBER 21, 2019</b>
-
-                                <i class="icon icon-xs icon-eye margin-2-r"></i>
-                                <b class="inline-block margin-10-r">147</b>
-
-                                <i class="icon icon-xs icon-message margin-2-r"></i>
-                                <b class="inline-block">8</b>
-                            </span>
-
+                <div class="tab-content padding-10">
+                    <div class="row">
+                        <div class="col-3 col-md-6 sm-responsive">
+                            <a class="portlet hover-shadow shadow ease-layout" href="#">
+    
+                                <span class="padding-15 block">
+                                    <b class="xx-large block">Farmers happy now.</b>
+                                    <b class="dark margin-15-b block">Customers</b>
+    
+                                    <img class="img-responsive margin-15-b" src="img/agriculture/news01.jpg" alt="Agriculture News">
+                                    <span class="x-dark large">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
+                                </span>
+    
+                                <span class="small dark top-bordered padding-10 block">
+                                    <i class="icon icon-xs icon-clock margin-2-r"></i>
+                                    <b class="inline-block margin-10-r">SEPTEMBER 21, 2019</b>
+    
+                                    <i class="icon icon-xs icon-eye margin-2-r"></i>
+                                    <b class="inline-block margin-10-r">147</b>
+    
+                                    <i class="icon icon-xs icon-message margin-2-r"></i>
+                                    <b class="inline-block">8</b>
+                                </span>
+    
+                            </a>
+                        </div>
+                        <div class="col-3 col-md-6 sm-responsive">
+                            <a class="portlet hover-shadow shadow ease-layout" href="#">
+    
+                                <span class="padding-15 block">
+                                    <b class="xx-large block">Ready to modern agriculture.</b>
+                                    <b class="dark margin-15-b block">Customers</b>
+    
+                                    <img class="img-responsive margin-15-b" src="img/agriculture/news02.jpg" alt="Agriculture News">
+                                    <span class="x-dark large">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
+                                </span>
+    
+                                <span class="small dark top-bordered padding-10 block">
+                                    <i class="icon icon-xs icon-clock margin-2-r"></i>
+                                    <b class="inline-block margin-10-r">SEPTEMBER 30, 2019</b>
+    
+                                    <i class="icon icon-xs icon-eye margin-2-r"></i>
+                                    <b class="inline-block margin-10-r">116</b>
+    
+                                    <i class="icon icon-xs icon-message margin-2-r"></i>
+                                    <b class="inline-block">2</b>
+                                </span>
+    
+                            </a>
+                        </div>
+                        <div class="col-3 col-md-6 sm-responsive">
+                            <a class="portlet hover-shadow shadow ease-layout" href="#">
+    
+                                <span class="padding-15 block">
+                                    <b class="xx-large block">About product breeding</b>
+                                    <b class="dark margin-15-b block">Customers</b>
+    
+                                    <img class="img-responsive margin-15-b" src="img/agriculture/news04.jpg" alt="Agriculture News">
+                                    <span class="x-dark large">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
+                                </span>
+    
+                                <span class="small dark top-bordered padding-10 block">
+                                    <i class="icon icon-xs icon-clock margin-2-r"></i>
+                                    <b class="inline-block margin-10-r">SEPTEMBER 01, 2019</b>
+    
+                                    <i class="icon icon-xs icon-eye margin-2-r"></i>
+                                    <b class="inline-block margin-10-r">279</b>
+    
+                                    <i class="icon icon-xs icon-message margin-2-r"></i>
+                                    <b class="inline-block">19</b>
+                                </span>
+    
+                            </a>
+                        </div>
+                        <div class="col-3 col-md-6 sm-responsive">
+                            <a class="portlet hover-shadow shadow ease-layout" href="#">
+    
+                                <span class="padding-15 block">
+                                    <b class="xx-large block">New market prospects.</b>
+                                    <b class="dark margin-15-b block">Customers</b>
+    
+                                    <img class="img-responsive margin-15-b" src="img/agriculture/news03.jpg" alt="Agriculture News">
+                                    <span class="x-dark large">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
+                                </span>
+    
+                                <span class="small dark top-bordered padding-10 block">
+                                    <i class="icon icon-xs icon-clock margin-2-r"></i>
+                                    <b class="inline-block margin-10-r">SEPTEMBER 09, 2019</b>
+    
+                                    <i class="icon icon-xs icon-eye margin-2-r"></i>
+                                    <b class="inline-block margin-10-r">205</b>
+    
+                                    <i class="icon icon-xs icon-message margin-2-r"></i>
+                                    <b class="inline-block">12</b>
+                                </span>
+    
+                            </a>
+                        </div>
+                    </div>
+                    <div class="align-center padding-30-t padding-10-b">
+                        <a href="#" class="btn btn-lg btn-responsive padding-30-h ui-dark ease-btn">
+                            <b>View all customer news</b> <i class="icon icon-sm icon-angle-right margin-5-l"></i>
                         </a>
                     </div>
-                    <div class="col-3 col-md-6 sm-responsive">
-                        <a class="portlet hover-shadow shadow ease-layout" href="#">
-
-                            <span class="padding-15 block">
-                                <b class="xx-large margin-15-b block">Fusce nec lacus in augue rhoncus.</b>
-                                <img class="img-responsive margin-15-b" src="img/agriculture/news03.jpg" alt="Agriculture News">
-                                <span class="x-dark large">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
-                            </span>
-
-                            <span class="small ui-text top-bordered padding-10 block">
-                                <i class="icon icon-xs icon-clock margin-2-r"></i>
-                                <b class="inline-block margin-10-r">SEPTEMBER 09, 2019</b>
-
-                                <i class="icon icon-xs icon-eye margin-2-r"></i>
-                                <b class="inline-block margin-10-r">205</b>
-
-                                <i class="icon icon-xs icon-message margin-2-r"></i>
-                                <b class="inline-block">12</b>
-                            </span>
-
-                        </a>
-                    </div>
-                    <div class="col-3 col-md-6 sm-responsive">
-                        <a class="portlet hover-shadow shadow ease-layout" href="#">
-
-                            <span class="padding-15 block">
-                                <b class="xx-large margin-15-b block">Cras aliquet placerat est, nec.</b>
-                                <img class="img-responsive margin-15-b" src="img/agriculture/news04.jpg" alt="Agriculture News">
-                                <span class="x-dark large">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
-                            </span>
-
-                            <span class="small ui-text top-bordered padding-10 block">
-                                <i class="icon icon-xs icon-clock margin-2-r"></i>
-                                <b class="inline-block margin-10-r">SEPTEMBER 01, 2019</b>
-
-                                <i class="icon icon-xs icon-eye margin-2-r"></i>
-                                <b class="inline-block margin-10-r">279</b>
-
-                                <i class="icon icon-xs icon-message margin-2-r"></i>
-                                <b class="inline-block">19</b>
-                            </span>
-
-                        </a>
-                    </div>
-                    <div class="col-3 col-md-6 sm-responsive">
-                        <a class="portlet hover-shadow shadow ease-layout" href="#">
-
-                            <span class="padding-15 block">
-                                <b class="xx-large margin-15-b block">Nam feugiat nec mi id tristique.</b>
-                                <img class="img-responsive margin-15-b" src="img/agriculture/news02.jpg" alt="Agriculture News">
-                                <span class="x-dark large">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
-                            </span>
-
-                            <span class="small ui-text top-bordered padding-10 block">
-                                <i class="icon icon-xs icon-clock margin-2-r"></i>
-                                <b class="inline-block margin-10-r">SEPTEMBER 30, 2019</b>
-
-                                <i class="icon icon-xs icon-eye margin-2-r"></i>
-                                <b class="inline-block margin-10-r">116</b>
-
-                                <i class="icon icon-xs icon-message margin-2-r"></i>
-                                <b class="inline-block">2</b>
-                            </span>
-
-                        </a>
-                    </div>
-                </div>
-                <div class="align-center margin-25-t">
-                    <a href="#" class="btn btn-lg btn-responsive padding-30-h theme-farmer ui-dark ease-btn">
-                        View all customer news <i class="icon icon-sm icon-angle-right margin-5-l"></i>
-                    </a>
                 </div>
             </div>
         </div>
@@ -740,16 +771,17 @@
         <!-- news: end -->
 
         <!-- gallery: start -->
-        <div class="fixed margin-30-b theme-farmer2">
+        <div class="fixed theme-farmer2">
             <div class="row">
                 <div class="col-12">
                     <h2 class="bold margin-10-b">Our Projects</h2>
                     <h3 class="ui-text margin-25-b">What we are doing?</h3>
+                    
                     <p class="x-dark x-large">Aliquam leo quam, laoreet quis luctus non, vulputate vitae elit. Pellentesque consequat eu mauris ac imperdiet. In dolor velit, pellentesque eu dignissim in, dignissim ac turpis. Sed lobortis diam ante, et posuere ligula convallis suscipit. Maecenas varius ultrices eros, eu vestibulum sem aliquet et.</p>
 
-                    <span class="sp15"></span>
+                    <span class="sp30"></span>
 
-                    <ul class="photo-gallery has-cover ease-photo-gallery theme-farmer2">
+                    <ul class="photo-gallery has-cover ease-photo-gallery">
                         <li>
                             <a class="img has-info show-info" href="img/agriculture/md01.jpg">
                                 <img src="img/agriculture/md01.jpg" alt="">
@@ -798,6 +830,51 @@
         </div>
         <span class="sp30 margin-15-v"></span>
         <!-- gallery: end -->
+        
+        <!-- statistics: start -->
+        <div class="padding-15-v theme-farmer ui-x-light">
+            <div class="fixed padding-30-v">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="bold margin-10-b">Why Choose Us</h2>
+                        <h3 class="ui-text margin-25-b">See detailed statistics.</h3>
+
+                        <p class="x-dark x-large margin-30-b">Cras non sagittis arcu, eget viverra nunc. Suspendisse ut est mi. Nunc hendrerit suscipit ornare. Cras luctus nibh in metus semper lacinia ultricies non nulla. Pellentesque tellus neque, lobortis quis risus at, porttitor lacinia leo.</p>
+                    </div>
+                    <div class="col-8 push-2">
+                        <div class="line-charts ease-line-charts" data-size="10,35" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="line" data-name="Last year" data-type="filled">
+                                <li data-y="30" data-link="#1"></li>
+                                <li data-y="50" data-link="#2"></li>
+                                <li data-y="110" data-link="#3"></li>
+                                <li data-y="140" data-link="#4"></li>
+                                <li data-y="220" data-link="#5"></li>
+                                <li data-y="320" data-link="#6"></li>
+                                <li data-y="360" data-link="#7"></li>
+                            </ul>
+                            <ul class="line" data-name="This year" data-type="filled">
+                                <li data-y="120" data-link="#1"></li>
+                                <li data-y="160" data-link="#2"></li>
+                                <li data-y="180" data-link="#3"></li>
+                                <li data-y="220" data-link="#4"></li>
+                                <li data-y="280" data-link="#5"></li>
+                                <li data-y="390" data-link="#6"></li>
+                                <li data-y="430" data-link="#7"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="align-center padding-30-t">
+                            <a href="#" class="btn btn-lg btn-responsive padding-30-h ui-dark ease-btn">
+                                <b>View all statistics</b> <i class="icon icon-sm icon-angle-right margin-5-l"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="sp30 margin-15-v"></span>
+        <!-- statistics: end -->
         
     </main>
 
