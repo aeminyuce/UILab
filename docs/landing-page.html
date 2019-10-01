@@ -20,10 +20,14 @@
     <link rel="stylesheet" href="../css/buttons.css" />
     <link rel="stylesheet" href="../css/borders.css" />
     <link rel="stylesheet" href="../css/carousel.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <link rel="stylesheet" href="../css/form-holder.css" />
+    <link rel="stylesheet" href="../css/form-icons.css" />
     <link rel="stylesheet" href="../css/grid.css" />
     <link rel="stylesheet" href="../css/helpers.css" />
     <link rel="stylesheet" href="../css/icons.css" />
     <link rel="stylesheet" href="../css/line-charts.css" />
+    <link rel="stylesheet" href="../css/listings.css" />
     <link rel="stylesheet" href="../css/margins.css" />
     <link rel="stylesheet" href="../css/mobile-menu.css" />
     <link rel="stylesheet" href="../css/paddings.css" />
@@ -44,9 +48,12 @@
     <script src="../js/events.js"></script>
 
     <script src="../js/carousel.js"></script>
+    <script src="../js/forms.js"></script>
+    <script src="../js/ie9-placeholders.js"></script>
     <script src="../js/line-charts.js"></script>
     <script src="../js/mobile-menu.js"></script>
     <script src="../js/photo-gallery.js"></script>
+    <script src="../js/required-forms.js"></script>
     <script src="../js/retina-images.js"></script>
     <script src="../js/swatches.js"></script>
     <script src="../js/tabs.js"></script>
@@ -89,7 +96,7 @@
         .banner-tab02 { background-image: url(img/agriculture/lg02.jpg); }
         .banner-tab03 { background-image: url(img/agriculture/lg03.jpg); }
         
-        .banner-slogan { background-color: rgba(255,255,255,.45); }
+        .banner-slogan,.footer-social { background-color: rgba(255,255,255,.45); }
         .banner-slogan > div { background-color: rgba(255,186,12,.8); }
 
         .highlight-links { margin-top: -80px; z-index: 1; }
@@ -428,20 +435,20 @@
                     </div>
                 </div>
             </div>
-            <div class="btn-tabs" data-classes="ui-text bottom-bordered large-bordered ui-border">
+            <div class="btn-tabs top-bordered padding-10-t" data-classes="ui-text bottom-bordered large-bordered ui-border">
     
                 <div class="fixed">
                     <div class="row row-no-padding-ver">
                         <div class="col-12 align-center ease-1st-btn">
-                            <button class="btn-tab btn btn-responsive btn-ghost btn-lg margin-1-b ui-text bottom-bordered large-bordered ui-border active">
+                            <button class="btn-tab btn btn-responsive btn-ghost btn-lg margin-1-b ui-dark ui-text bottom-bordered large-bordered ui-border active">
                                 <i class="icon icon-sm icon-building ui-text margin-5-r no-opacity ease-color"></i>
                                 Company
                             </button>
-                            <button class="btn-tab btn btn-responsive btn-ghost btn-lg margin-1-b">
+                            <button class="btn-tab btn btn-responsive btn-ghost btn-lg margin-1-b ui-dark">
                                 <i class="icon icon-md icon-message ui-text margin-5-r no-opacity ease-color"></i>
                                 Social
                             </button>
-                            <button class="btn-tab btn btn-responsive btn-ghost btn-lg margin-1-b">
+                            <button class="btn-tab btn btn-responsive btn-ghost btn-lg margin-1-b ui-dark">
                                 <i class="icon icon-md icon-customer ui-text margin-5-r no-opacity ease-color"></i>
                                 Customers
                             </button>
@@ -777,7 +784,7 @@
                     <h2 class="bold margin-10-b">Our Projects</h2>
                     <h3 class="ui-text margin-25-b">What we are doing?</h3>
                     
-                    <p class="x-dark x-large">Aliquam leo quam, laoreet quis luctus non, vulputate vitae elit. Pellentesque consequat eu mauris ac imperdiet. In dolor velit, pellentesque eu dignissim in, dignissim ac turpis. Sed lobortis diam ante, et posuere ligula convallis suscipit. Maecenas varius ultrices eros, eu vestibulum sem aliquet et.</p>
+                    <p class="x-dark x-large xs-align-center">Aliquam leo quam, laoreet quis luctus non, vulputate vitae elit. Pellentesque consequat eu mauris ac imperdiet. In dolor velit, pellentesque eu dignissim in, dignissim ac turpis. Sed lobortis diam ante, et posuere ligula convallis suscipit. Maecenas varius ultrices eros, eu vestibulum sem aliquet et.</p>
 
                     <span class="sp30"></span>
 
@@ -832,49 +839,146 @@
         <!-- gallery: end -->
         
         <!-- statistics: start -->
-        <div class="padding-15-v theme-farmer ui-x-light">
+        <div class="padding-15-t padding-30-b theme-farmer ui-x-light">
             <div class="fixed padding-30-v">
                 <div class="row">
                     <div class="col-12">
                         <h2 class="bold margin-10-b">Why Choose Us</h2>
                         <h3 class="ui-text margin-25-b">See detailed statistics.</h3>
-
-                        <p class="x-dark x-large margin-30-b">Cras non sagittis arcu, eget viverra nunc. Suspendisse ut est mi. Nunc hendrerit suscipit ornare. Cras luctus nibh in metus semper lacinia ultricies non nulla. Pellentesque tellus neque, lobortis quis risus at, porttitor lacinia leo.</p>
                     </div>
-                    <div class="col-8 push-2">
-                        <div class="line-charts ease-line-charts" data-size="10,35" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul class="line" data-name="Last year" data-type="filled">
-                                <li data-y="30" data-link="#1"></li>
-                                <li data-y="50" data-link="#2"></li>
-                                <li data-y="110" data-link="#3"></li>
-                                <li data-y="140" data-link="#4"></li>
-                                <li data-y="220" data-link="#5"></li>
-                                <li data-y="320" data-link="#6"></li>
-                                <li data-y="360" data-link="#7"></li>
-                            </ul>
-                            <ul class="line" data-name="This year" data-type="filled">
-                                <li data-y="120" data-link="#1"></li>
-                                <li data-y="160" data-link="#2"></li>
-                                <li data-y="180" data-link="#3"></li>
-                                <li data-y="220" data-link="#4"></li>
-                                <li data-y="280" data-link="#5"></li>
-                                <li data-y="390" data-link="#6"></li>
-                                <li data-y="430" data-link="#7"></li>
-                            </ul>
+                    <div class="col-static">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="portlet padding-30 shadow">
+                                    <div class="line-charts ease-line-charts" data-size="8,30" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                                        <ul class="line" data-name="Last year" data-type="filled">
+                                            <li data-y="30" data-link="#1"></li>
+                                            <li data-y="50" data-link="#2"></li>
+                                            <li data-y="110" data-link="#3"></li>
+                                            <li data-y="140" data-link="#4"></li>
+                                            <li data-y="220" data-link="#5"></li>
+                                            <li data-y="320" data-link="#6"></li>
+                                            <li data-y="360" data-link="#7"></li>
+                                        </ul>
+                                        <ul class="line" data-name="This year" data-type="filled">
+                                            <li data-y="120" data-link="#1"></li>
+                                            <li data-y="160" data-link="#2"></li>
+                                            <li data-y="180" data-link="#3"></li>
+                                            <li data-y="220" data-link="#4"></li>
+                                            <li data-y="280" data-link="#5"></li>
+                                            <li data-y="390" data-link="#6"></li>
+                                            <li data-y="430" data-link="#7"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="align-center padding-30-t">
-                            <a href="#" class="btn btn-lg btn-responsive padding-30-h ui-dark ease-btn">
-                                <b>View all statistics</b> <i class="icon icon-sm icon-angle-right margin-5-l"></i>
+                        <div class="static-400 padding-10 xs-align-center">
+                            <p class="x-dark x-large margin-30-b">
+                                <span class="sp15"></span>
+                                <b>Cras non sagittis arcu, eget viverra nunc.</b>
+                                <span class="sp15"></span>
+                                Suspendisse ut est mi. Nunc hendrerit suscipit ornare. Cras luctus nibh in metus semper lacinia ultricies non nulla.
+                                <span class="sp15"></span>
+                                Pellentesque mattis sed diam a rutrum. Sed fermentum accumsan egestas.
+                            </p>
+                            <a href="#" class="btn btn-lg btn-responsive padding-20-h margin-30-b ui-dark ease-btn">
+                                <b>View statistics</b> <i class="icon icon-sm icon-angle-right margin-5-l"></i>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <span class="sp30 margin-15-v"></span>
         <!-- statistics: end -->
+
+        <!-- footer: start -->
+        <footer class="container no-gutter padding-30-v theme-farmer2 ui-dark">
+            <div class="fixed padding-30-v sm-align-center">
+                <div class="row">
+                    <div class="col-static">
+                        <div class="row">
+                            <div class="col-4 sm-responsive">
+                                <h4 class="x-light-ui margin-30-b">Customer Service</h4>
+                                <ul class="list-unstyled list-spacer-10 x-large ease-2nd-layout">
+                                    <li><a href="#">Order Status</a></li>
+                                    <li><a href="#">Shipping</a></li>
+                                    <li><a href="#">Contact References</a></li>
+                                    <li><a href="#">Returns</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Our Guarantee</a></li>
+                                    <li><a href="#">Tax Notice</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4 sm-responsive">
+                                <h4 class="x-light-ui margin-30-b">Who We Are</h4>
+                                <ul class="list-unstyled list-spacer-10 x-large ease-2nd-layout">
+                                    <li><a href="#">Good Works</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Environmental</a></li>
+                                    <li><a href="#">Commitment</a></li>
+                                    <li><a href="#">Corporation</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4 sm-responsive">
+                                <h4 class="x-light-ui margin-30-b">Quick Links</h4>
+                                <ul class="list-unstyled list-spacer-10 x-large ease-2nd-layout">
+                                    <li><a href="#">Educater &amp; Landscaper</a></li>
+                                    <li><a href="#">Discounts</a></li>
+                                    <li><a href="#">Become an Affiliate</a></li>
+                                    <li><a href="#">Email Unsubscribe</a></li>
+                                </ul>
+                                <span class="sp20 visible-sm"></span>
+                            </div>
+                        </div>
+                        <div class="static-400 padding-10">
+
+                            <div class="footer-social padding-15">
+                                <div class="portlet padding-30 shadow-lg theme-farmer ui-dark">
+                                    <h4 class="margin-15-b">Social</h4>
+                                    <div class="ease-1st-btn">
+                                        <a class="btn btn-lg btn-square" href="#" target="_blank"><i class="icon icon-md icon-social-facebook no-opacity"></i></a>
+                                        <a class="btn btn-lg btn-square" href="#" target="_blank"><i class="icon icon-md icon-social-twitter no-opacity"></i></a>
+                                        <a class="btn btn-lg btn-square" href="#" target="_blank"><i class="icon icon-md icon-social-instagram no-opacity"></i></a>
+                                        <a class="btn btn-lg btn-square" href="#" target="_blank"><i class="icon icon-md icon-social-youtube no-opacity"></i></a>
+                                        <a class="btn btn-lg btn-square" href="#" target="_blank"><i class="icon icon-md icon-social-linkedin no-opacity"></i></a>
+                                    </div>
+            
+                                    <span class="sp30"></span>
+            
+                                    <h4 class="margin-15-b">Sign Up for Email</h4>
+                                    <p>Get in on the best deals, new products and gardening tips.</p>
+                                    <form action="#">
+            
+                                        <div class="form-holder">
+                                            <div class="row row-no-padding ease-2nd-form">
+                                                <div class="col-static no-responsive">
+                                                    <div class="row row-no-padding">
+                                                        <div class="text text-lg no-bordered ui-x-light ease-form">
+                                                            <input class="required" type="email" maxlength="4" placeholder="your@email.com">
+                                                        </div>
+                                                    </div>
+                                                    <div class="static-42">
+                                                        <button class="btn btn-lg btn-square theme-farmer2 ui-dark ease-btn">
+                                                            <i class="icon icon-md icon-arrow-up"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="required-msg theme-red ui-dark">Please, enter a valid email.</p>
+            
+                                    </form>
+                                </div>    
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer: end -->
         
     </main>
 
