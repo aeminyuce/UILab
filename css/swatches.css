@@ -4,8 +4,8 @@
 .ui-dark,.ui-dark .icon:not([class*="ui-"]),.ui-dark a:not([class*="ui-"]),.ui-dark button:not([class*="ui-"]) { color: #fff; }
 .ui-x-dark,.ui-x-dark .icon:not([class*="ui-"]),.ui-x-dark a:not([class*="ui-"]),.ui-x-dark button:not([class*="ui-"]) { color: #fff; }
 
-.x-light-ui,.x-light-ui .icon:not([class*="ui-"]),.x-light-ui a:not([class*="ui-"]),.x-light-ui button:not([class*="ui-"]) { color: rgba(255,255,255,.65) !important; }
-.light-ui,.light-ui .icon:not([class*="ui-"]),.light-ui a:not([class*="ui-"]),.light-ui button:not([class*="ui-"]) { color: rgba(255,255,255,.45) !important; }
+.x-light-ui,.x-light-ui .icon:not([class*="ui-"]),.x-light-ui a:not([class*="ui-"]),.x-light-ui button:not([class*="ui-"]) { color: rgba(255,255,255,.7) !important; }
+.light-ui,.light-ui .icon:not([class*="ui-"]),.light-ui a:not([class*="ui-"]),.light-ui button:not([class*="ui-"]) { color: rgba(255,255,255,.5) !important; }
 .dark-ui,.dark-ui .icon:not([class*="ui-"]),.dark-ui a:not([class*="ui-"]),.dark-ui button:not([class*="ui-"]) { color: rgba(0,0,0,.45) !important; }
 .x-dark-ui,.x-dark-ui .icon:not([class*="ui-"]),.x-dark-ui a:not([class*="ui-"]),.x-dark-ui button:not([class*="ui-"]) { color: rgba(0,0,0,.65) !important; }
 
