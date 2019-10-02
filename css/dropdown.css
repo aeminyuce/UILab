@@ -6,12 +6,16 @@
 .dropdown { vertical-align: middle; display: inline-block; position: relative; }
 .dropdown.open { z-index: 19; }
 .dropdown > .btn:not(.btn-square) { width: 100%; }
+.dropdown.open .btn-ghost { background-color: rgba(0,0,0,.075) !important; }
+
 .dropdown.open-ease > .btn .icon-toggle { transform: scaleY(-1); }
+.mobile-menu .dropdown .icon-toggle { position: absolute; top: 50%; right: 10px; transform: translateY(-50%); }
+.mobile-menu .dropdown.open-ease .icon-toggle { position: absolute; top: 50%; right: 10px; transform: translateY(-50%) scaleY(-1); }
+
 .dropdown:not(.open) .content { display: none; }
 .dropdown:not(.open-ease) .content { opacity: 0; }
 .dropdown:not(.submenu-top) .content { margin-top: 1px; }
 .dropdown.submenu-top .content { margin-bottom: 1px; bottom: 100%; }
-.dropdown.open .btn-ghost { background-color: rgba(0,0,0,.075) !important; }
 
 .dropdown .content { max-width: 744px; background-color: #fff; position: absolute; z-index: 10; }
 .dropdown ul.content { list-style: none; padding: 0; margin-bottom: 0; }
