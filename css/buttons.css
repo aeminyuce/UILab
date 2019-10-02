@@ -76,6 +76,13 @@ html:not(.mobile) .btn.btn-ghost:not([class*="ui-"]):not(.btn-passive):not(.swat
 .btn .loading-label { position: relative; z-index: 2; }
 .btn.loading .loading-label { opacity: .3 !important; }
 
+@media (max-width: 959px) {
+    .btn-md-responsive { width: 100% !important; display: block; }
+    .btn-md-responsive:not(:last-child) { margin-bottom: 10px; }
+    .mobile-menu .btn-md-responsive:not(:last-child) { margin-bottom: 2px; }
+
+    .btn-square:not(.btn-responsive):not(.btn-md-responsive) { padding-left: 0 !important; padding-right: 0 !important; }
+}
 @media (min-width: 768px) {
     .btn-square { padding-left: 0 !important; padding-right: 0 !important; }
 }
