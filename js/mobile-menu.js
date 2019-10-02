@@ -68,19 +68,19 @@ var mobileMenu = {
 
         var screenLimits, max, panel;
 
-        screenLimits = function () {
+        screenLimits = function (size) {
 
-            if (mobileMenu.visibleLeft === 'lg') {
-                max = 1200;
+            if (size === 'lg') {
+                return 1200;
 
-            } else if (mobileMenu.visibleLeft === 'md') {
-                max = 960;
+            } else if (size === 'md') {
+                return 960;
 
-            } else if (mobileMenu.visibleLeft === 'sm') {
-                max = 768;
+            } else if (size === 'sm') {
+                return 768;
 
-            } else if (mobileMenu.visibleLeft === 'xs') {
-                max = 481;
+            } else if (size === 'xs') {
+                return 481;
             }
 
         };
@@ -89,9 +89,9 @@ var mobileMenu = {
 
             if (visibleArr.indexOf(mobileMenu.visibleLeft) > -1) {
 
-                screenLimits();
                 panel = selector('.mobile-menu.show-left');
 
+                max = screenLimits(mobileMenu.visibleLeft);
                 if (screen.width >= max) { closeMobileMenu(panel); }
 
             }
@@ -100,9 +100,9 @@ var mobileMenu = {
 
             if (visibleArr.indexOf(mobileMenu.visibleRight) > -1) {
 
-                screenLimits();
                 panel = selector('.mobile-menu.show-right');
 
+                max = screenLimits(mobileMenu.visibleRight);                                
                 if (screen.width >= max) { closeMobileMenu(panel); }
 
             }
