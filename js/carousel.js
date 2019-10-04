@@ -346,22 +346,6 @@ var carousel = {
 
                 getSlideSpeed(slider, contentsEase[i], i); // get carousel slide speed
 
-                // wait auto slider until slide completed
-                if (autoSlider[i] !== undefined) {
-
-                    clearInterval(autoSlider[i]);
-                    clearTimeout(autoTimeouts[i]);
-
-                    autoTimeouts[i] = setTimeout(function () {
-
-                        autoSlider[i] = setInterval(function () {
-                            carouselNav(that, 'next');
-                        }, autoTimer[i]);
-
-                    }, contentsEase[i]);
-
-                }
-
                 // detect carousel animates
                 if (contents.length > 1 && contents.length !== col) { // stop reloading animates when content length is not enough
 
