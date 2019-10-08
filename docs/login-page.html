@@ -53,8 +53,6 @@
     <style>
         html,body { height: 100%; }
 
-        .forms-holder,.content-holder { min-height: 560px; }
-
         .content-holder { background-image: linear-gradient(110deg, #624494, #080550, #6f113e); }
         .ie9 .content-holder { background-color: #624494; }
         .content-holder .icon { font-size: 96px; }
@@ -66,7 +64,7 @@
         .content-btn { min-width: 26%; background-image: linear-gradient(130deg, #7adc81,#23a72e); }
         .ie9 .content-btn {background-color: #23a72e; }
         
-        .content-container > .icon { font-size: 160px; position: absolute; top: 12%; right: 8%; transform: rotate(-12deg); }
+        .content-container > .icon { font-size: 160px; position: absolute; transform: rotate(-12deg); }
 
         .content-icons .icon { position: absolute; }
         .content-icons .icon:nth-child(1) { font-size: 52px; bottom: 112px; left: 82px; opacity: .25; transform: rotate(12deg); }
@@ -76,17 +74,22 @@
         .content-icons .icon:nth-child(5) { font-size: 246px; top: 48px; right: 29%; opacity: .1; transform: rotate(12deg); }
 
         @media (min-width: 768px) {
+            .forms-holder,.content-holder { min-height: 560px; }
             .form-container { background-color: #f6f4fc; padding: 8% 0 8% 10% !important; }
             .content-container { background-image: linear-gradient(110deg, #e2d2ff, #f0e2f9); padding: 8% 10% 8% 0 !important; }
             .ie9 .content-container { background-color: #f0e2f9; }
 
             .forms-holder,.content-holder > .set-absolute { padding: 10%; }
+            .content-container > .icon { top: 12%; right: 8%; }
         }
         @media (max-width: 767px) {
             body { background-color: #e2d2ff; }
-            .form-container { padding: 50px 10px !important; }
+            .content-holder { min-height: 320px; }
+            .form-container { padding: 50px 10px 0 10px !important; }
+            .content-container { padding: 0 10px 50px 10px !important; }
 
             .forms-holder,.content-holder > .set-absolute { padding: 30px; }
+            .content-container > .icon { top: -10px; right: 0; }
         }
     </style>
 
@@ -141,7 +144,7 @@
                 </div>
 
             </div>
-            <div class="content-container col-7 col-md-6 sm-responsive hidden-sm">
+            <div class="content-container col-7 col-md-6 sm-responsive set-relative">
 
                 <div class="content-holder align-center no-overflow set-relative ui-dark shadow-lg">
 
