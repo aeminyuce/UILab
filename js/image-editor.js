@@ -121,7 +121,7 @@ var imageEditor = {
                                             '<input type="checkbox">' +
                                             '<i class="ease-form-custom"></i>' +
                                         '</span>' +
-                                        '<b class="name">' + allowed[i].name + '</b>' +
+                                        '<span class="name">' + allowed[i].name + '</span>' +
                                     '</label>' +
                                     '<span class="img"><img src="' + data + '" alt=""></span>' +
                                     '<span class="size">' + size + 'kb</span>' +
