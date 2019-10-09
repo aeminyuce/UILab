@@ -5,6 +5,7 @@
 
 .dropdown { vertical-align: middle; display: inline-block; position: relative; }
 .dropdown.open { z-index: 19; }
+.dropdown > .btn { display: block; }
 .dropdown > .btn:not(.btn-square) { width: 100%; }
 .dropdown.open .btn-ghost { background-color: rgba(0,0,0,.075) !important; }
 
@@ -31,10 +32,10 @@
 html:not(.mobile) .dropdown ul.content > li:hover { background-color: rgba(0,0,0,.05); background-clip: padding-box; }
 .dropdown ul.content > li.sep { height: 4px; background-color: rgba(0,0,0,.045); }
 
-.dropdown ul.content > li,.dropdown ul.content > li a,.dropdown ul.content > li > label { font-size: 15px; line-height: 24px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.dropdown ul.content > li,.dropdown ul.content > li a,.dropdown ul.content > li > label { font-size: 15px; line-height: 24px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; display: block; }
 .dropdown ul.content:not(.has-grid) > li,.dropdown ul.content:not(.has-grid) > li * { text-align: left !important; }
-.dropdown ul.content > li > a { line-height: normal; padding: 10px; margin: -10px; display: block; }
-.dropdown ul.content > li > label { padding: 10px; margin: -10px; overflow: hidden; display: block; position: relative;  cursor: pointer; }
+.dropdown ul.content > li > a { line-height: normal; padding: 10px; margin: -10px; }
+.dropdown ul.content > li > label { padding: 10px; margin: -10px; overflow: hidden; position: relative; cursor: pointer; }
 .dropdown ul.content > li.selected > label { background-color: rgba(0,0,0,.075); }
 .dropdown ul.content > li > label input { position: absolute; left: -20000px; }
 
