@@ -1,5 +1,3 @@
-![UI Lab Responsive Design System](docs/images/uilab-cover.jpg)
-
 # UI Lab
 
 CSS & JavaScript powered responsive design system.
