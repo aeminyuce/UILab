@@ -17,7 +17,7 @@ var modal = {
 
     var
         mobile,
-        pageYPosition,
+        pageYPos,
 
         re = new RegExp('\\s+\\s'),
         rex = new RegExp('^\\s|\\s+$');
@@ -54,7 +54,7 @@ var modal = {
                 events.removeClass(bg, 'open-ease');
 
                 events.removeClass(document, 'modal-bg-opened');
-                if (mobile) { window.scrollTo(0, pageYPosition); }
+                if (mobile) { window.scrollTo(0, pageYPos); }
 
                 setTimeout(function () {
 
@@ -90,7 +90,7 @@ var modal = {
                 mobile = true;
             }
             if (mobile) {
-                pageYPosition = window.pageYOffset; // get current scroll-y position
+                pageYPos = window.pageYOffset; // get current scroll-y position
             }
 
             // check closable

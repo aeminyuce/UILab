@@ -23,10 +23,8 @@ var alerts = {
 
     var
         mobile,
-        pageYPosition,
-
+        pageYPos,
         cancelCloseDialog,
-
         messageQueue = [],
 
         re = new RegExp('\\s+\\s'),
@@ -52,7 +50,7 @@ var alerts = {
                 events.removeClass(document, 'alerts-bg-opened');
 
                 if (mobile) {
-                    window.scrollTo(0, pageYPosition);
+                    window.scrollTo(0, pageYPos);
                 }
 
                 setTimeout(function () {
@@ -87,7 +85,7 @@ var alerts = {
             }
 
             if (mobile) {
-                pageYPosition = window.pageYOffset; // get current scroll-y position
+                pageYPos = window.pageYOffset; // get current scroll-y position
             }
 
             closeBtn = '';

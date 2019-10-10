@@ -17,7 +17,7 @@ var mobileMenu = {
 
     var
         temp,
-        pageYPosition,
+        pageYPos,
         panelOpened = '',
         visibleArr = [];
 
@@ -31,7 +31,7 @@ var mobileMenu = {
         events.removeClass(bg, 'open-ease');
         events.removeClass(document, 'mobile-menu-opened mobile-menu-opened-before');
 
-        window.scrollTo(0, pageYPosition);
+        window.scrollTo(0, pageYPos);
 
         setTimeout(function () {
 
@@ -173,7 +173,7 @@ var mobileMenu = {
             } else { return; }
 
             panelOpened = position;
-            pageYPosition = window.pageYOffset;
+            pageYPos = window.pageYOffset; // get current scroll-y position
 
             panel = selector('.mobile-menu.show-' + position);
             selector('.mobile-menu-content', panel).appendChild(temp);
