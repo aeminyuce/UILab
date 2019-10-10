@@ -20,7 +20,7 @@ var photoGallery = {
 
     var
         imgTouchmove,
-        pageTouchmove,
+        pageTouchmove = false,
         pageTouchmoveTimer;
 
     photoGallery.Start = function () {
@@ -127,15 +127,8 @@ var photoGallery = {
             }
 
             // get page scroll position
-            if (window.innerWidth < 960) {
-
-                if (mobile) {
-                    pageYPos = document.body.scrollTop; // ios
-
-                } else {
-                    pageYPos = document.documentElement.scrollTop; // android
-                }
-
+            if (mobile && window.innerWidth < 960) {
+                pageYPos = window.pageYOffset; // get current scroll-y position
             }
 
             // get images and titles
@@ -279,15 +272,8 @@ var photoGallery = {
                 events.removeClass(preview, 'open-ease');
                 events.removeClass(document, 'photo-preview-opened');
 
-                if (window.innerWidth < 960) {
-
-                    if (mobile) {
-                        document.body.scrollTop = pageYPos; // ios
-
-                    } else {
-                        document.documentElement.scrollTop = pageYPos; // andorid
-                    }
-
+                if (mobile && window.innerWidth < 960) {
+                    window.scrollTo(0, pageYPos);
                 }
 
                 loadedImages = [];
@@ -612,19 +598,36 @@ var photoGallery = {
         }
 
         // Events
-        events.on(document, 'touchmove touchend', '.photo-gallery a.img', function (e) {
+        events.on(document, 'touchmove.photogallery touchend', '.photo-gallery a.img', function (e) {
 
             e.preventDefault();
-
-            pageTouchmove = false;
-            if (e.type === 'touchmove') { pageTouchmove = true; }
+            if (e.type === 'touchmove.photogallery') { pageTouchmove = true; }            
 
             var that = this;
-            if (e.type === 'touchend' && pageTouchmove === false) {
+            if (e.type === 'touchend') {
 
                 clearTimeout(pageTouchmoveTimer);
-                pageTouchmoveTimer = setTimeout(function () { galleryFnc(e, that); }, 50);
+                pageTouchmoveTimer = setTimeout(function () {
 
+                    if (pageTouchmove === false) {
+                        
+                        if (events.hasClass(this, 'has-info')) {
+
+                            if (mobile && events.hasClass(this, 'hover-touch')) {
+                                galleryFnc(e, that);
+        
+                            } else { return; }
+        
+                        } else {
+                            galleryFnc(e, that);
+                        }
+
+                    }
+
+                    pageTouchmove = false;
+
+                }, 50);
+                
             }
 
         });
