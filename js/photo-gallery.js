@@ -601,7 +601,7 @@ var photoGallery = {
         events.on(document, 'touchmove.photogallery touchend', '.photo-gallery a.img', function (e) {
 
             e.preventDefault();
-            if (e.type === 'touchmove.photogallery') { pageTouchmove = true; }            
+            if (e.type === 'touchmove') { pageTouchmove = true; }            
 
             var that = this;
             if (e.type === 'touchend') {
