@@ -134,7 +134,7 @@
                 function scroller() {
 
                     var opened = selector('.open .messages')[0];
-                    opened.scrollTo(0, opened.offsetHeight);
+                    opened.scrollTop = opened.offsetHeight; // IE, EDGE: scrollTo() not supported for div element
 
                 }
 
