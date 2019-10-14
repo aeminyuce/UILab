@@ -47,7 +47,7 @@ html:not(.portrait) .visible-portrait { display: none !important; }
 .portrait .hidden-portrait { display: none !important; }
 
 .bg-white:not([class*="ui-"]) { background-color: #fff !important; }
-.bg-black:not([class*="ui-"]) { background-color: #2a2b2b !important; }
+.bg-black:not([class*="ui-"]) { background-color: #0e0e0e !important; }
 
 @media print {
     .hidden-print { display: none !important; }
