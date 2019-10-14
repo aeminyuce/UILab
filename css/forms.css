@@ -109,7 +109,7 @@ html:not(.mobile) .file:hover .btn { background-color: rgba(0,0,0,.15); }
 /* do not group */
 
 .form-focus { border-color: rgba(0,0,0,.35); }
-.form-focus:not(.form-readonly) { background-color: #f6f6f6 !important; box-shadow: inset 0 0 1px rgba(0,0,0,.075); }
+.form-focus:not(.form-readonly) { background-color: #f9f9f9 !important; box-shadow: inset 0 0 1px rgba(0,0,0,.075); }
 .form-focus > input,.form-focus > select,.form-focus > textarea,.form-focus > .icon:not([class*="ui-"]) { color: #000 !important; }
 .form-focus.text-icon > .icon,.form-focus.select > .icon,.mobile .form-focus.select-multi > .icon { opacity: 1; }
 
