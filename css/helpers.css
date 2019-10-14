@@ -16,6 +16,7 @@
 .set-relative { position: relative !important; }
 .set-absolute { position: absolute !important; }
 .set-fixed { position: fixed; }
+.set-all { top: 0; right: 0; bottom: 0; left: 0; }
 .set-top { top: 0; }
 .set-right { right: 0; }
 .set-bottom { bottom: 0; }
@@ -44,6 +45,9 @@ html:not(.portrait) .visible-portrait { display: none !important; }
 
 .landscape .hidden-landscape { display: none !important; }
 .portrait .hidden-portrait { display: none !important; }
+
+.bg-white:not([class*="ui-"]) { background-color: #fff !important; }
+.bg-black:not([class*="ui-"]) { background-color: #2a2b2b !important; }
 
 @media print {
     .hidden-print { display: none !important; }
