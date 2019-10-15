@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UI Lab, Admin Panel 2</title>
+    <meta name="keywords" content="uilab, responsive, design system, css, javascript, admin panel">
+    <meta name="description" content="CSS & JavaScript powered responsive design system." />
+    <meta name="author" content="Ahmet Emin Yüce"/>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
+
+    <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/reset.css" />
+
+    <link rel="stylesheet" href="../css/alignments.css" />
+    <link rel="stylesheet" href="../css/buttons.css" />
+    <link rel="stylesheet" href="../css/borders.css" />
+    <link rel="stylesheet" href="../css/dropdown.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <link rel="stylesheet" href="../css/form-icons.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/helpers.css" />
+    <link rel="stylesheet" href="../css/icons.css" />
+    <link rel="stylesheet" href="../css/icons-notifiers.css" />
+    <link rel="stylesheet" href="../css/line-charts.css" />
+    <link rel="stylesheet" href="../css/listings.css" />
+    <link rel="stylesheet" href="../css/margins.css" />
+    <link rel="stylesheet" href="../css/mobile-menu.css" />
+    <link rel="stylesheet" href="../css/paddings.css" />
+    <link rel="stylesheet" href="../css/photo-images.css" />
+    <link rel="stylesheet" href="../css/portlets.css" />
+    <link rel="stylesheet" href="../css/scrollbar.css" />
+    <link rel="stylesheet" href="../css/static-grid.css" />
+    <link rel="stylesheet" href="../css/tabs.css" />
+    <link rel="stylesheet" href="../css/tables.css" />
+    <link rel="stylesheet" href="../css/transitions.css" />
+    <link rel="stylesheet" href="../css/typography.css" />
+    <link rel="stylesheet" href="../css/swatches.css" />
+    <link rel="stylesheet" href="../css/tooltip.css" />
+    <link rel="stylesheet" href="../css/top-button.css" />
+
+    <!-- Javascript Tools -->
+    <script src="../js/selector.js"></script>
+    <script src="../js/events.js"></script>
+
+    <script src="../js/ajax.js"></script>
+    <script src="../js/dropdown.js"></script>
+    <script src="../js/forms.js"></script>
+    <script src="../js/mobile-menu.js"></script>
+    <script src="../js/portlets.js"></script>
+    <script src="../js/static-grid.js"></script>
+    <script src="../js/swatches.js"></script>
+    <script src="../js/tabs.js"></script>
+    <script src="../js/top-button.js"></script>
+    <script src="../js/tooltip.js"></script>
+    <script src="../js/transitions.js"></script>
+    <script src="../js/user-agents.js"></script>
+
+    <!-- font icons CSS -->
+    <link rel="stylesheet" href="icons/font-icons/fill/font-icons.css" />
+
+    <!-- custom CSS -->
+    <style>
+        body { background-color: #fefefe; }
+
+        .theme-panel.ui-x-light,.theme-panel .ui-x-light:not([class*="theme-"]) { background-color: #c2c4ee; }
+        .theme-panel.ui-light,.theme-panel .ui-light:not([class*="theme-"]) { background-color: #a4a8f3; }
+        .theme-panel.ui-dark,.theme-panel .ui-dark:not([class*="theme-"]) { background-color: #2f3480; }
+        .theme-panel.ui-text,.theme-panel .ui-text { color: #5056b3; }
+        .theme-panel.ui-border,.theme-panel .ui-border { border-color: #2f3480; }
+        .theme-panel.ui-x-dark,.theme-panel .ui-x-dark:not([class*="theme-"]) { background-color: #282c71; }
+
+        .theme-panel2.ui-x-light,.theme-panel2 .ui-x-light:not([class*="theme-"]) { background-color: #fddee4; }
+        .theme-panel2.ui-light,.theme-panel2 .ui-light:not([class*="theme-"]) { background-color: #f3aebb; }
+        .theme-panel2.ui-dark,.theme-panel2 .ui-dark:not([class*="theme-"]),.notifier:after { background-color: #ff103b; }
+        .theme-panel2.ui-text,.theme-panel2 .ui-text { color: #f33f5f; }
+        .theme-panel2.ui-border,.theme-panel2 .ui-border { border-color: #ff103b; }
+        .theme-panel2.ui-x-dark,.theme-panel2 .ui-x-dark:not([class*="theme-"]) { background-color: #cf1335; }
+    </style>
+
+    <!-- custom js -->
+    <script>
+        tooltip.theme = "theme-panel2 ui-dark";
+    </script>
+
+</head>
+
+<body>
+
+    <!-- documentation examples -->
+    <main class="container no-gutter">
+        <div class="col-static sm-responsive theme-panel">
+
+            <!-- sidebar -->
+            <div class="static-250 set-relative hidden-md">
+                <div class="static-250 full-height set-fixed set-left ui-dark v-scroll scrollbar">
+
+                    <div class="padding-15-v">
+                        <img class="img-responsive" src="img/logo-udashboard.png" alt="Logo">
+                    </div>
+
+                    <div class="btn-tabs align-left theme-panel2 ease-1st-btn add-mobile-menu-left" data-classes="ui-text">
+
+                        <button class="btn btn-lg btn-ghost padding-15-h block">
+                            <i class="icon icon-md icon-pie-chart margin-15-r no-opacity"></i>
+                            Dashboard
+                        </button>
+
+                        <span class="sp5"></span>
+
+                        <button class="btn-tab btn-toggle btn btn-lg btn-ghost padding-15-h block ui-text active">
+                            <i class="icon icon-md icon-customer margin-15-r no-opacity"></i>
+                            <i class="icon right icon-toggle icon-xs margin-5-v icon-angle-down ease-layout"></i>
+                            Employees
+                        </button>
+                        <div class="tab-content padding-15-v padding-3-l ease-1st-btn open">
+                            <ul class="list-spacer-15 padding-20-l ease-2nd-layout">
+                                <li><a class="opacity" href="#">Managers</a></li>
+                                <li><a class="opacity" href="#">Team Leaders</a></li>
+                                <li><a class="opacity" href="#">Teams</a></li>
+                                <li><a class="opacity" href="#">Human Resources</a></li>
+                                <li><a class="opacity" href="#">Annual Leaves</a></li>
+                            </ul>
+                        </div>
+                        
+                        <button class="btn-tab btn-toggle btn btn-lg btn-ghost padding-15-h block">
+                            <i class="icon icon-md icon-coins margin-15-r no-opacity"></i>
+                            <i class="icon right icon-toggle icon-xs margin-5-v icon-angle-down ease-layout"></i>
+                            Payments
+                        </button>
+                        <div class="tab-content padding-15-v padding-3-l ease-1st-btn">
+                        <ul class="list-spacer-15 padding-20-l ease-2nd-layout">
+                                <li><a class="opacity" href="#">New Payment</a></li>
+                                <li><a class="opacity" href="#">Recent Payments</a></li>
+                                <li><a class="opacity" href="#">Last Month</a></li>
+                                <li><a class="opacity" href="#">Last Year</a></li>
+                                <li><a class="opacity" href="#">Annual Profits</a></li>
+                            </ul>
+                        </div>
+                        
+                        <button class="btn-tab btn-toggle btn btn-lg btn-ghost padding-15-h block">
+                            <i class="icon icon-md icon-calendar margin-15-r no-opacity"></i>
+                            <i class="icon right icon-toggle icon-xs margin-5-v icon-angle-down ease-layout"></i>
+                            Events
+                        </button>
+                        <div class="tab-content padding-15-v padding-3-l ease-1st-btn">
+                            <ul class="list-spacer-15 padding-20-l ease-2nd-layout">
+                                <li><a class="opacity" href="#">New Event</a></li>
+                                <li><a class="opacity" href="#">Recent Activities</a></li>
+                                <li><a class="opacity" href="#">This Week</a></li>
+                                <li><a class="opacity" href="#">Statistics</a></li>
+                            </ul>
+                        </div>
+                        
+                        <button class="btn-tab btn-toggle btn btn-lg btn-ghost padding-15-h block">
+                            <i class="icon icon-md icon-files margin-15-r no-opacity"></i>
+                            <i class="icon right icon-toggle icon-xs margin-5-v icon-angle-down ease-layout"></i>
+                            Documents
+                        </button>
+                        <div class="tab-content padding-15-v padding-3-l ease-1st-btn">
+                            <ul class="list-spacer-15 padding-20-l ease-2nd-layout">
+                                <li><a class="opacity" href="#">New Document</a></li>
+                                <li><a class="opacity" href="#">Members</a></li>
+                                <li><a class="opacity" href="#">Groups</a></li>
+                                <li><a class="opacity" href="#">Projects</a></li>
+                                <li><a class="opacity" href="#">Other Files</a></li>
+                                <li><a class="opacity" href="#">Archive</a></li>
+                            </ul>
+                        </div>
+                        
+                        <button class="btn-tab btn-toggle btn btn-lg btn-ghost padding-15-h block">
+                            <i class="icon icon-md icon-chart-outcome margin-15-r no-opacity"></i>
+                            <i class="icon right icon-toggle icon-xs margin-5-v icon-angle-down ease-layout"></i>
+                            Statistics
+                        </button>
+                        <div class="tab-content padding-15-v padding-3-l ease-1st-btn">
+                            <ul class="list-spacer-15 padding-20-l ease-2nd-layout">
+                                <li><a class="opacity" href="#">Sales</a></li>
+                                <li><a class="opacity" href="#">Profit</a></li>
+                                <li><a class="opacity" href="#">Registrations</a></li>
+                                <li><a class="opacity" href="#">Sponsors</a></li>
+                            </ul>
+                        </div>
+                        
+                        <button class="btn-tab btn-toggle btn btn-lg btn-ghost padding-15-h block">
+                            <i class="icon icon-md icon-doc margin-15-r no-opacity"></i>
+                            <i class="icon right icon-toggle icon-xs margin-5-v icon-angle-down ease-layout"></i>
+                            Reports
+                        </button>
+                        <div class="tab-content padding-15-v padding-3-l ease-1st-btn">
+                            <ul class="list-spacer-15 padding-20-l ease-2nd-layout">
+                                <li><a class="opacity" href="#">New Report</a></li>
+                                <li><a class="opacity" href="#">Market Research</a></li>
+                                <li><a class="opacity" href="#">Industry Data</a></li>
+                                <li><a class="opacity" href="#">Finance Report</a></li>
+                                <li><a class="opacity" href="#">Gross Profit</a></li>
+                                <li><a class="opacity" href="#">Cumulative Losses</a></li>
+                            </ul>
+                        </div>
+                        
+                        <button class="btn-tab btn-toggle btn btn-lg btn-ghost padding-15-h block">
+                            <i class="icon icon-md icon-basket margin-15-r no-opacity"></i>
+                            <i class="icon right icon-toggle icon-xs margin-5-v icon-angle-down ease-layout"></i>
+                            Orders
+                        </button>
+                        <div class="tab-content padding-15-v padding-3-l ease-1st-btn">
+                            <ul class="list-spacer-15 padding-20-l ease-2nd-layout">
+                                <li><a class="opacity" href="#">New Order</a></li>
+                                <li><a class="opacity" href="#">Activity</a></li>
+                                <li><a class="opacity" href="#">Delivered</a></li>
+                                <li><a class="opacity" href="#">Dispatched</a></li>
+                            </ul>
+                        </div>
+
+                        <span class="sp15"></span>
+
+                        <button class="btn btn-lg btn-ghost padding-15-h x-light-ui block">
+                            <i class="icon icon-md icon-user-accepted margin-15-r no-opacity"></i>
+                            Administration
+                        </button>
+                        <button class="btn btn-lg btn-ghost padding-15-h x-light-ui block">
+                            <i class="icon icon-md icon-clock margin-15-r no-opacity"></i>
+                            Recent History
+                        </button>
+                        <button class="btn btn-lg btn-ghost padding-15-h x-light-ui block">
+                            <i class="icon icon-md icon-settings margin-15-r no-opacity"></i>
+                            Tools
+                        </button>
+
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="row row-lg-padding padding-15 sm-no-padding">
+
+                <div class="col-12">
+
+                    <div class="col-static md-responsive">
+                        <div class="xl-static-600 lg-static-400 static-250 order-md-last sm-no-padding">
+
+                            <span class="sp10 visible-md"></span>
+                            <div class="text text-lg text-icon text-icon-lg text-icon-both has-clear rounded no-bordered inner-shadow-sm theme-gray ui-x-light ease-form">
+                                <i class="icon icon-sm icon-search text-icon-left margin-5-l ease-layout"></i>
+                                <button class="clear-form icon icon-xs icon-remove text-icon-right margin-5-r ease-layout"></button>
+                                <input type="text" placeholder="Search">
+                            </div>
+                            
+                        </div>
+                        <div class="row row-no-padding">
+                            <div class="col-12 x-dark align-right">
+
+                                <div class="align-center ease-1st-btn margin-5-r left visible-md">
+                                    <button class="btn btn-square btn-lg btn-ghost circle show-mobile-menu-left">
+                                        <i class="icon icon-md icon-bars-left no-opacity"></i>
+                                    </button>
+                                </div>
+                                <div class="left visible-md">
+                                    <img class="img-photo img-photo-sm circle" src="img/logo-udashboard-mini.png" alt="">
+                                </div>
+
+                                <span class="align-center">
+                                    <button class="btn btn-square btn-lg btn-ghost circle ease-btn" data-tooltip="l" data-only="desktop" title="Chat">
+                                        <i class="icon icon-md icon-message notifier no-opacity"></i>
+                                    </button>
+                                    <span class="dropdown submenu-center">
+                                        <button class="btn btn-square btn-lg btn-ghost circle ease-btn" data-tooltip="r" data-only="desktop" title="Notification Center">
+                                            <i class="icon icon-md icon-bell notifier no-opacity"></i>
+                                        </button>
+                                        <ul class="content has-grid align-center rounded shadow-lg ease-dropdown">
+                                            <li><a href="#"><i class="icon icon-lg notifier icon-bell"></i>Alerts</a></li>
+                                            <li><a href="#"><i class="icon icon-lg notifier icon-write"></i>Notes</a></li>
+                                            <li><a href="#"><i class="icon icon-lg notifier icon-hourglass-finish"></i>Delayed</a></li>
+                                            <li><a href="#"><i class="icon icon-lg notifier icon-hourglass-start"></i>Waiting</a></li>
+                                            <li><a href="#"><i class="icon icon-lg icon-favorite-fill"></i>Favorites</a></li>
+                                            <li><a href="#"><i class="icon icon-lg icon-history"></i>History</a></li>
+                                        </ul>
+                                    </span>
+                                </span>
+
+                                <div class="align-center ease-1st-btn right margin-5-l visible-md">
+                                    <button class="btn btn-square btn-lg btn-ghost circle show-mobile-menu-right">
+                                        <i class="icon icon-md icon-bars-right no-opacity"></i>
+                                    </button>
+                                </div>
+                                <div class="right margin-10-l">
+                                    <span class="dropdown submenu-center margin-10-l xs-no-margin right">
+                                        <button class="btn btn-lg btn-square no-padding circle scale-more ease-layout">
+                                            <img class="img-photo img-photo-sm circle" src="img/profile-image.jpg" alt="">
+                                        </button>
+                                        <ul class="content has-grid align-center rounded shadow-lg ease-dropdown">
+                                            <li><a href="#"><i class="icon icon-lg icon-user"></i>Profile</a></li>
+                                            <li><a href="#"><i class="icon icon-lg icon-calendar"></i>Calendar</a></li>
+                                            <li><a href="#"><i class="icon icon-lg icon-lock"></i>Lock Screen</a></li>
+                                            <li><a href="#"><i class="icon icon-lg icon-key"></i>Change Password</a></li>
+                                            <li class="sep"></li>
+                                            <li><a href="#"><i class="icon icon-lg icon-settings"></i>Settings</a></li>
+                                            <li><a href="#"><i class="icon icon-lg theme-panel2 ui-text icon-logout"></i>Logout</a></li>
+                                        </ul>
+                                    </span>
+                                    <span class="margin-3-t inline-block hidden-xs">aeminyuce</span>
+                                    <span class="small x-dark block hidden-xs">Premium</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 no-padding-t">
+
+                    <div class="portlet padding-15 rounded shadow">
+                        lorem ipsum dolor sit amet.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- mobile menu -->
+    <div class="mobile-menu show-left theme-panel ui-dark ease-layout ease-slow ease-in-out ">
+        <button class="btn btn-square btn-lg btn-ghost rounded ease-btn close-mobile-menu">
+            <i class="icon icon-sm icon-remove no-opacity"></i>
+        </button>
+        <div class="mobile-menu-title">
+            <div class="x-large padding-10-v padding-15-h">Main Menu</div>
+        </div>
+        <div class="mobile-menu-content no-padding ui-x-dark v-scroll"></div>
+    </div>
+
+</body>
+</html>
