@@ -76,7 +76,7 @@ var dropdown = {};
                     list = selector('.content', parent)[0];
 
                     if (screen.width < 481 && !events.hasClass(list, 'has-grid')) {
-                        list.style.minWidth = parent.offsetWidth + 'px';
+                        list.style.minWidth = parent.parentNode.offsetWidth + 'px';
                     }
 
                     listStyles = list.style.length;
