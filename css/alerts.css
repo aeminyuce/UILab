@@ -53,9 +53,6 @@ html:not(.mobile) .alerts-msg:hover { opacity: .9; }
 .close-alert { line-height: 0; background: transparent; padding: 5px; border: 0; position: absolute; top: 5px; right: 5px; z-index: 1; opacity: .45; cursor: pointer; }
 html:not(.mobile) .close-alert:hover { opacity: .75; }
 
-@media (max-width: 959px) {
-    .alerts-bg { background-color: #111; }
-}
 @media (min-width: 768px) {
     .dialog-msg { padding: 30px; }
 }

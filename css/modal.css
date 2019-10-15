@@ -63,6 +63,5 @@ html:not(.mobile) .modal-content.fullscreen .close-modal:hover { background-colo
     .modal-content.inline { max-width: 960px; }
 }
 @media (max-width: 959px) {
-    .modal-bg { background-color: #111; }
     .modal-content.inline { max-width: 90%; }
 }

@@ -63,8 +63,6 @@ html:not(.mobile) .preview-prev:hover,html:not(.mobile) .preview-next:hover { ba
 }
 @media (max-width: 959px) {
     .photo-gallery > li { width: 25%; }
-
-    .photo-preview { background-color: #111; }
     .photo-preview > img:not(.cover-h):not(.preview-zoom) { width: 100%; height: auto; }
 }
 @media (min-width: 768px) {
