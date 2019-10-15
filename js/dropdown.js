@@ -76,7 +76,7 @@ var dropdown = {};
                     list = selector('.content', parent)[0];
 
                     if (screen.width < 481 && !events.hasClass(list, 'has-grid')) {
-                        list.style.minWidth = parent.parentNode.offsetWidth + 'px';
+                        list.style.minWidth = parent.offsetWidth + 'px';
                     }
 
                     listStyles = list.style.length;
@@ -84,8 +84,11 @@ var dropdown = {};
 
                     if (events.hasClass(parent, 'submenu-left') || (offset.left + listWidth + 15) > window.innerWidth) { // 15px: scrollbar size
 
-                        if ((offset.left - (listWidth - parent.offsetWidth) - 15) > 0) {
+                        if ((offset.left - (listWidth - parent.offsetWidth)) >= 0) {
+
                             list.style.right = 0;
+                            list.style.left = 'inherit';
+                            
                         }
 
                     } else if (events.hasClass(parent, 'submenu-center')) {
