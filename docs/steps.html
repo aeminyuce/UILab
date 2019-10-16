@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="../css/scrollbar.css" />
     <link rel="stylesheet" href="../css/sticky-header.css" />
     <link rel="stylesheet" href="../css/transitions.css" />
+    <link rel="stylesheet" href="../css/tooltip.css" />
     <link rel="stylesheet" href="../css/typography.css" />
     <link rel="stylesheet" href="../css/swatches.css" />
     <link rel="stylesheet" href="../css/top-button.css" />
@@ -38,12 +39,13 @@
     <script src="../js/events.js"></script>
     
     <script src="../js/sticky-header.js"></script>
+    <script src="../js/tooltip.js"></script>
     <script src="../js/top-button.js"></script>
     <script src="../js/transitions.js"></script>
     <script src="../js/user-agents.js"></script>
 
     <!-- font icons CSS -->
-    <link rel="stylesheet" href="icons/font-icons/outline/font-icons.css" />
+    <link rel="stylesheet" href="icons/font-icons/fill/font-icons.css" />
 
 </head>
 
@@ -69,11 +71,25 @@
 
                     <div class="padding-30-b">
                         <ul class="steps-bar steps-bar-column-3">
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <span class="sp15"></span>
+                        <ul class="steps-bar steps-bar-column-3 theme-yellow ui-text">
+                            <li></li>
+                            <li class="active"></li>
+                            <li></li>
+                        </ul>
+                    </div>
+
+                    <div class="padding-30-v">
+                        <ul class="steps-bar steps-bar-column-3">
                             <li class="active">Step Name Here</li>
                             <li>Step Name Here</li>
                             <li>Step Name Here</li>
                         </ul>
-                        <span class="sp5"></span>
+                        <span class="sp15"></span>
                         <ul class="steps-bar steps-bar-column-3 theme-yellow ui-text">
                             <li>Step Name Here</li>
                             <li class="active">Step Name Here</li>
@@ -89,17 +105,32 @@
                             <li>Step Name Here</li>
                             <li>Step Name Here</li>
                         </ul>
-                        <span class="sp5"></span>
+                        <span class="sp15"></span>
                         <ul class="steps-bar steps-bar-column-5 theme-orange ui-text">
-                            <li>Step Name Here</li>
-                            <li>Step Name Here</li>
-                            <li>Step Name Here</li>
-                            <li class="active">Step Name Here</li>
-                            <li>Step Name Here</li>
+                            <li>
+                                <span data-tooltip title="Completed"></span>
+                                Step Name Here
+                            </li>
+                            <li>
+                                <span data-tooltip title="Completed"></span>
+                                Step Name Here
+                            </li>
+                            <li>
+                                <span data-tooltip title="Completed"></span>
+                                Step Name Here
+                            </li>
+                            <li class="active">
+                                <span data-tooltip title="Completed"></span>
+                                Step Name Here
+                            </li>
+                            <li>
+                                <span data-tooltip title="Completed"></span>
+                                Step Name Here
+                            </li>
                         </ul>
                     </div>
 
-                    <div class="padding-30-t">
+                    <div class="padding-30-v">
                         <ul class="steps-bar steps-bar-column-4">
                             <li>
                                 <i class="icon icon-tick"></i>
@@ -110,31 +141,96 @@
                                 Step Name Here
                             </li>
                             <li>
-                                <i class="icon icon-user"></i>
+                                <i class="icon icon-tick"></i>
                                 Step Name Here
                             </li>
                             <li>
-                                <i class="icon icon-marker"></i>
+                                <i class="icon icon-tick"></i>
                                 Step Name Here
                             </li>
                         </ul>
-                        <span class="sp5"></span>
+                        <span class="sp15"></span>
                         <ul class="steps-bar steps-bar-column-4 steps-icon">
                             <li>
-                                <i class="icon icon-tick"></i>
+                                <i class="icon icon-tick" data-tooltip title="Completed"></i>
                                 Step Name Here
                             </li>
                             <li class="active">
+                                <i class="icon icon-tick" data-tooltip title="Completed"></i>
+                                Step Name Here
+                            </li>
+                            <li>
+                                <i class="icon icon-tick" data-tooltip title="Completed"></i>
+                                Step Name Here
+                            </li>
+                            <li>
+                                <i class="icon icon-tick" data-tooltip title="Completed"></i>
+                                Step Name Here
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="padding-30-v">
+                        <ul class="steps-bar steps-bar-column-12 theme-default2 ui-text">
+                            <li class="active">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                        </ul>
+                        <span class="sp15"></span>
+                        <ul class="steps-bar steps-bar-column-12 theme-default ui-text">
+                            <li>Passed</li>
+                            <li>Passed</li>
+                            <li>Passed</li>
+                            <li class="active"><b>Waiting</b></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <span class="sp15"></span>
+                        <ul class="steps-bar steps-bar-column-12 theme-default2 ui-text">
+                            <li><i class="icon light icon-tick"></i></li>
+                            <li class="active"><b>Waiting</b></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <span class="sp15"></span>
+                        <ul class="steps-bar steps-bar-column-12 theme-default ui-text">
+                            <li><i class="icon light icon-tick"></i></li>
+                            <li><i class="icon light icon-tick"></i></li>
+                            <li><i class="icon light icon-tick"></i></li>
+                            <li><i class="icon font-yellow icon-alert"></i></li>
+                            <li><i class="icon light icon-tick"></i></li>
+                            <li><i class="icon light icon-tick"></i></li>
+                            <li><i class="icon font-red icon-alert"></i></li>
+                            <li><i class="icon light icon-tick"></i></li>
+                            <li><i class="icon light icon-tick"></i></li>
+                            <li class="active"><b>Waiting</b></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <span class="sp15"></span>
+                        <ul class="steps-bar steps-bar-column-12 theme-default2 ui-text">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li class="active">
                                 <i class="icon icon-tick"></i>
-                                Step Name Here
-                            </li>
-                            <li>
-                                <i class="icon icon-user"></i>
-                                Step Name Here
-                            </li>
-                            <li>
-                                <i class="icon icon-marker"></i>
-                                Step Name Here
+                                <b class="inline-block">Finished</b>
                             </li>
                         </ul>
                     </div>
