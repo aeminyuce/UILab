@@ -1,7 +1,10 @@
 /* progress bar */
+@keyframes progress-fill { from { width: 0; } }
+
 .progress-bar { height: 8px; background-color: rgba(0,0,0,.075); display: block; overflow: hidden; }
 .progress-bar:not(:last-child) { margin-bottom: 10px; }
-.progress-bar > span { height: 100%; background-color: rgba(0,0,0,.15); float: left; }
+.progress-bar > span { width: 0; height: 100%; background-color: rgba(0,0,0,.15); float: left; }
+.progress-bar > span:not([class*="animate-"]) { animation: progress-fill 2s ease-out forwards; }
 
 .progress-sm,.progress-sm .progress-bar { height: 4px; }
 .progress-sm.rounded,.progress-sm .progress-bar.rounded { border-radius: 3px; }
