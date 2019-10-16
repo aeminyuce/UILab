@@ -353,7 +353,11 @@ var lineCharts = {
                 this.insertAdjacentHTML('beforeEnd', html);
 
                 // set height of chart
-                selector('svg', this)[0].style.height = (data.height + 15) + 'px';
+                if (lineCharts.showInfo || lineCharts.showGridText) {
+                    data.height += 15;
+                }
+
+                selector('svg', this)[0].style.height = data.height + 'px';
 
                 // empty variables
                 data = [];
