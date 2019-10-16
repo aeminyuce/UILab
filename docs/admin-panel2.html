@@ -16,6 +16,8 @@
     <!-- CSS Tools -->
     <link rel="stylesheet" href="../css/reset.css" />
 
+    <link rel="stylesheet" href="../css/animations.css" />
+    <link rel="stylesheet" href="../css/autocomplete.css" />
     <link rel="stylesheet" href="../css/alignments.css" />
     <link rel="stylesheet" href="../css/buttons.css" />
     <link rel="stylesheet" href="../css/borders.css" />
@@ -33,8 +35,10 @@
     <link rel="stylesheet" href="../css/paddings.css" />
     <link rel="stylesheet" href="../css/photo-images.css" />
     <link rel="stylesheet" href="../css/portlets.css" />
+    <link rel="stylesheet" href="../css/progress-bar.css" />
     <link rel="stylesheet" href="../css/scrollbar.css" />
     <link rel="stylesheet" href="../css/static-grid.css" />
+    <link rel="stylesheet" href="../css/stripes.css" />
     <link rel="stylesheet" href="../css/tabs.css" />
     <link rel="stylesheet" href="../css/tables.css" />
     <link rel="stylesheet" href="../css/transitions.css" />
@@ -48,8 +52,10 @@
     <script src="../js/events.js"></script>
 
     <script src="../js/ajax.js"></script>
+    <script src="../js/autocomplete.js"></script>
     <script src="../js/dropdown.js"></script>
     <script src="../js/forms.js"></script>
+    <script src="../js/line-charts.js"></script>
     <script src="../js/mobile-menu.js"></script>
     <script src="../js/portlets.js"></script>
     <script src="../js/static-grid.js"></script>
@@ -70,21 +76,36 @@
         .theme-panel.ui-x-light,.theme-panel .ui-x-light:not([class*="theme-"]) { background-color: #c2c4ee; }
         .theme-panel.ui-light,.theme-panel .ui-light:not([class*="theme-"]) { background-color: #a4a8f3; }
         .theme-panel.ui-dark,.theme-panel .ui-dark:not([class*="theme-"]) { background-color: #2f3480; }
-        .theme-panel.ui-text,.theme-panel .ui-text { color: #5056b3; }
+        .theme-panel.ui-text,.theme-panel .ui-text { color: #2f3480; }
         .theme-panel.ui-border,.theme-panel .ui-border { border-color: #2f3480; }
         .theme-panel.ui-x-dark,.theme-panel .ui-x-dark:not([class*="theme-"]) { background-color: #282c71; }
 
         .theme-panel2.ui-x-light,.theme-panel2 .ui-x-light:not([class*="theme-"]) { background-color: #fddee4; }
         .theme-panel2.ui-light,.theme-panel2 .ui-light:not([class*="theme-"]) { background-color: #f3aebb; }
         .theme-panel2.ui-dark,.theme-panel2 .ui-dark:not([class*="theme-"]),.notifier:after { background-color: #ff103b; }
-        .theme-panel2.ui-text,.theme-panel2 .ui-text { color: #f33f5f; }
+        .theme-panel2.ui-text,.theme-panel2 .ui-text { color: #ff103b; }
         .theme-panel2.ui-border,.theme-panel2 .ui-border { border-color: #ff103b; }
         .theme-panel2.ui-x-dark,.theme-panel2 .ui-x-dark:not([class*="theme-"]) { background-color: #cf1335; }
-    </style>
+
+        .sidebar{ background-image: linear-gradient(135deg, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.15)); }
+</style>
 
     <!-- custom js -->
     <script>
+
         tooltip.theme = "theme-panel2 ui-dark";
+        autocomplete.classes = 'rounded shadow-lg';
+
+        lineCharts.colors = ['#2f3480', '#ff103b', '#ff6384', '#9966ff', '#4bc0c0', '#ffcd56', '#84594d', '#bbc451', '#6a6a6a', '#647bc1'];
+
+        lineCharts.bottom = 0; // set bottom space (px)
+        lineCharts.left = 6; // set left space (px)
+
+        lineCharts.showBgGrid = false; // set showing bg grid
+        lineCharts.showGridText = false; // set showing grid numbers
+
+        lineCharts.gridStroke = 0; // set grid stroke width
+
     </script>
 
 </head>
@@ -93,11 +114,11 @@
 
     <!-- documentation examples -->
     <main class="container no-gutter">
-        <div class="col-static sm-responsive theme-panel">
+        <div class="col-static sm-responsive">
 
             <!-- sidebar -->
-            <div class="static-250 set-relative hidden-md">
-                <div class="static-250 full-height set-fixed set-left ui-dark v-scroll scrollbar">
+            <div class="static-250 set-relative hidden-md theme-panel">
+                <div class="sidebar static-250 full-height set-fixed set-left ui-dark v-scroll scrollbar">
 
                     <div class="padding-15-v">
                         <img class="img-responsive" src="img/logo-udashboard.png" alt="Logo">
@@ -244,11 +265,13 @@
                         <div class="xl-static-600 lg-static-400 static-250 order-md-last sm-no-padding">
 
                             <span class="sp10 visible-md"></span>
-                            <div class="text text-lg text-icon text-icon-lg text-icon-both has-clear rounded no-bordered inner-shadow-sm theme-gray ui-x-light ease-form">
-                                <i class="icon icon-sm icon-search text-icon-left margin-5-l ease-layout"></i>
-                                <button class="clear-form icon icon-xs icon-remove text-icon-right margin-5-r ease-layout"></button>
-                                <input type="text" placeholder="Search">
-                            </div>
+                            <form action="#">
+                                <div data-src="json/company.json" data-val="s" class="autocomplete text text-lg text-icon text-icon-lg text-icon-both has-clear rounded no-bordered inner-shadow-sm theme-gray ui-x-light ease-form">
+                                    <i class="icon icon-sm icon-search text-icon-left margin-5-l ease-layout"></i>
+                                    <button class="clear-form icon icon-xs icon-remove text-icon-right margin-5-r ease-layout"></button>
+                                    <input type="text" placeholder="Search">
+                                </div>
+                            </form>
                             
                         </div>
                         <div class="row row-no-padding">
@@ -272,12 +295,12 @@
                                             <i class="icon icon-md icon-bell notifier no-opacity"></i>
                                         </button>
                                         <ul class="content has-grid align-center rounded shadow-lg ease-dropdown">
-                                            <li><a href="#"><i class="icon icon-lg notifier icon-bell"></i>Alerts</a></li>
-                                            <li><a href="#"><i class="icon icon-lg notifier icon-write"></i>Notes</a></li>
-                                            <li><a href="#"><i class="icon icon-lg notifier icon-hourglass-finish"></i>Delayed</a></li>
-                                            <li><a href="#"><i class="icon icon-lg notifier icon-hourglass-start"></i>Waiting</a></li>
-                                            <li><a href="#"><i class="icon icon-lg icon-favorite-fill"></i>Favorites</a></li>
-                                            <li><a href="#"><i class="icon icon-lg icon-history"></i>History</a></li>
+                                            <li><a href="#"><i class="icon notifier icon-bell"></i>Alerts</a></li>
+                                            <li><a href="#"><i class="icon notifier icon-write"></i>Notes</a></li>
+                                            <li><a href="#"><i class="icon notifier icon-hourglass-finish"></i>Delayed</a></li>
+                                            <li><a href="#"><i class="icon notifier icon-hourglass-start"></i>Waiting</a></li>
+                                            <li><a href="#"><i class="icon icon-favorite-fill"></i>Favorites</a></li>
+                                            <li><a href="#"><i class="icon icon-history"></i>History</a></li>
                                         </ul>
                                     </span>
                                 </span>
@@ -293,13 +316,13 @@
                                             <img class="img-photo img-photo-sm circle" src="img/profile-image.jpg" alt="">
                                         </button>
                                         <ul class="content has-grid align-center rounded shadow-lg ease-dropdown">
-                                            <li><a href="#"><i class="icon icon-lg icon-user"></i>Profile</a></li>
-                                            <li><a href="#"><i class="icon icon-lg icon-calendar"></i>Calendar</a></li>
-                                            <li><a href="#"><i class="icon icon-lg icon-lock"></i>Lock Screen</a></li>
-                                            <li><a href="#"><i class="icon icon-lg icon-key"></i>Change Password</a></li>
+                                            <li><a href="#"><i class="icon icon-user"></i>Profile</a></li>
+                                            <li><a href="#"><i class="icon icon-calendar"></i>Calendar</a></li>
+                                            <li><a href="#"><i class="icon icon-lock"></i>Lock Screen</a></li>
+                                            <li><a href="#"><i class="icon icon-key"></i>Change Password</a></li>
                                             <li class="sep"></li>
-                                            <li><a href="#"><i class="icon icon-lg icon-settings"></i>Settings</a></li>
-                                            <li><a href="#"><i class="icon icon-lg theme-panel2 ui-text icon-logout"></i>Logout</a></li>
+                                            <li><a href="#"><i class="icon icon-settings"></i>Settings</a></li>
+                                            <li><a href="#"><i class="icon theme-panel2 ui-text icon-logout"></i>Logout</a></li>
                                         </ul>
                                     </span>
                                     <span class="margin-3-t inline-block hidden-xs">aeminyuce</span>
@@ -311,10 +334,178 @@
                     </div>
 
                 </div>
-                <div class="col-12 no-padding-t">
+                <div class="col-12">
 
-                    <div class="portlet padding-15 rounded shadow">
-                        lorem ipsum dolor sit amet.
+                    <div class="row">
+                        <div class="col-6 sm-responsive">
+                            <div class="portlet full-height padding-15 rounded shadow-lg">
+                                <div class="dropdown submenu-left right">
+                                    <button class="btn btn-square btn-ghost rounded ease-btn">
+                                        <i class="icon icon-sm icon-ellipsis-ver ease-layout"></i>
+                                    </button>
+                                    <ul class="content has-icon rounded shadow-lg ease-dropdown">
+                                        <li><a href="#"><i class="list-icon icon icon-sm icon-file-pdf"></i>Download PDF</a></li>
+                                        <li><a href="#"><i class="list-icon icon icon-sm icon-file-zip"></i>Download ZIP</a></li>
+                                        <li class="sep"></li>
+                                        <li><a href="#"><i class="list-icon icon icon-sm icon-logout"></i>See Detailed Activity</a></li>
+                                    </ul>
+                                </div>
+                                <h3>Activity</h3>
+                                <div class="col-static no-responsive">
+                                    <div class="static-100">
+                                        <strong class="xx-largest theme-panel ui-text">436</strong>
+                                    </div>
+                                    <div class="row row-no-padding-hor">
+                                        <div class="col-12 align-right">
+                                            <h3 class="no-margin">Daily</h3>
+                                            <span class="x-dark large">12% Change</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="dark large">Daily reports that all received.</p>
+                                <div class="progress-bar highlight progress rounded">
+                                    <span class="theme-panel ui-dark stripe-light animate-progress" style="width: 87%;"></span>
+                                </div>
+                                <p class="light">
+                                    <span class="dark block">Total: 87%</span>
+                                    <i class="icon icon-xs icon-clock margin-3-r"></i>
+                                    <span class="inline-block">Last updated: 15:12</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-6 sm-responsive">
+                            <div class="portlet full-height padding-15 rounded shadow-lg">
+                                <div class="dropdown submenu-left right">
+                                    <button class="btn btn-square btn-ghost rounded ease-btn">
+                                        <i class="icon icon-sm icon-ellipsis-ver ease-layout"></i>
+                                    </button>
+                                    <ul class="content has-icon rounded shadow-lg ease-dropdown">
+                                        <li><a href="#"><i class="list-icon icon icon-sm icon-file-pdf"></i>Download PDF</a></li>
+                                        <li><a href="#"><i class="list-icon icon icon-sm icon-file-zip"></i>Download ZIP</a></li>
+                                        <li class="sep"></li>
+                                        <li><a href="#"><i class="list-icon icon icon-sm icon-logout"></i>See Detailed Statistics</a></li>
+                                    </ul>
+                                </div>
+                                <h3>Statistics</h3>
+                                <div class="line-charts ease-line-charts" data-size="5,30" data-x="1,2,3,4,5,6,7">
+                                    <ul class="line" data-name="Past year" data-type="curved filled">
+                                        <li data-y="159"></li>
+                                        <li data-y="120"></li>
+                                        <li data-y="20"></li>
+                                        <li data-y="118"></li>
+                                        <li data-y="37"></li>
+                                        <li data-y="0"></li>
+                                        <li data-y="76"></li>
+                                    </ul>
+                                    <ul class="line" data-name="This year" data-type="curved filled">
+                                        <li data-y="55"></li>
+                                        <li data-y="70"></li>
+                                        <li data-y="92"></li>
+                                        <li data-y="48"></li>
+                                        <li data-y="166"></li>
+                                        <li data-y="98"></li>
+                                        <li data-y="116"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-6 sm-responsive theme-yellow">
+                            <div class="portlet full-height padding-15 rounded shadow-lg">
+                                <div class="col-static no-responsive">
+                                    <div class="static-100">
+                                        <span class="x-largest ui-text">157</span>
+                                    </div>
+                                    <div class="row row-no-padding-hor row-md-padding-ver">
+                                        <div class="col-12 align-right">
+                                            <h4 class="no-margin">Waiting</h4>
+                                            <span class="x-dark large">5% Change</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="dark margin-15-b">Pending for the transaction.</p>
+                                <div class="progress-bar margin-15-b progress-sm rounded">
+                                    <span class="ui-dark" style="width: 45%;"></span>
+                                </div>
+                                <p class="light">
+                                    <span class="dark block">Total: 45%</span>
+                                    <i class="icon icon-xs icon-clock margin-3-r"></i>
+                                    <span class="inline-block">Last updated: 15:12</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-6 sm-responsive theme-yellow">
+                            <div class="portlet full-height padding-15 rounded shadow-lg">
+                                <div class="col-static no-responsive">
+                                    <div class="static-100">
+                                        <span class="x-largest ui-text">23</span>
+                                    </div>
+                                    <div class="row row-no-padding-hor row-md-padding-ver">
+                                        <div class="col-12 align-right">
+                                            <h4 class="no-margin">Paused</h4>
+                                            <span class="x-dark large">3% Change</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="dark margin-15-b">Paused for the some reasons.</p>
+                                <div class="progress-bar margin-15-b progress-sm rounded">
+                                    <span class="ui-dark" style="width: 5%;"></span>
+                                </div>
+                                <p class="light">
+                                    <span class="dark block">Total: 5%</span>
+                                    <i class="icon icon-xs icon-clock margin-3-r"></i>
+                                    <span class="inline-block">Last updated: 15:12</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-6 sm-responsive theme-panel2">
+                            <div class="portlet full-height padding-15 rounded shadow-lg">
+                                <div class="col-static no-responsive">
+                                    <div class="static-100">
+                                        <span class="x-largest ui-text">256</span>
+                                    </div>
+                                    <div class="row row-no-padding-hor row-md-padding-ver">
+                                        <div class="col-12 align-right">
+                                            <h4 class="no-margin">Completed</h4>
+                                            <span class="x-dark large">19% Change</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="dark margin-15-b">Reached for the expert.</p>
+                                <div class="progress-bar margin-15-b progress-sm rounded">
+                                    <span class="ui-dark" style="width: 80%;"></span>
+                                </div>
+                                <p class="light">
+                                    <span class="dark block">Total: 80%</span>
+                                    <i class="icon icon-xs icon-clock margin-3-r"></i>
+                                    <span class="inline-block">Last updated: 15:12</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-6 sm-responsive theme-panel">
+                            <div class="portlet full-height padding-15 rounded shadow-lg">
+                                <div class="col-static no-responsive">
+                                    <div class="static-100">
+                                        <span class="x-largest ui-text">256</span>
+                                    </div>
+                                    <div class="row row-no-padding-hor row-md-padding-ver">
+                                        <div class="col-12 align-right">
+                                            <h4 class="no-margin">On Payment</h4>
+                                            <span class="x-dark large">53% Change</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="dark margin-15-b">Confirmed for payment.</p>
+                                <div class="progress-bar margin-15-b progress-sm rounded">
+                                    <span class="ui-dark" style="width: 67%;"></span>
+                                </div>
+                                <p class="light">
+                                    <span class="dark block">Total: 67%</span>
+                                    <i class="icon icon-xs icon-clock margin-3-r"></i>
+                                    <span class="inline-block">Last updated: 15:12</span>
+                                </p>               
+                            </div>
+                        </div>
                     </div>
 
                 </div>
