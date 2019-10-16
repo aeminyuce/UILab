@@ -53,7 +53,9 @@ var autocomplete = {
             var i, j, k, n, p, list, listItems, navSelected, navIndex, v, key, checkData, createDropdown, timerShowLines, offset, tHeight, dHeight, m, txt, getVal, src;
 
             p = this.parentNode;
+
             list = selector('ul', p);
+            if (list[0] === undefined) { return; } // clear forms has triggering keyup event
 
             if (e.keyCode === 38 || e.keyCode === 40) {
 
