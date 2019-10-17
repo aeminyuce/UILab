@@ -11,7 +11,8 @@
 .photo-gallery > li { overflow: hidden; float: left; }
 .photo-gallery > li > a { border: solid 1px #fff; }
 
-.photo-gallery .img { width: 100%; background: #ddd; overflow: hidden; display: block; position: relative; }
+.photo-gallery .img { background: #ddd; overflow: hidden; position: relative; }
+.photo-gallery .img:not(.inline-block) { width: 100%; display: block; }
 .photo-gallery .img:after { content: ""; display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1; opacity: 0; }
 html:not(.mobile) .photo-gallery .img:hover:after,.photo-gallery .img.show-info:after ,.photo-gallery .img.hover-touch:after{ opacity: 1; }
 
