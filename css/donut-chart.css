@@ -1,5 +1,5 @@
 /* donut chart */
-.ease-donut-chart circle { transition-property: opacity stroke; transition-duration: 2s; transition-timing-function: ease-in-out; }
+.ease-donut-chart circle { transition-property: opacity stroke; transition-duration: 1.6s; transition-timing-function: ease-in-out; }
 .no-transitions-all .ease-donut-chart circle { transition-property: none !important; }
 
 .donut-chart { text-align: left !important; display: block; position: relative; -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
@@ -14,4 +14,3 @@
 .donut-chart circle.bg { stroke: currentColor; stroke-width: 6; opacity: .05; }
 .donut-chart circle:not(.loaded):not(.bg) { stroke-dashoffset: 440; }
 .donut-chart:not(.multiple) circle { stroke-linecap: round; }
-.donut-chart circle:not(.bg) { animation: donut-chart 2s ease-in-out forwards; }

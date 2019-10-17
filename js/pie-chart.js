@@ -139,7 +139,7 @@ var pieChart = {};
                             events.addClass(that, 'open');
                             setTimeout(function () { events.addClass(that, 'open-ease'); }, 2000); // wait for animation complete
 
-                        }, 310);
+                        }, 340);
 
                     }
 

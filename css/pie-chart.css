@@ -28,6 +28,6 @@
 .pie-chart li .l b { left: 100%; border-radius: 0 1000px 1000px 0; -ms-transform-origin: left; transform-origin: left; }
 .pie-chart li .r b { left: -100%; border-radius: 1000px 0 0 1000px; -ms-transform: rotate(180deg); transform: rotate(180deg); -ms-transform-origin: right; transform-origin: right; }
 
-.pie-chart.open li .l b { animation: pie-spin-l 2s ease-out forwards; }
-.pie-chart.open li .r b { animation: pie-spin-r 2s ease-in forwards; }
-.pie-chart.open li .l + .r b { animation: pie-spin-r 1s ease-in forwards; }
+.pie-chart.open li .l b { animation: pie-spin-l 1.6s ease-out forwards; }
+.pie-chart.open li .r b { animation: pie-spin-r 1.6s ease-in forwards; }
+.pie-chart.open li .l + .r b { animation: pie-spin-r .8s ease-in forwards; }

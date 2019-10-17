@@ -24,7 +24,7 @@ var donutChart = {};
             chart = selector('.donut-chart');
             if (chart.length > 0) {
 
-                events.each(chart, function () {
+                events.each(chart, function (i) {
 
                     circles = selector('circle:not(.bg)', this);
 
@@ -72,7 +72,9 @@ var donutChart = {};
                         if (isMSIE || !!document.documentMode || navigator.userAgent.indexOf('edge') > -1) {
 
                             events.addClass(that, 'loaded');
+
                             that.style.transitionDuration = '.15s';
+                            chart[i].style.height = chart[i].offsetWidth + 'px'; // transformed circle has highest height on IE
 
                         } else {
 
@@ -94,7 +96,7 @@ var donutChart = {};
                                         that.style.transitionDuration = '.15s';
                                     }, 2000);
 
-                                }, 310);
+                                }, 340);
 
                             }
 
