@@ -37,6 +37,7 @@ var dropdown = {};
                     list.style.removeProperty('right');
                     list.style.removeProperty('margin-left');
                     list.style.removeProperty('height');
+                    list.style.removeProperty('transform-origin');
 
                 }
 
@@ -109,7 +110,9 @@ var dropdown = {};
                     if (offset.top + parseInt(btnHeight + subMenuHeight, 10) >= window.innerHeight) {
 
                         if (offset.top - parseInt(btnHeight + subMenuHeight, 10) + btnHeight > 0) {
+
                             events.addClass(parent, 'submenu-top');
+                            list.style.removeProperty('transform-origin');
                         }
 
                     }
