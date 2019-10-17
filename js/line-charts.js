@@ -217,7 +217,7 @@ var lineCharts = {
                 circles = '';
                 pathStart = [];
 
-                html += '<g style="transform: translateX(' + lineCharts.left + 'px)">';
+                html += '<g>';
 
                 events.each(lines, function (j) {
 
@@ -235,7 +235,7 @@ var lineCharts = {
                     // create paths and circles
                     for (i = 0; i < y.length; i += 1) {
 
-                        posX = i * col;
+                        posX = (i * col) + lineCharts.left;
                         posY = data.height - (data.height + (((data.height - (lineCharts.top + lineCharts.bottom)) * (y[i] - yMax)) / (yMax - yMin)) - lineCharts.top);
 
                         // get line type
@@ -296,10 +296,10 @@ var lineCharts = {
 
                     if (type.indexOf('filled') > -1) { // add filled paths
 
-                        html += '<path d="M ' + (pathStart.x  + (lineCharts.gridStroke / 2)) + ' ' + pathStart.y +
+                        html += '<path d="M ' + (pathStart.x + (lineCharts.gridStroke / 2)) + ' ' + pathStart.y +
                             paths +
                             ' V ' + (data.height - lineCharts.bottom - (lineCharts.gridStroke / 2)) +
-                            ' H ' + (lineCharts.gridStroke / 2) + ' Z ' +
+                            ' H ' + ((lineCharts.gridStroke / 2) + lineCharts.left) + ' Z ' +
 
                             '" stroke="0" fill="' + data.color[j] + '" stroke-width="' + lineCharts.lineStroke + '" class="filled" />';
 
