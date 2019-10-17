@@ -89,6 +89,8 @@ var dropdown = {};
                             list.style.right = 0;
                             list.style.left = 'inherit';
                             
+                            list.style.transformOrigin = 'top right';
+                            
                         }
 
                     } else if (events.hasClass(parent, 'submenu-center')) {
