@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="../css/alignments.css" />
     <link rel="stylesheet" href="../css/buttons.css" />
     <link rel="stylesheet" href="../css/borders.css" />
+    <link rel="stylesheet" href="../css/calendar.css" />
+    <link rel="stylesheet" href="../css/donut-chart.css" />
     <link rel="stylesheet" href="../css/dropdown.css" />
     <link rel="stylesheet" href="../css/forms.css" />
     <link rel="stylesheet" href="../css/form-icons.css" />
@@ -34,6 +36,8 @@
     <link rel="stylesheet" href="../css/mobile-menu.css" />
     <link rel="stylesheet" href="../css/paddings.css" />
     <link rel="stylesheet" href="../css/photo-images.css" />
+    <link rel="stylesheet" href="../css/photo-gallery.css" />
+    <link rel="stylesheet" href="../css/pie-chart.css" />
     <link rel="stylesheet" href="../css/portlets.css" />
     <link rel="stylesheet" href="../css/progress-bar.css" />
     <link rel="stylesheet" href="../css/scrollbar.css" />
@@ -41,6 +45,7 @@
     <link rel="stylesheet" href="../css/stripes.css" />
     <link rel="stylesheet" href="../css/tabs.css" />
     <link rel="stylesheet" href="../css/tables.css" />
+    <link rel="stylesheet" href="../css/timeline.css" />
     <link rel="stylesheet" href="../css/transitions.css" />
     <link rel="stylesheet" href="../css/typography.css" />
     <link rel="stylesheet" href="../css/swatches.css" />
@@ -53,11 +58,15 @@
 
     <script src="../js/ajax.js"></script>
     <script src="../js/autocomplete.js"></script>
+    <script src="../js/calendar.js"></script>
+    <script src="../js/donut-chart.js"></script>
     <script src="../js/dropdown.js"></script>
     <script src="../js/forms.js"></script>
     <script src="../js/line-charts.js"></script>
     <script src="../js/mobile-menu.js"></script>
+    <script src="../js/photo-gallery.js"></script>
     <script src="../js/portlets.js"></script>
+    <script src="../js/pie-chart.js"></script>
     <script src="../js/static-grid.js"></script>
     <script src="../js/swatches.js"></script>
     <script src="../js/tabs.js"></script>
@@ -95,16 +104,7 @@
 
         tooltip.theme = "theme-panel2 ui-dark";
         autocomplete.classes = 'rounded shadow-lg';
-
-        lineCharts.colors = ['#2f3480', '#ff103b', '#ff6384', '#9966ff', '#4bc0c0', '#ffcd56', '#84594d', '#bbc451', '#6a6a6a', '#647bc1'];
-
-        lineCharts.bottom = 0; // set bottom space (px)
-        lineCharts.left = 6; // set left space (px)
-
-        lineCharts.showBgGrid = false; // set showing bg grid
-        lineCharts.showGridText = false; // set showing grid numbers
-
-        lineCharts.gridStroke = 0; // set grid stroke width
+        calendar.todayTheme = 'theme-panel2 ui-dark' // use swatches
 
     </script>
 
@@ -290,17 +290,18 @@
                                     <button class="btn btn-square btn-lg btn-ghost circle ease-btn" data-tooltip="l" data-only="desktop" title="Chat">
                                         <i class="icon icon-md icon-message notifier no-opacity"></i>
                                     </button>
-                                    <span class="dropdown submenu-center">
+                                    <span class="dropdown submenu-left">
                                         <button class="btn btn-square btn-lg btn-ghost circle ease-btn" data-tooltip="r" data-only="desktop" title="Notification Center">
                                             <i class="icon icon-md icon-bell notifier no-opacity"></i>
                                         </button>
                                         <ul class="content has-grid align-center rounded shadow-lg ease-dropdown">
-                                            <li><a href="#"><i class="icon notifier icon-bell"></i>Alerts</a></li>
-                                            <li><a href="#"><i class="icon notifier icon-write"></i>Notes</a></li>
-                                            <li><a href="#"><i class="icon notifier icon-hourglass-finish"></i>Delayed</a></li>
-                                            <li><a href="#"><i class="icon notifier icon-hourglass-start"></i>Waiting</a></li>
-                                            <li><a href="#"><i class="icon icon-favorite-fill"></i>Favorites</a></li>
-                                            <li><a href="#"><i class="icon icon-history"></i>History</a></li>
+                                            <li><a href="#"><i class="icon icon-lg notifier icon-bell" data-notifier="3"></i>Alerts</a></li>
+                                            <li><a href="#"><i class="icon icon-lg notifier icon-write" data-notifier="26"></i>Notes</a></li>
+                                            <li><a href="#"><i class="icon icon-lg notifier icon-hourglass-finish" data-notifier="8"></i>Delayed</a></li>
+                                            <li><a href="#"><i class="icon icon-lg notifier icon-hourglass-start" data-notifier="12"></i>Waiting</a></li>
+                                            <li class="sep"></li>
+                                            <li><a href="#"><i class="icon icon-lg icon-favorite-fill"></i>Favorites</a></li>
+                                            <li><a href="#"><i class="icon icon-lg icon-history"></i>History</a></li>
                                         </ul>
                                     </span>
                                 </span>
@@ -311,18 +312,18 @@
                                     </button>
                                 </div>
                                 <div class="right margin-10-l">
-                                    <span class="dropdown submenu-center margin-10-l xs-no-margin right">
+                                    <span class="dropdown submenu-left margin-10-l xs-no-margin right">
                                         <button class="btn btn-lg btn-square no-padding circle scale-more ease-layout">
                                             <img class="img-photo img-photo-sm circle" src="img/profile-image.jpg" alt="">
                                         </button>
                                         <ul class="content has-grid align-center rounded shadow-lg ease-dropdown">
-                                            <li><a href="#"><i class="icon icon-user"></i>Profile</a></li>
-                                            <li><a href="#"><i class="icon icon-calendar"></i>Calendar</a></li>
-                                            <li><a href="#"><i class="icon icon-lock"></i>Lock Screen</a></li>
-                                            <li><a href="#"><i class="icon icon-key"></i>Change Password</a></li>
+                                            <li><a href="#"><i class="icon icon-lg icon-user"></i>Profile</a></li>
+                                            <li><a href="#"><i class="icon icon-lg icon-calendar"></i>Calendar</a></li>
+                                            <li><a href="#"><i class="icon icon-lg icon-lock"></i>Lock Screen</a></li>
+                                            <li><a href="#"><i class="icon icon-lg icon-key"></i>Change Password</a></li>
                                             <li class="sep"></li>
-                                            <li><a href="#"><i class="icon icon-settings"></i>Settings</a></li>
-                                            <li><a href="#"><i class="icon theme-panel2 ui-text icon-logout"></i>Logout</a></li>
+                                            <li><a href="#"><i class="icon icon-lg icon-settings"></i>Settings</a></li>
+                                            <li><a href="#"><i class="icon icon-lg theme-panel2 ui-text icon-logout"></i>Logout</a></li>
                                         </ul>
                                     </span>
                                     <span class="margin-3-t inline-block hidden-xs">aeminyuce</span>
@@ -336,8 +337,11 @@
                 </div>
                 <div class="col-12">
 
+                    <!-- layouts: start-->
+
                     <div class="row">
-                        <div class="col-6 sm-responsive">
+
+                        <div class="col-xl-3 col-6 sm-responsive">
                             <div class="portlet full-height padding-15 rounded shadow-lg">
                                 <div class="dropdown submenu-left right">
                                     <button class="btn btn-square btn-ghost rounded ease-btn">
@@ -345,35 +349,70 @@
                                     </button>
                                     <ul class="content has-icon rounded shadow-lg ease-dropdown">
                                         <li><a href="#"><i class="list-icon icon icon-md icon-file-pdf"></i>Download PDF</a></li>
-                                        <li><a href="#"><i class="list-icon icon icon-md icon-file-xlsx"></i>Download Excel</a></li>
+                                        <li><a href="#"><i class="list-icon icon icon-md icon-file-xls"></i>Download Excel</a></li>
                                         <li class="sep"></li>
                                         <li><a href="#"><i class="list-icon icon icon-md icon-eye"></i>See Detailed Activity</a></li>
                                     </ul>
                                 </div>
-                                <h3>Activity</h3>
+                                <h3 class="align-left">Daily Activity</h3>
                                 <div class="col-static no-responsive">
-                                    <div class="static-100">
-                                        <strong class="xx-largest theme-panel ui-text">436</strong>
+                                    <div class="static-150 theme-panel ui-text">
+                                        <i class="icon icon-xl icon-history margin-5-r"></i>
+                                        <strong class="x-largest inline-block">436</strong>
                                     </div>
-                                    <div class="row row-no-padding-hor">
-                                        <div class="col-12 align-right">
-                                            <h3 class="no-margin">Daily</h3>
-                                            <span class="x-dark large">12% Change</span>
+                                    <div class="row row row-no-padding-hor row-md-padding-ver">
+                                        <div class="col-12">
+                                            <h4 class="align-left no-margin">Present Progress</h4>
+                                            <span class="x-dark large">23% Change</span>
                                         </div>
                                     </div>
                                 </div>
-                                <p class="dark large">Daily reports that all received.</p>
-                                <div class="progress-bar highlight progress rounded">
-                                    <span class="theme-panel ui-dark stripe-light animate-progress" style="width: 87%;"></span>
+                                <div class="progress-bar margin-25-v progress-sm rounded">
+                                    <span class="theme-panel ui-dark stripe-light animate-progress" style="width: 67%;"></span>
                                 </div>
+                                <div class="row row-no-padding-ver">
+                                    <div class="col-4 no-responsive">
+                                        <div class="donut-chart ease-donut-chart">
+                                            <strong>
+                                                <b class="x-dark margin-2-b block">25%</b>
+                                                <span class="small semibold">Orders</span>
+                                            </strong>
+                                            <svg viewBox="0 0 160 160">
+                                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                                <circle r="69.85699" cy="80" cx="80" stroke="#ffa600" data-percent="25" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 no-responsive">
+                                        <div class="donut-chart ease-donut-chart">
+                                            <strong>
+                                                <b class="x-dark margin-2-b block">69%</b>
+                                                <span class="small semibold">Payments</span>
+                                            </strong>
+                                            <svg viewBox="0 0 160 160">
+                                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                                <circle r="69.85699" cy="80" cx="80" stroke="#ffa600" data-percent="69" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 no-responsive">
+                                        <div class="pie-chart ease-pie-chart" data-text="Profit">
+                                            <ul>
+                                                <li data-percent="70" data-fill="#75dbe7"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="x-dark x-large margin-15-b margin-10-t">Daily reports that all received.</p>
                                 <p class="light">
-                                    <span class="dark block">Total: 87%</span>
+                                    <span class="dark block">Total: 67%</span>
                                     <i class="icon icon-xs icon-clock margin-3-r"></i>
                                     <span class="inline-block">Last updated: 15:12</span>
                                 </p>
                             </div>
                         </div>
-                        <div class="col-6 sm-responsive">
+                        
+                        <div class="col-xl-6 col-6 sm-responsive">
                             <div class="portlet full-height padding-15 rounded shadow-lg">
                                 <div class="dropdown submenu-left right">
                                     <button class="btn btn-square btn-ghost rounded ease-btn">
@@ -381,30 +420,128 @@
                                     </button>
                                     <ul class="content has-icon rounded shadow-lg ease-dropdown">
                                         <li><a href="#"><i class="list-icon icon icon-md icon-file-pdf"></i>Download PDF</a></li>
-                                        <li><a href="#"><i class="list-icon icon icon-md icon-file-xlsx"></i>Download Excel</a></li>
+                                        <li><a href="#"><i class="list-icon icon icon-md icon-file-xls"></i>Download Excel</a></li>
                                         <li class="sep"></li>
                                         <li><a href="#"><i class="list-icon icon icon-md icon-eye"></i>See Detailed Statistics</a></li>
                                     </ul>
                                 </div>
-                                <h3>Statistics</h3>
-                                <div class="line-charts ease-line-charts" data-size="5,30" data-x="1,2,3,4,5,6,7">
+                                <h3 class="align-left">Statistics</h3>
+                                <div class="line-charts ease-line-charts" data-size="6,44" data-x="Sep,Oct,Nov,Dec,Jan,Fab">
                                     <ul class="line" data-name="Past year" data-type="curved filled">
-                                        <li data-y="159"></li>
-                                        <li data-y="120"></li>
-                                        <li data-y="20"></li>
-                                        <li data-y="118"></li>
-                                        <li data-y="37"></li>
-                                        <li data-y="0"></li>
-                                        <li data-y="76"></li>
+                                        <li data-y="34" data-link="#"></li>
+                                        <li data-y="56" data-link="#"></li>
+                                        <li data-y="112" data-link="#"></li>
+                                        <li data-y="28" data-link="#"></li>
+                                        <li data-y="20" data-link="#"></li>
+                                        <li data-y="48" data-link="#"></li>
                                     </ul>
                                     <ul class="line" data-name="This year" data-type="curved filled">
-                                        <li data-y="55"></li>
-                                        <li data-y="70"></li>
-                                        <li data-y="92"></li>
-                                        <li data-y="48"></li>
-                                        <li data-y="166"></li>
-                                        <li data-y="98"></li>
-                                        <li data-y="116"></li>
+                                        <li data-y="120" data-link="#"></li>
+                                        <li data-y="20" data-link="#"></li>
+                                        <li data-y="159" data-link="#"></li>
+                                        <li data-y="80" data-link="#"></li>
+                                        <li data-y="0" data-link="#"></li>
+                                        <li data-y="72" data-link="#"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xl-3 col-6 sm-responsive">
+                            <div class="portlet full-height padding-15 rounded shadow-lg">
+                                <div class="dropdown submenu-left right">
+                                    <button class="btn btn-square btn-ghost rounded ease-btn">
+                                        <i class="icon icon-sm icon-ellipsis-ver ease-layout"></i>
+                                    </button>
+                                    <ul class="content has-icon rounded shadow-lg ease-dropdown">
+                                        <li><a href="#"><i class="list-icon icon icon-md icon-calendar"></i>Add to Your Calendar</a></li>
+                                        <li class="sep"></li>
+                                        <li><a href="#"><i class="list-icon icon icon-md icon-eye"></i>See All News</a></li>
+                                    </ul>
+                                </div>
+                                <h3 class="align-left margin-5-b">News</h3>
+                                <div class="btn-tabs theme-panel" data-classes="ui-border">
+                                    <div class="row row-no-padding x-dark margin-15-b ease-2nd-btn">
+                                        <div class="col-6 no-responsive">
+                                            <button class="btn-tab btn btn-lg btn-ghost bottom-bordered dual-bordered block rounded-top ui-border active">Company</button>
+                                        </div>
+                                        <div class="col-6 no-responsive">
+                                            <button class="btn-tab btn btn-lg btn-ghost bottom-bordered dual-bordered block rounded-top">Employees</button>
+                                        </div>
+                                    </div>
+                                    <ul class="tab-content timeline left-side hide-h-lines no-margin v-scroll open" style="height: 259px;">
+                                        <li class="ui-text">
+                                            <span class="card xx-dark no-padding-v no-padding-r">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                <span class="margin-5-t padding-15-l block ease-2nd-layout">
+                                                    <a style="margin-left: -15px;" href="#"><img class="img-photo-sm dual-bordered circle scale-more" style="border-color: #fff;" src="img/profile-image.jpg" alt=""></a>
+                                                    <a style="margin-left: -15px;" href="#"><img class="img-photo-sm dual-bordered circle scale-more" style="border-color: #fff;" src="img/profile-image2.jpg" alt=""></a>
+                                                    <a style="margin-left: -15px;" href="#"><img class="img-photo-sm dual-bordered circle scale-more" style="border-color: #fff;" src="img/profile-image3.jpg" alt=""></a>
+                                                </span>
+                                            </span>
+                                        </li>
+                                        <li class="ui-text">
+                                            <span class="card xx-dark no-padding-v no-padding-r">
+                                                Nullam sit amet sagittis nisi.
+                                                <span class="margin-5-t block ease-1st-btn">
+                                                    <a class="btn btn-lg btn-square btn-ghost bordered rounded" href="#"><i class="icon icon-lg icon-file-pdf no-opacity ui-text"></i></a>
+                                                    <a class="btn btn-lg btn-square btn-ghost bordered rounded" href="#"><i class="icon icon-lg icon-file-xls no-opacity ui-text"></i></a>
+                                                    <a class="btn btn-lg btn-square btn-ghost bordered rounded" href="#"><i class="icon icon-lg icon-file-zip no-opacity ui-text"></i></a>
+                                                </span>
+                                            </span>
+                                        </li>
+                                        <li class="ui-text">
+                                            <span class="card xx-dark no-padding-v no-padding-r">
+                                                Etiam bibendum molestie lectus sit amet aliquet.
+                                            </span>
+                                        </li>
+                                        <li class="ui-text">
+                                            <span class="card xx-dark no-padding-v no-padding-r">
+                                                Aenean imperdiet dolor nibh, a porta nunc maximus vitae.
+                                            </span>
+                                        </li>
+                                        <li class="ui-text">
+                                            <span class="card xx-dark no-padding-v no-padding-r">
+                                                Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.
+                                            </span>
+                                        </li>
+                                    </ul>
+                                    <ul class="tab-content timeline left-side hide-h-lines no-margin v-scroll" style="height: 259px;">
+                                        <li class="ui-text">
+                                            <span class="card xx-dark no-padding-v no-padding-r">
+                                                Nullam sit amet sagittis nisi.
+                                            </span>
+                                        </li>
+                                        <li class="ui-text">
+                                            <span class="card xx-dark no-padding-v no-padding-r">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                <span class="photo-gallery margin-5-t ease-photo-gallery">
+                                                    <a class="img inline-block rounded" href="img/image_07.jpg"><img src="img/thumb_07.jpg" height="42" alt=""></a>
+                                                    <a class="img inline-block rounded" href="img/image_02.jpg"><img src="img/thumb_02.jpg" height="42" alt=""></a>
+                                                    <a class="img inline-block rounded" href="img/image_03.jpg"><img src="img/thumb_03.jpg" height="42" alt=""></a>
+                                                </span>
+                                            </span>
+                                        </li>
+                                        <li class="ui-text">
+                                            <span class="card xx-dark no-padding-v no-padding-r">
+                                                Etiam bibendum molestie lectus sit amet aliquet.
+                                            </span>
+                                        </li>
+                                        <li class="ui-text">
+                                            <span class="card xx-dark no-padding-v no-padding-r">
+                                                Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.
+                                            </span>
+                                        </li>
+                                        <li class="ui-text">
+                                            <span class="card xx-dark no-padding-v no-padding-r">
+                                                Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.
+                                            </span>
+                                        </li>
+                                        <li class="ui-text">
+                                            <span class="card xx-dark no-padding-v no-padding-r">
+                                                Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.
+                                            </span>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -413,20 +550,20 @@
                         <div class="col-xl-3 col-6 sm-responsive theme-yellow">
                             <div class="portlet full-height padding-15 rounded shadow-lg">
                                 <div class="col-static no-responsive">
-                                    <div class="static-100">
-                                        <span class="x-largest ui-text">157</span>
-                                    </div>
                                     <div class="row row-no-padding-hor row-md-padding-ver">
-                                        <div class="col-12 align-right">
-                                            <h4 class="no-margin">Waiting</h4>
+                                        <div class="col-12">
+                                            <h4 class="align-left no-margin">Waiting</h4>
                                             <span class="x-dark large">5% Change</span>
                                         </div>
                                     </div>
+                                    <div class="static-100 align-right">
+                                        <span class="x-largest ui-text">157</span>
+                                    </div>
                                 </div>
-                                <p class="dark margin-15-b">Pending for the transaction.</p>
-                                <div class="progress-bar margin-15-b progress-sm rounded">
+                                <div class="progress-bar margin-15-t progress-sm rounded">
                                     <span class="ui-dark" style="width: 45%;"></span>
                                 </div>
+                                <p class="x-dark large margin-5-b">Pending for the transaction.</p>
                                 <p class="light">
                                     <span class="dark block">Total: 45%</span>
                                     <i class="icon icon-xs icon-clock margin-3-r"></i>
@@ -437,20 +574,20 @@
                         <div class="col-xl-3 col-6 sm-responsive theme-yellow">
                             <div class="portlet full-height padding-15 rounded shadow-lg">
                                 <div class="col-static no-responsive">
-                                    <div class="static-100">
-                                        <span class="x-largest ui-text">23</span>
-                                    </div>
                                     <div class="row row-no-padding-hor row-md-padding-ver">
-                                        <div class="col-12 align-right">
-                                            <h4 class="no-margin">Paused</h4>
+                                        <div class="col-12">
+                                            <h4 class="align-left no-margin">Paused</h4>
                                             <span class="x-dark large">3% Change</span>
                                         </div>
                                     </div>
+                                    <div class="static-100 align-right">
+                                        <span class="x-largest ui-text">23</span>
+                                    </div>
                                 </div>
-                                <p class="dark margin-15-b">Paused for the some reasons.</p>
-                                <div class="progress-bar margin-15-b progress-sm rounded">
+                                <div class="progress-bar margin-15-t progress-sm rounded">
                                     <span class="ui-dark" style="width: 5%;"></span>
                                 </div>
+                                <p class="x-dark large margin-5-b">Paused for the some reasons.</p>
                                 <p class="light">
                                     <span class="dark block">Total: 5%</span>
                                     <i class="icon icon-xs icon-clock margin-3-r"></i>
@@ -458,23 +595,23 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-6 sm-responsive theme-panel2">
+                        <div class="col-xl-3 col-6 sm-responsive theme-green">
                             <div class="portlet full-height padding-15 rounded shadow-lg">
                                 <div class="col-static no-responsive">
-                                    <div class="static-100">
-                                        <span class="x-largest ui-text">256</span>
-                                    </div>
                                     <div class="row row-no-padding-hor row-md-padding-ver">
-                                        <div class="col-12 align-right">
-                                            <h4 class="no-margin">Completed</h4>
+                                        <div class="col-12">
+                                            <h4 class="align-left no-margin">Completed</h4>
                                             <span class="x-dark large">19% Change</span>
                                         </div>
                                     </div>
+                                    <div class="static-100 align-right">
+                                        <span class="x-largest ui-text">256</span>
+                                    </div>
                                 </div>
-                                <p class="dark margin-15-b">Reached for the expert.</p>
-                                <div class="progress-bar margin-15-b progress-sm rounded">
+                                <div class="progress-bar margin-15-t progress-sm rounded">
                                     <span class="ui-dark" style="width: 80%;"></span>
                                 </div>
+                                <p class="x-dark large margin-5-b">Reached for the expert.</p>
                                 <p class="light">
                                     <span class="dark block">Total: 80%</span>
                                     <i class="icon icon-xs icon-clock margin-3-r"></i>
@@ -485,20 +622,20 @@
                         <div class="col-xl-3 col-6 sm-responsive theme-panel">
                             <div class="portlet full-height padding-15 rounded shadow-lg">
                                 <div class="col-static no-responsive">
-                                    <div class="static-100">
-                                        <span class="x-largest ui-text">256</span>
-                                    </div>
                                     <div class="row row-no-padding-hor row-md-padding-ver">
-                                        <div class="col-12 align-right">
-                                            <h4 class="no-margin">On Payment</h4>
+                                        <div class="col-12">
+                                            <h4 class="align-left no-margin">On Payment</h4>
                                             <span class="x-dark large">53% Change</span>
                                         </div>
                                     </div>
+                                    <div class="static-100 align-right">
+                                        <span class="x-largest ui-text">256</span>
+                                    </div>
                                 </div>
-                                <p class="dark margin-15-b">Confirmed for payment.</p>
-                                <div class="progress-bar margin-15-b progress-sm rounded">
+                                <div class="progress-bar margin-15-t progress-sm rounded">
                                     <span class="ui-dark" style="width: 67%;"></span>
                                 </div>
+                                <p class="x-dark large margin-5-b">Confirmed for payment.</p>
                                 <p class="light">
                                     <span class="dark block">Total: 67%</span>
                                     <i class="icon icon-xs icon-clock margin-3-r"></i>
@@ -506,7 +643,27 @@
                                 </p>               
                             </div>
                         </div>
+                        
+                        <div class="col-xl-3 col-6 sm-responsive">
+                            <div class="portlet full-height padding-15 rounded shadow-lg">
+                                <div class="dropdown submenu-left right">
+                                    <button class="btn btn-square btn-ghost rounded ease-btn">
+                                        <i class="icon icon-sm icon-ellipsis-ver ease-layout"></i>
+                                    </button>
+                                    <ul class="content has-icon rounded shadow-lg ease-dropdown">
+                                        <li><a href="#"><i class="list-icon icon icon-md icon-calendar"></i>Add to Your Calendar</a></li>
+                                        <li class="sep"></li>
+                                        <li><a href="#"><i class="list-icon icon icon-md icon-eye"></i>See All Events</a></li>
+                                    </ul>
+                                </div>
+                                <h3 class="align-left">Events</h3>
+                                <div class="calendar ease-calendar rounded no-padding" data-src="json/events.json" data-date="2019,6"></div>
+                            </div>
+                        </div>
+
                     </div>
+
+                    <!-- layouts: end -->
 
                 </div>
 
