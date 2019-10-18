@@ -14,43 +14,45 @@
     <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
 
     <!-- CSS Tools -->
-    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/reset.css"/>
 
-    <link rel="stylesheet" href="../css/animations.css" />
-    <link rel="stylesheet" href="../css/autocomplete.css" />
-    <link rel="stylesheet" href="../css/alignments.css" />
-    <link rel="stylesheet" href="../css/buttons.css" />
-    <link rel="stylesheet" href="../css/borders.css" />
-    <link rel="stylesheet" href="../css/calendar.css" />
-    <link rel="stylesheet" href="../css/donut-chart.css" />
-    <link rel="stylesheet" href="../css/dropdown.css" />
-    <link rel="stylesheet" href="../css/forms.css" />
-    <link rel="stylesheet" href="../css/form-icons.css" />
-    <link rel="stylesheet" href="../css/grid.css" />
-    <link rel="stylesheet" href="../css/helpers.css" />
-    <link rel="stylesheet" href="../css/icons.css" />
-    <link rel="stylesheet" href="../css/icons-notifiers.css" />
-    <link rel="stylesheet" href="../css/line-charts.css" />
-    <link rel="stylesheet" href="../css/listings.css" />
-    <link rel="stylesheet" href="../css/margins.css" />
-    <link rel="stylesheet" href="../css/mobile-menu.css" />
-    <link rel="stylesheet" href="../css/paddings.css" />
-    <link rel="stylesheet" href="../css/photo-images.css" />
-    <link rel="stylesheet" href="../css/photo-gallery.css" />
-    <link rel="stylesheet" href="../css/pie-chart.css" />
-    <link rel="stylesheet" href="../css/portlets.css" />
-    <link rel="stylesheet" href="../css/progress-bar.css" />
-    <link rel="stylesheet" href="../css/scrollbar.css" />
-    <link rel="stylesheet" href="../css/static-grid.css" />
-    <link rel="stylesheet" href="../css/stripes.css" />
-    <link rel="stylesheet" href="../css/tabs.css" />
-    <link rel="stylesheet" href="../css/tables.css" />
-    <link rel="stylesheet" href="../css/timeline.css" />
-    <link rel="stylesheet" href="../css/transitions.css" />
-    <link rel="stylesheet" href="../css/typography.css" />
-    <link rel="stylesheet" href="../css/swatches.css" />
-    <link rel="stylesheet" href="../css/tooltip.css" />
-    <link rel="stylesheet" href="../css/top-button.css" />
+    <link rel="stylesheet" href="../css/animations.css"/>
+    <link rel="stylesheet" href="../css/autocomplete.css"/>
+    <link rel="stylesheet" href="../css/alignments.css"/>
+    <link rel="stylesheet" href="../css/buttons.css"/>
+    <link rel="stylesheet" href="../css/borders.css"/>
+    <link rel="stylesheet" href="../css/calendar.css"/>
+    <link rel="stylesheet" href="../css/donut-chart.css"/>
+    <link rel="stylesheet" href="../css/dropdown.css"/>
+    <link rel="stylesheet" href="../css/forms.css"/>
+    <link rel="stylesheet" href="../css/form-icons.css"/>
+    <link rel="stylesheet" href="../css/grid.css"/>
+    <link rel="stylesheet" href="../css/helpers.css"/>
+    <link rel="stylesheet" href="../css/icons.css"/>
+    <link rel="stylesheet" href="../css/icons-notifiers.css"/>
+    <link rel="stylesheet" href="../css/line-charts.css"/>
+    <link rel="stylesheet" href="../css/listings.css"/>
+    <link rel="stylesheet" href="../css/margins.css"/>
+    <link rel="stylesheet" href="../css/mobile-menu.css"/>
+    <link rel="stylesheet" href="../css/modal.css"/>
+    <link rel="stylesheet" href="../css/paddings.css"/>
+    <link rel="stylesheet" href="../css/photo-images.css"/>
+    <link rel="stylesheet" href="../css/photo-gallery.css"/>
+    <link rel="stylesheet" href="../css/pie-chart.css"/>
+    <link rel="stylesheet" href="../css/portlets.css"/>
+    <link rel="stylesheet" href="../css/progress-bar.css"/>
+    <link rel="stylesheet" href="../css/scrollbar.css"/>
+    <link rel="stylesheet" href="../css/static-grid.css"/>
+    <link rel="stylesheet" href="../css/stripes.css"/>
+    <link rel="stylesheet" href="../css/tabs.css"/>
+    <link rel="stylesheet" href="../css/tables.css"/>
+    <link rel="stylesheet" href="../css/timeline.css"/>
+    <link rel="stylesheet" href="../css/transitions.css"/>
+    <link rel="stylesheet" href="../css/typography.css"/>
+    <link rel="stylesheet" href="../css/sticky-header.css"/>
+    <link rel="stylesheet" href="../css/swatches.css"/>
+    <link rel="stylesheet" href="../css/tooltip.css"/>
+    <link rel="stylesheet" href="../css/top-button.css"/>
 
     <!-- Javascript Tools -->
     <script src="../js/selector.js"></script>
@@ -64,10 +66,12 @@
     <script src="../js/forms.js"></script>
     <script src="../js/line-charts.js"></script>
     <script src="../js/mobile-menu.js"></script>
+    <script src="../js/modal.js"></script>
     <script src="../js/photo-gallery.js"></script>
     <script src="../js/portlets.js"></script>
     <script src="../js/pie-chart.js"></script>
     <script src="../js/static-grid.js"></script>
+    <script src="../js/sticky-header.js"></script>
     <script src="../js/swatches.js"></script>
     <script src="../js/tabs.js"></script>
     <script src="../js/top-button.js"></script>
@@ -76,7 +80,7 @@
     <script src="../js/user-agents.js"></script>
 
     <!-- font icons CSS -->
-    <link rel="stylesheet" href="icons/font-icons/fill/font-icons.css" />
+    <link rel="stylesheet" href="icons/font-icons/fill/font-icons.css"/>
 
     <!-- custom CSS -->
     <style>
@@ -96,15 +100,16 @@
         .theme-panel2.ui-border,.theme-panel2 .ui-border { border-color: #ff103b; }
         .theme-panel2.ui-x-dark,.theme-panel2 .ui-x-dark:not([class*="theme-"]) { background-color: #cf1335; }
 
-        .sidebar{ background-image: linear-gradient(135deg, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.15)); }
+        .sidebar { background-image: linear-gradient(135deg, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.15)); }
+        header { background-color: #fefefe; }
 </style>
 
     <!-- custom js -->
     <script>
 
-        tooltip.theme = "theme-panel2 ui-dark";
+        tooltip.theme = "theme-panel ui-dark";
         autocomplete.classes = 'rounded shadow-lg';
-        calendar.todayTheme = 'theme-panel2 ui-dark' // use swatches
+        calendar.todayTheme = 'theme-panel ui-dark' // use swatches
 
     </script>
 
@@ -120,7 +125,7 @@
             <div class="static-250 set-relative hidden-md theme-panel">
                 <div class="sidebar static-250 full-height set-fixed set-left ui-dark v-scroll scrollbar">
 
-                    <div class="padding-15-v">
+                    <div class="padding-15-t">
                         <img class="img-responsive" src="img/logo-udashboard.png" alt="Logo">
                     </div>
 
@@ -257,295 +262,110 @@
                 </div>
             </div>
 
-            <div class="row row-lg-padding padding-15 sm-no-padding">
+            <div class="row row-lg-padding padding-15 md-no-padding">
 
-                <div class="col-12">
-
-                    <div class="col-static md-responsive">
-                        <div class="xl-static-600 lg-static-400 static-250 order-md-last sm-no-padding">
-
-                            <span class="sp10 visible-md"></span>
-                            <form action="#">
-                                <div data-src="json/company.json" data-val="s" class="autocomplete text text-lg text-icon text-icon-lg text-icon-both has-clear rounded no-bordered inner-shadow-sm theme-gray ui-x-light ease-form">
-                                    <i class="icon icon-sm icon-search text-icon-left margin-5-l ease-layout"></i>
-                                    <button class="clear-form icon icon-xs icon-remove text-icon-right margin-5-r ease-layout"></button>
-                                    <input type="text" placeholder="Search">
-                                </div>
-                            </form>
-                            
+                <!--
+                    <form action="#">
+                        <div data-src="json/company.json" data-val="s" class="autocomplete text text-lg text-icon text-icon-lg text-icon-both has-clear rounded no-bordered inner-shadow-sm theme-gray ui-x-light ease-form">
+                            <i class="icon icon-sm icon-search text-icon-left margin-5-l ease-layout"></i>
+                            <button class="clear-form icon icon-xs icon-remove text-icon-right margin-5-r ease-layout"></button>
+                            <input type="text" placeholder="Search">
                         </div>
-                        <div class="row row-no-padding">
-                            <div class="col-12 x-dark align-right">
+                    </form>
+                -->
 
-                                <div class="align-center ease-1st-btn margin-5-r left visible-md">
-                                    <button class="btn btn-square btn-lg btn-ghost circle show-mobile-menu-left">
-                                        <i class="icon icon-md icon-bars-left no-opacity"></i>
-                                    </button>
-                                </div>
-                                <div class="left visible-md">
-                                    <img class="img-photo img-photo-sm circle" src="img/logo-udashboard-mini.png" alt="">
-                                </div>
+                <header class="col-12 sticky-md x-dark align-right padding-10-v ease-layout" data-classes="shadow-lg">
 
-                                <span class="align-center">
-                                    <button class="btn btn-square btn-lg btn-ghost circle ease-btn" data-tooltip="l" data-only="desktop" title="Chat">
-                                        <i class="icon icon-md icon-message notifier no-opacity"></i>
-                                    </button>
-                                    <span class="dropdown submenu-left">
-                                        <button class="btn btn-square btn-lg btn-ghost circle ease-btn" data-tooltip="r" data-only="desktop" title="Notification Center">
-                                            <i class="icon icon-md icon-bell notifier no-opacity"></i>
-                                        </button>
-                                        <ul class="content has-grid align-center rounded shadow-lg ease-dropdown">
-                                            <li><a href="#"><i class="icon icon-lg notifier icon-bell" data-notifier="3"></i>Alerts</a></li>
-                                            <li><a href="#"><i class="icon icon-lg notifier icon-write" data-notifier="26"></i>Notes</a></li>
-                                            <li><a href="#"><i class="icon icon-lg notifier icon-hourglass-finish" data-notifier="8"></i>Delayed</a></li>
-                                            <li><a href="#"><i class="icon icon-lg notifier icon-hourglass-start" data-notifier="12"></i>Waiting</a></li>
-                                            <li class="sep"></li>
-                                            <li><a href="#"><i class="icon icon-lg icon-favorite-fill"></i>Favorites</a></li>
-                                            <li><a href="#"><i class="icon icon-lg icon-history"></i>History</a></li>
-                                        </ul>
-                                    </span>
-                                </span>
-
-                                <div class="align-center ease-1st-btn right margin-5-l visible-md">
-                                    <button class="btn btn-square btn-lg btn-ghost circle show-mobile-menu-right">
-                                        <i class="icon icon-md icon-bars-right no-opacity"></i>
-                                    </button>
-                                </div>
-                                <div class="right margin-10-l">
-                                    <span class="dropdown submenu-left margin-10-l xs-no-margin right">
-                                        <button class="btn btn-lg btn-square no-padding circle scale-more ease-layout">
-                                            <img class="img-photo img-photo-sm circle" src="img/profile-image.jpg" alt="">
-                                        </button>
-                                        <ul class="content has-grid align-center rounded shadow-lg ease-dropdown">
-                                            <li><a href="#"><i class="icon icon-lg icon-user"></i>Profile</a></li>
-                                            <li><a href="#"><i class="icon icon-lg icon-calendar"></i>Calendar</a></li>
-                                            <li><a href="#"><i class="icon icon-lg icon-lock"></i>Lock Screen</a></li>
-                                            <li><a href="#"><i class="icon icon-lg icon-key"></i>Change Password</a></li>
-                                            <li class="sep"></li>
-                                            <li><a href="#"><i class="icon icon-lg icon-settings"></i>Settings</a></li>
-                                            <li><a href="#"><i class="icon icon-lg theme-panel2 ui-text icon-logout"></i>Logout</a></li>
-                                        </ul>
-                                    </span>
-                                    <span class="margin-3-t inline-block hidden-xs">aeminyuce</span>
-                                    <span class="small x-dark block hidden-xs">Premium</span>
-                                </div>
-
-                            </div>
+                    <div class="align-center margin-5-r left">
+                        <button class="btn btn-square btn-lg btn-ghost circle ease-btn show-mobile-menu-left visible-md">
+                            <i class="icon icon-md icon-bars-left no-opacity"></i>
+                        </button>
+                        <button class="btn btn-square btn-lg btn-ghost circle ease-btn" data-tooltip data-only="desktop" title="Search">
+                            <i class="icon icon-md icon-search no-opacity"></i>
+                        </button>
+                        <span class="hidden-md ease-1st-btn">
+                            <button class="btn btn-lg btn-ghost padding-10-h circle">
+                               <b>23</b> Waiting
+                            </button>
+                            <button class="btn btn-lg btn-ghost padding-10-h circle">
+                                <b>258</b> Expert
+                            </button>
+                            <button class="btn btn-lg btn-ghost padding-10-h circle">
+                                <b>49</b> 1st Audit
+                            </button>
+                            <button class="btn btn-lg btn-ghost padding-10-h circle">
+                                <b>19</b> 2nd Audit
+                            </button>
+                            <button class="btn btn-lg btn-ghost padding-10-h circle">
+                                <b>20</b> Pasused
+                            </button>
+                            <button class="btn btn-lg btn-ghost padding-10-h circle">
+                                <b>68</b> Delayed
+                            </button>
+                        </span>
+                        <div class="dropdown visible-md">
+                            <button class="btn btn-square btn-lg btn-ghost circle ease-btn">
+                                <i class="icon icon-md icon-ellipsis-ver no-opacity"></i>
+                            </button>
+                            <ul class="content has-icon shadow-lg v-scroll ease-dropdown">
+                                <li><a href="#"><b class="list-icon no-opacity">23</b>Waiting</a></li>
+                                <li><a href="#"><b class="list-icon no-opacity">258</b> Expert</a></li>
+                                <li><a href="#"><b class="list-icon no-opacity">49</b> 1st Audit</a></li>
+                                <li><a href="#"><b class="list-icon no-opacity">19</b> 2nd Audit</a></li>
+                                <li><a href="#"><b class="list-icon no-opacity">20</b> Paused</a></li>
+                                <li><a href="#"><b class="list-icon no-opacity">68</b> Delayed</a></li>
+                            </ul>
                         </div>
                     </div>
 
-                </div>
-                <div class="col-12">
+                    <span class="align-center">
+                        <button class="btn btn-square btn-lg btn-ghost circle ease-btn" data-tooltip data-only="desktop" title="Chat">
+                            <i class="icon icon-md icon-message notifier no-opacity"></i>
+                        </button>
+                        <span class="dropdown submenu-left">
+                            <button class="btn btn-square btn-lg btn-ghost circle ease-btn" data-tooltip="r" data-only="desktop" title="Notification Center">
+                                <i class="icon icon-md icon-bell notifier no-opacity"></i>
+                            </button>
+                            <ul class="content has-grid align-center rounded shadow-lg ease-dropdown">
+                                <li><a href="#"><i class="icon icon-lg notifier icon-bell" data-notifier="3"></i>Alerts</a></li>
+                                <li><a href="#"><i class="icon icon-lg notifier icon-write" data-notifier="26"></i>Notes</a></li>
+                                <li><a href="#"><i class="icon icon-lg notifier icon-hourglass-finish" data-notifier="8"></i>Delayed</a></li>
+                                <li><a href="#"><i class="icon icon-lg notifier icon-hourglass-start" data-notifier="12"></i>Waiting</a></li>
+                                <li class="sep"></li>
+                                <li><a href="#"><i class="icon icon-lg icon-favorite-fill"></i>Favorites</a></li>
+                                <li><a href="#"><i class="icon icon-lg icon-history"></i>History</a></li>
+                            </ul>
+                        </span>
+                    </span>
+
+                    <div class="right margin-10-l">
+                        <span class="dropdown submenu-left margin-10-l xs-no-margin right">
+                            <button class="btn btn-lg btn-square no-padding circle scale-more ease-layout">
+                                <img class="img-photo img-photo-sm circle" src="img/profile-image.jpg" alt="">
+                            </button>
+                            <ul class="content has-grid align-center rounded shadow-lg ease-dropdown">
+                                <li><a href="#"><i class="icon icon-lg icon-user"></i>Profile</a></li>
+                                <li><a href="#"><i class="icon icon-lg icon-calendar"></i>Calendar</a></li>
+                                <li><a href="#"><i class="icon icon-lg icon-lock"></i>Lock Screen</a></li>
+                                <li><a href="#"><i class="icon icon-lg icon-key"></i>Change Password</a></li>
+                                <li class="sep"></li>
+                                <li><a href="#"><i class="icon icon-lg icon-settings"></i>Settings</a></li>
+                                <li><a href="#"><i class="icon icon-lg theme-panel2 ui-text icon-logout"></i>Logout</a></li>
+                            </ul>
+                        </span>
+                        <span class="margin-3-t inline-block hidden-xs">aeminyuce</span>
+                        <span class="small x-dark block hidden-xs">Premium</span>
+                    </div>
+
+                </header>
+
+                <div class="clearfix"></div>
+                
+                <div class="col-12 no-padding-t">
 
                     <!-- layouts: start-->
 
                     <div class="row">
-
-                        <div class="col-xl-3 col-6 sm-responsive">
-                            <div class="portlet full-height padding-15 rounded shadow-lg">
-                                <div class="dropdown submenu-left right">
-                                    <button class="btn btn-square btn-ghost rounded ease-btn">
-                                        <i class="icon icon-sm icon-ellipsis-ver ease-layout"></i>
-                                    </button>
-                                    <ul class="content has-icon rounded shadow-lg ease-dropdown">
-                                        <li><a href="#"><i class="list-icon icon icon-md icon-file-pdf"></i>Download PDF</a></li>
-                                        <li><a href="#"><i class="list-icon icon icon-md icon-file-xls"></i>Download Excel</a></li>
-                                        <li class="sep"></li>
-                                        <li><a href="#"><i class="list-icon icon icon-md icon-eye"></i>See Detailed Activity</a></li>
-                                    </ul>
-                                </div>
-                                <h3 class="align-left">Daily Activity</h3>
-                                <div class="col-static no-responsive">
-                                    <div class="static-150 theme-panel ui-text">
-                                        <i class="icon icon-xl icon-history margin-5-r"></i>
-                                        <strong class="x-largest inline-block">436</strong>
-                                    </div>
-                                    <div class="row row row-no-padding-hor row-md-padding-ver">
-                                        <div class="col-12">
-                                            <h4 class="align-left no-margin">Present Progress</h4>
-                                            <span class="x-dark large">23% Change</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="progress-bar margin-25-v progress-sm rounded">
-                                    <span class="theme-panel ui-dark stripe-light animate-progress" style="width: 67%;"></span>
-                                </div>
-                                <div class="row row-no-padding-ver">
-                                    <div class="col-4 no-responsive">
-                                        <div class="donut-chart ease-donut-chart">
-                                            <strong>
-                                                <b class="x-dark margin-2-b block">25%</b>
-                                                <span class="small semibold">Orders</span>
-                                            </strong>
-                                            <svg viewBox="0 0 160 160">
-                                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
-                                                <circle r="69.85699" cy="80" cx="80" stroke="#ffa600" data-percent="25" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 no-responsive">
-                                        <div class="donut-chart ease-donut-chart">
-                                            <strong>
-                                                <b class="x-dark margin-2-b block">69%</b>
-                                                <span class="small semibold">Payments</span>
-                                            </strong>
-                                            <svg viewBox="0 0 160 160">
-                                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
-                                                <circle r="69.85699" cy="80" cx="80" stroke="#ffa600" data-percent="69" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 no-responsive">
-                                        <div class="pie-chart ease-pie-chart" data-text="Profit">
-                                            <ul>
-                                                <li data-percent="70" data-fill="#75dbe7"></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="x-dark x-large margin-15-b margin-10-t">Daily reports that all received.</p>
-                                <p class="light">
-                                    <span class="dark block">Total: 67%</span>
-                                    <i class="icon icon-xs icon-clock margin-3-r"></i>
-                                    <span class="inline-block">Last updated: 15:12</span>
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <div class="col-xl-6 col-6 sm-responsive">
-                            <div class="portlet full-height padding-15 rounded shadow-lg">
-                                <div class="dropdown submenu-left right">
-                                    <button class="btn btn-square btn-ghost rounded ease-btn">
-                                        <i class="icon icon-sm icon-ellipsis-ver ease-layout"></i>
-                                    </button>
-                                    <ul class="content has-icon rounded shadow-lg ease-dropdown">
-                                        <li><a href="#"><i class="list-icon icon icon-md icon-file-pdf"></i>Download PDF</a></li>
-                                        <li><a href="#"><i class="list-icon icon icon-md icon-file-xls"></i>Download Excel</a></li>
-                                        <li class="sep"></li>
-                                        <li><a href="#"><i class="list-icon icon icon-md icon-eye"></i>See Detailed Statistics</a></li>
-                                    </ul>
-                                </div>
-                                <h3 class="align-left">Statistics</h3>
-                                <div class="line-charts ease-line-charts" data-size="6,44" data-x="Sep,Oct,Nov,Dec,Jan,Fab">
-                                    <ul class="line" data-name="Past year" data-type="curved filled">
-                                        <li data-y="34" data-link="#"></li>
-                                        <li data-y="56" data-link="#"></li>
-                                        <li data-y="112" data-link="#"></li>
-                                        <li data-y="28" data-link="#"></li>
-                                        <li data-y="20" data-link="#"></li>
-                                        <li data-y="48" data-link="#"></li>
-                                    </ul>
-                                    <ul class="line" data-name="This year" data-type="curved filled">
-                                        <li data-y="120" data-link="#"></li>
-                                        <li data-y="20" data-link="#"></li>
-                                        <li data-y="159" data-link="#"></li>
-                                        <li data-y="80" data-link="#"></li>
-                                        <li data-y="0" data-link="#"></li>
-                                        <li data-y="72" data-link="#"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-xl-3 col-6 sm-responsive">
-                            <div class="portlet full-height padding-15 rounded shadow-lg">
-                                <div class="dropdown submenu-left right">
-                                    <button class="btn btn-square btn-ghost rounded ease-btn">
-                                        <i class="icon icon-sm icon-ellipsis-ver ease-layout"></i>
-                                    </button>
-                                    <ul class="content has-icon rounded shadow-lg ease-dropdown">
-                                        <li><a href="#"><i class="list-icon icon icon-md icon-calendar"></i>Add to Your Calendar</a></li>
-                                        <li class="sep"></li>
-                                        <li><a href="#"><i class="list-icon icon icon-md icon-eye"></i>See All News</a></li>
-                                    </ul>
-                                </div>
-                                <h3 class="align-left margin-5-b">News</h3>
-                                <div class="btn-tabs theme-panel" data-classes="ui-border">
-                                    <div class="row row-no-padding x-dark margin-15-b ease-2nd-btn">
-                                        <div class="col-6 no-responsive">
-                                            <button class="btn-tab btn btn-lg btn-ghost bottom-bordered dual-bordered block rounded-top ui-border active">Company</button>
-                                        </div>
-                                        <div class="col-6 no-responsive">
-                                            <button class="btn-tab btn btn-lg btn-ghost bottom-bordered dual-bordered block rounded-top">Employees</button>
-                                        </div>
-                                    </div>
-                                    <ul class="tab-content timeline left-side hide-h-lines no-margin v-scroll open" style="height: 259px;">
-                                        <li class="ui-text">
-                                            <span class="card xx-dark no-padding-v no-padding-r">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                <span class="margin-5-t padding-15-l block ease-2nd-layout">
-                                                    <a style="margin-left: -15px;" href="#"><img class="img-photo-sm dual-bordered circle scale-more" style="border-color: #fff;" src="img/profile-image.jpg" alt=""></a>
-                                                    <a style="margin-left: -15px;" href="#"><img class="img-photo-sm dual-bordered circle scale-more" style="border-color: #fff;" src="img/profile-image2.jpg" alt=""></a>
-                                                    <a style="margin-left: -15px;" href="#"><img class="img-photo-sm dual-bordered circle scale-more" style="border-color: #fff;" src="img/profile-image3.jpg" alt=""></a>
-                                                </span>
-                                            </span>
-                                        </li>
-                                        <li class="ui-text">
-                                            <span class="card xx-dark no-padding-v no-padding-r">
-                                                Nullam sit amet sagittis nisi.
-                                                <span class="margin-5-t block ease-1st-btn">
-                                                    <a class="btn btn-lg btn-square btn-ghost bordered rounded" href="#"><i class="icon icon-lg icon-file-pdf no-opacity ui-text"></i></a>
-                                                    <a class="btn btn-lg btn-square btn-ghost bordered rounded" href="#"><i class="icon icon-lg icon-file-xls no-opacity ui-text"></i></a>
-                                                    <a class="btn btn-lg btn-square btn-ghost bordered rounded" href="#"><i class="icon icon-lg icon-file-zip no-opacity ui-text"></i></a>
-                                                </span>
-                                            </span>
-                                        </li>
-                                        <li class="ui-text">
-                                            <span class="card xx-dark no-padding-v no-padding-r">
-                                                Etiam bibendum molestie lectus sit amet aliquet.
-                                            </span>
-                                        </li>
-                                        <li class="ui-text">
-                                            <span class="card xx-dark no-padding-v no-padding-r">
-                                                Aenean imperdiet dolor nibh, a porta nunc maximus vitae.
-                                            </span>
-                                        </li>
-                                        <li class="ui-text">
-                                            <span class="card xx-dark no-padding-v no-padding-r">
-                                                Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.
-                                            </span>
-                                        </li>
-                                    </ul>
-                                    <ul class="tab-content timeline left-side hide-h-lines no-margin v-scroll" style="height: 259px;">
-                                        <li class="ui-text">
-                                            <span class="card xx-dark no-padding-v no-padding-r">
-                                                Nullam sit amet sagittis nisi.
-                                            </span>
-                                        </li>
-                                        <li class="ui-text">
-                                            <span class="card xx-dark no-padding-v no-padding-r">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                <span class="photo-gallery margin-5-t ease-photo-gallery">
-                                                    <a class="img inline-block rounded" href="img/image_07.jpg"><img src="img/thumb_07.jpg" height="42" alt=""></a>
-                                                    <a class="img inline-block rounded" href="img/image_02.jpg"><img src="img/thumb_02.jpg" height="42" alt=""></a>
-                                                    <a class="img inline-block rounded" href="img/image_03.jpg"><img src="img/thumb_03.jpg" height="42" alt=""></a>
-                                                </span>
-                                            </span>
-                                        </li>
-                                        <li class="ui-text">
-                                            <span class="card xx-dark no-padding-v no-padding-r">
-                                                Etiam bibendum molestie lectus sit amet aliquet.
-                                            </span>
-                                        </li>
-                                        <li class="ui-text">
-                                            <span class="card xx-dark no-padding-v no-padding-r">
-                                                Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.
-                                            </span>
-                                        </li>
-                                        <li class="ui-text">
-                                            <span class="card xx-dark no-padding-v no-padding-r">
-                                                Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.
-                                            </span>
-                                        </li>
-                                        <li class="ui-text">
-                                            <span class="card xx-dark no-padding-v no-padding-r">
-                                                Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.
-                                            </span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
 
                         <div class="col-xl-3 col-6 sm-responsive theme-yellow">
                             <div class="portlet full-height padding-15 rounded shadow-lg">
@@ -643,6 +463,222 @@
                                 </p>               
                             </div>
                         </div>
+
+                        <div class="col-xl-3 col-6 sm-responsive">
+                            <div class="portlet full-height padding-15 rounded shadow-lg">
+                                <div class="dropdown submenu-left right">
+                                    <button class="btn btn-square btn-ghost rounded ease-btn">
+                                        <i class="icon icon-sm icon-ellipsis-ver ease-layout"></i>
+                                    </button>
+                                    <ul class="content has-icon rounded shadow-lg ease-dropdown">
+                                        <li><a href="#"><i class="list-icon icon icon-md icon-file-pdf"></i>Download PDF</a></li>
+                                        <li><a href="#"><i class="list-icon icon icon-md icon-file-xls"></i>Download Excel</a></li>
+                                        <li class="sep"></li>
+                                        <li><a href="#"><i class="list-icon icon icon-md icon-eye"></i>See Detailed Activity</a></li>
+                                    </ul>
+                                </div>
+                                <h3 class="align-left">Daily Activity</h3>
+                                <div class="col-static no-responsive">
+                                    <div class="static-150 theme-panel ui-text">
+                                        <i class="icon icon-xl icon-history margin-5-r"></i>
+                                        <strong class="x-largest inline-block">436</strong>
+                                    </div>
+                                    <div class="row row row-no-padding-hor row-md-padding-ver">
+                                        <div class="col-12">
+                                            <h4 class="align-left no-margin">Present Progress</h4>
+                                            <span class="x-dark large">23% Change</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="progress-bar margin-25-v progress-sm rounded">
+                                    <span class="theme-panel ui-dark" style="width: 67%;"></span>
+                                </div>
+                                <div class="row row-no-padding-ver">
+                                    <div class="col-4 no-responsive">
+                                        <div class="donut-chart ease-donut-chart">
+                                            <strong>
+                                                <b class="x-dark margin-2-b block">25%</b>
+                                                <span class="small semibold">Orders</span>
+                                            </strong>
+                                            <svg viewBox="0 0 160 160">
+                                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                                <circle r="69.85699" cy="80" cx="80" stroke="#cd7be8" data-percent="25" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 no-responsive">
+                                        <div class="donut-chart ease-donut-chart">
+                                            <strong>
+                                                <b class="x-dark margin-2-b block">69%</b>
+                                                <span class="small semibold">Payments</span>
+                                            </strong>
+                                            <svg viewBox="0 0 160 160">
+                                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                                <circle r="69.85699" cy="80" cx="80" stroke="#75dbe7" data-percent="69" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 no-responsive">
+                                        <div class="pie-chart ease-pie-chart" data-text="Profit">
+                                            <ul>
+                                                <li data-percent="70" data-fill="#a4e87b"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="x-dark x-large margin-15-b margin-10-t">Daily reports that all received.</p>
+                                <p class="light">
+                                    <span class="dark block">Total: 67%</span>
+                                    <i class="icon icon-xs icon-clock margin-3-r"></i>
+                                    <span class="inline-block">Last updated: 15:12</span>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xl-6 col-6 sm-responsive">
+                            <div class="portlet full-height padding-15 rounded shadow-lg">
+                                <div class="dropdown submenu-left right">
+                                    <button class="btn btn-square btn-ghost rounded ease-btn">
+                                        <i class="icon icon-sm icon-ellipsis-ver ease-layout"></i>
+                                    </button>
+                                    <ul class="content has-icon rounded shadow-lg ease-dropdown">
+                                        <li><a href="#"><i class="list-icon icon icon-md icon-file-pdf"></i>Download PDF</a></li>
+                                        <li><a href="#"><i class="list-icon icon icon-md icon-file-xls"></i>Download Excel</a></li>
+                                        <li class="sep"></li>
+                                        <li><a href="#"><i class="list-icon icon icon-md icon-eye"></i>See Detailed Statistics</a></li>
+                                    </ul>
+                                </div>
+                                <h3 class="align-left">Statistics</h3>
+                                <div class="line-charts ease-line-charts" data-size="6,44" data-x="Sep,Oct,Nov,Dec,Jan,Fab">
+                                    <ul class="line" data-name="Past year" data-type="curved filled">
+                                        <li data-y="34" data-link="#"></li>
+                                        <li data-y="56" data-link="#"></li>
+                                        <li data-y="112" data-link="#"></li>
+                                        <li data-y="28" data-link="#"></li>
+                                        <li data-y="20" data-link="#"></li>
+                                        <li data-y="48" data-link="#"></li>
+                                    </ul>
+                                    <ul class="line" data-name="This year" data-type="curved filled">
+                                        <li data-y="120" data-link="#"></li>
+                                        <li data-y="20" data-link="#"></li>
+                                        <li data-y="159" data-link="#"></li>
+                                        <li data-y="80" data-link="#"></li>
+                                        <li data-y="0" data-link="#"></li>
+                                        <li data-y="72" data-link="#"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xl-3 col-6 sm-responsive">
+                            <div class="portlet full-height padding-15 rounded shadow-lg">
+                                <div class="dropdown submenu-left right">
+                                    <button class="btn btn-square btn-ghost rounded ease-btn">
+                                        <i class="icon icon-sm icon-ellipsis-ver ease-layout"></i>
+                                    </button>
+                                    <ul class="content has-icon rounded shadow-lg ease-dropdown">
+                                        <li><a href="#"><i class="list-icon icon icon-md icon-calendar"></i>Add to Your Calendar</a></li>
+                                        <li class="sep"></li>
+                                        <li><a href="#"><i class="list-icon icon icon-md icon-eye"></i>See All News</a></li>
+                                    </ul>
+                                </div>
+                                <h3 class="align-left margin-5-b">News</h3>
+                                <div class="btn-tabs theme-panel" data-classes="ui-border">
+                                    <div class="row row-no-padding x-dark margin-15-b ease-2nd-btn">
+                                        <div class="col-6 no-responsive">
+                                            <button class="btn-tab btn btn-lg btn-ghost bottom-bordered dual-bordered block rounded-top ui-border active">Company</button>
+                                        </div>
+                                        <div class="col-6 no-responsive">
+                                            <button class="btn-tab btn btn-lg btn-ghost bottom-bordered dual-bordered block rounded-top">Employees</button>
+                                        </div>
+                                    </div>
+                                    <ul class="tab-content timeline left-side hide-h-lines no-margin v-scroll open" style="height: 259px;">
+                                        <li class="ui-text">
+                                            <span class="card xx-dark no-padding-v no-padding-r">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                <span class="photos-holder margin-5-t ease-2nd-layout">
+                                                    <a href="#"><img class="img-photo large-bordered circle scale-more" src="img/profile-image.jpg" alt=""></a>
+                                                    <a href="#"><img class="img-photo large-bordered circle scale-more" src="img/profile-image2.jpg" alt=""></a>
+                                                    <a href="#"><img class="img-photo large-bordered circle scale-more" src="img/profile-image3.jpg" alt=""></a>
+                                                    <a class="btn btn-lg no-margin circle ease-btn" href="#">
+                                                        <i class="icon icon-xxs icon-plus no-opacity"></i>
+                                                        <span class="x-large inline-block">12</span>
+                                                    </a>
+                                                </span>
+                                            </span>
+                                        </li>
+                                        <li class="ui-text">
+                                            <span class="card xx-dark no-padding-v no-padding-r">
+                                                Nullam sit amet sagittis nisi.
+                                                <span class="margin-5-t block ease-1st-btn">
+                                                    <a class="btn btn-lg btn-square btn-ghost bordered rounded" href="#"><i class="icon icon-lg icon-file-pdf no-opacity ui-text"></i></a>
+                                                    <a class="btn btn-lg btn-square btn-ghost bordered rounded" href="#"><i class="icon icon-lg icon-file-xls no-opacity ui-text"></i></a>
+                                                    <a class="btn btn-lg btn-square btn-ghost bordered rounded" href="#"><i class="icon icon-lg icon-file-zip no-opacity ui-text"></i></a>
+                                                </span>
+                                            </span>
+                                        </li>
+                                        <li class="ui-text">
+                                            <span class="card xx-dark no-padding-v no-padding-r">
+                                                Etiam bibendum molestie lectus sit amet aliquet.
+                                            </span>
+                                        </li>
+                                        <li class="ui-text">
+                                            <span class="card xx-dark no-padding-v no-padding-r">
+                                                Aenean imperdiet dolor nibh, a porta nunc maximus vitae.
+                                            </span>
+                                        </li>
+                                        <li class="ui-text">
+                                            <span class="card xx-dark no-padding-v no-padding-r">
+                                                Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.
+                                            </span>
+                                        </li>
+                                    </ul>
+                                    <ul class="tab-content timeline left-side hide-h-lines no-margin v-scroll" style="height: 259px;">
+                                        <li class="ui-text">
+                                            <span class="card xx-dark no-padding-v no-padding-r">
+                                                Nullam sit amet sagittis nisi.
+                                            </span>
+                                        </li>
+                                        <li class="ui-text">
+                                            <span class="card xx-dark no-padding-v no-padding-r">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                <span class="photo-gallery margin-5-t ease-photo-gallery">
+                                                    <a class="img margin-4-b inline-block rounded" href="img/image_01.jpg"><img src="img/thumb_01.jpg" height="42" alt=""></a>
+                                                    <a class="img margin-4-b inline-block rounded" href="img/image_02.jpg"><img src="img/thumb_02.jpg" height="42" alt=""></a>
+                                                    <a class="img margin-4-b inline-block rounded" href="img/image_03.jpg"><img src="img/thumb_03.jpg" height="42" alt=""></a>
+                                                    <a class="img margin-4-b inline-block rounded" href="img/image_04.jpg"><img src="img/thumb_04.jpg" height="42" alt=""></a>
+                                                    <a class="img margin-4-b inline-block rounded" href="img/image_05.jpg"><img src="img/thumb_05.jpg" height="42" alt=""></a>
+                                                    <a class="img margin-4-b inline-block rounded" href="img/image_06.jpg"><img src="img/thumb_06.jpg" height="42" alt=""></a>
+                                                    <a class="img margin-4-b inline-block rounded" href="img/image_07.jpg"><img src="img/thumb_07.jpg" height="42" alt=""></a>
+                                                    <a class="img margin-4-b inline-block rounded" href="img/image_08.jpg"><img src="img/thumb_08.jpg" height="42" alt=""></a>
+                                                    <a class="img margin-4-b inline-block rounded" href="img/image_09.jpg"><img src="img/thumb_09.jpg" height="42" alt=""></a>
+                                                </span>
+                                            </span>
+                                        </li>
+                                        <li class="ui-text">
+                                            <span class="card xx-dark no-padding-v no-padding-r">
+                                                Etiam bibendum molestie lectus sit amet aliquet.
+                                            </span>
+                                        </li>
+                                        <li class="ui-text">
+                                            <span class="card xx-dark no-padding-v no-padding-r">
+                                                Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.
+                                            </span>
+                                        </li>
+                                        <li class="ui-text">
+                                            <span class="card xx-dark no-padding-v no-padding-r">
+                                                Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.
+                                            </span>
+                                        </li>
+                                        <li class="ui-text">
+                                            <span class="card xx-dark no-padding-v no-padding-r">
+                                                Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                         
                         <div class="col-xl-3 col-6 sm-responsive">
                             <div class="portlet full-height padding-15 rounded shadow-lg">
@@ -677,8 +713,8 @@
         <button class="btn btn-square btn-lg btn-ghost rounded ease-btn close-mobile-menu">
             <i class="icon icon-sm icon-remove no-opacity"></i>
         </button>
-        <div class="mobile-menu-title">
-            <div class="x-large padding-10-v padding-15-h">Main Menu</div>
+        <div class="mobile-menu-title no-padding">
+            <img src="img/logo-udashboard.png" height="66" alt="Logo">
         </div>
         <div class="mobile-menu-content no-padding ui-x-dark v-scroll"></div>
     </div>
