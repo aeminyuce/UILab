@@ -4,7 +4,7 @@
 .timeline.ui-text:after { background-color: currentColor; }
 .timeline:not(:last-child) { margin-bottom: 20px; }
 
-.timeline > li { vertical-align: top; display: block; position: relative; }
+.timeline > li { display: block; position: relative; }
 .timeline > li:not(:last-child) { margin-bottom: 15px; }
 
 .timeline:not(.hide-h-lines) > li:before,.timeline > li:after { content: ""; display: block; position: absolute; top: 50%; transform: translateY(-50%); z-index: 1; }

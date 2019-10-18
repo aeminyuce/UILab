@@ -1,5 +1,5 @@
 /* form holder */
-.form-holder { vertical-align: middle; min-height: 32px; display: block; }
+.form-holder { min-height: 32px; display: block; }
 .form-holder .text,.form-holder .select { min-width: inherit !important; }
 
 .form-holder .btn[class*="bordered"] { border-color: rgba(0,0,0,.1); }

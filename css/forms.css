@@ -1,7 +1,7 @@
 /* forms */
 .ease-form,.ease-1st-form > *,.ease-2nd-form > * > * { transition-property: color, background-color, border-color; }
 
-.text,.textarea,.select,.select-multi { vertical-align: middle; border: solid 1px rgba(0,0,0,.15); overflow: hidden; display: block; position: relative; }
+.text,.textarea,.select,.select-multi { border: solid 1px rgba(0,0,0,.15); overflow: hidden; display: block; position: relative; }
 .text,.select,.mobile .select-multi { line-height: normal; min-height: 32px; }
 .text.text-lg,.select.select-lg { min-height: 42px; }
 
@@ -43,7 +43,7 @@ html:not(.mobile) .select-multi > .icon { display: none; }
 
 .check,.radio { vertical-align: middle; display: inline-block; }
 
-.file { vertical-align: middle; line-height: normal; min-height: 32px; border: solid 1px rgba(0,0,0,.15); overflow: hidden; display: block; position: relative; }
+.file { line-height: normal; min-height: 32px; border: solid 1px rgba(0,0,0,.15); overflow: hidden; display: block; position: relative; }
 .file input { vertical-align: middle; width: 100%; height: 30px; overflow: hidden; position: absolute; top: 0; left: 0; z-index: 3; opacity: 0; } /* don't change z-index! */
 .file.dual-bordered input { height: 28px; }
 .file.no-bordered input { height: 32px; }
