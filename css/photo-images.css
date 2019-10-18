@@ -1,4 +1,8 @@
 /* photo images */
+.photos-holder { padding-left: 15px; display: block; }
+.photos-holder > a,.photos-holder > [class*="img-photo"] { margin-left: -15px; }
+.photos-holder [class*="img-photo"] { border-color: #fff; }
+
 .img-photo-lg { width: 80px; height: 80px; }
 .img-photo { width: 50px; height: 50px; }
 .img-photo-sm { width: 42px; height: 42px; }
