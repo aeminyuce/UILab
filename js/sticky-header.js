@@ -12,13 +12,15 @@ var stickyHeader = {};
     /*globals window, document, events, selector */
     stickyHeader.Start = function () {
 
-        var header, screenW, clearStatic, stickyStatic;
+        var header, screenW, clearStatic, stickyStatic, classes;
 
         header = selector('header');
         if (header.length > 0) {
 
             header = header[0];
             screenW = window.innerWidth;
+
+            classes = header.getAttribute('data-classes');
 
             stickyStatic = events.hasClass(header, 'sticky-static');
             clearStatic = function () {
@@ -29,6 +31,10 @@ var stickyHeader = {};
 
                 events.removeClass(document, 'sticky-header');
                 events.removeClass(header, 'sticky');
+
+                if ( classes !== null && classes !== '' ) {
+                    events.removeClass(header, classes);
+                }
 
             };
 
@@ -47,6 +53,10 @@ var stickyHeader = {};
 
                 events.addClass(document, 'sticky-header');
                 events.addClass(header, 'sticky');
+
+                if ( classes !== null && classes !== '' ) {
+                    events.addClass(header, classes);
+                }
 
             } else { clearStatic(); }
 
