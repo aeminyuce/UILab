@@ -24,7 +24,8 @@
 .weather .now > span { font-size: 22px; line-height: normal; display: block; }
 .weather .w-date { font-size: 14px; font-weight: normal; margin-top: 2px; display: block; opacity: .65; }
 
-.weather .days { white-space: nowrap; list-style: none; padding: 0 0 15px 0; margin: 0 15px 15px 15px; overflow-x: auto !important; overflow-y: hidden !important; -webkit-overflow-scrolling: touch; }
+.weather .days { white-space: nowrap; list-style: none; padding: 0 0 15px 0; margin: 0 15px 15px 15px; overflow-x: auto !important; overflow-y: hidden !important; }
+.mobile .weather .days { -webkit-overflow-scrolling: touch; }
 .weather .days li { text-align: center; width: 20.65%; display: inline-block; }
 .weather .days li .icon { margin: 15px auto; display: block; }
 .weather .days li > span { line-height: 12px; display: inline-block; position: relative; opacity: .85; }

@@ -118,7 +118,7 @@ html:not(.portrait) .visible-portrait { display: none !important; }
     .xl-no-float { float: none !important; }
 }
 
-.scroll,.v-scroll,.h-scroll { -webkit-overflow-scrolling: touch; }
+.mobile .scroll,.mobile .v-scroll,.mobile .h-scroll { -webkit-overflow-scrolling: touch; }
 .scroll { overflow: auto !important; }
 .v-scroll { overflow-x: hidden !important; overflow-y: auto !important; }
 .h-scroll { overflow-x: auto !important; overflow-y: hidden !important; }

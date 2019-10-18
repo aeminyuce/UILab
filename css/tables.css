@@ -26,7 +26,8 @@
 .table-bordered th:not(:last-child),.table-bordered td:not(:last-child) { border-right: solid 1px #ddd; }
 .table-valign td,.table-valign th { vertical-align: middle !important; }
 
-.table-scrollable { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.table-scrollable { width: 100%; overflow-x: auto; }
+.mobile .table-scrollable { -webkit-overflow-scrolling: touch; }
 .table-scrollable .table { margin-bottom: 0 !important; }
 .table-scrollable > .table tr > * { white-space: nowrap; }
 
@@ -38,7 +39,8 @@
 html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover { background-color: rgba(0,0,0,.06); }
 
 @media (max-width: 959px) {
-    .table-responsive { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .table-responsive { width: 100%; overflow-x: auto; }
+    .mobile .table-responsive { -webkit-overflow-scrolling: touch; }
     .table-responsive .table { margin-bottom: 0 !important; }
     .table-responsive > .table tr > * { white-space: nowrap; }
 }
