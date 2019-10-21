@@ -108,7 +108,13 @@ var modal = {
 
                 bg = selector('.modal-bg')[0];
 
-                html = '<div class="modal-win active">' +
+                html = '<div class="modal-win';
+
+                if (set.bg !== undefined && set.bg === 'false') {
+                    html += ' no-bg';
+                }
+                
+                html += ' active">' +
                             '<div class="modal-content ' + styles + '"></div>' +
                         '</div>';
 

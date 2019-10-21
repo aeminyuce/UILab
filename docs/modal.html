@@ -16,6 +16,7 @@
     <!-- CSS Tools -->
     <link rel="stylesheet" href="../css/reset.css"/>
 
+    <link rel="stylesheet" href="../css/autocomplete.css"/>
     <link rel="stylesheet" href="../css/alignments.css"/>
     <link rel="stylesheet" href="../css/buttons.css"/>
     <link rel="stylesheet" href="../css/borders.css"/>
@@ -43,6 +44,7 @@
     <script src="../js/events.js"></script>
     
     <script src="../js/ajax.js"></script>
+    <script src="../js/autocomplete.js"></script>
     <script src="../js/forms.js"></script>
     <script src="../js/ie9-placeholders.js"></script>
     <script src="../js/required-forms.js"></script>
@@ -99,6 +101,13 @@
                         <dd class="margin-15-b">
                             Optional. Set the different source type of modal.<br>
                             Available values: <code>'ajax', 'iframe'</code>
+                        </dd>
+                        
+                        <dt>bg</dt>
+                        <dd class="margin-15-b">
+                            Optional. Set the background visibility of modal.<br>
+                            Default value: <code>true</code><br>
+                            Available values: <code>true, false</code>
                         </dd>
 
                         <dt>closable</dt>
@@ -213,6 +222,15 @@
 
                 <div class="col-12">
 
+                    <b>Bg:</b>
+                    <i class="x-dark margin-5-b block">Enable/Disable modal window background color.</i>
+                    <pre class="rounded margin-5-b">modal.open({<br>    source: '.modal-search-no-bg',<br>    bg: 'false'<br>});</pre>
+                    <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: '.modal-search-no-bg', size: 'inline', bg: 'false'});">Run Code</button>
+
+                </div>
+                
+                <div class="col-12">
+
                     <b>Closable:</b>
                     <i class="x-dark margin-5-b block">Close modal window with footer buttons.</i>
                     <pre class="rounded margin-5-b">modal.open({<br>    source: '.myModal',<br>    closable: false<br>});</pre>
@@ -314,6 +332,32 @@
                         <button class="btn btn-lg block rounded ui-x-dark ease-btn" type="submit">Search<i class="icon icon-md icon-search margin-10-l"></i></button>
                     </div>
                 </div>
+            </form>
+        </div>
+    </div>
+    
+    <div class="modal-search-no-bg modal theme-default">
+        <div class="modal-container padding-30 sm-no-padding-h">
+                <form action="#successful">
+                <div class="col-static no-responsive">
+                    <div class="row row-no-padding-hor">
+                        <div class="col-12">
+                            <div data-src="json/company.json" data-val="s" class="autocomplete text text-lg text-icon text-icon-lg text-icon-both has-clear rounded-left no-bordered inner-shadow-sm theme-gray ui-x-light ease-form">
+                                <i class="icon icon-sm icon-search text-icon-left margin-5-l ease-layout"></i>
+                                <button type="button" class="clear-form icon icon-xs icon-remove text-icon-right margin-5-r ease-layout"></button>
+                                <input class="required" type="text" placeholder="Search">
+                            </div>
+                            <p class="required-msg rounded">Please, enter a keyword.</p>
+                        </div>
+                    </div>
+                    <div class="static-50 padding-10-v">
+                        <button class="btn btn-lg btn-square align-center rounded-right ui-dark ease-btn" type="submit">
+                            <i class="icon icon-md icon-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <span class="sp30 margin-30-v padding-30-v"></span>
+
             </form>
         </div>
     </div>
