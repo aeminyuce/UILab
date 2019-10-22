@@ -225,7 +225,7 @@
                     <b>Bg:</b>
                     <i class="x-dark margin-5-b block">Enable/Disable modal window background color.</i>
                     <pre class="rounded margin-5-b">modal.open({<br>    source: '.modal-search-no-bg',<br>    bg: 'false'<br>});</pre>
-                    <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: '.modal-search-no-bg', size: 'inline', bg: 'false'});">Run Code</button>
+                    <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: '.modal-search-no-bg', size: 'fullscreen', bg: 'false'});">Run Code</button>
 
                 </div>
                 
@@ -338,26 +338,32 @@
     
     <div class="modal-search-no-bg modal theme-default">
         <div class="modal-container padding-30 sm-no-padding-h">
-                <form action="#successful">
-                <div class="col-static no-responsive">
-                    <div class="row row-no-padding-hor">
-                        <div class="col-12">
-                            <div data-src="json/company.json" data-val="s" class="autocomplete text text-lg text-icon text-icon-lg text-icon-both has-clear rounded-left no-bordered inner-shadow-sm theme-gray ui-x-light ease-form">
-                                <i class="icon icon-sm icon-search text-icon-left margin-5-l ease-layout"></i>
-                                <button type="button" class="clear-form icon icon-xs icon-remove text-icon-right margin-5-r ease-layout"></button>
-                                <input class="required" type="text" placeholder="Search">
+            <form action="#successful">
+                <div class="fixed padding-20 sm-no-padding-h">
+        
+                    <div class="col-12">
+                        <div class="col-static no-responsive">
+                            <div class="row row-no-padding-hor">
+                                <div class="col-12">
+                                    <div data-src="json/company.json" data-val="s" class="autocomplete text text-lg text-icon text-icon-lg text-icon-both has-clear rounded-left no-bordered inner-shadow-sm theme-gray ui-x-light ease-form">
+                                        <i class="icon icon-sm icon-search text-icon-left margin-5-l ease-layout"></i>
+                                        <button type="button" class="clear-form icon icon-xs icon-remove text-icon-right margin-5-r ease-layout"></button>
+                                        <input class="required" type="text" placeholder="Search">
+                                    </div>
+                                    <p class="required-msg rounded">Please, enter a keyword.</p>
+                                </div>
                             </div>
-                            <p class="required-msg rounded">Please, enter a keyword.</p>
+                            <div class="static-42 padding-10-v">
+                                <button class="btn btn-lg btn-square align-center rounded-right ui-dark ease-btn" type="submit">
+                                    <i class="icon icon-md icon-search"></i>
+                                </button>
+                            </div>
                         </div>
+                        <span class="sp30 margin-30-v"></span>
+                        <span class="sp30 margin-30-v"></span>
                     </div>
-                    <div class="static-50 padding-10-v">
-                        <button class="btn btn-lg btn-square align-center rounded-right ui-dark ease-btn" type="submit">
-                            <i class="icon icon-md icon-search"></i>
-                        </button>
-                    </div>
+    
                 </div>
-                <span class="sp30 margin-30-v padding-30-v"></span>
-
             </form>
         </div>
     </div>
