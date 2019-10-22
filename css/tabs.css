@@ -1,3 +1,8 @@
 /* tabs */
-.btn-tabs .tab-content:not(.open) { display: none !important; }
+.ease-tabs .tab-content { transition-property: opacity, transform; transition-duration: .15s; }
+.no-transitions-all .ease-tabs .tab-content { transition-property: none !important; }
+
 .btn-tabs .btn.active > .icon-toggle { transform: scaleY(-1); }
+.btn-tabs .tab-content{ transform-origin: top center; }
+.btn-tabs .tab-content:not(.open) { display: none !important; }
+.btn-tabs .tab-content:not(.open-ease) { opacity: 0; transform: scaleY(.98); }

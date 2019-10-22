@@ -8,7 +8,7 @@ var tabs = {};
 (function () {
 
     'use strict';
-    /*globals document, selector, events */
+    /*globals document, selector, events, setTimeout */
 
     tabs.Start = function () {
 
@@ -25,9 +25,9 @@ var tabs = {};
             contents = selector('.tab-content', parent);
 
             toggle = false;
-            if (events.hasClass(this, 'btn-toggle')) { toggle = true; }
-
             classes = parent.getAttribute('data-classes');
+
+            if (events.hasClass(this, 'btn-toggle')) { toggle = true; }
 
             if (events.hasClass(this, 'active')) {
 
@@ -37,8 +37,12 @@ var tabs = {};
                         events.toggleClass(tabs[index], classes);
                     }
 
-                    events.toggleClass(tabs[index], 'active');
-                    events.toggleClass(contents[index], 'open');
+                    events.removeClass(tabs[index], 'active');
+                    events.removeClass(contents[index], 'open-ease');
+
+                    setTimeout(function () {
+                        events.removeClass(contents[index], 'open');
+                    }, 300);
 
                 }
 
@@ -52,11 +56,21 @@ var tabs = {};
                 }
 
                 events.removeClass(tabs, 'active');
-                events.removeClass(contents, 'open');
-
                 events.addClass(tabs[index], 'active');
-                events.addClass(contents[index], 'open');
 
+                events.removeClass(contents, 'open-ease');
+
+                setTimeout(function () {
+
+                    events.removeClass(contents, 'open');
+                    events.addClass(contents[index], 'open');
+
+                    setTimeout(function () {
+                        events.addClass(contents[index], 'open-ease');
+                    }, 150);
+                    
+                }, 150);
+                
             }
 
         });
