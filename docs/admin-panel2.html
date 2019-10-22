@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="../css/buttons.css"/>
     <link rel="stylesheet" href="../css/borders.css"/>
     <link rel="stylesheet" href="../css/calendar.css"/>
+    <link rel="stylesheet" href="../css/data-list.css"/>
     <link rel="stylesheet" href="../css/donut-chart.css"/>
     <link rel="stylesheet" href="../css/dropdown.css"/>
     <link rel="stylesheet" href="../css/forms.css"/>
@@ -38,6 +39,7 @@
     <link rel="stylesheet" href="../css/mobile-menu.css"/>
     <link rel="stylesheet" href="../css/modal.css"/>
     <link rel="stylesheet" href="../css/paddings.css"/>
+    <link rel="stylesheet" href="../css/pagination.css"/>
     <link rel="stylesheet" href="../css/photo-images.css"/>
     <link rel="stylesheet" href="../css/photo-gallery.css"/>
     <link rel="stylesheet" href="../css/pie-chart.css"/>
@@ -45,6 +47,7 @@
     <link rel="stylesheet" href="../css/progress-bar.css"/>
     <link rel="stylesheet" href="../css/scrollbar.css"/>
     <link rel="stylesheet" href="../css/static-grid.css"/>
+    <link rel="stylesheet" href="../css/steps.css"/>
     <link rel="stylesheet" href="../css/stripes.css"/>
     <link rel="stylesheet" href="../css/tabs.css"/>
     <link rel="stylesheet" href="../css/tables.css"/>
@@ -63,6 +66,7 @@
     <script src="../js/ajax.js"></script>
     <script src="../js/autocomplete.js"></script>
     <script src="../js/calendar.js"></script>
+    <script src="../js/data-list.js"></script>
     <script src="../js/donut-chart.js"></script>
     <script src="../js/dropdown.js"></script>
     <script src="../js/forms.js"></script>
@@ -132,39 +136,35 @@
                         <img class="img-responsive" src="img/logo-udashboard.png" alt="Logo">
                     </div>
 
-                    <div class="btn-tabs align-left theme-panel2 ease-1st-btn add-mobile-menu-left" data-classes="ui-text">
+                    <div class="btn-tabs align-left theme-panel2 ease-tabs ease-1st-btn add-mobile-menu-left" data-classes="ui-text">
 
                         <div class="padding-10">
-                            <div class="small margin-5-b light-ui">Personal Activity</div>
-                            <span class="sp2"></span>
+                            <div class="small margin-10-b light-ui">Personal Activity</div>
 
                             <div class="btn-holder align-center show-3 rounded theme-panel ui-x-dark ease-1st-btn">
                                 <button class="btn btn-multi btn-ghost padding-10-v rounded right-bordered ui-dark">
 
-                                    <i class="icon icon-md icon-clock no-opacity"></i>
-                                    <span class="large xx-light inline-block">13</span>
-                                    <span class="small light-ui margin-5-v block">Waiting</span>
-                                    <span class="progress-bar progress-sm rounded">
+                                    <span class="xx-large xx-light">13</span>
+                                    <span class="small light-ui margin-5-b block">Waiting</span>
+                                    <span class="progress-bar progress rounded dual-bordered">
                                         <span class="ui-dark stripe-light" style="width: 65%;"></span>
                                     </span>
 
                                 </button>
                                 <button class="btn btn-multi btn-ghost padding-10-v rounded right-bordered ui-dark">
 
-                                    <i class="icon icon-md icon-pause no-opacity"></i>
-                                    <span class="large xx-light inline-block">3</span>
-                                    <span class="small light-ui margin-5-v block">Paused</span>
-                                    <span class="progress-bar progress-sm rounded">
+                                    <span class="xx-large xx-light">3</span>
+                                    <span class="small light-ui margin-5-b block">Paused</span>
+                                    <span class="progress-bar progress rounded dual-bordered">
                                         <span class="ui-dark stripe-light" style="width: 35%;"></span>
                                     </span>
 
                                 </button>
                                 <button class="btn btn-multi btn-ghost padding-10-v rounded right-bordered ui-dark">
 
-                                    <i class="icon icon-md icon-history no-opacity"></i>
-                                    <span class="large xx-light inline-block">16</span>
-                                    <span class="small light-ui margin-5-v block">Delayed</span>
-                                    <span class="progress-bar progress-sm rounded">
+                                    <span class="xx-large xx-light">16</span>
+                                    <span class="small light-ui margin-5-b block">Delayed</span>
+                                    <span class="progress-bar progress rounded dual-bordered">
                                         <span class="ui-dark stripe-light" style="width: 75%;"></span>
                                     </span>
 
@@ -182,7 +182,7 @@
                             <i class="icon right icon-toggle icon-xs margin-5-v icon-angle-down ease-layout"></i>
                             Employees
                         </button>
-                        <div class="tab-content padding-15-v padding-3-l ease-1st-btn open">
+                        <div class="tab-content padding-15-v padding-3-l open open-ease">
                             <ul class="list-spacer-15 padding-20-l ease-2nd-layout">
                                 <li><a class="opacity" href="#">Managers</a></li>
                                 <li><a class="opacity" href="#">Team Leaders</a></li>
@@ -197,7 +197,7 @@
                             <i class="icon right icon-toggle icon-xs margin-5-v icon-angle-down ease-layout"></i>
                             Payments
                         </button>
-                        <div class="tab-content padding-15-v padding-3-l ease-1st-btn">
+                        <div class="tab-content padding-15-v padding-3-l">
                         <ul class="list-spacer-15 padding-20-l ease-2nd-layout">
                                 <li><a class="opacity" href="#">New Payment</a></li>
                                 <li><a class="opacity" href="#">Recent Payments</a></li>
@@ -212,7 +212,7 @@
                             <i class="icon right icon-toggle icon-xs margin-5-v icon-angle-down ease-layout"></i>
                             Events
                         </button>
-                        <div class="tab-content padding-15-v padding-3-l ease-1st-btn">
+                        <div class="tab-content padding-15-v padding-3-l">
                             <ul class="list-spacer-15 padding-20-l ease-2nd-layout">
                                 <li><a class="opacity" href="#">New Event</a></li>
                                 <li><a class="opacity" href="#">Recent Activities</a></li>
@@ -226,7 +226,7 @@
                             <i class="icon right icon-toggle icon-xs margin-5-v icon-angle-down ease-layout"></i>
                             Documents
                         </button>
-                        <div class="tab-content padding-15-v padding-3-l ease-1st-btn">
+                        <div class="tab-content padding-15-v padding-3-l">
                             <ul class="list-spacer-15 padding-20-l ease-2nd-layout">
                                 <li><a class="opacity" href="#">New Document</a></li>
                                 <li><a class="opacity" href="#">Members</a></li>
@@ -242,7 +242,7 @@
                             <i class="icon right icon-toggle icon-xs margin-5-v icon-angle-down ease-layout"></i>
                             Statistics
                         </button>
-                        <div class="tab-content padding-15-v padding-3-l ease-1st-btn">
+                        <div class="tab-content padding-15-v padding-3-l">
                             <ul class="list-spacer-15 padding-20-l ease-2nd-layout">
                                 <li><a class="opacity" href="#">Sales</a></li>
                                 <li><a class="opacity" href="#">Profit</a></li>
@@ -256,7 +256,7 @@
                             <i class="icon right icon-toggle icon-xs margin-5-v icon-angle-down ease-layout"></i>
                             Reports
                         </button>
-                        <div class="tab-content padding-15-v padding-3-l ease-1st-btn">
+                        <div class="tab-content padding-15-v padding-3-l">
                             <ul class="list-spacer-15 padding-20-l ease-2nd-layout">
                                 <li><a class="opacity" href="#">New Report</a></li>
                                 <li><a class="opacity" href="#">Market Research</a></li>
@@ -272,7 +272,7 @@
                             <i class="icon right icon-toggle icon-xs margin-5-v icon-angle-down ease-layout"></i>
                             Orders
                         </button>
-                        <div class="tab-content padding-15-v padding-3-l ease-1st-btn">
+                        <div class="tab-content padding-15-v padding-3-l">
                             <ul class="list-spacer-15 padding-20-l ease-2nd-layout">
                                 <li><a class="opacity" href="#">New Order</a></li>
                                 <li><a class="opacity" href="#">Activity</a></li>
@@ -400,7 +400,7 @@
                                 <div class="col-static no-responsive">
                                     <div class="row row-no-padding-hor row-md-padding-ver">
                                         <div class="col-12">
-                                            <div class="align-left x-large">Pending</div>
+                                            <div class="x-large">Pending</div>
                                             <span class="x-dark large">Total: 45%</span>
                                         </div>
                                     </div>
@@ -423,7 +423,7 @@
                                 <div class="col-static no-responsive">
                                     <div class="row row-no-padding-hor row-md-padding-ver">
                                         <div class="col-12">
-                                            <div class="align-left x-large">Paused</div>
+                                            <div class="x-large">Paused</div>
                                             <span class="x-dark large">Total: 5%</span>
                                         </div>
                                     </div>
@@ -446,7 +446,7 @@
                                 <div class="col-static no-responsive">
                                     <div class="row row-no-padding-hor row-md-padding-ver">
                                         <div class="col-12">
-                                            <div class="align-left x-large">Completed</div>
+                                            <div class="x-large">Completed</div>
                                             <span class="x-dark large">Total: 80%</span>
                                         </div>
                                     </div>
@@ -502,21 +502,20 @@
                                     </ul>
                                 </div>
                                 <h4 class="align-left margin-5-t">Activity</h4>
-                                <div class="col-static no-responsive theme-panel">
-                                    <div class="static-150 ui-text">
-                                        <i class="icon icon-xl icon-history margin-5-r"></i>
-                                        <b class="x-largest inline-block">436</b>
-                                    </div>
+                                <div class="col-static no-responsive theme-panel ui-text">
                                     <div class="row row row-no-padding-hor row-md-padding-ver">
                                         <div class="col-12 large">
-                                            <div class="ui-text bold">Total Progress</div>
+                                            <div class="large bold">Total Progress</div>
                                             <span class="x-dark">23% Change</span>
                                         </div>
                                     </div>
+                                    <div class="static-150 align-right">
+                                        <span class="x-largest inline-block">436</span>
+                                    </div>
                                 </div>
-                                <div class="row row-lg-padding-hor margin-15-v">
+                                <div class="row row-lg-padding-hor margin-20-v">
                                     <div class="col-6 no-responsive">
-                                        <div class="donut-chart ease-donut-chart">
+                                        <div class="donut-chart automargin ease-donut-chart" style="max-width: 150px;">
                                             <strong>
                                                 <b class="x-dark margin-2-b block">69%</b>
                                                 Payments
@@ -528,7 +527,7 @@
                                         </div>
                                     </div>
                                     <div class="col-6 no-responsive">
-                                        <div class="pie-chart ease-pie-chart" data-text="Profit">
+                                        <div class="pie-chart automargin ease-pie-chart" data-text="Profit" style="max-width: 150px;">
                                             <ul>
                                                 <li data-percent="70" data-fill="#a4e87b"></li>
                                             </ul>
@@ -599,7 +598,7 @@
                                     </ul>
                                 </div>
                                 <h4 class="align-left margin-5-v">News</h4>
-                                <div class="btn-tabs theme-panel" data-classes="ui-border">
+                                <div class="btn-tabs theme-panel ease-tabs" data-classes="ui-border">
                                     <div class="row row-no-padding x-dark margin-15-b ease-2nd-btn">
                                         <div class="col-6 no-responsive">
                                             <button class="btn-tab btn btn-lg btn-ghost bottom-bordered dual-bordered block rounded-top ui-border active">Company</button>
@@ -608,7 +607,7 @@
                                             <button class="btn-tab btn btn-lg btn-ghost bottom-bordered dual-bordered block rounded-top">Employees</button>
                                         </div>
                                     </div>
-                                    <div class="tab-content v-scroll open" style="height: 260px;">
+                                    <div class="tab-content v-scroll open open-ease" style="height: 260px;">
                                         <ul class="timeline left-side hide-h-lines">
                                             <li class="ui-text">
                                                 <span class="card xx-dark no-padding-v no-padding-r">
@@ -727,8 +726,499 @@
                                         <li><a href="#"><i class="list-icon icon icon-md icon-eye"></i>See All Experts</a></li>
                                     </ul>
                                 </div>
-                                <h4 class="align-left margin-5-v">Experts</h4>
-                                
+                                <h4 class="align-left margin-5-t">Experts</h4>
+                                <div class="data-list data-striped data-hover theme-gray ease-data-list">
+
+                                    <div class="row row-no-padding">
+                                        <div class="col-4 lg-responsive">
+                                            <div class="text text-icon text-icon-lg text-icon-both rounded no-bordered ui-x-light has-clear ease-form">
+                                                <i class="icon icon-sm icon-search text-icon-left margin-5-l ease-layout"></i>
+                                                <button class="clear-form icon icon-xs icon-remove margin-5-r ease-layout"></button>
+                                                <input class="data-filter" type="text" placeholder="Search">
+                                            </div>
+                                            <span class="sp10 hidden-lg"></span>
+                                        </div>
+                                        <div class="col-8 lg-responsive align-right lg-align-center">
+                                            <div class="ease-1st-form">
+                                                <div class="select rounded no-bordered inline-block ui-x-light">
+                                                    <i class="icon icon-sm icon-angle-down ease-layout"></i>
+                                                    <select class="data-filter" data-index="2">
+                                                        <option value="">Filter</option>
+                                                        <option>Starting</option>
+                                                        <option>Waiting</option>
+                                                        <option>Expert</option>
+                                                        <option>First Audit</option>
+                                                        <option>Second Audit</option>
+                                                        <option>Paused</option>
+                                                        <option>Delayed</option>
+                                                    </select>
+                                                </div>
+                                                <button class="btn align-left rounded" data-sort="1">
+                                                    <i class="icon icon-xs icon-sort"></i> Name
+                                                </button>
+                                                <button class="btn align-left rounded" data-sort="2">
+                                                    <i class="icon icon-xs icon-sort"></i> Step
+                                                </button>
+                                            </div>
+                                            <select class="data-show hidden">
+                                                <option>4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <span class="sp15"></span>
+            
+                                    <div class="data-container">
+            
+                                        <div class="data-content no-bordered rounded" data-val="John Doe|First Audit">
+                                            <div class="row row-no-padding">
+                                                <div class="col-5 no-responsive">
+                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
+                                                </div>
+                                                <div class="col-7 no-responsive">
+                                                    <ul class="steps-bar steps-bar-column-7 theme-panel ui-text">
+                                                        <li>
+                                                            <span data-tooltip title="Starting"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Waiting"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Expert"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li class="active">
+                                                            <span data-tooltip title="First Audit"></span>
+                                                            <i class="icon icon-refresh"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Second Audit"></span>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Paused"></span>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Delayed"></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="data-content no-bordered rounded" data-val="Mary Doe|Waiting">
+                                            <div class="row row-no-padding">
+                                                <div class="col-5 no-responsive">
+                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
+                                                </div>
+                                                <div class="col-7 no-responsive">
+                                                    <ul class="steps-bar steps-bar-column-7 theme-panel ui-text">
+                                                        <li>
+                                                            <span data-tooltip title="Starting"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li class="active">
+                                                            <span data-tooltip title="Waiting"></span>
+                                                            <i class="icon icon-refresh"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Expert"></span>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="First Audit"></span>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Second Audit"></span>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Paused"></span>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Delayed"></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="data-content no-bordered rounded" data-val="Mike Taylor|Paused">
+                                            <div class="row row-no-padding">
+                                                <div class="col-5 no-responsive">
+                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mary Doe
+                                                </div>
+                                                <div class="col-7 no-responsive">
+                                                    <ul class="steps-bar steps-bar-column-7 theme-panel ui-text">
+                                                        <li>
+                                                            <span data-tooltip title="Starting"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Waiting"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Expert"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="First Audit"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Second Audit"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li class="active">
+                                                            <span data-tooltip title="Paused"></span>
+                                                            <i class="icon icon-refresh"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Delayed"></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="data-content no-bordered rounded" data-val="John Doe|First Audit">
+                                            <div class="row row-no-padding">
+                                                <div class="col-5 no-responsive">
+                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
+                                                </div>
+                                                <div class="col-7 no-responsive">
+                                                    <ul class="steps-bar steps-bar-column-7 theme-panel ui-text">
+                                                        <li>
+                                                            <span data-tooltip title="Starting"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Waiting"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Expert"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li class="active">
+                                                            <span data-tooltip title="First Audit"></span>
+                                                            <i class="icon icon-refresh"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Second Audit"></span>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Paused"></span>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Delayed"></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="data-content no-bordered rounded" data-val="Mary Doe|Waiting">
+                                            <div class="row row-no-padding">
+                                                <div class="col-5 no-responsive">
+                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
+                                                </div>
+                                                <div class="col-7 no-responsive">
+                                                    <ul class="steps-bar steps-bar-column-7 theme-panel ui-text">
+                                                        <li>
+                                                            <span data-tooltip title="Starting"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li class="active">
+                                                            <span data-tooltip title="Waiting"></span>
+                                                            <i class="icon icon-refresh"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Expert"></span>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="First Audit"></span>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Second Audit"></span>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Paused"></span>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Delayed"></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="data-content no-bordered rounded" data-val="Mike Taylor|Paused">
+                                            <div class="row row-no-padding">
+                                                <div class="col-5 no-responsive">
+                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mary Doe
+                                                </div>
+                                                <div class="col-7 no-responsive">
+                                                    <ul class="steps-bar steps-bar-column-7 theme-panel ui-text">
+                                                        <li>
+                                                            <span data-tooltip title="Starting"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Waiting"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Expert"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="First Audit"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Second Audit"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li class="active">
+                                                            <span data-tooltip title="Paused"></span>
+                                                            <i class="icon icon-refresh"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Delayed"></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="data-content no-bordered rounded" data-val="John Doe|First Audit">
+                                            <div class="row row-no-padding">
+                                                <div class="col-5 no-responsive">
+                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
+                                                </div>
+                                                <div class="col-7 no-responsive">
+                                                    <ul class="steps-bar steps-bar-column-7 theme-panel ui-text">
+                                                        <li>
+                                                            <span data-tooltip title="Starting"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Waiting"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Expert"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li class="active">
+                                                            <span data-tooltip title="First Audit"></span>
+                                                            <i class="icon icon-refresh"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Second Audit"></span>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Paused"></span>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Delayed"></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="data-content no-bordered rounded" data-val="Mary Doe|Waiting">
+                                            <div class="row row-no-padding">
+                                                <div class="col-5 no-responsive">
+                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
+                                                </div>
+                                                <div class="col-7 no-responsive">
+                                                    <ul class="steps-bar steps-bar-column-7 theme-panel ui-text">
+                                                        <li>
+                                                            <span data-tooltip title="Starting"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li class="active">
+                                                            <span data-tooltip title="Waiting"></span>
+                                                            <i class="icon icon-refresh"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Expert"></span>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="First Audit"></span>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Second Audit"></span>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Paused"></span>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Delayed"></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="data-content no-bordered rounded" data-val="Mike Taylor|Paused">
+                                            <div class="row row-no-padding">
+                                                <div class="col-5 no-responsive">
+                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mary Doe
+                                                </div>
+                                                <div class="col-7 no-responsive">
+                                                    <ul class="steps-bar steps-bar-column-7 theme-panel ui-text">
+                                                        <li>
+                                                            <span data-tooltip title="Starting"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Waiting"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Expert"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="First Audit"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Second Audit"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li class="active">
+                                                            <span data-tooltip title="Paused"></span>
+                                                            <i class="icon icon-refresh"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Delayed"></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="data-content no-bordered rounded" data-val="John Doe|First Audit">
+                                            <div class="row row-no-padding">
+                                                <div class="col-5 no-responsive">
+                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
+                                                </div>
+                                                <div class="col-7 no-responsive">
+                                                    <ul class="steps-bar steps-bar-column-7 theme-panel ui-text">
+                                                        <li>
+                                                            <span data-tooltip title="Starting"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Waiting"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Expert"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li class="active">
+                                                            <span data-tooltip title="First Audit"></span>
+                                                            <i class="icon icon-refresh"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Second Audit"></span>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Paused"></span>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Delayed"></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="data-content no-bordered rounded" data-val="Mary Doe|Waiting">
+                                            <div class="row row-no-padding">
+                                                <div class="col-5 no-responsive">
+                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
+                                                </div>
+                                                <div class="col-7 no-responsive">
+                                                    <ul class="steps-bar steps-bar-column-7 theme-panel ui-text">
+                                                        <li>
+                                                            <span data-tooltip title="Starting"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li class="active">
+                                                            <span data-tooltip title="Waiting"></span>
+                                                            <i class="icon icon-refresh"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Expert"></span>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="First Audit"></span>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Second Audit"></span>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Paused"></span>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Delayed"></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="data-content no-bordered rounded" data-val="Mike Taylor|Paused">
+                                            <div class="row row-no-padding">
+                                                <div class="col-5 no-responsive">
+                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mary Doe
+                                                </div>
+                                                <div class="col-7 no-responsive">
+                                                    <ul class="steps-bar steps-bar-column-7 theme-panel ui-text">
+                                                        <li>
+                                                            <span data-tooltip title="Starting"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Waiting"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Expert"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="First Audit"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Second Audit"></span>
+                                                            <i class="icon light icon-tick"></i>
+                                                        </li>
+                                                        <li class="active">
+                                                            <span data-tooltip title="Paused"></span>
+                                                            <i class="icon icon-refresh"></i>
+                                                        </li>
+                                                        <li>
+                                                            <span data-tooltip title="Delayed"></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <span class="sp10"></span>
+            
+                                    <div class="row row-no-padding">
+                                        <div class="col-6 no-responsive">
+                                            <div class="padding-5-v">
+                                                Total <b class="data-total"></b>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 no-responsive align-right">
+                                            <div class="data-paging pagination ease-1st-bg" data-default="btn rounded" data-active="theme-panel ui-dark"></div>
+                                        </div>
+                                    </div>
+            
+                                </div>
                             </div>
                         </div>
 
@@ -746,7 +1236,7 @@
                                     </ul>
                                 </div>
                                 <h4 class="align-left margin-5-v">Reports</h4>
-                                <div class="btn-tabs theme-panel" data-classes="ui-border">
+                                <div class="btn-tabs theme-panel ease-tabs" data-classes="ui-border">
                                     <div class="row row-no-padding x-dark margin-15-b ease-2nd-btn">
                                         <div class="col-6 no-responsive">
                                             <button class="btn-tab btn btn-lg btn-ghost bottom-bordered dual-bordered block rounded-top ui-border active">By Payments</button>
@@ -755,7 +1245,7 @@
                                             <button class="btn-tab btn btn-lg btn-ghost bottom-bordered dual-bordered block rounded-top">By Orders</button>
                                         </div>
                                     </div>
-                                    <div class="tab-content v-scroll open" style="height: 210px;">
+                                    <div class="tab-content v-scroll open open-ease" style="height: 210px;">
                                         
                                     </div>
                                     <div class="tab-content v-scroll" style="height: 210px;">
