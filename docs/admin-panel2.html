@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../css/animations.css"/>
     <link rel="stylesheet" href="../css/autocomplete.css"/>
     <link rel="stylesheet" href="../css/alignments.css"/>
+    <link rel="stylesheet" href="../css/button-holder.css"/>
     <link rel="stylesheet" href="../css/buttons.css"/>
     <link rel="stylesheet" href="../css/borders.css"/>
     <link rel="stylesheet" href="../css/calendar.css"/>
@@ -30,6 +31,7 @@
     <link rel="stylesheet" href="../css/helpers.css"/>
     <link rel="stylesheet" href="../css/icons.css"/>
     <link rel="stylesheet" href="../css/icons-notifiers.css"/>
+    <link rel="stylesheet" href="../css/ie9-placeholders.css"/>
     <link rel="stylesheet" href="../css/line-charts.css"/>
     <link rel="stylesheet" href="../css/listings.css"/>
     <link rel="stylesheet" href="../css/margins.css"/>
@@ -64,6 +66,7 @@
     <script src="../js/donut-chart.js"></script>
     <script src="../js/dropdown.js"></script>
     <script src="../js/forms.js"></script>
+    <script src="../js/ie9-placeholders.js"></script>
     <script src="../js/line-charts.js"></script>
     <script src="../js/mobile-menu.js"></script>
     <script src="../js/modal.js"></script>
@@ -81,7 +84,7 @@
     <script src="../js/user-agents.js"></script>
 
     <!-- font icons CSS -->
-    <link rel="stylesheet" href="icons/font-icons/outline/font-icons.css"/>
+    <link rel="stylesheet" href="icons/font-icons/fill/font-icons.css"/>
 
     <!-- custom CSS -->
     <style>
@@ -125,18 +128,54 @@
             <div class="static-250 set-relative hidden-md theme-panel">
                 <div class="static-250 full-height set-fixed set-left ui-dark v-scroll scrollbar">
 
-                    <div class="padding-5-v">
+                    <div class="padding-5-t">
                         <img class="img-responsive" src="img/logo-udashboard.png" alt="Logo">
                     </div>
 
                     <div class="btn-tabs align-left theme-panel2 ease-1st-btn add-mobile-menu-left" data-classes="ui-text">
 
-                        <button class="btn btn-lg btn-ghost block">
+                        <div class="padding-10">
+                            <div class="small margin-5-b light-ui">Personal Activity</div>
+                            <span class="sp2"></span>
+
+                            <div class="btn-holder align-center show-3 rounded theme-panel ui-x-dark ease-1st-btn">
+                                <button class="btn btn-multi btn-ghost padding-10-v rounded right-bordered ui-dark">
+
+                                    <i class="icon icon-md icon-clock no-opacity"></i>
+                                    <span class="large xx-light inline-block">13</span>
+                                    <span class="small light-ui margin-5-v block">Waiting</span>
+                                    <span class="progress-bar progress-sm rounded">
+                                        <span class="ui-dark stripe-light" style="width: 65%;"></span>
+                                    </span>
+
+                                </button>
+                                <button class="btn btn-multi btn-ghost padding-10-v rounded right-bordered ui-dark">
+
+                                    <i class="icon icon-md icon-pause no-opacity"></i>
+                                    <span class="large xx-light inline-block">3</span>
+                                    <span class="small light-ui margin-5-v block">Paused</span>
+                                    <span class="progress-bar progress-sm rounded">
+                                        <span class="ui-dark stripe-light" style="width: 35%;"></span>
+                                    </span>
+
+                                </button>
+                                <button class="btn btn-multi btn-ghost padding-10-v rounded right-bordered ui-dark">
+
+                                    <i class="icon icon-md icon-history no-opacity"></i>
+                                    <span class="large xx-light inline-block">16</span>
+                                    <span class="small light-ui margin-5-v block">Delayed</span>
+                                    <span class="progress-bar progress-sm rounded">
+                                        <span class="ui-dark stripe-light" style="width: 75%;"></span>
+                                    </span>
+
+                                </button>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-lg btn-ghost block margin-10-v">
                             <i class="icon icon-md icon-pie-chart margin-15-r no-opacity"></i>
                             Dashboard
                         </button>
-
-                        <span class="sp5"></span>
 
                         <button class="btn-tab btn-toggle btn btn-lg btn-ghost block ui-text active">
                             <i class="icon icon-md icon-customer margin-15-r no-opacity"></i>
@@ -244,18 +283,20 @@
 
                         <span class="sp15"></span>
 
-                        <button class="btn btn-lg btn-ghost padding-15-h x-light-ui block">
-                            <i class="icon icon-md icon-user-accepted margin-15-r no-opacity"></i>
-                            Administration
-                        </button>
-                        <button class="btn btn-lg btn-ghost padding-15-h x-light-ui block">
-                            <i class="icon icon-md icon-clock margin-15-r no-opacity"></i>
-                            Recent History
-                        </button>
-                        <button class="btn btn-lg btn-ghost padding-15-h x-light-ui block">
-                            <i class="icon icon-md icon-settings margin-15-r no-opacity"></i>
-                            Tools
-                        </button>
+                        <div class="padding-5 margin-10 rounded theme-panel ui-x-dark ease-1st-btn">
+                            <button class="btn btn-lg btn-ghost rounded padding-15-h block light-ui ui-dark">
+                                <i class="icon icon-md icon-user-accepted margin-15-r no-opacity"></i>
+                                Administration
+                            </button>
+                            <button class="btn btn-lg btn-ghost rounded padding-15-h block light-ui ui-dark">
+                                <i class="icon icon-md icon-clock margin-15-r no-opacity"></i>
+                                Recent History
+                            </button>
+                            <button class="btn btn-lg btn-ghost rounded padding-15-h block light-ui ui-dark">
+                                <i class="icon icon-md icon-settings margin-15-r no-opacity"></i>
+                                Tools
+                            </button>
+                        </div>
 
                     </div>
                     
@@ -270,7 +311,7 @@
                         <button class="btn btn-lg btn-ghost padding-10 circle ease-btn show-mobile-menu-left visible-md">
                             <i class="icon icon-md icon-bars-left no-opacity"></i>
                         </button>
-                        <button class="btn btn-lg btn-ghost padding-10 circle ease-btn" onclick="modal.open({source: '.modal-search', size: 'inline', bg: 'false'});" data-tooltip data-only="desktop" title="Search">
+                        <button class="btn btn-lg btn-ghost padding-10 circle ease-btn" onclick="modal.open({source: '.modal-search', size: 'fullscreen', bg: 'false'});" data-tooltip data-only="desktop" title="Search">
                             <i class="icon icon-md icon-search no-opacity"></i>
                         </button>
                         <div class="dropdown">
@@ -360,7 +401,7 @@
                                     <div class="row row-no-padding-hor row-md-padding-ver">
                                         <div class="col-12">
                                             <div class="align-left x-large">Pending</div>
-                                            <span class="x-dark large">5% Change</span>
+                                            <span class="x-dark large">Total: 45%</span>
                                         </div>
                                     </div>
                                     <div class="static-100 align-right">
@@ -372,7 +413,6 @@
                                 </div>
                                 <p class="x-dark large margin-5-b">Pending for the transaction.</p>
                                 <p class="light">
-                                    <span class="dark block">Total: 45%</span>
                                     <i class="icon icon-xs icon-clock margin-3-r"></i>
                                     <span class="inline-block">Last updated: 15:12</span>
                                 </p>
@@ -384,7 +424,7 @@
                                     <div class="row row-no-padding-hor row-md-padding-ver">
                                         <div class="col-12">
                                             <div class="align-left x-large">Paused</div>
-                                            <span class="x-dark large">3% Change</span>
+                                            <span class="x-dark large">Total: 5%</span>
                                         </div>
                                     </div>
                                     <div class="static-100 align-right">
@@ -396,7 +436,6 @@
                                 </div>
                                 <p class="x-dark large margin-5-b">Paused for the some reasons.</p>
                                 <p class="light">
-                                    <span class="dark block">Total: 5%</span>
                                     <i class="icon icon-xs icon-clock margin-3-r"></i>
                                     <span class="inline-block">Last updated: 15:12</span>
                                 </p>
@@ -408,7 +447,7 @@
                                     <div class="row row-no-padding-hor row-md-padding-ver">
                                         <div class="col-12">
                                             <div class="align-left x-large">Completed</div>
-                                            <span class="x-dark large">19% Change</span>
+                                            <span class="x-dark large">Total: 80%</span>
                                         </div>
                                     </div>
                                     <div class="static-100 align-right">
@@ -420,7 +459,6 @@
                                 </div>
                                 <p class="x-dark large margin-5-b">Reached for the expert.</p>
                                 <p class="light">
-                                    <span class="dark block">Total: 80%</span>
                                     <i class="icon icon-xs icon-clock margin-3-r"></i>
                                     <span class="inline-block">Last updated: 15:12</span>
                                 </p>
@@ -432,7 +470,7 @@
                                     <div class="row row-no-padding-hor row-md-padding-ver">
                                         <div class="col-12">
                                             <div class="align-left x-large">On Payment</div>
-                                            <span class="x-dark large">53% Change</span>
+                                            <span class="x-dark large">Total: 67%</span>
                                         </div>
                                     </div>
                                     <div class="static-100 align-right">
@@ -444,7 +482,6 @@
                                 </div>
                                 <p class="x-dark large margin-5-b">Confirmed for payment.</p>
                                 <p class="light">
-                                    <span class="dark block">Total: 67%</span>
                                     <i class="icon icon-xs icon-clock margin-3-r"></i>
                                     <span class="inline-block">Last updated: 15:12</span>
                                 </p>               
@@ -468,7 +505,7 @@
                                 <div class="col-static no-responsive theme-panel">
                                     <div class="static-150 ui-text">
                                         <i class="icon icon-xl icon-history margin-5-r"></i>
-                                        <span class="x-largest inline-block">436</span>
+                                        <b class="x-largest inline-block">436</b>
                                     </div>
                                     <div class="row row row-no-padding-hor row-md-padding-ver">
                                         <div class="col-12 large">
@@ -477,25 +514,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="x-dark large margin-10-t">Daily reports that all received.</p>
-                                <div class="row row-no-padding-ver margin-30-v">
-                                    <div class="col-4 no-responsive">
-                                        <div class="donut-chart ease-donut-chart">
-                                            <strong>
-                                                <b class="x-dark margin-2-b block">25%</b>
-                                                <span class="small semibold">Orders</span>
-                                            </strong>
-                                            <svg viewBox="0 0 160 160">
-                                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
-                                                <circle r="69.85699" cy="80" cx="80" stroke="#cd7be8" data-percent="25" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 no-responsive">
+                                <div class="row row-lg-padding-hor margin-15-v">
+                                    <div class="col-6 no-responsive">
                                         <div class="donut-chart ease-donut-chart">
                                             <strong>
                                                 <b class="x-dark margin-2-b block">69%</b>
-                                                <span class="small semibold">Payments</span>
+                                                Payments
                                             </strong>
                                             <svg viewBox="0 0 160 160">
                                                 <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
@@ -503,7 +527,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                    <div class="col-4 no-responsive">
+                                    <div class="col-6 no-responsive">
                                         <div class="pie-chart ease-pie-chart" data-text="Profit">
                                             <ul>
                                                 <li data-percent="70" data-fill="#a4e87b"></li>
@@ -511,7 +535,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="light">
+                                <p class="x-dark large margin-5-b">Daily reports that all received.</p>
+                                <p class="light margin-3-t">
                                     <i class="icon icon-xs icon-clock margin-3-r"></i>
                                     <span class="inline-block">Last updated: 15:12</span>
                                 </p>
@@ -532,8 +557,8 @@
                                     </ul>
                                 </div>
                                 <h4 class="align-left margin-5-t">Statistics</h4>
-                                <div class="line-charts ease-line-charts" data-size="6,35" data-x="Sep,Oct,Nov,Dec,Jan,Fab">
-                                    <ul class="line" data-name="Past year" data-type="curved filled">
+                                <div class="line-charts ease-line-charts" data-size="5,53" data-x="Sep,Oct,Nov,Dec,Jan,Fab">
+                                    <ul class="line" data-name="Past year" data-type="curved">
                                         <li data-y="34" data-link="#"></li>
                                         <li data-y="56" data-link="#"></li>
                                         <li data-y="112" data-link="#"></li>
@@ -541,13 +566,21 @@
                                         <li data-y="20" data-link="#"></li>
                                         <li data-y="48" data-link="#"></li>
                                     </ul>
-                                    <ul class="line" data-name="This year" data-type="curved filled">
+                                    <ul class="line" data-name="This year" data-type="curved">
                                         <li data-y="120" data-link="#"></li>
                                         <li data-y="20" data-link="#"></li>
                                         <li data-y="159" data-link="#"></li>
                                         <li data-y="80" data-link="#"></li>
                                         <li data-y="0" data-link="#"></li>
                                         <li data-y="72" data-link="#"></li>
+                                    </ul>
+                                    <ul class="line" data-name="Performance" data-type="filled">
+                                        <li data-y="12" data-link="#"></li>
+                                        <li data-y="34" data-link="#"></li>
+                                        <li data-y="50" data-link="#"></li>
+                                        <li data-y="120" data-link="#"></li>
+                                        <li data-y="100" data-link="#"></li>
+                                        <li data-y="144" data-link="#"></li>
                                     </ul>
                                 </div>
                             </div>
@@ -575,7 +608,7 @@
                                             <button class="btn-tab btn btn-lg btn-ghost bottom-bordered dual-bordered block rounded-top">Employees</button>
                                         </div>
                                     </div>
-                                    <div class="tab-content v-scroll open" style="height: 210px;">
+                                    <div class="tab-content v-scroll open" style="height: 260px;">
                                         <ul class="timeline left-side hide-h-lines">
                                             <li class="ui-text">
                                                 <span class="card xx-dark no-padding-v no-padding-r">
@@ -584,10 +617,7 @@
                                                         <a href="#"><img class="img-photo large-bordered circle scale-more" src="img/profile-image.jpg" alt=""></a>
                                                         <a href="#"><img class="img-photo large-bordered circle scale-more" src="img/profile-image2.jpg" alt=""></a>
                                                         <a href="#"><img class="img-photo large-bordered circle scale-more" src="img/profile-image3.jpg" alt=""></a>
-                                                        <a class="btn btn-lg no-margin circle ease-btn" href="#">
-                                                            <i class="icon icon-xxs icon-plus no-opacity"></i>
-                                                            <span class="x-large inline-block">12</span>
-                                                        </a>
+                                                        <a class="btn btn-lg no-margin circle ease-btn" href="#">+12</a>
                                                     </span>
                                                 </span>
                                             </li>
@@ -595,9 +625,9 @@
                                                 <span class="card xx-dark no-padding-v no-padding-r">
                                                     Nullam sit amet sagittis nisi.
                                                     <span class="margin-5-t block ease-1st-btn">
-                                                        <a class="btn btn-lg btn-square btn-ghost bordered rounded" href="#"><i class="icon icon-lg icon-file-pdf no-opacity ui-text"></i></a>
-                                                        <a class="btn btn-lg btn-square btn-ghost bordered rounded" href="#"><i class="icon icon-lg icon-file-xls no-opacity ui-text"></i></a>
-                                                        <a class="btn btn-lg btn-square btn-ghost bordered rounded" href="#"><i class="icon icon-lg icon-file-zip no-opacity ui-text"></i></a>
+                                                        <a class="btn btn-lg btn-square rounded" href="#"><i class="icon icon-lg icon-file-pdf no-opacity ui-text"></i></a>
+                                                        <a class="btn btn-lg btn-square rounded" href="#"><i class="icon icon-lg icon-file-xls no-opacity ui-text"></i></a>
+                                                        <a class="btn btn-lg btn-square rounded" href="#"><i class="icon icon-lg icon-file-zip no-opacity ui-text"></i></a>
                                                     </span>
                                                 </span>
                                             </li>
@@ -618,7 +648,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="tab-content v-scroll" style="height: 210px;">
+                                    <div class="tab-content v-scroll" style="height: 260px;">
                                         <ul class="timeline left-side hide-h-lines">
                                             <li class="ui-text">
                                                 <span class="card xx-dark no-padding-v no-padding-r">
@@ -751,35 +781,41 @@
         <button class="btn btn-square btn-lg btn-ghost rounded ease-btn close-mobile-menu">
             <i class="icon icon-sm icon-remove no-opacity"></i>
         </button>
-        <div class="mobile-menu-title no-padding">
+        <div class="mobile-menu-title no-padding bottom-bordered">
             <img src="img/logo-udashboard.png" height="66" alt="Logo">
         </div>
-        <div class="mobile-menu-content no-padding ui-x-dark v-scroll"></div>
+        <div class="mobile-menu-content no-padding ui-dark v-scroll"></div>
     </div>
 
     <!-- modal search -->
     <div class="modal-search modal theme-panel">
         <div class="modal-container padding-30 sm-no-padding-h">
             <form action="#successful">
-                <div class="col-static no-responsive">
-                    <div class="row row-no-padding-hor">
-                        <div class="col-12">
-                            <div data-src="json/company.json" data-val="s" class="autocomplete text text-lg text-icon text-icon-lg text-icon-both has-clear rounded-left no-bordered inner-shadow-sm theme-gray ui-x-light ease-form">
-                                <i class="icon icon-sm icon-search text-icon-left margin-5-l ease-layout"></i>
-                                <button type="button" class="clear-form icon icon-xs icon-remove text-icon-right margin-5-r ease-layout"></button>
-                                <input class="required" type="text" placeholder="Search">
+                <div class="fixed padding-20 sm-no-padding-h">
+        
+                    <div class="col-12">
+                        <div class="col-static no-responsive">
+                            <div class="row row-no-padding-hor">
+                                <div class="col-12">
+                                    <div data-src="json/company.json" data-val="s" class="autocomplete text text-lg text-icon text-icon-lg text-icon-both has-clear rounded-left no-bordered inner-shadow-sm theme-gray ui-x-light ease-form">
+                                        <i class="icon icon-sm icon-search text-icon-left margin-5-l ease-layout"></i>
+                                        <button type="button" class="clear-form icon icon-xs icon-remove text-icon-right margin-5-r ease-layout"></button>
+                                        <input class="required" type="text" placeholder="Search">
+                                    </div>
+                                    <p class="required-msg rounded">Please, enter a keyword.</p>
+                                </div>
                             </div>
-                            <p class="required-msg rounded">Please, enter a keyword.</p>
+                            <div class="static-42 padding-10-v">
+                                <button class="btn btn-lg btn-square align-center rounded-right ui-dark ease-btn" type="submit">
+                                    <i class="icon icon-md icon-search"></i>
+                                </button>
+                            </div>
                         </div>
+                        <span class="sp30 margin-30-v"></span>
+                        <span class="sp30 margin-30-v"></span>
                     </div>
-                    <div class="static-50 padding-10-v">
-                        <button class="btn btn-lg btn-square align-center rounded-right ui-dark ease-btn" type="submit">
-                            <i class="icon icon-md icon-search"></i>
-                        </button>
-                    </div>
+    
                 </div>
-                <span class="sp30 margin-30-v padding-30-v"></span>
-
             </form>
         </div>
     </div>
