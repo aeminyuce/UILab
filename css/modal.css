@@ -17,8 +17,6 @@
 
 .modal-win.no-bg .required-msg { color: #fff; background-color: rgba(220,0,15,1); }
 .modal-win.no-bg .error:not(.form-holder) { background-color: rgba(220,0,15,1) !important; }
-.modal-win.no-bg .error ::-webkit-input-placeholder { color: #fff; }
-.modal-win.no-bg .error ::-moz-placeholder { color: #fff; }
 .modal-win.no-bg .error .icon { color: #fff !important; }
 
 .modal-content.lg { max-width: 1200px; min-height: 300px; }
