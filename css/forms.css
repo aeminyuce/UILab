@@ -88,7 +88,7 @@ html:not(.mobile) .file:hover .btn { background-color: rgba(0,0,0,.15); }
 .required-msg { background-color: rgba(220,0,15,.065); padding: 10px; }
 .required-msg:not(.show) { display: none; }
 
-.form-inline,.form-inline-responsive { display: inline-block !important; }
+.form-inline,.form-inline-responsive { vertical-align: middle; display: inline-block !important; }
 .form-disabled *,.form-readonly * { color: #555; cursor: not-allowed; }
 .form-disabled { background-color: rgba(0,0,0,.05); }
 
