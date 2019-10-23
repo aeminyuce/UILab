@@ -256,7 +256,7 @@ var lineCharts = {
 
                             if (i === 1) { // start curves
 
-                                paths += ' C ' + ((i * col) - data.percent) + ' ' + (posY + data.percent / 2) + ',' +
+                                paths += ' C ' + ((i * col) - data.percent) + ' ' + (posY - data.percent) + ',' +
                                     ' ' + ((i * col) - data.percent) + ' ' + posY + ',' +
                                     ' ' + posX + ' ' + posY;
 
