@@ -19,7 +19,7 @@
 
 .steps-bar li > span,.steps-bar.steps-icon li > .icon { width: 14px; height: 14px; display: block; position: absolute; top: 6px; left: 50%; z-index: 2; transform: translateX(-50%); }
 .steps-bar.steps-icon li > .icon { color: currentColor; font-size: 14px; }
-.steps-bar li.active ~ li > .icon { display: none; }
+.steps-bar li.active ~ li > .icon { opacity: 0; }
 
 .steps-bar[class*="ui-"] li:before { background-color: currentColor; border-color: currentColor; }
 .steps-bar[class*="ui-"] li:after { background-color: currentColor; }
