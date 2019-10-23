@@ -96,7 +96,7 @@ var donutChart = {};
                                         that.style.transitionDuration = '.15s';
                                     }, 2000);
 
-                                }, 340);
+                                }, 400);
 
                             }
 
