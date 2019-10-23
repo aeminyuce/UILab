@@ -293,7 +293,7 @@ var dataList = {
     });
 
     // data-sort
-    events.on(document, 'click', '.data-list [data-sort]', function () {
+    events.on(document, 'mousedown', '.data-list [data-sort]', function () {
 
         var that, id, buttons, isAsc, dataContainer, list, sortIndex, sortType, arr, arrSorted;
 
