@@ -181,8 +181,22 @@ var dropdown = {};
         // form toggle events
         events.on('.dropdown li > label', 'click', function () {
 
-            var p = events.closest(this, '.dropdown');
-            selector('.btn > .value-toggle', p).textContent = this.textContent;
+            var p, icon, target;
+            
+            p = events.closest(this, '.dropdown');
+            
+            target = selector('.btn > .value-toggle', p);
+            target.innerHTML = '';
+
+            icon = selector('.icon', this)[0];
+            if (icon !== undefined) {
+
+                icon = icon.cloneNode();
+                target.appendChild(icon);
+
+            }
+
+            target.insertAdjacentHTML('beforeend', this.textContent);
 
             events.removeClass(selector('li.selected', p), 'selected');
             events.addClass(this.parentNode, 'selected');

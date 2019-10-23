@@ -8,6 +8,7 @@
 .dropdown > .btn { display: block; }
 .dropdown > .btn:not(.btn-square) { width: 100%; }
 .dropdown.open .btn-ghost { background-color: rgba(0,0,0,.075) !important; }
+.dropdown .value-toggle .icon { opacity: 1 !important; }
 
 .dropdown.open-ease > .btn .icon-toggle { transform: scaleY(-1); }
 .mobile-menu .dropdown .icon-toggle { position: absolute; top: 50%; right: 10px; transform: translateY(-50%); }
