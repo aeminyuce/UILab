@@ -13,9 +13,9 @@
 .steps-bar li:first-child:after { content: none; }
 
 .steps-bar li.active:before { background-color: #fff !important; border-color: currentColor; box-shadow: 0 0 0 6px rgba(0,0,0,.065); }
-.steps-bar li.active ~ li { color: #ddd; }
-.steps-bar li.active ~ li:before { width: 10px; height: 10px; background-color: #fff; margin-top: 8px; border-color: #ddd; }
-.steps-bar li.active ~ li:after { background-color: #ddd; }
+.steps-bar li.active ~ li { color: rgba(0,0,0,.12); }
+.steps-bar li.active ~ li:before { width: 10px; height: 10px; background-color: #fff; margin-top: 8px; border-color: rgba(0,0,0,.12); }
+.steps-bar li.active ~ li:after { background-color: rgba(0,0,0,.12); }
 
 .steps-bar li > span,.steps-bar.steps-icon li > .icon { width: 14px; height: 14px; display: block; position: absolute; top: 6px; left: 50%; z-index: 2; transform: translateX(-50%); }
 .steps-bar.steps-icon li > .icon { color: currentColor; font-size: 14px; }
