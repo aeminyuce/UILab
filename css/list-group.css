@@ -43,5 +43,5 @@ html:not(.mobile) .list-group > ul > li > a:hover .list-icon { opacity: .75; }
 
 html:not(.mobile) .list-group > ul > li:not([class*="ui-"]):hover { background-color: rgba(0,0,0,.035); }
 
-html:not(.mobile) .list-group.list-striped li:nth-child(odd):not([class*="ui-"]) { background-color: rgba(0,0,0,.01); }
+html:not(.mobile) .list-group.list-striped li:nth-child(odd):not([class*="ui-"]) { background-color: rgba(0,0,0,.025); }
 html:not(.mobile) .list-group.list-striped li:nth-child(odd):not([class*="ui-"]):hover { background-color: rgba(0,0,0,.045); }
