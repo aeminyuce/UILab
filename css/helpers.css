@@ -19,6 +19,8 @@
 .set-absolute { position: absolute !important; }
 .set-fixed { position: fixed; }
 .set-all { top: 0; right: 0; bottom: 0; left: 0; }
+.set-hor { right: 0; left: 0; }
+.set-ver { top: 0; bottom: 0; }
 .set-top { top: 0; }
 .set-right { right: 0; }
 .set-bottom { bottom: 0; }
