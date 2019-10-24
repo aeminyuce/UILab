@@ -167,6 +167,7 @@ var photoSlider = {};
 
     // Loaders
     events.onload(photoSlider.Start);
+    
     events.on(window, 'resize', photoSliderLoader);
     events.on(window, 'scroll', photoSliderLoader);
 
