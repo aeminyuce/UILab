@@ -37,9 +37,9 @@ html:not(.mobile) .list-group > ul > li > a:hover .list-icon { opacity: .75; }
 .list-group .has-photo li,.list-group .has-photo li > a { min-height: 70px; padding-left: 70px; }
 .list-group .has-photo li > a { margin-left: -70px; }
 .list-group .has-photo-sm li,.list-group .has-photo-sm li > a { min-height: 62px; padding-left: 62px; }
-.list-group .has-photo-sm li > a { margin-left: -60px; }
+.list-group .has-photo-sm li > a { margin-left: -62px; }
 .list-group .has-photo-xs li,.list-group .has-photo-xs li > a { min-height: 52px; padding-left: 52px; }
-.list-group .has-photo-xs li > a { margin-left: -50px; }
+.list-group .has-photo-xs li > a { margin-left: -52px; }
 
 html:not(.mobile) .list-group > ul > li:not([class*="ui-"]):hover { background-color: rgba(0,0,0,.035); }
 
