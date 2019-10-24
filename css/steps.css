@@ -4,7 +4,7 @@
 .steps-bar:after { clear: both; }
 
 .steps-bar:not([class*="ui-"]) { color: #55b776; }
-.steps-bar li { font-size: 12px; line-height: normal; text-align: center; float: left; position: relative; }
+.steps-bar li { font-size: 11px; line-height: normal; text-align: center; float: left; position: relative; }
 
 .steps-bar:not(.steps-icon) li:before { background-color: #55b776; }
 .steps-bar li:before { content: ""; font-weight: bold; font-size: 11px; text-align: center; background-color: #fff; width: 14px; height: 14px; margin: 6px auto; display: block; border: 2px solid transparent; border-radius: 50%; position: relative; z-index: 1; }
@@ -13,8 +13,8 @@
 .steps-bar li:first-child:after { content: none; }
 
 .steps-bar li.active:before { background-color: #fff !important; border-color: currentColor; box-shadow: 0 0 0 6px rgba(0,0,0,.065); }
-.steps-bar li.active ~ li { color: rgba(0,0,0,.12); }
-.steps-bar li.active ~ li:before { width: 10px; height: 10px; background-color: #fff; margin-top: 8px; border-color: rgba(0,0,0,.12); }
+.steps-bar li.active ~ li { color: rgba(0,0,0,.32); }
+.steps-bar li.active ~ li:before { width: 10px; height: 10px; background-color: #fff; margin-top: 8px; margin-bottom: 8px; border-color: rgba(0,0,0,.12); }
 .steps-bar li.active ~ li:after { background-color: rgba(0,0,0,.12); }
 
 .steps-bar li > span,.steps-bar.steps-icon li > .icon { width: 14px; height: 14px; display: block; position: absolute; top: 6px; left: 50%; z-index: 2; transform: translateX(-50%); }
