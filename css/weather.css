@@ -7,7 +7,7 @@
 .weather:before,.weather:after,.weather .days:before,.weather .days:after { content: ""; display: table; }
 .weather:after,.weather .days:after { clear: both; }
 
-.weather { position: relative; }
+.weather { color: #000; position: relative; }
 .weather.night,.weather.night a,.weather.night .icon { color: #fff; }
 .weather .details { width: 100%; position: relative; z-index: 2; }
 

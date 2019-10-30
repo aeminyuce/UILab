@@ -12,13 +12,14 @@
 .steps-bar li:after { content: ""; width: 100%; height: 2px; background-color: #55b776; position: absolute; top: 12px; left: -50%; }
 .steps-bar li:first-child:after { content: none; }
 
-.steps-bar li.active:before { background-color: #fff !important; border-color: currentColor; box-shadow: 0 0 0 6px rgba(0,0,0,.065); }
+.steps-bar li.active:before { border-color: currentColor; box-shadow: 0 0 0 6px rgba(0,0,0,.065); }
+.steps-bar:not(.steps-icon) li.active:before { background-color: #fff !important; }
 .steps-bar li.active ~ li { color: rgba(0,0,0,.32); }
 .steps-bar li.active ~ li:before { width: 10px; height: 10px; background-color: #fff; margin-top: 8px; margin-bottom: 8px; border-color: rgba(0,0,0,.12); }
 .steps-bar li.active ~ li:after { background-color: rgba(0,0,0,.12); }
 
-.steps-bar li > span,.steps-bar.steps-icon li > .icon { width: 14px; height: 14px; display: block; position: absolute; top: 6px; left: 50%; z-index: 2; transform: translateX(-50%); }
-.steps-bar.steps-icon li > .icon { color: currentColor; font-size: 14px; }
+.steps-bar li > span,.steps-bar.steps-icon li > .icon { width: 16px; height: 16px; display: block; position: absolute; top: 5px; left: 50%; z-index: 2; transform: translateX(-50%); }
+.steps-bar.steps-icon li > .icon { color: currentColor; font-size: 16px; }
 .steps-bar li.active ~ li > .icon { opacity: 0; }
 
 .steps-bar[class*="ui-"] li:before { background-color: currentColor; border-color: currentColor; }

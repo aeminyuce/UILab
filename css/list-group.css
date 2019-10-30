@@ -3,7 +3,7 @@
 .ease-list-group .list-icon:not([class*="ease-"]) { transition-property: opacity; transition-duration: .15s; }
 .no-transitions-all .ease-list-group li,.no-transitions-all .ease-list-group li > a,.no-transitions-all .ease-list-group li .list-icon:not([class*="ease-"]) { transition-property: none !important; }
 
-.list-group:not(:last-child),.list-group li:not(:last-child) { border-bottom: solid 1px rgba(0,0,0,.1); }
+.list-group:not(:last-child),.list-group li:not(:last-child) { border-bottom: solid 1px rgba(0,0,0,.075); }
 .list-group > ul,.list-group > ol { list-style: none; padding: 0; }
 .list-group > ul { margin-bottom: 0; }
 .list-group > ul[class*="list-column-"] { margin-bottom: -1px; }
