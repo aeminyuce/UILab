@@ -28,9 +28,11 @@
     <link rel="stylesheet" href="../../../css/sticky-header.css"/>
     <link rel="stylesheet" href="../../../css/transitions.css"/>
     <link rel="stylesheet" href="../../../css/typography.css"/>
-    <link rel="stylesheet" href="../../../css/swatches.css"/>
     <link rel="stylesheet" href="../../../css/top-button.css"/>
 
+    <link rel="stylesheet" href="../../../css/swatches.css"/>
+    <link rel="stylesheet" href="../../../css/darkmode.css"/>
+    
     <!-- Javascript Tools -->
     <script src="../../../js/selector.js"></script>
     <script src="../../../js/events.js"></script>
@@ -77,6 +79,17 @@
         @media (max-width: 480px) {
             .icons-list li { width: 42%;}
             .icon { width: 100%;}
+        }
+
+        /*@media (prefers-color-scheme: dark) {*/@media (min-width: 1800px) {
+            .icons-list li {
+                color: #fff;
+                background-color: #2f343e;
+                border-color: #41454d;
+            }
+            .icons-list li > span {
+                color: #d0d0d0;
+            }
         }
 
     </style>

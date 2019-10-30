@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="../css/buttons.css"/>
     <link rel="stylesheet" href="../css/borders.css"/>
     <link rel="stylesheet" href="../css/calendar.css"/>
+    <link rel="stylesheet" href="../css/carousel.css"/>
     <link rel="stylesheet" href="../css/data-list.css"/>
     <link rel="stylesheet" href="../css/donut-chart.css"/>
     <link rel="stylesheet" href="../css/dropdown.css"/>
@@ -56,9 +57,11 @@
     <link rel="stylesheet" href="../css/transitions.css"/>
     <link rel="stylesheet" href="../css/typography.css"/>
     <link rel="stylesheet" href="../css/sticky-header.css"/>
-    <link rel="stylesheet" href="../css/swatches.css"/>
     <link rel="stylesheet" href="../css/tooltip.css"/>
     <link rel="stylesheet" href="../css/top-button.css"/>
+    
+    <link rel="stylesheet" href="../css/swatches.css"/>
+    <link rel="stylesheet" href="../css/darkmode.css"/>
 
     <!-- Javascript Tools -->
     <script src="../js/selector.js"></script>
@@ -67,6 +70,7 @@
     <script src="../js/ajax.js"></script>
     <script src="../js/autocomplete.js"></script>
     <script src="../js/calendar.js"></script>
+    <script src="../js/carousel.js"></script>
     <script src="../js/data-list.js"></script>
     <script src="../js/donut-chart.js"></script>
     <script src="../js/dropdown.js"></script>
@@ -97,17 +101,17 @@
 
         .theme-panel.ui-x-light,.theme-panel .ui-x-light:not([class*="theme-"]) { background-color: #c2c4ee; }
         .theme-panel.ui-light,.theme-panel .ui-light:not([class*="theme-"]) { background-color: #a4a8f3; }
-        .theme-panel.ui-dark,.theme-panel .ui-dark:not([class*="theme-"]) { background-color: #2f3480; }
-        .theme-panel.ui-text,.theme-panel .ui-text { color: #2f3480; }
-        .theme-panel.ui-border,.theme-panel .ui-border { border-color: #2f3480; }
-        .theme-panel.ui-x-dark,.theme-panel .ui-x-dark:not([class*="theme-"]) { background-color: #282c71; }
+        .theme-panel.ui-dark,.theme-panel .ui-dark:not([class*="theme-"]) { background-color: #2f3b80; }
+        .theme-panel.ui-text,.theme-panel .ui-text { color: #2f3b80; }
+        .theme-panel.ui-border,.theme-panel .ui-border { border-color: #2f3b80; }
+        .theme-panel.ui-x-dark,.theme-panel .ui-x-dark:not([class*="theme-"]) { background-color: #273375; }
 
-        .theme-panel2.ui-x-light,.theme-panel2 .ui-x-light:not([class*="theme-"]) { background-color: #fddee4; }
-        .theme-panel2.ui-light,.theme-panel2 .ui-light:not([class*="theme-"]) { background-color: #f3aebb; }
-        .theme-panel2.ui-dark,.theme-panel2 .ui-dark:not([class*="theme-"]),.notifier:after { background-color: #ff103b; }
-        .theme-panel2.ui-text,.theme-panel2 .ui-text { color: #ff103b; }
-        .theme-panel2.ui-border,.theme-panel2 .ui-border { border-color: #ff103b; }
-        .theme-panel2.ui-x-dark,.theme-panel2 .ui-x-dark:not([class*="theme-"]) { background-color: #cf1335; }
+        .theme-panel2.ui-x-light,.theme-panel2 .ui-x-light:not([class*="theme-"]) { background-color: #d1f4fa; }
+        .theme-panel2.ui-light,.theme-panel2 .ui-light:not([class*="theme-"]) { background-color: #abebf5; }
+        .theme-panel2.ui-dark,.theme-panel2 .ui-dark:not([class*="theme-"]) { background-color: #4fdaef; }
+        .theme-panel2.ui-text,.theme-panel2 .ui-text { color: #4fdaef; }
+        .theme-panel2.ui-border,.theme-panel2 .ui-border { border-color: #4fdaef; }
+        .theme-panel2.ui-x-dark,.theme-panel2 .ui-x-dark:not([class*="theme-"]) { background-color: #0ba8c0; }
         
         .theme-step8.ui-dark,.theme-step8 .ui-dark:not([class*="theme-"]) { background-color: #26c281; }
         .theme-step8.ui-text,.theme-step8 .ui-text { color: #26c281; }
@@ -142,7 +146,16 @@
         .theme-step1.ui-border,.theme-step1 .ui-border { border-color: #c40009; }
 
         header { background-color: #fefefe; }
-</style>
+
+        /*@media (prefers-color-scheme: dark) {*/@media (min-width: 1800px) {
+            .theme-panel.ui-dark,.theme-panel .ui-dark:not([class*="theme-"]) { background-color: #242d65; }
+            .theme-panel.ui-border,.theme-panel .ui-border { border-color: #242d65; }
+            .theme-panel.ui-x-dark,.theme-panel .ui-x-dark:not([class*="theme-"]) { background-color: #1e2658; }
+
+            header { background-color: #15181d; }
+        }
+
+    </style>
 
     <!-- custom js -->
     <script>
@@ -174,30 +187,30 @@
                             <div class="small margin-10-b light-ui">Personal Activity</div>
 
                             <div class="btn-holder align-center show-3 rounded theme-panel ui-x-dark ease-1st-btn">
-                                <button class="btn btn-multi btn-ghost padding-10-v rounded right-bordered ui-dark">
+                                <button class="btn btn-multi btn-ghost padding-10-v rounded right-bordered">
 
                                     <span class="xx-large xx-light">13</span>
                                     <span class="small light-ui margin-5-b block">Waiting</span>
                                     <span class="progress-bar progress rounded dual-bordered">
-                                        <span class="ui-dark stripe-light" style="width: 65%;"></span>
+                                        <span class="theme-green ui-dark stripe-light" style="width: 65%;"></span>
                                     </span>
 
                                 </button>
-                                <button class="btn btn-multi btn-ghost padding-10-v rounded right-bordered ui-dark">
+                                <button class="btn btn-multi btn-ghost padding-10-v rounded right-bordered">
 
                                     <span class="xx-large xx-light">3</span>
                                     <span class="small light-ui margin-5-b block">Paused</span>
                                     <span class="progress-bar progress rounded dual-bordered">
-                                        <span class="ui-dark stripe-light" style="width: 35%;"></span>
+                                        <span class="theme-green ui-dark stripe-light" style="width: 35%;"></span>
                                     </span>
 
                                 </button>
-                                <button class="btn btn-multi btn-ghost padding-10-v rounded right-bordered ui-dark">
+                                <button class="btn btn-multi btn-ghost padding-10-v rounded right-bordered">
 
                                     <span class="xx-large xx-light">16</span>
                                     <span class="small light-ui margin-5-b block">Delayed</span>
                                     <span class="progress-bar progress rounded dual-bordered">
-                                        <span class="ui-dark stripe-light" style="width: 75%;"></span>
+                                        <span class="theme-green ui-dark stripe-light" style="width: 75%;"></span>
                                     </span>
 
                                 </button>
@@ -316,15 +329,15 @@
                         <span class="sp15"></span>
 
                         <div class="padding-5 margin-10 rounded theme-panel ui-x-dark ease-1st-btn">
-                            <button class="btn btn-lg btn-ghost rounded padding-15-h block light-ui ui-dark">
+                            <button class="btn btn-lg btn-ghost rounded padding-15-h block light-ui">
                                 <i class="icon icon-md icon-user-accepted margin-15-r no-opacity"></i>
                                 Administration
                             </button>
-                            <button class="btn btn-lg btn-ghost rounded padding-15-h block light-ui ui-dark">
+                            <button class="btn btn-lg btn-ghost rounded padding-15-h block light-ui">
                                 <i class="icon icon-md icon-clock margin-15-r no-opacity"></i>
                                 Recent History
                             </button>
-                            <button class="btn btn-lg btn-ghost rounded padding-15-h block light-ui ui-dark">
+                            <button class="btn btn-lg btn-ghost rounded padding-15-h block light-ui">
                                 <i class="icon icon-md icon-settings margin-15-r no-opacity"></i>
                                 Tools
                             </button>
@@ -337,7 +350,8 @@
 
             <div class="row padding-10 md-no-padding">
 
-                <header class="col-12 sticky-md x-dark align-right padding-10-v ease-layout" data-classes="shadow-lg">
+                <!-- header: start -->
+                <header class="col-12 sticky-md dark align-right padding-10-v ease-layout" data-classes="shadow-lg">
 
                     <div class="align-center left">
                         <button class="btn btn-lg btn-ghost padding-10 circle ease-btn show-mobile-menu-left visible-md">
@@ -354,7 +368,7 @@
                             <button class="btn btn-lg btn-ghost padding-10 circle ease-btn visible-sm">
                                 <i class="icon icon-md icon-doc no-opacity"></i>
                             </button>
-                            <ul class="content has-icon shadow-lg v-scroll ease-dropdown">
+                            <ul class="content has-icon rounded shadow-lg v-scroll ease-dropdown">
                                 <li><a href="#"><b class="list-icon no-opacity">23</b> Waiting</a></li>
                                 <li><a href="#"><b class="list-icon no-opacity">258</b> Expert</a></li>
                                 <li><a href="#"><b class="list-icon no-opacity">49</b> On Audit</a></li>
@@ -369,7 +383,7 @@
                             <button class="btn btn-lg btn-ghost padding-10 circle ease-btn visible-sm">
                                 <i class="icon icon-md icon-briefcase no-opacity"></i>
                             </button>
-                            <ul class="content has-icon shadow-lg v-scroll ease-dropdown">
+                            <ul class="content has-icon rounded shadow-lg v-scroll ease-dropdown">
                                 <li><a href="#"><b class="list-icon no-opacity">23</b> Waiting</a></li>
                                 <li><a href="#"><b class="list-icon no-opacity">258</b> Expert</a></li>
                                 <li><a href="#"><b class="list-icon no-opacity">49</b> On Audit</a></li>
@@ -418,107 +432,118 @@
                     </div>
 
                 </header>
+                <!-- header: end -->
 
-                <div class="clearfix"></div>
-                
-                <div class="col-12 no-padding-t">
+                <!-- contents: start -->
+                <div class="col-12 no-padding">
+                    <div class="carousel" data-col-xl="4" data-col-lg="2" data-col="2" data-col-md="2" data-col-sm="1" data-col-xs="1">
+                        <div class="carousel-slider ease-2nd-layout ease-layout ease-slow ease-in-out">
+    
+                            <div class="content padding-10-h padding-10-t padding-15-b theme-yellow">
+                                <div class="portlet full-height padding-15 rounded shadow-lg">
+                                    <div class="col-static no-responsive">
+                                        <div class="row row-no-padding-hor row-md-padding-ver">
+                                            <div class="col-12">
+                                                <div class="x-large">Pending</div>
+                                                <span class="dark large">Total: 45%</span>
+                                            </div>
+                                        </div>
+                                        <div class="static-100 align-right">
+                                            <span class="x-largest ui-text">157</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bar margin-15-t progress rounded">
+                                        <span class="ui-dark stripe-light" style="width: 45%;"></span>
+                                    </div>
+                                    <p class="dark large margin-5-b">Pending for the transaction.</p>
+                                    <p class="light">
+                                        <i class="icon icon-xs icon-clock margin-3-r"></i>
+                                        <span class="inline-block">Last updated: 15:12</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content padding-10-h padding-10-t padding-15-b theme-yellow">
+                                <div class="portlet full-height padding-15 rounded shadow-lg">
+                                    <div class="col-static no-responsive">
+                                        <div class="row row-no-padding-hor row-md-padding-ver">
+                                            <div class="col-12">
+                                                <div class="x-large">Paused</div>
+                                                <span class="dark large">Total: 5%</span>
+                                            </div>
+                                        </div>
+                                        <div class="static-100 align-right">
+                                            <span class="x-largest ui-text">23</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bar margin-15-t progress rounded">
+                                        <span class="ui-dark stripe-light" style="width: 5%;"></span>
+                                    </div>
+                                    <p class="dark large margin-5-b">Paused for the some reasons.</p>
+                                    <p class="light">
+                                        <i class="icon icon-xs icon-clock margin-3-r"></i>
+                                        <span class="inline-block">Last updated: 15:12</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content padding-10-h padding-10-t padding-15-b theme-green">
+                                <div class="portlet full-height padding-15 rounded shadow-lg">
+                                    <div class="col-static no-responsive">
+                                        <div class="row row-no-padding-hor row-md-padding-ver">
+                                            <div class="col-12">
+                                                <div class="x-large">Completed</div>
+                                                <span class="dark large">Total: 80%</span>
+                                            </div>
+                                        </div>
+                                        <div class="static-100 align-right">
+                                            <span class="x-largest ui-text">256</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bar margin-15-t progress rounded">
+                                        <span class="ui-dark stripe-light" style="width: 80%;"></span>
+                                    </div>
+                                    <p class="dark large margin-5-b">Reached for the expert.</p>
+                                    <p class="light">
+                                        <i class="icon icon-xs icon-clock margin-3-r"></i>
+                                        <span class="inline-block">Last updated: 15:12</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content padding-10-h padding-10-t padding-15-b theme-panel2">
+                                <div class="portlet full-height padding-15 rounded shadow-lg">
+                                    <div class="col-static no-responsive">
+                                        <div class="row row-no-padding-hor row-md-padding-ver">
+                                            <div class="col-12">
+                                                <div class="align-left x-large">On Payment</div>
+                                                <span class="dark large">Total: 67%</span>
+                                            </div>
+                                        </div>
+                                        <div class="static-100 align-right">
+                                            <span class="x-largest ui-text">256</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bar margin-15-t progress rounded">
+                                        <span class="ui-dark stripe-light" style="width: 67%;"></span>
+                                    </div>
+                                    <p class="dark large margin-5-b">Confirmed for payment.</p>
+                                    <p class="light">
+                                        <i class="icon icon-xs icon-clock margin-3-r"></i>
+                                        <span class="inline-block">Last updated: 15:12</span>
+                                    </p>               
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="carousel-nav align-center no-margin ease-1st-bg hidden-xl">
+                            <button class="carousel-prev btn btn-ghost btn-square rounded"><i class="icon icon-md icon-angle-left"></i></button>
+                            <span class="dots dark"></span>
+                            <button class="carousel-next btn btn-ghost btn-square rounded"><i class="icon icon-md icon-angle-right"></i></button>
+                        </div>
+                    </div>
+                </div>
 
-                    <!-- layouts: start-->
+                <div class="col-12 xl-no-padding-t">
 
                     <div class="row">
-
-                        <div class="col-xl-3 col-6 sm-responsive theme-yellow">
-                            <div class="portlet full-height padding-15 rounded shadow-lg">
-                                <div class="col-static no-responsive">
-                                    <div class="row row-no-padding-hor row-md-padding-ver">
-                                        <div class="col-12">
-                                            <div class="x-large">Pending</div>
-                                            <span class="dark large">Total: 45%</span>
-                                        </div>
-                                    </div>
-                                    <div class="static-100 align-right">
-                                        <span class="x-largest ui-text">157</span>
-                                    </div>
-                                </div>
-                                <div class="progress-bar margin-15-t progress rounded">
-                                    <span class="ui-dark stripe-light" style="width: 45%;"></span>
-                                </div>
-                                <p class="x-dark large margin-5-b">Pending for the transaction.</p>
-                                <p class="light">
-                                    <i class="icon icon-xs icon-clock margin-3-r"></i>
-                                    <span class="inline-block">Last updated: 15:12</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-6 sm-responsive theme-yellow">
-                            <div class="portlet full-height padding-15 rounded shadow-lg">
-                                <div class="col-static no-responsive">
-                                    <div class="row row-no-padding-hor row-md-padding-ver">
-                                        <div class="col-12">
-                                            <div class="x-large">Paused</div>
-                                            <span class="dark large">Total: 5%</span>
-                                        </div>
-                                    </div>
-                                    <div class="static-100 align-right">
-                                        <span class="x-largest ui-text">23</span>
-                                    </div>
-                                </div>
-                                <div class="progress-bar margin-15-t progress rounded">
-                                    <span class="ui-dark stripe-light" style="width: 5%;"></span>
-                                </div>
-                                <p class="x-dark large margin-5-b">Paused for the some reasons.</p>
-                                <p class="light">
-                                    <i class="icon icon-xs icon-clock margin-3-r"></i>
-                                    <span class="inline-block">Last updated: 15:12</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-6 sm-responsive theme-green">
-                            <div class="portlet full-height padding-15 rounded shadow-lg">
-                                <div class="col-static no-responsive">
-                                    <div class="row row-no-padding-hor row-md-padding-ver">
-                                        <div class="col-12">
-                                            <div class="x-large">Completed</div>
-                                            <span class="dark large">Total: 80%</span>
-                                        </div>
-                                    </div>
-                                    <div class="static-100 align-right">
-                                        <span class="x-largest ui-text">256</span>
-                                    </div>
-                                </div>
-                                <div class="progress-bar margin-15-t progress rounded">
-                                    <span class="ui-dark stripe-light" style="width: 80%;"></span>
-                                </div>
-                                <p class="x-dark large margin-5-b">Reached for the expert.</p>
-                                <p class="light">
-                                    <i class="icon icon-xs icon-clock margin-3-r"></i>
-                                    <span class="inline-block">Last updated: 15:12</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-6 sm-responsive theme-panel">
-                            <div class="portlet full-height padding-15 rounded shadow-lg">
-                                <div class="col-static no-responsive">
-                                    <div class="row row-no-padding-hor row-md-padding-ver">
-                                        <div class="col-12">
-                                            <div class="align-left x-large">On Payment</div>
-                                            <span class="dark large">Total: 67%</span>
-                                        </div>
-                                    </div>
-                                    <div class="static-100 align-right">
-                                        <span class="x-largest ui-text">256</span>
-                                    </div>
-                                </div>
-                                <div class="progress-bar margin-15-t progress rounded">
-                                    <span class="ui-dark stripe-light" style="width: 67%;"></span>
-                                </div>
-                                <p class="x-dark large margin-5-b">Confirmed for payment.</p>
-                                <p class="light">
-                                    <i class="icon icon-xs icon-clock margin-3-r"></i>
-                                    <span class="inline-block">Last updated: 15:12</span>
-                                </p>               
-                            </div>
-                        </div>
 
                         <div class="col-xl-3 col-lg-6 col-12 col-md-6 sm-responsive">
                             <div class="portlet full-height padding-15 rounded shadow-lg">
@@ -534,7 +559,7 @@
                                     </ul>
                                 </div>
                                 <h4 class="align-left margin-5-t">Activity</h4>
-                                <div class="col-static no-responsive theme-panel ui-text">
+                                <div class="col-static no-responsive theme-panel2 ui-text">
                                     <div class="row row row-no-padding-hor row-md-padding-ver">
                                         <div class="col-12 large">
                                             <div class="large bold">Total Progress</div>
@@ -590,26 +615,10 @@
                                 </div>
                                 <h4 class="align-left margin-5-t">Statistics</h4>
                                 <div class="line-charts ease-line-charts" data-size="5,48" data-x="Sep,Oct,Nov,Dec,Jan,Fab">
-                                    <ul class="line" data-name="Past year" data-type="curved">
-                                        <li data-y="34" data-link="#"></li>
-                                        <li data-y="56" data-link="#"></li>
-                                        <li data-y="112" data-link="#"></li>
-                                        <li data-y="28" data-link="#"></li>
-                                        <li data-y="20" data-link="#"></li>
-                                        <li data-y="48" data-link="#"></li>
-                                    </ul>
-                                    <ul class="line" data-name="This year" data-type="curved">
-                                        <li data-y="120" data-link="#"></li>
-                                        <li data-y="20" data-link="#"></li>
-                                        <li data-y="159" data-link="#"></li>
-                                        <li data-y="80" data-link="#"></li>
-                                        <li data-y="0" data-link="#"></li>
-                                        <li data-y="72" data-link="#"></li>
-                                    </ul>
-                                    <ul class="line" data-name="Performance" data-type="filled">
+                                    <ul class="line" data-name="This Year" data-type="curved filled">
                                         <li data-y="12" data-link="#"></li>
                                         <li data-y="34" data-link="#"></li>
-                                        <li data-y="50" data-link="#"></li>
+                                        <li data-y="72" data-link="#"></li>
                                         <li data-y="120" data-link="#"></li>
                                         <li data-y="100" data-link="#"></li>
                                         <li data-y="144" data-link="#"></li>
@@ -620,7 +629,7 @@
                         
                         <div class="col-xl-3 col-lg-6 col-12 col-md-6 sm-responsive">
                             <div class="portlet full-height padding-15 padding-10-t rounded shadow-lg" style="min-height: 355px;">
-                                <div class="btn-tabs theme-panel ease-tabs" data-classes="ui-border">
+                                <div class="btn-tabs theme-panel2 ease-tabs" data-classes="ui-border">
                                     <div class="row row-no-padding x-dark ease-2nd-btn">
                                         <div class="col-6 no-responsive">
                                             <button class="btn-tab btn btn-lg btn-ghost bottom-bordered dual-bordered block rounded-top ui-border active">News</button>
@@ -631,6 +640,11 @@
                                     </div>
                                     <div class="tab-content set-absolute set-hor v-scroll open open-ease" style="top: 62px; bottom: 15px;">
                                         <ul class="timeline margin-15-h left-side hide-h-lines">
+                                            <li>
+                                                <span class="card xx-dark no-padding-v no-padding-r">
+                                                    Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.
+                                                </span>
+                                            </li>
                                             <li>
                                                 <span class="card xx-dark no-padding-v no-padding-r">
                                                     Lorem ipsum dolor sit amet.
@@ -644,27 +658,22 @@
                                             </li>
                                             <li>
                                                 <span class="card xx-dark no-padding-v no-padding-r">
-                                                    Nullam sit amet sagittis nisi.
-                                                    <span class="margin-5-t block ease-1st-btn">
-                                                        <a class="btn btn-lg btn-square rounded" href="#"><i class="icon icon-lg icon-file-pdf no-opacity ui-text"></i></a>
-                                                        <a class="btn btn-lg btn-square rounded" href="#"><i class="icon icon-lg icon-file-xls no-opacity ui-text"></i></a>
-                                                        <a class="btn btn-lg btn-square rounded" href="#"><i class="icon icon-lg icon-file-zip no-opacity ui-text"></i></a>
-                                                    </span>
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <span class="card xx-dark no-padding-v no-padding-r">
-                                                    Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <span class="card xx-dark no-padding-v no-padding-r">
                                                     Aenean imperdiet dolor nibh, a porta nunc maximus vitae.
                                                 </span>
                                             </li>
                                             <li>
                                                 <span class="card xx-dark no-padding-v no-padding-r">
                                                     Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="card xx-dark no-padding-v no-padding-r">
+                                                    Nullam sit amet sagittis nisi.
+                                                    <span class="margin-5-t block ease-1st-btn">
+                                                        <a class="btn btn-lg btn-square rounded" href="#"><i class="icon icon-lg icon-file-pdf no-opacity ui-text"></i></a>
+                                                        <a class="btn btn-lg btn-square rounded" href="#"><i class="icon icon-lg icon-file-xls no-opacity ui-text"></i></a>
+                                                        <a class="btn btn-lg btn-square rounded" href="#"><i class="icon icon-lg icon-file-zip no-opacity ui-text"></i></a>
+                                                    </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -842,10 +851,10 @@
             
                                     <div class="data-container">
             
-                                        <div class="data-content no-bordered rounded" data-val="John Doe|Paused">
+                                        <div class="data-content no-bordered rounded" data-val="John Atkinson|Paused">
                                             <div class="row row-no-padding">
                                                 <div class="col-5 no-responsive">
-                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
+                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
                                                 </div>
                                                 <div class="col-7 no-responsive">
                                                     <ul class="steps-bar steps-bar-column-7 steps-icon theme-step6 ui-text">
@@ -909,7 +918,7 @@
                                         <div class="data-content no-bordered rounded" data-val="Mike Taylor|Completed">
                                             <div class="row row-no-padding">
                                                 <div class="col-5 no-responsive">
-                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mary Doe
+                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                                 </div>
                                                 <div class="col-7 no-responsive">
                                                     <ul class="steps-bar steps-bar-column-7 steps-icon theme-step7 ui-text">
@@ -938,10 +947,42 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="data-content no-bordered rounded" data-val="John Doe|Paused">
+                                        <div class="data-content no-bordered rounded" data-val="Tony Starky|Paused">
                                             <div class="row row-no-padding">
                                                 <div class="col-5 no-responsive">
-                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
+                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
+                                                </div>
+                                                <div class="col-7 no-responsive">
+                                                    <ul class="steps-bar steps-bar-column-7 steps-icon theme-step6 ui-text">
+                                                        <li>
+                                                            <i class="icon icon-tick" data-tooltip title="Starting"></i>1:S
+                                                        </li>
+                                                        <li>
+                                                            <i class="icon icon-tick" data-tooltip title="Waiting"></i>2:W
+                                                        </li>
+                                                        <li>
+                                                            <i class="icon icon-tick" data-tooltip title="Expert"></i>3:E
+                                                        </li>
+                                                        <li>
+                                                            <i class="icon icon-tick" data-tooltip title="First Audit"></i>4:F
+                                                        </li>
+                                                        <li>
+                                                            <i class="icon icon-tick" data-tooltip title="Second Audit"></i>5:S
+                                                        </li>
+                                                        <li class="active">
+                                                            <i class="icon icon-clock" data-tooltip title="Paused"></i>6:P
+                                                        </li>
+                                                        <li>
+                                                            <i class="icon icon-tick" data-tooltip title="Delayed"></i>7:C
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="data-content no-bordered rounded" data-val="John Atkinson|Paused">
+                                            <div class="row row-no-padding">
+                                                <div class="col-5 no-responsive">
+                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
                                                 </div>
                                                 <div class="col-7 no-responsive">
                                                     <ul class="steps-bar steps-bar-column-7 steps-icon theme-step6 ui-text">
@@ -1005,7 +1046,7 @@
                                         <div class="data-content no-bordered rounded" data-val="Mike Taylor|Completed">
                                             <div class="row row-no-padding">
                                                 <div class="col-5 no-responsive">
-                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mary Doe
+                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                                 </div>
                                                 <div class="col-7 no-responsive">
                                                     <ul class="steps-bar steps-bar-column-7 steps-icon theme-step7 ui-text">
@@ -1034,10 +1075,42 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="data-content no-bordered rounded" data-val="John Doe|Paused">
+                                        <div class="data-content no-bordered rounded" data-val="Tony Starky|Paused">
                                             <div class="row row-no-padding">
                                                 <div class="col-5 no-responsive">
-                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
+                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
+                                                </div>
+                                                <div class="col-7 no-responsive">
+                                                    <ul class="steps-bar steps-bar-column-7 steps-icon theme-step6 ui-text">
+                                                        <li>
+                                                            <i class="icon icon-tick" data-tooltip title="Starting"></i>1:S
+                                                        </li>
+                                                        <li>
+                                                            <i class="icon icon-tick" data-tooltip title="Waiting"></i>2:W
+                                                        </li>
+                                                        <li>
+                                                            <i class="icon icon-tick" data-tooltip title="Expert"></i>3:E
+                                                        </li>
+                                                        <li>
+                                                            <i class="icon icon-tick" data-tooltip title="First Audit"></i>4:F
+                                                        </li>
+                                                        <li>
+                                                            <i class="icon icon-tick" data-tooltip title="Second Audit"></i>5:S
+                                                        </li>
+                                                        <li class="active">
+                                                            <i class="icon icon-clock" data-tooltip title="Paused"></i>6:P
+                                                        </li>
+                                                        <li>
+                                                            <i class="icon icon-tick" data-tooltip title="Delayed"></i>7:C
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="data-content no-bordered rounded" data-val="John Atkinson|Paused">
+                                            <div class="row row-no-padding">
+                                                <div class="col-5 no-responsive">
+                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
                                                 </div>
                                                 <div class="col-7 no-responsive">
                                                     <ul class="steps-bar steps-bar-column-7 steps-icon theme-step6 ui-text">
@@ -1101,7 +1174,7 @@
                                         <div class="data-content no-bordered rounded" data-val="Mike Taylor|Completed">
                                             <div class="row row-no-padding">
                                                 <div class="col-5 no-responsive">
-                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mary Doe
+                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                                 </div>
                                                 <div class="col-7 no-responsive">
                                                     <ul class="steps-bar steps-bar-column-7 steps-icon theme-step7 ui-text">
@@ -1130,10 +1203,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="data-content no-bordered rounded" data-val="John Doe|Paused">
+                                        <div class="data-content no-bordered rounded" data-val="Tony Starky|Paused">
                                             <div class="row row-no-padding">
                                                 <div class="col-5 no-responsive">
-                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
+                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
                                                 </div>
                                                 <div class="col-7 no-responsive">
                                                     <ul class="steps-bar steps-bar-column-7 steps-icon theme-step6 ui-text">
@@ -1162,71 +1235,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="data-content no-bordered rounded" data-val="Mary Doe|Waiting">
-                                            <div class="row row-no-padding">
-                                                <div class="col-5 no-responsive">
-                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
-                                                </div>
-                                                <div class="col-7 no-responsive">
-                                                    <ul class="steps-bar steps-bar-column-7 steps-icon theme-step2 ui-text">
-                                                        <li>
-                                                            <i class="icon icon-tick" data-tooltip title="Starting"></i>1:S
-                                                        </li>
-                                                        <li class="active">
-                                                            <i class="icon icon-clock" data-tooltip title="Waiting"></i>2:W
-                                                        </li>
-                                                        <li>
-                                                            <i class="icon icon-tick" data-tooltip title="Expert"></i>3:E
-                                                        </li>
-                                                        <li>
-                                                            <i class="icon icon-tick" data-tooltip title="First Audit"></i>4:F
-                                                        </li>
-                                                        <li>
-                                                            <i class="icon icon-tick" data-tooltip title="Second Audit"></i>5:S
-                                                        </li>
-                                                        <li>
-                                                            <i class="icon icon-tick" data-tooltip title="Paused"></i>6:P
-                                                        </li>
-                                                        <li>
-                                                            <i class="icon icon-tick" data-tooltip title="Delayed"></i>7:C
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="data-content no-bordered rounded" data-val="Mike Taylor|Completed">
-                                            <div class="row row-no-padding">
-                                                <div class="col-5 no-responsive">
-                                                    <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mary Doe
-                                                </div>
-                                                <div class="col-7 no-responsive">
-                                                    <ul class="steps-bar steps-bar-column-7 steps-icon theme-step7 ui-text">
-                                                        <li>
-                                                            <i class="icon icon-tick" data-tooltip title="Starting"></i>1:S
-                                                        </li>
-                                                        <li>
-                                                            <i class="icon icon-tick" data-tooltip title="Waiting"></i>2:W
-                                                        </li>
-                                                        <li>
-                                                            <i class="icon icon-tick" data-tooltip title="Expert"></i>3:E
-                                                        </li>
-                                                        <li>
-                                                            <i class="icon icon-tick" data-tooltip title="First Audit"></i>4:F
-                                                        </li>
-                                                        <li>
-                                                            <i class="icon icon-tick" data-tooltip title="Second Audit"></i>5:S
-                                                        </li>
-                                                        <li>
-                                                            <i class="icon icon-tick" data-tooltip title="Paused"></i>6:P
-                                                        </li>
-                                                        <li class="active">
-                                                            <i class="icon icon-clock" data-tooltip title="Delayed"></i>7:C
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-
                                     </div>
 
                                     <span class="sp10"></span>
@@ -1238,7 +1246,7 @@
                                             </div>
                                         </div>
                                         <div class="col-8 no-responsive align-right">
-                                            <div class="data-paging pagination ease-1st-bg" data-default="btn rounded" data-active="theme-panel ui-dark"></div>
+                                            <div class="data-paging pagination ease-1st-bg" data-default="btn rounded" data-active="theme-panel2 ui-dark"></div>
                                         </div>
                                     </div>
             
@@ -1248,7 +1256,7 @@
 
                         <div class="col-xl-3 col-lg-6 col-12 col-md-6 sm-responsive">
                             <div class="portlet full-height padding-15 padding-10-t rounded shadow-lg" style="min-height: 414px;">
-                                <div class="btn-tabs theme-panel ease-tabs" data-classes="ui-border">
+                                <div class="btn-tabs theme-panel2 ease-tabs" data-classes="ui-border">
                                     <div class="row row-no-padding x-dark ease-2nd-btn">
                                         <div class="col-6 no-responsive">
                                             <button class="btn-tab btn btn-lg btn-ghost bottom-bordered dual-bordered block rounded-top ui-border active">Delayed</button>
@@ -1259,71 +1267,65 @@
                                     </div>
                                     <div class="tab-content set-absolute set-hor v-scroll open open-ease" style="top: 62px; bottom: 15px;">
                                         <div class="list-group list-striped margin-15-h">
-                                            <ul class="has-photo-sm ease-list-group">
+                                            <ul class="ease-list-group">
                                                 <li class="no-bordered">
-                                                    <span class="img-photo-sm circle"><span>AAC</span></span>
                                                     <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
-                                                        <strong class="x-small">88%</strong>
+                                                        <strong class="thin x-small">88%</strong>
                                                         <svg viewBox="0 0 160 160">
-                                                            <circle r="69.85699" cy="80" cx="80" stroke="#ff103b" data-percent="88" />
+                                                            <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="88" />
                                                         </svg>
                                                     </span>
-                                                    <b class="margin-3-t block">2019-013</b>
+                                                    <b class="margin-3-t block">AAC-2019-013:AGF</b>
                                                     <span class="x-dark small">3814 Reports</span>
                                                 </li>
                                                 <li class="no-bordered">
-                                                    <span class="img-photo-sm circle"><span>BDA</span></span>
                                                     <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
-                                                        <strong class="x-small">76%</strong>
+                                                        <strong class="thin x-small">76%</strong>
                                                         <svg viewBox="0 0 160 160">
-                                                            <circle r="69.85699" cy="80" cx="80" stroke="#ff103b" data-percent="76" />
+                                                            <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="76" />
                                                         </svg>
                                                     </span>
-                                                    <b class="margin-3-t block">2019-642</b>
+                                                    <b class="margin-3-t block">BDA-2019-642</b>
                                                     <span class="x-dark small">2613 Reports</span>
                                                 </li>
                                                 <li class="no-bordered">
-                                                    <span class="img-photo-sm circle"><span>DDG</span></span>
                                                     <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
-                                                        <strong class="x-small">69%</strong>
+                                                        <strong class="thin x-small">69%</strong>
                                                         <svg viewBox="0 0 160 160">
-                                                            <circle r="69.85699" cy="80" cx="80" stroke="#ff103b" data-percent="69" />
+                                                            <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="69" />
                                                         </svg>
                                                     </span>
-                                                    <b class="margin-3-t block">2019-505</b>
+                                                    <b class="margin-3-t block">DDG-2019-505:AG</b>
                                                     <span class="x-dark small">1890 Reports</span>
                                                 </li>
                                                 <li class="no-bordered">
-                                                    <span class="img-photo-sm circle"><span>OOC</span></span>
                                                     <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
-                                                        <strong class="x-small">52%</strong>
+                                                        <strong class="thin x-small">52%</strong>
                                                         <svg viewBox="0 0 160 160">
-                                                            <circle r="69.85699" cy="80" cx="80" stroke="#ff103b" data-percent="52" />
+                                                            <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="52" />
                                                         </svg>
                                                     </span>
-                                                    <b class="margin-3-t block">2019-781</b>
+                                                    <b class="margin-3-t block">OOC-2019-781:F</b>
                                                     <span class="x-dark small">1605 Reports</span>
                                                 </li>
                                                 <li class="no-bordered">
-                                                    <span class="img-photo-sm circle"><span>BDD</span></span>
                                                     <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
-                                                        <strong class="x-small">36%</strong>
+                                                        <strong class="thin x-small">36%</strong>
                                                         <svg viewBox="0 0 160 160">
-                                                            <circle r="69.85699" cy="80" cx="80" stroke="#ff103b" data-percent="36" />
+                                                            <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="36" />
                                                         </svg>
                                                     </span>
-                                                    <b class="margin-3-t block">2019-047</b>
+                                                    <b class="margin-3-t block">BDD-2019-047:G</b>
                                                     <span class="x-dark small">812 Reports</span>
                                                 </li>
                                                 <li class="no-bordered">
-                                                    <span class="img-photo-sm circle"><span>RAC</span></span>
                                                     <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
-                                                        <strong class="x-small">36%</strong>
+                                                        <strong class="thin x-small">36%</strong>
                                                         <svg viewBox="0 0 160 160">
-                                                            <circle r="69.85699" cy="80" cx="80" stroke="#ff103b" data-percent="36" />
+                                                            <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="36" />
                                                         </svg>
                                                     </span>
-                                                    <b class="margin-3-t block">2019-973</b>
+                                                    <b class="margin-3-t block">RAC-2019-973</b>
                                                     <span class="x-dark small">616 Reports</span>
                                                 </li>
                                             </ul>
@@ -1337,7 +1339,7 @@
                                                     <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
                                                         <strong class="x-small">88%</strong>
                                                         <svg viewBox="0 0 160 160">
-                                                            <circle r="69.85699" cy="80" cx="80" stroke="#ff103b" data-percent="88" />
+                                                            <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="88" />
                                                         </svg>
                                                     </span>
                                                     <b class="margin-3-t block">2019-013</b>
@@ -1348,7 +1350,7 @@
                                                     <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
                                                         <strong class="x-small">76%</strong>
                                                         <svg viewBox="0 0 160 160">
-                                                            <circle r="69.85699" cy="80" cx="80" stroke="#ff103b" data-percent="76" />
+                                                            <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="76" />
                                                         </svg>
                                                     </span>
                                                     <b class="margin-3-t block">2019-642</b>
@@ -1359,7 +1361,7 @@
                                                     <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
                                                         <strong class="x-small">69%</strong>
                                                         <svg viewBox="0 0 160 160">
-                                                            <circle r="69.85699" cy="80" cx="80" stroke="#ff103b" data-percent="69" />
+                                                            <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="69" />
                                                         </svg>
                                                     </span>
                                                     <b class="margin-3-t block">2019-505</b>
@@ -1370,7 +1372,7 @@
                                                     <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
                                                         <strong class="x-small">52%</strong>
                                                         <svg viewBox="0 0 160 160">
-                                                            <circle r="69.85699" cy="80" cx="80" stroke="#ff103b" data-percent="52" />
+                                                            <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="52" />
                                                         </svg>
                                                     </span>
                                                     <b class="margin-3-t block">2019-781</b>
@@ -1381,7 +1383,7 @@
                                                     <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
                                                         <strong class="x-small">36%</strong>
                                                         <svg viewBox="0 0 160 160">
-                                                            <circle r="69.85699" cy="80" cx="80" stroke="#ff103b" data-percent="36" />
+                                                            <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="36" />
                                                         </svg>
                                                     </span>
                                                     <b class="margin-3-t block">2019-047</b>
@@ -1392,7 +1394,7 @@
                                                     <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
                                                         <strong class="x-small">36%</strong>
                                                         <svg viewBox="0 0 160 160">
-                                                            <circle r="69.85699" cy="80" cx="80" stroke="#ff103b" data-percent="36" />
+                                                            <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="36" />
                                                         </svg>
                                                     </span>
                                                     <b class="margin-3-t block">2019-973</b>
