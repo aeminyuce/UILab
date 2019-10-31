@@ -296,12 +296,16 @@ var lineCharts = {
 
                     if (type.indexOf('filled') > -1) { // add filled paths
 
-                        html += '<path d="M ' + (pathStart.x + (lineCharts.gridStroke / 2)) + ' ' + pathStart.y +
-                            paths +
-                            ' V ' + (data.height - lineCharts.bottom - (lineCharts.gridStroke / 2)) +
-                            ' H ' + ((lineCharts.gridStroke / 2) + lineCharts.left) + ' Z ' +
+                        html += '<linearGradient id="gradientId' + j + '" x1="0" y1="0" x2="0" y2="100%">' +
+                                '<stop offset="0" stop-color="' + data.color[j] + '"></stop>' +
+                                '<stop offset="100%" stop-color="' + data.color[j] + '" stop-opacity="0.0"></stop>' +
+                            '</linearGradient>' +
+                            '<path d="M ' + (pathStart.x + (lineCharts.gridStroke / 2)) + ' ' + pathStart.y +
+                                paths +
+                                ' V ' + (data.height - lineCharts.bottom - (lineCharts.gridStroke / 2)) +
+                                ' H ' + ((lineCharts.gridStroke / 2) + lineCharts.left) + ' Z ' +
 
-                            '" stroke="0" fill="' + data.color[j] + '" stroke-width="' + lineCharts.lineStroke + '" class="filled" />';
+                                '" stroke="0" fill="url(#gradientId' + j + ')" stroke-width="' + lineCharts.lineStroke + '" class="filled" />';
 
                     }
 
