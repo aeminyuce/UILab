@@ -1,6 +1,6 @@
 /*
  Photo Gallery JS
- Photo Gallery JS requires Selector Js, Events JS
+ Photo Gallery JS requires Selector Js, Events JS, User Agents JS
 */
 
 var photoGallery = {
@@ -16,7 +16,7 @@ var photoGallery = {
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, Image, navigator, setTimeout, clearTimeout, screen */
+    /*globals window, document, selector, events, Image, setTimeout, clearTimeout, screen, useragents */
 
     var
         imgTouchmove,
@@ -25,10 +25,7 @@ var photoGallery = {
 
     photoGallery.Start = function () {
 
-        var ua, mobile, gallery, galleryCounter, imgCounter, pageYPos, checkImages, imgWidth, imgHeight, loadedImages = [], loadedTitles = [];
-
-        ua = navigator.userAgent.toLowerCase();
-        if (ua.indexOf('mobile') > -1 && ua.indexOf('apple') > -1) { mobile = true; } else { mobile = false; }
+        var gallery, galleryCounter, imgCounter, pageYPos, checkImages, imgWidth, imgHeight, loadedImages = [], loadedTitles = [];
 
         gallery = selector('.photo-gallery');
 
@@ -127,7 +124,7 @@ var photoGallery = {
             }
 
             // get page scroll position
-            if (mobile && window.innerWidth < 960) {
+            if (useragents.mobile && window.innerWidth < 960) {
                 pageYPos = window.pageYOffset; // get current scroll-y position
             }
 
@@ -272,7 +269,7 @@ var photoGallery = {
                 events.removeClass(preview, 'open-ease');
                 events.removeClass(document, 'photo-preview-opened');
 
-                if (mobile && window.innerWidth < 960) {
+                if (useragents.mobile && window.innerWidth < 960) {
                     window.scrollTo(0, pageYPos);
                 }
 
@@ -552,7 +549,7 @@ var photoGallery = {
             // mousemove for zoomed image on desktop
             events.on(document, 'mousedown', '.photo-preview img.preview-zoom', function (e) {
 
-                if (e.target.getAttribute('src') === null || mobile) { return; }
+                if (e.target.getAttribute('src') === null || useragents.mobile) { return; }
 
                 e.preventDefault();
                 var msx, msy, matrix;
@@ -582,7 +579,7 @@ var photoGallery = {
 
                 events.on(img, 'mouseup mouseleave', function () {
 
-                    if (mobile) { return; }
+                    if (useragents.mobile) { return; }
 
                     if (imgZoom > 1 && (((imgWidth * imgZoom) > screen.width) || (imgHeight * imgZoom) > screen.height)) { // control image exceeds window size
                         imgLimits();
@@ -613,7 +610,7 @@ var photoGallery = {
                         
                         if (events.hasClass(this, 'has-info')) {
 
-                            if (mobile && events.hasClass(this, 'hover-touch')) {
+                            if (useragents.mobile && events.hasClass(this, 'hover-touch')) {
                                 galleryFnc(e, that);
         
                             } else { return; }
@@ -634,7 +631,7 @@ var photoGallery = {
 
         events.on(document, 'click', '.photo-gallery a.img', function (e) {
 
-            if (mobile) { return; }
+            if (useragents.mobile) { return; }
 
             e.preventDefault();
             galleryFnc(e, this);

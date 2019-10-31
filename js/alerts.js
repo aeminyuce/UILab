@@ -1,6 +1,6 @@
 /*
  Alerts JS
- Alerts JS requires Selector Js, Events JS
+ Alerts JS requires Selector Js, Events JS, User Agents JS
 */
 
 var alerts = {
@@ -19,10 +19,9 @@ var alerts = {
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, navigator, setTimeout */
+    /*globals window, document, selector, events, setTimeout, useragents */
 
     var
-        mobile,
         pageYPos,
         cancelCloseDialog,
         messageQueue = [],
@@ -48,10 +47,7 @@ var alerts = {
                 events.removeClass(bg, 'open-ease');
 
                 events.removeClass(document, 'alerts-bg-opened');
-
-                if (mobile) {
-                    window.scrollTo(0, pageYPos);
-                }
+                if (useragents.mobile) { window.scrollTo(0, pageYPos); }
 
                 setTimeout(function () {
                     events.removeClass(bg, 'open');
@@ -80,11 +76,7 @@ var alerts = {
             dialog = selector('.alerts-dialog')[0];
             if (dialog !== undefined) { return; } // prevent multiple dialogues
 
-            if (navigator.userAgent.toLowerCase().indexOf('mobile') > -1) { // detecting mobile
-                mobile = true;
-            }
-
-            if (mobile) {
+            if (useragents.mobile) {
                 pageYPos = window.pageYOffset; // get current scroll-y position
             }
 

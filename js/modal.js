@@ -1,6 +1,6 @@
 /*
  Modal JS
- Modal JS requires Selector Js, Events JS, Ajax JS
+ Modal JS requires Selector Js, Events JS, Ajax JS, User Agents JS
 */
 
 var modal = {
@@ -13,12 +13,10 @@ var modal = {
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, navigator, setTimeout, ajax */
+    /*globals window, document, selector, events, setTimeout, ajax, useragents */
 
     var
-        mobile,
         pageYPos,
-
         re = new RegExp('\\s+\\s'),
         rex = new RegExp('^\\s|\\s+$');
 
@@ -54,7 +52,7 @@ var modal = {
                 events.removeClass(bg, 'open-ease');
 
                 events.removeClass(document, 'modal-bg-opened');
-                if (mobile) { window.scrollTo(0, pageYPos); }
+                if (useragents.mobile) { window.scrollTo(0, pageYPos); }
 
                 setTimeout(function () {
 
@@ -86,10 +84,7 @@ var modal = {
 
             modal.close(); // hide opened modal windows and prevent multiple modal windows
 
-            if (navigator.userAgent.toLowerCase().indexOf('mobile') > -1) { // detecting mobile
-                mobile = true;
-            }
-            if (mobile) {
+            if (useragents.mobile) {
                 pageYPos = window.pageYOffset; // get current scroll-y position
             }
 

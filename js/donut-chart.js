@@ -1,6 +1,6 @@
 /*
  Donut Chart JS
- Donut Chart JS requires Selector Js, Events JS
+ Donut Chart JS requires Selector Js, Events JS, User Agents JS
 */
 
 var donutChart = {};
@@ -8,7 +8,7 @@ var donutChart = {};
 (function () {
 
     'use strict';
-    /*globals document, selector, events, navigator, setTimeout, ajax */
+    /*globals document, selector, events, setTimeout, ajax, useragents */
 
     var loadCharts;
 
@@ -16,7 +16,7 @@ var donutChart = {};
 
         loadCharts = function () {
 
-            var chart, circles, percent, dashoffset, angle, arrPercent, arrAngle, isMSIE;
+            var chart, circles, percent, dashoffset, angle, arrPercent, arrAngle;
 
             arrPercent = [];
             arrAngle = [];
@@ -67,9 +67,7 @@ var donutChart = {};
 
                         } else { arrAngle.push(0); }
 
-                        // detecting ie
-                        isMSIE = /*@cc_on!@*/false;
-                        if (isMSIE || !!document.documentMode || navigator.userAgent.indexOf('edge') > -1) {
+                        if (useragents.ie) {
 
                             events.addClass(that, 'loaded');
 

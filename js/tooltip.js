@@ -1,6 +1,6 @@
 /*
  Tooltip JS
- Tooltip JS requires Selector Js, Events JS
+ Tooltip JS requires Selector Js, Events JS, User Agents JS
 */
 
 var tooltip = {
@@ -13,7 +13,7 @@ var tooltip = {
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, setTimeout, clearTimeout, screen, navigator */
+    /*globals window, document, selector, events, setTimeout, clearTimeout, screen, useragents */
 
     var
         removeTimer,
@@ -214,10 +214,8 @@ var tooltip = {
         // Events
         events.on(document, 'mouseenter mouseleave', '[data-tooltip]:not([data-only="mobile"])', function (e) {
 
-            var ua, type;
-
-            ua = navigator.userAgent.toLowerCase();
-            if (ua.indexOf('mobile') > -1 && ua.indexOf('apple') > -1) { return; }
+            var type;
+            if (useragents.mobile) { return; }
 
             if (e.type === 'mouseenter') {
                 type = 'open';
@@ -232,9 +230,7 @@ var tooltip = {
 
         events.on(document, 'touchstart touchmove touchend', '[data-tooltip]:not([data-only="desktop"])', function (e) {
 
-            var ua, that;
-
-            that = this;
+            var that = this;
 
             if (e.type === 'touchstart') {
                 touchControl = events.hasClass(that, 'tooltip-active');
@@ -255,8 +251,7 @@ var tooltip = {
 
                 }
 
-                ua = navigator.userAgent.toLowerCase();
-                if (ua.indexOf('mobile') > -1 && ua.indexOf('apple') > -1) {
+                if (useragents.mobile && useragents.ios) {
 
                     if (!touchControl) {
                         e.preventDefault();

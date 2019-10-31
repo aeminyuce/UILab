@@ -1,6 +1,6 @@
 /*
  Top Button JS
- Top Button JS requires Selector Js, Events JS, User Agents JS
+ Top Button JS requires Selector Js, Events JS, User Agents JS, User Agents JS
 */
 
 var topButton = {
@@ -14,7 +14,7 @@ var topButton = {
 (function () {
 
     'use strict';
-    /*globals window, events, selector, navigator, setTimeout ,setInterval, clearInterval, useragents */
+    /*globals window, events, selector, setTimeout ,setInterval, clearInterval, useragents */
 
     var
         topBtn,
@@ -70,10 +70,9 @@ var topButton = {
 
         if (useragents.mobile) { return; } // stop on mobile devices
 
-        var titleText, userLang, html;
+        var titleText, html;
 
-        userLang = (navigator.language || navigator.userLanguage).split('-')[0];
-        if (userLang === 'tr') { titleText = 'Yukarı Dön!'; } else { titleText = 'Back To Top!'; }
+        if (useragents.userLang === 'tr') { titleText = 'Yukarı Dön!'; } else { titleText = 'Back To Top!'; }
 
         html = '<button class="top-button ' + topButton.classes + ' ease-layout" title="' + titleText + '">' +
             '<i class="' + topButton.icon + ' ease-layout"></i>' +
