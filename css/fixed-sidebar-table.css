@@ -1,8 +1,0 @@
-/* fixed sidebar table */
-.table-fixed-sidebar [class*="static-"] { overflow: hidden; }
-.table-fixed-sidebar [class*="static-"] .table { table-layout: fixed; }
-.table-fixed-sidebar [class*="static-"] .table thead,.table-fixed-sidebar [class*="static-"] .table tbody { width: 100%; display: block; }
-.table-fixed-sidebar [class*="static-"] .table thead { position: relative; z-index: 1; }
-.table-fixed-sidebar [class*="static-"] .table thead:not([class*="ui-"]) { background-color: #fff; }
-.table-fixed-sidebar [class*="static-"] .table tbody { max-height: 309px; }
-.table-fixed-sidebar [class*="static-"] .table th,.table-fixed-sidebar [class*="static-"] .table td { width: 2000px; }
