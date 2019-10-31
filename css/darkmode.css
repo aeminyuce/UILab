@@ -14,7 +14,6 @@
     .text,.select,.select-multi,.textarea,.file,.check-custom,.radio-custom,.switch-custom,.form-holder .btn[class*="bordered"],.form-holder img[class*="bordered"] { border-color: rgba(255,255,255,.3); }
     .text input:not(:focus),.select select:not(:focus),.select-multi select:not(:focus),.textarea textarea:not(:focus) { color: #fff; }
     .select-multi option:nth-child(even) { background-color: rgba(255,255,255,.05); }
-    .ie9 .select-multi option:nth-child(even) { background-color: #21242b;/* ie9 not supported rgba with option*/ }
     html:not(.mobile) .file:hover .btn { background-color: rgba(255,255,255,.15); }
     .text-icon > button.icon { color: #fff; }
     
@@ -81,10 +80,10 @@
     .table[class*="bordered"],.table [class*="bordered"] { border-color: #41454d; }
     .table-bordered th:not(:last-child),.table-bordered td:not(:last-child) { border-right-color: #41454d; }
 
-    html:not(.ie9) .table-flip-scrollable th { border-right-color: #41454d; }
-    html:not(.ie9) .table-flip-scrollable tbody tr { border-left-color: #41454d; }
-    html:not(.ie9) .table-flip-responsive th { border-right-color: #41454d; }
-    html:not(.ie9) .table-flip-responsive tbody tr { border-left-color: #41454d; }
+    .table-flip-scrollable th { border-right-color: #41454d; }
+    .table-flip-scrollable tbody tr { border-left-color: #41454d; }
+    .table-flip-responsive th { border-right-color: #41454d; }
+    .table-flip-responsive tbody tr { border-left-color: #41454d; }
 
     html:not(.mobile) ::-webkit-scrollbar-thumb { background-color: rgba(255,255,255, 0.2); }
     html:not(.mobile) ::-webkit-scrollbar-thumb:hover { background-color: rgba(255,255,255,.25); }

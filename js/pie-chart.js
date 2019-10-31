@@ -8,7 +8,7 @@ var pieChart = {};
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, navigator, setTimeout, ajax */
+    /*globals window, document, selector, events, setTimeout, ajax */
 
     var loadCharts;
 
@@ -128,20 +128,12 @@ var pieChart = {};
 
                 } else {
 
-                    // detecting ie9
-                    if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
-                        events.addClass(that, 'open open-ease');
+                    setTimeout(function () { // wait for page preload
 
-                    } else {
+                        events.addClass(that, 'open');
+                        setTimeout(function () { events.addClass(that, 'open-ease'); }, 2000); // wait for animation complete
 
-                        setTimeout(function () { // wait for page preload
-
-                            events.addClass(that, 'open');
-                            setTimeout(function () { events.addClass(that, 'open-ease'); }, 2000); // wait for animation complete
-
-                        }, 400);
-
-                    }
+                    }, 400);
 
                 }
 

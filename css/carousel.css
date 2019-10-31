@@ -13,7 +13,6 @@
 .carousel-slider > .content img.img { width: 100%; height: auto; }
 .carousel-slider > .content img.img:not(.loaded) { background-color: #ddd; animation: carousel-img-loader 3s linear infinite; }
 
-/* ie9 not supported row equal heights */
 .carousel-slider { display: -webkit-box !important; display: -ms-flexbox !important; display: -webkit-flex !important; display: flex !important; flex-wrap: wrap; }
 .carousel-slider > .content { flex-direction: column; }
 

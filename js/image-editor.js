@@ -15,20 +15,13 @@ var imageEditor = {
 (function () {
 
     'use strict';
-    /*globals document, events, selector, navigator, setTimeout, Image, FileReader, FormData, ajax */
+    /*globals document, events, selector, setTimeout, Image, FileReader, FormData, ajax */
 
     imageEditor.Start = function () {
 
         function loadFiles(editor, files) {
 
             var i, ext, c, ctx, data, img, w, h, size, allowed, readers, listCont, list, tools, loaded;
-
-            if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) { // IE9 not supported filereader API
-
-                events.trigger(selector('button[type="submit"]', editor)[0], 'click');
-                return;
-
-            }
 
             if (files.length > 0) {
 
@@ -178,10 +171,6 @@ var imageEditor = {
             e.preventDefault();
             e.stopPropagation();
 
-            if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
-                return;
-            }
-
             if (e.type === 'dragenter' || e.type === 'dragover') {
                 events.addClass(this, 'drop-highlight');
 
@@ -205,10 +194,6 @@ var imageEditor = {
         });
 
         events.on(document, 'submit', '.image-editor form', function (e) {
-
-            if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) { // IE9 not supported FormData API
-                return;
-            }
 
             e.preventDefault();
 

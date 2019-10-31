@@ -24,8 +24,6 @@ var transitions = {
 
     transitions.Start = function () {
 
-        if (useragents.ie9) { transitions.effects = false; }
-
         if (useragents.ie && !useragents.edge && !transitions.ie) {
             transitions.effects = false;
         }

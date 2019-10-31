@@ -320,12 +320,7 @@ var alerts = {
                             slide = -1 * slide;
                         }
 
-                        if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) {
-                            prev[j].style.msTransform = 'translateY(' + slide + 'px)';
-
-                        } else {
-                            prev[j].style.transform = 'translateY(' + slide + 'px)';
-                        }
+                        prev[j].style.transform = 'translateY(' + slide + 'px)';
 
                     }
 

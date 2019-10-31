@@ -14,7 +14,6 @@ Add classnames to the html element:
 Returns true/false
 ```
 useragents.ie
-useragents.ie9
 useragents.edge
 useragents.mobile
 useragents.ios

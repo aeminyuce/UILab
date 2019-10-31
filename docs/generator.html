@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 
     <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
-    <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
+    <!--[if lt IE 10]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
 
     <!-- CSS Tools -->
     <link rel="stylesheet" href="../css/reset.css"/>
@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="../css/grid.css"/>
     <link rel="stylesheet" href="../css/helpers.css"/>
     <link rel="stylesheet" href="../css/icons.css"/>
-    <link rel="stylesheet" href="../css/ie9-placeholders.css"/>
     <link rel="stylesheet" href="../css/margins.css"/>
     <link rel="stylesheet" href="../css/paddings.css"/>
     <link rel="stylesheet" href="../css/scrollbar.css"/>
@@ -43,7 +42,6 @@
     
     <script src="../js/ajax.js"></script>
     <script src="../js/forms.js"></script>
-    <script src="../js/ie9-placeholders.js"></script>
     <script src="../js/loading-button.js"></script>
     <script src="../js/static-grid.js"></script>
     <script src="../js/sticky-header.js"></script>
@@ -131,13 +129,6 @@
             function readFiles(that) {
 
                 var i, holder, forms, elems, list, btn, reader, ext, file, getTypes, count, toggler;
-
-                if (navigator.userAgent.toLowerCase().indexOf('msie 9') > -1) { // detecting IE9
-
-                    alert('FileReader API not supported!');
-                    return;
-
-                }
 
                 holder = events.closest(that, '.generate-holder')[0];
                 elems = selector('input', holder);
@@ -627,13 +618,6 @@
                                              <i class="ui-dark ease-form-custom"></i>
                                         </span>
                                         Forms
-                                    </label>
-                                    <label class="custom block">
-                                        <span class="switch-custom rounded dual-bordered ease-form">
-                                             <input type="checkbox" name="ie9 placeholders" value="../css/ie9-placeholders.css" checked>
-                                             <i class="ui-dark ease-form-custom"></i>
-                                        </span>
-                                        IE9 Placeholders
                                     </label>
                                     <label class="custom block">
                                         <span class="switch-custom rounded dual-bordered ease-form">
@@ -1219,13 +1203,6 @@
                                              <i class="ui-dark ease-form-custom"></i>
                                         </span>
                                         Forms
-                                    </label>
-                                    <label class="custom block">
-                                        <span class="switch-custom rounded dual-bordered ease-form">
-                                             <input type="checkbox" name="ie9 placeholders js" value="../js/ie9-placeholders.js" checked>
-                                             <i class="ui-dark ease-form-custom"></i>
-                                        </span>
-                                        IE9 Placeholders
                                     </label>
                                     <label class="custom block">
                                         <span class="switch-custom rounded dual-bordered ease-form">

@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 
     <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
-    <!--[if lt IE 9]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
+    <!--[if lt IE 10]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
 
     <!-- CSS Tools -->
     <link rel="stylesheet" href="../css/reset.css"/>
@@ -25,7 +25,6 @@
     <link rel="stylesheet" href="../css/grid.css"/>
     <link rel="stylesheet" href="../css/helpers.css"/>
     <link rel="stylesheet" href="../css/icons.css"/>
-    <link rel="stylesheet" href="../css/ie9-placeholders.css"/>
     <link rel="stylesheet" href="../css/margins.css"/>
     <link rel="stylesheet" href="../css/paddings.css"/>
     <link rel="stylesheet" href="../css/portlets.css"/>
@@ -41,7 +40,6 @@
     <script src="../js/events.js"></script>
 
     <script src="../js/forms.js"></script>
-    <script src="../js/ie9-placeholders.js"></script>
     <script src="../js/required-forms.js"></script>
     <script src="../js/toggle-password.js"></script>
     <script src="../js/transitions.js"></script>
@@ -55,15 +53,11 @@
         html,body { height: 100%; }
 
         .content-holder { background-image: linear-gradient(110deg, #624494, #080550, #6f113e); }
-        .ie9 .content-holder { background-color: #624494; }
         .content-holder .icon { font-size: 96px; }
         .content-holder > .set-absolute { z-index: 1; }
 
         .form-btn { background-image: linear-gradient(130deg, #8366b9,#6f113e); }
-        .ie9 .form-btn { background-color: #8366b9; }
-
         .content-btn { min-width: 26%; background-image: linear-gradient(130deg, #7adc81,#23a72e); z-index: 1; }
-        .ie9 .content-btn {background-color: #23a72e; }
         
         .content-container > .icon { font-size: 160px; position: absolute; top: 14%; right: 14%; transform: rotate(-12deg); }
 
@@ -78,7 +72,6 @@
             .forms-holder,.content-holder { min-height: 560px; }
             .form-container { background-color: #f6f4fc; padding: 8% 0 8% 10% !important; }
             .content-container { background-image: linear-gradient(110deg, #e2d2ff, #f0e2f9); padding: 8% 10% 8% 0 !important; }
-            .ie9 .content-container { background-color: #f0e2f9; }
 
             .forms-holder,.content-holder > .set-absolute { padding: 10%; }
         }

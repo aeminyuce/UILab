@@ -21,14 +21,8 @@
 
 .image-editor .file { display: inline-block; }
 .image-editor .file .btn b { font-weight: normal; }
-
-html:not(.ie9) .image-editor .file .btn .icon { margin-left: 10px; }
-html:not(.ie9) .image-editor .file span { display: none; }
-
-.ie9 .image-editor .file { width: 232px; }
-.ie9 .image-editor .file .btn { min-width: 32px; }
-.ie9 .image-editor .file .btn b { display: none; }
-.ie9 .image-editor .file span { text-align: left; padding-left: 42px; }
+.image-editor .file .btn .icon { margin-left: 10px; }
+.image-editor .file span { display: none; }
 
 .editor-tools { min-height: 52px; background-color: rgba(0,0,0,.035); padding: 15px; }
 .editor-tools:not(.open) { display: none; }
@@ -38,7 +32,7 @@ html:not(.ie9) .image-editor .file span { display: none; }
 .editor-list:not(.open),.drop-highlight .editor-list { background-color: rgba(255,255,255,.45); margin: 0 15px 15px 15px; border: dashed 2px rgba(0,0,0,.125); border-radius: 6px; }
 
 .editor-list > .icon { position: absolute; top: 50%; left: 50%; z-index: 1; opacity: .15; transform: translate(-50%, -50%); }
-.editor-list.open > .icon,.ie9 .editor-list { display: none; }
+.editor-list.open > .icon { display: none; }
 .drop-highlight .editor-list > .icon { display: block; opacity: .45; }
 
 .editor-list ul { list-style: none; padding: 10px; margin-bottom: 0; display: block; }

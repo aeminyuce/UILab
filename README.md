@@ -4,7 +4,7 @@ CSS & JavaScript powered responsive design system.
 
 ## Browser Support
 
-Compatible with all modern browsers and IE9+
+Compatible with all modern browsers and IE10+
 
 
 ## Copyright and License

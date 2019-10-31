@@ -1,6 +1,6 @@
 /* fixed header table */
-html:not(.ie9) .table-fixed-header { overflow: hidden; table-layout: fixed; }
-html:not(.ie9) .table-fixed-header th:not([colspan]):not([class*="static-"]),html:not(.ie9) .table-fixed-header td:not([colspan]):not([class*="static-"]) { width: 200px; }
-html:not(.ie9) .table-fixed-header thead,html:not(.ie9) .table-fixed-header tbody { display: inline-block; }
-html:not(.ie9) .table-fixed-header tbody { width: 100%; max-height: 309px; overflow: auto !important; }
+.table-fixed-header { overflow: hidden; table-layout: fixed; }
+.table-fixed-header th:not([colspan]):not([class*="static-"]),.table-fixed-header td:not([colspan]):not([class*="static-"]) { width: 200px; }
+.table-fixed-header thead,.table-fixed-header tbody { display: inline-block; }
+.table-fixed-header tbody { width: 100%; max-height: 309px; overflow: auto !important; }
 .mobile .table-fixed-header tbody { -webkit-overflow-scrolling: touch; }

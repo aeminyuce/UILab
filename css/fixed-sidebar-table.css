@@ -1,8 +1,8 @@
 /* fixed sidebar table */
-html:not(.ie9) .table-fixed-sidebar [class*="static-"] { overflow: hidden; }
-html:not(.ie9) .table-fixed-sidebar [class*="static-"] .table { table-layout: fixed; }
-html:not(.ie9) .table-fixed-sidebar [class*="static-"] .table thead,html:not(.ie9) .table-fixed-sidebar [class*="static-"] .table tbody { width: 100%; display: block; }
-html:not(.ie9) .table-fixed-sidebar [class*="static-"] .table thead { position: relative; z-index: 1; }
-html:not(.ie9) .table-fixed-sidebar [class*="static-"] .table thead:not([class*="ui-"]) { background-color: #fff; }
-html:not(.ie9) .table-fixed-sidebar [class*="static-"] .table tbody { max-height: 309px; }
-html:not(.ie9) .table-fixed-sidebar [class*="static-"] .table th,html:not(.ie9) .table-fixed-sidebar [class*="static-"] .table td { width: 2000px; }
+.table-fixed-sidebar [class*="static-"] { overflow: hidden; }
+.table-fixed-sidebar [class*="static-"] .table { table-layout: fixed; }
+.table-fixed-sidebar [class*="static-"] .table thead,.table-fixed-sidebar [class*="static-"] .table tbody { width: 100%; display: block; }
+.table-fixed-sidebar [class*="static-"] .table thead { position: relative; z-index: 1; }
+.table-fixed-sidebar [class*="static-"] .table thead:not([class*="ui-"]) { background-color: #fff; }
+.table-fixed-sidebar [class*="static-"] .table tbody { max-height: 309px; }
+.table-fixed-sidebar [class*="static-"] .table th,.table-fixed-sidebar [class*="static-"] .table td { width: 2000px; }

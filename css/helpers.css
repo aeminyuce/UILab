@@ -36,13 +36,11 @@ html:not(.android) .visible-android { display: none !important; }
 html:not(.ios) .visible-ios { display: none !important; }
 html:not(.mobile) .visible-mobile { display: none !important; }
 .mobile .visible-desktop { display: none !important; }
-html:not(.ie9) .visible-ie9 { display: none !important; }
 
 .android .hidden-android { display: none !important; }
 .ios .hidden-ios { display: none !important; }
 .mobile .hidden-mobile { display: none !important; }
 html:not(.mobile) .hidden-dekstop { display: none !important; }
-.ie9 .hidden-ie9 { display: none !important; }
 
 html:not(.landscape) .visible-landscape { display: none !important; }
 html:not(.portrait) .visible-portrait { display: none !important; }

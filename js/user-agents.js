@@ -6,7 +6,6 @@
 var useragents = {
 
     ie: false,
-    ie9: false,
     edge: false,
     mobile: false,
     ios: false,
@@ -63,13 +62,6 @@ var useragents = {
                 events.addClass(document, 'edge');
 
             }
-
-        }
-
-        if (ua.indexOf('msie 9') > -1) {
-
-            useragents.ie9 = true;
-            events.addClass(document, 'ie9');
 
         }
 
