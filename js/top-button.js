@@ -1,6 +1,6 @@
 /*
  Top Button JS
- Top Button JS requires Selector Js, Events JS
+ Top Button JS requires Selector Js, Events JS, User Agents JS
 */
 
 var topButton = {
@@ -14,7 +14,7 @@ var topButton = {
 (function () {
 
     'use strict';
-    /*globals window, events, selector, navigator, setTimeout ,setInterval, clearInterval */
+    /*globals window, events, selector, navigator, setTimeout ,setInterval, clearInterval, useragents */
 
     var
         topBtn,
@@ -53,20 +53,22 @@ var topButton = {
             scrollTarget = window;
             scrollPos = scrollTarget.pageYOffset;
 
-            if (scrollPos > 50) { showTopBtn(); } else { hideTopBtn(); }
+            if (scrollPos > 50 && window.innerWidth > 767) { showTopBtn(); } else { hideTopBtn(); }
 
         } else {
 
             scrollTarget = selector(topButton.target)[0];
             scrollPos = scrollTarget.scrollTop;
 
-            if (scrollPos > 50) { showTopBtn(); } else { hideTopBtn(); }
+            if (scrollPos > 50 && window.innerWidth > 767) { showTopBtn(); } else { hideTopBtn(); }
 
         }
 
     }
 
     topButton.Start = function () {
+
+        if (useragents.mobile) { return; } // stop on mobile devices
 
         var titleText, userLang, html;
 
