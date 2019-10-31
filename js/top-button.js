@@ -17,35 +17,36 @@ var topButton = {
     /*globals window, events, selector, navigator, setTimeout ,setInterval, clearInterval */
 
     var
+        topBtn,
         scrollTarget,
         scrollPos,
         btnAnimate;
 
     function togglerFnc() {
+        
+        var showTopBtn, hideTopBtn;
 
-        var btn = selector('.top-button');
+        showTopBtn = function () {
 
-        function showTopBtn() {
+            if (!events.hasClass(topBtn, 'open')) {
 
-            if (!events.hasClass(btn, 'open')) {
-
-                events.addClass(btn, 'open');
-                setTimeout(function () { events.addClass(btn, 'open-ease'); }, 400);
-
-            }
-
-        }
-
-        function hideTopBtn() {
-
-            if (events.hasClass(btn, 'open')) {
-
-                events.removeClass(btn, 'open-ease');
-                setTimeout(function () { events.removeClass(btn, 'open'); }, 400);
+                events.addClass(topBtn, 'open');
+                setTimeout(function () { events.addClass(topBtn, 'open-ease'); }, 400);
 
             }
 
-        }
+        };
+
+        hideTopBtn = function () {
+
+            if (events.hasClass(topBtn, 'open')) {
+
+                events.removeClass(topBtn, 'open-ease');
+                setTimeout(function () { events.removeClass(topBtn, 'open'); }, 400);
+
+            }
+
+        };
 
         if (topButton.target === '') {
 
@@ -77,6 +78,8 @@ var topButton = {
             '</button>';
 
         selector('body')[0].insertAdjacentHTML('beforeend', html);
+        topBtn = selector('.top-button');
+
         togglerFnc();
 
         // Events
@@ -98,6 +101,7 @@ var topButton = {
 
     // Loaders
     events.onload(topButton.Start);
+    
     events.on(window, 'resize', togglerFnc);
     events.on(window, 'scroll', togglerFnc);
 
