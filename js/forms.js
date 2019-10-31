@@ -1,6 +1,6 @@
 /*
  Forms JS
- Forms JS requires Selector Js, Events JS
+ Forms JS requires Selector Js, Events JS, User Agents JS
 */
 
 var forms = {};
@@ -8,19 +8,13 @@ var forms = {};
 (function () {
 
     'use strict';
-    /*globals document, selector, events, navigator, ajax, setTimeout */
+    /*globals document, selector, events, ajax, setTimeout, useragents */
 
     var
         clearForms,
         loadClearForms;
 
     forms.Start = function () {
-
-        var mobile;
-
-        if (navigator.userAgent.toLowerCase().indexOf('mobile') > -1) { // detecting mobile
-            mobile = true;
-        }
 
         function formFocus(t, type) {
 
@@ -56,18 +50,13 @@ var forms = {};
 
             }
 
-            if (mobile) { // detecting mobile
-
-                // mobile keypad event
-                events.on(document, 'forms:keypadopen forms:keypadclose');
+            if (useragents.mobile) {
 
                 if (type === 'add') {
                     events.addClass(document, 'mobile-keyboard');
-                    events.trigger(document, 'forms:keypadopen'); // set custom event
 
                 } else {
                     events.removeClass(document, 'mobile-keyboard');
-                    events.trigger(document, 'forms:keypadclose'); // set custom event
                 }
 
             } else {
@@ -160,7 +149,7 @@ var forms = {};
         });
 
         // form icons
-        if (mobile) { // fix: buttons not clicked on form focus at mobile devices
+        if (useragents.mobile) { // fix: buttons not clicked on form focus at mobile devices
 
             events.on(document,
 
