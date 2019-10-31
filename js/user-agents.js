@@ -5,6 +5,7 @@
 
 var useragents = {
 
+    userLang: '',
     ie: false,
     edge: false,
     mobile: false,
@@ -22,10 +23,10 @@ var useragents = {
 
     useragents.Start = function () {
 
-        var ua, isMSIE, userLang;
+        var ua, isMSIE;
 
-        userLang = (navigator.language || navigator.userLanguage).split('-')[0];
-        events.addClass(document, userLang);
+        useragents.userLang = (navigator.language || navigator.userLanguage).split('-')[0];
+        events.addClass(document, useragents.userLang);
 
         ua = navigator.userAgent.toLowerCase();
 
