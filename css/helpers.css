@@ -55,15 +55,6 @@ html:not(.portrait) .visible-portrait { display: none !important; }
     .hidden-print { display: none !important; }
 }
 
-@media (prefers-color-scheme: light) {
-    .hidden-light { display: none !important; }
-    .visible-dark { display: none !important; }
-}
-@media (prefers-color-scheme: dark) {
-    .hidden-dark { display: none !important; }
-    .visible-light { display: none !important; }
-}
-
 @media (min-width: 1200px) {
     .hidden-lg { display: none !important; }
     .lg-no-float { float: none !important; }
