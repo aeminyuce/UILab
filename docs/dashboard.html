@@ -95,8 +95,6 @@
 
     <!-- custom CSS -->
     <style>
-        body { background-color: #fefefe; }
-
         .theme-panel.ui-x-light,.theme-panel .ui-x-light:not([class*="theme-"]) { background-color: #c2c4ee; }
         .theme-panel.ui-light,.theme-panel .ui-light:not([class*="theme-"]) { background-color: #a4a8f3; }
         .theme-panel.ui-dark,.theme-panel .ui-dark:not([class*="theme-"]) { background-color: #2f3b80; }
@@ -143,25 +141,22 @@
         .theme-step1.ui-text,.theme-step1 .ui-text { color: #c40009; }
         .theme-step1.ui-border,.theme-step1 .ui-border { border-color: #c40009; }
 
-        header { background-color: #fefefe; }
+        @media (max-width: 959px) {
+            header.sticky { background-color: #fefefe; }
+        }
 
         @media (prefers-color-scheme: dark) {
             .theme-panel.ui-dark,.theme-panel .ui-dark:not([class*="theme-"]) { background-color: #242d65; }
             .theme-panel.ui-border,.theme-panel .ui-border { border-color: #242d65; }
             .theme-panel.ui-x-dark,.theme-panel .ui-x-dark:not([class*="theme-"]) { background-color: #1e2658; }
 
-            header { background-color: #15181d; }
+            @media (max-width: 959px) {
+                header.sticky { background-color: #15181d; }
+            }
+
         }
 
     </style>
-
-    <!-- custom js -->
-    <script>
-
-        autocomplete.classes = 'rounded shadow-lg';
-        calendar.todayTheme = 'theme-panel ui-dark' // use swatches
-
-    </script>
 
 </head>
 
