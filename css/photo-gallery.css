@@ -9,9 +9,9 @@
 .photo-gallery:after { clear: both; }
 
 .photo-gallery > li { overflow: hidden; float: left; }
-.photo-gallery > li > a { border: solid 1px #fff; }
 
-.photo-gallery .img { background: #ddd; overflow: hidden; position: relative; }
+.photo-gallery .img { overflow: hidden; position: relative; }
+.photo-gallery .img:not(.has-info) { background: rgba(0,0,0,.25); }
 .photo-gallery .img:not(.inline-block) { width: 100%; display: block; }
 .photo-gallery .img:after { content: ""; display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1; opacity: 0; }
 html:not(.mobile) .photo-gallery .img:hover:after,.photo-gallery .img.show-info:after ,.photo-gallery .img.hover-touch:after{ opacity: 1; }
@@ -33,7 +33,7 @@ html:not(.mobile) .photo-gallery .img.has-info:hover > span,.photo-gallery .img.
 .photo-preview:not(.open) { display: none; }
 .photo-preview:not(.open-ease) { opacity: 0; }
 
-.preview-prev,.preview-next { color: #000; width: 52px; height: 52px; background-color: rgba(255,255,255,1); padding: 10px; display: none; position: absolute; z-index: 2; border: 0; top: 50%; transform: translateY(-50%); }
+.preview-prev,.preview-next { color: #000; width: 52px; height: 52px; background-color: rgba(255,255,255,1); padding: 10px; display: none; border: 0; position: absolute; z-index: 2; top: 50%; transform: translateY(-50%); }
 .preview-prev { left: 0; }
 .preview-next { right: 0; }
 html:not(.mobile) .preview-prev:hover,html:not(.mobile) .preview-next:hover { background-color: rgba(255,255,255,.75); }
@@ -41,7 +41,7 @@ html:not(.mobile) .preview-prev:hover,html:not(.mobile) .preview-next:hover { ba
 .preview-loader { color: #fff; margin: -20px 0 0 -25px; position: absolute; top: 50%; left: 50%; z-index: 3; transform: translate(-50%,-50%); animation: preview-loader 1s linear infinite; }
 .preview-loader.pause { color: #dc000f; margin: 0; animation: none; }
 
-.preview-info { color: #fff; text-align: center; min-height: 40px; max-height: 132px; background-color: rgba(0,0,0,.75); padding: 10px; display: block; border-radius: 6px 6px 0 0; position: absolute; bottom: 0; z-index: 1; left: 50%; transform: translate(-50%,0); }
+.preview-info { color: #fff; min-height: 40px; max-height: 132px; background-color: rgba(0,0,0,.75); padding: 10px; display: block; border-radius: 6px 6px 0 0; position: absolute; bottom: 0; z-index: 1; left: 50%; transform: translate(-50%,0); }
 .preview-info:not(.open) { transform: translate(-50%,100%); }
 
 .photo-preview > img { display: inline-block; position: relative; top: 50%; left: 50%; transform: translate(-50%,-50%); box-shadow: 0 5px 30px rgba(0,0,0,.75); }
