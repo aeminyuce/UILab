@@ -1,6 +1,6 @@
 /* darkmode */
 
-/*@media (prefers-color-scheme: dark) {*/@media (min-width: 1800px) {
+@media (prefers-color-scheme: dark) {
     hr { background-color: rgba(255,255,255,.15); }
 
     body,a { color: #fff; }
@@ -39,8 +39,10 @@
     .dropdown.open .btn-ghost { background-color: rgba(255,255,255,.075) !important; }
     .dropdown .content { background-color: #41454d; }
     html:not(.mobile) .dropdown ul.content > li:not(.sep):hover { background-color: rgba(255,255,255,.05); }
-    .dropdown ul.content > li.sep { background-color: rgba(0,0,0,.065); }
+    .dropdown ul.content > li.sep { background-color: rgba(255,255,255,.065); }
     .dropdown ul.content > li.selected > label { background-color: rgba(255,255,255,.075); }
+    .dropdown ul.content:not(.has-grid) > li:not(.sep):not(:last-child),.dropdown ul.content.has-grid li:not(.sep):not(:nth-last-child(2)):not(:last-child) { border-bottom-color: rgba(255,255,255,.065); }
+    .dropdown ul.content.has-grid li:not(.sep):nth-child(n+1) { border-right-color: rgba(255,255,255,.065); }
 
     .portlet,[class*="portlet-"] { background-color: #2f343e; }
 
@@ -95,6 +97,7 @@
     html:not(.mobile) .list-group.list-striped li:nth-child(odd):not([class*="ui-"]):hover { background-color: rgba(255,255,255,.045); }
 
     .modal-content { background-color: #15181d; }
+    .mobile-menu { background-color: #2f343e; }
 
     .tooltip:not([class*="ui-"]) { background-color: #41454d; }
     .tooltip:not([class*="ui-"]) > span i { background: #41454d; }
@@ -168,5 +171,5 @@
 
     .theme-default2.ui-x-light,.theme-default2 .ui-x-light:not([class*="theme-"]) { background-color: rgba(100,123,193,.25); }
     .theme-default2.ui-light,.theme-default2 .ui-light:not([class*="theme-"]) { background-color: rgba(100,123,193,.15); }
-"
+
 }
