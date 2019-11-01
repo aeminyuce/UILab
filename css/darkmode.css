@@ -17,6 +17,8 @@
     code { color: #fff; background-color: #c7254e; }
     pre,xmp { color: #fff; background-color: #2f343e; border-color: #41454d; }
 
+    .breadcrumbs:not(.no-separated) > ul > li:not(:first-child):before { color: rgba(255,255,255,.25); }
+
     .bordered,.top-bordered,.right-bordered,.bottom-bordered,.left-bordered,.hor-bordered,.ver-bordered,.dual-bordered,.large-bordered { border-color: rgba(255,255,255,.075); }
 
     .text,.select,.select-multi,.textarea,.file,.check-custom,.radio-custom,.switch-custom,.form-holder .btn[class*="bordered"],.form-holder img[class*="bordered"] { border-color: rgba(255,255,255,.3); }
