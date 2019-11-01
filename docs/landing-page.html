@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="../css/portlets.css"/>
     <link rel="stylesheet" href="../css/scrollbar.css"/>
     <link rel="stylesheet" href="../css/static-grid.css"/>
+    <link rel="stylesheet" href="../css/sticky-header.css"/>
     <link rel="stylesheet" href="../css/tabs.css"/>
     <link rel="stylesheet" href="../css/tooltip.css"/>
     <link rel="stylesheet" href="../css/top-button.css"/>
@@ -56,6 +57,7 @@
     <script src="../js/photo-gallery.js"></script>
     <script src="../js/required-forms.js"></script>
     <script src="../js/static-grid.js"></script>
+    <script src="../js/sticky-header.js"></script>
     <script src="../js/swatches.js"></script>
     <script src="../js/tabs.js"></script>
     <script src="../js/tooltip.js"></script>
@@ -90,7 +92,7 @@
         .static-220 { width: 220px; }
                 
         .banner-content { background: no-repeat center center; background-size: cover; }
-        .banner-content:after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+        .banner-content:after { content: ""; background-color: rgba(17,218,84,.4); position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
         .banner-content > .fixed { z-index: 1; }
 
         .banner-tab01 { background-image: url(img/agriculture/lg01.jpg); }
@@ -103,17 +105,17 @@
         .highlight-links { margin-top: -80px; z-index: 1; }
         .highlight-links .carousel { margin: 0 -15px; }
 
-        @media (min-width: 1200px) {
-            .banner-content:after { background-color: rgba(17,218,84,.35); }
-        }
-        @media (max-width: 1199px) {
-            .banner-content:after { background-color: rgba(17,218,84,.45); }
-        }
         @media (max-width: 959px) {
             .highlight-links { padding: 0 15px; }
         }
         @media (max-width: 620px) {
             .photo-gallery > li .img { height: 150px; }
+        }
+        @media (prefers-color-scheme: dark) {
+            .banner-content:after { background-color: rgba(4, 45, 18, 0.8); }
+            
+            .theme-farmer.ui-x-light,.theme-farmer .ui-x-light:not([class*="theme-"]) { background-color: #0e0e0d; }
+            .theme-farmer2.ui-x-dark,.theme-farmer2 .ui-x-dark:not([class*="theme-"]) { background-color: #001b09; }
         }
     </style>
 
@@ -130,7 +132,7 @@
 <body>
 
     <!-- header: start -->
-    <header class="container no-gutter bg-white">
+    <header class="container no-gutter bg-white sticky-sm">
 
         <div class="bottom-bordered theme-farmer2">
             <div class="fixed padding-20-v sm-no-padding-v">
@@ -897,7 +899,7 @@
     </main>
 
     <!-- footer: start -->
-    <footer class="container no-gutter padding-30-v theme-farmer2 ui-dark">
+    <footer class="container no-gutter padding-30-v theme-farmer2 ui-x-dark">
         <div class="fixed padding-30-v sm-align-center">
             <div class="row">
                 <div class="col-static">
