@@ -138,7 +138,7 @@
                         <div class="content-side padding-30">
                             <h4 class="margin-10-b">Generate CSS/JS</h4>
                             <p class="xs-align-center">You can generate <b>CSS</b> or <b>JS</b> code with selected modules and copy to clipboard to using for your projects.</p>
-                            <a href="generator.html" class="btn btn-responsive btn-lg padding-30-h circle theme-yellow ui-dark ease-btn">
+                            <a href="generator.html" class="btn btn-responsive btn-lg padding-30-h circle theme-green ui-dark ease-btn">
                                 Go to Generator
                                 <i class="icon icon-md icon-long-arrow-right margin-5-l"></i>
                             </a>
@@ -160,13 +160,19 @@
                         </div>
                         <div class="col-lg-3 col-4 col-md-6 sm-responsive">
                             <a class="portlet padding-10 rounded shadow-lg hover-shadow hover-up ease-layout" href="sign-up-page.html">
-                                <img class="img-responsive margin-10-b" src="img/layout-sign-up-page.jpg" alt="Sign Up Page">
+                                <picture>
+                                    <source srcset="img/layout-sign-up-page-dark.jpg" media="(prefers-color-scheme: dark)">
+                                    <img class="img-responsive margin-10-b" src="img/layout-sign-up-page.jpg" alt="Sign Up Page">
+                                </picture>
                                 Sign Up Page
                             </a>
                         </div>
                         <div class="col-lg-3 col-4 col-md-6 sm-responsive">
                             <a class="portlet padding-10 rounded shadow-lg hover-shadow hover-up ease-layout" href="dark-mode-app.html">
-                                <img class="img-responsive margin-10-b" src="img/layout-dark-mode-app.jpg" alt="Dark Mode App">
+                                <picture>
+                                    <source srcset="img/layout-dark-mode-app-dark.jpg" media="(prefers-color-scheme: dark)">
+                                    <img class="img-responsive margin-10-b" src="img/layout-dark-mode-app.jpg" alt="Dark Mode App">
+                                </picture>
                                 Dark Mode App
                             </a>
                         </div>
@@ -239,16 +245,16 @@
     </main>
 
     <!-- mobile menu -->
-    <div class="mobile-menu show-right theme-gray ease-layout ease-slow ease-in-out">
+    <div class="mobile-menu show-right theme-default ui-dark ease-layout ease-slow ease-in-out">
         <button class="btn btn-square btn-lg btn-ghost rounded ease-btn close-mobile-menu">
             <i class="icon icon-sm icon-remove no-opacity"></i>
         </button>
-        <div class="mobile-menu-title ui-light">
+        <div class="mobile-menu-title padding-15-v">
             <a title="UI Lab: CSS and JavaScript Tools" href="index.html">
-                <img src="img/uilab-logo-dark.png" alt="" srcset="img/uilab-logo-dark@2x.png 2x">
+                <img src="img/uilab-logo.png" alt="" srcset="img/uilab-logo@2x.png 2x">
             </a>
         </div>
-        <div class="mobile-menu-content no-padding ui-x-light v-scroll"></div>
+        <div class="mobile-menu-content no-padding theme-gray ui-x-light v-scroll"></div>
     </div>
 
 </body>
