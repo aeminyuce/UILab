@@ -1,10 +1,18 @@
 /* darkmode */
 
+@media (prefers-color-scheme: light) {
+    .hidden-light { display: none !important; }
+    .visible-dark { display: none !important; }
+}
 @media (prefers-color-scheme: dark) {
-    hr { background-color: rgba(255,255,255,.15); }
-
     body,a { color: #fff; }
     body { background-color: #15181d !important; }
+
+    hr { background-color: rgba(255,255,255,.15); }
+
+    .bg-white:not([class*="ui-"]) { background-color: #0f1115 !important; }
+    .hidden-dark { display: none !important; }
+    .visible-light { display: none !important; }
 
     code { color: #fff; background-color: #c7254e; }
     pre,xmp { color: #fff; background-color: #2f343e; border-color: #41454d; }
@@ -96,8 +104,7 @@
     html:not(.mobile) .list-group.list-striped li:nth-child(odd):not([class*="ui-"]) { background-color: rgba(255,255,255,.025); }
     html:not(.mobile) .list-group.list-striped li:nth-child(odd):not([class*="ui-"]):hover { background-color: rgba(255,255,255,.045); }
 
-    .modal-content { background-color: #15181d; }
-    .mobile-menu { background-color: #2f343e; }
+    .modal-content,.mobile-menu { background-color: #15181d; }
 
     .tooltip:not([class*="ui-"]) { background-color: #41454d; }
     .tooltip:not([class*="ui-"]) > span i { background: #41454d; }
