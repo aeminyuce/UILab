@@ -154,8 +154,8 @@
     .ui-x-light,.ui-x-light .icon:not([class*="ui-"]),.ui-x-light a:not([class*="ui-"]),.ui-x-light button:not([class*="ui-"]) { color: #fff; }
     .ui-light,.ui-light .icon:not([class*="ui-"]),.ui-light a:not([class*="ui-"]),.ui-light button:not([class*="ui-"]) { color: #fff; }
 
-    .theme-gray.ui-x-light,.theme-gray .ui-x-light:not([class*="theme-"]) { background-color: #41454d; }
-    .theme-gray.ui-light,.theme-gray .ui-light:not([class*="theme-"]) { background-color: #353a42; }
+    .theme-gray.ui-x-light,.theme-gray .ui-x-light:not([class*="theme-"]) { background-color: #434b5a; }
+    .theme-gray.ui-light,.theme-gray .ui-light:not([class*="theme-"]) { background-color: #363c48; }
     .theme-gray.ui-dark,.theme-gray .ui-dark:not([class*="theme-"]) { background-color: #2f343e; }
     .theme-gray.ui-text,.theme-gray .ui-text:not([class*="theme-"]) { color: #2f343e; }
     .theme-gray.ui-border,.theme-gray .ui-border:not([class*="theme-"]) { border-color: #2f343e; }
