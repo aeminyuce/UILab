@@ -115,10 +115,10 @@
     html:not(.mobile) .data-hover .data-content:not([class*="ui-"]):nth-child(odd):hover { background-color: rgba(255,255,255,.06); }
     .data-hover .data-content.even:not([class*="ui-"]) { background-color: rgba(255,255,255,.025); }
 
-    .svg-map svg g path { fill: #41454d; }
+    .svg-map svg g path { fill: #222933; }
     .svg-map svg g path { stroke: #15181d; }
     .portlet .svg-map svg g path { stroke: #2f343e; }
-    .svg-map svg g path:hover { fill: #606672; }
+    .svg-map svg g path:hover { fill: #39485d; }
 
     .image-editor { background-color: #2f343e; }
     .image-editor.drop-highlight { background-color: #21242b; }
@@ -153,6 +153,9 @@
 
     .ui-x-light,.ui-x-light .icon:not([class*="ui-"]),.ui-x-light a:not([class*="ui-"]),.ui-x-light button:not([class*="ui-"]) { color: #fff; }
     .ui-light,.ui-light .icon:not([class*="ui-"]),.ui-light a:not([class*="ui-"]),.ui-light button:not([class*="ui-"]) { color: #fff; }
+
+    .dark-ui,.dark-ui .icon:not([class*="ui-"]),.dark-ui a:not([class*="ui-"]),.dark-ui button:not([class*="ui-"]) { color: rgba(255,255,255,.7) !important; }
+    .x-dark-ui,.x-dark-ui .icon:not([class*="ui-"]),.x-dark-ui a:not([class*="ui-"]),.x-dark-ui button:not([class*="ui-"]) { color: rgba(255,255,255,.5) !important; }
 
     .theme-gray.ui-x-light,.theme-gray .ui-x-light:not([class*="theme-"]) { background-color: #434b5a; }
     .theme-gray.ui-light,.theme-gray .ui-light:not([class*="theme-"]) { background-color: #363c48; }
