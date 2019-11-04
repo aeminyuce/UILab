@@ -10,9 +10,9 @@
 .dropdown.open .btn-ghost { background-color: rgba(0,0,0,.075) !important; }
 .dropdown .value-toggle .icon { opacity: 1 !important; }
 
-.dropdown.open-ease > .btn .icon-toggle { transform: scaleY(-1); }
+.dropdown.open-ease > .btn .icon-toggle { transform: rotate(-180deg); }
 .mobile-menu .dropdown .icon-toggle { position: absolute; top: 50%; right: 10px; transform: translateY(-50%); }
-.mobile-menu .dropdown.open-ease .icon-toggle { position: absolute; top: 50%; right: 10px; transform: translateY(-50%) scaleY(-1); }
+.mobile-menu .dropdown.open-ease .icon-toggle { position: absolute; top: 50%; right: 10px; transform: translateY(-50%) transform: rotate(-180deg); }
 
 .dropdown .content { max-width: 744px; background-color: #fff; position: absolute; z-index: 10; transform-origin: top left; }
 .dropdown.submenu-center .content { transform-origin: top center; }
