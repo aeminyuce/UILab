@@ -327,14 +327,16 @@ var lineCharts = {
                 // create info
                 if (lineCharts.showInfo) {
 
-                    total = 0;
                     html += '<ul class="info">';
 
                     for (i = 0; i < lines.length; i += 1) {
 
+                        total = 0;
+
                         for (j = 0; j < data[i].y.length; j += 1) {
                             total += parseInt(data[i].y[j], 10);
                         }
+                        
                         html += '<li><span style="background: ' + data.color[i] + '"></span>';
 
                         if (data.name[i] === '') {
