@@ -32,7 +32,6 @@
     <link rel="stylesheet" href="../css/tables.css"/>
     <link rel="stylesheet" href="../css/transitions.css"/>
     <link rel="stylesheet" href="../css/typography.css"/>
-    <link rel="stylesheet" href="../css/top-button.css"/>
     <link rel="stylesheet" href="../css/weather.css"/>
 
     <link rel="stylesheet" href="../css/swatches.css"/>
@@ -46,7 +45,6 @@
     <script src="../js/carousel.js"></script>
     <script src="../js/forms.js"></script>
     <script src="../js/swatches.js"></script>
-    <script src="../js/top-button.js"></script>
     <script src="../js/transitions.js"></script>
     <script src="../js/weather.js"></script>
 
@@ -56,8 +54,8 @@
 
     <!-- custom CSS -->
     <style>
-        body { background-color: #f9f9f9; }
-        .rounded,.weather.rounded .graphs { border-radius: 60px; }
+        .weather.rounded .graphs { border-radius: 36px; }
+        .rounded.portlet { border-radius: 32px; }
         .all-day { background-image: linear-gradient(135deg, #97aaee, #ac89ec); }
     </style>
 
@@ -98,11 +96,11 @@
                             <div class="carousel portlet rounded shadow-lg" data-col="1">
                                 <div class="carousel-slider ease-2nd-layout ease-layout ease-slow ease-in-out">
 
-                                    <div class="content xx-dark padding-30 no-padding-b">
+                                    <div class="content padding-30 no-padding-b">
                                         <h3 class="bold margin-15-v">Next Week</h3>
                                         <table class="table table-striped no-separated">
                                             <tr>
-                                                <td class="x-dark large">Tuesday</th>
+                                                <td class="dark large">Tuesday</th>
                                                 <td><i class="icon icon-lg icon-weather icon-sun"></i></td>
                                                 <td class="align-right large">
                                                     <span class="deg margin-20-r">36</span>
@@ -110,7 +108,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="x-dark large">Wednesday</th>
+                                                <td class="dark large">Wednesday</th>
                                                 <td><i class="icon icon-lg icon-weather icon-sun"></i></td>
                                                 <td class="align-right large">
                                                     <span class="deg margin-20-r">32</span>
@@ -118,7 +116,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="x-dark large">Thursday</th>
+                                                <td class="dark large">Thursday</th>
                                                 <td><i class="icon icon-lg icon-weather icon-cloud-sun"></i></td>
                                                 <td class="align-right large">
                                                     <span class="deg margin-20-r">26</span>
@@ -126,7 +124,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="x-dark large">Friday</th>
+                                                <td class="dark large">Friday</th>
                                                 <td><i class="icon icon-lg icon-weather icon-rain"></i></td>
                                                 <td class="align-right large">
                                                     <span class="deg margin-20-r">21</span>
@@ -134,7 +132,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="x-dark large">Saturday</th>
+                                                <td class="dark large">Saturday</th>
                                                 <td><i class="icon icon-lg icon-weather icon-clouds"></i></td>
                                                 <td class="align-right large">
                                                     <span class="deg margin-20-r">23</span>
@@ -142,7 +140,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="x-dark large">Sunday</th>
+                                                <td class="dark large">Sunday</th>
                                                 <td><i class="icon icon-lg icon-weather icon-cloud"></i></td>
                                                 <td class="align-right large">
                                                     <span class="deg margin-20-r">24</span>
@@ -150,7 +148,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="x-dark large">Monday</th>
+                                                <td class="dark large">Monday</th>
                                                 <td><i class="icon icon-lg icon-weather icon-cloud-sun"></i></td>
                                                 <td class="align-right large">
                                                     <span class="deg margin-20-r">27</span>
@@ -160,7 +158,7 @@
                                         </table>
                                     </div>
                                     <div class="content padding-30 no-padding-b">
-                                        <div class="padding-15 no-padding-t xx-dark">
+                                        <div class="padding-15 no-padding-t">
                                             <h3 class="bold margin-15-v">Details</h3>
                                             <span class="sp3"></span>
                                             <p class="large margin-5-b">
@@ -174,20 +172,20 @@
                                             <span class="thin inline-block">19:59</span>
                                             <i class="icon icon-lg icon-weather icon-sunset"></i>
                                         </div>
-                                        <div class="padding-15 xx-dark align-center">
+                                        <div class="padding-15 align-center">
                                             <ul class="list-unstyled list-column-2">
-                                                <li><span class="xx-large">0%</span><br><span class="x-dark">Chance of Rain</span></li>
-                                                <li><span class="xx-large">74%</span><br><span class="x-dark">Humidity</span></li>
-                                                <li><span class="xx-large">30<sup>o</sup></span><br><span class="x-dark">Feels Like</span></li>
-                                                <li><span class="xx-large">7 km</span><br><span class="x-dark">Wind</span></li>
-                                                <li><span class="xx-large">7</span><br><span class="x-dark">UV Index</span></li>
-                                                <li><span class="xx-large">10.0 mi</span><br><span class="x-dark">Visibility</span></li>
+                                                <li><span class="xx-large">0%</span><br><span class="dark">Chance of Rain</span></li>
+                                                <li><span class="xx-large">74%</span><br><span class="dark">Humidity</span></li>
+                                                <li><span class="xx-large">30<sup>o</sup></span><br><span class="dark">Feels Like</span></li>
+                                                <li><span class="xx-large">7 km</span><br><span class="dark">Wind</span></li>
+                                                <li><span class="xx-large">7</span><br><span class="dark">UV Index</span></li>
+                                                <li><span class="xx-large">10.0 mi</span><br><span class="dark">Visibility</span></li>
                                             </ul>
                                         </div>
                                     </div>
 
                                 </div>
-                                <div class="carousel-nav xx-dark align-center padding-10-b no-margin-t ease-1st-bg">
+                                <div class="carousel-nav align-center padding-10-b no-margin-t ease-1st-bg">
                                     <button class="carousel-prev btn btn-ghost btn-square rounded"><i class="icon icon-md icon-angle-left"></i></button>
                                     <span class="dots dark"></span>
                                     <button class="carousel-next btn btn-ghost btn-square rounded"><i class="icon icon-md icon-angle-right"></i></button>
@@ -227,7 +225,7 @@
                                 <div class="carousel-slider ease-2nd-layout ease-layout ease-slow ease-in-out">
 
                                     <div class="content padding-30 no-padding-b">
-                                        <div class="padding-15 no-padding-t xx-dark">
+                                        <div class="padding-15 no-padding-t">
                                             <h3 class="bold margin-15-v">Details</h3>
                                             <span class="sp3"></span>
                                             <p class="large margin-5-b">
@@ -241,22 +239,22 @@
                                             <span class="thin inline-block">19:59</span>
                                             <i class="icon icon-lg icon-weather icon-sunset"></i>
                                         </div>
-                                        <div class="padding-15 xx-dark align-center">
+                                        <div class="padding-15 align-center">
                                             <ul class="list-unstyled list-column-2">
-                                                <li><span class="xx-large">0%</span><br><span class="x-dark">Chance of Rain</span></li>
-                                                <li><span class="xx-large">74%</span><br><span class="x-dark">Humidity</span></li>
-                                                <li><span class="xx-large">30<sup>o</sup></span><br><span class="x-dark">Feels Like</span></li>
-                                                <li><span class="xx-large">7 km</span><br><span class="x-dark">Wind</span></li>
-                                                <li><span class="xx-large">7</span><br><span class="x-dark">UV Index</span></li>
-                                                <li><span class="xx-large">10.0 mi</span><br><span class="x-dark">Visibility</span></li>
+                                                <li><span class="xx-large">0%</span><br><span class="dark">Chance of Rain</span></li>
+                                                <li><span class="xx-large">74%</span><br><span class="dark">Humidity</span></li>
+                                                <li><span class="xx-large">30<sup>o</sup></span><br><span class="dark">Feels Like</span></li>
+                                                <li><span class="xx-large">7 km</span><br><span class="dark">Wind</span></li>
+                                                <li><span class="xx-large">7</span><br><span class="dark">UV Index</span></li>
+                                                <li><span class="xx-large">10.0 mi</span><br><span class="dark">Visibility</span></li>
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="content xx-dark padding-30 no-padding-b">
+                                    <div class="content padding-30 no-padding-b">
                                         <h3 class="bold margin-15-v">Next Week</h3>
                                         <table class="table table-striped no-separated">
                                             <tr>
-                                                <td class="x-dark large">Tuesday</th>
+                                                <td class="dark large">Tuesday</th>
                                                 <td><i class="icon icon-lg icon-weather icon-sun"></i></td>
                                                 <td class="align-right large">
                                                     <span class="deg margin-20-r">36</span>
@@ -264,7 +262,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="x-dark large">Wednesday</th>
+                                                <td class="dark large">Wednesday</th>
                                                 <td><i class="icon icon-lg icon-weather icon-sun"></i></td>
                                                 <td class="align-right large">
                                                     <span class="deg margin-20-r">32</span>
@@ -272,7 +270,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="x-dark large">Thursday</th>
+                                                <td class="dark large">Thursday</th>
                                                 <td><i class="icon icon-lg icon-weather icon-cloud-sun"></i></td>
                                                 <td class="align-right large">
                                                     <span class="deg margin-20-r">26</span>
@@ -280,7 +278,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="x-dark large">Friday</th>
+                                                <td class="dark large">Friday</th>
                                                 <td><i class="icon icon-lg icon-weather icon-rain"></i></td>
                                                 <td class="align-right large">
                                                     <span class="deg margin-20-r">21</span>
@@ -288,7 +286,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="x-dark large">Saturday</th>
+                                                <td class="dark large">Saturday</th>
                                                 <td><i class="icon icon-lg icon-weather icon-clouds"></i></td>
                                                 <td class="align-right large">
                                                     <span class="deg margin-20-r">23</span>
@@ -296,7 +294,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="x-dark large">Sunday</th>
+                                                <td class="dark large">Sunday</th>
                                                 <td><i class="icon icon-lg icon-weather icon-cloud"></i></td>
                                                 <td class="align-right large">
                                                     <span class="deg margin-20-r">24</span>
@@ -304,7 +302,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="x-dark large">Monday</th>
+                                                <td class="dark large">Monday</th>
                                                 <td><i class="icon icon-lg icon-weather icon-cloud-sun"></i></td>
                                                 <td class="align-right large">
                                                     <span class="deg margin-20-r">27</span>
@@ -315,7 +313,7 @@
                                     </div>
 
                                 </div>
-                                <div class="carousel-nav xx-dark align-center padding-10-b no-margin-t ease-1st-bg">
+                                <div class="carousel-nav align-center padding-10-b no-margin-t ease-1st-bg">
                                     <button class="carousel-prev btn btn-ghost btn-square rounded"><i class="icon icon-md icon-angle-left"></i></button>
                                     <span class="dots dark"></span>
                                     <button class="carousel-next btn btn-ghost btn-square rounded"><i class="icon icon-md icon-angle-right"></i></button>
