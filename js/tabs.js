@@ -16,7 +16,7 @@ var tabs = {};
         events.on(document, 'click', '.btn-tabs .btn-tab', function (e) {
 
             e.preventDefault();
-            var parent, tabs, index, contents, classes, toggle;
+            var parent, tabs, index, contents, classes, toggle, prevTab;
 
             parent = events.closest(this, '.btn-tabs')[0];
             tabs = selector('.btn-tab', parent);
@@ -42,7 +42,7 @@ var tabs = {};
 
                     setTimeout(function () {
                         events.removeClass(contents[index], 'open');
-                    }, 300);
+                    }, 0);
 
                 }
 
@@ -58,18 +58,26 @@ var tabs = {};
                 events.removeClass(tabs, 'active');
                 events.addClass(tabs[index], 'active');
 
-                events.removeClass(contents, 'open-ease');
+                prevTab = selector('.tab-content.open', parent)[0]; // check previosuly opened tab
+                if (prevTab !== undefined) {
+
+                    events.removeClass(prevTab, 'open-ease');
+
+                    setTimeout(function () {
+                        events.removeClass(prevTab, 'open');
+                    }, 0);
+
+                }
 
                 setTimeout(function () {
 
-                    events.removeClass(contents, 'open');
                     events.addClass(contents[index], 'open');
 
                     setTimeout(function () {
                         events.addClass(contents[index], 'open-ease');
-                    }, 150);
+                    }, 50);
                     
-                }, 150);
+                }, 0);
                 
             }
 
