@@ -1,25 +1,26 @@
 /*
- Image Editor JS
- Image Editor JS requires Selector Js, Events JS, Ajax JS
+ Image Uploader JS
+ Image Uploader JS requires Selector Js, Events JS, Ajax JS, Alerts JS
 */
 
-var imageEditor = {
+var imageUploader = {
 
     width: 1024, // default width
     height: 768, // default height
 
-    types: ['jpg', 'jpeg', 'png', 'gif'] // add your allowed file types
+    types: ['jpg', 'jpeg', 'png', 'gif'], // add your allowed file types
+    msgSuccess: 'Your files saved, successfully!'
 
 };
 
 (function () {
 
     'use strict';
-    /*globals document, events, selector, setTimeout, Image, FileReader, FormData, ajax */
+    /*globals document, events, selector, setTimeout, Image, FileReader, FormData, ajax, alerts */
 
-    imageEditor.Start = function () {
+    imageUploader.Start = function () {
 
-        function loadFiles(editor, files) {
+        function loadFiles(uploader, files) {
 
             var i, ext, c, ctx, data, img, w, h, size, allowed, readers, listCont, list, tools, loaded;
 
@@ -35,7 +36,7 @@ var imageEditor = {
 
                         ext = ext.toString();
 
-                        if (imageEditor.types.indexOf(ext) > -1) {
+                        if (imageUploader.types.indexOf(ext) > -1) {
                             allowed.push(files[i]);
                         }
 
@@ -57,11 +58,11 @@ var imageEditor = {
                 c = document.createElement("canvas");
                 ctx = c.getContext("2d");
 
-                events.addClass(editor, 'loading');
-                tools = selector('.editor-tools', editor)[0];
+                events.addClass(uploader, 'loading');
+                tools = selector('.uploader-tools', uploader)[0];
 
-                listCont = selector('.editor-list', editor)[0];
-                list = selector('.editor-list ul', editor)[0];
+                listCont = selector('.uploader-list', uploader)[0];
+                list = selector('.uploader-list ul', uploader)[0];
 
                 events.each(allowed, function (i) {
 
@@ -80,15 +81,15 @@ var imageEditor = {
                             if (w[i] > h[i]) {
 
                                 // horizontal image
-                                if (w[i] > imageEditor.width) {
-                                    h[i] = (h[i] * imageEditor.width) / w[i];
+                                if (w[i] > imageUploader.width) {
+                                    h[i] = (h[i] * imageUploader.width) / w[i];
                                 }
 
                             } else {
 
                                 // vertical image
-                                if (h[i] > imageEditor.height) {
-                                    w[i] = (w[i] * imageEditor.height) / h[i];
+                                if (h[i] > imageUploader.height) {
+                                    w[i] = (w[i] * imageUploader.height) / h[i];
                                 }
 
                             }
@@ -150,7 +151,7 @@ var imageEditor = {
                             }, 10);
 
                             setTimeout(function () {
-                                events.removeClass(editor, 'loading');
+                                events.removeClass(uploader, 'loading');
                             }, 150);
 
                         }
@@ -166,7 +167,7 @@ var imageEditor = {
         }
 
         // Events
-        events.on(document, 'dragenter dragover dragleave drop', '.image-editor', function (e) {
+        events.on(document, 'dragenter dragover dragleave drop', '.image-uploader', function (e) {
 
             e.preventDefault();
             e.stopPropagation();
@@ -186,22 +187,22 @@ var imageEditor = {
 
         });
 
-        events.on(document, 'change', '.image-editor input[type="file"]', function () {
+        events.on(document, 'change', '.image-uploader input[type="file"]', function () {
 
-            var editor = events.closest(this, '.image-editor')[0];
-            loadFiles(editor, this.files);
+            var uploader = events.closest(this, '.image-uploader')[0];
+            loadFiles(uploader, this.files);
 
         });
 
-        events.on(document, 'submit', '.image-editor form', function (e) {
+        events.on(document, 'submit', '.image-uploader form', function (e) {
 
             e.preventDefault();
 
-            var formData, editor, list, file, size, tag;
+            var formData, uploader, list, file, size, tag;
             formData = new FormData();
 
-            editor = events.closest(this, '.image-editor')[0];
-            list = selector('.editor-list ul > li', editor);
+            uploader = events.closest(this, '.image-uploader')[0];
+            list = selector('.uploader-list ul > li', uploader);
 
             events.each(list, function (i) {
 
@@ -216,15 +217,41 @@ var imageEditor = {
 
             });
 
-            events.addClass(editor, 'uploading');
+            events.addClass(uploader, 'uploading');
 
             ajax({
                 url : this.action,
                 data: formData,
-                callback: function (status) {
+                callback: function (status, response) {
 
-                    if (status === 'success') {
-                        events.removeClass(editor, 'uploading');
+                    events.removeClass(uploader, 'uploading');
+
+                    if (status === 'success') { // check ajax connection
+
+                        response = JSON.parse(response);
+                        if (response.success === true) { // check server connection
+                            
+                            alerts.message({
+                                msg: imageUploader.msgSuccess,
+                                theme: 'success'
+                            });
+
+                        } else {
+
+                            alerts.message({
+                                msg: response.message, // show server message
+                                theme: 'danger'
+                            });
+
+                        }
+
+                    } else {
+
+                        alerts.message({
+                            msg: response.message, // show server message
+                            theme: 'warning'
+                        });
+
                     }
 
                 }
@@ -235,6 +262,6 @@ var imageEditor = {
     };
 
     // Loaders
-    events.onload(imageEditor.Start);
+    events.onload(imageUploader.Start);
 
 }());

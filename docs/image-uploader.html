@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <title>UI Lab, Image Editor</title>
-    <meta name="keywords" content="uilab, responsive, design system, css, javascript, image editor">
+    <title>UI Lab, Image Uploader</title>
+    <meta name="keywords" content="uilab, responsive, design system, css, javascript, image uploader">
     <meta name="description" content="CSS & JavaScript powered responsive design system." />
     <meta name="author" content="Ahmet Emin Yüce"/>
 
@@ -16,6 +16,7 @@
     <!-- CSS Tools -->
     <link rel="stylesheet" href="../css/reset.css"/>
 
+    <link rel="stylesheet" href="../css/alerts.css"/>
     <link rel="stylesheet" href="../css/animations.css"/>
     <link rel="stylesheet" href="../css/buttons.css"/>
     <link rel="stylesheet" href="../css/borders.css"/>
@@ -33,7 +34,7 @@
     <link rel="stylesheet" href="../css/typography.css"/>
     <link rel="stylesheet" href="../css/top-button.css"/>
 
-    <link rel="stylesheet" href="../css/image-editor.css"/>
+    <link rel="stylesheet" href="../css/image-uploader.css"/>
 
     <link rel="stylesheet" href="../css/swatches.css"/>
     <link rel="stylesheet" href="../css/darkmode.css"/>
@@ -44,6 +45,7 @@
     <script src="../js/user-agents.js"></script>
     
     <script src="../js/ajax.js"></script>
+    <script src="../js/alerts.js"></script>
     <script src="../js/dropdown.js"></script>
     <script src="../js/forms.js"></script>
     <script src="../js/sticky-header.js"></script>
@@ -51,7 +53,7 @@
     <script src="../js/top-button.js"></script>
     <script src="../js/transitions.js"></script>
 
-    <script src="../js/image-editor.js"></script>
+    <script src="../js/image-uploader.js"></script>
 
     <!-- font icons CSS -->
     <link rel="stylesheet" href="icons/font-icons/outline/font-icons.css"/>
@@ -65,7 +67,7 @@
         <div class="row theme-default2 ui-border top-bordered dual-bordered">
             <div class="col-12">
                 <a href="index.html" class="btn btn-lg btn-square circle ease-btn margin-10-r"><i class="icon icon-md no-opacity icon-long-arrow-left"></i></a>
-                <h1 class="x-large inline-block">UI Lab, Image Editor</h1>
+                <h1 class="x-large inline-block">UI Lab, Image Uploader</h1>
             </div>
         </div>
     </header>
@@ -74,21 +76,20 @@
     <main class="container no-gutter">
         <div class="fixed padding-30-v">
 
-            <div class="image-editor bordered rounded ease-image-editor">
-                <form action="php/image-editor.php" method="post" enctype="multipart/form-data">
+            <div class="image-uploader rounded shadow-lg ease-image-uploader">
+                <form action="php/image-uploader.php" method="post" enctype="multipart/form-data"> <!-- error testing: image-uploader-error.php-->
 
-                    <div class="editor-panel theme-default2">
-                        <h4>Image Editor</h4>
-                        <div class="file no-bordered rounded ui-dark shadow hover ease-btn">
+                    <div class="uploader-panel theme-default2">
+                        <h4 class="margin-5-v">Image Uploader</h4>
+                        <div class="file file-lg no-bordered rounded ui-dark hover ease-btn">
                             <input type="file" name="images[]" multiple>
-                            <div class="btn"><b>Add New Images</b><i class="icon no-opacity icon-xs icon-plus"></i></div>
-                            <span>Upload Image</span>
+                            <div class="btn"><i class="icon no-opacity icon-md icon-plus"></i></div>
                         </div>
                     </div>
 
-                    <div class="editor-tools theme-default2">
+                    <div class="uploader-tools theme-default2">
                         <label class="custom">
-                            <span class="check-custom rounded dual-bordered ease-form">
+                            <span class="check-custom margin-3-r rounded dual-bordered ease-form">
                                 <input type="checkbox">
                                 <i class="ease-form-custom"></i>
                             </span>
@@ -97,22 +98,26 @@
                         <div class="right ease-1st-btn">
                             <div class="dropdown submenu-left">
                                 <button type="button" title="Tags" class="btn btn-sqare rounded ease-btn"><i class="icon no-opacity icon-sm icon-tag"></i></button>
-                                <ul class="content dual-bordered rounded shadow v-scroll ease-dropdown">
+                                <ul class="content rounded shadow-lg v-scroll ease-dropdown">
                                     <li>Tag 01</li>
                                     <li>Tag 02</li>
                                     <li>Tag 03</li>
                                 </ul>
                             </div>
-                            <button type="button" title="Sort" class="editor-remove btn btn-square rounded"><i class="icon no-opacity icon-sm icon-trash"></i></button>
-                            <button type="button" title="Remove" class="editor-sort btn btn-square rounded"><i class="icon no-opacity icon-sm icon-move"></i></button>
-                            <button type="submit" name="send" class="editor-upload btn margin-5-l rounded ui-dark">
+                            <button type="button" title="Remove" class="uploader-remove btn btn-square rounded">
+                                <i class="icon no-opacity icon-sm icon-trash"></i>
+                            </button>
+                            <button type="button" title="Sort" class="uploader-sort btn btn-square rounded">
+                                <i class="icon no-opacity icon-sm icon-move"></i>
+                            </button>
+                            <button type="submit" name="send" class="uploader-upload btn margin-5-l rounded theme-green ui-dark">
                                 <span class="hidden-xs margin-5-r">Upload</span>
                                 <i class="icon no-opacity icon-sm icon-upload"></i>
                             </button>
                         </div>
                     </div>
 
-                    <div class="editor-list">
+                    <div class="uploader-list">
                         <i class="icon icon-xxl icon-save"></i>
                         <ul></ul>
                     </div>
