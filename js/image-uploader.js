@@ -9,6 +9,11 @@ var imageUploader = {
     height: 768, // default height
 
     types: ['jpg', 'jpeg', 'png', 'gif'], // add your allowed file types
+
+    // messages
+    msgConfirm: 'Yes',
+    msgNotConfirm: 'No',
+    msgBeforeUpload: 'Do you want to upload your files?',
     msgSuccess: 'Your files saved, successfully!'
 
 };
@@ -198,63 +203,81 @@ var imageUploader = {
 
             e.preventDefault();
 
-            var formData, uploader, list, file, size, tag;
-            formData = new FormData();
+            var fnc, that, formData, uploader, list, file, size, tag;
+            that = this;
+            
+            fnc = function () {
 
-            uploader = events.closest(this, '.image-uploader')[0];
-            list = selector('.uploader-list ul > li', uploader);
+                formData = new FormData();
 
-            events.each(list, function (i) {
-
-                file = selector('.img img', this)[0].src;
-                formData.append('files[' + i + ']', file); // add base64 images
-
-                size = selector('.size', this)[0].textContent;
-                formData.append('sizes[' + i + ']', size); // add image sizes
-
-                tag = selector('.tag', this)[0].textContent;
-                formData.append('tags[' + i + ']', tag); // add image tags
-
-            });
-
-            events.addClass(uploader, 'uploading');
-
-            ajax({
-                url : this.action,
-                data: formData,
-                callback: function (status, response) {
-
-                    events.removeClass(uploader, 'uploading');
-
-                    if (status === 'success') { // check ajax connection
-
-                        response = JSON.parse(response);
-                        if (response.success === true) { // check server connection
-                            
-                            alerts.message({
-                                msg: imageUploader.msgSuccess,
-                                theme: 'success'
-                            });
-
+                uploader = events.closest(that, '.image-uploader')[0];
+                list = selector('.uploader-list ul > li', uploader);
+    
+                events.each(list, function (i) {
+    
+                    file = selector('.img img', that)[0].src;
+                    formData.append('files[' + i + ']', file); // add base64 images
+    
+                    size = selector('.size', that)[0].textContent;
+                    formData.append('sizes[' + i + ']', size); // add image sizes
+    
+                    tag = selector('.tag', that)[0].textContent;
+                    formData.append('tags[' + i + ']', tag); // add image tags
+    
+                });
+    
+                events.addClass(uploader, 'uploading');
+    
+                ajax({
+                    url : that.action,
+                    data: formData,
+                    callback: function (status, response) {
+    
+                        events.removeClass(uploader, 'uploading');
+    
+                        if (status === 'success') { // check ajax connection
+    
+                            response = JSON.parse(response);
+                            if (response.success === true) { // check server connection
+                                
+                                alerts.message({
+                                    msg: imageUploader.msgSuccess,
+                                    theme: 'success'
+                                });
+    
+                            } else {
+    
+                                alerts.message({
+                                    msg: response.message, // show server message
+                                    theme: 'danger'
+                                });
+    
+                            }
+    
                         } else {
-
+    
                             alerts.message({
                                 msg: response.message, // show server message
-                                theme: 'danger'
+                                theme: 'warning'
                             });
-
+    
                         }
-
-                    } else {
-
-                        alerts.message({
-                            msg: response.message, // show server message
-                            theme: 'warning'
-                        });
-
+    
                     }
+                });    
 
+            };
+
+            alerts.dialog({
+
+                msg: imageUploader.msgBeforeUpload,
+                success: imageUploader.msgConfirm,
+                error: imageUploader.msgNotConfirm,
+
+                callback: function (value) {
+                    if (value === 'success') { fnc(); }
                 }
+
             });
 
         });
