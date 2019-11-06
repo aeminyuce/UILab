@@ -5,6 +5,8 @@
 
 var topButton = {
 
+    titleText : 'Back to top!',
+
     classes: 'circle',
     icon: 'icon icon-md icon-angle-up',
     target: ''
@@ -70,11 +72,7 @@ var topButton = {
 
         if (useragents.mobile) { return; } // stop on mobile devices
 
-        var titleText, html;
-
-        if (useragents.userLang === 'tr') { titleText = 'Yukarı Dön!'; } else { titleText = 'Back To Top!'; }
-
-        html = '<button class="top-button ' + topButton.classes + ' ease-layout" title="' + titleText + '">' +
+        var html = '<button class="top-button ' + topButton.classes + ' ease-layout" title="' + topButton.titleText + '">' +
             '<i class="' + topButton.icon + ' ease-layout"></i>' +
             '</button>';
 
