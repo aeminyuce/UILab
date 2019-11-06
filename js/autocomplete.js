@@ -96,8 +96,14 @@ var autocomplete = {
 
                 if (list.length >= 1) {
 
-                    events.removeClass(p, 'open');
-                    list[0].innerHTML = '';
+                    events.removeClass(p, 'open-ease');
+                    setTimeout(function () {
+
+                        events.removeClass(p, 'open');
+                        list[0].innerHTML = '';
+
+                    }, 150);
+
                 }
 
             } else if (e.keyCode !== 16 && e.keyCode !== 17 && e.keyCode !== 18) {
@@ -145,8 +151,9 @@ var autocomplete = {
                             k = 0;
 
                             events.addClass(p, 'open');
-                            events.removeClass(p, 'submenu-top');
+                            setTimeout(function () { events.addClass(p, 'open-ease'); }, 0);
 
+                            events.removeClass(p, 'submenu-top');
                             list[0].innerHTML = '';
 
                             for (i = 0; i < response.length; i += 1) {
@@ -204,7 +211,7 @@ var autocomplete = {
 
                                         list[0].insertAdjacentHTML('beforeend', '<li>' + txt + '</li>');
 
-                                    }
+                                    }                                    
 
                                 }
                             }
@@ -254,8 +261,13 @@ var autocomplete = {
 
                 } else {
 
-                    events.removeClass(list, 'open');
-                    list[0].innerHTML = '';
+                    events.removeClass(p, 'open-ease');
+                    setTimeout(function () {
+
+                        events.removeClass(list, 'open');
+                        list[0].innerHTML = '';
+
+                    }, 150);
 
                 }
 
@@ -270,7 +282,8 @@ var autocomplete = {
                 var p = this.parentNode;
                 if (selector('li.selected', p).length > 0) {
 
-                    events.removeClass(p, 'open');
+                    events.removeClass(p, 'open-ease');
+                    setTimeout(function () { events.removeClass(p, 'open'); }, 150);
 
                     if (!events.hasClass(p, 'auto-submit')) { // auto submit
 
@@ -304,8 +317,13 @@ var autocomplete = {
             p = this.parentNode;
             list = selector('ul', p);
 
-            events.removeClass(p, 'open');
-            if (list.length > 0) { p.removeChild(list[0]); }
+            events.removeClass(p, 'open-ease');
+            setTimeout(function () {
+
+                events.removeClass(p, 'open');
+                if (list.length > 0) { p.removeChild(list[0]); }
+
+            }, 150);
 
         });
 

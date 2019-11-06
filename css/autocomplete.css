@@ -1,13 +1,15 @@
 /* autocomplete */
 .ease-autocomplete { transition-property: margin-top, opacity; }
+.ease-autocomplete ul { transition-property: opacity; transition-duration: .15s; }
 .ease-autocomplete li { transition-property: background-color; transition-duration: .15s; }
-.no-transitions-all .ease-autocomplete li { transition-property: none !important; }
+.no-transitions-all .ease-autocomplete ul,.no-transitions-all .ease-autocomplete li { transition-property: none !important; }
 
 .autocomplete { overflow: visible !important; }
 .autocomplete.open { z-index: 19; }
 
 .autocomplete ul { color: #000; list-style: none; min-width: 200px; width: 100%; background-color: #fff; padding: 0; margin-bottom: 0; position: absolute; }
 .autocomplete:not(.open) ul { display: none; }
+.autocomplete:not(.open-ease) ul { opacity: 0; }
 
 .autocomplete:not(.submenu-top):not(.dual-bordered):not(.no-bordered) ul { margin-top: 2px; }
 .autocomplete.dual-bordered:not(.submenu-top) ul,.autocomplete.no-bordered:not(.submenu-top) ul { margin-top: 3px; }
