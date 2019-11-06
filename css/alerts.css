@@ -6,7 +6,7 @@
 .alerts-bg:not(.open) { display: none; }
 .alerts-bg:not(.open-ease) { opacity: 0; }
 
-.alerts-dialog { min-width: 280px; max-width: 680px; background-color: #fff; min-height: 60px; position: fixed; top: 50%; left: 50%; z-index: 98; transform: translate(-50%,-50%);}
+.alerts-dialog { min-width: 280px; max-width: 680px; background-color: #fff; min-height: 60px; position: fixed; top: 50%; left: 50%; z-index: 98; transform: translate(-50%,-50%); }
 .alerts-dialog:not(.show) { display: none; }
 .alerts-dialog:not(.show-ease) { opacity: 0; transform: translate(-50%,-50%) scale(.8); }
 
@@ -38,9 +38,9 @@ html:not(.mobile) .alerts-msg:hover { opacity: .9; }
 .alerts-msg:not(.show-ease) { opacity: 0; }
 
 .alerts-msg:not([class*="ui-"]) { color: #fff; background-color: #181818; }
-.alerts-msg.success { background-color: #2dbd3a; }
-.alerts-msg.warning { background-color: #ffa600; }
-.alerts-msg.danger { background-color: #dc000f; }
+.alerts-msg.msg-success { background-color: #2dbd3a !important; }
+.alerts-msg.msg-warning { background-color: #ffa600 !important; }
+.alerts-msg.msg-danger { background-color: #dc000f !important; }
 
 .alerts-msg.tr { top: 20px; right: 20px; }
 .alerts-msg.tl { top: 20px; left: 20px; }

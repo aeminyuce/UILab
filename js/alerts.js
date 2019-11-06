@@ -267,7 +267,7 @@ var alerts = {
             if (arr.indexOf(set.theme) < 0) { set.theme = ''; }
 
             // create mssage
-            styles = set.pos + ' ' + set.theme + ' ' + alerts.messageClasses + ' ' + alerts.messageTheme + ' ease-layout ease-in-out';
+            styles = set.pos + ' msg-' + set.theme + ' ' + alerts.messageClasses + ' ' + alerts.messageTheme + ' ease-layout ease-in-out';
             styles = styles.replace(re, ' ').replace(rex, '');
 
             holder = selector('.alerts-msg-holder')[0];
