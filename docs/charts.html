@@ -20,13 +20,16 @@
     <link rel="stylesheet" href="../css/animations.css"/>
     <link rel="stylesheet" href="../css/buttons.css"/>
     <link rel="stylesheet" href="../css/borders.css"/>
+    <link rel="stylesheet" href="../css/dropdown.css"/>
     <link rel="stylesheet" href="../css/grid.css"/>
     <link rel="stylesheet" href="../css/helpers.css"/>
     <link rel="stylesheet" href="../css/icons.css"/>
     <link rel="stylesheet" href="../css/margins.css"/>
     <link rel="stylesheet" href="../css/paddings.css"/>
+    <link rel="stylesheet" href="../css/portlets.css"/>
     <link rel="stylesheet" href="../css/scrollbar.css"/>
     <link rel="stylesheet" href="../css/sticky-header.css"/>
+    <link rel="stylesheet" href="../css/tabs.css"/>
     <link rel="stylesheet" href="../css/transitions.css"/>
     <link rel="stylesheet" href="../css/tooltip.css"/>
     <link rel="stylesheet" href="../css/typography.css"/>
@@ -44,7 +47,9 @@
     <script src="../js/events.js"></script>
     <script src="../js/user-agents.js"></script>
     
+    <script src="../js/dropdown.js"></script>
     <script src="../js/sticky-header.js"></script>
+    <script src="../js/tabs.js"></script>
     <script src="../js/top-button.js"></script>
     <script src="../js/transitions.js"></script>
     <script src="../js/tooltip.js"></script>
@@ -77,207 +82,254 @@
                 <div class="col-12 padding-30-v">
 
                     <h4 class="align-center lg-align-left">Line Charts Examples</h4>
+                    <div class="row row-lg-padding-ver">
+                        <div class="col-6">
+                            <h5 class="bold align-center">Line Chart</h5>
+                            <div class="line-charts ease-line-charts" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                                <ul class="line">
+                                    <li data-y="84"></li>
+                                    <li data-y="56"></li>
+                                    <li data-y="112"></li>
+                                    <li data-y="140"></li>
+                                    <li data-y="28"></li>
+                                    <li data-y="0"></li>
+                                    <li data-y="28"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="bold align-center">Curved Line Chart</h5>
+                            <div class="line-charts ease-line-charts" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                                <ul class="line" data-type="curved">
+                                    <li data-y="0"></li>
+                                    <li data-y="-56"></li>
+                                    <li data-y="-112"></li>
+                                    <li data-y="-140"></li>
+                                    <li data-y="-28"></li>
+                                    <li data-y="-20"></li>
+                                    <li data-y="-28"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="bold align-center">Line Charts</h5>
+                            <div class="line-charts ease-line-charts" data-size="10,25" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                                <ul class="line" data-name="1st">
+                                    <li data-y="-34" data-link="#1"></li>
+                                    <li data-y="-56" data-link="#2"></li>
+                                    <li data-y="-112" data-link="#3"></li>
+                                    <li data-y="-140" data-link="#4"></li>
+                                    <li data-y="-28" data-link="#5"></li>
+                                    <li data-y="-20" data-link="#6"></li>
+                                    <li data-y="-28" data-link="#7"></li>
+                                </ul>
+                                <ul class="line" data-name="2nd">
+                                    <li data-y="120" data-link="#1"></li>
+                                    <li data-y="20" data-link="#2"></li>
+                                    <li data-y="159" data-link="#3"></li>
+                                    <li data-y="120" data-link="#4"></li>
+                                    <li data-y="80" data-link="#5"></li>
+                                    <li data-y="0" data-link="#6"></li>
+                                    <li data-y="20" data-link="#7"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="bold align-center">Curved Line Charts</h5>
+                            <div class="line-charts ease-line-charts" data-size="10,25" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                                <ul class="line" data-name="1st" data-type="curved">
+                                    <li data-y="55" data-link="#1"></li>
+                                    <li data-y="70" data-link="#2"></li>
+                                    <li data-y="92" data-link="#3"></li>
+                                    <li data-y="55" data-link="#4"></li>
+                                    <li data-y="89" data-link="#5"></li>
+                                    <li data-y="98" data-link="#6"></li>
+                                    <li data-y="116" data-link="#7"></li>
+                                </ul>
+                                <ul class="line" data-name="2nd" data-type="curved">
+                                    <li data-y="120" data-link="#1"></li>
+                                    <li data-y="20" data-link="#2"></li>
+                                    <li data-y="159" data-link="#3"></li>
+                                    <li data-y="120" data-link="#4"></li>
+                                    <li data-y="60" data-link="#5"></li>
+                                    <li data-y="0" data-link="#6"></li>
+                                    <li data-y="20" data-link="#7"></li>
+                                </ul>
+                                <ul class="line" data-name="3rd" data-type="curved">
+                                    <li data-y="32" data-link="#1"></li>
+                                    <li data-y="52" data-link="#2"></li>
+                                    <li data-y="117" data-link="#3"></li>
+                                    <li data-y="85" data-link="#4"></li>
+                                    <li data-y="137" data-link="#5"></li>
+                                    <li data-y="144" data-link="#6"></li>
+                                    <li data-y="59" data-link="#7"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="bold align-center">Filled Line Charts</h5>
+                            <div class="line-charts ease-line-charts" data-size="10,25" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                                <ul class="line" data-name="1st" data-type="filled">
+                                    <li data-y="-34" data-link="#1"></li>
+                                    <li data-y="-56" data-link="#2"></li>
+                                    <li data-y="-112" data-link="#3"></li>
+                                    <li data-y="-140" data-link="#4"></li>
+                                    <li data-y="-28" data-link="#5"></li>
+                                    <li data-y="-20" data-link="#6"></li>
+                                    <li data-y="-28" data-link="#7"></li>
+                                </ul>
+                                <ul class="line" data-name="2nd" data-type="filled">
+                                    <li data-y="120" data-link="#1"></li>
+                                    <li data-y="20" data-link="#2"></li>
+                                    <li data-y="159" data-link="#3"></li>
+                                    <li data-y="120" data-link="#4"></li>
+                                    <li data-y="80" data-link="#5"></li>
+                                    <li data-y="0" data-link="#6"></li>
+                                    <li data-y="20" data-link="#7"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="bold align-center">Filled &amp; Curved Line Charts</h5>
+                            <div class="line-charts ease-line-charts" data-size="10,25" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                                <ul class="line" data-name="1st" data-type="curved filled">
+                                    <li data-y="-34" data-link="#1"></li>
+                                    <li data-y="-56" data-link="#2"></li>
+                                    <li data-y="-112" data-link="#3"></li>
+                                    <li data-y="-140" data-link="#4"></li>
+                                    <li data-y="-28" data-link="#5"></li>
+                                    <li data-y="-20" data-link="#6"></li>
+                                    <li data-y="-28" data-link="#7"></li>
+                                </ul>
+                                <ul class="line" data-name="2nd" data-type="curved filled">
+                                    <li data-y="120" data-link="#1"></li>
+                                    <li data-y="20" data-link="#2"></li>
+                                    <li data-y="159" data-link="#3"></li>
+                                    <li data-y="120" data-link="#4"></li>
+                                    <li data-y="80" data-link="#5"></li>
+                                    <li data-y="0" data-link="#6"></li>
+                                    <li data-y="20" data-link="#7"></li>
+                                </ul>
+                                <ul class="line" data-name="3rd" data-type="curved filled">
+                                    <li data-y="32" data-link="#1"></li>
+                                    <li data-y="52" data-link="#2"></li>
+                                    <li data-y="117" data-link="#3"></li>
+                                    <li data-y="85" data-link="#4"></li>
+                                    <li data-y="137" data-link="#5"></li>
+                                    <li data-y="144" data-link="#6"></li>
+                                    <li data-y="59" data-link="#7"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 theme-default ui-dark rounded">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5 class="bold align-center">Filled Line Charts</h5>
+                                    <div class="line-charts ease-line-charts" data-size="10,25" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                                        <ul class="line" data-name="1st" data-type="filled">
+                                            <li data-y="-34" data-link="#1"></li>
+                                            <li data-y="-56" data-link="#2"></li>
+                                            <li data-y="-112" data-link="#3"></li>
+                                            <li data-y="-140" data-link="#4"></li>
+                                            <li data-y="-28" data-link="#5"></li>
+                                            <li data-y="-20" data-link="#6"></li>
+                                            <li data-y="-28" data-link="#7"></li>
+                                        </ul>
+                                        <ul class="line" data-name="2nd" data-type="filled">
+                                            <li data-y="120" data-link="#1"></li>
+                                            <li data-y="20" data-link="#2"></li>
+                                            <li data-y="159" data-link="#3"></li>
+                                            <li data-y="120" data-link="#4"></li>
+                                            <li data-y="80" data-link="#5"></li>
+                                            <li data-y="0" data-link="#6"></li>
+                                            <li data-y="20" data-link="#7"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <h5 class="bold align-center">Filled &amp; Curved Line Charts</h5>
+                                    <div class="line-charts ease-line-charts" data-size="10,25" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                                        <ul class="line" data-name="1st" data-type="curved filled">
+                                            <li data-y="-34" data-link="#1"></li>
+                                            <li data-y="-56" data-link="#2"></li>
+                                            <li data-y="-112" data-link="#3"></li>
+                                            <li data-y="-140" data-link="#4"></li>
+                                            <li data-y="-28" data-link="#5"></li>
+                                            <li data-y="-20" data-link="#6"></li>
+                                            <li data-y="-28" data-link="#7"></li>
+                                        </ul>
+                                        <ul class="line" data-name="2nd" data-type="curved filled">
+                                            <li data-y="120" data-link="#1"></li>
+                                            <li data-y="20" data-link="#2"></li>
+                                            <li data-y="159" data-link="#3"></li>
+                                            <li data-y="120" data-link="#4"></li>
+                                            <li data-y="80" data-link="#5"></li>
+                                            <li data-y="0" data-link="#6"></li>
+                                            <li data-y="20" data-link="#7"></li>
+                                        </ul>
+                                        <ul class="line" data-name="3rd" data-type="curved filled">
+                                            <li data-y="32" data-link="#1"></li>
+                                            <li data-y="52" data-link="#2"></li>
+                                            <li data-y="117" data-link="#3"></li>
+                                            <li data-y="85" data-link="#4"></li>
+                                            <li data-y="137" data-link="#5"></li>
+                                            <li data-y="144" data-link="#6"></li>
+                                            <li data-y="59" data-link="#7"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="portlet rounded shadow-lg btn-tabs ease-tabs" data-classes="bold">
+                                <div class="content-side padding-10 bottom-bordered">
 
-                        <div class="row row-lg-padding-ver">
-                            <div class="col-6">
-                                <h5 class="bold align-center">Line Chart</h5>
-                                <div class="line-charts ease-line-charts" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                                    <ul class="line">
-                                        <li data-y="84"></li>
-                                        <li data-y="56"></li>
-                                        <li data-y="112"></li>
-                                        <li data-y="140"></li>
-                                        <li data-y="28"></li>
-                                        <li data-y="0"></li>
-                                        <li data-y="28"></li>
-                                    </ul>
+                                    <div class="dropdown submenu-left right ease-dropdown">
+                                        <button class="btn rounded ease-btn">
+                                            Switch Charts
+                                            <i class="icon-toggle icon margin-3-l icon-xs icon-angle-down no-opacity"></i>
+                                        </button>
+                                        <ul class="content rounded shadow-lg v-scroll">
+                                            <li><a data-effects="true" class="btn-tab line-charts-resizer active bold" href="#">First Chart</a></li>
+                                            <li><a data-effects="true" class="btn-tab line-charts-resizer" href="#">Second Chart</a></li>
+                                        </ul>
+                                    </div>
+                                    <h4 class="margin-5-v"> Multiple Line Charts</h4>
+
                                 </div>
-                            </div>
-                            <div class="col-6">
-                                <h5 class="bold align-center">Curved Line Chart</h5>
-                                <div class="line-charts ease-line-charts" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                                    <ul class="line" data-type="curved">
-                                        <li data-y="0"></li>
-                                        <li data-y="-56"></li>
-                                        <li data-y="-112"></li>
-                                        <li data-y="-140"></li>
-                                        <li data-y="-28"></li>
-                                        <li data-y="-20"></li>
-                                        <li data-y="-28"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <h5 class="bold align-center">Line Charts</h5>
-                                <div class="line-charts ease-line-charts" data-size="10,25" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                                    <ul class="line" data-name="1st">
-                                        <li data-y="-34" data-link="#1"></li>
-                                        <li data-y="-56" data-link="#2"></li>
-                                        <li data-y="-112" data-link="#3"></li>
-                                        <li data-y="-140" data-link="#4"></li>
-                                        <li data-y="-28" data-link="#5"></li>
-                                        <li data-y="-20" data-link="#6"></li>
-                                        <li data-y="-28" data-link="#7"></li>
-                                    </ul>
-                                    <ul class="line" data-name="2nd">
-                                        <li data-y="120" data-link="#1"></li>
-                                        <li data-y="20" data-link="#2"></li>
-                                        <li data-y="159" data-link="#3"></li>
-                                        <li data-y="120" data-link="#4"></li>
-                                        <li data-y="80" data-link="#5"></li>
-                                        <li data-y="0" data-link="#6"></li>
-                                        <li data-y="20" data-link="#7"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <h5 class="bold align-center">Curved Line Charts</h5>
-                                <div class="line-charts ease-line-charts" data-size="10,25" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                                    <ul class="line" data-name="1st" data-type="curved">
-                                        <li data-y="55" data-link="#1"></li>
-                                        <li data-y="70" data-link="#2"></li>
-                                        <li data-y="92" data-link="#3"></li>
-                                        <li data-y="55" data-link="#4"></li>
-                                        <li data-y="89" data-link="#5"></li>
-                                        <li data-y="98" data-link="#6"></li>
-                                        <li data-y="116" data-link="#7"></li>
-                                    </ul>
-                                    <ul class="line" data-name="2nd" data-type="curved">
-                                        <li data-y="120" data-link="#1"></li>
-                                        <li data-y="20" data-link="#2"></li>
-                                        <li data-y="159" data-link="#3"></li>
-                                        <li data-y="120" data-link="#4"></li>
-                                        <li data-y="60" data-link="#5"></li>
-                                        <li data-y="0" data-link="#6"></li>
-                                        <li data-y="20" data-link="#7"></li>
-                                    </ul>
-                                    <ul class="line" data-name="3rd" data-type="curved">
-                                        <li data-y="32" data-link="#1"></li>
-                                        <li data-y="52" data-link="#2"></li>
-                                        <li data-y="117" data-link="#3"></li>
-                                        <li data-y="85" data-link="#4"></li>
-                                        <li data-y="137" data-link="#5"></li>
-                                        <li data-y="144" data-link="#6"></li>
-                                        <li data-y="59" data-link="#7"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <h5 class="bold align-center">Filled Line Charts</h5>
-                                <div class="line-charts ease-line-charts" data-size="10,25" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                                    <ul class="line" data-name="1st" data-type="filled">
-                                        <li data-y="-34" data-link="#1"></li>
-                                        <li data-y="-56" data-link="#2"></li>
-                                        <li data-y="-112" data-link="#3"></li>
-                                        <li data-y="-140" data-link="#4"></li>
-                                        <li data-y="-28" data-link="#5"></li>
-                                        <li data-y="-20" data-link="#6"></li>
-                                        <li data-y="-28" data-link="#7"></li>
-                                    </ul>
-                                    <ul class="line" data-name="2nd" data-type="filled">
-                                        <li data-y="120" data-link="#1"></li>
-                                        <li data-y="20" data-link="#2"></li>
-                                        <li data-y="159" data-link="#3"></li>
-                                        <li data-y="120" data-link="#4"></li>
-                                        <li data-y="80" data-link="#5"></li>
-                                        <li data-y="0" data-link="#6"></li>
-                                        <li data-y="20" data-link="#7"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <h5 class="bold align-center">Filled &amp; Curved Line Charts</h5>
-                                <div class="line-charts ease-line-charts" data-size="10,25" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                                    <ul class="line" data-name="1st" data-type="curved filled">
-                                        <li data-y="-34" data-link="#1"></li>
-                                        <li data-y="-56" data-link="#2"></li>
-                                        <li data-y="-112" data-link="#3"></li>
-                                        <li data-y="-140" data-link="#4"></li>
-                                        <li data-y="-28" data-link="#5"></li>
-                                        <li data-y="-20" data-link="#6"></li>
-                                        <li data-y="-28" data-link="#7"></li>
-                                    </ul>
-                                    <ul class="line" data-name="2nd" data-type="curved filled">
-                                        <li data-y="120" data-link="#1"></li>
-                                        <li data-y="20" data-link="#2"></li>
-                                        <li data-y="159" data-link="#3"></li>
-                                        <li data-y="120" data-link="#4"></li>
-                                        <li data-y="80" data-link="#5"></li>
-                                        <li data-y="0" data-link="#6"></li>
-                                        <li data-y="20" data-link="#7"></li>
-                                    </ul>
-                                    <ul class="line" data-name="3rd" data-type="curved filled">
-                                        <li data-y="32" data-link="#1"></li>
-                                        <li data-y="52" data-link="#2"></li>
-                                        <li data-y="117" data-link="#3"></li>
-                                        <li data-y="85" data-link="#4"></li>
-                                        <li data-y="137" data-link="#5"></li>
-                                        <li data-y="144" data-link="#6"></li>
-                                        <li data-y="59" data-link="#7"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-12 theme-default ui-dark rounded">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <h5 class="bold align-center">Filled Line Charts</h5>
-                                        <div class="line-charts ease-line-charts" data-size="10,25" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                                            <ul class="line" data-name="1st" data-type="filled">
-                                                <li data-y="-34" data-link="#1"></li>
-                                                <li data-y="-56" data-link="#2"></li>
-                                                <li data-y="-112" data-link="#3"></li>
-                                                <li data-y="-140" data-link="#4"></li>
-                                                <li data-y="-28" data-link="#5"></li>
-                                                <li data-y="-20" data-link="#6"></li>
-                                                <li data-y="-28" data-link="#7"></li>
-                                            </ul>
-                                            <ul class="line" data-name="2nd" data-type="filled">
-                                                <li data-y="120" data-link="#1"></li>
-                                                <li data-y="20" data-link="#2"></li>
-                                                <li data-y="159" data-link="#3"></li>
-                                                <li data-y="120" data-link="#4"></li>
-                                                <li data-y="80" data-link="#5"></li>
-                                                <li data-y="0" data-link="#6"></li>
-                                                <li data-y="20" data-link="#7"></li>
+                                <div class="content-side padding-15">
+        
+                                    <div class="tab-content open open-ease">
+                                        <h5 class="bold align-center">First Chart</h5>
+                                        <div class="line-charts ease-line-charts" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                                            <ul class="line">
+                                                <li data-y="84"></li>
+                                                <li data-y="56"></li>
+                                                <li data-y="112"></li>
+                                                <li data-y="140"></li>
+                                                <li data-y="28"></li>
+                                                <li data-y="0"></li>
+                                                <li data-y="28"></li>
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="col-6">
-                                        <h5 class="bold align-center">Filled &amp; Curved Line Charts</h5>
-                                        <div class="line-charts ease-line-charts" data-size="10,25" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                                            <ul class="line" data-name="1st" data-type="curved filled">
-                                                <li data-y="-34" data-link="#1"></li>
-                                                <li data-y="-56" data-link="#2"></li>
-                                                <li data-y="-112" data-link="#3"></li>
-                                                <li data-y="-140" data-link="#4"></li>
-                                                <li data-y="-28" data-link="#5"></li>
-                                                <li data-y="-20" data-link="#6"></li>
-                                                <li data-y="-28" data-link="#7"></li>
-                                            </ul>
-                                            <ul class="line" data-name="2nd" data-type="curved filled">
-                                                <li data-y="120" data-link="#1"></li>
-                                                <li data-y="20" data-link="#2"></li>
-                                                <li data-y="159" data-link="#3"></li>
-                                                <li data-y="120" data-link="#4"></li>
-                                                <li data-y="80" data-link="#5"></li>
-                                                <li data-y="0" data-link="#6"></li>
-                                                <li data-y="20" data-link="#7"></li>
-                                            </ul>
-                                            <ul class="line" data-name="3rd" data-type="curved filled">
-                                                <li data-y="32" data-link="#1"></li>
-                                                <li data-y="52" data-link="#2"></li>
-                                                <li data-y="117" data-link="#3"></li>
-                                                <li data-y="85" data-link="#4"></li>
-                                                <li data-y="137" data-link="#5"></li>
-                                                <li data-y="144" data-link="#6"></li>
-                                                <li data-y="59" data-link="#7"></li>
+                                    <div class="tab-content">
+                                        <h5 class="bold align-center">Second Chart</h5>
+                                        <div class="line-charts ease-line-charts" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                                            <ul class="line" data-type="curved">
+                                                <li data-y="0"></li>
+                                                <li data-y="-56"></li>
+                                                <li data-y="-112"></li>
+                                                <li data-y="-140"></li>
+                                                <li data-y="-28"></li>
+                                                <li data-y="-20"></li>
+                                                <li data-y="-28"></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
                 </div>
