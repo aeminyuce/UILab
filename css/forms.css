@@ -145,6 +145,7 @@ html:not(.mobile) .file:hover .btn { background-color: rgba(0,0,0,.15); }
     .row-md-padding [class*="col-"].sm-responsive > .form-grid,.row-md-padding-ver [class*="col-"].sm-responsive > .form-grid { margin-bottom: -5px; }
 }
 @media (min-width: 481px) {
+    .form-summary-lg:not(.no-responsive) { line-height: 42px; }
     .form-summary:not(.no-responsive) { line-height: 32px; }
     .form-summary-sm:not(.no-responsive) { line-height: 26px; }
     .form-summary-xs:not(.no-responsive) { line-height: 22px; }
@@ -153,8 +154,5 @@ html:not(.mobile) .file:hover .btn { background-color: rgba(0,0,0,.15); }
     .form-inline-responsive { width: 100% !important; display: block !important; }
     .form-inline-responsive:not(:last-child):not(.highlight) { margin-bottom: 5px; }
 
-    .form-summary.no-responsive { line-height: 32px; }
-    .form-summary-sm.no-responsive { line-height: 26px; }
-    .form-summary-xs.no-responsive { line-height: 22px; }
     [class*="form-summary"]:not(.no-responsive) { padding-top: 5px; padding-bottom: 5px; }
 }
