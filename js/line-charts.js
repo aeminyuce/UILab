@@ -31,18 +31,23 @@ var lineCharts = {
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, ajax */
+    /*globals window, document, selector, events, ajax, setTimeout */
 
-    var loadCharts,
-        chartsResizer;
+    var
+        chartsResizer,
+        loadCharts;
 
     // resize charts
-    chartsResizer = function () {
+    chartsResizer = function () { // init function for manually call resizer
 
-        var charts = selector('.line-charts.loaded');
-        if (charts.length === 0) { return; }
+        setTimeout(function () {
 
-        loadCharts(charts, true);
+            var charts = selector('.line-charts.loaded');
+
+            if (charts.length === 0) { return; }
+            loadCharts(charts, true);
+            
+        }, 0);
 
     };
 
@@ -72,7 +77,7 @@ var lineCharts = {
                 data.name = [];
                 data.color = [];
                 data.backup = [];
-
+                
                 if (resizer !== undefined && resizer) {
                     events.addClass(this, 'loaded resized');
 
@@ -98,7 +103,7 @@ var lineCharts = {
 
                 }
 
-                data.width = this.offsetWidth;
+                data.width = this.offsetWidth;                
                 data.height = rows * rowsHeight;
 
                 // read all x parameters
@@ -156,7 +161,13 @@ var lineCharts = {
                 yMax = Math.ceil((parseInt(yMax[0], 10) - yMin) / rows) * rows + yMin; // convert yMax to divide with rows
 
                 // start html
-                html = '<svg>';
+                data.svgHeight = data.height;
+
+                if (lineCharts.showInfo || lineCharts.showGridText) {
+                    data.svgHeight += 15;
+                }
+                
+                html = '<svg style="width: ' + data.width + 'px; height: ' + data.svgHeight + 'px;">';
 
                 // create grids
                 col = (data.width - (lineCharts.right + lineCharts.left)) / (x.length - 1);
@@ -358,13 +369,6 @@ var lineCharts = {
                 this.innerHTML = data.backup;
                 this.insertAdjacentHTML('beforeEnd', html);
 
-                // set height of chart
-                if (lineCharts.showInfo || lineCharts.showGridText) {
-                    data.height += 15;
-                }
-
-                selector('svg', this)[0].style.height = data.height + 'px';
-
                 // empty variables
                 data = [];
                 html = '';
@@ -374,6 +378,9 @@ var lineCharts = {
         };
 
         loadCharts();
+
+        // events
+        events.on(document, 'click', '.line-charts-resizer', chartsResizer);
 
     };
 
