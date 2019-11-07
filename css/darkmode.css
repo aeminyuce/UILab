@@ -10,9 +10,11 @@
 
     hr { background-color: rgba(255,255,255,.15); }
 
-    .bg-white:not([class*="ui-"]) { background-color: #0f1115 !important; }
     .hidden-dark { display: none !important; }
     .visible-light { display: none !important; }
+
+    .bg-white:not([class*="ui-"]) { background-color: #0f1115 !important; }
+    .portlet .bg-white:not([class*="ui-"]) { background-color: #2f343e !important; }
 
     code { color: #fff; background-color: #c7254e; }
     pre,xmp { color: #fff; background-color: #2f343e; border-color: #41454d; }
@@ -112,6 +114,13 @@
 
     .tooltip:not([class*="ui-"]) { background-color: #41454d; }
     .tooltip:not([class*="ui-"]) > span i { background: #41454d; }
+
+    .photo-slider:not(.loader-pause) { background-color: #15181d; }
+    .portlet .photo-slider:not(.loader-pause) { background-color: #2f343e; }
+    .photo-slider button { color: #fff; }
+    .photo-slider button:hover { background-color: rgba(255,255,255,.1); }
+    .photo-slider .slider-nav i { background-color: rgba(255,255,255,.2); }
+    .photo-slider .slider-nav i.selected { background-color: rgba(255,255,255,.35); }
 
     .data-list .data-content.even { background-color: rgba(255,255,255,.025); }
     .data-list .data-content:not([class*="col-"]) { border-bottom-color: #41454d; }
