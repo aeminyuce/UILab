@@ -80,7 +80,7 @@
                 <form action="php/image-uploader.php" method="post" enctype="multipart/form-data"> <!-- error testing: image-uploader-error.php-->
 
                     <div class="uploader-panel theme-default2">
-                        <h4 class="margin-5-v">Image Uploader</h4>
+                        <h4>Image Uploader</h4>
                         <div class="file file-lg no-bordered rounded ui-dark hover ease-btn">
                             <input type="file" name="images[]" multiple>
                             <div class="btn"><i class="icon no-opacity icon-md icon-plus"></i></div>
@@ -97,11 +97,11 @@
                         </label>
                         <div class="right ease-1st-btn">
                             <div class="dropdown submenu-left ease-dropdown">
-                                <button type="button" title="Tags" class="btn btn-sqare rounded ease-btn"><i class="icon no-opacity icon-sm icon-tag"></i></button>
+                                <button type="button" title="Tags" class="btn btn-square rounded ease-btn"><i class="icon no-opacity icon-sm icon-tag"></i></button>
                                 <ul class="content rounded shadow-lg v-scroll">
-                                    <li>Tag 01</li>
-                                    <li>Tag 02</li>
-                                    <li>Tag 03</li>
+                                    <li>Interior</li>
+                                    <li>Exterior</li>
+                                    <li>Project</li>
                                 </ul>
                             </div>
                             <button type="button" title="Remove" class="uploader-remove btn btn-square rounded">
@@ -119,7 +119,12 @@
 
                     <div class="uploader-list">
                         <i class="icon icon-xxl icon-save"></i>
-                        <ul></ul>
+                        <ul>
+                            <li data-img="img/house_01.jpg" data-tag="Exterior"></li>
+                            <li data-img="img/house_02.jpg" data-tag="Exterior"></li>
+                            <li data-img="img/house_03.jpg" data-tag="Exterior"></li>
+                            <li data-img="img/house_04.jpg" data-tag="Exterior"></li>
+                        </ul>
                     </div>
 
                 </form>

@@ -4,7 +4,7 @@
 .ease-image-uploader { transition-property: background-color; transition-duration: .15s; }
 .ease-image-uploader .uploader-tools,.ease-image-uploader .uploader-list ul > li { transition-property: opacity; transition-duration: .3s; }
 .ease-image-uploader .uploader-list > .icon { transition-property: opacity; transition-duration: .15s; }
-.ease-image-uploader .uploader-list ul > li img { transition-property: transform; transition-duration: .15s; }
+.ease-image-uploader .uploader-list ul > li img { transition-property: transform, box-shadow; transition-duration: .15s; }
 
 .no-transitions-all .ease-image-uploader,.no-transitions-all .ease-image-uploader .uploader-tools,.no-transitions-all .ease-image-uploader .uploader-list > .icon,
 .no-transitions-all .ease-image-uploader .uploader-list ul > li,.no-transitions-all .ease-image-uploader .uploader-list ul > li img { transition-property: none !important; }
@@ -15,7 +15,7 @@
 .uploader-panel { text-align: right; min-height: 52px; padding: 15px; }
 
 .uploader-panel > .row { margin-left: 0; margin-right: 0; }
-.uploader-panel h3,.uploader-panel h4,.uploader-panel h5,.uploader-panel h6 { font-size: 18px; line-height: 32px; margin-bottom: 0; float: left; }
+.uploader-panel h3,.uploader-panel h4,.uploader-panel h5,.uploader-panel h6 { font-size: 18px; line-height: 32px; margin: 7px 0; float: left; }
 
 .image-uploader.loading .file,.image-uploader.uploading .uploader-upload { background-image: linear-gradient(45deg, rgba(255,255,255,0) 25%, rgba(255,255,255,.25) 25%, rgba(255,255,255,.25) 50%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 75%, rgba(255,255,255,.25) 75%); background-size: 20px 20px; animation: uploader-loader 1s linear infinite; }
 
@@ -41,10 +41,11 @@
 .uploader-list ul:after { clear: both; }
 
 .uploader-list ul > li { padding: 5px; float: left; }
+.uploader-list:not(.open) ul > li { display: none; }
 .uploader-list ul > li.open-ease { opacity: 0; }
 .uploader-list ul > li .img { display: block; clear: both; position: relative; }
 .uploader-list ul > li .img img { width: auto; max-width: 100%; height: auto; max-height: 100%; position: absolute; top: 50%; left: 50%; box-shadow: 0 1px 6px rgba(0,0,0,.25); transform: translate(-50%,-50%); }
-html:not(.mobile) .uploader-list ul > li .img img:hover { transform: translate(-50%,-50%) scale(1.06); cursor: pointer; }
+html:not(.mobile) .uploader-list ul > li .img img:hover { transform: translate(-50%,-50%) translateY(-2.5%) scale(1.025); box-shadow: 0 5px 15px rgba(0,0,0,.2); cursor: pointer; }
 .uploader-list ul > li .img:not(:first-child) { margin-top: 10px; }
 .uploader-list ul > li .img:not(:last-child) { margin-bottom: 10px; }
 

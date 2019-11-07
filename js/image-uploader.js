@@ -13,8 +13,11 @@ var imageUploader = {
     // messages
     msgConfirm: 'Yes',
     msgNotConfirm: 'No',
+
+    msgImgError: 'is not found!',
+
     msgBeforeUpload: 'Do you want to upload your files?',
-    msgSuccess: 'Your files saved, successfully!'
+    msgError: 'Your files not saved! Please, check your connection and try again.'
 
 };
 
@@ -25,9 +28,11 @@ var imageUploader = {
 
     imageUploader.Start = function () {
 
+        var uploaders;
+
         function loadFiles(uploader, files) {
 
-            var i, ext, c, ctx, data, img, w, h, size, allowed, readers, listCont, list, tools, loaded;
+            var i, ext, c, ctx, data, img, imgLoaded, w, h, size, allowed, readers, listCont, list, tools, loaded, loadImages, loadImagesAfter;
 
             if (files.length > 0) {
 
@@ -55,6 +60,8 @@ var imageUploader = {
                 readers = [];
 
                 img = [];
+                imgLoaded = [];
+
                 w = [];
                 h = [];
 
@@ -69,107 +76,182 @@ var imageUploader = {
                 listCont = selector('.uploader-list', uploader)[0];
                 list = selector('.uploader-list ul', uploader)[0];
 
+                loadImages = function (j, tag) {
+
+                    // resize images to default
+                    w[j] = img[j].width;
+                    h[j] = img[j].height;
+
+                    if (w[j] > h[j]) {
+
+                        // horizontal image
+                        if (w[j] > imageUploader.width) {
+                            h[j] = (h[j] * imageUploader.width) / w[j];
+                        }
+
+                    } else {
+
+                        // vertical image
+                        if (h[j] > imageUploader.height) {
+                            w[j] = (w[j] * imageUploader.height) / h[j];
+                        }
+
+                    }
+
+                    c.width = w[j];
+                    c.height = h[j];
+
+                    ctx.drawImage(img[j], 0, 0, w[j], h[j]);
+                    data = c.toDataURL("image/jpeg");
+
+                    // calculate new image file size from new base64
+                    size = data.split(',')[1].length;
+                    size = (4 * Math.ceil(size / 3) * 0.5624896334383812) / 1000;
+
+                    size = size.toFixed(0);
+
+                    imgLoaded[j] = [];
+
+                    imgLoaded[j].name = allowed[j].name;
+                    imgLoaded[j].data = data;
+                    imgLoaded[j].size = size;
+                    imgLoaded[j].tag = tag;
+
+                };
+
+                loadImagesAfter = function () {
+                    
+                    loaded += 1;                    
+                    if (loaded === allowed.length) {
+                        
+                        events.each(imgLoaded, function (k) {
+
+                            if (imgLoaded[k] === undefined) { return; } // for not loaded images
+                            
+                            list.insertAdjacentHTML('beforeend',
+                                
+                                    '<li class="open-ease">' +
+                                        '<label class="custom">' +
+                                            '<span class="check-custom rounded dual-bordered ease-form">' +
+                                                '<input type="checkbox">' +
+                                                '<i class="ease-form-custom"></i>' +
+                                            '</span>' +
+                                            '<span class="name">' + imgLoaded[k].name + '</span>' +
+                                        '</label>' +
+                                        '<span class="img"><img src="' + imgLoaded[k].data + '" alt=""></span>' +
+                                        '<span class="size">' + imgLoaded[k].size + 'kb</span>' +
+                                        '<span class="tag">' + imgLoaded[k].tag + '</span>' +
+                                    '</li>');
+                    
+                        });
+
+                        events.addClass(tools, 'open');
+                        events.addClass(listCont, 'open');
+
+                        setTimeout(function () {
+
+                            events.addClass(tools, 'open-ease');
+                            events.removeClass(selector('li.open-ease', listCont), 'open-ease');
+
+                            // empty variables
+                            allowed = [];
+                            readers = [];
+
+                            img = [];
+                            imgLoaded = [];
+                            
+                            w = [];
+                            h = [];
+
+                        }, 10);
+
+                        setTimeout(function () {
+                            events.removeClass(uploader, 'loading');
+                        }, 150);
+
+                    }
+
+                };
+
                 events.each(allowed, function (i) {
 
-                    readers[i] = new FileReader(); // filereader API
-                    readers[i].onload = function () {
+                    if (allowed[i].lastModified !== undefined) { // FileList object: get images from user selected
+                        
+                        readers[i] = new FileReader(); // filereader API
+                        readers[i].readAsDataURL(allowed[i]);
 
-                        img[i] = new Image();
-                        img[i].src = this.result;
+                        readers[i].onload = function () {
 
-                        img[i].onload = function () {
+                            img[i] = new Image();
+                            img[i].src = this.result;
 
-                            // resize images to default
-                            w[i] = img[i].width;
-                            h[i] = img[i].height;
-
-                            if (w[i] > h[i]) {
-
-                                // horizontal image
-                                if (w[i] > imageUploader.width) {
-                                    h[i] = (h[i] * imageUploader.width) / w[i];
-                                }
-
-                            } else {
-
-                                // vertical image
-                                if (h[i] > imageUploader.height) {
-                                    w[i] = (w[i] * imageUploader.height) / h[i];
-                                }
-
-                            }
-
-                            c.width = w[i];
-                            c.height = h[i];
-
-                            ctx.drawImage(img[i], 0, 0, w[i], h[i]);
-                            data = c.toDataURL("image/jpeg");
-
-                            // calculate new image file size from new base64
-                            size = data.split(',')[1].length;
-                            size = (4 * Math.ceil(size / 3) * 0.5624896334383812) / 1000;
-
-                            size = size.toFixed(0);
-
-                            // create html
-                            list.insertAdjacentHTML('beforeend',
-
-                                '<li class="open-ease">' +
-                                    '<label class="custom">' +
-                                        '<span class="check-custom rounded dual-bordered ease-form">' +
-                                            '<input type="checkbox">' +
-                                            '<i class="ease-form-custom"></i>' +
-                                        '</span>' +
-                                        '<span class="name">' + allowed[i].name + '</span>' +
-                                    '</label>' +
-                                    '<span class="img"><img src="' + data + '" alt=""></span>' +
-                                    '<span class="size">' + size + 'kb</span>' +
-                                    '<span class="tag">No Tag</span>' +
-                                '</li>');
+                            img[i].onload = function () { loadImages(i, ''); };
 
                         };
 
-                    };
+                        readers[i].onloadend = loadImagesAfter; // end of loaded images
 
-                    // end of loaded images
-                    readers[i].onloadend = function () {
+                    } else { // array: get images from before uploaded
 
-                        loaded += 1;
-                        if (loaded === allowed.length) {
+                        img[i] = new Image();
+                        img[i].src = allowed[i].name;
 
-                            events.addClass(tools, 'open');
-                            events.addClass(listCont, 'open');
+                        img[i].onload = function () {
 
-                            setTimeout(function () {
+                            loadImages(i, allowed[i].tag);
+                            loadImagesAfter(); // end of loaded images
+                            
+                        };
 
-                                events.addClass(tools, 'open-ease');
-                                events.removeClass(selector('li.open-ease', listCont), 'open-ease');
+                        img[i].onerror = function () {
 
-                                // empty variables
-                                allowed = [];
-                                readers = [];
+                            alerts.message({
+                                msg: allowed[i].name + ' ' + imageUploader.msgImgError,
+                                theme: 'danger'
+                            });
 
-                                img = [];
-                                w = [];
-                                h = [];
+                            loadImagesAfter(); // end of loaded images
 
-                            }, 10);
+                        };
 
-                            setTimeout(function () {
-                                events.removeClass(uploader, 'loading');
-                            }, 150);
-
-                        }
-
-                    };
-
-                    readers[i].readAsDataURL(allowed[i]);
+                    }
 
                 });
 
             }
 
         }
+
+        // load before uploaded images
+        uploaders = selector('.image-uploader');
+        events.each(uploaders, function () {
+
+            var list, loaded, img, tag;
+
+            loaded = [];
+
+            list = selector('li[data-img]', this);
+            events.each(list, function (i) {
+
+                loaded[i] = [];
+
+                img = this.getAttribute('data-img');
+                if (img !== null && img !== '') {
+                    loaded[i].name = img;
+                }
+                
+                tag = this.getAttribute('data-tag');
+                if (tag !== null && tag !== '') {
+                    loaded[i].tag = tag;
+                }
+
+                this.parentNode.removeChild(this);
+
+            });
+
+            loadFiles(this, loaded);
+
+        });
 
         // Events
         events.on(document, 'dragenter dragover dragleave drop', '.image-uploader', function (e) {
@@ -241,7 +323,7 @@ var imageUploader = {
                             if (response.success === true) { // check server connection
                                 
                                 alerts.message({
-                                    msg: imageUploader.msgSuccess,
+                                    msg: response.message, // show server message
                                     theme: 'success'
                                 });
     
@@ -257,7 +339,7 @@ var imageUploader = {
                         } else {
     
                             alerts.message({
-                                msg: response.message, // show server message
+                                msg: imageUploader.msgError,
                                 theme: 'warning'
                             });
     
