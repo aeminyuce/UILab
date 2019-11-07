@@ -47,7 +47,7 @@ var photoGallery = {
                 imgFnc = function () {
 
                     newImg = new Image();
-                    newImg.src = img[imgCounter].getAttribute('src');
+                    newImg.src = img[imgCounter].src;
 
                     img[imgCounter].src = newImg.src;
 
@@ -481,7 +481,7 @@ var photoGallery = {
             // touch events: pinch to zoom
             events.on(preview, 'touchstart', function (e) {
 
-                if (e.target.getAttribute('src') === null) { return; }
+                if (e.target.src === null) { return; }
 
                 e.preventDefault();
                 var sx, sy, x, y, pinchStart, pinch, matrix, newScale, msx, msy;
@@ -549,7 +549,7 @@ var photoGallery = {
             // mousemove for zoomed image on desktop
             events.on(document, 'mousedown', '.photo-preview img.preview-zoom', function (e) {
 
-                if (e.target.getAttribute('src') === null || useragents.mobile) { return; }
+                if (e.target.src === null || useragents.mobile) { return; }
 
                 e.preventDefault();
                 var msx, msy, matrix;
