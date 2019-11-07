@@ -3,7 +3,10 @@
     $result = [];
 
     if (isset($_POST)) {
-        $result = ['success' => false, 'message' => 'Failed! Files can not saved to storage.']; // You must return success: false; and message: string
+
+        // You must return success: false; and message: string
+        $result = ['success' => false, 'message' => 'Failed! Your files not saved.'];
+        
     }
 
     die(json_encode($result));
