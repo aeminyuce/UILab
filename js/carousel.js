@@ -122,7 +122,7 @@ var carousel = {
                 loadingImgs[i][l] = new Image();
                 loadingImgs[i][l].src = loadedImgs[i][l].getAttribute('data-src');
 
-                loadingImgs[i][l].addEventListener('load', function () {
+                loadingImgs[i][l].onload = function () {
 
                     if (loadingImgs[i][l] === undefined || loadingImgs[i][l].length === 0) { return; }
 
@@ -134,7 +134,7 @@ var carousel = {
                     loadingImgs[i][l] = [];
                     loadedImgs[i][l] = [];
 
-                }, false);
+                }
 
             });
 
@@ -728,12 +728,12 @@ var carousel = {
                 newImg = new Image();
                 newImg.src = this.getAttribute('data-href');
 
-                newImg.addEventListener('load', function () {
+                newImg.onload = function () {
 
                     target.src = newImg.src;
                     events.removeClass(detail, 'detail-loader');
 
-                });
+                }
 
                 events.removeClass(thumbs, 'selected');
                 events.addClass(this, 'selected');

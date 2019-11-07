@@ -51,7 +51,7 @@ var photoGallery = {
 
                     img[imgCounter].src = newImg.src;
 
-                    newImg.addEventListener('load', function () {
+                    newImg.onload = function () {
 
                         if (this.naturalWidth / this.naturalHeight < 1.33) {
                             events.addClass(img[imgCounter], 'cover-h');
@@ -73,7 +73,7 @@ var photoGallery = {
                             }
                         }
 
-                    }, false);
+                    }
 
                 };
 
@@ -213,8 +213,8 @@ var photoGallery = {
 
             }
 
-            newImg.addEventListener('load', showImage, false);
-            newImg.addEventListener('error', notLoadedImage, false);
+            newImg.onload = showImage;
+            newImg.onerror = notLoadedImage;
 
             function toggleGalleryTools() {
 
@@ -338,8 +338,8 @@ var photoGallery = {
                     newImg.src = loadedImages[index];
                     img.src = newImg.src;
 
-                    newImg.addEventListener('load', showImage, false);
-                    newImg.addEventListener('error', notLoadedImage, false);
+                    newImg.onload = showImage;
+                    newImg.onerror = notLoadedImage;
 
                     // reset touch setting
                     imgPosX = '-50';
