@@ -80,10 +80,11 @@
     .steps-bar li.active:before { box-shadow: 0 0 0 6px rgba(255,255,255,.065); }
     .steps-bar:not(.steps-icon) li.active:before { background-color: #15181d !important; }
     .portlet .steps-bar li.active:before { background-color: #2f343e !important; }
+    .steps-bar.steps-icon li:before { border-color: #15181d; }
+    .portlet .steps-bar.steps-icon li:before { border-color: #2f343e; }
     .steps-bar li.active ~ li { color: rgba(255,255,255,.32); }
-    .steps-bar li.active ~ li:before { border-color: rgba(255,255,255,.12); }
-    .steps-bar li.active ~ li:before { background-color: #15181d; }
-    .portlet .steps-bar li.active ~ li:before { background-color: #2f343e; }
+    .steps-bar li.active ~ li:before { background-color: #15181d; border-color: rgba(255,255,255,.12) !important; }
+    .portlet .steps-bar li.active ~ li:before { background-color: #2f343e; border-color: #2f343e; }
     .steps-bar li.active ~ li:after { background-color: rgba(255,255,255,.12); }
     
     .table { background-color: #2f343e; }
@@ -165,8 +166,9 @@
     .text.calendar-picker button:not([class*="ui-"]),.text.calendar-picker button:not([class*="ui-"]) .icon { color: #fff; }
 
     .alerts-dialog { background-color: #2f343e; }
-    button.dialog-custom { color: #fff; }
-
+    button.dialog-custom { color: #fff; background-color: rgba(255,255,255,.08); }
+    button.dialog-custom:focus { box-shadow: 0 0 0 2px rgba(255,255,255,.35); }
+    html:not(.mobile) button.dialog-custom:hover { background-color: rgba(255,255,255,.15); }
     .alerts-msg:not([class*="ui-"]) { background-color: #2f343e; }
 
     .ui-x-light,.ui-x-light .icon:not([class*="ui-"]),.ui-x-light a:not([class*="ui-"]),.ui-x-light button:not([class*="ui-"]) { color: #fff; }
