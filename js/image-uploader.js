@@ -5,12 +5,16 @@
 
 var imageUploader = {
 
-    width: 1024, // default width
-    height: 768, // default height
+    resize: true, // resize images
+    resizeWidth: 1024, // resize width
+    resizeHeight: 768, // resize height
 
-    types: ['jpg', 'jpeg', 'png', 'gif'], // add your allowed file types
+    fill: true, // fill blank areas
+    fillColor: '#fff', // fill color
+    fillRatio: '4:3', // ex: '4:3', '16:9' (using when resize images turned off)
 
     newID: 1000000, // start new ids from
+    types: ['jpg', 'jpeg', 'png', 'gif'], // add your allowed file types
 
     // messages
     msgConfirm: 'Yes',
@@ -34,7 +38,7 @@ var imageUploader = {
 
         function loadFiles(uploader, files) {
 
-            var i, ext, c, ctx, data, img, imgLoaded, w, h, size, allowed, showTimer, readers, listCont, list, tools, loaded, loadImages, loadImagesAfter, html, newItem;
+            var i, ext, c, ctx, data, img, imgLoaded, w, h, r, size, allowed, showTimer, readers, listCont, list, tools, loaded, loadImages, loadImagesAfter, html, newItem;
 
             if (files.length > 0) {
 
@@ -58,7 +62,7 @@ var imageUploader = {
 
                 if (allowed.length === 0) { return; } // stop when all file types not allowed
 
-                // load and resize images
+                // load images
                 readers = [];
 
                 img = [];
@@ -84,31 +88,99 @@ var imageUploader = {
                     w[j] = img[j].width;
                     h[j] = img[j].height;
 
-                    // resize images to default
-                    if (!savedImgs) { // no resizing for images saved before
+                    // resize images to defined
+                    if (imageUploader.resize && !savedImgs) { // check resize images is turned on && images not saved before
 
-                        if (w[j] > h[j]) {
+                        if (w[j] > h[j]) { // horizontal image
 
-                            // horizontal image
-                            if (w[j] > imageUploader.width) {
-                                h[j] = (h[j] * imageUploader.width) / w[j];
+                            if (w[j] > imageUploader.resizeWidth) {
+
+                                h[j] = (h[j] / w[j]) * imageUploader.resizeWidth;
+                                w[j] = imageUploader.resizeWidth;
+
+                                if (h[j] > imageUploader.resizeHeight) {
+
+                                    w[j] = (w[j] / h[j]) * imageUploader.resizeHeight;
+                                    h[j] = imageUploader.resizeHeight;
+    
+                                }
+
                             }
     
-                        } else {
+                        } else { // vertical image
+
+                            if (h[j] > imageUploader.resizeHeight) {
+
+                                w[j] = (w[j] / h[j]) * imageUploader.resizeHeight;
+                                h[j] = imageUploader.resizeHeight;
+
+                                if (w[j] > imageUploader.resizeWidth) {
+
+                                    h[j] = (h[j] / w[j]) * imageUploader.resizeWidth;
+                                    w[j] = imageUploader.resizeWidth;
     
-                            // vertical image
-                            if (h[j] > imageUploader.height) {
-                                w[j] = (w[j] * imageUploader.height) / h[j];
+                                }
+
                             }
     
                         }
 
+                        if (imageUploader.fill && !savedImgs) {
+
+                            c.width = imageUploader.resizeWidth;
+                            c.height = imageUploader.resizeHeight;
+    
+                        } else {
+
+                            c.width = w[j];
+                            c.height = h[j];
+
+                        }
+                        
+
+                    } else {
+
+                        if (imageUploader.fill && !savedImgs) {
+
+                            // get fill ratio
+                            r = imageUploader.fillRatio.split(':');
+                            if (r.length === 2) {
+
+                                if (w[j] > h[j]) { // horizontal image
+
+                                    c.width = w[j];
+                                    c.height = (r[1] / r[0]) * w[j];
+            
+                                } else { // vertical image
+
+                                    c.width = (r[0] / r[1]) * h[j];
+                                    c.height = h[j];
+
+                                }
+
+                            }
+                            
+                        } else {
+
+                            c.width = w[j];
+                            c.height = h[j];
+
+                        }
+
                     }
 
-                    c.width = w[j];
-                    c.height = h[j];
+                    // fill blank areas
+                    if (imageUploader.fill && !savedImgs) {
 
-                    ctx.drawImage(img[j], 0, 0, w[j], h[j]);
+                        ctx.fillStyle = imageUploader.fillColor;
+                        ctx.fillRect(0, 0, c.width, c.height);
+
+                        ctx.drawImage(img[j], (c.width - w[j]) / 2, (c.height - h[j]) / 2, w[j], h[j]);
+
+                    } else {
+                        ctx.drawImage(img[j], 0, 0, w[j], h[j]);
+                    }
+
                     data = c.toDataURL("image/jpeg");
 
                     // calculate new image file size from new base64
