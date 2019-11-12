@@ -3,11 +3,13 @@
 
 .ease-image-uploader { transition-property: background-color; transition-duration: .15s; }
 .ease-image-uploader .uploader-tools,.ease-image-uploader .uploader-list ul > li { transition-property: opacity; transition-duration: .3s; }
+.ease-image-uploader .uploader-list { transition-property: margin; transition-duration: .15s; }
 .ease-image-uploader .uploader-list > .icon { transition-property: opacity; transition-duration: .15s; }
 .ease-image-uploader .uploader-list ul > li img { transition-property: transform, box-shadow; transition-duration: .15s; }
 
-.no-transitions-all .ease-image-uploader,.no-transitions-all .ease-image-uploader .uploader-tools,.no-transitions-all .ease-image-uploader .uploader-list > .icon,
-.no-transitions-all .ease-image-uploader .uploader-list ul > li,.no-transitions-all .ease-image-uploader .uploader-list ul > li img { transition-property: none !important; }
+.no-transitions-all .ease-image-uploader,.no-transitions-all .ease-image-uploader .uploader-tools,.no-transitions-all .ease-image-uploader .uploader-list,
+.no-transitions-all .ease-image-uploader .uploader-list > .icon,.no-transitions-all .ease-image-uploader .uploader-list ul > li,
+.no-transitions-all .ease-image-uploader .uploader-list ul > li img { transition-property: none !important; }
 
 .image-uploader { background-color: #fff; overflow: hidden; position: relative; }
 .image-uploader.drop-highlight { background-color: #f5f5f5; }
@@ -27,7 +29,8 @@
 
 .uploader-tools { min-height: 52px; background-color: rgba(0,0,0,.035); padding: 15px; }
 .uploader-tools:not(.open) { display: none; }
-.uploader-tools:not(.open-ease),.drop-highlight .uploader-tools { opacity: 0; }
+.uploader-tools:not(.open-ease) { opacity: 0; }
+.drop-highlight .uploader-tools { opacity: .15; }
 
 .uploader-list { min-height: 220px; position: relative; }
 .uploader-list:not(.open),.drop-highlight .uploader-list { background-color: rgba(255,255,255,.45); margin: 0 15px 15px 15px; border: dashed 2px rgba(0,0,0,.125); border-radius: 6px; }
@@ -42,6 +45,7 @@
 
 .uploader-list ul > li { padding: 5px; float: left; }
 .uploader-list:not(.open) ul > li { display: none; }
+.drop-highlight .uploader-list ul > li { opacity: .15; }
 .uploader-list ul > li.open-ease { opacity: 0; }
 .uploader-list ul > li .img { display: block; clear: both; position: relative; }
 .uploader-list ul > li .img img { width: auto; max-width: 100%; height: auto; max-height: 100%; position: absolute; top: 50%; left: 50%; box-shadow: 0 1px 6px rgba(0,0,0,.25); transform: translate(-50%,-50%); }

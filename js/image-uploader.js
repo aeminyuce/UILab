@@ -5,13 +5,16 @@
 
 var imageUploader = {
 
+    ratio: '4:3', // activated when "resize images" turned off
+
     resize: true, // resize images
     resizeWidth: 1024, // resize width
     resizeHeight: 768, // resize height
 
-    fill: true, // fill blank areas
+    fill: false, // fill blank areas
     fillColor: '#fff', // fill color
-    fillRatio: '4:3', // ex: '4:3', '16:9' (using when resize images turned off)
+
+    fit: true, // crop to fit images
 
     newID: 1000000, // start new ids from
     types: ['jpg', 'jpeg', 'png', 'gif'], // add your allowed file types
@@ -85,44 +88,40 @@ var imageUploader = {
 
                 loadImages = function (j, tag) {
 
+                    // get width and height
                     w[j] = img[j].width;
                     h[j] = img[j].height;
 
-                    // resize images to defined
-                    if (imageUploader.resize && !savedImgs) { // check resize images is turned on && images not saved before
+                    // get ratio
+                    r = imageUploader.ratio.split(':');
+                    if (r.length !== 2) { r = ''; }
+
+                    if (imageUploader.resize && !savedImgs) { // resize images
 
                         if (w[j] > h[j]) { // horizontal image
 
-                            if (w[j] > imageUploader.resizeWidth) {
-
-                                h[j] = (h[j] / w[j]) * imageUploader.resizeWidth;
-                                w[j] = imageUploader.resizeWidth;
-
-                                if (h[j] > imageUploader.resizeHeight) {
-
-                                    w[j] = (w[j] / h[j]) * imageUploader.resizeHeight;
-                                    h[j] = imageUploader.resizeHeight;
-    
-                                }
-
-                            }
-    
-                        } else { // vertical image
+                            h[j] = (h[j] / w[j]) * imageUploader.resizeWidth;
+                            w[j] = imageUploader.resizeWidth;
 
                             if (h[j] > imageUploader.resizeHeight) {
 
                                 w[j] = (w[j] / h[j]) * imageUploader.resizeHeight;
                                 h[j] = imageUploader.resizeHeight;
 
-                                if (w[j] > imageUploader.resizeWidth) {
+                            }
 
-                                    h[j] = (h[j] / w[j]) * imageUploader.resizeWidth;
-                                    w[j] = imageUploader.resizeWidth;
-    
-                                }
+                        } else { // vertical image
+
+                            w[j] = (w[j] / h[j]) * imageUploader.resizeHeight;
+                            h[j] = imageUploader.resizeHeight;
+
+                            if (w[j] > imageUploader.resizeWidth) {
+
+                                h[j] = (h[j] / w[j]) * imageUploader.resizeWidth;
+                                w[j] = imageUploader.resizeWidth;
 
                             }
-    
+
                         }
 
                         if (imageUploader.fill && !savedImgs) {
@@ -140,11 +139,9 @@ var imageUploader = {
 
                     } else {
 
-                        if (imageUploader.fill && !savedImgs) {
+                        if (!imageUploader.fit && imageUploader.fill && !savedImgs) {
 
-                            // get fill ratio
-                            r = imageUploader.fillRatio.split(':');
-                            if (r.length === 2) {
+                            if (r !== '') {
 
                                 if (w[j] > h[j]) { // horizontal image
 
@@ -169,16 +166,44 @@ var imageUploader = {
 
                     }
 
-                    // fill blank areas
-                    if (imageUploader.fill && !savedImgs) {
+                    if (imageUploader.fit && !savedImgs) { // crop to fit images
 
-                        ctx.fillStyle = imageUploader.fillColor;
-                        ctx.fillRect(0, 0, c.width, c.height);
+                        if (imageUploader.resize) {
 
-                        ctx.drawImage(img[j], (c.width - w[j]) / 2, (c.height - h[j]) / 2, w[j], h[j]);
+                            c.width = imageUploader.resizeWidth;
+                            c.height = imageUploader.resizeHeight;
+
+                        } else {
+
+                            if (w[j] > h[j]) { // horizontal image
+
+                                c.width = (r[0] / r[1]) * h[j];
+                                c.height = h[j];
+    
+                            } else { // vertical image
+    
+                                c.width = w[j];
+                                c.height = (r[1] / r[0]) * w[j];
+    
+                            }
+                            
+                        }
+
+                        ctx.drawImage(img[j], 0, 0, c.width, c.height);
 
                     } else {
-                        ctx.drawImage(img[j], 0, 0, w[j], h[j]);
+
+                        if (imageUploader.fill && !savedImgs) { // fill blank areas
+
+                            ctx.fillStyle = imageUploader.fillColor;
+                            ctx.fillRect(0, 0, c.width, c.height);
+    
+                            ctx.drawImage(img[j], (c.width - w[j]) / 2, (c.height - h[j]) / 2, w[j], h[j]);
+    
+                        } else {
+                            ctx.drawImage(img[j], 0, 0, w[j], h[j]);
+                        }
+
                     }
 
                     data = c.toDataURL("image/jpeg");
@@ -376,24 +401,53 @@ var imageUploader = {
         });
 
         // Events
-        events.on(document, 'dragenter dragover dragleave drop', '.image-uploader', function (e) {
+        events.on(document, 'dragenter', '.image-uploader', function (e) {
 
             e.preventDefault();
             e.stopPropagation();
 
-            if (e.type === 'dragenter' || e.type === 'dragover') {
-                events.addClass(this, 'drop-highlight');
+            var that, uploader;
+
+            events.addClass(this, 'drop-highlight');
+            that = this;
+            
+            events.on(document, 'dragover.uploader', function (ev) {
+
+                ev.preventDefault();
+                ev.stopPropagation();
+
+                uploader = events.closest(ev.target, '.image-uploader')[0];
+
+                if (uploader === undefined) {
+                    events.removeClass(that, 'drop-highlight');
+
+                } else {
+                    events.addClass(that, 'drop-highlight');
+                }
+
+            });
+
+        });
+        
+        events.on(document, 'drop', function (e) {
+
+            e.preventDefault();
+            e.stopPropagation();
+
+            var uploader = events.closest(e.target, '.image-uploader')[0];
+
+            if (uploader === undefined) {
+                events.removeClass(uploader, 'drop-highlight');
 
             } else {
 
-                events.removeClass(this, 'drop-highlight');
+                events.addClass(uploader, 'drop-highlight');
 
-                if (e.type === 'drop') {
+                savedImgs = false;
+                loadFiles(uploader, e.dataTransfer.files);
 
-                    savedImgs = false;
-                    loadFiles(this, e.dataTransfer.files);
-
-                }
+                events.removeClass(uploader, 'drop-highlight');
+                events.off(document, 'dragover.uploader');
 
             }
 
