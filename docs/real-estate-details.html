@@ -70,7 +70,6 @@
     <script>
 
         lineCharts.top = 18; // set top space (px)
-        lineCharts.bottom = 0; // set bottom space (px)
         lineCharts.left = 6; // set left space (px)
 
         lineCharts.showBgGrid = false; // set showing bg grid
@@ -95,12 +94,12 @@
                     <div class="col-12">
 
                         <div class="carousel-gallery">
-                            <div class="detail">
+                            <div class="detail shadow-lg">
                                 <img src="img/house_01.jpg" class="rounded photo-gallery-call cursor-pointer img-responsive ease-layout" data-target="#detail-carousel" data-count="0" alt="">
                                 <i class="icon-zoom icon icon-xxl icon-search-plus"></i>
                                 <i class="icon-loader icon icon-xxl icon-loader"></i>
                             </div>
-                            <div id="detail-carousel" class="thumbs carousel" data-col="6" data-col-md="5" data-col-sm="4" data-col-xs="3">
+                            <div id="detail-carousel" class="thumbs carousel half-sized" data-col="6" data-col-md="5" data-col-sm="4" data-col-xs="3">
                                 <div class="carousel-slider ease-2nd-layout ease-layout ease-slow photo-gallery-passive">
                                     <div class="content">
                                         <img class="img rounded selected" src="img/blank.gif" data-src="img/house_01.jpg" data-href="img/house_01.jpg" alt="">
@@ -141,8 +140,8 @@
                             </div>
                         </div>
 
-                        <div class="bordered rounded">
-                            <div class="padding-30 theme-gray ui-x-light">
+                        <div class="portlet rounded shadow-lg">
+                            <div class="padding-30">
                                 <h3 class="margin-10-b">
                                     <i class="icon icon-xl icon-flash-on margin-5-r"></i>
                                     Power Saving Statistics
@@ -152,7 +151,7 @@
                                     <li><b>Yearly Output:</b> 4900 kWp</li>
                                 </ul>
                             </div>
-                            <div class="padding-15-v padding-30-h bottom-bordered">
+                            <div class="padding-15-v padding-30-h ver-bordered">
                                 <div class="row row-lg-padding">
                                     <div class="col-5x col-sm-4 col-xs-6 no-responsive">
                                         <div class="pie-chart ease-pie-chart" data-text="Total">
@@ -163,7 +162,10 @@
                                     </div>
                                     <div class="col-5x col-sm-4 col-xs-6 no-responsive">
                                         <div class="donut-chart ease-donut-chart">
-                                            <strong class="dark"><span class="large xx-dark">Interior</span><br>4,9/5</strong>
+                                            <strong>
+                                                <span class="large thin">Interior</span>
+                                                <span class="sp2"></span>4,9/5
+                                            </strong>
                                             <svg viewBox="0 0 160 160">
                                                 <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
                                                 <circle r="69.85699" cy="80" cx="80" stroke="#75dbe7" data-percent="96" />
@@ -172,7 +174,10 @@
                                     </div>
                                     <div class="col-5x col-sm-4 col-xs-6 no-responsive">
                                         <div class="donut-chart ease-donut-chart">
-                                            <strong class="dark"><span class="large xx-dark">Exterior</span><br>4/5</strong>
+                                            <strong>
+                                                <span class="large thin">Exterior</span>
+                                                <span class="sp2"></span>4/5
+                                            </strong>
                                             <svg viewBox="0 0 160 160">
                                                 <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
                                                 <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="88" />
@@ -181,7 +186,10 @@
                                     </div>
                                     <div class="col-5x col-sm-4 col-xs-6 no-responsive">
                                         <div class="donut-chart ease-donut-chart">
-                                            <strong class="dark"><span class="large xx-dark">Quality</span><br>4/5</strong>
+                                            <strong>
+                                                <span class="large thin">Quality</span>
+                                                <span class="sp2"></span>4/5
+                                            </strong>
                                             <svg viewBox="0 0 160 160">
                                                 <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
                                                 <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="86" />
@@ -190,7 +198,10 @@
                                     </div>
                                     <div class="col-5x col-sm-4 col-xs-6 no-responsive">
                                         <div class="donut-chart ease-donut-chart">
-                                            <strong class="dark"><span class="large xx-dark">Savings</span><br>3.9/5</strong>
+                                            <strong>
+                                                <span class="large thin">Savings</span>
+                                                <span class="sp2"></span>3.9/5
+                                            </strong>
                                             <svg viewBox="0 0 160 160">
                                                 <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
                                                 <circle r="69.85699" cy="80" cx="80" stroke="#cd7be8" data-percent="80" />
@@ -202,13 +213,14 @@
                                     <b>Yearly Savings Costs: $18.970</b>
                                 </div>
                             </div>
-                            <div class="padding-30">
+                            <div class="padding-30 large align-justify">
                                 Each villa has been meticulously designed to meet all the demands that a luxury villa has to provide as well as offer a contemporary image of great beauty.
-                                <span class="sp20"></span>
+                                <span class="sp25"></span>
+                                <span class="sp3"></span>
                                 A large basement will locate another bedroom service, bathroom and common areas that can be allocated to gym, cinema, game room…
-                                <span class="sp20"></span>
+                                <span class="sp15"></span>
                                 A unique opportunity in a highly sought after location that begins to be considered as the New Golden Mile.
-                                <span class="sp20"></span>
+                                <span class="sp15"></span>
                                 The development of 3 luxury villas is planned in the residential neighborhood of Bel Air.
                             </div>
                         </div>
@@ -218,7 +230,7 @@
 
                 <div class="static-400 order-md-first padding-10">
 
-                    <div class="align-center margin-1-b theme-default2">
+                    <div class="portlet align-center rounded shadow-lg theme-default2">
                         <div class="padding-10-v ui-x-dark rounded-top">
                             <ul class="list-inline countdown no-user-select">
                                 <li class="padding-10"><i class="icon icon-xl icon-clock" data-tooltip="b" title="Countdown to bid closing!"></i></li>
@@ -228,30 +240,29 @@
                                 <li class="padding-5"><b class="s xx-large block">17</b>Seconds</li>
                             </ul>
                         </div>
-                        <div class="padding-5 ui-dark stripe-dark animate-progress">
+                        <div class="padding-5 ui-x-dark stripe-light animate-progress">
                             <b class="small xx-light">Closing Date: 10 August, 2018, Friday</b>
                         </div>
+                        <div class="margin-20-b">
+                            <div class="padding-20 theme-gray">
+                                <i class="icon icon-lg icon-floor-plan"></i>
+                                <span class="large inline-block margin-10-r">7+1</span>
+                                <i class="icon icon-lg icon-home-width"></i>
+                                <span class="large inline-block margin-10-r">628m<sup>2</sup></span>
+                                <i class="icon icon-lg icon-floor-number"></i> Ground Floor
+                                <span class="sp10"></span>
+                                <i class="icon icon-md icon-marker"></i> New York
+                            </div>
+                            <div class="dark padding-10 top-bordered">
+                                Real Estate ID: <b>RE-616</b>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="align-center margin-20-b theme-default rounded-bottom bordered">
-                        <div class="padding-20 theme-gray">
-                            <i class="icon ui-text icon-lg icon-floor-plan"></i>
-                            <span class="large inline-block margin-10-r">7+1</span>
-                            <i class="icon ui-text icon-lg icon-home-width"></i>
-                            <span class="large inline-block margin-10-r">628m<sup>2</sup></span>
-                            <i class="icon ui-text icon-lg icon-floor-number"></i> Ground Floor
-                            <span class="sp10"></span>
-                            <i class="icon dark icon-md icon-marker"></i> New York
-                        </div>
-                        <div class="padding-10 theme-gray ui-x-light">
-                            Real Estate ID: <b>RE-616</b>
-                        </div>
-                    </div>
-
-                    <div class="margin-20-b rounded theme-gray bordered">
+                    <div class="portlet margin-20-b rounded shadow-lg">
                         <div class="padding-15-t padding-30-h no-padding-b">
                             <b>Previous Offers / <span style="color: #ff9f40;">Averages</span></b>
-                            <div class="line-charts ease-line-charts" data-size="5,15" data-x="1,2,3,4,5">
+                            <div class="line-charts ease-line-charts" data-size="5,20" data-x="1,2,3,4,5">
                                 <ul class="line" data-type="curved filled">
                                     <li data-y="820000"></li>
                                     <li data-y="380000"></li>
@@ -268,7 +279,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="padding-15-v padding-30-h theme-gray ui-x-light">
+                        <div class="padding-20-t padding-30-h top-bordered">
                             <div class="largest bold">$640.000</div>
                             <span class="dark">LATEST OFFER</span>
                         </div>
@@ -291,43 +302,47 @@
                                         </div>
                                     </div>
                                     <div class="static-50">
-                                        <button class="currency-up btn no-padding-h btn-lg block rounded-right theme-green ui-dark ease-btn" type="button">
+                                        <button class="currency-up btn no-padding-h btn-lg block rounded-right ease-btn" type="button">
                                             <i class="icon icon-md icon-plus"></i>
                                         </button>
                                     </div>
                                 </div>
                                 <span class="sp15"></span>
-                                <button class="btn btn-lg block rounded theme-green ui-x-dark ease-btn" type="submit">MAKE OFFER</button>
+                                <button class="btn btn-lg block rounded theme-green ui-dark ease-btn" type="submit">MAKE OFFER</button>
+                                <span class="sp5"></span>
                             </form>
                         </div>
                     </div>
 
-                    <div class="padding-20-v padding-30 rounded bordered">
-                        <a class="btn btn-lg block btn-multi rounded-top ease-btn" href="#">
-                            <i class="icon icon-lg icon-picture no-opacity margin-5-r"></i>
-                            All The HD Images
-                        </a>
-                        <span class="sp1"></span>
-                        <a class="btn btn-lg block btn-multi rounded-bottom theme-default2 ui-dark ease-btn" href="#">
-                            <i class="icon icon-lg icon-file-pdf no-opacity margin-5-r"></i>
-                            Property Brochure
-                        </a>
-                        <span class="sp2"></span>
-                        <span class="sp25"></span>
+                    <span class="sp30"></span>
+                    <span class="sp5"></span>
+
+                    <div class="portlet padding-30 rounded shadow-lg">
                         <h4>Other Details</h4>
                         <ul class="list-unstyled list-spacer-15">
                             <li>
                                 <b class="large block margin-5-b">Build Surface</b>
-                                <i class="icon ui-text icon-lg icon-home-width margin-5-r x-dark"></i>
-                                <span class="x-dark">628m<sup>2</sup></span>
+                                <i class="icon ui-text icon-lg icon-home-width margin-5-r dark"></i>
+                                <span class="dark">628m<sup>2</sup></span>
                             </li>
-                            <li><b class="large block margin-5-b">Heating/Cooling System</b><span class="x-dark">Air Cooling</span></li>
-                            <li><b class="large block margin-5-b">Bedrooms</b><span class="x-dark">4</span></li>
-                            <li><b class="large block margin-5-b">Bathrooms/Guest toilets</b><span class="x-dark">3</span></li>
-                            <li><b class="large block margin-5-b">Year of Build</b><span class="x-dark">2019</span></li>
-                            <li><b class="large block margin-5-b">House Type</b><span class="x-dark">Single Family</span></li>
-                            <li><b class="large block margin-5-b">Parking</b><span class="x-dark">2 Spaces</span></li>
+                            <li><b class="large block margin-5-b">Heating/Cooling System</b><span class="dark">Air Cooling</span></li>
+                            <li><b class="large block margin-5-b">Bedrooms</b><span class="dark">4</span></li>
+                            <li><b class="large block margin-5-b">Bathrooms/Guest toilets</b><span class="dark">3</span></li>
+                            <li><b class="large block margin-5-b">Year of Build</b><span class="dark">2019</span></li>
+                            <li><b class="large block margin-5-b">House Type</b><span class="dark">Single Family</span></li>
+                            <li><b class="large block margin-5-b">Parking</b><span class="dark">2 Spaces</span></li>
                         </ul>
+                        <div class="align-left ease-1st-btn">
+                            <a class="btn btn-lg block btn-multi rounded-top" href="#">
+                                <i class="icon icon-md icon-picture no-opacity margin-3-t right"></i>
+                                All The HD Images
+                            </a>
+                            <span class="sp1"></span>
+                            <a class="btn btn-lg block btn-multi rounded-bottom" href="#">
+                                <i class="icon icon-md icon-file-pdf no-opacity margin-3-t right"></i>
+                                Property Brochure
+                            </a>
+                        </div>
                     </div>
 
                 </div>
