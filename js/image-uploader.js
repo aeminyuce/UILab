@@ -411,7 +411,7 @@ var imageUploader = {
             events.addClass(this, 'drop-highlight');
             that = this;
             
-            events.on(document, 'dragover.uploader', function (ev) {
+            events.on('body', 'dragover.uploader', function (ev) {
 
                 ev.preventDefault();
                 ev.stopPropagation();
@@ -429,7 +429,7 @@ var imageUploader = {
 
         });
         
-        events.on(document, 'drop', function (e) {
+        events.on('body', 'drop', function (e) {
 
             e.preventDefault();
             e.stopPropagation();
