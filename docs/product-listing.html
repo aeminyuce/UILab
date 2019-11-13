@@ -17,6 +17,7 @@
     <!-- CSS Tools -->
     <link rel="stylesheet" href="../css/reset.css"/>
 
+    <link rel="stylesheet" href="../css/alerts.css"/>
     <link rel="stylesheet" href="../css/autocomplete.css"/>
     <link rel="stylesheet" href="../css/alignments.css"/>
     <link rel="stylesheet" href="../css/buttons.css"/>
@@ -32,7 +33,6 @@
     <link rel="stylesheet" href="../css/margins.css"/>
     <link rel="stylesheet" href="../css/mobile-menu.css"/>
     <link rel="stylesheet" href="../css/paddings.css"/>
-    <link rel="stylesheet" href="../css/pagination.css"/>
     <link rel="stylesheet" href="../css/portlets.css"/>
     <link rel="stylesheet" href="../css/scrollbar.css"/>
     <link rel="stylesheet" href="../css/static-grid.css"/>
@@ -52,9 +52,11 @@
     <script src="../js/user-agents.js"></script>
 
     <script src="../js/ajax.js"></script>
+    <script src="../js/alerts.js"></script>
     <script src="../js/autocomplete.js"></script>
     <script src="../js/forms.js"></script>
     <script src="../js/line-charts.js"></script>
+    <script src="../js/loading-button.js"></script>
     <script src="../js/mobile-menu.js"></script>
     <script src="../js/static-grid.js"></script>
     <script src="../js/swatches.js"></script>
@@ -85,6 +87,50 @@
 
         lineCharts.showBgGrid = false; // set showing bg grid
         lineCharts.showInfo = false; // set showing info
+
+        events.onload(function () {
+            events.on('.load-more', 'click', function () {
+
+                var that = this;
+                loadingButton.toggle(this);
+
+                ajax({
+                    url : 'php/ajax-products.php',
+                    callback: function (status, response) {
+
+                        var target = selector('.products-list');
+                        if (target.length > 0) {
+
+                            if (status === 'success') {
+
+                                target[0].insertAdjacentHTML('beforeend', response);
+
+                                alerts.message({
+                                    msg: 'Products loaded!',
+                                    theme: 'success'
+                                });
+
+                                loadingButton.toggle(that);
+
+                            } else {
+
+                                alerts.message({
+                                    msg: 'Products not loaded!',
+                                    theme: 'danger'
+                                });
+
+                                loadingButton.toggle(that);
+
+                            }
+
+                        }
+
+                    }
+                });
+
+            });
+
+        });
 
     </script>
 
@@ -231,7 +277,7 @@
                                 </label>
 
                                 <span class="sp10"></span>
-                                <button class="btn xx-dark btn-sm circle ease-btn">See All <i class="icon icon-xs icon-angle-down margin-3-l"></i></button>
+                                <button class="btn btn-sm circle ease-btn">See All <i class="icon icon-xs icon-angle-down margin-3-l"></i></button>
 
                             </div>
 
@@ -246,7 +292,7 @@
                 <div class="row">
                     <div class="col-12 sm-no-padding-t">
 
-                        <div class="portlet rounded shadow-lg">
+                        <div class="portlet margin-10-b rounded shadow-lg">
                             <div class="row row-lg-padding">
                                 <div class="col-12 bottom-bordered">
                                     <h4>
@@ -288,10 +334,16 @@
                                     </div>
                                     <i class="icon icon-sm icon-target margin-3-r margin-2-b"></i>
                                     <span class="large">Current prices <b>12% lower</b> than, average prices!</span>
-                                    <div class="dark margin-15-t">
-                                        <b class="circle padding-5 margin-5-r inline-block" style="background: #36a2eb;"></b> Over-Ear Headphones Averages<br>
-                                        <b class="circle padding-5 margin-5-r inline-block" style="background: #ff9f40;"></b> Headphones Averages
-                                    </div>
+                                    <ul class="list-unstyled dark margin-15-t">
+                                        <li>
+                                            <b class="circle padding-5 margin-4-l margin-5-r inline-block" style="background: #36a2eb;"></b>
+                                            <span class="inline-block">Over-Ear Headphones Averages</span>
+                                        </li>
+                                        <li>
+                                            <b class="circle padding-5 margin-4-l margin-5-r inline-block" style="background: #ff9f40;"></b>
+                                            <span class="inline-block">Headphones Averages</span>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -329,12 +381,15 @@
                             </div>
                         </div>
 
-                        <div class="row ease-2nd-layout">
+                        <div class="products-list row ease-2nd-layout">
                             <div class="col-4 col-sm-6 xs-responsive">
                                 <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
                                     <span class="photo-slider margin-20-b">
                                         <i class="slider-loader icon icon-xl icon-loader"></i>
-                                        <img src="img/product_blank.gif" data-src="img/product_01.png,img/product_02.png,img/product_03.png" alt="">
+                                        <img src="img/product_blank.gif"
+                                             data-src="img/product_01.png,img/product_02.png,img/product_03.png"
+                                             data-srcset="img/product_01@2x.png,img/product_02@2x.png,img/product_03@2x.png"
+                                            alt="">
                                         <button title="Prev" class="slide-left rounded ease-layout">
                                             <i class="icon icon-md icon-angle-left"></i>
                                         </button>
@@ -367,7 +422,10 @@
                                 <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
                                     <span class="photo-slider margin-20-b">
                                         <i class="slider-loader icon icon-xl icon-loader"></i>
-                                        <img src="img/product_blank.gif" data-src="img/product_02.png,img/product_04.png" alt="">
+                                        <img src="img/product_blank.gif"
+                                             data-src="img/product_02.png,img/product_04.png"
+                                             data-srcset="img/product_02@2x.png,img/product_04@2x.png"
+                                            alt="">
                                         <button title="Prev" class="slide-left rounded ease-layout">
                                             <i class="icon icon-md icon-angle-left"></i>
                                         </button>
@@ -399,7 +457,10 @@
                                 <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
                                     <span class="photo-slider margin-20-b">
                                         <i class="slider-loader icon icon-xl icon-loader"></i>
-                                        <img src="img/product_blank.gif" data-src="img/product_03.png,img/product_05.png" alt="">
+                                        <img src="img/product_blank.gif"
+                                             data-src="img/product_03.png,img/product_05.png"
+                                             data-srcset="img/product_03@2x.png,img/product_05@2x.png"
+                                            alt="">
                                         <button title="Prev" class="slide-left rounded ease-layout">
                                             <i class="icon icon-md icon-angle-left"></i>
                                         </button>
@@ -431,7 +492,10 @@
                                 <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
                                     <span class="photo-slider margin-20-b">
                                         <i class="slider-loader icon icon-xl icon-loader"></i>
-                                        <img src="img/product_blank.gif" data-src="img/product_04.png" alt="">
+                                        <img src="img/product_blank.gif"
+                                             data-src="img/product_04.png"
+                                             data-srcset="img/product_04@2x.png"
+                                            alt="">
                                         <button title="Prev" class="slide-left rounded ease-layout">
                                             <i class="icon icon-md icon-angle-left"></i>
                                         </button>
@@ -462,7 +526,10 @@
                                 <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
                                     <span class="photo-slider margin-20-b">
                                         <i class="slider-loader icon icon-xl icon-loader"></i>
-                                        <img src="img/product_blank.gif" data-src="img/product_05.png" alt="">
+                                        <img src="img/product_blank.gif"
+                                             data-src="img/product_05.png"
+                                             data-srcset="img/product_05@2x.png"
+                                            alt="">
                                         <button title="Prev" class="slide-left rounded ease-layout">
                                             <i class="icon icon-md icon-angle-left"></i>
                                         </button>
@@ -493,7 +560,10 @@
                                 <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
                                     <span class="photo-slider margin-20-b">
                                         <i class="slider-loader icon icon-xl icon-loader"></i>
-                                        <img src="img/product_blank.gif" data-src="img/product_02.png,img/product_04.png" alt="">
+                                        <img src="img/product_blank.gif"
+                                             data-src="img/product_02.png,img/product_04.png"
+                                             data-srcset="img/product_02@2x.png,img/product_04@2x.png"
+                                            alt="">
                                         <button title="Prev" class="slide-left rounded ease-layout">
                                             <i class="icon icon-md icon-angle-left"></i>
                                         </button>
@@ -521,116 +591,13 @@
                                     </span>
                                 </a>
                             </div>
-                            <div class="col-4 col-sm-6 xs-responsive">
-                                <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
-                                    <span class="photo-slider margin-20-b">
-                                        <i class="slider-loader icon icon-xl icon-loader"></i>
-                                        <img src="img/product_blank.gif" data-src="img/product_01.png,img/product_02.png,img/product_03.png" alt="">
-                                        <button title="Prev" class="slide-left rounded ease-layout">
-                                            <i class="icon icon-md icon-angle-left"></i>
-                                        </button>
-                                        <button title="Next" class="slide-right rounded ease-layout">
-                                            <i class="icon icon-md icon-angle-right"></i>
-                                        </button>
-                                        <span class="slider-nav"></span>
-                                    </span>
-                                    <span class="x-large">Red</span>
-                                    <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
-                                    <b class="xx-large">$164.98</b>
-                                    <span class="block">
-                                        <i class="icon icon-sm icon-finish margin-2-r"></i> Fast Delivery
-                                    </span>
-                                    <ul class="list-inline margin-15-v right">
-                                        <li class="circle padding-5 dual-bordered" style="border-color: #ee2329;"></li>
-                                        <li class="circle padding-5 dual-bordered" style="border-color: #d22fdf;"></li>
-                                        <li class="circle padding-5 dual-bordered" style="border-color: #248ddd;"></li>
-                                    </ul>
-                                    <span class="left padding-15-v margin-2-t">
-                                        <i class="icon icon-sm icon-favorite-fill font-yellow margin-4-b"></i>
-                                        <b class="x-dark">4.8</b>
-                                        <span class="dark">
-                                            <i class="icon icon-sm icon-message margin-3-b margin-5-l"></i> 24
-                                        </span>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="col-4 col-sm-6 xs-responsive">
-                                <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
-                                    <span class="photo-slider margin-20-b">
-                                        <i class="slider-loader icon icon-xl icon-loader"></i>
-                                        <img src="img/product_blank.gif" data-src="img/product_03.png,img/product_05.png" alt="">
-                                        <button title="Prev" class="slide-left rounded ease-layout">
-                                            <i class="icon icon-md icon-angle-left"></i>
-                                        </button>
-                                        <button title="Next" class="slide-right rounded ease-layout">
-                                            <i class="icon icon-md icon-angle-right"></i>
-                                        </button>
-                                        <span class="slider-nav"></span>
-                                    </span>
-                                    <span class="x-large">Blue</span>
-                                    <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
-                                    <b class="xx-large">$149.99</b>
-                                    <span class="block">
-                                        <i class="icon icon-sm icon-finish margin-2-r"></i> Fast Delivery
-                                    </span>
-                                    <ul class="list-inline margin-15-v right">
-                                        <li class="circle padding-5 dual-bordered" style="border-color: #248ddd;"></li>
-                                        <li class="circle padding-5 dual-bordered" style="border-color: #3b3b3b;"></li>
-                                    </ul>
-                                    <span class="left padding-15-v margin-2-t">
-                                        <i class="icon icon-sm icon-favorite-fill font-yellow margin-4-b"></i>
-                                        <b class="x-dark">4.3</b>
-                                        <span class="dark">
-                                            <i class="icon icon-sm icon-message margin-3-b margin-5-l"></i> 11
-                                        </span>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="col-4 col-sm-6 xs-responsive">
-                                <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
-                                    <span class="photo-slider margin-20-b">
-                                        <i class="slider-loader icon icon-xl icon-loader"></i>
-                                        <img src="img/product_blank.gif" data-src="img/product_01.png,img/product_02.png,img/product_03.png" alt="">
-                                        <button title="Prev" class="slide-left rounded ease-layout">
-                                            <i class="icon icon-md icon-angle-left"></i>
-                                        </button>
-                                        <button title="Next" class="slide-right rounded ease-layout">
-                                            <i class="icon icon-md icon-angle-right"></i>
-                                        </button>
-                                        <span class="slider-nav"></span>
-                                    </span>
-                                    <span class="x-large">Red</span>
-                                    <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
-                                    <b class="xx-large">$164.98</b>
-                                    <span class="block">
-                                        <i class="icon icon-sm icon-finish margin-2-r"></i> Fast Delivery
-                                    </span>
-                                    <ul class="list-inline margin-15-v right">
-                                        <li class="circle padding-5 dual-bordered" style="border-color: #ee2329;"></li>
-                                        <li class="circle padding-5 dual-bordered" style="border-color: #d22fdf;"></li>
-                                        <li class="circle padding-5 dual-bordered" style="border-color: #248ddd;"></li>
-                                    </ul>
-                                    <span class="left padding-15-v margin-2-t">
-                                        <i class="icon icon-sm icon-favorite-fill font-yellow margin-4-b"></i>
-                                        <b class="x-dark">4.8</b>
-                                        <span class="dark">
-                                            <i class="icon icon-sm icon-message margin-3-b margin-5-l"></i> 24
-                                        </span>
-                                    </span>
-                                </a>
-                            </div>
                         </div>
 
                         <div class="row margin-20-t">
-                            <div class="col-12">
-                                <div class="pagination align-center ease-1st-bg">
-                                    <a class="btn prev circle" href="#"><i class="icon icon-xs icon-angle-left no-opacity"></i></a>
-                                    <a class="btn circle" href="#">1</a>
-                                    <a class="btn btn-active circle theme-default2 ui-dark" href="#">2</a>
-                                    <a class="btn circle" href="#">3</a>
-                                    <a class="btn btn-passive circle" href="#">...</a>
-                                    <a class="btn next circle" href="#"><i class="icon icon-xs icon-angle-right no-opacity"></i></a>
-                                </div>
+                            <div class="col-12 align-center">
+                                <button class="load-more btn btn-lg btn-responsive padding-30-h rounded ease-btn">
+                                    Load More <i class="icon icon-sm icon-angle-down margin-5-l"></i>
+                                </button>
                             </div>
                         </div>
 
