@@ -34,6 +34,8 @@
 
     .form-holder-focus .text,.form-holder-focus .select,.form-holder-focus .btn[class*="bordered"],.form-holder-focus img[class*="bordered"] { border-color: rgba(255,255,255,.5); }
 
+    .form-disabled { background-color: rgba(255,255,255,.075); }
+
     /* do not group */
     ::-webkit-input-placeholder { color: rgba(255,255,255,.4); }
     ::-moz-placeholder { color: rgba(255,255,255,.4); opacity: 1; }
