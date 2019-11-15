@@ -43,4 +43,5 @@ html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover { background-c
     .mobile .table-responsive { -webkit-overflow-scrolling: touch; }
     .table-responsive .table { margin-bottom: 0 !important; }
     .table-responsive > .table tr > * { white-space: nowrap; }
+    .table-responsive > .data-list { min-width: 858px; }
 }
