@@ -50,7 +50,7 @@ html:not(.mobile) .preview-prev:hover,html:not(.mobile) .preview-next:hover { ba
 .photo-preview > img:not(.open) { display: none; }
 .photo-preview > img:not(.open-ease) { opacity: 0; }
 
-.close-photo-preview { position: fixed; top: 10px; z-index: 10; }
+.close-photo-preview { border-radius: 6px; position: fixed; top: 10px; z-index: 10; }
 .close-photo-preview .icon { color: #fff; }
 
 @media (min-width: 960px) {
