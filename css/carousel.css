@@ -1,5 +1,4 @@
 /* carousel */
-@keyframes carousel-img-loader { 0% { opacity: .3; } 50% { opacity: 1; } 100% { opacity: .3; } }
 @keyframes carousel-gallery-loader { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
 .carousel-touchmove body { height: 100%; overflow: hidden; }
@@ -11,14 +10,13 @@
 .carousel-slider > .content { float: left; }
 .carousel:not(.active) .carousel-slider > .content { width: 1px; }
 .carousel-slider > .content img.img { width: 100%; height: auto; }
-.carousel-slider > .content img.img:not(.loaded) { background-color: #ddd; animation: carousel-img-loader 3s linear infinite; }
 
 .carousel-slider { display: -webkit-box !important; display: -ms-flexbox !important; display: -webkit-flex !important; display: flex !important; flex-wrap: wrap; }
 .carousel-slider > .content { flex-direction: column; }
 
 .carousel .scroll > *,.carousel .v-scroll > *,.carousel .h-scroll > * { -webkit-transform: translateZ(0); } /* ios: disappearing elements fix */
 
-.carousel .carousel-nav { white-space: nowrap; margin-top: 5px; overflow: hidden; display: block; cursor: default; }
+.carousel .carousel-nav { white-space: nowrap; text-align: center; margin-top: 5px; overflow: hidden; display: block; cursor: default; }
 .carousel .carousel-nav .dots i { width: 7px; height: 7px; background-color: currentColor; margin: 0 3px; display: inline-block; border-radius: 50%; opacity: .45; }
 .carousel .carousel-nav .dots i.selected { background-color: currentColor; opacity: 1; transform: scale(1.5); }
 
@@ -56,11 +54,8 @@ html:not(.mobile) .carousel-gallery .detail:not(.detail-loader) img:hover { opac
 .carousel-gallery .detail.detail-loader .icon-loader { opacity: .45; animation: carousel-gallery-loader 3s linear infinite; }
 .carousel-gallery .detail:not(.detail-loader) .icon-loader { display: none; }
 
-.carousel-gallery .thumbs { margin: 15px -2px; }
-.carousel-gallery .thumbs:before,.carousel-gallery .thumbs:after { content: ""; display: table; }
-.carousel-gallery .thumbs:after { clear: both; }
-.carousel-gallery .thumbs .img-holder { width: 20%; padding: 2px; float: left; }
-.carousel-gallery .thumbs .img-holder img { width: 100%; height: auto; }
+.carousel-gallery .thumbs { text-align: center; margin: 15px 0; }
+.carousel-gallery .thumbs .img { width: 100%; height: auto; }
 .carousel-gallery .thumbs .img { border: solid 2px transparent; cursor: pointer; }
 .carousel-gallery .thumbs .img.selected { border-color: #ffa600; }
 html:not(.mobile) .carousel-gallery .thumbs .img:not(.selected):not(:hover) { opacity: .65; }

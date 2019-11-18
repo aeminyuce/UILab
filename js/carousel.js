@@ -31,10 +31,6 @@ var carousel = {
         colsXS = [],
 
         counts = [],
-
-        loadingImgs = [],
-        loadedImgs = [],
-
         contentsEase = [],
 
         autoSlider = [],
@@ -101,44 +97,6 @@ var carousel = {
             show();
 
         }, wait);
-
-    }
-
-    function carouselLazyImages(that, col, i, ev) {
-
-        var images = selector('.content img.img[data-src]', that);
-
-        if (images.length > 0) {
-
-            loadingImgs[i] = [];
-            loadedImgs[i] = [];
-
-            events.each(images, function (l) {
-
-                if (ev === undefined && l >= col) { return; } // control col length
-
-                loadedImgs[i][l] = this;
-
-                loadingImgs[i][l] = new Image();
-                loadingImgs[i][l].src = loadedImgs[i][l].getAttribute('data-src');
-
-                loadingImgs[i][l].onload = function () {
-
-                    if (loadingImgs[i][l] === undefined || loadingImgs[i][l].length === 0) { return; }
-
-                    loadedImgs[i][l].src = loadingImgs[i][l].src;
-                    events.addClass(loadedImgs[i][l], 'loaded');
-
-                    loadedImgs[i][l].removeAttribute('data-src');
-
-                    loadingImgs[i][l] = [];
-                    loadedImgs[i][l] = [];
-
-                }
-
-            });
-
-        }
 
     }
 
@@ -261,7 +219,6 @@ var carousel = {
             slider[0].style.width = size + 'px';
 
             slider[0].style.transform = 'translateX(-' + (counts[i] * contents[0].offsetWidth) + 'px)';
-            carouselLazyImages(that[i], col, i);
 
         }
 
@@ -373,7 +330,6 @@ var carousel = {
                 }
 
                 slider[0].style.transform = 'translateX(-' + slide + 'px)';
-                carouselLazyImages(that, col, i);
 
             };
 
@@ -596,8 +552,6 @@ var carousel = {
                         }
 
                         slider.style.transform = 'translateX(' + move + 'px)';
-
-                        carouselLazyImages(that, col, i, 'touchmove');
 
                         // wait auto slider when touchmove
                         if (autoTimer[i] !== null) {
