@@ -50,7 +50,7 @@ html:not(.mobile) .preview-prev:hover,html:not(.mobile) .preview-next:hover { ba
 .photo-preview > img:not(.open) { display: none; }
 .photo-preview > img:not(.open-ease) { opacity: 0; }
 
-.close-photo-preview { border-radius: 6px; position: fixed; top: 10px; z-index: 10; }
+.close-photo-preview { border-radius: 6px; position: fixed; z-index: 10; }
 .close-photo-preview .icon { color: #fff; }
 
 @media (min-width: 960px) {
@@ -69,14 +69,14 @@ html:not(.mobile) .preview-prev:hover,html:not(.mobile) .preview-next:hover { ba
 @media (min-width: 768px) {
     .photo-gallery .img.has-info > span,.photo-gallery .img.has-info.hover-touch > span { padding: 20px; }
     .preview-info { width: 620px; }
-    .close-photo-preview { right: 20px; }
+    .close-photo-preview { top: 20px; right: 20px; }
 }
 @media (max-width: 767px) {
     .photo-gallery .img.has-info > span,.photo-gallery .img.has-info.hover-touch > span { padding: 10px; }
     .preview-info { width: 300px; }
     .photo-gallery > li { width: 33.333332%; }
 
-    .close-photo-preview { right: 15px; }
+    .close-photo-preview { top: 15px; right: 15px; }
 }
 @media (min-width: 621px) and (max-width: 959px) {
     .photo-gallery > li .img { height: 180px; }
