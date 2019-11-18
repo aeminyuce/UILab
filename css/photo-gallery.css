@@ -33,10 +33,10 @@ html:not(.mobile) .photo-gallery .img.has-info:hover > span,.photo-gallery .img.
 .photo-preview:not(.open) { display: none; }
 .photo-preview:not(.open-ease) { opacity: 0; }
 
-.preview-prev,.preview-next { color: #000; width: 52px; height: 52px; background-color: rgba(255,255,255,1); padding: 10px; display: none; border: 0; position: absolute; z-index: 2; top: 50%; transform: translateY(-50%); }
-.preview-prev { left: 0; }
-.preview-next { right: 0; }
-html:not(.mobile) .preview-prev:hover,html:not(.mobile) .preview-next:hover { background-color: rgba(255,255,255,.75); }
+.preview-prev,.preview-next { color: #fff; width: 52px; height: 52px; background-color: rgba(255,255,255,.15); padding: 10px; display: none; border: 0; position: absolute; z-index: 2; top: 50%; transform: translateY(-50%); }
+.preview-prev { border-radius: 0 6px 6px 0; left: 0; }
+.preview-next { border-radius: 6px 0 0 6px; right: 0; }
+html:not(.mobile) .preview-prev:hover,html:not(.mobile) .preview-next:hover { background-color: rgba(255,255,255,.25); }
 
 .preview-loader { color: #fff; margin: -20px 0 0 -25px; position: absolute; top: 50%; left: 50%; z-index: 3; transform: translate(-50%,-50%); animation: preview-loader 1s linear infinite; }
 .preview-loader.pause { color: #dc000f; margin: 0; animation: none; }
