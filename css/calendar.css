@@ -56,7 +56,7 @@ html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) caption .calendar-titl
 .calendar tbody td button { width: 100%; background: transparent; padding: 8px; display: block; border: 0; position: relative; }
 .calendar.rounded td button { border-radius: 6px; }
 
-.calendar tbody td.toggle-details button:after { content: ""; width: 6px; height: 6px; background: #ff6384; margin-left: -3px; display: block; border-radius: 100%; position: absolute; bottom: 3px; left: 50%; }
+.calendar tbody td.toggle-details button:after { content: ""; width: 6px; height: 6px; background: #ff1446; margin-left: -3px; display: block; border-radius: 100%; position: absolute; bottom: 3px; left: 50%; }
 
 html:not(.mobile) .calendar tbody td:not(.today):not(.pickerday) button:hover { background-color: rgba(255,255,255,.125); }
 html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) td:not(.today):not(.pickerday) button:hover { background-color: rgba(0,0,0,.075); }
