@@ -1,5 +1,5 @@
 /* custom forms */
-.ease-form-custom { transition-property: height, background-color, transform, opacity; }
+.ease-form-custom { transition-property: width, height, background-color, transform, opacity; }
 
 label.custom { min-height: 22px; padding-top: 5px; padding-bottom: 3px; display: inline-block; }
 
@@ -19,8 +19,13 @@ label.custom { min-height: 22px; padding-top: 5px; padding-bottom: 3px; display:
 .switch-custom input:not(:checked) + i,.switch-custom input:not(:checked) + i[class*="ui-"] { background-color: rgba(0,0,0,.15); }
 .switch-custom input:checked + i { transform: translate(25%,-50%); }
 .switch-custom input:checked + i:not([class*="ui-"]) { background-color: #2dbd3a; }
-.switch-custom input:not(:indeterminate):not(:checked)  + i { transform: translate(-125%,-50%); }
+.switch-custom input:not(:indeterminate):not(:checked):not(:indeterminate) + i { transform: translate(-125%,-50%); }
 .switch-custom input:indeterminate + i { background-color: #ffa600; }
+
+html:not(.mobile) .switch-custom:hover i { width: 18px; }
+html:not(.mobile) .switch-custom:hover input:checked + i { transform: translate(0,-50%); }
+html:not(.mobile) .switch-custom:hover input:not(:checked) + i { transform: translate(-100%,-50%); }
+html:not(.mobile) .switch-custom:hover input:indeterminate + i { transform: translate(-50%,-50%); }
 
 .error .check-custom,.error .radio-custom,.error .switch-custom { background-color: rgba(220,0,15,.1) !important; border-color: #dc000f !important; }
 .warning .check-custom,.warning .radio-custom,.warning .switch-custom { background-color: rgba(255,166,0,.1) !important; border-color: #ffa600 !important; }
