@@ -1,11 +1,15 @@
 /* progress bar */
 @keyframes progress-fill { from { width: 0; } }
 
-.progress-bar { height: 8px; background-color: rgba(0,0,0,.075); display: block; overflow: hidden; }
+.progress-bar { height: 12px; background-color: rgba(0,0,0,.075); padding: 2px; display: block; overflow: hidden; }
 .progress-bar:not(:last-child) { margin-bottom: 10px; }
 .progress-bar > span { width: 0; height: 100%; background-color: rgba(0,0,0,.15); float: left; }
+.progress-bar.rounded > span { border-radius: 4px; }
+.progress-bar.rounded > span ~ span { border-radius: 0 4px 4px 0; }
 .progress-bar > span:not([class*="animate-"]) { animation: progress-fill 2s ease-in-out forwards; }
 
+.progress-sm { height: 8px; }
 .progress-sm,.progress-sm .progress-bar { height: 4px; }
-.progress-sm.rounded,.progress-sm .progress-bar.rounded { border-radius: 3px; }
+
+.progress-lg { height: 20px; }
 .progress-lg,.progress-lg .progress-bar { height: 16px; }
