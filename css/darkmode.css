@@ -30,7 +30,7 @@
     .text-icon > button.icon { color: #fff; }
     
     .check-custom i,.radio-custom i { background-color: rgba(255,255,255,.65); }
-    .switch-custom input:not(:checked) + i,.switch-custom input:not(:checked) + i[class*="ui-"] { background-color: rgba(255,255,255,.15); }
+    .switch-custom input:not(:checked):not(:indeterminate) + i,.switch-custom input:not(:checked) + i[class*="ui-"] { background-color: rgba(255,255,255,.15); }
 
     .form-holder-focus .text,.form-holder-focus .select,.form-holder-focus .btn[class*="bordered"],.form-holder-focus img[class*="bordered"] { border-color: rgba(255,255,255,.5); }
 
