@@ -10,7 +10,7 @@ var alerts = {
 
     messageTheme: '', // use swatches
     messageClasses: 'rounded shadow-lg',
-    messageTimer: '3000', // miliseconds, wait for atomatically close messages
+    messageTimer: '6000', // miliseconds, wait for atomatically close messages
 
     closeIcon: 'icon icon-xs icon-remove'
 
