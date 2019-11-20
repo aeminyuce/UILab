@@ -5,8 +5,10 @@
 .ie .row:before,.ie .row:after { content: ""; display: table; }
 .ie .row:after { clear: both; }
 
-.container,.fixed { width: 100%; padding-right: 10px; padding-left: 10px; }
+.container,.fixed { width: 100%; }
+.container:not([class*="no-gutter"]),.fixed { padding-right: 10px; padding-left: 10px; }
 .ie main.container { display: inline-block; }
+
 .fixed { margin-left: auto; margin-right: auto; }
 
 .no-gutter { padding-right: 0 !important; padding-left: 0 !important; }
