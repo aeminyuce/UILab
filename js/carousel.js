@@ -137,14 +137,15 @@ var carousel = {
 
     function carouselResizerFnc(i, that, type) {
 
-        var col, j, k, slider, contents, animate, navDots, navDotsEl, navDotsLength, navDotsSize, navDotsHtml, navSides, navSide, halfSized, size;
+        var col, j, k, slider, contents, animate, nav, navDots, navDotsEl, navDotsLength, navDotsSize, navDotsHtml, navSides, navSide, halfSized, size;
 
         function fnc() {
 
             contents = selector('.content', that[i]);
             if (contents.length === 0) { return; }
 
-            navDots = selector('.carousel-nav .dots', that[i])[0];
+            nav = selector('.carousel-nav', that[i])[0];
+            navDots = selector('.dots', nav)[0];
             navDotsLength = selector('i', navDots).length;
 
             col = getCols(i); // get responsive cols
@@ -157,7 +158,7 @@ var carousel = {
             for (j = 0; j < navDotsSize; j += 1) {
                 navDotsHtml += '<i class="ease-layout"></i>';
             }
-
+  
             navDots.insertAdjacentHTML('beforeend', navDotsHtml);
             navDotsEl = selector('.carousel-nav .dots i', that[i]);
 
@@ -177,6 +178,13 @@ var carousel = {
 
             if (counts[i] > (navSides - 1)) {
                 counts[i] = (navSides - 1);
+            }
+
+            if (navSides < 2) {
+                nav.style.display = 'none';
+
+            } else {
+                nav.style.display = '';
             }
 
             // detect carousel animates
