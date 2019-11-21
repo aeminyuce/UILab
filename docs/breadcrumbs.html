@@ -42,6 +42,7 @@
     
     <script src="../js/dropdown.js"></script>
     <script src="../js/sticky-header.js"></script>
+    <script src="../js/swatches.js"></script>
     <script src="../js/top-button.js"></script>
     <script src="../js/transitions.js"></script>
 
@@ -69,20 +70,46 @@
                 <div class="col-12 padding-30">
 
                     <h4>Breadcrumbs Examples</h4>
-                    <div class="breadcrumbs">
-                        <ul class="list-inline dark">
-                            <li><a class="hoverline" href="#" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Home</a></li>
-                            <li><a class="hoverline" href="#" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Search Results</a></li>
-                            <li><a class="hoverline" href="#" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Content Details</a></li>
+                    <div class="breadcrumbs dark">
+                        <ul class="list-inline">                            
+                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a class="hoverline" href="#" itemprop="item" title="Home">
+                                    <span itemprop="name">Home</span>
+                                </a>
+                                <meta itemprop="position" content="1" />
+                            </li>
+                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a class="hoverline" href="#" itemprop="item" title="Search Results">
+                                     <span itemprop="name">
+                                         Search Results
+                                    </span>
+                                    <meta itemprop="position" content="2" />
+                                </a>
+                            </li>
+                            <li><b>Content Details</b></li>
                         </ul>
                     </div>
 
                     <span class="sp15"></span>
 
                     <div class="breadcrumbs theme-default">
-                        <ul class="list-inline">
-                            <li><a class="hoverline ui-text" href="#" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><i class="icon icon-xs icon-home"></i></a></li>
-                            <li><a class="hoverline ui-text" href="#" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Search Results</a></li>
+                        <ul class="list-inline">                            
+                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a class="opacity ui-text ease-layout" href="#" itemprop="item" title="Home">
+                                    <span itemprop="name">
+                                        <i class="icon icon-xs icon-home"></i>
+                                    </span>
+                                </a>
+                                <meta itemprop="position" content="1" />
+                            </li>
+                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a class="hoverline ui-text" href="#" itemprop="item" title="Search Results">
+                                        <span itemprop="name">
+                                            Search Results
+                                    </span>
+                                    <meta itemprop="position" content="2" />
+                                </a>
+                            </li>
                             <li><b>Content Details</b></li>
                         </ul>
                     </div>
@@ -90,9 +117,23 @@
                     <span class="sp15"></span>
 
                     <div class="breadcrumbs theme-default2">
-                        <ul class="list-inline">
-                            <li><a class="hoverline ui-text" href="#" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><i class="icon icon-xs icon-home"></i></a></li>
-                            <li><a class="hoverline ui-text" href="#" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Search Results</a></li>
+                        <ul class="list-inline">                            
+                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a class="opacity ui-text ease-layout" href="#" itemprop="item" title="Home">
+                                    <span itemprop="name">
+                                        <i class="icon icon-xs icon-home"></i>
+                                    </span>
+                                </a>
+                                <meta itemprop="position" content="1" />
+                            </li>
+                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a class="hoverline ui-text" href="#" itemprop="item" title="Search Results">
+                                        <span itemprop="name">
+                                            Search Results
+                                    </span>
+                                    <meta itemprop="position" content="2" />
+                                </a>
+                            </li>
                             <li><b>Content Details</b></li>
                         </ul>
                     </div>
@@ -100,82 +141,180 @@
                     <span class="sp15"></span>
 
                     <div class="breadcrumbs">
-                        <ul class="list-inline ease-2nd-btn">
-                            <li><a class="btn rounded" href="#" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><i class="icon icon-xs icon-home margin-5-r"></i> Home</a></li>
-                            <li><a class="btn rounded" href="#" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Search Results</a></li>
-                            <li><button class="btn btn-passive rounded">Content Details</button></li>
+                        <ul class="list-inline">                            
+                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a class="btn rounded ease-btn" href="#" itemprop="item" title="Home">
+                                    <span itemprop="name">
+                                        <i class="icon icon-xs icon-home margin-5-r"></i> Home
+                                    </span>
+                                </a>
+                                <meta itemprop="position" content="1" />
+                            </li>
+                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a class="btn rounded ease-btn" href="#" itemprop="item" title="Search Results">
+                                        <span itemprop="name">
+                                            Search Results
+                                    </span>
+                                    <meta itemprop="position" content="2" />
+                                </a>
+                            </li>
+                            <li>
+                                <button class="btn btn-passive rounded">Content Details</button>
+                            </li>
                         </ul>
                     </div>
 
                     <span class="sp15"></span>
 
                     <div class="breadcrumbs theme-default2">
-                        <ul class="list-inline ease-2nd-btn">
-                            <li><a class="btn rounded ui-dark" href="#" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><i class="icon icon-xs icon-home margin-5-r"></i> Home</a></li>
-                            <li><a class="btn rounded ui-dark" href="#" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Search Results</a></li>
-                            <li><button class="btn btn-passive rounded ui-dark">Content Details</button></li>
-                        </ul>
-                    </div>
-
-                    <span class="sp15"></span>
-
-                    <div class="breadcrumbs">
-                        <ul class="list-inline ease-2nd-btn">
-                            <li><a class="btn rounded" href="#" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><i class="icon icon-xs icon-home margin-5-r"></i> Home</a></li>
-                            <li><a class="btn rounded" href="#" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Search Results</a></li>
-                            <li><b class="dark">Content Details</b></li>
+                        <ul class="list-inline">                            
+                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a class="btn rounded ui-dark ease-btn" href="#" itemprop="item" title="Home">
+                                    <span itemprop="name">
+                                        <i class="icon icon-xs icon-home margin-5-r"></i> Home
+                                    </span>
+                                </a>
+                                <meta itemprop="position" content="1" />
+                            </li>
+                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a class="btn rounded ui-dark ease-btn" href="#" itemprop="item" title="Search Results">
+                                        <span itemprop="name">
+                                            Search Results
+                                    </span>
+                                    <meta itemprop="position" content="2" />
+                                </a>
+                            </li>
+                            <li>
+                                <button class="btn btn-passive rounded ui-dark">Content Details</button>
+                            </li>
                         </ul>
                     </div>
 
                     <span class="sp15"></span>
 
                     <div class="breadcrumbs no-separated">
-                        <ul class="list-inline ease-2nd-btn">
-                            <li><a class="btn rounded" href="#" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><i class="icon icon-xs icon-home margin-5-r"></i> Home</a></li>
-                            <li><a class="btn rounded" href="#" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><i class="icon icon-xs icon-angle-left margin-5-r"></i> Search Results</a></li>
-                            <li><a class="btn rounded" href="#" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><i class="icon icon-xs icon-angle-left margin-5-r"></i> Content Details</a></li>
+                        <ul class="list-inline">                            
+                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a class="btn rounded ease-btn" href="#" itemprop="item" title="Home">
+                                    <span itemprop="name">
+                                        <i class="icon icon-xs icon-home margin-5-r"></i> Home
+                                    </span>
+                                </a>
+                                <meta itemprop="position" content="1" />
+                            </li>
+                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a class="btn rounded ease-btn" href="#" itemprop="item" title="Search Results">
+                                        <span itemprop="name">
+                                            <i class="icon icon-xs icon-angle-left margin-5-r"></i> Search Results
+                                    </span>
+                                    <meta itemprop="position" content="2" />
+                                </a>
+                            </li>
+                            <li>
+                                <button class="btn btn-passive rounded">Content Details</button>
+                            </li>
                         </ul>
                     </div>
 
                     <span class="sp15"></span>
 
                     <div class="breadcrumbs no-separated theme-default">
-                        <ul class="list-inline ease-2nd-btn">
-                            <li><a class="btn rounded ui-dark" href="#"><i class="icon icon-xs icon-home"></i></a></li>
+                        <ul class="list-inline">                            
+                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a class="btn rounded ui-dark ease-btn" href="#" itemprop="item" title="Home">
+                                    <span itemprop="name">
+                                        <i class="icon icon-xs icon-home"></i>
+                                    </span>
+                                </a>
+                                <meta itemprop="position" content="1" />
+                            </li>
                             <li>
                                 <span class="dropdown ease-dropdown">
                                     <button class="btn rounded ui-dark ease-btn">
                                         <i class="icon icon-md icon-ellipsis-hor"></i>
                                     </button>
                                     <ul class="content rounded shadow-lg">
-                                        <li><a href="#" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Search Results</a></li>
-                                        <li><a href="#" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Content Details</a></li>
-                                        <li><a href="#" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Detail Options</a></li>
+                                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                            <a href="#" itemprop="item">
+                                                <span itemprop="name">
+                                                    Search Results
+                                                </span>
+                                            </a>
+                                            <meta itemprop="position" content="2" />
+                                        </li>
+                                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                            <a href="#" itemprop="item">
+                                                <span itemprop="name">
+                                                    Content Details
+                                                </span>
+                                            </a>
+                                            <meta itemprop="position" content="3" />
+                                        </li>
+                                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                            <a href="#" itemprop="item">
+                                                <span itemprop="name">
+                                                    Detail Options
+                                                </span>
+                                            </a>
+                                            <meta itemprop="position" content="4" />
+                                        </li>
                                     </ul>
                                 </span>
                             </li>
-                            <li><a class="btn rounded ui-dark" href="#">Detail Items</a></li>
+                            <li>
+                                <button class="btn btn-passive rounded ui-dark">Content Details</button>
+                            </li>
                         </ul>
                     </div>
 
                     <span class="sp15"></span>
 
                     <div class="breadcrumbs no-separated theme-default2">
-                        <ul class="list-inline ease-2nd-btn">
-                            <li><a class="btn rounded ui-dark" href="#"><i class="icon icon-xs icon-home"></i></a></li>
+                        <ul class="list-inline">                            
+                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a class="btn rounded ui-dark ease-btn" href="#" itemprop="item" title="Home">
+                                    <span itemprop="name">
+                                        <i class="icon icon-xs icon-home"></i>
+                                    </span>
+                                </a>
+                                <meta itemprop="position" content="1" />
+                            </li>
                             <li>
                                 <span class="dropdown ease-dropdown">
                                     <button class="btn rounded ui-dark ease-btn">
                                         <i class="icon icon-md icon-ellipsis-hor"></i>
                                     </button>
                                     <ul class="content rounded shadow-lg">
-                                        <li><a href="#" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Search Results</a></li>
-                                        <li><a href="#" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Content Details</a></li>
-                                        <li><a href="#" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Detail Options</a></li>
+                                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                            <a href="#" itemprop="item">
+                                                <span itemprop="name">
+                                                    Search Results
+                                                </span>
+                                            </a>
+                                            <meta itemprop="position" content="2" />
+                                        </li>
+                                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                            <a href="#" itemprop="item">
+                                                <span itemprop="name">
+                                                    Content Details
+                                                </span>
+                                            </a>
+                                            <meta itemprop="position" content="3" />
+                                        </li>
+                                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                            <a href="#" itemprop="item">
+                                                <span itemprop="name">
+                                                    Detail Options
+                                                </span>
+                                            </a>
+                                            <meta itemprop="position" content="4" />
+                                        </li>
                                     </ul>
                                 </span>
                             </li>
-                            <li><a class="btn rounded ui-dark" href="#">Detail Items</a></li>
+                            <li>
+                                <button class="btn btn-passive rounded ui-dark">Content Details</button>
+                            </li>
                         </ul>
                     </div>
 
