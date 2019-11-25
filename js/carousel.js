@@ -243,7 +243,7 @@ var carousel = {
 
     carousel.Start = function () {
 
-        var carousels;
+        var carousels, carouselStart, carouselStop;
 
         // get carousel slide speed
         function getSlideSpeed(slider, ease, i) {
@@ -462,25 +462,50 @@ var carousel = {
 
             });
 
-            events.on(document, 'mouseenter', '.carousel[data-slide]', function () {
 
-                var i = Array.prototype.slice.call(selector('.carousel')).indexOf(this);
+            carouselStart = function (that) {
 
-                clearInterval(autoSlider[i]);
-                clearTimeout(autoTimeouts[i]);
-
-            });
-
-            events.on(document, 'mouseleave', '.carousel[data-slide]', function () {
-
-                var i, that;
-
-                that = this;
-                i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
+                var i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
 
                 autoSlider[i] = setInterval(function () {
                     carouselNav(that, 'next');
                 }, autoTimer[i]);
+
+            };
+            
+            carouselStop = function (that) {
+
+                var i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
+
+                clearInterval(autoSlider[i]);
+                clearTimeout(autoTimeouts[i]);
+
+            };
+
+           
+            events.on(document, 'mouseenter', '.carousel[data-slide]', function () {
+                carouselStop(this);
+            });
+            
+            events.on(document, 'mouseleave', '.carousel[data-slide]', function () {
+                carouselStart(this);
+            });
+            
+            events.on(window, 'visibilitychange', function () {
+
+                if (document.hidden) { // stop all carousels when browser windows is not active
+                    
+                    events.each(carousels, function () {
+                        carouselStop(this);
+                    });
+                    
+                } else {
+
+                    events.each(carousels, function () {
+                        carouselStart(this);
+                    });
+
+                }
 
             });
 
