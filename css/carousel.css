@@ -43,7 +43,6 @@
 .carousel-gallery .detail img { display: block; position: relative; z-index: 2; }
 .carousel-gallery .detail img,.carousel-gallery .detail.detail-holder img { width: 100%; display: inline-block; position: relative; z-index: 1; cursor: pointer; }
 html:not(.mobile) .carousel-gallery .detail:not(.detail-loader) img:hover { opacity: .8; }
-.mobile .carousel-gallery .detail img { opacity: .8; }
 
 .carousel-gallery .detail .icon { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
 .carousel-gallery .detail .icon-loader { margin: -20px 0 0 -20px; }

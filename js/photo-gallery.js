@@ -393,8 +393,6 @@ var photoGallery = {
             }
 
             // touch events: double tap to zoom
-            waitPinchZoom = false;
-
             imgPosX = '-50';
             imgPosY = '-50';
 
@@ -404,20 +402,16 @@ var photoGallery = {
 
                 var touchesLength, now, getX, getY, rect;
 
+                if (waitPinchZoom) { return; }
+
                 if (e.type === 'dblclick') { // added double click to zoom for desktop
                     touchesLength = 1;
 
                 } else {
-
-                    touchesLength = e.changedTouches.length;
-
-                    setTimeout(function () {
-                        waitPinchZoom = false;
-                    }, 50);
-
+                    touchesLength = e.changedTouches.length;                    
                 }
 
-                if (touchesLength === 1 && !waitPinchZoom) { // control number of touches
+                if (touchesLength === 1) { // control number of touches
 
                     now = new Date().getTime();
                     if ((e.type === 'touchend' && ((now - lastTouchEnd) <= 200 && (now - lastTouchEnd) > 0)) || e.type === 'dblclick') {
@@ -480,11 +474,13 @@ var photoGallery = {
 
             // touch events: pinch to zoom
             events.on(preview, 'touchstart', function (e) {
-
-                if (e.target.src === null) { return; }
+                
+                if (e.target.src === undefined) { return; }
 
                 e.preventDefault();
                 var sx, sy, x, y, pinchStart, pinch, matrix, newScale, msx, msy;
+
+                waitPinchZoom = false;
 
                 matrix = window.getComputedStyle(img).getPropertyValue('transform'); // matrix(xZoom, 0, 0, yZoom, xPos, yPos)
 
@@ -509,7 +505,9 @@ var photoGallery = {
                     if (imgZoom > 1 && (((imgWidth * imgZoom) > screen.width) || (imgHeight * imgZoom) > screen.height)) { // control image exceeds window size
 
                         events.addClass(img, 'pause-easing');
+                        
                         imgTouchmove = true;
+                        waitPinchZoom = true;
 
                         imgPosX = parseFloat((e.targetTouches[0].pageX - msx) / imgWidth) * 100 + parseFloat((matrix[4] / imgWidth) * 100);
                         imgPosY = parseFloat((e.targetTouches[0].pageY - msy) / imgHeight) * 100 + parseFloat((matrix[5] / imgHeight) * 100);
