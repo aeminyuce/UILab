@@ -15,14 +15,15 @@ var dropdown = {};
         dropdownCloseTimer,
         listStyles;
 
-    function dropdownCloseFnc() {
+    function dropdownClose() {
 
         var t, list;
 
         t = selector('.dropdown.open');
         events.removeClass(t, 'open-ease');
 
-        setTimeout(function () {
+        clearTimeout(dropdownCloseTimer);
+        dropdownCloseTimer = setTimeout(function () {
 
             events.each(t, function () {
 
@@ -45,7 +46,7 @@ var dropdown = {};
 
             });
 
-        }, 150);
+        }, 300); // supported until ease-slow
 
     }
 
@@ -58,94 +59,90 @@ var dropdown = {};
 
             var list, alignSize, parent, btnHeight, subMenuHeight, offset, listWidth;
 
+            dropdownClose();
             parent = t.parentNode;
-            if (!events.hasClass(parent, 'open')) {
 
-                events.removeClass('.dropdown.open', 'open-ease');
-                setTimeout(function () {
+            clearTimeout(dropdownOpenTimer);
+            dropdownOpenTimer = setTimeout(function () {
 
-                    events.removeClass('.dropdown.open', 'open');
+                clearTimeout(dropdownOpenTimer);
+                events.addClass(parent, 'open');
 
-                    clearTimeout(dropdownOpenTimer);
-                    events.addClass(parent, 'open');
+                dropdownOpenTimer = setTimeout(function () {
+                    events.addClass(parent, 'open-ease');
+                }, 50);
 
-                    dropdownOpenTimer = setTimeout(function () {
-                        events.addClass(parent, 'open-ease');
-                    }, 50);
+                offset = parent.getBoundingClientRect();
+                list = selector('.content', parent)[0];
 
-                    offset = parent.getBoundingClientRect();
-                    list = selector('.content', parent)[0];
+                if (screen.width < 481 && !events.hasClass(list, 'has-grid')) {
+                    list.style.minWidth = parent.offsetWidth + 'px';
+                }
 
-                    if (screen.width < 481 && !events.hasClass(list, 'has-grid')) {
-                        list.style.minWidth = parent.offsetWidth + 'px';
+                listStyles = list.style.length;
+                listWidth = list.offsetWidth;
+
+                if (events.hasClass(parent, 'submenu-left') || (offset.left + listWidth + 15) > window.innerWidth) { // 15px: scrollbar size
+
+                    if ((offset.left - (listWidth - parent.offsetWidth)) >= 0) {
+
+                        list.style.right = 0;
+                        list.style.left = 'inherit';
+                        
+                        list.style.transformOrigin = 'top right';
+                        
                     }
 
-                    listStyles = list.style.length;
-                    listWidth = list.offsetWidth;
+                } else if (events.hasClass(parent, 'submenu-center')) {
 
-                    if (events.hasClass(parent, 'submenu-left') || (offset.left + listWidth + 15) > window.innerWidth) { // 15px: scrollbar size
+                    alignSize = Math.abs(listWidth - parent.offsetWidth) / 2;
 
-                        if ((offset.left - (listWidth - parent.offsetWidth)) >= 0) {
-
-                            list.style.right = 0;
-                            list.style.left = 'inherit';
-                            
-                            list.style.transformOrigin = 'top right';
-                            
-                        }
-
-                    } else if (events.hasClass(parent, 'submenu-center')) {
-
-                        alignSize = Math.abs(listWidth - parent.offsetWidth) / 2;
-
-                        if ((offset.left - alignSize > 0) && (alignSize > 0)) {
-                            list.style.marginLeft = -alignSize + 'px';
-                        }
-
+                    if ((offset.left - alignSize > 0) && (alignSize > 0)) {
+                        list.style.marginLeft = -alignSize + 'px';
                     }
-
-                    btnHeight = t.offsetHeight;
-                    subMenuHeight = list.offsetHeight;
-
-                    if (offset.top + parseInt(btnHeight + subMenuHeight, 10) >= window.innerHeight) {
-
-                        if (offset.top - parseInt(btnHeight + subMenuHeight, 10) + btnHeight > 0) {
-
-                            events.addClass(parent, 'submenu-top');
-                            list.style.removeProperty('transform-origin');
-                        }
-
-                    }
-
-                }, 0); // do not remove zero timer
-
-                if (e.type === 'click') {
-
-                    setTimeout(function () {
-
-                        events.on(document, 'click.dropdownClose', function (ev) {
-
-                            var content = events.closest(ev.target, '.content')[0];
-
-                            // prevent for non listing contents
-                            if (content !== undefined) {
-                                if (events.closest(content, '.dropdown')[0] !== undefined) { // check other .content class names
-                                    return;
-                                }
-                            }
-
-                            if (ev.button !== 2) { // inherited right clicks
-
-                                dropdownCloseFnc();
-                                events.off(document, 'click.dropdownClose');
-
-                            }
-
-                        });
-
-                    }, 0); // do not remove zero timer
 
                 }
+
+                btnHeight = t.offsetHeight;
+                subMenuHeight = list.offsetHeight;
+
+                if (offset.top + parseInt(btnHeight + subMenuHeight, 10) >= window.innerHeight) {
+
+                    if (offset.top - parseInt(btnHeight + subMenuHeight, 10) + btnHeight > 0) {
+
+                        events.addClass(parent, 'submenu-top');
+                        list.style.removeProperty('transform-origin');
+                    }
+
+                }
+
+            }, 0); // do not remove zero timer
+
+            if (e.type === 'click') {
+
+                setTimeout(function () {
+
+                    events.on(document, 'click.dropdownClose', function (ev) {
+
+                        var content = events.closest(ev.target, '.content')[0];
+
+                        // prevent for non listing contents
+                        if (content !== undefined) {
+                            if (events.closest(content, '.dropdown')[0] !== undefined) { // check other .content class names
+                                return;
+                            }
+                        }
+
+                        if (ev.button !== 2) { // inherited right clicks
+
+                            dropdownClose();
+                            events.off(document, 'click.dropdownClose');
+
+                        }
+
+                    });
+
+                }, 0); // do not remove zero timer
 
             }
 
@@ -155,13 +152,13 @@ var dropdown = {};
         // open events
         events.on(document,
             'click',
-            '.dropdown:not(.open-hover):not(.open) > .btn',
+            '.dropdown:not(.open-hover):not(.open-ease) > .btn',
 
             function (e) { dropdownOpen(e, this); });
 
         events.on(document,
             'mouseenter',
-            '.dropdown.open-hover:not(.open) > .btn',
+            '.dropdown.open-hover:not(.open-ease) > .btn',
 
             function (e) {
 
@@ -214,19 +211,23 @@ var dropdown = {};
                 clearTimeout(dropdownOpenTimer);
 
                 dropdownCloseTimer = setTimeout(function () {
-                    dropdownCloseFnc();
+                    dropdownClose();
                 }, 300);
 
             });
 
-        events.on('.dropdown li', 'mouseup', function () {
+        events.on(document,
+            'mouseup',
+            '.dropdown:not(.nav) li',
 
-            clearTimeout(dropdownCloseTimer);
-            clearTimeout(dropdownOpenTimer);
+            function () {
 
-            dropdownCloseFnc();
+                clearTimeout(dropdownCloseTimer);
+                clearTimeout(dropdownOpenTimer);
 
-        });
+                dropdownClose();
+
+            });
 
     };
 

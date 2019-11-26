@@ -493,15 +493,16 @@ var carousel = {
             
             events.on(window, 'visibilitychange', function () {
 
+                var callCarousels = selector('.carousel[data-slide]');
                 if (document.hidden) { // stop all carousels when browser windows is not active
                     
-                    events.each(carousels, function () {
+                    events.each(callCarousels, function () {
                         carouselStop(this);
                     });
                     
                 } else {
 
-                    events.each(carousels, function () {
+                    events.each(callCarousels, function () {
                         carouselStart(this);
                     });
 
