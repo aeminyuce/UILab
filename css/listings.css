@@ -1,5 +1,6 @@
 /* listings */
-.list-spacing:not(.list-custom) li:not(:last-child) { padding-right: 10px; }
+.list-spacing:not(.list-inline):not(.list-custom) li,
+.list-spacing.list-inline:not(.list-custom) li:not(:last-child) { padding-right: 10px; }
 
 [class*="list-column-"]:before,[class*="list-column-"]:after { content: ""; display: table; }
 [class*="list-column-"]:after { clear: both; }
