@@ -45,7 +45,7 @@ var dropdown = {};
 
             });
 
-        }, 300); // supported until ease-slow
+        }, 300);
 
     }
 
