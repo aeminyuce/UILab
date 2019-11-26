@@ -59,7 +59,7 @@ var mobileMenu = {
 
     }
 
-    //visibleArr = [{'xs': 481}, {'sm': 768}, {'md': 960}, {'md': 1200}];
+    //visibleArr = [{'xs': 481}, {'sm': 768}, {'md': 960}, {'lg': 1200}];
     visibleArr = ['xs', 'sm', 'md', 'lg'];
 
     function checkScreen() {
