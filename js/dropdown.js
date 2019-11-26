@@ -37,7 +37,6 @@ var dropdown = {};
                     list.style.removeProperty('min-width');
                     list.style.removeProperty('right');
                     list.style.removeProperty('margin-left');
-                    list.style.removeProperty('height');
                     list.style.removeProperty('transform-origin');
 
                 }
