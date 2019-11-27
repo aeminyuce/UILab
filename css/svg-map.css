@@ -1,6 +1,8 @@
 /* svg map */
 .svg-map { position: relative; }
-.svg-map svg { margin-right: auto; margin-left: auto; width: auto; height: 360px; }
+html:not(.ie) .svg-responsive { width: 100% !important; height: auto !important; }
+
+.svg-map svg { width: 100%; height: 360px; margin-right: auto; margin-left: auto; }
 .svg-map svg g path { fill: #eee; stroke: #fff; stroke-width: 1.5; cursor: pointer; }
 .svg-map svg g path:hover { fill: #ddd; }
 .svg-map svg g.active path { fill: currentColor; }
