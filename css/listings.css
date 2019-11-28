@@ -23,6 +23,8 @@
     .list-column-5 { column-count: 5; }
     .list-column-6 { column-count: 6; }
 
+    .mobile-menu [class*="list-column-"] { column-count: unset; width: 100%; }
+
     .list-column-2.list-spacing > li:nth-child(2n),.list-column-3.list-spacing > li:nth-child(3n),.list-column-3.list-spacing > li:nth-child(3n),
     .list-column-4.list-spacing > li:nth-child(4n),.list-column-5.list-spacing > li:nth-child(5n),.list-column-6.list-spacing > li:nth-child(5n) { padding-right: inherit; }
 }
