@@ -188,8 +188,10 @@ var forms = {};
                 events.each(forms, function () {
 
                     // trigger defined events after form clear
+                    events.trigger(this, 'change');
+
                     if (!events.hasClass(this, 'required')) { // discard required forms
-                        events.trigger(this, 'keydown keyup change');
+                        events.trigger(this, 'keydown keyup');
                     }
 
                 });

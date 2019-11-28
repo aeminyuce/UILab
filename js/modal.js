@@ -24,7 +24,7 @@ var modal = {
 
         modal.close = function (callback) {
 
-            var win, bg, removeModal, forms;
+            var win, bg, removeModal;
 
             win = selector('.modal-win.show');
             if (win.length === 0) { return; }
@@ -43,12 +43,7 @@ var modal = {
                         win[0].parentNode.removeChild(win[0]);
 
                     } else { // hide modal window
-                        
                         events.removeClass(this, 'show');
-                        
-                        // reset forms
-                        forms = selector('form', this);
-                        events.each(forms, function () { this.reset(); });
                     }
 
                 });
@@ -82,7 +77,7 @@ var modal = {
 
         modal.open = function (set) {
 
-            var styles, closeBtn, nonClosable, typeArr, type, created, temp, getSize, size, customSize, sizeArr, bg, html, win, content;
+            var styles, closeBtn, nonClosable, typeArr, type, created, temp, getSize, size, customSize, sizeArr, forms, bg, html, win, content;
 
             if (set === undefined) { return; }
             if (set.source === undefined) { return; }
@@ -261,6 +256,9 @@ var modal = {
 
                             }
 
+                            // focus modal search
+                            selector('.modal-search [autofocus]', content)[0].focus();
+
                         }, 10);
 
                     }, 150);
@@ -281,9 +279,13 @@ var modal = {
 
                     events.addClass(created, 'active');
                     win = selector('.modal-win.active')[0];
-
+                    
                     content = selector('.modal-content', win)[0];
                     showModal();
+
+                    // reset forms
+                    forms = selector('form', content);
+                    events.each(forms, function () { this.reset(); });
 
                 } else { // create modal
 
