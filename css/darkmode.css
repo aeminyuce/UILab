@@ -182,7 +182,7 @@
     [class*="theme-"].set-dark:not(.theme-gray)[class*="ui-"],[class*="theme-"].set-dark:not(.theme-light) [class*="ui-"]:not([class*="theme-"]) { background-color: #0b0d10; }
     [class*="theme-"].set-dark:not(.theme-gray)[class*="ui-x-"],[class*="theme-"].set-dark:not(.theme-light) [class*="ui-x-"]:not([class*="theme-"]) { background-color: #07080a; }
     
-    .theme-gray.ui-x-light,.theme-gray .ui-x-light:not([class*="theme-"]) { background-color: rgba(255,255,255,.1); } /* #434b5a */
+    .theme-gray.ui-x-light,.theme-gray .ui-x-light:not([class*="theme-"]) { background-color: #444952; } /* #434b5a */
     .theme-gray.ui-light,.theme-gray .ui-light:not([class*="theme-"]) { background-color: #363c48; }
     .theme-gray.ui-dark,.theme-gray .ui-dark:not([class*="theme-"]) { background-color: #2f343e; }
     .theme-gray.ui-text,.theme-gray .ui-text:not([class*="theme-"]) { color: #2f343e; }
