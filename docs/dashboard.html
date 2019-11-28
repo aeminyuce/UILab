@@ -345,7 +345,7 @@
                         <button class="btn btn-lg btn-ghost padding-10 circle ease-btn show-mobile-menu-left visible-md">
                             <i class="icon icon-md icon-bars-left no-opacity"></i>
                         </button>
-                        <button class="btn btn-lg btn-ghost padding-10 circle ease-btn" onclick="modal.open({source: '.modal-search', size: 'fullscreen', bg: 'false'});" data-tooltip data-only="desktop" title="Search">
+                        <button class="btn btn-lg btn-ghost padding-10 circle ease-btn" onclick="modal.open({source: '.search', size: 'fullscreen', bg: 'false'});" data-tooltip data-only="desktop" title="Search">
                             <i class="icon icon-md icon-search no-opacity"></i>
                         </button>
                         <div class="dropdown ease-dropdown">
@@ -1412,12 +1412,13 @@
     </div>
 
     <!-- modal search -->
-    <div class="modal-search modal theme-green">
-        <div class="modal-container padding-30 sm-no-padding-h">
+    <div class="search modal theme-green">
+        <div class="modal-container">
+
             <form action="#successful">
-                <div class="fixed padding-20 sm-no-padding-h">
-        
-                    <div class="col-12">
+                <div class="fixed">
+                    
+                    <div class="modal-search offset-2 col-8">
                         <div class="col-static no-responsive">
                             <div class="row row-no-padding-hor">
                                 <div class="col-12">
@@ -1435,12 +1436,11 @@
                                 </button>
                             </div>
                         </div>
-                        <span class="sp30 margin-30-v"></span>
-                        <span class="sp30 margin-30-v"></span>
                     </div>
     
                 </div>
             </form>
+
         </div>
     </div>
 

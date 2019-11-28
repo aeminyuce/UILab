@@ -178,13 +178,6 @@
                 </div>
                 <div class="col-6 no-padding-t">
 
-                    <i class="x-dark margin-5-b block">Open inline modal window.</i>
-                    <pre class="rounded margin-5-b">modal.open({<br>    source: '.modal-search',<br>    size: 'inline'<br>});</pre>
-                    <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: '.modal-search', size: 'inline'});">Run Code</button>
-
-                </div>
-                <div class="col-6 no-padding-t">
-
                     <i class="x-dark margin-5-b block">Open fixed size modal window.</i>
                     <pre class="rounded margin-5-b">modal.open({<br>    source: '.myModal',<br>    size: '560x315'<br>});</pre>
                     <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: '.myModal', size: '560x315'});">Run Code</button>
@@ -225,8 +218,8 @@
 
                     <b>Bg:</b>
                     <i class="x-dark margin-5-b block">Enable/Disable modal window background color.</i>
-                    <pre class="rounded margin-5-b">modal.open({<br>    source: '.modal-search-no-bg',<br>    bg: 'false'<br>});</pre>
-                    <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: '.modal-search-no-bg', size: 'fullscreen', bg: 'false'});">Run Code</button>
+                    <pre class="rounded margin-5-b">modal.open({<br>    source: '.search',<br>    bg: 'false'<br>});</pre>
+                    <button class="btn btn-sm rounded ui-dark ease-btn" onclick="modal.open({source: '.search', size: 'fullscreen', bg: 'false'});">Run Code</button>
 
                 </div>
                 
@@ -314,35 +307,13 @@
         </div>
     </div>
 
-    <div class="modal-search theme-default ui-dark modal">
-        <div class="modal-header">
-            <h4>Search</h4>
-        </div>
-        <div class="modal-container padding-30">
+    <div class="search modal theme-green">
+        <div class="modal-container">
+
             <form action="#successful">
-                <div class="col-static sm-responsive">
-                    <div class="row row-md-padding">
-                        <div class="col-12">
-                            <div class="text text-lg rounded dual-bordered form-light ease-form">
-                                <input class="required" type="text" placeholder="Enter keyword">
-                            </div>
-                            <p class="required-msg rounded">Please, enter a keyword.</p>
-                        </div>
-                    </div>
-                    <div class="static-150 padding-5">
-                        <button class="btn btn-lg block rounded ui-x-dark ease-btn" type="submit">Search<i class="icon icon-md icon-search margin-10-l"></i></button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-    
-    <div class="modal-search-no-bg modal theme-green">
-        <div class="modal-container padding-30 sm-no-padding-h">
-            <form action="#successful">
-                <div class="fixed padding-20 sm-no-padding-h">
-        
-                    <div class="col-12">
+                <div class="fixed">
+                    
+                    <div class="modal-search offset-2 col-8">
                         <div class="col-static no-responsive">
                             <div class="row row-no-padding-hor">
                                 <div class="col-12">
@@ -360,12 +331,11 @@
                                 </button>
                             </div>
                         </div>
-                        <span class="sp30 margin-30-v"></span>
-                        <span class="sp30 margin-30-v"></span>
                     </div>
     
                 </div>
             </form>
+
         </div>
     </div>
 
