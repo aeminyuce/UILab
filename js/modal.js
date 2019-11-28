@@ -24,7 +24,7 @@ var modal = {
 
         modal.close = function (callback) {
 
-            var win, bg, removeModal;
+            var win, bg, removeModal, forms;
 
             win = selector('.modal-win.show');
             if (win.length === 0) { return; }
@@ -43,7 +43,12 @@ var modal = {
                         win[0].parentNode.removeChild(win[0]);
 
                     } else { // hide modal window
+                        
                         events.removeClass(this, 'show');
+                        
+                        // reset forms
+                        forms = selector('form', this);
+                        events.each(forms, function () { this.reset(); });
                     }
 
                 });
