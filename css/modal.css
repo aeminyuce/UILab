@@ -63,11 +63,23 @@
 html:not(.mobile) .modal-content:not(.fullscreen) .close-modal:hover { background-color: rgba(0,0,0,1); }
 html:not(.mobile) .modal-content.fullscreen .close-modal:hover { background-color: rgba(0,0,0,.45); }
 
+.modal-search { min-height: 240px; }
+
 .modal-footer .btn:focus,.modal-container [type="submit"]:focus { box-shadow: 0 0 0 3px rgba(0,0,0,.15); }
 
 @media (min-width: 960px) {
     .modal-content.inline { max-width: 960px; }
+
+    .modal-search { margin-top: 120px; }
+    .modal-search .text.text-lg { min-height: 62px; }
+    .modal-search .text.text-lg input { font-size: 18px; line-height: 50px; height: 62px; }
+    .modal-search .no-bordered .text.text-lg input { line-height: 50px; height: 60px; }
+    .modal-search .dual-bordered .text.text-lg input { line-height: 48px; height: 58px; }
+
+    .modal-search .btn-lg { font-size: 18px; line-height: 42px; height: 62px; }
+    .modal-search .btn-lg.btn-square { width: 62px; }
 }
 @media (max-width: 959px) {
     .modal-content.inline { max-width: 90%; }
+    .modal-search { margin-top: 20px; }
 }
