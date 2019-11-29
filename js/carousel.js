@@ -11,7 +11,7 @@ var carousel = {
     sm: 767,
     xs: 468,
 
-    showMaxDots: 10, // 5+ numbers, allowed size for dots number exceeds
+    showMaxDots: 5, // 5+ numbers, allowed size for dots number exceeds
     halfSize: 0.5 // set percent of default half size
 
 };
@@ -116,7 +116,7 @@ var carousel = {
                 events.addClass(navDotsEl[navSide - 1], 'show');
 
                 if ((navSide - 2) > -1) {
-                    events.addClass(navDotsEl[navSide - 2], 'show faded');
+                    events.addClass(navDotsEl[navSide - 2], 'faded');
                 }
 
             }
@@ -126,7 +126,7 @@ var carousel = {
                 events.addClass(navDotsEl[navSide + 1], 'show');
 
                 if ((navSide + 2) < navDotsEl.length) {
-                    events.addClass(navDotsEl[navSide + 2], 'show faded');
+                    events.addClass(navDotsEl[navSide + 2], 'faded');
                 }
 
             }
@@ -135,109 +135,81 @@ var carousel = {
 
     }
 
-    function carouselResizerFnc(i, that, type) {
+    function carouselResizerFnc(i, that, type) {        
+                
+        var col, j, slider, contents, animate, nav, navDots, navDotsEl, navDotsHtml, navSides, navSide, halfSized, size;
 
-        var col, j, k, slider, contents, animate, nav, navDots, navDotsEl, navDotsLength, navDotsSize, navDotsHtml, navSides, navSide, halfSized, size;
+        contents = selector('.content', that);
+        if (contents.length === 0) { return; }
 
-        function fnc() {
+        nav = selector('.carousel-nav', that)[0];
 
-            contents = selector('.content', that[i]);
-            if (contents.length === 0) { return; }
+        col = getCols(i); // get responsive cols
+        navSides = Math.ceil(contents.length / col);
 
-            nav = selector('.carousel-nav', that[i])[0];
-            navDots = selector('.dots', nav)[0];
-            navDotsLength = selector('i', navDots).length;
+        if (navSides < 2) {
 
-            col = getCols(i); // get responsive cols
+            nav.style.display = 'none';
+            return;
 
-            navSides = Math.ceil(contents.length / col);
-            navDotsSize = navSides - navDotsLength;
+        } else { nav.style.display = ''; }
 
-            navDotsHtml = '';
+        navDots = selector('.dots', nav)[0];
+                
+        navDotsHtml = '';
+        navDots.innerHTML = '';
 
-            for (j = 0; j < navDotsSize; j += 1) {
-                navDotsHtml += '<i class="ease-layout"></i>';
-            }
-  
-            navDots.insertAdjacentHTML('beforeend', navDotsHtml);
-            navDotsEl = selector('.carousel-nav .dots i', that[i]);
+        for (j = 0; j < navSides; j += 1) {
+            navDotsHtml += '<i class="ease-all ease-slow"></i>';
+        }            
+        
+        navDots.insertAdjacentHTML('beforeend', navDotsHtml);
+        navDotsEl = selector('.carousel-nav .dots i', that);
 
-            if (navDotsSize < 0) {
-
-                for (k = Math.abs(navDotsSize); k < navDotsLength; k += 1) {
-                    navDotsEl[k].style.display = 'none';
-                }
-
-            } else {
-
-                for (k = 0; k < navDotsLength; k += 1) {
-                    navDotsEl[k].style.display = '';
-                }
-
-            }
-
-            if (counts[i] > (navSides - 1)) {
-                counts[i] = (navSides - 1);
-            }
-
-            if (navSides < 2) {
-                nav.style.display = 'none';
-
-            } else {
-                nav.style.display = '';
-            }
-
-            // detect carousel animates
-            events.each(contents, function (l) {
-
-                if (l + 1 > col) { return; }
-
-                animate = this.getAttribute('data-animate');
-                if (animate !== null) {
-
-                    if (animate === '') { animate = 150; }
-                    carouselAnimate(this, animate, 300, type);
-
-                }
-
-            });
-
-            that[i].setAttribute('data-content', (counts[i] + 1));
-
-            navSide = Math.round(counts[i] * navSides / contents.length);
-
-            events.removeClass(navDotsEl, 'selected');
-            events.addClass(navDotsEl[navSide], 'selected');
-
-            filterDots(navDots, navDotsEl, navSide); // filter dots when dots number exceeds
-
-            halfSized = events.hasClass(that[i], 'half-sized');
-            slider = selector('.carousel-slider', that[i]);
-
-            size = col;
-            if (halfSized && col > 1) { size -= carousel.halfSize; }
-
-            size = Math.ceil(that[i].offsetWidth / size);
-
-            for (j = 0; j < contents.length; j += 1) {
-                contents[j].style.width = size + 'px';
-            }
-
-            size = size * contents.length;
-            slider[0].style.width = size + 'px';
-
-            slider[0].style.transform = 'translateX(-' + (counts[i] * contents[0].offsetWidth) + 'px)';
-
+        if (counts[i] > (navSides - 1)) {
+            counts[i] = (navSides - 1);
         }
 
-        if (that.length > 0) {
+        // detect carousel animates
+        events.each(contents, function (l) {
 
-            if (i === undefined) {
-                for (i = 0; i < that.length; i += 1) { fnc(); }
+            if (l + 1 > col) { return; }
 
-            } else { fnc(); }
+            animate = this.getAttribute('data-animate');
+            if (animate !== null) {
 
+                if (animate === '') { animate = 150; }
+                carouselAnimate(this, animate, 300, type);
+
+            }
+
+        });
+
+        that.setAttribute('data-content', (counts[i] + 1));
+
+        navSide = Math.round(counts[i] * navSides / contents.length);
+
+        events.removeClass(navDotsEl, 'selected');
+        events.addClass(navDotsEl[navSide], 'selected');
+
+        filterDots(navDots, navDotsEl, navSide); // filter dots when dots number exceeds
+
+        halfSized = events.hasClass(that, 'half-sized');
+        slider = selector('.carousel-slider', that);
+
+        size = col;
+        if (halfSized && col > 1) { size -= carousel.halfSize; }
+
+        size = Math.ceil(that.offsetWidth / size);
+
+        for (j = 0; j < contents.length; j += 1) {
+            contents[j].style.width = size + 'px';
         }
+
+        size = size * contents.length;
+        slider[0].style.width = size + 'px';
+
+        slider[0].style.transform = 'translateX(-' + (counts[i] * contents[0].offsetWidth) + 'px)';
 
     }
 
@@ -302,6 +274,30 @@ var carousel = {
 
                 }
 
+                that.setAttribute('data-content', (counts[i] + 1));
+                navSide = counts[i] * Math.ceil(contents.length / col) / contents.length;
+
+                if (contents.length - col < 3) { // little sides
+                    navSide = Math.ceil(navSide);
+
+                } else { // much sides
+                    navSide = Math.round(navSide);
+                }
+
+                events.removeClass(navDotsEl, 'selected');
+                events.addClass(navDotsEl[navSide], 'selected');
+
+                filterDots(navDots, navDotsEl, navSide); // filter dots when dots number exceeds
+                slide = counts[i] * contents[0].offsetWidth;
+
+                halfSized = events.hasClass(that, 'half-sized');
+
+                if (halfSized && (counts[i] === contents.length - col)) {
+                    slide += contents[0].offsetWidth * carousel.halfSize;
+                }
+
+                slider[0].style.transform = 'translateX(-' + slide + 'px)';
+
                 getSlideSpeed(slider, contentsEase[i], i); // get carousel slide speed
 
                 // detect carousel animates
@@ -320,24 +316,6 @@ var carousel = {
                     });
 
                 }
-
-                that.setAttribute('data-content', (counts[i] + 1));
-
-                navSide = Math.round(counts[i] * Math.ceil(contents.length / col) / contents.length);
-
-                events.removeClass(navDotsEl, 'selected');
-                events.addClass(navDotsEl[navSide], 'selected');
-
-                filterDots(navDots, navDotsEl, navSide); // filter dots when dots number exceeds
-                slide = counts[i] * contents[0].offsetWidth;
-
-                halfSized = events.hasClass(that, 'half-sized');
-
-                if (halfSized && (counts[i] === contents.length - col)) {
-                    slide += contents[0].offsetWidth * carousel.halfSize;
-                }
-
-                slider[0].style.transform = 'translateX(-' + slide + 'px)';
 
             };
 
@@ -435,7 +413,7 @@ var carousel = {
                 counts[j] = 0;
                 events.addClass(that, 'active');
 
-                carouselResizerFnc(j, carousels, 'static');
+                carouselResizerFnc(j, that, 'static');
 
                 // auto slider
                 autoTimer[j] = that.getAttribute('data-slide');
@@ -734,23 +712,23 @@ var carousel = {
 
     // Loaders
     events.onload(carousel.Start);
-    events.on(window, 'resize', function () {
+    events.on(window, 'resize scroll', function () {
 
-        var i, that, slider;
+        var that, slider;
 
-        i = undefined;
         that = selector('.carousel');
-
-        events.each(that, function () {
+        events.each(that, function (i) {
 
             slider = selector('.carousel-slider', this)[0];
 
             this.style.transitionDuration = '0s';
             slider.style.transitionDuration = '0s';
 
+            carouselResizerFnc(i, this, 'resize');
+
         });
 
-        // wait auto slider until resize compeleted
+        // wait auto slider until resize completed
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(function () {
 
@@ -775,9 +753,7 @@ var carousel = {
             });
 
         }, 150);
-
-        carouselResizerFnc(i, that, 'resize');
-
+        
     });
 
 }());
