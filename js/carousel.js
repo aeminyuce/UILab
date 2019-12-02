@@ -377,9 +377,7 @@ var carousel = {
                 col = getCols(j); // get responsive cols
                 
                 if (contents.length <= col) { // toggle nav
-
                     nav.style.display = 'none';
-                    return;
 
                 } else { nav.style.display = ''; }
 
