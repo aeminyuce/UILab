@@ -11,7 +11,6 @@ var carousel = {
     sm: 767,
     xs: 468,
 
-    showMaxDots: 5, // 5+ numbers, allowed size for dots number exceeds
     halfSize: 0.5 // set percent of default half size
 
 };
@@ -35,7 +34,6 @@ var carousel = {
 
         autoSlider = [],
         autoTimer = [],
-        autoTimeouts = [],
 
         resizeTimer,
         carouselNav,
@@ -70,63 +68,72 @@ var carousel = {
 
     }
 
-    function carouselAnimate(content, time, wait, type) {
+    function carouselAnimate(content, wait, type) {
 
-        var animateEls, i = 0;
-        animateEls = selector('.carousel-animate', content);
+        var time, elems, i;
 
-        if (animateEls.length === 0) { return; }
+        time = content.getAttribute('data-animate');
+        if (time !== null) {
 
-        if (type === 'static') {
-            events.removeClass(animateEls, 'show');
-        }
+            if (time === '') { time = 150; }
 
-        setTimeout(function () { // wait for dom loading or slider ease time
+            i = 0;
+            elems = selector('.carousel-animate', content);
 
-            function show() {
+            if (elems.length === 0) { return; }
 
-                setTimeout(function () {
-
-                    events.addClass(animateEls[i], 'show');
-                    i += 1;
-                    if (i < animateEls.length) { show(); }
-
-                }, time);
-
+            if (type === 'static') {
+                events.removeClass(elems, 'show');
             }
-            show();
 
-        }, wait);
+            setTimeout(function () { // wait for dom loading or slider ease time
+
+                function show() {
+
+                    setTimeout(function () {
+
+                        events.addClass(elems[i], 'show');
+                        i += 1;
+                        if (i < elems.length) { show(); }
+
+                    }, time);
+
+                }
+                show();
+
+            }, wait);
+
+        }
 
     }
 
-    function filterDots(navDots, navDotsEl, navSide) {
-
-        if (carousel.showMaxDots < 5) { return; }
+    function filterDots(navDots, navDotsEl, count, i) {
 
         events.removeClass(navDots, 'filtered');
         events.removeClass(navDotsEl, 'show faded');
 
-        if (navDotsEl.length > carousel.showMaxDots) {
+        if (navDotsEl.length > 5) { // we need 5 dots to show fade effect
+
+            var col = getCols(i); // get responsive cols
 
             events.addClass(navDots, 'filtered');
 
-            if ((navSide - 1) > -1) {
+            if ((count - 1) > -1) {
 
-                events.addClass(navDotsEl[navSide - 1], 'show');
+                events.addClass(navDotsEl[count - 1], 'show');
 
-                if ((navSide - 2) > -1) {
-                    events.addClass(navDotsEl[navSide - 2], 'faded');
+                if ((count - 2) > -1) {
+                    events.addClass(navDotsEl[count - 2], 'faded');
                 }
 
             }
 
-            if ((navSide + 1) < navDotsEl.length) {
+            if ((count + col) < navDotsEl.length) {
 
-                events.addClass(navDotsEl[navSide + 1], 'show');
+                events.addClass(navDotsEl[count + 1], 'show');
 
-                if ((navSide + 2) < navDotsEl.length) {
-                    events.addClass(navDotsEl[navSide + 2], 'faded');
+                if ((count + col + 1) < navDotsEl.length) {
+                    events.addClass(navDotsEl[count + 2], 'faded');
                 }
 
             }
@@ -137,62 +144,18 @@ var carousel = {
 
     function carouselResizerFnc(i, that, type) {        
                 
-        var col, j, slider, contents, animate, nav, navDots, navDotsEl, navDotsHtml, navSides, navSide, halfSized, size;
+        var j, slider, contents, nav, col, halfSized, size;
 
         contents = selector('.content', that);
         if (contents.length === 0) { return; }
 
         nav = selector('.carousel-nav', that)[0];
-
         col = getCols(i); // get responsive cols
-        navSides = Math.ceil(contents.length / col);
 
-        if (navSides < 2) {
-
+        if (contents.length <= col) { // toggle nav
             nav.style.display = 'none';
-            return;
 
         } else { nav.style.display = ''; }
-
-        navDots = selector('.dots', nav)[0];
-                
-        navDotsHtml = '';
-        navDots.innerHTML = '';
-
-        for (j = 0; j < navSides; j += 1) {
-            navDotsHtml += '<i class="ease-all ease-slow"></i>';
-        }            
-        
-        navDots.insertAdjacentHTML('beforeend', navDotsHtml);
-        navDotsEl = selector('.carousel-nav .dots i', that);
-
-        if (counts[i] > (navSides - 1)) {
-            counts[i] = (navSides - 1);
-        }
-
-        // detect carousel animates
-        events.each(contents, function (l) {
-
-            if (l + 1 > col) { return; }
-
-            animate = this.getAttribute('data-animate');
-            if (animate !== null) {
-
-                if (animate === '') { animate = 150; }
-                carouselAnimate(this, animate, 300, type);
-
-            }
-
-        });
-
-        that.setAttribute('data-content', (counts[i] + 1));
-
-        navSide = Math.round(counts[i] * navSides / contents.length);
-
-        events.removeClass(navDotsEl, 'selected');
-        events.addClass(navDotsEl[navSide], 'selected');
-
-        filterDots(navDots, navDotsEl, navSide); // filter dots when dots number exceeds
 
         halfSized = events.hasClass(that, 'half-sized');
         slider = selector('.carousel-slider', that);
@@ -210,6 +173,13 @@ var carousel = {
         slider[0].style.width = size + 'px';
 
         slider[0].style.transform = 'translateX(-' + (counts[i] * contents[0].offsetWidth) + 'px)';
+
+        events.each(contents, function (l) { // detect carousel animates
+
+            if (l + 1 > col) { return; }
+            carouselAnimate(this, 300, type);
+
+        });
 
     }
 
@@ -250,7 +220,7 @@ var carousel = {
 
             carouselNav = function (that, direction) {
 
-                var col, slider, contents, animate, i, navDots, navDotsEl, navSide, slide, halfSized;
+                var col, slider, contents, i, navDots, navDotsEl, slide, halfSized;
 
                 slider = selector('.carousel-slider', that);
                 contents = selector('.content', slider[0]);
@@ -260,7 +230,7 @@ var carousel = {
                 navDots = selector('.carousel-nav .dots', that);
                 navDotsEl = selector('.carousel-nav .dots i', that);
 
-                col = getCols(i); // get responsive cols
+                col = getCols(i); // get responsive cols                
 
                 if (direction === 'next') {
 
@@ -275,19 +245,11 @@ var carousel = {
                 }
 
                 that.setAttribute('data-content', (counts[i] + 1));
-                navSide = counts[i] * Math.ceil(contents.length / col) / contents.length;
-
-                if (contents.length - col < 3) { // little sides
-                    navSide = Math.ceil(navSide);
-
-                } else { // much sides
-                    navSide = Math.round(navSide);
-                }
 
                 events.removeClass(navDotsEl, 'selected');
-                events.addClass(navDotsEl[navSide], 'selected');
+                events.addClass(navDotsEl[counts[i]], 'selected');
 
-                filterDots(navDots, navDotsEl, navSide); // filter dots when dots number exceeds
+                filterDots(navDots, navDotsEl, counts[i], i); // filter dots when dots number exceeds
                 slide = counts[i] * contents[0].offsetWidth;
 
                 halfSized = events.hasClass(that, 'half-sized');
@@ -297,22 +259,13 @@ var carousel = {
                 }
 
                 slider[0].style.transform = 'translateX(-' + slide + 'px)';
-
                 getSlideSpeed(slider, contentsEase[i], i); // get carousel slide speed
 
                 // detect carousel animates
                 if (contents.length > 1 && contents.length !== col) { // stop reloading animates when content length is not enough
 
                     events.each(contents, function () {
-
-                        animate = this.getAttribute('data-animate');
-                        if (animate !== null) {
-
-                            if (animate === '') { animate = 150; }
-                            carouselAnimate(this, animate, contentsEase[i], 'static');
-
-                        }
-
+                        carouselAnimate(this, contentsEase[i], 'static');
                     });
 
                 }
@@ -322,8 +275,9 @@ var carousel = {
             // load carousels
             events.each(carousels, function (j) {
 
-                var that = this;
+                var k, that, contents, col, nav, navDots, navDotsHtml, navDotsEl;
 
+                that = this;
                 cols[j] = that.getAttribute('data-col');
 
                 colsXL[j] = that.getAttribute('data-col-xl');
@@ -411,12 +365,46 @@ var carousel = {
                 }
 
                 counts[j] = 0;
-                events.addClass(that, 'active');
 
+                contents = selector('.content', that);
+                if (contents.length === 0) { return; }
+
+                events.addClass(that, 'active');
                 carouselResizerFnc(j, that, 'static');
 
+                // create nav
+                nav = selector('.carousel-nav', that)[0];
+                col = getCols(j); // get responsive cols
+                
+                if (contents.length <= col) { // toggle nav
+
+                    nav.style.display = 'none';
+                    return;
+
+                } else { nav.style.display = ''; }
+
+                navDots = selector('.dots', nav)[0];
+                        
+                navDotsHtml = '';
+                navDots.innerHTML = '';
+
+                for (k = 0; k < contents.length; k += 1) {
+                    navDotsHtml += '<i class="ease-all ease-slow"></i>';
+                }            
+                
+                navDots.insertAdjacentHTML('beforeend', navDotsHtml);                
+                navDotsEl = selector('.dots i', nav);
+
+                counts[j] = 0;
+                that.setAttribute('data-content', (counts[j] + 1));
+
+                events.removeClass(navDotsEl, 'selected');
+                events.addClass(navDotsEl[counts[j]], 'selected');
+
+                filterDots(navDots, navDotsEl, counts[j], j); // filter dots when dots number exceeds
+
                 // auto slider
-                autoTimer[j] = that.getAttribute('data-slide');
+                autoTimer[j] = that.getAttribute('data-slide');                
                 if (autoTimer[j] !== null) {
 
                     if (autoTimer[j] === '') { autoTimer[j] = 8000; }
@@ -432,14 +420,20 @@ var carousel = {
             // Events
             events.on(document, 'click', '.carousel-prev,.carousel-next', function () {
 
-                var that, direction;
+                var i, that, direction;
                 if (events.hasClass(this, 'carousel-next')) { direction = 'next'; } else { direction = 'prev'; }
 
                 that = events.closest(this, '.carousel')[0];
+                i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
+                
                 carouselNav(that, direction);
 
-            });
+                // wait auto slider when navigating                
+                if (autoTimer[i] !== null) {
+                    clearInterval(autoSlider[i]);
+                }
 
+            });
 
             carouselStart = function (that) {
 
@@ -453,10 +447,8 @@ var carousel = {
             
             carouselStop = function (that) {
 
-                var i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
-
+                var i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);                
                 clearInterval(autoSlider[i]);
-                clearTimeout(autoTimeouts[i]);
 
             };
 
@@ -506,7 +498,7 @@ var carousel = {
             // touchmove events
             events.on(document, 'touchstart', '.carousel', function (e) {
 
-                var i, startx, starty, currentx, currenty, startMove, touchMove, move, that, slider, sliderMax, col, navDotsEl, navSide, touchEndTimer, animate, contents;
+                var i, startx, starty, currentx, currenty, startMove, touchMove, move, that, slider, sliderMax, col, navDotsEl, touchEndTimer, contents;
 
                 if (isScrolling) { return; }
                 touchMove = false;
@@ -567,10 +559,7 @@ var carousel = {
 
                         // wait auto slider when touchmove
                         if (autoTimer[i] !== null) {
-
                             clearInterval(autoSlider[i]);
-                            clearTimeout(autoTimeouts[i]);
-
                         }
 
                         events.addClass(document, 'carousel-touchmove');
@@ -620,12 +609,10 @@ var carousel = {
                         slider.style.transform = 'translateX(' + -(counts[i] * contents[0].offsetWidth) + 'px)';
                         that.setAttribute('data-content', (counts[i] + 1));
 
-                        navSide = Math.round(counts[i] * Math.ceil(contents.length / col) / contents.length);
-
                         events.removeClass(navDotsEl, 'selected');
-                        events.addClass(navDotsEl[navSide], 'selected');
+                        events.addClass(navDotsEl[counts[i]], 'selected');
 
-                        filterDots(navDots, navDotsEl, navSide); // filter dots when dots number exceeds
+                        filterDots(navDots, navDotsEl, counts[i], i); // filter dots when dots number exceeds
 
                         clearTimeout(touchEndTimer);
                         touchEndTimer = setTimeout(function () {
@@ -636,7 +623,6 @@ var carousel = {
                             if (autoTimer[i] !== null) {
 
                                 clearInterval(autoSlider[i]);
-                                clearTimeout(autoTimeouts[i]);
 
                                 autoSlider[i] = setInterval(function () {
                                     carouselNav(that, 'next');
@@ -646,15 +632,7 @@ var carousel = {
 
                             // detect carousel animates
                             events.each(contents, function () {
-
-                                animate = this.getAttribute('data-animate');
-                                if (animate !== null) {
-
-                                    if (animate === '') { animate = 150; }
-                                    carouselAnimate(this, animate, contentsEase[i], 'touch');
-
-                                }
-
+                                carouselAnimate(this, contentsEase[i], 'touch');
                             });
 
                             events.removeClass(document, 'carousel-touchmove');
@@ -739,7 +717,6 @@ var carousel = {
                 if (autoTimer[i] !== null) {
 
                     clearInterval(autoSlider[i]);
-                    clearTimeout(autoTimeouts[i]);
 
                     autoSlider[i] = setInterval(function () {
                         carouselNav(that[i], 'next');
