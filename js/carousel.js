@@ -496,7 +496,7 @@ var carousel = {
             // touchmove events
             events.on(document, 'touchstart', '.carousel', function (e) {
 
-                var i, startx, starty, currentx, currenty, startMove, touchMove, move, that, slider, sliderMax, col, navDotsEl, touchEndTimer, contents;
+                var i, startx, starty, currentx, currenty, startMove, touchMove, move, that, slider, sliderMax, col, navDotsEl, halfSized, touchEndTimer, contents;
 
                 if (isScrolling) { return; }
                 touchMove = false;
@@ -510,6 +510,8 @@ var carousel = {
 
                 contents = selector('.content', that);
                 navDotsEl = selector('.carousel-nav .dots i', that);
+
+                halfSized = events.hasClass(that, 'half-sized');
 
                 i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
                 col = getCols(i); // get responsive cols
@@ -542,8 +544,12 @@ var carousel = {
                         slider.style.transitionDuration = '0s';
 
                         clearTimeout(touchEndTimer);
-
                         sliderMax = -((contents.length - col) * contents[0].offsetWidth);
+
+                        if (halfSized) {
+                            sliderMax -= contents[0].offsetWidth * carousel.halfSize;
+                        }
+                                                
                         move = (startMove - (startx - currentx));
 
                         if (move > 0) {
@@ -583,10 +589,10 @@ var carousel = {
                         } else if (currentx > contents[0].offsetWidth) {
                             currentx = contents[0].offsetWidth;
                         }
-
+                        
                         if ((currentx - startx) > 0) { // slide to right
 
-                            if (counts[i].toFixed(2).substring(2) < 85) {
+                            if (counts[i].toFixed(2).split('.')[1] < 85) {
                                 counts[i] = Math.floor(counts[i]);
 
                             } else {
@@ -595,7 +601,7 @@ var carousel = {
 
                         } else { // slide to left
 
-                            if (counts[i].toFixed(2).substring(2) > 15) {
+                            if (counts[i].toFixed(2).split('.')[1] > 15) {
                                 counts[i] = Math.ceil(counts[i]);
 
                             } else {
@@ -604,7 +610,13 @@ var carousel = {
 
                         }
 
-                        slider.style.transform = 'translateX(' + -(counts[i] * contents[0].offsetWidth) + 'px)';
+                        move = -Math.ceil(counts[i] * contents[0].offsetWidth);
+        
+                        if (halfSized && (counts[i] === contents.length - col)) {
+                            move -= contents[0].offsetWidth * carousel.halfSize;
+                        }
+
+                        slider.style.transform = 'translateX(' + move + 'px)';
                         that.setAttribute('data-content', (counts[i] + 1));
 
                         events.removeClass(navDotsEl, 'selected');
