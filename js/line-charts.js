@@ -54,7 +54,7 @@ var lineCharts = {
     // load charts
     lineCharts.Start = function () {
 
-        var i, j, charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, paths, circles, total, name;
+        var i, j, k, charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, paths, circles, total, name;
 
         loadCharts = function (that, resizer) {
 
@@ -169,6 +169,25 @@ var lineCharts = {
                 
                 html = '<svg style="width: ' + data.width + 'px; height: ' + data.svgHeight + 'px;">';
 
+                // check column stepping
+                data.step = this.getAttribute('data-step');
+                if (data.step !== null && data.step !== '' && data.step !== '0') {
+
+                    if (isNaN(data.step)) {
+                        data.step = false;
+
+                    } else {
+
+                        data.stepArr = [];
+
+                        for (k = 0; k < Math.ceil(x.length / data.step); k += 1) {
+                            data.stepArr.push(k * data.step);
+                        }
+
+                    }
+
+                } else { data.step = false; }
+
                 // create grids
                 col = (data.width - (lineCharts.right + lineCharts.left)) / (x.length - 1);
                 html += '<g class="x">';
@@ -178,7 +197,17 @@ var lineCharts = {
                     posX = (i * col) + lineCharts.left;
 
                     if (lineCharts.showGridText) {
-                        html += '<text x="' + posX + '" y="' + (data.height - lineCharts.bottom + 20) + '">' + x[i] + '</text>';
+
+                        if (data.step) {
+
+                            if (data.stepArr.indexOf(i) > -1) {
+                                html += '<text x="' + posX + '" y="' + (data.height - lineCharts.bottom + 20) + '">' + x[i] + '</text>';
+                            }
+                            
+                        } else {
+                            html += '<text x="' + posX + '" y="' + (data.height - lineCharts.bottom + 20) + '">' + x[i] + '</text>';
+                        }
+
                     }
 
                     if (i === 0 || lineCharts.showBgGrid) {
