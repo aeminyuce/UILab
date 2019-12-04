@@ -437,9 +437,8 @@ var carousel = {
 
                 var i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
 
-                autoSlider[i] = setInterval(function () {
-                    carouselNav(that, 'next');
-                }, autoTimer[i]);
+                clearInterval(autoSlider[i]);
+                autoSlider[i] = setInterval(function () { carouselNav(that, 'next'); }, autoTimer[i]);
 
             };
             
