@@ -34,7 +34,7 @@
 .bring-bottom:not(.show) { transform: translateY(15px); }
 .bring-left:not(.show) { transform: translateX(-15px); }
 
-@media (max-width: 959px) and (min-width: 768px) {
+@media (max-width: 959px) {
   .md-bring-back:not(.show) { transform: scale(.85); }
   .md-bring-front:not(.show) { transform: scale(1.15); }
   
@@ -43,7 +43,7 @@
   .md-bring-bottom:not(.show) { transform: translateY(15px); }
   .md-bring-left:not(.show) { transform: translateX(-15px); }
 }
-@media (max-width: 767px) and (min-width: 481px) {
+@media (max-width: 767px) {
   .sm-bring-back:not(.show) { transform: scale(.85); }
   .sm-bring-front:not(.show) { transform: scale(1.15); }
   
