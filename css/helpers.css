@@ -51,6 +51,9 @@ html:not(.portrait) .visible-portrait { display: none !important; }
 .bg-white:not([class*="ui-"]) { background-color: #fff !important; }
 .bg-black:not([class*="ui-"]) { background-color: #181818 !important; }
 
+.border-white { border-color: #fff !important; }
+.border-black { border-color: #181818 !important; }
+
 @media print {
     .hidden-print { display: none !important; }
 }
