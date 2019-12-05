@@ -61,6 +61,15 @@
     .dropdown ul.content.has-grid li.sep:nth-child(even) ~ li:not(.sep):nth-child(odd) { border-right-color: rgba(255,255,255,.065); }
 
     .portlet,[class*="portlet-"] { background-color: #2f343e; }
+    
+    .page-social > .btn { background-color: #292c35; }
+    .theme-facebook.ui-dark .icon { color: #3b5998; }
+    .theme-twitter.ui-dark .icon { color: #1da1f2; }
+    .theme-instagram.ui-dark .icon { color: #c13584; }
+    .theme-linkedin.ui-dark .icon { color: #0077b5; }
+    .theme-google.ui-dark .icon { color: #db4437; }
+    .theme-whatsapp.ui-dark .icon { color: #25d366; }
+    .theme-youtube.ui-dark .icon { color: #ff0000; }
 
     .photos-holder [class*="img-photo"] { border-color: #15181d; }
     .portlet .photos-holder [class*="img-photo"] { border-color: #2f343e; }
@@ -179,8 +188,8 @@
     .dark-ui,.dark-ui .icon:not([class*="ui-"]),.dark-ui a:not([class*="ui-"]),.dark-ui button:not([class*="ui-"]) { color: rgba(255,255,255,.7) !important; }
     .x-dark-ui,.x-dark-ui .icon:not([class*="ui-"]),.x-dark-ui a:not([class*="ui-"]),.x-dark-ui button:not([class*="ui-"]) { color: rgba(255,255,255,.5) !important; }
 
-    [class*="theme-"].set-dark:not(.theme-gray)[class*="ui-"],[class*="theme-"].set-dark:not(.theme-light) [class*="ui-"]:not([class*="theme-"]) { background-color: #0b0d10; }
-    [class*="theme-"].set-dark:not(.theme-gray)[class*="ui-x-"],[class*="theme-"].set-dark:not(.theme-light) [class*="ui-x-"]:not([class*="theme-"]) { background-color: #07080a; }
+    .set-dark:not(.theme-gray)[class*="theme-"][class*="ui-"],.set-dark:not(.theme-light)[class*="theme-"] [class*="ui-"]:not([class*="theme-"]):not(.icon) { background-color: #0b0d10; }
+    .set-dark:not(.theme-gray)[class*="theme-"][class*="ui-x-"],.set-dark:not(.theme-light)[class*="theme-"] [class*="ui-x-"]:not([class*="theme-"]):not(.icon) { background-color: #07080a; }
     
     .theme-gray.ui-x-light,.theme-gray .ui-x-light:not([class*="theme-"]) { background-color: #444952; } /* #434b5a */
     .theme-gray.ui-light,.theme-gray .ui-light:not([class*="theme-"]) { background-color: #363c48; }
