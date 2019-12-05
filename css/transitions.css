@@ -10,6 +10,7 @@
 .no-transitions-all [class*="ease-"]:after,.no-transitions-all [class*="ease-1st-"] > *:after,.no-transitions-all [class*="ease-2nd-"] > * > *:after { transition-property: none !important; }
 
 .ease-fast,.ease-fast[class*="ease-1st-"] > *,.ease-fast[class*="ease-2nd-"] > * > * { transition-duration: .1s; }
+.ease-default,.ease-default[class*="ease-1st-"] > *,.ease-default[class*="ease-2nd-"] > * > * { transition-duration: .15s; }
 .ease-slow,.ease-slow[class*="ease-1st-"] > *,.ease-slow[class*="ease-2nd-"] > * > * { transition-duration: .4s; }
 .ease-slow2x,.ease-slow2x[class*="ease-1st-"] > *,.ease-slow2x[class*="ease-2nd-"] > * > * { transition-duration: .8s; }
 .ease-slow3x,.ease-slow3x[class*="ease-1st-"] > *,.ease-slow3x[class*="ease-2nd-"] > * > * { transition-duration: 1.2s; }
