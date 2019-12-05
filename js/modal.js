@@ -256,9 +256,6 @@ var modal = {
 
                             }
 
-                            // focus modal search
-                            selector('.modal-search [autofocus]', content)[0].focus();
-
                         }, 10);
 
                     }, 150);

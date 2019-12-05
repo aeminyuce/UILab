@@ -2,7 +2,7 @@
 .modal-bg-opened:not(.mobile) { overflow: hidden; }
 .mobile.modal-bg-opened body { width: 100%; height: 100%; overflow: hidden; position: fixed; top: 0; left: 0; }
 
-.modal-bg { width: 100%; min-width: 320px; height: 100%; background-color: rgba(0,0,0,.65); position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 89; }
+.modal-bg { width: 100%; min-width: 320px; height: 100%; background-color: rgba(0,0,0,.8); position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 89; }
 .modal-bg:not(.open) { display: none; }
 .modal-bg:not(.open-ease) { opacity: 0; }
 
@@ -64,7 +64,6 @@ html:not(.mobile) .modal-content:not(.fullscreen) .close-modal:hover { backgroun
 html:not(.mobile) .modal-content.fullscreen .close-modal:hover { background-color: rgba(0,0,0,.45); }
 
 .modal-search { min-height: 240px; }
-
 .modal-footer .btn:focus,.modal-container [type="submit"]:focus { box-shadow: 0 0 0 3px rgba(0,0,0,.15); }
 
 @media (min-width: 768px) {
@@ -72,7 +71,7 @@ html:not(.mobile) .modal-content.fullscreen .close-modal:hover { background-colo
 
     .modal-search { margin-top: 120px; }
     .modal-search .text.text-lg { min-height: 62px; }
-    .modal-search .text.text-lg input { font-size: 18px; line-height: 50px; height: 62px; }
+    .modal-search .text.text-lg input { font-size: 18px; line-height: 50px; height: 62px; padding-left: 20px; }
     .modal-search .no-bordered .text.text-lg input { line-height: 50px; height: 60px; }
     .modal-search .dual-bordered .text.text-lg input { line-height: 48px; height: 58px; }
 

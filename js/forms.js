@@ -216,7 +216,13 @@ var forms = {};
             var form = selector('input', this.parentElement)[0];
 
             form.value = '';
-            events.trigger(form, 'keydown keyup change');
+            
+             // trigger defined events after form clear
+             events.trigger(form, 'change');
+
+             if (!events.hasClass(form, 'required')) { // discard required forms
+                 events.trigger(form, 'keydown keyup');
+             }
 
         });
 
