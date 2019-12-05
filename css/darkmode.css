@@ -188,8 +188,8 @@
     .dark-ui,.dark-ui .icon:not([class*="ui-"]),.dark-ui a:not([class*="ui-"]),.dark-ui button:not([class*="ui-"]) { color: rgba(255,255,255,.7) !important; }
     .x-dark-ui,.x-dark-ui .icon:not([class*="ui-"]),.x-dark-ui a:not([class*="ui-"]),.x-dark-ui button:not([class*="ui-"]) { color: rgba(255,255,255,.5) !important; }
 
-    .set-dark:not(.theme-gray)[class*="theme-"][class*="ui-"],.set-dark:not(.theme-light)[class*="theme-"] [class*="ui-"]:not([class*="theme-"]):not(.icon) { background-color: #0b0d10; }
-    .set-dark:not(.theme-gray)[class*="theme-"][class*="ui-x-"],.set-dark:not(.theme-light)[class*="theme-"] [class*="ui-x-"]:not([class*="theme-"]):not(.icon) { background-color: #07080a; }
+    .set-dark:not(.theme-gray)[class*="theme-"][class*="ui-"],.set-dark:not(.theme-light)[class*="theme-"] [class*="ui-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) { background-color: #0b0d10; }
+    .set-dark:not(.theme-gray)[class*="theme-"][class*="ui-x-"],.set-dark:not(.theme-light)[class*="theme-"] [class*="ui-x-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) { background-color: #07080a; }
     
     .theme-gray.ui-x-light,.theme-gray .ui-x-light:not([class*="theme-"]) { background-color: #444952; } /* #434b5a */
     .theme-gray.ui-light,.theme-gray .ui-light:not([class*="theme-"]) { background-color: #363c48; }
