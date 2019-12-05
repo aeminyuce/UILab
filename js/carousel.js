@@ -112,30 +112,26 @@ var carousel = {
         events.removeClass(navDots, 'filtered');
         events.removeClass(navDotsEl, 'show faded');
 
-        if (navDotsEl.length > 5) { // we need 5 dots to show fade effect
+        var col = getCols(i); // get responsive cols
 
-            var col = getCols(i); // get responsive cols
+        events.addClass(navDots, 'filtered');
 
-            events.addClass(navDots, 'filtered');
+        if ((count - 1) > -1) {
 
-            if ((count - 1) > -1) {
+            events.addClass(navDotsEl[count - 1], 'show');
 
-                events.addClass(navDotsEl[count - 1], 'show');
-
-                if ((count - 2) > -1) {
-                    events.addClass(navDotsEl[count - 2], 'faded');
-                }
-
+            if ((count - 2) > -1) {
+                events.addClass(navDotsEl[count - 2], 'faded');
             }
 
-            if ((count + col) < navDotsEl.length) {
+        }
 
-                events.addClass(navDotsEl[count + 1], 'show');
+        if ((count + col) < navDotsEl.length) {
 
-                if ((count + col + 1) < navDotsEl.length) {
-                    events.addClass(navDotsEl[count + 2], 'faded');
-                }
+            events.addClass(navDotsEl[count + 1], 'show');
 
+            if ((count + col + 1) < navDotsEl.length) {
+                events.addClass(navDotsEl[count + 2], 'faded');
             }
 
         }
