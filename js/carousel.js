@@ -695,29 +695,25 @@ var carousel = {
 
     // Loaders
     events.onload(carousel.Start);
-    events.on(window, 'resize scroll', function () {
+    events.on(window, 'resize scroll', function (e) {
 
-        var that, slider;
+        var that;
 
-        that = selector('.carousel');
-        events.each(that, function (i) {
+        if (e.type === 'resize') {
 
-            slider = selector('.carousel-slider', this)[0];
-
-            this.style.transitionDuration = '0s';
-            slider.style.transitionDuration = '0s';
-
-            carouselResizerFnc(i, this, 'resize');
-
-        });
-
-        // wait auto slider until resize completed
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(function () {
+            that = selector('.carousel');
 
             events.each(that, function (i) {
+                carouselResizerFnc(i, this, 'resize');
+            });
 
-                slider = selector('.carousel-slider', that[i])[0];
+        }
+
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function () { // wait auto slider until resize completed
+            
+            that = selector('.carousel');
+            events.each(that, function (i) {
 
                 if (autoTimer[i] !== null) {
 
@@ -728,9 +724,6 @@ var carousel = {
                     }, autoTimer[i]);
 
                 }
-
-                that[i].style.transitionDuration = '';
-                slider.style.transitionDuration = '';
 
             });
 
