@@ -5,9 +5,8 @@
 .ie .row:before,.ie .row:after { content: ""; display: table; }
 .ie .row:after { clear: both; }
 
-.container,.fixed { width: 100%; }
+.container,.fixed { width: 100%; display: block; }
 .container:not([class*="no-gutter"]),.fixed { padding-right: 10px; padding-left: 10px; }
-.ie main.container { display: inline-block; }
 
 .fixed { margin-left: auto; margin-right: auto; }
 

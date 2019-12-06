@@ -164,8 +164,7 @@
     .calendar:not(.ui-dark):not(.ui-x-dark) td.today button:not([class*="ui-"]) { background-color: rgba(255,255,255,.125); }
     html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) td.today button:not([class*="ui-"]):hover { background-color: rgba(255,255,255,.2); }
     html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) .details > button:hover { background-color: rgba(255,255,255,.065); }
-    .calendar .details li > span > i { color: #fff; background-color: #000; }
-    .calendar:not(.ui-dark):not(.ui-x-dark) .details li > span > i { background-color: rgba(255,255,255,.075); }
+    .calendar:not(.ui-dark):not(.ui-x-dark) .details li > span > i { color: #fff; background-color: rgba(255,255,255,.075); }
     .calendar:not(.ui-dark):not(.ui-x-dark) .no-details li > strong,.calendar:not(.ui-dark):not(.ui-x-dark) .no-details li > b { background-color: rgba(255,255,255,.2); }
     .calendar:not(.ui-dark):not(.ui-x-dark) .no-details li > span { background-color: rgba(255,255,255,.1); }
     html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) .details li:hover { background-color: rgba(255,255,255,.065); }
