@@ -87,9 +87,9 @@ var dropdown = {};
 
                         list.style.right = 0;
                         list.style.left = 'inherit';
-                        
+
                         list.style.transformOrigin = 'top right';
-                        
+
                     }
 
                 } else if (events.hasClass(parent, 'submenu-center')) {
@@ -178,9 +178,9 @@ var dropdown = {};
         events.on('.dropdown li > label', 'click', function () {
 
             var p, icon, target;
-            
+
             p = events.closest(this, '.dropdown');
-            
+
             target = selector('.btn > .value-toggle', p);
             target.innerHTML = '';
 

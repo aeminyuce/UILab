@@ -102,7 +102,7 @@ var mobileMenu = {
 
                 panel = selector('.mobile-menu.show-right');
 
-                max = screenLimits(mobileMenu.visibleRight);                                
+                max = screenLimits(mobileMenu.visibleRight);
                 if (screen.width >= max) { closeMobileMenu(panel); }
 
             }

@@ -1,6 +1,6 @@
 /*
  Photo Slider JS
- Photo Slider JS requires Selector Js, Events JS
+ Photo Slider JS requires Selector Js, Events JS, Ajax JS
 */
 
 var photoSlider = {};
@@ -10,8 +10,8 @@ var photoSlider = {};
     'use strict';
 
     var count, dataSrcLists, loadedImages;
-        
-    /*globals window, document, selector, events, Image */
+
+    /*globals window, document, selector, events, Image, ajax */
     function photoSliderLoader() {
 
         var slider, j, retina, images, dataSrc, nav, navHtml;
@@ -30,7 +30,7 @@ var photoSlider = {};
                     if (dataSrc !== null && dataSrc !== '') { retina = true; }
 
                 }
-                
+
                 if (!retina) { dataSrc = images[i].getAttribute('data-src'); }
                 events.addClass(slider[i], 'loaded');
 
@@ -52,7 +52,7 @@ var photoSlider = {};
 
             images[i].removeAttribute('data-src');
             images[i].removeAttribute('data-srcset');
-            
+
             // create nav
             nav = selector('.slider-nav', slider[i])[0];
             if (dataSrcLists[i].length > 1) {
@@ -95,7 +95,7 @@ var photoSlider = {};
 
         // Events
         events.on(document,
-            
+
             'click', '.photo-slider button',
             function (e) {
 
@@ -144,9 +144,9 @@ var photoSlider = {};
 
                             img.srcset = loadedImages[i][count[i]].srcset;
                             events.addClass(slider, 'loaded');
-    
+
                         }
-    
+
                         img.onerror = function () {
                             events.removeClass(slider, 'loaded');
                         }
@@ -158,9 +158,9 @@ var photoSlider = {};
 
                             img.src = loadedImages[i][count[i]].src;
                             events.addClass(slider, 'loaded');
-    
+
                         }
-    
+
                         img.onerror = function () {
                             events.removeClass(slider, 'loaded');
                         }

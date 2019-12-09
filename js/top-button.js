@@ -25,7 +25,7 @@ var topButton = {
         btnAnimate;
 
     function togglerFnc() {
-        
+
         var showTopBtn, hideTopBtn;
 
         showTopBtn = function () {
@@ -100,7 +100,7 @@ var topButton = {
 
     // Loaders
     events.onload(topButton.Start);
-    
+
     events.on(window, 'resize', togglerFnc);
     events.on(window, 'scroll', togglerFnc);
 

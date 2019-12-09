@@ -76,9 +76,9 @@ var tabs = {};
                     setTimeout(function () {
                         events.addClass(contents[index], 'open-ease');
                     }, 50);
-                    
+
                 }, 0);
-                
+
             }
 
         });

@@ -34,15 +34,15 @@ var stickyHeader = {};
             if (classes !== null && classes !== '') {
                 events.removeClass(header, classes);
             }
-        };
+        }
 
     };
 
-    stickyLoader = function () {            
+    stickyLoader = function () {
 
-        screenW = window.innerWidth;        
+        screenW = window.innerWidth;
         if (window.pageYOffset > header.offsetTop) {
-            
+
             if (size !== '') {
 
                 if (screenW > 480 && size === 'sticky-xs') { clearSticky(); return; }
@@ -71,7 +71,7 @@ var stickyHeader = {};
 
     stickyHeader.Start = function () {
 
-        header = selector('header');        
+        header = selector('header');
         if (header.length === 0) { return; }
 
         size = '';

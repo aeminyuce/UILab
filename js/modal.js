@@ -108,7 +108,7 @@ var modal = {
                 if (set.bg !== undefined && set.bg === 'false') {
                     html += ' no-bg';
                 }
-                
+
                 html += ' active">' +
                             '<div class="modal-content ' + styles + '"></div>' +
                         '</div>';
@@ -276,7 +276,7 @@ var modal = {
 
                     events.addClass(created, 'active');
                     win = selector('.modal-win.active')[0];
-                    
+
                     content = selector('.modal-content', win)[0];
                     showModal();
 

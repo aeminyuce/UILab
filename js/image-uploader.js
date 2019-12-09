@@ -128,14 +128,13 @@ var imageUploader = {
 
                             c.width = imageUploader.resizeWidth;
                             c.height = imageUploader.resizeHeight;
-    
+
                         } else {
 
                             c.width = w[j];
                             c.height = h[j];
 
                         }
-                        
 
                     } else {
 
@@ -147,7 +146,7 @@ var imageUploader = {
 
                                     c.width = w[j];
                                     c.height = (r[1] / r[0]) * w[j];
-            
+
                                 } else { // vertical image
 
                                     c.width = (r[0] / r[1]) * h[j];
@@ -156,7 +155,7 @@ var imageUploader = {
                                 }
 
                             }
-                            
+
                         } else {
 
                             c.width = w[j];
@@ -179,14 +178,14 @@ var imageUploader = {
 
                                 c.width = (r[0] / r[1]) * h[j];
                                 c.height = h[j];
-    
+
                             } else { // vertical image
-    
+
                                 c.width = w[j];
                                 c.height = (r[1] / r[0]) * w[j];
-    
+
                             }
-                            
+
                         }
 
                         ctx.drawImage(img[j], 0, 0, c.width, c.height);
@@ -197,9 +196,9 @@ var imageUploader = {
 
                             ctx.fillStyle = imageUploader.fillColor;
                             ctx.fillRect(0, 0, c.width, c.height);
-    
+
                             ctx.drawImage(img[j], (c.width - w[j]) / 2, (c.height - h[j]) / 2, w[j], h[j]);
-    
+
                         } else {
                             ctx.drawImage(img[j], 0, 0, w[j], h[j]);
                         }
@@ -220,7 +219,7 @@ var imageUploader = {
                     imgLoaded[j].data = data;
                     imgLoaded[j].size = size;
                     imgLoaded[j].tag = tag;
-                    
+
                     if (savedImgs) { // get saved image's id
                         imgLoaded[j].id = allowed[j].id;
 
@@ -234,7 +233,7 @@ var imageUploader = {
                 };
 
                 loadImagesAfter = function () {
-                    
+
                     loaded += 1;
                     if (loaded === allowed.length) {
 
@@ -243,7 +242,7 @@ var imageUploader = {
                             events.each(imgLoaded, function (k) {
 
                                 if (imgLoaded[k] !== undefined) { // return when image loading failed
-    
+
                                     html += '<li class="open-ease">' +
                                         '<label class="custom">' +
                                             '<span class="check-custom rounded dual-bordered ease-form">' +
@@ -258,13 +257,13 @@ var imageUploader = {
                                         '<span class="size">' + imgLoaded[k].size + 'kb</span>' +
                                         '<span class="tag">' + imgLoaded[k].tag + '</span>' +
                                     '</li>';
-                                    
+
                                 }
 
                             });
-                            
+
                             list.insertAdjacentHTML('beforeend', html);
-                            
+
                         }, 0);
 
                         events.addClass(tools, 'open');
@@ -291,7 +290,7 @@ var imageUploader = {
 
                             img = [];
                             imgLoaded = [];
-                            
+
                             w = [];
                             h = [];
 
@@ -318,7 +317,7 @@ var imageUploader = {
 
                             loadImages(i, allowed[i].tag);
                             loadImagesAfter(); // end of images
-                            
+
                         };
 
                         img[i].onerror = function () {
@@ -331,7 +330,7 @@ var imageUploader = {
                             loadImagesAfter(); // end of images
 
                         };
-                        
+
                     } else { // FileList object: get images from user selected
 
                         readers[i] = new FileReader(); // filereader API
@@ -341,12 +340,12 @@ var imageUploader = {
 
                             img[i] = new Image();
                             img[i].src = this.result;
-                            
+
                             img[i].onload = function () { loadImages(i, ''); };
 
                         };
 
-                        readers[i].onloadend = loadImagesAfter; // end of images                        
+                        readers[i].onloadend = loadImagesAfter; // end of images
 
                     }
 
@@ -383,7 +382,7 @@ var imageUploader = {
 
                         tag = this.getAttribute('data-tag');
                         if (tag !== null) { imported[i].tag = tag; }
-                        
+
                     }
 
                 }
@@ -410,7 +409,7 @@ var imageUploader = {
 
             events.addClass(this, 'drop-highlight');
             that = this;
-            
+
             events.on('body', 'dragover.uploader', function (ev) {
 
                 ev.preventDefault();
@@ -428,7 +427,7 @@ var imageUploader = {
             });
 
         });
-        
+
         events.on('body', 'drop', function (e) {
 
             e.preventDefault();
@@ -468,71 +467,71 @@ var imageUploader = {
 
             var fnc, that, formData, uploader, list, file, size, tag;
             that = this;
-            
+
             fnc = function () {
 
                 formData = new FormData();
 
                 uploader = events.closest(that, '.image-uploader')[0];
                 list = selector('.uploader-list ul > li', uploader);
-    
+
                 events.each(list, function (i) {
-    
+
                     file = selector('.img img', this)[0];
                     formData.append('id[' + i + ']', file.id); // add id
-    
+
                     size = selector('.size', this)[0].textContent;
                     formData.append('size[' + i + ']', size); // add image sizes
-    
+
                     tag = selector('.tag', this)[0].textContent;
                     formData.append('tag[' + i + ']', tag); // add image tags
 
                     formData.append('file[' + i + ']', file.src); // add base64 images
 
                 });
-    
+
                 events.addClass(uploader, 'uploading');
-    
+
                 ajax({
 
                     url : that.action,
                     data: formData,
 
                     callback: function (status, response) {
-    
+
                         events.removeClass(uploader, 'uploading');
-    
+
                         if (status === 'success') { // check ajax connection
-    
+
                             response = JSON.parse(response);
                             if (response.success === true) { // check server connection
-                                
+
                                 alerts.message({
                                     msg: response.message, // show server message
                                     theme: 'success'
                                 });
-    
+
                             } else {
-    
+
                                 alerts.message({
                                     msg: response.message, // show server message
                                     theme: 'danger'
                                 });
-    
+
                             }
-    
+
                         } else {
-    
+
                             alerts.message({
                                 msg: imageUploader.msgError,
                                 theme: 'warning'
                             });
-    
+
                         }
-    
+
                     }
 
-                });    
+                });
 
             };
 

@@ -211,7 +211,7 @@ var autocomplete = {
 
                                         list[0].insertAdjacentHTML('beforeend', '<li>' + txt + '</li>');
 
-                                    }                                    
+                                    }
 
                                 }
                             }

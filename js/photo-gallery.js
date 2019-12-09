@@ -408,7 +408,7 @@ var photoGallery = {
                     touchesLength = 1;
 
                 } else {
-                    touchesLength = e.changedTouches.length;                    
+                    touchesLength = e.changedTouches.length;
                 }
 
                 if (touchesLength === 1) { // control number of touches
@@ -474,7 +474,7 @@ var photoGallery = {
 
             // touch events: pinch to zoom
             events.on(preview, 'touchstart', function (e) {
-                
+
                 if (e.target.src === undefined) { return; }
 
                 e.preventDefault();
@@ -505,7 +505,7 @@ var photoGallery = {
                     if (imgZoom > 1 && (((imgWidth * imgZoom) > screen.width) || (imgHeight * imgZoom) > screen.height)) { // control image exceeds window size
 
                         events.addClass(img, 'pause-easing');
-                        
+
                         imgTouchmove = true;
                         waitPinchZoom = true;
 
@@ -596,7 +596,7 @@ var photoGallery = {
         events.on(document, 'touchmove.photogallery touchend', '.photo-gallery a.img', function (e) {
 
             e.preventDefault();
-            if (e.type === 'touchmove') { pageTouchmove = true; }            
+            if (e.type === 'touchmove') { pageTouchmove = true; }
 
             var that = this;
             if (e.type === 'touchend') {
@@ -605,14 +605,14 @@ var photoGallery = {
                 pageTouchmoveTimer = setTimeout(function () {
 
                     if (pageTouchmove === false) {
-                        
+
                         if (events.hasClass(this, 'has-info')) {
 
                             if (useragents.mobile && events.hasClass(this, 'hover-touch')) {
                                 galleryFnc(e, that);
-        
+
                             } else { return; }
-        
+
                         } else {
                             galleryFnc(e, that);
                         }
@@ -622,7 +622,7 @@ var photoGallery = {
                     pageTouchmove = false;
 
                 }, 50);
-                
+
             }
 
         });

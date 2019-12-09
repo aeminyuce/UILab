@@ -46,7 +46,7 @@ var lineCharts = {
 
             if (charts.length === 0) { return; }
             loadCharts(charts, true);
-            
+
         }, 0);
 
     };
@@ -77,7 +77,7 @@ var lineCharts = {
                 data.name = [];
                 data.color = [];
                 data.backup = [];
-                
+
                 if (resizer !== undefined && resizer) {
                     events.addClass(this, 'loaded resized');
 
@@ -103,7 +103,7 @@ var lineCharts = {
 
                 }
 
-                data.width = this.offsetWidth;                
+                data.width = this.offsetWidth;
                 data.height = rows * rowsHeight;
 
                 // read all x parameters
@@ -166,7 +166,7 @@ var lineCharts = {
                 if (lineCharts.showInfo || lineCharts.showGridText) {
                     data.svgHeight += 15;
                 }
-                
+
                 html = '<svg style="width: ' + data.width + 'px; height: ' + data.svgHeight + 'px;">';
 
                 // check column stepping
@@ -203,7 +203,7 @@ var lineCharts = {
                             if (data.stepArr.indexOf(i) > -1) {
                                 html += '<text x="' + posX + '" y="' + (data.height - lineCharts.bottom + 20) + '">' + x[i] + '</text>';
                             }
-                            
+
                         } else {
                             html += '<text x="' + posX + '" y="' + (data.height - lineCharts.bottom + 20) + '">' + x[i] + '</text>';
                         }
@@ -376,7 +376,7 @@ var lineCharts = {
                         for (j = 0; j < data[i].y.length; j += 1) {
                             total += parseInt(data[i].y[j], 10);
                         }
-                        
+
                         html += '<li><span style="background: ' + data.color[i] + '"></span>';
 
                         if (data.name[i] === '') {

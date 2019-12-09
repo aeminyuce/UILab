@@ -138,8 +138,8 @@ var carousel = {
 
     }
 
-    function carouselResizerFnc(i, that, type) {        
-                
+    function carouselResizerFnc(i, that, type) {
+
         var j, slider, contents, nav, col, halfSized, size;
 
         contents = selector('.content', that);
@@ -226,7 +226,7 @@ var carousel = {
                 navDots = selector('.carousel-nav .dots', that);
                 navDotsEl = selector('.carousel-nav .dots i', that);
 
-                col = getCols(i); // get responsive cols                
+                col = getCols(i); // get responsive cols
 
                 if (direction === 'next') {
 
@@ -371,22 +371,22 @@ var carousel = {
                 // create nav
                 nav = selector('.carousel-nav', that)[0];
                 col = getCols(j); // get responsive cols
-                
+
                 if (contents.length <= col) { // toggle nav
                     nav.style.display = 'none';
 
                 } else { nav.style.display = ''; }
 
                 navDots = selector('.dots', nav)[0];
-                        
+
                 navDotsHtml = '';
                 navDots.innerHTML = '';
 
                 for (k = 0; k < contents.length; k += 1) {
                     navDotsHtml += '<i class="ease-all ease-slow"></i>';
-                }            
-                
-                navDots.insertAdjacentHTML('beforeend', navDotsHtml);                
+                }
+
+                navDots.insertAdjacentHTML('beforeend', navDotsHtml);
                 navDotsEl = selector('.dots i', nav);
 
                 counts[j] = 0;
@@ -398,7 +398,7 @@ var carousel = {
                 filterDots(navDots, navDotsEl, counts[j], j); // filter dots when dots number exceeds
 
                 // auto slider
-                autoTimer[j] = that.getAttribute('data-slide');                
+                autoTimer[j] = that.getAttribute('data-slide');
                 if (autoTimer[j] !== null) {
 
                     if (autoTimer[j] === '') { autoTimer[j] = 8000; }
@@ -419,10 +419,10 @@ var carousel = {
 
                 that = events.closest(this, '.carousel')[0];
                 i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
-                
+
                 carouselNav(that, direction);
 
-                // wait auto slider when navigating                
+                // wait auto slider when navigating
                 if (autoTimer[i] !== null) {
                     clearInterval(autoSlider[i]);
                 }
@@ -437,32 +437,32 @@ var carousel = {
                 autoSlider[i] = setInterval(function () { carouselNav(that, 'next'); }, autoTimer[i]);
 
             };
-            
+
             carouselStop = function (that) {
 
-                var i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);                
+                var i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
                 clearInterval(autoSlider[i]);
 
             };
 
-           
+
             events.on(document, 'mouseenter', '.carousel[data-slide]', function () {
                 carouselStop(this);
             });
-            
+
             events.on(document, 'mouseleave', '.carousel[data-slide]', function () {
                 carouselStart(this);
             });
-            
+
             events.on(window, 'visibilitychange', function () {
 
                 var callCarousels = selector('.carousel[data-slide]');
                 if (document.hidden) { // stop all carousels when browser windows is not active
-                    
+
                     events.each(callCarousels, function () {
                         carouselStop(this);
                     });
-                    
+
                 } else {
 
                     events.each(callCarousels, function () {
@@ -544,7 +544,7 @@ var carousel = {
                         if (halfSized) {
                             sliderMax -= contents[0].offsetWidth * carousel.halfSize;
                         }
-                                                
+
                         move = (startMove - (startx - currentx));
 
                         if (move > 0) {
@@ -584,7 +584,7 @@ var carousel = {
                         } else if (currentx > contents[0].offsetWidth) {
                             currentx = contents[0].offsetWidth;
                         }
-                        
+
                         if ((currentx - startx) > 0) { // slide to right
 
                             if (counts[i].toFixed(2).split('.')[1] < 85) {
@@ -606,7 +606,7 @@ var carousel = {
                         }
 
                         move = -Math.ceil(counts[i] * contents[0].offsetWidth);
-        
+
                         if (halfSized && (counts[i] === contents.length - col)) {
                             move -= contents[0].offsetWidth * carousel.halfSize;
                         }
@@ -717,7 +717,7 @@ var carousel = {
 
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(function () { // wait auto slider until resize completed
-            
+
             that = selector('.carousel');
             events.each(that, function (i) {
 
@@ -739,7 +739,7 @@ var carousel = {
             });
 
         }, 150);
-        
+
     });
 
 }());
