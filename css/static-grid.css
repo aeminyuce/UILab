@@ -42,8 +42,12 @@
     .xs-static-42 { width: 42px; } /* form-holders */
 }
 @media (max-width: 1199px) {
-    .col-static.lg-responsive > .row,.col-static.lg-responsive > [class*="static-"] { width: 100%; display: block; }
+    .col-static.lg-responsive > .row,.col-static.lg-responsive > [class*="static-"] { width: 100%; display: block; clear: both; }
     .col-static.lg-responsive > [class*="static-"]:not(.col-static) { width: 100%; }
+}
+@media (max-width: 1679px) {
+    .col-static.xl-responsive > .row,.col-static.xl-responsive > [class*="static-"] { width: 100%; display: block; clear: both; }
+    .col-static.xl-responsive > [class*="static-"]:not(.col-static) { width: 100%; }
 }
 @media (min-width: 1680px) {
     .xl-static-0 { width: 0; } .xl-static-50 { width: 50px; } .xl-static-100 { width: 100px; } .xl-static-150 { width: 150px; } .xl-static-200 { width: 200px; } .xl-static-250 { width: 250px; } .xl-static-300 { width: 300px; } .xl-static-350 { width: 350px; } .xl-static-400 { width: 400px; } .xl-static-450 { width: 450px; } .xl-static-500 { width: 500px; } .xl-static-550 { width: 550px; } .xl-static-600 { width: 600px; }

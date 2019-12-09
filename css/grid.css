@@ -112,6 +112,13 @@
     [class*="push-"].lg-responsive { left: 0; }
     [class*="pull-"].lg-responsive { right: 0; }
 }
+@media (max-width: 1679px) {
+    [class*="col-"].xl-responsive { width: 100%; float: inherit; }
+    [class*="offset-"].xl-responsive { margin-left: 0; }
+
+    [class*="push-"].xl-responsive { left: 0; }
+    [class*="pull-"].xl-responsive { right: 0; }
+}
 @media (min-width: 1680px) {
     .no-gutter-xl { padding-right: 0 !important; padding-left: 0 !important; }
 
