@@ -697,14 +697,20 @@ var carousel = {
     events.onload(carousel.Start);
     events.on(window, 'resize scroll', function (e) {
 
-        var that;
+        var that, slider;
 
         if (e.type === 'resize') {
 
             that = selector('.carousel');
-
             events.each(that, function (i) {
+
+                slider = selector('.carousel-slider', this)[0];
+
                 carouselResizerFnc(i, this, 'resize');
+
+                this.style.transitionDuration = '0s';
+                slider.style.transitionDuration = '0s';
+
             });
 
         }
@@ -724,6 +730,11 @@ var carousel = {
                     }, autoTimer[i]);
 
                 }
+
+                slider = selector('.carousel-slider', this)[0];
+
+                this.style.transitionDuration = '';
+                slider.style.transitionDuration = '';
 
             });
 
