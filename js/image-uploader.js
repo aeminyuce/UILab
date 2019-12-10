@@ -5,7 +5,7 @@
 
 var imageUploader = {
 
-    ratio: '4:3', // activated when "resize images" turned off
+    ratio: '4:3', // activated when resize: false
 
     resize: true, // resize images
     resizeWidth: 1024, // resize width
@@ -248,9 +248,13 @@ var imageUploader = {
                                             '<img id="' + imgLoaded[k].id + '" src="' + imgLoaded[k].data + '" alt="">' +
                                         '</span>' +
                                         '<span class="name">' + imgLoaded[k].name + '</span>' +
-                                        '<span class="size">' + imgLoaded[k].size + 'kb</span>' +
-                                        '<span class="tag">' + imgLoaded[k].tag + '</span>' +
-                                    '</li>';
+                                        '<span class="info">' + imgLoaded[k].size + 'kb';
+
+                                    if (imgLoaded[k].tag !== '') { // add tags
+                                        html += ', <span class="tag">' + imgLoaded[k].tag + '</span></span>';
+                                    }
+
+                                    html += '</span></li>';
 
                                 }
 
