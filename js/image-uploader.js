@@ -33,7 +33,7 @@ var imageUploader = {
 (function () {
 
     'use strict';
-    /*globals document, events, selector, setTimeout, Image, FileReader, FormData, ajax, alerts */
+    /*globals document, events, selector, setTimeout, Image, FileReader, FormData, ajax, alerts, atob, Uint8Array, Blob */
 
     imageUploader.Start = function () {
 
@@ -244,16 +244,10 @@ var imageUploader = {
                                 if (imgLoaded[k] !== undefined) { // return when image loading failed
 
                                     html += '<li class="open-ease">' +
-                                        '<label class="custom">' +
-                                            '<span class="check-custom rounded dual-bordered ease-form">' +
-                                                '<input type="checkbox">' +
-                                                '<i class="ease-form-custom"></i>' +
-                                            '</span>' +
-                                            '<span class="name">' + imgLoaded[k].name + '</span>' +
-                                        '</label>' +
                                         '<span class="img">' +
                                             '<img id="' + imgLoaded[k].id + '" src="' + imgLoaded[k].data + '" alt="">' +
                                         '</span>' +
+                                        '<span class="name">' + imgLoaded[k].name + '</span>' +
                                         '<span class="size">' + imgLoaded[k].size + 'kb</span>' +
                                         '<span class="tag">' + imgLoaded[k].tag + '</span>' +
                                     '</li>';
@@ -461,16 +455,44 @@ var imageUploader = {
 
         });
 
+        function toBlob(base, type, sliceSize) { // convert base64 images to blob
+
+            var i, j, byteCharacters, byteArray, byteArrays, slice, byteNumbers, blob;
+
+            type = type || '';
+            sliceSize = sliceSize || 512;
+
+            byteCharacters = atob(base);
+            byteArrays = [];
+
+            for (j = 0; j < byteCharacters.length; j += sliceSize) {
+
+                slice = byteCharacters.slice(j, j + sliceSize);
+                byteNumbers = new Array(slice.length);
+
+                for (i = 0; i < slice.length; i += 1) {
+                    byteNumbers[i] = slice.charCodeAt(i);
+                }
+
+                byteArray = new Uint8Array(byteNumbers);
+                byteArrays.push(byteArray);
+            }
+
+            blob = new Blob(byteArrays, {type: type});
+            return blob;
+
+        }
+
         events.on(document, 'submit', '.image-uploader form', function (e) {
 
             e.preventDefault();
 
-            var fnc, that, formData, uploader, list, file, size, tag;
+            var fnc, that, formData, uploader, list, file, tag, img, imgType;
             that = this;
 
             fnc = function () {
 
-                formData = new FormData();
+                formData = new FormData(); // formdata API
 
                 uploader = events.closest(that, '.image-uploader')[0];
                 list = selector('.uploader-list ul > li', uploader);
@@ -480,13 +502,16 @@ var imageUploader = {
                     file = selector('.img img', this)[0];
                     formData.append('id[' + i + ']', file.id); // add id
 
-                    size = selector('.size', this)[0].textContent;
-                    formData.append('size[' + i + ']', size); // add image sizes
-
                     tag = selector('.tag', this)[0].textContent;
-                    formData.append('tag[' + i + ']', tag); // add image tags
+                    formData.append('tag[' + i + ']', tag); // add image tag
 
-                    formData.append('file[' + i + ']', file.src); // add base64 images
+                    img = file.src.split(";");
+                    imgType = img[0].split(":")[1]; // get image type
+
+                    img = img[1].split(",")[1];
+                    img = toBlob(img, imgType); // convert to blob to using server's file protocol
+
+                    formData.append('file[' + i + ']', img); // add image file
 
                 });
 
@@ -500,7 +525,6 @@ var imageUploader = {
                     callback: function (status, response) {
 
                         events.removeClass(uploader, 'uploading');
-
                         if (status === 'success') { // check ajax connection
 
                             response = JSON.parse(response);
