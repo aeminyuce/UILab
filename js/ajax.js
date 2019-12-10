@@ -10,6 +10,7 @@
     ajax({
         type : 'POST',
         url : 'yourfile.php',
+        cache: false,
         data: 'name=value&name=value',
         callback: function (status, response) {
 
@@ -94,6 +95,11 @@ var ajax = function (set) { // type, url, data, callback
     // beforesend
     if (set.beforesend !== undefined) {
         set.beforesend(ajax.request[i]);
+    }
+
+    // no cache
+    if (!set.cache) {
+        ajax.request[i].setRequestHeader('cache-control', 'no-cache');
     }
 
     // check params in url
