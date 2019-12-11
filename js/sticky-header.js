@@ -40,7 +40,9 @@ var stickyHeader = {};
 
     stickyLoader = function () {
 
+        if (header === undefined) { return; } // firefox
         screenW = window.innerWidth;
+
         if (window.pageYOffset > header.offsetTop) {
 
             if (size !== '') {
