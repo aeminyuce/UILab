@@ -248,13 +248,13 @@ var imageUploader = {
                                             '<img id="' + imgLoaded[k].id + '" src="' + imgLoaded[k].data + '" alt="">' +
                                         '</span>' +
                                         '<span class="name">' + imgLoaded[k].name + '</span>' +
-                                        '<span class="info">' + imgLoaded[k].size + 'kb';
+                                        '<span class="info">' + imgLoaded[k].size + 'kb' + '</span>';
 
                                     if (imgLoaded[k].tag !== '') { // add tags
-                                        html += ', <span class="tag">' + imgLoaded[k].tag + '</span></span>';
+                                        html += '<span class="tag">' + imgLoaded[k].tag + '</span>';
                                     }
 
-                                    html += '</span></li>';
+                                    html += '</li>';
 
                                 }
 
@@ -506,7 +506,9 @@ var imageUploader = {
                     file = selector('.img img', this)[0];
                     formData.append('id[' + i + ']', file.id); // add id
 
-                    tag = selector('.tag', this)[0].textContent;
+                    tag = selector('.tag', this)[0];
+                    if (tag !== undefined) { tag = tag.textContent; } else { tag = ''; }
+
                     formData.append('tag[' + i + ']', tag); // add image tag
 
                     img = file.src.split(";");
@@ -515,7 +517,7 @@ var imageUploader = {
                     img = img[1].split(",")[1];
                     img = toBlob(img, imgType); // convert to blob to using server's file protocol
 
-                    formData.append('file[' + i + ']', img); // add image file
+                    formData.append('img[' + i + ']', img); // add image file
 
                 });
 

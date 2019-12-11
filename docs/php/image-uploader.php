@@ -5,14 +5,14 @@
 
         /* testing getting image files and other datas
 
-            $file = $_FILES['file'];
+            $img = $_FILES['img'];
 
             print_r($_POST['id']); // get ids
             print_r($_POST['tag']); // get tags
 
-            print_r($file['tmp_name']); // get images
-            print_r($file['type']); // get types
-            print_r($file['size']); // get sizes
+            print_r($img['tmp_name']); // get images
+            print_r($img['type']); // get types
+            print_r($img['size']); // get sizes
 
         */
 
