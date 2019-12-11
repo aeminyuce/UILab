@@ -43,12 +43,12 @@
 
     <link rel="stylesheet" href="../css/swatches.css"/>
     <link rel="stylesheet" href="../css/darkmode.css"/>
-    
+
     <!-- Javascript Tools -->
     <script src="../js/selector.js"></script>
     <script src="../js/events.js"></script>
     <script src="../js/user-agents.js"></script>
-    
+
     <script src="../js/alerts.js"></script>
     <script src="../js/sticky-header.js"></script>
     <script src="../js/static-grid.js"></script>
@@ -163,7 +163,7 @@
                         <div class="row">
                             <div class="col-6">
                                 <div class="select rounded dual-bordered ease-form">
-                                    <i class="icon icon-sm icon-angle-down ease-layout"></i>
+                                    <i class="icon icon-xs icon-angle-down ease-layout"></i>
                                     <select>
                                         <option value="">Select</option>
                                         <option>Value 1</option>
@@ -173,7 +173,7 @@
                             </div>
                             <div class="col-6">
                                 <div class="select rounded dual-bordered ease-form">
-                                    <i class="icon icon-sm icon-angle-down ease-layout"></i>
+                                    <i class="icon icon-xs icon-angle-down ease-layout"></i>
                                     <select>
                                         <optgroup label="Title">
                                             <option value="">Select with groups</option>
@@ -192,16 +192,16 @@
 
                         <div class="select-multi margin-10-b rounded dual-bordered ease-form">
                             <select multiple size="6">
-                                    <option value="">Value 1</option>
-                                    <option>Value 2</option>
-                                    <option>Value 3</option>
-                                    <option>Value 4</option>
-                                    <option>Value 5</option>
-                                    <option>Value 6</option>
-                                    <option>Value 7</option>
-                                    <option>Value 8</option>
-                                    <option>Value 9</option>
-                                    <option>Value 10</option>
+                                <option value="">Value 1</option>
+                                <option>Value 2</option>
+                                <option>Value 3</option>
+                                <option>Value 4</option>
+                                <option>Value 5</option>
+                                <option>Value 6</option>
+                                <option>Value 7</option>
+                                <option>Value 8</option>
+                                <option>Value 9</option>
+                                <option>Value 10</option>
                             </select>
                         </div>
                         <div class="select-multi margin-10-b rounded dual-bordered ease-form">
@@ -218,6 +218,57 @@
                                 </optgroup>
                             </select>
                         </div>
+                    </div>
+
+                    <h4>Toggle Multi Selects</h4>
+                    <div class="padding-30-b">
+
+                        <form action="#succesful">
+
+                            <div class="row">
+                                <div class="toggle-select-multi col-static">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="select-multi rounded dual-bordered ease-form">
+                                                <select multiple size="10" name="values">
+                                                    <option value="1" selected>Value 1</option>
+                                                    <option value="2">Value 2</option>
+                                                    <option value="3">Value 3</option>
+                                                    <option value="4" selected>Value 4</option>
+                                                    <option value="5">Value 5</option>
+                                                    <option value="6">Value 6</option>
+                                                    <option value="7">Value 7</option>
+                                                    <option value="8">Value 8</option>
+                                                    <option value="9" selected>Value 9</option>
+                                                    <option value="10">Value 10</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="static-50 padding-20 set-relative">
+                                        <div class="dark align-center set-absolute set-all">
+                                            <span class="set-absolute set-middle">
+                                                <i class="icon icon-lg icon-exchange-hor hidden-md"></i>
+                                                <i class="icon icon-lg icon-exchange-ver visible-md"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="select-multi rounded dual-bordered ease-form">
+                                                <select multiple size="10"></select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 ease-1st-btn">
+                                    <button type="reset" class="btn rounded">Reset Form</button>
+                                    <button type="submit" class="btn rounded theme-default2 ui-dark">Submit Form</button>
+                                </div>
+                            </div>
+
+                        </form>
+
                     </div>
 
                     <h4>Textarea Forms</h4>
@@ -264,7 +315,7 @@
                                 </label>
                             </li>
                         </ul>
-                        
+
                         <span class="sp5"></span>
                         <ul class="list-inline list-spacing">
                             <li>
@@ -306,7 +357,7 @@
                                 </label>
                             </li>
                         </ul>
-                    
+
                         <ul class="list-inline list-spacing">
                             <li>
                                 <label class="custom">
@@ -368,7 +419,7 @@
                                 </label>
                             </li>
                         </ul>
-                        
+
                     </div>
 
                     <h4>Inline Forms</h4>
@@ -377,7 +428,7 @@
                             <input type="text">
                         </div>
                         <div class="select margin-10-b rounded dual-bordered form-inline ease-form">
-                            <i class="icon icon-sm icon-angle-down ease-layout"></i>
+                            <i class="icon icon-xs icon-angle-down ease-layout"></i>
                             <select>
                                 <option value="">Select</option>
                                 <option>First</option>
@@ -395,7 +446,7 @@
                             <input type="text">
                         </div>
                         <div class="select margin-10-b rounded dual-bordered form-inline-responsive ease-form">
-                            <i class="icon icon-sm icon-angle-down ease-layout"></i>
+                            <i class="icon icon-xs icon-angle-down ease-layout"></i>
                             <select>
                                 <option value="">Select</option>
                                 <option>First</option>
@@ -504,7 +555,7 @@
                         </div>
                     </div>
 
-                    <h4>Submit with Form Icons<h4>
+                    <h4>Submit with Form Icons</h4>
                     <div class="padding-30-b">
                         <form action="#succesful">
                             <div class="text text-icon text-icon-right rounded dual-bordered ease-form">
@@ -577,7 +628,7 @@
                                     </div>
                                     <div class="col-2 col-xs-4 no-responsive">
                                         <div class="select rounded dual-bordered ease-form">
-                                            <i class="icon icon-sm icon-angle-down ease-layout"></i>
+                                            <i class="icon icon-xs icon-angle-down ease-layout"></i>
                                             <select>
                                                 <option value="">Select</option>
                                                 <option>First</option>
@@ -602,7 +653,7 @@
                                     <div class="col-static no-responsive">
                                         <div class="static-100">
                                             <div class="select rounded dual-bordered ease-form">
-                                                <i class="icon icon-sm icon-angle-down ease-layout"></i>
+                                                <i class="icon icon-xs icon-angle-down ease-layout"></i>
                                                 <select>
                                                     <option value="">Select</option>
                                                     <option>First</option>
@@ -644,7 +695,7 @@
                                         </div>
                                         <div class="static-100">
                                             <div class="select rounded dual-bordered ease-form">
-                                                <i class="icon icon-sm icon-angle-down ease-layout"></i>
+                                                <i class="icon icon-xs icon-angle-down ease-layout"></i>
                                                 <select>
                                                     <option value="">Select</option>
                                                     <option>First</option>
@@ -686,7 +737,7 @@
                                         </div>
                                         <div class="static-100">
                                             <div class="select rounded dual-bordered ease-form">
-                                                <i class="icon icon-sm icon-angle-down ease-layout"></i>
+                                                <i class="icon icon-xs icon-angle-down ease-layout"></i>
                                                 <select>
                                                     <option value="">Select</option>
                                                     <option>First</option>
@@ -714,7 +765,7 @@
                                         </div>
                                         <div class="static-100">
                                             <div class="select rounded dual-bordered ease-form">
-                                                <i class="icon icon-sm icon-angle-down ease-layout"></i>
+                                                <i class="icon icon-xs icon-angle-down ease-layout"></i>
                                                 <select>
                                                     <option value="">Select</option>
                                                     <option>First</option>
@@ -724,7 +775,7 @@
                                         </div>
                                         <div class="static-100">
                                             <div class="select rounded dual-bordered ease-form">
-                                                <i class="icon icon-sm icon-angle-down ease-layout"></i>
+                                                <i class="icon icon-xs icon-angle-down ease-layout"></i>
                                                 <select>
                                                     <option value="">Select</option>
                                                     <option>First</option>
@@ -849,12 +900,12 @@
                                 </div>
                             </div>
                             <div class="text text-icon margin-10-b rounded dual-bordered ease-form">
-                                <input id="my-password" type="password" placeholder="Toggle Password with Text Icon">
+                                <input id="my-password" type="password" placeholder="Toggle Password with Text Icon" autocomplete="current-password">
                             </div>
 
                             <div class="text text-icon rounded dual-bordered ease-form">
                                 <span title="Show/Hide Password" class="toggle-password icon icon-md icon-eye ease-layout"></span>
-                                <input type="password" placeholder="Toggle Password Example">
+                                <input type="password" placeholder="Toggle Password Example" autocomplete="current-password">
                             </div>
                         </div>
 
@@ -936,7 +987,7 @@
                                 </div>
                                 <div class="col-9">
                                     <div class="text rounded dual-bordered ease-form">
-                                        <input class="required" id="required5" type="password" minlength="8">
+                                        <input class="required" id="required5" type="password" minlength="8" autocomplete="current-password">
                                     </div>
                                     <p class="required-msg rounded">Minimum length is 8 characters.</p>
                                     <i class="hint dark">* Required</i>
@@ -958,7 +1009,7 @@
                                 </div>
                                 <div class="col-9">
                                     <div class="select rounded dual-bordered ease-form">
-                                        <i class="icon icon-sm icon-angle-down ease-layout"></i>
+                                        <i class="icon icon-xs icon-angle-down ease-layout"></i>
                                         <select id="required7" class="required">
                                             <option value="">Select</option>
                                             <option>First</option>
@@ -986,7 +1037,7 @@
                                                 </div>
                                                 <div class="static-200">
                                                     <div class="select rounded dual-bordered ease-form">
-                                                        <i class="icon icon-sm icon-angle-down ease-layout"></i>
+                                                        <i class="icon icon-xs icon-angle-down ease-layout"></i>
                                                         <select class="required">
                                                             <option value="">Category</option>
                                                             <option>First</option>
@@ -1072,7 +1123,7 @@
                                         </label>
                                     </div>
                                     <p class="required-msg rounded">Please, check this checkbox.</p>
-                                    <i class="hint dark">* Required</a></i>
+                                    <i class="hint dark">* Required</i>
                                 </div>
 
                                 <div class="col-3">
@@ -1207,7 +1258,7 @@
                                 </div>
                                 <div class="col-2 no-responsive">
                                     <div class="select rounded dual-bordered form-light ease-form">
-                                        <i class="icon icon-sm icon-angle-down ease-layout"></i>
+                                        <i class="icon icon-xs icon-angle-down ease-layout"></i>
                                         <select>
                                             <option value="">Select</option>
                                             <option>First</option>
@@ -1233,7 +1284,7 @@
                                 </div>
                                 <div class="col-2 no-responsive">
                                     <div class="select rounded margin-1-h no-bordered form-light ease-form">
-                                        <i class="icon icon-sm icon-angle-down ease-layout"></i>
+                                        <i class="icon icon-xs icon-angle-down ease-layout"></i>
                                         <select>
                                             <option value="">Select</option>
                                             <option>First</option>
@@ -1259,7 +1310,7 @@
                                 </div>
                                 <div class="col-2 no-responsive">
                                     <div class="select rounded margin-1-h no-bordered form-light ease-form">
-                                        <i class="icon icon-sm icon-angle-down ease-layout"></i>
+                                        <i class="icon icon-xs icon-angle-down ease-layout"></i>
                                         <select>
                                             <option value="">Select</option>
                                             <option>First</option>
@@ -1337,7 +1388,7 @@
                                 <input type="text" placeholder="Warning Form">
                             </div>
                             <div class="select margin-10-b">
-                                <i class="icon icon-sm icon-angle-down ease-layout"></i>
+                                <i class="icon icon-xs icon-angle-down ease-layout"></i>
                                 <select>
                                     <option value="">Select</option>
                                     <option>First</option>
@@ -1387,7 +1438,7 @@
                                 <input type="text" placeholder="Warning Form">
                             </div>
                             <div class="select margin-10-b inner-shadow no-bordered">
-                                <i class="icon icon-sm icon-angle-down ease-layout"></i>
+                                <i class="icon icon-xs icon-angle-down ease-layout"></i>
                                 <select>
                                     <option value="">Select</option>
                                     <option>First</option>
@@ -1437,7 +1488,7 @@
                                 <input type="text" placeholder="Warning Form">
                             </div>
                             <div class="select margin-10-b rounded no-bordered ui-x-light">
-                                <i class="icon icon-sm icon-angle-down ease-layout"></i>
+                                <i class="icon icon-xs icon-angle-down ease-layout"></i>
                                 <select>
                                     <option value="">Select</option>
                                     <option>First</option>
