@@ -25,10 +25,10 @@
 
     .text,.select,.select-multi,.textarea,.file,.check-custom,.radio-custom,.switch-custom,.form-holder .btn[class*="bordered"],.form-holder img[class*="bordered"] { border-color: rgba(255,255,255,.3); }
     .text input:not(:focus),.select select:not(:focus),.select-multi select:not(:focus),.textarea textarea:not(:focus) { color: #fff; }
-    .select-multi option:nth-child(even) { background-color: rgba(255,255,255,.05); }
+    .select-multi option { border-bottom-color: rgba(255,255,255,.065); }
     html:not(.mobile) .file:hover .btn { background-color: rgba(255,255,255,.15); }
     .text-icon > button.icon { color: #fff; }
-    
+
     .check-custom i,.radio-custom i { background-color: rgba(255,255,255,.65); }
     .switch-custom input:not(:checked):not(:indeterminate) + i,.switch-custom input:not(:checked) + i[class*="ui-"] { background-color: rgba(255,255,255,.15); }
 
@@ -61,7 +61,7 @@
     .dropdown ul.content.has-grid li.sep:nth-child(even) ~ li:not(.sep):nth-child(odd) { border-right-color: rgba(255,255,255,.065); }
 
     .portlet,[class*="portlet-"] { background-color: #2f343e; }
-    
+
     .page-social > .btn { background-color: #292c35; }
     .theme-facebook.ui-dark .icon { color: #3b5998; }
     .theme-twitter.ui-dark .icon { color: #1da1f2; }
@@ -97,7 +97,7 @@
     .steps-bar li.active ~ li:before { background-color: #15181d; border-color: rgba(255,255,255,.12) !important; }
     .portlet .steps-bar li.active ~ li:before { background-color: #2f343e; border-color: #2f343e; }
     .steps-bar li.active ~ li:after { background-color: rgba(255,255,255,.12); }
-    
+
     .table { background-color: #2f343e; }
     .table:not(.no-separated) th,.table:not(.no-separated) td { border-bottom-color: #41454d; }
     .table caption { background-color: rgba(255,255,255,.025); }
@@ -190,7 +190,7 @@
 
     .set-dark:not(.theme-gray)[class*="theme-"][class*="ui-"],.set-dark:not(.theme-light)[class*="theme-"] [class*="ui-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) { background-color: #0b0d10; }
     .set-dark:not(.theme-gray)[class*="theme-"][class*="ui-x-"],.set-dark:not(.theme-light)[class*="theme-"] [class*="ui-x-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) { background-color: #07080a; }
-    
+
     .theme-gray.ui-x-light,.theme-gray .ui-x-light:not([class*="theme-"]) { background-color: #444952; } /* #434b5a */
     .theme-gray.ui-light,.theme-gray .ui-light:not([class*="theme-"]) { background-color: #363c48; }
     .theme-gray.ui-dark,.theme-gray .ui-dark:not([class*="theme-"]) { background-color: #2f343e; }

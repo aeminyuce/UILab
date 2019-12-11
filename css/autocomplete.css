@@ -19,6 +19,5 @@
 .autocomplete.submenu-top.dual-bordered ul { margin-bottom: 3px; }
 .autocomplete.submenu-top.no-bordered ul { margin-bottom: 1px; }
 
-.autocomplete ul.circle { border-radius: 16px; }
 .autocomplete li { white-space: nowrap; text-overflow: ellipsis; text-align: left; line-height: 20px; height: 30px; padding: 5px 10px; overflow: hidden; }
 html:not(.mobile) .autocomplete li:hover,.autocomplete li.selected { background-color: rgba(0,0,0,.075); cursor: default; }
