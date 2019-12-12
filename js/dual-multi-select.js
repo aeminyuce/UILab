@@ -11,17 +11,34 @@ var dualMultiSelect = {};
     /*globals document, selector, events, ajax, setTimeout */
 
     var
-        loadDualMultiSelects,
-        resetDualMultiSelects;
+        resetOptions,
+        loadSelects,
+        resetSelects;
 
     dualMultiSelect.Start = function () {
 
-        // Events
-        loadDualMultiSelects = function () {
+        resetOptions = function (selects) { // reset options
+
+            var sourceList, targetList;
+
+            sourceList = selector('option', selects[0]);
+            targetList = selector('option', selects[1]);
+
+            events.each(sourceList, function () {
+                this.selected = false;
+            });
+
+            events.each(targetList, function () {
+                this.selected = true;
+            });
+
+        };
+
+        loadSelects = function () {
 
             var i, holder, selects, name, arr, userArr, arrStart, index, options, selected;
 
-            holder = selector('.dual-select-multi');
+            holder = selector('.dual-multi-select');
             events.each(holder, function () {
 
                 arr = [];
@@ -83,42 +100,33 @@ var dualMultiSelect = {};
                 events.each(options, function (j) {
 
                     this.setAttribute('data-index', arr[j]);
-                    this.selected = false; // reset options
 
                     if (userArr.length > 0) { // move user defined options from source to target select by index
 
                         index = Number(arr.indexOf(userArr[j]));
-                        if (index > -1) {
-
-                            options[index].selected = true;
-                            selects[1].appendChild(options[index]);
-
-                        }
+                        if (index > -1) { selects[1].appendChild(options[index]); }
 
                     } else { // move options selected with attribute from source to target
 
                         selected = this.getAttribute('selected');
-                        if (selected !== null) {
-
-                            this.selected = true;
-                            selects[1].appendChild(this);
-
-                        }
+                        if (selected !== null) { selects[1].appendChild(this); }
 
                     }
 
                 });
 
+                resetOptions(selects); // reset options
+
             });
 
         };
-        loadDualMultiSelects();
+        loadSelects();
 
-        resetDualMultiSelects = function () {
+        resetSelects = function () {
 
             var i, holder, selects, sourceList, targetList, selected;
 
-            holder = selector('.dual-select-multi');
+            holder = selector('.dual-multi-select');
             events.each(holder, function () {
 
                 selects = selector('.select-multi select[multiple]', this);
@@ -128,82 +136,71 @@ var dualMultiSelect = {};
 
                 events.each(targetList, function () {
 
-                    i = Number(this.getAttribute('data-index')) - 1;
-                    this.selected = false; // reset target list options
-
-                    // move options to source that not selected with attribute
                     selected = this.getAttribute('selected');
+                    i = Number(this.getAttribute('data-index')) - 1;
 
-                    if (selected === null) {
+                    if (selected === null) { // move options to source that not selected with attribute
 
-                        this.selected = true;
-                        selects[0].insertBefore(this, sourceList[i]);
+                        if (sourceList === undefined) {
+                            selects[0].appendChild(this);
 
+                        } else {
+                            selects[0].insertBefore(this, sourceList[i]);
+                        }
                     }
 
                 });
 
                 events.each(sourceList, function () {
 
-                    this.selected = false; // reset source list options
-
-                    // move options to target that selected with attribute
                     selected = this.getAttribute('selected');
+                    if (selected !== null) { // move options to target that selected with attribute
 
-                    if (selected !== null ) {
+                        if (targetList === undefined) {
+                            selects[1].appendChild(this);
 
-                        this.selected = true;
-                        selects[1].insertBefore(this, targetList[i]);
-
+                        } else {
+                            selects[1].insertBefore(this, targetList[i]);
+                        }
                     }
 
                 });
 
+                resetOptions(selects); // reset options
 
             });
 
         };
 
-        events.on(document, 'click', '.dual-select-multi .select-multi select[multiple] option', function () {
+        // Events
+        events.on(document, 'click', '.dual-multi-select .select-multi select[multiple] option', function () {
 
-            var i, selects, parent, index, sourceList, targetList, resetOptions;
+            var i, selects, parent, index, sourceList;
 
-            selects = events.closest(this, '.dual-select-multi')[0];
+            selects = events.closest(this, '.dual-multi-select')[0];
             selects = selector('.select-multi select[multiple]', selects);
 
             parent = events.closest(this, '.select-multi select[multiple]')[0];
             index = Array.prototype.slice.call(selects).indexOf(parent);
 
-            resetOptions = function (sourceList) { // reset options
-
-                if (sourceList === undefined) {
-                    sourceList = selector('option', selects[0]);
-                }
-
-                events.each(sourceList, function () {
-                    this.selected = false;
-                });
-
-                targetList = selector('option', selects[1]);
-
-                events.each(targetList, function () {
-                    this.selected = true;
-                });
-
-            };
-
             if (index === 0) { // move from source to target select
 
                 selects[1].appendChild(this);
-                resetOptions();
+                resetOptions(selects); // reset options
 
             } else { // move from target to source select
 
                 i = this.getAttribute('data-index') - 1;
                 sourceList = selector('option', selects[0]);
 
-                selects[0].insertBefore(this, sourceList[i]);
-                resetOptions(sourceList);
+                if (sourceList === undefined) {
+                    selects[0].appendChild(this);
+
+                } else {
+                    selects[0].insertBefore(this, sourceList[i]);
+                }
+
+                resetOptions(selects); // reset options
 
             }
 
@@ -213,7 +210,7 @@ var dualMultiSelect = {};
         events.on(document, 'reset', 'form', function () {
 
             // wait for form reset started on DOM
-            setTimeout(resetDualMultiSelects, 0);
+            setTimeout(resetSelects, 0);
 
         });
 
@@ -224,7 +221,7 @@ var dualMultiSelect = {};
 
     // ajax callback loader: requires Ajax JS
     events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.classNames.indexOf('dual-select-multi') > 0) { loadDualMultiSelects(); }
+        if (ajax.classNames.indexOf('dual-multi-select') > 0) { loadSelects(); }
     });
 
 }());
