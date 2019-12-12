@@ -25,24 +25,33 @@
 
     .text,.select,.select-multi,.textarea,.file,.check-custom,.radio-custom,.switch-custom,.form-holder .btn[class*="bordered"],.form-holder img[class*="bordered"] { border-color: rgba(255,255,255,.3); }
     .text input:not(:focus),.select select:not(:focus),.select-multi select:not(:focus),.textarea textarea:not(:focus) { color: #fff; }
+    .select select option,.select select optgroup { color: #fff; background-color: #41454d;}
     .select-multi option { border-bottom-color: rgba(255,255,255,.065); }
     html:not(.mobile) .file:hover .btn { background-color: rgba(255,255,255,.15); }
     .text-icon > button.icon { color: #fff; }
 
-    .check-custom i,.radio-custom i { background-color: rgba(255,255,255,.65); }
-    .switch-custom input:not(:checked):not(:indeterminate) + i,.switch-custom input:not(:checked) + i[class*="ui-"] { background-color: rgba(255,255,255,.15); }
-
-    .form-holder-focus .text,.form-holder-focus .select,.form-holder-focus .btn[class*="bordered"],.form-holder-focus img[class*="bordered"] { border-color: rgba(255,255,255,.5); }
-
-    .form-disabled { background-color: rgba(255,255,255,.075); }
+    .form-focus { border-color: rgba(255,255,255,.35); }
+    .form-focus:not(.form-readonly) { background-color: rgba(255,255,255,.075) !important; }
+    .form-focus > input,.form-focus > select,.form-focus > textarea,.form-focus > .icon:not([class*="ui-"]) { color: #fff !important; }
 
     /* do not group */
     ::-webkit-input-placeholder { color: rgba(255,255,255,.4); }
     ::-moz-placeholder { color: rgba(255,255,255,.4); opacity: 1; }
 
+    .form-focus > ::-webkit-input-placeholder { color: rgba(255,255,255,.23); }
+    .form-focus > ::-moz-placeholder { color: rgba(255,255,255,.23); opacity: 1; }
+
     .form-light.form-focus > ::-webkit-input-placeholder { color: rgba(255,255,255,.4); }
     .form-light.form-focus > ::-moz-placeholder { color: rgba(255,255,255,.4); opacity: 1; }
     /* do not group */
+
+    .check-custom i,.radio-custom i { background-color: rgba(255,255,255,.65); }
+    .switch-custom input:not(:checked):not(:indeterminate) + i,.switch-custom input:not(:checked) + i[class*="ui-"] { background-color: rgba(255,255,255,.15); }
+
+    .form-holder-focus .text,.form-holder-focus .select,.form-holder-focus .btn[class*="bordered"],.form-holder-focus img[class*="bordered"] { border-color: rgba(255,255,255,.5); }
+    .form-disabled { background-color: rgba(255,255,255,.075); }
+
+    .autocomplete ul { color: #fff; background-color: #41454d; }
 
     html:not(.mobile) .btn:not([class*="ui-"]):not(.btn-passive):not(.swatch-active):hover { background-color: rgba(255,255,255,.15); }
     html:not(.mobile) .btn.btn-ghost:not([class*="ui-"]):not(.btn-passive):not(.swatch-active):hover { background-color: rgba(255,255,255,.075); }
