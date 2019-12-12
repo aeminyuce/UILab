@@ -12,8 +12,7 @@ var forms = {};
 
     var
         clearForms,
-        loadClearForms,
-        loadToggleMultiSelects;
+        loadClearForms;
 
     forms.Start = function () {
 
@@ -149,65 +148,6 @@ var forms = {};
 
         });
 
-        // toggle multi selects
-        loadToggleMultiSelects = function () {
-
-            var i, holder, selects, name, options;
-
-            holder = selector('.toggle-select-multi');
-            events.each(holder, function () {
-
-                selects = selector('.select-multi select[multiple]', this);
-
-                // move name attribute from source to target select
-                name = selects[0].name;
-
-                selects[0].removeAttribute('name');
-                selects[1].name = name;
-
-                // move selected options from source to target select
-                options = selector('option', selects[0]);
-                events.each(options, function () {
-
-                    i = Array.prototype.slice.call(options).indexOf(this) + 1;
-                    this.setAttribute('data-index', i);
-
-                    if (this.selected) {
-                        selects[1].appendChild(this);
-                    }
-
-                });
-
-            });
-
-        };
-        loadToggleMultiSelects();
-
-        events.on(document, 'click', '.toggle-select-multi .select-multi select[multiple] option', function () {
-
-            var i, selects, parent, index, options;
-
-            selects = events.closest(this, '.toggle-select-multi')[0];
-            selects = selector('.select-multi select[multiple]', selects);
-
-            parent = events.closest(this, '.select-multi select[multiple]')[0];
-            index = Array.prototype.slice.call(selects).indexOf(parent);
-
-            if (index === 0) { // move from source to target select
-
-                selects[1].appendChild(this);
-
-            } else { // move from target to source select
-
-                i = this.getAttribute('data-index') - 1;
-
-                options = selector('option', selects[0]);
-                selects[0].insertBefore(this, options[i]);
-
-            }
-
-        });
-
         // form icons
         if (useragents.mobile) { // fix: buttons not clicked on form focus at mobile devices
 
@@ -233,11 +173,10 @@ var forms = {};
 
         }
 
-        // trigger custom events on form Submit
+        // trigger custom events on form reset
         events.on(document, 'reset', 'form', function (e) {
 
             var forms, errors, reqMessages;
-
             forms = Array.prototype.slice.call(e.target);
 
             errors = selector('.error', this);
@@ -293,10 +232,7 @@ var forms = {};
 
     // ajax callback loader: requires Ajax JS
     events.on(document, 'ajaxCallbacks', function () {
-
         if (ajax.classNames.indexOf('clear-form') > 0) { loadClearForms(); }
-        if (ajax.classNames.indexOf('toggle-select-multi') > 0) { loadToggleMultiSelects(); }
-
     });
 
 }());
