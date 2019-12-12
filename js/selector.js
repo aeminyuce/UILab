@@ -6,7 +6,7 @@
 var selector = function (item, outer) {
 
     'use strict';
-    var objName, call, outerEl, outerElIndex, foundEl = [], i = 0;
+    var i, objName, call, outerEl, outerElIndex, foundEl = [];
 
     if (typeof item === 'object') {
 
@@ -44,9 +44,13 @@ var selector = function (item, outer) {
             for (i = 0; i < outerEl.length; i += 1) {
 
                 outerElIndex = outerEl[i].querySelectorAll(item);
-
                 if (outerEl.length === 1) {
+
                     foundEl = outerElIndex[0];
+
+                    if (foundEl === undefined) { // when founded item length is 1, foundEl returned undefined (select option elements)
+                        foundEl = outerEl.querySelectorAll(item);
+                    }
 
                 } else {
                     foundEl = foundEl.concat(outerElIndex); // merge arrays
