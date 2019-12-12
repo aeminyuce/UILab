@@ -1,7 +1,7 @@
 /* top button */
-.top-button { text-align: center; width: 40px; height: 40px; background-color: #000; display: none; border: 0; position: fixed; right: 20px; bottom: 20px; z-index: 7; opacity: 0; }
+.top-button { text-align: center; width: 40px; height: 40px; background-color: #000; display: none; border: 0; position: fixed; right: 20px; bottom: 50px; z-index: 7; opacity: 0; }
 .top-button.open { display: block; }
-.top-button.open-ease { opacity: .2; }
+.top-button.open-ease { opacity: .2; transform: translateY(30px); }
 .mobile-keyboard .top-button { display: none !important; }
 
 .top-button > .icon { color: #fff; }
