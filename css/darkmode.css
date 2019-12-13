@@ -26,7 +26,7 @@
     .text,.select,.select-multi,.textarea,.file,.check-custom,.radio-custom,.switch-custom,.form-holder .btn[class*="bordered"],.form-holder img[class*="bordered"] { border-color: rgba(255,255,255,.3); }
     .text input:not(:focus),.select select:not(:focus),.select-multi select:not(:focus),.textarea textarea:not(:focus) { color: #fff; }
     .select select option,.select select optgroup { color: #fff; background-color: #41454d;}
-    .select-multi option { border-bottom-color: rgba(255,255,255,.065); }
+    .select-multi option:not(:last-child) { border-bottom-color: rgba(255,255,255,.065); }
     html:not(.mobile) .file:hover .btn { background-color: rgba(255,255,255,.15); }
     .text-icon > button.icon { color: #fff; }
 
