@@ -13,6 +13,7 @@ var dualMultiSelect = {};
     var
         resetOptions,
         loadSelects,
+        movetoSource,
         resetSelects;
 
     dualMultiSelect.Start = function () {
@@ -122,6 +123,65 @@ var dualMultiSelect = {};
         };
         loadSelects();
 
+        movetoSource = function (that, selects) {
+
+            var i, j, sourceList, index, arr, inserted;
+
+            i = Number(that.getAttribute('data-index'));
+            sourceList = selector('option', selects[0]);
+
+            if (sourceList.length === 0) {
+
+                // first moving to empty list
+                selects[0].appendChild(that);
+
+            } else if (sourceList.length === 1) {
+
+                // only one option in list
+                index = Number(sourceList[0].getAttribute('data-index'));
+
+                if (i > index) {
+                    selects[0].appendChild(that);
+
+                } else {
+                    selects[0].insertBefore(that, sourceList[0]);
+                }
+
+            } else {
+
+                arr = [];
+                inserted = false;
+
+                // move to index
+                for (j = 0; j < sourceList.length; j += 1) {
+
+                    index = Number(sourceList[j].getAttribute('data-index'));
+                    arr.push(index);
+
+                    if (index - 1 >= i) {
+
+                        inserted = true;
+                        selects[0].insertBefore(that, sourceList[j]);
+
+                        break;
+
+                    }
+
+                }
+
+                // move biggest index to end of the list
+                if (!inserted) {
+
+                    if (i > arr.sort()[arr.length - 1]) {
+                        selects[0].appendChild(that);
+                    }
+
+                }
+
+            }
+
+        };
+
         resetSelects = function () {
 
             var i, holder, selects, sourceList, targetList, selected;
@@ -140,13 +200,7 @@ var dualMultiSelect = {};
                     i = Number(this.getAttribute('data-index')) - 1;
 
                     if (selected === null) { // move options to source that not selected with attribute
-
-                        if (sourceList === undefined) {
-                            selects[0].appendChild(this);
-
-                        } else {
-                            selects[0].insertBefore(this, sourceList[i]);
-                        }
+                        movetoSource(this, selects);
                     }
 
                 });
@@ -175,34 +229,22 @@ var dualMultiSelect = {};
         // Events
         events.on(document, 'click', '.dual-multi-select .select-multi select[multiple] option', function () {
 
-            var i, selects, parent, index, sourceList;
+            var selects, parent, dir;
 
             selects = events.closest(this, '.dual-multi-select')[0];
             selects = selector('.select-multi select[multiple]', selects);
 
             parent = events.closest(this, '.select-multi select[multiple]')[0];
-            index = Array.prototype.slice.call(selects).indexOf(parent);
+            dir = Array.prototype.slice.call(selects).indexOf(parent);
 
-            if (index === 0) { // move from source to target select
-
+            if (dir === 0) { // move from source to target select
                 selects[1].appendChild(this);
-                resetOptions(selects); // reset options
 
             } else { // move from target to source select
-
-                i = this.getAttribute('data-index') - 1;
-                sourceList = selector('option', selects[0]);
-
-                if (sourceList === undefined) {
-                    selects[0].appendChild(this);
-
-                } else {
-                    selects[0].insertBefore(this, sourceList[i]);
-                }
-
-                resetOptions(selects); // reset options
-
+                movetoSource(this, selects);
             }
+
+            resetOptions(selects); // reset options
 
         });
 
