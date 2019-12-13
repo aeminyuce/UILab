@@ -191,9 +191,7 @@ var dualMultiSelect = {};
 
                 selects = selector('.select-multi select[multiple]', this);
 
-                sourceList = selector('option', selects[0]);
                 targetList = selector('option', selects[1]);
-
                 events.each(targetList, function () {
 
                     selected = this.getAttribute('selected');
@@ -205,6 +203,9 @@ var dualMultiSelect = {};
 
                 });
 
+                targetList = selector('option', selects[1]); // reload modified list
+
+                sourceList = selector('option', selects[0]);
                 events.each(sourceList, function () {
 
                     selected = this.getAttribute('selected');
