@@ -32,6 +32,8 @@
 .ie .select select::-ms-expand { display: none; }
 
 .ie .select-multi { padding: 5px; }
+.select-multi select { margin-bottom: -2px; }
+.edge .select-multi select { margin-bottom: -5px; }
 .select-multi option,.select-multi optgroup { padding: 3px 5px; }
 .select-multi option:not(:last-child) { border-bottom: solid 1px rgba(0,0,0,.045); }
 
