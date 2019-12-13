@@ -102,7 +102,7 @@ var dualMultiSelect = {};
 
                     this.setAttribute('data-index', arr[j]);
 
-                    if (userArr.length > 0) { // move user defined options from source to target select by index
+                    if (userArr.length > 0) { // move user defined options from source to target by index
 
                         index = Number(arr.indexOf(userArr[j]));
                         if (index > -1) { selects[1].appendChild(options[index]); }
@@ -210,7 +210,7 @@ var dualMultiSelect = {};
                     selected = this.getAttribute('selected');
                     if (selected !== null) { // move options to target that selected with attribute
 
-                        if (targetList === undefined) {
+                        if (targetList.length === 0) {
                             selects[1].appendChild(this);
 
                         } else {
