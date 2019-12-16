@@ -232,5 +232,6 @@ var dropdown = {};
 
     // Loaders
     events.onload(dropdown.Start);
+    events.on(window, 'resize', dropdownClose);
 
 }());
