@@ -70,6 +70,7 @@
     .dropdown ul.content.has-grid li.sep:nth-child(even) ~ li:not(.sep):nth-child(odd) { border-right-color: rgba(255,255,255,.065); }
 
     .portlet,[class*="portlet-"] { background-color: #2f343e; }
+    .close-portlet { color: #fff; }
 
     .page-social > .btn { background-color: #292c35; }
     .theme-facebook.ui-dark .icon { color: #3b5998; }
