@@ -17,7 +17,7 @@ var dualMultiSelect = {};
 
     dualMultiSelect.Start = function () {
 
-        resetOptions = function (selects) { // reset options
+        resetOptions = function (selects, isSubmit) { // reset options
 
             var sourceList, targetList;
 
@@ -29,7 +29,14 @@ var dualMultiSelect = {};
             });
 
             events.each(targetList, function () {
-                this.selected = true;
+
+                if (isSubmit === undefined) {
+                    this.selected = false;
+
+                } else {
+                    this.selected = true;
+                }
+
             });
 
         };
@@ -263,6 +270,28 @@ var dualMultiSelect = {};
                 });
 
             }, 0);
+
+        });
+
+        events.on(document, 'submit', 'form', function (e) {
+
+            var elems, selects;
+
+            elems = Array.prototype.slice.call(e.target); // get submitted element list
+            events.each(elems, function () {
+
+                if (this.tagName === 'SELECT' && this.multiple) { // get multiple selects
+
+                    selects = events.closest(this, '.dual-multi-select')[0];
+                    selects = selector('.select-multi select[multiple]', selects);
+
+                    if (selects !== undefined) {
+                        resetOptions(selects, true); // reset options, set target list to selected before submit
+                    }
+
+                }
+
+            });
 
         });
 
