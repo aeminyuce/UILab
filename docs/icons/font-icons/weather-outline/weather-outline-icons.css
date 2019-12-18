@@ -1,13 +1,13 @@
 /* weather outline icons */
 @font-face {
   font-family: 'weather-outline-icons';
-  src:  url('fonts/weather-outline-icons.eot?uvfj9d');
-  src:  url('fonts/weather-outline-icons.eot?uvfj9d#iefix') format('embedded-opentype'),
-    url('fonts/weather-outline-icons.ttf?uvfj9d') format('truetype'),
-    url('fonts/weather-outline-icons.woff?uvfj9d') format('woff'),
-    url('fonts/weather-outline-icons.svg?uvfj9d#weather-outline-icons') format('svg');
+  src:
+    url('fonts/weather-outline-icons.ttf?j60slh') format('truetype'),
+    url('fonts/weather-outline-icons.woff?j60slh') format('woff'),
+    url('fonts/weather-outline-icons.svg?j60slh#weather-outline-icons') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 .icon-weather {
