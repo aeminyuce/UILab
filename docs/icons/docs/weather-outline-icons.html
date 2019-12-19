@@ -16,6 +16,7 @@
     <!-- CSS Tools -->
     <link rel="stylesheet" href="../../../css/reset.css"/>
 
+    <link rel="stylesheet" href="../../../css/alerts.css"/>
     <link rel="stylesheet" href="../../../css/alignments.css"/>
     <link rel="stylesheet" href="../../../css/buttons.css"/>
     <link rel="stylesheet" href="../../../css/borders.css"/>
@@ -32,12 +33,13 @@
 
     <link rel="stylesheet" href="../../../css/swatches.css"/>
     <link rel="stylesheet" href="../../../css/darkmode.css"/>
-    
+
     <!-- Javascript Tools -->
     <script src="../../../js/selector.js"></script>
     <script src="../../../js/events.js"></script>
     <script src="../../../js/user-agents.js"></script>
-    
+
+    <script src="../../../js/alerts.js"></script>
     <script src="../../../js/sticky-header.js"></script>
     <script src="../../../js/top-button.js"></script>
 
@@ -60,34 +62,46 @@
         .icons-list li {
             color: #364860;
             text-align: center;
-            width: 126px;
+            width: 140px;
             background-color: #fff;
-            padding: 10px 5px;
-            margin: 3px;
+            padding: 15px 10px;
+            margin: 2px 0;
             display: inline-block;
-            border: solid 2px #ddd;
+            border: solid 2px rgba(0,0,0,.15);
             border-radius: 6px;
+            cursor: pointer;
+        }
+        html:not(.mobile) .icons-list li:hover {
+            background-color: rgba(0,0,0,.065);
         }
         .icons-list li > span {
             content: attr(data-name);
             color: #666;
             font-size: 13px;
             font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+            white-space: nowrap;
+            text-overflow: ellipsis;
             line-height: normal;
-            margin-top: 5px;
+            margin-top: 10px;
+            overflow: hidden;
             display: block;
         }
 
+        @media (max-width: 767px) and (min-width: 481px) {
+            .icons-list li { width: 32%;}
+        }
         @media (max-width: 480px) {
-            .icons-list li { width: 42%;}
-            .icon { width: 100%;}
+            .icons-list li { width: 49%;}
         }
 
         @media (prefers-color-scheme: dark) {
             .icons-list li {
                 color: #fff;
                 background-color: #2f343e;
-                border-color: #41454d;
+                border-color: rgba(255,255,255,.15);
+            }
+            html:not(.mobile) .icons-list li:hover {
+                background-color: #3c424d;
             }
             .icons-list li > span {
                 color: #d0d0d0;
@@ -103,7 +117,9 @@
 
             'use strict';
 
-            var buttons = selector('.icons-sizes .btn');
+            var buttons, icons;
+
+            buttons = selector('.icons-sizes .btn');
             events.on(buttons, 'click', function () {
 
                 var icons = selector('.icons-list .icon');
@@ -112,7 +128,29 @@
                 events.addClass(this, 'selected');
 
                 events.removeClass(icons, 'icon-xxl icon-xl icon-lg icon-md icon-sm icon-xs icon-xxs');
-                events.addClass(icons, 'icon-' + this.innerHTML);
+                events.addClass(icons, 'icon-' + this.textContent);
+
+            });
+
+            icons = selector('.icons-list li');
+            events.on(icons, 'click', function () {
+
+                var range, iconName;
+
+                range = document.createRange();
+
+                iconName = selector('span', this)[0];
+                range.selectNode(iconName);
+
+                window.getSelection().removeAllRanges();
+                window.getSelection().addRange(range);
+
+                document.execCommand('copy');
+
+                alerts.message({
+                    msg: 'Copied icon-name: ' + iconName.textContent,
+                    theme: 'success'
+                });
 
             });
 
@@ -137,37 +175,41 @@
     <!-- documentation examples -->
     <main class="container">
         <div class="row">
-            <div class="col-12 padding-30 align-center">
+            <div class="col-12 align-center">
+                <div class="col-12 padding-30 align-center">
 
-                <div class="icons-sizes ease-1st-btn">
-                    <button class="selected btn rounded">xxl</button>
-                    <button class="btn rounded">xl</button>
-                    <button class="btn rounded">lg</button>
-                    <button class="btn rounded">md</button>
-                    <button class="btn rounded">sm</button>
-                    <button class="btn rounded">xs</button>
-                    <button class="btn rounded">xxs</button>
+                    <div class="icons-sizes ease-1st-btn">
+                        <button class="selected btn btn-square rounded">xxl</button>
+                        <button class="btn btn-square rounded">xl</button>
+                        <button class="btn btn-square rounded">lg</button>
+                        <button class="btn btn-square rounded">md</button>
+                        <button class="btn btn-square rounded">sm</button>
+                        <button class="btn btn-square rounded">xs</button>
+                        <button class="btn btn-square rounded">xxs</button>
+                    </div>
+
+                    <ul class="list-custom icons-list ease-1st-bg no-user-select">
+                        <li><i class="icon icon-xxl icon-weather icon-bolt"></i><span>bolt</span></li>
+                        <li><i class="icon icon-xxl icon-weather icon-cloud"></i><span>cloud</span></li>
+                        <li><i class="icon icon-xxl icon-weather icon-cloud-fog"></i><span>cloud-fog</span></li>
+                        <li><i class="icon icon-xxl icon-weather icon-cloud-moon"></i><span>cloud-moon</span></li>
+                        <li><i class="icon icon-xxl icon-weather icon-clouds"></i><span>clouds</span></li>
+                        <li><i class="icon icon-xxl icon-weather icon-cloud-sun"></i><span>cloud-sun</span></li>
+                        <li><i class="icon icon-xxl icon-weather icon-cold"></i><span>cold</span></li>
+                        <li><i class="icon icon-xxl icon-weather icon-fog"></i><span>fog</span></li>
+                        <li><i class="icon icon-xxl icon-weather icon-moon"></i><span>moon</span></li>
+                        <li><i class="icon icon-xxl icon-weather icon-rain"></i><span>rain</span></li>
+                        <li><i class="icon icon-xxl icon-weather icon-rain-heavy"></i><span>rain-heavy</span></li>
+                        <li><i class="icon icon-xxl icon-weather icon-rain-snow"></i><span>rain-snow</span></li>
+                        <li><i class="icon icon-xxl icon-weather icon-snow"></i><span>snow</span></li>
+                        <li><i class="icon icon-xxl icon-weather icon-sun"></i><span>sun</span></li>
+                        <li><i class="icon icon-xxl icon-weather icon-sunrise"></i><span>sunrise</span></li>
+                        <li><i class="icon icon-xxl icon-weather icon-sunset"></i><span>sunset</span></li>
+                        <li><i class="icon icon-xxl icon-weather icon-temperature"></i><span>temperature</span></li>
+                        <li><i class="icon icon-xxl icon-weather icon-wind"></i><span>wind</span></li>
+                    </ul>
+
                 </div>
-
-                <ul class="list-custom icons-list">
-                    <li><i class="icon icon-xxl icon-weather icon-bolt"></i><span>bolt</span></li>
-                    <li><i class="icon icon-xxl icon-weather icon-cloud-moon"></i><span>cloud-moon</span></li>
-                    <li><i class="icon icon-xxl icon-weather icon-cloud-sun"></i><span>cloud-sun</span></li>
-                    <li><i class="icon icon-xxl icon-weather icon-cloud"></i><span>cloud</span></li>
-                    <li><i class="icon icon-xxl icon-weather icon-clouds"></i><span>clouds</span></li>
-                    <li><i class="icon icon-xxl icon-weather icon-cold"></i><span>cold</span></li>
-                    <li><i class="icon icon-xxl icon-weather icon-fog"></i><span>fog</span></li>
-                    <li><i class="icon icon-xxl icon-weather icon-moon"></i><span>moon</span></li>
-                    <li><i class="icon icon-xxl icon-weather icon-rain-heavy"></i><span>rain-heavy</span></li>
-                    <li><i class="icon icon-xxl icon-weather icon-rain-snow"></i><span>rain-snow</span></li>
-                    <li><i class="icon icon-xxl icon-weather icon-rain"></i><span>rain</span></li>
-                    <li><i class="icon icon-xxl icon-weather icon-snow"></i><span>snow</span></li>
-                    <li><i class="icon icon-xxl icon-weather icon-sun"></i><span>sun</span></li>
-                    <li><i class="icon icon-xxl icon-weather icon-sunrise"></i><span>sunrise</span></li>
-                    <li><i class="icon icon-xxl icon-weather icon-sunset"></i><span>sunset</span></li>
-                    <li><i class="icon icon-xxl icon-weather icon-temperature"></i><span>temperature</span></li>
-                    <li><i class="icon icon-xxl icon-weather icon-wind"></i><span>wind</span></li>
-                </ul>
 
             </div>
         </div>
