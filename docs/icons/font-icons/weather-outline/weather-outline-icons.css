@@ -2,9 +2,9 @@
 @font-face {
   font-family: 'weather-outline-icons';
   src:
-    url('fonts/weather-outline-icons.ttf?j60slh') format('truetype'),
-    url('fonts/weather-outline-icons.woff?j60slh') format('woff'),
-    url('fonts/weather-outline-icons.svg?j60slh#weather-outline-icons') format('svg');
+    url('fonts/weather-outline-icons.ttf?gsbn9v') format('truetype'),
+    url('fonts/weather-outline-icons.woff?gsbn9v') format('woff'),
+    url('fonts/weather-outline-icons.svg?gsbn9v#weather-outline-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -31,48 +31,51 @@
 .icon-cloud:before {
   content: "\e901";
 }
-.icon-cloud-moon:before {
+.icon-cloud-fog:before {
   content: "\e902";
 }
-.icon-clouds:before {
+.icon-cloud-moon:before {
   content: "\e903";
 }
-.icon-cloud-sun:before {
+.icon-clouds:before {
   content: "\e904";
 }
-.icon-cold:before {
+.icon-cloud-sun:before {
   content: "\e905";
 }
-.icon-fog:before {
+.icon-cold:before {
   content: "\e906";
 }
-.icon-moon:before {
+.icon-fog:before {
   content: "\e907";
 }
-.icon-rain:before {
+.icon-moon:before {
   content: "\e908";
 }
-.icon-rain-heavy:before {
+.icon-rain:before {
   content: "\e909";
 }
-.icon-rain-snow:before {
+.icon-rain-heavy:before {
   content: "\e90a";
 }
-.icon-snow:before {
+.icon-rain-snow:before {
   content: "\e90b";
 }
-.icon-sun:before {
+.icon-snow:before {
   content: "\e90c";
 }
-.icon-sunrise:before {
+.icon-sun:before {
   content: "\e90d";
 }
-.icon-sunset:before {
+.icon-sunrise:before {
   content: "\e90e";
 }
-.icon-temperature:before {
+.icon-sunset:before {
   content: "\e90f";
 }
-.icon-wind:before {
+.icon-temperature:before {
   content: "\e910";
+}
+.icon-wind:before {
+  content: "\e911";
 }
