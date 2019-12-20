@@ -159,7 +159,7 @@ var carousel = {
         size = col;
         if (halfSized && col > 1) { size -= carousel.halfSize; }
 
-        size = Math.ceil(that.offsetWidth / size);
+        size = Math.round(that.offsetWidth / size);
 
         for (j = 0; j < contents.length; j += 1) {
             contents[j].style.width = size + 'px';
