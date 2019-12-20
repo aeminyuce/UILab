@@ -10,7 +10,6 @@
 .no-transitions-all [class*="ease-"]:after,.no-transitions-all [class*="ease-1st-"] > *:after,.no-transitions-all [class*="ease-2nd-"] > * > *:after { transition-property: none !important; }
 
 .ease-fast,.ease-fast[class*="ease-1st-"] > *,.ease-fast[class*="ease-2nd-"] > * > * { transition-duration: .1s; }
-.ease-default,.ease-default[class*="ease-1st-"] > *,.ease-default[class*="ease-2nd-"] > * > * { transition-duration: .15s; }
 .ease-slow,.ease-slow[class*="ease-1st-"] > *,.ease-slow[class*="ease-2nd-"] > * > * { transition-duration: .4s; }
 .ease-slow2x,.ease-slow2x[class*="ease-1st-"] > *,.ease-slow2x[class*="ease-2nd-"] > * > * { transition-duration: .8s; }
 .ease-slow3x,.ease-slow3x[class*="ease-1st-"] > *,.ease-slow3x[class*="ease-2nd-"] > * > * { transition-duration: 1.2s; }
@@ -28,8 +27,9 @@
 .ease-layout,.ease-1st-layout > *,.ease-2nd-layout > * > * { transition-property: transform, opacity, box-shadow; }
 .ease-svg,.ease-1st-svg > *,.ease-2nd-svg > * > * { transition-property: fill, stroke; }
 
-.ease-default,.ease-default[class*="ease-1st-"] > *,.ease-default[class*="ease-2nd-"] > * > * { transition-timing-function: ease; }
 .ease-linear,.ease-linear[class*="ease-1st-"] > *,.ease-linear[class*="ease-2nd-"] > * > * { transition-timing-function: linear; }
 .ease-in,.ease-in[class*="ease-1st-"] > *,.ease-in[class*="ease-2nd-"] > * > * { transition-timing-function: ease-in; }
 .ease-out,.ease-out[class*="ease-1st-"] > *,.ease-out[class*="ease-2nd-"] > * > * { transition-timing-function: ease-out; }
 .ease-in-out,.ease-in-out[class*="ease-1st-"] > *,.ease-in-out[class*="ease-2nd-"] > * > * { transition-timing-function: ease-in-out; }
+
+.ease-default,.ease-default[class*="ease-1st-"] > *,.ease-default[class*="ease-2nd-"] > * > * { transition-duration: .15s !important; transition-timing-function: ease !important; }
