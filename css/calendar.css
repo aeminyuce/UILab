@@ -80,12 +80,10 @@ html:not(.mobile) .calendar tbody td.pickerday button:hover { opacity: .75; }
 .calendar .details { padding-left: 37px; position: absolute; top: 57px; right: 0; bottom: 0; left: 0; z-index: 2; }
 .calendar .details:not(.open) { display: none; }
 
-.calendar .details > button { width: 32px; height: 100%; background-color: transparent; border: 0; position: absolute; top: 0; left: 0; cursor: pointer; }
+.calendar .details > button { width: 32px; height: 100%; background-color: rgba(0,0,0,.065); border: 0; position: absolute; top: 0; left: 0; cursor: pointer; }
+html:not(.mobile) .calendar .details > button:hover { background-color: rgba(0,0,0,.15); }
 .calendar .details > button .icon { opacity: .45; }
 .calendar.rounded .details > button { border-radius: 6px; }
-
-html:not(.mobile) .calendar .details > button:hover { background-color: rgba(255,255,255,.125); }
-html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) .details > button:hover { background-color: rgba(0,0,0,.065); }
 
 .calendar .details ul,.calendar .details ul * { text-align: left !important; }
 .calendar .details ul { height: 100%; overflow-x: hidden !important; overflow-y: auto !important; }

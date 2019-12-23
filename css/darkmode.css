@@ -176,7 +176,6 @@
     html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) td:not(.today):not(.pickerday) button:hover { background-color: rgba(255,255,255,.075); }
     .calendar:not(.ui-dark):not(.ui-x-dark) td.today button:not([class*="ui-"]) { background-color: rgba(255,255,255,.125); }
     html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) td.today button:not([class*="ui-"]):hover { background-color: rgba(255,255,255,.2); }
-    html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) .details > button:hover { background-color: rgba(255,255,255,.065); }
     .calendar:not(.ui-dark):not(.ui-x-dark) .details li > span > i { color: #fff; background-color: rgba(255,255,255,.075); }
     .calendar:not(.ui-dark):not(.ui-x-dark) .no-details li > strong,.calendar:not(.ui-dark):not(.ui-x-dark) .no-details li > b { background-color: rgba(255,255,255,.2); }
     .calendar:not(.ui-dark):not(.ui-x-dark) .no-details li > span { background-color: rgba(255,255,255,.1); }
@@ -184,6 +183,11 @@
     html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) .panel .call:hover { background-color: rgba(255,255,255,.075); }
     .calendar:not(.ui-dark):not(.ui-x-dark) .panel .call.selected { background-color: rgba(255,255,255,.125); }
     html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) .panel .call.selected:hover { background-color: rgba(255,255,255,.2); }
+
+    .calendar .details > button { background-color: rgba(255,255,255,.125); }
+    .calendar:not(.ui-dark):not(.ui-x-dark) .details > button { background-color: rgba(255,255,255,.065); }
+    html:not(.mobile) .calendar .details > button:hover { background-color: rgba(255,255,255,.2); }
+    html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) .details > button:hover { background-color: rgba(255,255,255,.12); }
 
     .text.calendar-picker { color: #fff; }
     .text.calendar-picker button:not([class*="ui-"]),.text.calendar-picker button:not([class*="ui-"]) .icon { color: #fff; }

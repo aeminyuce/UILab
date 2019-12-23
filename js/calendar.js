@@ -15,7 +15,7 @@ var calendar = {
 
     prevIcon: 'icon-angle-left', // header's previous button icon
     nextIcon: 'icon-angle-right', // header's next button icon
-    backIcon: 'icon-angle-left', // detail's back button icon
+    backIcon: 'icon-ellipsis-ver', // detail's back button icon
 
     todayTheme: '' // use swatches
 
