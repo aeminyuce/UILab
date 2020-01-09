@@ -35,12 +35,12 @@
 
     <link rel="stylesheet" href="../css/swatches.css"/>
     <link rel="stylesheet" href="../css/darkmode.css"/>
-    
+
     <!-- Javascript Tools -->
     <script src="../js/selector.js"></script>
     <script src="../js/events.js"></script>
     <script src="../js/user-agents.js"></script>
-    
+
     <script src="../js/ajax.js"></script>
     <script src="../js/forms.js"></script>
     <script src="../js/loading-button.js"></script>
@@ -49,9 +49,6 @@
     <script src="../js/swatches.js"></script>
     <script src="../js/transitions.js"></script>
     <script src="../js/top-button.js"></script>
-
-    <!-- font icons CSS -->
-    <link rel="stylesheet" href="icons/font-icons/outline/font-icons.css"/>
 
     <!-- custom js -->
     <script>
@@ -274,7 +271,7 @@
 
                 events.on('.generate-toggle', 'change', function () {
 
-                    var forms, elems, same;
+                    var forms, elems;
 
                     forms = events.closest(this, '.generate-forms')[0];
                     elems = selector('input', forms);
@@ -282,22 +279,7 @@
                     if (this.checked) {
 
                         events.each(elems, function () {
-
                             this.checked = true;
-
-                            same = selector('input[data-same="' + this.getAttribute('data-same') + '"]');
-                            if (this.checked && same.length > 1) {
-
-                                events.each(same, function (i) {
-
-                                    if (i !== 0) {
-                                        this.checked = false;
-                                    }
-
-                                });
-
-                            }
-
                         });
 
                     } else {
@@ -785,7 +767,7 @@
                                              <input type="checkbox" name="icons" value="../css/icons.css" checked>
                                              <i class="ui-dark ease-form-custom"></i>
                                         </span>
-                                        Icons
+                                        Font Icons
                                     </label>
                                     <label class="custom block">
                                         <span class="switch-custom rounded dual-bordered ease-form">
@@ -807,40 +789,6 @@
                                              <i class="ui-dark ease-form-custom"></i>
                                         </span>
                                         Sprites
-                                    </label>
-                                </div>
-
-                                <h5 class="bold align-left margin-10-b">Font Icons</h5>
-
-                                <div class="generate-forms margin-20-b">
-                                    <label class="custom margin-5-b block opacity ease-opacity">
-                                        <span class="switch-custom rounded dual-bordered ease-form">
-                                             <input class="generate-toggle" type="checkbox">
-                                             <i class="ease-form-custom"></i>
-                                        </span>
-                                        <span class="x-dark">Select/Deselect All</span>
-                                    </label>
-
-                                    <label class="custom block">
-                                        <span class="switch-custom rounded dual-bordered ease-form">
-                                             <input type="checkbox" data-same="font-icons" name="outline icons" value="icons/font-icons/outline/font-icons.css" checked>
-                                             <i class="ui-dark ease-form-custom"></i>
-                                        </span>
-                                        Outline Icons
-                                    </label>
-                                    <label class="custom block">
-                                        <span class="switch-custom rounded dual-bordered ease-form">
-                                             <input type="checkbox" data-same="font-icons" name="fill icons" value="icons/font-icons/fill/font-icons.css">
-                                             <i class="ui-dark ease-form-custom"></i>
-                                        </span>
-                                        Fill Icons
-                                    </label>
-                                    <label class="custom block">
-                                        <span class="switch-custom rounded dual-bordered ease-form">
-                                             <input type="checkbox" name="weather outline icons" value="icons/font-icons/weather-outline/weather-outline-icons.css">
-                                             <i class="ui-dark ease-form-custom"></i>
-                                        </span>
-                                        Weather Outline Icons
                                     </label>
                                 </div>
 
