@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UI Lab, Icons</title>
+    <meta name="keywords" content="uilab, responsive, design system, css, javascript, icons">
+    <meta name="description" content="CSS & JavaScript powered responsive design system." />
+    <meta name="author" content="A. Emin Yuce"/>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <!--[if lt IE 10]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
+
+    <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/reset.css"/>
+
+    <link rel="stylesheet" href="../css/alerts.css"/>
+    <link rel="stylesheet" href="../css/alignments.css"/>
+    <link rel="stylesheet" href="../css/buttons.css"/>
+    <link rel="stylesheet" href="../css/borders.css"/>
+    <link rel="stylesheet" href="../css/grid.css"/>
+    <link rel="stylesheet" href="../css/helpers.css"/>
+    <link rel="stylesheet" href="../css/icons.css"/>
+    <link rel="stylesheet" href="../css/margins.css"/>
+    <link rel="stylesheet" href="../css/paddings.css"/>
+    <link rel="stylesheet" href="../css/scrollbar.css"/>
+    <link rel="stylesheet" href="../css/sticky-header.css"/>
+    <link rel="stylesheet" href="../css/transitions.css"/>
+    <link rel="stylesheet" href="../css/typography.css"/>
+    <link rel="stylesheet" href="../css/top-button.css"/>
+
+    <link rel="stylesheet" href="../css/swatches.css"/>
+    <link rel="stylesheet" href="../css/darkmode.css"/>
+
+    <!-- Javascript Tools -->
+    <script src="../js/selector.js"></script>
+    <script src="../js/events.js"></script>
+    <script src="../js/user-agents.js"></script>
+
+    <script src="../js/alerts.js"></script>
+    <script src="../js/sticky-header.js"></script>
+    <script src="../js/top-button.js"></script>
+
+    <!-- custom CSS -->
+    <style>
+
+        body { background-color: #e8e8e8; }
+
+        h1 { font-size: 32px !important; }
+        h2 small { font-size: 18px !important; opacity: .65; }
+
+        .icons-sizes { margin-bottom: 20px; }
+
+        .icons-list:not(:last-child) { margin-bottom: 30px;}
+        .icons-list li { color: #4a515a; text-align: center; width: 140px; background-color: #f7f7f7; padding: 15px 10px; margin: 6px 4px; display: inline-block; border-radius: 6px; cursor: pointer; }
+        html:not(.mobile) .icons-list li:hover { background-color: #fff; }
+        .icons-list li > span { content: attr(data-name); color: #666; font-size: 13px; font-family: "Roboto", "Helvetica Neue", Arial, sans-serif; white-space: nowrap; text-overflow: ellipsis; line-height: normal; margin-top: 10px; overflow: hidden; display: block; }
+
+        @media (max-width: 767px) and (min-width: 481px) {
+            .icons-list li { width: 28%;}
+        }
+        @media (max-width: 480px) {
+            .icons-list li { width: 45%;}
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .icons-list li { color: #fff; background-color: #2f343e; }
+            html:not(.mobile) .icons-list li:hover { background-color: #3c424d; }
+            .icons-list li > span { color: #d0d0d0; }
+        }
+
+    </style>
+
+    <!-- custom JS -->
+    <script>
+
+        events.onload(function () {
+
+            'use strict';
+
+            var buttons, iconLists, icons, totalIcons;
+
+            totalIcons = 0;
+
+            buttons = selector('.icons-sizes .btn');
+            events.on(buttons, 'click', function () {
+
+                var that, icons;
+
+                that = this;
+                icons = selector('.icons-list .icon');
+
+                events.removeClass(buttons, 'ui-dark');
+                setTimeout(function () {
+                    events.addClass(that, 'ui-dark');
+                }, 0);
+
+                events.removeClass(icons, 'icon-xxl icon-xl icon-lg icon-md icon-sm icon-xs icon-xxs');
+                events.addClass(icons, 'icon-' + this.getAttribute('data-size'));
+
+            });
+
+            iconLists = selector('.icons-list');
+            events.each(iconLists, function () {
+
+                var total = selector('li', this).length;
+                this.previousElementSibling.insertAdjacentHTML('beforeend', ' <small>(' + total + ' icons)</small>');
+
+                totalIcons += total;
+
+            });
+
+            selector('.total')[0].textContent = totalIcons;
+
+            icons = selector('.icons-list li');
+            events.on(icons, 'click', function () {
+
+                var range, iconName;
+
+                range = document.createRange();
+
+                iconName = selector('span', this)[0];
+                range.selectNode(iconName);
+
+                window.getSelection().removeAllRanges();
+                window.getSelection().addRange(range);
+
+                document.execCommand('copy');
+
+                alerts.message({
+                    msg: '<b>Copied!</b><br>' + iconName.textContent,
+                });
+
+            });
+
+            // settings
+            alerts.messageTheme = 'theme-default2 ui-dark';
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="container theme-default ui-dark">
+        <div class="row theme-default2 ui-border top-bordered dual-bordered">
+            <div class="col-12">
+                <a href="index.html" class="btn btn-lg btn-square circle ease-btn margin-10-r"><i class="icon icon-md no-opacity icon-angle-left"></i></a>
+                <h1 class="x-large inline-block">UI Lab, Icons</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- documentation examples -->
+    <main class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="padding-30 sm-no-padding sm-align-center">
+
+                    <h1>Total <b class="total"></b> icons</h1>
+
+                    <p>Show icons by size:</p>
+                    <div class="icons-sizes theme-default2 ease-1st-btn">
+                        <button data-size="xxl" class="btn btn-lg rounded">XX Large</button>
+                        <button data-size="xl" class="btn btn-lg rounded ui-dark">X Large</button>
+                        <button data-size="lg" class="btn btn-lg rounded">Large</button>
+                        <span class="sp5 visible-sm"></span>
+                        <button data-size="md" class="btn btn-lg rounded">Medium</button>
+                        <button data-size="sm" class="btn btn-lg rounded">Small</button>
+                        <button data-size="xs" class="btn btn-lg rounded">X Small</button>
+                        <button data-size="xxs" class="btn btn-lg rounded">XX Small</button>
+                    </div>
+
+                    <h2>General</h2>
+                    <ul class="icons-list list-custom ease-1st-bg ease-2nd-all">
+                        <li><i class="icon icon-xl icon-angle-down"></i><span>angle-down</span></li>
+                        <li><i class="icon icon-xl icon-angle-left"></i><span>angle-left</span></li>
+                        <li><i class="icon icon-xl icon-angle-right"></i><span>angle-right</span></li>
+                        <li><i class="icon icon-xl icon-angle-up"></i><span>angle-up</span></li>
+                        <li><i class="icon icon-xl icon-angle-double-down"></i><span>angle-double-down</span></li>
+                        <li><i class="icon icon-xl icon-angle-double-left"></i><span>angle-double-left</span></li>
+                        <li><i class="icon icon-xl icon-angle-double-right"></i><span>angle-double-right</span></li>
+                        <li><i class="icon icon-xl icon-angle-double-up"></i><span>angle-double-up</span></li>
+                        <li><i class="icon icon-xl icon-arrow-down"></i><span>arrow-down</span></li>
+                        <li><i class="icon icon-xl icon-arrow-left"></i><span>arrow-left</span></li>
+                        <li><i class="icon icon-xl icon-arrow-right"></i><span>arrow-right</span></li>
+                        <li><i class="icon icon-xl icon-arrow-up"></i><span>arrow-up</span></li>
+                        <li><i class="icon icon-xl icon-long-arrow-down"></i><span>long-arrow-down</span></li>
+                        <li><i class="icon icon-xl icon-long-arrow-left"></i><span>long-arrow-left</span></li>
+                        <li><i class="icon icon-xl icon-long-arrow-right"></i><span>long-arrow-right</span></li>
+                        <li><i class="icon icon-xl icon-long-arrow-up"></i><span>long-arrow-up</span></li>
+                        <li><i class="icon icon-xl icon-exchange-v"></i><span>exchange-v</span></li>
+                        <li><i class="icon icon-xl icon-exchange-h"></i><span>exchange-h</span></li>
+                        <li><i class="icon icon-xl icon-move"></i><span>move</span></li>
+                        <li><i class="icon icon-xl icon-alert-circle"></i><span>alert-circle</span></li>
+                        <li><i class="icon icon-xl icon-alert-square"></i><span>alert-square</span></li>
+                        <li><i class="icon icon-xl icon-alert-triangle"></i><span>alert-triangle</span></li>
+                        <li><i class="icon icon-xl icon-address-book"></i><span>address-book</span></li>
+                        <li><i class="icon icon-xl icon-address-card"></i><span>address-card</span></li>
+                        <li><i class="icon icon-xl icon-home"></i><span>home</span></li>
+                        <li><i class="icon icon-xl icon-at"></i><span>at</span></li>
+                        <li><i class="icon icon-xl icon-infinity"></i><span>infinity</span></li>
+                        <li><i class="icon icon-xl icon-badge"></i><span>badge</span></li>
+                        <li><i class="icon icon-xl icon-badge-check"></i><span>badge-check</span></li>
+                        <li><i class="icon icon-xl icon-bars"></i><span>bars</span></li>
+                        <li><i class="icon icon-xl icon-bars-left"></i><span>bars-left</span></li>
+                        <li><i class="icon icon-xl icon-bars-right"></i><span>bars-right</span></li>
+                        <li><i class="icon icon-xl icon-bars-center"></i><span>bars-center</span></li>
+                        <li><i class="icon icon-xl icon-bell"></i><span>bell</span></li>
+                        <li><i class="icon icon-xl icon-bell-filled"></i><span>bell-filled</span></li>
+                        <li><i class="icon icon-xl icon-bell-on"></i><span>bell-on</span></li>
+                        <li><i class="icon icon-xl icon-award"></i><span>award</span></li>
+                        <li><i class="icon icon-xl icon-birthday"></i><span>birthday</span></li>
+                        <li><i class="icon icon-xl icon-gift"></i><span>gift</span></li>
+                        <li><i class="icon icon-xl icon-book"></i><span>book</span></li>
+                        <li><i class="icon icon-xl icon-books"></i><span>books</span></li>
+                        <li><i class="icon icon-xl icon-book-open"></i><span>book-open</span></li>
+                        <li><i class="icon icon-xl icon-box"></i><span>box</span></li>
+                        <li><i class="icon icon-xl icon-boxes"></i><span>boxes</span></li>
+                        <li><i class="icon icon-xl icon-brackets"></i><span>brackets</span></li>
+                        <li><i class="icon icon-xl icon-brackets-curly"></i><span>brackets-curly</span></li>
+                        <li><i class="icon icon-xl icon-briefcase"></i><span>briefcase</span></li>
+                        <li><i class="icon icon-xl icon-bullhorn"></i><span>bullhorn</span></li>
+                        <li><i class="icon icon-xl icon-megaphone"></i><span>megaphone</span></li>
+                        <li><i class="icon icon-xl icon-calculator"></i><span>calculator</span></li>
+                        <li><i class="icon icon-xl icon-calculator-btn"></i><span>calculator-btn</span></li>
+                        <li><i class="icon icon-xl icon-calendar"></i><span>calendar</span></li>
+                        <li><i class="icon icon-xl icon-calendar-day"></i><span>calendar-day</span></li>
+                        <li><i class="icon icon-xl icon-calendar-star"></i><span>calendar-star</span></li>
+                        <li><i class="icon icon-xl icon-calendar-check"></i><span>calendar-check</span></li>
+                        <li><i class="icon icon-xl icon-cap"></i><span>cap</span></li>
+                        <li><i class="icon icon-xl icon-chart-pie"></i><span>chart-pie</span></li>
+                        <li><i class="icon icon-xl icon-chart-bar"></i><span>chart-bar</span></li>
+                        <li><i class="icon icon-xl icon-chart-line"></i><span>chart-line</span></li>
+                        <li><i class="icon icon-xl icon-check"></i><span>check</span></li>
+                        <li><i class="icon icon-xl icon-check-circle"></i><span>check-circle</span></li>
+                        <li><i class="icon icon-xl icon-check-square"></i><span>check-square</span></li>
+                        <li><i class="icon icon-xl icon-clipboard"></i><span>clipboard</span></li>
+                        <li><i class="icon icon-xl icon-clipboard-list"></i><span>clipboard-list</span></li>
+                        <li><i class="icon icon-xl icon-clipboard-check"></i><span>clipboard-check</span></li>
+                        <li><i class="icon icon-xl icon-sticky-note"></i><span>sticky-note</span></li>
+                        <li><i class="icon icon-xl icon-sticky-note-list"></i><span>sticky-note-list</span></li>
+                        <li><i class="icon icon-xl icon-clock"></i><span>clock</span></li>
+                        <li><i class="icon icon-xl icon-clock-alarm"></i><span>clock-alarm</span></li>
+                        <li><i class="icon icon-xl icon-history"></i><span>history</span></li>
+                        <li><i class="icon icon-xl icon-clone"></i><span>clone</span></li>
+                        <li><i class="icon icon-xl icon-cloud-download"></i><span>cloud-download</span></li>
+                        <li><i class="icon icon-xl icon-cloud-upload"></i><span>cloud-upload</span></li>
+                        <li><i class="icon icon-xl icon-comment"></i><span>comment</span></li>
+                        <li><i class="icon icon-xl icon-comments"></i><span>comments</span></li>
+                        <li><i class="icon icon-xl icon-comment-dots"></i><span>comment-dots</span></li>
+                        <li><i class="icon icon-xl icon-comment-sms"></i><span>comment-sms</span></li>
+                        <li><i class="icon icon-xl icon-compass"></i><span>compass</span></li>
+                        <li><i class="icon icon-xl icon-copyright"></i><span>copyright</span></li>
+                        <li><i class="icon icon-xl icon-database"></i><span>database</span></li>
+                        <li><i class="icon icon-xl icon-news"></i><span>news</span></li>
+                        <li><i class="icon icon-xl icon-doc"></i><span>doc</span></li>
+                        <li><i class="icon icon-xl icon-docs"></i><span>docs</span></li>
+                        <li><i class="icon icon-xl icon-doc-no"></i><span>doc-no</span></li>
+                        <li><i class="icon icon-xl icon-archive"></i><span>archive</span></li>
+                        <li><i class="icon icon-xl icon-draw"></i><span>draw</span></li>
+                        <li><i class="icon icon-xl icon-edit"></i><span>edit</span></li>
+                        <li><i class="icon icon-xl icon-ellipsis-v"></i><span>ellipsis-v</span></li>
+                        <li><i class="icon icon-xl icon-ellipsis-h"></i><span>ellipsis-h</span></li>
+                        <li><i class="icon icon-xl icon-envelope"></i><span>envelope</span></li>
+                        <li><i class="icon icon-xl icon-envelope-open"></i><span>envelope-open</span></li>
+                        <li><i class="icon icon-xl icon-expand"></i><span>expand</span></li>
+                        <li><i class="icon icon-xl icon-expand-wide"></i><span>expand-wide</span></li>
+                        <li><i class="icon icon-xl icon-eye"></i><span>eye</span></li>
+                        <li><i class="icon icon-xl icon-face-blank"></i><span>face-blank</span></li>
+                        <li><i class="icon icon-xl icon-face-smile"></i><span>face-smile</span></li>
+                        <li><i class="icon icon-xl icon-face-sad"></i><span>face-sad</span></li>
+                        <li><i class="icon icon-xl icon-face-meh"></i><span>face-meh</span></li>
+                        <li><i class="icon icon-xl icon-factory"></i><span>factory</span></li>
+                        <li><i class="icon icon-xl icon-fire"></i><span>fire</span></li>
+                        <li><i class="icon icon-xl icon-flag"></i><span>flag</span></li>
+                        <li><i class="icon icon-xl icon-flag-filled"></i><span>flag-filled</span></li>
+                        <li><i class="icon icon-xl icon-gas-pump"></i><span>gas-pump</span></li>
+                        <li><i class="icon icon-xl icon-globe"></i><span>globe</span></li>
+                        <li><i class="icon icon-xl icon-filter"></i><span>filter</span></li>
+                        <li><i class="icon icon-xl icon-grid-row"></i><span>row</span></li>
+                        <li><i class="icon icon-xl icon-grid-column"></i><span>grid-column</span></li>
+                        <li><i class="icon icon-xl icon-grid-column-sm"></i><span>grid-column-sm</span></li>
+                        <li><i class="icon icon-xl icon-grid-flow"></i><span>flow</span></li>
+                        <li><i class="icon icon-xl icon-heart"></i><span>heart</span></li>
+                        <li><i class="icon icon-xl icon-heart-filled"></i><span>heart-filled</span></li>
+                        <li><i class="icon icon-xl icon-help"></i><span>help</span></li>
+                        <li><i class="icon icon-xl icon-hourglass-start"></i><span>hourglass-start</span></li>
+                        <li><i class="icon icon-xl icon-hourglass-end"></i><span>hourglass-end</span></li>
+                        <li><i class="icon icon-xl icon-image"></i><span>image</span></li>
+                        <li><i class="icon icon-xl icon-images"></i><span>images</span></li>
+                        <li><i class="icon icon-xl icon-info-circle"></i><span>info-circle</span></li>
+                        <li><i class="icon icon-xl icon-info-square"></i><span>info-square</span></li>
+                        <li><i class="icon icon-xl icon-jump"></i><span>jump</span></li>
+                        <li><i class="icon icon-xl icon-key"></i><span>key</span></li>
+                        <li><i class="icon icon-xl icon-keyboard"></i><span>keyboard</span></li>
+                        <li><i class="icon icon-xl icon-land"></i><span>land</span></li>
+                        <li><i class="icon icon-xl icon-leaf"></i><span>leaf</span></li>
+                        <li><i class="icon icon-xl icon-link"></i><span>link</span></li>
+                        <li><i class="icon icon-xl icon-link-external"></i><span>link-external</span></li>
+                        <li><i class="icon icon-xl icon-loader-circle"></i><span>loader-circle</span></li>
+                        <li><i class="icon icon-xl icon-loader-dot"></i><span>loader-dot</span></li>
+                        <li><i class="icon icon-xl icon-loader-line"></i><span>loader-line</span></li>
+                        <li><i class="icon icon-xl icon-target"></i><span>target</span></li>
+                        <li><i class="icon icon-xl icon-location"></i><span>location</span></li>
+                        <li><i class="icon icon-xl icon-location-arrow"></i><span>location-arrow</span></li>
+                        <li><i class="icon icon-xl icon-lock"></i><span>lock</span></li>
+                        <li><i class="icon icon-xl icon-lock-open"></i><span>lock-open</span></li>
+                        <li><i class="icon icon-xl icon-map"></i><span>map</span></li>
+                        <li><i class="icon icon-xl icon-marker"></i><span>marker</span></li>
+                        <li><i class="icon icon-xl icon-marker-filled"></i><span>marker-filled</span></li>
+                        <li><i class="icon icon-xl icon-network"></i><span>network</span></li>
+                        <li><i class="icon icon-xl icon-no"></i><span>no</span></li>
+                        <li><i class="icon icon-xl icon-paw"></i><span>paw</span></li>
+                        <li><i class="icon icon-xl icon-pen"></i><span>pen</span></li>
+                        <li><i class="icon icon-xl icon-pen-write"></i><span>pen-write</span></li>
+                        <li><i class="icon icon-xl icon-pencil"></i><span>pencil</span></li>
+                        <li><i class="icon icon-xl icon-pencil-write"></i><span>pencil-write</span></li>
+                        <li><i class="icon icon-xl icon-phone"></i><span>phone</span></li>
+                        <li><i class="icon icon-xl icon-phone-call"></i><span>phone-call</span></li>
+                        <li><i class="icon icon-xl icon-minus"></i><span>minus</span></li>
+                        <li><i class="icon icon-xl icon-minus-circle"></i><span>minus-circle</span></li>
+                        <li><i class="icon icon-xl icon-minus-square"></i><span>minus-square</span></li>
+                        <li><i class="icon icon-xl icon-plus"></i><span>plus</span></li>
+                        <li><i class="icon icon-xl icon-plus-circle"></i><span>plus-circle</span></li>
+                        <li><i class="icon icon-xl icon-plus-square"></i><span>plus-square</span></li>
+                        <li><i class="icon icon-xl icon-print"></i><span>print</span></li>
+                        <li><i class="icon icon-xl icon-puzzle"></i><span>puzzle</span></li>
+                        <li><i class="icon icon-xl icon-question-circle"></i><span>question-circle</span></li>
+                        <li><i class="icon icon-xl icon-question-square"></i><span>question-square</span></li>
+                        <li><i class="icon icon-xl icon-radiation"></i><span>radiation</span></li>
+                        <li><i class="icon icon-xl icon-recycle"></i><span>recycle</span></li>
+                        <li><i class="icon icon-xl icon-undo"></i><span>undo</span></li>
+                        <li><i class="icon icon-xl icon-redo"></i><span>redo</span></li>
+                        <li><i class="icon icon-xl icon-remove"></i><span>remove</span></li>
+                        <li><i class="icon icon-xl icon-remove-circle"></i><span>remove-circle</span></li>
+                        <li><i class="icon icon-xl icon-remove-square"></i><span>remove-square</span></li>
+                        <li><i class="icon icon-xl icon-reply"></i><span>reply</span></li>
+                        <li><i class="icon icon-xl icon-required"></i><span>required</span></li>
+                        <li><i class="icon icon-xl icon-save"></i><span>save</span></li>
+                        <li><i class="icon icon-xl icon-search"></i><span>search</span></li>
+                        <li><i class="icon icon-xl icon-search-marker"></i><span>search-marker</span></li>
+                        <li><i class="icon icon-xl icon-search-minus"></i><span>search-minus</span></li>
+                        <li><i class="icon icon-xl icon-search-plus"></i><span>search-plus</span></li>
+                        <li><i class="icon icon-xl icon-search-star"></i><span>search-star</span></li>
+                        <li><i class="icon icon-xl icon-setting"></i><span>setting</span></li>
+                        <li><i class="icon icon-xl icon-settings"></i><span>settings</span></li>
+                        <li><i class="icon icon-xl icon-share"></i><span>share</span></li>
+                        <li><i class="icon icon-xl icon-shield"></i><span>shield</span></li>
+                        <li><i class="icon icon-xl icon-shield-check"></i><span>shield-check</span></li>
+                        <li><i class="icon icon-xl icon-sign-in"></i><span>sign-in</span></li>
+                        <li><i class="icon icon-xl icon-sign-out"></i><span>sign-out</span></li>
+                        <li><i class="icon icon-xl icon-sort"></i><span>sort</span></li>
+                        <li><i class="icon icon-xl icon-sort-down"></i><span>sort-down</span></li>
+                        <li><i class="icon icon-xl icon-sort-up"></i><span>sort-up</span></li>
+                        <li><i class="icon icon-xl icon-circle"></i><span>circle</span></li>
+                        <li><i class="icon icon-xl icon-circle-filled"></i><span>circle-filled</span></li>
+                        <li><i class="icon icon-xl icon-square"></i><span>square</span></li>
+                        <li><i class="icon icon-xl icon-square-filled"></i><span>square-filled</span></li>
+                        <li><i class="icon icon-xl icon-star"></i><span>star</span></li>
+                        <li><i class="icon icon-xl icon-star-half"></i><span>star-half</span></li>
+                        <li><i class="icon icon-xl icon-star-filled"></i><span>star-filled</span></li>
+                        <li><i class="icon icon-xl icon-sync"></i><span>sync</span></li>
+                        <li><i class="icon icon-xl icon-table"></i><span>table</span></li>
+                        <li><i class="icon icon-xl icon-trash"></i><span>trash</span></li>
+                        <li><i class="icon icon-xl icon-trash-filled"></i><span>trash-filled</span></li>
+                        <li><i class="icon icon-xl icon-wrench"></i><span>wrench</span></li>
+                        <li><i class="icon icon-xl icon-car"></i><span>car</span></li>
+                        <li><i class="icon icon-xl icon-truck"></i><span>truck</span></li>
+                        <li><i class="icon icon-xl icon-truck-filled"></i><span>truck-filled</span></li>
+                        <li><i class="icon icon-xl icon-tachometer"></i><span>tachometer</span></li>
+                        <li><i class="icon icon-xl icon-user"></i><span>user</span></li>
+                        <li><i class="icon icon-xl icon-users"></i><span>users</span></li>
+                        <li><i class="icon icon-xl icon-user-check"></i><span>user-check</span></li>
+                        <li><i class="icon icon-xl icon-user-minus"></i><span>user-minus</span></li>
+                        <li><i class="icon icon-xl icon-user-no"></i><span>user-no</span></li>
+                        <li><i class="icon icon-xl icon-user-plus"></i><span>user-plus</span></li>
+                        <li><i class="icon icon-xl icon-user-remove"></i><span>user-remove</span></li>
+                        <li><i class="icon icon-xl icon-user-search"></i><span>user-search</span></li>
+                        <li><i class="icon icon-xl icon-user-circle"></i><span>user-circle</span></li>
+                    </ul>
+
+                    <h2>Touch</h2>
+                    <ul class="icons-list list-custom ease-1st-bg">
+                        <li><i class="icon icon-xl icon-touch"></i><span>touch</span></li>
+                        <li><i class="icon icon-xl icon-swipe"></i><span>swipe</span></li>
+                        <li><i class="icon icon-xl icon-swipe-down"></i><span>swipe-down</span></li>
+                        <li><i class="icon icon-xl icon-swipe-left"></i><span>swipe-left</span></li>
+                        <li><i class="icon icon-xl icon-swipe-right"></i><span>swipe-right</span></li>
+                        <li><i class="icon icon-xl icon-swipe-up"></i><span>swipe-up</span></li>
+                        <li><i class="icon icon-xl icon-zoom"></i><span>zoom</span></li>
+                    </ul>
+
+                    <h2>Media</h2>
+                    <ul class="icons-list list-custom ease-1st-bg">
+                        <li><i class="icon icon-xl icon-backward"></i><span>backward</span></li>
+                        <li><i class="icon icon-xl icon-play"></i><span>play</span></li>
+                        <li><i class="icon icon-xl icon-forward"></i><span>forward</span></li>
+                        <li><i class="icon icon-xl icon-pause"></i><span>pause</span></li>
+                        <li><i class="icon icon-xl icon-stop"></i><span>stop</span></li>
+                        <li><i class="icon icon-xl icon-shuffle"></i><span>shuffle</span></li>
+                        <li><i class="icon icon-xl icon-power"></i><span>power</span></li>
+                        <li><i class="icon icon-xl icon-camera"></i><span>camera</span></li>
+                        <li><i class="icon icon-xl icon-film"></i><span>film</span></li>
+                        <li><i class="icon icon-xl icon-video"></i><span>video</span></li>
+                        <li><i class="icon icon-xl icon-browser"></i><span>browser</span></li>
+                        <li><i class="icon icon-xl icon-laptop"></i><span>laptop</span></li>
+                        <li><i class="icon icon-xl icon-desktop"></i><span>desktop</span></li>
+                        <li><i class="icon icon-xl icon-tv"></i><span>tv</span></li>
+                        <li><i class="icon icon-xl icon-mobile-v"></i><span>mobile-v</span></li>
+                        <li><i class="icon icon-xl icon-mobile-h"></i><span>mobile-h</span></li>
+                        <li><i class="icon icon-xl icon-mobile-alt-v"></i><span>mobile-alt-v</span></li>
+                        <li><i class="icon icon-xl icon-mobile-alt-h"></i><span>mobile-alt-h</span></li>
+                        <li><i class="icon icon-xl icon-tablet-v"></i><span>tablet-v</span></li>
+                        <li><i class="icon icon-xl icon-tablet-h"></i><span>tablet-h</span></li>
+                        <li><i class="icon icon-xl icon-tablet-alt-v"></i><span>alt-v</span></li>
+                        <li><i class="icon icon-xl icon-tablet-alt-h"></i><span>alt-h</span></li>
+                        <li><i class="icon icon-xl icon-headphone"></i><span>headphone</span></li>
+                        <li><i class="icon icon-xl icon-headset"></i><span>headset</span></li>
+                        <li><i class="icon icon-xl icon-music"></i><span>music</span></li>
+                        <li><i class="icon icon-xl icon-volume-on"></i><span>volume-on</span></li>
+                        <li><i class="icon icon-xl icon-volume-off"></i><span>volume-off</span></li>
+                        <li><i class="icon icon-xl icon-soundwave"></i><span>soundwave</span></li>
+                        <li><i class="icon icon-xl icon-speaker"></i><span>speaker</span></li>
+                        <li><i class="icon icon-xl icon-usb-drive"></i><span>usb-drive</span></li>
+                        <li><i class="icon icon-xl icon-signal-stream"></i><span>signal-stream</span></li>
+                        <li><i class="icon icon-xl icon-signal-wifi"></i><span>signal-wifi</span></li>
+                        <li><i class="icon icon-xl icon-aperture"></i><span>aperture</span></li>
+                        <li><i class="icon icon-xl icon-exposure"></i><span>exposure</span></li>
+                        <li><i class="icon icon-xl icon-flash-on"></i><span>flash-on</span></li>
+                        <li><i class="icon icon-xl icon-flash-off"></i><span>flash-off</span></li>
+                        <li><i class="icon icon-xl icon-flash-auto"></i><span>flash-auto</span></li>
+                        <li><i class="icon icon-xl icon-iso"></i><span>iso</span></li>
+                    </ul>
+
+                    <h2>Kitchen</h2>
+                    <ul class="icons-list list-custom ease-1st-bg">
+                        <li><i class="icon icon-xl icon-fork-spoon"></i><span>fork-spoon</span></li>
+                        <li><i class="icon icon-xl icon-fork"></i><span>fork</span></li>
+                        <li><i class="icon icon-xl icon-spoon"></i><span>spoon</span></li>
+                        <li><i class="icon icon-xl icon-coffee"></i><span>coffee</span></li>
+                        <li><i class="icon icon-xl icon-cup"></i><span>cup</span></li>
+                    </ul>
+
+                    <h2>Real Estate</h2>
+                    <ul class="icons-list list-custom ease-1st-bg">
+                        <li><i class="icon icon-xl icon-house"></i><span>house</span></li>
+                        <li><i class="icon icon-xl icon-house-check"></i><span>house-check</span></li>
+                        <li><i class="icon icon-xl icon-house-floor"></i><span>house-floor</span></li>
+                        <li><i class="icon icon-xl icon-house-heat"></i><span>house-heat</span></li>
+                        <li><i class="icon icon-xl icon-house-surface"></i><span>house-surface</span></li>
+                        <li><i class="icon icon-xl icon-floor-plan"></i><span>floor-plan</span></li>
+                        <li><i class="icon icon-xl icon-garage"></i><span>garage</span></li>
+                        <li><i class="icon icon-xl icon-balcony"></i><span>balcony</span></li>
+                        <li><i class="icon icon-xl icon-bath"></i><span>bath</span></li>
+                        <li><i class="icon icon-xl icon-bed"></i><span>bed</span></li>
+                        <li><i class="icon icon-xl icon-building"></i><span>building</span></li>
+                        <li><i class="icon icon-xl icon-buildings"></i><span>buildings</span></li>
+                        <li><i class="icon icon-xl icon-wc"></i><span>wc</span></li>
+                    </ul>
+
+                    <h2>Weather</h2>
+                    <ul class="icons-list list-custom ease-1st-bg">
+                        <li><i class="icon icon-xl icon-cloud"></i><span>cloud</span></li>
+                        <li><i class="icon icon-xl icon-clouds"></i><span>clouds</span></li>
+                        <li><i class="icon icon-xl icon-bolt"></i><span>bolt</span></li>
+                        <li><i class="icon icon-xl icon-cloud-bolt"></i><span>cloud-bolt</span></li>
+                        <li><i class="icon icon-xl icon-cloud-fog"></i><span>cloud-fog</span></li>
+                        <li><i class="icon icon-xl icon-cloud-moon"></i><span>cloud-moon</span></li>
+                        <li><i class="icon icon-xl icon-cloud-sun"></i><span>cloud-sun</span></li>
+                        <li><i class="icon icon-xl icon-cloud-wind"></i><span>cloud-wind</span></li>
+                        <li><i class="icon icon-xl icon-fog"></i><span>fog</span></li>
+                        <li><i class="icon icon-xl icon-moon"></i><span>moon</span></li>
+                        <li><i class="icon icon-xl icon-rain"></i><span>rain</span></li>
+                        <li><i class="icon icon-xl icon-rain-heavy"></i><span>rain-heavy</span></li>
+                        <li><i class="icon icon-xl icon-rain-snow"></i><span>rain-snow</span></li>
+                        <li><i class="icon icon-xl icon-snow"></i><span>snow</span></li>
+                        <li><i class="icon icon-xl icon-sun"></i><span>sun</span></li>
+                        <li><i class="icon icon-xl icon-sunrise"></i><span>sunrise</span></li>
+                        <li><i class="icon icon-xl icon-sunset"></i><span>sunset</span></li>
+                        <li><i class="icon icon-xl icon-cold"></i><span>cold</span></li>
+                        <li><i class="icon icon-xl icon-temperature"></i><span>temperature</span></li>
+                        <li><i class="icon icon-xl icon-wind"></i><span>wind</span></li>
+                        <li><i class="icon icon-xl icon-wind-sock"></i><span>wind-sock</span></li>
+                        <li><i class="icon icon-xl icon-storm"></i><span>storm</span></li>
+                        <li><i class="icon icon-xl icon-tornado"></i><span>tornado</span></li>
+                    </ul>
+
+                    <h2>Commerce</h2>
+                    <ul class="icons-list list-custom ease-1st-bg">
+                        <li><i class="icon icon-xl icon-tag"></i><span>tag</span></li>
+                        <li><i class="icon icon-xl icon-tags"></i><span>tags</span></li>
+                        <li><i class="icon icon-xl icon-ticket"></i><span>ticket</span></li>
+                        <li><i class="icon icon-xl icon-barcode"></i><span>barcode</span></li>
+                        <li><i class="icon icon-xl icon-credit-card"></i><span>credit-card</span></li>
+                        <li><i class="icon icon-xl icon-credit-card-check"></i><span>credit-card-check</span></li>
+                        <li><i class="icon icon-xl icon-shopping-bag"></i><span>shopping-bag</span></li>
+                        <li><i class="icon icon-xl icon-shopping-cart"></i><span>shopping-cart</span></li>
+                        <li><i class="icon icon-xl icon-shopping-cart-filled"></i><span>shopping-cart-filled</span></li>
+                        <li><i class="icon icon-xl icon-shopping-basket"></i><span>shopping-basket</span></li>
+                        <li><i class="icon icon-xl icon-shopping-basket-filled"></i><span>shopping-basket-filled</span></li>
+                        <li><i class="icon icon-xl icon-store"></i><span>store</span></li>
+                        <li><i class="icon icon-xl icon-coin"></i><span>coin</span></li>
+                        <li><i class="icon icon-xl icon-coins"></i><span>coins</span></li>
+                        <li><i class="icon icon-xl icon-money"></i><span>money</span></li>
+                        <li><i class="icon icon-xl icon-moneys"></i><span>moneys</span></li>
+                        <li><i class="icon icon-xl icon-wallet"></i><span>wallet</span></li>
+                        <li><i class="icon icon-xl icon-bank"></i><span>bank</span></li>
+                        <li><i class="icon icon-xl icon-money-dollar"></i><span>money-dollar</span></li>
+                        <li><i class="icon icon-xl icon-money-euro"></i><span>money-euro</span></li>
+                        <li><i class="icon icon-xl icon-money-lira"></i><span>money-lira</span></li>
+                    </ul>
+
+                    <h2>Files</h2>
+                    <ul class="icons-list list-custom ease-1st-bg">
+                        <li><i class="icon icon-xl icon-file"></i><span>file</span></li>
+                        <li><i class="icon icon-xl icon-files"></i><span>files</span></li>
+                        <li><i class="icon icon-xl icon-file-no"></i><span>file-no</span></li>
+                        <li><i class="icon icon-xl icon-file-check"></i><span>file-check</span></li>
+                        <li><i class="icon icon-xl icon-file-minus"></i><span>file-minus</span></li>
+                        <li><i class="icon icon-xl icon-file-plus"></i><span>file-plus</span></li>
+                        <li><i class="icon icon-xl icon-file-remove"></i><span>file-remove</span></li>
+                        <li><i class="icon icon-xl icon-file-search"></i><span>file-search</span></li>
+                        <li><i class="icon icon-xl icon-file-download"></i><span>file-download</span></li>
+                        <li><i class="icon icon-xl icon-file-upload"></i><span>file-upload</span></li>
+                        <li><i class="icon icon-xl icon-file-write"></i><span>file-write</span></li>
+                        <li><i class="icon icon-xl icon-file-avi"></i><span>file-avi</span></li>
+                        <li><i class="icon icon-xl icon-file-doc"></i><span>file-doc</span></li>
+                        <li><i class="icon icon-xl icon-file-docx"></i><span>file-docx</span></li>
+                        <li><i class="icon icon-xl icon-file-gif"></i><span>file-gif</span></li>
+                        <li><i class="icon icon-xl icon-file-jpg"></i><span>file-jpg</span></li>
+                        <li><i class="icon icon-xl icon-file-mp3"></i><span>file-mp3</span></li>
+                        <li><i class="icon icon-xl icon-file-mpg"></i><span>file-mpg</span></li>
+                        <li><i class="icon icon-xl icon-file-pdf"></i><span>file-pdf</span></li>
+                        <li><i class="icon icon-xl icon-file-png"></i><span>file-png</span></li>
+                        <li><i class="icon icon-xl icon-file-ppt"></i><span>file-ppt</span></li>
+                        <li><i class="icon icon-xl icon-file-pptx"></i><span>file-pptx</span></li>
+                        <li><i class="icon icon-xl icon-file-rar"></i><span>file-rar</span></li>
+                        <li><i class="icon icon-xl icon-file-svg"></i><span>file-svg</span></li>
+                        <li><i class="icon icon-xl icon-file-tiff"></i><span>file-tiff</span></li>
+                        <li><i class="icon icon-xl icon-file-txt"></i><span>file-txt</span></li>
+                        <li><i class="icon icon-xl icon-file-xls"></i><span>file-xls</span></li>
+                        <li><i class="icon icon-xl icon-file-xlsx"></i><span>file-xlsx</span></li>
+                        <li><i class="icon icon-xl icon-file-xml"></i><span>file-xml</span></li>
+                        <li><i class="icon icon-xl icon-file-zip"></i><span>file-zip</span></li>
+                    </ul>
+
+                    <h2>Social</h2>
+                    <ul class="icons-list list-custom ease-1st-bg">
+                        <li><i class="icon icon-xl icon-behance"></i><span>behance</span></li>
+                        <li><i class="icon icon-xl icon-dribbble"></i><span>dribbble</span></li>
+                        <li><i class="icon icon-xl icon-facebook"></i><span>facebook</span></li>
+                        <li><i class="icon icon-xl icon-github"></i><span>github</span></li>
+                        <li><i class="icon icon-xl icon-google"></i><span>google</span></li>
+                        <li><i class="icon icon-xl icon-instagram"></i><span>instagram</span></li>
+                        <li><i class="icon icon-xl icon-linkedin"></i><span>linkedin</span></li>
+                        <li><i class="icon icon-xl icon-pinterest"></i><span>pinterest</span></li>
+                        <li><i class="icon icon-xl icon-snapchat"></i><span>snapchat</span></li>
+                        <li><i class="icon icon-xl icon-tumblr"></i><span>tumblr</span></li>
+                        <li><i class="icon icon-xl icon-twitter"></i><span>twitter</span></li>
+                        <li><i class="icon icon-xl icon-whatsapp"></i><span>whatsapp</span></li>
+                        <li><i class="icon icon-xl icon-youtube"></i><span>youtube</span></li>
+                    </ul>
+
+                    <h2>Brands</h2>
+                    <ul class="icons-list list-custom ease-1st-bg">
+                        <li><i class="icon icon-xl icon-andorid"></i><span>andorid</span></li>
+                        <li><i class="icon icon-xl icon-apple"></i><span>apple</span></li>
+                        <li><i class="icon icon-xl icon-appstore"></i><span>appstore</span></li>
+                        <li><i class="icon icon-xl icon-google-play"></i><span>google-play</span></li>
+                        <li><i class="icon icon-xl icon-microsoft"></i><span>microsoft</span></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
