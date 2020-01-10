@@ -27,7 +27,7 @@
             <li class="circle padding-5 dual-bordered" style="border-color: #248ddd;"></li>
         </ul>
         <span class="left padding-15-v margin-2-t">
-            <i class="icon icon-sm icon-star-filled font-yellow margin-4-b"></i>
+            <i class="icon icon-sm icon-star-fill font-yellow margin-4-b"></i>
             <b class="x-dark">4.8</b>
             <span class="dark">
                 <i class="icon icon-sm icon-comment margin-3-b margin-5-l"></i> 24
@@ -63,7 +63,7 @@
             <li class="circle padding-5 dual-bordered" style="border-color: #dedede;"></li>
         </ul>
         <span class="left padding-15-v margin-2-t">
-            <i class="icon icon-sm icon-star-filled font-yellow margin-4-b"></i>
+            <i class="icon icon-sm icon-star-fill font-yellow margin-4-b"></i>
             <b class="x-dark">3.9</b>
             <span class="dark">
                 <i class="icon icon-sm icon-comment margin-3-b margin-5-l"></i> 9
@@ -99,7 +99,7 @@
             <li class="circle padding-5 dual-bordered" style="border-color: #3b3b3b;"></li>
         </ul>
         <span class="left padding-15-v margin-2-t">
-            <i class="icon icon-sm icon-star-filled font-yellow margin-4-b"></i>
+            <i class="icon icon-sm icon-star-fill font-yellow margin-4-b"></i>
             <b class="x-dark">4.3</b>
             <span class="dark">
                 <i class="icon icon-sm icon-comment margin-3-b margin-5-l"></i> 11
@@ -132,7 +132,7 @@
             <li class="circle padding-5 dual-bordered" style="border-color: #dedede;"></li>
         </ul>
         <span class="left padding-15-v margin-2-t">
-            <i class="icon icon-sm icon-star-filled font-yellow margin-4-b"></i>
+            <i class="icon icon-sm icon-star-fill font-yellow margin-4-b"></i>
             <b class="x-dark">4.9</b>
             <span class="dark">
                 <i class="icon icon-sm icon-comment margin-3-b margin-5-l"></i> 32
@@ -165,7 +165,7 @@
             <li class="circle padding-10 bordered" style="background: #3b3b3b;"></li>
         </ul>
         <span class="left padding-15-v margin-2-t">
-            <i class="icon icon-sm icon-star-filled font-yellow margin-4-b"></i>
+            <i class="icon icon-sm icon-star-fill font-yellow margin-4-b"></i>
             <b class="x-dark">4.6</b>
             <span class="dark">
                 <i class="icon icon-sm icon-comment margin-3-b margin-5-l"></i> 44
@@ -202,7 +202,7 @@
             <li class="circle padding-5 dual-bordered" style="border-color: #dedede;"></li>
         </ul>
         <span class="left padding-15-v margin-2-t">
-            <i class="icon icon-sm icon-star-filled font-yellow margin-4-b"></i>
+            <i class="icon icon-sm icon-star-fill font-yellow margin-4-b"></i>
             <b class="x-dark">3.9</b>
             <span class="dark">
                 <i class="icon icon-sm icon-comment margin-3-b margin-5-l"></i> 9

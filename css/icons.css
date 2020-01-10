@@ -42,7 +42,7 @@ button.icon { background-color: rgba(0,0,0,0); }
 .icon-bars-left:before { content: "\e918"; }
 .icon-bars-right:before { content: "\e919"; }
 .icon-bell:before { content: "\e91a"; }
-.icon-bell-filled:before { content: "\e91b"; }
+.icon-bell-fill:before { content: "\e91b"; }
 .icon-bell-on:before { content: "\e91c"; }
 .icon-birthday:before { content: "\e91d"; }
 .icon-book:before { content: "\e91e"; }
@@ -69,7 +69,7 @@ button.icon { background-color: rgba(0,0,0,0); }
 .icon-check-circle:before { content: "\e933"; }
 .icon-check-square:before { content: "\e934"; }
 .icon-circle:before { content: "\e935"; }
-.icon-circle-filled:before { content: "\e936"; }
+.icon-circle-fill:before { content: "\e936"; }
 .icon-clipboard:before { content: "\e937"; }
 .icon-clipboard-check:before { content: "\e938"; }
 .icon-clipboard-list:before { content: "\e939"; }
@@ -110,7 +110,7 @@ button.icon { background-color: rgba(0,0,0,0); }
 .icon-filter:before { content: "\e95c"; }
 .icon-fire:before { content: "\e95d"; }
 .icon-flag:before { content: "\e95e"; }
-.icon-flag-filled:before { content: "\e95f"; }
+.icon-flag-fill:before { content: "\e95f"; }
 .icon-gas-pump:before { content: "\e960"; }
 .icon-gift:before { content: "\e961"; }
 .icon-globe:before { content: "\e962"; }
@@ -119,7 +119,7 @@ button.icon { background-color: rgba(0,0,0,0); }
 .icon-grid-flow:before { content: "\e965"; }
 .icon-grid-row:before { content: "\e966"; }
 .icon-heart:before { content: "\e967"; }
-.icon-heart-filled:before { content: "\e968"; }
+.icon-heart-fill:before { content: "\e968"; }
 .icon-help:before { content: "\e969"; }
 .icon-history:before { content: "\e96a"; }
 .icon-home:before { content: "\e96b"; }
@@ -150,7 +150,7 @@ button.icon { background-color: rgba(0,0,0,0); }
 .icon-long-arrow-up:before { content: "\e984"; }
 .icon-map:before { content: "\e985"; }
 .icon-marker:before { content: "\e986"; }
-.icon-marker-filled:before { content: "\e987"; }
+.icon-marker-fill:before { content: "\e987"; }
 .icon-megaphone:before { content: "\e988"; }
 .icon-minus:before { content: "\e989"; }
 .icon-minus-circle:before { content: "\e98a"; }
@@ -198,9 +198,9 @@ button.icon { background-color: rgba(0,0,0,0); }
 .icon-sort-down:before { content: "\e9b4"; }
 .icon-sort-up:before { content: "\e9b5"; }
 .icon-square:before { content: "\e9b6"; }
-.icon-square-filled:before { content: "\e9b7"; }
+.icon-square-fill:before { content: "\e9b7"; }
 .icon-star:before { content: "\e9b8"; }
-.icon-star-filled:before { content: "\e9b9"; }
+.icon-star-fill:before { content: "\e9b9"; }
 .icon-star-half:before { content: "\e9ba"; }
 .icon-sticky-note:before { content: "\e9bb"; }
 .icon-sticky-note-list:before { content: "\e9bc"; }
@@ -209,9 +209,9 @@ button.icon { background-color: rgba(0,0,0,0); }
 .icon-tachometer:before { content: "\e9bf"; }
 .icon-target:before { content: "\e9c0"; }
 .icon-trash:before { content: "\e9c1"; }
-.icon-trash-filled:before { content: "\e9c2"; }
+.icon-trash-fill:before { content: "\e9c2"; }
 .icon-truck:before { content: "\e9c3"; }
-.icon-truck-filled:before { content: "\e9c4"; }
+.icon-truck-fill:before { content: "\e9c4"; }
 .icon-undo:before { content: "\e9c5"; }
 .icon-user:before { content: "\e9c6"; }
 .icon-user-check:before { content: "\e9c7"; }
@@ -322,9 +322,9 @@ button.icon { background-color: rgba(0,0,0,0); }
 .icon-moneys:before { content: "\ea30"; }
 .icon-shopping-bag:before { content: "\ea31"; }
 .icon-shopping-basket:before { content: "\ea32"; }
-.icon-shopping-basket-filled:before { content: "\ea33"; }
+.icon-shopping-basket-fill:before { content: "\ea33"; }
 .icon-shopping-cart:before { content: "\ea34"; }
-.icon-shopping-cart-filled:before { content: "\ea35"; }
+.icon-shopping-cart-fill:before { content: "\ea35"; }
 .icon-store:before { content: "\ea36"; }
 .icon-tag:before { content: "\ea37"; }
 .icon-tags:before { content: "\ea38"; }
