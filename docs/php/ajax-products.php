@@ -1,7 +1,7 @@
 <div class="col-4 col-sm-6 xs-responsive">
     <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
         <span class="photo-slider margin-20-b">
-            <i class="slider-loader icon icon-xl icon-loader"></i>
+            <i class="slider-loader icon icon-xl icon-loader-circle"></i>
             <img src="img/product_01.png"
                     srcset="img/product_01@2x.png"
                     data-src="img/product_01.png,img/product_02.png,img/product_03.png"
@@ -27,10 +27,10 @@
             <li class="circle padding-5 dual-bordered" style="border-color: #248ddd;"></li>
         </ul>
         <span class="left padding-15-v margin-2-t">
-            <i class="icon icon-sm icon-favorite-fill font-yellow margin-4-b"></i>
+            <i class="icon icon-sm icon-star-filled font-yellow margin-4-b"></i>
             <b class="x-dark">4.8</b>
             <span class="dark">
-                <i class="icon icon-sm icon-message margin-3-b margin-5-l"></i> 24
+                <i class="icon icon-sm icon-comment margin-3-b margin-5-l"></i> 24
             </span>
         </span>
     </a>
@@ -38,7 +38,7 @@
 <div class="col-4 col-sm-6 xs-responsive">
     <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
         <span class="photo-slider margin-20-b">
-            <i class="slider-loader icon icon-xl icon-loader"></i>
+            <i class="slider-loader icon icon-xl icon-loader-circle"></i>
             <img src="img/product_02.png"
                     srcset="img/product_02@2x.png"
                     data-src="img/product_02.png,img/product_04.png"
@@ -63,10 +63,10 @@
             <li class="circle padding-5 dual-bordered" style="border-color: #dedede;"></li>
         </ul>
         <span class="left padding-15-v margin-2-t">
-            <i class="icon icon-sm icon-favorite-fill font-yellow margin-4-b"></i>
+            <i class="icon icon-sm icon-star-filled font-yellow margin-4-b"></i>
             <b class="x-dark">3.9</b>
             <span class="dark">
-                <i class="icon icon-sm icon-message margin-3-b margin-5-l"></i> 9
+                <i class="icon icon-sm icon-comment margin-3-b margin-5-l"></i> 9
             </span>
         </span>
     </a>
@@ -74,7 +74,7 @@
 <div class="col-4 col-sm-6 xs-responsive">
     <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
         <span class="photo-slider margin-20-b">
-            <i class="slider-loader icon icon-xl icon-loader"></i>
+            <i class="slider-loader icon icon-xl icon-loader-circle"></i>
             <img src="img/product_03.png"
                     srcset="img/product_03@2x.png"
                     data-src="img/product_03.png,img/product_05.png"
@@ -99,10 +99,10 @@
             <li class="circle padding-5 dual-bordered" style="border-color: #3b3b3b;"></li>
         </ul>
         <span class="left padding-15-v margin-2-t">
-            <i class="icon icon-sm icon-favorite-fill font-yellow margin-4-b"></i>
+            <i class="icon icon-sm icon-star-filled font-yellow margin-4-b"></i>
             <b class="x-dark">4.3</b>
             <span class="dark">
-                <i class="icon icon-sm icon-message margin-3-b margin-5-l"></i> 11
+                <i class="icon icon-sm icon-comment margin-3-b margin-5-l"></i> 11
             </span>
         </span>
     </a>
@@ -110,7 +110,7 @@
 <div class="col-4 col-sm-6 xs-responsive">
     <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
         <span class="photo-slider margin-20-b">
-            <i class="slider-loader icon icon-xl icon-loader"></i>
+            <i class="slider-loader icon icon-xl icon-loader-circle"></i>
             <img src="img/product_04.png"
                     srcset="img/product_04@2x.png"
                 alt="">
@@ -132,10 +132,10 @@
             <li class="circle padding-5 dual-bordered" style="border-color: #dedede;"></li>
         </ul>
         <span class="left padding-15-v margin-2-t">
-            <i class="icon icon-sm icon-favorite-fill font-yellow margin-4-b"></i>
+            <i class="icon icon-sm icon-star-filled font-yellow margin-4-b"></i>
             <b class="x-dark">4.9</b>
             <span class="dark">
-                <i class="icon icon-sm icon-message margin-3-b margin-5-l"></i> 32
+                <i class="icon icon-sm icon-comment margin-3-b margin-5-l"></i> 32
             </span>
         </span>
     </a>
@@ -143,7 +143,7 @@
 <div class="col-4 col-sm-6 xs-responsive">
     <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
         <span class="photo-slider margin-20-b">
-            <i class="slider-loader icon icon-xl icon-loader"></i>
+            <i class="slider-loader icon icon-xl icon-loader-circle"></i>
             <img src="img/product_05.png"
                     srcset="img/product_05@2x.png"
                 alt="">
@@ -165,10 +165,10 @@
             <li class="circle padding-10 bordered" style="background: #3b3b3b;"></li>
         </ul>
         <span class="left padding-15-v margin-2-t">
-            <i class="icon icon-sm icon-favorite-fill font-yellow margin-4-b"></i>
+            <i class="icon icon-sm icon-star-filled font-yellow margin-4-b"></i>
             <b class="x-dark">4.6</b>
             <span class="dark">
-                <i class="icon icon-sm icon-message margin-3-b margin-5-l"></i> 44
+                <i class="icon icon-sm icon-comment margin-3-b margin-5-l"></i> 44
             </span>
         </span>
     </a>
@@ -176,7 +176,7 @@
 <div class="col-4 col-sm-6 xs-responsive">
     <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
         <span class="photo-slider margin-20-b">
-            <i class="slider-loader icon icon-xl icon-loader"></i>
+            <i class="slider-loader icon icon-xl icon-loader-circle"></i>
             <img
                     src="img/product_02.png"
                     srcset="img/product_02@2x.png"
@@ -202,10 +202,10 @@
             <li class="circle padding-5 dual-bordered" style="border-color: #dedede;"></li>
         </ul>
         <span class="left padding-15-v margin-2-t">
-            <i class="icon icon-sm icon-favorite-fill font-yellow margin-4-b"></i>
+            <i class="icon icon-sm icon-star-filled font-yellow margin-4-b"></i>
             <b class="x-dark">3.9</b>
             <span class="dark">
-                <i class="icon icon-sm icon-message margin-3-b margin-5-l"></i> 9
+                <i class="icon icon-sm icon-comment margin-3-b margin-5-l"></i> 9
             </span>
         </span>
     </a>

@@ -4,7 +4,7 @@
 */
 
 var loadingButton = {
-    spinner: 'icon icon-sm icon-loader'
+    spinner: 'icon icon-sm icon-loader-circle'
 };
 
 (function () {
