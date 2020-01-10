@@ -19,7 +19,7 @@
         <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
         <b class="xx-large">$164.98</b>
         <span class="block">
-            <i class="icon icon-sm icon-finish margin-2-r"></i> Fast Delivery
+            <i class="icon icon-sm icon-truck margin-2-r"></i> Fast Delivery
         </span>
         <ul class="list-inline margin-15-v right">
             <li class="circle padding-5 dual-bordered" style="border-color: #ee2329;"></li>
@@ -92,7 +92,7 @@
         <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
         <b class="xx-large">$149.99</b>
         <span class="block">
-            <i class="icon icon-sm icon-finish margin-2-r"></i> Fast Delivery
+            <i class="icon icon-sm icon-truck margin-2-r"></i> Fast Delivery
         </span>
         <ul class="list-inline margin-15-v right">
             <li class="circle padding-5 dual-bordered" style="border-color: #248ddd;"></li>

@@ -8,8 +8,8 @@ var dataList = {
     valueSplit : '|',
 
     sortIcon : 'icon icon-xs icon-sort',
-    ascIcon : 'icon icon-xs icon-angle-up',
-    descIcon : 'icon icon-xs icon-angle-down',
+    ascIcon : 'icon icon-xs icon-sort-up',
+    descIcon : 'icon icon-xs icon-sort-down',
 
     prevIcon : 'icon icon-xs icon-angle-left',
     nextIcon : 'icon icon-xs icon-angle-right',
