@@ -20,6 +20,9 @@ input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .btn:not(.circle) { padding-right: 10px; padding-left: 10px; }
 .btn:not(.btn-xs):not(.btn-xxs).circle { padding-right: 16px; padding-left: 16px;}
 
+.btn:not(.btn-lg):not(.btn-sm):not(.btn-xs):not(.btn-xxs) .icon { line-height: 1.125; }
+.btn-sm .icon { line-height: .9; }
+
 .btn .icon:not(.no-opacity) { opacity: .45; }
 .btn.ui-dark .icon,.btn.ui-x-dark .icon { opacity: 1; }
 html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hover .icon { opacity: 1 !important; }
