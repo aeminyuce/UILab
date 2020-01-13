@@ -1,16 +1,16 @@
 /*
- Swatches JS
- Swatches JS requires Selector Js, Events JS, User Agents JS
+ Themes JS
+ Themes JS requires Selector Js, Events JS, User Agents JS
 */
 
-var swatches = {};
+var themes = {};
 
 (function () {
 
     'use strict';
     /*globals window, document, events, useragents */
 
-    swatches.Start = function () {
+    themes.Start = function () {
 
         if (useragents.mobile) { return; } // stop on mobile devices
 
@@ -81,6 +81,6 @@ var swatches = {};
     };
 
     // Loaders
-    events.onload(swatches.Start);
+    events.onload(themes.Start);
 
 }());

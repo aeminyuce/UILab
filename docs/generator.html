@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="../css/typography.css"/>
     <link rel="stylesheet" href="../css/top-button.css"/>
 
-    <link rel="stylesheet" href="../css/swatches.css"/>
+    <link rel="stylesheet" href="../css/themes.css"/>
     <link rel="stylesheet" href="../css/darkmode.css"/>
 
     <!-- Javascript Tools -->
@@ -41,12 +41,12 @@
     <script src="../js/user-agents.js"></script>
 
     <script src="../js/ajax.js"></script>
+    <script src="../js/effects.js"></script>
     <script src="../js/forms.js"></script>
     <script src="../js/loading-button.js"></script>
     <script src="../js/static-grid.js"></script>
     <script src="../js/sticky-header.js"></script>
-    <script src="../js/swatches.js"></script>
-    <script src="../js/effects.js"></script>
+    <script src="../js/themes.js"></script>
     <script src="../js/top-button.js"></script>
 
     <!-- custom js -->
@@ -462,6 +462,43 @@
                                     </label>
                                 </div>
 
+                                <h5 class="bold align-left margin-10-b">Typography</h5>
+
+                                <div class="generate-forms margin-20-b">
+                                    <label class="custom margin-5-b block opacity ease-opacity">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                            <input class="generate-toggle" type="checkbox">
+                                            <i class="ease-form-custom"></i>
+                                        </span>
+                                        <span class="x-dark">Select/Deselect All</span>
+                                    </label>
+
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                            <input type="checkbox" name="typography" value="../css/typography.css" checked>
+                                            <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        Typography
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                            <input type="checkbox" name="code" value="../css/code.css">
+                                            <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        Code
+                                    </label>
+                                    <label class="custom block">
+                                        <span class="switch-custom rounded dual-bordered ease-form">
+                                            <input type="checkbox" name="listings" value="../css/listings.css">
+                                            <i class="ui-dark ease-form-custom"></i>
+                                        </span>
+                                        Listings
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="col-3 col-md-4 col-sm-6 xs-responsive">
+
                                 <h5 class="bold align-left margin-10-b">Buttons</h5>
 
                                 <div class="generate-forms margin-20-b">
@@ -507,43 +544,6 @@
                                             <i class="ui-dark ease-form-custom"></i>
                                         </span>
                                         Button Holder
-                                    </label>
-                                </div>
-
-                            </div>
-                            <div class="col-3 col-md-4 col-sm-6 xs-responsive">
-
-                                <h5 class="bold align-left margin-10-b">Typography</h5>
-
-                                <div class="generate-forms margin-20-b">
-                                    <label class="custom margin-5-b block opacity ease-opacity">
-                                        <span class="switch-custom rounded dual-bordered ease-form">
-                                            <input class="generate-toggle" type="checkbox">
-                                            <i class="ease-form-custom"></i>
-                                        </span>
-                                        <span class="x-dark">Select/Deselect All</span>
-                                    </label>
-
-                                    <label class="custom block">
-                                        <span class="switch-custom rounded dual-bordered ease-form">
-                                            <input type="checkbox" name="typography" value="../css/typography.css" checked>
-                                            <i class="ui-dark ease-form-custom"></i>
-                                        </span>
-                                        Typography
-                                    </label>
-                                    <label class="custom block">
-                                        <span class="switch-custom rounded dual-bordered ease-form">
-                                            <input type="checkbox" name="code" value="../css/code.css">
-                                            <i class="ui-dark ease-form-custom"></i>
-                                        </span>
-                                        Code
-                                    </label>
-                                    <label class="custom block">
-                                        <span class="switch-custom rounded dual-bordered ease-form">
-                                            <input type="checkbox" name="listings" value="../css/listings.css">
-                                            <i class="ui-dark ease-form-custom"></i>
-                                        </span>
-                                        Listings
                                     </label>
                                 </div>
 
@@ -861,10 +861,10 @@
 
                                     <label class="custom block">
                                         <span class="switch-custom rounded dual-bordered ease-form">
-                                            <input type="checkbox" name="swatches" value="../css/swatches.css" checked>
+                                            <input type="checkbox" name="themes" value="../css/themes.css" checked>
                                             <i class="ui-dark ease-form-custom"></i>
                                         </span>
-                                        Swatches
+                                        Themes
                                     </label>
                                     <label class="custom block">
                                         <span class="switch-custom rounded dual-bordered ease-form">
@@ -1295,10 +1295,10 @@
 
                                     <label class="custom block">
                                         <span class="switch-custom rounded dual-bordered ease-form">
-                                            <input type="checkbox" name="swatches js" value="../js/swatches.js" checked>
+                                            <input type="checkbox" name="themes js" value="../js/themes.js" checked>
                                             <i class="ui-dark ease-form-custom"></i>
                                         </span>
-                                        Swatches
+                                        Themes
                                     </label>
                                 </div>
 

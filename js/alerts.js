@@ -5,10 +5,10 @@
 
 var alerts = {
 
-    dialogTheme: '', // use swatches
+    dialogTheme: '', // use themes
     dialogClasses: 'rounded shadow-lg',
 
-    messageTheme: '', // use swatches
+    messageTheme: '', // use themes
     messageClasses: 'rounded shadow-lg',
     messageTimer: '6000', // miliseconds, wait for atomatically close messages
 

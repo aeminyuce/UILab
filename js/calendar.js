@@ -17,7 +17,7 @@ var calendar = {
     nextIcon: 'icon-angle-right', // header's next button icon
     backIcon: 'icon-ellipsis-v', // detail's back button icon
 
-    todayTheme: '' // use swatches
+    todayTheme: '' // use themes
 
 };
 
