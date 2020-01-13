@@ -1,5 +1,6 @@
 /* forms */
 .ease-form,.ease-1st-form > *,.ease-2nd-form > * > * { transition-property: color, background-color, border-color; }
+.ease-form-custom { transition-property: width, height, background-color, transform, opacity; }
 
 .text,.textarea,.select,.select-multi { border: solid 1px rgba(0,0,0,.15); overflow: hidden; display: block; position: relative; }
 .text,.select,.mobile .select-multi { line-height: normal; min-height: 32px; }
@@ -65,6 +66,35 @@ html:not(.mobile) .file:hover .btn { background-color: rgba(0,0,0,.15); }
 
 .file > span { white-space: nowrap; text-overflow: ellipsis; line-height: 30px; width: 100%; padding-right: 10px; padding-left: 135px; overflow: hidden; display: block; position: absolute; }
 .file.file-lg > span { font-size: 16px; line-height: 40px; }
+
+label.custom { min-height: 22px; padding-top: 5px; padding-bottom: 3px; display: inline-block; }
+
+.check-custom,.radio-custom,.switch-custom { vertical-align: middle; height: 22px; margin-bottom: 2px; border: solid 1px rgba(0,0,0,.15); overflow: hidden; display: inline-block; position: relative; }
+.check-custom,.radio-custom { width: 22px; }
+.radio-custom,.switch-custom.rounded { border-radius: 11px !important; }
+.switch-custom { width: 44px; }
+
+.check-custom i,.radio-custom i,.switch-custom i { content: ""; width: 14px; height: 14px; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+.check-custom i,.radio-custom i { background-color: rgba(0,0,0,.65); opacity: 0; }
+.radio-custom i,.switch-custom.rounded i { border-radius: 7px; }
+.check-custom.rounded i { border-radius: 3px; }
+
+.check-custom input,.radio-custom input,.switch-custom input { width: 140%; height: 140%; display: block; position: absolute; top: -20%; left: -20%; z-index: 1; opacity: 0; }
+.check-custom input:checked + i,.check-custom input:indeterminate + i,.radio-custom input:checked + i { opacity: 1; }
+.check-custom input:indeterminate + i { height: 4px; }
+.switch-custom input:not(:checked) + i,.switch-custom input:not(:checked) + i[class*="ui-"] { background-color: rgba(0,0,0,.15); }
+.switch-custom input:checked + i { transform: translate(25%,-50%); }
+.switch-custom input:checked + i:not([class*="ui-"]) { background-color: #2dbd3a; }
+.switch-custom input:not(:indeterminate):not(:checked):not(:indeterminate) + i { transform: translate(-125%,-50%); }
+.switch-custom input:indeterminate + i { background-color: #ffa600; }
+
+html:not(.mobile) .switch-custom:hover i { width: 18px; }
+html:not(.mobile) .switch-custom:hover input:checked + i { transform: translate(0,-50%); }
+html:not(.mobile) .switch-custom:hover input:not(:checked) + i { transform: translate(-100%,-50%); }
+html:not(.mobile) .switch-custom:hover input:indeterminate + i { transform: translate(-50%,-50%); }
+
+.error .check-custom,.error .radio-custom,.error .switch-custom { background-color: rgba(220,0,15,.1) !important; border-color: #dc000f !important; }
+.warning .check-custom,.warning .radio-custom,.warning .switch-custom { background-color: rgba(255,166,0,.1) !important; border-color: #ffa600 !important; }
 
 .form-light { border-color: rgba(255,255,255,.3) !important; }
 .form-light > input,.form-light > select:not(:focus),.form-light > textarea,.form-light > .icon { color: #fff; }
@@ -165,6 +195,8 @@ html:not(.mobile) .file:hover .btn { background-color: rgba(0,0,0,.15); }
 @media (max-width: 480px) {
     .form-inline-responsive { width: 100% !important; display: block !important; }
     .form-inline-responsive:not(:last-child):not(.highlight) { margin-bottom: 5px; }
+
+    label.custom + label.custom { display: block; }
 
     [class*="form-summary"]:not(.no-responsive) { padding-top: 5px; padding-bottom: 5px; }
 }
