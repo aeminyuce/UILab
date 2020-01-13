@@ -24,11 +24,11 @@
 .dual-bordered .text.text-lg input,.dual-bordered .select-lg select,.text.dual-bordered.text-lg input,.select.dual-bordered.select-lg select { line-height: 28px; height: 38px; }
 .dual-bordered.textarea textarea { line-height: 18px; }
 
-.select > .icon { position: absolute; top: 50%; right: 5px; cursor: default; transform: translateY(-50%); }
-.select-lg > .icon { right: 10px; }
+.select > .icon { font-size: 12px; width: 12px; height: 12px; position: absolute; top: 50%; right: 5px; cursor: default; transform: translateY(-50%); opacity: .45; }
+.select-lg > .icon { font-size: 18px; width: 18px; height: 18px; right: 10px; }
 
 .select select { padding-right: 22px; position: relative; z-index: 2; }
-.select-lg select { padding-right: 34px; }
+.select-lg select { padding-left: 10px; padding-right: 34px; }
 .ie .select select:focus::-ms-value { color: inherit; background-color: rgba(255,255,255,0); }
 .ie .select select::-ms-expand { display: none; }
 
@@ -126,7 +126,7 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i { transform: tran
 .form-focus:not(.form-readonly) { background-color: #f9f9f9 !important; box-shadow: inset 0 0 1px rgba(0,0,0,.075); }
 .form-focus > input,.form-focus > select,.form-focus > textarea,.form-focus > .icon:not([class*="ui-"]) { color: #000 !important; }
 .form-focus.text-icon > .icon { opacity: 1; }
-.form-focus.select > .icon { transform: translateY(-50%) rotate(-180deg); }
+.form-focus.select > .icon { transform: translateY(-50%) rotate(-180deg); opacity: 1; }
 
 /* do not group */
 ::-webkit-input-placeholder { color: rgba(0,0,0,.4); }
