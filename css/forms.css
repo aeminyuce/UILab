@@ -92,14 +92,11 @@ html:not(.mobile) .file:hover .btn { background-color: rgba(0,0,0,.15); }
 .form-label { margin-bottom: 5px; display: inline-block; }
 
 .form-focus { border-color: rgba(0,0,0,.35); }
+.form-focus.form-light { border-color: rgba(255,255,255,1); }
 .form-focus:not(.form-readonly) { background-color: #f9f9f9 !important; box-shadow: inset 0 0 1px rgba(0,0,0,.075); }
 .form-focus > input,.form-focus > select,.form-focus > textarea,.form-focus > .icon:not([class*="ui-"]) { color: #000 !important; }
 .form-focus.text-icon > .icon { opacity: 1; }
 .form-focus.select > .icon { transform: translateY(-50%) rotate(-180deg); }
-
-.sprite.focus,.form-focus > .sprite.active { display: none; }
-.form-focus > .sprite.focus { display: inline-block; }
-.form-focus.form-light { border-color: rgba(255,255,255,1); }
 
 /* do not group */
 ::-webkit-input-placeholder { color: rgba(0,0,0,.4); }
