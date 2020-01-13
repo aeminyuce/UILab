@@ -1,13 +1,13 @@
 /*
- Transitions JS
- Transitions JS requires Selector Js, Events JS, User Agents JS
+ Effects JS
+ Effects JS requires Selector Js, Events JS, User Agents JS
 */
 
-var transitions = {
+var effects = {
 
-    effects: true,
-    pauseScroll: false, // close transitions and animations on window scrolling
-    pauseResize: false, // close transitions and animations on window resizing
+    pauseAll: false,
+    pauseScroll: false, // pasuse effects when scrolling
+    pauseResize: false, // pasuse effects when resizing
     preload: true, // wait page preload to start effects
     ie: true,
     android: true,
@@ -22,22 +22,25 @@ var transitions = {
 
     var pauseTransitions;
 
-    transitions.Start = function () {
+    effects.Start = function () {
 
-        if (useragents.ie && !useragents.edge && !transitions.ie) {
-            transitions.effects = false;
+        if (useragents.ie && !useragents.edge && !effects.ie) {
+            effects.pauseAll = true;
         }
-        if (useragents.mobile && useragents.android && !transitions.android) {
-            transitions.effects = false;
+        if (useragents.mobile && useragents.android && !effects.android) {
+            effects.pauseAll = true;
         }
-        if (useragents.mobile && useragents.androidOld && !transitions.androidOld) {
-            transitions.effects = false;
+        if (useragents.mobile && useragents.androidOld && !effects.androidOld) {
+            effects.pauseAll = true;
         }
 
-        if (transitions.effects) {
+        if (effects.pauseAll) {
+            events.addClass(document, 'no-transitions-all animate-stop-all');
+
+        } else {
 
             // wait page preload to start transitions
-            if (transitions.preload) {
+            if (effects.preload) {
 
                 events.addClass(document, 'no-transitions-all');
                 setTimeout(function () {
@@ -46,15 +49,15 @@ var transitions = {
 
             }
 
-        } else { events.addClass(document, 'no-transitions-all animate-stop-all'); }
+        }
 
     };
 
     function pauseTransitionsFnc(eName) {
 
-        if (transitions.effects) {
+        if (!effects.pauseAll) {
 
-            if ((eName === 'scroll' && transitions.pauseScroll) || (eName === 'resize' && transitions.pauseResize)) {
+            if ((eName === 'scroll' && effects.pauseScroll) || (eName === 'resize' && effects.pauseResize)) {
 
                 clearTimeout(pauseTransitions);
 
@@ -75,7 +78,7 @@ var transitions = {
     }
 
     // Loaders
-    events.onload(transitions.Start);
+    events.onload(effects.Start);
 
     events.on(window, 'resize', function () {
         pauseTransitionsFnc('resize');

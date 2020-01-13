@@ -1,4 +1,4 @@
-/* transitions */
+/* effects */
 [class*="ease-"],[class*="ease-1st-"] > *,[class*="ease-2nd-"] > * > * { transition-duration: .15s; transition-timing-function: ease-out; }
 
 .no-transitions,.no-transitions[class*="ease-1st-"] > *,.no-transitions[class*="ease-2nd-"] > * > *,
@@ -33,3 +33,18 @@
 .ease-in-out,.ease-in-out[class*="ease-1st-"] > *,.ease-in-out[class*="ease-2nd-"] > * > * { transition-timing-function: ease-in-out; }
 
 .ease-default,.ease-default[class*="ease-1st-"] > *,.ease-default[class*="ease-2nd-"] > * > * { transition-duration: .15s !important; transition-timing-function: ease !important; }
+
+.animate-stop,.animate-stop:before,.animate-stop:after,
+.animate-stop-all,.animate-stop-all:before,.animate-stop-all:after,
+.animate-stop-all *,.animate-stop-all *:before,.animate-stop-all *:after { animation: none !important; }
+
+/*
+  animation shorthand:
+  name | duration | timing-function | delay | iteration-count | direction | fill-mode | play-state
+  animation: name 3s ease-in 1s infinite reverse both running;
+*/
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+.animate-spin { animation: spin 1.5s linear infinite; }
+
+@keyframes progress { from { background-position: 40px 0; } to { background-position: 0 0; } }
+.animate-progress { animation: progress 3s linear infinite; }
