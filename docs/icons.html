@@ -87,7 +87,7 @@
             buttons = selector('.icons-sizes .btn');
             events.on(buttons, 'click', function () {
 
-                var that, icons;
+                var that, icons, size;
 
                 that = this;
                 icons = selector('.icons-list .icon');
@@ -98,7 +98,11 @@
                 }, 0);
 
                 events.removeClass(icons, 'icon-xxl icon-xl icon-lg icon-sm icon-xs icon-xxs');
-                events.addClass(icons, 'icon-' + this.getAttribute('data-size'));
+                size = this.getAttribute('data-size');
+
+                if (size !== '') {
+                    events.addClass(icons, 'icon-' + size);
+                }
 
             });
 
@@ -170,7 +174,7 @@
                         <button data-size="xl" class="btn btn-lg rounded ui-dark">X Large</button>
                         <button data-size="lg" class="btn btn-lg rounded">Large</button>
                         <span class="sp5 visible-sm"></span>
-                        <button data-size="md" class="btn btn-lg rounded">Medium</button>
+                        <button data-size="" class="btn btn-lg rounded">Default</button>
                         <button data-size="sm" class="btn btn-lg rounded">Small</button>
                         <button data-size="xs" class="btn btn-lg rounded">X Small</button>
                         <button data-size="xxs" class="btn btn-lg rounded">XX Small</button>
