@@ -1,13 +1,12 @@
 /* icons */
 @font-face { src: url('../fonts/font-icons.ttf') format('truetype'), url('../fonts/font-icons.woff') format('woff'), url('../fonts/font-icons.svg?#font-icons') format('svg'); font-family: 'font-icons'; font-weight: normal; font-style: normal; font-display: block; }
 
-.icon { font-family: 'font-icons' !important; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; text-align: center !important; vertical-align: middle; line-height: 1; display: inline-block; }
+.icon { font-family: 'font-icons' !important; font-size: 18px; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; text-align: center !important; vertical-align: middle; line-height: 1; width: 18px; height: 18px; display: inline-block; }
 button.icon { background-color: rgba(0,0,0,0); }
 
 .icon.icon-xxs { font-size: 10px; width: 10px; height: 10px; }
 .icon.icon-xs { font-size: 12px; width: 12px; height: 12px; }
 .icon.icon-sm { font-size: 16px; width: 16px; height: 16px; }
-.icon.icon-md { font-size: 18px; width: 18px; height: 18px; }
 .icon.icon-lg { font-size: 24px; width: 24px; height: 24px; }
 .icon.icon-xl { font-size: 32px; width: 32px; height: 32px; }
 .icon.icon-xxl { font-size: 48px; width: 48px; height: 48px; }

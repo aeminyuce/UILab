@@ -165,14 +165,14 @@ var calendar = {
             html += '>' +
                 '<caption>' +
                     '<button type="button" tabindex="-1" class="calendar-prev">' +
-                        '<i class="icon icon-md ' + calendar.prevIcon + '"></i>' +
+                        '<i class="icon ' + calendar.prevIcon + '"></i>' +
                     '</button>' +
                     '<span class="calendar-title ease-bg">' +
                         '<button type="button" tabindex="-1" class="calendar-month">' + calendar.months[date.getMonth()] + '</button>' +
                         '<button type="button" tabindex="-1" class="calendar-year">' + date.getFullYear() + '</button>' +
                     '</span>' +
                     '<button type="button" tabindex="-1" class="calendar-next">' +
-                        '<i class="icon icon-md ' + calendar.nextIcon + '"></i>' +
+                        '<i class="icon ' + calendar.nextIcon + '"></i>' +
                     '</button>' +
                 '</caption>' +
                 '<thead>';
@@ -345,7 +345,7 @@ var calendar = {
 
                                 details = '<div class="details">' +
                                             '<button class="toggle-details" type="button" tabindex="-1">' +
-                                                '<i class="icon icon-md ' + calendar.backIcon + '"></i>' +
+                                                '<i class="icon ' + calendar.backIcon + '"></i>' +
                                             '</button>' +
                                         '<ul>' + details + '</ul>' +
                                     '</div>';
@@ -356,7 +356,7 @@ var calendar = {
 
                                 details = '<div class="details no-details">' +
                                         '<button class="toggle-details" type="button" tabindex="-1">' +
-                                            '<i class="icon icon-md ' + calendar.backIcon + '"></i>' +
+                                            '<i class="icon ' + calendar.backIcon + '"></i>' +
                                         '</button>' +
                                         '<ul>' +
                                             '<li>' +
