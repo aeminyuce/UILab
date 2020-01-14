@@ -28,7 +28,7 @@
     .select select option,.select select optgroup { color: #fff; background-color: #41454d;}
     .select-multi option:not(:last-child) { border-bottom-color: rgba(255,255,255,.045); }
     html:not(.mobile) .file:hover .btn { background-color: rgba(255,255,255,.15); }
-    .text-icon > button.icon { color: #fff; }
+    [class*="text-icon"] > button.icon { color: #fff; }
 
     .form-focus { border-color: rgba(255,255,255,.35); }
     .form-focus:not(.form-readonly) { background-color: rgba(255,255,255,.075) !important; }
