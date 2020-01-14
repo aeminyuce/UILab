@@ -48,11 +48,9 @@ button.icon { background-color: rgba(0,0,0,0); }
 .icon-book-open:before { content: "\46"; }
 .icon-books:before { content: "\47"; }
 .icon-box:before { content: "\48"; }
-.icon-boxes:before { content: "\49"; }
 .icon-brackets:before { content: "\4a"; }
 .icon-brackets-curly:before { content: "\4b"; }
 .icon-briefcase:before { content: "\4c"; }
-.icon-bug:before { content: "\e10b"; }
 .icon-bullhorn:before { content: "\4d"; }
 .icon-calculator:before { content: "\4e"; }
 .icon-calculator-btn:before { content: "\4f"; }
@@ -376,3 +374,7 @@ button.icon { background-color: rgba(0,0,0,0); }
 .icon-appstore:before { content: "\e108"; }
 .icon-google-play:before { content: "\e109"; }
 .icon-microsoft:before { content: "\e10a"; }
+.icon-boxes:before { content: "\49"; }
+.icon-bug:before { content: "\e10b"; }
+.icon-lab:before { content: "\e10c"; }
+.icon-bus:before { content: "\e10d"; }
