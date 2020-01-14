@@ -1,7 +1,7 @@
 <div class="col-4 col-sm-6 xs-responsive">
     <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
         <span class="photo-slider margin-20-b">
-            <i class="slider-loader icon icon-xl icon-loader-circle"></i>
+            <i class="slider-loader icon icon-xl icon-loader-line"></i>
             <img src="img/product_01.png"
                     srcset="img/product_01@2x.png"
                     data-src="img/product_01.png,img/product_02.png,img/product_03.png"
@@ -38,7 +38,7 @@
 <div class="col-4 col-sm-6 xs-responsive">
     <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
         <span class="photo-slider margin-20-b">
-            <i class="slider-loader icon icon-xl icon-loader-circle"></i>
+            <i class="slider-loader icon icon-xl icon-loader-line"></i>
             <img src="img/product_02.png"
                     srcset="img/product_02@2x.png"
                     data-src="img/product_02.png,img/product_04.png"
@@ -74,7 +74,7 @@
 <div class="col-4 col-sm-6 xs-responsive">
     <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
         <span class="photo-slider margin-20-b">
-            <i class="slider-loader icon icon-xl icon-loader-circle"></i>
+            <i class="slider-loader icon icon-xl icon-loader-line"></i>
             <img src="img/product_03.png"
                     srcset="img/product_03@2x.png"
                     data-src="img/product_03.png,img/product_05.png"
@@ -110,7 +110,7 @@
 <div class="col-4 col-sm-6 xs-responsive">
     <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
         <span class="photo-slider margin-20-b">
-            <i class="slider-loader icon icon-xl icon-loader-circle"></i>
+            <i class="slider-loader icon icon-xl icon-loader-line"></i>
             <img src="img/product_04.png"
                     srcset="img/product_04@2x.png"
                 alt="">
@@ -143,7 +143,7 @@
 <div class="col-4 col-sm-6 xs-responsive">
     <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
         <span class="photo-slider margin-20-b">
-            <i class="slider-loader icon icon-xl icon-loader-circle"></i>
+            <i class="slider-loader icon icon-xl icon-loader-line"></i>
             <img src="img/product_05.png"
                     srcset="img/product_05@2x.png"
                 alt="">
@@ -176,7 +176,7 @@
 <div class="col-4 col-sm-6 xs-responsive">
     <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
         <span class="photo-slider margin-20-b">
-            <i class="slider-loader icon icon-xl icon-loader-circle"></i>
+            <i class="slider-loader icon icon-xl icon-loader-line"></i>
             <img
                     src="img/product_02.png"
                     srcset="img/product_02@2x.png"
