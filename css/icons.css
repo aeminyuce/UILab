@@ -58,8 +58,6 @@ button.icon { background-color: rgba(0,0,0,0); }
 .icon-calendar-check:before { content: "\51"; }
 .icon-calendar-day:before { content: "\52"; }
 .icon-calendar-star:before { content: "\53"; }
-.icon-cap:before { content: "\54"; }
-.icon-car:before { content: "\55"; }
 .icon-chart-bar:before { content: "\56"; }
 .icon-chart-line:before { content: "\57"; }
 .icon-chart-pie:before { content: "\58"; }
@@ -206,8 +204,6 @@ button.icon { background-color: rgba(0,0,0,0); }
 .icon-target:before { content: "\e060"; }
 .icon-trash:before { content: "\e061"; }
 .icon-trash-fill:before { content: "\e062"; }
-.icon-truck:before { content: "\e063"; }
-.icon-truck-fill:before { content: "\e064"; }
 .icon-undo:before { content: "\e065"; }
 .icon-user:before { content: "\e066"; }
 .icon-user-check:before { content: "\e067"; }
@@ -261,7 +257,6 @@ button.icon { background-color: rgba(0,0,0,0); }
 .icon-tablet-v:before { content: "\e097"; }
 .icon-tv:before { content: "\e098"; }
 .icon-usb-drive:before { content: "\e099"; }
-.icon-video:before { content: "\e09a"; }
 .icon-volume-off:before { content: "\e09b"; }
 .icon-volume-on:before { content: "\e09c"; }
 .icon-coffee:before { content: "\e09d"; }
@@ -377,4 +372,10 @@ button.icon { background-color: rgba(0,0,0,0); }
 .icon-boxes:before { content: "\49"; }
 .icon-bug:before { content: "\e10b"; }
 .icon-lab:before { content: "\e10c"; }
-.icon-bus:before { content: "\e10d"; }
+.icon-video:before { content: "\e09a"; }
+.icon-cap:before { content: "\54"; }
+.icon-bus:before { content: "\e10e"; }
+.icon-truck:before { content: "\e063"; }
+.icon-truck-fill:before { content: "\e064"; }
+.icon-car:before { content: "\e10d"; }
+.icon-fire-camp:before { content: "\55"; }
