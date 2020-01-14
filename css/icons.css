@@ -86,8 +86,6 @@ button.icon { background-color: rgba(0,0,0,0); }
 .icon-docs:before { content: "\2b"; }
 .icon-draw:before { content: "\2c"; }
 .icon-edit:before { content: "\2d"; }
-.icon-ellipsis-h:before { content: "\2e"; }
-.icon-ellipsis-v:before { content: "\2f"; }
 .icon-envelope:before { content: "\3a"; }
 .icon-envelope-open:before { content: "\3b"; }
 .icon-exchange-h:before { content: "\3c"; }
@@ -374,8 +372,10 @@ button.icon { background-color: rgba(0,0,0,0); }
 .icon-lab:before { content: "\e10c"; }
 .icon-video:before { content: "\e09a"; }
 .icon-cap:before { content: "\54"; }
-.icon-bus:before { content: "\e10e"; }
-.icon-truck:before { content: "\e063"; }
-.icon-truck-fill:before { content: "\e064"; }
-.icon-car:before { content: "\e10d"; }
 .icon-fire-camp:before { content: "\55"; }
+.icon-bus:before { content: "\e063"; }
+.icon-car:before { content: "\e064"; }
+.icon-truck-fill:before { content: "\e10d"; }
+.icon-truck:before { content: "\e10e"; }
+.icon-ellipsis-h:before { content: "\2e"; }
+.icon-ellipsis-v:before { content: "\2f"; }
