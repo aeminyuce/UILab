@@ -154,7 +154,7 @@ var forms = {};
             events.on(document,
 
                 'mousedown',
-                '.text-icon > button.icon,.text-icon > input.icon',
+                '[class*="text-icon"] > button.icon,[class*="text-icon"] > input.icon',
 
                 function (e) {
 

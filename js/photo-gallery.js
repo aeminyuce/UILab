@@ -8,7 +8,7 @@ var photoGallery = {
     closeIcon: 'icon-remove',
     prevIcon: 'icon-angle-left',
     nextIcon: 'icon-angle-right',
-    loaderIcon: 'icon-loader-circle',
+    loaderIcon: 'icon-loader-line',
     errorIcon: 'icon-file-not-found'
 
 };
