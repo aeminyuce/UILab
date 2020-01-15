@@ -64,10 +64,10 @@ html:not(.portrait) .visible-portrait { display: none !important; }
 .round-l { border-radius: 6px 0 0 6px; }
 
 .circle { border-radius: 1000px; }
-.circle-top { border-radius: 1000px 1000px 0 0; }
-.circle-right { border-radius: 0 1000px 1000px 0; }
-.circle-bottom { border-radius: 0 0 1000px 1000px; }
-.circle-left { border-radius: 1000px 0 0 1000px; }
+.circle-t { border-radius: 1000px 1000px 0 0; }
+.circle-r { border-radius: 0 1000px 1000px 0; }
+.circle-b { border-radius: 0 0 1000px 1000px; }
+.circle-l { border-radius: 1000px 0 0 1000px; }
 
 .shadow-sm { box-shadow: 0 1px 3px rgba(0,0,0,.05); }
 .shadow { box-shadow: 0 1px 3px rgba(0,0,0,.10); }
