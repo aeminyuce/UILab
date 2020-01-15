@@ -173,9 +173,9 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i { transform: tran
     .row [class*="col-"]:not(.sm-fluid) > .form-grid { margin-bottom: -15px; }
 
     .row-no-padding [class*="col-"]:not(.sm-fluid) > .form-grid { margin-top: 10px; margin-bottom: 5px; }
-    .row-xs-padding [class*="col-"]:not(.sm-fluid) > .form-grid,.row-xs-padding-ver [class*="col-"]:not(.sm-fluid) > .form-grid { margin-bottom: 3px; }
-    .row-sm-padding [class*="col-"]:not(.sm-fluid) > .form-grid,.row-sm-padding-ver [class*="col-"]:not(.sm-fluid) > .form-grid { margin-bottom: 0; }
-    .row-md-padding [class*="col-"]:not(.sm-fluid) > .form-grid,.row-md-padding-ver [class*="col-"]:not(.sm-fluid) > .form-grid { margin-bottom: -5px; }
+    .row-xs-padding [class*="col-"]:not(.sm-fluid) > .form-grid,.row-xs-padding-v [class*="col-"]:not(.sm-fluid) > .form-grid { margin-bottom: 3px; }
+    .row-sm-padding [class*="col-"]:not(.sm-fluid) > .form-grid,.row-sm-padding-v [class*="col-"]:not(.sm-fluid) > .form-grid { margin-bottom: 0; }
+    .row-md-padding [class*="col-"]:not(.sm-fluid) > .form-grid,.row-md-padding-v [class*="col-"]:not(.sm-fluid) > .form-grid { margin-bottom: -5px; }
 }
 @media (min-width: 768px) and (max-width: 959px) {
     .sm-fluid > .form-grid { line-height: 32px; display: inline-block; }
@@ -186,9 +186,9 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i { transform: tran
     .row [class*="col-"].sm-fluid > .form-grid { margin-bottom: -15px; }
 
     .row-no-padding [class*="col-"].sm-fluid > .form-grid { margin-top: 10px; margin-bottom: 5px; }
-    .row-xs-padding [class*="col-"].sm-fluid > .form-grid,.row-xs-padding-ver [class*="col-"].sm-fluid > .form-grid { margin-bottom: 3px; }
-    .row-sm-padding [class*="col-"].sm-fluid > .form-grid,.row-sm-padding-ver [class*="col-"].sm-fluid > .form-grid { margin-bottom: 0; }
-    .row-md-padding [class*="col-"].sm-fluid > .form-grid,.row-md-padding-ver [class*="col-"].sm-fluid > .form-grid { margin-bottom: -5px; }
+    .row-xs-padding [class*="col-"].sm-fluid > .form-grid,.row-xs-padding-v [class*="col-"].sm-fluid > .form-grid { margin-bottom: 3px; }
+    .row-sm-padding [class*="col-"].sm-fluid > .form-grid,.row-sm-padding-v [class*="col-"].sm-fluid > .form-grid { margin-bottom: 0; }
+    .row-md-padding [class*="col-"].sm-fluid > .form-grid,.row-md-padding-v [class*="col-"].sm-fluid > .form-grid { margin-bottom: -5px; }
 }
 @media (min-width: 481px) {
     .form-summary-lg:not(.no-fluid) { line-height: 42px; }
