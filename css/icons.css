@@ -380,3 +380,4 @@ button.icon { background-color: rgba(0,0,0,0); }
 .icon-sort-down:before { content: "\e055"; }
 .icon-code:before { content: "\e10f"; }
 .icon-eye:before { content: "\40"; }
+.icon-water:before { content: "\e110"; }
