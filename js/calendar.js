@@ -13,9 +13,9 @@ var calendar = {
 
     fillWeekends: true, // true: fills dark color to weekends' background
 
-    prevIcon: 'icon-angle-left', // header's previous button icon
-    nextIcon: 'icon-angle-right', // header's next button icon
-    backIcon: 'icon-ellipsis-v', // detail's back button icon
+    prevIcon: 'icon-arrow-left', // header's previous button icon
+    nextIcon: 'icon-arrow-right', // header's next button icon
+    backIcon: 'icon-angle-left', // detail's back button icon
 
     todayTheme: '' // use themes
 

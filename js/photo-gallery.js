@@ -6,10 +6,10 @@
 var photoGallery = {
 
     closeIcon: 'icon-remove',
-    prevIcon: 'icon-angle-left',
-    nextIcon: 'icon-angle-right',
-    loaderIcon: 'icon-loader-line',
-    errorIcon: 'icon-file-not-found'
+    prevIcon: 'icon-arrow-left',
+    nextIcon: 'icon-arrow-right',
+    loaderIcon: 'icon-loader-line icon-xxl',
+    errorIcon: 'icon-no icon-xxl'
 
 };
 
@@ -164,10 +164,10 @@ var photoGallery = {
             index = Array.prototype.slice.call(images).indexOf(that);
 
             html = '<div class="photo-preview ease-layout">' +
-                    '<button class="btn btn-square btn-lg btn-ghost close-photo-preview ease-btn"><i class="icon icon-lg ' + photoGallery.closeIcon + ' no-opacity"></i></button>' +
-                    '<button type="button" class="preview-prev ease-btn"><i class="icon ' + photoGallery.prevIcon + ' icon-xl"></i></button>' +
-                    '<button type="button" class="preview-next ease-btn"><i class="icon ' + photoGallery.nextIcon + ' icon-xl"></i></button>' +
-                    '<i class="preview-loader icon icon-xxl ' + photoGallery.loaderIcon + '"></i>' +
+                    '<button class="btn btn-square btn-lg btn-ghost close-photo-preview ease-btn"><i class="icon ' + photoGallery.closeIcon + ' no-opacity"></i></button>' +
+                    '<button type="button" class="preview-prev ease-btn"><i class="icon ' + photoGallery.prevIcon + '"></i></button>' +
+                    '<button type="button" class="preview-next ease-btn"><i class="icon ' + photoGallery.nextIcon + '"></i></button>' +
+                    '<i class="preview-loader icon ' + photoGallery.loaderIcon + '"></i>' +
                     '<span class="preview-info ease-layout"></span>' +
                     '<img class="ease-layout">' +
                 '</div>';
