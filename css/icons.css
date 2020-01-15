@@ -92,7 +92,6 @@ button.icon { background-color: rgba(0,0,0,0); }
 .icon-exchange-v:before { content: "\3d"; }
 .icon-expand:before { content: "\3e"; }
 .icon-expand-wide:before { content: "\3f"; }
-.icon-eye:before { content: "\40"; }
 .icon-face-blank:before { content: "\5b"; }
 .icon-face-meh:before { content: "\5d"; }
 .icon-face-sad:before { content: "\5e"; }
@@ -380,3 +379,4 @@ button.icon { background-color: rgba(0,0,0,0); }
 .icon-sort-up:before { content: "\e054"; }
 .icon-sort-down:before { content: "\e055"; }
 .icon-code:before { content: "\e10f"; }
+.icon-eye:before { content: "\40"; }
