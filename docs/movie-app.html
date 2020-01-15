@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="../css/listings.css"/>
     <link rel="stylesheet" href="../css/margins.css"/>
     <link rel="stylesheet" href="../css/mobile-menu.css"/>
+    <link rel="stylesheet" href="../css/modal.css"/>
     <link rel="stylesheet" href="../css/photo-images.css"/>
     <link rel="stylesheet" href="../css/paddings.css"/>
     <link rel="stylesheet" href="../css/portlets.css"/>
@@ -51,6 +52,7 @@
     <script src="../js/effects.js"></script>
     <script src="../js/forms.js"></script>
     <script src="../js/mobile-menu.js"></script>
+    <script src="../js/modal.js"></script>
     <script src="../js/top-button.js"></script>
     <script src="../js/static-grid.js"></script>
     <script src="../js/themes.js"></script>
@@ -111,8 +113,9 @@
 
                         <div class="row row-no-padding-v">
                             <div class="col-6">
-                                <div class="text text-lg text-icon-left margin-15-b circle no-border theme-gray ui-light ease-form">
-                                    <i class="icon icon-search ease-layout"></i>
+                                <div class="text text-lg text-icon-both margin-15-b circle no-border theme-gray ui-light has-clear ease-form">
+                                    <i class="icon text-icon-left icon-search ease-layout"></i>
+                                    <button type="button" class="clear-form icon icon-remove ease-layout"></button>
                                     <input type="text" placeholder="Search for movies, TV shows...">
                                 </div>
                             </div>
@@ -147,8 +150,13 @@
 
                         <div class="col-lg-10 col-12">
                             <div class="col-static">
-                                <div class="static-350 round bg-black" >
-                                    <iframe class="no-border full-width block round shadow-lg" src="https://www.imdb.com/videoembed/vi4235180569" allowfullscreen height="194"></iframe>
+                                <div class="static-350">
+                                    <div class="round set-relative">
+                                        <button class="clear-button full-width set-absolute set-all opacity-more ease-layout" onclick="modal.open({source: 'https://www.imdb.com/videoembed/vi4235180569', size: '722x300', type: 'iframe'});">
+                                            <i class="icon icon-xxl icon-video xx-light set-absolute set-c"></i>
+                                        </button>
+                                        <img class="img-fluid round shadow-lg" src="img/video-poster.jpg" alt="">
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12 padding-30-l no-padding-v md-no-padding">
@@ -169,7 +177,7 @@
                                             <a href="#"><img class="img-photo border-dual circle scale-more" src="img/profile-image3.jpg" alt=""></a>
                                             <a class="margin-15-l inline-block opacity-more ease-layout" href="#">
                                                 <span class="hidden-xs">See full cast</span>
-                                                <i class="icon icon-xs icon-angle-right margin-5-l"></i>
+                                                <i class="icon icon-xs icon-arrow-right margin-5-l"></i>
                                             </a>
                                         </div>
                                     </div>

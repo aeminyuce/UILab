@@ -56,7 +56,7 @@
         <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Bluetooth Headphones</span>
         <b class="xx-large">$79.95</b> <b class="x-dark overline">$99.99</b>
         <span class="block">
-            <i class="icon icon-sm margin-3-r icon-tag"></i> 20% off
+            <i class="icon icon-sm margin-3-r icon-badge-check"></i> 20% off
         </span>
         <ul class="list-inline margin-15-v right">
             <li class="circle padding-5 border-dual" style="border-color: #d22fdf;"></li>
@@ -126,7 +126,7 @@
         <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Wired Headphones</span>
         <b class="xx-large">$89.95</b> <b class="x-dark overline">$119.99</b>
         <span class="block">
-            <i class="icon icon-sm margin-3-r icon-tag"></i> 20% off
+            <i class="icon icon-sm margin-3-r icon-badge-check"></i> 20% off
         </span>
         <ul class="list-inline margin-15-v right">
             <li class="circle padding-5 border-dual" style="border-color: #dedede;"></li>
@@ -159,7 +159,7 @@
         <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Wired Headphones</span>
         <b class="xx-large">$89.95</b> <b class="x-dark overline">$119.99</b>
         <span class="block">
-            <i class="icon icon-sm margin-3-r icon-tag"></i> 20% off
+            <i class="icon icon-sm margin-3-r icon-badge-check"></i> 20% off
         </span>
         <ul class="list-inline margin-15-v right">
             <li class="circle padding-10 border" style="background: #3b3b3b;"></li>
@@ -195,7 +195,7 @@
         <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Bluetooth Headphones</span>
         <b class="xx-large">$79.95</b> <b class="x-dark overline">$99.99</b>
         <span class="block">
-            <i class="icon icon-sm margin-3-r icon-tag"></i> 20% off
+            <i class="icon icon-sm margin-3-r icon-badge-check"></i> 20% off
         </span>
         <ul class="list-inline margin-15-v right">
             <li class="circle padding-5 border-dual" style="border-color: #d22fdf;"></li>
