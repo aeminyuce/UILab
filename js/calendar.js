@@ -627,8 +627,8 @@ var calendar = {
             // create picker
             html = '<div class="calendar';
 
-            if (events.hasClass(form, 'rounded')) {
-                html += ' rounded';
+            if (events.hasClass(form, 'round')) {
+                html += ' round';
             }
 
             html += ' ease-calendar"></div>';

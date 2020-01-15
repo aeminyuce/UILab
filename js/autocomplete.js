@@ -4,7 +4,7 @@
 */
 var autocomplete = {
 
-    classes : 'rounded shadow-lg',
+    classes : 'round shadow-lg',
     customLetters : { "İ": "i", "I": "ı", "Ş": "ş", "Ğ": "ğ", "Ü": "ü", "Ö": "ö", "Ç": "ç" }
 
 };
