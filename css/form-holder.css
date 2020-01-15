@@ -12,13 +12,13 @@
 .form-holder .col-static > [class*="row"]:not(:last-child) .text,.form-holder .col-static > [class*="row"]:not(:last-child) .select,.form-holder .col-static > [class*="row"]:not(:last-child) .btn,.form-holder .col-static > [class*="row"]:not(:last-child) img,
 .form-holder [class*="static-"]:not(:last-child) .text,.form-holder [class*="static-"]:not(:last-child) .select,.form-holder [class*="static-"]:not(:last-child) .btn,.form-holder [class*="static-"]:not(:last-child) img { border-right: 0; }
 
-.form-holder [class*="col-"]:not(:first-child) .text.rounded,.form-holder [class*="col-"]:not(:first-child) .select.rounded,.form-holder [class*="col-"]:not(:first-child) .btn.rounded,.form-holder [class*="col-"]:not(:first-child) img.rounded,
-.form-holder .col-static > [class*="row-"]:not(:first-child) .text.rounded,.form-holder .col-static > [class*="row"]:not(:first-child) .select.rounded,.form-holder .col-static > [class*="row"]:not(:first-child) .btn.rounded,.form-holder .col-static > [class*="row"]:not(:first-child) img.rounded,
-.form-holder [class*="static-"]:not(:first-child) .text.rounded,.form-holder [class*="static-"]:not(:first-child) .select.rounded,.form-holder [class*="static-"]:not(:first-child) .btn.rounded,.form-holder [class*="static-"]:not(:first-child) img.rounded { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+.form-holder [class*="col-"]:not(:first-child) .text.round,.form-holder [class*="col-"]:not(:first-child) .select.round,.form-holder [class*="col-"]:not(:first-child) .btn.round,.form-holder [class*="col-"]:not(:first-child) img.round,
+.form-holder .col-static > [class*="row-"]:not(:first-child) .text.round,.form-holder .col-static > [class*="row"]:not(:first-child) .select.round,.form-holder .col-static > [class*="row"]:not(:first-child) .btn.round,.form-holder .col-static > [class*="row"]:not(:first-child) img.round,
+.form-holder [class*="static-"]:not(:first-child) .text.round,.form-holder [class*="static-"]:not(:first-child) .select.round,.form-holder [class*="static-"]:not(:first-child) .btn.round,.form-holder [class*="static-"]:not(:first-child) img.round { border-top-left-radius: 0; border-bottom-left-radius: 0; }
 
-.form-holder [class*="col-"]:not(:last-child) .text.rounded,.form-holder [class*="col-"]:not(:last-child) .select.rounded,.form-holder [class*="col-"]:not(:last-child) .btn.rounded,.form-holder [class*="col-"]:not(:last-child) img.rounded,
-.form-holder .col-static > [class*="row"]:not(:last-child) .text.rounded,.form-holder .col-static > [class*="row"]:not(:last-child) .select.rounded,.form-holder .col-static > [class*="row"]:not(:last-child) .btn.rounded,.form-holder .col-static > [class*="row"]:not(:last-child) img.rounded,
-.form-holder [class*="static-"]:not(:last-child) .text.rounded,.form-holder [class*="static-"]:not(:last-child) .select.rounded,.form-holder [class*="static-"]:not(:last-child) .btn.rounded,.form-holder [class*="static-"]:not(:last-child) img.rounded { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+.form-holder [class*="col-"]:not(:last-child) .text.round,.form-holder [class*="col-"]:not(:last-child) .select.round,.form-holder [class*="col-"]:not(:last-child) .btn.round,.form-holder [class*="col-"]:not(:last-child) img.round,
+.form-holder .col-static > [class*="row"]:not(:last-child) .text.round,.form-holder .col-static > [class*="row"]:not(:last-child) .select.round,.form-holder .col-static > [class*="row"]:not(:last-child) .btn.round,.form-holder .col-static > [class*="row"]:not(:last-child) img.round,
+.form-holder [class*="static-"]:not(:last-child) .text.round,.form-holder [class*="static-"]:not(:last-child) .select.round,.form-holder [class*="static-"]:not(:last-child) .btn.round,.form-holder [class*="static-"]:not(:last-child) img.round { border-top-right-radius: 0; border-bottom-right-radius: 0; }
 
 .form-holder.error .text,.form-holder.error .select,
 .form-holder.error .btn[class*="border"],

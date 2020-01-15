@@ -51,7 +51,7 @@
 .file.file-lg.no-border input { height: 42px; }
 
 .file .btn { text-align: center !important; min-width: 128px; height: 30px; float: left; }
-.file .btn.rounded { border-radius: 3px 0 0 3px; }
+.file .btn.round { border-radius: 3px 0 0 3px; }
 
 .file:not(.no-border) .btn { line-height: 18px; }
 .file.border-dual .btn { min-width: 126px; height: 28px; }
@@ -71,13 +71,13 @@ label.custom { min-height: 22px; padding-top: 5px; padding-bottom: 3px; display:
 
 .check-custom,.radio-custom,.switch-custom { vertical-align: middle; height: 22px; margin-bottom: 2px; border: solid 1px rgba(0,0,0,.15); overflow: hidden; display: inline-block; position: relative; }
 .check-custom,.radio-custom { width: 22px; }
-.radio-custom,.switch-custom.rounded { border-radius: 11px !important; }
+.radio-custom,.switch-custom.round { border-radius: 11px !important; }
 .switch-custom { width: 44px; }
 
 .check-custom i,.radio-custom i,.switch-custom i { content: ""; width: 14px; height: 14px; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
 .check-custom i,.radio-custom i { background-color: rgba(0,0,0,.65); opacity: 0; }
-.radio-custom i,.switch-custom.rounded i { border-radius: 7px; }
-.check-custom.rounded i { border-radius: 3px; }
+.radio-custom i,.switch-custom.round i { border-radius: 7px; }
+.check-custom.round i { border-radius: 3px; }
 
 .check-custom input,.radio-custom input,.switch-custom input { width: 140%; height: 140%; display: block; position: absolute; top: -20%; left: -20%; z-index: 1; opacity: 0; }
 .check-custom input:checked + i,.check-custom input:indeterminate + i,.radio-custom input:checked + i { opacity: 1; }

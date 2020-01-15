@@ -26,7 +26,7 @@
 
 .modal { display: none; }
 .modal-win .modal { height: 100%; display: block; }
-.modal-content.rounded .modal { border-radius: 5px; }
+.modal-content.round .modal { border-radius: 5px; }
 .modal-content.has-header .modal { padding-top: 52px !important; }
 .modal-content.has-footer .modal { padding-bottom: 52px !important; }
 
@@ -37,8 +37,8 @@
 
 .modal-header { top: 0; }
 .modal-footer { bottom: 0; }
-.modal-content:not(.fullscreen).rounded .modal-header { border-radius: 5px 5px 0 0; }
-.modal-content:not(.fullscreen).rounded .modal-footer { border-radius: 0 0 5px 5px; }
+.modal-content:not(.fullscreen).round .modal-header { border-radius: 5px 5px 0 0; }
+.modal-content:not(.fullscreen).round .modal-footer { border-radius: 0 0 5px 5px; }
 
 .modal-buttons { float: right; }
 .modal-content.fullscreen .modal-header .modal-buttons { padding-right: 42px; }
@@ -55,7 +55,7 @@
 .modal-container > iframe { width: 100%; height: 100%; overflow: hidden; position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
 
 .modal-iframe { width: 100%; height: 100%; overflow: hidden; }
-.modal-content:not(.fullscreen).rounded .modal-iframe { border-radius: 5px; }
+.modal-content:not(.fullscreen).round .modal-iframe { border-radius: 5px; }
 
 .modal-content .close-modal { color: #fff !important; width: 32px; height: 32px; border: 0; border-radius: 100%; position: absolute; z-index: 10; cursor: pointer; }
 .modal-content:not(.fullscreen) .close-modal { background-color: rgba(0,0,0,.65); top: -16px; right: -16px; }

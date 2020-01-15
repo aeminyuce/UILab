@@ -57,11 +57,11 @@ html:not(.portrait) .visible-portrait { display: none !important; }
 .h-scroll { overflow-x: auto !important; overflow-y: hidden !important; }
 .no-scroll,.no-overflow { overflow: hidden !important; }
 
-.rounded { border-radius: 6px; }
-.rounded-top { border-radius: 6px 6px 0 0; }
-.rounded-right { border-radius: 0 6px 6px 0; }
-.rounded-bottom { border-radius: 0 0 6px 6px; }
-.rounded-left { border-radius: 6px 0 0 6px; }
+.round { border-radius: 6px; }
+.round-t { border-radius: 6px 6px 0 0; }
+.round-r { border-radius: 0 6px 6px 0; }
+.round-b { border-radius: 0 0 6px 6px; }
+.round-l { border-radius: 6px 0 0 6px; }
 
 .circle { border-radius: 1000px; }
 .circle-top { border-radius: 1000px 1000px 0 0; }

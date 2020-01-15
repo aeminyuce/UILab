@@ -15,7 +15,7 @@
 
 .calendar caption { height: 52px; background-color: rgba(0,0,0,.15); padding: 5px 52px; margin-bottom: 5px; }
 .calendar:not(.ui-dark):not(.ui-x-dark) caption { background-color: rgba(0,0,0,.065); }
-.calendar.rounded caption,.calendar.rounded caption button { border-radius: 6px; }
+.calendar.round caption,.calendar.round caption button { border-radius: 6px; }
 .calendar caption button { white-space: nowrap; text-overflow: ellipsis; line-height: 22px; max-width: 138px; height: 42px; background-color: transparent; overflow: hidden; border: 0; }
 .calendar caption > button { width: 42px; padding: 10px; display: block; }
 .calendar caption > button .icon { opacity: .45; }
@@ -36,25 +36,25 @@ html:not(.mobile) caption .calendar-title button:hover { background-color: rgba(
 html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) caption .calendar-title button:hover { background-color: rgba(0,0,0,.08); }
 
 .calendar-month { font-weight: bold; padding: 10px 5px 10px 10px; }
-.calendar.rounded .calendar-month { border-radius: 6px 0 0 6px; }
+.calendar.round .calendar-month { border-radius: 6px 0 0 6px; }
 
 .calendar-year { font-weight: bold; padding: 10px 10px 10px 5px; }
-.calendar.rounded .calendar-year { border-radius: 0 6px 6px 0; }
+.calendar.round .calendar-year { border-radius: 0 6px 6px 0; }
 
 .calendar th { font-weight: bold; vertical-align: bottom !important; padding: 10px; }
 .calendar tbody td { padding: 2px; }
 
-.calendar.rounded table.fill-weekends th:nth-child(6) { border-radius: 6px 0 0 0; }
-.calendar.rounded table.fill-weekends th:nth-child(7) { border-radius: 0 6px 0 0; }
-.calendar.rounded table.fill-weekends tr:last-child td:nth-child(6) { border-radius: 0 0 0 6px; }
-.calendar.rounded table.fill-weekends tr:last-child td:nth-child(7) { border-radius: 0 0 6px 0; }
+.calendar.round table.fill-weekends th:nth-child(6) { border-radius: 6px 0 0 0; }
+.calendar.round table.fill-weekends th:nth-child(7) { border-radius: 0 6px 0 0; }
+.calendar.round table.fill-weekends tr:last-child td:nth-child(6) { border-radius: 0 0 0 6px; }
+.calendar.round table.fill-weekends tr:last-child td:nth-child(7) { border-radius: 0 0 6px 0; }
 
 .calendar table.fill-weekends th:nth-child(n+6),.calendar table.fill-weekends td:nth-child(n+6) { background-color: rgba(0,0,0,.085); }
 .calendar:not(.ui-dark):not(.ui-x-dark) table.fill-weekends th:nth-child(n+6),.calendar:not(.ui-dark):not(.ui-x-dark) table.fill-weekends td:nth-child(n+6) { background-color: rgba(0,0,0,.045); }
 
 .calendar tbody td.passive span { opacity: .45; }
 .calendar tbody td button { width: 100%; background: transparent; padding: 8px; display: block; border: 0; position: relative; }
-.calendar.rounded td button { border-radius: 6px; }
+.calendar.round td button { border-radius: 6px; }
 
 .calendar tbody td.toggle-details button:after { content: ""; width: 6px; height: 6px; background: #ff1446; margin-left: -3px; display: block; border-radius: 100%; position: absolute; bottom: 3px; left: 50%; }
 
@@ -83,14 +83,14 @@ html:not(.mobile) .calendar tbody td.pickerday button:hover { opacity: .75; }
 .calendar .details > button { width: 32px; height: 100%; background-color: rgba(0,0,0,.065); border: 0; position: absolute; top: 0; left: 0; cursor: pointer; }
 html:not(.mobile) .calendar .details > button:hover { background-color: rgba(0,0,0,.15); }
 .calendar .details > button .icon { opacity: .45; }
-.calendar.rounded .details > button { border-radius: 6px; }
+.calendar.round .details > button { border-radius: 6px; }
 
 .calendar .details ul,.calendar .details ul * { text-align: left !important; }
 .calendar .details ul { height: 100%; overflow-x: hidden !important; overflow-y: auto !important; }
 .mobile .calendar .details ul { -webkit-overflow-scrolling: touch; }
 .calendar .details li { min-height: 10px; padding: 10px; display: block; }
 .calendar .details li:not(:last-child) { margin-bottom: 20px; }
-.calendar.rounded .details li { padding-left: 65px; border-radius: 6px; }
+.calendar.round .details li { padding-left: 65px; border-radius: 6px; }
 .calendar .details li > strong { font-size: 42px; font-weight: 300; letter-spacing: -0.025em; text-align: center !important; line-height: 40px; width: 45px; margin-left: -55px; float: left; }
 .calendar .details li > b { font-size: 15px; margin: 10px 0 15px 0; display: inline-block; }
 .calendar .details li > span { padding: 2px 0; display: block; }
@@ -115,14 +115,14 @@ html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) .details li:hover { ba
 
 .calendar .panel { position: absolute; top: 5px; right: 5px; bottom: 5px; left: 5px; overflow-x: hidden !important; overflow-y: auto !important; transform: translateY(-110%); }
 .mobile .calendar .panel { -webkit-overflow-scrolling: touch; }
-.calendar.rounded .panel { border-radius: 6px; }
+.calendar.round .panel { border-radius: 6px; }
 .calendar.show-panel .panel { transform: translateY(0); }
 .calendar .calendar-container { position: relative; }
 .calendar.show-panel .calendar-container { transform: translateY(110%); }
 
 .calendar .panel li { width: 33.333332%; height: 25%; padding: 2px; float: left; }
 .calendar .panel .call { font-size: 16px; white-space: nowrap; text-overflow: ellipsis; line-height: 100%; width: 100%; height: 100%; background-color: transparent; padding: 8px; float: left; overflow: hidden; border: 0; }
-.calendar.rounded .panel .call { border-radius: 6px; }
+.calendar.round .panel .call { border-radius: 6px; }
 
 html:not(.mobile) .calendar .panel .call:hover { background-color: rgba(255,255,255,.125); }
 html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) .panel .call:hover { background-color: rgba(0,0,0,.075); }

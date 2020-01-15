@@ -1,5 +1,5 @@
 <div class="col-4 col-sm-6 xs-fluid">
-    <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
+    <a class="full-height padding-15 no-padding-t portlet round shadow-lg hover-shadow hover-up ease-layout" href="#">
         <span class="photo-slider margin-20-b">
             <i class="slider-loader icon icon-xl icon-loader-line"></i>
             <img src="img/product_01.png"
@@ -7,10 +7,10 @@
                     data-src="img/product_01.png,img/product_02.png,img/product_03.png"
                     data-srcset="img/product_01@2x.png,img/product_02@2x.png,img/product_03@2x.png"
                 alt="">
-            <button title="Prev" class="slide-left rounded ease-layout">
+            <button title="Prev" class="slide-left round ease-layout">
                 <i class="icon icon-angle-left"></i>
             </button>
-            <button title="Next" class="slide-right rounded ease-layout">
+            <button title="Next" class="slide-right round ease-layout">
                 <i class="icon icon-angle-right"></i>
             </button>
             <span class="slider-nav"></span>
@@ -36,7 +36,7 @@
     </a>
 </div>
 <div class="col-4 col-sm-6 xs-fluid">
-    <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
+    <a class="full-height padding-15 no-padding-t portlet round shadow-lg hover-shadow hover-up ease-layout" href="#">
         <span class="photo-slider margin-20-b">
             <i class="slider-loader icon icon-xl icon-loader-line"></i>
             <img src="img/product_02.png"
@@ -44,10 +44,10 @@
                     data-src="img/product_02.png,img/product_04.png"
                     data-srcset="img/product_02@2x.png,img/product_04@2x.png"
                 alt="">
-            <button title="Prev" class="slide-left rounded ease-layout">
+            <button title="Prev" class="slide-left round ease-layout">
                 <i class="icon icon-angle-left"></i>
             </button>
-            <button title="Next" class="slide-right rounded ease-layout">
+            <button title="Next" class="slide-right round ease-layout">
                 <i class="icon icon-angle-right"></i>
             </button>
             <span class="slider-nav"></span>
@@ -72,7 +72,7 @@
     </a>
 </div>
 <div class="col-4 col-sm-6 xs-fluid">
-    <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
+    <a class="full-height padding-15 no-padding-t portlet round shadow-lg hover-shadow hover-up ease-layout" href="#">
         <span class="photo-slider margin-20-b">
             <i class="slider-loader icon icon-xl icon-loader-line"></i>
             <img src="img/product_03.png"
@@ -80,10 +80,10 @@
                     data-src="img/product_03.png,img/product_05.png"
                     data-srcset="img/product_03@2x.png,img/product_05@2x.png"
                 alt="">
-            <button title="Prev" class="slide-left rounded ease-layout">
+            <button title="Prev" class="slide-left round ease-layout">
                 <i class="icon icon-angle-left"></i>
             </button>
-            <button title="Next" class="slide-right rounded ease-layout">
+            <button title="Next" class="slide-right round ease-layout">
                 <i class="icon icon-angle-right"></i>
             </button>
             <span class="slider-nav"></span>
@@ -108,16 +108,16 @@
     </a>
 </div>
 <div class="col-4 col-sm-6 xs-fluid">
-    <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
+    <a class="full-height padding-15 no-padding-t portlet round shadow-lg hover-shadow hover-up ease-layout" href="#">
         <span class="photo-slider margin-20-b">
             <i class="slider-loader icon icon-xl icon-loader-line"></i>
             <img src="img/product_04.png"
                     srcset="img/product_04@2x.png"
                 alt="">
-            <button title="Prev" class="slide-left rounded ease-layout">
+            <button title="Prev" class="slide-left round ease-layout">
                 <i class="icon icon-angle-left"></i>
             </button>
-            <button title="Next" class="slide-right rounded ease-layout">
+            <button title="Next" class="slide-right round ease-layout">
                 <i class="icon icon-angle-right"></i>
             </button>
             <span class="slider-nav"></span>
@@ -141,16 +141,16 @@
     </a>
 </div>
 <div class="col-4 col-sm-6 xs-fluid">
-    <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
+    <a class="full-height padding-15 no-padding-t portlet round shadow-lg hover-shadow hover-up ease-layout" href="#">
         <span class="photo-slider margin-20-b">
             <i class="slider-loader icon icon-xl icon-loader-line"></i>
             <img src="img/product_05.png"
                     srcset="img/product_05@2x.png"
                 alt="">
-            <button title="Prev" class="slide-left rounded ease-layout">
+            <button title="Prev" class="slide-left round ease-layout">
                 <i class="icon icon-angle-left"></i>
             </button>
-            <button title="Next" class="slide-right rounded ease-layout">
+            <button title="Next" class="slide-right round ease-layout">
                 <i class="icon icon-angle-right"></i>
             </button>
             <span class="slider-nav"></span>
@@ -174,7 +174,7 @@
     </a>
 </div>
 <div class="col-4 col-sm-6 xs-fluid">
-    <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
+    <a class="full-height padding-15 no-padding-t portlet round shadow-lg hover-shadow hover-up ease-layout" href="#">
         <span class="photo-slider margin-20-b">
             <i class="slider-loader icon icon-xl icon-loader-line"></i>
             <img
@@ -183,10 +183,10 @@
                     data-src="img/product_02.png,img/product_04.png"
                     data-srcset="img/product_02@2x.png,img/product_04@2x.png"
                 alt="">
-            <button title="Prev" class="slide-left rounded ease-layout">
+            <button title="Prev" class="slide-left round ease-layout">
                 <i class="icon icon-angle-left"></i>
             </button>
-            <button title="Next" class="slide-right rounded ease-layout">
+            <button title="Next" class="slide-right round ease-layout">
                 <i class="icon icon-angle-right"></i>
             </button>
             <span class="slider-nav"></span>

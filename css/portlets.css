@@ -2,7 +2,7 @@
 .portlet,[class*="portlet-"] { background-color: #fff; display: block; position: relative; }
 .portlet:not(:last-child),[class*="portlet-"]:not(:last-child) { margin-bottom: 20px; }
 
-[class*="portlet-"].rounded { border-top-left-radius: 0 !important; border-bottom-left-radius: 0 !important; }
+[class*="portlet-"].round { border-top-left-radius: 0 !important; border-bottom-left-radius: 0 !important; }
 .portlet > .row,[class*="portlet-"] > .row,.content-side > .row { margin-left: inherit; margin-right: inherit; }
 
 .content-side:before { content: ""; display: table; }
