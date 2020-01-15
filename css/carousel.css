@@ -28,37 +28,37 @@
 .bring-back:not(.show) { transform: scale(.85); }
 .bring-front:not(.show) { transform: scale(1.15); }
 
-.bring-top:not(.show) { transform: translateY(-15px); }
-.bring-right:not(.show) { transform: translateX(15px); }
-.bring-bottom:not(.show) { transform: translateY(15px); }
-.bring-left:not(.show) { transform: translateX(-15px); }
+.bring-t:not(.show) { transform: translateY(-15px); }
+.bring-r:not(.show) { transform: translateX(15px); }
+.bring-b:not(.show) { transform: translateY(15px); }
+.bring-l:not(.show) { transform: translateX(-15px); }
 
 @media (max-width: 959px) {
   .md-bring-back:not(.show) { transform: scale(.85); }
   .md-bring-front:not(.show) { transform: scale(1.15); }
 
-  .md-bring-top:not(.show) { transform: translateY(-15px); }
-  .md-bring-right:not(.show) { transform: translateX(15px); }
-  .md-bring-bottom:not(.show) { transform: translateY(15px); }
-  .md-bring-left:not(.show) { transform: translateX(-15px); }
+  .md-bring-t:not(.show) { transform: translateY(-15px); }
+  .md-bring-r:not(.show) { transform: translateX(15px); }
+  .md-bring-b:not(.show) { transform: translateY(15px); }
+  .md-bring-l:not(.show) { transform: translateX(-15px); }
 }
 @media (max-width: 767px) {
   .sm-bring-back:not(.show) { transform: scale(.85); }
   .sm-bring-front:not(.show) { transform: scale(1.15); }
 
-  .sm-bring-top:not(.show) { transform: translateY(-15px); }
-  .sm-bring-right:not(.show) { transform: translateX(15px); }
-  .sm-bring-bottom:not(.show) { transform: translateY(15px); }
-  .sm-bring-left:not(.show) { transform: translateX(-15px); }
+  .sm-bring-t:not(.show) { transform: translateY(-15px); }
+  .sm-bring-r:not(.show) { transform: translateX(15px); }
+  .sm-bring-b:not(.show) { transform: translateY(15px); }
+  .sm-bring-l:not(.show) { transform: translateX(-15px); }
 }
 @media (max-width: 480px) {
   .xs-bring-back:not(.show) { transform: scale(.85); }
   .xs-bring-front:not(.show) { transform: scale(1.15); }
 
-  .xs-bring-top:not(.show) { transform: translateY(-15px); }
-  .xs-bring-right:not(.show) { transform: translateX(15px); }
-  .xs-bring-bottom:not(.show) { transform: translateY(15px); }
-  .xs-bring-left:not(.show) { transform: translateX(-15px); }
+  .xs-bring-t:not(.show) { transform: translateY(-15px); }
+  .xs-bring-r:not(.show) { transform: translateX(15px); }
+  .xs-bring-b:not(.show) { transform: translateY(15px); }
+  .xs-bring-l:not(.show) { transform: translateX(-15px); }
 }
 
 .carousel-gallery .detail { min-height: 210px; position: relative; }
