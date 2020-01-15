@@ -21,13 +21,13 @@
 .set-all { top: 0; right: 0; bottom: 0; left: 0; }
 .set-h { right: 0; left: 0; }
 .set-v { top: 0; bottom: 0; }
-.set-top { top: 0; }
-.set-right { right: 0; }
-.set-bottom { bottom: 0; }
-.set-left { left: 0; }
-.set-middle { left: 50%; top: 50%; transform: translate(-50%,-50%); }
-.set-middle-x { left: 50%; transform: translateX(-50%); }
-.set-middle-y { top: 50%; transform: translateY(-50%); }
+.set-t { top: 0; }
+.set-r { right: 0; }
+.set-b { bottom: 0; }
+.set-l { left: 0; }
+.set-c { left: 50%; top: 50%; transform: translate(-50%,-50%); }
+.set-c-x { left: 50%; transform: translateX(-50%); }
+.set-c-y { top: 50%; transform: translateY(-50%); }
 
 .visible { display: block !important; }
 .hidden { display: none !important; }
