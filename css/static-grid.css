@@ -15,8 +15,8 @@
     .lg-static-42 { width: 42px; } /* form-holders */
 }
 @media (max-width: 959px) and (min-width: 768px) {
-    .col-static:not(.no-responsive):not(.sm-responsive):not(.xs-responsive) > .row,.col-static:not(.no-responsive):not(.sm-responsive):not(.xs-responsive) > [class*="static-"] { width: 100%; display: block; }
-    .col-static:not(.no-responsive):not(.sm-responsive):not(.xs-responsive) > [class*="static-"]:not(.col-static) { width: 100%; }
+    .col-static:not(.no-fluid):not(.sm-fluid):not(.xs-fluid) > .row,.col-static:not(.no-fluid):not(.sm-fluid):not(.xs-fluid) > [class*="static-"] { width: 100%; display: block; }
+    .col-static:not(.no-fluid):not(.sm-fluid):not(.xs-fluid) > [class*="static-"]:not(.col-static) { width: 100%; }
 
     .md-static-0 { width: 0; } .md-static-50 { width: 50px; } .md-static-100 { width: 100px; } .md-static-150 { width: 150px; } .md-static-200 { width: 200px; } .md-static-250 { width: 250px; } .md-static-300 { width: 300px; } .md-static-350 { width: 350px; } .md-static-400 { width: 400px; } .md-static-450 { width: 450px; } .md-static-500 { width: 500px; } .md-static-550 { width: 550px; } .md-static-600 { width: 600px; }
 
@@ -24,8 +24,8 @@
     .md-static-42 { width: 42px; } /* form-holders */
 }
 @media (max-width: 767px) and (min-width: 481px) {
-    .col-static:not(.no-responsive):not(.xs-responsive) > .row,.col-static:not(.no-responsive):not(.xs-responsive) > [class*="static-"] { width: 100%; display: block; }
-    .col-static:not(.no-responsive):not(.xs-responsive) > [class*="static-"]:not(.col-static) { width: 100%; }
+    .col-static:not(.no-fluid):not(.xs-fluid) > .row,.col-static:not(.no-fluid):not(.xs-fluid) > [class*="static-"] { width: 100%; display: block; }
+    .col-static:not(.no-fluid):not(.xs-fluid) > [class*="static-"]:not(.col-static) { width: 100%; }
 
     .sm-static-0 { width: 0; } .sm-static-50 { width: 50px; } .sm-static-100 { width: 100px; } .sm-static-150 { width: 150px; } .sm-static-200 { width: 200px; } .sm-static-250 { width: 250px; } .sm-static-300 { width: 300px; } .sm-static-350 { width: 350px; } .sm-static-400 { width: 400px; } .sm-static-450 { width: 450px; } .sm-static-500 { width: 500px; } .sm-static-550 { width: 550px; } .sm-static-600 { width: 600px; }
 
@@ -33,8 +33,8 @@
     .sm-static-42 { width: 42px; } /* form-holders */
 }
 @media (max-width: 480px) {
-    .col-static:not(.no-responsive) > .row,.col-static:not(.no-responsive) > [class*="static-"] { width: 100%; display: block; }
-    .col-static:not(.no-responsive) > [class*="static-"]:not(.col-static) { width: 100%; }
+    .col-static:not(.no-fluid) > .row,.col-static:not(.no-fluid) > [class*="static-"] { width: 100%; display: block; }
+    .col-static:not(.no-fluid) > [class*="static-"]:not(.col-static) { width: 100%; }
 
     .xs-static-0 { width: 0; } .xs-static-50 { width: 50px; } .xs-static-100 { width: 100px; } .xs-static-150 { width: 150px; } .xs-static-200 { width: 200px; } .xs-static-250 { width: 250px; } .xs-static-300 { width: 300px; } .xs-static-350 { width: 350px; } .xs-static-400 { width: 400px; } .xs-static-450 { width: 450px; } .xs-static-500 { width: 500px; } .xs-static-550 { width: 550px; } .xs-static-600 { width: 600px; }
 
@@ -42,12 +42,12 @@
     .xs-static-42 { width: 42px; } /* form-holders */
 }
 @media (max-width: 1199px) {
-    .col-static.lg-responsive > .row,.col-static.lg-responsive > [class*="static-"] { width: 100%; display: block; clear: both; }
-    .col-static.lg-responsive > [class*="static-"]:not(.col-static) { width: 100%; }
+    .col-static.lg-fluid > .row,.col-static.lg-fluid > [class*="static-"] { width: 100%; display: block; clear: both; }
+    .col-static.lg-fluid > [class*="static-"]:not(.col-static) { width: 100%; }
 }
 @media (max-width: 1679px) {
-    .col-static.xl-responsive > .row,.col-static.xl-responsive > [class*="static-"] { width: 100%; display: block; clear: both; }
-    .col-static.xl-responsive > [class*="static-"]:not(.col-static) { width: 100%; }
+    .col-static.xl-fluid > .row,.col-static.xl-fluid > [class*="static-"] { width: 100%; display: block; clear: both; }
+    .col-static.xl-fluid > [class*="static-"]:not(.col-static) { width: 100%; }
 }
 @media (min-width: 1680px) {
     .xl-static-0 { width: 0; } .xl-static-50 { width: 50px; } .xl-static-100 { width: 100px; } .xl-static-150 { width: 150px; } .xl-static-200 { width: 200px; } .xl-static-250 { width: 250px; } .xl-static-300 { width: 300px; } .xl-static-350 { width: 350px; } .xl-static-400 { width: 400px; } .xl-static-450 { width: 450px; } .xl-static-500 { width: 500px; } .xl-static-550 { width: 550px; } .xl-static-600 { width: 600px; }

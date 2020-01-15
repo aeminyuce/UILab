@@ -170,31 +170,31 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i { transform: tran
 }
 @media (max-width: 959px) {
     .form-grid { display: block; }
-    .row [class*="col-"]:not(.sm-responsive) > .form-grid { margin-bottom: -15px; }
+    .row [class*="col-"]:not(.sm-fluid) > .form-grid { margin-bottom: -15px; }
 
-    .row-no-padding [class*="col-"]:not(.sm-responsive) > .form-grid { margin-top: 10px; margin-bottom: 5px; }
-    .row-xs-padding [class*="col-"]:not(.sm-responsive) > .form-grid,.row-xs-padding-ver [class*="col-"]:not(.sm-responsive) > .form-grid { margin-bottom: 3px; }
-    .row-sm-padding [class*="col-"]:not(.sm-responsive) > .form-grid,.row-sm-padding-ver [class*="col-"]:not(.sm-responsive) > .form-grid { margin-bottom: 0; }
-    .row-md-padding [class*="col-"]:not(.sm-responsive) > .form-grid,.row-md-padding-ver [class*="col-"]:not(.sm-responsive) > .form-grid { margin-bottom: -5px; }
+    .row-no-padding [class*="col-"]:not(.sm-fluid) > .form-grid { margin-top: 10px; margin-bottom: 5px; }
+    .row-xs-padding [class*="col-"]:not(.sm-fluid) > .form-grid,.row-xs-padding-ver [class*="col-"]:not(.sm-fluid) > .form-grid { margin-bottom: 3px; }
+    .row-sm-padding [class*="col-"]:not(.sm-fluid) > .form-grid,.row-sm-padding-ver [class*="col-"]:not(.sm-fluid) > .form-grid { margin-bottom: 0; }
+    .row-md-padding [class*="col-"]:not(.sm-fluid) > .form-grid,.row-md-padding-ver [class*="col-"]:not(.sm-fluid) > .form-grid { margin-bottom: -5px; }
 }
 @media (min-width: 768px) and (max-width: 959px) {
-    .sm-responsive > .form-grid { line-height: 32px; display: inline-block; }
-    .sm-responsive > .form-grid.form-lg { line-height: 42px; }
+    .sm-fluid > .form-grid { line-height: 32px; display: inline-block; }
+    .sm-fluid > .form-grid.form-lg { line-height: 42px; }
 }
 @media (max-width: 767px) {
-    .sm-responsive > .form-grid { display: block; }
-    .row [class*="col-"].sm-responsive > .form-grid { margin-bottom: -15px; }
+    .sm-fluid > .form-grid { display: block; }
+    .row [class*="col-"].sm-fluid > .form-grid { margin-bottom: -15px; }
 
-    .row-no-padding [class*="col-"].sm-responsive > .form-grid { margin-top: 10px; margin-bottom: 5px; }
-    .row-xs-padding [class*="col-"].sm-responsive > .form-grid,.row-xs-padding-ver [class*="col-"].sm-responsive > .form-grid { margin-bottom: 3px; }
-    .row-sm-padding [class*="col-"].sm-responsive > .form-grid,.row-sm-padding-ver [class*="col-"].sm-responsive > .form-grid { margin-bottom: 0; }
-    .row-md-padding [class*="col-"].sm-responsive > .form-grid,.row-md-padding-ver [class*="col-"].sm-responsive > .form-grid { margin-bottom: -5px; }
+    .row-no-padding [class*="col-"].sm-fluid > .form-grid { margin-top: 10px; margin-bottom: 5px; }
+    .row-xs-padding [class*="col-"].sm-fluid > .form-grid,.row-xs-padding-ver [class*="col-"].sm-fluid > .form-grid { margin-bottom: 3px; }
+    .row-sm-padding [class*="col-"].sm-fluid > .form-grid,.row-sm-padding-ver [class*="col-"].sm-fluid > .form-grid { margin-bottom: 0; }
+    .row-md-padding [class*="col-"].sm-fluid > .form-grid,.row-md-padding-ver [class*="col-"].sm-fluid > .form-grid { margin-bottom: -5px; }
 }
 @media (min-width: 481px) {
-    .form-summary-lg:not(.no-responsive) { line-height: 42px; }
-    .form-summary:not(.no-responsive) { line-height: 32px; }
-    .form-summary-sm:not(.no-responsive) { line-height: 26px; }
-    .form-summary-xs:not(.no-responsive) { line-height: 22px; }
+    .form-summary-lg:not(.no-fluid) { line-height: 42px; }
+    .form-summary:not(.no-fluid) { line-height: 32px; }
+    .form-summary-sm:not(.no-fluid) { line-height: 26px; }
+    .form-summary-xs:not(.no-fluid) { line-height: 22px; }
 }
 @media (max-width: 480px) {
     .form-xs-inline { width: 100% !important; display: block !important; }
@@ -202,5 +202,5 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i { transform: tran
 
     label.custom + label.custom { display: block; }
 
-    [class*="form-summary"]:not(.no-responsive) { padding-top: 5px; padding-bottom: 5px; }
+    [class*="form-summary"]:not(.no-fluid) { padding-top: 5px; padding-bottom: 5px; }
 }

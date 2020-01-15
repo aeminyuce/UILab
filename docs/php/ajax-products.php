@@ -1,4 +1,4 @@
-<div class="col-4 col-sm-6 xs-responsive">
+<div class="col-4 col-sm-6 xs-fluid">
     <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
         <span class="photo-slider margin-20-b">
             <i class="slider-loader icon icon-xl icon-loader-line"></i>
@@ -35,7 +35,7 @@
         </span>
     </a>
 </div>
-<div class="col-4 col-sm-6 xs-responsive">
+<div class="col-4 col-sm-6 xs-fluid">
     <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
         <span class="photo-slider margin-20-b">
             <i class="slider-loader icon icon-xl icon-loader-line"></i>
@@ -71,7 +71,7 @@
         </span>
     </a>
 </div>
-<div class="col-4 col-sm-6 xs-responsive">
+<div class="col-4 col-sm-6 xs-fluid">
     <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
         <span class="photo-slider margin-20-b">
             <i class="slider-loader icon icon-xl icon-loader-line"></i>
@@ -107,7 +107,7 @@
         </span>
     </a>
 </div>
-<div class="col-4 col-sm-6 xs-responsive">
+<div class="col-4 col-sm-6 xs-fluid">
     <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
         <span class="photo-slider margin-20-b">
             <i class="slider-loader icon icon-xl icon-loader-line"></i>
@@ -140,7 +140,7 @@
         </span>
     </a>
 </div>
-<div class="col-4 col-sm-6 xs-responsive">
+<div class="col-4 col-sm-6 xs-fluid">
     <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
         <span class="photo-slider margin-20-b">
             <i class="slider-loader icon icon-xl icon-loader-line"></i>
@@ -173,7 +173,7 @@
         </span>
     </a>
 </div>
-<div class="col-4 col-sm-6 xs-responsive">
+<div class="col-4 col-sm-6 xs-fluid">
     <a class="full-height padding-15 no-padding-t portlet rounded shadow-lg hover-shadow hover-up ease-layout" href="#">
         <span class="photo-slider margin-20-b">
             <i class="slider-loader icon icon-xl icon-loader-line"></i>
