@@ -109,7 +109,7 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i { transform: tran
 .required-msg { background-color: rgba(220,0,15,.065); padding: 10px; }
 .required-msg:not(.show) { display: none; }
 
-.form-inline,.form-inline-responsive { vertical-align: middle; display: inline-block !important; }
+.form-inline,.form-xs-inline { vertical-align: middle; display: inline-block !important; }
 
 .form-disabled { opacity: .65; }
 .form-disabled *,.form-readonly * { cursor: not-allowed; }
@@ -197,8 +197,8 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i { transform: tran
     .form-summary-xs:not(.no-responsive) { line-height: 22px; }
 }
 @media (max-width: 480px) {
-    .form-inline-responsive { width: 100% !important; display: block !important; }
-    .form-inline-responsive:not(:last-child):not(.highlight) { margin-bottom: 5px; }
+    .form-xs-inline { width: 100% !important; display: block !important; }
+    .form-xs-inline:not(:last-child):not(.highlight) { margin-bottom: 5px; }
 
     label.custom + label.custom { display: block; }
 
