@@ -17,8 +17,8 @@
 .table tr:last-child:not(:first-child) th,.table tbody:last-child tr:last-child td,.table tfoot tr:last-child td { border-bottom: 0; }
 .table thead th { font-weight: bold; vertical-align: bottom !important; }
 
-.table:not(.table-sidebar).align-center td,.table:not(.table-sidebar).align-center th { text-align: center; }
-.table.table-sidebar.align-center td:not(:first-child) { text-align: center; }
+.table:not(.table-sidebar).align-c td,.table:not(.table-sidebar).align-c th { text-align: center; }
+.table.table-sidebar.align-c td:not(:first-child) { text-align: center; }
 .table-sidebar td:first-of-type { font-weight: bold; border-right: solid 1px #ddd; }
 .table-sidebar-center td:nth-child(2) { font-weight: bold; border-right: solid 1px #ddd; border-left: solid 1px #ddd; }
 
