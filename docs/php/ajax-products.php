@@ -22,9 +22,9 @@
             <i class="icon icon-sm icon-truck margin-2-r"></i> Fast Delivery
         </span>
         <ul class="list-inline margin-15-v right">
-            <li class="circle padding-5 dual-bordered" style="border-color: #ee2329;"></li>
-            <li class="circle padding-5 dual-bordered" style="border-color: #d22fdf;"></li>
-            <li class="circle padding-5 dual-bordered" style="border-color: #248ddd;"></li>
+            <li class="circle padding-5 border-dual" style="border-color: #ee2329;"></li>
+            <li class="circle padding-5 border-dual" style="border-color: #d22fdf;"></li>
+            <li class="circle padding-5 border-dual" style="border-color: #248ddd;"></li>
         </ul>
         <span class="left padding-15-v margin-2-t">
             <i class="icon icon-sm icon-star-fill font-yellow margin-4-b"></i>
@@ -59,8 +59,8 @@
             <i class="icon icon-sm margin-3-r icon-tag"></i> 20% off
         </span>
         <ul class="list-inline margin-15-v right">
-            <li class="circle padding-5 dual-bordered" style="border-color: #d22fdf;"></li>
-            <li class="circle padding-5 dual-bordered" style="border-color: #dedede;"></li>
+            <li class="circle padding-5 border-dual" style="border-color: #d22fdf;"></li>
+            <li class="circle padding-5 border-dual" style="border-color: #dedede;"></li>
         </ul>
         <span class="left padding-15-v margin-2-t">
             <i class="icon icon-sm icon-star-fill font-yellow margin-4-b"></i>
@@ -95,8 +95,8 @@
             <i class="icon icon-sm icon-truck margin-2-r"></i> Fast Delivery
         </span>
         <ul class="list-inline margin-15-v right">
-            <li class="circle padding-5 dual-bordered" style="border-color: #248ddd;"></li>
-            <li class="circle padding-5 dual-bordered" style="border-color: #3b3b3b;"></li>
+            <li class="circle padding-5 border-dual" style="border-color: #248ddd;"></li>
+            <li class="circle padding-5 border-dual" style="border-color: #3b3b3b;"></li>
         </ul>
         <span class="left padding-15-v margin-2-t">
             <i class="icon icon-sm icon-star-fill font-yellow margin-4-b"></i>
@@ -129,7 +129,7 @@
             <i class="icon icon-sm margin-3-r icon-tag"></i> 20% off
         </span>
         <ul class="list-inline margin-15-v right">
-            <li class="circle padding-5 dual-bordered" style="border-color: #dedede;"></li>
+            <li class="circle padding-5 border-dual" style="border-color: #dedede;"></li>
         </ul>
         <span class="left padding-15-v margin-2-t">
             <i class="icon icon-sm icon-star-fill font-yellow margin-4-b"></i>
@@ -162,7 +162,7 @@
             <i class="icon icon-sm margin-3-r icon-tag"></i> 20% off
         </span>
         <ul class="list-inline margin-15-v right">
-            <li class="circle padding-10 bordered" style="background: #3b3b3b;"></li>
+            <li class="circle padding-10 border" style="background: #3b3b3b;"></li>
         </ul>
         <span class="left padding-15-v margin-2-t">
             <i class="icon icon-sm icon-star-fill font-yellow margin-4-b"></i>
@@ -198,8 +198,8 @@
             <i class="icon icon-sm margin-3-r icon-tag"></i> 20% off
         </span>
         <ul class="list-inline margin-15-v right">
-            <li class="circle padding-5 dual-bordered" style="border-color: #d22fdf;"></li>
-            <li class="circle padding-5 dual-bordered" style="border-color: #dedede;"></li>
+            <li class="circle padding-5 border-dual" style="border-color: #d22fdf;"></li>
+            <li class="circle padding-5 border-dual" style="border-color: #dedede;"></li>
         </ul>
         <span class="left padding-15-v margin-2-t">
             <i class="icon icon-sm icon-star-fill font-yellow margin-4-b"></i>

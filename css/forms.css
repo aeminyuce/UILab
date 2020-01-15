@@ -15,13 +15,13 @@
 
 .toggle-textarea:not(.form-focus) textarea { height: 28px; }
 
-.no-bordered .text input,.no-bordered .select select,.text.no-bordered input,.select.no-bordered select { line-height: 22px; height: 32px; }
-.no-bordered .text.text-lg input,.no-bordered .select-lg select,.text.no-bordered.text-lg input,.select.no-bordered.select-lg select { line-height: 30px; height: 40px; }
-.no-bordered.textarea textarea { line-height: 20px; }
+.no-border .text input,.no-border .select select,.text.no-border input,.select.no-border select { line-height: 22px; height: 32px; }
+.no-border .text.text-lg input,.no-border .select-lg select,.text.no-border.text-lg input,.select.no-border.select-lg select { line-height: 30px; height: 40px; }
+.no-border.textarea textarea { line-height: 20px; }
 
-.dual-bordered .text input,.dual-bordered .select select,.text.dual-bordered input,.select.dual-bordered select { line-height: 20px; height: 28px; }
-.dual-bordered .text.text-lg input,.dual-bordered .select-lg select,.text.dual-bordered.text-lg input,.select.dual-bordered.select-lg select { line-height: 28px; height: 38px; }
-.dual-bordered.textarea textarea { line-height: 18px; }
+.border-dual .text input,.border-dual .select select,.text.border-dual input,.select.border-dual select { line-height: 20px; height: 28px; }
+.border-dual .text.text-lg input,.border-dual .select-lg select,.text.border-dual.text-lg input,.select.border-dual.select-lg select { line-height: 28px; height: 38px; }
+.border-dual.textarea textarea { line-height: 18px; }
 
 .select > .icon { line-height: 1.125; position: absolute; top: 50%; right: 5px; cursor: default; transform: translateY(-50%); opacity: .45; }
 .select:not(.select-lg) > .icon { font-size: 12px; width: 12px; height: 12px; }
@@ -42,27 +42,27 @@
 
 .file { line-height: normal; min-height: 32px; border: solid 1px rgba(0,0,0,.15); overflow: hidden; display: block; position: relative; }
 .file input { vertical-align: middle; width: 100%; height: 30px; overflow: hidden; position: absolute; top: 0; left: 0; z-index: 3; opacity: 0; } /* don't change z-index! */
-.file.dual-bordered input { height: 28px; }
-.file.no-bordered input { height: 32px; }
+.file.border-dual input { height: 28px; }
+.file.no-border input { height: 32px; }
 
 .file.file-lg { min-height: 42px; }
 .file.file-lg input { height: 40px; }
-.file.file-lg.dual-bordered input { height: 38px; }
-.file.file-lg.no-bordered input { height: 42px; }
+.file.file-lg.border-dual input { height: 38px; }
+.file.file-lg.no-border input { height: 42px; }
 
 .file .btn { text-align: center !important; min-width: 128px; height: 30px; float: left; }
 .file .btn.rounded { border-radius: 3px 0 0 3px; }
 
-.file:not(.no-bordered) .btn { line-height: 18px; }
-.file.dual-bordered .btn { min-width: 126px; height: 28px; }
-.file.no-bordered .btn { min-width: 130px; height: 32px;}
+.file:not(.no-border) .btn { line-height: 18px; }
+.file.border-dual .btn { min-width: 126px; height: 28px; }
+.file.no-border .btn { min-width: 130px; height: 32px;}
 html:not(.mobile) .file:hover .btn { background-color: rgba(0,0,0,.15); }
 
 .file.file-lg .btn { font-size: 16px; height: 40px; }
 
-.file.file-lg:not(.no-bordered) .btn { line-height: 28px; }
-.file.file-lg.dual-bordered .btn { height: 38px; }
-.file.file-lg.no-bordered .btn { line-height: 30px; height: 42px;}
+.file.file-lg:not(.no-border) .btn { line-height: 28px; }
+.file.file-lg.border-dual .btn { height: 38px; }
+.file.file-lg.no-border .btn { line-height: 30px; height: 42px;}
 
 .file > span { white-space: nowrap; text-overflow: ellipsis; line-height: 30px; width: 100%; padding-right: 10px; padding-left: 135px; overflow: hidden; display: block; position: absolute; }
 .file.file-lg > span { font-size: 16px; line-height: 40px; }

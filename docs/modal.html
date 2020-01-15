@@ -61,7 +61,7 @@
 
     <!-- header -->
     <header class="container theme-default ui-dark">
-        <div class="row theme-default2 ui-border top-bordered dual-bordered">
+        <div class="row theme-default2 ui-border border-t border-dual">
             <div class="col-12">
                 <a href="index.html" class="btn btn-lg btn-square circle ease-btn margin-10-r"><i class="icon no-opacity icon-long-arrow-left"></i></a>
                 <h1 class="x-large inline-block">UI Lab, Modal</h1>
@@ -79,7 +79,7 @@
                     <h4>Open Modal</h4>
                     <pre class="rounded">modal.open({ source, size, type, closable, callback });</pre>
 
-                    <dl class="dl-horizontal padding-15 rounded bordered">
+                    <dl class="dl-horizontal padding-15 rounded border">
                         <dt>source</dt>
                         <dd class="margin-15-b">
                             Required. Set the source of modal.<br>
@@ -248,7 +248,7 @@
                     <h4>Close Modal</h4>
                     <pre class="rounded">modal.close(callback);</pre>
 
-                    <dl class="dl-horizontal padding-15 rounded bordered">
+                    <dl class="dl-horizontal padding-15 rounded border">
                         <dt>callback</dt>
                         <dd>
                             Optional. Set a callback function after modal closes.<br>
@@ -288,8 +288,8 @@
         </div>
         <div class="modal-footer ease-1st-btn">
             <div class="modal-buttons">
-                <button type="button" class="btn padding-30-h btn-ghost dual-bordered circle" onclick="modal.close(function () { alert('Modal closed!'); });">Callback</button>
-                <button type="button" class="btn padding-30-h btn-ghost dual-bordered circle" onclick="modal.close();">Cancel</button>
+                <button type="button" class="btn padding-30-h btn-ghost border-dual circle" onclick="modal.close(function () { alert('Modal closed!'); });">Callback</button>
+                <button type="button" class="btn padding-30-h btn-ghost border-dual circle" onclick="modal.close();">Cancel</button>
                 <button type="submit" class="btn padding-30-h circle theme-green ui-dark" onclick="modal.close();">Accept</button>
             </div>
         </div>
@@ -323,7 +323,7 @@
                         <div class="col-static no-fluid">
                             <div class="row row-no-padding-h">
                                 <div class="col-12">
-                                    <div data-src="json/company.json" data-val="s" class="autocomplete text text-lg text-icon has-clear rounded-left no-bordered inner-shadow-sm theme-gray ui-x-light ease-form">
+                                    <div data-src="json/company.json" data-val="s" class="autocomplete text text-lg text-icon has-clear rounded-left no-border inner-shadow-sm theme-gray ui-x-light ease-form">
                                         <button type="button" class="clear-form icon icon-remove ease-layout"></button>
                                         <input class="required" type="text" placeholder="Search">
                                     </div>

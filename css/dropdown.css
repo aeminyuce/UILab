@@ -21,9 +21,9 @@
 .dropdown ul.content { list-style: none; padding: 0; margin-bottom: 0; }
 .mobile-menu .dropdown .content { position: static; box-shadow: none; transform-origin: top center !important; }
 .mobile-menu .dropdown:not(:last-child) .content { margin-bottom: 10px !important; }
-.dropdown .content:not([class*="bordered"]).v-scroll { max-height: 204px; }
-.dropdown .content.bordered:not(.dual-bordered).v-scroll { max-height: 206px; }
-.dropdown .content.dual-bordered.v-scroll { max-height: 208px; }
+.dropdown .content:not([class*="border"]).v-scroll { max-height: 204px; }
+.dropdown .content.border:not(.border-dual).v-scroll { max-height: 206px; }
+.dropdown .content.border-dual.v-scroll { max-height: 208px; }
 
 .dropdown:not(.open) .content { display: none; }
 .dropdown:not(.open-ease) .content { opacity: 0; transform: scale(.95); }
