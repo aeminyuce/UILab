@@ -3,12 +3,11 @@
 
 .ease-btn,.ease-1st-btn > *,.ease-2nd-btn > * > * { transition-property: color, background-color, border-color; }
 
-.btn { text-align: center; vertical-align: middle; line-height: 20px; height: 32px; background-color: rgba(0,0,0,.08); padding-top: 6px; padding-bottom: 6px; display: inline-block; position: relative; }
+.btn { text-align: center; vertical-align: middle; line-height: 20px; height: 32px; background-color: rgba(0,0,0,.08); padding-top: 6px; padding-bottom: 6px; display: inline-block; position: relative; cursor: pointer; }
 input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .btn.border { padding-top: 5px; padding-bottom: 5px; }
 .btn.border-dual { padding-top: 4px; padding-bottom: 4px; }
 .btn-square { width: 32px; }
-.btn:not(.btn-passive) { cursor: pointer; }
 .btn:not([class*="border"]) { border-width: 0; }
 .btn:not(.btn-multi) { white-space: nowrap; }
 
@@ -57,7 +56,6 @@ html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hove
 .btn-xxs.circle { padding-right: 6px; padding-left: 6px; }
 
 .btn-passive { opacity: .6; cursor: default; }
-.btn-passive:hover { cursor: not-allowed; }
 
 .btn-active { font-weight: bold; }
 
