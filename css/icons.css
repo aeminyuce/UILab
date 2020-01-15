@@ -186,9 +186,6 @@ button.icon { background-color: rgba(0,0,0,0); }
 .icon-shield-check:before { content: "\e050"; }
 .icon-sign-in:before { content: "\e051"; }
 .icon-sign-out:before { content: "\e052"; }
-.icon-sort:before { content: "\e053"; }
-.icon-sort-down:before { content: "\e054"; }
-.icon-sort-up:before { content: "\e055"; }
 .icon-square:before { content: "\e056"; }
 .icon-square-fill:before { content: "\e057"; }
 .icon-star:before { content: "\e058"; }
@@ -379,3 +376,7 @@ button.icon { background-color: rgba(0,0,0,0); }
 .icon-truck:before { content: "\e10e"; }
 .icon-ellipsis-h:before { content: "\2e"; }
 .icon-ellipsis-v:before { content: "\2f"; }
+.icon-sort:before { content: "\e053"; }
+.icon-sort-up:before { content: "\e054"; }
+.icon-sort-down:before { content: "\e055"; }
+.icon-code:before { content: "\e10f"; }
