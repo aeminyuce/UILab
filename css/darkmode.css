@@ -118,10 +118,10 @@
     .table[class*="bordered"],.table [class*="bordered"] { border-color: #41454d; }
     .table-bordered th:not(:last-child),.table-bordered td:not(:last-child) { border-right-color: #41454d; }
 
-    .table-flip-scrollable th { border-right-color: #41454d; }
-    .table-flip-scrollable tbody tr { border-left-color: #41454d; }
-    .table-flip-responsive th { border-right-color: #41454d; }
-    .table-flip-responsive tbody tr { border-left-color: #41454d; }
+    .table-flip-scroll th { border-right-color: #41454d; }
+    .table-flip-scroll tbody tr { border-left-color: #41454d; }
+    .table-flip-fluid th { border-right-color: #41454d; }
+    .table-flip-fluid tbody tr { border-left-color: #41454d; }
 
     html:not(.mobile) ::-webkit-scrollbar-thumb { background-color: rgba(255,255,255, 0.15); }
     html:not(.mobile) ::-webkit-scrollbar-thumb:hover { background-color: rgba(255,255,255,.2); }

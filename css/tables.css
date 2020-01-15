@@ -26,10 +26,10 @@
 .table-bordered th:not(:last-child),.table-bordered td:not(:last-child) { border-right: solid 1px #ddd; }
 .table-valign td,.table-valign th { vertical-align: middle !important; }
 
-.table-scrollable { width: 100%; overflow-x: auto; }
-.mobile .table-scrollable { -webkit-overflow-scrolling: touch; }
-.table-scrollable .table { margin-bottom: 0 !important; }
-.table-scrollable > .table tr > * { white-space: nowrap; }
+.table-scroll { width: 100%; overflow-x: auto; }
+.mobile .table-scroll { -webkit-overflow-scrolling: touch; }
+.table-scroll .table { margin-bottom: 0 !important; }
+.table-scroll > .table tr > * { white-space: nowrap; }
 
 .table-nowrap th,.table-nowrap td { white-space: nowrap; text-overflow: ''; overflow: hidden; }
 .table-striped tr:nth-child(even):not([class*="ui-"]) { background-color: rgba(0,0,0,.025); }
@@ -52,32 +52,32 @@ html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover { background-c
 .table-fixed-sidebar [class*="static-"] .table tbody { max-height: 309px; }
 .table-fixed-sidebar [class*="static-"] .table th,.table-fixed-sidebar [class*="static-"] .table td { width: 2000px; }
 
-.table-flip-scrollable table { display: block; position: relative; }
-.table-flip-scrollable thead,.table-flip-scrollable th { width: auto !important; }
-.table-flip-scrollable thead { float: left; }
-.table-flip-scrollable th { text-align: right; border-bottom: 0; border-left: 0; border-right: 1px solid #ddd; }
-.table-flip-scrollable thead tr,.table-flip-scrollable th { display: block; }
-.table-flip-scrollable tbody { white-space: nowrap; width: auto; overflow-x: auto !important; overflow-y: hidden !important; display: block; position: relative; }
-.mobile .table-flip-scrollable tbody { -webkit-overflow-scrolling: touch; }
-.table-flip-scrollable tbody tr { margin-left: -5px; display: inline-block; border-left: 1px solid #ddd; }
-.table-flip-scrollable td { font-weight: normal !important; display: block; border-left: 0; border-right: 0; border-bottom: 0; }
-.table-flip-scrollable tbody tr:last-child td { border-right: 0; }
+.table-flip-scroll table { display: block; position: relative; }
+.table-flip-scroll thead,.table-flip-scroll th { width: auto !important; }
+.table-flip-scroll thead { float: left; }
+.table-flip-scroll th { text-align: right; border-bottom: 0; border-left: 0; border-right: 1px solid #ddd; }
+.table-flip-scroll thead tr,.table-flip-scroll th { display: block; }
+.table-flip-scroll tbody { white-space: nowrap; width: auto; overflow-x: auto !important; overflow-y: hidden !important; display: block; position: relative; }
+.mobile .table-flip-scroll tbody { -webkit-overflow-scrolling: touch; }
+.table-flip-scroll tbody tr { margin-left: -5px; display: inline-block; border-left: 1px solid #ddd; }
+.table-flip-scroll td { font-weight: normal !important; display: block; border-left: 0; border-right: 0; border-bottom: 0; }
+.table-flip-scroll tbody tr:last-child td { border-right: 0; }
 
 @media (max-width: 959px) {
-    .table-responsive { width: 100%; overflow-x: auto; }
-    .mobile .table-responsive { -webkit-overflow-scrolling: touch; }
-    .table-responsive .table { margin-bottom: 0 !important; }
-    .table-responsive > .table tr > * { white-space: nowrap; }
-    .table-responsive > .data-list { min-width: 858px; }
+    .table-fluid { width: 100%; overflow-x: auto; }
+    .mobile .table-fluid { -webkit-overflow-scrolling: touch; }
+    .table-fluid .table { margin-bottom: 0 !important; }
+    .table-fluid > .table tr > * { white-space: nowrap; }
+    .table-fluid > .data-list { min-width: 858px; }
 
-    .table-flip-responsive table { display: block; position: relative; }
-    .table-flip-responsive thead,.table-flip-responsive th { width: auto !important; }
-    .table-flip-responsive thead { float: left; }
-    .table-flip-responsive th { text-align: right; border-bottom: 0; border-left: 0; border-right: 1px solid #ddd; }
-    .table-flip-responsive thead tr,.table-flip-responsive th { display: block; }
-    .table-flip-responsive tbody { white-space: nowrap; width: auto; overflow-x: auto !important; overflow-y: hidden !important; display: block; position: relative; }
-    .mobile .table-flip-responsive tbody { -webkit-overflow-scrolling: touch; }
-    .table-flip-responsive tbody tr { margin-left: -5px; display: inline-block; border-left: 1px solid #ddd; }
-    .table-flip-responsive td { font-weight: normal !important; display: block; border-left: 0; border-right: 0; border-bottom: 0; }
-    .table-flip-responsive tbody tr:last-child td { border-right: 0; }
+    .table-flip-fluid table { display: block; position: relative; }
+    .table-flip-fluid thead,.table-flip-fluid th { width: auto !important; }
+    .table-flip-fluid thead { float: left; }
+    .table-flip-fluid th { text-align: right; border-bottom: 0; border-left: 0; border-right: 1px solid #ddd; }
+    .table-flip-fluid thead tr,.table-flip-fluid th { display: block; }
+    .table-flip-fluid tbody { white-space: nowrap; width: auto; overflow-x: auto !important; overflow-y: hidden !important; display: block; position: relative; }
+    .mobile .table-flip-fluid tbody { -webkit-overflow-scrolling: touch; }
+    .table-flip-fluid tbody tr { margin-left: -5px; display: inline-block; border-left: 1px solid #ddd; }
+    .table-flip-fluid td { font-weight: normal !important; display: block; border-left: 0; border-right: 0; border-bottom: 0; }
+    .table-flip-fluid tbody tr:last-child td { border-right: 0; }
 }
