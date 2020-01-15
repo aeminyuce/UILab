@@ -41,7 +41,7 @@ var dropdown = {};
 
                 }
 
-                events.removeClass(t, 'submenu-top open');
+                events.removeClass(t, 'menu-t open');
 
             });
 
@@ -81,7 +81,7 @@ var dropdown = {};
                 listStyles = list.style.length;
                 listWidth = list.offsetWidth;
 
-                if (events.hasClass(parent, 'submenu-left') || (offset.left + listWidth + 15) > window.innerWidth) { // 15px: scrollbar size
+                if (events.hasClass(parent, 'menu-l') || (offset.left + listWidth + 15) > window.innerWidth) { // 15px: scrollbar size
 
                     if ((offset.left - (listWidth - parent.offsetWidth)) >= 0) {
 
@@ -92,7 +92,7 @@ var dropdown = {};
 
                     }
 
-                } else if (events.hasClass(parent, 'submenu-center')) {
+                } else if (events.hasClass(parent, 'menu-c')) {
 
                     alignSize = Math.abs(listWidth - parent.offsetWidth) / 2;
 
@@ -109,7 +109,7 @@ var dropdown = {};
 
                     if (offset.top - parseInt(btnHeight + subMenuHeight, 10) + btnHeight > 0) {
 
-                        events.addClass(parent, 'submenu-top');
+                        events.addClass(parent, 'menu-t');
                         list.style.removeProperty('transform-origin');
                     }
 

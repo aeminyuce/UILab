@@ -136,7 +136,7 @@ var autocomplete = {
                                     if (offset.top + parseInt(tHeight + dHeight, 10) >= window.innerHeight) {
 
                                         if (offset.top - parseInt(tHeight + dHeight, 10) + tHeight > 0) {
-                                            events.addClass(p, 'submenu-top');
+                                            events.addClass(p, 'menu-t');
 
                                         } else {
                                             list[0].style.height = (dHeight - (offset.top + parseInt(tHeight + dHeight, 10) - window.innerHeight) - 15) + 'px';
@@ -153,7 +153,7 @@ var autocomplete = {
                             events.addClass(p, 'open');
                             setTimeout(function () { events.addClass(p, 'open-ease'); }, 0);
 
-                            events.removeClass(p, 'submenu-top');
+                            events.removeClass(p, 'menu-t');
                             list[0].innerHTML = '';
 
                             for (i = 0; i < response.length; i += 1) {
@@ -304,7 +304,7 @@ var autocomplete = {
             this.setAttribute('autocomplete', 'off');
 
             events.addClass(p, 'open');
-            events.removeClass(p, 'submenu-top');
+            events.removeClass(p, 'menu-t');
 
             p.insertAdjacentHTML('beforeend', '<ul class="ease-autocomplete"></ul>');
 
