@@ -561,7 +561,7 @@ var calendar = {
             function removePicker(form, picker) {
 
                 form.removeChild(picker);
-                events.removeClass(form, 'picker-left picker-top');
+                events.removeClass(form, 'picker-l picker-t');
 
             }
 
@@ -658,7 +658,7 @@ var calendar = {
                 if (offset.left + pickerWidth + 15 > window.innerWidth) { // 15px: scrollbar size
 
                     if ((offset.left - (pickerWidth - form.offsetWidth) - 15) > 0) {
-                        events.addClass(form, 'picker-left');
+                        events.addClass(form, 'picker-l');
                     }
 
                 }
@@ -666,7 +666,7 @@ var calendar = {
                 if (offset.top + parseInt(formHeight + pickerHeight, 10) >= window.innerHeight) {
 
                     if (offset.top - parseInt(formHeight + pickerHeight, 10) + formHeight > 0) {
-                        events.addClass(form, 'picker-top');
+                        events.addClass(form, 'picker-t');
                     }
 
                 }
