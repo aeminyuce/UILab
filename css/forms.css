@@ -142,21 +142,21 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i { transform: tran
 [class*="text-icon"] > .icon { line-height: 1.125; position: absolute; top: 50%; opacity: .45; cursor: default; transform: translateY(-50%); }
 [class*="text-icon"]:not(.text-lg) > .icon { font-size: 14px; width: 14px; height: 14px; right: 5px; }
 
-.text-icon-both:not(.text-lg) > .icon:not(.text-icon-left) { right: 5px; }
-.text-icon-left:not(.text-lg) > .icon,.text-icon-both:not(.text-lg) > .text-icon-left { right: inherit; left: 5px; }
+.text-icon-both:not(.text-lg) > .icon:not(.text-icon-l) { right: 5px; }
+.text-icon-l:not(.text-lg) > .icon,.text-icon-both:not(.text-lg) > .text-icon-l { right: inherit; left: 5px; }
 
 [class*="text-icon"].text-lg > .icon { right: 10px; }
-.text-lg.text-icon-both > .icon:not(.text-icon-left) { right: 10px; }
-.text-lg.text-icon-left > .icon,.text-lg.text-icon-both > .text-icon-left { left: 10px; }
+.text-lg.text-icon-both > .icon:not(.text-icon-l) { right: 10px; }
+.text-lg.text-icon-l > .icon,.text-lg.text-icon-both > .text-icon-l { left: 10px; }
 
 [class*="text-icon"] > button.icon { background-color: rgba(255,255,255,.0); border: 0; cursor: pointer; }
 [class*="text-icon"] > button.icon:hover { opacity: .75; }
 
-[class*="text-icon"]:not(.text-icon-left) > input,.text-icon-both > input { padding-right: 24px !important; }
-.text-icon-left > input,.text-icon-both > input { padding-left: 24px !important; }
+[class*="text-icon"]:not(.text-icon-l) > input,.text-icon-both > input { padding-right: 24px !important; }
+.text-icon-l > input,.text-icon-both > input { padding-left: 24px !important; }
 
-[class*="text-icon"].text-lg:not(.text-icon-left) > input,.text-lg.text-icon-both > input { padding-right: 38px !important; }
-.text-lg.text-icon-left > input,.text-lg.text-icon-both > input { padding-left: 38px !important; }
+[class*="text-icon"].text-lg:not(.text-icon-l) > input,.text-lg.text-icon-both > input { padding-right: 38px !important; }
+.text-lg.text-icon-l > input,.text-lg.text-icon-both > input { padding-left: 38px !important; }
 
 .clear-form:not(.open) { display: none; }
 .clear-form:not(.open-ease) { opacity: 0; }
