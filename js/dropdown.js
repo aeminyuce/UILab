@@ -194,7 +194,7 @@ var dropdown = {};
 
             target.insertAdjacentHTML('beforeend', this.textContent);
 
-            events.removeClass(selector('li.selected', p), 'selected');
+            events.removeClass(selector('.selected', p), 'selected');
             events.addClass(this.parentNode, 'selected');
 
         });

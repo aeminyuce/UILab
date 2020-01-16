@@ -38,7 +38,7 @@ var lineCharts = {
         loadCharts;
 
     // resize charts
-    chartsResizer = function () { // init function for manually call resizer
+    chartsResizer = function () {
 
         setTimeout(function () {
 
@@ -47,7 +47,7 @@ var lineCharts = {
             if (charts.length === 0) { return; }
             loadCharts(charts, true);
 
-        }, 0);
+        }, 60);
 
     };
 
@@ -336,7 +336,11 @@ var lineCharts = {
 
                     if (type.indexOf('filled') > -1) { // add filled paths
 
-                        html += '<linearGradient id="gradientId' + j + '" x1="0" y1="0" x2="0" y2="100%">' +
+                        data.id = new Date().getTime();
+                        data.id = data.id.toString();
+                        data.id = data.id.substring(data.id.length - 4, data.id.length) + j;
+
+                        html += '<linearGradient id="gradientId' + data.id + '" x1="0" y1="0" x2="0" y2="100%">' +
                                 '<stop offset="0" stop-color="' + data.color[j] + '"></stop>' +
                                 '<stop offset="100%" stop-color="' + data.color[j] + '" stop-opacity="0.0"></stop>' +
                             '</linearGradient>' +
@@ -345,7 +349,7 @@ var lineCharts = {
                                 ' V ' + (data.height - lineCharts.bottom - (lineCharts.gridStroke / 2)) +
                                 ' H ' + ((lineCharts.gridStroke / 2) + lineCharts.left) + ' Z ' +
 
-                                '" stroke="0" fill="url(#gradientId' + j + ')" stroke-width="' + lineCharts.lineStroke + '" class="filled" />';
+                                '" stroke="0" fill="url(#gradientId' + data.id + ')" stroke-width="' + lineCharts.lineStroke + '" class="filled" />';
 
                     }
 
@@ -409,7 +413,7 @@ var lineCharts = {
         loadCharts();
 
         // events
-        events.on(document, 'click', '.line-charts-resizer', chartsResizer);
+        events.on(document, 'click', '.line-charts-loader', chartsResizer);
 
     };
 
