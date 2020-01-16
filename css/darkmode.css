@@ -72,7 +72,7 @@
     .portlet,[class*="portlet-"] { background-color: #2f343e; }
     .close-portlet { color: #fff; }
 
-    .page-social > .btn { background-color: #292c35; }
+    .page-social > .btn { background: #292c35; }
     .theme-facebook.ui-dark .icon { color: #3b5998; }
     .theme-twitter.ui-dark .icon { color: #1da1f2; }
     .theme-instagram.ui-dark .icon { color: #c13584; }
