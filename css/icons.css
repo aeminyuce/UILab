@@ -47,7 +47,6 @@ button.icon { background-color: rgba(0,0,0,0); }
 .icon-book:before { content: "\45"; }
 .icon-book-open:before { content: "\46"; }
 .icon-books:before { content: "\47"; }
-.icon-box:before { content: "\48"; }
 .icon-brackets:before { content: "\4a"; }
 .icon-brackets-curly:before { content: "\4b"; }
 .icon-briefcase:before { content: "\4c"; }
@@ -333,7 +332,6 @@ button.icon { background-color: rgba(0,0,0,0); }
 .icon-appstore:before { content: "\e108"; }
 .icon-google-play:before { content: "\e109"; }
 .icon-microsoft:before { content: "\e10a"; }
-.icon-boxes:before { content: "\49"; }
 .icon-bug:before { content: "\e10b"; }
 .icon-lab:before { content: "\e10c"; }
 .icon-video:before { content: "\e09a"; }
@@ -384,3 +382,5 @@ button.icon { background-color: rgba(0,0,0,0); }
 .icon-file-zip:before { content: "\e0f7"; }
 .icon-files:before { content: "\e0f8"; }
 .icon-images-add:before { content: "\e113"; }
+.icon-box:before { content: "\48"; }
+.icon-boxes:before { content: "\49"; }
