@@ -348,7 +348,7 @@
                         </button>
                         <span class="dropdown menu-l ease-dropdown">
                             <button class="btn btn-lg btn-square btn-ghost circle ease-btn" data-tooltip="r" data-only="desktop" title="Notification Center">
-                                <i class="icon icon-bell notifier no-opacity"></i>
+                                <i class="icon icon-bell-on notifier no-opacity"></i>
                             </button>
                             <ul class="content has-grid align-c round shadow-lg">
                                 <li><a href="#"><i class="icon icon-lg notifier icon-bell" data-notifier="3"></i>Alerts</a></li>
@@ -509,7 +509,7 @@
                                     </ul>
                                 </div>
                                 <h4 class="align-l margin-5-t">Activity</h4>
-                                <div class="col-static no-fluid theme-panel2 ui-text">
+                                <div class="col-static no-fluid">
                                     <div class="row row row-no-padding-h row-md-padding-v">
                                         <div class="col-12 large">
                                             <div class="large bold">Total Progress</div>
@@ -698,7 +698,7 @@
                         </div>
 
                         <div class="col-xl-6 col-lg-6 col-12 col-md-6 sm-fluid">
-                            <div class="portlet full-height padding-15 round shadow-lg">
+                            <div class="portlet full-height padding-15 round shadow-lg btn-tabs ease-tabs" data-classes="bold">
                                 <div class="dropdown menu-l right ease-dropdown">
                                     <button class="btn btn-square btn-ghost round ease-btn">
                                         <i class="icon icon-sm icon-ellipsis-v ease-layout"></i>
@@ -710,16 +710,56 @@
                                         <li><a href="#"><i class="list-icon icon icon-eye"></i>See Detailed Statistics</a></li>
                                     </ul>
                                 </div>
-                                <h4 class="align-l margin-5-t">Statistics</h4>
-                                <div class="line-charts ease-line-charts" data-size="5,48" data-x="Sep,Oct,Nov,Dec,Jan,Fab">
-                                    <ul class="line" data-name="This Year" data-type="curved filled">
-                                        <li data-y="12" data-link="#"></li>
-                                        <li data-y="34" data-link="#"></li>
-                                        <li data-y="72" data-link="#"></li>
-                                        <li data-y="120" data-link="#"></li>
-                                        <li data-y="100" data-link="#"></li>
-                                        <li data-y="144" data-link="#"></li>
+                                <div class="dropdown menu-l margin-5-r right ease-dropdown">
+                                    <button class="btn btn-ghost round ease-btn">
+                                        <span class="value-toggle">Last year</span>
+                                        <i class="icon-toggle icon margin-3-l icon-xs icon-angle-down"></i>
+                                    </button>
+                                    <ul class="content round shadow-lg v-scroll">
+                                        <li><label class="btn-tab line-charts-loader active bold selected">Last year</label></li>
+                                        <li><label class="btn-tab line-charts-loader">Past year</label></li>
                                     </ul>
+                                </div>
+                                <h4 class="align-l margin-5-t">Statistics</h4>
+                                <div class="tab-content open open-ease">
+                                    <div class="line-charts ease-line-charts" data-size="5,48" data-x="Sep,Oct,Nov,Dec,Jan,Fab">
+                                        <ul class="line" data-name="Sales" data-type="curved filled">
+                                            <li data-y="10" data-link="#"></li>
+                                            <li data-y="30" data-link="#"></li>
+                                            <li data-y="70" data-link="#"></li>
+                                            <li data-y="120" data-link="#"></li>
+                                            <li data-y="100" data-link="#"></li>
+                                            <li data-y="150" data-link="#"></li>
+                                        </ul>
+                                        <ul class="line" data-name="Orders">
+                                            <li data-y="50" data-link="#"></li>
+                                            <li data-y="10" data-link="#"></li>
+                                            <li data-y="50" data-link="#"></li>
+                                            <li data-y="40" data-link="#"></li>
+                                            <li data-y="80" data-link="#"></li>
+                                            <li data-y="50" data-link="#"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-content">
+                                    <div class="line-charts ease-line-charts" data-size="5,48" data-x="Sep,Oct,Nov,Dec,Jan,Fab">
+                                        <ul class="line" data-name="Sales" data-type="curved filled">
+                                            <li data-y="10" data-link="#"></li>
+                                            <li data-y="60" data-link="#"></li>
+                                            <li data-y="20" data-link="#"></li>
+                                            <li data-y="120" data-link="#"></li>
+                                            <li data-y="10" data-link="#"></li>
+                                            <li data-y="100" data-link="#"></li>
+                                        </ul>
+                                        <ul class="line" data-name="Orders">
+                                            <li data-y="0" data-link="#"></li>
+                                            <li data-y="20" data-link="#"></li>
+                                            <li data-y="50" data-link="#"></li>
+                                            <li data-y="40" data-link="#"></li>
+                                            <li data-y="70" data-link="#"></li>
+                                            <li data-y="50" data-link="#"></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -767,9 +807,9 @@
                                                 <span class="card xx-dark no-padding-v no-padding-r">
                                                     Nullam sit amet sagittis nisi.
                                                     <span class="margin-5-t block ease-1st-btn">
-                                                        <a class="btn btn-lg btn-ghost btn-square round border ui-dark" href="#"><i class="icon icon-lg icon-file-pdf no-opacity ui-text"></i></a>
-                                                        <a class="btn btn-lg btn-ghost btn-square round border ui-dark" href="#"><i class="icon icon-lg icon-file-xls no-opacity ui-text"></i></a>
-                                                        <a class="btn btn-lg btn-ghost btn-square round border ui-dark" href="#"><i class="icon icon-lg icon-file-zip no-opacity ui-text"></i></a>
+                                                        <a class="btn btn-lg btn-ghost btn-square round border" href="#"><i class="icon icon-lg icon-file-pdf"></i></a>
+                                                        <a class="btn btn-lg btn-ghost btn-square round border" href="#"><i class="icon icon-lg icon-file-xls"></i></a>
+                                                        <a class="btn btn-lg btn-ghost btn-square round border" href="#"><i class="icon icon-lg icon-file-zip"></i></a>
                                                     </span>
                                                 </span>
                                             </li>
@@ -1346,7 +1386,7 @@
                                             </div>
                                         </div>
                                         <div class="col-8 no-fluid align-r">
-                                            <div class="data-paging pagination ease-1st-bg" data-default="btn round" data-active="theme-panel2 ui-dark"></div>
+                                            <div class="data-paging pagination ease-1st-bg" data-default="btn round"></div>
                                         </div>
                                     </div>
 
