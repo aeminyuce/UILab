@@ -14,8 +14,8 @@
 .photo-slider button:not(.show) { display: none; }
 .photo-slider button:not(:hover) { opacity: .45; }
 .photo-slider button:hover { background-color: rgba(0,0,0,.1); }
-.photo-slider .slide-left { left: 0; }
-.photo-slider .slide-right { right: 0; }
+.photo-slider .slide-l { left: 0; }
+.photo-slider .slide-r { right: 0; }
 
 .photo-slider .slider-nav { white-space: nowrap; text-align: center; line-height: 6px; padding: 6px 8px; display: block; position: absolute; bottom: 0; left: 50%; z-index: 3; cursor: default; transform: translateX(-50%); }
 .photo-slider .slider-nav:not(.show) { display: none; }

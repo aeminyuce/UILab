@@ -7,10 +7,10 @@
                     data-src="img/product_01.png,img/product_02.png,img/product_03.png"
                     data-srcset="img/product_01@2x.png,img/product_02@2x.png,img/product_03@2x.png"
                 alt="">
-            <button title="Prev" class="slide-left round ease-layout">
+            <button title="Prev" class="slide-l round ease-layout">
                 <i class="icon icon-angle-left"></i>
             </button>
-            <button title="Next" class="slide-right round ease-layout">
+            <button title="Next" class="slide-r round ease-layout">
                 <i class="icon icon-angle-right"></i>
             </button>
             <span class="slider-nav"></span>
@@ -44,10 +44,10 @@
                     data-src="img/product_02.png,img/product_04.png"
                     data-srcset="img/product_02@2x.png,img/product_04@2x.png"
                 alt="">
-            <button title="Prev" class="slide-left round ease-layout">
+            <button title="Prev" class="slide-l round ease-layout">
                 <i class="icon icon-angle-left"></i>
             </button>
-            <button title="Next" class="slide-right round ease-layout">
+            <button title="Next" class="slide-r round ease-layout">
                 <i class="icon icon-angle-right"></i>
             </button>
             <span class="slider-nav"></span>
@@ -80,10 +80,10 @@
                     data-src="img/product_03.png,img/product_05.png"
                     data-srcset="img/product_03@2x.png,img/product_05@2x.png"
                 alt="">
-            <button title="Prev" class="slide-left round ease-layout">
+            <button title="Prev" class="slide-l round ease-layout">
                 <i class="icon icon-angle-left"></i>
             </button>
-            <button title="Next" class="slide-right round ease-layout">
+            <button title="Next" class="slide-r round ease-layout">
                 <i class="icon icon-angle-right"></i>
             </button>
             <span class="slider-nav"></span>
@@ -114,10 +114,10 @@
             <img src="img/product_04.png"
                     srcset="img/product_04@2x.png"
                 alt="">
-            <button title="Prev" class="slide-left round ease-layout">
+            <button title="Prev" class="slide-l round ease-layout">
                 <i class="icon icon-angle-left"></i>
             </button>
-            <button title="Next" class="slide-right round ease-layout">
+            <button title="Next" class="slide-r round ease-layout">
                 <i class="icon icon-angle-right"></i>
             </button>
             <span class="slider-nav"></span>
@@ -147,10 +147,10 @@
             <img src="img/product_05.png"
                     srcset="img/product_05@2x.png"
                 alt="">
-            <button title="Prev" class="slide-left round ease-layout">
+            <button title="Prev" class="slide-l round ease-layout">
                 <i class="icon icon-angle-left"></i>
             </button>
-            <button title="Next" class="slide-right round ease-layout">
+            <button title="Next" class="slide-r round ease-layout">
                 <i class="icon icon-angle-right"></i>
             </button>
             <span class="slider-nav"></span>
@@ -183,10 +183,10 @@
                     data-src="img/product_02.png,img/product_04.png"
                     data-srcset="img/product_02@2x.png,img/product_04@2x.png"
                 alt="">
-            <button title="Prev" class="slide-left round ease-layout">
+            <button title="Prev" class="slide-l round ease-layout">
                 <i class="icon icon-angle-left"></i>
             </button>
-            <button title="Next" class="slide-right round ease-layout">
+            <button title="Next" class="slide-r round ease-layout">
                 <i class="icon icon-angle-right"></i>
             </button>
             <span class="slider-nav"></span>

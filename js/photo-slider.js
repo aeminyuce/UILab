@@ -112,12 +112,12 @@ var photoSlider = {};
 
                 total = (dataSrcLists[i].length - 1);
 
-                if (events.hasClass(this, 'slide-right')) {
+                if (events.hasClass(this, 'slide-r')) { // right
 
                     if (count[i] >= total) { count[i] = total; return; }
                     count[i] += 1;
 
-                } else {
+                } else { // left
 
                     if (count[i] <= 0) { count[i] = 0; return; }
                     count[i] -= 1;
