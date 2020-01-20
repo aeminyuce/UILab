@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="../css/portlets.css"/>
     <link rel="stylesheet" href="../css/scrollbar.css"/>
     <link rel="stylesheet" href="../css/static-grid.css"/>
+    <link rel="stylesheet" href="../css/sticky-header.css"/>
     <link rel="stylesheet" href="../css/typography.css"/>
 
     <link rel="stylesheet" href="../css/themes.css"/>
@@ -53,6 +54,7 @@
     <script src="../js/mobile-menu.js"></script>
     <script src="../js/modal.js"></script>
     <script src="../js/static-grid.js"></script>
+    <script src="../js/sticky-header.js"></script>
     <script src="../js/themes.js"></script>
 
     <!-- custom CSS -->
@@ -63,11 +65,17 @@
         .sidebar .selected,.mobile-menu .selected { background-image: linear-gradient(135deg, #ff6f70, #db66e4); }
 
         @media (max-width: 959px) {
-            .md-static-57 { width: 57px; }
+            header.sticky { background-color: #fefefe; }
         }
 
         @media (prefers-color-scheme: dark) {
             .sidebar,.mobile-menu { background-image: linear-gradient(135deg, #4e5e98, #20113c); }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            @media (max-width: 959px) {
+                header.sticky { background-color: #15181d; }
+            }
         }
 
     </style>
@@ -80,48 +88,97 @@
     <!-- documentation examples -->
     <main class="container no-gutter">
         <div class="col-static no-fluid">
-            <div class="sidebar static-200 md-static-57 padding-5 ui-dark hidden-md">
+            <div class="static-200 set-relative hidden-md">
+                <div class="sidebar static-200 full-height set-fixed set-l padding-5 ui-dark hidden-md v-scroll">
 
-                <div class="align-l padding-10 add-mobile-menu-l">
-                    <h5 class="x-light-ui padding-15 margin-5-b">LIBRARY</h5>
-                    <ul class="list-unstyled list-spacer-15 large bold ease-2nd-btn">
-                        <li><a class="btn btn-lg block btn-ghost circle" href="#">TV Shows</a></li>
-                        <li><a class="btn btn-lg block circle scale shadow-lg ease-all selected" href="#">Films</a></li>
-                        <li><a class="btn btn-lg block btn-ghost circle" href="#">Sports</a></li>
-                        <li><a class="btn btn-lg block btn-ghost circle" href="#">Music Concerts</a></li>
-                        <li><a class="btn btn-lg block btn-ghost circle" href="#">Comedy</a></li>
-                        <li><a class="btn btn-lg block btn-ghost circle" href="#">Other</a></li>
-                    </ul>
+                    <div class="align-l padding-10 add-mobile-menu-l">
+                        <h5 class="x-light-ui padding-15 margin-5-b">LIBRARY</h5>
+                        <ul class="list-unstyled list-spacer-15 large bold ease-2nd-btn">
+                            <li>
+                                <a class="btn btn-lg block btn-ghost circle" href="#">
+                                    <i class="icon icon-tv no-opacity margin-10-r"></i>
+                                    TV Shows
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-lg block circle scale shadow-lg ease-all selected" href="#">
+                                    <i class="icon icon-film no-opacity margin-10-r"></i>
+                                    Films
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-lg block btn-ghost circle" href="#">
+                                    <i class="icon icon-flag no-opacity margin-10-r"></i>
+                                    Sports
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-lg block btn-ghost circle" href="#">
+                                    <i class="icon icon-music no-opacity margin-10-r"></i>
+                                    Concerts
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-lg block btn-ghost circle" href="#">
+                                    <i class="icon icon-face-smile no-opacity margin-10-r"></i>
+                                    Comedy
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-lg block btn-ghost circle" href="#">
+                                    <i class="icon icon-video no-opacity margin-10-r"></i>
+                                    Others
+                                </a>
+                            </li>
+                        </ul>
 
-                    <span class="sp30"></span>
+                        <span class="sp30"></span>
 
-                    <h5 class="x-light-ui padding-15 margin-5-b">NEWS &amp; EVENTS</h5>
-                    <ul class="list-unstyled list-spacer-15 large bold ease-2nd-btn">
-                        <li><a class="btn btn-lg block btn-ghost circle" href="#">News</a></li>
-                        <li><a class="btn btn-lg block btn-ghost circle" href="#">Community</a></li>
-                        <li><a class="btn btn-lg block btn-ghost circle" href="#">Events</a></li>
-                    </ul>
+                        <h5 class="x-light-ui padding-15 margin-5-b">NEWS &amp; EVENTS</h5>
+                        <ul class="list-unstyled list-spacer-15 large ease-2nd-btn">
+                            <li>
+                                <a class="btn btn-lg light-ui block btn-ghost circle" href="#">
+                                    <i class="icon icon-news no-opacity margin-10-r"></i>
+                                    News
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-lg light-ui block btn-ghost circle" href="#">
+                                    <i class="icon icon-network no-opacity margin-10-r"></i>
+                                    Community
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-lg light-ui block btn-ghost circle" href="#">
+                                    <i class="icon icon-calendar no-opacity margin-10-r"></i>
+                                    Events
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
-
             </div>
             <div class="row row-no-padding">
                 <div class="col-12">
 
-                    <div class="padding-30">
+                    <div class="padding-30 md-no-padding">
 
-                        <div class="row row-no-padding-v">
-                            <div class="col-6">
+                        <header class="row row-no-padding-t sticky-md" data-classes="shadow-lg">
+                            <div class="col-6 hidden-md">
                                 <div class="text text-lg text-icon-both margin-15-b circle no-border theme-gray ui-light has-clear ease-form">
                                     <i class="icon text-icon-l icon-search ease-layout"></i>
                                     <button type="button" class="clear-form icon icon-remove ease-layout"></button>
                                     <input type="text" placeholder="Search for movies, TV shows...">
                                 </div>
                             </div>
-                            <div class="col-6 align-r sm-align-c">
-                                <span class="sp15 visible-md"></span>
-                                <span class="align-c x-dark margin-20-r ease-1st-btn">
-                                    <button class="btn btn-square btn-lg btn-ghost circle left sm-no-float show-mobile-menu-l visible-md">
+                            <div class="col-6 align-r">
+                                <span class="align-c x-dark margin-20-r sm-no-margin ease-1st-btn">
+                                    <button class="btn btn-square btn-lg btn-ghost margin-10-l circle left show-mobile-menu-l visible-md">
                                         <i class="icon icon-bars-left no-opacity"></i>
+                                    </button>
+                                    <button class="btn btn-square btn-lg btn-ghost circle ease-btn visible-md" onclick="modal.open({source: '.search', size: 'fullscreen', bg: 'false'});" data-tooltip data-only="desktop" title="Search">
+                                        <i class="icon icon-search no-opacity"></i>
                                     </button>
                                     <button class="btn btn-square btn-lg btn-ghost circle">
                                         <i class="icon icon-user no-opacity"></i>
@@ -137,12 +194,12 @@
                                     </button>
                                 </span>
                                 <span class="inline-block right sm-no-float">
-                                    <img class="img-photo img-photo-sm circle margin-10-l right" src="img/profile-image.jpg" alt="">
-                                    <span class="margin-3-t inline-block">aeminyuce</span>
-                                    <span class="small x-dark block">Premium</span>
+                                    <img class="img-photo img-photo-sm circle margin-10-l sm-no-margin right" src="img/profile-image.jpg" alt="">
+                                    <span class="margin-3-t inline-block hidden-sm">aeminyuce</span>
+                                    <span class="small x-dark block hidden-sm">Premium</span>
                                 </span>
                             </div>
-                        </div>
+                        </header>
 
                         <span class="sp30"></span>
 
@@ -433,6 +490,88 @@
             Categories
         </div>
         <div class="mobile-menu-content no-padding v-scroll"></div>
+    </div>
+
+    <!-- modal search -->
+    <div class="search modal">
+        <div class="modal-container">
+
+            <form action="#successful">
+                <div class="fixed">
+
+                    <div class="modal-search offset-2 col-8">
+
+                        <h2>Search</h2>
+                        <p class="large x-light-ui xs-align-c">Search for movies, TV shows...</p>
+
+                        <div class="col-static no-fluid">
+                            <div class="row row-no-padding-h">
+                                <div class="col-12">
+                                    <div class="text text-lg text-icon has-clear round-l no-border inner-shadow-sm theme-gray ui-x-light ease-form">
+                                        <button type="button" class="clear-form icon icon-remove ease-layout"></button>
+                                        <input class="required" type="text" placeholder="Search">
+                                    </div>
+                                    <p class="required-msg round">Please, enter a keyword.</p>
+                                </div>
+                            </div>
+                            <div class="static-100 padding-10-v">
+                                <button class="btn btn-lg block round-r theme-default2 ui-dark ease-btn" type="submit">
+                                    <i class="icon icon-lg icon-search"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="row theme-gray">
+                            <div class="col-4 no-fluid">
+                                <a class="btn btn-lg btn-multi block no-line-height round ui-x-light hover-more-up ease-all" href="#">
+                                    <i class="icon icon-xl icon-tv margin-5-v no-opacity theme-default2 ui-text"></i>
+                                    <span class="block margin-5-v">TV Shows</spaspan>
+                                    <span class="dark">1024</span>
+                                </a>
+                            </div>
+                            <div class="col-4 no-fluid">
+                                <a class="btn btn-lg btn-multi block no-line-height round ui-x-light hover-more-up ease-all" href="#">
+                                    <i class="icon icon-xl icon-film margin-5-v no-opacity theme-default2 ui-text"></i>
+                                    <span class="block margin-5-v">Films</span>
+                                    <span class="dark">775</span>
+                                </a>
+                            </div>
+                            <div class="col-4 no-fluid">
+                                <a class="btn btn-lg btn-multi block no-line-height round ui-x-light hover-more-up ease-all" href="#">
+                                    <i class="icon icon-xl icon-flag margin-5-v no-opacity theme-default2 ui-text"></i>
+                                    <span class="block margin-5-v">Sports</span>
+                                    <span class="dark">316</span>
+                                </a>
+                            </div>
+                            <div class="col-4 no-fluid">
+                                <a class="btn btn-lg btn-multi block no-line-height round ui-x-light hover-more-up ease-all" href="#">
+                                    <i class="icon icon-xl icon-music margin-5-v no-opacity theme-default2 ui-text"></i>
+                                    <span class="block margin-5-v">Concerts</span>
+                                    <span class="dark">589</span>
+                                </a>
+                            </div>
+                            <div class="col-4 no-fluid">
+                                <a class="btn btn-lg btn-multi block no-line-height round ui-x-light hover-more-up ease-all" href="#">
+                                    <i class="icon icon-xl icon-face-smile margin-5-v no-opacity theme-default2 ui-text"></i>
+                                    <span class="block margin-5-v">Comedy</span>
+                                    <span class="dark">219</span>
+                                </a>
+                            </div>
+                            <div class="col-4 no-fluid">
+                                <a class="btn btn-lg btn-multi block no-line-height round ui-x-light hover-more-up ease-all" href="#">
+                                    <i class="icon icon-xl icon-video margin-5-v no-opacity theme-default2 ui-text"></i>
+                                    <span class="block margin-5-v">Others</span>
+                                    <span class="dark">701</span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
     </div>
 
 </body>
