@@ -85,7 +85,7 @@ var mobileMenu = {
 
         };
 
-        if (panelOpened === 'left') {
+        if (panelOpened === 'l') {
 
             if (visibleArr.indexOf(mobileMenu.visibleLeft) > -1) {
 
