@@ -89,7 +89,7 @@ var mobileMenu = {
 
             if (visibleArr.indexOf(mobileMenu.visibleLeft) > -1) {
 
-                panel = selector('.mobile-menu.show-left');
+                panel = selector('.mobile-menu.show-l');
 
                 max = screenLimits(mobileMenu.visibleLeft);
                 if (screen.width >= max) { closeMobileMenu(panel); }
@@ -100,7 +100,7 @@ var mobileMenu = {
 
             if (visibleArr.indexOf(mobileMenu.visibleRight) > -1) {
 
-                panel = selector('.mobile-menu.show-right');
+                panel = selector('.mobile-menu.show-r');
 
                 max = screenLimits(mobileMenu.visibleRight);
                 if (screen.width >= max) { closeMobileMenu(panel); }
@@ -118,11 +118,11 @@ var mobileMenu = {
 
             var importers, moveFnc, id, wrapper, i, index, indexArr, indexSort, position, bg, panel;
 
-            position = 'left';
+            position = 'l'; // right
             temp = document.createDocumentFragment();
 
-            if (events.hasClass(this, 'show-mobile-menu-right')) {
-                position = 'right';
+            if (events.hasClass(this, 'show-mobile-menu-r')) {
+                position = 'r'; // left
             }
 
             moveFnc = function (that, j) {

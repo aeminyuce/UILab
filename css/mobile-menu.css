@@ -8,8 +8,8 @@
 
 .mobile-menu { width: 100%; width: 320px; background-color: #f9f9f9; position: fixed; top: 0; bottom: 0; z-index: 90; box-shadow: 0 5px 15px rgba(0,0,0,.15); }
 
-.mobile-menu.show-right { right: 0; transform: translateX(100%); }
-.mobile-menu.show-left { left: 0; transform: translateX(-100%); }
+.mobile-menu.show-r { right: 0; transform: translateX(100%); }
+.mobile-menu.show-l { left: 0; transform: translateX(-100%); }
 
 .mobile-menu:not(.open) { display: none; }
 .mobile-menu.open-ease { transform: translateX(0); }
