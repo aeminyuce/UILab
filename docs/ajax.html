@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UI Lab, Ajax</title>
+    <meta name="keywords" content="uilab, responsive, design system, css, javascript, Ajax JS">
+    <meta name="description" content="CSS & JavaScript powered responsive design system." />
+    <meta name="author" content="A. Emin Yuce"/>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <!--[if lt IE 10]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
+
+    <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/reset.css"/>
+
+    <link rel="stylesheet" href="../css/buttons.css"/>
+    <link rel="stylesheet" href="../css/borders.css"/>
+    <link rel="stylesheet" href="../css/code.css"/>
+    <link rel="stylesheet" href="../css/effects.css"/>
+    <link rel="stylesheet" href="../css/grid.css"/>
+    <link rel="stylesheet" href="../css/helpers.css"/>
+    <link rel="stylesheet" href="../css/icons.css"/>
+    <link rel="stylesheet" href="../css/margins.css"/>
+    <link rel="stylesheet" href="../css/paddings.css"/>
+    <link rel="stylesheet" href="../css/portlets.css"/>
+    <link rel="stylesheet" href="../css/scrollbar.css"/>
+    <link rel="stylesheet" href="../css/sticky-header.css"/>
+    <link rel="stylesheet" href="../css/typography.css"/>
+    <link rel="stylesheet" href="../css/top-button.css"/>
+
+    <link rel="stylesheet" href="../css/themes.css"/>
+    <link rel="stylesheet" href="../css/darkmode.css"/>
+
+    <!-- Javascript Tools -->
+    <script src="../js/selector.js"></script>
+    <script src="../js/events.js"></script>
+    <script src="../js/user-agents.js"></script>
+
+    <script src="../js/sticky-header.js"></script>
+    <script src="../js/themes.js"></script>
+    <script src="../js/top-button.js"></script>
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="container theme-default ui-dark">
+        <div class="row theme-default2 ui-border border-t border-dual">
+            <div class="col-12">
+                <a href="index.html" class="btn btn-lg btn-square circle ease-btn margin-10-r"><i class="icon no-opacity icon-long-arrow-left"></i></a>
+                <h1 class="x-large inline-block">UI Lab, Ajax</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- documentation examples -->
+    <main class="container no-gutter">
+        <div class="fixed">
+            <div class="row">
+                <div class="col-12 padding-30">
+
+                    <div class="portlet-warning padding-30 round theme-default2 ui-x-light ui-border">
+                        Ajax JS is a simple javascript to making XHR requests.
+                    </div>
+
+                    <div class="padding-30-v theme-default">
+
+                        <b class="margin-5-b block">Example:</b>
+                        <pre class="round margin-5-b">ajax({
+
+    type : 'GET',
+    url : 'yourfile.php',
+    data: 'name=value&name=value',
+
+    callback: function (status, response) {
+
+        var target = selector('.ajaxTarget');
+        if (target.length > 0) {
+
+            if (status === 'success') {
+                target[0].innerHTML = response;
+            }
+
+        }
+
+    }
+
+});</pre>
+
+                        <span class="sp30"></span>
+
+                        <b class="margin-5-b block">JSON Example:</b>
+                        <pre class="round margin-5-b">var myJSONRequests = [];
+
+ajax({
+
+    type : 'GET',
+    url : 'yourfile.php',
+    cache: false,
+    data: 'name=value&name=value',
+
+    beforesend: function (xhr) {
+
+        // abort still processing previous json requests (optional)
+        for (n = 0; n < myJSONRequests.length; n += 1) {
+
+            myJSONRequests[n].abort();
+            myJSONRequests.splice(n, 1);
+
+        }
+
+        myJSONRequests.push(xhr);
+
+    },
+    callback: function (status, response, xhr) {
+
+        var i, n, target;
+
+        target = selector('.ajaxTarget');
+        if (target.length > 0) {
+
+            if (status === 'success') {
+
+                response = JSON.parse(response);
+                if (response.length !== 'undefined') {
+
+                    for (i = 0; i < response.length; i += 1) {
+                        if (response[i] !== null) {
+                            console.log(response[i].yourJSONvalue);
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+});</pre>
+
+                        <span class="sp30"></span>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
