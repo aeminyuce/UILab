@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../css/alignments.css"/>
     <link rel="stylesheet" href="../css/buttons.css"/>
     <link rel="stylesheet" href="../css/borders.css"/>
+    <link rel="stylesheet" href="../css/effects.css"/>
     <link rel="stylesheet" href="../css/forms.css"/>
     <link rel="stylesheet" href="../css/grid.css"/>
     <link rel="stylesheet" href="../css/helpers.css"/>
@@ -28,7 +29,7 @@
     <link rel="stylesheet" href="../css/scrollbar.css"/>
     <link rel="stylesheet" href="../css/static-grid.css"/>
     <link rel="stylesheet" href="../css/sticky-header.css"/>
-    <link rel="stylesheet" href="../css/effects.css"/>
+    <link rel="stylesheet" href="../css/tabs.css"/>
     <link rel="stylesheet" href="../css/typography.css"/>
     <link rel="stylesheet" href="../css/top-button.css"/>
 
@@ -46,6 +47,7 @@
     <script src="../js/loading-button.js"></script>
     <script src="../js/static-grid.js"></script>
     <script src="../js/sticky-header.js"></script>
+    <script src="../js/tabs.js"></script>
     <script src="../js/themes.js"></script>
     <script src="../js/top-button.js"></script>
 
@@ -357,16 +359,21 @@
     <main class="container">
         <div class="row">
             <div class="col-12">
-                <div class="padding-30 sm-no-padding">
+                <div class="padding-30 sm-no-padding btn-tabs theme-default2 ease-tabs" data-classes="ui-border">
 
-                    <h4>CSS Generator</h4>
-                    <div class="generate-holder padding-30-b theme-default2">
+                    <div class="md-align-c ease-1st-btn">
+                        <button class="btn-tab btn btn-lg btn-ghost border-b border-dual padding-20-h round-t ui-border active">CSS</button>
+                        <button class="btn-tab btn btn-lg btn-ghost border-b border-dual padding-20-h round-t">JS</button>
+                        <button class="btn-tab btn btn-lg btn-ghost border-b border-dual padding-20-h round-t">Icons</button>
+                    </div>
 
-                        <div class="file file-lg margin-30-b no-border round circle no-border theme-default ui-dark hover ease-form form-xs-inline">
+                    <div class="generate-holder tab-content padding-30-v open open-ease">
+
+                        <div class="file file-lg margin-30-b no-border round circle no-border ease-form form-xs-inline">
                             <input name="css" class="generate-import" type="file">
-                            <div class="btn btn-ghost round padding-20-h xs-no-float block ease-btn">
-                                Read from CSS File
-                                <i class="icon icon-sm icon-file-download no-opacity margin-5-l"></i>
+                            <div class="btn border-dual circle padding-20-h block ease-btn">
+                                <span class="inline-block">Import from CSS File</span>
+                                <i class="icon icon-sm icon-import no-opacity margin-5-l"></i>
                             </div>
                         </div>
 
@@ -896,7 +903,7 @@
                                     </div>
                                 </div>
 
-                                <div class="ease-1st-btn">
+                                <div class="align-r xs-align-c ease-1st-btn">
                                     <button class="generate-btn btn btn-xs-fluid btn-lg padding-20-h ui-dark round">Generate CSS</button>
                                     <button class="generate-copy btn btn-xs-fluid btn-lg padding-20-h round">
                                         Copy to Clipboard
@@ -909,14 +916,13 @@
 
                     </div>
 
-                    <h4>JS Generator</h4>
-                    <div class="generate-holder padding-30-b theme-default2">
+                    <div class="generate-holder tab-content padding-30-v">
 
-                        <div class="file file-lg margin-30-b no-border round circle theme-default ui-dark hover ease-form form-xs-inline">
+                        <div class="file file-lg margin-30-b no-border round circle no-border ease-form form-xs-inline">
                             <input name="js" class="generate-import" type="file">
-                            <div class="btn btn-ghost round padding-20-h xs-no-float block ease-btn">
-                                Read from JS File
-                                <i class="icon icon-sm icon-file-download no-opacity margin-5-l"></i>
+                            <div class="btn border-dual circle padding-20-h block ease-btn">
+                                <span class="inline-block">Import from JS File</span>
+                                <i class="icon icon-sm icon-import no-opacity margin-5-l"></i>
                             </div>
                         </div>
 
@@ -1318,12 +1324,12 @@
                                         </button>
                                         <div class="padding-10 theme-gray ui-x-light">
                                             Calculated file size:
-                                            <b class="generate-size">0 Kb
+                                            <b class="generate-size">0 Kb</b>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="ease-1st-btn">
+                                <div class="align-r xs-align-c ease-1st-btn">
                                     <button class="generate-btn btn btn-xs-fluid btn-lg padding-20-h ui-dark round">Generate JS</button>
                                     <button class="generate-copy btn btn-xs-fluid btn-lg padding-20-h round">
                                         Copy to Clipboard
@@ -1331,28 +1337,29 @@
                                     </button>
                                 </div>
 
-                                <div class="padding-30-v">
-                                    <h4>Download Fonts Icon Files</h4>
-                                    <p>Download and save your file to your <code>/fonts/</code> folder.</p>
-                                    <div class="align-l ease-1st-btn">
-                                        <a class="btn btn-lg btn-xs-fluid round" href="../fonts/font-icons.svg">
-                                            font-icons.svg
-                                            <i class="icon margin-10-l margin-3-v right icon-file-download"></i>
-                                        </a>
-                                        <a class="btn btn-lg btn-xs-fluid round" href="../fonts/font-icons.ttf">
-                                            font-icons.ttf
-                                            <i class="icon margin-10-l margin-3-v right icon-file-download"></i>
-                                        </a>
-                                        <a class="btn btn-lg btn-xs-fluid round" href="../fonts/font-icons.woff">
-                                            font-icons.woff
-                                            <i class="icon margin-10-l margin-3-v right icon-file-download"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
 
+                    </div>
+
+                    <div class="tab-content padding-30-v">
+
+                        <h4>Download Fonts Icon Files</h4>
+                        <p>Download and save your files to your <code>/fonts/</code> folder.</p>
+                        <div class="align-l ease-1st-btn">
+                            <a class="btn btn-lg btn-xs-fluid round" href="../fonts/font-icons.svg">
+                                font-icons.svg
+                                <i class="icon margin-10-l margin-3-v right icon-file-download"></i>
+                            </a>
+                            <a class="btn btn-lg btn-xs-fluid round" href="../fonts/font-icons.ttf">
+                                font-icons.ttf
+                                <i class="icon margin-10-l margin-3-v right icon-file-download"></i>
+                            </a>
+                            <a class="btn btn-lg btn-xs-fluid round" href="../fonts/font-icons.woff">
+                                font-icons.woff
+                                <i class="icon margin-10-l margin-3-v right icon-file-download"></i>
+                            </a>
+                        </div>
                     </div>
 
                 </div>
