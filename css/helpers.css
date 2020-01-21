@@ -2,7 +2,7 @@
 .automargin { margin-right: auto; margin-left: auto; display: block; }
 .left { float: left; }
 .right { float: right; }
-.clearfix { clear: both !important; display: block; }
+.clearfix { width: 100% !important; clear: both !important; display: block; }
 .block { width: 100%; display: block !important; }
 .inline-block { vertical-align: middle; display: inline-block !important; }
 .rtl { direction: rtl; }
