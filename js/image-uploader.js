@@ -525,6 +525,7 @@ var imageUploader = {
 
                 ajax({
 
+                    type: 'POST',
                     url : that.action,
                     data: formData,
 

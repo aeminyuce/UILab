@@ -321,6 +321,7 @@ var modal = {
                 } else if (type === 'ajax') { // ajax sources
 
                     ajax({
+
                         url : set.source,
                         callback: function (status, response) {
 
@@ -337,6 +338,7 @@ var modal = {
                             }
 
                         }
+
                     });
 
                 }

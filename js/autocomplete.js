@@ -231,6 +231,7 @@ var autocomplete = {
 
                             // get json data with ajax
                             ajax({
+
                                 url : src,
                                 beforesend: function (xhr) {
 

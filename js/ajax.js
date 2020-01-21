@@ -8,10 +8,11 @@
  Example:
 
     ajax({
-        type : 'POST',
+
+        type : 'GET',
         url : 'yourfile.php',
-        cache: false,
         data: 'name=value&name=value',
+
         callback: function (status, response) {
 
             var target = selector('.ajaxTarget');
@@ -24,6 +25,7 @@
             }
 
         }
+
     });
 
  JSON Example:
@@ -31,9 +33,12 @@
     var myJSONRequests = [];
 
     ajax({
+
         type : 'GET',
         url : 'yourfile.php',
+        cache: false,
         data: 'name=value&name=value',
+
         beforesend: function (xhr) {
 
             // abort still processing previous json requests (optional)
@@ -72,6 +77,7 @@
             }
 
         }
+
     });
 
 */
@@ -84,7 +90,7 @@ var ajax = function (set) { // type, url, data, callback
     if (set.url === undefined) { return; }
 
     if (set.type === undefined || set.type === '') {
-        set.type = 'POST';
+        set.type = 'GET'; // send strings
     }
 
     var i = ajax.request.length;

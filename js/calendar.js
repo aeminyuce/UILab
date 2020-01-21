@@ -295,6 +295,7 @@ var calendar = {
 
                 // get json data with ajax
                 ajax({
+
                     url : src,
                     callback: function (status, response) {
 
@@ -379,6 +380,7 @@ var calendar = {
                         }
 
                     }
+
                 });
 
             }
