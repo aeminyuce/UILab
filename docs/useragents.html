@@ -16,13 +16,14 @@
     <!-- CSS Tools -->
     <link rel="stylesheet" href="../css/reset.css"/>
 
-    <link rel="stylesheet" href="../css/alignments.css"/>
     <link rel="stylesheet" href="../css/buttons.css"/>
     <link rel="stylesheet" href="../css/borders.css"/>
+    <link rel="stylesheet" href="../css/code.css"/>
     <link rel="stylesheet" href="../css/effects.css"/>
     <link rel="stylesheet" href="../css/grid.css"/>
     <link rel="stylesheet" href="../css/helpers.css"/>
     <link rel="stylesheet" href="../css/icons.css"/>
+    <link rel="stylesheet" href="../css/listings.css"/>
     <link rel="stylesheet" href="../css/margins.css"/>
     <link rel="stylesheet" href="../css/paddings.css"/>
     <link rel="stylesheet" href="../css/portlets.css"/>
@@ -44,21 +45,17 @@
     <script>
         events.onload(function () {
 
-            var results = selector(document)[0].getAttribute('class'),
-                variables = selector('.variables li'),
-                portrait = selector('span.p')[0],
-                landscape = selector('span.l')[0];
+            var results = selector(document)[0].getAttribute('class');
+            selector('.results')[0].innerHTML = '&lt;html class="' + results + '"&gt;';
 
-            selector('.results i')[0].innerHTML = results;
-
-            variables[0].append(useragents.userLang);
-            variables[1].append(useragents.ie);
-            variables[2].append(useragents.edge);
-            variables[3].append(useragents.mobile);
-            variables[4].append(useragents.ios);
-            variables[5].append(useragents.android);
-            variables[6].append(useragents.androidOld);
-            variables[7].append(useragents.nativeBrowser);
+            selector('.variables')[0].innerHTML = 'useragents.userLang: ' + useragents.userLang + '<br>' +
+                'useragents.ie: ' + useragents.ie + '<br>' +
+                'useragents.edge: ' + useragents.edge + '<br>' +
+                'useragents.mobile: ' + useragents.mobile + '<br>' +
+                'useragents.ios: ' + useragents.ios + '<br>' +
+                'useragents.android: ' + useragents.android + '<br>' +
+                'useragents.androidOld: ' + useragents.androidOld + '<br>' +
+                'useragents.nativeBrowser: ' + useragents.nativeBrowser;
 
         });
     </script>
@@ -83,29 +80,20 @@
                 <div class="col-12 padding-30">
 
                     <div class="portlet-warning padding-30 round theme-default2 ui-x-light ui-border">
-                        <h4>User Agents JS is a simple javascript detecting browsers, devices and operating systems.</h4>
-                        <h5>User Agents JS requires Selector JS.</h5>
+                        User Agents JS requires Events JS.<br>
+                        User Agents JS is a simple javascript detecting browsers, devices and operating systems.<br><br>
                         <strong>See your browser results listed below.</strong>
                     </div>
 
-                    <div class="portlet large padding-15 round theme-gray ui-x-light results">
-                        <b>User agents:</b>
-                        <i></i>
-                    </div>
+                    <b class="margin-5-b block">User agents:</b>
+                    <span class="margin-5-b block">Adding classnames to the html element, dynamically.</span>
+                    <pre class="round results"></pre>
 
-                    <div class="portlet large padding-15 round theme-gray ui-x-light variables">
-                        <b>Variables:</b>
-                        <ul>
-                            <li><b>useragents.userLang:</b> </li>
-                            <li><b>useragents.ie:</b> </li>
-                            <li><b>useragents.edge:</b> </li>
-                            <li><b>useragents.mobile:</b> </li>
-                            <li><b>useragents.ios:</b> </li>
-                            <li><b>useragents.android:</b> </li>
-                            <li><b>useragents.androidOld:</b> </li>
-                            <li><b>useragents.nativeBrowser:</b> </li>
-                        </ul>
-                    </div>
+                    <span class="sp15"></span>
+
+                    <b class="margin-5-b block">Variables:</b>
+                    <span class="margin-5-b block">Global variables returns true/false.</span>
+                    <pre class="round variables"></pre>
 
                 </div>
             </div>

@@ -16,14 +16,13 @@
     <!-- CSS Tools -->
     <link rel="stylesheet" href="../css/reset.css"/>
 
-    <link rel="stylesheet" href="../css/alignments.css"/>
     <link rel="stylesheet" href="../css/buttons.css"/>
     <link rel="stylesheet" href="../css/borders.css"/>
+    <link rel="stylesheet" href="../css/code.css"/>
     <link rel="stylesheet" href="../css/effects.css"/>
     <link rel="stylesheet" href="../css/grid.css"/>
     <link rel="stylesheet" href="../css/helpers.css"/>
     <link rel="stylesheet" href="../css/icons.css"/>
-    <link rel="stylesheet" href="../css/listings.css"/>
     <link rel="stylesheet" href="../css/margins.css"/>
     <link rel="stylesheet" href="../css/paddings.css"/>
     <link rel="stylesheet" href="../css/portlets.css"/>
@@ -65,70 +64,74 @@
                 <div class="col-12 padding-30">
 
                     <div class="portlet-warning padding-30 round theme-default2 ui-x-light ui-border">
-                        <h4>Selector JS is a simple javascript selector to select HTML elements.</h4>
-                        Please, <strong>click the buttons listed below and check the console</strong> to see returned element/array/nodelist.
+                        Selector JS is a simple javascript selector to select HTML elements.
                     </div>
 
-                    <ul class="list-unstyled list-spacer-5 align-l ease-1st-btn">
-                        <li class="btn btn-lg btn-multi block round" onclick="console.log(selector('li'));">
-                            <strong>Select tagname:</strong><br>
-                            <i>selector('li');</i>
-                        </li>
-                        <li class="btn btn-lg btn-multi block round" onclick="console.log(selector('li, i'));">
-                            <strong>Select multiple tagname:</strong><br>
-                            <i>selector('li, i');</i>
-                        </li>
-                        <li class="btn btn-lg btn-multi block round" onclick="console.log(selector('li')[0]);">
-                            <strong>Select first tagname:</strong><br>
-                            <i>selector('li')[0];</i>
-                        </li>
-                        <li class="btn btn-lg btn-multi block round" onclick="console.log(selector('li:last-child'));">
-                            <strong>Select CSS3 last-child of tagname:</strong><br>
-                            <i>selector('li:last-child');</i>
-                        </li>
-                        <li class="btn btn-lg btn-multi block round" onclick="console.log(selector('.select-classname'));" class="select-classname">
-                            <strong>Select Classname:</strong><br>
-                            <i>selector('.select-classname');</i>
-                        </li>
-                        <li class="btn btn-lg btn-multi block round" onclick="console.log(selector('#select-id'));" id="select-id">
-                            <strong>Select id:</strong><br>
-                            <i>selector('#select-id');</i>
-                        </li>
-                        <li class="btn btn-lg btn-multi block round" onclick="console.log(selector('[onclick]'));">
-                            <strong>Select with attribute:</strong><br>
-                            <i>selector('[onclick]');</i>
-                        </li>
-                    </ul>
+                    <div class="padding-30-v theme-default">
 
-                    <ul class="list-unstyled list-spacer-5 align-l ease-1st-btn">
-                        <li class="btn btn-lg btn-multi block round" onclick="console.log(selector(document));">
-                            <strong>Select document:</strong><br>
-                            <i>selector(document);</i>
-                        </li>
-                        <li class="btn btn-lg btn-multi block round" onclick="console.log(selector(window));">
-                            <strong>Select window:</strong><br>
-                            <i>selector(window);</i>
-                        </li>
-                        <li class="btn btn-lg btn-multi block round" onclick="console.log(selector(this));">
-                            <strong>Select this element:</strong><br>
-                            <i>selector(this);</i>
-                        </li>
-                    </ul>
+                        <b class="margin-5-b block">Select element:</b>
+                        <pre class="round margin-5-b">selector('element');</pre>
 
-                    <ul class="list-unstyled list-spacer-5 align-l ease-1st-btn">
-                        <li class="btn btn-lg btn-multi block round" onclick="console.log(selector('i', this));">
-                            <strong>Find tagname in this element:</strong><br>
-                            <i>selector('i', this);</i>
-                        </li>
-                        <li class="btn btn-lg btn-multi block round" onclick="console.log(selector('.inner-classname', '.outer-classname'));" class="outer-classname">
-                            <strong>Find classname in selected classname:</strong><br>
-                            <i class="inner-classname">selector('.inner-classname', '.outer-classname');</i>
-                        </li>
-                        <li class="btn btn-lg btn-multi block round" onclick="console.log(selector('#inner-id', '.outer-classname2'));" class="outer-classname2">
-                            <strong>Find id in selected classname:</strong><br>
-                            <i id="inner-id">selector('#inner-id', '.outer-classname2');</i>
-                        </li>
-                    </ul>
+                        <span class="sp30"></span>
+
+                        <b class="margin-5-b block">Select multiple elements:</b>
+                        <pre class="round margin-5-b">selector('element, element');</pre>
+
+                        <span class="sp30"></span>
+
+                        <b class="margin-5-b block">Select first of elements:</b>
+                        <pre class="round margin-5-b">selector('element')[0];</pre>
+
+                        <span class="sp30"></span>
+
+                        <b class="margin-5-b block">Select CSS3 last-child of elements:</b>
+                        <pre class="round margin-5-b">selector(':last-child');</pre>
+
+                        <span class="sp30"></span>
+
+                        <b class="margin-5-b block">Select classname:</b>
+                        <pre class="round margin-5-b">selector('.class');</pre>
+
+                        <span class="sp30"></span>
+                        <b class="margin-5-b block">Select ID:</b>
+                        <pre class="round margin-5-b">selector('#id');</pre>
+
+                        <span class="sp30"></span>
+
+                        <b class="margin-5-b block">Select with attribute:</b>
+                        <pre class="round margin-5-b">selector('[attribute]');</pre>
+
+                        <span class="sp30"></span>
+
+                        <b class="margin-5-b block">Select document:</b>
+                        <pre class="round margin-5-b">selector(document);</pre>
+
+                        <span class="sp30"></span>
+
+                        <b class="margin-5-b block">Select window:</b>
+                        <pre class="round margin-5-b">selector(window);</pre>
+
+                        <span class="sp30"></span>
+
+                        <b class="margin-5-b block">Select this element:</b>
+                        <pre class="round margin-5-b">selector(this);</pre>
+
+                        <span class="sp30"></span>
+
+                        <b class="margin-5-b block">Find an element in this element:</b>
+                        <pre class="round margin-5-b">selector('element', this);</pre>
+
+                        <span class="sp30"></span>
+
+                        <b class="margin-5-b block">Find classname in parent classname:</b>
+                        <pre class="round margin-5-b">selector('.class', '.parentClass');</pre>
+
+                        <span class="sp30"></span>
+
+                        <b class="margin-5-b block">Find ID in selected classname::</b>
+                        <pre class="round margin-5-b">selector('#id', '.class');</pre>
+
+                    </div>
 
                 </div>
             </div>
