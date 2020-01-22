@@ -78,7 +78,7 @@ html:not(.mobile) .hover-shadow:hover { box-shadow: 0 5px 15px rgba(0,0,0,.2); }
 html:not(.mobile) .hover-up:hover { transform: translateY(-1%); }
 html:not(.mobile) .hover-down:hover { transform: translateY(1%); }
 
-html:not(.mobile) .hover-more-up:hover { transform: translateY(-5%); }
+html:not(.mobile) .hover-up-more:hover { transform: translateY(-5%); }
 html:not(.mobile) .hover-more-down:hover { transform: translateY(5%); }
 
 .inner-shadow-sm { box-shadow: inset 0 1px 3px rgba(0,0,0,.05); }
