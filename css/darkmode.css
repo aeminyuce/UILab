@@ -101,8 +101,8 @@
     .steps-bar li.active:before { box-shadow: 0 0 0 6px rgba(255,255,255,.065); }
     .steps-bar:not(.steps-icon) li.active:before { background-color: #15181d !important; }
     .portlet .steps-bar li.active:before { background-color: #2f343e !important; }
-    .steps-bar.steps-icon li:before { border-color: #15181d; }
-    .portlet .steps-bar.steps-icon li:before { border-color: #2f343e; }
+    .steps-bar.steps-icon li:before { background-color: #15181d; border-color: #15181d; }
+    .portlet .steps-bar.steps-icon li:before { background-color: #2f343e; border-color: #2f343e; }
     .steps-bar li.active ~ li { color: rgba(255,255,255,.32); }
     .steps-bar li.active ~ li:before { background-color: #15181d; border-color: rgba(255,255,255,.12) !important; }
     .portlet .steps-bar li.active ~ li:before { background-color: #2f343e; border-color: #2f343e; }
