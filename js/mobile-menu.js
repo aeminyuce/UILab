@@ -222,6 +222,5 @@ var mobileMenu = {
     // Loaders
     events.onload(mobileMenu.Start);
     events.on(window, 'resize', checkScreen);
-    events.on(window, 'scroll', checkScreen);
 
 }());

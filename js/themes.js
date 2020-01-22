@@ -22,13 +22,7 @@ var themes = {};
 
             function () {
 
-                var disabled, r, g, b, a, currentColor, hoverColor, getAlpha;
-
-                disabled = this.getAttribute('data-swatch');
-
-                if (disabled !== null) {
-                    if (disabled === 'false') { return; } // if data-swatch="false" stop running!
-                }
+                var r, g, b, a, currentColor, hoverColor, getAlpha;
 
                 currentColor = window.getComputedStyle(this);
                 currentColor = currentColor.getPropertyValue('background-color');
