@@ -384,3 +384,5 @@ button.icon { background-color: rgba(0,0,0,0); }
 .icon-images-add:before { content: "\e113"; }
 .icon-box:before { content: "\48"; }
 .icon-boxes:before { content: "\49"; }
+.icon-trophy:before { content: "\e114"; }
+.icon-trophy-star:before { content: "\e115"; }
