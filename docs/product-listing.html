@@ -83,6 +83,8 @@
         lineCharts.showBgGrid = false; // set showing bg grid
         lineCharts.showInfo = false; // set showing info
 
+        alerts.messageTheme = 'theme-default2 ui-dark';
+
         events.onload(function () {
             events.on('.load-more', 'click', function () {
 
@@ -91,7 +93,7 @@
                 that = this;
                 loadingButton.toggle(this);
 
-                scrollPos = that.getBoundingClientRect().top + window.pageYOffset - 15;                
+                scrollPos = that.getBoundingClientRect().top + window.pageYOffset - 15;
 
                 ajax({
                     url : 'php/ajax-products.php',
@@ -106,8 +108,7 @@
 
                                 alerts.message({
                                     msg: 'Products loaded!',
-                                    theme: 'success',
-                                    pos: 'tr'
+                                    theme: 'theme-default2 ui-dark'
                                 });
 
                                 loadingButton.toggle(that);
@@ -177,7 +178,7 @@
                             </ul>
                         </div>
 
-                        <div class="portlet round shadow-lg">
+                        <div class="portlet round shadow-lg theme-default2">
 
                             <div class="padding-15 md-align-c border-b">
                                 <h5 class="margin-10-b x-dark">COLORS</h5>
@@ -234,7 +235,7 @@
                                 <label class="custom block">
                                     <span class="switch-custom right round ease-form">
                                         <input type="checkbox" checked>
-                                        <i class="ease-form-custom"></i>
+                                        <i class="ui-dark ease-form-custom"></i>
                                     </span>
                                     <i class="icon margin-10-r icon-truck"></i>Fast Delivery
                                 </label>
@@ -242,7 +243,7 @@
                                 <label class="custom block">
                                     <span class="switch-custom right round ease-form">
                                         <input type="checkbox" checked>
-                                        <i class="ease-form-custom"></i>
+                                        <i class="ui-dark ease-form-custom"></i>
                                     </span>
                                     <i class="icon margin-10-r icon-badge-check"></i>Deals
                                 </label>
@@ -255,28 +256,28 @@
                                 <label class="custom block">
                                     <span class="check-custom round ease-form">
                                         <input type="checkbox" checked>
-                                        <i class="ease-form-custom"></i>
+                                        <i class="ui-dark ease-form-custom"></i>
                                     </span>
                                     Wireless <span class="dark">4</span>
                                 </label>
                                 <label class="custom block">
                                     <span class="check-custom round ease-form">
                                         <input type="checkbox" checked>
-                                        <i class="ease-form-custom"></i>
+                                        <i class="ui-dark ease-form-custom"></i>
                                     </span>
                                     Bluetooth <span class="dark">11</span>
                                 </label>
                                 <label class="custom block">
                                     <span class="check-custom round ease-form">
                                         <input type="checkbox" checked>
-                                        <i class="ease-form-custom"></i>
+                                        <i class="ui-dark ease-form-custom"></i>
                                     </span>
                                     Wired <span class="dark">9</span>
                                 </label>
                                 <label class="custom block">
                                     <span class="check-custom round ease-form">
                                         <input type="checkbox">
-                                        <i class="ease-form-custom"></i>
+                                        <i class="ui-dark ease-form-custom"></i>
                                     </span>
                                     Radio Channel <span class="dark">17</span>
                                 </label>
@@ -289,7 +290,7 @@
                             </div>
 
                             <div class="padding-15">
-                                <button type="submit" class="btn btn-lg block round theme-green ui-dark ease-btn"><b>SEARCH</b></button>
+                                <button type="submit" class="btn btn-lg block round ui-dark ease-btn"><b>SEARCH</b></button>
                             </div>
 
                         </div>
@@ -380,8 +381,8 @@
                                     </select>
                                 </div>
                                 <span class="sp10 visible-xs"></span>
-                                <span class="align-c ease-1st-btn">
-                                    <button class="btn btn-square round">
+                                <span class="align-c theme-default2 ease-1st-btn">
+                                    <button class="btn btn-square round ui-dark">
                                         <i class="icon icon-grid-column"></i>
                                     </button>
                                     <button class="btn btn-square round">

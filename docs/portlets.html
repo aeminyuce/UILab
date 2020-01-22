@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="../css/margins.css"/>
     <link rel="stylesheet" href="../css/paddings.css"/>
     <link rel="stylesheet" href="../css/scrollbar.css"/>
+    <link rel="stylesheet" href="../css/static-grid.css"/>
     <link rel="stylesheet" href="../css/sticky-header.css"/>
     <link rel="stylesheet" href="../css/typography.css"/>
     <link rel="stylesheet" href="../css/top-button.css"/>
@@ -41,6 +42,7 @@
     <script src="../js/user-agents.js"></script>
 
     <script src="../js/effects.js"></script>
+    <script src="../js/static-grid.js"></script>
     <script src="../js/sticky-header.js"></script>
     <script src="../js/themes.js"></script>
     <script src="../js/top-button.js"></script>
@@ -82,6 +84,7 @@
 
                     <h4>Portlets with Sides</h4>
                     <div class="padding-30-b">
+
                         <div class="portlet round shadow">
                             <div class="content-side padding-15 border-b">
                                 <h4><i class="icon icon-lg icon-user margin-15-r"></i>Portlet Title</h4>
@@ -96,7 +99,7 @@
                                 In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
                             </div>
                             <div class="content-side padding-15 border-b theme-gray ui-x-light">
-                                <h5 class="bold x-dark">Portlet Sub Title</h5>
+                                <h5>Title</h5>
                             </div>
                             <div class="content-side padding-15 border-b">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
@@ -123,55 +126,180 @@
                                 </form>
                             </div>
                         </div>
+
+                    </div>
+
+                    <h4>Portlet Alerts</h4>
+                    <div class="padding-30-b">
+
+                        <div class="portlet theme-default padding-15 round ui-dark">
+                            <button class="close-portlet icon icon-xs icon-remove ease-layout"></button>
+                            <div class="col-static sm-fluid">
+                                <div class="static-42 align-c">
+                                    <i class="icon icon-xl icon-alert-triangle margin-4-v"></i>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 sm-align-c large">
+                                        Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portlet theme-default2 padding-15 round ui-dark">
+                            <button class="close-portlet icon icon-xs icon-remove ease-layout"></button>
+                            <div class="col-static sm-fluid">
+                                <div class="static-42 align-c">
+                                    <i class="icon icon-xl icon-question-circle margin-4-v"></i>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 sm-align-c large">
+                                        Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portlet theme-green padding-15 round ui-dark">
+                            <button class="close-portlet icon icon-xs icon-remove ease-layout"></button>
+                            <div class="col-static sm-fluid">
+                                <div class="static-42 align-c">
+                                    <i class="icon icon-xl icon-alert-triangle margin-4-v"></i>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 sm-align-c large">
+                                        Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portlet theme-yellow padding-15 round ui-dark">
+                            <button class="close-portlet icon icon-xs icon-remove ease-layout"></button>
+                            <div class="col-static sm-fluid">
+                                <div class="static-42 align-c">
+                                    <i class="icon icon-xl icon-question-circle margin-4-v"></i>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 sm-align-c large">
+                                        Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portlet theme-orange padding-15 round ui-dark">
+                            <button class="close-portlet icon icon-xs icon-remove ease-layout"></button>
+                            <div class="col-static sm-fluid">
+                                <div class="static-42 align-c">
+                                    <i class="icon icon-xl icon-alert-triangle margin-4-v"></i>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 sm-align-c large">
+                                        Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portlet theme-red padding-15 round ui-dark">
+                            <button class="close-portlet icon icon-xs icon-remove ease-layout"></button>
+                            <div class="col-static sm-fluid">
+                                <div class="static-42 align-c">
+                                    <i class="icon icon-xl icon-question-circle margin-4-v"></i>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 sm-align-c large">
+                                        Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                     <h4>Portlet Messages</h4>
                     <div class="padding-30-b">
+
                         <div class="portlet-success padding-15 round shadow">
                             <button class="close-portlet icon icon-xs icon-remove ease-layout"></button>
-                            <h4>Message Title</h4>
-                            <p>Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
+                            <h4 class="margin-10-b">
+                                <i class="icon icon-comment margin-5-r"></i>
+                                Message Title
+                            </h4>
+                            <p class="large thin">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
                         </div>
+
                         <div class="portlet-danger padding-15 round shadow">
                             <button class="close-portlet icon icon-xs icon-remove ease-layout"></button>
-                            <h4>Message Title</h4>
-                            <p>Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
+                            <h4 class="margin-10-b">
+                                <i class="icon icon-comment margin-5-r"></i>
+                                Message Title
+                            </h4>
+                            <p class="large thin">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
                         </div>
+
                         <div class="portlet-warning padding-15 round">
                             <button class="close-portlet icon icon-xs icon-remove ease-layout"></button>
-                            <h4>Message Title</h4>
-                            <p>Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
+                            <h4 class="margin-10-b">
+                                <i class="icon icon-comment margin-5-r"></i>
+                                Message Title
+                            </h4>
+                            <p class="large thin">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
                         </div>
+
                         <div class="portlet-info padding-15 round shadow">
                             <button class="close-portlet icon icon-xs icon-remove ease-layout"></button>
-                            <h4>Message Title</h4>
-                            <p>Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
+                            <h4 class="margin-10-b">
+                                <i class="icon icon-comment margin-5-r"></i>
+                                Message Title
+                            </h4>
+                            <p class="large thin">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
                         </div>
+
                     </div>
 
                     <h4>Portlets with Themes</h4>
+
                     <div class="portlet round theme-default ui-x-light ui-border">
                         <div class="content-side padding-30">
-                            <h4>Portlet Title</h4>
+                            <h4 class="margin-10-b">
+                                <i class="icon icon-help margin-5-r"></i>
+                                Portlet Title
+                            </h4>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
                             <span class="sp15"></span>
-                            <a href="#" class="btn circle ui-dark ease-btn">Outgoing Link</a>
+                            <a href="#" class="btn btn-xs-fluid circle ui-dark ease-btn">
+                                Outgoing Link <i class="icon icon-xs icon-link margin-5-l"></i>
+                            </a>
                         </div>
-                        <div class="content-side padding-30-h padding-15-v round-b ui-light">
-                            Portlet Footer
+                        <div class="content-side padding-30-h padding-15-v round-b ui-light align-r xs-align-c">
+                            <a href="#" class="ui-text underline">Portlet Footer Link</a>
                         </div>
                     </div>
+
                     <div class="portlet-warning padding-30 round theme-default2 ui-x-light ui-border">
-                        <h4>Message Title</h4>
+                        <h4 class="margin-10-b">
+                            <i class="icon icon-help margin-5-r"></i>
+                            Message Title
+                        </h4>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
                         <span class="sp15"></span>
-                        <a href="#" class="btn circle ui-dark ease-btn">Outgoing Link</a>
+                        <a href="#" class="btn btn-xs-fluid circle ui-dark ease-btn">
+                            Outgoing Link <i class="icon icon-xs icon-link margin-5-l"></i>
+                        </a>
                     </div>
+
                     <div class="portlet-warning padding-30 round theme-green ui-x-light ui-border">
-                        <h4>Message Title</h4>
+                        <h4 class="margin-10-b">
+                            <i class="icon icon-help margin-5-r"></i>
+                            Message Title
+                        </h4>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
                         <span class="sp15"></span>
-                        <a href="#" class="btn circle ui-dark ease-btn">Outgoing Link</a>
+                        <a href="#" class="btn btn-xs-fluid circle ui-dark ease-btn">
+                            Outgoing Link <i class="icon icon-xs icon-link margin-5-l"></i>
+                        </a>
                     </div>
 
                 </div>
