@@ -9,7 +9,7 @@
 .full-width { width: 100% !important; }
 .full-height { height: 100% !important; }
 .no-user-select { -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
-.clear-button { color: inherit; text-align: inherit; background-color: rgba(0,0,0,0); border: 0; }
+.clear-btn { color: inherit; text-align: inherit; background-color: rgba(0,0,0,0); border: 0; }
 .img-fluid { width: 100% !important; height: auto !important; }
 
 .highlight { display: block; }
