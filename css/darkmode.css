@@ -70,7 +70,6 @@
     .dropdown ul.content.has-grid li.sep:nth-child(even) ~ li:not(.sep):nth-child(odd) { border-right-color: rgba(255,255,255,.065); }
 
     .card,[class*="card-"] { background-color: #2f343e; }
-    .card .card,.card [class*="card-"],[class*="card-"] .card,[class*="card-"] [class*="card-"] { background-color: #3e4552 !important; }
     .close-card { color: #fff; }
 
     .page-social > .btn { background: #292c35; }
