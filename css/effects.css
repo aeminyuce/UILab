@@ -22,7 +22,7 @@
 .ease-height,.ease-1st-height > *,.ease-2nd-height > * > * { transition-property: height; }
 .ease-bg,.ease-1st-bg > *,.ease-2nd-bg > * > * { transition-property: background-color; }
 .ease-margin,.ease-1st-margin > *,.ease-2nd-margin > * > * { transition-property: margin; }
-.ease-border,.ease-1st-border > *,.ease-border > * > * { transition-property: border; }
+.ease-border,.ease-1st-border > *,.ease-border > * > * { transition-property: border-color, border-width; }
 .ease-position,.ease-1st-position > *,.ease-2nd-position > * > * { transition-property: top, right, bottom, left; }
 .ease-layout,.ease-1st-layout > *,.ease-2nd-layout > * > * { transition-property: transform, opacity, box-shadow; }
 .ease-svg,.ease-1st-svg > *,.ease-2nd-svg > * > * { transition-property: fill, stroke; }

@@ -53,8 +53,8 @@
 
     .autocomplete ul { color: #fff; background-color: #41454d; }
 
-    html:not(.mobile) .btn:not([class*="ui-"]):not(.btn-passive):not(.swatch-active):hover { background-color: rgba(255,255,255,.15); }
-    html:not(.mobile) .btn.btn-ghost:not([class*="ui-"]):not(.btn-passive):not(.swatch-active):hover { background-color: rgba(255,255,255,.075); }
+    html:not(.mobile) .btn:not([class*="ui-x-light"]):not([class*="ui-light"]):not([class*="ui-dark"]):not([class*="ui-x-dark"]):not(.btn-passive):not(.swatch-active):hover { background-color: rgba(255,255,255,.15); }
+    html:not(.mobile) .btn.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-light"]):not([class*="ui-dark"]):not([class*="ui-x-dark"]):not(.btn-passive):not(.swatch-active):hover { background-color: rgba(255,255,255,.075); }
 
     .btn { color: #fff; background-color: rgba(255,255,255,.08); }
     .btn-ghost.ui-dark:not(.ui-text),.btn-ghost.ui-x-dark:not(.ui-text) { color: #fff; }

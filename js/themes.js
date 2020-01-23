@@ -22,7 +22,26 @@ var themes = {};
 
             function () {
 
-                var r, g, b, a, currentColor, hoverColor, getAlpha;
+                var i, r, g, b, a, classes, pass, currentColor, hoverColor, getAlpha;
+
+                pass = false;
+                if (events.hasClass(this, 'ui-text')) {
+
+                    classes = ['ui-x-light', 'ui-light', 'ui-x-dark', 'ui-dark'];
+                    for (i = 0; i < classes.length; i += 1) {
+
+                        if (events.hasClass(this, classes[i])) {
+
+                            pass = true;
+                            break;
+
+                        }
+
+                    }
+
+                } else { pass = true; }
+
+                if (!pass) { return; }
 
                 currentColor = window.getComputedStyle(this);
                 currentColor = currentColor.getPropertyValue('background-color');
