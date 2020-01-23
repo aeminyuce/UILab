@@ -1,6 +1,10 @@
 /* forms */
 .ease-form,.ease-1st-form > *,.ease-2nd-form > * > * { transition-property: color, background-color, border-color; }
-.ease-form-custom { transition-property: width, height, background-color, transform, opacity; }
+.ease-form .icon,.ease-1st-form > * .icon,.ease-2nd-form > * > * .icon { transition-property: color, transform, opacity; transition-duration: .15s; }
+.ease-form .state,.ease-1st-form > * .state,.ease-2nd-form > * > * .state { transition-property: width, height, background-color, transform, opacity; transition-duration: .15s; }
+
+.no-transitions-all .ease-form .icon,.no-transitions-all .ease-1st-form > * .icon,.no-transitions-all .ease-2nd-form > * > * .icon,
+.no-transitions-all .ease-form .state,.no-transitions-all .ease-1st-form > * .state,.no-transitions-all .ease-2nd-form > * > * .state { transition-property: none !important; }
 
 .text,.textarea,.select,.select-multi { border: solid 1px rgba(0,0,0,.15); overflow: hidden; display: block; position: relative; }
 .text,.select,.mobile .select-multi { line-height: normal; min-height: 32px; }
