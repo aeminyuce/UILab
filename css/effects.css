@@ -48,3 +48,12 @@
 
 @keyframes progress { from { background-position: 40px 0; } to { background-position: 0 0; } }
 .animate-progress { animation: progress 3s linear infinite; }
+
+@keyframes bounce-x { from { transform: translateX(0); } 50% { transform: translateX(-12%); } to { transform: translateX(0); } }
+.animate-bounce-x { animation: bounce-x 2.4s linear infinite; }
+
+@keyframes bounce-y { from { transform: translateY(0); } 50% { transform: translateY(-12%); } to { transform: translateY(0); } }
+.animate-bounce-y { animation: bounce-y 2.4s linear infinite; }
+
+@keyframes bounce-z { from { transform: scale(1); } 50% { transform: scale(1.1); } to { transform: scale(1); } }
+.animate-bounce-z { animation: bounce-z 2.4s linear infinite; }
