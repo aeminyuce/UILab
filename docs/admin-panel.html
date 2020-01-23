@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../css/alignments.css"/>
     <link rel="stylesheet" href="../css/buttons.css"/>
     <link rel="stylesheet" href="../css/calendar.css"/>
+    <link rel="stylesheet" href="../css/card.css"/>
     <link rel="stylesheet" href="../css/borders.css"/>
     <link rel="stylesheet" href="../css/data-list.css"/>
     <link rel="stylesheet" href="../css/dropdown.css"/>
@@ -35,7 +36,6 @@
     <link rel="stylesheet" href="../css/paddings.css"/>
     <link rel="stylesheet" href="../css/photo-images.css"/>
     <link rel="stylesheet" href="../css/pie-chart.css"/>
-    <link rel="stylesheet" href="../css/portlets.css"/>
     <link rel="stylesheet" href="../css/scrollbar.css"/>
     <link rel="stylesheet" href="../css/static-grid.css"/>
     <link rel="stylesheet" href="../css/tables.css"/>
@@ -54,6 +54,7 @@
 
     <script src="../js/ajax.js"></script>
     <script src="../js/calendar.js"></script>
+    <script src="../js/card.js"></script>
     <script src="../js/countdown.js"></script>
     <script src="../js/data-list.js"></script>
     <script src="../js/dropdown.js"></script>
@@ -63,7 +64,6 @@
     <script src="../js/line-charts.js"></script>
     <script src="../js/mobile-menu.js"></script>
     <script src="../js/pie-chart.js"></script>
-    <script src="../js/portlets.js"></script>
     <script src="../js/static-grid.js"></script>
     <script src="../js/themes.js"></script>
     <script src="../js/tooltip.js"></script>
@@ -97,7 +97,7 @@
                 <div class="padding-20 padding-10-r md-no-padding">
 
                     <!-- profile -->
-                    <div class="portlet padding-15-v md-no-padding-v md-no-margin round shadow-lg set-relative">
+                    <div class="card padding-15-v md-no-padding-v md-no-margin round shadow-lg set-relative">
                         <div class="align-c padding-10-v">
                             <div class="padding-10 set-absolute set-t set-l ease-1st-btn">
                                 <button class="btn btn-ghost btn-square round show-mobile-menu-l visible-md">
@@ -185,8 +185,8 @@
                     <span class="sp5 hidden-md"></span>
 
                     <!-- tips -->
-                    <div class="portlet padding-15 round shadow-lg hidden-md">
-                        <button class="close-portlet icon icon-xs icon-remove ease-layout"></button>
+                    <div class="card padding-15 round shadow-lg hidden-md">
+                        <button class="close-card icon icon-xs icon-remove ease-layout"></button>
                         <i class="icon icon-help margin-10-r"></i><b>System Tips</b>
                         <span class="sp5"></span>
                         <div class="x-dark large no-line-height">You can backup your stats weekly.</div>
@@ -204,7 +204,7 @@
 
                         <div class="col-6 lg-fluid">
 
-                            <div class="portlet full-height round shadow-lg">
+                            <div class="card full-height round shadow-lg">
                                 <div class="content-side padding-15 round-t border-b">
                                     <a href="#" class="btn right circle ease-btn hidden-xs">
                                         Details <i class="icon icon-xs icon-long-arrow-right margin-5-l"></i>
@@ -272,7 +272,7 @@
 
                         <div class="col-6 lg-fluid">
 
-                            <div class="portlet full-height round shadow-lg">
+                            <div class="card full-height round shadow-lg">
 
                                 <div class="content-side padding-15 round-t border-b">
                                     <h4 class="margin-5-b">Last Week Stats</h4>
@@ -314,7 +314,7 @@
                         <div class="col-6 lg-fluid">
 
                             <!-- employee list -->
-                            <div class="data-list data-striped data-hover portlet full-height round shadow-lg theme-gray ease-data-list">
+                            <div class="data-list data-striped data-hover card full-height round shadow-lg theme-gray ease-data-list">
 
                                 <div class="row">
                                     <div class="col-5 sm-fluid sm-no-padding-b">

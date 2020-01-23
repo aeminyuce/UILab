@@ -1,0 +1,23 @@
+/* cards */
+.card,[class*="card-"] { background-color: #fff; display: block; position: relative; }
+.card:not(:last-child),[class*="card-"]:not(:last-child) { margin-bottom: 20px; }
+
+[class*="card-"].round { border-top-left-radius: 0 !important; border-bottom-left-radius: 0 !important; }
+.card > .row,[class*="card-"] > .row,.content-side > .row { margin-left: inherit; margin-right: inherit; }
+
+.content-side:before { content: ""; display: table; }
+.content-side:after { clear: both; }
+.content-side h1,.content-side h2,.content-side h3,.content-side h4,.content-side h5,.content-side h6 { line-height: normal !important; }
+
+.card-info { border-left: solid 2px #ccc; }
+.card-success { border-left: solid 2px #2dbd3a; }
+.card-warning { border-left: solid 2px #ffa600; }
+.card-error,.card-danger { border-left: solid 2px #dc000f; }
+
+.close-card { border: 0; position: absolute; top: 10px; right: 10px; z-index: 1; opacity: .45; cursor: pointer; }
+html:not(.mobile) .close-card:hover { opacity: .75; }
+.closing-card { transform: scale(.94,.98); opacity: 0; }
+
+@media (max-width: 767px) {
+    [class*="card-"] > p { text-align: center; }
+}

@@ -1,22 +1,22 @@
 /*
- Portlets JS
- Portlets JS requires Selector Js, Events JS
+ Card JS
+ Card JS requires Selector Js, Events JS
 */
 
-var portlets = {};
+var card = {};
 
 (function () {
 
     'use strict';
     /*globals document, events, setTimeout */
 
-    portlets.Start = function () {
+    card.Start = function () {
 
         // Events
-        events.on(document, 'click', '.close-portlet', function () {
+        events.on(document, 'click', '.close-card', function () {
 
             var parentEl = this.parentElement;
-            events.addClass(parentEl, 'closing-portlet ease-portlet-close');
+            events.addClass(parentEl, 'closing-card ease-layout');
 
             setTimeout(function () {
                 parentEl.parentNode.removeChild(parentEl);
@@ -27,6 +27,6 @@ var portlets = {};
     };
 
     // Loaders
-    events.onload(portlets.Start);
+    events.onload(card.Start);
 
 }());

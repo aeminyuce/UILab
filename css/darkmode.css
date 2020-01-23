@@ -14,7 +14,7 @@
     .visible-light { display: none !important; }
 
     .bg-white:not([class*="ui-"]) { background-color: #0f1115 !important; }
-    .portlet .bg-white:not([class*="ui-"]) { background-color: #2f343e !important; }
+    .card .bg-white:not([class*="ui-"]) { background-color: #2f343e !important; }
 
     code { color: #fff; background-color: #c7254e; }
     pre,xmp { color: #fff; background-color: #2f343e; border-color: #41454d; }
@@ -69,9 +69,9 @@
     .dropdown ul.content.has-grid li.sep:nth-child(odd) ~ li:not(.sep):nth-child(even),
     .dropdown ul.content.has-grid li.sep:nth-child(even) ~ li:not(.sep):nth-child(odd) { border-right-color: rgba(255,255,255,.065); }
 
-    .portlet,[class*="portlet-"] { background-color: #2f343e; }
-    .portlet .portlet,.portlet [class*="portlet-"],[class*="portlet-"] .portlet,[class*="portlet-"] [class*="portlet-"] { background-color: #3e4552 !important; }
-    .close-portlet { color: #fff; }
+    .card,[class*="card-"] { background-color: #2f343e; }
+    .card .card,.card [class*="card-"],[class*="card-"] .card,[class*="card-"] [class*="card-"] { background-color: #3e4552 !important; }
+    .close-card { color: #fff; }
 
     .page-social > .btn { background: #292c35; }
     .theme-facebook.ui-dark .icon { color: #3b5998; }
@@ -83,7 +83,7 @@
     .theme-youtube.ui-dark .icon { color: #ff0000; }
 
     .photos-holder [class*="img-photo"] { border-color: #15181d; }
-    .portlet .photos-holder [class*="img-photo"] { border-color: #2f343e; }
+    .card .photos-holder [class*="img-photo"] { border-color: #2f343e; }
     [class*="img-photo"]:not(img) { background-color: rgba(255,255,255,.08); }
 
     .progress-bar { background-color: rgba(0,0,0,.25); }
@@ -92,21 +92,21 @@
     .timeline:not(.hide-lines):after { background-color: rgba(255,255,255,.12); }
     .timeline:not(.hide-lines) > li:before { background-color: rgba(255,255,255,.12); }
     .timeline > li:after { background-color: #15181d; border-color: rgba(255,255,255,.12); }
-    .portlet .timeline > li:after { background-color: #2f343e; }
+    .card .timeline > li:after { background-color: #2f343e; }
     .timeline > li > .card:not([class*="ui-"]),.timeline > li > .card a,.timeline > li > .card button { color: #fff !important; }
     .timeline > li > .card { background-color: #15181d; }
-    .portlet .timeline > li > .card { background-color: #2f343e; }
+    .card .timeline > li > .card { background-color: #2f343e; }
 
     .steps-bar li:before { background-color: #15181d; }
-    .portlet .steps-bar li:before { background-color: #2f343e; }
+    .card .steps-bar li:before { background-color: #2f343e; }
     .steps-bar li.active:before { box-shadow: 0 0 0 6px rgba(255,255,255,.065); }
     .steps-bar:not(.steps-icon) li.active:before { background-color: #15181d !important; }
-    .portlet .steps-bar li.active:before { background-color: #2f343e !important; }
+    .card .steps-bar li.active:before { background-color: #2f343e !important; }
     .steps-bar.steps-icon li:before { background-color: #15181d; border-color: #15181d; }
-    .portlet .steps-bar.steps-icon li:before { background-color: #2f343e; border-color: #2f343e; }
+    .card .steps-bar.steps-icon li:before { background-color: #2f343e; border-color: #2f343e; }
     .steps-bar li.active ~ li { color: rgba(255,255,255,.32); }
     .steps-bar li.active ~ li:before { background-color: #15181d; border-color: rgba(255,255,255,.12) !important; }
-    .portlet .steps-bar li.active ~ li:before { background-color: #2f343e; border-color: #2f343e; }
+    .card .steps-bar li.active ~ li:before { background-color: #2f343e; border-color: #2f343e; }
     .steps-bar li.active ~ li:after { background-color: rgba(255,255,255,.12); }
 
     .table { background-color: #2f343e; }
@@ -141,7 +141,7 @@
     .tooltip:not([class*="ui-"]) > span i { background: #41454d; }
 
     .photo-slider:not(.loader-pause) { background-color: #15181d; }
-    .portlet .photo-slider:not(.loader-pause) { background-color: #2f343e; }
+    .card .photo-slider:not(.loader-pause) { background-color: #2f343e; }
     .photo-slider button { color: #fff; }
     .photo-slider button:hover { background-color: rgba(255,255,255,.1); }
     .photo-slider .slider-nav i { background-color: rgba(255,255,255,.2); }
@@ -155,7 +155,7 @@
 
     .svg-map svg g path { fill: #222933; }
     .svg-map svg g path { stroke: #15181d; }
-    .portlet .svg-map svg g path { stroke: #2f343e; }
+    .card .svg-map svg g path { stroke: #2f343e; }
     .svg-map svg g path:hover { fill: #39485d; }
 
     .image-uploader { background-color: #2f343e; }
