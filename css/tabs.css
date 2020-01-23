@@ -3,7 +3,7 @@
 .ease-tabs .tab-content { transition-property: opacity; transition-duration: .6s; }
 .no-transitions-all .ease-tabs .icon-toggle,.no-transitions-all .ease-tabs .tab-content { transition-property: none !important; }
 
-.btn-tabs .active > .icon-toggle { transform: rotate(-180deg); opacity: 1; }
-.btn-tabs .tab-content { transform-origin: top center; }
-.btn-tabs .tab-content:not(.open) { display: none !important; }
-.btn-tabs .tab-content:not(.open-ease) { opacity: 0; }
+.tabs .active > .icon-toggle { transform: rotate(-180deg); opacity: 1; }
+.tabs .tab-content { transform-origin: top center; }
+.tabs .tab-content:not(.open) { display: none !important; }
+.tabs .tab-content:not(.open-ease) { opacity: 0; }

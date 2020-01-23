@@ -13,13 +13,13 @@ var tabs = {};
     tabs.Start = function () {
 
         // Events
-        events.on(document, 'click', '.btn-tabs .btn-tab', function (e) {
+        events.on(document, 'click', '.tabs .tab', function (e) {
 
             e.preventDefault();
             var parent, tabs, index, contents, classes, toggle, prevTab;
 
-            parent = events.closest(this, '.btn-tabs')[0];
-            tabs = selector('.btn-tab', parent);
+            parent = events.closest(this, '.tabs')[0];
+            tabs = selector('.tab', parent);
 
             index = Array.prototype.slice.call(tabs).indexOf(this);
             contents = selector('.tab-content', parent);
