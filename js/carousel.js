@@ -169,12 +169,13 @@ var carousel = {
         slider[0].style.width = size + 'px';
 
         if (contents.length / col === 1) { // check nav is active
-
             counts[i] = 0;
-            that.setAttribute('data-content', (counts[i] + 1));
 
+        } else if (counts[i] > col) { // check current count larger than current col size
+            counts[i] = col;
         }
 
+        that.setAttribute('data-content', (counts[i] + 1));
         slider[0].style.transform = 'translateX(-' + (counts[i] * contents[0].offsetWidth) + 'px)';
 
         navDots = selector('.carousel-nav .dots', that);
