@@ -8,7 +8,7 @@
 .dropdown.open { z-index: 19; }
 .dropdown > .btn { display: block; }
 .dropdown > .btn:not(.btn-square) { width: 100%; }
-.dropdown.open .btn-ghost { background-color: rgba(0,0,0,.075) !important; }
+.dropdown.open > .btn-ghost { background-color: rgba(0,0,0,.075) !important; }
 
 .dropdown.open-ease > .btn .icon-toggle { transform: rotate(-180deg); }
 .dropdown.open-ease > .btn .icon { opacity: 1; }

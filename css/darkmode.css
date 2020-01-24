@@ -59,7 +59,7 @@
     .btn { color: #fff; background-color: rgba(255,255,255,.08); }
     .btn-ghost.ui-dark:not(.ui-text),.btn-ghost.ui-x-dark:not(.ui-text) { color: #fff; }
 
-    .dropdown.open .btn-ghost { background-color: rgba(255,255,255,.075) !important; }
+    .dropdown.open > .btn-ghost { background-color: rgba(255,255,255,.075) !important; }
     .dropdown .content { background-color: #41454d; }
     html:not(.mobile) .dropdown ul.content > li:not(.sep):hover { background-color: rgba(255,255,255,.05); }
     .dropdown ul.content > li.sep { background-color: rgba(255,255,255,.065); }
