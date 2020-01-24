@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="../css/margins.css"/>
     <link rel="stylesheet" href="../css/paddings.css"/>
     <link rel="stylesheet" href="../css/scrollbar.css"/>
+    <link rel="stylesheet" href="../css/tabs.css"/>
     <link rel="stylesheet" href="../css/typography.css"/>
 
     <link rel="stylesheet" href="../css/themes.css"/>
@@ -41,6 +42,7 @@
     <script src="../js/effects.js"></script>
     <script src="../js/forms.js"></script>
     <script src="../js/required-forms.js"></script>
+    <script src="../js/tabs.js"></script>
     <script src="../js/toggle-password.js"></script>
 
     <!-- custom CSS -->
@@ -59,11 +61,11 @@
         .content-container > .icon { font-size: 160px; position: absolute; top: 14%; right: 34%; transform: rotate(-12deg); }
 
         .content-icons .icon { position: absolute; }
-        .content-icons .icon:nth-child(1) { font-size: 52px; width: 52px; height: 52px; bottom: 112px; left: 82px; opacity: .25; transform: rotate(12deg); }
-        .content-icons .icon:nth-child(2) { font-size: 28px; width: 28px; height: 28px; bottom: 32px; left: 24px; opacity: .075; transform: rotate(-12deg); }
-        .content-icons .icon:nth-child(3) { font-size: 64px; width: 64px; height: 64px; top: 22px; left: 22px; opacity: .15; transform: rotate(-12deg); }
-        .content-icons .icon:nth-child(4) { font-size: 64px; width: 64px; height: 64px; bottom: 42px; right: 92px; opacity: .3; transform: rotate(-12deg); }
-        .content-icons .icon:nth-child(5) { font-size: 38px; width: 38px; height: 38px; top: 72px; right: 20%; opacity: .3; transform: rotate(12deg); }
+        .content-icons .icon:nth-child(1) { font-size: 52px; width: 52px; height: 52px; bottom: 112px; left: 82px; opacity: .65; transform: rotate(12deg); }
+        .content-icons .icon:nth-child(2) { font-size: 28px; width: 28px; height: 28px; bottom: 32px; left: 24px; opacity: .15; transform: rotate(-12deg); }
+        .content-icons .icon:nth-child(3) { font-size: 84px; width: 84px; height: 84px; top: 20%; left: 10%; opacity: .15; transform: rotate(-12deg); }
+        .content-icons .icon:nth-child(4) { font-size: 106px; width: 106px; height: 106px; bottom: 18px; right: 92px; opacity: .3; transform: rotate(-12deg); }
+        .content-icons .icon:nth-child(5) { font-size: 38px; width: 38px; height: 38px; top: 72px; right: 20%; opacity: .15; transform: rotate(12deg); }
 
         @media (min-width: 1200px) {
             .form-container { padding: 8% 0 8% 14% !important; }
@@ -106,14 +108,15 @@
         <div class="row row-no-padding full-height">
             <div class="form-container col-lg-5 col-6 sm-fluid">
 
-                <div class="forms-holder card shadow-lg">
-                    <form action="#">
+                <div class="forms-holder card tabs shadow-lg ease-tabs">
+                    <form id="login" class="tab-content open open-ease" action="#">
 
                         <h3 class="margin-30-b">Login to continue</h3>
                         <p class="dark large">Sign in to create, discover and connect with the global community.</p>
 
                         <label class="form-label x-dark">User Name</label>
-                        <div class="text text-lg circle border-dual ease-form">
+                        <div class="text text-lg text-icon circle border-dual ease-form">
+                            <i class="icon icon-user"></i>
                             <input class="required" type="text" placeholder="Enter user name" minlength="3" autocomplete="username">
                         </div>
                         <p class="required-msg circle">Enter user name.</p>
@@ -143,7 +146,32 @@
                             <b>LOGIN</b>
                         </button>
                         <span class="sp15"></span>
-                        <a class="btn btn-lg btn-ghost x-dark circle block ease-btn" href="#">Forgot password?</a>
+                        <button class="tab btn btn-lg btn-ghost x-dark circle block ease-btn" data-content="lost-password">
+                            <i class="icon icon-sm icon-lock-open margin-3-r no-opacity"></i> Forgot password?
+                        </button>
+
+                    </form>
+                    <form id="lost-password" class="tab-content" action="#">
+
+                        <h3 class="margin-30-b">Forgot password?</h3>
+                        <p class="dark large">Please enter your email address. You will receive a link to create a new password via email.</p>
+
+                        <label class="form-label x-dark">Your email</label>
+                        <div class="text text-lg text-icon circle border-dual ease-form">
+                            <i class="icon icon-at"></i>
+                            <input class="required" type="email" placeholder="Enter email" minlength="3">
+                        </div>
+                        <p class="required-msg circle">Enter email.</p>
+
+                        <span class="sp30"></span>
+
+                        <button type="submit" class="form-btn btn btn-lg xx-light block circle scale hover-shadow ease-btn">
+                            <b>Reset Password</b>
+                        </button>
+                        <span class="sp15"></span>
+                        <button class="tab btn btn-lg btn-ghost x-dark circle block ease-btn" data-content="login">
+                            <i class="icon icon-sm icon-long-arrow-left margin-3-r no-opacity"></i> Back to login
+                        </button>
 
                     </form>
                 </div>
@@ -161,7 +189,7 @@
                     </div>
 
                     <div class="content-icons">
-                        <i class="icon icon-plus"></i>
+                        <i class="icon icon-plus hidden-sm"></i>
                         <i class="icon icon-plus"></i>
                         <i class="icon icon-plus"></i>
                         <i class="icon icon-plus"></i>
