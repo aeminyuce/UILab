@@ -1,7 +1,7 @@
 /* buttons */
 @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
-.ease-btn,.ease-1st-btn > *,.ease-2nd-btn > * > * { transition-property: color, background-color, border-width, border-color, opacity, transform; }
+.ease-btn,.ease-1st-btn > *,.ease-2nd-btn > * > * { transition-property: color, background-color, border-width, border-color, opacity, transform, box-shadow; }
 .ease-btn .icon,.ease-1st-btn > * .icon,.ease-2nd-btn > * > * .icon { transition-property: color, transform, opacity; transition-duration: .15s; }
 
 .no-transitions-all .ease-btn .icon,.no-transitions-all .ease-1st-btn > * .icon,.no-transitions-all .ease-2nd-btn > * > * .icon { transition-property: none !important; }
