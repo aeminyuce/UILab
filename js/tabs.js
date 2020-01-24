@@ -16,13 +16,20 @@ var tabs = {};
         events.on(document, 'click', '.tabs .tab', function (e) {
 
             e.preventDefault();
-            var parent, tabs, index, contents, classes, toggle, prevTab;
+            var parent, tabs, index, id, content, classes, toggle, prevTab;
 
             parent = events.closest(this, '.tabs')[0];
             tabs = selector('.tab', parent);
 
             index = Array.prototype.slice.call(tabs).indexOf(this);
-            contents = selector('.tab-content', parent);
+
+            id = this.getAttribute('data-content');
+            if (id !== null & id !== '') {
+                content = selector('#' + id, parent);
+
+            } else {
+                content = selector('.tab-content', parent)[index];
+            }
 
             toggle = false;
             classes = parent.getAttribute('data-classes');
@@ -38,10 +45,10 @@ var tabs = {};
                     }
 
                     events.removeClass(tabs[index], 'active');
-                    events.removeClass(contents[index], 'open-ease');
+                    events.removeClass(content, 'open-ease');
 
                     setTimeout(function () {
-                        events.removeClass(contents[index], 'open');
+                        events.removeClass(content, 'open');
                     }, 0);
 
                 }
@@ -71,10 +78,10 @@ var tabs = {};
 
                 setTimeout(function () {
 
-                    events.addClass(contents[index], 'open');
+                    events.addClass(content, 'open');
 
                     setTimeout(function () {
-                        events.addClass(contents[index], 'open-ease');
+                        events.addClass(content, 'open-ease');
                     }, 50);
 
                 }, 0);
