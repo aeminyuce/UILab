@@ -140,7 +140,7 @@ var carousel = {
 
     function carouselResizerFnc(i, that, type) {
 
-        var j, slider, contents, nav, col, halfSized, size;
+        var j, slider, contents, nav, col, halfSized, size, navDots, navDotsEl;
 
         contents = selector('.content', that);
         if (contents.length === 0) { return; }
@@ -168,7 +168,22 @@ var carousel = {
         size = size * contents.length;
         slider[0].style.width = size + 'px';
 
+        if (contents.length / col === 1) { // check nav is active
+
+            counts[i] = 0;
+            that.setAttribute('data-content', (counts[i] + 1));
+
+        }
+
         slider[0].style.transform = 'translateX(-' + (counts[i] * contents[0].offsetWidth) + 'px)';
+
+        navDots = selector('.carousel-nav .dots', that);
+        navDotsEl = selector('.carousel-nav .dots i', that);
+
+        events.removeClass(navDotsEl, 'selected');
+        events.addClass(navDotsEl[counts[i]], 'selected');
+
+        filterDots(navDots, navDotsEl, counts[i], i); // filter dots when dots number exceeds
 
         events.each(contents, function (l) { // detect carousel animates
 
