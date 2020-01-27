@@ -6,4 +6,4 @@ kbd { color: #fff; font-size: 90%; background-color: #333; padding: 2px 4px !imp
 
 pre:not(:last-child),xmp:not(:last-child) { margin-bottom: 20px; }
 pre,xmp { color: #333; white-space: pre-wrap; word-wrap: break-word; background-color: #f5f5f5; padding: 10px !important; display: block; border: 1px solid #ccc; }
-pre.v-scroll,xmp.v-scroll { max-height: 350px; }
+pre.scroll-v,xmp.scroll-v { max-height: 350px; }

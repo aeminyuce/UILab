@@ -490,7 +490,7 @@ var carousel = {
             });
 
             // prevent touch events when inline scrolling
-            events.on(document, 'scroll', '.carousel .scroll,.carousel .v-scroll,.carousel .h-scroll', function (e) {
+            events.on(document, 'scroll', '.carousel .scroll,.carousel .scroll-v,.carousel .scroll-h', function (e) {
 
                 e.preventDefault();
                 e.stopPropagation();

@@ -52,10 +52,10 @@ html:not(.portrait) .visible-portrait { display: none !important; }
 .bg-white:not([class*="ui-"]) { background-color: #fff !important; }
 .bg-black:not([class*="ui-"]) { background-color: #181818 !important; }
 
-.mobile .scroll,.mobile .v-scroll,.mobile .h-scroll { -webkit-overflow-scrolling: touch; }
+.mobile .scroll,.mobile .scroll-v,.mobile .scroll-h { -webkit-overflow-scrolling: touch; }
 .scroll { overflow: auto !important; }
-.v-scroll { overflow-x: hidden !important; overflow-y: auto !important; }
-.h-scroll { overflow-x: auto !important; overflow-y: hidden !important; }
+.scroll-v { overflow-x: hidden !important; overflow-y: auto !important; }
+.scroll-h { overflow-x: auto !important; overflow-y: hidden !important; }
 .no-scroll,.no-overflow { overflow: hidden !important; }
 
 .round { border-radius: 6px; }
