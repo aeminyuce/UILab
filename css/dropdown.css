@@ -5,6 +5,7 @@
 .no-transitions-all .ease-dropdown .icon-toggle,.no-transitions-all .ease-dropdown li,.no-transitions-all .ease-dropdown .content { transition-property: none !important; }
 
 .dropdown { vertical-align: middle; display: inline-block; position: relative; }
+.mobile-menu .dropdown { display: block; }
 .dropdown.open { z-index: 19; }
 .dropdown > .btn { display: block; }
 .dropdown > .btn:not(.btn-square) { width: 100%; }
@@ -69,5 +70,5 @@ html:not(.mobile) .dropdown ul.content > li:not(.sep):hover { background-color: 
     .dropdown .content { min-width: 260px; }
 }
 @media (max-width: 480px) {
-    .dropdown:not(.menu-l):not(.menu-c) .content { left: 0; }
+    .dropdown .content { transform-origin: top center !important; }
 }

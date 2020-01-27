@@ -74,30 +74,43 @@ var dropdown = {};
                 offset = parent.getBoundingClientRect();
                 list = selector('.content', parent)[0];
 
-                if (screen.width < 481 && !events.hasClass(list, 'has-grid')) {
-                    list.style.minWidth = parent.offsetWidth + 'px';
-                }
+                if (events.closest(t, '.mobile-menu')[0] === undefined) { // diable all positionings on mobile menus
 
-                listStyles = list.style.length;
-                listWidth = list.offsetWidth;
-
-                if (events.hasClass(parent, 'menu-l') || (offset.left + listWidth + 15) > window.innerWidth) { // 15px: scrollbar size
-
-                    if (screen.width < 768 || (screen.width > 767 && (offset.left - (listWidth - parent.offsetWidth)) >= 0)) { // works only sm and larger screen sizes
-
-                        list.style.right = 0;
-                        list.style.left = 'inherit';
-
-                        list.style.transformOrigin = 'top right';
-
+                    if (screen.width < 481 && !events.hasClass(list, 'has-grid')) {
+                        list.style.minWidth = parent.offsetWidth + 'px';
                     }
 
-                } else if (events.hasClass(parent, 'menu-c')) {
+                    listStyles = list.style.length;
+                    listWidth = list.offsetWidth;
 
-                    alignSize = Math.abs(listWidth - parent.offsetWidth) / 2;
+                    if (screen.width > 480) { // menu positioning: active
 
-                    if ((offset.left - alignSize > 0) && (alignSize > 0)) {
-                        list.style.marginLeft = -alignSize + 'px';
+                        if (events.hasClass(parent, 'menu-l') || (offset.left + listWidth + 15) > window.innerWidth) { // 15px: scrollbar size
+
+                            if (screen.width < 768 || (screen.width > 767 && (offset.left - (listWidth - parent.offsetWidth)) >= 0)) { // works only sm and larger screen sizes
+
+                                list.style.right = 0;
+                                list.style.left = 'inherit';
+
+                                list.style.transformOrigin = 'top right';
+
+                            }
+
+                        } else if (events.hasClass(parent, 'menu-c')) {
+
+                            alignSize = Math.abs(listWidth - parent.offsetWidth) / 2;
+
+                            if ((offset.left - alignSize > 0) && (alignSize > 0)) {
+                                list.style.marginLeft = -alignSize + 'px';
+                            }
+
+                        }
+
+                    } else { // menu positioning: passive
+
+                        list.style.marginLeft = -(offset.left - 10) + 'px';
+                        list.style.width = (screen.width - 20) + 'px';
+
                     }
 
                 }
@@ -179,9 +192,9 @@ var dropdown = {};
 
             var p, icon, target;
 
-            p = events.closest(this, '.dropdown');
+            p = events.closest(this, '.dropdown')[0];
 
-            target = selector('.btn > .value-toggle', p);
+            target = selector('.btn > .value-toggle', p)[0];
             target.innerHTML = '';
 
             icon = selector('.icon', this)[0];
