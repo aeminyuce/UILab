@@ -133,8 +133,8 @@
 
     .modal-content,.mobile-menu { background-color: #15181d; }
 
-    .tooltip:not([class*="ui-"]) { background-color: #41454d; }
-    .tooltip:not([class*="ui-"]) > span i { background: #41454d; }
+    .tooltip:not([class*="ui-"]) { background-color: #000; }
+    .tooltip:not([class*="ui-"]) > span i { background: #000; }
 
     .photo-slider:not(.loader-pause) { background-color: #15181d; }
     .card .photo-slider:not(.loader-pause) { background-color: #2f343e; }
