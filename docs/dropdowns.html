@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UI Lab, Dropdowns</title>
+    <meta name="keywords" content="uilab, responsive, design system, css, javascript, dropdowns">
+    <meta name="description" content="CSS & JavaScript powered responsive design system." />
+    <meta name="author" content="A. Emin Yuce"/>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <!--[if lt IE 10]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
+
+    <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/reset.css"/>
+
+    <link rel="stylesheet" href="../css/alignments.css"/>
+    <link rel="stylesheet" href="../css/borders.css"/>
+    <link rel="stylesheet" href="../css/buttons.css"/>
+    <link rel="stylesheet" href="../css/code.css"/>
+    <link rel="stylesheet" href="../css/effects.css"/>
+    <link rel="stylesheet" href="../css/grid.css"/>
+    <link rel="stylesheet" href="../css/helpers.css"/>
+    <link rel="stylesheet" href="../css/icons.css"/>
+    <link rel="stylesheet" href="../css/listings.css"/>
+    <link rel="stylesheet" href="../css/margins.css"/>
+    <link rel="stylesheet" href="../css/paddings.css"/>
+    <link rel="stylesheet" href="../css/scrollbar.css"/>
+    <link rel="stylesheet" href="../css/sticky-header.css"/>
+    <link rel="stylesheet" href="../css/typography.css"/>
+
+    <link rel="stylesheet" href="../css/dropdown.css"/>
+
+    <link rel="stylesheet" href="../css/themes.css"/>
+    <link rel="stylesheet" href="../css/darkmode.css"/>
+
+    <!-- Javascript Tools -->
+    <script src="../js/selector.js"></script>
+    <script src="../js/events.js"></script>
+    <script src="../js/user-agents.js"></script>
+
+    <script src="../js/loading-button.js"></script>
+    <script src="../js/sticky-header.js"></script>
+    <script src="../js/themes.js"></script>
+
+    <script src="../js/dropdown.js"></script>
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="container theme-default ui-dark">
+        <div class="row theme-default2 ui-border border-t border-dual">
+            <div class="col-12">
+                <a href="index.html" class="btn btn-lg btn-square circle ease-btn margin-10-r"><i class="icon no-opacity icon-long-arrow-left"></i></a>
+                <h1 class="x-large inline-block">UI Lab, Dropdowns</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- documentation examples -->
+    <main class="container no-gutter">
+        <div class="fixed">
+            <div class="row">
+                <div class="col-12 padding-30">
+
+                    <h4>Dropdown Buttons</h4>
+                    <div class="row padding-30-b theme-default">
+                        <div class="col-3 col-sm-6 xs-fluid">
+                            <div class="dropdown block ease-dropdown">
+                                <button class="btn btn-lg circle ui-dark ease-btn">
+                                    Dropdown Button
+                                    <i class="toggle-icon icon margin-5-l icon-sm icon-angle-down"></i>
+                                </button>
+                                <ul class="content round shadow-lg scroll-v">
+                                    <li><a href="#">Dropdown Link</a></li>
+                                    <li><a href="#">Dropdown Link</a></li>
+                                    <li><a href="#">Dropdown Link</a></li>
+                                    <li><a href="#">Dropdown Link</a></li>
+                                    <li><a href="#">Dropdown Link</a></li>
+                                    <li><a href="#">Dropdown Link</a></li>
+                                    <li><a href="#">Dropdown Link</a></li>
+                                    <li><a href="#">Dropdown Link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-sm-6 xs-fluid">
+                            <div class="dropdown block open-hover ease-dropdown">
+                                <button class="btn btn-lg circle ui-dark ease-btn">
+                                    Hover Dropdown
+                                    <i class="toggle-icon icon margin-5-l icon-sm icon-angle-down"></i>
+                                </button>
+                                <ul class="content round shadow-lg">
+                                    <li><a href="#">Dropdown Link</a></li>
+                                    <li><a href="#">Dropdown Link</a></li>
+                                    <li><a href="#">Dropdown Link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-sm-6 xs-fluid">
+                            <div class="dropdown block menu-c ease-dropdown">
+                                <button class="btn btn-lg circle ui-dark ease-btn">
+                                    Center Menu
+                                    <i class="toggle-icon icon margin-5-l icon-sm icon-angle-down"></i>
+                                </button>
+                                <ul class="content round shadow-lg">
+                                    <li><a href="#">Dropdown with menu-c align center your drop down list.</a></li>
+                                    <li><a href="#">Dropdown with menu-c align center your drop down list.</a></li>
+                                    <li><a href="#">Dropdown with menu-c align center your drop down list.</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-sm-6 xs-fluid">
+                            <div class="dropdown block menu-l ease-dropdown">
+                                <button class="btn btn-lg circle ui-dark ease-btn">
+                                    Left Menu
+                                    <i class="toggle-icon icon margin-5-l icon-sm icon-angle-down"></i>
+                                </button>
+                                <ul class="content round shadow-lg">
+                                    <li><a href="#">Dropdown with menu-l align left your drop down list.</a></li>
+                                    <li><a href="#">Dropdown with menu-l align left your drop down list.</a></li>
+                                    <li><a href="#">Dropdown with menu-l align left your drop down list.</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Dropdown Buttons like Navigation</h4>
+                    <div class="row padding-30-b theme-default">
+                        <div class="col-12">
+
+                            <div class="dropdown nav open-hover btn-xs-fluid ease-dropdown">
+                                <button class="btn btn-lg circle ui-dark ease-btn">
+                                    Nav Dropdown
+                                    <i class="toggle-icon icon margin-5-l icon-xs icon-angle-down"></i>
+                                </button>
+                                <div class="content padding-15 round shadow-lg">
+                                    <ul class="list-unstyled list-spacer-5 list-column-3" style="min-width: 500px;">
+                                        <li><a href="#">Dropdown Link</a></li>
+                                        <li><a href="#">Dropdown Link</a></li>
+                                        <li><a href="#">Dropdown Link</a></li>
+                                        <li><a href="#">Dropdown Link</a></li>
+                                        <li><a href="#">Dropdown Link</a></li>
+                                        <li><a href="#">Dropdown Link</a></li>
+                                        <li><a href="#">Dropdown Link</a></li>
+                                        <li><a href="#">Dropdown Link</a></li>
+                                        <li><a href="#">Dropdown Link</a></li>
+                                        <li><a href="#">Dropdown Link</a></li>
+                                        <li><a href="#">Dropdown Link</a></li>
+                                        <li><a href="#">Dropdown Link</a></li>
+                                        <li><a href="#">Dropdown Link</a></li>
+                                        <li><a href="#">Dropdown Link</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dropdown nav open-hover btn-xs-fluid ease-dropdown">
+                                <button class="btn btn-lg circle ui-dark ease-btn">
+                                    Nav Dropdown
+                                    <i class="toggle-icon icon margin-5-l icon-xs icon-angle-down"></i>
+                                </button>
+                                <div class="content padding-15 round shadow-lg">
+                                    <ul class="list-unstyled list-spacer-5 list-column-3" style="min-width: 500px;">
+                                        <li><a href="#">Dropdown Link</a></li>
+                                        <li><a href="#">Dropdown Link</a></li>
+                                        <li><a href="#">Dropdown Link</a></li>
+                                        <li><a href="#">Dropdown Link</a></li>
+                                        <li><a href="#">Dropdown Link</a></li>
+                                        <li><a href="#">Dropdown Link</a></li>
+                                        <li><a href="#">Dropdown Link</a></li>
+                                        <li><a href="#">Dropdown Link</a></li>
+                                        <li><a href="#">Dropdown Link</a></li>
+                                        <li><a href="#">Dropdown Link</a></li>
+                                        <li><a href="#">Dropdown Link</a></li>
+                                        <li><a href="#">Dropdown Link</a></li>
+                                        <li><a href="#">Dropdown Link</a></li>
+                                        <li><a href="#">Dropdown Link</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <h4>Dropdown Button with Value Toggle</h4>
+                    <div class="row padding-30-b">
+                        <div class="col-12 sm-align-c">
+                            <div class="dropdown btn-xs-fluid ease-dropdown">
+                                <button class="btn btn-lg padding-30-h circle ease-btn theme-default2 ui-dark">
+                                    <span class="value-toggle">Select Value</span>
+                                    <i class="toggle-icon icon margin-5-l icon-sm icon-angle-down"></i>
+                                </button>
+                                <ul class="content scroll-v round shadow-lg">
+                                    <li><label class="radio"><input type="radio" name="s" value="value01">Value 01</label></li>
+                                    <li><label class="radio"><input type="radio" name="s" value="value02">Value 02</label></li>
+                                    <li><label class="radio"><input type="radio" name="s" value="value03">Value 03</label></li>
+                                    <li><label class="radio"><input type="radio" name="s" value="value04">Value 04</label></li>
+                                    <li><label class="radio"><input type="radio" name="s" value="value05">Value 05</label></li>
+                                    <li><label class="radio"><input type="radio" name="s" value="value06">Value 06</label></li>
+                                    <li><label class="radio"><input type="radio" name="s" value="value07">Value 07</label></li>
+                                    <li><label class="radio"><input type="radio" name="s" value="value08">Value 08</label></li>
+                                </ul>
+                            </div>
+
+                            <span class="sp15 visible-sm"></span>
+
+                            <div class="dropdown btn-xs-fluid ease-dropdown">
+                                <button class="btn btn-lg padding-30-h circle ease-btn theme-default2 ui-dark">
+                                    <span class="value-toggle">Select Values with Icons</span>
+                                    <i class="toggle-icon icon margin-5-l icon-sm icon-angle-down"></i>
+                                </button>
+                                <ul class="content scroll-v round shadow-lg">
+                                    <li>
+                                        <label class="radio">
+                                            <i class="icon icon-sm icon-check-circle margin-3-r"></i>
+                                            <input type="radio" name="s" value="value01">
+                                            <span class="inline-block">Value 01</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="radio">
+                                            <i class="icon icon-sm icon-check-circle margin-3-r"></i>
+                                            <input type="radio" name="s" value="value02">
+                                            <span class="inline-block">Value 02</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="radio">
+                                            <i class="icon icon-sm icon-check-circle margin-3-r"></i>
+                                            <input type="radio" name="s" value="value03">
+                                            <span class="inline-block">Value 03</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="radio">
+                                            <i class="icon icon-sm icon-check-circle margin-3-r"></i>
+                                            <input type="radio" name="s" value="value04">
+                                            <span class="inline-block">Value 04</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="radio">
+                                            <i class="icon icon-sm icon-check-circle margin-3-r"></i>
+                                            <input type="radio" name="s" value="value05">
+                                            <span class="inline-block">Value 05</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="radio">
+                                            <i class="icon icon-sm icon-check-circle margin-3-r"></i>
+                                            <input type="radio" name="s" value="value06">
+                                            <span class="inline-block">Value 06</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <span class="sp15 visible-sm"></span>
+
+                            <div class="dropdown btn-xs-fluid ease-dropdown">
+                                <button class="btn btn-lg padding-30-h circle ease-btn theme-default2 ui-dark">
+                                    <span class="value-toggle">Select Value</span>
+                                    <i class="toggle-icon icon margin-5-l icon-sm icon-angle-down"></i>
+                                </button>
+                                <ul class="content scroll-v round shadow-lg">
+                                    <li>
+                                        <label>
+                                            <i class="icon icon-sm icon-check-circle margin-3-r"></i>
+                                            Value 01
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <i class="icon icon-sm icon-check-circle margin-3-r"></i>
+                                            Value 02
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <i class="icon icon-sm icon-check-circle margin-3-r"></i>
+                                            Value 03
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <i class="icon icon-sm icon-check-circle margin-3-r"></i>
+                                            Value 04
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <i class="icon icon-sm icon-check-circle margin-3-r"></i>
+                                            Value 05
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <i class="icon icon-sm icon-check-circle margin-3-r"></i>
+                                            Value 06
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <i class="icon icon-sm icon-check-circle margin-3-r"></i>
+                                            Value 07
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <i class="icon icon-sm icon-check-circle margin-3-r"></i>
+                                            Value 08
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <h4>Dropdown Button with List Icons</h4>
+                    <div class="row padding-30-b">
+                        <div class="col-3 col-sm-6 xs-fluid">
+                            <div class="dropdown block ease-dropdown">
+                                <button class="btn btn-lg circle ease-btn">
+                                    Dropdown Button
+                                    <i class="toggle-icon icon margin-5-l icon-sm icon-angle-down"></i>
+                                </button>
+                                <ul class="content has-icon round shadow-lg scroll-v">
+                                    <li><a href="#"><i class="list-icon icon icon-sm icon-user"></i>Profile</a></li>
+                                    <li><a href="#"><i class="list-icon icon icon-sm icon-key"></i>Change Password</a></li>
+                                    <li class="sep"></li>
+                                    <li><a href="#"><i class="list-icon icon icon-sm icon-sign-out"></i>Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-sm-6 xs-fluid">
+                            <div class="dropdown block ease-dropdown">
+                                <button class="btn btn-lg circle ease-btn">
+                                    Dropdown Button
+                                    <i class="toggle-icon icon margin-5-l icon-sm icon-angle-down"></i>
+                                </button>
+                                <ul class="content has-icon round shadow-lg scroll-v">
+                                    <li><i class="list-icon icon icon-sm icon-user"></i>Profile</li>
+                                    <li><i class="list-icon icon icon-sm icon-key"></i>Change Password</li>
+                                    <li class="sep"></li>
+                                    <li><i class="list-icon icon icon-sm icon-sign-out"></i>Logout</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Dropdown Button with Grid List</h4>
+                    <div class="row padding-30-b">
+                        <div class="col-3 col-sm-6 xs-fluid">
+                            <div class="dropdown block ease-dropdown">
+                                <button class="btn btn-lg circle ease-btn">
+                                    Dropdown Button
+                                    <i class="toggle-icon icon margin-5-l icon-sm icon-angle-down"></i>
+                                </button>
+                                <ul class="content has-grid round shadow-lg">
+                                    <li><a href="#"><i class="icon icon-lg icon-home"></i>Home</a></li>
+                                    <li><a href="#"><i class="icon icon-lg icon-user"></i>Profile</a></li>
+                                    <li><a href="#"><i class="icon icon-lg icon-bell"></i>Notifications</a></li>
+                                    <li><a href="#"><i class="icon icon-lg icon-calendar"></i>Calendar</a></li>
+                                    <li class="sep"></li>
+                                    <li><a href="#"><i class="icon icon-lg icon-setting"></i>Settings</a></li>
+                                    <li><a href="#"><i class="icon icon-lg icon-sign-out"></i>Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-sm-6 xs-fluid">
+                            <div class="dropdown block ease-dropdown">
+                                <button class="btn btn-lg circle ease-btn">
+                                    Dropdown Button
+                                    <i class="toggle-icon icon margin-5-l icon-sm icon-angle-down"></i>
+                                </button>
+                                <ul class="content has-grid round shadow-lg">
+                                    <li><i class="icon icon-lg icon-home"></i>Home</li>
+                                    <li><i class="icon icon-lg icon-user"></i>Profile</li>
+                                    <li><i class="icon icon-lg icon-bell"></i>Notifications</li>
+                                    <li><i class="icon icon-lg icon-calendar"></i>Calendar</li>
+                                    <li><i class="icon icon-lg icon-setting"></i>Settings</li>
+                                    <li><i class="icon icon-lg icon-sign-out"></i>Logout</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-sm-6 xs-fluid">
+                            <div class="dropdown block ease-dropdown">
+                                <button class="btn btn-lg circle ease-btn">
+                                    Dropdown Button
+                                    <i class="toggle-icon icon margin-5-l icon-sm icon-angle-down"></i>
+                                </button>
+                                <ul class="content has-grid round shadow-lg">
+                                    <li>Home</li>
+                                    <li>Profile</li>
+                                    <li>Notifications</li>
+                                    <li>Calendar</li>
+                                    <li>Settings</li>
+                                    <li>Logout</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
