@@ -23,8 +23,7 @@
 
 .timeline.side-l:after { left: 6px; }
 
-.timeline:not(.hide-lines):not(.hide-h-lines).side-l > li { padding-left: 30px; }
-.timeline.hide-lines.side-l > li,.timeline.hide-h-lines.side-l > li { padding-left: 15px; }
+.timeline.side-l > li { padding-left: 30px; }
 .timeline.side-l > li:before,.timeline.side-l > li:after { left: 0; }
 
 @media (min-width: 768px) {

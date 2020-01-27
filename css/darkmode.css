@@ -82,6 +82,7 @@
     .theme-youtube.ui-dark .icon { color: #ff0000; }
 
     .photos-holder [class*="img-photo"] { border-color: #15181d; }
+    .dropdown .photos-holder [class*="img-photo"] { border-color: #41454d; }
     .card .photos-holder [class*="img-photo"] { border-color: #2f343e; }
     [class*="img-photo"]:not(img) { background-color: rgba(255,255,255,.08); }
 
@@ -91,7 +92,8 @@
     .timeline:not(.hide-lines):after { background-color: rgba(255,255,255,.12); }
     .timeline:not(.hide-lines) > li:before { background-color: rgba(255,255,255,.12); }
     .timeline > li:after { background-color: #15181d; border-color: rgba(255,255,255,.12); }
-    .card .timeline > li:after { background-color: #2f343e; }
+    .dropdown .timeline > li:after { background-color: #41454d; }
+    .card .timeline > li:after { background-color: #2f343e; } /* card must be latest */
     .timeline > li > .card:not([class*="ui-"]),.timeline > li > .card a,.timeline > li > .card button { color: #fff !important; }
     .timeline > li > .card { background-color: #15181d; }
     .card .timeline > li > .card { background-color: #2f343e; }
