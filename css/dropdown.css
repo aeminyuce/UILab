@@ -1,8 +1,7 @@
 /* dropdown */
-.ease-dropdown .icon-toggle { transition-property: opacity, transform; transition-duration: .3s; }
 .ease-dropdown li { transition-property: background-color; transition-duration: .15s; }
 .ease-dropdown .content { transition-property: opacity, transform; transition-duration: .15s; transition-timing-function: ease-in-out; }
-.no-transitions-all .ease-dropdown .icon-toggle,.no-transitions-all .ease-dropdown li,.no-transitions-all .ease-dropdown .content { transition-property: none !important; }
+.no-transitions-all .ease-dropdown li,.no-transitions-all .ease-dropdown .content { transition-property: none !important; }
 
 .dropdown { vertical-align: middle; display: inline-block; position: relative; }
 .mobile-menu .dropdown { display: block; }
