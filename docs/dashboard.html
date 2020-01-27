@@ -320,22 +320,22 @@
             <div class="row padding-10 md-no-padding">
 
                 <!-- header: start -->
-                <header class="col-12 sticky-md dark align-r padding-10-v ease-layout" data-classes="shadow-lg">
+                <header class="col-12 sticky-md align-r padding-10-v ease-layout" data-classes="shadow-lg">
 
                     <div class="align-c left">
-                        <button class="btn btn-lg btn-ghost padding-10 circle ease-btn show-mobile-menu-l visible-md">
+                        <button class="btn dark btn-lg btn-ghost padding-10 circle ease-btn show-mobile-menu-l visible-md">
                             <i class="icon icon-bars-left no-opacity"></i>
                         </button>
-                        <button class="btn btn-lg btn-ghost padding-10 circle ease-btn" onclick="modal.open({source: '.search', size: 'fullscreen', bg: 'false'});" data-tooltip data-only="desktop" title="Search">
+                        <button class="btn dark btn-lg btn-ghost padding-10 circle ease-btn" onclick="modal.open({source: '.search', size: 'fullscreen', bg: 'false'});" data-tooltip data-only="desktop" title="Search">
                             <i class="icon icon-search no-opacity"></i>
                         </button>
                         <div class="dropdown ease-dropdown">
-                            <button class="btn btn-lg btn-ghost padding-10 circle ease-btn hidden-sm">
+                            <button class="btn dark btn-lg btn-ghost padding-10 circle ease-btn hidden-sm">
                                 My Reports
                                 <i class="icon-toggle icon margin-5-l icon-xs icon-angle-down no-opacity"></i>
                             </button>
-                            <button class="btn btn-lg btn-ghost padding-10 circle ease-btn visible-sm">
-                                <i class="icon icon-clipboard-check no-opacity"></i>
+                            <button class="btn dark btn-lg btn-ghost padding-10 circle ease-btn visible-sm">
+                                <i class="icon icon-user-circle no-opacity"></i>
                             </button>
                             <ul class="content has-icon round shadow-lg v-scroll">
                                 <li><a href="#"><b class="list-icon no-opacity">23</b> Waiting</a></li>
@@ -345,12 +345,12 @@
                             </ul>
                         </div>
                         <div class="dropdown ease-dropdown">
-                            <button class="btn btn-lg btn-ghost padding-10 circle ease-btn hidden-sm">
+                            <button class="btn dark btn-lg btn-ghost padding-10 circle ease-btn hidden-sm">
                                 My Jobs
                                 <i class="icon-toggle icon margin-5-l icon-xs icon-angle-down no-opacity"></i>
                             </button>
-                            <button class="btn btn-lg btn-ghost padding-10 circle ease-btn visible-sm">
-                                <i class="icon icon-clipboard-list no-opacity"></i>
+                            <button class="btn dark btn-lg btn-ghost padding-10 circle ease-btn visible-sm">
+                                <i class="icon icon-user-search no-opacity"></i>
                             </button>
                             <ul class="content has-icon round shadow-lg v-scroll">
                                 <li><a href="#"><b class="list-icon no-opacity">23</b> Waiting</a></li>
@@ -362,144 +362,213 @@
                     </div>
 
                     <div class="inline">
-                        <button class="btn btn-lg btn-square btn-ghost align-c circle ease-btn" data-tooltip data-only="desktop" title="Chat">
-                            <i class="icon icon-comment no-opacity"></i>
-                        </button>
                         <div class="dropdown menu-l ease-dropdown">
-                            <button class="btn btn-lg btn-square btn-ghost align-c circle ease-btn" data-tooltip="r" data-only="desktop" title="Notification Center">
-                                <i class="icon icon-bell-on notifier no-opacity"></i>
+                            <button class="btn dark btn-lg btn-square btn-ghost align-c circle ease-btn" data-tooltip="l" data-only="desktop" title="Personal Logs">
+                                <i class="icon icon-grid-column notifier no-opacity"></i>
                             </button>
                             <div class="content round shadow-lg">
-                                <div class="card round">
-                                    <div class="tabs static-300 theme-panel2 ease-tabs" data-classes="ui-border">
-                                        <div class="row row-no-padding x-dark align-c ease-2nd-btn">
-                                            <div class="col-6 no-fluid">
-                                                <button class="tab btn btn-lg btn-ghost border-b border-dual block round-tl ui-border active">News</button>
-                                            </div>
-                                            <div class="col-6 no-fluid">
-                                                <button class="tab btn btn-lg btn-ghost border-b border-dual block round-tr">Announcements</button>
-                                            </div>
+                                <div class="tabs static-300 xs-full-width theme-panel2 ease-tabs" data-classes="border-b border-lg ui-border ui-text">
+                                    <div class="row row-no-padding dark align-c margin-10-b ease-2nd-btn">
+                                        <div class="col-6 no-fluid">
+                                            <button class="tab btn btn-lg btn-ghost block round-tl border-b border-lg ui-border ui-text active" data-tooltip data-only="desktop" title="Favorites">
+                                                <i class="icon icon-star-fill no-opacity ui-no"></i>
+                                            </button>
                                         </div>
-                                        <div class="tab-content align-l v-scroll open open-ease" style="max-height: 320px;">
-                                            <ul class="timeline side-l margin-15-h hide-h-lines">
-                                                <li>
-                                                    <span class="card no-padding-v no-padding-r">
-                                                        Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span class="card no-padding-v no-padding-r">
-                                                        Lorem ipsum dolor sit amet.
-                                                        <span class="photos-holder margin-5-t ease-2nd-layout">
-                                                            <a href="#"><img class="img-photo border-lg circle scale-more" src="img/profile-image.jpg" alt=""></a>
-                                                            <a href="#"><img class="img-photo border-lg circle scale-more" src="img/profile-image2.jpg" alt=""></a>
-                                                            <a href="#"><img class="img-photo border-lg circle scale-more" src="img/profile-image3.jpg" alt=""></a>
-                                                            <a class="btn btn-lg no-margin circle ease-btn" href="#">+12</a>
-                                                        </span>
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span class="card no-padding-v no-padding-r">
-                                                        Aenean imperdiet dolor nibh, a porta nunc maximus vitae.
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span class="card no-padding-v no-padding-r">
-                                                        Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span class="card no-padding-v no-padding-r">
-                                                        Nullam sit amet sagittis nisi.
-                                                        <span class="margin-5-t block ease-1st-btn">
-                                                            <a class="btn btn-lg btn-ghost btn-square round border-dual" href="#"><i class="icon icon-lg icon-file-pdf"></i></a>
-                                                            <a class="btn btn-lg btn-ghost btn-square round border-dual" href="#"><i class="icon icon-lg icon-file-xls"></i></a>
-                                                            <a class="btn btn-lg btn-ghost btn-square round border-dual" href="#"><i class="icon icon-lg icon-file-zip"></i></a>
-                                                        </span>
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span class="card no-padding-v no-padding-r">
-                                                        Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span class="card no-padding-v no-padding-r">
-                                                        Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span class="card no-padding-v no-padding-r">
-                                                        Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span class="card no-padding-v no-padding-r">
-                                                        Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.
-                                                    </span>
-                                                </li>
-                                            </ul>
+                                        <div class="col-6 no-fluid">
+                                            <button class="tab btn btn-lg btn-ghost block round-tr ui-no" data-tooltip data-only="desktop" title="History">
+                                                <i class="icon icon-history no-opacity"></i>
+                                            </button>
                                         </div>
-                                        <div class="tab-content align-l v-scroll" style="max-height: 320px;">
-                                            <ul class="timeline side-l margin-15-h hide-h-lines">
-                                                <li>
-                                                    <span class="card no-padding-v no-padding-r">
-                                                        Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span class="card no-padding-v no-padding-r">
-                                                        Lorem ipsum dolor sit amet.
-                                                        <span class="photo-gallery margin-5-t ease-photo-gallery">
-                                                            <a class="img margin-4-b inline-block round" href="img/image_01.jpg"><img src="img/thumb_01.jpg" height="42" alt=""></a>
-                                                            <a class="img margin-4-b inline-block round" href="img/image_02.jpg"><img src="img/thumb_02.jpg" height="42" alt=""></a>
-                                                            <a class="img margin-4-b inline-block round" href="img/image_03.jpg"><img src="img/thumb_03.jpg" height="42" alt=""></a>
-                                                            <a class="img margin-4-b inline-block round" href="img/image_04.jpg"><img src="img/thumb_04.jpg" height="42" alt=""></a>
-                                                            <a class="img margin-4-b inline-block round" href="img/image_05.jpg"><img src="img/thumb_05.jpg" height="42" alt=""></a>
-                                                            <a class="img margin-4-b inline-block round" href="img/image_06.jpg"><img src="img/thumb_06.jpg" height="42" alt=""></a>
-                                                            <a class="img margin-4-b inline-block round" href="img/image_07.jpg"><img src="img/thumb_07.jpg" height="42" alt=""></a>
-                                                            <a class="img margin-4-b inline-block round" href="img/image_08.jpg"><img src="img/thumb_08.jpg" height="42" alt=""></a>
-                                                            <a class="img margin-4-b inline-block round" href="img/image_09.jpg"><img src="img/thumb_09.jpg" height="42" alt=""></a>
-                                                        </span>
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span class="card no-padding-v no-padding-r">
-                                                        Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span class="card no-padding-v no-padding-r">
-                                                        Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span class="card no-padding-v no-padding-r">
-                                                        Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span class="card no-padding-v no-padding-r">
-                                                        Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span class="card no-padding-v no-padding-r">
-                                                        Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span class="card no-padding-v no-padding-r">
-                                                        Aenean imperdiet dolor nibh, a porta nunc maximus vitae.
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span class="card no-padding-v no-padding-r">
-                                                        Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.
-                                                    </span>
-                                                </li>
-                                            </ul>
+                                    </div>
+                                    <div class="tab-content align-l v-scroll open open-ease" style="max-height: 420px;">
+                                        <ul class="timeline side-l margin-15-h hide-h-lines">
+                                            <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
+                                            <li>
+                                                Lorem ipsum dolor sit amet.
+                                                <span class="photos-holder margin-5-t ease-2nd-layout">
+                                                    <a href="#"><img class="img-photo border-lg circle scale-more" src="img/profile-image.jpg" alt=""></a>
+                                                    <a href="#"><img class="img-photo border-lg circle scale-more" src="img/profile-image2.jpg" alt=""></a>
+                                                    <a href="#"><img class="img-photo border-lg circle scale-more" src="img/profile-image3.jpg" alt=""></a>
+                                                    <a class="btn btn-lg no-margin circle ease-btn" href="#">+12</a>
+                                                </span>
+                                            </li>
+                                            <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
+                                            <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                            <li>
+                                                Nullam sit amet sagittis nisi.
+                                                <span class="margin-5-t block ease-1st-btn">
+                                                    <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-pdf"></i></a>
+                                                    <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-xls"></i></a>
+                                                    <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-zip"></i></a>
+                                                </span>
+                                            </li>
+                                            <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
+                                            <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                            <li>Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.</li>
+                                            <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content align-l v-scroll" style="max-height: 420px;">
+                                        <ul class="timeline side-l margin-15-h hide-h-lines">
+                                            <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
+                                            <li>
+                                                Lorem ipsum dolor sit amet.
+                                                <span class="photo-gallery margin-5-t ease-photo-gallery">
+                                                    <a class="img margin-4-b inline-block round" href="img/image_01.jpg"><img src="img/thumb_01.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_02.jpg"><img src="img/thumb_02.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_03.jpg"><img src="img/thumb_03.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_04.jpg"><img src="img/thumb_04.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_05.jpg"><img src="img/thumb_05.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_06.jpg"><img src="img/thumb_06.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_07.jpg"><img src="img/thumb_07.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_08.jpg"><img src="img/thumb_08.jpg" height="40" alt=""></a>
+                                                </span>
+                                            </li>
+                                            <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
+                                            <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                            <li>Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.</li>
+                                            <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                            <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
+                                            <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
+                                            <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown menu-l ease-dropdown">
+                            <button class="btn dark btn-lg btn-square btn-ghost align-c circle ease-btn" data-tooltip="l" data-only="desktop" title="Notification Center">
+                                <i class="icon icon-bars-right notifier no-opacity"></i>
+                            </button>
+                            <div class="content round shadow-lg">
+                                <div class="tabs static-300 xs-full-width theme-panel2 ease-tabs" data-classes="border-b border-lg ui-border ui-text">
+                                    <div class="row row-no-padding dark align-c margin-10-b ease-2nd-btn">
+                                        <div class="col-3 no-fluid">
+                                            <button class="tab btn btn-lg btn-ghost block round-tl border-b border-lg ui-border ui-text active" data-tooltip data-only="desktop" title="Notifications">
+                                                <i class="icon icon-bell-on no-opacity ui-no"></i>
+                                            </button>
                                         </div>
+                                        <div class="col-3 no-fluid">
+                                            <button class="tab btn btn-lg btn-ghost block" data-tooltip data-only="desktop" title="Notes">
+                                                <i class="icon icon-pencil-write no-opacity ui-no"></i>
+                                            </button>
+                                        </div>
+                                        <div class="col-3 no-fluid">
+                                            <button class="tab btn btn-lg btn-ghost block" data-tooltip data-only="desktop" title="Started Jobs">
+                                                <i class="icon icon-hourglass-start no-opacity ui-no"></i>
+                                            </button>
+                                        </div>
+                                        <div class="col-3 no-fluid">
+                                            <button class="tab btn btn-lg btn-ghost block round-tr" data-tooltip data-only="desktop" title="Completed Jobs">
+                                                <i class="icon icon-hourglass-end no-opacity ui-no"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content align-l v-scroll open open-ease" style="max-height: 420px;">
+                                        <ul class="timeline side-l margin-15-h hide-h-lines">
+                                            <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
+                                            <li>
+                                                Lorem ipsum dolor sit amet.
+                                                <span class="photos-holder margin-5-t ease-2nd-layout">
+                                                    <a href="#"><img class="img-photo border-lg circle scale-more" src="img/profile-image.jpg" alt=""></a>
+                                                    <a href="#"><img class="img-photo border-lg circle scale-more" src="img/profile-image2.jpg" alt=""></a>
+                                                    <a href="#"><img class="img-photo border-lg circle scale-more" src="img/profile-image3.jpg" alt=""></a>
+                                                    <a class="btn btn-lg no-margin circle ease-btn" href="#">+12</a>
+                                                </span>
+                                            </li>
+                                            <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
+                                            <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                            <li>
+                                                Nullam sit amet sagittis nisi.
+                                                <span class="margin-5-t block ease-1st-btn">
+                                                    <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-pdf"></i></a>
+                                                    <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-xls"></i></a>
+                                                    <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-zip"></i></a>
+                                                </span>
+                                            </li>
+                                            <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
+                                            <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                            <li>Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.</li>
+                                            <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content align-l v-scroll" style="max-height: 420px;">
+                                        <ul class="timeline side-l margin-15-h hide-h-lines">
+                                            <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
+                                            <li>
+                                                Lorem ipsum dolor sit amet.
+                                                <span class="photo-gallery margin-5-t ease-photo-gallery">
+                                                    <a class="img margin-4-b inline-block round" href="img/image_01.jpg"><img src="img/thumb_01.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_02.jpg"><img src="img/thumb_02.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_03.jpg"><img src="img/thumb_03.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_04.jpg"><img src="img/thumb_04.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_05.jpg"><img src="img/thumb_05.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_06.jpg"><img src="img/thumb_06.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_07.jpg"><img src="img/thumb_07.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_08.jpg"><img src="img/thumb_08.jpg" height="40" alt=""></a>
+                                                </span>
+                                            </li>
+                                            <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
+                                            <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                            <li>Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.</li>
+                                            <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                            <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
+                                            <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
+                                            <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content align-l v-scroll" style="max-height: 420px;">
+                                        <ul class="timeline side-l margin-15-h hide-h-lines">
+                                            <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
+                                            <li>
+                                                Lorem ipsum dolor sit amet.
+                                                <span class="photos-holder margin-5-t ease-2nd-layout">
+                                                    <a href="#"><img class="img-photo border-lg circle scale-more" src="img/profile-image.jpg" alt=""></a>
+                                                    <a href="#"><img class="img-photo border-lg circle scale-more" src="img/profile-image2.jpg" alt=""></a>
+                                                    <a href="#"><img class="img-photo border-lg circle scale-more" src="img/profile-image3.jpg" alt=""></a>
+                                                    <a class="btn btn-lg no-margin circle ease-btn" href="#">+12</a>
+                                                </span>
+                                            </li>
+                                            <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
+                                            <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                            <li>
+                                                Nullam sit amet sagittis nisi.
+                                                <span class="margin-5-t block ease-1st-btn">
+                                                    <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-pdf"></i></a>
+                                                    <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-xls"></i></a>
+                                                    <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-zip"></i></a>
+                                                </span>
+                                            </li>
+                                            <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
+                                            <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                            <li>Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.</li>
+                                            <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content align-l v-scroll" style="max-height: 420px;">
+                                        <ul class="timeline side-l margin-15-h hide-h-lines">
+                                            <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
+                                            <li>
+                                                Lorem ipsum dolor sit amet.
+                                                <span class="photo-gallery margin-5-t ease-photo-gallery">
+                                                    <a class="img margin-4-b inline-block round" href="img/image_01.jpg"><img src="img/thumb_01.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_02.jpg"><img src="img/thumb_02.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_03.jpg"><img src="img/thumb_03.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_04.jpg"><img src="img/thumb_04.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_05.jpg"><img src="img/thumb_05.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_06.jpg"><img src="img/thumb_06.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_07.jpg"><img src="img/thumb_07.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_08.jpg"><img src="img/thumb_08.jpg" height="40" alt=""></a>
+                                                </span>
+                                            </li>
+                                            <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
+                                            <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                            <li>Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.</li>
+                                            <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                            <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
+                                            <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
+                                            <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -696,13 +765,13 @@
 
                         <div class="col-xl-3 col-lg-6 col-12 col-md-6 sm-fluid">
                             <div class="card full-height padding-15 padding-10-t round shadow-lg">
-                                <div class="tabs theme-panel2 ease-tabs" data-classes="ui-border">
-                                    <div class="row row-no-padding x-dark ease-2nd-btn">
+                                <div class="tabs theme-panel2 ease-tabs" data-classes="border-b border-lg ui-border ui-text">
+                                    <div class="row row-no-padding dark ease-2nd-btn">
                                         <div class="col-6 no-fluid">
-                                            <button class="tab btn btn-lg btn-ghost border-b border-dual block round-t ui-border active">Delayed</button>
+                                            <button class="tab btn btn-lg btn-ghost block round-t border-b border-lg ui-border ui-text active">Delayed</button>
                                         </div>
                                         <div class="col-6 no-fluid">
-                                            <button class="tab btn btn-lg btn-ghost border-b border-dual block round-t">Paused</button>
+                                            <button class="tab btn btn-lg btn-ghost block round-t">Paused</button>
                                         </div>
                                     </div>
                                     <div class="tab-content set-absolute set-h v-scroll open open-ease" style="top: 62px; bottom: 15px;">
@@ -910,133 +979,67 @@
 
                         <div class="col-xl-3 col-lg-6 col-12 col-md-6 sm-fluid">
                             <div class="card full-height padding-15 padding-10-t round shadow-lg">
-                                <div class="tabs theme-panel2 ease-tabs" data-classes="ui-border">
-                                    <div class="row row-no-padding x-dark ease-2nd-btn">
+                                <div class="tabs theme-panel2 ease-tabs" data-classes="border-b border-lg ui-border ui-text">
+                                    <div class="row row-no-padding dark ease-2nd-btn">
                                         <div class="col-6 no-fluid">
-                                            <button class="tab btn btn-lg btn-ghost border-b border-dual block round-t ui-border active">News</button>
+                                            <button class="tab btn btn-lg btn-ghost block round-t border-b border-lg ui-border ui-text active">News</button>
                                         </div>
                                         <div class="col-6 no-fluid">
-                                            <button class="tab btn btn-lg btn-ghost border-b border-dual block round-t">Announcements</button>
+                                            <button class="tab btn btn-lg btn-ghost block round-t">Announcements</button>
                                         </div>
                                     </div>
                                     <div class="tab-content set-absolute set-h v-scroll open open-ease" style="top: 62px; bottom: 15px;">
                                         <ul class="timeline side-l margin-15-h hide-h-lines">
+                                            <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
                                             <li>
-                                                <span class="card no-padding-v no-padding-r">
-                                                    Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.
+                                                Lorem ipsum dolor sit amet.
+                                                <span class="photos-holder margin-5-t ease-2nd-layout">
+                                                    <a href="#"><img class="img-photo border-lg circle scale-more" src="img/profile-image.jpg" alt=""></a>
+                                                    <a href="#"><img class="img-photo border-lg circle scale-more" src="img/profile-image2.jpg" alt=""></a>
+                                                    <a href="#"><img class="img-photo border-lg circle scale-more" src="img/profile-image3.jpg" alt=""></a>
+                                                    <a class="btn btn-lg no-margin circle ease-btn" href="#">+12</a>
                                                 </span>
                                             </li>
+                                            <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
+                                            <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                             <li>
-                                                <span class="card no-padding-v no-padding-r">
-                                                    Lorem ipsum dolor sit amet.
-                                                    <span class="photos-holder margin-5-t ease-2nd-layout">
-                                                        <a href="#"><img class="img-photo border-lg circle scale-more" src="img/profile-image.jpg" alt=""></a>
-                                                        <a href="#"><img class="img-photo border-lg circle scale-more" src="img/profile-image2.jpg" alt=""></a>
-                                                        <a href="#"><img class="img-photo border-lg circle scale-more" src="img/profile-image3.jpg" alt=""></a>
-                                                        <a class="btn btn-lg no-margin circle ease-btn" href="#">+12</a>
-                                                    </span>
+                                                Nullam sit amet sagittis nisi.
+                                                <span class="margin-5-t block ease-1st-btn">
+                                                    <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-pdf"></i></a>
+                                                    <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-xls"></i></a>
+                                                    <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-zip"></i></a>
                                                 </span>
                                             </li>
-                                            <li>
-                                                <span class="card no-padding-v no-padding-r">
-                                                    Aenean imperdiet dolor nibh, a porta nunc maximus vitae.
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <span class="card no-padding-v no-padding-r">
-                                                    Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <span class="card no-padding-v no-padding-r">
-                                                    Nullam sit amet sagittis nisi.
-                                                    <span class="margin-5-t block ease-1st-btn">
-                                                        <a class="btn btn-lg btn-ghost btn-square round border-dual" href="#"><i class="icon icon-lg icon-file-pdf"></i></a>
-                                                        <a class="btn btn-lg btn-ghost btn-square round border-dual" href="#"><i class="icon icon-lg icon-file-xls"></i></a>
-                                                        <a class="btn btn-lg btn-ghost btn-square round border-dual" href="#"><i class="icon icon-lg icon-file-zip"></i></a>
-                                                    </span>
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <span class="card no-padding-v no-padding-r">
-                                                    Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <span class="card no-padding-v no-padding-r">
-                                                    Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <span class="card no-padding-v no-padding-r">
-                                                    Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <span class="card no-padding-v no-padding-r">
-                                                    Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.
-                                                </span>
-                                            </li>
+                                            <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
+                                            <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                            <li>Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.</li>
+                                            <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                         </ul>
                                     </div>
                                     <div class="tab-content set-absolute set-h v-scroll" style="top: 62px; bottom: 15px;">
                                         <ul class="timeline side-l margin-15-h hide-h-lines">
+                                            <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                             <li>
-                                                <span class="card no-padding-v no-padding-r">
-                                                    Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.
+                                                Lorem ipsum dolor sit amet.
+                                                <span class="photo-gallery margin-5-t ease-photo-gallery">
+                                                    <a class="img margin-4-b inline-block round" href="img/image_01.jpg"><img src="img/thumb_01.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_02.jpg"><img src="img/thumb_02.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_03.jpg"><img src="img/thumb_03.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_04.jpg"><img src="img/thumb_04.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_05.jpg"><img src="img/thumb_05.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_06.jpg"><img src="img/thumb_06.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_07.jpg"><img src="img/thumb_07.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_08.jpg"><img src="img/thumb_08.jpg" height="40" alt=""></a>
+                                                    <a class="img margin-4-b inline-block round" href="img/image_09.jpg"><img src="img/thumb_09.jpg" height="40" alt=""></a>
                                                 </span>
                                             </li>
-                                            <li>
-                                                <span class="card no-padding-v no-padding-r">
-                                                    Lorem ipsum dolor sit amet.
-                                                    <span class="photo-gallery margin-5-t ease-photo-gallery">
-                                                        <a class="img margin-4-b inline-block round" href="img/image_01.jpg"><img src="img/thumb_01.jpg" height="42" alt=""></a>
-                                                        <a class="img margin-4-b inline-block round" href="img/image_02.jpg"><img src="img/thumb_02.jpg" height="42" alt=""></a>
-                                                        <a class="img margin-4-b inline-block round" href="img/image_03.jpg"><img src="img/thumb_03.jpg" height="42" alt=""></a>
-                                                        <a class="img margin-4-b inline-block round" href="img/image_04.jpg"><img src="img/thumb_04.jpg" height="42" alt=""></a>
-                                                        <a class="img margin-4-b inline-block round" href="img/image_05.jpg"><img src="img/thumb_05.jpg" height="42" alt=""></a>
-                                                        <a class="img margin-4-b inline-block round" href="img/image_06.jpg"><img src="img/thumb_06.jpg" height="42" alt=""></a>
-                                                        <a class="img margin-4-b inline-block round" href="img/image_07.jpg"><img src="img/thumb_07.jpg" height="42" alt=""></a>
-                                                        <a class="img margin-4-b inline-block round" href="img/image_08.jpg"><img src="img/thumb_08.jpg" height="42" alt=""></a>
-                                                        <a class="img margin-4-b inline-block round" href="img/image_09.jpg"><img src="img/thumb_09.jpg" height="42" alt=""></a>
-                                                    </span>
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <span class="card no-padding-v no-padding-r">
-                                                    Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <span class="card no-padding-v no-padding-r">
-                                                    Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <span class="card no-padding-v no-padding-r">
-                                                    Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <span class="card no-padding-v no-padding-r">
-                                                    Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <span class="card no-padding-v no-padding-r">
-                                                    Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <span class="card no-padding-v no-padding-r">
-                                                    Aenean imperdiet dolor nibh, a porta nunc maximus vitae.
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <span class="card no-padding-v no-padding-r">
-                                                    Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.
-                                                </span>
-                                            </li>
+                                            <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
+                                            <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                            <li>Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.</li>
+                                            <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                            <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
+                                            <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
+                                            <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1579,10 +1582,10 @@
                                         <button type="button" class="clear-form icon icon-remove"></button>
                                         <input class="required" type="text" placeholder="Search">
                                     </div>
-                                    <p class="required-msg round">Please, enter a keyword.</p>
+                                    <p class="required-msg large">Please, enter a keyword.</p>
                                 </div>
                             </div>
-                            <div class="static-100 padding-10-v">
+                            <div class="static-100 xs-static-50 padding-10-v">
                                 <button class="btn btn-lg block round-r theme-default2 ui-dark ease-btn" type="submit">
                                     <i class="icon icon-lg icon-search"></i>
                                 </button>

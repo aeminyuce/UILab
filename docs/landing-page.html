@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="../css/borders.css"/>
     <link rel="stylesheet" href="../css/card.css"/>
     <link rel="stylesheet" href="../css/carousel.css"/>
+    <link rel="stylesheet" href="../css/dropdown.css"/>
     <link rel="stylesheet" href="../css/forms.css"/>
     <link rel="stylesheet" href="../css/form-holder.css"/>
     <link rel="stylesheet" href="../css/effects.css"/>
@@ -51,6 +52,7 @@
     <script src="../js/user-agents.js"></script>
 
     <script src="../js/carousel.js"></script>
+    <script src="../js/dropdown.js"></script>
     <script src="../js/effects.js"></script>
     <script src="../js/forms.js"></script>
     <script src="../js/line-charts.js"></script>
@@ -136,39 +138,50 @@
                             <a href="#"><img src="img/agriculture/logo.png" alt="Agriculture Logo" srcset="img/agriculture/logo@2x.png 2x"></a>
                         </div>
                         <div class="row">
-                            <div class="col-12 bold align-r">
+                            <div class="col-12 align-r">
 
                                 <div class="hidden-sm">
                                     <div class="ease-1st-btn add-mobile-menu-r" data-import="1">
                                         <a class="btn btn-sm-fluid btn-lg btn-ghost" href="#">
                                             <i class="icon icon-home margin-5-r no-opacity visible-sm"></i>
-                                            Home
+                                            <b>Home</b>
                                         </a>
-                                        <a class="btn btn-sm-fluid btn-lg btn-ghost" href="#">
-                                            <i class="icon icon-box margin-5-r no-opacity visible-sm"></i>
-                                            Products
-                                        </a>
+                                        <div class="dropdown ease-dropdown">
+                                            <button class="btn btn-sm-fluid btn-lg btn-ghost ease-btn">
+                                                <i class="icon icon-box margin-5-r no-opacity visible-sm"></i>
+                                                <b>Products</b>
+                                                <i class="icon-toggle icon margin-5-l icon-xs icon-angle-down no-opacity"></i>
+                                            </button>
+                                            <ul class="content shadow-lg">
+                                                <li><a href="#">Gardening</a></li>
+                                                <li><a href="#">Planting</a></li>
+                                                <li><a href="#">Irrigation Systems</a></li>
+                                                <li><a href="#">Hardscaping</a></li>
+                                                <li><a href="#">Gardening</a></li>
+                                                <li><a href="#">Planting</a></li>
+                                            </ul>
+                                        </div>
                                         <a class="btn btn-sm-fluid btn-lg btn-ghost" href="#">
                                             <i class="icon icon-users margin-5-r no-opacity visible-sm"></i>
-                                            Team
+                                            <b>Team</b>
                                         </a>
                                         <a class="btn btn-sm-fluid btn-lg btn-ghost" href="#">
                                             <i class="icon icon-coins margin-5-r no-opacity visible-sm"></i>
-                                            Pricing
+                                            <b>Pricing</b>
                                         </a>
                                         <a class="btn btn-sm-fluid btn-lg btn-ghost" href="#">
                                             <i class="icon icon-envelope-open margin-5-r no-opacity visible-sm"></i>
-                                            Contact
+                                            <b>Contact</b>
                                         </a>
                                         <span class="inline-block margin-10-h hidden-md"></span>
                                         <span class="sp10 visible-sm"></span>
                                         <a class="btn btn-sm-fluid btn-lg ui-dark" href="#">
                                             <i class="icon icon-sign-in margin-5-r visible-sm"></i>
-                                            Login
+                                            <b>Login</b>
                                         </a>
                                         <a class="btn btn-sm-fluid btn-lg theme-farmer ui-dark" href="#">
                                             <i class="icon icon-user-plus margin-5-r visible-sm"></i>
-                                            Sign Up
+                                            <b>Sign Up</b>
                                         </a>
                                     </div>
                                 </div>
