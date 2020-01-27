@@ -124,6 +124,9 @@ html:not(.mobile) .scale-more:hover { transform: scale(1.2); }
 @media (min-width: 960px) {
     .visible-xs,.visible-sm,.visible-md { display: none !important; }
 }
+@media (max-width: 959px) {
+    .md-full-width { width: 100% !important; }
+}
 @media (max-width: 959px) and (min-width: 768px) {
     /* do not group */
     .visible-sm { display: none !important; }
@@ -135,6 +138,9 @@ html:not(.mobile) .scale-more:hover { transform: scale(1.2); }
 
     .md-no-float { float: none !important; }
     .md-clearfix { clear: both !important; display: block; }
+}
+@media (max-width: 767px) {
+    .sm-full-width { width: 100% !important; }
 }
 @media (max-width: 767px) and (min-width: 481px) {
     /* do not group */
@@ -153,6 +159,8 @@ html:not(.mobile) .scale-more:hover { transform: scale(1.2); }
     /* do not group */
 }
 @media (max-width: 480px) {
+    .xs-full-width { width: 100% !important; }
+
     /* do not group */
     .hidden-md,.hidden-sm { display: none !important; }
     .hidden-xs { display: none !important; }
