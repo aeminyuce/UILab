@@ -1,9 +1,9 @@
 /* tabs */
-.ease-tabs .icon-toggle { transition-property: opacity, transform; transition-duration: .3s; }
+.ease-tabs .toggle-icon { transition-property: opacity, transform; transition-duration: .3s; }
 .ease-tabs .tab-content { transition-property: opacity; transition-duration: .6s; }
-.no-transitions-all .ease-tabs .icon-toggle,.no-transitions-all .ease-tabs .tab-content { transition-property: none !important; }
+.no-transitions-all .ease-tabs .toggle-icon,.no-transitions-all .ease-tabs .tab-content { transition-property: none !important; }
 
-.tabs .active > .icon-toggle { transform: rotate(-180deg); opacity: 1; }
+.tabs .active > .toggle-icon { transform: rotate(-180deg); opacity: 1; }
 .tabs .tab-content { transform-origin: top center; }
 .tabs .tab-content:not(.open) { display: none !important; }
 .tabs .tab-content:not(.open-ease) { opacity: 0; }
