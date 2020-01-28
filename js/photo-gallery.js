@@ -431,7 +431,7 @@ var photoGallery = {
 
                         } else {
 
-                            imgZoom = 3;
+                            imgZoom = 2;
 
                             if (e.type === 'dblclick') {
 
