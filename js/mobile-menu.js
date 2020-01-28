@@ -16,7 +16,6 @@ var mobileMenu = {
     /*globals window, document, selector, events, setTimeout, screen */
 
     var
-        temp,
         pageYPos,
         panelOpened = '',
         visibleArr = [];
@@ -51,6 +50,8 @@ var mobileMenu = {
 
             el.appendChild(contents[i]);
             el.parentNode.insertBefore(el.firstChild, el);
+
+            el.parentNode.removeChild(el);
 
         }
 
@@ -116,10 +117,10 @@ var mobileMenu = {
         // Events
         events.on(document, 'click', '[class*="show-mobile-menu-"]', function () {
 
-            var importers, moveFnc, id, wrapper, i, index, indexArr, indexSort, position, bg, panel;
+            var html, importers, moveFnc, id, i, j, index, indexArr, position, bg, panel, filtered, content;
 
+            html = [];
             position = 'l'; // right
-            temp = document.createDocumentFragment();
 
             if (events.hasClass(this, 'show-mobile-menu-r')) {
                 position = 'r'; // left
@@ -127,26 +128,20 @@ var mobileMenu = {
 
             moveFnc = function (that, j) {
 
-                wrapper = document.createDocumentFragment();
-
                 id = new Date().getTime();
                 id = id.toString();
                 id = id.substring(id.length - 4, id.length) + j;
 
                 that.insertAdjacentHTML('beforebegin', '<div class="mm-' + id + '" style="display: none;"></div>');
-
                 that.setAttribute('data-mm', id);
-                wrapper.appendChild(that);
 
-                temp.appendChild(wrapper);
+                html[j] = document.createDocumentFragment();
+                html[j].appendChild(that);
 
-            };
-
-            indexSort = function (a, b) {
-                return a - b;
             };
 
             importers = selector('.add-mobile-menu-' + position);
+
             if (importers.length === 1) {
                 moveFnc(importers[0], 0);
 
@@ -158,16 +153,16 @@ var mobileMenu = {
                     index = importers[i].getAttribute('data-import');
 
                     if (index !== null && index !== '') {
-                        indexArr.push(index);
+                        indexArr.push(Number(index));
 
-                    } else { return; }
+                    } else {
+                        indexArr.push(i);
+                    }
 
                 }
 
-                indexArr.sort(indexSort);
-
                 for (i = 0; i < importers.length; i += 1) {
-                    moveFnc(selector('[data-import="' + indexArr[i] + '"]')[0], i);
+                    moveFnc(importers[i], indexArr[i]);
                 }
 
             } else { return; }
@@ -176,7 +171,15 @@ var mobileMenu = {
             pageYPos = window.pageYOffset; // get current scroll-y position
 
             panel = selector('.mobile-menu.show-' + position);
-            selector('.mobile-menu-content', panel).appendChild(temp);
+            content = selector('.mobile-menu-content', panel);
+
+            filtered = html.filter(function (el) {
+                return el != null;
+            });
+
+            for (j = 0; j < filtered.length; j += 1) {
+                content.appendChild(filtered[j]);
+            }
 
             bg = selector('.mobile-menu-bg')[0];
             if (bg === undefined) {
