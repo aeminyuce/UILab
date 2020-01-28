@@ -43,8 +43,9 @@
   name | duration | timing-function | delay | iteration-count | direction | fill-mode | play-state
   animation: name 3s ease-in 1s infinite reverse both running;
 */
+
 @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-.animate-spin { animation: spin 1.5s linear infinite; }
+.animate-spin { vertical-align: middle; display: inline-block; animation: spin 1.5s linear infinite; }
 
 @keyframes progress { from { background-position: 40px 0; } to { background-position: 0 0; } }
 .animate-progress { animation: progress 3s linear infinite; }
