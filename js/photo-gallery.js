@@ -164,6 +164,7 @@ var photoGallery = {
             index = Array.prototype.slice.call(images).indexOf(that);
 
             html = '<div class="photo-preview ease-layout">' +
+                    '<div class="photo-preview-bg"></div>' +
                     '<button class="btn btn-square btn-lg btn-ghost close-photo-preview ease-btn"><i class="icon ' + photoGallery.closeIcon + ' no-opacity"></i></button>' +
                     '<button type="button" class="preview-prev ease-btn"><i class="icon ' + photoGallery.prevIcon + '"></i></button>' +
                     '<button type="button" class="preview-next ease-btn"><i class="icon ' + photoGallery.nextIcon + '"></i></button>' +
@@ -292,6 +293,7 @@ var photoGallery = {
             });
 
             events.on('.close-photo-preview', 'click', closeGallery);
+            events.on('.photo-preview-bg', 'click', closeGallery);
 
             // gallery nav
             function navigateGallery(direction) {
