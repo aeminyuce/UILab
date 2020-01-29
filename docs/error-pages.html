@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UI Lab, Error Pages</title>
+    <meta name="keywords" content="uilab, responsive, design, css, javascript, error pages">
+    <meta name="description" content="CSS & JavaScript powered responsive design system." />
+    <meta name="author" content="A. Emin Yuce"/>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <!--[if lt IE 10]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
+
+    <!-- CSS Tools -->
+    <link rel="stylesheet" href="../css/reset.css"/>
+
+    <link rel="stylesheet" href="../css/alignments.css"/>
+    <link rel="stylesheet" href="../css/buttons.css"/>
+    <link rel="stylesheet" href="../css/borders.css"/>
+    <link rel="stylesheet" href="../css/effects.css"/>
+    <link rel="stylesheet" href="../css/grid.css"/>
+    <link rel="stylesheet" href="../css/helpers.css"/>
+    <link rel="stylesheet" href="../css/icons.css"/>
+    <link rel="stylesheet" href="../css/listings.css"/>
+    <link rel="stylesheet" href="../css/margins.css"/>
+    <link rel="stylesheet" href="../css/paddings.css"/>
+    <link rel="stylesheet" href="../css/scrollbar.css"/>
+    <link rel="stylesheet" href="../css/static-grid.css"/>
+    <link rel="stylesheet" href="../css/sticky-header.css"/>
+    <link rel="stylesheet" href="../css/typography.css"/>
+    <link rel="stylesheet" href="../css/top-button.css"/>
+
+    <link rel="stylesheet" href="../css/themes.css"/>
+    <link rel="stylesheet" href="../css/darkmode.css"/>
+
+    <!-- Javascript Tools -->
+    <script src="../js/selector.js"></script>
+    <script src="../js/events.js"></script>
+    <script src="../js/user-agents.js"></script>
+
+    <script src="../js/effects.js"></script>
+    <script src="../js/static-grid.js"></script>
+    <script src="../js/sticky-header.js"></script>
+    <script src="../js/themes.js"></script>
+    <script src="../js/top-button.js"></script>
+
+    <!-- custom CSS -->
+    <style>
+
+        .error-size { font-size: 20vw; font-weight: bold; line-height: 20vw; margin: -2.35vh 0; position: relative; }
+        .error-size:after { content: ""; width: 32vh; height: 32vh; display: block; background-color: rgba(134, 76, 76, 0.065); border-radius: 50%; position: absolute; top: 44%; left: 44%; transform: translate(-50%, -50%); z-index: 0; }
+        .error-size .icon { font-size: 16vw; width: 16vw; height: 16vw; margin: 0 -4.65vw; }
+
+        @media (prefers-color-scheme: dark) {
+            .error-size:after { background-color: rgba(255,255,255,.045); }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="container theme-default ui-dark">
+        <div class="row theme-default2 ui-border border-t border-dual">
+            <div class="col-12">
+                <a href="index.html" class="btn btn-lg btn-square circle ease-btn margin-10-r"><i class="icon no-opacity icon-long-arrow-left"></i></a>
+                <h1 class="x-large inline-block">UI Lab, Error Pages</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- documentation examples -->
+    <main class="container no-gutter">
+        <div class="fixed">
+            <div class="row">
+                <div class="col-12 padding-30-v">
+
+                    <span class="sp30 margin-30-v"></span>
+
+                    <div class="align-c theme-default2">
+                        <p class="x-large">Error: 404 Page Not Found</p>
+                        <p class="error-size no-user-select">
+                            <span class="inline-block">4</span>
+                            <i class="icon ui-text icon-undo"></i>
+                            <span class="inline-block">4</span>
+                        </p>
+                        <p class="large">Sorry, the page you're looking for cannot be reached.<br>Here are few links that may be helpful.</p>
+                        <ul class="list-unstyled ease-2nd-btn">
+                            <li><a class="btn btn-lg btn-ghost circle ui-dark ui-text" href="#">Home</a class="ui-text"></li>
+                            <li><a class="btn btn-lg btn-ghost circle ui-dark ui-text" href="#">Help Center</a></li>
+                            <li><a class="btn btn-lg btn-ghost circle ui-dark ui-text" href="#">Sign In</a></li>
+                        </ul>
+                    </div>
+
+                    <span class="sp30 margin-30-v padding-30-v"></span>
+
+                    <div class="align-c theme-default2">
+                        <p class="x-large">Error: 403 Forbidden</p>
+                        <p class="error-size no-user-select">
+                            <span class="inline-block">4</span>
+                            <i class="icon ui-text icon-no"></i>
+                            <span class="inline-block">3</span>
+                        </p>
+                        <p class="large">You don't have access to this page.<br>Please contact support if this wasn't supposed to happen.</p>
+                        <a class="btn btn-lg padding-30-h circle ease-btn ui-dark" href="#">
+                            <i class="icon icon-long-arrow-left margin-5-r"></i>
+                            Go Back
+                        </a>
+                    </div>
+
+                    <span class="sp30 margin-30-v padding-30-v"></span>
+
+                    <div class="align-c theme-default2">
+                        <p class="x-large">Error: 500 Unexpected Error</p>
+                        <p class="error-size no-user-select">
+                            <span class="inline-block">5</span>
+                            <i class="icon ui-text icon-face-sad"></i>
+                            <span class="inline-block">0</span>
+                        </p>
+                        <p class="large">We are having some issues at the moment.<br>We will have it fixed in no time!</p class="large">
+                        <a class="btn btn-lg padding-30-h circle ease-btn ui-dark" href="#">
+                            <i class="icon icon-long-arrow-left margin-5-r"></i>
+                            Go Back
+                        </a>
+                    </div>
+
+                    <span class="sp30 margin-30-v"></span>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
