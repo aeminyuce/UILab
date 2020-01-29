@@ -139,12 +139,13 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i { transform: tran
 .form-light > input,.form-light > select:not(:focus),.form-light > textarea,.form-light > .icon { color: #fff; }
 .form-light > input:-webkit-autofill:not(:focus) { -webkit-text-fill-color: white !important; }
 
-.error:not(.form-holder):not(.required-accept),.error label.check,.error label.radio { background-color: rgba(220,0,15,.1) !important; border-color: #dc000f !important; }
-.warning:not(.form-holder):not(.required-accept),.warning label.check,.warning label.radio { background-color: rgba(255,166,0,.1) !important; border-color: #ffa600 !important; }
+.error:not(.form-holder):not(.required-accept):not(.hint),.error label.check,.error label.radio { background-color: rgba(220,0,15,.1) !important; border-color: #dc000f !important; }
+.warning:not(.form-holder):not(.required-accept):not(.hint),.warning label.check,.warning label.radio { background-color: rgba(255,166,0,.1) !important; border-color: #ffa600 !important; }
 
 .hint,.required-msg { font-size: 13px; margin-top: 5px; margin-bottom: 0 !important; }
 .hint,.required-msg.show { display: block; }
 .hint.error,.required-msg { color: #f73d49; }
+.hint.warning { color: #fdbc43; }
 .required-msg:not(.show) { display: none; }
 
 .form-inline,.form-xs-inline { vertical-align: middle; display: inline-block !important; }
