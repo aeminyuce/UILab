@@ -18,7 +18,7 @@ var themes = {};
         events.on(document,
 
             'mouseenter',
-            '.hover,a[class*="ui-"]:not(.btn):not(.opacity):not(.opacity-more),.btn[class*="ui-"]:not(.opacity):not(.opacity-more):not(.btn-ghost)',
+            '.hover,a[class*="ui-"]:not(.btn):not(.opacity):not(.opacity-more),.btn[class*="ui-"]:not(.btn-passive):not(.opacity):not(.opacity-more):not(.btn-ghost)',
 
             function () {
 
