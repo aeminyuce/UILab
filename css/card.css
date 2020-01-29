@@ -7,7 +7,6 @@
 
 .content-side:before { content: ""; display: table; }
 .content-side:after { clear: both; }
-.content-side h1,.content-side h2,.content-side h3,.content-side h4,.content-side h5,.content-side h6 { line-height: normal !important; }
 
 .card-info { border-left: solid 2px #ccc; }
 .card-success { border-left: solid 2px #2dbd3a; }
