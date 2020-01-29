@@ -24,13 +24,13 @@
     .border,.border-t,.border-r,.border-b,.border-l,.border-h,.border-v,.border-dual,.border-lg { border-color: rgba(255,255,255,.05); }
 
     .text,.select,.select-multi,.textarea,.file,.check-custom,.radio-custom,.switch-custom,.form-holder .btn[class*="border"],.form-holder img[class*="border"] { border-color: rgba(255,255,255,.3); }
-    .text input:not(:focus),.select select:not(:focus),.select-multi select:not(:focus),.textarea textarea:not(:focus) { color: #fff; }
+    .text input:not(:focus):not([readonly]),.select select:not(:focus):not([readonly]),.select-multi select:not(:focus):not([readonly]),.textarea textarea:not(:focus):not([readonly]) { color: #fff; }
     .select select option,.select select optgroup { color: #fff; background-color: #41454d;}
     .select-multi option:not(:last-child) { border-bottom-color: rgba(255,255,255,.045); }
     html:not(.mobile) .file:hover .btn { background-color: rgba(255,255,255,.15); }
     [class*="text-icon"] > button.icon { color: #fff; }
 
-    .form-focus { border-color: rgba(255,255,255,.35); }
+    .form-focus { border-color: rgba(255,255,255,.5); }
     .form-focus:not(.form-readonly) { background-color: rgba(255,255,255,.075) !important; }
     .form-focus > input,.form-focus > select,.form-focus > textarea,.form-focus > .icon:not([class*="ui-"]) { color: #fff !important; }
 
@@ -50,6 +50,7 @@
 
     .form-holder-focus .text,.form-holder-focus .select,.form-holder-focus .btn[class*="border"],.form-holder-focus img[class*="border"] { border-color: rgba(255,255,255,.5); }
     .form-disabled { background-color: rgba(255,255,255,.075); }
+    .form-readonly input,.form-readonly textarea { color: rgba(255,255,255,.5); }
 
     .autocomplete ul { color: #fff; background-color: #41454d; }
 

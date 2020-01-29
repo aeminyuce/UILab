@@ -114,9 +114,10 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i { transform: tran
 
 .form-inline,.form-xs-inline { vertical-align: middle; display: inline-block !important; }
 
-.form-disabled { opacity: .65; }
-.form-disabled *,.form-readonly * { cursor: not-allowed; }
-.form-disabled { background-color: rgba(0,0,0,.075); }
+.form-disabled { background-color: rgba(0,0,0,.075); opacity: .65; }
+.form-readonly input,.form-readonly textarea { color: rgba(0,0,0,.5); }
+.form-light.form-disabled { background-color: rgba(255,255,255,.075); }
+.form-light.form-readonly input,.form-light.form-readonly textarea { color: rgba(255,255,255,.5); }
 
 .form-label,.form-grid { font-size: 13px; line-height: normal; opacity: .6; }
 .form-label { margin-bottom: 5px; display: inline-block; }
