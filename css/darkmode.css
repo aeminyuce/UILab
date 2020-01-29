@@ -30,6 +30,14 @@
     html:not(.mobile) .file:hover .btn { background-color: rgba(255,255,255,.15); }
     [class*="text-icon"] > button.icon { color: #fff; }
 
+    /* do not group */
+    .range::-webkit-slider-runnable-track { background-color: rgba(255,255,255,.08); }
+    .range::-moz-range-track { background-color: rgba(255,255,255,.08); }
+
+    .range:disabled::-webkit-slider-thumb { background-color: #60656e; }
+    .range:disabled::-moz-range-thumb { background-color: #60656e; }
+    /* do not group */
+
     .form-focus { border-color: rgba(255,255,255,.5); }
     .form-focus:not(.form-readonly) { background-color: rgba(255,255,255,.075) !important; }
     .form-focus > input,.form-focus > select,.form-focus > textarea,.form-focus > .icon:not([class*="ui-"]) { color: #fff !important; }
