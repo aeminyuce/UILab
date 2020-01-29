@@ -5,9 +5,15 @@
 .no-transitions:before,.no-transitions[class*="ease-1st-"] > *:before,.no-transitions[class*="ease-2nd-"] > * > *:before,
 .no-transitions:after,.no-transitions[class*="ease-1st-"] > *:after,.no-transitions[class*="ease-2nd-"] > * > *:after { transition-property: none !important; }
 
-.no-transitions-all [class*="ease-"],.no-transitions-all [class*="ease-1st-"] > *,.no-transitions-all [class*="ease-2nd-"] > * > *,
-.no-transitions-all [class*="ease-"]:before,.no-transitions-all [class*="ease-1st-"] > *:before,.no-transitions-all [class*="ease-2nd-"] > * > *:before,
-.no-transitions-all [class*="ease-"]:after,.no-transitions-all [class*="ease-1st-"] > *:after,.no-transitions-all [class*="ease-2nd-"] > * > *:after { transition-property: none !important; }
+.no-transitions-all,.no-transitions-all:before,.no-transitions-all:after,
+.no-transitions-all [class*="ease-"],.no-transitions-all [class*="ease-"]:before,.no-transitions-all [class*="ease-"]:after,
+.no-transitions-all [class*="ease-"] *,.no-transitions-all [class*="ease-"] *:before,.no-transitions-all [class*="ease-"] *:after { transition-property: none !important; }
+
+@media (prefers-reduced-motion:reduce) {
+  [class*="ease-"],[class*="ease-1st-"] > *,[class*="ease-2nd-"] > * > *,
+  [class*="ease-"]:before,[class*="ease-1st-"] > *:before,[class*="ease-2nd-"] > * > *:before,
+  [class*="ease-"]:after,[class*="ease-1st-"] > *:after,[class*="ease-2nd-"] > * > *:after { transition-property: none !important; }
+}
 
 .ease-fast,.ease-fast[class*="ease-1st-"] > *,.ease-fast[class*="ease-2nd-"] > * > * { transition-duration: .1s; }
 .ease-slow,.ease-slow[class*="ease-1st-"] > *,.ease-slow[class*="ease-2nd-"] > * > * { transition-duration: .4s; }
@@ -38,11 +44,10 @@
 .animate-stop-all,.animate-stop-all:before,.animate-stop-all:after,
 .animate-stop-all *,.animate-stop-all *:before,.animate-stop-all *:after { animation: none !important; }
 
-/*
-  animation shorthand:
-  name | duration | timing-function | delay | iteration-count | direction | fill-mode | play-state
-  animation: name 3s ease-in 1s infinite reverse both running;
-*/
+@media (prefers-reduced-motion:reduce) {
+  [class*="animate-"],[class*="animate-"]:before,[class*="animate-"]:after,
+  [class*="animate-"] *,[class*="animate-"] *:before,[class*="animate-"] *:after { transition-property: none !important; }
+}
 
 @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 .animate-spin { vertical-align: middle; display: inline-block; animation: spin 1.5s linear infinite; }
