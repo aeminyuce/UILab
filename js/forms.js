@@ -187,7 +187,7 @@ var forms = {};
                 events.each(forms, function () {
 
                     // trigger defined events after form clear
-                    events.trigger(this, 'change');
+                    //events.trigger(this, 'change');
 
                     if (!events.hasClass(this, 'required')) { // discard required forms
                         events.trigger(this, 'keydown keyup');
@@ -213,14 +213,13 @@ var forms = {};
         events.on(document, 'click', '.text.has-clear .clear-form', function () {
 
             var form = selector('input', this.parentElement)[0];
-
             form.value = '';
 
-            // trigger defined events after form clear
-            events.trigger(form, 'change');
-
             if (!events.hasClass(form, 'required')) { // discard required forms
-                events.trigger(form, 'keydown keyup');
+
+                // trigger defined events after form clear
+                events.trigger(form, 'change keydown keyup');
+
             }
 
         });
