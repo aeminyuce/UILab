@@ -146,6 +146,8 @@ var carousel = {
         if (contents.length === 0) { return; }
 
         nav = selector('.carousel-nav', that)[0];
+        if (nav === undefined) { return; }
+
         col = getCols(i); // get responsive cols
 
         if (contents.length <= col) { // toggle nav
@@ -232,10 +234,15 @@ var carousel = {
 
             carouselNav = function (that, direction) {
 
-                var col, slider, contents, i, navDots, navDotsEl, slide, halfSized;
+                var col, slider, nav, contents, i, navDots, navDotsEl, slide, halfSized;
+
+                nav = selector('.carousel-nav', that)[0];
+                if (nav === undefined) { return; }
 
                 slider = selector('.carousel-slider', that);
                 contents = selector('.content', slider[0]);
+
+                if (contents.length === 0) { return; }
 
                 i = Array.prototype.slice.call(selector('.carousel')).indexOf(that);
 
@@ -381,11 +388,13 @@ var carousel = {
                 contents = selector('.content', that);
                 if (contents.length === 0) { return; }
 
+                nav = selector('.carousel-nav', that)[0];
+                if (nav === undefined) { return; }
+
                 events.addClass(that, 'active');
                 carouselResizerFnc(j, that, 'static');
 
                 // create nav
-                nav = selector('.carousel-nav', that)[0];
                 col = getCols(j); // get responsive cols
 
                 if (contents.length <= col) { // toggle nav

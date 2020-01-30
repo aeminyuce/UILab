@@ -4,7 +4,7 @@
 .carousel-touchmove body { height: 100%; overflow: hidden; }
 
 .carousel { width: auto; overflow: hidden; position: relative; }
-.carousel:not(.active) { opacity: 0; }
+.carousel:not(.active) { display: none; }
 
 .carousel-slider { width: 20000px; }
 .carousel-slider > .content { float: left; }
