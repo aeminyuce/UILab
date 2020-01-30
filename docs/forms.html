@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="../css/typography.css"/>
     <link rel="stylesheet" href="../css/top-button.css"/>
 
+    <link rel="stylesheet" href="../css/autocomplete.css"/>
     <link rel="stylesheet" href="../css/form-holder.css"/>
     <link rel="stylesheet" href="../css/forms.css"/>
     <link rel="stylesheet" href="../css/textarea-counter.css"/>
@@ -46,6 +47,7 @@
     <script src="../js/events.js"></script>
     <script src="../js/user-agents.js"></script>
 
+    <script src="../js/ajax.js"></script>
     <script src="../js/alerts.js"></script>
     <script src="../js/effects.js"></script>
     <script src="../js/sticky-header.js"></script>
@@ -53,6 +55,7 @@
     <script src="../js/themes.js"></script>
     <script src="../js/top-button.js"></script>
 
+    <script src="../js/autocomplete.js"></script>
     <script src="../js/currency-spinner.js"></script>
     <script src="../js/dropdown.js"></script>
     <script src="../js/dual-multi-select.js"></script>
@@ -167,6 +170,18 @@
                             <div class="text round border-dual ease-form">
                                 <input type="text" placeholder="Placeholder Text">
                             </div>
+                        </div>
+                    </div>
+
+                    <h4>Autocomplete Forms</h4>
+                    <div class="padding-30-b">
+                        <div data-src="json/countries.json" data-val="code" class="autocomplete text text-icon round border-dual ease-form form-xs-inline">
+                            <i class="icon icon-sm icon-keyboard"></i>
+                            <input type="text" placeholder="Country Code" autocomplete="off">
+                        </div>
+                        <div data-src="json/countries.json" data-val="name" class="autocomplete text text-icon round border-dual ease-form form-xs-inline">
+                            <i class="icon icon-sm icon-keyboard"></i>
+                            <input type="text" placeholder="Country" autocomplete="off">
                         </div>
                     </div>
 
