@@ -13,7 +13,7 @@ var modal = {
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, setTimeout, ajax, useragents */
+    /*globals window, document, selector, events, setTimeout, ajax, useragents, screen */
 
     var
         pageYPos,
@@ -147,6 +147,11 @@ var modal = {
                 content.style.removeProperty('height');
                 content.style.removeProperty('min-height');
 
+                content.removeAttribute('data-openSize');
+
+                content.removeAttribute('data-customW');
+                content.removeAttribute('data-customH');
+
                 if (set.size === undefined) {
 
                     size = 'md';
@@ -174,6 +179,9 @@ var modal = {
 
                             content.style.width = customSize[0] + 'px';
                             content.style.height = customSize[1] + 'px';
+
+                            content.setAttribute('data-customW', customSize[0]);
+                            content.setAttribute('data-customH', customSize[1]);
 
                         } else { getSize(); }
 
@@ -232,6 +240,7 @@ var modal = {
                         if (size !== undefined && size !== 'fullscreen') { // inherit fixed size && fullscreen
 
                             content.style.width = content.offsetWidth + 'px';
+                            content.setAttribute('data-openSize', content.offsetWidth);
 
                             if (selector('.modal', content)[0].offsetHeight > content.offsetHeight) { // large contents has fixed and scrollable height
                                 content.style.height = content.offsetHeight + 'px';
@@ -370,12 +379,74 @@ var modal = {
     events.onload(modal.Start);
     events.on(window, 'resize', function () {
 
-        var win, bg;
+        var win, bg, openSize, userDefined, customW, customH;
 
         win = selector('.modal-win.show .modal-content:not(.fullscreen)')[0];
         if (win !== undefined) {
 
             bg = selector('.modal-bg')[0];
+
+            openSize = win.getAttribute('data-openSize');
+            if (openSize !== null) {
+
+                userDefined = 960; // md, inline
+                openSize = Number(openSize);
+
+                if (screen.width < openSize) {
+                    win.style.width = (screen.width - 20) + 'px';
+
+                } else {
+
+                    if (events.hasClass(win, 'lg')) {
+                        userDefined = 1200; // lg
+
+                    } else if (events.hasClass(win, 'sm')) {
+                        userDefined = 480; // sm
+                    }
+
+                    if (screen.width > userDefined) {
+                        win.style.width = userDefined + 'px';
+
+                    } else {
+                        win.style.width = (screen.width - 20) + 'px';
+                    }
+                }
+
+                win.style.removeProperty('height');
+                win.style.removeProperty('min-height');
+
+                if (selector('.modal', win)[0].offsetHeight > win.offsetHeight) { // large contents has fixed and scrollable height
+                    win.style.height = win.offsetHeight + 'px';
+
+                } else { // small contents has elastic height
+                    win.style.minHeight = win.offsetHeight + 'px';
+                }
+
+            }
+
+            customW = win.getAttribute('data-customW');
+            if (customW !== null) {
+
+                customH = win.getAttribute('data-customH');
+                if (customH !== null) {
+
+                    customW = Number(customW);
+                    customH = Number(customH);
+
+                    if (screen.width > customW) {
+
+                        win.style.width = customW + 'px';
+                        win.style.height = customH + 'px';
+
+                    } else {
+
+                        win.style.width = (screen.width - 20) + 'px';
+                        win.style.height = (screen.width - 20) / (customW / customH) + 'px';
+
+                    }
+
+                }
+            }
 
             win.style.top = Math.floor((bg.offsetHeight - win.offsetHeight) / 2) + 'px';
             win.style.left = Math.floor((bg.offsetWidth - win.offsetWidth) / 2) + 'px';
