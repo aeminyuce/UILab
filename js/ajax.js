@@ -24,8 +24,10 @@ var ajax = function (set) { // type, url, data, callback
         set.beforesend(ajax.request[i]);
     }
 
-    // no cache
-    if (!set.cache) {
+    // headers
+    ajax.request[i].setRequestHeader('X-Requested-With', 'XMLHttpRequest'); // set ajax request header
+
+    if (!set.cache) { // no cache header
         ajax.request[i].setRequestHeader('cache-control', 'no-cache');
     }
 
