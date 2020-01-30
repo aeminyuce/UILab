@@ -26,7 +26,7 @@ var events = {
                 if (events.handlers[pt][pe].length === 1) {
                     pt.addEventListener(pe.split('.')[0], function (ev) { // split for event naming
 
-                        for (i = 0; i < events.handlers[pt][pe].length; i += 1) {
+                        for (i = 0; i < events.handlers[pt][pe].length; i++) {
                             events.handlers[pt][pe][i](ev);
                         }
 
@@ -79,7 +79,7 @@ var events = {
 
                     nonClosest = ['mouseenter', 'mouseleave', 'mouseout', 'mouseover']; // non-closest events
 
-                    for (j = 0; j < targetEl.length; j += 1) {
+                    for (j = 0; j < targetEl.length; j++) {
 
                         if (nonClosest.indexOf(eName) > -1) { // control non-closest events
 
@@ -154,7 +154,7 @@ var events = {
                         if (events.handlers[pt][pe].length === 1) {
                             pt.addEventListener(pe.split('.')[0], function (ev) { // split for event naming
 
-                                for (m = 0; m < events.handlers[pt][pe].length; m += 1) {
+                                for (m = 0; m < events.handlers[pt][pe].length; m++) {
                                     events.handlers[pt][pe][m](ev);
                                 }
 
@@ -176,7 +176,7 @@ var events = {
 
             } else {
 
-                for (i = 0; i < l.length; i += 1) {
+                for (i = 0; i < l.length; i++) {
                     handlerFnc(l[i], e);
                 }
 
@@ -187,7 +187,7 @@ var events = {
         // for multiple events ex: 'click touchend'
         arr = e.split(' ');
 
-        for (k = 0; k < arr.length; k += 1) {
+        for (k = 0; k < arr.length; k++) {
             fnc(arr[k]);
         }
 
@@ -204,7 +204,7 @@ var events = {
                 if (events.handlers[pt] !== undefined) {
                     if (events.handlers[pt][pe] !== undefined) {
 
-                        for (j = 0; j < events.handlers[pt][pe].length; j += 1) {
+                        for (j = 0; j < events.handlers[pt][pe].length; j++) {
 
                             pt.removeEventListener(pe.split('.')[0], events.handlers[pt][pe][j], true); // split for event naming
                             events.handlers[pt][pe].splice(events.handlers[pt][pe][j], 1); // remove event from eventHandlers array
@@ -223,7 +223,7 @@ var events = {
 
             } else {
 
-                for (i = 0; i < l.length; i += 1) {
+                for (i = 0; i < l.length; i++) {
                     handlerFnc(l[i], e);
                 }
 
@@ -234,7 +234,7 @@ var events = {
         // for multiple events ex: 'click touchend'
         arr = e.split(' ');
 
-        for (k = 0; k < arr.length; k += 1) {
+        for (k = 0; k < arr.length; k++) {
             fnc(arr[k]);
         }
 
@@ -255,14 +255,14 @@ var events = {
             }
 
             l = selector(t);
-            for (i = 0; i < l.length; i += 1) { l[i].dispatchEvent(event); }
+            for (i = 0; i < l.length; i++) { l[i].dispatchEvent(event); }
 
         };
 
         // for multiple events ex: 'click touchend'
         arr = e.split(' ');
 
-        for (j = 0; j < arr.length; j += 1) {
+        for (j = 0; j < arr.length; j++) {
             fnc(arr[j]);
         }
 
@@ -274,7 +274,7 @@ var events = {
         var svg, re, l = selector(t), i;
         svg = ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'];
 
-        for (i = 0; i < l.length; i += 1) {
+        for (i = 0; i < l.length; i++) {
 
             if (svg.indexOf(l[i].tagName.toLowerCase()) !== -1) { // check SVG and own elements
                 re =  new RegExp('(^| )' + name + '( |$)', 'gi').test(l[i].className.baseVal);
@@ -296,8 +296,8 @@ var events = {
         name = name.split(' ');
         svg = ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'];
 
-        for (i = 0; i < l.length; i += 1) {
-            for (j = 0; j < name.length; j += 1) {
+        for (i = 0; i < l.length; i++) {
+            for (j = 0; j < name.length; j++) {
 
                 if (svg.indexOf(l[i].tagName.toLowerCase()) !== -1) { // check SVG and own elements
 
@@ -334,8 +334,8 @@ var events = {
         name = name.split(' ');
         svg = ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'];
 
-        for (i = 0; i < l.length; i += 1) {
-            for (j = 0; j < name.length; j += 1) {
+        for (i = 0; i < l.length; i++) {
+            for (j = 0; j < name.length; j++) {
 
                 re = new RegExp('(\\s|^)' + name[j] + '(\\s|$)');
 
@@ -364,7 +364,7 @@ var events = {
         name = name.split(' ');
         svg = ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'];
 
-        for (i = 0; i < l.length; i += 1) {
+        for (i = 0; i < l.length; i++) {
 
             isSvgElements = svg.indexOf(l[i].tagName.toLowerCase()) !== -1; // check SVG and own elements
 
@@ -375,7 +375,7 @@ var events = {
                 arr = l[i].className.split(' ');
             }
 
-            for (j = 0; j < name.length; j += 1) {
+            for (j = 0; j < name.length; j++) {
 
                 index = arr.indexOf(name[j]);
                 if (index >= 0) { arr.splice(index, 1); } else { arr.push(name[j]); }
@@ -402,21 +402,21 @@ var events = {
 
         'use strict';
         var l = selector(t), i;
-        for (i = 0; i < l.length; i += 1) { l[i].style.display = 'block'; }
+        for (i = 0; i < l.length; i++) { l[i].style.display = 'block'; }
 
     },
     hide: function (t) {
 
         'use strict';
         var l = selector(t), i;
-        for (i = 0; i < l.length; i += 1) { l[i].style.display = 'none'; }
+        for (i = 0; i < l.length; i++) { l[i].style.display = 'none'; }
 
     },
     each: function (t, callback) {
 
         'use strict';
         var l = selector(t), i;
-        for (i = 0; i < l.length; i += 1) { callback.call(l[i], i); }
+        for (i = 0; i < l.length; i++) { callback.call(l[i], i); }
 
     },
     closest: function (t, outer) {
@@ -427,11 +427,11 @@ var events = {
         if (typeof outer !== 'object') { o = selector(outer); } else { o = [outer]; }
         l = selector(t);
 
-        for (i = 0; i < l.length; i += 1) {
+        for (i = 0; i < l.length; i++) {
             p = l[i].parentNode;
             while (p) {
 
-                for (j = 0; j < o.length; j += 1) { if (p === o[j]) { return selector(p); } }
+                for (j = 0; j < o.length; j++) { if (p === o[j]) { return selector(p); } }
                 p = p.parentNode;
 
             }

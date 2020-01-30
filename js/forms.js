@@ -32,7 +32,7 @@ var forms = {};
 
             } else { events.removeClass('.form-focus', 'form-focus'); }
 
-            for (i = 0; i < classes.length; i += 1) {
+            for (i = 0; i < classes.length; i++) {
 
                 parent = events.closest(t, '.' + classes[i]);
 

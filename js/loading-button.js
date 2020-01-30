@@ -19,7 +19,7 @@ var loadingButton = {
             var l, i, re, rex, styles, html;
 
             l = selector(that);
-            for (i = 0; i < l.length; i += 1) {
+            for (i = 0; i < l.length; i++) {
 
                 if (!events.hasClass(l[i], 'btn')) { return; }
 

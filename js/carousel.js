@@ -163,7 +163,7 @@ var carousel = {
 
         size = Math.round(that.offsetWidth / size);
 
-        for (j = 0; j < contents.length; j += 1) {
+        for (j = 0; j < contents.length; j++) {
             contents[j].style.width = size + 'px';
         }
 
@@ -407,7 +407,7 @@ var carousel = {
                 navDotsHtml = '';
                 navDots.innerHTML = '';
 
-                for (k = 0; k < contents.length; k += 1) {
+                for (k = 0; k < contents.length; k++) {
                     navDotsHtml += '<i class="ease-all ease-slow"></i>';
                 }
 

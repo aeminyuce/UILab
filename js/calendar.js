@@ -177,7 +177,7 @@ var calendar = {
                 '</caption>' +
                 '<thead>';
 
-            for (i = 0; i < calendar.days.length; i += 1) {
+            for (i = 0; i < calendar.days.length; i++) {
                 html += '<th>' + calendar.days[i] + '</th>';
             }
 
@@ -206,11 +206,11 @@ var calendar = {
             activeDay = false;
             today = new Date().getFullYear() + ' ' + new Date().getMonth() + ' ' + new Date().getDate();
 
-            for (i = 0; i < 6; i += 1) {
+            for (i = 0; i < 6; i++) {
 
                 html += '<tr>';
 
-                for (j = 0; j < 7; j += 1) {
+                for (j = 0; j < 7; j++) {
 
                     if (days > prevLastDay) {
 
@@ -304,7 +304,7 @@ var calendar = {
                             response = JSON.parse(response);
                             if (response.length === 'undefined') { return; }
 
-                            for (i = 0; i < response.length; i += 1) {
+                            for (i = 0; i < response.length; i++) {
 
                                 if (response[i] === null) { return; }
 
@@ -322,7 +322,7 @@ var calendar = {
 
                                         keys = Object.keys(response[i].details);
 
-                                        for (j = 0; j < keys.length; j += 1) {
+                                        for (j = 0; j < keys.length; j++) {
                                             details += '<span><i>' + keys[j] + '</i> ' + response[i].details[keys[j]] + '</span>';
                                         }
 
@@ -463,7 +463,7 @@ var calendar = {
                 year = date.getFullYear();
                 years = 1920 + (new Date().getFullYear() - 1920) + 100;
 
-                for (i = 1920; i <= years; i += 1) {
+                for (i = 1920; i <= years; i++) {
 
                     html += '<li><button type="button" tabindex="-1" ';
 
@@ -483,7 +483,7 @@ var calendar = {
                 panelType = 'month';
 
                 month = calendar.months[date.getMonth()];
-                for (i = 0; i < calendar.months.length; i += 1) {
+                for (i = 0; i < calendar.months.length; i++) {
 
                     html += '<li><button type="button" tabindex="-1" ';
 
@@ -784,7 +784,7 @@ var calendar = {
                 day = this.getAttribute('data-day');
                 list = selector('.details li', that);
 
-                for (i = 0; i < list.length; i += 1) {
+                for (i = 0; i < list.length; i++) {
 
                     if (list[i].getAttribute('data-d') === day) {
                         break;

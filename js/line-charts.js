@@ -180,7 +180,7 @@ var lineCharts = {
 
                         data.stepArr = [];
 
-                        for (k = 0; k < Math.ceil(x.length / data.step); k += 1) {
+                        for (k = 0; k < Math.ceil(x.length / data.step); k++) {
                             data.stepArr.push(k * data.step);
                         }
 
@@ -192,7 +192,7 @@ var lineCharts = {
                 col = (data.width - (lineCharts.right + lineCharts.left)) / (x.length - 1);
                 html += '<g class="x">';
 
-                for (i = 0; i < x.length; i += 1) {
+                for (i = 0; i < x.length; i++) {
 
                     posX = (i * col) + lineCharts.left;
 
@@ -228,7 +228,7 @@ var lineCharts = {
                 html += '</g>' +
                     '<g class="y">';
 
-                for (i = 0; i <= rows; i += 1) {
+                for (i = 0; i <= rows; i++) {
 
                     posY = parseInt((i * (data.height - (lineCharts.top + lineCharts.bottom)) / rows) + lineCharts.top, 10);
 
@@ -273,7 +273,7 @@ var lineCharts = {
                     }
 
                     // create paths and circles
-                    for (i = 0; i < y.length; i += 1) {
+                    for (i = 0; i < y.length; i++) {
 
                         posX = (i * col) + lineCharts.left;
                         posY = data.height - (data.height + (((data.height - (lineCharts.top + lineCharts.bottom)) * (y[i] - yMax)) / (yMax - yMin)) - lineCharts.top);
@@ -373,11 +373,11 @@ var lineCharts = {
 
                     html += '<ul class="info">';
 
-                    for (i = 0; i < lines.length; i += 1) {
+                    for (i = 0; i < lines.length; i++) {
 
                         total = 0;
 
-                        for (j = 0; j < data[i].y.length; j += 1) {
+                        for (j = 0; j < data[i].y.length; j++) {
                             total += parseInt(data[i].y[j], 10);
                         }
 

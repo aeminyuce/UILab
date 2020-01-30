@@ -81,7 +81,7 @@ var dualMultiSelect = {};
                 if (isNaN(arrStart)) {
 
                     arrStart = 0;
-                    for (i = 0; i < options.length; i += 1) {
+                    for (i = 0; i < options.length; i++) {
 
                         arrStart += 1;
                         arr[i] = arrStart.toString();
@@ -90,7 +90,7 @@ var dualMultiSelect = {};
 
                 } else {
 
-                    for (i = 1; i <= options.length; i += 1) {
+                    for (i = 1; i <= options.length; i++) {
 
                         if (arr[i] === '') {
 
@@ -159,7 +159,7 @@ var dualMultiSelect = {};
                 inserted = false;
 
                 // move to index
-                for (j = 0; j < sourceList.length; j += 1) {
+                for (j = 0; j < sourceList.length; j++) {
 
                     index = Number(sourceList[j].getAttribute('data-index'));
                     arr.push(index);
@@ -196,7 +196,7 @@ var dualMultiSelect = {};
             var i, that, options, selects, parent, dir;
 
             options = Array.prototype.slice.call(e.target); // get option list
-            for (i = 0; options.length; i += 1) {
+            for (i = 0; options.length; i++) {
 
                 if (options[i].selected) { // get selected option
 

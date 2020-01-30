@@ -48,7 +48,7 @@ var imageUploader = {
                 // check allowed file types
                 allowed = [];
 
-                for (i = 0; i < files.length; i += 1) {
+                for (i = 0; i < files.length; i++) {
 
                     ext = files[i].name.split('.')[1].toLowerCase();
                     if (ext !== null) {
@@ -474,7 +474,7 @@ var imageUploader = {
                 slice = byteCharacters.slice(j, j + sliceSize);
                 byteNumbers = new Array(slice.length);
 
-                for (i = 0; i < slice.length; i += 1) {
+                for (i = 0; i < slice.length; i++) {
                     byteNumbers[i] = slice.charCodeAt(i);
                 }
 

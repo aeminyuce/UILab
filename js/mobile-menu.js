@@ -41,7 +41,7 @@ var mobileMenu = {
 
         contents = selector('[data-mm]');
 
-        for (i = 0; i < contents.length; i += 1) {
+        for (i = 0; i < contents.length; i++) {
 
             id = '.mm-' + contents[i].getAttribute('data-mm');
             el = selector(id)[0];
@@ -148,7 +148,7 @@ var mobileMenu = {
             } else if (importers.length > 1) {
 
                 indexArr = [];
-                for (i = 0; i < importers.length; i += 1) {
+                for (i = 0; i < importers.length; i++) {
 
                     index = importers[i].getAttribute('data-import');
 
@@ -161,7 +161,7 @@ var mobileMenu = {
 
                 }
 
-                for (i = 0; i < importers.length; i += 1) {
+                for (i = 0; i < importers.length; i++) {
                     moveFnc(importers[i], indexArr[i]);
                 }
 
@@ -177,7 +177,7 @@ var mobileMenu = {
                 return el != null;
             });
 
-            for (j = 0; j < filtered.length; j += 1) {
+            for (j = 0; j < filtered.length; j++) {
                 content.appendChild(filtered[j]);
             }
 

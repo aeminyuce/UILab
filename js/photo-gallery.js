@@ -154,7 +154,7 @@ var photoGallery = {
 
             if (preview.length > 0) {
 
-                for (i = 0; i < preview.length; i += 1) {
+                for (i = 0; i < preview.length; i++) {
                     preview[i].parentNode.removeChild(preview[i]);
                 }
 

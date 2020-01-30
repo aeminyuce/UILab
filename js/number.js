@@ -49,7 +49,7 @@ var number = {};
 
                 if (getValues !== null) {
 
-                    for (i = 0; i < getValues.length; i += 1) {
+                    for (i = 0; i < getValues.length; i++) {
                         newValues += getValues[i];
                     }
 

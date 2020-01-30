@@ -28,7 +28,7 @@ var autocomplete = {
             keys = Object.keys(autocomplete.customLetters); // returns array
 
             chars = '(([';
-            for (k = 0; k < keys.length; k += 1) { chars += keys[k]; }
+            for (k = 0; k < keys.length; k++) { chars += keys[k]; }
             chars += ']))';
 
             re = new RegExp(chars, 'g');
@@ -156,7 +156,7 @@ var autocomplete = {
                             events.removeClass(p, 'menu-t');
                             list[0].innerHTML = '';
 
-                            for (i = 0; i < response.length; i += 1) {
+                            for (i = 0; i < response.length; i++) {
 
                                 key = response[i][getVal];
                                 txt = '';
@@ -187,7 +187,7 @@ var autocomplete = {
                                         // create lines
                                         if (typeof key === 'number') {
 
-                                            for (j = 0; j < key.toString().length; j += 1) {
+                                            for (j = 0; j < key.toString().length; j++) {
 
                                                 if (j ===  key.toString().indexOf(m)) { txt += '<strong>'; }
                                                 if (j === (key.toString().indexOf(m) + v.length)) { txt += '</strong>'; }
@@ -198,7 +198,7 @@ var autocomplete = {
 
                                         } else {
 
-                                            for (j = 0; j < key.length; j += 1) {
+                                            for (j = 0; j < key.length; j++) {
 
                                                 if (j === customLowerCase(key).indexOf(m)) { txt += '<strong>'; }
                                                 if (j === (customLowerCase(key).indexOf(m) + v.length)) { txt += '</strong>'; }
@@ -236,7 +236,7 @@ var autocomplete = {
                                 beforesend: function (xhr) {
 
                                     // abort still processing previous autocomplete requests
-                                    for (n = 0; n < autocompleteRequests.length; n += 1) {
+                                    for (n = 0; n < autocompleteRequests.length; n++) {
 
                                         autocompleteRequests[n].abort();
                                         autocompleteRequests.splice(n, 1);

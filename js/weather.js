@@ -54,7 +54,7 @@ var weather = {
 
                             events.addClass(this, 'loaded');
 
-                            for (i = 0; i < data.length; i += 1) {
+                            for (i = 0; i < data.length; i++) {
 
                                 if (data[i] === 'clear') { // convert sun to stars
                                     animations.push('stars');
@@ -83,7 +83,7 @@ var weather = {
                             }
 
                             // create animations
-                            for (i = 0; i < animations.length; i += 1) {
+                            for (i = 0; i < animations.length; i++) {
                                 html += '<div class="' + animations[i] + '" style="background-image: url(' + weather.graphPath + animations[i] + '.png);"></div>';
                             }
 

@@ -89,7 +89,7 @@ var alerts = {
             if (set.custom !== undefined) {
 
                 keys = Object.keys(set.custom);
-                for (i = 0; i < keys.length; i += 1) {
+                for (i = 0; i < keys.length; i++) {
 
                     val = set.custom[keys[i]];
 
@@ -300,11 +300,11 @@ var alerts = {
                 if (holder !== undefined) {
 
                     prev = selector('.alerts-msg.' + set.pos);
-                    for (j = 0; j < prev.length; j += 1) {
+                    for (j = 0; j < prev.length; j++) {
 
                         slide = 0;
 
-                        for (i = j + 1; i < prev.length; i += 1) {
+                        for (i = j + 1; i < prev.length; i++) {
                             slide += Number(prev[i].offsetHeight + 10);
                         }
 
@@ -339,7 +339,7 @@ var alerts = {
 
             var i;
 
-            for (i = 0; i < messageQueue.length; i += 1) {
+            for (i = 0; i < messageQueue.length; i++) {
 
                 if (messageQueue[i][0] === this) {
                     messageQueue.splice(i, 1);

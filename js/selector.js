@@ -41,7 +41,7 @@ var selector = function (item, outer) {
         // discard "this" object && form object (form element not returns "this", it returns all form elements)
         if (outerEl.length !== undefined && Array.prototype.slice.call(outerEl).length === 1) {
 
-            for (i = 0; i < outerEl.length; i += 1) {
+            for (i = 0; i < outerEl.length; i++) {
 
                 outerElIndex = outerEl[i].querySelectorAll(item);
                 if (outerEl.length === 1) {

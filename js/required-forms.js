@@ -87,7 +87,7 @@ var requiredForms = {
                         radiosCheck = 0;
                         radios = selector('[type="radio"][name="' + t.name + '"]');
 
-                        for (i = 0; i < radios.length; i += 1) {
+                        for (i = 0; i < radios.length; i++) {
                             if (radios[i].checked) { radiosCheck += 1; }
                         }
 
@@ -201,7 +201,7 @@ var requiredForms = {
             forms = [];
             elems = e.target.elements; // get submitted element list
 
-            for (i = 0; i < elems.length; i += 1) { // filter required elements
+            for (i = 0; i < elems.length; i++) { // filter required elements
 
                 if (events.hasClass(elems[i], 'required')) {
                     forms.push(elems[i]);
@@ -222,7 +222,7 @@ var requiredForms = {
 
             }
 
-            for (i = 0; i < forms.length; i += 1) {
+            for (i = 0; i < forms.length; i++) {
 
                 if (events.hasClass(forms[i], 'success')) {
                     success += 1;

@@ -73,7 +73,7 @@ var textareaCounter = {};
 
             setTimeout(function () {
 
-                for (i = 0; i < that.length; i += 1) {
+                for (i = 0; i < that.length; i++) {
                     counter(that[i]);
                 }
 

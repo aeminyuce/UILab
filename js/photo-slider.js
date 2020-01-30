@@ -64,7 +64,7 @@ var photoSlider = {};
 
                     navHtml = '';
 
-                    for (j = 0; j < dataSrcLists[i].length; j += 1) {
+                    for (j = 0; j < dataSrcLists[i].length; j++) {
 
                         if (j === 0) {
                             navHtml += '<i class="selected ease-layout"></i>';

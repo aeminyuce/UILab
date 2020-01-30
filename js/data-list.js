@@ -49,7 +49,7 @@ var dataList = {
         keys = Object.keys(dataList.customLetters); // returns array
 
         chars = '(([';
-        for (k = 0; k < keys.length; k += 1) { chars += keys[k]; }
+        for (k = 0; k < keys.length; k++) { chars += keys[k]; }
         chars += ']))';
 
         re = new RegExp(chars, 'g');
@@ -117,7 +117,7 @@ var dataList = {
         classes = classes.replace(re, ' ').replace(rex, '');
         html = '<button class="' + classes + '"><i class="' + dataList.prevIcon + '"></i></button>\n';
 
-        for (i = min; i <= max; i += 1) {
+        for (i = min; i <= max; i++) {
 
             if (i === pagingCount[id]) {
 
@@ -221,13 +221,13 @@ var dataList = {
 
         if (showCount[id] > 0 && pagingCount[id] > 0) {
 
-            for (i = (pagingCount[id] - 1) * showCount[id]; i < pagingCount[id] * showCount[id]; i += 1) {
+            for (i = (pagingCount[id] - 1) * showCount[id]; i < pagingCount[id] * showCount[id]; i++) {
                 evenList(list[i]);
             }
 
         } else {
 
-            for (i = 0; i < list.length; i += 1) {
+            for (i = 0; i < list.length; i++) {
                 evenList(list[i]);
             }
 
@@ -437,7 +437,7 @@ var dataList = {
                     if (vals[i] !== '') { this.checked = true; }
 
                 } else if (this.tagName === 'SELECT') {
-                    for (j = 0; j < this.options.length; j += 1) {
+                    for (j = 0; j < this.options.length; j++) {
 
                         if (customLowerCase(this.options[j].innerText) === vals[i]) {
 
@@ -544,7 +544,7 @@ var dataList = {
                         contentVal = customLowerCase(contentVal);
                         contentArr = contentVal.split(dataList.valueSplit);
 
-                        for (j = 0; j < vals.length; j += 1) {
+                        for (j = 0; j < vals.length; j++) {
 
                             if (vals[j] !== '') {
 
@@ -753,7 +753,7 @@ var dataList = {
 
             } else {
 
-                for (i = 0; i < dataShow.options.length; i += 1) {
+                for (i = 0; i < dataShow.options.length; i++) {
 
                     if (Number(customLowerCase(dataShow.options[i].innerText)) === showCount[id]) {
 
