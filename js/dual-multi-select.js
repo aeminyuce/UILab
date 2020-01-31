@@ -8,7 +8,7 @@ var dualMultiSelect = {};
 (function () {
 
     'use strict';
-    /*globals document, selector, events, ajax, setTimeout */
+    /*globals document, selector, events, ajax, setTimeout, useragents */
 
     var
         resetOptions,
@@ -25,16 +25,23 @@ var dualMultiSelect = {};
             targetList = selector('option', selects[1]);
 
             events.each(sourceList, function () {
-                this.selected = false;
+
+                if (useragents.mobile) {
+                    this.selected = true;
+
+                } else {
+                    this.selected = false;
+                }
+
             });
 
             events.each(targetList, function () {
 
-                if (isSubmit === undefined) {
-                    this.selected = false;
+                if (useragents.mobile || isSubmit !== undefined) {
+                    this.selected = true;
 
                 } else {
-                    this.selected = true;
+                    this.selected = false;
                 }
 
             });

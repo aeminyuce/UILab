@@ -24,17 +24,17 @@
 .text input,.select select,.select-multi select,.textarea textarea { width: 100%; background-color: rgba(255,255,255,0); border: 0; }
 .text:not([class*="align-"]) input:not([class*="align-"]),.select:not([class*="align-"]) select:not([class*="align-"]),.select-multi:not([class*="align-"]) select:not([class*="align-"]),.textarea:not([class*="align-"]) textarea:not([class*="align-"]) { text-align: left !important; }
 .text input,.select select,.select-multi select,.range { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
-.text input,.select select,.textarea textarea { line-height: 20px; padding: 5px; border-radius: 0/* border radius fix for Chrome*/; }
+.text input,.select select,.textarea textarea { line-height: 18px; padding: 5px; border-radius: 0/* border radius fix for Chrome*/; }
 .text input,.select select { height: 30px; overflow: hidden; }
-.text.text-lg input,.select-lg select { font-size: 16px; line-height: 30px; height: 40px; padding-right: 10px; padding-left: 10px; }
+.text.text-lg input,.select-lg select { font-size: 16px; line-height: 28px; height: 40px; padding-right: 10px; padding-left: 10px; }
 
 .toggle-textarea:not(.form-focus) textarea { height: 28px; }
 
 .no-border .text input,.no-border .select select,.text.no-border input,.select.no-border select { line-height: 22px; height: 32px; }
-.no-border .text.text-lg input,.no-border .select-lg select,.text.no-border.text-lg input,.select.no-border.select-lg select { line-height: 30px; height: 40px; }
-.no-border.textarea textarea { line-height: 20px; }
+.no-border .text.text-lg input,.no-border .select-lg select,.text.no-border.text-lg input,.select.no-border.select-lg select { line-height: 28px; height: 40px; }
+.no-border.textarea textarea { line-height: 18px; }
 
-.border-dual .text input,.border-dual .select select,.text.border-dual input,.select.border-dual select { line-height: 20px; height: 28px; }
+.border-dual .text input,.border-dual .select select,.text.border-dual input,.select.border-dual select { line-height: 18px; height: 28px; }
 .border-dual .text.text-lg input,.border-dual .select-lg select,.text.border-dual.text-lg input,.select.border-dual.select-lg select { line-height: 28px; height: 38px; }
 .border-dual.textarea textarea { line-height: 18px; }
 
@@ -164,21 +164,23 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i { transform: tran
 .form-focus.form-light { border-color: rgba(255,255,255,1); }
 .form-focus:not(.form-readonly) { background-color: #f9f9f9 !important; box-shadow: inset 0 0 1px rgba(0,0,0,.075); }
 .form-focus > input,.form-focus > select,.form-focus > textarea,.form-focus > .icon:not([class*="ui-"]) { color: #000 !important; }
+.form-focus.form-light > input,.form-focus.form-light > select,.form-focus.form-light > textarea,.form-focus.form-light > .icon:not([class*="ui-"]) { color: #fff !important; }
 [class*="text-icon"].form-focus > .icon { opacity: 1; }
 .form-focus.select > .icon { transform: translateY(-50%) rotate(-180deg); opacity: 1; }
 
 /* do not group */
-::-webkit-input-placeholder { color: rgba(0,0,0,.4); }
-::-moz-placeholder { color: rgba(0,0,0,.4); opacity: 1; }
+::placeholder { color: rgba(0,0,0,.4); }
+::-moz-placeholder { opacity: 1; }
+::-ms-input-placeholder { color: rgba(0,0,0,.4); }
 
-.form-focus > ::-webkit-input-placeholder { color: rgba(0,0,0,.23); }
-.form-focus > ::-moz-placeholder { color: rgba(0,0,0,.23); opacity: 1; }
+.form-focus > ::placeholder { color: rgba(0,0,0,.23); }
+.form-focus > ::-ms-input-placeholder { color: rgba(0,0,0,.23); }
 
-.form-light > ::-webkit-input-placeholder { color: #fff; }
-.form-light > ::-moz-placeholder { color: #fff; opacity: 1; }
+.form-light > ::placeholder { color: rgba(255,255,255,.4); }
+.form-light > ::-ms-input-placeholder { color: rgba(255,255,255,.4); }
 
-.form-light.form-focus > ::-webkit-input-placeholder { color: rgba(0,0,0,.4); }
-.form-light.form-focus > ::-moz-placeholder { color: rgba(0,0,0,.4); opacity: 1; }
+.form-light.form-focus > ::placeholder { color: rgba(255,255,255,.23); }
+.form-light.form-focus > ::-ms-input-placeholder { color: rgba(255,255,255,.23); }
 /* do not group */
 
 [class*="text-icon"] > .icon { line-height: 1.125; position: absolute; top: 50%; opacity: .45; cursor: default; transform: translateY(-50%); }

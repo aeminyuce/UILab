@@ -46,14 +46,11 @@
     .form-focus > input,.form-focus > select,.form-focus > textarea,.form-focus > .icon:not([class*="ui-"]) { color: #fff !important; }
 
     /* do not group */
-    ::-webkit-input-placeholder { color: rgba(255,255,255,.4); }
-    ::-moz-placeholder { color: rgba(255,255,255,.4); opacity: 1; }
+    ::placeholder { color: rgba(255,255,255,.4); }
+    ::-ms-input-placeholder { color: rgba(255,255,255,.4); }
 
-    .form-focus > ::-webkit-input-placeholder { color: rgba(255,255,255,.23); }
-    .form-focus > ::-moz-placeholder { color: rgba(255,255,255,.23); opacity: 1; }
-
-    .form-light.form-focus > ::-webkit-input-placeholder { color: rgba(255,255,255,.4); }
-    .form-light.form-focus > ::-moz-placeholder { color: rgba(255,255,255,.4); opacity: 1; }
+    .form-focus > ::placeholder { color: rgba(255,255,255,.23); }
+    .form-focus > ::-ms-input-placeholder { color: rgba(255,255,255,.23); }
     /* do not group */
 
     .check-custom i,.radio-custom i { background-color: rgba(255,255,255,.65); }

@@ -6,7 +6,7 @@
 
 .no-transitions-all .ease-btn .icon,.no-transitions-all .ease-1st-btn > * .icon,.no-transitions-all .ease-2nd-btn > * > * .icon { transition-property: none !important; }
 
-.btn { text-align: center; vertical-align: middle; line-height: 20px; height: 32px; background-color: rgba(0,0,0,.08); padding-top: 6px; padding-bottom: 6px; display: inline-block; position: relative; cursor: pointer; }
+.btn { text-align: center; vertical-align: middle; height: 32px; background-color: rgba(0,0,0,.08); padding-top: 6px; padding-bottom: 6px; display: inline-block; position: relative; cursor: pointer; }
 input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .btn.border { padding-top: 5px; padding-bottom: 5px; }
 .btn.border-dual { padding-top: 4px; padding-bottom: 4px; }
