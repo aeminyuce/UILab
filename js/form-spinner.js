@@ -15,7 +15,7 @@ var spinnerForm = {};
     spinnerForm.Start = function () {
 
         // Events
-        events.on(document, 'click', '.spinner-up,.spinner-down', function () {
+        events.on(document, 'click', '.spinner-t,.spinner-b', function () {
 
             var p = events.closest(this, '.form-spinner'), input = selector('[type="text"]', p),
 
