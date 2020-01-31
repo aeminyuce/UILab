@@ -149,7 +149,7 @@ var forms = {};
         });
 
         // toggle password
-        events.on(document, 'click touchend', '.toggle-password', function () {
+        events.on(document, 'click touchend', '.show-pass', function () {
 
             var t, p, id = this.getAttribute('data-id');
 
