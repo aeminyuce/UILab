@@ -196,7 +196,7 @@ var requiredForms = {
         // Events
         events.on(document, 'submit', 'form', function (e) {
 
-            var i, elems, forms, success, getIndex, getRect, scrollIndex, scrollTarget, scrollPos, scrollAnimate;
+            var i, elems, forms, success, getIndex, getRect, scrollIndex, scrollPos, scrollAnimate;
 
             forms = [];
             elems = e.target.elements; // get submitted element list
@@ -245,18 +245,7 @@ var requiredForms = {
                 e.preventDefault();
                 e.stopPropagation();
 
-                if (requiredForms.target === '') {
-
-                    scrollTarget = window;
-                    scrollPos = scrollTarget.pageYOffset;
-
-
-                } else {
-
-                    scrollTarget = selector(requiredForms.target)[0];
-                    scrollPos = scrollTarget.scrollTop;
-
-                }
+                scrollPos = window.pageYOffset;
 
                 getRect = forms[scrollIndex].getBoundingClientRect();
                 scrollIndex = getRect.top - (getRect.height * 2) + scrollPos;
@@ -266,7 +255,7 @@ var requiredForms = {
 
                     scrollPos -= 10;
 
-                    scrollTarget.scrollTo(scrollIndex, scrollPos);
+                    window.scrollTo(scrollIndex, scrollPos);
                     if (scrollPos + 10 <= scrollIndex) { clearInterval(scrollAnimate); }
 
                 }, 2);
