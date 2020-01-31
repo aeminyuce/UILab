@@ -24,7 +24,7 @@ var calendar = {
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, setTimeout, ajax */
+    /*globals document, selector, events, setTimeout, screen, ajax */
 
     var checkCalendars;
 
@@ -657,7 +657,7 @@ var calendar = {
                 pickerWidth = picker.offsetWidth;
                 pickerHeight = picker.offsetHeight;
 
-                if (offset.left + pickerWidth + 15 > window.innerWidth) { // 15px: scrollbar size
+                if (offset.left + pickerWidth + 15 > screen.width) { // 15px: scrollbar size
 
                     if ((offset.left - (pickerWidth - form.offsetWidth) - 15) > 0) {
                         events.addClass(form, 'picker-l');
@@ -665,7 +665,7 @@ var calendar = {
 
                 }
 
-                if (offset.top + parseInt(formHeight + pickerHeight, 10) >= window.innerHeight) {
+                if (offset.top + parseInt(formHeight + pickerHeight, 10) >= screen.height) {
 
                     if (offset.top - parseInt(formHeight + pickerHeight, 10) + formHeight > 0) {
                         events.addClass(form, 'picker-t');
