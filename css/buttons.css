@@ -6,7 +6,7 @@
 
 .no-transitions-all .ease-btn .icon,.no-transitions-all .ease-1st-btn > * .icon,.no-transitions-all .ease-2nd-btn > * > * .icon { transition-property: none !important; }
 
-.btn { text-align: center; vertical-align: middle; height: 32px; background-color: rgba(0,0,0,.08); padding-top: 6px; padding-bottom: 6px; display: inline-block; position: relative; cursor: pointer; }
+.btn { text-align: center; vertical-align: middle; line-height: 18px; height: 32px; background-color: rgba(0,0,0,.08); padding-top: 6px; padding-bottom: 6px; display: inline-block; position: relative; cursor: pointer; }
 input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .btn.border { padding-top: 5px; padding-bottom: 5px; }
 .btn.border-dual { padding-top: 4px; padding-bottom: 4px; }
@@ -27,7 +27,7 @@ input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .btn.ui-dark .icon,.btn.ui-x-dark .icon { opacity: 1; }
 html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hover .icon { opacity: 1 !important; }
 
-.btn-lg { font-size: 16px; line-height: 20px; height: 42px; padding-top: 10px; padding-bottom: 10px; }
+.btn-lg { font-size: 16px; line-height: 22px; height: 42px; padding-top: 10px; padding-bottom: 10px; }
 .btn-lg.btn-square { width: 42px; }
 .btn-lg.border { padding-top: 9px; padding-bottom: 9px; }
 .btn-lg.border-dual { padding-top: 7px; padding-bottom: 7px; }
