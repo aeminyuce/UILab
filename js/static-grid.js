@@ -8,11 +8,11 @@ var staticGrid = {};
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, ajax */
+    /*globals window, document, selector, events, ajax, screen */
 
     staticGrid.Start = function () {
 
-        var screenW, fnc, o, p, siblings, i;
+        var fnc, o, p, siblings, i;
 
         if (selector('[class*="static-"][class*="order-"]').length > 0) {
 
@@ -70,16 +70,14 @@ var staticGrid = {};
 
             };
 
-            screenW = window.innerWidth;
+            fnc('xs', screen.width < 481);
+            fnc('sm', screen.width < 768);
+            fnc('md', screen.width < 960);
 
-            fnc('xs', screenW < 481);
-            fnc('sm', screenW < 768);
-            fnc('md', screenW < 960);
+            fnc('default', screen.width < 1200);
 
-            fnc('default', screenW < 1200);
-
-            fnc('lg', screenW > 1199);
-            fnc('xl', screenW > 1679);
+            fnc('lg', screen.width > 1199);
+            fnc('xl', screen.width > 1679);
 
         }
 
