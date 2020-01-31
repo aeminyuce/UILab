@@ -8,9 +8,6 @@
 html:not(.mobile) .top-button:hover { opacity: .5; }
 html:not(.mobile) .top-button:hover > .icon{ transform: translateY(-6px); }
 
-@media (max-height: 400px) {
-    .top-button { display: none !important; }
-}
 @media (max-width: 320px) {
     .top-button { display: none !important; }
 }

@@ -8,19 +8,16 @@ var topButton = {
     titleText : 'Back to top!',
 
     classes: 'circle',
-    icon: 'icon icon-arrow-up',
-    target: ''
-
+    icon: 'icon icon-arrow-up'
 };
 
 (function () {
 
     'use strict';
-    /*globals window, events, selector, setTimeout ,setInterval, clearInterval, useragents */
+    /*globals window, events, selector, setTimeout ,setInterval, clearInterval, useragents, screen */
 
     var
         topBtn,
-        scrollTarget,
         scrollPos,
         btnAnimate;
 
@@ -50,19 +47,16 @@ var topButton = {
 
         };
 
-        if (topButton.target === '') {
+        if (selector('body')[0].offsetHeight > (screen.height * 2)) {
 
-            scrollTarget = window;
-            scrollPos = scrollTarget.pageYOffset;
+            scrollPos = window.pageYOffset;
 
-            if (scrollPos > 50 && window.innerWidth > 767) { showTopBtn(); } else { hideTopBtn(); }
+            if (scrollPos > + (screen.height / 3) && screen.width > 767) {
+                showTopBtn();
 
-        } else {
-
-            scrollTarget = selector(topButton.target)[0];
-            scrollPos = scrollTarget.scrollTop;
-
-            if (scrollPos > 50 && window.innerWidth > 767) { showTopBtn(); } else { hideTopBtn(); }
+            } else {
+                hideTopBtn();
+            }
 
         }
 
@@ -89,7 +83,7 @@ var topButton = {
 
                 scrollPos -= (scrollPos / 4);
 
-                scrollTarget.scrollTo(0, scrollPos);
+                window.scrollTo(0, scrollPos);
                 if (scrollPos <= 0) { clearInterval(btnAnimate); }
 
             }, 10);
