@@ -2,9 +2,8 @@
 *,:before,:after { box-sizing: border-box; }
 :not(ul):not(ol) { padding: 0; margin: 0; }
 
-body,input,button,textarea,select { font: 14px/1.42857143 "Roboto", "Helvetica Neue", Arial, sans-serif; }
+body,input,button,textarea,select { font: 14px/1.42857143 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "sans-serif"; }
 body { background-color: #fefefe; }
-.ie { word-spacing: -.03em; }
 .ios { -webkit-text-size-adjust: 100%; }
 
 article,aside,details,figcaption,figure,footer,header,nav,section,summary,audio,canvas,video,svg { display: block; }
