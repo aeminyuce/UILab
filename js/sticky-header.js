@@ -8,13 +8,12 @@ var stickyHeader = {};
 (function () {
 
     'use strict';
-    /*globals window, document, events, selector */
+    /*globals window, document, events, selector, screen */
 
     var
         stickyLoader,
         clearSticky,
         header,
-        screenW,
         stickyStatic,
         classList,
         classes,
@@ -41,18 +40,16 @@ var stickyHeader = {};
     stickyLoader = function () {
 
         if (header === undefined) { return; } // firefox
-        screenW = window.innerWidth;
-
         if (window.pageYOffset > header.offsetTop) {
 
             if (size !== '') {
 
-                if (screenW > 480 && size === 'sticky-xs') { clearSticky(); return; }
-                if (screenW > 767 && size === 'sticky-sm') { clearSticky(); return; }
-                if (screenW > 959 && size === 'sticky-md') { clearSticky(); return; }
+                if (screen.width > 480 && size === 'sticky-xs') { clearSticky(); return; }
+                if (screen.width > 767 && size === 'sticky-sm') { clearSticky(); return; }
+                if (screen.width > 959 && size === 'sticky-md') { clearSticky(); return; }
 
-                if (screenW < 1200 && size === 'sticky-lg') { clearSticky(); return; }
-                if (screenW < 1680 && size === 'sticky-xl') { clearSticky(); return; }
+                if (screen.width < 1200 && size === 'sticky-lg') { clearSticky(); return; }
+                if (screen.width < 1680 && size === 'sticky-xl') { clearSticky(); return; }
 
             }
 
