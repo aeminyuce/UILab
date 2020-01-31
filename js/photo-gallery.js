@@ -123,8 +123,7 @@ var photoGallery = {
 
             }
 
-            // get page scroll position
-            if (useragents.mobile && window.innerWidth < 960) {
+            if (useragents.mobile) {
                 pageYPos = window.pageYOffset; // get current scroll-y position
             }
 
@@ -270,7 +269,7 @@ var photoGallery = {
                 events.removeClass(preview, 'open-ease');
                 events.removeClass(document, 'photo-preview-opened');
 
-                if (useragents.mobile && window.innerWidth < 960) {
+                if (useragents.mobile) {
                     window.scrollTo(0, pageYPos);
                 }
 

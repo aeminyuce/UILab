@@ -13,7 +13,7 @@ var mobileMenu = {
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, setTimeout, screen */
+    /*globals window, document, selector, events, setTimeout, screen, useragents */
 
     var
         pageYPos,
@@ -28,9 +28,11 @@ var mobileMenu = {
 
         events.removeClass(panel, 'open-ease');
         events.removeClass(bg, 'open-ease');
-        events.removeClass(document, 'mobile-menu-opened mobile-menu-opened-before');
+        events.removeClass(document, 'mobile-menu-opened');
 
-        window.scrollTo(0, pageYPos);
+        if (useragents.mobile) {
+            window.scrollTo(0, pageYPos);
+        }
 
         setTimeout(function () {
 
@@ -168,7 +170,10 @@ var mobileMenu = {
             } else { return; }
 
             panelOpened = position;
-            pageYPos = window.pageYOffset; // get current scroll-y position
+
+            if (useragents.mobile) {
+                pageYPos = window.pageYOffset; // get current scroll-y position
+            }
 
             panel = selector('.mobile-menu.show-' + position);
             content = selector('.mobile-menu-content', panel);
@@ -196,7 +201,6 @@ var mobileMenu = {
 
                 events.addClass(panel, 'open-ease');
                 events.addClass(bg, 'open-ease');
-                events.addClass(document, 'mobile-menu-opened-before');
 
                 events.on(document, 'mobilemenu:open');
                 events.trigger(document, 'mobilemenu:open'); // set custom event

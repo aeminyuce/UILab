@@ -20,6 +20,84 @@ var modal = {
         re = new RegExp('\\s+\\s'),
         rex = new RegExp('^\\s|\\s+$');
 
+    function modalResizer() {
+
+        var win, bg, openSize, userDefined, customW, customH;
+
+        win = selector('.modal-win.show .modal-content:not(.fullscreen)')[0];
+        if (win !== undefined) {
+
+            bg = selector('.modal-bg')[0];
+
+            openSize = win.getAttribute('data-openSize');
+            if (openSize !== null) {
+
+                userDefined = 960; // md, inline
+                openSize = Number(openSize);
+
+                if (screen.width < openSize) {
+                    win.style.width = (screen.width - 30) + 'px';
+
+                } else {
+
+                    if (events.hasClass(win, 'lg')) {
+                        userDefined = 1200; // lg
+
+                    } else if (events.hasClass(win, 'sm')) {
+                        userDefined = 480; // sm
+                    }
+
+                    if (screen.width > userDefined) {
+                        win.style.width = userDefined + 'px';
+
+                    } else {
+                        win.style.width = (screen.width - 30) + 'px';
+                    }
+                }
+
+                win.style.removeProperty('height');
+                win.style.removeProperty('min-height');
+
+                if (selector('.modal', win)[0].offsetHeight > win.offsetHeight) { // large contents has fixed and scrollable height
+                    win.style.height = win.offsetHeight + 'px';
+
+                } else { // small contents has elastic height
+                    win.style.minHeight = win.offsetHeight + 'px';
+                }
+
+            }
+
+            customW = win.getAttribute('data-customW');
+            if (customW !== null) {
+
+                customH = win.getAttribute('data-customH');
+                if (customH !== null) {
+
+                    customW = Number(customW);
+                    customH = Number(customH);
+
+                    if (screen.width > customW) {
+
+                        win.style.width = customW + 'px';
+                        win.style.height = customH + 'px';
+
+                    } else {
+
+                        win.style.width = (screen.width - 30) + 'px';
+                        win.style.height = (screen.width - 30) / (customW / customH) + 'px';
+
+                    }
+
+                }
+            }
+
+            win.style.top = Math.floor((bg.offsetHeight - win.offsetHeight) / 2) + 'px';
+            win.style.left = Math.floor((bg.offsetWidth - win.offsetWidth) / 2) + 'px';
+
+        }
+
+    }
+
     modal.Start = function () {
 
         modal.close = function (callback) {
@@ -51,8 +129,11 @@ var modal = {
                 bg = selector('.modal-bg');
                 events.removeClass(bg, 'open-ease');
 
-                events.removeClass(document, 'modal-bg-opened');
-                if (useragents.mobile) { window.scrollTo(0, pageYPos); }
+                events.removeClass(document, 'modal-opened');
+
+                if (useragents.mobile) {
+                    window.scrollTo(0, pageYPos);
+                }
 
                 setTimeout(function () {
 
@@ -231,7 +312,7 @@ var modal = {
                     events.addClass(bg, 'open-ease');
                     setTimeout(function () {
 
-                        events.addClass(document, 'modal-bg-opened');
+                        events.addClass(document, 'modal-opened');
                         events.addClass(win, 'show');
 
                         content.style.top = Math.floor((bg[0].offsetHeight - content.offsetHeight) / 2) + 'px';
@@ -255,6 +336,8 @@ var modal = {
 
                             events.addClass(win, 'show-ease');
                             events.removeClass(win, 'active');
+
+                            modalResizer();
 
                             // callback
                             if (set.callback !== undefined) {
@@ -377,82 +460,6 @@ var modal = {
 
     // Loaders
     events.onload(modal.Start);
-    events.on(window, 'resize', function () {
-
-        var win, bg, openSize, userDefined, customW, customH;
-
-        win = selector('.modal-win.show .modal-content:not(.fullscreen)')[0];
-        if (win !== undefined) {
-
-            bg = selector('.modal-bg')[0];
-
-            openSize = win.getAttribute('data-openSize');
-            if (openSize !== null) {
-
-                userDefined = 960; // md, inline
-                openSize = Number(openSize);
-
-                if (screen.width < openSize) {
-                    win.style.width = (screen.width - 20) + 'px';
-
-                } else {
-
-                    if (events.hasClass(win, 'lg')) {
-                        userDefined = 1200; // lg
-
-                    } else if (events.hasClass(win, 'sm')) {
-                        userDefined = 480; // sm
-                    }
-
-                    if (screen.width > userDefined) {
-                        win.style.width = userDefined + 'px';
-
-                    } else {
-                        win.style.width = (screen.width - 20) + 'px';
-                    }
-                }
-
-                win.style.removeProperty('height');
-                win.style.removeProperty('min-height');
-
-                if (selector('.modal', win)[0].offsetHeight > win.offsetHeight) { // large contents has fixed and scrollable height
-                    win.style.height = win.offsetHeight + 'px';
-
-                } else { // small contents has elastic height
-                    win.style.minHeight = win.offsetHeight + 'px';
-                }
-
-            }
-
-            customW = win.getAttribute('data-customW');
-            if (customW !== null) {
-
-                customH = win.getAttribute('data-customH');
-                if (customH !== null) {
-
-                    customW = Number(customW);
-                    customH = Number(customH);
-
-                    if (screen.width > customW) {
-
-                        win.style.width = customW + 'px';
-                        win.style.height = customH + 'px';
-
-                    } else {
-
-                        win.style.width = (screen.width - 20) + 'px';
-                        win.style.height = (screen.width - 20) / (customW / customH) + 'px';
-
-                    }
-
-                }
-            }
-
-            win.style.top = Math.floor((bg.offsetHeight - win.offsetHeight) / 2) + 'px';
-            win.style.left = Math.floor((bg.offsetWidth - win.offsetWidth) / 2) + 'px';
-
-        }
-
-    });
+    events.on(window, 'resize', modalResizer);
 
 }());

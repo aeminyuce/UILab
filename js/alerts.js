@@ -46,8 +46,11 @@ var alerts = {
                 bg = selector('.alerts-bg');
                 events.removeClass(bg, 'open-ease');
 
-                events.removeClass(document, 'alerts-bg-opened');
-                if (useragents.mobile) { window.scrollTo(0, pageYPos); }
+                events.removeClass(document, 'alerts-opened');
+
+                if (useragents.mobile) {
+                    window.scrollTo(0, pageYPos);
+                }
 
                 setTimeout(function () {
                     events.removeClass(bg, 'open');
@@ -141,7 +144,7 @@ var alerts = {
             }
 
             selector('body')[0].insertAdjacentHTML('beforeend', html);
-            events.addClass(document, 'alerts-bg-opened');
+            events.addClass(document, 'alerts-opened');
 
             // show dialog
             bg = selector('.alerts-bg');
