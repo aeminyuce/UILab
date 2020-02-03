@@ -162,10 +162,10 @@
                     </dl>
 
                 </div>
-                <div class="col-12 no-padding-b">
-                    <b class="margin-5-b block">Show Positions:</b>
+                <div class="col-12">
+                    <b class="no-margin block">Show Positions:</b>
                 </div>
-                <div class="col-6 no-padding-v">
+                <div class="col-6">
 
                     <pre class="round margin-5-b">alerts.message({<br>    msg: 'Top left message',<br>    pos: 'tl'<br>});</pre>
                     <button class="btn btn-sm round ui-dark ease-btn" onclick="alerts.message({msg: 'Top left message', pos: 'tl'});">Run Code</button>
@@ -176,7 +176,7 @@
                     <button class="btn btn-sm round ui-dark ease-btn" onclick="alerts.message({msg: 'Bottom left message', pos: 'bl'});">Run Code</button>
 
                 </div>
-                <div class="col-6 no-padding-t">
+                <div class="col-6">
 
                     <pre class="round margin-5-b">alerts.message({<br>    msg: 'Top right message',<br>    pos: 'tr'<br>});</pre>
                     <button class="btn btn-sm round ui-dark ease-btn" onclick="alerts.message({msg: 'Top right message', pos: 'tr'});">Run Code</button>
@@ -190,7 +190,10 @@
                 <div class="col-12">
 
                     <b class="margin-5-b block">Show Default:</b>
-                    <div class="align-c static-250 inline-block padding-10 round shadow-lg bg-black xx-light">
+                    <div class="align-c static-250 padding-10 round shadow-lg bg-black xx-light hidden-dark">
+                        Default message
+                    </div>
+                    <div class="align-c static-250 padding-10 round shadow-lg hidden-light" style="background: #2f343e;">
                         Default message
                     </div>
                     <span class="sp15"></span>
@@ -201,7 +204,7 @@
                     <span class="sp30"></span>
 
                     <b class="margin-5-b block">Show Success:</b>
-                    <div class="align-c static-250 inline-block padding-10 round shadow-lg theme-green ui-dark">
+                    <div class="align-c static-250 padding-10 round shadow-lg theme-green ui-dark">
                         Success message
                     </div>
                     <span class="sp15"></span>
@@ -212,7 +215,7 @@
                     <span class="sp30"></span>
 
                     <b class="margin-5-b block">Show Warning:</b>
-                    <div class="align-c static-250 inline-block padding-10 round shadow-lg theme-yellow ui-dark">
+                    <div class="align-c static-250 padding-10 round shadow-lg theme-yellow ui-dark">
                         Warning message
                     </div>
                     <span class="sp15"></span>
@@ -223,7 +226,7 @@
                     <span class="sp30"></span>
 
                     <b class="margin-5-b block">Show Danger:</b>
-                    <div class="align-c static-250 inline-block padding-10 round shadow-lg theme-red ui-dark">
+                    <div class="align-c static-250 padding-10 round shadow-lg theme-red ui-dark">
                         Danger message
                     </div>
                     <span class="sp15"></span>
