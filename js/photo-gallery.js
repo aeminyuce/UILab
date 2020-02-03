@@ -108,18 +108,18 @@ var photoGallery = {
 
                 if (events.hasClass(that, 'has-info')) {
 
-                    if (!events.hasClass(that, 'hover-touch')) {
+                    if (!events.hasClass(that, 'touch-hover')) {
 
-                        events.removeClass(images, 'hover-touch');
-                        events.addClass(that, 'hover-touch');
+                        events.removeClass(images, 'touch-hover');
+                        events.addClass(that, 'touch-hover');
 
                         return;
 
                     }
 
-                    events.removeClass(images, 'hover-touch');
+                    events.removeClass(images, 'touch-hover');
 
-                } else { events.removeClass(images, 'hover-touch'); }
+                } else { events.removeClass(images, 'touch-hover'); }
 
             }
 
@@ -609,7 +609,7 @@ var photoGallery = {
 
                         if (events.hasClass(this, 'has-info')) {
 
-                            if (useragents.mobile && events.hasClass(this, 'hover-touch')) {
+                            if (useragents.mobile && events.hasClass(this, 'touch-hover')) {
                                 galleryFnc(e, that);
 
                             } else { return; }
