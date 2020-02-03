@@ -3,15 +3,16 @@
 .left { float: left; }
 .right { float: right; }
 .clearfix { width: 100% !important; clear: both !important; display: block; }
-.block { width: 100%; display: block !important; }
-.inline { display: inline !important; }
-.inline-block { vertical-align: middle; display: inline-block !important; }
 .rtl { direction: rtl; }
 .full-width { width: 100% !important; }
 .full-height { height: 100% !important; }
 .no-user-select { -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
 .clear-btn { color: inherit; text-align: inherit; background-color: rgba(0,0,0,0); border: 0; }
 .img-fluid { width: 100% !important; height: auto !important; }
+
+.block,.block-1st > *,.block-2nd > * > * { width: 100%; display: block !important; }
+.inline,.inline-1st > *,.inline-2nd > * > * { display: inline !important; }
+.inline-block,.inline-block-1st > *:not(.icon):not(.btn):not(img),.inline-block-2nd > * > *:not(.icon):not(.btn):not(img) { vertical-align: middle; display: inline-block !important; }
 
 .highlight { display: block; }
 .highlight:not(:last-child) { margin-bottom: 20px !important; }
