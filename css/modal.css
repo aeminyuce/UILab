@@ -20,7 +20,7 @@
 .modal-content.lg { max-width: 1200px; min-height: 300px; }
 .modal-content.md { max-width: 960px; min-height: 240px; }
 .modal-content.sm { max-width: 480px; min-height: 120px; }
-.modal-content.inline { width: auto; }
+.modal-content.inline-modal { width: auto; }
 
 .modal { display: none; }
 .modal-win .modal { height: 100%; display: block; }
@@ -64,8 +64,8 @@ html:not(.mobile) .modal-content.fullscreen .close-modal:hover { background-colo
 .modal-footer .btn:focus,.modal-container [type="submit"]:focus { box-shadow: 0 0 0 3px rgba(0,0,0,.15); }
 
 @media (min-width: 768px) {
-    .modal-content.inline { max-width: 960px; }
+    .modal-content.inline-modal { max-width: 960px; }
 }
 @media (max-width: 767px) {
-    .modal-content.inline { max-width: 90%; }
+    .modal-content.inline-modal { max-width: 90%; }
 }

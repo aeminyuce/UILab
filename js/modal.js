@@ -32,7 +32,7 @@ var modal = {
             openSize = win.getAttribute('data-openSize');
             if (openSize !== null) {
 
-                userDefined = 960; // md, inline
+                userDefined = 960; // md, inline-modal
                 openSize = Number(openSize);
 
                 if (screen.width < openSize) {
@@ -219,7 +219,7 @@ var modal = {
             function showModal() {
 
                 // set modal size
-                events.removeClass(content, 'lg md sm fullscreen inline');
+                events.removeClass(content, 'lg md sm fullscreen inline-modal');
 
                 content.style.removeProperty('top');
                 content.style.removeProperty('left');
@@ -243,8 +243,8 @@ var modal = {
                     getSize = function () {
 
                         size = 'md';
+                        sizeArr = ['lg', 'md', 'sm', 'fullscreen', 'inline-modal'];
 
-                        sizeArr = ['lg', 'md', 'sm', 'fullscreen', 'inline'];
                         if (sizeArr.indexOf(set.size) > -1) {
                             size = set.size;
                         }
