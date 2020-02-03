@@ -111,6 +111,8 @@
     .row:not(.no-fluid):not(.xs-fluid) > [class*="pull-"]:not([class*="pull-xs-"]):not(.no-fluid) { right: 0; }
 }
 @media (max-width: 1199px) {
+    .row.lg-fluid > [class*="col-"] { width: 100%; float: inherit; }
+
     [class*="col-"].lg-fluid { width: 100%; float: inherit; }
     [class*="offset-"].lg-fluid { margin-left: 0; }
 
@@ -118,6 +120,8 @@
     [class*="pull-"].lg-fluid { right: 0; }
 }
 @media (max-width: 1679px) {
+    .row.xl-fluid > [class*="col-"] { width: 100%; float: inherit; }
+
     [class*="col-"].xl-fluid { width: 100%; float: inherit; }
     [class*="offset-"].xl-fluid { margin-left: 0; }
 
