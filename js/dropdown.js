@@ -34,7 +34,6 @@ var dropdown = {};
 
                 } else {
 
-                    list.style.removeProperty('min-width');
                     list.style.removeProperty('right');
                     list.style.removeProperty('margin-left');
                     list.style.removeProperty('transform-origin');
@@ -75,10 +74,6 @@ var dropdown = {};
                 list = selector('.content', parent)[0];
 
                 if (events.closest(t, '.mobile-menu')[0] === undefined) { // diable all positionings on mobile menus
-
-                    if (screen.width < 481 && !events.hasClass(list, 'has-grid')) {
-                        list.style.minWidth = parent.offsetWidth + 'px';
-                    }
 
                     listStyles = list.style.length;
                     listWidth = list.offsetWidth;
