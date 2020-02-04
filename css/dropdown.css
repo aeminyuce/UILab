@@ -33,6 +33,8 @@
 .dropdown.menu-t.menu-c .content { transform-origin: bottom center; }
 .dropdown.menu-t.menu-l .content { transform-origin: bottom right; }
 
+.dropdown.nav [class*="list-column-"] { column-rule: solid 1px rgba(0,0,0,.075); }
+
 .dropdown ul.content > li:not(.sep) { line-height: 20px; min-height: 30px; padding: 10px; }
 .dropdown ul.content:not(.has-grid) > li:not(.sep):not(:last-child) { border-bottom: solid 1px rgba(0,0,0,.045); }
 html:not(.mobile) .dropdown ul.content > li:not(.sep):hover { background-color: rgba(0,0,0,.05); background-clip: padding-box; }
