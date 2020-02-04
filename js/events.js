@@ -359,7 +359,7 @@ var events = {
     toggleClass: function (t, name) {
 
         'use strict';
-        var svg, isSvgElements, arr, index, l = selector(t), i, j, re = new RegExp('^\\s+|\\s+$');
+        var svg, isSvgElements, arr, newArr, index, l = selector(t), i, j, re = new RegExp('^\\s+|\\s+$');
 
         name = name.split(' ');
         svg = ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'];
@@ -377,20 +377,22 @@ var events = {
 
             for (j = 0; j < name.length; j++) {
 
-                index = arr.indexOf(name[j]);
-                if (index >= 0) { arr.splice(index, 1); } else { arr.push(name[j]); }
+                newArr = arr;
+                index = newArr.indexOf(name[j]);
+
+                if (index >= 0) { newArr.splice(index, 1); } else { newArr.push(name[j]); }
 
                 if (isSvgElements) {
                     l[i].className.baseVal = arr.join(' ');
 
                 } else {
 
-                    arr = arr.join(' ').replace(re, '');
+                    newArr = newArr.join(' ').replace(re, '');
 
-                    if (arr.length === 0) {
+                    if (newArr.length === 0) {
                         l[i].removeAttribute('class');
 
-                    } else { l[i].className = arr; }
+                    } else { l[i].className = newArr; }
 
                 }
 
