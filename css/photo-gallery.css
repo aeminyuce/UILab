@@ -27,7 +27,7 @@ html:not(.mobile) .photo-gallery .img.has-info:hover > span,.photo-gallery .img.
 .photo-preview-opened,.photo-preview-opened > body { overflow: hidden; }
 
 .photo-preview { width: 100%; min-width: 320px; height: 100%; padding: 0 10px; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 91; }
-.photo-preview-bg { background-color: rgba(0,0,0,.65); position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
+.photo-preview-bg { background-color: rgba(0,0,0,.86); position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
 .photo-preview:not(.open) { display: none; }
 .photo-preview:not(.open-ease) { opacity: 0; }
 
