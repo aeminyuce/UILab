@@ -57,7 +57,7 @@ html:not(.portrait) .visible-portrait { display: none !important; }
 .scroll { overflow: auto !important; }
 .scroll-v { overflow-x: hidden !important; overflow-y: auto !important; }
 .scroll-h { overflow-x: auto !important; overflow-y: hidden !important; }
-.no-scroll,.no-overflow { overflow: hidden !important; }
+.no-scroll { overflow: hidden !important; }
 
 .round { border-radius: 6px; }
 .round-t { border-radius: 6px 6px 0 0; }
