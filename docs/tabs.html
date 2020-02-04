@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="../css/grid.css"/>
     <link rel="stylesheet" href="../css/helpers.css"/>
     <link rel="stylesheet" href="../css/icons.css"/>
+    <link rel="stylesheet" href="../css/listings.css"/>
     <link rel="stylesheet" href="../css/margins.css"/>
     <link rel="stylesheet" href="../css/paddings.css"/>
     <link rel="stylesheet" href="../css/scrollbar.css"/>
@@ -75,12 +76,31 @@
                     <h4>Horizontal Tabs</h4>
                     <div class="tabs padding-30-b ease-tabs" data-classes="ui-border ui-text">
 
-                        <div class="margin-10-b md-align-c theme-default2 ease-1st-btn">
-                            <button class="tab btn btn-lg btn-ghost border-b border-dual padding-25-h round-t ui-border ui-text active">Tab Button</button>
-                            <button class="tab btn btn-lg btn-ghost border-b border-dual padding-25-h round-t">Tab Button</button>
+                        <div class="margin-10-b md-align-c border-b theme-default2 ease-1st-btn">
+                            <button class="tab btn btn-lg btn-ghost border-b ui-border ui-text active">Tab Button</button>
+                            <button class="tab btn btn-lg btn-ghost border-b">Tab Button</button>
                         </div>
 
-                        <div class="tab-content open open-ease">
+                        <div class="tab-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                        </div>
+                        <div class="tab-content">
+                            Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                            <br><br>
+                            Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                        </div>
+
+                    </div>
+
+                    <h4>Tabs with Toggle</h4>
+                    <div class="tabs padding-30-b ease-tabs" data-classes="ui-border ui-text">
+
+                        <div class="margin-10-b md-align-c border-b theme-default2 ease-1st-btn">
+                            <button class="tab btn-toggle btn btn-lg btn-ghost border-b border-dual">Tab Button</button>
+                            <button class="tab btn-toggle btn btn-lg btn-ghost border-b border-dual">Tab Button</button>
+                        </div>
+
+                        <div class="tab-content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
                         </div>
                         <div class="tab-content">
@@ -92,21 +112,15 @@
                     </div>
 
                     <h4>Side Navigated Tabs</h4>
-                    <div class="tabs col-static border-dual margin-30-b ease-tabs" data-classes="ui-text">
+                    <div class="tabs col-static border-dual margin-30-b ease-tabs" data-classes="border-lg ui-border border-r ui-text">
 
-                        <div class="static-200 padding-1 align-l theme-default2 ease-1st-btn">
-                            <button class="tab btn btn-lg block margin-1-b ui-text active">
-                                Tab Button <i class="icon icon-xs right margin-5-v icon-angle-right no-opacity"></i>
-                            </button>
-                            <button class="tab btn btn-lg block margin-1-b">
-                                Tab Button <i class="icon icon-xs right margin-5-v icon-angle-right no-opacity"></i>
-                            </button>
-                            <button class="tab btn btn-lg block margin-1-b">
-                                Tab Button <i class="icon icon-xs right margin-5-v icon-angle-right no-opacity"></i>
-                            </button>
-                            <button class="tab btn btn-lg block ">
-                                Tab Button <i class="icon icon-xs right margin-5-v icon-angle-right no-opacity"></i>
-                            </button>
+                        <div class="static-200 padding-1 align-l theme-default2">
+                            <ul class="list-unstyled list-spacer-1 block-2nd ease-2nd-btn">
+                                <li><button class="tab btn btn-lg border-lg ui-border border-r ui-text active">Tab Button</button></li>
+                                <li><button class="tab btn btn-lg">Tab Button</button></li>
+                                <li><button class="tab btn btn-lg">Tab Button</button></li>
+                                <li><button class="tab btn btn-lg ">Tab Button</button></li>
+                            </ul>
                         </div>
                         <div class="row">
                             <div class="col-12">
@@ -126,7 +140,8 @@
                         </div>
 
                     </div>
-                    <div class="tabs col-static border-dual margin-30-b ease-tabs" data-classes="ui-text">
+
+                    <div class="tabs col-static border-dual margin-30-b ease-tabs" data-classes="border-lg ui-border border-l ui-text">
 
                         <div class="row">
                             <div class="col-12">
@@ -144,52 +159,94 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="static-200 padding-1 align-l theme-default2 ease-1st-btn">
-                            <button class="tab btn btn-lg block margin-1-b ui-text active">
-                                <i class="icon icon-xs margin-5-v margin-5-r icon-angle-left no-opacity"></i> Tab Button
-                            </button>
-                            <button class="tab btn btn-lg block margin-1-b">
-                                <i class="icon icon-xs margin-5-v margin-5-r icon-angle-left no-opacity"></i> Tab Button
-                            </button>
-                            <button class="tab btn btn-lg block margin-1-b">
-                                <i class="icon icon-xs margin-5-v margin-5-r icon-angle-left no-opacity"></i> Tab Button
-                            </button>
-                            <button class="tab btn btn-lg block ">
-                                <i class="icon icon-xs margin-5-v margin-5-r icon-angle-left no-opacity"></i> Tab Button
-                            </button>
+                        <div class="static-200 padding-1 align-l theme-default2">
+                            <ul class="list-unstyled list-spacer-1 block-2nd ease-2nd-btn">
+                                <li><button class="tab btn btn-lg border-lg ui-border border-l ui-text active">Tab Button</button></li>
+                                <li><button class="tab btn btn-lg">Tab Button</button></li>
+                                <li><button class="tab btn btn-lg">Tab Button</button></li>
+                                <li><button class="tab btn btn-lg ">Tab Button</button></li>
+                            </ul>
                         </div>
 
                     </div>
 
-                    <h4>Tabs with Toggle</h4>
-                    <div class="tabs padding-30-b ease-tabs" data-classes="ui-dark">
+                    <h4>Inner Tabs</h4>
+                    <div class="tabs padding-30-b ease-tabs" data-classes="border-b border-lg ui-border ui-text">
 
-                        <div class="margin-10-b md-align-c theme-default2 ease-1st-btn">
-                            <button class="tab btn-toggle btn btn-lg padding-25-h round">Tab Button</button>
-                            <button class="tab btn-toggle btn btn-lg padding-25-h round">Tab Button</button>
+                        <div class="md-align-c theme-default2 ease-1st-btn">
+                            <button class="tab btn btn-lg btn-ghost border-b border-lg ui-border ui-text active">Tab Button</button>
+                            <button class="tab btn btn-lg btn-ghost">Tab Button</button>
                         </div>
 
-                        <div class="tab-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                        <div class="tab-content tabs col-static border-dual margin-30-b ease-tabs open open-ease" data-classes="border-lg ui-border border-r ui-text">
+
+                            <div class="static-200 padding-1 align-l theme-default2">
+                                <ul class="list-unstyled list-spacer-1 block-2nd ease-2nd-btn">
+                                    <li><button class="tab btn btn-lg border-lg ui-border border-r ui-text active">Tab Button</button></li>
+                                    <li><button class="tab btn btn-lg">Tab Button</button></li>
+                                    <li><button class="tab btn btn-lg">Tab Button</button></li>
+                                    <li><button class="tab btn btn-lg ">Tab Button</button></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="tab-content open open-ease">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                                    </div>
+                                    <div class="tab-content">
+                                        Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                    </div>
+                                    <div class="tab-content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                                    </div>
+                                    <div class="tab-content">
+                                        Proin sagittis velit urna, a elementum purus dictum vitae. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="tab-content">
-                            Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
-                            <br><br>
-                            Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                        <div class="tab-content tabs col-static border-dual margin-30-b ease-tabs" data-classes="border-lg ui-border border-r ui-text">
+
+                            <div class="static-200 padding-1 align-l theme-default2">
+                                <ul class="list-unstyled list-spacer-1 block-2nd ease-2nd-btn">
+                                    <li><button class="tab btn btn-lg border-lg ui-border border-r ui-text active">Tab Button</button></li>
+                                    <li><button class="tab btn btn-lg">Tab Button</button></li>
+                                    <li><button class="tab btn btn-lg">Tab Button</button></li>
+                                    <li><button class="tab btn btn-lg ">Tab Button</button></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="tab-content open open-ease">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                                    </div>
+                                    <div class="tab-content">
+                                        Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                    </div>
+                                    <div class="tab-content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                                    </div>
+                                    <div class="tab-content">
+                                        Proin sagittis velit urna, a elementum purus dictum vitae. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
 
                     </div>
 
-                    <h4>Tabs with ID (data-content)</h4>
+                    <h4>Tabs with ID</h4>
                     <div class="tabs padding-30-b theme-default2 ease-tabs">
 
                         <div id="tabID01" class="tab-content open open-ease">
-                            <button class="tab btn btn-lg padding-25-h round ui-dark ease-btn" data-content="tabID02">Show Second</button>
+                            <button class="tab btn btn-lg round ui-dark ease-btn" data-id="tabID02">Show Second</button>
                             <span class="sp10"></span>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
                         </div>
                         <div id="tabID02" class="tab-content">
-                            <button class="tab btn btn-lg padding-25-h round ui-dark ease-btn" data-content="tabID01">Show First</button>
+                            <button class="tab btn btn-lg round ui-dark ease-btn" data-id="tabID01">Show First</button>
                             <span class="sp10"></span>
                             Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
                             <br><br>
