@@ -16,19 +16,53 @@ var tabs = {};
         events.on(document, 'click', '.tabs .tab', function (e) {
 
             e.preventDefault();
-            var parent, tabs, index, id, content, classes, toggle, prevTab;
+
+            var parent, tabs, index, innerTabs, outerTabs, id, content, innerContent, outerContent, currentContent, classes, toggle;
+
+            outerTabs = [];
+            outerContent = [];
 
             parent = events.closest(this, '.tabs')[0];
             tabs = selector('.tab', parent);
 
+            // check inner tabs
+            innerTabs = selector('.tabs .tabs .tab', parent);
+            innerTabs = Array.prototype.slice.call(innerTabs);
+
+            events.each(tabs, function () {
+
+                if (innerTabs.indexOf(this) === -1) {
+                    outerTabs.push(this);
+                }
+
+            });
+
+            if (outerTabs.length !== 0) { tabs = outerTabs; }
             index = Array.prototype.slice.call(tabs).indexOf(this);
 
-            id = this.getAttribute('data-content');
+            content = selector('.tab-content', parent);
+
+            // check inner contents
+            innerContent = selector('.tabs .tabs .tab-content', parent);
+            innerContent = Array.prototype.slice.call(innerContent);
+
+            events.each(content, function () {
+
+                if (innerContent.indexOf(this) === -1) {
+                    outerContent.push(this);
+                }
+
+            });
+
+            if (outerContent.length !== 0) { content = outerContent; }
+
+            // check ids
+            id = this.getAttribute('data-id');
             if (id !== null & id !== '') {
-                content = selector('#' + id, parent);
+                currentContent = selector('#' + id, parent);
 
             } else {
-                content = selector('.tab-content', parent)[index];
+                currentContent = content[index];
             }
 
             toggle = false;
@@ -40,15 +74,13 @@ var tabs = {};
 
                 if (toggle) {
 
-                    if (classes) {
-                        events.toggleClass(tabs[index], classes);
-                    }
-
+                    if (classes) { events.toggleClass(tabs[index], classes); }
                     events.removeClass(tabs[index], 'active');
-                    events.removeClass(content, 'open-ease');
+
+                    events.removeClass(currentContent, 'open-ease');
 
                     setTimeout(function () {
-                        events.removeClass(content, 'open');
+                        events.removeClass(currentContent, 'open');
                     }, 0);
 
                 }
@@ -65,23 +97,14 @@ var tabs = {};
                 events.removeClass(tabs, 'active');
                 events.addClass(tabs[index], 'active');
 
-                prevTab = selector('.tab-content.open', parent)[0]; // check previosuly opened tab
-                if (prevTab !== undefined) {
-
-                    events.removeClass(prevTab, 'open-ease');
-
-                    setTimeout(function () {
-                        events.removeClass(prevTab, 'open');
-                    }, 0);
-
-                }
-
+                events.removeClass(content, 'open-ease');
                 setTimeout(function () {
 
-                    events.addClass(content, 'open');
+                    events.removeClass(content, 'open');
+                    events.addClass(currentContent, 'open');
 
                     setTimeout(function () {
-                        events.addClass(content, 'open-ease');
+                        events.addClass(currentContent, 'open-ease');
                     }, 50);
 
                 }, 0);
