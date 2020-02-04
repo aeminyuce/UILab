@@ -1,7 +1,7 @@
 /* scrollbar */
 html:not(.mobile) ::-webkit-scrollbar { width: 8px; height: 8px; background-color: rgba(255,255,255,0); }
 html:not(.mobile) body::-webkit-scrollbar { width: 12px; height: 12px; }
-html:not(.mobile) ::-webkit-scrollbar-thumb { background-color: rgba(0,0,0,.1); border-radius: 6px; }
+html:not(.mobile) ::-webkit-scrollbar-thumb { background-color: rgba(0,0,0,.1);}
 html:not(.mobile) ::-webkit-scrollbar-thumb:hover { background-color: rgba(0,0,0,.15); }
 html:not(.mobile) ::-webkit-scrollbar-thumb:active { background-color: rgba(0,0,0,.25); }
 html:not(.mobile) ::-webkit-scrollbar-track { background-color: rgba(0,0,0,0); }
