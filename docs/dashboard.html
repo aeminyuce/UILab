@@ -91,31 +91,126 @@
         .theme-panel.ui-x-light,.theme-panel .ui-x-light:not([class*="theme-"]) { background-color: #c2c4ee; }
         .theme-panel.ui-light,.theme-panel .ui-light:not([class*="theme-"]) { background-color: #a4a8f3; }
         .theme-panel.ui-dark,.theme-panel .ui-dark:not([class*="theme-"]) { background-color: #2f3b80; }
-        .theme-panel.ui-text,.theme-panel .ui-text:not([class*="theme-"]) { color: #2f3b80; }
-        .theme-panel.ui-border,.theme-panel .ui-border:not([class*="theme-"]) { border-color: #2f3b80; }
+        .theme-panel.ui-text,.theme-panel .ui-text:not([class*="theme-"]) { color: #3548b9; }
+        .theme-panel.ui-border,.theme-panel .ui-border:not([class*="theme-"]) { border-color: #3548b9; }
         .theme-panel.ui-x-dark,.theme-panel .ui-x-dark:not([class*="theme-"]) { background-color: #273375; }
 
         .theme-panel2.ui-x-light,.theme-panel2 .ui-x-light:not([class*="theme-"]) { background-color: #d1f4fa; }
         .theme-panel2.ui-light,.theme-panel2 .ui-light:not([class*="theme-"]) { background-color: #abebf5; }
         .theme-panel2.ui-dark,.theme-panel2 .ui-dark:not([class*="theme-"]) { background-color: #00bddf; }
-        .theme-panel2.ui-text,.theme-panel2 .ui-text:not([class*="theme-"]) { color: #00bddf; }
+        .theme-panel2.ui-text,.theme-panel2 .ui-text:not([class*="theme-"]) { color: #05aac7; }
         .theme-panel2.ui-border,.theme-panel2 .ui-border:not([class*="theme-"]) { border-color: #00bddf; }
         .theme-panel2.ui-x-dark,.theme-panel2 .ui-x-dark:not([class*="theme-"]) { background-color: #00a8d5; }
 
+        body { background-color: #f7f7f7; }
+
+        .sticky-header .sidebar { top: -63px; }
+        header { background-color: #fbfbfb; }
+
         @media (min-width: 1480px) {
-            .fixed { max-width: 1480px; }
+            .fixed-inner { max-width: 1480px; }
         }
-        @media (max-width: 959px) {
-            header.sticky { background-color: #fefefe; }
+        @media (min-width: 1200px) {
+            header.sticky.sidebar-opened { width: calc(100% - 250px); left: 250px; }
         }
 
         @media (prefers-color-scheme: dark) {
-            @media (max-width: 959px) {
-                header.sticky { background-color: #15181d; }
-            }
+            header { background-color: #23272f; }
         }
 
     </style>
+
+    <!-- custom js -->
+    <script>
+
+        mobileMenu.visibleLeft = 'lg'; // 'xs', 'sm', 'md', 'lg'
+        lineCharts.colors = ['#ffba0c', '#11da54', '#00bddf', '#9966ff', '#4bc0c0', '#ffcd56', '#84594d', '#bbc451', '#6a6a6a', '#647bc1'];
+
+        // Toggle Sidebar
+        var testStorage;
+
+        function toggler(onload) {
+
+            var sidebar, sidebarInner, toggleClasses, state;
+
+            sidebar = selector('.sidebar')[0];
+            sidebarInner = selector('.sidebar > div')[0];
+
+            toggleClasses = function () { // toggle classnames
+
+                events.toggleClass(sidebar, 'hidden visible-lg');
+                events.toggleClass('header', 'sidebar-opened');
+
+                events.toggleClass('.show-mobile-menu-l', 'hidden-lg');
+                events.toggleClass('.sidebar-show', 'hidden');
+
+            };
+
+            if (events.hasClass(sidebar, 'hidden')) { // show
+
+                state = 'opened';
+                toggleClasses(); // toggle classnames
+
+                setTimeout(function () {
+
+                    sidebar.style.width = '250px';
+                    sidebarInner.style.transform = 'translateX(0)';
+
+                        setTimeout(function () {
+
+                            sidebar.style.removeProperty('width');
+                            sidebar.style.removeProperty('transform');
+
+                        }, 0);
+
+                }, 0);
+
+            } else { // hide
+
+                state = 'closed';
+
+                sidebar.style.width = '0';
+                sidebarInner.style.transform = 'translateX(-100%)';
+
+                // toggle classnames
+                if (onload) {
+                    setTimeout(toggleClasses, 400);
+
+                } else { toggleClasses(); }
+
+            }
+
+            // set sidebar state
+            if (testStorage && sessionStorage !== undefined) {
+                sessionStorage.setItem('dashboard-left-sidebar', state);
+            }
+
+        }
+
+        events.on(document, 'click', '.sidebar-show,.sidebar-hide', toggler);
+
+        events.onload(function () { // check stored sidebar position
+
+            testStorage = true;
+
+            // test for storage is supported?
+            try {
+                sessionStorage.setItem('dataListTest', 0);
+
+            } catch (e) {
+                testStorage = false;
+            }
+
+            if (testStorage && sessionStorage !== undefined) {
+
+                var state = sessionStorage.getItem('dashboard-left-sidebar');
+                if (state !== null && state === 'closed') { toggler(true); }
+
+            }
+
+        });
+
+    </script>
 
 </head>
 
@@ -127,11 +222,14 @@
         <div class="col-static sm-fluid">
 
             <!-- sidebar -->
-            <div class="static-250 set-relative hidden-md theme-panel">
-                <div class="static-250 full-height set-fixed set-l ui-dark scroll-v">
+            <div class="sidebar static-250 set-relative visible-lg theme-panel ease-width ease-slow ease-in-out">
+                <div class="static-250 full-height set-fixed set-l ui-dark scroll-v ease-layout ease-slow ease-in-out">
 
-                    <div class="padding-5-t">
-                        <img class="img-fluid" src="img/logo-udashboard.png" alt="Logo">
+                    <div class="ui-x-dark set-relative">
+                        <img src="img/logo-udashboard.png" width="194" height="62" alt="">
+                        <button class="sidebar-hide clear-btn opacity-more padding-15-h ease-btn set-absolute set-c-y set-r" data-tooltip title="Toggle Sidebar">
+                            <i class="icon icon-bars"></i>
+                        </button>
                     </div>
 
                     <div class="tabs align-l theme-panel2 ease-tabs ease-1st-btn add-mobile-menu-l" data-classes="ui-text">
@@ -325,16 +423,19 @@
             <div class="row">
 
                 <!-- header: start -->
-                <header class="col-12 sticky-md align-r border-b ease-layout ease-slow" data-classes="shadow-lg">
+                <header class="col-12 align-r shadow-sm ease-layout ease-slow sidebar-opened" data-classes="shadow-lg">
 
                     <div class="align-c left">
-                        <button class="btn dark btn-lg btn-ghost padding-10 circle ease-btn show-mobile-menu-l visible-md">
+                        <button class="sidebar-show btn dark btn-lg btn-ghost padding-10 circle ease-btn hidden" data-tooltip title="Toggle Sidebar">
+                            <i class="icon icon-bars no-opacity theme-panel2 ui-text"></i>
+                        </button>
+                        <button class="btn dark btn-lg btn-ghost padding-10 circle ease-btn show-mobile-menu-l hidden-lg" data-tooltip title="Show Sidebar">
                             <i class="icon icon-bars-left no-opacity"></i>
                         </button>
                         <button class="btn dark btn-lg btn-ghost padding-10 circle ease-btn" onclick="modal.open({source: '.search', bg: 'false'});" data-tooltip data-only="desktop" title="Search">
                             <i class="icon icon-search no-opacity"></i>
                         </button>
-                        <div class="dropdown ease-dropdown">
+                        <div class="dropdown nav ease-dropdown">
                             <button class="btn dark btn-lg btn-ghost padding-10 circle ease-btn hidden-sm">
                                 My Reports
                                 <i class="toggle-icon icon margin-5-l icon-xs icon-angle-down no-opacity"></i>
@@ -342,14 +443,18 @@
                             <button class="btn dark btn-lg btn-ghost padding-10 circle ease-btn visible-sm">
                                 <i class="icon icon-user-circle no-opacity"></i>
                             </button>
-                            <ul class="content has-icon round shadow-lg scroll-v">
+                            <ul class="content list-column-2 has-icon round shadow-lg scroll-v" style="min-width: 500px;">
+                                <li><a href="#"><b class="list-icon no-opacity">23</b> Waiting</a></li>
+                                <li><a href="#"><b class="list-icon no-opacity">258</b> Expert</a></li>
+                                <li><a href="#"><b class="list-icon no-opacity">49</b> On Audit</a></li>
+                                <li><a href="#"><b class="list-icon no-opacity">68</b> Delayed</a></li>
                                 <li><a href="#"><b class="list-icon no-opacity">23</b> Waiting</a></li>
                                 <li><a href="#"><b class="list-icon no-opacity">258</b> Expert</a></li>
                                 <li><a href="#"><b class="list-icon no-opacity">49</b> On Audit</a></li>
                                 <li><a href="#"><b class="list-icon no-opacity">68</b> Delayed</a></li>
                             </ul>
                         </div>
-                        <div class="dropdown ease-dropdown">
+                        <div class="dropdown nav ease-dropdown">
                             <button class="btn dark btn-lg btn-ghost padding-10 circle ease-btn hidden-sm">
                                 My Jobs
                                 <i class="toggle-icon icon margin-5-l icon-xs icon-angle-down no-opacity"></i>
@@ -357,7 +462,11 @@
                             <button class="btn dark btn-lg btn-ghost padding-10 circle ease-btn visible-sm">
                                 <i class="icon icon-user-search no-opacity"></i>
                             </button>
-                            <ul class="content has-icon round shadow-lg scroll-v">
+                            <ul class="content list-column-2 has-icon round shadow-lg scroll-v" style="min-width: 500px;">
+                                <li><a href="#"><b class="list-icon no-opacity">23</b> Waiting</a></li>
+                                <li><a href="#"><b class="list-icon no-opacity">258</b> Expert</a></li>
+                                <li><a href="#"><b class="list-icon no-opacity">49</b> On Audit</a></li>
+                                <li><a href="#"><b class="list-icon no-opacity">68</b> Delayed</a></li>
                                 <li><a href="#"><b class="list-icon no-opacity">23</b> Waiting</a></li>
                                 <li><a href="#"><b class="list-icon no-opacity">258</b> Expert</a></li>
                                 <li><a href="#"><b class="list-icon no-opacity">49</b> On Audit</a></li>
@@ -603,975 +712,983 @@
                 <!-- header: end -->
 
                 <!-- layouts: start -->
-                <div class="tabs ease-tabs" data-classes="border-lg border-b">
+                <div class="tabs ease-tabs" data-classes="border-lg border-b ui-border ui-text">
 
-                    <div class="fixed">
-                        <div class="row">
-                            <div class="col-12 align-c ease-1st-btn">
-                                <button class="tab btn btn-lg btn-ghost border-lg border-b active">Dashboard</button>
+                    <div class="container">
+                        <div class="row border-b margin-15-b theme-panel2">
+                            <div class="col-12 dark align-c no-padding-b ease-1st-btn">
+                                <button class="tab btn btn-lg btn-ghost border-lg border-b ui-border ui-text active">Dashboard</button>
                                 <button class="tab btn btn-lg btn-ghost">Forms</button>
                             </div>
                         </div>
                     </div>
 
-                    <!-- dashboard: start -->
-                    <div class="fixed tab-content open open-ease">
-                        <div class="row">
+                    <div class="tab-content open open-ease">
 
-                            <div class="col-12 no-padding">
-                                <div class="carousel" data-col-xl="4" data-col-lg="2" data-col="2" data-col-md="2" data-col-sm="1" data-col-xs="1">
-                                    <div class="carousel-slider ease-layout ease-slow ease-in-out">
+                        <!-- dashboard: start -->
+                        <div class="fixed fixed-inner">
+                            <div class="row">
 
-                                        <div class="content padding-10-h padding-10-t padding-15-b theme-yellow">
-                                            <div class="card full-height padding-15 round shadow-lg">
-                                                <div class="col-static no-fluid">
-                                                    <div class="row row-no-padding-h row-md-padding-v">
-                                                        <div class="col-12">
-                                                            <div class="x-large">Pending</div>
-                                                            <span class="dark large">Total: 45%</span>
+                                <div class="col-12 no-padding">
+                                    <div class="carousel" data-col-xl="4" data-col-lg="2" data-col="2" data-col-md="2" data-col-sm="1" data-col-xs="1">
+                                        <div class="carousel-slider ease-layout ease-slow ease-in-out">
+
+                                            <div class="content padding-10-h padding-10-t padding-15-b theme-yellow">
+                                                <div class="card full-height padding-15 round shadow-lg">
+                                                    <div class="col-static no-fluid">
+                                                        <div class="row row-no-padding-h row-md-padding-v">
+                                                            <div class="col-12">
+                                                                <div class="x-large">Pending</div>
+                                                                <span class="dark large">Total: 45%</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="static-100 align-r">
+                                                            <span class="x-largest ui-text">157</span>
                                                         </div>
                                                     </div>
-                                                    <div class="static-100 align-r">
-                                                        <span class="x-largest ui-text">157</span>
+                                                    <div class="progress-bar margin-15-t progress round">
+                                                        <span class="ui-dark stripe-light" style="width: 45%;"></span>
                                                     </div>
+                                                    <p class="dark large margin-5-b">Pending for the transaction.</p>
+                                                    <p class="light">
+                                                        <i class="icon icon-xs icon-clock margin-3-r"></i>
+                                                        <span class="inline-block">Last updated: 15:12</span>
+                                                    </p>
                                                 </div>
-                                                <div class="progress-bar margin-15-t progress round">
-                                                    <span class="ui-dark stripe-light" style="width: 45%;"></span>
-                                                </div>
-                                                <p class="dark large margin-5-b">Pending for the transaction.</p>
-                                                <p class="light">
-                                                    <i class="icon icon-xs icon-clock margin-3-r"></i>
-                                                    <span class="inline-block">Last updated: 15:12</span>
-                                                </p>
                                             </div>
-                                        </div>
-                                        <div class="content padding-10-h padding-10-t padding-15-b theme-yellow">
-                                            <div class="card full-height padding-15 round shadow-lg">
-                                                <div class="col-static no-fluid">
-                                                    <div class="row row-no-padding-h row-md-padding-v">
-                                                        <div class="col-12">
-                                                            <div class="x-large">Paused</div>
-                                                            <span class="dark large">Total: 5%</span>
+                                            <div class="content padding-10-h padding-10-t padding-15-b theme-yellow">
+                                                <div class="card full-height padding-15 round shadow-lg">
+                                                    <div class="col-static no-fluid">
+                                                        <div class="row row-no-padding-h row-md-padding-v">
+                                                            <div class="col-12">
+                                                                <div class="x-large">Paused</div>
+                                                                <span class="dark large">Total: 5%</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="static-100 align-r">
+                                                            <span class="x-largest ui-text">23</span>
                                                         </div>
                                                     </div>
-                                                    <div class="static-100 align-r">
-                                                        <span class="x-largest ui-text">23</span>
+                                                    <div class="progress-bar margin-15-t progress round">
+                                                        <span class="ui-dark stripe-light" style="width: 5%;"></span>
                                                     </div>
+                                                    <p class="dark large margin-5-b">Paused for the some reasons.</p>
+                                                    <p class="light">
+                                                        <i class="icon icon-xs icon-clock margin-3-r"></i>
+                                                        <span class="inline-block">Last updated: 15:12</span>
+                                                    </p>
                                                 </div>
-                                                <div class="progress-bar margin-15-t progress round">
-                                                    <span class="ui-dark stripe-light" style="width: 5%;"></span>
-                                                </div>
-                                                <p class="dark large margin-5-b">Paused for the some reasons.</p>
-                                                <p class="light">
-                                                    <i class="icon icon-xs icon-clock margin-3-r"></i>
-                                                    <span class="inline-block">Last updated: 15:12</span>
-                                                </p>
                                             </div>
-                                        </div>
-                                        <div class="content padding-10-h padding-10-t padding-15-b theme-green">
-                                            <div class="card full-height padding-15 round shadow-lg">
-                                                <div class="col-static no-fluid">
-                                                    <div class="row row-no-padding-h row-md-padding-v">
-                                                        <div class="col-12">
-                                                            <div class="x-large">Completed</div>
-                                                            <span class="dark large">Total: 80%</span>
+                                            <div class="content padding-10-h padding-10-t padding-15-b theme-green">
+                                                <div class="card full-height padding-15 round shadow-lg">
+                                                    <div class="col-static no-fluid">
+                                                        <div class="row row-no-padding-h row-md-padding-v">
+                                                            <div class="col-12">
+                                                                <div class="x-large">Completed</div>
+                                                                <span class="dark large">Total: 80%</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="static-100 align-r">
+                                                            <span class="x-largest ui-text">256</span>
                                                         </div>
                                                     </div>
-                                                    <div class="static-100 align-r">
-                                                        <span class="x-largest ui-text">256</span>
+                                                    <div class="progress-bar margin-15-t progress round">
+                                                        <span class="ui-dark stripe-light" style="width: 80%;"></span>
                                                     </div>
+                                                    <p class="dark large margin-5-b">Reached for the expert.</p>
+                                                    <p class="light">
+                                                        <i class="icon icon-xs icon-clock margin-3-r"></i>
+                                                        <span class="inline-block">Last updated: 15:12</span>
+                                                    </p>
                                                 </div>
-                                                <div class="progress-bar margin-15-t progress round">
-                                                    <span class="ui-dark stripe-light" style="width: 80%;"></span>
-                                                </div>
-                                                <p class="dark large margin-5-b">Reached for the expert.</p>
-                                                <p class="light">
-                                                    <i class="icon icon-xs icon-clock margin-3-r"></i>
-                                                    <span class="inline-block">Last updated: 15:12</span>
-                                                </p>
                                             </div>
-                                        </div>
-                                        <div class="content padding-10-h padding-10-t padding-15-b theme-panel2">
-                                            <div class="card full-height padding-15 round shadow-lg">
-                                                <div class="col-static no-fluid">
-                                                    <div class="row row-no-padding-h row-md-padding-v">
-                                                        <div class="col-12">
-                                                            <div class="align-l x-large">On Payment</div>
-                                                            <span class="dark large">Total: 67%</span>
+                                            <div class="content padding-10-h padding-10-t padding-15-b theme-panel2">
+                                                <div class="card full-height padding-15 round shadow-lg">
+                                                    <div class="col-static no-fluid">
+                                                        <div class="row row-no-padding-h row-md-padding-v">
+                                                            <div class="col-12">
+                                                                <div class="align-l x-large">On Payment</div>
+                                                                <span class="dark large">Total: 67%</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="static-100 align-r">
+                                                            <span class="x-largest ui-text">256</span>
                                                         </div>
                                                     </div>
-                                                    <div class="static-100 align-r">
-                                                        <span class="x-largest ui-text">256</span>
+                                                    <div class="progress-bar margin-15-t progress round">
+                                                        <span class="ui-dark stripe-light" style="width: 67%;"></span>
                                                     </div>
-                                                </div>
-                                                <div class="progress-bar margin-15-t progress round">
-                                                    <span class="ui-dark stripe-light" style="width: 67%;"></span>
-                                                </div>
-                                                <p class="dark large margin-5-b">Confirmed for payment.</p>
-                                                <p class="light">
-                                                    <i class="icon icon-xs icon-clock margin-3-r"></i>
-                                                    <span class="inline-block">Last updated: 15:12</span>
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="carousel-nav no-margin ease-1st-btn">
-                                        <button class="carousel-prev btn btn-ghost btn-square round"><i class="icon icon-angle-left"></i></button>
-                                        <span class="dots dark"></span>
-                                        <button class="carousel-next btn btn-ghost btn-square round"><i class="icon icon-angle-right"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-3 col-lg-6 col-12 col-md-6">
-                                <div class="card full-height padding-15 round shadow-lg">
-                                    <div class="dropdown menu-l right ease-dropdown">
-                                        <button class="btn btn-square btn-ghost round ease-btn">
-                                            <i class="icon icon-sm icon-ellipsis-v"></i>
-                                        </button>
-                                        <ul class="content has-icon round shadow-lg">
-                                            <li><a href="#"><i class="list-icon icon icon-file-pdf"></i>Download PDF</a></li>
-                                            <li><a href="#"><i class="list-icon icon icon-file-xls"></i>Download Excel</a></li>
-                                            <li class="sep"></li>
-                                            <li><a href="#"><i class="list-icon icon icon-eye"></i>See Detailed Activity</a></li>
-                                        </ul>
-                                    </div>
-                                    <h4 class="align-l margin-5-t">Activity</h4>
-                                    <div class="col-static no-fluid">
-                                        <div class="row row row-no-padding-h row-md-padding-v">
-                                            <div class="col-12 large">
-                                                <div class="large bold">Total Progress</div>
-                                                <span class="dark">23% Change</span>
-                                            </div>
-                                        </div>
-                                        <div class="static-150 align-r">
-                                            <span class="x-largest inline-block">436</span>
-                                        </div>
-                                    </div>
-                                    <div class="row row-lg-padding-h no-fluid">
-                                        <div class="col-6">
-                                            <div class="donut-chart automargin ease-donut-chart" style="max-width: 150px;">
-                                                <strong>
-                                                    <b class="x-dark margin-2-b block">69%</b>
-                                                    Payments
-                                                </strong>
-                                                <svg viewBox="0 0 160 160">
-                                                    <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
-                                                    <circle r="69.85699" cy="80" cx="80" stroke="#75dbe7" data-percent="69" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="pie-chart automargin ease-pie-chart" data-text="Profit" style="max-width: 150px;">
-                                                <ul>
-                                                    <li data-percent="70" data-fill="#a4e87b"></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <span class="sp3"></span>
-                                    <p class="x-dark large margin-5-b">Daily reports that all received.</p>
-                                    <p class="light">
-                                        <i class="icon icon-xs icon-clock margin-3-r"></i>
-                                        <span class="inline-block">Last updated: 15:12</span>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-3 col-lg-6 col-12 col-md-6">
-                                <div class="card full-height padding-15 padding-10-t round shadow-lg" style="min-height: 350px;">
-                                    <div class="tabs theme-panel2 ease-tabs" data-classes="border-b border-lg ui-border ui-text">
-                                        <div class="row row-no-padding no-fluid dark border-b block-2nd ease-2nd-btn">
-                                            <div class="col-6">
-                                                <button class="tab btn btn-lg btn-ghost round-t border-b border-lg ui-border ui-text active">Delayed</button>
-                                            </div>
-                                            <div class="col-6">
-                                                <button class="tab btn btn-lg btn-ghost round-t">Paused</button>
-                                            </div>
-                                        </div>
-                                        <div class="tab-content set-absolute set-h scroll-v open open-ease" style="top: 62px; bottom: 15px;">
-                                            <div class="list-group list-striped margin-15-h">
-                                                <ul class="ease-list-group">
-                                                    <li class="no-border">
-                                                        <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
-                                                            <strong class="thin x-small">88%</strong>
-                                                            <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="88" />
-                                                            </svg>
-                                                        </span>
-                                                        <b class="margin-3-t block">AAC-2019-013:AGF</b>
-                                                        <span class="x-dark small">3814 Reports</span>
-                                                    </li>
-                                                    <li class="no-border">
-                                                        <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
-                                                            <strong class="thin x-small">76%</strong>
-                                                            <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="76" />
-                                                            </svg>
-                                                        </span>
-                                                        <b class="margin-3-t block">BDA-2019-642</b>
-                                                        <span class="x-dark small">2613 Reports</span>
-                                                    </li>
-                                                    <li class="no-border">
-                                                        <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
-                                                            <strong class="thin x-small">69%</strong>
-                                                            <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="69" />
-                                                            </svg>
-                                                        </span>
-                                                        <b class="margin-3-t block">DDG-2019-505:AG</b>
-                                                        <span class="x-dark small">1890 Reports</span>
-                                                    </li>
-                                                    <li class="no-border">
-                                                        <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
-                                                            <strong class="thin x-small">52%</strong>
-                                                            <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="52" />
-                                                            </svg>
-                                                        </span>
-                                                        <b class="margin-3-t block">OOC-2019-781:F</b>
-                                                        <span class="x-dark small">1605 Reports</span>
-                                                    </li>
-                                                    <li class="no-border">
-                                                        <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
-                                                            <strong class="thin x-small">36%</strong>
-                                                            <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="36" />
-                                                            </svg>
-                                                        </span>
-                                                        <b class="margin-3-t block">BDD-2019-047:G</b>
-                                                        <span class="x-dark small">812 Reports</span>
-                                                    </li>
-                                                    <li class="no-border">
-                                                        <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
-                                                            <strong class="thin x-small">36%</strong>
-                                                            <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="36" />
-                                                            </svg>
-                                                        </span>
-                                                        <b class="margin-3-t block">RAC-2019-973</b>
-                                                        <span class="x-dark small">616 Reports</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="tab-content set-absolute set-h scroll-v" style="top: 62px; bottom: 15px;">
-                                            <div class="list-group list-striped margin-15-h">
-                                                <ul class="ease-list-group">
-                                                    <li class="no-border">
-                                                        <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
-                                                            <strong class="thin x-small">88%</strong>
-                                                            <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="88" />
-                                                            </svg>
-                                                        </span>
-                                                        <b class="margin-3-t block">AAC-2019-013:AGF</b>
-                                                        <span class="x-dark small">3814 Reports</span>
-                                                    </li>
-                                                    <li class="no-border">
-                                                        <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
-                                                            <strong class="thin x-small">76%</strong>
-                                                            <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="76" />
-                                                            </svg>
-                                                        </span>
-                                                        <b class="margin-3-t block">BDA-2019-642</b>
-                                                        <span class="x-dark small">2613 Reports</span>
-                                                    </li>
-                                                    <li class="no-border">
-                                                        <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
-                                                            <strong class="thin x-small">69%</strong>
-                                                            <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="69" />
-                                                            </svg>
-                                                        </span>
-                                                        <b class="margin-3-t block">DDG-2019-505:AG</b>
-                                                        <span class="x-dark small">1890 Reports</span>
-                                                    </li>
-                                                    <li class="no-border">
-                                                        <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
-                                                            <strong class="thin x-small">52%</strong>
-                                                            <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="52" />
-                                                            </svg>
-                                                        </span>
-                                                        <b class="margin-3-t block">OOC-2019-781:F</b>
-                                                        <span class="x-dark small">1605 Reports</span>
-                                                    </li>
-                                                    <li class="no-border">
-                                                        <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
-                                                            <strong class="thin x-small">36%</strong>
-                                                            <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="36" />
-                                                            </svg>
-                                                        </span>
-                                                        <b class="margin-3-t block">BDD-2019-047:G</b>
-                                                        <span class="x-dark small">812 Reports</span>
-                                                    </li>
-                                                    <li class="no-border">
-                                                        <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
-                                                            <strong class="thin x-small">36%</strong>
-                                                            <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="36" />
-                                                            </svg>
-                                                        </span>
-                                                        <b class="margin-3-t block">RAC-2019-973</b>
-                                                        <span class="x-dark small">616 Reports</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-6 col-lg-6 col-12 col-md-6">
-                                <div class="card full-height padding-15 round shadow-lg tabs ease-tabs" data-classes="bold">
-                                    <div class="dropdown menu-l right ease-dropdown">
-                                        <button class="btn btn-square btn-ghost round ease-btn">
-                                            <i class="icon icon-sm icon-ellipsis-v"></i>
-                                        </button>
-                                        <ul class="content has-icon round shadow-lg">
-                                            <li><a href="#"><i class="list-icon icon icon-file-pdf"></i>Download PDF</a></li>
-                                            <li><a href="#"><i class="list-icon icon icon-file-xls"></i>Download Excel</a></li>
-                                            <li class="sep"></li>
-                                            <li><a href="#"><i class="list-icon icon icon-eye"></i>See Detailed Statistics</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="dropdown menu-l margin-5-r right ease-dropdown">
-                                        <button class="btn btn-ghost round ease-btn">
-                                            <span class="value-toggle">Last year</span>
-                                            <i class="toggle-icon icon margin-3-l icon-xs icon-angle-down"></i>
-                                        </button>
-                                        <ul class="content round shadow-lg scroll-v">
-                                            <li><label class="tab line-charts-loader active bold selected">Last year</label></li>
-                                            <li><label class="tab line-charts-loader">Past year</label></li>
-                                        </ul>
-                                    </div>
-                                    <h4 class="align-l margin-5-t">Statistics</h4>
-                                    <div class="tab-content open open-ease">
-                                        <div class="line-charts ease-line-charts" data-size="5,48" data-x="Sep,Oct,Nov,Dec,Jan,Fab">
-                                            <ul class="line" data-name="Sales" data-type="curved filled">
-                                                <li data-y="10" data-link="#"></li>
-                                                <li data-y="30" data-link="#"></li>
-                                                <li data-y="70" data-link="#"></li>
-                                                <li data-y="120" data-link="#"></li>
-                                                <li data-y="100" data-link="#"></li>
-                                                <li data-y="150" data-link="#"></li>
-                                            </ul>
-                                            <ul class="line" data-name="Orders">
-                                                <li data-y="50" data-link="#"></li>
-                                                <li data-y="10" data-link="#"></li>
-                                                <li data-y="50" data-link="#"></li>
-                                                <li data-y="40" data-link="#"></li>
-                                                <li data-y="80" data-link="#"></li>
-                                                <li data-y="50" data-link="#"></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="tab-content">
-                                        <div class="line-charts ease-line-charts" data-size="5,48" data-x="Sep,Oct,Nov,Dec,Jan,Fab">
-                                            <ul class="line" data-name="Sales" data-type="curved filled">
-                                                <li data-y="10" data-link="#"></li>
-                                                <li data-y="60" data-link="#"></li>
-                                                <li data-y="20" data-link="#"></li>
-                                                <li data-y="120" data-link="#"></li>
-                                                <li data-y="10" data-link="#"></li>
-                                                <li data-y="100" data-link="#"></li>
-                                            </ul>
-                                            <ul class="line" data-name="Orders">
-                                                <li data-y="0" data-link="#"></li>
-                                                <li data-y="20" data-link="#"></li>
-                                                <li data-y="50" data-link="#"></li>
-                                                <li data-y="40" data-link="#"></li>
-                                                <li data-y="70" data-link="#"></li>
-                                                <li data-y="50" data-link="#"></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-3 col-lg-6 col-12 col-md-6">
-                                <div class="card full-height padding-15 padding-10-t round shadow-lg" style="min-height: 350px;">
-                                    <div class="tabs theme-panel2 ease-tabs" data-classes="border-b border-lg ui-border ui-text">
-                                        <div class="row row-no-padding no-fluid dark border-b block-2nd ease-2nd-btn">
-                                            <div class="col-6">
-                                                <button class="tab btn btn-lg btn-ghost round-t border-b border-lg ui-border ui-text active">News</button>
-                                            </div>
-                                            <div class="col-6">
-                                                <button class="tab btn btn-lg btn-ghost round-t">Announcements</button>
-                                            </div>
-                                        </div>
-                                        <div class="tab-content set-absolute set-h scroll-v open open-ease" style="top: 62px; bottom: 15px;">
-                                            <ul class="timeline side-l margin-15-h hide-h-lines">
-                                                <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
-                                                <li>
-                                                    Lorem ipsum dolor sit amet.
-                                                    <span class="photos-holder margin-5-t ease-2nd-layout">
-                                                        <a href="#"><img class="img-photo border-lg circle hover-scale-more" src="img/profile-image.jpg" alt=""></a>
-                                                        <a href="#"><img class="img-photo border-lg circle hover-scale-more" src="img/profile-image2.jpg" alt=""></a>
-                                                        <a href="#"><img class="img-photo border-lg circle hover-scale-more" src="img/profile-image3.jpg" alt=""></a>
-                                                        <a class="btn btn-lg no-margin circle ease-btn" href="#">+12</a>
-                                                    </span>
-                                                </li>
-                                                <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
-                                                <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
-                                                <li>
-                                                    Nullam sit amet sagittis nisi.
-                                                    <span class="margin-5-t block ease-1st-btn">
-                                                        <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-pdf"></i></a>
-                                                        <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-xls"></i></a>
-                                                        <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-zip"></i></a>
-                                                    </span>
-                                                </li>
-                                                <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
-                                                <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
-                                                <li>Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.</li>
-                                                <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
-                                            </ul>
-                                        </div>
-                                        <div class="tab-content set-absolute set-h scroll-v" style="top: 62px; bottom: 15px;">
-                                            <ul class="timeline side-l margin-15-h hide-h-lines">
-                                                <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
-                                                <li>
-                                                    Lorem ipsum dolor sit amet.
-                                                    <span class="photo-gallery margin-5-t ease-photo-gallery">
-                                                        <a class="img margin-1-h round" href="img/image_01.jpg"><img src="img/thumb_01.jpg" height="40" alt=""></a>
-                                                        <a class="img margin-1-h round" href="img/image_02.jpg"><img src="img/thumb_02.jpg" height="40" alt=""></a>
-                                                        <a class="img margin-1-h round" href="img/image_03.jpg"><img src="img/thumb_03.jpg" height="40" alt=""></a>
-                                                        <a class="img margin-1-h round" href="img/image_04.jpg"><img src="img/thumb_04.jpg" height="40" alt=""></a>
-                                                        <a class="img margin-1-h round" href="img/image_05.jpg"><img src="img/thumb_05.jpg" height="40" alt=""></a>
-                                                        <a class="img margin-1-h round" href="img/image_06.jpg"><img src="img/thumb_06.jpg" height="40" alt=""></a>
-                                                        <a class="img margin-1-h round" href="img/image_07.jpg"><img src="img/thumb_07.jpg" height="40" alt=""></a>
-                                                        <a class="img margin-1-h round" href="img/image_08.jpg"><img src="img/thumb_08.jpg" height="40" alt=""></a>
-                                                        <a class="img margin-1-h round" href="img/image_09.jpg"><img src="img/thumb_09.jpg" height="40" alt=""></a>
-                                                    </span>
-                                                </li>
-                                                <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
-                                                <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
-                                                <li>Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.</li>
-                                                <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
-                                                <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
-                                                <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
-                                                <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-3 col-lg-6 col-12 col-md-6">
-                                <div class="card full-height padding-15 round shadow-lg">
-                                    <div class="dropdown menu-l right ease-dropdown">
-                                        <button class="btn btn-square btn-ghost round ease-btn">
-                                            <i class="icon icon-sm icon-ellipsis-v"></i>
-                                        </button>
-                                        <ul class="content has-icon round shadow-lg">
-                                            <li><a href="#"><i class="list-icon icon icon-calendar-star"></i>Add to Your Calendar</a></li>
-                                            <li class="sep"></li>
-                                            <li><a href="#"><i class="list-icon icon icon-eye"></i>See All Events</a></li>
-                                        </ul>
-                                    </div>
-                                    <h4 class="align-l margin-5-t">Events</h4>
-                                    <div class="calendar ease-calendar round no-padding" data-src="json/events.json" data-date="2019,6"></div>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-6 col-lg-6 col-12 col-md-6">
-                                <div class="card full-height padding-15 round shadow-lg">
-                                    <div class="dropdown menu-l right ease-dropdown">
-                                        <button class="btn btn-square btn-ghost round ease-btn">
-                                            <i class="icon icon-sm icon-ellipsis-v"></i>
-                                        </button>
-                                        <ul class="content has-icon round shadow-lg">
-                                            <li><a href="#"><i class="list-icon icon icon-file-pdf"></i>Download PDF</a></li>
-                                            <li><a href="#"><i class="list-icon icon icon-file-xls"></i>Download Excel</a></li>
-                                            <li class="sep"></li>
-                                            <li><a href="#"><i class="list-icon icon icon-eye"></i>See All Experts</a></li>
-                                        </ul>
-                                    </div>
-                                    <h4 class="align-l margin-5-t">Experts</h4>
-                                    <div class="data-list data-striped data-hover theme-gray ease-data-list">
-
-                                        <div class="row row-no-padding-v row-sm-padding-h">
-                                            <div class="col-6 lg-fluid">
-                                                <div class="text text-icon-both round no-border ui-x-light has-clear ease-form">
-                                                    <i class="icon icon-search text-icon-l"></i>
-                                                    <button class="clear-form icon icon-remove"></button>
-                                                    <input class="data-filter" type="text" placeholder="Search">
-                                                </div>
-                                                <span class="sp5 hidden-lg"></span>
-                                            </div>
-                                            <div class="col-lg-3 col-6 no-fluid">
-                                                <div class="select round no-border ui-x-light ease-form">
-                                                    <i class="icon icon-angle-down"></i>
-                                                    <select class="data-filter" data-index="2">
-                                                        <option value="">Filter</option>
-                                                        <option>Starting</option>
-                                                        <option>Waiting</option>
-                                                        <option>Expert</option>
-                                                        <option>First Audit</option>
-                                                        <option>Second Audit</option>
-                                                        <option>Paused</option>
-                                                        <option>Completed</option>
-                                                    </select>
+                                                    <p class="dark large margin-5-b">Confirmed for payment.</p>
+                                                    <p class="light">
+                                                        <i class="icon icon-xs icon-clock margin-3-r"></i>
+                                                        <span class="inline-block">Last updated: 15:12</span>
+                                                    </p>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-3 col-6 no-fluid">
-                                                <div class="dropdown menu-l block ease-dropdown">
-                                                    <button class="btn align-l round ease-btn">
-                                                        <span class="value-toggle">
-                                                            <i class="icon icon-xs icon-sort"></i> Sort
-                                                        </span>
-                                                    </button>
-                                                    <ul class="content scroll-v round shadow-lg">
-                                                        <li>
-                                                            <label class="radio" data-sort="1">
-                                                                <i class="icon icon-xs icon-sort ease-layout"></i>
-                                                                <input type="radio" name="s">By Name
-                                                            </label>
+
+                                        </div>
+                                        <div class="carousel-nav no-margin ease-1st-btn">
+                                            <button class="carousel-prev btn btn-ghost btn-square round"><i class="icon icon-angle-left"></i></button>
+                                            <span class="dots dark"></span>
+                                            <button class="carousel-next btn btn-ghost btn-square round"><i class="icon icon-angle-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-3 col-lg-6 col-12 col-md-6">
+                                    <div class="card full-height padding-15 round shadow-lg">
+                                        <div class="dropdown menu-l right ease-dropdown">
+                                            <button class="btn btn-square btn-ghost round ease-btn">
+                                                <i class="icon icon-sm icon-ellipsis-v"></i>
+                                            </button>
+                                            <ul class="content has-icon round shadow-lg">
+                                                <li><a href="#"><i class="list-icon icon icon-file-pdf"></i>Download PDF</a></li>
+                                                <li><a href="#"><i class="list-icon icon icon-file-xls"></i>Download Excel</a></li>
+                                                <li class="sep"></li>
+                                                <li><a href="#"><i class="list-icon icon icon-eye"></i>See Detailed Activity</a></li>
+                                            </ul>
+                                        </div>
+                                        <h4 class="align-l margin-5-t">Activity</h4>
+                                        <div class="col-static no-fluid">
+                                            <div class="row row row-no-padding-h row-md-padding-v">
+                                                <div class="col-12 large">
+                                                    <div class="large bold">Total Progress</div>
+                                                    <span class="dark">23% Change</span>
+                                                </div>
+                                            </div>
+                                            <div class="static-150 align-r">
+                                                <span class="x-largest inline-block">436</span>
+                                            </div>
+                                        </div>
+                                        <div class="row row-lg-padding-h no-fluid">
+                                            <div class="col-6">
+                                                <div class="donut-chart automargin ease-donut-chart" style="max-width: 150px;">
+                                                    <strong>
+                                                        <b class="x-dark margin-2-b block">69%</b>
+                                                        Payments
+                                                    </strong>
+                                                    <svg viewBox="0 0 160 160">
+                                                        <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                                        <circle r="69.85699" cy="80" cx="80" stroke="#75dbe7" data-percent="69" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="pie-chart automargin ease-pie-chart" data-text="Profit" style="max-width: 150px;">
+                                                    <ul>
+                                                        <li data-percent="70" data-fill="#a4e87b"></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="sp3"></span>
+                                        <p class="x-dark large margin-5-b">Daily reports that all received.</p>
+                                        <p class="light">
+                                            <i class="icon icon-xs icon-clock margin-3-r"></i>
+                                            <span class="inline-block">Last updated: 15:12</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-3 col-lg-6 col-12 col-md-6">
+                                    <div class="card full-height padding-15 padding-10-t round shadow-lg" style="min-height: 350px;">
+                                        <div class="tabs theme-panel2 ease-tabs" data-classes="border-b border-lg ui-border ui-text">
+                                            <div class="row row-no-padding no-fluid dark border-b block-2nd ease-2nd-btn">
+                                                <div class="col-6">
+                                                    <button class="tab btn btn-lg btn-ghost round-t border-b border-lg ui-border ui-text active">Delayed</button>
+                                                </div>
+                                                <div class="col-6">
+                                                    <button class="tab btn btn-lg btn-ghost round-t">Paused</button>
+                                                </div>
+                                            </div>
+                                            <div class="tab-content set-absolute set-h scroll-v open open-ease" style="top: 62px; bottom: 15px;">
+                                                <div class="list-group list-striped margin-15-h">
+                                                    <ul class="ease-list-group">
+                                                        <li class="no-border">
+                                                            <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
+                                                                <strong class="thin x-small">88%</strong>
+                                                                <svg viewBox="0 0 160 160">
+                                                                    <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="88" />
+                                                                </svg>
+                                                            </span>
+                                                            <b class="margin-3-t block">AAC-2019-013:AGF</b>
+                                                            <span class="x-dark small">3814 Reports</span>
                                                         </li>
-                                                        <li>
-                                                            <label class="radio" data-sort="2">
-                                                                <i class="icon icon-xs icon-sort ease-layout"></i>
-                                                                <input type="radio" name="s">By Step
-                                                            </label>
+                                                        <li class="no-border">
+                                                            <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
+                                                                <strong class="thin x-small">76%</strong>
+                                                                <svg viewBox="0 0 160 160">
+                                                                    <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="76" />
+                                                                </svg>
+                                                            </span>
+                                                            <b class="margin-3-t block">BDA-2019-642</b>
+                                                            <span class="x-dark small">2613 Reports</span>
+                                                        </li>
+                                                        <li class="no-border">
+                                                            <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
+                                                                <strong class="thin x-small">69%</strong>
+                                                                <svg viewBox="0 0 160 160">
+                                                                    <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="69" />
+                                                                </svg>
+                                                            </span>
+                                                            <b class="margin-3-t block">DDG-2019-505:AG</b>
+                                                            <span class="x-dark small">1890 Reports</span>
+                                                        </li>
+                                                        <li class="no-border">
+                                                            <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
+                                                                <strong class="thin x-small">52%</strong>
+                                                                <svg viewBox="0 0 160 160">
+                                                                    <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="52" />
+                                                                </svg>
+                                                            </span>
+                                                            <b class="margin-3-t block">OOC-2019-781:F</b>
+                                                            <span class="x-dark small">1605 Reports</span>
+                                                        </li>
+                                                        <li class="no-border">
+                                                            <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
+                                                                <strong class="thin x-small">36%</strong>
+                                                                <svg viewBox="0 0 160 160">
+                                                                    <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="36" />
+                                                                </svg>
+                                                            </span>
+                                                            <b class="margin-3-t block">BDD-2019-047:G</b>
+                                                            <span class="x-dark small">812 Reports</span>
+                                                        </li>
+                                                        <li class="no-border">
+                                                            <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
+                                                                <strong class="thin x-small">36%</strong>
+                                                                <svg viewBox="0 0 160 160">
+                                                                    <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="36" />
+                                                                </svg>
+                                                            </span>
+                                                            <b class="margin-3-t block">RAC-2019-973</b>
+                                                            <span class="x-dark small">616 Reports</span>
                                                         </li>
                                                     </ul>
                                                 </div>
-                                                <select class="data-show hidden">
-                                                    <option>4</option>
-                                                </select>
+                                            </div>
+                                            <div class="tab-content set-absolute set-h scroll-v" style="top: 62px; bottom: 15px;">
+                                                <div class="list-group list-striped margin-15-h">
+                                                    <ul class="ease-list-group">
+                                                        <li class="no-border">
+                                                            <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
+                                                                <strong class="thin x-small">88%</strong>
+                                                                <svg viewBox="0 0 160 160">
+                                                                    <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="88" />
+                                                                </svg>
+                                                            </span>
+                                                            <b class="margin-3-t block">AAC-2019-013:AGF</b>
+                                                            <span class="x-dark small">3814 Reports</span>
+                                                        </li>
+                                                        <li class="no-border">
+                                                            <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
+                                                                <strong class="thin x-small">76%</strong>
+                                                                <svg viewBox="0 0 160 160">
+                                                                    <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="76" />
+                                                                </svg>
+                                                            </span>
+                                                            <b class="margin-3-t block">BDA-2019-642</b>
+                                                            <span class="x-dark small">2613 Reports</span>
+                                                        </li>
+                                                        <li class="no-border">
+                                                            <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
+                                                                <strong class="thin x-small">69%</strong>
+                                                                <svg viewBox="0 0 160 160">
+                                                                    <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="69" />
+                                                                </svg>
+                                                            </span>
+                                                            <b class="margin-3-t block">DDG-2019-505:AG</b>
+                                                            <span class="x-dark small">1890 Reports</span>
+                                                        </li>
+                                                        <li class="no-border">
+                                                            <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
+                                                                <strong class="thin x-small">52%</strong>
+                                                                <svg viewBox="0 0 160 160">
+                                                                    <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="52" />
+                                                                </svg>
+                                                            </span>
+                                                            <b class="margin-3-t block">OOC-2019-781:F</b>
+                                                            <span class="x-dark small">1605 Reports</span>
+                                                        </li>
+                                                        <li class="no-border">
+                                                            <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
+                                                                <strong class="thin x-small">36%</strong>
+                                                                <svg viewBox="0 0 160 160">
+                                                                    <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="36" />
+                                                                </svg>
+                                                            </span>
+                                                            <b class="margin-3-t block">BDD-2019-047:G</b>
+                                                            <span class="x-dark small">812 Reports</span>
+                                                        </li>
+                                                        <li class="no-border">
+                                                            <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
+                                                                <strong class="thin x-small">36%</strong>
+                                                                <svg viewBox="0 0 160 160">
+                                                                    <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="36" />
+                                                                </svg>
+                                                            </span>
+                                                            <b class="margin-3-t block">RAC-2019-973</b>
+                                                            <span class="x-dark small">616 Reports</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
-
-                                        <span class="sp15"></span>
-
-                                        <div class="data-container">
-
-                                            <div class="data-content no-border round" data-val="John Atkinson|Paused">
-                                                <div class="row row-no-padding no-fluid">
-                                                    <div class="col-5">
-                                                        <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
-                                                    </div>
-                                                    <div class="col-7">
-                                                        <ul class="steps-bar steps-bar-column-7 steps-icon">
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Waiting"></i>2:W
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
-                                                            </li>
-                                                            <li class="active">
-                                                                <i class="icon icon-clock" data-tooltip title="Paused"></i>6:P
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Delayed"></i>7:C
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="data-content no-border round" data-val="Mary Doe|Waiting">
-                                                <div class="row row-no-padding no-fluid">
-                                                    <div class="col-5">
-                                                        <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
-                                                    </div>
-                                                    <div class="col-7">
-                                                        <ul class="steps-bar steps-bar-column-7 steps-icon theme-yellow ui-text">
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
-                                                            </li>
-                                                            <li class="active">
-                                                                <i class="icon icon-alert-circle" data-tooltip title="Waiting"></i>2:W
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Paused"></i>6:P
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Delayed"></i>7:C
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="data-content no-border round" data-val="Mike Taylor|Completed">
-                                                <div class="row row-no-padding no-fluid">
-                                                    <div class="col-5">
-                                                        <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
-                                                    </div>
-                                                    <div class="col-7">
-                                                        <ul class="steps-bar steps-bar-column-7 steps-icon">
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Waiting"></i>2:W
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Paused"></i>6:P
-                                                            </li>
-                                                            <li class="active">
-                                                                <i class="icon icon-clock" data-tooltip title="Delayed"></i>7:C
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="data-content no-border round" data-val="Tony Starky|Paused">
-                                                <div class="row row-no-padding no-fluid">
-                                                    <div class="col-5">
-                                                        <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
-                                                    </div>
-                                                    <div class="col-7">
-                                                        <ul class="steps-bar steps-bar-column-7 steps-icon">
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Waiting"></i>2:W
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
-                                                            </li>
-                                                            <li class="active">
-                                                                <i class="icon icon-clock" data-tooltip title="Paused"></i>6:P
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Delayed"></i>7:C
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="data-content no-border round" data-val="John Atkinson|Paused">
-                                                <div class="row row-no-padding no-fluid">
-                                                    <div class="col-5">
-                                                        <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
-                                                    </div>
-                                                    <div class="col-7">
-                                                        <ul class="steps-bar steps-bar-column-7 steps-icon">
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Waiting"></i>2:W
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
-                                                            </li>
-                                                            <li class="active">
-                                                                <i class="icon icon-clock" data-tooltip title="Paused"></i>6:P
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Delayed"></i>7:C
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="data-content no-border round" data-val="Mary Doe|Waiting">
-                                                <div class="row row-no-padding no-fluid">
-                                                    <div class="col-5">
-                                                        <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
-                                                    </div>
-                                                    <div class="col-7">
-                                                        <ul class="steps-bar steps-bar-column-7 steps-icon theme-yellow ui-text">
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
-                                                            </li>
-                                                            <li class="active">
-                                                                <i class="icon icon-alert-circle" data-tooltip title="Waiting"></i>2:W
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Paused"></i>6:P
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Delayed"></i>7:C
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="data-content no-border round" data-val="Mike Taylor|Completed">
-                                                <div class="row row-no-padding no-fluid">
-                                                    <div class="col-5">
-                                                        <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
-                                                    </div>
-                                                    <div class="col-7">
-                                                        <ul class="steps-bar steps-bar-column-7 steps-icon">
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Waiting"></i>2:W
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Paused"></i>6:P
-                                                            </li>
-                                                            <li class="active">
-                                                                <i class="icon icon-clock" data-tooltip title="Delayed"></i>7:C
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="data-content no-border round" data-val="Tony Starky|Paused">
-                                                <div class="row row-no-padding no-fluid">
-                                                    <div class="col-5">
-                                                        <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
-                                                    </div>
-                                                    <div class="col-7">
-                                                        <ul class="steps-bar steps-bar-column-7 steps-icon">
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Waiting"></i>2:W
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
-                                                            </li>
-                                                            <li class="active">
-                                                                <i class="icon icon-clock" data-tooltip title="Paused"></i>6:P
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Delayed"></i>7:C
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="data-content no-border round" data-val="John Atkinson|Paused">
-                                                <div class="row row-no-padding no-fluid">
-                                                    <div class="col-5">
-                                                        <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
-                                                    </div>
-                                                    <div class="col-7">
-                                                        <ul class="steps-bar steps-bar-column-7 steps-icon">
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Waiting"></i>2:W
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
-                                                            </li>
-                                                            <li class="active">
-                                                                <i class="icon icon-clock" data-tooltip title="Paused"></i>6:P
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Delayed"></i>7:C
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="data-content no-border round" data-val="Mary Doe|Waiting">
-                                                <div class="row row-no-padding no-fluid">
-                                                    <div class="col-5">
-                                                        <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
-                                                    </div>
-                                                    <div class="col-7">
-                                                        <ul class="steps-bar steps-bar-column-7 steps-icon theme-yellow ui-text">
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
-                                                            </li>
-                                                            <li class="active">
-                                                                <i class="icon icon-alert-circle" data-tooltip title="Waiting"></i>2:W
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Paused"></i>6:P
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Delayed"></i>7:C
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="data-content no-border round" data-val="Mike Taylor|Completed">
-                                                <div class="row row-no-padding no-fluid">
-                                                    <div class="col-5">
-                                                        <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
-                                                    </div>
-                                                    <div class="col-7">
-                                                        <ul class="steps-bar steps-bar-column-7 steps-icon">
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Waiting"></i>2:W
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Paused"></i>6:P
-                                                            </li>
-                                                            <li class="active">
-                                                                <i class="icon icon-clock" data-tooltip title="Delayed"></i>7:C
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="data-content no-border round" data-val="Tony Starky|Paused">
-                                                <div class="row row-no-padding no-fluid">
-                                                    <div class="col-5">
-                                                        <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
-                                                    </div>
-                                                    <div class="col-7">
-                                                        <ul class="steps-bar steps-bar-column-7 steps-icon">
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Waiting"></i>2:W
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
-                                                            </li>
-                                                            <li class="active">
-                                                                <i class="icon icon-clock" data-tooltip title="Paused"></i>6:P
-                                                            </li>
-                                                            <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Delayed"></i>7:C
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                        <span class="sp10"></span>
-
-                                        <div class="row row-no-padding no-fluid">
-                                            <div class="col-4">
-                                                <div class="padding-5-v">
-                                                    Total <b class="data-total"></b>
-                                                </div>
-                                            </div>
-                                            <div class="col-8 align-r">
-                                                <div class="data-paging pagination ease-1st-btn" data-default="btn round"></div>
-                                            </div>
-                                        </div>
-
                                     </div>
                                 </div>
+
+                                <div class="col-xl-6 col-lg-6 col-12 col-md-6">
+                                    <div class="card full-height padding-15 round shadow-lg tabs ease-tabs" data-classes="bold">
+                                        <div class="dropdown menu-l right ease-dropdown">
+                                            <button class="btn btn-square btn-ghost round ease-btn">
+                                                <i class="icon icon-sm icon-ellipsis-v"></i>
+                                            </button>
+                                            <ul class="content has-icon round shadow-lg">
+                                                <li><a href="#"><i class="list-icon icon icon-file-pdf"></i>Download PDF</a></li>
+                                                <li><a href="#"><i class="list-icon icon icon-file-xls"></i>Download Excel</a></li>
+                                                <li class="sep"></li>
+                                                <li><a href="#"><i class="list-icon icon icon-eye"></i>See Detailed Statistics</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown menu-l margin-5-r right ease-dropdown">
+                                            <button class="btn btn-ghost round ease-btn">
+                                                <span class="value-toggle">Last year</span>
+                                                <i class="toggle-icon icon margin-3-l icon-xs icon-angle-down"></i>
+                                            </button>
+                                            <ul class="content round shadow-lg scroll-v">
+                                                <li><label class="tab line-charts-loader active bold selected">Last year</label></li>
+                                                <li><label class="tab line-charts-loader">Past year</label></li>
+                                            </ul>
+                                        </div>
+                                        <h4 class="align-l margin-5-t">Statistics</h4>
+                                        <div class="tab-content open open-ease">
+                                            <div class="line-charts ease-line-charts" data-size="5,48" data-x="Sep,Oct,Nov,Dec,Jan,Fab">
+                                                <ul class="line" data-name="Sales" data-type="curved filled">
+                                                    <li data-y="10" data-link="#"></li>
+                                                    <li data-y="60" data-link="#"></li>
+                                                    <li data-y="20" data-link="#"></li>
+                                                    <li data-y="120" data-link="#"></li>
+                                                    <li data-y="10" data-link="#"></li>
+                                                    <li data-y="100" data-link="#"></li>
+                                                </ul>
+                                                <ul class="line" data-name="Orders">
+                                                    <li data-y="0" data-link="#"></li>
+                                                    <li data-y="20" data-link="#"></li>
+                                                    <li data-y="50" data-link="#"></li>
+                                                    <li data-y="40" data-link="#"></li>
+                                                    <li data-y="70" data-link="#"></li>
+                                                    <li data-y="50" data-link="#"></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-content">
+                                            <div class="line-charts ease-line-charts" data-size="5,48" data-x="Sep,Oct,Nov,Dec,Jan,Fab">
+                                                <ul class="line" data-name="Sales" data-type="curved filled">
+                                                    <li data-y="10" data-link="#"></li>
+                                                    <li data-y="30" data-link="#"></li>
+                                                    <li data-y="70" data-link="#"></li>
+                                                    <li data-y="120" data-link="#"></li>
+                                                    <li data-y="100" data-link="#"></li>
+                                                    <li data-y="150" data-link="#"></li>
+                                                </ul>
+                                                <ul class="line" data-name="Orders">
+                                                    <li data-y="50" data-link="#"></li>
+                                                    <li data-y="10" data-link="#"></li>
+                                                    <li data-y="50" data-link="#"></li>
+                                                    <li data-y="40" data-link="#"></li>
+                                                    <li data-y="80" data-link="#"></li>
+                                                    <li data-y="50" data-link="#"></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-3 col-lg-6 col-12 col-md-6">
+                                    <div class="card full-height padding-15 padding-10-t round shadow-lg" style="min-height: 350px;">
+                                        <div class="tabs theme-panel2 ease-tabs" data-classes="border-b border-lg ui-border ui-text">
+                                            <div class="row row-no-padding no-fluid dark border-b block-2nd ease-2nd-btn">
+                                                <div class="col-6">
+                                                    <button class="tab btn btn-lg btn-ghost round-t border-b border-lg ui-border ui-text active">News</button>
+                                                </div>
+                                                <div class="col-6">
+                                                    <button class="tab btn btn-lg btn-ghost round-t">Announcements</button>
+                                                </div>
+                                            </div>
+                                            <div class="tab-content set-absolute set-h scroll-v open open-ease" style="top: 62px; bottom: 15px;">
+                                                <ul class="timeline side-l margin-15-h hide-h-lines">
+                                                    <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
+                                                    <li>
+                                                        Lorem ipsum dolor sit amet.
+                                                        <span class="photos-holder margin-5-t ease-2nd-layout">
+                                                            <a href="#"><img class="img-photo border-lg circle hover-scale-more" src="img/profile-image.jpg" alt=""></a>
+                                                            <a href="#"><img class="img-photo border-lg circle hover-scale-more" src="img/profile-image2.jpg" alt=""></a>
+                                                            <a href="#"><img class="img-photo border-lg circle hover-scale-more" src="img/profile-image3.jpg" alt=""></a>
+                                                            <a class="btn btn-lg no-margin circle ease-btn" href="#">+12</a>
+                                                        </span>
+                                                    </li>
+                                                    <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
+                                                    <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                                    <li>
+                                                        Nullam sit amet sagittis nisi.
+                                                        <span class="margin-5-t block ease-1st-btn">
+                                                            <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-pdf"></i></a>
+                                                            <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-xls"></i></a>
+                                                            <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-zip"></i></a>
+                                                        </span>
+                                                    </li>
+                                                    <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
+                                                    <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                                    <li>Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.</li>
+                                                    <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-content set-absolute set-h scroll-v" style="top: 62px; bottom: 15px;">
+                                                <ul class="timeline side-l margin-15-h hide-h-lines">
+                                                    <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
+                                                    <li>
+                                                        Lorem ipsum dolor sit amet.
+                                                        <span class="photo-gallery margin-5-t ease-photo-gallery">
+                                                            <a class="img margin-1-h round" href="img/image_01.jpg"><img src="img/thumb_01.jpg" height="40" alt=""></a>
+                                                            <a class="img margin-1-h round" href="img/image_02.jpg"><img src="img/thumb_02.jpg" height="40" alt=""></a>
+                                                            <a class="img margin-1-h round" href="img/image_03.jpg"><img src="img/thumb_03.jpg" height="40" alt=""></a>
+                                                            <a class="img margin-1-h round" href="img/image_04.jpg"><img src="img/thumb_04.jpg" height="40" alt=""></a>
+                                                            <a class="img margin-1-h round" href="img/image_05.jpg"><img src="img/thumb_05.jpg" height="40" alt=""></a>
+                                                            <a class="img margin-1-h round" href="img/image_06.jpg"><img src="img/thumb_06.jpg" height="40" alt=""></a>
+                                                            <a class="img margin-1-h round" href="img/image_07.jpg"><img src="img/thumb_07.jpg" height="40" alt=""></a>
+                                                            <a class="img margin-1-h round" href="img/image_08.jpg"><img src="img/thumb_08.jpg" height="40" alt=""></a>
+                                                            <a class="img margin-1-h round" href="img/image_09.jpg"><img src="img/thumb_09.jpg" height="40" alt=""></a>
+                                                        </span>
+                                                    </li>
+                                                    <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
+                                                    <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                                    <li>Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.</li>
+                                                    <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                                    <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
+                                                    <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
+                                                    <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-3 col-lg-6 col-12 col-md-6">
+                                    <div class="card full-height padding-15 round shadow-lg">
+                                        <div class="dropdown menu-l right ease-dropdown">
+                                            <button class="btn btn-square btn-ghost round ease-btn">
+                                                <i class="icon icon-sm icon-ellipsis-v"></i>
+                                            </button>
+                                            <ul class="content has-icon round shadow-lg">
+                                                <li><a href="#"><i class="list-icon icon icon-calendar-star"></i>Add to Your Calendar</a></li>
+                                                <li class="sep"></li>
+                                                <li><a href="#"><i class="list-icon icon icon-eye"></i>See All Events</a></li>
+                                            </ul>
+                                        </div>
+                                        <h4 class="align-l margin-5-t">Events</h4>
+                                        <div class="calendar ease-calendar round no-padding" data-src="json/events.json" data-date="2019,6"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-6 col-lg-6 col-12 col-md-6">
+                                    <div class="card full-height padding-15 round shadow-lg">
+                                        <div class="dropdown menu-l right ease-dropdown">
+                                            <button class="btn btn-square btn-ghost round ease-btn">
+                                                <i class="icon icon-sm icon-ellipsis-v"></i>
+                                            </button>
+                                            <ul class="content has-icon round shadow-lg">
+                                                <li><a href="#"><i class="list-icon icon icon-file-pdf"></i>Download PDF</a></li>
+                                                <li><a href="#"><i class="list-icon icon icon-file-xls"></i>Download Excel</a></li>
+                                                <li class="sep"></li>
+                                                <li><a href="#"><i class="list-icon icon icon-eye"></i>See All Experts</a></li>
+                                            </ul>
+                                        </div>
+                                        <h4 class="align-l margin-5-t">Experts</h4>
+                                        <div class="data-list data-striped data-hover theme-gray ease-data-list">
+
+                                            <div class="row row-no-padding-v row-sm-padding-h">
+                                                <div class="col-6 lg-fluid">
+                                                    <div class="text text-icon-both round no-border ui-x-light has-clear ease-form">
+                                                        <i class="icon icon-search text-icon-l"></i>
+                                                        <button class="clear-form icon icon-remove"></button>
+                                                        <input class="data-filter" type="text" placeholder="Search">
+                                                    </div>
+                                                    <span class="sp5 hidden-lg"></span>
+                                                </div>
+                                                <div class="col-lg-3 col-6 no-fluid">
+                                                    <div class="select round no-border ui-x-light ease-form">
+                                                        <i class="icon icon-angle-down"></i>
+                                                        <select class="data-filter" data-index="2">
+                                                            <option value="">Filter</option>
+                                                            <option>Starting</option>
+                                                            <option>Waiting</option>
+                                                            <option>Expert</option>
+                                                            <option>First Audit</option>
+                                                            <option>Second Audit</option>
+                                                            <option>Paused</option>
+                                                            <option>Completed</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-6 no-fluid">
+                                                    <div class="dropdown menu-l block ease-dropdown">
+                                                        <button class="btn align-l round ease-btn">
+                                                            <span class="value-toggle">
+                                                                <i class="icon icon-xs icon-sort"></i> Sort
+                                                            </span>
+                                                        </button>
+                                                        <ul class="content scroll-v round shadow-lg">
+                                                            <li>
+                                                                <label class="radio" data-sort="1">
+                                                                    <i class="icon icon-xs icon-sort ease-layout"></i>
+                                                                    <input type="radio" name="s">By Name
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label class="radio" data-sort="2">
+                                                                    <i class="icon icon-xs icon-sort ease-layout"></i>
+                                                                    <input type="radio" name="s">By Step
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <select class="data-show hidden">
+                                                        <option>4</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <span class="sp15"></span>
+
+                                            <div class="data-container">
+
+                                                <div class="data-content no-border round" data-val="John Atkinson|Paused">
+                                                    <div class="row row-no-padding no-fluid">
+                                                        <div class="col-5">
+                                                            <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <ul class="steps-bar steps-bar-column-7 steps-icon">
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Waiting"></i>2:W
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
+                                                                </li>
+                                                                <li class="active">
+                                                                    <i class="icon icon-clock" data-tooltip title="Paused"></i>6:P
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Delayed"></i>7:C
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="data-content no-border round" data-val="Mary Doe|Waiting">
+                                                    <div class="row row-no-padding no-fluid">
+                                                        <div class="col-5">
+                                                            <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <ul class="steps-bar steps-bar-column-7 steps-icon theme-yellow ui-text">
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
+                                                                </li>
+                                                                <li class="active">
+                                                                    <i class="icon icon-alert-circle" data-tooltip title="Waiting"></i>2:W
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Paused"></i>6:P
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Delayed"></i>7:C
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="data-content no-border round" data-val="Mike Taylor|Completed">
+                                                    <div class="row row-no-padding no-fluid">
+                                                        <div class="col-5">
+                                                            <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <ul class="steps-bar steps-bar-column-7 steps-icon">
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Waiting"></i>2:W
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Paused"></i>6:P
+                                                                </li>
+                                                                <li class="active">
+                                                                    <i class="icon icon-clock" data-tooltip title="Delayed"></i>7:C
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="data-content no-border round" data-val="Tony Starky|Paused">
+                                                    <div class="row row-no-padding no-fluid">
+                                                        <div class="col-5">
+                                                            <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <ul class="steps-bar steps-bar-column-7 steps-icon">
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Waiting"></i>2:W
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
+                                                                </li>
+                                                                <li class="active">
+                                                                    <i class="icon icon-clock" data-tooltip title="Paused"></i>6:P
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Delayed"></i>7:C
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="data-content no-border round" data-val="John Atkinson|Paused">
+                                                    <div class="row row-no-padding no-fluid">
+                                                        <div class="col-5">
+                                                            <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <ul class="steps-bar steps-bar-column-7 steps-icon">
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Waiting"></i>2:W
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
+                                                                </li>
+                                                                <li class="active">
+                                                                    <i class="icon icon-clock" data-tooltip title="Paused"></i>6:P
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Delayed"></i>7:C
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="data-content no-border round" data-val="Mary Doe|Waiting">
+                                                    <div class="row row-no-padding no-fluid">
+                                                        <div class="col-5">
+                                                            <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <ul class="steps-bar steps-bar-column-7 steps-icon theme-yellow ui-text">
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
+                                                                </li>
+                                                                <li class="active">
+                                                                    <i class="icon icon-alert-circle" data-tooltip title="Waiting"></i>2:W
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Paused"></i>6:P
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Delayed"></i>7:C
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="data-content no-border round" data-val="Mike Taylor|Completed">
+                                                    <div class="row row-no-padding no-fluid">
+                                                        <div class="col-5">
+                                                            <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <ul class="steps-bar steps-bar-column-7 steps-icon">
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Waiting"></i>2:W
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Paused"></i>6:P
+                                                                </li>
+                                                                <li class="active">
+                                                                    <i class="icon icon-clock" data-tooltip title="Delayed"></i>7:C
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="data-content no-border round" data-val="Tony Starky|Paused">
+                                                    <div class="row row-no-padding no-fluid">
+                                                        <div class="col-5">
+                                                            <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <ul class="steps-bar steps-bar-column-7 steps-icon">
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Waiting"></i>2:W
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
+                                                                </li>
+                                                                <li class="active">
+                                                                    <i class="icon icon-clock" data-tooltip title="Paused"></i>6:P
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Delayed"></i>7:C
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="data-content no-border round" data-val="John Atkinson|Paused">
+                                                    <div class="row row-no-padding no-fluid">
+                                                        <div class="col-5">
+                                                            <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <ul class="steps-bar steps-bar-column-7 steps-icon">
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Waiting"></i>2:W
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
+                                                                </li>
+                                                                <li class="active">
+                                                                    <i class="icon icon-clock" data-tooltip title="Paused"></i>6:P
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Delayed"></i>7:C
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="data-content no-border round" data-val="Mary Doe|Waiting">
+                                                    <div class="row row-no-padding no-fluid">
+                                                        <div class="col-5">
+                                                            <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <ul class="steps-bar steps-bar-column-7 steps-icon theme-yellow ui-text">
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
+                                                                </li>
+                                                                <li class="active">
+                                                                    <i class="icon icon-alert-circle" data-tooltip title="Waiting"></i>2:W
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Paused"></i>6:P
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Delayed"></i>7:C
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="data-content no-border round" data-val="Mike Taylor|Completed">
+                                                    <div class="row row-no-padding no-fluid">
+                                                        <div class="col-5">
+                                                            <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <ul class="steps-bar steps-bar-column-7 steps-icon">
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Waiting"></i>2:W
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Paused"></i>6:P
+                                                                </li>
+                                                                <li class="active">
+                                                                    <i class="icon icon-clock" data-tooltip title="Delayed"></i>7:C
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="data-content no-border round" data-val="Tony Starky|Paused">
+                                                    <div class="row row-no-padding no-fluid">
+                                                        <div class="col-5">
+                                                            <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <ul class="steps-bar steps-bar-column-7 steps-icon">
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Waiting"></i>2:W
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
+                                                                </li>
+                                                                <li class="active">
+                                                                    <i class="icon icon-clock" data-tooltip title="Paused"></i>6:P
+                                                                </li>
+                                                                <li>
+                                                                    <i class="icon icon-check-circle" data-tooltip title="Delayed"></i>7:C
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <span class="sp10"></span>
+
+                                            <div class="row row-no-padding no-fluid">
+                                                <div class="col-4">
+                                                    <div class="padding-5-v">
+                                                        Total <b class="data-total"></b>
+                                                    </div>
+                                                </div>
+                                                <div class="col-8 align-r">
+                                                    <div class="data-paging pagination ease-1st-btn" data-default="btn round"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
-
                         </div>
+                        <!-- dashboard: end -->
+
                     </div>
-                    <!-- dashboard: end -->
 
-                    <!-- forms: start -->
-                    <div class="fixed tab-content">
-                        <div class="row">
+                    <div class="tab-content">
 
-                            <div class="col-12">
-                                forms
+                        <!-- forms: start -->
+                        <div class="fixed fixed-inner">
+                            <div class="row">
+
+                                <div class="col-12">
+                                    forms
+                                </div>
+
                             </div>
-
                         </div>
+                        <!-- forms: end -->
+
                     </div>
-                    <!-- forms: end -->
 
                 </div>
                 <!-- layouts: end -->
@@ -1587,7 +1704,7 @@
             <button class="btn btn-square btn-lg btn-ghost circle ease-btn close-mobile-menu">
                 <i class="icon icon-sm icon-remove no-opacity"></i>
             </button>
-            <img src="img/logo-udashboard.png" height="66" alt="Logo">
+            <img src="img/logo-udashboard.png" height="66" alt="">
         </div>
         <div class="mobile-menu-content no-padding scroll-v"></div>
     </div>
