@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../css/reset.css"/>
 
     <link rel="stylesheet" href="../css/alignments.css"/>
+    <link rel="stylesheet" href="../css/autocomplete.css"/>
     <link rel="stylesheet" href="../css/button-holder.css"/>
     <link rel="stylesheet" href="../css/buttons.css"/>
     <link rel="stylesheet" href="../css/borders.css"/>
@@ -29,6 +30,7 @@
     <link rel="stylesheet" href="../css/dropdown.css"/>
     <link rel="stylesheet" href="../css/effects.css"/>
     <link rel="stylesheet" href="../css/forms.css"/>
+    <link rel="stylesheet" href="../css/form-holder.css"/>
     <link rel="stylesheet" href="../css/grid.css"/>
     <link rel="stylesheet" href="../css/helpers.css"/>
     <link rel="stylesheet" href="../css/icons.css"/>
@@ -49,6 +51,7 @@
     <link rel="stylesheet" href="../css/steps.css"/>
     <link rel="stylesheet" href="../css/stripes.css"/>
     <link rel="stylesheet" href="../css/tabs.css"/>
+    <link rel="stylesheet" href="../css/textarea-counter.css"/>
     <link rel="stylesheet" href="../css/tables.css"/>
     <link rel="stylesheet" href="../css/timeline.css"/>
     <link rel="stylesheet" href="../css/typography.css"/>
@@ -65,6 +68,7 @@
     <script src="../js/user-agents.js"></script>
 
     <script src="../js/ajax.js"></script>
+    <script src="../js/autocomplete.js"></script>
     <script src="../js/calendar.js"></script>
     <script src="../js/card.js"></script>
     <script src="../js/carousel.js"></script>
@@ -82,6 +86,7 @@
     <script src="../js/static-grid.js"></script>
     <script src="../js/sticky-header.js"></script>
     <script src="../js/tabs.js"></script>
+    <script src="../js/textarea-counter.js"></script>
     <script src="../js/themes.js"></script>
     <script src="../js/tooltip.js"></script>
     <script src="../js/top-button.js"></script>
@@ -104,7 +109,7 @@
 
         body { background-color: #f7f7f7; }
 
-        .sticky-header .sidebar { top: -63px; }
+        .sticky-header .sidebar { top: -62px; }
         header { background-color: #fbfbfb; }
 
         @media (min-width: 1480px) {
@@ -179,6 +184,10 @@
                 } else { toggleClasses(); }
 
             }
+
+            setTimeout(function () {
+                events.trigger(document, 'domChange'); // set custom event
+            }, 400);
 
             // set sidebar state
             if (testStorage && sessionStorage !== undefined) {
@@ -400,7 +409,7 @@
 
                         <span class="sp15"></span>
 
-                        <div class="padding-5 margin-10 round block-st theme-panel ui-x-dark ease-1st-btn">
+                        <div class="padding-5 margin-10 round block-1st theme-panel ui-x-dark ease-1st-btn">
                             <button class="btn btn-lg btn-ghost round padding-15-h light-ui">
                                 <i class="icon icon-shield margin-15-r no-opacity"></i>
                                 Administration
@@ -477,7 +486,7 @@
 
                     <div class="inline">
                         <div class="dropdown menu-l ease-dropdown">
-                            <button class="btn dark btn-lg btn-square btn-ghost align-c circle ease-btn" data-tooltip="l" data-only="desktop" title="Personal Logs">
+                            <button class="btn dark btn-lg btn-square btn-ghost circle ease-btn" data-tooltip="l" data-only="desktop" title="Personal Logs">
                                 <i class="icon icon-grid-column notifier no-opacity"></i>
                             </button>
                             <div class="content round shadow-lg">
@@ -511,9 +520,9 @@
                                             <li>
                                                 Nullam sit amet sagittis nisi.
                                                 <span class="margin-5-t block ease-1st-btn">
-                                                    <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-pdf"></i></a>
-                                                    <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-xls"></i></a>
-                                                    <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-zip"></i></a>
+                                                    <a class="btn btn-lg btn-ghost btn-square round border-dual" href="#"><i class="icon icon-lg icon-file-pdf"></i></a>
+                                                    <a class="btn btn-lg btn-ghost btn-square round border-dual" href="#"><i class="icon icon-lg icon-file-xls"></i></a>
+                                                    <a class="btn btn-lg btn-ghost btn-square round border-dual" href="#"><i class="icon icon-lg icon-file-zip"></i></a>
                                                 </span>
                                             </li>
                                             <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
@@ -551,7 +560,7 @@
                             </div>
                         </div>
                         <div class="dropdown menu-l ease-dropdown">
-                            <button class="btn dark btn-lg btn-square btn-ghost align-c circle ease-btn" data-tooltip="l" data-only="desktop" title="Notification Center">
+                            <button class="btn dark btn-lg btn-square btn-ghost circle ease-btn" data-tooltip="l" data-only="desktop" title="Notification Center">
                                 <i class="icon icon-bars-right notifier no-opacity"></i>
                             </button>
                             <div class="content round shadow-lg">
@@ -595,9 +604,9 @@
                                             <li>
                                                 Nullam sit amet sagittis nisi.
                                                 <span class="margin-5-t block ease-1st-btn">
-                                                    <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-pdf"></i></a>
-                                                    <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-xls"></i></a>
-                                                    <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-zip"></i></a>
+                                                    <a class="btn btn-lg btn-ghost btn-square round border-dual" href="#"><i class="icon icon-lg icon-file-pdf"></i></a>
+                                                    <a class="btn btn-lg btn-ghost btn-square round border-dual" href="#"><i class="icon icon-lg icon-file-xls"></i></a>
+                                                    <a class="btn btn-lg btn-ghost btn-square round border-dual" href="#"><i class="icon icon-lg icon-file-zip"></i></a>
                                                 </span>
                                             </li>
                                             <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
@@ -648,9 +657,9 @@
                                             <li>
                                                 Nullam sit amet sagittis nisi.
                                                 <span class="margin-5-t block ease-1st-btn">
-                                                    <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-pdf"></i></a>
-                                                    <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-xls"></i></a>
-                                                    <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-zip"></i></a>
+                                                    <a class="btn btn-lg btn-ghost btn-square round border-dual" href="#"><i class="icon icon-lg icon-file-pdf"></i></a>
+                                                    <a class="btn btn-lg btn-ghost btn-square round border-dual" href="#"><i class="icon icon-lg icon-file-xls"></i></a>
+                                                    <a class="btn btn-lg btn-ghost btn-square round border-dual" href="#"><i class="icon icon-lg icon-file-zip"></i></a>
                                                 </span>
                                             </li>
                                             <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
@@ -712,13 +721,13 @@
                 <!-- header: end -->
 
                 <!-- layouts: start -->
-                <div class="tabs ease-tabs" data-classes="border-lg border-b ui-border ui-text">
+                <div class="tabs ease-tabs padding-15-b" data-classes="border-lg border-b ui-border ui-text">
 
                     <div class="container">
                         <div class="row border-b margin-15-b theme-panel2">
                             <div class="col-12 dark align-c no-padding-b ease-1st-btn">
-                                <button class="tab btn btn-lg btn-ghost border-lg border-b ui-border ui-text active">Forms</button>
-                                <button class="tab btn btn-lg btn-ghost">Dashboard</button>
+                                <button class="tab btn btn-lg btn-ghost round-t border-lg border-b ui-border ui-text active">Forms</button>
+                                <button class="tab btn btn-lg btn-ghost round-t">Dashboard</button>
                             </div>
                         </div>
                     </div>
@@ -730,10 +739,161 @@
                             <div class="row">
                                 <div class="col-12">
 
-                                    <div class="card">
-                                        <div class="card-side">
+                                    <div class="card full-height round shadow-lg">
 
-                                        </div>
+                                        <form action="#succesful">
+                                            <div class="card-side padding-15 border-b">
+                                                <div class="row row-no-padding xs-fluid">
+                                                    <div class="col-4 padding-5-v xs-no-padding-t">
+                                                        <h4 class="margin-5-t">Forms Title</h4>
+                                                    </div>
+                                                    <div class="col-8 align-r xs-align-c">
+
+                                                        <button type="submit" class="btn btn-lg padding-15-h round font-green ease-btn">
+                                                            <i class="icon icon-save no-opacity margin-3-r"></i> Save
+                                                        </button>
+
+                                                        <div class="dropdown menu-l ease-dropdown">
+                                                            <button type="button" class="btn btn-lg btn-ghost btn-square round ease-btn">
+                                                                <i class="icon icon-ellipsis-v"></i>
+                                                            </button>
+                                                            <ul class="content has-icon round shadow-lg">
+                                                                <li><a href="#"><i class="list-icon icon icon-check no-opacity"></i>Save &amp; Continue</a></li>
+                                                                <li class="sep"></li>
+                                                                <li><a href="#"><i class="list-icon icon icon-sign-out no-opacity"></i>Save &amp; Exit</a></li>
+                                                                <li><a href="#"><i class="list-icon icon icon-pencil no-opacity"></i>Save &amp; Edit</a></li>
+                                                                <li><a href="#"><i class="list-icon icon icon-plus no-opacity"></i>Save &amp; Add New</a></li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-side padding-15">
+                                                <div class="row">
+
+                                                    <div class="col-8 offset-2">
+                                                        <h3>Customer Info</h3>
+                                                    </div>
+
+                                                    <div class="col-3 offset-2">
+                                                        <label class="form-grid form-lg">First Name</label>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <div class="text text-lg circle border-dual ease-form">
+                                                            <input class="required" type="text" placeholder="Enter first name" minlength="3">
+                                                        </div>
+                                                        <p class="required-msg">Enter your first name.</p>
+                                                    </div>
+
+                                                    <div class="col-3 offset-2">
+                                                        <label class="form-grid form-lg">Last Name</label>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <div class="text text-lg circle border-dual ease-form">
+                                                            <input class="required" type="text" placeholder="Enter last name" minlength="3">
+                                                        </div>
+                                                        <p class="required-msg">Enter your last name.</p>
+                                                    </div>
+
+                                                    <div class="col-3 offset-2">
+                                                        <label class="form-grid form-lg">Contact Phone</label>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <div class="text text-lg text-icon-l circle border-dual ease-form">
+                                                            <i class="icon icon-phone"></i>
+                                                            <input class="required number" type="text" placeholder="123-123-1234" minlength="12" maxlength="12">
+                                                        </div>
+                                                        <p class="required-msg">Enter your phone.</p>
+                                                    </div>
+
+                                                    <div class="col-3 offset-2">
+                                                        <label class="form-grid form-lg">Age</label>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <div class="select select-lg circle border-dual ease-form">
+                                                            <i class="icon icon-angle-down"></i>
+                                                            <select class="required">
+                                                                <option value="">Select your age</option>
+                                                                <option>Under 20</option>
+                                                                <option>21- 30</option>
+                                                                <option>31 - 40</option>
+                                                            </select>
+                                                        </div>
+                                                        <p class="required-msg">Enter your age.</p>
+                                                    </div>
+
+                                                    <div class="col-3 offset-2">
+                                                        <label class="form-grid form-lg">Email Address</label>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <div class="text text-lg text-icon-l circle border-dual ease-form">
+                                                            <i class="icon icon-at"></i>
+                                                            <input class="required number" type="email" placeholder="123-123-1234">
+                                                        </div>
+                                                        <p class="required-msg">Enter your mail.</p>
+                                                    </div>
+
+                                                    <div class="col-3 offset-2">
+                                                        <label class="form-grid form-lg">Company Site</label>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <div class="form-holder">
+                                                            <div class="col-static no-fluid">
+                                                                <div class="row row-no-padding">
+                                                                    <div class="col-12">
+                                                                        <div class="text text-lg text-icon-l circle border-dual ease-form">
+                                                                            <i class="icon icon-browser"></i>
+                                                                            <input class="required" type="text" placeholder="Site name">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="static-200">
+                                                                    <div class="select select-lg circle border-dual ease-form">
+                                                                        <i class="icon icon-angle-down"></i>
+                                                                        <select>
+                                                                            <option>.com</option>
+                                                                            <option>.net</option>
+                                                                            <option>.org</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="required-msg">Enter your site name.</p>
+                                                    </div>
+
+                                                    <div class="sp1 margin-20 border-b border-dashed"></div>
+
+                                                    <div class="col-8 offset-2">
+                                                        <h3>Address Details</h3>
+                                                    </div>
+
+                                                    <div class="col-3 offset-2">
+                                                        <label class="form-grid form-lg">Country</label>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <div data-src="json/countries.json" data-val="name" class="autocomplete text text-lg text-icon-l circle border-dual ease-form">
+                                                            <i class="icon icon-sm icon-keyboard"></i>
+                                                            <input type="text" placeholder="Type/Select your country" autocomplete="off">
+                                                        </div>
+                                                        <p class="required-msg">Type/Select your country.</p>
+                                                    </div>
+
+                                                    <div class="col-3 offset-2">
+                                                        <label class="form-grid form-lg">Address</label>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <div class="textarea round border-dual ease-form" data-counter="1000">
+                                                            <textarea class="required" rows="3"></textarea>
+                                                        </div>
+                                                        <p class="required-msg">Enter your address details.</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </form>
+
                                     </div>
 
                                 </div>
@@ -1076,32 +1236,12 @@
                                                 <i class="toggle-icon icon margin-3-l icon-xs icon-angle-down"></i>
                                             </button>
                                             <ul class="content round shadow-lg scroll-v">
-                                                <li><label class="tab line-charts-loader active bold selected">Last year</label></li>
-                                                <li><label class="tab line-charts-loader">Past year</label></li>
+                                                <li><label class="tab active bold selected">Last year</label></li>
+                                                <li><label class="tab">Past year</label></li>
                                             </ul>
                                         </div>
                                         <h4 class="align-l margin-5-t">Statistics</h4>
                                         <div class="tab-content open open-ease">
-                                            <div class="line-charts ease-line-charts" data-size="5,48" data-x="Sep,Oct,Nov,Dec,Jan,Fab">
-                                                <ul class="line" data-name="Sales" data-type="curved filled">
-                                                    <li data-y="10" data-link="#"></li>
-                                                    <li data-y="60" data-link="#"></li>
-                                                    <li data-y="20" data-link="#"></li>
-                                                    <li data-y="120" data-link="#"></li>
-                                                    <li data-y="10" data-link="#"></li>
-                                                    <li data-y="100" data-link="#"></li>
-                                                </ul>
-                                                <ul class="line" data-name="Orders">
-                                                    <li data-y="0" data-link="#"></li>
-                                                    <li data-y="20" data-link="#"></li>
-                                                    <li data-y="50" data-link="#"></li>
-                                                    <li data-y="40" data-link="#"></li>
-                                                    <li data-y="70" data-link="#"></li>
-                                                    <li data-y="50" data-link="#"></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="tab-content">
                                             <div class="line-charts ease-line-charts" data-size="5,48" data-x="Sep,Oct,Nov,Dec,Jan,Fab">
                                                 <ul class="line" data-name="Sales" data-type="curved filled">
                                                     <li data-y="10" data-link="#"></li>
@@ -1111,12 +1251,32 @@
                                                     <li data-y="100" data-link="#"></li>
                                                     <li data-y="150" data-link="#"></li>
                                                 </ul>
-                                                <ul class="line" data-name="Orders">
+                                                <ul class="line" data-name="Orders" data-type="dashed">
                                                     <li data-y="50" data-link="#"></li>
                                                     <li data-y="10" data-link="#"></li>
                                                     <li data-y="50" data-link="#"></li>
                                                     <li data-y="40" data-link="#"></li>
                                                     <li data-y="80" data-link="#"></li>
+                                                    <li data-y="50" data-link="#"></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-content">
+                                            <div class="line-charts ease-line-charts" data-size="5,48" data-x="Sep,Oct,Nov,Dec,Jan,Fab">
+                                                <ul class="line" data-name="Sales" data-type="curved filled">
+                                                    <li data-y="10" data-link="#"></li>
+                                                    <li data-y="60" data-link="#"></li>
+                                                    <li data-y="20" data-link="#"></li>
+                                                    <li data-y="120" data-link="#"></li>
+                                                    <li data-y="10" data-link="#"></li>
+                                                    <li data-y="100" data-link="#"></li>
+                                                </ul>
+                                                <ul class="line" data-name="Orders" data-type="dashed">
+                                                    <li data-y="0" data-link="#"></li>
+                                                    <li data-y="20" data-link="#"></li>
+                                                    <li data-y="50" data-link="#"></li>
+                                                    <li data-y="40" data-link="#"></li>
+                                                    <li data-y="70" data-link="#"></li>
                                                     <li data-y="50" data-link="#"></li>
                                                 </ul>
                                             </div>
@@ -1152,9 +1312,9 @@
                                                     <li>
                                                         Nullam sit amet sagittis nisi.
                                                         <span class="margin-5-t block ease-1st-btn">
-                                                            <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-pdf"></i></a>
-                                                            <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-xls"></i></a>
-                                                            <a class="btn btn-lg btn-ghost btn-square round align-c border-dual" href="#"><i class="icon icon-lg icon-file-zip"></i></a>
+                                                            <a class="btn btn-lg btn-ghost btn-square round border-dual" href="#"><i class="icon icon-lg icon-file-pdf"></i></a>
+                                                            <a class="btn btn-lg btn-ghost btn-square round border-dual" href="#"><i class="icon icon-lg icon-file-xls"></i></a>
+                                                            <a class="btn btn-lg btn-ghost btn-square round border-dual" href="#"><i class="icon icon-lg icon-file-zip"></i></a>
                                                         </span>
                                                     </li>
                                                     <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
