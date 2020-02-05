@@ -104,7 +104,10 @@ var tabs = {};
                     events.addClass(currentContent, 'open');
 
                     setTimeout(function () {
+
                         events.addClass(currentContent, 'open-ease');
+                        events.trigger(document, 'resize'); // trigger custom events when tab opening
+
                     }, 50);
 
                 }, 0);
