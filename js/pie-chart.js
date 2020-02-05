@@ -179,7 +179,9 @@ var pieChart = {};
 
     // Loaders
     events.onload(pieChart.Start);
+
     events.on(window, 'resize', chartsResizer);
+    events.on(document, 'domChange', chartsResizer);
 
     // ajax callback loader: requires Ajax JS
     events.on(document, 'ajaxCallbacks', function () {

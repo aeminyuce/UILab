@@ -106,6 +106,8 @@ var stickyHeader = {};
     events.onload(stickyHeader.Start);
 
     events.on(window, 'scroll', stickyLoader);
+
     events.on(window, 'resize', stickyLoader); // for custom header animations
+    events.on(document, 'domChange', stickyLoader);
 
 }());

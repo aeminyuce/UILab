@@ -14,7 +14,7 @@ var topButton = {
 (function () {
 
     'use strict';
-    /*globals window, events, selector, setTimeout ,setInterval, clearInterval, useragents, screen */
+    /*globals window, document, events, selector, setTimeout ,setInterval, clearInterval, useragents, screen */
 
     var
         topBtn,
@@ -97,5 +97,6 @@ var topButton = {
 
     events.on(window, 'resize', togglerFnc);
     events.on(window, 'scroll', togglerFnc);
+    events.on(document, 'domChange', togglerFnc);
 
 }());
