@@ -20,6 +20,14 @@
 .form-holder .col-static > [class*="row"]:not(:last-child) .text.round,.form-holder .col-static > [class*="row"]:not(:last-child) .select.round,.form-holder .col-static > [class*="row"]:not(:last-child) .btn.round,.form-holder .col-static > [class*="row"]:not(:last-child) img.round,
 .form-holder [class*="static-"]:not(:last-child) .text.round,.form-holder [class*="static-"]:not(:last-child) .select.round,.form-holder [class*="static-"]:not(:last-child) .btn.round,.form-holder [class*="static-"]:not(:last-child) img.round { border-top-right-radius: 0; border-bottom-right-radius: 0; }
 
+.form-holder [class*="col-"]:not(:first-child) .text.circle,.form-holder [class*="col-"]:not(:first-child) .select.circle,.form-holder [class*="col-"]:not(:first-child) .btn.circle,.form-holder [class*="col-"]:not(:first-child) img.circle,
+.form-holder .col-static > [class*="row-"]:not(:first-child) .text.circle,.form-holder .col-static > [class*="row"]:not(:first-child) .select.circle,.form-holder .col-static > [class*="row"]:not(:first-child) .btn.circle,.form-holder .col-static > [class*="row"]:not(:first-child) img.circle,
+.form-holder [class*="static-"]:not(:first-child) .text.circle,.form-holder [class*="static-"]:not(:first-child) .select.circle,.form-holder [class*="static-"]:not(:first-child) .btn.circle,.form-holder [class*="static-"]:not(:first-child) img.circle { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+
+.form-holder [class*="col-"]:not(:last-child) .text.circle,.form-holder [class*="col-"]:not(:last-child) .select.circle,.form-holder [class*="col-"]:not(:last-child) .btn.circle,.form-holder [class*="col-"]:not(:last-child) img.circle,
+.form-holder .col-static > [class*="row"]:not(:last-child) .text.circle,.form-holder .col-static > [class*="row"]:not(:last-child) .select.circle,.form-holder .col-static > [class*="row"]:not(:last-child) .btn.circle,.form-holder .col-static > [class*="row"]:not(:last-child) img.circle,
+.form-holder [class*="static-"]:not(:last-child) .text.circle,.form-holder [class*="static-"]:not(:last-child) .select.circle,.form-holder [class*="static-"]:not(:last-child) .btn.circle,.form-holder [class*="static-"]:not(:last-child) img.circle { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+
 .form-holder.error .text,.form-holder.error .select,
 .form-holder.error .btn[class*="border"],
 .form-holder.error img[class*="border"] { border-color: #dc000f !important; }
