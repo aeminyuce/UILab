@@ -303,7 +303,7 @@ var modal = {
 
                 }
 
-                // show modal
+                // showing modal
                 bg = selector('.modal-bg');
                 events.addClass(bg, 'open');
 
@@ -338,6 +338,7 @@ var modal = {
                             events.removeClass(win, 'active');
 
                             modalResizer();
+                            events.trigger(document, 'domChange'); // set custom event
 
                             // callback
                             if (set.callback !== undefined) {

@@ -138,7 +138,7 @@ var carousel = {
 
     }
 
-    function carouselResizerFnc(i, that, type) {
+    function carouselModifier(i, that, type) {
 
         var j, slider, contents, nav, col, halfSized, size, navDots, navDotsEl;
 
@@ -194,6 +194,53 @@ var carousel = {
             carouselAnimate(this, 300, type);
 
         });
+
+    }
+
+    function carouselResizer(e) {
+
+        var that, slider;
+
+        if (e === 'resize' || e.type === 'resize') {
+
+            that = selector('.carousel');
+            events.each(that, function (i) {
+
+                slider = selector('.carousel-slider', this)[0];
+
+                carouselModifier(i, this, 'resize');
+
+                this.style.transitionDuration = '0s';
+                slider.style.transitionDuration = '0s';
+
+            });
+
+        }
+
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function () { // wait auto slider until resize completed
+
+            that = selector('.carousel');
+            events.each(that, function (i) {
+
+                if (autoTimer[i] !== null) {
+
+                    clearInterval(autoSlider[i]);
+
+                    autoSlider[i] = setInterval(function () {
+                        carouselNav(that[i], 'next');
+                    }, autoTimer[i]);
+
+                }
+
+                slider = selector('.carousel-slider', this)[0];
+
+                this.style.transitionDuration = '';
+                slider.style.transitionDuration = '';
+
+            });
+
+        }, 150);
 
     }
 
@@ -392,7 +439,7 @@ var carousel = {
                 if (nav === undefined) { return; }
 
                 events.addClass(that, 'active');
-                carouselResizerFnc(j, that, 'static');
+                carouselModifier(j, that, 'static');
 
                 // create nav
                 col = getCols(j); // get responsive cols
@@ -720,51 +767,8 @@ var carousel = {
 
     // Loaders
     events.onload(carousel.Start);
-    events.on(window, 'resize scroll', function (e) {
 
-        var that, slider;
-
-        if (e.type === 'resize') {
-
-            that = selector('.carousel');
-            events.each(that, function (i) {
-
-                slider = selector('.carousel-slider', this)[0];
-
-                carouselResizerFnc(i, this, 'resize');
-
-                this.style.transitionDuration = '0s';
-                slider.style.transitionDuration = '0s';
-
-            });
-
-        }
-
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(function () { // wait auto slider until resize completed
-
-            that = selector('.carousel');
-            events.each(that, function (i) {
-
-                if (autoTimer[i] !== null) {
-
-                    clearInterval(autoSlider[i]);
-
-                    autoSlider[i] = setInterval(function () {
-                        carouselNav(that[i], 'next');
-                    }, autoTimer[i]);
-
-                }
-
-                slider = selector('.carousel-slider', this)[0];
-
-                this.style.transitionDuration = '';
-                slider.style.transitionDuration = '';
-
-            });
-
-        }, 150);
-
-    });
+    events.on(window, 'resize scroll', carouselResizer);
+    events.on(document, 'domChange', function () { carouselResizer('resize'); });
 
 }());

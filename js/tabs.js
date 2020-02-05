@@ -106,7 +106,7 @@ var tabs = {};
                     setTimeout(function () {
 
                         events.addClass(currentContent, 'open-ease');
-                        events.trigger(document, 'resize'); // trigger custom events when tab opening
+                        events.trigger(document, 'domChange'); // set custom event
 
                     }, 50);
 

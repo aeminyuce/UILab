@@ -6,8 +6,7 @@
 var effects = {
 
     pauseAll: false,
-    pauseScroll: false, // pasuse effects when scrolling
-    pauseResize: false, // pasuse effects when resizing
+    pauseScroll: false, // pasuse effects when scrollingpauseResize: false, // pasuse effects when resizing
     preload: true, // wait page preload to start effects
     ie: true,
     android: true,
@@ -79,13 +78,6 @@ var effects = {
 
     // Loaders
     events.onload(effects.Start);
-
-    events.on(window, 'resize', function () {
-        pauseTransitionsFnc('resize');
-    });
-
-    events.on(window, 'scroll', function () {
-        pauseTransitionsFnc('scroll');
-    });
+    events.on(window, 'resize scroll', function (e) { pauseTransitionsFnc(e.type); });
 
 }());

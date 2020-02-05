@@ -35,6 +35,15 @@ var lineCharts = {
 
     var loadCharts;
 
+    function chartsResizer() {
+
+        var charts = selector('.line-charts.loaded');
+
+        if (charts.length === 0) { return; }
+        loadCharts(charts, true);
+
+    }
+
     // load charts
     lineCharts.Start = function () {
 
@@ -410,14 +419,9 @@ var lineCharts = {
 
     // Loaders
     events.onload(lineCharts.Start);
-    events.on(window, 'resize', function () {
 
-        var charts = selector('.line-charts.loaded');
-
-        if (charts.length === 0) { return; }
-        loadCharts(charts, true);
-
-    });
+    events.on(window, 'resize', chartsResizer);
+    events.on(document, 'domChange', chartsResizer);
 
     // ajax callback loader: requires Ajax JS
     events.on(document, 'ajaxCallbacks', function () {

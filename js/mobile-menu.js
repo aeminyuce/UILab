@@ -202,7 +202,6 @@ var mobileMenu = {
                 events.addClass(panel, 'open-ease');
                 events.addClass(bg, 'open-ease');
 
-                events.on(document, 'mobilemenu:open');
                 events.trigger(document, 'mobilemenu:open'); // set custom event
 
                 setTimeout(function () {
