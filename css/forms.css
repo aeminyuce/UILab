@@ -157,7 +157,8 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i { transform: tran
 .form-light.form-disabled { background-color: rgba(255,255,255,.075); }
 .form-light.form-readonly input,.form-light.form-readonly textarea { color: rgba(255,255,255,.5); }
 
-.form-label,.form-grid { font-size: 13px; line-height: normal; opacity: .6; }
+.form-label,.form-grid { line-height: normal; opacity: .6; }
+.form-grid:not(.form-lg) { font-size: 13px; }
 .form-label { margin-bottom: 5px; display: inline-block; }
 
 .form-focus { border-color: rgba(0,0,0,.35); }
