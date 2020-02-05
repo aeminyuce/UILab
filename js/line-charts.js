@@ -314,7 +314,17 @@ var lineCharts = {
                     }
 
                     // create paths
-                    html += '<path d="M ' + pathStart.x + ' ' + pathStart.y +
+                    if (type.indexOf('dashed') > -1) { // dashed
+                        html += '<path class="dashed" ';
+
+                    } else if (type.indexOf('dotted') > -1) { // dotted
+                        html += '<path class="dotted" ';
+
+                    } else {
+                        html += '<path ';
+                    }
+
+                    html += 'd="M ' + pathStart.x + ' ' + pathStart.y +
                         paths +
                         '" stroke="' + data.color[j] + '" stroke-width="' + lineCharts.lineStroke + '" />';
 
