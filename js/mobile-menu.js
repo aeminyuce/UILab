@@ -202,10 +202,11 @@ var mobileMenu = {
                 events.addClass(panel, 'open-ease');
                 events.addClass(bg, 'open-ease');
 
-                events.trigger(document, 'mobilemenu:open'); // set custom event
-
                 setTimeout(function () {
+
                     events.addClass(document, 'mobile-menu-opened');
+                    events.trigger(document, 'mobilemenu:open domChange'); // set custom event
+
                 }, 400);
 
             }, 10);
