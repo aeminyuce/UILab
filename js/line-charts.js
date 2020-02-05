@@ -280,8 +280,8 @@ var lineCharts = {
 
                             if (i === 1) { // start curves
 
-                                paths += ' C ' + ((i * col) - data.percent) + ' ' + (posY - data.percent) + ',' +
-                                    ' ' + ((i * col) - data.percent) + ' ' + posY + ',' +
+                                paths += ' C ' + (col + data.percent) + ' ' + (posY - data.percent) + ',' +
+                                    ' ' + (col + data.percent) + ' ' + posY + ',' +
                                     ' ' + posX + ' ' + posY;
 
                             } else if (i > 0) { // other curves
