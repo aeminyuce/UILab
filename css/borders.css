@@ -5,6 +5,9 @@
 .border-lg { border-width: 5px !important; }
 .no-border { border-width: 0 !important; }
 
+.border-dashed { border-style: dashed; }
+.border-dotted { border-style: dotted; }
+
 .border-light { border-color: rgba(255,255,255,.3) !important; }
 .border-dark { border-color: rgba(0,0,0,.35) !important; }
 
