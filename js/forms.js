@@ -260,7 +260,7 @@ var forms = {};
 
         }
 
-        // trigger custom events on form reset
+        // trigger custom events when form resetting
         events.on(document, 'reset', 'form', function (e) {
 
             var forms, errors, reqMessages;

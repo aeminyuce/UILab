@@ -250,8 +250,10 @@ var events = {
                 event = new Event(e);
 
             } catch (err) { // ie
+
                 event = document.createEvent('HTMLEvents');
                 event.initEvent(e, true, false);
+
             }
 
             l = selector(t);
