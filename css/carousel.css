@@ -6,8 +6,8 @@
 .carousel { width: auto; overflow: hidden; position: relative; }
 .carousel:not(.active) { display: none; }
 
-.carousel-slider { width: 20000px; }
-.carousel-slider > .content { float: left; }
+.carousel-slider { display: flex; flex-wrap: wrap; }
+.carousel-slider > .content { flex-grow: 1; }
 .carousel:not(.active) .carousel-slider > .content { width: 1px; }
 .carousel-slider > .content img.img { width: 100%; height: auto; }
 
