@@ -11,7 +11,7 @@
 .carousel:not(.active) .carousel-slider > .content { width: 1px; }
 .carousel-slider > .content img.img { width: 100%; height: auto; }
 
-.carousel-slider { display: -webkit-box !important; display: -ms-flexbox !important; display: -webkit-flex !important; display: flex !important; flex-wrap: wrap; }
+.carousel-slider { display: flex !important; flex-wrap: wrap; }
 .carousel-slider > .content { flex-direction: column; }
 
 .carousel .scroll > *,.carousel .scroll-v > *,.carousel .scroll-h > * { transform: translateZ(0); } /* ios: disappearing elements fix */
