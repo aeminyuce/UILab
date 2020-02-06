@@ -1,6 +1,6 @@
 /* button holder */
 .btn-holder { display: flex; flex-wrap: wrap; }
-.btn-holder > .btn { flex-grow: 1; flex-basis: 0; }
+.btn-holder > .btn { flex-grow: 1; }
 
 .btn-holder > .btn:not(:first-child):not(:last-child) { border-radius: 0; }
 
