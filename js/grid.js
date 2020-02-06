@@ -1,20 +1,20 @@
 /*
- Static Grid JS
- Static Grid JS requires Selector Js, Events JS
+ Grid JS
+ Grid JS requires Selector Js, Events JS
 */
 
-var staticGrid = {};
+var grid = {};
 
 (function () {
 
     'use strict';
     /*globals window, document, selector, events, ajax, screen */
 
-    staticGrid.Start = function () {
+    grid.Start = function () {
 
         var fnc, o, p, siblings, i;
 
-        if (selector('[class*="static-"][class*="order-"]').length > 0) {
+        if (selector('[class*="col-"][class*="order-"]').length > 0) {
 
             fnc = function (classType, size) {
 
@@ -84,12 +84,14 @@ var staticGrid = {};
     };
 
     // Loaders
-    events.onload(staticGrid.Start);
-    events.on(window, 'resize', staticGrid.Start);
+    events.onload(grid.Start);
+
+    events.on(window, 'resize', grid.Start);
+    events.on(document, 'domChange', grid.Start);
 
     // ajax callback loader: requires Ajax JS
     events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.classNames.indexOf('order-') > -1) { staticGrid.Start(); }
+        if (ajax.classNames.indexOf('order-') > -1) { grid.Start(); }
     });
 
 }());
