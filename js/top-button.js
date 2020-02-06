@@ -14,7 +14,7 @@ var topButton = {
 (function () {
 
     'use strict';
-    /*globals window, document, events, selector, setTimeout ,setInterval, clearInterval, useragents, screen */
+    /*globals window, document, events, selector, setTimeout ,setInterval, clearInterval, useragents */
 
     var
         topBtn,
@@ -47,11 +47,11 @@ var topButton = {
 
         };
 
-        if (selector('body')[0].offsetHeight > (screen.height * 2)) {
+        if (selector('body')[0].offsetHeight > (window.innerHeight * 2)) {
 
             scrollPos = window.pageYOffset;
 
-            if (scrollPos > + (screen.height / 3) && screen.width > 767) {
+            if (scrollPos > + (window.innerHeight / 3) && window.innerWidth > 767) {
                 showTopBtn();
 
             } else {

@@ -16,7 +16,7 @@ var photoGallery = {
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, Image, setTimeout, clearTimeout, screen, useragents */
+    /*globals window, document, selector, events, Image, setTimeout, clearTimeout, useragents */
 
     var
         imgTouchmove,
@@ -380,8 +380,8 @@ var photoGallery = {
 
                 var horLimit, verLimit;
 
-                horLimit = (((imgWidth * imgZoom) - screen.width) / (imgWidth * imgZoom)) * 100;
-                verLimit = (((imgHeight * imgZoom) - screen.height) / (imgHeight * imgZoom)) * 100;
+                horLimit = (((imgWidth * imgZoom) - window.innerWidth) / (imgWidth * imgZoom)) * 100;
+                verLimit = (((imgHeight * imgZoom) - window.innerHeight) / (imgHeight * imgZoom)) * 100;
 
                 if (imgPosX < -horLimit - 100) { imgPosX = -horLimit - 100; } // left
                 if (imgPosX > horLimit) { imgPosX = horLimit; } // right
@@ -455,7 +455,7 @@ var photoGallery = {
 
                     } else if (imgTouchmove) {
 
-                        if (imgZoom > 1 && (((imgWidth * imgZoom) > screen.width) || (imgHeight * imgZoom) > screen.height)) { // control image exceeds window size
+                        if (imgZoom > 1 && (((imgWidth * imgZoom) > window.innerWidth) || (imgHeight * imgZoom) > window.innerHeight)) { // control image exceeds window size
 
                             imgTouchmove = false;
                             imgLimits();
@@ -503,7 +503,7 @@ var photoGallery = {
 
                 events.on(this, 'touchmove', function (e) {
 
-                    if (imgZoom > 1 && (((imgWidth * imgZoom) > screen.width) || (imgHeight * imgZoom) > screen.height)) { // control image exceeds window size
+                    if (imgZoom > 1 && (((imgWidth * imgZoom) > window.innerWidth) || (imgHeight * imgZoom) > window.innerHeight)) { // control image exceeds window size
 
                         events.addClass(img, 'pause-easing');
 
@@ -563,7 +563,7 @@ var photoGallery = {
 
                 events.on(img, 'mousemove', function (e) {
 
-                    if (imgZoom > 1 && (((imgWidth * imgZoom) > screen.width) || (imgHeight * imgZoom) > screen.height)) { // control image exceeds window size
+                    if (imgZoom > 1 && (((imgWidth * imgZoom) > window.innerWidth) || (imgHeight * imgZoom) > window.innerHeight)) { // control image exceeds window size
 
                         events.addClass(img, 'pause-easing');
 
@@ -580,7 +580,7 @@ var photoGallery = {
 
                     if (useragents.mobile) { return; }
 
-                    if (imgZoom > 1 && (((imgWidth * imgZoom) > screen.width) || (imgHeight * imgZoom) > screen.height)) { // control image exceeds window size
+                    if (imgZoom > 1 && (((imgWidth * imgZoom) > window.innerWidth) || (imgHeight * imgZoom) > window.innerHeight)) { // control image exceeds window size
                         imgLimits();
                     }
 

@@ -13,7 +13,7 @@ var modal = {
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, setTimeout, ajax, useragents, screen */
+    /*globals window, document, selector, events, setTimeout, ajax, useragents */
 
     var
         pageYPos,
@@ -35,8 +35,8 @@ var modal = {
                 userDefined = 960; // md, inline-modal
                 openSize = Number(openSize);
 
-                if (screen.width < openSize) {
-                    win.style.width = (screen.width - 30) + 'px';
+                if (window.innerWidth < openSize) {
+                    win.style.width = (window.innerWidth - 30) + 'px';
 
                 } else {
 
@@ -47,11 +47,11 @@ var modal = {
                         userDefined = 480; // sm
                     }
 
-                    if (screen.width > userDefined) {
+                    if (window.innerWidth > userDefined) {
                         win.style.width = userDefined + 'px';
 
                     } else {
-                        win.style.width = (screen.width - 30) + 'px';
+                        win.style.width = (window.innerWidth - 30) + 'px';
                     }
                 }
 
@@ -76,15 +76,15 @@ var modal = {
                     customW = Number(customW);
                     customH = Number(customH);
 
-                    if (screen.width > customW) {
+                    if (window.innerWidth > customW) {
 
                         win.style.width = customW + 'px';
                         win.style.height = customH + 'px';
 
                     } else {
 
-                        win.style.width = (screen.width - 30) + 'px';
-                        win.style.height = (screen.width - 30) / (customW / customH) + 'px';
+                        win.style.width = (window.innerWidth - 30) + 'px';
+                        win.style.height = (window.innerWidth - 30) / (customW / customH) + 'px';
 
                     }
 

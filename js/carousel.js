@@ -18,7 +18,7 @@ var carousel = {
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, Image, setTimeout, clearTimeout, setInterval, clearInterval, screen */
+    /*globals window, document, selector, events, Image, setTimeout, clearTimeout, setInterval, clearInterval */
 
     var
         cols = [],
@@ -45,19 +45,19 @@ var carousel = {
 
         var col;
 
-        if (screen.width >= carousel.xl) {
+        if (window.innerWidth >= carousel.xl) {
             col = colsXL[i];
 
-        } else if (screen.width < carousel.xl && screen.width >= carousel.lg) {
+        } else if (window.innerWidth < carousel.xl && window.innerWidth >= carousel.lg) {
             col = colsLG[i];
 
-        } else if (screen.width <= carousel.md && screen.width > carousel.sm) {
+        } else if (window.innerWidth <= carousel.md && window.innerWidth > carousel.sm) {
             col = colsMD[i];
 
-        } else if (screen.width <= carousel.sm && screen.width > carousel.xs) {
+        } else if (window.innerWidth <= carousel.sm && window.innerWidth > carousel.xs) {
             col = colsSM[i];
 
-        } else if (screen.width <= carousel.xs) {
+        } else if (window.innerWidth <= carousel.xs) {
             col = colsXS[i];
 
         } else {

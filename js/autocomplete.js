@@ -12,7 +12,7 @@ var autocomplete = {
 (function () {
 
     'use strict';
-    /*globals document, selector, events, ajax, clearTimeout, setTimeout, screen */
+    /*globals window, document, selector, events, ajax, clearTimeout, setTimeout */
 
     autocomplete.Start = function () {
 
@@ -133,13 +133,13 @@ var autocomplete = {
                                     tHeight = p.offsetHeight;
                                     dHeight = list[0].offsetHeight;
 
-                                    if (offset.top + parseInt(tHeight + dHeight, 10) >= screen.height) {
+                                    if (offset.top + parseInt(tHeight + dHeight, 10) >= window.innerHeight) {
 
                                         if (offset.top - parseInt(tHeight + dHeight, 10) + tHeight > 0) {
                                             events.addClass(p, 'menu-t');
 
                                         } else {
-                                            list[0].style.height = (dHeight - (offset.top + parseInt(tHeight + dHeight, 10) - screen.height) - 15) + 'px';
+                                            list[0].style.height = (dHeight - (offset.top + parseInt(tHeight + dHeight, 10) - window.innerHeight) - 15) + 'px';
                                         }
 
                                     }

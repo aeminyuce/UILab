@@ -8,7 +8,7 @@ var stickyHeader = {};
 (function () {
 
     'use strict';
-    /*globals window, document, events, selector, screen */
+    /*globals window, document, events, selector */
 
     var
         stickyLoader,
@@ -44,12 +44,12 @@ var stickyHeader = {};
 
             if (size !== '') {
 
-                if (screen.width > 480 && size === 'sticky-xs') { clearSticky(); return; }
-                if (screen.width > 767 && size === 'sticky-sm') { clearSticky(); return; }
-                if (screen.width > 959 && size === 'sticky-md') { clearSticky(); return; }
+                if (window.innerWidth > 480 && size === 'sticky-xs') { clearSticky(); return; }
+                if (window.innerWidth > 767 && size === 'sticky-sm') { clearSticky(); return; }
+                if (window.innerWidth > 959 && size === 'sticky-md') { clearSticky(); return; }
 
-                if (screen.width < 1200 && size === 'sticky-lg') { clearSticky(); return; }
-                if (screen.width < 1680 && size === 'sticky-xl') { clearSticky(); return; }
+                if (window.innerWidth < 1200 && size === 'sticky-lg') { clearSticky(); return; }
+                if (window.innerWidth < 1680 && size === 'sticky-xl') { clearSticky(); return; }
 
             }
 

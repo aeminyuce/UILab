@@ -8,7 +8,7 @@ var grid = {};
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, ajax, screen */
+    /*globals window, document, selector, events, ajax */
 
     grid.Start = function () {
 
@@ -70,14 +70,14 @@ var grid = {};
 
             };
 
-            fnc('xs', screen.width < 481);
-            fnc('sm', screen.width < 768);
-            fnc('md', screen.width < 960);
+            fnc('xs', window.innerWidth < 481);
+            fnc('sm', window.innerWidth < 768);
+            fnc('md', window.innerWidth < 960);
 
-            fnc('default', screen.width < 1200);
+            fnc('default', window.innerWidth < 1200);
 
-            fnc('lg', screen.width > 1199);
-            fnc('xl', screen.width > 1679);
+            fnc('lg', window.innerWidth > 1199);
+            fnc('xl', window.innerWidth > 1679);
 
         }
 

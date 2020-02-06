@@ -8,7 +8,7 @@ var dropdown = {};
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, setTimeout, clearTimeout, screen */
+    /*globals window, document, selector, events, setTimeout, clearTimeout */
 
     var
         dropdownOpenTimer,
@@ -78,11 +78,11 @@ var dropdown = {};
                     listStyles = list.style.length;
                     listWidth = list.offsetWidth;
 
-                    if (screen.width > 480) { // menu positioning: active
+                    if (window.innerWidth > 480) { // menu positioning: active
 
-                        if (events.hasClass(parent, 'menu-l') || (offset.left + listWidth + 15) > screen.width) { // 15px: scrollbar size
+                        if (events.hasClass(parent, 'menu-l') || (offset.left + listWidth + 15) > window.innerWidth) { // 15px: scrollbar size
 
-                            if (screen.width < 768 || (screen.width > 767 && (offset.left - (listWidth - parent.offsetWidth)) >= 0)) { // works only sm and larger screen sizes
+                            if (window.innerWidth < 768 || (window.innerWidth > 767 && (offset.left - (listWidth - parent.offsetWidth)) >= 0)) { // works only sm and larger screen sizes
 
                                 list.style.right = 0;
                                 list.style.left = 'inherit';
@@ -104,7 +104,7 @@ var dropdown = {};
                     } else { // menu positioning: passive
 
                         list.style.marginLeft = -(offset.left - 10) + 'px';
-                        list.style.width = (screen.width - 20) + 'px';
+                        list.style.width = (window.innerWidth - 20) + 'px';
 
                     }
 
@@ -113,7 +113,7 @@ var dropdown = {};
                 btnHeight = t.offsetHeight;
                 subMenuHeight = list.offsetHeight;
 
-                if (offset.top + parseInt(btnHeight + subMenuHeight, 10) >= screen.height) {
+                if (offset.top + parseInt(btnHeight + subMenuHeight, 10) >= window.innerHeight) {
 
                     if (offset.top - parseInt(btnHeight + subMenuHeight, 10) + btnHeight > 0) {
 

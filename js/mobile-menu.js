@@ -13,7 +13,7 @@ var mobileMenu = {
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, setTimeout, screen, useragents */
+    /*globals window, document, selector, events, setTimeout, useragents */
 
     var
         pageYPos,
@@ -95,7 +95,7 @@ var mobileMenu = {
                 panel = selector('.mobile-menu.show-l');
 
                 max = screenLimits(mobileMenu.visibleLeft);
-                if (screen.width >= max) { closeMobileMenu(panel); }
+                if (window.innerWidth >= max) { closeMobileMenu(panel); }
 
             }
 
@@ -106,7 +106,7 @@ var mobileMenu = {
                 panel = selector('.mobile-menu.show-r');
 
                 max = screenLimits(mobileMenu.visibleRight);
-                if (screen.width >= max) { closeMobileMenu(panel); }
+                if (window.innerWidth >= max) { closeMobileMenu(panel); }
 
             }
 

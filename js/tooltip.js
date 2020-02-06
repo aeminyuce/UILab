@@ -13,7 +13,7 @@ var tooltip = {
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, setTimeout, clearTimeout, screen, useragents */
+    /*globals window, document, selector, events, setTimeout, clearTimeout, useragents */
 
     var
         removeTimer,
@@ -144,11 +144,11 @@ var tooltip = {
             if (sourceRect.top - window.pageYOffset + calc.ver < -window.pageYOffset) { // top
                 posRecall += 'b';
 
-            } else if (sourceRect.top + window.pageYOffset + winRect.height + calc.ver > screen.height + window.pageYOffset) { // bottom
+            } else if (sourceRect.top + window.pageYOffset + winRect.height + calc.ver > window.innerHeight + window.pageYOffset) { // bottom
                 posRecall += 't';
             }
 
-            if (sourceRect.left + window.pageXOffset + calc.hor + winRect.width > screen.width + window.pageXOffset) { // right
+            if (sourceRect.left + window.pageXOffset + calc.hor + winRect.width > window.innerWidth + window.pageXOffset) { // right
                 posRecall += 'l';
 
             } else if (sourceRect.left - window.pageXOffset + calc.hor < 0) { // left
