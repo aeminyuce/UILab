@@ -47,7 +47,6 @@
     <link rel="stylesheet" href="../css/pie-chart.css"/>
     <link rel="stylesheet" href="../css/progress-bar.css"/>
     <link rel="stylesheet" href="../css/scrollbar.css"/>
-    <link rel="stylesheet" href="../css/static-grid.css"/>
     <link rel="stylesheet" href="../css/steps.css"/>
     <link rel="stylesheet" href="../css/stripes.css"/>
     <link rel="stylesheet" href="../css/tabs.css"/>
@@ -77,13 +76,13 @@
     <script src="../js/dropdown.js"></script>
     <script src="../js/effects.js"></script>
     <script src="../js/forms.js"></script>
+    <script src="../js/grid.js"></script>
     <script src="../js/line-charts.js"></script>
     <script src="../js/mobile-menu.js"></script>
     <script src="../js/modal.js"></script>
     <script src="../js/photo-gallery.js"></script>
     <script src="../js/pie-chart.js"></script>
     <script src="../js/required-forms.js"></script>
-    <script src="../js/static-grid.js"></script>
     <script src="../js/sticky-header.js"></script>
     <script src="../js/tabs.js"></script>
     <script src="../js/textarea-counter.js"></script>
@@ -231,12 +230,12 @@
         <div class="col-static sm-fluid">
 
             <!-- sidebar -->
-            <div class="sidebar static-250 set-relative visible-lg theme-panel ease-width ease-slow ease-in-out">
-                <div class="static-250 full-height set-fixed set-l ui-dark scroll-v ease-layout ease-slow ease-in-out">
+            <div class="sidebar col-250 set-relative visible-lg theme-panel ease-width ease-slow ease-in-out">
+                <div class="col-250 full-height set-fixed set-l ui-dark scroll-v ease-layout ease-slow ease-in-out">
 
                     <div class="ui-x-dark set-relative">
                         <img src="img/logo-udashboard.png" width="194" height="62" alt="">
-                        <button class="sidebar-hide clear-btn opacity-more padding-15-h ease-btn set-absolute set-c-y set-r" data-tooltip title="Toggle Sidebar">
+                        <button class="sidebar-hide clear-btn opacity-more padding-10-h ease-btn set-absolute set-c-y set-r" data-tooltip title="Toggle Sidebar">
                             <i class="icon icon-bars"></i>
                         </button>
                     </div>
@@ -490,7 +489,7 @@
                                 <i class="icon icon-grid-column notifier no-opacity"></i>
                             </button>
                             <div class="content round shadow-lg">
-                                <div class="tabs static-300 xs-full-width theme-panel2 ease-tabs" data-classes="border-b border-lg ui-border ui-text">
+                                <div class="tabs col-300 xs-full-width theme-panel2 ease-tabs" data-classes="border-b border-lg ui-border ui-text">
                                     <div class="row row-no-gap no-fluid dark align-c margin-10-b border-b block-2nd ease-2nd-btn">
                                         <div class="col-6">
                                             <button class="tab btn btn-lg btn-ghost round-tl border-b border-lg ui-border ui-text active" data-tooltip data-only="desktop" title="Favorites">
@@ -564,7 +563,7 @@
                                 <i class="icon icon-bars-right notifier no-opacity"></i>
                             </button>
                             <div class="content round shadow-lg">
-                                <div class="tabs static-300 xs-full-width theme-panel2 ease-tabs" data-classes="border-b border-lg ui-border ui-text">
+                                <div class="tabs col-300 xs-full-width theme-panel2 ease-tabs" data-classes="border-b border-lg ui-border ui-text">
                                     <div class="row row-no-gap no-fluid dark align-c margin-10-b border-b block-2nd ease-2nd-btn">
                                         <div class="col-3">
                                             <button class="tab btn btn-lg btn-ghost round-tl border-b border-lg ui-border ui-text active" data-tooltip data-only="desktop" title="Notifications">
@@ -848,7 +847,7 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="static-200">
+                                                                <div class="col-200">
                                                                     <div class="select select-lg circle border-dual ease-form">
                                                                         <i class="icon icon-angle-down"></i>
                                                                         <select>
@@ -922,7 +921,7 @@
                                                                 <span class="dark large">Total: 45%</span>
                                                             </div>
                                                         </div>
-                                                        <div class="static-100 align-r">
+                                                        <div class="col-100 align-r">
                                                             <span class="x-largest ui-text">157</span>
                                                         </div>
                                                     </div>
@@ -945,7 +944,7 @@
                                                                 <span class="dark large">Total: 5%</span>
                                                             </div>
                                                         </div>
-                                                        <div class="static-100 align-r">
+                                                        <div class="col-100 align-r">
                                                             <span class="x-largest ui-text">23</span>
                                                         </div>
                                                     </div>
@@ -968,7 +967,7 @@
                                                                 <span class="dark large">Total: 80%</span>
                                                             </div>
                                                         </div>
-                                                        <div class="static-100 align-r">
+                                                        <div class="col-100 align-r">
                                                             <span class="x-largest ui-text">256</span>
                                                         </div>
                                                     </div>
@@ -991,7 +990,7 @@
                                                                 <span class="dark large">Total: 67%</span>
                                                             </div>
                                                         </div>
-                                                        <div class="static-100 align-r">
+                                                        <div class="col-100 align-r">
                                                             <span class="x-largest ui-text">256</span>
                                                         </div>
                                                     </div>
@@ -1036,7 +1035,7 @@
                                                     <span class="dark">23% Change</span>
                                                 </div>
                                             </div>
-                                            <div class="static-150 align-r">
+                                            <div class="col-150 align-r">
                                                 <span class="x-largest inline-block">436</span>
                                             </div>
                                         </div>
@@ -1085,7 +1084,7 @@
                                                 <div class="list-group list-striped margin-15-h">
                                                     <ul class="ease-list-group">
                                                         <li class="no-border">
-                                                            <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
+                                                            <span class="donut-chart col-42 margin-3-v right ease-donut-chart">
                                                                 <strong class="thin x-small">88%</strong>
                                                                 <svg viewBox="0 0 160 160">
                                                                     <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="88" />
@@ -1095,7 +1094,7 @@
                                                             <span class="x-dark small">3814 Reports</span>
                                                         </li>
                                                         <li class="no-border">
-                                                            <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
+                                                            <span class="donut-chart col-42 margin-3-v right ease-donut-chart">
                                                                 <strong class="thin x-small">76%</strong>
                                                                 <svg viewBox="0 0 160 160">
                                                                     <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="76" />
@@ -1105,7 +1104,7 @@
                                                             <span class="x-dark small">2613 Reports</span>
                                                         </li>
                                                         <li class="no-border">
-                                                            <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
+                                                            <span class="donut-chart col-42 margin-3-v right ease-donut-chart">
                                                                 <strong class="thin x-small">69%</strong>
                                                                 <svg viewBox="0 0 160 160">
                                                                     <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="69" />
@@ -1115,7 +1114,7 @@
                                                             <span class="x-dark small">1890 Reports</span>
                                                         </li>
                                                         <li class="no-border">
-                                                            <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
+                                                            <span class="donut-chart col-42 margin-3-v right ease-donut-chart">
                                                                 <strong class="thin x-small">52%</strong>
                                                                 <svg viewBox="0 0 160 160">
                                                                     <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="52" />
@@ -1125,7 +1124,7 @@
                                                             <span class="x-dark small">1605 Reports</span>
                                                         </li>
                                                         <li class="no-border">
-                                                            <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
+                                                            <span class="donut-chart col-42 margin-3-v right ease-donut-chart">
                                                                 <strong class="thin x-small">36%</strong>
                                                                 <svg viewBox="0 0 160 160">
                                                                     <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="36" />
@@ -1135,7 +1134,7 @@
                                                             <span class="x-dark small">812 Reports</span>
                                                         </li>
                                                         <li class="no-border">
-                                                            <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
+                                                            <span class="donut-chart col-42 margin-3-v right ease-donut-chart">
                                                                 <strong class="thin x-small">36%</strong>
                                                                 <svg viewBox="0 0 160 160">
                                                                     <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="36" />
@@ -1151,7 +1150,7 @@
                                                 <div class="list-group list-striped margin-15-h">
                                                     <ul class="ease-list-group">
                                                         <li class="no-border">
-                                                            <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
+                                                            <span class="donut-chart col-42 margin-3-v right ease-donut-chart">
                                                                 <strong class="thin x-small">88%</strong>
                                                                 <svg viewBox="0 0 160 160">
                                                                     <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="88" />
@@ -1161,7 +1160,7 @@
                                                             <span class="x-dark small">3814 Reports</span>
                                                         </li>
                                                         <li class="no-border">
-                                                            <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
+                                                            <span class="donut-chart col-42 margin-3-v right ease-donut-chart">
                                                                 <strong class="thin x-small">76%</strong>
                                                                 <svg viewBox="0 0 160 160">
                                                                     <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="76" />
@@ -1171,7 +1170,7 @@
                                                             <span class="x-dark small">2613 Reports</span>
                                                         </li>
                                                         <li class="no-border">
-                                                            <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
+                                                            <span class="donut-chart col-42 margin-3-v right ease-donut-chart">
                                                                 <strong class="thin x-small">69%</strong>
                                                                 <svg viewBox="0 0 160 160">
                                                                     <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="69" />
@@ -1181,7 +1180,7 @@
                                                             <span class="x-dark small">1890 Reports</span>
                                                         </li>
                                                         <li class="no-border">
-                                                            <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
+                                                            <span class="donut-chart col-42 margin-3-v right ease-donut-chart">
                                                                 <strong class="thin x-small">52%</strong>
                                                                 <svg viewBox="0 0 160 160">
                                                                     <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="52" />
@@ -1191,7 +1190,7 @@
                                                             <span class="x-dark small">1605 Reports</span>
                                                         </li>
                                                         <li class="no-border">
-                                                            <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
+                                                            <span class="donut-chart col-42 margin-3-v right ease-donut-chart">
                                                                 <strong class="thin x-small">36%</strong>
                                                                 <svg viewBox="0 0 160 160">
                                                                     <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="36" />
@@ -1201,7 +1200,7 @@
                                                             <span class="x-dark small">812 Reports</span>
                                                         </li>
                                                         <li class="no-border">
-                                                            <span class="donut-chart static-42 margin-3-v right ease-donut-chart">
+                                                            <span class="donut-chart col-42 margin-3-v right ease-donut-chart">
                                                                 <strong class="thin x-small">36%</strong>
                                                                 <svg viewBox="0 0 160 160">
                                                                     <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="36" />
@@ -1891,7 +1890,7 @@
                             <p class="required-msg large">Please, enter a keyword.</p>
                         </div>
                     </div>
-                    <div class="static-100 xs-static-50 padding-10-v">
+                    <div class="col-100 col-xs-50 padding-10-v">
                         <button class="btn btn-lg block round-r theme-default2 ui-dark ease-btn" type="submit">
                             <i class="icon icon-lg icon-search"></i>
                         </button>

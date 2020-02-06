@@ -36,7 +36,6 @@
     <link rel="stylesheet" href="../css/photo-images.css"/>
     <link rel="stylesheet" href="../css/paddings.css"/>
     <link rel="stylesheet" href="../css/scrollbar.css"/>
-    <link rel="stylesheet" href="../css/static-grid.css"/>
     <link rel="stylesheet" href="../css/sticky-header.css"/>
     <link rel="stylesheet" href="../css/typography.css"/>
     <link rel="stylesheet" href="../css/top-button.css"/>
@@ -53,9 +52,9 @@
     <script src="../js/carousel.js"></script>
     <script src="../js/effects.js"></script>
     <script src="../js/forms.js"></script>
+    <script src="../js/grid.js"></script>
     <script src="../js/mobile-menu.js"></script>
     <script src="../js/modal.js"></script>
-    <script src="../js/static-grid.js"></script>
     <script src="../js/sticky-header.js"></script>
     <script src="../js/themes.js"></script>
     <script src="../js/top-button.js"></script>
@@ -91,8 +90,8 @@
     <!-- documentation examples -->
     <main class="container no-gutter">
         <div class="col-static no-fluid">
-            <div class="static-200 set-relative hidden-md">
-                <div class="sidebar static-200 full-height set-fixed set-l padding-5 ui-dark hidden-md scroll-v">
+            <div class="col-200 set-relative hidden-md">
+                <div class="sidebar col-200 full-height set-fixed set-l padding-5 ui-dark hidden-md scroll-v">
 
                     <div class="align-l padding-10 add-mobile-menu-l">
                         <h5 class="x-light-ui padding-15 margin-5-b">LIBRARY</h5>
@@ -210,7 +209,7 @@
                             <div class="padding-10 md-no-padding-h">
 
                                 <div class="col-static">
-                                    <div class="static-350">
+                                    <div class="col-350">
                                         <div class="round set-relative">
                                             <button class="clear-btn full-width set-absolute set-all opacity-more ease-layout" onclick="modal.open({source: 'https://www.imdb.com/videoembed/vi4235180569', size: '722x300', type: 'iframe'});">
                                                 <i class="icon icon-xxl icon-video xx-light set-absolute set-c"></i>
@@ -512,7 +511,7 @@
                             <p class="required-msg large">Please, enter a keyword.</p>
                         </div>
                     </div>
-                    <div class="static-100 xs-static-50 padding-10-v">
+                    <div class="col-100 col-xs-50 padding-10-v">
                         <button class="btn btn-lg block round-r theme-default2 ui-dark ease-btn" type="submit">
                             <i class="icon icon-lg icon-search"></i>
                         </button>

@@ -37,7 +37,6 @@
     <link rel="stylesheet" href="../css/paddings.css"/>
     <link rel="stylesheet" href="../css/photo-images.css"/>
     <link rel="stylesheet" href="../css/scrollbar.css"/>
-    <link rel="stylesheet" href="../css/static-grid.css"/>
     <link rel="stylesheet" href="../css/tabs.css"/>
     <link rel="stylesheet" href="../css/tooltip.css"/>
     <link rel="stylesheet" href="../css/typography.css"/>
@@ -57,8 +56,8 @@
     <script src="../js/dropdown.js"></script>
     <script src="../js/effects.js"></script>
     <script src="../js/forms.js"></script>
+    <script src="../js/grid.js"></script>
     <script src="../js/line-charts.js"></script>
-    <script src="../js/static-grid.js"></script>
     <script src="../js/tabs.js"></script>
     <script src="../js/themes.js"></script>
     <script src="../js/tooltip.js"></script>
@@ -82,7 +81,7 @@
         .theme-app2.ui-border,.theme-app2 .ui-border:not([class*="theme-"]) { border-color: #ff103b; }
         .theme-app2.ui-x-dark,.theme-app2 .ui-x-dark:not([class*="theme-"]) { background-color: #cf1335; }
 
-        .static-35 { width: 35px; }
+        .col-35 { width: 35px; }
 
         .app { background-color: #f7f8fb; border-radius: 42px; }
         .card { height: 700px; border-radius: 36px; }
@@ -163,7 +162,7 @@
 
                             <div class="card-side padding-15 no-padding-b">
                                 <div class="col-static no-fluid">
-                                    <div class="static-50">
+                                    <div class="col-50">
                                         <button class="btn btn-ghost btn-square circle ui-x-light ease-btn">
                                             <i class="icon icon-sm icon-bell-on no-opacity ui-text notifier"></i>
                                         </button>
@@ -173,7 +172,7 @@
                                             <img src="img/logo-reports.png" alt="Logo" height="26">
                                         </div>
                                     </div>
-                                    <div class="static-50 align-r">
+                                    <div class="col-50 align-r">
                                         <button class="btn btn-ghost btn-square circle ui-x-light ease-btn">
                                             <i class="icon icon-sm icon-settings no-opacity ui-text"></i>
                                         </button>
@@ -244,7 +243,7 @@
 
                             <div class="card-side padding-15 padding-5-b">
                                 <div class="line-charts margin-15-b ease-line-charts" data-size="5,15" data-x="1,2,3,4,5,6,7">
-                                    <ul class="line" data-name="1st" data-type="curved filled dotted">
+                                    <ul class="line" data-name="1st" data-type="curved dotted">
                                         <li data-y="159"></li>
                                         <li data-y="120"></li>
                                         <li data-y="20"></li>
@@ -397,7 +396,7 @@
 
                             <div class="card-side padding-15 no-padding-b">
                                 <div class="col-static no-fluid">
-                                    <div class="static-50">
+                                    <div class="col-50">
                                         <button class="btn btn-ghost btn-square circle ui-x-light ease-btn">
                                             <i class="icon icon-sm icon-bell-on no-opacity ui-text notifier"></i>
                                         </button>
@@ -407,7 +406,7 @@
                                             <img src="img/logo-reports.png" alt="Logo" height="26">
                                         </div>
                                     </div>
-                                    <div class="static-50 align-r">
+                                    <div class="col-50 align-r">
                                         <button class="btn btn-ghost btn-square circle ui-x-light ease-btn">
                                             <i class="icon icon-sm icon-settings no-opacity ui-text"></i>
                                         </button>
@@ -450,7 +449,7 @@
                                                         <span class="margin-3-l">John Doe</span>
                                                     </div>
                                                 </div>
-                                                <div class="static-32">
+                                                <div class="col-32">
                                                     <span class="dropdown menu-l ease-dropdown">
                                                         <button class="btn btn-ghost btn-square circle ease-btn">
                                                             <i class="icon icon-ellipsis-h"></i>
@@ -475,7 +474,7 @@
                                                         <span class="margin-3-l">Mike Taylor</span>
                                                     </div>
                                                 </div>
-                                                <div class="static-32">
+                                                <div class="col-32">
                                                     <span class="dropdown menu-l ease-dropdown">
                                                         <button class="btn btn-ghost btn-square circle ease-btn">
                                                             <i class="icon icon-ellipsis-h"></i>
@@ -500,7 +499,7 @@
                                                         <span class="margin-3-l">Mary Doe</span>
                                                     </div>
                                                 </div>
-                                                <div class="static-32">
+                                                <div class="col-32">
                                                     <span class="dropdown menu-l ease-dropdown">
                                                         <button class="btn btn-ghost btn-square circle ease-btn">
                                                             <i class="icon icon-ellipsis-h"></i>
@@ -525,7 +524,7 @@
                                                         <span class="margin-3-l">John Doe</span>
                                                     </div>
                                                 </div>
-                                                <div class="static-32">
+                                                <div class="col-32">
                                                     <span class="dropdown menu-l ease-dropdown">
                                                         <button class="btn btn-ghost btn-square circle ease-btn">
                                                             <i class="icon icon-ellipsis-h"></i>
@@ -550,7 +549,7 @@
                                                         <span class="margin-3-l">Mike Taylor</span>
                                                     </div>
                                                 </div>
-                                                <div class="static-32">
+                                                <div class="col-32">
                                                     <span class="dropdown menu-l ease-dropdown">
                                                         <button class="btn btn-ghost btn-square circle ease-btn">
                                                             <i class="icon icon-ellipsis-h"></i>
@@ -575,7 +574,7 @@
                                                         <span class="margin-3-l">Mary Doe</span>
                                                     </div>
                                                 </div>
-                                                <div class="static-32">
+                                                <div class="col-32">
                                                     <span class="dropdown menu-l ease-dropdown">
                                                         <button class="btn btn-ghost btn-square circle ease-btn">
                                                             <i class="icon icon-ellipsis-h"></i>
@@ -600,7 +599,7 @@
                                                         <span class="margin-3-l">John Doe</span>
                                                     </div>
                                                 </div>
-                                                <div class="static-32">
+                                                <div class="col-32">
                                                     <span class="dropdown menu-l ease-dropdown">
                                                         <button class="btn btn-ghost btn-square circle ease-btn">
                                                             <i class="icon icon-ellipsis-h"></i>
@@ -625,7 +624,7 @@
                                                         <span class="margin-3-l">Mike Taylor</span>
                                                     </div>
                                                 </div>
-                                                <div class="static-32">
+                                                <div class="col-32">
                                                     <span class="dropdown menu-l ease-dropdown">
                                                         <button class="btn btn-ghost btn-square circle ease-btn">
                                                             <i class="icon icon-ellipsis-h"></i>
@@ -650,7 +649,7 @@
                                                         <span class="margin-3-l">Mary Doe</span>
                                                     </div>
                                                 </div>
-                                                <div class="static-32">
+                                                <div class="col-32">
                                                     <span class="dropdown menu-l ease-dropdown">
                                                         <button class="btn btn-ghost btn-square circle ease-btn">
                                                             <i class="icon icon-ellipsis-h"></i>
@@ -675,7 +674,7 @@
                                                         <span class="margin-3-l">John Doe</span>
                                                     </div>
                                                 </div>
-                                                <div class="static-32">
+                                                <div class="col-32">
                                                     <span class="dropdown menu-l ease-dropdown">
                                                         <button class="btn btn-ghost btn-square circle ease-btn">
                                                             <i class="icon icon-ellipsis-h"></i>
@@ -700,7 +699,7 @@
                                                         <span class="margin-3-l">Mike Taylor</span>
                                                     </div>
                                                 </div>
-                                                <div class="static-32">
+                                                <div class="col-32">
                                                     <span class="dropdown menu-l ease-dropdown">
                                                         <button class="btn btn-ghost btn-square circle ease-btn">
                                                             <i class="icon icon-ellipsis-h"></i>
@@ -725,7 +724,7 @@
                                                         <span class="margin-3-l">Mary Doe</span>
                                                     </div>
                                                 </div>
-                                                <div class="static-32">
+                                                <div class="col-32">
                                                     <span class="dropdown menu-l ease-dropdown">
                                                         <button class="btn btn-ghost btn-square circle ease-btn">
                                                             <i class="icon icon-ellipsis-h"></i>
@@ -788,7 +787,7 @@
 
                             <div class="card-side padding-15 no-padding-b">
                                 <div class="col-static no-fluid">
-                                    <div class="static-50">
+                                    <div class="col-50">
                                         <button class="btn btn-ghost btn-square circle ui-x-light ease-btn">
                                             <i class="icon icon-sm icon-bell-on no-opacity ui-text notifier"></i>
                                         </button>
@@ -798,7 +797,7 @@
                                             <img src="img/logo-reports.png" alt="Logo" height="26">
                                         </div>
                                     </div>
-                                    <div class="static-50 align-r">
+                                    <div class="col-50 align-r">
                                         <button class="btn btn-ghost btn-square circle ui-x-light ease-btn">
                                             <i class="icon icon-sm icon-settings no-opacity ui-text"></i>
                                         </button>
@@ -880,7 +879,7 @@
                                             </li>
                                         </ul>
                                         <div class="col-static no-fluid padding-5 circle theme-gray ui-x-light">
-                                            <div class="static-35">
+                                            <div class="col-35">
                                                 <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                             </div>
                                             <div class="row row-no-gap">
@@ -940,7 +939,7 @@
                                             </li>
                                         </ul>
                                         <div class="col-static no-fluid padding-5 circle theme-gray ui-x-light">
-                                            <div class="static-35">
+                                            <div class="col-35">
                                                 <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                             </div>
                                             <div class="row row-no-gap">
@@ -1000,7 +999,7 @@
                                             </li>
                                         </ul>
                                         <div class="col-static no-fluid padding-5 circle theme-gray ui-x-light">
-                                            <div class="static-35">
+                                            <div class="col-35">
                                                 <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                             </div>
                                             <div class="row row-no-gap">
@@ -1060,7 +1059,7 @@
                                             </li>
                                         </ul>
                                         <div class="col-static no-fluid padding-5 circle theme-gray ui-x-light">
-                                            <div class="static-35">
+                                            <div class="col-35">
                                                 <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                             </div>
                                             <div class="row row-no-gap">
@@ -1120,7 +1119,7 @@
                                             </li>
                                         </ul>
                                         <div class="col-static no-fluid padding-5 circle theme-gray ui-x-light">
-                                            <div class="static-35">
+                                            <div class="col-35">
                                                 <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                             </div>
                                             <div class="row row-no-gap">
@@ -1180,7 +1179,7 @@
                                             </li>
                                         </ul>
                                         <div class="col-static no-fluid padding-5 circle theme-gray ui-x-light">
-                                            <div class="static-35">
+                                            <div class="col-35">
                                                 <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                             </div>
                                             <div class="row row-no-gap">
@@ -1240,7 +1239,7 @@
 
                             <div class="card-side padding-15 no-padding-b">
                                 <div class="col-static no-fluid">
-                                    <div class="static-50">
+                                    <div class="col-50">
                                         <button class="btn btn-ghost btn-square circle ui-x-light ease-btn">
                                             <i class="icon icon-sm icon-bell-on no-opacity ui-text notifier"></i>
                                         </button>
@@ -1250,7 +1249,7 @@
                                             <img src="img/logo-reports.png" alt="Logo" height="26">
                                         </div>
                                     </div>
-                                    <div class="static-50 align-r">
+                                    <div class="col-50 align-r">
                                         <button class="btn btn-ghost btn-square circle ui-x-light ease-btn">
                                             <i class="icon icon-sm icon-settings no-opacity ui-text"></i>
                                         </button>
