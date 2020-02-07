@@ -23,7 +23,7 @@
 
     .border,.border-t,.border-r,.border-b,.border-l,.border-h,.border-v,.border-dual,.border-lg { border-color: rgba(255,255,255,.05); }
 
-    .text,.select,.select-multi,.textarea,.file,.check-custom,.radio-custom,.switch-custom,.form-holder [class*="border"] { border-color: rgba(255,255,255,.3); }
+    .text,.select,.select-multi,.textarea,.file,.check-custom,.radio-custom,.switch-custom { border-color: rgba(255,255,255,.3); }
     .text input:not(:focus):not([readonly]),.select select:not(:focus):not([readonly]),.select-multi select:not(:focus):not([readonly]),.textarea textarea:not(:focus):not([readonly]) { color: #fff; }
     .select select option,.select select optgroup { color: #fff; background-color: #41454d;}
     .select-multi option:not(:last-child) { border-bottom-color: rgba(255,255,255,.045); }
@@ -58,7 +58,7 @@
 
     .textarea:not(.form-light):not(.toggle-textarea)[data-counter]:before,.textarea.form-focus:not(.toggle-textarea)[data-counter]:before { background-color: rgba(0,0,0,.15); }
 
-    .form-holder-focus .text,.form-holder-focus .select,.form-holder-focus [class*="border"] { border-color: rgba(255,255,255,.5); }
+    .form-holder-focus [class*="col-"] > * { border-color: rgba(255,255,255,.5); }
     .form-disabled { background-color: rgba(255,255,255,.075); }
     .form-readonly input,.form-readonly textarea { color: rgba(255,255,255,.5); }
 
