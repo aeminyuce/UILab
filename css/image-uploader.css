@@ -36,11 +36,8 @@
 .uploader-list.open > .icon { display: none; }
 .drop-highlight .uploader-list > .icon { display: block; opacity: .45; }
 
-.uploader-list ul { list-style: none; padding: 10px; margin-bottom: 0; display: block; }
-.uploader-list ul:before,.uploader-list ul:after { content: ""; display: table; }
-.uploader-list ul:after { clear: both; }
-
-.uploader-list ul > li { padding: 5px; float: left; }
+.uploader-list ul { list-style: none; padding: 10px; margin-bottom: 0; display: block; display: flex; flex-wrap: wrap; }
+.uploader-list ul > li { padding: 5px; }
 .uploader-list:not(.open) ul > li { display: none; }
 .drop-highlight .uploader-list ul > li { opacity: .15; }
 .uploader-list ul > li.open-ease { opacity: 0; }
