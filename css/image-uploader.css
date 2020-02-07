@@ -30,7 +30,7 @@
 .drop-highlight .uploader-tools { opacity: .15; }
 
 .uploader-list { min-height: 220px; position: relative; }
-.uploader-list:not(.open),.drop-highlight .uploader-list { background-color: rgba(255,255,255,.45); margin: 0 15px 15px 15px; border: dashed 2px rgba(0,0,0,.125); border-radius: 6px; }
+.uploader-list:not(.open),.drop-highlight .uploader-list { background-color: rgba(255,255,255,.45); margin: 0 15px 15px 15px; border: dashed 2px rgba(0,0,0,.15); border-radius: 6px; }
 
 .uploader-list > .icon { position: absolute; top: 50%; left: 50%; z-index: 1; opacity: .15; transform: translate(-50%, -50%); }
 .uploader-list.open > .icon { display: none; }

@@ -4,7 +4,7 @@
 .textarea:not(.toggle-textarea)[data-counter].change:before { content: attr(data-change); }
 
 .textarea:not(.form-light):not(.toggle-textarea)[data-counter]:before,.textarea.form-focus:not(.toggle-textarea)[data-counter]:before { color: #777; background-color: rgba(0,0,0,.035); }
-.textarea.form-light:not(.toggle-textarea):not(.form-focus)[data-counter]:before { color: #fff; background-color: rgba(255,255,255,.35); }
+.textarea.form-light:not(.toggle-textarea):not(.form-focus)[data-counter]:before { color: #fff; background-color: rgba(255,255,255,.3); }
 
 .error[data-counter]:before { color: #dc000f !important; background-color: #ffd9dc !important; }
 .warning[data-counter]:before { color: #ffa600 !important; background-color: #fff2d9 !important; }
