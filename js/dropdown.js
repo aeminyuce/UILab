@@ -78,11 +78,11 @@ var dropdown = {};
                     listStyles = list.style.length;
                     listWidth = list.offsetWidth;
 
-                    if (window.innerWidth > 480) { // menu positioning: active
+                    if (window.innerWidth > 767) { // menu positioning: active
 
                         if (events.hasClass(parent, 'menu-l') || (offset.left + listWidth + 15) > window.innerWidth) { // 15px: scrollbar size
 
-                            if (window.innerWidth < 768 || (window.innerWidth > 767 && (offset.left - (listWidth - parent.offsetWidth)) >= 0)) { // works only sm and larger screen sizes
+                            if (offset.left - (listWidth - parent.offsetWidth) >= 0) {
 
                                 list.style.right = 0;
                                 list.style.left = 'inherit';
