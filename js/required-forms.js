@@ -217,7 +217,7 @@ var requiredForms = {
             if (forms.length !== success) {
 
                 events.each(forms, function () {
-                    events.trigger(this, 'blur');
+                    events.trigger(this, 'keyup change');
                 });
 
             }
@@ -264,23 +264,23 @@ var requiredForms = {
 
         });
 
-        events.on(document, 'keyup blur', eventForms[0], function () {
+        events.on(document, 'keyup', eventForms[0], function () {
             required(this, this.type);
         });
 
-        events.on(document, 'change blur', eventForms[1], function () {
+        events.on(document, 'change', eventForms[1], function () {
             required(this, 'select');
         });
 
-        events.on(document, 'keyup blur', eventForms[2], function () {
+        events.on(document, 'keyup', eventForms[2], function () {
             required(this, 'textarea');
         });
 
-        events.on(document, 'change blur', eventForms[3], function () {
+        events.on(document, 'change', eventForms[3], function () {
             required(this, 'required-accept');
         });
 
-        events.on(document, 'change blur', eventForms[4], function () {
+        events.on(document, 'change', eventForms[4], function () {
             required(this, 'file');
         });
 
