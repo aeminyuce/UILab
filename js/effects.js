@@ -5,9 +5,13 @@
 
 var effects = {
 
+    // pause effects
     pauseAll: false,
-    pauseScroll: false, // pasuse effects when scrollingpauseResize: false, // pasuse effects when resizing
+    pauseScroll: false, // pause effects when scrolling
+    pauseResize: true, // pause effects when resizing
     preload: true, // wait page preload to start effects
+
+    // show effetcs
     ie: true,
     android: true,
     androidOld: false
@@ -41,9 +45,9 @@ var effects = {
             // wait page preload to start transitions
             if (effects.preload) {
 
-                events.addClass(document, 'no-transitions-all');
+                events.addClass(document, 'no-transitions-all animate-stop-all');
                 setTimeout(function () {
-                    events.removeClass(document, 'no-transitions-all');
+                    events.removeClass(document, 'no-transitions-all animate-stop-all');
                 }, 300);
 
             }
@@ -59,15 +63,10 @@ var effects = {
             if ((eName === 'scroll' && effects.pauseScroll) || (eName === 'resize' && effects.pauseResize)) {
 
                 clearTimeout(pauseTransitions);
-
-                events.addClass(document, 'no-transitions-all');
-                events.addClass('.animate-control', 'animate-stop-all');
+                events.addClass(document, 'no-transitions-all animate-stop-all');
 
                 pauseTransitions = setTimeout(function () {
-
-                    events.removeClass(document, 'no-transitions-all');
-                    events.removeClass('.animate-control', 'animate-stop-all');
-
+                    events.removeClass(document, 'no-transitions-all animate-stop-all');
                 }, 300);
 
             }
