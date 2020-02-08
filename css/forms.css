@@ -26,7 +26,7 @@
 .text.text-lg,.select-lg { min-height: 42px; }
 
 .text:not([class*="align-"]) input,.select:not([class*="align-"]) select,.select-multi:not([class*="align-"]) select,.textarea:not([class*="align-"]) textarea { text-align: left !important; }
-.text input,.select select,.select-multi select,.textarea textarea { width: 100%; background-color: rgba(255,255,255,0); border: 0; }
+.text input,.select select,.select-multi select,.textarea textarea { width: 100%; background-color: transparent; border: 0; }
 .text input,.select select,.select-multi select,.range { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .text input,.select select,.textarea textarea { line-height: 18px; padding: 5px; border-radius: 0/* border radius fix for Chrome*/; }
 .text input,.select select { height: 30px; overflow: hidden; }
@@ -48,7 +48,7 @@
 
 .select select { padding-right: 22px; position: relative; z-index: 2; }
 .select-lg select { padding-right: 38px; }
-.ie .select select:focus::-ms-value { color: inherit; background-color: rgba(255,255,255,0); }
+.ie .select select:focus::-ms-value { color: inherit; background-color: transparent; }
 .ie .select select::-ms-expand { display: none; }
 
 .mobile .select-multi { padding: 5px; }

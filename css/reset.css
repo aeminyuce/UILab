@@ -7,7 +7,7 @@ body { background-color: #fefefe; }
 .ios { -webkit-text-size-adjust: 100%; }
 
 article,aside,details,figcaption,figure,footer,header,nav,section,summary,audio,canvas,video,svg { display: block; }
-svg { fill: rgba(0,0,0,0); stroke: rgba(0,0,0,0); }
+svg { fill: transparent; stroke: transparent; }
 
 :focus { outline-style: none; outline: 0; }
 a,a:active,a:hover { word-wrap: break-word; text-decoration: none; }

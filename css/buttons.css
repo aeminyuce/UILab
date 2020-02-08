@@ -62,9 +62,9 @@ html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hove
 
 .btn-ghost.ui-dark:not(.ui-text),.btn-ghost.ui-x-dark:not(.ui-text) { color: #000; }
 .btn-ghost.ui-dark:hover,.btn-ghost.ui-x-dark:hover,.btn-ghost.ui-dark:hover .icon,.btn-ghost.ui-x-dark:hover .icon { color: #fff !important; }
-.btn-ghost:not(:hover) { background-color: rgba(0,0,0,0) !important; }
+.btn-ghost:not(:hover) { background-color: transparent !important; }
 
-.btn-ghost-border:not(:hover) { border-color: rgba(0,0,0,0) !important; }
+.btn-ghost-border:not(:hover) { border-color: transparent !important; }
 
 html:not(.mobile) .btn:not([class*="ui-x-light"]):not([class*="ui-light"]):not([class*="ui-dark"]):not([class*="ui-x-dark"]):not(.btn-passive):not(.swatch-active):hover { background-color: rgba(0,0,0,.15); }
 html:not(.mobile) .btn.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-light"]):not([class*="ui-dark"]):not([class*="ui-x-dark"]):not(.btn-passive):not(.swatch-active):hover { background-color: rgba(0,0,0,.075); }

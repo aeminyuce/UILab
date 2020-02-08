@@ -2,7 +2,7 @@
 @font-face { src: url('../fonts/font-icons.ttf') format('truetype'), url('../fonts/font-icons.woff') format('woff'), url('../fonts/font-icons.svg?#font-icons') format('svg'); font-family: 'font-icons'; font-weight: normal; font-style: normal; font-display: block; }
 
 .icon { font-family: 'font-icons' !important; font-size: 18px; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; text-align: center !important; vertical-align: middle; line-height: 1; width: 18px; height: 18px; display: inline-block; }
-button.icon { background-color: rgba(0,0,0,0); }
+button.icon { background-color: transparent; }
 
 .icon-xxs { font-size: 10px; width: 10px; height: 10px; }
 .icon-xs { font-size: 12px; width: 12px; height: 12px; }
