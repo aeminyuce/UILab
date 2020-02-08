@@ -34,21 +34,11 @@
 .visible { display: block !important; }
 .hidden { display: none !important; }
 
-html:not(.android) .visible-android { display: none !important; }
-html:not(.ios) .visible-ios { display: none !important; }
 html:not(.mobile) .visible-mobile { display: none !important; }
 .mobile .visible-desktop { display: none !important; }
 
-.android .hidden-android { display: none !important; }
-.ios .hidden-ios { display: none !important; }
 .mobile .hidden-mobile { display: none !important; }
 html:not(.mobile) .hidden-dekstop { display: none !important; }
-
-html:not(.landscape) .visible-landscape { display: none !important; }
-html:not(.portrait) .visible-portrait { display: none !important; }
-
-.landscape .hidden-landscape { display: none !important; }
-.portrait .hidden-portrait { display: none !important; }
 
 .bg-white:not([class*="ui-"]) { background-color: #fff !important; }
 .bg-black:not([class*="ui-"]) { background-color: #181818 !important; }
