@@ -140,11 +140,9 @@ html:not(.mobile) .hover-l-more:hover { transform: translateX(-5%); }
     .md-full-width { width: 100% !important; }
 }
 @media (max-width: 959px) and (min-width: 768px) {
-    /* do not group */
     .visible-sm { display: none !important; }
     .visible-xs { display: none !important; }
     .hidden-md { display: none !important; }
-    /* do not group */
 
     .img-md-fluid { width: 100% !important; height: auto !important; }
 
@@ -157,49 +155,37 @@ html:not(.mobile) .hover-l-more:hover { transform: translateX(-5%); }
     .sm-full-width { width: 100% !important; }
 }
 @media (max-width: 767px) and (min-width: 481px) {
-    /* do not group */
     .hidden-md { display: none !important; }
     .visible-xs { display: none !important; }
     .hidden-sm { display: none !important; }
-    /* do not group */
 
     .img-md-fluid,.img-sm-fluid { width: 100% !important; height: auto !important; }
     .md-no-float,.sm-no-float { float: none !important; }
 
     .md-clearfix,.sm-clearfix { display: block; }
-    /* do not group */
     .md-clearfix { clear: both !important; }
     .sm-clearfix { clear: both !important; }
-    /* do not group */
 
-    /* do not group */
     .md-align-c,.md-align-c * { text-align: center !important; } .md-align-l,.md-align-l * { text-align: left !important; } .md-align-r,.md-align-r * { text-align: right !important; }
     .sm-align-c,.sm-align-c * { text-align: center !important; } .sm-align-l,.sm-align-l * { text-align: left !important; } .sm-align-r,.sm-align-r * { text-align: right !important; }
-    /* do not group */
 }
 @media (max-width: 480px) {
     .xs-full-width { width: 100% !important; }
 
-    /* do not group */
     .hidden-md,.hidden-sm { display: none !important; }
     .hidden-xs { display: none !important; }
-    /* do not group */
 
     .img-md-fluid,.img-sm-fluid,.img-xs-fluid { width: 100% !important; height: auto !important; }
     .md-no-float,.sm-no-float,.xs-no-float { float: none !important; }
 
     .md-clearfix,.sm-clearfix,.xs-clearfix { display: block; }
-    /* do not group */
     .md-clearfix { clear: both !important; }
     .sm-clearfix { clear: both !important; }
     .xs-clearfix { clear: both !important; }
-    /* do not group */
 
-    /* do not group */
     .md-align-c,.md-align-c * { text-align: center !important; } .md-align-l,.md-align-l * { text-align: left !important; } .md-align-r,.md-align-r * { text-align: right !important; }
     .sm-align-c,.sm-align-c * { text-align: center !important; } .sm-align-l,.sm-align-l * { text-align: left !important; } .sm-align-r,.sm-align-r * { text-align: right !important; }
     .xs-align-c,.xs-align-c * { text-align: center !important; } .xs-align-l,.xs-align-l * { text-align: left !important; } .xs-align-r,.xs-align-r * { text-align: right !important; }
-    /* do not group */
 }
 @media (max-width: 1199px) {
     .visible-lg { display: none !important; }

@@ -29,28 +29,23 @@
     html:not(.mobile) .file:hover .btn { background-color: rgba(255,255,255,.15); }
     [class*="text-icon"] > button.icon { color: #fff; }
 
-    /* do not group */
     .range::-webkit-slider-runnable-track { background-color: rgba(255,255,255,.08); }
     .range:hover::-webkit-slider-runnable-track { background-color: rgba(255,255,255,.15); }
-
     .range::-moz-range-track { background-color: rgba(255,255,255,.08); }
     .range:hover::-moz-range-track { background-color: rgba(255,255,255,.15); }
 
     .range:disabled::-webkit-slider-thumb { background-color: #60656e; }
     .range:disabled::-moz-range-thumb { background-color: #60656e; }
-    /* do not group */
 
     .form-focus { border-color: rgba(255,255,255,.65); }
     .form-focus:not(.form-readonly) { background-color: rgba(255,255,255,.075) !important; }
     .form-focus > input,.form-focus > select,.form-focus > textarea,.form-focus > .icon:not([class*="ui-"]) { color: #fff !important; }
 
-    /* do not group */
     ::placeholder { color: rgba(255,255,255,.4); }
     ::-ms-input-placeholder { color: rgba(255,255,255,.4); }
 
     .form-focus > ::placeholder { color: rgba(255,255,255,.23); }
     .form-focus > ::-ms-input-placeholder { color: rgba(255,255,255,.23); }
-    /* do not group */
 
     .check-custom i,.radio-custom i { background-color: rgba(255,255,255,.65); }
     .switch-custom input:not(:checked):not(:indeterminate) + i,.switch-custom input:not(:checked) + i[class*="ui-"] { background-color: rgba(255,255,255,.15); }
