@@ -212,7 +212,7 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i { transform: tran
 .form-holder .text,.form-holder .select { min-width: inherit !important; }
 
 .form-holder-focus [class*="col-"] > * { border-color: rgba(0,0,0,.35); }
-.form-holder-focus [class*="col-"] > .form-light { border-color: rgba(255,255,255,.65) !important; }
+.form-holder-focus [class*="col-"] > .form-light,.form-holder-focus [class*="col-"] > .border-light { border-color: rgba(255,255,255,.65) !important; }
 
 .form-holder [class*="col-"]:not(:last-child) > *,.form-holder .row:not(:last-child) > [class*="col-"]:last-child > * { border-right: 0; }
 
