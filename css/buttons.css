@@ -60,7 +60,6 @@ html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hove
 .btn-xxs.circle { padding-right: 6px; padding-left: 6px; }
 
 .btn-passive { opacity: .6; cursor: default; }
-
 .btn-active { font-weight: bold; }
 
 .btn-ghost.ui-dark:not(.ui-text),.btn-ghost.ui-x-dark:not(.ui-text) { color: #000; }

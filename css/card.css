@@ -6,6 +6,7 @@
 
 .card-side:before { content: ""; display: table; }
 .card-side:after { clear: both; }
+
 .round > .card-side:first-child { border-radius: 6px 6px 0 0; }
 .round > .card-side:last-child { border-radius: 0 0 6px 6px; }
 

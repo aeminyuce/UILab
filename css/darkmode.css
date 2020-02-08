@@ -1,5 +1,4 @@
 /* darkmode */
-
 @media (prefers-color-scheme: light) {
     .hidden-light { display: none !important; }
     .visible-dark { display: none !important; }
