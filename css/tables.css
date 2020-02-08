@@ -21,7 +21,7 @@
 .table-sidebar td:first-of-type { font-weight: bold; border-right: solid 1px #ddd; }
 .table-sidebar-center td:nth-child(2) { font-weight: bold; border-right: solid 1px #ddd; border-left: solid 1px #ddd; }
 
-.table[class*="border"],.table [class*="border"] { border-color: #ddd; }
+.table[class*="border-"],.table [class*="border-"] { border-color: #ddd; }
 .table-border th:not(:last-child),.table-border td:not(:last-child) { border-right: solid 1px #ddd; }
 .table-valign td,.table-valign th { vertical-align: middle !important; }
 
