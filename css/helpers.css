@@ -85,20 +85,20 @@ html:not(.mobile) .hidden-dekstop { display: none !important; }
 .opacity { opacity: .75 !important; }
 html:not(.mobile) .opacity:hover,html:not(.mobile) .opacity-more:hover { opacity: 1 !important; }
 
-html:not(.mobile) .hover-shadow:hover { box-shadow: 0 5px 15px rgba(0,0,0,.2); }
+html:not(.mobile) .hover-shadow:hover,html:not(.mobile) .hover-shadow-1st > * :hover,html:not(.mobile) .hover-shadow-2nd > * > *:hover { box-shadow: 0 5px 15px rgba(0,0,0,.2); }
 
-html:not(.mobile) .hover-scale:hover { transform: scale(1.06); }
-html:not(.mobile) .hover-scale-more:hover { transform: scale(1.2); }
+html:not(.mobile) .hover-scale:hover,html:not(.mobile) .hover-scale-1st > * :hover,html:not(.mobile) .hover-scale-2nd > * > *:hover { transform: scale(1.06); }
+html:not(.mobile) .hover-scale-more:hover,html:not(.mobile) .hover-scale-more-1st > * :hover,html:not(.mobile) .hover-scale-more-2nd > * > *:hover { transform: scale(1.2); }
 
-html:not(.mobile) .hover-t:hover { transform: translateY(-1%); }
-html:not(.mobile) .hover-r:hover { transform: translateX(1%); }
-html:not(.mobile) .hover-b:hover { transform: translateY(1%); }
-html:not(.mobile) .hover-l:hover { transform: translateX(-1%); }
+html:not(.mobile) .hover-t:hover,html:not(.mobile) .hover-t-1st > *:hover,html:not(.mobile) .hover-t-2nd > * > *:hover { transform: translateY(-1%); }
+html:not(.mobile) .hover-r:hover,html:not(.mobile) .hover-r-1st > *:hover,html:not(.mobile) .hover-r-2nd > * > *:hover { transform: translateX(1%); }
+html:not(.mobile) .hover-b:hover,html:not(.mobile) .hover-b-1st > *:hover,html:not(.mobile) .hover-b-2nd > * > *:hover { transform: translateY(1%); }
+html:not(.mobile) .hover-l:hover,html:not(.mobile) .hover-l-1st > *:hover,html:not(.mobile) .hover-l-2nd > * > *:hover { transform: translateX(-1%); }
 
-html:not(.mobile) .hover-t-more:hover { transform: translateY(-5%); }
-html:not(.mobile) .hover-r-more:hover { transform: translateX(5%); }
-html:not(.mobile) .hover-b-more:hover { transform: translateY(5%); }
-html:not(.mobile) .hover-l-more:hover { transform: translateX(-5%); }
+html:not(.mobile) .hover-t-more:hover,html:not(.mobile) .hover-t-more-1st > *:hover,html:not(.mobile) .hover-t-more-2nd > * > *:hover { transform: translateY(-5%); }
+html:not(.mobile) .hover-r-more:hover,html:not(.mobile) .hover-r-more-1st > *:hover,html:not(.mobile) .hover-r-more-2nd > * > *:hover { transform: translateX(5%); }
+html:not(.mobile) .hover-b-more:hover,html:not(.mobile) .hover-b-more-1st > *:hover,html:not(.mobile) .hover-b-more-2nd > * > *:hover { transform: translateY(5%); }
+html:not(.mobile) .hover-l-more:hover,html:not(.mobile) .hover-l-more-1st > *:hover,html:not(.mobile) .hover-l-more-2nd > * > *:hover { transform: translateX(-5%); }
 
 .list-unstyled,.list-custom,.list-custom ul,.list-custom ol,.list-inline,.list-inline ul,.list-inline ol { list-style: none; padding: 0; }
 .list-unstyled:not(:last-child) { margin-bottom: 20px; }
