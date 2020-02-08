@@ -11,7 +11,7 @@ var effects = {
     pauseResize: true, // pause effects when resizing
     preload: true, // wait page preload to start effects
 
-    // show effetcs
+    // show effects
     ie: true,
     android: true,
     androidOld: false
