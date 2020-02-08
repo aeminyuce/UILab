@@ -1,6 +1,5 @@
 /* data list */
 .ease-data-list .data-content { transition-property: background-color; transition-duration: .15s; }
-.no-effetcs .ease-data-list .data-content { transition-property: none !important; }
 
 .data-list .data-content:not([class*="col-"]) { padding: 10px; border-bottom: solid 1px #ddd; }
 .data-list .data-content:before,.data-list .data-content:after { content: ""; display: table; }

@@ -2,7 +2,6 @@
 .ease-weather .graphs,.ease-weather .graphs > div { transition-duration: .8s; }
 .ease-weather .graphs { transition-property: background-color; }
 .ease-weather .graphs > div { transition-property: left; }
-.no-effetcs .ease-weather .graphs,.no-effetcs .ease-weather .graphs > div { transition-property: none !important; }
 
 .weather:before,.weather:after,.weather .days:before,.weather .days:after { content: ""; display: table; }
 .weather:after,.weather .days:after { clear: both; }

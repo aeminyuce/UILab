@@ -1,7 +1,6 @@
 /* dropdown */
 .ease-dropdown li { transition-property: background-color; transition-duration: .15s; }
 .ease-dropdown .content { transition-property: opacity, transform; transition-duration: .15s; transition-timing-function: ease-in-out; }
-.no-effetcs .ease-dropdown li,.no-effetcs .ease-dropdown .content { transition-property: none !important; }
 
 .dropdown { vertical-align: middle; display: inline-block; position: relative; }
 .mobile-menu .dropdown { display: block; }

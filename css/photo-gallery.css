@@ -2,7 +2,6 @@
 @keyframes preview-loader { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
 .ease-photo-gallery .img:after,.ease-photo-gallery .img.has-info > span { transition-property: opacity; transition-duration: .15s; }
-.no-effetcs .ease-photo-gallery .img:after,.no-effetcs .ease-photo-gallery .img.has-info > span,.no-effetcs .ease-photo-gallery .img > .icon { transition-property: none !important; }
 
 .photo-gallery { list-style: none; padding: 0; margin-bottom: 0; display: block; }
 .photo-gallery:before,.photo-gallery:after { content: ""; display: table; }

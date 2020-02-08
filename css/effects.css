@@ -1,18 +1,10 @@
 /* effects */
 [class*="ease-"],[class*="ease-1st-"] > *,[class*="ease-2nd-"] > * > * { transition-duration: .15s; transition-timing-function: ease-out; }
 
-.no-effect,.no-effect[class*="ease-1st-"] > *,.no-effect[class*="ease-2nd-"] > * > *,
-.no-effect:before,.no-effect[class*="ease-1st-"] > *:before,.no-effect[class*="ease-2nd-"] > * > *:before,
-.no-effect:after,.no-effect[class*="ease-1st-"] > *:after,.no-effect[class*="ease-2nd-"] > * > *:after { transition-property: none !important; }
-
-.no-effects,.no-effects:before,.no-effects:after,
-.no-effects [class*="ease-"],.no-effects [class*="ease-"]:before,.no-effects [class*="ease-"]:after,
-.no-effects [class*="ease-"] *,.no-effects [class*="ease-"] *:before,.no-effects [class*="ease-"] *:after { transition-property: none !important; }
+.no-effects,.no-effects:before,.no-effects:after,.no-effects *,.no-effects *:before,.no-effects *:after { transition-property: none !important; }
 
 @media (prefers-reduced-motion:reduce) {
-  [class*="ease-"],[class*="ease-1st-"] > *,[class*="ease-2nd-"] > * > *,
-  [class*="ease-"]:before,[class*="ease-1st-"] > *:before,[class*="ease-2nd-"] > * > *:before,
-  [class*="ease-"]:after,[class*="ease-1st-"] > *:after,[class*="ease-2nd-"] > * > *:after { transition-property: none !important; }
+  .no-effects,.no-effects:before,.no-effects:after,.no-effects *,.no-effects *:before,.no-effects *:after { transition-property: none !important; }
 }
 
 .ease-fast,.ease-fast[class*="ease-1st-"] > *,.ease-fast[class*="ease-2nd-"] > * > * { transition-duration: .1s; }
@@ -40,8 +32,7 @@
 
 .ease-default,.ease-default[class*="ease-1st-"] > *,.ease-default[class*="ease-2nd-"] > * > * { transition-duration: .15s !important; transition-timing-function: ease !important; }
 
-.no-effect,.no-effect:before,.no-effect:after,
-.no-effetcs,.no-effetcs:before,.no-effetcs:after,.no-effetcs *,.no-effetcs *:before,.no-effetcs *:after { animation: none !important; }
+.no-effects,.no-effects:before,.no-effects:after,.no-effects *,.no-effects *:before,.no-effects *:after { animation: none !important; }
 
 @media (prefers-reduced-motion:reduce) {
   [class*="animate-"],[class*="animate-"]:before,[class*="animate-"]:after,

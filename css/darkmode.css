@@ -56,7 +56,7 @@
     .switch-custom input:not(:checked):not(:indeterminate) + i,.switch-custom input:not(:checked) + i[class*="ui-"] { background-color: rgba(255,255,255,.15); }
 
     .textarea:not(.form-light):not(.toggle-textarea)[data-counter]:before,.textarea.form-focus:not(.toggle-textarea)[data-counter]:before { color: #fff; background-color: rgba(255,255,255,.3); }
-   
+
     .form-holder-focus [class*="col-"] > * { border-color: rgba(255,255,255,.65) !important; }
     .form-disabled { background-color: rgba(255,255,255,.075); }
     .form-readonly input,.form-readonly textarea { color: rgba(255,255,255,.65); }

@@ -3,9 +3,6 @@
 .ease-calendar .details,.ease-calendar thead,.ease-calendar tbody { transition-property: transform, opacity; transition-duration: .25s; transition-timing-function: ease-in-out; }
 .ease-calendar button,.ease-calendar a,.calendar .details li { transition-property: background-color, opacity; transition-duration: .15s; }
 
-.no-effetcs .ease-calendar button,.no-effetcs .ease-calendar a,.no-effetcs .calendar .details li,.no-effetcs .ease-calendar .details,
-.no-effetcs ease-calendar thead,.no-effetcs .ease-calendar tbody { transition-property: none !important; }
-
 .calendar { background-color: #fff; padding: 5px; overflow: hidden; display: block; position: relative; -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
 .calendar:not(.active) { display: none; }
 

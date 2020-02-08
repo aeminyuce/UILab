@@ -5,7 +5,6 @@
 @keyframes line-circles { to { transform: translateY(0); opacity: 1; } }
 
 .ease-line-charts circle { transition-property: stroke-width; transition-duration: .15s; }
-.no-effetcs .ease-line-charts circle { transition-property: none !important; }
 
 .line-charts { -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
 .line-charts ul { list-style: none; vertical-align: middle; padding: 0; display: inline-block; }
