@@ -8,7 +8,7 @@
 .border-dashed { border-style: dashed; }
 .border-dotted { border-style: dotted; }
 
-.border-light { border-color: rgba(255,255,255,.3) !important; }
+.border-light { border-color: rgba(255,255,255,.15) !important; }
 .border-dark { border-color: rgba(0,0,0,.35) !important; }
 
 .border-t { border-right: 0 !important; border-bottom: 0 !important; border-left: 0 !important; }
