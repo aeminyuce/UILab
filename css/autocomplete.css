@@ -3,7 +3,7 @@
 .ease-autocomplete ul { transition-property: opacity; transition-duration: .15s; }
 .ease-autocomplete li { transition-property: background-color; transition-duration: .15s; }
 
-.no-transitions-all .ease-autocomplete ul,.no-transitions-all .ease-autocomplete li { transition-property: none !important; }
+.no-effetcs .ease-autocomplete ul,.no-effetcs .ease-autocomplete li { transition-property: none !important; }
 
 .autocomplete { overflow: visible !important; }
 .autocomplete.open { z-index: 19; }

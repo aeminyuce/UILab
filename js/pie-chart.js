@@ -123,7 +123,7 @@ var pieChart = {};
                     loadFnc(that, this, i);
                 });
 
-                if (events.hasClass(document, 'no-transitions-all animate-stop-all')) {
+                if (events.hasClass(document, 'no-effects')) {
                     events.addClass(that, 'open open-ease');
 
                 } else {

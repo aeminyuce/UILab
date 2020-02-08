@@ -5,7 +5,7 @@
 @keyframes line-circles { to { transform: translateY(0); opacity: 1; } }
 
 .ease-line-charts circle { transition-property: stroke-width; transition-duration: .15s; }
-.no-transitions-all .ease-line-charts circle { transition-property: none !important; }
+.no-effetcs .ease-line-charts circle { transition-property: none !important; }
 
 .line-charts { -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
 .line-charts ul { list-style: none; vertical-align: middle; padding: 0; display: inline-block; }
@@ -29,10 +29,10 @@
 .line-charts:not(.resized) svg path.filled { transform: translateY(15px); opacity: 0; }
 .line-charts.loaded:not(.resized) svg path.filled { animation: line-filled .6s forwards; }
 
-.no-transitions-all.animate-stop-all .line-charts svg path:not(.dashed):not(.dotted):not(.filled),.ie .line-charts svg path:not(.dashed):not(.dotted):not(.filled) { stroke-dashoffset: 0; }
-.no-transitions-all.animate-stop-all .line-charts svg path.dashed,.ie .line-charts svg path.dashed { stroke-dasharray: 10 5; opacity: 1; }
-.no-transitions-all.animate-stop-all .line-charts svg path.dotted,.ie .line-charts svg path.dotted { stroke-dasharray: 1 5; opacity: 1; }
-.no-transitions-all.animate-stop-all .line-charts svg path.filled,.ie .line-charts svg path.filled { transform: translateY(0); opacity: .15; }
+.no-effects .line-charts svg path:not(.dashed):not(.dotted):not(.filled),.ie .line-charts svg path:not(.dashed):not(.dotted):not(.filled) { stroke-dashoffset: 0; }
+.no-effects .line-charts svg path.dashed,.ie .line-charts svg path.dashed { stroke-dasharray: 10 5; opacity: 1; }
+.no-effects .line-charts svg path.dotted,.ie .line-charts svg path.dotted { stroke-dasharray: 1 5; opacity: 1; }
+.no-effects .line-charts svg path.filled,.ie .line-charts svg path.filled { transform: translateY(0); opacity: .15; }
 
 .line-charts svg line { stroke: currentColor; shape-rendering: crispEdges; }
 .line-charts svg line.root { opacity: .35; }
@@ -44,7 +44,7 @@ html:not(.mobile) .line-charts svg circle:hover { stroke-width: 4; }
 .line-charts:not(.resized) svg circle { transform: translateY(30px); opacity: 0; }
 .line-charts.loaded:not(.resized) svg circle { animation: line-circles .6s forwards; }
 
-.no-transitions-all.animate-stop-all .line-charts svg circle,.ie .line-charts svg circle { transform: translateY(0); opacity: 1; }
+.no-effects .line-charts svg circle,.ie .line-charts svg circle { transform: translateY(0); opacity: 1; }
 
 .line-charts svg text { fill: currentColor; font-size: 10px; opacity: .65; }
 .line-charts svg .x { text-anchor: middle; }

@@ -1,6 +1,6 @@
 /* donut chart */
 .ease-donut-chart circle { transition-property: opacity stroke; transition-duration: 1.6s; transition-timing-function: ease-in-out; }
-.no-transitions-all .ease-donut-chart circle { transition-property: none !important; }
+.no-effetcs .ease-donut-chart circle { transition-property: none !important; }
 
 .donut-chart { text-align: left !important; display: block; position: relative; -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
 

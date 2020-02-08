@@ -7,9 +7,9 @@
 .ease-image-uploader .uploader-list > .icon { transition-property: opacity; transition-duration: .15s; }
 .ease-image-uploader .uploader-list ul > li img { transition-property: transform, box-shadow; transition-duration: .15s; }
 
-.no-transitions-all .ease-image-uploader,.no-transitions-all .ease-image-uploader .uploader-tools,.no-transitions-all .ease-image-uploader .uploader-list,
-.no-transitions-all .ease-image-uploader .uploader-list > .icon,.no-transitions-all .ease-image-uploader .uploader-list ul > li,
-.no-transitions-all .ease-image-uploader .uploader-list ul > li img { transition-property: none !important; }
+.no-effetcs .ease-image-uploader,.no-effetcs .ease-image-uploader .uploader-tools,.no-effetcs .ease-image-uploader .uploader-list,
+.no-effetcs .ease-image-uploader .uploader-list > .icon,.no-effetcs .ease-image-uploader .uploader-list ul > li,
+.no-effetcs .ease-image-uploader .uploader-list ul > li img { transition-property: none !important; }
 
 .image-uploader { background-color: #fff; overflow: hidden; position: relative; }
 .image-uploader.drop-highlight { background-color: #f5f5f5; }

@@ -38,16 +38,16 @@ var effects = {
         }
 
         if (effects.pauseAll) {
-            events.addClass(document, 'no-transitions-all animate-stop-all');
+            events.addClass(document, 'no-effects');
 
         } else {
 
             // wait page preload to start transitions
             if (effects.preload) {
 
-                events.addClass(document, 'no-transitions-all animate-stop-all');
+                events.addClass(document, 'no-effects');
                 setTimeout(function () {
-                    events.removeClass(document, 'no-transitions-all animate-stop-all');
+                    events.removeClass(document, 'no-effects');
                 }, 300);
 
             }
@@ -63,10 +63,10 @@ var effects = {
             if ((eName === 'scroll' && effects.pauseScroll) || (eName === 'resize' && effects.pauseResize)) {
 
                 clearTimeout(pauseTransitions);
-                events.addClass(document, 'no-transitions-all animate-stop-all');
+                events.addClass(document, 'no-effects');
 
                 pauseTransitions = setTimeout(function () {
-                    events.removeClass(document, 'no-transitions-all animate-stop-all');
+                    events.removeClass(document, 'no-effects');
                 }, 300);
 
             }

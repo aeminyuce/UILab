@@ -1,7 +1,7 @@
 /* tabs */
 .ease-tabs .toggle-icon { transition-property: opacity, transform; transition-duration: .3s; }
 .ease-tabs .tab-content { transition-property: opacity, transform; transition-duration: .15s; }
-.no-transitions-all .ease-tabs .toggle-icon,.no-transitions-all .ease-tabs .tab-content { transition-property: none !important; }
+.no-effetcs .ease-tabs .toggle-icon,.no-effetcs .ease-tabs .tab-content { transition-property: none !important; }
 
 .tabs .active > .toggle-icon { transform: rotate(-180deg); opacity: 1; }
 .tabs .tab-content { transform-origin: top center; }

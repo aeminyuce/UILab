@@ -3,7 +3,7 @@
 @keyframes pie-spin-r { 0% { -ms-transform: rotate(0deg); transform: rotate(0deg); } }
 
 .ease-pie-chart li,.ease-pie-chart > div span { transition-property: opacity; transition-duration: .3s; }
-.no-transitions-all .ease-pie-chart li,.no-transitions-all .ease-pie-chart > div span { transition-property: none !important; }
+.no-effetcs .ease-pie-chart li,.no-effetcs .ease-pie-chart > div span { transition-property: none !important; }
 
 .pie-chart { position: relative; -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
 .pie-chart[data-text]:before { content: attr(data-text); color: #000; font-weight: bold; text-align: center; line-height: 14px; min-height: 16px; background: #fff; padding: 4px 8px; display: inline-block; border-radius: 1000px; position: absolute; top: 50%; left: 50%; z-index: 2; transform: translate(-50%,-50%); }
