@@ -8,7 +8,7 @@ var donutChart = {};
 (function () {
 
     'use strict';
-    /*globals document, selector, events, setTimeout, ajax, useragents */
+    /*globals window, document, selector, events, setTimeout, ajax, useragents */
 
     var loadCharts;
 
@@ -175,6 +175,7 @@ var donutChart = {};
 
     // Loaders
     events.onload(donutChart.Start);
+    events.on(document, 'domChange', donutChart.Start);
 
     // ajax callback loader: requires Ajax JS
     events.on(document, 'ajaxCallbacks', function () {
