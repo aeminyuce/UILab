@@ -23,7 +23,7 @@
 .mobile-menu .dropdown .content { position: static; box-shadow: none; transform-origin: top center !important; }
 .mobile-menu .dropdown:not(:last-child) .content { margin-bottom: 10px !important; }
 
-.dropdown .content:not([class*="border-"]).scroll-v { max-height: 204px; }
+.dropdown .content:not([class*="border"]).scroll-v { max-height: 204px; }
 .dropdown .content.border:not(.border-dual).scroll-v { max-height: 206px; }
 .dropdown .content.border-dual.scroll-v { max-height: 208px; }
 

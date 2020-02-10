@@ -122,7 +122,7 @@
     html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover { background-color: rgba(255,255,255,.06); }
     .table-sidebar td:first-of-type { border-right-color: #41454d; }
     .table-sidebar-center td:nth-child(2) { border-right-color: #41454d; border-left-color: #41454d; }
-    .table[class*="border-"],.table [class*="border-"] { border-color: #41454d; }
+    .table[class*="border"],.table [class*="border"] { border-color: #41454d; }
     .table-border th:not(:last-child),.table-border td:not(:last-child) { border-right-color: #41454d; }
 
     html:not(.mobile) ::-webkit-scrollbar-thumb { background-color: rgba(255,255,255, 0.15); }
