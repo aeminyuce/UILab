@@ -28,13 +28,13 @@ input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .btn.ui-dark .icon,.btn.ui-x-dark .icon { opacity: 1; }
 html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hover .icon { opacity: 1 !important; }
 
-.btn-lg { font-size: 16px; line-height: 22px; height: 42px; padding-top: 10px; padding-bottom: 10px; }
-.btn-lg.btn-square { width: 42px; }
-.btn-lg.border { padding-top: 9px; padding-bottom: 9px; }
-.btn-lg.border-dual { padding-top: 7px; padding-bottom: 7px; }
-.btn-lg.round { border-radius: 8px; }
+.btn-lg,.form-lg .btn { font-size: 16px; line-height: 22px; height: 42px; padding-top: 10px; padding-bottom: 10px; }
+.btn-lg.btn-square,.form-lg .btn.btn-square { width: 42px; }
+.btn-lg.border,.form-lg .btn.border { padding-top: 9px; padding-bottom: 9px; }
+.btn-lg.border-dual,.form-lg .btn.border-dual { padding-top: 7px; padding-bottom: 7px; }
+.btn-lg.round,.form-lg .btn.round { border-radius: 8px; }
 
-.btn-sm { font-size: 12px; line-height: 15px; height: 26px; padding-top: 5px; padding-bottom: 5px; }
+.btn-sm { font-size: 12px; line-height: 16px; height: 26px; padding-top: 5px; padding-bottom: 5px; }
 .btn-sm.btn-square { width: 26px; }
 .btn-sm.border { padding-top: 4px; padding-bottom: 4px; }
 .btn-sm.border-dual { padding-top: 3px; padding-bottom: 3px; }
@@ -83,13 +83,11 @@ html:not(.mobile) .btn.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-ligh
 .pagination:not(:last-child) { margin-bottom: 20px; }
 
 .pagination .btn { text-align: center !important; min-width: 32px; }
-.pagination .btn-lg { min-width: 42px; }
+.pagination .btn-lg,.pagination.form-lg .btn { min-width: 42px; }
 .pagination .btn-sm { min-width: 26px; }
 .pagination .btn-xs { min-width: 22px; }
 .pagination .btn-xxs { min-width: 14px; }
-
-.pagination .btn > .icon { opacity: 1 !important; }
-.pagination .btn > .icon + .icon { margin-left: -5px; }
+.pagination .btn .icon { opacity: 1 !important; }
 
 @media (max-width: 959px) {
     .btn-md-fluid { width: 100% !important; display: block; }
