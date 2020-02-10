@@ -151,22 +151,14 @@ var forms = {};
         // toggle password
         events.on(document, 'click touchend', '.show-pass', function () {
 
-            var t, p, id = this.getAttribute('data-id');
+            var that = this.parentElement;
+            that = selector('input', that)[0];
 
-            if (id === null) {
-
-                p = events.closest(this, '.text');
-                if (p.length === 1) {
-                    t = selector('input', p);
-                }
-
-            } else { t = selector('#' + id)[0]; }
-
-            if (t.getAttribute('type') === 'password') {
-                t.setAttribute('type', 'text');
+            if (that.getAttribute('type') === 'password') {
+                that.setAttribute('type', 'text');
 
             } else {
-                t.setAttribute('type', 'password');
+                that.setAttribute('type', 'password');
             }
 
         });
