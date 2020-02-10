@@ -65,6 +65,7 @@
     <!-- custom CSS -->
     <style>
         body { background-color: #f9f9f9; }
+        .col-75 { width: 75px; }
     </style>
 
 </head>
@@ -90,11 +91,11 @@
                     <h4>Forms in Grid System</h4>
                     <div class="row padding-30-b">
                         <div class="col-3">
-                            <label class="form-grid" for="standard-form">Label</label>
+                            <label class="form-grid">Label</label>
                         </div>
                         <div class="col-9">
                             <div class="text round border-dual ease-form">
-                                <input id="standard-form" type="text" value="123456">
+                                <input type="text" value="123456">
                             </div>
                             <p class="hint dark">Form hint</p>
                         </div>
@@ -136,35 +137,143 @@
                         </div>
 
                         <div class="col-3">
-                            <label class="form-grid" for="error-form">Error Form</label>
+                            <label class="form-grid">Error Form</label>
                         </div>
                         <div class="col-9">
                             <div class="text round border-dual ease-form error">
-                                <input id="error-form" type="text" value="123456">
+                                <input type="text" value="123456">
                             </div>
                             <p class="hint error">Your message is here.</p>
                         </div>
 
                         <div class="col-3">
-                            <label class="form-grid" for="warning-form">Warning Form</label>
+                            <label class="form-grid">Warning Form</label>
                         </div>
                         <div class="col-9">
                             <div class="text round border-dual ease-form warning">
-                                <input id="warning-form" type="text" value="123456">
+                                <input type="text" value="123456">
                             </div>
                             <p class="hint warning">Your message is here.</p>
                         </div>
+                        <div class="col-3">
+                            <label class="form-grid">Captcha</label>
+                        </div>
+                        <div class="col-9">
+                            <div class="form-holder col-static no-fluid">
 
-                        <div class="col-6">
-                            <label class="form-label">Inner Label</label>
-                            <div class="text round border-dual ease-form">
-                                <input type="text">
+                                <div class="col-75">
+                                    <img class="img-fluid border-dual border-light round ease-border" src="img/captcha.jpg" alt="">
+                                </div>
+                                <div class="col-32">
+                                    <button class="btn btn-square btn-ghost border-dual border-light ease-btn">
+                                        <span class="animate-spin"> <!-- for loading process toggle "animate-spin" -->
+                                            <i class="icon icon-sm icon-sync no-opacity"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="row row-no-gap">
+                                    <div class="col-12">
+                                        <div class="text border-dual round form-light ease-form">
+                                            <input type="text" maxlength="4" placeholder="Please enter code">
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                         <div class="col-6">
-                            <label class="form-label">Inner Label</label>
-                            <div class="text round border-dual ease-form">
-                                <input type="text" placeholder="Placeholder Text">
+                            <label class="form-label">Full Name</label>
+                            <div class="text border-dual round ease-form">
+                                <input type="text" placeholder="Enter name">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label">Your Age</label>
+                            <div class="select round border-dual ease-form">
+                                <i class="icon icon-angle-down"></i>
+                                <select>
+                                    <option value="">Select your age</option>
+                                    <option>Under 20</option>
+                                    <option>21- 30</option>
+                                    <option>31 - 40</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Large Forms</h4>
+                    <div class="form-lg padding-30-b">
+                        <div class="row">
+                            <div class="col-3">
+                                <label class="form-grid">Full Name</label>
+                            </div>
+                            <div class="col-9">
+                                <div class="text border-dual round ease-form">
+                                    <input type="text" placeholder="Enter name">
+                                </div>
+                                <p class="hint dark">Form hint</p>
+                            </div>
+                            <div class="col-3">
+                                <label class="form-grid">Your Age</label>
+                            </div>
+                            <div class="col-9">
+                                <div class="select round border-dual ease-form">
+                                    <i class="icon icon-angle-down"></i>
+                                    <select>
+                                        <option value="">Select your age</option>
+                                        <option>Under 20</option>
+                                        <option>21- 30</option>
+                                        <option>31 - 40</option>
+                                    </select>
+                                </div>
+                                <p class="hint dark">Form hint</p>
+                            </div>
+                            <div class="col-3">
+                                <label class="form-grid">Captcha</label>
+                            </div>
+                            <div class="col-9">
+                                <div class="form-holder col-static no-fluid">
+
+                                    <div class="col-100">
+                                        <img class="border-dual round ease-border" src="img/captcha.jpg" alt="">
+                                    </div>
+                                    <div class="col-42">
+                                        <button class="btn btn-square btn-ghost border-dual ease-btn">
+                                            <span class="animate-spin"> <!-- for loading process toggle "animate-spin" -->
+                                                <i class="icon icon-sync no-opacity"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="row row-no-gap">
+                                        <div class="col-12">
+                                            <div class="text border-dual round ease-form">
+                                                <input type="text" maxlength="4" placeholder="Please enter code">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-9 offset-3">
+                                <button type="reset" class="btn btn-xs-fluid round">Reset Form</button>
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label">Full Name</label>
+                                <div class="text border-dual round ease-form">
+                                    <input type="text" placeholder="Enter name">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label">Your Age</label>
+                                <div class="select round border-dual ease-form">
+                                    <i class="icon icon-angle-down"></i>
+                                    <select>
+                                        <option value="">Select your age</option>
+                                        <option>Under 20</option>
+                                        <option>21- 30</option>
+                                        <option>31 - 40</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -395,10 +504,13 @@
 
                         <span class="sp10"></span>
 
-                        <div class="file file-lg round border-dual ease-form">
-                            <input type="file">
-                            <span class="btn btn-lg ease-btn">Browse</span>
-                            <span>Choose file.</span>
+                        <label class="form-label padding-10-b">File Input with Large Forms</label>
+                        <div class="form-lg ease-1st-form">
+                            <div class="file round border-dual">
+                                <input type="file">
+                                <span class="btn ease-btn">Browse</span>
+                                <span>Choose file.</span>
+                            </div>
                         </div>
                     </div>
 
@@ -594,18 +706,21 @@
 
                         <span class="sp30"></span>
 
-                        <div class="text text-lg text-icon-l margin-10-b round border-dual">
-                            <i class="icon icon-search"></i>
-                            <input type="text" placeholder="Left icon">
-                        </div>
-                        <div class="text text-lg text-icon margin-10-b round border-dual">
-                            <i class="icon icon-keyboard"></i>
-                            <input type="text" placeholder="Right icon">
-                        </div>
-                        <div class="text text-lg text-icon-both round border-dual">
-                            <i class="icon text-icon-l icon-search"></i>
-                            <i class="icon icon-keyboard"></i>
-                            <input type="text" placeholder="Both icon">
+                        <label class="form-label padding-10-b">Form Icons with Large Forms</label>
+                        <div class="form-lg ease-1st-form">
+                            <div class="text text-icon-l margin-10-b round border-dual">
+                                <i class="icon icon-search"></i>
+                                <input type="text" placeholder="Left icon">
+                            </div>
+                            <div class="text text-icon margin-10-b round border-dual">
+                                <i class="icon icon-keyboard"></i>
+                                <input type="text" placeholder="Right icon">
+                            </div>
+                            <div class="text text-icon-both round border-dual">
+                                <i class="icon text-icon-l icon-search"></i>
+                                <i class="icon icon-keyboard"></i>
+                                <input type="text" placeholder="Both icon">
+                            </div>
                         </div>
                     </div>
 
@@ -616,64 +731,12 @@
                                 <button type="button" class="clear-form icon icon-remove"></button>
                                 <input type="text" value="Defined value example">
                             </div>
-                            <div class="text text-lg text-icon margin-10-b round border-dual has-clear ease-form">
-                                <button type="button" class="clear-form icon icon-remove"></button>
-                                <input type="text" value="Defined value example">
-                            </div>
-                            <div class="text text-lg text-icon margin-10-b round border-dual has-clear ease-form">
+                            <div class="text text-icon margin-10-b round border-dual has-clear ease-form">
                                 <button type="button" class="clear-form icon icon-remove"></button>
                                 <input type="text">
                             </div>
                             <button type="reset" class="btn btn-xs-fluid round">Reset Form</button>
                         </form>
-                    </div>
-
-                    <h4>Large Forms</h4>
-                    <div class="padding-30-b">
-                        <div class="row">
-                            <div class="col-3">
-                                <label class="form-grid form-lg" for="fullname01">Full Name</label>
-                            </div>
-                            <div class="col-9">
-                                <div class="text text-lg border-dual round ease-form">
-                                    <input id="fullname01" type="text" placeholder="Enter name">
-                                </div>
-                                <p class="hint dark">Form hint</p>
-                            </div>
-                            <div class="col-3">
-                                <label class="form-grid form-lg" for="age01">Your Age</label>
-                            </div>
-                            <div class="col-9">
-                                <div class="select select-lg round border-dual ease-form">
-                                    <i class="icon icon-angle-down"></i>
-                                    <select id="age01">
-                                        <option value="">Select your age</option>
-                                        <option>Under 20</option>
-                                        <option>21- 30</option>
-                                        <option>31 - 40</option>
-                                    </select>
-                                </div>
-                                <p class="hint dark">Form hint</p>
-                            </div>
-                        </div>
-
-                        <label for="fullname02" class="form-label">Full Name</label>
-                        <div class="text text-lg border-dual round ease-form">
-                            <input id="fullname02" type="text" placeholder="Enter name">
-                        </div>
-
-                        <span class="sp10"></span>
-
-                        <label for="age02" class="form-label">Your Age</label>
-                        <div class="select select-lg round border-dual ease-form">
-                            <i class="icon icon-angle-down"></i>
-                            <select id="age02">
-                                <option value="">Select your age</option>
-                                <option>Under 20</option>
-                                <option>21- 30</option>
-                                <option>31 - 40</option>
-                            </select>
-                        </div>
                     </div>
 
                     <h4>Submit with Form Icons</h4>
@@ -739,6 +802,7 @@
                     <div class="row padding-30-b">
                         <div class="col-12">
                             <label class="form-label">Form Holder with Grid System</label>
+                            <span class="sp10"></span>
                             <div class="form-holder row row-no-gap margin-10-b">
 
                                 <div class="col-5 col-xs-4">
@@ -837,16 +901,16 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <label class="form-label">Form Holder with Large Forms</label>
-                            <div class="form-holder row row-no-gap margin-10-b">
+                            <label class="form-label padding-10-b">Form Holder with Large Forms</label>
+                            <div class="form-holder form-lg row row-no-gap margin-10-b">
 
                                 <div class="col-5 col-xs-4">
-                                    <div class="text text-lg round ease-form">
+                                    <div class="text round ease-form">
                                         <input type="text">
                                     </div>
                                 </div>
                                 <div class="col-2 col-xs-4">
-                                    <div class="select select-lg round ease-form">
+                                    <div class="select round ease-form">
                                         <i class="icon icon-angle-down"></i>
                                         <select>
                                             <option value="">Select</option>
@@ -856,21 +920,21 @@
                                     </div>
                                 </div>
                                 <div class="col-5 col-xs-4">
-                                    <div class="text text-lg round ease-form">
+                                    <div class="text round ease-form">
                                         <input type="text">
                                     </div>
                                 </div>
 
                             </div>
-                            <div class="form-holder row row-no-gap margin-10-b">
+                            <div class="form-holder form-lg row row-no-gap margin-10-b">
 
                                 <div class="col-5 col-xs-4">
-                                    <div class="text text-lg round border-dual ease-form">
+                                    <div class="text round border-dual ease-form">
                                         <input type="text">
                                     </div>
                                 </div>
                                 <div class="col-2 col-xs-4">
-                                    <div class="select select-lg round border-dual ease-form">
+                                    <div class="select round border-dual ease-form">
                                         <i class="icon icon-angle-down"></i>
                                         <select>
                                             <option value="">Select</option>
@@ -880,21 +944,21 @@
                                     </div>
                                 </div>
                                 <div class="col-5 col-xs-4">
-                                    <div class="text text-lg round border-dual ease-form">
+                                    <div class="text round border-dual ease-form">
                                         <input type="text">
                                     </div>
                                 </div>
 
                             </div>
-                            <div class="form-holder row row-no-gap margin-10-b">
+                            <div class="form-holder form-lg row row-no-gap margin-10-b">
 
                                 <div class="col-5 col-xs-4">
-                                    <div class="text text-lg circle ease-form">
+                                    <div class="text circle ease-form">
                                         <input type="text">
                                     </div>
                                 </div>
                                 <div class="col-2 col-xs-4">
-                                    <div class="select select-lg circle ease-form">
+                                    <div class="select circle ease-form">
                                         <i class="icon icon-angle-down"></i>
                                         <select>
                                             <option value="">Select</option>
@@ -904,21 +968,21 @@
                                     </div>
                                 </div>
                                 <div class="col-5 col-xs-4">
-                                    <div class="text text-lg circle ease-form">
+                                    <div class="text circle ease-form">
                                         <input type="text">
                                     </div>
                                 </div>
 
                             </div>
-                            <div class="form-holder row row-no-gap margin-10-b">
+                            <div class="form-holder form-lg row row-no-gap margin-10-b">
 
                                 <div class="col-5 col-xs-4">
-                                    <div class="text text-lg circle border-dual ease-form">
+                                    <div class="text circle border-dual ease-form">
                                         <input type="text">
                                     </div>
                                 </div>
                                 <div class="col-2 col-xs-4">
-                                    <div class="select select-lg circle border-dual ease-form">
+                                    <div class="select circle border-dual ease-form">
                                         <i class="icon icon-angle-down"></i>
                                         <select>
                                             <option value="">Select</option>
@@ -928,7 +992,7 @@
                                     </div>
                                 </div>
                                 <div class="col-5 col-xs-4">
-                                    <div class="text text-lg circle border-dual ease-form">
+                                    <div class="text circle border-dual ease-form">
                                         <input type="text">
                                     </div>
                                 </div>
@@ -936,7 +1000,7 @@
                             </div>
                         </div>
 
-                        <div class="col-12">
+                        <div class="col-12 no-padding-v">
                             <label class="form-label">Form Holders with Static Grid</label>
                         </div>
                         <div class="col-6">
@@ -1187,16 +1251,16 @@
                     <h4>Special Forms</h4>
                     <div class="row padding-30-b">
                         <div class="col-3">
-                            <label class="form-grid" for="number">Number Form</label>
+                            <label class="form-grid" >Number Form</label>
                         </div>
                         <div class="col-9">
                             <div class="text round border-dual ease-form">
-                                <input id="number" class="number" type="text" placeholder="Number">
+                                <input class="number" type="text" placeholder="Number">
                             </div>
                         </div>
 
                         <div class="col-3">
-                            <label class="form-grid" for="spinner">Spinner Form</label>
+                            <label class="form-grid">Spinner Form</label>
                         </div>
                         <div class="col-9">
                             <div class="form-spinner form-holder col-static no-fluid">
@@ -1204,7 +1268,7 @@
                                 <div class="row row-no-gap">
                                     <div class="col-12">
                                         <div class="text round border-dual ease-form">
-                                            <input id="spinner" type="text" value="3" min="2" max="5" class="number align-r">
+                                            <input type="text" value="3" min="2" max="5" class="number align-r">
                                         </div>
                                     </div>
                                 </div>
@@ -1223,7 +1287,7 @@
                         </div>
 
                         <div class="col-3">
-                            <label class="form-grid" for="currency">Currency Spinner</label>
+                            <label class="form-grid">Currency Spinner</label>
                         </div>
                         <div class="col-9">
                             <div class="currency-spinner form-holder col-static no-fluid">
@@ -1236,7 +1300,7 @@
                                 <div class="row row-no-gap">
                                     <div class="col-12">
                                         <div class="text round border-dual ease-form">
-                                            <input id="currency" type="text" value="645.000" min="645.000" step="5.000" maxlength="12" autocomplete="off">
+                                            <input type="text" value="645.000" min="645.000" step="5.000" maxlength="12" autocomplete="off">
                                         </div>
                                     </div>
                                 </div>
@@ -1250,87 +1314,12 @@
                         </div>
 
                         <div class="col-3">
-                            <label class="form-grid" for="creditcard">Credit Card Form</label>
+                            <label class="form-grid">Toggle Password</label>
                         </div>
                         <div class="col-9">
-                            <label class="form-label">Credit Card Number</label>
-                            <div class="form-holder row row-no-gap no-fluid align-c margin-10-b ease-2nd-form">
-
-                                <div class="col-3">
-                                    <div class="text round border-dual">
-                                        <input maxlength="4" type="text" class="number">
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="text round border-dual">
-                                        <input maxlength="4" type="text" class="number">
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="text round border-dual">
-                                        <input maxlength="4" type="text" class="number">
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="text round border-dual">
-                                        <input maxlength="4" type="text" class="number">
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <label class="form-label block" for="cvv2">CVV2</label>
-                            <div class="text round border-dual form-xs-inline ease-form">
-                                <input type="text" maxlength="3" class="number align-c">
-                            </div>
-                        </div>
-
-                        <div class="col-3">
-                            <label class="form-grid" for="my-password">Toggle Password</label>
-                        </div>
-                        <div class="col-9">
-                            <div class="row row-sm-gap-v no-fluid">
-                                <div class="col-6">
-                                    <label class="form-label" for="form03">Label</label>
-                                </div>
-                                <div class="col-6 align-r">
-                                    <a data-id="my-password" class="btn show-pass btn-xs btn-ghost dark round ease-btn">Show/Hide password with id</a>
-                                </div>
-                            </div>
-                            <div class="text margin-10-b round border-dual ease-form">
-                                <input id="my-password" type="password" placeholder="Toggle Password with Text Icon" autocomplete="current-password">
-                            </div>
-
                             <div class="text text-icon round border-dual ease-form">
-                                <span title="Show/Hide Password" class="show-pass icon icon-eye"></span>
+                                <button type="button" title="Toggle Password" class="show-pass icon icon-eye"></button>
                                 <input type="password" placeholder="Toggle Password Example" autocomplete="current-password">
-                            </div>
-                        </div>
-
-                        <div class="col-3">
-                            <label class="form-grid form-lg" for="captcha">Captcha</label>
-                        </div>
-                        <div class="col-9">
-                            <div class="form-holder col-static no-fluid">
-
-                                <div class="col-100">
-                                    <img class="border-dual round ease-border" src="img/captcha.jpg" alt="">
-                                </div>
-                                <div class="col-42">
-                                    <button class="btn btn-lg btn-square btn-ghost border-dual ease-btn">
-                                        <span class="animate-spin"> <!-- for loading process toggle "animate-spin" -->
-                                            <i class="icon icon-sync no-opacity"></i>
-                                        </span>
-                                    </button>
-                                </div>
-                                <div class="row row-no-gap">
-                                    <div class="col-12">
-                                        <div class="text text-lg border-dual round ease-form">
-                                            <input id="captcha" type="text" maxlength="4" placeholder="Please enter code">
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
                     </div>
@@ -1340,77 +1329,77 @@
                         <form action="#succesful" onsubmit="return alerts.dialog({msg: 'Submit this form?', success: 'Yes', error: 'No', callback: function (value) { if (value === 'success') { document.getElementById('submitForm').submit(); } }});">
                             <div class="row">
                                 <div class="col-3">
-                                    <label class="form-grid" for="required1">Required with message</label>
+                                    <label class="form-grid">Required with message</label>
                                 </div>
                                 <div class="col-9">
                                     <div class="text round border-dual ease-form">
-                                        <input class="required" id="required1" type="text" placeholder="Type your name">
+                                        <input class="required" type="text" placeholder="Type your name">
                                     </div>
                                     <p class="required-msg">Please, type your name.</p>
                                     <i class="hint dark">* Required</i>
                                 </div>
 
                                 <div class="col-3">
-                                    <label class="form-grid" for="required2">Required with no message</label>
+                                    <label class="form-grid">Required with no message</label>
                                 </div>
                                 <div class="col-9">
                                     <div class="text round border-dual ease-form">
-                                        <input class="required" id="required2" type="text">
+                                        <input class="required" type="text">
                                     </div>
                                     <i class="hint dark">* Required</i>
                                 </div>
 
                                 <div class="col-3">
-                                    <label class="form-grid" for="required3">Required with min and max length</label>
+                                    <label class="form-grid">Required with min and max length</label>
                                 </div>
                                 <div class="col-9">
                                     <div class="text round border-dual ease-form">
-                                        <input class="required" id="required3" type="text" minlength="3" maxlength="10">
+                                        <input class="required" type="text" minlength="3" maxlength="10">
                                     </div>
                                     <p class="required-msg">Minimum length is 3 characters.</p>
                                     <i class="hint dark">* Required</i>
                                 </div>
 
                                 <div class="col-3">
-                                    <label class="form-grid" for="required4">Required with min and max number</label>
+                                    <label class="form-grid">Required with min and max number</label>
                                 </div>
                                 <div class="col-9">
                                     <div class="text round border-dual ease-form">
-                                        <input class="required" id="required4" type="text" minnumber="-5" maxnumber="10">
+                                        <input class="required" type="text" minnumber="-5" maxnumber="10">
                                     </div>
                                     <p class="required-msg">Minimum number is -5 and maximum number is 10.</p>
                                     <i class="hint dark">* Required</i>
                                 </div>
 
                                 <div class="col-3">
-                                    <label class="form-grid" for="required5">Required with password and min length</label>
+                                    <label class="form-grid">Required with password and min length</label>
                                 </div>
                                 <div class="col-9">
                                     <div class="text round border-dual ease-form">
-                                        <input class="required" id="required5" type="password" minlength="8" autocomplete="current-password">
+                                        <input class="required" type="password" minlength="8" autocomplete="current-password">
                                     </div>
                                     <p class="required-msg">Minimum length is 8 characters.</p>
                                     <i class="hint dark">* Required</i>
                                 </div>
 
                                 <div class="col-3">
-                                    <label class="form-grid" for="required6">Required with email</label>
+                                    <label class="form-grid">Required with email</label>
                                 </div>
                                 <div class="col-9">
                                     <div class="text round border-dual ease-form">
-                                        <input class="required" id="required6" type="email">
+                                        <input class="required" type="email">
                                     </div>
                                     <p class="required-msg">Enter a valid email.</p>
                                     <i class="hint dark">* Required</i>
                                 </div>
 
                                 <div class="col-3">
-                                    <label class="form-grid" for="required7">Required with select forms.</label>
+                                    <label class="form-grid">Required with select forms.</label>
                                 </div>
                                 <div class="col-9">
                                     <div class="select round border-dual ease-form">
                                         <i class="icon icon-angle-down"></i>
-                                        <select id="required7" class="required">
+                                        <select class="required">
                                             <option value="">Select</option>
                                             <option>First</option>
                                             <option>Second</option>
@@ -1421,7 +1410,7 @@
                                 </div>
 
                                 <div class="col-3">
-                                    <label class="form-grid" for="required8">Required with form holders</label>
+                                    <label class="form-grid">Required with form holders</label>
                                 </div>
                                 <div class="col-9">
                                     <div class="form-holder col-static no-fluid">
@@ -1429,7 +1418,7 @@
                                         <div class="row row-no-gap">
                                             <div class="col-12">
                                                 <div class="text round border-dual ease-form">
-                                                    <input id="required8" class="required" type="text" placeholder="Keyword">
+                                                    <input class="required" type="text" placeholder="Keyword">
                                                 </div>
                                             </div>
                                         </div>
@@ -1456,22 +1445,22 @@
                                 </div>
 
                                 <div class="col-3">
-                                    <label class="form-grid" for="required9">Required with textarea forms and min length.</label>
+                                    <label class="form-grid">Required with textarea forms and min length.</label>
                                 </div>
                                 <div class="col-9">
                                     <div class="textarea margin-10-b round border-dual ease-form">
-                                        <textarea id="required9" class="required" placeholder="Write your comments." minlength="10"></textarea>
+                                        <textarea class="required" placeholder="Write your comments." minlength="10"></textarea>
                                     </div>
                                     <p class="required-msg">Please, write your comments more than 10 characters.</p>
                                     <i class="hint dark">* Required</i>
                                 </div>
 
                                 <div class="col-3">
-                                    <label class="form-grid" for="required10">Required with textarea forms and min length.</label>
+                                    <label class="form-grid">Required with textarea forms and min length.</label>
                                 </div>
                                 <div class="col-9">
                                     <div class="file round border-dual ease-form">
-                                        <input id="required10" class="required" type="file">
+                                        <input class="required" type="file">
                                         <span class="btn ease-btn">Browse</span>
                                         <span>Choose file.</span>
                                     </div>
@@ -1480,12 +1469,12 @@
                                 </div>
 
                                 <div class="col-3">
-                                    <label class="form-grid" for="required11">Required with checkboxes.</label>
+                                    <label class="form-grid">Required with checkboxes.</label>
                                 </div>
                                 <div class="col-9">
                                     <div class="required-accept">
                                         <label class="check">
-                                            <input id="required11" class="required" type="checkbox"> Checkbox
+                                            <input class="required" type="checkbox"> Checkbox
                                         </label>
                                     </div>
                                     <p class="required-msg">Please, read and accept Terms and Conditions.</p>
@@ -1493,12 +1482,12 @@
                                 </div>
 
                                 <div class="col-3">
-                                    <label class="form-grid" for="required12">Required with indeterminate checkboxes.</label>
+                                    <label class="form-grid">Required with indeterminate checkboxes.</label>
                                 </div>
                                 <div class="col-9">
                                     <div class="required-accept">
                                         <label class="check">
-                                            <input id="required12" class="required indeterminate" type="checkbox"> Indeterminate
+                                            <input class="required indeterminate" type="checkbox"> Indeterminate
                                         </label>
                                     </div>
                                     <p class="required-msg">Please, read and accept Terms and Conditions.</p>
@@ -1506,13 +1495,13 @@
                                 </div>
 
                                 <div class="col-3">
-                                    <label class="form-grid" for="required13">Required with custom checks.</label>
+                                    <label class="form-grid">Required with custom checks.</label>
                                 </div>
                                 <div class="col-9">
                                     <div class="required-accept">
                                         <label class="custom">
                                             <span class="check-custom round border-dual">
-                                                <input id="required13" class="required" type="checkbox">
+                                                <input class="required" type="checkbox">
                                                 <i class="state"></i>
                                             </span>
                                             <b>Custom Checkbox</b>
@@ -1523,12 +1512,12 @@
                                 </div>
 
                                 <div class="col-3">
-                                    <label class="form-grid" for="required14">Required with radios.</label>
+                                    <label class="form-grid">Required with radios.</label>
                                 </div>
                                 <div class="col-9">
                                     <div class="required-accept">
                                         <label class="radio">
-                                            <input id="required14" class="required" type="radio" name="radiotest3"> Radio1
+                                            <input class="required" type="radio" name="radiotest3"> Radio1
                                         </label>
                                         <label class="radio">
                                             <input class="required" type="radio" name="radiotest3"> Radio2
@@ -1542,13 +1531,13 @@
                                 </div>
 
                                 <div class="col-3">
-                                    <label class="form-grid" for="required15">Required with custom radios.</label>
+                                    <label class="form-grid">Required with custom radios.</label>
                                 </div>
                                 <div class="col-9">
                                     <div class="required-accept">
                                         <label class="custom">
                                             <span class="radio-custom border-dual ease-form">
-                                                <input id="required15" class="required" type="radio" name="radiotest4">
+                                                <input class="required" type="radio" name="radiotest4">
                                                 <i class="state"></i>
                                             </span>
                                             <b>Custom Radio1</b>
@@ -1573,13 +1562,13 @@
                                 </div>
 
                                 <div class="col-3">
-                                    <label class="form-grid" for="required16">Required with custom checks.</label>
+                                    <label class="form-grid">Required with custom checks.</label>
                                 </div>
                                 <div class="col-9">
                                     <div class="required-accept">
                                         <label class="custom">
                                             <span class="switch-custom round border-dual ease-form">
-                                                <input id="required16" class="required" type="checkbox">
+                                                <input class="required" type="checkbox">
                                                 <i class="state"></i>
                                             </span>
                                             <b>Custom Switch</b>
@@ -1603,6 +1592,10 @@
                         <div class="text form-light margin-10-b round border-dual ease-form">
                             <input type="text" placeholder="Placeholder">
                         </div>
+                        <div class="text text-icon form-light margin-10-b round border-dual ease-form">
+                            <i class="icon icon-search"></i>
+                            <input type="text" placeholder="With text icon">
+                        </div>
                         <div class="text error form-light margin-10-b round border-dual ease-form">
                             <input type="text" placeholder="Error Form">
                         </div>
@@ -1612,16 +1605,8 @@
                         <div class="text warning form-light margin-10-b round border-dual ease-form">
                             <input type="text" placeholder="Warning Form">
                         </div>
-                        <div class="text warning form-light margin-10-b round no-border ease-form">
+                        <div class="text warning form-light round no-border ease-form">
                             <input type="text" placeholder="Warning Form">
-                        </div>
-                        <div class="text text-icon form-light margin-10-b round border-dual ease-form">
-                            <i class="icon icon-search"></i>
-                            <input type="text" placeholder="With text icon">
-                        </div>
-                        <div class="text text-lg text-icon-l form-light round border-dual ease-form">
-                            <i class="icon icon-search"></i>
-                            <input type="text" placeholder="With text icon">
                         </div>
 
                         <span class="sp30"></span>
@@ -1733,22 +1718,24 @@
 
                         </div>
 
-                        <label class="form-label">Captcha Example</label>
+                        <span class="sp20"></span>
+
+                        <label class="form-label">Captcha</label>
                         <div class="form-holder col-static no-fluid">
 
-                            <div class="col-100">
-                                <img class="border-dual border-light round ease-border" src="img/captcha.jpg" alt="">
+                            <div class="col-75">
+                                <img class="img-fluid border-dual border-light round ease-border" src="img/captcha.jpg" alt="">
                             </div>
-                            <div class="col-42">
-                                <button class="btn btn-lg btn-square btn-ghost border-dual border-light ease-btn">
+                            <div class="col-32">
+                                <button class="btn btn-square btn-ghost border-dual border-light ease-btn">
                                     <span class="animate-spin"> <!-- for loading process toggle "animate-spin" -->
-                                        <i class="icon icon-sync no-opacity"></i>
+                                        <i class="icon icon-sm icon-sync no-opacity"></i>
                                     </span>
                                 </button>
                             </div>
                             <div class="row row-no-gap">
                                 <div class="col-12">
-                                    <div class="text text-lg border-dual round form-light ease-form">
+                                    <div class="text border-dual round form-light ease-form">
                                         <input type="text" maxlength="4" placeholder="Please enter code">
                                     </div>
                                 </div>
