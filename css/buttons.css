@@ -24,6 +24,11 @@ input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .btn .icon-sm { vertical-align: -.2em; }
 .btn .icon-xs { vertical-align: -.1em; }
 
+.btn .right.icon { margin-top: 3px; margin-bottom: 3px; }
+.btn .right.icon-sm { margin-top: 4px; margin-bottom: 4px; }
+.btn-sm .right.icon { margin-top: 1px; margin-bottom: 1px; }
+.btn-sm .right.icon-sm { margin-top: 2px; margin-bottom: 2px; }
+
 .btn .icon:not(.no-opacity) { opacity: .45; }
 .btn.ui-dark .icon,.btn.ui-x-dark .icon { opacity: 1; }
 html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hover .icon { opacity: 1 !important; }
