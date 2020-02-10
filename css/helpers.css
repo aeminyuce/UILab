@@ -108,9 +108,9 @@ html:not(.mobile) .hover-l-more:hover,html:not(.mobile) .hover-l-more-1st > *:ho
 .sp1,.sp2,.sp3,.sp4,.sp5,.sp10,.sp15,.sp20,.sp25,.sp30 { width: 100%; display: block !important; clear: both !important; }
 .sp1 { height: 1px; } .sp2 { height: 2px; } .sp3 { height: 3px; } .sp4 { height: 4px; } .sp5 { height: 5px; } .sp10 { height: 10px; } .sp15 { height: 15px; } .sp20 { height: 20px; } .sp25 { height: 25px; } .sp30 { height: 30px; }
 
-.align-r,.align-r * { text-align: right; }
-.align-l,.align-l * { text-align: left; }
-.align-c,.align-c * { text-align: center; }
+.align-r,.align-r * { text-align: right !important; }
+.align-l,.align-l * { text-align: left !important; }
+.align-c,.align-c * { text-align: center !important; }
 
 .align-justify { text-align: justify !important; }
 .align-nowrap { white-space: nowrap !important; }
@@ -139,7 +139,7 @@ html:not(.mobile) .hover-l-more:hover,html:not(.mobile) .hover-l-more-1st > *:ho
     .md-no-float { float: none !important; }
     .md-clearfix { clear: both !important; display: block; }
 
-    .md-align-c,.md-align-c * { text-align: center; } .md-align-l,.md-align-l * { text-align: left; } .md-align-r,.md-align-r * { text-align: right; }
+    .md-align-c,.md-align-c * { text-align: center !important; } .md-align-l,.md-align-l * { text-align: left !important; } .md-align-r,.md-align-r * { text-align: right !important; }
 }
 @media (max-width: 767px) {
     .sm-full-width { width: 100% !important; }
@@ -156,8 +156,8 @@ html:not(.mobile) .hover-l-more:hover,html:not(.mobile) .hover-l-more-1st > *:ho
     .md-clearfix { clear: both !important; }
     .sm-clearfix { clear: both !important; }
 
-    .md-align-c,.md-align-c * { text-align: center; } .md-align-l,.md-align-l * { text-align: left; } .md-align-r,.md-align-r * { text-align: right; }
-    .sm-align-c,.sm-align-c * { text-align: center; } .sm-align-l,.sm-align-l * { text-align: left; } .sm-align-r,.sm-align-r * { text-align: right; }
+    .md-align-c,.md-align-c * { text-align: center !important; } .md-align-l,.md-align-l * { text-align: left !important; } .md-align-r,.md-align-r * { text-align: right !important; }
+    .sm-align-c,.sm-align-c * { text-align: center !important; } .sm-align-l,.sm-align-l * { text-align: left !important; } .sm-align-r,.sm-align-r * { text-align: right !important; }
 }
 @media (max-width: 480px) {
     .xs-full-width { width: 100% !important; }
@@ -173,15 +173,15 @@ html:not(.mobile) .hover-l-more:hover,html:not(.mobile) .hover-l-more-1st > *:ho
     .sm-clearfix { clear: both !important; }
     .xs-clearfix { clear: both !important; }
 
-    .md-align-c,.md-align-c * { text-align: center; } .md-align-l,.md-align-l * { text-align: left; } .md-align-r,.md-align-r * { text-align: right; }
-    .sm-align-c,.sm-align-c * { text-align: center; } .sm-align-l,.sm-align-l * { text-align: left; } .sm-align-r,.sm-align-r * { text-align: right; }
-    .xs-align-c,.xs-align-c * { text-align: center; } .xs-align-l,.xs-align-l * { text-align: left; } .xs-align-r,.xs-align-r * { text-align: right; }
+    .md-align-c,.md-align-c * { text-align: center !important; } .md-align-l,.md-align-l * { text-align: left !important; } .md-align-r,.md-align-r * { text-align: right !important; }
+    .sm-align-c,.sm-align-c * { text-align: center !important; } .sm-align-l,.sm-align-l * { text-align: left !important; } .sm-align-r,.sm-align-r * { text-align: right !important; }
+    .xs-align-c,.xs-align-c * { text-align: center !important; } .xs-align-l,.xs-align-l * { text-align: left !important; } .xs-align-r,.xs-align-r * { text-align: right !important; }
 }
 @media (max-width: 1199px) {
     .visible-lg { display: none !important; }
     .lg-clearfix { clear: both !important; display: block; }
 
-    .lg-align-c,.lg-align-c * { text-align: center; } .lg-align-l,.lg-align-l * { text-align: left; } .lg-align-r,.lg-align-r * { text-align: right; }
+    .lg-align-c,.lg-align-c * { text-align: center !important; } .lg-align-l,.lg-align-l * { text-align: left !important; } .lg-align-r,.lg-align-r * { text-align: right !important; }
 }
 @media (max-width: 1679px) {
     .visible-xl { display: none !important; }
@@ -190,5 +190,5 @@ html:not(.mobile) .hover-l-more:hover,html:not(.mobile) .hover-l-more-1st > *:ho
     .hidden-xl { display: none !important; }
     .xl-no-float { float: none !important; }
 
-    .xl-align-c,.xl-align-c * { text-align: center; } .xl-align-l,.xl-align-l * { text-align: left; } .xl-align-r,.xl-align-r * { text-align: right; }
+    .xl-align-c,.xl-align-c * { text-align: center !important; } .xl-align-l,.xl-align-l * { text-align: left !important; } .xl-align-r,.xl-align-r * { text-align: right !important; }
 }

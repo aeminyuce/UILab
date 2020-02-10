@@ -8,9 +8,11 @@
 input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .btn.border { padding-top: 5px; padding-bottom: 5px; }
 .btn.border-dual { padding-top: 4px; padding-bottom: 4px; }
-.btn-square { text-align: center !important; min-width: auto !important; width: 32px; max-width: auto !important; }
 .btn:not([class*="border"]) { border-width: 0; }
 .btn:not(.btn-multi) { white-space: nowrap; }
+
+.btn-square { min-width: auto !important; width: 32px; max-width: auto !important; }
+.btn-square:not([class*="align-"]) { text-align: center !important; }
 
 .btn.btn-multi { word-wrap: break-word; height: auto !important; min-height: 32px; }
 .btn-sm.btn-multi { min-height: 26px; }
