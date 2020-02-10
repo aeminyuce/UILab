@@ -26,10 +26,10 @@ input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .btn .icon-sm { vertical-align: -.2em; }
 .btn .icon-xs { vertical-align: -.1em; }
 
-.btn .right.icon { margin-top: 3px; margin-bottom: 3px; }
-.btn .right.icon-sm { margin-top: 4px; margin-bottom: 4px; }
+.btn .right.icon,.btn .right.icon-sm { margin-top: 3px; margin-bottom: 3px; }
 .btn-sm .right.icon { margin-top: 1px; margin-bottom: 1px; }
-.btn-sm .right.icon-sm { margin-top: 2px; margin-bottom: 2px; }
+.btn-sm .right.icon-sm,.btn-sm .right.icon-xs,.btn-xs .right.icon-xxs,.btn-xxs .right.icon-xxs { margin-top: 2px; margin-bottom: 2px; }
+.btn .right.icon-lg { margin-top: 0; margin-bottom: 0; }
 
 .btn .icon:not(.no-opacity) { opacity: .45; }
 .btn.ui-dark .icon,.btn.ui-x-dark .icon { opacity: 1; }
