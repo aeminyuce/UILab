@@ -70,7 +70,7 @@
                     <div class="padding-30-v theme-default">
 
                         <b class="margin-5-b block">Example:</b>
-                        <pre class="round margin-5-b">ajax({
+                        <pre class="round margin-5-b scroll-v">ajax({
 
     type : 'GET',
     url : 'yourfile.php',
@@ -94,7 +94,7 @@
                         <span class="sp30"></span>
 
                         <b class="margin-5-b block">JSON Example:</b>
-                        <pre class="round margin-5-b">var myJSONRequests = [];
+                        <pre class="round margin-5-b scroll-v">var myJSONRequests = [];
 
 ajax({
 
@@ -106,7 +106,7 @@ ajax({
     beforesend: function (xhr) {
 
         // abort still processing previous json requests (optional)
-        for (n = 0; n < myJSONRequests.length; n += 1) {
+        for (n = 0; n &lt; myJSONRequests.length; n += 1) {
 
             myJSONRequests[n].abort();
             myJSONRequests.splice(n, 1);
@@ -128,7 +128,7 @@ ajax({
                 response = JSON.parse(response);
                 if (response.length !== 'undefined') {
 
-                    for (i = 0; i < response.length; i += 1) {
+                    for (i = 0; i &lt; response.length; i += 1) {
                         if (response[i] !== null) {
                             console.log(response[i].yourJSONvalue);
                         }
