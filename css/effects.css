@@ -34,7 +34,7 @@
 .ease-default,.ease-default[class*="ease-1st-"] > *,.ease-default[class*="ease-2nd-"] > * > * { transition-duration: .15s !important; transition-timing-function: ease !important; }
 
 .no-effects,.no-effects:before,.no-effects:after,.no-effects *,.no-effects *:before,.no-effects *:after { animation: none !important; }
-.pause-effects,.pause-effects:before,.pause-effects:after,.pause-effects *,.no-effects *:before,.pause-effects *:after {  animation-play-state: paused !important; }
+.pause-effects,.pause-effects:before,.pause-effects:after,.pause-effects *,.no-effects *:before,.pause-effects *:after { animation-play-state: paused !important; }
 
 @media (prefers-reduced-motion:reduce) {
   *,*:before,*:after { animation: none !important; }
