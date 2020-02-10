@@ -2,9 +2,10 @@
 [class*="ease-"],[class*="ease-1st-"] > *,[class*="ease-2nd-"] > * > * { transition-duration: .15s; transition-timing-function: ease-out; }
 
 .no-effects,.no-effects:before,.no-effects:after,.no-effects *,.no-effects *:before,.no-effects *:after { transition-property: none !important; }
+.pause-effects,.pause-effects:before,.pause-effects:after,.pause-effects *,.pause-effects *:before,.pause-effects *:after { transition-property: none !important; }
 
 @media (prefers-reduced-motion:reduce) {
-  .no-effects,.no-effects:before,.no-effects:after,.no-effects *,.no-effects *:before,.no-effects *:after { transition-property: none !important; }
+  *,*:before,*:after { transition-property: none !important; }
 }
 
 .ease-fast,.ease-fast[class*="ease-1st-"] > *,.ease-fast[class*="ease-2nd-"] > * > * { transition-duration: .1s; }
@@ -33,10 +34,10 @@
 .ease-default,.ease-default[class*="ease-1st-"] > *,.ease-default[class*="ease-2nd-"] > * > * { transition-duration: .15s !important; transition-timing-function: ease !important; }
 
 .no-effects,.no-effects:before,.no-effects:after,.no-effects *,.no-effects *:before,.no-effects *:after { animation: none !important; }
+.pause-effects,.pause-effects:before,.pause-effects:after,.pause-effects *,.no-effects *:before,.pause-effects *:after {  animation-play-state: paused !important; }
 
 @media (prefers-reduced-motion:reduce) {
-  [class*="animate-"],[class*="animate-"]:before,[class*="animate-"]:after,
-  [class*="animate-"] *,[class*="animate-"] *:before,[class*="animate-"] *:after { transition-property: none !important; }
+  *,*:before,*:after { animation: none !important; }
 }
 
 @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }

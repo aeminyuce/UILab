@@ -17,10 +17,10 @@
 .no-effects .ease-range::-moz-range-track { transition-property: none; }
 
 @media (prefers-reduced-motion:reduce) {
-    .no-effects .ease-range::-webkit-slider-thumb { transition-property: none; }
-    .no-effects .ease-range::-moz-range-thumb { transition-property: none; }
-    .no-effects .ease-range::-webkit-slider-runnable-track { transition-property: none; }
-    .no-effects .ease-range::-moz-range-track { transition-property: none; }
+    .ease-range::-webkit-slider-thumb { transition-property: none; }
+    .ease-range::-moz-range-thumb { transition-property: none; }
+    .ease-range::-webkit-slider-runnable-track { transition-property: none; }
+    .ease-range::-moz-range-track { transition-property: none; }
 }
 
 .text,.textarea,.select,.select-multi { border: solid 1px rgba(0,0,0,.15); overflow: hidden; display: block; position: relative; }

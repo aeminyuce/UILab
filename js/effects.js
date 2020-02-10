@@ -45,9 +45,9 @@ var effects = {
             // wait page preload to start transitions
             if (effects.preload) {
 
-                events.addClass(document, 'no-effects');
+                events.addClass(document, 'pause-effects');
                 setTimeout(function () {
-                    events.removeClass(document, 'no-effects');
+                    events.removeClass(document, 'pause-effects');
                 }, 300);
 
             }
@@ -63,10 +63,10 @@ var effects = {
             if ((eName === 'scroll' && effects.pauseScroll) || (eName === 'resize' && effects.pauseResize)) {
 
                 clearTimeout(pauseTransitions);
-                events.addClass(document, 'no-effects');
+                events.addClass(document, 'pause-effects');
 
                 pauseTransitions = setTimeout(function () {
-                    events.removeClass(document, 'no-effects');
+                    events.removeClass(document, 'pause-effects');
                 }, 300);
 
             }
