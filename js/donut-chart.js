@@ -8,7 +8,7 @@ var donutChart = {};
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, setTimeout, ajax, useragents */
+    /*globals document, selector, events, setTimeout, ajax, useragents */
 
     var loadCharts;
 
@@ -68,37 +68,10 @@ var donutChart = {};
                         } else { arrAngle.push(0); }
 
                         if (useragents.ie) {
-
-                            events.addClass(that, 'loaded');
-
-                            that.style.transitionDuration = '.15s';
                             chart[i].style.height = chart[i].offsetWidth + 'px'; // transformed circle has highest height on IE
-
-                        } else {
-
-                            if (events.hasClass(document, 'no-effects')) {
-
-                                events.addClass(that, 'loaded');
-
-                                setTimeout(function () {
-                                    that.style.transitionDuration = '.15s';
-                                }, 2000);
-
-                            } else { // wait for page preload
-
-                                setTimeout(function () {
-
-                                    events.addClass(that, 'loaded');
-
-                                    setTimeout(function () {
-                                        that.style.transitionDuration = '.15s';
-                                    }, 2000);
-
-                                }, 400);
-
-                            }
-
                         }
+
+                        events.addClass(that, 'loaded');
 
                     });
 
@@ -128,8 +101,6 @@ var donutChart = {};
             }, 0);
 
             if (e.type === 'mouseleave') {
-
-                events.removeClass(chart, 'active');
                 msg.innerHTML = msg.getAttribute('data-msg');
 
             } else {
@@ -163,7 +134,6 @@ var donutChart = {};
                     }
 
                     events.addClass(that, 'selected');
-                    events.addClass(chart, 'active');
 
                 }, 0);
 
