@@ -1,5 +1,5 @@
 <div class="col-4 col-sm-6">
-    <a class="full-height padding-15 no-padding-t card round shadow-lg ease-layout" href="#">
+    <a class="full-h padding-15 no-padding-t card round shadow-lg ease-layout" href="#">
         <span class="photo-slider margin-20-b">
             <i class="slider-loader icon icon-xl icon-loader-line"></i>
             <img src="img/product_01.png"
@@ -36,7 +36,7 @@
     </a>
 </div>
 <div class="col-4 col-sm-6">
-    <a class="full-height padding-15 no-padding-t card round shadow-lg ease-layout" href="#">
+    <a class="full-h padding-15 no-padding-t card round shadow-lg ease-layout" href="#">
         <span class="photo-slider margin-20-b">
             <i class="slider-loader icon icon-xl icon-loader-line"></i>
             <img src="img/product_02.png"
@@ -72,7 +72,7 @@
     </a>
 </div>
 <div class="col-4 col-sm-6">
-    <a class="full-height padding-15 no-padding-t card round shadow-lg ease-layout" href="#">
+    <a class="full-h padding-15 no-padding-t card round shadow-lg ease-layout" href="#">
         <span class="photo-slider margin-20-b">
             <i class="slider-loader icon icon-xl icon-loader-line"></i>
             <img src="img/product_03.png"
@@ -108,7 +108,7 @@
     </a>
 </div>
 <div class="col-4 col-sm-6">
-    <a class="full-height padding-15 no-padding-t card round shadow-lg ease-layout" href="#">
+    <a class="full-h padding-15 no-padding-t card round shadow-lg ease-layout" href="#">
         <span class="photo-slider margin-20-b">
             <i class="slider-loader icon icon-xl icon-loader-line"></i>
             <img src="img/product_04.png"
@@ -141,7 +141,7 @@
     </a>
 </div>
 <div class="col-4 col-sm-6">
-    <a class="full-height padding-15 no-padding-t card round shadow-lg ease-layout" href="#">
+    <a class="full-h padding-15 no-padding-t card round shadow-lg ease-layout" href="#">
         <span class="photo-slider margin-20-b">
             <i class="slider-loader icon icon-xl icon-loader-line"></i>
             <img src="img/product_05.png"
@@ -174,7 +174,7 @@
     </a>
 </div>
 <div class="col-4 col-sm-6">
-    <a class="full-height padding-15 no-padding-t card round shadow-lg ease-layout" href="#">
+    <a class="full-h padding-15 no-padding-t card round shadow-lg ease-layout" href="#">
         <span class="photo-slider margin-20-b">
             <i class="slider-loader icon icon-xl icon-loader-line"></i>
             <img
