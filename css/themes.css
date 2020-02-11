@@ -16,43 +16,43 @@
 .theme-gray.ui-border,.theme-gray .ui-border:not([class*="theme-"]) { border-color: #ccc; }
 .theme-gray.ui-x-dark,.theme-gray .ui-x-dark:not([class*="theme-"]) { background-color: #aaa; }
 
-.theme-green.ui-x-light,.theme-green .ui-x-light:not([class*="theme-"]) { background-color: #d8fcdc; }
-.theme-green.ui-light,.theme-green .ui-light:not([class*="theme-"]) { background-color: #adf7b5; }
+.theme-green.ui-x-light,.theme-green .ui-x-light:not([class*="theme-"]) { background-color: rgb(216,252,220,.35); }
+.theme-green.ui-light,.theme-green .ui-light:not([class*="theme-"]) { background-color: rgb(173,247,181,.35); }
 .theme-green.ui-dark,.theme-green .ui-dark:not([class*="theme-"]) { background-color: #2dbd3a; }
 .theme-green.ui-text,.theme-green .ui-text:not([class*="theme-"]) { color: #2dbd3a; }
 .theme-green.ui-border,.theme-green .ui-border:not([class*="theme-"]) { border-color: #2dbd3a; }
 .theme-green.ui-x-dark,.theme-green .ui-x-dark:not([class*="theme-"]) { background-color: #13a420; }
 
-.theme-yellow.ui-x-light,.theme-yellow .ui-x-light:not([class*="theme-"]) { background-color: #fff4dc; }
-.theme-yellow.ui-light,.theme-yellow .ui-light:not([class*="theme-"]) { background-color: #ffdfa2; }
+.theme-yellow.ui-x-light,.theme-yellow .ui-x-light:not([class*="theme-"]) { background-color: rgb(255,244,220,.35); }
+.theme-yellow.ui-light,.theme-yellow .ui-light:not([class*="theme-"]) { background-color: rgb(255,223,162,.35); }
 .theme-yellow.ui-dark,.theme-yellow .ui-dark:not([class*="theme-"]) { background-color: #ffa600; }
 .theme-yellow.ui-text,.theme-yellow .ui-text:not([class*="theme-"]) { color: #ffa600; }
 .theme-yellow.ui-border,.theme-yellow .ui-border:not([class*="theme-"]) { border-color: #ffa600; }
 .theme-yellow.ui-x-dark,.theme-yellow .ui-x-dark:not([class*="theme-"]) { background-color: #d98d00; }
 
-.theme-orange.ui-x-light,.theme-orange .ui-x-light:not([class*="theme-"]) { background-color: #ffebd8; }
-.theme-orange.ui-light,.theme-orange .ui-light:not([class*="theme-"]) { background-color: #ffcea1; }
+.theme-orange.ui-x-light,.theme-orange .ui-x-light:not([class*="theme-"]) { background-color: rgb(255,244,220,.35); }
+.theme-orange.ui-light,.theme-orange .ui-light:not([class*="theme-"]) { background-color: rgb(255,206,161,.35); }
 .theme-orange.ui-dark,.theme-orange .ui-dark:not([class*="theme-"]) { background-color: #f47500; }
 .theme-orange.ui-text,.theme-orange .ui-text:not([class*="theme-"]) { color: #f47500; }
 .theme-orange.ui-border,.theme-orange .ui-border:not([class*="theme-"]) { border-color: #f47500; }
 .theme-orange.ui-x-dark,.theme-orange .ui-x-dark:not([class*="theme-"]) { background-color: #dd6a00; }
 
-.theme-red.ui-x-light,.theme-red .ui-x-light:not([class*="theme-"]) { background-color: #ffd9dc; }
-.theme-red.ui-light,.theme-red .ui-light:not([class*="theme-"]) { background-color: #ffa7ad; }
+.theme-red.ui-x-light,.theme-red .ui-x-light:not([class*="theme-"]) { background-color: rgb(255,217,220,.35); }
+.theme-red.ui-light,.theme-red .ui-light:not([class*="theme-"]) { background-color: rgb(255,167,173,.35); }
 .theme-red.ui-dark,.theme-red .ui-dark:not([class*="theme-"]) { background-color: #dc000f; }
 .theme-red.ui-text,.theme-red .ui-text:not([class*="theme-"]) { color: #dc000f; }
 .theme-red.ui-border,.theme-red .ui-border:not([class*="theme-"]) { border-color: #dc000f; }
 .theme-red.ui-x-dark,.theme-red .ui-x-dark:not([class*="theme-"]) { background-color: #bb000d; }
 
-.theme-default.ui-x-light,.theme-default .ui-x-light:not([class*="theme-"]) { background-color: #dce4fd; }
-.theme-default.ui-light,.theme-default .ui-light:not([class*="theme-"]) { background-color: #a8baf5; }
+.theme-default.ui-x-light,.theme-default .ui-x-light:not([class*="theme-"]) { background-color: rgba(220,228,253,.35); }
+.theme-default.ui-light,.theme-default .ui-light:not([class*="theme-"]) { background-color: rgba(168,186,254,.35); }
 .theme-default.ui-dark,.theme-default .ui-dark:not([class*="theme-"]) { background-color: #3250b5; }
 .theme-default.ui-text,.theme-default .ui-text:not([class*="theme-"]) { color: #3250b5; }
 .theme-default.ui-border,.theme-default .ui-border:not([class*="theme-"]) { border-color: #3250b5; }
 .theme-default.ui-x-dark,.theme-default .ui-x-dark:not([class*="theme-"]) { background-color: #1e3992; }
 
-.theme-default2.ui-x-light,.theme-default2 .ui-x-light:not([class*="theme-"]) { background-color: #c8e7ff; }
-.theme-default2.ui-light,.theme-default2 .ui-light:not([class*="theme-"]) { background-color: #a3d7ff; }
+.theme-default2.ui-x-light,.theme-default2 .ui-x-light:not([class*="theme-"]) { background-color: rgba(200,231,255,.35); }
+.theme-default2.ui-light,.theme-default2 .ui-light:not([class*="theme-"]) { background-color: rgba(163,215,255,.35); }
 .theme-default2.ui-dark,.theme-default2 .ui-dark:not([class*="theme-"]) { background-color: #2ea3ff; }
 .theme-default2.ui-text,.theme-default2 .ui-text:not([class*="theme-"]) { color: #2ea3ff; }
 .theme-default2.ui-border,.theme-default2 .ui-border:not([class*="theme-"]) { border-color: #2ea3ff; }
