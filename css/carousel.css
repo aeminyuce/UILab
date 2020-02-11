@@ -7,12 +7,12 @@
 .carousel:not(.active) { display: none; }
 
 .carousel-slider { display: flex; flex-wrap: wrap; }
-.carousel-slider > .content { flex-grow: 1; }
-.carousel:not(.active) .carousel-slider > .content { width: 1px; }
-.carousel-slider > .content img.img { width: 100%; height: auto; }
+.carousel-slider > .slide-content { flex-grow: 1; }
+.carousel:not(.active) .carousel-slider > .slide-content { width: 1px; }
+.carousel-slider > .slide-content img.img { width: 100%; height: auto; }
 
 .carousel-slider { display: flex !important; flex-wrap: wrap; }
-.carousel-slider > .content { flex-direction: column; }
+.carousel-slider > .slide-content { flex-direction: column; }
 
 .carousel .scroll > *,.carousel .scroll-v > *,.carousel .scroll-h > * { transform: translateZ(0); } /* ios: disappearing elements fix */
 
