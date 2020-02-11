@@ -31,28 +31,19 @@ var lineCharts = {
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, ajax */
+    /*globals window, document, selector, events, setTimeout, clearTimeout, ajax */
 
     var loadCharts;
-
-    function chartsResizer() {
-
-        var charts = selector('.line-charts.loaded');
-
-        if (charts.length === 0) { return; }
-        loadCharts(charts, true);
-
-    }
 
     // load charts
     lineCharts.Start = function () {
 
-        var i, j, k, charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, paths, circles, total, name;
+        var i, j, k, charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, paths, circles, total, name, resizeTimer;
 
         loadCharts = function (that, resizer) {
 
-            if (that !== undefined) {
-                charts = that;
+            if (that === 'loaded') {
+                charts = selector('.line-charts.loaded');
 
             } else {
                 charts = selector('.line-charts:not(.loaded)');
@@ -72,7 +63,13 @@ var lineCharts = {
                 data.backup = [];
 
                 if (resizer !== undefined && resizer) {
+
                     events.addClass(this, 'loaded resized');
+                    clearTimeout(resizeTimer);
+
+                    resizeTimer = setTimeout(function () {
+                        events.removeClass(charts, 'resized');
+                    }, 300);
 
                 } else {
                     events.addClass(this, 'loaded');
@@ -413,19 +410,19 @@ var lineCharts = {
 
         };
 
-        loadCharts();
+        loadCharts('not-loaded'); // show not loaded charts
 
     };
 
     // Loaders
     events.onload(lineCharts.Start);
 
-    events.on(window, 'resize', chartsResizer);
-    events.on(document, 'domChange', chartsResizer);
+    events.on(window, 'resize', function () { loadCharts('loaded', true); }); // resize loaded charts
+    events.on(document, 'domChange', function () { loadCharts('loaded'); }); // resize loaded charts
 
     // ajax callback loader: requires Ajax JS
     events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.classNames.indexOf('line-charts') > -1) { loadCharts(); }
+        if (ajax.classNames.indexOf('line-charts') > -1) { loadCharts('not-loaded'); } // show not loaded charts
     });
 
 }());
