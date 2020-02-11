@@ -17,7 +17,7 @@
 .mobile-menu .dropdown .toggle-icon { position: absolute; top: 50%; right: 10px; transform: translateY(-50%); }
 .mobile-menu .dropdown.open-ease .toggle-icon { position: absolute; top: 50%; right: 10px; transform: translateY(-50%) rotate(-180deg); }
 
-.dropdown .content { background-color: #fff; overflow-x: hidden !important; overflow-y: auto !important; position: absolute; transform-origin: top left; -webkit-overflow-scrolling: touch; }
+.dropdown .content { background-color: #fff; overflow-x: hidden; overflow-y: auto; position: absolute; transform-origin: top left; -webkit-overflow-scrolling: touch; }
 .dropdown:not(.nav) .content { max-width: 744px; }
 .dropdown.menu-c .content { transform-origin: top center; }
 .dropdown.menu-l .content { transform-origin: top right; }
