@@ -17,15 +17,15 @@ var dropdown = {};
 
     function dropdownClose() {
 
-        var t, list;
+        var that, list;
 
-        t = selector('.dropdown.open');
-        events.removeClass(t, 'open-ease');
+        that = selector('.dropdown.open');
+        events.removeClass(that, 'open-ease');
 
         clearTimeout(dropdownCloseTimer);
         dropdownCloseTimer = setTimeout(function () {
 
-            events.each(t, function () {
+            events.each(that, function () {
 
                 list = selector('.content', this)[0];
 
@@ -34,13 +34,14 @@ var dropdown = {};
 
                 } else {
 
+                    list.style.removeProperty('max-height');
                     list.style.removeProperty('right');
                     list.style.removeProperty('margin-left');
                     list.style.removeProperty('transform-origin');
 
                 }
 
-                events.removeClass(t, 'menu-t open');
+                events.removeClass(that, 'menu-t open');
 
             });
 
@@ -50,15 +51,15 @@ var dropdown = {};
 
     dropdown.Start = function () {
 
-        function dropdownOpen(e, t) {
+        function dropdownOpen(e, that) {
 
             e.preventDefault();
             e.stopPropagation();
 
-            var list, alignSize, parent, btnHeight, subMenuHeight, offset, listWidth;
+            var list, alignSize, parent, offset, setMaxH;
 
             dropdownClose();
-            parent = t.parentNode;
+            parent = that.parentNode;
 
             clearTimeout(dropdownOpenTimer);
             dropdownOpenTimer = setTimeout(function () {
@@ -73,16 +74,15 @@ var dropdown = {};
                 offset = parent.getBoundingClientRect();
                 list = selector('.content', parent)[0];
 
-                if (events.closest(t, '.mobile-menu')[0] === undefined) { // diable all positionings on mobile menus
+                if (events.closest(that, '.mobile-menu')[0] === undefined) { // diable all positionings on mobile menus
 
                     listStyles = list.style.length;
-                    listWidth = list.offsetWidth;
 
-                    if (window.innerWidth > 767) { // menu positioning: active
+                    if (window.innerWidth > 767) { // menu horizontal positioning: active
 
-                        if (events.hasClass(parent, 'menu-l') || (offset.left + listWidth + 15) > window.innerWidth) { // 15px: scrollbar size
+                        if (events.hasClass(parent, 'menu-l') || (offset.left + list.offsetWidth + 15) > window.innerWidth) { // 15px: scrollbar size
 
-                            if (offset.left - (listWidth - parent.offsetWidth) >= 0) {
+                            if (offset.left - (list.offsetWidth - parent.offsetWidth) >= 0) {
 
                                 list.style.right = 0;
                                 list.style.left = 'inherit';
@@ -93,7 +93,7 @@ var dropdown = {};
 
                         } else if (events.hasClass(parent, 'menu-c')) {
 
-                            alignSize = Math.abs(listWidth - parent.offsetWidth) / 2;
+                            alignSize = Math.abs(list.offsetWidth - parent.offsetWidth) / 2;
 
                             if ((offset.left - alignSize > 0) && (alignSize > 0)) {
                                 list.style.marginLeft = -alignSize + 'px';
@@ -101,7 +101,7 @@ var dropdown = {};
 
                         }
 
-                    } else { // menu positioning: passive
+                    } else { // menu horizontal positioning: passive
 
                         list.style.marginLeft = -(offset.left - 10) + 'px';
                         list.style.width = (window.innerWidth - 20) + 'px';
@@ -110,18 +110,29 @@ var dropdown = {};
 
                 }
 
-                btnHeight = t.offsetHeight;
-                subMenuHeight = list.offsetHeight;
+                setMaxH = function (pos) { // set max-height of list
 
-                if (offset.top + parseInt(btnHeight + subMenuHeight, 10) >= window.innerHeight) {
+                    if (pos === 'top') {
+                        list.style.maxHeight = window.innerHeight - 21 + 'px'; // 21: margin-top + scrollbar size
 
-                    if (offset.top - parseInt(btnHeight + subMenuHeight, 10) + btnHeight > 0) {
+                    } else {
+                        list.style.maxHeight = window.innerHeight - (offset.top + that.offsetHeight + 21) + 'px'; // 21: margin-top + scrollbar size
+                    }
+
+                };
+
+                if (offset.top + parseInt(that.offsetHeight + list.offsetHeight, 10) >= window.innerHeight) { // menu vertical positioning
+
+                    if (offset.top - parseInt(that.offsetHeight + list.offsetHeight, 10) + that.offsetHeight > 0) {
 
                         events.addClass(parent, 'menu-t');
                         list.style.removeProperty('transform-origin');
-                    }
 
-                }
+                        setMaxH('top');
+
+                    } else { setMaxH('default'); }
+
+                } else { setMaxH('default'); }
 
             }, 0); // do not remove zero timer
 

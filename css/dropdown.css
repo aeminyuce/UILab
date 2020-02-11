@@ -17,16 +17,13 @@
 .mobile-menu .dropdown .toggle-icon { position: absolute; top: 50%; right: 10px; transform: translateY(-50%); }
 .mobile-menu .dropdown.open-ease .toggle-icon { position: absolute; top: 50%; right: 10px; transform: translateY(-50%) rotate(-180deg); }
 
-.dropdown .content { max-width: 744px; background-color: #fff; position: absolute; transform-origin: top left; }
+.dropdown .content { background-color: #fff; overflow-x: hidden !important; overflow-y: auto !important; position: absolute; transform-origin: top left; -webkit-overflow-scrolling: touch; }
+.dropdown:not(.nav) .content { max-width: 744px; }
 .dropdown.menu-c .content { transform-origin: top center; }
 .dropdown.menu-l .content { transform-origin: top right; }
 .dropdown ul.content { list-style: none; padding: 0; margin-bottom: 0; }
 .mobile-menu .dropdown .content { position: static; box-shadow: none; transform-origin: top center !important; }
 .mobile-menu .dropdown:not(:last-child) .content { margin-bottom: 10px !important; }
-
-.dropdown .content:not([class*="border"]).scroll-v { max-height: 204px; }
-.dropdown .content.border:not(.border-dual).scroll-v { max-height: 206px; }
-.dropdown .content.border-dual.scroll-v { max-height: 208px; }
 
 .dropdown:not(.open) .content { display: none; }
 .dropdown:not(.open-ease) .content { opacity: 0; transform: scale(.95); }
