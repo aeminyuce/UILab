@@ -31,8 +31,8 @@
 .table-scroll > .table tr > * { white-space: nowrap; }
 
 .table-nowrap th,.table-nowrap td { white-space: nowrap; text-overflow: ''; overflow: hidden; }
-.table-striped tr:nth-child(even):not([class*="ui-"]) { background-color: rgba(0,0,0,.025); }
 
+.table-striped tr:nth-child(even):not([class*="ui-"]) { background-color: rgba(0,0,0,.025); }
 html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover { background-color: rgba(0,0,0,.06); }
 
 @media (max-width: 959px) {
