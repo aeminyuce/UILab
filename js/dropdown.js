@@ -112,6 +112,8 @@ var dropdown = {};
 
                 setMaxH = function (pos) { // set max-height of list
 
+                    if (events.hasClass(list, 'no-scroll')) { return; }
+
                     if (pos === 'top') {
                         list.style.maxHeight = window.innerHeight - 21 + 'px'; // 21: margin-top + scrollbar size
 
