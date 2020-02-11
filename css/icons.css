@@ -4,8 +4,11 @@
 .icon { font-family: 'font-icons' !important; font-size: 18px; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; text-align: center !important; vertical-align: middle; line-height: 1; width: 18px; height: 18px; display: inline-block; }
 button.icon { background-color: transparent; }
 
-h1 > .icon:first-child,h2 > .icon:first-child,h3 > .icon:first-child,h4 > .icon:first-child,h5 > .icon:first-child,h6 > .icon:first-child { margin-right: 5px; }
-h1 > .icon-lg:first-child,h2 > .icon-lg:first-child,h3 > .icon-lg:first-child,h4 > .icon-lg:first-child,h5 > .icon-lg:first-child,h6 > .icon-lg:first-child { margin-right: 10px; }
+h1 > .icon:first-child,h2 > .icon:first-child,h3 > .icon:first-child,
+h4 > .icon:first-child,h5 > .icon:first-child,h6 > .icon:first-child { margin-right: 5px; }
+
+h1 > .icon-lg:first-child,h2 > .icon-lg:first-child,h3 > .icon-lg:first-child,
+h4 > .icon-lg:first-child,h5 > .icon-lg:first-child,h6 > .icon-lg:first-child { margin-right: 10px; }
 
 .icons-no-opacity .icon:not(.default-icon) { opacity: 1 !important; }
 
@@ -206,7 +209,6 @@ h1 > .icon-lg:first-child,h2 > .icon-lg:first-child,h3 > .icon-lg:first-child,h4
 .icon-star-half:before { content: "\e05a"; }
 .icon-sticky-note:before { content: "\e05b"; }
 .icon-sticky-note-list:before { content: "\e05c"; }
-.icon-sync:before { content: "\e05d"; }
 .icon-table:before { content: "\e05e"; }
 .icon-tachometer:before { content: "\e05f"; }
 .icon-target:before { content: "\e060"; }
@@ -401,3 +403,4 @@ h1 > .icon-lg:first-child,h2 > .icon-lg:first-child,h3 > .icon-lg:first-child,h4
 .icon-boxes:before { content: "\49"; }
 .icon-trophy:before { content: "\e114"; }
 .icon-trophy-star:before { content: "\e115"; }
+.icon-sync:before { content: "\e05d"; }
