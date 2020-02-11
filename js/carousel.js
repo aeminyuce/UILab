@@ -142,7 +142,7 @@ var carousel = {
 
         var j, slider, contents, nav, col, halfSized, size, navDots, navDotsEl;
 
-        contents = selector('.content', that);
+        contents = selector('.slide-content', that);
         if (contents.length === 0) { return; }
 
         nav = selector('.carousel-nav', that)[0];
@@ -287,7 +287,7 @@ var carousel = {
                 if (nav === undefined) { return; }
 
                 slider = selector('.carousel-slider', that);
-                contents = selector('.content', slider[0]);
+                contents = selector('.slide-content', slider[0]);
 
                 if (contents.length === 0) { return; }
 
@@ -432,7 +432,7 @@ var carousel = {
 
                 counts[j] = 0;
 
-                contents = selector('.content', that);
+                contents = selector('.slide-content', that);
                 if (contents.length === 0) { return; }
 
                 nav = selector('.carousel-nav', that)[0];
@@ -575,7 +575,7 @@ var carousel = {
 
                 slider = selector('.carousel-slider', that)[0];
 
-                contents = selector('.content', that);
+                contents = selector('.slide-content', that);
                 navDotsEl = selector('.carousel-nav .dots i', that);
 
                 halfSized = events.hasClass(that, 'half-sized');
