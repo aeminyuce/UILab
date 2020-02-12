@@ -12,8 +12,6 @@
 .carousel-slider > .slide-content img.img { width: 100%; height: auto; }
 
 .carousel-slider { display: flex !important; flex-wrap: wrap; }
-.carousel-slider > .slide-content { flex-direction: column; }
-
 .carousel .scroll > *,.carousel .scroll-v > *,.carousel .scroll-h > * { transform: translateZ(0); } /* ios: disappearing elements fix */
 
 .carousel .carousel-nav { white-space: nowrap; text-align: center; margin-top: 5px; overflow: hidden; display: block; cursor: default; }
