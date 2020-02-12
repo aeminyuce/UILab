@@ -31,19 +31,24 @@ var lineCharts = {
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, setTimeout, clearTimeout, ajax */
+    /*globals window, document, selector, events, ajax */
 
     var loadCharts;
 
     // load charts
     lineCharts.Start = function () {
 
-        var i, j, k, charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, paths, circles, total, name, resizeTimer;
+        var i, j, k, charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, paths, circles, total, name;
 
-        loadCharts = function (that, resizer) {
+        loadCharts = function (method, resizer) {
 
-            if (that === 'loaded') {
+            if (method === 'loaded') {
                 charts = selector('.line-charts.loaded');
+
+            } else if (method === 'domchange') {
+
+                charts = selector('.line-charts:not(.loaded):not(.resized)');
+                events.removeClass('.line-charts', 'resized');
 
             } else {
                 charts = selector('.line-charts:not(.loaded)');
@@ -63,13 +68,7 @@ var lineCharts = {
                 data.backup = [];
 
                 if (resizer !== undefined && resizer) {
-
                     events.addClass(this, 'loaded resized');
-                    clearTimeout(resizeTimer);
-
-                    resizeTimer = setTimeout(function () {
-                        events.removeClass(charts, 'resized');
-                    }, 300);
 
                 } else {
                     events.addClass(this, 'loaded');
@@ -367,6 +366,9 @@ var lineCharts = {
 
                 // close svg tag
                 html += circles + '</g></svg>';
+                if (data.width === 0) {
+                    events.removeClass(this, 'loaded resized');
+                }
 
                 // create info
                 if (lineCharts.showInfo) {
@@ -418,7 +420,7 @@ var lineCharts = {
     events.onload(lineCharts.Start);
 
     events.on(window, 'resize', function () { loadCharts('loaded', true); }); // resize loaded charts
-    events.on(document, 'domChange', function () { loadCharts('loaded'); }); // resize loaded charts
+    events.on(document, 'domChange', function () { loadCharts('domchange'); }); // resize loaded charts
 
     // ajax callback loader: requires Ajax JS
     events.on(document, 'ajaxCallbacks', function () {

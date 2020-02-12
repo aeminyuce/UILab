@@ -18,15 +18,15 @@
 .line-charts.resized svg path.filled { opacity: .15; }
 
 .line-charts:not(.resized) svg path:not(.dashed):not(.dotted):not(.filled) { stroke-dashoffset: 3000; stroke-dasharray: 3000; }
-.line-charts.loaded:not(.resized) svg path:not(.dashed):not(.dotted):not(.filled) { animation: line-draw 2s .6s ease-in forwards; }
+.line-charts.loaded svg path:not(.dashed):not(.dotted):not(.filled) { animation: line-draw 2s .6s ease-in forwards; }
 
 .line-charts:not(.resized) svg path.dashed,.line-charts:not(.resized) svg path.dotted { stroke-dashoffset: 0; opacity: 0; }
 .line-charts svg path.dashed { stroke-dasharray: 10 5; }
 .line-charts svg path.dotted { stroke-dasharray: 1 5; }
-.line-charts.loaded:not(.resized) svg path.dashed,.line-charts.loaded:not(.resized) svg path.dotted { animation: line-dashed-dotted 1s .6s ease-in forwards; }
+.line-charts.loaded svg path.dashed,.line-charts.loaded:not(.resized) svg path.dotted { animation: line-dashed-dotted 1s .6s ease-in forwards; }
 
 .line-charts:not(.resized) svg path.filled { transform: translateY(15px); opacity: 0; }
-.line-charts.loaded:not(.resized) svg path.filled { animation: line-filled .6s forwards; }
+.line-charts.loaded svg path.filled { animation: line-filled .6s forwards; }
 
 .no-effects .line-charts svg path:not(.dashed):not(.dotted):not(.filled),.ie .line-charts svg path:not(.dashed):not(.dotted):not(.filled) { stroke-dashoffset: 0; }
 .no-effects .line-charts svg path.dashed,.ie .line-charts svg path.dashed { stroke-dasharray: 10 5; opacity: 1; }
@@ -41,7 +41,7 @@
 html:not(.mobile) .line-charts svg circle:hover { stroke-width: 4; }
 
 .line-charts:not(.resized) svg circle { transform: translateY(30px); opacity: 0; }
-.line-charts.loaded:not(.resized) svg circle { animation: line-circles .6s forwards; }
+.line-charts.loaded svg circle { animation: line-circles .6s forwards; }
 
 .no-effects .line-charts svg circle,.ie .line-charts svg circle { transform: translateY(0); opacity: 1; }
 

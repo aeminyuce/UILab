@@ -167,8 +167,11 @@ var mobileMenu = {};
     events.onload(mobileMenu.Start);
     events.on(window, 'resize', function () {
 
-        var panel = selector('.mobile-menu');
-        closeMobileMenu(panel);
+        var panel = selector('.mobile-menu.open');
+
+        if (panel.length > 0) {
+            closeMobileMenu(panel);
+        }
 
     });
 
