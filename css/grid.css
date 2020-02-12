@@ -9,7 +9,7 @@
 .fixed { margin-left: auto; margin-right: auto; }
 .row { margin-right: -10px; margin-left: -10px; display: flex; flex-wrap: wrap; }
 
-[class*="col-"] { min-height: 1px; display: block; flex-direction: column; }
+[class*="col-"] { min-height: 1px; display: block; }
 .row > [class*="col-"]:not(.col-static) { padding: 10px; }
 
 .col-static { width: 100%; display: table; table-layout: fixed; }
@@ -82,7 +82,7 @@
     .pull-md-1 { right: 8.333333%; } .pull-md-2 { right: 16.666666%; } .pull-md-3 { right: 25%; } .pull-md-4 { right: 33.333332%; } .pull-md-5 { right: 41.666665%; } .pull-md-6 { right: 50%; } .pull-md-7 { right: 58.333331%; } .pull-md-8 { right: 66.666664%; } .pull-md-9 { right: 75%; } .pull-md-10 { right: 83.333333%; } .pull-md-11 { right: 91.666663%; }
 
     .col-static:not(.no-fluid):not(.sm-fluid):not(.xs-fluid) > .row,.col-static:not(.no-fluid):not(.sm-fluid):not(.xs-fluid) > [class*="col-"] { width: 100%; display: block; clear: both; }
-    .row:not(.no-fluid):not(.sm-fluid):not(.xs-fluid) > [class*="col-"]:not([class*="col-md-"]):not([class*="col-sm-"]):not([class*="col-xs-"]):not(.no-fluid):not(.sm-fluid):not(.xs-fluid) { width: 100%; }
+    .row:not(.no-fluid):not(.sm-fluid):not(.xs-fluid) > [class*="col-"]:not([class*="col-md-"]):not([class*="col-sm-"]):not([class*="col-xs-"]):not(.no-fluid):not(.sm-fluid):not(.xs-fluid) { width: 100%; clear: both; }
 
     .row:not(.no-fluid):not(.sm-fluid):not(.xs-fluid) > [class*="offset-"]:not([class*="offset-md-"]):not([class*="offset-sm-"]):not([class*="offset-xs-"]):not(.no-fluid):not(.sm-fluid):not(.xs-fluid) { margin-left: 0; }
     .row:not(.no-fluid):not(.sm-fluid):not(.xs-fluid) > [class*="push-"]:not([class*="push-md-"]):not([class*="push-sm-"]):not([class*="push-xs-"]):not(.no-fluid):not(.sm-fluid):not(.xs-fluid) { left: 0; }
@@ -101,8 +101,7 @@
     .push-sm-1 { left: 8.333333%; } .push-sm-2 { left: 16.666666%; } .push-sm-3 { left: 25%; } .push-sm-4 { left: 33.333332%; } .push-sm-5 { left: 41.666665%; } .push-sm-6 { left: 50%; } .push-sm-7 { left: 58.333331%; } .push-sm-8 { left: 66.666664%; } .push-sm-9 { left: 75%; } .push-sm-10 { left: 83.333333%; } .push-sm-11 { left: 91.666663%; }
     .pull-sm-1 { right: 8.333333%; } .pull-sm-2 { right: 16.666666%; } .pull-sm-3 { right: 25%; } .pull-sm-4 { right: 33.333332%; } .pull-sm-5 { right: 41.666665%; } .pull-sm-6 { right: 50%; } .pull-sm-7 { right: 58.333331%; } .pull-sm-8 { right: 66.666664%; } .pull-sm-9 { right: 75%; } .pull-sm-10 { right: 83.333333%; } .pull-sm-11 { right: 91.666663%; }
 
-    .col-static:not(.no-fluid):not(.xs-fluid) > .row,.col-static:not(.no-fluid):not(.xs-fluid) > [class*="col-"] { width: 100%; display: block; }
-
+    .col-static:not(.no-fluid):not(.xs-fluid) > .row,.col-static:not(.no-fluid):not(.xs-fluid) > [class*="col-"] { width: 100%; display: block; clear: both; }
     .row.sm-fluid > [class*="col-"],.row:not(.no-fluid):not(.xs-fluid) > [class*="col-"]:not([class*="col-sm-"]):not([class*="col-xs-"]):not(.no-fluid):not(.xs-fluid) { width: 100%; clear: both; }
 
     .row:not(.no-fluid):not(.xs-fluid) > [class*="offset-"]:not([class*="offset-sm-"]):not([class*="offset-xs-"]):not(.no-fluid):not(.xs-fluid) { margin-left: 0; }
@@ -123,8 +122,7 @@
     .push-xs-1 { left: 8.333333%; } .push-xs-2 { left: 16.666666%; } .push-xs-3 { left: 25%; } .push-xs-4 { left: 33.333332%; } .push-xs-5 { left: 41.666665%; } .push-xs-6 { left: 50%; } .push-xs-7 { left: 58.333331%; } .push-xs-8 { left: 66.666664%; } .push-xs-9 { left: 75%; } .push-xs-10 { left: 83.333333%; } .push-xs-11 { left: 91.666663%; }
     .pull-xs-1 { right: 8.333333%; } .pull-xs-2 { right: 16.666666%; } .pull-xs-3 { right: 25%; } .pull-xs-4 { right: 33.333332%; } .pull-xs-5 { right: 41.666665%; } .pull-xs-6 { right: 50%; } .pull-xs-7 { right: 58.333331%; } .pull-xs-8 { right: 66.666664%; } .pull-xs-9 { right: 75%; } .pull-xs-10 { right: 83.333333%; } .pull-xs-11 { right: 91.666663%; }
 
-    .col-static:not(.no-fluid) > .row,.col-static:not(.no-fluid) > [class*="col-"] { width: 100%; display: block; }
-
+    .col-static:not(.no-fluid) > .row,.col-static:not(.no-fluid) > [class*="col-"] { width: 100%; display: block; clear: both; }
     .row.xs-fluid > [class*="col-"],.row:not(.no-fluid):not(.xs-fluid) > [class*="col-"]:not([class*="col-xs-"]):not(.no-fluid) { width: 100%; clear: both; }
 
     .row:not(.no-fluid):not(.xs-fluid) > [class*="offset-"]:not([class*="offset-xs-"]):not(.no-fluid) { margin-left: 0; }
