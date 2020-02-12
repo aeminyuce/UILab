@@ -7,8 +7,9 @@
 .no-gutter { padding-right: 0 !important; padding-left: 0 !important; }
 
 .fixed { margin-left: auto; margin-right: auto; }
+.row { margin-right: -10px; margin-left: -10px; flex-wrap: wrap; }
 
-.row { margin-right: -10px; margin-left: -10px; display: flex; flex-wrap: wrap; }
+html .row { display: flex; } /* safari flex bug */
 .row:before,.row:after { content: normal !important; } /* safari flex bug */
 
 [class*="col-"] { min-height: 1px; display: block; }
