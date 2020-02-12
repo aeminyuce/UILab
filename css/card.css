@@ -4,8 +4,8 @@
 
 .card > .row,[class*="card-"]:not(.card-side) > .row,.card-side > .row { margin-left: inherit; margin-right: inherit; }
 
-.card-side:before { content: ""; display: table; }
-.card-side:after { clear: both; }
+.card:before,.card:after,.card-side:before,.card-side:after { content: ""; display: table; }
+.card:after,.card-side:after { clear: both; }
 
 .round > .card-side:first-child { border-radius: 6px 6px 0 0; }
 .round > .card-side:last-child { border-radius: 0 0 6px 6px; }

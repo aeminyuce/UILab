@@ -6,8 +6,9 @@
 .list-group > ul { margin-bottom: 0; }
 
 .list-group > ul > li,.list-group > ul > li > a { line-height: normal; padding: 10px; }
-.list-group > ul > li:before,.list-group > ul > li > a:before,.list-group > ul > li:after,.list-group > ul > li > a:after { content: ""; display: table; }
+.list-group > ul > li:before,.list-group > ul > li:after,.list-group > ul > li > a:before,.list-group > ul > li > a:after { content: ""; display: table; }
 .list-group > ul > li:after,.list-group > ul > li > a:after { clear: both; }
+
 .list-group > ul > li { position: relative; }
 .list-group > ul > li > p { margin-bottom: 0; }
 .list-group > ul > li > a { margin: -10px; display: block; }
