@@ -11,7 +11,7 @@ input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .btn:not([class*="border"]) { border-width: 0; }
 .btn:not(.btn-multi) { white-space: nowrap; }
 
-.btn-square { min-width: auto !important; width: 32px; max-width: auto !important; }
+.btn-square { min-width: 0 !important; width: 32px; max-width: none !important; }
 .btn-square:not([class*="align-"]) { text-align: center !important; }
 
 .btn.btn-multi { word-wrap: break-word; height: auto !important; min-height: 32px; }
