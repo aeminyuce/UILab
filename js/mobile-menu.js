@@ -3,22 +3,14 @@
  Mobile Menu JS requires Selector Js, Events JS
 */
 
-var mobileMenu = {
-
-    visibleLeft: 'md', // 'xs', 'sm', 'md', 'lg'
-    visibleRight: 'md' // 'xs', 'sm', 'md', 'lg'
-
-};
+var mobileMenu = {};
 
 (function () {
 
     'use strict';
     /*globals window, document, selector, events, setTimeout, useragents */
 
-    var
-        pageYPos,
-        panelOpened = '',
-        visibleArr = [];
+    var pageYPos;
 
     function closeMobileMenu(panel) {
 
@@ -58,59 +50,6 @@ var mobileMenu = {
         }
 
         events.off('.close-mobile-menu', 'click');
-        panelOpened = '';
-
-    }
-
-    //visibleArr = [{'xs': 481}, {'sm': 768}, {'md': 960}, {'lg': 1200}];
-    visibleArr = ['xs', 'sm', 'md', 'lg'];
-
-    function checkScreen() {
-
-        if (panelOpened === '') { return; }
-
-        var screenLimits, max, panel;
-
-        screenLimits = function (size) {
-
-            if (size === 'lg') {
-                return 1200;
-
-            } else if (size === 'md') {
-                return 960;
-
-            } else if (size === 'sm') {
-                return 768;
-
-            } else if (size === 'xs') {
-                return 481;
-            }
-
-        };
-
-        if (panelOpened === 'l') {
-
-            if (visibleArr.indexOf(mobileMenu.visibleLeft) > -1) {
-
-                panel = selector('.mobile-menu.show-l');
-
-                max = screenLimits(mobileMenu.visibleLeft);
-                if (window.innerWidth >= max) { closeMobileMenu(panel); }
-
-            }
-
-        } else {
-
-            if (visibleArr.indexOf(mobileMenu.visibleRight) > -1) {
-
-                panel = selector('.mobile-menu.show-r');
-
-                max = screenLimits(mobileMenu.visibleRight);
-                if (window.innerWidth >= max) { closeMobileMenu(panel); }
-
-            }
-
-        }
 
     }
 
@@ -169,8 +108,6 @@ var mobileMenu = {
 
             } else { return; }
 
-            panelOpened = position;
-
             if (useragents.mobile) {
                 pageYPos = window.pageYOffset; // get current scroll-y position
             }
@@ -228,6 +165,11 @@ var mobileMenu = {
 
     // Loaders
     events.onload(mobileMenu.Start);
-    events.on(window, 'resize', checkScreen);
+    events.on(window, 'resize', function () {
+
+        var panel = selector('.mobile-menu');
+        closeMobileMenu(panel);
+
+    });
 
 }());
