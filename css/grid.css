@@ -1,6 +1,6 @@
 /* grid */
-.container:before,.container:after,.fixed:before,.fixed:after,.row:before,.row:after,[class*="col-"]:not(.col-static):before,[class*="col-"]:not(.col-static):after { content: ""; display: table; }
-.container:after,.fixed:after,.row:after,[class*="col-"]:not(.col-static):after { clear: both; }
+.container:before,.container:after,.fixed:before,.fixed:after { content: ""; display: table; }
+.container:after,.fixed:after { clear: both; }
 
 .container,.fixed { width: 100%; display: block; }
 .container:not([class*="no-gutter"]),.fixed { padding-right: 10px; padding-left: 10px; }
