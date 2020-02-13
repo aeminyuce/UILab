@@ -103,6 +103,20 @@ html:not(.mobile) .btn.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-ligh
 .pagination .btn-xxs { min-width: 14px; }
 .pagination .btn .icon { opacity: 1 !important; }
 
+.btn-holder { display: flex; }
+.btn-holder > .btn { flex-grow: 1; }
+
+.btn-holder > .btn:not(:first-child):not(:last-child) { border-radius: 0; }
+
+.btn-holder:not(.btn-sm-fluid):not(.btn-xs-fluid) > .btn:not(:first-child):not(:last-child) { border-radius: 0; }
+.btn-holder:not(.btn-sm-fluid):not(.btn-xs-fluid) > .btn:not(:first-child) { border-left: 0; }
+
+.btn-holder:not(.btn-sm-fluid):not(.btn-xs-fluid) > .btn:first-child { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+.btn-holder:not(.btn-sm-fluid):not(.btn-xs-fluid) > .btn:first-child:not(.border):not(.border-dual) { border-left: 0; }
+
+.btn-holder:not(.btn-sm-fluid):not(.btn-xs-fluid) > .btn:last-child { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+.btn-holder:not(.btn-sm-fluid):not(.btn-xs-fluid) > .btn:last-child:not(.border):not(.border-dual) { border-right: 0; }
+
 @media (max-width: 959px) {
     .btn-md-fluid { width: 100% !important; display: block; }
     .btn-md-fluid:not(:last-child) { margin-bottom: 10px; }
@@ -112,6 +126,14 @@ html:not(.mobile) .btn.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-ligh
 }
 @media (min-width: 768px) {
     .btn-square { padding-left: 0 !important; padding-right: 0 !important; }
+
+    .btn-holder.btn-sm-fluid > .btn:not(:first-child) { border-left: 0; }
+
+    .btn-holder.btn-sm-fluid > .btn:first-child { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+    .btn-holder.btn-sm-fluid > .btn:first-child:not(.border):not(.border-dual) { border-left: 0; }
+
+    .btn-holder.btn-sm-fluid > .btn:last-child { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+    .btn-holder.btn-sm-fluid > .btn:last-child:not(.border):not(.border-dual) { border-right: 0; }
 }
 @media (max-width: 767px) {
     .btn-sm-fluid { width: 100% !important; display: block; }
@@ -120,8 +142,35 @@ html:not(.mobile) .btn.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-ligh
 
     .btn-square:not(.btn-xs-fluid):not(.btn-sm-fluid) { padding-left: 0 !important; padding-right: 0 !important; }
     .pagination .btn:not(.prev):not(.next):not(.btn-active) { display: none; }
+
+    .btn-holder.btn-sm-fluid > .btn { width: 100%; float: inherit; }
+    .btn-holder.btn-sm-fluid > .btn:not(:first-child) { border-top: 0; }
+
+    .btn-holder.btn-sm-fluid > .btn:first-child { border-bottom-right-radius: 0; border-bottom-left-radius: 0; }
+    .btn-holder.btn-sm-fluid > .btn:first-child:not(.border):not(.border-dual) { border-top: 0; }
+
+    .btn-holder.btn-sm-fluid > .btn:last-child { border-top-right-radius: 0; border-top-left-radius: 0; }
+    .btn-holder.btn-sm-fluid > .btn:last-child:not(.border):not(.border-dual) { border-bottom: 0; }
+}
+@media (min-width: 481px) {
+    .btn-holder.btn-xs-fluid > .btn:not(:first-child) { border-left: 0; }
+
+    .btn-holder.btn-xs-fluid > .btn:first-child { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+    .btn-holder.btn-xs-fluid > .btn:first-child:not(.border):not(.border-dual) { border-left: 0; }
+
+    .btn-holder.btn-xs-fluid > .btn:last-child { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+    .btn-holder.btn-xs-fluid > .btn:last-child:not(.border):not(.border-dual) { border-right: 0; }
 }
 @media (max-width: 480px) {
     .btn-xs-fluid { width: 100% !important; display: block; }
     .btn-xs-fluid:not(:last-child) { margin-bottom: 10px; }
+
+    .btn-holder.btn-xs-fluid > .btn { width: 100%; }
+    .btn-holder.btn-xs-fluid > .btn:not(:first-child) { border-top: 0; }
+
+    .btn-holder.btn-xs-fluid > .btn:first-child { border-bottom-right-radius: 0; border-bottom-left-radius: 0; }
+    .btn-holder.btn-xs-fluid > .btn:first-child:not(.border):not(.border-dual) { border-top: 0; }
+
+    .btn-holder.btn-xs-fluid > .btn:last-child { border-top-right-radius: 0; border-top-left-radius: 0; }
+    .btn-holder.btn-xs-fluid > .btn:last-child:not(.border):not(.border-dual) { border-bottom: 0; }
 }
