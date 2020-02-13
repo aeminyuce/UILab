@@ -11,6 +11,7 @@ svg.icon-light { stroke-width: 18px; }
 svg.icon-default { stroke-width: 24px; }
 svg.icon-semibold { stroke-width: 32px; }
 svg.icon-bold { stroke-width: 38px; }
+svg.icon-black { stroke-width: 44px; }
 
 svg.icon-fill { fill: currentColor; }
 
