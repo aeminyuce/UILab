@@ -72,6 +72,21 @@
 
 <body>
 
+    <svg style="display: none;">
+
+        <symbol id="sync" viewBox="0 0 270.903 248">
+            <g transform="translate(24.953 -12.634)">
+                <path d="M222.791,128.517A112.029,112.029,0,0,1,5.1,145.508" transform="translate(-1.502 24.634)" />
+                <path d="M148.206-8h-36V28" transform="translate(-105.435 137.774) rotate(20)" />
+                <g transform="translate(-1.502 24.634)">
+                    <path d="M6.19,208.3A112.028,112.028,0,0,1,224,190.492" transform="translate(-5.098 -112)" />
+                    <path d="M36,0H0V36" transform="translate(219.758 80) rotate(-160)" />
+                </g>
+            </g>
+        </symbol>
+
+    </svg>
+
     <!-- header -->
     <header class="container theme-default ui-dark">
         <div class="row theme-default2 ui-border border-t border-dual">
@@ -162,16 +177,18 @@
                             <div class="form-holder col-static no-fluid">
 
                                 <div class="col-75">
-                                    <img class="img-fluid border-dual border-light round ease-border" src="img/captcha.jpg" alt="">
+                                    <img class="img-fluid border-dual round ease-border" src="img/captcha.jpg" alt="">
                                 </div>
                                 <div class="col-32">
-                                    <button class="btn btn-square btn-ghost border-dual border-light ease-btn">
-                                        <i class="icon icon-sm icon-redo no-opacity"></i> <!-- for loading process toggle "animate-spin" -->
+                                    <button class="btn btn-square btn-ghost border-dual ease-btn">
+                                        <svg class="icon animate-spin"> <!-- for loading process toggle "animate-spin" -->
+                                            <use xlink:href="#sync" />
+                                        </svg>
                                     </button>
                                 </div>
                                 <div class="row row-no-gap">
                                     <div class="col-12">
-                                        <div class="text border-dual round form-light ease-form">
+                                        <div class="text border-dual round ease-form">
                                             <input type="text" maxlength="4" placeholder="Please enter code">
                                         </div>
                                     </div>
@@ -237,7 +254,9 @@
                                     </div>
                                     <div class="col-42">
                                         <button class="btn btn-square btn-ghost border-dual ease-btn">
-                                            <i class="icon icon-redo no-opacity"></i> <!-- for loading process toggle "animate-spin" -->
+                                            <svg class="icon icon-lg animate-spin"> <!-- for loading process toggle "animate-spin" -->
+                                                <use xlink:href="#sync" />
+                                            </svg>
                                         </button>
                                     </div>
                                     <div class="row row-no-gap">
@@ -1724,7 +1743,9 @@
                             </div>
                             <div class="col-32">
                                 <button class="btn btn-square btn-ghost border-dual border-light ease-btn">
-                                    <i class="icon icon-sm icon-redo no-opacity"></i> <!-- for loading process toggle "animate-spin" -->
+                                    <svg class="icon animate-spin"> <!-- for loading process toggle "animate-spin" -->
+                                        <use xlink:href="#sync" />
+                                    </svg>
                                 </button>
                             </div>
                             <div class="row row-no-gap">
