@@ -358,15 +358,21 @@
     <main class="container">
         <div class="row">
             <div class="col-12">
-                <div class="padding-30 sm-no-padding tabs theme-default2 ease-tabs" data-classes="ui-border">
+                <div class="padding-30-v sm-no-padding tabs theme-default2 ease-tabs" data-classes="border-b border-lg ui-border">
 
-                    <div class="align-c form-lg ease-1st-btn">
-                        <button class="tab btn btn-ghost padding-30-h border-b border-dual padding-20-h round-t ui-border active">CSS</button>
-                        <button class="tab btn btn-ghost padding-30-h border-b border-dual padding-20-h round-t">JS</button>
-                        <button class="tab btn btn-ghost padding-30-h border-b border-dual padding-20-h round-t">Icons</button>
+                    <div class="row border-b margin-15-b">
+
+                        <div class="col-4 offset-4 no-padding-b">
+                            <div class="btn-holder form-lg ease-1st-btn">
+                                <button class="tab btn btn-ghost round-t border-b border-lg ui-border active">CSS</button>
+                                <button class="tab btn btn-ghost round-t">JS</button>
+                                <button class="tab btn btn-ghost round-t">Icons</button>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="generate-holder tab-content form-lg icons-no-opacity padding-30-v open open-ease">
+                    <div class="generate-holder tab-content form-lg icons-no-opacity padding-30 open open-ease">
 
                         <div class="file margin-30-b no-border round circle no-border ease-form form-xs-inline">
                             <input name="css" class="generate-import" type="file">
@@ -515,13 +521,6 @@
                                             <i class="ui-dark state"></i>
                                         </span>
                                         Tabs
-                                    </label>
-                                    <label class="custom">
-                                        <span class="switch-custom round border-dual ease-form">
-                                            <input type="checkbox" name="button holder" value="../css/button-holder.css">
-                                            <i class="ui-dark state"></i>
-                                        </span>
-                                        Button Holder
                                     </label>
                                     <label class="custom">
                                         <span class="switch-custom round border-dual ease-form">
@@ -862,7 +861,7 @@
                                 <label class="form-label">CSS Codes:</label>
 
                                 <div class="textarea margin-15-b round border-dual ease-form">
-                                    <textarea class="x-dark large padding-10" rows="6" placeholder="Generated CSS will be here!"></textarea>
+                                    <textarea class="x-dark large padding-10" rows="12" placeholder="Generated CSS will be here!"></textarea>
                                     <div class="border-t border-dual">
                                         <button title="Clear form!" class="generate-clear btn btn-square btn-ghost ease-btn">
                                             <i class="icon icon-sm icon-trash"></i>
@@ -872,7 +871,7 @@
                                     </div>
                                 </div>
 
-                                <div class="align-r xs-align-c ease-1st-btn">
+                                <div class="align-r align-c ease-1st-btn">
                                     <button class="generate-btn btn btn-xs-fluid padding-20-h ui-dark round">Generate CSS</button>
                                     <button class="generate-copy btn btn-xs-fluid padding-20-h round">
                                         Copy to Clipboard
@@ -885,7 +884,7 @@
 
                     </div>
 
-                    <div class="generate-holder tab-content form-lg icons-no-opacity padding-30-v">
+                    <div class="generate-holder tab-content form-lg icons-no-opacity padding-30">
 
                         <div class="file margin-30-b no-border round circle no-border ease-form form-xs-inline">
                             <input name="JS" class="generate-import" type="file">
@@ -1272,7 +1271,7 @@
                                 <label class="form-label">JS Codes:</label>
 
                                 <div class="textarea margin-15-b round border-dual ease-form">
-                                    <textarea class="x-dark large padding-10" rows="6" placeholder="Generated JS will be here!"></textarea>
+                                    <textarea class="x-dark large padding-10" rows="12" placeholder="Generated JS will be here!"></textarea>
                                     <div class="border-t border-dual">
                                         <button title="Clear form!" class="generate-clear btn btn-square btn-ghost ease-btn">
                                             <i class="icon icon-sm icon-trash"></i>
@@ -1282,7 +1281,7 @@
                                     </div>
                                 </div>
 
-                                <div class="align-r xs-align-c ease-1st-btn">
+                                <div class="align-r align-c ease-1st-btn">
                                     <button class="generate-btn btn btn-xs-fluid padding-20-h ui-dark round">Generate JS</button>
                                     <button class="generate-copy btn btn-xs-fluid padding-20-h round">
                                         Copy to Clipboard
@@ -1295,11 +1294,11 @@
 
                     </div>
 
-                    <div class="tab-content icons-no-opacity icons-margin-5-r padding-30-v">
+                    <div class="tab-content align-c icons-no-opacity icons-margin-5-r padding-30-v">
 
                         <h4>Download Fonts Icon Files</h4>
-                        <p>Download and save your files to your <code>/fonts/</code> folder.</p>
-                        <div class="align-l form-lg ease-1st-btn">
+                        <h4>Download and save your files to your <code>/fonts/</code> folder.</h4>
+                        <div class="form-lg ease-1st-btn">
                             <a class="btn btn-xs-fluid round" href="../fonts/font-icons.svg">
                                 <i class="icon margin-3-v icon-file-download"></i>
                                 font-icons.svg
