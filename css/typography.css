@@ -55,7 +55,8 @@ a.underline:hover,button.underline:hover { text-decoration: none; }
 .bold { font-weight: bold !important; }
 .semibold { font-weight: 500 !important; }
 .regular { font-weight: normal !important; }
-.thin { font-weight: 300 !important; }
+.light { font-weight: 300 !important; }
+.thin { font-weight: 150 !important; }
 .italic { font-style: italic !important; }
 .overline { text-decoration: line-through; }
 .ellipsis { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
