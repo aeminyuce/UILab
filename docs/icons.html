@@ -52,7 +52,7 @@
         h1 { font-size: 32px !important; }
         h2 small { font-size: 18px !important; opacity: .65; }
 
-        .icons-sizes { margin-bottom: 20px; }
+        .icon-modifiers { margin-bottom: 20px; }
 
         .icons-list:not(:last-child) { margin-bottom: 30px;}
         .icons-list li { color: #4a515a; text-align: center; width: 140px; background-color: #f7f7f7; padding: 15px 10px; margin: 6px 4px; display: inline-block; border-radius: 6px; cursor: pointer; }
@@ -85,24 +85,39 @@
 
             totalIcons = 0;
 
-            buttons = selector('.icons-sizes .btn');
+            buttons = selector('.icon-modifiers .btn');
             events.on(buttons, 'click', function () {
 
-                var that, icons, size;
+                var that, icons, bttns, size, weight;
 
                 that = this;
-                icons = selector('.icons-list .icon');
+                bttns = selector('.btn', this.parentElement);
 
-                events.removeClass(buttons, 'ui-dark');
+                events.removeClass(bttns, 'ui-dark');
                 setTimeout(function () {
                     events.addClass(that, 'ui-dark');
                 }, 0);
 
-                events.removeClass(icons, 'icon-xxl icon-xl icon-lg icon-sm icon-xs icon-xxs');
+                // change size
                 size = this.getAttribute('data-size');
+                if (size !== null && size !== '') {
 
-                if (size !== '') {
+                    icons = selector('.icons-list .icon');
+
+                    events.removeClass(icons, 'icon-xxl icon-xl icon-lg icon-sm icon-xs icon-xxs');
                     events.addClass(icons, 'icon-' + size);
+
+                }
+
+                // change weight
+                weight = this.getAttribute('data-weight');
+                if (weight !== null && weight !== '') {
+
+                    icons = selector('.icons-list svg.icon');
+
+                    events.removeClass(icons, 'icon-bold icon-semibold icon-default icon-light icon-light');
+                    events.addClass(icons, 'icon-' + weight);
+
                 }
 
             });
@@ -151,6 +166,28 @@
 
 <body>
 
+    <svg style="display: none;">
+
+        <symbol id="sync" viewBox="0 0 270.903 248">
+            <g transform="translate(24.953 -12.634)">
+                <path d="M222.791,128.517A112.029,112.029,0,0,1,5.1,145.508" transform="translate(-1.502 24.634)" />
+                <path d="M148.206-8h-36V28" transform="translate(-105.435 137.774) rotate(20)" />
+                <g transform="translate(-1.502 24.634)">
+                    <path d="M6.19,208.3A112.028,112.028,0,0,1,224,190.492" transform="translate(-5.098 -112)" />
+                    <path d="M36,0H0V36" transform="translate(219.758 80) rotate(-160)" />
+                </g>
+            </g>
+        </symbol>
+
+        <symbol id="remove" viewBox="0 0 270.903 248">
+            <g transform="translate(4.971 4.971)">
+                <path d="M236-4-4,236" transform="translate(16 16)" />
+                <path d="M-4-4,236,236" transform="translate(16 16)" />
+            </g>
+        </symbol>
+
+    </svg>
+
     <!-- header -->
     <header class="container theme-default ui-dark">
         <div class="row theme-default2 ui-border border-t border-dual">
@@ -169,18 +206,66 @@
 
                     <h1>Total <b class="total"></b> icons</h1>
 
-                    <p>Show icons by size:</p>
-                    <div class="icons-sizes theme-default2 form-lg ease-1st-btn">
-                        <button data-size="xxl" class="btn round">XX Large</button>
-                        <button data-size="xl" class="btn round ui-dark">X Large</button>
-                        <button data-size="lg" class="btn round">Large</button>
-                        <span class="sp5 visible-sm"></span>
-                        <button data-size="" class="btn round">Default</button>
-                        <button data-size="sm" class="btn round">Small</button>
-                        <button data-size="xs" class="btn round">X Small</button>
-                        <button data-size="xxs" class="btn round">XX Small</button>
+                    <div class="row">
+                        <div class="col-8">
+                            <h4 class="margin-10-b">Change icons size:</h4>
+                            <div class="btn-holder form-lg icon-modifiers theme-default2 form-lg ease-1st-btn">
+                                <button data-size="xxl" class="btn round">XXL</button>
+                                <button data-size="xl" class="btn round ui-dark">XL</button>
+                                <button data-size="lg" class="btn round">L</button>
+                                <button data-size="" class="btn round">-</button>
+                                <button data-size="sm" class="btn round">SM</button>
+                                <button data-size="xs" class="btn round">XS</button>
+                                <button data-size="xxs" class="btn round">XXS</button>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="margin-10-b">Change icons weight:</h4>
+                            <div class="btn-holder form-lg icon-modifiers theme-default2 form-lg ease-1st-btn">
+                                <button data-weight="bold" class="btn round">
+                                    <svg class="icon icon-bold no-opacity">
+                                        <use xlink:href="#remove" />
+                                    </svg>
+                                </button>
+                                <button data-weight="semibold" class="btn round">
+                                    <svg class="icon icon-semibold no-opacity">
+                                        <use xlink:href="#remove" />
+                                    </svg>
+                                </button>
+                                <button data-weight="default" class="btn round ui-dark">
+                                    <svg class="icon no-opacity">
+                                        <use xlink:href="#remove" />
+                                    </svg>
+                                </button>
+                                <button data-weight="light" class="btn round">
+                                    <svg class="icon icon-light no-opacity">
+                                        <use xlink:href="#remove" />
+                                    </svg>
+                                </button>
+                                <button data-weight="thin" class="btn round">
+                                    <svg class="icon icon-light no-opacity">
+                                        <use xlink:href="#remove" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
                     </div>
 
+                    <h2>General (SVG)</h2>
+                    <ul class="icons-list list-custom ease-1st-bg ease-2nd-all">
+                        <li>
+                            <svg class="icon icon-xl">
+                                <use xlink:href="#sync" />
+                            </svg>
+                            <span>sync</span>
+                        </li>
+                        <li>
+                            <svg class="icon icon-xl">
+                                <use xlink:href="#remove" />
+                            </svg>
+                            <span>remove</span>
+                        </li>
+                    </ul>
                     <h2>General</h2>
                     <ul class="icons-list list-custom ease-1st-bg ease-2nd-all">
                         <li><i class="icon icon-xl icon-angle-down"></i><span>angle-down</span></li>
