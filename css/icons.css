@@ -24,13 +24,13 @@ svg.icon-black { stroke-width: 44px; }
 .icon-mirror-v { transform: scaleY(-1); }
 .icon-mirror-h { transform: scaleX(-1); }
 
-.icons-no-opacity .icon:not(.default-icon) { opacity: 1 !important; }
-
 h1 > .icon:not(.right),h2 > .icon:not(.right),h3 > .icon:not(.right),
 h4 > .icon:not(.right),h5 > .icon:not(.right),h6 > .icon:not(.right) { margin-right: 5px; }
 
 h1 > .icon-lg:not(.right),h2 > .icon-lg:not(.right),h3 > .icon-lg:not(.right),
 h4 > .icon-lg:not(.right),h5 > .icon-lg:not(.right),h6 > .icon-lg:not(.right) { margin-right: 10px; }
+
+.icons-no-opacity .icon:not(.default-icon) { opacity: 1 !important; }
 
 .icons-margin-5-l .icon { margin-left: 5px !important; }
 .icons-margin-5-r .icon { margin-right: 5px !important; }
