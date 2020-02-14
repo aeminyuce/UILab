@@ -197,10 +197,10 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i { transform: tran
 .form-holder [class*="col-"]:not(:last-child) > *,.form-holder .row:first-child > [class*="col-"]:last-child > * { border-top-right-radius: 0; border-bottom-right-radius: 0; }
 
 .form-holder .row:not(:first-child):not(:last-child) > [class*="col-"] > * { border-radius: 0; }
-.form-holder.error .text,.form-holder.error .select,.form-holder.error [class*="border"] { border-color: #dc000f !important; }
+.form-holder.error .text,.form-holder.error .select,.form-holder.error .border,.form-holder.error [class*="border-"] { border-color: #dc000f !important; }
 .form-holder.error .text,.form-holder.error .select { background-color: rgba(220,0,15,.1); }
 
-.form-holder.warning .text,.form-holder.warning .select,.form-holder.warning [class*="border"] { border-color: #ffa600 !important; }
+.form-holder.warning .text,.form-holder.warning .select,.form-holder.warning .border,.form-holder.warning [class*="border-"] { border-color: #ffa600 !important; }
 .form-holder.warning .text,.form-holder.warning .select { background-color: rgba(255,166,0,.1); }
 
 .form-lg .text,.form-lg .select { min-height: 42px; }
