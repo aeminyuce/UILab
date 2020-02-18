@@ -5,7 +5,9 @@
 button.icon { background-color: transparent; }
 
 svg.icon { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 24px; }
-.svg-fill { fill: currentColor !important; }
+
+.svg-full,.svg-fill { fill: currentColor !important; }
+.svg-sub,.svg-fill { opacity: .45; }
 
 svg.icon-thin { stroke-width: 12px; }
 svg.icon-light { stroke-width: 18px; }
