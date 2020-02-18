@@ -50,23 +50,13 @@
     <style>
 
         body { background-color: #e8e8e8; }
-
-        h1 { font-size: 32px !important; }
-        h2 small { font-size: 18px !important; opacity: .65; }
-
         .icon-modifiers { margin-bottom: 20px; }
 
-        .icons-list:not(:last-child) { margin-bottom: 30px;}
-        .icons-list li { color: #4a515a; text-align: center; width: 140px; background-color: #f7f7f7; padding: 15px 10px; margin: 6px 4px; display: inline-block; border-radius: 6px; cursor: pointer; }
+        .icons-list { margin: -1px; display: flex; flex-wrap: wrap; justify-content: center; }
+        .icons-list:not(:last-child) { margin-bottom: 30px; }
+        .icons-list li { color: #4a515a; max-width: 160px; background-color: #f7f7f7; padding: 15px 10px; margin: 1px; border-radius: 6px; cursor: pointer; flex-grow: 1; }
         html:not(.mobile) .icons-list li:hover { background-color: #fff; }
-        .icons-list li > span { content: attr(data-name); color: #666; font-size: 13px; font-family: "Roboto", "Helvetica Neue", Arial, sans-serif; white-space: nowrap; text-overflow: ellipsis; line-height: normal; margin-top: 10px; overflow: hidden; display: block; }
-
-        @media (max-width: 767px) and (min-width: 481px) {
-            .icons-list li { width: 28%;}
-        }
-        @media (max-width: 480px) {
-            .icons-list li { width: 45%;}
-        }
+        .icons-list li > span { content: attr(data-name); color: #666; font-size: 13px; white-space: nowrap; text-overflow: ellipsis; line-height: normal; min-width: 129px; width: 100%; margin-top: 10px; overflow: hidden; display: block; }
 
         @media (prefers-color-scheme: dark) {
             .icons-list li { color: #fff; background-color: #2f343e; }
@@ -186,15 +176,15 @@
     <main class="container">
         <div class="row">
             <div class="col-12">
-                <div class="padding-30 sm-no-padding sm-align-c">
+                <div class="padding-30 sm-no-padding align-c">
 
                     <h1>Total <b class="total"></b> icons</h1>
 
                     <div class="row">
                         <div class="col-4">
-                            <h4 class="margin-10-b">Change icons weight:</h4>
+                            <h4 class="align-c margin-10-b">Change icons weight:</h4>
                             <div class="btn-holder form-lg icon-modifiers theme-default2 form-lg ease-1st-btn">
-                                <button data-tooltip="b" data-only="desktop" title="Black" data-weight="black" class="btn round ui-dark">
+                                <button data-tooltip="b" data-only="desktop" title="Black" data-weight="black" class="btn round">
                                     <svg class="icon icon-lg icon-black no-opacity"><use xlink:href="#remove"/></svg>
                                 </button>
                                 <button data-tooltip="b" data-only="desktop" title="Bold" data-weight="bold" class="btn round">
@@ -203,8 +193,8 @@
                                 <button data-tooltip="b" data-only="desktop" title="Semibold" data-weight="semibold" class="btn round">
                                     <svg class="icon icon-lg icon-semibold no-opacity"><use xlink:href="#remove"/></svg>
                                 </button>
-                                <button data-tooltip="b" data-only="desktop" title="Default" data-weight="" class="btn round">
-                                    <svg class="icon icon-lg no-opacity"><use xlink:href="#remove"/></svg>
+                                <button data-tooltip="b" data-only="desktop" title="Auto Weight" data-weight="" class="btn round ui-dark">
+                                    Auto
                                 </button>
                                 <button data-tooltip="b" data-only="desktop" title="Light" data-weight="light" class="btn round">
                                     <svg class="icon icon-lg icon-light no-opacity"><use xlink:href="#remove"/></svg>
@@ -215,7 +205,7 @@
                             </div>
                         </div>
                         <div class="col-8">
-                            <h4 class="margin-10-b">Change icons size:</h4>
+                            <h4 class="align-c margin-10-b">Change icons size:</h4>
                             <div class="btn-holder form-lg icon-modifiers theme-default2 form-lg ease-1st-btn">
                                 <button data-size="xxl" class="btn round ui-dark">XXL</button>
                                 <button data-size="xl" class="btn round">XL</button>
@@ -261,172 +251,254 @@
                         <symbol id="shield-fill" viewBox="-2 -2 288 288"><use class="svg-fill" xlink:href="#shield"/></symbol>
                         <symbol id="marker" viewBox="-32 -12 288 288"><path d="M112 12c50 0 100 40 100 100S112 252 112 252 12 172 12 112 62 12 112 12z"/></symbol>
                         <symbol id="marker-fill" viewBox="-2 -2 288 288"><use class="svg-fill" xlink:href="#marker"/></symbol>
-                        <symbol id="alert" viewBox="-144 -12 288 288"><path d="M12 252v-1M12 12v196"/></symbol>
-                        <symbol id="alert-triangle" viewBox="-12 -12 288 288"><path d="M132 12l120 208H12z M132 176v-1M132 101v31"/></symbol>
+                        <symbol id="alert" viewBox="-134 -12 288 288"><path d="M12 12v180"/><path class="svg-sub" transform="translate(0 226)" d="M12 28V12"/></symbol>
+                        <symbol id="alert-triangle" viewBox="-12 -12 288 288"><path transform="translate(122 90)" d="M12 88v-8M12 12v28"/><path class="svg-sub" d="M132 12l120 208H12z"/></symbol>
+                        <symbol id="alert-triangle-fill" viewBox="-12 -12 288 288"><path transform="translate(122 90)" d="M12 88v-8M12 12v28"/><path class="svg-fill" d="M132 12l120 208H12z"/></symbol>
                         <symbol id="alert-circle" viewBox="-1 -2 288 288"><use xlink:href="#in-alert"/><use class="svg-sub" xlink:href="#circle"/></symbol>
+                        <symbol id="alert-circle-fill" viewBox="-1 -2 288 288"><use xlink:href="#in-alert"/><use class="svg-fill" xlink:href="#circle"/></symbol>
                         <symbol id="alert-badge" viewBox="0 -2 288 288"><use xlink:href="#in-alert"/><use class="svg-sub" xlink:href="#badge"/></symbol>
+                        <symbol id="alert-badge-fill" viewBox="0 -2 288 288"><use xlink:href="#in-alert"/><use class="svg-fill" xlink:href="#badge"/></symbol>
                         <symbol id="alert-square" viewBox="-2 -2 288 288"><use xlink:href="#in-alert"/><use class="svg-sub" xlink:href="#square"/></symbol>
+                        <symbol id="alert-square-fill" viewBox="-2 -2 288 288"><use xlink:href="#in-alert"/><use class="svg-fill" xlink:href="#square"/></symbol>
                         <symbol id="alert-shield" viewBox="-2 -2 288 288"><use xlink:href="#in-alert"/><use class="svg-sub" xlink:href="#shield"/></symbol>
-                        <symbol id="alert-marker" viewBox="-2 -2 288 288"><use y="-15" xlink:href="#in-alert"/><use class="svg-sub" xlink:href="#marker"/></symbol>
-                        <symbol id="info" viewBox="-144 -12 288 288"><path d="M12 252V56M12 12v1"/></symbol>
+                        <symbol id="alert-shield-fill" viewBox="-2 -2 288 288"><use xlink:href="#in-alert"/><use class="svg-fill" xlink:href="#shield"/></symbol>
+                        <symbol id="alert-marker" viewBox="-2 -2 288 288"><use y="-12" xlink:href="#in-alert"/><use class="svg-sub" xlink:href="#marker"/></symbol>
+                        <symbol id="alert-marker-fill" viewBox="-2 -2 288 288"><use y="-12" xlink:href="#in-alert"/><use class="svg-fill" xlink:href="#marker"/></symbol>
+                        <symbol id="info" viewBox="-134 -12 288 288"><path class="svg-sub" d="M12 28V12"/><path transform="translate(0 60)" d="M12 12v180"/></symbol>
                         <symbol id="info-circle" viewBox="-1 -2 288 288"><use xlink:href="#in-info"/><use class="svg-sub" xlink:href="#circle"/></symbol>
+                        <symbol id="info-circle-fill" viewBox="-1 -2 288 288"><use xlink:href="#in-info"/><use class="svg-fill" xlink:href="#circle"/></symbol>
                         <symbol id="info-badge" viewBox="0 -2 288 288"><use xlink:href="#in-info"/><use class="svg-sub" xlink:href="#badge"/></symbol>
+                        <symbol id="info-badge-fill" viewBox="0 -2 288 288"><use xlink:href="#in-info"/><use class="svg-fill" xlink:href="#badge"/></symbol>
                         <symbol id="info-square" viewBox="-2 -2 288 288"><use xlink:href="#in-info"/><use class="svg-sub" xlink:href="#square"/></symbol>
+                        <symbol id="info-square-fill" viewBox="-2 -2 288 288"><use xlink:href="#in-info"/><use class="svg-fill" xlink:href="#square"/></symbol>
                         <symbol id="info-shield" viewBox="-2 -2 288 288"><use xlink:href="#in-info"/><use class="svg-sub" xlink:href="#shield"/></symbol>
-                        <symbol id="info-marker" viewBox="-2 -2 288 288"><use y="-15" xlink:href="#in-info"/><use class="svg-sub" xlink:href="#marker"/></symbol>
-                        <symbol id="question" viewBox="-46 -12 288 288"><path d="M95.4 251v1 M14.7 67c6-22.6 33.9-55 80.5-55s81.5 36.9 81.5 73.4-21.6 50.4-53 72.3S94.4 210 94.4 210"/></symbol>
+                        <symbol id="info-shield-fill" viewBox="-2 -2 288 288"><use xlink:href="#in-info"/><use class="svg-fill" xlink:href="#shield"/></symbol>
+                        <symbol id="info-marker" viewBox="-2 -2 288 288"><use y="-12" xlink:href="#in-info"/><use class="svg-sub" xlink:href="#marker"/></symbol>
+                        <symbol id="info-marker-fill" viewBox="-2 -2 288 288"><use y="-12" xlink:href="#in-info"/><use class="svg-fill" xlink:href="#marker"/></symbol>
+                        <symbol id="question" viewBox="-46 -10 288 288"><path d="M14.7 67c6-22.6 33.9-55 80.5-55s81.5 36.9 81.5 73.4-21.6 50.4-53 72.3a63.7 63.7 0 00-27.2 41"/><path class="svg-sub" transform="translate(83 228)" d="M12 28V12"/></symbol>
                         <symbol id="question-circle" viewBox="-1 -2 288 288"><use xlink:href="#in-question"/><use class="svg-sub" xlink:href="#circle"/></symbol>
+                        <symbol id="question-circle-fill" viewBox="-1 -2 288 288"><use xlink:href="#in-question"/><use class="svg-fill" xlink:href="#circle"/></symbol>
                         <symbol id="question-badge" viewBox="0 -2 288 288"><use xlink:href="#in-question"/><use class="svg-sub" xlink:href="#badge"/></symbol>
+                        <symbol id="question-badge-fill" viewBox="0 -2 288 288"><use xlink:href="#in-question"/><use class="svg-fill" xlink:href="#badge"/></symbol>
                         <symbol id="question-square" viewBox="-2 -2 288 288"><use xlink:href="#in-question"/><use class="svg-sub" xlink:href="#square"/></symbol>
+                        <symbol id="question-square-fill" viewBox="-2 -2 288 288"><use xlink:href="#in-question"/><use class="svg-fill" xlink:href="#square"/></symbol>
                         <symbol id="question-shield" viewBox="-2 -2 288 288"><use xlink:href="#in-question"/><use class="svg-sub" xlink:href="#shield"/></symbol>
-                        <symbol id="question-marker" viewBox="-2 -2 288 288"><use y="-15" xlink:href="#in-question"/><use class="svg-sub" xlink:href="#marker"/></symbol>
+                        <symbol id="question-shield-fill" viewBox="-2 -2 288 288"><use xlink:href="#in-question"/><use class="svg-fill" xlink:href="#shield"/></symbol>
+                        <symbol id="question-marker" viewBox="-2 -2 288 288"><use y="-10" xlink:href="#in-question"/><use class="svg-sub" xlink:href="#marker"/></symbol>
+                        <symbol id="question-marker-fill" viewBox="-2 -2 288 288"><use y="-10" xlink:href="#in-question"/><use class="svg-fill" xlink:href="#marker"/></symbol>
                         <symbol id="minus" viewBox="-12 -133 288 288"><path d="M252 12H12"/></symbol>
                         <symbol id="minus-circle" viewBox="-1 -2 288 288"><use xlink:href="#in-minus"/><use class="svg-sub" xlink:href="#circle"/></symbol>
+                        <symbol id="minus-circle-fill" viewBox="-1 -2 288 288"><use xlink:href="#in-minus"/><use class="svg-fill" xlink:href="#circle"/></symbol>
                         <symbol id="minus-badge" viewBox="0 -2 288 288"><use xlink:href="#in-minus"/><use class="svg-sub" xlink:href="#badge"/></symbol>
+                        <symbol id="minus-badge-fill" viewBox="0 -2 288 288"><use xlink:href="#in-minus"/><use class="svg-fill" xlink:href="#badge"/></symbol>
                         <symbol id="minus-square" viewBox="-2 -2 288 288"><use xlink:href="#in-minus"/><use class="svg-sub" xlink:href="#square"/></symbol>
+                        <symbol id="minus-square-fill" viewBox="-2 -2 288 288"><use xlink:href="#in-minus"/><use class="svg-fill" xlink:href="#square"/></symbol>
                         <symbol id="minus-shield" viewBox="-2 -2 288 288"><use xlink:href="#in-minus"/><use class="svg-sub" xlink:href="#shield"/></symbol>
-                        <symbol id="minus-marker" viewBox="-2 -2 288 288"><use y="-15" xlink:href="#in-minus"/><use class="svg-sub" xlink:href="#marker"/></symbol>
+                        <symbol id="minus-shield-fill" viewBox="-2 -2 288 288"><use xlink:href="#in-minus"/><use class="svg-fill" xlink:href="#shield"/></symbol>
+                        <symbol id="minus-marker" viewBox="-2 -2 288 288"><use y="-18" xlink:href="#in-minus"/><use class="svg-sub" xlink:href="#marker"/></symbol>
+                        <symbol id="minus-marker-fill" viewBox="-2 -2 288 288"><use y="-18" xlink:href="#in-minus"/><use class="svg-fill" xlink:href="#marker"/></symbol>
                         <symbol id="plus" viewBox="-12 -12 288 288"><path d="M132 12v240M252 132H12"/></symbol>
                         <symbol id="plus-circle" viewBox="-1 -2 288 288"><use xlink:href="#in-plus"/><use class="svg-sub" xlink:href="#circle"/></symbol>
+                        <symbol id="plus-circle-fill" viewBox="-1 -2 288 288"><use xlink:href="#in-plus"/><use class="svg-fill" xlink:href="#circle"/></symbol>
                         <symbol id="plus-badge" viewBox="0 -2 288 288"><use xlink:href="#in-plus"/><use class="svg-sub" xlink:href="#badge"/></symbol>
+                        <symbol id="plus-badge-fill" viewBox="0 -2 288 288"><use xlink:href="#in-plus"/><use class="svg-fill" xlink:href="#badge"/></symbol>
                         <symbol id="plus-square" viewBox="-2 -2 288 288"><use xlink:href="#in-plus"/><use class="svg-sub" xlink:href="#square"/></symbol>
+                        <symbol id="plus-square-fill" viewBox="-2 -2 288 288"><use xlink:href="#in-plus"/><use class="svg-fill" xlink:href="#square"/></symbol>
                         <symbol id="plus-shield" viewBox="-2 -2 288 288"><use xlink:href="#in-plus"/><use class="svg-sub" xlink:href="#shield"/></symbol>
-                        <symbol id="plus-marker" viewBox="-2 -2 288 288"><use y="-15" xlink:href="#in-plus"/><use class="svg-sub" xlink:href="#marker"/></symbol>
+                        <symbol id="plus-shield-fill" viewBox="-2 -2 288 288"><use xlink:href="#in-plus"/><use class="svg-fill" xlink:href="#shield"/></symbol>
+                        <symbol id="plus-marker" viewBox="-2 -2 288 288"><use y="-20" xlink:href="#in-plus"/><use class="svg-sub" xlink:href="#marker"/></symbol>
+                        <symbol id="plus-marker-fill" viewBox="-2 -2 288 288"><use y="-20" xlink:href="#in-plus"/><use class="svg-fill" xlink:href="#marker"/></symbol>
                         <symbol id="remove" viewBox="-8 -8 288 288"><path d="M257 17L17 257M17 17l240 240"/></symbol>
                         <symbol id="remove-circle" viewBox="-1 -2 288 288"><use xlink:href="#in-remove"/><use class="svg-sub" xlink:href="#circle"/></symbol>
+                        <symbol id="remove-circle-fill" viewBox="-1 -2 288 288"><use xlink:href="#in-remove"/><use class="svg-fill" xlink:href="#circle"/></symbol>
                         <symbol id="remove-badge" viewBox="0 -2 288 288"><use xlink:href="#in-remove"/><use class="svg-sub" xlink:href="#badge"/></symbol>
+                        <symbol id="remove-badge-fill" viewBox="0 -2 288 288"><use xlink:href="#in-remove"/><use class="svg-fill" xlink:href="#badge"/></symbol>
                         <symbol id="remove-square" viewBox="-2 -2 288 288"><use xlink:href="#in-remove"/><use class="svg-sub" xlink:href="#square"/></symbol>
+                        <symbol id="remove-square-fill" viewBox="-2 -2 288 288"><use xlink:href="#in-remove"/><use class="svg-fill" xlink:href="#square"/></symbol>
                         <symbol id="remove-shield" viewBox="-2 -2 288 288"><use xlink:href="#in-remove"/><use class="svg-sub" xlink:href="#shield"/></symbol>
-                        <symbol id="remove-marker" viewBox="-2 -2 288 288"><use y="-15" xlink:href="#in-remove"/><use class="svg-sub" xlink:href="#marker"/></symbol>
+                        <symbol id="remove-shield-fill" viewBox="-2 -2 288 288"><use xlink:href="#in-remove"/><use class="svg-fill" xlink:href="#shield"/></symbol>
+                        <symbol id="remove-marker" viewBox="-2 -2 288 288"><use y="-20" xlink:href="#in-remove"/><use class="svg-sub" xlink:href="#marker"/></symbol>
+                        <symbol id="remove-marker-fill" viewBox="-2 -2 288 288"><use y="-20" xlink:href="#in-remove"/><use class="svg-fill" xlink:href="#marker"/></symbol>
                         <symbol id="check" viewBox="-8 -44 288 288"><path d="M257 17L101.2 184.6 16.9 89"/></symbol>
                         <symbol id="check-circle" viewBox="-1 -2 288 288"><use xlink:href="#in-check"/><use class="svg-sub" xlink:href="#circle"/></symbol>
+                        <symbol id="check-circle-fill" viewBox="-1 -2 288 288"><use xlink:href="#in-check"/><use class="svg-fill" xlink:href="#circle"/></symbol>
                         <symbol id="check-badge" viewBox="0 -2 288 288"><use xlink:href="#in-check"/><use class="svg-sub" xlink:href="#badge"/></symbol>
+                        <symbol id="check-badge-fill" viewBox="0 -2 288 288"><use xlink:href="#in-check"/><use class="svg-fill" xlink:href="#badge"/></symbol>
                         <symbol id="check-square" viewBox="-2 -2 288 288"><use xlink:href="#in-check"/><use class="svg-sub" xlink:href="#square"/></symbol>
+                        <symbol id="check-square-fill" viewBox="-2 -2 288 288"><use xlink:href="#in-check"/><use class="svg-fill" xlink:href="#square"/></symbol>
                         <symbol id="check-shield" viewBox="-2 -2 288 288"><use xlink:href="#in-check"/><use class="svg-sub" xlink:href="#shield"/></symbol>
-                        <symbol id="check-marker" viewBox="-2 -2 288 288"><use y="-15" xlink:href="#in-check"/><use class="svg-sub" xlink:href="#marker"/></symbol>
+                        <symbol id="check-shield-fill" viewBox="-2 -2 288 288"><use xlink:href="#in-check"/><use class="svg-fill" xlink:href="#shield"/></symbol>
+                        <symbol id="check-marker" viewBox="-2 -2 288 288"><use y="-16" xlink:href="#in-check"/><use class="svg-sub" xlink:href="#marker"/></symbol>
+                        <symbol id="check-marker-fill" viewBox="-2 -2 288 288"><use y="-16" xlink:href="#in-check"/><use class="svg-fill" xlink:href="#marker"/></symbol>
                         <symbol id="bars" viewBox="-12 -44 288 288"><path d="M12 188h240M12 12h240"/><path transform="translate(0 90)" class="svg-sub" d="M12 12h240"/></symbol>
                         <symbol id="bars-left" viewBox="-12 -44 288 288"><path d="M12 188h168M12 12h240"/><path transform="translate(0 90)" class="svg-sub" d="M12 12h124"/></symbol>
                         <symbol id="bars-right" viewBox="-12 -44 288 288"><path d="M252 188H84M252 12H12"/><path transform="translate(116 90)" class="svg-sub" d="M136 12H12"/></symbol>
                         <symbol id="bars-center" viewBox="-12 -44 288 288"><path d="M216 188H48M252 12H12"/><path transform="translate(58 90)" class="svg-sub" d="M133 12H12"/></symbol>
-                        <symbol id="grid-row" viewBox="-12 -12 288 288"><path d="M12 156h240v96H12zM12 12h240v96H12z"/></symbol>
+                        <symbol id="grid-row" viewBox="-12 -12 288 288"><path d="M12 12h240v96H12z"/><path class="svg-sub" transform="translate(0 144)" d="M12 12h240v96H12z"/></symbol>
                         <symbol id="grid-row-fill" viewBox="-2 -2 288 288"><use class="svg-fill" xlink:href="#grid-row"/></symbol>
-                        <symbol id="grid-column" viewBox="-12 -12 288 288"><path d="M12 12h96v96H12zM12 156h96v96H12zM156 12h96v96h-96zM156 156h96v96h-96z"/></symbol>
+                        <symbol id="grid-column" viewBox="-12 -12 288 288"><path d="M12 12h96v96H12z"/><path class="svg-sub" transform="translate(144 0)" d="M12 12h96v96H12z"/><path class="svg-sub" transform="translate(0 144)" d="M12 12h96v96H12z"/><path class="svg-sub" transform="translate(144 144)" d="M12 12h96v96H12z"/></symbol>
                         <symbol id="grid-column-fill" viewBox="-2 -2 288 288"><use class="svg-fill" xlink:href="#grid-column"/></symbol>
-                        <symbol id="grid-column-sm" viewBox="-12 -12 288 288"><path d="M12 204h48v48H12zM108 204h48v48h-48zM204 204h48v48h-48zM12 108h48v48H12zM108 108h48v48h-48zM204 108h48v48h-48zM12 12h48v48H12zM108 12h48v48h-48zM204 12h48v48h-48z"/></symbol>
+                        <symbol id="grid-column-sm" viewBox="-12 -12 288 288"><path d="M12 12h48v48H12z"/><path class="svg-sub" transform="translate(98 0)" d="M12 12h48v48H12z"/><path class="svg-sub" transform="translate(194 0)" d="M12 12h48v48H12z"/><path class="svg-sub" transform="translate(0 98)" d="M12 12h48v48H12z"/><path class="svg-sub" transform="translate(98 98)" d="M12 12h48v48H12z"/><path class="svg-sub" transform="translate(194 98)" d="M12 12h48v48H12z"/><path class="svg-sub" transform="translate(0 194)" d="M12 12h48v48H12z"/><path class="svg-sub" transform="translate(98 194)" d="M12 12h48v48H12z"/><path class="svg-sub" transform="translate(194 194)" d="M12 12h48v48H12z"/></symbol>
                         <symbol id="grid-column-sm-fill" viewBox="-2 -2 288 288"><use class="svg-fill" xlink:href="#grid-column-sm"/></symbol>
-                        <symbol id="grid-flow" viewBox="-12 -12 288 288"><path d="M12 212h240v40H12zM12 12h240v152H12z"/></symbol>
+                        <symbol id="grid-flow" viewBox="-12 -12 288 288"><path d="M12 12h240v152H12z"/><path class="svg-sub" transform="translate(0 200)" d="M12 12h240v40H12z"/></symbol>
                         <symbol id="grid-flow-fill" viewBox="-2 -2 288 288"><use class="svg-fill" xlink:href="#grid-flow"/></symbol>
-                        <symbol id="sync" viewBox="-8 -21 288 288"><path d="M246 141a112 112 0 01-217.6 17 M61.5 168.3L27.7 156l-12.3 33.8 M24.4 108.3a112 112 0 01217.8-17.8 M209.4 79.8l33.8 12.3 12.3-33.8"/></symbol>
-                        <symbol id="user" viewBox="-12 18 288 288"><path d="M89.6 144.2a60 60 0 1184.8 0 M233.1 281.8H31a18.7 18.7 0 01-13.4-5.5A18.7 18.7 0 0112 263v-5.2a120 120 0 015.8-37 119.5 119.5 0 0116.3-32.4 120.5 120.5 0 0124.8-25.8 119.7 119.7 0 0131.6-17.4 59.7 59.7 0 0041.5 16.6 59.7 59.7 0 0041.5-16.6 119.7 119.7 0 0131.6 17.4 120.5 120.5 0 0124.8 25.8 119.5 119.5 0 0116.3 32.4 120 120 0 015.8 37v5.2a18.7 18.7 0 01-5.5 13.3 18.7 18.7 0 01-13.4 5.5z"/></symbol>
-                        <symbol id="user-circle" viewBox="-2 -2 288 288"><path transform="translate(42 42)" d="M70.6 113.6a45.5 45.5 0 1164.4 0 M14.6 176.9l1.5-5.2A90.7 90.7 0 0128.5 147a91.5 91.5 0 0118.8-19.6 90.8 90.8 0 0124-13.2 45.3 45.3 0 0031.5 12.6 45.3 45.3 0 0031.4-12.6 90.8 90.8 0 0124 13.2 91.5 91.5 0 0118.9 19.6 90.7 90.7 0 0112.3 24.5c.7 2.1 1.3 4.2 1.9 6.7"/><use class="svg-sub" xlink:href="#circle"/></symbol>
-                        <symbol id="users" viewBox="-2 -2 288 288"><path transform="translate(10 52)" d="M70.9 146h0zm0 0H22.5a10.4 10.4 0 01-7.4-3 10.4 10.4 0 01-3.1-7.5v-2.8a66.6 66.6 0 013.2-20.6 66.4 66.4 0 019-18A67 67 0 0138 79.9a66.4 66.4 0 0117.6-9.6 33.2 33.2 0 0023 9.2 33.1 33.1 0 0023-9.2 66.4 66.4 0 0116.8 9 91.5 91.5 0 00-13 8.3 91.5 91.5 0 00-18.8 19.6 90.6 90.6 0 00-12.3 24.6 90.8 90.8 0 00-3.4 14.3zM45 45.5A33.5 33.5 0 0178.5 12 33.5 33.5 0 01112 45.5 33.5 33.5 0 0178.5 79 33.5 33.5 0 0145 45.5z"/><use xlink:href="#in-user"/></symbol>
-                        <symbol id="user-minus" viewBox="-2 -2 288 288"><path transform="translate(8 102)" d="M76 12H12"/><use xlink:href="#in-user"/></symbol>
-                        <symbol id="user-plus" viewBox="-2 -2 288 288"><path transform="translate(8 68)" d="M76 44H12M44 12v64"/><use xlink:href="#in-user"/></symbol>
-                        <symbol id="user-check" viewBox="-2 -2 288 288"><path transform="translate(8 78)" d="M84.9 17L41 64.8 17 40.9"/><use xlink:href="#in-user"/></symbol>
-                        <symbol id="user-remove" viewBox="-2 -2 288 288"><path transform="translate(8 68)" d="M67.9 17l-51 50.9M67.9 67.9l-51-51"/><use xlink:href="#in-user"/></symbol>
-                        <symbol id="user-search" viewBox="-2 -2 288 288"><path transform="translate(8 60)" d="M71.9 71.9L54.2 54.2M36.2 12A24.2 24.2 0 1112 36.2 24.2 24.2 0 0136.2 12z"/><use xlink:href="#in-user"/></symbol>
-                        <symbol id="user-no" viewBox="-2 -2 288 288"><path transform="translate(10 62)" d="M61.2 20L19.5 61.7M41 10a31 31 0 11-31 31 31 31 0 0131-31z"/><use xlink:href="#in-user"/></symbol>
+                        <symbol id="sync" viewBox="-8 -20 288 288"><path d="M24.4 108.3a112 112 0 01217.8-17.8 M209.4 79.8l33.8 12.3 12.3-33.8"/><path class="svg-sub" d="M246 140.5a112 112 0 01-217.6 17 M61.5 168.3L27.7 156l-12.3 33.8"/></symbol>
+                        <symbol id="user" viewBox="-12 -12 288 288"><path d="M132 12a60 60 0 11-60 60 60 60 0 0160-60z M233.1 252H31a18.7 18.7 0 01-13.4-5.5A18.7 18.7 0 0112 233V228a120 120 0 015.8-37 119.5 119.5 0 0116.3-32.4 120.5 120.5 0 0124.8-25.8 119.7 119.7 0 0131.6-17.4A59.7 59.7 0 00132 132a59.7 59.7 0 0041.5-16.6 119.7 119.7 0 0131.6 17.4 120.5 120.5 0 0124.8 25.8 119.5 119.5 0 0116.3 32.4 120 120 0 015.8 37v5.1a18.7 18.7 0 01-5.5 13.4A18.7 18.7 0 01233 252z" stroke-linejoin="round"/></symbol>
+                        <symbol id="user-fill" viewBox="-2 -2 288 288"><use class="svg-fill" xlink:href="#user"/></symbol>
+                        <symbol id="users" viewBox="-2 -2 288 288"><path class="svg-sub" transform="translate(10 52)" d="M78.5 12A33.5 33.5 0 1145 45.5 33.5 33.5 0 0178.5 12z M69.2 146H22.5a10.4 10.4 0 01-7.4-3 10.4 10.4 0 01-3.1-7.5v-2.8a66.6 66.6 0 013.2-20.6 66.3 66.3 0 019-18A67 67 0 0138 79.9a66.4 66.4 0 0117.6-9.6 33.1 33.1 0 0023 9.2 33.1 33.1 0 0023-9.2 66.4 66.4 0 0115.5 8.2 92.2 92.2 0 00-13 8.3 92.3 92.3 0 00-19 19.8 91.5 91.5 0 00-12.4 24.8 91.6 91.6 0 00-3.5 14.7z" stroke-linejoin="round"/><use xlink:href="#in-user"/></symbol>
+                        <symbol id="users-fill" viewBox="-2 -2 288 288"><use class="svg-fill" xlink:href="#users"/></symbol>
+                        <symbol id="user-circle" viewBox="-1 -2 288 288"><use class="svg-sub" xlink:href="#in-user-circle"/><use xlink:href="#circle"/></symbol>
+                        <symbol id="user-circle-fill" viewBox="-1 -2 288 288"><use xlink:href="#in-user-circle"/><use class="svg-fill" xlink:href="#circle"/></symbol>
+                        <symbol id="user-minus" viewBox="-2 -2 288 288"><path class="svg-sub" transform="translate(8 102)" d="M76 12H12"/><use xlink:href="#in-user"/></symbol>
+                        <symbol id="user-minus-fill" viewBox="-2 -2 288 288"><path transform="translate(8 102)" d="M76 12H12"/><use class="svg-fill" xlink:href="#in-user"/></symbol>
+                        <symbol id="user-plus" viewBox="-2 -2 288 288"><path class="svg-sub" transform="translate(8 68)" d="M76 44H12M44 12v64"/><use xlink:href="#in-user"/></symbol>
+                        <symbol id="user-plus-fill" viewBox="-2 -2 288 288"><path transform="translate(8 68)" d="M76 44H12M44 12v64"/><use class="svg-fill" xlink:href="#in-user"/></symbol>
+                        <symbol id="user-check" viewBox="-2 -2 288 288"><path class="svg-sub" transform="translate(8 78)" d="M84.9 17L41 64.8 17 40.9"/><use xlink:href="#in-user"/></symbol>
+                        <symbol id="user-check-fill" viewBox="-2 -2 288 288"><path transform="translate(8 78)" d="M84.9 17L41 64.8 17 40.9"/><use class="svg-fill" xlink:href="#in-user"/></symbol>
+                        <symbol id="user-remove" viewBox="-2 -2 288 288"><path class="svg-sub" transform="translate(8 68)" d="M67.9 17l-51 50.9M67.9 67.9l-51-51"/><use xlink:href="#in-user"/></symbol>
+                        <symbol id="user-remove-fill" viewBox="-2 -2 288 288"><path transform="translate(8 68)" d="M67.9 17l-51 50.9M67.9 67.9l-51-51"/><use class="svg-fill" xlink:href="#in-user"/></symbol>
+                        <symbol id="user-search" viewBox="-2 -2 288 288"><path class="svg-sub" transform="translate(8 60)" d="M71.9 71.9L54.2 54.2M36.2 12A24.2 24.2 0 1112 36.2 24.2 24.2 0 0136.2 12z"/><use xlink:href="#in-user"/></symbol>
+                        <symbol id="user-search-fill" viewBox="-2 -2 288 288"><path transform="translate(8 60)" d="M71.9 71.9L54.2 54.2M36.2 12A24.2 24.2 0 1112 36.2 24.2 24.2 0 0136.2 12z"/><use class="svg-fill" xlink:href="#in-user"/></symbol>
+                        <symbol id="user-no" viewBox="-2 -2 288 288"><path class="svg-sub" transform="translate(10 62)" d="M61.2 20L19.5 61.7M41 10a31 31 0 11-31 31 31 31 0 0131-31z"/><use xlink:href="#in-user"/></symbol>
+                        <symbol id="user-no-fill" viewBox="-2 -2 288 288"><path transform="translate(10 62)" d="M61.2 20L19.5 61.7M41 10a31 31 0 11-31 31 31 31 0 0131-31z"/><use class="svg-fill" xlink:href="#in-user"/></symbol>
                         <symbol id="loader-line" viewBox="-128 -12 288 288"><path d="M12 12a120 120 0 01120 120"/></symbol>
-                        <symbol id="loader-line-dual" viewBox="-12 -12 288 288"><path d="M132 252A120 120 0 0112 132M132 12a120 120 0 01120 120"/></symbol>
-                        <symbol id="loader-line-dash" viewBox="-12 -12 288 288"><path d="M12 132a119.7 119.7 0 0135.1-84.9M252 132a119.7 119.7 0 01-35.1 84.9M132 252a119.7 119.7 0 01-84.9-35.1M132 12a119.7 119.7 0 0184.9 35.1"/></symbol>
+                        <symbol id="loader-line-dual" viewBox="-12 -12 288 288"><path d="M132 252A120 120 0 0112 132"/><path class="svg-sub" d="M132 12a120 120 0 01120 120"/></symbol>
+                        <symbol id="loader-line-dash" viewBox="-12 -12 288 288"><path d="M132 12a119.7 119.7 0 0184.9 35.1 M132 252a119.7 119.7 0 01-84.9-35.1"/><path class="svg-sub" d="M252 132a119.7 119.7 0 01-35.1 84.9 M12 132a119.7 119.7 0 0135.1-84.9"/></symbol>
                         <symbol id="loader-roll" viewBox="-12 -12 288 288"><path d="M132 12A120 120 0 1112 132"/></symbol>
-                        <symbol id="loader-spin" viewBox="-12 -12 288 288"><path d="M132 12v32M132 220v32M12 132h32M220 132h32M47.1 216.9l22.7-22.7M194.2 69.8L217 47M194.2 194.2L217 217"/></symbol>
-                        <symbol id="loader-dot" viewBox="-12 -12 288 288"><path class="svg-full" d="M24 120a12 12 0 1012 12 12 12 0 00-12-12zM56 196a12 12 0 1012 12 12 12 0 00-12-12zM132 228a12 12 0 1012 12 12 12 0 00-12-12zM208 196a12 12 0 1012 12 12 12 0 00-12-12zM240 120a12 12 0 1012 12 12 12 0 00-12-12zM208 44a12 12 0 1012 12 12 12 0 00-12-12zM132 12a12 12 0 1012 12 12 12 0 00-12-12z"/></symbol>
-                        <symbol id="loader-circle" viewBox="-12 -12 288 288"><path d="M212 172a40 40 0 11-40 40 40 40 0 0140-40zM52 173a40 40 0 11-40 40 40 40 0 0140-40zM212 12a40 40 0 11-40 40 40 40 0 0140-40zM52 12a40 40 0 11-40 40 40 40 0 0140-40z"/></symbol>
-                        <symbol id="loader-circle-fill" viewBox="-2 -2 288 288"><use class="svg-full" xlink:href="#loader-circle"/></symbol>
-                        <symbol id="loader-drop" viewBox="-12 -12 288 288"><path d="M212 172.1c-22.1 0-44-40-44-40s21.9-40 44-40a40 40 0 110 80zM172.1 212c0-22.1-40-44-40-44s-40 21.9-40 44a40 40 0 0080 0zM92.1 52c0 22 40 44 40 44s40-22 40-44a40 40 0 00-80 0zM52 92.1c22 0 44 40 44 40s-22 40-44 40a40 40 0 010-80z"/></symbol>
-                        <symbol id="loader-drop-fill" viewBox="-2 -2 288 288"><use class="svg-full" xlink:href="#loader-drop"/></symbol>
+                        <symbol id="loader-spin" viewBox="-12 -12 288 288"><path d="M12 132h32"/><path class="svg-sub" d="M132 12v32M132 220v32M220 132h32M47.1 216.9l22.7-22.7M194.2 69.8L217 47M194.2 194.2L217 217"/></symbol>
+                        <symbol id="loader-dot" viewBox="-12 -12 288 288"><path class="svg-full" d="M24 120a12 12 0 1012 12 12 12 0 00-12-12z"/><path class="svg-sub svg-fill" d="M56 196a12 12 0 1012 12 12 12 0 00-12-12zM132 228a12 12 0 1012 12 12 12 0 00-12-12zM208 196a12 12 0 1012 12 12 12 0 00-12-12zM240 120a12 12 0 1012 12 12 12 0 00-12-12zM208 44a12 12 0 1012 12 12 12 0 00-12-12zM132 12a12 12 0 1012 12 12 12 0 00-12-12z"/></symbol>
+                        <symbol id="loader-circle" viewBox="-12 -12 288 288"><path class="svg-full" d="M212 12a40 40 0 11-40 40 40 40 0 0140-40z"/><path class="svg-sub" d="M212 172a40 40 0 11-40 40 40 40 0 0140-40zM52 173a40 40 0 11-40 40 40 40 0 0140-40zM52 12a40 40 0 11-40 40 40 40 0 0140-40z"/></symbol>
+                        <symbol id="loader-circle-fill" viewBox="-2 -2 288 288"><use class="svg-fill" xlink:href="#loader-circle"/></symbol>
+                        <symbol id="loader-drop" viewBox="-12 -12 288 288"><path class="svg-full" d="M172.1 212c0-22.1-40-44-40-44s-40 21.9-40 44a40 40 0 0080 0zM92.1 52c0 22 40 44 40 44s40-22 40-44a40 40 0 00-80 0z"/><path class="svg-sub" d="M212 172.1c-22.1 0-44-40-44-40s21.9-40 44-40a40 40 0 110 80zM52 92.1c22 0 44 40 44 40s-22 40-44 40a40 40 0 010-80z"/></symbol>
+                        <symbol id="loader-drop-fill" viewBox="-2 -2 288 288"><use class="svg-fill" xlink:href="#loader-drop"/></symbol>
 
                         <!-- general: shared only -->
-                        <symbol id="in-alert" viewBox="-132 -72 288 288"><path d="M12 132v-1M12 12v76"/></symbol>
-                        <symbol id="in-info" viewBox="-132 -72 288 288"><path d="M12 132V56M12 12v1"/></symbol>
-                        <symbol id="in-question" viewBox="-94 -68 288 288"><path d="M52.4 138v1 M14.7 36.8C17.4 26.6 30 12 51.1 12s36.8 16.7 36.8 33.2-9.7 22.7-24 32.7-13.2 23.6-13.2 23.6"/></symbol>
-                        <symbol id="in-minus" viewBox="-65 -133 288 288"><path d="M12 12h137"/></symbol>
-                        <symbol id="in-plus" viewBox="-65 -64 288 288"><path d="M80.5 12v137M12 80.5h137"/></symbol>
-                        <symbol id="in-remove" viewBox="-84 -82 288 288"><path d="M105 17l-88 88M17 17l88 88"/></symbol>
-                        <symbol id="in-check" viewBox="-66 -90 288 288"><path d="M136 17L58.7 100 16.9 52.7"/></symbol>
-                        <symbol id="in-user" viewBox="-68 -14 288 288"><path d="M70.9 113.6a45.5 45.5 0 1164.4 0 M179.8 218H26.3a14.2 14.2 0 01-10.1-4.2 14.2 14.2 0 01-4.2-10.1v-4a91 91 0 014.4-28A90.7 90.7 0 0128.8 147a91.5 91.5 0 0118.8-19.6 90.8 90.8 0 0124-13.2 45.3 45.3 0 0031.5 12.6 45.3 45.3 0 0031.4-12.6 90.8 90.8 0 0124 13.2 91.5 91.5 0 0118.9 19.6 90.7 90.7 0 0112.3 24.5 91 91 0 014.4 28.2v3.9a14.2 14.2 0 01-4.2 10 14.2 14.2 0 01-10 4.3z"/></symbol>
+                        <symbol id="in-alert" viewBox="-132 -72 288 288"><path d="M12 132v-8M12 12v72"/></symbol>
+                        <symbol id="in-info" viewBox="-132 -72 288 288"><path d="M12 12v8M12 132V60"/></symbol>
+                        <symbol id="in-question" viewBox="-93 -68 288 288"><path d="M14.7 36.8C17.4 26.6 30 12 51.1 12s36.8 16.7 36.8 33.2-9.7 22.7-24 32.7a31.3 31.3 0 00-11 13 M52.7 139v-8"/></symbol>
+                        <symbol id="in-minus" viewBox="-84 -133 288 288"><path d="M12 12h96"/></symbol>
+                        <symbol id="in-plus" viewBox="-84 -84 288 288"><path d="M60 12v96M12 60h96"/></symbol>
+                        <symbol id="in-remove" viewBox="-93 -93 288 288"><path d="M17 17l67.9 67.9M17 84.9l67.9-68"/></symbol>
+                        <symbol id="in-check" viewBox="-78 -98 288 288"><path d="M113 17L51.8 82 17 48.7"/></symbol>
+                        <symbol id="in-user" viewBox="-68 -38 288 288"><path d="M103.9 12a46 46 0 11-46 46 46 46 0 0146-46z M181.4 195.8h-155a14.3 14.3 0 01-10.2-4.2 14.3 14.3 0 01-4.2-10.2v-4a91.8 91.8 0 014.5-28.3 91.5 91.5 0 0112.4-24.8 92.3 92.3 0 0119-19.8 91.6 91.6 0 0124.2-13.3 45.7 45.7 0 0031.8 12.7 45.7 45.7 0 0031.8-12.7 91.6 91.6 0 0124.2 13.3 92.3 92.3 0 0119 19.8 91.5 91.5 0 0112.4 24.8 91.8 91.8 0 014.5 28.3v4a14.3 14.3 0 01-4.2 10.2 14.3 14.3 0 01-10.2 4.2z" stroke-linejoin="round"/></symbol>
+                        <symbol id="in-user-circle" viewBox="-42 -48 288 288"><path d="M70.6 113.6a45.5 45.5 0 1164.4 0 M14.6 176.9l1.5-5.2A90.7 90.7 0 0128.5 147a91.5 91.5 0 0118.8-19.6 90.8 90.8 0 0124-13.2 45.3 45.3 0 0031.5 12.6 45.3 45.3 0 0031.4-12.6 90.8 90.8 0 0124 13.2 91.5 91.5 0 0118.9 19.6 90.7 90.7 0 0112.3 24.5c.7 2.1 1.3 4.2 1.9 6.7"/></symbol>
 
                     </svg>
 
                     <h2>General</h2>
                     <ul class="icons-list list-custom theme-default ease-1st-bg ease-2nd-all">
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#angle-down"/></svg><span>angle-down</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#angle-left"/></svg><span>angle-left</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#angle-right"/></svg><span>angle-right</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#angle-up"/></svg><span>angle-up</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#angle-dual-down"/></svg><span>angle-dual-down</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#angle-dual-left"/></svg><span>angle-dual-left</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#angle-dual-right"/></svg><span>angle-dual-right</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#angle-dual-up"/></svg><span>angle-dual-up</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#arrow-down"/></svg><span>arrow-down</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#arrow-left"/></svg><span>arrow-left</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#arrow-right"/></svg><span>arrow-right</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#arrow-up"/></svg><span>arrow-up</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#long-arrow-down"/></svg><span>long-arrow-down</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#long-arrow-left"/></svg><span>long-arrow-left</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#long-arrow-right"/></svg><span>long-arrow-right</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#long-arrow-up"/></svg><span>long-arrow-up</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#exchange-v"/></svg><span>exchange-v</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#exchange-h"/></svg><span>exchange-h</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#move"/></svg><span>move</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#bars"/></svg><span>bars</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#bars-left"/></svg><span>bars-left</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#bars-right"/></svg><span>bars-right</sp-rightn></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#bars-center"/></svg><span>bars-center</span-center</li>
-                        <li><svg class="icon icon-xxl icon-black"><use class="svg-sub" xlink:href="#circle"/></svg><span>circle</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#circle-fill"/></svg><span>circle-fill</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use class="svg-sub" xlink:href="#badge"/></svg><span>badge</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#badge-fill"/></svg><span>badge-fill</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use class="svg-sub" xlink:href="#square"/></svg><span>square</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#square-fill"/></svg><span>square-fill</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use class="svg-sub" xlink:href="#shield"/></svg><span>shield</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#shield-fill"/></svg><span>shield-fill</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use class="svg-sub" xlink:href="#marker"/></svg><span>marker</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#marker-fill"/></svg><span>marker-fill</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#alert"/></svg><span>alert</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#alert-triangle"/></svg><span>alert-triangle</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#alert-circle"/></svg><span>alert-circle</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#alert-badge"/></svg><span>alert-badge</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#alert-square"/></svg><span>alert-square</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#alert-shield"/></svg><span>alert-shield</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#alert-marker"/></svg><span>alert-marker</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#info"/></svg><span>info</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#info-circle"/></svg><span>info-circle</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#info-badge"/></svg><span>info-badge</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#info-square"/></svg><span>info-square</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#info-shield"/></svg><span>info-shield</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#info-marker"/></svg><span>info-marker</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#question"/></svg><span>question</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#question-circle"/></svg><span>question-circle</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#question-badge"/></svg><span>question-badge</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#question-square"/></svg><span>question-square</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#question-shield"/></svg><span>question-shield</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#question-marker"/></svg><span>question-marker</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#minus"/></svg><span>minus</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#minus-circle"/></svg><span>minus-circle</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#minus-badge"/></svg><span>minus-badge</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#minus-square"/></svg><span>minus-square</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#minus-shield"/></svg><span>minus-shield</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#minus-marker"/></svg><span>minus-marker</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#plus"/></svg><span>plus</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#plus-circle"/></svg><span>plus-circle</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#plus-badge"/></svg><span>plus-badge</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#plus-square"/></svg><span>plus-square</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#plus-shield"/></svg><span>plus-shield</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#plus-marker"/></svg><span>plus-marker</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#remove"/></svg><span>remove</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#remove-circle"/></svg><span>remove-circle</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#remove-badge"/></svg><span>remove-badge</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#remove-square"/></svg><span>remove-square</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#remove-shield"/></svg><span>remove-shield</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#remove-marker"/></svg><span>remove-marker</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#check"/></svg><span>check</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#check-circle"/></svg><span>check-circle</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#check-badge"/></svg><span>check-badge</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#check-square"/></svg><span>check-square</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#check-shield"/></svg><span>check-shield</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#check-marker"/></svg><span>check-marker</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#angle-down"/></svg><span>angle-down</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#angle-left"/></svg><span>angle-left</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#angle-right"/></svg><span>angle-right</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#angle-up"/></svg><span>angle-up</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#angle-dual-down"/></svg><span>angle-dual-down</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#angle-dual-left"/></svg><span>angle-dual-left</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#angle-dual-right"/></svg><span>angle-dual-right</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#angle-dual-up"/></svg><span>angle-dual-up</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#arrow-down"/></svg><span>arrow-down</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#arrow-left"/></svg><span>arrow-left</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#arrow-right"/></svg><span>arrow-right</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#arrow-up"/></svg><span>arrow-up</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#long-arrow-down"/></svg><span>long-arrow-down</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#long-arrow-left"/></svg><span>long-arrow-left</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#long-arrow-right"/></svg><span>long-arrow-right</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#long-arrow-up"/></svg><span>long-arrow-up</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#exchange-v"/></svg><span>exchange-v</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#exchange-h"/></svg><span>exchange-h</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#move"/></svg><span>move</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#bars"/></svg><span>bars</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#bars-left"/></svg><span>bars-left</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#bars-right"/></svg><span>bars-right</sp-rightn></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#bars-center"/></svg><span>bars-center</span-center</li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#circle"/></svg><span>circle</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#circle-fill"/></svg><span>circle-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#badge"/></svg><span>badge</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#badge-fill"/></svg><span>badge-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#square"/></svg><span>square</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#square-fill"/></svg><span>square-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#shield"/></svg><span>shield</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#shield-fill"/></svg><span>shield-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#marker"/></svg><span>marker</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#marker-fill"/></svg><span>marker-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#alert"/></svg><span>alert</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#alert-triangle"/></svg><span>alert-triangle</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#alert-triangle-fill"/></svg><span>alert-triangle-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#alert-circle"/></svg><span>alert-circle</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#alert-circle-fill"/></svg><span>alert-circle-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#alert-badge"/></svg><span>alert-badge</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#alert-badge-fill"/></svg><span>alert-badge-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#alert-square"/></svg><span>alert-square</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#alert-square-fill"/></svg><span>alert-square-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#alert-shield"/></svg><span>alert-shield</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#alert-shield-fill"/></svg><span>alert-shield-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#alert-marker"/></svg><span>alert-marker</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#alert-marker-fill"/></svg><span>alert-marker-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#info"/></svg><span>info</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#info-circle"/></svg><span>info-circle</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#info-circle-fill"/></svg><span>info-circle-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#info-badge"/></svg><span>info-badge</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#info-badge-fill"/></svg><span>info-badge-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#info-square"/></svg><span>info-square</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#info-square-fill"/></svg><span>info-square-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#info-shield"/></svg><span>info-shield</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#info-shield-fill"/></svg><span>info-shield-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#info-marker"/></svg><span>info-marker</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#info-marker-fill"/></svg><span>info-marker-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#question"/></svg><span>question</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#question-circle"/></svg><span>question-circle</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#question-circle-fill"/></svg><span>question-circle-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#question-badge"/></svg><span>question-badge</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#question-badge-fill"/></svg><span>question-badge-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#question-square"/></svg><span>question-square</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#question-square-fill"/></svg><span>question-square-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#question-shield"/></svg><span>question-shield</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#question-shield-fill"/></svg><span>question-shield-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#question-marker"/></svg><span>question-marker</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#question-marker-fill"/></svg><span>question-marker-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#minus"/></svg><span>minus</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#minus-circle"/></svg><span>minus-circle</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#minus-circle-fill"/></svg><span>minus-circle-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#minus-badge"/></svg><span>minus-badge</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#minus-badge-fill"/></svg><span>minus-badge-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#minus-square"/></svg><span>minus-square</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#minus-square-fill"/></svg><span>minus-square-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#minus-shield"/></svg><span>minus-shield</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#minus-shield-fill"/></svg><span>minus-shield-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#minus-marker"/></svg><span>minus-marker</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#minus-marker-fill"/></svg><span>minus-marker-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#plus"/></svg><span>plus</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#plus-circle"/></svg><span>plus-circle</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#plus-circle-fill"/></svg><span>plus-circle-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#plus-badge"/></svg><span>plus-badge</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#plus-badge-fill"/></svg><span>plus-badge-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#plus-square"/></svg><span>plus-square</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#plus-square-fill"/></svg><span>plus-square-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#plus-shield"/></svg><span>plus-shield</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#plus-shield-fill"/></svg><span>plus-shield-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#plus-marker"/></svg><span>plus-marker</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#plus-marker-fill"/></svg><span>plus-marker-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#remove"/></svg><span>remove</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#remove-circle"/></svg><span>remove-circle</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#remove-circle-fill"/></svg><span>remove-circle-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#remove-badge"/></svg><span>remove-badge</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#remove-badge-fill"/></svg><span>remove-badge-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#remove-square"/></svg><span>remove-square</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#remove-square-fill"/></svg><span>remove-square-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#remove-shield"/></svg><span>remove-shield</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#remove-shield-fill"/></svg><span>remove-shield-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#remove-marker"/></svg><span>remove-marker</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#remove-marker-fill"/></svg><span>remove-marker-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#check"/></svg><span>check</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#check-circle"/></svg><span>check-circle</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#check-circle-fill"/></svg><span>check-circle-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#check-badge"/></svg><span>check-badge</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#check-badge-fill"/></svg><span>check-badge-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#check-square"/></svg><span>check-square</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#check-square-fill"/></svg><span>check-square-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#check-shield"/></svg><span>check-shield</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#check-shield-fill"/></svg><span>check-shield-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#check-marker"/></svg><span>check-marker</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#check-marker-fill"/></svg><span>check-marker-fill</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-address-book"></i><span>address-book</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-address-card"></i><span>address-card</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-home"></i><span>home</span></li>
@@ -507,14 +579,14 @@
                         <li class="opacity-more"><i class="icon icon-xxl icon-gas-pump"></i><span>gas-pump</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-globe"></i><span>globe</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-filter"></i><span>filter</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#grid-row"/></svg><span>grid-row</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#grid-row-fill"/></svg><span>grid-row-fill</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#grid-column"/></svg><span>grid-column</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#grid-column-fill"/></svg><span>grid-column-fill</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#grid-column-sm"/></svg><span>grid-column-sm</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#grid-column-sm-fill"/></svg><span>grid-column-sm-fill</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#grid-flow"/></svg><span>grid-flow</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#grid-flow-fill"/></svg><span>grid-flow-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#grid-row"/></svg><span>grid-row</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#grid-row-fill"/></svg><span>grid-row-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#grid-column"/></svg><span>grid-column</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#grid-column-fill"/></svg><span>grid-column-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#grid-column-sm"/></svg><span>grid-column-sm</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#grid-column-sm-fill"/></svg><span>grid-column-sm-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#grid-flow"/></svg><span>grid-flow</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#grid-flow-fill"/></svg><span>grid-flow-fill</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-heart"></i><span>heart</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-heart-fill"></i><span>heart-fill</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-help"></i><span>help</span></li>
@@ -574,7 +646,7 @@
                         <li class="opacity-more"><i class="icon icon-xxl icon-star"></i><span>star</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-star-half"></i><span>star-half</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-star-fill"></i><span>star-fill</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#sync"/></svg><span>sync</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#sync"/></svg><span>sync</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-table"></i><span>table</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-trash"></i><span>trash</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-trash-fill"></i><span>trash-fill</span></li>
@@ -584,25 +656,34 @@
                         <li class="opacity-more"><i class="icon icon-xxl icon-truck"></i><span>truck</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-truck-fill"></i><span>truck-fill</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-tachometer"></i><span>tachometer</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#user"/></svg><span>user</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#users"/></svg><span>users</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#user-circle"/></svg><span>user-circle</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#user-minus"/></svg><span>user-minus</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#user-plus"/></svg><span>user-plus</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#user-check"/></svg><span>user-check</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#user-remove"/></svg><span>user-remove</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#user-search"/></svg><span>user-search</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#user-no"/></svg><span>user-no</span></li>
-                        <li><svg class="icon animate-spin icon-xxl icon-black"><use xlink:href="#loader-line"/></svg><span>loader-line</span></li>
-                        <li><svg class="icon animate-spin icon-xxl icon-black"><use xlink:href="#loader-line-dual"/></svg><span>loader-line-dual</span></li>
-                        <li><svg class="icon animate-spin icon-xxl icon-black"><use xlink:href="#loader-line-dash"/></svg><span>loader-line-dual</span></li>
-                        <li><svg class="icon animate-spin icon-xxl icon-black"><use xlink:href="#loader-roll"/></svg><span>loader-roll</span></li>
-                        <li><svg class="icon animate-spin icon-xxl icon-black"><use xlink:href="#loader-spin"/></svg><span>loader-spin</span></li>
-                        <li><svg class="icon animate-spin icon-xxl icon-black"><use xlink:href="#loader-dot"/></svg><span>loader-dot</span></li>
-                        <li><svg class="icon animate-spin icon-xxl icon-black"><use xlink:href="#loader-circle"/></svg><span>loader-circle</span></li>
-                        <li><svg class="icon animate-spin icon-xxl icon-black"><use xlink:href="#loader-circle-fill"/></svg><span>loader-circle-fill</span></li>
-                        <li><svg class="icon animate-spin icon-xxl icon-black"><use xlink:href="#loader-drop"/></svg><span>loader-drop</span></li>
-                        <li><svg class="icon animate-spin icon-xxl icon-black"><use xlink:href="#loader-drop-fill"/></svg><span>loader-drop-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#user"/></svg><span>user</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#user-fill"/></svg><span>user-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#users"/></svg><span>users</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#users-fill"/></svg><span>users-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#user-circle"/></svg><span>user-circle</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#user-circle-fill"/></svg><span>user-circle-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#user-minus"/></svg><span>user-minus</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#user-minus-fill"/></svg><span>user-minus-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#user-plus"/></svg><span>user-plus</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#user-plus-fill"/></svg><span>user-plus-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#user-check"/></svg><span>user-check</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#user-check-fill"/></svg><span>user-check-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#user-remove"/></svg><span>user-remove</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#user-remove-fill"/></svg><span>user-remove-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#user-search"/></svg><span>user-search</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#user-search-fill"/></svg><span>user-search-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#user-no"/></svg><span>user-no</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#user-no-fill"/></svg><span>user-no-fill</span></li>
+                        <li><svg class="icon animate-spin icon-xxl"><use xlink:href="#loader-line"/></svg><span>loader-line</span></li>
+                        <li><svg class="icon animate-spin icon-xxl"><use xlink:href="#loader-line-dual"/></svg><span>loader-line-dual</span></li>
+                        <li><svg class="icon animate-spin icon-xxl"><use xlink:href="#loader-line-dash"/></svg><span>loader-line-dash</span></li>
+                        <li><svg class="icon animate-spin icon-xxl"><use xlink:href="#loader-roll"/></svg><span>loader-roll</span></li>
+                        <li><svg class="icon animate-spin icon-xxl"><use xlink:href="#loader-spin"/></svg><span>loader-spin</span></li>
+                        <li><svg class="icon animate-spin icon-xxl"><use xlink:href="#loader-dot"/></svg><span>loader-dot</span></li>
+                        <li><svg class="icon animate-spin icon-xxl"><use xlink:href="#loader-circle"/></svg><span>loader-circle</span></li>
+                        <li><svg class="icon animate-spin icon-xxl"><use xlink:href="#loader-circle-fill"/></svg><span>loader-circle-fill</span></li>
+                        <li><svg class="icon animate-spin icon-xxl"><use xlink:href="#loader-drop"/></svg><span>loader-drop</span></li>
+                        <li><svg class="icon animate-spin icon-xxl"><use xlink:href="#loader-drop-fill"/></svg><span>loader-drop-fill</span></li>
                     </ul>
 
                     <h2>Touch</h2>
