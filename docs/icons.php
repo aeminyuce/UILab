@@ -335,27 +335,36 @@
                         <li><svg class="icon icon-xxl"><use xlink:href="#address-book-fill"/></svg><span>address-book-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#address-card"/></svg><span>address-card</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#address-card-fill"/></svg><span>address-card-fill</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-home"></i><span>home</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-at"></i><span>at</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-infinity"></i><span>infinity</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-bug"></i><span>bug</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-lab"></i><span>lab</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-bell"></i><span>bell</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-bell-fill"></i><span>bell-fill</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-bell-on"></i><span>bell-on</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-award"></i><span>award</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-trophy"></i><span>trophy</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-trophy-star"></i><span>trophy-star</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-birthday"></i><span>birthday</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-gift"></i><span>gift</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#home"/></svg><span>home</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#home-fill"/></svg><span>home-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#at"/></svg><span>at</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#infinity"/></svg><span>infinity</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#bug"/></svg><span>bug</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#bug-fill"/></svg><span>bug-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#lab"/></svg><span>lab</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#lab-fill"/></svg><span>lab-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#bell"/></svg><span>bell</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#bell-fill"/></svg><span>bell-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#bell-on"/></svg><span>bell-on</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#bell-on-fill"/></svg><span>bell-on-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#award"/></svg><span>award</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#award-fill"/></svg><span>award-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#trophy"/></svg><span>trophy</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#trophy-fill"/></svg><span>trophy-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#trophy-star"/></svg><span>trophy-star</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#trophy-star-fill"/></svg><span>trophy-star-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#birthday"/></svg><span>birthday</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#birthday-fill"/></svg><span>birthday-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#gift"/></svg><span>gift</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#gift-fill"/></svg><span>gift-fill</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-book"></i><span>book</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-books"></i><span>books</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-book-open"></i><span>book-open</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-box"></i><span>box</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-boxes"></i><span>boxes</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-code"></i><span>code</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-brackets"></i><span>brackets</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-brackets-curly"></i><span>brackets-curly</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#code"/></svg><span>code</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#brackets"/></svg><span>brackets</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#brackets-curly"/></svg><span>brackets-curly</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-briefcase"></i><span>briefcase</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-bullhorn"></i><span>bullhorn</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-megaphone"></i><span>megaphone</span></li>
@@ -398,8 +407,8 @@
                         <li class="opacity-more"><i class="icon icon-xxl icon-ellipsis-h"></i><span>ellipsis-h</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-envelope"></i><span>envelope</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-envelope-open"></i><span>envelope-open</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-expand"></i><span>expand</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-expand-wide"></i><span>expand-wide</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#expand"/></svg><span>expand</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#expand-wide"/></svg><span>expand-wide</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-eye"></i><span>eye</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-face-blank"></i><span>face-blank</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-face-smile"></i><span>face-smile</span></li>
