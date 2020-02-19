@@ -9,6 +9,7 @@ svg.icon { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linej
 .svg-full,.svg-fill { fill: currentColor !important; }
 .svg-fill { opacity: .25; }
 .svg-sub { opacity: .5; }
+.svg-line { fill: none !important; }
 
 .icon-xxs { font-size: 10px; width: 10px; height: 10px; }
 .icon-xs { font-size: 12px; width: 12px; height: 12px; }
