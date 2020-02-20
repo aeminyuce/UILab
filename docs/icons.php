@@ -370,9 +370,12 @@
                         <li><svg class="icon icon-xxl"><use xlink:href="#code"/></svg><span>code</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#brackets"/></svg><span>brackets</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#brackets-curly"/></svg><span>brackets-curly</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-briefcase"></i><span>briefcase</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-bullhorn"></i><span>bullhorn</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-megaphone"></i><span>megaphone</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#briefcase"/></svg><span>briefcase</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#briefcase-fill"/></svg><span>briefcase-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#bullhorn"/></svg><span>bullhorn</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#bullhorn-fill"/></svg><span>bullhorn-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#megaphone"/></svg><span>megaphone</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#megaphone-fill"/></svg><span>megaphone-fill</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-calculator"></i><span>calculator</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-calculator-btn"></i><span>calculator-btn</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-calendar"></i><span>calendar</span></li>
@@ -394,10 +397,22 @@
                         <li class="opacity-more"><i class="icon icon-xxl icon-clone"></i><span>clone</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-cloud-download"></i><span>cloud-download</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-cloud-upload"></i><span>cloud-upload</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-comment"></i><span>comment</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-comments"></i><span>comments</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-comment-dots"></i><span>comment-dots</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-comment-sms"></i><span>comment-sms</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#comment"/></svg><span>comment</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#comment-fill"/></svg><span>comment-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#comments"/></svg><span>comments</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#comments-fill"/></svg><span>comments-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#comment-minus"/></svg><span>comment-minus</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#comment-minus-fill"/></svg><span>comment-minus-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#comment-plus"/></svg><span>comment-plus</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#comment-plus-fill"/></svg><span>comment-plus-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#comment-remove"/></svg><span>comment-remove</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#comment-remove-fill"/></svg><span>comment-remove-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#comment-lines"/></svg><span>comment-lines</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#comment-lines-fill"/></svg><span>comment-lines-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#comment-dots"/></svg><span>comment-dots</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#comment-dots-fill"/></svg><span>comment-dots-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#comment-sms"/></svg><span>comment-sms</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#comment-sms-fill"/></svg><span>comment-sms-fill</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-compass"></i><span>compass</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-copyright"></i><span>copyright</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-database"></i><span>database</span></li>
@@ -408,8 +423,12 @@
                         <li class="opacity-more"><i class="icon icon-xxl icon-archive"></i><span>archive</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-draw"></i><span>draw</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-edit"></i><span>edit</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-ellipsis-v"></i><span>ellipsis-v</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-ellipsis-h"></i><span>ellipsis-h</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#ellipsis-h"/></svg><span>ellipsis-h</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#ellipsis-h-fill"/></svg><span>ellipsis-h-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#ellipsis-v"/></svg><span>ellipsis-v</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#ellipsis-v-fill"/></svg><span>ellipsis-v-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#skip"/></svg><span>skip</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#skip-fill"/></svg><span>skip-fill</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-envelope"></i><span>envelope</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-envelope-open"></i><span>envelope-open</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#expand"/></svg><span>expand</span></li>
@@ -443,7 +462,6 @@
                         <li class="opacity-more"><i class="icon icon-xxl icon-image"></i><span>image</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-images"></i><span>images</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-images-add"></i><span>images-add</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-jump"></i><span>jump</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-keyboard"></i><span>keyboard</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-land"></i><span>land</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-leaf"></i><span>leaf</span></li>
