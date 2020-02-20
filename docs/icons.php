@@ -376,8 +376,10 @@
                         <li><svg class="icon icon-xxl"><use xlink:href="#bullhorn-fill"/></svg><span>bullhorn-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#megaphone"/></svg><span>megaphone</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#megaphone-fill"/></svg><span>megaphone-fill</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-calculator"></i><span>calculator</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-calculator-btn"></i><span>calculator-btn</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#calculator"/></svg><span>calculator</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#calculator-fill"/></svg><span>calculator-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#calculator-btn"/></svg><span>calculator-btn</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#calculator-btn-fill"/></svg><span>calculator-btn-fill</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-calendar"></i><span>calendar</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-calendar-day"></i><span>calendar-day</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-calendar-star"></i><span>calendar-star</span></li>
