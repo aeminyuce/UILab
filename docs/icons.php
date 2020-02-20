@@ -357,11 +357,16 @@
                         <li><svg class="icon icon-xxl"><use xlink:href="#birthday-fill"/></svg><span>birthday-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#gift"/></svg><span>gift</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#gift-fill"/></svg><span>gift-fill</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-book"></i><span>book</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-books"></i><span>books</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-book-open"></i><span>book-open</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-box"></i><span>box</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-boxes"></i><span>boxes</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#book"/></svg><span>book</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#book-fill"/></svg><span>book-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#books"/></svg><span>books</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#books-fill"/></svg><span>books-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#book-open"/></svg><span>book-open</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#book-open-fill"/></svg><span>book-open-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#box"/></svg><span>box</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#box-fill"/></svg><span>box-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#boxes"/></svg><span>boxes</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#boxes-fill"/></svg><span>boxes-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#code"/></svg><span>code</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#brackets"/></svg><span>brackets</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#brackets-curly"/></svg><span>brackets-curly</span></li>
@@ -470,11 +475,12 @@
                         <li class="opacity-more"><i class="icon icon-xxl icon-reply"></i><span>reply</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-required"></i><span>required</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-save"></i><span>save</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-search"></i><span>search</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-search-marker"></i><span>search-marker</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-search-minus"></i><span>search-minus</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-search-plus"></i><span>search-plus</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-search-star"></i><span>search-star</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#search"/></svg><span>search</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#search-minus"/></svg><span>search-minus</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#search-plus"/></svg><span>search-plus</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#search-star"/></svg><span>search-star</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#search-user"/></svg><span>search-user</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#search-marker"/></svg><span>search-marker</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-setting"></i><span>setting</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-settings"></i><span>settings</span></li>
                         <li class="opacity-more"><i class="icon icon-xxl icon-share"></i><span>share</span></li>
