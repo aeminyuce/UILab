@@ -127,7 +127,7 @@
 
             });
 
-            selector('.total')[0].textContent = totalIcons;
+            selector('.total')[0].textContent = '(Total ' + totalIcons + ' icons)';
 
             icons = selector('.icons-list li');
             events.on(icons, 'click', function () {
@@ -177,7 +177,7 @@
             <div class="col-12">
                 <div class="padding-30 sm-no-padding align-c">
 
-                    <h1>Total <b class="total"></b> Icons</h1>
+                    <h1>SVG Icons<small class="total margin-5-v block half-opacity"></small></h1>
 
                     <div class="row">
                         <div class="col-4">
@@ -423,8 +423,8 @@
                         <li><svg class="icon icon-xxl"><use xlink:href="#cloud-download-fill"/></svg><span>cloud-download-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#cloud-upload"/></svg><span>cloud-upload</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#cloud-upload-fill"/></svg><span>cloud-upload-fill</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#comment"/></svg><span>comment</span></li>
-                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#comment-fill"/></svg><span>comment-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#comment"/></svg><span>comment</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#comment-fill"/></svg><span>comment-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#comments"/></svg><span>comments</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#comments-fill"/></svg><span>comments-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#comment-minus"/></svg><span>comment-minus</span></li>
@@ -439,39 +439,41 @@
                         <li><svg class="icon icon-xxl"><use xlink:href="#comment-dots-fill"/></svg><span>comment-dots-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#comment-sms"/></svg><span>comment-sms</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#comment-sms-fill"/></svg><span>comment-sms-fill</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-compass"></i><span>compass</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-copyright"></i><span>copyright</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-database"></i><span>database</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-news"></i><span>news</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-doc"></i><span>doc</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-docs"></i><span>docs</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-doc-no"></i><span>doc-no</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-archive"></i><span>archive</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-draw"></i><span>draw</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-edit"></i><span>edit</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#compass"/></svg><span>compass</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#compass-fill"/></svg><span>compass-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#copyright"/></svg><span>copyright</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#copyright-fill"/></svg><span>copyright-fill</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-database"></i><span>database</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-news"></i><span>news</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-doc"></i><span>doc</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-docs"></i><span>docs</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-doc-no"></i><span>doc-no</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-archive"></i><span>archive</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-draw"></i><span>draw</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-edit"></i><span>edit</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#ellipsis-h"/></svg><span>ellipsis-h</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#ellipsis-h-fill"/></svg><span>ellipsis-h-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#ellipsis-v"/></svg><span>ellipsis-v</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#ellipsis-v-fill"/></svg><span>ellipsis-v-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#skip"/></svg><span>skip</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#skip-fill"/></svg><span>skip-fill</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-envelope"></i><span>envelope</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-envelope-open"></i><span>envelope-open</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-envelope"></i><span>envelope</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-envelope-open"></i><span>envelope-open</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#expand"/></svg><span>expand</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#expand-wide"/></svg><span>expand-wide</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-eye"></i><span>eye</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-face-blank"></i><span>face-blank</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-face-smile"></i><span>face-smile</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-face-sad"></i><span>face-sad</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-face-meh"></i><span>face-meh</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-factory"></i><span>factory</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-fire"></i><span>fire</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-fire-camp"></i><span>fire-camp</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-flag"></i><span>flag</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-flag-fill"></i><span>flag-fill</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-gas-pump"></i><span>gas-pump</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-globe"></i><span>globe</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-filter"></i><span>filter</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-eye"></i><span>eye</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-face-blank"></i><span>face-blank</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-face-smile"></i><span>face-smile</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-face-sad"></i><span>face-sad</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-face-meh"></i><span>face-meh</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-factory"></i><span>factory</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-fire"></i><span>fire</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-fire-camp"></i><span>fire-camp</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-flag"></i><span>flag</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-flag-fill"></i><span>flag-fill</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-gas-pump"></i><span>gas-pump</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-globe"></i><span>globe</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-filter"></i><span>filter</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#grid-row"/></svg><span>grid-row</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#grid-row-fill"/></svg><span>grid-row-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#grid-column"/></svg><span>grid-column</span></li>
@@ -480,75 +482,75 @@
                         <li><svg class="icon icon-xxl"><use xlink:href="#grid-column-sm-fill"/></svg><span>grid-column-sm-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#grid-flow"/></svg><span>grid-flow</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#grid-flow-fill"/></svg><span>grid-flow-fill</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-heart"></i><span>heart</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-heart-fill"></i><span>heart-fill</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-help"></i><span>help</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-hourglass-start"></i><span>hourglass-start</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-hourglass-end"></i><span>hourglass-end</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-image"></i><span>image</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-images"></i><span>images</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-images-add"></i><span>images-add</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-keyboard"></i><span>keyboard</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-land"></i><span>land</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-leaf"></i><span>leaf</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-water"></i><span>water</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-link"></i><span>link</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-link-external"></i><span>link-external</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-target"></i><span>target</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-location"></i><span>location</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-location-arrow"></i><span>location-arrow</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-key"></i><span>key</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-lock"></i><span>lock</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-lock-open"></i><span>lock-open</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-map"></i><span>map</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-network"></i><span>network</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-no"></i><span>no</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-paw"></i><span>paw</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-pen"></i><span>pen</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-pen-write"></i><span>pen-write</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-pencil"></i><span>pencil</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-pencil-write"></i><span>pencil-write</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-phone"></i><span>phone</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-phone-call"></i><span>phone-call</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-print"></i><span>print</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-puzzle"></i><span>puzzle</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-radiation"></i><span>radiation</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-recycle"></i><span>recycle</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-undo"></i><span>undo</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-redo"></i><span>redo</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-reply"></i><span>reply</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-required"></i><span>required</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-save"></i><span>save</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-heart"></i><span>heart</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-heart-fill"></i><span>heart-fill</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-help"></i><span>help</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-hourglass-start"></i><span>hourglass-start</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-hourglass-end"></i><span>hourglass-end</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-image"></i><span>image</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-images"></i><span>images</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-images-add"></i><span>images-add</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-keyboard"></i><span>keyboard</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-land"></i><span>land</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-leaf"></i><span>leaf</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-water"></i><span>water</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-link"></i><span>link</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-link-external"></i><span>link-external</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-target"></i><span>target</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-location"></i><span>location</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-location-arrow"></i><span>location-arrow</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-key"></i><span>key</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-lock"></i><span>lock</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-lock-open"></i><span>lock-open</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-map"></i><span>map</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-network"></i><span>network</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-no"></i><span>no</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-paw"></i><span>paw</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-pen"></i><span>pen</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-pen-write"></i><span>pen-write</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-pencil"></i><span>pencil</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-pencil-write"></i><span>pencil-write</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-phone"></i><span>phone</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-phone-call"></i><span>phone-call</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-print"></i><span>print</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-puzzle"></i><span>puzzle</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-radiation"></i><span>radiation</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-recycle"></i><span>recycle</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-undo"></i><span>undo</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-redo"></i><span>redo</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-reply"></i><span>reply</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-required"></i><span>required</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-save"></i><span>save</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#search"/></svg><span>search</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#search-minus"/></svg><span>search-minus</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#search-plus"/></svg><span>search-plus</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#search-star"/></svg><span>search-star</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#search-user"/></svg><span>search-user</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#search-marker"/></svg><span>search-marker</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-setting"></i><span>setting</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-settings"></i><span>settings</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-share"></i><span>share</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-send"></i><span>send</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-sign-in"></i><span>sign-in</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-sign-out"></i><span>sign-out</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-import"></i><span>import</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-export"></i><span>export</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-sort"></i><span>sort</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-sort-down"></i><span>sort-down</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-sort-up"></i><span>sort-up</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-star"></i><span>star</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-star-half"></i><span>star-half</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-star-fill"></i><span>star-fill</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-setting"></i><span>setting</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-settings"></i><span>settings</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-share"></i><span>share</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-send"></i><span>send</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-sign-in"></i><span>sign-in</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-sign-out"></i><span>sign-out</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-import"></i><span>import</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-export"></i><span>export</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-sort"></i><span>sort</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-sort-down"></i><span>sort-down</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-sort-up"></i><span>sort-up</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-star"></i><span>star</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-star-half"></i><span>star-half</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-star-fill"></i><span>star-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#sync"/></svg><span>sync</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-table"></i><span>table</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-trash"></i><span>trash</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-trash-fill"></i><span>trash-fill</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-wrench"></i><span>wrench</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-car"></i><span>car</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-bus"></i><span>bus</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-truck"></i><span>truck</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-truck-fill"></i><span>truck-fill</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-tachometer"></i><span>tachometer</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-table"></i><span>table</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-trash"></i><span>trash</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-trash-fill"></i><span>trash-fill</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-wrench"></i><span>wrench</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-car"></i><span>car</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-bus"></i><span>bus</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-truck"></i><span>truck</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-truck-fill"></i><span>truck-fill</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-tachometer"></i><span>tachometer</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#user"/></svg><span>user</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#user-fill"/></svg><span>user-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#users"/></svg><span>users</span></li>
@@ -581,193 +583,193 @@
 
                     <h2>Touch Icons</h2>
                     <ul class="icons-list list-custom theme-default ease-1st-bg ease-2nd-all">
-                        <li class="opacity-more"><i class="icon icon-xxl icon-touch"></i><span>touch</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-swipe"></i><span>swipe</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-swipe-down"></i><span>swipe-down</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-swipe-left"></i><span>swipe-left</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-swipe-right"></i><span>swipe-right</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-swipe-up"></i><span>swipe-up</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-zoom"></i><span>zoom</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-touch"></i><span>touch</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-swipe"></i><span>swipe</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-swipe-down"></i><span>swipe-down</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-swipe-left"></i><span>swipe-left</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-swipe-right"></i><span>swipe-right</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-swipe-up"></i><span>swipe-up</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-zoom"></i><span>zoom</span></li>
                     </ul>
 
                     <h2>Media Icons</h2>
                     <ul class="icons-list list-custom theme-default ease-1st-bg ease-2nd-all">
-                        <li class="opacity-more"><i class="icon icon-xxl icon-backward"></i><span>backward</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-play"></i><span>play</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-forward"></i><span>forward</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-pause"></i><span>pause</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-stop"></i><span>stop</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-shuffle"></i><span>shuffle</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-power"></i><span>power</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-camera"></i><span>camera</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-film"></i><span>film</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-video"></i><span>video</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-browser"></i><span>browser</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-laptop"></i><span>laptop</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-desktop"></i><span>desktop</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-tv"></i><span>tv</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-mobile-v"></i><span>mobile-v</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-mobile-h"></i><span>mobile-h</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-mobile-alt-v"></i><span>mobile-alt-v</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-mobile-alt-h"></i><span>mobile-alt-h</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-tablet-v"></i><span>tablet-v</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-tablet-h"></i><span>tablet-h</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-tablet-alt-v"></i><span>alt-v</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-tablet-alt-h"></i><span>alt-h</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-headphone"></i><span>headphone</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-headset"></i><span>headset</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-music"></i><span>music</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-volume-on"></i><span>volume-on</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-volume-off"></i><span>volume-off</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-soundwave"></i><span>soundwave</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-speaker"></i><span>speaker</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-usb-drive"></i><span>usb-drive</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-signal-stream"></i><span>signal-stream</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-signal-wifi"></i><span>signal-wifi</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-aperture"></i><span>aperture</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-exposure"></i><span>exposure</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-flash-on"></i><span>flash-on</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-flash-off"></i><span>flash-off</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-flash-auto"></i><span>flash-auto</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-iso"></i><span>iso</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-backward"></i><span>backward</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-play"></i><span>play</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-forward"></i><span>forward</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-pause"></i><span>pause</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-stop"></i><span>stop</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-shuffle"></i><span>shuffle</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-power"></i><span>power</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-camera"></i><span>camera</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-film"></i><span>film</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-video"></i><span>video</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-browser"></i><span>browser</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-laptop"></i><span>laptop</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-desktop"></i><span>desktop</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-tv"></i><span>tv</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-mobile-v"></i><span>mobile-v</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-mobile-h"></i><span>mobile-h</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-mobile-alt-v"></i><span>mobile-alt-v</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-mobile-alt-h"></i><span>mobile-alt-h</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-tablet-v"></i><span>tablet-v</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-tablet-h"></i><span>tablet-h</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-tablet-alt-v"></i><span>alt-v</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-tablet-alt-h"></i><span>alt-h</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-headphone"></i><span>headphone</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-headset"></i><span>headset</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-music"></i><span>music</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-volume-on"></i><span>volume-on</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-volume-off"></i><span>volume-off</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-soundwave"></i><span>soundwave</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-speaker"></i><span>speaker</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-usb-drive"></i><span>usb-drive</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-signal-stream"></i><span>signal-stream</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-signal-wifi"></i><span>signal-wifi</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-aperture"></i><span>aperture</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-exposure"></i><span>exposure</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-flash-on"></i><span>flash-on</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-flash-off"></i><span>flash-off</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-flash-auto"></i><span>flash-auto</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-iso"></i><span>iso</span></li>
                     </ul>
 
                     <h2>Kitchen Icons</h2>
                     <ul class="icons-list list-custom theme-default ease-1st-bg ease-2nd-all">
-                        <li class="opacity-more"><i class="icon icon-xxl icon-fork-spoon"></i><span>fork-spoon</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-fork"></i><span>fork</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-spoon"></i><span>spoon</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-coffee"></i><span>coffee</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-cup"></i><span>cup</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-fork-spoon"></i><span>fork-spoon</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-fork"></i><span>fork</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-spoon"></i><span>spoon</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-coffee"></i><span>coffee</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-cup"></i><span>cup</span></li>
                     </ul>
 
                     <h2>Real Estate Icons</h2>
                     <ul class="icons-list list-custom theme-default ease-1st-bg ease-2nd-all">
-                        <li class="opacity-more"><i class="icon icon-xxl icon-house"></i><span>house</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-house-check"></i><span>house-check</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-house-floor"></i><span>house-floor</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-house-heat"></i><span>house-heat</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-house-surface"></i><span>house-surface</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-floor-plan"></i><span>floor-plan</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-garage"></i><span>garage</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-balcony"></i><span>balcony</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-bath"></i><span>bath</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-bed"></i><span>bed</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-building"></i><span>building</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-buildings"></i><span>buildings</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-wc"></i><span>wc</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-house"></i><span>house</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-house-check"></i><span>house-check</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-house-floor"></i><span>house-floor</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-house-heat"></i><span>house-heat</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-house-surface"></i><span>house-surface</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-floor-plan"></i><span>floor-plan</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-garage"></i><span>garage</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-balcony"></i><span>balcony</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-bath"></i><span>bath</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-bed"></i><span>bed</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-building"></i><span>building</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-buildings"></i><span>buildings</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-wc"></i><span>wc</span></li>
                     </ul>
 
                     <h2>Weather Icons</h2>
                     <ul class="icons-list list-custom theme-default ease-1st-bg ease-2nd-all">
-                        <li class="opacity-more"><i class="icon icon-xxl icon-cloud"></i><span>cloud</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-clouds"></i><span>clouds</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-bolt"></i><span>bolt</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-cloud-bolt"></i><span>cloud-bolt</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-cloud-fog"></i><span>cloud-fog</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-cloud-moon"></i><span>cloud-moon</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-cloud-sun"></i><span>cloud-sun</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-cloud-wind"></i><span>cloud-wind</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-fog"></i><span>fog</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-moon"></i><span>moon</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-rain"></i><span>rain</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-rain-heavy"></i><span>rain-heavy</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-rain-snow"></i><span>rain-snow</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-snow"></i><span>snow</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-sun"></i><span>sun</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-sunrise"></i><span>sunrise</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-sunset"></i><span>sunset</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-cold"></i><span>cold</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-temperature"></i><span>temperature</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-wind"></i><span>wind</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-wind-sock"></i><span>wind-sock</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-storm"></i><span>storm</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-tornado"></i><span>tornado</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-cloud"></i><span>cloud</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-clouds"></i><span>clouds</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-bolt"></i><span>bolt</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-cloud-bolt"></i><span>cloud-bolt</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-cloud-fog"></i><span>cloud-fog</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-cloud-moon"></i><span>cloud-moon</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-cloud-sun"></i><span>cloud-sun</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-cloud-wind"></i><span>cloud-wind</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-fog"></i><span>fog</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-moon"></i><span>moon</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-rain"></i><span>rain</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-rain-heavy"></i><span>rain-heavy</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-rain-snow"></i><span>rain-snow</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-snow"></i><span>snow</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-sun"></i><span>sun</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-sunrise"></i><span>sunrise</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-sunset"></i><span>sunset</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-cold"></i><span>cold</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-temperature"></i><span>temperature</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-wind"></i><span>wind</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-wind-sock"></i><span>wind-sock</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-storm"></i><span>storm</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-tornado"></i><span>tornado</span></li>
                     </ul>
 
                     <h2>Commerce Icons</h2>
                     <ul class="icons-list list-custom theme-default ease-1st-bg ease-2nd-all">
-                        <li class="opacity-more"><i class="icon icon-xxl icon-tag"></i><span>tag</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-tags"></i><span>tags</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-ticket"></i><span>ticket</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-barcode"></i><span>barcode</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-credit-card"></i><span>credit-card</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-credit-card-check"></i><span>credit-card-check</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-shopping-bag"></i><span>shopping-bag</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-shopping-cart"></i><span>shopping-cart</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-shopping-cart-fill"></i><span>shopping-cart-fill</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-shopping-basket"></i><span>shopping-basket</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-shopping-basket-fill"></i><span>shopping-basket-fill</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-store"></i><span>store</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-coin"></i><span>coin</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-coins"></i><span>coins</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-money"></i><span>money</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-moneys"></i><span>moneys</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-wallet"></i><span>wallet</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-bank"></i><span>bank</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-money-dollar"></i><span>money-dollar</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-money-euro"></i><span>money-euro</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-money-lira"></i><span>money-lira</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-tag"></i><span>tag</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-tags"></i><span>tags</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-ticket"></i><span>ticket</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-barcode"></i><span>barcode</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-credit-card"></i><span>credit-card</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-credit-card-check"></i><span>credit-card-check</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-shopping-bag"></i><span>shopping-bag</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-shopping-cart"></i><span>shopping-cart</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-shopping-cart-fill"></i><span>shopping-cart-fill</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-shopping-basket"></i><span>shopping-basket</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-shopping-basket-fill"></i><span>shopping-basket-fill</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-store"></i><span>store</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-coin"></i><span>coin</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-coins"></i><span>coins</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-money"></i><span>money</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-moneys"></i><span>moneys</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-wallet"></i><span>wallet</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-bank"></i><span>bank</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-money-dollar"></i><span>money-dollar</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-money-euro"></i><span>money-euro</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-money-lira"></i><span>money-lira</span></li>
                     </ul>
 
                     <h2>Files Icons</h2>
                     <ul class="icons-list list-custom theme-default ease-1st-bg ease-2nd-all">
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file"></i><span>file</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-files"></i><span>files</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-no"></i><span>file-no</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-check"></i><span>file-check</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-minus"></i><span>file-minus</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-plus"></i><span>file-plus</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-remove"></i><span>file-remove</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-search"></i><span>file-search</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-download"></i><span>file-download</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-upload"></i><span>file-upload</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-write"></i><span>file-write</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-avi"></i><span>file-avi</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-doc"></i><span>file-doc</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-docx"></i><span>file-docx</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-gif"></i><span>file-gif</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-jpg"></i><span>file-jpg</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-mp3"></i><span>file-mp3</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-mpg"></i><span>file-mpg</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-pdf"></i><span>file-pdf</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-png"></i><span>file-png</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-ppt"></i><span>file-ppt</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-pptx"></i><span>file-pptx</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-rar"></i><span>file-rar</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-svg"></i><span>file-svg</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-tiff"></i><span>file-tiff</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-txt"></i><span>file-txt</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-xls"></i><span>file-xls</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-xlsx"></i><span>file-xlsx</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-xml"></i><span>file-xml</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-file-zip"></i><span>file-zip</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file"></i><span>file</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-files"></i><span>files</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-no"></i><span>file-no</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-check"></i><span>file-check</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-minus"></i><span>file-minus</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-plus"></i><span>file-plus</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-remove"></i><span>file-remove</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-search"></i><span>file-search</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-download"></i><span>file-download</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-upload"></i><span>file-upload</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-write"></i><span>file-write</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-avi"></i><span>file-avi</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-doc"></i><span>file-doc</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-docx"></i><span>file-docx</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-gif"></i><span>file-gif</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-jpg"></i><span>file-jpg</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-mp3"></i><span>file-mp3</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-mpg"></i><span>file-mpg</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-pdf"></i><span>file-pdf</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-png"></i><span>file-png</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-ppt"></i><span>file-ppt</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-pptx"></i><span>file-pptx</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-rar"></i><span>file-rar</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-svg"></i><span>file-svg</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-tiff"></i><span>file-tiff</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-txt"></i><span>file-txt</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-xls"></i><span>file-xls</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-xlsx"></i><span>file-xlsx</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-xml"></i><span>file-xml</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-file-zip"></i><span>file-zip</span></li>
                     </ul>
 
                     <h2>Social Icons</h2>
                     <ul class="icons-list list-custom theme-default ease-1st-bg ease-2nd-all">
-                        <li class="opacity-more"><i class="icon icon-xxl icon-behance"></i><span>behance</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-dribbble"></i><span>dribbble</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-facebook"></i><span>facebook</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-github"></i><span>github</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-google"></i><span>google</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-instagram"></i><span>instagram</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-linkedin"></i><span>linkedin</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-pinterest"></i><span>pinterest</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-snapchat"></i><span>snapchat</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-tumblr"></i><span>tumblr</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-twitter"></i><span>twitter</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-whatsapp"></i><span>whatsapp</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-youtube"></i><span>youtube</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-behance"></i><span>behance</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-dribbble"></i><span>dribbble</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-facebook"></i><span>facebook</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-github"></i><span>github</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-google"></i><span>google</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-instagram"></i><span>instagram</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-linkedin"></i><span>linkedin</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-pinterest"></i><span>pinterest</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-snapchat"></i><span>snapchat</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-tumblr"></i><span>tumblr</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-twitter"></i><span>twitter</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-whatsapp"></i><span>whatsapp</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-youtube"></i><span>youtube</span></li>
                     </ul>
 
                     <h2>Brands Icons</h2>
                     <ul class="icons-list list-custom theme-default ease-1st-bg ease-2nd-all">
-                        <li class="opacity-more"><i class="icon icon-xxl icon-andorid"></i><span>andorid</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-apple"></i><span>apple</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-appstore"></i><span>appstore</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-google-play"></i><span>google-play</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-microsoft"></i><span>microsoft</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-andorid"></i><span>andorid</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-apple"></i><span>apple</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-appstore"></i><span>appstore</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-google-play"></i><span>google-play</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-microsoft"></i><span>microsoft</span></li>
                     </ul>
 
                 </div>

@@ -22,6 +22,7 @@
     <symbol id="in-calc-in" viewBox="-38 -42 288 288"><path d="M160.3 188h32M160.3 156h32M17 156.7l30.6 30.6M47.6 156.7L17 187.3M160.3 28h32M176.3 12v32M16.3 28h32"/></symbol>
     <symbol id="in-calc-btn" viewBox="-10 -10 288 288"><path d="M168 156h72a12 12 0 0112 12v72a12 12 0 01-12 12h-72a12 12 0 01-12-12v-72a12 12 0 0112-12zM24 156h72a12 12 0 0112 12v72a12 12 0 01-12 12H24a12 12 0 01-12-12v-72a12 12 0 0112-12zM168 12h72a12 12 0 0112 12v72a12 12 0 01-12 12h-72a12 12 0 01-12-12V24a12 12 0 0112-12zM24 12h72a12 12 0 0112 12v72a12 12 0 01-12 12H24a12 12 0 01-12-12V24a12 12 0 0112-12z"/></symbol>
     <symbol id="in-cloud" viewBox="-8 -52 288 288"><path d="M55.1 165.4a47.7 47.7 0 01-12-92.2c7-35 37.1-61.2 74.2-61.2a75.1 75.1 0 0165.1 37c39.8-7.8 69.2 26 69.2 58.2a57.7 57.7 0 01-58.1 57.8z"/></symbol>
+    <symbol id="in-copy" viewBox="-42 -42 288 288"><path d="M147.2 63.3a59.8 59.8 0 00-84-8.7 59.2 59.2 0 00-8.8 83.8c21 26 57.6 30 83.9 8.8a61.1 61.1 0 0012.1-13.1"/></symbol>
 
     <symbol id="angle-down" viewBox="-8 -75 288 288"><path d="M17 17l118 118L252.8 17"/></symbol>
     <symbol id="angle-left" viewBox="-67 -8 288 288"><path d="M132 17L12 137l120 119.9"/></symbol>
@@ -246,6 +247,11 @@
     <symbol id="comment-dots-fill" viewBox="-2 -2 288 288"><use xlink:href="#in-dots"/><use class="svg-fill" xlink:href="#comment"/></symbol>
     <symbol id="comment-sms" viewBox="-2 -2 288 288"><use xlink:href="#in-sms"/><use class="svg-sub" xlink:href="#comment"/></symbol>
     <symbol id="comment-sms-fill" viewBox="-2 -2 288 288"><use xlink:href="#in-sms"/><use class="svg-fill" xlink:href="#comment"/></symbol>
+    <symbol id="compass" viewBox="0 0 288 288"><path transform="translate(56 56)" d="M67.5 68.2L135.8 34l-34.3 68.3-67.6 33.6z"/><use class="svg-sub" xlink:href="#circle"/></symbol>
+    <symbol id="compass-fill" viewBox="-2 -2 288 288"><path transform="translate(56 56)" d="M67.5 68.2L135.8 34l-34.3 68.3-67.6 33.6z"/><use class="svg-fill" xlink:href="#circle"/></symbol>
+    <symbol id="copyright" viewBox="0 0 288 288"><use xlink:href="#in-copy"/><use class="svg-sub" xlink:href="#circle"/></symbol>
+    <symbol id="copyright-fill" viewBox="-2 -2 288 288"><use xlink:href="#in-copy"/><use class="svg-fill" xlink:href="#circle"/></symbol>
+
     <symbol id="ellipsis-h" viewBox="-12 -112 288 288"><path d="M232 12a20 20 0 11-20 20 20 20 0 0120-20zM32 12a20 20 0 11-20 20 20 20 0 0120-20z"/><path class="svg-sub" d="M132 12a20 20 0 11-20 20 20 20 0 0120-20z"/></symbol>
     <symbol id="ellipsis-h-fill" viewBox="-2 -2 288 288"><use class="svg-full" xlink:href="#ellipsis-h"/></symbol>
     <symbol id="ellipsis-v" viewBox="-2 -2 288 288"><use x="-2" y="-286" transform="rotate(90)" xlink:href="#ellipsis-h"/></symbol>
