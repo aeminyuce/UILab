@@ -380,27 +380,51 @@
                         <li><svg class="icon icon-xxl"><use xlink:href="#calculator-fill"/></svg><span>calculator-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#calculator-btn"/></svg><span>calculator-btn</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#calculator-btn-fill"/></svg><span>calculator-btn-fill</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-calendar"></i><span>calendar</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-calendar-day"></i><span>calendar-day</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-calendar-star"></i><span>calendar-star</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-calendar-check"></i><span>calendar-check</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-cap"></i><span>cap</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-chart-pie"></i><span>chart-pie</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-chart-bar"></i><span>chart-bar</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-chart-line"></i><span>chart-line</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-clipboard"></i><span>clipboard</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-clipboard-list"></i><span>clipboard-list</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-clipboard-check"></i><span>clipboard-check</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-sticky-note"></i><span>sticky-note</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-sticky-note-list"></i><span>sticky-note-list</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-clock"></i><span>clock</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-clock-alarm"></i><span>clock-alarm</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-history"></i><span>history</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-clone"></i><span>clone</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-cloud-download"></i><span>cloud-download</span></li>
-                        <li class="opacity-more"><i class="icon icon-xxl icon-cloud-upload"></i><span>cloud-upload</span></li>
-                        <li><svg class="icon icon-xxl"><use xlink:href="#comment"/></svg><span>comment</span></li>
-                        <li><svg class="icon icon-xxl"><use xlink:href="#comment-fill"/></svg><span>comment-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#calendar"/></svg><span>calendar</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#calendar-fill"/></svg><span>calendar-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#calendar-day"/></svg><span>calendar-day</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#calendar-day-fill"/></svg><span>calendar-day-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#calendar-days"/></svg><span>calendar-days</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#calendar-days-fill"/></svg><span>calendar-days-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#calendar-minus"/></svg><span>calendar-minus</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#calendar-minus-fill"/></svg><span>calendar-minus-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#calendar-plus"/></svg><span>calendar-plus</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#calendar-plus-fill"/></svg><span>calendar-plus-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#calendar-remove"/></svg><span>calendar-remove</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#calendar-remove-fill"/></svg><span>calendar-remove-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#calendar-check"/></svg><span>calendar-check</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#calendar-check-fill"/></svg><span>calendar-check-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#calendar-star"/></svg><span>calendar-star</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#calendar-star-fill"/></svg><span>calendar-star-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#cap"/></svg><span>cap</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#cap-fill"/></svg><span>cap-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#chart-pie"/></svg><span>chart-pie</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#chart-pie-fill"/></svg><span>chart-pie-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#chart-bar"/></svg><span>chart-bar</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#chart-line"/></svg><span>chart-line</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#clipboard"/></svg><span>clipboard</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#clipboard-fill"/></svg><span>clipboard-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#clipboard-list"/></svg><span>clipboard-list</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#clipboard-list-fill"/></svg><span>clipboard-list-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#clipboard-check"/></svg><span>clipboard-check</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#clipboard-check-fill"/></svg><span>clipboard-check-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#sticky-note"/></svg><span>sticky-note</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#sticky-note-fill"/></svg><span>sticky-note-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#sticky-note-list"/></svg><span>sticky-note-list</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#sticky-note-list-fill"/></svg><span>sticky-note-list-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#clock"/></svg><span>clock</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#clock-fill"/></svg><span>clock-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#clock-alarm"/></svg><span>clock-alarm</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#clock-alarm-fill"/></svg><span>clock-alarm-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#history"/></svg><span>history</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#clone"/></svg><span>clone</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#clone-fill"/></svg><span>clone-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#cloud-download"/></svg><span>cloud-download</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#cloud-download-fill"/></svg><span>cloud-download-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#cloud-upload"/></svg><span>cloud-upload</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#cloud-upload-fill"/></svg><span>cloud-upload-fill</span></li>
+                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#comment"/></svg><span>comment</span></li>
+                        <li><svg class="icon icon-xxl icon-black"><use xlink:href="#comment-fill"/></svg><span>comment-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#comments"/></svg><span>comments</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#comments-fill"/></svg><span>comments-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#comment-minus"/></svg><span>comment-minus</span></li>

@@ -7,19 +7,21 @@
     <symbol id="in-plus" viewBox="-84 -84 288 288"><path d="M60 12v96M12 60h96"/></symbol>
     <symbol id="in-remove" viewBox="-93 -93 288 288"><path d="M17 17l67.9 67.9M17 84.9l67.9-68"/></symbol>
     <symbol id="in-check" viewBox="-78 -98 288 288"><path d="M113 17L51.8 82 17 48.7"/></symbol>
-    <symbol id="in-user-right" viewBox="-68 -38 288 288"><path d="M103.9 12a46 46 0 11-46 46 46 46 0 0146-46z M181.4 195.8h-155a14.3 14.3 0 01-10.2-4.2 14.3 14.3 0 01-4.2-10.2v-4a91.8 91.8 0 014.5-28.3 91.5 91.5 0 0112.4-24.8 92.3 92.3 0 0119-19.8 91.6 91.6 0 0124.2-13.3 45.7 45.7 0 0031.8 12.7 45.7 45.7 0 0031.8-12.7 91.6 91.6 0 0124.2 13.3 92.3 92.3 0 0119 19.8 91.5 91.5 0 0112.4 24.8 91.8 91.8 0 014.5 28.3v4a14.3 14.3 0 01-4.2 10.2 14.3 14.3 0 01-10.2 4.2z" stroke-linejoin="round"/></symbol>
+    <symbol id="in-user-right" viewBox="-68 -38 288 288"><path d="M103.9 12a46 46 0 11-46 46 46 46 0 0146-46z M181.4 195.8h-155a14.3 14.3 0 01-10.2-4.2 14.3 14.3 0 01-4.2-10.2v-4a91.8 91.8 0 014.5-28.3 91.5 91.5 0 0112.4-24.8 92.3 92.3 0 0119-19.8 91.6 91.6 0 0124.2-13.3 45.7 45.7 0 0031.8 12.7 45.7 45.7 0 0031.8-12.7 91.6 91.6 0 0124.2 13.3 92.3 92.3 0 0119 19.8 91.5 91.5 0 0112.4 24.8 91.8 91.8 0 014.5 28.3v4a14.3 14.3 0 01-4.2 10.2 14.3 14.3 0 01-10.2 4.2z"/></symbol>
     <symbol id="in-user-circle" viewBox="-42 -48 288 288"><path d="M70.6 113.6a45.5 45.5 0 1164.4 0 M14.6 176.9l1.5-5.2A90.7 90.7 0 0128.5 147a91.5 91.5 0 0118.8-19.6 90.8 90.8 0 0124-13.2 45.3 45.3 0 0031.5 12.6 45.3 45.3 0 0031.4-12.6 90.8 90.8 0 0124 13.2 91.5 91.5 0 0118.9 19.6 90.7 90.7 0 0112.3 24.5c.7 2.1 1.3 4.2 1.9 6.7"/></symbol>
     <symbol id="in-user-sm" viewBox="-24 -24 288 288"><path d="M12 81.3a6 6 0 01-6-6v-1.6A37.7 37.7 0 0112.9 52a38.2 38.2 0 017.8-8.1 37.9 37.9 0 019.7-5.5A19 19 0 0125 25 19 19 0 0144 6a19 19 0 0119 19 19 19 0 01-5.4 13.3 38 38 0 019.7 5.5 38.2 38.2 0 017.8 8.1A37.7 37.7 0 0182 73.7v1.7a6 6 0 01-6 6z"/></symbol>
     <symbol id="in-trophy-out" viewBox="-12 -8 288 288"><path d="M52 12h160c-8 143.8-40.2 176-80 176S60 155.8 52 12z"/></symbol>
     <symbol id="in-trophy-sides" viewBox="-12 -12 288 288"><path d="M186.8 148c25.1 0 65.3-8.4 65.3-56S219.9 54 209 54 M77.3 148C52.2 148 12 139.6 12 92s32.2-38 43.1-38"/></symbol>
     <symbol id="in-star" viewBox="-96 -56 288 288"><path d="M84.7 24.2l-13 24.6 13 24.6-27.4-4.7-19.4 20L34 61 9 48.8l25-12.3L38 9l19.3 19.9z"/></symbol>
-    <symbol id="in-box" viewBox="-6 16 288 288"><path d="M136.7 68.5l-60.1 32.3V170l60-32.3zM15.8 69.5L76 100.8V170l-60-32.3zM16.4 68.5l59.1-32 61.2 32-60.3 32.2z"/></symbol>
+    <symbol id="in-box" viewBox="-6 16 288 288"><path d="M16.4 68.5l59.1-32 61.2 32-60.3 32.2z M15.8 69.5L76 100.8V170l-60-32.3z"/><path class="svg-sub" d="M136.7 68.5l-60.1 32.3V170l60-32.3z"/></symbol>
+    <symbol id="in-box-fill" viewBox="-6 16 288 288"><path class="svg-full" d="M16.4 68.5l59.1-32 61.2 32-60.3 32.2z M15.8 69.5L76 100.8V170l-60-32.3z"/><path class="svg-fill" d="M136.7 68.5l-60.1 32.3V170l60-32.3z"/></symbol>
     <symbol id="in-skip" viewBox="-2 -10 288 288"><path d="M230.4 85.5a100.7 100.7 0 00-97.6-72.3A100.6 100.6 0 0035 92.5 M247.8 59.7L233 92.5l-32.6-14.8"/></symbol>
     <symbol id="in-dots" viewBox="-14 -32 288 288"><path d="M185.3 95.4a10.7 10.7 0 11-10.6 10.7 10.7 10.7 0 0110.6-10.7zM132 95.4a10.7 10.7 0 11-10.7 10.7A10.7 10.7 0 01132 95.4zM78.7 95.4A10.7 10.7 0 1168 106a10.7 10.7 0 0110.7-10.7z"/></symbol>
-    <symbol id="in-sms" viewBox="-12 -28 288 288"><path d="M191.7 84c-7.8 0-26.7 10.1-7 22.6s-.8 25.4-7 25.4M112 132V84l20 32 20-32v48M84 84c-7.8 0-26.7 10.1-7 22.6s-.8 25.4-7 25.4"/></symbol>
+    <symbol id="in-sms" viewBox="-12 -28 288 288"><path d="M194.7 84c-7.8 0-26.7 10.1-7 22.6s-.8 25.4-7 25.4M112 132V84l20 32 20-32v48M83.7 84c-7.8 0-26.7 10.1-7 22.6s-.8 25.4-7 25.4"/></symbol>
     <symbol id="in-calc" viewBox="0 -4 288 288"><path d="M156 132h8v72h-8zM108 188h8v16h-8zM60 188h8v16h-8zM108 132h8v16h-8zM60 132h8v16h-8z"/></symbol>
     <symbol id="in-calc-in" viewBox="-38 -42 288 288"><path d="M160.3 188h32M160.3 156h32M17 156.7l30.6 30.6M47.6 156.7L17 187.3M160.3 28h32M176.3 12v32M16.3 28h32"/></symbol>
     <symbol id="in-calc-btn" viewBox="-10 -10 288 288"><path d="M168 156h72a12 12 0 0112 12v72a12 12 0 01-12 12h-72a12 12 0 01-12-12v-72a12 12 0 0112-12zM24 156h72a12 12 0 0112 12v72a12 12 0 01-12 12H24a12 12 0 01-12-12v-72a12 12 0 0112-12zM168 12h72a12 12 0 0112 12v72a12 12 0 01-12 12h-72a12 12 0 01-12-12V24a12 12 0 0112-12zM24 12h72a12 12 0 0112 12v72a12 12 0 01-12 12H24a12 12 0 01-12-12V24a12 12 0 0112-12z"/></symbol>
+    <symbol id="in-cloud" viewBox="-8 -52 288 288"><path d="M55.1 165.4a47.7 47.7 0 01-12-92.2c7-35 37.1-61.2 74.2-61.2a75.1 75.1 0 0165.1 37c39.8-7.8 69.2 26 69.2 58.2a57.7 57.7 0 01-58.1 57.8z"/></symbol>
 
     <symbol id="angle-down" viewBox="-8 -75 288 288"><path d="M17 17l118 118L252.8 17"/></symbol>
     <symbol id="angle-left" viewBox="-67 -8 288 288"><path d="M132 17L12 137l120 119.9"/></symbol>
@@ -142,8 +144,8 @@
     <symbol id="grid-column-sm-fill" viewBox="-2 -2 288 288"><use class="svg-full" xlink:href="#grid-column-sm"/></symbol>
     <symbol id="grid-flow" viewBox="-12 -12 288 288"><path d="M12 12h240v152H12z"/><path class="svg-sub" transform="translate(0 200)" d="M12 12h240v40H12z"/></symbol>
     <symbol id="grid-flow-fill" viewBox="-2 -2 288 288"><use class="svg-full" xlink:href="#grid-flow"/></symbol>
-    <symbol id="address-book" viewBox="-22 -12 288 288"><path class="svg-sub" d="M28 12h192v240H28z M12 204h32M12 156h32M12 108h32M12 60h32"/><use x="64" y="62" class="svg-full" xlink:href="#in-user-sm"/></symbol>
-    <symbol id="address-book-fill" viewBox="-22 -12 288 288"><path class="svg-full" d="M12 204h32M12 156h32M12 108h32M12 60h32"/><path class="svg-fill" d="M28 12h192v240H28z"/><use x="64" y="62" class="svg-full" xlink:href="#in-user-sm"/></symbol>
+    <symbol id="address-book" viewBox="-22 -12 288 288"><path class="svg-sub" d="M28 12h192v240H28z M12 204h32M12 156h32M12 108h32M12 60h32"/><use x="64" y="62" xlink:href="#in-user-sm"/></symbol>
+    <symbol id="address-book-fill" viewBox="-2 0 288 288"><use class="svg-full" xlink:href="#address-book"/></symbol>
     <symbol id="address-card" viewBox="-12 -52 288 288"><path class="svg-sub" d="M36 12h192a24 24 0 0124 24v112a24 24 0 01-24 24H36a24 24 0 01-24-24V36a24 24 0 0124-24z"/><path transform="translate(158 58)" d="M12 52h24M12 12h40"/><use x="24" y="24" class="svg-full" xlink:href="#in-user-sm"/></symbol>
     <symbol id="address-card-fill" viewBox="-12 -52 288 288"><path class="svg-fill" d="M36 12h192a24 24 0 0124 24v112a24 24 0 01-24 24H36a24 24 0 01-24-24V36a24 24 0 0124-24z"/><path transform="translate(158 58)" d="M12 52h24M12 12h40"/><use x="24" y="24" class="svg-full" xlink:href="#in-user-sm"/></symbol>
     <symbol id="home" viewBox="-8 -20 288 288"><path d="M16.9 112l120-100 120 100"/><path class="svg-sub" d="M41 93v143h63.9v-80h64v80h64V93"/></symbol>
@@ -170,12 +172,12 @@
     <symbol id="book-open-fill" viewBox="-2 -2 288 288"><use class="svg-full" xlink:href="#book-open"/></symbol>
     <symbol id="box" viewBox="-20 30 288 288"><path d="M16.4 109.8l106-57.3 109.7 57.3-108 57.8z"/><path d="M15.4 110.8l107.8 57V292L15.4 234.2z"/><path class="svg-sub" d="M232.1 109.8l-107.8 58V292l107.8-57.9z"/></symbol>
     <symbol id="box-fill" viewBox="-2 -2 288 288"><use class="svg-full" xlink:href="#box"/></symbol>
-    <symbol id="boxes" viewBox="-2 -2 288 288"><use x="58" y="4" xlink:href="#in-box"/><use y="106" xlink:href="#in-box"/><use class="svg-sub" x="120" y="106" xlink:href="#in-box"/></symbol>
-    <symbol id="boxes-fill" viewBox="-2 -2 288 288"><use class="svg-full" xlink:href="#boxes"/></symbol>
+    <symbol id="boxes" viewBox="-2 -2 288 288"><use x="58" y="4" xlink:href="#in-box"/><use y="106" xlink:href="#in-box"/><use x="120" y="106" xlink:href="#in-box"/></symbol>
+    <symbol id="boxes-fill" viewBox="-2 -2 288 288"><use x="58" y="4" xlink:href="#in-box-fill"/><use y="106" xlink:href="#in-box-fill"/><use x="120" y="106" xlink:href="#in-box-fill"/></symbol>
     <symbol id="code" viewBox="-12 -20 288 288"><path d="M200 68.8l52 52-52 52"/><path class="svg-sub" d="M161.8 15.3l-58.8 212"/><path d="M64 68.8l-52 52 52 52"/></symbol>
     <symbol id="brackets" viewBox="-48 -12 288 288"><path d="M58 12H12v240h46"/><path class="svg-sub" d="M134 12h46v240h-46"/></symbol>
     <symbol id="brackets-curly" viewBox="-12 -12 288 288"><path d="M98 12H80.2A27.7 27.7 0 0052 40.1c0 4.4 2 33.4-8 56.4S12 132 12 132s22 13.2 32 36.1 8 50.1 8 55.8c0 16.1 12.1 28 28.3 28H98"/><path class="svg-sub" d="M166 12h17.8A27.7 27.7 0 01212 40.1c0 4.4-2 33.4 8 56.4s32 35.6 32 35.6-22 13.2-32 36.1-8 50.1-8 55.8c0 16.1-12.1 28-28.3 28H166"/></symbol>
-    <symbol id="briefcase" viewBox="-12 -24 288 288"><path class="svg-sub svg-line" d="M188 60V32a20 20 0 00-20-20H96a20 20 0 00-20 20v28"/><path d="M116 124h32 M12 60h240v104H12z"/><path class="svg-sub" d="M20 164h224v64H20z"/></symbol>
+    <symbol id="briefcase" viewBox="-12 -24 288 288"><path class="svg-line svg-sub" d="M188 60V32a20 20 0 00-20-20H96a20 20 0 00-20 20v28"/><path d="M132 128a28 28 0 11-28 28 28 28 0 0128-28z M252 156h-92a27.8 27.8 0 00-8.2-19.8A27.8 27.8 0 00132 128a28 28 0 00-28 28H12V60h240v96z"/><path class="svg-sub" d="M244 236H20v-80h84a27.8 27.8 0 008.2 19.8A27.8 27.8 0 00132 184a28 28 0 0028-28h84v80z"/></symbol>
     <symbol id="briefcase-fill" viewBox="-2 -2 288 288"><use class="svg-full" xlink:href="#briefcase"/></symbol>
     <symbol id="bullhorn" viewBox="-12 -28 288 288"><path class="svg-sub" d="M56 136s9.7-.2 20.2 0 19.5 1 19.5 1l10 63.5a20 20 0 01-40 0z M220 88.4a20 20 0 110 32.2"/><path d="M63.4 68c15.3 0 55.3 1 92.4-13S220 12 220 12v184s-27-31-64-46-76-14-92-14-51.7.2-52-33.6S48 68 63.4 68z"/></symbol>
     <symbol id="bullhorn-fill" viewBox="-2 -2 288 288"><use class="svg-full" xlink:href="#bullhorn"/></symbol>
@@ -185,6 +187,49 @@
     <symbol id="calculator-fill" viewBox="-32 -12 288 288"><path class="svg-fill" d="M12 12h200v72H12z"/><use class="svg-full" xlink:href="#in-calc"/><path class="svg-fill" d="M12 12h200v240H12z"/></symbol>
     <symbol id="calculator-btn" viewBox="-2 -2 288 288"><use xlink:href="#in-calc-in"/><use class="svg-sub" xlink:href="#in-calc-btn"/></symbol>
     <symbol id="calculator-btn-fill" viewBox="-2 -2 288 288"><use xlink:href="#in-calc-in"/><use class="svg-fill" xlink:href="#in-calc-btn"/></symbol>
+    <symbol id="calendar" viewBox="-12 -12 288 288"><path class="svg-line" d="M12 28h240v56H12z"/><path d="M12 84h240v168H12z M60 44V12M204 44V12"/></symbol>
+    <symbol id="calendar-fill" viewBox="0 -2 288 288"><use class="svg-full" xlink:href="#calendar"/></symbol>
+    <symbol id="calendar-day" viewBox="-10 -12 288 288"><use class="svg-sub" x="-10" y="-12" xlink:href="#calendar"/><path d="M108 144h48v48h-48z"/></symbol>
+    <symbol id="calendar-day-fill" viewBox="0 -2 288 288"><use class="svg-full" xlink:href="#calendar-day"/></symbol>
+    <symbol id="calendar-days" viewBox="-10 -12 288 288"><use class="svg-sub" x="-10" y="-12" xlink:href="#calendar"/><path class="svg-full" d="M180 188h16v16h-16zM124 188h16v16h-16zM68 188h16v16H68zM180 132h16v16h-16zM124 132h16v16h-16z"/></symbol>
+    <symbol id="calendar-days-fill" viewBox="0 -2 288 288"><use class="svg-full" xlink:href="#calendar-days"/></symbol>
+    <symbol id="calendar-minus" viewBox="-10 -12 288 288"><use class="svg-sub" x="-10" y="-12" xlink:href="#calendar"/><use x="-10" y="24" xlink:href="#in-minus"/></symbol>
+    <symbol id="calendar-minus-fill" viewBox="0 -2 288 288"><use class="svg-full" xlink:href="#calendar-minus"/></symbol>
+    <symbol id="calendar-plus" viewBox="-10 -12 288 288"><use class="svg-sub" x="-10" y="-12" xlink:href="#calendar"/><use x="-10" y="24" xlink:href="#in-plus"/></symbol>
+    <symbol id="calendar-plus-fill" viewBox="0 -2 288 288"><use class="svg-full" xlink:href="#calendar-plus"/></symbol>
+    <symbol id="calendar-remove" viewBox="-10 -12 288 288"><use class="svg-sub" x="-10" y="-12" xlink:href="#calendar"/><use x="-10" y="22" xlink:href="#in-remove"/></symbol>
+    <symbol id="calendar-remove-fill" viewBox="0 -2 288 288"><use class="svg-full" xlink:href="#calendar-remove"/></symbol>
+    <symbol id="calendar-check" viewBox="-10 -12 288 288"><use class="svg-sub" x="-10" y="-12" xlink:href="#calendar"/><use class="svg-line" x="-10" y="20" xlink:href="#in-check"/></symbol>
+    <symbol id="calendar-check-fill" viewBox="0 -2 288 288"><use class="svg-full" xlink:href="#calendar-check"/></symbol>
+    <symbol id="calendar-star" viewBox="-10 -12 288 288"><use class="svg-sub" x="-10" y="-12" xlink:href="#calendar"/><use x="-12" y="62" xlink:href="#in-star"/></symbol>
+    <symbol id="calendar-star-fill" viewBox="0 -2 288 288"><use class="svg-full" xlink:href="#calendar-star"/></symbol>
+    <symbol id="cap" viewBox="-8 34 288 288"><path d="M24.9 174.5a7.9 7.9 0 11-8 7.9 7.9 7.9 0 018-8z M137.4 83l119.5 54-119.5 49.9-120.4-50z"/><path class="svg-line" d="M138 134s-90.7 12.6-97 13c-4.4.2-15.9 35-15.9 35"/><path class="svg-full" d="M25 182l8 93H17z"/><path class="svg-sub" d="M137 251c-52 0-75-28-75-28l4.6-65.5 70.8 29.4 68.8-28.7L210 223s-21 28-73 28z"/></symbol>
+    <symbol id="cap-fill" viewBox="0 -2 288 288"><use class="svg-full" xlink:href="#cap"/></symbol>
+    <symbol id="chart-pie" viewBox="-12 -12 288 288"><path d="M252 102a90 90 0 00-90-90v90z"/><path class="svg-sub" d="M228 144A108 108 0 11120 36v108z"/></symbol>
+    <symbol id="chart-pie-fill" viewBox="0 -2 288 288"><use class="svg-full" xlink:href="#chart-pie"/></symbol>
+    <symbol id="chart-bar" viewBox="-12 -12 288 288"><path d="M216 44v152M168 100v96M120 68v128M72 148v48"/><path class="svg-sub" d="M12 12v240h240.3"/></symbol>
+    <symbol id="chart-line" viewBox="-12 -12 288 288"><path d="M80 184l32-80 64 40 32-96"/><path class="svg-full" d="M80 172a12 12 0 11-12 12 12 12 0 0112-12zM112 92a12 12 0 11-12 12 12 12 0 0112-12zM176 132a12 12 0 11-12 12 12 12 0 0112-12zM208 36a12 12 0 11-12 12 12 12 0 0112-12z"/><path class="svg-sub" d="M12 12v240h240.3"/></symbol>
+    <symbol id="clipboard" viewBox="-44 -12 288 288"><path class="svg-line svg-sub" d="M100 12a16 16 0 11-16 16 16 16 0 0116-16z"/><path d="M12 44h176v208H12z"/></symbol>
+    <symbol id="clipboard-fill" viewBox="-2 0 288 288"><use class="svg-full" xlink:href="#clipboard"/></symbol>
+    <symbol id="clipboard-list" viewBox="0 0 288 288"><path transform="translate(76 104)" d="M12 52h64M12 12h112"/><use xlink:href="#clipboard"/></symbol>
+    <symbol id="clipboard-list-fill" viewBox="-2 0 288 288"><path transform="translate(76 104)" d="M12 52h64M12 12h112"/><use class="svg-fill" xlink:href="#clipboard"/></symbol>
+    <symbol id="clipboard-check" viewBox="0 0 288 288"><use y="16" xlink:href="#in-check"/><use xlink:href="#clipboard"/></symbol>
+    <symbol id="clipboard-check-fill" viewBox="-2 0 288 288"><use y="16" xlink:href="#in-check"/><use class="svg-fill" xlink:href="#clipboard"/></symbol>
+    <symbol id="sticky-note" viewBox="-12 -12 288 288"><path class="svg-sub" d="M12 252h168l72-72V12H12z"/><path d="M180 251.9V180h72z"/></symbol>
+    <symbol id="sticky-note-fill" viewBox="-12 -12 288 288"><path class="svg-fill" d="M12 252h168l72-72V12H12z"/><path class="svg-sub svg-fill" d="M180 251.9V180h72z"/></symbol>
+    <symbol id="sticky-note-list" viewBox="-12 -12 288 288"><path transform="translate(66 64)" d="M12 52h64M12 12h112"/><path class="svg-sub" d="M12 252h168l72-72V12H12z M180 251.9V180h72z"/></symbol>
+    <symbol id="sticky-note-list-fill" viewBox="-12 -12 288 288"><path transform="translate(66 64)" d="M12 52h64M12 12h112"/><path class="svg-fill" d="M12 252h168l72-72V12H12z"/><path class="svg-sub svg-fill" d="M180 251.9V180h72z"/></symbol>
+    <symbol id="clock" viewBox="-12 -12 288 288"><path class="svg-line" d="M128 72v65l53.8 31.7"/><path class="svg-sub" d="M132 12A120 120 0 1112 132 120 120 0 01132 12z"/></symbol>
+    <symbol id="clock-fill" viewBox="0 -2 288 288"><use class="svg-full" xlink:href="#clock"/></symbol>
+    <symbol id="clock-alarm" viewBox="-24 -12 288 288"><path class="svg-line" d="M117.5 80v56.4L164 164"/><path class="svg-sub" d="M224.9 252l-34-42M16.9 252l34-42M121 28A104 104 0 1117 132 104 104 0 01121 28z M208.1 75.2A33.9 33.9 0 10159 34.9M33.6 75.2A33.9 33.9 0 1183 35"/></symbol>
+    <symbol id="clock-alarm-fill" viewBox="0 -2 288 288"><use class="svg-full" xlink:href="#clock-alarm"/></symbol>
+    <symbol id="history" viewBox="46 38 288 288"><path class="svg-sub" d="M76.4 120.3a120 120 0 1144 164 M76.3 84.3v36h36"/><path d="M176.3 120.3v65l53.9 31.7"/></symbol>
+    <symbol id="clone" viewBox="-12 -12 288 288"><path d="M104 68h112a36 36 0 0136 36v112a36 36 0 01-36 36H104a36 36 0 01-36-36V104a36 36 0 0136-36z"/><path class="svg-sub" d="M196 68V48a36 36 0 00-36-36H48a36 36 0 00-36 36v112a36 36 0 0036 36h20v-92a36.1 36.1 0 0136-36z"/></symbol>
+    <symbol id="clone-fill" viewBox="0 0 288 288"><use class="svg-full" xlink:href="#clone"/></symbol>
+    <symbol id="cloud-download" viewBox="-2 -2 288 288"><path class="svg-line" transform="translate(78 96)" d="M46 80V12 M17 52l29 28 27-28"/><use class="svg-sub" xlink:href="#in-cloud"/></symbol>
+    <symbol id="cloud-download-fill" viewBox="0 0 288 288"><use class="svg-full" xlink:href="#cloud-download"/></symbol>
+    <symbol id="cloud-upload" viewBox="-2 -2 288 288"><path class="svg-line" transform="translate(78 96)" d="M46 12v68 M17 40l29-28 27 28"/><use class="svg-sub" xlink:href="#in-cloud"/></symbol>
+    <symbol id="cloud-upload-fill" viewBox="0 0 288 288"><use class="svg-full" xlink:href="#cloud-upload"/></symbol>
     <symbol id="comment" viewBox="-12 -28 288 288"><path d="M132.1 12c66.3 0 120.1 43.2 120.1 96.4s-53.8 96.4-120 96.4a151.8 151.8 0 01-48.8-7.9c-26.9 22.8-71.3 22.7-71.3 22.7s25.7-19.8 32.8-44.9A87 87 0 0112 108.4C12 55.2 65.8 12 132.1 12z"/></symbol>
     <symbol id="comment-fill" viewBox="-2 -2 288 288"><use class="svg-full" xlink:href="#comment"/></symbol>
     <symbol id="comments" viewBox="-12 -28 288 288"><path d="M103.6 12c50.6 0 91.6 33 91.6 73.5s-41 73.6-91.6 73.6a115.8 115.8 0 01-37.1-6C45.9 170.3 12 170.2 12 170.2s19.6-15 25-34.2A66.4 66.4 0 0112 85.5C12 45 53 12 103.6 12z"/><path class="svg-sub" d="M72.4 155c10.7 30.7 46.2 53.5 88.2 53.5a115.8 115.8 0 0037.1-6c20.6 17.3 54.4 17.2 54.4 17.2s-19.6-15-25-34.2c15.5-13 25.1-31 25.1-50.6 0-31.7-25-58.7-60.3-69.1 8 24.6 2.5 52.3-27.4 74.6s-70 21-92 14.6z"/></symbol>
@@ -195,7 +240,7 @@
     <symbol id="comment-plus-fill" viewBox="-2 -2 288 288"><use x="2" y="-8" xlink:href="#in-plus"/><use class="svg-fill" xlink:href="#comment"/></symbol>
     <symbol id="comment-remove" viewBox="-2 -2 288 288"><use x="2" y="-8" xlink:href="#in-remove"/><use class="svg-sub" xlink:href="#comment"/></symbol>
     <symbol id="comment-remove-fill" viewBox="-2 -2 288 288"><use x="2" y="-8" xlink:href="#in-remove"/><use class="svg-fill" xlink:href="#comment"/></symbol>
-    <symbol id="comment-lines" viewBox="-2 -2 288 288"><path transform="translate(80 106)" d="M12 52h56M12 12h104"/><use class="svg-sub" xlink:href="#comment"/></symbol>
+    <symbol id="comment-lines" viewBox="-2 -2 288 288"><path transform="translate(80 106)" d="M12 52h64M12 12h112"/><use class="svg-sub" xlink:href="#comment"/></symbol>
     <symbol id="comment-lines-fill" viewBox="-2 -2 288 288"><path transform="translate(80 106)" d="M12 52h56M12 12h104"/><use class="svg-fill" xlink:href="#comment"/></symbol>
     <symbol id="comment-dots" viewBox="-2 -2 288 288"><use xlink:href="#in-dots"/><use class="svg-sub" xlink:href="#comment"/></symbol>
     <symbol id="comment-dots-fill" viewBox="-2 -2 288 288"><use xlink:href="#in-dots"/><use class="svg-fill" xlink:href="#comment"/></symbol>
@@ -222,9 +267,9 @@
     <symbol id="bell-fill" viewBox="-2 -2 288 288"><use class="svg-full" xlink:href="#bell"/></symbol>
     <symbol id="bell-on" viewBox="18 0 288 288"><path class="svg-sub" d="M199.7 205.4a40 40 0 11-75.8 20.4"/><path class="svg-sub svg-line" d="M142.2 46.3l-6.3-23.1M58.4 64.8A99 99 0 0053 78.5a113 113 0 00-2.4 52M226.4 23.2a99 99 0 0111.2 9.7 113 113 0 0125.7 45.3"/><path d="M93 233.5l11.5-82.7-2-5.7-5.6-19.2a64 64 0 01123-35.3l5.7 19.2a64.6 64.6 0 011.8 8.2l51.2 65.7z"/></symbol>
     <symbol id="bell-on-fill" viewBox="-2 -2 288 288"><use class="svg-full" xlink:href="#bell-on"/></symbol>
-    <symbol id="user" viewBox="-12 -12 288 288"><path d="M132 12a60 60 0 11-60 60 60 60 0 0160-60z M233.1 252H31a18.7 18.7 0 01-13.4-5.5A18.7 18.7 0 0112 233V228a120 120 0 015.8-37 119.5 119.5 0 0116.3-32.4 120.5 120.5 0 0124.8-25.8 119.7 119.7 0 0131.6-17.4A59.7 59.7 0 00132 132a59.7 59.7 0 0041.5-16.6 119.7 119.7 0 0131.6 17.4 120.5 120.5 0 0124.8 25.8 119.5 119.5 0 0116.3 32.4 120 120 0 015.8 37v5.1a18.7 18.7 0 01-5.5 13.4A18.7 18.7 0 01233 252z" stroke-linejoin="round"/></symbol>
+    <symbol id="user" viewBox="-12 -12 288 288"><path d="M132 12a60 60 0 11-60 60 60 60 0 0160-60z M233.1 252H31a18.7 18.7 0 01-13.4-5.5A18.7 18.7 0 0112 233V228a120 120 0 015.8-37 119.5 119.5 0 0116.3-32.4 120.5 120.5 0 0124.8-25.8 119.7 119.7 0 0131.6-17.4A59.7 59.7 0 00132 132a59.7 59.7 0 0041.5-16.6 119.7 119.7 0 0131.6 17.4 120.5 120.5 0 0124.8 25.8 119.5 119.5 0 0116.3 32.4 120 120 0 015.8 37v5.1a18.7 18.7 0 01-5.5 13.4A18.7 18.7 0 01233 252z"/></symbol>
     <symbol id="user-fill" viewBox="-2 -2 288 288"><use class="svg-full" xlink:href="#user"/></symbol>
-    <symbol id="users" viewBox="-2 -2 288 288"><path class="svg-sub" transform="translate(10 52)" d="M78.5 12A33.5 33.5 0 1145 45.5 33.5 33.5 0 0178.5 12z M69.2 146H22.5a10.4 10.4 0 01-7.4-3 10.4 10.4 0 01-3.1-7.5v-2.8a66.6 66.6 0 013.2-20.6 66.3 66.3 0 019-18A67 67 0 0138 79.9a66.4 66.4 0 0117.6-9.6 33.1 33.1 0 0023 9.2 33.1 33.1 0 0023-9.2 66.4 66.4 0 0115.5 8.2 92.2 92.2 0 00-13 8.3 92.3 92.3 0 00-19 19.8 91.5 91.5 0 00-12.4 24.8 91.6 91.6 0 00-3.5 14.7z" stroke-linejoin="round"/><use xlink:href="#in-user-right"/></symbol>
+    <symbol id="users" viewBox="-2 -2 288 288"><path class="svg-sub" transform="translate(10 52)" d="M78.5 12A33.5 33.5 0 1145 45.5 33.5 33.5 0 0178.5 12z M69.2 146H22.5a10.4 10.4 0 01-7.4-3 10.4 10.4 0 01-3.1-7.5v-2.8a66.6 66.6 0 013.2-20.6 66.3 66.3 0 019-18A67 67 0 0138 79.9a66.4 66.4 0 0117.6-9.6 33.1 33.1 0 0023 9.2 33.1 33.1 0 0023-9.2 66.4 66.4 0 0115.5 8.2 92.2 92.2 0 00-13 8.3 92.3 92.3 0 00-19 19.8 91.5 91.5 0 00-12.4 24.8 91.6 91.6 0 00-3.5 14.7z"/><use xlink:href="#in-user-right"/></symbol>
     <symbol id="users-fill" viewBox="-2 -2 288 288"><use class="svg-full" xlink:href="#users"/></symbol>
     <symbol id="user-circle" viewBox="-1 -2 288 288"><use xlink:href="#in-user-circle"/><use class="svg-sub" xlink:href="#circle"/></symbol>
     <symbol id="user-circle-fill" viewBox="-1 -2 288 288"><use xlink:href="#in-user-circle"/><use class="svg-fill" xlink:href="#circle"/></symbol>
