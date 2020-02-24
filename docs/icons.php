@@ -451,20 +451,30 @@
                         <li><svg class="icon icon-xxl"><use xlink:href="#database-fill"/></svg><span>database-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#news"/></svg><span>news</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#news-fill"/></svg><span>news-fill</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-doc"></i><span>doc</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-docs"></i><span>docs</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-doc-no"></i><span>doc-no</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-archive"></i><span>archive</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-draw"></i><span>draw</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-edit"></i><span>edit</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#doc"/></svg><span>doc</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#doc-fill"/></svg><span>doc-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#docs"/></svg><span>docs</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#docs-fill"/></svg><span>docs-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#doc-no"/></svg><span>doc-no</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#doc-no-fill"/></svg><span>doc-no-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#archive"/></svg><span>archive</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#archive-fill"/></svg><span>archive-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#draw"/></svg><span>draw</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#draw-fill"/></svg><span>draw-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#edit"/></svg><span>edit</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#edit-fill"/></svg><span>edit-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#ellipsis-h"/></svg><span>ellipsis-h</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#ellipsis-h-fill"/></svg><span>ellipsis-h-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#ellipsis-v"/></svg><span>ellipsis-v</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#ellipsis-v-fill"/></svg><span>ellipsis-v-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#skip"/></svg><span>skip</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#skip-fill"/></svg><span>skip-fill</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-envelope"></i><span>envelope</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-envelope-open"></i><span>envelope-open</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#skip"/></svg><span>skip</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#skip-fill"/></svg><span>skip-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#envelope"/></svg><span>envelope</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#envelope-fill"/></svg><span>envelope-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#envelope-open"/></svg><span>envelope-open</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#envelope-open-fill"/></svg><span>envelope-open-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#expand"/></svg><span>expand</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#expand-wide"/></svg><span>expand-wide</span></li>
                         <li class="half-opacity"><i class="icon icon-xxl icon-eye"></i><span>eye</span></li>
