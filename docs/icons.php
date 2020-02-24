@@ -57,10 +57,14 @@
         html:not(.mobile) .icons-list li:hover { background-color: #fff; }
         .icons-list li > span { content: attr(data-name); color: #666; font-size: 13px; white-space: nowrap; text-overflow: ellipsis; line-height: normal; min-width: 129px; width: 100%; margin-top: 10px; overflow: hidden; display: block; }
 
+        .icons-list li svg.icon { background: #e8e2e2; border-radius: 6px; }
+
         @media (prefers-color-scheme: dark) {
             .icons-list li { color: #fff; background-color: #2f343e; }
             html:not(.mobile) .icons-list li:hover { background-color: #3c424d; }
             .icons-list li > span { color: #d0d0d0; }
+
+            .icons-list li svg.icon { background: #252a33; }
         }
 
     </style>
@@ -443,8 +447,10 @@
                         <li><svg class="icon icon-xxl"><use xlink:href="#compass-fill"/></svg><span>compass-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#copyright"/></svg><span>copyright</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#copyright-fill"/></svg><span>copyright-fill</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-database"></i><span>database</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-news"></i><span>news</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#database"/></svg><span>database</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#database-fill"/></svg><span>database-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#news"/></svg><span>news</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#news-fill"/></svg><span>news-fill</span></li>
                         <li class="half-opacity"><i class="icon icon-xxl icon-doc"></i><span>doc</span></li>
                         <li class="half-opacity"><i class="icon icon-xxl icon-docs"></i><span>docs</span></li>
                         <li class="half-opacity"><i class="icon icon-xxl icon-doc-no"></i><span>doc-no</span></li>
@@ -574,7 +580,8 @@
                         <li><svg class="icon animate-spin icon-xxl"><use xlink:href="#loader-line-dash"/></svg><span>loader-line-dash</span></li>
                         <li><svg class="icon animate-spin icon-xxl"><use xlink:href="#loader-roll"/></svg><span>loader-roll</span></li>
                         <li><svg class="icon animate-spin icon-xxl"><use xlink:href="#loader-spin"/></svg><span>loader-spin</span></li>
-                        <li><svg class="icon animate-spin icon-xxl"><use xlink:href="#loader-dot"/></svg><span>loader-dot</span></li>
+                        <li><svg class="icon animate-spin icon-xxl"><use xlink:href="#loader-circle-sm"/></svg><span>loader-circle-sm</span></li>
+                        <li><svg class="icon animate-spin icon-xxl"><use xlink:href="#loader-circle-sm-fill"/></svg><span>loader-circle-sm-fill</span></li>
                         <li><svg class="icon animate-spin icon-xxl"><use xlink:href="#loader-circle"/></svg><span>loader-circle</span></li>
                         <li><svg class="icon animate-spin icon-xxl"><use xlink:href="#loader-circle-fill"/></svg><span>loader-circle-fill</span></li>
                         <li><svg class="icon animate-spin icon-xxl"><use xlink:href="#loader-drop"/></svg><span>loader-drop</span></li>

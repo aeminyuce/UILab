@@ -6,9 +6,8 @@ button.icon { background-color: transparent; }
 
 svg.icon { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 24px; }
 
-.svg-full,.svg-fill { fill: currentColor !important; }
-.svg-fill { opacity: .25; }
-.svg-sub { opacity: .5; }
+.svg-fill { fill: currentColor !important; }
+.svg-sub { opacity: .45; }
 .svg-line { fill: none !important; }
 
 .icon-xxs { font-size: 10px; width: 10px; height: 10px; }
