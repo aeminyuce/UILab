@@ -58,9 +58,21 @@
             'use strict';
             /*globals document, selector, events, alert, setTimeout, ajax, FileReader */
 
+            function fileSize(holder, code) {
+
+                var fileSize = encodeURIComponent(code).match(/%[89ABab]/g);
+
+                fileSize = code.length + (fileSize ? fileSize.length : 0);
+                fileSize = fileSize / 1024;
+
+                fileSize = fileSize.toFixed(2);
+                selector('.generate-size', holder)[0].innerHTML = fileSize + ' kb';
+
+            }
+
             function pullFiles(that) {
 
-                var holder, list, result, pullResults, count, countFnc, fileSize;
+                var holder, list, result, pullResults, count, countFnc;
 
                 holder = events.closest(that, '.generate-holder')[0];
                 list = selector('input:checked:not(.generate-toggle)', holder);
@@ -89,21 +101,10 @@
 
                                 } else {
 
-                                    if (events.hasClass(that, 'generate-min')) {
-                                        pullResults = pullResults.replace(/\s+\s/g, '').replace(/^\s|\s+$/g, '').replace(/\n/g, '');
-                                    }
-
                                     result.value = pullResults;
-                                    events.trigger(result, 'keydown');
-
                                     result.scrollTop = 0; // IE, EDGE: scrollTo() not supported for textarea element
 
-                                    fileSize = encodeURIComponent(pullResults).match(/%[89ABab]/g);
-                                    fileSize = pullResults.length + (fileSize ? fileSize.length : 0);
-                                    fileSize = fileSize / 1024;
-
-                                    fileSize = fileSize.toFixed(2);
-                                    selector('.generate-size', holder)[0].innerHTML = fileSize + ' kb';
+                                    fileSize(holder, pullResults);
 
                                     // empty variables
                                     setTimeout(function () {
@@ -258,17 +259,60 @@
                     form = selector('textarea', holder)[0];
 
                     form.value = '';
-                    events.trigger(form, 'keydown');
-
                     selector('.generate-size', holder)[0].innerHTML = '0 kb';
+
+                });
+
+                events.on('.generate-min', 'click', function () {
+
+                    var holder, result, code;
+
+                    holder = events.closest(this, '.generate-holder')[0];
+                    result = selector('textarea', holder)[0];
+
+                    code = result.value;
+                    if (code.length === 0) { return; }
+
+                    // remove comments, test url: https://regex101.com/r/B8WkuX/1
+                    code = code.replace(/\/\*[\s\S]*?\*\/|([^\\:]|^)\/\/.*$/g, '');
+
+                    // line breaks and remove spaces
+                    code = code.replace(/\n/g, '').replace(/\s+\s/g, '').replace(/^\s|\s+$/g, '');
+
+                    result.value = code;
+                    result.scrollTop = 0; // IE, EDGE: scrollTo() not supported for textarea element
+
+                    fileSize(holder, code);
+
+                });
+
+                events.on(document, 'paste keydown blur', '.generate-holder textarea', function () {
+
+                    var that, holder, result, code;
+
+                    that = this;
+                    setTimeout(function () {
+
+                        holder = events.closest(that, '.generate-holder')[0];
+                        result = selector('textarea', holder)[0];
+
+                        code = result.value;
+                        fileSize(holder, code);
+
+                    }, 0);
 
                 });
 
                 events.on('.generate-copy', 'click', function () {
 
-                    var holder = events.closest(this, '.generate-holder')[0];
+                    var holder, form;
 
-                    selector('textarea', holder)[0].select();
+                    holder = events.closest(this, '.generate-holder')[0];
+                    form = selector('textarea', holder)[0];
+
+                    if (form.value.length === 0) { return; }
+
+                    form.select();
                     document.execCommand('copy');
 
                 });
@@ -862,24 +906,27 @@
                         <div class="row">
                             <div class="col-12 no-padding-t">
 
-                                <label class="form-label">CSS Codes:</label>
-
                                 <div class="textarea margin-15-b round border-dual ease-form">
                                     <textarea class="x-dark large padding-10" rows="12" placeholder="Generated CSS will be here!"></textarea>
                                     <div class="border-t border-dual">
-                                        <button title="Clear form!" class="generate-clear btn btn-square btn-ghost ease-btn">
-                                            <i class="icon icon-sm icon-trash"></i>
-                                        </button>
-                                        Calculated file size:
+                                        <div class="inline-block padding-5-r">
+                                            <button title="Clear form!" class="generate-clear btn btn-square btn-ghost left ease-btn">
+                                                <i class="icon icon-sm icon-trash"></i>
+                                            </button>
+                                            <button title="Minify code" class="generate-min btn btn-square btn-ghost ease-btn">
+                                                <i class="icon icon-sm icon-code"></i>
+                                            </button>
+                                        </div>
+                                        File size:
                                         <b class="generate-size">0 Kb</b>
                                     </div>
                                 </div>
                                 <div class="align-r align-c ease-1st-btn">
-                                    Generate CSS:
                                     <span class="sp15 visible-xs"></span>
-                                    <button class="generate-btn btn round">CSS</button>
-                                    <button class="generate-btn generate-min btn round">Min CSS</button>
-                                    <button class="generate-copy btn btn-square ui-dark round"><i class="icon icon-sm icon-files"></i></button>
+                                    <button class="generate-btn btn btn-xs-fluid round ui-dark">Generate CSS</button>
+                                    <button title="Copy to clipboard!" class="generate-copy btn btn-xs-fluid round">
+                                        <i class="icon icon-files"></i> Copy to clipboard
+                                    </button>
                                 </div>
 
                             </div>
@@ -1271,25 +1318,28 @@
                         <div class="row">
                             <div class="col-12 no-padding-t">
 
-                                <label class="form-label">JS Codes:</label>
-
                                 <div class="textarea margin-15-b round border-dual ease-form">
                                     <textarea class="x-dark large padding-10" rows="12" placeholder="Generated JS will be here!"></textarea>
                                     <div class="border-t border-dual">
-                                        <button title="Clear form!" class="generate-clear btn btn-square btn-ghost ease-btn">
-                                            <i class="icon icon-sm icon-trash"></i>
-                                        </button>
-                                        Calculated file size:
+                                        <div class="inline-block padding-5-r">
+                                            <button title="Clear form!" class="generate-clear btn btn-square btn-ghost left ease-btn">
+                                                <i class="icon icon-sm icon-trash"></i>
+                                            </button>
+                                            <button title="Minify code" class="generate-min btn btn-square btn-ghost ease-btn">
+                                                <i class="icon icon-sm icon-code"></i>
+                                            </button>
+                                        </div>
+                                        File size:
                                         <b class="generate-size">0 Kb</b>
                                     </div>
                                 </div>
 
                                 <div class="align-r align-c ease-1st-btn">
-                                    Generate JS:
                                     <span class="sp15 visible-xs"></span>
-                                    <button class="generate-btn btn round">JS</button>
-                                    <button class="generate-btn generate-min btn round">Min JS</button>
-                                    <button class="generate-copy btn btn-square ui-dark round"><i class="icon icon-sm icon-files"></i></button>
+                                    <button class="generate-btn btn btn-xs-fluid round ui-dark">Generate JS</button>
+                                    <button title="Copy to clipboard!" class="generate-copy btn btn-xs-fluid round">
+                                        <i class="icon icon-files"></i> Copy to clipboard
+                                    </button>
                                 </div>
 
                             </div>
