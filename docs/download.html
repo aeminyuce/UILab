@@ -89,6 +89,10 @@
 
                                 } else {
 
+                                    if (events.hasClass(that, 'generate-min')) {
+                                        pullResults = pullResults.replace(/\s+\s/g, '').replace(/^\s|\s+$/g, '').replace(/\n/g, '');
+                                    }
+
                                     result.value = pullResults;
                                     events.trigger(result, 'keydown');
 
@@ -870,13 +874,12 @@
                                         <b class="generate-size">0 Kb</b>
                                     </div>
                                 </div>
-
                                 <div class="align-r align-c ease-1st-btn">
-                                    <button class="generate-btn btn btn-xs-fluid padding-20-h ui-dark round">Generate CSS</button>
-                                    <button class="generate-copy btn btn-xs-fluid padding-20-h round">
-                                        Copy to Clipboard
-                                        <i class="icon icon-sm icon-files margin-5-l"></i>
-                                    </button>
+                                    Generate CSS:
+                                    <span class="sp15 visible-xs"></span>
+                                    <button class="generate-btn btn round">CSS</button>
+                                    <button class="generate-btn generate-min btn round">Min CSS</button>
+                                    <button class="generate-copy btn btn-square ui-dark round"><i class="icon icon-sm icon-files"></i></button>
                                 </div>
 
                             </div>
@@ -1282,11 +1285,11 @@
                                 </div>
 
                                 <div class="align-r align-c ease-1st-btn">
-                                    <button class="generate-btn btn btn-xs-fluid padding-20-h ui-dark round">Generate JS</button>
-                                    <button class="generate-copy btn btn-xs-fluid padding-20-h round">
-                                        Copy to Clipboard
-                                        <i class="icon icon-sm icon-files margin-5-l"></i>
-                                    </button>
+                                    Generate JS:
+                                    <span class="sp15 visible-xs"></span>
+                                    <button class="generate-btn btn round">JS</button>
+                                    <button class="generate-btn generate-min btn round">Min JS</button>
+                                    <button class="generate-copy btn btn-square ui-dark round"><i class="icon icon-sm icon-files"></i></button>
                                 </div>
 
                             </div>
