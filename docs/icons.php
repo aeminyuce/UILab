@@ -477,8 +477,10 @@
                         <li><svg class="icon icon-xxl"><use xlink:href="#envelope-open-fill"/></svg><span>envelope-open-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#expand"/></svg><span>expand</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#expand-wide"/></svg><span>expand-wide</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-eye"></i><span>eye</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-face-blank"></i><span>face-blank</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#eye"/></svg><span>eye</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#eye-fill"/></svg><span>eye-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#face-blank"/></svg><span>face-blank</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#face-blank-fill"/></svg><span>face-blank-fill</span></li>
                         <li class="half-opacity"><i class="icon icon-xxl icon-face-smile"></i><span>face-smile</span></li>
                         <li class="half-opacity"><i class="icon icon-xxl icon-face-sad"></i><span>face-sad</span></li>
                         <li class="half-opacity"><i class="icon icon-xxl icon-face-meh"></i><span>face-meh</span></li>

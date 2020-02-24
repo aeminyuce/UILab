@@ -975,6 +975,20 @@
         <path d="M180 12h72v48 M84 204H12v-48"/>
         <path class="svg-sub" d="M180 204h72v-48M84 12H12v48"/>
     </symbol>
+    <symbol id="eye" viewBox="-12 -48 288 288">
+        <path d="M132.3 60c22 0 40 14.6 40 36.7s-18 35.8-40 35.8-40-13.8-40-35.8 17.9-36.7 40-36.7z"/>
+        <path class="svg-sub" d="M132 12c84 0 120 84 120 84s-36 84-120 84S12 96 12 96s36-84 120-84z"/>
+    </symbol>
+    <symbol id="eye-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#eye"/>
+    </symbol>
+    <symbol id="face-blank" viewBox="-2 -2 288 288">
+        <path transform="translate(68 78)" d="M112 12a20 20 0 11-20 20 20 20 0 0120-20zM32 12a20 20 0 11-20 20 20 20 0 0120-20z"/>
+        <use class="svg-sub" xlink:href="#circle"/>
+    </symbol>
+    <symbol id="face-blank-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#face-blank"/>
+    </symbol>
     <symbol id="grid-row" viewBox="-12 -12 288 288">
         <path d="M12 12h240v96H12z"/>
         <path class="svg-sub" transform="translate(0 144)" d="M12 12h240v96H12z"/>
