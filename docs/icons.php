@@ -481,17 +481,28 @@
                         <li><svg class="icon icon-xxl"><use xlink:href="#eye-fill"/></svg><span>eye-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#face-blank"/></svg><span>face-blank</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#face-blank-fill"/></svg><span>face-blank-fill</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-face-smile"></i><span>face-smile</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-face-sad"></i><span>face-sad</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-face-meh"></i><span>face-meh</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-factory"></i><span>factory</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-fire"></i><span>fire</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-fire-camp"></i><span>fire-camp</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-flag"></i><span>flag</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-flag-fill"></i><span>flag-fill</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-gas-pump"></i><span>gas-pump</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-globe"></i><span>globe</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-filter"></i><span>filter</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#face-smile"/></svg><span>face-smile</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#face-smile-fill"/></svg><span>face-smile-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#face-sad"/></svg><span>face-sad</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#face-sad-fill"/></svg><span>face-sad-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#face-sad"/></svg><span>face-sad</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#face-sad-fill"/></svg><span>face-sad-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#face-meh"/></svg><span>face-meh</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#face-meh-fill"/></svg><span>face-meh-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#factory"/></svg><span>factory</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#factory-fill"/></svg><span>factory-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#fire"/></svg><span>fire</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#fire-fill"/></svg><span>fire-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#fire-camp"/></svg><span>fire-camp</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#fire-camp-fill"/></svg><span>fire-camp-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#flag"/></svg><span>flag</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#flag-fill"/></svg><span>flag-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#gas-pump"/></svg><span>gas-pump</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#gas-pump-fill"/></svg><span>gas-pump-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#globe"/></svg><span>globe</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#globe-fill"/></svg><span>globe-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#filter"/></svg><span>filter</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#filter-fill"/></svg><span>filter-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#grid-row"/></svg><span>grid-row</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#grid-row-fill"/></svg><span>grid-row-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#grid-column"/></svg><span>grid-column</span></li>
@@ -500,18 +511,34 @@
                         <li><svg class="icon icon-xxl"><use xlink:href="#grid-column-sm-fill"/></svg><span>grid-column-sm-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#grid-flow"/></svg><span>grid-flow</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#grid-flow-fill"/></svg><span>grid-flow-fill</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-heart"></i><span>heart</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-heart-fill"></i><span>heart-fill</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-help"></i><span>help</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-hourglass-start"></i><span>hourglass-start</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-hourglass-end"></i><span>hourglass-end</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-image"></i><span>image</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-images"></i><span>images</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-images-add"></i><span>images-add</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-keyboard"></i><span>keyboard</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-land"></i><span>land</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-leaf"></i><span>leaf</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-water"></i><span>water</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#heart"/></svg><span>heart</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#heart-fill"/></svg><span>heart-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#help"/></svg><span>help</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#help-fill"/></svg><span>help-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#hourglass"/></svg><span>hourglass</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#hourglass-fill"/></svg><span>hourglass-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#hourglass-start"/></svg><span>hourglass-start</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#hourglass-start-fill"/></svg><span>hourglass-start-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#hourglass-end"/></svg><span>hourglass-end</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#hourglass-end-fill"/></svg><span>hourglass-end-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#image"/></svg><span>image</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#image-fill"/></svg><span>image-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#images"/></svg><span>images</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#images-fill"/></svg><span>images-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#images-minus"/></svg><span>images-minus</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#images-minus-fill"/></svg><span>images-minus-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#images-plus"/></svg><span>images-plus</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#images-plus-fill"/></svg><span>images-plus-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#images-check"/></svg><span>images-check</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#images-check-fill"/></svg><span>images-check-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#keyboard"/></svg><span>keyboard</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#keyboard-fill"/></svg><span>keyboard-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#land"/></svg><span>land</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#land-fill"/></svg><span>land-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#leaf"/></svg><span>leaf</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#leaf-fill"/></svg><span>leaf-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#water"/></svg><span>water</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#water-fill"/></svg><span>water-fill</span></li>
                         <li class="half-opacity"><i class="icon icon-xxl icon-link"></i><span>link</span></li>
                         <li class="half-opacity"><i class="icon icon-xxl icon-link-external"></i><span>link-external</span></li>
                         <li class="half-opacity"><i class="icon icon-xxl icon-target"></i><span>target</span></li>
@@ -547,6 +574,7 @@
                         <li><svg class="icon icon-xxl"><use xlink:href="#search-marker"/></svg><span>search-marker</span></li>
                         <li class="half-opacity"><i class="icon icon-xxl icon-setting"></i><span>setting</span></li>
                         <li class="half-opacity"><i class="icon icon-xxl icon-settings"></i><span>settings</span></li>
+                        <li class="half-opacity"><i class="icon icon-xxl icon-settings-v"></i><span>settings-v</span></li>
                         <li class="half-opacity"><i class="icon icon-xxl icon-share"></i><span>share</span></li>
                         <li class="half-opacity"><i class="icon icon-xxl icon-send"></i><span>send</span></li>
                         <li class="half-opacity"><i class="icon icon-xxl icon-sign-in"></i><span>sign-in</span></li>

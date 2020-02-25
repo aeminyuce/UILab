@@ -983,11 +983,81 @@
         <use class="svg-fill" xlink:href="#eye"/>
     </symbol>
     <symbol id="face-blank" viewBox="-2 -2 288 288">
-        <path transform="translate(68 78)" d="M112 12a20 20 0 11-20 20 20 20 0 0120-20zM32 12a20 20 0 11-20 20 20 20 0 0120-20z"/>
+        <path class="svg-link" transform="translate(70 78)" d="M112 12a20 20 0 11-20 20 20 20 0 0120-20zM32 12a20 20 0 11-20 20 20 20 0 0120-20z"/>
         <use class="svg-sub" xlink:href="#circle"/>
     </symbol>
     <symbol id="face-blank-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#face-blank"/>
+    </symbol>
+    <symbol id="face-smile" viewBox="0 0 288 288">
+        <use xlink:href="#face-blank"/>
+        <path class="svg-line" transform="translate(70 160)" d="M15.3 15.3s13.7 38 60.9 38 59.1-38 59.1-38"/>
+    </symbol>
+    <symbol id="face-smile-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#face-smile"/>
+    </symbol>
+    <symbol id="face-sad" viewBox="0 0 288 288">
+        <use xlink:href="#face-blank"/>
+        <path class="svg-line" transform="translate(70 152)" d="M15.3 50S29 12 76.2 12s59.1 38 59.1 38"/>
+    </symbol>
+    <symbol id="face-sad-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#face-sad"/>
+    </symbol>
+    <symbol id="face-meh" viewBox="0 0 288 288">
+        <use xlink:href="#face-blank"/>
+        <path class="svg-line" transform="translate(72 178)" d="M12 12h120"/>
+    </symbol>
+    <symbol id="face-meh-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#face-meh"/>
+    </symbol>
+    <symbol id="factory" viewBox="-12 -12 288 288">
+        <path d="M12 252L24 12h40l12 160 88-44v44l88-44v124z"/>
+    </symbol>
+    <symbol id="factory-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#factory"/>
+    </symbol>
+    <symbol id="fire" viewBox="-42 -12 288 288">
+        <path d="M140 56c22.3 38.5 48 65.2 48 112 0 39.4-38.5 84-88 84s-88-34.6-88-84 26.6-67.5 72-156c-25.4 95.2 43.3 92.5 0 172 51.7-30 56-128 56-128z"/>
+    </symbol>
+    <symbol id="fire-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#fire"/>
+    </symbol>
+    <symbol id="fire-camp" viewBox="-46 -12 288 288">
+        <path d="M123 42c15.3 26.4 32.9 44.6 32.9 76.6 0 27-26.3 57.4-60.2 57.4s-60.1-23.7-60.1-57.4S53.8 72.5 84.8 12c-17.4 65 29.6 63.2 0 117.5C120 109.1 123 42.1 123 42.1z"/>
+        <path class="svg-sub" d="M15.6 251.7l160-55.7M175.6 251.7L15.6 196"/>
+    </symbol>
+    <symbol id="fire-camp-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#fire-camp"/>
+    </symbol>
+    <symbol id="flag" viewBox="-12 -12 288 288">
+        <path class="svg-sub" d="M27.8 24.2l-15 228"/>
+        <path d="M27.8 24.2c91.3-42.3 131 42.4 224 0l-11.2 160c-87.1 41.7-136-42.5-223.6 0z"/>
+    </symbol>
+    <symbol id="flag-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#flag"/>
+    </symbol>
+    <symbol id="gas-pump" viewBox="-22 -12 288 288">
+        <path d="M60 45h64v47H60z"/>
+        <g class="svg-sub">
+            <path d="M12 252h160M52 12h80a24 24 0 0124 24v216H28V36a24 24 0 0124-24z"/>
+            <path class="svg-line" d="M157 128s22.6-1.4 31 20-2.5 60 24 60 25-64.2 25-82V65l-32.8-31.9M237 86c-21 0-29-14-20.5-41"/>
+        </g>
+    </symbol>
+    <symbol id="gas-pump-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#gas-pump"/>
+    </symbol>
+    <symbol id="globe" viewBox="-20 -12 288 288">
+        <path d="M114.8 47.6a63.5 63.5 0 11-63.5 63.5 63.5 63.5 0 0163.5-63.5z"/>
+        <path class="svg-sub svg-line" d="M17 210.6L70.6 157M160.7 66.9l50-50 M56.3 256.6h128M120.3 256.1v-33.5M194.5 33.2A111.5 111.5 0 0136.8 190.8"/>
+    </symbol>
+    <symbol id="globe-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#globe"/>
+    </symbol>
+    <symbol id="filter" viewBox="-12 -12 288 288">
+        <path d="M12 12h240l-92 92v112l-56 36V104z"/>
+    </symbol>
+    <symbol id="filter-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#filter"/>
     </symbol>
     <symbol id="grid-row" viewBox="-12 -12 288 288">
         <path d="M12 12h240v96H12z"/>
@@ -1029,6 +1099,121 @@
     </symbol>
     <symbol id="grid-flow-fill" viewBox="-2 -2 288 288">
         <use class="svg-fill" xlink:href="#grid-flow"/>
+    </symbol>
+    <symbol id="heart" viewBox="-12 -20 288 288">
+        <path d="M12 80.5c0-79.5 92-96 120-16 28-80 120-63 120 16S132 235.4 132 235.4 12 159.9 12 80.4z"/>
+    </symbol>
+    <symbol id="heart-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#heart"/>
+    </symbol>
+    <symbol id="help" viewBox="-12 -12 288 288">
+        <path class="svg-line" d="M47.5 217l45-45M172 92.2l44.7-44.7M216.7 217l-44.9-45M92.2 92.3L47.5 47.5"/>
+        <path class="svg-sub" d="M132 252c-66 0-120-54-120-120S66 12 132 12s120 54 120 120-54 120-120 120zm0-176a56 56 0 00-56 56 56 56 0 0056 56 56 56 0 0056-56 56 56 0 00-56-56z"/>
+    </symbol>
+    <symbol id="help-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#help"/>
+    </symbol>
+    <symbol id="hourglass" viewBox="-42 -12 288 288">
+        <path d="M188.4 12s12 120-87.5 120S12.4 12 12.4 12z M188.4 252s12-120-87.5-120-88.5 120-88.5 120z"/>
+    </symbol>
+    <symbol id="hourglass-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#hourglass"/>
+    </symbol>
+    <symbol id="hourglass-start" viewBox="-42 -12 288 288">
+        <path class="svg-fill" d="M188.4 12s12 120-87.5 120S12.4 12 12.4 12z"/>
+        <path class="svg-sub" d="M188.4 252s12-120-87.5-120-88.5 120-88.5 120z"/>
+    </symbol>
+    <symbol id="hourglass-start-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#hourglass-start"/>
+    </symbol>
+    <symbol id="hourglass-end" viewBox="-42 -12 288 288">
+        <path class="svg-sub" d="M188.4 12s12 120-87.5 120S12.4 12 12.4 12z"/>
+        <path class="svg-fill" d="M188.4 252s12-120-87.5-120-88.5 120-88.5 120z"/>
+    </symbol>
+    <symbol id="hourglass-end-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#hourglass-end"/>
+    </symbol>
+    <symbol id="hourglass-end" viewBox="-42 -12 288 288">
+        <path class="svg-sub" d="M188.4 12s12 120-87.5 120S12.4 12 12.4 12z"/>
+        <path class="svg-fill" d="M188.4 252s12-120-87.5-120-88.5 120-88.5 120z"/>
+    </symbol>
+    <symbol id="hourglass-end-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#hourglass-end"/>
+    </symbol>
+    <symbol id="image" viewBox="-12 -44 288 288">
+        <path d="M196 52a16 16 0 11-16 16 16 16 0 0116-16z M52 148l48-84 24 48 16-20 36 56z"/>
+        <path class="svg-sub" d="M12 12h240v176H12z"/>
+    </symbol>
+    <symbol id="image-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#image"/>
+    </symbol>
+    <symbol id="images" viewBox="-12 -38 288 288">
+        <path d="M205.4 45.3A13.3 13.3 0 11192 58.7a13.3 13.3 0 0113.4-13.4z M85.3 125.4l40-70 20 40 13.4-16.7 30 46.7z"/>
+        <g class="svg-sub">
+            <path d="M52 12h200v146.7H52z"/>
+            <path class="svg-line" d="M12 52h40v107h160v45H12z"/>
+        </g>
+    </symbol>
+    <symbol id="images-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#images"/>
+    </symbol>
+    <symbol id="images-minus" viewBox="-12 -38 288 288">
+        <use x="10" y="-60" xlink:href="#in-minus"/>
+        <g class="svg-sub">
+            <path d="M52 12h200v146.7H52z"/>
+            <path class="svg-line" d="M12 52h40v107h160v45H12z"/>
+        </g>
+    </symbol>
+    <symbol id="images-minus-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#images-minus"/>
+    </symbol>
+    <symbol id="images-plus" viewBox="-12 -38 288 288">
+        <use x="10" y="-60" xlink:href="#in-plus"/>
+        <g class="svg-sub">
+            <path d="M52 12h200v146.7H52z"/>
+            <path class="svg-line" d="M12 52h40v107h160v45H12z"/>
+        </g>
+    </symbol>
+    <symbol id="images-plus-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#images-plus"/>
+    </symbol>
+    <symbol id="images-check" viewBox="-12 -38 288 288">
+        <use class="svg-line" x="10" y="-62" xlink:href="#in-check"/>
+        <g class="svg-sub">
+            <path d="M52 12h200v146.7H52z"/>
+            <path class="svg-line" d="M12 52h40v107h160v45H12z"/>
+        </g>
+    </symbol>
+    <symbol id="images-check-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#images-check"/>
+    </symbol>
+    <symbol id="keyboard" viewBox="-24 -60 288 288">
+        <path transform="translate(32 32)" d="M12 12h8M60 12h8M108 12h8M156 12h8M132 52h8M84 52h8M36 52h8M12 92h8M60 92h104"/>
+        <rect class="svg-sub" width="240" height="168" rx="24"/>
+    </symbol>
+    <symbol id="keyboard-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#keyboard"/>
+    </symbol>
+    <symbol id="land" viewBox="-8 -8 288 288">
+        <path d="M179.4 207L93 69M66 181l80-27"/>
+        <path class="svg-sub" d="M137 245l120-108L137 29 17 137z"/>
+    </symbol>
+    <symbol id="land-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#land"/>
+    </symbol>
+    <symbol id="leaf" viewBox="42 46 288 288">
+        <path class="svg-sub" d="M249 134.5c-45.6-46.2-101.2-9-172.6-62.4-5.8 101.7 40 158.9 58 177 32.5 32.4 83 21.8 111.8-7.1s35.8-74.6 2.8-107.5z"/>
+        <path class="svg-line" d="M291.2 312.3c1.3-74.8-103-128-103-128"/>
+    </symbol>
+    <symbol id="leaf-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#leaf"/>
+    </symbol>
+    <symbol id="water" viewBox="-10 -12 288 288">
+        <path d="M162 252c49.7 0 90-30 90-90S162 12 162 12s-90 90-90 150 40.2 90 90 90z"/>
+        <path class="svg-sub" d="M69 188l5.5-.3c-4.2-24.5-8.8-48.8 31-107.1C89.3 56.3 69 36 69 36s-57 57-57 95 25.5 57 57 57z"/>
+    </symbol>
+    <symbol id="water-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#water"/>
     </symbol>
     <symbol id="search" viewBox="-10 -10 288 288">
         <path d="M108 12a96 96 0 11-96 96 96 96 0 0196-96z"/>
