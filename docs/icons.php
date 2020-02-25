@@ -511,6 +511,8 @@
                         <li><svg class="icon icon-xxl"><use xlink:href="#grid-column-sm-fill"/></svg><span>grid-column-sm-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#grid-flow"/></svg><span>grid-flow</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#grid-flow-fill"/></svg><span>grid-flow-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#grid-masonry"/></svg><span>grid-masonry</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#grid-masonry-fill"/></svg><span>grid-masonry-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#heart"/></svg><span>heart</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#heart-fill"/></svg><span>heart-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#help"/></svg><span>help</span></li>
@@ -539,18 +541,27 @@
                         <li><svg class="icon icon-xxl"><use xlink:href="#leaf-fill"/></svg><span>leaf-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#water"/></svg><span>water</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#water-fill"/></svg><span>water-fill</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-link"></i><span>link</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-link-external"></i><span>link-external</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-target"></i><span>target</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-location"></i><span>location</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-location-arrow"></i><span>location-arrow</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-key"></i><span>key</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-lock"></i><span>lock</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-lock-open"></i><span>lock-open</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-map"></i><span>map</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-network"></i><span>network</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-no"></i><span>no</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-paw"></i><span>paw</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#link"/></svg><span>link</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#link-external"/></svg><span>link-external</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#target"/></svg><span>target</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#target-fill"/></svg><span>target-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#location"/></svg><span>location</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#location-fill"/></svg><span>location-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#location-arrow"/></svg><span>location-arrow</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#location-arrow-fill"/></svg><span>location-arrow-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#key"/></svg><span>key</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#key-fill"/></svg><span>key-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#lock"/></svg><span>lock</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#lock-fill"/></svg><span>lock-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#lock-open"/></svg><span>lock-open</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#lock-open-fill"/></svg><span>lock-open-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#map"/></svg><span>map</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#map-fill"/></svg><span>map-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#network"/></svg><span>network</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#network-fill"/></svg><span>network-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#no"/></svg><span>no</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#paw"/></svg><span>paw</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#paw-fill"/></svg><span>paw-fill</span></li>
                         <li class="half-opacity"><i class="icon icon-xxl icon-pen"></i><span>pen</span></li>
                         <li class="half-opacity"><i class="icon icon-xxl icon-pen-write"></i><span>pen-write</span></li>
                         <li class="half-opacity"><i class="icon icon-xxl icon-pencil"></i><span>pencil</span></li>
