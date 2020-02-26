@@ -134,7 +134,7 @@
         <div class="row theme-default2 ui-border border-t border-dual">
             <div class="col-12">
                 <a href="index.php" class="btn btn-lg btn-square circle ease-btn margin-10-r"><i class="icon no-opacity icon-long-arrow-left"></i></a>
-                <h1 class="x-large inline-block">UI Lab, <span class="capitalize"><?php echo $page; ?></span></h1>
+                <h1 class="x-large inline-block">UI Lab, <span class="capitalize"><?php echo str_replace("-", " ", $page); ?></span></h1>
             </div>
         </div>
     </header>
