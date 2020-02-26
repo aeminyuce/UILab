@@ -63,7 +63,7 @@
                 var fileSize = encodeURIComponent(code).match(/%[89ABab]/g);
 
                 fileSize = code.length + (fileSize ? fileSize.length : 0);
-                fileSize = fileSize / 1024;
+                fileSize = fileSize / 1000;
 
                 fileSize = fileSize.toFixed(2);
                 selector('.generate-size', holder)[0].innerHTML = fileSize + ' kb';
