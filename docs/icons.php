@@ -562,18 +562,28 @@
                         <li><svg class="icon icon-xxl"><use xlink:href="#no"/></svg><span>no</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#paw"/></svg><span>paw</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#paw-fill"/></svg><span>paw-fill</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-pen"></i><span>pen</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-pen-write"></i><span>pen-write</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-pencil"></i><span>pencil</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-pencil-write"></i><span>pencil-write</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-phone"></i><span>phone</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-phone-call"></i><span>phone-call</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-print"></i><span>print</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-puzzle"></i><span>puzzle</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-radiation"></i><span>radiation</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-recycle"></i><span>recycle</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-undo"></i><span>undo</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-redo"></i><span>redo</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#pen"/></svg><span>pen</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#pen-fill"/></svg><span>pen-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#pen-write"/></svg><span>pen-write</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#pen-write-fill"/></svg><span>pen-write-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#pencil"/></svg><span>pencil</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#pencil-fill"/></svg><span>pencil-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#pencil-write"/></svg><span>pencil-write</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#pencil-write-fill"/></svg><span>pencil-write-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#phone"/></svg><span>phone</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#phone-fill"/></svg><span>phone-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#phone-call"/></svg><span>phone-call</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#phone-call-fill"/></svg><span>phone-call-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#print"/></svg><span>print</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#print-fill"/></svg><span>print-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#puzzle"/></svg><span>puzzle</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#puzzle-fill"/></svg><span>puzzle-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#radiation"/></svg><span>radiation</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#radiation-fill"/></svg><span>radiation-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#recycle"/></svg><span>recycle</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#undo"/></svg><span>undo</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#redo"/></svg><span>redo</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#sync"/></svg><span>sync</span></li>
                         <li class="half-opacity"><i class="icon icon-xxl icon-reply"></i><span>reply</span></li>
                         <li class="half-opacity"><i class="icon icon-xxl icon-required"></i><span>required</span></li>
                         <li class="half-opacity"><i class="icon icon-xxl icon-save"></i><span>save</span></li>
@@ -598,7 +608,6 @@
                         <li class="half-opacity"><i class="icon icon-xxl icon-star"></i><span>star</span></li>
                         <li class="half-opacity"><i class="icon icon-xxl icon-star-half"></i><span>star-half</span></li>
                         <li class="half-opacity"><i class="icon icon-xxl icon-star-fill"></i><span>star-fill</span></li>
-                        <li><svg class="icon icon-xxl"><use xlink:href="#sync"/></svg><span>sync</span></li>
                         <li class="half-opacity"><i class="icon icon-xxl icon-table"></i><span>table</span></li>
                         <li class="half-opacity"><i class="icon icon-xxl icon-trash"></i><span>trash</span></li>
                         <li class="half-opacity"><i class="icon icon-xxl icon-trash-fill"></i><span>trash-fill</span></li>

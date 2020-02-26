@@ -45,6 +45,9 @@
     <symbol id="in-no" viewBox="0 0 288 288">
         <path d="M61.2 20L19.5 61.7M41 10a31 31 0 11-31 31 31 31 0 0131-31z"/>
     </symbol>
+    <symbol id="in-write" viewBox="0 0 288 288">
+        <path class="svg-line" d="M16.5 99.8s42.1 24 56.7-27.6c16.1 2.7 32.7 32.7 60.9 25.9 10.2-2.5 21.3-11 30.5-21.5"/>
+    </symbol>
     <!-- shared only: end -->
 
     <symbol id="angle-down" viewBox="-8 -75 288 288">
@@ -924,7 +927,7 @@
         <use class="svg-fill" xlink:href="#draw"/>
     </symbol>
     <symbol id="edit" viewBox="-12 0 288 288">
-        <path d="M247.8 42.9L232 27.1a14.3 14.3 0 00-20.2 0l-120.9 121L61 213.9l66-29.7 120.8-121a14.3 14.3 0 000-20.3z M127 184L91 148"/>
+        <path d="M247.8 42.9L232 27.1a14.3 14.3 0 00-20.2 0l-120.9 121L61 213.9l66-29.7 120.8-121a14.3 14.3 0 000-20.3z M127 184l-36-35.9"/>
         <path class="svg-sub svg-line" d="M124 46.7H12v216h216v-112"/>
     </symbol>
     <symbol id="edit-fill" viewBox="-2 -2 288 288">
@@ -1301,6 +1304,91 @@
     <symbol id="paw-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#paw"/>
     </symbol>
+    <symbol id="pen" viewBox="18 -8 288 288">
+        <path class="svg-sub" d="M221.5 108.7l-78.2-45.1-59.3 37v156.1L218.8 179z"/>
+        <path d="M221.5 108.7l-78.2-45.1 17.6-47 92.6 53.1z M84 256.5L149.5 143"/>
+    </symbol>
+    <symbol id="pen-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#pen"/>
+    </symbol>
+    <symbol id="pen-write" viewBox="0 0 288 288">
+        <use x="96" y="160" xlink:href="#in-write"/>
+        <use x="-42" xlink:href="#pen"/>
+    </symbol>
+    <symbol id="pen-write-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#pen-write"/>
+    </symbol>
+    <symbol id="pencil" viewBox="-26 -2 288 288">
+        <path d="M184 35.8L163.5 24a15.2 15.2 0 00-20.7 5.6L52.4 186.4 39.8 262l59.3-48.6 90.4-156.8a15.2 15.2 0 00-5.5-20.8z"/>
+        <path class="svg-sub" d="M99 213.4l-46.6-26.8"/>
+    </symbol>
+    <symbol id="pencil-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#pencil"/>
+    </symbol>
+    <symbol id="pencil-write" viewBox="0 0 288 288">
+        <use x="96" y="160" xlink:href="#in-write"/>
+        <use x="-42" xlink:href="#pencil"/>
+    </symbol>
+    <symbol id="pencil-write-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#pencil-write"/>
+    </symbol>
+    <symbol id="phone" viewBox="22 2 288 288">
+        <path d="M136.6 83.7c8 11.4 5.1 27-10.7 38.1l64.6 65c11.2-16 26.9-18.8 38.3-10.9l48.6 34.5a25.1 25.1 0 012.8 32.2c-16 22.7-51.5 32.5-74.2 16.6 0 0-44.5-30.8-82.7-69s-70-83.7-70-83.7c-16-22.7-6.2-58.3 16.6-74.2A25.1 25.1 0 01102 35z"/>
+    </symbol>
+    <symbol id="phone-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#phone"/>
+    </symbol>
+    <symbol id="phone" viewBox="-2 -2 288 288">
+        <path d="M136.6 83.7c8 11.4 5.1 27-10.7 38.1l64.6 65c11.2-16 26.9-18.8 38.3-10.9l48.6 34.5a25.1 25.1 0 012.8 32.2c-16 22.7-51.5 32.5-74.2 16.6 0 0-44.5-30.8-82.7-69s-70-83.7-70-83.7c-16-22.7-6.2-58.3 16.6-74.2A25.1 25.1 0 01102 35z"/>
+    </symbol>
+    <symbol id="phone-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#phone"/>
+    </symbol>
+    <symbol id="phone-call" viewBox="0 0 288 288">
+    <path class="svg-line" transform="translate(-18 -8)" d="M177.6 75.7a82.3 82.3 0 0158.3 58.1M170 35.5c57.1 5.6 100.8 49.3 106.7 106.3"/>
+        <use xlink:href="#phone"/>
+    </symbol>
+    <symbol id="phone-call-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#phone-call"/>
+    </symbol>
+    <symbol id="print" viewBox="-12 -20 288 288">
+        <path d="M12 52h240v64H12z M196 84h15.9 M84 196h56M84 156h95.9"/>
+        <path class="svg-sub" d="M44 116h176v120H44zM44 12h176v40H44z"/>
+    </symbol>
+    <symbol id="print-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#print"/>
+    </symbol>
+    <symbol id="puzzle" viewBox="-12 -10 288 288">
+        <path d="M180 253H12v-61.2c13.5 24.7 72.5 24.7 72.5-23.3s-60-48-72.5-23.3V85h62.4C48.5 72.4 48.5 12 97 12s47.5 60.4 22.6 73H180v60.7c12.6-25 72.5-25.4 72.5 23.3s-59.9 47.4-72.5 23.3V253z"/>
+    </symbol>
+    <symbol id="puzzle-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#puzzle"/>
+    </symbol>
+    <symbol id="radiation" viewBox="-12 -18 288 288">
+        <path d="M56.7 217.7l34.2-44.6s38.4 32.4 80.8.6l33.1 44.8c-77.3 51.4-143.5 2.6-148.1-.8zm139.2-84.4S204.8 83.9 156 63l22.2-51a128.3 128.3 0 0173.5 128.6zM86 12l22.2 51C59.5 84 68.3 133.3 68.3 133.3l-55.7 7.3C11.6 132 4.6 52.3 86 12z"/>
+        <path class="svg-sub" d="M132 100.8a22.3 22.3 0 11-22.4 22.3 22.3 22.3 0 0122.3-22.3z"/>
+    </symbol>
+    <symbol id="radiation-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#radiation"/>
+    </symbol>
+    <symbol id="recycle" viewBox="8 -14 288 288">
+        <path class="svg-sub" d="M131.4 217.5c-44.8-2.5-69.9 7.4-84.1-17.3s7.5-42.4 27.2-81.7 M238.5 119.4c20.2 40 41.4 56.8 27 81.5s-40.4 14.7-84.2 17.3 M99.4 76.2c24.5-37.5 28.5-64.2 57-64.2s33 27.7 57.2 64.4"/>
+        <path d="M86.4 162.2l-11.7-44-44 11.8 M213.1 186L181 218l32.2 32.3 M169.7 65l44 11.7 11.8-44"/>
+    </symbol>
+    <symbol id="recycle-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#recycle"/>
+    </symbol>
+    <symbol id="undo" viewBox="42 42 288 288">
+        <path class="svg-sub" d="M101.8 101.8a120 120 0 110 169.7"/>
+        <path d="M91.2 72.2v42h42"/>
+    </symbol>
+    <symbol id="redo" viewBox="-288 0 288 288">
+        <use transform="scale(-1,1)" xlink:href="#undo"/>
+    </symbol>
+    <symbol id="sync" viewBox="-8 -20 288 288">
+        <path d="M24.4 108.3a112 112 0 01217.8-17.8 M209.4 79.8l33.8 12.3 12.3-33.8"/>
+        <path class="svg-sub" d="M246 140.5a112 112 0 01-217.6 17 M61.5 168.3L27.7 156l-12.3 33.8"/>
+    </symbol>
     <symbol id="search" viewBox="-10 -10 288 288">
         <path d="M108 12a96 96 0 11-96 96 96 96 0 0196-96z"/>
         <path class="svg-sub" d="M252 252l-76-76"/>
@@ -1324,10 +1412,6 @@
     <symbol id="search-marker" viewBox="-2 -2 288 288">
         <use class="svg-sub" xlink:href="#search"/>
         <path transform="translate(74 67)" d="M42 12c16.6 0 30 10 30 30S42 92 42 92 12 62 12 42s13.4-30 30-30z"/>
-    </symbol>
-    <symbol id="sync" viewBox="-8 -20 288 288">
-        <path d="M24.4 108.3a112 112 0 01217.8-17.8 M209.4 79.8l33.8 12.3 12.3-33.8"/>
-        <path class="svg-sub" d="M246 140.5a112 112 0 01-217.6 17 M61.5 168.3L27.7 156l-12.3 33.8"/>
     </symbol>
     <symbol id="user" viewBox="-12 -12 288 288">
         <path d="M132 12a60 60 0 11-60 60 60 60 0 0160-60z M233.1 252H31a18.7 18.7 0 01-13.4-5.5A18.7 18.7 0 0112 233V228a120 120 0 015.8-37 119.5 119.5 0 0116.3-32.4 120.5 120.5 0 0124.8-25.8 119.7 119.7 0 0131.6-17.4A59.7 59.7 0 00132 132a59.7 59.7 0 0041.5-16.6 119.7 119.7 0 0131.6 17.4 120.5 120.5 0 0124.8 25.8 119.5 119.5 0 0116.3 32.4 120 120 0 015.8 37v5.1a18.7 18.7 0 01-5.5 13.4A18.7 18.7 0 01233 252z"/>
