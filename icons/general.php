@@ -1287,19 +1287,19 @@
         <use class="svg-fill" xlink:href="#map"/>
     </symbol>
     <symbol id="network" viewBox="-12 -12 288 288">
-        <path d="M132 12a60 60 0 11-60 60 60 60 0 0160-60z"/>
-        <path class="svg-sub" d="M52 172a40 40 0 11-40 40 40 40 0 0140-40zM102.2 124.3L72 177.2M161.8 124.3l30.2 52.9 M212 172a40 40 0 11-40 40 40 40 0 0140-40z"/>
+        <path d="M132 12a60 60 0 11-60 60 60 60 0 0160-60z M52 172a40 40 0 11-40 40 40 40 0 0140-40z M212 172a40 40 0 11-40 40 40 40 0 0140-40z"/>
+        <path class="svg-sub" d="M102.2 124.3L72 177.2M161.8 124.3l30.2 52.9"/>
     </symbol>
     <symbol id="network-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#network"/>
     </symbol>
     <symbol id="no" viewBox="0 0 288 288">
         <path transform="translate(42 42)" d="M179.7 17L17 179.7"/>
-        <use class="svg-sub" xlink:href="#circle"/>
+        <use xlink:href="#circle"/>
     </symbol>
     <symbol id="paw" viewBox="-6 -6 288 288">
-        <path d="M138.7 109.8c56.7 0 92 50 96 82.7 3.7 29.6-7.2 51.6-31.2 63.4s-39.8-16.1-64.8-16.1-41.1 28-65.1 16.1-34.5-35.1-31-63.4c4-32.4 39.4-82.7 96.1-82.7z"/>
-        <path class="svg-sub" d="M240.8 104.3c-6.7-1.8-9.9-11.5-7.2-21.6s10.3-17 17-15.1 9.9 11.4 7.2 21.6-10.4 16.9-17 15zM174 67.5c-9.3-2.5-14-15.3-10.4-28.7s14-22 23.4-19.6 14 15.4 10.4 28.7-14 22.1-23.4 19.6zM90.6 19.2c9.3-2.5 19.8 6.3 23.4 19.6s-1.1 26.2-10.4 28.7S83.7 61.2 80.2 48s1-26.2 10.4-28.7zM26.8 67.6c6.6-1.8 14.3 5 17 15s-.5 19.9-7.2 21.7-14.3-5-17-15.1.5-19.8 7.2-21.6z"/>
+        <path d="M240.8 104.3c-6.7-1.8-9.9-11.5-7.2-21.6s10.3-17 17-15.1 9.9 11.4 7.2 21.6-10.4 16.9-17 15zM174 67.5c-9.3-2.5-14-15.3-10.4-28.7s14-22 23.4-19.6 14 15.4 10.4 28.7-14 22.1-23.4 19.6zM90.6 19.2c9.3-2.5 19.8 6.3 23.4 19.6s-1.1 26.2-10.4 28.7S83.7 61.2 80.2 48s1-26.2 10.4-28.7zM26.8 67.6c6.6-1.8 14.3 5 17 15s-.5 19.9-7.2 21.7-14.3-5-17-15.1.5-19.8 7.2-21.6z"/>
+        <path class="svg-sub" d="M138.7 109.8c56.7 0 92 50 96 82.7 3.7 29.6-7.2 51.6-31.2 63.4s-39.8-16.1-64.8-16.1-41.1 28-65.1 16.1-34.5-35.1-31-63.4c4-32.4 39.4-82.7 96.1-82.7z"/>
     </symbol>
     <symbol id="paw-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#paw"/>
@@ -1312,21 +1312,20 @@
         <use class="svg-fill" xlink:href="#pen"/>
     </symbol>
     <symbol id="pen-write" viewBox="0 0 288 288">
-        <use x="96" y="160" xlink:href="#in-write"/>
+        <use class="svg-sub" x="96" y="160" xlink:href="#in-write"/>
         <use x="-42" xlink:href="#pen"/>
     </symbol>
     <symbol id="pen-write-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#pen-write"/>
     </symbol>
     <symbol id="pencil" viewBox="-26 -2 288 288">
-        <path d="M184 35.8L163.5 24a15.2 15.2 0 00-20.7 5.6L52.4 186.4 39.8 262l59.3-48.6 90.4-156.8a15.2 15.2 0 00-5.5-20.8z"/>
-        <path class="svg-sub" d="M99 213.4l-46.6-26.8"/>
+        <path d="M184 35.8L163.5 24a15.2 15.2 0 00-20.7 5.6L52.4 186.4 39.8 262l59.3-48.6 90.4-156.8a15.2 15.2 0 00-5.5-20.8z M99 213.4l-46.6-26.8"/>
     </symbol>
     <symbol id="pencil-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#pencil"/>
     </symbol>
     <symbol id="pencil-write" viewBox="0 0 288 288">
-        <use x="96" y="160" xlink:href="#in-write"/>
+        <use class="svg-sub" x="96" y="160" xlink:href="#in-write"/>
         <use x="-42" xlink:href="#pencil"/>
     </symbol>
     <symbol id="pencil-write-fill" viewBox="0 0 288 288">
@@ -1379,8 +1378,7 @@
         <use class="svg-fill" xlink:href="#recycle"/>
     </symbol>
     <symbol id="undo" viewBox="42 42 288 288">
-        <path class="svg-sub" d="M101.8 101.8a120 120 0 110 169.7"/>
-        <path d="M91.2 72.2v42h42"/>
+        <path d="M101.8 101.8a120 120 0 110 169.7 M91.2 72.2v42h42"/>
     </symbol>
     <symbol id="redo" viewBox="-288 0 288 288">
         <use transform="scale(-1,1)" xlink:href="#undo"/>
@@ -1389,9 +1387,24 @@
         <path d="M24.4 108.3a112 112 0 01217.8-17.8 M209.4 79.8l33.8 12.3 12.3-33.8"/>
         <path class="svg-sub" d="M246 140.5a112 112 0 01-217.6 17 M61.5 168.3L27.7 156l-12.3 33.8"/>
     </symbol>
+    <symbol id="reply" viewBox="-4 0 288 288">
+        <path d="M251.3 124.5c-28-49.7-106.1-52.5-136-51.7l-.1-48-95.9 75.7 96 76V129c25.7-1.3 85.3-1 100 26.2 19 35-20 109.2-20 109.2s91-78 56-140z"/>
+    </symbol>
+    <symbol id="reply-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#reply"/>
+    </symbol>
+    <symbol id="required" viewBox="-24 -12 288 288">
+        <path d="M120.3 12v240M224.2 192L16.4 72M16.4 192L224.2 72"/>
+    </symbol>
+    <symbol id="save" viewBox="-20 -12 288 288">
+        <path d="M116 12v72 M52 12h112v72H52z M52 124h144v88H52z"/>
+        <path class="svg-sub" d="M12 12h169.5l54.7 48v192H12z"/>
+    </symbol>
+    <symbol id="save-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#save"/>
+    </symbol>
     <symbol id="search" viewBox="-10 -10 288 288">
-        <path d="M108 12a96 96 0 11-96 96 96 96 0 0196-96z"/>
-        <path class="svg-sub" d="M252 252l-76-76"/>
+        <path d="M108 12a96 96 0 11-96 96 96 96 0 0196-96z M252 252l-76-76"/>
     </symbol>
     <symbol id="search-minus" viewBox="-2 -2 288 288">
         <use class="svg-sub" xlink:href="#search"/>
@@ -1412,6 +1425,139 @@
     <symbol id="search-marker" viewBox="-2 -2 288 288">
         <use class="svg-sub" xlink:href="#search"/>
         <path transform="translate(74 67)" d="M42 12c16.6 0 30 10 30 30S42 92 42 92 12 62 12 42s13.4-30 30-30z"/>
+    </symbol>
+    <symbol id="setting" viewBox="-16 -12 288 288">
+        <path d="M128 87.6a43 43 0 11-43 43 43 43 0 0143-43z"/>
+        <path class="svg-sub" d="M104 252v-35.4A87.8 87.8 0 0166.7 195L36 212.8l-24-41.6 30.9-17.8a88.6 88.6 0 010-42.8L12 92.8l24-41.6L66.8 69C84.8 52 104 47.4 104 47.4V12h48v35.2a87.5 87.5 0 0137.6 21.6l30.3-17.6 24 41.6-30.2 17.5a88.7 88.7 0 010 43.4l30.2 17.5-24 41.6-30.3-17.6c-16.6 16.7-37.6 21.6-37.6 21.6V252z"/>
+    </symbol>
+    <symbol id="setting-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#setting"/>
+    </symbol>
+    <symbol id="settings" viewBox="-12 -12 288 288">
+        <path d="M44 188a32 32 0 11-32 32 32 32 0 0132-32z M172 100a32 32 0 11-32 32 32 32 0 0132-32z M44 12a32 32 0 11-32 32 32 32 0 0132-32z"/>
+        <path class="svg-sub" d="M76 220h176 M204 132h48M12 132h128 M76 44h176"/>
+    </symbol>
+    <symbol id="settings-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#settings"/>
+    </symbol>
+    <symbol id="share" viewBox="-12 -12 288 288">
+        <path d="M212 12a40 40 0 11-40 40 40 40 0 0140-40z M52 92a40 40 0 11-40 40 40 40 0 0140-40z M212 172a40 40 0 11-40 40 40 40 0 0140-40z"/>
+        <path class="svg-sub" d="M88 150l87.3 45.7 M175.3 69L88 113.7"/>
+    </symbol>
+    <symbol id="share-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#share"/>
+    </symbol>
+    <symbol id="send" viewBox="-12 -12 288 288">
+        <path class="svg-sub" d="M12 12l240 120H56z"/>
+        <path d="M12 252l240-120H56z"/>
+    </symbol>
+    <symbol id="send-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#send"/>
+    </symbol>
+    <symbol id="sign-in" viewBox="-12 -12 288 288">
+        <path d="M92 156H12v-48h80V56l92 76-92 76z"/>
+        <path class="svg-sub svg-line" d="M112 12h104a36 36 0 0136 36v168a36 36 0 01-36 36H112"/>
+    </symbol>
+    <symbol id="sign-in-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#sign-in"/>
+    </symbol>
+    <symbol id="sign-out" viewBox="-12 -12 288 288">
+        <path d="M160 156H80v-48h80V56l92 76-92 76z"/>
+        <path class="svg-sub svg-line" d="M152 12H48a36 36 0 00-36 36v168a36 36 0 0036 36h104"/>
+    </symbol>
+    <symbol id="sign-out-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#sign-out"/>
+    </symbol>
+    <symbol id="import" viewBox="-12 -12 288 288">
+        <path d="M132 156V12 M176.2 111.6L132 155.8l-44.3-44.3"/>
+        <path class="svg-sub" d="M252 112v104a36 36 0 01-36 36H48a36 36 0 01-36-36V112"/>
+    </symbol>
+    <symbol id="export" viewBox="-12 -12 288 288">
+        <path d="M132 12v144 M176.2 56.4L132 12.2 87.7 56.5"/>
+        <path class="svg-sub" d="M252 112v104a36 36 0 01-36 36H48a36 36 0 01-36-36V112"/>
+    </symbol>
+    <symbol id="sort" viewBox="-36 -12 288 288">
+        <path d="M204 156l-96 96-96-96zM204 108l-96-96-96 96z"/>
+    </symbol>
+    <symbol id="sort-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#sort"/>
+    </symbol>
+    <symbol id="sort-up" viewBox="-36 -12 288 288">
+        <path d="M204 108l-96-96-96 96z"/>
+    </symbol>
+    <symbol id="sort-up-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#sort-up"/>
+    </symbol>
+    <symbol id="sort-down" viewBox="-36 -154 288 288">
+        <path d="M204 12l-96 96-96-96z"/>
+    </symbol>
+    <symbol id="sort-down-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#sort-down"/>
+    </symbol>
+    <symbol id="star" viewBox="28 14 288 288">
+        <path d="M292.2 129.2l-60 58.5 14.2 82.6-74.2-39-74.2 39 14.2-82.6-60-58.5 83-12 37-75.1 37 75.1z"/>
+    </symbol>
+    <symbol id="star-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#star"/>
+    </symbol>
+    <symbol id="star-half" viewBox="28 14 288 288">
+        <path d="M172.2 231.3l-74.2 39 14.2-82.6-60-58.5 83-12 37-75.1z"/>
+        <path class="svg-sub" d="M172.8 231.3l74.1 39-14.1-82.6 60-58.4-83-12-37-75.2z"/>
+    </symbol>
+    <symbol id="star-half-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#star-half"/>
+    </symbol>
+    <symbol id="table" viewBox="-12 -32 288 288">
+        <path d="M12 12h240v40.3H12z M252 132H12M132 53v159"/>
+        <path class="svg-sub" d="M12 52.3h240v159.6H12z"/>
+    </symbol>
+    <symbol id="table-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#table"/>
+    </symbol>
+    <symbol id="trash" viewBox="-28 -12 288 288">
+        <path class="svg-line" d="M83 12h66l11 40H72z"/>
+        <path d="M140 108v88M92 108v88M12 52h208"/>
+        <path class="svg-sub" d="M36 52h160v168a32 32 0 01-32 32H68a32 32 0 01-32-32z"/>
+    </symbol>
+    <symbol id="trash-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#trash"/>
+    </symbol>
+    <symbol id="wrench" viewBox="30 10 288 288">
+        <path d="M58 242.1L188.2 112c-18.1-33.5-3.5-80.2 53.2-79.8L217.6 56c-15.8 15.8-11.8 35.5 2 49.2s33.4 17.9 49.2 2l23.8-23.7c.4 56.8-45.9 71-79.2 53.4L83 267.2a17.7 17.7 0 01-25 0 17.7 17.7 0 010-25z"/>
+    </symbol>
+    <symbol id="wrench-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#wrench"/>
+    </symbol>
+    <symbol id="car" viewBox="-12 -44 288 288">
+        <path class="svg-line" d="M88 12h44a48 48 0 0148 48v24H52V48a36 36 0 0136-36z"/>
+        <path class="svg-sub" d="M108 16v64 M68 124a32 32 0 11-32 32 32 32 0 0132-32zM208 124a32 32 0 11-32 32 32 32 0 0132-32z"/>
+        <path d="M177 148H99a32 32 0 00-31-24 32 32 0 00-31 24H12v-40s.6-24 24-24h168c53.5 0 48 64 48 64h-13a32 32 0 00-31-24 32 32 0 00-31 24z"/>
+    </symbol>
+    <symbol id="car-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#car"/>
+    </symbol>
+    <symbol id="bus" viewBox="-12 -36 288 288">
+        <path class="svg-line" d="M36 12h168a48 48 0 0148 48v32H12V36a24 24 0 0124-24z"/>
+        <path class="svg-sub" d="M172 12v80 M68 140a32 32 0 11-32 32 32 32 0 0132-32zM208 140a32 32 0 11-32 32 32 32 0 0132-32z"/>
+        <path d="M252 164h-13a32 32 0 00-31-24 32 32 0 00-31 24H99a32 32 0 00-31-24 32 32 0 00-31 24H12V92h240v72z"/>
+    </symbol>
+    <symbol id="bus-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#bus"/>
+    </symbol>
+    <symbol id="truck" viewBox="-12 -36 288 288">
+        <path class="svg-line" d="M252 163h-13.3a32.2 32.2 0 00-30.7-23 32.2 32.2 0 00-30.7 23H164V36h40c48 0 48 48 48 48v79z"/>
+        <path class="svg-sub" d="M164 96h88 M68 140a32 32 0 11-32 32 32 32 0 0132-32zM208 140a32 32 0 11-32 32 32 32 0 0132-32z"/>
+        <path d="M164 164H99c-3.6-13.5-16.4-22.9-31-22.9s-27.4 9.4-31 22.9H12V12h152v152z"/>
+    </symbol>
+    <symbol id="truck-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#truck"/>
+    </symbol>
+    <symbol id="tachometer" viewBox="-12 -24 288 288">
+        <path d="M204 136a16 16 0 1016 16 16 16 0 00-16-16zM184 68a16 16 0 1016 16 16 16 0 00-16-16zM64 136a16 16 0 11-16 16 16 16 0 0116-16zM80 68a16 16 0 11-16 16 16 16 0 0116-16zM132 60v112"/>
+        <path class="svg-sub" d="M132 12a120 120 0 0181.2 208.3H50.7A120 120 0 01132 12z"/>
+    </symbol>
+    <symbol id="tachometer-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#tachometer"/>
     </symbol>
     <symbol id="user" viewBox="-12 -12 288 288">
         <path d="M132 12a60 60 0 11-60 60 60 60 0 0160-60z M233.1 252H31a18.7 18.7 0 01-13.4-5.5A18.7 18.7 0 0112 233V228a120 120 0 015.8-37 119.5 119.5 0 0116.3-32.4 120.5 120.5 0 0124.8-25.8 119.7 119.7 0 0131.6-17.4A59.7 59.7 0 00132 132a59.7 59.7 0 0041.5-16.6 119.7 119.7 0 0131.6 17.4 120.5 120.5 0 0124.8 25.8 119.5 119.5 0 0116.3 32.4 120 120 0 015.8 37v5.1a18.7 18.7 0 01-5.5 13.4A18.7 18.7 0 01233 252z"/>

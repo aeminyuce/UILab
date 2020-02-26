@@ -584,39 +584,55 @@
                         <li><svg class="icon icon-xxl"><use xlink:href="#undo"/></svg><span>undo</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#redo"/></svg><span>redo</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#sync"/></svg><span>sync</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-reply"></i><span>reply</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-required"></i><span>required</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-save"></i><span>save</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#reply"/></svg><span>reply</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#reply-fill"/></svg><span>reply-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#required"/></svg><span>required</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#save"/></svg><span>save</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#save-fill"/></svg><span>save-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#search"/></svg><span>search</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#search-minus"/></svg><span>search-minus</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#search-plus"/></svg><span>search-plus</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#search-star"/></svg><span>search-star</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#search-user"/></svg><span>search-user</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#search-marker"/></svg><span>search-marker</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-setting"></i><span>setting</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-settings"></i><span>settings</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-settings-v"></i><span>settings-v</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-share"></i><span>share</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-send"></i><span>send</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-sign-in"></i><span>sign-in</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-sign-out"></i><span>sign-out</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-import"></i><span>import</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-export"></i><span>export</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-sort"></i><span>sort</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-sort-down"></i><span>sort-down</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-sort-up"></i><span>sort-up</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-star"></i><span>star</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-star-half"></i><span>star-half</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-star-fill"></i><span>star-fill</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-table"></i><span>table</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-trash"></i><span>trash</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-trash-fill"></i><span>trash-fill</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-wrench"></i><span>wrench</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-car"></i><span>car</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-bus"></i><span>bus</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-truck"></i><span>truck</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-truck-fill"></i><span>truck-fill</span></li>
-                        <li class="half-opacity"><i class="icon icon-xxl icon-tachometer"></i><span>tachometer</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#setting"/></svg><span>setting</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#setting-fill"/></svg><span>setting-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#settings"/></svg><span>settings</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#settings-fill"/></svg><span>settings-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#share"/></svg><span>share</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#share-fill"/></svg><span>share-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#send"/></svg><span>send</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#send-fill"/></svg><span>send-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#sign-in"/></svg><span>sign-in</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#sign-in-fill"/></svg><span>sign-in-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#sign-out"/></svg><span>sign-out</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#sign-out-fill"/></svg><span>sign-out-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#import"/></svg><span>import</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#export"/></svg><span>export</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#sort"/></svg><span>sort</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#sort-fill"/></svg><span>sort-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#sort-up"/></svg><span>sort-up</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#sort-up-fill"/></svg><span>sort-up-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#sort-down"/></svg><span>sort-down</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#sort-down-fill"/></svg><span>sort-down-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#star"/></svg><span>star</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#star-fill"/></svg><span>star-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#star-half"/></svg><span>star-half</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#star-half-fill"/></svg><span>star-half-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#table"/></svg><span>table</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#table-fill"/></svg><span>table-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#trash"/></svg><span>trash</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#trash-fill"/></svg><span>trash-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#wrench"/></svg><span>wrench</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#wrench-fill"/></svg><span>wrench-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#car"/></svg><span>car</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#car-fill"/></svg><span>car-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#bus"/></svg><span>bus</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#bus-fill"/></svg><span>bus-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#truck"/></svg><span>truck</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#truck-fill"/></svg><span>truck-fill</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#tachometer"/></svg><span>tachometer</span></li>
+                        <li><svg class="icon icon-xxl"><use xlink:href="#tachometer-fill"/></svg><span>tachometer-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#user"/></svg><span>user</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#user-fill"/></svg><span>user-fill</span></li>
                         <li><svg class="icon icon-xxl"><use xlink:href="#users"/></svg><span>users</span></li>
