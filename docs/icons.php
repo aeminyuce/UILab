@@ -9,14 +9,14 @@
     html:not(.mobile) .icons-list li:hover { background-color: #fff; }
     .icons-list li > span { content: attr(data-name); color: #666; font-size: 13px; white-space: nowrap; text-overflow: ellipsis; line-height: normal; min-width: 129px; width: 100%; margin-top: 10px; overflow: hidden; display: block; }
 
-    .icons-list li svg.icon { background: #e8e2e2; border-radius: 6px; }
+    .icons-list li svg.icon:not([class*="animate-"]) { box-sizing: content-box; border: solid 1px rgba(0,0,0,.1); border-radius: 6px; }
 
     @media (prefers-color-scheme: dark) {
         .icons-list li { color: #fff; background-color: #2f343e; }
         html:not(.mobile) .icons-list li:hover { background-color: #3c424d; }
         .icons-list li > span { color: #d0d0d0; }
 
-        .icons-list li svg.icon { background: #252a33; }
+        .icons-list li svg.icon:not([class*="animate-"]) { border-color: rgba(255,255,255,.1); }
     }
 
 </style>
@@ -603,51 +603,83 @@
 
                 <h2>Touch Icons</h2>
                 <ul class="icons-list list-custom theme-default ease-1st-bg ease-2nd-all">
-                    <li class="half-opacity"><i class="icon icon-xxl icon-touch"></i><span>touch</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-swipe"></i><span>swipe</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-swipe-down"></i><span>swipe-down</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-swipe-left"></i><span>swipe-left</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-swipe-right"></i><span>swipe-right</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-swipe-up"></i><span>swipe-up</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-zoom"></i><span>zoom</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#touch"/></svg><span>touch</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#touch-fill"/></svg><span>touch-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#touch-dual"/></svg><span>touch-dual</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#touch-dual-fill"/></svg><span>touch-dual-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#swipe"/></svg><span>swipe</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#swipe-fill"/></svg><span>swipe-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#swipe-down"/></svg><span>swipe-down</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#swipe-down-fill"/></svg><span>swipe-down-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#swipe-left"/></svg><span>swipe-left</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#swipe-left-fill"/></svg><span>swipe-left-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#swipe-right"/></svg><span>swipe-right</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#swipe-right-fill"/></svg><span>swipe-right-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#swipe-up"/></svg><span>swipe-up</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#swipe-up-fill"/></svg><span>swipe-up-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#pinch"/></svg><span>pinch</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#pinch-fill"/></svg><span>pinch-fill</span></li>
                 </ul>
 
                 <h2>Media Icons</h2>
                 <ul class="icons-list list-custom theme-default ease-1st-bg ease-2nd-all">
-                    <li class="half-opacity"><i class="icon icon-xxl icon-backward"></i><span>backward</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-play"></i><span>play</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-forward"></i><span>forward</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-pause"></i><span>pause</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-stop"></i><span>stop</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-shuffle"></i><span>shuffle</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-power"></i><span>power</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-camera"></i><span>camera</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-film"></i><span>film</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-video"></i><span>video</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-browser"></i><span>browser</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-laptop"></i><span>laptop</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-desktop"></i><span>desktop</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-tv"></i><span>tv</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-mobile-v"></i><span>mobile-v</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-mobile-h"></i><span>mobile-h</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-mobile-alt-v"></i><span>mobile-alt-v</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-mobile-alt-h"></i><span>mobile-alt-h</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-tablet-v"></i><span>tablet-v</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-tablet-h"></i><span>tablet-h</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-tablet-alt-v"></i><span>alt-v</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-tablet-alt-h"></i><span>alt-h</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-headphone"></i><span>headphone</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-headset"></i><span>headset</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-music"></i><span>music</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-volume-on"></i><span>volume-on</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-volume-off"></i><span>volume-off</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-soundwave"></i><span>soundwave</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-speaker"></i><span>speaker</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-usb-drive"></i><span>usb-drive</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-signal-stream"></i><span>signal-stream</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-signal-wifi"></i><span>signal-wifi</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-aperture"></i><span>aperture</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-exposure"></i><span>exposure</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#backward"/></svg><span>backward</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#backward-fill"/></svg><span>backward-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#play"/></svg><span>play</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#play-fill"/></svg><span>play-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#forward"/></svg><span>forward</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#forward-fill"/></svg><span>forward-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#pause"/></svg><span>pause</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#pause-fill"/></svg><span>pause-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#stop"/></svg><span>stop</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#stop-fill"/></svg><span>stop-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#random"/></svg><span>random</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#power"/></svg><span>power</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#camera"/></svg><span>camera</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#camera-fill"/></svg><span>camera-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#film"/></svg><span>film</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#film-fill"/></svg><span>film-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#video"/></svg><span>video</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#video-fill"/></svg><span>video-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#browser"/></svg><span>browser</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#browser-fill"/></svg><span>browser-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#laptop"/></svg><span>laptop</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#laptop-fill"/></svg><span>laptop-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#desktop"/></svg><span>desktop</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#desktop-fill"/></svg><span>desktop-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#tv"/></svg><span>tv</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#tv-fill"/></svg><span>tv-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#mobile-v"/></svg><span>mobile-v</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#mobile-v-fill"/></svg><span>mobile-v-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#mobile-h"/></svg><span>mobile-h</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#mobile-h-fill"/></svg><span>mobile-h-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#tablet-v"/></svg><span>tablet-v</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#tablet-v-fill"/></svg><span>tablet-v-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#tablet-h"/></svg><span>tablet-h</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#tablet-h-fill"/></svg><span>tablet-h-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#headphone"/></svg><span>headphone</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#headphone-fill"/></svg><span>headphone-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#headset"/></svg><span>headset</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#headset-fill"/></svg><span>headset-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#music"/></svg><span>music</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#music-fill"/></svg><span>music-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#volume-on"/></svg><span>volume-on</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#volume-on-fill"/></svg><span>volume-on-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#volume-off"/></svg><span>volume-off</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#volume-off-fill"/></svg><span>volume-off-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#soundwave"/></svg><span>soundwave</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#speaker"/></svg><span>speaker</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#speaker-fill"/></svg><span>speaker-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#usb-drive"/></svg><span>usb-drive</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#usb-drive-fill"/></svg><span>usb-drive-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#signal-stream"/></svg><span>signal-stream</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#signal-stream-fill"/></svg><span>signal-stream-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#signal-wifi"/></svg><span>signal-wifi</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#signal-wifi-fill"/></svg><span>signal-wifi-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#aperture"/></svg><span>aperture</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#aperture-fill"/></svg><span>aperture-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#exposure"/></svg><span>exposure</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#exposure-fill"/></svg><span>exposure-fill</span></li>
                     <li class="half-opacity"><i class="icon icon-xxl icon-flash-on"></i><span>flash-on</span></li>
                     <li class="half-opacity"><i class="icon icon-xxl icon-flash-off"></i><span>flash-off</span></li>
                     <li class="half-opacity"><i class="icon icon-xxl icon-flash-auto"></i><span>flash-auto</span></li>
@@ -656,11 +688,26 @@
 
                 <h2>Kitchen Icons</h2>
                 <ul class="icons-list list-custom theme-default ease-1st-bg ease-2nd-all">
-                    <li class="half-opacity"><i class="icon icon-xxl icon-fork-spoon"></i><span>fork-spoon</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-fork"></i><span>fork</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-spoon"></i><span>spoon</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-coffee"></i><span>coffee</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-cup"></i><span>cup</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#chef"/></svg><span>chef</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#chef-fill"/></svg><span>chef-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#mitten"/></svg><span>mitten</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#mitten-fill"/></svg><span>mitten-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#fork"/></svg><span>fork</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#fork-fill"/></svg><span>fork-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#spoon"/></svg><span>spoon</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#spoon-fill"/></svg><span>spoon-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#knife"/></svg><span>knife</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#knife-fill"/></svg><span>knife-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#fork-spoon"/></svg><span>fork-spoon</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#fork-spoon-fill"/></svg><span>fork-spoon-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#fork-knife"/></svg><span>fork-knife</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#fork-knife-fill"/></svg><span>fork-knife-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#plate"/></svg><span>plate</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#plate-fill"/></svg><span>plate-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#cup"/></svg><span>cup</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#cup-fill"/></svg><span>cup-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#coffee"/></svg><span>coffee</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#coffee-fill"/></svg><span>coffee-fill</span></li>
                 </ul>
 
                 <h2>Real Estate Icons</h2>

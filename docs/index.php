@@ -387,6 +387,9 @@
 ?>
 
 <?php include ('../icons/general.php'); ?>
+<?php include ('../icons/touch.php'); ?>
+<?php include ('../icons/media.php'); ?>
+<?php include ('../icons/kitchen.php'); ?>
 
 </body>
 </html>
