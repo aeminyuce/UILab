@@ -221,8 +221,9 @@
                 code = result.value;
                 if (code.length === 0) { return; }
 
-                // remove comments, test url: https://regex101.com/r/B8WkuX/1
-                code = code.replace(/\/\*[\s\S]*?\*\/|([^\\:]|^)\/\/.*$/g, '');
+                // remove comments
+                code = code.replace(/\/\*[\s\S]*?\*\/|([^\\:]|^)\/\/.*$/gm, ''); // remove // /*
+                code = code.replace(/(<!--.*?-->)|(<!--[\w\W\n\s]+?-->)/gm, ''); // remove <!-- -->
 
                 // line breaks and remove spaces
                 code = code.replace(/\n/g, '').replace(/\s+\s/g, '').replace(/^\s|\s+$/g, '');
