@@ -63,10 +63,7 @@
     </symbol>
     <symbol id="coffee" viewBox="-8 -42 288 288">
         <path d="M64.5 12h120a24 24 0 0124 24v80a56 56 0 01-56 56h-56a56 56 0 01-56-56V36a24 24 0 0124-24z"/>
-        <g class="svg-sub">
-            <path class="svg-line" d="M208.5 36h16a32 32 0 0132 32v16a32 32 0 01-32 32h-16z"/>
-            <path d="M16.5 184l20 12h200l20-12"/>
-        </g>
+        <path class="svg-sub svg-line" d="M208.5 36h16a32 32 0 0132 32v16a32 32 0 01-32 32h-16z M16.5 184l20 12h200l20-12"/>
     </symbol>
     <symbol id="coffee-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#coffee"/>

@@ -391,6 +391,8 @@
 <?php include ('../icons/media.php'); ?>
 <?php include ('../icons/kitchen.php'); ?>
 <?php include ('../icons/real-estate.php'); ?>
+<?php include ('../icons/commerce.php'); ?>
+<?php include ('../icons/social-icons.php'); ?>
 <?php include ('../icons/brands.php'); ?>
 
 </body>

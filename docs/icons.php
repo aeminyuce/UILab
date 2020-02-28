@@ -769,20 +769,29 @@
 
                 <h2>Commerce Icons</h2>
                 <ul class="icons-list list-custom theme-default ease-1st-bg ease-2nd-all">
-                    <li class="half-opacity"><i class="icon icon-xxl icon-tag"></i><span>tag</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-tags"></i><span>tags</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-ticket"></i><span>ticket</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-barcode"></i><span>barcode</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-credit-card"></i><span>credit-card</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-credit-card-check"></i><span>credit-card-check</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-shopping-bag"></i><span>shopping-bag</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-shopping-cart"></i><span>shopping-cart</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-shopping-cart-fill"></i><span>shopping-cart-fill</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-shopping-basket"></i><span>shopping-basket</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-shopping-basket-fill"></i><span>shopping-basket-fill</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-store"></i><span>store</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-coin"></i><span>coin</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-coins"></i><span>coins</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#tag"/></svg><span>tag</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#tag-fill"/></svg><span>tag-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#tags"/></svg><span>tags</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#tags-fill"/></svg><span>tags-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#ticket"/></svg><span>ticket</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#ticket-fill"/></svg><span>ticket-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#barcode"/></svg><span>barcode</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#credit-card"/></svg><span>credit-card</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#credit-card-fill"/></svg><span>credit-card-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#credit-card-check"/></svg><span>credit-card-check</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#credit-card-check-fill"/></svg><span>credit-card-check-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#shopping-bag"/></svg><span>shopping-bag</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#shopping-bag-fill"/></svg><span>shopping-bag-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#shopping-cart"/></svg><span>shopping-cart</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#shopping-cart-fill"/></svg><span>shopping-cart-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#shopping-basket"/></svg><span>shopping-basket</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#shopping-basket-fill"/></svg><span>shopping-basket-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#store"/></svg><span>store</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#store-fill"/></svg><span>store-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#coin"/></svg><span>coin</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#coin-fill"/></svg><span>coin-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#coins"/></svg><span>coins</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#coins-fill"/></svg><span>coins-fill</span></li>
                     <li class="half-opacity"><i class="icon icon-xxl icon-money"></i><span>money</span></li>
                     <li class="half-opacity"><i class="icon icon-xxl icon-moneys"></i><span>moneys</span></li>
                     <li class="half-opacity"><i class="icon icon-xxl icon-wallet"></i><span>wallet</span></li>
@@ -828,33 +837,28 @@
 
                 <h2>Social Icons</h2>
                 <ul class="icons-list list-custom theme-default ease-1st-bg ease-2nd-all">
-                    <li class="half-opacity"><i class="icon icon-xxl icon-behance"></i><span>behance</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-dribbble"></i><span>dribbble</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-facebook"></i><span>facebook</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-github"></i><span>github</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-google"></i><span>google</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-instagram"></i><span>instagram</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-linkedin"></i><span>linkedin</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-pinterest"></i><span>pinterest</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-snapchat"></i><span>snapchat</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-tumblr"></i><span>tumblr</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-twitter"></i><span>twitter</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-whatsapp"></i><span>whatsapp</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-youtube"></i><span>youtube</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#behance"/></svg><span>behance</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#dribbble"/></svg><span>dribbble</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#facebook"/></svg><span>facebook</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#github"/></svg><span>github</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#google"/></svg><span>google</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#instagram"/></svg><span>instagram</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#linkedin"/></svg><span>linkedin</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#pinterest"/></svg><span>pinterest</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#snapchat"/></svg><span>snapchat</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#tumblr"/></svg><span>tumblr</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#twitter"/></svg><span>twitter</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#whatsapp"/></svg><span>whatsapp</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#youtube"/></svg><span>youtube</span></li>
                 </ul>
 
                 <h2>Brands Icons</h2>
                 <ul class="icons-list list-custom theme-default ease-1st-bg ease-2nd-all">
                     <li><svg class="icon icon-xxl"><use xlink:href="#android"/></svg><span>android</span></li>
-                    <li><svg class="icon icon-xxl"><use xlink:href="#android-fill"/></svg><span>android-fill</span></li>
                     <li><svg class="icon icon-xxl"><use xlink:href="#apple"/></svg><span>apple</span></li>
-                    <li><svg class="icon icon-xxl"><use xlink:href="#apple-fill"/></svg><span>apple-fill</span></li>
                     <li><svg class="icon icon-xxl"><use xlink:href="#appstore"/></svg><span>appstore</span></li>
-                    <li><svg class="icon icon-xxl"><use xlink:href="#appstore-fill"/></svg><span>appstore-fill</span></li>
                     <li><svg class="icon icon-xxl"><use xlink:href="#google-play"/></svg><span>google-play</span></li>
-                    <li><svg class="icon icon-xxl"><use xlink:href="#google-play-fill"/></svg><span>google-play-fill</span></li>
                     <li><svg class="icon icon-xxl"><use xlink:href="#microsoft"/></svg><span>microsoft</span></li>
-                    <li><svg class="icon icon-xxl"><use xlink:href="#microsoft-fill"/></svg><span>microsoft-fill</span></li>
                 </ul>
 
             </div>
