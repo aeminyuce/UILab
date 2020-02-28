@@ -8,14 +8,12 @@
     .icons-list li { color: #4a515a; max-width: 160px; background-color: #f7f7f7; padding: 15px 10px; margin: 1px; border-radius: 6px; cursor: pointer; flex-grow: 1; }
     html:not(.mobile) .icons-list li:hover { background-color: #fff; }
     .icons-list li > span { content: attr(data-name); color: #666; font-size: 13px; white-space: nowrap; text-overflow: ellipsis; line-height: normal; min-width: 129px; width: 100%; margin-top: 10px; overflow: hidden; display: block; }
-
-    .icons-list li svg.icon:not([class*="animate-"]) { box-sizing: content-box; border: solid 1px rgba(0,0,0,.1); border-radius: 6px; }
+    .icons-list li svg.icon:not([class*="animate-"]) { box-sizing: content-box; border: solid 1px rgba(0,0,0,.1); }
 
     @media (prefers-color-scheme: dark) {
         .icons-list li { color: #fff; background-color: #2f343e; }
         html:not(.mobile) .icons-list li:hover { background-color: #3c424d; }
         .icons-list li > span { color: #d0d0d0; }
-
         .icons-list li svg.icon:not([class*="animate-"]) { border-color: rgba(255,255,255,.1); }
     }
 
@@ -680,10 +678,14 @@
                     <li><svg class="icon icon-xxl"><use xlink:href="#aperture-fill"/></svg><span>aperture-fill</span></li>
                     <li><svg class="icon icon-xxl"><use xlink:href="#exposure"/></svg><span>exposure</span></li>
                     <li><svg class="icon icon-xxl"><use xlink:href="#exposure-fill"/></svg><span>exposure-fill</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-flash-on"></i><span>flash-on</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-flash-off"></i><span>flash-off</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-flash-auto"></i><span>flash-auto</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-iso"></i><span>iso</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#flash-on"/></svg><span>flash-on</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#flash-on-fill"/></svg><span>flash-on-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#flash-off"/></svg><span>flash-off</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#flash-off-fill"/></svg><span>flash-off-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#flash-auto"/></svg><span>flash-auto</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#flash-auto-fill"/></svg><span>flash-auto-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#iso"/></svg><span>iso</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#iso-fill"/></svg><span>iso-fill</span></li>
                 </ul>
 
                 <h2>Kitchen Icons</h2>
@@ -712,19 +714,30 @@
 
                 <h2>Real Estate Icons</h2>
                 <ul class="icons-list list-custom theme-default ease-1st-bg ease-2nd-all">
-                    <li class="half-opacity"><i class="icon icon-xxl icon-house"></i><span>house</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-house-check"></i><span>house-check</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-house-floor"></i><span>house-floor</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-house-heat"></i><span>house-heat</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-house-surface"></i><span>house-surface</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-floor-plan"></i><span>floor-plan</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-garage"></i><span>garage</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-balcony"></i><span>balcony</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-bath"></i><span>bath</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-bed"></i><span>bed</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-building"></i><span>building</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-buildings"></i><span>buildings</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-wc"></i><span>wc</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#house"/></svg><span>house</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#house-fill"/></svg><span>house-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#house-check"/></svg><span>house-check</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#house-check-fill"/></svg><span>house-check-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#house-floor"/></svg><span>house-floor</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#house-floor-fill"/></svg><span>house-floor-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#house-heat"/></svg><span>house-heat</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#house-heat-fill"/></svg><span>house-heat-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#house-surface"/></svg><span>house-surface</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#house-surface-fill"/></svg><span>house-surface-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#floor-plan"/></svg><span>floor-plan</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#garage"/></svg><span>garage</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#garage-fill"/></svg><span>garage-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#balcony"/></svg><span>balcony</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#bath"/></svg><span>bath</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#bath-fill"/></svg><span>bath-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#bed"/></svg><span>bed</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#bed-fill"/></svg><span>bed-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#wc"/></svg><span>wc</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#wc-fill"/></svg><span>wc-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#building"/></svg><span>building</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#building-fill"/></svg><span>building-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#buildings"/></svg><span>buildings</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#buildings-fill"/></svg><span>buildings-fill</span></li>
                 </ul>
 
                 <h2>Weather Icons</h2>
@@ -832,11 +845,16 @@
 
                 <h2>Brands Icons</h2>
                 <ul class="icons-list list-custom theme-default ease-1st-bg ease-2nd-all">
-                    <li class="half-opacity"><i class="icon icon-xxl icon-andorid"></i><span>andorid</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-apple"></i><span>apple</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-appstore"></i><span>appstore</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-google-play"></i><span>google-play</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-microsoft"></i><span>microsoft</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#android"/></svg><span>android</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#android-fill"/></svg><span>android-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#apple"/></svg><span>apple</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#apple-fill"/></svg><span>apple-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#appstore"/></svg><span>appstore</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#appstore-fill"/></svg><span>appstore-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#google-play"/></svg><span>google-play</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#google-play-fill"/></svg><span>google-play-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#microsoft"/></svg><span>microsoft</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#microsoft-fill"/></svg><span>microsoft-fill</span></li>
                 </ul>
 
             </div>

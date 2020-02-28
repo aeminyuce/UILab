@@ -201,10 +201,37 @@
         <use class="svg-fill" xlink:href="#aperture"/>
     </symbol>
     <symbol id="exposure" viewBox="-12 -12 288 288">
-        <path class="svg-sub" d="M132 88a44 44 0 000 88z"/>
-        <path d="M132 88a44 44 0 010 88z M75.4 75.4L47.1 47.1M75.4 188.6l-28.3 28.3M216.9 216.9l-28.3-28.3M216.9 47.1l-28.3 28.3M52 132H12M132 212v40M252 132h-40M132 12v40"/>
+        <path class="svg-sub" d="M132 88a44 44 0 010 88z"/>
+        <path d="M75.4 75.4L47.1 47.1M75.4 188.6l-28.3 28.3M216.9 216.9l-28.3-28.3M216.9 47.1l-28.3 28.3M52 132H12M132 212v40M252 132h-40M132 12v40"/>
     </symbol>
     <symbol id="exposure-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#exposure"/>
+    </symbol>
+    <symbol id="flash-on" viewBox="-58 20 288 288">
+        <path d="M18.8 169.8L76 190.6l-8 92.6 88.6-126.3L99.4 136l8-92.6z"/>
+    </symbol>
+    <symbol id="flash-on-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#flash-on"/>
+    </symbol>
+    <symbol id="flash-off" viewBox="-28 -14 288 288">
+        <path class="svg-sub svg-line" d="M208.5 184.1l-56.7 56.2M179.9 172a39.9 39.9 0 11-39.9 40 39.9 39.9 0 0139.9-40z"/>
+        <use x="-64" y="-14" xlink:href="#flash-on"/>
+    </symbol>
+    <symbol id="flash-off-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#flash-off"/>
+    </symbol>
+    <symbol id="flash-auto" viewBox="-28 -14 288 288">
+        <path class="svg-line" d="M152 239.8l28-68 28 68 M160 223.8h40"/>
+        <use x="-64" y="-14" xlink:href="#flash-on"/>
+    </symbol>
+    <symbol id="flash-auto-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#flash-auto"/>
+    </symbol>
+    <symbol id="iso" viewBox="-12 -52 288 288">
+        <path class="svg-line" d="M177 59.5c14.6 0 26.5 14.4 26.5 32.2s-11.9 32.1-26.5 32.1-26.6-14.4-26.6-32.1 11.9-32.2 26.6-32.2z M116 59.5c-10.4 0-35.4 13.5-9.3 30.1s-1 33.9-9.3 33.9M59.5 59.5v64"/>
+        <path class="svg-sub" d="M48 12h168a36 36 0 0136 36v88a36 36 0 01-36 36H48a36 36 0 01-36-36V48a36 36 0 0136-36z"/>
+    </symbol>
+    <symbol id="iso-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#iso"/>
     </symbol>
 </svg>

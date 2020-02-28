@@ -390,6 +390,8 @@
 <?php include ('../icons/touch.php'); ?>
 <?php include ('../icons/media.php'); ?>
 <?php include ('../icons/kitchen.php'); ?>
+<?php include ('../icons/real-estate.php'); ?>
+<?php include ('../icons/brands.php'); ?>
 
 </body>
 </html>
