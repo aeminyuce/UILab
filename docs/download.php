@@ -229,50 +229,6 @@
                 // line breaks and multiple spaces
                 code = code.replace(/\n/g, '').replace(/\s+\s/g, '').replace(/^\s|\s+$/g, '');
 
-                // css
-                code = code.replace(/; }/g, '}').replace(/ { /g, '{');
-                code = code.replace(/: /g, ':').replace(/; /g, ';');
-                code = code.replace(/ > /g, '>').replace(/\) \{/g, '){').replace(/\), \(/g, '){').replace(/\} \./g, '}.');
-
-                // js
-                code = code.replace(/var selector = function/g, 'var _j = function');
-                code = code.replace(/selector\(/g, '_j\(');
-
-                code = code.replace(/var events = {/g, 'var _e = {');
-
-                code = code.replace(/{onload:/g, '{_o:');
-                code = code.replace(/events.onload\(/g, '_e._o(');
-
-                code = code.replace(/events.on\(/g, '_e.on(');
-                code = code.replace(/events.off\(/g, '_e.off(');
-
-                code = code.replace(/,trigger:/g, ',_tr:');
-                code = code.replace(/events.trigger\(/g, '_e._tr(');
-
-                code = code.replace(/,hasClass:/g, ',_a:');
-                code = code.replace(/events.hasClass\(/g, '_e._a(');
-
-                code = code.replace(/,addClass:/g, ',_a:');
-                code = code.replace(/events.addClass\(/g, '_e._a(');
-
-                code = code.replace(/,removeClass:/g, ',_r:');
-                code = code.replace(/events.removeClass\(/g, '_e._r(');
-
-                code = code.replace(/,toggleClass:/g, ',_t:');
-                code = code.replace(/events.toggleClass\(/g, '_e._t(');
-
-                code = code.replace(/,show:/g, ',_s:');
-                code = code.replace(/events.show\(/g, '_e._s(');
-
-                code = code.replace(/,hide:/g, ',_h:');
-                code = code.replace(/events.hide\(/g, '_e._h(');
-
-                code = code.replace(/,each:/g, ',_e:');
-                code = code.replace(/events.each\(/g, '_e._e(');
-
-                code = code.replace(/,closest:/g, ',_c:');
-                code = code.replace(/events.closest\(/g, '_e._c(');
-
                 result.value = code;
                 result.scrollTop = 0; // IE, EDGE: scrollTo() not supported for textarea element
 
