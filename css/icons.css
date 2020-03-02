@@ -1,5 +1,5 @@
 /* icons */
-.icon { vertical-align: middle; line-height: 1; width: 18px; height: 18px; display: inline-block; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 24px; }
+.icon { vertical-align: middle; width: 20px; height: 20px; display: inline-block; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 24px; }
 button.icon { background-color: transparent; }
 
 .svg-fill { fill: currentColor !important; }
@@ -7,19 +7,19 @@ button.icon { background-color: transparent; }
 .svg-line { fill: none !important; }
 .svg-solid { fill: currentColor !important; stroke: none !important; }
 
-.icon-xxs { width: 10px; height: 10px; stroke-width: 44px; }
-.icon-xs { width: 12px; height: 12px; stroke-width: 38px; }
-.icon-sm { width: 16px; height: 16px; stroke-width: 32px; }
-.icon-lg { width: 24px; height: 24px; stroke-width: 24px; }
-.icon-xl { width: 32px; height: 32px; stroke-width: 18px; }
-.icon-xxl { width: 48px; height: 48px; stroke-width: 12px; }
+.icon-xxs { width: 12px; height: 12px; stroke-width: 44px; }
+.icon-xs { width: 14px; height: 14px; stroke-width: 38px; }
+.icon-sm { width: 18px; height: 18px; stroke-width: 32px; }
+.icon-lg { width: 26px; height: 26px; stroke-width: 24px; }
+.icon-xl { width: 34px; height: 34px; stroke-width: 18px; }
+.icon-xxl { width: 50px; height: 50px; stroke-width: 12px; }
 
-.icon-thin { stroke-width: 12px; }
-.icon-light { stroke-width: 18px; }
-.icon-default { stroke-width: 24px; }
-.icon-semibold { stroke-width: 32px; }
-.icon-bold { stroke-width: 38px; }
 .icon-black { stroke-width: 44px; }
+.icon-bold { stroke-width: 38px; }
+.icon-semibold { stroke-width: 32px; }
+.icon-default { stroke-width: 24px; }
+.icon-light { stroke-width: 18px; }
+.icon-thin { stroke-width: 12px; }
 
 .icon-mirror-v { transform: scaleY(-1); }
 .icon-mirror-h { transform: scaleX(-1); }
