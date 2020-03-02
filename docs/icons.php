@@ -856,24 +856,42 @@
                     <li><svg class="icon icon-xxl"><use xlink:href="#file-write-fill"/></svg><span>file-write-fill</span></li>
                     <li><svg class="icon icon-xxl"><use xlink:href="#file-txt"/></svg><span>file-txt</span></li>
                     <li><svg class="icon icon-xxl"><use xlink:href="#file-txt-fill"/></svg><span>file-txt-fill</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-avi"></i><span>file-avi</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-doc"></i><span>file-doc</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-docx"></i><span>file-docx</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-gif"></i><span>file-gif</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-jpg"></i><span>file-jpg</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-mp3"></i><span>file-mp3</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-mpg"></i><span>file-mpg</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-pdf"></i><span>file-pdf</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-png"></i><span>file-png</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-ppt"></i><span>file-ppt</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-pptx"></i><span>file-pptx</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-rar"></i><span>file-rar</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-svg"></i><span>file-svg</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-tiff"></i><span>file-tiff</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-xls"></i><span>file-xls</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-xlsx"></i><span>file-xlsx</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-xml"></i><span>file-xml</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-zip"></i><span>file-zip</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-avi"/></svg><span>file-avi</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-avi-fill"/></svg><span>file-avi-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-doc"/></svg><span>file-doc</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-doc-fill"/></svg><span>file-doc-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-docx"/></svg><span>file-docx</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-docx-fill"/></svg><span>file-docx-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-gif"/></svg><span>file-gif</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-gif-fill"/></svg><span>file-gif-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-jpg"/></svg><span>file-jpg</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-jpg-fill"/></svg><span>file-jpg-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-mp3"/></svg><span>file-mp3</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-mp3-fill"/></svg><span>file-mp3-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-mpg"/></svg><span>file-mpg</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-mpg-fill"/></svg><span>file-mpg-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-pdf"/></svg><span>file-pdf</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-pdf-fill"/></svg><span>file-pdf-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-png"/></svg><span>file-png</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-png-fill"/></svg><span>file-png-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-ppt"/></svg><span>file-ppt</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-ppt-fill"/></svg><span>file-ppt-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-pptx"/></svg><span>file-pptx</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-pptx-fill"/></svg><span>file-pptx-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-rar"/></svg><span>file-rar</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-rar-fill"/></svg><span>file-rar-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-svg"/></svg><span>file-svg</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-svg-fill"/></svg><span>file-svg-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-tiff"/></svg><span>file-tiff</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-tiff-fill"/></svg><span>file-tiff-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-xls"/></svg><span>file-xls</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-xls-fill"/></svg><span>file-xls-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-xlsx"/></svg><span>file-xlsx</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-xlsx-fill"/></svg><span>file-xlsx-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-xml"/></svg><span>file-xml</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-xml-fill"/></svg><span>file-xml-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-zip"/></svg><span>file-zip</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-zip-fill"/></svg><span>file-zip-fill</span></li>
                 </ul>
 
                 <h2>Social Icons</h2>
