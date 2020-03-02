@@ -742,29 +742,51 @@
 
                 <h2>Weather Icons</h2>
                 <ul class="icons-list list-custom theme-default ease-1st-bg ease-2nd-all">
-                    <li class="half-opacity"><i class="icon icon-xxl icon-cloud"></i><span>cloud</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-clouds"></i><span>clouds</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-bolt"></i><span>bolt</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-cloud-bolt"></i><span>cloud-bolt</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-cloud-fog"></i><span>cloud-fog</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-cloud-moon"></i><span>cloud-moon</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-cloud-sun"></i><span>cloud-sun</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-cloud-wind"></i><span>cloud-wind</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-fog"></i><span>fog</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-moon"></i><span>moon</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-rain"></i><span>rain</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-rain-heavy"></i><span>rain-heavy</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-rain-snow"></i><span>rain-snow</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-snow"></i><span>snow</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-sun"></i><span>sun</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-sunrise"></i><span>sunrise</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-sunset"></i><span>sunset</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-cold"></i><span>cold</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-temperature"></i><span>temperature</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-wind"></i><span>wind</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-wind-sock"></i><span>wind-sock</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-storm"></i><span>storm</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-tornado"></i><span>tornado</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#cloud"/></svg><span>cloud</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#cloud-fill"/></svg><span>cloud-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#clouds"/></svg><span>clouds</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#clouds-fill"/></svg><span>clouds-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#bolt"/></svg><span>bolt</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#bolt-fill"/></svg><span>bolt-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#cloud-bolt"/></svg><span>cloud-bolt</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#cloud-bolt-fill"/></svg><span>cloud-bolt-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#cloud-fog"/></svg><span>cloud-fog</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#cloud-fog-fill"/></svg><span>cloud-fog-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#cloud-moon"/></svg><span>cloud-moon</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#cloud-moon-fill"/></svg><span>cloud-moon-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#cloud-sun"/></svg><span>cloud-sun</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#cloud-sun-fill"/></svg><span>cloud-sun-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#cloud-wind"/></svg><span>cloud-wind</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#cloud-wind-fill"/></svg><span>cloud-wind-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#fog"/></svg><span>fog</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#moon"/></svg><span>moon</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#moon-fill"/></svg><span>moon-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#rain"/></svg><span>rain</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#rain-fill"/></svg><span>rain-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#rain-heavy"/></svg><span>rain-heavy</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#rain-heavy-fill"/></svg><span>rain-heavy-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#rain-snow"/></svg><span>rain-snow</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#rain-snow-fill"/></svg><span>rain-snow-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#storm"/></svg><span>storm</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#storm-fill"/></svg><span>storm-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#snow"/></svg><span>snow</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#sun"/></svg><span>sun</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#sun-fill"/></svg><span>sun-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#sunrise"/></svg><span>sunrise</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#sunrise-fill"/></svg><span>sunrise-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#sunset"/></svg><span>sunset</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#sunset-fill"/></svg><span>sunset-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#sunset"/></svg><span>sunset</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#sunset-fill"/></svg><span>sunset-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#cold"/></svg><span>cold</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#cold-fill"/></svg><span>cold-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#temperature"/></svg><span>temperature</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#temperature-fill"/></svg><span>temperature-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#wind"/></svg><span>wind</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#wind-sock"/></svg><span>wind-sock</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#wind-sock-fill"/></svg><span>wind-sock-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#tornado"/></svg><span>tornado</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#tornado-fill"/></svg><span>tornado-fill</span></li>
                 </ul>
 
                 <h2>Commerce Icons</h2>
@@ -792,28 +814,48 @@
                     <li><svg class="icon icon-xxl"><use xlink:href="#coin-fill"/></svg><span>coin-fill</span></li>
                     <li><svg class="icon icon-xxl"><use xlink:href="#coins"/></svg><span>coins</span></li>
                     <li><svg class="icon icon-xxl"><use xlink:href="#coins-fill"/></svg><span>coins-fill</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-money"></i><span>money</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-moneys"></i><span>moneys</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-wallet"></i><span>wallet</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-bank"></i><span>bank</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-money-dollar"></i><span>money-dollar</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-money-euro"></i><span>money-euro</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-money-lira"></i><span>money-lira</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#money"/></svg><span>money</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#money-fill"/></svg><span>money-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#moneys"/></svg><span>moneys</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#moneys-fill"/></svg><span>moneys-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#money-dollar"/></svg><span>money-dollar</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#money-dollar-fill"/></svg><span>money-dollar-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#money-euro"/></svg><span>money-euro</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#money-euro-fill"/></svg><span>money-euro-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#money-lira"/></svg><span>money-lira</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#money-lira-fill"/></svg><span>money-lira-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#wallet"/></svg><span>wallet</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#wallet-fill"/></svg><span>wallet-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#bank"/></svg><span>bank</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#bank-fill"/></svg><span>bank-fill</span></li>
                 </ul>
 
                 <h2>Files Icons</h2>
                 <ul class="icons-list list-custom theme-default ease-1st-bg ease-2nd-all">
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file"></i><span>file</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-files"></i><span>files</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-no"></i><span>file-no</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-check"></i><span>file-check</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-minus"></i><span>file-minus</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-plus"></i><span>file-plus</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-remove"></i><span>file-remove</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-search"></i><span>file-search</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-download"></i><span>file-download</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-upload"></i><span>file-upload</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-write"></i><span>file-write</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file"/></svg><span>file</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-fill"/></svg><span>file-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#files"/></svg><span>files</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#files-fill"/></svg><span>files-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-no"/></svg><span>file-no</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-no-fill"/></svg><span>file-no-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-check"/></svg><span>file-check</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-check-fill"/></svg><span>file-check-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-minus"/></svg><span>file-minus</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-minus-fill"/></svg><span>file-minus-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-plus"/></svg><span>file-plus</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-plus-fill"/></svg><span>file-plus-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-remove"/></svg><span>file-remove</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-remove-fill"/></svg><span>file-remove-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-search"/></svg><span>file-search</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-search-fill"/></svg><span>file-search-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-download"/></svg><span>file-download</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-download-fill"/></svg><span>file-download-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-upload"/></svg><span>file-upload</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-upload-fill"/></svg><span>file-upload-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-write"/></svg><span>file-write</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-write-fill"/></svg><span>file-write-fill</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-txt"/></svg><span>file-txt</span></li>
+                    <li><svg class="icon icon-xxl"><use xlink:href="#file-txt-fill"/></svg><span>file-txt-fill</span></li>
                     <li class="half-opacity"><i class="icon icon-xxl icon-file-avi"></i><span>file-avi</span></li>
                     <li class="half-opacity"><i class="icon icon-xxl icon-file-doc"></i><span>file-doc</span></li>
                     <li class="half-opacity"><i class="icon icon-xxl icon-file-docx"></i><span>file-docx</span></li>
@@ -828,7 +870,6 @@
                     <li class="half-opacity"><i class="icon icon-xxl icon-file-rar"></i><span>file-rar</span></li>
                     <li class="half-opacity"><i class="icon icon-xxl icon-file-svg"></i><span>file-svg</span></li>
                     <li class="half-opacity"><i class="icon icon-xxl icon-file-tiff"></i><span>file-tiff</span></li>
-                    <li class="half-opacity"><i class="icon icon-xxl icon-file-txt"></i><span>file-txt</span></li>
                     <li class="half-opacity"><i class="icon icon-xxl icon-file-xls"></i><span>file-xls</span></li>
                     <li class="half-opacity"><i class="icon icon-xxl icon-file-xlsx"></i><span>file-xlsx</span></li>
                     <li class="half-opacity"><i class="icon icon-xxl icon-file-xml"></i><span>file-xml</span></li>

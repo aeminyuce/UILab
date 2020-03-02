@@ -1,5 +1,12 @@
 <!-- commerce icons -->
 <svg style="display: none;">
+
+    <!-- shared only: start -->
+    <symbol id="in-money" viewBox="-12 -52 288 288">
+        <path class="svg-sub" d="M252 24s-23.6 12-63.7 12S117 12 76.5 12 12 24 12 24v144s23.7-12 64-12 72.2 24 112 24 64-12 64-12z"/>
+    </symbol>
+    <!-- shared only: end -->
+
     <symbol id="tag" viewBox="6 40 288 288">
         <path d="M215.1 97a20 20 0 11-20 20 20 20 0 0120-20z"/>
         <path class="svg-sub" d="M266.7 64.9l.5 96-134.6 134.8a27 27 0 01-39.1-.4L37 239c-11.3-11.3-11.4-28.4-.3-39.5L170.7 65z"/>
@@ -85,10 +92,64 @@
             <path class="svg-line" d="M114 252.4c-79.9 0-102-38-102-38V151s23.8 37.2 102 37.2S216 151 216 151v63.3s-22.2 38.1-102 38.1z"/>
             <path d="M114 188.3c-79.9 0-102-38-102-38V70.9c.2 15.2 23.8 55.2 102 55.2s101.8-40 102-55.2v79.4s-22.2 38-102 38z"/>
         </g>
-        <path class="a" d="M114 12c56.3 0 102 25.6 102 57.2s-45.7 57.2-102 57.2S12 100.8 12 69.2 57.7 12 114 12z"/>
-        <path class="b" d="M69.7 121.3v62M120.7 126.3v62M171.7 117v62.8"/>
+        <path d="M114 12c56.3 0 102 25.6 102 57.2s-45.7 57.2-102 57.2S12 100.8 12 69.2 57.7 12 114 12z M69.7 121.3v62M120.7 126.3v62M171.7 117v62.8"/>
     </symbol>
     <symbol id="coins-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#coins"/>
+    </symbol>
+    <symbol id="money" viewBox="0 0 288 288">
+        <path transform="translate(16 48)" d="M131.5 70c9.7 0 17.5 11.6 17.5 26s-7.8 26-17.5 26S114 110.4 114 96s7.8-26 17.5-26z"/>
+        <use xlink:href="#in-money"/>
+    </symbol>
+    <symbol id="money-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#money"/>
+    </symbol>
+    <symbol id="moneys" viewBox="-12 -42 288 288">
+        <g class="svg-sub">
+            <path class="svg-line" d="M210.4 150.4C174.6 155.9 139.2 131 108 131c-32.7 0-54.4 9.9-54.4 9.9l-.1-85C27.3 57.7 12 65.4 12 65.4v119s19.6-9.9 53-9.9 59.6 19.9 92.5 19.9 53-10 53-10z"/>
+            <path d="M252 22s-19.5 9.8-52.7 9.8S140.3 12 107 12 53.6 22 53.6 22v119s19.6-10 52.9-10 59.7 20 92.6 20 53-10 53-10z"/>
+        </g>
+        <path d="M152.9 59.3c9.3 0 16.8 9.9 16.8 22s-7.5 22-16.8 22-16.8-9.8-16.8-22 7.5-22 16.8-22z"/>
+    </symbol>
+    <symbol id="moneys-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#moneys"/>
+    </symbol>
+    <symbol id="money-dollar" viewBox="0 0 288 288">
+        <path class="svg-line" transform="translate(108 96)" d="M49.8 30.5c-2-4-6.5-8.1-16.9-8.1-16.6 0-27.6 18.5 0 28.7s16.7 30.7 0 30.7c-10 0-14.7-4-16.8-8.2 M32.8 22V12 M32.8 92.2v-10"/>
+        <use xlink:href="#in-money"/>
+    </symbol>
+    <symbol id="money-dollar-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#money-dollar"/>
+    </symbol>
+    <symbol id="money-euro" viewBox="0 0 288 288">
+        <path class="svg-line" transform="translate(104 104)" d="M67.2 13.6A37.5 37.5 0 0056.4 12a35.5 35.5 0 00-36 36 35.5 35.5 0 0036 36 37 37 0 0010.8-1.6 M12 53.5h39M12 42.3l39-.1"/>
+        <use xlink:href="#in-money"/>
+    </symbol>
+    <symbol id="money-euro-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#money-euro"/>
+    </symbol>
+    <symbol id="money-lira" viewBox="0 0 288 288">
+        <path class="svg-line" transform="translate(104 98)" d="M32.2 12v72s13.6 1 25.5-10.8 11-25.5 11-25.5 M15.4 49.2l39-14.1M15.4 38l39-14.2"/>
+        <use xlink:href="#in-money"/>
+    </symbol>
+    <symbol id="money-lira-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#money-lira"/>
+    </symbol>
+    <symbol id="wallet" viewBox="-12 -28 288 288">
+        <path d="M195 115.8a16 16 0 11-16 16 16 16 0 0116-16z"/>
+        <g class="svg-sub">
+            <path d="M36 43.8h192a24 24 0 0124 24v128a24 24 0 01-24 24H36a24 24 0 01-24-24v-128a24 24 0 0124-24z"/>
+            <path class="svg-line" d="M203 12.8c34.3-6.7 31 31 31 31H35z"/>
+        </g>
+    </symbol>
+    <symbol id="wallet-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#wallet"/>
+    </symbol>
+    <symbol id="bank" viewBox="-12 -12 288 288">
+        <path d="M44 211.9h176l32 40.1H12z M252 84L132 12 12 84z"/>
+        <path class="svg-sub" d="M216 84v128M160 84v128M104 84v128M48 84v128"/>
+    </symbol>
+    <symbol id="bank-fill" viewBox="0 0 288 288">
+        <use class="svg-fill" xlink:href="#bank"/>
     </symbol>
 </svg>

@@ -7,7 +7,7 @@ button.icon { background-color: transparent; }
 svg.icon { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 24px; }
 
 .svg-fill { fill: currentColor !important; }
-.svg-sub { opacity: .45; }
+.svg-sub { opacity: .5; }
 .svg-line { fill: none !important; }
 .svg-solid { fill: currentColor !important; stroke: none !important; }
 
