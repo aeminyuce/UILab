@@ -10,9 +10,9 @@
 .clear-btn { color: inherit; text-align: inherit; background-color: transparent; border: 0; }
 .img-fluid { width: 100% !important; height: auto !important; }
 
-.block,.block-1st > *,.block-2nd > * > * { width: 100%; display: block !important; }
-.inline,.inline-1st > *,.inline-2nd > * > * { display: inline !important; }
-.inline-block,.inline-block-1st > *:not(.icon):not(.btn):not(img),.inline-block-2nd > * > *:not(.icon):not(.btn):not(img) { vertical-align: middle; display: inline-block !important; }
+.block,.block-1st > *:not(.row),.block-2nd > * > *:not(.row) { width: 100%; display: block !important; }
+.inline,.inline-1st > *:not(.row),.inline-2nd > * > *:not(.row) { display: inline !important; }
+.inline-block,.inline-block-1st > *:not(.row):not(.icon):not(.btn):not(img),.inline-block-2nd > * > *:not(.row):not(.icon):not(.btn):not(img) { vertical-align: middle; display: inline-block !important; }
 
 .highlight { display: block; }
 .highlight:not(:last-child) { margin-bottom: 20px !important; }
