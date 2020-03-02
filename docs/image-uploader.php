@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="uploader-list">
-                    <i class="icon icon-xxl icon-images-add"></i>
+                    <i class="icon icon-xxl icon-images-plus"></i>
                     <ul>
                         <li data-img="img/house_01.jpg" data-id="1" data-tag="Exterior"></li>
                         <li data-img="img/house_02.jpg" data-id="2" data-tag=""></li>

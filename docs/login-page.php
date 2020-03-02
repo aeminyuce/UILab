@@ -14,11 +14,11 @@
     .login-container > .icon { font-size: 160px; position: absolute; top: 14%; right: 34%; transform: rotate(-12deg); }
 
     .login-icons .icon { position: absolute; }
-    .login-icons .icon:nth-child(1) { font-size: 52px; width: 52px; height: 52px; bottom: 112px; left: 82px; opacity: .65; transform: rotate(12deg); }
-    .login-icons .icon:nth-child(2) { font-size: 28px; width: 28px; height: 28px; bottom: 32px; left: 24px; opacity: .15; transform: rotate(-12deg); }
-    .login-icons .icon:nth-child(3) { font-size: 84px; width: 84px; height: 84px; top: 20%; left: 10%; opacity: .15; transform: rotate(-12deg); }
-    .login-icons .icon:nth-child(4) { font-size: 106px; width: 106px; height: 106px; bottom: 18px; right: 92px; opacity: .3; transform: rotate(-12deg); }
-    .login-icons .icon:nth-child(5) { font-size: 38px; width: 38px; height: 38px; top: 72px; right: 20%; opacity: .15; transform: rotate(12deg); }
+    .login-icons .icon:nth-child(1) { width: 52px; height: 52px; bottom: 112px; left: 82px; opacity: .65; transform: rotate(12deg); }
+    .login-icons .icon:nth-child(2) { width: 28px; height: 28px; bottom: 32px; left: 24px; opacity: .15; transform: rotate(-12deg); }
+    .login-icons .icon:nth-child(3) { width: 84px; height: 84px; top: 20%; left: 10%; opacity: .15; transform: rotate(-12deg); }
+    .login-icons .icon:nth-child(4) { width: 106px; height: 106px; bottom: 18px; right: 92px; opacity: .3; transform: rotate(-12deg); }
+    .login-icons .icon:nth-child(5) { width: 38px; height: 38px; top: 72px; right: 20%; opacity: .15; transform: rotate(12deg); }
 
     @media (min-width: 1200px) {
         .login-forms-container { padding: 8% 0 8% 14% !important; }

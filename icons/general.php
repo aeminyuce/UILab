@@ -125,21 +125,21 @@
         <path d="M52 92l-40 40 40 40M92 212l40 40 40-40M212 92l40 40-40 40M92 52l40-40 40 40"/>
         <path class="svg-sub" transform="translate(6 6)" d="M12 124.8h225.5M124.5 12v225.5"/>
     </symbol>
-    <symbol id="bars" viewBox="-12 -44 288 288">
+    <symbol id="bars" viewBox="-12 -40 288 288">
         <path d="M12 188h240M12 12h240"/>
-        <path transform="translate(0 90)" class="svg-sub" d="M12 12h240"/>
+        <path transform="translate(0 86)" class="svg-sub" d="M12 12h240"/>
     </symbol>
-    <symbol id="bars-left" viewBox="-12 -44 288 288">
+    <symbol id="bars-left" viewBox="-12 -40 288 288">
         <path d="M12 188h168M12 12h240"/>
-        <path transform="translate(0 90)" class="svg-sub" d="M12 12h124"/>
+        <path transform="translate(0 86)" class="svg-sub" d="M12 12h124"/>
     </symbol>
-    <symbol id="bars-right" viewBox="-12 -44 288 288">
+    <symbol id="bars-right" viewBox="-12 -40 288 288">
         <path d="M252 188H84M252 12H12"/>
-        <path transform="translate(116 90)" class="svg-sub" d="M136 12H12"/>
+        <path transform="translate(116 86)" class="svg-sub" d="M136 12H12"/>
     </symbol>
-    <symbol id="bars-center" viewBox="-12 -44 288 288">
+    <symbol id="bars-center" viewBox="-12 -40 288 288">
         <path d="M216 188H48M252 12H12"/>
-        <path transform="translate(58 90)" class="svg-sub" d="M133 12H12"/>
+        <path transform="translate(58 86)" class="svg-sub" d="M133 12H12"/>
     </symbol>
     <symbol id="circle" viewBox="-22 -22 288 288">
         <circle cx="120" cy="120" r="120"/>
@@ -371,7 +371,7 @@
     <symbol id="plus-marker-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#plus-marker"/>
     </symbol>
-    <symbol id="remove" viewBox="-8 -8 288 288">
+    <symbol id="remove" viewBox="-10 -8 288 288">
         <path d="M257 17L17 257M17 17l240 240"/>
     </symbol>
     <symbol id="remove-circle" viewBox="0 0 288 288">

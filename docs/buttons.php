@@ -196,7 +196,7 @@
 
                 <h4>Pagination Buttons</h4>
                 <div class="pagination align-c theme-default2 ease-1st-btn">
-                    <a class="btn prev round" href="#"><i class="icon icon-xs icon-angle-double-left"></i></a>
+                    <a class="btn prev round" href="#"><i class="icon icon-xs icon-angle-dual-left"></i></a>
                     <a class="btn prev round" href="#"><i class="icon icon-xs icon-angle-left"></i></a>
                     <a class="btn round" href="#">1</a>
                     <a class="btn btn-active round ui-dark" href="#">2</a>
@@ -205,10 +205,10 @@
                     <a class="btn btn-passive round" href="#">...</a>
                     <a class="btn round" href="#">10</a>
                     <a class="btn next round" href="#"><i class="icon icon-xs icon-angle-right"></i></a>
-                    <a class="btn next round" href="#"><i class="icon icon-xs icon-angle-double-right"></i></a>
+                    <a class="btn next round" href="#"><i class="icon icon-xs icon-angle-dual-right"></i></a>
                 </div>
                 <div class="pagination form-lg align-c padding-30-b theme-default2 ease-1st-btn">
-                    <a class="btn prev round" href="#"><i class="icon icon-xs icon-angle-double-left"></i></a>
+                    <a class="btn prev round" href="#"><i class="icon icon-xs icon-angle-dual-left"></i></a>
                     <a class="btn prev round" href="#"><i class="icon icon-xs icon-angle-left"></i></a>
                     <a class="btn round" href="#">1</a>
                     <a class="btn btn-active round ui-dark" href="#">2</a>
@@ -217,7 +217,7 @@
                     <a class="btn btn-passive round" href="#">...</a>
                     <a class="btn round" href="#">10</a>
                     <a class="btn next round" href="#"><i class="icon icon-xs icon-angle-right"></i></a>
-                    <a class="btn next round" href="#"><i class="icon icon-xs icon-angle-double-right"></i></a>
+                    <a class="btn next round" href="#"><i class="icon icon-xs icon-angle-dual-right"></i></a>
                 </div>
 
                 <h4>Loading Buttons</h4>

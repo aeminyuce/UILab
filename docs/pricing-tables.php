@@ -1,7 +1,7 @@
 <!-- custom CSS -->
 <style>
     body { background-color: #eceef5; }
-    .icon-super { font-size: 72px; width: 72px; height: 72px; }
+    .icon-super { width: 72px; height: 72px; }
     .card.round { border-radius: 16px; }
 </style>
 
@@ -44,7 +44,7 @@
                                 <i class="icon icon-shopping-cart margin-5-l"></i>
                             </a>
                             <div class="light-ui margin-30-v">
-                                <i class="icon icon-badge-check margin-5-r"></i> Recommended
+                                <i class="icon icon-check-badge margin-5-r"></i> Recommended
                             </div>
                         </div>
 

@@ -4,11 +4,11 @@
     .signup-holder { background-image: linear-gradient(110deg, #624494, #080550, #6f113e); }
 
     .signup-icons .icon { position: absolute; }
-    .signup-icons .icon:nth-child(1) { font-size: 52px; bottom: 70px; left: 202px; opacity: .05; transform: rotate(12deg); }
-    .signup-icons .icon:nth-child(2) { font-size: 28px; bottom: 2px; left: 4px; opacity: .075; transform: rotate(-12deg); }
-    .signup-icons .icon:nth-child(3) { font-size: 64px; top: 22px; left: 22px; opacity: .15; transform: rotate(-12deg); }
-    .signup-icons .icon:nth-child(4) { font-size: 64px; bottom: 42px; right: -8px; opacity: .3; transform: rotate(-12deg); }
-    .signup-icons .icon:nth-child(5) { font-size: 206px; top: -68px; right: 29%; opacity: .1; transform: rotate(12deg); }
+    .signup-icons .icon:nth-child(1) { bottom: 70px; left: 202px; opacity: .05; transform: rotate(12deg); }
+    .signup-icons .icon:nth-child(2) { bottom: 2px; left: 4px; opacity: .075; transform: rotate(-12deg); }
+    .signup-icons .icon:nth-child(3) { top: 22px; left: 22px; opacity: .15; transform: rotate(-12deg); }
+    .signup-icons .icon:nth-child(4) { bottom: 42px; right: -8px; opacity: .3; transform: rotate(-12deg); }
+    .signup-icons .icon:nth-child(5) { top: -68px; right: 29%; opacity: .1; transform: rotate(12deg); }
 
     .signup-btn { min-width: 42%; background-image: linear-gradient(130deg, #4ee273,#2dbd51); }
     .why-join { background-image: linear-gradient(130deg, #fff, #e8e0ff, #fff); }

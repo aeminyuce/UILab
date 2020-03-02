@@ -3,7 +3,7 @@
 
     .error-size { font-size: 20vw; font-weight: bold; line-height: 20vw; margin: -2.35vh 0; position: relative; }
     .error-size:after { content: ""; width: 32vh; height: 32vh; display: block; background-color: rgba(134, 76, 76, 0.065); border-radius: 50%; position: absolute; top: 44%; left: 44%; transform: translate(-50%, -50%); z-index: 0; }
-    .error-size .icon { font-size: 16vw; width: 16vw; height: 16vw; margin: 0 -4.65vw; }
+    .error-size .icon { width: 16vw; height: 16vw; margin: 0 -4.65vw; }
 
     @media (prefers-color-scheme: dark) {
         .error-size:after { background-color: rgba(255,255,255,.045); }

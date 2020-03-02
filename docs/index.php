@@ -133,7 +133,9 @@
     <header class="container theme-default ui-dark">
         <div class="row theme-default2 ui-border border-t border-dual">
             <div class="col-12">
-                <a href="index.php" class="btn btn-lg btn-square circle ease-btn margin-10-r"><i class="icon no-opacity icon-long-arrow-left"></i></a>
+                <a href="index.php" class="btn btn-lg btn-square circle ease-btn margin-10-r">
+                    <svg class="icon no-opacity"><use xlink:href="#long-arrow-left"/></svg>
+                </a>
                 <h1 class="x-large inline-block">UI Lab, <span class="capitalize"><?php echo str_replace("-", " ", $page); ?></span></h1>
             </div>
         </div>
@@ -161,10 +163,10 @@
                 <div class="row form-lg">
                     <div class="col-12 align-r padding-15-r ease-1st-btn">
                         <a title="GitHub" href="https://github.com/aeminyuce/UILab/" class="btn btn-square round ui-dark" target="_blank">
-                            <i class="icon icon-github"></i>
+                            <svg class="icon"><use xlink:href="#github"/></svg>
                         </a>
                         <button class="btn btn-square round ui-dark show-mobile-menu-r visible-md">
-                            <i class="icon icon-bars-right"></i>
+                            <svg class="icon"><use xlink:href="#bars-right"/></svg>
                         </button>
                     </div>
                 </div>
@@ -229,10 +231,10 @@
                             <p class="large xs-align-c">CSS &amp; JavaScript powered responsive design system.</p>
                             <div class="form-lg ease-1st-btn">
                                 <a href="?p=icons" class="btn btn-xs-fluid padding-30-h circle theme-default ui-dark">
-                                    <i class="icon icon-puzzle margin-5-r"></i> Icons
+                                    <svg class="icon margin-5-r"><use xlink:href="#puzzle"/></svg> Icons
                                 </a>
                                 <a href="?p=download" class="btn btn-xs-fluid padding-30-h circle theme-default2 ui-dark">
-                                    Download <i class="icon icon-long-arrow-right margin-5-l"></i>
+                                    Download <svg class="icon margin-5-l"><use xlink:href="#long-arrow-right"/></svg>
                                 </a>
                             </div>
 
@@ -376,7 +378,7 @@
     <div class="mobile-menu show-r theme-default ease-layout ease-slow ease-in-out">
         <div class="mobile-menu-title padding-15-v ui-dark">
             <button class="btn btn-square btn-lg btn-ghost round ease-btn close-mobile-menu">
-                <i class="icon icon-sm icon-remove no-opacity"></i>
+                <svg class="icon no-opacity"><use xlink:href="#remove"/></svg>
             </button>
             <img src="img/uilab-logo.png" alt="" srcset="img/uilab-logo@2x.png 2x">
         </div>
