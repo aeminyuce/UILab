@@ -855,7 +855,7 @@
                 <div class="generate-holder tab-content form-lg icons-no-opacity padding-30">
 
                     <div class="file margin-30-b no-border round circle no-border ease-form form-xs-inline">
-                        <input name="JS" class="generate-import" type="file">
+                        <input name="js" class="generate-import" type="file">
                         <span class="btn circle padding-20-h block ease-btn">
                             <span class="inline-block">Import from JS File</span>
                             <i class="icon icon-sm icon-import margin-5-l"></i>
@@ -1265,24 +1265,135 @@
 
                 </div>
 
-                <div class="tab-content align-c icons-no-opacity icons-margin-5-r padding-30-v">
+                <div class="generate-holder tab-content form-lg icons-no-opacity padding-30">
 
-                    <h4>Download Fonts Icon Files</h4>
-                    <h4>Download and save your files to your <code>/fonts/</code> folder.</h4>
-                    <div class="form-lg ease-1st-btn">
-                        <a class="btn btn-xs-fluid round" href="../fonts/font-icons.svg">
-                            <i class="icon margin-3-v icon-file-download"></i>
-                            font-icons.svg
-                        </a>
-                        <a class="btn btn-xs-fluid round" href="../fonts/font-icons.ttf">
-                            <i class="icon margin-3-v icon-file-download"></i>
-                            font-icons.ttf
-                        </a>
-                        <a class="btn btn-xs-fluid round" href="../fonts/font-icons.woff">
-                            <i class="icon margin-3-v icon-file-download"></i>
-                            font-icons.woff
-                        </a>
+                    <div class="generate-list row row-sm-gap-v">
+                        <div class="col-12">
+
+                            <div class="generate-forms margin-20-b">
+                                <label class="custom margin-5-b opacity ease-opacity">
+                                    <span class="switch-custom round border-dual ease-form">
+                                        <input class="generate-toggle" type="checkbox">
+                                        <i class="state"></i>
+                                    </span>
+                                    <span class="x-dark">Select/Deselect All</span>
+                                </label>
+
+                                <div class="row row-no-gap-v xs-fluid">
+                                    <div class="col-3 col-md-4 col-sm-6 block-1st">
+                                        <label class="custom">
+                                            <span class="switch-custom round border-dual ease-form">
+                                                <input type="checkbox" value="../icons/general.php" checked>
+                                                <i class="ui-dark state"></i>
+                                            </span>
+                                            General
+                                        </label>
+                                        <label class="custom">
+                                            <span class="switch-custom round border-dual ease-form">
+                                                <input type="checkbox" value="../icons/touch.php">
+                                                <i class="ui-dark state"></i>
+                                            </span>
+                                            Touch
+                                        </label>
+                                        <label class="custom">
+                                            <span class="switch-custom round border-dual ease-form">
+                                                <input type="checkbox" value="../icons/media.php">
+                                                <i class="ui-dark state"></i>
+                                            </span>
+                                            Media
+                                        </label>
+                                    </div>
+                                    <div class="col-3 col-md-4 col-sm-6 block-1st">
+                                        <label class="custom">
+                                            <span class="switch-custom round border-dual ease-form">
+                                                <input type="checkbox" value="../icons/real-estate.php">
+                                                <i class="ui-dark state"></i>
+                                            </span>
+                                            Real Estate
+                                        </label>
+                                        <label class="custom">
+                                            <span class="switch-custom round border-dual ease-form">
+                                                <input type="checkbox" value="../icons/weather.php">
+                                                <i class="ui-dark state"></i>
+                                            </span>
+                                            Weather
+                                        </label>
+                                        <label class="custom">
+                                            <span class="switch-custom round border-dual ease-form">
+                                                <input type="checkbox" value="../icons/kitchen.php">
+                                                <i class="ui-dark state"></i>
+                                            </span>
+                                            Kitchen
+                                        </label>
+                                    </div>
+                                    <div class="col-3 col-md-4 col-sm-6 block-1st">
+                                        <label class="custom">
+                                            <span class="switch-custom round border-dual ease-form">
+                                                <input type="checkbox" value="../icons/commerce.php">
+                                                <i class="ui-dark state"></i>
+                                            </span>
+                                            Commerce
+                                        </label>
+                                        <label class="custom">
+                                            <span class="switch-custom round border-dual ease-form">
+                                                <input type="checkbox" value="../icons/files.php">
+                                                <i class="ui-dark state"></i>
+                                            </span>
+                                            Files
+                                        </label>
+                                        <label class="custom">
+                                            <span class="switch-custom round border-dual ease-form">
+                                                <input type="checkbox" value="../icons/social.php">
+                                                <i class="ui-dark state"></i>
+                                            </span>
+                                            Social
+                                        </label>
+                                    </div>
+                                    <div class="col-3 col-md-4 col-sm-6 block-1st">
+                                        <label class="custom">
+                                            <span class="switch-custom round border-dual ease-form">
+                                                <input type="checkbox" value="../icons/brands.php">
+                                                <i class="ui-dark state"></i>
+                                            </span>
+                                            Brands
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
+
+                    <div class="row">
+                        <div class="col-12 no-padding-t">
+
+                            <div class="textarea margin-15-b round border-dual ease-form">
+                                <textarea class="x-dark large padding-10" rows="12" placeholder="Generated icons will be here!"></textarea>
+                                <div class="border-t border-dual">
+                                    <div class="inline-block padding-5-r">
+                                        <button title="Clear form!" class="generate-clear btn btn-square btn-ghost left ease-btn">
+                                            <i class="icon icon-sm icon-trash"></i>
+                                        </button>
+                                        <button title="Minify code" class="generate-min btn btn-square btn-ghost ease-btn">
+                                            <i class="icon icon-sm icon-code"></i>
+                                        </button>
+                                    </div>
+                                    File size:
+                                    <b class="generate-size">0 Kb</b>
+                                </div>
+                            </div>
+
+                            <div class="align-r align-c ease-1st-btn">
+                                <span class="sp15 visible-xs"></span>
+                                <button class="generate-btn btn btn-xs-fluid round ui-dark">Generate Icons</button>
+                                <button title="Copy to clipboard!" class="generate-copy btn btn-xs-fluid round">
+                                    <i class="icon icon-files"></i> Copy to clipboard
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
 
             </div>

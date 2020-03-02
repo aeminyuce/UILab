@@ -394,7 +394,7 @@
 <?php include ('../icons/weather.php'); ?>
 <?php include ('../icons/commerce.php'); ?>
 <?php include ('../icons/files.php'); ?>
-<?php include ('../icons/social-icons.php'); ?>
+<?php include ('../icons/social.php'); ?>
 <?php include ('../icons/brands.php'); ?>
 
 </body>
