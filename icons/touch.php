@@ -56,9 +56,9 @@
     <symbol id="swipe-up-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#swipe-up"/>
     </symbol>
-    <symbol id="pinch" viewBox="-12 -12 288 288">
-        <path class="svg-line" transform="translate(-28 -4)" d="M223 67.3V98h30.8 M285 35.7L222.8 98 M254.4 35.8H285v30.9 M81 109a42.1 42.1 0 00-27.5 7.1C36 128.4 30.2 153 42 175.5"/>
-        <use x="-10" xlink:href="#in-touch"/>
+    <symbol id="pinch" viewBox="12 -8 288 288">
+        <path class="svg-line" d="M81 109a42.1 42.1 0 00-27.5 7.1C36 128.4 30.2 153 42 175.5 M213.2 67.3V98h30.9 M275.3 35.7L213.1 98 M244.7 35.8h30.7v30.9"/>
+        <use x="16" y="2" xlink:href="#in-touch"/>
     </symbol>
     <symbol id="pinch-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#pinch"/>

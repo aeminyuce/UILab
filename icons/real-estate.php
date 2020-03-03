@@ -8,37 +8,37 @@
     </symbol>
     <!-- shared only: end -->
 
-    <symbol id="house" viewBox="0 0 288 288">
-        <path transform="translate(102 122)" d="M12 12h64v56H12z"/>
-        <use xlink:href="#in-house"/>
+    <symbol id="house" viewBox="-12 -12 288 288">
+        <path d="M104.9 116h64v56h-64z"/>
+        <use x="-12" y="-12" xlink:href="#in-house"/>
     </symbol>
     <symbol id="house-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#house"/>
     </symbol>
-    <symbol id="house-check" viewBox="0 0 288 288">
-        <path class="svg-line" transform="translate(96 124)" d="M84.9 17L41 64.8 17 40.9"/>
-        <use xlink:href="#in-house"/>
+    <symbol id="house-check" viewBox="-12 -24 288 288">
+        <path class="svg-line" d="M170.8 112L127 159.8 102.9 136"/>
+        <use x="-12" y="-24" xlink:href="#in-house"/>
     </symbol>
     <symbol id="house-check-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#house-check"/>
     </symbol>
-    <symbol id="house-floor" viewBox="0 0 288 288">
-        <path transform="translate(38 162)" d="M12 12h192"/>
-        <use xlink:href="#in-house"/>
+    <symbol id="house-floor" viewBox="-10 -12 288 288">
+        <path d="M40.9 148h192"/>
+        <use x="-10" y="-12" xlink:href="#in-house"/>
     </symbol>
     <symbol id="house-floor-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#house-floor"/>
     </symbol>
-    <symbol id="house-heat" viewBox="0 0 288 288">
-        <path class="svg-line" transform="translate(88 108)" d="M103.2 12.9s-14.3 5.3-14.3 18.5 14.3 16.5 14.3 31.4-14.3 18.6-14.3 31.4 14.3 18.5 14.3 18.5M63.3 12.9S49 18.2 49 31.4s14.3 16.5 14.3 31.4S49 81.4 49 94.2s14.3 18.5 14.3 18.5M24.3 12.9S10 18.2 10 31.4s14.3 16.5 14.3 31.4S10 81.4 10 94.2s14.3 18.5 14.3 18.5"/>
-        <use xlink:href="#in-house"/>
+    <symbol id="house-heat" viewBox="-12 -12 288 288">
+        <path class="svg-line" d="M92.9 110s10 13.9 8 28-14 14.4-16 28.4 8 27.6 8 27.6M137.2 110s10 13.9 8 28-14 14.4-16 28.4 8 27.6 8 27.6M181.2 110s10 13.9 8 28-14 14.4-16 28.4 8 27.6 8 27.6"/>
+        <use x="-12" y="-12" xlink:href="#in-house"/>
     </symbol>
     <symbol id="house-heat-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#house-heat"/>
     </symbol>
-    <symbol id="house-surface" viewBox="0 0 288 288">
-        <path class="svg-line" transform="translate(76 156)" d="M124 40.8H12 M100 17l24 23.9-24 24M36 17L12 40.9l24 24"/>
-        <use xlink:href="#in-house"/>
+    <symbol id="house-surface" viewBox="-12 -12 288 288">
+        <path class="svg-line" d="M168.9 148l24 24-24 23.9M104.8 148L81 172l24 23.9 M192.9 171.9h-112"/>
+        <use x="-12" y="-12" xlink:href="#in-house"/>
     </symbol>
     <symbol id="house-surface-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#house-surface"/>

@@ -42,9 +42,9 @@
     <symbol id="credit-card-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#credit-card"/>
     </symbol>
-    <symbol id="credit-card-check" viewBox="0 0 288 288">
-        <path class="svg-line" transform="translate(20 42)" d="M208 116l-36 39.8-20-19.8"/>
-        <use xlink:href="#credit-card"/>
+    <symbol id="credit-card-check" viewBox="-20 -42 288 288">
+        <path class="svg-line" d="M208 116l-36 39.8-20-19.8"/>
+        <use x="-20" y="-40" xlink:href="#credit-card"/>
     </symbol>
     <symbol id="credit-card-check-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#credit-card-check"/>
@@ -97,9 +97,9 @@
     <symbol id="coins-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#coins"/>
     </symbol>
-    <symbol id="money" viewBox="0 0 288 288">
-        <path transform="translate(16 48)" d="M131.5 70c9.7 0 17.5 11.6 17.5 26s-7.8 26-17.5 26S114 110.4 114 96s7.8-26 17.5-26z"/>
-        <use xlink:href="#in-money"/>
+    <symbol id="money" viewBox="-12 -52 288 288">
+        <path d="M131.5 70c9.7 0 17.5 11.6 17.5 26s-7.8 26-17.5 26S114 110.4 114 96s7.8-26 17.5-26z"/>
+        <use x="-12" y="-52" xlink:href="#in-money"/>
     </symbol>
     <symbol id="money-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#money"/>
@@ -114,23 +114,23 @@
     <symbol id="moneys-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#moneys"/>
     </symbol>
-    <symbol id="money-dollar" viewBox="0 0 288 288">
-        <path class="svg-line" transform="translate(108 96)" d="M49.8 30.5c-2-4-6.5-8.1-16.9-8.1-16.6 0-27.6 18.5 0 28.7s16.7 30.7 0 30.7c-10 0-14.7-4-16.8-8.2 M32.8 22V12 M32.8 92.2v-10"/>
-        <use xlink:href="#in-money"/>
+    <symbol id="money-dollar" viewBox="-12 -52 288 288">
+        <path class="svg-line" d="M131.5 136.1v-10 M131.5 66V56 M148.5 74.5c-2-4-6.5-8.1-16.8-8.1-16.7 0-27.6 18.4 0 28.6s16.6 30.7 0 30.7c-10.1 0-14.7-4-16.8-8.1"/>
+        <use x="-12" y="-52" xlink:href="#in-money"/>
     </symbol>
     <symbol id="money-dollar-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#money-dollar"/>
     </symbol>
-    <symbol id="money-euro" viewBox="0 0 288 288">
-        <path class="svg-line" transform="translate(104 104)" d="M67.2 13.6A37.5 37.5 0 0056.4 12a35.5 35.5 0 00-36 36 35.5 35.5 0 0036 36 37 37 0 0010.8-1.6 M12 53.5h39M12 42.3l39-.1"/>
-        <use xlink:href="#in-money"/>
+    <symbol id="money-euro" viewBox="-12 -52 288 288">
+        <path class="svg-line" d="M98.3 104.5h39M98.3 93.3l39-.1 M153.4 64.6a37.5 37.5 0 00-10.7-1.6 35.5 35.5 0 00-36 36 35.5 35.5 0 0036 36 37 37 0 0010.7-1.6"/>
+        <use x="-12" y="-52" xlink:href="#in-money"/>
     </symbol>
     <symbol id="money-euro-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#money-euro"/>
     </symbol>
-    <symbol id="money-lira" viewBox="0 0 288 288">
-        <path class="svg-line" transform="translate(104 98)" d="M32.2 12v72s13.6 1 25.5-10.8 11-25.5 11-25.5 M15.4 49.2l39-14.1M15.4 38l39-14.2"/>
-        <use xlink:href="#in-money"/>
+    <symbol id="money-lira" viewBox="-12 -52 288 288">
+        <path class="svg-line" d="M103 94.2L142 80M103 83l39-14.2 M119.8 57v72s13.6 1 25.5-10.8 11-25.5 11-25.5"/>
+        <use x="-12" y="-52" xlink:href="#in-money"/>
     </symbol>
     <symbol id="money-lira-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#money-lira"/>

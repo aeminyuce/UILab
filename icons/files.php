@@ -61,7 +61,7 @@
     </symbol>
     <!-- shared only: end -->
 
-    <symbol id="file" viewBox="-36 -12 288 288">
+    <symbol id="file" viewBox="-34 -12 288 288">
         <path d="M12 12h120l72 72v168H12z"/>
     </symbol>
     <symbol id="file-fill" viewBox="0 0 288 288">
@@ -74,65 +74,65 @@
     <symbol id="files-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#files"/>
     </symbol>
-    <symbol id="file-no" viewBox="0 0 288 288">
-        <path class="svg-line" transform="translate(32 12)" d="M135.7 106l-57.2 58.2M108 95a41 41 0 11-41 41 41 41 0 0141-41z"/>
-        <use class="svg-sub" xlink:href="#file"/>
+    <symbol id="file-no" viewBox="-32 -14 288 288">
+        <path class="svg-line" d="M135.7 106l-57.2 58.2M108 95a41 41 0 11-41 41 41 41 0 0141-41z"/>
+        <use x="-32" y="-14" class="svg-sub" xlink:href="#file"/>
     </symbol>
     <symbol id="file-no-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#file-no"/>
     </symbol>
-    <symbol id="file-check" viewBox="0 0 288 288">
-        <path class="svg-line" transform="translate(32 18)" d="M147.8 103l-51.5 56.2-28.3-28"/>
-        <use class="svg-sub" xlink:href="#file"/>
+    <symbol id="file-check" viewBox="-32 -18 288 288">
+        <path class="svg-line" d="M147.8 103l-51.5 56.2-28.3-28"/>
+        <use x="-32" y="-18" class="svg-sub" xlink:href="#file"/>
     </symbol>
     <symbol id="file-check-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#file-check"/>
     </symbol>
-    <symbol id="file-minus" viewBox="0 0 288 288">
-        <path transform="translate(32 24)" d="M148 132H68"/>
-        <use class="svg-sub" xlink:href="#file"/>
+    <symbol id="file-minus" viewBox="-32 -24 288 288">
+        <path d="M148 132H68"/>
+        <use x="-32" y="-24" class="svg-sub" xlink:href="#file"/>
     </symbol>
     <symbol id="file-minus-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#file-minus"/>
     </symbol>
-    <symbol id="file-plus" viewBox="0 0 288 288">
-        <path transform="translate(32 18)" d="M148 132H68M108 92v80"/>
-        <use class="svg-sub" xlink:href="#file"/>
+    <symbol id="file-plus" viewBox="-32 -22 288 288">
+        <path d="M148 132H68M108 92v80"/>
+        <use x="-32" y="-22" class="svg-sub" xlink:href="#file"/>
     </symbol>
     <symbol id="file-plus-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#file-plus"/>
     </symbol>
-    <symbol id="file-remove" viewBox="0 0 288 288">
-        <path transform="translate(32 18)" d="M136.3 103.2l-56.6 56.6M79.7 103.2l56.6 56.6"/>
-        <use class="svg-sub" xlink:href="#file"/>
+    <symbol id="file-remove" viewBox="-32 -22 288 288">
+        <path d="M136.3 103.2l-56.6 56.6M79.7 103.2l56.6 56.6"/>
+        <use x="-32" y="-22" class="svg-sub" xlink:href="#file"/>
     </symbol>
     <symbol id="file-remove-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#file-remove"/>
     </symbol>
-    <symbol id="file-search" viewBox="0 0 288 288">
-        <path class="svg-line" transform="translate(40 18)" d="M117.6 94.9a33 33 0 11-46.7 0 33 33 0 0146.7 0z M143.1 168.5l-25.3-25.7"/>
-        <use class="svg-sub" xlink:href="#file"/>
+    <symbol id="file-search" viewBox="-40 -22 288 288">
+        <path class="svg-line" d="M117.6 94.9a33 33 0 11-46.7 0 33 33 0 0146.7 0z M143.1 168.5l-25.3-25.7"/>
+        <use x="-40" y="-22" class="svg-sub" xlink:href="#file"/>
     </symbol>
     <symbol id="file-search-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#file-search"/>
     </symbol>
-    <symbol id="file-download" viewBox="0 0 288 288">
-        <path class="svg-line" transform="translate(32 18)" d="M148 138l-39.9 40L68 138 M108 178V86"/>
-        <use class="svg-sub" xlink:href="#file"/>
+    <symbol id="file-download" viewBox="-32 -18 288 288">
+        <path class="svg-line" d="M148 138l-39.9 40L68 138 M108 178V86"/>
+        <use x="-32" y="-18" class="svg-sub" xlink:href="#file"/>
     </symbol>
     <symbol id="file-download-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#file-download"/>
     </symbol>
-    <symbol id="file-upload" viewBox="0 0 288 288">
-        <path class="svg-line" transform="translate(32 18)" d="M148 126l-39.9-40L68 126.1 M108 86v92"/>
-        <use class="svg-sub" xlink:href="#file"/>
+    <symbol id="file-upload" viewBox="-32 -18 288 288">
+        <path class="svg-line" d="M148 126l-39.9-40L68 126.1 M108 86v92"/>
+        <use x="-32" y="-18" class="svg-sub" xlink:href="#file"/>
     </symbol>
     <symbol id="file-upload-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#file-upload"/>
     </symbol>
-    <symbol id="file-write" viewBox="0 0 288 288">
-        <path transform="translate(36 18)" d="M118.1 84.7l-9.2-5.3a6.8 6.8 0 00-9.3 2.5L59 152.3l-5.6 34L80 164.5 120.6 94a6.8 6.8 0 00-2.5-9.3z M96.6 184.4s19 10.8 25.5-12.4c7.3 1.2 14.7 14.7 27.4 11.7 4.6-1.2 9.6-5 13.7-9.7"/>
-        <use class="svg-sub" xlink:href="#file"/>
+    <symbol id="file-write" viewBox="-32 -18 288 288">
+        <path d="M118.1 84.7l-9.2-5.3a6.8 6.8 0 00-9.3 2.5L59 152.3l-5.6 34L80 164.5 120.6 94a6.8 6.8 0 00-2.5-9.3z M96.6 184.4s19 10.8 25.5-12.4c7.3 1.2 14.7 14.7 27.4 11.7 4.6-1.2 9.6-5 13.7-9.7"/>
+        <use x="-32" y="-18" class="svg-sub" xlink:href="#file"/>
     </symbol>
     <symbol id="file-write-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#file-write"/>
