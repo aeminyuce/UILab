@@ -89,14 +89,14 @@
         <use class="svg-fill" xlink:href="#file-check"/>
     </symbol>
     <symbol id="file-minus" viewBox="-32 -24 288 288">
-        <path d="M148 132H68"/>
+        <path class="svg-crisp" d="M148 132H68"/>
         <use x="-32" y="-24" class="svg-sub" xlink:href="#file"/>
     </symbol>
     <symbol id="file-minus-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#file-minus"/>
     </symbol>
     <symbol id="file-plus" viewBox="-32 -22 288 288">
-        <path d="M148 132H68M108 92v80"/>
+        <path class="svg-crisp" d="M148 132H68M108 92v80"/>
         <use x="-32" y="-22" class="svg-sub" xlink:href="#file"/>
     </symbol>
     <symbol id="file-plus-fill" viewBox="0 0 288 288">

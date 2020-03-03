@@ -14,7 +14,7 @@
     <symbol id="backward-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#backward"/>
     </symbol>
-    <symbol id="play" viewBox="78 52 288 288">
+    <symbol id="play" viewBox="80 52 288 288">
         <path d="M120.5 76.5l207.9 119.6L120 316.3z"/>
     </symbol>
     <symbol id="play-fill" viewBox="0 0 288 288">
@@ -26,7 +26,7 @@
     <symbol id="forward-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#forward"/>
     </symbol>
-    <symbol id="pause" viewBox="-50 -12 288 288">
+    <symbol id="pause" class="svg-crisp" viewBox="-52 -12 288 288">
         <path d="M12 12h56v240H12z"/>
         <path class="svg-sub" d="M116 12h56v240h-56z"/>
     </symbol>
@@ -34,7 +34,7 @@
         <use class="svg-fill" xlink:href="#pause"/>
     </symbol>
     <symbol id="stop" viewBox="-12 -12 288 288">
-        <path d="M12 12h240v240H12z"/>
+        <path class="svg-crisp" d="M12 12h240v240H12z"/>
     </symbol>
     <symbol id="stop-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#stop"/>
@@ -45,7 +45,7 @@
     </symbol>
     <symbol id="power" viewBox="44 44 288 288">
         <path d="M271.5 101.8a120 120 0 11-169.7 0"/>
-        <path class="svg-sub" d="M186.7 182.7v-116"/>
+        <path class="svg-sub svg-crisp" d="M186.7 182.7v-116"/>
     </symbol>
     <symbol id="camera" viewBox="-12 -34 288 288">
         <path d="M132 72a44 44 0 11-44 44 44 44 0 0144-44z"/>
@@ -54,29 +54,29 @@
     <symbol id="camera-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#camera"/>
     </symbol>
-    <symbol id="film" viewBox="-12 -20 288 288">
+    <symbol id="film" class="" viewBox="-12 -20 288 288">
         <path d="M60 12h144v224H60z"/>
         <path class="svg-sub svg-line" d="M12 180h48v56H12zM12 124h48v56H12zM12 68h48v56H12zM12 12h48v56H12zM204 180h48v56h-48zM204 124h48v56h-48zM204 68h48v56h-48zM204 12h48v56h-48z"/>
     </symbol>
     <symbol id="film-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#film"/>
     </symbol>
-    <symbol id="video" viewBox="-12 -44 288 288">
+    <symbol id="video" viewBox="-12 -42 288 288">
         <path class="svg-sub" d="M180 80l72-28v96l-72-28z"/>
         <path d="M36 12h120a24 24 0 0124 24v128a24 24 0 01-24 24H36a24 24 0 01-24-24V36a24 24 0 0124-24z"/>
     </symbol>
     <symbol id="video-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#video"/>
     </symbol>
-    <symbol id="browser" viewBox="-12 -30 288 288">
+    <symbol id="browser" viewBox="-12 -28 288 288">
         <path class="svg-line" d="M12 30v30h240V30a18 18 0 00-18-18H30a18 18 0 00-18 18z"/>
         <path class="svg-sub" d="M12 202V60h240v142a18 18 0 01-18 18H30a18 18 0 01-18-18z M60 12v48"/>
     </symbol>
     <symbol id="browser-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#browser"/>
     </symbol>
-    <symbol id="laptop" viewBox="-12 -54 288 288">
-        <path class="svg-sub" d="M12 172h240"/>
+    <symbol id="laptop" viewBox="-12 -52 288 288">
+        <path class="svg-sub svg-crisp" d="M12 172h240"/>
         <path d="M36 164V30a18 18 0 0118-18h156a18 18 0 0118 18v134z"/>
     </symbol>
     <symbol id="laptop-fill" viewBox="0 0 288 288">
@@ -98,7 +98,7 @@
     </symbol>
     <symbol id="mobile-v" viewBox="-60 -12 288 288">
         <path class="svg-sub" d="M30 12h108a18 18 0 0118 18v204a18 18 0 01-18 18H30a18 18 0 01-18-18V30a18 18 0 0118-18z"/>
-        <path d="M72 212h24"/>
+        <path class="svg-crisp" d="M72 212h24"/>
     </symbol>
     <symbol id="mobile-v-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#mobile-v"/>
@@ -111,7 +111,7 @@
     </symbol>
     <symbol id="tablet-v" viewBox="-36 -12 288 288">
         <path class="svg-sub" d="M30 12h156a18 18 0 0118 18v204a18 18 0 01-18 18H30a18 18 0 01-18-18V30a18 18 0 0118-18z"/>
-        <path d="M96 212h24"/>
+        <path class="svg-crisp" d="M96 212h24"/>
     </symbol>
     <symbol id="tablet-v-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#tablet-v"/>
@@ -158,20 +158,20 @@
     <symbol id="volume-off-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#volume-off"/>
     </symbol>
-    <symbol id="soundwave" viewBox="-12 -12 288 288">
+    <symbol id="soundwave" class="svg-crisp" viewBox="-12 -12 288 288">
         <path d="M212 40v184 M132 12v240 M52 40v184"/>
         <path class="svg-sub" d="M252 112v40 M172 72v120 M92 72v120 M12 112v40"/>
     </symbol>
-    <symbol id="speaker" viewBox="-56 -12 288 288">
+    <symbol id="speaker" viewBox="-58 -12 288 288">
         <path d="M92 140a32 32 0 11-32 32 32 32 0 0132-32zM92.5 60a16 16 0 11-16 16 16 16 0 0116-16z"/>
-        <path class="svg-sub" d="M12 12h160v240H12z"/>
+        <path class="svg-sub svg-crisp" d="M12 12h160v240H12z"/>
     </symbol>
     <symbol id="speaker-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#speaker"/>
     </symbol>
-    <symbol id="usb-drive" viewBox="-60 -12 288 288">
+    <symbol id="usb-drive" viewBox="-60 -10 288 288">
         <path d="M12 68h144v116a36 36 0 01-36 36H48a36 36 0 01-36-36z"/>
-        <g class="svg-sub">
+        <g class="svg-sub svg-crisp">
             <path class="svg-line" d="M84 12v56 M36 12h96v56H36z"/>
             <path d="M84 252v-28"/>
         </g>
@@ -193,7 +193,7 @@
     <symbol id="signal-wifi-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#signal-wifi"/>
     </symbol>
-    <symbol id="aperture" viewBox="-12 -6 288 288">
+    <symbol id="aperture" viewBox="-12 -8 288 288">
         <path d="M33 70.9h137.4M94 201.9h137.4M139 16.4l69.4 120.2M55.6 136.8l68.9 119.3M239.5 82.9L171 201.6M92.8 71.2L24.8 189"/>
         <path class="svg-sub" d="M132 255.9c-68 0-120-52-120-120s52-120 120-120 120 52 120 120-52 120-120 120zm-38.5-185L55 136.4l38.5 65.5h77l38.5-65.5-38.5-65.5z"/>
     </symbol>

@@ -25,18 +25,18 @@
         <use class="svg-fill" xlink:href="#tags"/>
     </symbol>
     <symbol id="ticket" viewBox="-12 -54 288 288">
-        <path d="M84 147v25M84 80v25M84 15v25"/>
+        <path class="svg-crisp" d="M84 147v25M84 80v25M84 15v25"/>
         <path class="svg-sub" d="M232 172H32a19.9 19.9 0 01-14.1-5.9A19.9 19.9 0 0112 152v-28c8 0 32-6 32-32S20 60 12 60V32a19.9 19.9 0 015.9-14.1A19.9 19.9 0 0132 12h200a19.9 19.9 0 0114.1 5.9A19.9 19.9 0 01252 32v28c-8 0-32 6-32 32s24 32 32 32v28a19.9 19.9 0 01-5.9 14.1A19.9 19.9 0 01232 172z"/>
     </symbol>
     <symbol id="ticket-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#ticket"/>
     </symbol>
-    <symbol id="barcode" viewBox="-12 -12 288 288">
+    <symbol id="barcode" class="svg-crisp" viewBox="-12 -12 288 288">
         <path d="M184 76v112M148 76v112M120 76v112M81 76v112"/>
         <path class="svg-sub svg-line" d="M180 252h72v-72M180 12h72v72M84 252H12v-72M84 12H12v72"/>
     </symbol>
-    <symbol id="credit-card" viewBox="-12 -42 288 288">
-        <path d="M12 44h240v31.4H12z M56 116h40"/>
+    <symbol id="credit-card" viewBox="-12 -40 288 288">
+        <path class="svg-crisp" d="M12 44h240v31.4H12z M56 116h40"/>
         <path class="svg-sub" d="M32 12h200c11 0 20 10.3 20 23v138.2c0 12.7-9 23-20 23H32c-11 0-20-10.3-20-23V35c0-12.7 9-23 20-23z"/>
     </symbol>
     <symbol id="credit-card-fill" viewBox="0 0 288 288">
@@ -64,7 +64,7 @@
         <use class="svg-fill" xlink:href="#shopping-cart"/>
     </symbol>
     <symbol id="shopping-basket" viewBox="-12 -24 288 288">
-        <path d="M184 132v40M132 132v40M80 132v40"/>
+        <path class="svg-crisp" d="M184 132v40M132 132v40M80 132v40"/>
         <g class="svg-sub">
             <path d="M12 84h240l-10 100c-3 19.9-16.1 36-36 36H58c-19.9 0-33-16.1-36-36z"/>
             <path class="svg-line" d="M26.5 84h212l-10-36c-3-19.9-16.1-36-36-36h-120c-19.9 0-33 16.1-36 36z"/>
@@ -73,15 +73,16 @@
     <symbol id="shopping-basket-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#shopping-basket"/>
     </symbol>
-    <symbol id="store" viewBox="-12 -30 288 288">
-        <path class="svg-sub" d="M19.6 103v117h224V103"/>
+    <symbol id="store" viewBox="-10 -30 288 288">
+        <path class="svg-sub svg-crisp" d="M19.6 103v117h224V103"/>
         <path d="M31.6 12h200s24.3 66 19 80-14.2 20-29.2 20-29.8-20-29.8-20-13.7 20-28.7 20-31.3-20-31.3-20-15.4 20-30.4 20-29.6-20-29.6-20-14 20-29 20-24.5-6-30-20 19-80 19-80z"/>
     </symbol>
     <symbol id="store-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#store"/>
     </symbol>
     <symbol id="coin" viewBox="-12 -26 288 288">
-        <path d="M132 12c66.4 0 120.2 30.2 120.2 67.4s-53.8 67.3-120.1 67.3S12 116.6 12 79.4 65.8 12 132 12z M80 140.7v73M140 146.7v73M200 135.7v74"/>
+        <path class="svg-crisp" d="M80 140.7v73M140 146.7v73M200 135.7v74"/>
+        <path d="M132 12c66.4 0 120.2 30.2 120.2 67.4s-53.8 67.3-120.1 67.3S12 116.6 12 79.4 65.8 12 132 12z"/>
         <path class="svg-sub" d="M132 219.7c-94 0-120-44.9-120-44.9V81.4c.2 17.9 28 65 120 65s120-47.1 120.2-65v93.4s-26 44.9-120.1 44.9z"/>
     </symbol>
     <symbol id="coin-fill" viewBox="0 0 288 288">
@@ -92,7 +93,8 @@
             <path class="svg-line" d="M114 252.4c-79.9 0-102-38-102-38V151s23.8 37.2 102 37.2S216 151 216 151v63.3s-22.2 38.1-102 38.1z"/>
             <path d="M114 188.3c-79.9 0-102-38-102-38V70.9c.2 15.2 23.8 55.2 102 55.2s101.8-40 102-55.2v79.4s-22.2 38-102 38z"/>
         </g>
-        <path d="M114 12c56.3 0 102 25.6 102 57.2s-45.7 57.2-102 57.2S12 100.8 12 69.2 57.7 12 114 12z M69.7 121.3v62M120.7 126.3v62M171.7 117v62.8"/>
+        <path class="svg-crisp" d="M69.7 121.3v62M120.7 126.3v62M171.7 117v62.8"/>
+        <path d="M114 12c56.3 0 102 25.6 102 57.2s-45.7 57.2-102 57.2S12 100.8 12 69.2 57.7 12 114 12z"/>
     </symbol>
     <symbol id="coins-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#coins"/>
@@ -147,7 +149,7 @@
     </symbol>
     <symbol id="bank" viewBox="-12 -12 288 288">
         <path d="M44 211.9h176l32 40.1H12z M252 84L132 12 12 84z"/>
-        <path class="svg-sub" d="M216 84v128M160 84v128M104 84v128M48 84v128"/>
+        <path class="svg-sub svg-crisp" d="M216 84v128M160 84v128M104 84v128M48 84v128"/>
     </symbol>
     <symbol id="bank-fill" viewBox="0 0 288 288">
         <use class="svg-fill" xlink:href="#bank"/>

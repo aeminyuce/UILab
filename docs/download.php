@@ -344,7 +344,7 @@
                         <input name="css" class="generate-import" type="file">
                         <span class="btn circle padding-20-h block ease-btn">
                             <span class="inline-block">Import from CSS File</span>
-                            <svg class="icon icon-sm margin-5-l"><use xlink:href="#import"/></svg>
+                            <svg class="icon margin-5-l"><use xlink:href="#import"/></svg>
                         </span>
                     </div>
 
@@ -829,10 +829,10 @@
                                 <div class="border-t border-dual">
                                     <div class="inline-block padding-5-r">
                                         <button title="Clear form!" class="generate-clear btn btn-square btn-ghost left ease-btn">
-                                            <svg class="icon icon-sm"><use xlink:href="#trash"/></svg>
+                                            <svg class="icon"><use xlink:href="#trash"/></svg>
                                         </button>
                                         <button title="Minify code" class="generate-min btn btn-square btn-ghost ease-btn">
-                                            <svg class="icon icon-sm"><use xlink:href="#code"/></svg>
+                                            <svg class="icon"><use xlink:href="#code"/></svg>
                                         </button>
                                     </div>
                                     File size:
@@ -859,7 +859,7 @@
                         <input name="js" class="generate-import" type="file">
                         <span class="btn circle padding-20-h block ease-btn">
                             <span class="inline-block">Import from JS File</span>
-                            <svg class="icon icon-sm margin-5-l"><use xlink:href="#import"/></svg>
+                            <svg class="icon margin-5-l"><use xlink:href="#import"/></svg>
                         </span>
                     </div>
 
@@ -1242,10 +1242,10 @@
                                 <div class="border-t border-dual">
                                     <div class="inline-block padding-5-r">
                                         <button title="Clear form!" class="generate-clear btn btn-square btn-ghost left ease-btn">
-                                            <svg class="icon icon-sm"><use xlink:href="#trash"/></svg>
+                                            <svg class="icon"><use xlink:href="#trash"/></svg>
                                         </button>
                                         <button title="Minify code" class="generate-min btn btn-square btn-ghost ease-btn">
-                                            <svg class="icon icon-sm"><use xlink:href="#code"/></svg>
+                                            <svg class="icon"><use xlink:href="#code"/></svg>
                                         </button>
                                     </div>
                                     File size:
@@ -1373,10 +1373,10 @@
                                 <div class="border-t border-dual">
                                     <div class="inline-block padding-5-r">
                                         <button title="Clear form!" class="generate-clear btn btn-square btn-ghost left ease-btn">
-                                            <svg class="icon icon-sm"><use xlink:href="#trash"/></svg>
+                                            <svg class="icon"><use xlink:href="#trash"/></svg>
                                         </button>
                                         <button title="Minify code" class="generate-min btn btn-square btn-ghost ease-btn">
-                                            <svg class="icon icon-sm"><use xlink:href="#code"/></svg>
+                                            <svg class="icon"><use xlink:href="#code"/></svg>
                                         </button>
                                     </div>
                                     File size:

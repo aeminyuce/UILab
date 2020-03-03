@@ -123,22 +123,22 @@
                         <h4 class="align-c margin-10-b">Change Weight</h4>
                         <div class="btn-holder form-lg icon-modifiers margin-20-b theme-default2 form-lg ease-1st-btn">
                             <button data-tooltip="b" data-only="desktop" title="Black" data-weight="black" class="btn round">
-                                <svg class="icon icon-lg icon-black no-opacity"><use xlink:href="#remove"/></svg>
+                                <svg class="icon icon-black no-opacity"><use xlink:href="#remove"/></svg>
                             </button>
                             <button data-tooltip="b" data-only="desktop" title="Bold" data-weight="bold" class="btn round">
-                                <svg class="icon icon-lg icon-bold no-opacity"><use xlink:href="#remove"/></svg>
+                                <svg class="icon icon-bold no-opacity"><use xlink:href="#remove"/></svg>
                             </button>
                             <button data-tooltip="b" data-only="desktop" title="Semibold" data-weight="semibold" class="btn round">
-                                <svg class="icon icon-lg icon-semibold no-opacity"><use xlink:href="#remove"/></svg>
+                                <svg class="icon icon-semibold no-opacity"><use xlink:href="#remove"/></svg>
                             </button>
                             <button data-tooltip="b" data-only="desktop" title="Auto Weight" data-weight="" class="btn round ui-dark">
                                 Auto
                             </button>
                             <button data-tooltip="b" data-only="desktop" title="Light" data-weight="light" class="btn round">
-                                <svg class="icon icon-lg icon-light no-opacity"><use xlink:href="#remove"/></svg>
+                                <svg class="icon icon-light no-opacity"><use xlink:href="#remove"/></svg>
                             </button>
                             <button data-tooltip="b" data-only="desktop" title="Thin" data-weight="thin" class="btn round">
-                                <svg class="icon icon-lg icon-thin no-opacity"><use xlink:href="#remove"/></svg>
+                                <svg class="icon icon-thin no-opacity"><use xlink:href="#remove"/></svg>
                             </button>
                         </div>
                     </div>
@@ -442,8 +442,6 @@
                     <li><svg class="icon icon-xxl"><use xlink:href="#grid-row-fill"/></svg><span>grid-row-fill</span></li>
                     <li><svg class="icon icon-xxl"><use xlink:href="#grid-column"/></svg><span>grid-column</span></li>
                     <li><svg class="icon icon-xxl"><use xlink:href="#grid-column-fill"/></svg><span>grid-column-fill</span></li>
-                    <li><svg class="icon icon-xxl"><use xlink:href="#grid-column-sm"/></svg><span>grid-column-sm</span></li>
-                    <li><svg class="icon icon-xxl"><use xlink:href="#grid-column-sm-fill"/></svg><span>grid-column-sm-fill</span></li>
                     <li><svg class="icon icon-xxl"><use xlink:href="#grid-flow"/></svg><span>grid-flow</span></li>
                     <li><svg class="icon icon-xxl"><use xlink:href="#grid-flow-fill"/></svg><span>grid-flow-fill</span></li>
                     <li><svg class="icon icon-xxl"><use xlink:href="#grid-masonry"/></svg><span>grid-masonry</span></li>
@@ -774,8 +772,6 @@
                     <li><svg class="icon icon-xxl"><use xlink:href="#sun-fill"/></svg><span>sun-fill</span></li>
                     <li><svg class="icon icon-xxl"><use xlink:href="#sunrise"/></svg><span>sunrise</span></li>
                     <li><svg class="icon icon-xxl"><use xlink:href="#sunrise-fill"/></svg><span>sunrise-fill</span></li>
-                    <li><svg class="icon icon-xxl"><use xlink:href="#sunset"/></svg><span>sunset</span></li>
-                    <li><svg class="icon icon-xxl"><use xlink:href="#sunset-fill"/></svg><span>sunset-fill</span></li>
                     <li><svg class="icon icon-xxl"><use xlink:href="#sunset"/></svg><span>sunset</span></li>
                     <li><svg class="icon icon-xxl"><use xlink:href="#sunset-fill"/></svg><span>sunset-fill</span></li>
                     <li><svg class="icon icon-xxl"><use xlink:href="#cold"/></svg><span>cold</span></li>

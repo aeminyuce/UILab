@@ -16,23 +16,29 @@
 .list-group.round > ul > li:first-child > a { border-radius: 6px 6px 0 0; }
 .list-group.round > ul > li:last-child > a { border-radius: 0 0 6px 6px; }
 
-.list-group .list-icon { position: absolute; top: 50%; right: 10px; transform: translateY(-50%); opacity: .45; }
+.list-group .list-icon { width: 14px; height: 14px; stroke-width: 38px; position: absolute; top: 50%; right: 10px; transform: translateY(-50%); opacity: .45; }
 html:not(.mobile) .list-group > ul > li > a:hover .list-icon { opacity: .75; }
 
 .list-group .has-icon-xxl > li,.list-group .has-icon-xxl > li > a { padding-right: 68px; }
 .list-group .has-icon-xxl > li > a { margin-right: -68px; }
+.list-group .has-icon-xxl .list-icon { width: 50px; height: 50px; stroke-width: 12px; }
+
 .list-group .has-icon-xl > li,.list-group .has-icon-xl > li > a { padding-right: 52px; }
 .list-group .has-icon-xl > li > a { margin-right: -52px; }
+.list-group .has-icon-xl .list-icon { width: 34px; height: 34px; stroke-width: 18px; }
+
 .list-group .has-icon-lg > li,.list-group .has-icon-lg > li > a { padding-right: 44px; }
 .list-group .has-icon-lg > li > a { margin-right: -44px; }
+.list-group .has-icon-lg .list-icon { width: 26px; height: 26px; stroke-width: 24px; }
+
 .list-group .has-icon > li,.list-group .has-icon > li > a { padding-right: 38px; }
 .list-group .has-icon > li > a { margin-right: -38px; }
+
 .list-group .has-icon-sm > li,.list-group .has-icon-sm > li > a { padding-right: 34px; }
 .list-group .has-icon-sm > li > a { margin-right: -34px; }
+
 .list-group .has-icon-xs > li,.list-group .has-icon-xs > li > a { padding-right: 29px; }
 .list-group .has-icon-xs > li > a { margin-right: -29px; }
-.list-group .has-icon-xxs > li,.list-group .has-icon-xxs > li > a { padding-right: 28px; }
-.list-group .has-icon-xxs > li > a { margin-right: -28px; }
 
 .list-group [class*="has-photo"] [class*="img-photo"] { position: absolute; top: 10px; left: 10px; }
 

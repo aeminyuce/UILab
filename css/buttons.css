@@ -4,12 +4,13 @@
 .ease-btn,.ease-1st-btn > *,.ease-2nd-btn > * > * { transition-property: color, background-color, border-width, border-color, opacity, transform, box-shadow; }
 .ease-btn .icon,.ease-1st-btn > * .icon,.ease-2nd-btn > * > * .icon { transition-property: color, transform, opacity; transition-duration: .15s; }
 
-.btn { text-align: center; vertical-align: middle; line-height: 22px; height: 32px; background-color: rgba(0,0,0,.08); padding-top: 6px; padding-bottom: 6px; display: inline-block; position: relative; cursor: pointer; }
+.btn { text-align: center; vertical-align: middle; line-height: 18px; height: 32px; background-color: rgba(0,0,0,.08); padding-top: 7px; padding-bottom: 7px; display: inline-block; position: relative; cursor: pointer; }
 input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .btn.border { padding-top: 5px; padding-bottom: 5px; }
 .btn.border-dual { padding-top: 4px; padding-bottom: 4px; }
 .btn:not(.border):not([class*="border-"]) { border-width: 0; }
 .btn:not(.btn-multi) { white-space: nowrap; }
+.btn .icon { vertical-align: bottom; width: 18px; height: 18px; stroke-width: 28px; }
 
 .btn-square { min-width: 0 !important; width: 32px; max-width: none !important; }
 .btn-square:not([class*="align-"]) { text-align: center !important; }
@@ -22,31 +23,16 @@ input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .btn:not(.circle) { padding-right: 10px; padding-left: 10px; }
 .btn:not(.btn-xs):not(.btn-xxs).circle { padding-right: 16px; padding-left: 16px;}
 
-.btn .icon { vertical-align: -.22em; }
-.btn .icon-sm { vertical-align: -.2em; }
-.btn .icon-xs { vertical-align: -.1em; }
-
-.btn .right.icon { margin-top: 3px; margin-bottom: 3px; }
-.btn .right.icon-lg { margin-top: 0; margin-bottom: 0; }
-.btn .right.icon-sm { margin-top: 3px; margin-bottom: 3px; }
-.btn .right.icon-xs { margin-top: 5px; margin-bottom: 5px; }
-.btn .right.icon-xxs { margin-top: 6px; margin-bottom: 6px; }
-
-.btn-sm .right.icon { margin-top: 1px; margin-bottom: 1px; }
-.btn-sm .right.icon-sm,.btn-sm .right.icon-xs { margin-top: 2px; margin-bottom: 2px; }
-
-.btn-xs .right.icon-xxs { margin-top: 2px; margin-bottom: 2px; }
-.btn-xxs .right.icon-xxs { margin-top: 2px; margin-bottom: 2px; }
-
-.btn .icon:not(.no-opacity) { opacity: .45; }
+.btn .icon:not(.no-opacity) { opacity: .65; }
 .btn.ui-dark .icon,.btn.ui-x-dark .icon { opacity: 1; }
 html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hover .icon { opacity: 1 !important; }
 
 .btn-lg,.form-lg .btn { font-size: 16px; line-height: 22px; height: 42px; padding-top: 10px; padding-bottom: 10px; }
 .btn-lg.btn-square,.form-lg .btn.btn-square { width: 42px; }
 .btn-lg.border,.form-lg .btn.border { padding-top: 9px; padding-bottom: 9px; }
-.btn-lg.border-dual,.form-lg .btn.border-dual { padding-top: 7px; padding-bottom: 7px; }
+.btn-lg.border-dual,.form-lg .btn.border-dual { padding-top: 8px; padding-bottom: 8px; }
 .btn-lg.round,.form-lg .btn.round { border-radius: 8px; }
+.btn-lg .icon,.form-lg .btn .icon { width: 22px; height: 22px; stroke-width: 28px; }
 
 .btn-sm { font-size: 12px; line-height: 16px; height: 26px; padding-top: 5px; padding-bottom: 5px; }
 .btn-sm.btn-square { width: 26px; }
@@ -54,22 +40,25 @@ html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hove
 .btn-sm.border-dual { padding-top: 3px; padding-bottom: 3px; }
 .btn-sm.round { border-radius: 4px; }
 .btn-sm:not(.circle) { padding-right: 8px; padding-left: 8px; }
+.btn-sm .icon { width: 16px; height: 16px; stroke-width: 34px; }
 
-.btn-xs { font-size: 11px; line-height: 13px; height: 22px; padding-top: 4px; padding-bottom: 4px; }
+.btn-xs { font-size: 11px; line-height: 14px; height: 22px; padding-top: 4px; padding-bottom: 4px; }
 .btn-xs.btn-square { width: 22px; }
 .btn-xs.border { padding-top: 3px; padding-bottom: 3px; }
 .btn-xs.border-dual { padding-top: 2px; padding-bottom: 2px; }
 .btn-xs.round { border-radius: 3px; }
 .btn-xs:not(.circle) { padding-right: 5px; padding-left: 5px; }
 .btn-xs.circle { padding-right: 10px; padding-left: 10px; }
+.btn-xs .icon { width: 14px; height: 14px; stroke-width: 38px; }
 
-.btn-xxs { font-size: 10px; line-height: 13px; height: 18px; padding-top: 2px; padding-bottom: 2px; }
+.btn-xxs { font-size: 10px; line-height: 12px; height: 18px; padding-top: 3px; padding-bottom: 3px; }
 .btn-xxs.btn-square { width: 18px; }
-.btn-xxs.border { padding-top: 1px; padding-bottom: 1px; }
-.btn-xxs.border-dual { padding-top: 0; padding-bottom: 0; }
+.btn-xxs.border { padding-top: 2px; padding-bottom: 2px; }
+.btn-xxs.border-dual { padding-top: 1px; padding-bottom: 1px; }
 .btn-xxs.round { border-radius: 2px; }
 .btn-xxs:not(.circle) { padding-right: 2px; padding-left: 2px; }
 .btn-xxs.circle { padding-right: 6px; padding-left: 6px; }
+.btn-xxs .icon { width: 12px; height: 12px; stroke-width: 44px }
 
 .btn-passive { opacity: .6; cursor: default; }
 .btn-active { font-weight: bold; }
@@ -96,12 +85,11 @@ html:not(.mobile) .btn.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-ligh
 
 .pagination:not(:last-child) { margin-bottom: 20px; }
 
-.pagination .btn { text-align: center !important; min-width: 32px; }
+.pagination .btn { min-width: 32px; }
 .pagination .btn-lg,.pagination.form-lg .btn { min-width: 42px; }
 .pagination .btn-sm { min-width: 26px; }
 .pagination .btn-xs { min-width: 22px; }
 .pagination .btn-xxs { min-width: 14px; }
-.pagination .btn .icon { opacity: 1 !important; }
 
 .btn-list > .btn { width: 100%; display: block; }
 .btn-list > .btn:not(:first-child):not(:last-child) { border-radius: 0; }
