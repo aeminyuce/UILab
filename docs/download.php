@@ -20,7 +20,7 @@
 
         function pullFiles(that) {
 
-            var holder, list, result, pullResults, count, countFnc;
+            var holder, list, result, pullResults, count, type, countFnc;
 
             holder = events.closest(that, '.generate-holder')[0];
             list = selector('input:checked:not(.generate-toggle)', holder);
@@ -28,6 +28,8 @@
 
             pullResults = '';
             count = 0;
+
+            type = that.getAttribute('data-type');
 
             countFnc = function () {
 
@@ -48,6 +50,10 @@
                                 countFnc();
 
                             } else {
+
+                                if (type === 'icons') { // icons
+                                    pullResults = '<svg style="display: none;">\n' + pullResults + '</svg>'
+                                }
 
                                 result.value = pullResults;
                                 result.scrollTop = 0; // IE, EDGE: scrollTo() not supported for textarea element
@@ -1386,7 +1392,7 @@
 
                             <div class="align-r align-c ease-1st-btn">
                                 <span class="sp15 visible-xs"></span>
-                                <button class="generate-btn btn btn-xs-fluid round ui-dark">Generate Icons</button>
+                                <button class="generate-btn btn btn-xs-fluid round ui-dark" data-type="icons">Generate Icons</button>
                                 <button title="Copy to clipboard!" class="generate-copy btn btn-xs-fluid round">
                                     <svg class="icon"><use xlink:href="#files"/></svg> Copy to clipboard
                                 </button>

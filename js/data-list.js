@@ -7,12 +7,12 @@ var dataList = {
 
     valueSplit : '|',
 
-    sortIcon : 'icon icon-xs icon-sort',
-    ascIcon : 'icon icon-xs icon-sort-up',
-    descIcon : 'icon icon-xs icon-sort-down',
+    sortIcon : 'sort-fill',
+    ascIcon : 'sort-up-fill',
+    descIcon : 'sort-down-fill',
 
-    prevIcon : 'icon icon-xs icon-angle-left',
-    nextIcon : 'icon icon-xs icon-angle-right',
+    prevIcon : 'angle-left',
+    nextIcon : 'angle-right',
 
     customLetters : { "İ": "i", "I": "ı", "Ş": "ş", "Ğ": "ğ", "Ü": "ü", "Ö": "ö", "Ç": "ç" }
 
@@ -115,7 +115,9 @@ var dataList = {
         if (pagingCount[id] === 1) { classes += ' btn-passive'; }
 
         classes = classes.replace(re, ' ').replace(rex, '');
-        html = '<button class="' + classes + '"><i class="' + dataList.prevIcon + '"></i></button>\n';
+        html = '<button class="' + classes + '">' +
+                '<svg class="icon"><use xlink:href="#' + dataList.prevIcon + '"/></svg>' +
+            '</button>\n';
 
         for (i = min; i <= max; i++) {
 
@@ -136,7 +138,9 @@ var dataList = {
         if (pagingCount[id] === total) { classes += ' btn-passive'; }
 
         classes = classes.replace(re, ' ').replace(rex, '');
-        html += '<button class="' + classes + '"><i class="' + dataList.nextIcon + '"></i></button>\n';
+        html += '<button class="' + classes + '">' +
+                '<svg class="icon"><use xlink:href="#' + dataList.nextIcon + '"/></svg>' +
+            '</button>\n';
 
         paging[0].innerHTML = '';
         paging[0].insertAdjacentHTML('beforeend', html);
@@ -310,7 +314,7 @@ var dataList = {
             if (!events.hasClass(this, 'active')) {
 
                 events.removeClass(this, 'asc desc');
-                selector('.icon', this)[0].setAttribute('class', dataList.sortIcon);
+                selector('.icon use', this)[0].setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#' + dataList.sortIcon);
 
             }
         });
@@ -322,14 +326,14 @@ var dataList = {
             events.removeClass(this, 'asc');
             events.addClass(this, 'desc');
 
-            selector('.icon', this)[0].setAttribute('class', dataList.descIcon);
+            selector('.icon use', this)[0].setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#' + dataList.descIcon);
 
         } else {
 
             events.removeClass(this, 'desc');
             events.addClass(this, 'asc');
 
-            selector('.icon', this)[0].setAttribute('class', dataList.ascIcon);
+            selector('.icon use', this)[0].setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#' + dataList.ascIcon);
 
         }
 

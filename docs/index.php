@@ -134,7 +134,7 @@
         <div class="row theme-default2 ui-border border-t border-dual">
             <div class="col-12">
                 <a href="index.php" class="btn btn-lg btn-square circle ease-btn margin-10-r">
-                    <svg class="icon no-opacity"><use xlink:href="#long-arrow-left"/></svg>
+                    <svg class="icon icon-hybrid no-opacity"><use xlink:href="#long-arrow-left"/></svg>
                 </a>
                 <h1 class="x-large inline-block">UI Lab, <span class="capitalize"><?php echo str_replace("-", " ", $page); ?></span></h1>
             </div>
@@ -388,16 +388,20 @@
     }
 ?>
 
-<?php include ('../icons/general.php'); ?>
-<?php include ('../icons/touch.php'); ?>
-<?php include ('../icons/media.php'); ?>
-<?php include ('../icons/kitchen.php'); ?>
-<?php include ('../icons/real-estate.php'); ?>
-<?php include ('../icons/weather.php'); ?>
-<?php include ('../icons/commerce.php'); ?>
-<?php include ('../icons/files.php'); ?>
-<?php include ('../icons/social.php'); ?>
-<?php include ('../icons/brands.php'); ?>
-
+<!-- icons -->
+<svg style="display: none;">
+<?php
+    include ('../icons/general.php');
+    include ('../icons/touch.php');
+    include ('../icons/media.php');
+    include ('../icons/kitchen.php');
+    include ('../icons/real-estate.php');
+    include ('../icons/weather.php');
+    include ('../icons/commerce.php');
+    include ('../icons/files.php');
+    include ('../icons/social.php');
+    include ('../icons/brands.php');
+?>
+</svg>
 </body>
 </html>

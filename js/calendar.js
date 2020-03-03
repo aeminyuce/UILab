@@ -13,9 +13,9 @@ var calendar = {
 
     fillWeekends: true, // true: fills dark color to weekends' background
 
-    prevIcon: 'icon-arrow-left', // header's previous button icon
-    nextIcon: 'icon-arrow-right', // header's next button icon
-    backIcon: 'icon-angle-left', // detail's back button icon
+    prevIcon: 'arrow-left', // header's previous button
+    nextIcon: 'arrow-right', // header's next button
+    backIcon: 'angle-left', // detail's back button
 
     todayTheme: '' // use themes
 
@@ -165,14 +165,14 @@ var calendar = {
             html += '>' +
                 '<caption>' +
                     '<button type="button" tabindex="-1" class="calendar-prev">' +
-                        '<i class="icon ' + calendar.prevIcon + '"></i>' +
+                        '<svg class="icon"><use xlink:href="#' + calendar.prevIcon + '"/></svg>' +
                     '</button>' +
                     '<span class="calendar-title ease-bg">' +
                         '<button type="button" tabindex="-1" class="calendar-month">' + calendar.months[date.getMonth()] + '</button>' +
                         '<button type="button" tabindex="-1" class="calendar-year">' + date.getFullYear() + '</button>' +
                     '</span>' +
                     '<button type="button" tabindex="-1" class="calendar-next">' +
-                        '<i class="icon ' + calendar.nextIcon + '"></i>' +
+                        '<svg class="icon"><use xlink:href="#' + calendar.nextIcon + '"/></svg>' +
                     '</button>' +
                 '</caption>' +
                 '<thead>';
@@ -346,7 +346,7 @@ var calendar = {
 
                                 details = '<div class="details">' +
                                             '<button class="toggle-details" type="button" tabindex="-1">' +
-                                                '<i class="icon ' + calendar.backIcon + '"></i>' +
+                                                '<svg class="icon"><use xlink:href="#' + calendar.backIcon + '"/></svg>' +
                                             '</button>' +
                                         '<ul>' + details + '</ul>' +
                                     '</div>';
@@ -357,7 +357,7 @@ var calendar = {
 
                                 details = '<div class="details no-details">' +
                                         '<button class="toggle-details" type="button" tabindex="-1">' +
-                                            '<i class="icon ' + calendar.backIcon + '"></i>' +
+                                            '<svg class="icon"><use xlink:href="#' + calendar.backIcon + '"/></svg>' +
                                         '</button>' +
                                         '<ul>' +
                                             '<li>' +

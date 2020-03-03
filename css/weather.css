@@ -10,8 +10,7 @@
 .weather .details { width: 100%; position: relative; z-index: 2; }
 
 .weather .now,.weather .days { color: #000; -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
-.weather.night .now,.weather.night .now a,.weather.night .now .icons,
-.weather.night .days,.weather.night .days a,.weather.night .days .icons { color: #fff; }
+.weather.night .now,.weather.night .now a,.weather.night .now .icons,.weather.night .days,.weather.night .days a,.weather.night .days .icons { color: #fff; }
 
 .weather .w-degree:after,.weather .deg:after,.weather .days li > span:after { content: ""; display: block; border: solid 2px currentColor; border-radius: 20px; position: absolute; top: 0; }
 .weather .w-degree:after { width: 16px; height: 16px; right: -20px; }

@@ -44,7 +44,7 @@
 .select select { padding-right: 22px; position: relative; z-index: 2; }
 .ie .select select:focus::-ms-value { color: inherit; background-color: transparent; }
 .ie .select select::-ms-expand { display: none; }
-.select > .icon { font-size: 12px; line-height: 1.125; width: 12px; height: 12px; position: absolute; top: 50%; right: 5px; cursor: default; transform: translateY(-50%); opacity: .45; }
+.select > .icon { width: 12px; height: 12px; position: absolute; top: 50%; right: 5px; cursor: default; transform: translateY(-50%); opacity: .45; stroke-width: 44px; }
 
 .mobile .select-multi { padding: 5px; }
 .ie .select-multi { padding: 5px; }
@@ -175,7 +175,7 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i { transform: tran
 .form-light.form-focus > ::placeholder { color: rgba(255,255,255,.23); }
 .form-light.form-focus > ::-ms-input-placeholder { color: rgba(255,255,255,.23); }
 
-[class*="text-icon"] > .icon { font-size: 14px; line-height: 1.125; width: 14px; height: 14px; position: absolute; top: 50%; right: 5px; opacity: .45; cursor: default; transform: translateY(-50%); }
+[class*="text-icon"] > .icon { width: 14px; height: 14px; position: absolute; top: 50%; right: 5px; opacity: .45; cursor: default; transform: translateY(-50%); stroke-width: 38px; }
 .text-icon-l > .icon,.text-icon-both > .text-icon-l { right: inherit; left: 5px; }
 
 [class*="text-icon"] > button.icon { background-color: rgba(255,255,255,.0); border: 0; cursor: pointer; }
@@ -209,9 +209,8 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i { transform: tran
 .form-lg .text.border-dual.text input,.form-lg .select.border-dual.select select { line-height: 28px; height: 38px; }
 
 .form-lg .select select { padding-right: 38px; }
-.form-lg .select > .icon { font-size: 18px; width: 18px; height: 18px; right: 10px; }
 
-.form-lg [class*="text-icon"] > .icon { font-size: 18px; width: 18px; height: 18px; right: 10px; }
+.form-lg .select > .icon,.form-lg [class*="text-icon"] > .icon { width: 18px; height: 18px; right: 10px; stroke-width: 32px; }
 .form-lg .text-icon-l > .icon,.form-lg .text-icon-both > .text-icon-l { left: 10px; }
 
 .form-lg [class*="text-icon"]:not(.text-icon-l) > input,.form-lg .text-icon-both > input { padding-right: 38px !important; }

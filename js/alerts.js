@@ -12,7 +12,7 @@ var alerts = {
     messageClasses: 'round shadow-lg',
     messageTimer: '6000', // miliseconds, wait for atomatically close messages
 
-    closeIcon: 'icon icon-xs icon-remove'
+    closeIcon: 'remove'
 
 };
 
@@ -71,7 +71,7 @@ var alerts = {
 
         alerts.dialog = function (set) {
 
-            var styles, closeIcon, closeBtn, bg, success, buttons, i, keys, val, html, dialog, userCloseDialog;
+            var styles, closeBtn, bg, success, buttons, i, keys, val, html, dialog, userCloseDialog;
 
             if (set === undefined) { return; }
             if (set.msg === undefined) { return; }
@@ -116,11 +116,8 @@ var alerts = {
                 // create close icon
                 cancelCloseDialog = true;
 
-                closeIcon = alerts.closeIcon + ' ease-layout';
-                closeIcon = closeIcon.replace(re, ' ').replace(rex, '');
-
                 closeBtn = '<button class="close-alert ease-layout">' +
-                        '<i class="icon ' + closeIcon + '"></i>' +
+                        '<svg class="icon icon-xxs"><use xlink:href="#' + alerts.closeIcon + '"/></svg>' +
                     '</button>';
             }
 

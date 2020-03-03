@@ -29,7 +29,7 @@ html:not(.mobile) .list-group > ul > li > a:hover .list-icon { opacity: .75; }
 
 .list-group .has-icon-lg > li,.list-group .has-icon-lg > li > a { padding-right: 44px; }
 .list-group .has-icon-lg > li > a { margin-right: -44px; }
-.list-group .has-icon-lg .list-icon { width: 26px; height: 26px; stroke-width: 24px; }
+.list-group .has-icon-lg .list-icon { width: 26px; height: 26px; stroke-width: 22px; }
 
 .list-group .has-icon > li,.list-group .has-icon > li > a { padding-right: 38px; }
 .list-group .has-icon > li > a { margin-right: -38px; }

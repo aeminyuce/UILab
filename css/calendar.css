@@ -15,7 +15,7 @@
 .calendar.round caption,.calendar.round caption button { border-radius: 6px; }
 .calendar caption button { white-space: nowrap; text-overflow: ellipsis; line-height: 22px; max-width: 138px; height: 42px; background-color: transparent; overflow: hidden; border: 0; }
 .calendar caption > button { width: 42px; padding: 10px; display: block; }
-.calendar caption > button .icon { opacity: .45; }
+.calendar caption > button .icon { opacity: .65; }
 
 html:not(.mobile) .calendar caption > button:hover { background-color: rgba(255,255,255,.125); }
 html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) caption button:hover { background-color: rgba(0,0,0,.08); }
@@ -79,7 +79,7 @@ html:not(.mobile) .calendar tbody td.pickerday button:hover { opacity: .75; }
 
 .calendar .details > button { width: 32px; height: 100%; background-color: rgba(0,0,0,.065); border: 0; position: absolute; top: 0; left: 0; cursor: pointer; }
 html:not(.mobile) .calendar .details > button:hover { background-color: rgba(0,0,0,.15); }
-.calendar .details > button .icon { opacity: .45; }
+.calendar .details > button .icon { opacity: .65; }
 .calendar.round .details > button { border-radius: 6px; }
 
 .calendar .details ul,.calendar .details ul * { text-align: left !important; }

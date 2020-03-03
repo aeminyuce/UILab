@@ -1,5 +1,5 @@
 /* icons */
-.icon { vertical-align: middle; width: 20px; height: 20px; display: inline-block; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 24px; }
+.icon { vertical-align: middle; width: 20px; height: 20px; display: inline-block; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 26px; }
 button.icon { background-color: transparent; }
 
 .svg-fill { fill: currentColor !important; }
@@ -8,19 +8,19 @@ button.icon { background-color: transparent; }
 .svg-solid { fill: currentColor !important; stroke: none !important; }
 .svg-crisp { shape-rendering: crispEdges; stroke-linecap: square; stroke-linejoin: square; }
 
-.icon-xxs { width: 12px; height: 12px; stroke-width: 44px; }
-.icon-xs { width: 14px; height: 14px; stroke-width: 38px; }
-.icon-sm { width: 18px; height: 18px; stroke-width: 32px; }
-.icon-lg { width: 26px; height: 26px; stroke-width: 24px; }
-.icon-xl { width: 34px; height: 34px; stroke-width: 18px; }
-.icon-xxl { width: 50px; height: 50px; stroke-width: 12px; }
+.icon-xxs { width: 12px !important; height: 12px !important; stroke-width: 44px !important; }
+.icon-xs { width: 14px !important; height: 14px !important; stroke-width: 38px !important; }
+.icon-sm { width: 18px !important; height: 18px !important; stroke-width: 32px !important; }
+.icon-lg { width: 26px !important; height: 26px !important; stroke-width: 22px !important; }
+.icon-xl { width: 34px !important; height: 34px !important; stroke-width: 18px !important; }
+.icon-xxl { width: 50px !important; height: 50px !important; stroke-width: 12px !important; }
 
-.icon-black { stroke-width: 44px; }
-.icon-bold { stroke-width: 38px; }
-.icon-semibold { stroke-width: 32px; }
-.icon-default { stroke-width: 24px; }
-.icon-light { stroke-width: 18px; }
-.icon-thin { stroke-width: 12px; }
+.icon-black { stroke-width: 44px !important; }
+.icon-bold { stroke-width: 38px !important; }
+.icon-semibold { stroke-width: 32px !important; }
+.icon-default { stroke-width: 24px !important; }
+.icon-light { stroke-width: 18px !important; }
+.icon-thin { stroke-width: 12px !important; }
 
 .icon-mirror-v { transform: scaleY(-1); }
 .icon-mirror-h { transform: scaleX(-1); }
