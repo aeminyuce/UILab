@@ -1,6 +1,5 @@
 <!-- custom CSS -->
 <style>
-    body { background-color: #f9f9f9; }
     .col-75 { width: 75px; }
 </style>
 

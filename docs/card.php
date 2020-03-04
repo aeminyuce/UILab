@@ -205,8 +205,8 @@
                         <button class="close-card ease-btn">
                             <svg class="icon"><use href="#remove"/></svg>
                         </button>
-                        <h4 class="margin-10-b">
-                            <svg class="icon icon-lg"><use href="#comment"/></svg>
+                        <h4>
+                            <svg class="icon icon-lg font-green"><use href="#comment"/></svg>
                             Message Title
                         </h4>
                         <p class="large light">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
@@ -216,8 +216,8 @@
                         <button class="close-card ease-btn">
                             <svg class="icon"><use href="#remove"/></svg>
                         </button>
-                        <h4 class="margin-10-b">
-                            <svg class="icon icon-lg"><use href="#comment-lines-fill"/></svg>
+                        <h4>
+                            <svg class="icon icon-lg font-red"><use href="#comment-lines-fill"/></svg>
                             Message Title
                         </h4>
                         <p class="large light">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
@@ -227,8 +227,8 @@
                         <button class="close-card ease-btn">
                             <svg class="icon"><use href="#remove"/></svg>
                         </button>
-                        <h4 class="margin-10-b">
-                            <svg class="icon icon-lg"><use href="#comment"/></svg>
+                        <h4>
+                            <svg class="icon icon-lg font-yellow"><use href="#comment"/></svg>
                             Message Title
                         </h4>
                         <p class="large light">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
@@ -238,7 +238,7 @@
                         <button class="close-card ease-btn">
                             <svg class="icon"><use href="#remove"/></svg>
                         </button>
-                        <h4 class="margin-10-b">
+                        <h4>
                             <svg class="icon icon-lg"><use href="#comment-lines-fill"/></svg>
                             Message Title
                         </h4>
@@ -247,11 +247,11 @@
 
                 </div>
 
-                <h4>Card with Themes</h4>
+                <h4>Cards with Themes</h4>
                 <div class="card round theme-default2 ui-x-light ui-border">
                     <div class="card-side padding-30">
-                        <h4 class="margin-10-b">
-                            <svg class="icon icon-xl"><use href="#help-fill"/></svg>
+                        <h4>
+                            <svg class="icon icon-xl ui-text"><use href="#help-fill"/></svg>
                             Card Title
                         </h4>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
@@ -268,8 +268,8 @@
 
                 <div class="card round theme-default ui-x-light ui-border">
                     <div class="card-side padding-30">
-                        <h4 class="margin-10-b">
-                            <svg class="icon icon-xl"><use href="#help"/></svg>
+                        <h4>
+                            <svg class="icon icon-xl ui-text"><use href="#help"/></svg>
                             Card Title
                         </h4>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
@@ -285,8 +285,8 @@
                 </div>
 
                 <div class="card-warning padding-30 round theme-default ui-x-light ui-border">
-                    <h4 class="margin-10-b">
-                        <svg class="icon icon-xl"><use href="#help-fill"/></svg>
+                    <h4>
+                        <svg class="icon icon-xl ui-text"><use href="#help-fill"/></svg>
                         Message Title
                     </h4>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
@@ -298,8 +298,8 @@
                 </div>
 
                 <div class="card-warning padding-30 round theme-green ui-x-light ui-border">
-                    <h4 class="margin-10-b">
-                        <svg class="icon icon-xl"><use href="#help"/></svg>
+                    <h4>
+                        <svg class="icon icon-xl ui-text"><use href="#help"/></svg>
                         Message Title
                     </h4>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
@@ -311,8 +311,8 @@
                 </div>
 
                 <div class="card-warning padding-30 round theme-yellow ui-x-light ui-border">
-                    <h4 class="margin-10-b">
-                        <svg class="icon icon-xl"><use href="#help-fill"/></svg>
+                    <h4>
+                        <svg class="icon icon-xl ui-text"><use href="#help-fill"/></svg>
                         Message Title
                     </h4>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.

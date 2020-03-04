@@ -5,7 +5,7 @@
 .svg-line { fill: none !important; }
 .svg-solid { fill: currentColor !important; stroke: none !important; }
 
-.svg-sub { opacity: .4; }
+.svg-sub { opacity: .35; }
 
 .icon-xxs { width: 12px !important; height: 12px !important; stroke-width: 44px !important; }
 .icon-xs { width: 14px !important; height: 14px !important; stroke-width: 38px !important; }

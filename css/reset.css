@@ -3,7 +3,7 @@
 :not(ul):not(ol) { padding: 0; margin: 0; }
 
 body,input,button,textarea,select { font: 14px/1.42857143 "Roboto", "Helvetica Neue", Arial, sans-serif; }
-body { background-color: #fefefe; }
+body { background-color: #f9f9f9; }
 .ios { -webkit-text-size-adjust: 100%; }
 
 article,aside,details,figcaption,figure,footer,header,nav,section,summary,audio,canvas,video,svg { display: block; }

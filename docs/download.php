@@ -344,7 +344,7 @@
 
                 </div>
 
-                <div class="generate-holder tab-content form-lg icons-no-opacity padding-30 open open-ease">
+                <div class="generate-holder tab-content form-lg padding-30 open open-ease">
 
                     <div class="file margin-30-b no-border round circle no-border ease-form form-xs-inline">
                         <input name="css" class="generate-import" type="file">
@@ -850,7 +850,7 @@
                                 <span class="sp15 visible-xs"></span>
                                 <button class="generate-btn btn btn-xs-fluid round ui-dark">Generate CSS</button>
                                 <button title="Copy to clipboard!" class="generate-copy btn btn-xs-fluid round">
-                                    <svg class="icon"><use href="#files-fill"/></svg> Copy to clipboard
+                                    <svg class="icon ui-text margin-5-r no-opacity"><use href="#files-fill"/></svg>Copy to clipboard
                                 </button>
                             </div>
 
@@ -859,7 +859,7 @@
 
                 </div>
 
-                <div class="generate-holder tab-content form-lg icons-no-opacity padding-30">
+                <div class="generate-holder tab-content form-lg padding-30">
 
                     <div class="file margin-30-b no-border round circle no-border ease-form form-xs-inline">
                         <input name="js" class="generate-import" type="file">
@@ -1263,7 +1263,7 @@
                                 <span class="sp15 visible-xs"></span>
                                 <button class="generate-btn btn btn-xs-fluid round ui-dark">Generate JS</button>
                                 <button title="Copy to clipboard!" class="generate-copy btn btn-xs-fluid round">
-                                    <svg class="icon"><use href="#files-fill"/></svg> Copy to clipboard
+                                    <svg class="icon ui-text margin-5-r no-opacity"><use href="#files-fill"/></svg>Copy to clipboard
                                 </button>
                             </div>
 
@@ -1272,7 +1272,7 @@
 
                 </div>
 
-                <div class="generate-holder tab-content form-lg icons-no-opacity padding-30">
+                <div class="generate-holder tab-content form-lg padding-30">
 
                     <div class="generate-list row row-sm-gap-v">
                         <div class="col-12">
@@ -1394,7 +1394,7 @@
                                 <span class="sp15 visible-xs"></span>
                                 <button class="generate-btn btn btn-xs-fluid round ui-dark" data-type="icons">Generate Icons</button>
                                 <button title="Copy to clipboard!" class="generate-copy btn btn-xs-fluid round">
-                                    <svg class="icon"><use href="#files-fill"/></svg> Copy to clipboard
+                                    <svg class="icon ui-text margin-5-r no-opacity"><use href="#files-fill"/></svg>Copy to clipboard
                                 </button>
                             </div>
 
