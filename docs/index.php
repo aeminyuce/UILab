@@ -231,7 +231,7 @@
                             <p class="large xs-align-c">CSS &amp; JavaScript powered responsive design system.</p>
                             <div class="form-lg ease-1st-btn">
                                 <a href="?p=icons" class="btn btn-xs-fluid padding-30-h circle theme-default ui-dark">
-                                    <svg class="icon margin-5-r"><use xlink:href="#puzzle"/></svg> Icons
+                                    <svg class="icon margin-5-r"><use xlink:href="#draw-fill"/></svg> Icons
                                 </a>
                                 <a href="?p=download" class="btn btn-xs-fluid padding-30-h circle theme-default2 ui-dark">
                                     Download <svg class="icon margin-5-l"><use xlink:href="#long-arrow-right"/></svg>

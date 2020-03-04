@@ -27,7 +27,7 @@
     .select select option,.select select optgroup { color: #fff; background-color: #41454d;}
     .select-multi option:not(:last-child) { border-bottom-color: rgba(255,255,255,.045); }
     html:not(.mobile) .file:hover .btn { background-color: rgba(255,255,255,.15); }
-    [class*="text-icon"] > button.icon { color: #fff; }
+    [class*="text-icon"] > button { color: #fff; }
 
     .range::-webkit-slider-runnable-track { background-color: rgba(255,255,255,.08); }
     .range:hover::-webkit-slider-runnable-track { background-color: rgba(255,255,255,.15); }

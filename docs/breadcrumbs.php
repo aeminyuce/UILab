@@ -31,7 +31,7 @@
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="opacity ease-btn" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">
-                                    <svg class="icon icon-sm"><use xlink:href="#home"/></svg>
+                                    <svg class="icon icon-xs"><use xlink:href="#home"/></svg>
                                 </span>
                             </a>
                             <meta itemprop="position" content="1" />
@@ -55,7 +55,7 @@
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="opacity ui-text ease-btn" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">
-                                    <svg class="icon icon-sm"><use xlink:href="#home"/></svg>
+                                    <svg class="icon icon-xs"><use xlink:href="#home"/></svg>
                                 </span>
                             </a>
                             <meta itemprop="position" content="1" />
@@ -79,7 +79,7 @@
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="btn round ease-btn" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">
-                                    <svg class="icon icon-sm margin-5-r"><use xlink:href="#home"/></svg> Home
+                                    <svg class="icon margin-5-r"><use xlink:href="#home"/></svg> Home
                                 </span>
                             </a>
                             <meta itemprop="position" content="1" />
@@ -105,7 +105,7 @@
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="btn round ui-dark ease-btn" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">
-                                    <svg class="icon icon-sm margin-5-r"><use xlink:href="#home"/></svg> Home
+                                    <svg class="icon margin-5-r"><use xlink:href="#home"/></svg> Home
                                 </span>
                             </a>
                             <meta itemprop="position" content="1" />
@@ -131,7 +131,7 @@
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="btn round ease-btn" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">
-                                    <svg class="icon icon-sm margin-5-r"><use xlink:href="#home"/></svg> Home
+                                    <svg class="icon margin-5-r"><use xlink:href="#home"/></svg> Home
                                 </span>
                             </a>
                             <meta itemprop="position" content="1" />
@@ -139,7 +139,7 @@
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="btn round ease-btn" href="#" itemprop="item" title="Search Results">
                                     <span itemprop="name">
-                                        <svg class="icon icon-xs margin-5-r"><use xlink:href="#angle-left"/></svg> Search Results
+                                        <svg class="icon margin-5-r"><use xlink:href="#angle-left"/></svg> Search Results
                                     </span>
                                 <meta itemprop="position" content="2" />
                             </a>
@@ -157,7 +157,7 @@
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="btn round ui-dark ease-btn" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">
-                                    <svg class="icon icon-sm"><use xlink:href="#home"/></svg>
+                                    <svg class="icon"><use xlink:href="#home"/></svg>
                                 </span>
                             </a>
                             <meta itemprop="position" content="1" />
@@ -165,7 +165,7 @@
                         <li>
                             <span class="dropdown ease-dropdown">
                                 <button class="btn round ui-dark">
-                                <svg class="icon icon-sm"><use xlink:href="#ellipsis-h"/></svg>
+                                <svg class="icon"><use xlink:href="#ellipsis-h"/></svg>
                                 </button>
                                 <ul class="content round shadow-lg">
                                     <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
@@ -208,7 +208,7 @@
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="btn round ui-dark ease-btn" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">
-                                    <svg class="icon icon-sm"><use xlink:href="#home"/></svg>
+                                    <svg class="icon"><use xlink:href="#home"/></svg>
                                 </span>
                             </a>
                             <meta itemprop="position" content="1" />
@@ -216,7 +216,7 @@
                         <li>
                             <span class="dropdown ease-dropdown">
                                 <button class="btn round ui-dark">
-                                    <svg class="icon icon-sm"><use xlink:href="#ellipsis-h"/></svg>
+                                    <svg class="icon"><use xlink:href="#ellipsis-h"/></svg>
                                 </button>
                                 <ul class="content round shadow-lg">
                                     <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">

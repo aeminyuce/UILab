@@ -7,7 +7,6 @@ body { background-color: #fefefe; }
 .ios { -webkit-text-size-adjust: 100%; }
 
 article,aside,details,figcaption,figure,footer,header,nav,section,summary,audio,canvas,video,svg { display: block; }
-svg { fill: transparent; stroke: transparent; }
 
 :focus { outline-style: none; outline: 0; }
 a,a:active,a:hover { word-wrap: break-word; text-decoration: none; }
@@ -18,7 +17,7 @@ input::-moz-focus-inner,button::-moz-focus-inner { padding: 0; border: 0; }
 input:-webkit-autofill { -webkit-transition-delay: 9999s; -webkit-transition: color 0s ease-out, background-color 9999s ease-out; }
 textarea { vertical-align: top; width: 100%; overflow: auto; resize: none; }
 textarea:not([rows]) { height: 3em; }
-button { text-transform: none; overflow: visible; cursor: pointer; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+button { color: inherit; text-align: inherit; text-transform: none; background-color: transparent; overflow: visible; border: 0; cursor: pointer; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 
 ul,ol { margin-top: 0; margin-bottom: 0; }
 li { list-style-position: inside; display: list-item; }

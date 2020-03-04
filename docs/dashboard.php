@@ -137,7 +137,7 @@
 
                 <div class="ui-x-dark set-relative">
                     <img src="img/logo-udashboard.png" width="194" height="62" alt="">
-                    <button class="sidebar-hide clear-btn opacity-more padding-10-h ease-btn set-absolute set-c-y set-r" data-tooltip title="Toggle Sidebar">
+                    <button class="sidebar-hide opacity-more padding-10-h ease-btn set-absolute set-c-y set-r" data-tooltip title="Toggle Sidebar">
                         <i class="icon icon-bars"></i>
                     </button>
                 </div>

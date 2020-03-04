@@ -7,7 +7,6 @@
 .full-w { width: 100% !important; }
 .full-h { height: 100% !important; }
 .no-user-select { -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
-.clear-btn { color: inherit; text-align: inherit; background-color: transparent; border: 0; }
 .img-fluid { width: 100% !important; height: auto !important; }
 
 .block,.block-1st > *:not(.row),.block-2nd > * > *:not(.row) { width: 100%; display: block !important; }

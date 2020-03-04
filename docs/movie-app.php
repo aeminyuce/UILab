@@ -144,7 +144,7 @@
                             <div class="col-static">
                                 <div class="col-350">
                                     <div class="round set-relative">
-                                        <button class="clear-btn full-w set-absolute set-all opacity-more ease-layout" onclick="modal.open({source: 'https://www.imdb.com/videoembed/vi4235180569', size: '722x300', type: 'iframe'});">
+                                        <button class="full-w set-absolute set-all opacity-more ease-layout" onclick="modal.open({source: 'https://www.imdb.com/videoembed/vi4235180569', size: '722x300', type: 'iframe'});">
                                             <i class="icon icon-xxl icon-video xx-light set-absolute set-c"></i>
                                         </button>
                                         <img class="img-fluid round shadow-lg" src="img/video-poster.jpg" alt="">

@@ -1,9 +1,8 @@
 /* icons */
-.icon { vertical-align: middle; width: 20px; height: 20px; display: inline-block; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 26px; shape-rendering: geometricPrecision; }
-button.icon { background-color: transparent; }
+.icon { vertical-align: middle; width: 20px; height: 20px; display: inline-block; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 26px; }
 
 .svg-fill { fill: currentColor !important; }
-.svg-sub { opacity: .5; }
+.svg-sub { opacity: .35; }
 .svg-line { fill: none !important; }
 .svg-solid { fill: currentColor !important; stroke: none !important; }
 
