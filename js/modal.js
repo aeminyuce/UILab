@@ -304,6 +304,8 @@ var modal = {
                 }
 
                 // showing modal
+                events.addClass(document, 'modal-opened');
+
                 bg = selector('.modal-bg');
                 events.addClass(bg, 'open');
 
@@ -312,7 +314,6 @@ var modal = {
                     events.addClass(bg, 'open-ease');
                     setTimeout(function () {
 
-                        events.addClass(document, 'modal-opened');
                         events.addClass(win, 'show');
 
                         content.style.top = Math.floor((bg[0].offsetHeight - content.offsetHeight) / 2) + 'px';

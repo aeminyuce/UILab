@@ -131,6 +131,8 @@ var mobileMenu = {};
 
             }
 
+            events.addClass(document, 'mobile-menu-opened');
+
             events.addClass(panel, 'open');
             events.addClass(bg, 'open');
 
@@ -140,10 +142,7 @@ var mobileMenu = {};
                 events.addClass(bg, 'open-ease');
 
                 setTimeout(function () {
-
-                    events.addClass(document, 'mobile-menu-opened');
                     events.trigger(document, 'mobilemenu:open domChange'); // set custom event
-
                 }, 400);
 
             }, 10);
