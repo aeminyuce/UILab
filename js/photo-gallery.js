@@ -5,11 +5,11 @@
 
 var photoGallery = {
 
-    closeIcon: 'icon-remove',
-    prevIcon: 'icon-arrow-left',
-    nextIcon: 'icon-arrow-right',
-    loaderIcon: 'icon-loader-line icon-xxl',
-    errorIcon: 'icon-no icon-xxl'
+    closeIcon: 'remove',
+    prevIcon: 'arrow-left',
+    nextIcon: 'arrow-right',
+    loaderIcon: 'loader-line',
+    errorIcon: 'no'
 
 };
 
@@ -163,14 +163,20 @@ var photoGallery = {
             index = Array.prototype.slice.call(images).indexOf(that);
 
             html = '<div class="photo-preview ease-layout">' +
-                    '<div class="photo-preview-bg"></div>' +
-                    '<button class="btn btn-square btn-lg btn-ghost close-photo-preview ease-btn"><i class="icon ' + photoGallery.closeIcon + ' no-opacity"></i></button>' +
-                    '<button type="button" class="preview-prev ease-btn"><i class="icon ' + photoGallery.prevIcon + '"></i></button>' +
-                    '<button type="button" class="preview-next ease-btn"><i class="icon ' + photoGallery.nextIcon + '"></i></button>' +
-                    '<i class="preview-loader icon ' + photoGallery.loaderIcon + '"></i>' +
-                    '<span class="preview-info ease-layout"></span>' +
-                    '<img class="ease-layout">' +
-                '</div>';
+                '<div class="photo-preview-bg"></div>' +
+                '<button class="btn btn-square btn-lg btn-ghost close-photo-preview ease-btn">' +
+                    '<svg class="icon"><use xlink:href="#' + photoGallery.closeIcon + '"/></svg>' +
+                '</button>' +
+                '<button type="button" class="preview-prev ease-btn">' +
+                    '<svg class="icon"><use xlink:href="#' + photoGallery.prevIcon + '"/></svg>' +
+                '</button>' +
+                '<button type="button" class="preview-next ease-btn">' +
+                    '<svg class="icon"><use xlink:href="#' + photoGallery.nextIcon + '"/></svg>' +
+                '</button>' +
+                '<svg class="preview-loader icon"><use xlink:href="#' + photoGallery.loaderIcon + '"/></svg>' +
+                '<span class="preview-info ease-layout"></span>' +
+                '<img class="ease-layout">' +
+            '</div>';
 
             selector('body')[0].insertAdjacentHTML('beforeend', html);
             preview = selector('.photo-preview');
@@ -206,10 +212,8 @@ var photoGallery = {
 
             function notLoadedImage() {
 
-                events.removeClass(loader, photoGallery.loaderIcon);
-
                 events.addClass(loader, 'pause');
-                events.addClass(loader, photoGallery.errorIcon);
+                selector('use', loader)[0].setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#' + photoGallery.errorIcon);
 
             }
 
@@ -322,12 +326,10 @@ var photoGallery = {
 
                 // hide current image and load new one
                 events.removeClass(img, 'open-ease');
-
-                events.removeClass(loader, 'pause');
                 events.show(loader);
 
-                events.removeClass(loader, photoGallery.errorIcon);
-                events.addClass(loader, photoGallery.loaderIcon);
+                events.removeClass(loader, 'pause');
+                selector('use', loader)[0].setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#' + photoGallery.loaderIcon);
 
                 toggleGalleryTools();
 

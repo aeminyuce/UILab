@@ -31,7 +31,7 @@
     <use class="svg-fill" xlink:href="#cloud-bolt"/>
 </symbol>
 <symbol id="cloud-fog" viewBox="-12 -12 288 288">
-    <path class="svg-sub svg-crisp" d="M88 252h164M12 212h200"/>
+    <path class="svg-sub" d="M88 252h164M12 212h200"/>
     <use x="-16" y="-52" xlink:href="#cloud"/>
 </symbol>
 <symbol id="cloud-fog-fill" viewBox="0 0 288 288">
@@ -72,7 +72,7 @@
     <use class="svg-fill" xlink:href="#moon"/>
 </symbol>
 <symbol id="rain" viewBox="-12 -12 288 288">
-    <path class="svg-sub svg-crisp" d="M211.5 204v24M171.5 228v24M131.5 204v24M91.5 228v24M51.5 204v24"/>
+    <path class="svg-sub" d="M211.5 204v24M171.5 228v24M131.5 204v24M91.5 228v24M51.5 204v24"/>
     <use x="-16" y="-52" xlink:href="#cloud"/>
 </symbol>
 <symbol id="rain-fill" viewBox="0 0 288 288">
@@ -101,7 +101,7 @@
 </symbol>
 <symbol id="snow" viewBox="-12 -12 288 288">
     <path d="M227.5 79.5l-52 52M227.5 183.5l-52-52M36.5 79.5l52 52M36.5 183.5l52-52M184 227l-52-52M80 227l52-52M184 36l-52 52M80 36l52 52"/>
-    <path class="svg-sub svg-crisp" d="M132 12v240M252 132H12"/>
+    <path class="svg-sub" d="M132 12v240M252 132H12"/>
 </symbol>
 <symbol id="snow-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#snow"/>
@@ -115,27 +115,27 @@
 </symbol>
 <symbol id="sunrise" viewBox="-12 -12 288 288">
     <path d="M132 88a44 44 0 11-44 44 44 44 0 0144-44z M12 176h240"/>
-    <path class="svg-sub svg-crisp" d="M132 12v40M212 132h40M12 132h40M188.6 75.4l28.3-28.3M75.4 75.4L47.1 47.1 M48 220h168"/>
+    <path class="svg-sub" d="M132 12v40M212 132h40M12 132h40M188.6 75.4l28.3-28.3M75.4 75.4L47.1 47.1 M48 220h168"/>
 </symbol>
 <symbol id="sunrise-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#sunrise"/>
 </symbol>
 <symbol id="sunset" viewBox="-12 -48 288 288">
     <path d="M132 12a88 88 0 0178.5 127.9l-156.8.3A88 88 0 01132 12z M12 140h240"/>
-    <path class="svg-sub svg-crisp" d="M48 184h168"/>
+    <path class="svg-sub" d="M48 184h168"/>
 </symbol>
 <symbol id="sunset-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#sunset"/>
 </symbol>
 <symbol id="cold" viewBox="-79 -12 288 288">
-    <path class="svg-crisp" d="M68 148v32"/>
+    <path d="M68 148v32"/>
     <use xlink:href="#in-thermo"/>
 </symbol>
 <symbol id="cold-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#cold"/>
 </symbol>
 <symbol id="temperature" viewBox="-79 -12 288 288">
-    <path class="svg-crisp" d="M68 52v128"/>
+    <path d="M68 52v128"/>
     <use xlink:href="#in-thermo"/>
 </symbol>
 <symbol id="temperature-fill" viewBox="0 0 288 288">

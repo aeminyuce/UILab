@@ -8,7 +8,7 @@ var topButton = {
     titleText : 'Back to top!',
 
     classes: 'circle',
-    icon: 'icon icon-arrow-up'
+    icon: 'arrow-up'
 };
 
 (function () {
@@ -66,8 +66,16 @@ var topButton = {
 
         if (useragents.mobile) { return; } // stop on mobile devices
 
-        var html = '<button class="top-button ' + topButton.classes + ' ease-layout" title="' + topButton.titleText + '">' +
-            '<i class="' + topButton.icon + ' ease-layout"></i>' +
+        var re, rex, html, styles;
+
+        re = new RegExp('\\s+\\s');
+        rex = new RegExp('^\\s|\\s+$');
+
+        styles = topButton.classes + ' ease-layout';
+        styles = styles.replace(re, ' ').replace(rex, '');
+
+        html = '<button class="top-button ' + styles + ' ease-layout" title="' + topButton.titleText + '">' +
+                '<svg class="icon ease-layout"><use xlink:href="#' + topButton.icon + '"/></svg>' +
             '</button>';
 
         selector('body')[0].insertAdjacentHTML('beforeend', html);

@@ -1,18 +1,18 @@
 <!-- general -->
 <symbol id="in-alert" viewBox="-132 -72 288 288">
-    <path class="svg-crisp" d="M12 132v-8M12 12v72"/>
+    <path d="M12 132v-8M12 12v72"/>
 </symbol>
 <symbol id="in-info" viewBox="-132 -72 288 288">
-    <path class="svg-crisp" d="M12 12v8M12 132V60"/>
+    <path d="M12 12v8M12 132V60"/>
 </symbol>
 <symbol id="in-question" viewBox="-93 -68 288 288">
     <path d="M14.7 36.8C17.4 26.6 30 12 51.1 12s36.8 16.7 36.8 33.2-9.7 22.7-24 32.7a31.3 31.3 0 00-11 13 M52.7 139v-8"/>
 </symbol>
 <symbol id="in-minus" viewBox="-84 -133 288 288">
-    <path class="svg-crisp" d="M12 12h96"/>
+    <path d="M12 12h96"/>
 </symbol>
 <symbol id="in-plus" viewBox="-84 -84 288 288">
-    <path class="svg-crisp" d="M60 12v96M12 60h96"/>
+    <path d="M60 12v96M12 60h96"/>
 </symbol>
 <symbol id="in-remove" viewBox="-93 -93 288 288">
     <path d="M17 17l67.9 67.9M17 84.9l67.9-68"/>
@@ -20,7 +20,7 @@
 <symbol id="in-check" viewBox="-78 -98 288 288">
     <path d="M113 17L51.8 82 17 48.7"/>
 </symbol>
-<symbol id="in-images" class="svg-sub svg-crisp" viewBox="0 0 288 288">
+<symbol id="in-images" class="svg-sub" viewBox="0 0 288 288">
     <path d="M52 12h200v146.7H52z"/>
     <path class="svg-line" d="M12 52h40v107h160v45H12z"/>
 </symbol>
@@ -79,36 +79,36 @@
     <use y="-64" xlink:href="#angle-up"/>
 </symbol>
 <symbol id="arrow-down" viewBox="-12 -12 288 288">
-    <path class="svg-sub svg-crisp" d="M137 250V12"/>
+    <path class="svg-sub" d="M137 250V12"/>
     <path d="M17 131l120 120 119.9-120"/>
 </symbol>
-<symbol id="arrow-left" viewBox="-10 -12 288 288">
-    <path class="svg-sub svg-crisp" d="M13 137h238"/>
+<symbol id="arrow-left" viewBox="-12 -12 288 288">
+    <path class="svg-sub" d="M13 137h238"/>
     <path d="M132 17L12 137l120 119.9"/>
 </symbol>
-<symbol id="arrow-right" viewBox="-10 -12 288 288">
-    <path class="svg-sub svg-crisp" d="M250 137H12"/>
+<symbol id="arrow-right" viewBox="-12 -12 288 288">
+    <path class="svg-sub" d="M250 137H12"/>
     <path d="M131 17l120 120-120 119.9"/>
 </symbol>
 <symbol id="arrow-up" viewBox="-12 -12 288 288">
-    <path class="svg-sub svg-crisp" d="M137 13v238"/>
+    <path class="svg-sub" d="M137 13v238"/>
     <path d="M17 132L137 12l119.9 120"/>
 </symbol>
 <symbol id="long-arrow-down" viewBox="-70 -12 288 288">
     <path d="M17 196.2L72.8 252l55.8-55.8"/>
-    <path class="svg-sub svg-crisp" d="M72.8 244.5V12"/>
+    <path class="svg-sub" d="M72.8 244.5V12"/>
 </symbol>
 <symbol id="long-arrow-left" viewBox="-12 -70 288 288">
     <path d="M67.8 17L12 72.8l55.8 55.8"/>
-    <path class="svg-sub svg-crisp" d="M19.5 72.8H252"/>
+    <path class="svg-sub" d="M19.5 72.8H252"/>
 </symbol>
 <symbol id="long-arrow-right" viewBox="-12 -70 288 288">
     <path d="M196.2 17L252 72.8l-55.8 55.8"/>
-    <path class="svg-sub svg-crisp" d="M244.5 72.8H12"/>
+    <path class="svg-sub" d="M244.5 72.8H12"/>
 </symbol>
 <symbol id="long-arrow-up" viewBox="-70 -12 288 288">
     <path d="M17 67.8L72.8 12l55.8 55.8"/>
-    <path class="svg-sub svg-crisp" d="M72.8 19.5V252"/>
+    <path class="svg-sub" d="M72.8 19.5V252"/>
 </symbol>
 <symbol id="exchange-v" viewBox="0 0 288 288">
     <use x="-58" xlink:href="#long-arrow-down"/>
@@ -121,19 +121,19 @@
     <path class="svg-sub" d="M19.5 132H245M132 19.3v225.4"/>
     <path d="M52 92l-40 40 40 40M92 212l40 40 40-40M212 92l40 40-40 40M92 52l40-40 40 40"/>
 </symbol>
-<symbol id="bars" class="svg-crisp" viewBox="-12 -40 288 288">
+<symbol id="bars" viewBox="-12 -40 288 288">
     <path d="M12 172h240M12 12h240"/>
     <path class="svg-sub" d="M12 92h240"/>
 </symbol>
-<symbol id="bars-left" class="svg-crisp" viewBox="-12 -40 288 288">
+<symbol id="bars-left" viewBox="-12 -40 288 288">
     <path d="M12 172h164M12 12h240"/>
     <path class="svg-sub" d="M12 92h124"/>
 </symbol>
-<symbol id="bars-right" class="svg-crisp" viewBox="-12 -40 288 288">
+<symbol id="bars-right" viewBox="-12 -40 288 288">
     <path d="M252 172H88M252 12H12"/>
     <path class="svg-sub" d="M252 92H128"/>
 </symbol>
-<symbol id="bars-center" class="svg-crisp" viewBox="-12 -40 288 288">
+<symbol id="bars-center" viewBox="-12 -40 288 288">
     <path d="M216 172H48M252 12H12"/>
     <path class="svg-sub" d="M190 92H74"/>
 </symbol>
@@ -167,12 +167,12 @@
 <symbol id="marker-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#marker"/>
 </symbol>
-<symbol id="alert" class="svg-crisp" viewBox="-134 -12 288 288">
+<symbol id="alert" viewBox="-134 -12 288 288">
     <path d="M12 12v180"/>
     <path class="svg-sub" d="M12 252v-8"/>
 </symbol>
 <symbol id="alert-triangle" viewBox="-12 -28 288 288">
-    <path class="svg-crisp" d="M132 176v-8M132 100v28"/>
+    <path d="M132 176v-8M132 100v28"/>
     <path class="svg-sub" d="M132 12l120 208H12z"/>
 </symbol>
 <symbol id="alert-triangle-fill" viewBox="0 0 288 288">
@@ -213,7 +213,7 @@
 <symbol id="alert-marker-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#alert-marker"/>
 </symbol>
-<symbol id="info" class="svg-crisp" viewBox="-134 -12 288 288">
+<symbol id="info" viewBox="-134 -12 288 288">
     <path d="M12 252V72"/>
     <path class="svg-sub" d="M12 12v8"/>
 </symbol>
@@ -292,7 +292,7 @@
     <use class="svg-fill" xlink:href="#question-marker"/>
 </symbol>
 <symbol id="minus" viewBox="-10 -133 288 288">
-    <path class="svg-crisp" d="M252 12H12"/>
+    <path d="M252 12H12"/>
 </symbol>
 <symbol id="minus-circle" viewBox="00 0 288 288">
     <use xlink:href="#in-minus"/>
@@ -330,7 +330,7 @@
     <use class="svg-fill" xlink:href="#minus-marker"/>
 </symbol>
 <symbol id="plus" viewBox="-10 -10 288 288">
-    <path class="svg-crisp" d="M132 12v240M252 132H12"/>
+    <path d="M132 12v240M252 132H12"/>
 </symbol>
 <symbol id="plus-circle" viewBox="00 0 288 288">
     <use xlink:href="#in-plus"/>
@@ -543,7 +543,7 @@
     <use class="svg-fill" xlink:href="#gift"/>
 </symbol>
 <symbol id="book" viewBox="-28 -12 288 288">
-    <path class="svg-crisp" d="M60 108h64M60 68h112"/>
+    <path d="M60 108h64M60 68h112"/>
     <path class="svg-sub" d="M45 12h153a22 22 0 0122 22v196a22 22 0 01-22 22H45a33 33 0 01-33-33V45a33 33 0 0133-33z"/>
 </symbol>
 <symbol id="book-fill" viewBox="0 0 288 288">
@@ -586,7 +586,7 @@
     <path class="svg-sub" d="M161.8 15.3l-58.8 212"/>
     <path d="M64 68.8l-52 52 52 52"/>
 </symbol>
-<symbol id="brackets" class="svg-crisp" viewBox="-46 -12 288 288">
+<symbol id="brackets" viewBox="-46 -12 288 288">
     <path d="M58 12H12v240h46"/>
     <path class="svg-sub" d="M134 12h46v240h-46"/>
 </symbol>
@@ -619,7 +619,7 @@
     <use class="svg-fill" xlink:href="#megaphone"/>
 </symbol>
 <symbol id="calculator" viewBox="-30 -12 288 288">
-    <g class="svg-sub svg-crisp">
+    <g class="svg-sub">
         <path class="svg-line" d="M12 12h200v72H12z"/>
         <path d="M12 84h200v168H12z"/>
     </g>
@@ -629,13 +629,13 @@
     <use class="svg-fill" xlink:href="#calculator"/>
 </symbol>
 <symbol id="calculator-btn" viewBox="-12 -12 288 288">
-    <path class="svg-crisp" d="M188 220h32M188 188h32M44.7 188.7l30.6 30.6M75.3 188.7l-30.6 30.6M188 60h32M204 44v32M44 60h32"/>
+    <path d="M188 220h32M188 188h32M44.7 188.7l30.6 30.6M75.3 188.7l-30.6 30.6M188 60h32M204 44v32M44 60h32"/>
     <path class="svg-sub" d="M168 156h72a12 12 0 0112 12v72a12 12 0 01-12 12h-72a12 12 0 01-12-12v-72a12 12 0 0112-12zM24 156h72a12 12 0 0112 12v72a12 12 0 01-12 12H24a12 12 0 01-12-12v-72a12 12 0 0112-12zM168 12h72a12 12 0 0112 12v72a12 12 0 01-12 12h-72a12 12 0 01-12-12V24a12 12 0 0112-12zM24 12h72a12 12 0 0112 12v72a12 12 0 01-12 12H24a12 12 0 01-12-12V24a12 12 0 0112-12z"/>
 </symbol>
 <symbol id="calculator-btn-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#calculator-btn"/>
 </symbol>
-<symbol id="calendar" class="svg-crisp" viewBox="-12 -12 288 288">
+<symbol id="calendar" viewBox="-12 -12 288 288">
     <path class="svg-line" d="M12 28h240v56H12z"/>
     <path d="M12 84h240v168H12z M60 44V12M204 44V12"/>
 </symbol>
@@ -644,7 +644,7 @@
 </symbol>
 <symbol id="calendar-day" viewBox="-12 -12 288 288">
     <use class="svg-sub" x="-12" y="-12" xlink:href="#calendar"/>
-    <path class="svg-crisp" d="M108 144h48v48h-48z"/>
+    <path d="M108 144h48v48h-48z"/>
 </symbol>
 <symbol id="calendar-day-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#calendar-day"/>
@@ -706,7 +706,7 @@
 <symbol id="chart-pie-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#chart-pie"/>
 </symbol>
-<symbol id="chart-bar" class="svg-crisp" viewBox="-12 -12 288 288">
+<symbol id="chart-bar" viewBox="-12 -12 288 288">
     <path d="M216 44v152M168 100v96M120 68v128M72 148v48"/>
     <path class="svg-sub" d="M12 12v240h240.3"/>
 </symbol>
@@ -723,7 +723,7 @@
     <use class="svg-fill" xlink:href="#clipboard"/>
 </symbol>
 <symbol id="clipboard-list" viewBox="-44 0 288 288">
-    <path class="svg-crisp" d="M44 148h64M44 108h112"/>
+    <path d="M44 148h64M44 108h112"/>
     <use x="-44" class="svg-sub" xlink:href="#clipboard"/>
 </symbol>
 <symbol id="clipboard-list-fill" viewBox="0 0 288 288">
@@ -737,7 +737,7 @@
     <use class="svg-fill" xlink:href="#clipboard-check"/>
 </symbol>
 <symbol id="sticky-note" viewBox="-12 -12 288 288">
-    <path class="svg-sub svg-crisp" d="M12 252h168l72-72V12H12z"/>
+    <path class="svg-sub" d="M12 252h168l72-72V12H12z"/>
     <path d="M180 251.9V180h72z"/>
 </symbol>
 <symbol id="sticky-note-fill" viewBox="0 0 288 288">
@@ -827,7 +827,7 @@
     <use class="svg-fill" xlink:href="#comment-remove"/>
 </symbol>
 <symbol id="comment-lines" viewBox="-14 -26 288 288">
-    <path class="svg-crisp" d="M76 130.4h64M76 90.4h112"/>
+    <path d="M76 130.4h64M76 90.4h112"/>
     <use x="-14" y="-26" class="svg-sub" xlink:href="#comment"/>
 </symbol>
 <symbol id="comment-lines-fill" viewBox="0 0 288 288">
@@ -877,20 +877,20 @@
         <path d="M180.1 140H212M180.1 100H212M180.1 60H212M92 140h48 M52 12h200v140a36 36 0 01-36 36H52z"/>
     </g>
     <path d="M100 60h32a7.8 7.8 0 018 7.4v25a7.8 7.8 0 01-8 7.6h-32a7.8 7.8 0 01-8-7.5v-25a7.8 7.8 0 018-7.6z"/>
-    <path class="svg-crisp" d="M180.1 140H212M180.1 100H212M180.1 60H212M92 140h48"/>
+    <path d="M180.1 140H212M180.1 100H212M180.1 60H212M92 140h48"/>
 </symbol>
 <symbol id="news-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#news"/>
 </symbol>
 <symbol id="doc" viewBox="-36 -12 288 288">
-    <path class="svg-crisp" d="M52 147h64M52 107h112"/>
+    <path d="M52 147h64M52 107h112"/>
     <path class="svg-sub" d="M12 12h192v240H12z"/>
 </symbol>
 <symbol id="doc-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#doc"/>
 </symbol>
 <symbol id="docs" viewBox="-36 -12 288 288">
-    <path class="svg-crisp" d="M92 132h48M92 92h72"/>
+    <path d="M92 132h48M92 92h72"/>
     <g class="svg-sub">
         <path d="M52 12h152v200H52z"/>
         <path class="svg-line" d="M12 52h40.3v160.7H164V252H12z"/>
@@ -906,7 +906,7 @@
 <symbol id="doc-no-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#doc-no"/>
 </symbol>
-<symbol id="archive" class="svg-crisp" viewBox="-12 -12 288 288">
+<symbol id="archive" viewBox="-12 -12 288 288">
     <path d="M96 132h72 M12 12h240v64H12z"/>
     <path class="svg-sub" d="M20 76h224v176H20z"/>
 </symbol>
@@ -917,7 +917,7 @@
     <path d="M35.5 12A23.5 23.5 0 1112 35.5 23.5 23.5 0 0135.5 12zM228.5 12A23.5 23.5 0 11205 35.5 23.5 23.5 0 01228.5 12zM228.5 205a23.5 23.5 0 11-23.5 23.5 23.5 23.5 0 0123.5-23.5zM35.5 205A23.5 23.5 0 1112 228.5 23.5 23.5 0 0135.5 205z"/>
     <g class="svg-sub">
         <path d="M181.5 109a23.5 23.5 0 11-23.5 23.5 23.5 23.5 0 0123.5-23.5z M191.5 111L218 56M191.5 154l26.5 55"/>
-        <path class="svg-crisp" d="M35 59v146M59 229h146M59 35h146"/>
+        <path d="M35 59v146M59 229h146M59 35h146"/>
     </g>
 </symbol>
 <symbol id="draw-fill" viewBox="0 0 288 288">
@@ -925,7 +925,7 @@
 </symbol>
 <symbol id="edit" viewBox="-12 0 288 288">
     <path d="M247.8 42.9L232 27.1a14.3 14.3 0 00-20.2 0l-120.9 121L61 213.9l66-29.7 120.8-121a14.3 14.3 0 000-20.3z M127 184l-36-35.9"/>
-    <path class="svg-sub svg-line svg-crisp" d="M124 46.7H12v216h216v-112"/>
+    <path class="svg-sub svg-line" d="M124 46.7H12v216h216v-112"/>
 </symbol>
 <symbol id="edit-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#edit"/>
@@ -952,7 +952,7 @@
 </symbol>
 <symbol id="envelope" viewBox="-12 -52 288 288">
     <path d="M12 12l105.8 95.1c8.8 7.8 19.9 7.3 28.4-.1S252 12 252 12v.2H12z"/>
-    <path class="svg-sub svg-crisp" d="M12 12h240v159.8H12z"/>
+    <path class="svg-sub" d="M12 12h240v159.8H12z"/>
 </symbol>
 <symbol id="envelope-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#envelope"/>
@@ -967,11 +967,11 @@
 <symbol id="envelope-open-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#envelope-open"/>
 </symbol>
-<symbol id="expand" class="svg-crisp" viewBox="-12 -12 288 288">
+<symbol id="expand" viewBox="-12 -12 288 288">
     <path d="M180 12h72v72 M84 252H12v-72"/>
     <path class="svg-sub" d="M180 252h72v-72 M84 12H12v72"/>
 </symbol>
-<symbol id="expand-wide" class="svg-crisp" viewBox="-12 -36 288 288">
+<symbol id="expand-wide" viewBox="-12 -36 288 288">
     <path d="M180 12h72v48 M84 204H12v-48"/>
     <path class="svg-sub" d="M180 204h72v-48M84 12H12v48"/>
 </symbol>
@@ -1005,7 +1005,7 @@
 </symbol>
 <symbol id="face-meh" viewBox="-12 -12 288 288">
     <use x="-12" y="-12" xlink:href="#face-blank"/>
-    <path class="svg-line svg-crisp" d="M72 179h120"/>
+    <path class="svg-line" d="M72 179h120"/>
 </symbol>
 <symbol id="face-meh-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#face-meh"/>
@@ -1037,7 +1037,7 @@
     <use class="svg-fill" xlink:href="#flag"/>
 </symbol>
 <symbol id="gas-pump" viewBox="-22 -12 288 288">
-    <path class="svg-crisp" d="M60 45h64v47H60z"/>
+    <path d="M60 45h64v47H60z"/>
     <g class="svg-sub">
         <path d="M12 252h160M52 12h80a24 24 0 0124 24v216H28V36a24 24 0 0124-24z"/>
         <path class="svg-line" d="M157 128s22.6-1.4 31 20-2.5 60 24 60 25-64.2 25-82V65l-32.8-31.9M237 86c-21 0-29-14-20.5-41"/>
@@ -1059,28 +1059,28 @@
 <symbol id="filter-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#filter"/>
 </symbol>
-<symbol id="grid-row" class="svg-crisp" viewBox="-12 -12 288 288">
+<symbol id="grid-row" viewBox="-12 -12 288 288">
     <path d="M12 12h240v96H12z"/>
     <path class="svg-sub" d="M12 156h240v96H12z"/>
 </symbol>
 <symbol id="grid-row-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#grid-row"/>
 </symbol>
-<symbol id="grid-column" class="svg-crisp" viewBox="-12 -12 288 288">
+<symbol id="grid-column" viewBox="-12 -12 288 288">
     <path d="M12 12h96v96H12z"/>
     <path class="svg-sub" d="M12 156h96v96H12zM156 12h96v96h-96zM156 156h96v96h-96z"/>
 </symbol>
 <symbol id="grid-column-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#grid-column"/>
 </symbol>
-<symbol id="grid-flow" class="svg-crisp" viewBox="-12 -12 288 288">
+<symbol id="grid-flow" viewBox="-12 -12 288 288">
     <path d="M12 12h240v152H12z"/>
     <path class="svg-sub" d="M12 212h240v40H12z"/>
 </symbol>
 <symbol id="grid-flow-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#grid-flow"/>
 </symbol>
-<symbol id="grid-masonry" class="svg-crisp" viewBox="-12 -12 288 288">
+<symbol id="grid-masonry" viewBox="-12 -12 288 288">
     <path d="M12 12h96v128H12z"/>
     <path class="svg-sub" d="M156 116h96v136h-96zM12 196h96v56H12zM156 12h96v56h-96z"/>
 </symbol>
@@ -1129,7 +1129,7 @@
 </symbol>
 <symbol id="image" viewBox="-12 -44 288 288">
     <path d="M196 52a16 16 0 11-16 16 16 16 0 0116-16z M52 148l48-84 24 48 16-20 36 56z"/>
-    <path class="svg-sub svg-crisp" d="M12 12h240v176H12z"/>
+    <path class="svg-sub" d="M12 12h240v176H12z"/>
 </symbol>
 <symbol id="image-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#image"/>
@@ -1163,7 +1163,7 @@
     <use class="svg-fill" xlink:href="#images-check"/>
 </symbol>
 <symbol id="keyboard" viewBox="-12 -46 288 288">
-    <path class="svg-crisp" d="M56 56h8M104 56h8M152 56h8M200 56h8M176 96h8M128 96h8M80 96h8M56 136h8M104 136h104"/>
+    <path d="M56 56h8M104 56h8M152 56h8M200 56h8M176 96h8M128 96h8M80 96h8M56 136h8M104 136h104"/>
     <path class="svg-sub" d="M36 12h192a24 24 0 0124 24v120a24 24 0 01-24 24H36a24 24 0 01-24-24V36a24 24 0 0124-24z"/>
 </symbol>
 <symbol id="keyboard-fill" viewBox="0 0 288 288">
@@ -1196,7 +1196,7 @@
 </symbol>
 <symbol id="link-external" viewBox="-12 36 288 288">
     <path d="M173.2 60h79v78.9 M246.9 65.2L82.5 229.6"/>
-    <path class="svg-sub svg-crisp" d="M140 100H12v200h200V172"/>
+    <path class="svg-sub" d="M140 100H12v200h200V172"/>
 </symbol>
 <symbol id="target" viewBox="-12 -12 288 288">
     <path d="M132 108.1a24 24 0 11-23.9 24 24 24 0 0124-24z"/>
@@ -1231,7 +1231,7 @@
 <symbol id="lock" viewBox="-28 24 288 288">
     <path d="M116 187.5a20 20 0 11-20 20 20 20 0 0120-20z"/>
     <path class="svg-line" d="M52 131v-23.2a64 64 0 11128-.1V131"/>
-    <path class="svg-sub svg-crisp" d="M12 132.5h208v152H12z"/>
+    <path class="svg-sub" d="M12 132.5h208v152H12z"/>
 </symbol>
 <symbol id="lock-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#lock"/>
@@ -1239,7 +1239,7 @@
 <symbol id="lock-open" viewBox="-28 24 288 288">
     <path d="M116 187.5a20 20 0 11-20 20 20 20 0 0120-20z"/>
     <path class="svg-line" d="M52 131v-23.2a64 64 0 01109.3-45.6"/>
-    <path class="svg-sub svg-crisp"  d="M12 132.5h208v152H12z"/>
+    <path class="svg-sub"  d="M12 132.5h208v152H12z"/>
 </symbol>
 <symbol id="lock-open-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#lock-open"/>
@@ -1315,7 +1315,7 @@
 <symbol id="phone-call-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#phone-call"/>
 </symbol>
-<symbol id="print" class="svg-crisp" viewBox="-12 -24 288 288">
+<symbol id="print" viewBox="-12 -24 288 288">
     <path d="M12 52h240v64H12z M196 84h15.9 M84 196h56M84 156h95.9"/>
     <path class="svg-sub" d="M44 116h176v120H44zM44 12h176v40H44z"/>
 </symbol>
@@ -1362,7 +1362,7 @@
     <path d="M120.3 12v240M224.2 192L16.4 72M16.4 192L224.2 72"/>
 </symbol>
 <symbol id="save" viewBox="-22 -12 288 288">
-    <path class="svg-crisp" d="M116 12v72 M52 12h112v72H52z M52 124h144v88H52z"/>
+    <path d="M116 12v72 M52 12h112v72H52z M52 124h144v88H52z"/>
     <path class="svg-sub" d="M12 12h169.5l54.7 48v192H12z"/>
 </symbol>
 <symbol id="save-fill" viewBox="0 0 288 288">
@@ -1400,7 +1400,7 @@
 </symbol>
 <symbol id="settings" viewBox="-12 -12 288 288">
     <path d="M44 188a32 32 0 11-32 32 32 32 0 0132-32z M172 100a32 32 0 11-32 32 32 32 0 0132-32z M44 12a32 32 0 11-32 32 32 32 0 0132-32z"/>
-    <path class="svg-sub svg-crisp" d="M76 220h176 M204 132h48M12 132h128 M76 44h176"/>
+    <path class="svg-sub" d="M76 220h176 M204 132h48M12 132h128 M76 44h176"/>
 </symbol>
 <symbol id="settings-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#settings"/>
@@ -1472,7 +1472,7 @@
 <symbol id="star-half-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#star-half"/>
 </symbol>
-<symbol id="table" class="svg-crisp" viewBox="-12 -32 288 288">
+<symbol id="table" viewBox="-12 -32 288 288">
     <path d="M12 12h240v40.3H12z M252 132H12M132 53v159"/>
     <path class="svg-line" d="M12 52.3h240v159.6H12z"/>
 </symbol>
@@ -1481,7 +1481,7 @@
 </symbol>
 <symbol id="trash" viewBox="-28 -12 288 288">
     <path class="svg-line" d="M83 12h66l11 40H72z"/>
-    <path class="svg-crisp" d="M140 108v88M92 108v88M12 52h208"/>
+    <path d="M140 108v88M92 108v88M12 52h208"/>
     <path class="svg-sub" d="M36 52h160v168a32 32 0 01-32 32H68a32 32 0 01-32-32z"/>
 </symbol>
 <symbol id="trash-fill" viewBox="0 0 288 288">
@@ -1518,7 +1518,7 @@
     <use class="svg-fill" xlink:href="#truck"/>
 </symbol>
 <symbol id="tachometer" viewBox="-12 -24 288 288">
-    <path class="svg-crisp" d="M132 60v112"/>
+    <path d="M132 60v112"/>
     <path d="M204 136a16 16 0 1016 16 16 16 0 00-16-16zM184 68a16 16 0 1016 16 16 16 0 00-16-16zM64 136a16 16 0 11-16 16 16 16 0 0116-16zM80 68a16 16 0 11-16 16 16 16 0 0116-16z"/>
     <path class="svg-sub" d="M132 12a120 120 0 0181.2 208.3H50.7A120 120 0 01132 12z"/>
 </symbol>
@@ -1546,14 +1546,14 @@
     <use class="svg-fill" xlink:href="#user-circle"/>
 </symbol>
 <symbol id="user-minus" viewBox="-12 -38 288 288">
-    <path class="svg-sub svg-crisp" d="M76 71.8H12"/>
+    <path class="svg-sub" d="M76 71.8H12"/>
     <use x="-12" y="-38" xlink:href="#in-user-right"/>
 </symbol>
 <symbol id="user-minus-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#user-minus"/>
 </symbol>
 <symbol id="user-plus" viewBox="-12 -38 288 288">
-    <path class="svg-sub svg-crisp" d="M76 71.8H12M44 39.8v64"/>
+    <path class="svg-sub" d="M76 71.8H12M44 39.8v64"/>
     <use x="-12" y="-38" xlink:href="#in-user-right"/>
 </symbol>
 <symbol id="user-plus-fill" viewBox="0 0 288 288">

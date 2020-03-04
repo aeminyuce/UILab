@@ -6,7 +6,7 @@
 var modal = {
 
     classes: 'shadow-lg',
-    closeIcon: 'icon icon-xs icon-remove'
+    closeIcon: 'remove'
 
 };
 
@@ -15,10 +15,7 @@ var modal = {
     'use strict';
     /*globals window, document, selector, events, setTimeout, ajax, useragents */
 
-    var
-        pageYPos,
-        re = new RegExp('\\s+\\s'),
-        rex = new RegExp('^\\s|\\s+$');
+    var pageYPos;
 
     function modalResizer() {
 
@@ -179,6 +176,11 @@ var modal = {
             // create modal
             function createModal() {
 
+                var re, rex;
+
+                re = new RegExp('\\s+\\s');
+                rex = new RegExp('^\\s|\\s+$');
+
                 styles = modal.classes + ' ease-layout';
                 styles = styles.replace(re, ' ').replace(rex, '');
 
@@ -291,10 +293,8 @@ var modal = {
 
                     if (closeBtn === undefined) {
 
-                        modal.closeIcon = modal.closeIcon.replace(re, ' ').replace(rex, '');
-
                         closeBtn = '<button class="close-modal ease-btn">' +
-                                        '<i class="' + modal.closeIcon + '"></i>' +
+                                        '<svg class="icon"><use xlink:href="#' + modal.closeIcon + '"/></svg>' +
                                     '</button>';
 
                         content.insertAdjacentHTML('afterbegin', closeBtn);

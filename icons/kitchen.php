@@ -1,14 +1,14 @@
 <!-- kitchen -->
 <symbol id="chef" viewBox="-12 -12 288 288">
     <path d="M40 188v-40.7A54 54 0 0112 100a54 54 0 0169-51.9A54 54 0 01132 12a54 54 0 0151 36.1 54 54 0 0169 51.9 54 54 0 01-28 47.3V188z"/>
-    <path class="svg-sub svg-crisp" d="M40 188h184v64H40z"/>
+    <path class="svg-sub" d="M40 188h184v64H40z"/>
 </symbol>
 <symbol id="chef-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#chef"/>
 </symbol>
 <symbol id="mitten" viewBox="-30 -12 288 288">
     <path d="M12 188V90c0-43 33-78 76-78s72 12 72 100.3C183.5 89 201.2 89 212.1 99.8a28 28 0 010 39.6L160 188z"/>
-    <path class="svg-sub svg-crisp" d="M12 188h148v64H12z"/>
+    <path class="svg-sub" d="M12 188h148v64H12z"/>
 </symbol>
 <symbol id="mitten-fill" viewBox="0 0 288 288">
     <use class="svg-fill" xlink:href="#mitten"/>

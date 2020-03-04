@@ -174,7 +174,7 @@
                                     <input type="checkbox" checked>
                                     <i class="ui-dark state"></i>
                                 </span>
-                                <i class="icon margin-10-r icon-check-badge"></i>Deals
+                                <i class="icon margin-10-r icon-badge-check"></i>Deals
                             </label>
 
                         </div>
@@ -382,7 +382,7 @@
                                 <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Bluetooth Headphones</span>
                                 <b class="xx-large">$79.95</b> <b class="x-dark overline">$99.99</b>
                                 <span class="block">
-                                    <i class="icon icon-sm margin-5-r icon-check-badge"></i> 20% off
+                                    <i class="icon icon-sm margin-5-r icon-badge-check"></i> 20% off
                                 </span>
                                 <ul class="list-inline margin-15-v right">
                                     <li class="circle padding-5 border-dual" style="border-color: #d22fdf;"></li>
@@ -452,7 +452,7 @@
                                 <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Wired Headphones</span>
                                 <b class="xx-large">$89.95</b> <b class="x-dark overline">$119.99</b>
                                 <span class="block">
-                                    <i class="icon icon-sm margin-5-r icon-check-badge"></i> 20% off
+                                    <i class="icon icon-sm margin-5-r icon-badge-check"></i> 20% off
                                 </span>
                                 <ul class="list-inline margin-15-v right">
                                     <li class="circle padding-5 border-dual" style="border-color: #dedede;"></li>
@@ -485,7 +485,7 @@
                                 <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Wired Headphones</span>
                                 <b class="xx-large">$89.95</b> <b class="x-dark overline">$119.99</b>
                                 <span class="block">
-                                    <i class="icon icon-sm margin-5-r icon-check-badge"></i> 20% off
+                                    <i class="icon icon-sm margin-5-r icon-badge-check"></i> 20% off
                                 </span>
                                 <ul class="list-inline margin-15-v right">
                                     <li class="circle padding-10 border" style="background: #3b3b3b;"></li>
@@ -521,7 +521,7 @@
                                 <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Bluetooth Headphones</span>
                                 <b class="xx-large">$79.95</b> <b class="x-dark overline">$99.99</b>
                                 <span class="block">
-                                    <i class="icon icon-sm margin-5-r icon-check-badge"></i> 20% off
+                                    <i class="icon icon-sm margin-5-r icon-badge-check"></i> 20% off
                                 </span>
                                 <ul class="list-inline margin-15-v right">
                                     <li class="circle padding-5 border-dual" style="border-color: #d22fdf;"></li>

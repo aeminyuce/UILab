@@ -1,12 +1,11 @@
 /* icons */
-.icon { vertical-align: middle; width: 20px; height: 20px; display: inline-block; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 26px; }
+.icon { vertical-align: middle; width: 20px; height: 20px; display: inline-block; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 26px; shape-rendering: geometricPrecision; }
 button.icon { background-color: transparent; }
 
 .svg-fill { fill: currentColor !important; }
 .svg-sub { opacity: .5; }
 .svg-line { fill: none !important; }
 .svg-solid { fill: currentColor !important; stroke: none !important; }
-.svg-crisp { shape-rendering: crispEdges; stroke-linecap: square; stroke-linejoin: square; }
 
 .icon-xxs { width: 12px !important; height: 12px !important; stroke-width: 44px !important; }
 .icon-xs { width: 14px !important; height: 14px !important; stroke-width: 38px !important; }

@@ -4,7 +4,7 @@
 */
 
 var loadingButton = {
-    spinner: 'icon icon-loader-line'
+    spinner: 'loader-line'
 };
 
 (function () {
@@ -16,7 +16,7 @@ var loadingButton = {
 
         loadingButton.toggle = function (that) {
 
-            var l, i, re, rex, styles, html;
+            var l, i, html;
 
             l = selector(that);
             for (i = 0; i < l.length; i++) {
@@ -28,14 +28,8 @@ var loadingButton = {
 
                 } else if (selector('.loading-spinner', l[i])[0] === undefined) {
 
-                    re = new RegExp('\\s+\\s');
-                    rex = new RegExp('^\\s|\\s+$');
-
-                    styles = loadingButton.spinner;
-                    styles = styles.replace(re, ' ').replace(rex, '');
-
                     html = '<span class="loading-spinner ease-layout">' +
-                            '<i class="' + styles + ' no-opacity"></i>' +
+                            '<svg class="icon"><use xlink:href="#' + loadingButton.spinner + '"/></svg>' +
                         '</span>' +
                         '<span class="loading-label ease-layout">' + l[i].innerHTML + '</div>';
 

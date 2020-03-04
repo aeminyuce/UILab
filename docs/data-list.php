@@ -41,13 +41,13 @@
                                     <ul class="content round shadow-lg">
                                         <li>
                                             <label class="radio" data-sort="1">
-                                                <svg class="icon ease-layout"><use xlink:href="#sort-fill"></svg>
+                                                <svg class="icon"><use xlink:href="#sort-fill"></svg>
                                                 <input type="radio" name="s">By Name
                                             </label>
                                         </li>
                                         <li>
                                             <label class="radio" data-sort="2">
-                                                <svg class="icon ease-layout"><use xlink:href="#sort-fill"></svg>
+                                                <svg class="icon"><use xlink:href="#sort-fill"></svg>
                                                 <input type="radio" name="s">By Step
                                             </label>
                                         </li>

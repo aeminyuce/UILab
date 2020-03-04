@@ -50,6 +50,7 @@ html:not(.mobile) .alerts-msg:hover { opacity: .9; }
 .alerts-msg.br:not(.show-ease),.alerts-msg.bl:not(.show-ease) { transform: translateY(40px); }
 
 .close-alert { color: currentColor; line-height: 0; background: transparent; padding: 5px; border: 0; position: absolute; top: 5px; right: 5px; z-index: 1; opacity: .45; cursor: pointer; }
+.close-alert .icon { width: 12px; height: 12px; stroke-width: 44px; }
 html:not(.mobile) .close-alert:hover { opacity: .75; }
 
 @media (min-width: 768px) {

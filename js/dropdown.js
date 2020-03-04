@@ -198,22 +198,16 @@ var dropdown = {};
         // form toggle events
         events.on('.dropdown li > label', 'click', function () {
 
-            var p, icon, target;
+            var p, target, input;
 
             p = events.closest(this, '.dropdown')[0];
 
             target = selector('.btn > .value-toggle', p)[0];
             target.innerHTML = '';
+            target.insertAdjacentHTML('beforeend', this.innerHTML);
 
-            icon = selector('.icon', this)[0];
-            if (icon !== undefined) {
-
-                icon = icon.cloneNode();
-                target.appendChild(icon);
-
-            }
-
-            target.insertAdjacentHTML('beforeend', this.textContent);
+            input = selector('input', target)[0];
+            input.parentNode.removeChild(input);
 
             events.removeClass(selector('.selected', p), 'selected');
             events.addClass(this.parentNode, 'selected');
