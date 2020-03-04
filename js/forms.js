@@ -50,23 +50,6 @@ var forms = {};
 
             }
 
-            if (useragents.mobile) {
-
-                if (type === 'add') {
-                    events.addClass(document, 'mobile-keyboard');
-
-                } else {
-                    events.removeClass(document, 'mobile-keyboard');
-                }
-
-            } else {
-
-                if (type === 'add') {
-                    events.addClass(document, 'form-focused');
-                } else { events.removeClass(document, 'form-focused'); }
-
-            }
-
         }
 
         // clear with form icons
