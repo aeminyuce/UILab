@@ -61,246 +61,246 @@
     <path d="M12 12h120l72 72v168H12z"/>
 </symbol>
 <symbol id="file-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file"/>
+    <use class="svg-fill" href="#file"/>
 </symbol>
 <symbol id="files" viewBox="-36 -12 288 288">
     <path d="M52 12h80l72 72v128H52z"/>
     <path class="svg-sub" d="M12 52h40v160h112v40H12z"/>
 </symbol>
 <symbol id="files-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#files"/>
+    <use class="svg-fill" href="#files"/>
 </symbol>
 <symbol id="file-no" viewBox="-32 -14 288 288">
     <path class="svg-line" d="M135.7 106l-57.2 58.2M108 95a41 41 0 11-41 41 41 41 0 0141-41z"/>
-    <use x="-32" y="-14" class="svg-sub" xlink:href="#file"/>
+    <use x="-32" y="-14" class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-no-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-no"/>
+    <use class="svg-fill" href="#file-no"/>
 </symbol>
 <symbol id="file-check" viewBox="-32 -18 288 288">
     <path class="svg-line" d="M147.8 103l-51.5 56.2-28.3-28"/>
-    <use x="-32" y="-18" class="svg-sub" xlink:href="#file"/>
+    <use x="-32" y="-18" class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-check-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-check"/>
+    <use class="svg-fill" href="#file-check"/>
 </symbol>
 <symbol id="file-minus" viewBox="-32 -24 288 288">
     <path d="M148 132H68"/>
-    <use x="-32" y="-24" class="svg-sub" xlink:href="#file"/>
+    <use x="-32" y="-24" class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-minus-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-minus"/>
+    <use class="svg-fill" href="#file-minus"/>
 </symbol>
 <symbol id="file-plus" viewBox="-32 -22 288 288">
     <path d="M148 132H68M108 92v80"/>
-    <use x="-32" y="-22" class="svg-sub" xlink:href="#file"/>
+    <use x="-32" y="-22" class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-plus-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-plus"/>
+    <use class="svg-fill" href="#file-plus"/>
 </symbol>
 <symbol id="file-remove" viewBox="-32 -22 288 288">
     <path d="M136.3 103.2l-56.6 56.6M79.7 103.2l56.6 56.6"/>
-    <use x="-32" y="-22" class="svg-sub" xlink:href="#file"/>
+    <use x="-32" y="-22" class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-remove-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-remove"/>
+    <use class="svg-fill" href="#file-remove"/>
 </symbol>
 <symbol id="file-search" viewBox="-40 -22 288 288">
     <path class="svg-line" d="M117.6 94.9a33 33 0 11-46.7 0 33 33 0 0146.7 0z M143.1 168.5l-25.3-25.7"/>
-    <use x="-40" y="-22" class="svg-sub" xlink:href="#file"/>
+    <use x="-40" y="-22" class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-search-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-search"/>
+    <use class="svg-fill" href="#file-search"/>
 </symbol>
 <symbol id="file-download" viewBox="-32 -18 288 288">
     <path class="svg-line" d="M148 138l-39.9 40L68 138 M108 178V86"/>
-    <use x="-32" y="-18" class="svg-sub" xlink:href="#file"/>
+    <use x="-32" y="-18" class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-download-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-download"/>
+    <use class="svg-fill" href="#file-download"/>
 </symbol>
 <symbol id="file-upload" viewBox="-32 -18 288 288">
     <path class="svg-line" d="M148 126l-39.9-40L68 126.1 M108 86v92"/>
-    <use x="-32" y="-18" class="svg-sub" xlink:href="#file"/>
+    <use x="-32" y="-18" class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-upload-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-upload"/>
+    <use class="svg-fill" href="#file-upload"/>
 </symbol>
 <symbol id="file-write" viewBox="-32 -18 288 288">
     <path d="M118.1 84.7l-9.2-5.3a6.8 6.8 0 00-9.3 2.5L59 152.3l-5.6 34L80 164.5 120.6 94a6.8 6.8 0 00-2.5-9.3z M96.6 184.4s19 10.8 25.5-12.4c7.3 1.2 14.7 14.7 27.4 11.7 4.6-1.2 9.6-5 13.7-9.7"/>
-    <use x="-32" y="-18" class="svg-sub" xlink:href="#file"/>
+    <use x="-32" y="-18" class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-write-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-write"/>
+    <use class="svg-fill" href="#file-write"/>
 </symbol>
 <symbol id="file-txt" viewBox="0 0 288 288">
     <g transform="translate(73 160) scale(.9,.9)">
-        <use xlink:href="#in-tx-t"/><use x="50" xlink:href="#in-tx-x"/><use x="115" xlink:href="#in-tx-t"/>
+        <use href="#in-tx-t"/><use x="50" href="#in-tx-x"/><use x="115" href="#in-tx-t"/>
     </g>
-    <use class="svg-sub" xlink:href="#file"/>
+    <use class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-txt-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-txt"/>
+    <use class="svg-fill" href="#file-txt"/>
 </symbol>
 <symbol id="file-avi" viewBox="0 0 288 288">
     <g transform="translate(83 160) scale(.9,.9)">
-        <use xlink:href="#in-tx-a"/><use x="56" xlink:href="#in-tx-v"/><use x="115" xlink:href="#in-tx-i"/>
+        <use href="#in-tx-a"/><use x="56" href="#in-tx-v"/><use x="115" href="#in-tx-i"/>
     </g>
-    <use class="svg-sub" xlink:href="#file"/>
+    <use class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-avi-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-avi"/>
+    <use class="svg-fill" href="#file-avi"/>
 </symbol>
 <symbol id="file-doc" viewBox="0 0 288 288">
     <g transform="translate(70 160) scale(.9,.9)">
-        <use xlink:href="#in-tx-d"/><use x="55" xlink:href="#in-tx-o"/><use x="115" xlink:href="#in-tx-c"/>
+        <use href="#in-tx-d"/><use x="55" href="#in-tx-o"/><use x="115" href="#in-tx-c"/>
     </g>
-    <use class="svg-sub" xlink:href="#file"/>
+    <use class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-doc-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-doc"/>
+    <use class="svg-fill" href="#file-doc"/>
 </symbol>
 <symbol id="file-docx" viewBox="0 0 288 288">
     <g transform="translate(57 160) scale(.9,.9)">
-        <use xlink:href="#in-tx-d"/><use x="45" xlink:href="#in-tx-o"/><use x="93" xlink:href="#in-tx-c"/><use x="133" xlink:href="#in-tx-x"/>
+        <use href="#in-tx-d"/><use x="45" href="#in-tx-o"/><use x="93" href="#in-tx-c"/><use x="133" href="#in-tx-x"/>
     </g>
-    <use class="svg-sub" xlink:href="#file"/>
+    <use class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-docx-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-docx"/>
+    <use class="svg-fill" href="#file-docx"/>
 </symbol>
 <symbol id="file-gif" viewBox="0 0 288 288">
     <g transform="translate(80 160) scale(.9,.9)">
-        <use xlink:href="#in-tx-g"/><use x="65" xlink:href="#in-tx-i"/><use x="100" xlink:href="#in-tx-f"/>
+        <use href="#in-tx-g"/><use x="65" href="#in-tx-i"/><use x="100" href="#in-tx-f"/>
     </g>
-    <use class="svg-sub" xlink:href="#file"/>
+    <use class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-gif-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-gif"/>
+    <use class="svg-fill" href="#file-gif"/>
 </symbol>
 <symbol id="file-jpg" viewBox="0 0 288 288">
     <g transform="translate(71 160) scale(.9,.9)">
-        <use xlink:href="#in-tx-j"/><use x="55" xlink:href="#in-tx-p"/><use x="107" xlink:href="#in-tx-g"/>
+        <use href="#in-tx-j"/><use x="55" href="#in-tx-p"/><use x="107" href="#in-tx-g"/>
     </g>
-    <use class="svg-sub" xlink:href="#file"/>
+    <use class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-jpg-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-jpg"/>
+    <use class="svg-fill" href="#file-jpg"/>
 </symbol>
 <symbol id="file-mp3" viewBox="0 0 288 288">
     <g transform="translate(75 160) scale(.9,.9)">
-        <use xlink:href="#in-tx-m"/><use x="60" xlink:href="#in-tx-p"/><use x="107" xlink:href="#in-tx-3"/>
+        <use href="#in-tx-m"/><use x="60" href="#in-tx-p"/><use x="107" href="#in-tx-3"/>
     </g>
-    <use class="svg-sub" xlink:href="#file"/>
+    <use class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-mp3-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-mp3"/>
+    <use class="svg-fill" href="#file-mp3"/>
 </symbol>
 <symbol id="file-mpg" viewBox="0 0 288 288">
     <g transform="translate(73 160) scale(.9,.9)">
-        <use xlink:href="#in-tx-m"/><use x="60" xlink:href="#in-tx-p"/><use x="107" xlink:href="#in-tx-g"/>
+        <use href="#in-tx-m"/><use x="60" href="#in-tx-p"/><use x="107" href="#in-tx-g"/>
     </g>
-    <use class="svg-sub" xlink:href="#file"/>
+    <use class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-mpg-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-mpg"/>
+    <use class="svg-fill" href="#file-mpg"/>
 </symbol>
 <symbol id="file-pdf" viewBox="0 0 288 288">
     <g transform="translate(77 160) scale(.9,.9)">
-        <use xlink:href="#in-tx-p"/><use x="47" xlink:href="#in-tx-d"/><use x="107" xlink:href="#in-tx-f"/>
+        <use href="#in-tx-p"/><use x="47" href="#in-tx-d"/><use x="107" href="#in-tx-f"/>
     </g>
-    <use class="svg-sub" xlink:href="#file"/>
+    <use class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-pdf-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-pdf"/>
+    <use class="svg-fill" href="#file-pdf"/>
 </symbol>
 <symbol id="file-png" viewBox="0 0 288 288">
     <g transform="translate(73 160) scale(.9,.9)">
-        <use xlink:href="#in-tx-p"/><use x="50" xlink:href="#in-tx-n"/><use x="103" xlink:href="#in-tx-g"/>
+        <use href="#in-tx-p"/><use x="50" href="#in-tx-n"/><use x="103" href="#in-tx-g"/>
     </g>
-    <use class="svg-sub" xlink:href="#file"/>
+    <use class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-png-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-png"/>
+    <use class="svg-fill" href="#file-png"/>
 </symbol>
 <symbol id="file-ppt" viewBox="0 0 288 288">
     <g transform="translate(77 160) scale(.9,.9)">
-        <use xlink:href="#in-tx-p"/><use x="52" xlink:href="#in-tx-p"/><use x="103" xlink:href="#in-tx-t"/>
+        <use href="#in-tx-p"/><use x="52" href="#in-tx-p"/><use x="103" href="#in-tx-t"/>
     </g>
-    <use class="svg-sub" xlink:href="#file"/>
+    <use class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-ppt-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-ppt"/>
+    <use class="svg-fill" href="#file-ppt"/>
 </symbol>
 <symbol id="file-pptx" viewBox="0 0 288 288">
     <g transform="translate(57 160) scale(.9,.9)">
-        <use xlink:href="#in-tx-p"/><use x="45" xlink:href="#in-tx-p"/><use x="89" xlink:href="#in-tx-t"/><use x="133" xlink:href="#in-tx-x"/>
+        <use href="#in-tx-p"/><use x="45" href="#in-tx-p"/><use x="89" href="#in-tx-t"/><use x="133" href="#in-tx-x"/>
     </g>
-    <use class="svg-sub" xlink:href="#file"/>
+    <use class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-pptx-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-pptx"/>
+    <use class="svg-fill" href="#file-pptx"/>
 </symbol>
 <symbol id="file-rar" viewBox="0 0 288 288">
     <g transform="translate(77 160) scale(.9,.9)">
-        <use xlink:href="#in-tx-r"/><use x="45" xlink:href="#in-tx-a"/><use x="103" xlink:href="#in-tx-r"/>
+        <use href="#in-tx-r"/><use x="45" href="#in-tx-a"/><use x="103" href="#in-tx-r"/>
     </g>
-    <use class="svg-sub" xlink:href="#file"/>
+    <use class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-rar-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-rar"/>
+    <use class="svg-fill" href="#file-rar"/>
 </symbol>
 <symbol id="file-svg" viewBox="0 0 288 288">
     <g transform="translate(79 160) scale(.9,.9)">
-        <use xlink:href="#in-tx-s"/><use x="40" xlink:href="#in-tx-v"/><use x="97" xlink:href="#in-tx-g"/>
+        <use href="#in-tx-s"/><use x="40" href="#in-tx-v"/><use x="97" href="#in-tx-g"/>
     </g>
-    <use class="svg-sub" xlink:href="#file"/>
+    <use class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-svg-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-svg"/>
+    <use class="svg-fill" href="#file-svg"/>
 </symbol>
 <symbol id="file-tiff" viewBox="0 0 288 288">
     <g transform="translate(65 160) scale(.9,.9)">
-        <use xlink:href="#in-tx-t"/><use x="53" xlink:href="#in-tx-i"/><use x="83" xlink:href="#in-tx-f"/><use x="133" xlink:href="#in-tx-f"/>
+        <use href="#in-tx-t"/><use x="53" href="#in-tx-i"/><use x="83" href="#in-tx-f"/><use x="133" href="#in-tx-f"/>
     </g>
-    <use class="svg-sub" xlink:href="#file"/>
+    <use class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-tiff-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-tiff"/>
+    <use class="svg-fill" href="#file-tiff"/>
 </symbol>
 <symbol id="file-xls" viewBox="0 0 288 288">
     <g transform="translate(80 160) scale(.9,.9)">
-        <use xlink:href="#in-tx-x"/><use x="65" xlink:href="#in-tx-l"/><use x="110" xlink:href="#in-tx-s"/>
+        <use href="#in-tx-x"/><use x="65" href="#in-tx-l"/><use x="110" href="#in-tx-s"/>
     </g>
-    <use class="svg-sub" xlink:href="#file"/>
+    <use class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-xls-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-xls"/>
+    <use class="svg-fill" href="#file-xls"/>
 </symbol>
 <symbol id="file-xlsx" viewBox="0 0 288 288">
     <g transform="translate(60 160) scale(.9,.9)">
-        <use xlink:href="#in-tx-x"/><use x="59" xlink:href="#in-tx-l"/><use x="93" xlink:href="#in-tx-s"/><use x="127" xlink:href="#in-tx-x"/>
+        <use href="#in-tx-x"/><use x="59" href="#in-tx-l"/><use x="93" href="#in-tx-s"/><use x="127" href="#in-tx-x"/>
     </g>
-    <use class="svg-sub" xlink:href="#file"/>
+    <use class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-xlsx-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-xlsx"/>
+    <use class="svg-fill" href="#file-xlsx"/>
 </symbol>
 <symbol id="file-xml" viewBox="0 0 288 288">
     <g transform="translate(67 160) scale(.9,.9)">
-        <use xlink:href="#in-tx-x"/><use x="67" xlink:href="#in-tx-m"/><use x="130" xlink:href="#in-tx-l"/>
+        <use href="#in-tx-x"/><use x="67" href="#in-tx-m"/><use x="130" href="#in-tx-l"/>
     </g>
-    <use class="svg-sub" xlink:href="#file"/>
+    <use class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-xml-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-xml"/>
+    <use class="svg-fill" href="#file-xml"/>
 </symbol>
 <symbol id="file-zip" viewBox="0 0 288 288">
     <g transform="translate(75 160) scale(.9,.9)">
-        <use xlink:href="#in-tx-z"/><use x="67" xlink:href="#in-tx-i"/><use x="107" xlink:href="#in-tx-p"/>
+        <use href="#in-tx-z"/><use x="67" href="#in-tx-i"/><use x="107" href="#in-tx-p"/>
     </g>
-    <use class="svg-sub" xlink:href="#file"/>
+    <use class="svg-sub" href="#file"/>
 </symbol>
 <symbol id="file-zip-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#file-zip"/>
+    <use class="svg-fill" href="#file-zip"/>
 </symbol>

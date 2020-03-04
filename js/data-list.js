@@ -116,7 +116,7 @@ var dataList = {
 
         classes = classes.replace(re, ' ').replace(rex, '');
         html = '<button class="' + classes + '">' +
-                '<svg class="icon"><use xlink:href="#' + dataList.prevIcon + '"/></svg>' +
+                '<svg class="icon"><use href="#' + dataList.prevIcon + '"/></svg>' +
             '</button>\n';
 
         for (i = min; i <= max; i++) {
@@ -139,7 +139,7 @@ var dataList = {
 
         classes = classes.replace(re, ' ').replace(rex, '');
         html += '<button class="' + classes + '">' +
-                '<svg class="icon"><use xlink:href="#' + dataList.nextIcon + '"/></svg>' +
+                '<svg class="icon"><use href="#' + dataList.nextIcon + '"/></svg>' +
             '</button>\n';
 
         paging[0].innerHTML = '';
@@ -314,7 +314,7 @@ var dataList = {
             if (!events.hasClass(this, 'active')) {
 
                 events.removeClass(this, 'asc desc');
-                selector('.icon use', this)[0].setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#' + dataList.sortIcon);
+                selector('.icon use', this)[0].setAttribute('href', '#' + dataList.sortIcon);
 
             }
         });
@@ -326,14 +326,14 @@ var dataList = {
             events.removeClass(this, 'asc');
             events.addClass(this, 'desc');
 
-            selector('.icon use', this)[0].setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#' + dataList.descIcon);
+            selector('.icon use', this)[0].setAttribute('href', '#' + dataList.descIcon);
 
         } else {
 
             events.removeClass(this, 'desc');
             events.addClass(this, 'asc');
 
-            selector('.icon use', this)[0].setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#' + dataList.ascIcon);
+            selector('.icon use', this)[0].setAttribute('href', '#' + dataList.ascIcon);
 
         }
 

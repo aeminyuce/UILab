@@ -165,15 +165,15 @@ var photoGallery = {
             html = '<div class="photo-preview ease-layout">' +
                 '<div class="photo-preview-bg"></div>' +
                 '<button class="btn btn-square btn-lg btn-ghost close-photo-preview ease-btn">' +
-                    '<svg class="icon"><use xlink:href="#' + photoGallery.closeIcon + '"/></svg>' +
+                    '<svg class="icon"><use href="#' + photoGallery.closeIcon + '"/></svg>' +
                 '</button>' +
                 '<button type="button" class="preview-prev ease-btn">' +
-                    '<svg class="icon"><use xlink:href="#' + photoGallery.prevIcon + '"/></svg>' +
+                    '<svg class="icon"><use href="#' + photoGallery.prevIcon + '"/></svg>' +
                 '</button>' +
                 '<button type="button" class="preview-next ease-btn">' +
-                    '<svg class="icon"><use xlink:href="#' + photoGallery.nextIcon + '"/></svg>' +
+                    '<svg class="icon"><use href="#' + photoGallery.nextIcon + '"/></svg>' +
                 '</button>' +
-                '<svg class="preview-loader icon"><use xlink:href="#' + photoGallery.loaderIcon + '"/></svg>' +
+                '<svg class="preview-loader icon"><use href="#' + photoGallery.loaderIcon + '"/></svg>' +
                 '<span class="preview-info ease-layout"></span>' +
                 '<img class="ease-layout">' +
             '</div>';
@@ -213,7 +213,7 @@ var photoGallery = {
             function notLoadedImage() {
 
                 events.addClass(loader, 'pause');
-                selector('use', loader)[0].setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#' + photoGallery.errorIcon);
+                selector('use', loader)[0].setAttribute('href', '#' + photoGallery.errorIcon);
 
             }
 
@@ -329,7 +329,7 @@ var photoGallery = {
                 events.show(loader);
 
                 events.removeClass(loader, 'pause');
-                selector('use', loader)[0].setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#' + photoGallery.loaderIcon);
+                selector('use', loader)[0].setAttribute('href', '#' + photoGallery.loaderIcon);
 
                 toggleGalleryTools();
 

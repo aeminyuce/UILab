@@ -75,7 +75,7 @@ var topButton = {
         styles = styles.replace(re, ' ').replace(rex, '');
 
         html = '<button class="top-button ' + styles + ' ease-layout" title="' + topButton.titleText + '">' +
-                '<svg class="icon ease-layout"><use xlink:href="#' + topButton.icon + '"/></svg>' +
+                '<svg class="icon ease-layout"><use href="#' + topButton.icon + '"/></svg>' +
             '</button>';
 
         selector('body')[0].insertAdjacentHTML('beforeend', html);

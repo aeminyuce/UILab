@@ -117,7 +117,7 @@ var alerts = {
                 cancelCloseDialog = true;
 
                 closeBtn = '<button class="close-alert ease-layout">' +
-                        '<svg class="icon"><use xlink:href="#' + alerts.closeIcon + '"/></svg>' +
+                        '<svg class="icon"><use href="#' + alerts.closeIcon + '"/></svg>' +
                     '</button>';
             }
 

@@ -5,57 +5,57 @@
 </symbol>
 
 <symbol id="touch" viewBox="-12 -12 288 288">
-    <use xlink:href="#in-touch"/>
+    <use href="#in-touch"/>
 </symbol>
 <symbol id="touch-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#touch"/>
+    <use class="svg-fill" href="#touch"/>
 </symbol>
 <symbol id="touch-dual" viewBox="-12 -12 288 288">
     <path d="M155.9 57.8a67.2 67.2 0 00-14.2-41M155.9 57.8a67.2 67.2 0 00-14.2-41M12 57.8a67.2 67.2 0 0114.2-41"/>
-    <use x="-25" xlink:href="#in-touch"/>
+    <use x="-25" href="#in-touch"/>
 </symbol>
 <symbol id="touch-dual-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#touch-dual"/>
+    <use class="svg-fill" href="#touch-dual"/>
 </symbol>
 <symbol id="swipe" viewBox="-12 -12 288 288">
     <path class="svg-line" d="M230.3 38.3L252 60l-21.8 21.8 M252 60h-88 M185.8 38.3L164 60 186 81.8"/>
-    <use x="-25" xlink:href="#in-touch"/>
+    <use x="-25" href="#in-touch"/>
 </symbol>
 <symbol id="swipe-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#swipe"/>
+    <use class="svg-fill" href="#swipe"/>
 </symbol>
 <symbol id="swipe-down" viewBox="-12 -12 288 288">
     <path class="svg-line" d="M208 108V20 M229.8 86.4L208 108l-21.9-21.8"/>
-    <use x="-25" xlink:href="#in-touch"/>
+    <use x="-25" href="#in-touch"/>
 </symbol>
 <symbol id="swipe-down-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#swipe-down"/>
+    <use class="svg-fill" href="#swipe-down"/>
 </symbol>
 <symbol id="swipe-left" viewBox="-12 -12 288 288">
     <path class="svg-line" d="M252 61h-88 M185.8 39.3L164 61 186 82.8"/>
-    <use x="-25" xlink:href="#in-touch"/>
+    <use x="-25" href="#in-touch"/>
 </symbol>
 <symbol id="swipe-left-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#swipe-left"/>
+    <use class="svg-fill" href="#swipe-left"/>
 </symbol>
 <symbol id="swipe-right" viewBox="-12 -12 288 288">
     <path class="svg-line" d="M230.3 39.3L252 61l-21.8 21.8 M252 61h-88"/>
-    <use x="-25" xlink:href="#in-touch"/>
+    <use x="-25" href="#in-touch"/>
 </symbol>
 <symbol id="swipe-right-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#swipe-right"/>
+    <use class="svg-fill" href="#swipe-right"/>
 </symbol>
 <symbol id="swipe-up" viewBox="-12 -12 288 288">
     <path class="svg-line" d="M229.8 41.7L208 20l-21.9 21.8 M208 20v88"/>
-    <use x="-25" xlink:href="#in-touch"/>
+    <use x="-25" href="#in-touch"/>
 </symbol>
 <symbol id="swipe-up-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#swipe-up"/>
+    <use class="svg-fill" href="#swipe-up"/>
 </symbol>
 <symbol id="pinch" viewBox="12 -8 288 288">
     <path class="svg-line" d="M81 109a42.1 42.1 0 00-27.5 7.1C36 128.4 30.2 153 42 175.5 M213.2 67.3V98h30.9 M275.3 35.7L213.1 98 M244.7 35.8h30.7v30.9"/>
-    <use x="16" y="2" xlink:href="#in-touch"/>
+    <use x="16" y="2" href="#in-touch"/>
 </symbol>
 <symbol id="pinch-fill" viewBox="0 0 288 288">
-    <use class="svg-fill" xlink:href="#pinch"/>
+    <use class="svg-fill" href="#pinch"/>
 </symbol>

@@ -294,7 +294,7 @@ var modal = {
                     if (closeBtn === undefined) {
 
                         closeBtn = '<button class="close-modal ease-btn">' +
-                                        '<svg class="icon"><use xlink:href="#' + modal.closeIcon + '"/></svg>' +
+                                        '<svg class="icon"><use href="#' + modal.closeIcon + '"/></svg>' +
                                     '</button>';
 
                         content.insertAdjacentHTML('afterbegin', closeBtn);

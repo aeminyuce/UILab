@@ -350,7 +350,7 @@
                         <input name="css" class="generate-import" type="file">
                         <span class="btn circle padding-20-h block ease-btn">
                             <span class="inline-block">Import from CSS File</span>
-                            <svg class="icon margin-5-l"><use xlink:href="#import"/></svg>
+                            <svg class="icon margin-5-l"><use href="#import"/></svg>
                         </span>
                     </div>
 
@@ -835,10 +835,10 @@
                                 <div class="border-t border-dual">
                                     <div class="inline-block padding-5-r">
                                         <button title="Clear form!" class="generate-clear btn btn-square btn-ghost left ease-btn">
-                                            <svg class="icon"><use xlink:href="#trash"/></svg>
+                                            <svg class="icon"><use href="#trash"/></svg>
                                         </button>
                                         <button title="Minify code" class="generate-min btn btn-square btn-ghost ease-btn">
-                                            <svg class="icon"><use xlink:href="#code"/></svg>
+                                            <svg class="icon"><use href="#code"/></svg>
                                         </button>
                                     </div>
                                     File size:
@@ -850,7 +850,7 @@
                                 <span class="sp15 visible-xs"></span>
                                 <button class="generate-btn btn btn-xs-fluid round ui-dark">Generate CSS</button>
                                 <button title="Copy to clipboard!" class="generate-copy btn btn-xs-fluid round">
-                                    <svg class="icon"><use xlink:href="#files-fill"/></svg> Copy to clipboard
+                                    <svg class="icon"><use href="#files-fill"/></svg> Copy to clipboard
                                 </button>
                             </div>
 
@@ -865,7 +865,7 @@
                         <input name="js" class="generate-import" type="file">
                         <span class="btn circle padding-20-h block ease-btn">
                             <span class="inline-block">Import from JS File</span>
-                            <svg class="icon margin-5-l"><use xlink:href="#import"/></svg>
+                            <svg class="icon margin-5-l"><use href="#import"/></svg>
                         </span>
                     </div>
 
@@ -1248,10 +1248,10 @@
                                 <div class="border-t border-dual">
                                     <div class="inline-block padding-5-r">
                                         <button title="Clear form!" class="generate-clear btn btn-square btn-ghost left ease-btn">
-                                            <svg class="icon"><use xlink:href="#trash"/></svg>
+                                            <svg class="icon"><use href="#trash"/></svg>
                                         </button>
                                         <button title="Minify code" class="generate-min btn btn-square btn-ghost ease-btn">
-                                            <svg class="icon"><use xlink:href="#code"/></svg>
+                                            <svg class="icon"><use href="#code"/></svg>
                                         </button>
                                     </div>
                                     File size:
@@ -1263,7 +1263,7 @@
                                 <span class="sp15 visible-xs"></span>
                                 <button class="generate-btn btn btn-xs-fluid round ui-dark">Generate JS</button>
                                 <button title="Copy to clipboard!" class="generate-copy btn btn-xs-fluid round">
-                                    <svg class="icon"><use xlink:href="#files-fill"/></svg> Copy to clipboard
+                                    <svg class="icon"><use href="#files-fill"/></svg> Copy to clipboard
                                 </button>
                             </div>
 
@@ -1379,10 +1379,10 @@
                                 <div class="border-t border-dual">
                                     <div class="inline-block padding-5-r">
                                         <button title="Clear form!" class="generate-clear btn btn-square btn-ghost left ease-btn">
-                                            <svg class="icon"><use xlink:href="#trash"/></svg>
+                                            <svg class="icon"><use href="#trash"/></svg>
                                         </button>
                                         <button title="Minify code" class="generate-min btn btn-square btn-ghost ease-btn">
-                                            <svg class="icon"><use xlink:href="#code"/></svg>
+                                            <svg class="icon"><use href="#code"/></svg>
                                         </button>
                                     </div>
                                     File size:
@@ -1394,7 +1394,7 @@
                                 <span class="sp15 visible-xs"></span>
                                 <button class="generate-btn btn btn-xs-fluid round ui-dark" data-type="icons">Generate Icons</button>
                                 <button title="Copy to clipboard!" class="generate-copy btn btn-xs-fluid round">
-                                    <svg class="icon"><use xlink:href="#files-fill"/></svg> Copy to clipboard
+                                    <svg class="icon"><use href="#files-fill"/></svg> Copy to clipboard
                                 </button>
                             </div>
 

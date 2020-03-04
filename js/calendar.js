@@ -165,14 +165,14 @@ var calendar = {
             html += '>' +
                 '<caption>' +
                     '<button type="button" tabindex="-1" class="calendar-prev">' +
-                        '<svg class="icon"><use xlink:href="#' + calendar.prevIcon + '"/></svg>' +
+                        '<svg class="icon"><use href="#' + calendar.prevIcon + '"/></svg>' +
                     '</button>' +
                     '<span class="calendar-title ease-bg">' +
                         '<button type="button" tabindex="-1" class="calendar-month">' + calendar.months[date.getMonth()] + '</button>' +
                         '<button type="button" tabindex="-1" class="calendar-year">' + date.getFullYear() + '</button>' +
                     '</span>' +
                     '<button type="button" tabindex="-1" class="calendar-next">' +
-                        '<svg class="icon"><use xlink:href="#' + calendar.nextIcon + '"/></svg>' +
+                        '<svg class="icon"><use href="#' + calendar.nextIcon + '"/></svg>' +
                     '</button>' +
                 '</caption>' +
                 '<thead>';
@@ -346,7 +346,7 @@ var calendar = {
 
                                 details = '<div class="details">' +
                                             '<button class="toggle-details" type="button" tabindex="-1">' +
-                                                '<svg class="icon"><use xlink:href="#' + calendar.backIcon + '"/></svg>' +
+                                                '<svg class="icon"><use href="#' + calendar.backIcon + '"/></svg>' +
                                             '</button>' +
                                         '<ul>' + details + '</ul>' +
                                     '</div>';
@@ -357,7 +357,7 @@ var calendar = {
 
                                 details = '<div class="details no-details">' +
                                         '<button class="toggle-details" type="button" tabindex="-1">' +
-                                            '<svg class="icon"><use xlink:href="#' + calendar.backIcon + '"/></svg>' +
+                                            '<svg class="icon"><use href="#' + calendar.backIcon + '"/></svg>' +
                                         '</button>' +
                                         '<ul>' +
                                             '<li>' +

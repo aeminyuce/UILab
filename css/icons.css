@@ -2,9 +2,10 @@
 .icon { vertical-align: middle; width: 20px; height: 20px; display: inline-block; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 26px; }
 
 .svg-fill { fill: currentColor !important; }
-.svg-sub { opacity: .35; }
 .svg-line { fill: none !important; }
 .svg-solid { fill: currentColor !important; stroke: none !important; }
+
+.svg-sub { opacity: .4; }
 
 .icon-xxs { width: 12px !important; height: 12px !important; stroke-width: 44px !important; }
 .icon-xs { width: 14px !important; height: 14px !important; stroke-width: 38px !important; }

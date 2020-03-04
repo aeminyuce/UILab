@@ -29,7 +29,7 @@ var loadingButton = {
                 } else if (selector('.loading-spinner', l[i])[0] === undefined) {
 
                     html = '<span class="loading-spinner ease-layout">' +
-                            '<svg class="icon"><use xlink:href="#' + loadingButton.spinner + '"/></svg>' +
+                            '<svg class="icon"><use href="#' + loadingButton.spinner + '"/></svg>' +
                         '</span>' +
                         '<span class="loading-label ease-layout">' + l[i].innerHTML + '</div>';
 

@@ -16,7 +16,7 @@
 
                     <div class="card round shadow">
                         <div class="card-side padding-15 border-b">
-                            <h4><svg class="icon icon-lg"><use xlink:href="#user"/></svg>Card Title</h4>
+                            <h4><svg class="icon icon-lg"><use href="#user"/></svg>Card Title</h4>
                         </div>
                         <div class="card-side padding-15">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.<br>
@@ -37,7 +37,7 @@
 
                     <div class="card round shadow">
                         <div class="card-side padding-15 border-b">
-                            <h4><svg class="icon icon-lg"><use xlink:href="#lab"/></svg>Card Title</h4>
+                            <h4><svg class="icon icon-lg"><use href="#lab"/></svg>Card Title</h4>
                         </div>
                         <div class="card-side padding-15">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie. Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus. In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
@@ -58,11 +58,11 @@
 
                     <div class="card theme-gray padding-15 round ui-light">
                         <button class="close-card ease-btn">
-                            <svg class="icon"><use xlink:href="#remove"/></svg>
+                            <svg class="icon"><use href="#remove"/></svg>
                         </button>
                         <div class="col-static sm-fluid">
                             <div class="col-42 align-c padding-4-v">
-                                <svg class="icon icon-xl"><use xlink:href="#info-circle-fill"/></svg>
+                                <svg class="icon icon-xl"><use href="#info-circle-fill"/></svg>
                             </div>
                             <div class="row">
                                 <div class="col-12 sm-align-c large">
@@ -74,17 +74,17 @@
 
                     <div class="card round shadow">
                         <div class="card-side padding-15 border-b">
-                            <h4><svg class="icon icon-lg"><use xlink:href="#check-badge"/></svg>Card Title</h4>
+                            <h4><svg class="icon icon-lg"><use href="#check-badge"/></svg>Card Title</h4>
                         </div>
                         <div class="card-side padding-15 border-b">
 
                             <div class="card theme-gray padding-15 round ui-light">
                             <button class="close-card ease-btn">
-                                <svg class="icon"><use xlink:href="#remove"/></svg>
+                                <svg class="icon"><use href="#remove"/></svg>
                             </button>
                                 <div class="col-static sm-fluid">
                                     <div class="col-42 padding-4-v align-c">
-                                        <svg class="icon icon-xl"><use xlink:href="#info-circle-fill"/></svg>
+                                        <svg class="icon icon-xl"><use href="#info-circle-fill"/></svg>
                                     </div>
                                     <div class="row">
                                         <div class="col-12 sm-align-c large">
@@ -102,11 +102,11 @@
 
                     <div class="card theme-default padding-15 round ui-dark">
                         <button class="close-card ease-btn">
-                            <svg class="icon"><use xlink:href="#remove"/></svg>
+                            <svg class="icon"><use href="#remove"/></svg>
                         </button>
                         <div class="col-static sm-fluid">
                             <div class="col-42 align-c padding-4-v">
-                                <svg class="icon icon-xl"><use xlink:href="#alert-triangle-fill"/></svg>
+                                <svg class="icon icon-xl"><use href="#alert-triangle-fill"/></svg>
                             </div>
                             <div class="row">
                                 <div class="col-12 sm-align-c large">
@@ -118,11 +118,11 @@
 
                     <div class="card theme-default2 padding-15 round ui-dark">
                         <button class="close-card ease-btn">
-                            <svg class="icon"><use xlink:href="#remove"/></svg>
+                            <svg class="icon"><use href="#remove"/></svg>
                         </button>
                         <div class="col-static sm-fluid">
                             <div class="col-42 align-c padding-4-v">
-                                <svg class="icon icon-xl"><use xlink:href="#question-circle-fill"/></svg>
+                                <svg class="icon icon-xl"><use href="#question-circle-fill"/></svg>
                             </div>
                             <div class="row">
                                 <div class="col-12 sm-align-c large">
@@ -134,11 +134,11 @@
 
                     <div class="card theme-green padding-15 round ui-dark">
                         <button class="close-card ease-btn">
-                            <svg class="icon"><use xlink:href="#remove"/></svg>
+                            <svg class="icon"><use href="#remove"/></svg>
                         </button>
                         <div class="col-static sm-fluid">
                             <div class="col-42 align-c padding-4-v">
-                                <svg class="icon icon-xl"><use xlink:href="#alert-triangle-fill"/></svg>
+                                <svg class="icon icon-xl"><use href="#alert-triangle-fill"/></svg>
                             </div>
                             <div class="row">
                                 <div class="col-12 sm-align-c large">
@@ -150,11 +150,11 @@
 
                     <div class="card theme-yellow padding-15 round ui-dark">
                         <button class="close-card ease-btn">
-                            <svg class="icon"><use xlink:href="#remove"/></svg>
+                            <svg class="icon"><use href="#remove"/></svg>
                         </button>
                         <div class="col-static sm-fluid">
                             <div class="col-42 align-c padding-4-v">
-                                <svg class="icon icon-xl"><use xlink:href="#question-circle-fill"/></svg>
+                                <svg class="icon icon-xl"><use href="#question-circle-fill"/></svg>
                             </div>
                             <div class="row">
                                 <div class="col-12 sm-align-c large">
@@ -166,11 +166,11 @@
 
                     <div class="card theme-orange padding-15 round ui-dark">
                         <button class="close-card ease-btn">
-                            <svg class="icon"><use xlink:href="#remove"/></svg>
+                            <svg class="icon"><use href="#remove"/></svg>
                         </button>
                         <div class="col-static sm-fluid">
                             <div class="col-42 align-c padding-4-v">
-                                <svg class="icon icon-xl"><use xlink:href="#alert-triangle-fill"/></svg>
+                                <svg class="icon icon-xl"><use href="#alert-triangle-fill"/></svg>
                             </div>
                             <div class="row">
                                 <div class="col-12 sm-align-c large">
@@ -182,11 +182,11 @@
 
                     <div class="card theme-red padding-15 round ui-dark">
                         <button class="close-card ease-btn">
-                            <svg class="icon"><use xlink:href="#remove"/></svg>
+                            <svg class="icon"><use href="#remove"/></svg>
                         </button>
                         <div class="col-static sm-fluid">
                             <div class="col-42 align-c padding-4-v">
-                                <svg class="icon icon-xl"><use xlink:href="#question-circle-fill"/></svg>
+                                <svg class="icon icon-xl"><use href="#question-circle-fill"/></svg>
                             </div>
                             <div class="row">
                                 <div class="col-12 sm-align-c large">
@@ -203,10 +203,10 @@
 
                     <div class="card-success padding-15 round shadow">
                         <button class="close-card ease-btn">
-                            <svg class="icon"><use xlink:href="#remove"/></svg>
+                            <svg class="icon"><use href="#remove"/></svg>
                         </button>
                         <h4 class="margin-10-b">
-                            <svg class="icon icon-lg"><use xlink:href="#comment"/></svg>
+                            <svg class="icon icon-lg"><use href="#comment"/></svg>
                             Message Title
                         </h4>
                         <p class="large light">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
@@ -214,10 +214,10 @@
 
                     <div class="card-danger padding-15 round shadow">
                         <button class="close-card ease-btn">
-                            <svg class="icon"><use xlink:href="#remove"/></svg>
+                            <svg class="icon"><use href="#remove"/></svg>
                         </button>
                         <h4 class="margin-10-b">
-                            <svg class="icon icon-lg"><use xlink:href="#comment-lines-fill"/></svg>
+                            <svg class="icon icon-lg"><use href="#comment-lines-fill"/></svg>
                             Message Title
                         </h4>
                         <p class="large light">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
@@ -225,10 +225,10 @@
 
                     <div class="card-warning padding-15 round">
                         <button class="close-card ease-btn">
-                            <svg class="icon"><use xlink:href="#remove"/></svg>
+                            <svg class="icon"><use href="#remove"/></svg>
                         </button>
                         <h4 class="margin-10-b">
-                            <svg class="icon icon-lg"><use xlink:href="#comment"/></svg>
+                            <svg class="icon icon-lg"><use href="#comment"/></svg>
                             Message Title
                         </h4>
                         <p class="large light">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
@@ -236,10 +236,10 @@
 
                     <div class="card-info padding-15 round shadow">
                         <button class="close-card ease-btn">
-                            <svg class="icon"><use xlink:href="#remove"/></svg>
+                            <svg class="icon"><use href="#remove"/></svg>
                         </button>
                         <h4 class="margin-10-b">
-                            <svg class="icon icon-lg"><use xlink:href="#comment-lines-fill"/></svg>
+                            <svg class="icon icon-lg"><use href="#comment-lines-fill"/></svg>
                             Message Title
                         </h4>
                         <p class="large light">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
@@ -251,14 +251,14 @@
                 <div class="card round theme-default2 ui-x-light ui-border">
                     <div class="card-side padding-30">
                         <h4 class="margin-10-b">
-                            <svg class="icon icon-xl"><use xlink:href="#help-fill"/></svg>
+                            <svg class="icon icon-xl"><use href="#help-fill"/></svg>
                             Card Title
                         </h4>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
                         <span class="sp15"></span>
                         <a href="#" class="btn btn-xs-fluid circle ui-dark ease-btn">
                             Outgoing Link
-                            <svg class="icon margin-5-l"><use xlink:href="#link"/></svg>
+                            <svg class="icon margin-5-l"><use href="#link"/></svg>
                         </a>
                     </div>
                     <div class="card-side padding-30-h padding-15-v ui-light align-r xs-align-c">
@@ -269,14 +269,14 @@
                 <div class="card round theme-default ui-x-light ui-border">
                     <div class="card-side padding-30">
                         <h4 class="margin-10-b">
-                            <svg class="icon icon-xl"><use xlink:href="#help"/></svg>
+                            <svg class="icon icon-xl"><use href="#help"/></svg>
                             Card Title
                         </h4>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
                         <span class="sp15"></span>
                         <a href="#" class="btn btn-xs-fluid circle ui-dark ease-btn">
                             Outgoing Link
-                            <svg class="icon margin-5-l"><use xlink:href="#link"/></svg>
+                            <svg class="icon margin-5-l"><use href="#link"/></svg>
                         </a>
                     </div>
                     <div class="card-side padding-30-h padding-15-v ui-light align-r xs-align-c">
@@ -286,40 +286,40 @@
 
                 <div class="card-warning padding-30 round theme-default ui-x-light ui-border">
                     <h4 class="margin-10-b">
-                        <svg class="icon icon-xl"><use xlink:href="#help-fill"/></svg>
+                        <svg class="icon icon-xl"><use href="#help-fill"/></svg>
                         Message Title
                     </h4>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
                     <span class="sp15"></span>
                     <a href="#" class="btn btn-xs-fluid circle ui-dark ease-btn">
                         Outgoing Link
-                        <svg class="icon margin-5-l"><use xlink:href="#link"/></svg>
+                        <svg class="icon margin-5-l"><use href="#link"/></svg>
                     </a>
                 </div>
 
                 <div class="card-warning padding-30 round theme-green ui-x-light ui-border">
                     <h4 class="margin-10-b">
-                        <svg class="icon icon-xl"><use xlink:href="#help"/></svg>
+                        <svg class="icon icon-xl"><use href="#help"/></svg>
                         Message Title
                     </h4>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
                     <span class="sp15"></span>
                     <a href="#" class="btn btn-xs-fluid circle ui-dark ease-btn">
                         Outgoing Link
-                        <svg class="icon margin-5-l"><use xlink:href="#link"/></svg>
+                        <svg class="icon margin-5-l"><use href="#link"/></svg>
                     </a>
                 </div>
 
                 <div class="card-warning padding-30 round theme-yellow ui-x-light ui-border">
                     <h4 class="margin-10-b">
-                        <svg class="icon icon-xl"><use xlink:href="#help-fill"/></svg>
+                        <svg class="icon icon-xl"><use href="#help-fill"/></svg>
                         Message Title
                     </h4>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
                     <span class="sp15"></span>
                     <a href="#" class="btn btn-xs-fluid circle ui-dark ease-btn">
                         Outgoing Link
-                        <svg class="icon margin-5-l"><use xlink:href="#link"/></svg>
+                        <svg class="icon margin-5-l"><use href="#link"/></svg>
                     </a>
                 </div>
 

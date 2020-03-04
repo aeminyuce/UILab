@@ -87,62 +87,62 @@
                 <div class="row xs-fluid align-l padding-30-b icons-margin-5-l block-2nd ease-2nd-btn">
                     <div class="col-6">
                         <a class="btn btn-ghost btn-lg circle border" href="#">
-                            Large Button <svg class="icon right"><use xlink:href="#settings"/></svg>
+                            Large Button <svg class="icon right"><use href="#settings"/></svg>
                         </a>
                     </div>
                     <div class="col-6">
                         <a class="btn btn-ghost btn-lg circle border" href="#">
-                            Large Button <svg class="icon right"><use xlink:href="#settings"/></svg>
+                            Large Button <svg class="icon right"><use href="#settings"/></svg>
                         </a>
                     </div>
                     <div class="col-6">
                         <a class="btn btn-ghost circle border" href="#">
-                            Default Button <svg class="icon right"><use xlink:href="#settings"/></svg>
+                            Default Button <svg class="icon right"><use href="#settings"/></svg>
                         </a>
                     </div>
                     <div class="col-6">
                         <a class="btn btn-ghost btn-sm circle border" href="#">
-                            Small Button <svg class="icon right"><use xlink:href="#settings"/></svg>
+                            Small Button <svg class="icon right"><use href="#settings"/></svg>
                         </a>
                     </div>
                     <div class="col-6">
                         <a class="btn btn-ghost btn-xs circle border" href="#">
-                            Extra Small Button <svg class="icon right"><use xlink:href="#settings"/></svg>
+                            Extra Small Button <svg class="icon right"><use href="#settings"/></svg>
                         </a>
                     </div>
                     <div class="col-6">
                         <a class="btn btn-ghost btn-xxs circle border" href="#">
-                            2x Extra Small Button <svg class="icon right"><use xlink:href="#settings"/></svg>
+                            2x Extra Small Button <svg class="icon right"><use href="#settings"/></svg>
                         </a>
                     </div>
                     <div class="col-6">
                         <a class="btn btn-lg circle" href="#">
-                            Large Button <svg class="icon right"><use xlink:href="#comment"/></svg>
+                            Large Button <svg class="icon right"><use href="#comment"/></svg>
                         </a>
                     </div>
                     <div class="col-6">
                         <a class="btn btn-lg circle" href="#">
-                            Large Button <svg class="icon right"><use xlink:href="#comment"/></svg>
+                            Large Button <svg class="icon right"><use href="#comment"/></svg>
                         </a>
                     </div>
                     <div class="col-6">
                         <a class="btn circle" href="#">
-                            Default Button <svg class="icon right"><use xlink:href="#comment"/></svg>
+                            Default Button <svg class="icon right"><use href="#comment"/></svg>
                         </a>
                     </div>
                     <div class="col-6">
                         <a class="btn btn-sm circle" href="#">
-                            Small Button <svg class="icon right"><use xlink:href="#comment"/></svg>
+                            Small Button <svg class="icon right"><use href="#comment"/></svg>
                         </a>
                     </div>
                     <div class="col-6">
                         <a class="btn btn-xs circle" href="#">
-                            Extra Small Button <svg class="icon right"><use xlink:href="#comment"/></svg>
+                            Extra Small Button <svg class="icon right"><use href="#comment"/></svg>
                         </a>
                     </div>
                     <div class="col-6">
                         <a class="btn btn-xxs circle" href="#">
-                            2x Extra Small Button <svg class="icon right"><use xlink:href="#comment"/></svg>
+                            2x Extra Small Button <svg class="icon right"><use href="#comment"/></svg>
                         </a>
                     </div>
                 </div>
@@ -150,26 +150,26 @@
                 <h4>Square Buttons</h4>
                 <div class="padding-30-b sm-align-c theme-default2 ease-1st-btn">
                     <a class="btn btn-square btn-lg round ui-dark" href="#">
-                        <svg class="icon"><use xlink:href="#trash"/></svg>
+                        <svg class="icon"><use href="#trash"/></svg>
                     </a>
                     <a class="btn btn-square round ui-dark" href="#">
-                        <svg class="icon"><use xlink:href="#trash"/></svg>
+                        <svg class="icon"><use href="#trash"/></svg>
                     </a>
                     <a class="btn btn-square btn-sm round ui-dark" href="#">
-                        <svg class="icon"><use xlink:href="#trash"/></svg>
+                        <svg class="icon"><use href="#trash"/></svg>
                     </a>
                     <a class="btn btn-square btn-xs round ui-dark" href="#">
-                        <svg class="icon"><use xlink:href="#trash"/></svg>
+                        <svg class="icon"><use href="#trash"/></svg>
                     </a>
                     <a class="btn btn-square btn-xxs round ui-dark" href="#">
-                        <svg class="icon"><use xlink:href="#trash"/></svg>
+                        <svg class="icon"><use href="#trash"/></svg>
                     </a>
                 </div>
 
                 <h4>Responsive Buttons</h4>
                 <div class="padding-30-b form-lg ease-1st-btn">
                     <a class="btn btn-square round btn-xs-fluid" href="#">
-                        <svg class="icon"><use xlink:href="#filter"/></svg>
+                        <svg class="icon"><use href="#filter"/></svg>
                     </a>
                     <a class="btn round btn-md-fluid" href="#">MD Responsive Button</a>
                     <a class="btn round btn-sm-fluid" href="#">SM Responsive Button</a>
@@ -233,10 +233,10 @@
                 <h4>Pagination Buttons</h4>
                 <div class="pagination align-c theme-default2 ease-1st-btn">
                     <a class="btn prev round" href="#">
-                        <svg class="icon"><use xlink:href="#angle-dual-left"/></svg>
+                        <svg class="icon"><use href="#angle-dual-left"/></svg>
                     </a>
                     <a class="btn prev round" href="#">
-                        <svg class="icon"><use xlink:href="#angle-left"/></svg>
+                        <svg class="icon"><use href="#angle-left"/></svg>
                     </a>
                     <a class="btn round" href="#">1</a>
                     <a class="btn btn-active round ui-dark" href="#">2</a>
@@ -245,18 +245,18 @@
                     <a class="btn btn-passive round" href="#">...</a>
                     <a class="btn round" href="#">10</a>
                     <a class="btn next round" href="#">
-                        <svg class="icon"><use xlink:href="#angle-right"/></svg>
+                        <svg class="icon"><use href="#angle-right"/></svg>
                     </a>
                     <a class="btn next round" href="#">
-                        <svg class="icon"><use xlink:href="#angle-dual-right"/></svg>
+                        <svg class="icon"><use href="#angle-dual-right"/></svg>
                     </a>
                 </div>
                 <div class="pagination form-lg align-c padding-30-b theme-default2 ease-1st-btn">
                     <a class="btn prev round" href="#">
-                        <svg class="icon"><use xlink:href="#angle-dual-left"/></svg>
+                        <svg class="icon"><use href="#angle-dual-left"/></svg>
                     </a>
                     <a class="btn prev round" href="#">
-                        <svg class="icon"><use xlink:href="#angle-left"/></svg>
+                        <svg class="icon"><use href="#angle-left"/></svg>
                     </a>
                     <a class="btn round" href="#">1</a>
                     <a class="btn btn-active round ui-dark" href="#">2</a>
@@ -265,10 +265,10 @@
                     <a class="btn btn-passive round" href="#">...</a>
                     <a class="btn round" href="#">10</a>
                     <a class="btn next round" href="#">
-                        <svg class="icon"><use xlink:href="#angle-right"/></svg>
+                        <svg class="icon"><use href="#angle-right"/></svg>
                     </a>
                     <a class="btn next round" href="#">
-                        <svg class="icon"><use xlink:href="#angle-dual-right"/></svg>
+                        <svg class="icon"><use href="#angle-dual-right"/></svg>
                     </a>
                 </div>
 
@@ -297,52 +297,52 @@
                     <div class="col-6">
                         <div class="btn-list align-l icons-margin-10-r form-lg ease-1st-btn">
                             <button class="btn">
-                                <svg class="icon"><use xlink:href="#shield"/></svg>Administration
+                                <svg class="icon"><use href="#shield"/></svg>Administration
                             </button>
                             <button class="btn">
-                                <svg class="icon"><use xlink:href="#clock"/></svg>Recent History
+                                <svg class="icon"><use href="#clock"/></svg>Recent History
                             </button>
                             <button class="btn">
-                                <svg class="icon"><use xlink:href="#settings"/></svg>Tools
+                                <svg class="icon"><use href="#settings"/></svg>Tools
                             </button>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="btn-list align-l icons-margin-10-r form-lg ease-1st-btn">
                             <button class="btn round">
-                                <svg class="icon"><use xlink:href="#shield"/></svg>Administration
+                                <svg class="icon"><use href="#shield"/></svg>Administration
                             </button>
                             <button class="btn round">
-                                <svg class="icon"><use xlink:href="#clock"/></svg>Recent History
+                                <svg class="icon"><use href="#clock"/></svg>Recent History
                             </button>
                             <button class="btn round">
-                                <svg class="icon"><use xlink:href="#settings"/></svg>Tools
+                                <svg class="icon"><use href="#settings"/></svg>Tools
                             </button>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="btn-list align-l icons-margin-10-r form-lg ease-1st-btn">
                             <button class="btn round border">
-                                <svg class="icon"><use xlink:href="#shield"/></svg>Administration
+                                <svg class="icon"><use href="#shield"/></svg>Administration
                             </button>
                             <button class="btn round border">
-                                <svg class="icon"><use xlink:href="#clock"/></svg>Recent History
+                                <svg class="icon"><use href="#clock"/></svg>Recent History
                             </button>
                             <button class="btn round border">
-                                <svg class="icon"><use xlink:href="#settings"/></svg>Tools
+                                <svg class="icon"><use href="#settings"/></svg>Tools
                             </button>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="btn-list align-l icons-margin-10-r form-lg ease-1st-btn">
                             <button class="btn round border-dual">
-                                <svg class="icon"><use xlink:href="#shield"/></svg>Administration
+                                <svg class="icon"><use href="#shield"/></svg>Administration
                             </button>
                             <button class="btn round border-dual">
-                                <svg class="icon"><use xlink:href="#clock"/></svg>Recent History
+                                <svg class="icon"><use href="#clock"/></svg>Recent History
                             </button>
                             <button class="btn round border-dual">
-                                <svg class="icon"><use xlink:href="#settings"/></svg>Tools
+                                <svg class="icon"><use href="#settings"/></svg>Tools
                             </button>
                         </div>
                     </div>

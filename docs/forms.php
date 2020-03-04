@@ -88,7 +88,7 @@
                             <div class="col-32">
                                 <button class="btn btn-square btn-ghost border-dual ease-btn">
                                     <!-- for loading toggle "animate-spin" -->
-                                    <svg class="icon animate-spin"><use xlink:href="#sync"/></svg>
+                                    <svg class="icon animate-spin"><use href="#sync"/></svg>
                                 </button>
                             </div>
                             <div class="row row-no-gap">
@@ -160,7 +160,7 @@
                                 <div class="col-42">
                                     <button class="btn btn-square btn-ghost border-dual ease-btn">
                                         <!-- for loading toggle "animate-spin" -->
-                                        <svg class="icon icon-lg animate-spin"><use xlink:href="#sync" /></svg>
+                                        <svg class="icon icon-lg animate-spin"><use href="#sync" /></svg>
                                     </button>
                                 </div>
                                 <div class="row row-no-gap">
@@ -1648,7 +1648,7 @@
                         <div class="col-32">
                             <button class="btn btn-square btn-ghost border-dual border-light ease-btn">
                                 <!-- for loading toggle "animate-spin" -->
-                                <svg class="icon animate-spin"><use xlink:href="#sync"/></svg>
+                                <svg class="icon animate-spin"><use href="#sync"/></svg>
                             </button>
                         </div>
                         <div class="row row-no-gap">
