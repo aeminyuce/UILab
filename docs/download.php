@@ -557,7 +557,7 @@
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
-                                        <input type="checkbox" name="icons notifiers" value="../css/icons-notifiers.css">
+                                        <input type="checkbox" name="notifiers" value="../css/notifiers.css">
                                         <i class="ui-dark state"></i>
                                     </span>
                                     Notifiers

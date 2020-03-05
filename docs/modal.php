@@ -249,7 +249,9 @@
                 <div class="row row-no-gap-h">
                     <div class="col-12 ease-1st-form">
                         <div class="text text-icon has-clear round-l no-border shadow-in-sm theme-gray ui-x-light ease-form">
-                            <button type="button" class="clear-form icon icon-remove"></button>
+                            <button type="button" class="clear-form">
+                                <svg class="icon"><use href="#remove"></use></svg>
+                            </button>
                             <input class="required" type="text" placeholder="Search">
                         </div>
                         <p class="required-msg large">Please, enter a keyword.</p>
@@ -257,7 +259,7 @@
                 </div>
                 <div class="col-100 col-xs-50 padding-10-v">
                     <button class="btn block round-r theme-default2 ui-dark ease-btn" type="submit">
-                        <i class="icon icon-lg icon-search"></i>
+                        <svg class="icon"><use href="#search"></use></svg>
                     </button>
                 </div>
             </div>
@@ -265,21 +267,21 @@
             <div class="row xs-fluid block-2nd icons-no-opacity hover-t-more-2nd icons-margin-5-v theme-gray form-lg ease-2nd-btn">
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-x-light" href="#">
-                        <i class="icon icon-xl icon-news theme-default2 ui-text"></i>
+                        <svg class="icon icon-xxl theme-default2 ui-text"><use href="#news-fill"></use></svg>
                         <span class="block margin-5-v">News</span>
                         <span class="dark">589</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-x-light" href="#">
-                        <i class="icon icon-xl icon-calendar-check theme-default2 ui-text"></i>
+                        <svg class="icon icon-xxl theme-default2 ui-text"><use href="#calendar-check-fill"></use></svg>
                         <span class="block margin-5-v">Events</span>
                         <span class="dark">219</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-x-light" href="#">
-                        <i class="icon icon-xl icon-files theme-default2 ui-text"></i>
+                        <svg class="icon icon-xxl theme-default2 ui-text"><use href="#files-fill"></use></svg>
                         <span class="block margin-5-v">Documents</span>
                         <span class="dark">701</span>
                     </a>

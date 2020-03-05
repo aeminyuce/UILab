@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="../css/autocomplete.css"/>
 
     <link rel="stylesheet" href="../css/icons.css"/>
-    <link rel="stylesheet" href="../css/icons-notifiers.css"/>
+    <link rel="stylesheet" href="../css/notifiers.css"/>
 
     <link rel="stylesheet" href="../css/list-group.css"/>
     <link rel="stylesheet" href="../css/card.css"/>
@@ -198,7 +198,7 @@
                         <li><a class="btn btn-ghost" href="?p=image-uploader">Image Uploader</a></li>
                         <li><a class="btn btn-ghost" href="?p=list-group">List Group</a></li>
                         <li><a class="btn btn-ghost" href="?p=modal">Modal</a></li>
-                        <li><a class="btn btn-ghost" href="?p=notifier-icons">Notifier Icons</a></li>
+                        <li><a class="btn btn-ghost" href="?p=notifiers">Notifiers</a></li>
                         <li><a class="btn btn-ghost" href="?p=photo-images">Photo Images</a></li>
                         <li><a class="btn btn-ghost" href="?p=pricing-tables">Pricing Tables</a></li>
                         <li><a class="btn btn-ghost" href="?p=progress-bar">Progress Bar</a></li>
