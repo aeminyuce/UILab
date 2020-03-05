@@ -40,8 +40,8 @@
         <path class="svg-l" d="M136.7 68.5l-60.1 32.3V170l60-32.3z"/>
     </g>
 </symbol>
-<symbol id="in-cloud" viewBox="0 -52 288 288">
-    <path d="M55.1 165.4a47.7 47.7 0 01-12-92.2c7-35 37.1-61.2 74.2-61.2a75.1 75.1 0 0165.1 37c39.8-7.8 69.2 26 69.2 58.2a57.7 57.7 0 01-58.1 57.8z"/>
+<symbol id="in-cloud" viewBox="0 0 288 288">
+    <path d="M55.2 196C30.6 194 12 158.9 12 139.3S13.5 95.5 40.1 76c7-38.4 38.2-64 75.3-64s47.8 21 61.2 45.6c39.9-8.6 75.2 27.4 75.2 70.7S226 196 193.6 196z"/>
 </symbol>
 <symbol id="in-no" viewBox="0 0 288 288">
     <path class="svg-l" d="M61.2 20L19.5 61.7M41 10a31 31 0 11-31 31 31 31 0 0131-31z"/>
@@ -777,16 +777,16 @@
 <symbol id="clone-fill" viewBox="0 0 288 288">
     <use class="svg-f" href="#clone"/>
 </symbol>
-<symbol id="cloud-download" viewBox="-12 -52 288 288">
-    <path class="svg-l" d="M117 125V57 M88 97l29 28 27-28"/>
-    <use y="-52" class="svg-s" href="#in-cloud"/>
+<symbol id="cloud-download" viewBox="-12 -42 288 288">
+    <path class="svg-l" d="M117 144V64 M89 116l28 28 28-28"/>
+    <use class="svg-s" href="#in-cloud"/>
 </symbol>
 <symbol id="cloud-download-fill" viewBox="0 0 288 288">
     <use class="svg-f" href="#cloud-download"/>
 </symbol>
-<symbol id="cloud-upload" viewBox="-12 -52 288 288">
-    <path class="svg-l" d="M117 57v68 M88 85l29-28 27 28"/>
-    <use y="-52" class="svg-s" href="#in-cloud"/>
+<symbol id="cloud-upload" viewBox="-12 -42 288 288">
+    <path class="svg-l" d="M117 64v80 M89 92l28-28 28 28"/>
+    <use class="svg-s" href="#in-cloud"/>
 </symbol>
 <symbol id="cloud-upload-fill" viewBox="0 0 288 288">
     <use class="svg-f" href="#cloud-upload"/>

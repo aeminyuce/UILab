@@ -9,7 +9,7 @@
                     <div class="file no-border round ui-dark hover ease-form">
                         <input type="file" name="images[]" multiple>
                         <span class="btn btn-square ease-btn">
-                            <i class="icon icon-plus"></i>
+                            <svg class="icon"><use href="#plus"></use></svg>
                         </span>
                     </div>
                 </div>
@@ -18,7 +18,7 @@
                     <div class="right ease-1st-btn">
                         <div class="dropdown menu-l ease-dropdown">
                             <button type="button" title="Tags" class="btn btn-square round">
-                                <i class="icon icon-sm icon-tag"></i>
+                                <svg class="icon"><use href="#tag"></use></svg>
                             </button>
                             <ul class="content round shadow-lg">
                                 <li>Interior</li>
@@ -29,17 +29,17 @@
                             </ul>
                         </div>
                         <button type="button" title="Check" class="uploader-check btn btn-square round">
-                            <i class="icon icon-sm icon-check-square"></i>
+                            <svg class="icon"><use href="#check-square"></use></svg>
                         </button>
                         <button type="button" title="Remove" class="uploader-remove btn btn-square round">
-                            <i class="icon icon-sm icon-trash"></i>
+                            <svg class="icon"><use href="#trash"></use></svg>
                         </button>
                         <button type="button" title="Sort" class="uploader-sort btn btn-square round">
-                            <i class="icon icon-sm icon-move"></i>
+                            <svg class="icon"><use href="#move"></use></svg>
                         </button>
                         <button type="submit" name="send" class="uploader-upload btn margin-5-l round theme-green ui-dark">
                             <span class="hidden-xs margin-2-r">Upload</span>
-                            <i class="icon icon-cloud-upload"></i>
+                            <svg class="icon"><use href="#file-upload"></use></svg>
                         </button>
                     </div>
                 </div>
