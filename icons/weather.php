@@ -145,8 +145,8 @@
     <path class="svg-s" d="M52 156h16 M204 156zm-48 48a48 48 0 1048-48h-96"/>
 </symbol>
 <symbol id="wind-sock" viewBox="-12 -30 288 288">
-    <path class="svg-s" d="M20 60v160M20 52a8 8 0 11-8 8 8 8 0 018-8zM20 60l48 40M20 60l48-40"/>
-    <path d="M68 12l184 28v40L68 108z M116 19v82M164 27v66M212 34v52"/>
+    <path class="svg-s" d="M20 60v160M20 52a8 8 0 11-8 8 8 8 0 018-8zM20 60l48 40M20 60l48-40 M68 12l184 28v40L68 108z"/>
+    <path d="M116 19v82M164 27v66M212 34v52"/>
 </symbol>
 <symbol id="wind-sock-fill" viewBox="0 0 288 288">
     <use class="svg-f" href="#wind-sock"/>

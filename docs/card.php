@@ -45,7 +45,7 @@
                         <div class="card-side padding-15 align-r sm-align-c border-t ease-2nd-btn">
                             <form action="#">
                                 <button type="button" class="btn padding-30-h btn-ghost border-dual circle">Cancel</button>
-                                <button type="submit" class="btn padding-30-h circle">Show Later</button>
+                                <button type="submit" class="btn padding-30-h circle theme-yellow ui-dark">Show Later</button>
                                 <button type="submit" class="btn padding-30-h circle theme-green ui-dark">Accept</button>
                             </form>
                         </div>
@@ -62,7 +62,7 @@
                         </button>
                         <div class="col-static sm-fluid">
                             <div class="col-42 align-c padding-4-v">
-                                <svg class="icon icon-xl"><use href="#info-circle-fill"/></svg>
+                                <svg class="icon icon-xl font-red"><use href="#info-circle-fill"/></svg>
                             </div>
                             <div class="row">
                                 <div class="col-12 sm-align-c large">
@@ -84,7 +84,7 @@
                             </button>
                                 <div class="col-static sm-fluid">
                                     <div class="col-42 padding-4-v align-c">
-                                        <svg class="icon icon-xl"><use href="#info-circle-fill"/></svg>
+                                        <svg class="icon icon-xl font-red"><use href="#info-circle-fill"/></svg>
                                     </div>
                                     <div class="row">
                                         <div class="col-12 sm-align-c large">
@@ -239,7 +239,7 @@
                             <svg class="icon"><use href="#remove"/></svg>
                         </button>
                         <h4>
-                            <svg class="icon icon-lg"><use href="#comment-lines-fill"/></svg>
+                            <svg class="icon icon-lg x-dark"><use href="#comment-lines-fill"/></svg>
                             Message Title
                         </h4>
                         <p class="large light">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>

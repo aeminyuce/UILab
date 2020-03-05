@@ -11,7 +11,9 @@
                             <div class="col-6 lg-fluid">
                                 <div class="text text-icon-both round no-border ui-x-light has-clear ease-form">
                                     <svg class="icon text-icon-l"><use href="#search"></svg>
-                                    <button class="clear-form icon icon-remove"></button>
+                                    <button type="submit" class="clear-form">
+                                        <svg class="icon"><use href="#remove"></use></svg>
+                                    </button>
                                     <input class="data-filter" type="text" placeholder="Search">
                                 </div>
                                 <span class="sp5 hidden-lg"></span>
@@ -101,7 +103,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-default2 ui-text">
+                                        <ul class="steps-bar steps-icon theme-red ui-text">
                                             <li>
                                                 <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -133,7 +135,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-default2 ui-text">
+                                        <ul class="steps-bar steps-icon theme-green ui-text">
                                             <li>
                                                 <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -229,7 +231,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-default2 ui-text">
+                                        <ul class="steps-bar steps-icon theme-red ui-text">
                                             <li>
                                                 <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -261,7 +263,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-default2 ui-text">
+                                        <ul class="steps-bar steps-icon theme-green ui-text">
                                             <li>
                                                 <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -357,7 +359,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-default2 ui-text">
+                                        <ul class="steps-bar steps-icon theme-red ui-text">
                                             <li>
                                                 <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -389,7 +391,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-default2 ui-text">
+                                        <ul class="steps-bar steps-icon theme-green ui-text">
                                             <li>
                                                 <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -458,7 +460,7 @@
                                 </div>
                             </div>
                             <div class="col-8 no-fluid align-r">
-                                <div class="data-paging pagination ease-1st-btn" data-default="btn round" data-active="theme-default2 ui-dark"></div>
+                                <div class="data-paging pagination ease-1st-btn" data-default="btn round" data-active="border-dual theme-default2 ui-border ui-text"></div>
                             </div>
                         </div>
 
@@ -473,7 +475,9 @@
                         <div class="col-5 sm-no-padding-b">
                             <div class="text text-icon-both round border-dual has-clear ease-form">
                                 <svg class="icon text-icon-l"><use href="#search"></svg>
-                                <button class="clear-form icon icon-remove"></button>
+                                <button type="submit" class="clear-form">
+                                    <svg class="icon"><use href="#remove"></use></svg>
+                                </button>
                                 <input class="data-filter" type="text" placeholder="Search">
                             </div>
                         </div>
@@ -1238,7 +1242,9 @@
                         <div class="col-5 sm-no-padding-b">
                             <div class="text text-icon-both round border-dual has-clear ease-form">
                                 <svg class="icon text-icon-l"><use href="#search"></svg>
-                                <button class="clear-form icon icon-remove"></button>
+                                <button type="submit" class="clear-form">
+                                    <svg class="icon"><use href="#remove"></use></svg>
+                                </button>
                                 <input class="data-filter" type="text" placeholder="Search">
                             </div>
                         </div>

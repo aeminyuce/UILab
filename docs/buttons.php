@@ -215,7 +215,7 @@
                 </div>
 
                 <h4>Multi Buttons</h4>
-                <div class="row padding-30-b block-2nd theme-default ease-2nd-btn">
+                <div class="row padding-30-b block-2nd theme-green ease-2nd-btn">
                     <div class="col-3 col-sm-6">
                         <a href="#" class="btn btn-lg btn-multi round ui-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
                     </div>
@@ -259,7 +259,7 @@
                         <svg class="icon"><use href="#angle-left"/></svg>
                     </a>
                     <a class="btn round" href="#">1</a>
-                    <a class="btn btn-active round ui-dark" href="#">2</a>
+                    <a class="btn btn-active round border-dual ui-border ui-text" href="#">2</a>
                     <a class="btn round" href="#">3</a>
                     <a class="btn round" href="#">4</a>
                     <a class="btn btn-passive round" href="#">...</a>
@@ -295,54 +295,54 @@
                 <h4>Button List</h4>
                 <div class="row padding-30-b">
                     <div class="col-6">
-                        <div class="btn-list align-l icons-margin-10-r form-lg ease-1st-btn">
+                        <div class="btn-list align-l icons-margin-10-r form-lg icons-no-opacity theme-green ease-1st-btn">
                             <button class="btn">
-                                <svg class="icon"><use href="#shield"/></svg>Administration
+                                <svg class="icon ui-text"><use href="#shield"/></svg>Administration
                             </button>
                             <button class="btn">
-                                <svg class="icon"><use href="#clock"/></svg>Recent History
+                                <svg class="icon ui-text"><use href="#clock"/></svg>Recent History
                             </button>
                             <button class="btn">
-                                <svg class="icon"><use href="#settings"/></svg>Tools
+                                <svg class="icon ui-text"><use href="#settings"/></svg>Tools
                             </button>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="btn-list align-l icons-margin-10-r form-lg ease-1st-btn">
+                        <div class="btn-list align-l icons-margin-10-r form-lg icons-no-opacity theme-red ease-1st-btn">
                             <button class="btn round">
-                                <svg class="icon"><use href="#shield"/></svg>Administration
+                                <svg class="icon ui-text"><use href="#shield"/></svg>Administration
                             </button>
                             <button class="btn round">
-                                <svg class="icon"><use href="#clock"/></svg>Recent History
+                                <svg class="icon ui-text"><use href="#clock"/></svg>Recent History
                             </button>
                             <button class="btn round">
-                                <svg class="icon"><use href="#settings"/></svg>Tools
+                                <svg class="icon ui-text"><use href="#settings"/></svg>Tools
                             </button>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="btn-list align-l icons-margin-10-r form-lg ease-1st-btn">
-                            <button class="btn round border">
-                                <svg class="icon"><use href="#shield"/></svg>Administration
+                        <div class="btn-list align-l icons-margin-10-r form-lg icons-no-opacity theme-orange ease-1st-btn">
+                            <button class="btn btn-ghost round border ui-border">
+                                <svg class="icon ui-text"><use href="#shield"/></svg>Administration
                             </button>
-                            <button class="btn round border">
-                                <svg class="icon"><use href="#clock"/></svg>Recent History
+                            <button class="btn btn-ghost round border ui-border">
+                                <svg class="icon ui-text"><use href="#clock"/></svg>Recent History
                             </button>
-                            <button class="btn round border">
-                                <svg class="icon"><use href="#settings"/></svg>Tools
+                            <button class="btn btn-ghost round border ui-border">
+                                <svg class="icon ui-text"><use href="#settings"/></svg>Tools
                             </button>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="btn-list align-l icons-margin-10-r form-lg ease-1st-btn">
-                            <button class="btn round border-dual">
-                                <svg class="icon"><use href="#shield"/></svg>Administration
+                        <div class="btn-list align-l icons-margin-10-r form-lg icons-no-opacity theme-yellow ease-1st-btn">
+                            <button class="btn btn-ghost round border-dual ui-border">
+                                <svg class="icon ui-text"><use href="#shield"/></svg>Administration
                             </button>
-                            <button class="btn round border-dual">
-                                <svg class="icon"><use href="#clock"/></svg>Recent History
+                            <button class="btn btn-ghost round border-dual ui-border">
+                                <svg class="icon ui-text"><use href="#clock"/></svg>Recent History
                             </button>
-                            <button class="btn round border-dual">
-                                <svg class="icon"><use href="#settings"/></svg>Tools
+                            <button class="btn btn-ghost round border-dual ui-border">
+                                <svg class="icon ui-text"><use href="#settings"/></svg>Tools
                             </button>
                         </div>
                     </div>
@@ -351,21 +351,21 @@
                 <h4>Button Holder</h4>
                 <div class="row padding-30-b">
                     <div class="col-6">
-                        <div class="btn-holder form-lg ease-1st-btn">
-                            <button class="btn">1</button>
-                            <button class="btn">2</button>
-                            <button class="btn">3</button>
-                            <button class="btn">4</button>
-                            <button class="btn">5</button>
+                        <div class="btn-holder form-lg theme-default ease-1st-btn">
+                            <button class="btn ui-dark">1</button>
+                            <button class="btn ui-dark">2</button>
+                            <button class="btn ui-dark">3</button>
+                            <button class="btn ui-dark">4</button>
+                            <button class="btn ui-dark">5</button>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="btn-holder form-lg ease-1st-btn">
-                            <button class="btn round">1</button>
-                            <button class="btn round">2</button>
-                            <button class="btn round">3</button>
-                            <button class="btn round">4</button>
-                            <button class="btn round">5</button>
+                        <div class="btn-holder form-lg theme-default2 ease-1st-btn">
+                            <button class="btn round ui-dark">1</button>
+                            <button class="btn round ui-dark">2</button>
+                            <button class="btn round ui-dark">3</button>
+                            <button class="btn round ui-dark">4</button>
+                            <button class="btn round ui-dark">5</button>
                         </div>
                     </div>
                     <div class="col-6">

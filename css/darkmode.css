@@ -24,7 +24,7 @@
 
     .text,.select,.select-multi,.textarea,.file,.check-custom,.radio-custom,.switch-custom { border-color: rgba(255,255,255,.175); }
     .text input:not(:focus):not([readonly]),.select select:not(:focus):not([readonly]),.select-multi select:not(:focus):not([readonly]),.textarea textarea:not(:focus):not([readonly]) { color: #fff; }
-    .select select option,.select select optgroup { color: #fff; background-color: #41454d;}
+    .select select option,.select select optgroup { color: #fff; background-color: #41454d; }
     .select-multi option:not(:last-child) { border-bottom-color: rgba(255,255,255,.045); }
     html:not(.mobile) .file:hover .btn { background-color: rgba(255,255,255,.15); }
     [class*="text-icon"] > button { color: #fff; }
@@ -39,7 +39,7 @@
 
     .form-focus { border-color: rgba(255,255,255,.65); }
     .form-focus:not(.form-readonly) { background-color: rgba(255,255,255,.075) !important; box-shadow: none; }
-    .form-focus > input,.form-focus > select,.form-focus > textarea,.form-focus > .icon:not([class*="ui-"]) { color: #fff !important; }
+    .form-focus > input,.form-focus > select,.form-focus.form-light > select option,.form-focus > textarea,.form-focus .icon:not([class*="ui-"]) { color: #fff !important; }
 
     ::placeholder { color: rgba(255,255,255,.4); }
     ::-ms-input-placeholder { color: rgba(255,255,255,.4); }

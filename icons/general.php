@@ -861,11 +861,8 @@
     <use class="svg-f" href="#copyright"/>
 </symbol>
 <symbol id="database" viewBox="-51 -12 288 288">
-    <path d="M93 12c44.7 0 81 20.4 81 45.5S137.7 103 93 103 12 82.6 12 57.5 48.3 12 93 12z"/>
-    <g class="svg-s">
-        <path d="M12 123s19 30 81 30 81-30 81-30V57.5c0 25.1-36.3 45.5-81 45.5S12 82.6 12 57.5z"/>
-        <path class="svg-l" d="M12 172.9s19 30 81 30 81-30 81-30v-49.6S154 153 93 153s-81-29.4-81-29.4z M12 221.6s19 30 81 30 81-30 81-30V172s-20 29.6-81 29.7-81-29.4-81-29.4z"/>
-    </g>
+    <path class="svg-l" d="M93 12c44.7 0 81 20.4 81 45.5S137.7 103 93 103 12 82.6 12 57.5 48.3 12 93 12z M12 172.9s19 30 81 30 81-30 81-30v-49.6S154 153 93 153s-81-29.4-81-29.4z"/>
+    <path d="M12 123s19 30 81 30 81-30 81-30V57.5c0 25.1-36.3 45.5-81 45.5S12 82.6 12 57.5z M12 221.6s19 30 81 30 81-30 81-30V172s-20 29.6-81 29.7-81-29.4-81-29.4z"/>
 </symbol>
 <symbol id="database-fill" viewBox="0 0 288 288">
     <use class="svg-f" href="#database"/>
@@ -974,9 +971,9 @@
     <path d="M180 12h72v48 M84 204H12v-48"/>
     <path class="svg-s" d="M180 204h72v-48M84 12H12v48"/>
 </symbol>
-<symbol id="eye" viewBox="-12 -48 288 288">
-    <path d="M132.3 60c22 0 40 14.6 40 36.7s-18 35.8-40 35.8-40-13.8-40-35.8 17.9-36.7 40-36.7z"/>
-    <path class="svg-s" d="M132 12c84 0 120 84 120 84s-36 84-120 84S12 96 12 96s36-84 120-84z"/>
+<symbol id="eye" viewBox="-12 -40 288 288">
+    <path d="M132.3 68c22 0 40 14.6 40 36.7s-18 35.8-40 35.8-40-13.8-40-35.8 17.9-36.7 40-36.7z"/>
+    <path class="svg-s" d="M132 12c84 0 120 92 120 92s-36 92-120 92-120-92-120-92 36-92 120-92z"/>
 </symbol>
 <symbol id="eye-fill" viewBox="0 0 288 288">
     <use class="svg-f" href="#eye"/>
@@ -1161,9 +1158,9 @@
 <symbol id="images-check-fill" viewBox="0 0 288 288">
     <use class="svg-f" href="#images-check"/>
 </symbol>
-<symbol id="keyboard" viewBox="-12 -46 288 288">
-    <path d="M56 56h8M104 56h8M152 56h8M200 56h8M176 96h8M128 96h8M80 96h8M56 136h8M104 136h104"/>
-    <path class="svg-s" d="M36 12h192a24 24 0 0124 24v120a24 24 0 01-24 24H36a24 24 0 01-24-24V36a24 24 0 0124-24z"/>
+<symbol id="keyboard" viewBox="-12 -40 288 288">
+    <path d="M56 152h8M104 152h104M176 104h8M128 104h8M80 104h8M56 56h8M104 56h8M152 56h8M200 56h8"/>
+    <path class="svg-s" d="M36 12h192a24 24 0 0124 24v136a24 24 0 01-24 24H36a24 24 0 01-24-24V36a24 24 0 0124-24z"/>
 </symbol>
 <symbol id="keyboard-fill" viewBox="0 0 288 288">
     <use class="svg-f" href="#keyboard"/>

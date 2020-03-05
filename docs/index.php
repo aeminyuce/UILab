@@ -230,7 +230,7 @@
                             <h2 class="margin-10-b">UILab</h2>
                             <p class="large xs-align-c">CSS &amp; JavaScript powered responsive design system.</p>
                             <div class="form-lg ease-1st-btn">
-                                <a href="?p=icons" class="btn btn-xs-fluid padding-30-h circle theme-default2">
+                                <a href="?p=icons" class="btn btn-ghost btn-xs-fluid border-dual padding-30-h circle theme-default2">
                                     <svg class="icon margin-5-r no-opacity ui-text"><use href="#draw-fill"/></svg> See Icons
                                 </a>
                                 <a href="?p=download" class="btn btn-xs-fluid padding-30-h circle theme-default2 ui-dark">
