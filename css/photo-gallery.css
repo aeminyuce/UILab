@@ -36,7 +36,7 @@ html:not(.mobile) .photo-gallery .img.has-info:hover > span,.photo-gallery .img.
 .preview-next { border-radius: 6px 0 0 6px; right: 0; }
 html:not(.mobile) .preview-prev:hover,html:not(.mobile) .preview-next:hover { background-color: rgba(255,255,255,.25); }
 
-.preview-loader { color: #fff; width: 50px; height: 50px; margin: -20px 0 0 -25px; position: absolute; top: 50%; left: 50%; z-index: 3; transform: translate(-50%,-50%); animation: preview-loader 1s linear infinite; stroke-width: 12px; }
+.preview-loader { color: #fff; width: 50px; height: 50px; margin: -20px 0 0 -25px; position: absolute; top: 50%; left: 50%; z-index: 3; transform: translate(-50%,-50%); animation: preview-loader 1.5s linear infinite; stroke-width: 12px; }
 .preview-loader.pause { color: #dc000f; margin: 0; animation: none; }
 
 .preview-info { color: #fff; min-height: 40px; max-height: 132px; background-color: rgba(0,0,0,.75); padding: 10px; display: block; border-radius: 6px 6px 0 0; position: absolute; bottom: 0; z-index: 1; left: 50%; transform: translate(-50%,0); }

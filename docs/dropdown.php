@@ -9,7 +9,7 @@
                         <div class="dropdown ease-dropdown">
                             <button class="btn circle ui-dark">
                                 Dropdown
-                                <i class="toggle-icon icon margin-5-l icon-sm icon-angle-down"></i>
+                                <svg class="toggle-icon icon right"><use href="#angle-down"></use></svg>
                             </button>
                             <ul class="content round shadow-lg">
                                 <li><a href="#">Dropdown Link</a></li>
@@ -27,7 +27,7 @@
                         <div class="dropdown open-hover ease-dropdown">
                             <button class="btn circle ui-dark">
                                 Hover Dropdown
-                                <i class="toggle-icon icon margin-5-l icon-sm icon-angle-down"></i>
+                                <svg class="toggle-icon icon right"><use href="#angle-down"></use></svg>
                             </button>
                             <ul class="content round shadow-lg">
                                 <li><a href="#">Dropdown Link</a></li>
@@ -40,7 +40,7 @@
                         <div class="dropdown menu-c ease-dropdown">
                             <button class="btn circle ui-dark">
                                 Center Menu
-                                <i class="toggle-icon icon margin-5-l icon-sm icon-angle-down"></i>
+                                <svg class="toggle-icon icon right"><use href="#angle-down"></use></svg>
                             </button>
                             <ul class="content round shadow-lg">
                                 <li><a href="#">Dropdown with menu-c align center your drop down list.</a></li>
@@ -53,7 +53,7 @@
                         <div class="dropdown menu-l ease-dropdown">
                             <button class="btn circle ui-dark">
                                 Left Menu
-                                <i class="toggle-icon icon margin-5-l icon-sm icon-angle-down"></i>
+                                <svg class="toggle-icon icon right"><use href="#angle-down"></use></svg>
                             </button>
                             <ul class="content round shadow-lg">
                                 <li><a href="#">Dropdown with menu-l align left your drop down list.</a></li>
@@ -66,12 +66,12 @@
 
                 <h4>Dropdowns Navs with List Columns</h4>
                 <div class="row padding-30-b form-lg theme-default">
-                    <div class="col-12 icons-no-opacity">
+                    <div class="col-12">
 
                         <div class="dropdown nav open-hover btn-xs-fluid ease-dropdown">
                             <button class="btn circle ui-dark">
                                 Nav Dropdown
-                                <i class="toggle-icon icon margin-5-l icon-xs icon-angle-down"></i>
+                                <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"></use></svg>
                             </button>
                             <ul class="content list-column-2 has-icon round shadow-lg">
                                 <li><a href="#"><b class="list-icon icon icon-hourglass-start"></b> Waiting</a></li>
@@ -86,7 +86,7 @@
                         <div class="dropdown nav open-hover btn-xs-fluid ease-dropdown">
                             <button class="btn circle ui-dark">
                                 Nav Dropdown
-                                <i class="toggle-icon icon margin-5-l icon-xs icon-angle-down"></i>
+                                <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"></use></svg>
                             </button>
                             <ul class="content list-column-2 has-icon round shadow-lg">
                                 <li><a href="#"><b class="list-icon icon icon-hourglass-start"></b> Waiting</a></li>
@@ -100,7 +100,7 @@
                         <div class="dropdown nav open-hover btn-xs-fluid ease-dropdown">
                             <button class="btn circle ui-dark">
                                 Nav Dropdown
-                                <i class="toggle-icon icon margin-5-l icon-xs icon-angle-down"></i>
+                                <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"></use></svg>
                             </button>
                             <ul class="content list-column-3 has-icon round shadow-lg">
                                 <li><a href="#"><b class="list-icon">23</b> Waiting</a></li>
@@ -118,7 +118,7 @@
                         <div class="dropdown nav open-hover btn-xs-fluid ease-dropdown">
                             <button class="btn circle ui-dark">
                                 Nav Dropdown
-                                <i class="toggle-icon icon margin-5-l icon-xs icon-angle-down"></i>
+                                <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"></use></svg>
                             </button>
                             <ul class="content list-column-3 has-icon round shadow-lg">
                                 <li><a href="#"><b class="list-icon">23</b> Waiting</a></li>
@@ -140,7 +140,7 @@
                         <div class="dropdown btn-xs-fluid ease-dropdown">
                             <button class="btn padding-30-h circle theme-default2 ui-dark">
                                 <span class="value-toggle">Select Value</span>
-                                <i class="toggle-icon icon margin-5-l icon-sm icon-angle-down"></i>
+                                <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"></use></svg>
                             </button>
                             <ul class="content round shadow-lg">
                                 <li><label class="radio"><input type="radio" name="s" value="value01">Value 01</label></li>
@@ -159,42 +159,42 @@
                         <div class="dropdown btn-xs-fluid ease-dropdown">
                             <button class="btn padding-30-h circle theme-default2 ui-dark">
                                 <span class="value-toggle">Select Values with Icons</span>
-                                <i class="toggle-icon icon margin-5-l icon-sm icon-angle-down"></i>
+                                <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"></use></svg>
                             </button>
                             <ul class="content icons-margin-5-r round shadow-lg">
                                 <li>
                                     <label class="radio">
-                                        <i class="icon icon-sm icon-check-circle"></i>
+                                        <svg class="icon"><use href="#check-circle-fill"></use></svg>
                                         <input type="radio" name="s" value="value01"> Value 01
                                     </label>
                                 </li>
                                 <li>
                                     <label class="radio">
-                                        <i class="icon icon-sm icon-check-circle"></i>
+                                        <svg class="icon"><use href="#check-circle-fill"></use></svg>
                                         <input type="radio" name="s" value="value02"> Value 02
                                     </label>
                                 </li>
                                 <li>
                                     <label class="radio">
-                                        <i class="icon icon-sm icon-check-circle"></i>
+                                        <svg class="icon"><use href="#check-circle-fill"></use></svg>
                                         <input type="radio" name="s" value="value03"> Value 03
                                     </label>
                                 </li>
                                 <li>
                                     <label class="radio">
-                                        <i class="icon icon-sm icon-check-circle"></i>
+                                        <svg class="icon"><use href="#check-circle-fill"></use></svg>
                                         <input type="radio" name="s" value="value04"> Value 04
                                     </label>
                                 </li>
                                 <li>
                                     <label class="radio">
-                                        <i class="icon icon-sm icon-check-circle"></i>
+                                        <svg class="icon"><use href="#check-circle-fill"></use></svg>
                                         <input type="radio" name="s" value="value05"> Value 05
                                     </label>
                                 </li>
                                 <li>
                                     <label class="radio">
-                                        <i class="icon icon-sm icon-check-circle"></i>
+                                        <svg class="icon"><use href="#check-circle-fill"></use></svg>
                                         <input type="radio" name="s" value="value06"> Value 06
                                     </label>
                                 </li>
@@ -206,54 +206,54 @@
                         <div class="dropdown btn-xs-fluid ease-dropdown">
                             <button class="btn padding-30-h circle theme-default2 ui-dark">
                                 <span class="value-toggle">Select Value</span>
-                                <i class="toggle-icon icon margin-5-l icon-sm icon-angle-down"></i>
+                                <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"></use></svg>
                             </button>
                             <ul class="content icons-margin-5-r round shadow-lg">
                                 <li>
                                     <label>
-                                        <i class="icon icon-sm icon-check-circle"></i>
+                                        <svg class="icon"><use href="#check-circle-fill"></use></svg>
                                         Value 01
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <i class="icon icon-sm icon-check-circle"></i>
+                                        <svg class="icon"><use href="#check-circle-fill"></use></svg>
                                         Value 02
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <i class="icon icon-sm icon-check-circle"></i>
+                                        <svg class="icon"><use href="#check-circle-fill"></use></svg>
                                         Value 03
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <i class="icon icon-sm icon-check-circle"></i>
+                                        <svg class="icon"><use href="#check-circle-fill"></use></svg>
                                         Value 04
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <i class="icon icon-sm icon-check-circle"></i>
+                                        <svg class="icon"><use href="#check-circle-fill"></use></svg>
                                         Value 05
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <i class="icon icon-sm icon-check-circle"></i>
+                                        <svg class="icon"><use href="#check-circle-fill"></use></svg>
                                         Value 06
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <i class="icon icon-sm icon-check-circle"></i>
+                                        <svg class="icon"><use href="#check-circle-fill"></use></svg>
                                         Value 07
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <i class="icon icon-sm icon-check-circle"></i>
+                                        <svg class="icon"><use href="#check-circle-fill"></use></svg>
                                         Value 08
                                     </label>
                                 </li>
@@ -269,12 +269,27 @@
                         <div class="dropdown ease-dropdown">
                             <button class="btn align-l circle">
                                 Dropdown
-                                <i class="toggle-icon icon right icon-sm icon-angle-down"></i>
+                                <svg class="toggle-icon icon right"><use href="#angle-down"></use></svg>
                             </button>
                             <ul class="content has-icon round shadow-lg">
-                                <li><a href="#"><i class="list-icon icon icon-sm icon-user"></i>Profile</a></li>
-                                <li><a href="#"><i class="list-icon icon icon-sm icon-key"></i>Change Password</a></li>
-                                <li><a href="#"><i class="list-icon icon icon-sm icon-sign-out"></i>Logout</a></li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="list-icon icon"><use href="#user"></use></svg>
+                                        Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="list-icon icon"><use href="#key"></use></svg>
+                                        Change Password
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="list-icon icon"><use href="#sign-out"></use></svg>
+                                        Logout
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -282,12 +297,27 @@
                         <div class="dropdown ease-dropdown">
                             <button class="btn align-l circle">
                                 Dropdown
-                                <i class="toggle-icon icon right icon-sm icon-angle-down"></i>
+                                <svg class="toggle-icon icon right"><use href="#angle-down"></use></svg>
                             </button>
                             <ul class="content has-icon round shadow-lg">
-                                <li><i class="list-icon icon icon-sm icon-user"></i>Profile</li>
-                                <li><i class="list-icon icon icon-sm icon-key"></i>Change Password</li>
-                                <li><i class="list-icon icon icon-sm icon-sign-out"></i>Logout</li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="list-icon icon"><use href="#user"></use></svg>
+                                        Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="list-icon icon"><use href="#key"></use></svg>
+                                        Change Password
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="list-icon icon"><use href="#sign-out"></use></svg>
+                                        Logout
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -297,40 +327,95 @@
                 <div class="row padding-30-b block-2nd form-lg">
                     <div class="col-3 col-sm-6">
                         <div class="dropdown ease-dropdown">
-                            <button class="btn circle">
+                            <button class="btn align-l circle">
                                 Dropdown
-                                <i class="toggle-icon icon margin-5-l icon-sm icon-angle-down"></i>
+                                <svg class="toggle-icon icon right"><use href="#angle-down"></use></svg>
                             </button>
                             <ul class="content has-grid round shadow-lg">
-                                <li><a href="#"><i class="icon icon-lg icon-home"></i>Home</a></li>
-                                <li><a href="#"><i class="icon icon-lg icon-user"></i>Profile</a></li>
-                                <li><a href="#"><i class="icon icon-lg icon-bell"></i>Notifications</a></li>
-                                <li><a href="#"><i class="icon icon-lg icon-calendar"></i>Calendar</a></li>
-                                <li><a href="#"><i class="icon icon-lg icon-sign-out"></i>Logout</a></li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="list-icon icon icon-lg"><use href="#home"></use></svg>
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="list-icon icon icon-lg"><use href="#user"></use></svg>
+                                        Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="list-icon icon icon-lg"><use href="#bell"></use></svg>
+                                        Notifications
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="list-icon icon icon-lg"><use href="#calendar"></use></svg>
+                                        Calendar
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="list-icon icon icon-lg"><use href="#sign-out"></use></svg>
+                                        Logout
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-3 col-sm-6">
                         <div class="dropdown ease-dropdown">
-                            <button class="btn circle">
+                            <button class="btn align-l circle">
                                 Dropdown
-                                <i class="toggle-icon icon margin-5-l icon-sm icon-angle-down"></i>
+                                <svg class="toggle-icon icon right"><use href="#angle-down"></use></svg>
                             </button>
                             <ul class="content has-grid round shadow-lg">
-                                <li><i class="icon icon-lg icon-home"></i>Home</li>
-                                <li><i class="icon icon-lg icon-user"></i>Profile</li>
-                                <li><i class="icon icon-lg icon-bell"></i>Notifications</li>
-                                <li><i class="icon icon-lg icon-calendar"></i>Calendar</li>
-                                <li><i class="icon icon-lg icon-setting"></i>Settings</li>
-                                <li><i class="icon icon-lg icon-sign-out"></i>Logout</li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="list-icon icon icon-lg"><use href="#home"></use></svg>
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="list-icon icon icon-lg"><use href="#user"></use></svg>
+                                        Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="list-icon icon icon-lg"><use href="#bell"></use></svg>
+                                        Notifications
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="list-icon icon icon-lg"><use href="#calendar"></use></svg>
+                                        Calendar
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="list-icon icon icon-lg"><use href="#settings"></use></svg>
+                                        Settings
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="list-icon icon icon-lg"><use href="#sign-out"></use></svg>
+                                        Logout
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-3 col-sm-6">
                         <div class="dropdown ease-dropdown">
-                            <button class="btn circle">
+                            <button class="btn align-l circle">
                                 Dropdown
-                                <i class="toggle-icon icon margin-5-l icon-sm icon-angle-down"></i>
+                                <svg class="toggle-icon icon right"><use href="#angle-down"></use></svg>
                             </button>
                             <ul class="content has-grid round shadow-lg">
                                 <li>Home</li>

@@ -64,13 +64,12 @@
 .carousel-gallery .detail img,.carousel-gallery .detail.detail-holder img { width: 100%; display: inline-block; position: relative; z-index: 1; cursor: pointer; }
 html:not(.mobile) .carousel-gallery .detail:not(.detail-loader) img:hover { opacity: .65; }
 
-.carousel-gallery .detail .icon { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
-.carousel-gallery .detail .loader-icon { margin: -20px 0 0 -20px; }
+.carousel-gallery .detail .icon { width: 80px; height: 80px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); opacity: 1 !important; stroke-width: 16px; }
 
 .carousel-gallery .detail.detail-loader { background-color: rgba(0,0,0,.075); }
 .carousel-gallery .detail.detail-loader img { opacity: 0; }
 .carousel-gallery .detail.detail-loader .zoom-icon { display: none; }
-.carousel-gallery .detail.detail-loader .loader-icon { opacity: .45; animation: carousel-gallery-loader 3s linear infinite; }
+.carousel-gallery .detail.detail-loader .loader-icon { animation: carousel-gallery-loader 1.5s linear infinite; }
 .carousel-gallery .detail:not(.detail-loader) .loader-icon { display: none; }
 
 .carousel-gallery .thumbs { text-align: center; margin: 15px 0; }

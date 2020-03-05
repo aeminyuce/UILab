@@ -1,5 +1,5 @@
 /* buttons */
-@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@keyframes btn-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
 .ease-btn,.ease-1st-btn > *,.ease-2nd-btn > * > * { transition-property: color, background-color, border-width, border-color, opacity, transform, box-shadow; }
 .ease-btn .icon,.ease-1st-btn > * .icon,.ease-2nd-btn > * > * .icon { transition-property: color, transform, opacity; transition-duration: .15s; }
@@ -75,7 +75,7 @@ html:not(.mobile) .btn.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-ligh
 .btn .loading-spinner { position: absolute; top: 50%; left: 50%; z-index: 1; transform: translate(-50%,-50%); }
 .btn.loading .loading-spinner { z-index: 3; }
 .btn:not(.loading) .loading-spinner { opacity: 0 !important; }
-.btn .loading-spinner .icon { animation: spin 1.5s linear infinite; }
+.btn .loading-spinner .icon { animation: btn-spin 1.5s linear infinite; }
 
 .btn .loading-label { position: relative; z-index: 2; }
 .btn.loading .loading-label { opacity: .3 !important; }

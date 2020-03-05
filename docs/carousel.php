@@ -41,7 +41,8 @@
                                                 Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
                                                 <span class="sp15"></span>
                                                 <a href="#" class="btn btn-xs-fluid btn-lg ease-btn">
-                                                    Continue <i class="icon icon-sm margin-5-l icon-long-arrow-right"></i>
+                                                    Continue
+                                                    <svg class="icon margin-5-l"><use href="#arrow-right"></use></svg>
                                                 </a>
                                             </p>
                                         </div>
@@ -79,7 +80,8 @@
                                                 Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
                                                 <span class="sp15"></span>
                                                 <a href="#" class="btn btn-xs-fluid btn-lg ease-btn">
-                                                    Continue <i class="icon icon-sm margin-5-l icon-long-arrow-right"></i>
+                                                    Continue
+                                                    <svg class="icon margin-5-l"><use href="#arrow-right"></use></svg>
                                                 </a>
                                             </p>
                                         </div>
@@ -117,7 +119,8 @@
                                                 Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
                                                 <span class="sp15"></span>
                                                 <a href="#" class="btn btn-xs-fluid btn-lg ease-btn">
-                                                    Continue <i class="icon icon-sm margin-5-l icon-long-arrow-right"></i>
+                                                    Continue
+                                                    <svg class="icon margin-5-l"><use href="#arrow-right"></use></svg>
                                                 </a>
                                             </p>
                                         </div>
@@ -127,9 +130,13 @@
 
                         </div>
                         <div class="carousel-nav ease-1st-btn">
-                            <button class="carousel-prev btn btn-ghost btn-square"><i class="icon icon-angle-left"></i></button>
+                            <button class="carousel-prev btn btn-ghost btn-square">
+                                <svg class="icon"><use href="#angle-left"></use></svg>
+                            </button>
                             <span class="dots dark"></span>
-                            <button class="carousel-next btn btn-ghost btn-square"><i class="icon icon-angle-right"></i></button>
+                            <button class="carousel-next btn btn-ghost btn-square">
+                                <svg class="icon"><use href="#angle-right"></use></svg>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -188,9 +195,13 @@
                             </div>
                         </div>
                         <div class="carousel-nav ease-1st-btn">
-                            <button class="carousel-prev btn btn-ghost btn-square round"><i class="icon icon-angle-left"></i></button>
+                            <button class="carousel-prev btn btn-ghost btn-square round">
+                                <svg class="icon"><use href="#angle-left"></use></svg>
+                            </button>
                             <span class="dots dark"></span>
-                            <button class="carousel-next btn btn-ghost btn-square round"><i class="icon icon-angle-right"></i></button>
+                            <button class="carousel-next btn btn-ghost btn-square round">
+                                <svg class="icon"><use href="#angle-right"></use></svg>
+                            </button>
                         </div>
                     </div>
 
@@ -219,9 +230,13 @@
                             </div>
                         </div>
                         <div class="carousel-nav margin-10-t ease-1st-btn">
-                            <button class="carousel-prev btn btn-ghost btn-square round"><i class="icon icon-angle-left"></i></button>
+                            <button class="carousel-prev btn btn-ghost btn-square round">
+                                <svg class="icon"><use href="#angle-left"></use></svg>
+                            </button>
                             <span class="dots dark"></span>
-                            <button class="carousel-next btn btn-ghost btn-square round"><i class="icon icon-angle-right"></i></button>
+                            <button class="carousel-next btn btn-ghost btn-square round">
+                                <svg class="icon"><use href="#angle-right"></use></svg>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -232,8 +247,8 @@
                         <div class="row">
                             <div class="detail col-8 col-md-6 push-2 push-md-3 sm-fluid">
                                 <img src="img/house_01.jpg" class="photo-gallery-call cursor-pointer img-fluid ease-layout" data-target="#detail-carousel" data-count="0" alt="">
-                                <i class="icon zoom-icon icon-xxl icon-expand-wide"></i>
-                                <i class="icon loader-icon icon-xxl icon-loader-line"></i>
+                                <svg class="zoom-icon icon"><use href="#expand-wide"></use></svg>
+                                <svg class="loader-icon icon"><use href="#loader-line"></use></svg>
                             </div>
                         </div>
                         <div id="detail-carousel" class="carousel half-sized thumbs margin-10 md-no-margin-h" data-col="8" data-col-md="6" data-col-sm="5" data-col-xs="3">
@@ -267,9 +282,13 @@
                                 </div>
                             </div>
                             <div class="carousel-nav ease-1st-btn">
-                                <button class="carousel-prev btn btn-ghost btn-square round"><i class="icon icon-arrow-left"></i></button>
+                                <button class="carousel-prev btn btn-ghost btn-square round">
+                                    <svg class="icon"><use href="#angle-left"></use></svg>
+                                </button>
                                 <span class="dots dark"></span>
-                                <button class="carousel-next btn btn-ghost btn-square round"><i class="icon icon-arrow-right"></i></button>
+                                <button class="carousel-next btn btn-ghost btn-square round">
+                                    <svg class="icon"><use href="#angle-right"></use></svg>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -281,8 +300,8 @@
                         <div class="row">
                             <div class="detail col-8 col-md-6 push-2 push-md-3 sm-fluid">
                                 <img src="img/image_01.jpg" class="photo-gallery-call cursor-pointer img-fluid ease-layout" data-target="#detail-carousel2" data-count="0" alt="">
-                                <i class="icon zoom-icon icon-xxl icon-expand-wide"></i>
-                                <i class="icon loader-icon icon-xxl icon-loader-line"></i>
+                                <svg class="zoom-icon icon"><use href="#expand-wide"></use></svg>
+                                <svg class="loader-icon icon"><use href="#loader-line"></use></svg>
                             </div>
                         </div>
                         <div id="detail-carousel2" class="thumbs">

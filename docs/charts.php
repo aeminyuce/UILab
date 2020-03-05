@@ -237,7 +237,7 @@
                                 <div class="dropdown menu-l right ease-dropdown">
                                     <button class="btn btn-ghost round">
                                         <span class="value-toggle">First Chart</span>
-                                        <i class="toggle-icon icon margin-5-l icon-xs icon-angle-down no-opacity"></i>
+                                        <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"></use></svg>
                                     </button>
                                     <ul class="content round shadow-lg">
                                         <li><label class="tab active bold selected">First chart</label></li>

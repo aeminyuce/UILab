@@ -40,7 +40,7 @@
   *,*:before,*:after { animation: none !important; }
 }
 
-@keyframes spin { 100% { transform: rotate(360deg); } }
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 .animate-spin { animation: spin 1.5s linear infinite; }
 
 @keyframes progress { from { background-position: 40px 0; } to { background-position: 0 0; } }
