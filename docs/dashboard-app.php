@@ -94,7 +94,7 @@
                             <div class="col-static no-fluid">
                                 <div class="col-50">
                                     <button class="btn btn-ghost btn-square circle ui-x-light ease-btn">
-                                        <i class="icon icon-sm icon-bell-on ui-text notifier"></i>
+                                        <i class="icon icon-sm icon-bell-on ui-text"></i>
                                     </button>
                                 </div>
                                 <div class="row">
@@ -289,25 +289,25 @@
                     <div class="padding-10 no-padding-b icons-no-opacity">
                         <div class="row row-no-gap no-fluid block-2nd ease-2nd-btn">
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t round ui-text">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle ui-text">
                                     <i class="icon icon-lg icon-home"></i>
                                     <span class="small block">Home</span>
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t round dark-ui">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle dark-ui">
                                     <i class="icon icon-lg icon-search"></i>
                                     <span class="small block">Search</span>
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t round dark-ui">
-                                    <i class="icon icon-lg icon-comment notifier" data-notifier="2"></i>
+                                <button class="btn btn-multi btn-ghost padding-10-t circle dark-ui" data-notifier="2">
+                                    <i class="icon icon-lg icon-comment"></i>
                                     <span class="small block">Chat</span>
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t round dark-ui">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle dark-ui">
                                     <i class="icon icon-lg icon-user"></i>
                                     <span class="small block">Profile</span>
                                 </button>
@@ -328,7 +328,7 @@
                             <div class="col-static no-fluid">
                                 <div class="col-50">
                                     <button class="btn btn-ghost btn-square circle ui-x-light ease-btn">
-                                        <i class="icon icon-sm icon-bell-on ui-text notifier"></i>
+                                        <i class="icon icon-sm icon-bell-on ui-text"></i>
                                     </button>
                                 </div>
                                 <div class="row">
@@ -682,25 +682,25 @@
                     <div class="padding-10 no-padding-b icons-no-opacity">
                         <div class="row row-no-gap no-fluid block-2nd ease-2nd-btn">
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t round dark-ui">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle dark-ui">
                                     <i class="icon icon-lg icon-home"></i>
                                     <span class="small block">Home</span>
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t round ui-text">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle ui-text">
                                     <i class="icon icon-lg icon-search"></i>
                                     <span class="small block">Search</span>
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t round dark-ui">
-                                    <i class="icon icon-lg icon-comment notifier" data-notifier="2"></i>
+                                <button class="btn btn-multi btn-ghost padding-10-t circle dark-ui" data-notifier="2">
+                                    <i class="icon icon-lg icon-comment"></i>
                                     <span class="small block">Chat</span>
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t round dark-ui">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle dark-ui">
                                     <i class="icon icon-lg icon-user"></i>
                                     <span class="small block">Profile</span>
                                 </button>
@@ -721,7 +721,7 @@
                             <div class="col-static no-fluid">
                                 <div class="col-50">
                                     <button class="btn btn-ghost btn-square circle ui-x-light ease-btn">
-                                        <i class="icon icon-sm icon-bell-on ui-text notifier"></i>
+                                        <i class="icon icon-sm icon-bell-on ui-text"></i>
                                     </button>
                                 </div>
                                 <div class="row">
@@ -1134,25 +1134,25 @@
                     <div class="padding-10 no-padding-b icons-no-opacity">
                         <div class="row row-no-gap no-fluid block-2nd ease-2nd-btn">
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t round dark-ui">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle dark-ui">
                                     <i class="icon icon-lg icon-home"></i>
                                     <span class="small block">Home</span>
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t round dark-ui">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle dark-ui">
                                     <i class="icon icon-lg icon-search"></i>
                                     <span class="small block">Search</span>
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t round ui-text">
-                                    <i class="icon icon-lg icon-comment notifier" data-notifier="2"></i>
+                                <button class="btn btn-multi btn-ghost padding-10-t circle ui-text" data-notifier="2">
+                                    <i class="icon icon-lg icon-comment"></i>
                                     <span class="small block">Chat</span>
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t round dark-ui">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle dark-ui">
                                     <i class="icon icon-lg icon-user"></i>
                                     <span class="small block">Profile</span>
                                 </button>
@@ -1173,7 +1173,7 @@
                             <div class="col-static no-fluid">
                                 <div class="col-50">
                                     <button class="btn btn-ghost btn-square circle ui-x-light ease-btn">
-                                        <i class="icon icon-sm icon-bell-on ui-text notifier"></i>
+                                        <i class="icon icon-sm icon-bell-on ui-text"></i>
                                     </button>
                                 </div>
                                 <div class="row">
@@ -1279,25 +1279,25 @@
                     <div class="padding-10 no-padding-b icons-no-opacity">
                         <div class="row row-no-gap no-fluid block-2nd ease-2nd-btn">
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t round dark-ui">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle dark-ui">
                                     <i class="icon icon-lg icon-home"></i>
                                     <span class="small block">Home</span>
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t round dark-ui">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle dark-ui">
                                     <i class="icon icon-lg icon-search"></i>
                                     <span class="small block">Search</span>
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t round dark-ui">
-                                    <i class="icon icon-lg icon-comment notifier" data-notifier="2"></i>
+                                <button class="btn btn-multi btn-ghost padding-10-t circle dark-ui" data-notifier="2">
+                                    <i class="icon icon-lg icon-comment"></i>
                                     <span class="small block">Chat</span>
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t round ui-text">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle ui-text">
                                     <i class="icon icon-lg icon-user"></i>
                                     <span class="small block">Profile</span>
                                 </button>

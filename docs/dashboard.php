@@ -384,8 +384,8 @@
 
                 <div class="inline">
                     <div class="dropdown menu-l ease-dropdown">
-                        <button class="btn dark btn-square btn-ghost circle " data-tooltip="l" data-only="desktop" title="Personal Logs">
-                            <i class="icon icon-grid-column notifier"></i>
+                        <button class="btn dark btn-square btn-ghost circle" data-notifier data-tooltip="l" data-only="desktop" title="Personal Logs">
+                            <i class="icon icon-grid-column"></i>
                         </button>
                         <div class="content round shadow-lg no-scroll">
                             <div class="tabs xs-full-width theme-panel2 ease-tabs" data-classes="border-b border-lg ui-border ui-text" style="min-width: 300px;">
@@ -462,8 +462,8 @@
                         </div>
                     </div>
                     <div class="dropdown menu-l ease-dropdown">
-                        <button class="btn dark btn-square btn-ghost circle" data-tooltip="l" data-only="desktop" title="Notification Center">
-                            <i class="icon icon-bars-right notifier"></i>
+                        <button class="btn dark btn-square btn-ghost circle" data-notifier data-tooltip="l" data-only="desktop" title="Notification Center">
+                            <i class="icon icon-bars-right"></i>
                         </button>
                         <div class="content round shadow-lg no-scroll">
                             <div class="tabs xs-full-width theme-panel2 ease-tabs" data-classes="border-b border-lg ui-border ui-text" style="min-width: 300px;">

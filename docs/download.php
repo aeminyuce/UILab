@@ -542,7 +542,7 @@
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ease-opacity">
                                     <span class="switch-custom round border-dual ease-form">
-                                        <input class="generate-toggle" type="checkbox">
+                                        <input class="generate-toggle" type="checkbox" checked>
                                         <i class="state"></i>
                                     </span>
                                     <span class="x-dark">Select/Deselect All</span>
@@ -554,13 +554,6 @@
                                         <i class="ui-dark state"></i>
                                     </span>
                                     Icons
-                                </label>
-                                <label class="custom">
-                                    <span class="switch-custom round border-dual ease-form">
-                                        <input type="checkbox" name="notifiers" value="../css/notifiers.css">
-                                        <i class="ui-dark state"></i>
-                                    </span>
-                                    Notifiers
                                 </label>
                             </div>
 

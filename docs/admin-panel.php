@@ -28,13 +28,13 @@
                             <button class="btn btn-ghost btn-square round show-mobile-menu-l visible-md">
                                 <i class="icon icon-bars-left"></i>
                             </button>
-                            <button class="btn btn-ghost round" data-tooltip="r" title="Show messages">
-                                <i class="icon icon-bell-on notifier"></i>
+                            <button class="btn btn-ghost round" data-notifier data-tooltip="r" title="Show messages">
+                                <svg class="icon"><use href="#bell-on"></use></svg>
                             </button>
                         </div>
                         <div class="dropdown margin-10 set-absolute set-t set-r ease-dropdown">
                             <button class="btn btn-ghost round" data-tooltip="r" data-only="desktop" title="Settings">
-                                <i class="icon icon-settings"></i>
+                                <svg class="icon"><use href="#settings"></use></svg>
                             </button>
                             <ul class="content icons-margin-10-r round shadow-lg">
                                 <li><a href="#"><i class="icon icon-sm icon-user"></i>Show Profile</a></li>

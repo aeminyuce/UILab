@@ -118,8 +118,8 @@
                                 <button class="btn btn-square btn-ghost circle">
                                     <i class="icon icon-user"></i>
                                 </button>
-                                <button class="btn btn-square btn-ghost circle">
-                                    <i class="icon icon-bell notifier"></i>
+                                <button class="btn btn-square btn-ghost circle" data-notifier>
+                                    <i class="icon icon-bell"></i>
                                 </button>
                                 <button class="btn btn-square btn-ghost circle">
                                     <i class="icon icon-setting"></i>
