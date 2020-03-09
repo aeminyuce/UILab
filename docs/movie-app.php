@@ -103,7 +103,7 @@
                         <div class="col-6 hidden-md ease-1st-form">
                             <div class="text text-icon-both margin-15-b circle no-border theme-gray ui-light has-clear">
                                 <i class="icon text-icon-l icon-search"></i>
-                                <button type="button" class="clear-form icon icon-remove"></button>
+                                <button class="clear-form icon icon-remove"></button>
                                 <input type="text" placeholder="Search for movies, TV shows...">
                             </div>
                         </div>

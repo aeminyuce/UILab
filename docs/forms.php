@@ -646,18 +646,27 @@
                 <div class="padding-30-b">
                     <form action="#succesful">
                         <div class="text text-icon margin-10-b round border-dual has-clear ease-form">
-                            <button type="submit" class="clear-form">
+                            <button type="button" class="clear-form">
                                 <svg class="icon"><use href="#remove"></use></svg>
                             </button>
                             <input type="text" value="Defined value example">
                         </div>
                         <div class="text text-icon margin-10-b round border-dual has-clear ease-form">
-                            <button type="submit" class="clear-form">
+                            <button type="button" class="clear-form">
                                 <svg class="icon"><use href="#remove"></use></svg>
                             </button>
                             <input type="text">
                         </div>
-                        <button type="reset" class="btn btn-xs-fluid round">Reset Form</button>
+                        <label class="form-label padding-10-b">Clear with Large Forms</label>
+                        <div class="form-lg margin-10-b ease-1st-form">
+                            <div class="text text-icon round border-dual has-clear">
+                                <button type="button" class="clear-form">
+                                    <svg class="icon"><use href="#remove"></use></svg>
+                                </button>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <button type="reset" class="btn btn-xs-fluid round ease-btn">Reset Form</button>
                     </form>
                 </div>
 

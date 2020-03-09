@@ -50,7 +50,10 @@
 </symbol>
 <symbol id="shopping-cart" viewBox="-12 -12 288 288">
     <path d="M65 156h151l36-104H38z"/>
-    <path class="svg-l" d="M84 212a20 20 0 11-20 20 20 20 0 0120-20zM212 212a20 20 0 11-20 20 20 20 0 0120-20z M12 12h16l51 200c4.1 0 10.8-1 17 4a20.7 20.7 0 018 16h88"/>
+    <g class="svg-l">
+        <path class="svg-s" d="M12 12h16l51 200c4.1 0 10.8-1 17 4a20.7 20.7 0 018 16h88""/>
+        <path d="M84 212a20 20 0 11-20 20 20 20 0 0120-20zM212 212a20 20 0 11-20 20 20 20 0 0120-20z"/>
+    </g>
 </symbol>
 <symbol id="shopping-cart-fill" viewBox="0 0 288 288">
     <use class="svg-f" href="#shopping-cart"/>

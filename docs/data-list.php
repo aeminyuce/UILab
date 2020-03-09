@@ -11,7 +11,7 @@
                             <div class="col-6 lg-fluid">
                                 <div class="text text-icon-both round no-border ui-x-light has-clear ease-form">
                                     <svg class="icon text-icon-l"><use href="#search"></svg>
-                                    <button type="submit" class="clear-form">
+                                    <button class="clear-form">
                                         <svg class="icon"><use href="#remove"></use></svg>
                                     </button>
                                     <input class="data-filter" type="text" placeholder="Search">
@@ -37,19 +37,19 @@
                                 <div class="dropdown menu-l block ease-dropdown">
                                     <button class="btn align-l round ui-x-light">
                                         <span class="value-toggle">
-                                            <svg class="icon"><use href="#sort-fill"></svg> Sort
+                                            <svg class="icon"><use href="#sort"></svg> Sort
                                         </span>
                                     </button>
                                     <ul class="content round shadow-lg">
                                         <li>
                                             <label class="radio" data-sort="1">
-                                                <svg class="icon"><use href="#sort-fill"></svg>
+                                                <svg class="icon"><use href="#sort"></svg>
                                                 <input type="radio" name="s">By Name
                                             </label>
                                         </li>
                                         <li>
                                             <label class="radio" data-sort="2">
-                                                <svg class="icon"><use href="#sort-fill"></svg>
+                                                <svg class="icon"><use href="#sort"></svg>
                                                 <input type="radio" name="s">By Step
                                             </label>
                                         </li>
@@ -475,7 +475,7 @@
                         <div class="col-5 sm-no-padding-b">
                             <div class="text text-icon-both round border-dual has-clear ease-form">
                                 <svg class="icon text-icon-l"><use href="#search"></svg>
-                                <button type="submit" class="clear-form">
+                                <button class="clear-form">
                                     <svg class="icon"><use href="#remove"></use></svg>
                                 </button>
                                 <input class="data-filter" type="text" placeholder="Search">
@@ -526,13 +526,13 @@
 
                     <div class="row row-xs-gap align-l block-2nd ease-2nd-btn no-fluid">
                         <div class="col-5">
-                            <button class="btn" data-sort="1"><svg class="icon"><use href="#sort-fill"></svg> Name</button>
+                            <button class="btn" data-sort="1"><svg class="icon"><use href="#sort"></svg> Name</button>
                         </div>
                         <div class="col-3">
-                            <button class="btn" data-sort="2" data-type="number"><svg class="icon"><use href="#sort-fill"></svg> Age</button>
+                            <button class="btn" data-sort="2" data-type="number"><svg class="icon"><use href="#sort"></svg> Age</button>
                         </div>
                         <div class="col-4">
-                            <button class="btn" data-sort="3"><svg class="icon"><use href="#sort-fill"></svg> Job</button>
+                            <button class="btn" data-sort="3"><svg class="icon"><use href="#sort"></svg> Job</button>
                         </div>
                     </div>
 
@@ -1242,7 +1242,7 @@
                         <div class="col-5 sm-no-padding-b">
                             <div class="text text-icon-both round border-dual has-clear ease-form">
                                 <svg class="icon text-icon-l"><use href="#search"></svg>
-                                <button type="submit" class="clear-form">
+                                <button class="clear-form">
                                     <svg class="icon"><use href="#remove"></use></svg>
                                 </button>
                                 <input class="data-filter" type="text" placeholder="Search">
@@ -1271,13 +1271,13 @@
 
                     <div class="row row-xs-gap align-l border-v block-2nd ease-2nd-btn no-fluid">
                         <div class="col-5">
-                            <button class="btn btn-ghost" data-sort="1"><svg class="icon"><use href="#sort-fill"></svg> Name</button>
+                            <button class="btn btn-ghost" data-sort="1"><svg class="icon"><use href="#sort"></svg> Name</button>
                         </div>
                         <div class="col-3">
-                            <button class="btn btn-ghost" data-sort="2" data-type="number"><svg class="icon"><use href="#sort-fill"></svg> Age</button>
+                            <button class="btn btn-ghost" data-sort="2" data-type="number"><svg class="icon"><use href="#sort"></svg> Age</button>
                         </div>
                         <div class="col-4">
-                            <button class="btn btn-ghost" data-sort="3"><svg class="icon"><use href="#sort-fill"></svg> Job</button>
+                            <button class="btn btn-ghost" data-sort="3"><svg class="icon"><use href="#sort"></svg> Job</button>
                         </div>
                     </div>
 

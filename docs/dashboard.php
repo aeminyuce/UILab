@@ -138,7 +138,7 @@
                 <div class="ui-x-dark set-relative">
                     <img src="img/logo-udashboard.png" width="194" height="62" alt="">
                     <button class="sidebar-hide opacity-more padding-10-h ease-btn set-absolute set-c-y set-r" data-tooltip title="Toggle Sidebar">
-                        <i class="icon icon-bars"></i>
+                        <svg class="icon"><use href="#bars"></use></svg>
                     </button>
                 </div>
 
@@ -179,13 +179,13 @@
                     </div>
 
                     <a href="#" class="btn btn-lg btn-ghost block margin-10-v">
-                        <i class="icon icon-tachometer margin-15-r"></i>
+                        <svg class="icon margin-15-r"><use href="#grid-masonry"></use></svg>
                         Dashboard
                     </a>
 
                     <button class="tab btn-toggle btn btn-lg btn-ghost block ui-text active">
-                        <i class="icon icon-users margin-15-r"></i>
-                        <i class="icon right toggle-icon icon-xs icon-angle-down"></i>
+                        <svg class="icon margin-15-r"><use href="#users"></use></svg>
+                        <svg class="toggle-icon icon right"><use href="#angle-down"></use></svg>
                         Employees
                     </button>
 
@@ -193,7 +193,7 @@
                         <ul class="tabs list-spacer-15 padding-20-l ease-2nd-btn" data-classes="ui-text">
                             <li>
                                 <a class="tab btn-toggle opacity" href="#">
-                                    <i class="icon right toggle-icon margin-4-v margin-10-h icon-xs icon-arrow-down"></i>
+                                    <svg class="toggle-icon icon margin-10-r right"><use href="#arrow-down"></use></svg>
                                     Managers
                                 </a>
                                 <ul class="tab-content list-spacer-15 padding-20-l margin-20-b ease-2nd-btn">
@@ -204,7 +204,7 @@
                             </li>
                             <li>
                                 <a class="tab btn-toggle opacity" href="#">
-                                    <i class="icon right toggle-icon margin-4-v margin-10-h icon-xs icon-arrow-down"></i>
+                                    <svg class="toggle-icon icon margin-10-r right"><use href="#arrow-down"></use></svg>
                                     Team Leaders
                                 </a>
                                 <ul class="tab-content list-spacer-15 padding-20-l margin-20-b ease-2nd-btn">
@@ -220,8 +220,8 @@
                     </div>
 
                     <button class="tab btn-toggle btn btn-lg btn-ghost block">
-                        <i class="icon icon-moneys margin-15-r"></i>
-                        <i class="icon right toggle-icon icon-xs icon-angle-down"></i>
+                        <svg class="icon margin-15-r"><use href="#moneys"></use></svg>
+                        <svg class="toggle-icon icon right"><use href="#angle-down"></use></svg>
                         Payments
                     </button>
                     <div class="tab-content padding-15-v padding-3-l">
@@ -235,8 +235,8 @@
                     </div>
 
                     <button class="tab btn-toggle btn btn-lg btn-ghost block">
-                        <i class="icon icon-calendar-check margin-15-r"></i>
-                        <i class="icon right toggle-icon icon-xs icon-angle-down"></i>
+                        <svg class="icon margin-15-r"><use href="#calendar-check"></use></svg>
+                        <svg class="toggle-icon icon right"><use href="#angle-down"></use></svg>
                         Events
                     </button>
                     <div class="tab-content padding-15-v padding-3-l">
@@ -249,8 +249,8 @@
                     </div>
 
                     <button class="tab btn-toggle btn btn-lg btn-ghost block">
-                        <i class="icon icon-files margin-15-r"></i>
-                        <i class="icon right toggle-icon icon-xs icon-angle-down"></i>
+                        <svg class="icon margin-15-r"><use href="#files"></use></svg>
+                        <svg class="toggle-icon icon right"><use href="#angle-down"></use></svg>
                         Documents
                     </button>
                     <div class="tab-content padding-15-v padding-3-l">
@@ -265,8 +265,8 @@
                     </div>
 
                     <button class="tab btn-toggle btn btn-lg btn-ghost block">
-                        <i class="icon icon-chart-line margin-15-r"></i>
-                        <i class="icon right toggle-icon icon-xs icon-angle-down"></i>
+                        <svg class="icon margin-15-r"><use href="#chart-line"></use></svg>
+                        <svg class="toggle-icon icon right"><use href="#angle-down"></use></svg>
                         Statistics
                     </button>
                     <div class="tab-content padding-15-v padding-3-l">
@@ -279,8 +279,8 @@
                     </div>
 
                     <button class="tab btn-toggle btn btn-lg btn-ghost block">
-                        <i class="icon icon-doc margin-15-r"></i>
-                        <i class="icon right toggle-icon icon-xs icon-angle-down"></i>
+                        <svg class="icon margin-15-r"><use href="#doc"></use></svg>
+                        <svg class="toggle-icon icon right"><use href="#angle-down"></use></svg>
                         Reports
                     </button>
                     <div class="tab-content padding-15-v padding-3-l">
@@ -295,8 +295,8 @@
                     </div>
 
                     <button class="tab btn-toggle btn btn-lg btn-ghost block">
-                        <i class="icon icon-truck-fill margin-15-r"></i>
-                        <i class="icon right toggle-icon icon-xs icon-angle-down"></i>
+                        <svg class="icon margin-15-r"><use href="#truck"></use></svg>
+                        <svg class="toggle-icon icon right"><use href="#angle-down"></use></svg>
                         Orders
                     </button>
                     <div class="tab-content padding-15-v padding-3-l">
@@ -312,13 +312,16 @@
 
                     <div class="btn-list margin-10 icons-margin-10-r form-lg ease-1st-btn">
                         <button class="btn round">
-                            <i class="icon icon-shield"></i>Administration
+                            <svg class="icon"><use href="#shield"></use></svg>
+                            Administration
                         </button>
                         <button class="btn round">
-                            <i class="icon icon-clock"></i>Recent History
+                            <svg class="icon"><use href="#clock"></use></svg>
+                            Recent History
                         </button>
                         <button class="btn round">
-                            <i class="icon icon-settings"></i>Tools
+                            <svg class="icon"><use href="#settings"></use></svg>
+                            Tools
                         </button>
                     </div>
 
@@ -334,21 +337,21 @@
 
                 <div class="align-c left ease-1st-btn">
                     <button class="sidebar-show btn dark btn-ghost padding-10 circle visible-lg hidden" data-tooltip title="Toggle Sidebar">
-                        <i class="icon icon-bars theme-panel2 ui-text"></i>
+                        <svg class="icon"><use href="#bars"></use></svg>
                     </button>
                     <button class="btn dark btn-ghost padding-10 circle show-mobile-menu-l hidden-lg" data-tooltip title="Show Sidebar" data-only="desktop">
-                        <i class="icon icon-bars-left"></i>
+                        <svg class="icon"><use href="#bars-left"></use></svg>
                     </button>
                     <button class="btn dark btn-ghost padding-10 circle" onclick="modal.open({source: '.search', bg: 'false'});" data-tooltip data-only="desktop" title="Search">
-                        <i class="icon icon-search"></i>
+                        <svg class="icon"><use href="#search"></use></svg>
                     </button>
                     <div class="dropdown nav ease-dropdown">
                         <button class="btn dark btn-ghost padding-10 circle hidden-sm">
                             My Reports
-                            <i class="toggle-icon icon margin-5-l icon-xs icon-angle-down"></i>
+                            <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"></use></svg>
                         </button>
                         <button class="btn dark btn-ghost padding-10 circle visible-sm">
-                            <i class="icon icon-user-circle"></i>
+                            <svg class="icon"><use href="#user-circle"></use></svg>
                         </button>
                         <ul class="content list-column-2 has-icon round shadow-lg">
                             <li><a href="#"><b class="list-icon">23</b> Waiting</a></li>
@@ -364,10 +367,10 @@
                     <div class="dropdown nav ease-dropdown">
                         <button class="btn dark btn-ghost padding-10 circle hidden-sm">
                             My Jobs
-                            <i class="toggle-icon icon margin-5-l icon-xs icon-angle-down"></i>
+                            <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"></use></svg>
                         </button>
                         <button class="btn dark btn-ghost padding-10 circle visible-sm">
-                            <i class="icon icon-user-search"></i>
+                            <svg class="icon"><use href="#search"></use></svg>
                         </button>
                         <ul class="content list-column-2 has-icon round shadow-lg">
                             <li><a href="#"><b class="list-icon">23</b> Waiting</a></li>
@@ -385,17 +388,17 @@
                 <div class="inline">
                     <div class="dropdown menu-l ease-dropdown">
                         <button class="btn dark btn-square btn-ghost circle" data-notifier data-tooltip="l" data-only="desktop" title="Personal Logs">
-                            <i class="icon icon-grid-column"></i>
+                            <svg class="icon"><use href="#grid-column"></use></svg>
                         </button>
                         <div class="content round shadow-lg no-scroll">
                             <div class="tabs xs-full-width theme-panel2 ease-tabs" data-classes="border-b border-lg ui-border ui-text" style="min-width: 300px;">
 
                                 <div class="btn-holder dark align-c border-b ease-1st-btn">
                                     <button class="tab btn btn-ghost round-t border-b border-lg ui-border ui-text active" data-tooltip data-only="desktop" title="Favorites">
-                                        <i class="icon icon-star-fill ui-no"></i>
+                                        <svg class="icon ui-no"><use href="#star"></use></svg>
                                     </button>
                                     <button class="tab btn btn-ghost round-t" data-tooltip data-only="desktop" title="History">
-                                        <i class="icon icon-history ui-no"></i>
+                                        <svg class="icon ui-no"><use href="#history"></use></svg>
                                     </button>
                                 </div>
                                 <div class="tab-content align-l scroll-v open open-ease" style="max-height: 420px;">
@@ -414,15 +417,15 @@
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                         <li>
                                             Nullam sit amet sagittis nisi.
-                                            <span class="margin-5-t block ease-1st-btn">
-                                                <a class="btn btn-square round" href="#">
-                                                    <i class="icon icon-lg icon-file-pdf default-icon"></i>
+                                            <span class="icons-xl margin-5-t block ease-1st-btn">
+                                                <a class="btn btn-square padding-4-v round" href="#">
+                                                    <svg class="icon"><use href="#file-pdf"></use></svg>
                                                 </a>
-                                                <a class="btn btn-square round" href="#">
-                                                    <i class="icon icon-lg icon-file-xls default-icon"></i>
+                                                <a class="btn btn-square padding-4-v round" href="#">
+                                                    <svg class="icon"><use href="#file-xls"></use></svg>
                                                 </a>
-                                                <a class="btn btn-square round" href="#">
-                                                    <i class="icon icon-lg icon-file-zip default-icon"></i>
+                                                <a class="btn btn-square padding-4-v round" href="#">
+                                                    <svg class="icon"><use href="#file-zip"></use></svg>
                                                 </a>
                                             </span>
                                         </li>
@@ -463,23 +466,23 @@
                     </div>
                     <div class="dropdown menu-l ease-dropdown">
                         <button class="btn dark btn-square btn-ghost circle" data-notifier data-tooltip="l" data-only="desktop" title="Notification Center">
-                            <i class="icon icon-bars-right"></i>
+                            <svg class="icon"><use href="#bars-right"></use></svg>
                         </button>
                         <div class="content round shadow-lg no-scroll">
                             <div class="tabs xs-full-width theme-panel2 ease-tabs" data-classes="border-b border-lg ui-border ui-text" style="min-width: 300px;">
 
                                 <div class="btn-holder dark align-c border-b ease-1st-btn">
                                     <button class="tab btn btn-ghost round-t border-b border-lg ui-border ui-text active" data-tooltip data-only="desktop" title="Notifications">
-                                        <i class="icon icon-bell-on ui-no"></i>
+                                        <svg class="icon ui-no"><use href="#bell"></use></svg>
                                     </button>
                                     <button class="tab btn btn-ghost round-t" data-tooltip data-only="desktop" title="Notes">
-                                        <i class="icon icon-pencil-write ui-no"></i>
+                                        <svg class="icon ui-no"><use href="#pencil-write"></use></svg>
                                     </button>
                                     <button class="tab btn btn-ghost round-t" data-tooltip data-only="desktop" title="Started Jobs">
-                                        <i class="icon icon-hourglass-start ui-no"></i>
+                                        <svg class="icon ui-no"><use href="#hourglass-start"></use></svg>
                                     </button>
                                     <button class="tab btn btn-ghost round-t" data-tooltip data-only="desktop" title="Completed Jobs">
-                                        <i class="icon icon-hourglass-end ui-no"></i>
+                                        <svg class="icon ui-no"><use href="#hourglass-end"></use></svg>
                                     </button>
                                 </div>
                                 <div class="tab-content align-l scroll-v open open-ease" style="max-height: 420px;">
@@ -498,15 +501,15 @@
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                         <li>
                                             Nullam sit amet sagittis nisi.
-                                            <span class="margin-5-t block ease-1st-btn">
-                                                <a class="btn btn-square round" href="#">
-                                                    <i class="icon icon-lg icon-file-pdf default-icon"></i>
+                                            <span class="icons-xl margin-5-t block ease-1st-btn">
+                                                <a class="btn btn-square padding-4-v round" href="#">
+                                                    <svg class="icon"><use href="#file-pdf"></use></svg>
                                                 </a>
-                                                <a class="btn btn-square round" href="#">
-                                                    <i class="icon icon-lg icon-file-xls default-icon"></i>
+                                                <a class="btn btn-square padding-4-v round" href="#">
+                                                    <svg class="icon"><use href="#file-xls"></use></svg>
                                                 </a>
-                                                <a class="btn btn-square round" href="#">
-                                                    <i class="icon icon-lg icon-file-zip default-icon"></i>
+                                                <a class="btn btn-square padding-4-v round" href="#">
+                                                    <svg class="icon"><use href="#file-zip"></use></svg>
                                                 </a>
                                             </span>
                                         </li>
@@ -557,15 +560,15 @@
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                         <li>
                                             Nullam sit amet sagittis nisi.
-                                            <span class="margin-5-t block ease-1st-btn">
-                                                <a class="btn btn-square round" href="#">
-                                                    <i class="icon icon-lg icon-file-pdf default-icon"></i>
+                                            <span class="icons-xl margin-5-t block ease-1st-btn">
+                                                <a class="btn btn-square padding-4-v round" href="#">
+                                                    <svg class="icon"><use href="#file-pdf"></use></svg>
                                                 </a>
-                                                <a class="btn btn-square round" href="#">
-                                                    <i class="icon icon-lg icon-file-xls default-icon"></i>
+                                                <a class="btn btn-square padding-4-v round" href="#">
+                                                    <svg class="icon"><use href="#file-xls"></use></svg>
                                                 </a>
-                                                <a class="btn btn-square round" href="#">
-                                                    <i class="icon icon-lg icon-file-zip default-icon"></i>
+                                                <a class="btn btn-square padding-4-v round" href="#">
+                                                    <svg class="icon"><use href="#file-zip"></use></svg>
                                                 </a>
                                             </span>
                                         </li>
@@ -611,13 +614,43 @@
                         <button class="btn no-padding circle hover-scale-more">
                             <img class="img-photo img-photo-sm circle" src="img/profile-image.jpg" alt="">
                         </button>
-                        <ul class="content has-grid align-c round shadow-lg">
-                            <li><a href="#"><i class="icon icon-lg icon-user"></i>Profile</a></li>
-                            <li><a href="#"><i class="icon icon-lg icon-calendar"></i>Calendar</a></li>
-                            <li><a href="#"><i class="icon icon-lg icon-lock"></i>Lock Screen</a></li>
-                            <li><a href="#"><i class="icon icon-lg icon-key"></i>Change Password</a></li>
-                            <li><a href="#"><i class="icon icon-lg icon-setting"></i>Settings</a></li>
-                            <li><a href="#"><i class="icon icon-lg theme-red ui-text icon-sign-out"></i>Logout</a></li>
+                        <ul class="content has-grid align-c icons-lg round shadow-lg">
+                            <li>
+                                <a href="#">
+                                    <svg class="icon"><use href="#user"></use></svg>
+                                    Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg class="icon"><use href="#calendar"></use></svg>
+                                    Calendar
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg class="icon"><use href="#lock"></use></svg>
+                                    Lock Screen
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg class="icon"><use href="#key"></use></svg>
+                                    Change Password
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg class="icon"><use href="#setting"></use></svg>
+                                    Settings
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg class="icon"><use href="#sign-out"></use></svg>
+                                    Logout
+                                </a>
+                            </li>
                         </ul>
                     </span>
                     <span class="margin-3-t inline-block hidden-xs">aeminyuce</span>
@@ -643,7 +676,7 @@
                     </div>
                 </div>
 
-                <div class="tab-content open open-ease">
+                <div class="tab-content">
 
                     <!-- forms: start -->
                     <div class="fixed fixed-inner">
@@ -653,26 +686,38 @@
                                 <div class="card full-h round shadow-lg">
 
                                     <form action="#succesful">
-                                        <div class="card-side padding-15 border-b icons-no-opacity">
+                                        <div class="card-side padding-5-h border-b">
                                             <div class="row xs-fluid">
-                                                <div class="col-4 padding-5-v xs-no-padding-t">
+                                                <div class="col-4 padding-15-v">
                                                     <h4 class="margin-5-t xs-no-margin-t">Forms Title</h4>
                                                 </div>
-                                                <div class="col-8 align-r xs-align-c">
+                                                <div class="col-8 align-r xs-align-c xs-no-padding-t">
 
                                                     <button type="submit" class="btn btn-lg padding-15-h round theme-green ui-dark ease-btn">
-                                                        <i class="icon icon-save margin-5-r"></i> Save
+                                                        <svg class="icon margin-5-r"><use href="#save"></use></svg> Save
                                                     </button>
 
                                                     <div class="dropdown menu-l ease-dropdown">
                                                         <button type="button" class="btn btn-lg btn-ghost btn-square round">
-                                                            <i class="icon icon-ellipsis-v default-icon"></i>
+                                                            <svg class="icon default-icon"><use href="#ellipsis-v"></use></svg>
                                                         </button>
                                                         <ul class="content has-icon round shadow-lg">
-                                                            <li><a href="#"><i class="list-icon icon icon-check"></i>Save &amp; Continue</a></li>
-                                                            <li><a href="#"><i class="list-icon icon icon-sign-out"></i>Save &amp; Exit</a></li>
-                                                            <li><a href="#"><i class="list-icon icon icon-pencil"></i>Save &amp; Edit</a></li>
-                                                            <li><a href="#"><i class="list-icon icon icon-plus"></i>Save &amp; Add New</a></li>
+                                                            <li><a href="#">
+                                                                <svg class="list-icon icon"><use href="#check"></use></svg>
+                                                                Save &amp; Continue</a>
+                                                            </li>
+                                                            <li><a href="#">
+                                                                <svg class="list-icon icon"><use href="#sign-out"></use></svg>
+                                                                Save &amp; Exit</a>
+                                                            </li>
+                                                            <li><a href="#">
+                                                                <svg class="list-icon icon"><use href="#pencil"></use></svg>
+                                                                Save &amp; Edit</a>
+                                                            </li>
+                                                            <li><a href="#">
+                                                                <svg class="list-icon icon"><use href="#plus"></use></svg>
+                                                                Save &amp; Add New</a>
+                                                            </li>
                                                         </ul>
                                                     </div>
 
@@ -711,7 +756,7 @@
                                                 </div>
                                                 <div class="col-5">
                                                     <div class="text text-icon-l round border-dual ease-form">
-                                                        <i class="icon icon-phone"></i>
+                                                        <svg class="icon"><use href="#phone"></use></svg>
                                                         <input class="required number" type="text" placeholder="123-123-1234" minlength="12" maxlength="12">
                                                     </div>
                                                     <p class="required-msg">Enter your phone.</p>
@@ -722,7 +767,7 @@
                                                 </div>
                                                 <div class="col-5">
                                                     <div class="select round border-dual ease-form">
-                                                        <i class="icon icon-angle-down"></i>
+                                                        <svg class="icon"><use href="#angle-down"></use></svg>
                                                         <select class="required">
                                                             <option value="">Select your age</option>
                                                             <option>Under 20</option>
@@ -738,7 +783,7 @@
                                                 </div>
                                                 <div class="col-5">
                                                     <div class="text text-icon-l round border-dual ease-form">
-                                                        <i class="icon icon-at"></i>
+                                                        <svg class="icon"><use href="#at"></use></svg>
                                                         <input class="required number" type="email" placeholder="123-123-1234">
                                                     </div>
                                                     <p class="required-msg">Enter your mail.</p>
@@ -753,14 +798,14 @@
                                                         <div class="row row-no-gap">
                                                             <div class="col-12">
                                                                 <div class="text text-icon-l round border-dual ease-form">
-                                                                    <i class="icon icon-browser"></i>
+                                                                    <svg class="icon"><use href="#browser"></use></svg>
                                                                     <input class="required" type="text" placeholder="Site name">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="col-200">
                                                             <div class="select round border-dual ease-form">
-                                                                <i class="icon icon-angle-down"></i>
+                                                                <svg class="icon"><use href="#angle-down"></use></svg>
                                                                 <select>
                                                                     <option>.com</option>
                                                                     <option>.net</option>
@@ -784,7 +829,7 @@
                                                 </div>
                                                 <div class="col-5">
                                                     <div data-src="json/countries.json" data-val="name" class="autocomplete text text-icon-l round border-dual ease-form">
-                                                        <i class="icon icon-sm icon-keyboard"></i>
+                                                        <svg class="icon"><use href="#keyboard"></use></svg>
                                                         <input type="text" placeholder="Type/Select your country" autocomplete="off">
                                                     </div>
                                                     <p class="required-msg">Type/Select your country.</p>
@@ -813,7 +858,7 @@
 
                 </div>
 
-                <div class="tab-content">
+                <div class="tab-content open open-ease">
 
                     <!-- dashboard: start -->
                     <div class="fixed fixed-inner">
@@ -841,7 +886,7 @@
                                                 </div>
                                                 <p class="dark large margin-5-b">Pending for the transaction.</p>
                                                 <p class="light">
-                                                    <i class="icon icon-xs icon-clock"></i>
+                                                    <svg class="icon icon-xs"><use href="#clock"></use></svg>
                                                     <span class="inline-block">Last updated: 15:12</span>
                                                 </p>
                                             </div>
@@ -864,7 +909,7 @@
                                                 </div>
                                                 <p class="dark large margin-5-b">Paused for the some reasons.</p>
                                                 <p class="light">
-                                                    <i class="icon icon-xs icon-clock"></i>
+                                                    <svg class="icon icon-xs"><use href="#clock"></use></svg>
                                                     <span class="inline-block">Last updated: 15:12</span>
                                                 </p>
                                             </div>
@@ -887,7 +932,7 @@
                                                 </div>
                                                 <p class="dark large margin-5-b">Reached for the expert.</p>
                                                 <p class="light">
-                                                    <i class="icon icon-xs icon-clock"></i>
+                                                    <svg class="icon icon-xs"><use href="#clock"></use></svg>
                                                     <span class="inline-block">Last updated: 15:12</span>
                                                 </p>
                                             </div>
@@ -910,7 +955,7 @@
                                                 </div>
                                                 <p class="dark large margin-5-b">Confirmed for payment.</p>
                                                 <p class="light">
-                                                    <i class="icon icon-xs icon-clock"></i>
+                                                    <svg class="icon icon-xs"><use href="#clock"></use></svg>
                                                     <span class="inline-block">Last updated: 15:12</span>
                                                 </p>
                                             </div>
@@ -918,9 +963,13 @@
 
                                     </div>
                                     <div class="carousel-nav no-margin-t margin-10-b ease-1st-btn">
-                                        <button class="carousel-prev btn btn-ghost btn-square round"><i class="icon icon-angle-left"></i></button>
+                                        <button class="carousel-prev btn btn-ghost btn-square round">
+                                            <svg class="icon"><use href="#angle-left"></use></svg>
+                                        </button>
                                         <span class="dots dark"></span>
-                                        <button class="carousel-next btn btn-ghost btn-square round"><i class="icon icon-angle-right"></i></button>
+                                        <button class="carousel-next btn btn-ghost btn-square round">
+                                            <svg class="icon"><use href="#angle-right"></use></svg>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -929,12 +978,12 @@
                                 <div class="card full-h padding-15 round shadow-lg">
                                     <div class="dropdown menu-l right ease-dropdown">
                                         <button class="btn btn-square btn-ghost round">
-                                            <i class="icon icon-sm icon-ellipsis-v"></i>
+                                            <svg class="icon"><use href="#ellipsis-v"></use></svg>
                                         </button>
                                         <ul class="content has-icon round shadow-lg">
-                                            <li><a href="#"><i class="list-icon icon icon-file-pdf"></i>Download PDF</a></li>
-                                            <li><a href="#"><i class="list-icon icon icon-file-xls"></i>Download Excel</a></li>
-                                            <li><a href="#"><i class="list-icon icon icon-eye"></i>See Detailed Activity</a></li>
+                                            <li><a href="#"><svg class="list-icon icon"><use href="#file-pdf"></use></svg>Download PDF</a></li>
+                                            <li><a href="#"><svg class="list-icon icon"><use href="#file-xls"></use></svg>Download Excel</a></li>
+                                            <li><a href="#"><svg class="list-icon icon"><use href="#eye"></use></svg>See Detailed Activity</a></li>
                                         </ul>
                                     </div>
                                     <h4 class="align-l margin-5-t">Activity</h4>
@@ -973,7 +1022,7 @@
                                     <span class="sp3"></span>
                                     <p class="x-dark large margin-5-b">Daily reports that all received.</p>
                                     <p class="light">
-                                        <i class="icon icon-xs icon-clock margin-5-r"></i>
+                                        <svg class="icon icon-xs margin-5-r"><use href="#clock"></use></svg>
                                         <span class="inline-block">Last updated: 15:12</span>
                                     </p>
                                 </div>
@@ -1128,18 +1177,18 @@
                                 <div class="card full-h padding-15 round shadow-lg tabs ease-tabs" data-classes="bold">
                                     <div class="dropdown menu-l right ease-dropdown">
                                         <button class="btn btn-square btn-ghost round">
-                                            <i class="icon icon-sm icon-ellipsis-v"></i>
+                                            <svg class="icon"><use href="#ellipsis-v"></use></svg>
                                         </button>
                                         <ul class="content has-icon round shadow-lg">
-                                            <li><a href="#"><i class="list-icon icon icon-file-pdf"></i>Download PDF</a></li>
-                                            <li><a href="#"><i class="list-icon icon icon-file-xls"></i>Download Excel</a></li>
-                                            <li><a href="#"><i class="list-icon icon icon-eye"></i>See Detailed Statistics</a></li>
+                                            <li><a href="#"><svg class="list-icon icon"><use href="#file-pdf"></use></svg>Download PDF</a></li>
+                                            <li><a href="#"><svg class="list-icon icon"><use href="#file-xls"></use></svg>Download Excel</a></li>
+                                            <li><a href="#"><svg class="list-icon icon"><use href="#eye"></use></svg>See Detailed Statistics</a></li>
                                         </ul>
                                     </div>
                                     <div class="dropdown menu-l margin-5-r right ease-dropdown">
                                         <button class="btn btn-ghost round">
                                             <span class="value-toggle">Last year</span>
-                                            <i class="toggle-icon icon margin-5-l icon-xs icon-angle-down"></i>
+                                            <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"></use></svg>
                                         </button>
                                         <ul class="content round shadow-lg">
                                             <li><label class="tab active bold selected">Last year</label></li>
@@ -1214,10 +1263,16 @@
                                                 <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                                 <li>
                                                     Nullam sit amet sagittis nisi.
-                                                    <span class="margin-5-t block ease-1st-btn">
-                                                        <a class="btn btn-square round" href="#"><i class="icon icon-lg icon-file-pdf"></i></a>
-                                                        <a class="btn btn-square round" href="#"><i class="icon icon-lg icon-file-xls"></i></a>
-                                                        <a class="btn btn-square round" href="#"><i class="icon icon-lg icon-file-zip"></i></a>
+                                                    <span class="icons-xl margin-5-t block ease-1st-btn">
+                                                        <a class="btn btn-square padding-3-v round" href="#">
+                                                            <svg class="icon"><use href="#file-pdf"></use></svg>
+                                                        </a>
+                                                        <a class="btn btn-square padding-3-v round" href="#">
+                                                            <svg class="icon"><use href="#file-xls"></use></svg>
+                                                        </a>
+                                                        <a class="btn btn-square padding-3-v round" href="#">
+                                                            <svg class="icon"><use href="#file-zip"></use></svg>
+                                                        </a>
                                                     </span>
                                                 </li>
                                                 <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
@@ -1261,11 +1316,11 @@
                                 <div class="card full-h padding-15 round shadow-lg">
                                     <div class="dropdown menu-l right ease-dropdown">
                                         <button class="btn btn-square btn-ghost round">
-                                            <i class="icon icon-sm icon-ellipsis-v"></i>
+                                            <svg class="icon"><use href="#ellipsis-v"></use></svg>
                                         </button>
                                         <ul class="content has-icon round shadow-lg">
-                                            <li><a href="#"><i class="list-icon icon icon-calendar-star"></i>Add to Your Calendar</a></li>
-                                            <li><a href="#"><i class="list-icon icon icon-eye"></i>See All Events</a></li>
+                                            <li><a href="#"><svg class="list-icon icon"><use href="#calendar-plus"></use></svg>Add to Your Calendar</a></li>
+                                            <li><a href="#"><svg class="list-icon icon"><use href="#eye"></use></svg>See All Events</a></li>
                                         </ul>
                                     </div>
                                     <h4 class="align-l margin-5-t">Events</h4>
@@ -1277,12 +1332,12 @@
                                 <div class="card full-h padding-15 round shadow-lg">
                                     <div class="dropdown menu-l right ease-dropdown">
                                         <button class="btn btn-square btn-ghost round">
-                                            <i class="icon icon-sm icon-ellipsis-v"></i>
+                                            <svg class="icon"><use href="#ellipsis-v"></use></svg>
                                         </button>
                                         <ul class="content has-icon round shadow-lg">
-                                            <li><a href="#"><i class="list-icon icon icon-file-pdf"></i>Download PDF</a></li>
-                                            <li><a href="#"><i class="list-icon icon icon-file-xls"></i>Download Excel</a></li>
-                                            <li><a href="#"><i class="list-icon icon icon-eye"></i>See All Experts</a></li>
+                                            <li><a href="#"><svg class="list-icon icon"><use href="#file-pdf"></use></svg>Download PDF</a></li>
+                                            <li><a href="#"><svg class="list-icon icon"><use href="#file-xls"></use></svg>Download Excel</a></li>
+                                            <li><a href="#"><svg class="list-icon icon"><use href="#eye"></use></svg>See All Experts</a></li>
                                         </ul>
                                     </div>
                                     <h4 class="align-l margin-5-t">Experts</h4>
@@ -1291,15 +1346,17 @@
                                         <div class="row row-no-gap-v row-sm-gap-h">
                                             <div class="col-6 lg-fluid">
                                                 <div class="text text-icon-both round no-border ui-x-light has-clear ease-form">
-                                                    <i class="icon icon-search text-icon-l"></i>
-                                                    <button class="clear-form icon icon-remove"></button>
+                                                    <svg class="icon text-icon-l"><use href="#search"></use></svg>
+                                                    <button class="clear-form">
+                                                        <svg class="icon"><use href="#remove"></use></svg>
+                                                    </button>
                                                     <input class="data-filter" type="text" placeholder="Search">
                                                 </div>
                                                 <span class="sp5 hidden-lg"></span>
                                             </div>
                                             <div class="col-lg-3 col-6 no-fluid">
                                                 <div class="select round no-border ui-x-light ease-form">
-                                                    <i class="icon icon-angle-down"></i>
+                                                    <svg class="icon"><use href="#angle-down"></use></svg>
                                                     <select class="data-filter" data-index="2">
                                                         <option value="">Filter</option>
                                                         <option>Starting</option>
@@ -1316,19 +1373,19 @@
                                                 <div class="dropdown menu-l block ease-dropdown">
                                                     <button class="btn align-l round">
                                                         <span class="value-toggle">
-                                                            <i class="icon icon-xs icon-sort"></i> Sort
+                                                            <svg class="icon"><use href="#sort"></use></svg> Sort
                                                         </span>
                                                     </button>
                                                     <ul class="content round shadow-lg">
                                                         <li>
                                                             <label class="radio" data-sort="1">
-                                                                <i class="icon icon-xs icon-sort ease-layout"></i>
+                                                                <svg class="icon"><use href="#sort"></use></svg>
                                                                 <input type="radio" name="s">By Name
                                                             </label>
                                                         </li>
                                                         <li>
                                                             <label class="radio" data-sort="2">
-                                                                <i class="icon icon-xs icon-sort ease-layout"></i>
+                                                                <svg class="icon"><use href="#sort"></use></svg>
                                                                 <input type="radio" name="s">By Step
                                                             </label>
                                                         </li>
@@ -1352,25 +1409,25 @@
                                                     <div class="col-7">
                                                         <ul class="steps-bar steps-icon">
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
+                                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></use></svg>1:S
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Waiting"></i>2:W
+                                                                <svg class="icon" data-tooltip title="Waiting"><use href="#check-circle"></use></svg>2:W
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
+                                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></use></svg>3:E
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
+                                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></use></svg>4:F
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
+                                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></use></svg>5:S
                                                             </li>
                                                             <li class="active">
-                                                                <i class="icon icon-clock" data-tooltip title="Paused"></i>6:P
+                                                                <svg class="icon" data-tooltip title="Paused"><use href="#clock"></use></svg>6:P
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Delayed"></i>7:C
+                                                                <svg class="icon" data-tooltip title="Delayed"><use href="#check-circle"></use></svg>7:C
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -1384,25 +1441,25 @@
                                                     <div class="col-7">
                                                         <ul class="steps-bar steps-icon theme-yellow ui-text">
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
+                                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></use></svg>1:S
                                                             </li>
                                                             <li class="active">
-                                                                <i class="icon icon-alert-circle" data-tooltip title="Waiting"></i>2:W
+                                                                <svg class="icon" data-tooltip title="Waiting"><use href="#alert-circle"></use></svg>2:W
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
+                                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></use></svg>3:E
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
+                                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></use></svg>4:F
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
+                                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></use></svg>5:S
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Paused"></i>6:P
+                                                                <svg class="icon" data-tooltip title="Paused"><use href="#check-circle"></use></svg>6:P
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Delayed"></i>7:C
+                                                                <svg class="icon" data-tooltip title="Delayed"><use href="#check-circle"></use></svg>7:C
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -1416,25 +1473,25 @@
                                                     <div class="col-7">
                                                         <ul class="steps-bar steps-icon">
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
+                                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></use></svg>1:S
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Waiting"></i>2:W
+                                                                <svg class="icon" data-tooltip title="Waiting"><use href="#check-circle"></use></svg>2:W
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
+                                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></use></svg>3:E
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
+                                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></use></svg>4:F
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
+                                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></use></svg>5:S
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Paused"></i>6:P
+                                                                <svg class="icon" data-tooltip title="Paused"><use href="#check-circle"></use></svg>6:P
                                                             </li>
                                                             <li class="active">
-                                                                <i class="icon icon-clock" data-tooltip title="Delayed"></i>7:C
+                                                                <svg class="icon" data-tooltip title="Delayed"><use href="#clock"></use></svg>7:C
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -1448,25 +1505,25 @@
                                                     <div class="col-7">
                                                         <ul class="steps-bar steps-icon">
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
+                                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></use></svg>1:S
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Waiting"></i>2:W
+                                                                <svg class="icon" data-tooltip title="Waiting"><use href="#check-circle"></use></svg>2:W
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
+                                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></use></svg>3:E
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
+                                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></use></svg>4:F
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
+                                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></use></svg>5:S
                                                             </li>
                                                             <li class="active">
-                                                                <i class="icon icon-clock" data-tooltip title="Paused"></i>6:P
+                                                                <svg class="icon" data-tooltip title="Paused"><use href="#clock"></use></svg>>6:P
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Delayed"></i>7:C
+                                                                <svg class="icon" data-tooltip title="Delayed"><use href="#check-circle"></use></svg>7:C
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -1481,25 +1538,25 @@
                                                     <div class="col-7">
                                                         <ul class="steps-bar steps-icon">
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
+                                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></use></svg>1:S
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Waiting"></i>2:W
+                                                                <svg class="icon" data-tooltip title="Waiting"><use href="#check-circle"></use></svg>2:W
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
+                                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></use></svg>3:E
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
+                                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></use></svg>4:F
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
+                                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></use></svg>5:S
                                                             </li>
                                                             <li class="active">
-                                                                <i class="icon icon-clock" data-tooltip title="Paused"></i>6:P
+                                                                <svg class="icon" data-tooltip title="Paused"><use href="#clock"></use></svg>6:P
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Delayed"></i>7:C
+                                                                <svg class="icon" data-tooltip title="Delayed"><use href="#check-circle"></use></svg>7:C
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -1513,25 +1570,25 @@
                                                     <div class="col-7">
                                                         <ul class="steps-bar steps-icon theme-yellow ui-text">
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
+                                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></use></svg>1:S
                                                             </li>
                                                             <li class="active">
-                                                                <i class="icon icon-alert-circle" data-tooltip title="Waiting"></i>2:W
+                                                                <svg class="icon" data-tooltip title="Waiting"><use href="#alert-circle"></use></svg>2:W
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
+                                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></use></svg>3:E
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
+                                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></use></svg>4:F
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
+                                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></use></svg>5:S
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Paused"></i>6:P
+                                                                <svg class="icon" data-tooltip title="Paused"><use href="#check-circle"></use></svg>6:P
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Delayed"></i>7:C
+                                                                <svg class="icon" data-tooltip title="Delayed"><use href="#check-circle"></use></svg>7:C
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -1545,25 +1602,25 @@
                                                     <div class="col-7">
                                                         <ul class="steps-bar steps-icon">
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
+                                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></use></svg>1:S
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Waiting"></i>2:W
+                                                                <svg class="icon" data-tooltip title="Waiting"><use href="#check-circle"></use></svg>2:W
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
+                                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></use></svg>3:E
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
+                                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></use></svg>4:F
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
+                                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></use></svg>5:S
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Paused"></i>6:P
+                                                                <svg class="icon" data-tooltip title="Paused"><use href="#check-circle"></use></svg>6:P
                                                             </li>
                                                             <li class="active">
-                                                                <i class="icon icon-clock" data-tooltip title="Delayed"></i>7:C
+                                                                <svg class="icon" data-tooltip title="Delayed"><use href="#clock"></use></svg>7:C
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -1577,31 +1634,30 @@
                                                     <div class="col-7">
                                                         <ul class="steps-bar steps-icon">
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
+                                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></use></svg>1:S
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Waiting"></i>2:W
+                                                                <svg class="icon" data-tooltip title="Waiting"><use href="#check-circle"></use></svg>2:W
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
+                                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></use></svg>3:E
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
+                                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></use></svg>4:F
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
+                                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></use></svg>5:S
                                                             </li>
                                                             <li class="active">
-                                                                <i class="icon icon-clock" data-tooltip title="Paused"></i>6:P
+                                                                <svg class="icon" data-tooltip title="Paused"><use href="#clock"></use></svg>>6:P
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Delayed"></i>7:C
+                                                                <svg class="icon" data-tooltip title="Delayed"><use href="#check-circle"></use></svg>7:C
                                                             </li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                             </div>
-
                                             <div class="data-content no-border round" data-val="John Atkinson|Paused">
                                                 <div class="row row-no-gap no-fluid">
                                                     <div class="col-5">
@@ -1610,25 +1666,25 @@
                                                     <div class="col-7">
                                                         <ul class="steps-bar steps-icon">
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
+                                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></use></svg>1:S
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Waiting"></i>2:W
+                                                                <svg class="icon" data-tooltip title="Waiting"><use href="#check-circle"></use></svg>2:W
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
+                                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></use></svg>3:E
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
+                                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></use></svg>4:F
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
+                                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></use></svg>5:S
                                                             </li>
                                                             <li class="active">
-                                                                <i class="icon icon-clock" data-tooltip title="Paused"></i>6:P
+                                                                <svg class="icon" data-tooltip title="Paused"><use href="#clock"></use></svg>6:P
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Delayed"></i>7:C
+                                                                <svg class="icon" data-tooltip title="Delayed"><use href="#check-circle"></use></svg>7:C
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -1642,25 +1698,25 @@
                                                     <div class="col-7">
                                                         <ul class="steps-bar steps-icon theme-yellow ui-text">
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
+                                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></use></svg>1:S
                                                             </li>
                                                             <li class="active">
-                                                                <i class="icon icon-alert-circle" data-tooltip title="Waiting"></i>2:W
+                                                                <svg class="icon" data-tooltip title="Waiting"><use href="#alert-circle"></use></svg>2:W
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
+                                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></use></svg>3:E
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
+                                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></use></svg>4:F
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
+                                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></use></svg>5:S
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Paused"></i>6:P
+                                                                <svg class="icon" data-tooltip title="Paused"><use href="#check-circle"></use></svg>6:P
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Delayed"></i>7:C
+                                                                <svg class="icon" data-tooltip title="Delayed"><use href="#check-circle"></use></svg>7:C
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -1674,25 +1730,25 @@
                                                     <div class="col-7">
                                                         <ul class="steps-bar steps-icon">
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
+                                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></use></svg>1:S
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Waiting"></i>2:W
+                                                                <svg class="icon" data-tooltip title="Waiting"><use href="#check-circle"></use></svg>2:W
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
+                                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></use></svg>3:E
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
+                                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></use></svg>4:F
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
+                                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></use></svg>5:S
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Paused"></i>6:P
+                                                                <svg class="icon" data-tooltip title="Paused"><use href="#check-circle"></use></svg>6:P
                                                             </li>
                                                             <li class="active">
-                                                                <i class="icon icon-clock" data-tooltip title="Delayed"></i>7:C
+                                                                <svg class="icon" data-tooltip title="Delayed"><use href="#clock"></use></svg>7:C
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -1706,25 +1762,153 @@
                                                     <div class="col-7">
                                                         <ul class="steps-bar steps-icon">
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Starting"></i>1:S
+                                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></use></svg>1:S
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Waiting"></i>2:W
+                                                                <svg class="icon" data-tooltip title="Waiting"><use href="#check-circle"></use></svg>2:W
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Expert"></i>3:E
+                                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></use></svg>3:E
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="First Audit"></i>4:F
+                                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></use></svg>4:F
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Second Audit"></i>5:S
+                                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></use></svg>5:S
                                                             </li>
                                                             <li class="active">
-                                                                <i class="icon icon-clock" data-tooltip title="Paused"></i>6:P
+                                                                <svg class="icon" data-tooltip title="Paused"><use href="#clock"></use></svg>>6:P
                                                             </li>
                                                             <li>
-                                                                <i class="icon icon-check-circle" data-tooltip title="Delayed"></i>7:C
+                                                                <svg class="icon" data-tooltip title="Delayed"><use href="#check-circle"></use></svg>7:C
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="data-content no-border round" data-val="John Atkinson|Paused">
+                                                <div class="row row-no-gap no-fluid">
+                                                    <div class="col-5">
+                                                        <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <ul class="steps-bar steps-icon">
+                                                            <li>
+                                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></use></svg>1:S
+                                                            </li>
+                                                            <li>
+                                                                <svg class="icon" data-tooltip title="Waiting"><use href="#check-circle"></use></svg>2:W
+                                                            </li>
+                                                            <li>
+                                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></use></svg>3:E
+                                                            </li>
+                                                            <li>
+                                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></use></svg>4:F
+                                                            </li>
+                                                            <li>
+                                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></use></svg>5:S
+                                                            </li>
+                                                            <li class="active">
+                                                                <svg class="icon" data-tooltip title="Paused"><use href="#clock"></use></svg>6:P
+                                                            </li>
+                                                            <li>
+                                                                <svg class="icon" data-tooltip title="Delayed"><use href="#check-circle"></use></svg>7:C
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="data-content no-border round" data-val="Mary Doe|Waiting">
+                                                <div class="row row-no-gap no-fluid">
+                                                    <div class="col-5">
+                                                        <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <ul class="steps-bar steps-icon theme-yellow ui-text">
+                                                            <li>
+                                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></use></svg>1:S
+                                                            </li>
+                                                            <li class="active">
+                                                                <svg class="icon" data-tooltip title="Waiting"><use href="#alert-circle"></use></svg>2:W
+                                                            </li>
+                                                            <li>
+                                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></use></svg>3:E
+                                                            </li>
+                                                            <li>
+                                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></use></svg>4:F
+                                                            </li>
+                                                            <li>
+                                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></use></svg>5:S
+                                                            </li>
+                                                            <li>
+                                                                <svg class="icon" data-tooltip title="Paused"><use href="#check-circle"></use></svg>6:P
+                                                            </li>
+                                                            <li>
+                                                                <svg class="icon" data-tooltip title="Delayed"><use href="#check-circle"></use></svg>7:C
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="data-content no-border round" data-val="Mike Taylor|Completed">
+                                                <div class="row row-no-gap no-fluid">
+                                                    <div class="col-5">
+                                                        <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <ul class="steps-bar steps-icon">
+                                                            <li>
+                                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></use></svg>1:S
+                                                            </li>
+                                                            <li>
+                                                                <svg class="icon" data-tooltip title="Waiting"><use href="#check-circle"></use></svg>2:W
+                                                            </li>
+                                                            <li>
+                                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></use></svg>3:E
+                                                            </li>
+                                                            <li>
+                                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></use></svg>4:F
+                                                            </li>
+                                                            <li>
+                                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></use></svg>5:S
+                                                            </li>
+                                                            <li>
+                                                                <svg class="icon" data-tooltip title="Paused"><use href="#check-circle"></use></svg>6:P
+                                                            </li>
+                                                            <li class="active">
+                                                                <svg class="icon" data-tooltip title="Delayed"><use href="#clock"></use></svg>7:C
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="data-content no-border round" data-val="Tony Starky|Paused">
+                                                <div class="row row-no-gap no-fluid">
+                                                    <div class="col-5">
+                                                        <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <ul class="steps-bar steps-icon">
+                                                            <li>
+                                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></use></svg>1:S
+                                                            </li>
+                                                            <li>
+                                                                <svg class="icon" data-tooltip title="Waiting"><use href="#check-circle"></use></svg>2:W
+                                                            </li>
+                                                            <li>
+                                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></use></svg>3:E
+                                                            </li>
+                                                            <li>
+                                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></use></svg>4:F
+                                                            </li>
+                                                            <li>
+                                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></use></svg>5:S
+                                                            </li>
+                                                            <li class="active">
+                                                                <svg class="icon" data-tooltip title="Paused"><use href="#clock"></use></svg>>6:P
+                                                            </li>
+                                                            <li>
+                                                                <svg class="icon" data-tooltip title="Delayed"><use href="#check-circle"></use></svg>7:C
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -1768,7 +1952,7 @@
 <div class="mobile-menu show-l theme-panel ui-dark ease-layout ease-slow ease-in-out">
     <div class="mobile-menu-title no-padding border-b">
         <button class="btn btn-square btn-lg btn-ghost circle ease-btn close-mobile-menu">
-            <i class="icon icon-sm icon-remove no-opacity"></i>
+            <svg class="icon no-opacity"><use href="#remove"/></svg>
         </button>
         <img src="img/logo-udashboard.png" height="66" alt="">
     </div>
@@ -1787,7 +1971,9 @@
                 <div class="row row-no-gap-h">
                     <div class="col-12 ease-1st-form">
                         <div class="text text-icon has-clear round-l no-border shadow-in-sm theme-gray ui-x-light">
-                            <button type="button" class="clear-form icon icon-remove"></button>
+                            <button type="button" class="clear-form">
+                                <svg class="icon"><use href="#remove"/></svg>
+                            </button>
                             <input class="required" type="text" placeholder="Search">
                         </div>
                         <p class="required-msg large">Please, enter a keyword.</p>
@@ -1795,29 +1981,29 @@
                 </div>
                 <div class="col-100 col-xs-50 padding-10-v">
                     <button class="btn block round-r theme-default2 ui-dark ease-btn" type="submit">
-                        <i class="icon icon-lg icon-search"></i>
+                        <svg class="icon"><use href="#search"/></svg>
                     </button>
                 </div>
             </div>
 
-            <div class="row xs-fluid block-2nd icons-no-opacity hover-t-more-2nd icons-margin-5-v theme-gray ease-2nd-btn">
+            <div class="row xs-fluid icons-xxl block-2nd icons-no-opacity hover-t-more-2nd icons-margin-5-v theme-gray ease-2nd-btn">
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-x-light" href="#">
-                        <i class="icon icon-xl icon-news theme-default2 ui-text"></i>
+                        <svg class="icon theme-default2 ui-text"><use href="#news"/></svg>
                         <span class="block margin-5-v">News</span>
                         <span class="dark">589</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-x-light" href="#">
-                        <i class="icon icon-xl icon-calendar-check theme-default2 ui-text"></i>
+                        <svg class="icon theme-default2 ui-text"><use href="#calendar-check"/></svg>
                         <span class="block margin-5-v">Events</span>
                         <span class="dark">219</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-x-light" href="#">
-                        <i class="icon icon-xl icon-files theme-default2 ui-text"></i>
+                        <svg class="icon theme-default2 ui-text"><use href="#files"/></svg>
                         <span class="block margin-5-v">Documents</span>
                         <span class="dark">701</span>
                     </a>

@@ -10,7 +10,7 @@ input.btn { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .btn.border-dual { padding-top: 4px; padding-bottom: 4px; }
 .btn:not(.border):not([class*="border-"]) { border-width: 0; }
 .btn:not(.btn-multi) { white-space: nowrap; }
-.btn .icon { vertical-align: bottom; width: 18px; height: 18px; stroke-width: 28px; }
+.btn .icon:not(.toggle-icon) { vertical-align: bottom; width: 18px; height: 18px; stroke-width: 28px; }
 
 .btn-square { min-width: 0 !important; width: 32px; max-width: none !important; }
 .btn-square:not([class*="align-"]) { text-align: center !important; }
@@ -32,7 +32,7 @@ html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hove
 .btn-lg.border,.form-lg .btn.border { padding-top: 9px; padding-bottom: 9px; }
 .btn-lg.border-dual,.form-lg .btn.border-dual { padding-top: 8px; padding-bottom: 8px; }
 .btn-lg.round,.form-lg .btn.round { border-radius: 8px; }
-.btn-lg .icon,.form-lg .btn .icon { width: 22px; height: 22px; stroke-width: 28px; }
+.btn-lg .icon:not(.toggle-icon),.form-lg .btn .icon:not(.toggle-icon) { width: 22px; height: 22px; stroke-width: 28px; }
 
 .btn-sm { font-size: 12px; line-height: 16px; height: 26px; padding-top: 5px; padding-bottom: 5px; }
 .btn-sm.btn-square { width: 26px; }
@@ -41,7 +41,7 @@ html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hove
 
 .btn-sm.round { border-radius: 4px; }
 .btn-sm:not(.circle) { padding-right: 8px; padding-left: 8px; }
-.btn-sm .icon { width: 16px; height: 16px; stroke-width: 34px; }
+.btn-sm .icon:not(.toggle-icon) { width: 16px; height: 16px; stroke-width: 34px; }
 
 .btn-xs { font-size: 11px; line-height: 14px; height: 22px; padding-top: 4px; padding-bottom: 4px; }
 .btn-xs.btn-square { width: 22px; }
@@ -50,7 +50,7 @@ html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hove
 .btn-xs.round { border-radius: 3px; }
 .btn-xs:not(.circle) { padding-right: 5px; padding-left: 5px; }
 .btn-xs.circle { padding-right: 10px; padding-left: 10px; }
-.btn-xs .icon { width: 14px; height: 14px; stroke-width: 38px; }
+.btn-xs .icon:not(.toggle-icon) { width: 14px; height: 14px; stroke-width: 38px; }
 
 .btn-xxs { font-size: 10px; line-height: 12px; height: 18px; padding-top: 3px; padding-bottom: 3px; }
 .btn-xxs.btn-square { width: 18px; }
@@ -59,7 +59,7 @@ html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hove
 .btn-xxs.round { border-radius: 2px; }
 .btn-xxs:not(.circle) { padding-right: 2px; padding-left: 2px; }
 .btn-xxs.circle { padding-right: 6px; padding-left: 6px; }
-.btn-xxs .icon { width: 12px; height: 12px; stroke-width: 44px }
+.btn-xxs .icon:not(.toggle-icon) { width: 12px; height: 12px; stroke-width: 44px }
 
 .btn-passive { opacity: .6; cursor: default; }
 .btn-active { font-weight: bold; }

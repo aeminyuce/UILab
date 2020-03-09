@@ -11,6 +11,8 @@
 .dropdown > .btn:not(.btn-square) { width: 100%; }
 .dropdown.open > .btn-ghost:not([class*="ui-"]) { background-color: rgba(0,0,0,.075) !important; }
 
+.dropdown > .btn .toggle-icon { width: 14px !important; height: 14px !important; margin-top: -2px; stroke-width: 38px !important; }
+.dropdown > .btn .toggle-icon.right { margin-top: 4px; margin-bottom: 4px; }
 .dropdown.open-ease > .btn .toggle-icon { transform: rotate(-180deg); }
 .dropdown.open-ease > .btn .icon { opacity: 1; }
 
@@ -47,7 +49,7 @@ html:not(.mobile) .dropdown ul.content > li:hover { background-color: rgba(0,0,0
 
 .dropdown ul.content.has-icon > li { padding-right: 38px; position: relative; }
 .dropdown ul.content.has-icon > li a { padding-right: 38px; margin-right: -38px; }
-.dropdown ul.content.has-icon > li .list-icon { position: absolute; top: 50%; right: 10px; transform: translateY(-50%); opacity: .45; }
+.dropdown ul.content.has-icon > li .list-icon { position: absolute; top: 50%; right: 10px; transform: translateY(-50%); }
 
 .dropdown ul.content.has-grid { display: flex; flex-wrap: wrap; }
 .dropdown ul.content.has-grid > li { text-align: center; width: 50%; flex-grow: 1; }
