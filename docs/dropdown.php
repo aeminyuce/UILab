@@ -331,34 +331,34 @@
                                 Dropdown
                                 <svg class="toggle-icon icon right"><use href="#angle-down"></use></svg>
                             </button>
-                            <ul class="content has-grid round shadow-lg">
+                            <ul class="content has-grid round icons-lg shadow-lg">
                                 <li>
                                     <a href="#">
-                                        <svg class="list-icon icon icon-lg"><use href="#home"></use></svg>
+                                        <svg class="list-icon icon"><use href="#home"></use></svg>
                                         Home
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="list-icon icon icon-lg"><use href="#user"></use></svg>
+                                        <svg class="list-icon icon"><use href="#user"></use></svg>
                                         Profile
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="list-icon icon icon-lg"><use href="#bell"></use></svg>
+                                        <svg class="list-icon icon"><use href="#bell"></use></svg>
                                         Notifications
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="list-icon icon icon-lg"><use href="#calendar"></use></svg>
+                                        <svg class="list-icon icon"><use href="#calendar"></use></svg>
                                         Calendar
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="list-icon icon icon-lg"><use href="#sign-out"></use></svg>
+                                        <svg class="list-icon icon"><use href="#sign-out"></use></svg>
                                         Logout
                                     </a>
                                 </li>
@@ -371,40 +371,40 @@
                                 Dropdown
                                 <svg class="toggle-icon icon right"><use href="#angle-down"></use></svg>
                             </button>
-                            <ul class="content has-grid round shadow-lg">
+                            <ul class="content has-grid round icons-lg shadow-lg">
                                 <li>
                                     <a href="#">
-                                        <svg class="list-icon icon icon-lg"><use href="#home"></use></svg>
+                                        <svg class="list-icon icon"><use href="#home"></use></svg>
                                         Home
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="list-icon icon icon-lg"><use href="#user"></use></svg>
+                                        <svg class="list-icon icon"><use href="#user"></use></svg>
                                         Profile
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="list-icon icon icon-lg"><use href="#bell"></use></svg>
+                                        <svg class="list-icon icon"><use href="#bell"></use></svg>
                                         Notifications
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="list-icon icon icon-lg"><use href="#calendar"></use></svg>
+                                        <svg class="list-icon icon"><use href="#calendar"></use></svg>
                                         Calendar
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="list-icon icon icon-lg"><use href="#settings"></use></svg>
+                                        <svg class="list-icon icon"><use href="#settings"></use></svg>
                                         Settings
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="list-icon icon icon-lg"><use href="#sign-out"></use></svg>
+                                        <svg class="list-icon icon"><use href="#sign-out"></use></svg>
                                         Logout
                                     </a>
                                 </li>

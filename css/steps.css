@@ -15,7 +15,7 @@
 .steps-bar li.active ~ li:before { width: 10px; height: 10px; background-color: #fff; margin-top: 8px; margin-bottom: 8px; border-color: rgba(0,0,0,.12); }
 .steps-bar li.active ~ li:after { background-color: rgba(0,0,0,.12); }
 
-.steps-bar li > span,.steps-bar.steps-icon li > .icon { width: 16px; height: 16px; display: block; position: absolute; top: 5px; left: 50%; z-index: 2; transform: translateX(-50%); }
+.steps-bar li > span,.steps-bar.steps-icon li > .icon { width: 17px; height: 17px; display: block; position: absolute; top: 4.5px; left: 50%; z-index: 2; transform: translateX(-50%); }
 .steps-bar.steps-icon li > .icon { color: currentColor; stroke-width: 34px; }
 .steps-bar li.active ~ li > .icon { opacity: 0; }
 

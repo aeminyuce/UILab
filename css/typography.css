@@ -12,6 +12,9 @@ h4 { font-size: 18px; }
 h5 { font-size: 14px; }
 h6 { font-size: 12px; }
 
+h1 .icon:not(.right),h2 .icon:not(.right),h3 .icon:not(.right),h4 .icon:not(.right),h5 .icon:not(.right),h6 .icon:not(.right) { margin-right: 5px; }
+h1 .icon-lg:not(.right),h2 .icon-lg:not(.right),h3 .icon-lg:not(.right),h4 .icon-lg:not(.right),h5 .icon-lg:not(.right),h6 .icon-lg:not(.right) { margin-right: 10px; }
+
 @media (max-width: 480px) {
     h1,h2,h3,h4,h5,h6 { text-align: center; }
     h1 > small,h2 > small,h3 > small,h4 > small,h5 > small,h6 > small { text-align: center; display: block; }

@@ -296,13 +296,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-50 dark align-c set-relative">
+                                <div class="col-50 dark align-c icons-lg set-relative">
                                     <div class="set-absolute set-all hidden-md">
                                         <div class="set-absolute set-c padding-20-h">
-                                            <svg class="icon icon-lg"><use href="#exchange-h"></use></svg>
+                                            <svg class="icon"><use href="#exchange-h"></use></svg>
                                         </div>
                                     </div>
-                                    <svg class="icon icon-lg visible-md"><use href="#exchange-v"></use></svg>
+                                    <svg class="icon visible-md"><use href="#exchange-v"></use></svg>
                                 </div>
                                 <div class="row">
                                     <div class="col-12 full-height">
@@ -334,13 +334,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-50 dark align-c set-relative">
+                                <div class="col-50 dark align-c icons-lg set-relative">
                                     <div class="set-absolute set-all hidden-md">
                                         <div class="set-absolute set-c padding-20-h">
-                                            <svg class="icon icon-lg"><use href="#exchange-h"></use></svg>
+                                            <svg class="icon"><use href="#exchange-h"></use></svg>
                                         </div>
                                     </div>
-                                    <svg class="icon icon-lg visible-md"><use href="#exchange-v"></use></svg>
+                                    <svg class="icon visible-md"><use href="#exchange-v"></use></svg>
                                 </div>
                                 <div class="row">
                                     <div class="col-12 full-height">
@@ -374,11 +374,11 @@
                                 </div>
                                 <div class="col-50 dark align-c set-relative">
                                     <div class="set-absolute set-all hidden-md">
-                                        <div class="set-absolute set-c padding-20-h">
-                                            <svg class="icon icon-lg"><use href="#exchange-h"></use></svg>
+                                        <div class="set-absolute set-c icons-lg padding-20-h">
+                                            <svg class="icon"><use href="#exchange-h"></use></svg>
                                         </div>
                                     </div>
-                                    <svg class="icon icon-lg visible-md"><use href="#exchange-v"></use></svg>
+                                    <svg class="icon visible-md"><use href="#exchange-v"></use></svg>
                                 </div>
                                 <div class="row">
                                     <div class="col-12 full-height">
@@ -1673,7 +1673,7 @@
                     <form action="#successful">
 
                         <div class="text text-icon form-light margin-10-b round border-dual ease-form">
-                            <button type="submit" class="submit-icon">
+                            <button type="submit">
                                 <svg class="icon"><use href="#search"></use></svg>
                             </button>
                             <input class="required" type="text" placeholder="Required example with text icon post">

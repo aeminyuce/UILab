@@ -211,7 +211,8 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i { transform: tran
 
 .form-lg .select select { padding-right: 40px; }
 
-.form-lg .select .icon,.form-lg [class*="text-icon"] > .icon { width: 20px; height: 20px; right: 10px; stroke-width: 24px; }
+.form-lg .select .icon,.form-lg [class*="text-icon"] .icon { width: 20px; height: 20px; stroke-width: 24px; }
+.form-lg .select .icon,.form-lg [class*="text-icon"] > .icon { right: 10px; }
 .form-lg .text-icon-l .icon,.form-lg .text-icon-both .text-icon-l { left: 10px; }
 
 .form-lg [class*="text-icon"]:not(.text-icon-l) > input,.form-lg .text-icon-both > input { padding-right: 40px !important; }

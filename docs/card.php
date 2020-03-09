@@ -62,7 +62,7 @@
                         </button>
                         <div class="col-static sm-fluid">
                             <div class="col-42 align-c padding-4-v">
-                                <svg class="icon icon-xl font-red"><use href="#info-circle-fill"/></svg>
+                                <svg class="icon icon-xl theme-default2 ui-text"><use href="#info-circle-fill"/></svg>
                             </div>
                             <div class="row">
                                 <div class="col-12 sm-align-c large">
@@ -84,7 +84,7 @@
                             </button>
                                 <div class="col-static sm-fluid">
                                     <div class="col-42 padding-4-v align-c">
-                                        <svg class="icon icon-xl font-red"><use href="#info-circle-fill"/></svg>
+                                        <svg class="icon icon-xl theme-default2 ui-text"><use href="#info-circle-fill"/></svg>
                                     </div>
                                     <div class="row">
                                         <div class="col-12 sm-align-c large">

@@ -8,28 +8,22 @@
 .svg-s { opacity: .45; } /* sub */
 .svg-fr { fill-rule: evenodd; } /* fill-rule */
 
-.icon-xxs { width: 12px !important; height: 12px !important; stroke-width: 44px !important; }
-.icon-xs { width: 14px !important; height: 14px !important; stroke-width: 38px !important; }
-.icon-sm { width: 18px !important; height: 18px !important; stroke-width: 32px !important; }
-.icon-lg { width: 26px !important; height: 26px !important; stroke-width: 22px !important; }
-.icon-xl { width: 34px !important; height: 34px !important; stroke-width: 18px !important; }
-.icon-xxl { width: 50px !important; height: 50px !important; stroke-width: 12px !important; }
+.icon-xxs,.icons-xxs .icon { width: 12px !important; height: 12px !important; stroke-width: 44px !important; }
+.icon-xs,.icons-xs .icon { width: 14px !important; height: 14px !important; stroke-width: 38px !important; }
+.icon-sm,.icons-sm .icon { width: 18px !important; height: 18px !important; stroke-width: 32px !important; }
+.icon-lg,.icons-lg .icon { width: 26px !important; height: 26px !important; stroke-width: 22px !important; }
+.icon-xl,.icons-xl .icon { width: 34px !important; height: 34px !important; stroke-width: 18px !important; }
+.icon-xxl,.icons-xxl .icon { width: 50px !important; height: 50px !important; stroke-width: 12px !important; }
 
-.icon-black { stroke-width: 44px !important; }
-.icon-bold { stroke-width: 38px !important; }
-.icon-semibold { stroke-width: 32px !important; }
-.icon-default { stroke-width: 24px !important; }
-.icon-light { stroke-width: 18px !important; }
-.icon-thin { stroke-width: 12px !important; }
+.icon-black,.icons-black .icon { stroke-width: 44px !important; }
+.icon-bold,.icons-bold .icon { stroke-width: 38px !important; }
+.icon-semibold,.icons-semibold .icon { stroke-width: 32px !important; }
+.icon-default,.icons-default .icon { stroke-width: 24px !important; }
+.icon-light,.icons-light .icon { stroke-width: 18px !important; }
+.icon-thin,.icons-thin .icon { stroke-width: 12px !important; }
 
 .icon-mirror-v { transform: scaleY(-1); }
 .icon-mirror-h { transform: scaleX(-1); }
-
-h1 .icon:not(.right),h2 .icon:not(.right),h3 .icon:not(.right),
-h4 .icon:not(.right),h5 .icon:not(.right),h6 .icon:not(.right) { margin-right: 5px; }
-
-h1 .icon-lg:not(.right),h2 .icon-lg:not(.right),h3 .icon-lg:not(.right),
-h4 .icon-lg:not(.right),h5 .icon-lg:not(.right),h6 .icon-lg:not(.right) { margin-right: 10px; }
 
 .icons-no-opacity .icon:not(.default-icon) { opacity: 1 !important; }
 

@@ -13,19 +13,19 @@
                                 Clear <span class="w-date"></span>
                             </span>
                         </div>
-                        <ul class="days">
-                            <li><b>Now</b><i class="icon icon-lg icon-temperature"></i><span>36</span></li>
-                            <li>14<i class="icon icon-lg icon-sun"></i><span>32</span></li>
-                            <li>15<i class="icon icon-lg icon-sun"></i><span>31</span></li>
-                            <li>16<i class="icon icon-lg icon-cloud-sun"></i><span>29</span></li>
-                            <li>17<i class="icon icon-lg icon-wind"></i><span>28</span></li>
-                            <li>18<i class="icon icon-lg icon-sun"></i><span>32</span></li>
-                            <li>19<i class="icon icon-lg icon-sun"></i><span>31</span></li>
-                            <li><b>20:00</b><i class="icon icon-lg icon-sunset"></i><b>Sunset</b></li>
-                            <li>21<i class="icon icon-lg icon-moon"></i><span>32</span></li>
-                            <li>22<i class="icon icon-lg icon-moon"></i><span>32</span></li>
-                            <li>23<i class="icon icon-lg icon-moon"></i><span>31</span></li>
-                            <li>24<i class="icon icon-lg icon-cloud-moon"></i><span>29</span></li>
+                        <ul class="days icons-lg">
+                            <li><b>Now</b><svg class="icon"><use href="#temperature"></use></svg><span>36</span></li>
+                            <li>14<svg class="icon"><use href="#sun"></use></svg><span>32</span></li>
+                            <li>15<svg class="icon"><use href="#sun"></use></svg><span>31</span></li>
+                            <li>16<svg class="icon"><use href="#cloud-sun"></use></svg><span>29</span></li>
+                            <li>17<svg class="icon"><use href="#wind"></use></svg><span>28</span></li>
+                            <li>18<svg class="icon"><use href="#sun"></use></svg><span>32</span></li>
+                            <li>19<svg class="icon"><use href="#sun"></use></svg><span>31</span></li>
+                            <li><b>20:00</b><svg class="icon"><use href="#sunset"></use></svg><b>Sunset</b></li>
+                            <li>21<svg class="icon"><use href="#moon"></use></svg><span>32</span></li>
+                            <li>22<svg class="icon"><use href="#moon"></use></svg><span>32</span></li>
+                            <li>23<svg class="icon"><use href="#moon"></use></svg><span>31</span></li>
+                            <li>24<svg class="icon"><use href="#cloud-moon"></use></svg><span>29</span></li>
                         </ul>
                     </div>
                     <div class="graphs" data-graphs="clear" data-day="05:53,19:59"></div>
@@ -42,19 +42,19 @@
                                 Cloudy <b class="w-date"></b>
                             </span>
                         </div>
-                        <ul class="days">
-                            <li><b>Now</b><i class="icon icon-lg icon-cloud-sun"></i><span>12</span></li>
-                            <li>14<i class="icon icon-lg icon-cloud"></i><span>11</span></li>
-                            <li>15<i class="icon icon-lg icon-clouds"></i><span>10</span></li>
-                            <li>16<i class="icon icon-lg icon-bolt"></i><span>9</span></li>
-                            <li>17<i class="icon icon-lg icon-rain"></i><span>8</span></li>
-                            <li>18<i class="icon icon-lg icon-cloud"></i><span>11</span></li>
-                            <li>19<i class="icon icon-lg icon-clouds"></i><span>10</span></li>
-                            <li><b>20:00</b><i class="icon icon-lg icon-sunset"></i><b>Sunset</b></li>
-                            <li>21<i class="icon icon-lg icon-bolt"></i><span>9</span></li>
-                            <li>22<i class="icon icon-lg icon-rain"></i><span>8</span></li>
-                            <li>23<i class="icon icon-lg icon-cloud"></i><span>11</span></li>
-                            <li>24<i class="icon icon-lg icon-clouds"></i><span>10</span></li>
+                        <ul class="days icons-lg">
+                            <li><b>Now</b><svg class="icon"><use href="#cloud-sun"></use></svg><span>12</span></li>
+                            <li>14<svg class="icon"><use href="#cloud"></use></svg><span>11</span></li>
+                            <li>15<svg class="icon"><use href="#clouds"></use></svg><span>10</span></li>
+                            <li>16<svg class="icon"><use href="#bolt"></use></svg><span>9</span></li>
+                            <li>17<svg class="icon"><use href="#rain"></use></svg><span>8</span></li>
+                            <li>18<svg class="icon"><use href="#cloud"></use></svg><span>11</span></li>
+                            <li>19<svg class="icon"><use href="#clouds"></use></svg><span>10</span></li>
+                            <li><b>20:00</b><svg class="icon"><use href="#sunset"></use></svg><b>Sunset</b></li>
+                            <li>21<svg class="icon"><use href="#bolt"></use></svg><span>9</span></li>
+                            <li>22<svg class="icon"><use href="#rain"></use></svg><span>8</span></li>
+                            <li>23<svg class="icon"><use href="#cloud"></use></svg><span>11</span></li>
+                            <li>24<svg class="icon"><use href="#clouds"></use></svg><span>10</span></li>
                         </ul>
                     </div>
                     <div class="graphs" data-graphs="cloud" data-day="05:53,19:59"></div>
@@ -71,20 +71,20 @@
                                 Mostly Cloudy <b class="w-date"></b>
                             </span>
                         </div>
-                        <ul class="days">
-                            <li><b>Now</b><i class="icon icon-lg icon-fog"></i><span>3</span></li>
-                            <li><b>Now</b><i class="icon icon-lg icon-cloud-fog"></i><span>3</span></li>
-                            <li>14<i class="icon icon-lg icon-rain"></i><span>2</span></li>
-                            <li>15<i class="icon icon-lg icon-rain-heavy"></i><span>1</span></li>
-                            <li>16<i class="icon icon-lg icon-rain-snow"></i><span>0</span></li>
-                            <li>17<i class="icon icon-lg icon-snow"></i><span>-3</span></li>
-                            <li>18<i class="icon icon-lg icon-rain"></i><span>2</span></li>
-                            <li>19<i class="icon icon-lg icon-rain-heavy"></i><span>1</span></li>
-                            <li><b>20:00</b><i class="icon icon-lg icon-sunset"></i><b>Sunset</b></li>
-                            <li>21<i class="icon icon-lg icon-rain-snow"></i><span>0</span></li>
-                            <li>22<i class="icon icon-lg icon-snow"></i><span>-3</span></li>
-                            <li>23<i class="icon icon-lg icon-rain"></i><span>2</span></li>
-                            <li>24<i class="icon icon-lg icon-rain-heavy"></i><span>1</span></li>
+                        <ul class="days icons-lg">
+                            <li><b>Now</b><svg class="icon"><use href="#fog"></use></svg><span>3</span></li>
+                            <li><b>Now</b><svg class="icon"><use href="#cloud-fog"></use></svg><span>3</span></li>
+                            <li>14<svg class="icon"><use href="#rain"></use></svg><span>2</span></li>
+                            <li>15<svg class="icon"><use href="#rain-heavy"></use></svg><span>1</span></li>
+                            <li>16<svg class="icon"><use href="#rain-snow"></use></svg><span>0</span></li>
+                            <li>17<svg class="icon"><use href="#snow"></use></svg><span>-3</span></li>
+                            <li>18<svg class="icon"><use href="#rain"></use></svg><span>2</span></li>
+                            <li>19<svg class="icon"><use href="#rain-heavy"></use></svg><span>1</span></li>
+                            <li><b>20:00</b><svg class="icon"><use href="#sunset"></use></svg><b>Sunset</b></li>
+                            <li>21<svg class="icon"><use href="#rain-snow"></use></svg><span>0</span></li>
+                            <li>22<svg class="icon"><use href="#snow"></use></svg><span>-3</span></li>
+                            <li>23<svg class="icon"><use href="#rain"></use></svg><span>2</span></li>
+                            <li>24<svg class="icon"><use href="#rain-heavy"></use></svg><span>1</span></li>
                         </ul>
                     </div>
                     <div class="graphs" data-graphs="cloud-heavy" data-day="05:53,19:59"></div>
@@ -101,19 +101,19 @@
                                 Foggy <b class="w-date"></b>
                             </span>
                         </div>
-                        <ul class="days">
-                            <li><b>Now</b><i class="icon icon-lg icon-cloud"></i><span>12</span></li>
-                            <li>14<i class="icon icon-lg icon-cloud"></i><span>11</span></li>
-                            <li>15<i class="icon icon-lg icon-clouds"></i><span>10</span></li>
-                            <li>16<i class="icon icon-lg icon-clouds"></i><span>9</span></li>
-                            <li>17<i class="icon icon-lg icon-clouds"></i><span>8</span></li>
-                            <li>18<i class="icon icon-lg icon-cloud"></i><span>11</span></li>
-                            <li>19<i class="icon icon-lg icon-clouds"></i><span>10</span></li>
-                            <li><b>20:00</b><i class="icon icon-lg icon-sunset"></i><b>Sunset</b></li>
-                            <li>21<i class="icon icon-lg icon-clouds"></i><span>9</span></li>
-                            <li>22<i class="icon icon-lg icon-clouds"></i><span>8</span></li>
-                            <li>23<i class="icon icon-lg icon-cloud"></i><span>11</span></li>
-                            <li>24<i class="icon icon-lg icon-clouds"></i><span>10</span></li>
+                        <ul class="days icons-lg">
+                            <li><b>Now</b><svg class="icon"><use href="#cloud"></use></svg><span>12</span></li>
+                            <li>14<svg class="icon"><use href="#cloud"></use></svg><span>11</span></li>
+                            <li>15<svg class="icon"><use href="#clouds"></use></svg><span>10</span></li>
+                            <li>16<svg class="icon"><use href="#clouds"></use></svg><span>9</span></li>
+                            <li>17<svg class="icon"><use href="#clouds"></use></svg><span>8</span></li>
+                            <li>18<svg class="icon"><use href="#cloud"></use></svg><span>11</span></li>
+                            <li>19<svg class="icon"><use href="#clouds"></use></svg><span>10</span></li>
+                            <li><b>20:00</b><svg class="icon"><use href="#sunset"></use></svg><b>Sunset</b></li>
+                            <li>21<svg class="icon"><use href="#clouds"></use></svg><span>9</span></li>
+                            <li>22<svg class="icon"><use href="#clouds"></use></svg><span>8</span></li>
+                            <li>23<svg class="icon"><use href="#cloud"></use></svg><span>11</span></li>
+                            <li>24<svg class="icon"><use href="#clouds"></use></svg><span>10</span></li>
                         </ul>
                     </div>
                     <div class="graphs" data-graphs="fog" data-day="05:53,19:59"></div>
@@ -130,19 +130,19 @@
                                 Rainy <b class="w-date"></b>
                             </span>
                         </div>
-                        <ul class="days">
-                            <li><b>Now</b><i class="icon icon-lg icon-rain"></i><span>36</span></li>
-                            <li>14<i class="icon icon-lg icon-rain"></i><span>32</span></li>
-                            <li>15<i class="icon icon-lg icon-cloud"></i><span>31</span></li>
-                            <li>16<i class="icon icon-lg icon-cloud-sun"></i><span>29</span></li>
-                            <li>17<i class="icon icon-lg icon-sun"></i><span>28</span></li>
-                            <li>18<i class="icon icon-lg icon-rain"></i><span>32</span></li>
-                            <li>19<i class="icon icon-lg icon-cloud"></i><span>31</span></li>
-                            <li><b>20:00</b><i class="icon icon-lg icon-sunset"></i><b>Sunset</b></li>
-                            <li>21<i class="icon icon-lg icon-cloud-moon"></i><span>29</span></li>
-                            <li>22<i class="icon icon-lg icon-moon"></i><span>28</span></li>
-                            <li>23<i class="icon icon-lg icon-rain"></i><span>32</span></li>
-                            <li>24<i class="icon icon-lg icon-cloud"></i><span>31</span></li>
+                        <ul class="days icons-lg">
+                            <li><b>Now</b><svg class="icon"><use href="#rain"></use></svg><span>36</span></li>
+                            <li>14<svg class="icon"><use href="#rain"></use></svg><span>32</span></li>
+                            <li>15<svg class="icon"><use href="#cloud"></use></svg><span>31</span></li>
+                            <li>16<svg class="icon"><use href="#cloud-sun"></use></svg><span>29</span></li>
+                            <li>17<svg class="icon"><use href="#sun"></use></svg><span>28</span></li>
+                            <li>18<svg class="icon"><use href="#rain"></use></svg><span>32</span></li>
+                            <li>19<svg class="icon"><use href="#cloud"></use></svg><span>31</span></li>
+                            <li><b>20:00</b><svg class="icon"><use href="#sunset"></use></svg><b>Sunset</b></li>
+                            <li>21<svg class="icon"><use href="#cloud-moon"></use></svg><span>29</span></li>
+                            <li>22<svg class="icon"><use href="#moon"></use></svg><span>28</span></li>
+                            <li>23<svg class="icon"><use href="#rain"></use></svg><span>32</span></li>
+                            <li>24<svg class="icon"><use href="#cloud"></use></svg><span>31</span></li>
                         </ul>
                     </div>
                     <div class="graphs" data-graphs="rain cloud" data-day="05:53,19:59"></div>
@@ -159,19 +159,19 @@
                                 Mostly Rainy <b class="w-date"></b>
                             </span>
                         </div>
-                        <ul class="days">
-                            <li><b>Now</b><i class="icon icon-lg icon-bolt"></i><span>12</span></li>
-                            <li>14<i class="icon icon-lg icon-rain-heavy"></i><span>11</span></li>
-                            <li>15<i class="icon icon-lg icon-rain-heavy"></i><span>10</span></li>
-                            <li>16<i class="icon icon-lg icon-rain"></i><span>9</span></li>
-                            <li>17<i class="icon icon-lg icon-clouds"></i><span>8</span></li>
-                            <li>18<i class="icon icon-lg icon-rain-heavy"></i><span>11</span></li>
-                            <li>19<i class="icon icon-lg icon-rain-heavy"></i><span>10</span></li>
-                            <li><b>20:00</b><i class="icon icon-lg icon-sunset"></i><b>Sunset</b></li>
-                            <li>21<i class="icon icon-lg icon-rain"></i><span>9</span></li>
-                            <li>22<i class="icon icon-lg icon-clouds"></i><span>8</span></li>
-                            <li>23<i class="icon icon-lg icon-rain-heavy"></i><span>11</span></li>
-                            <li>24<i class="icon icon-lg icon-rain-heavy"></i><span>10</span></li>
+                        <ul class="days icons-lg">
+                            <li><b>Now</b><svg class="icon"><use href="#bolt"></use></svg><span>12</span></li>
+                            <li>14<svg class="icon"><use href="#rain-heavy"></use></svg><span>11</span></li>
+                            <li>15<svg class="icon"><use href="#rain-heavy"></use></svg><span>10</span></li>
+                            <li>16<svg class="icon"><use href="#rain"></use></svg><span>9</span></li>
+                            <li>17<svg class="icon"><use href="#clouds"></use></svg><span>8</span></li>
+                            <li>18<svg class="icon"><use href="#rain-heavy"></use></svg><span>11</span></li>
+                            <li>19<svg class="icon"><use href="#rain-heavy"></use></svg><span>10</span></li>
+                            <li><b>20:00</b><svg class="icon"><use href="#sunset"></use></svg><b>Sunset</b></li>
+                            <li>21<svg class="icon"><use href="#rain"></use></svg><span>9</span></li>
+                            <li>22<svg class="icon"><use href="#clouds"></use></svg><span>8</span></li>
+                            <li>23<svg class="icon"><use href="#rain-heavy"></use></svg><span>11</span></li>
+                            <li>24<svg class="icon"><use href="#rain-heavy"></use></svg><span>10</span></li>
                         </ul>
                     </div>
                     <div class="graphs" data-graphs="bolt rain-heavy cloud-heavy" data-day="05:53,19:59"></div>
@@ -188,19 +188,19 @@
                                 Snow <b class="w-date"></b>
                             </span>
                         </div>
-                        <ul class="days">
-                            <li><b>Now</b><i class="icon icon-lg icon-rain-snow"></i><span>3</span></li>
-                            <li>14<i class="icon icon-lg icon-snow"></i><span>2</span></li>
-                            <li>15<i class="icon icon-lg icon-snow"></i><span>1</span></li>
-                            <li>16<i class="icon icon-lg icon-cold"></i><span>0</span></li>
-                            <li>17<i class="icon icon-lg icon-cold"></i><span>-3</span></li>
-                            <li>18<i class="icon icon-lg icon-snow"></i><span>2</span></li>
-                            <li>19<i class="icon icon-lg icon-snow"></i><span>1</span></li>
-                            <li><b>20:00</b><i class="icon icon-lg icon-sunset"></i><b>Sunset</b></li>
-                            <li>21<i class="icon icon-lg icon-cold"></i><span>0</span></li>
-                            <li>22<i class="icon icon-lg icon-cold"></i><span>-3</span></li>
-                            <li>23<i class="icon icon-lg icon-snow"></i><span>2</span></li>
-                            <li>24<i class="icon icon-lg icon-snow"></i><span>1</span></li>
+                        <ul class="days icons-lg">
+                            <li><b>Now</b><svg class="icon"><use href="#rain-snow"></use></svg><span>3</span></li>
+                            <li>14<svg class="icon"><use href="#snow"></use></svg><span>2</span></li>
+                            <li>15<svg class="icon"><use href="#snow"></use></svg><span>1</span></li>
+                            <li>16<svg class="icon"><use href="#cold"></use></svg><span>0</span></li>
+                            <li>17<svg class="icon"><use href="#cold"></use></svg><span>-3</span></li>
+                            <li>18<svg class="icon"><use href="#snow"></use></svg><span>2</span></li>
+                            <li>19<svg class="icon"><use href="#snow"></use></svg><span>1</span></li>
+                            <li><b>20:00</b><svg class="icon"><use href="#sunset"></use></svg><b>Sunset</b></li>
+                            <li>21<svg class="icon"><use href="#cold"></use></svg><span>0</span></li>
+                            <li>22<svg class="icon"><use href="#cold"></use></svg><span>-3</span></li>
+                            <li>23<svg class="icon"><use href="#snow"></use></svg><span>2</span></li>
+                            <li>24<svg class="icon"><use href="#snow"></use></svg><span>1</span></li>
                         </ul>
                     </div>
                     <div class="graphs" data-graphs="snow cloud-heavy" data-day="05:53,19:59"></div>
@@ -217,19 +217,19 @@
                                 Clear <b class="w-date"></b>
                             </span>
                         </div>
-                        <ul class="days">
-                            <li><b>Now</b><i class="icon icon-lg icon-moon"></i><span>32</span></li>
-                            <li>22<i class="icon icon-lg icon-moon"></i><span>32</span></li>
-                            <li>23<i class="icon icon-lg icon-moon"></i><span>31</span></li>
-                            <li>24<i class="icon icon-lg icon-cloud-moon"></i><span>29</span></li>
-                            <li>01<i class="icon icon-lg icon-wind"></i><span>28</span></li>
-                            <li>02<i class="icon icon-lg icon-moon"></i><span>32</span></li>
-                            <li>03<i class="icon icon-lg icon-moon"></i><span>31</span></li>
-                            <li>04<i class="icon icon-lg icon-moon"></i><span>32</span></li>
-                            <li><b>05:00</b><i class="icon icon-lg icon-sunrise"></i><b>Sunrise</b></li>
-                            <li>06<i class="icon icon-lg icon-sun"></i><span>32</span></li>
-                            <li>07<i class="icon icon-lg icon-sun"></i><span>31</span></li>
-                            <li>08<i class="icon icon-lg icon-cloud-sun"></i><span>29</span></li>
+                        <ul class="days icons-lg">
+                            <li><b>Now</b><svg class="icon"><use href="#moon"></use></svg><span>32</span></li>
+                            <li>22<svg class="icon"><use href="#moon"></use></svg><span>32</span></li>
+                            <li>23<svg class="icon"><use href="#moon"></use></svg><span>31</span></li>
+                            <li>24<svg class="icon"><use href="#cloud-moon"></use></svg><span>29</span></li>
+                            <li>01<svg class="icon"><use href="#wind"></use></svg><span>28</span></li>
+                            <li>02<svg class="icon"><use href="#moon"></use></svg><span>32</span></li>
+                            <li>03<svg class="icon"><use href="#moon"></use></svg><span>31</span></li>
+                            <li>04<svg class="icon"><use href="#moon"></use></svg><span>32</span></li>
+                            <li><b>05:00</b><svg class="icon"><use href="#sunrise"></use></svg><b>Sunrise</b></li>
+                            <li>06<svg class="icon"><use href="#sun"></use></svg><span>32</span></li>
+                            <li>07<svg class="icon"><use href="#sun"></use></svg><span>31</span></li>
+                            <li>08<svg class="icon"><use href="#cloud-sun"></use></svg><span>29</span></li>
                         </ul>
                     </div>
                     <div class="graphs" data-graphs="clear" data-day="19:59,05:53"></div>

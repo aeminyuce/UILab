@@ -97,7 +97,7 @@
 
                     <span class="sp30"></span>
 
-                    <div class="photos-holder circle border-dual hover-scale-more-2nd ease-2nd-layout">
+                    <div class="photos-holder circle border-dual hover-r-more-2nd ease-2nd-layout">
                         <a href="#"><img class="img-photo border-lg circle" src="img/profile-image.jpg" alt=""></a>
                         <a href="#"><img class="img-photo border-lg circle" src="img/profile-image2.jpg" alt=""></a>
                         <a href="#"><img class="img-photo border-lg circle" src="img/profile-image3.jpg" alt=""></a>

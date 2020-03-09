@@ -67,106 +67,41 @@
                 </div>
 
                 <div class="padding-30-v">
-                    <ul class="steps-bar">
+                    <ul class="steps-bar icons-sm">
                         <li>
-                            <i class="icon icon-check-circle"></i>
-                            Step Name Here
+                            <svg class="icon margin-3-r"><use href="#check-circle-fill"></use></svg>
+                            Step Name Here11
                         </li>
                         <li class="active">
-                            <i class="icon icon-check-circle"></i>
+                            <svg class="icon margin-3-r"><use href="#check-circle-fill"></use></svg>
                             Step Name Here
                         </li>
                         <li>
-                            <i class="icon icon-check-circle"></i>
+                            <svg class="icon margin-3-r"><use href="#check-circle-fill"></use></svg>
                             Step Name Here
                         </li>
                         <li>
-                            <i class="icon icon-check-circle"></i>
+                            <svg class="icon margin-3-r"><use href="#check-circle-fill"></use></svg>
                             Step Name Here
                         </li>
                     </ul>
                     <span class="sp15"></span>
                     <ul class="steps-bar steps-icon">
                         <li>
-                            <i class="icon icon-check-circle" data-tooltip title="Completed"></i>
+                            <svg class="icon" data-tooltip title="Completed"><use href="#check-circle-fill"></use></svg>
                             Step Name Here
                         </li>
                         <li class="active">
-                            <i class="icon icon-check-circle" data-tooltip title="Completed"></i>
+                            <svg class="icon" data-tooltip title="Completed"><use href="#check-circle-fill"></use></svg>
                             Step Name Here
                         </li>
                         <li>
-                            <i class="icon icon-check-circle" data-tooltip title="Completed"></i>
+                            <svg class="icon" data-tooltip title="Completed"><use href="#check-circle-fill"></use></svg>
                             Step Name Here
                         </li>
                         <li>
-                            <i class="icon icon-check-circle" data-tooltip title="Completed"></i>
+                            <svg class="icon" data-tooltip title="Completed"><use href="#check-circle-fill"></use></svg>
                             Step Name Here
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="padding-30-v">
-                    <ul class="steps-bar theme-default2 ui-text">
-                        <li class="active">1</li>
-                        <li>2</li>
-                        <li>3</li>
-                    </ul>
-                    <span class="sp15"></span>
-                    <ul class="steps-bar steps-icon theme-default2 ui-text">
-                        <li><i class="icon icon-check-circle" data-tooltip title="Step 1"></i>Passed</li>
-                        <li><i class="icon icon-check-circle" data-tooltip title="Step 2"></i>Passed</li>
-                        <li><i class="icon icon-check-circle" data-tooltip title="Step 3"></i>Passed</li>
-                        <li class="active"><i class="icon icon-clock" data-tooltip title="Step 4"></i>Waiting</li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <span class="sp15"></span>
-                    <ul class="steps-bar theme-default2 ui-text">
-                        <li><i class="icon light icon-check-circle"></i></li>
-                        <li class="active"><b>Waiting</b></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <span class="sp15"></span>
-                    <ul class="steps-bar theme-default2 ui-text">
-                        <li><i class="icon light icon-check-circle"></i></li>
-                        <li><i class="icon light icon-check-circle"></i></li>
-                        <li><i class="icon light icon-check-circle"></i></li>
-                        <li><i class="icon font-yellow icon-alert-circle"></i></li>
-                        <li><i class="icon light icon-check-circle"></i></li>
-                        <li><i class="icon light icon-check-circle"></i></li>
-                        <li><i class="icon font-red icon-alert-circle"></i></li>
-                        <li><i class="icon light icon-check-circle"></i></li>
-                        <li><i class="icon light icon-check-circle"></i></li>
-                        <li class="active"><b>Waiting</b></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <span class="sp15"></span>
-                    <ul class="steps-bar theme-default2 ui-text">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li class="active">
-                            <i class="icon icon-check-circle"></i>
-                            <b class="inline-block">Finished</b>
                         </li>
                     </ul>
                 </div>
