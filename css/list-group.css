@@ -13,8 +13,8 @@
 .list-group > ul > li > p { margin-bottom: 0; }
 .list-group > ul > li > a { margin: -10px; display: block; }
 
-.list-group.round > ul > li:first-child > a { border-radius: 6px 6px 0 0; }
-.list-group.round > ul > li:last-child > a { border-radius: 0 0 6px 6px; }
+.list-group.round > ul > li:first-child,.list-group.round > ul > li:first-child > a { border-top-left-radius: 6px; border-top-right-radius: 6px; }
+.list-group.round > ul > li:last-child,.list-group.round > ul > li:last-child > a { border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; }
 
 .list-group .list-icon { width: 14px; height: 14px; stroke-width: 38px; position: absolute; top: 50%; right: 10px; transform: translateY(-50%); opacity: .45; }
 html:not(.mobile) .list-group > ul > li > a:hover .list-icon { opacity: .75; }
