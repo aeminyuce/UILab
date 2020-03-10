@@ -69,7 +69,7 @@ html:not(.mobile) .carousel-gallery .detail:not(.detail-loader) img:hover { opac
 .carousel-gallery .detail.detail-loader { background-color: rgba(0,0,0,.075); }
 .carousel-gallery .detail.detail-loader img { opacity: 0; }
 .carousel-gallery .detail.detail-loader .zoom-icon { display: none; }
-.carousel-gallery .detail.detail-loader .loader-icon { animation: carousel-gallery-loader 1.5s linear infinite; }
+.carousel-gallery .detail.detail-loader .loader-icon { animation: carousel-gallery-loader 1.15s linear infinite; }
 .carousel-gallery .detail:not(.detail-loader) .loader-icon { display: none; }
 
 .carousel-gallery .thumbs { text-align: center; margin: 15px 0; }
