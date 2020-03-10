@@ -64,14 +64,14 @@
                             <div class="hidden-sm">
                                 <div class="ease-1st-btn icons-no-opacity form-lg add-mobile-menu-r">
                                     <a class="btn btn-sm-fluid btn-ghost" href="#">
-                                        <i class="icon icon-home margin-5-r visible-sm"></i>
+                                        <svg class="icon margin-5-r visible-sm"><use href="#home"></use></svg>
                                         <b>Home</b>
                                     </a>
                                     <div class="dropdown ease-dropdown">
                                         <button class="btn btn-sm-fluid btn-ghost">
-                                            <i class="icon icon-box margin-5-r visible-sm"></i>
+                                            <svg class="icon margin-5-r visible-sm"><use href="#box"></use></svg>
                                             <b>Products</b>
-                                            <i class="toggle-icon icon margin-5-l icon-xs icon-angle-down"></i>
+                                            <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"></use></svg>
                                         </button>
                                         <ul class="content shadow-lg">
                                             <li><a href="#">Gardening</a></li>
@@ -83,32 +83,32 @@
                                         </ul>
                                     </div>
                                     <a class="btn btn-sm-fluid btn-ghost" href="#">
-                                        <i class="icon icon-users margin-5-r visible-sm"></i>
+                                        <svg class="icon margin-5-r visible-sm"><use href="#users"></use></svg>
                                         <b>Team</b>
                                     </a>
                                     <a class="btn btn-sm-fluid btn-ghost" href="#">
-                                        <i class="icon icon-coins margin-5-r visible-sm"></i>
+                                        <svg class="icon margin-5-r visible-sm"><use href="#coins"></use></svg>
                                         <b>Pricing</b>
                                     </a>
                                     <a class="btn btn-sm-fluid btn-ghost" href="#">
-                                        <i class="icon icon-envelope-open margin-5-r visible-sm"></i>
+                                        <svg class="icon margin-5-r visible-sm"><use href="#envelope-open"></use></svg>
                                         <b>Contact</b>
                                     </a>
                                     <span class="inline-block margin-10-h hidden-md"></span>
                                     <span class="sp10 visible-sm"></span>
                                     <a class="btn btn-sm-fluid ui-dark" href="#">
-                                        <i class="icon icon-sign-in margin-5-r visible-sm"></i>
+                                        <svg class="icon margin-5-r visible-sm"><use href="#sign-in"></use></svg>
                                         <b>Login</b>
                                     </a>
                                     <a class="btn btn-sm-fluid theme-farmer ui-dark" href="#">
-                                        <i class="icon icon-user-plus margin-5-r visible-sm"></i>
+                                        <svg class="icon margin-5-r visible-sm"><use href="#user-plus"></use></svg>
                                         <b>Sign Up</b>
                                     </a>
                                 </div>
                             </div>
 
                             <button class="btn btn-lg btn-square btn-ghost ui-text ease-btn show-mobile-menu-r visible-sm">
-                                <i class="icon icon-bars no-opacity"></i>
+                                <svg class="icon no-opacity"><use href="#bars"></use></svg>
                             </button>
 
                         </div>
@@ -130,15 +130,15 @@
             <div class="row row-no-gap-v icons-no-opacity icons-margin-5-r">
                 <div class="col-12 xs-align-l align-c ease-1st-btn">
                     <button class="tab btn btn-xs-fluid btn-ghost margin-1-b ui-text border-b border-lg ui-border active">
-                        <i class="icon icon-factory ui-text"></i>
+                        <svg class="icon"><use href="#factory"></use></svg>
                         Long Term Investment
                     </button>
                     <button class="tab btn btn-xs-fluid btn-ghost margin-1-b">
-                        <i class="icon icon-network ui-text"></i>
+                        <svg class="icon"><use href="#network"></use></svg>
                         Connect with Our Farmers
                     </button>
                     <button class="tab btn btn-xs-fluid btn-ghost margin-1-b">
-                        <i class="icon icon-user-circle ui-text"></i>
+                        <svg class="icon"><use href="#user-circle"></use></svg>
                         Social Impact Investment
                     </button>
                 </div>
@@ -156,7 +156,7 @@
                                 <h2 class="xx-largest bold">A New Way to Invest<br>in Agriculture</h2>
                                 <p class="xx-large light">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
                                 <a href="#" class="btn btn-xs-fluid padding-30-h ui-dark ease-btn">
-                                    <i class="icon icon-lg icon-money margin-5-r"></i>
+                                    <svg class="icon margin-5-r"><use href="#moneys"></use></svg>
                                     <b>Invest Now</b>
                                 </a>
 
@@ -167,13 +167,13 @@
                             <div class="banner-slogan padding-15 set-relative">
                                 <div class="align-c padding-15 set-relative shadow-lg">
                                     <span class="sp15"></span>
-                                    <i class="icon icon-xxl icon-factory"></i>
+                                    <svg class="icon icon-xxl icon-semibold"><use href="#factory"></use></svg>
                                     <span class="sp30 hidden-md"></span>
                                     <h3 class="bold xx-large">Long term investment</h3>
                                     <p class="x-large">Consider terms that have long term investment program.</p>
                                     <a href="#" class="btn block theme-farmer2 ui-dark ease-btn">
                                         <b>Learn more</b>
-                                        <i class="icon icon-long-arrow-right margin-5-l"></i>
+                                        <svg class="icon margin-5-l"><use href="#long-arrow-right"></use></svg>
                                     </a>
                                 </div>
                             </div>
@@ -194,7 +194,7 @@
                                 <h2 class="xx-largest bold">A New Way to Invest<br>in Agriculture</h2>
                                 <p class="xx-large light">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
                                 <a href="#" class="btn btn-xs-fluid padding-30-h ui-dark ease-btn">
-                                    <i class="icon icon-lg icon-money margin-5-r"></i>
+                                    <svg class="icon margin-5-r"><use href="#moneys"></use></svg>
                                     <b>Invest Now</b>
                                 </a>
 
@@ -205,13 +205,13 @@
                             <div class="banner-slogan padding-15 set-relative">
                                 <div class="align-c padding-15 set-relative shadow-lg">
                                     <span class="sp15"></span>
-                                    <i class="icon icon-xxl icon-network"></i>
+                                    <svg class="icon icon-xxl icon-semibold"><use href="#network"></use></svg>
                                     <span class="sp30"></span>
                                     <h3 class="bold xx-large">Connect with Our Farmers</h3>
                                     <p class="x-large">Consider terms that connect with our farmers program.</p>
                                     <a href="#" class="btn block theme-farmer2 ui-dark ease-btn">
                                         <b>Learn more</b>
-                                        <i class="icon icon-long-arrow-right margin-5-l"></i>
+                                        <svg class="icon margin-5-l"><use href="#long-arrow-right"></use></svg>
                                     </a>
                                 </div>
                             </div>
@@ -232,7 +232,7 @@
                                 <h2 class="xx-largest bold">A New Way to Invest<br>in Agriculture</h2>
                                 <p class="xx-large light">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
                                 <a href="#" class="btn btn-xs-fluid padding-30-h ui-dark ease-btn">
-                                    <i class="icon icon-lg icon-money margin-5-r"></i>
+                                    <svg class="icon margin-5-r"><use href="#moneys"></use></svg>
                                     <b>Invest Now</b>
                                 </a>
 
@@ -243,13 +243,13 @@
                             <div class="banner-slogan padding-15 set-relative">
                                 <div class="align-c padding-15 set-relative shadow-lg">
                                     <span class="sp15"></span>
-                                    <i class="icon icon-xxl icon-user-circle"></i>
+                                    <svg class="icon icon-xxl icon-semibold"><use href="#user-circle"></use></svg>
                                     <span class="sp30"></span>
                                     <h3 class="bold xx-large">Social Impact Investment</h3>
                                     <p class="x-large">Consider terms that have social impact investment program.</p>
                                     <a href="#" class="btn block theme-farmer2 ui-dark ease-btn">
                                         <b>Learn more</b>
-                                        <i class="icon icon-long-arrow-right margin-5-l"></i>
+                                        <svg class="icon margin-5-l"><use href="#long-arrow-right"></use></svg>
                                     </a>
                                 </div>
                             </div>
@@ -267,12 +267,12 @@
     <!-- highlight links: start -->
     <div class="highlight-links fixed align-c form-lg theme-farmer2 set-relative">
         <div class="carousel" data-col="4" data-col-md="2" data-col-sm="2" data-col-xs="1" data-slide="4000">
-            <div class="carousel-slider hover-shadow-2nd hover-scale-2nd ease-layout ease-slow2x ease-in-out">
+            <div class="carousel-slider icons-xxl hover-shadow-2nd hover-scale-2nd ease-layout ease-slow2x ease-in-out">
 
                 <div class="slide-content padding-15">
                     <div class="card padding-15 full-h shadow-lg ease-layout">
                         <span class="sp15"></span>
-                        <i class="icon ui-text icon-xxl icon-leaf"></i>
+                        <svg class="icon ui-text"><use href="#leaf"></use></svg>
                         <span class="sp20"></span>
                         <h3 class="xx-large margin-10-b">Planting</h3>
                         <p class="large x-dark">Complete range of lands caping services.</p>
@@ -283,7 +283,7 @@
                 <div class="slide-content padding-15">
                     <div class="card padding-15 full-h shadow-lg ease-layout">
                         <span class="sp15"></span>
-                        <i class="icon ui-text icon-xxl icon-wind-sock"></i>
+                        <svg class="icon ui-text"><use href="#wind-sock"></use></svg>
                         <span class="sp20"></span>
                         <h3 class="xx-large margin-10-b">Garden Care</h3>
                         <p class="large x-dark">Resolving environmental problems with best results.</p>
@@ -294,7 +294,7 @@
                 <div class="slide-content padding-15">
                     <div class="card padding-15 full-h shadow-lg ease-layout">
                         <span class="sp15"></span>
-                        <i class="icon ui-text icon-xxl icon-water"></i>
+                        <svg class="icon ui-text"><use href="#water"></use></svg>
                         <span class="sp20"></span>
                         <h3 class="xx-large margin-10-b">Irrigation System</h3>
                         <p class="large x-dark">Idea of denouncing pleasure and praising.</p>
@@ -305,7 +305,7 @@
                 <div class="slide-content padding-15">
                     <div class="card padding-15 full-h shadow-lg ease-layout">
                         <span class="sp15"></span>
-                        <i class="icon ui-text icon-xxl icon-land"></i>
+                        <svg class="icon ui-text"><use href="#land"></use></svg>
                         <span class="sp20"></span>
                         <h3 class="xx-large margin-10-b">Hardscaping</h3>
                         <p class="large x-dark">Placing int the landscape with great pleasure.</p>
@@ -316,7 +316,7 @@
                 <div class="slide-content padding-15">
                     <div class="card padding-15 full-h shadow-lg ease-layout">
                         <span class="sp15"></span>
-                        <i class="icon ui-text icon-xxl icon-leaf"></i>
+                        <svg class="icon ui-text"><use href="#leaf"></use></svg>
                         <span class="sp20"></span>
                         <h3 class="xx-large margin-10-b">Planting</h3>
                         <p class="large x-dark">Complete range of lands caping services.</p>
@@ -327,7 +327,7 @@
                 <div class="slide-content padding-15">
                     <div class="card padding-15 full-h shadow-lg ease-layout">
                         <span class="sp15"></span>
-                        <i class="icon ui-text icon-xxl icon-wind-sock"></i>
+                        <svg class="icon ui-text"><use href="#wind-sock"></use></svg>
                         <span class="sp20"></span>
                         <h3 class="xx-large margin-10-b">Garden Care</h3>
                         <p class="large x-dark">Resolving environmental problems with best results.</p>
@@ -338,7 +338,7 @@
                 <div class="slide-content padding-15">
                     <div class="card padding-15 full-h shadow-lg ease-layout">
                         <span class="sp15"></span>
-                        <i class="icon ui-text icon-xxl icon-water"></i>
+                        <svg class="icon ui-text"><use href="#water"></use></svg>
                         <span class="sp20"></span>
                         <h3 class="xx-large margin-10-b">Irrigation System</h3>
                         <p class="large x-dark">Idea of denouncing pleasure and praising.</p>
@@ -349,7 +349,7 @@
                 <div class="slide-content padding-15">
                     <div class="card padding-15 full-h shadow-lg ease-layout">
                         <span class="sp15"></span>
-                        <i class="icon ui-text icon-xxl icon-land"></i>
+                        <svg class="icon ui-text"><use href="#land"></use></svg>
                         <span class="sp20"></span>
                         <h3 class="xx-large margin-10-b">Hardscaping</h3>
                         <p class="large x-dark">Placing int the landscape with great pleasure.</p>
@@ -359,9 +359,13 @@
 
             </div>
             <div class="carousel-nav margin-10-t icons-no-opacity ease-1st-btn">
-                <button class="carousel-prev btn btn-square btn-ghost ui-dark"><i class="icon icon-arrow-left ui-text"></i></button>
+                <button class="carousel-prev btn btn-square btn-ghost ui-dark">
+                    <svg class="icon ui-text"><use href="#arrow-left"></use></svg>
+                </button>
                 <span class="dots ui-text"></span>
-                <button class="carousel-next btn btn-square btn-ghost ui-dark"><i class="icon icon-arrow-right ui-text"></i></button>
+                <button class="carousel-next btn btn-square btn-ghost ui-dark">
+                    <svg class="icon ui-text"><use href="#arrow-right"></use></svg>
+                </button>
             </div>
         </div>
     </div>
@@ -384,15 +388,15 @@
                 <div class="row row-no-gap-v icons-no-opacity icons-margin-5-r">
                     <div class="col-12 xs-align-l align-c ease-1st-btn">
                         <button class="tab btn btn-xs-fluid btn-ghost margin-1-b ui-text border-b border-lg ui-border active">
-                            <i class="icon icon-building ui-text"></i>
+                            <svg class="icon ui-text"><use href="#building"></use></svg>
                             Company
                         </button>
                         <button class="tab btn btn-xs-fluid btn-ghost margin-1-b">
-                            <i class="icon icon-comment ui-text"></i>
+                            <svg class="icon ui-text"><use href="#comments"></use></svg>
                             Social
                         </button>
                         <button class="tab btn btn-xs-fluid btn-ghost margin-1-b">
-                            <i class="icon icon-users ui-text"></i>
+                            <svg class="icon ui-text"><use href="#users"></use></svg>
                             Customers
                         </button>
                     </div>
@@ -401,7 +405,7 @@
             </div>
 
             <div class="tab-content padding-10 open open-ease">
-                <div class="row sm-fluid hover-shadow-2nd hover-t-2nd">
+                <div class="row sm-fluid icons-sm hover-shadow-2nd hover-t-2nd">
                     <div class="col-3 col-md-6">
                         <a class="card full-h shadow ease-layout" href="#">
 
@@ -414,13 +418,13 @@
                             </span>
 
                             <span class="small dark border-t padding-10 block inline-block-1st">
-                                <i class="icon icon-xs icon-clock margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#clock"></use></svg>
                                 <b class="margin-10-r">SEPTEMBER 30, 2019</b>
 
-                                <i class="icon icon-xs icon-eye margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#eye"></use></svg>
                                 <b class="margin-10-r">116</b>
 
-                                <i class="icon icon-xs icon-comment margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#comment"></use></svg>
                                 <b>2</b>
                             </span>
 
@@ -438,13 +442,13 @@
                             </span>
 
                             <span class="small dark border-t padding-10 block inline-block-1st">
-                                <i class="icon icon-xs icon-clock margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#clock"></use></svg>
                                 <b class="margin-10-r">SEPTEMBER 21, 2019</b>
 
-                                <i class="icon icon-xs icon-eye margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#eye"></use></svg>
                                 <b class="margin-10-r">147</b>
 
-                                <i class="icon icon-xs icon-comment margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#comment"></use></svg>
                                 <b>8</b>
                             </span>
 
@@ -462,13 +466,13 @@
                             </span>
 
                             <span class="small dark border-t padding-10 block inline-block-1st">
-                                <i class="icon icon-xs icon-clock margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#clock"></use></svg>
                                 <b class="margin-10-r">SEPTEMBER 09, 2019</b>
 
-                                <i class="icon icon-xs icon-eye margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#eye"></use></svg>
                                 <b class="margin-10-r">205</b>
 
-                                <i class="icon icon-xs icon-comment margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#comment"></use></svg>
                                 <b>12</b>
                             </span>
 
@@ -486,13 +490,13 @@
                             </span>
 
                             <span class="small dark border-t padding-10 block inline-block-1st">
-                                <i class="icon icon-xs icon-clock margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#clock"></use></svg>
                                 <b class="margin-10-r">SEPTEMBER 01, 2019</b>
 
-                                <i class="icon icon-xs icon-eye margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#eye"></use></svg>
                                 <b class="margin-10-r">279</b>
 
-                                <i class="icon icon-xs icon-comment margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#comment"></use></svg>
                                 <b>19</b>
                             </span>
 
@@ -501,7 +505,7 @@
                 </div>
                 <div class="align-c padding-30-t padding-10-b">
                     <a href="#" class="btn btn-xs-fluid padding-30-h theme-farmer2 ui-dark ease-btn">
-                        <b>View all company news</b> <i class="icon icon-long-arrow-right margin-5-l"></i>
+                        <b>View all company news</b> <svg class="icon margin-5-l"><use href="#long-arrow-right"></use></svg>
                     </a>
                 </div>
             </div>
@@ -519,13 +523,13 @@
                             </span>
 
                             <span class="small dark border-t padding-10 block inline-block-1st">
-                                <i class="icon icon-xs icon-clock margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#clock"></use></svg>
                                 <b class="margin-10-r">SEPTEMBER 21, 2019</b>
 
-                                <i class="icon icon-xs icon-eye margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#eye"></use></svg>
                                 <b class="margin-10-r">147</b>
 
-                                <i class="icon icon-xs icon-comment margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#comment"></use></svg>
                                 <b>8</b>
                             </span>
 
@@ -543,13 +547,13 @@
                             </span>
 
                             <span class="small dark border-t padding-10 block inline-block-1st">
-                                <i class="icon icon-xs icon-clock margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#clock"></use></svg>
                                 <b class="margin-10-r">SEPTEMBER 09, 2019</b>
 
-                                <i class="icon icon-xs icon-eye margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#eye"></use></svg>
                                 <b class="margin-10-r">205</b>
 
-                                <i class="icon icon-xs icon-comment margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#comment"></use></svg>
                                 <b>12</b>
                             </span>
 
@@ -567,13 +571,13 @@
                             </span>
 
                             <span class="small dark border-t padding-10 block inline-block-1st">
-                                <i class="icon icon-xs icon-clock margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#clock"></use></svg>
                                 <b class="margin-10-r">SEPTEMBER 01, 2019</b>
 
-                                <i class="icon icon-xs icon-eye margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#eye"></use></svg>
                                 <b class="margin-10-r">279</b>
 
-                                <i class="icon icon-xs icon-comment margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#comment"></use></svg>
                                 <b>19</b>
                             </span>
 
@@ -591,13 +595,13 @@
                             </span>
 
                             <span class="small dark border-t padding-10 block inline-block-1st">
-                                <i class="icon icon-xs icon-clock margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#clock"></use></svg>
                                 <b class="margin-10-r">SEPTEMBER 30, 2019</b>
 
-                                <i class="icon icon-xs icon-eye margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#eye"></use></svg>
                                 <b class="margin-10-r">116</b>
 
-                                <i class="icon icon-xs icon-comment margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#comment"></use></svg>
                                 <b>2</b>
                             </span>
 
@@ -606,7 +610,7 @@
                 </div>
                 <div class="align-c padding-30-t padding-10-b">
                     <a href="#" class="btn btn-xs-fluid padding-30-h theme-farmer2 ui-dark ease-btn">
-                        <b>View all social news</b> <i class="icon icon-long-arrow-right margin-5-l"></i>
+                        <b>View all social news</b> <svg class="icon margin-5-l"><use href="#long-arrow-right"></use></svg>
                     </a>
                 </div>
             </div>
@@ -624,13 +628,13 @@
                             </span>
 
                             <span class="small dark border-t padding-10 block inline-block-1st">
-                                <i class="icon icon-xs icon-clock margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#clock"></use></svg>
                                 <b class="margin-10-r">SEPTEMBER 21, 2019</b>
 
-                                <i class="icon icon-xs icon-eye margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#eye"></use></svg>
                                 <b class="margin-10-r">147</b>
 
-                                <i class="icon icon-xs icon-comment margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#comment"></use></svg>
                                 <b>8</b>
                             </span>
 
@@ -648,13 +652,13 @@
                             </span>
 
                             <span class="small dark border-t padding-10 block inline-block-1st">
-                                <i class="icon icon-xs icon-clock margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#clock"></use></svg>
                                 <b class="margin-10-r">SEPTEMBER 30, 2019</b>
 
-                                <i class="icon icon-xs icon-eye margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#eye"></use></svg>
                                 <b class="margin-10-r">116</b>
 
-                                <i class="icon icon-xs icon-comment margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#comment"></use></svg>
                                 <b>2</b>
                             </span>
 
@@ -672,13 +676,13 @@
                             </span>
 
                             <span class="small dark border-t padding-10 block inline-block-1st">
-                                <i class="icon icon-xs icon-clock margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#clock"></use></svg>
                                 <b class="margin-10-r">SEPTEMBER 01, 2019</b>
 
-                                <i class="icon icon-xs icon-eye margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#eye"></use></svg>
                                 <b class="margin-10-r">279</b>
 
-                                <i class="icon icon-xs icon-comment margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#comment"></use></svg>
                                 <b>19</b>
                             </span>
 
@@ -696,13 +700,13 @@
                             </span>
 
                             <span class="small dark border-t padding-10 block inline-block-1st">
-                                <i class="icon icon-xs icon-clock margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#clock"></use></svg>
                                 <b class="margin-10-r">SEPTEMBER 09, 2019</b>
 
-                                <i class="icon icon-xs icon-eye margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#eye"></use></svg>
                                 <b class="margin-10-r">205</b>
 
-                                <i class="icon icon-xs icon-comment margin-2-r"></i>
+                                <svg class="icon margin-2-r"><use href="#comment"></use></svg>
                                 <b>12</b>
                             </span>
 
@@ -711,7 +715,7 @@
                 </div>
                 <div class="align-c padding-30-t padding-10-b">
                     <a href="#" class="btn btn-xs-fluid padding-30-h theme-farmer2 ui-dark ease-btn">
-                        <b>View all customer news</b> <i class="icon icon-long-arrow-right margin-5-l"></i>
+                        <b>View all customer news</b> <svg class="icon margin-5-l"><use href="#long-arrow-right"></use></svg>
                     </a>
                 </div>
             </div>
@@ -736,7 +740,7 @@
                         <a class="img has-info show-info" href="img/agriculture/md01.jpg">
                             <img src="img/agriculture/md01.jpg" alt="">
                             <span class="x-large">
-                                <i class="icon icon-xxl icon-docs ui-text margin-20-r left hidden-md"></i>
+                                <svg class="icon icon-xxl left margin-20-r hidden-md ui-text"><use href="#docs"></use></svg>
                                 <b>Sed nunc mauris, auctor tristique libero non tristique.</b>
                                 <span class="light margin-15-t block hidden-md">
                                     Nullam mollis molestie magna nec tincidunt. Phasellus mattis aliquet ex, vel gravida dui elementum ut. Ut euismod nisi in tellus luctus dictum et ut nulla. Sed scelerisque rutrum dui, et suscipit diam sagittis quis. Quisque dapibus varius ornare.
@@ -824,7 +828,8 @@
                             Pellentesque mattis sed diam a rutrum. Sed fermentum accumsan egestas.
                         </p>
                         <a href="#" class="btn btn-lg btn-xs-fluid padding-20-h margin-30-b theme-farmer2 ui-dark ease-btn">
-                            <b>View all statistics</b> <i class="icon icon-long-arrow-right margin-5-l"></i>
+                            <b>View all statistics</b>
+                            <svg class="icon margin-5-l"><use href="#long-arrow-right"></use></svg>
                         </a>
                     </div>
                 </div>
@@ -881,13 +886,27 @@
                         <div class="card padding-30 shadow-lg theme-farmer ui-dark">
                             <h4 class="margin-15-b">Social</h4>
                             <div class="form-lg ease-1st-btn">
-                                <a class="btn btn-square" href="#" target="_blank"><i class="icon icon-facebook"></i></a>
-                                <a class="btn btn-square" href="#" target="_blank"><i class="icon icon-twitter"></i></a>
-                                <a class="btn btn-square" href="#" target="_blank"><i class="icon icon-instagram"></i></a>
-                                <a class="btn btn-square" href="#" target="_blank"><i class="icon icon-linkedin"></i></a>
-                                <a class="btn btn-square" href="#" target="_blank"><i class="icon icon-google"></i></a>
-                                <a class="btn btn-square" href="#" target="_blank"><i class="icon icon-whatsapp"></i></a>
-                                <a class="btn btn-square" href="#" target="_blank"><i class="icon icon-youtube"></i></a>
+                                <a class="btn btn-square" href="#" target="_blank">
+                                    <svg class="icon"><use href="#facebook"></use></svg>
+                                </a>
+                                <a class="btn btn-square" href="#" target="_blank">
+                                    <svg class="icon"><use href="#twitter"></use></svg>
+                                </a>
+                                <a class="btn btn-square" href="#" target="_blank">
+                                    <svg class="icon"><use href="#instagram"></use></svg>
+                                </a>
+                                <a class="btn btn-square" href="#" target="_blank">
+                                    <svg class="icon"><use href="#linkedin"></use></svg>
+                                </a>
+                                <a class="btn btn-square" href="#" target="_blank">
+                                    <svg class="icon"><use href="#google"></use></svg>
+                                </a>
+                                <a class="btn btn-square" href="#" target="_blank">
+                                    <svg class="icon"><use href="#whatsapp"></use></svg>
+                                </a>
+                                <a class="btn btn-square" href="#" target="_blank">
+                                    <svg class="icon"><use href="#youtube"></use></svg>
+                                </a>
                             </div>
 
                             <span class="sp30"></span>
@@ -906,7 +925,7 @@
                                     </div>
                                     <div class="col-42">
                                         <button class="btn btn-square theme-farmer2 ui-dark ease-btn">
-                                            <i class="icon icon-send"></i>
+                                            <svg class="icon"><use href="#send"></use></svg>
                                         </button>
                                     </div>
                                 </div>
@@ -924,27 +943,27 @@
 <!-- footer: end -->
 
 <!-- page social -->
-<div class="page-social icons-no-opacity form-lg ease-1st-btn">
+<div class="page-social icons-lg icons-no-opacity form-lg ease-1st-btn">
     <a class="btn btn-square theme-facebook ui-dark" href="#" target="_blank" data-tooltip="r" title="Facebook">
-        <i class="icon icon-lg icon-facebook"></i>
+        <svg class="icon"><use href="#facebook"></use></svg>
     </a>
     <a class="btn btn-square theme-twitter ui-dark" href="#" target="_blank" data-tooltip="r" title="Twitter">
-        <i class="icon icon-lg icon-twitter"></i>
+        <svg class="icon"><use href="#twitter"></use></svg>
     </a>
     <a class="btn btn-square theme-instagram ui-dark" href="#" target="_blank" data-tooltip="r" title="Instagram">
-        <i class="icon icon-lg icon-instagram"></i>
+        <svg class="icon"><use href="#instagram"></use></svg>
     </a>
     <a class="btn btn-square theme-linkedin ui-dark" href="#" target="_blank" data-tooltip="r" title="Linkedin">
-        <i class="icon icon-lg icon-linkedin"></i>
+        <svg class="icon"><use href="#linkedin"></use></svg>
     </a>
     <a class="btn btn-square theme-google ui-dark" href="#" target="_blank" data-tooltip="r" title="Google">
-        <i class="icon icon-lg icon-google"></i>
+        <svg class="icon"><use href="#google"></use></svg>
     </a>
     <a class="btn btn-square theme-whatsapp ui-dark" href="#" target="_blank" data-tooltip="r" title="Whatsapp">
-        <i class="icon icon-lg icon-whatsapp"></i>
+        <svg class="icon"><use href="#whatsapp"></use></svg>
     </a>
     <a class="btn btn-square theme-youtube ui-dark" href="#" target="_blank" data-tooltip="r" title="Youtube">
-        <i class="icon icon-lg icon-youtube"></i>
+        <svg class="icon"><use href="#youtube"></use></svg>
     </a>
 </div>
 
@@ -952,7 +971,7 @@
 <div class="mobile-menu show-r ease-layout ease-slow ease-in-out">
     <div class="mobile-menu-title border-b">
         <button class="btn btn-square btn-lg btn-ghost ease-btn close-mobile-menu">
-            <i class="icon icon-sm icon-remove no-opacity"></i>
+            <svg class="icon no-opacity"><use href="#remove"></use></svg>
         </button>
         <a href="#"><img src="img/agriculture/logo.png" alt="" srcset="img/agriculture/logo@2x.png 2x"></a>
     </div>

@@ -676,7 +676,7 @@
                     </div>
                 </div>
 
-                <div class="tab-content">
+                <div class="tab-content open open-ease">
 
                     <!-- forms: start -->
                     <div class="fixed fixed-inner">
@@ -858,7 +858,7 @@
 
                 </div>
 
-                <div class="tab-content open open-ease">
+                <div class="tab-content">
 
                     <!-- dashboard: start -->
                     <div class="fixed fixed-inner">
@@ -1989,21 +1989,21 @@
             <div class="row xs-fluid icons-xxl block-2nd icons-no-opacity hover-t-more-2nd icons-margin-5-v theme-gray ease-2nd-btn">
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-x-light" href="#">
-                        <svg class="icon theme-default2 ui-text"><use href="#news"/></svg>
+                        <svg class="icon"><use href="#news"/></svg>
                         <span class="block margin-5-v">News</span>
                         <span class="dark">589</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-x-light" href="#">
-                        <svg class="icon theme-default2 ui-text"><use href="#calendar-check"/></svg>
+                        <svg class="icon"><use href="#calendar-check"/></svg>
                         <span class="block margin-5-v">Events</span>
                         <span class="dark">219</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-x-light" href="#">
-                        <svg class="icon theme-default2 ui-text"><use href="#files"/></svg>
+                        <svg class="icon"><use href="#files"/></svg>
                         <span class="block margin-5-v">Documents</span>
                         <span class="dark">701</span>
                     </a>

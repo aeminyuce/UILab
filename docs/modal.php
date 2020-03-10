@@ -267,21 +267,21 @@
             <div class="row xs-fluid icons-xxl block-2nd icons-no-opacity hover-t-more-2nd icons-margin-5-v theme-gray form-lg ease-2nd-btn">
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-x-light" href="#">
-                        <svg class="icon theme-default2 ui-text"><use href="#news-fill"></use></svg>
+                        <svg class="icon"><use href="#news"></use></svg>
                         <span class="block margin-5-v">News</span>
                         <span class="dark">589</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-x-light" href="#">
-                        <svg class="icon theme-default2 ui-text"><use href="#calendar-check-fill"></use></svg>
+                        <svg class="icon"><use href="#calendar-check"></use></svg>
                         <span class="block margin-5-v">Events</span>
                         <span class="dark">219</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-x-light" href="#">
-                        <svg class="icon theme-default2 ui-text"><use href="#files-fill"></use></svg>
+                        <svg class="icon"><use href="#files"></use></svg>
                         <span class="block margin-5-v">Documents</span>
                         <span class="dark">701</span>
                     </a>

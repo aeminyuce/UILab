@@ -164,7 +164,7 @@ var photoGallery = {
 
             html = '<div class="photo-preview ease-layout">' +
                 '<div class="photo-preview-bg"></div>' +
-                '<button class="btn btn-square btn-lg btn-ghost close-photo-preview ease-btn">' +
+                '<button class="close-photo-preview btn btn-lg btn-square btn-ghost round ease-btn">' +
                     '<svg class="icon"><use href="#' + photoGallery.closeIcon + '"/></svg>' +
                 '</button>' +
                 '<button type="button" class="preview-prev ease-btn">' +

@@ -209,7 +209,7 @@
                             <svg class="icon icon-lg font-green"><use href="#comment"/></svg>
                             Message Title
                         </h4>
-                        <p class="large light">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
+                        <p class="large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
                     </div>
 
                     <div class="card-danger padding-15 round shadow">
@@ -220,7 +220,7 @@
                             <svg class="icon icon-lg font-red"><use href="#comment-lines-fill"/></svg>
                             Message Title
                         </h4>
-                        <p class="large light">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
+                        <p class="large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
                     </div>
 
                     <div class="card-warning padding-15 round">
@@ -231,7 +231,7 @@
                             <svg class="icon icon-lg font-yellow"><use href="#comment"/></svg>
                             Message Title
                         </h4>
-                        <p class="large light">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
+                        <p class="large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
                     </div>
 
                     <div class="card-info padding-15 round shadow">
@@ -242,7 +242,7 @@
                             <svg class="icon icon-lg x-dark"><use href="#comment-lines-fill"/></svg>
                             Message Title
                         </h4>
-                        <p class="large light">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
+                        <p class="large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
                     </div>
 
                 </div>

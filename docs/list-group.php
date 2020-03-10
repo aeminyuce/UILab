@@ -178,7 +178,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <svg class="icon"><use href="#heart-fill"/></svg>
+                                <svg class="icon"><use href="#heart"/></svg>
                                 Lorem ipsum dolor sit amet.
                             </a>
                         </li>

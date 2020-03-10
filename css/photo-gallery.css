@@ -48,7 +48,7 @@ html:not(.mobile) .preview-prev:hover,html:not(.mobile) .preview-next:hover { ba
 .photo-preview > img:not(.open) { display: none; }
 .photo-preview > img:not(.open-ease) { opacity: 0; }
 
-.close-photo-preview { border-radius: 6px; position: fixed; z-index: 10; }
+.close-photo-preview { position: fixed; z-index: 10; }
 .close-photo-preview .icon { color: #fff; opacity: 1 !important; }
 
 @media (min-width: 960px) {

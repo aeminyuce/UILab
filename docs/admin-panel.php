@@ -26,7 +26,7 @@
                     <div class="align-c padding-10-v">
                         <div class="padding-10 set-absolute set-t set-l ease-1st-btn">
                             <button class="btn btn-ghost btn-square round show-mobile-menu-l visible-md">
-                                <i class="icon icon-bars-left"></i>
+                                <svg class="icon"><use href="#bars-left"></use></svg>
                             </button>
                             <button class="btn btn-ghost round" data-notifier data-tooltip="r" title="Show messages">
                                 <svg class="icon"><use href="#bell-on"></use></svg>
@@ -37,10 +37,10 @@
                                 <svg class="icon"><use href="#settings"></use></svg>
                             </button>
                             <ul class="content icons-margin-10-r round shadow-lg">
-                                <li><a href="#"><i class="icon icon-sm icon-user"></i>Show Profile</a></li>
-                                <li><a href="#"><i class="icon icon-sm icon-image"></i>Change Profile Photo</a></li>
-                                <li><a href="#"><i class="icon icon-sm icon-key"></i>Change Password</a></li>
-                                <li><a href="#"><i class="icon font-red icon-sm icon-sign-out"></i>Log Out</a></li>
+                                <li><a href="#"><svg class="icon"><use href="#user"></use></svg>Show Profile</a></li>
+                                <li><a href="#"><svg class="icon"><use href="#image"></use></svg>Change Profile Photo</a></li>
+                                <li><a href="#"><svg class="icon"><use href="#key"></use></svg>Change Password</a></li>
+                                <li><a href="#"><svg class="icon"><use href="#sign-out"></use></svg>Log Out</a></li>
                             </ul>
                         </div>
                         <div class="padding-10 circle inline-block theme-gray ui-light">
@@ -54,7 +54,7 @@
                         <span class="dark">Supervisor</span>
                         <div class="countdown x-large margin-10-t">
                             <div data-tooltip title="Idle time">
-                                <i class="icon icon-sm icon-clock margin-5-r x-dark"></i>
+                                <svg class="icon icon-sm x-dark margin-3-r"><use href="#clock"></use></svg>
                                 <span class="x-dark inline-block">
                                     <span class="h">00</span>:<span class="m">59</span>:<span class="s">59</span>
                                 </span>
@@ -66,41 +66,41 @@
                 <span class="sp5 hidden-md"></span>
 
                 <!-- nav -->
-                <nav class="form-lg margin-25-v icons-no-opacity theme-default hidden-md">
+                <nav class="form-lg margin-25-v icons-lg icons-no-opacity theme-default hidden-md">
                     <ul class="list-unstyled list-spacer-20 align-l icons-margin-10-r block-2nd ease-2nd-button add-mobile-menu-l">
                         <li>
                             <a class="btn btn-ghost border-r border-lg ui-border" href="#">
-                                <i class="icon icon-lg icon-chart-pie x-dark"></i>
+                                <svg class="icon"><use href="#chart-pie"></use></svg>
                                 Dashboard
                             </a>
                         </li>
                         <li>
                             <a class="btn btn-ghost btn-ghost-border border-r border-lg ui-border" href="#">
-                                <i class="icon icon-lg icon-users x-dark"></i>
+                                <svg class="icon"><use href="#users"></use></svg>
                                 Employees
                             </a>
                         </li>
                         <li>
                             <a class="btn btn-ghost btn-ghost-border border-r border-lg ui-border" href="#">
-                                <i class="icon icon-lg icon-moneys x-dark"></i>
+                                <svg class="icon"><use href="#moneys"></use></svg>
                                 Payments
                             </a>
                         </li>
                         <li>
                             <a class="btn btn-ghost btn-ghost-border border-r border-lg ui-border" href="#">
-                                <i class="icon icon-lg icon-calendar-check x-dark"></i>
+                                <svg class="icon"><use href="#calendar-days"></use></svg>
                                 Events
                             </a>
                         </li>
                         <li>
                             <a class="btn btn-ghost btn-ghost-border border-r border-lg ui-border" href="#">
-                                <i class="icon icon-lg icon-docs x-dark"></i>
+                                <svg class="icon"><use href="#docs"></use></svg>
                                 Documents
                             </a>
                         </li>
                         <li>
                             <a class="btn margin-5-b btn-ghost btn-ghost-border border-r border-lg ui-border" href="#">
-                                <i class="icon icon-lg icon-clipboard-list x-dark"></i>
+                                <svg class="icon"><use href="#clipboard-list"></use></svg>
                                 Lists
                             </a>
                         </li>
@@ -111,8 +111,11 @@
 
                 <!-- tips -->
                 <div class="card padding-15 round shadow-lg hidden-md">
-                    <button class="close-card icon icon-xs icon-remove ease-btn"></button>
-                    <i class="icon icon-help margin-10-r"></i><b>System Tips</b>
+                    <button class="close-card ease-btn">
+                        <svg class="icon"><use href="#remove"/></svg>
+                    </button>
+                    <svg class="icon margin-10-r"><use href="#help"></use></svg>
+                    <b>System Tips</b>
                     <span class="sp5"></span>
                     <div class="x-dark large no-line-height">You can backup your stats weekly.</div>
                     <span class="sp15"></span>

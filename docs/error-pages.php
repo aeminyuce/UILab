@@ -49,8 +49,8 @@
                     <p class="font-orange largest bold">Error: 500 Unexpected Error</p>
                     <p class="font-orange error-size no-user-select">
                         <span class="inline-block">5</span>
-                        <svg class="icon"><use href="#face-sad-fill"></use></svg>
-                        <span class="inline-block">0</span>
+                        <svg class="icon"><use href="#face-blank"></use></svg>
+                        <svg class="icon"><use href="#face-blank"></use></svg>
                     </p>
                     <p class="x-large">We are having some issues at the moment.<br>We will have it fixed in no time!</p class="large">
                     <a class="font-orange btn btn-ghost border-dual padding-30-h circle ease-btn" href="#">

@@ -69,19 +69,19 @@
                 <div class="padding-30-v">
                     <ul class="steps-bar icons-sm">
                         <li>
-                            <svg class="icon margin-3-r"><use href="#check-circle-fill"></use></svg>
-                            Step Name Here11
+                            <svg class="icon margin-3-r"><use href="#check-circle"></use></svg>
+                            Step Name Here
                         </li>
                         <li class="active">
-                            <svg class="icon margin-3-r"><use href="#check-circle-fill"></use></svg>
+                            <svg class="icon margin-3-r"><use href="#check-circle"></use></svg>
                             Step Name Here
                         </li>
                         <li>
-                            <svg class="icon margin-3-r"><use href="#check-circle-fill"></use></svg>
+                            <svg class="icon margin-3-r"><use href="#check-circle"></use></svg>
                             Step Name Here
                         </li>
                         <li>
-                            <svg class="icon margin-3-r"><use href="#check-circle-fill"></use></svg>
+                            <svg class="icon margin-3-r"><use href="#check-circle"></use></svg>
                             Step Name Here
                         </li>
                     </ul>

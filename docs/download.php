@@ -843,7 +843,7 @@
                                 <span class="sp15 visible-xs"></span>
                                 <button class="generate-btn btn btn-xs-fluid round ui-dark">Generate CSS</button>
                                 <button title="Copy to clipboard!" class="generate-copy btn btn-xs-fluid round">
-                                    <svg class="icon ui-text margin-5-r no-opacity"><use href="#files-fill"/></svg>Copy to clipboard
+                                    <svg class="icon ui-text margin-5-r no-opacity"><use href="#files"/></svg>Copy to clipboard
                                 </button>
                             </div>
 
@@ -1256,7 +1256,7 @@
                                 <span class="sp15 visible-xs"></span>
                                 <button class="generate-btn btn btn-xs-fluid round ui-dark">Generate JS</button>
                                 <button title="Copy to clipboard!" class="generate-copy btn btn-xs-fluid round">
-                                    <svg class="icon ui-text margin-5-r no-opacity"><use href="#files-fill"/></svg>Copy to clipboard
+                                    <svg class="icon ui-text margin-5-r no-opacity"><use href="#files"/></svg>Copy to clipboard
                                 </button>
                             </div>
 
@@ -1387,7 +1387,7 @@
                                 <span class="sp15 visible-xs"></span>
                                 <button class="generate-btn btn btn-xs-fluid round ui-dark" data-type="icons">Generate Icons</button>
                                 <button title="Copy to clipboard!" class="generate-copy btn btn-xs-fluid round">
-                                    <svg class="icon ui-text margin-5-r no-opacity"><use href="#files-fill"/></svg>Copy to clipboard
+                                    <svg class="icon ui-text margin-5-r no-opacity"><use href="#files"/></svg>Copy to clipboard
                                 </button>
                             </div>
 

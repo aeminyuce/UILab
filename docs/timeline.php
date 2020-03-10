@@ -11,7 +11,7 @@
                     </li>
                     <li>
                         <span class="img-photo circle shadow-lg theme-orange ui-dark">
-                            <svg class="icon"><use href="#calendar-fill"></use></svg>
+                            <svg class="icon"><use href="#calendar"></use></svg>
                         </span>
                         <span class="card round ui-dark">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span>
                     </li>
@@ -25,22 +25,22 @@
                 <ul class="timeline large theme-default2 ui-text">
                     <li>
                         <span class="img-photo-sm circle ui-dark">
-                            <svg class="icon"><use href="#user-fill"></use></svg>
+                            <svg class="icon"><use href="#user"></use></svg>
                             <i class="icon icon-user"></i>
                         </span>
                         <span class="card border-dual round ui-border shadow-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span>
                     </li>
                     <li>
                         <span class="img-photo-sm circle ui-dark">
-                            <svg class="icon"><use href="#heart-fill"></use></svg>
-                            <i class="icon icon-heart-fill"></i>
+                            <svg class="icon"><use href="#heart"></use></svg>
+                            <i class="icon icon-heart"></i>
                         </span>
                         <span class="card border-dual round ui-border shadow-lg">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span>
                     </li>
                     <li>
                         <span class="img-photo-sm circle ui-dark">
-                            <svg class="icon"><use href="#flag-fill"></use></svg>
-                            <i class="icon icon-flag-fill"></i>
+                            <svg class="icon"><use href="#flag"></use></svg>
+                            <i class="icon icon-flag"></i>
                         </span>
                         <span class="card border-dual round ui-border shadow-lg">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span>
                     </li>

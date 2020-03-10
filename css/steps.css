@@ -17,7 +17,7 @@
 
 .steps-bar li > span,.steps-bar.steps-icon li > .icon { width: 17px; height: 17px; display: block; position: absolute; top: 4.5px; left: 50%; z-index: 2; transform: translateX(-50%); }
 .steps-bar.steps-icon li > .icon { color: currentColor; stroke-width: 34px; }
-.steps-bar li.active ~ li > .icon { opacity: 0; }
+.steps-bar.steps-icon li.active ~ li > .icon { opacity: 0; }
 
 .steps-bar[class*="ui-"] li:before { background-color: currentColor; border-color: currentColor; }
 .steps-bar[class*="ui-"] li:after { background-color: currentColor; }

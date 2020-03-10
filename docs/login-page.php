@@ -4,14 +4,14 @@
 
     .login-holder { background-image: linear-gradient(110deg, #624494, #080550, #6f113e); }
     .login-holder > .set-absolute { z-index: 1; }
-    .login-holder .highlight-icon { font-size: 96px; width: 96px; height: 96px; }
+    .login-holder .highlight-icon { width: 96px; height: 96px; }
 
     .go-signup-btn { background-image: linear-gradient(130deg, #8366b9,#6f113e); }
     .login-btn { min-width: 26%; background-image: linear-gradient(130deg, #4ee273,#2dbd51); z-index: 1; }
 
     .login-forms-container { background-color: #f6f4fc; }
     .login-container { background-color: #e2d2ff; }
-    .login-container > .icon { font-size: 160px; position: absolute; top: 14%; right: 34%; transform: rotate(-12deg); }
+    .login-container > .icon { width: 160px; height: 160px; position: absolute; top: 14%; right: 22%; transform: rotate(-12deg); }
 
     .login-icons .icon { position: absolute; }
     .login-icons .icon:nth-child(1) { width: 52px; height: 52px; bottom: 112px; left: 82px; opacity: .65; transform: rotate(12deg); }
@@ -64,7 +64,7 @@
 
                     <label class="form-label x-dark">User Name</label>
                     <div class="text text-icon round border-dual ease-form">
-                        <i class="icon icon-user"></i>
+                        <svg class="icon"><use href="#user"></use></svg>
                         <input class="required" type="text" placeholder="Enter user name" minlength="3" autocomplete="username">
                     </div>
                     <p class="required-msg">Enter user name.</p>
@@ -73,7 +73,9 @@
 
                     <label class="form-label x-dark">Password</label>
                     <div class="text text-icon round border-dual ease-form">
-                        <button type="button" title="Toggle Password" class="show-pass icon icon-eye"></button>
+                        <button type="button" title="Toggle Password" class="show-pass">
+                            <svg class="icon"><use href="#eye-fill"></use></svg>
+                        </button>
                         <input class="required" type="password" placeholder="Enter password" minlength="8" autocomplete="current-password">
                     </div>
                     <p class="required-msg">Minimum length is 8 characters.</p>
@@ -95,7 +97,7 @@
                     </button>
                     <span class="sp15"></span>
                     <button class="tab btn btn-ghost x-dark round block ease-btn" data-id="lost-password">
-                        <i class="icon icon-sm icon-lock-open margin-5-r no-opacity"></i> Forgot password?
+                        <svg class="icon margin-5-r no-opacity"><use href="#lock"></use></svg> Forgot password?
                     </button>
 
                 </form>
@@ -106,7 +108,7 @@
 
                     <label class="form-label x-dark">Your email</label>
                     <div class="text text-icon round border-dual ease-form">
-                        <i class="icon icon-at"></i>
+                        <svg class="icon"><use href="#at"></use></svg>
                         <input class="required" type="email" placeholder="Enter email" minlength="3">
                     </div>
                     <p class="required-msg">Enter email.</p>
@@ -118,7 +120,7 @@
                     </button>
                     <span class="sp15"></span>
                     <button class="tab btn btn-ghost x-dark round block ease-btn" data-id="login">
-                        <i class="icon icon-sm icon-long-arrow-left margin-5-r no-opacity"></i> Back to login
+                        <svg class="icon margin-5-r no-opacity"><use href="#long-arrow-left"></use></svg> Back to login
                     </button>
 
                 </form>
@@ -136,17 +138,17 @@
                     <a href="?l=sign-up-page" class="login-btn btn btn-lg btn-sm-fluid padding-30-h circle hover-scale hover-shadow ease-btn"><b>SIGN UP NOW</b></a>
                 </div>
 
-                <div class="login-icons">
-                    <i class="icon icon-plus hidden-sm"></i>
-                    <i class="icon icon-plus"></i>
-                    <i class="icon icon-plus"></i>
-                    <i class="icon icon-plus"></i>
-                    <i class="icon icon-plus"></i>
+                <div class="login-icons icons-black">
+                    <svg class="icon hidden-sm"><use href="#plus"></use></svg>
+                    <svg class="icon"><use href="#plus"></use></svg>
+                    <svg class="icon"><use href="#plus"></use></svg>
+                    <svg class="icon"><use href="#plus"></use></svg>
+                    <svg class="icon"><use href="#plus"></use></svg>
                 </div>
 
             </div>
 
-            <i class="icon xx-light icon-user-plus visible-lg"></i>
+            <svg class="icon xx-light visible-lg"><use href="#users"></use></svg>
 
         </div>
     </div>

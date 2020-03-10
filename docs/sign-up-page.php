@@ -4,11 +4,11 @@
     .signup-holder { background-image: linear-gradient(110deg, #624494, #080550, #6f113e); }
 
     .signup-icons .icon { position: absolute; }
-    .signup-icons .icon:nth-child(1) { bottom: 70px; left: 202px; opacity: .05; transform: rotate(12deg); }
-    .signup-icons .icon:nth-child(2) { bottom: 2px; left: 4px; opacity: .075; transform: rotate(-12deg); }
-    .signup-icons .icon:nth-child(3) { top: 22px; left: 22px; opacity: .15; transform: rotate(-12deg); }
-    .signup-icons .icon:nth-child(4) { bottom: 42px; right: -8px; opacity: .3; transform: rotate(-12deg); }
-    .signup-icons .icon:nth-child(5) { top: -68px; right: 29%; opacity: .1; transform: rotate(12deg); }
+    .signup-icons .icon:nth-child(1) { width: 52px; height: 52px; bottom: 70px; left: 202px; opacity: .15; transform: rotate(12deg); }
+    .signup-icons .icon:nth-child(2) { width: 28px; height: 28px; bottom: 2px; left: 4px; opacity: .1; transform: rotate(-12deg); }
+    .signup-icons .icon:nth-child(3) { width: 64px; height: 64px; top: 22px; left: 22px; opacity: .5; transform: rotate(-12deg); }
+    .signup-icons .icon:nth-child(4) { width: 64px; height: 64px; bottom: 42px; right: -8px; opacity: .3; transform: rotate(-12deg); }
+    .signup-icons .icon:nth-child(5) { width: 206px; height: 206px; top: -42px; right: 29%; opacity: .15; transform: rotate(12deg); }
 
     .signup-btn { min-width: 42%; background-image: linear-gradient(130deg, #4ee273,#2dbd51); }
     .why-join { background-image: linear-gradient(130deg, #fff, #e8e0ff, #fff); }
@@ -28,12 +28,12 @@
 
             <div class="signup-holder no-scroll set-relative ui-dark">
 
-                <div class="signup-icons">
-                    <i class="icon icon-plus"></i>
-                    <i class="icon icon-plus"></i>
-                    <i class="icon icon-plus"></i>
-                    <i class="icon icon-plus"></i>
-                    <i class="icon icon-plus"></i>
+                <div class="signup-icons icons-black">
+                    <svg class="icon"><use href="#plus"></use></svg>
+                    <svg class="icon"><use href="#plus"></use></svg>
+                    <svg class="icon"><use href="#plus"></use></svg>
+                    <svg class="icon"><use href="#plus"></use></svg>
+                    <svg class="icon"><use href="#plus"></use></svg>
                 </div>
 
                 <div class="fixed theme-green">
@@ -104,7 +104,9 @@
 
                                     <label class="form-label x-dark">Password</label>
                                     <div class="text text-icon round border-dual ease-form">
-                                        <button type="button" title="Toggle Password" class="show-pass icon icon-eye"></button>
+                                        <button type="button" title="Toggle Password" class="show-pass">
+                                            <svg class="icon"><use href="#eye-fill"></use></svg>
+                                        </button>
                                         <input class="required" type="password" placeholder="Enter password" minlength="8">
                                     </div>
                                     <p class="required-msg">Minimum length is 8 characters.</p>
@@ -113,7 +115,9 @@
 
                                     <label class="form-label x-dark">Confirm Password</label>
                                     <div class="text text-icon round border-dual ease-form">
-                                        <button type="button" title="Toggle Password" class="show-pass icon icon-eye"></button>
+                                        <button type="button" title="Toggle Password" class="show-pass">
+                                            <svg class="icon"><use href="#eye-fill"></use></svg>
+                                        </button>
                                         <input class="required" type="password" placeholder="Enter password again" minlength="8">
                                     </div>
                                     <p class="required-msg">Please confirm your password.</p>
@@ -163,21 +167,21 @@
                                     Join our<br class="hidden-sm">huge platform<br class="hidden-sm">
                                     <span class="bold x-largest">today!</span>
                                 </h3>
-                                <ul class="list-unstyled list-spacer-10 light x-large icons-margin-5-r theme-default2">
+                                <ul class="list-unstyled list-spacer-10 light x-large icons-sm icons-margin-5-r theme-default2">
                                     <li>
-                                        <i class="icon icon-sm icon-check ui-text hidden-sm"></i>
+                                        <svg class="icon ui-text hidden-sm"><use href="#check-circle-fill"></use></svg>
                                         Work and build around your team.
                                     </li>
                                     <li>
-                                        <i class="icon icon-sm icon-check ui-text hidden-sm"></i>
+                                        <svg class="icon ui-text hidden-sm"><use href="#check-circle-fill"></use></svg>
                                         Whatever work you do, wherever you do it.
                                     </li>
                                     <li>
-                                        <i class="icon icon-sm icon-check ui-text hidden-sm"></i>
+                                        <svg class="icon ui-text hidden-sm"><use href="#check-circle-fill"></use></svg>
                                         Where humans connect.
                                     </li>
                                     <li>
-                                        <i class="icon icon-sm icon-check ui-text hidden-sm"></i>
+                                        <svg class="icon ui-text hidden-sm"><use href="#check-circle-fill"></use></svg>
                                         Expanding your environment.
                                     </li>
                                 </ul>
