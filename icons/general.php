@@ -1470,7 +1470,8 @@
 </symbol>
 <symbol id="trash" viewBox="-28 -12 288 288">
     <path class="svg-l" d="M83 12h66l11 40H72z"/>
-    <path d="M12 52h208 M36 52h160v168a32 32 0 01-32 32H68a32 32 0 01-32-32z"/>
+    <path d="M12 52h208"/>
+    <path class="svg-s" d="M36 52h160v168a32 32 0 01-32 32H68a32 32 0 01-32-32z"/>
 </symbol>
 <symbol id="trash-fill" viewBox="0 0 288 288">
     <use class="svg-f" href="#trash"/>

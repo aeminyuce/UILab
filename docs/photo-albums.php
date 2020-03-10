@@ -4,7 +4,8 @@
             <div class="col-static sm-fluid padding-30-v">
                 <div class="col-250 padding-30 order-sm-last sm-align-c theme-default2">
                     <a href="#" class="btn btn-lg btn-xs-fluid align-l block circle ui-dark ease-btn">
-                        Create New <i class="icon icon-sm icon-plus right"></i>
+                        Create New
+                        <svg class="icon right"><use href="#plus"></use></svg>
                     </a>
                     <span class="sp30"></span>
                     <ul class="list-unstyled hover-r-more-2nd inline-block-2nd large bold list-spacer-30 padding-10 ease-2nd-layout">
@@ -16,10 +17,25 @@
                         <li><a href="#">Hobbies</a></li>
                     </ul>
                     <span class="sp30"></span>
-                    <ul class="list-unstyled hover-r-more-2nd inline-block-2nd list-spacer-15 large x-dark adding-10 icons-margin-10-r ease-2nd-layout">
-                        <li><a href="#"><i class="icon icon-sm icon-marker"></i>Locations</a></li>
-                        <li><a href="#"><i class="icon icon-sm icon-users"></i>Friends</a></li>
-                        <li><a href="#"><i class="icon icon-sm icon-setting"></i>Settings</a></li>
+                    <ul class="list-unstyled hover-r-more-2nd inline-block-2nd list-spacer-15 large x-dark adding-10 icons-sm icons-margin-10-r ease-2nd-layout">
+                        <li>
+                            <a href="#">
+                                <svg class="icon"><use href="#marker"></use></svg>
+                                Locations
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon"><use href="#users"></use></svg>
+                                Friends
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon"><use href="#settings"></use></svg>
+                                Settings
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="row">

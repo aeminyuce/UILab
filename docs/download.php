@@ -371,42 +371,42 @@
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="reset" value="../css/reset.css" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Reset
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="helpers" value="../css/helpers.css" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Helpers
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="grid" value="../css/grid.css" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Grid
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="borders" value="../css/borders.css" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Borders
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="paddings" value="../css/paddings.css" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Paddings
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="margins" value="../css/margins.css" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Margins
                                 </label>
@@ -426,7 +426,7 @@
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="effects" value="../css/effects.css" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Effects
                                 </label>
@@ -446,14 +446,14 @@
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="typography" value="../css/typography.css" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Typography
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="listings" value="../css/listings.css">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Listings
                                 </label>
@@ -476,28 +476,28 @@
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="buttons" value="../css/buttons.css" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Buttons
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="top button" value="../css/top-button.css" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Top Button
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="tabs" value="../css/tabs.css">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Tabs
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="dropdown" value="../css/dropdown.css">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Dropdown
                                 </label>
@@ -517,21 +517,21 @@
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="forms" value="../css/forms.css" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Forms
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="textarea counter" value="../css/textarea-counter.css">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Textarea Counter
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="autocomplete" value="../css/autocomplete.css">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Autocomplete
                                 </label>
@@ -551,7 +551,7 @@
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="icons" value="../css/icons.css" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Icons
                                 </label>
@@ -574,83 +574,83 @@
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="list group" value="../css/list-group.css" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     List Group
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="card" value="../css/card.css" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Card
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="tables" value="../css/tables.css" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Tables
                                 </label>                                    <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="breadcrumbs" value="../css/breadcrumbs.css">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Breadcrumbs
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="page social" value="../css/page-social.css">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Page Social
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="photo images" value="../css/photo-images.css">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Photo Images
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="progress bar" value="../css/progress-bar.css">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Progress Bar
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="scrollbar" value="../css/scrollbar.css">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Scrollbar
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="steps" value="../css/steps.css">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Steps
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="sticky header" value="../css/sticky-header.css">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Sticky Header
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="stripes" value="../css/stripes.css">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Stripes
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="timeline" value="../css/timeline.css">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Timeline
                                 </label>
@@ -670,28 +670,28 @@
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="line charts" value="../css/line-charts.css">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Line Charts
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="donut chart" value="../css/donut-chart.css">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Donut Chart
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="pie chart" value="../css/pie-chart.css">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Pie Chart
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="svg map" value="../css/svg-map.css">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     SVG Map
                                 </label>
@@ -714,77 +714,77 @@
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="mobile menu" value="../css/mobile-menu.css" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Mobile Menu
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="modal" value="../css/modal.css" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Modal
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="tooltip" value="../css/tooltip.css" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Tooltip
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="alerts" value="../css/alerts.css">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Alerts
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="calendar" value="../css/calendar.css">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Calendar
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="carousel" value="../css/carousel.css">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Carousel
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="data list" value="../css/data-list.css">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Data List
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="image uploader" value="../css/image-uploader.css">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Image Uploader
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="photo gallery" value="../css/photo-gallery.css">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Photo Gallery
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="photo slider" value="../css/photo-slider.css">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Photo Slider
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="weather" value="../css/weather.css">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Weather
                                 </label>
@@ -804,14 +804,14 @@
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="themes" value="../css/themes.css" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Themes
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="darkmode" value="../css/darkmode.css">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Dark Mode
                                 </label>
@@ -879,35 +879,35 @@
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="selector js" value="../js/selector.js" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Selector
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="events js" value="../js/events.js" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Events
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                             <input type="checkbox" name="user agents js" value="../js/user-agents.js" checked>
-                                            <i class="ui-dark state"></i>
+                                            <i class="state ui-dark"></i>
                                     </span>
                                     User Agents
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="grid js" value="../js/grid.js" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Grid
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="ajax js" value="../js/ajax.js">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Ajax
                                 </label>
@@ -927,7 +927,7 @@
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="effects js" value="../js/effects.js" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Effects
                                 </label>
@@ -947,28 +947,28 @@
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="top button js" value="../js/top-button.js" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Top Button
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="dropdown js" value="../js/dropdown.js">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Dropdown
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="loading button js" value="../js/loading-button.js">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Loading Button
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="tabs js" value="../js/tabs.js">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Tabs
                                 </label>
@@ -991,49 +991,49 @@
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="forms js" value="../js/forms.js" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Forms
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="autocomplete js" value="../js/autocomplete.js">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Autocomplete
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="currency spinner js" value="../js/currency-spinner.js">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Currency Spinner
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="dual multi select js" value="../js/dual-multi-select.js">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Dual Multi Select
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="form spinner js" value="../js/form-spinner.js">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Form Spinner
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="required forms js" value="../js/required-forms.js">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Required Forms
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="textarea counter js" value="../js/textarea-counter.js">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Textarea Counter
                                 </label>
@@ -1053,14 +1053,14 @@
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="card js" value="../js/card.js" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Card
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="sticky header js" value="../js/sticky-header.js">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Sticky Header
                                 </label>
@@ -1083,84 +1083,84 @@
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="mobile menu js" value="../js/mobile-menu.js" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Mobile Menu
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="modal js" value="../js/modal.js" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Modal
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="tooltip js" value="../js/tooltip.js" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Tooltip
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="alerts js" value="../js/alerts.js">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Alerts
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="calendar js" value="../js/calendar.js">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Calendar
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="carousel js" value="../js/carousel.js">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Carousel
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="countdown js" value="../js/countdown.js">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Countdown
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="data list js" value="../js/data-list.js">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Data List
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="image uploader js" value="../js/image-uploader.js">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Image Uploader
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="photo gallery js" value="../js/photo-gallery.js">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Photo Gallery
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="photo slider js" value="../js/photo-slider.js">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Photo Slider
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="weather js" value="../js/weather.js">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Weather
                                 </label>
@@ -1183,28 +1183,28 @@
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="line charts js" value="../js/line-charts.js">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Line Charts
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="donut chart js" value="../js/donut-chart.js">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Donut Chart
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="pie chart js" value="../js/pie-chart.js">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Pie chart
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="svg map js" value="../js/svg-map.js">
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     SVG Map
                                 </label>
@@ -1224,7 +1224,7 @@
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="themes js" value="../js/themes.js" checked>
-                                        <i class="ui-dark state"></i>
+                                        <i class="state ui-dark"></i>
                                     </span>
                                     Themes
                                 </label>
@@ -1284,21 +1284,21 @@
                                         <label class="custom">
                                             <span class="switch-custom round border-dual ease-form">
                                                 <input type="checkbox" value="../icons/general.php" checked>
-                                                <i class="ui-dark state"></i>
+                                                <i class="state ui-dark"></i>
                                             </span>
                                             General
                                         </label>
                                         <label class="custom">
                                             <span class="switch-custom round border-dual ease-form">
                                                 <input type="checkbox" value="../icons/touch.php">
-                                                <i class="ui-dark state"></i>
+                                                <i class="state ui-dark"></i>
                                             </span>
                                             Touch
                                         </label>
                                         <label class="custom">
                                             <span class="switch-custom round border-dual ease-form">
                                                 <input type="checkbox" value="../icons/media.php">
-                                                <i class="ui-dark state"></i>
+                                                <i class="state ui-dark"></i>
                                             </span>
                                             Media
                                         </label>
@@ -1307,21 +1307,21 @@
                                         <label class="custom">
                                             <span class="switch-custom round border-dual ease-form">
                                                 <input type="checkbox" value="../icons/real-estate.php">
-                                                <i class="ui-dark state"></i>
+                                                <i class="state ui-dark"></i>
                                             </span>
                                             Real Estate
                                         </label>
                                         <label class="custom">
                                             <span class="switch-custom round border-dual ease-form">
                                                 <input type="checkbox" value="../icons/weather.php">
-                                                <i class="ui-dark state"></i>
+                                                <i class="state ui-dark"></i>
                                             </span>
                                             Weather
                                         </label>
                                         <label class="custom">
                                             <span class="switch-custom round border-dual ease-form">
                                                 <input type="checkbox" value="../icons/kitchen.php">
-                                                <i class="ui-dark state"></i>
+                                                <i class="state ui-dark"></i>
                                             </span>
                                             Kitchen
                                         </label>
@@ -1330,21 +1330,21 @@
                                         <label class="custom">
                                             <span class="switch-custom round border-dual ease-form">
                                                 <input type="checkbox" value="../icons/commerce.php">
-                                                <i class="ui-dark state"></i>
+                                                <i class="state ui-dark"></i>
                                             </span>
                                             Commerce
                                         </label>
                                         <label class="custom">
                                             <span class="switch-custom round border-dual ease-form">
                                                 <input type="checkbox" value="../icons/files.php">
-                                                <i class="ui-dark state"></i>
+                                                <i class="state ui-dark"></i>
                                             </span>
                                             Files
                                         </label>
                                         <label class="custom">
                                             <span class="switch-custom round border-dual ease-form">
                                                 <input type="checkbox" value="../icons/social.php">
-                                                <i class="ui-dark state"></i>
+                                                <i class="state ui-dark"></i>
                                             </span>
                                             Social
                                         </label>
@@ -1353,7 +1353,7 @@
                                         <label class="custom">
                                             <span class="switch-custom round border-dual ease-form">
                                                 <input type="checkbox" value="../icons/brands.php">
-                                                <i class="ui-dark state"></i>
+                                                <i class="state ui-dark"></i>
                                             </span>
                                             Brands
                                         </label>

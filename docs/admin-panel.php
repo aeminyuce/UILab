@@ -63,8 +63,6 @@
                     </div>
                 </div>
 
-                <span class="sp5 hidden-md"></span>
-
                 <!-- nav -->
                 <nav class="form-lg margin-25-v icons-lg icons-no-opacity theme-default hidden-md">
                     <ul class="list-unstyled list-spacer-20 align-l icons-margin-10-r block-2nd ease-2nd-button add-mobile-menu-l">
@@ -107,8 +105,6 @@
                     </ul>
                 </nav>
 
-                <span class="sp5 hidden-md"></span>
-
                 <!-- tips -->
                 <div class="card padding-15 round shadow-lg hidden-md">
                     <button class="close-card ease-btn">
@@ -116,9 +112,7 @@
                     </button>
                     <svg class="icon margin-10-r"><use href="#help"></use></svg>
                     <b>System Tips</b>
-                    <span class="sp5"></span>
-                    <div class="x-dark large no-line-height">You can backup your stats weekly.</div>
-                    <span class="sp15"></span>
+                    <div class="x-dark large no-line-height margin-5-t margin-15-b">You can backup your stats weekly.</div>
                     <button class="btn block circle theme-green ui-dark ease-btn"><b>Got it!</b></button>
                 </div>
 
@@ -135,7 +129,8 @@
                         <div class="card full-h round shadow-lg">
                             <div class="card-side padding-15 border-b">
                                 <a href="#" class="btn right circle ease-btn hidden-xs">
-                                    Details <i class="icon icon-xs icon-long-arrow-right margin-5-l"></i>
+                                    Details
+                                    <svg class="icon margin-5-l"><use href="#arrow-right"/></svg>
                                 </a>
                                 <h4 class="margin-5-b">Averages of Work</h4>
                                 <div class="x-dark xs-align-c">
@@ -143,18 +138,16 @@
                                 </div>
                                 <a href="#" class="btn block margin-10-t circle ease-btn visible-xs">
                                     Show More
-                                    <i class="icon icon-xs icon-angle-right margin-10-l"></i>
+                                    <svg class="icon margin-5-l"><use href="#arrow-right"/></svg>
                                 </a>
                             </div>
                             <div class="card-side padding-30">
 
-                                <span class="sp25 hidden-md"></span>
-
-                                <div class="row row-md-gap xs-fluid">
+                                <div class="row row-md-gap xs-fluid icons-lg margin-25-t md-no-margin">
                                     <div class="col-4">
                                         <div class="donut-chart ease-donut-chart col-xs-150 col-lg-150 automargin" style="max-width: 120px;">
                                             <strong>
-                                                <i class="icon icon-lg icon-box light"></i>
+                                                <svg class="icon"><use href="#box"/></svg>
                                                 <b class="dark margin-10-t margin-5-b block">Last Month</b>
                                                 <b class="large">220</b>
                                             </strong>
@@ -167,7 +160,7 @@
                                     <div class="col-4">
                                         <div class="donut-chart ease-donut-chart col-xs-150 col-lg-150 automargin" style="max-width: 120px;">
                                             <strong>
-                                                <i class="icon icon-lg icon-boxes light"></i>
+                                                <svg class="icon"><use href="#boxes"/></svg>
                                                 <b class="dark margin-10-t margin-5-b block">Last year</b>
                                                 <b class="large">2275</b>
                                             </strong>
@@ -185,9 +178,6 @@
                                         </div>
                                     </div>
                                 </div>
-
-                                <span class="sp20 hidden-md"></span>
-                                <span class="sp4 hidden-md"></span>
 
                             </div>
                         </div>
@@ -209,9 +199,7 @@
                                 </div>
                             </div>
 
-                            <div class="padding-15">
-
-                                <span class="sp4"></span>
+                            <div class="padding-15-h padding-20-v">
 
                                 <div class="line-charts ease-line-charts" data-size="5,57" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                                     <ul class="line" data-name="1st" data-type="curved dashed">
@@ -247,14 +235,16 @@
                             <div class="row sm-fluid">
                                 <div class="col-5 sm-no-padding-b">
                                     <div class="text text-icon-both round no-border ui-x-light has-clear ease-form">
-                                        <i class="icon icon-sm icon-search text-icon-l"></i>
-                                        <button class="clear-form icon icon-remove"></button>
+                                        <svg class="icon text-icon-l"><use href="#search"/></svg>
+                                        <button class="clear-form">
+                                            <svg class="icon"><use href="#remove"/></svg>
+                                        </button>
                                         <input class="data-filter" type="text" placeholder="Search">
                                     </div>
                                 </div>
                                 <div class="col-7 ease-1st-form align-r sm-align-l">
                                     <div class="select form-inline round no-border ui-x-light">
-                                        <i class="icon icon-angle-down"></i>
+                                        <svg class="icon"><use href="#angle-down"/></svg>
                                         <select class="data-filter" data-index="1">
                                             <option value="">Name</option>
                                             <option>John Doe</option>
@@ -264,7 +254,7 @@
                                         </select>
                                     </div>
                                     <div class="select form-inline round no-border ui-x-light">
-                                        <i class="icon icon-angle-down"></i>
+                                        <svg class="icon"><use href="#angle-down"/></svg>
                                         <select class="data-filter" data-index="2" data-type="number">
                                             <option value="">Age</option>
                                             <option>24</option>
@@ -273,7 +263,7 @@
                                         </select>
                                     </div>
                                     <div class="select form-inline round no-border ui-x-light">
-                                        <i class="icon icon-angle-down"></i>
+                                        <svg class="icon"><use href="#angle-down"/></svg>
                                         <select class="data-show">
                                             <option>5</option>
                                             <option>15</option>
@@ -287,22 +277,22 @@
                             <div class="row row-xs-gap align-l no-fluid block-2nd ui-x-light ease-2nd-btn">
                                 <div class="col-5">
                                     <button class="btn btn-ghost" data-sort="1">
-                                        <i class="icon icon-xs icon-sort"></i> Name
+                                        <svg class="icon"><use href="#sort"/></svg> Name
                                     </button>
                                 </div>
                                 <div class="col-3">
                                     <button class="btn btn-ghost" data-sort="2" data-type="number">
-                                        <i class="icon icon-xs icon-sort"></i> Age
+                                        <svg class="icon"><use href="#sort"/></svg> Age
                                     </button>
                                 </div>
                                 <div class="col-4">
                                     <button class="btn btn-ghost" data-sort="3">
-                                        <i class="icon icon-xs icon-sort"></i> Job
+                                        <svg class="icon"><use href="#sort"/></svg> Job
                                     </button>
                                 </div>
                             </div>
 
-                            <div class="data-container">
+                            <div class="data-container icons-xxs">
 
                                 <div class="data-content no-border" data-val="John Doe|25|Designer">
                                     <div class="row row-no-gap no-fluid">
@@ -314,7 +304,7 @@
                                         </div>
                                         <div class="col-4">
                                             Designer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">6.012</b>
                                         </div>
                                     </div>
@@ -329,7 +319,7 @@
                                         </div>
                                         <div class="col-4">
                                             Designer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">6.012</b>
                                         </div>
                                     </div>
@@ -344,7 +334,7 @@
                                         </div>
                                         <div class="col-4">
                                             Developer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">7.169</b>
                                         </div>
                                     </div>
@@ -359,7 +349,7 @@
                                         </div>
                                         <div class="col-4">
                                             Designer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">6.012</b>
                                         </div>
                                     </div>
@@ -374,7 +364,7 @@
                                         </div>
                                         <div class="col-4">
                                             Designer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">6.012</b>
                                         </div>
                                     </div>
@@ -389,7 +379,7 @@
                                         </div>
                                         <div class="col-4">
                                             Researcher<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">4.466</b>
                                         </div>
                                     </div>
@@ -404,7 +394,7 @@
                                         </div>
                                         <div class="col-4">
                                             Developer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">7.169</b>
                                         </div>
                                     </div>
@@ -419,7 +409,7 @@
                                         </div>
                                         <div class="col-4">
                                             Designer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">6.012</b>
                                         </div>
                                     </div>
@@ -434,7 +424,7 @@
                                         </div>
                                         <div class="col-4">
                                             Developer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">7.169</b>
                                         </div>
                                     </div>
@@ -449,7 +439,7 @@
                                         </div>
                                         <div class="col-4">
                                             Developer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">7.169</b>
                                         </div>
                                     </div>
@@ -464,7 +454,7 @@
                                         </div>
                                         <div class="col-4">
                                             Developer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">7.169</b>
                                         </div>
                                     </div>
@@ -479,7 +469,7 @@
                                         </div>
                                         <div class="col-4">
                                             Researcher<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">4.466</b>
                                         </div>
                                     </div>
@@ -494,7 +484,7 @@
                                         </div>
                                         <div class="col-4">
                                             Researcher<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">4.466</b>
                                         </div>
                                     </div>
@@ -509,7 +499,7 @@
                                         </div>
                                         <div class="col-4">
                                             Developer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">7.169</b>
                                         </div>
                                     </div>
@@ -524,7 +514,7 @@
                                         </div>
                                         <div class="col-4">
                                             Developer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">7.169</b>
                                         </div>
                                     </div>
@@ -539,7 +529,7 @@
                                         </div>
                                         <div class="col-4">
                                             Researcher<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">4.466</b>
                                         </div>
                                     </div>
@@ -554,7 +544,7 @@
                                         </div>
                                         <div class="col-4">
                                             Designer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">6.012</b>
                                         </div>
                                     </div>
@@ -569,7 +559,7 @@
                                         </div>
                                         <div class="col-4">
                                             Researcher<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">4.466</b>
                                         </div>
                                     </div>
@@ -584,7 +574,7 @@
                                         </div>
                                         <div class="col-4">
                                             Developer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">7.169</b>
                                         </div>
                                     </div>
@@ -599,7 +589,7 @@
                                         </div>
                                         <div class="col-4">
                                             Developer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">7.169</b>
                                         </div>
                                     </div>
@@ -614,7 +604,7 @@
                                         </div>
                                         <div class="col-4">
                                             Researcher<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">4.466</b>
                                         </div>
                                     </div>
@@ -629,7 +619,7 @@
                                         </div>
                                         <div class="col-4">
                                             Developer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">7.169</b>
                                         </div>
                                     </div>
@@ -644,7 +634,7 @@
                                         </div>
                                         <div class="col-4">
                                             Developer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">7.169</b>
                                         </div>
                                     </div>
@@ -659,7 +649,7 @@
                                         </div>
                                         <div class="col-4">
                                             Designer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">6.012</b>
                                         </div>
                                     </div>
@@ -674,7 +664,7 @@
                                         </div>
                                         <div class="col-4">
                                             Developer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">7.169</b>
                                         </div>
                                     </div>
@@ -689,7 +679,7 @@
                                         </div>
                                         <div class="col-4">
                                             Developer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">7.169</b>
                                         </div>
                                     </div>
@@ -704,7 +694,7 @@
                                         </div>
                                         <div class="col-4">
                                             Designer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">6.012</b>
                                         </div>
                                     </div>
@@ -719,7 +709,7 @@
                                         </div>
                                         <div class="col-4">
                                             Researcher<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">4.466</b>
                                         </div>
                                     </div>
@@ -734,7 +724,7 @@
                                         </div>
                                         <div class="col-4">
                                             Designer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">6.012</b>
                                         </div>
                                     </div>
@@ -749,7 +739,7 @@
                                         </div>
                                         <div class="col-4">
                                             Developer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">7.169</b>
                                         </div>
                                     </div>
@@ -764,7 +754,7 @@
                                         </div>
                                         <div class="col-4">
                                             Researcher<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">4.466</b>
                                         </div>
                                     </div>
@@ -779,7 +769,7 @@
                                         </div>
                                         <div class="col-4">
                                             Researcher<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">4.466</b>
                                         </div>
                                     </div>
@@ -794,7 +784,7 @@
                                         </div>
                                         <div class="col-4">
                                             Designer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">6.012</b>
                                         </div>
                                     </div>
@@ -809,7 +799,7 @@
                                         </div>
                                         <div class="col-4">
                                             Developer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">7.169</b>
                                         </div>
                                     </div>
@@ -824,7 +814,7 @@
                                         </div>
                                         <div class="col-4">
                                             Developer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">7.169</b>
                                         </div>
                                     </div>
@@ -839,7 +829,7 @@
                                         </div>
                                         <div class="col-4">
                                             Researcher<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">4.466</b>
                                         </div>
                                     </div>
@@ -854,7 +844,7 @@
                                         </div>
                                         <div class="col-4">
                                             Researcher<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">4.466</b>
                                         </div>
                                     </div>
@@ -869,7 +859,7 @@
                                         </div>
                                         <div class="col-4">
                                             Developer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">7.169</b>
                                         </div>
                                     </div>
@@ -884,7 +874,7 @@
                                         </div>
                                         <div class="col-4">
                                             Developer<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">7.169</b>
                                         </div>
                                     </div>
@@ -899,7 +889,7 @@
                                         </div>
                                         <div class="col-4">
                                             Researcher<br>
-                                            <i class="icon icon-xs icon-star font-yellow"></i>
+                                            <svg class="icon font-yellow"><use href="#star-fill"/></svg>
                                             <b class="small dark inline-block">4.466</b>
                                         </div>
                                     </div>
@@ -933,7 +923,7 @@
 <div class="mobile-menu show-l theme-default ease-layout ease-slow ease-in-out ">
     <div class="mobile-menu-title ui-dark">
         <button class="btn btn-square btn-lg btn-ghost round ease-btn close-mobile-menu">
-            <i class="icon icon-sm icon-remove no-opacity"></i>
+            <svg class="icon no-opacity"><use href="#remove"/></svg>
         </button>
         <div class="x-large padding-10">Admin Panel, Menu</div>
     </div>

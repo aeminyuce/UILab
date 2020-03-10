@@ -38,14 +38,14 @@
                             <svg class="icon"><use href="#move"></use></svg>
                         </button>
                         <button type="submit" name="send" class="uploader-upload btn margin-5-l round theme-green ui-dark">
-                            <span class="hidden-xs margin-2-r">Upload</span>
-                            <svg class="icon"><use href="#file-upload"></use></svg>
+                            <span class="hidden-xs margin-2-r">Save</span>
+                            <svg class="icon"><use href="#save"></use></svg>
                         </button>
                     </div>
                 </div>
 
                 <div class="uploader-list">
-                    <i class="icon icon-xxl icon-images-plus"></i>
+                    <svg class="icon icon-xxl"><use href="#images-plus"></use></svg>
                     <ul>
                         <li data-img="img/house_01.jpg" data-id="1" data-tag="Exterior"></li>
                         <li data-img="img/house_02.jpg" data-id="2" data-tag=""></li>

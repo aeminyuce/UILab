@@ -535,7 +535,7 @@
                             <label class="custom">
                                 <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" checked>
-                                        <i class="theme-default2 ui-dark state"></i>
+                                        <i class="state theme-default2 ui-dark"></i>
                                 </span>
                                 Custom Switch with Themes
                             </label>
@@ -1833,21 +1833,21 @@
                         <label class="custom">
                             <span class="check-custom ui-x-light">
                                 <input type="checkbox" checked>
-                                <i class="ui-dark state"></i>
+                                <i class="state ui-dark"></i>
                             </span>
                             <b>Custom Checkbox</b>
                         </label>
                         <label class="custom">
                             <span class="radio-custom ui-x-light">
                                 <input type="radio" checked>
-                                <i class="ui-dark state"></i>
+                                <i class="state ui-dark"></i>
                             </span>
                             <b>Custom Radio</b>
                         </label>
                         <label class="custom">
                             <span class="switch-custom ui-x-light">
                                 <input type="checkbox" checked>
-                                <i class="ui-dark state"></i>
+                                <i class="state ui-dark"></i>
                             </span>
                             <b>Custom Switch</b>
                         </label>
