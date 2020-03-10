@@ -81,7 +81,7 @@
                     <li class="ui-text"><span class="card xx-dark align-r">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
                 </ul>
 
-                <span class="sp30 padding-30-v margin-30-v"></span>
+                <span class="sp30 margin-15-v"></span>
 
                 <h3 class="align-c">All Time</h3>
                 <ul class="timeline hide-h-lines large theme-default2">
@@ -93,7 +93,27 @@
                     <li><span class="card round ui-dark shadow-lg">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
                 </ul>
 
-                <span class="sp30 padding-30-v margin-30-v"></span>
+                <span class="sp30 margin-15-v"></span>
+
+                <h3>Activity</h3>
+                <ul class="timeline side-l large theme-default ui-text">
+                    <li>
+                        <img class="img-photo circle shadow-lg" src="img/profile-image.jpg" alt="">
+                        <span class="card round ui-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque.</span>
+                    </li>
+                    <li>
+                        <span class="img-photo circle shadow-lg theme-orange ui-dark">
+                            <svg class="icon"><use href="#calendar"></use></svg>
+                        </span>
+                        <span class="card round ui-dark">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span>
+                    </li>
+                    <li>
+                        <span class="img-photo circle shadow-lg theme-yellow ui-dark"><span>HY</span></span>
+                        <span class="card round ui-dark">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span>
+                    </li>
+                </ul>
+
+                <span class="sp30 margin-15-v"></span>
 
                 <h3>Activity</h3>
                 <ul class="timeline side-l large">
@@ -105,7 +125,7 @@
                     <li class="theme-green ui-text"><span class="card xx-dark">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
                 </ul>
 
-                <span class="sp30 padding-30-v margin-30-v"></span>
+                <span class="sp30 margin-15-v"></span>
 
                 <h3>Activity</h3>
                 <ul class="timeline side-l hide-h-lines large">
@@ -117,7 +137,7 @@
                     <li class="theme-green ui-text"><span class="card xx-dark">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
                 </ul>
 
-                <span class="sp30 padding-30-v margin-30-v"></span>
+                <span class="sp30 margin-15-v"></span>
 
                 <h3>Activity</h3>
                 <ul class="timeline side-l hide-h-lines large">
@@ -129,7 +149,7 @@
                     <li>Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                 </ul>
 
-                <span class="sp30 padding-30-v margin-30-v"></span>
+                <span class="sp30 margin-15-v"></span>
 
                 <h3>Activity</h3>
                 <ul class="timeline side-l hide-lines large">
