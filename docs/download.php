@@ -1210,26 +1210,6 @@
                                 </label>
                             </div>
 
-                            <h5 class="bold">Themes</h5>
-
-                            <div class="generate-forms margin-20-b block-1st">
-                                <label class="custom margin-5-b opacity ease-opacity">
-                                    <span class="switch-custom round border-dual ease-form">
-                                        <input class="generate-toggle" type="checkbox" checked>
-                                        <i class="state"></i>
-                                    </span>
-                                    <span class="x-dark">Select/Deselect All</span>
-                                </label>
-
-                                <label class="custom">
-                                    <span class="switch-custom round border-dual ease-form">
-                                        <input type="checkbox" name="themes js" value="../js/themes.js" checked>
-                                        <i class="state ui-dark"></i>
-                                    </span>
-                                    Themes
-                                </label>
-                            </div>
-
                         </div>
                     </div>
 

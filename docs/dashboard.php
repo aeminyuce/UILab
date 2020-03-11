@@ -1980,7 +1980,7 @@
                     </div>
                 </div>
                 <div class="col-100 col-xs-50 padding-10-v">
-                    <button class="btn block round-r theme-default2 ui-dark ease-btn" type="submit">
+                    <button class="btn block round-r theme-panel2 ui-dark ease-btn" type="submit">
                         <svg class="icon"><use href="#search"/></svg>
                     </button>
                 </div>

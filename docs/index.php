@@ -116,9 +116,6 @@
     <script src="../js/donut-chart.js"></script>
     <script src="../js/pie-chart.js"></script>
     <script src="../js/svg-map.js"></script>
-
-    <script src="../js/themes.js"></script>
-
 </head>
 
 <body>
