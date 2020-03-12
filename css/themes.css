@@ -325,7 +325,7 @@ a.theme-red .ui-x-dark:not([class*="theme-"]):not(.btn):not(.opacity):not(.opaci
 }
 .theme-default.ui-x-light,
 .theme-default .ui-x-light:not([class*="theme-"]) {
-  background-color: rgba(236, 239, 250, 0.35);
+  background-color: rgba(255, 255, 255, 0.35);
 }
 .theme-default.ui-x-light.hover:hover,
 .theme-default .ui-x-light:not([class*="theme-"]).hover:hover,
@@ -333,11 +333,11 @@ a.theme-red .ui-x-dark:not([class*="theme-"]):not(.btn):not(.opacity):not(.opaci
 .theme-default .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.opacity):not(.opacity-more):not(.btn-ghost):hover,
 a.theme-default.ui-x-light:not(.btn):not(.opacity):not(.opacity-more):hover,
 a.theme-default .ui-x-light:not([class*="theme-"]):not(.btn):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(76, 106, 206, 0.35);
+  background-color: rgba(108, 132, 209, 0.35);
 }
 .theme-default.ui-light,
 .theme-default .ui-light:not([class*="theme-"]) {
-  background-color: rgba(176, 189, 233, 0.35);
+  background-color: rgba(205, 213, 239, 0.35);
 }
 .theme-default.ui-light.hover:hover,
 .theme-default .ui-light:not([class*="theme-"]).hover:hover,
@@ -345,11 +345,11 @@ a.theme-default .ui-x-light:not([class*="theme-"]):not(.btn):not(.opacity):not(.
 .theme-default .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.opacity):not(.opacity-more):not(.btn-ghost):hover,
 a.theme-default.ui-light:not(.btn):not(.opacity):not(.opacity-more):hover,
 a.theme-default .ui-light:not([class*="theme-"]):not(.btn):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(76, 106, 206, 0.35);
+  background-color: rgba(108, 132, 209, 0.35);
 }
 .theme-default.ui-dark,
 .theme-default .ui-dark:not([class*="theme-"]) {
-  background-color: #3250b5;
+  background-color: #4563c5;
 }
 .theme-default.ui-dark.hover:hover,
 .theme-default .ui-dark:not([class*="theme-"]).hover:hover,
@@ -357,11 +357,11 @@ a.theme-default .ui-light:not([class*="theme-"]):not(.btn):not(.opacity):not(.op
 .theme-default .ui-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.opacity):not(.opacity-more):not(.btn-ghost):hover,
 a.theme-default.ui-dark:not(.btn):not(.opacity):not(.opacity-more):hover,
 a.theme-default .ui-dark:not([class*="theme-"]):not(.btn):not(.opacity):not(.opacity-more):hover {
-  background-color: #4c6ace;
+  background-color: #6c84d1;
 }
 .theme-default.ui-x-dark,
 .theme-default .ui-x-dark:not([class*="theme-"]) {
-  background-color: #273e8d;
+  background-color: #334ea4;
 }
 .theme-default.ui-x-dark.hover:hover,
 .theme-default .ui-x-dark:not([class*="theme-"]).hover:hover,
@@ -369,19 +369,19 @@ a.theme-default .ui-dark:not([class*="theme-"]):not(.btn):not(.opacity):not(.opa
 .theme-default .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.opacity):not(.opacity-more):not(.btn-ghost):hover,
 a.theme-default.ui-x-dark:not(.btn):not(.opacity):not(.opacity-more):hover,
 a.theme-default .ui-x-dark:not([class*="theme-"]):not(.btn):not(.opacity):not(.opacity-more):hover {
-  background-color: #3250b5;
+  background-color: #4563c5;
 }
 .theme-default.ui-text,
 .theme-default .ui-text:not([class*="theme-"]) {
-  color: #3250b5;
+  color: #4563c5;
 }
 .theme-default.ui-border,
 .theme-default .ui-border:not([class*="theme-"]) {
-  border-color: #3250b5;
+  border-color: #4563c5;
 }
 .theme-default2.ui-x-light,
 .theme-default2 .ui-x-light:not([class*="theme-"]) {
-  background-color: rgba(216, 238, 255, 0.35);
+  background-color: rgba(255, 255, 255, 0.35);
 }
 .theme-default2.ui-x-light.hover:hover,
 .theme-default2 .ui-x-light:not([class*="theme-"]).hover:hover,
@@ -389,11 +389,11 @@ a.theme-default .ui-x-dark:not([class*="theme-"]):not(.btn):not(.opacity):not(.o
 .theme-default2 .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.opacity):not(.opacity-more):not(.btn-ghost):hover,
 a.theme-default2.ui-x-light:not(.btn):not(.opacity):not(.opacity-more):hover,
 a.theme-default2 .ui-x-light:not([class*="theme-"]):not(.btn):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(12, 149, 255, 0.35);
+  background-color: rgba(64, 165, 242, 0.35);
 }
 .theme-default2.ui-light,
 .theme-default2 .ui-light:not([class*="theme-"]) {
-  background-color: rgba(139, 205, 255, 0.35);
+  background-color: rgba(183, 221, 250, 0.35);
 }
 .theme-default2.ui-light.hover:hover,
 .theme-default2 .ui-light:not([class*="theme-"]).hover:hover,
@@ -401,11 +401,11 @@ a.theme-default2 .ui-x-light:not([class*="theme-"]):not(.btn):not(.opacity):not(
 .theme-default2 .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.opacity):not(.opacity-more):not(.btn-ghost):hover,
 a.theme-default2.ui-light:not(.btn):not(.opacity):not(.opacity-more):hover,
 a.theme-default2 .ui-light:not([class*="theme-"]):not(.btn):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(12, 149, 255, 0.35);
+  background-color: rgba(64, 165, 242, 0.35);
 }
 .theme-default2.ui-dark,
 .theme-default2 .ui-dark:not([class*="theme-"]) {
-  background-color: #007ad8;
+  background-color: #108eef;
 }
 .theme-default2.ui-dark.hover:hover,
 .theme-default2 .ui-dark:not([class*="theme-"]).hover:hover,
@@ -413,11 +413,11 @@ a.theme-default2 .ui-light:not([class*="theme-"]):not(.btn):not(.opacity):not(.o
 .theme-default2 .ui-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.opacity):not(.opacity-more):not(.btn-ghost):hover,
 a.theme-default2.ui-dark:not(.btn):not(.opacity):not(.opacity-more):hover,
 a.theme-default2 .ui-dark:not([class*="theme-"]):not(.btn):not(.opacity):not(.opacity-more):hover {
-  background-color: #0c95ff;
+  background-color: #40a5f2;
 }
 .theme-default2.ui-x-dark,
 .theme-default2 .ui-x-dark:not([class*="theme-"]) {
-  background-color: #005da5;
+  background-color: #0d72bf;
 }
 .theme-default2.ui-x-dark.hover:hover,
 .theme-default2 .ui-x-dark:not([class*="theme-"]).hover:hover,
@@ -425,13 +425,13 @@ a.theme-default2 .ui-dark:not([class*="theme-"]):not(.btn):not(.opacity):not(.op
 .theme-default2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.opacity):not(.opacity-more):not(.btn-ghost):hover,
 a.theme-default2.ui-x-dark:not(.btn):not(.opacity):not(.opacity-more):hover,
 a.theme-default2 .ui-x-dark:not([class*="theme-"]):not(.btn):not(.opacity):not(.opacity-more):hover {
-  background-color: #007ad8;
+  background-color: #108eef;
 }
 .theme-default2.ui-text,
 .theme-default2 .ui-text:not([class*="theme-"]) {
-  color: #007ad8;
+  color: #108eef;
 }
 .theme-default2.ui-border,
 .theme-default2 .ui-border:not([class*="theme-"]) {
-  border-color: #007ad8;
+  border-color: #108eef;
 }
