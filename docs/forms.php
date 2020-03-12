@@ -173,7 +173,7 @@
                             </div>
                         </div>
                         <div class="col-9 offset-3">
-                            <button type="reset" class="btn btn-xs-fluid round">Reset Form</button>
+                            <button type="reset" class="btn btn-xs-fluid round ease-btn">Reset Form</button>
                         </div>
                         <div class="col-6">
                             <label class="form-label">Full Name</label>

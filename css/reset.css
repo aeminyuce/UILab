@@ -1,12 +1,16 @@
 /* reset */
 *,
-:before,
-:after {
+*:before,
+*:after {
   box-sizing: border-box;
 }
-:not(ul):not(ol) {
+*:not(ul):not(ol) {
   padding: 0;
   margin: 0;
+}
+*:focus {
+  outline-style: none;
+  outline: 0;
 }
 body,
 input,
@@ -18,8 +22,10 @@ select {
 body {
   background-color: #f9f9f9;
 }
-.ios {
-  -webkit-text-size-adjust: 100%;
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #15181d !important;
+  }
 }
 article,
 aside,
@@ -34,13 +40,8 @@ section,
 summary,
 audio,
 canvas,
-video,
-svg {
+video {
   display: block;
-}
-:focus {
-  outline-style: none;
-  outline: 0;
 }
 a,
 a:active,
@@ -48,20 +49,8 @@ a:hover {
   word-wrap: break-word;
   text-decoration: none;
 }
-.mobile * {
-  -webkit-tap-highlight-color: transparent;
-}
 label {
   cursor: default;
-}
-input::-moz-focus-inner,
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-input:-webkit-autofill {
-  transition-delay: 9999s;
-  transition: color 0s ease-out, background-color 9999s ease-out;
 }
 textarea {
   vertical-align: top;
@@ -73,7 +62,6 @@ textarea:not([rows]) {
   height: 3em;
 }
 button {
-  color: inherit;
   text-align: inherit;
   text-transform: none;
   background-color: transparent;
@@ -137,17 +125,37 @@ hr {
   margin-bottom: 20px !important;
   border: 0;
 }
+@media (prefers-color-scheme: dark) {
+  hr {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+  }
+}
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
+p,
 p:not(:last-child):not(.hint) {
   margin-bottom: 20px;
 }
 [hidden] {
   display: none;
 }
+.mobile * {
+  -webkit-tap-highlight-color: transparent;
+}
+.ios {
+  -webkit-text-size-adjust: 100%;
+}
+.firefox input::-moz-focus-inner,
+.firefox button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+.chrome input:-webkit-autofill {
+  transition-delay: 9999s;
+  transition: color 0s ease-out, background-color 9999s ease-out;
+}
 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
-  /* chrome retina display fix */
   .mac.chrome body {
     backface-visibility: hidden;
     perspective: 1000;

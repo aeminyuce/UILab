@@ -1,20 +1,20 @@
-// Variables
-// ======================
-
-// Global
+// global
 @global-font-family:                    "Roboto", "Helvetica Neue", Arial, sans-serif;
 @global-font-size:                      14px;
 @global-line-height:                    1.42857143;
 
-// Body
-@body-bg-color:                         #f9f9f9;
+@dark-mode:                             true;
 
-// Colors
+// body
+@body-bg-color:                         #f9f9f9;
+@body-bg-color-dark:                    #15181d;
+
+// colors
 @no-color:                              transparent;
 @black:                                 #000;
 @white:                                 #fff;
 
-// Theme only colors
+// theme only colors
 @gray:                                  #ccc;
 @green:                                 #2dbd3a;
 @yellow:                                #ffa600;
@@ -23,9 +23,24 @@
 @default:                               #4563c5;
 @default2:                              #108eef;
 
-// Mixin
-// ======================
-
-.no-appearance () { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+// color mixins
+.color (@color: #fff) { color: @color; }
 .bg (@color: transparent) { background-color: @color; }
-.inline-block () { vertical-align: middle; display: inline-block; }
+
+.dark-color (@selector; @color: #fff) when (@dark-mode = true) {
+    @media (prefers-color-scheme: dark) { @{selector} { color: @color !important; } }
+}
+.dark-bg (@selector; @color: transparent) when (@dark-mode = true) {
+    @media (prefers-color-scheme: dark) { @{selector} { background-color: @color !important; } }
+}
+.dark-border (@selector; @color: transparent) when (@dark-mode = true) {
+    @media (prefers-color-scheme: dark) { @{selector} { border-color: @color !important; } }
+}
+
+// shorthand mixins
+._block () { width: 100%; display: block; }
+._inline () { display: inline; }
+._inline-block () { vertical-align: middle; display: inline-block; }
+
+._automargin () { margin-right: auto; margin-left: auto; display: block; }
+._no-appearance () { -webkit-appearance: none; -moz-appearance: none; appearance: none; }

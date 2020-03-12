@@ -1,28 +1,8 @@
 /* darkmode */
-@media (prefers-color-scheme: light) {
-  .hidden-light {
-    display: none !important;
-  }
-  .visible-dark {
-    display: none !important;
-  }
-}
 @media (prefers-color-scheme: dark) {
   body,
   a {
     color: #fff;
-  }
-  body {
-    background-color: #15181d !important;
-  }
-  hr {
-    background-color: rgba(255, 255, 255, 0.15);
-  }
-  .hidden-dark {
-    display: none !important;
-  }
-  .visible-light {
-    display: none !important;
   }
   .bg-white:not([class*="ui-"]) {
     background-color: #0f1115 !important;
@@ -76,7 +56,7 @@
     background-color: #41454d;
   }
   .select-multi option:not(:last-child) {
-    border-bottom-color: rgba(255, 255, 255, 0.045);
+    border-color: rgba(255, 255, 255, 0.045);
   }
   html:not(.mobile) .file:hover .btn {
     background-color: rgba(255, 255, 255, 0.15);
@@ -107,7 +87,6 @@
   }
   .form-focus:not(.form-readonly) {
     background-color: rgba(255, 255, 255, 0.075) !important;
-    box-shadow: none;
   }
   .form-focus > input,
   .form-focus > select,
@@ -170,7 +149,7 @@
     color: #fff;
   }
   .dropdown ul.content > li:not(:last-child) {
-    border-bottom: solid 1px rgba(255, 255, 255, 0.065);
+    border-color: rgba(255, 255, 255, 0.065);
   }
   .dropdown.open > .btn-ghost:not([class*="ui-"]) {
     background-color: rgba(255, 255, 255, 0.075) !important;
@@ -186,7 +165,7 @@
   }
   .dropdown ul.content.has-grid li,
   .dropdown [class*="list-column-"] > li {
-    border-right-color: rgba(255, 255, 255, 0.065);
+    border-color: rgba(255, 255, 255, 0.065);
   }
   .card,
   [class*="card-"]:not(.card-side) {
@@ -307,7 +286,7 @@
   }
   .table:not(.no-separated) th,
   .table:not(.no-separated) td {
-    border-bottom-color: #41454d;
+    border-color: #41454d;
   }
   .table caption {
     background-color: rgba(255, 255, 255, 0.025);
@@ -319,11 +298,10 @@
     background-color: rgba(255, 255, 255, 0.06);
   }
   .table-sidebar td:first-of-type {
-    border-right-color: #41454d;
+    border-color: #41454d;
   }
   .table-sidebar-center td:nth-child(2) {
-    border-right-color: #41454d;
-    border-left-color: #41454d;
+    border-color: #41454d;
   }
   .table.border,
   .table .border,
@@ -333,7 +311,7 @@
   }
   .table-border th:not(:last-child),
   .table-border td:not(:last-child) {
-    border-right-color: #41454d;
+    border-color: #41454d;
   }
   html:not(.mobile) ::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.15);
@@ -385,7 +363,7 @@
     background-color: rgba(255, 255, 255, 0.025);
   }
   .data-list .data-content:not([class*="col-"]) {
-    border-bottom-color: #41454d;
+    border-color: #41454d;
   }
   html:not(.mobile) .data-hover .data-content:not([class*="ui-"]):hover {
     background-color: rgba(255, 255, 255, 0.06);

@@ -1,4 +1,21 @@
 /* helpers */
+.block,
+.block-1st > *:not(.row),
+.block-2nd > * > *:not(.row) {
+  width: 100% !important;
+  display: block !important;
+}
+.inline,
+.inline-1st > *:not(.row),
+.inline-2nd > * > *:not(.row) {
+  display: inline !important;
+}
+.inline-block,
+.inline-block-1st > *:not(.row),
+.inline-block-2nd > * > *:not(.row) {
+  vertical-align: middle !important;
+  display: inline-block !important;
+}
 .automargin {
   margin-right: auto;
   margin-left: auto;
@@ -24,32 +41,20 @@
 .full-h {
   height: 100% !important;
 }
+.img-fluid {
+  width: 100% !important;
+  height: auto !important;
+}
 .no-user-select {
   -ms-user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
 }
-.img-fluid {
-  width: 100% !important;
-  height: auto !important;
-}
-.block,
-.block-1st > *:not(.row),
-.block-2nd > * > *:not(.row) {
-  width: 100%;
-  display: block !important;
-}
-.inline,
-.inline-1st > *:not(.row),
-.inline-2nd > * > *:not(.row) {
-  display: inline !important;
-}
-.inline-block,
-.inline-block-1st > *:not(.row):not(.icon):not(.btn):not(img),
-.inline-block-2nd > * > *:not(.row):not(.icon):not(.btn):not(img) {
-  vertical-align: middle !important;
-  display: inline-block !important;
+.no-appearance {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .highlight {
   display: block;
@@ -316,8 +321,6 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
 .list-inline li {
   vertical-align: middle;
   display: inline-block;
-  vertical-align: middle !important;
-  display: inline-block !important;
 }
 .sp1,
 .sp2,
@@ -616,5 +619,21 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
   .xl-align-r,
   .xl-align-r * {
     text-align: right !important;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .hidden-light {
+    display: none !important;
+  }
+  .visible-dark {
+    display: none !important;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .hidden-dark {
+    display: none !important;
+  }
+  .visible-light {
+    display: none !important;
   }
 }
