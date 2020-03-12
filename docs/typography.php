@@ -361,6 +361,13 @@
                     </blockquote>
                 </div>
 
+                <h4>hr Tag</h4>
+                <div class="padding-30-b">
+                    Lorem ipsum dolor sit amet.
+                    <hr>
+                    Lorem ipsum dolor sit amet.
+                </div>
+
                 <h4>Inline Code</h4>
                 <div class="padding-30-b">
                     For example, <code>&lt;section&gt;</code> should be wrapped as inline.
