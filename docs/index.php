@@ -18,61 +18,7 @@
     <!--[if lt IE 10]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
 
     <!-- import CSS -->
-    <link rel="stylesheet" href="../css/reset.css"/>
-    <link rel="stylesheet" href="../css/helpers.css"/>
-    <link rel="stylesheet" href="../css/grid.css"/>
-    <link rel="stylesheet" href="../css/borders.css"/>
-    <link rel="stylesheet" href="../css/paddings.css"/>
-    <link rel="stylesheet" href="../css/margins.css"/>
-
-    <link rel="stylesheet" href="../css/effects.css"/>
-
-    <link rel="stylesheet" href="../css/typography.css"/>
-    <link rel="stylesheet" href="../css/listings.css"/>
-
-    <link rel="stylesheet" href="../css/buttons.css"/>
-    <link rel="stylesheet" href="../css/top-button.css"/>
-    <link rel="stylesheet" href="../css/tabs.css"/>
-    <link rel="stylesheet" href="../css/dropdown.css"/>
-
-    <link rel="stylesheet" href="../css/forms.css"/>
-    <link rel="stylesheet" href="../css/textarea-counter.css"/>
-    <link rel="stylesheet" href="../css/autocomplete.css"/>
-
-    <link rel="stylesheet" href="../css/icons.css"/>
-
-    <link rel="stylesheet" href="../css/list-group.css"/>
-    <link rel="stylesheet" href="../css/card.css"/>
-    <link rel="stylesheet" href="../css/tables.css"/>
-    <link rel="stylesheet" href="../css/breadcrumbs.css"/>
-    <link rel="stylesheet" href="../css/page-social.css"/>
-    <link rel="stylesheet" href="../css/photo-images.css"/>
-    <link rel="stylesheet" href="../css/progress-bar.css"/>
-    <link rel="stylesheet" href="../css/scrollbar.css"/>
-    <link rel="stylesheet" href="../css/steps.css"/>
-    <link rel="stylesheet" href="../css/sticky-header.css"/>
-    <link rel="stylesheet" href="../css/stripes.css"/>
-    <link rel="stylesheet" href="../css/timeline.css"/>
-
-    <link rel="stylesheet" href="../css/line-charts.css"/>
-    <link rel="stylesheet" href="../css/donut-chart.css"/>
-    <link rel="stylesheet" href="../css/pie-chart.css"/>
-    <link rel="stylesheet" href="../css/svg-map.css"/>
-
-    <link rel="stylesheet" href="../css/mobile-menu.css"/>
-    <link rel="stylesheet" href="../css/modal.css"/>
-    <link rel="stylesheet" href="../css/tooltip.css"/>
-    <link rel="stylesheet" href="../css/alerts.css"/>
-    <link rel="stylesheet" href="../css/calendar.css"/>
-    <link rel="stylesheet" href="../css/carousel.css"/>
-    <link rel="stylesheet" href="../css/data-list.css"/>
-    <link rel="stylesheet" href="../css/image-uploader.css"/>
-    <link rel="stylesheet" href="../css/photo-gallery.css"/>
-    <link rel="stylesheet" href="../css/photo-slider.css"/>
-    <link rel="stylesheet" href="../css/weather.css"/>
-
-    <link rel="stylesheet" href="../css/themes.css"/>
-    <link rel="stylesheet" href="../css/darkmode.css"/>
+    <link rel="stylesheet" href="../css/_import.css"/>
 
     <!-- import JS -->
     <script src="../js/selector.js"></script>

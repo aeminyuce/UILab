@@ -1,0 +1,20 @@
+/* data list */
+@import '_settings.less';
+
+.ease-data-list .data-content { transition-property: background-color; transition-duration: .15s; }
+
+.data-list .data-content:not([class*="col-"]) { padding: 10px; border-bottom: solid 1px #ddd; }
+.data-list .data-content:before,.data-list .data-content:after { content: ""; display: table; }
+.data-list .data-content:after { clear: both; }
+.data-list .data-content.even { background-color: rgba(0,0,0,.025); }
+.data-list .data-content.checked { background-color: rgba(255,166,0,.1) !important; }
+
+.data-list:not(.data-show-all) .data-content:not(.show) { display: none; }
+.data-list.data-filtered.data-show-all .data-content:not(.filtered) { display: none; }
+
+html:not(.mobile) .data-hover .data-content:not([class*="ui-"]):hover { background-color: rgba(0,0,0,.06); }
+html:not(.mobile) .data-hover .data-content:not([class*="ui-"]):nth-child(odd):hover { background-color: rgba(0,0,0,.06); }
+.data-hover .data-content.even:not([class*="ui-"]) { background-color: rgba(0,0,0,.025); }
+
+.data-list > .row,.data-list .data-content > .row { margin-left: inherit; margin-right: inherit; }
+.data-list .data-paging button:not(.btn) { color: inherit; background-color: transparent; border: 0; }

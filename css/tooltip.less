@@ -1,0 +1,38 @@
+/* tooltip*/
+@import '_settings.less';
+
+.ease-tooltip { transition-property: top, left, opacity; }
+
+[data-tooltip] { display: inline-block; }
+
+.tooltip { min-width: 36px; max-width: 680px; position: absolute; z-index: 99; }
+.tooltip:not([class*="ui-"]) { color: #fff; background-color: #181818; }
+.tooltip:not(.open) { display: none; }
+.tooltip:not(.open-ease) { opacity: 0; }
+
+.tooltip-content { line-height: 1.2em; min-height: 18px; padding: 5px 8px; position: relative; z-index: 3; }
+
+.tooltip[data-pos="t"] .tooltip-content,.tooltip[data-pos="b"] .tooltip-content { text-align: center; }
+.tooltip[data-pos="l"] .tooltip-content,.tooltip[data-pos="tl"] .tooltip-content,.tooltip[data-pos="bl"] .tooltip-content { text-align: right; }
+
+.tooltip > span { display: block; position: absolute; transform: rotate(45deg); }
+
+.tooltip[data-pos="t"] > span { top: 100%; left: 50%; }
+.tooltip[data-pos="b"] > span { bottom: 100%; left: 50%; }
+.tooltip[data-pos="r"] > span { right: 100%; top: 50%; }
+.tooltip[data-pos="l"] > span { left: 100%; top: 50%; }
+
+.tooltip[data-pos="tr"] > span { top: 100%; left: 20px; }
+.tooltip[data-pos="tl"] > span { top: 100%; right: 20px; }
+.tooltip[data-pos="br"] > span { bottom: 100%; left: 20px; }
+.tooltip[data-pos="bl"] > span { bottom: 100%; right: 20px; }
+
+.tooltip > span i { box-sizing: content-box; width: 10px; height: 10px; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+.tooltip > span .bg { z-index: 1; }
+.tooltip > span i + i { z-index: 2; }
+.tooltip:not([class*="ui-"]) > span i { background: #181818; }
+
+.tooltip[data-pos="t"] > span .bg,.tooltip[data-pos="tr"] > span .bg,.tooltip[data-pos="tl"] > span .bg { border-top-color: transparent; border-left-color: transparent; }
+.tooltip[data-pos="b"] > span .bg,.tooltip[data-pos="br"] > span .bg,.tooltip[data-pos="bl"] > span .bg { border-bottom-color: transparent; border-right-color: transparent; }
+.tooltip[data-pos="r"] > span .bg { border-top-color: transparent; border-right-color: transparent; }
+.tooltip[data-pos="l"] > span .bg { border-bottom-color: transparent; border-left-color: transparent; }

@@ -1,0 +1,47 @@
+/* icons */
+@import '_settings.less';
+
+.icon { width: 20px; height: 20px; .inline-block(); fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 24px; }
+
+.svg-f { fill: currentColor !important; } /* fill */
+.svg-l { fill: none !important; } /* line */
+.svg-sd { fill: currentColor !important; stroke: none !important; } /* solid */
+
+.svg-s { opacity: .45; } /* sub */
+.svg-fr { fill-rule: evenodd; } /* fill-rule */
+
+.icon-xxs,.icons-xxs .icon { width: 12px !important; height: 12px !important; }
+.icon-xs,.icons-xs .icon { width: 14px !important; height: 14px !important; }
+.icon-sm,.icons-sm .icon { width: 18px !important; height: 18px !important; }
+.icon-lg,.icons-lg .icon { width: 26px !important; height: 26px !important; }
+.icon-xl,.icons-xl .icon { width: 34px !important; height: 34px !important; }
+.icon-xxl,.icons-xxl .icon { width: 50px !important; height: 50px !important; }
+
+.icon-xxl,.icons-xxl .icon:not([class*="icon-"]) { stroke-width: 12px !important; }
+.icon-xl,.icons-xl .icon:not([class*="icon-"]) { stroke-width: 18px !important; }
+.icon-lg,.icons-lg .icon:not([class*="icon-"]) { stroke-width: 24px !important; }
+.icon-sm,.icons-sm .icon:not([class*="icon-"]) { stroke-width: 32px !important; }
+.icon-xs,.icons-xs .icon:not([class*="icon-"]) { stroke-width: 38px !important; }
+.icon-xxs,.icons-xxs .icon:not([class*="icon-"]) { stroke-width: 44px !important; }
+
+.icon-thin,.icons-thin .icon:not([class*="icon-"]) { stroke-width: 12px !important; }
+.icon-light,.icons-light .icon:not([class*="icon-"]) { stroke-width: 18px !important; }
+.icon-default,.icons-default .icon:not([class*="icon-"]) { stroke-width: 24px !important; }
+.icon-semibold,.icons-semibold .icon:not([class*="icon-"]) { stroke-width: 32px !important; }
+.icon-bold,.icons-bold .icon:not([class*="icon-"]) { stroke-width: 38px !important; }
+.icon-black,.icons-black .icon:not([class*="icon-"]){ stroke-width: 44px !important; }
+
+.icon-mirror-v { transform: scaleY(-1); }
+.icon-mirror-h { transform: scaleX(-1); }
+
+.icons-no-opacity .icon:not(.default-icon) { opacity: 1 !important; }
+
+.icons-margin-5-l .icon { margin-left: 5px !important; }
+.icons-margin-5-r .icon { margin-right: 5px !important; }
+.icons-margin-5-v .icon { margin-top: 5px !important; margin-bottom: 5px !important; }
+.icons-margin-5-h .icon { margin-right: 5px !important; margin-left: 5px !important; }
+
+.icons-margin-10-l .icon { margin-left: 10px !important; }
+.icons-margin-10-r .icon { margin-right: 10px !important; }
+.icons-margin-10-v .icon { margin-top: 10px !important; margin-bottom: 10px !important; }
+.icons-margin-10-h .icon { margin-right: 10px !important; margin-left: 10px !important; }

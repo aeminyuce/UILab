@@ -1,20 +1,70 @@
 /* mobile menu */
-.mobile-menu-opened,.mobile-menu-opened > body { overflow: hidden; }
-
-.mobile-menu-bg { width: 100%; min-width: 320px; height: 100%; background-color: rgba(0,0,0,.65); position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 89; }
-.mobile-menu-bg:not(.open) { display: none; }
-.mobile-menu-bg:not(.open-ease) { opacity: 0; }
-
-.mobile-menu { width: 100%; width: 320px; background-color: #f9f9f9; position: fixed; top: 0; bottom: 0; z-index: 90; box-shadow: 0 5px 15px rgba(0,0,0,.15); }
-
-.mobile-menu.show-r { right: 0; transform: translateX(100%); }
-.mobile-menu.show-l { left: 0; transform: translateX(-100%); }
-
-.mobile-menu:not(.open) { display: none; }
-.mobile-menu.open-ease { transform: translateX(0); }
-
-.close-mobile-menu { position: fixed; top: 10px; right: 10px; z-index: 10; }
-
-.mobile-menu-title { height: 66px; padding: 10px 60px 10px 10px; position: relative; z-index: 1; }
-.mobile-menu-content { padding: 10px; position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
-.mobile-menu-title + .mobile-menu-content { top: 66px; }
+.mobile-menu-opened,
+.mobile-menu-opened > body {
+  overflow: hidden;
+}
+.mobile-menu-bg {
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 89;
+}
+.mobile-menu-bg:not(.open) {
+  display: none;
+}
+.mobile-menu-bg:not(.open-ease) {
+  opacity: 0;
+}
+.mobile-menu {
+  width: 100%;
+  width: 320px;
+  background-color: #f9f9f9;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 90;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+.mobile-menu.show-r {
+  right: 0;
+  transform: translateX(100%);
+}
+.mobile-menu.show-l {
+  left: 0;
+  transform: translateX(-100%);
+}
+.mobile-menu:not(.open) {
+  display: none;
+}
+.mobile-menu.open-ease {
+  transform: translateX(0);
+}
+.close-mobile-menu {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+}
+.mobile-menu-title {
+  height: 66px;
+  padding: 10px 60px 10px 10px;
+  position: relative;
+  z-index: 1;
+}
+.mobile-menu-content {
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.mobile-menu-title + .mobile-menu-content {
+  top: 66px;
+}

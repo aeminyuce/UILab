@@ -1,0 +1,8 @@
+/* sticky header */
+@import '_settings.less';
+
+.sticky-header .hidden-sticky,html:not(.sticky-header) .visible-sticky { display: none; }
+
+header.sticky,header.sticky-static { top: 0; right: 0; left: 0; z-index: 89; }
+header.sticky-static { position: absolute; }
+header.sticky { position: fixed; }

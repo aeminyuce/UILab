@@ -1,12 +1,33 @@
 /* tabs */
-.ease-tabs .toggle-icon { transition-property: opacity, transform; transition-duration: .3s; }
-.ease-tabs .tab-content { transition-property: opacity, transform; transition-duration: .15s; }
-
-.tabs .tab .toggle-icon { width: 14px !important; height: 14px !important; margin-top: -2px; stroke-width: 38px !important; }
-.tabs .tab .toggle-icon.right { margin-top: 4px; margin-bottom: 4px; }
-.tabs .tab.active > .toggle-icon { transform: rotate(-180deg); opacity: 1; }
-
-.tabs .tab-content { transform-origin: top center; }
-.tabs .tab-content:not(.open) { display: none !important; }
-.tabs .tab-content:not(.open-ease) { opacity: 0; transform: translateY(-1%); }
-
+.ease-tabs .toggle-icon {
+  transition-property: opacity, transform;
+  transition-duration: 0.3s;
+}
+.ease-tabs .tab-content {
+  transition-property: opacity, transform;
+  transition-duration: 0.15s;
+}
+.tabs .tab .toggle-icon {
+  width: 14px !important;
+  height: 14px !important;
+  margin-top: -2px;
+  stroke-width: 38px !important;
+}
+.tabs .tab .toggle-icon.right {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.tabs .tab.active > .toggle-icon {
+  transform: rotate(-180deg);
+  opacity: 1;
+}
+.tabs .tab-content {
+  transform-origin: top center;
+}
+.tabs .tab-content:not(.open) {
+  display: none !important;
+}
+.tabs .tab-content:not(.open-ease) {
+  opacity: 0;
+  transform: translateY(-1%);
+}

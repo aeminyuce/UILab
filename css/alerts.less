@@ -1,0 +1,63 @@
+/* alerts */
+@import '_settings.less';
+
+.alerts-opened,.alerts-opened > body { overflow: hidden; }
+
+.alerts-bg { width: 100%; min-width: 320px; height: 100%; background-color: rgba(0,0,0,.65); position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 97; }
+.alerts-bg:not(.open) { display: none; }
+.alerts-bg:not(.open-ease) { opacity: 0; }
+
+.alerts-dialog { min-width: 280px; max-width: 680px; background-color: #fff; min-height: 60px; position: fixed; top: 50%; left: 50%; z-index: 98; transform: translate(-50%,-50%); }
+.alerts-dialog:not(.show) { display: none; }
+.alerts-dialog:not(.show-ease) { opacity: 0; transform: translate(-50%,-50%) scale(.8); }
+
+.dialog-msg { text-align: center; font-size: 16px; }
+
+.dialog-buttons { text-align: right; background-color: rgba(0,0,0,.05); padding: 10px 10px 5px 10px; }
+.alerts-dialog.round .dialog-buttons { border-radius: 0 0 6px 6px; }
+.dialog-buttons button { font-weight: bold; text-align: center; line-height: 20px; min-width: 68px; height: 32px; padding: 6px 12px; margin-bottom: 5px; .inline-block(); border: 0; }
+.alerts-dialog.round button { border-radius: 6px; }
+.dialog-buttons button:not(:last-child) { margin-right: 5px; }
+
+button.dialog-error,button.dialog-success { color: #fff !important; }
+
+button.dialog-error { background-color: #dc000f; }
+button.dialog-error:focus { box-shadow: 0 0 0 2px rgba(220,0,15,.35); }
+html:not(.mobile) button.dialog-error:hover { background-color: #e43944; }
+
+button.dialog-success { background-color: #2dbd3a; }
+button.dialog-success:focus { box-shadow: 0 0 0 2px rgba(45,189,58,.35); }
+html:not(.mobile) button.dialog-success:hover { background-color: #5ccc66; }
+
+button.dialog-custom { background-color: rgba(0,0,0,.08); }
+button.dialog-custom:focus { box-shadow: 0 0 0 2px rgba(0,0,0,.2); }
+html:not(.mobile) button.dialog-custom:hover { background-color: rgba(0,0,0,.15); }
+
+.alerts-msg { text-align: center; width: 280px; min-height: 30px; padding: 10px; position: fixed; z-index: 99; cursor: pointer; }
+html:not(.mobile) .alerts-msg:hover { opacity: .9; }
+.alerts-msg:not(.show) { display: none; }
+.alerts-msg:not(.show-ease) { opacity: 0; }
+
+.alerts-msg:not([class*="ui-"]) { color: #fff; background-color: #181818; }
+.alerts-msg.msg-success { background-color: #2dbd3a !important; }
+.alerts-msg.msg-warning { background-color: #ffa600 !important; }
+.alerts-msg.msg-danger { background-color: #dc000f !important; }
+
+.alerts-msg.tr { top: 20px; right: 20px; }
+.alerts-msg.tl { top: 20px; left: 20px; }
+.alerts-msg.br { bottom: 20px; right: 20px; }
+.alerts-msg.bl { bottom: 20px; left: 20px; }
+
+.alerts-msg.tr:not(.show-ease),.alerts-msg.tl:not(.show-ease) { transform: translateY(-40px); }
+.alerts-msg.br:not(.show-ease),.alerts-msg.bl:not(.show-ease) { transform: translateY(40px); }
+
+.close-alert { color: currentColor; line-height: 0; background: transparent; padding: 5px; border: 0; position: absolute; top: 5px; right: 5px; z-index: 1; opacity: .45; cursor: pointer; }
+.close-alert .icon { width: 12px; height: 12px; stroke-width: 44px; }
+html:not(.mobile) .close-alert:hover { opacity: .75; }
+
+@media (min-width: 768px) {
+    .dialog-msg { padding: 30px; }
+}
+@media (max-width: 767px) {
+    .dialog-msg { padding: 30px 10px; }
+}

@@ -1,10 +1,28 @@
 /* breadcrumbs */
-.breadcrumbs:not(:last-child) { margin-bottom: 10px; }
-.breadcrumbs:not(.no-separated) > ul > li:not(:first-child):before { content: "\203A"; color: rgba(0,0,0,.25); font-size: 18px; line-height: normal; margin: 0 8px 0 3px; display: inline-block; }
-.breadcrumbs > ul > li:not(:last-child) { margin-right: 5px; }
-.breadcrumbs > ul > li > a,.breadcrumbs > ul > li > b { display: inline-block; }
-
+.breadcrumbs:not(:last-child) {
+  margin-bottom: 10px;
+}
+.breadcrumbs:not(.no-separated) > ul > li:not(:first-child):before {
+  content: "\203A";
+  color: rgba(0, 0, 0, 0.25);
+  font-size: 18px;
+  line-height: normal;
+  margin: 0 8px 0 3px;
+  display: inline-block;
+}
+.breadcrumbs > ul > li:not(:last-child) {
+  margin-right: 5px;
+}
+.breadcrumbs > ul > li > a,
+.breadcrumbs > ul > li > b {
+  display: inline-block;
+}
 @media (max-width: 480px) {
-    .breadcrumbs { text-align: center; margin-top: 5px; }
-    .breadcrumbs > ul > li { margin-bottom: 5px; }
+  .breadcrumbs {
+    text-align: center;
+    margin-top: 5px;
+  }
+  .breadcrumbs > ul > li {
+    margin-bottom: 5px;
+  }
 }

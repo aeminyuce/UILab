@@ -1,0 +1,70 @@
+/* image uploader */
+@import '_settings.less';
+
+@keyframes uploader-loader { from { background-position: 40px 0; } to { background-position: 0 0; } }
+
+.ease-image-uploader { transition-property: background-color; transition-duration: .15s; }
+.ease-image-uploader .uploader-tools,.ease-image-uploader .uploader-list ul > li { transition-property: opacity; transition-duration: .3s; }
+.ease-image-uploader .uploader-list { transition-property: margin; transition-duration: .15s; }
+.ease-image-uploader .uploader-list > .icon { transition-property: opacity; transition-duration: .15s; }
+.ease-image-uploader .uploader-list ul > li img { transition-property: transform, box-shadow; transition-duration: .15s; }
+
+.image-uploader { background-color: #fff; overflow: hidden; position: relative; }
+.image-uploader.drop-highlight { background-color: #f5f5f5; }
+
+.uploader-panel { text-align: right; min-height: 52px; padding: 15px; }
+
+.uploader-panel > .row { margin-left: 0; margin-right: 0; }
+.uploader-panel h3,.uploader-panel h4,.uploader-panel h5,.uploader-panel h6 { font-size: 18px; line-height: 32px; margin: 7px 0; float: left; }
+
+.image-uploader.loading .file,.image-uploader.uploading .uploader-upload { background-image: linear-gradient(45deg, transparent 25%, rgba(255,255,255,.25) 25%, rgba(255,255,255,.25) 50%, transparent 50%, transparent 75%, rgba(255,255,255,.25) 75%); background-size: 20px 20px; animation: uploader-loader 1s linear infinite; }
+
+.image-uploader .file { display: inline-block; }
+.image-uploader .file .btn b { font-weight: normal; }
+
+.uploader-tools { min-height: 52px; background-color: rgba(0,0,0,.035); padding: 15px; }
+.uploader-tools:not(.open) { display: none; }
+.uploader-tools:not(.open-ease) { opacity: 0; }
+.drop-highlight .uploader-tools { opacity: .15; }
+
+.uploader-list { min-height: 220px; position: relative; }
+.uploader-list:not(.open),.drop-highlight .uploader-list { background-color: rgba(255,255,255,.45); margin: 0 15px 15px 15px; border: dashed 2px rgba(0,0,0,.15); border-radius: 6px; }
+
+.uploader-list > .icon { position: absolute; top: 50%; left: 50%; z-index: 1; opacity: .15; transform: translate(-50%, -50%); }
+.uploader-list.open > .icon { display: none; }
+.drop-highlight .uploader-list > .icon { display: block; opacity: .45; }
+
+.uploader-list ul { list-style: none; padding: 10px; margin-bottom: 0; display: block; display: flex; flex-wrap: wrap; }
+.uploader-list ul > li { padding: 5px; }
+.uploader-list:not(.open) ul > li { display: none; }
+.drop-highlight .uploader-list ul > li { opacity: .15; }
+.uploader-list ul > li.open-ease { opacity: 0; }
+.uploader-list ul > li .img { display: block; clear: both; position: relative; }
+.uploader-list ul > li .img img { width: auto; max-width: 100%; height: auto; max-height: 100%; position: absolute; top: 50%; left: 50%; box-shadow: 0 1px 6px rgba(0,0,0,.25); transform: translate(-50%,-50%); }
+html:not(.mobile) .uploader-list ul > li .img img:hover { transform: translate(-50%,-50%) scale(1.05); box-shadow: 0 5px 15px rgba(0,0,0,.2); cursor: pointer; }
+.uploader-list ul > li .img:not(:first-child) { margin-top: 10px; }
+.uploader-list ul > li .img:not(:last-child) { margin-bottom: 10px; }
+
+.uploader-list ul > li .name { white-space: nowrap; text-overflow: ellipsis; line-height: 22px; min-height: 22px; overflow: hidden; display: block; }
+.uploader-list ul > li .info,.uploader-list ul > li .tag { .inline-block(); }
+.uploader-list ul > li .info { color: #7d7d7d; padding: 1px 6px 1px 0; }
+.uploader-list ul > li .tag { color: #666; font-size: 13px; white-space: nowrap; padding: 1px 6px; background-color: rgba(0,0,0,.08); border-radius: 20px; }
+
+@media (min-width: 960px) {
+    .uploader-list ul > li { width: 20%; }
+}
+@media (max-width: 959px) {
+    .uploader-list ul > li { width: 25%; }
+}
+@media (max-width: 767px) {
+    .uploader-list ul > li { width: 33.333332%; }
+}
+@media (min-width: 481px) {
+    .uploader-list ul > li .img { min-height: 164px; }
+}
+@media (max-width: 480px) {
+    .uploader-list ul > li .img { min-height: 98px; }
+}
+@media (max-width: 380px) {
+    .uploader-list ul > li { width: 50%; }
+}

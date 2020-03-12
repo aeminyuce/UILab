@@ -1,0 +1,23 @@
+/* photo images */
+@import '_settings.less';
+
+.photos-holder { .inline-block(); }
+.photos-holder > :not(.btn):not(:first-child) { margin-left: -15px; }
+
+.photos-holder [class*="img-photo"] { border-color: #f9f9f9; }
+.card .photos-holder [class*="img-photo"]{ border-color: #fff; }
+
+[class*="img-photo"] { text-align: center; vertical-align: middle; position: relative; stroke-width: 12px; }
+[class*="img-photo"]:not(img) { background-color: rgba(0,0,0,.08); display: inline-block; }
+[class*="img-photo"]:not(img) > span,[class*="img-photo"]:not(img) > svg { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+
+.img-photo-lg { font-size: 24px; width: 80px; height: 80px; }
+.img-photo-lg .icon { width: 34px; height: 34px; stroke-width: 18px; }
+
+.img-photo { font-size: 16px; width: 50px; height: 50px; }
+
+.img-photo-sm { font-size: 14px; width: 42px; height: 42px; }
+.img-photo-sm .icon { width: 18px; height: 18px; stroke-width: 32px; }
+
+.img-photo-xs { font-size: 12px; width: 32px; height: 32px; }
+.img-photo-xs .icon { width: 14px; height: 14px; stroke-width: 38px; }

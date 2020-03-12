@@ -1,0 +1,30 @@
+/* cards */
+@import '_settings.less';
+
+.card,[class*="card-"]:not(.card-side) { background-color: #fff; display: block; position: relative; }
+.card:not(:last-child),[class*="card-"]:not(.card-side):not(:last-child) { margin-bottom: 20px; }
+
+.card > .row,[class*="card-"]:not(.card-side) > .row,.card-side > .row { margin-left: inherit; margin-right: inherit; }
+
+.card:before,.card:after,.card-side:before,.card-side:after { content: ""; display: table; }
+.card:after,.card-side:after { clear: both; }
+
+.round > .card-side:first-child { border-radius: 6px 6px 0 0; }
+.round > .card-side:last-child { border-radius: 0 0 6px 6px; }
+
+[class*="card-"]:not(.card-side) { border-left-style: solid; border-left-width: 5px }
+[class*="card-"]:not(.card-side).round { border-radius: 0 6px 6px 0; }
+
+.card-info { border-color: #ccc; }
+.card-success { border-color: #2dbd3a; }
+.card-warning { border-color: #ffa600; }
+.card-danger { border-color: #dc000f; }
+
+.close-card { line-height: 12px; position: absolute; top: 10px; right: 10px; z-index: 1; opacity: .45; cursor: pointer; }
+.close-card .icon { width: 12px; height: 12px; stroke-width: 44px; }
+html:not(.mobile) .close-card:hover { opacity: .75; }
+.closing-card { transform: scale(.94,.98); opacity: 0; }
+
+@media (max-width: 767px) {
+    [class*="card-"]:not(.card-side) > p { text-align: center; }
+}
