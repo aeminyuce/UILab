@@ -1,21 +1,4 @@
 /* helpers */
-.block,
-.block-1st > *:not(.row),
-.block-2nd > * > *:not(.row) {
-  width: 100%;
-  display: block !important;
-}
-.inline,
-.inline-1st > *:not(.row),
-.inline-2nd > * > *:not(.row) {
-  display: inline !important;
-}
-.inline-block,
-.inline-block-1st > *:not(.row),
-.inline-block-2nd > * > *:not(.row) {
-  vertical-align: middle;
-  display: inline-block !important;
-}
 .automargin {
   margin-right: auto;
   margin-left: auto;
@@ -51,16 +34,28 @@
   -moz-user-select: none;
   user-select: none;
 }
-.no-appearance {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
 .highlight {
   display: block;
 }
 .highlight:not(:last-child) {
   margin-bottom: 20px !important;
+}
+.block,
+.block-1st > *:not(.row),
+.block-2nd > * > *:not(.row) {
+  width: 100%;
+  display: block !important;
+}
+.inline,
+.inline-1st > *:not(.row),
+.inline-2nd > * > *:not(.row) {
+  display: inline !important;
+}
+.inline-block,
+.inline-block-1st > *:not(.row),
+.inline-block-2nd > * > *:not(.row) {
+  vertical-align: middle;
+  display: inline-block !important;
 }
 .set-relative {
   position: relative !important;
@@ -127,12 +122,6 @@ html:not(.mobile) .visible-mobile {
 }
 html:not(.mobile) .hidden-dekstop {
   display: none !important;
-}
-.bg-white:not([class*="ui-"]) {
-  background-color: #fff !important;
-}
-.bg-black:not([class*="ui-"]) {
-  background-color: #181818 !important;
 }
 .mobile .scroll,
 .mobile .scroll-v,

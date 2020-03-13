@@ -1,9 +1,6 @@
 /* themes */
 @import '_settings.less';
 
-@theme-color-names: gray, green, yellow, orange, red, default, default2;
-@theme-colors: '@{gray}', '@{green}', '@{yellow}', '@{orange}', '@{red}', '@{default}', '@{default2}';
-
 .ui-x-light {
     color: @black;
     .icon,a,button { &:not([class*="ui-"]) { &:extend(.ui-x-light); } }
@@ -38,52 +35,15 @@
     .icon,a,button { &:not([class*="ui-"]) { &:extend(.x-dark-ui); } }
  }
 
-.theme (@name, @color) {
+.bg-white:not([class*="ui-"]) { ._bg(@white) !important; }
+.bg-black:not([class*="ui-"]) { ._bg(@black-soft) !important; }
 
-   .theme-@{name}.ui-x-light,.theme-@{name} .ui-x-light:not([class*="theme-"]) {
-      background-color: fade(lighten(@color, 50%), 35%);
-      &.hover:hover,
-      &.btn:not(.btn-passive):not(.opacity):not(.opacity-more):not(.btn-ghost):hover,
-      a&:not(.btn):not(.opacity):not(.opacity-more):hover {
-         background-color: fade(lighten(@color, 10%), 35%);
-      }
-   }
-   .theme-@{name}.ui-light,.theme-@{name} .ui-light:not([class*="theme-"]) {
-      background-color: fade(lighten(@color, 35%), 35%);
-      &.hover:hover,
-      &.btn:not(.btn-passive):not(.opacity):not(.opacity-more):not(.btn-ghost):hover,
-      a&:not(.btn):not(.opacity):not(.opacity-more):hover {
-         background-color: fade(lighten(@color, 10%), 35%);
-      }
-   }
-   .theme-@{name}.ui-dark,.theme-@{name} .ui-dark:not([class*="theme-"]) {
-      background-color: @color;
-      &.hover:hover,
-      &.btn:not(.btn-passive):not(.opacity):not(.opacity-more):not(.btn-ghost):hover,
-      a&:not(.btn):not(.opacity):not(.opacity-more):hover {
-         background-color: lighten(@color, 10%);
-      }
-   }
-   .theme-@{name}.ui-x-dark,.theme-@{name} .ui-x-dark:not([class*="theme-"]) {
-      background-color: darken(@color, 10%);
-      &.hover:hover,
-      &.btn:not(.btn-passive):not(.opacity):not(.opacity-more):not(.btn-ghost):hover,
-      a&:not(.btn):not(.opacity):not(.opacity-more):hover {
-         background-color: @color;
-      }
-   }
-
-   .theme-@{name}.ui-text,.theme-@{name} .ui-text:not([class*="theme-"]) { color: @color; }
-   .theme-@{name}.ui-border,.theme-@{name} .ui-border:not([class*="theme-"]) { border-color: @color; }
-
-}
-
-.theme-loop(@i) when (@i > 0) {
-   .theme-loop(@i - 1);
+._theme-loop(@i) when (@i > 0) {
+   ._theme-loop(@i - 1);
 
    @name: extract(@theme-color-names, @i);
    @color: color(extract(@theme-colors, @i));
-   .theme(@name,  @color);
+   ._theme(@name,  @color);
 
 }
-.theme-loop(length(@theme-colors));
+._theme-loop(length(@theme-colors));

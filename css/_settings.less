@@ -9,22 +9,95 @@
 
 // colors
 @no-color:                              transparent;
-@black:                                 #000;
-@white:                                 #fff;
 
-// theme only colors
+@black:                                 #000;
+@black-soft:                            #181818;
+
+@white:                                 #fff;
+@white-dark:                            #0f1115;
+
+@card-dark:                             #2f343e;
+
+// theme
 @gray:                                  #ccc;
 @green:                                 #2dbd3a;
 @yellow:                                #ffa600;
 @orange:                                #f47500;
-@red:                                   #dc000f;
+@red:                                   #d10f1c;
 @default:                               #4563c5;
 @default2:                              #108eef;
 
+// dark mode
+@set-dark:                              #0b0d10;
+@set-x-dark:                            #07080a;
+
 // color mixins
-._color (@color: #fff) { color: @color; }
+@theme-color-names: gray, green, yellow, orange, red, default, default2;
+@theme-colors: '@{gray}', '@{green}', '@{yellow}', '@{orange}', '@{red}', '@{default}', '@{default2}';
+
 ._bg (@color: transparent) { background-color: @color; }
-._border (@color) { border-color: @color; }
+
+._theme (@name, @color) { // light mode themes
+
+    .theme-@{name}.ui-x-light,.theme-@{name} .ui-x-light:not([class*="theme-"]) {
+        ._bg(fade(lighten(@color, 45%), 65%));
+        &.hover:hover,
+        &.btn:not(.btn-passive):not(.opacity):not(.opacity-more):not(.btn-ghost):hover,
+        a&:not(.btn):not(.opacity):not(.opacity-more):hover {
+           ._bg(fade(lighten(@color, 10%), 65%));
+        }
+     }
+     .theme-@{name}.ui-light,.theme-@{name} .ui-light:not([class*="theme-"]) {
+        ._bg(fade(lighten(@color, 35%), 65%));
+        &.hover:hover,
+        &.btn:not(.btn-passive):not(.opacity):not(.opacity-more):not(.btn-ghost):hover,
+        a&:not(.btn):not(.opacity):not(.opacity-more):hover {
+           ._bg(fade(lighten(@color, 10%), 65%));
+        }
+     }
+    .theme-@{name}.ui-dark,.theme-@{name} .ui-dark:not([class*="theme-"]) {
+       ._bg(@color);
+       &.hover:hover,
+       &.btn:not(.btn-passive):not(.opacity):not(.opacity-more):not(.btn-ghost):hover,
+       a&:not(.btn):not(.opacity):not(.opacity-more):hover {
+          ._bg(lighten(@color, 10%));
+       }
+    }
+    .theme-@{name}.ui-x-dark,.theme-@{name} .ui-x-dark:not([class*="theme-"]) {
+       ._bg(darken(@color, 10%));
+       &.hover:hover,
+       &.btn:not(.btn-passive):not(.opacity):not(.opacity-more):not(.btn-ghost):hover,
+       a&:not(.btn):not(.opacity):not(.opacity-more):hover {
+          ._bg(@color);
+       }
+    }
+
+    .theme-@{name}.ui-text,.theme-@{name} .ui-text:not([class*="theme-"]) { color: @color; }
+    .theme-@{name}.ui-border,.theme-@{name} .ui-border:not([class*="theme-"]) { border-color: @color; }
+
+}
+
+._theme-dark (@name, @color) { // dark mode themes
+
+    .theme-@{name}.ui-x-light,.theme-@{name} .ui-x-light:not([class*="theme-"]) {
+       ._bg(fade(@color, 15%));
+       &.hover:hover,
+       &.btn:not(.btn-passive):not(.opacity):not(.opacity-more):not(.btn-ghost):hover,
+       a&:not(.btn):not(.opacity):not(.opacity-more):hover {
+          ._bg(fade(@color, 50%));
+       }
+    }
+    .theme-@{name}.ui-light,.theme-@{name} .ui-light:not([class*="theme-"]) {
+       ._bg(fade(@color, 15%));
+       &.hover:hover,
+       &.btn:not(.btn-passive):not(.opacity):not(.opacity-more):not(.btn-ghost):hover,
+       a&:not(.btn):not(.opacity):not(.opacity-more):hover {
+          ._bg(fade(@color, 50%));
+       }
+    }
+
+}
 
 // shorthand mixins
 ._no-appearance () { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+._no-user-select () { -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
