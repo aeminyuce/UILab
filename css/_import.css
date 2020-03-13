@@ -151,10 +151,26 @@ p:not(:last-child):not(.hint) {
   }
 }
 /* helpers */
-.automargin {
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
+.visible {
+  display: block !important;
+}
+.hidden,
+html:not(.mobile) .visible-mobile,
+html:not(.mobile) .hidden-dekstop,
+.mobile .visible-desktop,
+.mobile .hidden-mobile {
+  display: none !important;
+}
+.rtl {
+  direction: rtl;
+}
+.full-w,
+.clearfix,
+.img-fluid {
+  width: 100% !important;
+}
+.full-h {
+  height: 100% !important;
 }
 .left {
   float: left;
@@ -162,29 +178,23 @@ p:not(:last-child):not(.hint) {
 .right {
   float: right;
 }
-.clearfix {
-  width: 100% !important;
-  clear: both !important;
+.automargin {
+  margin-right: auto;
+  margin-left: auto;
   display: block;
-}
-.rtl {
-  direction: rtl;
-}
-.full-w {
-  width: 100% !important;
-}
-.full-h {
-  height: 100% !important;
-}
-.img-fluid {
-  width: 100% !important;
-  height: auto !important;
 }
 .no-user-select {
   -ms-user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+}
+.clearfix {
+  clear: both !important;
+  display: block;
+}
+.img-fluid {
+  height: auto !important;
 }
 .highlight {
   display: block;
@@ -209,28 +219,14 @@ p:not(:last-child):not(.hint) {
   vertical-align: middle;
   display: inline-block !important;
 }
+.set-fixed {
+  position: fixed;
+}
 .set-relative {
   position: relative !important;
 }
 .set-absolute {
   position: absolute !important;
-}
-.set-fixed {
-  position: fixed;
-}
-.set-all {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.set-h {
-  right: 0;
-  left: 0;
-}
-.set-v {
-  top: 0;
-  bottom: 0;
 }
 .set-t {
   top: 0;
@@ -244,44 +240,32 @@ p:not(:last-child):not(.hint) {
 .set-l {
   left: 0;
 }
-.set-c {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.set-h {
+  right: 0;
+  left: 0;
 }
-.set-c-x {
+.set-v {
+  top: 0;
+  bottom: 0;
+}
+.set-all {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.set-cx {
   left: 50%;
   transform: translateX(-50%);
 }
-.set-c-y {
+.set-cy {
   top: 50%;
   transform: translateY(-50%);
 }
-.visible {
-  display: block !important;
-}
-.hidden {
-  display: none !important;
-}
-html:not(.mobile) .visible-mobile {
-  display: none !important;
-}
-.mobile .visible-desktop {
-  display: none !important;
-}
-.mobile .hidden-mobile {
-  display: none !important;
-}
-html:not(.mobile) .hidden-dekstop {
-  display: none !important;
-}
-.mobile .scroll,
-.mobile .scroll-v,
-.mobile .scroll-h {
-  -webkit-overflow-scrolling: touch;
-}
-.scroll {
-  overflow: auto !important;
+.set-c {
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
 }
 .scroll-v {
   overflow-x: hidden !important;
@@ -290,6 +274,9 @@ html:not(.mobile) .hidden-dekstop {
 .scroll-h {
   overflow-x: auto !important;
   overflow-y: hidden !important;
+}
+.scroll {
+  overflow: auto !important;
 }
 .no-scroll {
   overflow: hidden !important;
@@ -366,7 +353,9 @@ html:not(.mobile) .hidden-dekstop {
 .cursor-pointer {
   cursor: pointer !important;
 }
-.no-opacity {
+.no-opacity,
+html:not(.mobile) .opacity:hover,
+html:not(.mobile) .opacity-more:hover {
   opacity: 1 !important;
 }
 .half-opacity {
@@ -381,22 +370,18 @@ html:not(.mobile) .hidden-dekstop {
 .opacity {
   opacity: 0.75 !important;
 }
-html:not(.mobile) .opacity:hover,
-html:not(.mobile) .opacity-more:hover {
-  opacity: 1 !important;
-}
 html:not(.mobile) .hover-shadow:hover,
-html:not(.mobile) .hover-shadow-1st > * :hover,
+html:not(.mobile) .hover-shadow-1st > *:hover,
 html:not(.mobile) .hover-shadow-2nd > * > *:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 html:not(.mobile) .hover-scale:hover,
-html:not(.mobile) .hover-scale-1st > * :hover,
+html:not(.mobile) .hover-scale-1st > *:hover,
 html:not(.mobile) .hover-scale-2nd > * > *:hover {
   transform: scale(1.06);
 }
 html:not(.mobile) .hover-scale-more:hover,
-html:not(.mobile) .hover-scale-more-1st > * :hover,
+html:not(.mobile) .hover-scale-more-1st > *:hover,
 html:not(.mobile) .hover-scale-more-2nd > * > *:hover {
   transform: scale(1.2);
 }
@@ -439,6 +424,11 @@ html:not(.mobile) .hover-l-more:hover,
 html:not(.mobile) .hover-l-more-1st > *:hover,
 html:not(.mobile) .hover-l-more-2nd > * > *:hover {
   transform: translateX(-5%);
+}
+.mobile .scroll,
+.mobile .scroll-v,
+.mobile .scroll-h {
+  -webkit-overflow-scrolling: touch;
 }
 .list-unstyled,
 .list-custom,
