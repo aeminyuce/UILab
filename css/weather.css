@@ -69,8 +69,8 @@
   right: -7px;
 }
 .weather .deg {
-  margin-right: 6px;
   vertical-align: middle;
+  margin-right: 6px;
   display: inline-block;
   position: relative;
 }

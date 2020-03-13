@@ -3,8 +3,6 @@
 @global-font-size:                      14px;
 @global-line-height:                    1.42857143;
 
-@dark-mode:                             true;
-
 // body
 @body-bg-color:                         #f9f9f9;
 @body-bg-color-dark:                    #15181d;
@@ -24,23 +22,9 @@
 @default2:                              #108eef;
 
 // color mixins
-.color (@color: #fff) { color: @color; }
-.bg (@color: transparent) { background-color: @color; }
-
-.dark-color (@selector; @color: #fff) when (@dark-mode = true) {
-    @media (prefers-color-scheme: dark) { @{selector} { color: @color !important; } }
-}
-.dark-bg (@selector; @color: transparent) when (@dark-mode = true) {
-    @media (prefers-color-scheme: dark) { @{selector} { background-color: @color !important; } }
-}
-.dark-border (@selector; @color: transparent) when (@dark-mode = true) {
-    @media (prefers-color-scheme: dark) { @{selector} { border-color: @color !important; } }
-}
+._color (@color: #fff) { color: @color; }
+._bg (@color: transparent) { background-color: @color; }
+._border (@color) { border-color: @color; }
 
 // shorthand mixins
-._block () { width: 100%; display: block; }
-._inline () { display: inline; }
-._inline-block () { vertical-align: middle; display: inline-block; }
-
-._automargin () { margin-right: auto; margin-left: auto; display: block; }
 ._no-appearance () { -webkit-appearance: none; -moz-appearance: none; appearance: none; }

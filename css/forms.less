@@ -55,7 +55,7 @@
 .select-multi option,.select-multi optgroup { padding: 3px 5px; }
 .select-multi option:not(:last-child) { border-bottom: solid 1px rgba(0,0,0,.045); }
 
-.check,.radio { ._inline-block(); }
+.check,.radio { vertical-align: middle; display: inline-block; }
 
 .file { line-height: normal; height: 32px; border: solid 1px rgba(0,0,0,.15); overflow: hidden; display: block; position: relative; }
 .file.border-dual { height: 36px; }
@@ -70,7 +70,7 @@ html:not(.mobile) .file:hover .btn { background-color: rgba(0,0,0,.15); }
 
 label.custom { min-height: 22px; padding-top: 5px; padding-bottom: 3px; display: inline-block; }
 
-.check-custom,.radio-custom,.switch-custom { height: 22px; margin-bottom: 2px; border: solid 1px rgba(0,0,0,.15); overflow: hidden; ._inline-block(); position: relative; }
+.check-custom,.radio-custom,.switch-custom { vertical-align: middle; height: 22px; margin-bottom: 2px; border: solid 1px rgba(0,0,0,.15); overflow: hidden; display: inline-block; position: relative; }
 .check-custom,.radio-custom { width: 22px; }
 .radio-custom,.switch-custom.round { border-radius: 11px !important; }
 .switch-custom { width: 44px; }
@@ -144,7 +144,7 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i { transform: tran
 .hint.warning { color: #fdbc43; }
 .required-msg:not(.show) { display: none; }
 
-.form-inline,.form-xs-inline { ._inline-block() !important; }
+.form-inline,.form-xs-inline { vertical-align: middle; display: inline-block !important; }
 
 .form-disabled { background-color: rgba(0,0,0,.075); opacity: .65; }
 .form-readonly input,.form-readonly textarea { color: rgba(0,0,0,.5); }

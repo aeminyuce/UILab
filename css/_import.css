@@ -22,11 +22,6 @@ select {
 body {
   background-color: #f9f9f9;
 }
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #15181d !important;
-  }
-}
 article,
 aside,
 details,
@@ -125,11 +120,6 @@ hr {
   margin-bottom: 20px !important;
   border: 0;
 }
-@media (prefers-color-scheme: dark) {
-  hr {
-    background-color: rgba(255, 255, 255, 0.15) !important;
-  }
-}
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
@@ -165,7 +155,7 @@ p:not(:last-child):not(.hint) {
 .block,
 .block-1st > *:not(.row),
 .block-2nd > * > *:not(.row) {
-  width: 100% !important;
+  width: 100%;
   display: block !important;
 }
 .inline,
@@ -176,7 +166,7 @@ p:not(:last-child):not(.hint) {
 .inline-block,
 .inline-block-1st > *:not(.row),
 .inline-block-2nd > * > *:not(.row) {
-  vertical-align: middle !important;
+  vertical-align: middle;
   display: inline-block !important;
 }
 .automargin {
@@ -782,22 +772,6 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
   .xl-align-r,
   .xl-align-r * {
     text-align: right !important;
-  }
-}
-@media (prefers-color-scheme: light) {
-  .hidden-light {
-    display: none !important;
-  }
-  .visible-dark {
-    display: none !important;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .hidden-dark {
-    display: none !important;
-  }
-  .visible-light {
-    display: none !important;
   }
 }
 /* grid */
@@ -3761,12 +3735,12 @@ dt {
 }
 .btn {
   text-align: center;
+  vertical-align: middle;
   line-height: 18px;
   height: 32px;
   background-color: rgba(0, 0, 0, 0.08);
   padding-top: 7px;
   padding-bottom: 7px;
-  vertical-align: middle;
   display: inline-block;
   position: relative;
   cursor: pointer;
@@ -4807,11 +4781,11 @@ label.custom {
 .check-custom,
 .radio-custom,
 .switch-custom {
+  vertical-align: middle;
   height: 22px;
   margin-bottom: 2px;
   border: solid 1px rgba(0, 0, 0, 0.15);
   overflow: hidden;
-  vertical-align: middle;
   display: inline-block;
   position: relative;
 }
@@ -5082,7 +5056,7 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
 }
 .form-inline,
 .form-xs-inline {
-  vertical-align: middle !important;
+  vertical-align: middle;
   display: inline-block !important;
 }
 .form-disabled {
@@ -5511,9 +5485,9 @@ html:not(.mobile) .autocomplete li:hover,
 }
 /* icons */
 .icon {
+  vertical-align: middle;
   width: 20px;
   height: 20px;
-  vertical-align: middle;
   display: inline-block;
   fill: none;
   stroke: currentColor;
@@ -6560,8 +6534,8 @@ header.sticky {
 }
 .line-charts ul {
   list-style: none;
-  padding: 0;
   vertical-align: middle;
+  padding: 0;
   display: inline-block;
 }
 .line-charts ul.line {
@@ -6679,10 +6653,10 @@ html:not(.mobile) .line-charts svg circle:hover {
   display: inline-block;
 }
 .line-charts .info li span {
+  vertical-align: middle;
   width: 13px;
   height: 13px;
   margin: -2px 5px 0 0;
-  vertical-align: middle;
   display: inline-block;
   border-radius: 50%;
 }
@@ -7412,12 +7386,12 @@ html:not(.mobile) .modal-content.fullscreen .close-modal:hover {
 .dialog-buttons button {
   font-weight: bold;
   text-align: center;
+  vertical-align: middle;
   line-height: 20px;
   min-width: 68px;
   height: 32px;
   padding: 6px 12px;
   margin-bottom: 5px;
-  vertical-align: middle;
   display: inline-block;
   border: 0;
 }
@@ -8078,8 +8052,8 @@ html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) .panel .call.selected:
   cursor: default;
 }
 .carousel .carousel-nav .dots {
-  min-width: 65px;
   vertical-align: middle;
+  min-width: 65px;
   display: inline-block;
 }
 .carousel .carousel-nav .dots i {
@@ -8978,8 +8952,8 @@ html:not(.mobile) .preview-next:hover {
   right: -7px;
 }
 .weather .deg {
-  margin-right: 6px;
   vertical-align: middle;
+  margin-right: 6px;
   display: inline-block;
   position: relative;
 }
@@ -9706,7 +9680,27 @@ a.theme-default2 .ui-x-dark:not([class*="theme-"]):not(.btn):not(.opacity):not(.
   border-color: #108eef;
 }
 /* darkmode */
+@media (prefers-color-scheme: light) {
+  .hidden-light {
+    display: none !important;
+  }
+  .visible-dark {
+    display: none !important;
+  }
+}
 @media (prefers-color-scheme: dark) {
+  .hidden-dark {
+    display: none !important;
+  }
+  .visible-light {
+    display: none !important;
+  }
+  body {
+    background-color: #15181d !important;
+  }
+  hr {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+  }
   body,
   a,
   a:active,

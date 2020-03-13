@@ -52,8 +52,8 @@
   cursor: default;
 }
 .carousel .carousel-nav .dots {
-  min-width: 65px;
   vertical-align: middle;
+  min-width: 65px;
   display: inline-block;
 }
 .carousel .carousel-nav .dots i {

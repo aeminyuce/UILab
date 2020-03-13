@@ -1,5 +1,25 @@
 /* darkmode */
+@media (prefers-color-scheme: light) {
+  .hidden-light {
+    display: none !important;
+  }
+  .visible-dark {
+    display: none !important;
+  }
+}
 @media (prefers-color-scheme: dark) {
+  .hidden-dark {
+    display: none !important;
+  }
+  .visible-light {
+    display: none !important;
+  }
+  body {
+    background-color: #15181d !important;
+  }
+  hr {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+  }
   body,
   a {
     color: #fff;

@@ -22,11 +22,6 @@ select {
 body {
   background-color: #f9f9f9;
 }
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #15181d !important;
-  }
-}
 article,
 aside,
 details,
@@ -124,11 +119,6 @@ hr {
   margin-top: 20px !important;
   margin-bottom: 20px !important;
   border: 0;
-}
-@media (prefers-color-scheme: dark) {
-  hr {
-    background-color: rgba(255, 255, 255, 0.15) !important;
-  }
 }
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";

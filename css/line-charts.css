@@ -33,8 +33,8 @@
 }
 .line-charts ul {
   list-style: none;
-  padding: 0;
   vertical-align: middle;
+  padding: 0;
   display: inline-block;
 }
 .line-charts ul.line {
@@ -152,10 +152,10 @@ html:not(.mobile) .line-charts svg circle:hover {
   display: inline-block;
 }
 .line-charts .info li span {
+  vertical-align: middle;
   width: 13px;
   height: 13px;
   margin: -2px 5px 0 0;
-  vertical-align: middle;
   display: inline-block;
   border-radius: 50%;
 }

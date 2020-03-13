@@ -2,7 +2,7 @@
 .block,
 .block-1st > *:not(.row),
 .block-2nd > * > *:not(.row) {
-  width: 100% !important;
+  width: 100%;
   display: block !important;
 }
 .inline,
@@ -13,7 +13,7 @@
 .inline-block,
 .inline-block-1st > *:not(.row),
 .inline-block-2nd > * > *:not(.row) {
-  vertical-align: middle !important;
+  vertical-align: middle;
   display: inline-block !important;
 }
 .automargin {
@@ -619,21 +619,5 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
   .xl-align-r,
   .xl-align-r * {
     text-align: right !important;
-  }
-}
-@media (prefers-color-scheme: light) {
-  .hidden-light {
-    display: none !important;
-  }
-  .visible-dark {
-    display: none !important;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .hidden-dark {
-    display: none !important;
-  }
-  .visible-light {
-    display: none !important;
   }
 }

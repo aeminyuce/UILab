@@ -9,7 +9,7 @@
 .ease-line-charts circle { transition-property: stroke-width; transition-duration: .15s; }
 
 .line-charts { -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
-.line-charts ul { list-style: none; padding: 0; ._inline-block(); }
+.line-charts ul { list-style: none; vertical-align: middle; padding: 0; display: inline-block; }
 .line-charts ul.line { display: none; }
 
 .line-charts svg { width: 100%; }
@@ -53,4 +53,4 @@ html:not(.mobile) .line-charts svg circle:hover { stroke-width: 4; }
 
 .line-charts .info { text-align: center; display: block; }
 .line-charts .info li { margin: 0 5px 2px 5px; display: inline-block; }
-.line-charts .info li span { width: 13px; height: 13px; margin: -2px 5px 0 0; ._inline-block(); border-radius: 50%; }
+.line-charts .info li span { vertical-align: middle; width: 13px; height: 13px; margin: -2px 5px 0 0; display: inline-block; border-radius: 50%; }

@@ -245,11 +245,11 @@ label.custom {
 .check-custom,
 .radio-custom,
 .switch-custom {
+  vertical-align: middle;
   height: 22px;
   margin-bottom: 2px;
   border: solid 1px rgba(0, 0, 0, 0.15);
   overflow: hidden;
-  vertical-align: middle;
   display: inline-block;
   position: relative;
 }
@@ -520,7 +520,7 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
 }
 .form-inline,
 .form-xs-inline {
-  vertical-align: middle !important;
+  vertical-align: middle;
   display: inline-block !important;
 }
 .form-disabled {
