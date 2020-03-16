@@ -3,9 +3,11 @@
 
 * {
     box-sizing: border-box;
+
     &:before,&:after { &:extend(*); }
     &:not(ul):not(ol) { padding: 0; margin: 0; }
     &:focus { outline-style: none; outline: 0; }
+
 }
 
 body,input,button,textarea,select { font: @global-font-size/@global-line-height @global-font-family; }

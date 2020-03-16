@@ -39,38 +39,46 @@
 
 ._theme (@name, @color) { // light mode themes
 
-    .theme-@{name}.ui-x-light,.theme-@{name} .ui-x-light:not([class*="theme-"]) {
-        ._bg(fade(lighten(@color, 45%), 65%));
-        &.hover:hover,
-        &.btn:not(.btn-passive):not(.opacity):not(.opacity-more):not(.btn-ghost):hover,
-        a&:not(.btn):not(.opacity):not(.opacity-more):hover {
-           ._bg(fade(lighten(@color, 10%), 65%));
-        }
-     }
-     .theme-@{name}.ui-light,.theme-@{name} .ui-light:not([class*="theme-"]) {
-        ._bg(fade(lighten(@color, 35%), 65%));
-        &.hover:hover,
-        &.btn:not(.btn-passive):not(.opacity):not(.opacity-more):not(.btn-ghost):hover,
-        a&:not(.btn):not(.opacity):not(.opacity-more):hover {
-           ._bg(fade(lighten(@color, 10%), 65%));
-        }
-     }
-    .theme-@{name}.ui-dark,.theme-@{name} .ui-dark:not([class*="theme-"]) {
-       ._bg(@color);
-       &.hover:hover,
-       &.btn:not(.btn-passive):not(.opacity):not(.opacity-more):not(.btn-ghost):hover,
-       a&:not(.btn):not(.opacity):not(.opacity-more):hover {
-          ._bg(lighten(@color, 10%));
-       }
-    }
-    .theme-@{name}.ui-x-dark,.theme-@{name} .ui-x-dark:not([class*="theme-"]) {
-       ._bg(darken(@color, 10%));
-       &.hover:hover,
-       &.btn:not(.btn-passive):not(.opacity):not(.opacity-more):not(.btn-ghost):hover,
-       a&:not(.btn):not(.opacity):not(.opacity-more):hover {
-          ._bg(@color);
-       }
-    }
+   html:not(.mobile) {
+
+      .theme-@{name}.ui-x-light,.theme-@{name} .ui-x-light:not([class*="theme-"]) {
+         ._bg(fade(lighten(@color, 45%), 65%));
+
+         &.hover:hover,
+         &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+            ._bg(fade(lighten(@color, 10%), 65%));
+         }
+
+      }
+      .theme-@{name}.ui-light,.theme-@{name} .ui-light:not([class*="theme-"]) {
+         ._bg(fade(lighten(@color, 35%), 65%));
+
+         &.hover:hover,
+         &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+            ._bg(fade(lighten(@color, 10%), 65%));
+         }
+
+      }
+      .theme-@{name}.ui-dark,.theme-@{name} .ui-dark:not([class*="theme-"]) {
+         ._bg(@color);
+
+         &.hover:hover,
+         &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+            ._bg(lighten(@color, 10%));
+         }
+
+      }
+      .theme-@{name}.ui-x-dark,.theme-@{name} .ui-x-dark:not([class*="theme-"]) {
+         ._bg(darken(@color, 10%));
+
+         &.hover:hover,
+         &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+            ._bg(@color);
+         }
+
+      }
+
+   }
 
     .theme-@{name}.ui-text,.theme-@{name} .ui-text:not([class*="theme-"]) { color: @color; }
     .theme-@{name}.ui-border,.theme-@{name} .ui-border:not([class*="theme-"]) { border-color: @color; }
@@ -79,22 +87,28 @@
 
 ._theme-dark (@name, @color) { // dark mode themes
 
-    .theme-@{name}.ui-x-light,.theme-@{name} .ui-x-light:not([class*="theme-"]) {
-       ._bg(fade(@color, 15%));
-       &.hover:hover,
-       &.btn:not(.btn-passive):not(.opacity):not(.opacity-more):not(.btn-ghost):hover,
-       a&:not(.btn):not(.opacity):not(.opacity-more):hover {
-          ._bg(fade(@color, 50%));
-       }
-    }
-    .theme-@{name}.ui-light,.theme-@{name} .ui-light:not([class*="theme-"]) {
-       ._bg(fade(@color, 15%));
-       &.hover:hover,
-       &.btn:not(.btn-passive):not(.opacity):not(.opacity-more):not(.btn-ghost):hover,
-       a&:not(.btn):not(.opacity):not(.opacity-more):hover {
-          ._bg(fade(@color, 50%));
-       }
-    }
+   html:not(.mobile) {
+
+      .theme-@{name}.ui-x-light,.theme-@{name} .ui-x-light:not([class*="theme-"]) {
+         ._bg(fade(@color, 15%));
+
+         &.hover:hover,
+         &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+            ._bg(fade(@color, 50%));
+         }
+
+      }
+      .theme-@{name}.ui-light,.theme-@{name} .ui-light:not([class*="theme-"]) {
+         ._bg(fade(@color, 15%));
+
+         &.hover:hover,
+         &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+            ._bg(fade(@color, 50%));
+         }
+
+      }
+
+   }
 
 }
 
