@@ -754,7 +754,7 @@ var carousel = {
                     target.src = newImg.src;
                     events.removeClass(detail, 'detail-loader');
 
-                }
+                };
 
                 events.removeClass(thumbs, 'selected');
                 events.addClass(this, 'selected');

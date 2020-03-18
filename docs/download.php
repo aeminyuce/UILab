@@ -233,7 +233,7 @@
                 code = code.replace(/(<!--.*?-->)|(<!--[\w\W\n\s]+?-->)/gm, ''); // remove <!-- -->
 
                 // line breaks and multiple spaces
-                code = code.replace(/\n/g, '').replace(/\s+\s/g, '').replace(/^\s|\s+$/g, '');
+                code = code.replace(/\n/g, ' ').replace(/\s+\s/g, ' ').replace(/^\s|\s+$/g, '');
 
                 result.value = code;
                 result.scrollTop = 0; // IE, EDGE: scrollTo() not supported for textarea element

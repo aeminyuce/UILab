@@ -145,11 +145,11 @@ var photoSlider = {};
                             img.srcset = loadedImages[i][count[i]].srcset;
                             events.addClass(slider, 'loaded');
 
-                        }
+                        };
 
                         img.onerror = function () {
                             events.removeClass(slider, 'loaded');
-                        }
+                        };
 
                     } else {
 
@@ -159,11 +159,11 @@ var photoSlider = {};
                             img.src = loadedImages[i][count[i]].src;
                             events.addClass(slider, 'loaded');
 
-                        }
+                        };
 
                         img.onerror = function () {
                             events.removeClass(slider, 'loaded');
-                        }
+                        };
 
                     }
 
