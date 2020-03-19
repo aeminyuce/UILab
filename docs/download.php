@@ -233,7 +233,20 @@
                 code = code.replace(/(<!--.*?-->)|(<!--[\w\W\n\s]+?-->)/gm, ''); // remove <!-- -->
 
                 // line breaks and multiple spaces
-                code = code.replace(/\n/g, ' ').replace(/\s+\s/g, ' ').replace(/^\s|\s+$/g, '');
+                if (this.name === 'css') {
+                    code = code.replace(/ {/g, '{').replace(/: /g, ':');
+                    code = code.replace(/ >/g, '>').replace(/> /g, '>');
+                    code = code.replace(/, /g, ',');
+                }
+
+                if (this.name === 'js') {
+                    code = code.replace(/\n/g, ' ').replace(/\s+\s/g, ' ');
+
+                } else {
+                    code = code.replace(/\n/g, '').replace(/\s+\s/g, '').replace(/^\s|\s+$/g, '');
+                }
+
+                code = code.replace(/^\s|\s+$/g, '');
 
                 result.value = code;
                 result.scrollTop = 0; // IE, EDGE: scrollTo() not supported for textarea element
@@ -830,7 +843,7 @@
                                         <button title="Clear form!" class="generate-clear btn btn-square btn-ghost left ease-btn">
                                             <svg class="icon"><use href="#trash"/></svg>
                                         </button>
-                                        <button title="Minify code" class="generate-min btn btn-square btn-ghost ease-btn">
+                                        <button title="Minify code" name="css" class="generate-min btn btn-square btn-ghost ease-btn">
                                             <svg class="icon"><use href="#code"/></svg>
                                         </button>
                                     </div>
@@ -1223,7 +1236,7 @@
                                         <button title="Clear form!" class="generate-clear btn btn-square btn-ghost left ease-btn">
                                             <svg class="icon"><use href="#trash"/></svg>
                                         </button>
-                                        <button title="Minify code" class="generate-min btn btn-square btn-ghost ease-btn">
+                                        <button title="Minify code" name="js" class="generate-min btn btn-square btn-ghost ease-btn">
                                             <svg class="icon"><use href="#code"/></svg>
                                         </button>
                                     </div>
@@ -1354,7 +1367,7 @@
                                         <button title="Clear form!" class="generate-clear btn btn-square btn-ghost left ease-btn">
                                             <svg class="icon"><use href="#trash"/></svg>
                                         </button>
-                                        <button title="Minify code" class="generate-min btn btn-square btn-ghost ease-btn">
+                                        <button title="Minify code" name="icon" class="generate-min btn btn-square btn-ghost ease-btn">
                                             <svg class="icon"><use href="#code"/></svg>
                                         </button>
                                     </div>
