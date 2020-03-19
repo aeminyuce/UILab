@@ -234,9 +234,11 @@
 
                 // line breaks and multiple spaces
                 if (this.name === 'css') {
+
                     code = code.replace(/ {/g, '{').replace(/: /g, ':');
                     code = code.replace(/ >/g, '>').replace(/> /g, '>');
                     code = code.replace(/, /g, ',');
+
                 }
 
                 if (this.name === 'js') {
