@@ -270,6 +270,15 @@
                     <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
                 </div>
 
+                <h4>Quotes</h4>
+                <div class="padding-30-b">
+                    <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</q>
+                    <span class="sp5"></span>
+                    <q class="large">Proin tellus justo, blandit non ultrices in, consequat a sem.</q>
+                    <span class="sp5"></span>
+                    <q class="xx-large">Integer pellentesque sed sapien at euismod.</q>
+                </div>
+
                 <h4>Text Elements</h4>
                 <div class="row padding-30-b">
                     <div class="col-6">
