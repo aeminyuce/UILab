@@ -1,5 +1,4 @@
 /* listings */ @import '_settings.less';
-
 [class*="list-column-"] { display: flex; flex-wrap: wrap; }
 [class*="list-column-"] > li { break-inside: avoid; }
 
@@ -13,8 +12,8 @@
 
 [class*="list-spacer-"]:not([class*="list-column-"]):not(.list-inline) li:last-child { margin-bottom: 0 !important; }
 
-.list-gap:not(.list-inline):not(.list-custom):not([class*="list-column-"]) li,
-.list-gap.list-inline:not(.list-custom):not([class*="list-column-"]) li:not(:last-child) { padding-right: 10px; }
+.list-gap.list-inline li:not(:last-child) { padding-right: 10px; }
+.list-gap-more.list-inline li:not(:last-child) { padding-right: 30px; }
 
 dl:before,dl:after { content: ""; display: table; }
 dl:after { clear: both; }

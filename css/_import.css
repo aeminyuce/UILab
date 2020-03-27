@@ -3628,6 +3628,10 @@ xmp.scroll-v {
 .list-gap.list-inline:not(.list-custom):not([class*="list-column-"]) li:not(:last-child) {
   padding-right: 10px;
 }
+.list-gap-more:not(.list-inline):not(.list-custom):not([class*="list-column-"]) li,
+.list-gap-more.list-inline:not(.list-custom):not([class*="list-column-"]) li:not(:last-child) {
+  padding-right: 30px;
+}
 dl:before,
 dl:after {
   content: "";

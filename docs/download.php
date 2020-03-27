@@ -45,7 +45,7 @@
                             if (count < list.length - 1) {
 
                                 count += 1;
-                                pullResults += '\n';
+                                pullResults += '\n\n';
                                 countFnc();
 
                             } else {
@@ -92,21 +92,26 @@
             }
 
             if (that.name === 'less') { // firstly, import settings file
+
                 ajax({
 
                     url : '../css/_settings.less',
                     callback: function (status, response) {
 
                         if (status === 'success') {
+
                             pullResults += response;
+                            pullResults += '\n\n';
+
+                            countFnc();
+
                         }
 
                     }
 
                 });
-            }
 
-            countFnc();
+            } else { countFnc(); }
 
         }
 
