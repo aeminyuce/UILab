@@ -402,13 +402,6 @@
                                 <svg class="icon margin-5-l"><use href="#import"/></svg>
                             </span>
                         </div>
-                        <div class="file no-border round circle no-border ease-form form-xs-inline">
-                            <input name="css" class="generate-import" type="file">
-                            <span class="btn circle block ease-btn">
-                                <span class="inline-block">Import CSS</span>
-                                <svg class="icon margin-5-l"><use href="#import"/></svg>
-                            </span>
-                        </div>
                     </div>
 
                     <div class="generate-list row row-sm-gap-v">
@@ -899,7 +892,6 @@
                             <div class="align-r align-c ease-1st-btn">
                                 <span class="sp15 visible-xs"></span>
                                 <button name="less" class="generate-btn btn btn-xs-fluid round ui-dark">Generate LESS</button>
-                                <button name="css" class="generate-btn btn btn-xs-fluid round ui-dark">Generate CSS</button>
                                 <span class="sp5 visible-sm"></span>
                                 <button title="Copy to clipboard!" class="generate-copy btn btn-xs-fluid round">
                                     <svg class="icon ui-text margin-5-r no-opacity"><use href="#files"/></svg>Copy to clipboard
