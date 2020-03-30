@@ -1,3 +1,4 @@
+// out: false
 /* reset */ @import '_settings.less';
 * {
     box-sizing: border-box;
@@ -13,10 +14,7 @@ body { ._bg(@body-bg-color); }
 
 article,aside,details,figcaption,figure,footer,header,main,nav,section,summary,audio,canvas,video { display: block; }
 
-a {
-    word-wrap: break-word; text-decoration: none;
-    &:active,&:hover { &:extend(a); }
-}
+a,a:active,a:hover { word-wrap: break-word; text-decoration: none; }
 
 label { cursor: default; }
 textarea {

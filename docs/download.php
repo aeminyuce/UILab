@@ -45,13 +45,16 @@
                             if (count < list.length - 1) {
 
                                 count += 1;
-                                pullResults += '\n\n';
+                                pullResults += '\n';
                                 countFnc();
 
                             } else {
 
                                 if (that.name === 'less') {
+
                                     pullResults = pullResults.replace(/ @import '_settings.less';/g, ''); // remove repeated import settings file
+                                    pullResults = pullResults.replace(/\/\/ out: false/g, ''); // remove less settings
+
                                 }
 
                                 if (type === 'icons') { // icons
@@ -101,7 +104,7 @@
                         if (status === 'success') {
 
                             pullResults += response;
-                            pullResults += '\n\n';
+                            pullResults += '\n';
 
                             countFnc();
 

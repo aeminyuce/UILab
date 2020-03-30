@@ -3318,9 +3318,7 @@ h6 .icon-lg:not(.right) {
   }
 }
 body,
-a,
-a:active,
-a:hover {
+a {
   color: #000;
 }
 .xx-smallest {
@@ -9632,9 +9630,7 @@ html:not(.mobile) .theme-default2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn
     background-color: rgba(255, 255, 255, 0.15) !important;
   }
   body,
-  a,
-  a:active,
-  a:hover {
+  a {
     color: #fff;
   }
   code {
