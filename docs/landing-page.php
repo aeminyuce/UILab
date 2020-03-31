@@ -153,7 +153,7 @@
                         <div class="row row-lg-gap-v">
                             <div class="col-12 md-align-c">
 
-                                <h2 class="xx-largest bold">A New Way to Invest<br>in Agriculture</h2>
+                                <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
                                 <p class="xx-large light">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
                                 <a href="#" class="btn btn-xs-fluid padding-30-h ui-dark ease-btn">
                                     <svg class="icon margin-5-r"><use href="#moneys"></use></svg>
@@ -169,7 +169,7 @@
                                     <span class="sp15"></span>
                                     <svg class="icon icon-xxl icon-semibold"><use href="#factory"></use></svg>
                                     <span class="sp30 hidden-md"></span>
-                                    <h3 class="bold xx-large">Long term investment</h3>
+                                    <h3 class="font-bold xx-large">Long term investment</h3>
                                     <p class="x-large">Consider terms that have long term investment program.</p>
                                     <a href="#" class="btn block theme-farmer2 ui-dark ease-btn">
                                         <b>Learn more</b>
@@ -191,7 +191,7 @@
                         <div class="row row-lg-gap-v">
                             <div class="col-12 md-align-c">
 
-                                <h2 class="xx-largest bold">A New Way to Invest<br>in Agriculture</h2>
+                                <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
                                 <p class="xx-large light">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
                                 <a href="#" class="btn btn-xs-fluid padding-30-h ui-dark ease-btn">
                                     <svg class="icon margin-5-r"><use href="#moneys"></use></svg>
@@ -207,7 +207,7 @@
                                     <span class="sp15"></span>
                                     <svg class="icon icon-xxl icon-semibold"><use href="#network"></use></svg>
                                     <span class="sp30"></span>
-                                    <h3 class="bold xx-large">Connect with Our Farmers</h3>
+                                    <h3 class="font-bold xx-large">Connect with Our Farmers</h3>
                                     <p class="x-large">Consider terms that connect with our farmers program.</p>
                                     <a href="#" class="btn block theme-farmer2 ui-dark ease-btn">
                                         <b>Learn more</b>
@@ -229,7 +229,7 @@
                         <div class="row row-lg-gap-v">
                             <div class="col-12 md-align-c">
 
-                                <h2 class="xx-largest bold">A New Way to Invest<br>in Agriculture</h2>
+                                <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
                                 <p class="xx-large light">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
                                 <a href="#" class="btn btn-xs-fluid padding-30-h ui-dark ease-btn">
                                     <svg class="icon margin-5-r"><use href="#moneys"></use></svg>
@@ -245,7 +245,7 @@
                                     <span class="sp15"></span>
                                     <svg class="icon icon-xxl icon-semibold"><use href="#user-circle"></use></svg>
                                     <span class="sp30"></span>
-                                    <h3 class="bold xx-large">Social Impact Investment</h3>
+                                    <h3 class="font-bold xx-large">Social Impact Investment</h3>
                                     <p class="x-large">Consider terms that have social impact investment program.</p>
                                     <a href="#" class="btn block theme-farmer2 ui-dark ease-btn">
                                         <b>Learn more</b>
@@ -377,7 +377,7 @@
         <div class="fixed margin-30-b">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="bold margin-10-b">News</h2>
+                    <h2 class="font-bold margin-10-b">News</h2>
                     <h3 class="ui-text">Follow our activities.</h3>
                 </div>
             </div>
@@ -728,7 +728,7 @@
     <div class="fixed theme-farmer2">
         <div class="row">
             <div class="col-12">
-                <h2 class="bold margin-10-b">Our Projects</h2>
+                <h2 class="font-bold margin-10-b">Our Projects</h2>
                 <h3 class="ui-text margin-25-b">What we are doing?</h3>
 
                 <p class="x-dark x-large xs-align-c">Aliquam leo quam, laoreet quis luctus non, vulputate vitae elit. Pellentesque consequat eu mauris ac imperdiet. In dolor velit, pellentesque eu dignissim in, dignissim ac turpis. Sed lobortis diam ante, et posuere ligula convallis suscipit. Maecenas varius ultrices eros, eu vestibulum sem aliquet et.</p>
@@ -790,7 +790,7 @@
         <div class="fixed padding-30-v">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="bold margin-10-b">Why Choose Us</h2>
+                    <h2 class="font-bold margin-10-b">Why Choose Us</h2>
                     <h3 class="ui-text margin-25-b">See detailed statistics.</h3>
                 </div>
                 <div class="col-static">

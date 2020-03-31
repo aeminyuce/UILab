@@ -38,7 +38,7 @@
                             <div class="carousel-slider icons-lg ease-layout ease-slow ease-in-out">
 
                                 <div class="slide-content padding-30 no-padding-b">
-                                    <h3 class="bold margin-15-v">Next Week</h3>
+                                    <h3 class="font-bold margin-15-v">Next Week</h3>
                                     <table class="table table-striped no-separated">
                                         <tr>
                                             <td class="dark large">Tuesday</th>
@@ -100,7 +100,7 @@
                                 </div>
                                 <div class="slide-content padding-30 no-padding-b">
                                     <div class="padding-15 no-padding-t">
-                                        <h3 class="bold margin-15-v">Details</h3>
+                                        <h3 class="font-bold margin-15-v">Details</h3>
                                         <span class="sp3"></span>
                                         <p class="large margin-5-b">
                                             Today: Sunny currently. The high will be 32<sup>o</sup>.
@@ -171,7 +171,7 @@
 
                                 <div class="slide-content padding-30 no-padding-b">
                                     <div class="padding-15 no-padding-t">
-                                        <h3 class="bold margin-15-v">Details</h3>
+                                        <h3 class="font-bold margin-15-v">Details</h3>
                                         <span class="sp3"></span>
                                         <p class="large margin-5-b">
                                             Today: Sunny currently. The high will be 32<sup>o</sup>.
@@ -196,7 +196,7 @@
                                     </div>
                                 </div>
                                 <div class="slide-content padding-30 no-padding-b">
-                                    <h3 class="bold margin-15-v">Next Week</h3>
+                                    <h3 class="font-bold margin-15-v">Next Week</h3>
                                     <table class="table table-striped no-separated">
                                         <tr>
                                             <td class="dark large">Tuesday</th>

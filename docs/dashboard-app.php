@@ -124,7 +124,7 @@
                                     <a class="btn btn-multi no-line-height padding-10-v block round ui-x-light" href="#">
                                         <span class="ui-text x-largest">23</span>
                                         <span class="block">
-                                            <span class="x-dark-ui small ellipsis">Waiting</span>
+                                            <span class="x-dark-ui small font-ellipsis">Waiting</span>
                                         </span>
                                     </a>
                                 </div>
@@ -132,7 +132,7 @@
                                     <a class="btn btn-multi no-line-height padding-10-v block round ui-x-light" href="#">
                                         <span class="ui-text x-largest">258</span>
                                         <span class="block">
-                                            <span class="x-dark-ui small ellipsis">Expert</span>
+                                            <span class="x-dark-ui small font-ellipsis">Expert</span>
                                         </span>
                                     </a>
                                 </div>
@@ -140,7 +140,7 @@
                                     <a class="btn btn-multi no-line-height padding-10-v block round ui-x-light" href="#">
                                         <span class="ui-text x-largest">49</span>
                                         <span class="block">
-                                            <span class="x-dark-ui small ellipsis">First Audit</span>
+                                            <span class="x-dark-ui small font-ellipsis">First Audit</span>
                                         </span>
                                     </a>
                                 </div>
@@ -151,7 +151,7 @@
                                     <a class="btn btn-ghost btn-multi no-line-height padding-10-v block round border-dual" href="#">
                                         <span class="x-dark xx-large">19</span>
                                         <span class="block">
-                                            <span class="x-dark-ui small ellipsis">Second Audit</span>
+                                            <span class="x-dark-ui small font-ellipsis">Second Audit</span>
                                         </span>
                                     </a>
                                 </div>
@@ -159,7 +159,7 @@
                                     <a class="btn btn-ghost btn-multi no-line-height padding-10-v block round border-dual" href="#">
                                         <span class="x-dark xx-large">20</span>
                                         <span class="block">
-                                            <span class="x-dark-ui small ellipsis">Paused</span>
+                                            <span class="x-dark-ui small font-ellipsis">Paused</span>
                                         </span>
                                     </a>
                                 </div>
@@ -167,7 +167,7 @@
                                     <a class="btn btn-ghost btn-multi no-line-height padding-10-v block round border-dual" href="#">
                                         <span class="x-dark xx-large">68</span>
                                         <span class="block">
-                                            <span class="x-dark-ui small ellipsis">Delayed</span>
+                                            <span class="x-dark-ui small font-ellipsis">Delayed</span>
                                         </span>
                                     </a>
                                 </div>
@@ -175,7 +175,7 @@
 
                         </div>
                         <div class="card-side padding-15 no-padding-b">
-                            <h5 class="bold">Last Week</h5>
+                            <h5 class="font-bold">Last Week</h5>
                         </div>
 
                         <div class="card-side padding-15 padding-5-b">
@@ -202,7 +202,7 @@
                         </div>
 
                         <div class="card-side padding-15-h">
-                            <h5 class="bold">Work Intensity</h5>
+                            <h5 class="font-bold">Work Intensity</h5>
                         </div>
 
                         <div class="card-side padding-15">
@@ -238,7 +238,7 @@
                         </div>
 
                         <div class="card-side padding-15-h">
-                            <h5 class="bold">Last Visited</h5>
+                            <h5 class="font-bold">Last Visited</h5>
                         </div>
 
                         <div class="card-side padding-15">
@@ -784,7 +784,7 @@
                                 <div class="tab-content padding-10 border-dual open open-ease">
                                     <div class="row no-fluid no-margin circle theme-gray ui-x-light">
                                         <div class="col-6">
-                                            <h5 class="bold">John Doe</h5>
+                                            <h5 class="font-bold">John Doe</h5>
                                         </div>
                                         <div class="col-6 align-r">
                                             <span class="dark-ui">Online</span>
@@ -844,7 +844,7 @@
                                 <div class="tab-content padding-10 border-dual">
                                     <div class="row no-fluid no-margin circle theme-gray ui-x-light">
                                         <div class="col-6">
-                                            <h5 class="bold">Mary Doe</h5>
+                                            <h5 class="font-bold">Mary Doe</h5>
                                         </div>
                                         <div class="col-6 align-r">
                                             <span class="dark-ui">Online</span>
@@ -904,7 +904,7 @@
                                 <div class="tab-content padding-10 border-dual">
                                     <div class="row no-fluid no-margin circle theme-gray ui-x-light">
                                         <div class="col-6">
-                                            <h5 class="bold">Mike Taylor</h5>
+                                            <h5 class="font-bold">Mike Taylor</h5>
                                         </div>
                                         <div class="col-6 align-r">
                                             <span class="dark-ui">Today 09:22</span>
@@ -964,7 +964,7 @@
                                 <div class="tab-content padding-10 border-dual">
                                     <div class="row no-fluid no-margin circle theme-gray ui-x-light">
                                         <div class="col-6">
-                                            <h5 class="bold">John Doe</h5>
+                                            <h5 class="font-bold">John Doe</h5>
                                         </div>
                                         <div class="col-6 align-r">
                                             <span class="dark-ui">1 day ago</span>
@@ -1024,7 +1024,7 @@
                                 <div class="tab-content padding-10 border-dual">
                                     <div class="row no-fluid no-margin circle theme-gray ui-x-light">
                                         <div class="col-6">
-                                            <h5 class="bold">Mary Doe</h5>
+                                            <h5 class="font-bold">Mary Doe</h5>
                                         </div>
                                         <div class="col-6 align-r">
                                             <span class="dark-ui">2 days ago</span>
@@ -1084,7 +1084,7 @@
                                 <div class="tab-content padding-10 border-dual">
                                     <div class="row no-fluid no-margin circle theme-gray ui-x-light">
                                         <div class="col-6">
-                                            <h5 class="bold">John Doe</h5>
+                                            <h5 class="font-bold">John Doe</h5>
                                         </div>
                                         <div class="col-6 align-r">
                                             <span class="dark-ui">3 days ago</span>
@@ -1221,7 +1221,7 @@
                                 <span class="x-dark margin-3-l">Audit Staff</span>
                             </div>
 
-                            <h5 class="bold margin-10-b">Settings</h5>
+                            <h5 class="font-bold margin-10-b">Settings</h5>
                             <div class="list-group round no-border theme-gray ui-x-light">
                                 <ul class="has-icon-xs ease-list-group">
                                     <li>
@@ -1253,7 +1253,7 @@
 
                             <span class="sp15"></span>
 
-                            <h5 class="bold margin-10-b">General</h5>
+                            <h5 class="font-bold margin-10-b">General</h5>
 
                             <div class="list-group round no-border theme-gray ui-x-light">
                                 <ul class="has-icon-xs ease-list-group">

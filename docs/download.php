@@ -410,7 +410,7 @@
                     <div class="generate-list row row-sm-gap-v">
                         <div class="col-3 col-md-4 col-sm-6">
 
-                            <h5 class="bold">Core</h5>
+                            <h5 class="font-bold">Core</h5>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ease-opacity">
@@ -465,7 +465,7 @@
                                 </label>
                             </div>
 
-                            <h5 class="bold">Effects</h5>
+                            <h5 class="font-bold">Effects</h5>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ease-opacity">
@@ -485,7 +485,7 @@
                                 </label>
                             </div>
 
-                            <h5 class="bold">Typography</h5>
+                            <h5 class="font-bold">Typography</h5>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ease-opacity">
@@ -515,7 +515,7 @@
                         </div>
                         <div class="col-3 col-md-4 col-sm-6">
 
-                            <h5 class="bold">Buttons</h5>
+                            <h5 class="font-bold">Buttons</h5>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ease-opacity">
@@ -556,7 +556,7 @@
                                 </label>
                             </div>
 
-                            <h5 class="bold">Forms</h5>
+                            <h5 class="font-bold">Forms</h5>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ease-opacity">
@@ -590,7 +590,7 @@
                                 </label>
                             </div>
 
-                            <h5 class="bold">Icons</h5>
+                            <h5 class="font-bold">Icons</h5>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ease-opacity">
@@ -613,7 +613,7 @@
                         </div>
                         <div class="col-3 col-md-4 col-sm-6">
 
-                            <h5 class="bold">Layout</h5>
+                            <h5 class="font-bold">Layout</h5>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ease-opacity">
@@ -709,7 +709,7 @@
                                 </label>
                             </div>
 
-                            <h5 class="bold">Charts</h5>
+                            <h5 class="font-bold">Charts</h5>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ease-opacity">
@@ -753,7 +753,7 @@
                         </div>
                         <div class="col-3 col-md-4 col-sm-6">
 
-                            <h5 class="bold">Components</h5>
+                            <h5 class="font-bold">Components</h5>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ease-opacity">
@@ -843,7 +843,7 @@
                                 </label>
                             </div>
 
-                            <h5 class="bold">Themes</h5>
+                            <h5 class="font-bold">Themes</h5>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ease-opacity">
@@ -921,7 +921,7 @@
                     <div class="generate-list row row-sm-gap-v">
                         <div class="col-3 col-md-4 col-sm-6">
 
-                            <h5 class="bold">Core</h5>
+                            <h5 class="font-bold">Core</h5>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ease-opacity">
@@ -969,7 +969,7 @@
                                 </label>
                             </div>
 
-                            <h5 class="bold">Effects</h5>
+                            <h5 class="font-bold">Effects</h5>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ease-opacity">
@@ -989,7 +989,7 @@
                                 </label>
                             </div>
 
-                            <h5 class="bold">Buttons</h5>
+                            <h5 class="font-bold">Buttons</h5>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ease-opacity">
@@ -1033,7 +1033,7 @@
                         </div>
                         <div class="col-3 col-md-4 col-sm-6">
 
-                            <h5 class="bold">Forms</h5>
+                            <h5 class="font-bold">Forms</h5>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ease-opacity">
@@ -1095,7 +1095,7 @@
                                 </label>
                             </div>
 
-                            <h5 class="bold">Layout</h5>
+                            <h5 class="font-bold">Layout</h5>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ease-opacity">
@@ -1125,7 +1125,7 @@
                         </div>
                         <div class="col-3 col-md-4 col-sm-6">
 
-                            <h5 class="bold">Components</h5>
+                            <h5 class="font-bold">Components</h5>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ease-opacity">
@@ -1225,7 +1225,7 @@
                         </div>
                         <div class="col-3 col-md-4 col-sm-6">
 
-                            <h5 class="bold">Charts</h5>
+                            <h5 class="font-bold">Charts</h5>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ease-opacity">

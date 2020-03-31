@@ -89,7 +89,7 @@ table {
 th,
 td,
 caption {
-  font-weight: normal;
+  font-weight: 400;
   vertical-align: top;
   text-align: left;
 }
@@ -3240,7 +3240,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: normal;
+  font-weight: 400;
   margin-bottom: 0;
 }
 h1,
@@ -3442,33 +3442,33 @@ button.underline:hover {
 .hoverline:hover {
   text-decoration: underline;
 }
-.lead {
+.font-lead {
   font-size: 21px;
   line-height: 1.4;
   margin-bottom: 20px;
 }
-.bold {
-  font-weight: bold !important;
+.font-bold {
+  font-weight: 700 !important;
 }
-.semibold {
+.font-semibold {
   font-weight: 500 !important;
 }
-.regular {
-  font-weight: normal !important;
+.font-regular {
+  font-weight: 400 !important;
 }
-.light {
+.font-light {
   font-weight: 300 !important;
 }
-.thin {
-  font-weight: 150 !important;
+.font-thin {
+  font-weight: 200 !important;
 }
-.italic {
+.font-italic {
   font-style: italic !important;
 }
-.overline {
+.font-overline {
   text-decoration: line-through;
 }
-.ellipsis {
+.font-ellipsis {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -3924,7 +3924,7 @@ html:not(.mobile) .btn.ui-x-dark:hover .icon {
   cursor: default;
 }
 .btn-active {
-  font-weight: bold;
+  font-weight: 700;
 }
 .btn-ghost.ui-dark:not(.ui-text),
 .btn-ghost.ui-x-dark:not(.ui-text) {
@@ -5912,7 +5912,7 @@ html:not(.mobile) .close-card:hover {
   border-bottom: 0;
 }
 .table thead th {
-  font-weight: bold;
+  font-weight: 700;
   vertical-align: bottom !important;
 }
 .table:not(.table-sidebar).align-c td,
@@ -5923,11 +5923,11 @@ html:not(.mobile) .close-card:hover {
   text-align: center;
 }
 .table-sidebar td:first-of-type {
-  font-weight: bold;
+  font-weight: 700;
   border-right: solid 1px #ddd;
 }
 .table-sidebar-center td:nth-child(2) {
-  font-weight: bold;
+  font-weight: 700;
   border-right: solid 1px #ddd;
   border-left: solid 1px #ddd;
 }
@@ -6236,7 +6236,7 @@ html:not(.mobile) .ui-dark ::-webkit-scrollbar-thumb:active {
 }
 .steps-bar li:before {
   content: "";
-  font-weight: bold;
+  font-weight: 700;
   font-size: 11px;
   text-align: center;
   background-color: #fff;
@@ -6730,7 +6730,7 @@ html:not(.mobile) .line-charts svg circle:hover {
 .pie-chart[data-text]:before {
   content: attr(data-text);
   color: #000;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   line-height: 14px;
   min-height: 16px;
@@ -6760,7 +6760,7 @@ html:not(.mobile) .line-charts svg circle:hover {
   color: #666;
   font-size: 11px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 11px;
   background: #fff;
   padding: 2px 4px;
@@ -7362,7 +7362,7 @@ html:not(.mobile) .modal-content.fullscreen .close-modal:hover {
   border-radius: 0 0 6px 6px;
 }
 .dialog-buttons button {
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   vertical-align: middle;
   line-height: 20px;
@@ -7607,21 +7607,21 @@ html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) caption .calendar-titl
   background-color: rgba(0, 0, 0, 0.08);
 }
 .calendar-month {
-  font-weight: bold;
+  font-weight: 700;
   padding: 10px 5px 10px 10px;
 }
 .calendar.round .calendar-month {
   border-radius: 6px 0 0 6px;
 }
 .calendar-year {
-  font-weight: bold;
+  font-weight: 700;
   padding: 10px 10px 10px 5px;
 }
 .calendar.round .calendar-year {
   border-radius: 0 6px 6px 0;
 }
 .calendar th {
-  font-weight: bold;
+  font-weight: 700;
   vertical-align: bottom !important;
   padding: 10px;
 }
@@ -7681,7 +7681,7 @@ html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) td:not(.today):not(.pi
   background-color: rgba(0, 0, 0, 0.075);
 }
 .calendar tbody td.today button {
-  font-weight: bold;
+  font-weight: 700;
 }
 .calendar tbody td.today button:not([class*="ui-"]) {
   background-color: rgba(255, 255, 255, 0.225);
@@ -7700,7 +7700,7 @@ html:not(.mobile) .calendar tbody td.today button[class*="ui-"]:hover {
 }
 .calendar tbody td.pickerday button {
   color: #fff !important;
-  font-weight: bold;
+  font-weight: 700;
   background-color: #3773b6;
 }
 html:not(.mobile) .calendar tbody td.pickerday button:hover {
@@ -7918,7 +7918,7 @@ html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) .panel .call:hover {
   background-color: rgba(0, 0, 0, 0.075);
 }
 .calendar .panel .call.selected {
-  font-weight: bold;
+  font-weight: 700;
   background-color: rgba(255, 255, 255, 0.225);
 }
 html:not(.mobile) .calendar .panel .call.selected:hover {
@@ -8315,7 +8315,7 @@ html:not(.mobile) .data-hover .data-content:not([class*="ui-"]):nth-child(odd):h
   display: inline-block;
 }
 .image-uploader .file .btn b {
-  font-weight: normal;
+  font-weight: 400;
 }
 .uploader-tools {
   min-height: 52px;
@@ -8958,7 +8958,7 @@ html:not(.mobile) .preview-next:hover {
 }
 .weather .w-date {
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   margin-top: 2px;
   display: block;
   opacity: 0.65;

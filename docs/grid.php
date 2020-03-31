@@ -4,7 +4,7 @@
             <div class="col-12 padding-30">
 
                 <h4>Responsive Grid</h4>
-                <div class="padding-30-b ellipsis theme-default2">
+                <div class="padding-30-b font-ellipsis theme-default2">
 
                     <div class="row no-fluid">
                         <div class="col-1">
@@ -139,7 +139,7 @@
 
                     <span class="sp20"></span>
 
-                    <h5 class="bold margin-5-b">Ordered Grids:</h5>
+                    <h5 class="font-bold margin-5-b">Ordered Grids:</h5>
                     <div class="row no-fluid">
                         <div class="col-9">
                             <div class="ui-dark padding-10-v padding-5-h round no-scroll">col-10</div>
@@ -170,7 +170,7 @@
 
                     <span class="sp20"></span>
 
-                    <h5 class="bold margin-5-b">Custom Grids:</h5>
+                    <h5 class="font-bold margin-5-b">Custom Grids:</h5>
                     <div class="row no-fluid">
                         <div class="col-5x">
                             <div class="ui-dark padding-10-v padding-5-h round no-scroll">col-5x</div>
@@ -289,7 +289,7 @@
 
                     <span class="sp30"></span>
 
-                    <h5 class="bold margin-5-b">Ordered Static Grids:</h5>
+                    <h5 class="font-bold margin-5-b">Ordered Static Grids:</h5>
 
                     <div class="row">
                         <div class="col-static">

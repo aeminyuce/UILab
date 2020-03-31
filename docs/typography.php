@@ -106,7 +106,7 @@
 
                 <h4>List Columns</h4>
                 <div class="padding-30-b">
-                    <h5 class="bold">2 Columns</h5>
+                    <h5 class="font-bold">2 Columns</h5>
                     <ul class="list-unstyled list-column-2">
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
@@ -118,7 +118,7 @@
                         <li>Eget porttitor lorem</li>
                     </ul>
 
-                    <h5 class="bold">3 Columns</h5>
+                    <h5 class="font-bold">3 Columns</h5>
                     <ul class="list-unstyled list-column-3">
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
@@ -130,7 +130,7 @@
                         <li>Eget porttitor lorem</li>
                     </ul>
 
-                    <h5 class="bold">4 Columns</h5>
+                    <h5 class="font-bold">4 Columns</h5>
                     <ul class="list-unstyled list-column-4">
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
@@ -142,7 +142,7 @@
                         <li>Eget porttitor lorem</li>
                     </ul>
 
-                    <h5 class="bold">5 Columns</h5>
+                    <h5 class="font-bold">5 Columns</h5>
                     <ul class="list-unstyled list-column-5">
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
@@ -154,7 +154,7 @@
                         <li>Eget porttitor lorem</li>
                     </ul>
 
-                    <h5 class="bold">6 Columns</h5>
+                    <h5 class="font-bold">6 Columns</h5>
                     <ul class="list-unstyled list-column-6">
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
@@ -187,7 +187,7 @@
                 <h4>List Spacers</h4>
                 <div class="row padding-30-b">
                     <div class="col-12">
-                        <h5 class="bold">With Inline Lists</h5>
+                        <h5 class="font-bold">With Inline Lists</h5>
                         <ul class="list-inline list-spacer-5">
                             <li>Lorem ipsum</li>
                             <li>dolor sit amet</li>
@@ -196,7 +196,7 @@
                         </ul>
                     </div>
                     <div class="col-6">
-                        <h5 class="bold">1px</h5>
+                        <h5 class="font-bold">1px</h5>
                         <ul class="list-unstyled list-spacer-1">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
@@ -204,7 +204,7 @@
                         </ul>
                     </div>
                     <div class="col-6">
-                        <h5 class="bold">5px</h5>
+                        <h5 class="font-bold">5px</h5>
                         <ul class="list-unstyled list-spacer-5">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
@@ -212,7 +212,7 @@
                         </ul>
                     </div>
                     <div class="col-6">
-                        <h5 class="bold">10px</h5>
+                        <h5 class="font-bold">10px</h5>
                         <ul class="list-unstyled list-spacer-10">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
@@ -220,7 +220,7 @@
                         </ul>
                     </div>
                     <div class="col-6">
-                        <h5 class="bold">15px</h5>
+                        <h5 class="font-bold">15px</h5>
                         <ul class="list-unstyled list-spacer-15">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
@@ -228,7 +228,7 @@
                         </ul>
                     </div>
                     <div class="col-6">
-                        <h5 class="bold">20px</h5>
+                        <h5 class="font-bold">20px</h5>
                         <ul class="list-unstyled list-spacer-20">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
@@ -236,7 +236,7 @@
                         </ul>
                     </div>
                     <div class="col-6">
-                        <h5 class="bold">25px</h5>
+                        <h5 class="font-bold">25px</h5>
                         <ul class="list-unstyled list-spacer-25">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
@@ -244,7 +244,7 @@
                         </ul>
                     </div>
                     <div class="col-6">
-                        <h5 class="bold">30px</h5>
+                        <h5 class="font-bold">30px</h5>
                         <ul class="list-unstyled list-spacer-30">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
@@ -259,7 +259,7 @@
 
                 <h4>Lead</h4>
                 <div class="padding-30-b">
-                    <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+                    <p class="font-lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
                 </div>
 
                 <h4>Quotes</h4>
@@ -293,17 +293,19 @@
                         <abbr title="attribute">attr</abbr>
                     </div>
                     <div class="col-6">
-                        <span class="bold">.bold</span>
+                        <span class="font-bold">.bold</span>
                         <br>
-                        <span class="semibold">.semibold</span>
+                        <span class="font-semibold">.semibold</span>
                         <br>
-                        <span class="regular">.regular</span>
+                        <span class="font-regular">.regular</span>
                         <br>
-                        <span class="light">.light</span>
+                        <span class="font-light">.light</span>
                         <br>
-                        <span class="overline">.overline</span>
+                        <span class="font-thin">.thin</span>
                         <br>
-                        <div class="ellipsis col-100">.ellipisis: Ellipsis Text</div>
+                        <span class="font-overline">.overline</span>
+                        <br>
+                        <div class="font-ellipsis col-100">.ellipisis: Ellipsis Text</div>
                     </div>
                 </div>
 

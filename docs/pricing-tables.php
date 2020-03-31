@@ -19,7 +19,7 @@
                             <div class="margin-30-v">
                                 <svg class="icon icon-72 theme-default2 ui-text"><use href="#box"></use></svg>
                             </div>
-                            <h2 class="bold margin-15-v">Free</h2>
+                            <h2 class="font-bold margin-15-v">Free</h2>
                             <h4 class="x-dark">1 End Product License</h4>
                             <p class="dark large margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                             <a class="btn btn-lg btn-xs-fluid padding-30-h margin-30-b round theme-green ui-dark ease-btn" href="#">
@@ -35,7 +35,7 @@
                             <div class="margin-30-v">
                                 <svg class="icon icon-72 animate-bounce-x"><use href="#gift"></use></svg>
                             </div>
-                            <h2 class="bold margin-15-v">$19</h2>
+                            <h2 class="font-bold margin-15-v">$19</h2>
                             <h4>Business License</h4>
                             <p class="x-light-ui large margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                             <span class="sp10"></span>
@@ -55,7 +55,7 @@
                             <div class="margin-30-v">
                                 <svg class="icon icon-72 theme-default2 ui-text"><use href="#wallet"></use></svg>
                             </div>
-                            <h2 class="bold margin-15-v">$49</h2>
+                            <h2 class="font-bold margin-15-v">$49</h2>
                             <h4 class="x-dark">Enterprise License</h4>
                             <p class="dark large margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                             <a class="btn btn-lg btn-xs-fluid padding-30-h margin-30-b round theme-default ui-dark ease-btn" href="#">
@@ -79,7 +79,7 @@
                                 <div class="margin-30-v">
                                     <svg class="icon icon-72 theme-default2 ui-text"><use href="#box"></use></svg>
                                 </div>
-                                <h2 class="bold margin-15-v">Free</h2>
+                                <h2 class="font-bold margin-15-v">Free</h2>
                                 <h4 class="x-dark">1 End Product License</h4>
                                 <p class="dark large margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                                 <a class="btn btn-lg btn-xs-fluid padding-30-h margin-30-b round theme-green ui-dark ease-btn" href="#">
@@ -117,7 +117,7 @@
                                 <div class="margin-30-v">
                                     <svg class="icon icon-72 animate-bounce-x"><use href="#gift"></use></svg>
                                 </div>
-                                <h2 class="bold margin-15-v">$19</h2>
+                                <h2 class="font-bold margin-15-v">$19</h2>
                                 <h4>Business License</h4>
                                 <p class="x-light-ui large margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                                 <span class="sp10"></span>
@@ -156,7 +156,7 @@
                                 <div class="margin-30-v">
                                     <svg class="icon icon-72 theme-default2 ui-text"><use href="#wallet"></use></svg>
                                 </div>
-                                <h2 class="bold margin-15-v">$49</h2>
+                                <h2 class="font-bold margin-15-v">$49</h2>
                                 <h4 class="x-dark">Enterprise License</h4>
                                 <p class="dark large margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                                 <a class="btn btn-lg btn-xs-fluid padding-30-h margin-30-b round theme-default ui-dark ease-btn" href="#">

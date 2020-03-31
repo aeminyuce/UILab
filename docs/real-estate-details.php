@@ -225,7 +225,7 @@
                         </div>
                     </div>
                     <div class="padding-20-t padding-30-h border-t">
-                        <div class="largest bold">$640.000</div>
+                        <div class="largest font-bold">$640.000</div>
                         <span class="dark">LATEST OFFER</span>
                     </div>
                     <div class="padding-30 padding-15-t">
@@ -242,7 +242,7 @@
                                 <div class="row">
                                     <div class="col-12 no-padding">
                                         <div class="text no-border theme-gray ui-x-light ease-form">
-                                            <input class="bold align-c x-large" type="text" value="645.000" min="645.000" step="5.000" maxlength="12" autocomplete="off">
+                                            <input class="font-bold align-c x-large" type="text" value="645.000" min="645.000" step="5.000" maxlength="12" autocomplete="off">
                                         </div>
                                     </div>
                                 </div>

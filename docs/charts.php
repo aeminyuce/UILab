@@ -6,7 +6,7 @@
                 <h4 class="align-c lg-align-l">Line Charts Examples</h4>
                 <div class="row row-lg-gap-v">
                     <div class="col-6">
-                        <h5 class="bold align-c">Line Chart</h5>
+                        <h5 class="font-bold align-c">Line Chart</h5>
                         <div class="line-charts ease-line-charts" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="line">
                                 <li data-y="84"></li>
@@ -20,7 +20,7 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <h5 class="bold align-c">Curved Line Chart</h5>
+                        <h5 class="font-bold align-c">Curved Line Chart</h5>
                         <div class="line-charts ease-line-charts" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="line" data-type="curved">
                                 <li data-y="0"></li>
@@ -34,7 +34,7 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <h5 class="bold align-c">Dotted Line Chart</h5>
+                        <h5 class="font-bold align-c">Dotted Line Chart</h5>
                         <div class="line-charts ease-line-charts" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="line" data-type="dotted">
                                 <li data-y="0"></li>
@@ -48,7 +48,7 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <h5 class="bold align-c">Dashed Line Chart</h5>
+                        <h5 class="font-bold align-c">Dashed Line Chart</h5>
                         <div class="line-charts ease-line-charts" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="line" data-type="dashed">
                                 <li data-y="0"></li>
@@ -62,7 +62,7 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <h5 class="bold align-c">Line Charts</h5>
+                        <h5 class="font-bold align-c">Line Charts</h5>
                         <div class="line-charts ease-line-charts" data-size="10,25" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="line" data-name="1st">
                                 <li data-y="-34" data-link="#1"></li>
@@ -85,7 +85,7 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <h5 class="bold align-c">Curved Line Charts</h5>
+                        <h5 class="font-bold align-c">Curved Line Charts</h5>
                         <div class="line-charts ease-line-charts" data-size="10,25" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="line" data-name="1st" data-type="curved dotted">
                                 <li data-y="55" data-link="#1"></li>
@@ -117,7 +117,7 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <h5 class="bold align-c">Filled Line Charts</h5>
+                        <h5 class="font-bold align-c">Filled Line Charts</h5>
                         <div class="line-charts ease-line-charts" data-size="10,25" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="line" data-name="1st" data-type="filled">
                                 <li data-y="-34" data-link="#1"></li>
@@ -140,7 +140,7 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <h5 class="bold align-c">Filled &amp; Curved Line Charts</h5>
+                        <h5 class="font-bold align-c">Filled &amp; Curved Line Charts</h5>
                         <div class="line-charts ease-line-charts" data-size="10,25" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="line" data-name="1st" data-type="curved dotted">
                                 <li data-y="-34" data-link="#1"></li>
@@ -174,7 +174,7 @@
                     <div class="col-12 theme-default ui-dark round">
                         <div class="row">
                             <div class="col-6">
-                                <h5 class="bold align-c">Filled Line Charts</h5>
+                                <h5 class="font-bold align-c">Filled Line Charts</h5>
                                 <div class="line-charts ease-line-charts" data-size="10,25" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                                     <ul class="line" data-name="1st" data-type="filled">
                                         <li data-y="-34" data-link="#1"></li>
@@ -197,7 +197,7 @@
                                 </div>
                             </div>
                             <div class="col-6">
-                                <h5 class="bold align-c">Filled &amp; Curved Line Charts</h5>
+                                <h5 class="font-bold align-c">Filled &amp; Curved Line Charts</h5>
                                 <div class="line-charts ease-line-charts" data-size="10,25" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                                     <ul class="line" data-name="1st" data-type="curved dotted">
                                         <li data-y="-34" data-link="#1"></li>
@@ -231,7 +231,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="card round shadow-lg tabs ease-tabs" data-classes="bold">
+                        <div class="card round shadow-lg tabs ease-tabs" data-classes="font-bold">
                             <div class="card-side padding-10 border-b">
 
                                 <div class="dropdown menu-l right ease-dropdown">
@@ -250,7 +250,7 @@
                             <div class="card-side padding-15">
 
                                 <div class="tab-content open open-ease">
-                                    <h5 class="bold align-c">First Chart</h5>
+                                    <h5 class="font-bold align-c">First Chart</h5>
                                     <div class="line-charts ease-line-charts" data-size="5,48" data-x="Sep,Oct,Nov,Dec,Jan,Fab">
                                         <ul class="line" data-name="Sales" data-type="curved filled">
                                             <li data-y="10" data-link="#"></li>
@@ -271,7 +271,7 @@
                                     </div>
                                 </div>
                                 <div class="tab-content">
-                                    <h5 class="bold align-c">Second Chart</h5>
+                                    <h5 class="font-bold align-c">Second Chart</h5>
                                     <div class="line-charts ease-line-charts" data-size="5,48" data-x="Sep,Oct,Nov,Dec,Jan,Fab">
                                         <ul class="line" data-name="Sales" data-type="curved filled">
                                             <li data-y="10" data-link="#"></li>
@@ -295,7 +295,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <h5 class="bold align-c">Column Stepping Chart</h5>
+                        <h5 class="font-bold align-c">Column Stepping Chart</h5>
                         <div class="line-charts ease-line-charts" data-size="10,25" data-step="6"
                             data-x="01.12.2019,02.12.2019,03.12.2019,04.12.2019,05.12.2019,06.12.2019,07.12.2019,08.12.2019,09.12.2019,10.12.2019,11.12.2019,12.12.2019,13.12.2019,14.12.2019,15.12.2019,16.12.2019,17.12.2019,18.12.2019,19.12.2019,20.12.2019,21.12.2019">
                             <ul class="line" data-type="filled dotted">

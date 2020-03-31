@@ -1,6 +1,6 @@
 // out: false
 /* typography */ @import '_settings.less';
-h1,h2,h3,h4,h5,h6 { font-weight: normal; margin-bottom: 0; }
+h1,h2,h3,h4,h5,h6 { font-weight: @font-normal; margin-bottom: 0; }
 h1,h2,h3 { line-height: 1; }
 
 h1:not(:last-child),h2:not(:last-child),h3:not(:last-child),h4:not(:last-child),h5:not(:last-child),h6:not(:last-child) { margin-bottom: 20px; }
@@ -55,15 +55,15 @@ body,a { color: #000; }
 a.underline:hover,button.underline:hover { text-decoration: none; }
 .hoverline:hover { text-decoration: underline; }
 
-.lead { font-size: 21px; line-height: 1.4; margin-bottom: 20px; }
-.bold { font-weight: bold !important; }
-.semibold { font-weight: 500 !important; }
-.regular { font-weight: normal !important; }
-.light { font-weight: 300 !important; }
-.thin { font-weight: 150 !important; }
-.italic { font-style: italic !important; }
-.overline { text-decoration: line-through; }
-.ellipsis { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+.font-lead { font-size: 21px; line-height: 1.4; margin-bottom: 20px; }
+.font-bold { font-weight: @font-bold !important; }
+.font-semibold { font-weight: @font-semibold !important; }
+.font-regular { font-weight: @font-normal !important; }
+.font-light { font-weight: @font-light !important; }
+.font-thin { font-weight: @font-thin !important; }
+.font-italic { font-style: italic !important; }
+.font-overline { text-decoration: line-through; }
+.font-ellipsis { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
 
 .lowercase { text-transform: lowercase; }
 .uppercase { text-transform: uppercase; }

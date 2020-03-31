@@ -122,7 +122,7 @@
             <!-- sidebar -->
             <div class="col-250 theme-gray ui-light hidden-md">
                 <div class="align-l sm-align-c padding-20-t form-lg add-mobile-menu-r">
-                    <h4 class="bold padding-10-h theme-default2 ui-text">UI</h4>
+                    <h4 class="font-bold padding-10-h theme-default2 ui-text">UI</h4>
                     <ul class="list-unstyled block-2nd ease-2nd-button">
                         <li><a class="btn btn-ghost" href="?p=alerts">Alerts</a></li>
                         <li><a class="btn btn-ghost" href="?p=breadcrumbs">Breadcrumbs</a></li>
@@ -153,7 +153,7 @@
                         <li><a class="btn btn-ghost" href="?p=typography">Typography</a></li>
                         <li><a class="btn btn-ghost" href="?p=weather">Weather</a></li>
                     </ul>
-                    <h4 class="bold padding-10-h theme-default2 ui-text">JS</h4>
+                    <h4 class="font-bold padding-10-h theme-default2 ui-text">JS</h4>
                     <ul class="list-unstyled block-2nd ease-2nd-button">
                         <li><a class="btn btn-ghost" href="?p=selector">Selector</a></li>
                         <li><a class="btn btn-ghost" href="?p=events">Events</a></li>

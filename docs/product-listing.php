@@ -385,7 +385,7 @@
                                 </span>
                                 <span class="x-large">Purple</span>
                                 <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Bluetooth Headphones</span>
-                                <b class="xx-large">$79.95</b> <b class="x-dark overline">$99.99</b>
+                                <b class="xx-large">$79.95</b> <b class="x-dark font-overline">$99.99</b>
                                 <span class="block">
                                     <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
@@ -453,7 +453,7 @@
                                 </span>
                                 <span class="x-large">White</span>
                                 <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Wired Headphones</span>
-                                <b class="xx-large">$89.95</b> <b class="x-dark overline">$119.99</b>
+                                <b class="xx-large">$89.95</b> <b class="x-dark font-overline">$119.99</b>
                                 <span class="block">
                                     <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
@@ -484,7 +484,7 @@
                                 </span>
                                 <span class="x-large">Black</span>
                                 <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Wired Headphones</span>
-                                <b class="xx-large">$89.95</b> <b class="x-dark overline">$119.99</b>
+                                <b class="xx-large">$89.95</b> <b class="x-dark font-overline">$119.99</b>
                                 <span class="block">
                                     <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
@@ -520,7 +520,7 @@
                                 </span>
                                 <span class="x-large">Purple</span>
                                 <span class="x-dark block margin-10-v">beats by dr. dre Studio 3 Bluetooth Headphones</span>
-                                <b class="xx-large">$79.95</b> <b class="x-dark overline">$99.99</b>
+                                <b class="xx-large">$79.95</b> <b class="x-dark font-overline">$99.99</b>
                                 <span class="block">
                                     <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>

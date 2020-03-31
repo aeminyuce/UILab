@@ -6,7 +6,7 @@
                 <h4>Carousel Examples</h4>
                 <div class="padding-30-b">
 
-                    <h5 class="bold">HTML Content Carousel</h5>
+                    <h5 class="font-bold">HTML Content Carousel</h5>
 
                     <div class="carousel" data-col="1" data-slide="4000">
                         <div class="carousel-slider ease-2nd-layout ease-layout ease-slow2x ease-in-out">
@@ -141,7 +141,7 @@
                     </div>
                 </div>
 
-                <h5 class="bold">Image Carousel</h5>
+                <h5 class="font-bold">Image Carousel</h5>
                 <div class="padding-30-b">
                     <div class="carousel" data-col="8" data-col-md="4" data-col-sm="3" data-col-xs="1" data-slide="2000">
                         <div class="carousel-slider ease-2nd-layout ease-layout ease-slow ease-in-out">
@@ -207,7 +207,7 @@
 
                     <span class="sp30"></span>
 
-                    <h5 class="bold">Half Sized Image Carousel</h5>
+                    <h5 class="font-bold">Half Sized Image Carousel</h5>
                     <div class="carousel half-sized padding-15-b photo-gallery ease-photo-gallery shadow-in-sm round theme-gray ui-x-light" data-col="4" data-col-md="3" data-col-sm="2" data-col-xs="2">
                         <div class="carousel-slider hover-scale-2nd hover-shadow-2nd ease-layout ease-2nd-layout ease-slow ease-in-out">
                             <div class="slide-content padding-15 no-padding-b">
@@ -241,7 +241,7 @@
                     </div>
                 </div>
 
-                <h5 class="bold">Carousel Gallery</h5>
+                <h5 class="font-bold">Carousel Gallery</h5>
                 <div class="padding-30-b">
                     <div class="carousel-gallery card padding-15 round shadow-lg">
                         <div class="row">
@@ -294,7 +294,7 @@
                     </div>
                 </div>
 
-                <h5 class="bold">Gallery Without Carousel</h5>
+                <h5 class="font-bold">Gallery Without Carousel</h5>
                 <div class="padding-30-b">
                     <div class="carousel-gallery card padding-15 round shadow-lg">
                         <div class="row">

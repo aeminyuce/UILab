@@ -990,7 +990,7 @@
                                     <div class="col-static no-fluid">
                                         <div class="row row row-no-gap-h row-md-gap-v">
                                             <div class="col-12 large">
-                                                <div class="large bold">Total Progress</div>
+                                                <div class="large font-bold">Total Progress</div>
                                                 <span class="dark">23% Change</span>
                                             </div>
                                         </div>
@@ -1174,7 +1174,7 @@
                             </div>
 
                             <div class="col-xl-6 col-lg-6 col-12 col-md-6">
-                                <div class="card full-h padding-15 round shadow-lg tabs ease-tabs" data-classes="bold">
+                                <div class="card full-h padding-15 round shadow-lg tabs ease-tabs" data-classes="font-bold">
                                     <div class="dropdown menu-l right ease-dropdown">
                                         <button class="btn btn-square btn-ghost round">
                                             <svg class="icon"><use href="#ellipsis-v"></use></svg>
@@ -1191,7 +1191,7 @@
                                             <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"></use></svg>
                                         </button>
                                         <ul class="content round shadow-lg">
-                                            <li><label class="tab active bold selected">Last year</label></li>
+                                            <li><label class="tab active font-bold selected">Last year</label></li>
                                             <li><label class="tab">Past year</label></li>
                                         </ul>
                                     </div>

@@ -28,7 +28,7 @@
 
                 <div class="align-l padding-10 icons-no-opacity icons-margin-10-r form-lg add-mobile-menu-l">
                     <h5 class="x-light-ui padding-15 margin-5-b">LIBRARY</h5>
-                    <ul class="list-unstyled list-spacer-15 large bold block-2nd ease-2nd-btn">
+                    <ul class="list-unstyled list-spacer-15 large font-bold block-2nd ease-2nd-btn">
                         <li>
                             <a class="btn btn-ghost circle" href="#">
                                 <svg class="icon"><use href="#tv"></use></svg>
@@ -155,7 +155,7 @@
                                 <div class="row">
                                     <div class="col-12 padding-30-l no-padding-v md-no-padding">
                                         <span class="sp15 visible-md"></span>
-                                        <h2 class="bold">Related Video</h2>
+                                        <h2 class="font-bold">Related Video</h2>
                                         <b class="large">Captain Marvel (2019)</b>
                                         <p class="margin-10-v">
                                             After crashing an experimental aircraft, Air Force pilot Carol Danvers is discovered by the Kree and trained as a member of the elite Starforce Military under the command of her mentor Yon-Rogg. Six years later, after escaping to Earth while under attack by the Skrulls.
@@ -174,7 +174,7 @@
                     </div>
                 </div>
                 <div class="padding-15">
-                    <h2 class="bold padding-15-h md-no-padding">Now Showing</h2>
+                    <h2 class="font-bold padding-15-h md-no-padding">Now Showing</h2>
                 </div>
 
                 <div class="carousel half-sized margin-15-h md-no-margin" data-col-xl="8" data-col-lg="6" data-col="3" data-col-md="4" data-col-sm="4" data-col-xs="2">
@@ -326,7 +326,7 @@
                 <span class="sp15"></span>
 
                 <div class="padding-15">
-                    <h2 class="bold padding-15-h md-no-padding">Categories</h2>
+                    <h2 class="font-bold padding-15-h md-no-padding">Categories</h2>
                 </div>
 
                 <div class="carousel half-sized margin-15-h md-no-margin" data-col-xl="6" data-col-lg="6" data-col="3" data-col-md="4" data-col-sm="4" data-col-xs="2">

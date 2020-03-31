@@ -13,7 +13,7 @@
                 <span class="sp30 margin-30-v"></span>
 
                 <div class="align-c form-lg">
-                    <p class="font-red largest bold">Error: 404 Page Not Found</p>
+                    <p class="font-red largest font-bold">Error: 404 Page Not Found</p>
                     <p class="font-red error-size no-user-select">
                         <span class="inline-block">4</span>
                         <svg class="icon"><use href="#undo"></use></svg>
@@ -30,7 +30,7 @@
                 <span class="sp30 margin-30-v padding-30-v"></span>
 
                 <div class="align-c form-lg">
-                    <p class="font-yellow largest bold">Error: 403 Forbidden</p>
+                    <p class="font-yellow largest font-bold">Error: 403 Forbidden</p>
                     <p class="font-yellow error-size no-user-select">
                         <span class="inline-block">4</span>
                         <svg class="icon"><use href="#no"></use></svg>
@@ -46,7 +46,7 @@
                 <span class="sp30 margin-30-v padding-30-v"></span>
 
                 <div class="align-c form-lg">
-                    <p class="font-orange largest bold">Error: 500 Unexpected Error</p>
+                    <p class="font-orange largest font-bold">Error: 500 Unexpected Error</p>
                     <p class="font-orange error-size no-user-select">
                         <span class="inline-block">5</span>
                         <svg class="icon"><use href="#face-blank"></use></svg>

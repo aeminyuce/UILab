@@ -8,7 +8,7 @@
                         <svg class="icon right"><use href="#plus"></use></svg>
                     </a>
                     <span class="sp30"></span>
-                    <ul class="list-unstyled hover-r-more-2nd inline-block-2nd large bold list-spacer-30 padding-10 ease-2nd-layout">
+                    <ul class="list-unstyled hover-r-more-2nd inline-block-2nd large font-bold list-spacer-30 padding-10 ease-2nd-layout">
                         <li><a class="ui-text" href="#">Summer Holiday</a></li>
                         <li><a href="#">Autumn Comes</a></li>
                         <li><a href="#">Travelling</a></li>

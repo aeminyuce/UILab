@@ -142,10 +142,10 @@
                                             <i class="state"></i>
                                         </span>
                                         <span class="dark">I agree to the</span>
-                                        <a class="bold hoverline ui-text" href="#">Terms</a>,
-                                        <a class="bold hoverline ui-text" href="#">Privacy Policy</a>
+                                        <a class="font-bold hoverline ui-text" href="#">Terms</a>,
+                                        <a class="font-bold hoverline ui-text" href="#">Privacy Policy</a>
                                         <span class="dark">and</span>
-                                        <a class="bold ui-text" href="#">Fees.</a>
+                                        <a class="font-bold ui-text" href="#">Fees.</a>
                                     </label>
 
                                     <span class="sp30 margin-15-v"></span>
@@ -154,7 +154,7 @@
                                         <b>SIGN UP NOW</b>
                                     </button>
                                     <span class="sp30"></span>
-                                    <span class="dark">Have you any questions?<br>Please,</span> <a class="bold hoverline ui-text" href="#">click here</a> <span class="dark">to access Help Center.</span>
+                                    <span class="dark">Have you any questions?<br>Please,</span> <a class="font-bold hoverline ui-text" href="#">click here</a> <span class="dark">to access Help Center.</span>
 
                                 </div>
                             </div>
@@ -165,7 +165,7 @@
 
                                 <h3 class="largest">
                                     Join our<br class="hidden-sm">huge platform<br class="hidden-sm">
-                                    <span class="bold x-largest">today!</span>
+                                    <span class="font-bold x-largest">today!</span>
                                 </h3>
                                 <ul class="list-unstyled list-spacer-10 light x-large icons-sm icons-margin-5-r theme-default2">
                                     <li>
