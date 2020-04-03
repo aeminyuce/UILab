@@ -8,11 +8,11 @@
 .card:before,.card:after,.card-side:before,.card-side:after { content: ""; display: table; }
 .card:after,.card-side:after { clear: both; }
 
-.round > .card-side:first-child { border-radius: 6px 6px 0 0; }
-.round > .card-side:last-child { border-radius: 0 0 6px 6px; }
+.round > .card-side:first-child { border-radius: @round @round 0 0; }
+.round > .card-side:last-child { border-radius: 0 0 @round @round; }
 
 [class*="card-"]:not(.card-side) { border-left-style: solid; border-left-width: 5px }
-[class*="card-"]:not(.card-side).round { border-radius: 0 6px 6px 0; }
+[class*="card-"]:not(.card-side).round { border-radius: 0 @round @round 0; }
 
 .card-info { border-color: #ccc; }
 .card-success { border-color: #2dbd3a; }

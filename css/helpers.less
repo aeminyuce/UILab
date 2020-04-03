@@ -58,16 +58,16 @@
 
 .round,[class*="round-"],.circle,[class*="circle-"] { background-clip: padding-box; }
 
-.round { border-radius: 6px; }
-.round-t { border-radius: 6px 6px 0 0; }
-.round-r { border-radius: 0 6px 6px 0; }
-.round-b { border-radius: 0 0 6px 6px; }
-.round-l { border-radius: 6px 0 0 6px; }
+.round { border-radius: @round; }
+.round-t { border-radius: @round @round 0 0; }
+.round-r { border-radius: 0 @round @round 0; }
+.round-b { border-radius: 0 0 @round @round; }
+.round-l { border-radius: @round 0 0 @round; }
 
-.round-tl { border-radius: 6px 0 0 0; }
-.round-tr { border-radius: 0 6px 0 0; }
-.round-bl { border-radius: 0 0 0 6px; }
-.round-br { border-radius: 0 0 6px 0; }
+.round-tl { border-radius: @round 0 0 0; }
+.round-tr { border-radius: 0 @round 0 0; }
+.round-bl { border-radius: 0 0 0 @round; }
+.round-br { border-radius: 0 0 @round 0; }
 
 .circle { border-radius: 1000px; }
 .circle-t { border-radius: 1000px 1000px 0 0; }

@@ -62,7 +62,7 @@
 .file input { vertical-align: middle; width: 100%; overflow: hidden; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 3; opacity: 0; } /* don't change z-index! */
 
 .file .btn { text-overflow: ellipsis; white-space: nowrap; min-width: 125px; overflow: hidden; float: left; }
-.file.round .btn { border-radius: 3px 0 0 3px; }
+.file.round .btn { border-radius: @round / 2 0 0 @round / 2; }
 html:not(.mobile) .file:hover .btn { background-color: rgba(0,0,0,.15); }
 
 .file > span:not(.btn) { white-space: nowrap; text-overflow: ellipsis; line-height: 32px; width: 100%; padding-right: 10px; padding-left: 135px; overflow: hidden; display: block; position: absolute; }

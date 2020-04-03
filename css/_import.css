@@ -203,19 +203,19 @@ html:not(.mobile) .hidden-dekstop,
   margin-bottom: 20px !important;
 }
 .block,
-.block-1st > *:not(.row),
-.block-2nd > * > *:not(.row) {
+.block-1st > *:not(.row):not([class*="hidden-"]),
+.block-2nd > * > *:not(.row):not([class*="hidden-"]) {
   width: 100%;
   display: block !important;
 }
 .inline,
-.inline-1st > *:not(.row),
-.inline-2nd > * > *:not(.row) {
+.inline-1st > *:not(.row):not([class*="hidden-"]),
+.inline-2nd > * > *:not(.row):not([class*="hidden-"]) {
   display: inline !important;
 }
 .inline-block,
-.inline-block-1st > *:not(.row),
-.inline-block-2nd > * > *:not(.row) {
+.inline-block-1st > *:not(.row):not([class*="hidden-"]),
+.inline-block-2nd > * > *:not(.row):not([class*="hidden-"]) {
   vertical-align: middle;
   display: inline-block !important;
 }

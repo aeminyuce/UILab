@@ -36,7 +36,7 @@
 .weather .graphs { height: 100%; overflow: hidden; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1; }
 .weather.night .graphs { background-image: linear-gradient(#283769, #879bc7) !important; }
 .weather .graphs > div { position: absolute; }
-.weather.round .graphs { border-radius: 6px; }
+.weather.round .graphs { border-radius: @round; }
 
 .graphs[data-graphs*="clear"] { background-image: linear-gradient(#ffc6c6, #d5e0fe); }
 .weather .clear { width: 178px; height: 178px; background: no-repeat; margin: -39px 0 0 -89px; top: 15px; left: 0; }
