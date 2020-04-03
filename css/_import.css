@@ -3197,7 +3197,7 @@ html .row {
   }
 }
 .animate-bounce-x {
-  animation: bounce-x 2.4s linear infinite;
+  animation: bounce-x 6s linear infinite;
 }
 @keyframes bounce-y {
   from {
@@ -3214,7 +3214,7 @@ html .row {
   }
 }
 .animate-bounce-y {
-  animation: bounce-y 2.4s linear infinite;
+  animation: bounce-y 6s linear infinite;
 }
 @keyframes bounce-z {
   from {
@@ -3231,7 +3231,7 @@ html .row {
   }
 }
 .animate-bounce-z {
-  animation: bounce-z 2.4s linear infinite;
+  animation: bounce-z 6s linear infinite;
 }
 /* typography */
 h1,
