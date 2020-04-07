@@ -14,7 +14,7 @@
                     </ul>
                 </div>
 
-                <span class="sp30"></span>
+                <span class="sp-30"></span>
 
                 <div class="list-group border round">
                     <ul class="list-column-2 ease-list-group">
@@ -27,7 +27,7 @@
                     </ul>
                 </div>
 
-                <span class="sp30"></span>
+                <span class="sp-30"></span>
 
                 <div class="list-group border round">
                     <ul class="list-column-3 ease-list-group">
@@ -49,7 +49,7 @@
                     </ul>
                 </div>
 
-                <span class="sp30"></span>
+                <span class="sp-30"></span>
 
                 <div class="list-group border round">
                     <ul class="list-column-4 ease-list-group">
@@ -68,7 +68,7 @@
                     </ul>
                 </div>
 
-                <span class="sp30"></span>
+                <span class="sp-30"></span>
 
                 <div class="list-group border round">
                     <ul class="ease-list-group">
@@ -99,7 +99,7 @@
                     </ul>
                 </div>
 
-                <span class="sp30"></span>
+                <span class="sp-30"></span>
 
                 <div class="list-group border round">
                     <ul class="ease-list-group">
@@ -111,7 +111,7 @@
                     </ul>
                 </div>
 
-                <span class="sp30"></span>
+                <span class="sp-30"></span>
 
                 <div class="list-group border round">
                     <ul class="has-icon-xs ease-list-group">
@@ -148,7 +148,7 @@
                     </ul>
                 </div>
 
-                <span class="sp30"></span>
+                <span class="sp-30"></span>
 
                 <div class="list-group border round">
                     <ul class="ease-list-group icons-margin-5-r">
@@ -185,7 +185,7 @@
                     </ul>
                 </div>
 
-                <span class="sp30"></span>
+                <span class="sp-30"></span>
 
                 <div class="list-group border round">
                     <ul class="has-photo-xs has-icon-xs ease-list-group">
@@ -237,7 +237,7 @@
                     </ul>
                 </div>
 
-                <span class="sp30"></span>
+                <span class="sp-30"></span>
 
                 <div class="list-group border round">
                     <ul class="has-photo-sm has-icon-sm ease-list-group">
@@ -289,7 +289,7 @@
                     </ul>
                 </div>
 
-                <span class="sp30"></span>
+                <span class="sp-30"></span>
 
                 <div class="list-group border round">
                     <ul class="has-photo has-icon ease-list-group">
@@ -341,7 +341,7 @@
                     </ul>
                 </div>
 
-                <span class="sp30"></span>
+                <span class="sp-30"></span>
 
                 <div class="list-group border round">
                     <ul class="has-photo-lg has-icon-lg ease-list-group">
@@ -393,7 +393,7 @@
                     </ul>
                 </div>
 
-                <span class="sp30"></span>
+                <span class="sp-30"></span>
 
                 <div class="list-group border round">
                     <ul class="has-photo has-icon-sm ease-list-group">
@@ -436,7 +436,7 @@
                     </ul>
                 </div>
 
-                <span class="sp30"></span>
+                <span class="sp-30"></span>
 
                 <div class="list-group border round theme-red">
                     <ul class="has-photo has-icon-sm ease-list-group">
@@ -479,7 +479,7 @@
                     </ul>
                 </div>
 
-                <span class="sp30"></span>
+                <span class="sp-30"></span>
 
                 <div class="list-group border round theme-default2">
                     <ul class="has-photo has-icon-sm ease-list-group">

@@ -24,7 +24,7 @@
                     </ul>
                 </div>
 
-                <span class="sp15"></span>
+                <span class="sp-15"></span>
 
                 <div class="breadcrumbs">
                     <ul class="list-inline">
@@ -48,7 +48,7 @@
                     </ul>
                 </div>
 
-                <span class="sp15"></span>
+                <span class="sp-15"></span>
 
                 <div class="breadcrumbs theme-default2">
                     <ul class="list-inline">
@@ -72,7 +72,7 @@
                     </ul>
                 </div>
 
-                <span class="sp15"></span>
+                <span class="sp-15"></span>
 
                 <div class="breadcrumbs icons-no-opacity">
                     <ul class="list-inline">
@@ -98,7 +98,7 @@
                     </ul>
                 </div>
 
-                <span class="sp15"></span>
+                <span class="sp-15"></span>
 
                 <div class="breadcrumbs theme-default2">
                     <ul class="list-inline">
@@ -124,7 +124,7 @@
                     </ul>
                 </div>
 
-                <span class="sp15"></span>
+                <span class="sp-15"></span>
 
                 <div class="breadcrumbs no-separated icons-no-opacity">
                     <ul class="list-inline">
@@ -150,7 +150,7 @@
                     </ul>
                 </div>
 
-                <span class="sp15"></span>
+                <span class="sp-15"></span>
 
                 <div class="breadcrumbs no-separated theme-default">
                     <ul class="list-inline">
@@ -201,7 +201,7 @@
                     </ul>
                 </div>
 
-                <span class="sp15"></span>
+                <span class="sp-15"></span>
 
                 <div class="breadcrumbs no-separated theme-default2">
                     <ul class="list-inline">

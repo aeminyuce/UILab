@@ -67,7 +67,7 @@
                         </li>
                     </ul>
 
-                    <span class="sp30"></span>
+                    <span class="sp-30"></span>
 
                     <h5 class="x-light-ui padding-15 margin-5-b">NEWS &amp; EVENTS</h5>
                     <ul class="list-unstyled list-spacer-15 large block-2nd ease-2nd-btn">
@@ -154,7 +154,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-12 padding-30-l no-padding-v md-no-padding">
-                                        <span class="sp15 visible-md"></span>
+                                        <span class="sp-15 visible-md"></span>
                                         <h2 class="font-bold">Related Video</h2>
                                         <b class="large">Captain Marvel (2019)</b>
                                         <p class="margin-10-v">
@@ -323,7 +323,7 @@
                     </div>
                 </div>
 
-                <span class="sp15"></span>
+                <span class="sp-15"></span>
 
                 <div class="padding-15">
                     <h2 class="font-bold padding-15-h md-no-padding">Categories</h2>
@@ -415,7 +415,7 @@
                     </div>
                 </div>
 
-                <span class="sp30"></span>
+                <span class="sp-30"></span>
 
             </div>
         </div>

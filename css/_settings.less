@@ -1,9 +1,5 @@
 // out: false
-// body
-@body-bg:                              #f9f9f9;
-@body-bg-dark:                         #15181d;
-
-// font
+// global fonts
 @font-family:                           "Roboto", "Helvetica Neue", Arial, sans-serif;
 @font-size:                             14px;
 @line-height:                           1.42857143;
@@ -14,21 +10,25 @@
 @font-light:                            300;
 @font-thin:                             200;
 
-// colors
+// global options
+@darkmode:                              true;
+@round:                                 6px;
+
+// global colors
+@body-bg:                               #f9f9f9;
+@body-bg-dark:                          #15181d;
+
 @no-color:                              transparent;
 
-@black:                                 #000;
+@black:                                 #0f1115;
+@black-fade15:                          fade(@black, 15%);
 @black-soft:                            #181818;
 
 @white:                                 #fff;
-@white-dark:                            #0f1115;
+@white-fade15:                          fade(@white, 15%);
 
 @card-dark:                             #2f343e;
 
-// helpers
-@round:                                 6px;
-
-// theme
 @gray:                                  #ccc;
 @green:                                 #2dbd3a;
 @yellow:                                #ffa600;
@@ -37,16 +37,54 @@
 @default:                               #4563c5;
 @default2:                              #108eef;
 
-// dark mode
-@set-dark:                              #0b0d10;
-@set-x-dark:                            #07080a;
+// global breakpoints
+@xl-start:                              ~"(min-width: 1680px)";
+
+@lg-finish:                             ~"(max-width: 1679px)";
+@lg-start:                              ~"(min-width: 1200px)";
+@lg-start-finish:                       @lg-start and @lg-finish;
+
+@default-finish:                        ~"(max-width: 1199px)";
+@default-start:                         ~"(min-width: 960px)";
+@default-start-finish:                  @default-start and @default-finish;
+
+@md-finish:                             ~"(max-width: 959px)";
+@md-start:                              ~"(min-width: 768px)";
+@md-start-finish:                       @md-start and @md-finish;
+
+@sm-finish:                             ~"(max-width: 767px)";
+@sm-start:                              ~"(min-width: 481px)";
+@sm-start-finish:                       @sm-start and @sm-finish;
+
+@xs-finish:                             ~"(max-width: 480px)";
+
+// css variables
+:root {
+   --body-bg: @body-bg;
+
+   --black-fade15: @black-fade15;
+}
+
+._darkmode-variables (@darkmode) when (@darkmode = true) {
+   @media (prefers-color-scheme: dark) {
+      :root {
+          --body-bg: @body-bg-dark;
+
+          --black-fade15: @white-fade15;
+      }
+   }
+}
+
+._darkmode-variables(@darkmode);
 
 // color mixins
-@theme-color-names: gray, green, yellow, orange, red, default, default2;
-@theme-colors: '@{gray}', '@{green}', '@{yellow}', '@{orange}', '@{red}', '@{default}', '@{default2}';
+._bg (@color: @no-color) { background-color: @color; }
+._bg-var (@var) {
+   background-color: @@var;
+   background-color: ~'var(--@{var})';
+}
 
-._bg (@color: transparent) { background-color: @color; }
-
+// theme mixins
 ._theme (@name, @color) { // light mode themes
 
    .theme-@{name}.ui-x-light,.theme-@{name} .ui-x-light:not([class*="theme-"]) {

@@ -74,7 +74,7 @@
                             .theme-green .ui-dark
                         </div>
                     </div>
-                    <div class="sp5"></div>
+                    <div class="sp-5"></div>
                     <div class="col-6">
                         <div class="theme-red padding-30 ui-dark stripe-light round animate-progress">
                             .theme-red .ui-dark .animate-progress

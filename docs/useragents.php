@@ -31,7 +31,7 @@
                 <span class="margin-5-b block">Adding classnames to the html element, dynamically.</span>
                 <pre class="round results"></pre>
 
-                <span class="sp15"></span>
+                <span class="sp-15"></span>
 
                 <b class="margin-5-b block">Variables:</b>
                 <span class="margin-5-b block">Global variables returns true/false.</span>

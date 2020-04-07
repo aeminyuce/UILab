@@ -101,7 +101,7 @@
                                 <div class="slide-content padding-30 no-padding-b">
                                     <div class="padding-15 no-padding-t">
                                         <h3 class="font-bold margin-15-v">Details</h3>
-                                        <span class="sp3"></span>
+                                        <span class="sp-3"></span>
                                         <p class="large margin-5-b">
                                             Today: Sunny currently. The high will be 32<sup>o</sup>.
                                             Partly cloudy tonight with a low of 28<sup>o</sup>.
@@ -172,7 +172,7 @@
                                 <div class="slide-content padding-30 no-padding-b">
                                     <div class="padding-15 no-padding-t">
                                         <h3 class="font-bold margin-15-v">Details</h3>
-                                        <span class="sp3"></span>
+                                        <span class="sp-3"></span>
                                         <p class="large margin-5-b">
                                             Today: Sunny currently. The high will be 32<sup>o</sup>.
                                             Partly cloudy tonight with a low of 28<sup>o</sup>.

@@ -1,5 +1,12 @@
 // out: false
 /* themes */ @import '_settings.less';
+
+@set-dark:                            #0b0d10;
+@set-x-dark:                          #07080a;
+
+@theme-color-names:                   gray, green, yellow, orange, red, default, default2;
+@theme-colors:                        '@{gray}', '@{green}', '@{yellow}', '@{orange}', '@{red}', '@{default}', '@{default2}';
+
 .ui-x-light {
     color: @black;
     .icon,a,button { &:not([class*="ui-"]) { &:extend(.ui-x-light); } }
@@ -46,3 +53,51 @@
 
 }
 ._theme-loop(length(@theme-colors));
+
+._darkmode-themes (@darkmode) when (@darkmode = true) {
+   @media (prefers-color-scheme: dark) {
+      .ui-x-light {
+         color: @white;
+         .icon,a,button { &:not([class*="ui-"]) { &:extend(.ui-x-light); } }
+      }
+      .ui-light {
+         &:extend(.ui-x-light);
+         .icon,a,button { &:not([class*="ui-"]) { &:extend(.ui-light); } }
+      }
+
+      .dark-ui {
+         color: fade(@white, 70%) !important;
+         .icon,a,button { &:not([class*="ui-"]) { &:extend(.dark-ui); } }
+      }
+     .x-dark-ui {
+         color: fade(@white, 65%) !important;
+         .icon,a,button { &:not([class*="ui-"]) { &:extend(.x-dark-ui); } }
+      }
+
+     .set-dark:not(.theme-gray)[class*="theme-"][class*="ui-"],
+     .set-dark:not(.theme-light)[class*="theme-"] [class*="ui-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) {
+         ._bg(@set-dark);
+     }
+     .set-dark:not(.theme-gray)[class*="theme-"][class*="ui-x-"],
+     .set-dark:not(.theme-light)[class*="theme-"] [class*="ui-x-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) {
+         ._bg(@set-x-dark);
+     }
+
+     .bg-white:not([class*="ui-"]) { ._bg(@black) !important; }
+     .card .bg-white:not([class*="ui-"]) { ._bg(@card-dark) !important; }
+
+     ._theme(gray,  @card-dark);
+
+     ._theme-dark-loop(@i) when (@i > 0) {
+        ._theme-dark-loop(@i - 1);
+
+        @name: extract(@theme-color-names, @i);
+        @color: color(extract(@theme-colors, @i));
+        ._theme-dark(@name,  @color);
+
+     }
+     ._theme-dark-loop(length(@theme-colors));
+   }
+}
+
+._darkmode-themes(@darkmode);

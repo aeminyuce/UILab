@@ -373,7 +373,7 @@
                     <pre class="round margin-5-v">loadingButton.toggle(id);</pre>
                     <button class="btn btn-sm round ui-dark ease-btn" onclick="loadingButton.toggle('#loadingBtnID');">Run Code</button>
 
-                    <span class="sp30"></span>
+                    <span class="sp-30"></span>
 
                     <div class="ease-1st-btn">
                         <a href="#" class="loadingBtnClass btn btn-lg padding-25-h round theme-default2 ui-dark">Link</a>

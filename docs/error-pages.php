@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col-12 padding-30-v">
 
-                <span class="sp30 margin-30-v"></span>
+                <span class="sp-30 margin-30-v"></span>
 
                 <div class="align-c form-lg">
                     <p class="font-red largest font-bold">Error: 404 Page Not Found</p>
@@ -27,7 +27,7 @@
                     </ul>
                 </div>
 
-                <span class="sp30 margin-30-v padding-30-v"></span>
+                <span class="sp-30 margin-30-v padding-30-v"></span>
 
                 <div class="align-c form-lg">
                     <p class="font-yellow largest font-bold">Error: 403 Forbidden</p>
@@ -43,7 +43,7 @@
                     </a>
                 </div>
 
-                <span class="sp30 margin-30-v padding-30-v"></span>
+                <span class="sp-30 margin-30-v padding-30-v"></span>
 
                 <div class="align-c form-lg">
                     <p class="font-orange largest font-bold">Error: 500 Unexpected Error</p>
@@ -59,7 +59,7 @@
                     </a>
                 </div>
 
-                <span class="sp30 margin-30-v"></span>
+                <span class="sp-30 margin-30-v"></span>
 
             </div>
         </div>

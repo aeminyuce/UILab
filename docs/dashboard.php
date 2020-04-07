@@ -308,7 +308,7 @@
                         </ul>
                     </div>
 
-                    <span class="sp15"></span>
+                    <span class="sp-15"></span>
 
                     <div class="btn-list margin-10 icons-margin-10-r form-lg ease-1st-btn">
                         <button class="btn round">
@@ -818,7 +818,7 @@
                                                     <p class="required-msg">Enter your site name.</p>
                                                 </div>
 
-                                                <div class="sp1 margin-20 border-b border-dashed"></div>
+                                                <div class="sp-1 margin-20 border-b border-dashed"></div>
 
                                                 <div class="col-8 offset-2">
                                                     <h3>Address Details</h3>
@@ -1019,7 +1019,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <span class="sp3"></span>
+                                    <span class="sp-3"></span>
                                     <p class="x-dark large margin-5-b">Daily reports that all received.</p>
                                     <p class="light">
                                         <svg class="icon icon-xs margin-5-r"><use href="#clock"></use></svg>
@@ -1352,7 +1352,7 @@
                                                     </button>
                                                     <input class="data-filter" type="text" placeholder="Search">
                                                 </div>
-                                                <span class="sp5 hidden-lg"></span>
+                                                <span class="sp-5 hidden-lg"></span>
                                             </div>
                                             <div class="col-lg-3 col-6 no-fluid">
                                                 <div class="select round no-border ui-x-light ease-form">
@@ -1397,7 +1397,7 @@
                                             </div>
                                         </div>
 
-                                        <span class="sp15"></span>
+                                        <span class="sp-15"></span>
 
                                         <div class="data-container">
 
@@ -1917,7 +1917,7 @@
 
                                         </div>
 
-                                        <span class="sp10"></span>
+                                        <span class="sp-10"></span>
 
                                         <div class="row row-no-gap no-fluid">
                                             <div class="col-4">

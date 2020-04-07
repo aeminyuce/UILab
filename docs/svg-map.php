@@ -252,7 +252,7 @@
                     </svg>
                 </div>
 
-                <span class="sp30 margin-30-v"></span>
+                <span class="sp-30 margin-30-v"></span>
 
                 <h3 class="align-c">Example</h3>
                 <div class="svg-map">

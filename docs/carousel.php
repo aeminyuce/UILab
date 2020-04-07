@@ -37,9 +37,9 @@
                                             <h3 class="margin-15-v">Carousel Html Title</h3>
                                             <p class="large">
                                                 Maecenas blandit est ultrices eleifend commodo. Integer eget eros a orci ornare tincidunt et at dolor. Suspendisse nec augue vel mauris malesuada aliquet. Quisque id tincidunt libero.
-                                                <span class="sp10"></span>
+                                                <span class="sp-10"></span>
                                                 Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
-                                                <span class="sp15"></span>
+                                                <span class="sp-15"></span>
                                                 <a href="#" class="btn btn-xs-fluid btn-lg ease-btn">
                                                     Continue
                                                     <svg class="icon margin-5-l"><use href="#arrow-right"></use></svg>
@@ -76,9 +76,9 @@
                                             <h3 class="margin-15-v">Carousel Html Title</h3>
                                             <p class="large">
                                                 Maecenas blandit est ultrices eleifend commodo. Integer eget eros a orci ornare tincidunt et at dolor. Suspendisse nec augue vel mauris malesuada aliquet. Quisque id tincidunt libero.
-                                                <span class="sp10"></span>
+                                                <span class="sp-10"></span>
                                                 Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
-                                                <span class="sp15"></span>
+                                                <span class="sp-15"></span>
                                                 <a href="#" class="btn btn-xs-fluid btn-lg ease-btn">
                                                     Continue
                                                     <svg class="icon margin-5-l"><use href="#arrow-right"></use></svg>
@@ -115,9 +115,9 @@
                                             <h3 class="margin-15-v">Carousel Html Title</h3>
                                             <p class="large">
                                                 Maecenas blandit est ultrices eleifend commodo. Integer eget eros a orci ornare tincidunt et at dolor. Suspendisse nec augue vel mauris malesuada aliquet. Quisque id tincidunt libero.
-                                                <span class="sp10"></span>
+                                                <span class="sp-10"></span>
                                                 Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
-                                                <span class="sp15"></span>
+                                                <span class="sp-15"></span>
                                                 <a href="#" class="btn btn-xs-fluid btn-lg ease-btn">
                                                     Continue
                                                     <svg class="icon margin-5-l"><use href="#arrow-right"></use></svg>
@@ -205,7 +205,7 @@
                         </div>
                     </div>
 
-                    <span class="sp30"></span>
+                    <span class="sp-30"></span>
 
                     <h5 class="font-bold">Half Sized Image Carousel</h5>
                     <div class="carousel half-sized padding-15-b photo-gallery ease-photo-gallery shadow-in-sm round theme-gray ui-x-light" data-col="4" data-col-md="3" data-col-sm="2" data-col-xs="2">

@@ -38,7 +38,7 @@
                             <h2 class="font-bold margin-15-v">$19</h2>
                             <h4>Business License</h4>
                             <p class="x-light-ui large margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
-                            <span class="sp10"></span>
+                            <span class="sp-10"></span>
                             <a class="btn btn-multi btn-lg btn-xs-fluid padding-30-h padding-15-v round theme-default ui-dark ease-btn" href="#">
                                 <b>PURCHASE</b>
                                 <svg class="icon margin-5-l"><use href="#shopping-cart"></use></svg>
@@ -67,7 +67,7 @@
                     </div>
                 </div>
 
-                <span class="sp30"></span>
+                <span class="sp-30"></span>
 
                 <h4>Detailed Pricing Table</h4>
 
@@ -120,7 +120,7 @@
                                 <h2 class="font-bold margin-15-v">$19</h2>
                                 <h4>Business License</h4>
                                 <p class="x-light-ui large margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
-                                <span class="sp10"></span>
+                                <span class="sp-10"></span>
                                 <a class="btn btn-multi btn-lg btn-xs-fluid padding-30-h padding-15-v margin-25-b round theme-default ui-dark ease-btn" href="#">
                                     <b>PURCHASE</b>
                                     <svg class="icon margin-5-l"><use href="#shopping-cart"></use></svg>

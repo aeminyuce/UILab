@@ -16,7 +16,7 @@
                                     </button>
                                     <input class="data-filter" type="text" placeholder="Search">
                                 </div>
-                                <span class="sp5 hidden-lg"></span>
+                                <span class="sp-5 hidden-lg"></span>
                             </div>
                             <div class="col-lg-3 col-6 no-fluid">
                                 <div class="select round no-border ui-x-light ease-form">
@@ -61,7 +61,7 @@
                             </div>
                         </div>
 
-                        <span class="sp15"></span>
+                        <span class="sp-15"></span>
 
                         <div class="data-container">
 
@@ -451,7 +451,7 @@
                             </div>
                         </div>
 
-                        <span class="sp10"></span>
+                        <span class="sp-10"></span>
 
                         <div class="row row-no-gap no-fluid">
                             <div class="col-4">
@@ -467,7 +467,7 @@
                     </div>
                 </div>
 
-                <span class="sp30"></span>
+                <span class="sp-30"></span>
 
                 <div class="data-list data-striped data-hover border ease-data-list round">
 
@@ -490,7 +490,7 @@
                                 Check All
                             </label>
 
-                            <span class="sp10 visible-sm"></span>
+                            <span class="sp-10 visible-sm"></span>
 
                             <div class="select form-xs-inline round border-dual ease-form">
                                 <svg class="icon"><use href="#angle-down"></svg>
@@ -1234,7 +1234,7 @@
 
                 </div>
 
-                <span class="sp30"></span>
+                <span class="sp-30"></span>
 
                 <div class="data-list data-hover border ease-data-list round">
 

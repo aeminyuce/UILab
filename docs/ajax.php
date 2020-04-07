@@ -31,7 +31,7 @@ callback: function (status, response) {
 
 });</pre>
 
-                    <span class="sp30"></span>
+                    <span class="sp-30"></span>
 
                     <b class="margin-5-b block">JSON Example:</b>
                     <pre class="round margin-5-b scroll-v">var myJSONRequests = [];
@@ -84,7 +84,7 @@ callback: function (status, response, xhr) {
 
 });</pre>
 
-                    <span class="sp30"></span>
+                    <span class="sp-30"></span>
 
                 </div>
 

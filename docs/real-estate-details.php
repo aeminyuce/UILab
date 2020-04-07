@@ -75,13 +75,13 @@
                         <div class="padding-30 large align-justify">
                             <h4>Details</h4>
                             Each villa has been meticulously designed to meet all the demands that a luxury villa has to provide as well as offer a contemporary image of great beauty.
-                            <span class="sp20"></span>
+                            <span class="sp-20"></span>
                             Villas, although of different size, have 4 bedrooms and 5 bathrooms located on ground floor and first. A large basement will locate another bedroom service, bathroom and common areas that can be allocated to gym, cinema, game room.
-                            <span class="sp20"></span>
+                            <span class="sp-20"></span>
                             In addition, all three have a large solarium where you can enjoy both the views and the surrounding environment.
-                            <span class="sp20"></span>
+                            <span class="sp-20"></span>
                             A unique opportunity in a highly sought after location that begins to be considered as the New Golden Mile.
-                            <span class="sp20"></span>
+                            <span class="sp-20"></span>
                             The development of 3 luxury villas is planned in the residential neighborhood.
                         </div>
                         <div class="padding-30 border-t">
@@ -105,7 +105,7 @@
                                     <div class="donut-chart ease-donut-chart">
                                         <strong>
                                             <span class="large light">Interior</span>
-                                            <span class="sp2"></span>4,9/5
+                                            <span class="sp-2"></span>4,9/5
                                         </strong>
                                         <svg viewBox="0 0 160 160">
                                             <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
@@ -117,7 +117,7 @@
                                     <div class="donut-chart ease-donut-chart">
                                         <strong>
                                             <span class="large light">Exterior</span>
-                                            <span class="sp2"></span>4/5
+                                            <span class="sp-2"></span>4/5
                                         </strong>
                                         <svg viewBox="0 0 160 160">
                                             <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
@@ -129,7 +129,7 @@
                                     <div class="donut-chart ease-donut-chart">
                                         <strong>
                                             <span class="large light">Quality</span>
-                                            <span class="sp2"></span>4/5
+                                            <span class="sp-2"></span>4/5
                                         </strong>
                                         <svg viewBox="0 0 160 160">
                                             <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
@@ -141,7 +141,7 @@
                                     <div class="donut-chart ease-donut-chart">
                                         <strong>
                                             <span class="large light">Savings</span>
-                                            <span class="sp2"></span>3.9/5
+                                            <span class="sp-2"></span>3.9/5
                                         </strong>
                                         <svg viewBox="0 0 160 160">
                                             <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
@@ -252,11 +252,11 @@
                                     </button>
                                 </div>
                             </div>
-                            <span class="sp15"></span>
+                            <span class="sp-15"></span>
                             <button class="btn btn-lg block round theme-default2 ui-dark ease-btn" type="submit">
                                 <b>MAKE OFFER</b>
                             </button>
-                            <span class="sp5"></span>
+                            <span class="sp-5"></span>
                         </form>
                     </div>
                 </div>
@@ -300,13 +300,13 @@
                             <b>2019</b>
                         </li>
                     </ul>
-                    <span class="sp5"></span>
+                    <span class="sp-5"></span>
                     <div class="align-l icons-no-opacity form-lg ease-1st-btn">
                         <a class="btn block btn-multi round-t" href="#">
                             <svg class="icon right"><use href="#images"></use></svg>
                             Show All HD Images
                         </a>
-                        <span class="sp1"></span>
+                        <span class="sp-1"></span>
                         <a class="btn block btn-multi round-b" href="#">
                             <svg class="icon right"><use href="#file-pdf"></use></svg>
                             Download PDF Brochure

@@ -1,4 +1,14 @@
 /* reset */
+:root {
+  --body-bg: #f9f9f9;
+  --black-fade15: rgba(15, 17, 21, 0.15);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-bg: #15181d;
+    --black-fade15: rgba(255, 255, 255, 0.15);
+  }
+}
 *,
 *:before,
 *:after {
@@ -21,6 +31,7 @@ select {
 }
 body {
   background-color: #f9f9f9;
+  background-color: var(--body-bg);
 }
 article,
 aside,
@@ -115,7 +126,8 @@ hr {
   box-sizing: content-box;
   width: 100%;
   height: 1px;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(15, 17, 21, 0.15);
+  background-color: var(--black-fade15);
   margin-top: 20px !important;
   margin-bottom: 20px !important;
   border: 0;
@@ -189,35 +201,8 @@ html:not(.mobile) .hidden-dekstop,
   -moz-user-select: none;
   user-select: none;
 }
-.clearfix {
-  clear: both !important;
-  display: block;
-}
-.img-fluid {
-  height: auto !important;
-}
-.highlight {
-  display: block;
-}
-.highlight:not(:last-child) {
-  margin-bottom: 20px !important;
-}
-.block,
-.block-1st > *:not(.row):not([class*="hidden-"]),
-.block-2nd > * > *:not(.row):not([class*="hidden-"]) {
-  width: 100%;
-  display: block !important;
-}
-.inline,
-.inline-1st > *:not(.row):not([class*="hidden-"]),
-.inline-2nd > * > *:not(.row):not([class*="hidden-"]) {
-  display: inline !important;
-}
-.inline-block,
-.inline-block-1st > *:not(.row):not([class*="hidden-"]),
-.inline-block-2nd > * > *:not(.row):not([class*="hidden-"]) {
-  vertical-align: middle;
-  display: inline-block !important;
+.lg-float {
+  float: none !important;
 }
 .set-fixed {
   position: fixed;
@@ -267,6 +252,45 @@ html:not(.mobile) .hidden-dekstop,
   transform: translateX(-50%) translateY(-50%);
   top: 50%;
 }
+.cursor-default {
+  cursor: default !important;
+}
+.cursor-pointer {
+  cursor: pointer !important;
+}
+.clearfix {
+  clear: both !important;
+  display: block;
+}
+.img-fluid {
+  height: auto !important;
+}
+.highlight {
+  display: block;
+}
+.highlight:not(:last-child) {
+  margin-bottom: 20px !important;
+}
+.block,
+.block-1st > *:not(.row):not([class*="hidden-"]),
+.block-2nd > * > *:not(.row):not([class*="hidden-"]) {
+  width: 100%;
+  display: block !important;
+}
+.inline,
+.inline-1st > *:not(.row):not([class*="hidden-"]),
+.inline-2nd > * > *:not(.row):not([class*="hidden-"]) {
+  display: inline !important;
+}
+.inline-block,
+.inline-block-1st > *:not(.row):not([class*="hidden-"]),
+.inline-block-2nd > * > *:not(.row):not([class*="hidden-"]) {
+  vertical-align: middle;
+  display: inline-block !important;
+}
+.scroll {
+  overflow: auto !important;
+}
 .scroll-v {
   overflow-x: hidden !important;
   overflow-y: auto !important;
@@ -275,16 +299,13 @@ html:not(.mobile) .hidden-dekstop,
   overflow-x: auto !important;
   overflow-y: hidden !important;
 }
-.scroll {
-  overflow: auto !important;
-}
 .no-scroll {
   overflow: hidden !important;
 }
-.round,
 [class*="round-"],
-.circle,
-[class*="circle-"] {
+[class*="circle-"],
+.round,
+.circle {
   background-clip: padding-box;
 }
 .round {
@@ -329,46 +350,40 @@ html:not(.mobile) .hidden-dekstop,
 .circle-l {
   border-radius: 1000px 0 0 1000px;
 }
-.shadow-sm {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-}
 .shadow {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.shadow-sm {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 .shadow-lg {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-.shadow-in-sm {
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
-}
 .shadow-in {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
+.shadow-in-sm {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
 .shadow-in-lg {
   box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-.cursor-default {
-  cursor: default !important;
-}
-.cursor-pointer {
-  cursor: pointer !important;
 }
 .no-opacity,
 html:not(.mobile) .opacity:hover,
 html:not(.mobile) .opacity-more:hover {
   opacity: 1 !important;
 }
-.half-opacity {
-  opacity: 0.5 !important;
-}
-.full-opacity {
-  opacity: 0 !important;
+.opacity {
+  opacity: 0.75 !important;
 }
 .opacity-more {
   opacity: 0.45 !important;
 }
-.opacity {
-  opacity: 0.75 !important;
+.opacity-half {
+  opacity: 0.5 !important;
+}
+.opacity-full {
+  opacity: 0 !important;
 }
 html:not(.mobile) .hover-shadow:hover,
 html:not(.mobile) .hover-shadow-1st > *:hover,
@@ -390,35 +405,35 @@ html:not(.mobile) .hover-t-1st > *:hover,
 html:not(.mobile) .hover-t-2nd > * > *:hover {
   transform: translateY(-1%);
 }
-html:not(.mobile) .hover-r:hover,
-html:not(.mobile) .hover-r-1st > *:hover,
-html:not(.mobile) .hover-r-2nd > * > *:hover {
-  transform: translateX(1%);
-}
-html:not(.mobile) .hover-b:hover,
-html:not(.mobile) .hover-b-1st > *:hover,
-html:not(.mobile) .hover-b-2nd > * > *:hover {
-  transform: translateY(1%);
-}
-html:not(.mobile) .hover-l:hover,
-html:not(.mobile) .hover-l-1st > *:hover,
-html:not(.mobile) .hover-l-2nd > * > *:hover {
-  transform: translateX(-1%);
-}
 html:not(.mobile) .hover-t-more:hover,
 html:not(.mobile) .hover-t-more-1st > *:hover,
 html:not(.mobile) .hover-t-more-2nd > * > *:hover {
   transform: translateY(-5%);
+}
+html:not(.mobile) .hover-r:hover,
+html:not(.mobile) .hover-r-1st > *:hover,
+html:not(.mobile) .hover-r-2nd > * > *:hover {
+  transform: translateX(1%);
 }
 html:not(.mobile) .hover-r-more:hover,
 html:not(.mobile) .hover-r-more-1st > *:hover,
 html:not(.mobile) .hover-r-more-2nd > * > *:hover {
   transform: translateX(5%);
 }
+html:not(.mobile) .hover-b:hover,
+html:not(.mobile) .hover-b-1st > *:hover,
+html:not(.mobile) .hover-b-2nd > * > *:hover {
+  transform: translateY(1%);
+}
 html:not(.mobile) .hover-b-more:hover,
 html:not(.mobile) .hover-b-more-1st > *:hover,
 html:not(.mobile) .hover-b-more-2nd > * > *:hover {
   transform: translateY(5%);
+}
+html:not(.mobile) .hover-l:hover,
+html:not(.mobile) .hover-l-1st > *:hover,
+html:not(.mobile) .hover-l-2nd > * > *:hover {
+  transform: translateX(-1%);
 }
 html:not(.mobile) .hover-l-more:hover,
 html:not(.mobile) .hover-l-more-1st > *:hover,
@@ -430,22 +445,19 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
 .mobile .scroll-h {
   -webkit-overflow-scrolling: touch;
 }
-.list-unstyled,
 .list-custom,
-.list-custom ul,
-.list-custom ol,
 .list-inline,
+.list-custom ul,
 .list-inline ul,
-.list-inline ol {
+.list-custom ol,
+.list-inline ol,
+.list-unstyled {
   list-style: none;
   padding: 0;
+  margin-bottom: 0;
 }
 .list-unstyled:not(:last-child) {
   margin-bottom: 20px;
-}
-.list-custom,
-.list-inline {
-  margin-bottom: 0;
 }
 .list-inline ul,
 .list-inline ol,
@@ -453,48 +465,39 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
   vertical-align: middle;
   display: inline-block;
 }
-.sp1,
-.sp2,
-.sp3,
-.sp4,
-.sp5,
-.sp10,
-.sp15,
-.sp20,
-.sp25,
-.sp30 {
+[class*="sp-"] {
   width: 100%;
   display: block !important;
   clear: both !important;
 }
-.sp1 {
+.sp-1 {
   height: 1px;
 }
-.sp2 {
+.sp-2 {
   height: 2px;
 }
-.sp3 {
+.sp-3 {
   height: 3px;
 }
-.sp4 {
+.sp-4 {
   height: 4px;
 }
-.sp5 {
+.sp-5 {
   height: 5px;
 }
-.sp10 {
+.sp-10 {
   height: 10px;
 }
-.sp15 {
+.sp-15 {
   height: 15px;
 }
-.sp20 {
+.sp-20 {
   height: 20px;
 }
-.sp25 {
+.sp-25 {
   height: 25px;
 }
-.sp30 {
+.sp-30 {
   height: 30px;
 }
 .align-r,
@@ -540,14 +543,10 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
     width: 100% !important;
   }
 }
-@media (max-width: 959px) and (min-width: 768px) {
-  .visible-sm {
-    display: none !important;
-  }
-  .visible-xs {
-    display: none !important;
-  }
-  .hidden-md {
+@media (min-width: 768px) and (max-width: 959px) {
+  .visible-xs,
+  .visible-sm,
+  .visible-md {
     display: none !important;
   }
   .img-md-fluid {
@@ -579,14 +578,10 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
     width: 100% !important;
   }
 }
-@media (max-width: 767px) and (min-width: 481px) {
-  .hidden-md {
-    display: none !important;
-  }
-  .visible-xs {
-    display: none !important;
-  }
-  .hidden-sm {
+@media (min-width: 481px) and (max-width: 767px) {
+  .visible-xs,
+  .visible-sm,
+  .visible-md {
     display: none !important;
   }
   .img-md-fluid,
@@ -601,33 +596,22 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
   .md-clearfix,
   .sm-clearfix {
     display: block;
-  }
-  .md-clearfix {
-    clear: both !important;
-  }
-  .sm-clearfix {
     clear: both !important;
   }
   .md-align-c,
-  .md-align-c * {
-    text-align: center !important;
-  }
-  .md-align-l,
-  .md-align-l * {
-    text-align: left !important;
-  }
-  .md-align-r,
-  .md-align-r * {
-    text-align: right !important;
-  }
+  .md-align-c *,
   .sm-align-c,
   .sm-align-c * {
     text-align: center !important;
   }
+  .md-align-l,
+  .md-align-l *,
   .sm-align-l,
   .sm-align-l * {
     text-align: left !important;
   }
+  .md-align-r,
+  .md-align-r *,
   .sm-align-r,
   .sm-align-r * {
     text-align: right !important;
@@ -659,48 +643,28 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
   .sm-clearfix,
   .xs-clearfix {
     display: block;
-  }
-  .md-clearfix {
-    clear: both !important;
-  }
-  .sm-clearfix {
-    clear: both !important;
-  }
-  .xs-clearfix {
     clear: both !important;
   }
   .md-align-c,
-  .md-align-c * {
-    text-align: center !important;
-  }
-  .md-align-l,
-  .md-align-l * {
-    text-align: left !important;
-  }
-  .md-align-r,
-  .md-align-r * {
-    text-align: right !important;
-  }
+  .md-align-c *,
   .sm-align-c,
-  .sm-align-c * {
-    text-align: center !important;
-  }
-  .sm-align-l,
-  .sm-align-l * {
-    text-align: left !important;
-  }
-  .sm-align-r,
-  .sm-align-r * {
-    text-align: right !important;
-  }
+  .sm-align-c *,
   .xs-align-c,
   .xs-align-c * {
     text-align: center !important;
   }
-  .xs-align-l,
-  .xs-align-l * {
+  .md-align-l,
+  .md-align-l *,
+  .sm-align-l,
+  .sm-align-l *,
+  .xs-align-c,
+  .xs-align-c * {
     text-align: left !important;
   }
+  .md-align-r,
+  .md-align-r *,
+  .sm-align-r,
+  .sm-align-r *,
   .xs-align-r,
   .xs-align-r * {
     text-align: right !important;
@@ -750,6 +714,22 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
   .xl-align-r,
   .xl-align-r * {
     text-align: right !important;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .hidden-light {
+    display: none !important;
+  }
+  .visible-dark {
+    display: none !important;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .hidden-dark {
+    display: none !important;
+  }
+  .visible-light {
+    display: none !important;
   }
 }
 /* grid */
@@ -9229,7 +9209,7 @@ html:not(.mobile) .preview-next:hover {
 .ui-light .icon:not([class*="ui-"]),
 .ui-light a:not([class*="ui-"]),
 .ui-light button:not([class*="ui-"]) {
-  color: #000;
+  color: #0f1115;
 }
 .ui-dark,
 .ui-dark .icon:not([class*="ui-"]),
@@ -9257,13 +9237,13 @@ html:not(.mobile) .preview-next:hover {
 .dark-ui .icon:not([class*="ui-"]),
 .dark-ui a:not([class*="ui-"]),
 .dark-ui button:not([class*="ui-"]) {
-  color: rgba(0, 0, 0, 0.45) !important;
+  color: rgba(15, 17, 21, 0.45) !important;
 }
 .x-dark-ui,
 .x-dark-ui .icon:not([class*="ui-"]),
 .x-dark-ui a:not([class*="ui-"]),
 .x-dark-ui button:not([class*="ui-"]) {
-  color: rgba(0, 0, 0, 0.45) !important;
+  color: rgba(15, 17, 21, 0.45) !important;
 }
 .bg-white:not([class*="ui-"]) {
   background-color: #fff !important;
@@ -9607,28 +9587,250 @@ html:not(.mobile) .theme-default2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn
 .theme-default2 .ui-border:not([class*="theme-"]) {
   border-color: #108eef;
 }
-/* darkmode */
-@media (prefers-color-scheme: light) {
-  .hidden-light {
-    display: none !important;
+@media (prefers-color-scheme: dark) {
+  .ui-x-light,
+  .ui-x-light .icon:not([class*="ui-"]),
+  .ui-x-light a:not([class*="ui-"]),
+  .ui-x-light button:not([class*="ui-"]),
+  .ui-light,
+  .ui-x-light .icon:not([class*="ui-"]),
+  .ui-x-light a:not([class*="ui-"]),
+  .ui-x-light button:not([class*="ui-"]),
+  .ui-light,
+  .ui-light .icon:not([class*="ui-"]),
+  .ui-light a:not([class*="ui-"]),
+  .ui-light button:not([class*="ui-"]),
+  .ui-light .icon:not([class*="ui-"]),
+  .ui-light a:not([class*="ui-"]),
+  .ui-light button:not([class*="ui-"]),
+  .ui-light .icon:not([class*="ui-"]),
+  .ui-light a:not([class*="ui-"]),
+  .ui-light button:not([class*="ui-"]) {
+    color: #fff;
   }
-  .visible-dark {
-    display: none !important;
+  .dark-ui,
+  .dark-ui .icon:not([class*="ui-"]),
+  .dark-ui a:not([class*="ui-"]),
+  .dark-ui button:not([class*="ui-"]),
+  .dark-ui .icon:not([class*="ui-"]),
+  .dark-ui a:not([class*="ui-"]),
+  .dark-ui button:not([class*="ui-"]) {
+    color: rgba(255, 255, 255, 0.7) !important;
+  }
+  .x-dark-ui,
+  .x-dark-ui .icon:not([class*="ui-"]),
+  .x-dark-ui a:not([class*="ui-"]),
+  .x-dark-ui button:not([class*="ui-"]),
+  .x-dark-ui .icon:not([class*="ui-"]),
+  .x-dark-ui a:not([class*="ui-"]),
+  .x-dark-ui button:not([class*="ui-"]) {
+    color: rgba(255, 255, 255, 0.65) !important;
+  }
+  .set-dark:not(.theme-gray)[class*="theme-"][class*="ui-"],
+  .set-dark:not(.theme-light)[class*="theme-"] [class*="ui-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) {
+    background-color: #0b0d10;
+  }
+  .set-dark:not(.theme-gray)[class*="theme-"][class*="ui-x-"],
+  .set-dark:not(.theme-light)[class*="theme-"] [class*="ui-x-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) {
+    background-color: #07080a;
+  }
+  .bg-white:not([class*="ui-"]) {
+    background-color: #0f1115 !important;
+  }
+  .card .bg-white:not([class*="ui-"]) {
+    background-color: #2f343e !important;
+  }
+  .theme-gray.ui-x-light,
+  .theme-gray .ui-x-light:not([class*="theme-"]) {
+    background-color: rgba(157, 165, 181, 0.65);
+  }
+  html:not(.mobile) .theme-gray.ui-x-light.hover:hover,
+  html:not(.mobile) .theme-gray .ui-x-light:not([class*="theme-"]).hover:hover,
+  html:not(.mobile) .theme-gray.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+  html:not(.mobile) .theme-gray .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+    background-color: rgba(69, 76, 91, 0.65);
+  }
+  .theme-gray.ui-light,
+  .theme-gray .ui-light:not([class*="theme-"]) {
+    background-color: rgba(128, 139, 159, 0.65);
+  }
+  html:not(.mobile) .theme-gray.ui-light.hover:hover,
+  html:not(.mobile) .theme-gray .ui-light:not([class*="theme-"]).hover:hover,
+  html:not(.mobile) .theme-gray.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+  html:not(.mobile) .theme-gray .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+    background-color: rgba(69, 76, 91, 0.65);
+  }
+  .theme-gray.ui-dark,
+  .theme-gray .ui-dark:not([class*="theme-"]) {
+    background-color: #2f343e;
+  }
+  html:not(.mobile) .theme-gray.ui-dark.hover:hover,
+  html:not(.mobile) .theme-gray .ui-dark:not([class*="theme-"]).hover:hover,
+  html:not(.mobile) .theme-gray.ui-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+  html:not(.mobile) .theme-gray .ui-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+    background-color: #454c5b;
+  }
+  .theme-gray.ui-x-dark,
+  .theme-gray .ui-x-dark:not([class*="theme-"]) {
+    background-color: #191c21;
+  }
+  html:not(.mobile) .theme-gray.ui-x-dark.hover:hover,
+  html:not(.mobile) .theme-gray .ui-x-dark:not([class*="theme-"]).hover:hover,
+  html:not(.mobile) .theme-gray.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+  html:not(.mobile) .theme-gray .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+    background-color: #2f343e;
+  }
+  .theme-gray.ui-text,
+  .theme-gray .ui-text:not([class*="theme-"]) {
+    color: #2f343e;
+  }
+  .theme-gray.ui-border,
+  .theme-gray .ui-border:not([class*="theme-"]) {
+    border-color: #2f343e;
+  }
+  .theme-gray.ui-x-light,
+  .theme-gray .ui-x-light:not([class*="theme-"]) {
+    background-color: rgba(204, 204, 204, 0.15);
+  }
+  html:not(.mobile) .theme-gray.ui-x-light.hover:hover,
+  html:not(.mobile) .theme-gray .ui-x-light:not([class*="theme-"]).hover:hover,
+  html:not(.mobile) .theme-gray.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+  html:not(.mobile) .theme-gray .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+    background-color: rgba(204, 204, 204, 0.5);
+  }
+  .theme-gray.ui-light,
+  .theme-gray .ui-light:not([class*="theme-"]) {
+    background-color: rgba(204, 204, 204, 0.15);
+  }
+  html:not(.mobile) .theme-gray.ui-light.hover:hover,
+  html:not(.mobile) .theme-gray .ui-light:not([class*="theme-"]).hover:hover,
+  html:not(.mobile) .theme-gray.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+  html:not(.mobile) .theme-gray .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+    background-color: rgba(204, 204, 204, 0.5);
+  }
+  .theme-green.ui-x-light,
+  .theme-green .ui-x-light:not([class*="theme-"]) {
+    background-color: rgba(45, 189, 58, 0.15);
+  }
+  html:not(.mobile) .theme-green.ui-x-light.hover:hover,
+  html:not(.mobile) .theme-green .ui-x-light:not([class*="theme-"]).hover:hover,
+  html:not(.mobile) .theme-green.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+  html:not(.mobile) .theme-green .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+    background-color: rgba(45, 189, 58, 0.5);
+  }
+  .theme-green.ui-light,
+  .theme-green .ui-light:not([class*="theme-"]) {
+    background-color: rgba(45, 189, 58, 0.15);
+  }
+  html:not(.mobile) .theme-green.ui-light.hover:hover,
+  html:not(.mobile) .theme-green .ui-light:not([class*="theme-"]).hover:hover,
+  html:not(.mobile) .theme-green.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+  html:not(.mobile) .theme-green .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+    background-color: rgba(45, 189, 58, 0.5);
+  }
+  .theme-yellow.ui-x-light,
+  .theme-yellow .ui-x-light:not([class*="theme-"]) {
+    background-color: rgba(255, 166, 0, 0.15);
+  }
+  html:not(.mobile) .theme-yellow.ui-x-light.hover:hover,
+  html:not(.mobile) .theme-yellow .ui-x-light:not([class*="theme-"]).hover:hover,
+  html:not(.mobile) .theme-yellow.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+  html:not(.mobile) .theme-yellow .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+    background-color: rgba(255, 166, 0, 0.5);
+  }
+  .theme-yellow.ui-light,
+  .theme-yellow .ui-light:not([class*="theme-"]) {
+    background-color: rgba(255, 166, 0, 0.15);
+  }
+  html:not(.mobile) .theme-yellow.ui-light.hover:hover,
+  html:not(.mobile) .theme-yellow .ui-light:not([class*="theme-"]).hover:hover,
+  html:not(.mobile) .theme-yellow.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+  html:not(.mobile) .theme-yellow .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+    background-color: rgba(255, 166, 0, 0.5);
+  }
+  .theme-orange.ui-x-light,
+  .theme-orange .ui-x-light:not([class*="theme-"]) {
+    background-color: rgba(244, 117, 0, 0.15);
+  }
+  html:not(.mobile) .theme-orange.ui-x-light.hover:hover,
+  html:not(.mobile) .theme-orange .ui-x-light:not([class*="theme-"]).hover:hover,
+  html:not(.mobile) .theme-orange.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+  html:not(.mobile) .theme-orange .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+    background-color: rgba(244, 117, 0, 0.5);
+  }
+  .theme-orange.ui-light,
+  .theme-orange .ui-light:not([class*="theme-"]) {
+    background-color: rgba(244, 117, 0, 0.15);
+  }
+  html:not(.mobile) .theme-orange.ui-light.hover:hover,
+  html:not(.mobile) .theme-orange .ui-light:not([class*="theme-"]).hover:hover,
+  html:not(.mobile) .theme-orange.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+  html:not(.mobile) .theme-orange .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+    background-color: rgba(244, 117, 0, 0.5);
+  }
+  .theme-red.ui-x-light,
+  .theme-red .ui-x-light:not([class*="theme-"]) {
+    background-color: rgba(209, 15, 28, 0.15);
+  }
+  html:not(.mobile) .theme-red.ui-x-light.hover:hover,
+  html:not(.mobile) .theme-red .ui-x-light:not([class*="theme-"]).hover:hover,
+  html:not(.mobile) .theme-red.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+  html:not(.mobile) .theme-red .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+    background-color: rgba(209, 15, 28, 0.5);
+  }
+  .theme-red.ui-light,
+  .theme-red .ui-light:not([class*="theme-"]) {
+    background-color: rgba(209, 15, 28, 0.15);
+  }
+  html:not(.mobile) .theme-red.ui-light.hover:hover,
+  html:not(.mobile) .theme-red .ui-light:not([class*="theme-"]).hover:hover,
+  html:not(.mobile) .theme-red.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+  html:not(.mobile) .theme-red .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+    background-color: rgba(209, 15, 28, 0.5);
+  }
+  .theme-default.ui-x-light,
+  .theme-default .ui-x-light:not([class*="theme-"]) {
+    background-color: rgba(69, 99, 197, 0.15);
+  }
+  html:not(.mobile) .theme-default.ui-x-light.hover:hover,
+  html:not(.mobile) .theme-default .ui-x-light:not([class*="theme-"]).hover:hover,
+  html:not(.mobile) .theme-default.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+  html:not(.mobile) .theme-default .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+    background-color: rgba(69, 99, 197, 0.5);
+  }
+  .theme-default.ui-light,
+  .theme-default .ui-light:not([class*="theme-"]) {
+    background-color: rgba(69, 99, 197, 0.15);
+  }
+  html:not(.mobile) .theme-default.ui-light.hover:hover,
+  html:not(.mobile) .theme-default .ui-light:not([class*="theme-"]).hover:hover,
+  html:not(.mobile) .theme-default.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+  html:not(.mobile) .theme-default .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+    background-color: rgba(69, 99, 197, 0.5);
+  }
+  .theme-default2.ui-x-light,
+  .theme-default2 .ui-x-light:not([class*="theme-"]) {
+    background-color: rgba(16, 142, 239, 0.15);
+  }
+  html:not(.mobile) .theme-default2.ui-x-light.hover:hover,
+  html:not(.mobile) .theme-default2 .ui-x-light:not([class*="theme-"]).hover:hover,
+  html:not(.mobile) .theme-default2.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+  html:not(.mobile) .theme-default2 .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+    background-color: rgba(16, 142, 239, 0.5);
+  }
+  .theme-default2.ui-light,
+  .theme-default2 .ui-light:not([class*="theme-"]) {
+    background-color: rgba(16, 142, 239, 0.15);
+  }
+  html:not(.mobile) .theme-default2.ui-light.hover:hover,
+  html:not(.mobile) .theme-default2 .ui-light:not([class*="theme-"]).hover:hover,
+  html:not(.mobile) .theme-default2.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+  html:not(.mobile) .theme-default2 .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+    background-color: rgba(16, 142, 239, 0.5);
   }
 }
+/* darkmode */
 @media (prefers-color-scheme: dark) {
-  .hidden-dark {
-    display: none !important;
-  }
-  .visible-light {
-    display: none !important;
-  }
-  body {
-    background-color: #15181d !important;
-  }
-  hr {
-    background-color: rgba(255, 255, 255, 0.15) !important;
-  }
   body,
   a {
     color: #fff;
@@ -10122,245 +10324,5 @@ html:not(.mobile) .theme-default2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn
   }
   .alerts-msg:not([class*="ui-"]) {
     background-color: #2f343e;
-  }
-  .ui-x-light,
-  .ui-x-light .icon:not([class*="ui-"]),
-  .ui-x-light a:not([class*="ui-"]),
-  .ui-x-light button:not([class*="ui-"]),
-  .ui-light,
-  .ui-x-light .icon:not([class*="ui-"]),
-  .ui-x-light a:not([class*="ui-"]),
-  .ui-x-light button:not([class*="ui-"]),
-  .ui-light,
-  .ui-light .icon:not([class*="ui-"]),
-  .ui-light a:not([class*="ui-"]),
-  .ui-light button:not([class*="ui-"]),
-  .ui-light .icon:not([class*="ui-"]),
-  .ui-light a:not([class*="ui-"]),
-  .ui-light button:not([class*="ui-"]),
-  .ui-light .icon:not([class*="ui-"]),
-  .ui-light a:not([class*="ui-"]),
-  .ui-light button:not([class*="ui-"]) {
-    color: #fff;
-  }
-  .dark-ui,
-  .dark-ui .icon:not([class*="ui-"]),
-  .dark-ui a:not([class*="ui-"]),
-  .dark-ui button:not([class*="ui-"]),
-  .dark-ui .icon:not([class*="ui-"]),
-  .dark-ui a:not([class*="ui-"]),
-  .dark-ui button:not([class*="ui-"]) {
-    color: rgba(255, 255, 255, 0.7) !important;
-  }
-  .x-dark-ui,
-  .x-dark-ui .icon:not([class*="ui-"]),
-  .x-dark-ui a:not([class*="ui-"]),
-  .x-dark-ui button:not([class*="ui-"]),
-  .x-dark-ui .icon:not([class*="ui-"]),
-  .x-dark-ui a:not([class*="ui-"]),
-  .x-dark-ui button:not([class*="ui-"]) {
-    color: rgba(255, 255, 255, 0.65) !important;
-  }
-  .set-dark:not(.theme-gray)[class*="theme-"][class*="ui-"],
-  .set-dark:not(.theme-light)[class*="theme-"] [class*="ui-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) {
-    background-color: #0b0d10;
-  }
-  .set-dark:not(.theme-gray)[class*="theme-"][class*="ui-x-"],
-  .set-dark:not(.theme-light)[class*="theme-"] [class*="ui-x-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) {
-    background-color: #07080a;
-  }
-  .bg-white:not([class*="ui-"]) {
-    background-color: #0f1115 !important;
-  }
-  .card .bg-white:not([class*="ui-"]) {
-    background-color: #2f343e !important;
-  }
-  .theme-gray.ui-x-light,
-  .theme-gray .ui-x-light:not([class*="theme-"]) {
-    background-color: rgba(157, 165, 181, 0.65);
-  }
-  html:not(.mobile) .theme-gray.ui-x-light.hover:hover,
-  html:not(.mobile) .theme-gray .ui-x-light:not([class*="theme-"]).hover:hover,
-  html:not(.mobile) .theme-gray.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-  html:not(.mobile) .theme-gray .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-    background-color: rgba(69, 76, 91, 0.65);
-  }
-  .theme-gray.ui-light,
-  .theme-gray .ui-light:not([class*="theme-"]) {
-    background-color: rgba(128, 139, 159, 0.65);
-  }
-  html:not(.mobile) .theme-gray.ui-light.hover:hover,
-  html:not(.mobile) .theme-gray .ui-light:not([class*="theme-"]).hover:hover,
-  html:not(.mobile) .theme-gray.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-  html:not(.mobile) .theme-gray .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-    background-color: rgba(69, 76, 91, 0.65);
-  }
-  .theme-gray.ui-dark,
-  .theme-gray .ui-dark:not([class*="theme-"]) {
-    background-color: #2f343e;
-  }
-  html:not(.mobile) .theme-gray.ui-dark.hover:hover,
-  html:not(.mobile) .theme-gray .ui-dark:not([class*="theme-"]).hover:hover,
-  html:not(.mobile) .theme-gray.ui-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-  html:not(.mobile) .theme-gray .ui-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-    background-color: #454c5b;
-  }
-  .theme-gray.ui-x-dark,
-  .theme-gray .ui-x-dark:not([class*="theme-"]) {
-    background-color: #191c21;
-  }
-  html:not(.mobile) .theme-gray.ui-x-dark.hover:hover,
-  html:not(.mobile) .theme-gray .ui-x-dark:not([class*="theme-"]).hover:hover,
-  html:not(.mobile) .theme-gray.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-  html:not(.mobile) .theme-gray .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-    background-color: #2f343e;
-  }
-  .theme-gray.ui-text,
-  .theme-gray .ui-text:not([class*="theme-"]) {
-    color: #2f343e;
-  }
-  .theme-gray.ui-border,
-  .theme-gray .ui-border:not([class*="theme-"]) {
-    border-color: #2f343e;
-  }
-  .theme-gray.ui-x-light,
-  .theme-gray .ui-x-light:not([class*="theme-"]) {
-    background-color: rgba(204, 204, 204, 0.15);
-  }
-  html:not(.mobile) .theme-gray.ui-x-light.hover:hover,
-  html:not(.mobile) .theme-gray .ui-x-light:not([class*="theme-"]).hover:hover,
-  html:not(.mobile) .theme-gray.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-  html:not(.mobile) .theme-gray .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-    background-color: rgba(204, 204, 204, 0.5);
-  }
-  .theme-gray.ui-light,
-  .theme-gray .ui-light:not([class*="theme-"]) {
-    background-color: rgba(204, 204, 204, 0.15);
-  }
-  html:not(.mobile) .theme-gray.ui-light.hover:hover,
-  html:not(.mobile) .theme-gray .ui-light:not([class*="theme-"]).hover:hover,
-  html:not(.mobile) .theme-gray.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-  html:not(.mobile) .theme-gray .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-    background-color: rgba(204, 204, 204, 0.5);
-  }
-  .theme-green.ui-x-light,
-  .theme-green .ui-x-light:not([class*="theme-"]) {
-    background-color: rgba(45, 189, 58, 0.15);
-  }
-  html:not(.mobile) .theme-green.ui-x-light.hover:hover,
-  html:not(.mobile) .theme-green .ui-x-light:not([class*="theme-"]).hover:hover,
-  html:not(.mobile) .theme-green.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-  html:not(.mobile) .theme-green .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-    background-color: rgba(45, 189, 58, 0.5);
-  }
-  .theme-green.ui-light,
-  .theme-green .ui-light:not([class*="theme-"]) {
-    background-color: rgba(45, 189, 58, 0.15);
-  }
-  html:not(.mobile) .theme-green.ui-light.hover:hover,
-  html:not(.mobile) .theme-green .ui-light:not([class*="theme-"]).hover:hover,
-  html:not(.mobile) .theme-green.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-  html:not(.mobile) .theme-green .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-    background-color: rgba(45, 189, 58, 0.5);
-  }
-  .theme-yellow.ui-x-light,
-  .theme-yellow .ui-x-light:not([class*="theme-"]) {
-    background-color: rgba(255, 166, 0, 0.15);
-  }
-  html:not(.mobile) .theme-yellow.ui-x-light.hover:hover,
-  html:not(.mobile) .theme-yellow .ui-x-light:not([class*="theme-"]).hover:hover,
-  html:not(.mobile) .theme-yellow.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-  html:not(.mobile) .theme-yellow .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-    background-color: rgba(255, 166, 0, 0.5);
-  }
-  .theme-yellow.ui-light,
-  .theme-yellow .ui-light:not([class*="theme-"]) {
-    background-color: rgba(255, 166, 0, 0.15);
-  }
-  html:not(.mobile) .theme-yellow.ui-light.hover:hover,
-  html:not(.mobile) .theme-yellow .ui-light:not([class*="theme-"]).hover:hover,
-  html:not(.mobile) .theme-yellow.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-  html:not(.mobile) .theme-yellow .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-    background-color: rgba(255, 166, 0, 0.5);
-  }
-  .theme-orange.ui-x-light,
-  .theme-orange .ui-x-light:not([class*="theme-"]) {
-    background-color: rgba(244, 117, 0, 0.15);
-  }
-  html:not(.mobile) .theme-orange.ui-x-light.hover:hover,
-  html:not(.mobile) .theme-orange .ui-x-light:not([class*="theme-"]).hover:hover,
-  html:not(.mobile) .theme-orange.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-  html:not(.mobile) .theme-orange .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-    background-color: rgba(244, 117, 0, 0.5);
-  }
-  .theme-orange.ui-light,
-  .theme-orange .ui-light:not([class*="theme-"]) {
-    background-color: rgba(244, 117, 0, 0.15);
-  }
-  html:not(.mobile) .theme-orange.ui-light.hover:hover,
-  html:not(.mobile) .theme-orange .ui-light:not([class*="theme-"]).hover:hover,
-  html:not(.mobile) .theme-orange.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-  html:not(.mobile) .theme-orange .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-    background-color: rgba(244, 117, 0, 0.5);
-  }
-  .theme-red.ui-x-light,
-  .theme-red .ui-x-light:not([class*="theme-"]) {
-    background-color: rgba(209, 15, 28, 0.15);
-  }
-  html:not(.mobile) .theme-red.ui-x-light.hover:hover,
-  html:not(.mobile) .theme-red .ui-x-light:not([class*="theme-"]).hover:hover,
-  html:not(.mobile) .theme-red.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-  html:not(.mobile) .theme-red .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-    background-color: rgba(209, 15, 28, 0.5);
-  }
-  .theme-red.ui-light,
-  .theme-red .ui-light:not([class*="theme-"]) {
-    background-color: rgba(209, 15, 28, 0.15);
-  }
-  html:not(.mobile) .theme-red.ui-light.hover:hover,
-  html:not(.mobile) .theme-red .ui-light:not([class*="theme-"]).hover:hover,
-  html:not(.mobile) .theme-red.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-  html:not(.mobile) .theme-red .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-    background-color: rgba(209, 15, 28, 0.5);
-  }
-  .theme-default.ui-x-light,
-  .theme-default .ui-x-light:not([class*="theme-"]) {
-    background-color: rgba(69, 99, 197, 0.15);
-  }
-  html:not(.mobile) .theme-default.ui-x-light.hover:hover,
-  html:not(.mobile) .theme-default .ui-x-light:not([class*="theme-"]).hover:hover,
-  html:not(.mobile) .theme-default.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-  html:not(.mobile) .theme-default .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-    background-color: rgba(69, 99, 197, 0.5);
-  }
-  .theme-default.ui-light,
-  .theme-default .ui-light:not([class*="theme-"]) {
-    background-color: rgba(69, 99, 197, 0.15);
-  }
-  html:not(.mobile) .theme-default.ui-light.hover:hover,
-  html:not(.mobile) .theme-default .ui-light:not([class*="theme-"]).hover:hover,
-  html:not(.mobile) .theme-default.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-  html:not(.mobile) .theme-default .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-    background-color: rgba(69, 99, 197, 0.5);
-  }
-  .theme-default2.ui-x-light,
-  .theme-default2 .ui-x-light:not([class*="theme-"]) {
-    background-color: rgba(16, 142, 239, 0.15);
-  }
-  html:not(.mobile) .theme-default2.ui-x-light.hover:hover,
-  html:not(.mobile) .theme-default2 .ui-x-light:not([class*="theme-"]).hover:hover,
-  html:not(.mobile) .theme-default2.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-  html:not(.mobile) .theme-default2 .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-    background-color: rgba(16, 142, 239, 0.5);
-  }
-  .theme-default2.ui-light,
-  .theme-default2 .ui-light:not([class*="theme-"]) {
-    background-color: rgba(16, 142, 239, 0.15);
-  }
-  html:not(.mobile) .theme-default2.ui-light.hover:hover,
-  html:not(.mobile) .theme-default2 .ui-light:not([class*="theme-"]).hover:hover,
-  html:not(.mobile) .theme-default2.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-  html:not(.mobile) .theme-default2 .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-    background-color: rgba(16, 142, 239, 0.5);
   }
 }

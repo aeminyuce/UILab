@@ -295,12 +295,12 @@
 
                     <div id="tabID01" class="tab-content open open-ease">
                         <button class="tab btn round ui-dark ease-btn" data-id="tabID02">Show Second</button>
-                        <span class="sp10"></span>
+                        <span class="sp-10"></span>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
                     </div>
                     <div id="tabID02" class="tab-content">
                         <button class="tab btn round ui-dark ease-btn" data-id="tabID01">Show First</button>
-                        <span class="sp10"></span>
+                        <span class="sp-10"></span>
                         Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
                         <br><br>
                         Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.

@@ -401,7 +401,7 @@
                         <div class="file no-border round circle no-border ease-form form-xs-inline">
                             <input name="less" class="generate-import" type="file">
                             <span class="btn circle block ease-btn">
-                                <span class="inline-block">Import LESS</span>
+                                <span class="inline-block">Import LESS File</span>
                                 <svg class="icon margin-5-l"><use href="#import"/></svg>
                             </span>
                         </div>
@@ -861,13 +861,6 @@
                                     </span>
                                     Themes
                                 </label>
-                                <label class="custom">
-                                    <span class="switch-custom round border-dual ease-form">
-                                        <input type="checkbox" name="darkmode" value="../css/darkmode">
-                                        <i class="state ui-dark"></i>
-                                    </span>
-                                    Dark Mode
-                                </label>
                             </div>
 
                         </div>
@@ -893,9 +886,9 @@
                             </div>
 
                             <div class="align-r align-c ease-1st-btn">
-                                <span class="sp15 visible-xs"></span>
+                                <span class="sp-15 visible-xs"></span>
                                 <button name="less" class="generate-btn btn btn-xs-fluid round ui-dark">Generate LESS</button>
-                                <span class="sp5 visible-sm"></span>
+                                <span class="sp-5 visible-sm"></span>
                                 <button title="Copy to clipboard!" class="generate-copy btn btn-xs-fluid round">
                                     <svg class="icon ui-text margin-5-r no-opacity"><use href="#files"/></svg>Copy to clipboard
                                 </button>
@@ -912,7 +905,7 @@
                         <div class="file no-border round circle no-border ease-form form-xs-inline">
                             <input name="js" class="generate-import" type="file">
                             <span class="btn circle block ease-btn">
-                                <span class="inline-block">Import JS</span>
+                                <span class="inline-block">Import JS File</span>
                                 <svg class="icon margin-5-l"><use href="#import"/></svg>
                             </span>
                         </div>
@@ -1289,7 +1282,7 @@
                             </div>
 
                             <div class="align-r align-c ease-1st-btn">
-                                <span class="sp15 visible-xs"></span>
+                                <span class="sp-15 visible-xs"></span>
                                 <button name="js" class="generate-btn btn btn-xs-fluid round ui-dark">Generate JS</button>
                                 <button title="Copy to clipboard!" class="generate-copy btn btn-xs-fluid round">
                                     <svg class="icon ui-text margin-5-r no-opacity"><use href="#files"/></svg>Copy to clipboard
@@ -1420,7 +1413,7 @@
                             </div>
 
                             <div class="align-r align-c ease-1st-btn">
-                                <span class="sp15 visible-xs"></span>
+                                <span class="sp-15 visible-xs"></span>
                                 <button name="php" class="generate-btn btn btn-xs-fluid round ui-dark" data-type="icons">Generate Icons</button>
                                 <button title="Copy to clipboard!" class="generate-copy btn btn-xs-fluid round">
                                     <svg class="icon ui-text margin-5-r no-opacity"><use href="#files"/></svg>Copy to clipboard

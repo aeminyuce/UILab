@@ -1,5 +1,6 @@
 // out: false
 /* reset */ @import '_settings.less';
+
 * {
     box-sizing: border-box;
 
@@ -10,11 +11,15 @@
 }
 
 body,input,button,textarea,select { font: @font-size/@line-height @font-family; }
-body { ._bg(@body-bg); }
+body { ._bg-var(body-bg); }
 
 article,aside,details,figcaption,figure,footer,header,main,nav,section,summary,audio,canvas,video { display: block; }
 
-a,a:active,a:hover { word-wrap: break-word; text-decoration: none; }
+a {
+    &,&:active,&:hover {
+        word-wrap: break-word; text-decoration: none;
+    }
+}
 
 label { cursor: default; }
 textarea {
@@ -38,7 +43,7 @@ sub { bottom: -.25em; }
 
 img { vertical-align: middle; display: inline-block; border: 0; }
 
-hr { box-sizing: content-box; width: 100%; height: 1px; ._bg(fade(@black, 15%)); margin-top: 20px !important; margin-bottom: 20px !important; border: 0; }
+hr { box-sizing: content-box; width: 100%; height: 1px; ._bg-var(black-fade15); margin-top: 20px !important; margin-bottom: 20px !important; border: 0; }
 
 q { quotes: "\201C" "\201D" "\2018" "\2019"; }
 p:not(:last-child):not(.hint) { margin-bottom: 20px; }

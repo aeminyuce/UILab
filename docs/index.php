@@ -182,7 +182,7 @@
                         </div>
                     </div>
 
-                    <span class="sp10"></span>
+                    <span class="sp-10"></span>
 
                     <h4>Example Layouts</h4>
                     <div class="row large align-c hover-shadow-2nd hover-t-2nd">

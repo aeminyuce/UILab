@@ -73,7 +73,7 @@
         events.each('.icons-list', function () {
 
             var total = selector('li', this).length;
-            this.previousElementSibling.insertAdjacentHTML('beforeend', ' <small class="margin-5-v block half-opacity">(' + total + ' icons)</small>');
+            this.previousElementSibling.insertAdjacentHTML('beforeend', ' <small class="margin-5-v block opacity-half">(' + total + ' icons)</small>');
 
             totalIcons += total;
 
@@ -114,7 +114,7 @@
         <div class="col-12">
             <div class="padding-30 sm-no-padding align-c">
 
-                <h1>SVG Icons<small class="total margin-5-v block half-opacity"></small></h1>
+                <h1>SVG Icons<small class="total margin-5-v block opacity-half"></small></h1>
 
                 <div class="row">
                     <div class="col-4">
@@ -177,7 +177,7 @@
                     <li><svg class="icon"><use href="#move"/></svg><span>move</span></li>
                     <li><svg class="icon"><use href="#bars"/></svg><span>bars</span></li>
                     <li><svg class="icon"><use href="#bars-left"/></svg><span>bars-left</span></li>
-                    <li><svg class="icon"><use href="#bars-right"/></svg><span>bars-right</sp-rightn></li>
+                    <li><svg class="icon"><use href="#bars-right"/></svg><span>bars-right</span></li>
                     <li><svg class="icon"><use href="#bars-center"/></svg><span>bars-center</span-center</li>
                     <li><svg class="icon"><use href="#circle"/></svg><span>circle</span></li>
                     <li><svg class="icon"><use href="#circle-fill"/></svg><span>circle-fill</span></li>

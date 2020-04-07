@@ -89,7 +89,7 @@
                             <input type="text" placeholder="Search" autocomplete="off">
                         </div>
 
-                        <span class="sp25"></span>
+                        <span class="sp-25"></span>
 
                         <h5 class="margin-15-b x-dark">CATEGORIES</h5>
                         <ul class="list-unstyled list-spacer-10">
@@ -171,7 +171,7 @@
                                 <svg class="icon margin-5-r"><use href="#truck"/></svg>
                                 Fast Delivery
                             </label>
-                            <span class="sp5"></span>
+                            <span class="sp-5"></span>
                             <label class="custom block">
                                 <span class="switch-custom right round ease-form">
                                     <input type="checkbox" checked>
@@ -215,7 +215,7 @@
                                 Radio Channel <span class="dark">17</span>
                             </label>
 
-                            <span class="sp10"></span>
+                            <span class="sp-10"></span>
                             <button class="btn btn-sm circle ease-btn">
                                 See All
                                 <svg class="icon margin-5-l"><use href="#angle-down"/></svg>
@@ -292,7 +292,7 @@
 
                     <div class="row sm-fluid sm-align-c">
                         <div class="col-6">
-                            <span class="sp5 hidden-sm"></span>
+                            <span class="sp-5 hidden-sm"></span>
                             <span class="large">Found <b>47</b> and displaying <b>9</b> products.</span>
                         </div>
                         <div class="col-6 align-r sm-no-padding-t">
@@ -313,7 +313,7 @@
                                     <option value="36">Show 27</option>
                                 </select>
                             </div>
-                            <span class="sp10 visible-xs"></span>
+                            <span class="sp-10 visible-xs"></span>
                             <span class="align-c theme-default2 ease-1st-btn">
                                 <button class="btn btn-square round ui-dark">
                                     <svg class="icon"><use href="#grid-column"/></svg>

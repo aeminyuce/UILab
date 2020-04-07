@@ -265,9 +265,9 @@
                 <h4>Quotes</h4>
                 <div class="padding-30-b">
                     <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</q>
-                    <span class="sp5"></span>
+                    <span class="sp-5"></span>
                     <q class="large">Proin tellus justo, blandit non ultrices in, consequat a sem.</q>
-                    <span class="sp5"></span>
+                    <span class="sp-5"></span>
                     <q class="xx-large">Integer pellentesque sed sapien at euismod.</q>
                 </div>
 

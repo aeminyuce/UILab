@@ -39,12 +39,12 @@
                 <div class="fixed theme-green">
                     <div class="row">
                         <div class="col-12 padding-15-v align-c">
-                            <span class="sp30"></span>
+                            <span class="sp-30"></span>
                             <a href="?l=login-page" class="btn xx-light btn-lg btn-ghost btn-ghost-border btn-sm-fluid padding-30-h circle border-dual ui-border ease-btn">
                                 <span class="xx-light">Have you already an account?</span>
                                 <span class="ui-text hidden-sm">Click here to login.</span>
                             </a>
-                            <span class="sp30 margin-20-v"></span>
+                            <span class="sp-30 margin-20-v"></span>
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@
                                     </div>
                                     <p class="required-msg">Enter your first name.</p>
 
-                                    <span class="sp20"></span>
+                                    <span class="sp-20"></span>
 
                                     <label class="form-label x-dark">Last Name</label>
                                     <div class="text round border-dual ease-form">
@@ -83,7 +83,7 @@
                                     </div>
                                     <p class="required-msg">Enter your last name.</p>
 
-                                    <span class="sp20"></span>
+                                    <span class="sp-20"></span>
 
                                     <label class="form-label x-dark">Phone</label>
                                     <div class="text round border-dual ease-form">
@@ -100,7 +100,7 @@
                                     </div>
                                     <p class="required-msg">Enter your email.</p>
 
-                                    <span class="sp20"></span>
+                                    <span class="sp-20"></span>
 
                                     <label class="form-label x-dark">Password</label>
                                     <div class="text text-icon round border-dual ease-form">
@@ -111,7 +111,7 @@
                                     </div>
                                     <p class="required-msg">Minimum length is 8 characters.</p>
 
-                                    <span class="sp20"></span>
+                                    <span class="sp-20"></span>
 
                                     <label class="form-label x-dark">Confirm Password</label>
                                     <div class="text text-icon round border-dual ease-form">
@@ -125,7 +125,7 @@
                                 </div>
                                 <div class="col-12 theme-default2">
 
-                                    <span class="sp15"></span>
+                                    <span class="sp-15"></span>
                                     <label class="custom">
                                         <span class="check-custom round border-dual ease-form">
                                             <input type="checkbox" checked>
@@ -148,12 +148,12 @@
                                         <a class="font-bold ui-text" href="#">Fees.</a>
                                     </label>
 
-                                    <span class="sp30 margin-15-v"></span>
+                                    <span class="sp-30 margin-15-v"></span>
 
                                     <button type="submit" class="signup-btn btn btn-md-fluid xx-light circle hover-scale hover-shadow ease-btn">
                                         <b>SIGN UP NOW</b>
                                     </button>
-                                    <span class="sp30"></span>
+                                    <span class="sp-30"></span>
                                     <span class="dark">Have you any questions?<br>Please,</span> <a class="font-bold hoverline ui-text" href="#">click here</a> <span class="dark">to access Help Center.</span>
 
                                 </div>
@@ -161,7 +161,7 @@
                             <div class="why-join col-lg-500 col-400 col-md-350 order-sm-first sm-align-c padding-30">
 
                                 <img class="automargin" src="img/sign-up.png" alt="Join Us" width="280">
-                                <span class="sp30"></span>
+                                <span class="sp-30"></span>
 
                                 <h3 class="largest">
                                     Join our<br class="hidden-sm">huge platform<br class="hidden-sm">
@@ -191,7 +191,7 @@
 
                     </div>
 
-                    <span class="sp30"></span>
+                    <span class="sp-30"></span>
 
                 </div>
             </div>

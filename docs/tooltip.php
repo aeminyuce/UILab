@@ -10,7 +10,7 @@
                     <button class="btn margin-5-b round ui-dark" data-tooltip="b" title="Tooltip <u>Bottom</u>">Tooltip <b>Bottom</b></button>
                     <button class="btn margin-5-b round ui-dark" data-tooltip="r" title="Tooltip <i>Right</i>">Tooltip <b>Right</b></button>
                     <button class="btn margin-5-b round ui-dark" data-tooltip="l" title="Tooltip <em>Left</em>">Tooltip <b>Left</b></button>
-                    <span class="sp30"></span>
+                    <span class="sp-30"></span>
                     <button class="btn margin-5-b round ui-dark" data-tooltip="tr" title="Tooltip <b>Top Right</b>">Tooltip <b>Top Right</b></button>
                     <button class="btn margin-5-b round ui-dark" data-tooltip="tl" title="Tooltip <u>Top Left</u>">Tooltip <b>Top Left</b></button>
                     <button class="btn margin-5-b round ui-dark" data-tooltip="br" title="Tooltip <i>Bottom Right</i>">Tooltip <b>Bottom Right</b></button>
@@ -27,7 +27,7 @@
                 <div class="theme-default ease-1st-btn padding-30-b">
                     <a href="http://www.google.com/" target="_blank" class="btn margin-5-b round ui-dark" data-tooltip="t" data-only="mobile" title="Open link now!">Link (mobile)</a>
                     <a href="http://www.google.com/" target="_blank" class="btn margin-5-b round ui-dark" data-tooltip="t" data-only="desktop" title="Open link now!">Link (desktop)</a>
-                    <span class="sp10"></span>
+                    <span class="sp-10"></span>
                     <button onclick="alert('Test');" class="btn margin-5-b round ui-dark" data-tooltip="t" data-only="mobile" title="Run javascript aler now!">Javascript (mobile)</button>
                     <button onclick="alert('Test');" class="btn margin-5-b round ui-dark" data-tooltip="t" data-only="desktop" title="Run javascript aler now!">Javascript (desktop)</button>
                 </div>
@@ -46,7 +46,7 @@
                         <svg class="icon" data-tooltip="tl" title="Your message here!"><use href="#question-circle-fill"></use></svg>
                         <input type="text" placeholder="Placeholder Text">
                     </div>
-                    <span class="sp15"></span>
+                    <span class="sp-15"></span>
                     <div class="text text-icon-l round border-dual ease-form">
                         <svg class="icon" data-tooltip="tr" title="Your message here!"><use href="#question-circle-fill"></use></svg>
                         <input type="text" placeholder="Placeholder Text">

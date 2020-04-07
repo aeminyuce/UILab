@@ -81,7 +81,7 @@
                     <li class="ui-text"><span class="card xx-dark align-r">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
                 </ul>
 
-                <span class="sp30 margin-15-v"></span>
+                <span class="sp-30 margin-15-v"></span>
 
                 <h3 class="align-c">All Time</h3>
                 <ul class="timeline hide-h-lines large theme-default2">
@@ -93,7 +93,7 @@
                     <li><span class="card round ui-dark shadow-lg">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
                 </ul>
 
-                <span class="sp30 margin-15-v"></span>
+                <span class="sp-30 margin-15-v"></span>
 
                 <h3>Activity</h3>
                 <ul class="timeline side-l large theme-default ui-text">
@@ -113,7 +113,7 @@
                     </li>
                 </ul>
 
-                <span class="sp30 margin-15-v"></span>
+                <span class="sp-30 margin-15-v"></span>
 
                 <h3>Activity</h3>
                 <ul class="timeline side-l large">
@@ -125,7 +125,7 @@
                     <li class="theme-green ui-text"><span class="card xx-dark">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
                 </ul>
 
-                <span class="sp30 margin-15-v"></span>
+                <span class="sp-30 margin-15-v"></span>
 
                 <h3>Activity</h3>
                 <ul class="timeline side-l hide-h-lines large">
@@ -137,7 +137,7 @@
                     <li class="theme-green ui-text"><span class="card xx-dark">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
                 </ul>
 
-                <span class="sp30 margin-15-v"></span>
+                <span class="sp-30 margin-15-v"></span>
 
                 <h3>Activity</h3>
                 <ul class="timeline side-l hide-h-lines large">
@@ -149,7 +149,7 @@
                     <li>Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                 </ul>
 
-                <span class="sp30 margin-15-v"></span>
+                <span class="sp-30 margin-15-v"></span>
 
                 <h3>Activity</h3>
                 <ul class="timeline side-l hide-lines large">

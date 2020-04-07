@@ -69,7 +69,7 @@
                     </div>
                     <p class="required-msg">Enter user name.</p>
 
-                    <span class="sp15"></span>
+                    <span class="sp-15"></span>
 
                     <label class="form-label x-dark">Password</label>
                     <div class="text text-icon round border-dual ease-form">
@@ -80,7 +80,7 @@
                     </div>
                     <p class="required-msg">Minimum length is 8 characters.</p>
 
-                    <span class="sp15"></span>
+                    <span class="sp-15"></span>
 
                     <label class="custom">
                         <span class="check-custom round border-dual ease-form">
@@ -90,12 +90,12 @@
                         Remember me
                     </label>
 
-                    <span class="sp30"></span>
+                    <span class="sp-30"></span>
 
                     <button type="submit" class="go-signup-btn btn xx-light block round hover-scale hover-shadow ease-btn">
                         <b>LOGIN</b>
                     </button>
-                    <span class="sp15"></span>
+                    <span class="sp-15"></span>
                     <button class="tab btn btn-ghost x-dark round block ease-btn" data-id="lost-password">
                         <svg class="icon margin-5-r no-opacity"><use href="#lock"></use></svg> Forgot password?
                     </button>
@@ -113,12 +113,12 @@
                     </div>
                     <p class="required-msg">Enter email.</p>
 
-                    <span class="sp30"></span>
+                    <span class="sp-30"></span>
 
                     <button type="submit" class="go-signup-btn btn xx-light block round hover-scale hover-shadow ease-btn">
                         <b>Reset Password</b>
                     </button>
-                    <span class="sp15"></span>
+                    <span class="sp-15"></span>
                     <button class="tab btn btn-ghost x-dark round block ease-btn" data-id="login">
                         <svg class="icon margin-5-r no-opacity"><use href="#long-arrow-left"></use></svg> Back to login
                     </button>
@@ -134,7 +134,7 @@
                 <div class="full-w set-absolute set-c">
                     <h1 class="light hidden-md">Create your account</h1>
                     <p class="x-large light">Sign up to create, discover and connect with the global community.</p>
-                    <span class="sp30"></span>
+                    <span class="sp-30"></span>
                     <a href="?l=sign-up-page" class="login-btn btn btn-lg btn-sm-fluid padding-30-h circle hover-scale hover-shadow ease-btn"><b>SIGN UP NOW</b></a>
                 </div>
 

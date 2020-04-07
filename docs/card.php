@@ -255,7 +255,7 @@
                             Card Title
                         </h4>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
-                        <span class="sp15"></span>
+                        <span class="sp-15"></span>
                         <a href="#" class="btn btn-xs-fluid circle ui-dark ease-btn">
                             Outgoing Link
                             <svg class="icon margin-5-l"><use href="#link"/></svg>
@@ -273,7 +273,7 @@
                             Card Title
                         </h4>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
-                        <span class="sp15"></span>
+                        <span class="sp-15"></span>
                         <a href="#" class="btn btn-xs-fluid circle ui-dark ease-btn">
                             Outgoing Link
                             <svg class="icon margin-5-l"><use href="#link"/></svg>
@@ -290,7 +290,7 @@
                         Message Title
                     </h4>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
-                    <span class="sp15"></span>
+                    <span class="sp-15"></span>
                     <a href="#" class="btn btn-xs-fluid circle ui-dark ease-btn">
                         Outgoing Link
                         <svg class="icon margin-5-l"><use href="#link"/></svg>
@@ -303,7 +303,7 @@
                         Message Title
                     </h4>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
-                    <span class="sp15"></span>
+                    <span class="sp-15"></span>
                     <a href="#" class="btn btn-xs-fluid circle ui-dark ease-btn">
                         Outgoing Link
                         <svg class="icon margin-5-l"><use href="#link"/></svg>
@@ -316,7 +316,7 @@
                         Message Title
                     </h4>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
-                    <span class="sp15"></span>
+                    <span class="sp-15"></span>
                     <a href="#" class="btn btn-xs-fluid circle ui-dark ease-btn">
                         Outgoing Link
                         <svg class="icon margin-5-l"><use href="#link"/></svg>

@@ -154,7 +154,7 @@
                             </ul>
                         </div>
 
-                        <span class="sp15 visible-sm"></span>
+                        <span class="sp-15 visible-sm"></span>
 
                         <div class="dropdown btn-xs-fluid ease-dropdown">
                             <button class="btn padding-30-h circle theme-default2 ui-dark">
@@ -201,7 +201,7 @@
                             </ul>
                         </div>
 
-                        <span class="sp15 visible-sm"></span>
+                        <span class="sp-15 visible-sm"></span>
 
                         <div class="dropdown btn-xs-fluid ease-dropdown">
                             <button class="btn padding-30-h circle theme-default2 ui-dark">

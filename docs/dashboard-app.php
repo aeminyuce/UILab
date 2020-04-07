@@ -297,7 +297,7 @@
 
                     </div>
 
-                    <span class="sp5"></span>
+                    <span class="sp-5"></span>
 
                     <div class="padding-10 no-padding-b icons-no-opacity">
                         <div class="row row-no-gap no-fluid icons-lg icons-thin block-2nd ease-2nd-btn">
@@ -370,7 +370,7 @@
                                     </div>
                                 </div>
 
-                                <span class="sp10"></span>
+                                <span class="sp-10"></span>
 
                                 <div class="row row-xs-gap no-fluid block-2nd ease-2nd-btn">
                                     <div class="col-5">
@@ -385,7 +385,7 @@
                                     </div>
                                 </div>
 
-                                <span class="sp5"></span>
+                                <span class="sp-5"></span>
 
                                 <div class="data-container scroll-v">
 
@@ -696,7 +696,7 @@
 
                     </div>
 
-                    <span class="sp5"></span>
+                    <span class="sp-5"></span>
 
                     <div class="padding-10 no-padding-b icons-no-opacity">
                         <div class="row row-no-gap no-fluid icons-lg icons-thin block-2nd ease-2nd-btn">
@@ -791,7 +791,7 @@
                                         </div>
                                     </div>
 
-                                    <span class="sp10"></span>
+                                    <span class="sp-10"></span>
 
                                     <ul class="messages list-custom margin-10-b scroll-v">
                                         <li class="left">
@@ -851,7 +851,7 @@
                                         </div>
                                     </div>
 
-                                    <span class="sp10"></span>
+                                    <span class="sp-10"></span>
 
                                     <ul class="messages list-custom margin-10-b scroll-v">
                                         <li class="left">
@@ -911,7 +911,7 @@
                                         </div>
                                     </div>
 
-                                    <span class="sp10"></span>
+                                    <span class="sp-10"></span>
 
                                     <ul class="messages list-custom margin-10-b scroll-v">
                                         <li class="left">
@@ -971,7 +971,7 @@
                                         </div>
                                     </div>
 
-                                    <span class="sp10"></span>
+                                    <span class="sp-10"></span>
 
                                     <ul class="messages list-custom margin-10-b scroll-v">
                                         <li class="left">
@@ -1031,7 +1031,7 @@
                                         </div>
                                     </div>
 
-                                    <span class="sp10"></span>
+                                    <span class="sp-10"></span>
 
                                     <ul class="messages list-custom margin-10-b scroll-v">
                                         <li class="left">
@@ -1091,7 +1091,7 @@
                                         </div>
                                     </div>
 
-                                    <span class="sp10"></span>
+                                    <span class="sp-10"></span>
 
                                     <ul class="messages list-custom margin-10-b scroll-v">
                                         <li class="left">
@@ -1148,7 +1148,7 @@
 
                     </div>
 
-                    <span class="sp5"></span>
+                    <span class="sp-5"></span>
 
                     <div class="padding-10 no-padding-b icons-no-opacity">
                         <div class="row row-no-gap no-fluid icons-lg icons-thin block-2nd ease-2nd-btn">
@@ -1214,9 +1214,9 @@
                                 <div class="status">
                                     <img class="img-photo-lg circle" src="img/profile-image.jpg" alt="">
                                 </div>
-                                <span class="sp20"></span>
+                                <span class="sp-20"></span>
                                 <span class="x-large margin-3-l">John Doe</span>
-                                <span class="sp2"></span>
+                                <span class="sp-2"></span>
                                 <b class="xx-small circle padding-5-h padding-3-v theme-app2 ui-dark">SD</b>
                                 <span class="x-dark margin-3-l">Audit Staff</span>
                             </div>
@@ -1251,7 +1251,7 @@
                                 </ul>
                             </div>
 
-                            <span class="sp15"></span>
+                            <span class="sp-15"></span>
 
                             <h5 class="font-bold margin-10-b">General</h5>
 
@@ -1278,7 +1278,7 @@
                                 </ul>
                             </div>
 
-                            <span class="sp25"></span>
+                            <span class="sp-25"></span>
 
                             <div class="list-group round no-border theme-gray ui-x-light">
                                 <ul class="has-icon-xs ease-list-group">
@@ -1295,7 +1295,7 @@
 
                     </div>
 
-                    <span class="sp5"></span>
+                    <span class="sp-5"></span>
 
                     <div class="padding-10 no-padding-b icons-no-opacity">
                         <div class="row row-no-gap no-fluid icons-lg icons-thin block-2nd ease-2nd-btn">
