@@ -1,8 +1,25 @@
 // out: false
 /* breadcrumbs */ @import '_settings.less';
 
+@breadcrumbs-sep-color:                 fade(@black, 25%);
+@breadcrumbs-sep-color-dark:            fade(@white, 25%);
+
+:root {
+    --breadcrumbs-sep-color: @breadcrumbs-sep-color;
+}
+
+._darkmode-breadcrumbs-vars (@darkmode) when (@darkmode = true) {
+    @media (prefers-color-scheme: dark) {
+       :root {
+            --breadcrumbs-sep-color: @breadcrumbs-sep-color-dark;
+        }
+    }
+}
+
+._darkmode-breadcrumbs-vars(@darkmode);
+
 .breadcrumbs:not(:last-child) { margin-bottom: 10px; }
-.breadcrumbs:not(.no-separated) > ul > li:not(:first-child):before { content: "\203A"; color: rgba(0,0,0,.25); font-size: 18px; line-height: normal; margin: 0 8px 0 3px; display: inline-block; }
+.breadcrumbs:not(.no-separated) > ul > li:not(:first-child):before { content: "\203A"; ._color-var(breadcrumbs-sep-color); font-size: 18px; line-height: normal; margin: 0 8px 0 3px; display: inline-block; }
 .breadcrumbs > ul > li:not(:last-child) { margin-right: 5px; }
 .breadcrumbs > ul > li > a,.breadcrumbs > ul > li > b { display: inline-block; }
 

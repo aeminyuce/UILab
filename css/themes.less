@@ -1,61 +1,55 @@
 // out: false
 /* themes */ @import '_settings.less';
 
+@light-theme-color:                   @black;
+@light-theme-color-dark:              @white;
+
 @set-dark:                            #0b0d10;
 @set-x-dark:                          #07080a;
 
-@theme-color-names:                   gray, green, yellow, orange, red, default, default2;
-@theme-colors:                        '@{gray}', '@{green}', '@{yellow}', '@{orange}', '@{red}', '@{default}', '@{default2}';
+@theme-color-names:                   gray, green, yellow, orange, red, blue, default, default2;
+@theme-colors:                        '@{gray}', '@{green}', '@{yellow}', '@{orange}', '@{red}', '@{blue}', '@{default}', '@{default2}';
+
+:root {
+   --light-theme-color: @light-theme-color;
+}
+
+._darkmode-themes-vars (@darkmode) when (@darkmode = true) {
+   @media (prefers-color-scheme: dark) {
+      :root {
+         --light-theme-color: @light-theme-color-dark;
+      }
+   }
+}
+
+._darkmode-themes-vars(@darkmode);
 
 .ui-x-light {
-   color: @black;
+   color: ._color-var(light-theme-color);
+
    .icon,a,button {
       &:not([class*="ui-"]) { &:extend(.ui-x-light); }
    }
 }
 .ui-light {
    &:extend(.ui-x-light);
+
    .icon,a,button {
       &:not([class*="ui-"]) { &:extend(.ui-light); }
    }
 }
-
 .ui-dark {
    color: @white;
+
    .icon,a,button {
       &:not([class*="ui-"]) { &:extend(.ui-dark); }
    }
 }
 .ui-x-dark {
    &:extend(.ui-dark);
+
    .icon,a,button {
       &:not([class*="ui-"]) { &:extend(.ui-x-dark); }
-   }
-}
-
-.x-light-ui {
-   color: fade(@white, 70%) !important;
-   .icon,a,button {
-      &:not([class*="ui-"]) { &:extend(.x-light-ui); }
-   }
-}
-.light-ui {
-   color: fade(@white, 50%) !important;
-   .icon,a,button {
-      &:not([class*="ui-"]) { &:extend(.light-ui); }
-   }
-}
-
-.dark-ui {
-   color: fade(@black, 45%) !important;
-   .icon,a,button {
-      &:not([class*="ui-"]) { &:extend(.dark-ui); }
-   }
-}
-.x-dark-ui {
-   color: fade(@black, 45%) !important;
-   .icon,a,button {
-      &:not([class*="ui-"]) { &:extend(.x-dark-ui); }
    }
 }
 
@@ -84,32 +78,6 @@
 
 ._darkmode-themes (@darkmode) when (@darkmode = true) {
    @media (prefers-color-scheme: dark) {
-      .ui-x-light {
-         color: @white;
-         .icon,a,button {
-            &:not([class*="ui-"]) { &:extend(.ui-x-light); }
-         }
-      }
-      .ui-light {
-         &:extend(.ui-x-light);
-         .icon,a,button {
-            &:not([class*="ui-"]) { &:extend(.ui-light); }
-         }
-      }
-
-      .dark-ui {
-         color: fade(@white, 70%) !important;
-         .icon,a,button {
-            &:not([class*="ui-"]) { &:extend(.dark-ui); }
-         }
-      }
-     .x-dark-ui {
-         color: fade(@white, 65%) !important;
-         .icon,a,button {
-            &:not([class*="ui-"]) { &:extend(.x-dark-ui); }
-         }
-      }
-
       .set-dark {
          &:not(.theme-gray)[class*="theme-"][class*="ui-"],
          &:not(.theme-light)[class*="theme-"] [class*="ui-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) {

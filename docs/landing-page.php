@@ -847,7 +847,7 @@
             <div class="col-static">
                 <div class="row">
                     <div class="col-4 sm-fluid">
-                        <h4 class="x-light-ui margin-30-b">Customer Service</h4>
+                        <h4 class="x-light margin-30-b">Customer Service</h4>
                         <ul class="list-unstyled list-spacer-10 x-large">
                             <li><a class="hoverline" href="#">Order Status</a></li>
                             <li><a class="hoverline" href="#">Shipping</a></li>
@@ -859,7 +859,7 @@
                         </ul>
                     </div>
                     <div class="col-4 sm-fluid">
-                        <h4 class="x-light-ui margin-30-b">Who We Are</h4>
+                        <h4 class="x-light margin-30-b">Who We Are</h4>
                         <ul class="list-unstyled list-spacer-10 x-large">
                             <li><a class="hoverline" href="#">Good Works</a></li>
                             <li><a class="hoverline" href="#">About Us</a></li>
@@ -870,7 +870,7 @@
                         </ul>
                     </div>
                     <div class="col-4 sm-fluid">
-                        <h4 class="x-light-ui margin-30-b">Quick Links</h4>
+                        <h4 class="x-light margin-30-b">Quick Links</h4>
                         <ul class="list-unstyled list-spacer-10 x-large">
                             <li><a class="hoverline" href="#">Educater &amp; Landscaper</a></li>
                             <li><a class="hoverline" href="#">Discounts</a></li>

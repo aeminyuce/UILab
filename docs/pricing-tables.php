@@ -37,13 +37,13 @@
                             </div>
                             <h2 class="font-bold margin-15-v">$19</h2>
                             <h4>Business License</h4>
-                            <p class="x-light-ui large margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
+                            <p class="x-light large margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                             <span class="sp-10"></span>
                             <a class="btn btn-multi btn-lg btn-xs-fluid padding-30-h padding-15-v round theme-default ui-dark ease-btn" href="#">
                                 <b>PURCHASE</b>
                                 <svg class="icon margin-5-l"><use href="#shopping-cart"></use></svg>
                             </a>
-                            <div class="x-light-ui margin-30-v">
+                            <div class="x-light margin-30-v">
                                 <svg class="icon margin-5-r"><use href="#check-badge"></use></svg>Recommend
                             </div>
                         </div>
@@ -119,7 +119,7 @@
                                 </div>
                                 <h2 class="font-bold margin-15-v">$19</h2>
                                 <h4>Business License</h4>
-                                <p class="x-light-ui large margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
+                                <p class="x-light large margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                                 <span class="sp-10"></span>
                                 <a class="btn btn-multi btn-lg btn-xs-fluid padding-30-h padding-15-v margin-25-b round theme-default ui-dark ease-btn" href="#">
                                     <b>PURCHASE</b>
@@ -128,20 +128,20 @@
                             </div>
                             <div class="card-side padding-30">
                                 <ul class="list-unstyled list-spacer-15 margin-15-v large block-2nd">
-                                    <li><span class="light-ui default">Number of Users</span>5 Users</li>
-                                    <li><span class="light-ui default">Domains</span>10 Domains</li>
-                                    <li><span class="light-ui default">Projects</span>100 Projects</li>
+                                    <li><span class="light default">Number of Users</span>5 Users</li>
+                                    <li><span class="light default">Domains</span>10 Domains</li>
+                                    <li><span class="light default">Projects</span>100 Projects</li>
                                     <li>
-                                        <span class="light-ui default">Support</span>
+                                        <span class="light default">Support</span>
                                         <svg class="icon"><use href="#check"></use></svg>
                                     </li>
                                     <li>
-                                        <span class="light-ui default">Tutorials</span>
+                                        <span class="light default">Tutorials</span>
                                         <svg class="icon"><use href="#check"></use></svg>
                                         </span>
                                     </li>
                                     <li>
-                                        <span class="light-ui default">Cancellation</span>
+                                        <span class="light default">Cancellation</span>
                                         <svg class="icon"><use href="#check"></use></svg>
                                     </li>
                                 </ul>

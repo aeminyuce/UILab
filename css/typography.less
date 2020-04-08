@@ -1,6 +1,62 @@
 // out: false
 /* typography */ @import '_settings.less';
 
+@xx-light:                              @white;
+@xx-dark:                               @black;
+
+@x-light:                               fade(@white, 70%);
+@light:                                 fade(@white, 50%);
+@dark:                                  fade(@black, 45%);
+@x-dark:                                fade(@black, 70%);
+
+@dark-dark:                             fade(@white, 45%);
+@x-dark-dark:                           fade(@white, 70%);
+@xx-dark-dark:                          @white;
+
+@code-font-family:                      Menlo, Monaco, Consolas, "Courier New", monospace;
+
+@code-color:                            #c7254e;
+@code-bg:                               #f9f2f4;
+
+@blockquote-border:                     #eee;
+@blockquote-footer-color:               #777;
+
+@kbd-shadow:                            fade(@black, 15%);
+
+@pre-color:                             #333;
+@pre-bg:                                #f5f5f5;
+@pre-border:                            fade(@white, 15%);
+
+:root {
+    --dark: @dark;
+    --x-dark: @x-dark;
+    --xx-dark: @xx-dark;
+
+    --code-color: @code-color;
+    --code-bg: @code-bg;
+
+    --pre-color: @pre-color;
+    --pre-bg: @pre-bg;
+}
+
+._darkmode-typography-vars (@darkmode) when (@darkmode = true) {
+    @media (prefers-color-scheme: dark) {
+       :root {
+            --dark: @dark-dark;
+            --x-dark: @x-dark-dark;
+            --xx-dark: @xx-dark-dark;
+
+            --code-color: @white;
+            --code-bg: @code-color;
+
+            --pre-color: @white;
+            --pre-bg: @card-bg-dark;
+        }
+    }
+}
+
+._darkmode-typography-vars(@darkmode);
+
 h1,h2,h3,h4,h5,h6 { font-weight: @font-normal; margin-bottom: 0; }
 h1,h2,h3 { line-height: 1; }
 
@@ -22,7 +78,7 @@ h1 .icon-lg:not(.right),h2 .icon-lg:not(.right),h3 .icon-lg:not(.right),h4 .icon
     h1 > small,h2 > small,h3 > small,h4 > small,h5 > small,h6 > small { text-align: center; display: block; }
 }
 
-body,a { color: #000; }
+body,a { ._color-var(body-color); }
 
 .xx-smallest { font-size: 7px !important; }
 .x-smallest { font-size: 8px !important; }
@@ -38,19 +94,21 @@ body,a { color: #000; }
 .x-largest { font-size: 38px !important; }
 .xx-largest { font-size: 48px !important; }
 
-.xx-light,.xx-light .icon:not([class*="ui-"]),.xx-light a:not([class*="ui-"]),.xx-light button:not([class*="ui-"]) { color: #fff !important; }
-.x-light,.x-light .icon:not([class*="ui-"]),.x-light a:not([class*="ui-"]),.x-light button:not([class*="ui-"]) { color: #f6f6f6 !important; }
-.light,.light .icon:not([class*="ui-"]),.light a:not([class*="ui-"]),.light button:not([class*="ui-"]) { color: #c5c5c5 !important; }
-.dark,.dark .icon:not([class*="ui-"]),.dark a:not([class*="ui-"]),.dark button:not([class*="ui-"]) { color: #999 !important; }
-.x-dark,.x-dark .icon:not([class*="ui-"]),.x-dark a,.x-dark button:not([class*="ui-"]) { color: #777 !important; }
-.xx-dark,.xx-dark .icon:not([class*="ui-"]),.xx-dark a:not([class*="ui-"]),.xx-dark button:not([class*="ui-"]) { color: #000 !important; }
+.xx-light,.xx-light .icon:not([class*="ui-"]),.xx-light a:not([class*="ui-"]),.xx-light button:not([class*="ui-"]) { color: @xx-light !important; }
+.x-light,.x-light .icon:not([class*="ui-"]),.x-light a:not([class*="ui-"]),.x-light button:not([class*="ui-"]) { color: @x-light !important; }
+.light,.light .icon:not([class*="ui-"]),.light a:not([class*="ui-"]),.light button:not([class*="ui-"]) { color: @light !important; }
 
-.font-green,.font-green .icon:not([class*="ui-"]),.font-green a:not([class*="ui-"]),.font-green button:not([class*="ui-"]) { color: #2dbd3a !important; }
-.font-yellow,.font-yellow .icon:not([class*="ui-"]),.font-yellow a:not([class*="ui-"]),.font-yellow button:not([class*="ui-"]) { color: #ffa600 !important; }
-.font-red,.font-red .icon:not([class*="ui-"]),.font-red a:not([class*="ui-"]),.font-red button:not([class*="ui-"]) { color: #dc000f !important; }
-.font-blue,.font-blue .icon:not([class*="ui-"]),.font-blue a:not([class*="ui-"]),.font-blue button:not([class*="ui-"]) { color: #235ea0 !important; }
-.font-orange,.font-orange .icon:not([class*="ui-"]),.font-orange a:not([class*="ui-"]),.font-orange button:not([class*="ui-"]) { color: #f47500 !important; }
-.font-default,.font-default .icon:not([class*="ui-"]),.font-default a:not([class*="ui-"]),.font-default button:not([class*="ui-"]) { color: #000 !important; }
+.dark,.dark .icon:not([class*="ui-"]),.dark a:not([class*="ui-"]),.dark button:not([class*="ui-"]) { ._color-var(dark); }
+.x-dark,.x-dark .icon:not([class*="ui-"]),.x-dark a:not([class*="ui-"]),.x-dark button:not([class*="ui-"]) { ._color-var(x-dark); }
+.xx-dark,.xx-dark .icon:not([class*="ui-"]),.xx-dark a:not([class*="ui-"]),.xx-dark button:not([class*="ui-"]) { ._color-var(xx-dark); }
+
+.font-green,.font-green .icon:not([class*="ui-"]),.font-green a:not([class*="ui-"]),.font-green button:not([class*="ui-"]) { color: @green !important; }
+.font-yellow,.font-yellow .icon:not([class*="ui-"]),.font-yellow a:not([class*="ui-"]),.font-yellow button:not([class*="ui-"]) { color: @yellow !important; }
+.font-orange,.font-orange .icon:not([class*="ui-"]),.font-orange a:not([class*="ui-"]),.font-orange button:not([class*="ui-"]) { color: @orange !important; }
+.font-red,.font-red .icon:not([class*="ui-"]),.font-red a:not([class*="ui-"]),.font-red button:not([class*="ui-"]) { color: @red !important; }
+.font-blue,.font-blue .icon:not([class*="ui-"]),.font-blue a:not([class*="ui-"]),.font-blue button:not([class*="ui-"]) { color: @blue !important; }
+
+.font-default,.font-default .icon:not([class*="ui-"]),.font-default a:not([class*="ui-"]),.font-default button:not([class*="ui-"]) { color: @black !important; }
 
 .underline { text-decoration: underline; }
 a.underline:hover,button.underline:hover { text-decoration: none; }
@@ -80,15 +138,15 @@ address:not(:last-child) { margin-bottom: 20px; }
 address { font-style: normal; }
 
 blockquote:not(:last-child) { margin-bottom: 20px; }
-blockquote { font-size: 16px; padding: 10px 20px !important; border-left: 5px solid #eee; }
-blockquote.align-r,blockquote.right { text-align: right; border-right: 5px solid #eee; border-left: 0; }
-blockquote footer,blockquote small { color: #777; font-size: 80%; display: block; }
+blockquote { font-size: 16px; padding: 10px 20px !important; border-left: 5px solid @blockquote-border; }
+blockquote.align-r,blockquote.right { text-align: right; border-right: 5px solid @blockquote-border; border-left: 0; }
+blockquote footer,blockquote small { color: @blockquote-footer-color; font-size: 80%; display: block; }
 
-code,kbd,pre,samp,xmp { font-family: Menlo, Monaco, Consolas, "Courier New", monospace; }
+code,kbd,pre,samp,xmp { font-family: @code-font-family; }
 
-code { color: #c7254e; font-size: 90%; padding: 2px 4px !important; background-color: #f9f2f4; display: inline-block; border-radius: 2px; }
-kbd { color: #fff; font-size: 90%; background-color: #333; padding: 2px 4px !important; border-radius: 3px; box-shadow: inset 0 -1px 0 rgba(0,0,0,.15); }
+code { ._color-var(code-color); font-size: 90%; padding: 2px 4px !important; ._bg-var(code-bg); display: inline-block; border-radius: 2px; }
+kbd { color: @white; font-size: 90%; background-color: @pre-color; padding: 2px 4px !important; border-radius: 3px; box-shadow: inset 0 -1px 0 @kbd-shadow; }
 
 pre:not(:last-child),xmp:not(:last-child) { margin-bottom: 20px; }
-pre,xmp { color: #333; white-space: pre-wrap; word-wrap: break-word; background-color: #f5f5f5; padding: 10px !important; display: block; border: 1px solid #ccc; }
+pre,xmp { ._color-var(pre-color); white-space: pre-wrap; word-wrap: break-word; ._bg-var(pre-bg); padding: 10px !important; display: block; border: 1px solid @pre-border; }
 pre.scroll-v,xmp.scroll-v { max-height: 350px; }

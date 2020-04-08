@@ -1688,7 +1688,7 @@
                             <input class="required" type="text" placeholder="Required example with text icon post">
                         </div>
                         <p class="required-msg">Please, enter any keywords.</p>
-                        <i class="hint light-ui">* Required</i>
+                        <i class="hint light">* Required</i>
 
                     </form>
 
@@ -1698,7 +1698,7 @@
                         <textarea class="required" rows="4" placeholder="Required example with counter textarea" minlength="10"></textarea>
                     </div>
                     <p class="required-msg">Please, write your comments more than 10 characters.</p>
-                    <i class="hint light-ui">* Required</i>
+                    <i class="hint light">* Required</i>
 
                 </div>
 

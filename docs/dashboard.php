@@ -145,13 +145,13 @@
                 <div class="tabs align-l icons-no-opacity theme-panel2 ease-tabs ease-1st-btn add-mobile-menu-l" data-classes="ui-text">
 
                     <div class="padding-10">
-                        <div class="small margin-10-b light-ui">Personal Activity</div>
+                        <div class="small margin-10-b light">Personal Activity</div>
 
                         <div class="btn-holder align-c round ease-1st-btn">
                             <button class="btn btn-multi padding-10-v round">
 
                                 <span class="xx-large xx-light">13</span>
-                                <span class="small light-ui margin-5-b block">Waiting</span>
+                                <span class="small light margin-5-b block">Waiting</span>
                                 <span class="progress-bar progress round border-dual">
                                     <span class="ui-dark stripe-light" style="width: 65%;"></span>
                                 </span>
@@ -160,7 +160,7 @@
                             <button class="btn btn-multi padding-10-v round">
 
                                 <span class="xx-large xx-light">3</span>
-                                <span class="small light-ui margin-5-b block">Paused</span>
+                                <span class="small light margin-5-b block">Paused</span>
                                 <span class="progress-bar progress round border-dual">
                                     <span class="ui-dark stripe-light" style="width: 35%;"></span>
                                 </span>
@@ -169,7 +169,7 @@
                             <button class="btn btn-multi padding-10-v round">
 
                                 <span class="xx-large xx-light">16</span>
-                                <span class="small light-ui margin-5-b block">Delayed</span>
+                                <span class="small light margin-5-b block">Delayed</span>
                                 <span class="progress-bar progress round border-dual">
                                     <span class="ui-dark stripe-light" style="width: 75%;"></span>
                                 </span>
@@ -1965,7 +1965,7 @@
 
         <form action="#successful">
             <h2>Search</h2>
-            <p class="large x-light-ui xs-align-c">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada purus eget enim tempus, sed faucibus ante blandit. Morbi a pharetra sapien.</p>
+            <p class="large x-light xs-align-c">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada purus eget enim tempus, sed faucibus ante blandit. Morbi a pharetra sapien.</p>
 
             <div class="col-static no-fluid">
                 <div class="row row-no-gap-h">

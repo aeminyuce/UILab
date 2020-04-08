@@ -3,15 +3,6 @@
 
 ._darkmode-global (@darkmode) when (@darkmode = true) {
     @media (prefers-color-scheme: dark) {
-        body,a { color: #fff; }
-        code { color: #fff; background-color: #c7254e; }
-        pre,xmp { color: #fff; ._bg(@card-bg-dark); border-color: #41454d; }
-
-        .breadcrumbs:not(.no-separated) > ul > li:not(:first-child):before { color: rgba(255,255,255,.25); }
-
-        .border,.border-t,.border-r,.border-b,.border-l,.border-h,.border-v,.border-dual,.border-lg { border-color: rgba(255,255,255,.175); }
-
-        .text,.select,.select-multi,.textarea,.file,.check-custom,.radio-custom,.switch-custom { border-color: rgba(255,255,255,.175); }
         .text input:not(:focus):not([readonly]),.select select:not(:focus):not([readonly]),.select-multi select:not(:focus):not([readonly]),.textarea textarea:not(:focus):not([readonly]) { color: #fff; }
         .select select option,.select select optgroup { color: #fff; background-color: #41454d; }
         .select-multi option:not(:last-child) { border-color: rgba(255,255,255,.045); }

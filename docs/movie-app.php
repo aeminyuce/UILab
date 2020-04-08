@@ -27,7 +27,7 @@
             <div class="sidebar col-200 full-h set-fixed set-l padding-5 ui-dark hidden-md scroll-v">
 
                 <div class="align-l padding-10 icons-no-opacity icons-margin-10-r form-lg add-mobile-menu-l">
-                    <h5 class="x-light-ui padding-15 margin-5-b">LIBRARY</h5>
+                    <h5 class="x-light padding-15 margin-5-b">LIBRARY</h5>
                     <ul class="list-unstyled list-spacer-15 large font-bold block-2nd ease-2nd-btn">
                         <li>
                             <a class="btn btn-ghost circle" href="#">
@@ -69,22 +69,22 @@
 
                     <span class="sp-30"></span>
 
-                    <h5 class="x-light-ui padding-15 margin-5-b">NEWS &amp; EVENTS</h5>
+                    <h5 class="x-light padding-15 margin-5-b">NEWS &amp; EVENTS</h5>
                     <ul class="list-unstyled list-spacer-15 large block-2nd ease-2nd-btn">
                         <li>
-                            <a class="btn light-ui btn-ghost circle" href="#">
+                            <a class="btn light btn-ghost circle" href="#">
                                 <svg class="icon"><use href="#news"></use></svg>
                                 News
                             </a>
                         </li>
                         <li>
-                            <a class="btn light-ui btn-ghost circle" href="#">
+                            <a class="btn light btn-ghost circle" href="#">
                                 <svg class="icon"><use href="#network"></use></svg>
                                 Community
                             </a>
                         </li>
                         <li>
-                            <a class="btn light-ui btn-ghost circle" href="#">
+                            <a class="btn light btn-ghost circle" href="#">
                                 <svg class="icon"><use href="#calendar-days"></use></svg>
                                 Events
                             </a>
@@ -439,7 +439,7 @@
 
         <form action="#successful">
             <h2>Search</h2>
-            <p class="large x-light-ui xs-align-c">Search for movies, TV shows...</p>
+            <p class="large x-light xs-align-c">Search for movies, TV shows...</p>
 
             <div class="col-static no-fluid">
                 <div class="row row-no-gap-h">

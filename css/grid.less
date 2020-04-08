@@ -1,10 +1,13 @@
 // out: false
 /* grid */ @import '_settings.less';
 
-.container:before,.container:after,.fixed:before,.fixed:after { content: ""; display: table; }
-.container:after,.fixed:after { clear: both; }
+.container,.fixed {
+    width: 100%; display: block;
 
-.container,.fixed { width: 100%; display: block; }
+    &:after { clear: both; }
+    &:before,&:after { content: ""; display: table; }
+}
+
 .container:not([class*="no-gutter"]),.fixed { padding-right: 10px; padding-left: 10px; }
 .no-gutter { padding-right: 0 !important; padding-left: 0 !important; }
 

@@ -124,7 +124,7 @@
                                     <a class="btn btn-multi no-line-height padding-10-v block round ui-x-light" href="#">
                                         <span class="ui-text x-largest">23</span>
                                         <span class="block">
-                                            <span class="x-dark-ui small font-ellipsis">Waiting</span>
+                                            <span class="x-dark small font-ellipsis">Waiting</span>
                                         </span>
                                     </a>
                                 </div>
@@ -132,7 +132,7 @@
                                     <a class="btn btn-multi no-line-height padding-10-v block round ui-x-light" href="#">
                                         <span class="ui-text x-largest">258</span>
                                         <span class="block">
-                                            <span class="x-dark-ui small font-ellipsis">Expert</span>
+                                            <span class="x-dark small font-ellipsis">Expert</span>
                                         </span>
                                     </a>
                                 </div>
@@ -140,7 +140,7 @@
                                     <a class="btn btn-multi no-line-height padding-10-v block round ui-x-light" href="#">
                                         <span class="ui-text x-largest">49</span>
                                         <span class="block">
-                                            <span class="x-dark-ui small font-ellipsis">First Audit</span>
+                                            <span class="x-dark small font-ellipsis">First Audit</span>
                                         </span>
                                     </a>
                                 </div>
@@ -151,7 +151,7 @@
                                     <a class="btn btn-ghost btn-multi no-line-height padding-10-v block round border-dual" href="#">
                                         <span class="x-dark xx-large">19</span>
                                         <span class="block">
-                                            <span class="x-dark-ui small font-ellipsis">Second Audit</span>
+                                            <span class="x-dark small font-ellipsis">Second Audit</span>
                                         </span>
                                     </a>
                                 </div>
@@ -159,7 +159,7 @@
                                     <a class="btn btn-ghost btn-multi no-line-height padding-10-v block round border-dual" href="#">
                                         <span class="x-dark xx-large">20</span>
                                         <span class="block">
-                                            <span class="x-dark-ui small font-ellipsis">Paused</span>
+                                            <span class="x-dark small font-ellipsis">Paused</span>
                                         </span>
                                     </a>
                                 </div>
@@ -167,7 +167,7 @@
                                     <a class="btn btn-ghost btn-multi no-line-height padding-10-v block round border-dual" href="#">
                                         <span class="x-dark xx-large">68</span>
                                         <span class="block">
-                                            <span class="x-dark-ui small font-ellipsis">Delayed</span>
+                                            <span class="x-dark small font-ellipsis">Delayed</span>
                                         </span>
                                     </a>
                                 </div>
@@ -308,19 +308,19 @@
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle dark-ui">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle dark">
                                     <svg class="icon"><use href="#search"></use></svg>
                                     <span class="small block">Search</span>
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle dark-ui" data-notifier="2">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle dark" data-notifier="2">
                                     <svg class="icon"><use href="#comment"></use></svg>
                                     <span class="small block">Chat</span>
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle dark-ui">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle dark">
                                     <svg class="icon"><use href="#user"></use></svg>
                                     <span class="small block">Profile</span>
                                 </button>
@@ -701,7 +701,7 @@
                     <div class="padding-10 no-padding-b icons-no-opacity">
                         <div class="row row-no-gap no-fluid icons-lg icons-thin block-2nd ease-2nd-btn">
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle dark-ui">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle dark">
                                     <svg class="icon"><use href="#home"></use></svg>
                                     <span class="small block">Home</span>
                                 </button>
@@ -713,13 +713,13 @@
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle dark-ui" data-notifier="2">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle dark" data-notifier="2">
                                     <svg class="icon"><use href="#comment"></use></svg>
                                     <span class="small block">Chat</span>
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle dark-ui">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle dark">
                                     <svg class="icon"><use href="#user"></use></svg>
                                     <span class="small block">Profile</span>
                                 </button>
@@ -787,7 +787,7 @@
                                             <h5 class="font-bold">John Doe</h5>
                                         </div>
                                         <div class="col-6 align-r">
-                                            <span class="dark-ui">Online</span>
+                                            <span class="dark">Online</span>
                                         </div>
                                     </div>
 
@@ -847,7 +847,7 @@
                                             <h5 class="font-bold">Mary Doe</h5>
                                         </div>
                                         <div class="col-6 align-r">
-                                            <span class="dark-ui">Online</span>
+                                            <span class="dark">Online</span>
                                         </div>
                                     </div>
 
@@ -907,7 +907,7 @@
                                             <h5 class="font-bold">Mike Taylor</h5>
                                         </div>
                                         <div class="col-6 align-r">
-                                            <span class="dark-ui">Today 09:22</span>
+                                            <span class="dark">Today 09:22</span>
                                         </div>
                                     </div>
 
@@ -967,7 +967,7 @@
                                             <h5 class="font-bold">John Doe</h5>
                                         </div>
                                         <div class="col-6 align-r">
-                                            <span class="dark-ui">1 day ago</span>
+                                            <span class="dark">1 day ago</span>
                                         </div>
                                     </div>
 
@@ -1027,7 +1027,7 @@
                                             <h5 class="font-bold">Mary Doe</h5>
                                         </div>
                                         <div class="col-6 align-r">
-                                            <span class="dark-ui">2 days ago</span>
+                                            <span class="dark">2 days ago</span>
                                         </div>
                                     </div>
 
@@ -1087,7 +1087,7 @@
                                             <h5 class="font-bold">John Doe</h5>
                                         </div>
                                         <div class="col-6 align-r">
-                                            <span class="dark-ui">3 days ago</span>
+                                            <span class="dark">3 days ago</span>
                                         </div>
                                     </div>
 
@@ -1153,13 +1153,13 @@
                     <div class="padding-10 no-padding-b icons-no-opacity">
                         <div class="row row-no-gap no-fluid icons-lg icons-thin block-2nd ease-2nd-btn">
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle dark-ui">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle dark">
                                     <svg class="icon"><use href="#home"></use></svg>
                                     <span class="small block">Home</span>
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle dark-ui">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle dark">
                                     <svg class="icon"><use href="#search"></use></svg>
                                     <span class="small block">Search</span>
                                 </button>
@@ -1171,7 +1171,7 @@
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle dark-ui">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle dark">
                                     <svg class="icon"><use href="#user"></use></svg>
                                     <span class="small block">Profile</span>
                                 </button>
@@ -1300,19 +1300,19 @@
                     <div class="padding-10 no-padding-b icons-no-opacity">
                         <div class="row row-no-gap no-fluid icons-lg icons-thin block-2nd ease-2nd-btn">
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle dark-ui">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle dark">
                                     <svg class="icon"><use href="#home"></use></svg>
                                     <span class="small block">Home</span>
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle dark-ui">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle dark">
                                     <svg class="icon"><use href="#search"></use></svg>
                                     <span class="small block">Search</span>
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle dark-ui" data-notifier="2">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle dark" data-notifier="2">
                                     <svg class="icon"><use href="#comment"></use></svg>
                                     <span class="small block">Chat</span>
                                 </button>

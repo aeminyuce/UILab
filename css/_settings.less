@@ -15,24 +15,26 @@
 @round:                                 6px;
 
 // global colors
+@body-color:                            @black;
+@body-color-dark:                       @white;
 @body-bg:                               #f9f9f9;
 @body-bg-dark:                          #15181d;
 
 @no-color:                              transparent;
 
-@black:                                 #0f1115;
-@black-fade15:                          fade(@black, 15%);
-
 @white:                                 #fff;
-@white-fade15:                          fade(@white, 15%);
-
+@black:                                 #000;
 @gray:                                  #ccc;
 @green:                                 #2dbd3a;
 @yellow:                                #ffa600;
 @orange:                                #f47500;
 @red:                                   #d10f1c;
+@blue:                                  #235ea0;
 @default:                               #4563c5;
 @default2:                              #108eef;
+
+@border-color:                          fade(@black, 15%);
+@border-color-dark:                     fade(@white, 17.5%);
 
 @card-bg:                               @white;
 @card-bg-dark:                          #2f343e;
@@ -58,36 +60,47 @@
 
 @xs-finish:                             ~"(max-width: 480px)";
 
-// global variables
+/* global variables */
 :root {
+   --body-color: @body-color;
    --body-bg: @body-bg;
 
-   --black-fade15: @black-fade15;
    --white: @white;
 
-   --card-bg: @white;
+   --border-color: @border-color;
+   --card-bg: @card-bg;
 }
 
-._darkmode-global-variables (@darkmode) when (@darkmode = true) {
+._darkmode-global-vars (@darkmode) when (@darkmode = true) {
    @media (prefers-color-scheme: dark) {
       :root {
-          --body-bg: @body-bg-dark;
+         --body-color: @body-color-dark;
+         --body-bg: @body-bg-dark;
 
-          --black-fade15: @white-fade15;
-          --white: @black;
+         --white: @black;
 
-          --card-bg: @card-bg-dark;
+         --border-color: @border-color-dark;
+         --card-bg: @card-bg-dark;
          }
    }
 }
 
-._darkmode-global-variables(@darkmode);
+._darkmode-global-vars(@darkmode);
 
 // color mixins
 ._bg (@color: @no-color) { background-color: @color; }
+
+._color-var (@var) {
+   color: @@var;
+   color: ~'var(--@{var})';
+}
 ._bg-var (@var) {
    background-color: @@var;
    background-color: ~'var(--@{var})';
+}
+._border-var (@var) {
+   border-color: @@var;
+   border-color: ~'var(--@{var})';
 }
 
 // theme mixins
