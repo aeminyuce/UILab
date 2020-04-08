@@ -8,41 +8,69 @@
 @theme-colors:                        '@{gray}', '@{green}', '@{yellow}', '@{orange}', '@{red}', '@{default}', '@{default2}';
 
 .ui-x-light {
-    color: @black;
-    .icon,a,button { &:not([class*="ui-"]) { &:extend(.ui-x-light); } }
- }
+   color: @black;
+   .icon,a,button {
+      &:not([class*="ui-"]) { &:extend(.ui-x-light); }
+   }
+}
 .ui-light {
-    &:extend(.ui-x-light);
-    .icon,a,button { &:not([class*="ui-"]) { &:extend(.ui-light); } }
- }
+   &:extend(.ui-x-light);
+   .icon,a,button {
+      &:not([class*="ui-"]) { &:extend(.ui-light); }
+   }
+}
+
 .ui-dark {
-    color: @white;
-    .icon,a,button { &:not([class*="ui-"]) { &:extend(.ui-dark); } }
- }
+   color: @white;
+   .icon,a,button {
+      &:not([class*="ui-"]) { &:extend(.ui-dark); }
+   }
+}
 .ui-x-dark {
-    &:extend(.ui-dark);
-    .icon,a,button { &:not([class*="ui-"]) { &:extend(.ui-x-dark); } }
- }
+   &:extend(.ui-dark);
+   .icon,a,button {
+      &:not([class*="ui-"]) { &:extend(.ui-x-dark); }
+   }
+}
 
- .x-light-ui {
-    color: fade(@white, 70%) !important;
-    .icon,a,button { &:not([class*="ui-"]) { &:extend(.x-light-ui); } }
- }
- .light-ui {
-    color: fade(@white, 50%) !important;
-    .icon,a,button { &:not([class*="ui-"]) { &:extend(.light-ui); } }
- }
+.x-light-ui {
+   color: fade(@white, 70%) !important;
+   .icon,a,button {
+      &:not([class*="ui-"]) { &:extend(.x-light-ui); }
+   }
+}
+.light-ui {
+   color: fade(@white, 50%) !important;
+   .icon,a,button {
+      &:not([class*="ui-"]) { &:extend(.light-ui); }
+   }
+}
+
 .dark-ui {
-    color: fade(@black, 45%) !important;
-    .icon,a,button { &:not([class*="ui-"]) { &:extend(.dark-ui); } }
- }
+   color: fade(@black, 45%) !important;
+   .icon,a,button {
+      &:not([class*="ui-"]) { &:extend(.dark-ui); }
+   }
+}
 .x-dark-ui {
-    color: fade(@black, 45%) !important;
-    .icon,a,button { &:not([class*="ui-"]) { &:extend(.x-dark-ui); } }
- }
+   color: fade(@black, 45%) !important;
+   .icon,a,button {
+      &:not([class*="ui-"]) { &:extend(.x-dark-ui); }
+   }
+}
 
-.bg-white:not([class*="ui-"]) { ._bg(@white) !important; }
-.bg-black:not([class*="ui-"]) { ._bg(@black-soft) !important; }
+.bg-white {
+   &:not([class*="ui-"]) { ._bg-var(white) !important; }
+}
+.card {
+   .bg-white {
+       &:not([class*="ui-"]) { ._bg-var(card-bg) !important; }
+   }
+}
+
+.bg-black {
+   &:not([class*="ui-"]) { ._bg(@black) !important; }
+}
 
 ._theme-loop(@i) when (@i > 0) {
    ._theme-loop(@i - 1);
@@ -58,35 +86,43 @@
    @media (prefers-color-scheme: dark) {
       .ui-x-light {
          color: @white;
-         .icon,a,button { &:not([class*="ui-"]) { &:extend(.ui-x-light); } }
+         .icon,a,button {
+            &:not([class*="ui-"]) { &:extend(.ui-x-light); }
+         }
       }
       .ui-light {
          &:extend(.ui-x-light);
-         .icon,a,button { &:not([class*="ui-"]) { &:extend(.ui-light); } }
+         .icon,a,button {
+            &:not([class*="ui-"]) { &:extend(.ui-light); }
+         }
       }
 
       .dark-ui {
          color: fade(@white, 70%) !important;
-         .icon,a,button { &:not([class*="ui-"]) { &:extend(.dark-ui); } }
+         .icon,a,button {
+            &:not([class*="ui-"]) { &:extend(.dark-ui); }
+         }
       }
      .x-dark-ui {
          color: fade(@white, 65%) !important;
-         .icon,a,button { &:not([class*="ui-"]) { &:extend(.x-dark-ui); } }
+         .icon,a,button {
+            &:not([class*="ui-"]) { &:extend(.x-dark-ui); }
+         }
       }
 
-     .set-dark:not(.theme-gray)[class*="theme-"][class*="ui-"],
-     .set-dark:not(.theme-light)[class*="theme-"] [class*="ui-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) {
-         ._bg(@set-dark);
-     }
-     .set-dark:not(.theme-gray)[class*="theme-"][class*="ui-x-"],
-     .set-dark:not(.theme-light)[class*="theme-"] [class*="ui-x-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) {
-         ._bg(@set-x-dark);
-     }
+      .set-dark {
+         &:not(.theme-gray)[class*="theme-"][class*="ui-"],
+         &:not(.theme-light)[class*="theme-"] [class*="ui-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) {
+             ._bg(@set-dark);
+         }
 
-     .bg-white:not([class*="ui-"]) { ._bg(@black) !important; }
-     .card .bg-white:not([class*="ui-"]) { ._bg(@card-dark) !important; }
+         &:not(.theme-gray)[class*="theme-"][class*="ui-x-"],
+         &:not(.theme-light)[class*="theme-"] [class*="ui-x-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) {
+             ._bg(@set-x-dark);
+         }
+      }
 
-     ._theme(gray,  @card-dark);
+     ._theme(gray,  @card-bg-dark);
 
      ._theme-dark-loop(@i) when (@i > 0) {
         ._theme-dark-loop(@i - 1);

@@ -130,7 +130,7 @@
                                     <svg class="icon"><use href="#help"></use></svg>
                                 </button>
                             </span>
-                            <span class="inline-block right sm-no-float">
+                            <span class="inline-block right no-float-sm">
                                 <img class="img-photo img-photo-sm circle margin-10-l sm-no-margin right" src="img/profile-image.jpg" alt="">
                                 <span class="margin-3-t inline-block hidden-sm">aeminyuce</span>
                                 <span class="small x-dark block hidden-sm">Premium</span>

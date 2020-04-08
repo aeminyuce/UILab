@@ -22,12 +22,9 @@
 
 @black:                                 #0f1115;
 @black-fade15:                          fade(@black, 15%);
-@black-soft:                            #181818;
 
 @white:                                 #fff;
 @white-fade15:                          fade(@white, 15%);
-
-@card-dark:                             #2f343e;
 
 @gray:                                  #ccc;
 @green:                                 #2dbd3a;
@@ -36,6 +33,9 @@
 @red:                                   #d10f1c;
 @default:                               #4563c5;
 @default2:                              #108eef;
+
+@card-bg:                               @white;
+@card-bg-dark:                          #2f343e;
 
 // global breakpoints
 @xl-start:                              ~"(min-width: 1680px)";
@@ -58,24 +58,30 @@
 
 @xs-finish:                             ~"(max-width: 480px)";
 
-// css variables
+// global variables
 :root {
    --body-bg: @body-bg;
 
    --black-fade15: @black-fade15;
+   --white: @white;
+
+   --card-bg: @white;
 }
 
-._darkmode-variables (@darkmode) when (@darkmode = true) {
+._darkmode-global-variables (@darkmode) when (@darkmode = true) {
    @media (prefers-color-scheme: dark) {
       :root {
           --body-bg: @body-bg-dark;
 
           --black-fade15: @white-fade15;
-      }
+          --white: @black;
+
+          --card-bg: @card-bg-dark;
+         }
    }
 }
 
-._darkmode-variables(@darkmode);
+._darkmode-global-variables(@darkmode);
 
 // color mixins
 ._bg (@color: @no-color) { background-color: @color; }

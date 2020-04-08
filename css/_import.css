@@ -2,11 +2,15 @@
 :root {
   --body-bg: #f9f9f9;
   --black-fade15: rgba(15, 17, 21, 0.15);
+  --white: #fff;
+  --card-bg: #fff;
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --body-bg: #15181d;
     --black-fade15: rgba(255, 255, 255, 0.15);
+    --white: #0f1115;
+    --card-bg: #2f343e;
   }
 }
 *,
@@ -184,6 +188,9 @@ html:not(.mobile) .hidden-dekstop,
 .full-h {
   height: 100% !important;
 }
+.auto-h {
+  height: auto !important;
+}
 .left {
   float: left;
 }
@@ -201,7 +208,7 @@ html:not(.mobile) .hidden-dekstop,
   -moz-user-select: none;
   user-select: none;
 }
-.lg-float {
+.no-float {
   float: none !important;
 }
 .set-fixed {
@@ -500,6 +507,12 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
 .sp-30 {
   height: 30px;
 }
+.align-justify {
+  text-align: justify !important;
+}
+.align-nowrap {
+  white-space: nowrap !important;
+}
 .align-r,
 .align-r,
 .align-r *,
@@ -514,12 +527,6 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
 .align-c * {
   text-align: center !important;
 }
-.align-justify {
-  text-align: justify !important;
-}
-.align-nowrap {
-  white-space: nowrap !important;
-}
 @media print {
   .hidden-print {
     display: none !important;
@@ -529,7 +536,7 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
   .hidden-lg {
     display: none !important;
   }
-  .lg-no-float {
+  .no-float-lg {
     float: none !important;
   }
 }
@@ -556,10 +563,10 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
     width: 100% !important;
     height: auto !important;
   }
-  .md-no-float {
+  .no-float-md {
     float: none !important;
   }
-  .md-clearfix {
+  .clearfix-md {
     clear: both !important;
     display: block;
   }
@@ -595,14 +602,14 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
     width: 100% !important;
     height: auto !important;
   }
-  .md-no-float,
-  .sm-no-float {
+  .no-float-md,
+  .no-float-sm {
     float: none !important;
   }
-  .md-clearfix,
-  .sm-clearfix {
-    display: block;
+  .clearfix-md,
+  .clearfix-sm {
     clear: both !important;
+    display: block;
   }
   .md-align-c,
   .sm-align-c,
@@ -636,16 +643,16 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
     width: 100% !important;
     height: auto !important;
   }
-  .md-no-float,
-  .sm-no-float,
-  .xs-no-float {
+  .no-float-md,
+  .no-float-sm,
+  .no-float-xs {
     float: none !important;
   }
-  .md-clearfix,
-  .sm-clearfix,
-  .xs-clearfix {
-    display: block;
+  .clearfix-md,
+  .clearfix-sm,
+  .clearfix-xs {
     clear: both !important;
+    display: block;
   }
   .md-align-c,
   .sm-align-c,
@@ -656,9 +663,11 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
     text-align: center !important;
   }
   .md-align-l,
-  .sm-align-l.xs-align-l,
+  .sm-align-l,
+  .xs-align-l,
   .md-align-l *,
-  .sm-align-l.xs-align-l * {
+  .sm-align-l *,
+  .xs-align-l * {
     text-align: left !important;
   }
   .md-align-r,
@@ -674,7 +683,7 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
   .visible-lg {
     display: none !important;
   }
-  .lg-clearfix {
+  .clearfix-lg {
     clear: both !important;
     display: block;
   }
@@ -700,7 +709,7 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
   .hidden-xl {
     display: none !important;
   }
-  .xl-no-float {
+  .no-float-xl {
     float: none !important;
   }
   .xl-align-c,
@@ -5756,6 +5765,7 @@ html:not(.mobile) .list-group > ul > li > a:hover .list-icon {
 .card,
 [class*="card-"]:not(.card-side) {
   background-color: #fff;
+  background-color: var(--card-bg);
   display: block;
   position: relative;
 }
@@ -9243,9 +9253,14 @@ html:not(.mobile) .preview-next:hover {
 }
 .bg-white:not([class*="ui-"]) {
   background-color: #fff !important;
+  background-color: var(--white) !important;
+}
+.card .bg-white:not([class*="ui-"]) {
+  background-color: #fff !important;
+  background-color: var(--card-bg) !important;
 }
 .bg-black:not([class*="ui-"]) {
-  background-color: #181818 !important;
+  background-color: #0f1115 !important;
 }
 .theme-gray.ui-x-light,
 .theme-gray .ui-x-light:not([class*="theme-"]) {
@@ -9630,12 +9645,6 @@ html:not(.mobile) .theme-default2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn
   .set-dark:not(.theme-light)[class*="theme-"] [class*="ui-x-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) {
     background-color: #07080a;
   }
-  .bg-white:not([class*="ui-"]) {
-    background-color: #0f1115 !important;
-  }
-  .card .bg-white:not([class*="ui-"]) {
-    background-color: #2f343e !important;
-  }
   .theme-gray.ui-x-light,
   .theme-gray .ui-x-light:not([class*="theme-"]) {
     background-color: rgba(157, 165, 181, 0.65);
@@ -9987,10 +9996,6 @@ html:not(.mobile) .theme-default2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn
   .dropdown ul.content.has-grid li,
   .dropdown [class*="list-column-"] > li {
     border-color: rgba(255, 255, 255, 0.065);
-  }
-  .card,
-  [class*="card-"]:not(.card-side) {
-    background-color: #2f343e;
   }
   .close-card {
     color: #fff;
