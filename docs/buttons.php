@@ -6,7 +6,7 @@
                 <h4>Button Styles</h4>
                 <div class="row padding-30-b block-2nd form-lg ease-2nd-btn">
                     <div class="col-3 col-sm-6">
-                        <a class="btn  href="#">Button</a>
+                        <a class="btn" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
                         <a class="btn round" href="#">Button</a>

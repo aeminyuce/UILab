@@ -1,9 +1,6 @@
 // out: false
 /* typography */ @import '_settings.less';
 
-@xx-light:                              @white;
-@xx-dark:                               @black;
-
 @x-light:                               fade(@white, 70%);
 @light:                                 fade(@white, 50%);
 @dark:                                  fade(@black, 45%);
@@ -11,7 +8,6 @@
 
 @dark-dark:                             fade(@white, 45%);
 @x-dark-dark:                           fade(@white, 70%);
-@xx-dark-dark:                          @white;
 
 @code-font-family:                      Menlo, Monaco, Consolas, "Courier New", monospace;
 
@@ -30,7 +26,6 @@
 :root {
     --dark: @dark;
     --x-dark: @x-dark;
-    --xx-dark: @xx-dark;
 
     --code-color: @code-color;
     --code-bg: @code-bg;
@@ -44,7 +39,6 @@
        :root {
             --dark: @dark-dark;
             --x-dark: @x-dark-dark;
-            --xx-dark: @xx-dark-dark;
 
             --code-color: @white;
             --code-bg: @code-color;
@@ -78,7 +72,7 @@ h1 .icon-lg:not(.right),h2 .icon-lg:not(.right),h3 .icon-lg:not(.right),h4 .icon
     h1 > small,h2 > small,h3 > small,h4 > small,h5 > small,h6 > small { text-align: center; display: block; }
 }
 
-body,a { ._color-var(body-color); }
+body,a { ._color-var(black); }
 
 .xx-smallest { font-size: 7px !important; }
 .x-smallest { font-size: 8px !important; }
@@ -94,13 +88,13 @@ body,a { ._color-var(body-color); }
 .x-largest { font-size: 38px !important; }
 .xx-largest { font-size: 48px !important; }
 
-.xx-light,.xx-light .icon:not([class*="ui-"]),.xx-light a:not([class*="ui-"]),.xx-light button:not([class*="ui-"]) { color: @xx-light !important; }
+.xx-light,.xx-light .icon:not([class*="ui-"]),.xx-light a:not([class*="ui-"]),.xx-light button:not([class*="ui-"]) { color: @white !important; }
 .x-light,.x-light .icon:not([class*="ui-"]),.x-light a:not([class*="ui-"]),.x-light button:not([class*="ui-"]) { color: @x-light !important; }
 .light,.light .icon:not([class*="ui-"]),.light a:not([class*="ui-"]),.light button:not([class*="ui-"]) { color: @light !important; }
 
 .dark,.dark .icon:not([class*="ui-"]),.dark a:not([class*="ui-"]),.dark button:not([class*="ui-"]) { ._color-var(dark); }
 .x-dark,.x-dark .icon:not([class*="ui-"]),.x-dark a:not([class*="ui-"]),.x-dark button:not([class*="ui-"]) { ._color-var(x-dark); }
-.xx-dark,.xx-dark .icon:not([class*="ui-"]),.xx-dark a:not([class*="ui-"]),.xx-dark button:not([class*="ui-"]) { ._color-var(xx-dark); }
+.xx-dark,.xx-dark .icon:not([class*="ui-"]),.xx-dark a:not([class*="ui-"]),.xx-dark button:not([class*="ui-"]) { ._color-var(black); }
 
 .font-green,.font-green .icon:not([class*="ui-"]),.font-green a:not([class*="ui-"]),.font-green button:not([class*="ui-"]) { color: @green !important; }
 .font-yellow,.font-yellow .icon:not([class*="ui-"]),.font-yellow a:not([class*="ui-"]),.font-yellow button:not([class*="ui-"]) { color: @yellow !important; }

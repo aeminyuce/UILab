@@ -1,18 +1,22 @@
 /* global variables */
 :root {
-  --body-color: #000;
   --body-bg: #f9f9f9;
   --white: #fff;
+  --black: #000;
   --border-color: rgba(0, 0, 0, 0.15);
   --card-bg: #fff;
+  --btn-bg: rgba(0, 0, 0, 0.08);
+  --btn-bg-hover: rgba(0, 0, 0, 0.15);
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --body-color: #fff;
     --body-bg: #15181d;
     --white: #000;
+    --black: #fff;
     --border-color: rgba(255, 255, 255, 0.175);
     --card-bg: #2f343e;
+    --btn-bg: rgba(255, 255, 255, 0.08);
+    --btn-bg-hover: rgba(255, 255, 255, 0.15);
   }
 }
 /* reset */
@@ -3236,7 +3240,6 @@ html .row {
 :root {
   --dark: rgba(0, 0, 0, 0.45);
   --x-dark: rgba(0, 0, 0, 0.7);
-  --xx-dark: #000;
   --code-color: #c7254e;
   --code-bg: #f9f2f4;
   --pre-color: #333;
@@ -3246,7 +3249,6 @@ html .row {
   :root {
     --dark: rgba(255, 255, 255, 0.45);
     --x-dark: rgba(255, 255, 255, 0.7);
-    --xx-dark: #fff;
     --code-color: #fff;
     --code-bg: #c7254e;
     --pre-color: #fff;
@@ -3339,7 +3341,7 @@ h6 .icon-lg:not(.right) {
 body,
 a {
   color: #000;
-  color: var(--body-color);
+  color: var(--black);
 }
 .xx-smallest {
   font-size: 7px !important;
@@ -3417,7 +3419,7 @@ a {
 .xx-dark a:not([class*="ui-"]),
 .xx-dark button:not([class*="ui-"]) {
   color: #000;
-  color: var(--xx-dark);
+  color: var(--black);
 }
 .font-green,
 .font-green .icon:not([class*="ui-"]),
@@ -3719,6 +3721,14 @@ dt {
   }
 }
 /* buttons */
+:root {
+  --btn-ghost-bg-hover: rgba(0, 0, 0, 0.075);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --btn-ghost-bg-hover: rgba(255, 255, 255, 0.075);
+  }
+}
 @keyframes btn-spin {
   from {
     transform: rotate(0deg);
@@ -3739,11 +3749,14 @@ dt {
   transition-duration: 0.15s;
 }
 .btn {
+  color: #000;
+  color: var(--black);
   text-align: center;
   vertical-align: middle;
   line-height: 18px;
   height: 32px;
   background-color: rgba(0, 0, 0, 0.08);
+  background-color: var(--btn-bg);
   padding-top: 7px;
   padding-bottom: 7px;
   display: inline-block;
@@ -3956,6 +3969,7 @@ html:not(.mobile) .btn.ui-x-dark:hover .icon {
 .btn-ghost.ui-dark:not(.ui-text),
 .btn-ghost.ui-x-dark:not(.ui-text) {
   color: #000;
+  color: var(--black);
 }
 .btn-ghost.ui-dark:hover,
 .btn-ghost.ui-x-dark:hover,
@@ -3977,7 +3991,7 @@ html:not(.mobile) .btn.ui-x-dark:hover .icon {
   line-height: 1;
   min-width: 8px;
   min-height: 8px;
-  background-color: #dc000f;
+  background-color: #d10f1c;
   padding: 2px 4px;
   border-radius: 200px;
   position: absolute;
@@ -3988,9 +4002,11 @@ html:not(.mobile) .btn.ui-x-dark:hover .icon {
 }
 html:not(.mobile) .btn:not([class*="ui-x-light"]):not([class*="ui-light"]):not([class*="ui-dark"]):not([class*="ui-x-dark"]):not(.btn-passive):not(.swatch-active):hover {
   background-color: rgba(0, 0, 0, 0.15);
+  background-color: var(--btn-bg-hover);
 }
 html:not(.mobile) .btn.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-light"]):not([class*="ui-dark"]):not([class*="ui-x-dark"]):not(.btn-passive):not(.swatch-active):hover {
   background-color: rgba(0, 0, 0, 0.075);
+  background-color: var(--btn-ghost-bg-hover);
 }
 .btn .loading-spinner {
   position: absolute;
@@ -4540,6 +4556,34 @@ html:not(.mobile) .dropdown ul.content > li:hover {
   }
 }
 /* forms */
+:root {
+  --select-options-bg: #fff;
+  --select-multi-options-border: rgba(0, 0, 0, 0.045);
+  --range-thumb-color: #8e9094;
+  --range-track-bg: rgba(0, 0, 0, 0.08);
+  --range-track-bg-hover: rgba(0, 0, 0, 0.15);
+  --form-focus-bg: rgba(0, 0, 0, 0.015);
+  --form-focus-border: rgba(0, 0, 0, 0.35);
+  --placeholder-color: rgba(0, 0, 0, 0.4);
+  --placeholder-focus-color: rgba(0, 0, 0, 0.23);
+  --check-custom-bg: rgba(0, 0, 0, 0.65);
+  --switch-custom-bg: rgba(0, 0, 0, 0.15);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --select-options-bg: #41454d;
+    --select-multi-options-border: rgba(255, 255, 255, 0.045);
+    --range-thumb-color: #60656e;
+    --range-track-bg: rgba(255, 255, 255, 0.08);
+    --range-track-bg-hover: rgba(255, 255, 255, 0.15);
+    --form-focus-bg: rgba(255, 255, 255, 0.075);
+    --form-focus-border: rgba(255, 255, 255, 0.65);
+    --placeholder-color: rgba(255, 255, 255, 0.4);
+    --placeholder-focus-color: rgba(255, 255, 255, 0.23);
+    --check-custom-bg: rgba(255, 255, 255, 0.65);
+    --switch-custom-bg: rgba(255, 255, 255, 0.15);
+  }
+}
 .ease-form,
 .ease-1st-form > *,
 .ease-2nd-form > * > * {
@@ -4615,7 +4659,10 @@ html:not(.mobile) .dropdown ul.content > li:hover {
 .textarea,
 .select,
 .select-multi {
-  border: solid 1px rgba(0, 0, 0, 0.15);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.15);
+  border-color: var(--border-color);
   overflow: hidden;
   display: block;
   position: relative;
@@ -4636,6 +4683,8 @@ html:not(.mobile) .dropdown ul.content > li:hover {
 .select select,
 .select-multi select,
 .textarea textarea {
+  color: #000;
+  color: var(--black);
   width: 100%;
   background-color: transparent;
   border: 0;
@@ -4687,6 +4736,11 @@ html:not(.mobile) .dropdown ul.content > li:hover {
   position: relative;
   z-index: 2;
 }
+.select option,
+.select optgroup {
+  background-color: #fff;
+  background-color: var(--select-options-bg);
+}
 .ie .select select:focus::-ms-value {
   color: inherit;
   background-color: transparent;
@@ -4722,7 +4776,10 @@ html:not(.mobile) .dropdown ul.content > li:hover {
   padding: 3px 5px;
 }
 .select-multi option:not(:last-child) {
-  border-bottom: solid 1px rgba(0, 0, 0, 0.045);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: rgba(0, 0, 0, 0.045);
+  border-color: var(--select-multi-options-border);
 }
 .check,
 .radio {
@@ -4732,7 +4789,10 @@ html:not(.mobile) .dropdown ul.content > li:hover {
 .file {
   line-height: normal;
   height: 32px;
-  border: solid 1px rgba(0, 0, 0, 0.15);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.15);
+  border-color: var(--border-color);
   overflow: hidden;
   display: block;
   position: relative;
@@ -4765,6 +4825,7 @@ html:not(.mobile) .dropdown ul.content > li:hover {
 }
 html:not(.mobile) .file:hover .btn {
   background-color: rgba(0, 0, 0, 0.15);
+  background-color: var(--btn-bg-hover);
 }
 .file > span:not(.btn) {
   white-space: nowrap;
@@ -4789,7 +4850,10 @@ label.custom {
   vertical-align: middle;
   height: 22px;
   margin-bottom: 2px;
-  border: solid 1px rgba(0, 0, 0, 0.15);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.15);
+  border-color: var(--border-color);
   overflow: hidden;
   display: inline-block;
   position: relative;
@@ -4820,6 +4884,7 @@ label.custom {
 .check-custom i,
 .radio-custom i {
   background-color: rgba(0, 0, 0, 0.65);
+  background-color: var(--check-custom-bg);
   opacity: 0;
 }
 .radio-custom i,
@@ -4852,6 +4917,7 @@ label.custom {
 .switch-custom input:not(:checked) + i,
 .switch-custom input:not(:checked) + i[class*="ui-"] {
   background-color: rgba(0, 0, 0, 0.15);
+  background-color: var(--switch-custom-bg);
 }
 .switch-custom input:checked + i {
   transform: translate(25%, -50%);
@@ -4907,12 +4973,14 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
   width: 100%;
   height: 0.5rem;
   background-color: rgba(0, 0, 0, 0.08);
+  background-color: var(--range-track-bg);
   border-color: transparent;
   border-radius: 20px;
   cursor: pointer;
 }
 .range:hover::-webkit-slider-runnable-track {
   background-color: rgba(0, 0, 0, 0.15);
+  background-color: var(--range-track-bg-hover);
 }
 .range::-moz-range-thumb {
   width: 1rem;
@@ -4937,12 +5005,14 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
   width: 100%;
   height: 0.5rem;
   background-color: rgba(0, 0, 0, 0.08);
+  background-color: var(--range-track-bg);
   border-color: transparent;
   border-radius: 20px;
   cursor: pointer;
 }
 .range:hover::-moz-range-track {
   background-color: rgba(0, 0, 0, 0.15);
+  background-color: var(--range-track-bg-hover);
 }
 .range::-ms-thumb {
   width: 1rem;
@@ -4976,26 +5046,33 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
 }
 .range::-ms-fill-lower {
   background-color: rgba(0, 0, 0, 0.08);
+  background-color: var(--range-track-bg);
   border-radius: 20px;
 }
 .range:hover::-ms-fill-lower {
   background-color: rgba(0, 0, 0, 0.15);
+  background-color: var(--range-track-bg-hover);
 }
 .range::-ms-fill-upper {
   background-color: rgba(0, 0, 0, 0.08);
+  background-color: var(--range-track-bg);
   border-radius: 20px;
 }
 .range:hover::-ms-fill-upper {
   background-color: rgba(0, 0, 0, 0.15);
+  background-color: var(--range-track-bg-hover);
 }
 .range:disabled::-webkit-slider-thumb {
   background-color: #8e9094;
+  background-color: var(--range-thumb-color);
 }
 .range:disabled::-moz-range-thumb {
   background-color: #8e9094;
+  background-color: var(--range-thumb-color);
 }
 .range:disabled::-ms-thumb {
   background-color: #8e9094;
+  background-color: var(--range-thumb-color);
 }
 .range:disabled::-webkit-slider-runnable-track {
   cursor: default;
@@ -5051,10 +5128,10 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
 }
 .hint.error,
 .required-msg {
-  color: #f73d49;
+  color: #d10f1c;
 }
 .hint.warning {
-  color: #fdbc43;
+  color: #ffa600;
 }
 .required-msg:not(.show) {
   display: none;
@@ -5093,12 +5170,14 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
 }
 .form-focus {
   border-color: rgba(0, 0, 0, 0.35);
+  border-color: var(--form-focus-border);
 }
 .form-focus.form-light {
   border-color: rgba(255, 255, 255, 0.65) !important;
 }
 .form-focus:not(.form-readonly) {
-  background-color: rgba(0, 0, 0, 0.015) !important;
+  background-color: rgba(0, 0, 0, 0.015);
+  background-color: var(--form-focus-bg);
   box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.075);
 }
 .form-focus > input,
@@ -5106,7 +5185,8 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
 .form-focus.form-light > select option,
 .form-focus > textarea,
 .form-focus .icon:not([class*="ui-"]) {
-  color: #000 !important;
+  color: #000;
+  color: var(--black);
 }
 .form-focus.form-light > input,
 .form-focus.form-light > select,
@@ -5123,18 +5203,22 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
 }
 ::placeholder {
   color: rgba(0, 0, 0, 0.4);
+  color: var(--placeholder-color);
+}
+::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  color: var(--placeholder-color);
 }
 ::-moz-placeholder {
   opacity: 1;
 }
-::-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.4);
-}
 .form-focus > ::placeholder {
   color: rgba(0, 0, 0, 0.23);
+  color: var(--placeholder-focus-color);
 }
 .form-focus > ::-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.23);
+  color: var(--placeholder-focus-color);
 }
 .form-light > ::placeholder {
   color: rgba(255, 255, 255, 0.4);
@@ -5150,6 +5234,8 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
 }
 [class*="text-icon"] .icon,
 [class*="text-icon"] > button {
+  color: #000;
+  color: var(--black);
   width: 16px;
   height: 16px;
   position: absolute;
@@ -5200,6 +5286,7 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
 }
 .form-holder-focus [class*="col-"] > * {
   border-color: rgba(0, 0, 0, 0.35);
+  border-color: var(--form-focus-border);
 }
 .form-holder-focus [class*="col-"] > .form-light,
 .form-holder-focus [class*="col-"] > .border-light {
@@ -5384,6 +5471,16 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
   }
 }
 /* textarea counter */
+:root {
+  --textarea-counter-color: rgba(0, 0, 0, 0.45);
+  --textarea-counter-bg: rgba(0, 0, 0, 0.035);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --textarea-counter-color: #fff;
+    --textarea-counter-bg: rgba(255, 255, 255, 0.175);
+  }
+}
 .textarea:not(.toggle-textarea)[data-counter]:before {
   content: attr(data-counter);
   font-size: 9px;
@@ -5406,20 +5503,22 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
 }
 .textarea:not(.form-light):not(.toggle-textarea)[data-counter]:before,
 .textarea.form-focus:not(.toggle-textarea)[data-counter]:before {
-  color: #777;
+  color: rgba(0, 0, 0, 0.45);
+  color: var(--textarea-counter-color);
   background-color: rgba(0, 0, 0, 0.035);
+  background-color: var(--textarea-counter-bg);
 }
 .textarea.form-light:not(.toggle-textarea):not(.form-focus)[data-counter]:before {
   color: #fff;
   background-color: rgba(255, 255, 255, 0.3);
 }
 .error[data-counter]:before {
-  color: #dc000f !important;
-  background-color: #ffd9dc !important;
+  color: #d10f1c !important;
+  background-color: #fddddf !important;
 }
 .warning[data-counter]:before {
   color: #ffa600 !important;
-  background-color: #fff2d9 !important;
+  background-color: #fff4e0 !important;
 }
 /* autocomplete */
 .ease-autocomplete {
@@ -9258,14 +9357,6 @@ html:not(.mobile) .preview-next:hover {
   opacity: 0.65;
 }
 /* themes */
-:root {
-  --light-theme-color: #000;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --light-theme-color: #fff;
-  }
-}
 .ui-x-light,
 .ui-x-light .icon:not([class*="ui-"]),
 .ui-x-light a:not([class*="ui-"]),
@@ -9901,85 +9992,6 @@ html:not(.mobile) .theme-default2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn
 }
 /* darkmode */
 @media (prefers-color-scheme: dark) {
-  .text input:not(:focus):not([readonly]),
-  .select select:not(:focus):not([readonly]),
-  .select-multi select:not(:focus):not([readonly]),
-  .textarea textarea:not(:focus):not([readonly]) {
-    color: #fff;
-  }
-  .select select option,
-  .select select optgroup {
-    color: #fff;
-    background-color: #41454d;
-  }
-  .select-multi option:not(:last-child) {
-    border-color: rgba(255, 255, 255, 0.045);
-  }
-  html:not(.mobile) .file:hover .btn {
-    background-color: rgba(255, 255, 255, 0.15);
-  }
-  [class*="text-icon"] > button {
-    color: #fff;
-  }
-  .range::-webkit-slider-runnable-track {
-    background-color: rgba(255, 255, 255, 0.08);
-  }
-  .range:hover::-webkit-slider-runnable-track {
-    background-color: rgba(255, 255, 255, 0.15);
-  }
-  .range::-moz-range-track {
-    background-color: rgba(255, 255, 255, 0.08);
-  }
-  .range:hover::-moz-range-track {
-    background-color: rgba(255, 255, 255, 0.15);
-  }
-  .range:disabled::-webkit-slider-thumb {
-    background-color: #60656e;
-  }
-  .range:disabled::-moz-range-thumb {
-    background-color: #60656e;
-  }
-  .form-focus {
-    border-color: rgba(255, 255, 255, 0.65);
-  }
-  .form-focus:not(.form-readonly) {
-    background-color: rgba(255, 255, 255, 0.075) !important;
-  }
-  .form-focus > input,
-  .form-focus > select,
-  .form-focus.form-light > select option,
-  .form-focus > textarea,
-  .form-focus .icon:not([class*="ui-"]) {
-    color: #fff !important;
-  }
-  ::placeholder {
-    color: rgba(255, 255, 255, 0.4);
-  }
-  ::-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.4);
-  }
-  .form-focus > ::placeholder {
-    color: rgba(255, 255, 255, 0.23);
-  }
-  .form-focus > ::-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.23);
-  }
-  .check-custom i,
-  .radio-custom i {
-    background-color: rgba(255, 255, 255, 0.65);
-  }
-  .switch-custom input:not(:checked):not(:indeterminate) + i,
-  .switch-custom input:not(:checked) + i[class*="ui-"] {
-    background-color: rgba(255, 255, 255, 0.15);
-  }
-  .textarea:not(.form-light):not(.toggle-textarea)[data-counter]:before,
-  .textarea.form-focus:not(.toggle-textarea)[data-counter]:before {
-    color: #fff;
-    background-color: rgba(255, 255, 255, 0.175);
-  }
-  .form-holder-focus [class*="col-"] > * {
-    border-color: rgba(255, 255, 255, 0.65) !important;
-  }
   .form-disabled {
     background-color: rgba(255, 255, 255, 0.075);
   }
@@ -9990,20 +10002,6 @@ html:not(.mobile) .theme-default2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn
   .autocomplete ul {
     color: #fff;
     background-color: #41454d;
-  }
-  html:not(.mobile) .btn:not([class*="ui-x-light"]):not([class*="ui-light"]):not([class*="ui-dark"]):not([class*="ui-x-dark"]):not(.btn-passive):not(.swatch-active):hover {
-    background-color: rgba(255, 255, 255, 0.15);
-  }
-  html:not(.mobile) .btn.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-light"]):not([class*="ui-dark"]):not([class*="ui-x-dark"]):not(.btn-passive):not(.swatch-active):hover {
-    background-color: rgba(255, 255, 255, 0.075);
-  }
-  .btn {
-    color: #fff;
-    background-color: rgba(255, 255, 255, 0.08);
-  }
-  .btn-ghost.ui-dark:not(.ui-text),
-  .btn-ghost.ui-x-dark:not(.ui-text) {
-    color: #fff;
   }
   .dropdown ul.content > li:not(:last-child) {
     border-color: rgba(255, 255, 255, 0.065);

@@ -14,9 +14,28 @@
 @darkmode:                              true;
 @round:                                 6px;
 
+// global breakpoints
+@xl-start:                              ~"(min-width: 1680px)";
+
+@lg-finish:                             ~"(max-width: 1679px)";
+@lg-start:                              ~"(min-width: 1200px)";
+@lg-start-finish:                       @lg-start and @lg-finish;
+
+@default-finish:                        ~"(max-width: 1199px)";
+@default-start:                         ~"(min-width: 960px)";
+@default-start-finish:                  @default-start and @default-finish;
+
+@md-finish:                             ~"(max-width: 959px)";
+@md-start:                              ~"(min-width: 768px)";
+@md-start-finish:                       @md-start and @md-finish;
+
+@sm-finish:                             ~"(max-width: 767px)";
+@sm-start:                              ~"(min-width: 481px)";
+@sm-start-finish:                       @sm-start and @sm-finish;
+
+@xs-finish:                             ~"(max-width: 480px)";
+
 // global colors
-@body-color:                            @black;
-@body-color-dark:                       @white;
 @body-bg:                               #f9f9f9;
 @body-bg-dark:                          #15181d;
 
@@ -39,57 +58,45 @@
 @card-bg:                               @white;
 @card-bg-dark:                          #2f343e;
 
-// global breakpoints
-@xl-start:                              ~"(min-width: 1680px)";
-
-@lg-finish:                             ~"(max-width: 1679px)";
-@lg-start:                              ~"(min-width: 1200px)";
-@lg-start-finish:                       @lg-start and @lg-finish;
-
-@default-finish:                        ~"(max-width: 1199px)";
-@default-start:                         ~"(min-width: 960px)";
-@default-start-finish:                  @default-start and @default-finish;
-
-@md-finish:                             ~"(max-width: 959px)";
-@md-start:                              ~"(min-width: 768px)";
-@md-start-finish:                       @md-start and @md-finish;
-
-@sm-finish:                             ~"(max-width: 767px)";
-@sm-start:                              ~"(min-width: 481px)";
-@sm-start-finish:                       @sm-start and @sm-finish;
-
-@xs-finish:                             ~"(max-width: 480px)";
+@btn-bg:                                fade(@black, 8%);
+@btn-bg-hover:                          fade(@black, 15%);
+@btn-bg-dark:                           fade(@white, 8%);
+@btn-bg-hover-dark:                     fade(@white, 15%);
 
 /* global variables */
 :root {
-   --body-color: @body-color;
    --body-bg: @body-bg;
 
    --white: @white;
+   --black: @black;
 
    --border-color: @border-color;
    --card-bg: @card-bg;
+
+   --btn-bg: @btn-bg;
+   --btn-bg-hover: @btn-bg-hover;
 }
 
 ._darkmode-global-vars (@darkmode) when (@darkmode = true) {
    @media (prefers-color-scheme: dark) {
       :root {
-         --body-color: @body-color-dark;
          --body-bg: @body-bg-dark;
 
          --white: @black;
+         --black: @white;
 
          --border-color: @border-color-dark;
          --card-bg: @card-bg-dark;
-         }
+
+         --btn-bg: @btn-bg-dark;
+         --btn-bg-hover: @btn-bg-hover-dark;
+      }
    }
 }
 
 ._darkmode-global-vars(@darkmode);
 
-// color mixins
-._bg (@color: @no-color) { background-color: @color; }
-
+// variable color mixins
 ._color-var (@var) {
    color: @@var;
    color: ~'var(--@{var})';
@@ -107,38 +114,38 @@
 ._theme (@name, @color) { // light mode themes
 
    .theme-@{name}.ui-x-light,.theme-@{name} .ui-x-light:not([class*="theme-"]) {
-      ._bg(fade(lighten(@color, 45%), 65%));
+      background-color: fade(lighten(@color, 45%), 65%);
 
       html:not(.mobile) &.hover:hover,
       html:not(.mobile) &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-         ._bg(fade(lighten(@color, 10%), 65%));
+         background-color: fade(lighten(@color, 10%), 65%);
       }
 
    }
    .theme-@{name}.ui-light,.theme-@{name} .ui-light:not([class*="theme-"]) {
-      ._bg(fade(lighten(@color, 35%), 65%));
+      background-color: fade(lighten(@color, 35%), 65%);
 
       html:not(.mobile) &.hover:hover,
       html:not(.mobile) &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-         ._bg(fade(lighten(@color, 10%), 65%));
+         background-color: fade(lighten(@color, 10%), 65%);
       }
 
    }
    .theme-@{name}.ui-dark,.theme-@{name} .ui-dark:not([class*="theme-"]) {
-      ._bg(@color);
+      background-color: @color;
 
       html:not(.mobile) &.hover:hover,
       html:not(.mobile) &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-         ._bg(lighten(@color, 10%));
+         background-color: lighten(@color, 10%);
       }
 
    }
    .theme-@{name}.ui-x-dark,.theme-@{name} .ui-x-dark:not([class*="theme-"]) {
-      ._bg(darken(@color, 10%));
+      background-color: darken(@color, 10%);
 
       html:not(.mobile) &.hover:hover,
       html:not(.mobile) &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-         ._bg(@color);
+         background-color: @color;
       }
 
    }
@@ -151,20 +158,20 @@
 ._theme-dark (@name, @color) { // dark mode themes
 
    .theme-@{name}.ui-x-light,.theme-@{name} .ui-x-light:not([class*="theme-"]) {
-      ._bg(fade(@color, 15%));
+      background-color: fade(@color, 15%);
 
       html:not(.mobile) &.hover:hover,
       html:not(.mobile) &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-         ._bg(fade(@color, 50%));
+         background-color: fade(@color, 50%);
       }
 
    }
    .theme-@{name}.ui-light,.theme-@{name} .ui-light:not([class*="theme-"]) {
-      ._bg(fade(@color, 15%));
+      background-color: fade(@color, 15%);
 
       html:not(.mobile) &.hover:hover,
       html:not(.mobile) &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-         ._bg(fade(@color, 50%));
+         background-color: fade(@color, 50%);
       }
 
    }

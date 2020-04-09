@@ -1,31 +1,14 @@
 // out: false
 /* themes */ @import '_settings.less';
 
-@light-theme-color:                   @black;
-@light-theme-color-dark:              @white;
-
 @set-dark:                            #0b0d10;
 @set-x-dark:                          #07080a;
 
 @theme-color-names:                   gray, green, yellow, orange, red, blue, default, default2;
 @theme-colors:                        '@{gray}', '@{green}', '@{yellow}', '@{orange}', '@{red}', '@{blue}', '@{default}', '@{default2}';
 
-:root {
-   --light-theme-color: @light-theme-color;
-}
-
-._darkmode-themes-vars (@darkmode) when (@darkmode = true) {
-   @media (prefers-color-scheme: dark) {
-      :root {
-         --light-theme-color: @light-theme-color-dark;
-      }
-   }
-}
-
-._darkmode-themes-vars(@darkmode);
-
 .ui-x-light {
-   color: ._color-var(light-theme-color);
+   color: ._color-var(black);
 
    .icon,a,button {
       &:not([class*="ui-"]) { &:extend(.ui-x-light); }
@@ -63,7 +46,7 @@
 }
 
 .bg-black {
-   &:not([class*="ui-"]) { ._bg(@black) !important; }
+   &:not([class*="ui-"]) { background-color: @black !important; }
 }
 
 ._theme-loop(@i) when (@i > 0) {
@@ -81,12 +64,12 @@
       .set-dark {
          &:not(.theme-gray)[class*="theme-"][class*="ui-"],
          &:not(.theme-light)[class*="theme-"] [class*="ui-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) {
-             ._bg(@set-dark);
+             background-color: @set-dark;
          }
 
          &:not(.theme-gray)[class*="theme-"][class*="ui-x-"],
          &:not(.theme-light)[class*="theme-"] [class*="ui-x-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) {
-             ._bg(@set-x-dark);
+             background-color: @set-x-dark;
          }
       }
 

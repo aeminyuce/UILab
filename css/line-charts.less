@@ -16,7 +16,7 @@
 .line-charts svg g { display: block; }
 
 .line-charts svg path { stroke-linecap: round; }
-.line-charts svg path:not([fill]) { fill: transparent; }
+.line-charts svg path:not([fill]) { fill: @no-color; }
 .line-charts.resized svg path.filled { opacity: .15; }
 
 .line-charts:not(.resized) svg path:not(.dashed):not(.dotted):not(.filled) { stroke-dashoffset: 3000; stroke-dasharray: 3000; }
