@@ -6,14 +6,14 @@
 @textarea-counter-bg:                  fade(@black, 3.5%);
 @textarea-counter-bg-dark:             fade(@white, 17.5%);
 
-:root {
+:root,[data-theme="dark"] {
     --textarea-counter-color: @textarea-counter-color;
     --textarea-counter-bg: @textarea-counter-bg;
 }
 
 ._darkmode-textarea-counter-vars (@darkmode) when (@darkmode = true) {
     @media (prefers-color-scheme: dark) {
-       :root {
+        :root,[data-theme="dark"] {
             --textarea-counter-color: @textarea-counter-color-dark;
             --textarea-counter-bg: @textarea-counter-bg-dark;
         }

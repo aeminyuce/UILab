@@ -154,7 +154,7 @@
                             <div class="col-12 md-align-c">
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
-                                <p class="xx-large light">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
+                                <p class="xx-large x-light">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
                                 <a href="#" class="btn btn-xs-fluid padding-30-h ui-dark ease-btn">
                                     <svg class="icon margin-5-r"><use href="#moneys"></use></svg>
                                     <b>Invest Now</b>
@@ -192,7 +192,7 @@
                             <div class="col-12 md-align-c">
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
-                                <p class="xx-large light">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
+                                <p class="xx-large x-light">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
                                 <a href="#" class="btn btn-xs-fluid padding-30-h ui-dark ease-btn">
                                     <svg class="icon margin-5-r"><use href="#moneys"></use></svg>
                                     <b>Invest Now</b>
@@ -230,7 +230,7 @@
                             <div class="col-12 md-align-c">
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
-                                <p class="xx-large light">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
+                                <p class="xx-large x-light">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
                                 <a href="#" class="btn btn-xs-fluid padding-30-h ui-dark ease-btn">
                                     <svg class="icon margin-5-r"><use href="#moneys"></use></svg>
                                     <b>Invest Now</b>
@@ -944,25 +944,25 @@
 
 <!-- page social -->
 <div class="page-social icons-lg icons-no-opacity form-lg ease-1st-btn">
-    <a class="btn btn-square theme-facebook ui-dark" href="#" target="_blank" data-tooltip="r" title="Facebook">
+    <a class="btn btn-square btn-facebook" href="#" target="_blank" data-tooltip="r" title="Facebook">
         <svg class="icon"><use href="#facebook"></use></svg>
     </a>
-    <a class="btn btn-square theme-twitter ui-dark" href="#" target="_blank" data-tooltip="r" title="Twitter">
+    <a class="btn btn-square btn-twitter" href="#" target="_blank" data-tooltip="r" title="Twitter">
         <svg class="icon"><use href="#twitter"></use></svg>
     </a>
-    <a class="btn btn-square theme-instagram ui-dark" href="#" target="_blank" data-tooltip="r" title="Instagram">
+    <a class="btn btn-square btn-instagram" href="#" target="_blank" data-tooltip="r" title="Instagram">
         <svg class="icon"><use href="#instagram"></use></svg>
     </a>
-    <a class="btn btn-square theme-linkedin ui-dark" href="#" target="_blank" data-tooltip="r" title="Linkedin">
+    <a class="btn btn-square btn-linkedin" href="#" target="_blank" data-tooltip="r" title="Linkedin">
         <svg class="icon"><use href="#linkedin"></use></svg>
     </a>
-    <a class="btn btn-square theme-google ui-dark" href="#" target="_blank" data-tooltip="r" title="Google">
+    <a class="btn btn-square btn-google" href="#" target="_blank" data-tooltip="r" title="Google">
         <svg class="icon"><use href="#google"></use></svg>
     </a>
-    <a class="btn btn-square theme-whatsapp ui-dark" href="#" target="_blank" data-tooltip="r" title="Whatsapp">
+    <a class="btn btn-square btn-whatsapp" href="#" target="_blank" data-tooltip="r" title="Whatsapp">
         <svg class="icon"><use href="#whatsapp"></use></svg>
     </a>
-    <a class="btn btn-square theme-youtube ui-dark" href="#" target="_blank" data-tooltip="r" title="Youtube">
+    <a class="btn btn-square btn-youtube" href="#" target="_blank" data-tooltip="r" title="Youtube">
         <svg class="icon"><use href="#youtube"></use></svg>
     </a>
 </div>

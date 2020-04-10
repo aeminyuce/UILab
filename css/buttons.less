@@ -4,13 +4,13 @@
 @btn-ghost-bg-hover:                    fade(@black, 7.5%);
 @btn-ghost-bg-hover-dark:               fade(@white, 7.5%);
 
-:root {
+:root,[data-theme="dark"] {
     --btn-ghost-bg-hover: @btn-ghost-bg-hover;
 }
 
 ._darkmode-buttons-vars (@darkmode) when (@darkmode = true) {
     @media (prefers-color-scheme: dark) {
-        :root {
+        :root,[data-theme="dark"] {
             --btn-ghost-bg-hover: @btn-ghost-bg-hover-dark;
     }
     }

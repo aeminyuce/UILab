@@ -4,13 +4,13 @@
 @breadcrumbs-sep-color:                 fade(@black, 25%);
 @breadcrumbs-sep-color-dark:            fade(@white, 25%);
 
-:root {
+:root,[data-theme="dark"] {
     --breadcrumbs-sep-color: @breadcrumbs-sep-color;
 }
 
 ._darkmode-breadcrumbs-vars (@darkmode) when (@darkmode = true) {
     @media (prefers-color-scheme: dark) {
-       :root {
+        :root,[data-theme="dark"] {
             --breadcrumbs-sep-color: @breadcrumbs-sep-color-dark;
         }
     }

@@ -64,7 +64,7 @@
 @btn-bg-hover-dark:                     fade(@white, 15%);
 
 /* global variables */
-:root {
+:root,[data-theme="dark"] {
    --body-bg: @body-bg;
 
    --white: @white;
@@ -79,7 +79,7 @@
 
 ._darkmode-global-vars (@darkmode) when (@darkmode = true) {
    @media (prefers-color-scheme: dark) {
-      :root {
+      :root,[data-theme="dark"] {
          --body-bg: @body-bg-dark;
 
          --white: @black;

@@ -3,12 +3,6 @@
 
 ._darkmode-global (@darkmode) when (@darkmode = true) {
     @media (prefers-color-scheme: dark) {
-        .form-disabled { background-color: rgba(255,255,255,.075); }
-        .form-readonly input,.form-readonly textarea { color: rgba(255,255,255,.65); }
-
-
-        .autocomplete ul { color: #fff; background-color: #41454d; }
-
         .dropdown ul.content > li:not(:last-child) { border-color: rgba(255,255,255,.065); }
         .dropdown.open > .btn-ghost:not([class*="ui-"]) { background-color: rgba(255,255,255,.075) !important; }
         .dropdown .content { background-color: #41454d; }
@@ -16,24 +10,10 @@
         .dropdown ul.content > li.selected > label { background-color: rgba(255,255,255,.075); }
         .dropdown ul.content.has-grid li,.dropdown [class*="list-column-"] > li { border-color: rgba(255,255,255,.065); }
 
-        .close-card { color: #fff; }
-
-        .page-social > .btn { background: #292c35; }
-        .theme-facebook.ui-dark .icon { color: #3b5998; }
-        .theme-twitter.ui-dark .icon { color: #1da1f2; }
-        .theme-instagram.ui-dark .icon { color: #c13584; }
-        .theme-linkedin.ui-dark .icon { color: #0077b5; }
-        .theme-google.ui-dark .icon { color: #db4437; }
-        .theme-whatsapp.ui-dark .icon { color: #25d366; }
-        .theme-youtube.ui-dark .icon { color: #ff0000; }
-
         .photos-holder [class*="img-photo"] { border-color: #15181d; }
         .dropdown .photos-holder [class*="img-photo"] { border-color: #41454d; }
         .card .photos-holder [class*="img-photo"] { border-color: #2f343e; }
         [class*="img-photo"]:not(img) { background-color: rgba(255,255,255,.08); }
-
-        .progress-bar { background-color: rgba(0,0,0,.25); }
-        .progress-bar > span { background-color: rgba(255,255,255,.15); }
 
         .timeline:not(.hide-lines):after { background-color: rgba(255,255,255,.175); }
         .timeline:not(.hide-lines) > li:before { background-color: rgba(255,255,255,.175); }

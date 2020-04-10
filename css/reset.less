@@ -4,13 +4,13 @@
 @hr-color:                              fade(@black, 15%);
 @hr-color-dark:                         fade(@white, 15%);
 
-:root {
+:root,[data-theme="dark"] {
     --hr-color: @hr-color;
 }
 
 ._darkmode-reset-vars (@darkmode) when (@darkmode = true) {
     @media (prefers-color-scheme: dark) {
-       :root {
+        :root,[data-theme="dark"] {
             --hr-color: @hr-color-dark;
         }
     }

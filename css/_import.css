@@ -4568,6 +4568,8 @@ html:not(.mobile) .dropdown ul.content > li:hover {
   --placeholder-focus-color: rgba(0, 0, 0, 0.23);
   --check-custom-bg: rgba(0, 0, 0, 0.65);
   --switch-custom-bg: rgba(0, 0, 0, 0.15);
+  --form-disabled-bg: rgba(0, 0, 0, 0.075);
+  --form-readonly-color: rgba(0, 0, 0, 0.5);
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -4582,6 +4584,8 @@ html:not(.mobile) .dropdown ul.content > li:hover {
     --placeholder-focus-color: rgba(255, 255, 255, 0.23);
     --check-custom-bg: rgba(255, 255, 255, 0.65);
     --switch-custom-bg: rgba(255, 255, 255, 0.15);
+    --form-disabled-bg: rgba(255, 255, 255, 0.075);
+    --form-readonly-color: rgba(255, 255, 255, 0.65);
   }
 }
 .ease-form,
@@ -5083,8 +5087,8 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
 .error .check-custom,
 .error .radio-custom,
 .error .switch-custom {
-  background-color: rgba(220, 0, 15, 0.1) !important;
-  border-color: #dc000f !important;
+  background-color: rgba(209, 15, 28, 0.1) !important;
+  border-color: #d10f1c !important;
 }
 .warning .check-custom,
 .warning .radio-custom,
@@ -5102,13 +5106,13 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
   color: #fff;
 }
 .form-light > input:-webkit-autofill:not(:focus) {
-  -webkit-text-fill-color: white !important;
+  -webkit-text-fill-color: #fff !important;
 }
 .error:not(.form-holder):not(.required-accept):not(.hint),
 .error label.check,
 .error label.radio {
-  background-color: rgba(220, 0, 15, 0.1) !important;
-  border-color: #dc000f !important;
+  background-color: rgba(209, 15, 28, 0.1) !important;
+  border-color: #d10f1c !important;
 }
 .warning:not(.form-holder):not(.required-accept):not(.hint),
 .warning label.check,
@@ -5143,18 +5147,20 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
 }
 .form-disabled {
   background-color: rgba(0, 0, 0, 0.075);
+  background-color: var(--form-disabled-bg);
   opacity: 0.65;
 }
 .form-readonly input,
 .form-readonly textarea {
   color: rgba(0, 0, 0, 0.5);
+  color: var(--form-readonly-color);
 }
 .form-light.form-disabled {
   background-color: rgba(255, 255, 255, 0.075);
 }
 .form-light.form-readonly input,
 .form-light.form-readonly textarea {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.65);
 }
 .form-label,
 .form-grid {
@@ -5313,11 +5319,11 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
 .form-holder.error .select,
 .form-holder.error .border,
 .form-holder.error [class*="border-"] {
-  border-color: #dc000f !important;
+  border-color: #d10f1c !important;
 }
 .form-holder.error .text,
 .form-holder.error .select {
-  background-color: rgba(220, 0, 15, 0.1);
+  background-color: rgba(209, 15, 28, 0.1);
 }
 .form-holder.warning .text,
 .form-holder.warning .select,
@@ -5521,6 +5527,14 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
   background-color: #fff4e0 !important;
 }
 /* autocomplete */
+:root {
+  --autocomplete-list-bg: #fff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --autocomplete-list-bg: #41454d;
+  }
+}
 .ease-autocomplete {
   transition-property: margin-top, opacity;
 }
@@ -5540,10 +5554,12 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
 }
 .autocomplete ul {
   color: #000;
+  color: var(--black);
   list-style: none;
   min-width: 200px;
   width: 100%;
   background-color: #fff;
+  background-color: var(--autocomplete-list-bg);
   padding: 0;
   margin-bottom: 0;
   position: absolute;
@@ -5957,6 +5973,8 @@ html:not(.mobile) .list-group > ul > li > a:hover .list-icon {
   border-color: #f47500;
 }
 .close-card {
+  color: #000;
+  color: var(--black);
   line-height: 12px;
   position: absolute;
   top: 10px;
@@ -6153,6 +6171,54 @@ html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover {
   }
 }
 /* page social */
+:root {
+  --facebook-color: #fff;
+  --facebook-bg: #3b5998;
+  --facebook-hover-bg: #4c70ba;
+  --twitter-color: #fff;
+  --twitter-bg: #1da1f2;
+  --twitter-hover-bg: #4db5f5;
+  --instagram-color: #fff;
+  --instagram-bg: #c13584;
+  --instagram-hover-bg: #d1589c;
+  --linkedin-color: #fff;
+  --linkedin-bg: #0077b5;
+  --linkedin-hover-bg: #0099e8;
+  --google-color: #fff;
+  --google-bg: #db4437;
+  --google-hover-bg: #e36c62;
+  --whatsapp-color: #fff;
+  --whatsapp-bg: #25d366;
+  --whatsapp-hover-bg: #4be083;
+  --youtube-color: #fff;
+  --youtube-bg: #ff0000;
+  --youtube-hover-bg: #ff3333;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --facebook-color: #3b5998;
+    --facebook-bg: #292c35;
+    --facebook-hover-bg: #3f4452;
+    --twitter-color: #1da1f2;
+    --twitter-bg: #292c35;
+    --twitter-hover-bg: #3f4452;
+    --instagram-color: #c13584;
+    --instagram-bg: #292c35;
+    --instagram-hover-bg: #3f4452;
+    --linkedin-color: #0077b5;
+    --linkedin-bg: #292c35;
+    --linkedin-hover-bg: #3f4452;
+    --google-color: #db4437;
+    --google-bg: #292c35;
+    --google-hover-bg: #3f4452;
+    --whatsapp-color: #25d366;
+    --whatsapp-bg: #292c35;
+    --whatsapp-hover-bg: #3f4452;
+    --youtube-color: #ff0000;
+    --youtube-bg: #292c35;
+    --youtube-hover-bg: #3f4452;
+  }
+}
 .page-social {
   width: 42px;
   position: fixed;
@@ -6160,26 +6226,75 @@ html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover {
   left: 0;
   z-index: 20;
 }
-.theme-facebook.ui-dark {
+.btn-facebook {
+  color: #fff;
+  color: var(--facebook-color);
   background-color: #3b5998;
+  background-color: var(--facebook-bg);
 }
-.theme-twitter.ui-dark {
+html:not(.mobile) .btn-facebook:hover {
+  background-color: #4c70ba !important;
+  background-color: var(--facebook-hover-bg) !important;
+}
+.btn-twitter {
+  color: #fff;
+  color: var(--twitter-color);
   background-color: #1da1f2;
+  background-color: var(--twitter-bg);
 }
-.theme-instagram.ui-dark {
-  background-image: radial-gradient(circle at 30% 130%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 100%);
+html:not(.mobile) .btn-twitter:hover {
+  background-color: #4db5f5 !important;
+  background-color: var(--twitter-hover-bg) !important;
 }
-.theme-linkedin.ui-dark {
+.btn-instagram {
+  color: #fff;
+  color: var(--instagram-color);
+  background-color: #c13584;
+  background-color: var(--instagram-bg);
+}
+html:not(.mobile) .btn-instagram:hover {
+  background-color: #d1589c !important;
+  background-color: var(--instagram-hover-bg) !important;
+}
+.btn-linkedin {
+  color: #fff;
+  color: var(--linkedin-color);
   background-color: #0077b5;
+  background-color: var(--linkedin-bg);
 }
-.theme-google.ui-dark {
+html:not(.mobile) .btn-linkedin:hover {
+  background-color: #0099e8 !important;
+  background-color: var(--linkedin-hover-bg) !important;
+}
+.btn-google {
+  color: #fff;
+  color: var(--google-color);
   background-color: #db4437;
+  background-color: var(--google-bg);
 }
-.theme-whatsapp.ui-dark {
+html:not(.mobile) .btn-google:hover {
+  background-color: #e36c62 !important;
+  background-color: var(--google-hover-bg) !important;
+}
+.btn-whatsapp {
+  color: #fff;
+  color: var(--whatsapp-color);
   background-color: #25d366;
+  background-color: var(--whatsapp-bg);
 }
-.theme-youtube.ui-dark {
+html:not(.mobile) .btn-whatsapp:hover {
+  background-color: #4be083 !important;
+  background-color: var(--whatsapp-hover-bg) !important;
+}
+.btn-youtube {
+  color: #fff;
+  color: var(--youtube-color);
   background-color: #ff0000;
+  background-color: var(--youtube-bg);
+}
+html:not(.mobile) .btn-youtube:hover {
+  background-color: #ff3333 !important;
+  background-color: var(--youtube-hover-bg) !important;
 }
 @media (max-width: 480px) {
   .page-social {
@@ -6258,6 +6373,18 @@ html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover {
   stroke-width: 38px;
 }
 /* progress bar */
+.progress-bar,
+[data-theme="dark"] .progress-bar {
+  --progress-bar-bg: rgba(0, 0, 0, 0.075);
+  --progress-bar-inner-bg: rgba(0, 0, 0, 0.15);
+}
+@media (prefers-color-scheme: dark) {
+  .progress-bar,
+  [data-theme="dark"] .progress-bar {
+    --progress-bar-bg: rgba(0, 0, 0, 0.45);
+    --progress-bar-inner-bg: rgba(255, 255, 255, 0.15);
+  }
+}
 @keyframes progress-fill {
   from {
     width: 0;
@@ -6266,6 +6393,7 @@ html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover {
 .progress-bar {
   height: 12px;
   background-color: rgba(0, 0, 0, 0.075);
+  background-color: var(--progress-bar-bg);
   padding: 2px;
   display: block;
   overflow: hidden;
@@ -6277,6 +6405,7 @@ html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover {
   width: 0;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.15);
+  background-color: var(--progress-bar-inner-bg);
   float: left;
 }
 .progress-bar.round > span:first-child {
@@ -9992,17 +10121,6 @@ html:not(.mobile) .theme-default2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn
 }
 /* darkmode */
 @media (prefers-color-scheme: dark) {
-  .form-disabled {
-    background-color: rgba(255, 255, 255, 0.075);
-  }
-  .form-readonly input,
-  .form-readonly textarea {
-    color: rgba(255, 255, 255, 0.65);
-  }
-  .autocomplete ul {
-    color: #fff;
-    background-color: #41454d;
-  }
   .dropdown ul.content > li:not(:last-child) {
     border-color: rgba(255, 255, 255, 0.065);
   }
@@ -10022,33 +10140,6 @@ html:not(.mobile) .theme-default2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn
   .dropdown [class*="list-column-"] > li {
     border-color: rgba(255, 255, 255, 0.065);
   }
-  .close-card {
-    color: #fff;
-  }
-  .page-social > .btn {
-    background: #292c35;
-  }
-  .theme-facebook.ui-dark .icon {
-    color: #3b5998;
-  }
-  .theme-twitter.ui-dark .icon {
-    color: #1da1f2;
-  }
-  .theme-instagram.ui-dark .icon {
-    color: #c13584;
-  }
-  .theme-linkedin.ui-dark .icon {
-    color: #0077b5;
-  }
-  .theme-google.ui-dark .icon {
-    color: #db4437;
-  }
-  .theme-whatsapp.ui-dark .icon {
-    color: #25d366;
-  }
-  .theme-youtube.ui-dark .icon {
-    color: #ff0000;
-  }
   .photos-holder [class*="img-photo"] {
     border-color: #15181d;
   }
@@ -10060,12 +10151,6 @@ html:not(.mobile) .theme-default2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn
   }
   [class*="img-photo"]:not(img) {
     background-color: rgba(255, 255, 255, 0.08);
-  }
-  .progress-bar {
-    background-color: rgba(0, 0, 0, 0.25);
-  }
-  .progress-bar > span {
-    background-color: rgba(255, 255, 255, 0.15);
   }
   .timeline:not(.hide-lines):after {
     background-color: rgba(255, 255, 255, 0.175);

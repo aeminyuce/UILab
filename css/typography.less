@@ -23,7 +23,7 @@
 @pre-bg:                                #f5f5f5;
 @pre-border:                            fade(@white, 15%);
 
-:root {
+:root,[data-theme="dark"] {
     --dark: @dark;
     --x-dark: @x-dark;
 
@@ -36,7 +36,7 @@
 
 ._darkmode-typography-vars (@darkmode) when (@darkmode = true) {
     @media (prefers-color-scheme: dark) {
-       :root {
+        :root,[data-theme="dark"] {
             --dark: @dark-dark;
             --x-dark: @x-dark-dark;
 
