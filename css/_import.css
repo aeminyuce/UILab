@@ -1,5 +1,6 @@
 /* global variables */
-:root {
+:root,
+[data-theme="dark"] {
   --body-bg: #f9f9f9;
   --white: #fff;
   --black: #000;
@@ -9,7 +10,8 @@
   --btn-bg-hover: rgba(0, 0, 0, 0.15);
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root,
+  [data-theme="dark"] {
     --body-bg: #15181d;
     --white: #000;
     --black: #fff;
@@ -20,11 +22,13 @@
   }
 }
 /* reset */
-:root {
+:root,
+[data-theme="dark"] {
   --hr-color: rgba(0, 0, 0, 0.15);
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root,
+  [data-theme="dark"] {
     --hr-color: rgba(255, 255, 255, 0.15);
   }
 }
@@ -3237,7 +3241,8 @@ html .row {
   animation: bounce-z 6s linear infinite;
 }
 /* typography */
-:root {
+:root,
+[data-theme="dark"] {
   --dark: rgba(0, 0, 0, 0.45);
   --x-dark: rgba(0, 0, 0, 0.7);
   --code-color: #c7254e;
@@ -3246,7 +3251,8 @@ html .row {
   --pre-bg: #f5f5f5;
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root,
+  [data-theme="dark"] {
     --dark: rgba(255, 255, 255, 0.45);
     --x-dark: rgba(255, 255, 255, 0.7);
     --code-color: #fff;
@@ -3721,11 +3727,13 @@ dt {
   }
 }
 /* buttons */
-:root {
+:root,
+[data-theme="dark"] {
   --btn-ghost-bg-hover: rgba(0, 0, 0, 0.075);
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root,
+  [data-theme="dark"] {
     --btn-ghost-bg-hover: rgba(255, 255, 255, 0.075);
   }
 }
@@ -4556,7 +4564,8 @@ html:not(.mobile) .dropdown ul.content > li:hover {
   }
 }
 /* forms */
-:root {
+:root,
+[data-theme="dark"] {
   --select-options-bg: #fff;
   --select-multi-options-border: rgba(0, 0, 0, 0.045);
   --range-thumb-color: #8e9094;
@@ -4572,7 +4581,8 @@ html:not(.mobile) .dropdown ul.content > li:hover {
   --form-readonly-color: rgba(0, 0, 0, 0.5);
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root,
+  [data-theme="dark"] {
     --select-options-bg: #41454d;
     --select-multi-options-border: rgba(255, 255, 255, 0.045);
     --range-thumb-color: #60656e;
@@ -5477,12 +5487,14 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
   }
 }
 /* textarea counter */
-:root {
+:root,
+[data-theme="dark"] {
   --textarea-counter-color: rgba(0, 0, 0, 0.45);
   --textarea-counter-bg: rgba(0, 0, 0, 0.035);
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root,
+  [data-theme="dark"] {
     --textarea-counter-color: #fff;
     --textarea-counter-bg: rgba(255, 255, 255, 0.175);
   }
@@ -5527,11 +5539,13 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
   background-color: #fff4e0 !important;
 }
 /* autocomplete */
-:root {
+:root,
+[data-theme="dark"] {
   --autocomplete-list-bg: #fff;
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root,
+  [data-theme="dark"] {
     --autocomplete-list-bg: #41454d;
   }
 }
@@ -6134,11 +6148,13 @@ html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover {
   }
 }
 /* breadcrumbs */
-:root {
+:root,
+[data-theme="dark"] {
   --breadcrumbs-sep-color: rgba(0, 0, 0, 0.25);
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root,
+  [data-theme="dark"] {
     --breadcrumbs-sep-color: rgba(255, 255, 255, 0.25);
   }
 }
@@ -6171,7 +6187,8 @@ html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover {
   }
 }
 /* page social */
-:root {
+:root,
+[data-theme="dark"] {
   --facebook-color: #fff;
   --facebook-bg: #3b5998;
   --facebook-hover-bg: #4c70ba;
@@ -6195,7 +6212,8 @@ html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover {
   --youtube-hover-bg: #ff3333;
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root,
+  [data-theme="dark"] {
     --facebook-color: #3b5998;
     --facebook-bg: #292c35;
     --facebook-hover-bg: #3f4452;
