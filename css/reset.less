@@ -4,19 +4,17 @@
 @hr-color:                              fade(@black, 15%);
 @hr-color-dark:                         fade(@white, 15%);
 
-:root,[data-theme="dark"] {
+[data-theme="light"] {
     --hr-color: @hr-color;
 }
 
-._darkmode-reset-vars (@darkmode) when (@darkmode = true) {
-    @media (prefers-color-scheme: dark) {
-        :root,[data-theme="dark"] {
-            --hr-color: @hr-color-dark;
-        }
+._darkmode-reset-vars (@dark-mode) when (@dark-mode = true) {
+    [data-theme="dark"] {
+        --hr-color: @hr-color-dark;
     }
 }
 
-._darkmode-reset-vars(@darkmode);
+._darkmode-reset-vars(@dark-mode);
 
 * {
     &,&:before,&:after { box-sizing: border-box; }

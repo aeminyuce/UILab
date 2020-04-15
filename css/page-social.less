@@ -32,7 +32,7 @@
 @pagesocial-bg-dark:                    #292c35;
 @pagesocial-hover-bg-dark:              lighten(@pagesocial-bg-dark, 10%);
 
-:root,[data-theme="dark"] {
+[data-theme="light"] {
     --facebook-color: @white;
     --facebook-bg: @facebook-bg;
     --facebook-hover-bg: @facebook-hover-bg;
@@ -62,41 +62,39 @@
     --youtube-hover-bg: @youtube-hover-bg;
 }
 
-._darkmode-pagesocial-vars (@darkmode) when (@darkmode = true) {
-    @media (prefers-color-scheme: dark) {
-        :root,[data-theme="dark"] {
-            --facebook-color: @facebook-bg;
-            --facebook-bg: @pagesocial-bg-dark;
-            --facebook-hover-bg: @pagesocial-hover-bg-dark;
+._darkmode-pagesocial-vars (@dark-mode) when (@dark-mode = true) {
+    [data-theme="dark"] {
+        --facebook-color: @facebook-bg;
+        --facebook-bg: @pagesocial-bg-dark;
+        --facebook-hover-bg: @pagesocial-hover-bg-dark;
 
-            --twitter-color: @twitter-bg;
-            --twitter-bg: @pagesocial-bg-dark;
-            --twitter-hover-bg: @pagesocial-hover-bg-dark;
+        --twitter-color: @twitter-bg;
+        --twitter-bg: @pagesocial-bg-dark;
+        --twitter-hover-bg: @pagesocial-hover-bg-dark;
 
-            --instagram-color: @instagram-bg;
-            --instagram-bg: @pagesocial-bg-dark;
-            --instagram-hover-bg: @pagesocial-hover-bg-dark;
+        --instagram-color: @instagram-bg;
+        --instagram-bg: @pagesocial-bg-dark;
+        --instagram-hover-bg: @pagesocial-hover-bg-dark;
 
-            --linkedin-color: @linkedin-bg;
-            --linkedin-bg: @pagesocial-bg-dark;
-            --linkedin-hover-bg: @pagesocial-hover-bg-dark;
+        --linkedin-color: @linkedin-bg;
+        --linkedin-bg: @pagesocial-bg-dark;
+        --linkedin-hover-bg: @pagesocial-hover-bg-dark;
 
-            --google-color: @google-bg;
-            --google-bg: @pagesocial-bg-dark;
-            --google-hover-bg: @pagesocial-hover-bg-dark;
+        --google-color: @google-bg;
+        --google-bg: @pagesocial-bg-dark;
+        --google-hover-bg: @pagesocial-hover-bg-dark;
 
-            --whatsapp-color: @whatsapp-bg;
-            --whatsapp-bg: @pagesocial-bg-dark;
-            --whatsapp-hover-bg: @pagesocial-hover-bg-dark;
+        --whatsapp-color: @whatsapp-bg;
+        --whatsapp-bg: @pagesocial-bg-dark;
+        --whatsapp-hover-bg: @pagesocial-hover-bg-dark;
 
-            --youtube-color: @youtube-bg;
-            --youtube-bg: @pagesocial-bg-dark;
-            --youtube-hover-bg: @pagesocial-hover-bg-dark;
-        }
+        --youtube-color: @youtube-bg;
+        --youtube-bg: @pagesocial-bg-dark;
+        --youtube-hover-bg: @pagesocial-hover-bg-dark;
     }
 }
 
-._darkmode-pagesocial-vars(@darkmode);
+._darkmode-pagesocial-vars(@dark-mode);
 
 .page-social { width: 42px; position: fixed; top: 30%; left: 0; z-index: 20; }
 

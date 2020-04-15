@@ -11,7 +11,7 @@
 @font-thin:                             200;
 
 // global options
-@darkmode:                              true;
+@dark-mode:                             true;
 @round:                                 6px;
 
 // global breakpoints
@@ -57,14 +57,18 @@
 
 @card-bg:                               @white;
 @card-bg-dark:                          #2f343e;
+@highlighted:                           @white;
+@highlighted-dark:                      #41454d;
 
 @btn-bg:                                fade(@black, 8%);
 @btn-bg-hover:                          fade(@black, 15%);
 @btn-bg-dark:                           fade(@white, 8%);
 @btn-bg-hover-dark:                     fade(@white, 15%);
+@btn-ghost-bg-hover:                    fade(@black, 7.5%);
+@btn-ghost-bg-hover-dark:               fade(@white, 7.5%);
 
 /* global variables */
-:root,[data-theme="dark"] {
+[data-theme="light"] {
    --body-bg: @body-bg;
 
    --white: @white;
@@ -72,29 +76,31 @@
 
    --border-color: @border-color;
    --card-bg: @card-bg;
+   --highlighted: @highlighted;
 
    --btn-bg: @btn-bg;
    --btn-bg-hover: @btn-bg-hover;
+   --btn-ghost-bg-hover: @btn-ghost-bg-hover;
 }
 
-._darkmode-global-vars (@darkmode) when (@darkmode = true) {
-   @media (prefers-color-scheme: dark) {
-      :root,[data-theme="dark"] {
-         --body-bg: @body-bg-dark;
+._darkmode-global-vars (@dark-mode) when (@dark-mode = true) {
+   [data-theme="dark"] {
+      --body-bg: @body-bg-dark;
 
-         --white: @black;
-         --black: @white;
+      --white: @black;
+      --black: @white;
 
-         --border-color: @border-color-dark;
-         --card-bg: @card-bg-dark;
+      --border-color: @border-color-dark;
+      --card-bg: @card-bg-dark;
+      --highlighted: @highlighted-dark;
 
-         --btn-bg: @btn-bg-dark;
-         --btn-bg-hover: @btn-bg-hover-dark;
-      }
+      --btn-bg: @btn-bg-dark;
+      --btn-bg-hover: @btn-bg-hover-dark;
+      --btn-ghost-bg-hover: @btn-ghost-bg-hover-dark;
    }
 }
 
-._darkmode-global-vars(@darkmode);
+._darkmode-global-vars(@dark-mode);
 
 // variable color mixins
 ._color-var (@var) {
@@ -105,13 +111,17 @@
    background-color: @@var;
    background-color: ~'var(--@{var})';
 }
-._border-var (@var) {
+._border-color-var (@var: border-color) {
    border-color: @@var;
    border-color: ~'var(--@{var})';
 }
+._border-var (@dir: border; @style: solid; @width: 1px; @var: border-color) {
+   @{dir}: @style @width @@var;
+   @{dir}: @style @width ~'var(--@{var})';
+}
 
 // theme mixins
-._theme (@name, @color) { // light mode themes
+._theme (@name; @color) { // light mode themes
 
    .theme-@{name}.ui-x-light,.theme-@{name} .ui-x-light:not([class*="theme-"]) {
       background-color: fade(lighten(@color, 45%), 65%);

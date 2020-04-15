@@ -25,6 +25,25 @@ var effects = {
 
     var pauseTransitions;
 
+    function pauseTransitionsFnc(eName) {
+
+        if (!effects.pauseAll) {
+
+            if ((eName === 'scroll' && effects.pauseScroll) || (eName === 'resize' && effects.pauseResize)) {
+
+                clearTimeout(pauseTransitions);
+                events.addClass(document, 'pause-effects');
+
+                pauseTransitions = setTimeout(function () {
+                    events.removeClass(document, 'pause-effects');
+                }, 300);
+
+            }
+
+        }
+
+    }
+
     effects.Start = function () {
 
         if (useragents.ie && !useragents.edge && !effects.ie) {
@@ -55,25 +74,6 @@ var effects = {
         }
 
     };
-
-    function pauseTransitionsFnc(eName) {
-
-        if (!effects.pauseAll) {
-
-            if ((eName === 'scroll' && effects.pauseScroll) || (eName === 'resize' && effects.pauseResize)) {
-
-                clearTimeout(pauseTransitions);
-                events.addClass(document, 'pause-effects');
-
-                pauseTransitions = setTimeout(function () {
-                    events.removeClass(document, 'pause-effects');
-                }, 300);
-
-            }
-
-        }
-
-    }
 
     // Loaders
     events.onload(effects.Start);

@@ -1,15 +1,8 @@
 // out: false
 /* darkmode */ @import '_settings.less';
 
-._darkmode-global (@darkmode) when (@darkmode = true) {
+._darkmode-global (@dark-mode) when (@dark-mode = true) {
     @media (prefers-color-scheme: dark) {
-        .dropdown ul.content > li:not(:last-child) { border-color: rgba(255,255,255,.065); }
-        .dropdown.open > .btn-ghost:not([class*="ui-"]) { background-color: rgba(255,255,255,.075) !important; }
-        .dropdown .content { background-color: #41454d; }
-        html:not(.mobile) .dropdown ul.content > li:hover { background-color: rgba(255,255,255,.05); }
-        .dropdown ul.content > li.selected > label { background-color: rgba(255,255,255,.075); }
-        .dropdown ul.content.has-grid li,.dropdown [class*="list-column-"] > li { border-color: rgba(255,255,255,.065); }
-
         .photos-holder [class*="img-photo"] { border-color: #15181d; }
         .dropdown .photos-holder [class*="img-photo"] { border-color: #41454d; }
         .card .photos-holder [class*="img-photo"] { border-color: #2f343e; }
@@ -121,4 +114,4 @@
     }
 }
 
-._darkmode-global(@darkmode);
+._darkmode-global(@dark-mode);

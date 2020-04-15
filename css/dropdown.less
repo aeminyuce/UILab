@@ -1,6 +1,37 @@
 // out: false
 /* dropdown */ @import '_settings.less';
 
+@dropdown-border:                       fade(@black, 4.5%);
+@dropdown-border-dark:                  fade(@white, 4.5%);
+
+@dropdown-list-selected-bg:             fade(@black, 7.5%);
+@dropdown-list-selected-bg-dark:        fade(@white, 7.5%);
+
+@dropdown-list-bg-hover:                fade(@black, 5%);
+@dropdown-list-bg-hover-dark:           fade(@black, 5%);
+@dropdown-list-border:                  fade(@black, 4.5%);
+@dropdown-list-border-dark:             fade(@white, 6.5%);
+
+[data-theme="light"] {
+    --dropdown-border: @dropdown-border;
+    --dropdown-list-selected-bg: @dropdown-list-selected-bg;
+
+    --dropdown-list-bg-hover: @dropdown-list-bg-hover;
+    --dropdown-list-border: @dropdown-list-border;
+}
+
+._darkmode-dropdown-vars (@dark-mode) when (@dark-mode = true) {
+    [data-theme="dark"] {
+        --dropdown-border: @dropdown-border-dark;
+        --dropdown-list-selected-bg: @dropdown-list-selected-bg-dark;
+
+        --dropdown-list-bg-hover: @dropdown-list-bg-hover-dark;
+        --dropdown-list-border: @dropdown-list-border-dark;
+    }
+}
+
+._darkmode-dropdown-vars(@dark-mode);
+
 .ease-dropdown li { transition-property: background-color; transition-duration: .15s; }
 .ease-dropdown > .btn { transition-property: color, background-color, border-width, border-color, opacity, transform, box-shadow; transition-duration: .15s; }
 .ease-dropdown > .btn .icon { transition-property: color, transform, opacity; transition-duration: .15s; }
@@ -11,7 +42,7 @@
 .dropdown.open { z-index: 19; }
 .dropdown > .btn { display: block; }
 .dropdown > .btn:not(.btn-square) { width: 100%; }
-.dropdown.open > .btn-ghost:not([class*="ui-"]) { background-color: rgba(0,0,0,.075) !important; }
+.dropdown.open > .btn-ghost:not([class*="ui-"]) { ._bg-var(btn-ghost-bg-hover); }
 
 .dropdown > .btn .toggle-icon { width: 14px !important; height: 14px !important; margin-top: -2px; stroke-width: 38px !important; }
 .dropdown > .btn .toggle-icon.right { margin-top: 4px; margin-bottom: 4px; }
@@ -21,7 +52,7 @@
 .mobile-menu .dropdown .toggle-icon { position: absolute; top: 50%; right: 10px; transform: translateY(-50%); }
 .mobile-menu .dropdown.open-ease .toggle-icon { position: absolute; top: 50%; right: 10px; transform: translateY(-50%) rotate(-180deg); }
 
-.dropdown .content { background-color: #fff; overflow-x: hidden; overflow-y: auto; position: absolute; transform-origin: top left; -webkit-overflow-scrolling: touch; }
+.dropdown .content { ._bg-var(highlighted); overflow-x: hidden; overflow-y: auto; position: absolute; transform-origin: top left; -webkit-overflow-scrolling: touch; }
 .dropdown:not(.nav) .content { max-width: 744px; }
 .dropdown.menu-c .content { transform-origin: top center; }
 .dropdown.menu-l .content { transform-origin: top right; }
@@ -37,17 +68,17 @@
 .dropdown.menu-t.menu-l .content { transform-origin: bottom right; }
 
 .dropdown ul.content > li { line-height: 20px; min-height: 30px; padding: 10px; }
-.dropdown ul.content > li:not(:last-child) { border-bottom: solid 1px rgba(0,0,0,.045); }
-html:not(.mobile) .dropdown ul.content > li:hover { background-color: rgba(0,0,0,.05); background-clip: padding-box; }
+.dropdown ul.content > li:not(:last-child) { ._border-var(@dir: border-bottom; @var: dropdown-list-border); }
+html:not(.mobile) .dropdown ul.content > li:hover { ._bg-var(dropdown-list-bg-hover); background-clip: padding-box; }
 
 .dropdown ul.content > li,.dropdown ul.content > li a,.dropdown ul.content > li > label { font-size: 15px; line-height: 24px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; display: block; }
 .dropdown ul.content:not(.has-grid) > li,.dropdown ul.content:not(.has-grid) > li * { text-align: left !important; }
 .dropdown ul.content > li > a { line-height: normal; padding: 10px; margin: -10px; }
 .dropdown ul.content > li > label { padding: 10px; margin: -10px; overflow: hidden; position: relative; cursor: pointer; }
-.dropdown ul.content > li.selected > label { background-color: rgba(0,0,0,.075); }
+.dropdown ul.content > li.selected > label { ._bg-var(dropdown-list-selected-bg); }
 .dropdown ul.content > li > label input { position: absolute; left: -20000px; }
 
-.dropdown ul.content.has-grid li,.dropdown [class*="list-column-"] > li { border-right: solid 1px rgba(0,0,0,.045); }
+.dropdown ul.content.has-grid li,.dropdown [class*="list-column-"] > li { ._border-var(@dir: border-right; @var: dropdown-border); }
 
 .dropdown ul.content.has-icon > li { padding-right: 38px; position: relative; }
 .dropdown ul.content.has-icon > li a { padding-right: 38px; margin-right: -38px; }

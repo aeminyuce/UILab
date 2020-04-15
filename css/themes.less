@@ -59,8 +59,8 @@
 }
 ._theme-loop(length(@theme-colors));
 
-._darkmode-themes (@darkmode) when (@darkmode = true) {
-   @media (prefers-color-scheme: dark) {
+._darkmode-themes (@dark-mode) when (@dark-mode = true) {
+   [data-theme="dark"] {
       .set-dark {
          &:not(.theme-gray)[class*="theme-"][class*="ui-"],
          &:not(.theme-light)[class*="theme-"] [class*="ui-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) {
@@ -87,4 +87,4 @@
    }
 }
 
-._darkmode-themes(@darkmode);
+._darkmode-themes(@dark-mode);

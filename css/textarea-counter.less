@@ -6,21 +6,19 @@
 @textarea-counter-bg:                  fade(@black, 3.5%);
 @textarea-counter-bg-dark:             fade(@white, 17.5%);
 
-:root,[data-theme="dark"] {
+[data-theme="light"] {
     --textarea-counter-color: @textarea-counter-color;
     --textarea-counter-bg: @textarea-counter-bg;
 }
 
-._darkmode-textarea-counter-vars (@darkmode) when (@darkmode = true) {
-    @media (prefers-color-scheme: dark) {
-        :root,[data-theme="dark"] {
-            --textarea-counter-color: @textarea-counter-color-dark;
-            --textarea-counter-bg: @textarea-counter-bg-dark;
-        }
+._darkmode-textarea-counter-vars (@dark-mode) when (@dark-mode = true) {
+    [data-theme="dark"] {
+        --textarea-counter-color: @textarea-counter-color-dark;
+        --textarea-counter-bg: @textarea-counter-bg-dark;
     }
 }
 
-._darkmode-textarea-counter-vars(@darkmode);
+._darkmode-textarea-counter-vars(@dark-mode);
 
 .textarea:not(.toggle-textarea)[data-counter]:before { content: attr(data-counter); font-size: 9px; text-align: right; line-height: 12px; width: 100%; height: 13px; padding: 1px 5px; display: block; position: absolute; bottom: 0; left: 0; z-index: 1; }
 .textarea:not(.toggle-textarea)[data-counter] textarea { margin-bottom: 13px; }

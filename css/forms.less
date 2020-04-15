@@ -1,8 +1,6 @@
 // out: false
 /* forms */ @import '_settings.less';
 
-@select-options-bg:                    @white;
-@select-options-bg-dark:               #41454d;
 @select-multi-options-border:          fade(@black, 4.5%);
 @select-multi-options-border-dark:     fade(@white, 4.5%);
 
@@ -37,8 +35,7 @@
 @form-readonly-color:                  fade(@black, 50%);
 @form-readonly-color-dark:             fade(@white, 65%);
 
-:root,[data-theme="dark"] {
-    --select-options-bg: @select-options-bg;
+[data-theme="light"] {
     --select-multi-options-border: @select-multi-options-border;
 
     --range-thumb-color: @range-thumb-color;
@@ -58,32 +55,29 @@
     --form-readonly-color: @form-readonly-color;
 }
 
-._darkmode-forms-vars (@darkmode) when (@darkmode = true) {
-    @media (prefers-color-scheme: dark) {
-        :root,[data-theme="dark"] {
-            --select-options-bg: @select-options-bg-dark;
-            --select-multi-options-border: @select-multi-options-border-dark;
+._darkmode-forms-vars (@dark-mode) when (@dark-mode = true) {
+    [data-theme="dark"] {
+        --select-multi-options-border: @select-multi-options-border-dark;
 
-            --range-thumb-color: @range-thumb-color-dark;
-            --range-track-bg: @range-track-bg-dark;
-            --range-track-bg-hover: @range-track-bg-hover-dark;
+        --range-thumb-color: @range-thumb-color-dark;
+        --range-track-bg: @range-track-bg-dark;
+        --range-track-bg-hover: @range-track-bg-hover-dark;
 
-            --form-focus-bg: @form-focus-bg-dark;
-            --form-focus-border: @form-focus-border-dark;
+        --form-focus-bg: @form-focus-bg-dark;
+        --form-focus-border: @form-focus-border-dark;
 
-            --placeholder-color: @placeholder-color-dark;
-            --placeholder-focus-color: @placeholder-focus-color-dark;
+        --placeholder-color: @placeholder-color-dark;
+        --placeholder-focus-color: @placeholder-focus-color-dark;
 
-            --check-custom-bg: @check-custom-bg-dark;
-            --switch-custom-bg: @switch-custom-bg-dark;
+        --check-custom-bg: @check-custom-bg-dark;
+        --switch-custom-bg: @switch-custom-bg-dark;
 
-            --form-disabled-bg: @form-disabled-bg-dark;
-            --form-readonly-color: @form-readonly-color-dark;
-        }
+        --form-disabled-bg: @form-disabled-bg-dark;
+        --form-readonly-color: @form-readonly-color-dark;
     }
 }
 
-._darkmode-forms-vars(@darkmode);
+._darkmode-forms-vars(@dark-mode);
 
 .ease-form,.ease-1st-form > *,.ease-2nd-form > * > * { transition-property: color, background-color, border-color; }
 .ease-form .icon,.ease-1st-form > * .icon,.ease-2nd-form > * > * .icon { transition-property: color, transform, opacity; transition-duration: .15s; }
@@ -109,7 +103,7 @@
     .ease-range::-moz-range-track { transition-property: none; }
 }
 
-.text,.textarea,.select,.select-multi { border-style: solid; border-width: 1px; ._border-var(border-color); overflow: hidden; display: block; position: relative; }
+.text,.textarea,.select,.select-multi { ._border-var(); overflow: hidden; display: block; position: relative; }
 .text,.select,.mobile .select-multi { line-height: normal; min-height: 32px; }
 
 .text:not([class*="align-"]) input,.select:not([class*="align-"]) select,.select-multi:not([class*="align-"]) select,.textarea:not([class*="align-"]) textarea { text-align: left !important; }
@@ -128,7 +122,7 @@
 
 .select:not(.form-focus) select { opacity: .45; }
 .select select { padding-right: 22px; position: relative; z-index: 2; }
-.select option,.select optgroup { ._bg-var(select-options-bg); }
+.select option,.select optgroup { ._bg-var(highlighted); }
 .ie .select select:focus::-ms-value { color: inherit; background-color: @no-color; }
 .ie .select select::-ms-expand { display: none; }
 .select .icon { width: 12px; height: 12px; position: absolute; top: 50%; right: 5px; cursor: default; transform: translateY(-50%); opacity: .45; stroke-width: 44px; }
@@ -138,11 +132,11 @@
 .select-multi select { margin-bottom: -2px; }
 .edge .select-multi select { margin-bottom: -5px; }
 .select-multi option,.select-multi optgroup { padding: 3px 5px; }
-.select-multi option:not(:last-child) { border-bottom-style: solid; border-bottom-width: 1px; ._border-var(select-multi-options-border); }
+.select-multi option:not(:last-child) { ._border-var(@dir: border-bottom; @var: select-multi-options-border); }
 
 .check,.radio { vertical-align: middle; display: inline-block; }
 
-.file { line-height: normal; height: 32px; border-style: solid; border-width: 1px; ._border-var(border-color); overflow: hidden; display: block; position: relative; }
+.file { line-height: normal; height: 32px; ._border-var(); overflow: hidden; display: block; position: relative; }
 .file.border-dual { height: 36px; }
 
 .file input { vertical-align: middle; width: 100%; overflow: hidden; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 3; opacity: 0; } /* don't change z-index! */
@@ -155,7 +149,7 @@ html:not(.mobile) .file:hover .btn { ._bg-var(btn-bg-hover); }
 
 label.custom { min-height: 22px; padding-top: 5px; padding-bottom: 3px; display: inline-block; }
 
-.check-custom,.radio-custom,.switch-custom { vertical-align: middle; height: 22px; margin-bottom: 2px; border-style: solid; border-width: 1px; ._border-var(border-color); overflow: hidden; display: inline-block; position: relative; }
+.check-custom,.radio-custom,.switch-custom { vertical-align: middle; height: 22px; margin-bottom: 2px; ._border-var(); overflow: hidden; display: inline-block; position: relative; }
 .check-custom,.radio-custom { width: 22px; }
 .radio-custom,.switch-custom.round { border-radius: 11px !important; }
 .switch-custom { width: 44px; }
@@ -240,7 +234,7 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i { transform: tran
 .form-grid { font-size: 13px; }
 .form-label { margin-bottom: 5px; display: inline-block; }
 
-.form-focus { ._border-var(form-focus-border); }
+.form-focus { ._border-color-var(form-focus-border); }
 .form-focus.form-light { border-color: @form-focus-border-dark !important; }
 
 .form-focus:not(.form-readonly) { ._bg-var(form-focus-bg); box-shadow: inset 0 0 2px @form-focus-shadow; }
@@ -277,7 +271,7 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i { transform: tran
 .text .clear-form .icon { width: 12px; height: 12px; stroke-width: 44px; }
 
 .form-holder .text,.form-holder .select { min-width: inherit !important; }
-.form-holder-focus [class*="col-"] > * { ._border-var(form-focus-border); }
+.form-holder-focus [class*="col-"] > * { ._border-color-var(form-focus-border); }
 .form-holder-focus [class*="col-"] > .form-light,.form-holder-focus [class*="col-"] > .border-light { border-color: @form-focus-border-dark !important; }
 
 .form-holder [class*="col-"]:not(:last-child) > *,.form-holder .row:not(:last-child) > [class*="col-"]:last-child > * { border-right: 0; }

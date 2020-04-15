@@ -62,6 +62,8 @@
     <script src="../js/donut-chart.js"></script>
     <script src="../js/pie-chart.js"></script>
     <script src="../js/svg-map.js"></script>
+
+    <script src="../js/dark-mode.js"></script>
 </head>
 
 <body>
@@ -73,9 +75,13 @@
 
     <!-- header -->
     <header class="container theme-default ui-dark">
-        <div class="row theme-default2 ui-border border-t border-dual">
+        <div class="row theme-default2 form-lg ui-border border-t border-dual">
             <div class="col-12">
-                <a href="index.php" class="btn btn-lg btn-square circle ease-btn margin-10-r">
+                <button title="Toggle Theme" data-tooltip class="btn-toggle-color btn btn-square round icons-no-opacity right ease-btn">
+                    <svg class="icon visible-dark"><use href="#moon-fill"></use></svg>
+                    <svg class="icon visible-light"><use href="#sun-fill"></use></svg>
+                </button>
+                <a href="index.php" class="btn btn-square circle margin-10-r ease-btn">
                     <svg class="icon icon-hybrid no-opacity"><use href="#long-arrow-left"/></svg>
                 </a>
                 <h1 class="x-large inline-block">UI Lab, <span class="capitalize"><?php echo str_replace("-", " ", $page); ?></span></h1>
@@ -92,6 +98,10 @@
         include ($page.'.php');
 ?>
 
+<button title="Toggle Theme" data-tooltip class="btn-toggle-color btn btn-lg btn-square round-l icons-no-opacity ease-btn set-fixed set-r set-cy">
+    <svg class="icon visible-dark"><use href="#moon-fill"></use></svg>
+    <svg class="icon visible-light"><use href="#sun-fill"></use></svg>
+</button>
 <?php
     } else {
 ?>
@@ -103,11 +113,15 @@
                     <img src="img/uilab-logo.png" alt="UILab" srcset="img/uilab-logo@2x.png 2x">
                 </div>
                 <div class="row form-lg">
-                    <div class="col-12 align-r padding-15-r ease-1st-btn">
-                        <a title="GitHub" href="https://github.com/aeminyuce/UILab/" class="btn btn-square round ui-dark" target="_blank">
+                    <div class="col-12 align-r padding-15-r icons-no-opacity ease-1st-btn">
+                        <button title="Toggle Theme" data-tooltip class="btn-toggle-color btn btn-square round">
+                            <svg class="icon visible-dark"><use href="#moon-fill"></use></svg>
+                            <svg class="icon visible-light"><use href="#sun-fill"></use></svg>
+                        </button>
+                        <a title="GitHub" href="https://github.com/aeminyuce/UILab/" class="btn btn-square round" target="_blank">
                             <svg class="icon"><use href="#github"/></svg>
                         </a>
-                        <button class="btn btn-square round ui-dark show-mobile-menu-r visible-md">
+                        <button class="btn btn-square round show-mobile-menu-r visible-md">
                             <svg class="icon"><use href="#bars-right"/></svg>
                         </button>
                     </div>
@@ -171,7 +185,7 @@
                             <h2 class="margin-10-b">UILab</h2>
                             <p class="large xs-align-c">CSS &amp; JavaScript powered responsive design system.</p>
                             <div class="form-lg ease-1st-btn">
-                                <a href="?p=icons" class="btn btn-ghost btn-xs-fluid border-dual padding-30-h circle theme-default2">
+                                <a href="?p=icons" class="btn btn-xs-fluid padding-30-h circle theme-default2">
                                     <svg class="icon margin-5-r no-opacity ui-text"><use href="#draw"/></svg> See Icons
                                 </a>
                                 <a href="?p=download" class="btn btn-xs-fluid padding-30-h circle theme-default2 ui-dark">
@@ -182,127 +196,105 @@
                         </div>
                     </div>
 
-                    <span class="sp10"></span>
+                    <span class="sp-10"></span>
 
                     <h4>Example Layouts</h4>
                     <div class="row large align-c hover-shadow-2nd hover-t-2nd">
                         <div class="col-4 col-md-6">
                             <a class="card padding-2 round shadow-lg ease-layout" href="?l=dashboard-app">
-                                <picture>
-                                    <source srcset="img/layout-dashboard-app-dark.jpg" media="(prefers-color-scheme: dark)">
-                                    <img class="img-fluid margin-10-b round" src="img/layout-dashboard-app.jpg" alt="Dashboard App">
-                                </picture>
-                                <span class="inline-block padding-10-t padding-20-b">
+                                <img class="img-fluid round visible-light" src="img/layout-dashboard-app.jpg" alt="Dashboard App">
+                                <img class="img-fluid round visible-dark" src="img/layout-dashboard-app-dark.jpg" alt="Dashboard App Dark">
+                                <span class="inline-block padding-20-v">
                                     Dashboard App
                                 </span>
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
                             <a class="card padding-2 round shadow-lg ease-layout" href="?l=dashboard">
-                                <picture>
-                                    <source srcset="img/layout-dashboard-dark.jpg" media="(prefers-color-scheme: dark)">
-                                    <img class="img-fluid margin-10-b round" src="img/layout-dashboard.jpg" alt="Dashboard">
-                                </picture>
-                                <span class="inline-block padding-10-t padding-20-b">
+                                <img class="img-fluid round visible-light" src="img/layout-dashboard.jpg" alt="Dashboard">
+                                <img class="img-fluid round visible-dark" src="img/layout-dashboard-dark.jpg" alt="Dashboard Dark">
+                                <span class="inline-block padding-20-v">
                                     Dashboard
                                 </span>
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
                             <a class="card padding-2 round shadow-lg ease-layout" href="?l=sign-up-page">
-                                <picture>
-                                    <source srcset="img/layout-sign-up-page-dark.jpg" media="(prefers-color-scheme: dark)">
-                                    <img class="img-fluid margin-10-b round" src="img/layout-sign-up-page.jpg" alt="Sign Up Page">
-                                </picture>
-                                <span class="inline-block padding-10-t padding-20-b">
+                                <img class="img-fluid round visible-light" src="img/layout-sign-up-page.jpg" alt="Sign Up Page">
+                                <img class="img-fluid round visible-dark" src="img/layout-sign-up-page-dark.jpg" alt="Sign Up Page Dark">
+                                <span class="inline-block padding-20-v">
                                     Sign Up Page
                                 </span>
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
                             <a class="card padding-2 round shadow-lg ease-layout" href="?l=login-page">
-                                <picture>
-                                    <source srcset="img/layout-login-page-dark.jpg" media="(prefers-color-scheme: dark)">
-                                    <img class="img-fluid margin-10-b round" src="img/layout-login-page.jpg" alt="Login Page">
-                                </picture>
-                                <span class="inline-block padding-10-t padding-20-b">
+                                <img class="img-fluid round visible-light" src="img/layout-login-page.jpg" alt="Login Page">
+                                <img class="img-fluid round visible-dark" src="img/layout-login-page-dark.jpg" alt="Login Page Dark">
+                                <span class="inline-block padding-20-v">
                                     Login Page
                                 </span>
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
                             <a class="card padding-2 round shadow-lg ease-layout" href="?l=landing-page">
-                                <picture>
-                                    <source srcset="img/layout-landing-page-dark.jpg" media="(prefers-color-scheme: dark)">
-                                    <img class="img-fluid margin-10-b round" src="img/layout-landing-page.jpg" alt="Landing Page">
-                                </picture>
-                                <span class="inline-block padding-10-t padding-20-b">
+                                <img class="img-fluid round visible-light" src="img/layout-landing-page.jpg" alt="Landing Page">
+                                <img class="img-fluid round visible-dark" src="img/layout-landing-page-dark.jpg" alt="Landing Page Dark">
+                                <span class="inline-block padding-20-v">
                                     Landing Page
                                 </span>
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
                             <a class="card padding-2 round shadow-lg ease-layout" href="?l=movie-app">
-                                <picture>
-                                    <source srcset="img/layout-movie-app-dark.jpg" media="(prefers-color-scheme: dark)">
-                                    <img class="img-fluid margin-10-b round" src="img/layout-movie-app.jpg" alt="Movie App">
-                                </picture>
-                                <span class="inline-block padding-10-t padding-20-b">
+                                <img class="img-fluid round visible-light" src="img/layout-movie-app.jpg" alt="Movie App">
+                                <img class="img-fluid round visible-dark" src="img/layout-movie-app-dark.jpg" alt="Movie App Dark">
+                                <span class="inline-block padding-20-v">
                                     Movie App
                                 </span>
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
                             <a class="card padding-2 round shadow-lg ease-layout" href="?l=weather-app">
-                                <picture>
-                                    <source srcset="img/layout-weather-app-dark.jpg" media="(prefers-color-scheme: dark)">
-                                    <img class="img-fluid margin-10-b round" src="img/layout-weather-app.jpg" alt="Weather App">
-                                </picture>
-                                <span class="inline-block padding-10-t padding-20-b">
+                                <img class="img-fluid round visible-light" src="img/layout-weather-app.jpg" alt="Weather App">
+                                <img class="img-fluid round visible-dark" src="img/layout-weather-app-dark.jpg" alt="Weather App Dark">
+                                <span class="inline-block padding-20-v">
                                     Weather App
                                 </span>
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
                             <a class="card padding-2 round shadow-lg ease-layout" href="?l=admin-panel">
-                                <picture>
-                                    <source srcset="img/layout-admin-panel-dark.jpg" media="(prefers-color-scheme: dark)">
-                                    <img class="img-fluid margin-10-b round" src="img/layout-admin-panel.jpg" alt="Admin Panel">
-                                </picture>
-                                <span class="inline-block padding-10-t padding-20-b">
+                                <img class="img-fluid round visible-light" src="img/layout-admin-panel.jpg" alt="Admin Panel">
+                                <img class="img-fluid round visible-dark" src="img/layout-admin-panel-dark.jpg" alt="Admin Panel Dark">
+                                <span class="inline-block padding-20-v">
                                     Admin Panel
                                 </span>
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
                             <a class="card padding-2 round shadow-lg ease-layout" href="?l=product-listing">
-                                <picture>
-                                    <source srcset="img/layout-product-listing-dark.jpg" media="(prefers-color-scheme: dark)">
-                                    <img class="img-fluid margin-10-b round" src="img/layout-product-listing.jpg" alt="Product Listing">
-                                </picture>
-                                <span class="inline-block padding-10-t padding-20-b">
+                                <img class="img-fluid round visible-light" src="img/layout-product-listing.jpg" alt="Product Listing">
+                                <img class="img-fluid round visible-dark" src="img/layout-product-listing-dark.jpg" alt="Product Listing Dark">
+                                <span class="inline-block padding-20-v">
                                     Product Listing
                                 </span>
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
                             <a class="card padding-2 round shadow-lg ease-layout" href="?l=real-estate-details">
-                                <picture>
-                                    <source srcset="img/layout-real-estate-details-dark.jpg" media="(prefers-color-scheme: dark)">
-                                    <img class="img-fluid margin-10-b round" src="img/layout-real-estate-details.jpg" alt="Real Estate Details">
-                                </picture>
-                                <span class="inline-block padding-10-t padding-20-b">
+                                <img class="img-fluid round visible-light" src="img/layout-real-estate-details.jpg" alt="Real Estate Details">
+                                <img class="img-fluid round visible-dark" src="img/layout-real-estate-details-dark.jpg" alt="Real Estate Details Dark">
+                                <span class="inline-block padding-20-v">
                                     Real Estate Details
                                 </span>
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
                             <a class="card padding-2 round shadow-lg ease-layout" href="?l=photo-albums">
-                                <picture>
-                                    <source srcset="img/layout-photo-albums-dark.jpg" media="(prefers-color-scheme: dark)">
-                                    <img class="img-fluid margin-10-b round" src="img/layout-photo-albums.jpg" alt="Photo Albums">
-                                </picture>
-                                <span class="inline-block padding-10-t padding-20-b">
+                                <img class="img-fluid round visible-light" src="img/layout-photo-albums.jpg" alt="Photo Albums">
+                                <img class="img-fluid round visible-dark" src="img/layout-photo-albums-dark.jpg" alt="Photo Albums Dark">
+                                <span class="inline-block padding-20-v">
                                     Photo Albums
                                 </span>
                             </a>

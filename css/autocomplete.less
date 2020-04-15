@@ -1,24 +1,7 @@
 // out: false
 /* autocomplete */ @import '_settings.less';
 
-@autocomplete-list-bg:                  @white;
-@autocomplete-list-bg-dark:             #41454d;
-
 @autocomplete-list-hover-bg:            fade(@black, 7.5%);
-
-:root,[data-theme="dark"] {
-    --autocomplete-list-bg: @autocomplete-list-bg;
-}
-
-._darkmode-autocomplete-vars (@darkmode) when (@darkmode = true) {
-    @media (prefers-color-scheme: dark) {
-        :root,[data-theme="dark"] {
-            --autocomplete-list-bg: @autocomplete-list-bg-dark;
-        }
-    }
-}
-
-._darkmode-autocomplete-vars(@darkmode);
 
 .ease-autocomplete { transition-property: margin-top, opacity; }
 .ease-autocomplete ul { transition-property: opacity; transition-duration: .15s; }
@@ -27,7 +10,7 @@
 .autocomplete { overflow: visible !important; }
 .autocomplete.open { z-index: 19; }
 
-.autocomplete ul { ._color-var(black); list-style: none; min-width: 200px; width: 100%; ._bg-var(autocomplete-list-bg); padding: 0; margin-bottom: 0; position: absolute; }
+.autocomplete ul { ._color-var(black); list-style: none; min-width: 200px; width: 100%; ._bg-var(highlighted); padding: 0; margin-bottom: 0; position: absolute; }
 .autocomplete:not(.open) ul { display: none; }
 .autocomplete:not(.open-ease) ul { opacity: 0; }
 
