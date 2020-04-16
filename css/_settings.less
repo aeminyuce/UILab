@@ -97,25 +97,38 @@
     --btn-ghost-hover-bg: @btn-ghost-hover-bg-dark;
 }
 
-:root when (@dark-mode = false) { ._global-vars(); }
-
 [data-theme="light"] when (@dark-mode = true) { ._global-vars(); }
 [data-theme="dark"] when (@dark-mode = true) { ._global-vars-dark(); }
 
 // variable color mixins
-._color-var (@var) {
+._color-var (@var) when (@dark-mode = false) {
+    color: @@var;
+}
+._color-var (@var) when (@dark-mode = true) {
     color: @@var;
     color: ~'var(--@{var})';
 }
-._bg-var (@var) {
+
+._bg-var (@var) when (@dark-mode = false) {
+    background-color: @@var;
+}
+._bg-var (@var) when (@dark-mode = true) {
     background-color: @@var;
     background-color: ~'var(--@{var})';
 }
-._border-color-var (@var: border-color) {
+
+._border-color-var (@var: border-color) when (@dark-mode = false) {
+    border-color: @@var;
+}
+._border-color-var (@var: border-color) when (@dark-mode = true) {
     border-color: @@var;
     border-color: ~'var(--@{var})';
 }
-._border-var (@dir: border; @style: solid; @width: 1px; @var: border-color) {
+
+._border-var (@dir: border; @style: solid; @width: 1px; @var: border-color) when (@dark-mode = false) {
+    @{dir}: @style @width @@var;
+}
+._border-var (@dir: border; @style: solid; @width: 1px; @var: border-color) when (@dark-mode = true) {
     @{dir}: @style @width @@var;
     @{dir}: @style @width ~'var(--@{var})';
 }
