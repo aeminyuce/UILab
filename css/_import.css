@@ -1,4 +1,5 @@
 /* global variables */
+:root,
 [data-theme="light"] {
   --body-bg: #f9f9f9;
   --white: #fff;
@@ -22,6 +23,7 @@
   --btn-ghost-bg-hover: rgba(255, 255, 255, 0.075);
 }
 /* reset */
+:root,
 [data-theme="light"] {
   --hr-color: rgba(0, 0, 0, 0.15);
 }
@@ -3227,6 +3229,7 @@ html .row {
   animation: bounce-z 6s linear infinite;
 }
 /* typography */
+:root,
 [data-theme="light"] {
   --dark: rgba(0, 0, 0, 0.45);
   --x-dark: rgba(0, 0, 0, 0.7);
@@ -4306,6 +4309,7 @@ html:not(.mobile) .top-button:hover .icon {
   transform: translateY(-1%);
 }
 /* dropdown */
+:root,
 [data-theme="light"] {
   --dropdown-border: rgba(0, 0, 0, 0.045);
   --dropdown-list-selected-bg: rgba(0, 0, 0, 0.075);
@@ -4554,6 +4558,7 @@ html:not(.mobile) .dropdown ul.content > li:hover {
   }
 }
 /* forms */
+:root,
 [data-theme="light"] {
   --select-multi-options-border: rgba(0, 0, 0, 0.045);
   --range-thumb-color: #8e9094;
@@ -5463,6 +5468,7 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
   }
 }
 /* textarea counter */
+:root,
 [data-theme="light"] {
   --textarea-counter-color: rgba(0, 0, 0, 0.45);
   --textarea-counter-bg: rgba(0, 0, 0, 0.035);
@@ -6110,6 +6116,7 @@ html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover {
   }
 }
 /* breadcrumbs */
+:root,
 [data-theme="light"] {
   --breadcrumbs-sep-color: rgba(0, 0, 0, 0.25);
 }
@@ -6145,6 +6152,7 @@ html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover {
   }
 }
 /* page social */
+:root,
 [data-theme="light"] {
   --facebook-color: #fff;
   --facebook-bg: #3b5998;

@@ -10,7 +10,8 @@
 
         .timeline:not(.hide-lines):after { background-color: rgba(255,255,255,.175); }
         .timeline:not(.hide-lines) > li:before { background-color: rgba(255,255,255,.175); }
-        .timeline > li:after { background-color: #15181d; border-color: rgba(255,255,255,.175); }
+        .timeline > li:after { border-color: rgba(255,255,255,.175); }
+        .timeline:not(.hide-lines) > li:after { background-color: #15181d; }
         .dropdown .timeline > li:after { background-color: #41454d; }
         .card .timeline > li:after { background-color: @card-bg-dark; } /* card must be latest */
         .timeline > li > .card:not([class*="ui-"]),.timeline > li > .card a,.timeline > li > .card button { color: #fff !important; }

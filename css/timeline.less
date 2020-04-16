@@ -11,7 +11,8 @@
 
 .timeline:not(.hide-h-lines) > li:before,.timeline > li:after { content: ""; display: block; position: absolute; top: 50%; transform: translateY(-50%); z-index: 1; }
 .timeline:not(.hide-lines) > li:before { width: 30px; height: 2px; background-color: rgba(0,0,0,.15); }
-.timeline > li:after { width: 14px; height: 14px; background-color: #fff; border: solid 2px rgba(0,0,0,.15); border-radius: 50%; }
+.timeline > li:after { width: 14px; height: 14px; border: solid 2px rgba(0,0,0,.15); border-radius: 50%; }
+.timeline:not(.hide-lines) > li:after { background-color: #fff; }
 .timeline:not(.hide-lines).ui-text > li:before { background-color: currentColor; }
 .timeline.ui-text > li:after,.timeline > li.ui-text:after { border-color: currentColor; }
 
