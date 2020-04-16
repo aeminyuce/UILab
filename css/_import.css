@@ -1,5 +1,4 @@
 /* global variables */
-:root,
 [data-theme="light"] {
   --body-bg: #f9f9f9;
   --white: #fff;
@@ -8,8 +7,35 @@
   --card-bg: #fff;
   --highlighted: #fff;
   --btn-bg: rgba(0, 0, 0, 0.08);
-  --btn-bg-hover: rgba(0, 0, 0, 0.15);
-  --btn-ghost-bg-hover: rgba(0, 0, 0, 0.075);
+  --btn-hover-bg: rgba(0, 0, 0, 0.15);
+  --btn-ghost-hover-bg: rgba(0, 0, 0, 0.075);
+  --dark: rgba(0, 0, 0, 0.45);
+  --x-dark: rgba(0, 0, 0, 0.7);
+  --code-color: #c7254e;
+  --code-bg: #f9f2f4;
+  --pre-color: #333;
+  --pre-bg: #f5f5f5;
+  --dropdown-border: rgba(0, 0, 0, 0.045);
+  --dropdown-list-selected-bg: rgba(0, 0, 0, 0.075);
+  --dropdown-list-hover-bg: rgba(0, 0, 0, 0.05);
+  --dropdown-list-border: rgba(0, 0, 0, 0.045);
+  --select-multi-options-border: rgba(0, 0, 0, 0.045);
+  --range-thumb-color: #8e9094;
+  --range-track-bg: rgba(0, 0, 0, 0.08);
+  --range-track-hover-bg: rgba(0, 0, 0, 0.15);
+  --form-focus-bg: rgba(0, 0, 0, 0.015);
+  --form-focus-border: rgba(0, 0, 0, 0.35);
+  --placeholder-color: rgba(0, 0, 0, 0.4);
+  --placeholder-focus-color: rgba(0, 0, 0, 0.23);
+  --check-custom-bg: rgba(0, 0, 0, 0.65);
+  --switch-custom-bg: rgba(0, 0, 0, 0.15);
+  --form-disabled-bg: rgba(0, 0, 0, 0.075);
+  --form-readonly-color: rgba(0, 0, 0, 0.5);
+  --textarea-counter-color: rgba(0, 0, 0, 0.45);
+  --textarea-counter-bg: rgba(0, 0, 0, 0.035);
+  --breadcrumbs-sep-color: rgba(0, 0, 0, 0.25);
+  --progress-bar-bg: rgba(0, 0, 0, 0.075);
+  --progress-bar-inner-bg: rgba(0, 0, 0, 0.15);
 }
 [data-theme="dark"] {
   --body-bg: #15181d;
@@ -19,17 +45,37 @@
   --card-bg: #2f343e;
   --highlighted: #41454d;
   --btn-bg: rgba(255, 255, 255, 0.08);
-  --btn-bg-hover: rgba(255, 255, 255, 0.15);
-  --btn-ghost-bg-hover: rgba(255, 255, 255, 0.075);
+  --btn-hover-bg: rgba(255, 255, 255, 0.15);
+  --btn-ghost-hover-bg: rgba(255, 255, 255, 0.075);
+  --dark: rgba(255, 255, 255, 0.45);
+  --x-dark: rgba(255, 255, 255, 0.7);
+  --code-color: #fff;
+  --code-bg: #c7254e;
+  --pre-color: #fff;
+  --pre-bg: #2f343e;
+  --dropdown-border: rgba(255, 255, 255, 0.045);
+  --dropdown-list-selected-bg: rgba(255, 255, 255, 0.075);
+  --dropdown-list-hover-bg: rgba(0, 0, 0, 0.05);
+  --dropdown-list-border: rgba(255, 255, 255, 0.065);
+  --select-multi-options-border: rgba(255, 255, 255, 0.045);
+  --range-thumb-color: #60656e;
+  --range-track-bg: rgba(255, 255, 255, 0.08);
+  --range-track-hover-bg: rgba(255, 255, 255, 0.15);
+  --form-focus-bg: rgba(255, 255, 255, 0.075);
+  --form-focus-border: rgba(255, 255, 255, 0.65);
+  --placeholder-color: rgba(255, 255, 255, 0.4);
+  --placeholder-focus-color: rgba(255, 255, 255, 0.23);
+  --check-custom-bg: rgba(255, 255, 255, 0.65);
+  --switch-custom-bg: rgba(255, 255, 255, 0.15);
+  --form-disabled-bg: rgba(255, 255, 255, 0.075);
+  --form-readonly-color: rgba(255, 255, 255, 0.65);
+  --textarea-counter-color: #fff;
+  --textarea-counter-bg: rgba(255, 255, 255, 0.175);
+  --breadcrumbs-sep-color: rgba(255, 255, 255, 0.25);
+  --progress-bar-bg: rgba(0, 0, 0, 0.45);
+  --progress-bar-inner-bg: rgba(255, 255, 255, 0.15);
 }
 /* reset */
-:root,
-[data-theme="light"] {
-  --hr-color: rgba(0, 0, 0, 0.15);
-}
-[data-theme="dark"] {
-  --hr-color: rgba(255, 255, 255, 0.15);
-}
 *,
 *:before,
 *:after {
@@ -148,7 +194,7 @@ hr {
   width: 100%;
   height: 1px;
   background-color: rgba(0, 0, 0, 0.15);
-  background-color: var(--hr-color);
+  background-color: var(--border-color);
   margin-top: 20px !important;
   margin-bottom: 20px !important;
   border: 0;
@@ -3229,23 +3275,6 @@ html .row {
   animation: bounce-z 6s linear infinite;
 }
 /* typography */
-:root,
-[data-theme="light"] {
-  --dark: rgba(0, 0, 0, 0.45);
-  --x-dark: rgba(0, 0, 0, 0.7);
-  --code-color: #c7254e;
-  --code-bg: #f9f2f4;
-  --pre-color: #333;
-  --pre-bg: #f5f5f5;
-}
-[data-theme="dark"] {
-  --dark: rgba(255, 255, 255, 0.45);
-  --x-dark: rgba(255, 255, 255, 0.7);
-  --code-color: #fff;
-  --code-bg: #c7254e;
-  --pre-color: #fff;
-  --pre-bg: #2f343e;
-}
 h1,
 h2,
 h3,
@@ -3985,11 +4014,11 @@ html:not(.mobile) .btn.ui-x-dark:hover .icon {
 }
 html:not(.mobile) .btn:not([class*="ui-x-light"]):not([class*="ui-light"]):not([class*="ui-dark"]):not([class*="ui-x-dark"]):not(.btn-passive):not(.swatch-active):hover {
   background-color: rgba(0, 0, 0, 0.15);
-  background-color: var(--btn-bg-hover);
+  background-color: var(--btn-hover-bg);
 }
 html:not(.mobile) .btn.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-light"]):not([class*="ui-dark"]):not([class*="ui-x-dark"]):not(.btn-passive):not(.swatch-active):hover {
   background-color: rgba(0, 0, 0, 0.075);
-  background-color: var(--btn-ghost-bg-hover);
+  background-color: var(--btn-ghost-hover-bg);
 }
 .btn .loading-spinner {
   position: absolute;
@@ -4309,19 +4338,6 @@ html:not(.mobile) .top-button:hover .icon {
   transform: translateY(-1%);
 }
 /* dropdown */
-:root,
-[data-theme="light"] {
-  --dropdown-border: rgba(0, 0, 0, 0.045);
-  --dropdown-list-selected-bg: rgba(0, 0, 0, 0.075);
-  --dropdown-list-bg-hover: rgba(0, 0, 0, 0.05);
-  --dropdown-list-border: rgba(0, 0, 0, 0.045);
-}
-[data-theme="dark"] {
-  --dropdown-border: rgba(255, 255, 255, 0.045);
-  --dropdown-list-selected-bg: rgba(255, 255, 255, 0.075);
-  --dropdown-list-bg-hover: rgba(0, 0, 0, 0.05);
-  --dropdown-list-border: rgba(255, 255, 255, 0.065);
-}
 .ease-dropdown li {
   transition-property: background-color;
   transition-duration: 0.15s;
@@ -4358,7 +4374,7 @@ html:not(.mobile) .top-button:hover .icon {
 }
 .dropdown.open > .btn-ghost:not([class*="ui-"]) {
   background-color: rgba(0, 0, 0, 0.075);
-  background-color: var(--btn-ghost-bg-hover);
+  background-color: var(--btn-ghost-hover-bg);
 }
 .dropdown > .btn .toggle-icon {
   width: 14px !important;
@@ -4451,7 +4467,7 @@ html:not(.mobile) .top-button:hover .icon {
 }
 html:not(.mobile) .dropdown ul.content > li:hover {
   background-color: rgba(0, 0, 0, 0.05);
-  background-color: var(--dropdown-list-bg-hover);
+  background-color: var(--dropdown-list-hover-bg);
   background-clip: padding-box;
 }
 .dropdown ul.content > li,
@@ -4558,35 +4574,6 @@ html:not(.mobile) .dropdown ul.content > li:hover {
   }
 }
 /* forms */
-:root,
-[data-theme="light"] {
-  --select-multi-options-border: rgba(0, 0, 0, 0.045);
-  --range-thumb-color: #8e9094;
-  --range-track-bg: rgba(0, 0, 0, 0.08);
-  --range-track-bg-hover: rgba(0, 0, 0, 0.15);
-  --form-focus-bg: rgba(0, 0, 0, 0.015);
-  --form-focus-border: rgba(0, 0, 0, 0.35);
-  --placeholder-color: rgba(0, 0, 0, 0.4);
-  --placeholder-focus-color: rgba(0, 0, 0, 0.23);
-  --check-custom-bg: rgba(0, 0, 0, 0.65);
-  --switch-custom-bg: rgba(0, 0, 0, 0.15);
-  --form-disabled-bg: rgba(0, 0, 0, 0.075);
-  --form-readonly-color: rgba(0, 0, 0, 0.5);
-}
-[data-theme="dark"] {
-  --select-multi-options-border: rgba(255, 255, 255, 0.045);
-  --range-thumb-color: #60656e;
-  --range-track-bg: rgba(255, 255, 255, 0.08);
-  --range-track-bg-hover: rgba(255, 255, 255, 0.15);
-  --form-focus-bg: rgba(255, 255, 255, 0.075);
-  --form-focus-border: rgba(255, 255, 255, 0.65);
-  --placeholder-color: rgba(255, 255, 255, 0.4);
-  --placeholder-focus-color: rgba(255, 255, 255, 0.23);
-  --check-custom-bg: rgba(255, 255, 255, 0.65);
-  --switch-custom-bg: rgba(255, 255, 255, 0.15);
-  --form-disabled-bg: rgba(255, 255, 255, 0.075);
-  --form-readonly-color: rgba(255, 255, 255, 0.65);
-}
 .ease-form,
 .ease-1st-form > *,
 .ease-2nd-form > * > * {
@@ -4822,7 +4809,7 @@ html:not(.mobile) .dropdown ul.content > li:hover {
 }
 html:not(.mobile) .file:hover .btn {
   background-color: rgba(0, 0, 0, 0.15);
-  background-color: var(--btn-bg-hover);
+  background-color: var(--btn-hover-bg);
 }
 .file > span:not(.btn) {
   white-space: nowrap;
@@ -4975,7 +4962,7 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
 }
 .range:hover::-webkit-slider-runnable-track {
   background-color: rgba(0, 0, 0, 0.15);
-  background-color: var(--range-track-bg-hover);
+  background-color: var(--range-track-hover-bg);
 }
 .range::-moz-range-thumb {
   width: 1rem;
@@ -5007,7 +4994,7 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
 }
 .range:hover::-moz-range-track {
   background-color: rgba(0, 0, 0, 0.15);
-  background-color: var(--range-track-bg-hover);
+  background-color: var(--range-track-hover-bg);
 }
 .range::-ms-thumb {
   width: 1rem;
@@ -5046,7 +5033,7 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
 }
 .range:hover::-ms-fill-lower {
   background-color: rgba(0, 0, 0, 0.15);
-  background-color: var(--range-track-bg-hover);
+  background-color: var(--range-track-hover-bg);
 }
 .range::-ms-fill-upper {
   background-color: rgba(0, 0, 0, 0.08);
@@ -5055,7 +5042,7 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
 }
 .range:hover::-ms-fill-upper {
   background-color: rgba(0, 0, 0, 0.15);
-  background-color: var(--range-track-bg-hover);
+  background-color: var(--range-track-hover-bg);
 }
 .range:disabled::-webkit-slider-thumb {
   background-color: #8e9094;
@@ -5468,15 +5455,6 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
   }
 }
 /* textarea counter */
-:root,
-[data-theme="light"] {
-  --textarea-counter-color: rgba(0, 0, 0, 0.45);
-  --textarea-counter-bg: rgba(0, 0, 0, 0.035);
-}
-[data-theme="dark"] {
-  --textarea-counter-color: #fff;
-  --textarea-counter-bg: rgba(255, 255, 255, 0.175);
-}
 .textarea:not(.toggle-textarea)[data-counter]:before {
   content: attr(data-counter);
   font-size: 9px;
@@ -6116,13 +6094,6 @@ html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover {
   }
 }
 /* breadcrumbs */
-:root,
-[data-theme="light"] {
-  --breadcrumbs-sep-color: rgba(0, 0, 0, 0.25);
-}
-[data-theme="dark"] {
-  --breadcrumbs-sep-color: rgba(255, 255, 255, 0.25);
-}
 .breadcrumbs:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -6152,53 +6123,6 @@ html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover {
   }
 }
 /* page social */
-:root,
-[data-theme="light"] {
-  --facebook-color: #fff;
-  --facebook-bg: #3b5998;
-  --facebook-hover-bg: #4c70ba;
-  --twitter-color: #fff;
-  --twitter-bg: #1da1f2;
-  --twitter-hover-bg: #4db5f5;
-  --instagram-color: #fff;
-  --instagram-bg: #c13584;
-  --instagram-hover-bg: #d1589c;
-  --linkedin-color: #fff;
-  --linkedin-bg: #0077b5;
-  --linkedin-hover-bg: #0099e8;
-  --google-color: #fff;
-  --google-bg: #db4437;
-  --google-hover-bg: #e36c62;
-  --whatsapp-color: #fff;
-  --whatsapp-bg: #25d366;
-  --whatsapp-hover-bg: #4be083;
-  --youtube-color: #fff;
-  --youtube-bg: #ff0000;
-  --youtube-hover-bg: #ff3333;
-}
-[data-theme="dark"] {
-  --facebook-color: #3b5998;
-  --facebook-bg: #292c35;
-  --facebook-hover-bg: #3f4452;
-  --twitter-color: #1da1f2;
-  --twitter-bg: #292c35;
-  --twitter-hover-bg: #3f4452;
-  --instagram-color: #c13584;
-  --instagram-bg: #292c35;
-  --instagram-hover-bg: #3f4452;
-  --linkedin-color: #0077b5;
-  --linkedin-bg: #292c35;
-  --linkedin-hover-bg: #3f4452;
-  --google-color: #db4437;
-  --google-bg: #292c35;
-  --google-hover-bg: #3f4452;
-  --whatsapp-color: #25d366;
-  --whatsapp-bg: #292c35;
-  --whatsapp-hover-bg: #3f4452;
-  --youtube-color: #ff0000;
-  --youtube-bg: #292c35;
-  --youtube-hover-bg: #3f4452;
-}
 .page-social {
   width: 42px;
   position: fixed;
@@ -6208,73 +6132,52 @@ html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover {
 }
 .btn-facebook {
   color: #fff;
-  color: var(--facebook-color);
   background-color: #3b5998;
-  background-color: var(--facebook-bg);
 }
 html:not(.mobile) .btn-facebook:hover {
   background-color: #4c70ba !important;
-  background-color: var(--facebook-hover-bg) !important;
 }
 .btn-twitter {
   color: #fff;
-  color: var(--twitter-color);
   background-color: #1da1f2;
-  background-color: var(--twitter-bg);
 }
 html:not(.mobile) .btn-twitter:hover {
   background-color: #4db5f5 !important;
-  background-color: var(--twitter-hover-bg) !important;
 }
 .btn-instagram {
   color: #fff;
-  color: var(--instagram-color);
   background-color: #c13584;
-  background-color: var(--instagram-bg);
 }
 html:not(.mobile) .btn-instagram:hover {
   background-color: #d1589c !important;
-  background-color: var(--instagram-hover-bg) !important;
 }
 .btn-linkedin {
   color: #fff;
-  color: var(--linkedin-color);
   background-color: #0077b5;
-  background-color: var(--linkedin-bg);
 }
 html:not(.mobile) .btn-linkedin:hover {
   background-color: #0099e8 !important;
-  background-color: var(--linkedin-hover-bg) !important;
 }
 .btn-google {
   color: #fff;
-  color: var(--google-color);
   background-color: #db4437;
-  background-color: var(--google-bg);
 }
 html:not(.mobile) .btn-google:hover {
   background-color: #e36c62 !important;
-  background-color: var(--google-hover-bg) !important;
 }
 .btn-whatsapp {
   color: #fff;
-  color: var(--whatsapp-color);
   background-color: #25d366;
-  background-color: var(--whatsapp-bg);
 }
 html:not(.mobile) .btn-whatsapp:hover {
   background-color: #4be083 !important;
-  background-color: var(--whatsapp-hover-bg) !important;
 }
 .btn-youtube {
   color: #fff;
-  color: var(--youtube-color);
   background-color: #ff0000;
-  background-color: var(--youtube-bg);
 }
 html:not(.mobile) .btn-youtube:hover {
   background-color: #ff3333 !important;
-  background-color: var(--youtube-hover-bg) !important;
 }
 @media (max-width: 480px) {
   .page-social {
@@ -6353,14 +6256,6 @@ html:not(.mobile) .btn-youtube:hover {
   stroke-width: 38px;
 }
 /* progress bar */
-[data-theme="dark"] {
-  --progress-bar-bg: rgba(0, 0, 0, 0.075);
-  --progress-bar-inner-bg: rgba(0, 0, 0, 0.15);
-}
-[data-theme="dark"] {
-  --progress-bar-bg: rgba(0, 0, 0, 0.45);
-  --progress-bar-inner-bg: rgba(255, 255, 255, 0.15);
-}
 @keyframes progress-fill {
   from {
     width: 0;
@@ -6633,9 +6528,11 @@ header.sticky {
 .timeline > li:after {
   width: 14px;
   height: 14px;
-  background-color: #fff;
   border: solid 2px rgba(0, 0, 0, 0.15);
   border-radius: 50%;
+}
+.timeline:not(.hide-lines) > li:after {
+  background-color: #fff;
 }
 .timeline:not(.hide-lines).ui-text > li:before {
   background-color: currentColor;
@@ -9470,7 +9367,8 @@ html:not(.mobile) .preview-next:hover {
 .ui-light .icon:not([class*="ui-"]),
 .ui-light a:not([class*="ui-"]),
 .ui-light button:not([class*="ui-"]) {
-  color: [object Object],[object Object];
+  color: #000;
+  color: var(--black);
 }
 .ui-dark,
 .ui-dark .icon:not([class*="ui-"]),
@@ -9495,23 +9393,23 @@ html:not(.mobile) .preview-next:hover {
 }
 .theme-gray.ui-x-light,
 .theme-gray .ui-x-light:not([class*="theme-"]) {
-  background-color: rgba(255, 255, 255, 0.65);
+  background-color: rgba(204, 204, 204, 0.15);
 }
 html:not(.mobile) .theme-gray.ui-x-light.hover:hover,
 html:not(.mobile) .theme-gray .ui-x-light:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-gray.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-gray .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(230, 230, 230, 0.65);
+  background-color: rgba(204, 204, 204, 0.5);
 }
 .theme-gray.ui-light,
 .theme-gray .ui-light:not([class*="theme-"]) {
-  background-color: rgba(255, 255, 255, 0.65);
+  background-color: rgba(204, 204, 204, 0.25);
 }
 html:not(.mobile) .theme-gray.ui-light.hover:hover,
 html:not(.mobile) .theme-gray .ui-light:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-gray.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-gray .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(230, 230, 230, 0.65);
+  background-color: rgba(204, 204, 204, 0.5);
 }
 .theme-gray.ui-dark,
 .theme-gray .ui-dark:not([class*="theme-"]) {
@@ -9543,23 +9441,23 @@ html:not(.mobile) .theme-gray .ui-x-dark:not([class*="theme-"]).btn:not(.btn-pas
 }
 .theme-green.ui-x-light,
 .theme-green .ui-x-light:not([class*="theme-"]) {
-  background-color: rgba(217, 246, 220, 0.65);
+  background-color: rgba(45, 189, 58, 0.15);
 }
 html:not(.mobile) .theme-green.ui-x-light.hover:hover,
 html:not(.mobile) .theme-green .ui-x-light:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-green.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-green .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(73, 212, 86, 0.65);
+  background-color: rgba(45, 189, 58, 0.5);
 }
 .theme-green.ui-light,
 .theme-green .ui-light:not([class*="theme-"]) {
-  background-color: rgba(176, 236, 182, 0.65);
+  background-color: rgba(45, 189, 58, 0.25);
 }
 html:not(.mobile) .theme-green.ui-light.hover:hover,
 html:not(.mobile) .theme-green .ui-light:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-green.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-green .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(73, 212, 86, 0.65);
+  background-color: rgba(45, 189, 58, 0.5);
 }
 .theme-green.ui-dark,
 .theme-green .ui-dark:not([class*="theme-"]) {
@@ -9591,23 +9489,23 @@ html:not(.mobile) .theme-green .ui-x-dark:not([class*="theme-"]).btn:not(.btn-pa
 }
 .theme-yellow.ui-x-light,
 .theme-yellow .ui-x-light:not([class*="theme-"]) {
-  background-color: rgba(255, 246, 229, 0.65);
+  background-color: rgba(255, 166, 0, 0.15);
 }
 html:not(.mobile) .theme-yellow.ui-x-light.hover:hover,
 html:not(.mobile) .theme-yellow .ui-x-light:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-yellow.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-yellow .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(255, 184, 51, 0.65);
+  background-color: rgba(255, 166, 0, 0.5);
 }
 .theme-yellow.ui-light,
 .theme-yellow .ui-light:not([class*="theme-"]) {
-  background-color: rgba(255, 228, 179, 0.65);
+  background-color: rgba(255, 166, 0, 0.25);
 }
 html:not(.mobile) .theme-yellow.ui-light.hover:hover,
 html:not(.mobile) .theme-yellow .ui-light:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-yellow.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-yellow .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(255, 184, 51, 0.65);
+  background-color: rgba(255, 166, 0, 0.5);
 }
 .theme-yellow.ui-dark,
 .theme-yellow .ui-dark:not([class*="theme-"]) {
@@ -9639,23 +9537,23 @@ html:not(.mobile) .theme-yellow .ui-x-dark:not([class*="theme-"]).btn:not(.btn-p
 }
 .theme-orange.ui-x-light,
 .theme-orange .ui-x-light:not([class*="theme-"]) {
-  background-color: rgba(255, 236, 219, 0.65);
+  background-color: rgba(244, 117, 0, 0.15);
 }
 html:not(.mobile) .theme-orange.ui-x-light.hover:hover,
 html:not(.mobile) .theme-orange .ui-x-light:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-orange.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-orange .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(255, 143, 40, 0.65);
+  background-color: rgba(244, 117, 0, 0.5);
 }
 .theme-orange.ui-light,
 .theme-orange .ui-light:not([class*="theme-"]) {
-  background-color: rgba(255, 209, 167, 0.65);
+  background-color: rgba(244, 117, 0, 0.25);
 }
 html:not(.mobile) .theme-orange.ui-light.hover:hover,
 html:not(.mobile) .theme-orange .ui-light:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-orange.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-orange .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(255, 143, 40, 0.65);
+  background-color: rgba(244, 117, 0, 0.5);
 }
 .theme-orange.ui-dark,
 .theme-orange .ui-dark:not([class*="theme-"]) {
@@ -9687,23 +9585,23 @@ html:not(.mobile) .theme-orange .ui-x-dark:not([class*="theme-"]).btn:not(.btn-p
 }
 .theme-red.ui-x-light,
 .theme-red .ui-x-light:not([class*="theme-"]) {
-  background-color: rgba(251, 202, 206, 0.65);
+  background-color: rgba(209, 15, 28, 0.15);
 }
 html:not(.mobile) .theme-red.ui-x-light.hover:hover,
 html:not(.mobile) .theme-red .ui-x-light:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-red.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-red .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(239, 36, 49, 0.65);
+  background-color: rgba(209, 15, 28, 0.5);
 }
 .theme-red.ui-light,
 .theme-red .ui-light:not([class*="theme-"]) {
-  background-color: rgba(248, 155, 161, 0.65);
+  background-color: rgba(209, 15, 28, 0.25);
 }
 html:not(.mobile) .theme-red.ui-light.hover:hover,
 html:not(.mobile) .theme-red .ui-light:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-red.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-red .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(239, 36, 49, 0.65);
+  background-color: rgba(209, 15, 28, 0.5);
 }
 .theme-red.ui-dark,
 .theme-red .ui-dark:not([class*="theme-"]) {
@@ -9735,23 +9633,23 @@ html:not(.mobile) .theme-red .ui-x-dark:not([class*="theme-"]).btn:not(.btn-pass
 }
 .theme-blue.ui-x-light,
 .theme-blue .ui-x-light:not([class*="theme-"]) {
-  background-color: rgba(185, 211, 240, 0.65);
+  background-color: rgba(35, 94, 160, 0.15);
 }
 html:not(.mobile) .theme-blue.ui-x-light.hover:hover,
 html:not(.mobile) .theme-blue .ui-x-light:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-blue.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-blue .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(44, 119, 202, 0.65);
+  background-color: rgba(35, 94, 160, 0.5);
 }
 .theme-blue.ui-light,
 .theme-blue .ui-light:not([class*="theme-"]) {
-  background-color: rgba(143, 184, 231, 0.65);
+  background-color: rgba(35, 94, 160, 0.25);
 }
 html:not(.mobile) .theme-blue.ui-light.hover:hover,
 html:not(.mobile) .theme-blue .ui-light:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-blue.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-blue .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(44, 119, 202, 0.65);
+  background-color: rgba(35, 94, 160, 0.5);
 }
 .theme-blue.ui-dark,
 .theme-blue .ui-dark:not([class*="theme-"]) {
@@ -9783,23 +9681,23 @@ html:not(.mobile) .theme-blue .ui-x-dark:not([class*="theme-"]).btn:not(.btn-pas
 }
 .theme-default.ui-x-light,
 .theme-default .ui-x-light:not([class*="theme-"]) {
-  background-color: rgba(244, 246, 252, 0.65);
+  background-color: rgba(69, 99, 197, 0.15);
 }
 html:not(.mobile) .theme-default.ui-x-light.hover:hover,
 html:not(.mobile) .theme-default .ui-x-light:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-default.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-default .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(108, 132, 209, 0.65);
+  background-color: rgba(69, 99, 197, 0.5);
 }
 .theme-default.ui-light,
 .theme-default .ui-light:not([class*="theme-"]) {
-  background-color: rgba(205, 213, 239, 0.65);
+  background-color: rgba(69, 99, 197, 0.25);
 }
 html:not(.mobile) .theme-default.ui-light.hover:hover,
 html:not(.mobile) .theme-default .ui-light:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-default.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-default .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(108, 132, 209, 0.65);
+  background-color: rgba(69, 99, 197, 0.5);
 }
 .theme-default.ui-dark,
 .theme-default .ui-dark:not([class*="theme-"]) {
@@ -9831,23 +9729,23 @@ html:not(.mobile) .theme-default .ui-x-dark:not([class*="theme-"]).btn:not(.btn-
 }
 .theme-default2.ui-x-light,
 .theme-default2 .ui-x-light:not([class*="theme-"]) {
-  background-color: rgba(231, 244, 253, 0.65);
+  background-color: rgba(16, 142, 239, 0.15);
 }
 html:not(.mobile) .theme-default2.ui-x-light.hover:hover,
 html:not(.mobile) .theme-default2 .ui-x-light:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-default2.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-default2 .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(64, 165, 242, 0.65);
+  background-color: rgba(16, 142, 239, 0.5);
 }
 .theme-default2.ui-light,
 .theme-default2 .ui-light:not([class*="theme-"]) {
-  background-color: rgba(183, 221, 250, 0.65);
+  background-color: rgba(16, 142, 239, 0.25);
 }
 html:not(.mobile) .theme-default2.ui-light.hover:hover,
 html:not(.mobile) .theme-default2 .ui-light:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-default2.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-default2 .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(64, 165, 242, 0.65);
+  background-color: rgba(16, 142, 239, 0.5);
 }
 .theme-default2.ui-dark,
 .theme-default2 .ui-dark:not([class*="theme-"]) {
@@ -9885,214 +9783,6 @@ html:not(.mobile) .theme-default2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn
 [data-theme="dark"] .set-dark:not(.theme-light)[class*="theme-"] [class*="ui-x-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) {
   background-color: #07080a;
 }
-[data-theme="dark"] .theme-gray.ui-x-light,
-[data-theme="dark"] .theme-gray .ui-x-light:not([class*="theme-"]) {
-  background-color: rgba(157, 165, 181, 0.65);
-}
-html:not(.mobile) [data-theme="dark"] .theme-gray.ui-x-light.hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-gray .ui-x-light:not([class*="theme-"]).hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-gray.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) [data-theme="dark"] .theme-gray .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(69, 76, 91, 0.65);
-}
-[data-theme="dark"] .theme-gray.ui-light,
-[data-theme="dark"] .theme-gray .ui-light:not([class*="theme-"]) {
-  background-color: rgba(128, 139, 159, 0.65);
-}
-html:not(.mobile) [data-theme="dark"] .theme-gray.ui-light.hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-gray .ui-light:not([class*="theme-"]).hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-gray.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) [data-theme="dark"] .theme-gray .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(69, 76, 91, 0.65);
-}
-[data-theme="dark"] .theme-gray.ui-dark,
-[data-theme="dark"] .theme-gray .ui-dark:not([class*="theme-"]) {
-  background-color: #2f343e;
-}
-html:not(.mobile) [data-theme="dark"] .theme-gray.ui-dark.hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-gray .ui-dark:not([class*="theme-"]).hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-gray.ui-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) [data-theme="dark"] .theme-gray .ui-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #454c5b;
-}
-[data-theme="dark"] .theme-gray.ui-x-dark,
-[data-theme="dark"] .theme-gray .ui-x-dark:not([class*="theme-"]) {
-  background-color: #191c21;
-}
-html:not(.mobile) [data-theme="dark"] .theme-gray.ui-x-dark.hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-gray .ui-x-dark:not([class*="theme-"]).hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-gray.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) [data-theme="dark"] .theme-gray .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #2f343e;
-}
-[data-theme="dark"] .theme-gray.ui-text,
-[data-theme="dark"] .theme-gray .ui-text:not([class*="theme-"]) {
-  color: #2f343e;
-}
-[data-theme="dark"] .theme-gray.ui-border,
-[data-theme="dark"] .theme-gray .ui-border:not([class*="theme-"]) {
-  border-color: #2f343e;
-}
-[data-theme="dark"] .theme-gray.ui-x-light,
-[data-theme="dark"] .theme-gray .ui-x-light:not([class*="theme-"]) {
-  background-color: rgba(204, 204, 204, 0.15);
-}
-html:not(.mobile) [data-theme="dark"] .theme-gray.ui-x-light.hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-gray .ui-x-light:not([class*="theme-"]).hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-gray.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) [data-theme="dark"] .theme-gray .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(204, 204, 204, 0.5);
-}
-[data-theme="dark"] .theme-gray.ui-light,
-[data-theme="dark"] .theme-gray .ui-light:not([class*="theme-"]) {
-  background-color: rgba(204, 204, 204, 0.15);
-}
-html:not(.mobile) [data-theme="dark"] .theme-gray.ui-light.hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-gray .ui-light:not([class*="theme-"]).hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-gray.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) [data-theme="dark"] .theme-gray .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(204, 204, 204, 0.5);
-}
-[data-theme="dark"] .theme-green.ui-x-light,
-[data-theme="dark"] .theme-green .ui-x-light:not([class*="theme-"]) {
-  background-color: rgba(45, 189, 58, 0.15);
-}
-html:not(.mobile) [data-theme="dark"] .theme-green.ui-x-light.hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-green .ui-x-light:not([class*="theme-"]).hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-green.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) [data-theme="dark"] .theme-green .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(45, 189, 58, 0.5);
-}
-[data-theme="dark"] .theme-green.ui-light,
-[data-theme="dark"] .theme-green .ui-light:not([class*="theme-"]) {
-  background-color: rgba(45, 189, 58, 0.15);
-}
-html:not(.mobile) [data-theme="dark"] .theme-green.ui-light.hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-green .ui-light:not([class*="theme-"]).hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-green.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) [data-theme="dark"] .theme-green .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(45, 189, 58, 0.5);
-}
-[data-theme="dark"] .theme-yellow.ui-x-light,
-[data-theme="dark"] .theme-yellow .ui-x-light:not([class*="theme-"]) {
-  background-color: rgba(255, 166, 0, 0.15);
-}
-html:not(.mobile) [data-theme="dark"] .theme-yellow.ui-x-light.hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-yellow .ui-x-light:not([class*="theme-"]).hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-yellow.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) [data-theme="dark"] .theme-yellow .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(255, 166, 0, 0.5);
-}
-[data-theme="dark"] .theme-yellow.ui-light,
-[data-theme="dark"] .theme-yellow .ui-light:not([class*="theme-"]) {
-  background-color: rgba(255, 166, 0, 0.15);
-}
-html:not(.mobile) [data-theme="dark"] .theme-yellow.ui-light.hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-yellow .ui-light:not([class*="theme-"]).hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-yellow.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) [data-theme="dark"] .theme-yellow .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(255, 166, 0, 0.5);
-}
-[data-theme="dark"] .theme-orange.ui-x-light,
-[data-theme="dark"] .theme-orange .ui-x-light:not([class*="theme-"]) {
-  background-color: rgba(244, 117, 0, 0.15);
-}
-html:not(.mobile) [data-theme="dark"] .theme-orange.ui-x-light.hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-orange .ui-x-light:not([class*="theme-"]).hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-orange.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) [data-theme="dark"] .theme-orange .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(244, 117, 0, 0.5);
-}
-[data-theme="dark"] .theme-orange.ui-light,
-[data-theme="dark"] .theme-orange .ui-light:not([class*="theme-"]) {
-  background-color: rgba(244, 117, 0, 0.15);
-}
-html:not(.mobile) [data-theme="dark"] .theme-orange.ui-light.hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-orange .ui-light:not([class*="theme-"]).hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-orange.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) [data-theme="dark"] .theme-orange .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(244, 117, 0, 0.5);
-}
-[data-theme="dark"] .theme-red.ui-x-light,
-[data-theme="dark"] .theme-red .ui-x-light:not([class*="theme-"]) {
-  background-color: rgba(209, 15, 28, 0.15);
-}
-html:not(.mobile) [data-theme="dark"] .theme-red.ui-x-light.hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-red .ui-x-light:not([class*="theme-"]).hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-red.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) [data-theme="dark"] .theme-red .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(209, 15, 28, 0.5);
-}
-[data-theme="dark"] .theme-red.ui-light,
-[data-theme="dark"] .theme-red .ui-light:not([class*="theme-"]) {
-  background-color: rgba(209, 15, 28, 0.15);
-}
-html:not(.mobile) [data-theme="dark"] .theme-red.ui-light.hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-red .ui-light:not([class*="theme-"]).hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-red.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) [data-theme="dark"] .theme-red .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(209, 15, 28, 0.5);
-}
-[data-theme="dark"] .theme-blue.ui-x-light,
-[data-theme="dark"] .theme-blue .ui-x-light:not([class*="theme-"]) {
-  background-color: rgba(35, 94, 160, 0.15);
-}
-html:not(.mobile) [data-theme="dark"] .theme-blue.ui-x-light.hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-blue .ui-x-light:not([class*="theme-"]).hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-blue.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) [data-theme="dark"] .theme-blue .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(35, 94, 160, 0.5);
-}
-[data-theme="dark"] .theme-blue.ui-light,
-[data-theme="dark"] .theme-blue .ui-light:not([class*="theme-"]) {
-  background-color: rgba(35, 94, 160, 0.15);
-}
-html:not(.mobile) [data-theme="dark"] .theme-blue.ui-light.hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-blue .ui-light:not([class*="theme-"]).hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-blue.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) [data-theme="dark"] .theme-blue .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(35, 94, 160, 0.5);
-}
-[data-theme="dark"] .theme-default.ui-x-light,
-[data-theme="dark"] .theme-default .ui-x-light:not([class*="theme-"]) {
-  background-color: rgba(69, 99, 197, 0.15);
-}
-html:not(.mobile) [data-theme="dark"] .theme-default.ui-x-light.hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-default .ui-x-light:not([class*="theme-"]).hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-default.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) [data-theme="dark"] .theme-default .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(69, 99, 197, 0.5);
-}
-[data-theme="dark"] .theme-default.ui-light,
-[data-theme="dark"] .theme-default .ui-light:not([class*="theme-"]) {
-  background-color: rgba(69, 99, 197, 0.15);
-}
-html:not(.mobile) [data-theme="dark"] .theme-default.ui-light.hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-default .ui-light:not([class*="theme-"]).hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-default.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) [data-theme="dark"] .theme-default .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(69, 99, 197, 0.5);
-}
-[data-theme="dark"] .theme-default2.ui-x-light,
-[data-theme="dark"] .theme-default2 .ui-x-light:not([class*="theme-"]) {
-  background-color: rgba(16, 142, 239, 0.15);
-}
-html:not(.mobile) [data-theme="dark"] .theme-default2.ui-x-light.hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-default2 .ui-x-light:not([class*="theme-"]).hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-default2.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) [data-theme="dark"] .theme-default2 .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(16, 142, 239, 0.5);
-}
-[data-theme="dark"] .theme-default2.ui-light,
-[data-theme="dark"] .theme-default2 .ui-light:not([class*="theme-"]) {
-  background-color: rgba(16, 142, 239, 0.15);
-}
-html:not(.mobile) [data-theme="dark"] .theme-default2.ui-light.hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-default2 .ui-light:not([class*="theme-"]).hover:hover,
-html:not(.mobile) [data-theme="dark"] .theme-default2.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) [data-theme="dark"] .theme-default2 .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(16, 142, 239, 0.5);
-}
 /* darkmode */
 @media (prefers-color-scheme: dark) {
   .photos-holder [class*="img-photo"] {
@@ -10114,8 +9804,10 @@ html:not(.mobile) [data-theme="dark"] .theme-default2 .ui-light:not([class*="the
     background-color: rgba(255, 255, 255, 0.175);
   }
   .timeline > li:after {
-    background-color: #15181d;
     border-color: rgba(255, 255, 255, 0.175);
+  }
+  .timeline:not(.hide-lines) > li:after {
+    background-color: #15181d;
   }
   .dropdown .timeline > li:after {
     background-color: #41454d;

@@ -7,30 +7,25 @@
 @dropdown-list-selected-bg:             fade(@black, 7.5%);
 @dropdown-list-selected-bg-dark:        fade(@white, 7.5%);
 
-@dropdown-list-bg-hover:                fade(@black, 5%);
-@dropdown-list-bg-hover-dark:           fade(@black, 5%);
+@dropdown-list-hover-bg:                fade(@black, 5%);
+@dropdown-list-hover-bg-dark:           fade(@black, 5%);
 @dropdown-list-border:                  fade(@black, 4.5%);
 @dropdown-list-border-dark:             fade(@white, 6.5%);
 
-:root,[data-theme="light"] {
+._global-vars () {
     --dropdown-border: @dropdown-border;
     --dropdown-list-selected-bg: @dropdown-list-selected-bg;
 
-    --dropdown-list-bg-hover: @dropdown-list-bg-hover;
+    --dropdown-list-hover-bg: @dropdown-list-hover-bg;
     --dropdown-list-border: @dropdown-list-border;
 }
+._global-vars-dark () {
+    --dropdown-border: @dropdown-border-dark;
+    --dropdown-list-selected-bg: @dropdown-list-selected-bg-dark;
 
-._darkmode-dropdown-vars (@dark-mode) when (@dark-mode = true) {
-    [data-theme="dark"] {
-        --dropdown-border: @dropdown-border-dark;
-        --dropdown-list-selected-bg: @dropdown-list-selected-bg-dark;
-
-        --dropdown-list-bg-hover: @dropdown-list-bg-hover-dark;
-        --dropdown-list-border: @dropdown-list-border-dark;
-    }
+    --dropdown-list-hover-bg: @dropdown-list-hover-bg-dark;
+    --dropdown-list-border: @dropdown-list-border-dark;
 }
-
-._darkmode-dropdown-vars(@dark-mode);
 
 .ease-dropdown li { transition-property: background-color; transition-duration: .15s; }
 .ease-dropdown > .btn { transition-property: color, background-color, border-width, border-color, opacity, transform, box-shadow; transition-duration: .15s; }
@@ -42,7 +37,7 @@
 .dropdown.open { z-index: 19; }
 .dropdown > .btn { display: block; }
 .dropdown > .btn:not(.btn-square) { width: 100%; }
-.dropdown.open > .btn-ghost:not([class*="ui-"]) { ._bg-var(btn-ghost-bg-hover); }
+.dropdown.open > .btn-ghost:not([class*="ui-"]) { ._bg-var(btn-ghost-hover-bg); }
 
 .dropdown > .btn .toggle-icon { width: 14px !important; height: 14px !important; margin-top: -2px; stroke-width: 38px !important; }
 .dropdown > .btn .toggle-icon.right { margin-top: 4px; margin-bottom: 4px; }
@@ -69,7 +64,7 @@
 
 .dropdown ul.content > li { line-height: 20px; min-height: 30px; padding: 10px; }
 .dropdown ul.content > li:not(:last-child) { ._border-var(@dir: border-bottom; @var: dropdown-list-border); }
-html:not(.mobile) .dropdown ul.content > li:hover { ._bg-var(dropdown-list-bg-hover); background-clip: padding-box; }
+html:not(.mobile) .dropdown ul.content > li:hover { ._bg-var(dropdown-list-hover-bg); background-clip: padding-box; }
 
 .dropdown ul.content > li,.dropdown ul.content > li a,.dropdown ul.content > li > label { font-size: 15px; line-height: 24px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; display: block; }
 .dropdown ul.content:not(.has-grid) > li,.dropdown ul.content:not(.has-grid) > li * { text-align: left !important; }

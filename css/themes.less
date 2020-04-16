@@ -8,7 +8,7 @@
 @theme-colors:                        '@{gray}', '@{green}', '@{yellow}', '@{orange}', '@{red}', '@{blue}', '@{default}', '@{default2}';
 
 .ui-x-light {
-   color: ._color-var(black);
+  ._color-var(black);
 
    .icon,a,button {
       &:not([class*="ui-"]) { &:extend(.ui-x-light); }
@@ -59,32 +59,16 @@
 }
 ._theme-loop(length(@theme-colors));
 
-._darkmode-themes (@dark-mode) when (@dark-mode = true) {
-   [data-theme="dark"] {
-      .set-dark {
-         &:not(.theme-gray)[class*="theme-"][class*="ui-"],
-         &:not(.theme-light)[class*="theme-"] [class*="ui-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) {
-             background-color: @set-dark;
-         }
-
-         &:not(.theme-gray)[class*="theme-"][class*="ui-x-"],
-         &:not(.theme-light)[class*="theme-"] [class*="ui-x-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) {
-             background-color: @set-x-dark;
-         }
+[data-theme="dark"] when (@dark-mode = true) {
+   .set-dark {
+      &:not(.theme-gray)[class*="theme-"][class*="ui-"],
+      &:not(.theme-light)[class*="theme-"] [class*="ui-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) {
+            background-color: @set-dark;
       }
 
-     ._theme(gray,  @card-bg-dark);
-
-     ._theme-dark-loop(@i) when (@i > 0) {
-        ._theme-dark-loop(@i - 1);
-
-        @name: extract(@theme-color-names, @i);
-        @color: color(extract(@theme-colors, @i));
-        ._theme-dark(@name,  @color);
-
-     }
-     ._theme-dark-loop(length(@theme-colors));
+      &:not(.theme-gray)[class*="theme-"][class*="ui-x-"],
+      &:not(.theme-light)[class*="theme-"] [class*="ui-x-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) {
+            background-color: @set-x-dark;
+      }
    }
 }
-
-._darkmode-themes(@dark-mode);

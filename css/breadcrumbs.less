@@ -4,17 +4,12 @@
 @breadcrumbs-sep-color:                 fade(@black, 25%);
 @breadcrumbs-sep-color-dark:            fade(@white, 25%);
 
-:root,[data-theme="light"] {
+._global-vars () {
     --breadcrumbs-sep-color: @breadcrumbs-sep-color;
 }
-
-._darkmode-breadcrumbs-vars (@dark-mode) when (@dark-mode = true) {
-    [data-theme="dark"] {
-        --breadcrumbs-sep-color: @breadcrumbs-sep-color-dark;
-    }
+._global-vars-dark () {
+    --breadcrumbs-sep-color: @breadcrumbs-sep-color-dark;
 }
-
-._darkmode-breadcrumbs-vars(@dark-mode);
 
 .breadcrumbs:not(:last-child) { margin-bottom: 10px; }
 .breadcrumbs:not(.no-separated) > ul > li:not(:first-child):before { content: "\203A"; ._color-var(breadcrumbs-sep-color); font-size: 18px; line-height: normal; margin: 0 8px 0 3px; display: inline-block; }

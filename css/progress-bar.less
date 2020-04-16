@@ -7,19 +7,14 @@
 @progress-bar-inner-bg:                 fade(@black, 15%);
 @progress-bar-inner-bg-dark:            fade(@white, 15%);
 
-[data-theme="dark"] {
+._global-vars () {
     --progress-bar-bg: @progress-bar-bg;
     --progress-bar-inner-bg: @progress-bar-inner-bg;
 }
-
-._darkmode-progressbar-vars (@dark-mode) when (@dark-mode = true) {
-    [data-theme="dark"] {
-        --progress-bar-bg: @progress-bar-bg-dark;
-        --progress-bar-inner-bg: @progress-bar-inner-bg-dark;
-    }
+._global-vars-dark () {
+    --progress-bar-bg: @progress-bar-bg-dark;
+    --progress-bar-inner-bg: @progress-bar-inner-bg-dark;
 }
-
-._darkmode-progressbar-vars(@dark-mode);
 
 @keyframes progress-fill { from { width: 0; } }
 

@@ -21,19 +21,19 @@
 @lg-start:                              ~"(min-width: 1200px)";
 @lg-start-finish:                       @lg-start and @lg-finish;
 
-@default-finish:                        ~"(max-width: 1199px)";
-@default-start:                         ~"(min-width: 960px)";
+@default-finish:                        ~'(max-width: 1199px)';
+@default-start:                         ~'(min-width: 960px)';
 @default-start-finish:                  @default-start and @default-finish;
 
-@md-finish:                             ~"(max-width: 959px)";
-@md-start:                              ~"(min-width: 768px)";
+@md-finish:                             ~'(max-width: 959px)';
+@md-start:                              ~'(min-width: 768px)';
 @md-start-finish:                       @md-start and @md-finish;
 
-@sm-finish:                             ~"(max-width: 767px)";
-@sm-start:                              ~"(min-width: 481px)";
+@sm-finish:                             ~'(max-width: 767px)';
+@sm-start:                              ~'(min-width: 481px)';
 @sm-start-finish:                       @sm-start and @sm-finish;
 
-@xs-finish:                             ~"(max-width: 480px)";
+@xs-finish:                             ~'(max-width: 480px)';
 
 // global colors
 @body-bg:                               #f9f9f9;
@@ -61,130 +61,117 @@
 @highlighted-dark:                      #41454d;
 
 @btn-bg:                                fade(@black, 8%);
-@btn-bg-hover:                          fade(@black, 15%);
 @btn-bg-dark:                           fade(@white, 8%);
-@btn-bg-hover-dark:                     fade(@white, 15%);
-@btn-ghost-bg-hover:                    fade(@black, 7.5%);
-@btn-ghost-bg-hover-dark:               fade(@white, 7.5%);
+@btn-hover-bg:                          fade(@black, 15%);
+@btn-hover-bg-dark:                     fade(@white, 15%);
+@btn-ghost-hover-bg:                    fade(@black, 7.5%);
+@btn-ghost-hover-bg-dark:               fade(@white, 7.5%);
 
 /* global variables */
-:root,[data-theme="light"] {
-   --body-bg: @body-bg;
+._global-vars () {
+    --body-bg: @body-bg;
 
-   --white: @white;
-   --black: @black;
+    --white: @white;
+    --black: @black;
 
-   --border-color: @border-color;
-   --card-bg: @card-bg;
-   --highlighted: @highlighted;
+    --border-color: @border-color;
+    --card-bg: @card-bg;
+    --highlighted: @highlighted;
 
-   --btn-bg: @btn-bg;
-   --btn-bg-hover: @btn-bg-hover;
-   --btn-ghost-bg-hover: @btn-ghost-bg-hover;
+    --btn-bg: @btn-bg;
+    --btn-hover-bg: @btn-hover-bg;
+    --btn-ghost-hover-bg: @btn-ghost-hover-bg;
+}
+._global-vars-dark () {
+    --body-bg: @body-bg-dark;
+
+    --white: @black;
+    --black: @white;
+
+    --border-color: @border-color-dark;
+    --card-bg: @card-bg-dark;
+    --highlighted: @highlighted-dark;
+
+    --btn-bg: @btn-bg-dark;
+    --btn-hover-bg: @btn-hover-bg-dark;
+    --btn-ghost-hover-bg: @btn-ghost-hover-bg-dark;
 }
 
-._darkmode-global-vars (@dark-mode) when (@dark-mode = true) {
-   [data-theme="dark"] {
-      --body-bg: @body-bg-dark;
+:root when (@dark-mode = false) { ._global-vars(); }
 
-      --white: @black;
-      --black: @white;
-
-      --border-color: @border-color-dark;
-      --card-bg: @card-bg-dark;
-      --highlighted: @highlighted-dark;
-
-      --btn-bg: @btn-bg-dark;
-      --btn-bg-hover: @btn-bg-hover-dark;
-      --btn-ghost-bg-hover: @btn-ghost-bg-hover-dark;
-   }
-}
-
-._darkmode-global-vars(@dark-mode);
+[data-theme="light"] when (@dark-mode = true) { ._global-vars(); }
+[data-theme="dark"] when (@dark-mode = true) { ._global-vars-dark(); }
 
 // variable color mixins
 ._color-var (@var) {
-   color: @@var;
-   color: ~'var(--@{var})';
+    color: @@var;
+    color: ~'var(--@{var})';
 }
 ._bg-var (@var) {
-   background-color: @@var;
-   background-color: ~'var(--@{var})';
+    background-color: @@var;
+    background-color: ~'var(--@{var})';
 }
 ._border-color-var (@var: border-color) {
-   border-color: @@var;
-   border-color: ~'var(--@{var})';
+    border-color: @@var;
+    border-color: ~'var(--@{var})';
 }
 ._border-var (@dir: border; @style: solid; @width: 1px; @var: border-color) {
-   @{dir}: @style @width @@var;
-   @{dir}: @style @width ~'var(--@{var})';
+    @{dir}: @style @width @@var;
+    @{dir}: @style @width ~'var(--@{var})';
 }
 
 // theme mixins
-._theme (@name; @color) { // light mode themes
+._theme (@name; @color) {
 
-   .theme-@{name}.ui-x-light,.theme-@{name} .ui-x-light:not([class*="theme-"]) {
-      background-color: fade(lighten(@color, 45%), 65%);
+    @x-light: fade(@color, 15%);
+    @x-light-hover: fade(@color, 50%);
+    @light: fade(@color, 25%);
+    @light-hover: fade(@color, 50%);
 
-      html:not(.mobile) &.hover:hover,
-      html:not(.mobile) &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-         background-color: fade(lighten(@color, 10%), 65%);
-      }
+    @dark: @color;
+    @dark-hover: lighten(@color, 10%);
+    @x-dark: darken(@color, 10%);
+    @x-dark-hover: @color;
 
-   }
-   .theme-@{name}.ui-light,.theme-@{name} .ui-light:not([class*="theme-"]) {
-      background-color: fade(lighten(@color, 35%), 65%);
+    .theme-@{name}.ui-x-light,.theme-@{name} .ui-x-light:not([class*="theme-"]) {
+      background-color: @x-light;
 
-      html:not(.mobile) &.hover:hover,
-      html:not(.mobile) &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-         background-color: fade(lighten(@color, 10%), 65%);
-      }
+        html:not(.mobile) &.hover:hover,
+        html:not(.mobile) &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+            background-color: @x-light-hover;
+        }
 
-   }
-   .theme-@{name}.ui-dark,.theme-@{name} .ui-dark:not([class*="theme-"]) {
-      background-color: @color;
+    }
+    .theme-@{name}.ui-light,.theme-@{name} .ui-light:not([class*="theme-"]) {
+        background-color: @light;
 
-      html:not(.mobile) &.hover:hover,
-      html:not(.mobile) &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-         background-color: lighten(@color, 10%);
-      }
+        html:not(.mobile) &.hover:hover,
+        html:not(.mobile) &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+            background-color: @light-hover;
+        }
 
-   }
-   .theme-@{name}.ui-x-dark,.theme-@{name} .ui-x-dark:not([class*="theme-"]) {
-      background-color: darken(@color, 10%);
+    }
+    .theme-@{name}.ui-dark,.theme-@{name} .ui-dark:not([class*="theme-"]) {
+        background-color: @dark;
 
-      html:not(.mobile) &.hover:hover,
-      html:not(.mobile) &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-         background-color: @color;
-      }
+        html:not(.mobile) &.hover:hover,
+        html:not(.mobile) &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+            background-color: @dark-hover;
+        }
 
-   }
+    }
+    .theme-@{name}.ui-x-dark,.theme-@{name} .ui-x-dark:not([class*="theme-"]) {
+        background-color: @x-dark;
+
+        html:not(.mobile) &.hover:hover,
+        html:not(.mobile) &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+            background-color: @x-dark-hover;
+        }
+
+    }
 
     .theme-@{name}.ui-text,.theme-@{name} .ui-text:not([class*="theme-"]) { color: @color; }
     .theme-@{name}.ui-border,.theme-@{name} .ui-border:not([class*="theme-"]) { border-color: @color; }
-
-}
-
-._theme-dark (@name, @color) { // dark mode themes
-
-   .theme-@{name}.ui-x-light,.theme-@{name} .ui-x-light:not([class*="theme-"]) {
-      background-color: fade(@color, 15%);
-
-      html:not(.mobile) &.hover:hover,
-      html:not(.mobile) &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-         background-color: fade(@color, 50%);
-      }
-
-   }
-   .theme-@{name}.ui-light,.theme-@{name} .ui-light:not([class*="theme-"]) {
-      background-color: fade(@color, 15%);
-
-      html:not(.mobile) &.hover:hover,
-      html:not(.mobile) &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-         background-color: fade(@color, 50%);
-      }
-
-   }
 
 }
 

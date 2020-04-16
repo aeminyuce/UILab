@@ -391,14 +391,9 @@ html:not(.mobile) {
     }
 }
 
-[data-theme="light"] {
+[data-theme="light"] when (@dark-mode = true) {
     .hidden-light,.visible-dark { .hidden(); }
 }
-
-._darkmode-helpers (@dark-mode) when (@dark-mode = true) {
-    [data-theme="dark"] {
-        .visible-light,.hidden-dark { .hidden(); }
-    }
+[data-theme="dark"] when (@dark-mode = true) {
+    .visible-light,.hidden-dark { .hidden(); }
 }
-
-._darkmode-helpers(@dark-mode);
