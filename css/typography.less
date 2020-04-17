@@ -1,13 +1,10 @@
 // out: false
 /* typography */ @import '_settings.less';
 
-@x-light:                               fade(@white, 70%);
-@light:                                 fade(@white, 50%);
-@dark:                                  fade(@black, 45%);
-@x-dark:                                fade(@black, 70%);
-
-@dark-dark:                             fade(@white, 45%);
-@x-dark-dark:                           fade(@white, 70%);
+@x-light:                               #f6f6f6;
+@light:                                 #c5c5c5;
+@dark:                                  #999;
+@x-dark:                                #777;
 
 @code-font-family:                      Menlo, Monaco, Consolas, "Courier New", monospace;
 
@@ -34,8 +31,8 @@
     --pre-bg: @pre-bg;
 }
 ._global-vars-dark () {
-    --dark: @dark-dark;
-    --x-dark: @x-dark-dark;
+    --dark: @light;
+    --x-dark: @x-light;
 
     --code-color: @white;
     --code-bg: @code-color;
@@ -84,7 +81,6 @@ body,a { ._color-var(black); }
 .xx-light,.xx-light .icon:not([class*="ui-"]),.xx-light a:not([class*="ui-"]),.xx-light button:not([class*="ui-"]) { color: @white !important; }
 .x-light,.x-light .icon:not([class*="ui-"]),.x-light a:not([class*="ui-"]),.x-light button:not([class*="ui-"]) { color: @x-light !important; }
 .light,.light .icon:not([class*="ui-"]),.light a:not([class*="ui-"]),.light button:not([class*="ui-"]) { color: @light !important; }
-
 .dark,.dark .icon:not([class*="ui-"]),.dark a:not([class*="ui-"]),.dark button:not([class*="ui-"]) { ._color-var(dark); }
 .x-dark,.x-dark .icon:not([class*="ui-"]),.x-dark a:not([class*="ui-"]),.x-dark button:not([class*="ui-"]) { ._color-var(x-dark); }
 .xx-dark,.xx-dark .icon:not([class*="ui-"]),.xx-dark a:not([class*="ui-"]),.xx-dark button:not([class*="ui-"]) { ._color-var(black); }

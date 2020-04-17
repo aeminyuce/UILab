@@ -3,33 +3,6 @@
 
 ._darkmode-global (@dark-mode) when (@dark-mode = true) {
     @media (prefers-color-scheme: dark) {
-        .photos-holder [class*="img-photo"] { border-color: #15181d; }
-        .dropdown .photos-holder [class*="img-photo"] { border-color: #41454d; }
-        .card .photos-holder [class*="img-photo"] { border-color: #2f343e; }
-        [class*="img-photo"]:not(img) { background-color: rgba(255,255,255,.08); }
-
-        .timeline:not(.hide-lines):after { background-color: rgba(255,255,255,.175); }
-        .timeline:not(.hide-lines) > li:before { background-color: rgba(255,255,255,.175); }
-        .timeline > li:after { border-color: rgba(255,255,255,.175); }
-        .timeline:not(.hide-lines) > li:after { background-color: #15181d; }
-        .dropdown .timeline > li:after { background-color: #41454d; }
-        .card .timeline > li:after { background-color: @card-bg-dark; } /* card must be latest */
-        .timeline > li > .card:not([class*="ui-"]),.timeline > li > .card a,.timeline > li > .card button { color: #fff !important; }
-        .timeline > li > .card { background-color: #15181d; }
-        .card .timeline > li > .card { background-color: @card-bg-dark; }
-
-        .steps-bar li:before { background-color: #15181d; }
-        .card .steps-bar li:before { background-color: @card-bg-dark; }
-        .steps-bar li.active:before { box-shadow: 0 0 0 6px rgba(255,255,255,.065); }
-        .steps-bar:not(.steps-icon) li.active:before { background-color: #15181d !important; }
-        .card .steps-bar li.active:before { background-color: @card-bg-dark !important; }
-        .steps-bar.steps-icon li:before { background-color: #15181d; border-color: #15181d; }
-        .card .steps-bar.steps-icon li:before { background-color: @card-bg-dark; border-color: #2f343e; }
-        .steps-bar li.active ~ li { color: rgba(255,255,255,.32); }
-        .steps-bar li.active ~ li:before { background-color: #15181d; border-color: rgba(255,255,255,.12) !important; }
-        .card .steps-bar li.active ~ li:before { background-color: @card-bg-dark; border-color: #2f343e; }
-        .steps-bar li.active ~ li:after { background-color: rgba(255,255,255,.12); }
-
         .table { background-color: @card-bg-dark; }
         .table:not(.no-separated) th,.table:not(.no-separated) td { border-color: #41454d; }
         .table caption { background-color: rgba(255,255,255,.025); }
@@ -85,7 +58,6 @@
         html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) caption button:hover { background-color: rgba(255,255,255,.08); }
         html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) caption:hover .calendar-title button { background-color: rgba(255,255,255,.035); }
         html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) caption .calendar-title button:hover { background-color: rgba(255,255,255,.08); }
-
         .calendar table.fill-weekends th:nth-child(n+6),.calendar table.fill-weekends td:nth-child(n+6) { background-color: rgba(255,255,255,.085); }
         .calendar:not(.ui-dark):not(.ui-x-dark) table.fill-weekends th:nth-child(n+6),.calendar:not(.ui-dark):not(.ui-x-dark) table.fill-weekends td:nth-child(n+6) { background-color: rgba(255,255,255,.045); }
         html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) td:not(.today):not(.pickerday) button:hover { background-color: rgba(255,255,255,.075); }
@@ -98,12 +70,10 @@
         html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) .panel .call:hover { background-color: rgba(255,255,255,.075); }
         .calendar:not(.ui-dark):not(.ui-x-dark) .panel .call.selected { background-color: rgba(255,255,255,.125); }
         html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) .panel .call.selected:hover { background-color: rgba(255,255,255,.2); }
-
         .calendar .details > button { background-color: rgba(255,255,255,.125); }
         .calendar:not(.ui-dark):not(.ui-x-dark) .details > button { background-color: rgba(255,255,255,.065); }
         html:not(.mobile) .calendar .details > button:hover { background-color: rgba(255,255,255,.2); }
         html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) .details > button:hover { background-color: rgba(255,255,255,.12); }
-
         .text.calendar-picker { color: #fff; }
         .text.calendar-picker button:not([class*="ui-"]),.text.calendar-picker button:not([class*="ui-"]) .icon { color: #fff; }
 
