@@ -162,6 +162,7 @@
                         <li><a class="btn btn-ghost" href="?p=svg-map">SVG Map</a></li>
                         <li><a class="btn btn-ghost" href="?p=tables">Tables</a></li>
                         <li><a class="btn btn-ghost" href="?p=tabs">Tabs</a></li>
+                        <li><a class="btn btn-ghost" href="?p=themes">Themes</a></li>
                         <li><a class="btn btn-ghost" href="?p=timeline">Timeline</a></li>
                         <li><a class="btn btn-ghost" href="?p=tooltip">Tooltip</a></li>
                         <li><a class="btn btn-ghost" href="?p=typography">Typography</a></li>
