@@ -1,9 +1,5 @@
 <!-- custom CSS -->
-<style>
-    .weather.round .graphs { border-radius: 36px; }
-    .round.card { border-radius: 32px; }
-    .all-day { background-image: linear-gradient(135deg, #97aaee, #ac89ec); }
-</style>
+<link rel="stylesheet" href="../css/custom/weather-app.css"/>
 
 <main class="container no-gutter">
     <div class="fixed padding-30-v">

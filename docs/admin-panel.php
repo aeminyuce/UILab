@@ -1,17 +1,5 @@
-<!-- custom CSS -->
-<style>
-    body { background: #fbfbfb; }
-</style>
-
-<!-- custom js -->
-<script>
-
-    lineCharts.showBgGrid = false; // set showing bg grid
-    lineCharts.gridStroke = 0; // set grid stroke width
-
-    calendar.todayTheme = 'theme-default2 ui-dark' // use themes
-
-</script>
+<!-- custom JS -->
+<script src="../js/custom/admin-panel.js"></script>
 
 <main class="container no-gutter">
     <div class="col-static">

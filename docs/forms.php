@@ -1,7 +1,5 @@
 <!-- custom CSS -->
-<style>
-    .col-75 { width: 75px; }
-</style>
+<link rel="stylesheet" href="../css/custom/forms.css"/>
 
 <main class="container no-gutter">
     <div class="fixed">
@@ -243,6 +241,15 @@
                     <div class="select-multi margin-10-b round border-dual ease-form">
                         <select multiple size="6">
                             <option value="">Value 1</option>
+                            <option>Value 2</option>
+                            <option>Value 3</option>
+                            <option>Value 4</option>
+                            <option>Value 5</option>
+                            <option>Value 6</option>
+                            <option>Value 7</option>
+                            <option>Value 8</option>
+                            <option>Value 9</option>
+                            <option>Value 10</option>
                             <option>Value 2</option>
                             <option>Value 3</option>
                             <option>Value 4</option>

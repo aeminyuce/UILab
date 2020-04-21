@@ -1,9 +1,5 @@
 <!-- custom CSS -->
-<style>
-    body { background-color: #eceef5; }
-    .icon-72 { width: 72px; height: 72px; }
-    .card.round { border-radius: 16px; }
-</style>
+<link rel="stylesheet" href="../css/custom/pricing-tables.css"/>
 
 <main class="container no-gutter">
     <div class="fixed">

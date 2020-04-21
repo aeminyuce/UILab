@@ -1,9 +1,5 @@
 <!-- custom CSS -->
-<style>
-    .error-size { font-size: 20vw; line-height: 20vw; margin: -2.35vh 0; position: relative; }
-    .error-size:after { content: ""; width: 32vh; height: 32vh; display: block; background-color: currentColor; border-radius: 50%; position: absolute; top: 44%; left: 44%; transform: translate(-50%, -50%); z-index: 0; opacity: .1; }
-    .error-size .icon { width: 16vw; height: 16vw; margin: 0 -4.65vw; }
-</style>
+<link rel="stylesheet" href="../css/custom/error-pages.css"/>
 
 <main class="container no-gutter">
     <div class="fixed">

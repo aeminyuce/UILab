@@ -1,25 +1,5 @@
 <!-- custom CSS -->
-<style>
-    .signup-container { margin-top: -50px; }
-    .signup-holder { background-image: linear-gradient(110deg, #624494, #080550, #6f113e); }
-
-    .signup-icons .icon { position: absolute; }
-    .signup-icons .icon:nth-child(1) { width: 52px; height: 52px; bottom: 70px; left: 202px; opacity: .15; transform: rotate(12deg); }
-    .signup-icons .icon:nth-child(2) { width: 28px; height: 28px; bottom: 2px; left: 4px; opacity: .1; transform: rotate(-12deg); }
-    .signup-icons .icon:nth-child(3) { width: 64px; height: 64px; top: 22px; left: 22px; opacity: .5; transform: rotate(-12deg); }
-    .signup-icons .icon:nth-child(4) { width: 64px; height: 64px; bottom: 42px; right: -8px; opacity: .3; transform: rotate(-12deg); }
-    .signup-icons .icon:nth-child(5) { width: 206px; height: 206px; top: -42px; right: 29%; opacity: .15; transform: rotate(12deg); }
-
-    .signup-btn { min-width: 42%; background-image: linear-gradient(130deg, #4ee273,#2dbd51); }
-    .why-join { background-image: linear-gradient(130deg, #fff, #e8e0ff, #fff); }
-
-    @media (prefers-color-scheme: dark) {
-        .signup-holder { background-image: linear-gradient(110deg, #a671ff, #2d2a73, #9e2861); }
-
-        .signup-btn { background-image: linear-gradient(130deg, #2dbd51,#128a30); }
-        .why-join { background-image: linear-gradient(130deg, #2f343e, #2e293c, #2f343e); }
-    }
-</style>
+<link rel="stylesheet" href="../css/custom/sign-up-page.css"/>
 
 <main class="container no-gutter">
 

@@ -103,7 +103,7 @@
                 <h4>Border Table</h4>
                 <div class="row padding-30-b">
                     <div class="col-6">
-                        <table class="table padding-30-b table-border">
+                        <table class="table padding-30-b border border-lg">
                             <thead>
                                 <tr>
                                     <th>#</th>
@@ -123,7 +123,7 @@
                         </table>
                     </div>
                     <div class="col-6">
-                        <table class="table padding-30-b table-border border">
+                        <table class="table padding-30-b table-border">
                             <thead>
                                 <tr>
                                     <th>#</th>

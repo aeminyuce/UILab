@@ -1,55 +1,5 @@
 <!-- custom CSS -->
-<style>
-    html,.login-page { height: 100%; }
-
-    .login-holder { background-image: linear-gradient(110deg, #624494, #080550, #6f113e); }
-    .login-holder > .set-absolute { z-index: 1; }
-    .login-holder .highlight-icon { width: 96px; height: 96px; }
-
-    .go-signup-btn { background-image: linear-gradient(130deg, #8366b9,#6f113e); }
-    .login-btn { min-width: 26%; background-image: linear-gradient(130deg, #4ee273,#2dbd51); z-index: 1; }
-
-    .login-forms-container { background-color: #f6f4fc; }
-    .login-container { background-color: #e2d2ff; }
-    .login-container > .icon { width: 160px; height: 160px; position: absolute; top: 14%; right: 22%; transform: rotate(-12deg); }
-
-    .login-icons .icon { position: absolute; }
-    .login-icons .icon:nth-child(1) { width: 52px; height: 52px; bottom: 112px; left: 82px; opacity: .65; transform: rotate(12deg); }
-    .login-icons .icon:nth-child(2) { width: 28px; height: 28px; bottom: 32px; left: 24px; opacity: .15; transform: rotate(-12deg); }
-    .login-icons .icon:nth-child(3) { width: 84px; height: 84px; top: 20%; left: 10%; opacity: .15; transform: rotate(-12deg); }
-    .login-icons .icon:nth-child(4) { width: 106px; height: 106px; bottom: 18px; right: 92px; opacity: .3; transform: rotate(-12deg); }
-    .login-icons .icon:nth-child(5) { width: 38px; height: 38px; top: 72px; right: 20%; opacity: .15; transform: rotate(12deg); }
-
-    @media (min-width: 1200px) {
-        .login-forms-container { padding: 8% 0 8% 14% !important; }
-        .login-container { padding: 8% 14% 8% 0 !important; }
-    }
-    @media (max-width: 1199px) and (min-width: 768px) {
-        .login-forms-container { padding: 50px 0 10px 10px !important; }
-        .login-container { padding: 50px 10px 10px 0 !important; }
-    }
-    @media (min-width: 768px) {
-        .forms-holder,.login-holder { min-height: 560px; height: 100%; }
-        .forms-holder,.login-holder > .set-absolute { padding: 10%; }
-    }
-    @media (max-width: 767px) {
-        .login-holder { min-height: 320px; }
-        .forms-holder,.login-holder > .set-absolute { padding: 30px; }
-
-        .login-forms-container { padding: 10px 10px 0 10px !important; }
-        .login-container { padding: 0 10px 10px 10px !important; }
-    }
-
-    @media (prefers-color-scheme: dark) {
-        .login-holder { background-image: linear-gradient(110deg, #a671ff, #2d2a73, #9e2861); }
-        .login-btn { background-image: linear-gradient(130deg, #2dbd51,#128a30); }
-
-        .login-forms-container { background-color: transparent; }
-        .login-container { background-color: #2d1f46; }
-
-        .go-signup-btn { background-image: linear-gradient(130deg, #a671ff,#9e2861); }
-    }
-</style>
+<link rel="stylesheet" href="../css/custom/login-page.css"/>
 
 <main class="login-page container full-h no-gutter">
 

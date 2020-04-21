@@ -1,52 +1,8 @@
 <!-- custom CSS -->
-<style>
-    body { background-color: #fffefb; }
+<link rel="stylesheet" href="../css/custom/landing-page.css"/>
 
-    .theme-farmer.ui-x-light,.theme-farmer .ui-x-light:not([class*="theme-"]) { background-color: #fcf6e6; }
-    .theme-farmer.ui-light,.theme-farmer .ui-light:not([class*="theme-"]) { background-color: #f3deaa; }
-    .theme-farmer.ui-dark,.theme-farmer .ui-dark:not([class*="theme-"]) { background-color: #ffba0c; }
-    .theme-farmer.ui-text,.theme-farmer .ui-text:not([class*="theme-"]) { color: #ffba0c; }
-    .theme-farmer.ui-border,.theme-farmer .ui-border:not([class*="theme-"]) { border-color: #ffba0c; }
-    .theme-farmer.ui-x-dark,.theme-farmer .ui-x-dark:not([class*="theme-"]) { background-color: #d19600; }
-
-    .theme-farmer2.ui-x-light,.theme-farmer2 .ui-x-light:not([class*="theme-"]) { background-color: #ebfff2; }
-    .theme-farmer2.ui-light,.theme-farmer2 .ui-light:not([class*="theme-"]) { background-color: #befcd3; }
-    .theme-farmer2.ui-dark,.theme-farmer2 .ui-dark:not([class*="theme-"]) { background-color: #11da54; }
-    .theme-farmer2.ui-text,.theme-farmer2 .ui-text:not([class*="theme-"]) { color: #11da54; }
-    .theme-farmer2.ui-border,.theme-farmer2 .ui-border:not([class*="theme-"]) { border-color: #11da54; }
-    .theme-farmer2.ui-x-dark,.theme-farmer2 .ui-x-dark:not([class*="theme-"]) { background-color: #00a838; }
-
-    .col-220 { width: 220px; }
-
-    .banner-content { background: no-repeat center center; background-size: cover; }
-    .banner-content:after { content: ""; background-color: rgba(17,218,84,.4); position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
-    .banner-content > .fixed { z-index: 1; }
-
-    .banner-tab01 { background-image: url(img/agriculture/lg01.jpg); }
-    .banner-tab02 { background-image: url(img/agriculture/lg02.jpg); }
-    .banner-tab03 { background-image: url(img/agriculture/lg03.jpg); }
-
-    .banner-slogan,.footer-social { background-color: rgba(255,255,255,.45); }
-    .banner-slogan > div { background-color: rgba(255,186,12,.8); }
-
-    .highlight-links { margin-top: -80px; z-index: 1; }
-    .highlight-links .carousel { margin: 0 -15px; }
-
-    @media (max-width: 959px) {
-        .highlight-links { padding: 0 15px; }
-    }
-    @media (max-width: 620px) {
-        .photo-gallery > li .img { height: 150px; }
-    }
-    @media (prefers-color-scheme: dark) {
-        .banner-content:after { background-color: rgba(4, 45, 18, 0.8); }
-    }
-</style>
-
-<!-- custom js -->
-<script>
-    lineCharts.colors = ['#ffba0c', '#11da54', '#ff6384', '#9966ff', '#4bc0c0', '#ffcd56', '#84594d', '#bbc451', '#6a6a6a', '#647bc1'];
-</script>
+<!-- custom JS -->
+<script src="../js/custom/landing-page.js"></script>
 
 <!-- header: start -->
 <header class="container no-gutter bg-white" data-classes="shadow-lg">
@@ -146,7 +102,7 @@
             <span class="sp-10 visible-sm"></span>
         </div>
 
-        <div class="banner-content banner-tab01 tab-content padding-30-v set-relative theme-farmer ui-dark open open-ease">
+        <div class="banner-content banner-tab01 tab-content padding-30-v set-relative theme-farmer ui-dark open open-ease" style="background-image: url(img/agriculture/lg01.jpg)">
             <div class="fixed padding-30-v set-relative">
                 <div class="row">
                     <div class="col-static">
@@ -154,7 +110,7 @@
                             <div class="col-12 md-align-c">
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
-                                <p class="xx-large light">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
+                                <p class="xx-large x-light">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
                                 <a href="#" class="btn btn-xs-fluid padding-30-h ui-dark ease-btn">
                                     <svg class="icon margin-5-r"><use href="#moneys"></use></svg>
                                     <b>Invest Now</b>
@@ -184,7 +140,7 @@
             </div>
             <span class="sp-30 margin-10-v"></span>
         </div>
-        <div class="banner-content banner-tab02 tab-content padding-30-v set-relative theme-farmer ui-dark">
+        <div class="banner-content banner-tab02 tab-content padding-30-v set-relative theme-farmer ui-dark" style="background-image: url(img/agriculture/lg02.jpg)">
             <div class="fixed padding-30-v set-relative">
                 <div class="row">
                     <div class="col-static">
@@ -192,7 +148,7 @@
                             <div class="col-12 md-align-c">
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
-                                <p class="xx-large light">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
+                                <p class="xx-large x-light">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
                                 <a href="#" class="btn btn-xs-fluid padding-30-h ui-dark ease-btn">
                                     <svg class="icon margin-5-r"><use href="#moneys"></use></svg>
                                     <b>Invest Now</b>
@@ -222,7 +178,7 @@
             </div>
             <span class="sp-30 margin-10-v"></span>
         </div>
-        <div class="banner-content banner-tab03 tab-content padding-30-v set-relative theme-farmer ui-dark">
+        <div class="banner-content banner-tab03 tab-content padding-30-v set-relative theme-farmer ui-dark" style="background-image: url(img/agriculture/lg03.jpg)">
             <div class="fixed padding-30-v set-relative">
                 <div class="row">
                     <div class="col-static">
@@ -230,7 +186,7 @@
                             <div class="col-12 md-align-c">
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
-                                <p class="xx-large light">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
+                                <p class="xx-large x-light">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
                                 <a href="#" class="btn btn-xs-fluid padding-30-h ui-dark ease-btn">
                                     <svg class="icon margin-5-r"><use href="#moneys"></use></svg>
                                     <b>Invest Now</b>

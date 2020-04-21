@@ -1,25 +1,5 @@
 <!-- custom CSS -->
-<style>
-
-    .round:not(.btn) { border-radius: 12px; }
-    .sidebar,.mobile-menu { background-image: linear-gradient(135deg, #97aaee, #ac89ec); }
-    .sidebar .selected,.mobile-menu .selected { background-image: linear-gradient(135deg, #ff6f70, #db66e4); }
-
-    @media (max-width: 959px) {
-        header.sticky { background-color: #fefefe; }
-    }
-
-    @media (prefers-color-scheme: dark) {
-        .sidebar,.mobile-menu { background-image: linear-gradient(135deg, #4e5e98, #20113c); }
-    }
-
-    @media (prefers-color-scheme: dark) {
-        @media (max-width: 959px) {
-            header.sticky { background-color: #15181d; }
-        }
-    }
-
-</style>
+<link rel="stylesheet" href="../css/custom/movie-app.css"/>
 
 <main class="container no-gutter">
     <div class="col-static no-fluid">
