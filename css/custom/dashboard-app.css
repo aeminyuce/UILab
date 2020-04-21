@@ -34,7 +34,7 @@ html:not(.mobile) .theme-app.ui-dark.hover:hover,
 html:not(.mobile) .theme-app .ui-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-app.ui-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-app .ui-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #338dff;
+  background-color: #66a9ff;
 }
 .theme-app.ui-x-dark,
 .theme-app .ui-x-dark:not([class*="theme-"]) {
@@ -44,7 +44,7 @@ html:not(.mobile) .theme-app.ui-x-dark.hover:hover,
 html:not(.mobile) .theme-app .ui-x-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-app.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-app .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #0070ff;
+  background-color: #004eb3;
 }
 .theme-app.ui-text,
 .theme-app .ui-text:not([class*="theme-"]) {
@@ -82,7 +82,7 @@ html:not(.mobile) .theme-app2.ui-dark.hover:hover,
 html:not(.mobile) .theme-app2 .ui-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-app2.ui-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-app2 .ui-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #ff4365;
+  background-color: #ff768f;
 }
 .theme-app2.ui-x-dark,
 .theme-app2 .ui-x-dark:not([class*="theme-"]) {
@@ -92,7 +92,7 @@ html:not(.mobile) .theme-app2.ui-x-dark.hover:hover,
 html:not(.mobile) .theme-app2 .ui-x-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-app2.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-app2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #ff103b;
+  background-color: #c30023;
 }
 .theme-app2.ui-text,
 .theme-app2 .ui-text:not([class*="theme-"]) {

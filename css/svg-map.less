@@ -1,10 +1,27 @@
 // out: false
 /* svg map */ @import '_settings.less';
 
+@svg-map-path-fill:                     fade(@black, 8%);
+@svg-map-path-fill-hover:               fade(@black, 15%);
+
+@svg-map-path-fill-dark:                fade(@white, 8%);
+@svg-map-path-fill-hover-dark:          fade(@white, 15%);
+
+._global-vars () {
+    --svg-map-path-fill: @svg-map-path-fill;
+    --svg-map-path-fill-hover: @svg-map-path-fill-hover;
+}
+._global-vars-dark () {
+    --svg-map-path-fill: @svg-map-path-fill-dark;
+    --svg-map-path-fill-hover: @svg-map-path-fill-hover-dark;
+}
+
 .svg-map { position: relative; }
 
 .svg-map svg { width: 100%; height: 360px; margin-right: auto; margin-left: auto; display: block; }
-.svg-map svg g path { fill: #eee; stroke: #fff; stroke-width: 1.5; cursor: pointer; }
-.svg-map svg g path:hover { fill: #ddd; }
+.svg-map svg g path { ._fill-var(svg-map-path-fill); ._stroke-var(body-bg); stroke-width: 1.5; cursor: pointer; }
+.card .svg-map svg g path { ._stroke-var(card-bg); }
+.svg-map svg g path:hover { ._fill-var(svg-map-path-fill-hover); }
+
 .svg-map svg g.active path { fill: currentColor; }
 .svg-map svg g.active path:hover { opacity: 1 !important; }

@@ -33,7 +33,7 @@ html:not(.mobile) .theme-farmer.ui-dark.hover:hover,
 html:not(.mobile) .theme-farmer .ui-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-farmer.ui-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-farmer .ui-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #ffc83f;
+  background-color: #ffd772;
 }
 .theme-farmer.ui-x-dark,
 .theme-farmer .ui-x-dark:not([class*="theme-"]) {
@@ -43,7 +43,7 @@ html:not(.mobile) .theme-farmer.ui-x-dark.hover:hover,
 html:not(.mobile) .theme-farmer .ui-x-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-farmer.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-farmer .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #ffba0c;
+  background-color: #bf8800;
 }
 .theme-farmer.ui-text,
 .theme-farmer .ui-text:not([class*="theme-"]) {
@@ -81,7 +81,7 @@ html:not(.mobile) .theme-farmer2.ui-dark.hover:hover,
 html:not(.mobile) .theme-farmer2 .ui-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-farmer2.ui-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-farmer2 .ui-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #2fef6f;
+  background-color: #5ff290;
 }
 .theme-farmer2.ui-x-dark,
 .theme-farmer2 .ui-x-dark:not([class*="theme-"]) {
@@ -91,7 +91,7 @@ html:not(.mobile) .theme-farmer2.ui-x-dark.hover:hover,
 html:not(.mobile) .theme-farmer2 .ui-x-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-farmer2.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-farmer2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #11da54;
+  background-color: #0b9339;
 }
 .theme-farmer2.ui-text,
 .theme-farmer2 .ui-text:not([class*="theme-"]) {

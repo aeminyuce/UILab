@@ -3,14 +3,6 @@
 
 ._darkmode-global (@dark-mode) when (@dark-mode = true) {
     @media (prefers-color-scheme: dark) {
-        .list-group li:nth-child(odd):not([class*="ui-"]) { background-color: rgba(255,255,255,.025); }
-        .list-group li:not([class*="ui-"]):hover { background-color: rgba(255,255,255,.06); }
-
-        .modal-content,.mobile-menu { background-color: #15181d; }
-
-        .tooltip:not([class*="ui-"]) { background-color: #000; }
-        .tooltip:not([class*="ui-"]) > span i { background: #000; }
-
         .photo-slider:not(.loader-pause) { background-color: #15181d; }
         .card .photo-slider:not(.loader-pause) { background-color: @card-bg-dark; }
         .photo-slider button { color: #fff; }
@@ -23,11 +15,6 @@
         html:not(.mobile) .data-hover .data-content:not([class*="ui-"]):hover { background-color: rgba(255,255,255,.06); }
         html:not(.mobile) .data-hover .data-content:not([class*="ui-"]):nth-child(odd):hover { background-color: rgba(255,255,255,.06); }
         .data-hover .data-content.even:not([class*="ui-"]) { background-color: rgba(255,255,255,.025); }
-
-        .svg-map svg g path { fill: #222933; }
-        .svg-map svg g path { stroke: #15181d; }
-        .card .svg-map svg g path { stroke: #2f343e; }
-        .svg-map svg g path:hover { fill: #39485d; }
 
         .image-uploader { background-color: @card-bg-dark; }
         .image-uploader.drop-highlight { background-color: #21242b; }
@@ -60,12 +47,6 @@
         html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) .details > button:hover { background-color: rgba(255,255,255,.12); }
         .text.calendar-picker { color: #fff; }
         .text.calendar-picker button:not([class*="ui-"]),.text.calendar-picker button:not([class*="ui-"]) .icon { color: #fff; }
-
-        .alerts-dialog { background-color: @card-bg-dark; }
-        button.dialog-custom { color: #fff; background-color: rgba(255,255,255,.08); }
-        button.dialog-custom:focus { box-shadow: 0 0 0 2px rgba(255,255,255,.35); }
-        html:not(.mobile) button.dialog-custom:hover { background-color: rgba(255,255,255,.15); }
-        .alerts-msg:not([class*="ui-"]) { background-color: @card-bg-dark; }
     }
 }
 

@@ -33,7 +33,7 @@ html:not(.mobile) .theme-panel.ui-dark.hover:hover,
 html:not(.mobile) .theme-panel .ui-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-panel.ui-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-panel .ui-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #5365ce;
+  background-color: #7b88d9;
 }
 .theme-panel.ui-x-dark,
 .theme-panel .ui-x-dark:not([class*="theme-"]) {
@@ -43,7 +43,7 @@ html:not(.mobile) .theme-panel.ui-x-dark.hover:hover,
 html:not(.mobile) .theme-panel .ui-x-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-panel.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-panel .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #3548b9;
+  background-color: #24317e;
 }
 .theme-panel.ui-text,
 .theme-panel .ui-text:not([class*="theme-"]) {
@@ -81,7 +81,7 @@ html:not(.mobile) .theme-panel2.ui-dark.hover:hover,
 html:not(.mobile) .theme-panel2 .ui-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-panel2.ui-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-panel2 .ui-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #06d4f9;
+  background-color: #38ddfa;
 }
 .theme-panel2.ui-x-dark,
 .theme-panel2 .ui-x-dark:not([class*="theme-"]) {
@@ -91,7 +91,7 @@ html:not(.mobile) .theme-panel2.ui-x-dark.hover:hover,
 html:not(.mobile) .theme-panel2 .ui-x-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-panel2.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-panel2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #05aac7;
+  background-color: #036a7c;
 }
 .theme-panel2.ui-text,
 .theme-panel2 .ui-text:not([class*="theme-"]) {

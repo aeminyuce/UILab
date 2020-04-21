@@ -145,6 +145,30 @@
     @{dir}: @style @width ~'var(--@{var})';
 }
 
+._shadow-var (@h: 0; @v: 0; @blur: 0; @spread: 0; @var: border-color) when (@dark-mode = false) {
+    box-shadow: @h @v @blur @spread @@var;
+}
+._shadow-var (@h: 0; @v: 0; @blur: 0; @spread: 0; @var: border-color) when (@dark-mode = true) {
+    box-shadow: @h @v @blur @spread @@var;
+    box-shadow: @h @v @blur @spread ~'var(--@{var})';
+}
+
+._fill-var (@var) when (@dark-mode = false) {
+    fill: @@var;
+}
+._fill-var (@var) when (@dark-mode = true) {
+    fill: @@var;
+    fill: ~'var(--@{var})';
+}
+
+._stroke-var (@var) when (@dark-mode = false) {
+    stroke: @@var;
+}
+._stroke-var (@var) when (@dark-mode = true) {
+    stroke: @@var;
+    stroke: ~'var(--@{var})';
+}
+
 // theme mixins
 ._theme (@name; @color) {
 
@@ -154,9 +178,9 @@
     @light-hover: fade(@color, 50%);
 
     @dark: @color;
-    @dark-hover: lighten(@color, 10%);
+    @dark-hover: lighten(@color, 20%);
     @x-dark: darken(@color, 10%);
-    @x-dark-hover: @color;
+    @x-dark-hover: darken(@x-dark, 5%);
 
     .theme-@{name}.ui-x-light,.theme-@{name} .ui-x-light:not([class*="theme-"]) {
       background-color: @x-light;

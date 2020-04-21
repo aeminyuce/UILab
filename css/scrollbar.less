@@ -6,8 +6,8 @@
 @scrollbar-thumb-bg:                    fade(@black, 10%);
 @scrollbar-thumb-bg-dark:               fade(@white, 15%);
 
-@scrollbar-thumb-bg-hover:              fade(@black, 15%);
-@scrollbar-thumb-bg-hover-dark:         fade(@white, 20%);
+@scrollbar-thumb-hover-bg:              fade(@black, 15%);
+@scrollbar-thumb-hover-bg-dark:         fade(@white, 20%);
 
 @scrollbar-thumb-bg-active:             fade(@black, 25%);
 @scrollbar-thumb-bg-active-dark:        fade(@white, 25%);
@@ -16,14 +16,14 @@
     --scrollbar-scroll-bg: @scrollbar-scroll-bg;
 
     --scrollbar-thumb-bg: @scrollbar-thumb-bg;
-    --scrollbar-thumb-bg-hover: @scrollbar-thumb-bg-hover;
+    --scrollbar-thumb-hover-bg: @scrollbar-thumb-hover-bg;
     --scrollbar-thumb-bg-active: @scrollbar-thumb-bg-active;
 }
 ._global-vars-dark () {
     --scrollbar-scroll-bg: @scrollbar-scroll-bg-dark;
 
     --scrollbar-thumb-bg: @scrollbar-thumb-bg-dark;
-    --scrollbar-thumb-bg-hover: @scrollbar-thumb-bg-hover-dark;
+    --scrollbar-thumb-hover-bg: @scrollbar-thumb-hover-bg-dark;
     --scrollbar-thumb-bg-active: @scrollbar-thumb-bg-active-dark;
 }
 
@@ -31,7 +31,7 @@ html:not(.mobile) {
     ::-webkit-scrollbar { width: 8px; height: 8px; ._bg-var(scrollbar-scroll-bg); }
     body::-webkit-scrollbar { width: 12px; height: 12px; }
     ::-webkit-scrollbar-thumb { ._bg-var(scrollbar-thumb-bg); }
-    ::-webkit-scrollbar-thumb:hover { ._bg-var(scrollbar-thumb-bg-hover); }
+    ::-webkit-scrollbar-thumb:hover { ._bg-var(scrollbar-thumb-hover-bg); }
     ::-webkit-scrollbar-thumb:active { ._bg-var(scrollbar-thumb-bg-active); }
     ::-webkit-scrollbar-track { background-color: @no-color; }
 
@@ -41,7 +41,7 @@ html:not(.mobile) {
     .ui-x-dark ::-webkit-scrollbar-thumb,.ui-dark ::-webkit-scrollbar-thumb { background-color: @scrollbar-thumb-bg-dark; }
 
     .ui-x-dark::-webkit-scrollbar-thumb:hover,.ui-dark::-webkit-scrollbar-thumb:hover,
-    .ui-x-dark ::-webkit-scrollbar-thumb:hover,.ui-dark ::-webkit-scrollbar-thumb:hover { background-color: @scrollbar-thumb-bg-hover-dark; }
+    .ui-x-dark ::-webkit-scrollbar-thumb:hover,.ui-dark ::-webkit-scrollbar-thumb:hover { background-color: @scrollbar-thumb-hover-bg-dark; }
 
     .ui-x-dark::-webkit-scrollbar-thumb:active,.ui-dark::-webkit-scrollbar-thumb:active,
     .ui-x-dark ::-webkit-scrollbar-thumb:active,.ui-dark ::-webkit-scrollbar-thumb:active { background-color: @scrollbar-thumb-bg-active-dark; }

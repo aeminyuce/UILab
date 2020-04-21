@@ -1,6 +1,21 @@
 // out: false
 /* list group */ @import '_settings.less';
 
+@list-group-stripe-bg:                  fade(@black, 3.5%);
+@list-group-stripe-bg-dark:             fade(@white, 3.5%);
+
+@list-group-hover-bg:                   fade(@black, 6%);
+@list-group-hover-bg-dark:              fade(@white, 6%);
+
+._global-vars () {
+    --list-group-stripe-bg: @list-group-stripe-bg;
+    --list-group-hover-bg: @list-group-hover-bg;
+}
+._global-vars-dark () {
+    --list-group-stripe-bg: @list-group-stripe-bg-dark;
+    --list-group-hover-bg: @list-group-hover-bg-dark;
+}
+
 .ease-list-group li,.ease-list-group li > a { transition-property: background-color; transition-duration: .15s; }
 .ease-list-group .list-icon:not([class*="ease-"]) { transition-property: opacity; transition-duration: .15s; }
 
@@ -53,5 +68,5 @@ html:not(.mobile) .list-group > ul > li > a:hover .list-icon { opacity: .75; }
 .list-group .has-photo-xs li,.list-group .has-photo-xs li > a { min-height: 52px; padding-left: 52px; }
 .list-group .has-photo-xs li > a { margin-left: -52px; }
 
-.list-group li:nth-child(odd):not([class*="ui-"]) { background-color: rgba(0,0,0,.03); }
-.list-group li:not([class*="ui-"]):hover { background-color: rgba(0,0,0,.06); }
+.list-group li:nth-child(odd):not([class*="ui-"]) { ._bg-var(list-group-stripe-bg); }
+.list-group li:not([class*="ui-"]):hover { ._bg-var(list-group-hover-bg); }
