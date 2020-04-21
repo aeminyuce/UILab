@@ -250,15 +250,6 @@
                             <option>Value 8</option>
                             <option>Value 9</option>
                             <option>Value 10</option>
-                            <option>Value 2</option>
-                            <option>Value 3</option>
-                            <option>Value 4</option>
-                            <option>Value 5</option>
-                            <option>Value 6</option>
-                            <option>Value 7</option>
-                            <option>Value 8</option>
-                            <option>Value 9</option>
-                            <option>Value 10</option>
                         </select>
                     </div>
                     <div class="select-multi margin-10-b round border-dual ease-form">
