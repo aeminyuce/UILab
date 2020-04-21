@@ -1,0 +1,34 @@
+/* dashboard */ @import '../_settings.less';
+
+@theme-panel:                           #3548b9;
+@theme-panel2:                          #05aac7;
+
+@header-bg:                             #fbfbfb;
+@header-bg-dark:                        #23272f;
+
+._dashboard-vars () {
+    --header-bg: @header-bg;
+}
+._dashboard-vars-dark () {
+    --header-bg: @header-bg-dark;
+}
+
+[data-theme="light"] when (@dark-mode = true) { ._dashboard-vars(); }
+[data-theme="dark"] when (@dark-mode = true) { ._dashboard-vars-dark(); }
+
+._theme(panel,  @theme-panel);
+._theme(panel2,  @theme-panel2);
+
+body { overflow-x: hidden; }
+
+.sticky-header .sidebar { top: -62px; }
+header { ._bg-var(header-bg); }
+
+.dashboard-carousel { margin-bottom: -5px; }
+
+@media (min-width: 1480px) {
+    .fixed-inner { max-width: 1480px; }
+}
+@media (min-width: 1200px) {
+    header.sticky.sidebar-opened { width: calc(100% - 250px); left: 250px; }
+}

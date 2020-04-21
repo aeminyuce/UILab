@@ -1,0 +1,29 @@
+/* movie app */ @import '../_settings.less';
+
+@movie-app-header-bg:                   #fefefe;
+@movie-app-header-bg-dark:              #15181d;
+
+@movie-app-sidebar-bg:                  linear-gradient(135deg, #97aaee, #ac89ec);
+@movie-app-sidebar-bg-dark:             linear-gradient(135deg, #4e5e98, #20113c);
+
+@movie-app-sidebar-selected-bg:         linear-gradient(135deg, #ff6f70, #db66e4);
+
+._movie-app-vars () {
+    --movie-app-header-bg: @movie-app-header-bg;
+    --movie-app-sidebar-bg: @movie-app-sidebar-bg;
+}
+._movie-app-vars-dark () {
+    --movie-app-header-bg: @movie-app-header-bg-dark;
+    --movie-app-sidebar-bg: @movie-app-sidebar-bg-dark;
+}
+
+[data-theme="light"] when (@dark-mode = true) { ._movie-app-vars(); }
+[data-theme="dark"] when (@dark-mode = true) { ._movie-app-vars-dark(); }
+
+.round:not(.btn) { border-radius: @round * 2; }
+.sidebar,.mobile-menu { ._gradient-var(movie-app-sidebar-bg); }
+.sidebar .selected,.mobile-menu .selected { background-image: @movie-app-sidebar-selected-bg; }
+
+@media (max-width: 959px) {
+    header.sticky { ._bg-var(movie-app-header-bg); }
+}

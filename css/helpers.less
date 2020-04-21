@@ -86,6 +86,8 @@
     border-radius: @round;
     &:extend([class*="round-"]);
 
+    > .round { border-radius: @round - 1; }
+
     &-t { border-radius: @round @round 0 0; }
     &-r { border-radius: 0 @round @round 0; }
     &-b { border-radius: 0 0 @round @round; }

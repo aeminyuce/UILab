@@ -1,0 +1,147 @@
+/* landing page */
+[data-theme="light"] {
+  --landing-page-banner-bg: rgba(17, 218, 84, 0.4);
+}
+[data-theme="dark"] {
+  --landing-page-banner-bg: rgba(4, 45, 18, 0.8);
+}
+.theme-farmer.ui-x-light,
+.theme-farmer .ui-x-light:not([class*="theme-"]) {
+  background-color: rgba(255, 186, 12, 0.15);
+}
+html:not(.mobile) .theme-farmer.ui-x-light.hover:hover,
+html:not(.mobile) .theme-farmer .ui-x-light:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-farmer.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-farmer .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: rgba(255, 186, 12, 0.5);
+}
+.theme-farmer.ui-light,
+.theme-farmer .ui-light:not([class*="theme-"]) {
+  background-color: rgba(255, 186, 12, 0.25);
+}
+html:not(.mobile) .theme-farmer.ui-light.hover:hover,
+html:not(.mobile) .theme-farmer .ui-light:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-farmer.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-farmer .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: rgba(255, 186, 12, 0.5);
+}
+.theme-farmer.ui-dark,
+.theme-farmer .ui-dark:not([class*="theme-"]) {
+  background-color: #ffba0c;
+}
+html:not(.mobile) .theme-farmer.ui-dark.hover:hover,
+html:not(.mobile) .theme-farmer .ui-dark:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-farmer.ui-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-farmer .ui-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: #ffc83f;
+}
+.theme-farmer.ui-x-dark,
+.theme-farmer .ui-x-dark:not([class*="theme-"]) {
+  background-color: #d89b00;
+}
+html:not(.mobile) .theme-farmer.ui-x-dark.hover:hover,
+html:not(.mobile) .theme-farmer .ui-x-dark:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-farmer.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-farmer .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: #ffba0c;
+}
+.theme-farmer.ui-text,
+.theme-farmer .ui-text:not([class*="theme-"]) {
+  color: #ffba0c;
+}
+.theme-farmer.ui-border,
+.theme-farmer .ui-border:not([class*="theme-"]) {
+  border-color: #ffba0c;
+}
+.theme-farmer2.ui-x-light,
+.theme-farmer2 .ui-x-light:not([class*="theme-"]) {
+  background-color: rgba(17, 218, 84, 0.15);
+}
+html:not(.mobile) .theme-farmer2.ui-x-light.hover:hover,
+html:not(.mobile) .theme-farmer2 .ui-x-light:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-farmer2.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-farmer2 .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: rgba(17, 218, 84, 0.5);
+}
+.theme-farmer2.ui-light,
+.theme-farmer2 .ui-light:not([class*="theme-"]) {
+  background-color: rgba(17, 218, 84, 0.25);
+}
+html:not(.mobile) .theme-farmer2.ui-light.hover:hover,
+html:not(.mobile) .theme-farmer2 .ui-light:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-farmer2.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-farmer2 .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: rgba(17, 218, 84, 0.5);
+}
+.theme-farmer2.ui-dark,
+.theme-farmer2 .ui-dark:not([class*="theme-"]) {
+  background-color: #11da54;
+}
+html:not(.mobile) .theme-farmer2.ui-dark.hover:hover,
+html:not(.mobile) .theme-farmer2 .ui-dark:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-farmer2.ui-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-farmer2 .ui-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: #2fef6f;
+}
+.theme-farmer2.ui-x-dark,
+.theme-farmer2 .ui-x-dark:not([class*="theme-"]) {
+  background-color: #0dab42;
+}
+html:not(.mobile) .theme-farmer2.ui-x-dark.hover:hover,
+html:not(.mobile) .theme-farmer2 .ui-x-dark:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-farmer2.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-farmer2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: #11da54;
+}
+.theme-farmer2.ui-text,
+.theme-farmer2 .ui-text:not([class*="theme-"]) {
+  color: #11da54;
+}
+.theme-farmer2.ui-border,
+.theme-farmer2 .ui-border:not([class*="theme-"]) {
+  border-color: #11da54;
+}
+.col-220 {
+  width: 220px;
+}
+.banner-content {
+  background: no-repeat center center;
+  background-size: cover;
+}
+.banner-content:after {
+  content: "";
+  background-color: rgba(17, 218, 84, 0.4);
+  background-color: var(--landing-page-banner-bg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.banner-content > .fixed {
+  z-index: 1;
+}
+.banner-slogan,
+.footer-social {
+  background-color: rgba(255, 255, 255, 0.45);
+}
+.banner-slogan > div {
+  background-color: rgba(255, 186, 12, 0.8);
+}
+.highlight-links {
+  margin-top: -80px;
+  z-index: 1;
+}
+.highlight-links .carousel {
+  margin: 0 -15px;
+}
+@media (max-width: 959px) {
+  .highlight-links {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 620px) {
+  .photo-gallery > li .img {
+    height: 150px;
+  }
+}

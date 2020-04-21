@@ -1,0 +1,27 @@
+/* movie app */
+[data-theme="light"] {
+  --movie-app-header-bg: #fefefe;
+  --movie-app-sidebar-bg: linear-gradient(135deg, #97aaee, #ac89ec);
+}
+[data-theme="dark"] {
+  --movie-app-header-bg: #15181d;
+  --movie-app-sidebar-bg: linear-gradient(135deg, #4e5e98, #20113c);
+}
+.round:not(.btn) {
+  border-radius: 12px;
+}
+.sidebar,
+.mobile-menu {
+  background-image: linear-gradient(135deg, #97aaee, #ac89ec);
+  background-image: var(--movie-app-sidebar-bg);
+}
+.sidebar .selected,
+.mobile-menu .selected {
+  background-image: linear-gradient(135deg, #ff6f70, #db66e4);
+}
+@media (max-width: 959px) {
+  header.sticky {
+    background-color: #fefefe;
+    background-color: var(--movie-app-header-bg);
+  }
+}

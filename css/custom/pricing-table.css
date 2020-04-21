@@ -1,0 +1,11 @@
+/* pricing table */
+body {
+  background-color: #eceef5;
+}
+.icon-72 {
+  width: 72px;
+  height: 72px;
+}
+.card.round {
+  border-radius: 16px;
+}

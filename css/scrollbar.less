@@ -1,21 +1,48 @@
 // out: false
 /* scrollbar */ @import '_settings.less';
+@scrollbar-scroll-bg:                   fade(@black, 4.5%);
+@scrollbar-scroll-bg-dark:              fade(@white, 4.5%);
 
-html:not(.mobile) ::-webkit-scrollbar { width: 8px; height: 8px; background-color: @no-color; }
-html:not(.mobile) body::-webkit-scrollbar { width: 12px; height: 12px; }
-html:not(.mobile) ::-webkit-scrollbar-thumb { background-color: rgba(0,0,0,.1); }
-html:not(.mobile) ::-webkit-scrollbar-thumb:hover { background-color: rgba(0,0,0,.15); }
-html:not(.mobile) ::-webkit-scrollbar-thumb:active { background-color: rgba(0,0,0,.25); }
-html:not(.mobile) ::-webkit-scrollbar-track { background-color: @no-color; }
+@scrollbar-thumb-bg:                    fade(@black, 10%);
+@scrollbar-thumb-bg-dark:               fade(@white, 15%);
 
-html:not(.mobile) .round::-webkit-scrollbar-thumb { border-radius: @round; }
-html:not(.mobile) select[multiple]::-webkit-scrollbar { background-color: rgba(0,0,0,.045); }
+@scrollbar-thumb-bg-hover:              fade(@black, 15%);
+@scrollbar-thumb-bg-hover-dark:         fade(@white, 20%);
 
-html:not(.mobile) .ui-x-dark::-webkit-scrollbar-thumb,html:not(.mobile) .ui-dark::-webkit-scrollbar-thumb,
-html:not(.mobile) .ui-x-dark ::-webkit-scrollbar-thumb,html:not(.mobile) .ui-dark ::-webkit-scrollbar-thumb { background-color: rgba(255,255,255,.15); }
+@scrollbar-thumb-bg-active:             fade(@black, 25%);
+@scrollbar-thumb-bg-active-dark:        fade(@white, 25%);
 
-html:not(.mobile) .ui-x-dark::-webkit-scrollbar-thumb:hover,html:not(.mobile) .ui-dark::-webkit-scrollbar-thumb:hover,
-html:not(.mobile) .ui-x-dark ::-webkit-scrollbar-thumb:hover,html:not(.mobile) .ui-dark ::-webkit-scrollbar-thumb:hover { background-color: rgba(255,255,255,.2); }
+._global-vars () {
+    --scrollbar-scroll-bg: @scrollbar-scroll-bg;
 
-html:not(.mobile) .ui-x-dark::-webkit-scrollbar-thumb:active,html:not(.mobile) .ui-dark::-webkit-scrollbar-thumb:active,
-html:not(.mobile) .ui-x-dark ::-webkit-scrollbar-thumb:active,html:not(.mobile) .ui-dark ::-webkit-scrollbar-thumb:active { background-color: rgba(255,255,255,.25); }
+    --scrollbar-thumb-bg: @scrollbar-thumb-bg;
+    --scrollbar-thumb-bg-hover: @scrollbar-thumb-bg-hover;
+    --scrollbar-thumb-bg-active: @scrollbar-thumb-bg-active;
+}
+._global-vars-dark () {
+    --scrollbar-scroll-bg: @scrollbar-scroll-bg-dark;
+
+    --scrollbar-thumb-bg: @scrollbar-thumb-bg-dark;
+    --scrollbar-thumb-bg-hover: @scrollbar-thumb-bg-hover-dark;
+    --scrollbar-thumb-bg-active: @scrollbar-thumb-bg-active-dark;
+}
+
+html:not(.mobile) {
+    ::-webkit-scrollbar { width: 8px; height: 8px; ._bg-var(scrollbar-scroll-bg); }
+    body::-webkit-scrollbar { width: 12px; height: 12px; }
+    ::-webkit-scrollbar-thumb { ._bg-var(scrollbar-thumb-bg); }
+    ::-webkit-scrollbar-thumb:hover { ._bg-var(scrollbar-thumb-bg-hover); }
+    ::-webkit-scrollbar-thumb:active { ._bg-var(scrollbar-thumb-bg-active); }
+    ::-webkit-scrollbar-track { background-color: @no-color; }
+
+    .round::-webkit-scrollbar-thumb { border-radius: @round; }
+
+    .ui-x-dark::-webkit-scrollbar-thumb,.ui-dark::-webkit-scrollbar-thumb,
+    .ui-x-dark ::-webkit-scrollbar-thumb,.ui-dark ::-webkit-scrollbar-thumb { background-color: @scrollbar-thumb-bg-dark; }
+
+    .ui-x-dark::-webkit-scrollbar-thumb:hover,.ui-dark::-webkit-scrollbar-thumb:hover,
+    .ui-x-dark ::-webkit-scrollbar-thumb:hover,.ui-dark ::-webkit-scrollbar-thumb:hover { background-color: @scrollbar-thumb-bg-hover-dark; }
+
+    .ui-x-dark::-webkit-scrollbar-thumb:active,.ui-dark::-webkit-scrollbar-thumb:active,
+    .ui-x-dark ::-webkit-scrollbar-thumb:active,.ui-dark ::-webkit-scrollbar-thumb:active { background-color: @scrollbar-thumb-bg-active-dark; }
+}

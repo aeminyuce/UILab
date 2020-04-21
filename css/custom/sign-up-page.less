@@ -1,0 +1,38 @@
+/* sign up page */ @import '../_settings.less';
+
+@sign-up-holder-bg:                     linear-gradient(110deg, #624494, #080550, #6f113e);
+@sign-up-holder-bg-dark:                linear-gradient(110deg, #a671ff, #2d2a73, #9e2861);
+
+@sign-up-btn-bg:                        linear-gradient(130deg, #4ee273,#2dbd51);
+@sign-up-btn-bg-dark:                   linear-gradient(130deg, #2dbd51,#128a30);
+
+@sign-up-why-bg:                        linear-gradient(130deg, #fff, #e8e0ff, #fff);
+@sign-up-why-bg-dark:                   linear-gradient(130deg, #2f343e, #2e293c, #2f343e);
+
+
+._sign-up-vars () {
+    --sign-up-holder-bg: @sign-up-holder-bg;
+    --sign-up-btn-bg: @sign-up-btn-bg;
+    --sign-up-why-bg: @sign-up-why-bg;
+}
+._sign-up-vars-dark () {
+    --sign-up-holder-bg: @sign-up-holder-bg-dark;
+    --sign-up-btn-bg: @sign-up-btn-bg-dark;
+    --sign-up-why-bg: @sign-up-why-bg-dark;
+}
+
+[data-theme="light"] when (@dark-mode = true) { ._sign-up-vars(); }
+[data-theme="dark"] when (@dark-mode = true) { ._sign-up-vars-dark(); }
+
+.signup-container { margin-top: -50px; }
+.signup-holder { ._gradient-var(sign-up-holder-bg); }
+
+.signup-icons .icon { position: absolute; }
+.signup-icons .icon:nth-child(1) { width: 52px; height: 52px; bottom: 70px; left: 202px; opacity: .15; transform: rotate(12deg); }
+.signup-icons .icon:nth-child(2) { width: 28px; height: 28px; bottom: 2px; left: 4px; opacity: .1; transform: rotate(-12deg); }
+.signup-icons .icon:nth-child(3) { width: 64px; height: 64px; top: 22px; left: 22px; opacity: .5; transform: rotate(-12deg); }
+.signup-icons .icon:nth-child(4) { width: 64px; height: 64px; bottom: 42px; right: -8px; opacity: .3; transform: rotate(-12deg); }
+.signup-icons .icon:nth-child(5) { width: 206px; height: 206px; top: -42px; right: 29%; opacity: .15; transform: rotate(12deg); }
+
+.signup-btn { min-width: 42%; ._gradient-var(sign-up-btn-bg); }
+.why-join { ._gradient-var(sign-up-why-bg); }

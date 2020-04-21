@@ -4,13 +4,14 @@
   --white: #fff;
   --black: #000;
   --border-color: rgba(0, 0, 0, 0.15);
+  --table-border-color: #ddd;
   --card-bg: #fff;
   --highlighted: #fff;
   --btn-bg: rgba(0, 0, 0, 0.08);
   --btn-hover-bg: rgba(0, 0, 0, 0.15);
   --btn-ghost-hover-bg: rgba(0, 0, 0, 0.075);
-  --dark: #999;
-  --x-dark: #777;
+  --dark: #808080;
+  --x-dark: #666666;
   --code-color: #c7254e;
   --code-bg: #f9f2f4;
   --pre-color: #333;
@@ -33,10 +34,17 @@
   --form-readonly-color: rgba(0, 0, 0, 0.5);
   --textarea-counter-color: rgba(0, 0, 0, 0.45);
   --textarea-counter-bg: rgba(0, 0, 0, 0.035);
+  --table-caption-bg: rgba(0, 0, 0, 0.025);
+  --table-stripe-bg: rgba(0, 0, 0, 0.035);
+  --table-hover-bg: rgba(0, 0, 0, 0.06);
   --breadcrumbs-sep-color: rgba(0, 0, 0, 0.25);
   --img-photo-bg: rgba(0, 0, 0, 0.08);
   --progress-bar-bg: rgba(0, 0, 0, 0.075);
   --progress-bar-inner-bg: rgba(0, 0, 0, 0.15);
+  --scrollbar-scroll-bg: rgba(0, 0, 0, 0.045);
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  --scrollbar-thumb-bg-hover: rgba(0, 0, 0, 0.15);
+  --scrollbar-thumb-bg-active: rgba(0, 0, 0, 0.25);
   --steps-inactive-color: rgba(0, 0, 0, 0.32);
   --steps-border: rgba(0, 0, 0, 0.12);
   --timeline-line-bg: rgba(0, 0, 0, 0.15);
@@ -46,13 +54,14 @@
   --white: #000;
   --black: #fff;
   --border-color: rgba(255, 255, 255, 0.175);
+  --table-border-color: #41454d;
   --card-bg: #2f343e;
   --highlighted: #41454d;
   --btn-bg: rgba(255, 255, 255, 0.08);
   --btn-hover-bg: rgba(255, 255, 255, 0.15);
   --btn-ghost-hover-bg: rgba(255, 255, 255, 0.075);
-  --dark: #c5c5c5;
-  --x-dark: #f6f6f6;
+  --dark: #aaa;
+  --x-dark: #ddd;
   --code-color: #fff;
   --code-bg: #c7254e;
   --pre-color: #fff;
@@ -75,10 +84,17 @@
   --form-readonly-color: rgba(255, 255, 255, 0.65);
   --textarea-counter-color: #fff;
   --textarea-counter-bg: rgba(255, 255, 255, 0.175);
+  --table-caption-bg: rgba(255, 255, 255, 0.025);
+  --table-stripe-bg: rgba(255, 255, 255, 0.035);
+  --table-hover-bg: rgba(255, 255, 255, 0.06);
   --breadcrumbs-sep-color: rgba(255, 255, 255, 0.25);
   --img-photo-bg: rgba(255, 255, 255, 0.08);
   --progress-bar-bg: rgba(0, 0, 0, 0.45);
   --progress-bar-inner-bg: rgba(255, 255, 255, 0.15);
+  --scrollbar-scroll-bg: rgba(255, 255, 255, 0.045);
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.15);
+  --scrollbar-thumb-bg-hover: rgba(255, 255, 255, 0.2);
+  --scrollbar-thumb-bg-active: rgba(255, 255, 255, 0.25);
   --steps-inactive-color: rgba(255, 255, 255, 0.32);
   --steps-border: rgba(255, 255, 255, 0.12);
   --timeline-line-bg: rgba(255, 255, 255, 0.175);
@@ -388,6 +404,9 @@ html:not(.mobile) .hidden-dekstop,
 }
 .round {
   border-radius: 6px;
+}
+.round > .round {
+  border-radius: 5px;
 }
 .round-t {
   border-radius: 6px 6px 0 0;
@@ -3420,26 +3439,26 @@ a {
 .x-light .icon:not([class*="ui-"]),
 .x-light a:not([class*="ui-"]),
 .x-light button:not([class*="ui-"]) {
-  color: #f6f6f6 !important;
+  color: #ddd !important;
 }
 .light,
 .light .icon:not([class*="ui-"]),
 .light a:not([class*="ui-"]),
 .light button:not([class*="ui-"]) {
-  color: #c5c5c5 !important;
+  color: #aaa !important;
 }
 .dark,
 .dark .icon:not([class*="ui-"]),
 .dark a:not([class*="ui-"]),
 .dark button:not([class*="ui-"]) {
-  color: #999;
+  color: #808080;
   color: var(--dark);
 }
 .x-dark,
 .x-dark .icon:not([class*="ui-"]),
 .x-dark a:not([class*="ui-"]),
 .x-dark button:not([class*="ui-"]) {
-  color: #777;
+  color: #666666;
   color: var(--x-dark);
 }
 .xx-dark,
@@ -5976,6 +5995,7 @@ html:not(.mobile) .close-card:hover {
 .table {
   width: 100%;
   background-color: #fff;
+  background-color: var(--card-bg);
 }
 .table:not(:last-child) {
   margin-bottom: 20px;
@@ -5984,6 +6004,7 @@ html:not(.mobile) .close-card:hover {
   font-size: 16px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.025);
+  background-color: var(--table-caption-bg);
   padding: 10px;
 }
 .table:not(.table-ultra-condensed) th,
@@ -5994,6 +6015,7 @@ html:not(.mobile) .close-card:hover {
 .table:not(.no-separated) th,
 .table:not(.no-separated) td {
   border-bottom: solid 1px #ddd;
+  border-bottom: solid 1px var(--table-border-color);
 }
 .table tbody tr:last-child th {
   border-bottom-width: 0;
@@ -6028,31 +6050,28 @@ html:not(.mobile) .close-card:hover {
   font-weight: 700;
   vertical-align: bottom !important;
 }
-.table:not(.table-sidebar).align-c td,
-.table:not(.table-sidebar).align-c th {
-  text-align: center;
-}
-.table.table-sidebar.align-c td:not(:first-child) {
-  text-align: center;
-}
-.table-sidebar td:first-of-type {
-  font-weight: 700;
-  border-right: solid 1px #ddd;
-}
-.table-sidebar-center td:nth-child(2) {
-  font-weight: 700;
-  border-right: solid 1px #ddd;
-  border-left: solid 1px #ddd;
-}
-.table.border,
-.table .border,
-.table[class*="border-"],
-.table [class*="border-"] {
-  border-color: #ddd;
-}
+.table-sidebar td:first-of-type,
 .table-border th:not(:last-child),
 .table-border td:not(:last-child) {
   border-right: solid 1px #ddd;
+  border-right: solid 1px var(--table-border-color);
+}
+.table-sidebar td:first-of-type {
+  font-weight: 700;
+}
+.table:not(.table-sidebar).align-c td,
+.table:not(.table-sidebar).align-c th,
+.table.table-sidebar.align-c td:not(:first-child) {
+  text-align: center;
+}
+.table-border {
+  border: solid 1px #ddd;
+  border: solid 1px var(--table-border-color);
+}
+.table.border,
+.table[class*="border-"] {
+  border-color: #ddd;
+  border-color: var(--table-border-color);
 }
 .table-valign td,
 .table-valign th {
@@ -6078,10 +6097,12 @@ html:not(.mobile) .close-card:hover {
   overflow: hidden;
 }
 .table-striped tr:nth-child(even):not([class*="ui-"]) {
-  background-color: rgba(0, 0, 0, 0.025);
+  background-color: rgba(0, 0, 0, 0.035);
+  background-color: var(--table-stripe-bg);
 }
 html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover {
   background-color: rgba(0, 0, 0, 0.06);
+  background-color: var(--table-hover-bg);
 }
 @media (max-width: 959px) {
   .table-fluid {
@@ -6323,7 +6344,8 @@ html:not(.mobile) .btn-youtube:hover {
 html:not(.mobile) ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.045);
+  background-color: var(--scrollbar-scroll-bg);
 }
 html:not(.mobile) body::-webkit-scrollbar {
   width: 12px;
@@ -6331,21 +6353,21 @@ html:not(.mobile) body::-webkit-scrollbar {
 }
 html:not(.mobile) ::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--scrollbar-thumb-bg);
 }
 html:not(.mobile) ::-webkit-scrollbar-thumb:hover {
   background-color: rgba(0, 0, 0, 0.15);
+  background-color: var(--scrollbar-thumb-bg-hover);
 }
 html:not(.mobile) ::-webkit-scrollbar-thumb:active {
   background-color: rgba(0, 0, 0, 0.25);
+  background-color: var(--scrollbar-thumb-bg-active);
 }
 html:not(.mobile) ::-webkit-scrollbar-track {
   background-color: transparent;
 }
 html:not(.mobile) .round::-webkit-scrollbar-thumb {
   border-radius: 6px;
-}
-html:not(.mobile) select[multiple]::-webkit-scrollbar {
-  background-color: rgba(0, 0, 0, 0.045);
 }
 html:not(.mobile) .ui-x-dark::-webkit-scrollbar-thumb,
 html:not(.mobile) .ui-dark::-webkit-scrollbar-thumb,
@@ -9850,50 +9872,6 @@ html:not(.mobile) .theme-default2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn
 }
 /* darkmode */
 @media (prefers-color-scheme: dark) {
-  .table {
-    background-color: #2f343e;
-  }
-  .table:not(.no-separated) th,
-  .table:not(.no-separated) td {
-    border-color: #41454d;
-  }
-  .table caption {
-    background-color: rgba(255, 255, 255, 0.025);
-  }
-  .table-striped tr:nth-child(even):not([class*="ui-"]) {
-    background-color: rgba(255, 255, 255, 0.025);
-  }
-  html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover {
-    background-color: rgba(255, 255, 255, 0.06);
-  }
-  .table-sidebar td:first-of-type {
-    border-color: #41454d;
-  }
-  .table-sidebar-center td:nth-child(2) {
-    border-color: #41454d;
-  }
-  .table.border,
-  .table .border,
-  .table[class*="border-"],
-  .table [class*="border-"] {
-    border-color: #41454d;
-  }
-  .table-border th:not(:last-child),
-  .table-border td:not(:last-child) {
-    border-color: #41454d;
-  }
-  html:not(.mobile) ::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.15);
-  }
-  html:not(.mobile) ::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  html:not(.mobile) ::-webkit-scrollbar-thumb:active {
-    background-color: rgba(255, 255, 255, 0.25);
-  }
-  html:not(.mobile) select[multiple]::-webkit-scrollbar {
-    background-color: rgba(255, 255, 255, 0.045);
-  }
   .list-group li:nth-child(odd):not([class*="ui-"]) {
     background-color: rgba(255, 255, 255, 0.025);
   }

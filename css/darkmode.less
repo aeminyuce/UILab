@@ -3,22 +3,6 @@
 
 ._darkmode-global (@dark-mode) when (@dark-mode = true) {
     @media (prefers-color-scheme: dark) {
-        .table { background-color: @card-bg-dark; }
-        .table:not(.no-separated) th,.table:not(.no-separated) td { border-color: #41454d; }
-        .table caption { background-color: rgba(255,255,255,.025); }
-        .table-striped tr:nth-child(even):not([class*="ui-"]) { background-color: rgba(255,255,255,.025); }
-        html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover { background-color: rgba(255,255,255,.06); }
-        .table-sidebar td:first-of-type { border-color: #41454d; }
-        .table-sidebar-center td:nth-child(2) { border-color: #41454d; border-color: #41454d; }
-        .table.border,.table .border,.table[class*="border-"],.table [class*="border-"] { border-color: #41454d; }
-        .table-border th:not(:last-child),.table-border td:not(:last-child) { border-color: #41454d; }
-
-        html:not(.mobile) ::-webkit-scrollbar-thumb { background-color: rgba(255,255,255, 0.15); }
-        html:not(.mobile) ::-webkit-scrollbar-thumb:hover { background-color: rgba(255,255,255,.2); }
-        html:not(.mobile) ::-webkit-scrollbar-thumb:active { background-color: rgba(255,255,255,.25); }
-
-        html:not(.mobile) select[multiple]::-webkit-scrollbar { background-color: rgba(255,255,255,.045); }
-
         .list-group li:nth-child(odd):not([class*="ui-"]) { background-color: rgba(255,255,255,.025); }
         .list-group li:not([class*="ui-"]):hover { background-color: rgba(255,255,255,.06); }
 

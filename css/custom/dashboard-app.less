@@ -1,0 +1,55 @@
+/* dashboard app */ @import '../_settings.less';
+
+@body-bg:                               #eceef5;
+@app-round:                             16px;
+
+@theme-app:                             #0070ff;
+@theme-app2:                            #ff103b;
+
+@dashboard-app-bg:                      #f7f8fb;
+@dashboard-app-bg-dark:                 #21242b;
+
+._dashboard-app-vars () {
+    --body-bg: @body-bg;
+    --dashboard-app-bg: @dashboard-app-bg;
+}
+._dashboard-app-vars-dark () {
+    --dashboard-app-bg: @dashboard-app-bg-dark;
+}
+
+[data-theme="light"] when (@dark-mode = true) { ._dashboard-app-vars(); }
+[data-theme="dark"] when (@dark-mode = true) { ._dashboard-app-vars-dark(); }
+
+._theme(app,  @theme-app);
+._theme(app2,  @theme-app2);
+
+.col-35 { width: 35px; }
+
+.app { ._bg-var(dashboard-app-bg); border-radius: @app-round * 3; }
+.card { height: 700px; border-radius: @app-round * 2; }
+.data-container { height: 532px; }
+
+.round:not(.tooltip):not(.btn-square) { border-radius: @app-round; }
+.list-group.round > ul > li:first-child,.list-group.round > ul > li:first-child > a { border-top-left-radius: @app-round; border-top-right-radius: @app-round; }
+.list-group.round > ul > li:last-child,.list-group.round > ul > li:last-child > a { border-bottom-left-radius: @app-round; border-bottom-right-radius: @app-round; }
+
+.tab-content { border-radius: @app-round * 2 - @app-round / 2; }
+
+.contacts { white-space: nowrap; }
+.contacts li { border: solid 3px transparent; position: relative; }
+.contacts li:after,.status:after { content: attr(data-msg); color: @white; font-size: 11px; font-weight: font-bold; text-align: center; width: 18px; height: 18px; background-color: @theme-app2; display: block; ._border-var(@width: 2px; @var: card-bg); border-radius: 50%; position: absolute; }
+.contacts li:after { bottom: -2px; right: -2px; }
+.contacts li.online:after,.status.online:after { background-color: @green; }
+.status { display: inline-block; position: relative; }
+.status:after { bottom: 2px; right: 2px; }
+
+.messages { height: 432px; }
+.messages li { max-width: 80%; padding-left: 35px; clear: both; }
+.messages li:not(:last-child) { margin-bottom: 3px; }
+.messages li.left + .right,.messages li.right + .left { margin-top: 25px; }
+.messages li [class*="img-photo"] { margin-left: -35px; float: left; }
+.messages li > span:not([class*="img-photo"]) { padding: 6px 10px; display: inline-block; border-radius: @app-round; }
+
+@media (min-width: 1200px) {
+    .fixed { max-width: 1600px; }
+}

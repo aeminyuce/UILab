@@ -55,6 +55,9 @@
 @border-color:                          fade(@black, 15%);
 @border-color-dark:                     fade(@white, 17.5%);
 
+@table-border-color:                    #ddd;
+@table-border-color-dark:               @highlighted-dark;
+
 @card-bg:                               @white;
 @card-bg-dark:                          #2f343e;
 @highlighted:                           @white;
@@ -67,7 +70,7 @@
 @btn-ghost-hover-bg:                    fade(@black, 7.5%);
 @btn-ghost-hover-bg-dark:               fade(@white, 7.5%);
 
-/* global variables */
+// global variables
 ._global-vars () {
     --body-bg: @body-bg;
 
@@ -75,6 +78,8 @@
     --black: @black;
 
     --border-color: @border-color;
+    --table-border-color: @table-border-color;
+
     --card-bg: @card-bg;
     --highlighted: @highlighted;
 
@@ -89,6 +94,8 @@
     --black: @white;
 
     --border-color: @border-color-dark;
+    --table-border-color: @table-border-color-dark;
+
     --card-bg: @card-bg-dark;
     --highlighted: @highlighted-dark;
 
@@ -96,9 +103,6 @@
     --btn-hover-bg: @btn-hover-bg-dark;
     --btn-ghost-hover-bg: @btn-ghost-hover-bg-dark;
 }
-
-[data-theme="light"] when (@dark-mode = true) { ._global-vars(); }
-[data-theme="dark"] when (@dark-mode = true) { ._global-vars-dark(); }
 
 // variable color mixins
 ._color-var (@var) when (@dark-mode = false) {
@@ -115,6 +119,14 @@
 ._bg-var (@var) when (@dark-mode = true) {
     background-color: @@var;
     background-color: ~'var(--@{var})';
+}
+
+._gradient-var (@var) when (@dark-mode = false) {
+    background-image: @@var;
+}
+._gradient-var (@var) when (@dark-mode = true) {
+    background-image: @@var;
+    background-image: ~'var(--@{var})';
 }
 
 ._border-color-var (@var: border-color) when (@dark-mode = false) {

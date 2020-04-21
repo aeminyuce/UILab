@@ -1,0 +1,42 @@
+/* landing page */ @import '../_settings.less';
+
+@theme-farmer:                          #ffba0c;
+@theme-farmer2:                         #11da54;
+
+@landing-page-banner-bg:                rgba(17,218,84,.4);
+@landing-page-banner-bg-dark:           rgba(4, 45, 18, 0.8);
+
+@landing-page-banner-border-bg:         rgba(255,255,255,.45);
+@landing-page-banner-slogan-bg:         rgba(255,186,12,.8);
+
+.landing-page-vars () {
+    --landing-page-banner-bg: @landing-page-banner-bg;
+}
+.landing-page-vars-dark () {
+    --landing-page-banner-bg: @landing-page-banner-bg-dark;
+}
+
+[data-theme="light"] when (@dark-mode = true) { .landing-page-vars(); }
+[data-theme="dark"] when (@dark-mode = true) { .landing-page-vars-dark(); }
+
+._theme(farmer,  @theme-farmer);
+._theme(farmer2,  @theme-farmer2);
+
+.col-220 { width: 220px; }
+
+.banner-content { background: no-repeat center center; background-size: cover; }
+.banner-content:after { content: ""; ._bg-var(landing-page-banner-bg); position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+.banner-content > .fixed { z-index: 1; }
+
+.banner-slogan,.footer-social { background-color: @landing-page-banner-border-bg; }
+.banner-slogan > div { background-color: @landing-page-banner-slogan-bg; }
+
+.highlight-links { margin-top: -80px; z-index: 1; }
+.highlight-links .carousel { margin: 0 -15px; }
+
+@media (max-width: 959px) {
+    .highlight-links { padding: 0 15px; }
+}
+@media (max-width: 620px) {
+    .photo-gallery > li .img { height: 150px; }
+}

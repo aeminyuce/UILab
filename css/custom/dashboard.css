@@ -1,0 +1,127 @@
+/* dashboard */
+[data-theme="light"] {
+  --header-bg: #fbfbfb;
+}
+[data-theme="dark"] {
+  --header-bg: #23272f;
+}
+.theme-panel.ui-x-light,
+.theme-panel .ui-x-light:not([class*="theme-"]) {
+  background-color: rgba(53, 72, 185, 0.15);
+}
+html:not(.mobile) .theme-panel.ui-x-light.hover:hover,
+html:not(.mobile) .theme-panel .ui-x-light:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-panel.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-panel .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: rgba(53, 72, 185, 0.5);
+}
+.theme-panel.ui-light,
+.theme-panel .ui-light:not([class*="theme-"]) {
+  background-color: rgba(53, 72, 185, 0.25);
+}
+html:not(.mobile) .theme-panel.ui-light.hover:hover,
+html:not(.mobile) .theme-panel .ui-light:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-panel.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-panel .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: rgba(53, 72, 185, 0.5);
+}
+.theme-panel.ui-dark,
+.theme-panel .ui-dark:not([class*="theme-"]) {
+  background-color: #3548b9;
+}
+html:not(.mobile) .theme-panel.ui-dark.hover:hover,
+html:not(.mobile) .theme-panel .ui-dark:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-panel.ui-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-panel .ui-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: #5365ce;
+}
+.theme-panel.ui-x-dark,
+.theme-panel .ui-x-dark:not([class*="theme-"]) {
+  background-color: #2a3991;
+}
+html:not(.mobile) .theme-panel.ui-x-dark.hover:hover,
+html:not(.mobile) .theme-panel .ui-x-dark:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-panel.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-panel .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: #3548b9;
+}
+.theme-panel.ui-text,
+.theme-panel .ui-text:not([class*="theme-"]) {
+  color: #3548b9;
+}
+.theme-panel.ui-border,
+.theme-panel .ui-border:not([class*="theme-"]) {
+  border-color: #3548b9;
+}
+.theme-panel2.ui-x-light,
+.theme-panel2 .ui-x-light:not([class*="theme-"]) {
+  background-color: rgba(5, 170, 199, 0.15);
+}
+html:not(.mobile) .theme-panel2.ui-x-light.hover:hover,
+html:not(.mobile) .theme-panel2 .ui-x-light:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-panel2.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-panel2 .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: rgba(5, 170, 199, 0.5);
+}
+.theme-panel2.ui-light,
+.theme-panel2 .ui-light:not([class*="theme-"]) {
+  background-color: rgba(5, 170, 199, 0.25);
+}
+html:not(.mobile) .theme-panel2.ui-light.hover:hover,
+html:not(.mobile) .theme-panel2 .ui-light:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-panel2.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-panel2 .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: rgba(5, 170, 199, 0.5);
+}
+.theme-panel2.ui-dark,
+.theme-panel2 .ui-dark:not([class*="theme-"]) {
+  background-color: #05aac7;
+}
+html:not(.mobile) .theme-panel2.ui-dark.hover:hover,
+html:not(.mobile) .theme-panel2 .ui-dark:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-panel2.ui-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-panel2 .ui-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: #06d4f9;
+}
+.theme-panel2.ui-x-dark,
+.theme-panel2 .ui-x-dark:not([class*="theme-"]) {
+  background-color: #047f95;
+}
+html:not(.mobile) .theme-panel2.ui-x-dark.hover:hover,
+html:not(.mobile) .theme-panel2 .ui-x-dark:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-panel2.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-panel2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: #05aac7;
+}
+.theme-panel2.ui-text,
+.theme-panel2 .ui-text:not([class*="theme-"]) {
+  color: #05aac7;
+}
+.theme-panel2.ui-border,
+.theme-panel2 .ui-border:not([class*="theme-"]) {
+  border-color: #05aac7;
+}
+body {
+  overflow-x: hidden;
+}
+.sticky-header .sidebar {
+  top: -62px;
+}
+header {
+  background-color: #fbfbfb;
+  background-color: var(--header-bg);
+}
+.dashboard-carousel {
+  margin-bottom: -5px;
+}
+@media (min-width: 1480px) {
+  .fixed-inner {
+    max-width: 1480px;
+  }
+}
+@media (min-width: 1200px) {
+  header.sticky.sidebar-opened {
+    width: calc(100% - 250px);
+    left: 250px;
+  }
+}

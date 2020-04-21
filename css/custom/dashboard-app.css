@@ -1,0 +1,203 @@
+/* dashboard app */
+[data-theme="light"] {
+  --body-bg: #eceef5;
+  --dashboard-app-bg: #f7f8fb;
+}
+[data-theme="dark"] {
+  --dashboard-app-bg: #21242b;
+}
+.theme-app.ui-x-light,
+.theme-app .ui-x-light:not([class*="theme-"]) {
+  background-color: rgba(0, 112, 255, 0.15);
+}
+html:not(.mobile) .theme-app.ui-x-light.hover:hover,
+html:not(.mobile) .theme-app .ui-x-light:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-app.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-app .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: rgba(0, 112, 255, 0.5);
+}
+.theme-app.ui-light,
+.theme-app .ui-light:not([class*="theme-"]) {
+  background-color: rgba(0, 112, 255, 0.25);
+}
+html:not(.mobile) .theme-app.ui-light.hover:hover,
+html:not(.mobile) .theme-app .ui-light:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-app.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-app .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: rgba(0, 112, 255, 0.5);
+}
+.theme-app.ui-dark,
+.theme-app .ui-dark:not([class*="theme-"]) {
+  background-color: #0070ff;
+}
+html:not(.mobile) .theme-app.ui-dark.hover:hover,
+html:not(.mobile) .theme-app .ui-dark:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-app.ui-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-app .ui-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: #338dff;
+}
+.theme-app.ui-x-dark,
+.theme-app .ui-x-dark:not([class*="theme-"]) {
+  background-color: #005acc;
+}
+html:not(.mobile) .theme-app.ui-x-dark.hover:hover,
+html:not(.mobile) .theme-app .ui-x-dark:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-app.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-app .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: #0070ff;
+}
+.theme-app.ui-text,
+.theme-app .ui-text:not([class*="theme-"]) {
+  color: #0070ff;
+}
+.theme-app.ui-border,
+.theme-app .ui-border:not([class*="theme-"]) {
+  border-color: #0070ff;
+}
+.theme-app2.ui-x-light,
+.theme-app2 .ui-x-light:not([class*="theme-"]) {
+  background-color: rgba(255, 16, 59, 0.15);
+}
+html:not(.mobile) .theme-app2.ui-x-light.hover:hover,
+html:not(.mobile) .theme-app2 .ui-x-light:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-app2.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-app2 .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: rgba(255, 16, 59, 0.5);
+}
+.theme-app2.ui-light,
+.theme-app2 .ui-light:not([class*="theme-"]) {
+  background-color: rgba(255, 16, 59, 0.25);
+}
+html:not(.mobile) .theme-app2.ui-light.hover:hover,
+html:not(.mobile) .theme-app2 .ui-light:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-app2.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-app2 .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: rgba(255, 16, 59, 0.5);
+}
+.theme-app2.ui-dark,
+.theme-app2 .ui-dark:not([class*="theme-"]) {
+  background-color: #ff103b;
+}
+html:not(.mobile) .theme-app2.ui-dark.hover:hover,
+html:not(.mobile) .theme-app2 .ui-dark:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-app2.ui-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-app2 .ui-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: #ff4365;
+}
+.theme-app2.ui-x-dark,
+.theme-app2 .ui-x-dark:not([class*="theme-"]) {
+  background-color: #dc0028;
+}
+html:not(.mobile) .theme-app2.ui-x-dark.hover:hover,
+html:not(.mobile) .theme-app2 .ui-x-dark:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-app2.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-app2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: #ff103b;
+}
+.theme-app2.ui-text,
+.theme-app2 .ui-text:not([class*="theme-"]) {
+  color: #ff103b;
+}
+.theme-app2.ui-border,
+.theme-app2 .ui-border:not([class*="theme-"]) {
+  border-color: #ff103b;
+}
+.col-35 {
+  width: 35px;
+}
+.app {
+  background-color: #f7f8fb;
+  background-color: var(--dashboard-app-bg);
+  border-radius: 48px;
+}
+.card {
+  height: 700px;
+  border-radius: 32px;
+}
+.data-container {
+  height: 532px;
+}
+.round:not(.tooltip):not(.btn-square) {
+  border-radius: 16px;
+}
+.list-group.round > ul > li:first-child,
+.list-group.round > ul > li:first-child > a {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.list-group.round > ul > li:last-child,
+.list-group.round > ul > li:last-child > a {
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+.tab-content {
+  border-radius: 24px;
+}
+.contacts {
+  white-space: nowrap;
+}
+.contacts li {
+  border: solid 3px transparent;
+  position: relative;
+}
+.contacts li:after,
+.status:after {
+  content: attr(data-msg);
+  color: #fff;
+  font-size: 11px;
+  font-weight: font-bold;
+  text-align: center;
+  width: 18px;
+  height: 18px;
+  background-color: #ff103b;
+  display: block;
+  border: solid 2px #fff;
+  border: solid 2px var(--card-bg);
+  border-radius: 50%;
+  position: absolute;
+}
+.contacts li:after {
+  bottom: -2px;
+  right: -2px;
+}
+.contacts li.online:after,
+.status.online:after {
+  background-color: #2dbd3a;
+}
+.status {
+  display: inline-block;
+  position: relative;
+}
+.status:after {
+  bottom: 2px;
+  right: 2px;
+}
+.messages {
+  height: 432px;
+}
+.messages li {
+  max-width: 80%;
+  padding-left: 35px;
+  clear: both;
+}
+.messages li:not(:last-child) {
+  margin-bottom: 3px;
+}
+.messages li.left + .right,
+.messages li.right + .left {
+  margin-top: 25px;
+}
+.messages li [class*="img-photo"] {
+  margin-left: -35px;
+  float: left;
+}
+.messages li > span:not([class*="img-photo"]) {
+  padding: 6px 10px;
+  display: inline-block;
+  border-radius: 16px;
+}
+@media (min-width: 1200px) {
+  .fixed {
+    max-width: 1600px;
+  }
+}
