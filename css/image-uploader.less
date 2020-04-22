@@ -1,6 +1,51 @@
 // out: false
 /* image uploader */ @import '_settings.less';
 
+@image-uploader-drop-bg:                #f5f5f5;
+@image-uploader-drop-bg-dark:           #21242b;
+
+@image-uploader-tools-bg:               fade(@black, 5%);
+@image-uploader-tools-bg-dark:          fade(@white, 3.5%);
+
+@image-uploader-list-bg:                fade(@white, 45%);
+@image-uploader-list-bg-dark:           fade(@white, 3.5%);
+
+@image-uploader-list-border:            fade(@black, 15%);
+@image-uploader-list-border-dark:       fade(@white, 1.75%);
+
+@image-uploader-list-tag-color:         #666;
+@image-uploader-list-tag-color-dark:    #bbb;
+
+@image-uploader-list-tag-bg:            fade(@black, 8%);
+@image-uploader-list-tag-bg-dark:       fade(@white, 8%);
+
+@image-uploader-list-img-shadow:        fade(@black, 25%);
+@image-uploader-list-img-hover-shadow:  fade(@black, 20%);
+@image-uploader-list-info-color:        #7d7d7d;
+
+@image-uploader-loading-bg:             linear-gradient(45deg, @no-color 25%, rgba(255,255,255,.25) 25%, rgba(255,255,255,.25) 50%, @no-color 50%, @no-color 75%, rgba(255,255,255,.25) 75%);
+
+._global-vars () {
+    --image-uploader-drop-bg: @image-uploader-drop-bg;
+    --image-uploader-tools-bg: @image-uploader-tools-bg;
+
+    --image-uploader-list-bg: @image-uploader-list-bg;
+    --image-uploader-list-border: @image-uploader-list-border;
+
+    --image-uploader-list-tag-color: @image-uploader-list-tag-color;
+    --image-uploader-list-tag-bg: @image-uploader-list-tag-bg;
+}
+._global-vars-dark () {
+    --image-uploader-drop-bg: @image-uploader-drop-bg-dark;
+    --image-uploader-tools-bg: @image-uploader-tools-bg-dark;
+
+    --image-uploader-list-bg: @image-uploader-list-bg-dark;
+    --image-uploader-list-border: @image-uploader-list-border-dark;
+
+    --image-uploader-list-tag-color: @image-uploader-list-tag-color-dark;
+    --image-uploader-list-tag-bg: @image-uploader-list-tag-bg-dark;
+}
+
 @keyframes uploader-loader { from { background-position: 40px 0; } to { background-position: 0 0; } }
 
 .ease-image-uploader { transition-property: background-color; transition-duration: .15s; }
@@ -9,26 +54,26 @@
 .ease-image-uploader .uploader-list > .icon { transition-property: opacity; transition-duration: .15s; }
 .ease-image-uploader .uploader-list ul > li img { transition-property: transform, box-shadow; transition-duration: .15s; }
 
-.image-uploader { background-color: #fff; overflow: hidden; position: relative; }
-.image-uploader.drop-highlight { background-color: #f5f5f5; }
+.image-uploader { ._bg-var(card-bg); overflow: hidden; position: relative; }
+.image-uploader.drop-highlight { ._bg-var(image-uploader-drop-bg); }
 
 .uploader-panel { text-align: right; min-height: 52px; padding: 15px; }
 
 .uploader-panel > .row { margin-left: 0; margin-right: 0; }
 .uploader-panel h3,.uploader-panel h4,.uploader-panel h5,.uploader-panel h6 { font-size: 18px; line-height: 32px; margin: 7px 0; float: left; }
 
-.image-uploader.loading .file,.image-uploader.uploading .uploader-upload { background-image: linear-gradient(45deg, @no-color 25%, rgba(255,255,255,.25) 25%, rgba(255,255,255,.25) 50%, @no-color 50%, @no-color 75%, rgba(255,255,255,.25) 75%); background-size: 20px 20px; animation: uploader-loader 1s linear infinite; }
+.image-uploader.loading .file,.image-uploader.uploading .uploader-upload { background-image: @image-uploader-loading-bg; background-size: 20px 20px; animation: uploader-loader 1s linear infinite; }
 
 .image-uploader .file { display: inline-block; }
 .image-uploader .file .btn b { font-weight: @font-normal; }
 
-.uploader-tools { min-height: 52px; background-color: rgba(0,0,0,.035); padding: 15px; }
+.uploader-tools { ._bg-var(image-uploader-tools-bg); padding: 10px 15px; }
 .uploader-tools:not(.open) { display: none; }
 .uploader-tools:not(.open-ease) { opacity: 0; }
 .drop-highlight .uploader-tools { opacity: .15; }
 
 .uploader-list { min-height: 220px; position: relative; }
-.uploader-list:not(.open),.drop-highlight .uploader-list { background-color: rgba(255,255,255,.45); margin: 0 15px 15px 15px; border: dashed 2px rgba(0,0,0,.15); border-radius: 6px; }
+.uploader-list:not(.open),.drop-highlight .uploader-list { ._bg-var(image-uploader-list-bg); margin: 0 15px 15px 15px; ._border-var(@style: dashed; @width: 2px; @var: image-uploader-list-border); border-radius: @round; }
 
 .uploader-list > .icon { position: absolute; top: 50%; left: 50%; z-index: 1; opacity: .15; transform: translate(-50%, -50%); }
 .uploader-list.open > .icon { display: none; }
@@ -40,15 +85,15 @@
 .drop-highlight .uploader-list ul > li { opacity: .15; }
 .uploader-list ul > li.open-ease { opacity: 0; }
 .uploader-list ul > li .img { display: block; clear: both; position: relative; }
-.uploader-list ul > li .img img { width: auto; max-width: 100%; height: auto; max-height: 100%; position: absolute; top: 50%; left: 50%; box-shadow: 0 1px 6px rgba(0,0,0,.25); transform: translate(-50%,-50%); }
-html:not(.mobile) .uploader-list ul > li .img img:hover { transform: translate(-50%,-50%) scale(1.05); box-shadow: 0 5px 15px rgba(0,0,0,.2); cursor: pointer; }
+.uploader-list ul > li .img img { width: auto; max-width: 100%; height: auto; max-height: 100%; position: absolute; top: 50%; left: 50%; box-shadow: 0 1px 6px @image-uploader-list-img-shadow; transform: translate(-50%,-50%); }
+html:not(.mobile) .uploader-list ul > li .img img:hover { transform: translate(-50%,-50%) scale(1.05); box-shadow: 0 5px 15px @image-uploader-list-img-hover-shadow; cursor: pointer; }
 .uploader-list ul > li .img:not(:first-child) { margin-top: 10px; }
 .uploader-list ul > li .img:not(:last-child) { margin-bottom: 10px; }
 
 .uploader-list ul > li .name { white-space: nowrap; text-overflow: ellipsis; line-height: 22px; min-height: 22px; overflow: hidden; display: block; }
 .uploader-list ul > li .info,.uploader-list ul > li .tag { vertical-align: middle; display: inline-block; }
-.uploader-list ul > li .info { color: #7d7d7d; padding: 1px 6px 1px 0; }
-.uploader-list ul > li .tag { color: #666; font-size: 13px; white-space: nowrap; padding: 1px 6px; background-color: rgba(0,0,0,.08); border-radius: 20px; }
+.uploader-list ul > li .info { color: @image-uploader-list-info-color; padding: 1px 6px 1px 0; }
+.uploader-list ul > li .tag { ._color-var(image-uploader-list-tag-color); font-size: 13px; white-space: nowrap; padding: 1px 6px; ._bg-var(image-uploader-list-tag-bg); border-radius: 20px; }
 
 @media (min-width: 960px) {
     .uploader-list ul > li { width: 20%; }
