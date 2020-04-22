@@ -14,34 +14,32 @@
                     </div>
                 </div>
 
-                <div class="uploader-tools theme-default2">
-                    <div class="right ease-1st-btn">
-                        <div class="dropdown menu-l ease-dropdown">
-                            <button type="button" title="Tags" class="btn btn-square round">
-                                <svg class="icon"><use href="#tag"></use></svg>
-                            </button>
-                            <ul class="content round shadow-lg">
-                                <li>Interior</li>
-                                <li>Exterior</li>
-                                <li>Garden</li>
-                                <li>Project</li>
-                                <li>Not Defined</li>
-                            </ul>
-                        </div>
-                        <button type="button" title="Check" class="uploader-check btn btn-square round">
-                            <svg class="icon"><use href="#check-square"></use></svg>
+                <div class="uploader-tools align-r ease-1st-btn theme-default2">
+                    <div class="dropdown menu-l ease-dropdown">
+                        <button type="button" title="Tags" class="btn btn-square round">
+                            <svg class="icon"><use href="#tag"></use></svg>
                         </button>
-                        <button type="button" title="Remove" class="uploader-remove btn btn-square round">
-                            <svg class="icon"><use href="#trash"></use></svg>
-                        </button>
-                        <button type="button" title="Sort" class="uploader-sort btn btn-square round">
-                            <svg class="icon"><use href="#move"></use></svg>
-                        </button>
-                        <button type="submit" name="send" class="uploader-upload btn margin-5-l round theme-green ui-dark">
-                            <span class="hidden-xs margin-2-r">Save</span>
-                            <svg class="icon"><use href="#save"></use></svg>
-                        </button>
+                        <ul class="content round shadow-lg">
+                            <li>Interior</li>
+                            <li>Exterior</li>
+                            <li>Garden</li>
+                            <li>Project</li>
+                            <li>Not Defined</li>
+                        </ul>
                     </div>
+                    <button type="button" title="Check" class="uploader-check btn btn-square round">
+                        <svg class="icon"><use href="#check-square"></use></svg>
+                    </button>
+                    <button type="button" title="Remove" class="uploader-remove btn btn-square round">
+                        <svg class="icon"><use href="#trash"></use></svg>
+                    </button>
+                    <button type="button" title="Sort" class="uploader-sort btn btn-square round">
+                        <svg class="icon"><use href="#move"></use></svg>
+                    </button>
+                    <button type="submit" name="send" class="uploader-upload btn margin-5-l round theme-green ui-dark">
+                        <span class="hidden-xs margin-2-r">Save</span>
+                        <svg class="icon"><use href="#save"></use></svg>
+                    </button>
                 </div>
 
                 <div class="uploader-list">
