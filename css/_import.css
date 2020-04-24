@@ -57,12 +57,22 @@
   --alerts-dialog-success-shadow: #259c30;
   --alerts-dialog-custom-shadow: rgba(0, 0, 0, 0.3);
   --alerts-msg-bg: #181818;
+  --calendar-area-bg: rgba(0, 0, 0, 0.08);
+  --calendar-no-details-bg: rgba(0, 0, 0, 0.12);
+  --calendar-today-btn-bg: rgba(0, 0, 0, 0.15);
+  --calendar-today-btn-hover-bg: rgba(0, 0, 0, 0.2);
+  --data-list-stripe-bg: rgba(0, 0, 0, 0.035);
+  --data-list-hover-bg: rgba(0, 0, 0, 0.06);
+  --data-list-border: #ddd;
   --image-uploader-drop-bg: #f5f5f5;
   --image-uploader-tools-bg: rgba(0, 0, 0, 0.05);
   --image-uploader-list-bg: rgba(255, 255, 255, 0.45);
   --image-uploader-list-border: rgba(0, 0, 0, 0.15);
   --image-uploader-list-tag-color: #666;
   --image-uploader-list-tag-bg: rgba(0, 0, 0, 0.08);
+  --photo-slider-btn-bg: rgba(0, 0, 0, 0.1);
+  --photo-slider-dot-bg: rgba(0, 0, 0, 0.2);
+  --photo-slider-dot-selected-bg: rgba(0, 0, 0, 0.35);
 }
 [data-theme="dark"] {
   --body-bg: #15181d;
@@ -122,12 +132,22 @@
   --alerts-dialog-success-shadow: #62da6d;
   --alerts-dialog-custom-shadow: rgba(255, 255, 255, 0.3);
   --alerts-msg-bg: #2f343e;
+  --calendar-area-bg: rgba(255, 255, 255, 0.08);
+  --calendar-no-details-bg: rgba(255, 255, 255, 0.18);
+  --calendar-today-btn-bg: rgba(255, 255, 255, 0.15);
+  --calendar-today-btn-hover-bg: rgba(255, 255, 255, 0.2);
+  --data-list-stripe-bg: rgba(255, 255, 255, 0.035);
+  --data-list-hover-bg: rgba(255, 255, 255, 0.06);
+  --data-list-border: #41454d;
   --image-uploader-drop-bg: #21242b;
   --image-uploader-tools-bg: rgba(255, 255, 255, 0.035);
   --image-uploader-list-bg: rgba(255, 255, 255, 0.035);
   --image-uploader-list-border: rgba(255, 255, 255, 0.0175);
   --image-uploader-list-tag-color: #bbb;
   --image-uploader-list-tag-bg: rgba(255, 255, 255, 0.08);
+  --photo-slider-btn-bg: rgba(255, 255, 255, 0.1);
+  --photo-slider-dot-bg: rgba(255, 255, 255, 0.2);
+  --photo-slider-dot-selected-bg: rgba(255, 255, 255, 0.35);
 }
 /* reset */
 *,
@@ -5277,19 +5297,24 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
 [class*="text-icon"] > button {
   color: #000;
   color: var(--black);
-  width: 16px;
-  height: 16px;
+  cursor: default;
+  stroke-width: 34px;
+}
+[class*="text-icon"] > .icon,
+[class*="text-icon"] > button {
   position: absolute;
   top: 50%;
   right: 5px;
-  cursor: default;
   transform: translateY(-50%);
-  stroke-width: 34px;
+}
+[class*="text-icon"] > .icon {
+  width: 16px;
+  height: 16px;
 }
 [class*="text-icon"] .icon {
   opacity: 0.45;
 }
-.text-icon-l .icon,
+.text-icon-l > .icon,
 .text-icon-both > .text-icon-l {
   right: inherit;
   left: 5px;
@@ -5395,9 +5420,6 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
 .form-lg .select select {
   padding-right: 40px;
 }
-.form-lg [class*="text-icon"] > button {
-  right: 10px;
-}
 .form-lg .select .icon,
 .form-lg [class*="text-icon"] > .icon {
   width: 20px;
@@ -5405,11 +5427,12 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
   stroke-width: 24px;
 }
 .form-lg .select .icon,
-.form-lg [class*="text-icon"] > .icon {
+.form-lg [class*="text-icon"] > .icon,
+.form-lg [class*="text-icon"] > button {
   right: 10px;
 }
-.form-lg .text-icon-l .icon,
-.form-lg .text-icon-both .text-icon-l {
+.form-lg .text-icon-l > .icon,
+.form-lg .text-icon-both > .text-icon-l {
   left: 10px;
 }
 .form-lg [class*="text-icon"]:not(.text-icon-l) > input,
@@ -7792,6 +7815,7 @@ html:not(.mobile) .close-alert:hover {
 }
 .calendar {
   background-color: #fff;
+  background-color: var(--card-bg);
   padding: 5px;
   overflow: hidden;
   display: block;
@@ -7818,14 +7842,22 @@ html:not(.mobile) .close-alert:hover {
   padding: 0;
   margin-bottom: 0;
 }
+.calendar button {
+  color: #000;
+  color: var(--black);
+  background-color: rgba(0, 0, 0, 0.08);
+  background-color: var(--btn-bg);
+}
+html:not(.mobile) .calendar button:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+  background-color: var(--btn-hover-bg);
+}
 .calendar caption {
   height: 52px;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.08);
+  background-color: var(--calendar-area-bg);
   padding: 5px 52px;
   margin-bottom: 5px;
-}
-.calendar:not(.ui-dark):not(.ui-x-dark) caption {
-  background-color: rgba(0, 0, 0, 0.065);
 }
 .calendar.round caption,
 .calendar.round caption button {
@@ -7849,12 +7881,6 @@ html:not(.mobile) .close-alert:hover {
 .calendar caption > button .icon {
   opacity: 0.65;
 }
-html:not(.mobile) .calendar caption > button:hover {
-  background-color: rgba(255, 255, 255, 0.125);
-}
-html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) caption button:hover {
-  background-color: rgba(0, 0, 0, 0.08);
-}
 .calendar-prev {
   margin-left: -47px;
   float: left;
@@ -7870,18 +7896,6 @@ html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) caption button:hover {
 }
 .calendar-title button {
   display: inline-block;
-}
-html:not(.mobile) caption:hover .calendar-title button {
-  background-color: rgba(255, 255, 255, 0.05);
-}
-html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) caption:hover .calendar-title button {
-  background-color: rgba(0, 0, 0, 0.035);
-}
-html:not(.mobile) caption .calendar-title button:hover {
-  background-color: rgba(255, 255, 255, 0.15);
-}
-html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) caption .calendar-title button:hover {
-  background-color: rgba(0, 0, 0, 0.08);
 }
 .calendar-month {
   font-weight: 700;
@@ -7919,11 +7933,8 @@ html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) caption .calendar-titl
 }
 .calendar table.fill-weekends th:nth-child(n+6),
 .calendar table.fill-weekends td:nth-child(n+6) {
-  background-color: rgba(0, 0, 0, 0.085);
-}
-.calendar:not(.ui-dark):not(.ui-x-dark) table.fill-weekends th:nth-child(n+6),
-.calendar:not(.ui-dark):not(.ui-x-dark) table.fill-weekends td:nth-child(n+6) {
-  background-color: rgba(0, 0, 0, 0.045);
+  background-color: rgba(0, 0, 0, 0.08);
+  background-color: var(--calendar-area-bg);
 }
 .calendar tbody td.passive span {
   opacity: 0.45;
@@ -7951,26 +7962,16 @@ html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) caption .calendar-titl
   bottom: 3px;
   left: 50%;
 }
-html:not(.mobile) .calendar tbody td:not(.today):not(.pickerday) button:hover {
-  background-color: rgba(255, 255, 255, 0.125);
-}
-html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) td:not(.today):not(.pickerday) button:hover {
-  background-color: rgba(0, 0, 0, 0.075);
-}
 .calendar tbody td.today button {
   font-weight: 700;
 }
 .calendar tbody td.today button:not([class*="ui-"]) {
-  background-color: rgba(255, 255, 255, 0.225);
+  background-color: rgba(0, 0, 0, 0.15);
+  background-color: var(--calendar-today-btn-bg);
 }
 html:not(.mobile) .calendar tbody td.today button:not([class*="ui-"]):hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-.calendar:not(.ui-dark):not(.ui-x-dark) td.today button:not([class*="ui-"]) {
-  background-color: rgba(0, 0, 0, 0.125);
-}
-html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) td.today button:not([class*="ui-"]):hover {
   background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--calendar-today-btn-hover-bg);
 }
 html:not(.mobile) .calendar tbody td.today button[class*="ui-"]:hover {
   opacity: 0.75;
@@ -7978,10 +7979,10 @@ html:not(.mobile) .calendar tbody td.today button[class*="ui-"]:hover {
 .calendar tbody td.pickerday button {
   color: #fff !important;
   font-weight: 700;
-  background-color: #3773b6;
+  background-color: #235ea0;
 }
 html:not(.mobile) .calendar tbody td.pickerday button:hover {
-  opacity: 0.75;
+  background-color: #3b83d4;
 }
 .calendar tbody td.passive span {
   line-height: 20px;
@@ -8018,15 +8019,11 @@ html:not(.mobile) .calendar tbody td.pickerday button:hover {
 .calendar .details > button {
   width: 32px;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.065);
   border: 0;
   position: absolute;
   top: 0;
   left: 0;
   cursor: pointer;
-}
-html:not(.mobile) .calendar .details > button:hover {
-  background-color: rgba(0, 0, 0, 0.15);
 }
 .calendar .details > button .icon {
   opacity: 0.65;
@@ -8050,6 +8047,10 @@ html:not(.mobile) .calendar .details > button:hover {
   min-height: 10px;
   padding: 10px;
   display: block;
+}
+html:not(.mobile) .calendar .details li:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+  background-color: var(--btn-ghost-hover-bg);
 }
 .calendar .details li:not(:last-child) {
   margin-bottom: 20px;
@@ -8078,11 +8079,11 @@ html:not(.mobile) .calendar .details > button:hover {
   display: block;
 }
 .calendar .details li > span > i {
-  color: #000;
   font-size: 13px;
   font-style: normal;
   line-height: normal;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.08);
+  background-color: var(--btn-bg);
   padding: 1px 4px;
   margin-right: 5px;
   display: inline-block;
@@ -8093,9 +8094,6 @@ html:not(.mobile) .calendar .details > button:hover {
 }
 .calendar .details li > span > a:hover {
   text-decoration: none;
-}
-.calendar:not(.ui-dark):not(.ui-x-dark) .details li > span > i {
-  background-color: rgba(0, 0, 0, 0.075);
 }
 .calendar .no-details li > strong {
   height: 45px;
@@ -8119,24 +8117,10 @@ html:not(.mobile) .calendar .details > button:hover {
   width: 160px;
 }
 .calendar .no-details li > strong,
-.calendar .no-details li > b {
-  background-color: rgba(255, 255, 255, 0.25);
-}
+.calendar .no-details li > b,
 .calendar .no-details li > span {
-  background-color: rgba(255, 255, 255, 0.15);
-}
-.calendar:not(.ui-dark):not(.ui-x-dark) .no-details li > strong,
-.calendar:not(.ui-dark):not(.ui-x-dark) .no-details li > b {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-.calendar:not(.ui-dark):not(.ui-x-dark) .no-details li > span {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-html:not(.mobile) .calendar .details li:hover {
-  background-color: rgba(255, 255, 255, 0.125);
-}
-html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) .details li:hover {
-  background-color: rgba(0, 0, 0, 0.065);
+  background-color: rgba(0, 0, 0, 0.12);
+  background-color: var(--calendar-no-details-bg);
 }
 .calendar .panel {
   position: absolute;
@@ -8188,32 +8172,25 @@ html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) .details li:hover {
 .calendar.round .panel .call {
   border-radius: 6px;
 }
-html:not(.mobile) .calendar .panel .call:hover {
-  background-color: rgba(255, 255, 255, 0.125);
-}
-html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) .panel .call:hover {
-  background-color: rgba(0, 0, 0, 0.075);
-}
 .calendar .panel .call.selected {
   font-weight: 700;
-  background-color: rgba(255, 255, 255, 0.225);
+  background-color: rgba(0, 0, 0, 0.08);
+  background-color: var(--btn-bg);
 }
+html:not(.mobile) .calendar .panel .call:hover,
 html:not(.mobile) .calendar .panel .call.selected:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-.calendar:not(.ui-dark):not(.ui-x-dark) .panel .call.selected {
-  background-color: rgba(0, 0, 0, 0.125);
-}
-html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) .panel .call.selected:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.15);
+  background-color: var(--btn-hover-bg);
 }
 .text.calendar-picker {
-  color: #333;
+  color: #000;
+  color: var(--black);
   overflow: visible !important;
 }
 .text.calendar-picker button:not([class*="ui-"]),
 .text.calendar-picker button:not([class*="ui-"]) .icon {
-  color: #333;
+  color: #000;
+  color: var(--black);
 }
 .text .calendar {
   width: 100%;
@@ -8486,6 +8463,7 @@ html:not(.mobile) .carousel-gallery .thumbs .img:not(.selected):not(:hover) {
 .data-list .data-content:not([class*="col-"]) {
   padding: 10px;
   border-bottom: solid 1px #ddd;
+  border-bottom: solid 1px var(--data-list-border);
 }
 .data-list .data-content:before,
 .data-list .data-content:after {
@@ -8496,10 +8474,11 @@ html:not(.mobile) .carousel-gallery .thumbs .img:not(.selected):not(:hover) {
   clear: both;
 }
 .data-list .data-content.even {
-  background-color: rgba(0, 0, 0, 0.025);
+  background-color: rgba(0, 0, 0, 0.035);
+  background-color: var(--data-list-stripe-bg);
 }
 .data-list .data-content.checked {
-  background-color: rgba(255, 166, 0, 0.1) !important;
+  background-color: rgba(255, 166, 0, 0.15) !important;
 }
 .data-list:not(.data-show-all) .data-content:not(.show) {
   display: none;
@@ -8507,14 +8486,14 @@ html:not(.mobile) .carousel-gallery .thumbs .img:not(.selected):not(:hover) {
 .data-list.data-filtered.data-show-all .data-content:not(.filtered) {
   display: none;
 }
-html:not(.mobile) .data-hover .data-content:not([class*="ui-"]):hover {
-  background-color: rgba(0, 0, 0, 0.06);
-}
+html:not(.mobile) .data-hover .data-content:not([class*="ui-"]):hover,
 html:not(.mobile) .data-hover .data-content:not([class*="ui-"]):nth-child(odd):hover {
   background-color: rgba(0, 0, 0, 0.06);
+  background-color: var(--data-list-hover-bg);
 }
 .data-hover .data-content.even:not([class*="ui-"]) {
-  background-color: rgba(0, 0, 0, 0.025);
+  background-color: rgba(0, 0, 0, 0.035);
+  background-color: var(--data-list-stripe-bg);
 }
 .data-list > .row,
 .data-list .data-content > .row {
@@ -9065,7 +9044,12 @@ html:not(.mobile) .preview-next:hover {
   position: relative;
 }
 .photo-slider:not(.loaded) {
+  background-color: #f9f9f9;
+  background-color: var(--body-bg);
+}
+.card .photo-slider:not(.loaded) {
   background-color: #fff;
+  background-color: var(--card-bg);
 }
 .photo-slider .slider-loader {
   margin: -20px 0 0 -25px;
@@ -9091,6 +9075,7 @@ html:not(.mobile) .preview-next:hover {
 }
 .photo-slider button {
   color: #000;
+  color: var(--black);
   background-color: transparent;
   padding: 6px;
   border: 0;
@@ -9107,6 +9092,7 @@ html:not(.mobile) .preview-next:hover {
 }
 .photo-slider button:hover {
   background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--photo-slider-btn-bg);
 }
 .photo-slider .slide-l {
   left: 0;
@@ -9134,12 +9120,14 @@ html:not(.mobile) .preview-next:hover {
   width: 7px;
   height: 7px;
   background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--photo-slider-dot-bg);
   margin: 0 3px;
   display: inline-block;
   border-radius: 50%;
 }
 .photo-slider .slider-nav i.selected {
   background-color: rgba(0, 0, 0, 0.35);
+  background-color: var(--photo-slider-dot-selected-bg);
   transform: scale(1.5);
 }
 /* weather */
@@ -9776,54 +9764,6 @@ html:not(.mobile) .theme-red .ui-x-dark:not([class*="theme-"]).btn:not(.btn-pass
 .theme-red .ui-border:not([class*="theme-"]) {
   border-color: #d10f1c;
 }
-.theme-blue.ui-x-light,
-.theme-blue .ui-x-light:not([class*="theme-"]) {
-  background-color: rgba(35, 94, 160, 0.15);
-}
-html:not(.mobile) .theme-blue.ui-x-light.hover:hover,
-html:not(.mobile) .theme-blue .ui-x-light:not([class*="theme-"]).hover:hover,
-html:not(.mobile) .theme-blue.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) .theme-blue .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(35, 94, 160, 0.5);
-}
-.theme-blue.ui-light,
-.theme-blue .ui-light:not([class*="theme-"]) {
-  background-color: rgba(35, 94, 160, 0.25);
-}
-html:not(.mobile) .theme-blue.ui-light.hover:hover,
-html:not(.mobile) .theme-blue .ui-light:not([class*="theme-"]).hover:hover,
-html:not(.mobile) .theme-blue.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) .theme-blue .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(35, 94, 160, 0.5);
-}
-.theme-blue.ui-dark,
-.theme-blue .ui-dark:not([class*="theme-"]) {
-  background-color: #235ea0;
-}
-html:not(.mobile) .theme-blue.ui-dark.hover:hover,
-html:not(.mobile) .theme-blue .ui-dark:not([class*="theme-"]).hover:hover,
-html:not(.mobile) .theme-blue.ui-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) .theme-blue .ui-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #5091d9;
-}
-.theme-blue.ui-x-dark,
-.theme-blue .ui-x-dark:not([class*="theme-"]) {
-  background-color: #1a4576;
-}
-html:not(.mobile) .theme-blue.ui-x-dark.hover:hover,
-html:not(.mobile) .theme-blue .ui-x-dark:not([class*="theme-"]).hover:hover,
-html:not(.mobile) .theme-blue.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) .theme-blue .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #153961;
-}
-.theme-blue.ui-text,
-.theme-blue .ui-text:not([class*="theme-"]) {
-  color: #235ea0;
-}
-.theme-blue.ui-border,
-.theme-blue .ui-border:not([class*="theme-"]) {
-  border-color: #235ea0;
-}
 .theme-default.ui-x-light,
 .theme-default .ui-x-light:not([class*="theme-"]) {
   background-color: rgba(69, 99, 197, 0.15);
@@ -9927,120 +9867,4 @@ html:not(.mobile) .theme-default2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn
 [data-theme="dark"] .set-dark:not(.theme-gray)[class*="theme-"][class*="ui-x-"],
 [data-theme="dark"] .set-dark:not(.theme-light)[class*="theme-"] [class*="ui-x-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) {
   background-color: #07080a;
-}
-/* darkmode */
-@media (prefers-color-scheme: dark) {
-  .photo-slider:not(.loader-pause) {
-    background-color: #15181d;
-  }
-  .card .photo-slider:not(.loader-pause) {
-    background-color: #2f343e;
-  }
-  .photo-slider button {
-    color: #fff;
-  }
-  .photo-slider button:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-  .photo-slider .slider-nav i {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  .photo-slider .slider-nav i.selected {
-    background-color: rgba(255, 255, 255, 0.35);
-  }
-  .data-list .data-content.even {
-    background-color: rgba(255, 255, 255, 0.025);
-  }
-  .data-list .data-content:not([class*="col-"]) {
-    border-color: #41454d;
-  }
-  html:not(.mobile) .data-hover .data-content:not([class*="ui-"]):hover {
-    background-color: rgba(255, 255, 255, 0.06);
-  }
-  html:not(.mobile) .data-hover .data-content:not([class*="ui-"]):nth-child(odd):hover {
-    background-color: rgba(255, 255, 255, 0.06);
-  }
-  .data-hover .data-content.even:not([class*="ui-"]) {
-    background-color: rgba(255, 255, 255, 0.025);
-  }
-  .calendar {
-    background-color: #2f343e;
-  }
-  .calendar caption {
-    background-color: rgba(255, 255, 255, 0.15);
-  }
-  .calendar:not(.ui-dark):not(.ui-x-dark) caption {
-    background-color: rgba(255, 255, 255, 0.065);
-  }
-  .calendar button {
-    color: #fff;
-  }
-  html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) caption button:hover {
-    background-color: rgba(255, 255, 255, 0.08);
-  }
-  html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) caption:hover .calendar-title button {
-    background-color: rgba(255, 255, 255, 0.035);
-  }
-  html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) caption .calendar-title button:hover {
-    background-color: rgba(255, 255, 255, 0.08);
-  }
-  .calendar table.fill-weekends th:nth-child(n+6),
-  .calendar table.fill-weekends td:nth-child(n+6) {
-    background-color: rgba(255, 255, 255, 0.085);
-  }
-  .calendar:not(.ui-dark):not(.ui-x-dark) table.fill-weekends th:nth-child(n+6),
-  .calendar:not(.ui-dark):not(.ui-x-dark) table.fill-weekends td:nth-child(n+6) {
-    background-color: rgba(255, 255, 255, 0.045);
-  }
-  html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) td:not(.today):not(.pickerday) button:hover {
-    background-color: rgba(255, 255, 255, 0.075);
-  }
-  .calendar:not(.ui-dark):not(.ui-x-dark) td.today button:not([class*="ui-"]) {
-    background-color: rgba(255, 255, 255, 0.125);
-  }
-  html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) td.today button:not([class*="ui-"]):hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  .calendar:not(.ui-dark):not(.ui-x-dark) .details li > span > i {
-    color: #fff;
-    background-color: rgba(255, 255, 255, 0.075);
-  }
-  .calendar:not(.ui-dark):not(.ui-x-dark) .no-details li > strong,
-  .calendar:not(.ui-dark):not(.ui-x-dark) .no-details li > b {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  .calendar:not(.ui-dark):not(.ui-x-dark) .no-details li > span {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-  html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) .details li:hover {
-    background-color: rgba(255, 255, 255, 0.065);
-  }
-  html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) .panel .call:hover {
-    background-color: rgba(255, 255, 255, 0.075);
-  }
-  .calendar:not(.ui-dark):not(.ui-x-dark) .panel .call.selected {
-    background-color: rgba(255, 255, 255, 0.125);
-  }
-  html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) .panel .call.selected:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  .calendar .details > button {
-    background-color: rgba(255, 255, 255, 0.125);
-  }
-  .calendar:not(.ui-dark):not(.ui-x-dark) .details > button {
-    background-color: rgba(255, 255, 255, 0.065);
-  }
-  html:not(.mobile) .calendar .details > button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  html:not(.mobile) .calendar:not(.ui-dark):not(.ui-x-dark) .details > button:hover {
-    background-color: rgba(255, 255, 255, 0.12);
-  }
-  .text.calendar-picker {
-    color: #fff;
-  }
-  .text.calendar-picker button:not([class*="ui-"]),
-  .text.calendar-picker button:not([class*="ui-"]) .icon {
-    color: #fff;
-  }
 }

@@ -1,20 +1,43 @@
 // out: false
 /* data list */ @import '_settings.less';
 
+@data-list-stripe-bg:                   fade(@black, 3.5%);
+@data-list-stripe-bg-dark:              fade(@white, 3.5%);
+
+@data-list-hover-bg:                    fade(@black, 6%);
+@data-list-hover-bg-dark:               fade(@white, 6%);
+
+@data-list-border:                      #ddd;
+@data-list-border-dark:                 @highlighted-dark;
+
+@data-list-checked:                     fade(@yellow, 15%);
+
+._global-vars () {
+    --data-list-stripe-bg: @data-list-stripe-bg;
+    --data-list-hover-bg: @data-list-hover-bg;
+
+    --data-list-border: @data-list-border;
+}
+._global-vars-dark () {
+    --data-list-stripe-bg: @data-list-stripe-bg-dark;
+    --data-list-hover-bg: @data-list-hover-bg-dark;
+
+    --data-list-border: @data-list-border-dark;
+}
+
 .ease-data-list .data-content { transition-property: background-color; transition-duration: .15s; }
 
-.data-list .data-content:not([class*="col-"]) { padding: 10px; border-bottom: solid 1px #ddd; }
+.data-list .data-content:not([class*="col-"]) { padding: 10px; ._border-var(@dir: border-bottom; @var: data-list-border); }
 .data-list .data-content:before,.data-list .data-content:after { content: ""; display: table; }
 .data-list .data-content:after { clear: both; }
-.data-list .data-content.even { background-color: rgba(0,0,0,.025); }
-.data-list .data-content.checked { background-color: rgba(255,166,0,.1) !important; }
+.data-list .data-content.even { ._bg-var(data-list-stripe-bg); }
+.data-list .data-content.checked { background-color: @data-list-checked !important; }
 
 .data-list:not(.data-show-all) .data-content:not(.show) { display: none; }
 .data-list.data-filtered.data-show-all .data-content:not(.filtered) { display: none; }
 
-html:not(.mobile) .data-hover .data-content:not([class*="ui-"]):hover { background-color: rgba(0,0,0,.06); }
-html:not(.mobile) .data-hover .data-content:not([class*="ui-"]):nth-child(odd):hover { background-color: rgba(0,0,0,.06); }
-.data-hover .data-content.even:not([class*="ui-"]) { background-color: rgba(0,0,0,.025); }
+html:not(.mobile) .data-hover .data-content:not([class*="ui-"]):hover,html:not(.mobile) .data-hover .data-content:not([class*="ui-"]):nth-child(odd):hover { ._bg-var(data-list-hover-bg); }
+.data-hover .data-content.even:not([class*="ui-"]) { ._bg-var(data-list-stripe-bg); }
 
 .data-list > .row,.data-list .data-content > .row { margin-left: inherit; margin-right: inherit; }
 .data-list .data-paging button:not(.btn) { color: inherit; background-color: @no-color; border: 0; }
