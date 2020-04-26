@@ -125,30 +125,6 @@
                     </div>
                 </div>
 
-                <b class="margin-5-b block">.theme-blue</b>
-                <div class="row row-no-gap highlight xs-fluid theme-blue">
-                    <div class="col-3 col-md-6 col-sm-6">
-                        <div class="padding-30 ui-x-light">
-                            .ui-x-light
-                        </div>
-                    </div>
-                    <div class="col-3 col-md-6 col-sm-6">
-                        <div class="padding-30 ui-light">
-                            .ui-light
-                        </div>
-                    </div>
-                    <div class="col-3 col-md-6 col-sm-6">
-                        <div class="padding-30 ui-dark">
-                            .ui-dark
-                        </div>
-                    </div>
-                    <div class="col-3 col-md-6 col-sm-6">
-                        <div class="padding-30 ui-x-dark">
-                            .ui-x-dark
-                        </div>
-                    </div>
-                </div>
-
                 <b class="margin-5-b block">.theme-default</b>
                 <div class="row row-no-gap highlight xs-fluid theme-default">
                     <div class="col-3 col-md-6 col-sm-6">
