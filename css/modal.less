@@ -13,7 +13,7 @@
 
 .modal-opened,.modal-opened > body { overflow: hidden; }
 
-.modal-bg { width: 100%; min-width: 320px; height: 100%; background-color: @modal-bg; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 89; }
+.modal-bg { width: 100%; min-width: @layout-min; height: 100%; background-color: @modal-bg; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 89; }
 .modal-bg:not(.open) { display: none; }
 .modal-bg:not(.open-ease) { opacity: 0; }
 
@@ -29,9 +29,9 @@
 .modal-win.no-bg .error:not(.form-holder) { background-color: @red !important; }
 .modal-win.no-bg .error .icon { color: @white !important; }
 
-.modal-content.lg { max-width: 1200px; min-height: 300px; }
-.modal-content.md { max-width: 960px; min-height: 240px; }
-.modal-content.sm { max-width: 480px; min-height: 120px; }
+.modal-content.lg { max-width: @lg-breakpoint; min-height: 300px; }
+.modal-content.md { max-width: @md-breakpoint; min-height: 240px; }
+.modal-content.sm { max-width: @xs-breakpoint; min-height: 120px; }
 .modal-content.inline-modal { width: auto; }
 
 .modal { display: none; }
@@ -76,9 +76,9 @@ html:not(.mobile) .modal-content.fullscreen .close-modal:hover { background-colo
 
 .modal-footer .btn:focus,.modal-container [type="submit"]:focus { box-shadow: 0 0 0 3px @modal-btn-focus-shadow; }
 
-@media (min-width: 768px) {
-    .modal-content.inline-modal { max-width: 960px; }
+@media (@md-start) {
+    .modal-content.inline-modal { max-width: @md-breakpoint; }
 }
-@media (max-width: 767px) {
+@media (@sm-finish) {
     .modal-content.inline-modal { max-width: 90%; }
 }

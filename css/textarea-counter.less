@@ -20,7 +20,7 @@
 .textarea:not(.toggle-textarea)[data-counter].change:before { content: attr(data-change); }
 
 .textarea:not(.form-light):not(.toggle-textarea)[data-counter]:before,.textarea.form-focus:not(.toggle-textarea)[data-counter]:before { ._color-var(textarea-counter-color); ._bg-var(textarea-counter-bg); }
-.textarea.form-light:not(.toggle-textarea):not(.form-focus)[data-counter]:before { color: @white; background-color: rgba(255,255,255,.3); }
+.textarea.form-light:not(.toggle-textarea):not(.form-focus)[data-counter]:before { color: @white; ._bg-var(textarea-counter-bg); }
 
 .error[data-counter]:before { color: @red !important; background-color: lighten(@red, 49%) !important; }
 .warning[data-counter]:before { color: @yellow !important; background-color: lighten(@yellow, 44%) !important; }

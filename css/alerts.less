@@ -35,7 +35,7 @@
 
 .alerts-opened,.alerts-opened > body { overflow: hidden; }
 
-.alerts-bg { width: 100%; min-width: 320px; height: 100%; background-color: @alerts-bg; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 97; }
+.alerts-bg { width: 100%; min-width: @layout-min; height: 100%; background-color: @alerts-bg; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 97; }
 .alerts-bg:not(.open) { display: none; }
 .alerts-bg:not(.open-ease) { opacity: 0; }
 
@@ -87,9 +87,9 @@ html:not(.mobile) .alerts-msg:hover { opacity: .9; }
 .close-alert .icon { width: 12px; height: 12px; stroke-width: 44px; }
 html:not(.mobile) .close-alert:hover { opacity: .75; }
 
-@media (min-width: 768px) {
+@media (@md-start) {
     .dialog-msg { padding: 30px; }
 }
-@media (max-width: 767px) {
+@media (@sm-finish) {
     .dialog-msg { padding: 30px 10px; }
 }

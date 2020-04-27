@@ -39,7 +39,7 @@
 .ease-calendar .details,.ease-calendar thead,.ease-calendar tbody { transition-property: transform, opacity; transition-duration: .25s; transition-timing-function: ease-in-out; }
 .ease-calendar button,.ease-calendar a,.calendar .details li { transition-property: background-color, opacity; transition-duration: .15s; }
 
-.calendar { ._bg-var(card-bg); padding: 5px; overflow: hidden; display: block; position: relative; -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
+.calendar { ._bg-var(card-bg); padding: 5px; overflow: hidden; display: block; position: relative; ._no-user-select(); }
 .calendar:not(.active) { display: none; }
 
 .calendar,.calendar * { text-align: center !important; }
@@ -154,9 +154,9 @@ html:not(.mobile) .calendar .panel .call:hover,html:not(.mobile) .calendar .pane
 
 .text.picker-l .calendar { right: 0; }
 
-@media (min-width: 481px) {
+@media (@sm-start) {
     .text .calendar { min-width: 376px; }
 }
-@media (max-width: 480px) {
+@media (@xs-finish) {
     .text .calendar { min-width: 296px; }
 }

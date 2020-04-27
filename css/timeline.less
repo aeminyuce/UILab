@@ -43,7 +43,7 @@
 .timeline.side-l > li { padding-left: 30px; }
 .timeline.side-l > li:before,.timeline.side-l > li:after { left: 0; }
 
-@media (min-width: 768px) {
+@media (@md-start) {
     .timeline:not(.side-l):after { margin-left: -1px; left: 50%; }
 
     .timeline:not(.side-l) > li { width: 50%; }
@@ -56,7 +56,7 @@
     .timeline:not(.side-l) > li:nth-child(2n+1) { padding-right: 30px; }
     .timeline:not(.side-l) > li:nth-child(2n+2) { padding-left: 30px; left: 50%; }
 }
-@media (max-width: 767px) {
+@media (@sm-finish) {
     .timeline:after { left: 6px; }
 
     .timeline > li { padding-left: 30px; }

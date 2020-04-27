@@ -1,8 +1,11 @@
 // out: false
 /* stripes */ @import '_settings.less';
 
-.stripe-light { background-image: linear-gradient(45deg, @no-color 25%, rgba(255,255,255,.35) 25%, rgba(255,255,255,.35) 50%, @no-color 50%, @no-color 75%, rgba(255,255,255,.35) 75%); background-size: 20px 20px; }
-.stripe-dark { background-image: linear-gradient(45deg, @no-color 25%, rgba(0,0,0,.15) 25%, rgba(0,0,0,.15) 50%, @no-color 50%, @no-color 75%, rgba(0,0,0,.15) 75%); background-size: 20px 20px; }
+@stripe-light-bg:                       linear-gradient(45deg, @no-color 25%, fade(@white, 35%) 25%, fade(@white, 35%) 50%, @no-color 50%, @no-color 75%, fade(@white, 35%) 75%);
+@stripe-dark-bg:                        linear-gradient(45deg, @no-color 25%, fade(@black, 15%) 25%, fade(@black, 15%) 50%, @no-color 50%, @no-color 75%, fade(@black, 15%) 75%);
+
+.stripe-light { background-image: @stripe-light-bg; background-size: 20px 20px; }
+.stripe-dark { background-image: @stripe-dark-bg; background-size: 20px 20px; }
 
 .stripe-xs { background-size: 5px 5px; }
 .stripe-sm { background-size: 10px 10px; }

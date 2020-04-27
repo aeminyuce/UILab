@@ -55,20 +55,20 @@ html,.login-page { height: 100%; }
 .login-icons .icon:nth-child(4) { width: 106px; height: 106px; bottom: 18px; right: 92px; opacity: .3; transform: rotate(-12deg); }
 .login-icons .icon:nth-child(5) { width: 38px; height: 38px; top: 72px; right: 20%; opacity: .15; transform: rotate(12deg); }
 
-@media (min-width: 1200px) {
+@media (@lg-start) {
     .login-forms-container { padding: 8% 0 8% 14% !important; }
     .login-container { padding: 8% 14% 8% 0 !important; }
 }
-@media (max-width: 1199px) and (min-width: 768px) {
+@media (@md-start) and (@default-finish){
     .login-forms-container { padding: 50px 0 10px 10px !important; }
     .login-container { padding: 50px 10px 10px 0 !important; }
 }
-@media (min-width: 768px) {
+@media (@md-start) {
     .forms-holder,.login-holder { min-height: 560px; height: 100%; }
     .forms-holder,.login-holder > .set-absolute { padding: 10%; }
 }
-@media (max-width: 767px) {
-    .login-holder { min-height: 320px; }
+@media (@sm-finish) {
+    .login-holder { min-height: @layout-min; }
     .forms-holder,.login-holder > .set-absolute { padding: 30px; }
 
     .login-forms-container { padding: 10px 10px 0 10px !important; }

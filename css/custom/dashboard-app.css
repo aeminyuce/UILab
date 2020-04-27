@@ -196,7 +196,7 @@ html:not(.mobile) .theme-app2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn-pas
   display: inline-block;
   border-radius: 16px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
   .fixed {
     max-width: 1600px;
   }

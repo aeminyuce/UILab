@@ -1,13 +1,16 @@
 // out: false
 /* mobile menu */ @import '_settings.less';
 
+@mobile-menu-bg-bg:                     fade(@black, 65%);
+@mobile-menu-bg:                        fade(@black, 15%);
+
 .mobile-menu-opened,.mobile-menu-opened > body { overflow: hidden; }
 
-.mobile-menu-bg { width: 100%; min-width: 320px; height: 100%; background-color: rgba(0,0,0,.65); position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 89; }
+.mobile-menu-bg { width: 100%; min-width: @layout-min; height: 100%; background-color: @mobile-menu-bg-bg; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 89; }
 .mobile-menu-bg:not(.open) { display: none; }
 .mobile-menu-bg:not(.open-ease) { opacity: 0; }
 
-.mobile-menu { width: 100%; width: 320px; ._bg-var(body-bg); position: fixed; top: 0; bottom: 0; z-index: 90; box-shadow: 0 5px 15px rgba(0,0,0,.15); }
+.mobile-menu { width: 100%; width: @layout-min; ._bg-var(body-bg); position: fixed; top: 0; bottom: 0; z-index: 90; box-shadow: 0 5px 15px @mobile-menu-bg; }
 
 .mobile-menu.show-r { right: 0; transform: translateX(100%); }
 .mobile-menu.show-l { left: 0; transform: translateX(-100%); }

@@ -1,10 +1,4 @@
 /* landing page */
-[data-theme="light"] {
-  --landing-page-banner-bg: rgba(17, 218, 84, 0.4);
-}
-[data-theme="dark"] {
-  --landing-page-banner-bg: rgba(4, 45, 18, 0.8);
-}
 .theme-farmer.ui-x-light,
 .theme-farmer .ui-x-light:not([class*="theme-"]) {
   background-color: rgba(255, 186, 12, 0.15);
@@ -110,8 +104,7 @@ html:not(.mobile) .theme-farmer2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn-
 }
 .banner-content:after {
   content: "";
-  background-color: rgba(17, 218, 84, 0.4);
-  background-color: var(--landing-page-banner-bg);
+  background-color: rgba(11, 147, 57, 0.4);
   position: absolute;
   top: 0;
   right: 0;

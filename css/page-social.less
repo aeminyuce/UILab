@@ -60,9 +60,9 @@
     html:not(.mobile) &:hover { background-color: @youtube-hover-bg !important; }
 }
 
-@media (max-width: 480px) {
+@media (@xs-finish) {
     .page-social { display: none; }
 }
-@media (max-height: 480px) {
+@media (max-height: @xs-breakpoint) {
     .page-social { display: none; }
 }

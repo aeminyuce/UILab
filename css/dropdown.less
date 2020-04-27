@@ -90,13 +90,13 @@ html:not(.mobile) .dropdown ul.content > li:hover { ._bg-var(dropdown-list-hover
 .dropdown .list-column-2 > li:nth-child(2n),.dropdown .list-column-3 > li:nth-child(3n),
 .dropdown .list-column-4 > li:nth-child(4n),.dropdown .list-column-5 > li:nth-child(5n),.dropdown .list-column-6 > li:nth-child(6n) { border-right: none; }
 
-@media (min-width: 768px) {
+@media (@md-start) {
     .dropdown .content { min-width: 260px; }
     .dropdown .content.list-column-2 { min-width: 420px; }
     .dropdown .content[class*="list-column-"] { min-width: 680px; }
 
     .dropdown ul.content.has-grid { min-width: 300px; }
 }
-@media (max-width: 767px) {
+@media (@sm-finish) {
     .dropdown .content { transform-origin: top center !important; }
 }

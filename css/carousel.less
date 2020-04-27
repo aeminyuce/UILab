@@ -1,6 +1,8 @@
 // out: false
 /* carousel */ @import '_settings.less';
 
+@carousel-gallery-detail-loader-bg:     fade(@black, 7.5%);
+
 @keyframes carousel-gallery-loader { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
 .carousel-touchmove body { height: 100%; overflow: hidden; }
@@ -33,7 +35,7 @@
 .bring-b:not(.show) { transform: translateY(15px); }
 .bring-l:not(.show) { transform: translateX(-15px); }
 
-@media (max-width: 959px) {
+@media (@md-finish) {
   .md-bring-back:not(.show) { transform: scale(.85); }
   .md-bring-front:not(.show) { transform: scale(1.15); }
 
@@ -42,7 +44,7 @@
   .md-bring-b:not(.show) { transform: translateY(15px); }
   .md-bring-l:not(.show) { transform: translateX(-15px); }
 }
-@media (max-width: 767px) {
+@media (@sm-finish) {
   .sm-bring-back:not(.show) { transform: scale(.85); }
   .sm-bring-front:not(.show) { transform: scale(1.15); }
 
@@ -51,7 +53,7 @@
   .sm-bring-b:not(.show) { transform: translateY(15px); }
   .sm-bring-l:not(.show) { transform: translateX(-15px); }
 }
-@media (max-width: 480px) {
+@media (@xs-finish) {
   .xs-bring-back:not(.show) { transform: scale(.85); }
   .xs-bring-front:not(.show) { transform: scale(1.15); }
 
@@ -68,7 +70,7 @@ html:not(.mobile) .carousel-gallery .detail:not(.detail-loader) img:hover { opac
 
 .carousel-gallery .detail .icon { width: 80px; height: 80px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); opacity: 1 !important; stroke-width: 16px; }
 
-.carousel-gallery .detail.detail-loader { background-color: rgba(0,0,0,.075); }
+.carousel-gallery .detail.detail-loader { background-color: @carousel-gallery-detail-loader-bg; }
 .carousel-gallery .detail.detail-loader img { opacity: 0; }
 .carousel-gallery .detail.detail-loader .zoom-icon { display: none; }
 .carousel-gallery .detail.detail-loader .loader-icon { animation: carousel-gallery-loader 1.15s linear infinite; }

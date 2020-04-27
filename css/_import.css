@@ -11,7 +11,7 @@
   --btn-hover-bg: rgba(0, 0, 0, 0.15);
   --btn-ghost-hover-bg: rgba(0, 0, 0, 0.075);
   --dark: #808080;
-  --x-dark: #666666;
+  --x-dark: #666;
   --code-color: #c7254e;
   --code-bg: #f9f2f4;
   --pre-color: #333;
@@ -1400,7 +1400,7 @@ html .row {
     right: 91.666667%;
   }
 }
-@media (max-width: 959px) and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 959px) {
   .no-gutter-md {
     padding-right: 0 !important;
     padding-left: 0 !important;
@@ -1606,7 +1606,7 @@ html .row {
     right: 0;
   }
 }
-@media (max-width: 767px) and (min-width: 481px) {
+@media (min-width: 481px) and (max-width: 767px) {
   .no-gutter-md,
   .no-gutter-sm {
     padding-right: 0 !important;
@@ -2600,7 +2600,7 @@ html .row {
     padding-left: 0 !important;
   }
 }
-@media (max-width: 959px) and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 959px) {
   .md-no-padding {
     padding: 0 !important;
   }
@@ -2625,7 +2625,7 @@ html .row {
     padding-left: 0 !important;
   }
 }
-@media (max-width: 767px) and (min-width: 481px) {
+@media (min-width: 481px) and (max-width: 767px) {
   .md-no-padding,
   .sm-no-padding {
     padding: 0 !important;
@@ -3000,7 +3000,7 @@ html .row {
     margin-left: 0 !important;
   }
 }
-@media (max-width: 959px) and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 959px) {
   .md-no-margin {
     margin: 0 !important;
   }
@@ -3025,7 +3025,7 @@ html .row {
     margin-left: 0 !important;
   }
 }
-@media (max-width: 767px) and (min-width: 481px) {
+@media (min-width: 481px) and (max-width: 767px) {
   .md-no-margin,
   .sm-no-margin {
     margin: 0 !important;
@@ -3508,7 +3508,7 @@ a {
 .x-dark .icon:not([class*="ui-"]),
 .x-dark a:not([class*="ui-"]),
 .x-dark button:not([class*="ui-"]) {
-  color: #666666;
+  color: #666;
   color: var(--x-dark);
 }
 .xx-dark,
@@ -5564,7 +5564,8 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
 }
 .textarea.form-light:not(.toggle-textarea):not(.form-focus)[data-counter]:before {
   color: #fff;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.035);
+  background-color: var(--textarea-counter-bg);
 }
 .error[data-counter]:before {
   color: #d10f1c !important;
@@ -8852,6 +8853,7 @@ html:not(.mobile) .photo-gallery .img.has-info:hover > span,
 .preview-prev,
 .preview-next {
   color: #fff;
+  text-align: center;
   width: 52px;
   height: 52px;
   background-color: rgba(255, 255, 255, 0.15);
@@ -8889,7 +8891,7 @@ html:not(.mobile) .preview-next:hover {
   stroke-width: 12px;
 }
 .preview-loader.pause {
-  color: #dc000f;
+  color: #d10f1c;
   margin: 0;
   animation: none;
 }

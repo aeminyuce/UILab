@@ -22,15 +22,15 @@ dl:after { clear: both; }
 dl:not(:last-child) { margin-bottom: 20px; }
 dt { font-weight: @font-bold; }
 
-@media (min-width: 768px) {
+@media (@md-start) {
     .dl-horizontal dt { white-space: nowrap; text-overflow: ellipsis; width: 170px; float: left; overflow: hidden; clear: left; position: relative; }
     .dl-horizontal dt:after { content: ":"; position: absolute; right: 0; }
     .dl-horizontal dd { margin-left: 180px; }
 }
-@media (max-width: 767px) {
+@media (@sm-finish) {
     .dl-horizontal dd { margin-bottom: 5px; }
 }
-@media (min-width: 481px) {
+@media (@sm-start) {
     .list-column-2 > li { width: 50%; }
     .list-column-3 > li { width: 33.333332%; }
     .list-column-4 > li { width: 25%; }
@@ -39,6 +39,6 @@ dt { font-weight: @font-bold; }
 
     .mobile-menu [class*="list-column-"] > li { width: 100%; }
 }
-@media (max-width: 480px) {
+@media (@xs-finish) {
     [class*="list-column-"] > li { width: 100%; }
 }

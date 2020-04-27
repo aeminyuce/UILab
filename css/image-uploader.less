@@ -13,7 +13,7 @@
 @image-uploader-list-border:            fade(@black, 15%);
 @image-uploader-list-border-dark:       fade(@white, 1.75%);
 
-@image-uploader-list-tag-color:         #666;
+@image-uploader-list-tag-color:         @x-dark;
 @image-uploader-list-tag-color-dark:    #bbb;
 
 @image-uploader-list-tag-bg:            fade(@black, 8%);
@@ -23,7 +23,7 @@
 @image-uploader-list-img-hover-shadow:  fade(@black, 20%);
 @image-uploader-list-info-color:        #7d7d7d;
 
-@image-uploader-loading-bg:             linear-gradient(45deg, @no-color 25%, rgba(255,255,255,.25) 25%, rgba(255,255,255,.25) 50%, @no-color 50%, @no-color 75%, rgba(255,255,255,.25) 75%);
+@image-uploader-loading-bg:             linear-gradient(45deg, @no-color 25%, fade(@white, 25%) 25%, fade(@white, 25%) 50%, @no-color 50%, @no-color 75%, fade(@white, 25%) 75%);
 
 ._global-vars () {
     --image-uploader-drop-bg: @image-uploader-drop-bg;
@@ -95,19 +95,19 @@ html:not(.mobile) .uploader-list ul > li .img img:hover { transform: translate(-
 .uploader-list ul > li .info { color: @image-uploader-list-info-color; padding: 1px 6px 1px 0; }
 .uploader-list ul > li .tag { ._color-var(image-uploader-list-tag-color); font-size: 13px; white-space: nowrap; padding: 1px 6px; ._bg-var(image-uploader-list-tag-bg); border-radius: 20px; }
 
-@media (min-width: 960px) {
+@media (@default-start) {
     .uploader-list ul > li { width: 20%; }
 }
-@media (max-width: 959px) {
+@media (@md-finish) {
     .uploader-list ul > li { width: 25%; }
 }
-@media (max-width: 767px) {
+@media (@sm-finish) {
     .uploader-list ul > li { width: 33.333332%; }
 }
-@media (min-width: 481px) {
+@media (@sm-start) {
     .uploader-list ul > li .img { min-height: 164px; }
 }
-@media (max-width: 480px) {
+@media (@xs-finish) {
     .uploader-list ul > li .img { min-height: 98px; }
 }
 @media (max-width: 380px) {

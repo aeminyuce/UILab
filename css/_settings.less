@@ -15,25 +15,27 @@
 @round:                                 6px;
 
 // global breakpoints
-@xl-start:                              ~"(min-width: 1680px)";
+@xl-breakpoint:                         1680px;
+@lg-breakpoint:                         1200px;
+@md-breakpoint:                         960px;
+@sm-breakpoint:                         768px;
+@xs-breakpoint:                         480px;
+@layout-min:                            320px;
 
-@lg-finish:                             ~"(max-width: 1679px)";
-@lg-start:                              ~"(min-width: 1200px)";
-@lg-start-finish:                       @lg-start and @lg-finish;
+@xl-start:                              ~'min-width:' @xl-breakpoint;
+@lg-finish:                             ~'max-width:' @xl-breakpoint - 1;
 
-@default-finish:                        ~'(max-width: 1199px)';
-@default-start:                         ~'(min-width: 960px)';
-@default-start-finish:                  @default-start and @default-finish;
+@lg-start:                              ~'min-width:' @lg-breakpoint;
+@default-finish:                        ~'max-width:' @lg-breakpoint - 1;
 
-@md-finish:                             ~'(max-width: 959px)';
-@md-start:                              ~'(min-width: 768px)';
-@md-start-finish:                       @md-start and @md-finish;
+@default-start:                         ~'min-width:' @md-breakpoint;
+@md-finish:                             ~'max-width:' @md-breakpoint - 1;
 
-@sm-finish:                             ~'(max-width: 767px)';
-@sm-start:                              ~'(min-width: 481px)';
-@sm-start-finish:                       @sm-start and @sm-finish;
+@md-start:                              ~'min-width:' @sm-breakpoint;
+@sm-finish:                             ~'max-width:' @sm-breakpoint - 1;
 
-@xs-finish:                             ~'(max-width: 480px)';
+@sm-start:                              ~'min-width:' @xs-breakpoint + 1;
+@xs-finish:                             ~'max-width:' @xs-breakpoint;
 
 // global colors
 @body-bg:                               #f9f9f9;
@@ -42,7 +44,12 @@
 @no-color:                              transparent;
 
 @white:                                 #fff;
+@x-light:                               #ddd;
+@light:                                 #aaa;
+@dark:                                  #808080;
+@x-dark:                                #666;
 @black:                                 #000;
+
 @gray:                                  #ccc;
 @green:                                 #2dbd3a;
 @yellow:                                #ffa600;
@@ -55,7 +62,7 @@
 @border-color:                          fade(@black, 15%);
 @border-color-dark:                     fade(@white, 17.5%);
 
-@table-border-color:                    #ddd;
+@table-border-color:                    @x-light;
 @table-border-color-dark:               @highlighted-dark;
 
 @card-bg:                               @white;

@@ -1,5 +1,6 @@
 /* dashboard app */ @import '../_settings.less';
 
+@lg-breakpoint:                         1600px;
 @body-bg:                               #eceef5;
 @app-round:                             16px;
 
@@ -50,6 +51,6 @@
 .messages li [class*="img-photo"] { margin-left: -35px; float: left; }
 .messages li > span:not([class*="img-photo"]) { padding: 6px 10px; display: inline-block; border-radius: @app-round; }
 
-@media (min-width: 1200px) {
+@media (@lg-start) {
     .fixed { max-width: 1600px; }
 }
