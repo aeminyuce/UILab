@@ -50,21 +50,21 @@
                     <span class="sp-30"></span>
 
                     <h5 class="x-light padding-15 margin-5-b">NEWS &amp; EVENTS</h5>
-                    <ul class="list-unstyled list-spacer-15 large block-2nd ease-2nd-btn">
+                    <ul class="list-unstyled list-spacer-15 x-light large block-2nd ease-2nd-btn">
                         <li>
-                            <a class="btn light btn-ghost circle" href="#">
+                            <a class="btn btn-ghost circle" href="#">
                                 <svg class="icon"><use href="#news"></use></svg>
                                 News
                             </a>
                         </li>
                         <li>
-                            <a class="btn light btn-ghost circle" href="#">
+                            <a class="btn btn-ghost circle" href="#">
                                 <svg class="icon"><use href="#network"></use></svg>
                                 Community
                             </a>
                         </li>
                         <li>
-                            <a class="btn light btn-ghost circle" href="#">
+                            <a class="btn btn-ghost circle" href="#">
                                 <svg class="icon"><use href="#calendar-days"></use></svg>
                                 Events
                             </a>

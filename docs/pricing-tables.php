@@ -1,5 +1,5 @@
 <!-- custom CSS -->
-<link rel="stylesheet" href="../css/custom/pricing-tables.css"/>
+<link rel="stylesheet" href="../css/custom/pricing-table.css"/>
 
 <main class="container no-gutter">
     <div class="fixed">
@@ -11,7 +11,7 @@
                 <div class="row row-lg-gap align-c">
                     <div class="col-4">
 
-                        <div class="card full-h padding-30 round">
+                        <div class="card full-h padding-30 round shadow">
                             <div class="margin-30-v">
                                 <svg class="icon icon-72 theme-default2 ui-text"><use href="#box"></use></svg>
                             </div>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="col-4">
 
-                        <div class="card full-h padding-30 round">
+                        <div class="card full-h padding-30 round shadow">
                             <div class="margin-30-v">
                                 <svg class="icon icon-72 theme-default2 ui-text"><use href="#wallet"></use></svg>
                             </div>
@@ -70,7 +70,7 @@
                 <div class="row row-lg-gap align-c">
                     <div class="col-4">
 
-                        <div class="card full-h round">
+                        <div class="card full-h round shadow">
                             <div class="card-side padding-30 border-b">
                                 <div class="margin-30-v">
                                     <svg class="icon icon-72 theme-default2 ui-text"><use href="#box"></use></svg>
@@ -85,20 +85,20 @@
                             </div>
                             <div class="card-side padding-30">
                                 <ul class="list-unstyled list-spacer-15 margin-15-v large block-2nd">
-                                    <li><span class="dark default">Number of Users</span>1 User</li>
-                                    <li><span class="dark default">Domains</span>1 Domain</li>
-                                    <li><span class="dark default">Projects</span>1 Project</li>
+                                    <li><span class="light default">Number of Users</span>1 User</li>
+                                    <li><span class="light default">Domains</span>1 Domain</li>
+                                    <li><span class="light default">Projects</span>1 Project</li>
                                     <li>
-                                        <span class="dark default">Support</span>
+                                        <span class="light default">Support</span>
                                         <svg class="icon"><use href="#check"></use></svg>
                                     </li>
                                     <li>
-                                        <span class="dark default">Tutorials</span>
+                                        <span class="light default">Tutorials</span>
                                         <svg class="icon"><use href="#no"></use></svg>
                                         </span>
                                     </li>
                                     <li>
-                                        <span class="dark default">Cancellation</span>
+                                        <span class="light default">Cancellation</span>
                                         <svg class="icon"><use href="#no"></use></svg>
                                     </li>
                                 </ul>
@@ -124,20 +124,20 @@
                             </div>
                             <div class="card-side padding-30">
                                 <ul class="list-unstyled list-spacer-15 margin-15-v large block-2nd">
-                                    <li><span class="light default">Number of Users</span>5 Users</li>
-                                    <li><span class="light default">Domains</span>10 Domains</li>
-                                    <li><span class="light default">Projects</span>100 Projects</li>
+                                    <li><span class="x-light default">Number of Users</span>5 Users</li>
+                                    <li><span class="x-light default">Domains</span>10 Domains</li>
+                                    <li><span class="x-light default">Projects</span>100 Projects</li>
                                     <li>
-                                        <span class="light default">Support</span>
+                                        <span class="x-light default">Support</span>
                                         <svg class="icon"><use href="#check"></use></svg>
                                     </li>
                                     <li>
-                                        <span class="light default">Tutorials</span>
+                                        <span class="x-light default">Tutorials</span>
                                         <svg class="icon"><use href="#check"></use></svg>
                                         </span>
                                     </li>
                                     <li>
-                                        <span class="light default">Cancellation</span>
+                                        <span class="x-light default">Cancellation</span>
                                         <svg class="icon"><use href="#check"></use></svg>
                                     </li>
                                 </ul>
@@ -147,7 +147,7 @@
                     </div>
                     <div class="col-4">
 
-                        <div class="card full-h round">
+                        <div class="card full-h round shadow">
                             <div class="card-side padding-30 border-b">
                                 <div class="margin-30-v">
                                     <svg class="icon icon-72 theme-default2 ui-text"><use href="#wallet"></use></svg>
@@ -162,20 +162,20 @@
                             </div>
                             <div class="card-side padding-30">
                                 <ul class="list-unstyled list-spacer-15 margin-15-v large block-2nd">
-                                    <li><span class="dark default">Number of Users</span>100 Users</li>
-                                    <li><span class="dark default">Domains</span>1000 Domains</li>
-                                    <li><span class="dark default">Projects</span>Unlimited Projects</li>
+                                    <li><span class="light default">Number of Users</span>100 Users</li>
+                                    <li><span class="light default">Domains</span>1000 Domains</li>
+                                    <li><span class="light default">Projects</span>Unlimited Projects</li>
                                     <li>
-                                        <span class="dark default">Support</span>
+                                        <span class="light default">Support</span>
                                         <svg class="icon"><use href="#check"></use></svg>
                                     </li>
                                     <li>
-                                        <span class="dark default">Tutorials</span>
+                                        <span class="light default">Tutorials</span>
                                         <svg class="icon"><use href="#no"></use></svg>
                                         </span>
                                     </li>
                                     <li>
-                                        <span class="dark default">Cancellation</span>
+                                        <span class="light default">Cancellation</span>
                                         <svg class="icon"><use href="#no"></use></svg>
                                     </li>
                                 </ul>
