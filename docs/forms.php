@@ -88,7 +88,7 @@
                                     <svg class="icon no-opacity animate-spin"><use href="#sync"/></svg>
                                 </button>
                             </div>
-                            <div class="row row-no-gap">
+                            <div class="row no-row-gap">
                                 <div class="col-12">
                                     <div class="text border-dual round ease-form">
                                         <input type="text" maxlength="4" placeholder="Please enter code">
@@ -160,7 +160,7 @@
                                         <svg class="icon no-opacity animate-spin"><use href="#sync" /></svg>
                                     </button>
                                 </div>
-                                <div class="row row-no-gap">
+                                <div class="row no-row-gap">
                                     <div class="col-12">
                                         <div class="text border-dual round ease-form">
                                             <input type="text" maxlength="4" placeholder="Please enter code">
@@ -682,7 +682,7 @@
 
                 <h4>Forms with Actions</h4>
                 <div class="padding-30-b">
-                    <div class="row row-sm-gap-v no-fluid">
+                    <div class="row row-gap-sm-v no-fluid">
                         <div class="col-6">
                             <label class="form-label">Label</label>
                         </div>
@@ -694,7 +694,7 @@
                         <input type="text">
                     </div>
 
-                    <div class="row row-sm-gap-v no-fluid">
+                    <div class="row row-gap-sm-v no-fluid">
                         <div class="col-6">
                             <label class="form-label">Label</label>
                         </div>
@@ -706,7 +706,7 @@
                         <input type="text">
                     </div>
 
-                    <div class="row row-sm-gap-v no-fluid">
+                    <div class="row row-gap-sm-v no-fluid">
                         <div class="col-6">
                             <label class="form-label">Label</label>
                         </div>
@@ -734,7 +734,7 @@
                     <div class="col-12">
                         <label class="form-label">Form Holder with Grid System</label>
                         <span class="sp-10"></span>
-                        <div class="form-holder row row-no-gap margin-10-b">
+                        <div class="form-holder row no-row-gap margin-10-b">
 
                             <div class="col-5 col-xs-4">
                                 <div class="text round ease-form">
@@ -758,7 +758,7 @@
                             </div>
 
                         </div>
-                        <div class="form-holder row row-no-gap margin-10-b">
+                        <div class="form-holder row no-row-gap margin-10-b">
 
                             <div class="col-5 col-xs-4">
                                 <div class="text round border-dual ease-form">
@@ -782,7 +782,7 @@
                             </div>
 
                         </div>
-                        <div class="form-holder row row-no-gap margin-10-b">
+                        <div class="form-holder row no-row-gap margin-10-b">
 
                             <div class="col-5 col-xs-4">
                                 <div class="text circle ease-form">
@@ -806,7 +806,7 @@
                             </div>
 
                         </div>
-                        <div class="form-holder row row-no-gap margin-10-b">
+                        <div class="form-holder row no-row-gap margin-10-b">
 
                             <div class="col-5 col-xs-4">
                                 <div class="text circle border-dual ease-form">
@@ -833,7 +833,7 @@
                     </div>
                     <div class="col-12">
                         <label class="form-label padding-10-b">Form Holder with Large Forms</label>
-                        <div class="form-holder form-lg row row-no-gap margin-10-b">
+                        <div class="form-holder form-lg row no-row-gap margin-10-b">
 
                             <div class="col-5 col-xs-4">
                                 <div class="text round ease-form">
@@ -857,7 +857,7 @@
                             </div>
 
                         </div>
-                        <div class="form-holder form-lg row row-no-gap margin-10-b">
+                        <div class="form-holder form-lg row no-row-gap margin-10-b">
 
                             <div class="col-5 col-xs-4">
                                 <div class="text round border-dual ease-form">
@@ -881,7 +881,7 @@
                             </div>
 
                         </div>
-                        <div class="form-holder form-lg row row-no-gap margin-10-b">
+                        <div class="form-holder form-lg row no-row-gap margin-10-b">
 
                             <div class="col-5 col-xs-4">
                                 <div class="text circle ease-form">
@@ -905,7 +905,7 @@
                             </div>
 
                         </div>
-                        <div class="form-holder form-lg row row-no-gap margin-10-b">
+                        <div class="form-holder form-lg row no-row-gap margin-10-b">
 
                             <div class="col-5 col-xs-4">
                                 <div class="text circle border-dual ease-form">
@@ -947,7 +947,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="row row-no-gap">
+                            <div class="row no-row-gap">
                                 <div class="col-6">
                                     <div class="text round ease-form">
                                         <input type="text">
@@ -965,7 +965,7 @@
                     <div class="col-6">
                         <div class="form-holder col-static no-fluid">
 
-                            <div class="row row-no-gap">
+                            <div class="row no-row-gap">
                                 <div class="col-12">
                                     <div class="text round ease-form">
                                         <input type="text">
@@ -982,7 +982,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="row row-no-gap">
+                            <div class="row no-row-gap">
                                 <div class="col-12">
                                     <div class="text round ease-form">
                                         <input type="text">
@@ -1005,7 +1005,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="row row-no-gap">
+                            <div class="row no-row-gap">
                                 <div class="col-12">
                                     <div class="text round ease-form">
                                         <input type="text">
@@ -1038,7 +1038,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="row row-no-gap">
+                            <div class="row no-row-gap">
                                 <div class="col-6">
                                     <div class="text round border-dual ease-form">
                                         <input type="text">
@@ -1056,7 +1056,7 @@
                     <div class="col-6">
                         <div class="form-holder col-static no-fluid">
 
-                            <div class="row row-no-gap">
+                            <div class="row no-row-gap">
                                 <div class="col-12">
                                     <div class="text round border-dual ease-form">
                                         <input type="text">
@@ -1073,7 +1073,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="row row-no-gap">
+                            <div class="row no-row-gap">
                                 <div class="col-12">
                                     <div class="text round border-dual ease-form">
                                         <input type="text">
@@ -1086,7 +1086,7 @@
                     <div class="col-6">
                         <div class="form-holder col-static no-fluid">
 
-                            <div class="row row-no-gap">
+                            <div class="row no-row-gap">
                                 <div class="col-6">
                                     <div class="text circle border-dual ease-form">
                                         <input type="text">
@@ -1114,7 +1114,7 @@
                     <div class="col-6">
                         <div class="form-holder col-static no-fluid">
 
-                            <div class="row row-no-gap">
+                            <div class="row no-row-gap">
                                 <div class="col-12">
                                     <div class="text circle border-dual ease-form">
                                         <input type="text">
@@ -1157,7 +1157,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="row row-no-gap">
+                            <div class="row no-row-gap">
                                 <div class="col-12">
                                     <div class="text circle border-dual ease-form">
                                         <input type="text">
@@ -1196,7 +1196,7 @@
                     <div class="col-9">
                         <div class="form-spinner form-holder col-static no-fluid">
 
-                            <div class="row row-no-gap">
+                            <div class="row no-row-gap">
                                 <div class="col-12">
                                     <div class="text round border-dual ease-form">
                                         <input type="text" value="3" min="2" max="5" class="number align-r">
@@ -1228,7 +1228,7 @@
                                     <svg class="icon"><use href="#minus"></use></svg>
                                 </button>
                             </div>
-                            <div class="row row-no-gap">
+                            <div class="row no-row-gap">
                                 <div class="col-12">
                                     <div class="text round border-dual ease-form">
                                         <input type="text" value="645.000" min="645.000" step="5.000" maxlength="12" autocomplete="off">
@@ -1348,7 +1348,7 @@
                             <div class="col-9">
                                 <div class="form-holder col-static no-fluid">
 
-                                    <div class="row row-no-gap">
+                                    <div class="row no-row-gap">
                                         <div class="col-12">
                                             <div class="text round border-dual ease-form">
                                                 <input class="required" type="text" placeholder="Keyword">
@@ -1578,7 +1578,7 @@
                     <span class="sp-30"></span>
 
                     <label class="form-label">Form Holder Example</label>
-                    <div class="form-holder row row-no-gap no-fluid margin-10-b">
+                    <div class="form-holder row no-row-gap no-fluid margin-10-b">
 
                         <div class="col-5">
                             <div class="text round border-dual form-light ease-form">
@@ -1602,7 +1602,7 @@
                         </div>
 
                     </div>
-                    <div class="form-holder row row-no-gap no-fluid margin-10-b error">
+                    <div class="form-holder row no-row-gap no-fluid margin-10-b error">
 
                         <div class="col-5">
                             <div class="text round border-dual form-light ease-form">
@@ -1626,7 +1626,7 @@
                         </div>
 
                     </div>
-                    <div class="form-holder row row-no-gap no-fluid margin-10-b warning">
+                    <div class="form-holder row no-row-gap no-fluid margin-10-b warning">
 
                         <div class="col-5">
                             <div class="text round border-dual form-light ease-form">
@@ -1665,7 +1665,7 @@
                                 <svg class="icon no-opacity animate-spin"><use href="#sync"/></svg>
                             </button>
                         </div>
-                        <div class="row row-no-gap">
+                        <div class="row no-row-gap">
                             <div class="col-12">
                                 <div class="text border-dual round form-light ease-form">
                                     <input type="text" maxlength="4" placeholder="Please enter code">

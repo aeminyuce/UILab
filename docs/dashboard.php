@@ -672,7 +672,7 @@
                                                 <div class="col-5">
                                                     <div class="form-holder col-static no-fluid">
 
-                                                        <div class="row row-no-gap">
+                                                        <div class="row no-row-gap">
                                                             <div class="col-12">
                                                                 <div class="text text-icon-l round border-dual ease-form">
                                                                     <svg class="icon"><use href="#browser"></use></svg>
@@ -748,7 +748,7 @@
                                         <div class="slide-content padding-10-h padding-10-t padding-15-b theme-yellow">
                                             <div class="card full-h padding-15 round shadow-lg">
                                                 <div class="col-static no-fluid">
-                                                    <div class="row row-no-gap-h row-md-gap-v">
+                                                    <div class="row no-row-gap-h row-gap-md-v">
                                                         <div class="col-12">
                                                             <div class="x-large">Pending</div>
                                                             <span class="dark large">Total: 45%</span>
@@ -771,7 +771,7 @@
                                         <div class="slide-content padding-10-h padding-10-t padding-15-b theme-yellow">
                                             <div class="card full-h padding-15 round shadow-lg">
                                                 <div class="col-static no-fluid">
-                                                    <div class="row row-no-gap-h row-md-gap-v">
+                                                    <div class="row no-row-gap-h row-gap-md-v">
                                                         <div class="col-12">
                                                             <div class="x-large">Paused</div>
                                                             <span class="dark large">Total: 5%</span>
@@ -794,7 +794,7 @@
                                         <div class="slide-content padding-10-h padding-10-t padding-15-b theme-green">
                                             <div class="card full-h padding-15 round shadow-lg">
                                                 <div class="col-static no-fluid">
-                                                    <div class="row row-no-gap-h row-md-gap-v">
+                                                    <div class="row no-row-gap-h row-gap-md-v">
                                                         <div class="col-12">
                                                             <div class="x-large">Completed</div>
                                                             <span class="dark large">Total: 80%</span>
@@ -817,7 +817,7 @@
                                         <div class="slide-content padding-10-h padding-10-t padding-15-b theme-panel2">
                                             <div class="card full-h padding-15 round shadow-lg">
                                                 <div class="col-static no-fluid">
-                                                    <div class="row row-no-gap-h row-md-gap-v">
+                                                    <div class="row no-row-gap-h row-gap-md-v">
                                                         <div class="col-12">
                                                             <div class="align-l x-large">On Payment</div>
                                                             <span class="dark large">Total: 67%</span>
@@ -865,7 +865,7 @@
                                     </div>
                                     <h4 class="align-l margin-5-t">Activity</h4>
                                     <div class="col-static no-fluid">
-                                        <div class="row row row-no-gap-h row-md-gap-v">
+                                        <div class="row row no-row-gap-h row-gap-md-v">
                                             <div class="col-12 large">
                                                 <div class="large font-bold">Total Progress</div>
                                                 <span class="dark">23% Change</span>
@@ -875,7 +875,7 @@
                                             <span class="x-largest inline-block">436</span>
                                         </div>
                                     </div>
-                                    <div class="row row-lg-gap-h no-fluid">
+                                    <div class="row row-gap-lg-h no-fluid">
                                         <div class="col-6">
                                             <div class="donut-chart automargin ease-donut-chart" style="max-width: 150px;">
                                                 <strong>
@@ -1220,7 +1220,7 @@
                                     <h4 class="align-l margin-5-t">Experts</h4>
                                     <div class="data-list data-striped data-hover theme-gray ease-data-list">
 
-                                        <div class="row row-no-gap-v row-sm-gap-h">
+                                        <div class="row no-row-gap-v row-gap-sm-h">
                                             <div class="col-6 lg-fluid">
                                                 <div class="text text-icon-both round no-border ui-x-light has-clear ease-form">
                                                     <svg class="icon text-icon-l"><use href="#search"></use></svg>
@@ -1279,7 +1279,7 @@
                                         <div class="data-container">
 
                                             <div class="data-content no-border round" data-val="John Atkinson|Paused">
-                                                <div class="row row-no-gap no-fluid">
+                                                <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
                                                     </div>
@@ -1311,7 +1311,7 @@
                                                 </div>
                                             </div>
                                             <div class="data-content no-border round" data-val="Mary Doe|Waiting">
-                                                <div class="row row-no-gap no-fluid">
+                                                <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                                     </div>
@@ -1343,7 +1343,7 @@
                                                 </div>
                                             </div>
                                             <div class="data-content no-border round" data-val="Mike Taylor|Completed">
-                                                <div class="row row-no-gap no-fluid">
+                                                <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                                     </div>
@@ -1375,7 +1375,7 @@
                                                 </div>
                                             </div>
                                             <div class="data-content no-border round" data-val="Tony Starky|Paused">
-                                                <div class="row row-no-gap no-fluid">
+                                                <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
                                                     </div>
@@ -1408,7 +1408,7 @@
                                             </div>
 
                                             <div class="data-content no-border round" data-val="John Atkinson|Paused">
-                                                <div class="row row-no-gap no-fluid">
+                                                <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
                                                     </div>
@@ -1440,7 +1440,7 @@
                                                 </div>
                                             </div>
                                             <div class="data-content no-border round" data-val="Mary Doe|Waiting">
-                                                <div class="row row-no-gap no-fluid">
+                                                <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                                     </div>
@@ -1472,7 +1472,7 @@
                                                 </div>
                                             </div>
                                             <div class="data-content no-border round" data-val="Mike Taylor|Completed">
-                                                <div class="row row-no-gap no-fluid">
+                                                <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                                     </div>
@@ -1504,7 +1504,7 @@
                                                 </div>
                                             </div>
                                             <div class="data-content no-border round" data-val="Tony Starky|Paused">
-                                                <div class="row row-no-gap no-fluid">
+                                                <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
                                                     </div>
@@ -1536,7 +1536,7 @@
                                                 </div>
                                             </div>
                                             <div class="data-content no-border round" data-val="John Atkinson|Paused">
-                                                <div class="row row-no-gap no-fluid">
+                                                <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
                                                     </div>
@@ -1568,7 +1568,7 @@
                                                 </div>
                                             </div>
                                             <div class="data-content no-border round" data-val="Mary Doe|Waiting">
-                                                <div class="row row-no-gap no-fluid">
+                                                <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                                     </div>
@@ -1600,7 +1600,7 @@
                                                 </div>
                                             </div>
                                             <div class="data-content no-border round" data-val="Mike Taylor|Completed">
-                                                <div class="row row-no-gap no-fluid">
+                                                <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                                     </div>
@@ -1632,7 +1632,7 @@
                                                 </div>
                                             </div>
                                             <div class="data-content no-border round" data-val="Tony Starky|Paused">
-                                                <div class="row row-no-gap no-fluid">
+                                                <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
                                                     </div>
@@ -1664,7 +1664,7 @@
                                                 </div>
                                             </div>
                                             <div class="data-content no-border round" data-val="John Atkinson|Paused">
-                                                <div class="row row-no-gap no-fluid">
+                                                <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
                                                     </div>
@@ -1696,7 +1696,7 @@
                                                 </div>
                                             </div>
                                             <div class="data-content no-border round" data-val="Mary Doe|Waiting">
-                                                <div class="row row-no-gap no-fluid">
+                                                <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                                     </div>
@@ -1728,7 +1728,7 @@
                                                 </div>
                                             </div>
                                             <div class="data-content no-border round" data-val="Mike Taylor|Completed">
-                                                <div class="row row-no-gap no-fluid">
+                                                <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                                     </div>
@@ -1760,7 +1760,7 @@
                                                 </div>
                                             </div>
                                             <div class="data-content no-border round" data-val="Tony Starky|Paused">
-                                                <div class="row row-no-gap no-fluid">
+                                                <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
                                                     </div>
@@ -1796,7 +1796,7 @@
 
                                         <span class="sp-10"></span>
 
-                                        <div class="row row-no-gap no-fluid">
+                                        <div class="row no-row-gap no-fluid">
                                             <div class="col-4">
                                                 <div class="padding-5-v">
                                                     Total <b class="data-total"></b>
@@ -1845,7 +1845,7 @@
             <p class="large x-light xs-align-c">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada purus eget enim tempus, sed faucibus ante blandit. Morbi a pharetra sapien.</p>
 
             <div class="col-static no-fluid">
-                <div class="row row-no-gap-h">
+                <div class="row no-row-gap-h">
                     <div class="col-12 ease-1st-form">
                         <div class="text text-icon has-clear round-l no-border shadow-in-sm theme-gray ui-x-light">
                             <button type="button" class="clear-form">

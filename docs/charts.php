@@ -4,7 +4,7 @@
             <div class="col-12 padding-30-v">
 
                 <h4 class="align-c lg-align-l">Line Charts Examples</h4>
-                <div class="row row-lg-gap-v">
+                <div class="row row-gap-lg-v">
                     <div class="col-6">
                         <h5 class="font-bold align-c">Line Chart</h5>
                         <div class="line-charts ease-line-charts" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
@@ -330,7 +330,7 @@
 
                 <h4 class="align-c lg-align-l">Donut Chart Examples</h4>
 
-                <div class="row row-lg-gap-v">
+                <div class="row row-gap-lg-v">
                     <div class="col-3 col-xs-6">
                         <div class="donut-chart ease-donut-chart">
                             <strong>HTML</strong>
@@ -369,7 +369,7 @@
                     </div>
                 </div>
 
-                <div class="row row-lg-gap-v">
+                <div class="row row-gap-lg-v">
                     <div class="col-3 col-xs-6">
                         <div class="donut-chart ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
@@ -422,7 +422,7 @@
                     <b>Show Title Examples:</b>
                 </div>
 
-                <div class="row row-lg-gap-v">
+                <div class="row row-gap-lg-v">
                     <div class="col-3 col-xs-6">
                         <div class="donut-chart ease-donut-chart">
                             <strong>HTML</strong>
@@ -464,7 +464,7 @@
                     </div>
                 </div>
 
-                <div class="row row-lg-gap-v theme-default ui-dark round">
+                <div class="row row-gap-lg-v theme-default ui-dark round">
                     <div class="col-3 col-xs-6">
                         <div class="donut-chart ease-donut-chart">
                             <strong>HTML</strong>
@@ -511,7 +511,7 @@
 
                 <h4 class="align-c lg-align-l">Pie Chart Examples</h4>
 
-                <div class="row row-lg-gap-v">
+                <div class="row row-gap-lg-v">
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart">
                             <ul>
@@ -589,7 +589,7 @@
                     <b>Show Title Examples:</b>
                 </div>
 
-                <div class="row row-lg-gap-v">
+                <div class="row row-gap-lg-v">
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart">
                             <ul>
@@ -622,7 +622,7 @@
                     </div>
                 </div>
 
-                <div class="row row-lg-gap-v theme-default ui-dark round">
+                <div class="row row-gap-lg-v theme-default ui-dark round">
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart">
                             <ul>

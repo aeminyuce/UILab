@@ -74,12 +74,12 @@
 
             </div>
         </div>
-        <div class="row row-no-gap">
+        <div class="row no-row-gap">
             <div class="col-12">
 
                 <div class="padding-30 no-padding-b md-no-padding">
 
-                    <header class="row row-no-gap-t sticky-md icons-no-opacity form-lg" data-classes="shadow-lg">
+                    <header class="row no-row-gap-t sticky-md icons-no-opacity form-lg" data-classes="shadow-lg">
                         <div class="col-6 hidden-md ease-1st-form">
                             <div class="text text-icon-both margin-15-b circle no-border theme-gray ui-light has-clear">
                                 <svg class="icon text-icon-l"><use href="#search"></use></svg>
@@ -422,7 +422,7 @@
             <p class="large x-light xs-align-c">Search for movies, TV shows...</p>
 
             <div class="col-static no-fluid">
-                <div class="row row-no-gap-h">
+                <div class="row no-row-gap-h">
                     <div class="col-12 ease-1st-form">
                         <div class="text text-icon has-clear round-l no-border shadow-in-sm theme-gray ui-x-light ease-form">
                             <button type="button" class="clear-form">

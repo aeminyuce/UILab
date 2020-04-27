@@ -30,7 +30,7 @@
                         </div>
                     </div>
 
-                    <div class="generate-list row row-sm-gap-v">
+                    <div class="generate-list row row-gap-sm-v">
                         <div class="col-3 col-md-4 col-sm-6">
 
                             <h5 class="font-bold">Core</h5>
@@ -534,7 +534,7 @@
                         </div>
                     </div>
 
-                    <div class="generate-list row row-sm-gap-v">
+                    <div class="generate-list row row-gap-sm-v">
                         <div class="col-3 col-md-4 col-sm-6">
 
                             <h5 class="font-bold">Core</h5>
@@ -939,7 +939,7 @@
 
                 <div class="generate-holder tab-content form-lg padding-30">
 
-                    <div class="generate-list row row-sm-gap-v">
+                    <div class="generate-list row row-gap-sm-v">
                         <div class="col-12">
 
                             <div class="generate-forms margin-20-b">
@@ -951,7 +951,7 @@
                                     <span class="x-dark">Select/Deselect All</span>
                                 </label>
 
-                                <div class="row row-no-gap-v xs-fluid">
+                                <div class="row no-row-gap-v xs-fluid">
                                     <div class="col-3 col-md-4 col-sm-6 block-1st">
                                         <label class="custom">
                                             <span class="switch-custom round border-dual ease-form">

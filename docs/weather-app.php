@@ -4,7 +4,7 @@
 <main class="container no-gutter">
     <div class="fixed padding-30-v">
 
-        <div class="row row-lg-gap padding-30-b">
+        <div class="row row-gap-lg padding-30-b">
             <div class="col-4 offset-2 col-md-6 offset-md-0">
 
                 <div class="weather round ease-weather">

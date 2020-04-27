@@ -5,7 +5,7 @@
 
                 <h4>Countdown Examples</h4>
 
-                <div class="countdown row row-sm-gap-h no-fluid">
+                <div class="countdown row row-gap-sm-h no-fluid">
                     <div class="col-3">
                         <b class="d x-large">02</b>
                         <span class="clearfix visible-xs"></span>
@@ -28,7 +28,7 @@
                     </div>
                 </div>
 
-                <div class="countdown row row-sm-gap-h no-fluid">
+                <div class="countdown row row-gap-sm-h no-fluid">
                     <div class="col-3">
                         <b class="d largest block">06</b>
                         <span class="dark">days</span>
@@ -47,7 +47,7 @@
                     </div>
                 </div>
 
-                <div class="countdown row row-sm-gap-h no-fluid">
+                <div class="countdown row row-gap-sm-h no-fluid">
                     <div class="col-3">
                         <div class="border-dual round padding-10">
                             <b class="d largest block">29</b>
@@ -74,7 +74,7 @@
                     </div>
                 </div>
 
-                <div class="countdown row row-sm-gap-h no-fluid theme-default2">
+                <div class="countdown row row-gap-sm-h no-fluid theme-default2">
                     <div class="col-3">
                         <div class="border ui-border round padding-10">
                             <b class="d ui-text largest block">05</b>
@@ -101,7 +101,7 @@
                     </div>
                 </div>
 
-                <div class="countdown row row-sm-gap-h no-fluid theme-gray">
+                <div class="countdown row row-gap-sm-h no-fluid theme-gray">
                     <div class="col-3">
                         <div class="ui-light round padding-10">
                             <b class="d largest block">00</b>
@@ -128,7 +128,7 @@
                     </div>
                 </div>
 
-                <div class="countdown row row-sm-gap-h no-fluid theme-default2">
+                <div class="countdown row row-gap-sm-h no-fluid theme-default2">
                     <div class="col-3">
                         <div class="ui-dark round padding-10">
                             <b class="d largest block">00</b>

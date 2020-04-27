@@ -7,7 +7,7 @@
 <main class="container no-gutter">
     <div class="fixed padding-30-v no-scroll">
 
-        <div class="row row-lg-gap sm-fluid padding-30-b">
+        <div class="row row-gap-lg sm-fluid padding-30-b">
             <div class="col-lg-3 col-6">
 
                 <div class="app padding-15 theme-app">
@@ -36,7 +36,7 @@
 
                         <div class="card-side padding-10">
 
-                            <div class="row row-md-gap no-fluid ease-2nd-btn">
+                            <div class="row row-gap-md no-fluid ease-2nd-btn">
                                 <div class="col-4">
                                     <a class="btn btn-multi no-line-height padding-10-v block round ui-x-light" href="#">
                                         <span class="ui-text x-largest">23</span>
@@ -63,7 +63,7 @@
                                 </div>
                             </div>
 
-                            <div class="row row-md-gap no-fluid ease-2nd-btn">
+                            <div class="row row-gap-md no-fluid ease-2nd-btn">
                                 <div class="col-4">
                                     <a class="btn btn-ghost btn-multi no-line-height padding-10-v block round border-dual" href="#">
                                         <span class="x-dark xx-large">19</span>
@@ -123,7 +123,7 @@
                         </div>
 
                         <div class="card-side padding-15">
-                            <div class="row row-md-gap no-fluid">
+                            <div class="row row-gap-md no-fluid">
                                 <div class="col-4">
                                     <div class="donut-chart ease-donut-chart">
                                         <strong>SS</strong>
@@ -217,7 +217,7 @@
                     <span class="sp-5"></span>
 
                     <div class="padding-10 no-padding-b icons-no-opacity">
-                        <div class="row row-no-gap no-fluid icons-lg icons-thin block-2nd ease-2nd-btn">
+                        <div class="row no-row-gap no-fluid icons-lg icons-thin block-2nd ease-2nd-btn">
                             <div class="col-3">
                                 <button class="btn btn-multi btn-ghost padding-10-t circle icons-semibol ui-text">
                                     <svg class="icon icon-semibold"><use href="#home"></use></svg>
@@ -289,7 +289,7 @@
 
                                 <span class="sp-10"></span>
 
-                                <div class="row row-xs-gap no-fluid block-2nd ease-2nd-btn">
+                                <div class="row row-gap-xs no-fluid block-2nd ease-2nd-btn">
                                     <div class="col-5">
                                         <button class="btn align-l circle-l ui-x-light" data-sort="1">
                                             <svg class="icon"><use href="#sort"></use></svg> Report
@@ -308,7 +308,7 @@
 
                                     <div class="data-content no-border" data-val="REP-701-2019|John Doe">
                                         <div class="col-static no-fluid">
-                                            <div class="row row-no-gap-h no-fluid row-md-gap-v">
+                                            <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
                                                     <b class="dark">REP-701-2019</b>
                                                 </div>
@@ -333,7 +333,7 @@
 
                                     <div class="data-content no-border" data-val="REP-616-2017|Mike Taylor">
                                         <div class="col-static no-fluid">
-                                            <div class="row row-no-gap-h no-fluid row-md-gap-v">
+                                            <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
                                                     <b class="dark">REP-616-2017</b>
                                                 </div>
@@ -358,7 +358,7 @@
 
                                     <div class="data-content no-border" data-val="REP-103-2018|Mary Doe">
                                         <div class="col-static no-fluid">
-                                            <div class="row row-no-gap-h no-fluid row-md-gap-v">
+                                            <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
                                                     <b class="dark">REP-103-2018</b>
                                                 </div>
@@ -383,7 +383,7 @@
 
                                     <div class="data-content no-border" data-val="REP-701-2019|John Doe">
                                         <div class="col-static no-fluid">
-                                            <div class="row row-no-gap-h no-fluid row-md-gap-v">
+                                            <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
                                                     <b class="dark">REP-701-2019</b>
                                                 </div>
@@ -408,7 +408,7 @@
 
                                     <div class="data-content no-border" data-val="REP-616-2017|Mike Taylor">
                                         <div class="col-static no-fluid">
-                                            <div class="row row-no-gap-h no-fluid row-md-gap-v">
+                                            <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
                                                     <b class="dark">REP-616-2017</b>
                                                 </div>
@@ -433,7 +433,7 @@
 
                                     <div class="data-content no-border" data-val="REP-103-2018|Mary Doe">
                                         <div class="col-static no-fluid">
-                                            <div class="row row-no-gap-h no-fluid row-md-gap-v">
+                                            <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
                                                     <b class="dark">REP-103-2018</b>
                                                 </div>
@@ -458,7 +458,7 @@
 
                                     <div class="data-content no-border" data-val="REP-701-2019|John Doe">
                                         <div class="col-static no-fluid">
-                                            <div class="row row-no-gap-h no-fluid row-md-gap-v">
+                                            <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
                                                     <b class="dark">REP-701-2019</b>
                                                 </div>
@@ -483,7 +483,7 @@
 
                                     <div class="data-content no-border" data-val="REP-616-2017|Mike Taylor">
                                         <div class="col-static no-fluid">
-                                            <div class="row row-no-gap-h no-fluid row-md-gap-v">
+                                            <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
                                                     <b class="dark">REP-616-2017</b>
                                                 </div>
@@ -508,7 +508,7 @@
 
                                     <div class="data-content no-border" data-val="REP-103-2018|Mary Doe">
                                         <div class="col-static no-fluid">
-                                            <div class="row row-no-gap-h no-fluid row-md-gap-v">
+                                            <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
                                                     <b class="dark">REP-103-2018</b>
                                                 </div>
@@ -533,7 +533,7 @@
 
                                     <div class="data-content no-border" data-val="REP-701-2019|John Doe">
                                         <div class="col-static no-fluid">
-                                            <div class="row row-no-gap-h no-fluid row-md-gap-v">
+                                            <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
                                                     <b class="dark">REP-701-2019</b>
                                                 </div>
@@ -558,7 +558,7 @@
 
                                     <div class="data-content no-border" data-val="REP-616-2017|Mike Taylor">
                                         <div class="col-static no-fluid">
-                                            <div class="row row-no-gap-h no-fluid row-md-gap-v">
+                                            <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
                                                     <b class="dark">REP-616-2017</b>
                                                 </div>
@@ -583,7 +583,7 @@
 
                                     <div class="data-content no-border" data-val="REP-103-2018|Mary Doe">
                                         <div class="col-static no-fluid">
-                                            <div class="row row-no-gap-h no-fluid row-md-gap-v">
+                                            <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
                                                     <b class="dark">REP-103-2018</b>
                                                 </div>
@@ -616,7 +616,7 @@
                     <span class="sp-5"></span>
 
                     <div class="padding-10 no-padding-b icons-no-opacity">
-                        <div class="row row-no-gap no-fluid icons-lg icons-thin block-2nd ease-2nd-btn">
+                        <div class="row no-row-gap no-fluid icons-lg icons-thin block-2nd ease-2nd-btn">
                             <div class="col-3">
                                 <button class="btn btn-multi btn-ghost padding-10-t circle dark">
                                     <svg class="icon"><use href="#home"></use></svg>
@@ -750,7 +750,7 @@
                                         <div class="col-35">
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
-                                        <div class="row row-no-gap">
+                                        <div class="row no-row-gap">
                                             <div class="text text-icon no-border padding-2 circle ease-form">
                                                 <button class="icon icon-comment-dots theme-app ui-text"></button>
                                                 <input type="text" placeholder="Type your message">
@@ -810,7 +810,7 @@
                                         <div class="col-35">
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
-                                        <div class="row row-no-gap">
+                                        <div class="row no-row-gap">
                                             <div class="text text-icon no-border padding-2 circle ease-form">
                                                 <button class="icon icon-comment-dots theme-app ui-text"></button>
                                                 <input type="text" placeholder="Type your message">
@@ -870,7 +870,7 @@
                                         <div class="col-35">
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
-                                        <div class="row row-no-gap">
+                                        <div class="row no-row-gap">
                                             <div class="text text-icon no-border padding-2 circle ease-form">
                                                 <button class="icon icon-comment-dots theme-app ui-text"></button>
                                                 <input type="text" placeholder="Type your message">
@@ -930,7 +930,7 @@
                                         <div class="col-35">
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
-                                        <div class="row row-no-gap">
+                                        <div class="row no-row-gap">
                                             <div class="text text-icon no-border padding-2 circle ease-form">
                                                 <button class="icon icon-comment-dots theme-app ui-text"></button>
                                                 <input type="text" placeholder="Type your message">
@@ -990,7 +990,7 @@
                                         <div class="col-35">
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
-                                        <div class="row row-no-gap">
+                                        <div class="row no-row-gap">
                                             <div class="text text-icon no-border padding-2 circle ease-form">
                                                 <button class="icon icon-comment-dots theme-app ui-text"></button>
                                                 <input type="text" placeholder="Type your message">
@@ -1050,7 +1050,7 @@
                                         <div class="col-35">
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
-                                        <div class="row row-no-gap">
+                                        <div class="row no-row-gap">
                                             <div class="text text-icon no-border padding-2 circle ease-form">
                                                 <button class="icon icon-comment-dots theme-app ui-text"></button>
                                                 <input type="text" placeholder="Type your message">
@@ -1068,7 +1068,7 @@
                     <span class="sp-5"></span>
 
                     <div class="padding-10 no-padding-b icons-no-opacity">
-                        <div class="row row-no-gap no-fluid icons-lg icons-thin block-2nd ease-2nd-btn">
+                        <div class="row no-row-gap no-fluid icons-lg icons-thin block-2nd ease-2nd-btn">
                             <div class="col-3">
                                 <button class="btn btn-multi btn-ghost padding-10-t circle dark">
                                     <svg class="icon"><use href="#home"></use></svg>
@@ -1215,7 +1215,7 @@
                     <span class="sp-5"></span>
 
                     <div class="padding-10 no-padding-b icons-no-opacity">
-                        <div class="row row-no-gap no-fluid icons-lg icons-thin block-2nd ease-2nd-btn">
+                        <div class="row no-row-gap no-fluid icons-lg icons-thin block-2nd ease-2nd-btn">
                             <div class="col-3">
                                 <button class="btn btn-multi btn-ghost padding-10-t circle dark">
                                     <svg class="icon"><use href="#home"></use></svg>

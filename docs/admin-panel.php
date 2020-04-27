@@ -131,7 +131,7 @@
                             </div>
                             <div class="card-side padding-30">
 
-                                <div class="row row-md-gap xs-fluid icons-lg margin-25-t md-no-margin">
+                                <div class="row row-gap-md xs-fluid icons-lg margin-25-t md-no-margin">
                                     <div class="col-4">
                                         <div class="donut-chart ease-donut-chart col-xs-150 col-lg-150 automargin" style="max-width: 120px;">
                                             <strong>
@@ -262,7 +262,7 @@
                                 </div>
                             </div>
 
-                            <div class="row row-xs-gap align-l no-fluid block-2nd ui-x-light ease-2nd-btn">
+                            <div class="row row-gap-xs align-l no-fluid block-2nd ui-x-light ease-2nd-btn">
                                 <div class="col-5">
                                     <button class="btn btn-ghost" data-sort="1">
                                         <svg class="icon"><use href="#sort"/></svg> Name
@@ -283,7 +283,7 @@
                             <div class="data-container icons-xxs">
 
                                 <div class="data-content no-border" data-val="John Doe|25|Designer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
                                         </div>
@@ -298,7 +298,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Mary Doe|24|Designer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                         </div>
@@ -313,7 +313,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Mike Taylor|29|Developer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Mike Taylor
                                         </div>
@@ -328,7 +328,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Bob Pool|25|Designer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Bob Pool
                                         </div>
@@ -343,7 +343,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="John Doe|24|Designer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
                                         </div>
@@ -358,7 +358,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Mary Doe|24|Researcher">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                         </div>
@@ -373,7 +373,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Mike Taylor|29|Developer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Mike Taylor
                                         </div>
@@ -388,7 +388,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Bob Pool|25|Designer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Bob Pool
                                         </div>
@@ -403,7 +403,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="John Doe|25|Developer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
                                         </div>
@@ -418,7 +418,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Mary Doe|24|Developer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                         </div>
@@ -433,7 +433,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Mike Taylor|29|Developer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Mike Taylor
                                         </div>
@@ -448,7 +448,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Bob Pool|25|Researcher">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Bob Pool
                                         </div>
@@ -463,7 +463,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="John Doe|25|Researcher">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
                                         </div>
@@ -478,7 +478,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Mary Doe|24|Developer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                         </div>
@@ -493,7 +493,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Mike Taylor|29|Developer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Mike Taylor
                                         </div>
@@ -508,7 +508,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Bob Pool|25|Researcher">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Bob Pool
                                         </div>
@@ -523,7 +523,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="John Doe|24|Designer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
                                         </div>
@@ -538,7 +538,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Mary Doe|24|Researcher">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                         </div>
@@ -553,7 +553,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Mike Taylor|29|Developer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Mike Taylor
                                         </div>
@@ -568,7 +568,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Bob Pool|25|Developer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Bob Pool
                                         </div>
@@ -583,7 +583,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="John Doe|25|Researcher">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
                                         </div>
@@ -598,7 +598,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Mary Doe|24|Developer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                         </div>
@@ -613,7 +613,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Mike Taylor|29|Developer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Mike Taylor
                                         </div>
@@ -628,7 +628,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Bob Pool|25|Designer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Bob Pool
                                         </div>
@@ -643,7 +643,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="John Doe|24|Developer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
                                         </div>
@@ -658,7 +658,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Mary Doe|24|Developer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                         </div>
@@ -673,7 +673,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Mike Taylor|29|Designer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Mike Taylor
                                         </div>
@@ -688,7 +688,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Bob Pool|25|Researcher">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Bob Pool
                                         </div>
@@ -703,7 +703,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="John Doe|25|Designer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
                                         </div>
@@ -718,7 +718,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Mary Doe|24|Developer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                         </div>
@@ -733,7 +733,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Mike Taylor|29|Researcher">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Mike Taylor
                                         </div>
@@ -748,7 +748,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Bob Pool|25|Researcher">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Bob Pool
                                         </div>
@@ -763,7 +763,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="John Doe|25|Designer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
                                         </div>
@@ -778,7 +778,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Mary Doe|24|Developer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                         </div>
@@ -793,7 +793,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Mike Taylor|29|Developer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Mike Taylor
                                         </div>
@@ -808,7 +808,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Bob Pool|25|Researcher">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Bob Pool
                                         </div>
@@ -823,7 +823,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="John Doe|24|Researcher">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
                                         </div>
@@ -838,7 +838,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Mary Doe|24|Developer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                         </div>
@@ -853,7 +853,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Mike Taylor|29|Developer">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Mike Taylor
                                         </div>
@@ -868,7 +868,7 @@
                                     </div>
                                 </div>
                                 <div class="data-content no-border" data-val="Bob Pool|25|Researcher">
-                                    <div class="row row-no-gap no-fluid">
+                                    <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Bob Pool
                                         </div>

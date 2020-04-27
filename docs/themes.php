@@ -6,7 +6,7 @@
                 <h4>Themes</h4>
 
                 <b class="margin-5-b block">.theme-gray</b>
-                <div class="row row-no-gap highlight xs-fluid theme-gray">
+                <div class="row no-row-gap highlight xs-fluid theme-gray">
                     <div class="col-3 col-md-6 col-sm-6">
                         <div class="padding-30 ui-x-light">
                             .ui-x-light
@@ -30,7 +30,7 @@
                 </div>
 
                 <b class="margin-5-b block">.theme-green</b>
-                <div class="row row-no-gap highlight xs-fluid theme-green">
+                <div class="row no-row-gap highlight xs-fluid theme-green">
                     <div class="col-3 col-md-6 col-sm-6">
                         <div class="padding-30 ui-x-light">
                             .ui-x-light
@@ -54,7 +54,7 @@
                 </div>
 
                 <b class="margin-5-b block">.theme-yellow</b>
-                <div class="row row-no-gap highlight xs-fluid theme-yellow">
+                <div class="row no-row-gap highlight xs-fluid theme-yellow">
                     <div class="col-3 col-md-6 col-sm-6">
                         <div class="padding-30 ui-x-light">
                             .ui-x-light
@@ -78,7 +78,7 @@
                 </div>
 
                 <b class="margin-5-b block">.theme-orange</b>
-                <div class="row row-no-gap highlight xs-fluid theme-orange">
+                <div class="row no-row-gap highlight xs-fluid theme-orange">
                     <div class="col-3 col-md-6 col-sm-6">
                         <div class="padding-30 ui-x-light">
                             .ui-x-light
@@ -102,7 +102,7 @@
                 </div>
 
                 <b class="margin-5-b block">.theme-red</b>
-                <div class="row row-no-gap highlight xs-fluid theme-red">
+                <div class="row no-row-gap highlight xs-fluid theme-red">
                     <div class="col-3 col-md-6 col-sm-6">
                         <div class="padding-30 ui-x-light">
                             .ui-x-light
@@ -126,7 +126,7 @@
                 </div>
 
                 <b class="margin-5-b block">.theme-default</b>
-                <div class="row row-no-gap highlight xs-fluid theme-default">
+                <div class="row no-row-gap highlight xs-fluid theme-default">
                     <div class="col-3 col-md-6 col-sm-6">
                         <div class="padding-30 ui-x-light">
                             .ui-x-light
@@ -150,7 +150,7 @@
                 </div>
 
                 <b class="margin-5-b block">.theme-default2</b>
-                <div class="row row-no-gap highlight xs-fluid theme-default2">
+                <div class="row no-row-gap highlight xs-fluid theme-default2">
                     <div class="col-3 col-md-6 col-sm-6">
                         <div class="padding-30 ui-x-light">
                             .ui-x-light

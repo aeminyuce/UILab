@@ -3,7 +3,7 @@
 
 <main class="login-page container full-h no-gutter">
 
-    <div class="row row-no-gap sm-fluid full-h">
+    <div class="row no-row-gap sm-fluid full-h">
         <div class="login-forms-container col-lg-5 col-6">
 
             <div class="forms-holder card form-lg tabs shadow-lg ease-tabs">

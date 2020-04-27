@@ -163,7 +163,7 @@
                 <div class="col-12 sm-no-padding-t">
 
                     <div class="card margin-10-b round shadow-lg">
-                        <div class="row row-lg-gap sm-fluid">
+                        <div class="row row-gap-lg sm-fluid">
                             <div class="col-12 border-b">
                                 <h4>
                                     <svg class="icon icon-lg"><use href="#history"/></svg>

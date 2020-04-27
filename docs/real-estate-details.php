@@ -82,7 +82,7 @@
                             </ul>
                         </div>
                         <div class="padding-15-b padding-30-h">
-                            <div class="row row-lg-gap">
+                            <div class="row row-gap-lg">
                                 <div class="col-5x col-sm-4 col-xs-6">
                                     <div class="pie-chart ease-pie-chart" data-text="Total">
                                         <ul>

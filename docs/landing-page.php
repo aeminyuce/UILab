@@ -83,7 +83,7 @@
     <div class="tabs form-lg ease-tabs" data-classes="ui-text border-b border-lg ui-border">
 
         <div class="fixed padding-10-t theme-farmer2 set-dark">
-            <div class="row row-no-gap-v icons-no-opacity icons-margin-5-r">
+            <div class="row no-row-gap-v icons-no-opacity icons-margin-5-r">
                 <div class="col-12 xs-align-l align-c ease-1st-btn">
                     <button class="tab btn btn-xs-fluid btn-ghost margin-1-b ui-text border-b border-lg ui-border active">
                         <svg class="icon"><use href="#factory"></use></svg>
@@ -106,7 +106,7 @@
             <div class="fixed padding-30-v set-relative">
                 <div class="row">
                     <div class="col-static">
-                        <div class="row row-lg-gap-v">
+                        <div class="row row-gap-lg-v">
                             <div class="col-12 md-align-c">
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
@@ -144,7 +144,7 @@
             <div class="fixed padding-30-v set-relative">
                 <div class="row">
                     <div class="col-static">
-                        <div class="row row-lg-gap-v">
+                        <div class="row row-gap-lg-v">
                             <div class="col-12 md-align-c">
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
@@ -182,7 +182,7 @@
             <div class="fixed padding-30-v set-relative">
                 <div class="row">
                     <div class="col-static">
-                        <div class="row row-lg-gap-v">
+                        <div class="row row-gap-lg-v">
                             <div class="col-12 md-align-c">
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
@@ -341,7 +341,7 @@
         <div class="tabs form-lg border-t padding-10-t ease-tabs" data-classes="ui-text border-b border-lg ui-border">
 
             <div class="fixed">
-                <div class="row row-no-gap-v icons-no-opacity icons-margin-5-r">
+                <div class="row no-row-gap-v icons-no-opacity icons-margin-5-r">
                     <div class="col-12 xs-align-l align-c ease-1st-btn">
                         <button class="tab btn btn-xs-fluid btn-ghost margin-1-b ui-text border-b border-lg ui-border active">
                             <svg class="icon ui-text"><use href="#building"></use></svg>
@@ -872,7 +872,7 @@
                             <form action="#">
 
                                 <div class="form-holder col-static no-fluid form-lg">
-                                    <div class="row row-no-gap">
+                                    <div class="row no-row-gap">
                                         <div class="col-12">
                                             <div class="text no-border ui-x-light ease-form">
                                                 <input class="required" type="email" maxlength="4" placeholder="your@email.com">

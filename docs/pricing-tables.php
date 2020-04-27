@@ -8,7 +8,7 @@
 
                 <h4>Simple Pricing Table</h4>
 
-                <div class="row row-lg-gap align-c">
+                <div class="row row-gap-lg align-c">
                     <div class="col-4">
 
                         <div class="card full-h padding-30 round shadow">
@@ -67,7 +67,7 @@
 
                 <h4>Detailed Pricing Table</h4>
 
-                <div class="row row-lg-gap align-c">
+                <div class="row row-gap-lg align-c">
                     <div class="col-4">
 
                         <div class="card full-h round shadow">

@@ -3,7 +3,7 @@
 
 <main class="container no-gutter">
 
-    <div class="row row-no-gap">
+    <div class="row no-row-gap">
         <div class="col-12">
 
             <div class="signup-holder no-scroll set-relative ui-dark">
