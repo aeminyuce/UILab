@@ -232,14 +232,12 @@ html:not(.mobile) {
 }
 
 [class*="sp-"] { width: 100%; .visible(); clear: both !important; }
-
 ._sp-loop(@i) when (@i > 0) {
     ._sp-loop(@i - 1);
 
     .sp-@{i} { height: ~'@{i}px'; }
 }
 ._sp-loop(5);
-
 ._sp-loop5x(@i) when (@i > 0) {
     ._sp-loop5x(@i - 1);
 
