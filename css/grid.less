@@ -1,7 +1,10 @@
 // out: false
 /* grid */ @import '_settings.less';
 
-@grid-size:                             12;
+@grid-columns:                          12;
+//@grid-xs-columns: 4;
+//@grid-sm-columns: 12;
+//@grid-md-columns: 16;
 @custom-grids:                          true;
 
 @static-grids:                          true;
@@ -108,7 +111,7 @@ html {
 [class*="push-"],[class*="pull-"] { position: relative; }
 
 ._create-cols(@name; @i) {
-    @size:  percentage(@i / @grid-size);
+    @size:  percentage(@i / @grid-columns);
 
     .col@{name}@{i} { width: @size; }
     .offset@{name}@{i} { margin-left: @size; }
@@ -122,7 +125,7 @@ html {
     @name: ~'-';
     ._create-cols(@name; @i);
 }
-.col-loop(@grid-size);
+.col-loop(@grid-columns);
 
 .col- when (@custom-grids = true) { // custom grids
     &5x { width: 100 / 5%; }
@@ -169,7 +172,7 @@ html {
         @name: ~'-lg-';
         ._create-cols(@name; @i);
     }
-    .col-lg-loop(@grid-size);
+    .col-lg-loop(@grid-columns);
 
     .col-lg- when (@custom-grids = true) { // custom grids
         &5x { width: 100 / 5%; }
@@ -199,7 +202,7 @@ html {
         @name: ~'-md-';
         ._create-cols(@name; @i);
     }
-    .col-md-loop(@grid-size);
+    .col-md-loop(@grid-columns);
 
     .col-md- when (@custom-grids = true) { // custom grids
         &5x { width: 100 / 5%; }
@@ -251,7 +254,7 @@ html {
         @name: ~'-sm-';
         ._create-cols(@name; @i);
     }
-    .col-sm-loop(@grid-size);
+    .col-sm-loop(@grid-columns);
 
     .col-sm- when (@custom-grids = true) { // custom grids
         &5x { width: 100 / 5%; }
@@ -304,7 +307,7 @@ html {
         @name: ~'-xs-';
         ._create-cols(@name; @i);
     }
-    .col-xs-loop(@grid-size);
+    .col-xs-loop(@grid-columns);
 
     .col-xs- when (@custom-grids = true) { // custom grids
         &5x { width: 100 / 5%; }
@@ -380,7 +383,7 @@ html {
         @name: ~'-xl-';
         ._create-cols(@name; @i);
     }
-    .col-xl-loop(@grid-size);
+    .col-xl-loop(@grid-columns);
 
     .col-xl- when (@custom-grids = true) { // custom grids
         &5x { width: 100 / 5%; }
