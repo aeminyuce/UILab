@@ -1,7 +1,7 @@
 <main class="container no-gutter">
     <div class="fixed">
-        <div class="row align-c">
-            <div class="col-6 offset-3 col-sm-10 offset-sm-1 padding-30-v">
+        <div class="row sm-fluid align-c">
+            <div class="col-6 offset-3 padding-30-v">
 
                 <h4>Countdown Examples</h4>
 

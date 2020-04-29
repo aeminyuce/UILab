@@ -14,7 +14,7 @@
                             <div class="slide-content padding-15 padding-30-b" data-animate="10">
                                 <div class="card padding-15 shadow-lg">
                                     <div class="row row-gap-lg theme-gray ui-x-light full-h">
-                                        <div class="col-4 col-md-3">
+                                        <div class="col-4">
                                             <div class="row row-gap-xs ease-2nd-layout ease-slow ease-in-out">
                                                 <div class="col-6 no-fluid">
                                                     <img class="carousel-animate bring-back img-fluid" src="img/image_09.jpg" alt="">
@@ -33,7 +33,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-8 col-md-9 carousel-animate bring-r ease-layout ease-slow">
+                                        <div class="col-8 carousel-animate bring-r ease-layout ease-slow">
                                             <h3 class="margin-15-v">Carousel Html Title</h3>
                                             <p class="large">
                                                 Maecenas blandit est ultrices eleifend commodo. Integer eget eros a orci ornare tincidunt et at dolor. Suspendisse nec augue vel mauris malesuada aliquet. Quisque id tincidunt libero.
@@ -53,7 +53,7 @@
                             <div class="slide-content padding-15 padding-30-b" data-animate="10">
                                 <div class="card padding-15 shadow-lg">
                                     <div class="row row-gap-lg theme-gray ui-x-light full-h">
-                                        <div class="col-4 col-md-3">
+                                        <div class="col-4">
                                             <div class="row row-gap-xs ease-2nd-layout ease-slow ease-in-out">
                                                 <div class="col-6 no-fluid">
                                                     <img class="carousel-animate bring-back img-fluid" src="img/image_09.jpg" alt="">
@@ -72,7 +72,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-8 col-md-9 carousel-animate bring-r ease-layout ease-slow">
+                                        <div class="col-8 carousel-animate bring-r ease-layout ease-slow">
                                             <h3 class="margin-15-v">Carousel Html Title</h3>
                                             <p class="large">
                                                 Maecenas blandit est ultrices eleifend commodo. Integer eget eros a orci ornare tincidunt et at dolor. Suspendisse nec augue vel mauris malesuada aliquet. Quisque id tincidunt libero.
