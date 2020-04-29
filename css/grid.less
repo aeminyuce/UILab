@@ -2,22 +2,29 @@
 /* grid */ @import '_settings.less';
 
 @grid-columns:                          12;
-//@grid-xs-columns: 4;
-//@grid-sm-columns: 12;
-//@grid-md-columns: 16;
+@container-gutter:                      10px;
+
+@row-gap-lg:                            15px;
+@row-gap:                               10px;
+@row-gap-md:                            5px;
+@row-gap-sm:                            2px;
+@row-gap-xs:                            1px;
+
 @custom-grids:                          true;
+@custom-grid-columns:                   5, 7; // 5, 7, 8, 9, 10, 11 recommended
 
 @static-grids:                          true;
+@custom-static-grid-columns:            32, 42;
 @col-static-increase:                   50; // px
 @col-static-steps:                      10; // steps of increases
 
 .container,.fixed {
     width: 100%; display: block;
+    padding-right: @container-gutter; padding-left: @container-gutter;
 
     &:after { clear: both; }
     &:before,&:after { content: ""; display: table; }
 }
-.container:not([class*="no-gutter"]),.fixed { padding-right: 10px; padding-left: 10px; }
 .fixed { margin-right: auto; margin-left: auto; display: block; }
 .no-gutter { padding-right: 0 !important; padding-left: 0 !important; }
 
@@ -25,69 +32,69 @@ html {
     .row { display: flex; } // safari flex bug
 }
 .row {
-    margin-right: -10px; margin-left: -10px; flex-wrap: wrap;
+    margin-right: -@row-gap; margin-left: -@row-gap; flex-wrap: wrap;
 
     &:before,&:after { content: normal !important; } // safari flex bug
 
-    & > [class*="col-"] when (@static-grids = false) { padding: 10px; }
-    & > [class*="col-"]:not(.col-static) when (@static-grids = true) { padding: 10px; }
+    & > [class*="col-"] when (@static-grids = false) { padding: @row-gap; }
+    & > [class*="col-"]:not(.col-static) when (@static-grids = true) { padding: @row-gap; }
 
     &-gap {
         &-lg {
-            &,&-h { margin-right: -15px; margin-left: -15px; }
+            &,&-h { margin-right: -@row-gap-lg; margin-left: -@row-gap-lg; }
 
             & when (@static-grids = false) {
-                & > [class*="col-"] { padding: 15px; }
-                &-v > [class*="col-"] { padding-top: 15px; padding-bottom: 15px; }
-                &-h > [class*="col-"] { padding-right: 15px; padding-left: 15px; }
+                & > [class*="col-"] { padding: @row-gap-lg; }
+                &-v > [class*="col-"] { padding-top: @row-gap-lg; padding-bottom: @row-gap-lg; }
+                &-h > [class*="col-"] { padding-right: @row-gap-lg; padding-left: @row-gap-lg; }
             }
             & when (@static-grids = true) {
-                & > [class*="col-"]:not(.col-static) { padding: 15px; }
-                &-v > [class*="col-"]:not(.col-static) { padding-top: 15px; padding-bottom: 15px; }
-                &-h > [class*="col-"]:not(.col-static) { padding-right: 15px; padding-left: 15px; }
+                & > [class*="col-"]:not(.col-static) { padding: @row-gap-lg; }
+                &-v > [class*="col-"]:not(.col-static) { padding-top: @row-gap-lg; padding-bottom: @row-gap-lg; }
+                &-h > [class*="col-"]:not(.col-static) { padding-right: @row-gap-lg; padding-left: @row-gap-lg; }
             }
 
         }
         &-md {
-            &,&-h { margin-right: -5px; margin-left: -5px; }
+            &,&-h { margin-right: -@row-gap-md; margin-left: -@row-gap-md; }
 
             & when (@static-grids = false) {
-                & > [class*="col-"] { padding: 5px; }
-                &-v > [class*="col-"] { padding-top: 5px; padding-bottom: 5px; }
-                &-h > [class*="col-"] { padding-right: 5px; padding-left: 5px; }
+                & > [class*="col-"] { padding: @row-gap-md; }
+                &-v > [class*="col-"] { padding-top: @row-gap-md; padding-bottom: @row-gap-md; }
+                &-h > [class*="col-"] { padding-right: @row-gap-md; padding-left: @row-gap-md; }
             }
             & when (@static-grids = true) {
-                & > [class*="col-"]:not(.col-static) { padding: 5px; }
-                &-v > [class*="col-"]:not(.col-static) { padding-top: 5px; padding-bottom: 5px; }
-                &-h > [class*="col-"]:not(.col-static) { padding-right: 5px; padding-left: 5px; }
+                & > [class*="col-"]:not(.col-static) { padding: @row-gap-md; }
+                &-v > [class*="col-"]:not(.col-static) { padding-top: @row-gap-md; padding-bottom: @row-gap-md; }
+                &-h > [class*="col-"]:not(.col-static) { padding-right: @row-gap-md; padding-left: @row-gap-md; }
             }
         }
         &-sm {
-            &,&-h { margin-right: -2px; margin-left: -2px; }
+            &,&-h { margin-right: -@row-gap-sm; margin-left: -@row-gap-sm; }
 
             & when (@static-grids = false) {
-                & > [class*="col-"] { padding: 2px; }
-                &-v > [class*="col-"] { padding-top: 2px; padding-bottom: 2px; }
-                &-h > [class*="col-"] { padding-right: 2px; padding-left: 2px; }
+                & > [class*="col-"] { padding: @row-gap-sm; }
+                &-v > [class*="col-"] { padding-top: @row-gap-sm; padding-bottom: @row-gap-sm; }
+                &-h > [class*="col-"] { padding-right: @row-gap-sm; padding-left: @row-gap-sm; }
             }
             & when (@static-grids = true) {
-                & > [class*="col-"]:not(.col-static) { padding: 2px; }
-                &-v > [class*="col-"]:not(.col-static) { padding-top: 2px; padding-bottom: 2px; }
-                &-h > [class*="col-"]:not(.col-static) { padding-right: 2px; padding-left: 2px; }
+                & > [class*="col-"]:not(.col-static) { padding: @row-gap-sm; }
+                &-v > [class*="col-"]:not(.col-static) { padding-top: @row-gap-sm; padding-bottom: @row-gap-sm; }
+                &-h > [class*="col-"]:not(.col-static) { padding-right: @row-gap-sm; padding-left: @row-gap-sm; }
             }
         }
         &-xs {
-            &,&-h { margin-right: -1px; margin-left: -1px; }
+            &,&-h { margin-right: -@row-gap-xs; margin-left: -@row-gap-xs; }
 
             & when (@static-grids = false) {
-                & > [class*="col-"] { padding: 1px; }
-                &-v > [class*="col-"] { padding-top: 1px; padding-bottom: 1px; }
-                &-h > [class*="col-"] { padding-right: 1px; padding-left: 1px; }
+                & > [class*="col-"] { padding: @row-gap-xs; }
+                &-v > [class*="col-"] { padding-top: @row-gap-xs; padding-bottom: @row-gap-xs; }
+                &-h > [class*="col-"] { padding-right: @row-gap-xs; padding-left: @row-gap-xs; }
             }
             & when (@static-grids = true) {
-                & > [class*="col-"]:not(.col-static) { padding: 1px; }
-                &-v > [class*="col-"]:not(.col-static) { padding-top: 1px; padding-bottom: 1px; }
-                &-h > [class*="col-"]:not(.col-static) { padding-right: 1px; padding-left: 1px; }
+                & > [class*="col-"]:not(.col-static) { padding: @row-gap-xs; }
+                &-v > [class*="col-"]:not(.col-static) { padding-top: @row-gap-xs; padding-bottom: @row-gap-xs; }
+                &-h > [class*="col-"]:not(.col-static) { padding-right: @row-gap-xs; padding-left: @row-gap-xs; }
             }
         }
     }
@@ -127,10 +134,19 @@ html {
 }
 .col-loop(@grid-columns);
 
-.col- when (@custom-grids = true) { // custom grids
-    &5x { width: 100 / 5%; }
-    &7x { width: 100 / 7%; }
+._create-custom-cols(@name; @size) when (@custom-grids = true) {
+    .col@{name}@{size}x { width: percentage((100 / @size) / 100); }
+};
+
+._custom-cols-loop(@i) when (@i > 0) {
+    ._custom-cols-loop(@i - 1);
+
+    @name: ~'-';
+    @size: extract(@custom-grid-columns, @i);
+    ._create-custom-cols(@name; @size);
+
 }
+._custom-cols-loop(length(@custom-grid-columns));
 
 .col-static when (@static-grids = true) {
     width: 100%; display: table; table-layout: fixed;
@@ -157,10 +173,18 @@ html {
 }
 .col-static-loop(@col-static-steps);
 
-.col- when (@static-grids = true) and (@custom-grids = true) { // custom static grids
-    &32 { width: 100 / 5%; }
-    &42 { width: 100 / 7%; }
+._create-custom-static-cols(@name; @size) when (@custom-grids = true) {
+    .col@{name}@{size} { width: ~'@{size}px'; }
+};
+
+._custom-static-cols-loop(@i) when (@i > 0) {
+    ._custom-static-cols-loop(@i - 1);
+
+    @name: ~'-';
+    @size: extract(@custom-static-grid-columns, @i);
+    ._create-custom-static-cols(@name; @size);
 }
+._custom-static-cols-loop(length(@custom-static-grid-columns));
 
 @media (@lg-start) {
     .fixed { max-width: @lg-breakpoint; }
@@ -174,10 +198,15 @@ html {
     }
     .col-lg-loop(@grid-columns);
 
-    .col-lg- when (@custom-grids = true) { // custom grids
-        &5x { width: 100 / 5%; }
-        &7x { width: 100 / 7%; }
+    ._custom-grids-lg-loop(@i) when (@i > 0) {
+        ._custom-grids-lg-loop(@i - 1);
+
+        @name: ~'-lg-';
+        @size: extract(@custom-grid-columns, @i);
+        ._create-custom-cols(@name; @size);
+
     }
+    ._custom-grids-lg-loop(length(@custom-grid-columns));
 
     .col-lg-static-loop(@i) when (@i >= 0) {
         .col-lg-static-loop(@i - 1);
@@ -187,10 +216,14 @@ html {
     }
     .col-lg-static-loop(@col-static-steps);
 
-    .col-lg- when (@static-grids = true) and (@custom-grids = true) { // custom static grids
-        &32 { width: 100 / 5%; }
-        &42 { width: 100 / 7%; }
+    ._custom-lg-static-cols-loop(@i) when (@i > 0) {
+        ._custom-lg-static-cols-loop(@i - 1);
+
+        @name: ~'-lg-';
+        @size: extract(@custom-static-grid-columns, @i);
+        ._create-custom-static-cols(@name; @size);
     }
+    ._custom-lg-static-cols-loop(length(@custom-static-grid-columns));
 
 }
 @media (@md-start) and (@md-finish) {
@@ -204,10 +237,15 @@ html {
     }
     .col-md-loop(@grid-columns);
 
-    .col-md- when (@custom-grids = true) { // custom grids
-        &5x { width: 100 / 5%; }
-        &7x { width: 100 / 7%; }
+    ._custom-grids-md-loop(@i) when (@i > 0) {
+        ._custom-grids-md-loop(@i - 1);
+
+        @name: ~'-md-';
+        @size: extract(@custom-grid-columns, @i);
+        ._create-custom-cols(@name; @size);
+
     }
+    ._custom-grids-md-loop(length(@custom-grid-columns));
 
     .col-md-static-loop(@i) when (@i >= 0) {
         .col-md-static-loop(@i - 1);
@@ -217,10 +255,14 @@ html {
     }
     .col-md-static-loop(@col-static-steps);
 
-    .col-md- when (@static-grids = true) and (@custom-grids = true) { // custom static grids
-        &32 { width: 100 / 5%; }
-        &42 { width: 100 / 7%; }
+    ._custom-md-static-cols-loop(@i) when (@i > 0) {
+        ._custom-md-static-cols-loop(@i - 1);
+
+        @name: ~'-md-';
+        @size: extract(@custom-static-grid-columns, @i);
+        ._create-custom-static-cols(@name; @size);
     }
+    ._custom-md-static-cols-loop(length(@custom-static-grid-columns));
 
     .row {
         &:not(.no-fluid):not(.sm-fluid):not(.xs-fluid) {
@@ -256,10 +298,15 @@ html {
     }
     .col-sm-loop(@grid-columns);
 
-    .col-sm- when (@custom-grids = true) { // custom grids
-        &5x { width: 100 / 5%; }
-        &7x { width: 100 / 7%; }
+    ._custom-grids-sm-loop(@i) when (@i > 0) {
+        ._custom-grids-sm-loop(@i - 1);
+
+        @name: ~'-sm-';
+        @size: extract(@custom-grid-columns, @i);
+        ._create-custom-cols(@name; @size);
+
     }
+    ._custom-grids-sm-loop(length(@custom-grid-columns));
 
     .col-sm-static-loop(@i) when (@i >= 0) {
         .col-sm-static-loop(@i - 1);
@@ -269,10 +316,14 @@ html {
     }
     .col-sm-static-loop(@col-static-steps);
 
-    .col-sm- when (@static-grids = true) and (@custom-grids = true) { // custom static grids
-        &32 { width: 100 / 5%; }
-        &42 { width: 100 / 7%; }
+    ._custom-sm-static-cols-loop(@i) when (@i > 0) {
+        ._custom-sm-static-cols-loop(@i - 1);
+
+        @name: ~'-sm-';
+        @size: extract(@custom-static-grid-columns, @i);
+        ._create-custom-static-cols(@name; @size);
     }
+    ._custom-sm-static-cols-loop(length(@custom-static-grid-columns));
 
     .row.sm-fluid > [class*="col-"] { width: 100%; clear: both; }
     .row {
@@ -309,10 +360,15 @@ html {
     }
     .col-xs-loop(@grid-columns);
 
-    .col-xs- when (@custom-grids = true) { // custom grids
-        &5x { width: 100 / 5%; }
-        &7x { width: 100 / 7%; }
+    ._custom-grids-xs-loop(@i) when (@i > 0) {
+        ._custom-grids-xs-loop(@i - 1);
+
+        @name: ~'-xs-';
+        @size: extract(@custom-grid-columns, @i);
+        ._create-custom-cols(@name; @size);
+
     }
+    ._custom-grids-xs-loop(length(@custom-grid-columns));
 
     .col-xs-static-loop(@i) when (@i >= 0) {
         .col-xs-static-loop(@i - 1);
@@ -322,10 +378,14 @@ html {
     }
     .col-xs-static-loop(@col-static-steps);
 
-    .col-xs- when (@static-grids = true) and (@custom-grids = true) { // custom static grids
-        &32 { width: 100 / 5%; }
-        &42 { width: 100 / 7%; }
+    ._custom-xs-static-cols-loop(@i) when (@i > 0) {
+        ._custom-xs-static-cols-loop(@i - 1);
+
+        @name: ~'-xs-';
+        @size: extract(@custom-static-grid-columns, @i);
+        ._create-custom-static-cols(@name; @size);
     }
+    ._custom-xs-static-cols-loop(length(@custom-static-grid-columns));
 
     .row.xs-fluid > [class*="col-"] { width: 100%; clear: both; }
     .row {
@@ -385,10 +445,15 @@ html {
     }
     .col-xl-loop(@grid-columns);
 
-    .col-xl- when (@custom-grids = true) { // custom grids
-        &5x { width: 100 / 5%; }
-        &7x { width: 100 / 7%; }
+    ._custom-grids-xl-loop(@i) when (@i > 0) {
+        ._custom-grids-xl-loop(@i - 1);
+
+        @name: ~'-xl-';
+        @size: extract(@custom-grid-columns, @i);
+        ._create-custom-cols(@name; @size);
+
     }
+    ._custom-grids-xl-loop(length(@custom-grid-columns));
 
     .col-xl-static-loop(@i) when (@i >= 0) {
         .col-xl-static-loop(@i - 1);
@@ -398,9 +463,13 @@ html {
     }
     .col-xl-static-loop(@col-static-steps);
 
-    .col-xl- when (@static-grids = true) and (@custom-grids = true) { // custom static grids
-        &32 { width: 100 / 5%; }
-        &42 { width: 100 / 7%; }
+    ._custom-xl-static-cols-loop(@i) when (@i > 0) {
+        ._custom-xl-static-cols-loop(@i - 1);
+
+        @name: ~'-xl-';
+        @size: extract(@custom-static-grid-columns, @i);
+        ._create-custom-static-cols(@name; @size);
     }
+    ._custom-xl-static-cols-loop(length(@custom-static-grid-columns));
 
 }
