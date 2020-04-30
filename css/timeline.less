@@ -14,10 +14,10 @@
 .timeline { list-style: none; padding: 0; position: relative; }
 .timeline:not(.hide-lines):after { content: ""; width: 2px; ._bg-var(timeline-line-bg); border-radius: 1px; position: absolute; top: 0; bottom: 0; }
 .timeline.ui-text:after { background-color: currentColor; }
-.timeline:not(:last-child) { margin-bottom: 20px; }
+.timeline:not(:last-child) { margin-bottom: @highlight-space; }
 
 .timeline > li { display: block; position: relative; }
-.timeline > li:not(:last-child) { margin-bottom: 15px; }
+.timeline > li:not(:last-child) { margin-bottom: @highlight-space; }
 .card .timeline > li > .card { ._bg-var(card-bg); }
 
 .timeline:not(.hide-h-lines) > li:before,.timeline > li:after { content: ""; display: block; position: absolute; top: 50%; transform: translateY(-50%); z-index: 1; }

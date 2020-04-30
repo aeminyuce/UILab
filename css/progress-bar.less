@@ -19,7 +19,7 @@
 @keyframes progress-fill { from { width: 0; } }
 
 .progress-bar { height: 12px; ._bg-var(progress-bar-bg); padding: 2px; display: block; overflow: hidden; }
-.progress-bar:not(:last-child) { margin-bottom: 10px; }
+.progress-bar:not(:last-child) { margin-bottom: @highlight-space / 2; }
 .progress-bar > span { width: 0; height: 100%; ._bg-var(progress-bar-inner-bg); float: left; }
 .progress-bar.round > span:first-child { border-top-left-radius: @round - @round * 0.3333333333; border-bottom-left-radius: @round - @round * 0.3333333333; }
 .progress-bar.round > span:last-child { border-top-right-radius: @round - @round * 0.3333333333; border-bottom-right-radius: @round - @round * 0.3333333333; }

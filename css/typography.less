@@ -37,7 +37,7 @@
 h1,h2,h3,h4,h5,h6 { font-weight: @font-normal; margin-bottom: 0; }
 h1,h2,h3 { line-height: 1; }
 
-h1:not(:last-child),h2:not(:last-child),h3:not(:last-child),h4:not(:last-child),h5:not(:last-child),h6:not(:last-child) { margin-bottom: 20px; }
+h1:not(:last-child),h2:not(:last-child),h3:not(:last-child),h4:not(:last-child),h5:not(:last-child),h6:not(:last-child) { margin-bottom: @highlight-space; }
 h1 > small,h2 > small,h3 > small,h4 > small,h5 > small,h6 > small { font-size: 14px !important; }
 
 h1 { font-size: 36px; }
@@ -90,7 +90,7 @@ body,a { ._color-var(black); }
 a.underline:hover,button.underline:hover { text-decoration: none; }
 .hoverline:hover { text-decoration: underline; }
 
-.font-lead { font-size: 21px; line-height: 1.4; margin-bottom: 20px; }
+.font-lead { font-size: 21px; line-height: 1.4; margin-bottom: @highlight-space; }
 .font-bold { font-weight: @font-bold !important; }
 .font-semibold { font-weight: @font-semibold !important; }
 .font-regular { font-weight: @font-normal !important; }
@@ -110,10 +110,10 @@ a.underline:hover,button.underline:hover { text-decoration: none; }
 
 abbr[title] { cursor: help; }
 
-address:not(:last-child) { margin-bottom: 20px; }
+address:not(:last-child) { margin-bottom: @highlight-space; }
 address { font-style: normal; }
 
-blockquote:not(:last-child) { margin-bottom: 20px; }
+blockquote:not(:last-child) { margin-bottom: @highlight-space; }
 blockquote { font-size: 16px; padding: 10px 20px !important; border-left: 5px solid @blockquote-border; }
 blockquote.align-r,blockquote.right { text-align: right; border-right: 5px solid @blockquote-border; border-left: 0; }
 blockquote footer,blockquote small { color: @blockquote-footer-color; font-size: 80%; display: block; }
@@ -123,6 +123,6 @@ code,kbd,pre,samp,xmp { font-family: @code-font-family; }
 code { ._color-var(code-color); font-size: 90%; padding: 2px 4px !important; ._bg-var(code-bg); display: inline-block; border-radius: 2px; }
 kbd { color: @white; font-size: 90%; background-color: @pre-color; padding: 2px 4px !important; border-radius: 3px; box-shadow: inset 0 -1px 0 @kbd-shadow; }
 
-pre:not(:last-child),xmp:not(:last-child) { margin-bottom: 20px; }
+pre:not(:last-child),xmp:not(:last-child) { margin-bottom: @highlight-space; }
 pre,xmp { ._color-var(pre-color); white-space: pre-wrap; word-wrap: break-word; ._bg-var(pre-bg); padding: 10px !important; display: block; border: 1px solid @pre-border; }
 pre.scroll-v,xmp.scroll-v { max-height: 350px; }

@@ -6658,7 +6658,7 @@ header.sticky {
   position: relative;
 }
 .timeline > li:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .card .timeline > li > .card {
   background-color: #fff;

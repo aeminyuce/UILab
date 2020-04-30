@@ -1,9 +1,16 @@
 // out: false
 /* helpers */ @import '_settings.less';
 
-@sm-shadow:                             fade(@black, 5%);
-@shadow:                                fade(@black, 10%);
-@hover-shadow:                          fade(@black, 20%);
+@shadow-sm:                             0 1px 3px fade(@black, 5%);
+@shadow:                                0 1px 3px fade(@black, 10%);
+@shadow-lg:                             0 5px 15px fade(@black, 10%);
+@shadow-hover:                          0 5px 15px fade(@black, 20%);
+
+@circle:                                1000px;
+
+@opacity:                               .75;
+@opacity-more:                          .45;
+@opacity-half:                          .5;
 
 .visible { display: block !important; }
 .hidden { display: none !important; }
@@ -48,7 +55,7 @@
 }
 .highlight {
     display: block;
-    &:not(:last-child) { margin-bottom: 20px !important; }
+    &:not(:last-child) { margin-bottom: @highlight-space !important; }
 }
 
 .block {
@@ -105,27 +112,27 @@
 }
 
 .circle {
-    border-radius: 1000px;
+    border-radius: @circle;
     &:extend([class*="circle-"]);
 
-    &-t { border-radius: 1000px 1000px 0 0; }
-    &-r { border-radius: 0 1000px 1000px 0; }
-    &-b { border-radius: 0 0 1000px 1000px; }
-    &-l { border-radius: 1000px 0 0 1000px; }
+    &-t { border-radius: @circle @circle 0 0; }
+    &-r { border-radius: 0 @circle @circle 0; }
+    &-b { border-radius: 0 0 @circle @circle; }
+    &-l { border-radius: @circle 0 0 @circle; }
 
 }
 
 .shadow {
-    box-shadow: 0 1px 3px @shadow;
+    box-shadow: @shadow;
 
-    &-sm { box-shadow: 0 1px 3px @sm-shadow; }
-    &-lg { box-shadow: 0 5px 15px @shadow; }
+    &-sm { box-shadow: @shadow-sm; }
+    &-lg { box-shadow: @shadow-lg; }
 
     &-in {
-        box-shadow: inset 0 1px 3px @shadow;
+        box-shadow: inset @shadow;
 
-        &-sm { box-shadow: inset 0 1px 3px @sm-shadow; }
-        &-lg { box-shadow: inset 0 5px 15px @shadow; }
+        &-sm { box-shadow: inset @shadow-sm; }
+        &-lg { box-shadow: inset @shadow-lg; }
 
     }
 
@@ -133,10 +140,10 @@
 
 .no-opacity { opacity: 1 !important; }
 .opacity {
-    opacity: .75 !important;
+    opacity: @opacity !important;
 
-    &-more { opacity: .45 !important; }
-    &-half { opacity: .5 !important; }
+    &-more { opacity: @opacity-more !important; }
+    &-half { opacity: @opacity-half !important; }
     &-full { opacity: 0 !important; }
 
 }
@@ -149,7 +156,7 @@ html:not(.mobile) {
 
     .hover-shadow {
         &,&-1st > *,&-2nd > * > * {
-            &:hover { box-shadow: 0 5px 15px @hover-shadow; }
+            &:hover { box-shadow: @shadow-hover; }
         }
     }
     .hover-scale {
@@ -224,7 +231,7 @@ html:not(.mobile) {
 
 .list-unstyled {
     &:extend(.list-custom);
-    &:not(:last-child) { margin-bottom: 20px; }
+    &:not(:last-child) { margin-bottom: @highlight-space; }
 }
 
 .list-inline {
@@ -395,9 +402,11 @@ html:not(.mobile) {
     }
 }
 
-[data-theme="light"] when (@dark-mode = true) {
-    .hidden-light,.visible-dark { .hidden(); }
-}
-[data-theme="dark"] when (@dark-mode = true) {
-    .visible-light,.hidden-dark { .hidden(); }
+& when (@dark-mode = true) {
+    [data-theme="light"] {
+        .hidden-light,.visible-dark { .hidden(); }
+    }
+    [data-theme="dark"] {
+        .visible-light,.hidden-dark { .hidden(); }
+    }
 }

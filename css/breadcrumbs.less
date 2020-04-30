@@ -11,7 +11,7 @@
     --breadcrumbs-sep-color: @breadcrumbs-sep-color-dark;
 }
 
-.breadcrumbs:not(:last-child) { margin-bottom: 10px; }
+.breadcrumbs:not(:last-child) { margin-bottom: @highlight-space / 2; }
 .breadcrumbs:not(.no-separated) > ul > li:not(:first-child):before { content: "\203A"; ._color-var(breadcrumbs-sep-color); font-size: 18px; line-height: normal; margin: 0 8px 0 3px; display: inline-block; }
 .breadcrumbs > ul > li:not(:last-child) { margin-right: 5px; }
 .breadcrumbs > ul > li > a,.breadcrumbs > ul > li > b { display: inline-block; }
