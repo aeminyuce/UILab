@@ -4,22 +4,27 @@
 @border-light-color:                 fade(@white, 25%);
 @border-dark-color:                  fade(@black, 35%);
 
-.border,.border-t,.border-r,.border-b,.border-l,.border-h,.border-v,.border-dual,.border-lg { ._border-var(); }
+@border-dual:                        2px;
+@border-lg:                          5px;
 
-.border-dual { border-width: 2px !important; }
-.border-lg { border-width: 5px !important; }
+.border {
+    &,&-t,&-r,&-b,&-l,&-h,&-v,&-dual,&-lg { ._border-var(); }
+
+    &-dual { border-width: @border-dual !important; }
+    &-lg { border-width: @border-lg !important; }
+
+    &-dashed { border-style: dashed; }
+    &-dotted { border-style: dotted; }
+
+    &-light { border-color: @border-light-color !important; }
+    &-dark { border-color: @border-dark-color !important; }
+
+    &-t { border-right: 0 !important; border-bottom: 0 !important; border-left: 0 !important; }
+    &-r { border-top: 0 !important; border-bottom: 0 !important; border-left: 0 !important; }
+    &-b { border-top: 0 !important; border-right: 0 !important; border-left: 0 !important; }
+    &-l { border-top: 0 !important; border-right: 0 !important; border-bottom: 0 !important; }
+
+    &-h { border-top: 0 !important; border-bottom: 0 !important; }
+    &-v { border-right: 0 !important; border-left: 0 !important; }
+}
 .no-border { border-width: 0 !important; }
-
-.border-dashed { border-style: dashed; }
-.border-dotted { border-style: dotted; }
-
-.border-light { border-color: @border-light-color !important; }
-.border-dark { border-color: @border-dark-color !important; }
-
-.border-t { border-right: 0 !important; border-bottom: 0 !important; border-left: 0 !important; }
-.border-r { border-top: 0 !important; border-bottom: 0 !important; border-left: 0 !important; }
-.border-b { border-top: 0 !important; border-right: 0 !important; border-left: 0 !important; }
-.border-l { border-top: 0 !important; border-right: 0 !important; border-bottom: 0 !important; }
-
-.border-h { border-top: 0 !important; border-bottom: 0 !important; }
-.border-v { border-right: 0 !important; border-left: 0 !important; }

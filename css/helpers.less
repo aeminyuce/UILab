@@ -12,6 +12,12 @@
 @opacity-more:                          .45;
 @opacity-half:                          .5;
 
+@scale:                                 1.06;
+@scale-more:                            1.2;
+
+@hover:                                 1%;
+@hover-more:                            5%;
+
 .visible { display: block !important; }
 .hidden { display: none !important; }
 
@@ -161,52 +167,52 @@ html:not(.mobile) {
     }
     .hover-scale {
         &,&-1st > *,&-2nd > * > * {
-            &:hover { transform: scale(1.06); }
+            &:hover { transform: scale(@scale); }
         }
         &-more {
             &,&-1st > *,&-2nd > * > * {
-                &:hover { transform: scale(1.2); }
+                &:hover { transform: scale(@scale-more); }
             }
         }
     }
 
     .hover-t {
         &,&-1st > *,&-2nd > * > * {
-            &:hover { transform: translateY(-1%); }
+            &:hover { transform: translateY(-@hover); }
         }
         &-more {
             &,&-1st > *,&-2nd > * > * {
-                &:hover { transform: translateY(-5%); }
+                &:hover { transform: translateY(-@hover-more); }
             }
         }
     }
     .hover-r {
         &,&-1st > *,&-2nd > * > * {
-            &:hover { transform: translateX(1%); }
+            &:hover { transform: translateX(@hover); }
         }
         &-more {
             &,&-1st > *,&-2nd > * > * {
-                &:hover { transform: translateX(5%); }
+                &:hover { transform: translateX(@hover-more); }
             }
         }
     }
     .hover-b {
         &,&-1st > *,&-2nd > * > * {
-            &:hover { transform: translateY(1%); }
+            &:hover { transform: translateY(@hover); }
         }
         &-more {
             &,&-1st > *,&-2nd > * > * {
-                &:hover { transform: translateY(5%); }
+                &:hover { transform: translateY(@hover-more); }
             }
         }
     }
     .hover-l {
         &,&-1st > *,&-2nd > * > * {
-            &:hover { transform: translateX(-1%); }
+            &:hover { transform: translateX(-@hover); }
         }
         &-more {
             &,&-1st > *,&-2nd > * > * {
-                &:hover { transform: translateX(-5%); }
+                &:hover { transform: translateX(-@hover-more); }
             }
         }
     }
@@ -242,16 +248,10 @@ html:not(.mobile) {
 ._sp-loop(@i) when (@i > 0) {
     ._sp-loop(@i - 1);
 
-    .sp-@{i} { height: ~'@{i}px'; }
+    @j: extract(@increases, @i);
+    .sp-@{j} { height: ~'@{j}px'; }
 }
-._sp-loop(5);
-._sp-loop5x(@i) when (@i > 0) {
-    ._sp-loop5x(@i - 1);
-
-    @size: @i * 5 + 5;
-    .sp-@{size} { height: ~'@{size}px'; }
-}
-._sp-loop5x(5);
+._sp-loop(length(@increases));
 
 .align- {
     &justify { text-align: justify !important; }
