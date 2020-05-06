@@ -50,8 +50,8 @@ html:not(.mobile) .calendar button:hover { ._bg-var(btn-hover-bg); }
 
 .calendar caption { height: 52px; ._bg-var(calendar-area-bg); padding: 5px 52px; margin-bottom: 5px; }
 .calendar.round caption,.calendar.round caption button { border-radius: @round; }
-.calendar caption button { white-space: nowrap; text-overflow: ellipsis; line-height: 22px; max-width: 138px; height: 42px; background-color: @no-color; overflow: hidden; border: 0; }
-.calendar caption > button { width: 42px; padding: 10px; display: block; }
+.calendar caption button { white-space: nowrap; text-overflow: ellipsis; line-height: @btn-lg - 20; max-width: 138px; height: @btn-lg; background-color: @no-color; overflow: hidden; border: 0; }
+.calendar caption > button { width: @btn-lg; padding: 10px; display: block; }
 .calendar caption > button .icon { opacity: .65; }
 
 .calendar-prev { margin-left: -47px; float: left; }
@@ -98,7 +98,7 @@ html:not(.mobile) .calendar tbody td.pickerday button:hover { background-color: 
 .calendar .details { padding-left: 37px; position: absolute; top: 57px; right: 0; bottom: 0; left: 0; z-index: 2; }
 .calendar .details:not(.open) { display: none; }
 
-.calendar .details > button { width: 32px; height: 100%; border: 0; position: absolute; top: 0; left: 0; cursor: pointer; }
+.calendar .details > button { width: @btn-default; height: 100%; border: 0; position: absolute; top: 0; left: 0; cursor: pointer; }
 .calendar .details > button .icon { opacity: .65; }
 .calendar.round .details > button { border-radius: @round; }
 
@@ -146,11 +146,11 @@ html:not(.mobile) .calendar .panel .call:hover,html:not(.mobile) .calendar .pane
 .text .calendar:not(.open-ease) { opacity: 0; }
 
 .text:not(.picker-t):not(.border-dual) .calendar { margin-top: 2px; }
-.text:not(.picker-t).border-dual .calendar { margin-top: 3px; }
+.text:not(.picker-t).border-dual .calendar { margin-top: @border-dual + 1; }
 
 .text.picker-t .calendar { bottom: 100%; }
 .text.picker-t:not(.border-dual) .calendar { margin-bottom: 2px; }
-.text.picker-t.border-dual .calendar { margin-bottom: 3px; }
+.text.picker-t.border-dual .calendar { margin-bottom: @border-dual + 1; }
 
 .text.picker-l .calendar { right: 0; }
 

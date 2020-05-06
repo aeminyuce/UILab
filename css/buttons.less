@@ -6,18 +6,18 @@
 .ease-btn,.ease-1st-btn > *,.ease-2nd-btn > * > * { transition-property: color, background-color, border-width, border-color, opacity, transform, box-shadow; }
 .ease-btn .icon,.ease-1st-btn > * .icon,.ease-2nd-btn > * > * .icon { transition-property: color, transform, opacity, stroke-width; transition-duration: .15s; }
 
-.btn { ._color-var(black); text-align: center; vertical-align: middle; line-height: 18px; height: 32px; ._bg-var(btn-bg); padding-top: 7px; padding-bottom: 7px; display: inline-block; position: relative; cursor: pointer; }
+.btn { ._color-var(black); text-align: center; vertical-align: middle; line-height: @btn-default - 14; height: @btn-default; ._bg-var(btn-bg); padding-top: 7px; padding-bottom: 7px; display: inline-block; position: relative; cursor: pointer; }
 input.btn { ._no-appearance(); }
 .btn.border { padding-top: 5px; padding-bottom: 5px; }
-.btn.border-dual { padding-top: 4px; padding-bottom: 4px; }
+.btn.border-dual { padding-top: 7 - @border-dual; padding-bottom: 7 - @border-dual; }
 .btn:not(.border):not([class*="border-"]) { border-width: 0; }
 .btn:not(.btn-multi) { white-space: nowrap; }
 .btn .icon:not(.toggle-icon) { vertical-align: bottom; width: 18px; height: 18px; stroke-width: 28px; }
 
-.btn-square { min-width: 0 !important; width: 32px; max-width: none !important; }
+.btn-square { min-width: 0 !important; width: @btn-default; max-width: none !important; }
 .btn-square:not([class*="align-"]) { text-align: center !important; }
 
-.btn.btn-multi { word-wrap: break-word; height: auto !important; min-height: 32px; }
+.btn.btn-multi { word-wrap: break-word; height: auto !important; min-height: @btn-default; }
 .btn-sm.btn-multi { min-height: 26px; }
 .btn-xs.btn-multi { min-height: 22px; }
 .btn-xxs.btn-multi { min-height: 16px; }
@@ -29,17 +29,17 @@ input.btn { ._no-appearance(); }
 .btn.ui-dark .icon,.btn.ui-x-dark .icon { opacity: 1; }
 html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hover .icon { opacity: 1 !important; }
 
-.btn-lg,.form-lg .btn { font-size: 16px; line-height: 22px; height: 42px; padding-top: 10px; padding-bottom: 10px; }
-.btn-lg.btn-square,.form-lg .btn.btn-square { width: 42px; }
+.btn-lg,.form-lg .btn { font-size: 16px; line-height: @btn-lg - 20; height: @btn-lg; padding-top: 10px; padding-bottom: 10px; }
+.btn-lg.btn-square,.form-lg .btn.btn-square { width: @btn-lg; }
 .btn-lg.border,.form-lg .btn.border { padding-top: 9px; padding-bottom: 9px; }
-.btn-lg.border-dual,.form-lg .btn.border-dual { padding-top: 8px; padding-bottom: 8px; }
+.btn-lg.border-dual,.form-lg .btn.border-dual { padding-top: 10 - @border-dual; padding-bottom: 10 - @border-dual; }
 .btn-lg.round,.form-lg .btn.round { border-radius: @round * 1.3333333333; }
 .btn-lg .icon:not(.toggle-icon),.form-lg .btn .icon:not(.toggle-icon) { width: 22px; height: 22px; stroke-width: 28px; }
 
 .btn-sm { font-size: 12px; line-height: 16px; height: 26px; padding-top: 5px; padding-bottom: 5px; }
 .btn-sm.btn-square { width: 26px; }
 .btn-sm.border { padding-top: 4px; padding-bottom: 4px; }
-.btn-sm.border-dual { padding-top: 3px; padding-bottom: 3px; }
+.btn-sm.border-dual { padding-top: 5 - @border-dual; padding-bottom: 5 - @border-dual; }
 
 .btn-sm.round { border-radius: @round - @round * 0.3333333333; }
 .btn-sm:not(.circle) { padding-right: 8px; padding-left: 8px; }
@@ -48,7 +48,7 @@ html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hove
 .btn-xs { font-size: 11px; line-height: 14px; height: 22px; padding-top: 4px; padding-bottom: 4px; }
 .btn-xs.btn-square { width: 22px; }
 .btn-xs.border { padding-top: 3px; padding-bottom: 3px; }
-.btn-xs.border-dual { padding-top: 2px; padding-bottom: 2px; }
+.btn-xs.border-dual { padding-top: 4 - @border-dual; padding-bottom: 4 - @border-dual; }
 .btn-xs.round { border-radius: @round / 2; }
 .btn-xs:not(.circle) { padding-right: 5px; padding-left: 5px; }
 .btn-xs.circle { padding-right: 10px; padding-left: 10px; }
@@ -57,7 +57,7 @@ html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hove
 .btn-xxs { font-size: 10px; line-height: 12px; height: 18px; padding-top: 3px; padding-bottom: 3px; }
 .btn-xxs.btn-square { width: 18px; }
 .btn-xxs.border { padding-top: 2px; padding-bottom: 2px; }
-.btn-xxs.border-dual { padding-top: 1px; padding-bottom: 1px; }
+.btn-xxs.border-dual { padding-top: 3 - @border-dual; padding-bottom: 3 - @border-dual; }
 .btn-xxs.round { border-radius: @round * 0.3333333333; }
 .btn-xxs:not(.circle) { padding-right: 2px; padding-left: 2px; }
 .btn-xxs.circle { padding-right: 6px; padding-left: 6px; }
@@ -89,8 +89,8 @@ html:not(.mobile) .btn.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-ligh
 
 .pagination:not(:last-child) { margin-bottom: @highlight-space; }
 
-.pagination .btn { text-align: center !important; min-width: 32px; }
-.pagination .btn-lg,.pagination.form-lg .btn { min-width: 42px; }
+.pagination .btn { text-align: center !important; min-width: @btn-default; }
+.pagination .btn-lg,.pagination.form-lg .btn { min-width: @btn-lg; }
 .pagination .btn-sm { min-width: 26px; }
 .pagination .btn-xs { min-width: 22px; }
 .pagination .btn-xxs { min-width: 14px; }

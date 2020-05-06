@@ -15,11 +15,11 @@
 .autocomplete:not(.open-ease) ul { opacity: 0; }
 
 .autocomplete:not(.menu-t):not(.border-dual):not(.no-border) ul { margin-top: 2px; }
-.autocomplete.border-dual:not(.menu-t) ul,.autocomplete.no-border:not(.menu-t) ul { margin-top: 3px; }
+.autocomplete.border-dual:not(.menu-t) ul,.autocomplete.no-border:not(.menu-t) ul { margin-top: @border-dual + 1; }
 
 .autocomplete.menu-t ul { bottom: 100%; }
 .autocomplete.menu-t:not(.border-dual):not(.no-border) ul { margin-bottom: 2px; }
-.autocomplete.menu-t.border-dual ul { margin-bottom: 3px; }
+.autocomplete.menu-t.border-dual ul { margin-bottom: @border-dual + 1; }
 .autocomplete.menu-t.no-border ul { margin-bottom: 1px; }
 
 .autocomplete li { white-space: nowrap; text-overflow: ellipsis; text-align: left; line-height: 20px; height: 30px; padding: 5px 10px; overflow: hidden; }

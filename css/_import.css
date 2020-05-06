@@ -3993,8 +3993,8 @@ input.btn {
   padding-bottom: 5px;
 }
 .btn.border-dual {
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .btn:not(.border):not([class*="border-"]) {
   border-width: 0;
@@ -4906,23 +4906,25 @@ html:not(.mobile) .dropdown ul.content > li:hover {
   overflow: hidden;
 }
 .toggle-textarea:not(.form-focus) textarea {
+  line-height: 22px;
+  height: 30px;
+}
+.toggle-textarea.border-dual:not(.form-focus) textarea {
+  line-height: 18px;
   height: 28px;
+}
+.toggle-textarea.no-border:not(.form-focus) textarea {
+  height: 32px;
 }
 .text.no-border input,
 .select.no-border select {
   line-height: 22px;
   height: 32px;
 }
-.no-border.textarea textarea {
-  line-height: 18px;
-}
 .text.border-dual input,
 .select.border-dual select {
   line-height: 18px;
   height: 28px;
-}
-.border-dual.textarea textarea {
-  line-height: 18px;
 }
 .select:not(.form-focus) select {
   opacity: 0.45;

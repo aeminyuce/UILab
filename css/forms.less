@@ -99,21 +99,20 @@
 }
 
 .text,.textarea,.select,.select-multi { ._border-var(); overflow: hidden; display: block; position: relative; }
-.text,.select,.mobile .select-multi { line-height: normal; min-height: 32px; }
+.text,.select,.mobile .select-multi { line-height: normal; min-height: @btn-default; }
 
 .text:not([class*="align-"]) input,.select:not([class*="align-"]) select,.select-multi:not([class*="align-"]) select,.textarea:not([class*="align-"]) textarea { text-align: left !important; }
 .text input,.select select,.select-multi select,.textarea textarea { ._color-var(black); width: 100%; background-color: @no-color; border: 0; }
 .text input,.select select,.select-multi select,.range { ._no-appearance(); }
 .text input,.select select,.textarea textarea { line-height: 18px; padding: 5px; border-radius: 0; } // border radius fix for Chrome
-.text input,.select select { height: 30px; overflow: hidden; }
+.text input,.select select { height: @btn-default - 2; overflow: hidden; }
 
-.toggle-textarea:not(.form-focus) textarea { height: 28px; }
+.toggle-textarea:not(.form-focus) textarea { line-height: @btn-default - 10; height: @btn-default - 2; }
+.toggle-textarea.border-dual:not(.form-focus) textarea { line-height: @btn-default - 2 * @border-dual - 10; height: @btn-default - 2 * @border-dual; }
+.toggle-textarea.no-border:not(.form-focus) textarea { height: @btn-default; }
 
-.text.no-border input,.select.no-border select { line-height: 22px; height: 32px; }
-.no-border.textarea textarea { line-height: 18px; }
-
-.text.border-dual input,.select.border-dual select { line-height: 18px; height: 28px; }
-.border-dual.textarea textarea { line-height: 18px; }
+.text.no-border input,.select.no-border select { line-height: @btn-default - 10; height: @btn-default; }
+.text.border-dual input,.select.border-dual select { line-height: @btn-default - 10 - @border-dual * 2; height: @btn-default - @border-dual * 2; }
 
 .select:not(.form-focus) select { opacity: .45; }
 .select select { padding-right: 22px; position: relative; z-index: 2; }
@@ -131,8 +130,8 @@
 
 .check,.radio { vertical-align: middle; display: inline-block; }
 
-.file { line-height: normal; height: 32px; ._border-var(); overflow: hidden; display: block; position: relative; }
-.file.border-dual { height: 36px; }
+.file { line-height: normal; height: @btn-default; ._border-var(); overflow: hidden; display: block; position: relative; }
+.file.border-dual { height: @btn-default + @border-dual * 2; }
 
 .file input { vertical-align: middle; width: 100%; overflow: hidden; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 3; opacity: 0; } // don't change z-index!
 
@@ -140,7 +139,7 @@
 .file.round .btn { border-radius: @round / 2 0 0 @round / 2; }
 html:not(.mobile) .file:hover .btn { ._bg-var(btn-hover-bg); }
 
-.file > span:not(.btn) { white-space: nowrap; text-overflow: ellipsis; line-height: 32px; width: 100%; padding-right: 10px; padding-left: 135px; overflow: hidden; display: block; position: absolute; }
+.file > span:not(.btn) { white-space: nowrap; text-overflow: ellipsis; line-height: @btn-default; width: 100%; padding-right: 10px; padding-left: 135px; overflow: hidden; display: block; position: absolute; }
 
 label.custom { min-height: 22px; padding-top: 5px; padding-bottom: 3px; display: inline-block; }
 
@@ -282,10 +281,10 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i { transform: tran
 .form-holder.warning .text,.form-holder.warning .select,.form-holder.warning .border,.form-holder.warning [class*="border-"] { border-color: @yellow !important; }
 .form-holder.warning .text,.form-holder.warning .select { background-color: @form-warning-bg; }
 
-.form-lg .text,.form-lg .select { min-height: 42px; }
-.form-lg .text input,.form-lg .select select { font-size: 16px; line-height: 28px; height: 42px; padding-right: 10px; padding-left: 10px; }
-.form-lg .text.no-border.text input,.form-lg .select.no-border.select select { line-height: 28px; height: 42px; }
-.form-lg .text.border-dual.text input,.form-lg .select.border-dual.select select { line-height: 28px; height: 38px; }
+.form-lg .text,.form-lg .select { min-height: @btn-lg; }
+.form-lg .text input,.form-lg .select select { font-size: 16px; line-height: @btn-lg - 14; height: @btn-lg; padding-right: 10px; padding-left: 10px; }
+.form-lg .text.no-border.text input,.form-lg .select.no-border.select select { line-height: @btn-lg - 14; height: @btn-lg; }
+.form-lg .text.border-dual.text input,.form-lg .select.border-dual.select select { line-height: @btn-lg - 14; height: @btn-lg - @border-dual * 2; }
 
 .form-lg .select select { padding-right: 40px; }
 
@@ -297,13 +296,13 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i { transform: tran
 .form-lg .text-icon-l > input,.form-lg .text-icon-both > input { padding-left: 40px !important; }
 .form-lg .clear-form { width: 14px; height: 14px; stroke-width: 38px; }
 
-.form-lg .file { height: 42px; }
-.form-lg .file.border-dual { height: 46px; }
-.form-lg .file > span:not(.btn) { font-size: 16px; line-height: 42px; }
+.form-lg .file { height: @btn-lg; }
+.form-lg .file.border-dual { height: @btn-lg + @border-dual * 2; }
+.form-lg .file > span:not(.btn) { font-size: 16px; line-height: @btn-lg; }
 
 @media (@default-start) {
-    .form-grid { line-height: 32px; display: inline-block; }
-    .form-lg .form-grid { font-size: 14px; line-height: 42px; }
+    .form-grid { line-height: @btn-default; display: inline-block; }
+    .form-lg .form-grid { font-size: 14px; line-height: @btn-lg; }
 }
 @media (@md-finish) {
     .form-grid { display: block; }
@@ -315,7 +314,7 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i { transform: tran
     .row-gap-md [class*="col-"]:not(.sm-fluid) .form-grid,.row-gap-md-v [class*="col-"]:not(.sm-fluid) .form-grid { margin-bottom: -5px; }
 }
 @media (@md-start) and (@md-finish) {
-    .sm-fluid .form-grid.form-grid { line-height: 32px; display: inline-block; }
+    .sm-fluid .form-grid.form-grid { line-height: @btn-default; display: inline-block; }
 }
 @media (@sm-finish) {
     .sm-fluid .form-grid { display: block; }

@@ -51,9 +51,9 @@
 .modal-content:not(.fullscreen).round .modal-footer { border-radius: 0 0 @round - 1 @round - 1; }
 
 .modal-buttons { float: right; }
-.modal-content.fullscreen .modal-header .modal-buttons { padding-right: 42px; }
+.modal-content.fullscreen .modal-header .modal-buttons { padding-right: @btn-lg; }
 
-.modal-header h1,.modal-header h2,.modal-header h3,.modal-header h4,.modal-header h5,.modal-header h6 { font-size: 18px !important; text-overflow: ellipsis; line-height: 32px; max-width: 100%; overflow: hidden; float: left; }
+.modal-header h1,.modal-header h2,.modal-header h3,.modal-header h4,.modal-header h5,.modal-header h6 { font-size: 18px !important; text-overflow: ellipsis; line-height: @btn-default; max-width: 100%; overflow: hidden; float: left; }
 
 .modal-header .btn-lg,.modal-footer .btn-lg,.modal-header.form-lg .btn,.modal-footer.form-lg .btn { margin: -5px 0; }
 .modal-header .btn-sm,.modal-footer .btn-sm { margin: 3px 0; }
@@ -67,7 +67,7 @@
 .modal-iframe { width: 100%; height: 100%; overflow: hidden; }
 .modal-content:not(.fullscreen).round .modal-iframe { border-radius: @round - 1; }
 
-.modal-content .close-modal { color: @white !important; text-align: center; width: 32px; height: 32px; border: 0; border-radius: 100%; position: absolute; z-index: 10; cursor: pointer; }
+.modal-content .close-modal { color: @white !important; text-align: center; width: @btn-default; height: @btn-default; border: 0; border-radius: 100%; position: absolute; z-index: 10; cursor: pointer; }
 .modal-content .close-modal .icon { width: 14px; height: 14px; stroke-width: 38px; }
 .modal-content:not(.fullscreen) .close-modal { background-color: @modal-close-bg; top: -16px; right: -16px; }
 .modal-content.fullscreen .close-modal { background-color: @modal-close-fullscreen-bg; top: 10px; right: 10px; }
