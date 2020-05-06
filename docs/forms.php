@@ -1724,8 +1724,12 @@
                                 <option>Second</option>
                             </select>
                         </div>
+
                         <div class="textarea margin-10-b">
                             <textarea placeholder="Textarea"></textarea>
+                        </div>
+                        <div class="textarea toggle-textarea margin-10-b">
+                            <textarea placeholder="Toggle Textarea"></textarea>
                         </div>
 
                         <label class="custom">
@@ -1774,8 +1778,12 @@
                                 <option>Second</option>
                             </select>
                         </div>
+
                         <div class="textarea margin-10-b shadow-in no-border">
                             <textarea placeholder="Textarea"></textarea>
+                        </div>
+                        <div class="textarea toggle-textarea margin-10-b shadow-in no-border">
+                            <textarea placeholder="Toggle Textarea"></textarea>
                         </div>
 
                         <label class="custom">
@@ -1824,8 +1832,12 @@
                                 <option>Second</option>
                             </select>
                         </div>
+
                         <div class="textarea margin-10-b round no-border ui-x-light">
                             <textarea placeholder="Textarea"></textarea>
+                        </div>
+                        <div class="textarea toggle-textarea margin-10-b round no-border ui-x-light">
+                            <textarea placeholder="Toggle Textarea"></textarea>
                         </div>
 
                         <label class="custom">
