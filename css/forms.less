@@ -75,27 +75,29 @@
 }
 
 .ease-form,.ease-1st-form > *,.ease-2nd-form > * > * { transition-property: color, background-color, border-color; }
-.ease-form .icon,.ease-1st-form > * .icon,.ease-2nd-form > * > * .icon { transition-property: color, transform, opacity; transition-duration: .15s; }
-.ease-form .state,.ease-1st-form > * .state,.ease-2nd-form > * > * .state { transition-property: width, height, background-color, transform, opacity; transition-duration: .15s; }
+.ease-form .icon,.ease-1st-form > * .icon,.ease-2nd-form > * > * .icon { transition-property: color, transform, opacity; transition-duration: @ease-default; }
+.ease-form .state,.ease-1st-form > * .state,.ease-2nd-form > * > * .state { transition-property: width, height, background-color, transform, opacity; transition-duration: @ease-default; }
 
-.ease-form textarea,.ease-1st-form > * select,.ease-2nd-form > * > * select { transition-property: opacity; transition-duration: .15s; }
-.ease-form textarea,.ease-1st-form > * textarea,.ease-2nd-form > * > * textarea { transition-property: height; transition-duration: .15s; }
+.ease-form textarea,.ease-1st-form > * select,.ease-2nd-form > * > * select { transition-property: opacity; transition-duration: @ease-default; }
+.ease-form textarea,.ease-1st-form > * textarea,.ease-2nd-form > * > * textarea { transition-property: height; transition-duration: @ease-default; }
 
-.ease-range::-webkit-slider-thumb { transition-property: transform; transition-duration: .15s; }
-.ease-range::-moz-range-thumb { transition-property: transform; transition-duration: .15s; }
-.ease-range::-webkit-slider-runnable-track { transition-property: background-color; transition-duration: .15s; }
-.ease-range::-moz-range-track { transition-property: background-color; transition-duration: .15s; }
+.ease-range::-webkit-slider-thumb { transition-property: transform; transition-duration: @ease-default; }
+.ease-range::-moz-range-thumb { transition-property: transform; transition-duration: @ease-default; }
+.ease-range::-webkit-slider-runnable-track { transition-property: background-color; transition-duration: @ease-default; }
+.ease-range::-moz-range-track { transition-property: background-color; transition-duration: @ease-default; }
 
 .no-effects .ease-range::-webkit-slider-thumb { transition-property: none; }
 .no-effects .ease-range::-moz-range-thumb { transition-property: none; }
 .no-effects .ease-range::-webkit-slider-runnable-track { transition-property: none; }
 .no-effects .ease-range::-moz-range-track { transition-property: none; }
 
-@media (prefers-reduced-motion:reduce) {
-    .ease-range::-webkit-slider-thumb { transition-property: none; }
-    .ease-range::-moz-range-thumb { transition-property: none; }
-    .ease-range::-webkit-slider-runnable-track { transition-property: none; }
-    .ease-range::-moz-range-track { transition-property: none; }
+& when (@reduced-motion = true) {
+    @media (prefers-reduced-motion: reduce) {
+        .ease-range::-webkit-slider-thumb { transition-property: none; }
+        .ease-range::-moz-range-thumb { transition-property: none; }
+        .ease-range::-webkit-slider-runnable-track { transition-property: none; }
+        .ease-range::-moz-range-track { transition-property: none; }
+    }
 }
 
 .text,.textarea,.select,.select-multi { ._border-var(); overflow: hidden; display: block; position: relative; }

@@ -980,19 +980,19 @@ html .row {
   padding-right: 1px;
   padding-left: 1px;
 }
-.row .no-row-gap,
-.row .no-row-gap-h {
+.no-row-gap,
+.no-row-gap-h {
   margin-right: inherit;
   margin-left: inherit;
 }
-.row .no-row-gap > [class*="col-"]:not(.col-static) {
+.no-row-gap > [class*="col-"]:not(.col-static) {
   padding: 0;
 }
-.row .no-row-gap-v > [class*="col-"]:not(.col-static) {
+.no-row-gap-v > [class*="col-"]:not(.col-static) {
   padding-top: 0;
   padding-bottom: 0;
 }
-.row .no-row-gap-h > [class*="col-"]:not(.col-static) {
+.no-row-gap-h > [class*="col-"]:not(.col-static) {
   padding-right: 0;
   padding-left: 0;
 }
@@ -3259,29 +3259,6 @@ html .row {
   transition-duration: 0.15s;
   transition-timing-function: ease-out;
 }
-.no-effects,
-.no-effects:before,
-.no-effects:after,
-.no-effects *,
-.no-effects *:before,
-.no-effects *:after {
-  transition-property: none !important;
-}
-.pause-effects,
-.pause-effects:before,
-.pause-effects:after,
-.pause-effects *,
-.pause-effects *:before,
-.pause-effects *:after {
-  transition-property: none !important;
-}
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *:before,
-  *:after {
-    transition-property: none !important;
-  }
-}
 .ease-fast,
 .ease-fast[class*="ease-1st-"] > *,
 .ease-fast[class*="ease-2nd-"] > * > * {
@@ -3342,7 +3319,7 @@ html .row {
 }
 .ease-border,
 .ease-1st-border > *,
-.ease-border > * > * {
+.ease-2nd-border > * > * {
   transition-property: border-color, border-width;
 }
 .ease-position,
@@ -3383,31 +3360,8 @@ html .row {
 .ease-default,
 .ease-default[class*="ease-1st-"] > *,
 .ease-default[class*="ease-2nd-"] > * > * {
-  transition-duration: 0.15s !important;
+  transition-duration: ease-out !important;
   transition-timing-function: ease !important;
-}
-.no-effects,
-.no-effects:before,
-.no-effects:after,
-.no-effects *,
-.no-effects *:before,
-.no-effects *:after {
-  animation: none !important;
-}
-.pause-effects,
-.pause-effects:before,
-.pause-effects:after,
-.pause-effects *,
-.no-effects *:before,
-.pause-effects *:after {
-  animation-play-state: paused !important;
-}
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *:before,
-  *:after {
-    animation: none !important;
-  }
 }
 @keyframes spin {
   from {
@@ -3481,6 +3435,32 @@ html .row {
 }
 .animate-bounce-z {
   animation: bounce-z 6s linear infinite;
+}
+.no-effects,
+.no-effects:before,
+.no-effects:after,
+.no-effects *,
+.no-effects *:before,
+.no-effects *:after {
+  transition-property: none !important;
+  animation: none !important;
+}
+.pause-effects,
+.pause-effects:before,
+.pause-effects:after,
+.pause-effects *,
+.pause-effects *:before,
+.pause-effects *:after {
+  transition-property: none !important;
+  animation-play-state: paused !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *:before,
+  *:after {
+    transition-property: none !important;
+    animation: none !important;
+  }
 }
 /* typography */
 h1,

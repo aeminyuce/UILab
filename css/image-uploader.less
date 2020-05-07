@@ -48,11 +48,11 @@
 
 @keyframes uploader-loader { from { background-position: 40px 0; } to { background-position: 0 0; } }
 
-.ease-image-uploader { transition-property: background-color; transition-duration: .15s; }
+.ease-image-uploader { transition-property: background-color; transition-duration: @ease-default; }
 .ease-image-uploader .uploader-tools,.ease-image-uploader .uploader-list ul > li { transition-property: opacity; transition-duration: .3s; }
-.ease-image-uploader .uploader-list { transition-property: margin; transition-duration: .15s; }
-.ease-image-uploader .uploader-list > .icon { transition-property: opacity; transition-duration: .15s; }
-.ease-image-uploader .uploader-list ul > li img { transition-property: transform, box-shadow; transition-duration: .15s; }
+.ease-image-uploader .uploader-list { transition-property: margin; transition-duration: @ease-default; }
+.ease-image-uploader .uploader-list > .icon { transition-property: opacity; transition-duration: @ease-default; }
+.ease-image-uploader .uploader-list ul > li img { transition-property: transform, box-shadow; transition-duration: @ease-default; }
 
 .image-uploader { ._bg-var(card-bg); overflow: hidden; position: relative; }
 .image-uploader.drop-highlight { ._bg-var(image-uploader-drop-bg); }

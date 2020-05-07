@@ -4,8 +4,8 @@
 @autocomplete-list-hover-bg:            fade(@black, 7.5%);
 
 .ease-autocomplete { transition-property: margin-top, opacity; }
-.ease-autocomplete ul { transition-property: opacity; transition-duration: .15s; }
-.ease-autocomplete li { transition-property: background-color; transition-duration: .15s; }
+.ease-autocomplete ul { transition-property: opacity; transition-duration: @ease-default; }
+.ease-autocomplete li { transition-property: background-color; transition-duration: @ease-default; }
 
 .autocomplete { overflow: visible !important; }
 .autocomplete.open { z-index: 19; }

@@ -4,6 +4,7 @@
 @grid-columns:                          12;
 @container-gutter:                      @highlight-space / 2;
 
+@row-gaps-breakpoints:                      lg, md, sm, xs;
 @row-gap-lg:                            15px;
 @row-gap:                               @highlight-space / 2;
 @row-gap-md:                            5px;
@@ -40,77 +41,43 @@ html {
     & > [class*="col-"]:not(.col-static) when (@static-grids = true) { padding: @row-gap; }
 
     &-gap {
-        &-lg {
-            &,&-h { margin-right: -@row-gap-lg; margin-left: -@row-gap-lg; }
+        ._row-gaps-loop(@i) when (@i > 0) {
+            ._row-gaps-loop(@i - 1);
 
-            & when (@static-grids = false) {
-                & > [class*="col-"] { padding: @row-gap-lg; }
-                &-v > [class*="col-"] { padding-top: @row-gap-lg; padding-bottom: @row-gap-lg; }
-                &-h > [class*="col-"] { padding-right: @row-gap-lg; padding-left: @row-gap-lg; }
-            }
-            & when (@static-grids = true) {
-                & > [class*="col-"]:not(.col-static) { padding: @row-gap-lg; }
-                &-v > [class*="col-"]:not(.col-static) { padding-top: @row-gap-lg; padding-bottom: @row-gap-lg; }
-                &-h > [class*="col-"]:not(.col-static) { padding-right: @row-gap-lg; padding-left: @row-gap-lg; }
+            @name: extract(@row-gaps-breakpoints, @i);
+            @size: ~'row-gap-@{name}';
+
+            &-@{name} {
+                &,&-h { margin-right: -@@size; margin-left: -@@size; }
+
+                & when (@static-grids = false) {
+                    & > [class*="col-"] { padding: @@size; }
+                    &-v > [class*="col-"] { padding-top: @@size; padding-bottom: @@size; }
+                    &-h > [class*="col-"] { padding-right: @@size; padding-left: @@size; }
+                }
+                & when (@static-grids = true) {
+                    & > [class*="col-"]:not(.col-static) { padding: @@size; }
+                    &-v > [class*="col-"]:not(.col-static) { padding-top: @@size; padding-bottom: @@size; }
+                    &-h > [class*="col-"]:not(.col-static) { padding-right: @@size; padding-left: @@size; }
+                }
             }
 
         }
-        &-md {
-            &,&-h { margin-right: -@row-gap-md; margin-left: -@row-gap-md; }
-
-            & when (@static-grids = false) {
-                & > [class*="col-"] { padding: @row-gap-md; }
-                &-v > [class*="col-"] { padding-top: @row-gap-md; padding-bottom: @row-gap-md; }
-                &-h > [class*="col-"] { padding-right: @row-gap-md; padding-left: @row-gap-md; }
-            }
-            & when (@static-grids = true) {
-                & > [class*="col-"]:not(.col-static) { padding: @row-gap-md; }
-                &-v > [class*="col-"]:not(.col-static) { padding-top: @row-gap-md; padding-bottom: @row-gap-md; }
-                &-h > [class*="col-"]:not(.col-static) { padding-right: @row-gap-md; padding-left: @row-gap-md; }
-            }
-        }
-        &-sm {
-            &,&-h { margin-right: -@row-gap-sm; margin-left: -@row-gap-sm; }
-
-            & when (@static-grids = false) {
-                & > [class*="col-"] { padding: @row-gap-sm; }
-                &-v > [class*="col-"] { padding-top: @row-gap-sm; padding-bottom: @row-gap-sm; }
-                &-h > [class*="col-"] { padding-right: @row-gap-sm; padding-left: @row-gap-sm; }
-            }
-            & when (@static-grids = true) {
-                & > [class*="col-"]:not(.col-static) { padding: @row-gap-sm; }
-                &-v > [class*="col-"]:not(.col-static) { padding-top: @row-gap-sm; padding-bottom: @row-gap-sm; }
-                &-h > [class*="col-"]:not(.col-static) { padding-right: @row-gap-sm; padding-left: @row-gap-sm; }
-            }
-        }
-        &-xs {
-            &,&-h { margin-right: -@row-gap-xs; margin-left: -@row-gap-xs; }
-
-            & when (@static-grids = false) {
-                & > [class*="col-"] { padding: @row-gap-xs; }
-                &-v > [class*="col-"] { padding-top: @row-gap-xs; padding-bottom: @row-gap-xs; }
-                &-h > [class*="col-"] { padding-right: @row-gap-xs; padding-left: @row-gap-xs; }
-            }
-            & when (@static-grids = true) {
-                & > [class*="col-"]:not(.col-static) { padding: @row-gap-xs; }
-                &-v > [class*="col-"]:not(.col-static) { padding-top: @row-gap-xs; padding-bottom: @row-gap-xs; }
-                &-h > [class*="col-"]:not(.col-static) { padding-right: @row-gap-xs; padding-left: @row-gap-xs; }
-            }
-        }
+        ._row-gaps-loop(length(@row-gaps-breakpoints));
     }
-    .no-row-gap {
-        &,&-h { margin-right: inherit; margin-left: inherit; }
+}
+.no-row-gap {
+    &,&-h { margin-right: inherit; margin-left: inherit; }
 
-        & when (@static-grids = false) {
-            & > [class*="col-"] { padding: 0; }
-            &-v > [class*="col-"] { padding-top: 0; padding-bottom: 0; }
-            &-h > [class*="col-"] { padding-right: 0; padding-left: 0; }
-        }
-        & when (@static-grids = true) {
-            & > [class*="col-"]:not(.col-static) { padding: 0; }
-            &-v > [class*="col-"]:not(.col-static) { padding-top: 0; padding-bottom: 0; }
-            &-h > [class*="col-"]:not(.col-static) { padding-right: 0; padding-left: 0; }
-        }
+    & when (@static-grids = false) {
+        & > [class*="col-"] { padding: 0; }
+        &-v > [class*="col-"] { padding-top: 0; padding-bottom: 0; }
+        &-h > [class*="col-"] { padding-right: 0; padding-left: 0; }
+    }
+    & when (@static-grids = true) {
+        & > [class*="col-"]:not(.col-static) { padding: 0; }
+        &-v > [class*="col-"]:not(.col-static) { padding-top: 0; padding-bottom: 0; }
+        &-h > [class*="col-"]:not(.col-static) { padding-right: 0; padding-left: 0; }
     }
 }
 

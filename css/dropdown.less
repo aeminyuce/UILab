@@ -27,10 +27,10 @@
     --dropdown-list-border: @dropdown-list-border-dark;
 }
 
-.ease-dropdown li { transition-property: background-color; transition-duration: .15s; }
-.ease-dropdown > .btn { transition-property: color, background-color, border-width, border-color, opacity, transform, box-shadow; transition-duration: .15s; }
-.ease-dropdown > .btn .icon { transition-property: color, transform, opacity; transition-duration: .15s; }
-.ease-dropdown .content { transition-property: opacity, transform; transition-duration: .15s; transition-timing-function: ease-in-out; }
+.ease-dropdown li { transition-property: background-color; transition-duration: @ease-default; }
+.ease-dropdown > .btn { transition-property: color, background-color, border-width, border-color, opacity, transform, box-shadow; transition-duration: @ease-default; }
+.ease-dropdown > .btn .icon { transition-property: color, transform, opacity; transition-duration: @ease-default; }
+.ease-dropdown .content { transition-property: opacity, transform; transition-duration: @ease-default; transition-timing-function: ease-in-out; }
 
 .dropdown { vertical-align: middle; display: inline-block; position: relative; }
 .mobile-menu .dropdown { display: block; }

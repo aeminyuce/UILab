@@ -4,7 +4,7 @@
 @keyframes btn-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
 .ease-btn,.ease-1st-btn > *,.ease-2nd-btn > * > * { transition-property: color, background-color, border-width, border-color, opacity, transform, box-shadow; }
-.ease-btn .icon,.ease-1st-btn > * .icon,.ease-2nd-btn > * > * .icon { transition-property: color, transform, opacity, stroke-width; transition-duration: .15s; }
+.ease-btn .icon,.ease-1st-btn > * .icon,.ease-2nd-btn > * > * .icon { transition-property: color, transform, opacity, stroke-width; transition-duration: @ease-default; }
 
 .btn { ._color-var(black); text-align: center; vertical-align: middle; line-height: @btn-default - 14; height: @btn-default; ._bg-var(btn-bg); padding-top: 7px; padding-bottom: 7px; display: inline-block; position: relative; cursor: pointer; }
 input.btn { ._no-appearance(); }

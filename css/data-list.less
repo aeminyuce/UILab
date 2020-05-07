@@ -25,7 +25,7 @@
     --data-list-border: @data-list-border-dark;
 }
 
-.ease-data-list .data-content { transition-property: background-color; transition-duration: .15s; }
+.ease-data-list .data-content { transition-property: background-color; transition-duration: @ease-default; }
 
 .data-list .data-content:not([class*="col-"]) { padding: 10px; ._border-var(@dir: border-bottom; @var: data-list-border); }
 .data-list .data-content:before,.data-list .data-content:after { content: ""; display: table; }

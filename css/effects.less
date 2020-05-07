@@ -1,45 +1,52 @@
 // out: false
 /* effects */ @import '_settings.less';
 
-[class*="ease-"],[class*="ease-1st-"] > *,[class*="ease-2nd-"] > * > * { transition-duration: .15s; transition-timing-function: ease-out; }
+@ease-types:                            fast, slow, slow2x, slow3x, slow4x, slow5x;
+@ease-type-durations:                   .1s, .4s, .8s, 1.2s, 1.6s, 2s;
 
-.no-effects,.no-effects:before,.no-effects:after,.no-effects *,.no-effects *:before,.no-effects *:after { transition-property: none !important; }
-.pause-effects,.pause-effects:before,.pause-effects:after,.pause-effects *,.pause-effects *:before,.pause-effects *:after { transition-property: none !important; }
+[class*="ease-"],[class*="ease-1st-"] > *,[class*="ease-2nd-"] > * > * { transition-duration: @ease-default; transition-timing-function: ease-out; }
 
-@media (prefers-reduced-motion:reduce) {
-  *,*:before,*:after { transition-property: none !important; }
-}
+.ease- {
+    ._ease-loop (@i) when (@i > 0) {
+        ._ease-loop(@i - 1);
 
-.ease-fast,.ease-fast[class*="ease-1st-"] > *,.ease-fast[class*="ease-2nd-"] > * > * { transition-duration: .1s; }
-.ease-slow,.ease-slow[class*="ease-1st-"] > *,.ease-slow[class*="ease-2nd-"] > * > * { transition-duration: .4s; }
-.ease-slow2x,.ease-slow2x[class*="ease-1st-"] > *,.ease-slow2x[class*="ease-2nd-"] > * > * { transition-duration: .8s; }
-.ease-slow3x,.ease-slow3x[class*="ease-1st-"] > *,.ease-slow3x[class*="ease-2nd-"] > * > * { transition-duration: 1.2s; }
-.ease-slow4x,.ease-slow4x[class*="ease-1st-"] > *,.ease-slow4x[class*="ease-2nd-"] > * > * { transition-duration: 1.6s; }
-.ease-slow5x,.ease-slow5x[class*="ease-1st-"] > *,.ease-slow5x[class*="ease-2nd-"] > * > * { transition-duration: 2s; }
+        @name: extract(@ease-types, @i);
+        @duration: extract(@ease-type-durations, @i);
 
-.ease-all { transition-property: all; }
-.ease-color,.ease-1st-color > *,.ease-2nd-color > * > * { transition-property: color; }
-.ease-width,.ease-1st-width > *,.ease-2nd-width > * > * { transition-property: width; }
-.ease-height,.ease-1st-height > *,.ease-2nd-height > * > * { transition-property: height; }
-.ease-bg,.ease-1st-bg > *,.ease-2nd-bg > * > * { transition-property: background-color; }
-.ease-margin,.ease-1st-margin > *,.ease-2nd-margin > * > * { transition-property: margin; }
-.ease-border,.ease-1st-border > *,.ease-border > * > * { transition-property: border-color, border-width; }
-.ease-position,.ease-1st-position > *,.ease-2nd-position > * > * { transition-property: top, right, bottom, left; }
-.ease-layout,.ease-1st-layout > *,.ease-2nd-layout > * > * { transition-property: transform, opacity, box-shadow; }
-.ease-svg,.ease-1st-svg > *,.ease-2nd-svg > * > * { transition-property: fill, stroke; }
+        &@{name} {
+            &,&[class*="ease-1st-"] > *,&[class*="ease-2nd-"] > * > * { transition-duration: @duration; }
+        }
 
-.ease-linear,.ease-linear[class*="ease-1st-"] > *,.ease-linear[class*="ease-2nd-"] > * > * { transition-timing-function: linear; }
-.ease-in,.ease-in[class*="ease-1st-"] > *,.ease-in[class*="ease-2nd-"] > * > * { transition-timing-function: ease-in; }
-.ease-out,.ease-out[class*="ease-1st-"] > *,.ease-out[class*="ease-2nd-"] > * > * { transition-timing-function: ease-out; }
-.ease-in-out,.ease-in-out[class*="ease-1st-"] > *,.ease-in-out[class*="ease-2nd-"] > * > * { transition-timing-function: ease-in-out; }
+    }
+    ._ease-loop(length(@ease-types));
 
-.ease-default,.ease-default[class*="ease-1st-"] > *,.ease-default[class*="ease-2nd-"] > * > * { transition-duration: .15s !important; transition-timing-function: ease !important; }
+    &all { transition-property: all; }
 
-.no-effects,.no-effects:before,.no-effects:after,.no-effects *,.no-effects *:before,.no-effects *:after { animation: none !important; }
-.pause-effects,.pause-effects:before,.pause-effects:after,.pause-effects *,.no-effects *:before,.pause-effects *:after { animation-play-state: paused !important; }
+    &color,&1st-color > *,&2nd-color > * > * { transition-property: color; }
+    &width,&1st-width > *,&2nd-width > * > * { transition-property: width; }
+    &height,&1st-height > *,&2nd-height > * > * { transition-property: height; }
+    &bg,&1st-bg > *,&2nd-bg > * > * { transition-property: background-color; }
+    &margin,&1st-margin > *,&2nd-margin > * > * { transition-property: margin; }
+    &border,&1st-border > *,&2nd-border > * > * { transition-property: border-color, border-width; }
+    &position,&1st-position > *,&2nd-position > * > * { transition-property: top, right, bottom, left; }
+    &layout,&1st-layout > *,&2nd-layout > * > * { transition-property: transform, opacity, box-shadow; }
+    &svg,&1st-svg > *,&2nd-svg > * > * { transition-property: fill, stroke; }
 
-@media (prefers-reduced-motion:reduce) {
-  *,*:before,*:after { animation: none !important; }
+    &linear {
+        &,&[class*="ease-1st-"]> *,&[class*="ease-2nd-"] > * > * { transition-timing-function: linear; }
+    }
+    &in {
+        &,&[class*="ease-1st-"]> *,&[class*="ease-2nd-"] > * > * { transition-timing-function: ease-in; }
+    }
+    &out {
+        &,&[class*="ease-1st-"]> *,&[class*="ease-2nd-"] > * > * { transition-timing-function: ease-out; }
+    }
+    &in-out {
+        &,&[class*="ease-1st-"]> *,&[class*="ease-2nd-"] > * > * { transition-timing-function: ease-in-out; }
+    }
+    &default {
+        &,&[class*="ease-1st-"]> *,&[class*="ease-2nd-"] > * > * { transition-duration: ease-out !important; transition-timing-function: ease !important; }
+    }
 }
 
 @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
@@ -56,3 +63,18 @@
 
 @keyframes bounce-z { from { transform: scale(1); } 25% { transform: scale(.9); } 75% { transform: scale(1.1); } 100% { transform: scale(1); } }
 .animate-bounce-z { animation: bounce-z 6s linear infinite; }
+
+.no-effects {
+    &,&:before,&:after,& *,& *:before,& *:after { transition-property: none !important; animation: none !important; }
+}
+.pause-effects {
+    &,&:before,&:after,& *,& *:before,& *:after { transition-property: none !important;  animation-play-state: paused !important; }
+}
+
+& when (@reduced-motion = true) {
+    @media (prefers-reduced-motion: reduce) {
+        * {
+            &,&:before,&:after { transition-property: none !important; animation: none !important; }
+        }
+    }
+}
