@@ -87,6 +87,10 @@
 @btn-ghost-hover-bg:                    fade(@black, 7.5%);
 @btn-ghost-hover-bg-dark:               fade(@white, 7.5%);
 
+// rulesets
+@no-appearance:                         { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+@no-user-select:                        { -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
+
 // global variables
 ._global-vars () {
     --body-bg: @body-bg;
@@ -246,7 +250,3 @@
     .theme-@{name}.ui-border,.theme-@{name} .ui-border:not([class*="theme-"]) { border-color: @color; }
 
 }
-
-// shorthand mixins
-._no-appearance () { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
-._no-user-select () { -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }

@@ -4,7 +4,7 @@
 @grid-columns:                          12;
 @container-gutter:                      @highlight-space / 2;
 
-@row-gaps-breakpoints:                      lg, md, sm, xs;
+@row-gaps-breakpoints:                  lg, md, sm, xs;
 @row-gap-lg:                            15px;
 @row-gap:                               @highlight-space / 2;
 @row-gap-md:                            5px;
@@ -15,8 +15,8 @@
 @custom-grid-columns:                   5, 7; // 5, 7, 8, 9, 10, 11 recommended
 
 @static-grids:                          true;
-@custom-static-grid-columns:            unit(@btn-default), unit(@btn-lg);
-@col-static-increase:                   50; // px
+@custom-static-grid-columns:            @btn-default, @btn-lg;
+@col-static-increase:                   50px;
 @col-static-steps:                      10; // steps of increases
 
 .container,.fixed {
@@ -129,7 +129,9 @@ html {
 
 ._create-static-cols(@name; @i) when (@static-grids = true) {
     @width: @col-static-increase * @i;
-    .col@{name}@{width} { width: ~'@{width}px'; }
+    @number: unit(@width);
+
+    .col@{name}@{number} { width: @width; }
 };
 
 .col-static-loop(@i) when (@i >= 0) {
@@ -141,7 +143,8 @@ html {
 .col-static-loop(@col-static-steps);
 
 ._create-custom-static-cols(@name; @size) when (@custom-grids = true) {
-    .col@{name}@{size} { width: ~'@{size}px'; }
+    @number: unit(@size);
+    .col@{name}@{number} { width: @size; }
 };
 
 ._custom-static-cols-loop(@i) when (@i > 0) {

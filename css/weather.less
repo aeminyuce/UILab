@@ -19,7 +19,7 @@
 .weather { position: relative; }
 .weather .details { width: 100%; position: relative; z-index: 2; }
 
-.weather .now,.weather .now a,.weather .days,.weather .days a { color: @black; ._no-user-select(); }
+.weather .now,.weather .now a,.weather .days,.weather .days a { color: @black; @no-user-select(); }
 .weather.night .now,.weather.night .now a,.weather.night .now .icons,.weather.night .days,.weather.night .days a,.weather.night .days .icons { color: @white; }
 
 .weather .w-degree:after,.weather .deg:after,.weather .days li > span:after { content: ""; display: block; border: solid 2px currentColor; border-radius: 20px; position: absolute; top: 0; }

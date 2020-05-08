@@ -10,7 +10,7 @@
 
 .ease-pie-chart li,.ease-pie-chart > div span { transition-property: opacity; transition-duration: .3s; }
 
-.pie-chart { position: relative; ._no-user-select(); }
+.pie-chart { position: relative; @no-user-select(); }
 .pie-chart[data-text]:before { content: attr(data-text); color: @black; font-weight: @font-bold; text-align: center; line-height: 14px; min-height: 16px; background: @white; padding: 4px 8px; display: inline-block; border-radius: 1000px; position: absolute; top: 50%; left: 50%; z-index: 2; transform: translate(-50%,-50%); }
 
 .pie-chart > div span { display: block; position: absolute; top: 50%; right: 0; left: 50%; z-index: 1; transform-origin: left top; }

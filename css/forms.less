@@ -105,7 +105,7 @@
 
 .text:not([class*="align-"]) input,.select:not([class*="align-"]) select,.select-multi:not([class*="align-"]) select,.textarea:not([class*="align-"]) textarea { text-align: left !important; }
 .text input,.select select,.select-multi select,.textarea textarea { ._color-var(black); width: 100%; background-color: @no-color; border: 0; }
-.text input,.select select,.select-multi select,.range { ._no-appearance(); }
+.text input,.select select,.select-multi select,.range { @no-appearance(); }
 .text input,.select select,.textarea textarea { line-height: 18px; padding: 5px; border-radius: 0; } // border radius fix for Chrome
 .text input,.select select { height: @btn-default - 2; overflow: hidden; }
 
@@ -171,21 +171,21 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i { transform: tran
 
 .range { width: 100%; height: 1.4rem; padding: 0; background-color: @no-color; }
 
-.range::-webkit-slider-thumb { width: 1rem; height: 1rem; margin-top: -.25rem; background-color: @green; border: 0; border-radius: 50%; ._no-appearance(); }
+.range::-webkit-slider-thumb { width: 1rem; height: 1rem; margin-top: -.25rem; background-color: @green; border: 0; border-radius: 50%; @no-appearance(); }
 .range.ui-text::-webkit-slider-thumb { background-color: currentColor; }
 .range:not(:disabled):hover::-webkit-slider-thumb { transform: scale(1.2); }
 .range:not(:disabled)::-webkit-slider-thumb:active { transform: scale(1.4); }
 .range::-webkit-slider-runnable-track { width: 100%; height: .5rem; ._bg-var(range-track-bg); border-color: @no-color; border-radius: 20px; cursor: pointer; }
 .range:hover::-webkit-slider-runnable-track { ._bg-var(range-track-hover-bg); }
 
-.range::-moz-range-thumb { width: 1rem; height: 1rem; background-color: @green; border: 0; border-radius: 50%; ._no-appearance(); }
+.range::-moz-range-thumb { width: 1rem; height: 1rem; background-color: @green; border: 0; border-radius: 50%; @no-appearance(); }
 .range.ui-text::-moz-range-thumb { background-color: currentColor; }
 .range:not(:disabled):hover::-moz-range-thumb { transform: scale(1.2); }
 .range:not(:disabled)::-moz-range-thumb:active { transform: scale(1.4); }
 .range::-moz-range-track { width: 100%; height: .5rem; ._bg-var(range-track-bg); border-color: @no-color; border-radius: 20px; cursor: pointer; }
 .range:hover::-moz-range-track { ._bg-var(range-track-hover-bg); }
 
-.range::-ms-thumb { width: 1rem; height: 1rem; background-color: @green; margin-top: 0; margin-right: .2rem; margin-left: .2rem; border: 0; border-radius: 50%; ._no-appearance(); }
+.range::-ms-thumb { width: 1rem; height: 1rem; background-color: @green; margin-top: 0; margin-right: .2rem; margin-left: .2rem; border: 0; border-radius: 50%; @no-appearance(); }
 .range.ui-text::-ms-thumb { background-color: currentColor; }
 .range:not(:disabled):hover::-ms-thumb { transform: scale(1.2); }
 .range:not(:disabled)::-ms-thumb:active { transform: scale(1.4); }
