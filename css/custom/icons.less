@@ -1,4 +1,4 @@
-/* icons */ @import '../_settings.less';
+/* icons */ @import (reference) '../_settings.less';
 
 @icons-list-color:                      #4a515a;
 @icons-list-color-dark:                 @white;
@@ -32,8 +32,10 @@
     --icons-name-color: @icons-name-color-dark;
 }
 
-[data-theme="light"] when (@dark-mode = true) { ._icons-vars(); }
-[data-theme="dark"] when (@dark-mode = true) { ._icons-vars-dark(); }
+& when (@dark-mode = true) {
+    [data-theme="light"] { ._icons-vars(); }
+    [data-theme="dark"] { ._icons-vars-dark(); }
+}
 
 .icons-list { margin: -1px; display: flex; flex-wrap: wrap; justify-content: center; }
 .icons-list:not(:last-child) { margin-bottom: 30px; }

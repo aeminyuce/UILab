@@ -22,7 +22,10 @@
     --photo-slider-dot-selected-bg: @photo-slider-dot-selected-bg-dark;
 }
 
-@keyframes photo-slider-loader { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@keyframes photo-slider-loader {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
 
 .photo-slider { white-space: nowrap; overflow: hidden; display: block; position: relative; }
 .photo-slider:not(.loaded) { ._bg-var(body-bg); }

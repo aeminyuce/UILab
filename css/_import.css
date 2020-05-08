@@ -3337,25 +3337,20 @@ html .row {
 .ease-2nd-svg > * > * {
   transition-property: fill, stroke;
 }
-.ease-linear,
-.ease-linear[class*="ease-1st-"] > *,
-.ease-linear[class*="ease-2nd-"] > * > * {
-  transition-timing-function: linear;
-}
 .ease-in,
 .ease-in[class*="ease-1st-"] > *,
 .ease-in[class*="ease-2nd-"] > * > * {
-  transition-timing-function: ease-in;
+  transition-timing-function: in;
 }
 .ease-out,
 .ease-out[class*="ease-1st-"] > *,
 .ease-out[class*="ease-2nd-"] > * > * {
-  transition-timing-function: ease-out;
+  transition-timing-function: out;
 }
 .ease-in-out,
 .ease-in-out[class*="ease-1st-"] > *,
 .ease-in-out[class*="ease-2nd-"] > * > * {
-  transition-timing-function: ease-in-out;
+  transition-timing-function: in-out;
 }
 .ease-default,
 .ease-default[class*="ease-1st-"] > *,
@@ -3371,9 +3366,6 @@ html .row {
     transform: rotate(360deg);
   }
 }
-.animate-spin {
-  animation: spin 1.15s linear infinite;
-}
 @keyframes progress {
   from {
     background-position: 40px 0;
@@ -3381,9 +3373,6 @@ html .row {
   to {
     background-position: 0 0;
   }
-}
-.animate-progress {
-  animation: progress 3s linear infinite;
 }
 @keyframes bounce-x {
   from {
@@ -3399,9 +3388,6 @@ html .row {
     transform: translateX(0);
   }
 }
-.animate-bounce-x {
-  animation: bounce-x 6s linear infinite;
-}
 @keyframes bounce-y {
   from {
     transform: translateY(0);
@@ -3416,9 +3402,6 @@ html .row {
     transform: translateY(0);
   }
 }
-.animate-bounce-y {
-  animation: bounce-y 6s linear infinite;
-}
 @keyframes bounce-z {
   from {
     transform: scale(1);
@@ -3432,6 +3415,18 @@ html .row {
   100% {
     transform: scale(1);
   }
+}
+.animate-spin {
+  animation: spin 1.15s linear infinite;
+}
+.animate-progress {
+  animation: progress 3s linear infinite;
+}
+.animate-bounce-x {
+  animation: bounce-x 6s linear infinite;
+}
+.animate-bounce-y {
+  animation: bounce-y 6s linear infinite;
 }
 .animate-bounce-z {
   animation: bounce-z 6s linear infinite;

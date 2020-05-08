@@ -12,7 +12,10 @@
 @photo-preview-info-bg:                 fade(@black, 75%);
 @photo-preview-img-shadow:              fade(@black, 75%);
 
-@keyframes preview-loader { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@keyframes preview-loader {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
 
 .ease-photo-gallery .img:after,.ease-photo-gallery .img.has-info > span { transition-property: opacity; transition-duration: @ease-default; }
 

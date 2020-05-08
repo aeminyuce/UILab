@@ -4,6 +4,8 @@
 @ease-types:                            fast, slow, slow2x, slow3x, slow4x, slow5x;
 @ease-type-durations:                   .1s, .4s, .8s, 1.2s, 1.6s, 2s;
 
+@ease-timings:                          in, out, in-out;
+
 [class*="ease-"],[class*="ease-1st-"] > *,[class*="ease-2nd-"] > * > * { transition-duration: @ease-default; transition-timing-function: ease-out; }
 
 .ease- {
@@ -32,37 +34,55 @@
     &layout,&1st-layout > *,&2nd-layout > * > * { transition-property: transform, opacity, box-shadow; }
     &svg,&1st-svg > *,&2nd-svg > * > * { transition-property: fill, stroke; }
 
-    &linear {
-        &,&[class*="ease-1st-"]> *,&[class*="ease-2nd-"] > * > * { transition-timing-function: linear; }
+    ._ease-timings-loop (@i) when (@i > 0) {
+        ._ease-timings-loop(@i - 1);
+
+        @name: extract(@ease-timings, @i);
+        &@{name} {
+            &,&[class*="ease-1st-"]> *,&[class*="ease-2nd-"] > * > * { transition-timing-function: @name; }
+        }
     }
-    &in {
-        &,&[class*="ease-1st-"]> *,&[class*="ease-2nd-"] > * > * { transition-timing-function: ease-in; }
-    }
-    &out {
-        &,&[class*="ease-1st-"]> *,&[class*="ease-2nd-"] > * > * { transition-timing-function: ease-out; }
-    }
-    &in-out {
-        &,&[class*="ease-1st-"]> *,&[class*="ease-2nd-"] > * > * { transition-timing-function: ease-in-out; }
-    }
+    ._ease-timings-loop(length(@ease-timings));
+
     &default {
         &,&[class*="ease-1st-"]> *,&[class*="ease-2nd-"] > * > * { transition-duration: ease-out !important; transition-timing-function: ease !important; }
     }
 }
 
-@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-.animate-spin { animation: spin 1.15s linear infinite; }
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes progress {
+    from { background-position: 40px 0; }
+    to { background-position: 0 0; }
+}
+@keyframes bounce-x {
+    from { transform: translateX(0); }
+    25% { transform: translateX(-12%); }
+    75% { transform: translateX(12%); }
+    100% { transform: translateX(0); }
+}
+@keyframes bounce-y {
+    from { transform: translateY(0); }
+    25% { transform: translateY(-12%); }
+    75% { transform: translateY(12%); }
+    100% { transform: translateY(0); }
+}
+@keyframes bounce-z {
+    from { transform: scale(1); }
+    25% { transform: scale(.9); }
+    75% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
 
-@keyframes progress { from { background-position: 40px 0; } to { background-position: 0 0; } }
-.animate-progress { animation: progress 3s linear infinite; }
-
-@keyframes bounce-x { from { transform: translateX(0); } 25% { transform: translateX(-12%); } 75% { transform: translateX(12%); } 100% { transform: translateX(0); } }
-.animate-bounce-x { animation: bounce-x 6s linear infinite; }
-
-@keyframes bounce-y { from { transform: translateY(0); } 25% { transform: translateY(-12%); } 75% { transform: translateY(12%); } 100% { transform: translateY(0); } }
-.animate-bounce-y { animation: bounce-y 6s linear infinite; }
-
-@keyframes bounce-z { from { transform: scale(1); } 25% { transform: scale(.9); } 75% { transform: scale(1.1); } 100% { transform: scale(1); } }
-.animate-bounce-z { animation: bounce-z 6s linear infinite; }
+.animate- {
+    &spin { animation: spin 1.15s linear infinite; }
+    &progress { animation: progress 3s linear infinite; }
+    &bounce-x { animation: bounce-x 6s linear infinite; }
+    &bounce-y { animation: bounce-y 6s linear infinite; }
+    &bounce-z { animation: bounce-z 6s linear infinite; }
+}
 
 .no-effects {
     &,&:before,&:after,& *,& *:before,& *:after { transition-property: none !important; animation: none !important; }

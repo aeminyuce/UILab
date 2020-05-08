@@ -46,7 +46,10 @@
     --image-uploader-list-tag-bg: @image-uploader-list-tag-bg-dark;
 }
 
-@keyframes uploader-loader { from { background-position: 40px 0; } to { background-position: 0 0; } }
+@keyframes uploader-loader {
+    from { background-position: 40px 0; }
+    to { background-position: 0 0; }
+}
 
 .ease-image-uploader { transition-property: background-color; transition-duration: @ease-default; }
 .ease-image-uploader .uploader-tools,.ease-image-uploader .uploader-list ul > li { transition-property: opacity; transition-duration: .3s; }

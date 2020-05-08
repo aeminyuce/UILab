@@ -1,4 +1,4 @@
-/* dashboard app */ @import '../_settings.less';
+/* dashboard app */ @import (reference) '../_settings.less';
 
 @lg-breakpoint:                         1600px;
 @body-bg:                               #eceef5;
@@ -17,9 +17,10 @@
 ._dashboard-app-vars-dark () {
     --dashboard-app-bg: @dashboard-app-bg-dark;
 }
-
-[data-theme="light"] when (@dark-mode = true) { ._dashboard-app-vars(); }
-[data-theme="dark"] when (@dark-mode = true) { ._dashboard-app-vars-dark(); }
+& when (@dark-mode = true) {
+    [data-theme="light"] { ._dashboard-app-vars(); }
+    [data-theme="dark"] { ._dashboard-app-vars-dark(); }
+}
 
 ._theme(app,  @theme-app);
 ._theme(app2,  @theme-app2);

@@ -121,6 +121,12 @@
     --btn-ghost-hover-bg: @btn-ghost-hover-bg-dark;
 }
 
+& when (@dark-mode = true) {
+    /* global variables */
+    [data-theme="light"] { ._global-vars(); }
+    [data-theme="dark"] { ._global-vars-dark(); }
+}
+
 // variable color mixins
 ._color-var (@var) when (@dark-mode = false) {
     color: @@var;

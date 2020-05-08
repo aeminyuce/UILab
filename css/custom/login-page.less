@@ -1,4 +1,4 @@
-/* login page */ @import '../_settings.less';
+/* login page */ @import (reference) '../_settings.less';
 
 @login-page-forms-container-bg:         #f6f4fc;
 @login-page-forms-container-bg-dark:    transparent;
@@ -32,8 +32,10 @@
     --login-page-signup-btn-bg: @login-page-signup-btn-bg-dark;
 }
 
-[data-theme="light"] when (@dark-mode = true) { ._login-page-vars(); }
-[data-theme="dark"] when (@dark-mode = true) { ._login-page-vars-dark(); }
+& when (@dark-mode = true) {
+    [data-theme="light"] { ._login-page-vars(); }
+    [data-theme="dark"] { ._login-page-vars-dark(); }
+}
 
 html,.login-page { height: 100%; }
 

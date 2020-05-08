@@ -1,7 +1,10 @@
 // out: false
 /* donut chart */ @import '_settings.less';
 
-@keyframes donut-draw { from { stroke-dashoffset: 440; } }
+@keyframes donut-draw {
+    from { stroke-dashoffset: 440; }
+}
+
 .ease-donut-chart circle:not(.bg) { transition-property: opacity stroke; transition-duration: @ease-default; transition-timing-function: ease-in-out; }
 
 .donut-chart { text-align: left !important; display: block; position: relative; ._no-user-select(); }

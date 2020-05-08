@@ -1,4 +1,4 @@
-/* sign up page */ @import '../_settings.less';
+/* sign up page */ @import (reference) '../_settings.less';
 
 @sign-up-holder-bg:                     linear-gradient(110deg, #624494, #080550, #6f113e);
 @sign-up-holder-bg-dark:                linear-gradient(110deg, #a671ff, #2d2a73, #9e2861);
@@ -20,8 +20,10 @@
     --sign-up-why-bg: @sign-up-why-bg-dark;
 }
 
-[data-theme="light"] when (@dark-mode = true) { ._sign-up-vars(); }
-[data-theme="dark"] when (@dark-mode = true) { ._sign-up-vars-dark(); }
+& when (@dark-mode = true) {
+    [data-theme="light"] { ._sign-up-vars(); }
+    [data-theme="dark"] { ._sign-up-vars-dark(); }
+}
 
 .signup-container { margin-top: -50px; }
 .signup-holder { ._gradient-var(sign-up-holder-bg); }
