@@ -18,8 +18,18 @@
     --dashboard-app-bg: @dashboard-app-bg-dark;
 }
 & when (@dark-mode = true) {
-    [data-theme="light"] { ._dashboard-app-vars(); }
-    [data-theme="dark"] { ._dashboard-app-vars-dark(); }
+    & when (@dark-mode-auto-switcher = true) {
+        @media (prefers-color-scheme: light) {
+            :root { ._dashboard-app-vars(); }
+        }
+        @media (prefers-color-scheme: dark) {
+            :root { ._dashboard-app-vars-dark(); }
+        }
+    }
+    & when (@dark-mode-auto-switcher = false) {
+        [data-theme="light"] { ._dashboard-app-vars(); }
+        [data-theme="dark"] { ._dashboard-app-vars-dark(); }
+    }
 }
 
 ._theme(app,  @theme-app);

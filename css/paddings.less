@@ -16,7 +16,7 @@
 .padding-loop(@i) when (@i > 0) {
     .padding-loop(@i - 1);
 
-    @j: extract(@increases, @i);
+    @j: unit(extract(@increases, @i));
     ._paddings (@name: ~'padding-@{j}'; @size: @j);
 }
 .padding-loop(length(@increases));

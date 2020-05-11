@@ -16,7 +16,7 @@
 .margin-loop(@i) when (@i > 0) {
     .margin-loop(@i - 1);
 
-    @j: extract(@increases, @i);
+    @j: unit(extract(@increases, @i));
     ._margins (@name: ~'margin-@{j}'; @size: @j);
 }
 .margin-loop(length(@increases));

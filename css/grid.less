@@ -4,7 +4,7 @@
 @grid-columns:                          12;
 @container-gutter:                      @highlight-space / 2;
 
-@row-gaps-breakpoints:                  lg, md, sm, xs;
+@row-gaps-breakpoints:                  lg md sm xs;
 @row-gap-lg:                            15px;
 @row-gap:                               @highlight-space / 2;
 @row-gap-md:                            5px;
@@ -12,7 +12,7 @@
 @row-gap-xs:                            1px;
 
 @custom-grids:                          true;
-@custom-grid-columns:                   5, 7; // 5, 7, 8, 9, 10, 11 recommended
+@custom-grid-columns:                   5x 7x; // 5x 7x 8x 9x 10x 11x recommended
 
 @static-grids:                          true;
 @custom-static-grid-columns:            @btn-default, @btn-lg;
@@ -102,7 +102,7 @@ html {
 .col-loop(@grid-columns);
 
 ._create-custom-cols(@name; @size) when (@custom-grids = true) {
-    .col@{name}@{size}x { width: percentage((100 / @size) / 100); }
+    .col@{name}@{size} { width: percentage((100 / @size) / 100); }
 };
 
 ._custom-cols-loop(@i) when (@i > 0) {
