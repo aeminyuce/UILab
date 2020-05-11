@@ -1,28 +1,17 @@
 // out: false
 /* effects */ @import '_settings.less';
 
-@ease-types:                            fast slow slow-2x slow-3x slow-4x slow-5x;
-@ease-type-durations:                   .1s .4s .8s 1.2s 1.6s 2s;
-
+@ease-types:                            { fast: .1s; slow: .4s; slow-2x: .8s; slow-3x: 1.2s; slow-4x: 1.6s; slow-5x: 2s; }
 @ease-timings:                          in out in-out;
 
 [class*="ease-"],[class*="ease-1st-"] > *,[class*="ease-2nd-"] > * > * { transition-duration: @ease-default; transition-timing-function: ease-out; }
 
 .ease- {
-    ._ease-loop (@i) when (@i > 0) {
-        ._ease-loop(@i - 1);
-
-        @name: extract(@ease-types, @i);
-        @duration: extract(@ease-type-durations, @i);
-
-        &@{name} {
-            &,&[class*="ease-1st-"] > *,&[class*="ease-2nd-"] > * > * { transition-duration: @duration; }
+    each(@ease-types, {
+        &@{key} {
+            &,&[class*="ease-1st-"] > *,&[class*="ease-2nd-"] > * > * { transition-duration: @value; }
         }
-
-    }
-    ._ease-loop(length(@ease-types));
-
-    &all { transition-property: all; }
+    });
 
     &color,&1st-color > *,&2nd-color > * > * { transition-property: color; }
     &width,&1st-width > *,&2nd-width > * > * { transition-property: width; }
@@ -33,20 +22,17 @@
     &position,&1st-position > *,&2nd-position > * > * { transition-property: top, right, bottom, left; }
     &layout,&1st-layout > *,&2nd-layout > * > * { transition-property: transform, opacity, box-shadow; }
     &svg,&1st-svg > *,&2nd-svg > * > * { transition-property: fill, stroke; }
-
-    ._ease-timings-loop (@i) when (@i > 0) {
-        ._ease-timings-loop(@i - 1);
-
-        @name: extract(@ease-timings, @i);
-        &@{name} {
-            &,&[class*="ease-1st-"]> *,&[class*="ease-2nd-"] > * > * { transition-timing-function: @name; }
-        }
-    }
-    ._ease-timings-loop(length(@ease-timings));
+    &all { transition-property: all; }
 
     &default {
         &,&[class*="ease-1st-"]> *,&[class*="ease-2nd-"] > * > * { transition-duration: ease-out !important; transition-timing-function: ease !important; }
     }
+
+    each(@ease-timings, {
+        &@{value} {
+            &,&[class*="ease-1st-"]> *,&[class*="ease-2nd-"] > * > * { transition-timing-function: @value; }
+        }
+    });
 }
 
 @keyframes spin {

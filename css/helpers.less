@@ -245,15 +245,11 @@ html:not(.mobile) {
 }
 
 [class*="sp-"] { width: 100%; .visible(); clear: both !important; }
-._sp-loop(@i) when (@i > 0) {
-    ._sp-loop(@i - 1);
 
-    @size: extract(@increases, @i);
-    @name: unit(@size);
-
-    .sp-@{name} { height: @size; }
-}
-._sp-loop(length(@increases));
+each(@increases, {
+    @name: unit(@value);
+    .sp-@{name} { height: @value; }
+});
 
 .align- {
     &justify { text-align: justify !important; }

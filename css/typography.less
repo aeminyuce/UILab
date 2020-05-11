@@ -34,26 +34,22 @@
     --pre-bg: @card-bg-dark;
 }
 
-h1,h2,h3,h4,h5,h6 { font-weight: @font-normal; margin-bottom: 0; }
+h1,h2,h3,h4,h5,h6 {
+    font-weight: @font-normal; margin-bottom: 0;
+
+    &:not(:last-child) { margin-bottom: @highlight-space; }
+    & > small { font-size: 14px !important; }
+    & .icon:not(.right) { margin-right: 5px; }
+    & .icon-lg:not(.right) { margin-right: 10px; }
+}
+
 h1,h2,h3 { line-height: 1; }
-
-h1:not(:last-child),h2:not(:last-child),h3:not(:last-child),h4:not(:last-child),h5:not(:last-child),h6:not(:last-child) { margin-bottom: @highlight-space; }
-h1 > small,h2 > small,h3 > small,h4 > small,h5 > small,h6 > small { font-size: 14px !important; }
-
 h1 { font-size: 36px; }
 h2 { font-size: 30px; }
 h3 { font-size: 24px; }
 h4 { font-size: 18px; }
 h5 { font-size: 14px; }
 h6 { font-size: 12px; }
-
-h1 .icon:not(.right),h2 .icon:not(.right),h3 .icon:not(.right),h4 .icon:not(.right),h5 .icon:not(.right),h6 .icon:not(.right) { margin-right: 5px; }
-h1 .icon-lg:not(.right),h2 .icon-lg:not(.right),h3 .icon-lg:not(.right),h4 .icon-lg:not(.right),h5 .icon-lg:not(.right),h6 .icon-lg:not(.right) { margin-right: 10px; }
-
-@media (@xs-finish) {
-    h1,h2,h3,h4,h5,h6 { text-align: center; }
-    h1 > small,h2 > small,h3 > small,h4 > small,h5 > small,h6 > small { text-align: center; display: block; }
-}
 
 body,a { ._color-var(black); }
 
@@ -126,3 +122,11 @@ kbd { color: @white; font-size: 90%; background-color: @pre-color; padding: 2px 
 pre:not(:last-child),xmp:not(:last-child) { margin-bottom: @highlight-space; }
 pre,xmp { ._color-var(pre-color); white-space: pre-wrap; word-wrap: break-word; ._bg-var(pre-bg); padding: 10px !important; display: block; border: 1px solid @pre-border; }
 pre.scroll-v,xmp.scroll-v { max-height: 350px; }
+
+@media (@xs-finish) {
+    h1,h2,h3,h4,h5,h6 {
+        text-align: center;
+
+        & > small { text-align: center; display: block; }
+    }
+}

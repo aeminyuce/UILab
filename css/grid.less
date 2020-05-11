@@ -4,7 +4,7 @@
 @grid-columns:                          12;
 @container-gutter:                      @highlight-space / 2;
 
-@row-gaps-breakpoints:                  lg md sm xs;
+@row-gap-breakpoints:                   lg md sm xs;
 @row-gap-lg:                            15px;
 @row-gap:                               @highlight-space / 2;
 @row-gap-md:                            5px;
@@ -41,13 +41,10 @@ html {
     & > [class*="col-"]:not(.col-static) when (@static-grids = true) { padding: @row-gap; }
 
     &-gap {
-        ._row-gaps-loop(@i) when (@i > 0) {
-            ._row-gaps-loop(@i - 1);
+        each(@row-gap-breakpoints, {
+            @size: ~'row-gap-@{value}';
 
-            @name: extract(@row-gaps-breakpoints, @i);
-            @size: ~'row-gap-@{name}';
-
-            &-@{name} {
+            &-@{value} {
                 &,&-h { margin-right: -@@size; margin-left: -@@size; }
 
                 & when (@static-grids = false) {
@@ -61,9 +58,7 @@ html {
                     &-h > [class*="col-"]:not(.col-static) { padding-right: @@size; padding-left: @@size; }
                 }
             }
-
-        }
-        ._row-gaps-loop(length(@row-gaps-breakpoints));
+        });
     }
 }
 .no-row-gap {
@@ -105,15 +100,9 @@ html {
     .col@{name}@{size} { width: percentage((100 / @size) / 100); }
 };
 
-._custom-cols-loop(@i) when (@i > 0) {
-    ._custom-cols-loop(@i - 1);
-
-    @name: ~'-';
-    @size: extract(@custom-grid-columns, @i);
-    ._create-custom-cols(@name; @size);
-
-}
-._custom-cols-loop(length(@custom-grid-columns));
+each(@custom-grid-columns, {
+    ._create-custom-cols(~'-'; @value);
+});
 
 .col-static when (@static-grids = true) {
     width: 100%; display: table; table-layout: fixed;
@@ -147,14 +136,9 @@ html {
     .col@{name}@{number} { width: @size; }
 };
 
-._custom-static-cols-loop(@i) when (@i > 0) {
-    ._custom-static-cols-loop(@i - 1);
-
-    @name: ~'-';
-    @size: extract(@custom-static-grid-columns, @i);
-    ._create-custom-static-cols(@name; @size);
-}
-._custom-static-cols-loop(length(@custom-static-grid-columns));
+each(@custom-static-grid-columns, {
+    ._create-custom-static-cols(~'-'; @value);
+});
 
 @media (@lg-start) {
     .fixed { max-width: @lg-breakpoint; }
@@ -168,15 +152,9 @@ html {
     }
     .col-lg-loop(@grid-columns);
 
-    ._custom-grids-lg-loop(@i) when (@i > 0) {
-        ._custom-grids-lg-loop(@i - 1);
-
-        @name: ~'-lg-';
-        @size: extract(@custom-grid-columns, @i);
-        ._create-custom-cols(@name; @size);
-
-    }
-    ._custom-grids-lg-loop(length(@custom-grid-columns));
+    each(@custom-grid-columns, {
+        ._create-custom-cols(~'-lg-'; @value);
+    });
 
     .col-lg-static-loop(@i) when (@i >= 0) {
         .col-lg-static-loop(@i - 1);
@@ -186,14 +164,9 @@ html {
     }
     .col-lg-static-loop(@col-static-steps);
 
-    ._custom-lg-static-cols-loop(@i) when (@i > 0) {
-        ._custom-lg-static-cols-loop(@i - 1);
-
-        @name: ~'-lg-';
-        @size: extract(@custom-static-grid-columns, @i);
-        ._create-custom-static-cols(@name; @size);
-    }
-    ._custom-lg-static-cols-loop(length(@custom-static-grid-columns));
+    each(@custom-static-grid-columns, {
+        ._create-custom-static-cols(~'-lg-'; @value);
+    });
 
 }
 @media (@md-start) and (@md-finish) {
@@ -207,15 +180,9 @@ html {
     }
     .col-md-loop(@grid-columns);
 
-    ._custom-grids-md-loop(@i) when (@i > 0) {
-        ._custom-grids-md-loop(@i - 1);
-
-        @name: ~'-md-';
-        @size: extract(@custom-grid-columns, @i);
-        ._create-custom-cols(@name; @size);
-
-    }
-    ._custom-grids-md-loop(length(@custom-grid-columns));
+    each(@custom-grid-columns, {
+        ._create-custom-cols(~'-md-'; @value);
+    });
 
     .col-md-static-loop(@i) when (@i >= 0) {
         .col-md-static-loop(@i - 1);
@@ -225,14 +192,9 @@ html {
     }
     .col-md-static-loop(@col-static-steps);
 
-    ._custom-md-static-cols-loop(@i) when (@i > 0) {
-        ._custom-md-static-cols-loop(@i - 1);
-
-        @name: ~'-md-';
-        @size: extract(@custom-static-grid-columns, @i);
-        ._create-custom-static-cols(@name; @size);
-    }
-    ._custom-md-static-cols-loop(length(@custom-static-grid-columns));
+    each(@custom-static-grid-columns, {
+        ._create-custom-static-cols(~'-md-'; @value);
+    });
 
     .row {
         &:not(.no-fluid):not(.sm-fluid):not(.xs-fluid) {
@@ -268,15 +230,9 @@ html {
     }
     .col-sm-loop(@grid-columns);
 
-    ._custom-grids-sm-loop(@i) when (@i > 0) {
-        ._custom-grids-sm-loop(@i - 1);
-
-        @name: ~'-sm-';
-        @size: extract(@custom-grid-columns, @i);
-        ._create-custom-cols(@name; @size);
-
-    }
-    ._custom-grids-sm-loop(length(@custom-grid-columns));
+    each(@custom-grid-columns, {
+        ._create-custom-cols(~'-sm-'; @value);
+    });
 
     .col-sm-static-loop(@i) when (@i >= 0) {
         .col-sm-static-loop(@i - 1);
@@ -286,14 +242,9 @@ html {
     }
     .col-sm-static-loop(@col-static-steps);
 
-    ._custom-sm-static-cols-loop(@i) when (@i > 0) {
-        ._custom-sm-static-cols-loop(@i - 1);
-
-        @name: ~'-sm-';
-        @size: extract(@custom-static-grid-columns, @i);
-        ._create-custom-static-cols(@name; @size);
-    }
-    ._custom-sm-static-cols-loop(length(@custom-static-grid-columns));
+    each(@custom-static-grid-columns, {
+        ._create-custom-static-cols(~'-sm-'; @value);
+    });
 
     .row.sm-fluid > [class*="col-"] { width: 100%; clear: both; }
     .row {
@@ -330,15 +281,9 @@ html {
     }
     .col-xs-loop(@grid-columns);
 
-    ._custom-grids-xs-loop(@i) when (@i > 0) {
-        ._custom-grids-xs-loop(@i - 1);
-
-        @name: ~'-xs-';
-        @size: extract(@custom-grid-columns, @i);
-        ._create-custom-cols(@name; @size);
-
-    }
-    ._custom-grids-xs-loop(length(@custom-grid-columns));
+    each(@custom-grid-columns, {
+        ._create-custom-cols(~'-xs-'; @value);
+    });
 
     .col-xs-static-loop(@i) when (@i >= 0) {
         .col-xs-static-loop(@i - 1);
@@ -348,14 +293,9 @@ html {
     }
     .col-xs-static-loop(@col-static-steps);
 
-    ._custom-xs-static-cols-loop(@i) when (@i > 0) {
-        ._custom-xs-static-cols-loop(@i - 1);
-
-        @name: ~'-xs-';
-        @size: extract(@custom-static-grid-columns, @i);
-        ._create-custom-static-cols(@name; @size);
-    }
-    ._custom-xs-static-cols-loop(length(@custom-static-grid-columns));
+    each(@custom-static-grid-columns, {
+        ._create-custom-static-cols(~'-xs-'; @value);
+    });
 
     .row.xs-fluid > [class*="col-"] { width: 100%; clear: both; }
     .row {
@@ -415,15 +355,9 @@ html {
     }
     .col-xl-loop(@grid-columns);
 
-    ._custom-grids-xl-loop(@i) when (@i > 0) {
-        ._custom-grids-xl-loop(@i - 1);
-
-        @name: ~'-xl-';
-        @size: extract(@custom-grid-columns, @i);
-        ._create-custom-cols(@name; @size);
-
-    }
-    ._custom-grids-xl-loop(length(@custom-grid-columns));
+    each(@custom-grid-columns, {
+        ._create-custom-cols(~'-xl-'; @value);
+    });
 
     .col-xl-static-loop(@i) when (@i >= 0) {
         .col-xl-static-loop(@i - 1);
@@ -433,13 +367,8 @@ html {
     }
     .col-xl-static-loop(@col-static-steps);
 
-    ._custom-xl-static-cols-loop(@i) when (@i > 0) {
-        ._custom-xl-static-cols-loop(@i - 1);
-
-        @name: ~'-xl-';
-        @size: extract(@custom-static-grid-columns, @i);
-        ._create-custom-static-cols(@name; @size);
-    }
-    ._custom-xl-static-cols-loop(length(@custom-static-grid-columns));
+    each(@custom-static-grid-columns, {
+        ._create-custom-static-cols(~'-xl-'; @value);
+    });
 
 }

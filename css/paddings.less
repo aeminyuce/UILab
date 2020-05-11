@@ -2,24 +2,21 @@
 /* paddings */ @import '_settings.less';
 
 ._paddings (@name; @size) {
-    .@{name} { padding: ~'@{size}px !important'; }
+    .@{name} { padding: @size !important; }
 
-    .@{name}-t { padding-top: ~'@{size}px !important'; }
-    .@{name}-r { padding-right: ~'@{size}px !important'; }
-    .@{name}-b { padding-bottom: ~'@{size}px !important'; }
-    .@{name}-l { padding-left: ~'@{size}px !important'; }
+    .@{name}-t { padding-top: @size !important; }
+    .@{name}-r { padding-right: @size !important; }
+    .@{name}-b { padding-bottom: @size !important; }
+    .@{name}-l { padding-left: @size !important; }
 
-    .@{name}-h { padding-left: ~'@{size}px !important'; padding-right: ~'@{size}px !important'; }
-    .@{name}-v { padding-top: ~'@{size}px !important'; padding-bottom: ~'@{size}px !important'; }
+    .@{name}-h { padding-left: @size !important; padding-right: @size !important; }
+    .@{name}-v { padding-top: @size !important; padding-bottom: @size !important; }
 }
 
-.padding-loop(@i) when (@i > 0) {
-    .padding-loop(@i - 1);
-
-    @j: unit(extract(@increases, @i));
-    ._paddings (@name: ~'padding-@{j}'; @size: @j);
-}
-.padding-loop(length(@increases));
+each(@increases, {
+    @j: unit(@value);
+    ._paddings (@name: ~'padding-@{j}'; @size: @value);
+});
 
 ._paddings (@name: no-padding; @size: 0);
 

@@ -2,24 +2,21 @@
 /* margins */ @import '_settings.less';
 
 ._margins (@name; @size) {
-    .@{name} { margin: ~'@{size}px !important'; }
+    .@{name} { margin: @size !important; }
 
-    .@{name}-t { margin-top: ~'@{size}px !important'; }
-    .@{name}-r { margin-right: ~'@{size}px !important'; }
-    .@{name}-b { margin-bottom: ~'@{size}px !important'; }
-    .@{name}-l { margin-left: ~'@{size}px !important'; }
+    .@{name}-t { margin-top: @size !important; }
+    .@{name}-r { margin-right: @size !important; }
+    .@{name}-b { margin-bottom: @size !important; }
+    .@{name}-l { margin-left: @size !important; }
 
-    .@{name}-h { margin-left: ~'@{size}px !important'; margin-right: ~'@{size}px !important'; }
-    .@{name}-v { margin-top: ~'@{size}px !important'; margin-bottom: ~'@{size}px !important'; }
+    .@{name}-h { margin-left: @size !important; margin-right: @size !important; }
+    .@{name}-v { margin-top: @size !important; margin-bottom: @size !important; }
 }
 
-.margin-loop(@i) when (@i > 0) {
-    .margin-loop(@i - 1);
-
-    @j: unit(extract(@increases, @i));
-    ._margins (@name: ~'margin-@{j}'; @size: @j);
-}
-.margin-loop(length(@increases));
+each(@increases, {
+    @j: unit(@value);
+    ._margins (@name: ~'margin-@{j}'; @size: @value);
+});
 
 ._margins (@name: no-margin; @size: 0);
 

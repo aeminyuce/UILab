@@ -48,15 +48,10 @@
    &:not([class*="ui-"]) { background-color: @black !important; }
 }
 
-._theme-loop(@i) when (@i > 0) {
-   ._theme-loop(@i - 1);
-
-   @name: extract(@theme-colors, @i);
-   @color: color(@@name);
-   ._theme(@name,  @color);
-
-}
-._theme-loop(length(@theme-colors));
+each(@theme-colors, {
+    @color: color(@@value);
+    ._theme(@value,  @color);
+});
 
 & when (@dark-mode = true) {
     & when (@dark-mode-auto-switcher = true) {
