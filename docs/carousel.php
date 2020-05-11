@@ -9,7 +9,7 @@
                     <h5 class="font-bold">HTML Content Carousel</h5>
 
                     <div class="carousel" data-col="1" data-slide="4000">
-                        <div class="carousel-slider ease-2nd-layout ease-layout ease-slow2x ease-in-out">
+                        <div class="carousel-slider ease-2nd-layout ease-layout ease-slow-2x ease-in-out">
 
                             <div class="slide-content padding-15 padding-30-b" data-animate="10">
                                 <div class="card padding-15 shadow-lg">

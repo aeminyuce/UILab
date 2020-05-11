@@ -259,16 +259,16 @@ var carousel = {
             } else if (events.hasClass(slider, 'ease-slow')) {
                 ease = 400;
 
-            } else if (events.hasClass(slider, 'ease-slow2x')) {
+            } else if (events.hasClass(slider, 'ease-slow-2x')) {
                 ease = 800;
 
-            } else if (events.hasClass(slider, 'ease-slow3x')) {
+            } else if (events.hasClass(slider, 'ease-slow-3x')) {
                 ease = 1200;
 
-            } else if (events.hasClass(slider, 'ease-slow4x')) {
+            } else if (events.hasClass(slider, 'ease-slow-4x')) {
                 ease = 1600;
 
-            } else if (events.hasClass(slider, 'ease-slow5x')) {
+            } else if (events.hasClass(slider, 'ease-slow-5x')) {
                 ease = 2000;
             }
 

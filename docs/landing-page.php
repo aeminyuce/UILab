@@ -223,7 +223,7 @@
     <!-- highlight links: start -->
     <div class="highlight-links fixed align-c form-lg theme-farmer2 set-relative">
         <div class="carousel" data-col="4" data-col-md="2" data-col-sm="2" data-col-xs="1" data-slide="4000">
-            <div class="carousel-slider icons-xxl hover-shadow-2nd hover-scale-2nd ease-layout ease-slow2x ease-in-out">
+            <div class="carousel-slider icons-xxl hover-shadow-2nd hover-scale-2nd ease-layout ease-slow-2x ease-in-out">
 
                 <div class="slide-content padding-15">
                     <div class="card padding-15 full-h shadow-lg ease-layout">

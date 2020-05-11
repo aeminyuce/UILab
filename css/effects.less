@@ -1,10 +1,10 @@
 // out: false
 /* effects */ @import '_settings.less';
 
-@ease-types:                            fast, slow, slow2x, slow3x, slow4x, slow5x;
-@ease-type-durations:                   .1s, .4s, .8s, 1.2s, 1.6s, 2s;
+@ease-types:                            fast slow slow-2x slow-3x slow-4x slow-5x;
+@ease-type-durations:                   .1s .4s .8s 1.2s 1.6s 2s;
 
-@ease-timings:                          in, out, in-out;
+@ease-timings:                          in out in-out;
 
 [class*="ease-"],[class*="ease-1st-"] > *,[class*="ease-2nd-"] > * > * { transition-duration: @ease-default; transition-timing-function: ease-out; }
 
