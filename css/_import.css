@@ -1173,9 +1173,6 @@ html .row {
 .col-static > .row > [class*="col-"]:not(.col-static):not(.col-12) {
   float: left;
 }
-.col-0 {
-  width: 0px;
-}
 .col-50 {
   width: 50px;
 }
@@ -1219,6 +1216,9 @@ html .row {
   .no-gutter-lg {
     padding-right: 0 !important;
     padding-left: 0 !important;
+  }
+  .offset-lg-0 {
+    margin-left: 0;
   }
   .col-lg-1 {
     width: 8.33333333%;
@@ -1370,9 +1370,6 @@ html .row {
   .col-lg-7x {
     width: 14.28571429%;
   }
-  .col-lg-0 {
-    width: 0px;
-  }
   .col-lg-50 {
     width: 50px;
   }
@@ -1414,6 +1411,9 @@ html .row {
   .no-gutter-md {
     padding-right: 0 !important;
     padding-left: 0 !important;
+  }
+  .offset-md-0 {
+    margin-left: 0;
   }
   .col-md-1 {
     width: 8.33333333%;
@@ -1565,9 +1565,6 @@ html .row {
   .col-md-7x {
     width: 14.28571429%;
   }
-  .col-md-0 {
-    width: 0px;
-  }
   .col-md-50 {
     width: 50px;
   }
@@ -1628,6 +1625,9 @@ html .row {
   .no-gutter-sm {
     padding-right: 0 !important;
     padding-left: 0 !important;
+  }
+  .offset-sm-0 {
+    margin-left: 0;
   }
   .col-sm-1 {
     width: 8.33333333%;
@@ -1779,9 +1779,6 @@ html .row {
   .col-sm-7x {
     width: 14.28571429%;
   }
-  .col-sm-0 {
-    width: 0px;
-  }
   .col-sm-50 {
     width: 50px;
   }
@@ -1847,6 +1844,9 @@ html .row {
   }
   .container {
     min-width: 320px;
+  }
+  .offset-xs-0 {
+    margin-left: 0;
   }
   .col-xs-1 {
     width: 8.33333333%;
@@ -1998,9 +1998,6 @@ html .row {
   .col-xs-7x {
     width: 14.28571429%;
   }
-  .col-xs-0 {
-    width: 0px;
-  }
   .col-xs-50 {
     width: 50px;
   }
@@ -2103,6 +2100,9 @@ html .row {
   .no-gutter-xl {
     padding-right: 0 !important;
     padding-left: 0 !important;
+  }
+  .offset-xl-0 {
+    margin-left: 0;
   }
   .col-xl-1 {
     width: 8.33333333%;
@@ -2253,9 +2253,6 @@ html .row {
   }
   .col-xl-7x {
     width: 14.28571429%;
-  }
-  .col-xl-0 {
-    width: 0px;
   }
   .col-xl-50 {
     width: 50px;
@@ -3639,17 +3636,7 @@ a {
 .font-default .icon:not([class*="ui-"]),
 .font-default a:not([class*="ui-"]),
 .font-default button:not([class*="ui-"]) {
-  color: #000 !important;
-}
-.underline {
-  text-decoration: underline;
-}
-a.underline:hover,
-button.underline:hover {
-  text-decoration: none;
-}
-.hoverline:hover {
-  text-decoration: underline;
+  color: #4563c5 !important;
 }
 .font-lead {
   font-size: 21px;
@@ -3681,6 +3668,16 @@ button.underline:hover {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+.underline {
+  text-decoration: underline;
+}
+a.underline:hover,
+button.underline:hover {
+  text-decoration: none;
+}
+.hoverline:hover {
+  text-decoration: underline;
 }
 .lowercase {
   text-transform: lowercase;
