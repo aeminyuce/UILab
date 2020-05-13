@@ -2,14 +2,7 @@
 /* effects */ @import '_settings.less';
 
 @ease-timings:                          in out in-out;
-@ease-types:                            {
-                                            fast:            .1s;
-                                            slow:            .4s;
-                                            slow-2x:         .8s;
-                                            slow-3x:         1.2s;
-                                            slow-4x:         1.6s;
-                                            slow-5x:         2s;
-                                        }
+@ease-types:                            { fast: .1s; slow: .4s; slow-2x: .8s; slow-3x: 1.2s; slow-4x: 1.6s; slow-5x: 2s; }
 
 [class*="ease-"],[class*="ease-1st-"] > *,[class*="ease-2nd-"] > * > * { transition-duration: @ease-default; transition-timing-function: ease-out; }
 

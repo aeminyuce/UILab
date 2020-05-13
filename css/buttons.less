@@ -32,14 +32,14 @@ input.btn { @no-appearance(); }
 .btn.ui-dark .icon,.btn.ui-x-dark .icon { opacity: 1; }
 html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hover .icon { opacity: 1 !important; }
 
-.btn-lg,.form-lg .btn { font-size: 16px; line-height: @btn-lg - 20; height: @btn-lg; padding-top: 10px; padding-bottom: 10px; }
+.btn-lg,.form-lg .btn { font-size: @large; line-height: @btn-lg - 20; height: @btn-lg; padding-top: 10px; padding-bottom: 10px; }
 .btn-lg.btn-square,.form-lg .btn.btn-square { width: @btn-lg; }
 .btn-lg.border,.form-lg .btn.border { padding-top: 9px; padding-bottom: 9px; }
 .btn-lg.border-dual,.form-lg .btn.border-dual { padding-top: 10 - @border-dual; padding-bottom: 10 - @border-dual; }
 .btn-lg.round,.form-lg .btn.round { border-radius: @round * 1.3333333333; }
 .btn-lg .icon:not(.toggle-icon),.form-lg .btn .icon:not(.toggle-icon) { width: 22px; height: 22px; stroke-width: 28px; }
 
-.btn-sm { font-size: 12px; line-height: 16px; height: 26px; padding-top: 5px; padding-bottom: 5px; }
+.btn-sm { font-size: @small; line-height: 16px; height: 26px; padding-top: 5px; padding-bottom: 5px; }
 .btn-sm.btn-square { width: 26px; }
 .btn-sm.border { padding-top: 4px; padding-bottom: 4px; }
 .btn-sm.border-dual { padding-top: 5 - @border-dual; padding-bottom: 5 - @border-dual; }
@@ -48,7 +48,7 @@ html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hove
 .btn-sm:not(.circle) { padding-right: 8px; padding-left: 8px; }
 .btn-sm .icon:not(.toggle-icon) { width: 16px; height: 16px; stroke-width: 34px; }
 
-.btn-xs { font-size: 11px; line-height: 14px; height: 22px; padding-top: 4px; padding-bottom: 4px; }
+.btn-xs { font-size: @x-small; line-height: 14px; height: 22px; padding-top: 4px; padding-bottom: 4px; }
 .btn-xs.btn-square { width: 22px; }
 .btn-xs.border { padding-top: 3px; padding-bottom: 3px; }
 .btn-xs.border-dual { padding-top: 4 - @border-dual; padding-bottom: 4 - @border-dual; }
@@ -57,7 +57,7 @@ html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hove
 .btn-xs.circle { padding-right: 10px; padding-left: 10px; }
 .btn-xs .icon:not(.toggle-icon) { width: 14px; height: 14px; stroke-width: 38px; }
 
-.btn-xxs { font-size: 10px; line-height: 12px; height: 18px; padding-top: 3px; padding-bottom: 3px; }
+.btn-xxs { font-size: @xx-small; line-height: 12px; height: 18px; padding-top: 3px; padding-bottom: 3px; }
 .btn-xxs.btn-square { width: 18px; }
 .btn-xxs.border { padding-top: 2px; padding-bottom: 2px; }
 .btn-xxs.border-dual { padding-top: 3 - @border-dual; padding-bottom: 3 - @border-dual; }
@@ -74,7 +74,7 @@ html:not(.mobile) .btn.ui-dark:hover .icon,html:not(.mobile) .btn.ui-x-dark:hove
 .btn-ghost:not(:hover) { background-color: @no-color !important; }
 .btn-ghost-border:not(:hover) { border-color: @no-color !important; }
 
-.btn[data-notifier]:after { content: attr(data-notifier); color: @white; font-size: 12px; text-align: center !important; line-height: 1; min-width: 8px; min-height: 8px; background-color: @red; padding: 2px 4px; border-radius: 200px; position: absolute; top: 0; left: 100%; z-index: 1; transform: translateX(-75%); }
+.btn[data-notifier]:after { content: attr(data-notifier); color: @white; font-size: @small; text-align: center !important; line-height: 1; min-width: 8px; min-height: 8px; background-color: @red; padding: 2px 4px; border-radius: 200px; position: absolute; top: 0; left: 100%; z-index: 1; transform: translateX(-75%); }
 
 html:not(.mobile) .btn:not([class*="ui-x-light"]):not([class*="ui-light"]):not([class*="ui-dark"]):not([class*="ui-x-dark"]):not(.btn-passive):not(.swatch-active):hover { ._bg-var(btn-hover-bg); }
 html:not(.mobile) .btn.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-light"]):not([class*="ui-dark"]):not([class*="ui-x-dark"]):not(.btn-passive):not(.swatch-active):hover { ._bg-var(btn-ghost-hover-bg); }
