@@ -167,9 +167,9 @@
                 </div>
 
                 <h4>Button Notifiers</h4>
-                <div class="padding-30-b align-c icons-no-opacity ease-1st-btn">
+                <div class="padding-30-b align-c icons-no-opacity">
 
-                    <div class="row">
+                    <div class="row ease-2nd-btn">
                         <div class="col-6">
                             <a href="#" class="btn btn-square btn-xxs round" data-notifier="">
                                 <svg class="icon"><use href="#user"></use></svg>
@@ -320,6 +320,48 @@
 
                 <h4>Pagination Buttons</h4>
                 <div class="padding-30-b">
+
+                    <div class="pagination align-c theme-default2 ease-1st-btn">
+                        <a class="btn btn-xs prev round" href="#">
+                            <svg class="icon"><use href="#angle-dual-left"/></svg>
+                        </a>
+                        <a class="btn btn-xs prev round" href="#">
+                            <svg class="icon"><use href="#angle-left"/></svg>
+                        </a>
+                        <a class="btn btn-xs round" href="#">1</a>
+                        <a class="btn btn-xs btn-active round ui-dark" href="#">2</a>
+                        <a class="btn btn-xs round" href="#">3</a>
+                        <a class="btn btn-xs round" href="#">4</a>
+                        <a class="btn btn-xs btn-passive round" href="#">...</a>
+                        <a class="btn btn-xs round" href="#">10</a>
+                        <a class="btn btn-xs next round" href="#">
+                            <svg class="icon"><use href="#angle-right"/></svg>
+                        </a>
+                        <a class="btn btn-xs next round" href="#">
+                            <svg class="icon"><use href="#angle-dual-right"/></svg>
+                        </a>
+                    </div>
+
+                    <div class="pagination align-c theme-default2 ease-1st-btn">
+                        <a class="btn btn-sm prev round" href="#">
+                            <svg class="icon"><use href="#angle-dual-left"/></svg>
+                        </a>
+                        <a class="btn btn-sm prev round" href="#">
+                            <svg class="icon"><use href="#angle-left"/></svg>
+                        </a>
+                        <a class="btn btn-sm round" href="#">1</a>
+                        <a class="btn btn-sm btn-active round ui-dark" href="#">2</a>
+                        <a class="btn btn-sm round" href="#">3</a>
+                        <a class="btn btn-sm round" href="#">4</a>
+                        <a class="btn btn-sm btn-passive round" href="#">...</a>
+                        <a class="btn btn-sm round" href="#">10</a>
+                        <a class="btn btn-sm next round" href="#">
+                            <svg class="icon"><use href="#angle-right"/></svg>
+                        </a>
+                        <a class="btn btn-sm next round" href="#">
+                            <svg class="icon"><use href="#angle-dual-right"/></svg>
+                        </a>
+                    </div>
 
                     <div class="pagination align-c theme-default2 ease-1st-btn">
                         <a class="btn prev round" href="#">
