@@ -221,52 +221,68 @@
     stroke: ~'var(--@{var})';
 }
 
+// icon mixins
+._icon-size(@size) {
+    width: @size; height: @size;
+}
+._icon-weight(@size) {
+    @stroke-max: 44px;
+    @stroke-min: 12px;
+
+    @stroke-calc: @stroke-max + (@stroke-min - if(@size < @stroke-min, @stroke-min, @size));
+    @stroke-size: if(@stroke-calc < @stroke-min, @stroke-min, @stroke-calc);
+
+    stroke-width: @stroke-size;
+}
+._icon(@size) {
+    ._icon-size(@size); ._icon-weight(@size);
+}
+
 // theme mixins
 ._theme (@name; @color) {
+    @ui-x-light: fade(@color, 15%);
+    @ui-x-light-hover: fade(@color, 50%);
+    @ui-light: fade(@color, 25%);
+    @ui-light-hover: fade(@color, 50%);
 
-    @x-light: fade(@color, 15%);
-    @x-light-hover: fade(@color, 50%);
-    @light: fade(@color, 25%);
-    @light-hover: fade(@color, 50%);
-
-    @dark: @color;
-    @dark-hover: lighten(@color, 20%);
-    @x-dark: darken(@color, 10%);
-    @x-dark-hover: darken(@x-dark, 5%);
+    @ui-dark: @color;
+    @ui-dark-hover: lighten(@color, 20%);
+    @ui-x-dark: darken(@color, 10%);
+    @ui-x-dark-hover: darken(@x-dark, 5%);
 
     .theme-@{name}.ui-x-light,.theme-@{name} .ui-x-light:not([class*="theme-"]) {
-      background-color: @x-light;
+      background-color: @ui-x-light;
 
         html:not(.mobile) &.hover:hover,
         html:not(.mobile) &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-            background-color: @x-light-hover;
+            background-color: @ui-x-light-hover;
         }
 
     }
     .theme-@{name}.ui-light,.theme-@{name} .ui-light:not([class*="theme-"]) {
-        background-color: @light;
+        background-color: @ui-light;
 
         html:not(.mobile) &.hover:hover,
         html:not(.mobile) &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-            background-color: @light-hover;
+            background-color: @ui-light-hover;
         }
 
     }
     .theme-@{name}.ui-dark,.theme-@{name} .ui-dark:not([class*="theme-"]) {
-        background-color: @dark;
+        background-color: @ui-dark;
 
         html:not(.mobile) &.hover:hover,
         html:not(.mobile) &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-            background-color: @dark-hover;
+            background-color: @ui-dark-hover;
         }
 
     }
     .theme-@{name}.ui-x-dark,.theme-@{name} .ui-x-dark:not([class*="theme-"]) {
-        background-color: @x-dark;
+        background-color: @ui-x-dark;
 
         html:not(.mobile) &.hover:hover,
         html:not(.mobile) &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-            background-color: @x-dark-hover;
+            background-color: @ui-x-dark-hover;
         }
 
     }

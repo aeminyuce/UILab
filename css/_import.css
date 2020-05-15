@@ -4070,7 +4070,7 @@ input.btn {
   vertical-align: bottom;
   width: 18px;
   height: 18px;
-  stroke-width: 28px;
+  stroke-width: 38px;
 }
 .btn .icon:not(.no-opacity) {
   opacity: 0.45;
@@ -4144,7 +4144,7 @@ html:not(.mobile) .btn.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-ligh
 .form-lg .btn .icon:not(.toggle-icon) {
   width: 22px;
   height: 22px;
-  stroke-width: 28px;
+  stroke-width: 34px;
 }
 .btn-sm {
   font-size: 12px;
@@ -4178,7 +4178,7 @@ html:not(.mobile) .btn.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-ligh
 .btn-sm .icon:not(.toggle-icon) {
   width: 16px;
   height: 16px;
-  stroke-width: 34px;
+  stroke-width: 40px;
 }
 .btn-xs {
   font-size: 11px;
@@ -4212,7 +4212,7 @@ html:not(.mobile) .btn.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-ligh
 .btn-xs .icon:not(.toggle-icon) {
   width: 14px;
   height: 14px;
-  stroke-width: 38px;
+  stroke-width: 42px;
 }
 .btn-xxs {
   font-size: 10px;
@@ -5773,14 +5773,20 @@ html:not(.mobile) .autocomplete li:hover,
 /* icons */
 .icon {
   vertical-align: middle;
-  width: 20px;
-  height: 20px;
   display: inline-block;
   fill: none;
   stroke: currentColor;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke-width: 24px;
+  width: 20px;
+  height: 20px;
+  stroke-width: 36px;
+}
+.icon-mirror-v {
+  transform: scaleY(-1);
+}
+.icon-mirror-h {
+  transform: scaleX(-1);
 }
 .svg-f {
   fill: currentColor !important;
@@ -5798,55 +5804,10 @@ html:not(.mobile) .autocomplete li:hover,
 .svg-fr {
   fill-rule: evenodd;
 }
-.icon-xxs,
-.icons-xxs .icon {
-  width: 12px !important;
-  height: 12px !important;
-}
-.icon-xs,
-.icons-xs .icon {
-  width: 14px !important;
-  height: 14px !important;
-}
-.icon-sm,
-.icons-sm .icon {
-  width: 18px !important;
-  height: 18px !important;
-}
-.icon-lg,
-.icons-lg .icon {
-  width: 26px !important;
-  height: 26px !important;
-}
-.icon-xl,
-.icons-xl .icon {
-  width: 34px !important;
-  height: 34px !important;
-}
 .icon-xxl,
 .icons-xxl .icon {
   width: 50px !important;
   height: 50px !important;
-}
-.icon-xxs,
-.icons-xxs .icon:not([class*="icon-"]) {
-  stroke-width: 44px !important;
-}
-.icon-xs,
-.icons-xs .icon:not([class*="icon-"]) {
-  stroke-width: 38px !important;
-}
-.icon-sm,
-.icons-sm .icon:not([class*="icon-"]) {
-  stroke-width: 32px !important;
-}
-.icon-lg,
-.icons-lg .icon:not([class*="icon-"]) {
-  stroke-width: 24px !important;
-}
-.icon-xl,
-.icons-xl .icon:not([class*="icon-"]) {
-  stroke-width: 18px !important;
 }
 .icon-xxl,
 .icons-xxl .icon:not([class*="icon-"]) {
@@ -5856,31 +5817,70 @@ html:not(.mobile) .autocomplete li:hover,
 .icons-thin .icon:not([class*="icon-"]) {
   stroke-width: 12px !important;
 }
+.icon-xl,
+.icons-xl .icon {
+  width: 34px !important;
+  height: 34px !important;
+}
+.icon-xl,
+.icons-xl .icon:not([class*="icon-"]) {
+  stroke-width: 22px !important;
+}
 .icon-light,
 .icons-light .icon:not([class*="icon-"]) {
-  stroke-width: 18px !important;
+  stroke-width: 22px !important;
+}
+.icon-xxs,
+.icons-xxs .icon {
+  width: 12px !important;
+  height: 12px !important;
+}
+.icon-xxs,
+.icons-xxs .icon:not([class*="icon-"]) {
+  stroke-width: 44px !important;
 }
 .icon-default,
 .icons-default .icon:not([class*="icon-"]) {
-  stroke-width: 24px !important;
+  stroke-width: 44px !important;
+}
+.icon-lg,
+.icons-lg .icon {
+  width: 26px !important;
+  height: 26px !important;
+}
+.icon-lg,
+.icons-lg .icon:not([class*="icon-"]) {
+  stroke-width: 30px !important;
 }
 .icon-semibold,
 .icons-semibold .icon:not([class*="icon-"]) {
-  stroke-width: 32px !important;
+  stroke-width: 30px !important;
+}
+.icon-sm,
+.icons-sm .icon {
+  width: 18px !important;
+  height: 18px !important;
+}
+.icon-sm,
+.icons-sm .icon:not([class*="icon-"]) {
+  stroke-width: 38px !important;
 }
 .icon-bold,
 .icons-bold .icon:not([class*="icon-"]) {
   stroke-width: 38px !important;
 }
+.icon-xs,
+.icons-xs .icon {
+  width: 14px !important;
+  height: 14px !important;
+}
+.icon-xs,
+.icons-xs .icon:not([class*="icon-"]) {
+  stroke-width: 42px !important;
+}
 .icon-black,
 .icons-black .icon:not([class*="icon-"]) {
-  stroke-width: 44px !important;
-}
-.icon-mirror-v {
-  transform: scaleY(-1);
-}
-.icon-mirror-h {
-  transform: scaleX(-1);
+  stroke-width: 42px !important;
 }
 .icons-no-opacity .icon:not(.default-icon) {
   opacity: 1 !important;
@@ -9684,7 +9684,7 @@ html:not(.mobile) .theme-gray.ui-x-dark.hover:hover,
 html:not(.mobile) .theme-gray .ui-x-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-gray.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-gray .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #a6a6a6;
+  background-color: #595959;
 }
 .theme-gray.ui-text,
 .theme-gray .ui-text:not([class*="theme-"]) {
@@ -9732,7 +9732,7 @@ html:not(.mobile) .theme-green.ui-x-dark.hover:hover,
 html:not(.mobile) .theme-green .ui-x-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-green.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-green .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #1e7f27;
+  background-color: #595959;
 }
 .theme-green.ui-text,
 .theme-green .ui-text:not([class*="theme-"]) {
@@ -9780,7 +9780,7 @@ html:not(.mobile) .theme-yellow.ui-x-dark.hover:hover,
 html:not(.mobile) .theme-yellow .ui-x-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-yellow.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-yellow .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #b37400;
+  background-color: #595959;
 }
 .theme-yellow.ui-text,
 .theme-yellow .ui-text:not([class*="theme-"]) {
@@ -9828,7 +9828,7 @@ html:not(.mobile) .theme-orange.ui-x-dark.hover:hover,
 html:not(.mobile) .theme-orange .ui-x-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-orange.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-orange .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #a85000;
+  background-color: #595959;
 }
 .theme-orange.ui-text,
 .theme-orange .ui-text:not([class*="theme-"]) {
@@ -9876,7 +9876,7 @@ html:not(.mobile) .theme-red.ui-x-dark.hover:hover,
 html:not(.mobile) .theme-red .ui-x-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-red.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-red .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #8a0a12;
+  background-color: #595959;
 }
 .theme-red.ui-text,
 .theme-red .ui-text:not([class*="theme-"]) {
@@ -9924,7 +9924,7 @@ html:not(.mobile) .theme-default.ui-x-dark.hover:hover,
 html:not(.mobile) .theme-default .ui-x-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-default.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-default .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #2d4490;
+  background-color: #595959;
 }
 .theme-default.ui-text,
 .theme-default .ui-text:not([class*="theme-"]) {
@@ -9972,7 +9972,7 @@ html:not(.mobile) .theme-default2.ui-x-dark.hover:hover,
 html:not(.mobile) .theme-default2 .ui-x-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-default2.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-default2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #0b63a7;
+  background-color: #595959;
 }
 .theme-default2.ui-text,
 .theme-default2 .ui-text:not([class*="theme-"]) {
