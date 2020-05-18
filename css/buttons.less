@@ -11,7 +11,11 @@
 @btn-xs-padding:                        4px;
 @btn-xxs-padding:                       3px;
 
-@circle-extra-padding:                  6px;
+@btn-notifier-size:                     8px;
+@btn-circle-extra-padding:              6px;
+
+@btn-list-space:                        1px;
+@btn-breakpoint-space:                  2px;
 
 @btn-default-icon:                      18px;
 @btn-lg-icon:                           22px;
@@ -38,15 +42,15 @@
     &:not(.border):not([class*="border-"]) { border-width: 0; }
     &:not(.btn-multi) { white-space: nowrap; }
     &:not(.circle) { padding-right: @btn-default-padding; padding-left: @btn-default-padding; }
-    &.circle { padding-right: @btn-default-padding + @circle-extra-padding; padding-left: @btn-default-padding + @circle-extra-padding; }
+    &.circle { padding-right: @btn-default-padding + @btn-circle-extra-padding; padding-left: @btn-default-padding + @btn-circle-extra-padding; }
 
     input& { @no-appearance(); }
-    &[data-notifier]:after { content: attr(data-notifier); color: @white; font-size: @small; text-align: center !important; line-height: 1; min-width: 8px; min-height: 8px; background-color: @red; padding: 2px 4px; border-radius: 200px; position: absolute; top: 0; left: 100%; z-index: 1; transform: translateX(-75%); }
+    &[data-notifier]:after { content: attr(data-notifier); color: @white; font-size: @small; text-align: center !important; line-height: 1; min-width: @btn-notifier-size; min-height: @btn-notifier-size; background-color: @red; padding: @btn-notifier-size / 4 @btn-notifier-size / 2; border-radius: 200px; position: absolute; top: 0; left: 100%; z-index: 1; transform: translateX(-75%); }
 
     &.border {
-        padding-top: 5px; padding-bottom: 5px;
+        padding-top: @btn-default-padding - 1; padding-bottom: @btn-default-padding - 1;
 
-        &-dual { padding-top: 7 - @border-dual; padding-bottom: 7 - @border-dual; }
+        &-dual { padding-top: @btn-default-padding - @border-dual; padding-bottom: @btn-default-padding - @border-dual; }
     }
 
     &-passive { opacity: .6; cursor: default; }
@@ -130,7 +134,7 @@ html:not(.mobile) {
     font-size: @small; line-height: @btn-sm - @btn-sm-padding * 2; height: @btn-sm; padding-top: @btn-sm-padding; padding-bottom: @btn-sm-padding;
 
     &:not(.circle) { padding-right: @btn-sm-padding; padding-left: @btn-sm-padding; }
-    &.circle { padding-right: @btn-sm-padding + @circle-extra-padding; padding-left: @btn-sm-padding + @circle-extra-padding; }
+    &.circle { padding-right: @btn-sm-padding + @btn-circle-extra-padding; padding-left: @btn-sm-padding + @btn-circle-extra-padding; }
 
     &.round { border-radius: @round - @round * 0.3333333333; }
     &.btn-square { width: @btn-sm; }
@@ -148,7 +152,7 @@ html:not(.mobile) {
     font-size: @x-small; line-height: @btn-xs - @btn-xs-padding * 2; height: @btn-xs; padding-top: @btn-xs-padding; padding-bottom: @btn-xs-padding;
 
     &:not(.circle) { padding-right: @btn-xs-padding; padding-left: @btn-xs-padding; }
-    &.circle { padding-right: @btn-xs-padding + @circle-extra-padding; padding-left: @btn-xs-padding + @circle-extra-padding; }
+    &.circle { padding-right: @btn-xs-padding + @btn-circle-extra-padding; padding-left: @btn-xs-padding + @btn-circle-extra-padding; }
 
     &.round { border-radius: @round / 2; }
     &.btn-square { width: @btn-xs; }
@@ -166,7 +170,7 @@ html:not(.mobile) {
     font-size: @xx-small; line-height: @btn-xxs - @btn-xxs-padding * 2; height: @btn-xxs; padding-top: @btn-xxs-padding; padding-bottom: @btn-xxs-padding;
 
     &:not(.circle) { padding-right: @btn-xxs-padding; padding-left: @btn-xxs-padding; }
-    &.circle { padding-right: @btn-xxs-padding + @circle-extra-padding; padding-left: @btn-xxs-padding + @circle-extra-padding; }
+    &.circle { padding-right: @btn-xxs-padding + @btn-circle-extra-padding; padding-left: @btn-xxs-padding + @btn-circle-extra-padding; }
 
     &.round { border-radius: @round * 0.3333333333; }
     &.btn-square { width: @btn-xxs; }
@@ -184,7 +188,7 @@ html:not(.mobile) {
     .btn-xs-fluid,.btn-sm-fluid,.btn-md-fluid {
         width: 100% !important; display: block;
 
-        &:not(:last-child) { margin-bottom: 2px; }
+        &:not(:last-child) { margin-bottom: @btn-breakpoint-space; }
     }
 }
 
@@ -206,7 +210,7 @@ html:not(.mobile) {
     width: 100%;
 
     &:not(:first-child) { border-top: 0; }
-    &:not(:last-child):not(.border):not(.border-dual):not(.border-b) { margin-bottom: 1px; }
+    &:not(:last-child):not(.border):not(.border-dual):not(.border-b) { margin-bottom: @btn-list-space; }
 
     &:first-child {
         border-bottom-right-radius: 0; border-bottom-left-radius: 0;
@@ -261,7 +265,7 @@ html:not(.mobile) {
     }
 
     .mobile-menu {
-        .btn-md-fluid:not(:last-child) { margin-bottom: 2px; }
+        .btn-md-fluid:not(:last-child) { margin-bottom: @btn-breakpoint-space; }
     }
 
     .btn-square {
@@ -279,7 +283,7 @@ html:not(.mobile) {
         &:not(:last-child) { margin-bottom: @highlight-space / 2; }
     }
     .mobile-menu {
-        .btn-sm-fluid:not(:last-child) { margin-bottom: 2px; }
+        .btn-sm-fluid:not(:last-child) { margin-bottom: @btn-breakpoint-space; }
     }
 
     .btn-square {

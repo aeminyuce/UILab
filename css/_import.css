@@ -4013,8 +4013,8 @@ input.btn {
   transform: translateX(-75%);
 }
 .btn.border {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 .btn.border-dual {
   padding-top: 5px;
@@ -4520,7 +4520,7 @@ html:not(.mobile) .top-button:hover .icon {
   width: 14px !important;
   height: 14px !important;
   stroke-width: 38px !important;
-  margin-top: -2px;
+  margin-top: -1px;
 }
 .tabs .tab .toggle-icon.right {
   margin-top: 4px;
