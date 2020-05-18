@@ -18,17 +18,17 @@
 .dropdown .photos-holder [class*="img-photo"] { ._border-color-var(highlighted); }
 .card .photos-holder [class*="img-photo"] { ._border-color-var(card-bg); }
 
-[class*="img-photo"] { text-align: center; vertical-align: middle; position: relative; stroke-width: 12px; }
+[class*="img-photo"] { text-align: center; vertical-align: middle; position: relative; }
 [class*="img-photo"]:not(img) { ._bg-var(img-photo-bg); display: inline-block; }
 [class*="img-photo"]:not(img) > span,[class*="img-photo"]:not(img) > svg { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
 
 .img-photo-lg { font-size: 24px; width: 80px; height: 80px; }
-.img-photo-lg .icon { width: 34px; height: 34px; stroke-width: 18px; }
+.img-photo-lg .icon { ._icon(34px); }
 
 .img-photo { font-size: @large; width: 50px; height: 50px; }
 
 .img-photo-sm { font-size: @font-size; width: @btn-lg; height: @btn-lg; }
-.img-photo-sm .icon { width: 18px; height: 18px; stroke-width: 32px; }
+.img-photo-sm .icon { ._icon(18px); }
 
 .img-photo-xs { font-size: @small; width: @btn-default; height: @btn-default; }
-.img-photo-xs .icon { width: 14px; height: 14px; stroke-width: 38px; }
+.img-photo-xs .icon { ._icon(14px); }

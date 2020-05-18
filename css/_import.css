@@ -881,16 +881,16 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
   padding-right: 10px;
   padding-left: 10px;
 }
-.container:after,
-.fixed:after {
-  clear: both;
-}
 .container:before,
 .fixed:before,
 .container:after,
 .fixed:after {
   content: "";
   display: table;
+}
+.container:after,
+.fixed:after {
+  clear: both;
 }
 .fixed {
   margin-right: auto;
@@ -4070,7 +4070,7 @@ input.btn {
   vertical-align: bottom;
   width: 18px;
   height: 18px;
-  stroke-width: 38px;
+  stroke-width: 34px;
 }
 .btn .icon:not(.no-opacity) {
   opacity: 0.45;
@@ -4144,7 +4144,7 @@ html:not(.mobile) .btn.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-ligh
 .form-lg .btn .icon:not(.toggle-icon) {
   width: 22px;
   height: 22px;
-  stroke-width: 34px;
+  stroke-width: 30px;
 }
 .btn-sm {
   font-size: 12px;
@@ -4178,7 +4178,7 @@ html:not(.mobile) .btn.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-ligh
 .btn-sm .icon:not(.toggle-icon) {
   width: 16px;
   height: 16px;
-  stroke-width: 40px;
+  stroke-width: 36px;
 }
 .btn-xs {
   font-size: 11px;
@@ -4212,7 +4212,7 @@ html:not(.mobile) .btn.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-ligh
 .btn-xs .icon:not(.toggle-icon) {
   width: 14px;
   height: 14px;
-  stroke-width: 42px;
+  stroke-width: 38px;
 }
 .btn-xxs {
   font-size: 10px;
@@ -4246,7 +4246,7 @@ html:not(.mobile) .btn.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-ligh
 .btn-xxs .icon:not(.toggle-icon) {
   width: 12px;
   height: 12px;
-  stroke-width: 44px;
+  stroke-width: 40px;
 }
 .mobile-menu .btn-xs-fluid,
 .mobile-menu .btn-sm-fluid,
@@ -4481,7 +4481,7 @@ html:not(.mobile) .btn.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-ligh
   border: 0;
   position: fixed;
   right: 10px;
-  bottom: 50px;
+  bottom: 45px;
   z-index: 7;
   opacity: 0;
 }
@@ -4519,8 +4519,8 @@ html:not(.mobile) .top-button:hover .icon {
 .tabs .tab .toggle-icon {
   width: 14px !important;
   height: 14px !important;
-  margin-top: -2px;
   stroke-width: 38px !important;
+  margin-top: -2px;
 }
 .tabs .tab .toggle-icon.right {
   margin-top: 4px;
@@ -4582,8 +4582,8 @@ html:not(.mobile) .top-button:hover .icon {
 .dropdown > .btn .toggle-icon {
   width: 14px !important;
   height: 14px !important;
-  margin-top: -2px;
   stroke-width: 38px !important;
+  margin-top: -2px;
 }
 .dropdown > .btn .toggle-icon.right {
   margin-top: 4px;
@@ -4944,13 +4944,13 @@ html:not(.mobile) .dropdown ul.content > li:hover {
 .select .icon {
   width: 12px;
   height: 12px;
+  stroke-width: 40px;
   position: absolute;
   top: 50%;
   right: 5px;
   cursor: default;
   transform: translateY(-50%);
   opacity: 0.45;
-  stroke-width: 44px;
 }
 .mobile .select-multi {
   padding: 5px;
@@ -5425,7 +5425,6 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
   color: #000;
   color: var(--black);
   cursor: default;
-  stroke-width: 34px;
 }
 [class*="text-icon"] > .icon,
 [class*="text-icon"] > button {
@@ -5470,7 +5469,7 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
 .text .clear-form .icon {
   width: 12px;
   height: 12px;
-  stroke-width: 44px;
+  stroke-width: 40px;
 }
 .form-holder .text,
 .form-holder .select {
@@ -5550,7 +5549,7 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
 .form-lg [class*="text-icon"] > .icon {
   width: 20px;
   height: 20px;
-  stroke-width: 24px;
+  stroke-width: 32px;
 }
 .form-lg .select .icon,
 .form-lg [class*="text-icon"] > .icon,
@@ -5780,7 +5779,7 @@ html:not(.mobile) .autocomplete li:hover,
   stroke-linejoin: round;
   width: 20px;
   height: 20px;
-  stroke-width: 36px;
+  stroke-width: 32px;
 }
 .icon-mirror-v {
   transform: scaleY(-1);
@@ -5824,24 +5823,11 @@ html:not(.mobile) .autocomplete li:hover,
 }
 .icon-xl,
 .icons-xl .icon:not([class*="icon-"]) {
-  stroke-width: 22px !important;
+  stroke-width: 18px !important;
 }
 .icon-light,
 .icons-light .icon:not([class*="icon-"]) {
-  stroke-width: 22px !important;
-}
-.icon-xxs,
-.icons-xxs .icon {
-  width: 12px !important;
-  height: 12px !important;
-}
-.icon-xxs,
-.icons-xxs .icon:not([class*="icon-"]) {
-  stroke-width: 44px !important;
-}
-.icon-default,
-.icons-default .icon:not([class*="icon-"]) {
-  stroke-width: 44px !important;
+  stroke-width: 18px !important;
 }
 .icon-lg,
 .icons-lg .icon {
@@ -5850,11 +5836,11 @@ html:not(.mobile) .autocomplete li:hover,
 }
 .icon-lg,
 .icons-lg .icon:not([class*="icon-"]) {
-  stroke-width: 30px !important;
+  stroke-width: 26px !important;
 }
-.icon-semibold,
-.icons-semibold .icon:not([class*="icon-"]) {
-  stroke-width: 30px !important;
+.icon-default,
+.icons-default .icon:not([class*="icon-"]) {
+  stroke-width: 26px !important;
 }
 .icon-sm,
 .icons-sm .icon {
@@ -5863,11 +5849,11 @@ html:not(.mobile) .autocomplete li:hover,
 }
 .icon-sm,
 .icons-sm .icon:not([class*="icon-"]) {
-  stroke-width: 38px !important;
+  stroke-width: 34px !important;
 }
-.icon-bold,
-.icons-bold .icon:not([class*="icon-"]) {
-  stroke-width: 38px !important;
+.icon-semibold,
+.icons-semibold .icon:not([class*="icon-"]) {
+  stroke-width: 34px !important;
 }
 .icon-xs,
 .icons-xs .icon {
@@ -5876,11 +5862,24 @@ html:not(.mobile) .autocomplete li:hover,
 }
 .icon-xs,
 .icons-xs .icon:not([class*="icon-"]) {
-  stroke-width: 42px !important;
+  stroke-width: 38px !important;
+}
+.icon-bold,
+.icons-bold .icon:not([class*="icon-"]) {
+  stroke-width: 38px !important;
+}
+.icon-xxs,
+.icons-xxs .icon {
+  width: 12px !important;
+  height: 12px !important;
+}
+.icon-xxs,
+.icons-xxs .icon:not([class*="icon-"]) {
+  stroke-width: 40px !important;
 }
 .icon-black,
 .icons-black .icon:not([class*="icon-"]) {
-  stroke-width: 42px !important;
+  stroke-width: 40px !important;
 }
 .icons-no-opacity .icon:not(.default-icon) {
   opacity: 1 !important;
@@ -6014,7 +6013,7 @@ html:not(.mobile) .list-group > ul > li > a:hover .list-icon {
 .list-group .has-icon-lg .list-icon {
   width: 26px;
   height: 26px;
-  stroke-width: 22px;
+  stroke-width: 26px;
 }
 .list-group .has-icon > li,
 .list-group .has-icon > li > a {
@@ -6150,7 +6149,7 @@ html:not(.mobile) .list-group > ul > li > a:hover .list-icon {
 .close-card .icon {
   width: 12px;
   height: 12px;
-  stroke-width: 44px;
+  stroke-width: 40px;
 }
 html:not(.mobile) .close-card:hover {
   opacity: 0.75;
@@ -6419,7 +6418,6 @@ html:not(.mobile) .btn-youtube:hover {
   text-align: center;
   vertical-align: middle;
   position: relative;
-  stroke-width: 12px;
 }
 [class*="img-photo"]:not(img) {
   background-color: rgba(0, 0, 0, 0.08);
@@ -6456,7 +6454,7 @@ html:not(.mobile) .btn-youtube:hover {
 .img-photo-sm .icon {
   width: 18px;
   height: 18px;
-  stroke-width: 32px;
+  stroke-width: 34px;
 }
 .img-photo-xs {
   font-size: 12px;
@@ -6664,7 +6662,6 @@ html:not(.mobile) .ui-dark ::-webkit-scrollbar-thumb:active {
 }
 .steps-bar.steps-icon li > .icon {
   color: currentColor;
-  stroke-width: 34px;
 }
 .steps-bar.steps-icon li.active ~ li > .icon {
   opacity: 0;
@@ -7903,7 +7900,7 @@ html:not(.mobile) .alerts-msg:hover {
 .close-alert .icon {
   width: 12px;
   height: 12px;
-  stroke-width: 44px;
+  stroke-width: 40px;
 }
 html:not(.mobile) .close-alert:hover {
   opacity: 0.75;
@@ -8536,12 +8533,12 @@ html:not(.mobile) .carousel-gallery .detail:not(.detail-loader) img:hover {
 .carousel-gallery .detail .icon {
   width: 80px;
   height: 80px;
+  stroke-width: 12px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 1 !important;
-  stroke-width: 16px;
 }
 .carousel-gallery .detail.detail-loader {
   background-color: rgba(0, 0, 0, 0.075);
@@ -9001,6 +8998,7 @@ html:not(.mobile) .preview-next:hover {
   color: #fff;
   width: 50px;
   height: 50px;
+  stroke-width: 12px;
   margin: -20px 0 0 -25px;
   position: absolute;
   top: 50%;
@@ -9008,7 +9006,6 @@ html:not(.mobile) .preview-next:hover {
   z-index: 3;
   transform: translate(-50%, -50%);
   animation: preview-loader 1.15s linear infinite;
-  stroke-width: 12px;
 }
 .preview-loader.pause {
   color: #d10f1c;

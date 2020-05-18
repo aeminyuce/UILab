@@ -39,6 +39,9 @@
 @btn-default:                           32px;
 @btn-lg:                                42px;
 
+@icon-weight-max:                       40px;
+@icon-weight-min:                       12px;
+
 // global breakpoints
 @xl-breakpoint:                         1680px;
 @lg-breakpoint:                         1200px;
@@ -226,11 +229,8 @@
     width: @size; height: @size;
 }
 ._icon-weight(@size) {
-    @stroke-max: 44px;
-    @stroke-min: 12px;
-
-    @stroke-calc: @stroke-max + (@stroke-min - if(@size < @stroke-min, @stroke-min, @size));
-    @stroke-size: if(@stroke-calc < @stroke-min, @stroke-min, @stroke-calc);
+    @stroke-calc: @icon-weight-max + (@icon-weight-min - if(@size < @icon-weight-min, @icon-weight-min, @size));
+    @stroke-size: if(@stroke-calc < @icon-weight-min, @icon-weight-min, @stroke-calc);
 
     stroke-width: @stroke-size;
 }
