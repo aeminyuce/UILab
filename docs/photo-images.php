@@ -9,13 +9,13 @@
                     <img class="img-photo-xs circle" src="img/profile-image.jpg" alt="">
                     <img class="img-photo-xs circle" src="img/profile-image2.jpg" alt="">
                     <span class="img-photo-xs circle">
-                        <svg class="icon"><use href="#user"></use></svg>
+                        <svg class="icon"><use href="#user"/></svg>
                     </span>
 
                     <span class="sp-5 visible-sm"></span>
 
                     <span class="img-photo-xs circle theme-orange ui-dark">
-                        <svg class="icon"><use href="#user"></use></svg>
+                        <svg class="icon"><use href="#user"/></svg>
                     </span>
                     <span class="img-photo-xs circle theme-yellow ui-dark"><span>HY</span></span>
                     <span class="img-photo-xs circle theme-default2 ui-dark"><span>EKY</span></span>
@@ -25,13 +25,13 @@
                     <img class="img-photo-sm circle" src="img/profile-image.jpg" alt="">
                     <img class="img-photo-sm circle" src="img/profile-image2.jpg" alt="">
                     <span class="img-photo-sm circle">
-                        <svg class="icon"><use href="#user"></use></svg>
+                        <svg class="icon"><use href="#user"/></svg>
                     </span>
 
                     <span class="sp-5 visible-sm"></span>
 
                     <span class="img-photo-sm circle theme-orange ui-dark">
-                        <svg class="icon"><use href="#user"></use></svg>
+                        <svg class="icon"><use href="#user"/></svg>
                     </span>
                     <span class="img-photo-sm circle theme-yellow ui-dark"><span>HY</span></span>
                     <span class="img-photo-sm circle theme-default2 ui-dark"><span>EKY</span></span>
@@ -41,13 +41,13 @@
                     <img class="img-photo circle" src="img/profile-image.jpg" alt="">
                     <img class="img-photo circle" src="img/profile-image2.jpg" alt="">
                     <span class="img-photo circle">
-                        <svg class="icon"><use href="#user"></use></svg>
+                        <svg class="icon"><use href="#user"/></svg>
                     </span>
 
                     <span class="sp-5 visible-sm"></span>
 
                     <span class="img-photo circle theme-orange ui-dark">
-                        <svg class="icon"><use href="#user"></use></svg>
+                        <svg class="icon"><use href="#user"/></svg>
                     </span>
                     <span class="img-photo circle theme-yellow ui-dark"><span>HY</span></span>
                     <span class="img-photo circle theme-default2 ui-dark"><span>EKY</span></span>
@@ -57,13 +57,13 @@
                     <img class="img-photo-lg circle" src="img/profile-image.jpg" alt="">
                     <img class="img-photo-lg circle" src="img/profile-image2.jpg" alt="">
                     <span class="img-photo-lg circle">
-                        <svg class="icon"><use href="#user"></use></svg>
+                        <svg class="icon"><use href="#user"/></svg>
                     </span>
 
                     <span class="sp-5 visible-sm"></span>
 
                     <span class="img-photo-lg circle theme-orange ui-dark">
-                        <svg class="icon"><use href="#user"></use></svg>
+                        <svg class="icon"><use href="#user"/></svg>
                     </span>
                     <span class="img-photo-lg circle theme-yellow ui-dark"><span>HY</span></span>
                     <span class="img-photo-lg circle theme-default2 ui-dark"><span>EKY</span></span>

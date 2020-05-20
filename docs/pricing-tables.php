@@ -13,14 +13,14 @@
 
                         <div class="card full-h padding-30 round shadow">
                             <div class="margin-30-v">
-                                <svg class="icon icon-72 theme-default2 ui-text"><use href="#box"></use></svg>
+                                <svg class="icon icon-72 theme-default2 ui-text"><use href="#box"/></svg>
                             </div>
                             <h2 class="font-bold margin-15-v">Free</h2>
                             <h4 class="x-dark">1 End Product License</h4>
                             <p class="dark large margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                             <a class="btn btn-lg btn-xs-fluid padding-30-h margin-30-b round theme-green ui-dark ease-btn" href="#">
                                 <b>GET FOR FREE</b>
-                                <svg class="icon margin-5-l"><use href="#heart"></use></svg>
+                                <svg class="icon margin-5-l"><use href="#heart"/></svg>
                             </a>
                         </div>
 
@@ -29,7 +29,7 @@
 
                         <div class="card full-h padding-30 round shadow-lg theme-default2 ui-dark">
                             <div class="margin-30-v">
-                                <svg class="icon icon-72 animate-bounce-x"><use href="#gift"></use></svg>
+                                <svg class="icon icon-72 animate-bounce-x"><use href="#gift"/></svg>
                             </div>
                             <h2 class="font-bold margin-15-v">$19</h2>
                             <h4>Business License</h4>
@@ -37,10 +37,10 @@
                             <span class="sp-10"></span>
                             <a class="btn btn-multi btn-lg btn-xs-fluid padding-30-h padding-15-v round theme-default ui-dark ease-btn" href="#">
                                 <b>PURCHASE</b>
-                                <svg class="icon margin-5-l"><use href="#shopping-cart"></use></svg>
+                                <svg class="icon margin-5-l"><use href="#shopping-cart"/></svg>
                             </a>
                             <div class="x-light margin-30-v">
-                                <svg class="icon margin-5-r"><use href="#check-badge"></use></svg>Recommend
+                                <svg class="icon margin-5-r"><use href="#check-badge"/></svg>Recommend
                             </div>
                         </div>
 
@@ -49,14 +49,14 @@
 
                         <div class="card full-h padding-30 round shadow">
                             <div class="margin-30-v">
-                                <svg class="icon icon-72 theme-default2 ui-text"><use href="#wallet"></use></svg>
+                                <svg class="icon icon-72 theme-default2 ui-text"><use href="#wallet"/></svg>
                             </div>
                             <h2 class="font-bold margin-15-v">$49</h2>
                             <h4 class="x-dark">Enterprise License</h4>
                             <p class="dark large margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                             <a class="btn btn-lg btn-xs-fluid padding-30-h margin-30-b round theme-default ui-dark ease-btn" href="#">
                                 <b>PURCHASE</b>
-                                <svg class="icon margin-5-l"><use href="#shopping-basket"></use></svg>
+                                <svg class="icon margin-5-l"><use href="#shopping-basket"/></svg>
                             </a>
                         </div>
 
@@ -73,14 +73,14 @@
                         <div class="card full-h round shadow">
                             <div class="card-side padding-30 border-b">
                                 <div class="margin-30-v">
-                                    <svg class="icon icon-72 theme-default2 ui-text"><use href="#box"></use></svg>
+                                    <svg class="icon icon-72 theme-default2 ui-text"><use href="#box"/></svg>
                                 </div>
                                 <h2 class="font-bold margin-15-v">Free</h2>
                                 <h4 class="x-dark">1 End Product License</h4>
                                 <p class="dark large margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                                 <a class="btn btn-lg btn-xs-fluid padding-30-h margin-30-b round theme-green ui-dark ease-btn" href="#">
                                     <b>GET FOR FREE</b>
-                                    <svg class="icon margin-5-l"><use href="#heart"></use></svg>
+                                    <svg class="icon margin-5-l"><use href="#heart"/></svg>
                                 </a>
                             </div>
                             <div class="card-side padding-30">
@@ -90,16 +90,16 @@
                                     <li><span class="light default">Projects</span>1 Project</li>
                                     <li>
                                         <span class="light default">Support</span>
-                                        <svg class="icon"><use href="#check"></use></svg>
+                                        <svg class="icon"><use href="#check"/></svg>
                                     </li>
                                     <li>
                                         <span class="light default">Tutorials</span>
-                                        <svg class="icon"><use href="#no"></use></svg>
+                                        <svg class="icon"><use href="#no"/></svg>
                                         </span>
                                     </li>
                                     <li>
                                         <span class="light default">Cancellation</span>
-                                        <svg class="icon"><use href="#no"></use></svg>
+                                        <svg class="icon"><use href="#no"/></svg>
                                     </li>
                                 </ul>
                             </div>
@@ -111,7 +111,7 @@
                         <div class="card full-h round shadow-lg theme-default2 ui-dark">
                             <div class="card-side padding-30 border-b border-light">
                                 <div class="margin-30-v">
-                                    <svg class="icon icon-72 animate-bounce-x"><use href="#gift"></use></svg>
+                                    <svg class="icon icon-72 animate-bounce-x"><use href="#gift"/></svg>
                                 </div>
                                 <h2 class="font-bold margin-15-v">$19</h2>
                                 <h4>Business License</h4>
@@ -119,7 +119,7 @@
                                 <span class="sp-10"></span>
                                 <a class="btn btn-multi btn-lg btn-xs-fluid padding-30-h padding-15-v margin-25-b round theme-default ui-dark ease-btn" href="#">
                                     <b>PURCHASE</b>
-                                    <svg class="icon margin-5-l"><use href="#shopping-cart"></use></svg>
+                                    <svg class="icon margin-5-l"><use href="#shopping-cart"/></svg>
                                 </a>
                             </div>
                             <div class="card-side padding-30">
@@ -129,16 +129,16 @@
                                     <li><span class="x-light default">Projects</span>100 Projects</li>
                                     <li>
                                         <span class="x-light default">Support</span>
-                                        <svg class="icon"><use href="#check"></use></svg>
+                                        <svg class="icon"><use href="#check"/></svg>
                                     </li>
                                     <li>
                                         <span class="x-light default">Tutorials</span>
-                                        <svg class="icon"><use href="#check"></use></svg>
+                                        <svg class="icon"><use href="#check"/></svg>
                                         </span>
                                     </li>
                                     <li>
                                         <span class="x-light default">Cancellation</span>
-                                        <svg class="icon"><use href="#check"></use></svg>
+                                        <svg class="icon"><use href="#check"/></svg>
                                     </li>
                                 </ul>
                             </div>
@@ -150,14 +150,14 @@
                         <div class="card full-h round shadow">
                             <div class="card-side padding-30 border-b">
                                 <div class="margin-30-v">
-                                    <svg class="icon icon-72 theme-default2 ui-text"><use href="#wallet"></use></svg>
+                                    <svg class="icon icon-72 theme-default2 ui-text"><use href="#wallet"/></svg>
                                 </div>
                                 <h2 class="font-bold margin-15-v">$49</h2>
                                 <h4 class="x-dark">Enterprise License</h4>
                                 <p class="dark large margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                                 <a class="btn btn-lg btn-xs-fluid padding-30-h margin-30-b round theme-default ui-dark ease-btn" href="#">
                                     <b>PURCHASE</b>
-                                    <svg class="icon margin-5-l"><use href="#shopping-basket"></use></svg>
+                                    <svg class="icon margin-5-l"><use href="#shopping-basket"/></svg>
                                 </a>
                             </div>
                             <div class="card-side padding-30">
@@ -167,16 +167,16 @@
                                     <li><span class="light default">Projects</span>Unlimited Projects</li>
                                     <li>
                                         <span class="light default">Support</span>
-                                        <svg class="icon"><use href="#check"></use></svg>
+                                        <svg class="icon"><use href="#check"/></svg>
                                     </li>
                                     <li>
                                         <span class="light default">Tutorials</span>
-                                        <svg class="icon"><use href="#no"></use></svg>
+                                        <svg class="icon"><use href="#no"/></svg>
                                         </span>
                                     </li>
                                     <li>
                                         <span class="light default">Cancellation</span>
-                                        <svg class="icon"><use href="#no"></use></svg>
+                                        <svg class="icon"><use href="#no"/></svg>
                                     </li>
                                 </ul>
                             </div>

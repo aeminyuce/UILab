@@ -69,38 +69,38 @@
                 <div class="padding-30-v">
                     <ul class="steps-bar icons-sm">
                         <li>
-                            <svg class="icon margin-3-r"><use href="#check-circle"></use></svg>
+                            <svg class="icon margin-3-r"><use href="#check-circle"/></svg>
                             Step Name Here
                         </li>
                         <li class="active">
-                            <svg class="icon margin-3-r"><use href="#check-circle"></use></svg>
+                            <svg class="icon margin-3-r"><use href="#check-circle"/></svg>
                             Step Name Here
                         </li>
                         <li>
-                            <svg class="icon margin-3-r"><use href="#check-circle"></use></svg>
+                            <svg class="icon margin-3-r"><use href="#check-circle"/></svg>
                             Step Name Here
                         </li>
                         <li>
-                            <svg class="icon margin-3-r"><use href="#check-circle"></use></svg>
+                            <svg class="icon margin-3-r"><use href="#check-circle"/></svg>
                             Step Name Here
                         </li>
                     </ul>
                     <span class="sp-15"></span>
                     <ul class="steps-bar steps-icon">
                         <li>
-                            <svg class="icon" data-tooltip title="Completed"><use href="#check-circle-fill"></use></svg>
+                            <svg class="icon" data-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
                             Step Name Here
                         </li>
                         <li class="active">
-                            <svg class="icon" data-tooltip title="Completed"><use href="#check-circle-fill"></use></svg>
+                            <svg class="icon" data-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
                             Step Name Here
                         </li>
                         <li>
-                            <svg class="icon" data-tooltip title="Completed"><use href="#check-circle-fill"></use></svg>
+                            <svg class="icon" data-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
                             Step Name Here
                         </li>
                         <li>
-                            <svg class="icon" data-tooltip title="Completed"><use href="#check-circle-fill"></use></svg>
+                            <svg class="icon" data-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
                             Step Name Here
                         </li>
                     </ul>

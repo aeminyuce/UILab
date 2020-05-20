@@ -34,21 +34,21 @@
 
                 <h4>Using with Icons</h4>
                 <div class="theme-default2 icons-xl ui-text padding-30-b hover-t-more-1st ease-1st-layout">
-                    <svg class="icon" data-tooltip title="Like!"><use href="#heart"></use></svg>
-                    <svg class="icon" data-tooltip title="Somewhere on Earth!"><use href="#marker"></use></svg>
-                    <svg class="icon" data-tooltip title="Call us now 555 55 55"><use href="#phone"></use></svg>
-                    <svg class="icon" data-tooltip title="Add favorites!"><use href="#star"></use></svg>
+                    <svg class="icon" data-tooltip title="Like!"><use href="#heart"/></svg>
+                    <svg class="icon" data-tooltip title="Somewhere on Earth!"><use href="#marker"/></svg>
+                    <svg class="icon" data-tooltip title="Call us now 555 55 55"><use href="#phone"/></svg>
+                    <svg class="icon" data-tooltip title="Add favorites!"><use href="#star"/></svg>
                 </div>
 
                 <h4>Using with Forms</h4>
                 <div class="ease-1st-form padding-30-b form-lg ease-1st-form">
                     <div class="text text-icon round border-dual ease-form">
-                        <svg class="icon" data-tooltip="tl" title="Your message here!"><use href="#question-circle-fill"></use></svg>
+                        <svg class="icon" data-tooltip="tl" title="Your message here!"><use href="#question-circle-fill"/></svg>
                         <input type="text" placeholder="Placeholder Text">
                     </div>
                     <span class="sp-15"></span>
                     <div class="text text-icon-l round border-dual ease-form">
-                        <svg class="icon" data-tooltip="tr" title="Your message here!"><use href="#question-circle-fill"></use></svg>
+                        <svg class="icon" data-tooltip="tr" title="Your message here!"><use href="#question-circle-fill"/></svg>
                         <input type="text" placeholder="Placeholder Text">
                     </div>
                 </div>

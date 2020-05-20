@@ -172,82 +172,82 @@
                     <div class="row ease-2nd-btn">
                         <div class="col-6">
                             <a href="#" class="btn btn-square btn-xxs round" data-notifier="">
-                                <svg class="icon"><use href="#user"></use></svg>
+                                <svg class="icon"><use href="#user"/></svg>
                             </a>
                             <a href="#" class="btn btn-square btn-xs round" data-notifier="">
-                                <svg class="icon"><use href="#user"></use></svg>
+                                <svg class="icon"><use href="#user"/></svg>
                             </a>
                             <a href="#" class="btn btn-square btn-sm round" data-notifier="">
-                                <svg class="icon"><use href="#user"></use></svg>
+                                <svg class="icon"><use href="#user"/></svg>
                             </a>
                             <a href="#" class="btn btn-square round" data-notifier="">
-                                <svg class="icon"><use href="#user"></use></svg>
+                                <svg class="icon"><use href="#user"/></svg>
                             </a>
                             <a href="#" class="btn btn-square btn-lg round" data-notifier="">
-                                <svg class="icon"><use href="#user"></use></svg>
+                                <svg class="icon"><use href="#user"/></svg>
                             </a>
                         </div>
                         <div class="col-6">
                             <a href="#" class="btn btn-square btn-xxs circle" data-notifier="">
-                                <svg class="icon"><use href="#user"></use></svg>
+                                <svg class="icon"><use href="#user"/></svg>
                             </a>
                             <a href="#" class="btn btn-square btn-xs circle" data-notifier="">
-                                <svg class="icon"><use href="#user"></use></svg>
+                                <svg class="icon"><use href="#user"/></svg>
                             </a>
                             <a href="#" class="btn btn-square btn-sm circle" data-notifier="">
-                                <svg class="icon"><use href="#user"></use></svg>
+                                <svg class="icon"><use href="#user"/></svg>
                             </a>
                             <a href="#" class="btn btn-square circle" data-notifier="">
-                                <svg class="icon"><use href="#user"></use></svg>
+                                <svg class="icon"><use href="#user"/></svg>
                             </a>
                             <a href="#" class="btn btn-square btn-lg circle" data-notifier="">
-                                <svg class="icon"><use href="#user"></use></svg>
+                                <svg class="icon"><use href="#user"/></svg>
                             </a>
                         </div>
                         <div class="col-6">
                             <a href="#" class="btn btn-square btn-xxs round" data-notifier="1">
-                                <svg class="icon"><use href="#setting"></use></svg>
+                                <svg class="icon"><use href="#setting"/></svg>
                             </a>
                             <a href="#" class="btn btn-square btn-xs round" data-notifier="2">
-                                <svg class="icon"><use href="#setting"></use></svg>
+                                <svg class="icon"><use href="#setting"/></svg>
                             </a>
                             <a href="#" class="btn btn-square btn-sm round" data-notifier="4">
-                                <svg class="icon"><use href="#setting"></use></svg>
+                                <svg class="icon"><use href="#setting"/></svg>
                             </a>
                             <a href="#" class="btn btn-square round" data-notifier="11">
-                                <svg class="icon"><use href="#setting"></use></svg>
+                                <svg class="icon"><use href="#setting"/></svg>
                             </a>
                             <a href="#" class="btn btn-square btn-lg round" data-notifier="20">
-                                <svg class="icon"><use href="#user"></use></svg>
+                                <svg class="icon"><use href="#user"/></svg>
                             </a>
                             <a href="#" class="btn btn-square btn-lg round" data-notifier="3">
-                                <svg class="icon"><use href="#comments"></use></svg>
+                                <svg class="icon"><use href="#comments"/></svg>
                             </a>
                             <a href="#" class="btn btn-square btn-lg round" data-notifier="315">
-                                <svg class="icon"><use href="#bell"></use></svg>
+                                <svg class="icon"><use href="#bell"/></svg>
                             </a>
                         </div>
                         <div class="col-6">
                             <a href="#" class="btn btn-square btn-xxs circle" data-notifier="1">
-                                <svg class="icon"><use href="#setting"></use></svg>
+                                <svg class="icon"><use href="#setting"/></svg>
                             </a>
                             <a href="#" class="btn btn-square btn-xs circle" data-notifier="2">
-                                <svg class="icon"><use href="#setting"></use></svg>
+                                <svg class="icon"><use href="#setting"/></svg>
                             </a>
                             <a href="#" class="btn btn-square btn-sm circle" data-notifier="4">
-                                <svg class="icon"><use href="#setting"></use></svg>
+                                <svg class="icon"><use href="#setting"/></svg>
                             </a>
                             <a href="#" class="btn btn-square circle" data-notifier="11">
-                                <svg class="icon"><use href="#setting"></use></svg>
+                                <svg class="icon"><use href="#setting"/></svg>
                             </a>
                             <a href="#" class="btn btn-square btn-lg circle" data-notifier="20">
-                                <svg class="icon"><use href="#user"></use></svg>
+                                <svg class="icon"><use href="#user"/></svg>
                             </a>
                             <a href="#" class="btn btn-square btn-lg circle" data-notifier="3">
-                                <svg class="icon"><use href="#comments"></use></svg>
+                                <svg class="icon"><use href="#comments"/></svg>
                             </a>
                             <a href="#" class="btn btn-square btn-lg circle" data-notifier="315">
-                                <svg class="icon"><use href="#bell"></use></svg>
+                                <svg class="icon"><use href="#bell"/></svg>
                             </a>
                         </div>
                     </div>

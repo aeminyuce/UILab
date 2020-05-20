@@ -5,7 +5,7 @@
                 <div class="col-250 padding-30 order-sm-last sm-align-c theme-default2">
                     <a href="#" class="btn btn-lg btn-xs-fluid align-l block circle ui-dark ease-btn">
                         Create New
-                        <svg class="icon right"><use href="#plus"></use></svg>
+                        <svg class="icon right"><use href="#plus"/></svg>
                     </a>
                     <span class="sp-30"></span>
                     <ul class="list-unstyled hover-r-more-2nd inline-block-2nd large font-bold list-spacer-30 padding-10 ease-2nd-layout">
@@ -20,19 +20,19 @@
                     <ul class="list-unstyled hover-r-more-2nd inline-block-2nd list-spacer-15 large x-dark adding-10 icons-sm icons-margin-10-r ease-2nd-layout">
                         <li>
                             <a href="#">
-                                <svg class="icon"><use href="#marker"></use></svg>
+                                <svg class="icon"><use href="#marker"/></svg>
                                 Locations
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <svg class="icon"><use href="#users"></use></svg>
+                                <svg class="icon"><use href="#users"/></svg>
                                 Friends
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <svg class="icon"><use href="#settings"></use></svg>
+                                <svg class="icon"><use href="#settings"/></svg>
                                 Settings
                             </a>
                         </li>

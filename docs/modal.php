@@ -250,7 +250,7 @@
                     <div class="col-12 ease-1st-form">
                         <div class="text text-icon has-clear round-l no-border shadow-in-sm theme-gray ui-x-light ease-form">
                             <button type="button" class="clear-form">
-                                <svg class="icon"><use href="#remove"></use></svg>
+                                <svg class="icon"><use href="#remove"/></svg>
                             </button>
                             <input class="required" type="text" placeholder="Search">
                         </div>
@@ -259,7 +259,7 @@
                 </div>
                 <div class="col-100 col-xs-50 padding-10-v">
                     <button class="btn block round-r theme-default2 ui-dark ease-btn" type="submit">
-                        <svg class="icon"><use href="#search"></use></svg>
+                        <svg class="icon"><use href="#search"/></svg>
                     </button>
                 </div>
             </div>
@@ -267,21 +267,21 @@
             <div class="row xs-fluid icons-xxl block-2nd icons-no-opacity hover-t-more-2nd icons-margin-5-v theme-gray form-lg ease-2nd-btn">
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-x-light" href="#">
-                        <svg class="icon"><use href="#news"></use></svg>
+                        <svg class="icon"><use href="#news"/></svg>
                         <span class="block margin-5-v">News</span>
                         <span class="dark">589</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-x-light" href="#">
-                        <svg class="icon"><use href="#calendar-check"></use></svg>
+                        <svg class="icon"><use href="#calendar-check"/></svg>
                         <span class="block margin-5-v">Events</span>
                         <span class="dark">219</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-x-light" href="#">
-                        <svg class="icon"><use href="#files"></use></svg>
+                        <svg class="icon"><use href="#files"/></svg>
                         <span class="block margin-5-v">Documents</span>
                         <span class="dark">701</span>
                     </a>

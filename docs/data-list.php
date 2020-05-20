@@ -12,7 +12,7 @@
                                 <div class="text text-icon-both round no-border ui-x-light has-clear ease-form">
                                     <svg class="icon text-icon-l"><use href="#search"></svg>
                                     <button class="clear-form">
-                                        <svg class="icon"><use href="#remove"></use></svg>
+                                        <svg class="icon"><use href="#remove"/></svg>
                                     </button>
                                     <input class="data-filter" type="text" placeholder="Search">
                                 </div>
@@ -476,7 +476,7 @@
                             <div class="text text-icon-both round border-dual has-clear ease-form">
                                 <svg class="icon text-icon-l"><use href="#search"></svg>
                                 <button class="clear-form">
-                                    <svg class="icon"><use href="#remove"></use></svg>
+                                    <svg class="icon"><use href="#remove"/></svg>
                                 </button>
                                 <input class="data-filter" type="text" placeholder="Search">
                             </div>
@@ -1243,7 +1243,7 @@
                             <div class="text text-icon-both round border-dual has-clear ease-form">
                                 <svg class="icon text-icon-l"><use href="#search"></svg>
                                 <button class="clear-form">
-                                    <svg class="icon"><use href="#remove"></use></svg>
+                                    <svg class="icon"><use href="#remove"/></svg>
                                 </button>
                                 <input class="data-filter" type="text" placeholder="Search">
                             </div>

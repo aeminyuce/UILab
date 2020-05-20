@@ -14,7 +14,7 @@
 
                     <label class="form-label x-dark">User Name</label>
                     <div class="text text-icon round border-dual ease-form">
-                        <svg class="icon"><use href="#user"></use></svg>
+                        <svg class="icon"><use href="#user"/></svg>
                         <input class="required" type="text" placeholder="Enter user name" minlength="3" autocomplete="username">
                     </div>
                     <p class="required-msg">Enter user name.</p>
@@ -24,7 +24,7 @@
                     <label class="form-label x-dark">Password</label>
                     <div class="text text-icon round border-dual ease-form">
                         <button type="button" title="Toggle Password" class="show-pass">
-                            <svg class="icon"><use href="#eye-fill"></use></svg>
+                            <svg class="icon"><use href="#eye-fill"/></svg>
                         </button>
                         <input class="required" type="password" placeholder="Enter password" minlength="8" autocomplete="current-password">
                     </div>
@@ -47,7 +47,7 @@
                     </button>
                     <span class="sp-15"></span>
                     <button class="tab btn btn-ghost x-dark round block ease-btn" data-id="lost-password">
-                        <svg class="icon margin-5-r no-opacity"><use href="#lock"></use></svg> Forgot password?
+                        <svg class="icon margin-5-r no-opacity"><use href="#lock"/></svg> Forgot password?
                     </button>
 
                 </form>
@@ -58,7 +58,7 @@
 
                     <label class="form-label x-dark">Your email</label>
                     <div class="text text-icon round border-dual ease-form">
-                        <svg class="icon"><use href="#at"></use></svg>
+                        <svg class="icon"><use href="#at"/></svg>
                         <input class="required" type="email" placeholder="Enter email" minlength="3">
                     </div>
                     <p class="required-msg">Enter email.</p>
@@ -70,7 +70,7 @@
                     </button>
                     <span class="sp-15"></span>
                     <button class="tab btn btn-ghost x-dark round block ease-btn" data-id="login">
-                        <svg class="icon margin-5-r no-opacity"><use href="#long-arrow-left"></use></svg> Back to login
+                        <svg class="icon margin-5-r no-opacity"><use href="#long-arrow-left"/></svg> Back to login
                     </button>
 
                 </form>
@@ -89,16 +89,16 @@
                 </div>
 
                 <div class="login-icons icons-black">
-                    <svg class="icon hidden-sm"><use href="#plus"></use></svg>
-                    <svg class="icon"><use href="#plus"></use></svg>
-                    <svg class="icon"><use href="#plus"></use></svg>
-                    <svg class="icon"><use href="#plus"></use></svg>
-                    <svg class="icon"><use href="#plus"></use></svg>
+                    <svg class="icon hidden-sm"><use href="#plus"/></svg>
+                    <svg class="icon"><use href="#plus"/></svg>
+                    <svg class="icon"><use href="#plus"/></svg>
+                    <svg class="icon"><use href="#plus"/></svg>
+                    <svg class="icon"><use href="#plus"/></svg>
                 </div>
 
             </div>
 
-            <svg class="icon xx-light visible-lg"><use href="#users"></use></svg>
+            <svg class="icon xx-light visible-lg"><use href="#users"/></svg>
 
         </div>
     </div>

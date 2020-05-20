@@ -9,11 +9,11 @@
             <div class="signup-holder no-scroll set-relative ui-dark">
 
                 <div class="signup-icons icons-black">
-                    <svg class="icon"><use href="#plus"></use></svg>
-                    <svg class="icon"><use href="#plus"></use></svg>
-                    <svg class="icon"><use href="#plus"></use></svg>
-                    <svg class="icon"><use href="#plus"></use></svg>
-                    <svg class="icon"><use href="#plus"></use></svg>
+                    <svg class="icon"><use href="#plus"/></svg>
+                    <svg class="icon"><use href="#plus"/></svg>
+                    <svg class="icon"><use href="#plus"/></svg>
+                    <svg class="icon"><use href="#plus"/></svg>
+                    <svg class="icon"><use href="#plus"/></svg>
                 </div>
 
                 <div class="fixed theme-green">
@@ -85,7 +85,7 @@
                                     <label class="form-label x-dark">Password</label>
                                     <div class="text text-icon round border-dual ease-form">
                                         <button type="button" title="Toggle Password" class="show-pass">
-                                            <svg class="icon"><use href="#eye-fill"></use></svg>
+                                            <svg class="icon"><use href="#eye-fill"/></svg>
                                         </button>
                                         <input class="required" type="password" placeholder="Enter password" minlength="8">
                                     </div>
@@ -96,7 +96,7 @@
                                     <label class="form-label x-dark">Confirm Password</label>
                                     <div class="text text-icon round border-dual ease-form">
                                         <button type="button" title="Toggle Password" class="show-pass">
-                                            <svg class="icon"><use href="#eye-fill"></use></svg>
+                                            <svg class="icon"><use href="#eye-fill"/></svg>
                                         </button>
                                         <input class="required" type="password" placeholder="Enter password again" minlength="8">
                                     </div>
@@ -149,19 +149,19 @@
                                 </h3>
                                 <ul class="list-unstyled list-spacer-10 light x-large icons-sm icons-margin-5-r theme-default2">
                                     <li>
-                                        <svg class="icon ui-text hidden-sm"><use href="#check-circle-fill"></use></svg>
+                                        <svg class="icon ui-text hidden-sm"><use href="#check-circle-fill"/></svg>
                                         Work and build around your team.
                                     </li>
                                     <li>
-                                        <svg class="icon ui-text hidden-sm"><use href="#check-circle-fill"></use></svg>
+                                        <svg class="icon ui-text hidden-sm"><use href="#check-circle-fill"/></svg>
                                         Whatever work you do, wherever you do it.
                                     </li>
                                     <li>
-                                        <svg class="icon ui-text hidden-sm"><use href="#check-circle-fill"></use></svg>
+                                        <svg class="icon ui-text hidden-sm"><use href="#check-circle-fill"/></svg>
                                         Where humans connect.
                                     </li>
                                     <li>
-                                        <svg class="icon ui-text hidden-sm"><use href="#check-circle-fill"></use></svg>
+                                        <svg class="icon ui-text hidden-sm"><use href="#check-circle-fill"/></svg>
                                         Expanding your environment.
                                     </li>
                                 </ul>

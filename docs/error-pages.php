@@ -12,7 +12,7 @@
                     <p class="font-red largest font-bold">Error: 404 Page Not Found</p>
                     <p class="font-red error-size no-user-select">
                         <span class="inline-block">4</span>
-                        <svg class="icon"><use href="#undo"></use></svg>
+                        <svg class="icon"><use href="#undo"/></svg>
                         <span class="inline-block">4</span>
                     </p>
                     <p class="x-large">Sorry, the page you're looking for cannot be reached.<br>Here are few links that may be helpful.</p>
@@ -29,12 +29,12 @@
                     <p class="font-yellow largest font-bold">Error: 403 Forbidden</p>
                     <p class="font-yellow error-size no-user-select">
                         <span class="inline-block">4</span>
-                        <svg class="icon"><use href="#no"></use></svg>
+                        <svg class="icon"><use href="#no"/></svg>
                         <span class="inline-block">3</span>
                     </p>
                     <p class="x-large">You don't have access to this page.<br>Please contact support if this wasn't supposed to happen.</p>
                     <a class="font-yellow btn btn-ghost border-dual padding-30-h circle ease-btn" href="#">
-                        <svg class="icon margin-5-r no-opacity"><use href="#long-arrow-left"></use></svg>
+                        <svg class="icon margin-5-r no-opacity"><use href="#long-arrow-left"/></svg>
                         Go Back
                     </a>
                 </div>
@@ -45,12 +45,12 @@
                     <p class="font-orange largest font-bold">Error: 500 Unexpected Error</p>
                     <p class="font-orange error-size no-user-select">
                         <span class="inline-block">5</span>
-                        <svg class="icon"><use href="#face-blank"></use></svg>
-                        <svg class="icon"><use href="#face-blank"></use></svg>
+                        <svg class="icon"><use href="#face-blank"/></svg>
+                        <svg class="icon"><use href="#face-blank"/></svg>
                     </p>
                     <p class="x-large">We are having some issues at the moment.<br>We will have it fixed in no time!</p class="large">
                     <a class="font-orange btn btn-ghost border-dual padding-30-h circle ease-btn" href="#">
-                        <svg class="icon margin-5-r no-opacity"><use href="#long-arrow-left"></use></svg>
+                        <svg class="icon margin-5-r no-opacity"><use href="#long-arrow-left"/></svg>
                         Go Back
                     </a>
                 </div>

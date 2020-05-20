@@ -107,7 +107,7 @@
                     <div class="col-6">
                         <label class="form-label">Your Age</label>
                         <div class="select round border-dual ease-form">
-                            <svg class="icon"><use href="#angle-down"></use></svg>
+                            <svg class="icon"><use href="#angle-down"/></svg>
                             <select>
                                 <option value="">Select your age</option>
                                 <option>Under 20</option>
@@ -135,7 +135,7 @@
                         </div>
                         <div class="col-9">
                             <div class="select round border-dual ease-form">
-                                <svg class="icon"><use href="#angle-down"></use></svg>
+                                <svg class="icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="">Select your age</option>
                                     <option>Under 20</option>
@@ -182,7 +182,7 @@
                         <div class="col-6">
                             <label class="form-label">Your Age</label>
                             <div class="select round border-dual ease-form">
-                                <svg class="icon"><use href="#angle-down"></use></svg>
+                                <svg class="icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="">Select your age</option>
                                     <option>Under 20</option>
@@ -197,11 +197,11 @@
                 <h4>Autocomplete Forms</h4>
                 <div class="padding-30-b">
                     <div data-src="json/countries.json" data-val="code" class="autocomplete text text-icon round border-dual ease-form form-xs-inline">
-                        <svg class="icon"><use href="#keyboard-fill"></use></svg>
+                        <svg class="icon"><use href="#keyboard-fill"/></svg>
                         <input type="text" placeholder="Country Code" autocomplete="off">
                     </div>
                     <div data-src="json/countries.json" data-val="name" class="autocomplete text text-icon round border-dual ease-form form-xs-inline">
-                        <svg class="icon"><use href="#keyboard-fill"></use></svg>
+                        <svg class="icon"><use href="#keyboard-fill"/></svg>
                         <input type="text" placeholder="Country" autocomplete="off">
                     </div>
                 </div>
@@ -211,7 +211,7 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="select round border-dual ease-form">
-                                <svg class="icon"><use href="#angle-down"></use></svg>
+                                <svg class="icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="">Select</option>
                                     <option>Value 1</option>
@@ -221,7 +221,7 @@
                         </div>
                         <div class="col-6">
                             <div class="select round border-dual ease-form">
-                                <svg class="icon"><use href="#angle-down"></use></svg>
+                                <svg class="icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <optgroup label="Title">
                                         <option value="">Select with groups</option>
@@ -297,10 +297,10 @@
                                 <div class="col-50 dark align-c icons-lg set-relative">
                                     <div class="set-absolute set-all hidden-md">
                                         <div class="set-absolute set-c padding-20-h">
-                                            <svg class="icon"><use href="#exchange-h"></use></svg>
+                                            <svg class="icon"><use href="#exchange-h"/></svg>
                                         </div>
                                     </div>
-                                    <svg class="icon visible-md"><use href="#exchange-v"></use></svg>
+                                    <svg class="icon visible-md"><use href="#exchange-v"/></svg>
                                 </div>
                                 <div class="row">
                                     <div class="col-12 full-height">
@@ -335,10 +335,10 @@
                                 <div class="col-50 dark align-c icons-lg set-relative">
                                     <div class="set-absolute set-all hidden-md">
                                         <div class="set-absolute set-c padding-20-h">
-                                            <svg class="icon"><use href="#exchange-h"></use></svg>
+                                            <svg class="icon"><use href="#exchange-h"/></svg>
                                         </div>
                                     </div>
-                                    <svg class="icon visible-md"><use href="#exchange-v"></use></svg>
+                                    <svg class="icon visible-md"><use href="#exchange-v"/></svg>
                                 </div>
                                 <div class="row">
                                     <div class="col-12 full-height">
@@ -373,10 +373,10 @@
                                 <div class="col-50 dark align-c set-relative">
                                     <div class="set-absolute set-all hidden-md">
                                         <div class="set-absolute set-c icons-lg padding-20-h">
-                                            <svg class="icon"><use href="#exchange-h"></use></svg>
+                                            <svg class="icon"><use href="#exchange-h"/></svg>
                                         </div>
                                     </div>
-                                    <svg class="icon visible-md"><use href="#exchange-v"></use></svg>
+                                    <svg class="icon visible-md"><use href="#exchange-v"/></svg>
                                 </div>
                                 <div class="row">
                                     <div class="col-12 full-height">
@@ -574,7 +574,7 @@
                         <input type="text">
                     </div>
                     <div class="select margin-10-b round border-dual form-inline ease-form">
-                        <svg class="icon"><use href="#angle-down"></use></svg>
+                        <svg class="icon"><use href="#angle-down"/></svg>
                         <select>
                             <option value="">Select</option>
                             <option>First</option>
@@ -592,7 +592,7 @@
                         <input type="text">
                     </div>
                     <div class="select margin-10-b round border-dual form-xs-inline ease-form">
-                        <svg class="icon"><use href="#angle-down"></use></svg>
+                        <svg class="icon"><use href="#angle-down"/></svg>
                         <select>
                             <option value="">Select</option>
                             <option>First</option>
@@ -607,16 +607,16 @@
                 <h4>Form Icons</h4>
                 <div class="padding-30-b ease-1st-form">
                     <div class="text text-icon-l margin-10-b round border-dual">
-                        <svg class="icon"><use href="#search"></use></svg>
+                        <svg class="icon"><use href="#search"/></svg>
                         <input type="text" placeholder="Left icon">
                     </div>
                     <div class="text text-icon margin-10-b round border-dual">
-                        <svg class="icon"><use href="#keyboard-fill"></use></svg>
+                        <svg class="icon"><use href="#keyboard-fill"/></svg>
                         <input type="text" placeholder="Right icon">
                     </div>
                     <div class="text text-icon-both round border-dual">
-                        <svg class="icon text-icon-l"><use href="#search"></use></svg>
-                        <svg class="icon"><use href="#keyboard-fill"></use></svg>
+                        <svg class="icon text-icon-l"><use href="#search"/></svg>
+                        <svg class="icon"><use href="#keyboard-fill"/></svg>
                         <input type="text" placeholder="Both icon">
                     </div>
 
@@ -625,16 +625,16 @@
                     <label class="form-label padding-10-b">Form Icons with Large Forms</label>
                     <div class="form-lg ease-1st-form">
                         <div class="text text-icon-l margin-10-b round border-dual">
-                            <svg class="icon"><use href="#search"></use></svg>
+                            <svg class="icon"><use href="#search"/></svg>
                             <input type="text" placeholder="Left icon">
                         </div>
                         <div class="text text-icon margin-10-b round border-dual">
-                            <svg class="icon"><use href="#keyboard-fill"></use></svg>
+                            <svg class="icon"><use href="#keyboard-fill"/></svg>
                             <input type="text" placeholder="Right icon">
                         </div>
                         <div class="text text-icon-both round border-dual">
-                            <svg class="icon text-icon-l"><use href="#search"></use></svg>
-                            <svg class="icon"><use href="#keyboard-fill"></use></svg>
+                            <svg class="icon text-icon-l"><use href="#search"/></svg>
+                            <svg class="icon"><use href="#keyboard-fill"/></svg>
                             <input type="text" placeholder="Both icon">
                         </div>
                     </div>
@@ -645,13 +645,13 @@
                     <form action="#succesful">
                         <div class="text text-icon margin-10-b round border-dual has-clear ease-form">
                             <button type="button" class="clear-form">
-                                <svg class="icon"><use href="#remove"></use></svg>
+                                <svg class="icon"><use href="#remove"/></svg>
                             </button>
                             <input type="text" value="Defined value example">
                         </div>
                         <div class="text text-icon margin-10-b round border-dual has-clear ease-form">
                             <button type="button" class="clear-form">
-                                <svg class="icon"><use href="#remove"></use></svg>
+                                <svg class="icon"><use href="#remove"/></svg>
                             </button>
                             <input type="text">
                         </div>
@@ -659,7 +659,7 @@
                         <div class="form-lg margin-10-b ease-1st-form">
                             <div class="text text-icon round border-dual has-clear">
                                 <button type="button" class="clear-form">
-                                    <svg class="icon"><use href="#remove"></use></svg>
+                                    <svg class="icon"><use href="#remove"/></svg>
                                 </button>
                                 <input type="text">
                             </div>
@@ -673,7 +673,7 @@
                     <form action="#succesful">
                         <div class="text text-icon round border-dual ease-form">
                             <button type="submit">
-                                <svg class="icon"><use href="#search"></use></svg>
+                                <svg class="icon"><use href="#search"/></svg>
                             </button>
                             <input type="text" placeholder="Submit with icon or press enter key">
                         </div>
@@ -714,7 +714,7 @@
                             <div class="dropdown menu-l ease-dropdown">
                                 <button class="btn btn-xs btn-ghost dark round">
                                     Dropdown Button
-                                    <svg class="toggle-icon icon margin-3-l"><use href="#angle-down"></use></svg>
+                                    <svg class="toggle-icon icon margin-3-l"><use href="#angle-down"/></svg>
                                 </button>
                                 <ul class="content round shadow-lg">
                                     <li><a href="#">Dropdown Link</a></li>
@@ -743,7 +743,7 @@
                             </div>
                             <div class="col-2 col-xs-4">
                                 <div class="select round ease-form">
-                                    <svg class="icon"><use href="#angle-down"></use></svg>
+                                    <svg class="icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
                                         <option>First</option>
@@ -767,7 +767,7 @@
                             </div>
                             <div class="col-2 col-xs-4">
                                 <div class="select round border-dual ease-form">
-                                    <svg class="icon"><use href="#angle-down"></use></svg>
+                                    <svg class="icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
                                         <option>First</option>
@@ -791,7 +791,7 @@
                             </div>
                             <div class="col-2 col-xs-4">
                                 <div class="select circle ease-form">
-                                    <svg class="icon"><use href="#angle-down"></use></svg>
+                                    <svg class="icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
                                         <option>First</option>
@@ -815,7 +815,7 @@
                             </div>
                             <div class="col-2 col-xs-4">
                                 <div class="select circle border-dual ease-form">
-                                    <svg class="icon"><use href="#angle-down"></use></svg>
+                                    <svg class="icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
                                         <option>First</option>
@@ -842,7 +842,7 @@
                             </div>
                             <div class="col-2 col-xs-4">
                                 <div class="select round ease-form">
-                                    <svg class="icon"><use href="#angle-down"></use></svg>
+                                    <svg class="icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
                                         <option>First</option>
@@ -866,7 +866,7 @@
                             </div>
                             <div class="col-2 col-xs-4">
                                 <div class="select round border-dual ease-form">
-                                    <svg class="icon"><use href="#angle-down"></use></svg>
+                                    <svg class="icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
                                         <option>First</option>
@@ -890,7 +890,7 @@
                             </div>
                             <div class="col-2 col-xs-4">
                                 <div class="select circle ease-form">
-                                    <svg class="icon"><use href="#angle-down"></use></svg>
+                                    <svg class="icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
                                         <option>First</option>
@@ -914,7 +914,7 @@
                             </div>
                             <div class="col-2 col-xs-4">
                                 <div class="select circle border-dual ease-form">
-                                    <svg class="icon"><use href="#angle-down"></use></svg>
+                                    <svg class="icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
                                         <option>First</option>
@@ -939,7 +939,7 @@
 
                             <div class="col-100">
                                 <div class="select round ease-form">
-                                    <svg class="icon"><use href="#angle-down"></use></svg>
+                                    <svg class="icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
                                         <option>First</option>
@@ -974,7 +974,7 @@
                             </div>
                             <div class="col-100">
                                 <div class="select round ease-form">
-                                    <svg class="icon"><use href="#angle-down"></use></svg>
+                                    <svg class="icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
                                         <option>First</option>
@@ -997,7 +997,7 @@
 
                             <div class="col-100">
                                 <div class="select round ease-form">
-                                    <svg class="icon"><use href="#angle-down"></use></svg>
+                                    <svg class="icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
                                         <option>First</option>
@@ -1014,7 +1014,7 @@
                             </div>
                             <div class="col-100">
                                 <div class="select round ease-form">
-                                    <svg class="icon"><use href="#angle-down"></use></svg>
+                                    <svg class="icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
                                         <option>First</option>
@@ -1030,7 +1030,7 @@
 
                             <div class="col-100">
                                 <div class="select round border-dual ease-form">
-                                    <svg class="icon"><use href="#angle-down"></use></svg>
+                                    <svg class="icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
                                         <option>First</option>
@@ -1065,7 +1065,7 @@
                             </div>
                             <div class="col-100">
                                 <div class="select round border-dual ease-form">
-                                    <svg class="icon"><use href="#angle-down"></use></svg>
+                                    <svg class="icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
                                         <option>First</option>
@@ -1100,7 +1100,7 @@
                             </div>
                             <div class="col-100">
                                 <div class="select circle border-dual ease-form">
-                                    <svg class="icon"><use href="#angle-down"></use></svg>
+                                    <svg class="icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
                                         <option>First</option>
@@ -1123,7 +1123,7 @@
                             </div>
                             <div class="col-100">
                                 <div class="select circle border-dual ease-form">
-                                    <svg class="icon"><use href="#angle-down"></use></svg>
+                                    <svg class="icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
                                         <option>First</option>
@@ -1133,7 +1133,7 @@
                             </div>
                             <div class="col-100">
                                 <div class="select circle border-dual ease-form">
-                                    <svg class="icon"><use href="#angle-down"></use></svg>
+                                    <svg class="icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
                                         <option>First</option>
@@ -1149,7 +1149,7 @@
 
                             <div class="col-100">
                                 <div class="select circle border-dual ease-form">
-                                    <svg class="icon"><use href="#angle-down"></use></svg>
+                                    <svg class="icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
                                         <option>First</option>
@@ -1166,7 +1166,7 @@
                             </div>
                             <div class="col-100">
                                 <div class="select circle border-dual ease-form">
-                                    <svg class="icon"><use href="#angle-down"></use></svg>
+                                    <svg class="icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
                                         <option>First</option>
@@ -1205,12 +1205,12 @@
                             </div>
                             <div class="col-32">
                                 <button class="spinner-b btn btn-square btn-ghost border-dual round ease-btn">
-                                    <svg class="icon"><use href="#minus"></use></svg>
+                                    <svg class="icon"><use href="#minus"/></svg>
                                 </button>
                             </div>
                             <div class="col-32">
                                 <button class="spinner-t btn btn-square btn-ghost border-dual round ease-btn">
-                                    <svg class="icon"><use href="#plus"></use></svg>
+                                    <svg class="icon"><use href="#plus"/></svg>
                                 </button>
                             </div>
 
@@ -1225,7 +1225,7 @@
 
                             <div class="col-32">
                                 <button class="currency-down btn btn-square btn-ghost border-dual round ease-btn">
-                                    <svg class="icon"><use href="#minus"></use></svg>
+                                    <svg class="icon"><use href="#minus"/></svg>
                                 </button>
                             </div>
                             <div class="row no-row-gap">
@@ -1237,7 +1237,7 @@
                             </div>
                             <div class="col-32">
                                 <button class="currency-up btn btn-square btn-ghost border-dual round ease-btn">
-                                    <svg class="icon"><use href="#plus"></use></svg>
+                                    <svg class="icon"><use href="#plus"/></svg>
                                 </button>
                             </div>
 
@@ -1250,7 +1250,7 @@
                     <div class="col-9">
                         <div class="text text-icon round border-dual ease-form">
                             <button type="button" title="Toggle Password" class="show-pass">
-                                <svg class="icon"><use href="#eye-fill"></use></svg>
+                                <svg class="icon"><use href="#eye-fill"/></svg>
                             </button>
                             <input type="password" placeholder="Toggle Password Example" autocomplete="current-password">
                         </div>
@@ -1331,7 +1331,7 @@
                             </div>
                             <div class="col-9">
                                 <div class="select round border-dual ease-form">
-                                    <svg class="icon"><use href="#angle-down"></use></svg>
+                                    <svg class="icon"><use href="#angle-down"/></svg>
                                     <select class="required">
                                         <option value="">Select</option>
                                         <option>First</option>
@@ -1357,7 +1357,7 @@
                                     </div>
                                     <div class="col-200">
                                         <div class="select round border-dual ease-form">
-                                            <svg class="icon"><use href="#angle-down"></use></svg>
+                                            <svg class="icon"><use href="#angle-down"/></svg>
                                             <select class="required">
                                                 <option value="">Category</option>
                                                 <option>First</option>
@@ -1526,7 +1526,7 @@
                         <input type="text" placeholder="Placeholder">
                     </div>
                     <div class="text text-icon form-light margin-10-b round border-dual ease-form">
-                        <svg class="icon"><use href="#search"></use></svg>
+                        <svg class="icon"><use href="#search"/></svg>
                         <input type="text" placeholder="With text icon">
                     </div>
                     <div class="text error form-light margin-10-b round border-dual ease-form">
@@ -1587,7 +1587,7 @@
                         </div>
                         <div class="col-2">
                             <div class="select round border-dual form-light ease-form">
-                                <svg class="icon"><use href="#angle-down"></use></svg>
+                                <svg class="icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="">Select</option>
                                     <option>First</option>
@@ -1611,7 +1611,7 @@
                         </div>
                         <div class="col-2">
                             <div class="select round border-dual form-light ease-form">
-                                <svg class="icon"><use href="#angle-down"></use></svg>
+                                <svg class="icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="">Select</option>
                                     <option>First</option>
@@ -1635,7 +1635,7 @@
                         </div>
                         <div class="col-2">
                             <div class="select round border-dual form-light ease-form">
-                                <svg class="icon"><use href="#angle-down"></use></svg>
+                                <svg class="icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="">Select</option>
                                     <option>First</option>
@@ -1681,7 +1681,7 @@
 
                         <div class="text text-icon form-light margin-10-b round border-dual ease-form">
                             <button type="submit">
-                                <svg class="icon"><use href="#search"></use></svg>
+                                <svg class="icon"><use href="#search"/></svg>
                             </button>
                             <input class="required" type="text" placeholder="Required example with text icon post">
                         </div>
@@ -1717,7 +1717,7 @@
                             <input type="text" placeholder="Warning Form">
                         </div>
                         <div class="select margin-10-b">
-                            <svg class="icon"><use href="#angle-down"></use></svg>
+                            <svg class="icon"><use href="#angle-down"/></svg>
                             <select>
                                 <option value="">Select</option>
                                 <option>First</option>
@@ -1771,7 +1771,7 @@
                             <input type="text" placeholder="Warning Form">
                         </div>
                         <div class="select margin-10-b shadow-in no-border">
-                            <svg class="icon"><use href="#angle-down"></use></svg>
+                            <svg class="icon"><use href="#angle-down"/></svg>
                             <select>
                                 <option value="">Select</option>
                                 <option>First</option>
@@ -1825,7 +1825,7 @@
                             <input type="text" placeholder="Warning Form">
                         </div>
                         <div class="select margin-10-b round no-border ui-x-light">
-                            <svg class="icon"><use href="#angle-down"></use></svg>
+                            <svg class="icon"><use href="#angle-down"/></svg>
                             <select>
                                 <option value="">Select</option>
                                 <option>First</option>

@@ -78,8 +78,8 @@
         <div class="row theme-default2 form-lg ui-border border-t border-dual">
             <div class="col-12">
                 <button title="Toggle Theme" data-tooltip class="btn-toggle-color btn btn-square round icons-no-opacity right ease-btn">
-                    <svg class="icon visible-dark"><use href="#moon-fill"></use></svg>
-                    <svg class="icon visible-light"><use href="#sun-fill"></use></svg>
+                    <svg class="icon visible-dark"><use href="#moon-fill"/></svg>
+                    <svg class="icon visible-light"><use href="#sun-fill"/></svg>
                 </button>
                 <a href="index.php" class="btn btn-square circle margin-10-r ease-btn">
                     <svg class="icon icon-hybrid no-opacity"><use href="#long-arrow-left"/></svg>
@@ -99,8 +99,8 @@
 ?>
 
 <button title="Toggle Theme" data-tooltip class="btn-toggle-color btn btn-lg btn-square round-l icons-no-opacity ease-btn set-fixed set-r set-cy">
-    <svg class="icon visible-dark"><use href="#moon-fill"></use></svg>
-    <svg class="icon visible-light"><use href="#sun-fill"></use></svg>
+    <svg class="icon visible-dark"><use href="#moon-fill"/></svg>
+    <svg class="icon visible-light"><use href="#sun-fill"/></svg>
 </button>
 <?php
     } else {
@@ -115,8 +115,8 @@
                 <div class="row form-lg">
                     <div class="col-12 align-r padding-15-r icons-no-opacity ease-1st-btn">
                         <button title="Toggle Theme" data-tooltip class="btn-toggle-color btn btn-square round">
-                            <svg class="icon visible-dark"><use href="#moon-fill"></use></svg>
-                            <svg class="icon visible-light"><use href="#sun-fill"></use></svg>
+                            <svg class="icon visible-dark"><use href="#moon-fill"/></svg>
+                            <svg class="icon visible-light"><use href="#sun-fill"/></svg>
                         </button>
                         <a title="GitHub" href="https://github.com/aeminyuce/UILab/" class="btn btn-square round" target="_blank">
                             <svg class="icon"><use href="#github"/></svg>

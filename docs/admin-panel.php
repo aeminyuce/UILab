@@ -14,21 +14,21 @@
                     <div class="align-c padding-10-v">
                         <div class="padding-10 set-absolute set-t set-l ease-1st-btn">
                             <button class="btn btn-ghost btn-square round show-mobile-menu-l visible-md">
-                                <svg class="icon"><use href="#bars-left"></use></svg>
+                                <svg class="icon"><use href="#bars-left"/></svg>
                             </button>
                             <button class="btn btn-ghost round" data-notifier data-tooltip="r" title="Show messages">
-                                <svg class="icon"><use href="#bell-on"></use></svg>
+                                <svg class="icon"><use href="#bell-on"/></svg>
                             </button>
                         </div>
                         <div class="dropdown margin-10 set-absolute set-t set-r ease-dropdown">
                             <button class="btn btn-ghost round" data-tooltip="r" data-only="desktop" title="Settings">
-                                <svg class="icon"><use href="#settings"></use></svg>
+                                <svg class="icon"><use href="#settings"/></svg>
                             </button>
                             <ul class="content icons-margin-10-r round shadow-lg">
-                                <li><a href="#"><svg class="icon"><use href="#user"></use></svg>Show Profile</a></li>
-                                <li><a href="#"><svg class="icon"><use href="#image"></use></svg>Change Profile Photo</a></li>
-                                <li><a href="#"><svg class="icon"><use href="#key"></use></svg>Change Password</a></li>
-                                <li><a href="#"><svg class="icon"><use href="#sign-out"></use></svg>Log Out</a></li>
+                                <li><a href="#"><svg class="icon"><use href="#user"/></svg>Show Profile</a></li>
+                                <li><a href="#"><svg class="icon"><use href="#image"/></svg>Change Profile Photo</a></li>
+                                <li><a href="#"><svg class="icon"><use href="#key"/></svg>Change Password</a></li>
+                                <li><a href="#"><svg class="icon"><use href="#sign-out"/></svg>Log Out</a></li>
                             </ul>
                         </div>
                         <div class="padding-10 circle inline-block theme-gray ui-light">
@@ -42,7 +42,7 @@
                         <span class="dark">Supervisor</span>
                         <div class="countdown x-large margin-10-t">
                             <div data-tooltip title="Idle time">
-                                <svg class="icon icon-sm x-dark margin-3-r"><use href="#clock"></use></svg>
+                                <svg class="icon icon-sm x-dark margin-3-r"><use href="#clock"/></svg>
                                 <span class="x-dark inline-block">
                                     <span class="h">00</span>:<span class="m">59</span>:<span class="s">59</span>
                                 </span>
@@ -56,37 +56,37 @@
                     <ul class="list-unstyled list-spacer-20 align-l icons-margin-10-r block-2nd ease-2nd-button add-mobile-menu-l">
                         <li>
                             <a class="btn btn-ghost border-r border-lg ui-border" href="#">
-                                <svg class="icon"><use href="#chart-pie"></use></svg>
+                                <svg class="icon"><use href="#chart-pie"/></svg>
                                 Dashboard
                             </a>
                         </li>
                         <li>
                             <a class="btn btn-ghost btn-ghost-border border-r border-lg ui-border" href="#">
-                                <svg class="icon"><use href="#users"></use></svg>
+                                <svg class="icon"><use href="#users"/></svg>
                                 Employees
                             </a>
                         </li>
                         <li>
                             <a class="btn btn-ghost btn-ghost-border border-r border-lg ui-border" href="#">
-                                <svg class="icon"><use href="#moneys"></use></svg>
+                                <svg class="icon"><use href="#moneys"/></svg>
                                 Payments
                             </a>
                         </li>
                         <li>
                             <a class="btn btn-ghost btn-ghost-border border-r border-lg ui-border" href="#">
-                                <svg class="icon"><use href="#calendar-days"></use></svg>
+                                <svg class="icon"><use href="#calendar-days"/></svg>
                                 Events
                             </a>
                         </li>
                         <li>
                             <a class="btn btn-ghost btn-ghost-border border-r border-lg ui-border" href="#">
-                                <svg class="icon"><use href="#docs"></use></svg>
+                                <svg class="icon"><use href="#docs"/></svg>
                                 Documents
                             </a>
                         </li>
                         <li>
                             <a class="btn margin-5-b btn-ghost btn-ghost-border border-r border-lg ui-border" href="#">
-                                <svg class="icon"><use href="#clipboard-list"></use></svg>
+                                <svg class="icon"><use href="#clipboard-list"/></svg>
                                 Lists
                             </a>
                         </li>
@@ -98,7 +98,7 @@
                     <button class="close-card ease-btn">
                         <svg class="icon"><use href="#remove"/></svg>
                     </button>
-                    <svg class="icon margin-10-r"><use href="#help"></use></svg>
+                    <svg class="icon margin-10-r"><use href="#help"/></svg>
                     <b>System Tips</b>
                     <div class="x-dark large no-line-height margin-5-t margin-15-b">You can backup your stats weekly.</div>
                     <button class="btn block circle theme-green ui-dark ease-btn"><b>Got it!</b></button>
