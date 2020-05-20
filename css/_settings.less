@@ -164,7 +164,7 @@
     color: @@var;
 }
 ._color-var (@var) when (@dark-mode = true) {
-    color: @@var;
+    color: @@var; // fallback
     color: ~'var(--@{var})';
 }
 
@@ -172,7 +172,7 @@
     background-color: @@var;
 }
 ._bg-var (@var) when (@dark-mode = true) {
-    background-color: @@var;
+    background-color: @@var; // fallback
     background-color: ~'var(--@{var})';
 }
 
@@ -180,7 +180,7 @@
     background-image: @@var;
 }
 ._gradient-var (@var) when (@dark-mode = true) {
-    background-image: @@var;
+    background-image: @@var; // fallback
     background-image: ~'var(--@{var})';
 }
 
@@ -188,7 +188,7 @@
     border-color: @@var;
 }
 ._border-color-var (@var: border-color) when (@dark-mode = true) {
-    border-color: @@var;
+    border-color: @@var; // fallback
     border-color: ~'var(--@{var})';
 }
 
@@ -196,7 +196,7 @@
     @{dir}: @style @width @@var;
 }
 ._border-var (@dir: border; @style: solid; @width: 1px; @var: border-color) when (@dark-mode = true) {
-    @{dir}: @style @width @@var;
+    @{dir}: @style @width @@var; // fallback
     @{dir}: @style @width ~'var(--@{var})';
 }
 
@@ -204,7 +204,7 @@
     box-shadow: @h @v @blur @spread @@var;
 }
 ._shadow-var (@h: 0; @v: 0; @blur: 0; @spread: 0; @var: border-color) when (@dark-mode = true) {
-    box-shadow: @h @v @blur @spread @@var;
+    box-shadow: @h @v @blur @spread @@var; // fallback
     box-shadow: @h @v @blur @spread ~'var(--@{var})';
 }
 
@@ -212,7 +212,7 @@
     fill: @@var;
 }
 ._fill-var (@var) when (@dark-mode = true) {
-    fill: @@var;
+    fill: @@var; // fallback
     fill: ~'var(--@{var})';
 }
 
@@ -220,7 +220,7 @@
     stroke: @@var;
 }
 ._stroke-var (@var) when (@dark-mode = true) {
-    stroke: @@var;
+    stroke: @@var; // fallback
     stroke: ~'var(--@{var})';
 }
 
@@ -229,7 +229,8 @@
     @number: unit(@size / 7);
     @viewport: ~'@{number}vw';
 
-    font-size: @size; font-size: clamp(@size / 2, @size, @viewport); // clamp(min, val, max)
+    font-size: @size; // fallback
+    font-size: clamp(@size / 2, @size, @viewport); // clamp(min, val, max)
 }
 
 // icon mixins
