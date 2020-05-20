@@ -224,6 +224,14 @@
     stroke: ~'var(--@{var})';
 }
 
+// font mixins
+._font-scale (@size) {
+    @number: unit(@size / 7);
+    @viewport: ~'@{number}vw';
+
+    font-size: @size; font-size: clamp(@size / 2, @size, @viewport); // clamp(min, val, max)
+}
+
 // icon mixins
 ._icon-size(@size) {
     width: @size; height: @size;

@@ -3598,12 +3598,15 @@ a {
 }
 .largest {
   font-size: 28px !important;
+  font-size: clamp(14px, 28px, 4vw) !important;
 }
 .x-largest {
   font-size: 38px !important;
+  font-size: clamp(19px, 38px, 5.428571428571429vw) !important;
 }
 .xx-largest {
   font-size: 48px !important;
+  font-size: clamp(24px, 48px, 6.857142857142857vw) !important;
 }
 h1,
 h2,
@@ -3653,12 +3656,15 @@ h3 {
 }
 h1 {
   font-size: 36px;
+  font-size: clamp(18px, 36px, 5.142857142857143vw);
 }
 h2 {
   font-size: 30px;
+  font-size: clamp(15px, 30px, 4.285714285714286vw);
 }
 h3 {
   font-size: 24px;
+  font-size: clamp(12px, 24px, 3.4285714285714284vw);
 }
 h4 {
   font-size: 18px;
