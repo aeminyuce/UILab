@@ -207,7 +207,9 @@ var dropdown = {};
             target.insertAdjacentHTML('beforeend', this.innerHTML);
 
             input = selector('input', target)[0];
-            input.parentNode.removeChild(input);
+            if (input !== undefined) {
+                input.parentNode.removeChild(input);
+            }
 
             events.removeClass(selector('.selected', p), 'selected');
             events.addClass(this.parentNode, 'selected');
