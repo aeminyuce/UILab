@@ -3,9 +3,9 @@
 
 
 @tabs-toggle-icon-size:                 14px;
-@tabs-right-toggle-icon-margins:        4px;
+@tabs-toggle-right-icon-margins:        4px;
 
-@tabs-content-open-slide:               -1%;
+@tabs-content-open-y-slide:             -1%;
 
 .ease-tabs {
     .toggle-icon { transition-property: opacity, transform; transition-duration: @ease-default * 2; }
@@ -17,7 +17,7 @@
         .toggle-icon {
             ._icon(@tabs-toggle-icon-size) !important; margin-top: -1px;
 
-            &.right { margin-top: @tabs-right-toggle-icon-margins; margin-bottom: @tabs-right-toggle-icon-margins; }
+            &.right { margin-top: @tabs-toggle-right-icon-margins; margin-bottom: @tabs-toggle-right-icon-margins; }
         }
 
         &.active {
@@ -28,7 +28,7 @@
             transform-origin: top center;
 
             &:not(.open) { display: none !important; }
-            &:not(.open-ease) { opacity: 0; transform: translateY(@tabs-content-open-slide); }
+            &:not(.open-ease) { opacity: 0; transform: translateY(@tabs-content-open-y-slide); }
         }
     }
 }

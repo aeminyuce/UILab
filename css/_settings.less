@@ -23,6 +23,8 @@
 @x-largest:                             38px;
 @xx-largest:                            48px;
 
+@font-scaling:                          true; // responsive scaling for largest font sizes
+
 // global options
 @dark-mode:                             true;
 @dark-mode-auto-switcher:               false;
@@ -225,8 +227,11 @@
 }
 
 // font mixins
-._font-scale (@size) {
-    @number: unit(@size / 7);
+._font-scale (@size) when (@font-scaling = false) {
+    font-size: @size; // fallback
+}
+._font-scale (@size) when (@font-scaling = true) {
+    @number: round(unit(@size / 7));
     @viewport: ~'@{number}vw';
 
     font-size: @size; // fallback
