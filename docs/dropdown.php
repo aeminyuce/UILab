@@ -12,14 +12,14 @@
                                 <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                             </button>
                             <ul class="content round shadow-lg">
-                                <li><a href="#">Dropdown Link</a></li>
-                                <li><a href="#">Dropdown Link</a></li>
-                                <li><a href="#">Dropdown Link</a></li>
-                                <li><a href="#">Dropdown Link</a></li>
-                                <li><a href="#">Dropdown Link</a></li>
-                                <li><a href="#">Dropdown Link</a></li>
-                                <li><a href="#">Dropdown Link</a></li>
-                                <li><a href="#">Dropdown Link</a></li>
+                                <li>Dropdown Item</li>
+                                <li>Dropdown Item</li>
+                                <li>Dropdown Item</li>
+                                <li>Dropdown Item</li>
+                                <li>Dropdown Item</li>
+                                <li>Dropdown Item</li>
+                                <li>Dropdown Item</li>
+                                <li>Dropdown Item</li>
                             </ul>
                         </div>
                     </div>
