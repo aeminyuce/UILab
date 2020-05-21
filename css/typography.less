@@ -48,29 +48,29 @@
 body,a { ._color-var(black); }
 
 .xx-light {
-    &,& .icon:not([class*="ui-"]),& a:not([class*="ui-"]),& button:not([class*="ui-"]) { color: @white !important; }
+    &,.icon:not([class*="ui-"]),a:not([class*="ui-"]),button:not([class*="ui-"]) { color: @white !important; }
 }
 .x-light {
-    &,& .icon:not([class*="ui-"]),& a:not([class*="ui-"]),& button:not([class*="ui-"]) { color: @x-light !important; }
+    &,.icon:not([class*="ui-"]),a:not([class*="ui-"]),button:not([class*="ui-"]) { color: @x-light !important; }
 }
 .light {
-    &,& .icon:not([class*="ui-"]),& a:not([class*="ui-"]),& button:not([class*="ui-"]) { color: @light !important; }
+    &,.icon:not([class*="ui-"]),a:not([class*="ui-"]),button:not([class*="ui-"]) { color: @light !important; }
 }
 
 .dark {
-    &,& .icon:not([class*="ui-"]),& a:not([class*="ui-"]),& button:not([class*="ui-"]) { ._color-var(dark); }
+    &,.icon:not([class*="ui-"]),a:not([class*="ui-"]),button:not([class*="ui-"]) { ._color-var(dark); }
 }
 .x-dark {
-    &,& .icon:not([class*="ui-"]),& a:not([class*="ui-"]),& button:not([class*="ui-"]) { ._color-var(x-dark); }
+    &,.icon:not([class*="ui-"]),a:not([class*="ui-"]),button:not([class*="ui-"]) { ._color-var(x-dark); }
 }
 .xx-dark {
-    &,& .icon:not([class*="ui-"]),& a:not([class*="ui-"]),& button:not([class*="ui-"]) { ._color-var(black); }
+    &,.icon:not([class*="ui-"]),a:not([class*="ui-"]),button:not([class*="ui-"]) { ._color-var(black); }
 }
 
 .font- {
     each(@font-colors, {
         &@{value} {
-            &,& .icon:not([class*="ui-"]),& a:not([class*="ui-"]),& button:not([class*="ui-"]) { color: @@value !important; }
+            &,.icon:not([class*="ui-"]),a:not([class*="ui-"]),button:not([class*="ui-"]) { color: @@value !important; }
         }
     });
 
@@ -104,8 +104,8 @@ h1,h2,h3,h4,h5,h6 {
 
     &:not(:last-child) { margin-bottom: @highlight-space; }
     & > small { font-size: @font-size !important; }
-    & .icon:not(.right) { margin-right: @heading-icon-right; }
-    & .icon-lg:not(.right) { margin-right: @heading-icon-right * 2; }
+    .icon:not(.right) { margin-right: @heading-icon-right; }
+    .icon-lg:not(.right) { margin-right: @heading-icon-right * 2; }
 }
 
 h1,h2,h3 { line-height: 1; }

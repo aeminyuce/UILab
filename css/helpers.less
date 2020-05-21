@@ -232,7 +232,7 @@ html:not(.mobile) {
 .list-custom,.list-inline {
     list-style: none; padding: 0; margin-bottom: 0;
 
-    & ul,& ol { &:extend(.list-custom); }
+    ul,ol { &:extend(.list-custom); }
 }
 
 .list-unstyled {
@@ -241,7 +241,7 @@ html:not(.mobile) {
 }
 
 .list-inline {
-    & ul,& ol,& li { vertical-align: middle; display: inline-block; }
+    ul,ol,li { vertical-align: middle; display: inline-block; }
 }
 
 [class*="sp-"] { width: 100%; .visible(); clear: both !important; }
@@ -259,17 +259,17 @@ each(@increases, {
 .align-r {
     text-align: right !important;
 
-    &,& * { &:extend(.align-r); }
+    * { &:extend(.align-r); }
 }
 .align-l {
     text-align: left !important;
 
-    & * { &:extend(.align-l); }
+    * { &:extend(.align-l); }
 }
 .align-c {
     text-align: center !important;
 
-    & * { &:extend(.align-c); }
+    * { &:extend(.align-c); }
 }
 
 @media print {
@@ -297,13 +297,13 @@ each(@increases, {
 
     .md-align- {
         &c {
-            &,& * { .align-c(); }
+            &,* { .align-c(); }
         }
         &l {
-            &,& * { .align-l(); }
+            &,* { .align-l(); }
         }
         &r {
-            &,& * { .align-r(); }
+            &,* { .align-r(); }
         }
     }
 }
@@ -327,13 +327,13 @@ each(@increases, {
 
     .md-align-,.sm-align- {
         &c {
-            &,& * { .align-c(); }
+            &,* { .align-c(); }
         }
         &l {
-            &,& * { .align-l(); }
+            &,* { .align-l(); }
         }
         &r {
-            &,& * { .align-r(); }
+            &,* { .align-r(); }
         }
     }
 
@@ -354,13 +354,13 @@ each(@increases, {
 
     .md-align-,.sm-align-,.xs-align- {
         &c {
-            &,& * { .align-c(); }
+            &,* { .align-c(); }
         }
         &l {
-            &,& * { .align-l(); }
+            &,* { .align-l(); }
         }
         &r {
-            &,& * { .align-r(); }
+            &,* { .align-r(); }
         }
     }
 }
@@ -370,13 +370,13 @@ each(@increases, {
 
     .lg-align- {
         &c {
-            &,& * { .align-c(); }
+            &,* { .align-c(); }
         }
         &l {
-            &,& * { .align-l(); }
+            &,* { .align-l(); }
         }
         &r {
-            &,& * { .align-r(); }
+            &,* { .align-r(); }
         }
     }
 }
@@ -389,13 +389,13 @@ each(@increases, {
 
     .xl-align- {
         &c {
-            &,& * { .align-c(); }
+            &,* { .align-c(); }
         }
         &l {
-            &,& * { .align-l(); }
+            &,* { .align-l(); }
         }
         &r {
-            &,& * { .align-r(); }
+            &,* { .align-r(); }
         }
     }
 }

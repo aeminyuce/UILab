@@ -71,10 +71,10 @@
 }
 
 .no-effects {
-    &,&:before,&:after,& *,& *:before,& *:after { transition-property: none !important; animation: none !important; }
+    &,&:before,&:after,*,*:before,*:after { transition-property: none !important; animation: none !important; }
 }
 .pause-effects {
-    &,&:before,&:after,& *,& *:before,& *:after { transition-property: none !important;  animation-play-state: paused !important; }
+    &,&:before,&:after,*,*:before,*:after { transition-property: none !important;  animation-play-state: paused !important; }
 }
 
 & when (@reduced-motion = true) {

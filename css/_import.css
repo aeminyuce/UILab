@@ -652,8 +652,6 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
   white-space: nowrap !important;
 }
 .align-r,
-.align-r,
-.align-r *,
 .align-r * {
   text-align: right !important;
 }

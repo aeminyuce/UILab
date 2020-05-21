@@ -37,7 +37,7 @@ html:not(.mobile) .theme-farmer.ui-x-dark.hover:hover,
 html:not(.mobile) .theme-farmer .ui-x-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-farmer.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-farmer .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #bf8800;
+  background-color: #595959;
 }
 .theme-farmer.ui-text,
 .theme-farmer .ui-text:not([class*="theme-"]) {
@@ -85,7 +85,7 @@ html:not(.mobile) .theme-farmer2.ui-x-dark.hover:hover,
 html:not(.mobile) .theme-farmer2 .ui-x-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-farmer2.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-farmer2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #0b9339;
+  background-color: #595959;
 }
 .theme-farmer2.ui-text,
 .theme-farmer2 .ui-text:not([class*="theme-"]) {
