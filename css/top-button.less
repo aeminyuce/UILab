@@ -20,15 +20,14 @@
 
         &-ease { opacity: @top-button-opacity; transform: translateY(@top-button-slide-size); }
     }
-
     .icon { color: @white; opacity: 1 !important; }
-}
 
-html:not(.mobile) {
-    .top-button:hover {
-        opacity: @top-button-hover-opacity;
+    html:not(.mobile) & {
+        &:hover {
+            opacity: @top-button-hover-opacity;
 
-        .icon { transform: translateY(@top-button-hover-icon-slide); }
+            .icon { transform: translateY(@top-button-hover-icon-slide); }
+        }
     }
 }
 

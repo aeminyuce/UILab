@@ -707,15 +707,21 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
     display: block;
   }
   .md-align-c,
-  .md-align-c * {
+  .md-align-c *,
+  .md-align-c *,
+  .md-align-c * * {
     text-align: center !important;
   }
   .md-align-l,
-  .md-align-l * {
+  .md-align-l *,
+  .md-align-l *,
+  .md-align-l * * {
     text-align: left !important;
   }
   .md-align-r,
-  .md-align-r * {
+  .md-align-r *,
+  .md-align-r *,
+  .md-align-r * * {
     text-align: right !important;
   }
 }
@@ -750,19 +756,31 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
   .md-align-c,
   .sm-align-c,
   .md-align-c *,
-  .sm-align-c * {
+  .sm-align-c *,
+  .md-align-c *,
+  .sm-align-c *,
+  .md-align-c * *,
+  .sm-align-c * * {
     text-align: center !important;
   }
   .md-align-l,
   .sm-align-l,
   .md-align-l *,
-  .sm-align-l * {
+  .sm-align-l *,
+  .md-align-l *,
+  .sm-align-l *,
+  .md-align-l * *,
+  .sm-align-l * * {
     text-align: left !important;
   }
   .md-align-r,
   .sm-align-r,
   .md-align-r *,
-  .sm-align-r * {
+  .sm-align-r *,
+  .md-align-r *,
+  .sm-align-r *,
+  .md-align-r * *,
+  .sm-align-r * * {
     text-align: right !important;
   }
 }
@@ -795,7 +813,13 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
   .xs-align-c,
   .md-align-c *,
   .sm-align-c *,
-  .xs-align-c * {
+  .xs-align-c *,
+  .md-align-c *,
+  .sm-align-c *,
+  .xs-align-c *,
+  .md-align-c * *,
+  .sm-align-c * *,
+  .xs-align-c * * {
     text-align: center !important;
   }
   .md-align-l,
@@ -803,7 +827,13 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
   .xs-align-l,
   .md-align-l *,
   .sm-align-l *,
-  .xs-align-l * {
+  .xs-align-l *,
+  .md-align-l *,
+  .sm-align-l *,
+  .xs-align-l *,
+  .md-align-l * *,
+  .sm-align-l * *,
+  .xs-align-l * * {
     text-align: left !important;
   }
   .md-align-r,
@@ -811,7 +841,13 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
   .xs-align-r,
   .md-align-r *,
   .sm-align-r *,
-  .xs-align-r * {
+  .xs-align-r *,
+  .md-align-r *,
+  .sm-align-r *,
+  .xs-align-r *,
+  .md-align-r * *,
+  .sm-align-r * *,
+  .xs-align-r * * {
     text-align: right !important;
   }
 }
@@ -824,15 +860,21 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
     display: block;
   }
   .lg-align-c,
-  .lg-align-c * {
+  .lg-align-c *,
+  .lg-align-c *,
+  .lg-align-c * * {
     text-align: center !important;
   }
   .lg-align-l,
-  .lg-align-l * {
+  .lg-align-l *,
+  .lg-align-l *,
+  .lg-align-l * * {
     text-align: left !important;
   }
   .lg-align-r,
-  .lg-align-r * {
+  .lg-align-r *,
+  .lg-align-r *,
+  .lg-align-r * * {
     text-align: right !important;
   }
 }
@@ -849,15 +891,21 @@ html:not(.mobile) .hover-l-more-2nd > * > *:hover {
     float: none !important;
   }
   .xl-align-c,
-  .xl-align-c * {
+  .xl-align-c *,
+  .xl-align-c *,
+  .xl-align-c * * {
     text-align: center !important;
   }
   .xl-align-l,
-  .xl-align-l * {
+  .xl-align-l *,
+  .xl-align-l *,
+  .xl-align-l * * {
     text-align: left !important;
   }
   .xl-align-r,
-  .xl-align-r * {
+  .xl-align-r *,
+  .xl-align-r *,
+  .xl-align-r * * {
     text-align: right !important;
   }
 }
@@ -4794,7 +4842,7 @@ html:not(.mobile) .dropdown ul.content > li:hover {
   transition-property: width, height, background-color, transform, opacity;
   transition-duration: 0.15s;
 }
-.ease-form textarea,
+.ease-form select,
 .ease-1st-form > * select,
 .ease-2nd-form > * > * select {
   transition-property: opacity;
@@ -4823,35 +4871,43 @@ html:not(.mobile) .dropdown ul.content > li:hover {
   transition-duration: 0.15s;
 }
 .no-effects .ease-range::-webkit-slider-thumb {
-  transition-property: none;
+  transition-property: transform;
+  transition-duration: 0.15s;
 }
 .no-effects .ease-range::-moz-range-thumb {
-  transition-property: none;
+  transition-property: transform;
+  transition-duration: 0.15s;
 }
 .no-effects .ease-range::-webkit-slider-runnable-track {
-  transition-property: none;
+  transition-property: background-color;
+  transition-duration: 0.15s;
 }
 .no-effects .ease-range::-moz-range-track {
-  transition-property: none;
+  transition-property: background-color;
+  transition-duration: 0.15s;
 }
 @media (prefers-reduced-motion: reduce) {
   .ease-range::-webkit-slider-thumb {
-    transition-property: none;
+    transition-property: transform;
+    transition-duration: 0.15s;
   }
   .ease-range::-moz-range-thumb {
-    transition-property: none;
+    transition-property: transform;
+    transition-duration: 0.15s;
   }
   .ease-range::-webkit-slider-runnable-track {
-    transition-property: none;
+    transition-property: background-color;
+    transition-duration: 0.15s;
   }
   .ease-range::-moz-range-track {
-    transition-property: none;
+    transition-property: background-color;
+    transition-duration: 0.15s;
   }
 }
 .text,
-.textarea,
 .select,
-.select-multi {
+.select-multi,
+.textarea {
   border: solid 1px rgba(0, 0, 0, 0.15);
   border: solid 1px var(--border-color);
   overflow: hidden;
@@ -4904,20 +4960,20 @@ html:not(.mobile) .dropdown ul.content > li:hover {
   line-height: 22px;
   height: 30px;
 }
-.toggle-textarea.border-dual:not(.form-focus) textarea {
+.toggle-textarea:not(.form-focus).border-dual textarea {
   line-height: 18px;
   height: 28px;
 }
-.toggle-textarea.no-border:not(.form-focus) textarea {
+.toggle-textarea:not(.form-focus).no-border textarea {
   height: 32px;
 }
-.text.no-border input,
-.select.no-border select {
+.no-border.text input,
+.no-border.select select {
   line-height: 22px;
   height: 32px;
 }
-.text.border-dual input,
-.select.border-dual select {
+.border-dual.text input,
+.border-dual.select select {
   line-height: 18px;
   height: 28px;
 }
@@ -4934,13 +4990,6 @@ html:not(.mobile) .dropdown ul.content > li:hover {
   background-color: #fff;
   background-color: var(--highlighted);
 }
-.ie .select select:focus::-ms-value {
-  color: inherit;
-  background-color: transparent;
-}
-.ie .select select::-ms-expand {
-  display: none;
-}
 .select .icon {
   width: 12px;
   height: 12px;
@@ -4952,9 +5001,14 @@ html:not(.mobile) .dropdown ul.content > li:hover {
   transform: translateY(-50%);
   opacity: 0.45;
 }
-.mobile .select-multi {
-  padding: 5px;
+.ie .select select:focus::-ms-value {
+  color: inherit;
+  background-color: transparent;
 }
+.ie .select select::-ms-expand {
+  display: none;
+}
+.mobile .select-multi,
 .ie .select-multi {
   padding: 5px;
 }
@@ -5011,10 +5065,6 @@ html:not(.mobile) .dropdown ul.content > li:hover {
 .file.round .btn {
   border-radius: 3px 0 0 3px;
 }
-html:not(.mobile) .file:hover .btn {
-  background-color: rgba(0, 0, 0, 0.15);
-  background-color: var(--btn-hover-bg);
-}
 .file > span:not(.btn) {
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -5025,6 +5075,10 @@ html:not(.mobile) .file:hover .btn {
   overflow: hidden;
   display: block;
   position: absolute;
+}
+html:not(.mobile) .file:hover .btn {
+  background-color: rgba(0, 0, 0, 0.15);
+  background-color: var(--btn-hover-bg);
 }
 label.custom {
   min-height: 22px;

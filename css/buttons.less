@@ -102,10 +102,8 @@
     }
     &:not(.loading) .loading-spinner { opacity: 0 !important; }
     .loading-label { position: relative; z-index: 2; }
-}
 
-html:not(.mobile) {
-    .btn {
+    html:not(.mobile) & {
         &.ui-dark,&.ui-x-dark {
             &:hover .icon { opacity: 1 !important; }
         }
