@@ -492,7 +492,7 @@
 
                             <span class="sp-10 visible-sm"></span>
 
-                            <div class="select form-xs-inline round border-dual ease-form">
+                            <div class="select form-inline-xs round border-dual ease-form">
                                 <svg class="icon"><use href="#angle-down"></svg>
                                 <select class="data-filter" data-index="1">
                                     <option value="">Name</option>
@@ -502,7 +502,7 @@
                                     <option>Anna May</option>
                                 </select>
                             </div>
-                            <div class="select form-xs-inline round border-dual ease-form">
+                            <div class="select form-inline-xs round border-dual ease-form">
                                 <svg class="icon"><use href="#angle-down"></svg>
                                 <select class="data-filter" data-index="2" data-type="number">
                                     <option value="">Age</option>
@@ -511,7 +511,7 @@
                                     <option>29</option>
                                 </select>
                             </div>
-                            <div class="select form-xs-inline round border-dual ease-form">
+                            <div class="select form-inline-xs round border-dual ease-form">
                                 <svg class="icon"><use href="#angle-down"></svg>
                                 <select class="data-show">
                                     <option>5</option>

@@ -196,11 +196,11 @@
 
                 <h4>Autocomplete Forms</h4>
                 <div class="padding-30-b">
-                    <div data-src="json/countries.json" data-val="code" class="autocomplete text text-icon round border-dual ease-form form-xs-inline">
+                    <div data-src="json/countries.json" data-val="code" class="autocomplete text text-icon round border-dual ease-form form-inline-xs">
                         <svg class="icon"><use href="#keyboard-fill"/></svg>
                         <input type="text" placeholder="Country Code" autocomplete="off">
                     </div>
-                    <div data-src="json/countries.json" data-val="name" class="autocomplete text text-icon round border-dual ease-form form-xs-inline">
+                    <div data-src="json/countries.json" data-val="name" class="autocomplete text text-icon round border-dual ease-form form-inline-xs">
                         <svg class="icon"><use href="#keyboard-fill"/></svg>
                         <input type="text" placeholder="Country" autocomplete="off">
                     </div>
@@ -588,10 +588,10 @@
                     <span class="sp-15"></span>
 
                     <h5 class="dark">Responsive Inline Forms</h5>
-                    <div class="text margin-10-b round border-dual form-xs-inline ease-form">
+                    <div class="text margin-10-b round border-dual form-inline-xs ease-form">
                         <input type="text">
                     </div>
-                    <div class="select margin-10-b round border-dual form-xs-inline ease-form">
+                    <div class="select margin-10-b round border-dual form-inline-xs ease-form">
                         <svg class="icon"><use href="#angle-down"/></svg>
                         <select>
                             <option value="">Select</option>
@@ -599,7 +599,7 @@
                             <option>Second</option>
                         </select>
                     </div>
-                    <div class="textarea toggle-textarea margin-10-b round border-dual form-xs-inline ease-form">
+                    <div class="textarea toggle-textarea margin-10-b round border-dual form-inline-xs ease-form">
                         <textarea placeholder="Textarea"></textarea>
                     </div>
                 </div>
@@ -947,7 +947,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="row no-row-gap">
+                            <div class="row no-row-gap no-fluid">
                                 <div class="col-6">
                                     <div class="text round ease-form">
                                         <input type="text">
@@ -1038,7 +1038,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="row no-row-gap">
+                            <div class="row no-row-gap no-fluid">
                                 <div class="col-6">
                                     <div class="text round border-dual ease-form">
                                         <input type="text">
@@ -1086,7 +1086,7 @@
                     <div class="col-6">
                         <div class="form-holder col-static no-fluid">
 
-                            <div class="row no-row-gap">
+                            <div class="row no-row-gap no-fluid">
                                 <div class="col-6">
                                     <div class="text circle border-dual ease-form">
                                         <input type="text">
