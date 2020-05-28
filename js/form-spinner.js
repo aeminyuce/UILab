@@ -23,7 +23,7 @@ var spinnerForm = {};
                 max = input.getAttribute('max'),
                 min = input.getAttribute('min');
 
-            if (events.hasClass(this, 'spinner-up')) {
+            if (events.hasClass(this, 'spinner-t')) {
                 val += 1;
                 if (val >= max) { val = max; }
 
