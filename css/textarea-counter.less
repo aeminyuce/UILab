@@ -6,6 +6,9 @@
 @textarea-counter-bg:                  fade(@black, 3.5%);
 @textarea-counter-bg-dark:             fade(@white, 17.5%);
 
+@textarea-counter-error-bg:            fade(lighten(@red, 16%), 65%);
+@textarea-counter-warning-bg:          fade(lighten(@yellow, 16%), 65%);
+
 ._global-vars () {
     --textarea-counter-color: @textarea-counter-color;
     --textarea-counter-bg: @textarea-counter-bg;
@@ -20,7 +23,7 @@
 .textarea:not(.toggle-textarea)[data-counter].change:before { content: attr(data-change); }
 
 .textarea:not(.form-light):not(.toggle-textarea)[data-counter]:before,.textarea.form-focus:not(.toggle-textarea)[data-counter]:before { ._color-var(textarea-counter-color); ._bg-var(textarea-counter-bg); }
-.textarea.form-light:not(.toggle-textarea):not(.form-focus)[data-counter]:before { color: @white; ._bg-var(textarea-counter-bg); }
+.textarea.form-light:not(.toggle-textarea):not(.form-focus)[data-counter]:before { color: @white; background-color: @textarea-counter-bg-dark; }
 
-.error[data-counter]:before { color: @red !important; background-color: lighten(@red, 49%) !important; }
-.warning[data-counter]:before { color: @yellow !important; background-color: lighten(@yellow, 44%) !important; }
+.error[data-counter]:before { color: @white !important; background-color: @textarea-counter-error-bg !important; }
+.warning[data-counter]:before { color: @white !important; background-color: @textarea-counter-warning-bg !important; }
