@@ -19,12 +19,12 @@
   --dropdown-list-selected-bg: rgba(0, 0, 0, 0.075);
   --dropdown-list-hover-bg: rgba(0, 0, 0, 0.05);
   --dropdown-list-border: rgba(0, 0, 0, 0.045);
+  --form-focus-bg: rgba(0, 0, 0, 0.015);
+  --form-focus-border: rgba(0, 0, 0, 0.35);
   --select-multi-options-border: rgba(0, 0, 0, 0.045);
   --range-thumb-color: #8e9094;
   --range-track-bg: rgba(0, 0, 0, 0.08);
   --range-track-hover-bg: rgba(0, 0, 0, 0.15);
-  --form-focus-bg: rgba(0, 0, 0, 0.015);
-  --form-focus-border: rgba(0, 0, 0, 0.35);
   --placeholder-color: rgba(0, 0, 0, 0.4);
   --placeholder-focus-color: rgba(0, 0, 0, 0.23);
   --check-custom-bg: rgba(0, 0, 0, 0.65);
@@ -5013,7 +5013,7 @@ html:not(.mobile) .dropdown ul.content > li:hover {
   padding: 5px;
 }
 .select-multi select {
-  margin-bottom: -2px;
+  margin-bottom: -8px;
 }
 .edge .select-multi select {
   margin-bottom: -5px;
@@ -5098,9 +5098,9 @@ label.custom {
   display: inline-block;
   position: relative;
 }
-.check-custom i,
-.radio-custom i,
-.switch-custom i {
+.check-custom .state,
+.radio-custom .state,
+.switch-custom .state {
   content: "";
   width: 14px;
   height: 14px;
@@ -5126,63 +5126,63 @@ label.custom {
 .radio-custom {
   width: 22px;
 }
-.check-custom i,
-.radio-custom i {
+.check-custom .state,
+.radio-custom .state {
   background-color: rgba(0, 0, 0, 0.65);
   background-color: var(--check-custom-bg);
   opacity: 0;
 }
 .radio-custom,
 .switch-custom.round {
-  border-radius: 11px !important;
+  border-radius: 14px !important;
 }
-.radio-custom i,
-.switch-custom.round i {
+.radio-custom .state,
+.switch-custom.round .state {
   border-radius: 7px;
 }
-.radio-custom input:checked + i {
+.radio-custom input:checked + .state {
   opacity: 1;
 }
-.check-custom.round i {
+.check-custom.round .state {
   border-radius: 3px;
 }
 .check-custom input:checked + i,
-.check-custom input:indeterminate + i {
+.check-custom input:indeterminate + .state {
   opacity: 1;
 }
-.check-custom input:indeterminate + i {
+.check-custom input:indeterminate + .state {
   height: 4px;
 }
 .switch-custom {
   width: 44px;
 }
-.switch-custom input:checked + i {
+.switch-custom input:checked + .state {
   transform: translate(25%, -50%);
 }
-.switch-custom input:checked + i:not([class*="ui-"]) {
+.switch-custom input:checked + .state:not([class*="ui-"]) {
   background-color: #2dbd3a;
 }
-.switch-custom input:not(:checked) + i,
-.switch-custom input:not(:checked) + i[class*="ui-"] {
+.switch-custom input:not(:checked) + .state,
+.switch-custom input:not(:checked) + .state[class*="ui-"] {
   background-color: rgba(0, 0, 0, 0.15);
   background-color: var(--switch-custom-bg);
 }
-.switch-custom input:not(:indeterminate):not(:checked):not(:indeterminate) + i {
+.switch-custom input:not(:indeterminate):not(:checked):not(:indeterminate) + .state {
   transform: translate(-125%, -50%);
 }
-.switch-custom input:indeterminate + i {
+.switch-custom input:indeterminate + .state {
   background-color: #ffa600;
 }
-html:not(.mobile) .switch-custom:hover i {
+html:not(.mobile) .switch-custom:hover .state {
   width: 18px;
 }
-html:not(.mobile) .switch-custom:hover input:checked + i {
+html:not(.mobile) .switch-custom:hover input:checked + .state {
   transform: translate(0, -50%);
 }
-html:not(.mobile) .switch-custom:hover input:not(:checked) + i {
+html:not(.mobile) .switch-custom:hover input:not(:checked) + .state {
   transform: translate(-100%, -50%);
 }
-html:not(.mobile) .switch-custom:hover input:indeterminate + i {
+html:not(.mobile) .switch-custom:hover input:indeterminate + .state {
   transform: translate(-50%, -50%);
 }
 .range {
@@ -5585,14 +5585,14 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
 .form-lg .text input,
 .form-lg .select select {
   font-size: 16px;
-  line-height: 28px;
+  line-height: 32px;
   height: 42px;
   padding-right: 10px;
   padding-left: 10px;
 }
 .form-lg .text.no-border input,
 .form-lg .select.no-border select {
-  line-height: 28px;
+  line-height: 30px;
   height: 42px;
 }
 .form-lg .text.border-dual input,
@@ -5610,6 +5610,11 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
   stroke-width: 32px;
   right: 10px;
 }
+.form-lg [class*="text-icon"] .icon {
+  width: 20px;
+  height: 20px;
+  stroke-width: 32px;
+}
 .form-lg [class*="text-icon"] > button {
   right: 10px;
 }
@@ -5626,9 +5631,9 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + i {
   padding-left: 40px !important;
 }
 .form-lg .clear-form .icon {
-  width: 14px;
-  height: 14px;
-  stroke-width: 38px;
+  width: 20px;
+  height: 20px;
+  stroke-width: 32px;
 }
 .form-lg .file {
   height: 42px;
