@@ -22,13 +22,13 @@
 [class*="img-photo"]:not(img) { ._bg-var(img-photo-bg); display: inline-block; }
 [class*="img-photo"]:not(img) > span,[class*="img-photo"]:not(img) > svg { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
 
-.img-photo-lg { font-size: @largest - 4; width: 80px; height: 80px; }
+.img-photo-lg { font-size: @largest - 4; width: @photo-img-lg; height: @photo-img-lg; }
 .img-photo-lg .icon { ._icon(34px); }
 
-.img-photo { font-size: @large; width: 50px; height: 50px; }
+.img-photo { font-size: @large; width: @photo-img-default; height: @photo-img-default; }
 
-.img-photo-sm { font-size: @font-size; width: @btn-lg; height: @btn-lg; }
+.img-photo-sm { font-size: @font-size; width: @photo-img-sm; height: @photo-img-sm; }
 .img-photo-sm .icon { ._icon(18px); }
 
-.img-photo-xs { font-size: @small; width: @btn-default; height: @btn-default; }
+.img-photo-xs { font-size: @small; width: @photo-img-xs; height: @photo-img-xs; }
 .img-photo-xs .icon { ._icon(14px); }

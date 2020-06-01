@@ -1,6 +1,9 @@
 // out: false
 /* textarea counter */ @import '_settings.less';
 
+@textarea-counter-align:               right;
+@textarea-counter-height:              13px;
+
 @textarea-counter-color:               fade(@black, 45%);
 @textarea-counter-color-dark:          @white;
 @textarea-counter-bg:                  fade(@black, 3.5%);
@@ -18,12 +21,27 @@
     --textarea-counter-bg: @textarea-counter-bg-dark;
 }
 
-.textarea:not(.toggle-textarea)[data-counter]:before { content: attr(data-counter); font-size: @smallest; text-align: right; line-height: 12px; width: 100%; height: 13px; padding: 1px 5px; display: block; position: absolute; bottom: 0; left: 0; z-index: 1; }
-.textarea:not(.toggle-textarea)[data-counter] textarea { margin-bottom: 13px; }
-.textarea:not(.toggle-textarea)[data-counter].change:before { content: attr(data-change); }
+.textarea {
+    &:not(.toggle-textarea)[data-counter] {
+        &:before { content: attr(data-counter); font-size: @smallest; text-align: @textarea-counter-align; line-height: @textarea-counter-height - 1; width: 100%; height: @textarea-counter-height; padding: 1px @form-padding; display: block; position: absolute; bottom: 0; left: 0; z-index: 1; }
+        &:not(.form-light),&.form-focus {
+            &:before { ._color-var(textarea-counter-color); ._bg-var(textarea-counter-bg); }
+        }
+        &.form-light {
+            &:not(.form-focus) { color: @white; background-color: @textarea-counter-bg-dark; }
+        }
+        &.change {
+            &:before { content: attr(data-change); }
+        }
+        textarea { margin-bottom: @textarea-counter-height; }
+    }
+}
 
-.textarea:not(.form-light):not(.toggle-textarea)[data-counter]:before,.textarea.form-focus:not(.toggle-textarea)[data-counter]:before { ._color-var(textarea-counter-color); ._bg-var(textarea-counter-bg); }
-.textarea.form-light:not(.toggle-textarea):not(.form-focus)[data-counter]:before { color: @white; background-color: @textarea-counter-bg-dark; }
-
-.error[data-counter]:before { color: @white !important; background-color: @textarea-counter-error-bg !important; }
-.warning[data-counter]:before { color: @white !important; background-color: @textarea-counter-warning-bg !important; }
+[data-counter] {
+    &.error {
+        &:before { color: @white !important; background-color: @textarea-counter-error-bg !important; }
+    }
+    &.warning {
+        &:before { color: @white !important; background-color: @textarea-counter-warning-bg !important; }
+    }
+}

@@ -45,7 +45,9 @@
     &.circle { padding-right: @btn-default-padding + @btn-circle-extra-padding; padding-left: @btn-default-padding + @btn-circle-extra-padding; }
 
     input& { @no-appearance(); }
-    &[data-notifier]:after { content: attr(data-notifier); color: @white; font-size: @small; text-align: center !important; line-height: 1; min-width: @btn-notifier-size; min-height: @btn-notifier-size; background-color: @red; padding: @btn-notifier-size / 4 @btn-notifier-size / 2; border-radius: 200px; position: absolute; top: 0; left: 100%; z-index: 1; transform: translateX(-75%); }
+    &[data-notifier] {
+        &:after { content: attr(data-notifier); color: @white; font-size: @small; text-align: center !important; line-height: 1; min-width: @btn-notifier-size; min-height: @btn-notifier-size; background-color: @red; padding: @btn-notifier-size / 4 @btn-notifier-size / 2; border-radius: 200px; position: absolute; top: 0; left: 100%; z-index: 1; transform: translateX(-75%); }
+    }
 
     &.border {
         padding-top: @btn-default-padding - 1; padding-bottom: @btn-default-padding - 1;
