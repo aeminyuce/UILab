@@ -113,20 +113,69 @@
 
                 <span class="sp-30"></span>
 
+                <h4>List Groups with List Icons</h4>
+
                 <div class="list-group border round">
-                    <ul class="has-icon-xs ease-list-group">
+                    <ul class="has-icon-xxl ease-list-group">
                         <li>
                             <a href="#">
                                 <svg class="list-icon icon"><use href="#angle-right"/></svg>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                                Sed finibus rhoncus erat, vitae porttitor sem gravida et.<br>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <svg class="list-icon icon"><use href="#angle-right"/></svg>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                                Sed finibus rhoncus erat, vitae porttitor sem gravida et.<br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="list-icon icon"><use href="#angle-right"/></svg>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                                Sed finibus rhoncus erat, vitae porttitor sem gravida et.<br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <span class="sp-30"></span>
+
+                <div class="list-group border round">
+                    <ul class="has-icon-xl ease-list-group">
+                        <li>
+                            <a href="#">
+                                <svg class="list-icon icon"><use href="#angle-right"/></svg>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
                                 Sed finibus rhoncus erat, vitae porttitor sem gravida et.
                             </a>
                         </li>
+                        <li>
+                            <a href="#">
+                                <svg class="list-icon icon"><use href="#angle-right"/></svg>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                                Sed finibus rhoncus erat, vitae porttitor sem gravida et.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="list-icon icon"><use href="#angle-right"/></svg>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                                Sed finibus rhoncus erat, vitae porttitor sem gravida et.
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <span class="sp-30"></span>
+
+                <div class="list-group border round">
+                    <ul class="has-icon-lg ease-list-group">
                         <li>
                             <a href="#">
                                 <svg class="list-icon icon"><use href="#angle-right"/></svg>
@@ -149,6 +198,108 @@
                 </div>
 
                 <span class="sp-30"></span>
+
+                <div class="list-group border round">
+                    <ul class="has-icon ease-list-group">
+                        <li>
+                            <a href="#">
+                                <svg class="list-icon icon"><use href="#angle-right"/></svg>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="list-icon icon"><use href="#angle-right"/></svg>
+                                Sed finibus rhoncus erat, vitae porttitor sem gravida et.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="list-icon icon"><use href="#angle-right"/></svg>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <span class="sp-30"></span>
+
+                <div class="list-group border round">
+                    <ul class="has-icon-sm ease-list-group">
+                        <li>
+                            <a href="#">
+                                <svg class="list-icon icon"><use href="#angle-right"/></svg>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="list-icon icon"><use href="#angle-right"/></svg>
+                                Sed finibus rhoncus erat, vitae porttitor sem gravida et.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="list-icon icon"><use href="#angle-right"/></svg>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <span class="sp-30"></span>
+
+                <div class="list-group border round">
+                    <ul class="has-icon-xs ease-list-group">
+                        <li>
+                            <a href="#">
+                                <svg class="list-icon icon"><use href="#angle-right"/></svg>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="list-icon icon"><use href="#angle-right"/></svg>
+                                Sed finibus rhoncus erat, vitae porttitor sem gravida et.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="list-icon icon"><use href="#angle-right"/></svg>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <span class="sp-30"></span>
+
+                <div class="list-group border round">
+                    <ul class="has-icon-xss ease-list-group">
+                        <li>
+                            <a href="#">
+                                <svg class="list-icon icon"><use href="#angle-right"/></svg>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="list-icon icon"><use href="#angle-right"/></svg>
+                                Sed finibus rhoncus erat, vitae porttitor sem gravida et.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="list-icon icon"><use href="#angle-right"/></svg>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <span class="sp-30"></span>
+
+                <h4>List Groups with Icons</h4>
 
                 <div class="list-group border round">
                     <ul class="ease-list-group icons-margin-5-r">
@@ -186,6 +337,8 @@
                 </div>
 
                 <span class="sp-30"></span>
+
+                <h4>List Groups with Photo Images</h4>
 
                 <div class="list-group border round">
                     <ul class="has-photo-xs has-icon-xs ease-list-group">
@@ -437,6 +590,8 @@
                 </div>
 
                 <span class="sp-30"></span>
+
+                <h4>List Groups with Swatches</h4>
 
                 <div class="list-group border round theme-red">
                     <ul class="has-photo has-icon-sm ease-list-group">
