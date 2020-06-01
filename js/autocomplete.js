@@ -80,10 +80,16 @@ var autocomplete = {
 
                         }
 
-                    } else if (e.keyCode === 40) { // arrow down
-                        navIndex = 0;
+                    } else {
 
-                    } else { return; }
+                        if (e.keyCode === 40) { // arrow down
+                            navIndex = 0;
+
+                        } else if (e.keyCode === 38) { // arrow up
+                            navIndex = listItems.length - 1;
+                        }
+
+                    }
 
                     events.removeClass(navSelected, 'selected');
                     events.addClass(listItems[navIndex], 'selected');
