@@ -1,14 +1,17 @@
 // out: false
 /* tables */ @import '_settings.less';
 
+@table-padding:                         10px;
+@table-fluid-min-width:                 858px;
+
 @table-caption-bg:                      fade(@black, 2.5%);
 @table-caption-bg-dark:                 fade(@white, 2.5%);
 
-@table-stripe-bg:                       fade(@black, 3.5%);
+@table-stripe-bg:                       fade(@black, 6.5%);
 @table-stripe-bg-dark:                  fade(@white, 3.5%);
 
-@table-hover-bg:                        fade(@black, 6%);
-@table-hover-bg-dark:                   fade(@white, 6%);
+@table-hover-bg:                        fade(@black, 10%);
+@table-hover-bg-dark:                   fade(@white, 8%);
 
 ._global-vars () {
     --table-caption-bg: @table-caption-bg;
@@ -21,46 +24,122 @@
     --table-hover-bg: @table-hover-bg-dark;
 }
 
-.ease-table tr { transition-property: background-color; transition-duration: @ease-default; }
+.ease-table {
+    tr { transition-property: background-color; transition-duration: @ease-default; }
+}
 
-.table { width: 100%; ._bg-var(card-bg); }
-.table:not(:last-child) { margin-bottom: @highlight-space; }
+.table {
+    width: 100%; ._bg-var(card-bg);
 
-.table caption { font-size: @large; text-align: center; ._bg-var(table-caption-bg); padding: 10px; }
+    &:not(:last-child) { margin-bottom: @highlight-space; }
+    caption { font-size: @large; text-align: center; ._bg-var(table-caption-bg); padding: @table-padding; }
 
-.table:not(.table-ultra-condensed) th,.table:not(.table-ultra-condensed) td { padding-right: 5px; padding-left: 5px; }
-.table:not(.no-separated) th,.table:not(.no-separated) td { ._border-var(@dir: border-bottom; @var: table-border-color); }
-.table tbody tr:last-child th { border-bottom-width: 0; }
-.table:not(.table-condensed):not(.table-ultra-condensed) th,.table:not(.table-condensed):not(.table-ultra-condensed) td { padding-top: 10px; padding-bottom: 10px; }
-.table.table-condensed:not(.table-ultra-condensed) th,.table.table-condensed:not(.table-ultra-condensed) td { padding-top: 5px; padding-bottom: 5px; }
-.table th .asc:before,.table th .desc:before { position: absolute; left: -10px; }
-.table th .asc,.table th .desc { margin-left: 10px; display: inline-block; position: relative; }
-.table tr:last-child:not(:first-child) th,.table tbody:last-child tr:last-child td,.table tfoot tr:last-child td { border-bottom: 0; }
-.table thead th { font-weight: @font-bold; vertical-align: bottom !important; }
+    &:not(.table-ultra-condensed) {
+        th,td { padding-right: @table-padding / 2; padding-left: @table-padding / 2; }
+    }
+    &:not(.no-separated) {
+        th,td { ._border-var(@dir: border-bottom; @var: table-border-color); }
+    }
+    &:not(.table-condensed):not(.table-ultra-condensed) {
+        th,td { padding-top: @table-padding; padding-bottom: @table-padding; }
+    }
+    &.table-condensed:not(.table-ultra-condensed) {
+        th,td { padding-top: @table-padding / 2; padding-bottom: @table-padding / 2; }
+    }
+    .table-nowrap {
+        th,td { white-space: nowrap; text-overflow: ''; overflow: hidden; }
+    }
 
-.table-sidebar td:first-of-type,.table-border th:not(:last-child),.table-border td:not(:last-child) { ._border-var(@dir: border-right; @var: table-border-color); }
+    thead {
+        th { font-weight: @font-bold; vertical-align: bottom !important; }
+    }
+    tbody {
+        tr:last-child {
+            th { border-bottom-width: 0; }
+        }
+    }
 
-.table-sidebar td:first-of-type { font-weight: @font-bold; }
-.table:not(.table-sidebar).align-c td,.table:not(.table-sidebar).align-c th,.table.table-sidebar.align-c td:not(:first-child) { text-align: center; }
+    &-sidebar {
+        td {
+            &:first-of-type {
+                font-weight: @font-bold;
 
-.table-border { ._border-var(@var: table-border-color); }
-.table.border,.table[class*="border-"] { ._border-color-var(table-border-color); }
-.table-valign td,.table-valign th { vertical-align: middle !important; }
+                &:extend(.table-border th:not(:last-child));
+            }
+        }
+    }
 
-.table-scroll { width: 100%; overflow-x: auto; }
-.mobile .table-scroll { -webkit-overflow-scrolling: touch; }
-.table-scroll .table { margin-bottom: 0 !important; }
-.table-scroll > .table tr > * { white-space: nowrap; }
+    tbody:last-child,tfoot {
+        tr {
+            &:last-child {
+                td { border-bottom: 0; }
+            }
+        }
+    }
 
-.table-nowrap th,.table-nowrap td { white-space: nowrap; text-overflow: ''; overflow: hidden; }
+    &:not(.table-sidebar).align-c {
+        td,th { text-align: center; }
+    }
 
-.table-striped tr:nth-child(even):not([class*="ui-"]) { ._bg-var(table-stripe-bg); }
-html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover { ._bg-var(table-hover-bg); }
+    &[class*="border-"] { ._border-color-var(table-border-color); }
+
+    &-valign {
+        td,th { vertical-align: middle !important; }
+    }
+
+    &-scroll {
+        width: 100%; overflow-x: auto;
+
+        .mobile & { -webkit-overflow-scrolling: touch; }
+        .table { margin-bottom: 0 !important; }
+        & > .table {
+            tr > * { white-space: nowrap; }
+        }
+    }
+
+    &-striped {
+        tr:nth-child(even):not([class*="ui-"]) { ._bg-var(table-stripe-bg); }
+    }
+
+    &-hover {
+        html:not(.mobile) & {
+            tbody {
+                tr:not([class*="ui-"]):hover { ._bg-var(table-hover-bg); }
+            }
+        }
+    }
+}
+
+.table { // seperated for extends
+    &-border {
+        ._border-var(@var: table-border-color);
+        &:extend(.table[class*="border-"]);
+
+        th,td {
+            &:not(:last-child) { ._border-var(@dir: border-right; @var: table-border-color); }
+        }
+    }
+    tr {
+        &:last-child:not(:first-child) {
+            td { &:extend(.table tbody:last-child tr:last-child td); }
+        }
+    }
+    &&-sidebar.align-c {
+        td:not(:first-child) { &:extend(.table:not(.table-sidebar).align-c td); }
+    }
+}
 
 @media (@md-finish) {
-    .table-fluid { width: 100%; overflow-x: auto; }
-    .mobile .table-fluid { -webkit-overflow-scrolling: touch; }
-    .table-fluid .table { margin-bottom: 0 !important; }
-    .table-fluid > .table tr > * { white-space: nowrap; }
-    .table-fluid > .data-list { min-width: 858px; }
+    .table {
+        &-fluid {
+            width: 100%; overflow-x: auto;
+
+            .mobile & { -webkit-overflow-scrolling: touch; }
+            .table { margin-bottom: 0 !important; }
+            & > .table {
+                tr > * { white-space: nowrap; }
+            }
+            & > .data-list { min-width: @table-fluid-min-width; }
+        }
+    }
 }

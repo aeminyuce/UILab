@@ -1,6 +1,11 @@
 // out: false
 /* progress bar */ @import '_settings.less';
 
+@progress-bar-lg-size:                  20px;
+@progress-bar-default-size:             14px;
+@progress-bar-sm-size:                  10px;
+@progress-bar-padding:                  2px;
+
 @progress-bar-bg:                       fade(@black, 7.5%);
 @progress-bar-bg-dark:                  fade(@black, 45%);
 
@@ -18,15 +23,39 @@
 
 @keyframes progress-fill { from { width: 0; } }
 
-.progress-bar { height: 12px; ._bg-var(progress-bar-bg); padding: 2px; display: block; overflow: hidden; }
-.progress-bar:not(:last-child) { margin-bottom: @highlight-space / 2; }
-.progress-bar > span { width: 0; height: 100%; ._bg-var(progress-bar-inner-bg); float: left; }
-.progress-bar.round > span:first-child { border-top-left-radius: @round - @round * 0.3333333333; border-bottom-left-radius: @round - @round * 0.3333333333; }
-.progress-bar.round > span:last-child { border-top-right-radius: @round - @round * 0.3333333333; border-bottom-right-radius: @round - @round * 0.3333333333; }
-.progress-bar > span:not([class*="animate-"]) { animation: progress-fill 2s ease-in-out forwards; }
+.progress- {
+    &bar {
+        height: @progress-bar-default-size; ._bg-var(progress-bar-bg); padding: @progress-bar-padding; display: block; overflow: hidden;
 
-.progress-sm { height: 8px; }
-.progress-sm,.progress-sm .progress-bar { height: 4px; }
+        &:not(:last-child) { margin-bottom: @highlight-space / 2; }
+        & > span {
+            width: 0; height: @progress-bar-default-size - @progress-bar-padding * 2; ._bg-var(progress-bar-inner-bg); float: left;
 
-.progress-lg { height: 20px; }
-.progress-lg,.progress-lg .progress-bar { height: 16px; }
+            &:not([class*="animate-"]) { animation: progress-fill 2s ease-in-out forwards; }
+        }
+        &.border-dual > span {
+            height: @progress-bar-default-size - @progress-bar-padding * 2 - @border-dual * 2;
+        }
+        &.round > span {
+            &:first-child { border-top-left-radius: @round - @round * 0.3333333333; border-bottom-left-radius: @round - @round * 0.3333333333; }
+            &:last-child { border-top-right-radius: @round - @round * 0.3333333333; border-bottom-right-radius: @round - @round * 0.3333333333; }
+        }
+    }
+
+    &lg {
+        height: @progress-bar-lg-size;
+
+        & > span { height: @progress-bar-lg-size - @progress-bar-padding * 2; }
+        &.border-dual > span {
+            height: @progress-bar-lg-size - @progress-bar-padding * 2 - @border-dual * 2;
+        }
+    }
+    &sm {
+        height: @progress-bar-sm-size;
+
+        & > span { height: @progress-bar-sm-size - @progress-bar-padding * 2; }
+        &.border-dual > span {
+            height: @progress-bar-sm-size - @progress-bar-padding * 2 - @border-dual * 2;
+        }
+    }
+}

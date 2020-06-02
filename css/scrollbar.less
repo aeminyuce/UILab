@@ -1,5 +1,9 @@
 // out: false
 /* scrollbar */ @import '_settings.less';
+
+@scrollbar-size:                        8px;
+@page-scrollbar-size:                   12px;
+
 @scrollbar-scroll-bg:                   fade(@black, 4.5%);
 @scrollbar-scroll-bg-dark:              fade(@white, 4.5%);
 
@@ -28,21 +32,26 @@
 }
 
 html:not(.mobile) {
-    ::-webkit-scrollbar { width: 8px; height: 8px; ._bg-var(scrollbar-scroll-bg); }
-    body::-webkit-scrollbar { width: 12px; height: 12px; }
-    ::-webkit-scrollbar-thumb { ._bg-var(scrollbar-thumb-bg); }
-    ::-webkit-scrollbar-thumb:hover { ._bg-var(scrollbar-thumb-hover-bg); }
-    ::-webkit-scrollbar-thumb:active { ._bg-var(scrollbar-thumb-bg-active); }
+    ::-webkit-scrollbar { width: @scrollbar-size; height: @scrollbar-size; ._bg-var(scrollbar-scroll-bg); }
+    body::-webkit-scrollbar { width: @page-scrollbar-size; height: @page-scrollbar-size; }
+
     ::-webkit-scrollbar-track { background-color: @no-color; }
+    ::-webkit-scrollbar-thumb {
+        ._bg-var(scrollbar-thumb-bg);
 
-    .round::-webkit-scrollbar-thumb { border-radius: @round; }
+        &:hover { ._bg-var(scrollbar-thumb-hover-bg); }
+        &:active { ._bg-var(scrollbar-thumb-bg-active); }
+    }
+    .round {
+        &::-webkit-scrollbar-thumb { border-radius: @round; }
+    }
 
-    .ui-x-dark::-webkit-scrollbar-thumb,.ui-dark::-webkit-scrollbar-thumb,
-    .ui-x-dark ::-webkit-scrollbar-thumb,.ui-dark ::-webkit-scrollbar-thumb { background-color: @scrollbar-thumb-bg-dark; }
+    .ui-x-dark,.ui-dark {
+        &::-webkit-scrollbar-thumb,::-webkit-scrollbar-thumb {
+            background-color: @scrollbar-thumb-bg-dark;
 
-    .ui-x-dark::-webkit-scrollbar-thumb:hover,.ui-dark::-webkit-scrollbar-thumb:hover,
-    .ui-x-dark ::-webkit-scrollbar-thumb:hover,.ui-dark ::-webkit-scrollbar-thumb:hover { background-color: @scrollbar-thumb-hover-bg-dark; }
-
-    .ui-x-dark::-webkit-scrollbar-thumb:active,.ui-dark::-webkit-scrollbar-thumb:active,
-    .ui-x-dark ::-webkit-scrollbar-thumb:active,.ui-dark ::-webkit-scrollbar-thumb:active { background-color: @scrollbar-thumb-bg-active-dark; }
+            &:hover { background-color: @scrollbar-thumb-hover-bg-dark; }
+            &:active { background-color: @scrollbar-thumb-bg-active-dark; }
+        }
+    }
 }
