@@ -1,6 +1,11 @@
 // out: false
 /* page social */ @import '_settings.less';
 
+@page-social-pos-x:                     left;
+@page-social-top-size:                  30%;
+
+@page-social-z-index:                   20;
+
 @facebook-bg:                           #3b5998;
 @facebook-hover-bg:                     lighten(@facebook-bg, 10%);
 
@@ -22,7 +27,13 @@
 @youtube-bg:                            #ff0000;
 @youtube-hover-bg:                      lighten(@youtube-bg, 10%);
 
-.page-social { width: @btn-lg; position: fixed; top: 30%; left: 0; z-index: 20; }
+
+.page-social {
+    width: @btn-lg; position: fixed; top: @page-social-top-size; z-index: @page-social-z-index;
+
+    & when (@page-social-pos-x = left) { left: 0; }
+    & when (@page-social-pos-x = right) { right: 0; }
+}
 
 .btn- {
     &facebook {

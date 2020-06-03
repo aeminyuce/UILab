@@ -2,6 +2,7 @@
 /* top button */ @import '_settings.less';
 
 @top-button-size:                       40px;
+@top-button-z-index:                    7;
 
 @top-button-opacity:                    .45;
 @top-button-hover-opacity:              .75;
@@ -13,7 +14,7 @@
 @top-button-position-b:                 15px;
 
 .top-button {
-    text-align: center; width: @top-button-size; height: @top-button-size; background-color: @black; display: none; border: 0; position: fixed; right: @top-button-position-r; bottom: @top-button-position-b + @top-button-slide-size; z-index: 7; opacity: 0;
+    text-align: center; width: @top-button-size; height: @top-button-size; background-color: @black; display: none; border: 0; position: fixed; right: @top-button-position-r; bottom: @top-button-position-b + @top-button-slide-size; z-index: @top-button-z-index; opacity: 0;
 
     &.open {
         display: block;

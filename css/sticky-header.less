@@ -1,8 +1,21 @@
 // out: false
 /* sticky header */ @import '_settings.less';
 
-.sticky-header .hidden-sticky,html:not(.sticky-header) .visible-sticky { display: none; }
+@sticky-header-z-index:                 89;
 
-header.sticky,header.sticky-static { top: 0; right: 0; left: 0; z-index: 89; }
-header.sticky-static { position: absolute; }
-header.sticky { position: fixed; }
+.sticky-header {
+    .hidden-sticky { display: none; }
+}
+html {
+    &:not(.sticky-header) {
+        .visible-sticky { &:extend(.sticky-header .hidden-sticky); }
+    }
+}
+
+header.sticky {
+    position: fixed;
+
+    &,&-static { top: 0; right: 0; left: 0; z-index: @sticky-header-z-index; }
+    &-static { position: absolute; }
+
+}
