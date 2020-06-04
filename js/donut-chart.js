@@ -88,7 +88,7 @@ var donutChart = {};
         // Events
         events.on(document, 'mouseenter mouseleave touchend', '.donut-chart circle[data-title]', function (e) {
 
-            var that, svg, circle, chart, msg, msgTitle, title;
+            var that, circle, chart, msg, msgTitle, title;
 
             that = this;
             chart = events.closest(that, '.donut-chart')[0];
@@ -104,13 +104,6 @@ var donutChart = {};
                 msg.innerHTML = msg.getAttribute('data-msg');
 
             } else {
-
-                if (events.hasClass(chart, 'multiple')) { // bring to front hovered circle element. z-index not working with SVG elements!
-
-                    svg = that.parentNode;
-                    svg.insertBefore(that, svg.lastChild);
-
-                }
 
                 // show titles
                 if (msg === undefined) {
