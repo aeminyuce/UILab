@@ -6880,16 +6880,16 @@ header.sticky-static {
   color: var(--black);
 }
 .timeline > li > .img-photo + .card {
-  padding-top: 35px;
+  padding-top: 33px;
 }
 .timeline > li > .img-photo-lg + .card {
-  padding-top: 50px;
-}
-.timeline > li > .img-photo-md + .card {
-  padding-top: 30px;
+  padding-top: 48px;
 }
 .timeline > li > .img-photo-sm + .card {
-  padding-top: 25px;
+  padding-top: 29px;
+}
+.timeline > li > .img-photo-xs + .card {
+  padding-top: 24px;
 }
 .timeline:not(.hide-h-lines) > li:before,
 .timeline > li:after {
@@ -7001,23 +7001,12 @@ header.sticky-static {
 .line-charts svg path {
   stroke-linecap: round;
 }
-.line-charts svg path:not([fill]) {
-  fill: transparent;
-}
-.line-charts.resized svg path.filled {
-  opacity: 0.15;
-}
-.line-charts:not(.resized) svg path:not(.dashed):not(.dotted):not(.filled) {
+.line-charts svg path:not(.dashed):not(.dotted):not(.filled) {
   stroke-dashoffset: 3000;
   stroke-dasharray: 3000;
 }
-.line-charts.loaded svg path:not(.dashed):not(.dotted):not(.filled) {
-  animation: line-draw 2s 0.6s ease-in forwards;
-}
-.line-charts:not(.resized) svg path.dashed,
-.line-charts:not(.resized) svg path.dotted {
-  stroke-dashoffset: 0;
-  opacity: 0;
+.line-charts svg path:not([fill]) {
+  fill: transparent;
 }
 .line-charts svg path.dashed {
   stroke-dasharray: 10 5;
@@ -7025,29 +7014,14 @@ header.sticky-static {
 .line-charts svg path.dotted {
   stroke-dasharray: 1 5;
 }
-.line-charts.loaded svg path.dashed,
-.line-charts.loaded:not(.resized) svg path.dotted {
-  animation: line-dashed-dotted 1s 0.6s ease-in forwards;
-}
-.line-charts:not(.resized) svg path.filled {
-  transform: translateY(15px);
-  opacity: 0;
-}
-.line-charts.loaded svg path.filled {
-  animation: line-filled 0.6s forwards;
-}
 .no-effects .line-charts svg path:not(.dashed):not(.dotted):not(.filled),
 .ie .line-charts svg path:not(.dashed):not(.dotted):not(.filled) {
   stroke-dashoffset: 0;
 }
 .no-effects .line-charts svg path.dashed,
-.ie .line-charts svg path.dashed {
-  stroke-dasharray: 10 5;
-  opacity: 1;
-}
+.ie .line-charts svg path.dashed,
 .no-effects .line-charts svg path.dotted,
 .ie .line-charts svg path.dotted {
-  stroke-dasharray: 1 5;
   opacity: 1;
 }
 .no-effects .line-charts svg path.filled,
@@ -7072,13 +7046,6 @@ header.sticky-static {
 html:not(.mobile) .line-charts svg circle:hover {
   stroke-width: 4;
 }
-.line-charts:not(.resized) svg circle {
-  transform: translateY(30px);
-  opacity: 0;
-}
-.line-charts.loaded svg circle {
-  animation: line-circles 0.6s forwards;
-}
 .no-effects .line-charts svg circle,
 .ie .line-charts svg circle {
   transform: translateY(0);
@@ -7086,7 +7053,7 @@ html:not(.mobile) .line-charts svg circle:hover {
 }
 .line-charts svg text {
   fill: currentColor;
-  font-size: 14px;
+  font-size: 12px;
   opacity: 0.65;
 }
 .line-charts svg .x {
@@ -7095,19 +7062,48 @@ html:not(.mobile) .line-charts svg circle:hover {
 .line-charts svg .y {
   text-anchor: end;
 }
+.line-charts.resized svg path.filled {
+  opacity: 0.15;
+}
+html:not(.ie) .line-charts:not(.resized) svg path.dashed,
+html:not(.ie) .line-charts:not(.resized) svg path.dotted {
+  stroke-dashoffset: 0;
+  opacity: 0;
+}
+html:not(.ie) .line-charts:not(.resized) svg path.filled {
+  transform: translateY(15px);
+  opacity: 0;
+}
+html:not(.ie) .line-charts:not(.resized) svg circle {
+  transform: translateY(30px);
+  opacity: 0;
+}
+html:not(.ie) .line-charts.loaded svg path:not(.dashed):not(.dotted):not(.filled) {
+  animation: line-draw 2s 0.6s ease-in forwards;
+}
+html:not(.ie) .line-charts.loaded svg path.dashed,
+html:not(.ie) .line-charts.loaded svg path.dotted {
+  animation: line-dashed-dotted 1s 0.6s ease-in forwards;
+}
+html:not(.ie) .line-charts.loaded svg path.filled {
+  animation: line-filled 0.6s forwards;
+}
+html:not(.ie) .line-charts.loaded svg circle {
+  animation: line-circles 0.6s forwards;
+}
 .line-charts .info {
   text-align: center;
   display: block;
 }
 .line-charts .info li {
-  margin: 0 5px 2px 5px;
+  margin: 0 5px 3px 5px;
   display: inline-block;
 }
 .line-charts .info li span {
   vertical-align: middle;
   width: 13px;
   height: 13px;
-  margin: -2px 5px 0 0;
+  margin: -3px 5px 0 0;
   display: inline-block;
   border-radius: 50%;
 }
@@ -7133,6 +7129,7 @@ html:not(.mobile) .line-charts svg circle:hover {
 }
 .donut-chart strong {
   text-align: center;
+  font-size: 14px;
   line-height: 14px;
   width: 100%;
   position: absolute;
@@ -7155,9 +7152,6 @@ html:not(.mobile) .line-charts svg circle:hover {
 .donut-chart circle:not(.bg) {
   animation: donut-draw 1.6s ease-in forwards;
 }
-.donut-chart:not(.multiple) circle {
-  stroke-linecap: round;
-}
 .donut-chart circle.selected {
   stroke-width: 16;
   transition-duration: 0.15s;
@@ -7167,6 +7161,9 @@ html:not(.mobile) .line-charts svg circle:hover {
   stroke-width: 6;
   stroke-dashoffset: 0;
   opacity: 0.05;
+}
+.donut-chart:not(.multiple) circle {
+  stroke-linecap: round;
 }
 /* pie chart */
 @keyframes pie-spin-l {

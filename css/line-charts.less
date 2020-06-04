@@ -1,56 +1,123 @@
 // out: false
 /* line charts */ @import '_settings.less';
 
+@line-chart-default-size:               3000;
+@line-chart-dashed-size:                10;
+@line-chart-dotted-size:                1;
+
+@line-chart-filled-slide-size:          15px;
+@line-chart-filled-opacity:             .15;
+
+@line-chart-circle-hover-size:          4;
+
+@line-chart-grid-text-opacity:          .65;
+@line-chart-grid-text-anchor-x:          middle;
+@line-chart-grid-text-anchor-y:          end;
+
+@line-chart-bg-grid-stroke-size:        1;
+@line-chart-bg-grid-opacity:            .12;
+@line-chart-stroke-opacity:             .35;
+
+@line-chart-info-gap:                   5px;
+@line-chart-info-dot-size:              13px;
+@line-chart-text-size:                  @small;
+
 @keyframes line-draw { to { stroke-dashoffset: 0; } }
 @keyframes line-dashed-dotted { to { opacity: 1; } }
-@keyframes line-filled { to { transform: translateY(0); opacity: .15; } }
+@keyframes line-filled { to { transform: translateY(0); opacity: @line-chart-filled-opacity; } }
 @keyframes line-circles { to { transform: translateY(0); opacity: 1; } }
 
-.ease-line-charts circle { transition-property: stroke-width; transition-duration: @ease-default; }
+.ease-line-charts {
+    circle { transition-property: stroke-width; transition-duration: @ease-default; }
+}
 
-.line-charts { @no-user-select(); }
-.line-charts ul { list-style: none; vertical-align: middle; padding: 0; display: inline-block; }
-.line-charts ul.line { display: none; }
+.line-charts {
+    @no-user-select();
 
-.line-charts svg { width: 100%; }
-.line-charts svg g { display: block; }
+    ul {
+        list-style: none; vertical-align: middle; padding: 0; display: inline-block;
 
-.line-charts svg path { stroke-linecap: round; }
-.line-charts svg path:not([fill]) { fill: @no-color; }
-.line-charts.resized svg path.filled { opacity: .15; }
+        &.line { display: none; }
+    }
+    svg {
+        width: 100%;
 
-.line-charts:not(.resized) svg path:not(.dashed):not(.dotted):not(.filled) { stroke-dashoffset: 3000; stroke-dasharray: 3000; }
-.line-charts.loaded svg path:not(.dashed):not(.dotted):not(.filled) { animation: line-draw 2s .6s ease-in forwards; }
+        g { display: block; }
+        path {
+            stroke-linecap: round;
 
-.line-charts:not(.resized) svg path.dashed,.line-charts:not(.resized) svg path.dotted { stroke-dashoffset: 0; opacity: 0; }
-.line-charts svg path.dashed { stroke-dasharray: 10 5; }
-.line-charts svg path.dotted { stroke-dasharray: 1 5; }
-.line-charts.loaded svg path.dashed,.line-charts.loaded:not(.resized) svg path.dotted { animation: line-dashed-dotted 1s .6s ease-in forwards; }
+            &:not(.dashed):not(.dotted):not(.filled) { stroke-dashoffset: @line-chart-default-size; stroke-dasharray: @line-chart-default-size; }
+            &:not([fill]) { fill: @no-color; }
 
-.line-charts:not(.resized) svg path.filled { transform: translateY(15px); opacity: 0; }
-.line-charts.loaded svg path.filled { animation: line-filled .6s forwards; }
+            &.dashed { stroke-dasharray: @line-chart-dashed-size round(@line-chart-dashed-size / 2); }
+            &.dotted { stroke-dasharray: @line-chart-dotted-size round(@line-chart-dashed-size / 2); }
 
-.no-effects .line-charts svg path:not(.dashed):not(.dotted):not(.filled),.ie .line-charts svg path:not(.dashed):not(.dotted):not(.filled) { stroke-dashoffset: 0; }
-.no-effects .line-charts svg path.dashed,.ie .line-charts svg path.dashed { stroke-dasharray: 10 5; opacity: 1; }
-.no-effects .line-charts svg path.dotted,.ie .line-charts svg path.dotted { stroke-dasharray: 1 5; opacity: 1; }
-.no-effects .line-charts svg path.filled,.ie .line-charts svg path.filled { transform: translateY(0); opacity: .15; }
+            .no-effects &,.ie & {
+                &:not(.dashed):not(.dotted):not(.filled) {
+                	stroke-dashoffset: 0;
+                }
 
-.line-charts svg line { stroke: currentColor; shape-rendering: crispEdges; }
-.line-charts svg line.root { opacity: .35; }
-.line-charts svg line:not(.root) { stroke-width: 1; opacity: .12; }
+                &.dashed,&.dotted { opacity: 1; }
+                &.filled { transform: translateY(0); opacity: @line-chart-filled-opacity; }
+            }
+        }
+        line {
+            stroke: currentColor; shape-rendering: crispEdges;
 
-.line-charts svg circle[onclick] { cursor: pointer; }
-html:not(.mobile) .line-charts svg circle:hover { stroke-width: 4; }
+            &.root { opacity: @line-chart-stroke-opacity; }
+            &:not(.root) { stroke-width: @line-chart-bg-grid-stroke-size; opacity: @line-chart-bg-grid-opacity; }
+        }
+        circle {
+            &[onclick] { cursor: pointer; }
+            html:not(.mobile) &:hover { stroke-width: @line-chart-circle-hover-size; }
 
-.line-charts:not(.resized) svg circle { transform: translateY(30px); opacity: 0; }
-.line-charts.loaded svg circle { animation: line-circles .6s forwards; }
+            .no-effects &,.ie & { transform: translateY(0); opacity: 1; }
+        }
 
-.no-effects .line-charts svg circle,.ie .line-charts svg circle { transform: translateY(0); opacity: 1; }
+        text { fill: currentColor; font-size: @line-chart-text-size; opacity: @line-chart-grid-text-opacity; }
+        .x { text-anchor: @line-chart-grid-text-anchor-x; }
+        .y { text-anchor: @line-chart-grid-text-anchor-y; }
+    }
 
-.line-charts svg text { fill: currentColor; font-size: @font-size; opacity: .65; }
-.line-charts svg .x { text-anchor: middle; }
-.line-charts svg .y { text-anchor: end; }
+    &.resized {
+        svg {
+            path {
+                &.filled { opacity: @line-chart-filled-opacity; }
+            }
+        }
+    }
+    &:not(.resized) {
+        svg {
+            html:not(.ie) & {
+                path {
+                    &.dashed,&.dotted { stroke-dashoffset: 0; opacity: 0; }
+                    &.filled { transform: translateY(@line-chart-filled-slide-size); opacity: 0; }
+                }
+                circle { transform: translateY(@line-chart-filled-slide-size * 2); opacity: 0; }
+            }
+        }
+    }
 
-.line-charts .info { text-align: center; display: block; }
-.line-charts .info li { margin: 0 5px 2px 5px; display: inline-block; }
-.line-charts .info li span { vertical-align: middle; width: 13px; height: 13px; margin: -2px 5px 0 0; display: inline-block; border-radius: 50%; }
+    &.loaded {
+        svg {
+            html:not(.ie) & {
+                path {
+                    &:not(.dashed):not(.dotted):not(.filled) { animation: line-draw 2s .6s ease-in forwards; }
+                    &.dashed,&.dotted { animation: line-dashed-dotted 1s .6s ease-in forwards; }
+                    &.filled { animation: line-filled .6s forwards; }
+                }
+                circle { animation: line-circles .6s forwards; }
+            }
+        }
+    }
+
+    .info {
+        text-align: center; display: block;
+
+        li {
+            margin: 0 @line-chart-info-gap round(@line-chart-info-gap / 2) @line-chart-info-gap; display: inline-block;
+
+            span { vertical-align: middle; width: @line-chart-info-dot-size; height: @line-chart-info-dot-size; margin: round(-@line-chart-info-gap / 2) @line-chart-info-gap 0 0; display: inline-block; border-radius: 50%; }
+        }
+    }
+}

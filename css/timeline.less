@@ -1,6 +1,11 @@
 // out: false
 /* timeline */ @import '_settings.less';
 
+@timeline-card-padding:                 15px;
+@timeline-steps-size:                   14px;
+
+@timeline-line-size:                    2px;
+@timeline-line-gap:                     30px;
 @timeline-line-bg:                      fade(@black, 15%);
 @timeline-line-bg-dark:                 fade(@white, 17.5%);
 
@@ -21,9 +26,10 @@
         }
     }
     &:not(.hide-lines) {
-        &:after { content: ""; width: 2px; ._bg-var(timeline-line-bg); border-radius: 1px; position: absolute; top: 0; bottom: 0; }
+        &:after { content: ""; width: @timeline-line-size; ._bg-var(timeline-line-bg); border-radius: @timeline-line-size / 2; position: absolute; top: 0; bottom: 0; }
+
         & > li {
-            &:before { width: 30px; height: 2px; ._bg-var(timeline-line-bg); }
+            &:before { width: @timeline-line-gap; height: @timeline-line-size; ._bg-var(timeline-line-bg); }
             &:after {
                 ._bg-var(body-bg);
 
@@ -42,7 +48,7 @@
 
         &:not(:last-child) { margin-bottom: @highlight-space; }
         &:after {
-            width: 14px; height: 14px; ._border-var(@width: 2px; @var: timeline-line-bg); border-radius: 50%;
+            width: @timeline-steps-size; height: @timeline-steps-size; ._border-var(@width: @timeline-line-size; @var: timeline-line-bg); border-radius: 50%;
 
             &:extend(.timeline:not(.hide-h-lines) > li:before);
         }
@@ -50,17 +56,17 @@
             &:after { &:extend(.timeline.ui-text > li:after); }
         }
 
-        & > [class*="img-photo"] { margin-left: 15px; position: relative; z-index: 1; transform: translateY(50%); }
+        & > [class*="img-photo"] { margin-left: @timeline-card-padding; position: relative; z-index: 1; transform: translateY(50%); }
         & > .card {
-            ._bg-var(body-bg); padding: 15px; display: block; position: relative;
+            ._bg-var(body-bg); padding: @timeline-card-padding; display: block; position: relative;
 
             &:not([class*="ui-"]),a,button { ._color-var(black); }
         }
         & > .img-photo {
-            & + .card { padding-top: 35px; }
-            &-lg + .card { padding-top: 50px; }
-            &-md + .card { padding-top: 30px; }
-            &-sm + .card { padding-top: 25px; }
+            & + .card { padding-top: @photo-img-default / 2 + round(@timeline-card-padding / 2); }
+            &-lg + .card { padding-top: @photo-img-lg / 2 + round(@timeline-card-padding / 2); }
+            &-sm + .card { padding-top: @photo-img-sm / 2 + round(@timeline-card-padding / 2); }
+            &-xs + .card { padding-top: @photo-img-xs / 2 + round(@timeline-card-padding / 2); }
         }
     }
 
@@ -71,9 +77,9 @@
     }
 
     &.side-l {
-        &:after { left: 6px; }
+        &:after { left: (@timeline-steps-size - @timeline-line-size) / 2; }
         & > li {
-            padding-left: 30px;
+            padding-left: @timeline-line-gap;
 
             &:before,&:after { left: 0; }
         }
@@ -83,21 +89,21 @@
 @media (@md-start) {
     .timeline {
         &:not(.side-l) {
-            &:after { margin-left: -1px; left: 50%; }
+            &:after { margin-left: -@timeline-line-size / 2; left: 50%; }
             & > li {
                 width: 50%;
 
                 &:nth-child(2n+1) {
-                    padding-right: 30px;
+                    padding-right: @timeline-line-gap;
 
                     &:before { right: 0; }
-                    &:after { right: -7px; }
+                    &:after { right: -@timeline-steps-size / 2; }
                 }
                 &:nth-child(2n+2) {
-                    padding-left: 30px; left: 50%;
+                    padding-left: @timeline-line-gap; left: 50%;
 
                     &:before { left: 0; }
-                    &:after { left: -7px; }
+                    &:after { left: -@timeline-steps-size / 2; }
                 }
             }
         }
@@ -105,10 +111,10 @@
 }
 @media (@sm-finish) {
     .timeline {
-        &:after { left: 6px; }
+        &:after { left: (@timeline-steps-size - @timeline-line-size) / 2; }
 
         & > li {
-            padding-left: 30px;
+            padding-left: @timeline-line-gap;
 
             &:before,&:after { left: 0; }
         }
