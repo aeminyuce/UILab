@@ -140,7 +140,7 @@
                                                 <b class="large">220</b>
                                             </strong>
                                             <svg viewBox="0 0 160 160">
-                                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                                <circle r="69.85699" cy="80" cx="80" class="bg" />
                                                 <circle r="69.85699" cy="80" cx="80" stroke="#36a2eb" data-percent="38" />
                                             </svg>
                                         </div>
@@ -153,7 +153,7 @@
                                                 <b class="large">2275</b>
                                             </strong>
                                             <svg viewBox="0 0 160 160">
-                                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                                <circle r="69.85699" cy="80" cx="80" class="bg" />
                                                 <circle r="69.85699" cy="80" cx="80" stroke="#ff9f40" data-percent="59" />
                                             </svg>
                                         </div>

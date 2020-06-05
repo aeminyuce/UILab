@@ -335,7 +335,7 @@
                         <div class="donut-chart ease-donut-chart">
                             <strong>HTML</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                <circle r="69.85699" cy="80" cx="80" class="bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="25" />
                             </svg>
                         </div>
@@ -344,7 +344,7 @@
                         <div class="donut-chart ease-donut-chart">
                             <strong>CSS</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                <circle r="69.85699" cy="80" cx="80" class="bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#a4e87b" data-percent="50" />
                             </svg>
                         </div>
@@ -353,7 +353,7 @@
                         <div class="donut-chart ease-donut-chart">
                             <strong>JS</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                <circle r="69.85699" cy="80" cx="80" class="bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#cd7be8" data-percent="75" />
                             </svg>
                         </div>
@@ -362,8 +362,8 @@
                         <div class="donut-chart ease-donut-chart">
                             <strong>PHP</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="100" />
+                                <circle r="69.85699" cy="80" cx="80" class="bg" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="90" />
                             </svg>
                         </div>
                     </div>
@@ -374,7 +374,7 @@
                         <div class="donut-chart ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                <circle r="69.85699" cy="80" cx="80" class="bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="15" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="85" />
                             </svg>
@@ -384,7 +384,7 @@
                         <div class="donut-chart ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                <circle r="69.85699" cy="80" cx="80" class="bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="10" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="60" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#cd7be8" data-percent="30" />
@@ -395,7 +395,7 @@
                         <div class="donut-chart ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                <circle r="69.85699" cy="80" cx="80" class="bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="10" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="20" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#cd7be8" data-percent="30" />
@@ -407,7 +407,7 @@
                         <div class="donut-chart ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                <circle r="69.85699" cy="80" cx="80" class="bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="20" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="20" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#cd7be8" data-percent="20" />
@@ -427,7 +427,7 @@
                         <div class="donut-chart ease-donut-chart">
                             <strong>HTML</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                <circle r="69.85699" cy="80" cx="80" class="bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="25" data-title="25% HTML" />
                             </svg>
                         </div>
@@ -436,7 +436,7 @@
                         <div class="donut-chart ease-donut-chart">
                             <strong>CSS</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                <circle r="69.85699" cy="80" cx="80" class="bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#a4e87b" data-percent="50" data-title="50% CSS" />
                             </svg>
                         </div>
@@ -445,7 +445,7 @@
                         <div class="donut-chart ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                <circle r="69.85699" cy="80" cx="80" class="bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="15" data-title="15% HTML" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="85" data-title="85% PHP" />
                             </svg>
@@ -455,7 +455,7 @@
                         <div class="donut-chart ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                <circle r="69.85699" cy="80" cx="80" class="bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="10" data-title="10% HTML" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="60" data-title="60% PHP" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#cd7be8" data-percent="30" data-title="30% JS" />
@@ -469,7 +469,7 @@
                         <div class="donut-chart ease-donut-chart">
                             <strong>HTML</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                <circle r="69.85699" cy="80" cx="80" class="bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="25" data-title="25% HTML" />
                             </svg>
                         </div>
@@ -478,7 +478,7 @@
                         <div class="donut-chart ease-donut-chart">
                             <strong>CSS</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                <circle r="69.85699" cy="80" cx="80" class="bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#a4e87b" data-percent="50" data-title="50% CSS" />
                             </svg>
                         </div>
@@ -487,7 +487,7 @@
                         <div class="donut-chart ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                <circle r="69.85699" cy="80" cx="80" class="bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="15" data-title="15% HTML" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="85" data-title="85% PHP" />
                             </svg>
@@ -497,7 +497,7 @@
                         <div class="donut-chart ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                <circle r="69.85699" cy="80" cx="80" class="bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="10" data-title="10% HTML" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="60" data-title="60% PHP" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="#cd7be8" data-percent="30" data-title="30% JS" />

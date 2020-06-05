@@ -883,7 +883,7 @@
                                                     Payments
                                                 </strong>
                                                 <svg viewBox="0 0 160 160">
-                                                    <circle r="69.85699" cy="80" cx="80" class="bg" data-percent="100" />
+                                                    <circle r="69.85699" cy="80" cx="80" class="bg" />
                                                     <circle r="69.85699" cy="80" cx="80" stroke="#75dbe7" data-percent="69" />
                                                 </svg>
                                             </div>
