@@ -3,7 +3,7 @@
 
 @donut-chart-stroke-size:               10;
 @donut-chart-stroke-selected-size:      16;
-@donut-chart-single-round:              true;
+@donut-chart-stroke-single-round:       true;
 
 @donut-chart-bg-stroke-size:            6;
 @donut-chart-bg-opacity:                .05;
@@ -11,7 +11,7 @@
 @donut-chart-title-size:                @font-size;
 
 @keyframes donut-draw {
-    from { stroke-dashoffset: 440; }
+    to { stroke-dasharray: 0 440; }
 }
 
 .ease-donut-chart {
@@ -25,18 +25,22 @@
 
     strong { text-align: center; font-size: @donut-chart-title-size; line-height: @donut-chart-title-size; width: 100%; position: absolute; top: 50%; z-index: 1; transform: translateY(-50%); }
     svg {
-        &:not(.icon) { width: 100%; height: auto; margin: 0 auto; -ms-transform: rotate(-90deg); transform: rotate(-90deg); }
+        &:not(.icon) {
+            width: 100%; height: auto; margin: 0 auto;
+
+            html:not(.edge) & { -ms-transform: rotate(-90deg); transform: rotate(-90deg); }
+            .edge & { -ms-transform: rotate(90deg); transform: rotate(90deg); }
+        }
     }
     circle {
-        fill: none; stroke-width: @donut-chart-stroke-size; stroke-dasharray: 440;
+        fill: none; stroke-width: @donut-chart-stroke-size;
 
-        &:not(.bg) { animation: donut-draw 1.6s ease-in forwards; }
+        &.loaded:not(.bg) { animation: donut-draw 1.6s ease-in reverse; }
         &.selected { stroke-width: @donut-chart-stroke-selected-size; transition-duration: @ease-default; }
         &.bg { stroke: currentColor; stroke-width: @donut-chart-bg-stroke-size; stroke-dashoffset: 0; opacity: @donut-chart-bg-opacity; }
     }
     &:not(.multiple) {
-        circle when (@donut-chart-single-round = true) { stroke-linecap: round; }
+        circle when (@donut-chart-stroke-single-round = true) { stroke-linecap: round; }
     }
-
 }
 

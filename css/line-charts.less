@@ -62,7 +62,8 @@
             }
         }
         line {
-            stroke: currentColor; shape-rendering: crispEdges;
+            stroke: currentColor;
+            html:not(.firefox) & { shape-rendering: crispEdges; }
 
             &.root { opacity: @line-chart-stroke-opacity; }
             &:not(.root) { stroke-width: @line-chart-bg-grid-stroke-size; opacity: @line-chart-bg-grid-opacity; }

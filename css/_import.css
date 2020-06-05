@@ -7031,6 +7031,8 @@ header.sticky-static {
 }
 .line-charts svg line {
   stroke: currentColor;
+}
+html:not(.firefox) .line-charts svg line {
   shape-rendering: crispEdges;
 }
 .line-charts svg line.root {
@@ -7109,8 +7111,8 @@ html:not(.ie) .line-charts.loaded svg circle {
 }
 /* donut chart */
 @keyframes donut-draw {
-  from {
-    stroke-dashoffset: 440;
+  to {
+    stroke-dasharray: 0 440;
   }
 }
 .ease-donut-chart circle:not(.bg) {
@@ -7141,16 +7143,21 @@ html:not(.ie) .line-charts.loaded svg circle {
   width: 100%;
   height: auto;
   margin: 0 auto;
+}
+html:not(.edge) .donut-chart svg:not(.icon) {
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
+}
+.edge .donut-chart svg:not(.icon) {
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .donut-chart circle {
   fill: none;
   stroke-width: 10;
-  stroke-dasharray: 440;
 }
-.donut-chart circle:not(.bg) {
-  animation: donut-draw 1.6s ease-in forwards;
+.donut-chart circle.loaded:not(.bg) {
+  animation: donut-draw 1.6s ease-in reverse;
 }
 .donut-chart circle.selected {
   stroke-width: 16;
