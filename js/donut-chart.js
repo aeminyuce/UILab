@@ -16,7 +16,7 @@ var donutChart = {};
 
         loadCharts = function () {
 
-            var chart, circles, percent, dashoffset, angle, arrPercent, arrAngle;
+            var chart, circles, percent, dasharray, angle, arrPercent, arrAngle;
 
             arrPercent = [];
             arrAngle = [];
@@ -39,31 +39,16 @@ var donutChart = {};
                         percent = that.getAttribute('data-percent');
                         arrPercent.push(percent);
 
-                        dashoffset = Math.floor(440 - (percent * 4.4));
-                        if (dashoffset < 0) { dashoffset = 0; }
+                        dasharray = Math.round(percent * 4.4);
+                        if (dasharray < 0) { dasharray = 0; }
 
-                        that.setAttribute('stroke-dashoffset', dashoffset);
+                        that.setAttribute('stroke-dasharray', dasharray + ',440');
                         if (index > 0) {
 
                             angle = Math.floor(arrAngle[index - 1] + ((arrPercent[index - 1]) * 3.6));
                             arrAngle.push(angle);
 
-                            /*
-                                In svg elements CSS only transforms NOT cross browser! All IE browsers not supported!
-
-                                How to make transform-origin: 50% 50%?
-                                rotate supported inside this: // rotate(angle, centerWidth, centerHeight)
-
-                                Ex:
-                                <rect x='65' y='65' width='150' height='80' transform='rotate(45 140 105)' />
-
-                                angle: 45
-                                centerWidth: 140 = 65 + 150/2
-                                centerHeight: 105 = 65 +  80/2
-
-                            */
-
-                            that.setAttribute('transform', 'rotate(' + angle + ' 80 80)');
+                            that.setAttribute('transform', 'rotate(' + angle + ' 80 80)'); // rotate(angle, cx, cy); All IE browsers not supported CSS only transforms
 
                         } else { arrAngle.push(0); }
 

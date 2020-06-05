@@ -8,9 +8,7 @@ var mobileMenu = {};
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, setTimeout, useragents */
-
-    var pageYPos;
+    /*globals window, document, selector, events, setTimeout */
 
     mobileMenu.close = function (panel) {
 
@@ -21,10 +19,6 @@ var mobileMenu = {};
         events.removeClass(panel, 'open-ease');
         events.removeClass(bg, 'open-ease');
         events.removeClass(document, 'mobile-menu-opened');
-
-        if (useragents.mobile) {
-            window.scrolTo(0, pageYPos);
-        }
 
         setTimeout(function () {
 
@@ -107,10 +101,6 @@ var mobileMenu = {};
                 }
 
             } else { return; }
-
-            if (useragents.mobile) {
-                pageYPos = window.pageYOffset; // get current scroll-y position
-            }
 
             panel = selector('.mobile-menu.show-' + position);
             content = selector('.mobile-menu-content', panel);
