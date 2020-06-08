@@ -1,6 +1,17 @@
 // out: false
 /* pie chart */ @import '_settings.less';
 
+@pie-chart-title-text-size:             @font-size;
+@pie-chart-title-height:                22px;
+@pie-chart-title-padding:               4px;
+
+@pie-chart-info-text-size:              @x-small;
+@pie-chart-info-padding:                2px;
+@pie-chart-info-inner-space:            5px;
+
+@pie-chart-back-inner-space:            5px;
+@pie-chart-back-opacity:                .05;
+
 @keyframes pie-spin-l {
     0% { opacity: 0; }
     49% { opacity: 0; }
@@ -8,31 +19,67 @@
 }
 @keyframes pie-spin-r { 0% { -ms-transform: rotate(0deg); transform: rotate(0deg); } }
 
-.ease-pie-chart li,.ease-pie-chart > div span { transition-property: opacity; transition-duration: @ease-default * 2; }
+.ease-pie-chart {
+    li,& > div span { transition-property: opacity; transition-duration: @ease-default * 2; }
+}
 
-.pie-chart { position: relative; @no-user-select(); }
-.pie-chart[data-text]:before { content: attr(data-text); color: @black; font-weight: @font-bold; text-align: center; line-height: 14px; min-height: 16px; background: @white; padding: 4px 8px; display: inline-block; border-radius: 1000px; position: absolute; top: 50%; left: 50%; z-index: 2; transform: translate(-50%,-50%); }
+.pie-chart {
+    position: relative; @no-user-select();
 
-.pie-chart > div span { display: block; position: absolute; top: 50%; right: 0; left: 50%; z-index: 1; transform-origin: left top; }
-.pie-chart:not(.open-ease) > div span { opacity: 0; }
-.pie-chart > div span i { color: @x-dark; font-size: @x-small; font-style: normal; font-weight: @font-bold; line-height: 11px; background: @white; padding: 2px 4px;  margin-right: 5px; border-radius: 1000px; float: right; }
+    &[data-text] {
+        &:before { content: attr(data-text); color: @black; font-weight: @font-bold; font-size: @pie-chart-title-text-size; text-align: center; line-height: @pie-chart-title-text-size; min-width: @pie-chart-title-height - @pie-chart-title-padding; min-height: @pie-chart-title-height - @pie-chart-title-padding; background: @white; padding: @pie-chart-title-padding @pie-chart-title-padding * 2; display: inline-block; border-radius: @circle; position: absolute; top: 50%; left: 50%; z-index: 2; transform: translate(-50%,-50%); }
+    }
+    & > div {
+        span {
+            display: block; position: absolute; top: 50%; right: 0; left: 50%; z-index: 1; transform-origin: left top;
 
-.pie-chart ul { list-style: none; padding: 0; margin-bottom: 0; overflow: hidden; display: block; border-radius: 50%; position: relative; }
-.pie-chart ul:after { content: ""; background-color: currentColor; display: block; border-radius: 50%; position: absolute; top: 5px; right: 5px; bottom: 5px; left: 5px; opacity: .05; }
+            i { color: @x-dark; font-size: @pie-chart-info-text-size; font-style: normal; font-weight: @font-bold; line-height: @pie-chart-info-text-size; background: @white; padding: @pie-chart-info-padding @pie-chart-info-padding * 2; margin-right: @pie-chart-info-inner-space; border-radius: @circle; float: right; }
+        }
+    }
+    &:not(.open-ease) {
+        & > div {
+            span { opacity: 0; }
+        }
+    }
 
-.pie-chart li { width: 100%; height: 100%; border-radius: 50%; z-index: 1; }
-.pie-chart:not(.open) li { opacity: 0; }
-.pie-chart li:first-child { position: relative; }
-.pie-chart li:not(:first-child) { position: absolute; top: 0; left: 0; }
+    ul {
+        list-style: none; padding: 0; margin-bottom: 0; overflow: hidden; display: block; border-radius: 50%; position: relative;
 
-.pie-chart li span { width: 50%; height: 100%; overflow: hidden; display: block; position: absolute; top: 0; }
-.pie-chart li .l { overflow: visible; left: 0; }
-.pie-chart li .r { left: 50%;  }
+        &:after { content: ""; background-color: currentColor; display: block; border-radius: 50%; position: absolute; top: @pie-chart-back-inner-space; right: @pie-chart-back-inner-space; bottom: @pie-chart-back-inner-space; left: @pie-chart-back-inner-space; opacity: @pie-chart-back-opacity; }
+    }
 
-.pie-chart li span b { background-color: currentColor; width: 100%; height: 100%; position: absolute; }
-.pie-chart li .l b { left: 100%; border-radius: 0 1000px 1000px 0; -ms-transform-origin: left; transform-origin: left; }
-.pie-chart li .r b { left: -100%; border-radius: 1000px 0 0 1000px; -ms-transform: rotate(180deg); transform: rotate(180deg); -ms-transform-origin: right; transform-origin: right; }
+    li {
+        width: 100%; height: 100%; border-radius: 50%; z-index: 1;
 
-.pie-chart.open li .l b { animation: pie-spin-l 1.6s ease-out forwards; }
-.pie-chart.open li .r b { animation: pie-spin-r 1.6s ease-in forwards; }
-.pie-chart.open li .l + .r b { animation: pie-spin-r .8s ease-in forwards; }
+        &:first-child { position: relative; }
+        &:not(:first-child) { position: absolute; top: 0; left: 0; }
+
+        span {
+            width: 50%; height: 100%; overflow: hidden; display: block; position: absolute; top: 0;
+
+            b { background-color: currentColor; width: 100%; height: 100%; position: absolute; }
+        }
+        .l {
+            overflow: visible; left: 0;
+
+            b { left: 100%; border-radius: 0 @circle @circle 0; -ms-transform-origin: left; transform-origin: left; }
+        }
+        .r {
+            left: 50%;
+
+            b { left: -100%; border-radius: @circle 0 0 @circle; -ms-transform: rotate(180deg); transform: rotate(180deg); -ms-transform-origin: right; transform-origin: right; }
+        }
+    }
+    &:not(.open) {
+        li { opacity: 0; }
+    }
+    &.open {
+        li {
+            .l {
+                b { animation: pie-spin-l 1.6s ease-out forwards; }
+                & + .r b { animation: pie-spin-r .8s ease-in forwards; }
+            }
+            .r b { animation: pie-spin-r 1.6s ease-in forwards; }
+        }
+    }
+}

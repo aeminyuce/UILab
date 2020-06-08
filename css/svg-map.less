@@ -1,6 +1,9 @@
 // out: false
 /* svg map */ @import '_settings.less';
 
+@svg-map-height-for-ie:                 360px;
+@svg-map-inner-stroke-width:            1.5;
+
 @svg-map-path-fill:                     fade(@black, 8%);
 @svg-map-path-fill-hover:               fade(@black, 15%);
 
@@ -16,12 +19,29 @@
     --svg-map-path-fill-hover: @svg-map-path-fill-hover-dark;
 }
 
-.svg-map { position: relative; }
+.svg-map {
+    position: relative;
 
-.svg-map svg { width: 100%; height: 360px; margin-right: auto; margin-left: auto; display: block; }
-.svg-map svg g path { ._fill-var(svg-map-path-fill); ._stroke-var(body-bg); stroke-width: 1.5; cursor: pointer; }
-.card .svg-map svg g path { ._stroke-var(card-bg); }
-.svg-map svg g path:hover { ._fill-var(svg-map-path-fill-hover); }
+    svg {
+        width: 100%; height: auto; margin-right: auto; margin-left: auto; display: block;
 
-.svg-map svg g.active path { fill: currentColor; }
-.svg-map svg g.active path:hover { opacity: 1 !important; }
+        html:not(.ie) & { height: auto; }
+        .ie & { height: @svg-map-height-for-ie; }
+
+        g {
+            path {
+                ._fill-var(svg-map-path-fill); ._stroke-var(body-bg); stroke-width: @svg-map-inner-stroke-width; cursor: pointer;
+
+                .card & { ._stroke-var(card-bg); }
+                &:hover { ._fill-var(svg-map-path-fill-hover); }
+            }
+            &.active {
+                path {
+                    fill: currentColor;
+
+                    &:hover { opacity: 1 !important; }
+                }
+            }
+        }
+    }
+}

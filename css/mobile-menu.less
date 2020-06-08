@@ -1,25 +1,44 @@
 // out: false
 /* mobile menu */ @import '_settings.less';
 
+@mobile-menu-title-height:              66px;
+@mobile-menu-padding:                   10px;
+@mobile-menu-shadow-size:               5px 15px;
+
+@mobile-menu-close-btn-size:            @btn-lg;
+
 @mobile-menu-bg-bg:                     fade(@black, 65%);
 @mobile-menu-bg:                        fade(@black, 15%);
 
-.mobile-menu-opened,.mobile-menu-opened > body { overflow: hidden; }
+.mobile-menu {
+    width: 100%; width: @layout-min; ._bg-var(body-bg); position: fixed; top: 0; bottom: 0; z-index: 90; box-shadow: 0 @mobile-menu-shadow-size @mobile-menu-bg;
 
-.mobile-menu-bg { width: 100%; min-width: @layout-min; height: 100%; background-color: @mobile-menu-bg-bg; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 89; }
-.mobile-menu-bg:not(.open) { display: none; }
-.mobile-menu-bg:not(.open-ease) { opacity: 0; }
+    &-opened {
+        &,& > body { overflow: hidden; }
+    }
 
-.mobile-menu { width: 100%; width: @layout-min; ._bg-var(body-bg); position: fixed; top: 0; bottom: 0; z-index: 90; box-shadow: 0 5px 15px @mobile-menu-bg; }
+    &-bg {
+        width: 100%; min-width: @layout-min; height: 100%; background-color: @mobile-menu-bg-bg; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 89;
 
-.mobile-menu.show-r { right: 0; transform: translateX(100%); }
-.mobile-menu.show-l { left: 0; transform: translateX(-100%); }
+        &:not(.open) { display: none; }
+        &:not(.open-ease) { opacity: 0; }
+    }
 
-.mobile-menu:not(.open) { display: none; }
-.mobile-menu.open-ease { transform: translateX(0); }
+    &.show {
+        &-r { right: 0; transform: translateX(100%); }
+        &-l { left: 0; transform: translateX(-100%); }
+    }
 
-.close-mobile-menu { position: fixed; top: 10px; right: 10px; z-index: 10; }
+    &:not(.open) { display: none; }
+    &.open-ease { transform: translateX(0); }
 
-.mobile-menu-title { height: 66px; padding: 10px 60px 10px 10px; position: relative; z-index: 1; }
-.mobile-menu-content { padding: 10px; position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
-.mobile-menu-title + .mobile-menu-content { top: 66px; }
+    &-title {
+        height: @mobile-menu-title-height; padding: @mobile-menu-padding (@mobile-menu-padding * 2) + @mobile-menu-close-btn-size @mobile-menu-padding @mobile-menu-padding; position: relative; z-index: 1;
+
+        & + .mobile-menu-content { top: @mobile-menu-title-height; }
+    }
+
+    &-content { padding: @mobile-menu-padding; position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+}
+
+.close-mobile-menu { position: fixed; top: @mobile-menu-padding; right: @mobile-menu-padding; z-index: 10; }
