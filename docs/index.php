@@ -77,7 +77,7 @@
     <header class="container theme-default ui-dark">
         <div class="row theme-default2 form-lg ui-border border-t border-dual">
             <div class="col-12">
-                <button title="Toggle Theme" data-tooltip class="btn-toggle-color btn btn-square round icons-no-opacity right ease-btn">
+                <button title="Toggle Theme" data-tooltip data-only="desktop" class="btn-toggle-color btn btn-square round icons-no-opacity right ease-btn">
                     <svg class="icon visible-dark"><use href="#moon-fill"/></svg>
                     <svg class="icon visible-light"><use href="#sun-fill"/></svg>
                 </button>
@@ -98,7 +98,7 @@
         include ($page.'.php');
 ?>
 
-<button title="Toggle Theme" data-tooltip class="btn-toggle-color btn btn-lg btn-square round-l icons-no-opacity ease-btn set-fixed set-r set-cy">
+<button title="Toggle Theme" data-tooltip data-only="desktop" class="btn-toggle-color btn btn-lg btn-square round-l icons-no-opacity ease-btn set-fixed set-r set-cy">
     <svg class="icon visible-dark"><use href="#moon-fill"/></svg>
     <svg class="icon visible-light"><use href="#sun-fill"/></svg>
 </button>
@@ -114,7 +114,7 @@
                 </div>
                 <div class="row form-lg">
                     <div class="col-12 align-r padding-15-r icons-no-opacity ease-1st-btn">
-                        <button title="Toggle Theme" data-tooltip class="btn-toggle-color btn btn-square round">
+                        <button title="Toggle Theme" data-tooltip data-only="desktop" class="btn-toggle-color btn btn-square round">
                             <svg class="icon visible-dark"><use href="#moon-fill"/></svg>
                             <svg class="icon visible-light"><use href="#sun-fill"/></svg>
                         </button>
