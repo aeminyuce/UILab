@@ -24,7 +24,7 @@
 @modal-close-fullscreen-bg:             fade(@black, 20%);
 @modal-close-fullscreen-hover-bg:       fade(@black, 35%);
 
-@modal-content-mex-height:              92%;
+@modal-content-max-height:              92%;
 @modal-content-open-slide:              10px;
 @modal-content-min-width:               @layout-min - 40px;
 @modal-content-lg-min-height:           300px;
@@ -68,7 +68,7 @@
         min-width: @modal-content-min-width; ._bg-var(body-bg); position: fixed;
 
         &:not(.fullscreen) {
-            max-height: @modal-content-mex-height;
+            max-height: @modal-content-max-height;
 
             &.round {
                 .modal {

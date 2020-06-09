@@ -1,6 +1,16 @@
 // out: false
 /* tooltip*/ @import '_settings.less';
 
+@tooltip-min-width:                     32px;
+@tooltip-max-width:                     680px;
+@tooltip-min-height:                    26px;
+@tooltip-z-index:                       99;
+
+@tooltip-content-line-height:           1.2em;
+@tooltip-content-padding:               5px;
+
+@tooltip-arrow-size:                    10px;
+
 @tooltip-bg:                            @card-bg-dark;
 @tooltip-bg-dark:                       @black;
 
@@ -15,34 +25,92 @@
 
 [data-tooltip] { display: inline-block; }
 
-.tooltip { min-width: 36px; max-width: 680px; position: absolute; z-index: 99; }
-.tooltip:not([class*="ui-"]) { color: @white; ._bg-var(tooltip-bg); }
-.tooltip:not(.open) { display: none; }
-.tooltip:not(.open-ease) { opacity: 0; }
+.tooltip {
+    min-width: @tooltip-min-width; max-width: @tooltip-max-width; position: absolute; z-index: @tooltip-z-index;
 
-.tooltip-content { line-height: 1.2em; min-height: 18px; padding: 5px 8px; position: relative; z-index: 3; }
+    &:not([class*="ui-"]) { color: @white; ._bg-var(tooltip-bg); }
+    &:not(.open) { display: none; }
+    &:not(.open-ease) { opacity: 0; }
 
-.tooltip[data-pos="t"] .tooltip-content,.tooltip[data-pos="b"] .tooltip-content { text-align: center; }
-.tooltip[data-pos="l"] .tooltip-content,.tooltip[data-pos="tl"] .tooltip-content,.tooltip[data-pos="bl"] .tooltip-content { text-align: right; }
+    &-content { line-height: @tooltip-content-line-height; min-height: @tooltip-min-height; padding: @tooltip-content-padding @tooltip-content-padding * 2; position: relative; z-index: 3; }
 
-.tooltip > span { display: block; position: absolute; transform: rotate(45deg); }
+    &[data-pos="t"] {
+        & > span {
+            top: 100%; left: 50%;
 
-.tooltip[data-pos="t"] > span { top: 100%; left: 50%; }
-.tooltip[data-pos="b"] > span { bottom: 100%; left: 50%; }
-.tooltip[data-pos="r"] > span { right: 100%; top: 50%; }
-.tooltip[data-pos="l"] > span { left: 100%; top: 50%; }
+            .bg { border-top-color: @no-color; border-left-color: @no-color; }
+        }
+        .tooltip-content { text-align: center; }
+    }
+    &[data-pos="b"] {
+        & > span {
+            bottom: 100%; left: 50%;
 
-.tooltip[data-pos="tr"] > span { top: 100%; left: 20px; }
-.tooltip[data-pos="tl"] > span { top: 100%; right: 20px; }
-.tooltip[data-pos="br"] > span { bottom: 100%; left: 20px; }
-.tooltip[data-pos="bl"] > span { bottom: 100%; right: 20px; }
+            .bg { border-top-color: @no-color; border-left-color: @no-color; }
+        }
+        .tooltip-content { &:extend(.tooltip[data-pos="t"] .tooltip-content); }
+    }
+    &[data-pos="r"] {
+        & > span {
+            right: 100%; top: 50%;
 
-.tooltip > span i { box-sizing: content-box; width: 10px; height: 10px; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
-.tooltip > span .bg { z-index: 1; }
-.tooltip > span i + i { z-index: 2; }
-.tooltip:not([class*="ui-"]) > span i { ._bg-var(tooltip-bg); }
+            .bg { border-top-color: @no-color; border-right-color: @no-color; }
+        }
+    }
+    &[data-pos="l"] {
+        & > span {
+            left: 100%; top: 50%;
 
-.tooltip[data-pos="t"] > span .bg,.tooltip[data-pos="tr"] > span .bg,.tooltip[data-pos="tl"] > span .bg { border-top-color: @no-color; border-left-color: @no-color; }
-.tooltip[data-pos="b"] > span .bg,.tooltip[data-pos="br"] > span .bg,.tooltip[data-pos="bl"] > span .bg { border-bottom-color: @no-color; border-right-color: @no-color; }
-.tooltip[data-pos="r"] > span .bg { border-top-color: @no-color; border-right-color: @no-color; }
-.tooltip[data-pos="l"] > span .bg { border-bottom-color: @no-color; border-left-color: @no-color; }
+            .bg { border-bottom-color: @no-color; border-left-color: @no-color; }
+        }
+        .tooltip-content { text-align: right; }
+    }
+
+    &[data-pos="tr"] {
+        & > span {
+            top: 100%; left: @tooltip-arrow-size * 2;
+
+            .bg { &:extend(.tooltip[data-pos="t"] > span .bg); }
+        }
+    }
+    &[data-pos="tl"] {
+        & > span {
+            top: 100%; right: @tooltip-arrow-size * 2;
+
+            .bg { &:extend(.tooltip[data-pos="t"] > span .bg); }
+        }
+        .tooltip-content { &:extend(.tooltip[data-pos="l"] .tooltip-content); }
+    }
+    &[data-pos="br"] {
+        & > span {
+            bottom: 100%; left: @tooltip-arrow-size * 2;
+
+            .bg { &:extend(.tooltip[data-pos="b"] > span .bg); }
+        }
+    }
+    &[data-pos="bl"] {
+        & > span {
+            bottom: 100%; right: @tooltip-arrow-size * 2;
+
+            .bg { &:extend(.tooltip[data-pos="b"] > span .bg); }
+        }
+        .tooltip-content { &:extend(.tooltip[data-pos="l"] .tooltip-content); }
+    }
+
+    & > span {
+        display: block; position: absolute; transform: rotate(45deg);
+
+        i {
+            box-sizing: content-box; width: @tooltip-arrow-size; height: @tooltip-arrow-size; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+
+            & + i { z-index: 2; }
+        }
+        .bg { z-index: 1; }
+    }
+
+    &:not([class*="ui-"]) {
+        & > span {
+            i { ._bg-var(tooltip-bg); }
+        }
+    }
+}

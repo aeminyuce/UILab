@@ -35,54 +35,107 @@
     --calendar-today-btn-hover-bg: @calendar-today-btn-hover-bg-dark;
 }
 
-.ease-calendar { transition-property: opacity; }
-.ease-calendar .details,.ease-calendar thead,.ease-calendar tbody { transition-property: transform, opacity; transition-duration: .25s; transition-timing-function: ease-in-out; }
-.ease-calendar button,.ease-calendar a,.calendar .details li { transition-property: background-color, opacity; transition-duration: @ease-default; }
+.ease-calendar {
+    transition-property: opacity;
 
-.calendar { ._bg-var(card-bg); padding: 5px; overflow: hidden; display: block; position: relative; @no-user-select(); }
-.calendar:not(.active) { display: none; }
+    .details,thead,tbody { transition-property: transform, opacity; transition-duration: .25s; transition-timing-function: ease-in-out; }
+    button,a,.details li { transition-property: background-color, opacity; transition-duration: @ease-default; }
+}
 
-.calendar,.calendar * { text-align: center !important; }
-.calendar table { width: 100%; table-layout: fixed; }
-.calendar ul { list-style: none; height: 100%; padding: 0; margin-bottom: 0; }
-.calendar button { ._color-var(black); ._bg-var(btn-bg); }
-html:not(.mobile) .calendar button:hover { ._bg-var(btn-hover-bg); }
+.calendar {
+    ._bg-var(card-bg); padding: 5px; overflow: hidden; display: block; position: relative; @no-user-select();
 
-.calendar caption { height: 52px; ._bg-var(calendar-area-bg); padding: 5px 52px; margin-bottom: 5px; }
-.calendar.round caption,.calendar.round caption button { border-radius: @round; }
-.calendar caption button { white-space: nowrap; text-overflow: ellipsis; line-height: @btn-lg - 20; max-width: 138px; height: @btn-lg; background-color: @no-color; overflow: hidden; border: 0; }
-.calendar caption > button { width: @btn-lg; padding: 10px; display: block; }
-.calendar caption > button .icon { opacity: .65; }
+    &:not(.active) { display: none; }
+    &,& * { text-align: center !important; }
 
-.calendar-prev { margin-left: -47px; float: left; }
-.calendar-next { margin-right: -47px; float: right; }
+    table {
+        width: 100%; table-layout: fixed;
 
-.calendar-title { font-size: @large; width: 100%; float: left; }
-.calendar-title button { display: inline-block; }
+        &.fill-weekends {
+            th,td {
+                &:nth-child(n+6) { ._bg-var(calendar-area-bg); }
+            }
+        }
+    }
+    th { font-weight: @font-bold; vertical-align: bottom !important; padding: 10px; }
+    tbody {
+        td {
+            padding: 2px;
 
-.calendar-month { font-weight: @font-bold; padding: 10px 5px 10px 10px; }
-.calendar.round .calendar-month { border-radius: @round 0 0 @round; }
+            &.passive span { opacity: .45; }
+            button { width: 100%; background: @no-color; padding: 8px; display: block; border: 0; position: relative; }
+            &.toggle-details {
+                button {
+                    &:after { content: ""; width: 6px; height: 6px; background: @calendar-details-dot-bg; margin-left: -3px; display: block; border-radius: 100%; position: absolute; bottom: 3px; left: 50%; }
+                }
+            }
+            &.today {
+                button {
+                    font-weight: @font-bold;
 
-.calendar-year { font-weight: @font-bold; padding: 10px 10px 10px 5px; }
-.calendar.round .calendar-year { border-radius: 0 @round @round 0; }
+                    &:not([class*="ui-"]) { ._bg-var(calendar-today-btn-bg); }
+                }
+            }
+        }
+    }
 
-.calendar th { font-weight: @font-bold; vertical-align: bottom !important; padding: 10px; }
-.calendar tbody td { padding: 2px; }
+    ul { list-style: none; height: 100%; padding: 0; margin-bottom: 0; }
 
-.calendar.round table.fill-weekends th:nth-child(6) { border-radius: @round 0 0 0; }
-.calendar.round table.fill-weekends th:nth-child(7) { border-radius: 0 @round 0 0; }
-.calendar.round table.fill-weekends tr:last-child td:nth-child(6) { border-radius: 0 0 0 @round; }
-.calendar.round table.fill-weekends tr:last-child td:nth-child(7) { border-radius: 0 0 @round 0; }
-.calendar table.fill-weekends th:nth-child(n+6),.calendar table.fill-weekends td:nth-child(n+6) { ._bg-var(calendar-area-bg); }
+    button {
+        ._color-var(black); ._bg-var(btn-bg);
 
-.calendar tbody td.passive span { opacity: .45; }
-.calendar tbody td button { width: 100%; background: @no-color; padding: 8px; display: block; border: 0; position: relative; }
-.calendar.round td button { border-radius: @round; }
+        html:not(.mobile) &:hover { ._bg-var(btn-hover-bg); }
+    }
 
-.calendar tbody td.toggle-details button:after { content: ""; width: 6px; height: 6px; background: @calendar-details-dot-bg; margin-left: -3px; display: block; border-radius: 100%; position: absolute; bottom: 3px; left: 50%; }
+    caption {
+        height: 52px; ._bg-var(calendar-area-bg); padding: 5px 52px; margin-bottom: 5px;
 
-.calendar tbody td.today button { font-weight: @font-bold; }
-.calendar tbody td.today button:not([class*="ui-"]) { ._bg-var(calendar-today-btn-bg); }
+        button { white-space: nowrap; text-overflow: ellipsis; line-height: @btn-lg - 20; max-width: 138px; height: @btn-lg; background-color: @no-color; overflow: hidden; border: 0; }
+        & > button {
+            width: @btn-lg; padding: 10px; display: block;
+
+            .icon { opacity: .65; }
+        }
+    }
+
+    &-prev { margin-left: -47px; float: left; }
+    &-next { margin-right: -47px; float: right; }
+
+    &-title {
+        font-size: @large; width: 100%; float: left;
+
+        button { display: inline-block; }
+    }
+
+    &-month { font-weight: @font-bold; padding: 10px 5px 10px 10px; }
+    &-year { font-weight: @font-bold; padding: 10px 10px 10px 5px; }
+
+    &.round {
+        caption {
+            &,button { border-radius: @round; }
+        }
+
+        .calendar-month { border-radius: @round 0 0 @round; }
+        .calendar-year { border-radius: 0 @round @round 0; }
+
+        table {
+            &.fill-weekends {
+                th {
+                    &:nth-child(6) { border-radius: @round 0 0 0; }
+                    &:nth-child(7) { border-radius: 0 @round 0 0; }
+                }
+                tr {
+                    &:last-child td:nth-child(6) { border-radius: 0 0 0 @round; }
+                    &:last-child td:nth-child(7) { border-radius: 0 0 @round 0; }
+                }
+            }
+        }
+        td {
+            button { border-radius: @round; }
+        }
+    }
+}
+
 html:not(.mobile) .calendar tbody td.today button:not([class*="ui-"]):hover { ._bg-var(calendar-today-btn-hover-bg); }
 html:not(.mobile) .calendar tbody td.today button[class*="ui-"]:hover { opacity: .75; }
 

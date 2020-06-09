@@ -7698,7 +7698,7 @@ html:not(.mobile) .modal-content.fullscreen .close-modal:hover {
   display: inline-block;
 }
 .tooltip {
-  min-width: 36px;
+  min-width: 32px;
   max-width: 680px;
   position: absolute;
   z-index: 99;
@@ -7716,40 +7716,55 @@ html:not(.mobile) .modal-content.fullscreen .close-modal:hover {
 }
 .tooltip-content {
   line-height: 1.2em;
-  min-height: 18px;
-  padding: 5px 8px;
+  min-height: 26px;
+  padding: 5px 10px;
   position: relative;
   z-index: 3;
-}
-.tooltip[data-pos="t"] .tooltip-content,
-.tooltip[data-pos="b"] .tooltip-content {
-  text-align: center;
-}
-.tooltip[data-pos="l"] .tooltip-content,
-.tooltip[data-pos="tl"] .tooltip-content,
-.tooltip[data-pos="bl"] .tooltip-content {
-  text-align: right;
-}
-.tooltip > span {
-  display: block;
-  position: absolute;
-  transform: rotate(45deg);
 }
 .tooltip[data-pos="t"] > span {
   top: 100%;
   left: 50%;
 }
+.tooltip[data-pos="t"] > span .bg,
+.tooltip[data-pos="tr"] > span .bg,
+.tooltip[data-pos="tl"] > span .bg {
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+.tooltip[data-pos="t"] .tooltip-content,
+.tooltip[data-pos="b"] .tooltip-content {
+  text-align: center;
+}
 .tooltip[data-pos="b"] > span {
   bottom: 100%;
   left: 50%;
+}
+.tooltip[data-pos="b"] > span .bg,
+.tooltip[data-pos="br"] > span .bg,
+.tooltip[data-pos="bl"] > span .bg {
+  border-top-color: transparent;
+  border-left-color: transparent;
 }
 .tooltip[data-pos="r"] > span {
   right: 100%;
   top: 50%;
 }
+.tooltip[data-pos="r"] > span .bg {
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
 .tooltip[data-pos="l"] > span {
   left: 100%;
   top: 50%;
+}
+.tooltip[data-pos="l"] > span .bg {
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+.tooltip[data-pos="l"] .tooltip-content,
+.tooltip[data-pos="tl"] .tooltip-content,
+.tooltip[data-pos="bl"] .tooltip-content {
+  text-align: right;
 }
 .tooltip[data-pos="tr"] > span {
   top: 100%;
@@ -7767,6 +7782,11 @@ html:not(.mobile) .modal-content.fullscreen .close-modal:hover {
   bottom: 100%;
   right: 20px;
 }
+.tooltip > span {
+  display: block;
+  position: absolute;
+  transform: rotate(45deg);
+}
 .tooltip > span i {
   box-sizing: content-box;
   width: 10px;
@@ -7777,35 +7797,15 @@ html:not(.mobile) .modal-content.fullscreen .close-modal:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.tooltip > span .bg {
-  z-index: 1;
-}
 .tooltip > span i + i {
   z-index: 2;
+}
+.tooltip > span .bg {
+  z-index: 1;
 }
 .tooltip:not([class*="ui-"]) > span i {
   background-color: #2f343e;
   background-color: var(--tooltip-bg);
-}
-.tooltip[data-pos="t"] > span .bg,
-.tooltip[data-pos="tr"] > span .bg,
-.tooltip[data-pos="tl"] > span .bg {
-  border-top-color: transparent;
-  border-left-color: transparent;
-}
-.tooltip[data-pos="b"] > span .bg,
-.tooltip[data-pos="br"] > span .bg,
-.tooltip[data-pos="bl"] > span .bg {
-  border-bottom-color: transparent;
-  border-right-color: transparent;
-}
-.tooltip[data-pos="r"] > span .bg {
-  border-top-color: transparent;
-  border-right-color: transparent;
-}
-.tooltip[data-pos="l"] > span .bg {
-  border-bottom-color: transparent;
-  border-left-color: transparent;
 }
 /* alerts */
 .alerts-opened,
@@ -7849,73 +7849,11 @@ html:not(.mobile) .modal-content.fullscreen .close-modal:hover {
   opacity: 0;
   transform: translate(-50%, -50%) scale(0.8);
 }
-.dialog-msg {
-  text-align: center;
-  font-size: 16px;
-}
-.dialog-buttons {
-  text-align: right;
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 10px 10px 5px 10px;
-}
 .alerts-dialog.round .dialog-buttons {
   border-radius: 0 0 6px 6px;
 }
-.dialog-buttons button {
-  font-weight: 700;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 20px;
-  min-width: 68px;
-  height: 32px;
-  padding: 6px 12px;
-  margin-bottom: 5px;
-  display: inline-block;
-  border: 0;
-}
 .alerts-dialog.round button {
   border-radius: 6px;
-}
-.dialog-buttons button:not(:last-child) {
-  margin-right: 5px;
-}
-button.dialog-error,
-button.dialog-success {
-  color: #fff !important;
-}
-button.dialog-error {
-  background-color: #d10f1c;
-}
-button.dialog-error:focus {
-  box-shadow: 0 0 0 2px #ab0c17;
-  box-shadow: 0 0 0 2px var(--alerts-dialog-error-shadow);
-}
-html:not(.mobile) button.dialog-error:hover {
-  background-color: #ee1120;
-}
-button.dialog-success {
-  background-color: #2dbd3a;
-}
-button.dialog-success:focus {
-  box-shadow: 0 0 0 2px #259c30;
-  box-shadow: 0 0 0 2px var(--alerts-dialog-success-shadow);
-}
-html:not(.mobile) button.dialog-success:hover {
-  background-color: #39d046;
-}
-button.dialog-custom {
-  color: #000;
-  color: var(--black);
-  background-color: rgba(0, 0, 0, 0.08);
-  background-color: var(--btn-bg);
-}
-button.dialog-custom:focus {
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 0 2px var(--alerts-dialog-custom-shadow);
-}
-html:not(.mobile) button.dialog-custom:hover {
-  background-color: rgba(0, 0, 0, 0.15);
-  background-color: var(--btn-hover-bg);
 }
 .alerts-msg {
   text-align: center;
@@ -7973,6 +7911,66 @@ html:not(.mobile) .alerts-msg:hover {
 .alerts-msg.bl:not(.show-ease) {
   transform: translateY(40px);
 }
+.dialog-msg {
+  text-align: center;
+  font-size: 16px;
+}
+.dialog-buttons {
+  text-align: right;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px 10px 5px 10px;
+}
+.dialog-buttons button {
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 20px;
+  min-width: 68px;
+  height: 32px;
+  padding: 6px 12px;
+  margin-bottom: 5px;
+  display: inline-block;
+  border: 0;
+}
+.dialog-buttons button:not(:last-child) {
+  margin-right: 5px;
+}
+button.dialog-success {
+  color: #fff !important;
+  background-color: #2dbd3a;
+}
+button.dialog-success:focus {
+  box-shadow: 0 0 0 2px #259c30;
+  box-shadow: 0 0 0 2px var(--alerts-dialog-success-shadow);
+}
+html:not(.mobile) button.dialog-success:hover {
+  background-color: #39d046;
+}
+button.dialog-error {
+  color: #fff !important;
+  background-color: #d10f1c;
+}
+button.dialog-error:focus {
+  box-shadow: 0 0 0 2px #ab0c17;
+  box-shadow: 0 0 0 2px var(--alerts-dialog-error-shadow);
+}
+html:not(.mobile) button.dialog-error:hover {
+  background-color: #ee1120;
+}
+button.dialog-custom {
+  color: #000;
+  color: var(--black);
+  background-color: rgba(0, 0, 0, 0.08);
+  background-color: var(--btn-bg);
+}
+button.dialog-custom:focus {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 2px var(--alerts-dialog-custom-shadow);
+}
+html:not(.mobile) button.dialog-custom:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+  background-color: var(--btn-hover-bg);
+}
 .close-alert {
   color: currentColor;
   line-height: 0;
@@ -8017,7 +8015,7 @@ html:not(.mobile) .close-alert:hover {
 }
 .ease-calendar button,
 .ease-calendar a,
-.calendar .details li {
+.ease-calendar .details li {
   transition-property: background-color, opacity;
   transition-duration: 0.15s;
 }
@@ -8044,6 +8042,49 @@ html:not(.mobile) .close-alert:hover {
   width: 100%;
   table-layout: fixed;
 }
+.calendar table.fill-weekends th:nth-child(n+6),
+.calendar table.fill-weekends td:nth-child(n+6) {
+  background-color: rgba(0, 0, 0, 0.08);
+  background-color: var(--calendar-area-bg);
+}
+.calendar th {
+  font-weight: 700;
+  vertical-align: bottom !important;
+  padding: 10px;
+}
+.calendar tbody td {
+  padding: 2px;
+}
+.calendar tbody td.passive span {
+  opacity: 0.45;
+}
+.calendar tbody td button {
+  width: 100%;
+  background: transparent;
+  padding: 8px;
+  display: block;
+  border: 0;
+  position: relative;
+}
+.calendar tbody td.toggle-details button:after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: #ff1446;
+  margin-left: -3px;
+  display: block;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+}
+.calendar tbody td.today button {
+  font-weight: 700;
+}
+.calendar tbody td.today button:not([class*="ui-"]) {
+  background-color: rgba(0, 0, 0, 0.15);
+  background-color: var(--calendar-today-btn-bg);
+}
 .calendar ul {
   list-style: none;
   height: 100%;
@@ -8066,10 +8107,6 @@ html:not(.mobile) .calendar button:hover {
   background-color: var(--calendar-area-bg);
   padding: 5px 52px;
   margin-bottom: 5px;
-}
-.calendar.round caption,
-.calendar.round caption button {
-  border-radius: 6px;
 }
 .calendar caption button {
   white-space: nowrap;
@@ -8109,23 +8146,19 @@ html:not(.mobile) .calendar button:hover {
   font-weight: 700;
   padding: 10px 5px 10px 10px;
 }
-.calendar.round .calendar-month {
-  border-radius: 6px 0 0 6px;
-}
 .calendar-year {
   font-weight: 700;
   padding: 10px 10px 10px 5px;
 }
+.calendar.round caption,
+.calendar.round caption button {
+  border-radius: 6px;
+}
+.calendar.round .calendar-month {
+  border-radius: 6px 0 0 6px;
+}
 .calendar.round .calendar-year {
   border-radius: 0 6px 6px 0;
-}
-.calendar th {
-  font-weight: 700;
-  vertical-align: bottom !important;
-  padding: 10px;
-}
-.calendar tbody td {
-  padding: 2px;
 }
 .calendar.round table.fill-weekends th:nth-child(6) {
   border-radius: 6px 0 0 0;
@@ -8139,43 +8172,8 @@ html:not(.mobile) .calendar button:hover {
 .calendar.round table.fill-weekends tr:last-child td:nth-child(7) {
   border-radius: 0 0 6px 0;
 }
-.calendar table.fill-weekends th:nth-child(n+6),
-.calendar table.fill-weekends td:nth-child(n+6) {
-  background-color: rgba(0, 0, 0, 0.08);
-  background-color: var(--calendar-area-bg);
-}
-.calendar tbody td.passive span {
-  opacity: 0.45;
-}
-.calendar tbody td button {
-  width: 100%;
-  background: transparent;
-  padding: 8px;
-  display: block;
-  border: 0;
-  position: relative;
-}
 .calendar.round td button {
   border-radius: 6px;
-}
-.calendar tbody td.toggle-details button:after {
-  content: "";
-  width: 6px;
-  height: 6px;
-  background: #ff1446;
-  margin-left: -3px;
-  display: block;
-  border-radius: 100%;
-  position: absolute;
-  bottom: 3px;
-  left: 50%;
-}
-.calendar tbody td.today button {
-  font-weight: 700;
-}
-.calendar tbody td.today button:not([class*="ui-"]) {
-  background-color: rgba(0, 0, 0, 0.15);
-  background-color: var(--calendar-today-btn-bg);
 }
 html:not(.mobile) .calendar tbody td.today button:not([class*="ui-"]):hover {
   background-color: rgba(0, 0, 0, 0.2);
