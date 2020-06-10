@@ -57,8 +57,8 @@
   --alerts-dialog-success-shadow: #259c30;
   --alerts-dialog-custom-shadow: rgba(0, 0, 0, 0.3);
   --alerts-msg-bg: #181818;
-  --calendar-area-bg: rgba(0, 0, 0, 0.08);
-  --calendar-no-details-bg: rgba(0, 0, 0, 0.12);
+  --calendar-highlighted-bg: rgba(0, 0, 0, 0.08);
+  --calendar-empty-details-bg: rgba(0, 0, 0, 0.12);
   --calendar-today-btn-bg: rgba(0, 0, 0, 0.15);
   --calendar-today-btn-hover-bg: rgba(0, 0, 0, 0.2);
   --data-list-stripe-bg: rgba(0, 0, 0, 0.035);
@@ -132,8 +132,8 @@
   --alerts-dialog-success-shadow: #62da6d;
   --alerts-dialog-custom-shadow: rgba(255, 255, 255, 0.3);
   --alerts-msg-bg: #2f343e;
-  --calendar-area-bg: rgba(255, 255, 255, 0.08);
-  --calendar-no-details-bg: rgba(255, 255, 255, 0.18);
+  --calendar-highlighted-bg: rgba(255, 255, 255, 0.08);
+  --calendar-empty-details-bg: rgba(255, 255, 255, 0.18);
   --calendar-today-btn-bg: rgba(255, 255, 255, 0.15);
   --calendar-today-btn-hover-bg: rgba(255, 255, 255, 0.2);
   --data-list-stripe-bg: rgba(255, 255, 255, 0.035);
@@ -8045,7 +8045,7 @@ html:not(.mobile) .close-alert:hover {
 .calendar table.fill-weekends th:nth-child(n+6),
 .calendar table.fill-weekends td:nth-child(n+6) {
   background-color: rgba(0, 0, 0, 0.08);
-  background-color: var(--calendar-area-bg);
+  background-color: var(--calendar-highlighted-bg);
 }
 .calendar th {
   font-weight: 700;
@@ -8056,6 +8056,8 @@ html:not(.mobile) .close-alert:hover {
   padding: 2px;
 }
 .calendar tbody td.passive span {
+  padding: 8px;
+  display: block;
   opacity: 0.45;
 }
 .calendar tbody td button {
@@ -8071,11 +8073,11 @@ html:not(.mobile) .close-alert:hover {
   width: 6px;
   height: 6px;
   background: #ff1446;
-  margin-left: -3px;
   display: block;
   border-radius: 100%;
   position: absolute;
-  bottom: 3px;
+  margin-left: -3px;
+  bottom: 2px;
   left: 50%;
 }
 .calendar tbody td.today button {
@@ -8084,6 +8086,18 @@ html:not(.mobile) .close-alert:hover {
 .calendar tbody td.today button:not([class*="ui-"]) {
   background-color: rgba(0, 0, 0, 0.15);
   background-color: var(--calendar-today-btn-bg);
+}
+html:not(.mobile) .calendar tbody td.today button:not([class*="ui-"]):hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--calendar-today-btn-hover-bg);
+}
+.calendar tbody td.pickerday button {
+  color: #fff !important;
+  font-weight: 700;
+  background-color: #235ea0;
+}
+html:not(.mobile) .calendar tbody td.pickerday button:hover {
+  background-color: #3b83d4;
 }
 .calendar ul {
   list-style: none;
@@ -8104,7 +8118,7 @@ html:not(.mobile) .calendar button:hover {
 .calendar caption {
   height: 52px;
   background-color: rgba(0, 0, 0, 0.08);
-  background-color: var(--calendar-area-bg);
+  background-color: var(--calendar-highlighted-bg);
   padding: 5px 52px;
   margin-bottom: 5px;
 }
@@ -8124,6 +8138,9 @@ html:not(.mobile) .calendar button:hover {
   display: block;
 }
 .calendar caption > button .icon {
+  width: 20px;
+  height: 20px;
+  stroke-width: 32px;
   opacity: 0.65;
 }
 .calendar-prev {
@@ -8175,25 +8192,17 @@ html:not(.mobile) .calendar button:hover {
 .calendar.round td button {
   border-radius: 6px;
 }
-html:not(.mobile) .calendar tbody td.today button:not([class*="ui-"]):hover {
-  background-color: rgba(0, 0, 0, 0.2);
-  background-color: var(--calendar-today-btn-hover-bg);
+.calendar.round .details > button {
+  border-radius: 6px;
 }
-html:not(.mobile) .calendar tbody td.today button[class*="ui-"]:hover {
-  opacity: 0.75;
+.calendar.round .details li {
+  border-radius: 6px;
 }
-.calendar tbody td.pickerday button {
-  color: #fff !important;
-  font-weight: 700;
-  background-color: #235ea0;
+.calendar.round .panel {
+  border-radius: 6px;
 }
-html:not(.mobile) .calendar tbody td.pickerday button:hover {
-  background-color: #3b83d4;
-}
-.calendar tbody td.passive span {
-  line-height: 20px;
-  padding: 8px;
-  display: block;
+.calendar.round .panel .call {
+  border-radius: 6px;
 }
 .calendar:not(.show-details) .details {
   opacity: 0;
@@ -8232,26 +8241,26 @@ html:not(.mobile) .calendar tbody td.pickerday button:hover {
   cursor: pointer;
 }
 .calendar .details > button .icon {
+  width: 20px;
+  height: 20px;
+  stroke-width: 32px;
   opacity: 0.65;
-}
-.calendar.round .details > button {
-  border-radius: 6px;
-}
-.calendar .details ul,
-.calendar .details ul * {
-  text-align: left !important;
 }
 .calendar .details ul {
   height: 100%;
   overflow-x: hidden !important;
   overflow-y: auto !important;
 }
+.calendar .details ul,
+.calendar .details ul * {
+  text-align: left !important;
+}
 .mobile .calendar .details ul {
   -webkit-overflow-scrolling: touch;
 }
 .calendar .details li {
   min-height: 10px;
-  padding: 10px;
+  padding: 10px 10px 10px 92px;
   display: block;
 }
 html:not(.mobile) .calendar .details li:hover {
@@ -8261,28 +8270,26 @@ html:not(.mobile) .calendar .details li:hover {
 .calendar .details li:not(:last-child) {
   margin-bottom: 20px;
 }
-.calendar.round .details li {
-  padding-left: 65px;
-  border-radius: 6px;
-}
 .calendar .details li > strong {
-  font-size: 44px;
+  font-size: 62px;
   font-weight: 300;
   letter-spacing: -0.025em;
   text-align: center !important;
-  line-height: 40px;
-  width: 45px;
-  margin-left: -55px;
+  line-height: 57px;
+  width: 62px;
+  margin-left: -82px;
   float: left;
 }
 .calendar .details li > b {
-  font-size: 15px;
-  margin: 10px 0 15px 0;
+  font-size: 16px;
+  margin: 10px 0 10px 0;
   display: inline-block;
 }
 .calendar .details li > span {
-  padding: 2px 0;
   display: block;
+}
+.calendar .details li > span:not(:last-child) {
+  margin-bottom: 2px;
 }
 .calendar .details li > span > i {
   font-size: 13px;
@@ -8290,7 +8297,7 @@ html:not(.mobile) .calendar .details li:hover {
   line-height: normal;
   background-color: rgba(0, 0, 0, 0.08);
   background-color: var(--btn-bg);
-  padding: 1px 4px;
+  padding: 2px 4px;
   margin-right: 5px;
   display: inline-block;
   border-radius: 10px;
@@ -8301,32 +8308,32 @@ html:not(.mobile) .calendar .details li:hover {
 .calendar .details li > span > a:hover {
   text-decoration: none;
 }
-.calendar .no-details li > strong {
-  height: 45px;
+.calendar .empty-details li > strong,
+.calendar .empty-details li > b,
+.calendar .empty-details li > span {
+  background-color: rgba(0, 0, 0, 0.12);
+  background-color: var(--calendar-empty-details-bg);
+}
+.calendar .empty-details li > strong {
+  height: 62px;
   border-radius: 50%;
 }
-.calendar .no-details li > b {
-  width: 120px;
-  height: 17px;
-  border-radius: 20px;
+.calendar .empty-details li > b {
+  width: 106.66666667px;
+  height: 20px;
+  border-radius: 10px;
 }
-.calendar .no-details li > span {
+.calendar .empty-details li > span {
   width: 280px;
-  height: 12px;
-  margin-bottom: 20px;
-  border-radius: 20px;
+  height: 10px;
+  margin-bottom: 10px !important;
+  border-radius: 10px;
 }
-.calendar .no-details li > span + span {
-  width: 220px;
+.calendar .empty-details li > span + span {
+  width: 240px;
 }
-.calendar .no-details li > span + span + span {
+.calendar .empty-details li > span + span + span {
   width: 160px;
-}
-.calendar .no-details li > strong,
-.calendar .no-details li > b,
-.calendar .no-details li > span {
-  background-color: rgba(0, 0, 0, 0.12);
-  background-color: var(--calendar-no-details-bg);
 }
 .calendar .panel {
   position: absolute;
@@ -8341,18 +8348,6 @@ html:not(.mobile) .calendar .details li:hover {
 .mobile .calendar .panel {
   -webkit-overflow-scrolling: touch;
 }
-.calendar.round .panel {
-  border-radius: 6px;
-}
-.calendar.show-panel .panel {
-  transform: translateY(0);
-}
-.calendar .calendar-container {
-  position: relative;
-}
-.calendar.show-panel .calendar-container {
-  transform: translateY(110%);
-}
 .calendar .panel ul {
   display: flex;
   flex-wrap: wrap;
@@ -8364,7 +8359,7 @@ html:not(.mobile) .calendar .details li:hover {
   flex-grow: 1;
 }
 .calendar .panel .call {
-  font-size: 16px;
+  font-size: 14px;
   white-space: nowrap;
   text-overflow: ellipsis;
   line-height: 100%;
@@ -8375,18 +8370,26 @@ html:not(.mobile) .calendar .details li:hover {
   overflow: hidden;
   border: 0;
 }
-.calendar.round .panel .call {
-  border-radius: 6px;
-}
 .calendar .panel .call.selected {
+  color: #fff !important;
   font-weight: 700;
-  background-color: rgba(0, 0, 0, 0.08);
-  background-color: var(--btn-bg);
+  background-color: #235ea0;
 }
-html:not(.mobile) .calendar .panel .call:hover,
 html:not(.mobile) .calendar .panel .call.selected:hover {
+  background-color: #3b83d4;
+}
+html:not(.mobile) .calendar .panel .call:hover {
   background-color: rgba(0, 0, 0, 0.15);
   background-color: var(--btn-hover-bg);
+}
+.calendar .calendar-container {
+  position: relative;
+}
+.calendar.show-panel .panel {
+  transform: translateY(0);
+}
+.calendar.show-panel .calendar-container {
+  transform: translateY(110%);
 }
 .text.calendar-picker {
   color: #000;
@@ -8394,7 +8397,7 @@ html:not(.mobile) .calendar .panel .call.selected:hover {
   overflow: visible !important;
 }
 .text.calendar-picker button:not([class*="ui-"]),
-.text.calendar-picker button:not([class*="ui-"]) .icon {
+.text.calendar-picker .text.calendar-picker button:not([class*="ui-"]) .icon {
   color: #000;
   color: var(--black);
 }
@@ -8405,10 +8408,13 @@ html:not(.mobile) .calendar .panel .call.selected:hover {
   z-index: 10;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
-.text .calendar:not(.open-ease) {
+.text .calendar .calendar:not(.open-ease) {
   opacity: 0;
 }
-.text:not(.picker-t):not(.border-dual) .calendar {
+.text:not(.picker-t).no-border .calendar {
+  margin-top: 1px;
+}
+.text:not(.picker-t):not(.border-dual):not(.no-border) .calendar {
   margin-top: 2px;
 }
 .text:not(.picker-t).border-dual .calendar {
@@ -8417,7 +8423,10 @@ html:not(.mobile) .calendar .panel .call.selected:hover {
 .text.picker-t .calendar {
   bottom: 100%;
 }
-.text.picker-t:not(.border-dual) .calendar {
+.text.picker-t.no-border .calendar {
+  margin-top: 1px;
+}
+.text.picker-t:not(.border-dual):not(.no-border) .calendar {
   margin-bottom: 2px;
 }
 .text.picker-t.border-dual .calendar {
@@ -8425,16 +8434,6 @@ html:not(.mobile) .calendar .panel .call.selected:hover {
 }
 .text.picker-l .calendar {
   right: 0;
-}
-@media (min-width: 481px) {
-  .text .calendar {
-    min-width: 376px;
-  }
-}
-@media (max-width: 480px) {
-  .text .calendar {
-    min-width: 296px;
-  }
 }
 /* carousel */
 @keyframes carousel-gallery-loader {
