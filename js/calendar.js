@@ -355,7 +355,7 @@ var calendar = {
 
                             } else {
 
-                                details = '<div class="details no-details">' +
+                                details = '<div class="details empty-details">' +
                                         '<button class="toggle-details" type="button" tabindex="-1">' +
                                             '<svg class="icon"><use href="#' + calendar.backIcon + '"/></svg>' +
                                         '</button>' +
