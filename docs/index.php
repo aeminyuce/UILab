@@ -98,7 +98,7 @@
         include ($page.'.php');
 ?>
 
-<button title="Toggle Theme" data-tooltip data-only="desktop" class="btn-toggle-color btn btn-lg btn-square round-l icons-no-opacity ease-btn set-fixed set-r set-cy">
+<button title="Toggle Theme" data-tooltip data-only="desktop" class="btn-toggle-color btn btn-lg btn-square round-l icons-no-opacity ease-btn set-fixed set-r" style="top: 80px;">
     <svg class="icon visible-dark"><use href="#moon-fill"/></svg>
     <svg class="icon visible-light"><use href="#sun-fill"/></svg>
 </button>
