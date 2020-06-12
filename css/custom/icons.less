@@ -47,9 +47,17 @@
     }
 }
 
-.icons-list { margin: -1px; display: flex; flex-wrap: wrap; justify-content: center; }
-.icons-list:not(:last-child) { margin-bottom: 30px; }
-.icons-list li { ._color-var(icons-list-color); max-width: 160px; ._bg-var(icons-list-bg); padding: 15px 10px; margin: 1px; border-radius: @round; cursor: pointer; flex-grow: 1; }
-html:not(.mobile) .icons-list li:hover { ._bg-var(icons-list-hover-bg); }
-.icons-list li > span { content: attr(data-name); ._color-var(icons-name-color); font-size: @font-size - 1; white-space: nowrap; text-overflow: ellipsis; line-height: normal; min-width: 129px; width: 100%; margin-top: 10px; overflow: hidden; display: block; }
-.icons-list li svg.icon:not([class*="animate-"]) { box-sizing: content-box; ._border-var(@var: icons-svg-border); }
+.icons-list {
+    margin: -1px; display: flex; flex-wrap: wrap; justify-content: center;
+
+    &:not(:last-child) { margin-bottom: 30px; }
+
+    li {
+        ._color-var(icons-list-color); max-width: 160px; ._bg-var(icons-list-bg); padding: 15px 10px; margin: 1px; border-radius: @round; cursor: pointer; flex-grow: 1;
+
+        html:not(.mobile) &:hover { ._bg-var(icons-list-hover-bg); }
+        & > span { content: attr(data-name); ._color-var(icons-name-color); font-size: @font-size - 1; white-space: nowrap; text-overflow: ellipsis; line-height: normal; min-width: 129px; width: 100%; margin-top: 10px; overflow: hidden; display: block; }
+
+        .icon:not([class*="animate-"]) { box-sizing: content-box; ._border-var(@var: icons-svg-border); }
+    }
+}

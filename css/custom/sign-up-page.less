@@ -35,15 +35,23 @@
     }
 }
 
-.signup-container { margin-top: -50px; }
-.signup-holder { ._gradient-var(sign-up-holder-bg); }
+.signup- {
+    &container { margin-top: -50px; }
+    &holder { ._gradient-var(sign-up-holder-bg); }
 
-.signup-icons .icon { position: absolute; }
-.signup-icons .icon:nth-child(1) { width: 52px; height: 52px; bottom: 70px; left: 202px; opacity: .15; transform: rotate(12deg); }
-.signup-icons .icon:nth-child(2) { width: 28px; height: 28px; bottom: 2px; left: 4px; opacity: .1; transform: rotate(-12deg); }
-.signup-icons .icon:nth-child(3) { width: 64px; height: 64px; top: 22px; left: 22px; opacity: .5; transform: rotate(-12deg); }
-.signup-icons .icon:nth-child(4) { width: 64px; height: 64px; bottom: 42px; right: -8px; opacity: .3; transform: rotate(-12deg); }
-.signup-icons .icon:nth-child(5) { width: 206px; height: 206px; top: -42px; right: 29%; opacity: .15; transform: rotate(12deg); }
+    &icons {
+        .icon {
+            position: absolute;
 
-.signup-btn { min-width: 42%; ._gradient-var(sign-up-btn-bg); }
+            &:nth-child(1) { width: 52px; height: 52px; bottom: 70px; left: 202px; opacity: .15; transform: rotate(12deg); }
+            &:nth-child(2) { width: 28px; height: 28px; bottom: 2px; left: 4px; opacity: .1; transform: rotate(-12deg); }
+            &:nth-child(3) { width: 64px; height: 64px; top: 22px; left: 22px; opacity: .5; transform: rotate(-12deg); }
+            &:nth-child(4) { width: 64px; height: 64px; bottom: 42px; right: -8px; opacity: .3; transform: rotate(-12deg); }
+            &:nth-child(5) { width: 206px; height: 206px; top: -42px; right: 29%; opacity: .15; transform: rotate(12deg); }
+        }
+    }
+
+    &btn { min-width: 42%; ._gradient-var(sign-up-btn-bg); }
+}
+
 .why-join { ._gradient-var(sign-up-why-bg); }

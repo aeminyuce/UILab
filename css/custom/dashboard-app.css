@@ -120,13 +120,13 @@ html:not(.mobile) .theme-app2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn-pas
 .round:not(.tooltip):not(.btn-square) {
   border-radius: 16px;
 }
-.list-group.round > ul > li:first-child,
-.list-group.round > ul > li:first-child > a {
+.round.list-group ul li:first-child,
+.round.list-group ul li:first-child > a {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }
-.list-group.round > ul > li:last-child,
-.list-group.round > ul > li:last-child > a {
+.round.list-group ul li:LAST-child,
+.round.list-group ul li:LAST-child > a {
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
 }
@@ -136,12 +136,8 @@ html:not(.mobile) .theme-app2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn-pas
 .contacts {
   white-space: nowrap;
 }
-.contacts li {
-  border: solid 3px transparent;
-  position: relative;
-}
 .contacts li:after,
-.status:after {
+.contacts .status:after {
   content: attr(data-msg);
   color: #fff;
   font-size: 11px;
@@ -156,13 +152,17 @@ html:not(.mobile) .theme-app2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn-pas
   border-radius: 50%;
   position: absolute;
 }
+.contacts li.online:after,
+.contacts .status.online:after {
+  background-color: #2dbd3a;
+}
+.contacts li {
+  border: solid 3px transparent;
+  position: relative;
+}
 .contacts li:after {
   bottom: -2px;
   right: -2px;
-}
-.contacts li.online:after,
-.status.online:after {
-  background-color: #2dbd3a;
 }
 .status {
   display: inline-block;

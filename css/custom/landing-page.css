@@ -115,7 +115,7 @@ html:not(.mobile) .theme-farmer2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn-
   z-index: 1;
 }
 .banner-slogan,
-.footer-social {
+.banner .footer-social {
   background-color: rgba(255, 255, 255, 0.45);
 }
 .banner-slogan > div {

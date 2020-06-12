@@ -49,23 +49,37 @@
 
 html,.login-page { height: 100%; }
 
-.login-holder { ._gradient-var(login-page-holder-bg); }
-.login-holder > .set-absolute { z-index: 1; }
-.login-holder .highlight-icon { width: 96px; height: 96px; }
+.login {
+    &-holder {
+        ._gradient-var(login-page-holder-bg);
+
+        & > .set-absolute { z-index: 1; }
+        .highlight-icon { width: 96px; height: 96px; }
+    }
+
+    &-btn { min-width: 26%; ._gradient-var(login-page-login-btn-bg); z-index: 1; }
+
+    &-forms-container { ._bg-var(login-page-forms-container-bg); }
+    &-container {
+        ._bg-var(login-page-container-bg);
+
+        & > .icon { width: 160px; height: 160px; position: absolute; top: 14%; right: 22%; transform: rotate(-12deg); }
+    }
+
+    &-icons {
+        .icon {
+            position: absolute;
+
+            &:nth-child(1) { width: 52px; height: 52px; bottom: 112px; left: 82px; opacity: .65; transform: rotate(12deg); }
+            &:nth-child(2) { width: 28px; height: 28px; bottom: 32px; left: 24px; opacity: .15; transform: rotate(-12deg); }
+            &:nth-child(3) { width: 84px; height: 84px; top: 20%; left: 10%; opacity: .15; transform: rotate(-12deg); }
+            &:nth-child(4) { width: 106px; height: 106px; bottom: 18px; right: 92px; opacity: .3; transform: rotate(-12deg); }
+            &:nth-child(5) { width: 38px; height: 38px; top: 72px; right: 20%; opacity: .15; transform: rotate(12deg); }
+        }
+    }
+}
 
 .go-signup-btn { ._gradient-var(login-page-signup-btn-bg); }
-.login-btn { min-width: 26%; ._gradient-var(login-page-login-btn-bg); z-index: 1; }
-
-.login-forms-container { ._bg-var(login-page-forms-container-bg); }
-.login-container { ._bg-var(login-page-container-bg); }
-.login-container > .icon { width: 160px; height: 160px; position: absolute; top: 14%; right: 22%; transform: rotate(-12deg); }
-
-.login-icons .icon { position: absolute; }
-.login-icons .icon:nth-child(1) { width: 52px; height: 52px; bottom: 112px; left: 82px; opacity: .65; transform: rotate(12deg); }
-.login-icons .icon:nth-child(2) { width: 28px; height: 28px; bottom: 32px; left: 24px; opacity: .15; transform: rotate(-12deg); }
-.login-icons .icon:nth-child(3) { width: 84px; height: 84px; top: 20%; left: 10%; opacity: .15; transform: rotate(-12deg); }
-.login-icons .icon:nth-child(4) { width: 106px; height: 106px; bottom: 18px; right: 92px; opacity: .3; transform: rotate(-12deg); }
-.login-icons .icon:nth-child(5) { width: 38px; height: 38px; top: 72px; right: 20%; opacity: .15; transform: rotate(12deg); }
 
 @media (@lg-start) {
     .login-forms-container { padding: 8% 0 8% 14% !important; }

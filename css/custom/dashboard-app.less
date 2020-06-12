@@ -41,26 +41,63 @@
 .card { height: 700px; border-radius: @app-round * 2; }
 .data-container { height: 532px; }
 
-.round:not(.tooltip):not(.btn-square) { border-radius: @app-round; }
-.list-group.round > ul > li:first-child,.list-group.round > ul > li:first-child > a { border-top-left-radius: @app-round; border-top-right-radius: @app-round; }
-.list-group.round > ul > li:last-child,.list-group.round > ul > li:last-child > a { border-bottom-left-radius: @app-round; border-bottom-right-radius: @app-round; }
+.round {
+    &:not(.tooltip):not(.btn-square) { border-radius: @app-round; }
+
+    &.list-group {
+        ul {
+            li {
+                &:first-child {
+                    &,& > a { border-top-left-radius: @app-round; border-top-right-radius: @app-round; }
+                }
+                &:LAST-child {
+                    &,& > a { border-bottom-left-radius: @app-round; border-bottom-right-radius: @app-round; }
+                }
+            }
+        }
+    }
+}
 
 .tab-content { border-radius: @app-round * 2 - @app-round / 2; }
 
-.contacts { white-space: nowrap; }
-.contacts li { border: solid 3px transparent; position: relative; }
-.contacts li:after,.status:after { content: attr(data-msg); color: @white; font-size: @x-small; font-weight: font-bold; text-align: center; width: 18px; height: 18px; background-color: @theme-app2; display: block; ._border-var(@width: 2px; @var: card-bg); border-radius: 50%; position: absolute; }
-.contacts li:after { bottom: -2px; right: -2px; }
-.contacts li.online:after,.status.online:after { background-color: @green; }
-.status { display: inline-block; position: relative; }
-.status:after { bottom: 2px; right: 2px; }
+.contacts {
+    white-space: nowrap;
 
-.messages { height: 432px; }
-.messages li { max-width: 80%; padding-left: 35px; clear: both; }
-.messages li:not(:last-child) { margin-bottom: 3px; }
-.messages li.left + .right,.messages li.right + .left { margin-top: 25px; }
-.messages li [class*="img-photo"] { margin-left: -35px; float: left; }
-.messages li > span:not([class*="img-photo"]) { padding: 6px 10px; display: inline-block; border-radius: @app-round; }
+    li,.status {
+        &:after { content: attr(data-msg); color: @white; font-size: @x-small; font-weight: font-bold; text-align: center; width: 18px; height: 18px; background-color: @theme-app2; display: block; ._border-var(@width: 2px; @var: card-bg); border-radius: 50%; position: absolute; }
+        &.online {
+            &:after { background-color: @green; }
+        }
+    }
+    li {
+        border: solid 3px transparent; position: relative;
+
+        &:after { bottom: -2px; right: -2px; }
+    }
+
+}
+
+.status {
+    display: inline-block; position: relative;
+
+    &:after { bottom: 2px; right: 2px; }
+}
+
+.messages {
+    height: 432px;
+
+    li {
+        max-width: 80%; padding-left: 35px; clear: both;
+
+        &:not(:last-child) { margin-bottom: 3px; }
+        &.left + .right,&.right + .left { margin-top: 25px; }
+
+        [class*="img-photo"] { margin-left: -35px; float: left; }
+        & > span {
+            &:not([class*="img-photo"]) { padding: 6px 10px; display: inline-block; border-radius: @app-round; }
+        }
+    }
+}
 
 @media (@lg-start) {
     .fixed { max-width: 1600px; }

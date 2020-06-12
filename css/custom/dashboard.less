@@ -34,12 +34,15 @@ body { overflow-x: hidden; }
 
 .sticky-header .sidebar { top: -62px; }
 header { ._bg-var(header-bg); }
-
 .dashboard-carousel { margin-bottom: -5px; }
 
 @media (min-width: 1480px) {
     .fixed-inner { max-width: 1480px; }
 }
 @media (@lg-start) {
-    header.sticky.sidebar-opened { width: calc(100% - 250px); left: 250px; }
+    header {
+        &.sticky {
+            &.sidebar-opened { width: calc(100% - 250px); left: 250px; }
+        }
+    }
 }

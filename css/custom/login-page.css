@@ -28,10 +28,6 @@ html,
   width: 96px;
   height: 96px;
 }
-.go-signup-btn {
-  background-image: linear-gradient(130deg, #8366b9, #6f113e);
-  background-image: var(--login-page-signup-btn-bg);
-}
 .login-btn {
   min-width: 26%;
   background-image: linear-gradient(130deg, #4ee273, #2dbd51);
@@ -96,6 +92,10 @@ html,
   right: 20%;
   opacity: 0.15;
   transform: rotate(12deg);
+}
+.go-signup-btn {
+  background-image: linear-gradient(130deg, #8366b9, #6f113e);
+  background-image: var(--login-page-signup-btn-bg);
 }
 @media (min-width: 1200px) {
   .login-forms-container {
