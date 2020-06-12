@@ -105,8 +105,8 @@
                                     </div>
                                     <div class="all-day largest xx-light align-c inline-block-1st padding-10 circle">
                                         <svg class="icon"><use href="#sunrise"/></svg>
-                                        <span class="light margin-30-r">05:53</span>
-                                        <span class="light">19:59</span>
+                                        <span class="margin-30-r">05:53</span>
+                                        <span>19:59</span>
                                         <svg class="icon"><use href="#sunset"/></svg>
                                     </div>
                                     <div class="padding-15 align-c">
@@ -176,8 +176,8 @@
                                     </div>
                                     <div class="all-day largest xx-light align-c inline-block-1st padding-10 circle">
                                         <svg class="icon"><use href="#sunrise"/></svg>
-                                        <span class="light margin-30-r">05:53</span>
-                                        <span class="light">19:59</span>
+                                        <span class="margin-30-r">05:53</span>
+                                        <span>19:59</span>
                                         <svg class="icon"><use href="#sunset"/></svg>
                                     </div>
                                     <div class="padding-15 align-c">
