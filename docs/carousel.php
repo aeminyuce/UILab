@@ -40,7 +40,7 @@
                                                 <span class="sp-10"></span>
                                                 Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
                                                 <span class="sp-15"></span>
-                                                <a href="#" class="btn btn-xs-fluid btn-lg ease-btn">
+                                                <a href="#" class="btn btn-xs-fluid btn-lg padding-20-h ease-btn">
                                                     Continue
                                                     <svg class="icon margin-5-l"><use href="#arrow-right"/></svg>
                                                 </a>
@@ -79,7 +79,7 @@
                                                 <span class="sp-10"></span>
                                                 Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
                                                 <span class="sp-15"></span>
-                                                <a href="#" class="btn btn-xs-fluid btn-lg ease-btn">
+                                                <a href="#" class="btn btn-xs-fluid btn-lg padding-20-h ease-btn">
                                                     Continue
                                                     <svg class="icon margin-5-l"><use href="#arrow-right"/></svg>
                                                 </a>
@@ -118,7 +118,7 @@
                                                 <span class="sp-10"></span>
                                                 Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
                                                 <span class="sp-15"></span>
-                                                <a href="#" class="btn btn-xs-fluid btn-lg ease-btn">
+                                                <a href="#" class="btn btn-xs-fluid btn-lg padding-20-h ease-btn">
                                                     Continue
                                                     <svg class="icon margin-5-l"><use href="#arrow-right"/></svg>
                                                 </a>
