@@ -159,7 +159,7 @@ var carousel = {
         slider = selector('.carousel-slider', that);
 
         size = col;
-        if (halfSized && col > 1) { size -= carousel.halfSize; }
+        if (halfSized && col > 1 && col !== contents.length) { size -= carousel.halfSize; }
 
         size = Math.round(that.offsetWidth / size);
 
