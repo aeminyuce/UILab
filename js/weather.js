@@ -108,7 +108,9 @@ var weather = {
             // date
             date = new Date();
 
-            day = date.getDay() - 1;
+            day = date.getDay();
+            if (day === 0) { day = 6; } else { day -= 1; }
+
             dateText = weather.days[day];
 
             day = day.toString();
