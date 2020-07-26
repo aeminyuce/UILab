@@ -73,7 +73,6 @@
                         </div>
                         <ul class="days icons-lg">
                             <li><b>Now</b><svg class="icon"><use href="#fog"/></svg><span>3</span></li>
-                            <li><b>Now</b><svg class="icon"><use href="#cloud-fog"/></svg><span>3</span></li>
                             <li>14<svg class="icon"><use href="#rain"/></svg><span>2</span></li>
                             <li>15<svg class="icon"><use href="#rain-heavy"/></svg><span>1</span></li>
                             <li>16<svg class="icon"><use href="#rain-snow"/></svg><span>0</span></li>
