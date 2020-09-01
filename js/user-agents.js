@@ -8,6 +8,7 @@ var useragents = {
     userLang: '',
     ie: false,
     edge: false,
+    edg: false,
     mobile: false,
     ios: false,
     android: false,
@@ -56,13 +57,20 @@ var useragents = {
             events.addClass(document, 'ie');
             events.removeClass(document, 'chrome');
 
-            if (ua.indexOf('edge') > -1) {
+            if (ua.indexOf('edge') > -1 || ua.indexOf('edg') > -1) {
 
                 useragents.edge = true;
                 events.removeClass(document, 'ie');
                 events.addClass(document, 'edge');
 
             }
+
+        }
+
+        if (ua.indexOf('edg') > -1) { // detect new Chromium Edge
+
+            useragents.edg = true;
+            events.addClass(document, 'edg');
 
         }
 
