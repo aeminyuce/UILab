@@ -65,9 +65,7 @@ var useragents = {
 
             }
 
-        }
-
-        if (ua.indexOf('edg') > -1) { // detect new Chromium Edge
+        } else if (ua.indexOf('edg') > -1) { // detect new Chromium Edge
 
             useragents.edg = true;
             events.addClass(document, 'edg');
