@@ -1,19 +1,19 @@
 /* sign up page */
 [data-theme="light"] {
-  --sign-up-holder-bg: linear-gradient(110deg, #624494, #080550, #6f113e);
-  --sign-up-btn-bg: linear-gradient(130deg, #4ee273, #2dbd51);
-  --sign-up-why-bg: linear-gradient(130deg, #fff, #e8e0ff, #fff);
+  --sign-up-holder-bg: linear-gradient(110deg, hsl(263, 37%, 42%), hsl(242, 88%, 17%), hsl(331, 73%, 25%));
+  --sign-up-btn-bg: linear-gradient(130deg, hsl(135, 72%, 60%), hsl(135, 62%, 46%));
+  --sign-up-why-bg: linear-gradient(130deg, hsl(0, 0%, 100%), hsl(255, 100%, 94%), hsl(0, 0%, 100%));
 }
 [data-theme="dark"] {
-  --sign-up-holder-bg: linear-gradient(110deg, #a671ff, #2d2a73, #9e2861);
-  --sign-up-btn-bg: linear-gradient(130deg, #2dbd51, #128a30);
-  --sign-up-why-bg: linear-gradient(130deg, #2f343e, #2e293c, #2f343e);
+  --sign-up-holder-bg: linear-gradient(110deg, hsl(262, 100%, 72%), hsl(242, 46%, 31%), hsl(331, 60%, 39%));
+  --sign-up-btn-bg: linear-gradient(130deg, hsl(135, 62%, 46%), hsl(135, 77%, 31%));
+  --sign-up-why-bg: linear-gradient(130deg, hsl(220, 14%, 21%), hsl(256, 19%, 20%), hsl(220, 14%, 21%));
 }
 .signup-container {
   margin-top: -50px;
 }
 .signup-holder {
-  background-image: linear-gradient(110deg, #624494, #080550, #6f113e);
+  background-image: linear-gradient(110deg, hsl(263, 37%, 42%), hsl(242, 88%, 17%), hsl(331, 73%, 25%));
   background-image: var(--sign-up-holder-bg);
 }
 .signup-icons .icon {
@@ -61,10 +61,10 @@
 }
 .signup-btn {
   min-width: 42%;
-  background-image: linear-gradient(130deg, #4ee273, #2dbd51);
+  background-image: linear-gradient(130deg, hsl(135, 72%, 60%), hsl(135, 62%, 46%));
   background-image: var(--sign-up-btn-bg);
 }
 .why-join {
-  background-image: linear-gradient(130deg, #fff, #e8e0ff, #fff);
+  background-image: linear-gradient(130deg, hsl(0, 0%, 100%), hsl(255, 100%, 94%), hsl(0, 0%, 100%));
   background-image: var(--sign-up-why-bg);
 }

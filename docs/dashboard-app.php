@@ -129,7 +129,7 @@
                                         <strong>SS</strong>
                                         <svg viewBox="0 0 160 160">
                                             <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                            <circle r="69.85699" cy="80" cx="80" stroke="#0070ff" data-percent="17" data-title="17%" />
+                                            <circle r="69.85699" cy="80" cx="80" stroke="hsl(214, 100%, 50%)" data-percent="17" data-title="17%" />
                                         </svg>
                                     </div>
                                 </div>
@@ -138,7 +138,7 @@
                                         <strong>SU</strong>
                                         <svg viewBox="0 0 160 160">
                                             <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                            <circle r="69.85699" cy="80" cx="80" stroke="#0070ff" data-percent="13" data-title="13%" />
+                                            <circle r="69.85699" cy="80" cx="80" stroke="hsl(214, 100%, 50%)" data-percent="13" data-title="13%" />
                                         </svg>
                                     </div>
                                 </div>
@@ -147,7 +147,7 @@
                                         <strong>SD</strong>
                                         <svg viewBox="0 0 160 160">
                                             <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                            <circle r="69.85699" cy="80" cx="80" stroke="#ff103b" data-percent="70" data-title="70%" />
+                                            <circle r="69.85699" cy="80" cx="80" stroke="hsl(349, 100%, 53%)" data-percent="70" data-title="70%" />
                                         </svg>
                                     </div>
                                 </div>

@@ -22,9 +22,9 @@
             <svg class="icon icon-sm margin-5-r"><use href="#truck"/></svg> Fast Delivery
         </span>
         <ul class="list-inline margin-15-v right">
-            <li class="circle padding-5 border-dual" style="border-color: #ee2329;"></li>
-            <li class="circle padding-5 border-dual" style="border-color: #d22fdf;"></li>
-            <li class="circle padding-5 border-dual" style="border-color: #248ddd;"></li>
+            <li class="circle padding-5 border-dual" style="border-color: hsl(358, 86%, 54%);"></li>
+            <li class="circle padding-5 border-dual" style="border-color: hsl(296, 73%, 53%);"></li>
+            <li class="circle padding-5 border-dual" style="border-color: hsl(206, 73%, 50%);"></li>
         </ul>
         <span class="left padding-15-v icons-xs">
             <svg class="icon font-yellow"><use href="#star-fill"/></svg>
@@ -59,8 +59,8 @@
             <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
         </span>
         <ul class="list-inline margin-15-v right">
-            <li class="circle padding-5 border-dual" style="border-color: #d22fdf;"></li>
-            <li class="circle padding-5 border-dual" style="border-color: #dedede;"></li>
+            <li class="circle padding-5 border-dual" style="border-color: hsl(296, 73%, 53%);"></li>
+            <li class="circle padding-5 border-dual" style="border-color: hsl(0, 0%, 87%);"></li>
         </ul>
         <span class="left padding-15-v icons-xs">
             <svg class="icon font-yellow"><use href="#star-fill"/></svg>
@@ -95,8 +95,8 @@
             <svg class="icon icon-sm margin-5-r"><use href="#truck"/></svg> Fast Delivery
         </span>
         <ul class="list-inline margin-15-v right">
-            <li class="circle padding-5 border-dual" style="border-color: #248ddd;"></li>
-            <li class="circle padding-5 border-dual" style="border-color: #3b3b3b;"></li>
+            <li class="circle padding-5 border-dual" style="border-color: hsl(206, 73%, 50%);"></li>
+            <li class="circle padding-5 border-dual" style="border-color: hsl(0, 0%, 23%);"></li>
         </ul>
         <span class="left padding-15-v icons-xs">
             <svg class="icon font-yellow"><use href="#star-fill"/></svg>
@@ -127,7 +127,7 @@
             <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
         </span>
         <ul class="list-inline margin-15-v right">
-            <li class="circle padding-5 border-dual" style="border-color: #dedede;"></li>
+            <li class="circle padding-5 border-dual" style="border-color: hsl(0, 0%, 87%);"></li>
         </ul>
         <span class="left padding-15-v icons-xs">
             <svg class="icon font-yellow"><use href="#star-fill"/></svg>
@@ -158,7 +158,7 @@
             <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
         </span>
         <ul class="list-inline margin-15-v right">
-            <li class="circle padding-10 border" style="background: #3b3b3b;"></li>
+            <li class="circle padding-10 border" style="background: hsl(0, 0%, 23%);"></li>
         </ul>
         <span class="left padding-15-v icons-xs">
             <svg class="icon font-yellow"><use href="#star-fill"/></svg>
@@ -194,8 +194,8 @@
             <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
         </span>
         <ul class="list-inline margin-15-v right">
-            <li class="circle padding-5 border-dual" style="border-color: #d22fdf;"></li>
-            <li class="circle padding-5 border-dual" style="border-color: #dedede;"></li>
+            <li class="circle padding-5 border-dual" style="border-color: hsl(296, 73%, 53%);"></li>
+            <li class="circle padding-5 border-dual" style="border-color: hsl(0, 0%, 87%);"></li>
         </ul>
         <span class="left padding-15-v icons-xs">
             <svg class="icon font-yellow"><use href="#star-fill"/></svg>

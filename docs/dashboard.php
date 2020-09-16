@@ -884,14 +884,14 @@
                                                 </strong>
                                                 <svg viewBox="0 0 160 160">
                                                     <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                                    <circle r="69.85699" cy="80" cx="80" stroke="#75dbe7" data-percent="69" />
+                                                    <circle r="69.85699" cy="80" cx="80" stroke="hsl(186, 70%, 68%)" data-percent="69" />
                                                 </svg>
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <div class="pie-chart automargin ease-pie-chart" data-text="Profit" style="max-width: 150px;">
                                                 <ul>
-                                                    <li data-percent="70" data-fill="#a4e87b"></li>
+                                                    <li data-percent="70" data-fill="hsl(97, 70%, 70%)"></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -920,7 +920,7 @@
                                                         <span class="donut-chart col-42 right ease-donut-chart">
                                                             <strong class="light x-small">88%</strong>
                                                             <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="88" />
+                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="88" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">AAC-2019-013:AGF</b>
@@ -930,7 +930,7 @@
                                                         <span class="donut-chart col-42 right ease-donut-chart">
                                                             <strong class="light x-small">76%</strong>
                                                             <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="76" />
+                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="76" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">BDA-2019-642</b>
@@ -940,7 +940,7 @@
                                                         <span class="donut-chart col-42 right ease-donut-chart">
                                                             <strong class="light x-small">69%</strong>
                                                             <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="69" />
+                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="69" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">DDG-2019-505:AG</b>
@@ -950,7 +950,7 @@
                                                         <span class="donut-chart col-42 right ease-donut-chart">
                                                             <strong class="light x-small">52%</strong>
                                                             <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="52" />
+                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="52" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">OOC-2019-781:F</b>
@@ -960,7 +960,7 @@
                                                         <span class="donut-chart col-42 right ease-donut-chart">
                                                             <strong class="light x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="36" />
+                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="36" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">BDD-2019-047:G</b>
@@ -970,7 +970,7 @@
                                                         <span class="donut-chart col-42 right ease-donut-chart">
                                                             <strong class="light x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="36" />
+                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="36" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">RAC-2019-973</b>
@@ -986,7 +986,7 @@
                                                         <span class="donut-chart col-42 right ease-donut-chart">
                                                             <strong class="light x-small">88%</strong>
                                                             <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="88" />
+                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="88" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">AAC-2019-013:AGF</b>
@@ -996,7 +996,7 @@
                                                         <span class="donut-chart col-42 right ease-donut-chart">
                                                             <strong class="light x-small">76%</strong>
                                                             <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="76" />
+                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="76" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">BDA-2019-642</b>
@@ -1006,7 +1006,7 @@
                                                         <span class="donut-chart col-42 right ease-donut-chart">
                                                             <strong class="light x-small">69%</strong>
                                                             <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="69" />
+                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="69" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">DDG-2019-505:AG</b>
@@ -1016,7 +1016,7 @@
                                                         <span class="donut-chart col-42 right ease-donut-chart">
                                                             <strong class="light x-small">52%</strong>
                                                             <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="52" />
+                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="52" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">OOC-2019-781:F</b>
@@ -1026,7 +1026,7 @@
                                                         <span class="donut-chart col-42 right ease-donut-chart">
                                                             <strong class="light x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="36" />
+                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="36" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">BDD-2019-047:G</b>
@@ -1036,7 +1036,7 @@
                                                         <span class="donut-chart col-42 right ease-donut-chart">
                                                             <strong class="light x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="#0ba8c0" data-percent="36" />
+                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="36" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">RAC-2019-973</b>

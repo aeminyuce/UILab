@@ -1,17 +1,17 @@
 /* icons */
 [data-theme="light"] {
-  --icons-list-color: #4a515a;
-  --icons-list-bg: rgba(0, 0, 0, 0.07);
-  --icons-list-hover-bg: rgba(0, 0, 0, 0.12);
-  --icons-svg-border: rgba(0, 0, 0, 0.01);
-  --icons-name-color: #666;
+  --icons-list-color: hsl(214, 10%, 32%);
+  --icons-list-bg: hsla(0, 0%, 0%, 0.07);
+  --icons-list-hover-bg: hsla(0, 0%, 0%, 0.12);
+  --icons-svg-border: hsla(0, 0%, 0%, 0.01);
+  --icons-name-color: hsl(0, 0%, 40%);
 }
 [data-theme="dark"] {
-  --icons-list-color: #fff;
-  --icons-list-bg: #2f343e;
-  --icons-list-hover-bg: #3c424d;
-  --icons-svg-border: rgba(255, 255, 255, 0.01);
-  --icons-name-color: #d0d0d0;
+  --icons-list-color: hsl(0, 0%, 100%);
+  --icons-list-bg: hsl(220, 14%, 21%);
+  --icons-list-hover-bg: hsl(219, 12%, 27%);
+  --icons-svg-border: hsla(0, 0%, 100%, 0.01);
+  --icons-name-color: hsl(0, 0%, 82%);
 }
 .icons-list {
   margin: -1px;
@@ -23,10 +23,10 @@
   margin-bottom: 30px;
 }
 .icons-list li {
-  color: #4a515a;
+  color: hsl(214, 10%, 32%);
   color: var(--icons-list-color);
   max-width: 160px;
-  background-color: rgba(0, 0, 0, 0.07);
+  background-color: hsla(0, 0%, 0%, 0.07);
   background-color: var(--icons-list-bg);
   padding: 15px 10px;
   margin: 1px;
@@ -35,12 +35,12 @@
   flex-grow: 1;
 }
 html:not(.mobile) .icons-list li:hover {
-  background-color: rgba(0, 0, 0, 0.12);
+  background-color: hsla(0, 0%, 0%, 0.12);
   background-color: var(--icons-list-hover-bg);
 }
 .icons-list li > span {
   content: attr(data-name);
-  color: #666;
+  color: hsl(0, 0%, 40%);
   color: var(--icons-name-color);
   font-size: 13px;
   white-space: nowrap;
@@ -54,6 +54,6 @@ html:not(.mobile) .icons-list li:hover {
 }
 .icons-list li .icon:not([class*="animate-"]) {
   box-sizing: content-box;
-  border: solid 1px rgba(0, 0, 0, 0.01);
+  border: solid 1px hsla(0, 0%, 0%, 0.01);
   border: solid 1px var(--icons-svg-border);
 }

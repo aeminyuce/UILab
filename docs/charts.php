@@ -336,7 +336,7 @@
                             <strong>HTML</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="25" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-percent="25" />
                             </svg>
                         </div>
                     </div>
@@ -345,7 +345,7 @@
                             <strong>CSS</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#a4e87b" data-percent="50" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(97, 70%, 70%)" data-percent="50" />
                             </svg>
                         </div>
                     </div>
@@ -354,7 +354,7 @@
                             <strong>JS</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#cd7be8" data-percent="75" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-percent="75" />
                             </svg>
                         </div>
                     </div>
@@ -363,7 +363,7 @@
                             <strong>PHP</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="90" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-percent="90" />
                             </svg>
                         </div>
                     </div>
@@ -375,8 +375,8 @@
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="15" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="85" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-percent="15" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-percent="85" />
                             </svg>
                         </div>
                     </div>
@@ -385,9 +385,9 @@
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="10" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="60" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#cd7be8" data-percent="30" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-percent="10" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-percent="60" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-percent="30" />
                             </svg>
                         </div>
                     </div>
@@ -396,10 +396,10 @@
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="10" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="20" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#cd7be8" data-percent="30" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#a4e87b" data-percent="40" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-percent="10" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-percent="20" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-percent="30" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(97, 70%, 70%)" data-percent="40" />
                             </svg>
                         </div>
                     </div>
@@ -408,11 +408,11 @@
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="20" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="20" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#cd7be8" data-percent="20" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#a4e87b" data-percent="20" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#75dbe7" data-percent="20" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-percent="20" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-percent="20" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-percent="20" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(97, 70%, 70%)" data-percent="20" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(186, 70%, 68%)" data-percent="20" />
                             </svg>
                         </div>
                     </div>
@@ -428,7 +428,7 @@
                             <strong>HTML</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="25" data-title="25% HTML" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-percent="25" data-title="25% HTML" />
                             </svg>
                         </div>
                     </div>
@@ -437,7 +437,7 @@
                             <strong>CSS</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#a4e87b" data-percent="50" data-title="50% CSS" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(97, 70%, 70%)" data-percent="50" data-title="50% CSS" />
                             </svg>
                         </div>
                     </div>
@@ -446,8 +446,8 @@
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="15" data-title="15% HTML" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="85" data-title="85% PHP" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-percent="15" data-title="15% HTML" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-percent="85" data-title="85% PHP" />
                             </svg>
                         </div>
                     </div>
@@ -456,9 +456,9 @@
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="10" data-title="10% HTML" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="60" data-title="60% PHP" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#cd7be8" data-percent="30" data-title="30% JS" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-percent="10" data-title="10% HTML" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-percent="60" data-title="60% PHP" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-percent="30" data-title="30% JS" />
                             </svg>
                         </div>
                     </div>
@@ -470,7 +470,7 @@
                             <strong>HTML</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="25" data-title="25% HTML" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-percent="25" data-title="25% HTML" />
                             </svg>
                         </div>
                     </div>
@@ -479,7 +479,7 @@
                             <strong>CSS</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#a4e87b" data-percent="50" data-title="50% CSS" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(97, 70%, 70%)" data-percent="50" data-title="50% CSS" />
                             </svg>
                         </div>
                     </div>
@@ -488,8 +488,8 @@
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="15" data-title="15% HTML" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="85" data-title="85% PHP" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-percent="15" data-title="15% HTML" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-percent="85" data-title="85% PHP" />
                             </svg>
                         </div>
                     </div>
@@ -498,9 +498,9 @@
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="10" data-title="10% HTML" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="60" data-title="60% PHP" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="#cd7be8" data-percent="30" data-title="30% JS" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-percent="10" data-title="10% HTML" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-percent="60" data-title="60% PHP" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-percent="30" data-title="30% JS" />
                             </svg>
                         </div>
                     </div>
@@ -515,71 +515,71 @@
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart">
                             <ul>
-                                <li data-percent="37" data-fill="#69aff4"></li>
+                                <li data-percent="37" data-fill="hsl(210, 86%, 68%)"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart">
                             <ul>
-                                <li data-percent="66" data-fill="#e78d44"></li>
+                                <li data-percent="66" data-fill="hsl(27, 77%, 59%)"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart">
                             <ul>
-                                <li data-percent="14" data-fill="#cd7be8"></li>
-                                <li data-percent="39" data-fill="#a4e87b"></li>
+                                <li data-percent="14" data-fill="hsl(285, 70%, 70%)"></li>
+                                <li data-percent="39" data-fill="hsl(97, 70%, 70%)"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart" data-text="Text">
                             <ul>
-                                <li data-percent="57" data-fill="#75dbe7"></li>
-                                <li data-percent="22" data-fill="#69aff4"></li>
+                                <li data-percent="57" data-fill="hsl(186, 70%, 68%)"></li>
+                                <li data-percent="22" data-fill="hsl(210, 86%, 68%)"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart">
                             <ul>
-                                <li data-percent="20" data-fill="#69aff4"></li>
-                                <li data-percent="20" data-fill="#e78d44"></li>
-                                <li data-percent="60" data-fill="#cd7be8"></li>
+                                <li data-percent="20" data-fill="hsl(210, 86%, 68%)"></li>
+                                <li data-percent="20" data-fill="hsl(27, 77%, 59%)"></li>
+                                <li data-percent="60" data-fill="hsl(285, 70%, 70%)"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart">
                             <ul>
-                                <li data-percent="15" data-fill="#a4e87b"></li>
-                                <li data-percent="16" data-fill="#75dbe7"></li>
-                                <li data-percent="39" data-fill="#69aff4"></li>
-                                <li data-percent="30" data-fill="#e78d44"></li>
+                                <li data-percent="15" data-fill="hsl(97, 70%, 70%)"></li>
+                                <li data-percent="16" data-fill="hsl(186, 70%, 68%)"></li>
+                                <li data-percent="39" data-fill="hsl(210, 86%, 68%)"></li>
+                                <li data-percent="30" data-fill="hsl(27, 77%, 59%)"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart">
                             <ul>
-                                <li data-percent="49" data-fill="#cd7be8"></li>
-                                <li data-percent="14" data-fill="#a4e87b"></li>
-                                <li data-percent="11" data-fill="#75dbe7"></li>
-                                <li data-percent="14" data-fill="#69aff4"></li>
-                                <li data-percent="12" data-fill="#e78d44"></li>
+                                <li data-percent="49" data-fill="hsl(285, 70%, 70%)"></li>
+                                <li data-percent="14" data-fill="hsl(97, 70%, 70%)"></li>
+                                <li data-percent="11" data-fill="hsl(186, 70%, 68%)"></li>
+                                <li data-percent="14" data-fill="hsl(210, 86%, 68%)"></li>
+                                <li data-percent="12" data-fill="hsl(27, 77%, 59%)"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart" data-text="Text">
                             <ul>
-                                <li data-percent="20" data-fill="#69aff4"></li>
-                                <li data-percent="15" data-fill="#e78d44"></li>
-                                <li data-percent="25" data-fill="#cd7be8"></li>
-                                <li data-percent="25" data-fill="#a4e87b"></li>
-                                <li data-percent="15" data-fill="#75dbe7"></li>
+                                <li data-percent="20" data-fill="hsl(210, 86%, 68%)"></li>
+                                <li data-percent="15" data-fill="hsl(27, 77%, 59%)"></li>
+                                <li data-percent="25" data-fill="hsl(285, 70%, 70%)"></li>
+                                <li data-percent="25" data-fill="hsl(97, 70%, 70%)"></li>
+                                <li data-percent="15" data-fill="hsl(186, 70%, 68%)"></li>
                             </ul>
                         </div>
                     </div>
@@ -593,30 +593,30 @@
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart">
                             <ul>
-                                <li data-percent="37" data-fill="#69aff4" data-title="37% HTML"></li>
+                                <li data-percent="37" data-fill="hsl(210, 86%, 68%)" data-title="37% HTML"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart">
                             <ul>
-                                <li data-percent="66" data-fill="#e78d44" data-title="66% PHP"></li>
+                                <li data-percent="66" data-fill="hsl(27, 77%, 59%)" data-title="66% PHP"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart">
                             <ul>
-                                <li data-percent="14" data-fill="#cd7be8" data-title="14% JS"></li>
-                                <li data-percent="39" data-fill="#a4e87b" data-title="39% CSS"></li>
+                                <li data-percent="14" data-fill="hsl(285, 70%, 70%)" data-title="14% JS"></li>
+                                <li data-percent="39" data-fill="hsl(97, 70%, 70%)" data-title="39% CSS"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart" data-text="Text">
                             <ul>
-                                <li data-percent="57" data-fill="#75dbe7" data-title="57% HTML"></li>
-                                <li data-percent="22" data-fill="#69aff4" data-title="22% ASP"></li>
+                                <li data-percent="57" data-fill="hsl(186, 70%, 68%)" data-title="57% HTML"></li>
+                                <li data-percent="22" data-fill="hsl(210, 86%, 68%)" data-title="22% ASP"></li>
                             </ul>
                         </div>
                     </div>
@@ -626,30 +626,30 @@
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart">
                             <ul>
-                                <li data-percent="37" data-fill="#69aff4" data-title="37% HTML"></li>
+                                <li data-percent="37" data-fill="hsl(210, 86%, 68%)" data-title="37% HTML"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart">
                             <ul>
-                                <li data-percent="66" data-fill="#e78d44" data-title="66% PHP"></li>
+                                <li data-percent="66" data-fill="hsl(27, 77%, 59%)" data-title="66% PHP"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart">
                             <ul>
-                                <li data-percent="14" data-fill="#cd7be8" data-title="14% JS"></li>
-                                <li data-percent="39" data-fill="#a4e87b" data-title="39% CSS"></li>
+                                <li data-percent="14" data-fill="hsl(285, 70%, 70%)" data-title="14% JS"></li>
+                                <li data-percent="39" data-fill="hsl(97, 70%, 70%)" data-title="39% CSS"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart" data-text="Text">
                             <ul>
-                                <li data-percent="57" data-fill="#75dbe7" data-title="57% HTML"></li>
-                                <li data-percent="22" data-fill="#69aff4" data-title="22% ASP"></li>
+                                <li data-percent="57" data-fill="hsl(186, 70%, 68%)" data-title="57% HTML"></li>
+                                <li data-percent="22" data-fill="hsl(210, 86%, 68%)" data-title="22% ASP"></li>
                             </ul>
                         </div>
                     </div>

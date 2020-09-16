@@ -125,7 +125,7 @@
                 <div class="align-c col-250 padding-10 round shadow-lg bg-black xx-light hidden-dark">
                     Default message
                 </div>
-                <div class="align-c col-250 padding-10 round shadow-lg hidden-light" style="background: #2f343e;">
+                <div class="align-c col-250 padding-10 round shadow-lg hidden-light" style="background: hsl(220, 14%, 21%);">
                     Default message
                 </div>
                 <span class="sp-15"></span>

@@ -1,24 +1,24 @@
 /* login page */
 [data-theme="light"] {
-  --login-page-forms-container-bg: #f6f4fc;
-  --login-page-container-bg: #e2d2ff;
-  --login-page-holder-bg: linear-gradient(110deg, #624494, #080550, #6f113e);
-  --login-page-login-btn-bg: linear-gradient(130deg, #4ee273, #2dbd51);
-  --login-page-signup-btn-bg: linear-gradient(130deg, #8366b9, #6f113e);
+  --login-page-forms-container-bg: hsl(255, 57%, 97%);
+  --login-page-container-bg: hsl(261, 100%, 91%);
+  --login-page-holder-bg: linear-gradient(110deg, hsl(263, 37%, 42%), hsl(242, 88%, 17%), hsl(331, 73%, 25%));
+  --login-page-login-btn-bg: linear-gradient(130deg, hsl(135, 72%, 60%), hsl(135, 62%, 46%));
+  --login-page-signup-btn-bg: linear-gradient(130deg, hsl(261, 37%, 56%), hsl(331, 73%, 25%));
 }
 [data-theme="dark"] {
   --login-page-forms-container-bg: transparent;
-  --login-page-container-bg: #2d1f46;
-  --login-page-holder-bg: linear-gradient(110deg, #a671ff, #2d2a73, #9e2861);
-  --login-page-login-btn-bg: linear-gradient(130deg, #2dbd51, #128a30);
-  --login-page-signup-btn-bg: linear-gradient(130deg, #a671ff, #9e2861);
+  --login-page-container-bg: hsl(262, 39%, 20%);
+  --login-page-holder-bg: linear-gradient(110deg, hsl(262, 100%, 72%), hsl(242, 46%, 31%), hsl(331, 60%, 39%));
+  --login-page-login-btn-bg: linear-gradient(130deg, hsl(135, 62%, 46%), hsl(135, 77%, 31%));
+  --login-page-signup-btn-bg: linear-gradient(130deg, hsl(262, 100%, 72%), hsl(331, 60%, 39%));
 }
 html,
 .login-page {
   height: 100%;
 }
 .login-holder {
-  background-image: linear-gradient(110deg, #624494, #080550, #6f113e);
+  background-image: linear-gradient(110deg, hsl(263, 37%, 42%), hsl(242, 88%, 17%), hsl(331, 73%, 25%));
   background-image: var(--login-page-holder-bg);
 }
 .login-holder > .set-absolute {
@@ -30,16 +30,16 @@ html,
 }
 .login-btn {
   min-width: 26%;
-  background-image: linear-gradient(130deg, #4ee273, #2dbd51);
+  background-image: linear-gradient(130deg, hsl(135, 72%, 60%), hsl(135, 62%, 46%));
   background-image: var(--login-page-login-btn-bg);
   z-index: 1;
 }
 .login-forms-container {
-  background-color: #f6f4fc;
+  background-color: hsl(255, 57%, 97%);
   background-color: var(--login-page-forms-container-bg);
 }
 .login-container {
-  background-color: #e2d2ff;
+  background-color: hsl(261, 100%, 91%);
   background-color: var(--login-page-container-bg);
 }
 .login-container > .icon {
@@ -94,7 +94,7 @@ html,
   transform: rotate(12deg);
 }
 .go-signup-btn {
-  background-image: linear-gradient(130deg, #8366b9, #6f113e);
+  background-image: linear-gradient(130deg, hsl(261, 37%, 56%), hsl(331, 73%, 25%));
   background-image: var(--login-page-signup-btn-bg);
 }
 @media (min-width: 1200px) {

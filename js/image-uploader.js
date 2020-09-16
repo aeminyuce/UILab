@@ -12,7 +12,7 @@ var imageUploader = {
     resizeHeight: 768, // resize height
 
     fill: false, // fill blank areas
-    fillColor: '#fff', // fill color
+    fillColor: 'hsl(0, 0%, 100%)', // fill color
 
     fit: true, // crop to fit images
 

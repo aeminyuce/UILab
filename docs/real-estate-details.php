@@ -86,7 +86,7 @@
                                 <div class="col-5x col-sm-4 col-xs-6">
                                     <div class="pie-chart ease-pie-chart" data-text="Total">
                                         <ul>
-                                            <li data-percent="78" data-fill="#a4e87b"></li>
+                                            <li data-percent="78" data-fill="hsl(97, 70%, 70%)"></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -98,7 +98,7 @@
                                         </strong>
                                         <svg viewBox="0 0 160 160">
                                             <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                            <circle r="69.85699" cy="80" cx="80" stroke="#75dbe7" data-percent="96" />
+                                            <circle r="69.85699" cy="80" cx="80" stroke="hsl(186, 70%, 68%)" data-percent="96" />
                                         </svg>
                                     </div>
                                 </div>
@@ -110,7 +110,7 @@
                                         </strong>
                                         <svg viewBox="0 0 160 160">
                                             <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                            <circle r="69.85699" cy="80" cx="80" stroke="#69aff4" data-percent="88" />
+                                            <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-percent="88" />
                                         </svg>
                                     </div>
                                 </div>
@@ -122,7 +122,7 @@
                                         </strong>
                                         <svg viewBox="0 0 160 160">
                                             <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                            <circle r="69.85699" cy="80" cx="80" stroke="#e78d44" data-percent="86" />
+                                            <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-percent="86" />
                                         </svg>
                                     </div>
                                 </div>
@@ -134,7 +134,7 @@
                                         </strong>
                                         <svg viewBox="0 0 160 160">
                                             <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                            <circle r="69.85699" cy="80" cx="80" stroke="#cd7be8" data-percent="80" />
+                                            <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-percent="80" />
                                         </svg>
                                     </div>
                                 </div>
@@ -195,7 +195,7 @@
 
                 <div class="card margin-20-b round shadow-lg">
                     <div class="padding-30-h padding-10-v">
-                        <b>Previous Offers / <span style="color: #ff9f40;">Averages</span></b>
+                        <b>Previous Offers / <span style="color: hsl(30, 100%, 63%);">Averages</span></b>
                         <div class="line-charts ease-line-charts" data-size="5,20" data-x="1,2,3,4,5">
                             <ul class="line" data-type="curved dotted">
                                 <li data-y="820000"></li>

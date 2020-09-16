@@ -42,31 +42,31 @@
                         <div class="padding-15 md-align-c border-b">
                             <h5 class="margin-10-b x-dark">COLORS</h5>
                             <label class="custom">
-                                <span class="check-custom no-border circle ease-form" style="background: #ee2329;">
+                                <span class="check-custom no-border circle ease-form" style="background: hsl(358, 86%, 54%);">
                                     <input type="checkbox" checked>
                                     <i class="state bg-white circle"></i>
                                 </span>
                             </label>
                             <label class="custom">
-                                <span class="check-custom no-border circle ease-form" style="background: #d22fdf;">
+                                <span class="check-custom no-border circle ease-form" style="background: hsl(296, 73%, 53%);">
                                     <input type="checkbox" checked>
                                     <i class="state bg-white circle"></i>
                                 </span>
                             </label>
                             <label class="custom">
-                                <span class="check-custom no-border circle ease-form" style="background: #248ddd;">
+                                <span class="check-custom no-border circle ease-form" style="background: hsl(206, 73%, 50%);">
                                     <input type="checkbox" checked>
                                     <i class="state bg-white circle"></i>
                                 </span>
                             </label>
                             <label class="custom">
-                                <span class="check-custom no-border circle ease-form" style="background: #e96b3a;">
+                                <span class="check-custom no-border circle ease-form" style="background: hsl(17, 80%, 57%);">
                                     <input type="checkbox">
                                     <i class="state bg-white circle"></i>
                                 </span>
                             </label>
                             <label class="custom">
-                                <span class="check-custom no-border circle ease-form" style="background: #f0ce44;">
+                                <span class="check-custom no-border circle ease-form" style="background: hsl(48, 85%, 60%);">
                                     <input type="checkbox">
                                     <i class="state bg-white circle"></i>
                                 </span>
@@ -75,7 +75,7 @@
                             <span class="clearfix hidden-md"></span>
 
                             <label class="custom">
-                                <span class="check-custom no-border circle ease-form" style="background: #15181d;">
+                                <span class="check-custom no-border circle ease-form" style="background: hsl(218, 16%, 10%);">
                                     <input type="checkbox" checked>
                                     <i class="state bg-white circle"></i>
                                 </span>
@@ -83,7 +83,7 @@
                             <label class="custom">
                                 <span class="check-custom border bg-white circle ease-form">
                                     <input type="checkbox" checked>
-                                    <i class="state circle border" style="background: #f5f5f5;"></i>
+                                    <i class="state circle border" style="background: hsl(0, 0%, 96%);"></i>
                                 </span>
                             </label>
                         </div>
@@ -206,11 +206,11 @@
                                 <span class="large">Current prices <b>12% lower</b> than, average prices!</span>
                                 <ul class="list-unstyled dark margin-15-t inline-block-2nd">
                                     <li>
-                                        <b class="circle padding-5 margin-4-l margin-5-r" style="background: #ff9f40;"></b>
+                                        <b class="circle padding-5 margin-4-l margin-5-r" style="background: hsl(30, 100%, 63%);"></b>
                                         <span>Headphones Averages</span>
                                     </li>
                                     <li>
-                                        <b class="circle padding-5 margin-4-l margin-5-r" style="background: #36a2eb;"></b>
+                                        <b class="circle padding-5 margin-4-l margin-5-r" style="background: hsl(204, 82%, 57%);"></b>
                                         <span>Over-Ear Headphones Averages</span>
                                     </li>
                                 </ul>
@@ -281,9 +281,9 @@
                                     <svg class="icon icon-sm margin-5-r"><use href="#truck"/></svg> Fast Delivery
                                 </span>
                                 <ul class="list-inline margin-15-v right">
-                                    <li class="circle padding-5 border-dual" style="border-color: #ee2329;"></li>
-                                    <li class="circle padding-5 border-dual" style="border-color: #d22fdf;"></li>
-                                    <li class="circle padding-5 border-dual" style="border-color: #248ddd;"></li>
+                                    <li class="circle padding-5 border-dual" style="border-color: hsl(358, 86%, 54%);"></li>
+                                    <li class="circle padding-5 border-dual" style="border-color: hsl(296, 73%, 53%);"></li>
+                                    <li class="circle padding-5 border-dual" style="border-color: hsl(206, 73%, 50%);"></li>
                                 </ul>
                                 <span class="left padding-15-v icons-xs">
                                     <svg class="icon font-yellow"><use href="#star-fill"/></svg>
@@ -318,8 +318,8 @@
                                     <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
                                 <ul class="list-inline margin-15-v right">
-                                    <li class="circle padding-5 border-dual" style="border-color: #d22fdf;"></li>
-                                    <li class="circle padding-5 border-dual" style="border-color: #dedede;"></li>
+                                    <li class="circle padding-5 border-dual" style="border-color: hsl(296, 73%, 53%);"></li>
+                                    <li class="circle padding-5 border-dual" style="border-color: hsl(0, 0%, 87%);"></li>
                                 </ul>
                                 <span class="left padding-15-v icons-xs">
                                     <svg class="icon font-yellow"><use href="#star-fill"/></svg>
@@ -354,8 +354,8 @@
                                     <svg class="icon icon-sm margin-5-r"><use href="#truck"/></svg> Fast Delivery
                                 </span>
                                 <ul class="list-inline margin-15-v right">
-                                    <li class="circle padding-5 border-dual" style="border-color: #248ddd;"></li>
-                                    <li class="circle padding-5 border-dual" style="border-color: #3b3b3b;"></li>
+                                    <li class="circle padding-5 border-dual" style="border-color: hsl(206, 73%, 50%);"></li>
+                                    <li class="circle padding-5 border-dual" style="border-color: hsl(0, 0%, 23%);"></li>
                                 </ul>
                                 <span class="left padding-15-v icons-xs">
                                     <svg class="icon font-yellow"><use href="#star-fill"/></svg>
@@ -386,7 +386,7 @@
                                     <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
                                 <ul class="list-inline margin-15-v right">
-                                    <li class="circle padding-5 border-dual" style="border-color: #dedede;"></li>
+                                    <li class="circle padding-5 border-dual" style="border-color: hsl(0, 0%, 87%);"></li>
                                 </ul>
                                 <span class="left padding-15-v icons-xs">
                                     <svg class="icon font-yellow"><use href="#star-fill"/></svg>
@@ -417,7 +417,7 @@
                                     <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
                                 <ul class="list-inline margin-15-v right">
-                                    <li class="circle padding-10 border" style="background: #3b3b3b;"></li>
+                                    <li class="circle padding-10 border" style="background: hsl(0, 0%, 23%);"></li>
                                 </ul>
                                 <span class="left padding-15-v icons-xs">
                                     <svg class="icon font-yellow"><use href="#star-fill"/></svg>
@@ -453,8 +453,8 @@
                                     <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
                                 <ul class="list-inline margin-15-v right">
-                                    <li class="circle padding-5 border-dual" style="border-color: #d22fdf;"></li>
-                                    <li class="circle padding-5 border-dual" style="border-color: #dedede;"></li>
+                                    <li class="circle padding-5 border-dual" style="border-color: hsl(296, 73%, 53%);"></li>
+                                    <li class="circle padding-5 border-dual" style="border-color: hsl(0, 0%, 87%);"></li>
                                 </ul>
                                 <span class="left padding-15-v icons-xs">
                                     <svg class="icon font-yellow"><use href="#star-fill"/></svg>

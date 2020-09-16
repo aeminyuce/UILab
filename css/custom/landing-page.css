@@ -1,99 +1,99 @@
 /* landing page */
 .theme-farmer.ui-x-light,
 .theme-farmer .ui-x-light:not([class*="theme-"]) {
-  background-color: rgba(255, 186, 12, 0.15);
+  background-color: hsla(43, 100%, 52%, 0.15);
 }
 html:not(.mobile) .theme-farmer.ui-x-light.hover:hover,
 html:not(.mobile) .theme-farmer .ui-x-light:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-farmer.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-farmer .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(255, 186, 12, 0.5);
+  background-color: hsla(43, 100%, 52%, 0.5);
 }
 .theme-farmer.ui-light,
 .theme-farmer .ui-light:not([class*="theme-"]) {
-  background-color: rgba(255, 186, 12, 0.25);
+  background-color: hsla(43, 100%, 52%, 0.25);
 }
 html:not(.mobile) .theme-farmer.ui-light.hover:hover,
 html:not(.mobile) .theme-farmer .ui-light:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-farmer.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-farmer .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(255, 186, 12, 0.5);
+  background-color: hsla(43, 100%, 52%, 0.5);
 }
 .theme-farmer.ui-dark,
 .theme-farmer .ui-dark:not([class*="theme-"]) {
-  background-color: #ffba0c;
+  background-color: hsl(43, 100%, 52%);
 }
 html:not(.mobile) .theme-farmer.ui-dark.hover:hover,
 html:not(.mobile) .theme-farmer .ui-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-farmer.ui-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-farmer .ui-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #ffd772;
+  background-color: hsl(43, 100%, 72%);
 }
 .theme-farmer.ui-x-dark,
 .theme-farmer .ui-x-dark:not([class*="theme-"]) {
-  background-color: #d89b00;
+  background-color: hsl(43, 100%, 42%);
 }
 html:not(.mobile) .theme-farmer.ui-x-dark.hover:hover,
 html:not(.mobile) .theme-farmer .ui-x-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-farmer.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-farmer .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #595959;
+  background-color: hsl(0, 0%, 35%);
 }
 .theme-farmer.ui-text,
 .theme-farmer .ui-text:not([class*="theme-"]) {
-  color: #ffba0c;
+  color: hsl(43, 100%, 52%);
 }
 .theme-farmer.ui-border,
 .theme-farmer .ui-border:not([class*="theme-"]) {
-  border-color: #ffba0c;
+  border-color: hsl(43, 100%, 52%);
 }
 .theme-farmer2.ui-x-light,
 .theme-farmer2 .ui-x-light:not([class*="theme-"]) {
-  background-color: rgba(17, 218, 84, 0.15);
+  background-color: hsla(140, 86%, 46%, 0.15);
 }
 html:not(.mobile) .theme-farmer2.ui-x-light.hover:hover,
 html:not(.mobile) .theme-farmer2 .ui-x-light:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-farmer2.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-farmer2 .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(17, 218, 84, 0.5);
+  background-color: hsla(140, 86%, 46%, 0.5);
 }
 .theme-farmer2.ui-light,
 .theme-farmer2 .ui-light:not([class*="theme-"]) {
-  background-color: rgba(17, 218, 84, 0.25);
+  background-color: hsla(140, 86%, 46%, 0.25);
 }
 html:not(.mobile) .theme-farmer2.ui-light.hover:hover,
 html:not(.mobile) .theme-farmer2 .ui-light:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-farmer2.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-farmer2 .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: rgba(17, 218, 84, 0.5);
+  background-color: hsla(140, 86%, 46%, 0.5);
 }
 .theme-farmer2.ui-dark,
 .theme-farmer2 .ui-dark:not([class*="theme-"]) {
-  background-color: #11da54;
+  background-color: hsl(140, 86%, 46%);
 }
 html:not(.mobile) .theme-farmer2.ui-dark.hover:hover,
 html:not(.mobile) .theme-farmer2 .ui-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-farmer2.ui-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-farmer2 .ui-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #5ff290;
+  background-color: hsl(140, 86%, 66%);
 }
 .theme-farmer2.ui-x-dark,
 .theme-farmer2 .ui-x-dark:not([class*="theme-"]) {
-  background-color: #0dab42;
+  background-color: hsl(140, 86%, 36%);
 }
 html:not(.mobile) .theme-farmer2.ui-x-dark.hover:hover,
 html:not(.mobile) .theme-farmer2 .ui-x-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-farmer2.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-farmer2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: #595959;
+  background-color: hsl(0, 0%, 35%);
 }
 .theme-farmer2.ui-text,
 .theme-farmer2 .ui-text:not([class*="theme-"]) {
-  color: #11da54;
+  color: hsl(140, 86%, 46%);
 }
 .theme-farmer2.ui-border,
 .theme-farmer2 .ui-border:not([class*="theme-"]) {
-  border-color: #11da54;
+  border-color: hsl(140, 86%, 46%);
 }
 .col-220 {
   width: 220px;
@@ -104,7 +104,7 @@ html:not(.mobile) .theme-farmer2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn-
 }
 .banner-content:after {
   content: "";
-  background-color: rgba(11, 147, 57, 0.4);
+  background-color: hsla(140, 86%, 31%, 0.4);
   position: absolute;
   top: 0;
   right: 0;
@@ -116,10 +116,10 @@ html:not(.mobile) .theme-farmer2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn-
 }
 .banner-slogan,
 .banner .footer-social {
-  background-color: rgba(255, 255, 255, 0.45);
+  background-color: hsla(0, 0%, 100%, 0.45);
 }
 .banner-slogan > div {
-  background-color: rgba(255, 186, 12, 0.8);
+  background-color: hsla(43, 100%, 52%, 0.8);
 }
 .highlight-links {
   margin-top: -80px;
