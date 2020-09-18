@@ -4336,8 +4336,7 @@ html:not(.mobile) .btn.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-ligh
   width: 100%;
   display: block;
 }
-.btn-list > .btn:not(:first-child),
-.btn-list > .btn:not(:last-child) {
+.btn-list > .btn:not(:first-child) {
   border-top: 0;
 }
 .btn-list > .btn:not(:last-child):not(.border):not(.border-dual):not(.border-b) {
@@ -4356,6 +4355,9 @@ html:not(.mobile) .btn.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-ligh
 }
 .btn-list > .btn:last-child:not(.border):not(.border-dual):not(.border-dual) {
   border-bottom: 0;
+}
+.btn-list > .btn:not(:first-child):not(:last-child) {
+  border-radius: 0;
 }
 .btn-holder {
   display: flex;

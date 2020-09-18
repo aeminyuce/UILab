@@ -223,7 +223,7 @@
 .btn-list > .btn {
     ._create-btn-list(); display: block;
 
-    &:not(:last-child) { &:extend(.btn-list > .btn:not(:first-child)); }
+    &:not(:first-child):not(:last-child) { border-radius: 0; }
 }
 
 ._create-btn-holder() {
