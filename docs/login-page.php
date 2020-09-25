@@ -51,6 +51,7 @@
                     </button>
 
                 </form>
+
                 <form id="lost-password" class="tab-content" action="#">
 
                     <h3 class="margin-30-b">Forgot password?</h3>
