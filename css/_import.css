@@ -436,12 +436,10 @@ html:not(.mobile) .hidden-dekstop,
   overflow: auto !important;
 }
 .scroll-v {
-  overflow-x: hidden !important;
   overflow-y: auto !important;
 }
 .scroll-h {
   overflow-x: auto !important;
-  overflow-y: hidden !important;
 }
 .no-scroll {
   overflow: hidden !important;
@@ -3809,11 +3807,11 @@ pre,
 xmp {
   color: hsl(0, 0%, 20%);
   color: var(--pre-color);
-  white-space: pre-wrap;
-  word-wrap: break-word;
   background-color: hsl(0, 0%, 93%);
   background-color: var(--pre-bg);
   padding: 10px !important;
+  overflow-x: auto !important;
+  overflow-y: auto !important;
   display: block;
   border: 1px solid hsla(0, 0%, 100%, 0.15);
 }
@@ -6483,7 +6481,7 @@ html:not(.mobile) .btn-youtube:hover {
   border-color: hsl(0, 0%, 100%);
   border-color: var(--highlighted);
 }
-.card .photos-holder [class*="img-photo"] [class*="img-photo"] {
+.card .photos-holder [class*="img-photo"] {
   border-color: hsl(0, 0%, 100%);
   border-color: var(--card-bg);
 }
