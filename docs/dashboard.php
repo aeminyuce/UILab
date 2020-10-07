@@ -27,7 +27,7 @@
                         <div class="btn-holder align-c round ease-1st-btn">
                             <button class="btn btn-multi padding-10-v round">
 
-                                <span class="xx-large xx-light">13</span>
+                                <span class="xx-large">13</span>
                                 <span class="small light margin-5-b block">Waiting</span>
                                 <span class="progress-bar round border-dual">
                                     <span class="ui-dark stripe-light" style="width: 65%;"></span>
@@ -36,7 +36,7 @@
                             </button>
                             <button class="btn btn-multi padding-10-v round">
 
-                                <span class="xx-large xx-light">3</span>
+                                <span class="xx-large">3</span>
                                 <span class="small light margin-5-b block">Paused</span>
                                 <span class="progress-bar round border-dual">
                                     <span class="ui-dark stripe-light" style="width: 35%;"></span>
@@ -45,7 +45,7 @@
                             </button>
                             <button class="btn btn-multi padding-10-v round">
 
-                                <span class="xx-large xx-light">16</span>
+                                <span class="xx-large">16</span>
                                 <span class="small light margin-5-b block">Delayed</span>
                                 <span class="progress-bar round border-dual">
                                     <span class="ui-dark stripe-light" style="width: 75%;"></span>
