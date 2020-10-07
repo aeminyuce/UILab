@@ -33,6 +33,9 @@
 
             &:not([class*="animate-"]) { animation: progress-fill 2s ease-in-out forwards; }
         }
+        &.border > span {
+            height: @progress-bar-default-size - @progress-bar-padding * 2 - 2;
+        }
         &.border-dual > span {
             height: @progress-bar-default-size - @progress-bar-padding * 2 - @border-dual * 2;
         }

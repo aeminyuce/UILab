@@ -6564,6 +6564,9 @@ html:not(.mobile) .btn-youtube:hover {
 .progress-bar > span:not([class*="animate-"]) {
   animation: progress-fill 2s ease-in-out forwards;
 }
+.progress-bar.border > span {
+  height: 8px;
+}
 .progress-bar.border-dual > span {
   height: 6px;
 }
