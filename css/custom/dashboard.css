@@ -1,6 +1,6 @@
 /* dashboard */
 [data-theme="light"] {
-  --header-bg: hsl(0, 0%, 98%);
+  --header-bg: hsl(0, 0%, 100%);
 }
 [data-theme="dark"] {
   --header-bg: hsl(220, 15%, 16%);
@@ -104,12 +104,15 @@ html:not(.mobile) .theme-panel2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn-p
 body {
   overflow-x: hidden;
 }
+header {
+  background-color: hsl(0, 0%, 100%);
+  background-color: var(--header-bg);
+}
 .sticky-header .sidebar {
   top: -62px;
 }
-header {
-  background-color: hsl(0, 0%, 98%);
-  background-color: var(--header-bg);
+.sidebar .tabs {
+  height: calc(100% - 62px);
 }
 .dashboard-carousel {
   margin-bottom: -5px;

@@ -10,16 +10,16 @@
 
         <!-- sidebar -->
         <div class="sidebar col-250 set-relative visible-lg theme-panel ease-width ease-slow ease-in-out">
-            <div class="col-250 full-h set-fixed set-l ui-dark scroll-v ease-layout ease-slow ease-in-out">
+            <div class="col-250 full-h set-fixed set-l ui-dark ease-layout ease-slow ease-in-out">
 
                 <div class="ui-x-dark set-relative">
                     <img src="img/logo-udashboard.png" width="194" height="62" alt="">
                     <button class="sidebar-hide opacity-more padding-10-h ease-btn set-absolute set-cy set-r" data-tooltip title="Toggle Sidebar">
-                        <svg class="icon"><use href="#bars"/></svg>
+                        <svg class="icon"><use href="#angle-left"/></svg>
                     </button>
                 </div>
 
-                <div class="tabs align-l icons-no-opacity theme-panel2 ease-tabs ease-1st-btn add-mobile-menu-l" data-classes="ui-text">
+                <div class="tabs align-l icons-no-opacity theme-panel2 ease-tabs ease-1st-btn scroll-v add-mobile-menu-l" data-classes="ui-text">
 
                     <div class="padding-10">
                         <div class="small margin-10-b light">Personal Activity</div>
@@ -60,7 +60,7 @@
                         Dashboard
                     </a>
 
-                    <button class="tab btn-toggle btn btn-lg btn-ghost block ui-text active">
+                    <button class="tab btn-toggle btn btn-lg btn-ghost padding-10-r block ui-text active">
                         <svg class="icon margin-15-r"><use href="#users"/></svg>
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Employees
@@ -96,7 +96,7 @@
                         </ul>
                     </div>
 
-                    <button class="tab btn-toggle btn btn-lg btn-ghost block">
+                    <button class="tab btn-toggle btn btn-lg btn-ghost padding-10-r block">
                         <svg class="icon margin-15-r"><use href="#moneys"/></svg>
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Payments
@@ -111,7 +111,7 @@
                         </ul>
                     </div>
 
-                    <button class="tab btn-toggle btn btn-lg btn-ghost block">
+                    <button class="tab btn-toggle btn btn-lg btn-ghost padding-10-r block">
                         <svg class="icon margin-15-r"><use href="#calendar-check"/></svg>
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Events
@@ -125,7 +125,7 @@
                         </ul>
                     </div>
 
-                    <button class="tab btn-toggle btn btn-lg btn-ghost block">
+                    <button class="tab btn-toggle btn btn-lg btn-ghost padding-10-r block">
                         <svg class="icon margin-15-r"><use href="#files"/></svg>
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Documents
@@ -141,7 +141,7 @@
                         </ul>
                     </div>
 
-                    <button class="tab btn-toggle btn btn-lg btn-ghost block">
+                    <button class="tab btn-toggle btn btn-lg btn-ghost padding-10-r block">
                         <svg class="icon margin-15-r"><use href="#chart-line"/></svg>
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Statistics
@@ -155,7 +155,7 @@
                         </ul>
                     </div>
 
-                    <button class="tab btn-toggle btn btn-lg btn-ghost block">
+                    <button class="tab btn-toggle btn btn-lg btn-ghost padding-10-r block">
                         <svg class="icon margin-15-r"><use href="#doc"/></svg>
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Reports
@@ -171,7 +171,7 @@
                         </ul>
                     </div>
 
-                    <button class="tab btn-toggle btn btn-lg btn-ghost block">
+                    <button class="tab btn-toggle btn btn-lg btn-ghost padding-10-r block">
                         <svg class="icon margin-15-r"><use href="#truck"/></svg>
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Orders
@@ -214,7 +214,7 @@
 
                 <div class="align-c left ease-1st-btn">
                     <button class="sidebar-show btn dark btn-ghost padding-10 circle visible-lg hidden" data-tooltip title="Toggle Sidebar">
-                        <svg class="icon"><use href="#bars"/></svg>
+                        <svg class="icon"><use href="#angle-right"/></svg>
                     </button>
                     <button class="btn dark btn-ghost padding-10 circle show-mobile-menu-l hidden-lg" data-tooltip title="Show Sidebar" data-only="desktop">
                         <svg class="icon"><use href="#bars-left"/></svg>
