@@ -9,8 +9,19 @@ var lineCharts = {
     rowsHeight: 50, // set height of single row (px)
 
     // set chart colors
-    colors: ['hsl(204, 82%, 57%)', 'hsl(30, 100%, 63%)', 'hsl(347, 100%, 69%)', 'hsl(260, 100%, 70%)', 'hsl(180, 48%, 52%)', 'hsl(42, 100%, 67%)', 'hsl(13, 26%, 41%)', 'hsl(65, 49%, 54%)', 'hsl(0, 0%, 42%)', 'hsl(225, 43%, 57%)'],
-
+    colors: [
+        'hsl(4, 86%, 54%)',
+        'hsl(0, 0%, 25%)',
+        'hsl(30, 100%, 63%)',
+        'hsl(347, 100%, 69%)',
+        'hsl(260, 100%, 70%)',
+        'hsl(180, 48%, 52%)',
+        'hsl(42, 100%, 67%)',
+        'hsl(13, 26%, 41%)',
+        'hsl(65, 49%, 54%)',
+        'hsl(0, 0%, 42%)',
+        'hsl(225, 43%, 57%)'
+    ],
     top: 6, // set top space (px)
     right: 8, // set right space (px)
     bottom: 15, // set bottom space (px)
