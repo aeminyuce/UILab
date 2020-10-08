@@ -248,7 +248,7 @@
             <div class="col-static no-fluid">
                 <div class="row no-row-gap-h">
                     <div class="col-12 ease-1st-form">
-                        <div class="text text-icon has-clear round-l no-border shadow-in-sm theme-gray ui-x-light ease-form">
+                        <div class="text text-icon has-clear round-l no-border shadow-in-sm theme-gray ui-light ease-form">
                             <button type="button" class="clear-form">
                                 <svg class="icon"><use href="#remove"/></svg>
                             </button>
@@ -264,23 +264,23 @@
                 </div>
             </div>
 
-            <div class="row xs-fluid icons-xxl block-2nd icons-no-opacity hover-t-more-2nd icons-margin-5-v theme-gray form-lg ease-2nd-btn">
+            <div class="row xs-fluid icons-xxl block-2nd icons-no-opacity hover-t-more-2nd icons-margin-5-v theme-default form-lg ease-2nd-btn">
                 <div class="col-4 padding-10-b">
-                    <a class="btn btn-multi no-line-height round ui-x-light" href="#">
+                    <a class="btn btn-multi no-line-height round ui-dark" href="#">
                         <svg class="icon"><use href="#news"/></svg>
                         <span class="block margin-5-v">News</span>
                         <span class="dark">589</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
-                    <a class="btn btn-multi no-line-height round ui-x-light" href="#">
+                    <a class="btn btn-multi no-line-height round ui-dark" href="#">
                         <svg class="icon"><use href="#calendar-check"/></svg>
                         <span class="block margin-5-v">Events</span>
                         <span class="dark">219</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
-                    <a class="btn btn-multi no-line-height round ui-x-light" href="#">
+                    <a class="btn btn-multi no-line-height round ui-dark" href="#">
                         <svg class="icon"><use href="#files"/></svg>
                         <span class="block margin-5-v">Documents</span>
                         <span class="dark">701</span>
