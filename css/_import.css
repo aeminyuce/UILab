@@ -952,7 +952,6 @@ html .row {
   margin-right: -10px;
   margin-left: -10px;
   flex-wrap: wrap;
-  clear: both;
 }
 .row:before,
 .row:after {
