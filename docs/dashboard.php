@@ -224,30 +224,11 @@
                     </button>
                     <div class="dropdown nav ease-dropdown">
                         <button class="btn dark btn-ghost padding-10 circle hidden-sm">
-                            My Reports
-                            <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
-                        </button>
-                        <button class="btn dark btn-ghost padding-10 circle visible-sm">
-                            <svg class="icon"><use href="#user-circle"/></svg>
-                        </button>
-                        <ul class="content list-column-2 has-icon round shadow-lg">
-                            <li><a href="#"><b class="list-icon">23</b> Waiting</a></li>
-                            <li><a href="#"><b class="list-icon">258</b> Expert</a></li>
-                            <li><a href="#"><b class="list-icon">49</b> On Audit</a></li>
-                            <li><a href="#"><b class="list-icon">68</b> Delayed</a></li>
-                            <li><a href="#"><b class="list-icon">23</b> Waiting</a></li>
-                            <li><a href="#"><b class="list-icon">258</b> Expert</a></li>
-                            <li><a href="#"><b class="list-icon">49</b> On Audit</a></li>
-                            <li><a href="#"><b class="list-icon">68</b> Delayed</a></li>
-                        </ul>
-                    </div>
-                    <div class="dropdown nav ease-dropdown">
-                        <button class="btn dark btn-ghost padding-10 circle hidden-sm">
                             My Jobs
                             <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
                         </button>
                         <button class="btn dark btn-ghost padding-10 circle visible-sm">
-                            <svg class="icon"><use href="#search"/></svg>
+                            <svg class="icon"><use href="#angle-down"/></svg>
                         </button>
                         <ul class="content list-column-2 has-icon round shadow-lg">
                             <li><a href="#"><b class="list-icon">23</b> Waiting</a></li>
@@ -564,19 +545,17 @@
 
                                     <form action="#succesful">
                                         <div class="card-side padding-5-h border-b">
-                                            <div class="row xs-fluid">
-                                                <div class="col-4 padding-15-v">
-                                                    <h4 class="margin-5-t xs-no-margin-t">Forms Title</h4>
+                                            <div class="col-static no-fluid">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <h4 class="align-l margin-4-t margin-3-b">Forms</h4>
+                                                    </div>
                                                 </div>
-                                                <div class="col-8 align-r xs-align-c xs-no-padding-t">
-
-                                                    <button type="submit" class="btn btn-lg padding-15-h round theme-green ui-dark ease-btn">
-                                                        <svg class="icon margin-5-r"><use href="#save"/></svg> Save
-                                                    </button>
+                                                <div class="col-42 padding-5-v">
 
                                                     <div class="dropdown menu-l ease-dropdown">
                                                         <button type="button" class="btn btn-lg btn-ghost btn-square round">
-                                                            <svg class="icon default-icon"><use href="#ellipsis-v"/></svg>
+                                                            <svg class="icon default-icon"><use href="#ellipsis-h"/></svg>
                                                         </button>
                                                         <ul class="content has-icon round shadow-lg">
                                                             <li><a href="#">
@@ -724,6 +703,21 @@
 
                                             </div>
                                         </div>
+                                        <div class="card-side padding-5-h border-t">
+                                            <div class="row">
+                                                <div class="col-12 align-r xs-align-c ease-1st-btn">
+
+                                                    <button type="reset" class="btn btn-lg btn-xs-fluid padding-15-h round">
+                                                        Cancel
+                                                    </button>
+
+                                                    <button type="submit" class="btn btn-lg btn-xs-fluid padding-15-h round theme-green ui-dark">
+                                                        <svg class="icon margin-5-r"><use href="#save"/></svg> Save
+                                                    </button>
+
+                                                </div>
+                                            </div>
+                                        </div>
                                     </form>
 
                                 </div>
@@ -855,7 +849,7 @@
                                 <div class="card full-h padding-15 round shadow-lg">
                                     <div class="dropdown menu-l right ease-dropdown">
                                         <button class="btn btn-square btn-ghost round">
-                                            <svg class="icon"><use href="#ellipsis-v"/></svg>
+                                            <svg class="icon"><use href="#ellipsis-h"/></svg>
                                         </button>
                                         <ul class="content has-icon round shadow-lg">
                                             <li><a href="#"><svg class="list-icon icon"><use href="#file-pdf"/></svg>Download PDF</a></li>
@@ -1054,7 +1048,7 @@
                                 <div class="card full-h padding-15 round shadow-lg tabs ease-tabs" data-classes="font-bold">
                                     <div class="dropdown menu-l right ease-dropdown">
                                         <button class="btn btn-square btn-ghost round">
-                                            <svg class="icon"><use href="#ellipsis-v"/></svg>
+                                            <svg class="icon"><use href="#ellipsis-h"/></svg>
                                         </button>
                                         <ul class="content has-icon round shadow-lg">
                                             <li><a href="#"><svg class="list-icon icon"><use href="#file-pdf"/></svg>Download PDF</a></li>
@@ -1193,7 +1187,7 @@
                                 <div class="card full-h padding-15 round shadow-lg">
                                     <div class="dropdown menu-l right ease-dropdown">
                                         <button class="btn btn-square btn-ghost round">
-                                            <svg class="icon"><use href="#ellipsis-v"/></svg>
+                                            <svg class="icon"><use href="#ellipsis-h"/></svg>
                                         </button>
                                         <ul class="content has-icon round shadow-lg">
                                             <li><a href="#"><svg class="list-icon icon"><use href="#calendar-plus"/></svg>Add to Your Calendar</a></li>
@@ -1209,7 +1203,7 @@
                                 <div class="card full-h padding-15 round shadow-lg">
                                     <div class="dropdown menu-l right ease-dropdown">
                                         <button class="btn btn-square btn-ghost round">
-                                            <svg class="icon"><use href="#ellipsis-v"/></svg>
+                                            <svg class="icon"><use href="#ellipsis-h"/></svg>
                                         </button>
                                         <ul class="content has-icon round shadow-lg">
                                             <li><a href="#"><svg class="list-icon icon"><use href="#file-pdf"/></svg>Download PDF</a></li>
