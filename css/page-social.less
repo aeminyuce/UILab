@@ -1,6 +1,8 @@
 // out: false
 /* page social */ @import '_settings.less';
 
+@page-social-hide-mobile:               true;
+
 @page-social-pos-x:                     left;
 @page-social-top-size:                  30%;
 
@@ -73,9 +75,11 @@
     }
 }
 
-@media (@xs-finish) {
-    .page-social { display: none; }
-}
-@media (max-height: @xs-breakpoint) {
-    .page-social { display: none; }
+& when (@page-social-hide-mobile = true) {
+    @media (@xs-finish) {
+        .page-social { display: none; }
+    }
+    @media (max-height: @xs-breakpoint) {
+        .page-social { display: none; }
+    }
 }

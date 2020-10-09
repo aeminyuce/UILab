@@ -6455,16 +6455,6 @@ html:not(.mobile) .btn-whatsapp:hover {
 html:not(.mobile) .btn-youtube:hover {
   background-color: hsl(0, 100%, 60%) !important;
 }
-@media (max-width: 480px) {
-  .page-social {
-    display: none;
-  }
-}
-@media (max-height: 480px) {
-  .page-social {
-    display: none;
-  }
-}
 /* photo images */
 .photos-holder {
   vertical-align: middle;
