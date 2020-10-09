@@ -141,8 +141,9 @@
     ul { list-style: none; height: 100%; padding: 0; margin-bottom: 0; }
 
     button {
-        ._color-var(black); ._bg-var(btn-bg);
+        ._bg-var(btn-bg);
 
+        &:not([class*="ui-"]) { ._color-var(black); }
         html:not(.mobile) &:hover { ._bg-var(btn-hover-bg); }
     }
 

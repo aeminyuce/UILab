@@ -8109,10 +8109,12 @@ html:not(.mobile) .calendar tbody td.pickerday button:hover {
   margin-bottom: 0;
 }
 .calendar button {
-  color: hsl(0, 0%, 0%);
-  color: var(--black);
   background-color: hsla(0, 0%, 0%, 0.08);
   background-color: var(--btn-bg);
+}
+.calendar button:not([class*="ui-"]) {
+  color: hsl(0, 0%, 0%);
+  color: var(--black);
 }
 html:not(.mobile) .calendar button:hover {
   background-color: hsla(0, 0%, 0%, 0.15);
