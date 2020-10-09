@@ -605,16 +605,16 @@
                 </div>
 
                 <h4>Form Icons</h4>
-                <div class="padding-30-b ease-1st-form">
-                    <div class="text text-icon-l margin-10-b round border-dual">
+                <div class="padding-30-b">
+                    <div class="text text-icon-l margin-10-b round border-dual ease-form">
                         <svg class="icon"><use href="#search"/></svg>
                         <input type="text" placeholder="Left icon">
                     </div>
-                    <div class="text text-icon margin-10-b round border-dual">
+                    <div class="text text-icon margin-10-b round border-dual ease-form">
                         <svg class="icon"><use href="#keyboard-fill"/></svg>
                         <input type="text" placeholder="Right icon">
                     </div>
-                    <div class="text text-icon-both round border-dual">
+                    <div class="text text-icon-both round border-dual ease-form">
                         <svg class="icon text-icon-l"><use href="#search"/></svg>
                         <svg class="icon"><use href="#keyboard-fill"/></svg>
                         <input type="text" placeholder="Both icon">
@@ -623,16 +623,16 @@
                     <span class="sp-30"></span>
 
                     <label class="form-label padding-10-b">Form Icons with Large Forms</label>
-                    <div class="form-lg ease-1st-form">
-                        <div class="text text-icon-l margin-10-b round border-dual">
+                    <div class="form-lg">
+                        <div class="text text-icon-l margin-10-b round border-dual ease-form">
                             <svg class="icon"><use href="#search"/></svg>
                             <input type="text" placeholder="Left icon">
                         </div>
-                        <div class="text text-icon margin-10-b round border-dual">
+                        <div class="text text-icon margin-10-b round border-dual ease-form">
                             <svg class="icon"><use href="#keyboard-fill"/></svg>
                             <input type="text" placeholder="Right icon">
                         </div>
-                        <div class="text text-icon-both round border-dual">
+                        <div class="text text-icon-both round border-dual ease-form">
                             <svg class="icon text-icon-l"><use href="#search"/></svg>
                             <svg class="icon"><use href="#keyboard-fill"/></svg>
                             <input type="text" placeholder="Both icon">
