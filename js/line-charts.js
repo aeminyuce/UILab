@@ -10,8 +10,6 @@ var lineCharts = {
 
     // set chart colors
     colors: [
-        'hsl(4, 86%, 54%)',
-        'hsl(0, 0%, 25%)',
         'hsl(30, 100%, 63%)',
         'hsl(347, 100%, 69%)',
         'hsl(260, 100%, 70%)',
