@@ -560,7 +560,7 @@
                         <div class="row">
                             <div class="col-12">
 
-                                <div class="card full-h round shadow-lg">
+                                <div class="card round shadow-lg">
 
                                     <form action="#succesful">
                                         <div class="card-side padding-5-h border-b">
