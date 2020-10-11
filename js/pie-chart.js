@@ -128,12 +128,8 @@ var pieChart = {};
 
                 } else {
 
-                    setTimeout(function () { // wait for page preload
-
-                        events.addClass(that, 'open');
-                        setTimeout(function () { events.addClass(that, 'open-ease'); }, 2000); // wait for animation complete
-
-                    }, 400);
+                    events.addClass(that, 'open');
+                    setTimeout(function () { events.addClass(that, 'open-ease'); }, 2000); // wait for animation complete
 
                 }
 

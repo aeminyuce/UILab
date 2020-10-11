@@ -7288,7 +7288,6 @@ html:not(.edge) .donut-chart svg:not(.icon) {
 .pie-chart li span {
   width: 50%;
   height: 100%;
-  overflow: hidden;
   display: block;
   position: absolute;
   top: 0;
@@ -7300,7 +7299,6 @@ html:not(.edge) .donut-chart svg:not(.icon) {
   position: absolute;
 }
 .pie-chart li .l {
-  overflow: visible;
   left: 0;
 }
 .pie-chart li .l b {
@@ -7310,6 +7308,7 @@ html:not(.edge) .donut-chart svg:not(.icon) {
   transform-origin: left;
 }
 .pie-chart li .r {
+  overflow: hidden;
   left: 50%;
 }
 .pie-chart li .r b {
