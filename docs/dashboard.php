@@ -249,7 +249,7 @@
                             <svg class="icon"><use href="#grid-column"/></svg>
                         </button>
                         <div class="content round shadow-lg no-scroll">
-                            <div class="tabs xs-full-width theme-panel2 ease-tabs" data-classes="border-b border-lg ui-border ui-text" style="min-width: 300px;">
+                            <div class="tabs xs-full-width theme-panel2 <" data-classes="border-b border-lg ui-border ui-text" style="min-width: 300px;">
 
                                 <div class="btn-holder dark align-c border-b ease-1st-btn">
                                     <button class="tab btn btn-ghost round-t border-b border-lg ui-border ui-text active" data-tooltip data-only="desktop" title="Favorites">
@@ -1045,66 +1045,68 @@
                             </div>
 
                             <div class="col-xl-6 col-lg-6 col-12 col-md-6">
-                                <div class="card full-h padding-15 round shadow-lg tabs ease-tabs" data-classes="font-bold">
-                                    <div class="dropdown menu-l right ease-dropdown">
-                                        <button class="btn btn-square btn-ghost round">
-                                            <svg class="icon"><use href="#ellipsis-h"/></svg>
-                                        </button>
-                                        <ul class="content has-icon round shadow-lg">
-                                            <li><a href="#"><svg class="list-icon icon"><use href="#file-pdf"/></svg>Download PDF</a></li>
-                                            <li><a href="#"><svg class="list-icon icon"><use href="#file-xls"/></svg>Download Excel</a></li>
-                                            <li><a href="#"><svg class="list-icon icon"><use href="#eye"/></svg>See Detailed Statistics</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="dropdown menu-l margin-5-r right ease-dropdown">
-                                        <button class="btn btn-ghost round">
-                                            <span class="value-toggle">Last year</span>
-                                            <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
-                                        </button>
-                                        <ul class="content round shadow-lg">
-                                            <li><label class="tab active font-bold selected">Last year</label></li>
-                                            <li><label class="tab">Past year</label></li>
-                                        </ul>
-                                    </div>
-                                    <h4 class="align-l margin-5-t">Statistics</h4>
-                                    <div class="tab-content open open-ease">
-                                        <div class="line-charts ease-line-charts" data-size="5,48" data-x="Sep,Oct,Nov,Dec,Jan,Fab">
-                                            <ul class="line" data-name="Sales" data-type="curved filled">
-                                                <li data-y="10" data-link="#"></li>
-                                                <li data-y="30" data-link="#"></li>
-                                                <li data-y="70" data-link="#"></li>
-                                                <li data-y="120" data-link="#"></li>
-                                                <li data-y="100" data-link="#"></li>
-                                                <li data-y="150" data-link="#"></li>
-                                            </ul>
-                                            <ul class="line" data-name="Orders" data-type="dashed">
-                                                <li data-y="50" data-link="#"></li>
-                                                <li data-y="10" data-link="#"></li>
-                                                <li data-y="50" data-link="#"></li>
-                                                <li data-y="40" data-link="#"></li>
-                                                <li data-y="80" data-link="#"></li>
-                                                <li data-y="50" data-link="#"></li>
+                                <div class="card full-h padding-15 round shadow-lg tabs" data-classes="font-bold">
+                                    <div class="ease-tabs">
+                                        <div class="dropdown menu-l right ease-dropdown">
+                                            <button class="btn btn-square btn-ghost round">
+                                                <svg class="icon"><use href="#ellipsis-h"/></svg>
+                                            </button>
+                                            <ul class="content has-icon round shadow-lg">
+                                                <li><a href="#"><svg class="list-icon icon"><use href="#file-pdf"/></svg>Download PDF</a></li>
+                                                <li><a href="#"><svg class="list-icon icon"><use href="#file-xls"/></svg>Download Excel</a></li>
+                                                <li><a href="#"><svg class="list-icon icon"><use href="#eye"/></svg>See Detailed Statistics</a></li>
                                             </ul>
                                         </div>
-                                    </div>
-                                    <div class="tab-content">
-                                        <div class="line-charts ease-line-charts" data-size="5,48" data-x="Sep,Oct,Nov,Dec,Jan,Fab">
-                                            <ul class="line" data-name="Sales" data-type="curved filled">
-                                                <li data-y="10" data-link="#"></li>
-                                                <li data-y="60" data-link="#"></li>
-                                                <li data-y="20" data-link="#"></li>
-                                                <li data-y="120" data-link="#"></li>
-                                                <li data-y="10" data-link="#"></li>
-                                                <li data-y="100" data-link="#"></li>
+                                        <div class="dropdown menu-l margin-5-r right ease-dropdown">
+                                            <button class="btn btn-ghost round">
+                                                <span class="value-toggle">Last year</span>
+                                                <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
+                                            </button>
+                                            <ul class="content round shadow-lg">
+                                                <li><label class="tab active font-bold selected">Last year</label></li>
+                                                <li><label class="tab">Past year</label></li>
                                             </ul>
-                                            <ul class="line" data-name="Orders" data-type="dashed">
-                                                <li data-y="0" data-link="#"></li>
-                                                <li data-y="20" data-link="#"></li>
-                                                <li data-y="50" data-link="#"></li>
-                                                <li data-y="40" data-link="#"></li>
-                                                <li data-y="70" data-link="#"></li>
-                                                <li data-y="50" data-link="#"></li>
-                                            </ul>
+                                        </div>
+                                        <h4 class="align-l margin-5-t">Statistics</h4>
+                                        <div class="tab-content open open-ease">
+                                            <div class="line-charts ease-line-charts" data-size="5,48" data-x="Sep,Oct,Nov,Dec,Jan,Fab">
+                                                <ul class="line" data-name="Sales" data-type="curved filled">
+                                                    <li data-y="10" data-link="#"></li>
+                                                    <li data-y="30" data-link="#"></li>
+                                                    <li data-y="70" data-link="#"></li>
+                                                    <li data-y="120" data-link="#"></li>
+                                                    <li data-y="100" data-link="#"></li>
+                                                    <li data-y="150" data-link="#"></li>
+                                                </ul>
+                                                <ul class="line" data-name="Orders" data-type="dashed">
+                                                    <li data-y="50" data-link="#"></li>
+                                                    <li data-y="10" data-link="#"></li>
+                                                    <li data-y="50" data-link="#"></li>
+                                                    <li data-y="40" data-link="#"></li>
+                                                    <li data-y="80" data-link="#"></li>
+                                                    <li data-y="50" data-link="#"></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-content">
+                                            <div class="line-charts ease-line-charts" data-size="5,48" data-x="Sep,Oct,Nov,Dec,Jan,Fab">
+                                                <ul class="line" data-name="Sales" data-type="curved filled">
+                                                    <li data-y="10" data-link="#"></li>
+                                                    <li data-y="60" data-link="#"></li>
+                                                    <li data-y="20" data-link="#"></li>
+                                                    <li data-y="120" data-link="#"></li>
+                                                    <li data-y="10" data-link="#"></li>
+                                                    <li data-y="100" data-link="#"></li>
+                                                </ul>
+                                                <ul class="line" data-name="Orders" data-type="dashed">
+                                                    <li data-y="0" data-link="#"></li>
+                                                    <li data-y="20" data-link="#"></li>
+                                                    <li data-y="50" data-link="#"></li>
+                                                    <li data-y="40" data-link="#"></li>
+                                                    <li data-y="70" data-link="#"></li>
+                                                    <li data-y="50" data-link="#"></li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
