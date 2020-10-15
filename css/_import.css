@@ -4664,7 +4664,7 @@ html:not(.mobile) .top-button:hover .icon {
   transform-origin: top right;
 }
 .dropdown:not(.open) .content {
-  display: none;
+  display: none !important;
 }
 .dropdown:not(.open-ease) .content {
   opacity: 0;
