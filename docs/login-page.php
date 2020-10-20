@@ -83,7 +83,7 @@
             <div class="login-holder align-c no-scroll set-relative ui-dark shadow-lg">
 
                 <div class="full-w set-absolute set-c">
-                    <h1 class="light hidden-md">Create your account</h1>
+                    <h1 class="hidden-md">Create your account</h1>
                     <p class="x-large light">Sign up to create, discover and connect with the global community.</p>
                     <span class="sp-30"></span>
                     <a href="?l=sign-up-page" class="login-btn btn btn-lg btn-sm-fluid padding-30-h circle hover-scale hover-shadow ease-btn"><b>SIGN UP NOW</b></a>
