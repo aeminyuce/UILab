@@ -4052,8 +4052,8 @@ input.btn {
   font-size: 12px;
   text-align: center !important;
   line-height: 1;
-  min-width: 8px;
-  min-height: 8px;
+  min-width: 16px;
+  min-height: 16px;
   background-color: hsl(0, 74%, 55%);
   padding: 2px 4px;
   border-radius: 200px;
@@ -4062,6 +4062,10 @@ input.btn {
   left: 100%;
   z-index: 1;
   transform: translateX(-75%);
+}
+.btn[data-notifier=""]:after {
+  min-width: 8px;
+  min-height: 8px;
 }
 .btn.border {
   padding-top: 6px;
