@@ -56,6 +56,12 @@
 
             <h4>Calendar Pickers</h4>
             <div class="row sm-fluid padding-30-b ease-2nd-form">
+                <div class="col-12">
+                    <div class="calendar-picker text text-icon-l round border-dual form-inline-xs">
+                        <svg class="icon"><use href="#calendar"/></svg>
+                        <input type="text">
+                    </div>
+                </div>
                 <div class="col-6">
                     <div class="calendar-picker text text-icon-l round border-dual">
                         <svg class="icon"><use href="#calendar"/></svg>

@@ -8410,6 +8410,7 @@ html:not(.mobile) .calendar .panel .call:hover {
   color: var(--black);
 }
 .text .calendar {
+  min-width: 265px;
   width: 100%;
   max-width: 744px;
   position: absolute;
