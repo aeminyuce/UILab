@@ -8410,7 +8410,6 @@ html:not(.mobile) .calendar .panel .call:hover {
   color: var(--black);
 }
 .text .calendar {
-  min-width: 265px;
   width: 100%;
   max-width: 744px;
   position: absolute;
@@ -8443,6 +8442,16 @@ html:not(.mobile) .calendar .panel .call:hover {
 }
 .text.picker-l .calendar {
   right: 0;
+}
+@media (min-width: 481px) {
+  .text .calendar {
+    min-width: 360px;
+  }
+}
+@media (max-width: 480px) {
+  .text .calendar {
+    min-width: 265px;
+  }
 }
 /* carousel */
 @keyframes carousel-gallery-loader {

@@ -3,7 +3,8 @@
 
 @calendar-padding:                      5px;
 @calendar-max-width:                    @sm-breakpoint - @highlight-space - (@border-dual * 2);
-@calendar-min-width:                    @layout-min - 55px;
+@calendar-min-width:                    360px;
+@calendar-min-width-mobile:             @layout-min - 55px;
 @calendar-shadow-size:                  5px 15px;
 
 @calendar-days-padding:                 10px;
@@ -309,7 +310,7 @@
     }
 
     .calendar {
-        min-width: @calendar-min-width; width: 100%; max-width: @calendar-max-width; position: absolute; z-index: @calendar-picker-z-index; box-shadow: 0 @calendar-shadow-size @calendar-picker-shadow;
+        width: 100%; max-width: @calendar-max-width; position: absolute; z-index: @calendar-picker-z-index; box-shadow: 0 @calendar-shadow-size @calendar-picker-shadow;
 
         .calendar:not(.open-ease) { opacity: 0; }
     }
@@ -342,5 +343,20 @@
 
     &.picker-l {
         .calendar { right: 0; }
+    }
+}
+
+@media (@sm-start) {
+    .text {
+        .calendar {
+            min-width: @calendar-min-width;
+        }
+    }
+}
+@media (@xs-finish) {
+    .text {
+        .calendar {
+            min-width: @calendar-min-width-mobile;
+        }
     }
 }
