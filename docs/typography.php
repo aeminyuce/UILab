@@ -5,12 +5,12 @@
 
                 <h4>Headings</h4>
                 <div class="padding-30-b">
-                    <h1>h1 Heading <small class="dark">Secondary text</small></h1>
-                    <h2>h2 Heading <small class="dark">Secondary text</small></h2>
-                    <h3>h3 Heading <small class="dark">Secondary text</small></h3>
-                    <h4>h4 Heading <small class="dark">Secondary text</small></h4>
-                    <h5>h5 Heading <small class="dark">Secondary text</small></h5>
-                    <h6>h6 Heading <small class="dark">Secondary text</small></h6>
+                    <h1>H1 Heading <small class="dark">Secondary text</small></h1>
+                    <h2>H2 Heading <small class="dark">Secondary text</small></h2>
+                    <h3>H3 Heading <small class="dark">Secondary text</small></h3>
+                    <h4>H4 Heading <small class="dark">Secondary text</small></h4>
+                    <h5>H5 Heading <small class="dark">Secondary text</small></h5>
+                    <h6>H6 Heading <small class="dark">Secondary text</small></h6>
                 </div>
 
                 <h4>Font Colors</h4>
