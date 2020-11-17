@@ -19,6 +19,7 @@
 
     <!-- import CSS -->
     <link rel="stylesheet" href="../css/_import.css"/>
+    <link rel="stylesheet" href="../css/custom/layout.css"/>
 
     <!-- import JS -->
     <script src="../js/selector.js"></script>
@@ -74,8 +75,8 @@
 ?>
 
     <!-- header -->
-    <header class="container theme-default ui-dark">
-        <div class="row theme-default2 form-lg ui-border border-t border-dual">
+    <header class="container header form-lg ui-dark">
+        <div class="row">
             <div class="col-12">
                 <button title="Toggle Theme" data-tooltip data-only="desktop" class="btn-toggle-color btn btn-square round icons-no-opacity right ease-btn">
                     <svg class="icon visible-dark"><use href="#moon-fill"/></svg>
@@ -106,13 +107,13 @@
     } else {
 ?>
     <!-- header -->
-    <header class="container theme-default ui-dark">
-        <div class="row theme-default2 ui-border border-t border-dual">
+    <header class="container header form-lg ui-dark">
+        <div class="row">
             <div class="col-static no-fluid">
                 <div class="col-250 col-xs-150 align-c md-align-l padding-15">
                     <img src="img/uilab-logo.png" alt="UILab" srcset="img/uilab-logo@2x.png 2x">
                 </div>
-                <div class="row form-lg">
+                <div class="row">
                     <div class="col-12 align-r padding-15-r icons-no-opacity ease-1st-btn">
                         <button title="Toggle Theme" data-tooltip data-only="desktop" class="btn-toggle-color btn btn-square round">
                             <svg class="icon visible-dark"><use href="#moon-fill"/></svg>
