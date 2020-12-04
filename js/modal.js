@@ -53,14 +53,7 @@ var modal = {
                 }
 
                 win.style.removeProperty('height');
-                win.style.removeProperty('min-height');
-
-                if (selector('.modal', win)[0].offsetHeight > win.offsetHeight) { // large contents has fixed and scrollable height
-                    win.style.height = win.offsetHeight + 'px';
-
-                } else { // small contents has elastic height
-                    win.style.minHeight = win.offsetHeight + 'px';
-                }
+                win.style.height = win.offsetHeight + 'px';
 
             }
 
@@ -228,7 +221,6 @@ var modal = {
 
                 content.style.removeProperty('width');
                 content.style.removeProperty('height');
-                content.style.removeProperty('min-height');
 
                 content.removeAttribute('data-openSize');
 
@@ -323,13 +315,7 @@ var modal = {
 
                             content.style.width = content.offsetWidth + 'px';
                             content.setAttribute('data-openSize', content.offsetWidth);
-
-                            if (selector('.modal', content)[0].offsetHeight > content.offsetHeight) { // large contents has fixed and scrollable height
-                                content.style.height = content.offsetHeight + 'px';
-
-                            } else { // small contents has elastic height
-                                content.style.minHeight = content.offsetHeight + 'px';
-                            }
+                            content.style.height = content.offsetHeight + 'px';
 
                         }
 
