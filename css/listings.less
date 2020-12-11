@@ -1,6 +1,7 @@
 // out: false
 /* listings */ @import '_settings.less';
 
+@list-gap-less:                         2px;
 @list-gap:                              @highlight-space / 2;
 @list-gap-more:                         @list-gap * 3;
 
@@ -31,6 +32,9 @@ each(@increases, {
 }
 
 .list-gap {
+    &-less.list-inline {
+        li:not(:last-child) { padding-right: @list-gap-less; }
+    }
     &.list-inline {
         li:not(:last-child) { padding-right: @list-gap; }
     }

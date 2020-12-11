@@ -3923,6 +3923,9 @@ xmp.scroll-v {
 [class*="list-spacer-"]:not([class*="list-column-"]):not(.list-inline) li:last-child {
   margin-bottom: 0 !important;
 }
+.list-gap-less.list-inline li:not(:last-child) {
+  padding-right: 2px;
+}
 .list-gap.list-inline li:not(:last-child) {
   padding-right: 10px;
 }

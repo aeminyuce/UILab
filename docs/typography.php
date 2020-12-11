@@ -169,6 +169,12 @@
 
                 <h4>List Gaps (only inline lists)</h4>
                 <div class="padding-30-b">
+                    <ul class="list-inline list-gap-less">
+                        <li>Lorem ipsum</li>
+                        <li>dolor sit amet</li>
+                        <li>Consectetur</li>
+                        <li>adipiscing elit</li>
+                    </ul>
                     <ul class="list-inline list-gap">
                         <li>Lorem ipsum</li>
                         <li>dolor sit amet</li>
