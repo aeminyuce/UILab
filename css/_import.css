@@ -37,7 +37,7 @@
   --list-group-stripe-bg: hsla(0, 0%, 0%, 0.035);
   --list-group-hover-bg: hsla(0, 0%, 0%, 0.06);
   --table-caption-bg: hsla(0, 0%, 0%, 0.025);
-  --table-stripe-bg: hsla(0, 0%, 0%, 0.065);
+  --table-stripe-bg: hsla(0, 0%, 0%, 0.045);
   --table-hover-bg: hsla(0, 0%, 0%, 0.1);
   --breadcrumbs-sep-color: hsla(0, 0%, 0%, 0.25);
   --img-photo-bg: hsla(0, 0%, 0%, 0.08);
@@ -6342,7 +6342,7 @@ html:not(.mobile) .close-card:hover {
   white-space: nowrap;
 }
 .table-striped tr:nth-child(even):not([class*="ui-"]) {
-  background-color: hsla(0, 0%, 0%, 0.065);
+  background-color: hsla(0, 0%, 0%, 0.045);
   background-color: var(--table-stripe-bg);
 }
 html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover {
