@@ -67,6 +67,8 @@
                     <li><svg class="icon"><use href="#long-arrow-left"/></svg><span>long-arrow-left</span></li>
                     <li><svg class="icon"><use href="#long-arrow-right"/></svg><span>long-arrow-right</span></li>
                     <li><svg class="icon"><use href="#long-arrow-up"/></svg><span>long-arrow-up</span></li>
+                    <li><svg class="icon"><use href="#long-arrow-v"/></svg><span>long-arrow-v</span></li>
+                    <li><svg class="icon"><use href="#long-arrow-h"/></svg><span>long-arrow-h</span></li>
                     <li><svg class="icon"><use href="#exchange-v"/></svg><span>exchange-v</span></li>
                     <li><svg class="icon"><use href="#exchange-h"/></svg><span>exchange-h</span></li>
                     <li><svg class="icon"><use href="#move"/></svg><span>move</span></li>

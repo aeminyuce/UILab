@@ -110,6 +110,14 @@
     <path d="M17 67.8L72.8 12l55.8 55.8"/>
     <path class="svg-s" d="M72.8 19.5V252"/>
 </symbol>
+<symbol id="long-arrow-v" viewBox="-96 -18 288 288">
+    <path d="M8.485 205.985l40 40.015 40-40.015 M8.485 46.015L48.485 6l40 40.015"/>
+    <path class="svg-s" d="M48.485 238.5V6"/>
+</symbol>
+<symbol id="long-arrow-h" viewBox="-16 -92 288 288">
+    <path d="M46.015 8.485L6 48.485l40.015 40 M205.985 8.485l40.015 40-40.015 40"/>
+    <path class="svg-s" d="M13.5 48.485H246"/>
+</symbol>
 <symbol id="exchange-v" viewBox="0 0 288 288">
     <use x="-58" href="#long-arrow-down"/>
     <use x="58" href="#long-arrow-up"/>
