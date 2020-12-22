@@ -6,7 +6,13 @@
 var modal = {
 
     classes: 'shadow-lg',
-    closeIcon: 'remove'
+    closeIcon: 'remove',
+
+    contentMaxHeight: '92%',
+
+    contentMinHeightLg: '300',
+    contentMinHeightMd: '240',
+    contentMinHeightSm: '120'
 
 };
 
@@ -19,7 +25,7 @@ var modal = {
 
     function modalResizer() {
 
-        var win, bg, openSize, userDefined, customW, customH;
+        var win, type, container, bg, openSize, userDefined, customW, customH, minHeight;
 
         win = selector('.modal-win.show .modal-content:not(.fullscreen)')[0];
         if (win !== undefined) {
@@ -29,7 +35,9 @@ var modal = {
             openSize = win.getAttribute('data-openSize');
             if (openSize !== null) {
 
+                type = 'md';
                 userDefined = 960; // md, inline-modal
+
                 openSize = Number(openSize);
 
                 if (window.innerWidth < openSize) {
@@ -38,9 +46,13 @@ var modal = {
                 } else {
 
                     if (events.hasClass(win, 'lg')) {
+
+                        type = 'lg';
                         userDefined = 1200; // lg
 
                     } else if (events.hasClass(win, 'sm')) {
+
+                        type = 'sm';
                         userDefined = 480; // sm
                     }
 
@@ -52,8 +64,24 @@ var modal = {
                     }
                 }
 
+                minHeight = modal.contentMinHeightMd;
+
+                if (type === 'lg') {
+                    minHeight = modal.contentMinHeightLg;
+
+                } else if (type === 'sm') {
+                    minHeight = modal.contentMinHeightSm;
+                }
+
+                container = selector('.modal-container', win)[0];
                 win.style.removeProperty('height');
-                win.style.height = win.offsetHeight + 'px';
+
+                if (container.offsetHeight < minHeight) {
+                    win.style.height = modal.contentMaxHeight;
+
+                } else {
+                    win.style.height = win.offsetHeight + 'px';
+                }
 
             }
 
