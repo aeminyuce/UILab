@@ -642,6 +642,14 @@
 <symbol id="calculator-btn-fill" viewBox="0 0 288 288">
     <use class="svg-f" href="#calculator-btn"/>
 </symbol>
+<symbol id="abacus" viewBox="-13 -12 288 288">
+    <path d="M126 171a23.5 23.5 0 11-23.5 23.5A23.5 23.5 0 01126 171z M63 103a23.5 23.5 0 11-23.5 23.5A23.5 23.5 0 0163 103z M188 35a23.5 23.5 0 11-23.5 23.5A23.5 23.5 0 01188 35z M188 171a23.5 23.5 0 11-23.5 23.5A23.5 23.5 0 01188 171z"/>
+    <path class="svg-s svg-l" d="M211.5 58H245M6 58h158.5 M86.5 127H245M6 127h33.5 M149.5 194h15M6 194h96.5 M211.5 194H245"/>
+    <path class="svg-l" d="M6 6.5v240 M245 6v240"/>
+</symbol>
+<symbol id="abacus-fill" viewBox="0 0 288 288">
+    <use class="svg-f" href="#abacus"/>
+</symbol>
 <symbol id="calendar" viewBox="-12 -12 288 288">
     <path class="svg-l" d="M12 28h240v56H12z"/>
     <path d="M12 84h240v168H12z M60 44V12M204 44V12"/>
@@ -1433,6 +1441,13 @@
 <symbol id="import" viewBox="-12 -12 288 288">
     <path d="M132 156V12 M176.2 111.6L132 155.8l-44.3-44.3"/>
     <path d="M252 112v104a36 36 0 01-36 36H48a36 36 0 01-36-36V112"/>
+</symbol>
+<symbol id="adjust" viewBox="-10 -12 288 288">
+    <path d="M132 12.5a120 120 0 000 240z"/>
+    <path class="svg-s svg-l" d="M132.5 12.5a120 120 0 010 240"/>
+</symbol>
+<symbol id="adjust-fill" viewBox="0 0 288 288">
+    <use class="svg-f" href="#adjust"/>
 </symbol>
 <symbol id="export" viewBox="-12 -12 288 288">
     <path d="M132 12v144 M176.2 56.4L132 12.2 87.7 56.5"/>

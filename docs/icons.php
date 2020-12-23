@@ -214,6 +214,8 @@
                     <li><svg class="icon"><use href="#calculator-fill"/></svg><span>calculator-fill</span></li>
                     <li><svg class="icon"><use href="#calculator-btn"/></svg><span>calculator-btn</span></li>
                     <li><svg class="icon"><use href="#calculator-btn-fill"/></svg><span>calculator-btn-fill</span></li>
+                    <li><svg class="icon"><use href="#abacus"/></svg><span>abacus</span></li>
+                    <li><svg class="icon"><use href="#abacus-fill"/></svg><span>abacus-fill</span></li>
                     <li><svg class="icon"><use href="#calendar"/></svg><span>calendar</span></li>
                     <li><svg class="icon"><use href="#calendar-fill"/></svg><span>calendar-fill</span></li>
                     <li><svg class="icon"><use href="#calendar-day"/></svg><span>calendar-day</span></li>
@@ -569,6 +571,8 @@
                     <li><svg class="icon"><use href="#signal-wifi-fill"/></svg><span>signal-wifi-fill</span></li>
                     <li><svg class="icon"><use href="#aperture"/></svg><span>aperture</span></li>
                     <li><svg class="icon"><use href="#aperture-fill"/></svg><span>aperture-fill</span></li>
+                    <li><svg class="icon"><use href="#adjust"/></svg><span>adjust</span></li>
+                    <li><svg class="icon"><use href="#adjust-fill"/></svg><span>adjust-fill</span></li>
                     <li><svg class="icon"><use href="#exposure"/></svg><span>exposure</span></li>
                     <li><svg class="icon"><use href="#exposure-fill"/></svg><span>exposure-fill</span></li>
                     <li><svg class="icon"><use href="#flash-on"/></svg><span>flash-on</span></li>
