@@ -369,6 +369,14 @@
                     <li><svg class="icon"><use href="#land-fill"/></svg><span>land-fill</span></li>
                     <li><svg class="icon"><use href="#leaf"/></svg><span>leaf</span></li>
                     <li><svg class="icon"><use href="#leaf-fill"/></svg><span>leaf-fill</span></li>
+                    <li><svg class="icon"><use href="#tree"/></svg><span>tree</span></li>
+                    <li><svg class="icon"><use href="#tree-fill"/></svg><span>tree-fill</span></li>
+                    <li><svg class="icon"><use href="#trees"/></svg><span>trees</span></li>
+                    <li><svg class="icon"><use href="#trees-fill"/></svg><span>trees-fill</span></li>
+                    <li><svg class="icon"><use href="#tree-pine"/></svg><span>tree-pine</span></li>
+                    <li><svg class="icon"><use href="#tree-pine-fill"/></svg><span>tree-pine-fill</span></li>
+                    <li><svg class="icon"><use href="#tree-palm"/></svg><span>tree-palm</span></li>
+                    <li><svg class="icon"><use href="#tree-palm-fill"/></svg><span>tree-palm-fill</span></li>
                     <li><svg class="icon"><use href="#water"/></svg><span>water</span></li>
                     <li><svg class="icon"><use href="#water-fill"/></svg><span>water-fill</span></li>
                     <li><svg class="icon"><use href="#link"/></svg><span>link</span></li>
