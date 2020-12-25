@@ -8951,7 +8951,7 @@ html:not(.mobile) .image-uploader .uploader-list ul > li .img img:hover {
   }
 }
 .ease-photo-gallery .img:after,
-.ease-photo-gallery .img .has-info > span {
+.ease-photo-gallery .img.has-info > span {
   transition-property: opacity;
   transition-duration: 0.15s;
 }
