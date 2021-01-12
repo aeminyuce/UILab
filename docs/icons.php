@@ -63,6 +63,26 @@
                     <li><svg class="icon"><use href="#arrow-left"/></svg><span>arrow-left</span></li>
                     <li><svg class="icon"><use href="#arrow-right"/></svg><span>arrow-right</span></li>
                     <li><svg class="icon"><use href="#arrow-up"/></svg><span>arrow-up</span></li>
+                    <li><svg class="icon"><use href="#arrow-circle-down"/></svg><span>arrow-circle-down</span></li>
+                    <li><svg class="icon"><use href="#arrow-circle-down-fill"/></svg><span>arrow-circle-down-fill</span></li>
+                    <li><svg class="icon"><use href="#arrow-circle-left"/></svg><span>arrow-circle-left</span></li>
+                    <li><svg class="icon"><use href="#arrow-circle-left-fill"/></svg><span>arrow-circle-left-fill</span></li>
+                    <li><svg class="icon"><use href="#arrow-circle-right"/></svg><span>arrow-circle-right</span></li>
+                    <li><svg class="icon"><use href="#arrow-circle-right-fill"/></svg><span>arrow-circle-right-fill</span></li>
+                    <li><svg class="icon"><use href="#arrow-circle-up"/></svg><span>arrow-circle-up</span></li>
+                    <li><svg class="icon"><use href="#arrow-circle-up-fill"/></svg><span>arrow-circle-up-fill</span></li>
+                    <li><svg class="icon"><use href="#arrow-square-down"/></svg><span>arrow-square-down</span></li>
+                    <li><svg class="icon"><use href="#arrow-square-down-fill"/></svg><span>arrow-square-down-fill</span></li>
+                    <li><svg class="icon"><use href="#arrow-square-left"/></svg><span>arrow-square-left</span></li>
+                    <li><svg class="icon"><use href="#arrow-square-left-fill"/></svg><span>arrow-square-left-fill</span></li>
+                    <li><svg class="icon"><use href="#arrow-square-right"/></svg><span>arrow-square-right</span></li>
+                    <li><svg class="icon"><use href="#arrow-square-right-fill"/></svg><span>arrow-square-right-fill</span></li>
+                    <li><svg class="icon"><use href="#arrow-square-up"/></svg><span>arrow-square-up</span></li>
+                    <li><svg class="icon"><use href="#arrow-square-up-fill"/></svg><span>arrow-square-up-fill</span></li>
+                    <li><svg class="icon"><use href="#arrow-to-bottom"/></svg><span>arrow-to-bottom</span></li>
+                    <li><svg class="icon"><use href="#arrow-to-left"/></svg><span>arrow-to-left</span></li>
+                    <li><svg class="icon"><use href="#arrow-to-right"/></svg><span>arrow-to-right</span></li>
+                    <li><svg class="icon"><use href="#arrow-to-top"/></svg><span>arrow-to-top</span></li>
                     <li><svg class="icon"><use href="#long-arrow-down"/></svg><span>long-arrow-down</span></li>
                     <li><svg class="icon"><use href="#long-arrow-left"/></svg><span>long-arrow-left</span></li>
                     <li><svg class="icon"><use href="#long-arrow-right"/></svg><span>long-arrow-right</span></li>
@@ -234,6 +254,7 @@
                     <li><svg class="icon"><use href="#calendar-star-fill"/></svg><span>calendar-star-fill</span></li>
                     <li><svg class="icon"><use href="#cap"/></svg><span>cap</span></li>
                     <li><svg class="icon"><use href="#cap-fill"/></svg><span>cap-fill</span></li>
+                    <li><svg class="icon"><use href="#analytics"/></svg><span>analytics</span></li>
                     <li><svg class="icon"><use href="#chart-pie"/></svg><span>chart-pie</span></li>
                     <li><svg class="icon"><use href="#chart-pie-fill"/></svg><span>chart-pie-fill</span></li>
                     <li><svg class="icon"><use href="#chart-bar"/></svg><span>chart-bar</span></li>
@@ -321,6 +342,8 @@
                     <li><svg class="icon"><use href="#face-sad-fill"/></svg><span>face-sad-fill</span></li>
                     <li><svg class="icon"><use href="#face-meh"/></svg><span>face-meh</span></li>
                     <li><svg class="icon"><use href="#face-meh-fill"/></svg><span>face-meh-fill</span></li>
+                    <li><svg class="icon"><use href="#face-angry"/></svg><span>face-angry</span></li>
+                    <li><svg class="icon"><use href="#face-angry-fill"/></svg><span>face-angry-fill</span></li>
                     <li><svg class="icon"><use href="#factory"/></svg><span>factory</span></li>
                     <li><svg class="icon"><use href="#factory-fill"/></svg><span>factory-fill</span></li>
                     <li><svg class="icon"><use href="#fire"/></svg><span>fire</span></li>
@@ -564,6 +587,8 @@
                     <li><svg class="icon"><use href="#headset-fill"/></svg><span>headset-fill</span></li>
                     <li><svg class="icon"><use href="#music"/></svg><span>music</span></li>
                     <li><svg class="icon"><use href="#music-fill"/></svg><span>music-fill</span></li>
+                    <li><svg class="icon"><use href="#music-album"/></svg><span>music-album</span></li>
+                    <li><svg class="icon"><use href="#music-album-fill"/></svg><span>music-album-fill</span></li>
                     <li><svg class="icon"><use href="#volume-on"/></svg><span>volume-on</span></li>
                     <li><svg class="icon"><use href="#volume-on-fill"/></svg><span>volume-on-fill</span></li>
                     <li><svg class="icon"><use href="#volume-off"/></svg><span>volume-off</span></li>

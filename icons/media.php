@@ -140,6 +140,13 @@
 <symbol id="music-fill" viewBox="0 0 288 288">
     <use class="svg-f" href="#music"/>
 </symbol>
+<symbol id="music-album" viewBox="-24 -18 288 288">
+    <path class="svg-l" d="M70.3 160.033c9.278 0 16.8 4.805 16.8 10.733S79.578 181.5 70.3 181.5s-16.8-4.806-16.8-10.734 7.522-10.733 16.8-10.733z M141.234 140.433c9.278 0 16.8 4.805 16.8 10.733s-7.522 10.734-16.8 10.734-16.8-4.806-16.8-10.734 7.522-10.733 16.8-10.733z M87.1 172.167v-84L158.033 69.5v82.133"/>
+    <path class="svg-s" d="M24 6h184a18 18 0 0118 18v204a18 18 0 01-18 18H24a18 18 0 01-18-18V24A18 18 0 0124 6z"/>
+</symbol>
+<symbol id="music-album-fill" viewBox="0 0 288 288">
+    <use class="svg-f" href="#music-album"/>
+</symbol>
 <symbol id="volume-on" viewBox="-12 -12 288 288">
     <path class="svg-l" d="M182.5 80.2c12.9 12.8 20.8 31 20.8 51.5a72.5 72.5 0 01-21.3 52M216.9 45.5c21.7 21.6 35 52 35 86.2 0 33.8-13.1 64-34.9 85.9"/>
     <use href="#in-speaker"/>
