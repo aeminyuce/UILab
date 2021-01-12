@@ -8,7 +8,7 @@ var topButton = {
     titleText : 'Back to top!',
 
     classes: 'circle',
-    icon: 'arrow-up'
+    icon: 'arrow-to-top'
 };
 
 (function () {

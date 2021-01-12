@@ -4560,7 +4560,7 @@ html:not(.mobile) .top-button:hover {
   opacity: 0.75;
 }
 html:not(.mobile) .top-button:hover .icon {
-  transform: translateY(-6px);
+  transform: translateY(-3px);
 }
 @media (max-width: 320px) {
   .top-button {
