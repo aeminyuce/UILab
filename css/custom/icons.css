@@ -3,14 +3,12 @@
   --icons-list-color: hsl(214, 10%, 32%);
   --icons-list-bg: hsla(0, 0%, 0%, 0.07);
   --icons-list-hover-bg: hsla(0, 0%, 0%, 0.12);
-  --icons-svg-border: hsla(0, 0%, 0%, 0.01);
   --icons-name-color: hsl(0, 0%, 40%);
 }
 [data-theme="dark"] {
   --icons-list-color: hsl(0, 0%, 100%);
   --icons-list-bg: hsl(220, 14%, 21%);
   --icons-list-hover-bg: hsl(219, 12%, 27%);
-  --icons-svg-border: hsla(0, 0%, 100%, 0.01);
   --icons-name-color: hsl(0, 0%, 82%);
 }
 .icons-list {
@@ -54,6 +52,4 @@ html:not(.mobile) .icons-list li:hover {
 }
 .icons-list li .icon:not([class*="animate-"]) {
   box-sizing: content-box;
-  border: solid 1px hsla(0, 0%, 0%, 0.01);
-  border: solid 1px var(--icons-svg-border);
 }
