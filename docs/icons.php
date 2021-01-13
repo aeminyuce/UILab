@@ -195,6 +195,8 @@
                     <li><svg class="icon"><use href="#infinity"/></svg><span>infinity</span></li>
                     <li><svg class="icon"><use href="#bug"/></svg><span>bug</span></li>
                     <li><svg class="icon"><use href="#bug-fill"/></svg><span>bug-fill</span></li>
+                    <li><svg class="icon"><use href="#atom"/></svg><span>atom</span></li>
+                    <li><svg class="icon"><use href="#atom-fill"/></svg><span>atom-fill</span></li>
                     <li><svg class="icon"><use href="#lab"/></svg><span>lab</span></li>
                     <li><svg class="icon"><use href="#lab-fill"/></svg><span>lab-fill</span></li>
                     <li><svg class="icon"><use href="#bell"/></svg><span>bell</span></li>
