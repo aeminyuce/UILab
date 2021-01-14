@@ -20,6 +20,9 @@
 <symbol id="in-check" viewBox="-78 -98 288 288">
     <path d="M113 17L51.8 82 17 48.7"/>
 </symbol>
+<symbol id="in-percent" viewBox="-88 -86 288 288">
+    <path d="M104.485 84.485a20 20 0 11-20-20 20 20 0 0120 20z M104.485 8.485l-96 96M48.485 28.485a20 20 0 11-20-20 20 20 0 0120 20z"/>
+</symbol>
 <symbol id="in-images" class="svg-s" viewBox="0 0 288 288">
     <path d="M52 12h200v146.7H52z"/>
     <path class="svg-l" d="M12 52h40v107h160v45H12z"/>
@@ -522,6 +525,45 @@
 </symbol>
 <symbol id="check-marker-fill" viewBox="0 0 288 288">
     <use class="svg-f" href="#check-marker"/>
+</symbol>
+<symbol id="percent" viewBox="-18 -18 288 288">
+    <path d="M248.485 8.485l-240 240"/>
+    <path class="svg-s" d="M248.485 198.485a50 50 0 11-50-50 50 50 0 0150 50z M108.485 58.485a50 50 0 11-50-50 50 50 0 0150 50z"/>
+</symbol>
+<symbol id="percent-circle" viewBox="0 0 288 288">
+    <use class="svg-l" href="#in-percent"/>
+    <use class="svg-s" href="#circle"/>
+</symbol>
+<symbol id="percent-circle-fill" viewBox="0 0 288 288">
+    <use class="svg-f" href="#percent-circle"/>
+</symbol>
+<symbol id="percent-badge" viewBox="0 0 288 288">
+    <use class="svg-l" href="#in-percent"/>
+    <use class="svg-s" href="#badge"/>
+</symbol>
+<symbol id="percent-badge-fill" viewBox="0 0 288 288">
+    <use class="svg-f" href="#percent-badge"/>
+</symbol>
+<symbol id="percent-square" viewBox="0 0 288 288">
+    <use class="svg-l" href="#in-percent"/>
+    <use class="svg-s" href="#square"/>
+</symbol>
+<symbol id="percent-square-fill" viewBox="0 0 288 288">
+    <use class="svg-f" href="#percent-square"/>
+</symbol>
+<symbol id="percent-shield" viewBox="0 0 288 288">
+    <use class="svg-l" href="#in-percent"/>
+    <use class="svg-s" href="#shield"/>
+</symbol>
+<symbol id="percent-shield-fill" viewBox="0 0 288 288">
+    <use class="svg-f" href="#percent-shield"/>
+</symbol>
+<symbol id="percent-marker" viewBox="0 0 288 288">
+    <use class="svg-l" y="-16" href="#in-percent"/>
+    <use class="svg-s" href="#marker"/>
+</symbol>
+<symbol id="percent-marker-fill" viewBox="0 0 288 288">
+    <use class="svg-f" href="#percent-marker"/>
 </symbol>
 <symbol id="address-book" viewBox="-22 -12 288 288">
     <path class="svg-s" d="M28 12h192v240H28z M12 204h32M12 156h32M12 108h32M12 60h32"/>

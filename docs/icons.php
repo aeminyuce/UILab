@@ -184,7 +184,17 @@
                     <li><svg class="icon"><use href="#check-shield"/></svg><span>check-shield</span></li>
                     <li><svg class="icon"><use href="#check-shield-fill"/></svg><span>check-shield-fill</span></li>
                     <li><svg class="icon"><use href="#check-marker"/></svg><span>check-marker</span></li>
-                    <li><svg class="icon"><use href="#check-marker-fill"/></svg><span>check-marker-fill</span></li>
+                    <li><svg class="icon"><use href="#percent"/></svg><span>percent</span></li>
+                    <li><svg class="icon"><use href="#percent-circle"/></svg><span>percent-circle</span></li>
+                    <li><svg class="icon"><use href="#percent-circle-fill"/></svg><span>percent-circle-fill</span></li>
+                    <li><svg class="icon"><use href="#percent-badge"/></svg><span>percent-badge</span></li>
+                    <li><svg class="icon"><use href="#percent-badge-fill"/></svg><span>percent-badge-fill</span></li>
+                    <li><svg class="icon"><use href="#percent-square"/></svg><span>percent-square</span></li>
+                    <li><svg class="icon"><use href="#percent-square-fill"/></svg><span>percent-square-fill</span></li>
+                    <li><svg class="icon"><use href="#percent-shield"/></svg><span>percent-shield</span></li>
+                    <li><svg class="icon"><use href="#percent-shield-fill"/></svg><span>percent-shield-fill</span></li>
+                    <li><svg class="icon"><use href="#percent-marker"/></svg><span>percent-marker</span></li>
+                    <li><svg class="icon"><use href="#percent-marker-fill"/></svg><span>percent-marker-fill</span></li>
                     <li><svg class="icon"><use href="#address-book"/></svg><span>address-book</span></li>
                     <li><svg class="icon"><use href="#address-book-fill"/></svg><span>address-book-fill</span></li>
                     <li><svg class="icon"><use href="#address-card"/></svg><span>address-card</span></li>
