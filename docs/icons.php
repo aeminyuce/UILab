@@ -199,6 +199,12 @@
                     <li><svg class="icon"><use href="#atom-fill"/></svg><span>atom-fill</span></li>
                     <li><svg class="icon"><use href="#lab"/></svg><span>lab</span></li>
                     <li><svg class="icon"><use href="#lab-fill"/></svg><span>lab-fill</span></li>
+                    <li><svg class="icon"><use href="#virus"/></svg><span>virus</span></li>
+                    <li><svg class="icon"><use href="#virus-fill"/></svg><span>virus-fill</span></li>
+                    <li><svg class="icon"><use href="#mask"/></svg><span>mask</span></li>
+                    <li><svg class="icon"><use href="#mask-fill"/></svg><span>mask-fill</span></li>
+                    <li><svg class="icon"><use href="#lab"/></svg><span>lab</span></li>
+                    <li><svg class="icon"><use href="#lab-fill"/></svg><span>lab-fill</span></li>
                     <li><svg class="icon"><use href="#bell"/></svg><span>bell</span></li>
                     <li><svg class="icon"><use href="#bell-fill"/></svg><span>bell-fill</span></li>
                     <li><svg class="icon"><use href="#bell-on"/></svg><span>bell-on</span></li>
@@ -348,6 +354,8 @@
                     <li><svg class="icon"><use href="#face-angry-fill"/></svg><span>face-angry-fill</span></li>
                     <li><svg class="icon"><use href="#factory"/></svg><span>factory</span></li>
                     <li><svg class="icon"><use href="#factory-fill"/></svg><span>factory-fill</span></li>
+                    <li><svg class="icon"><use href="#axe"/></svg><span>axe</span></li>
+                    <li><svg class="icon"><use href="#axe-fill"/></svg><span>axe-fill</span></li>
                     <li><svg class="icon"><use href="#fire"/></svg><span>fire</span></li>
                     <li><svg class="icon"><use href="#fire-fill"/></svg><span>fire-fill</span></li>
                     <li><svg class="icon"><use href="#fire-camp"/></svg><span>fire-camp</span></li>
@@ -402,6 +410,8 @@
                     <li><svg class="icon"><use href="#tree-pine-fill"/></svg><span>tree-pine-fill</span></li>
                     <li><svg class="icon"><use href="#tree-palm"/></svg><span>tree-palm</span></li>
                     <li><svg class="icon"><use href="#tree-palm-fill"/></svg><span>tree-palm-fill</span></li>
+                    <li><svg class="icon"><use href="#ship"/></svg><span>ship</span></li>
+                    <li><svg class="icon"><use href="#ship-fill"/></svg><span>ship-fill</span></li>
                     <li><svg class="icon"><use href="#water"/></svg><span>water</span></li>
                     <li><svg class="icon"><use href="#water-fill"/></svg><span>water-fill</span></li>
                     <li><svg class="icon"><use href="#link"/></svg><span>link</span></li>
