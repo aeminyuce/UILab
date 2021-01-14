@@ -760,6 +760,16 @@
 <symbol id="megaphone-fill" viewBox="0 0 288 288">
     <use class="svg-f" href="#megaphone"/>
 </symbol>
+<symbol id="balance" viewBox="-18 -18 288 288">
+    <path d="M246.018 211a34 34 0 11-68 0c0-1.465.643-5.583.643-5.583l66.657-.269a56.789 56.789 0 01.7 5.852z M75.018 179a34 34 0 11-68 0c0-1.465.643-5.583.643-5.583l66.657-.269a56.789 56.789 0 01.7 5.852z"/>
+    <g class="svg-s">
+        <path class="svg-l" d="M74.294 173.021L41.019 89 7.787 173.011 M245.294 205.021L212.019 121l-33.232 84.011"/>
+        <path d="M126.518 88a17.5 17.5 0 11-17.5 17.5 17.5 17.5 0 0117.5-17.5zM127.019 88V6 M109.282 101.774L41.019 89 M212.019 121l-67.73-12.675"/>
+    </g>
+</symbol>
+<symbol id="balance-fill" viewBox="0 0 288 288">
+    <use class="svg-f" href="#balance"/>
+</symbol>
 <symbol id="calculator" viewBox="-30 -12 288 288">
     <g class="svg-s">
         <path class="svg-l" d="M12 12h200v72H12z"/>

@@ -248,6 +248,8 @@
                     <li><svg class="icon"><use href="#bullhorn-fill"/></svg><span>bullhorn-fill</span></li>
                     <li><svg class="icon"><use href="#megaphone"/></svg><span>megaphone</span></li>
                     <li><svg class="icon"><use href="#megaphone-fill"/></svg><span>megaphone-fill</span></li>
+                    <li><svg class="icon"><use href="#balance"/></svg><span>balance</span></li>
+                    <li><svg class="icon"><use href="#balance-fill"/></svg><span>balance-fill</span></li>
                     <li><svg class="icon"><use href="#calculator"/></svg><span>calculator</span></li>
                     <li><svg class="icon"><use href="#calculator-fill"/></svg><span>calculator-fill</span></li>
                     <li><svg class="icon"><use href="#calculator-btn"/></svg><span>calculator-btn</span></li>
