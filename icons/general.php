@@ -52,6 +52,10 @@
 <symbol id="in-write" viewBox="0 0 288 288">
     <path class="svg-l" d="M16.5 99.8s42.1 24 56.7-27.6c16.1 2.7 32.7 32.7 60.9 25.9 10.2-2.5 21.3-11 30.5-21.5"/>
 </symbol>
+<symbol id=in-list viewBox="-12 -12 288 288">
+    <path d="M98 58h64 M98 123h64 M98 191h64"/>
+    <path class="svg-s" d="M6 6h192.028L198 246H6z"/>
+</symbol>
 
 <symbol id="angle-down" viewBox="-10 -75 288 288">
     <path d="M17 17l118 118L252.8 17"/>
@@ -1042,6 +1046,27 @@
 </symbol>
 <symbol id="news-fill" viewBox="0 0 288 288">
     <use class="svg-f" href="#news"/>
+</symbol>
+<symbol id="list-square" viewBox="-28 -6 288 288">
+    <path d="M67.001 46v24h-24V46z M67.001 111v24h-24v-24z M67.001 179v24h-24v-24z"/>
+    <use x="-12" y="-12" href="#in-list"/>
+</symbol>
+<symbol id="list-square-fill" viewBox="0 0 288 288">
+    <use class="svg-f" href="#list-square"/>
+</symbol>
+<symbol id="list-circle" viewBox="-28 -6 288 288">
+    <path d="M54.5 44A14.5 14.5 0 1140 58.5 14.5 14.5 0 0154.5 44z M54.5 109A14.5 14.5 0 1140 123.5 14.5 14.5 0 0154.5 109z M54.5 177A14.5 14.5 0 1140 191.5 14.5 14.5 0 0154.5 177z"/>
+    <use x="-12" y="-12" href="#in-list"/>
+</symbol>
+<symbol id="list-circle-fill" viewBox="0 0 288 288">
+    <use class="svg-f" href="#list-circle"/>
+</symbol>
+<symbol id="list-check" viewBox="-28 -6 288 288">
+    <path d="M70.398 49.999l-18.1 19.27-10.3-9.894 M70.398 114.999l-18.1 19.27-10.3-9.894 M70.398 182.999l-18.1 19.27-10.3-9.894"/>
+    <use x="-12" y="-12" href="#in-list"/>
+</symbol>
+<symbol id="list-check-fill" viewBox="0 0 288 288">
+    <use class="svg-f" href="#list-check"/>
 </symbol>
 <symbol id="doc" viewBox="-36 -12 288 288">
     <path d="M52 147h64M52 107h112"/>

@@ -324,6 +324,12 @@
                     <li><svg class="icon"><use href="#database-fill"/></svg><span>database-fill</span></li>
                     <li><svg class="icon"><use href="#news"/></svg><span>news</span></li>
                     <li><svg class="icon"><use href="#news-fill"/></svg><span>news-fill</span></li>
+                    <li><svg class="icon"><use href="#list-square"/></svg><span>list-square</span></li>
+                    <li><svg class="icon"><use href="#list-square-fill"/></svg><span>list-square-fill</span></li>
+                    <li><svg class="icon"><use href="#list-circle"/></svg><span>list-circle</span></li>
+                    <li><svg class="icon"><use href="#list-circle-fill"/></svg><span>list-circle-fill</span></li>
+                    <li><svg class="icon"><use href="#list-check"/></svg><span>list-check</span></li>
+                    <li><svg class="icon"><use href="#list-check-fill"/></svg><span>list-check-fill</span></li>
                     <li><svg class="icon"><use href="#doc"/></svg><span>doc</span></li>
                     <li><svg class="icon"><use href="#doc-fill"/></svg><span>doc-fill</span></li>
                     <li><svg class="icon"><use href="#docs"/></svg><span>docs</span></li>
