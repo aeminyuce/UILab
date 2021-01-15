@@ -70,12 +70,12 @@
 <symbol id="files-fill" viewBox="0 0 288 288">
     <use class="svg-f" href="#files"/>
 </symbol>
-<symbol id="file-no" viewBox="-32 -14 288 288">
+<symbol id="file-ban" viewBox="-32 -14 288 288">
     <path class="svg-l" d="M135.7 106l-57.2 58.2M108 95a41 41 0 11-41 41 41 41 0 0141-41z"/>
     <use x="-32" y="-14" class="svg-s" href="#file"/>
 </symbol>
-<symbol id="file-no-fill" viewBox="0 0 288 288">
-    <use class="svg-f" href="#file-no"/>
+<symbol id="file-ban-fill" viewBox="0 0 288 288">
+    <use class="svg-f" href="#file-ban"/>
 </symbol>
 <symbol id="file-check" viewBox="-32 -18 288 288">
     <path class="svg-l" d="M147.8 103l-51.5 56.2-28.3-28"/>

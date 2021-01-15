@@ -328,8 +328,8 @@
                     <li><svg class="icon"><use href="#doc-fill"/></svg><span>doc-fill</span></li>
                     <li><svg class="icon"><use href="#docs"/></svg><span>docs</span></li>
                     <li><svg class="icon"><use href="#docs-fill"/></svg><span>docs-fill</span></li>
-                    <li><svg class="icon"><use href="#doc-no"/></svg><span>doc-no</span></li>
-                    <li><svg class="icon"><use href="#doc-no-fill"/></svg><span>doc-no-fill</span></li>
+                    <li><svg class="icon"><use href="#doc-ban"/></svg><span>doc-ban</span></li>
+                    <li><svg class="icon"><use href="#doc-ban-fill"/></svg><span>doc-ban-fill</span></li>
                     <li><svg class="icon"><use href="#archive"/></svg><span>archive</span></li>
                     <li><svg class="icon"><use href="#archive-fill"/></svg><span>archive-fill</span></li>
                     <li><svg class="icon"><use href="#draw"/></svg><span>draw</span></li>
@@ -444,7 +444,7 @@
                     <li><svg class="icon"><use href="#map-fill"/></svg><span>map-fill</span></li>
                     <li><svg class="icon"><use href="#network"/></svg><span>network</span></li>
                     <li><svg class="icon"><use href="#network-fill"/></svg><span>network-fill</span></li>
-                    <li><svg class="icon"><use href="#no"/></svg><span>no</span></li>
+                    <li><svg class="icon"><use href="#ban"/></svg><span>ban</span></li>
                     <li><svg class="icon"><use href="#paw"/></svg><span>paw</span></li>
                     <li><svg class="icon"><use href="#paw-fill"/></svg><span>paw-fill</span></li>
                     <li><svg class="icon"><use href="#pen"/></svg><span>pen</span></li>
@@ -534,8 +534,8 @@
                     <li><svg class="icon"><use href="#user-remove-fill"/></svg><span>user-remove-fill</span></li>
                     <li><svg class="icon"><use href="#user-search"/></svg><span>user-search</span></li>
                     <li><svg class="icon"><use href="#user-search-fill"/></svg><span>user-search-fill</span></li>
-                    <li><svg class="icon"><use href="#user-no"/></svg><span>user-no</span></li>
-                    <li><svg class="icon"><use href="#user-no-fill"/></svg><span>user-no-fill</span></li>
+                    <li><svg class="icon"><use href="#user-ban"/></svg><span>user-ban</span></li>
+                    <li><svg class="icon"><use href="#user-ban-fill"/></svg><span>user-ban-fill</span></li>
                     <li><svg class="icon animate-spin icon-xxl"><use href="#loader-line"/></svg><span>loader-line</span></li>
                     <li><svg class="icon animate-spin icon-xxl"><use href="#loader-line-dual"/></svg><span>loader-line-dual</span></li>
                     <li><svg class="icon animate-spin icon-xxl"><use href="#loader-line-dash"/></svg><span>loader-line-dash</span></li>
@@ -788,8 +788,8 @@
                     <li><svg class="icon"><use href="#file-fill"/></svg><span>file-fill</span></li>
                     <li><svg class="icon"><use href="#files"/></svg><span>files</span></li>
                     <li><svg class="icon"><use href="#files-fill"/></svg><span>files-fill</span></li>
-                    <li><svg class="icon"><use href="#file-no"/></svg><span>file-no</span></li>
-                    <li><svg class="icon"><use href="#file-no-fill"/></svg><span>file-no-fill</span></li>
+                    <li><svg class="icon"><use href="#file-ban"/></svg><span>file-ban</span></li>
+                    <li><svg class="icon"><use href="#file-ban-fill"/></svg><span>file-ban-fill</span></li>
                     <li><svg class="icon"><use href="#file-check"/></svg><span>file-check</span></li>
                     <li><svg class="icon"><use href="#file-check-fill"/></svg><span>file-check-fill</span></li>
                     <li><svg class="icon"><use href="#file-minus"/></svg><span>file-minus</span></li>

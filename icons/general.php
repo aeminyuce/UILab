@@ -46,7 +46,7 @@
 <symbol id="in-cloud" viewBox="0 0 288 288">
     <path d="M55.2 196C30.6 194 12 158.9 12 139.3S13.5 95.5 40.1 76c7-38.4 38.2-64 75.3-64s47.8 21 61.2 45.6c39.9-8.6 75.2 27.4 75.2 70.7S226 196 193.6 196z"/>
 </symbol>
-<symbol id="in-no" viewBox="0 0 288 288">
+<symbol id="in-ban" viewBox="0 0 288 288">
     <path class="svg-l" d="M61.2 20L19.5 61.7M41 10a31 31 0 11-31 31 31 31 0 0131-31z"/>
 </symbol>
 <symbol id="in-write" viewBox="0 0 288 288">
@@ -1060,12 +1060,12 @@
 <symbol id="docs-fill" viewBox="0 0 288 288">
     <use class="svg-f" href="#docs"/>
 </symbol>
-<symbol id="doc-no" viewBox="-36 -12 288 288">
-    <use x="66" y="86" href="#in-no"/>
+<symbol id="doc-ban" viewBox="-36 -12 288 288">
+    <use x="66" y="86" href="#in-ban"/>
     <path class="svg-s" d="M12 12h192v240H12z"/>
 </symbol>
-<symbol id="doc-no-fill" viewBox="0 0 288 288">
-    <use class="svg-f" href="#doc-no"/>
+<symbol id="doc-ban-fill" viewBox="0 0 288 288">
+    <use class="svg-f" href="#doc-ban"/>
 </symbol>
 <symbol id="archive" viewBox="-12 -12 288 288">
     <path d="M96 132h72 M12 12h240v64H12z"/>
@@ -1462,7 +1462,7 @@
 <symbol id="network-fill" viewBox="0 0 288 288">
     <use class="svg-f" href="#network"/>
 </symbol>
-<symbol id="no" viewBox="-12 -12 288 288">
+<symbol id="ban" viewBox="-12 -12 288 288">
     <path d="M210.3 50L47.5 212.7 M132 11A121 121 0 1111 132 121 121 0 01132 11z">
 </symbol>
 <symbol id="paw" viewBox="-6 -6 288 288">
@@ -1787,12 +1787,12 @@
 <symbol id="user-search-fill" viewBox="0 0 288 288">
     <use class="svg-f" href="#user-search"/>
 </symbol>
-<symbol id="user-no" viewBox="-12 -38 288 288">
-    <use x="8" y="8" href="#in-no"/>
+<symbol id="user-ban" viewBox="-12 -38 288 288">
+    <use x="8" y="8" href="#in-ban"/>
     <use x="-12" y="-38" href="#in-user-right"/>
 </symbol>
-<symbol id="user-no-fill" viewBox="0 0 288 288">
-    <use class="svg-f" href="#user-no"/>
+<symbol id="user-ban-fill" viewBox="0 0 288 288">
+    <use class="svg-f" href="#user-ban"/>
 </symbol>
 <symbol id="loader-line" viewBox="-128 -12 288 288">
     <path d="M12 12a120 120 0 01120 120"/>

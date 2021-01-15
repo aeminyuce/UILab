@@ -29,7 +29,7 @@
                     <p class="font-yellow largest font-bold">Error: 403 Forbidden</p>
                     <p class="font-yellow error-size no-user-select">
                         <span class="inline-block">4</span>
-                        <svg class="icon"><use href="#no"/></svg>
+                        <svg class="icon"><use href="#ban"/></svg>
                         <span class="inline-block">3</span>
                     </p>
                     <p class="x-large">You don't have access to this page.<br>Please contact support if this wasn't supposed to happen.</p>

@@ -94,12 +94,12 @@
                                     </li>
                                     <li>
                                         <span class="light default">Tutorials</span>
-                                        <svg class="icon"><use href="#no"/></svg>
+                                        <svg class="icon"><use href="#ban"/></svg>
                                         </span>
                                     </li>
                                     <li>
                                         <span class="light default">Cancellation</span>
-                                        <svg class="icon"><use href="#no"/></svg>
+                                        <svg class="icon"><use href="#ban"/></svg>
                                     </li>
                                 </ul>
                             </div>
@@ -171,12 +171,12 @@
                                     </li>
                                     <li>
                                         <span class="light default">Tutorials</span>
-                                        <svg class="icon"><use href="#no"/></svg>
+                                        <svg class="icon"><use href="#ban"/></svg>
                                         </span>
                                     </li>
                                     <li>
                                         <span class="light default">Cancellation</span>
-                                        <svg class="icon"><use href="#no"/></svg>
+                                        <svg class="icon"><use href="#ban"/></svg>
                                     </li>
                                 </ul>
                             </div>
