@@ -897,12 +897,40 @@
 <symbol id="clipboard-list-fill" viewBox="0 0 288 288">
     <use class="svg-f" href="#clipboard-list"/>
 </symbol>
+<symbol id="clipboard-minus" viewBox="0 0 288 288">
+    <use class="svg-l" y="16" href="#in-minus"/>
+    <use class="svg-s" href="#clipboard"/>
+</symbol>
+<symbol id="clipboard-minus-fill" viewBox="0 0 288 288">
+    <use class="svg-f" href="#clipboard-minus"/>
+</symbol>
+<symbol id="clipboard-plus" viewBox="0 0 288 288">
+    <use class="svg-l" y="16" href="#in-plus"/>
+    <use class="svg-s" href="#clipboard"/>
+</symbol>
+<symbol id="clipboard-plus-fill" viewBox="0 0 288 288">
+    <use class="svg-f" href="#clipboard-plus"/>
+</symbol>
+<symbol id="clipboard-remove" viewBox="0 0 288 288">
+    <use class="svg-l" y="16" href="#in-remove"/>
+    <use class="svg-s" href="#clipboard"/>
+</symbol>
+<symbol id="clipboard-remove-fill" viewBox="0 0 288 288">
+    <use class="svg-f" href="#clipboard-remove"/>
+</symbol>
 <symbol id="clipboard-check" viewBox="0 0 288 288">
     <use class="svg-l" y="16" href="#in-check"/>
     <use class="svg-s" href="#clipboard"/>
 </symbol>
 <symbol id="clipboard-check-fill" viewBox="0 0 288 288">
     <use class="svg-f" href="#clipboard-check"/>
+</symbol>
+<symbol id="clipboard-star" viewBox="0 0 288 288">
+    <use class="svg-l" y="56" href="#in-star"/>
+    <use class="svg-s" href="#clipboard"/>
+</symbol>
+<symbol id="clipboard-star-fill" viewBox="0 0 288 288">
+    <use class="svg-f" href="#clipboard-star"/>
 </symbol>
 <symbol id="sticky-note" viewBox="-12 -12 288 288">
     <path class="svg-s" d="M12 252h168l72-72V12H12z"/>

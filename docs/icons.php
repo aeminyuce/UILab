@@ -283,8 +283,16 @@
                     <li><svg class="icon"><use href="#clipboard-fill"/></svg><span>clipboard-fill</span></li>
                     <li><svg class="icon"><use href="#clipboard-list"/></svg><span>clipboard-list</span></li>
                     <li><svg class="icon"><use href="#clipboard-list-fill"/></svg><span>clipboard-list-fill</span></li>
+                    <li><svg class="icon"><use href="#clipboard-minus"/></svg><span>clipboard-minus</span></li>
+                    <li><svg class="icon"><use href="#clipboard-minus-fill"/></svg><span>clipboard-minus-fill</span></li>
+                    <li><svg class="icon"><use href="#clipboard-plus"/></svg><span>clipboard-plus</span></li>
+                    <li><svg class="icon"><use href="#clipboard-plus-fill"/></svg><span>clipboard-plus-fill</span></li>
+                    <li><svg class="icon"><use href="#clipboard-remove"/></svg><span>clipboard-remove</span></li>
+                    <li><svg class="icon"><use href="#clipboard-remove-fill"/></svg><span>clipboard-remove-fill</span></li>
                     <li><svg class="icon"><use href="#clipboard-check"/></svg><span>clipboard-check</span></li>
                     <li><svg class="icon"><use href="#clipboard-check-fill"/></svg><span>clipboard-check-fill</span></li>
+                    <li><svg class="icon"><use href="#clipboard-star"/></svg><span>clipboard-star</span></li>
+                    <li><svg class="icon"><use href="#clipboard-star-fill"/></svg><span>clipboard-star-fill</span></li>
                     <li><svg class="icon"><use href="#sticky-note"/></svg><span>sticky-note</span></li>
                     <li><svg class="icon"><use href="#sticky-note-fill"/></svg><span>sticky-note-fill</span></li>
                     <li><svg class="icon"><use href="#sticky-note-list"/></svg><span>sticky-note-list</span></li>
