@@ -640,6 +640,7 @@
                     <li><svg class="icon"><use href="#signal-stream-fill"/></svg><span>signal-stream-fill</span></li>
                     <li><svg class="icon"><use href="#signal-wifi"/></svg><span>signal-wifi</span></li>
                     <li><svg class="icon"><use href="#signal-wifi-fill"/></svg><span>signal-wifi-fill</span></li>
+                    <li><svg class="icon"><use href="#signal-contactless"/></svg><span>signal-contactless</span></li>
                     <li><svg class="icon"><use href="#aperture"/></svg><span>aperture</span></li>
                     <li><svg class="icon"><use href="#aperture-fill"/></svg><span>aperture-fill</span></li>
                     <li><svg class="icon"><use href="#adjust"/></svg><span>adjust</span></li>
