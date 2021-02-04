@@ -7,6 +7,7 @@ var alerts = {
 
     dialogTheme: '', // use themes
     dialogClasses: 'round shadow-lg',
+    dialogMessages: true,
 
     messageTheme: '', // use themes
     messageClasses: 'round shadow-lg',
@@ -164,7 +165,7 @@ var alerts = {
                     // Events
                     events.on('.dialog-buttons button', 'click', function () {
 
-                        var that, msg, theme;
+                        var that, msg, msgTimer, theme;
 
                         that = this;
 
@@ -178,14 +179,23 @@ var alerts = {
                             theme = 'danger';
                         }
 
+                        if (alerts.dialogMessages) {
+                            msgTimer = 150;
+
+                        } else { msgTimer = 0; }
+
                         alerts.closeDialog();
                         setTimeout(function () {
 
                             // show message
-                            alerts.message({
-                                msg: msg,
-                                theme: theme
-                            });
+                            if (alerts.dialogMessages) {
+
+                                alerts.message({
+                                    msg: msg,
+                                    theme: theme
+                                });
+
+                            }
 
                             // callback
                             if (set.callback !== undefined) {
@@ -196,7 +206,7 @@ var alerts = {
 
                             }
 
-                        }, 150);
+                        }, msgTimer);
 
                     });
 
