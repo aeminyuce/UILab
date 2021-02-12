@@ -32,7 +32,7 @@
 
     <script src="../js/top-button.js"></script>
     <script src="../js/dropdown.js"></script>
-    <script src="../js/loading-button.js"></script>
+    <script src="../js/loading-mask.js"></script>
     <script src="../js/tabs.js"></script>
 
     <script src="../js/forms.js"></script>
@@ -154,6 +154,7 @@
                         <li><a class="btn btn-ghost" href="?p=grid">Grid</a></li>
                         <li><a class="btn btn-ghost" href="?p=image-uploader">Image Uploader</a></li>
                         <li><a class="btn btn-ghost" href="?p=list-group">List Group</a></li>
+                        <li><a class="btn btn-ghost" href="?p=loading-mask">Loading Mask</a></li>
                         <li><a class="btn btn-ghost" href="?p=modal">Modal</a></li>
                         <li><a class="btn btn-ghost" href="?p=photo-images">Photo Images</a></li>
                         <li><a class="btn btn-ghost" href="?p=pricing-tables">Pricing Tables</a></li>

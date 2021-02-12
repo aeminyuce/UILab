@@ -1,4 +1,4 @@
-/*globals document, selector, events, setTimeout, ajax, FileReader, loadingButton */
+/*globals document, selector, events, setTimeout, ajax, FileReader, loadingMask */
 
 function fileSize(holder, code) {
 
@@ -62,7 +62,7 @@ function pullFiles(that) {
 
                         // empty variables
                         setTimeout(function () {
-                            loadingButton.toggle(that); // hide loading
+                            loadingMask.toggle(that); // hide loading
                         }, 150);
 
                         pullResults = '';
@@ -77,11 +77,11 @@ function pullFiles(that) {
 
     };
 
-    loadingButton.toggle(that); // show loading
+    loadingMask.toggle(that); // show loading
     if (list.length < 1) {
 
         setTimeout(function () {
-            loadingButton.toggle(that); // hide loading
+            loadingMask.toggle(that); // hide loading
         }, 150);
 
         return;
@@ -133,7 +133,7 @@ function readFiles(that) {
     btn = that.parentElement;
     btn = selector('.btn', btn)[0];
 
-    loadingButton.toggle(btn); // show loading
+    loadingMask.toggle(btn); // show loading
 
     events.each(elems, function () {
         this.checked = false;
@@ -150,7 +150,7 @@ function readFiles(that) {
             if (getTypes === null) {
 
                 setTimeout(function () {
-                    loadingButton.toggle(btn); // hide loading
+                    loadingMask.toggle(btn); // hide loading
                 }, 150);
 
                 that.value = '';
@@ -203,7 +203,7 @@ function readFiles(that) {
                 });
 
                 setTimeout(function () {
-                    loadingButton.toggle(btn); // hide loading
+                    loadingMask.toggle(btn); // hide loading
                 }, 150);
 
                 // empty variables
@@ -216,7 +216,7 @@ function readFiles(that) {
     } else {
 
         setTimeout(function () {
-            loadingButton.toggle(btn); // hide loading
+            loadingMask.toggle(btn); // hide loading
         }, 150);
 
     }

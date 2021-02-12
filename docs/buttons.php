@@ -407,26 +407,6 @@
 
                 </div>
 
-                <h4>Loading Buttons</h4>
-                <div class="padding-30-b theme-default">
-
-                    <button id="loadingBtnID" class="btn btn-lg padding-25-h round theme-default2 ui-dark ease-btn">Button</button>
-
-                    <pre class="round margin-5-v">loadingButton.toggle(id);</pre>
-                    <button class="btn btn-sm round ui-dark ease-btn" onclick="loadingButton.toggle('#loadingBtnID');">Run Code</button>
-
-                    <span class="sp-30"></span>
-
-                    <div class="ease-1st-btn">
-                        <a href="#" class="loadingBtnClass btn btn-lg padding-25-h round theme-default2 ui-dark">Link</a>
-                        <button class="loadingBtnClass btn btn-lg padding-25-h round theme-default2 ui-dark" onclick="alert('Javascript Alert');">Javascript Alert</button>
-                    </div>
-
-                    <pre class="round margin-5-v">loadingButton.toggle(classname);<br>- or -<br>var variable = selector(element);<br>loadingButton.toggle(variable);</pre>
-                    <button class="btn btn-sm round ui-dark ease-btn" onclick="loadingButton.toggle('.loadingBtnClass');">Run Code</button>
-
-                </div>
-
                 <h4>Button List</h4>
                 <div class="row padding-30-b">
                     <div class="col-6">

@@ -283,6 +283,13 @@
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
+                                        <input type="checkbox" name="loading mask js" value="../css/loading-mask">
+                                        <i class="state ui-dark"></i>
+                                    </span>
+                                    Loading Mask
+                                </label>
+                                <label class="custom">
+                                    <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="photo images" value="../css/photo-images">
                                         <i class="state ui-dark"></i>
                                     </span>
@@ -632,13 +639,6 @@
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
-                                        <input type="checkbox" name="loading button js" value="../js/loading-button">
-                                        <i class="state ui-dark"></i>
-                                    </span>
-                                    Loading Button
-                                </label>
-                                <label class="custom">
-                                    <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" name="tabs js" value="../js/tabs">
                                         <i class="state ui-dark"></i>
                                     </span>
@@ -814,6 +814,13 @@
                                         <i class="state ui-dark"></i>
                                     </span>
                                     Image Uploader
+                                </label>
+                                <label class="custom">
+                                    <span class="switch-custom round border-dual ease-form">
+                                        <input type="checkbox" name="loading mask js" value="../js/loading-mask">
+                                        <i class="state ui-dark"></i>
+                                    </span>
+                                    Loading Mask
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">

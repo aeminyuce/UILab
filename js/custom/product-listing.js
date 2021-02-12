@@ -1,4 +1,4 @@
-/*globals window, selector, events, setTimeout, ajax, lineCharts, alerts, loadingButton */
+/*globals window, selector, events, setTimeout, ajax, lineCharts, alerts, loadingMask */
 
 lineCharts.rows = 4; // set number of rows
     lineCharts.rowsHeight = 36; // set height of single row (px)
@@ -18,7 +18,7 @@ lineCharts.rows = 4; // set number of rows
             var that, target, scrollPos;
 
             that = this;
-            loadingButton.toggle(this);
+            loadingMask.toggle(this);
 
             scrollPos = that.getBoundingClientRect().top + window.pageYOffset - 15;
 
@@ -38,7 +38,7 @@ lineCharts.rows = 4; // set number of rows
                                 theme: 'theme-default2 ui-dark'
                             });
 
-                            loadingButton.toggle(that);
+                            loadingMask.toggle(that);
                             setTimeout(function () {
                                 window.scrollTo(0, scrollPos);
                             }, 150);
@@ -51,7 +51,7 @@ lineCharts.rows = 4; // set number of rows
                                 pos: 'tr'
                             });
 
-                            loadingButton.toggle(that);
+                            loadingMask.toggle(that);
 
                         }
 
