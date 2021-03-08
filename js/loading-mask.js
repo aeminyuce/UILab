@@ -12,30 +12,81 @@ var loadingMask = {
     'use strict';
     /*globals selector, events, document, setTimeout */
 
+    var
+        maskItems = [],
+        maskHolders = [];
+
     loadingMask.Start = function () {
 
         loadingMask.toggle = function (that) {
 
-            var l, i, t, holder, html;
+            var l, i, j, status, html;
 
             l = selector(that);
+
+            function effectTimers(type) { // wait for effects
+
+                if (type === 'hide') {
+
+                    setTimeout(function () {
+
+                        for (j = 0; j < l.length; j++) {
+
+                            maskItems[j].removeChild(maskHolders[j]);
+                            events.removeClass(maskItems[j], 'loading-mask');
+
+                            if (j === (l.length - 1)) {
+
+                                // empty variables
+                                maskItems = [];
+                                maskHolders = [];
+
+                            }
+
+                        }
+
+                    }, 150);
+
+                } else { // show
+
+                    setTimeout(function () {
+
+                        for (j = 0; j < l.length; j++) {
+
+                            events.addClass(maskHolders[j], 'open-ease');
+
+                            if (j === (l.length - 1)) {
+
+                                // empty variables
+                                maskItems = [];
+                                maskHolders = [];
+
+                            }
+
+                        }
+
+                    }, 0);
+
+                }
+
+            }
+
             for (i = 0; i < l.length; i++) {
 
                 if (events.hasClass(l[i], 'loading-mask')) {
 
-                    t = l[i];
+                    // hide loading
+                    status = 'hide';
 
-                    holder = selector('.loading-spinner', l[i])[0];
-                    events.removeClass(holder, 'open-ease');
+                    maskHolders[i] = selector('.loading-spinner', l[i])[0];
+                    events.removeClass(maskHolders[i], 'open-ease');
 
-                    setTimeout(function () {
-
-                        t.removeChild(holder);
-                        events.removeClass(t, 'loading-mask');
-
-                    }, 150);
+                    maskItems[i] = l[i];
 
                 } else {
+
+                    // show loading
+                    status = 'show';
 
                     html = '<span class="loading-spinner ease-layout">' +
                                 '<span>' +
@@ -48,11 +99,13 @@ var loadingMask = {
 
                     events.addClass(l[i], 'loading-mask');
 
-                    holder = selector('.loading-spinner', l[i])[0];
+                    maskHolders[i] = selector('.loading-spinner', l[i])[0];
+                    events.addClass(maskHolders[i], 'open');
 
-                    events.addClass(holder, 'open');
-                    setTimeout(function () { events.addClass(holder, 'open-ease'); }, 0);
+                }
 
+                if (i === (l.length - 1)) {
+                    effectTimers(status);
                 }
 
             }
