@@ -1,4 +1,4 @@
-<main class="container no-gutter">
+<main class="container no-gutter loadingPage">
     <div class="fixed padding-30-t">
         <div class="row">
             <div class="col-12">
@@ -78,6 +78,14 @@
                     </div>
                     <pre class="round margin-10-t margin-5-b">loadingMask.toggle('.loadingTextarea');</pre>
                     <button class="btn btn-sm round ui-dark ease-btn" onclick="loadingMask.toggle('.loadingTextarea');">Run Code</button>
+
+                </div>
+
+                <h4>Loading Mask with Whole Page</h4>
+                <div class="padding-30-b theme-default">
+
+                    <pre class="round margin-10-t margin-5-b">loadingMask.toggle('.loadingPage');</pre>
+                    <button class="btn btn-sm round ui-dark ease-btn" onclick="loadingMask.toggle('.loadingPage');">Run Code</button>
 
                 </div>
 
