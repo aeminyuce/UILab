@@ -8925,8 +8925,9 @@ html:not(.mobile) .image-uploader .uploader-list ul > li .img img:hover {
   cursor: default !important;
 }
 .loading-spinner {
+  height: 100%;
   background-color: hsla(0, 0%, 0%, 0.46);
-  position: absolute !important;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -8947,6 +8948,7 @@ html:not(.mobile) .image-uploader .uploader-list ul > li .img img:hover {
   transform: translate(-50%, -50%);
 }
 .loading-spinner span svg {
+  max-height: 76px !important;
   display: block;
   fill: none;
   stroke: hsl(0, 0%, 100%);
@@ -8954,6 +8956,9 @@ html:not(.mobile) .image-uploader .uploader-list ul > li .img img:hover {
   stroke-linecap: round;
   stroke-linejoin: round;
   animation: loading-spin 1.15s linear infinite;
+}
+.loading-mask-sticky > .loading-spinner {
+  position: fixed;
 }
 /* photo gallery */
 @keyframes preview-loader {

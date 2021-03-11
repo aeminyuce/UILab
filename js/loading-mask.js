@@ -10,7 +10,7 @@ var loadingMask = {
 (function () {
 
     'use strict';
-    /*globals selector, events, document, setTimeout */
+    /*globals selector, events, window, document, setTimeout */
 
     var
         maskItems = [],
@@ -20,11 +20,23 @@ var loadingMask = {
 
         loadingMask.toggle = function (that) {
 
-            var l, i, j, status, html;
+            var l, i, j, sticky, status, html;
 
             l = selector(that);
 
             function effectTimers(type) { // wait for effects
+
+                function emptyVars(j, l) {
+
+                    // empty variables
+                    if (j === (l.length - 1)) {
+
+                        maskItems = [];
+                        maskHolders = [];
+
+                    }
+
+                }
 
                 if (type === 'hide') {
 
@@ -33,15 +45,9 @@ var loadingMask = {
                         for (j = 0; j < l.length; j++) {
 
                             maskItems[j].removeChild(maskHolders[j]);
-                            events.removeClass(maskItems[j], 'loading-mask');
+                            events.removeClass(maskItems[j], 'loading-mask loading-mask-sticky');
 
-                            if (j === (l.length - 1)) {
-
-                                // empty variables
-                                maskItems = [];
-                                maskHolders = [];
-
-                            }
+                            emptyVars(j, l);
 
                         }
 
@@ -54,14 +60,7 @@ var loadingMask = {
                         for (j = 0; j < l.length; j++) {
 
                             events.addClass(maskHolders[j], 'open-ease');
-
-                            if (j === (l.length - 1)) {
-
-                                // empty variables
-                                maskItems = [];
-                                maskHolders = [];
-
-                            }
+                            emptyVars(j, l);
 
                         }
 
@@ -94,10 +93,20 @@ var loadingMask = {
                                         '<path d="M12 12a120 120 0 01120 120"/>' +
                                     '</svg>' +
                                 '</span>' +
-                            '</span>' + l[i].innerHTML;
-                        l[i].innerHTML = html;
+                            '</span>';
+
+                    l[i].insertAdjacentHTML('afterbegin', html);
 
                     events.addClass(l[i], 'loading-mask');
+
+                    if (l[i].offsetWidth >= (window.innerWidth - 15)) {
+                        sticky = true;
+
+                    } else { sticky = false; }
+
+                    if (sticky) {
+                        events.addClass(l[i], 'loading-mask-sticky');
+                    }
 
                     maskHolders[i] = selector('.loading-spinner', l[i])[0];
                     events.addClass(maskHolders[i], 'open');
