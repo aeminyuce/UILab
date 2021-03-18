@@ -64,7 +64,7 @@
                     </div>
                 </div>
 
-                <h4>Dropdowns Navs with List Columns</h4>
+                <h4>Dropdown Navs with List Columns</h4>
                 <div class="row padding-30-b form-lg theme-default">
                     <div class="col-12">
 
