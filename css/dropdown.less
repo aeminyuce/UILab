@@ -180,7 +180,13 @@
             .toggle-icon { .toggle-icon(); transform+_: rotate(-180deg); }
         }
 
-        .content { max-height: inherit !important; overflow: inherit; position: static; box-shadow: none; transform-origin: top center !important; }
+        .content { background: none; max-height: inherit !important; overflow: inherit; position: static; box-shadow: none; transform-origin: top center !important; }
+        ul.content {
+            & > li {
+                &:not(:last-child) { border-bottom: 0; }
+            }
+        }
+
         &:not(:last-child) {
             .content { margin-bottom: @highlight-space / 2 !important; }
         }
