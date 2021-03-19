@@ -4090,8 +4090,8 @@ input.btn {
 }
 .btn-ghost.ui-dark:not(.ui-text),
 .btn-ghost.ui-x-dark:not(.ui-text),
-.btn-ghost.ui-dark:not(.ui-text) .icon,
-.btn-ghost.ui-x-dark:not(.ui-text) .icon {
+.btn-ghost.ui-dark:not(.ui-text) .icon:not(.ui-text),
+.btn-ghost.ui-x-dark:not(.ui-text) .icon:not(.ui-text) {
   color: hsl(0, 0%, 0%);
   color: var(--black);
 }
