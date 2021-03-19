@@ -63,7 +63,9 @@
         &:not(:hover) { background-color: @no-color !important; }
 
         &.ui-dark,&.ui-x-dark {
-            &:not(.ui-text) { ._color-var(black); }
+            &:not(.ui-text) {
+                &,.icon { ._color-var(black); }
+            }
         }
         &.ui-dark,&.ui-x-dark {
             &:hover,&:hover .icon { color: @white !important; }

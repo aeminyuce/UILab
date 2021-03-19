@@ -4089,7 +4089,9 @@ input.btn {
   background-color: transparent !important;
 }
 .btn-ghost.ui-dark:not(.ui-text),
-.btn-ghost.ui-x-dark:not(.ui-text) {
+.btn-ghost.ui-x-dark:not(.ui-text),
+.btn-ghost.ui-dark:not(.ui-text) .icon,
+.btn-ghost.ui-x-dark:not(.ui-text) .icon {
   color: hsl(0, 0%, 0%);
   color: var(--black);
 }
