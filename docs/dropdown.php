@@ -74,12 +74,12 @@
                                 <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
                             </button>
                             <ul class="content list-column-2 has-icon round shadow-lg">
-                                <li><a href="#"><b class="list-icon icon icon-hourglass-start"></b> Waiting</a></li>
-                                <li><a href="#"><b class="list-icon icon icon-user-circle"></b> Expert</a></li>
-                                <li><a href="#"><b class="list-icon icon icon-shield"></b> On Audit</a></li>
-                                <li><a href="#"><b class="list-icon icon icon-hourglass-end"></b> Delayed</a></li>
-                                <li><a href="#"><b class="list-icon icon icon-hourglass-start"></b> Waiting</a></li>
-                                <li><a href="#"><b class="list-icon icon icon-user-circle"></b> Expert</a></li>
+                                <li><a href="#"><svg class="list-icon icon"><use href="#hourglass-start"/></svg> Waiting</a></li>
+                                <li><a href="#"><svg class="list-icon icon"><use href="#user-circle"/></svg> Expert</a></li>
+                                <li><a href="#"><svg class="list-icon icon"><use href="#shield"/></svg> On Audit</a></li>
+                                <li><a href="#"><svg class="list-icon icon"><use href="#hourglass"/></svg> Delayed</a></li>
+                                <li><a href="#"><svg class="list-icon icon"><use href="#hourglass-end"/></svg> Waiting</a></li>
+                                <li><a href="#"><svg class="list-icon icon"><use href="#user"/></svg> Expert</a></li>
                             </ul>
                         </div>
 
@@ -89,11 +89,11 @@
                                 <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
                             </button>
                             <ul class="content list-column-2 has-icon round shadow-lg">
-                                <li><a href="#"><b class="list-icon icon icon-hourglass-start"></b> Waiting</a></li>
-                                <li><a href="#"><b class="list-icon icon icon-user-circle"></b> Expert</a></li>
-                                <li><a href="#"><b class="list-icon icon icon-shield"></b> On Audit</a></li>
-                                <li><a href="#"><b class="list-icon icon icon-hourglass-end"></b> Delayed</a></li>
-                                <li><a href="#"><b class="list-icon icon icon-hourglass-start"></b> Waiting</a></li>
+                                <li><a href="#"><svg class="list-icon icon"><use href="#hourglass-start"/></svg> Waiting</a></li>
+                                <li><a href="#"><svg class="list-icon icon"><use href="#user-circle"/></svg> Expert</a></li>
+                                <li><a href="#"><svg class="list-icon icon"><use href="#shield"/></svg> On Audit</a></li>
+                                <li><a href="#"><svg class="list-icon icon"><use href="#hourglass"/></svg> Delayed</a></li>
+                                <li><a href="#"><svg class="list-icon icon"><use href="#hourglass-end"/></svg> Waiting</a></li>
                             </ul>
                         </div>
 
