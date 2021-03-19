@@ -4779,12 +4779,17 @@ html:not(.mobile) .dropdown ul.content > li:hover {
   transform: translateY(-50%) rotate(-180deg);
 }
 .mobile-menu .dropdown .content {
+  max-height: inherit !important;
+  overflow: inherit;
   position: static;
   box-shadow: none;
   transform-origin: top center !important;
 }
 .mobile-menu .dropdown:not(:last-child) .content {
   margin-bottom: 10px !important;
+}
+.mobile-menu [class*="list-column-"] > li {
+  border-right: 0;
 }
 @media (min-width: 768px) {
   .dropdown .content {
