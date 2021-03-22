@@ -7461,6 +7461,21 @@ html:not(.ie) .svg-map svg {
 .modal-win:not(.show) {
   display: none;
 }
+.modal-win.no-bg,
+.modal-win.no-bg .text input,
+.modal-win.no-bg .select select,
+.modal-win.no-bg .select-multi select,
+.modal-win.no-bg .textarea textarea,
+.modal-win.no-bg .text .icon,
+.modal-win.no-bg .select .icon {
+  color: hsl(0, 0%, 100%);
+}
+.modal-win.no-bg ::placeholder {
+  color: hsla(0, 0%, 100%, 0.4);
+}
+.modal-win.no-bg ::-ms-input-placeholder {
+  color: hsla(0, 0%, 100%, 0.4);
+}
 .modal-win.no-bg .modal-content {
   background: none !important;
   box-shadow: none !important;

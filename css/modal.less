@@ -50,6 +50,11 @@
         &:not(.show) { display: none; }
 
         &.no-bg {
+            &,.text input,.select select,.select-multi select,.textarea textarea,.text .icon,.select .icon { color: @white; }
+
+            ::placeholder { color: fade(@white, 40%); }
+            ::-ms-input-placeholder { color: fade(@white, 40%); }
+
             .modal-content { background: none !important; box-shadow: none !important; }
 
             .error {
