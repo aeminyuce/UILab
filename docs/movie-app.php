@@ -444,42 +444,42 @@
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-dark" href="#">
                         <svg class="icon"><use href="#tv"/></svg>
-                        <span class="block margin-5-v">TV Shows</span>
+                        <span class="x-large block margin-5-t">TV Shows</span>
                         <span class="dark">1024</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-dark" href="#">
                         <svg class="icon"><use href="#film"/></svg>
-                        <span class="block margin-5-v">Films</span>
+                        <span class="x-large block margin-5-t">Films</span>
                         <span class="dark">775</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-dark" href="#">
                         <svg class="icon"><use href="#trophy-star"/></svg>
-                        <span class="block margin-5-v">Sports</span>
+                        <span class="x-large block margin-5-t">Sports</span>
                         <span class="dark">316</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-dark" href="#">
                         <svg class="icon"><use href="#music"/></svg>
-                        <span class="block margin-5-v">Concerts</span>
+                        <span class="x-large block margin-5-t">Concerts</span>
                         <span class="dark">589</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-dark" href="#">
                         <svg class="icon"><use href="#face-smile"/></svg>
-                        <span class="block margin-5-v">Comedy</span>
+                        <span class="x-large block margin-5-t">Comedy</span>
                         <span class="dark">219</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-dark" href="#">
                         <svg class="icon"><use href="#video"/></svg>
-                        <span class="block margin-5-v">Others</span>
+                        <span class="x-large block margin-5-t">Others</span>
                         <span class="dark">701</span>
                     </a>
                 </div>

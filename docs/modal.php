@@ -268,22 +268,22 @@
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-dark" href="#">
                         <svg class="icon"><use href="#news"/></svg>
-                        <span class="block margin-5-v">News</span>
-                        <span class="dark">589</span>
+                        <span class="x-large block margin-5-t">News</span>
+                        <span class="x-light">589</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-dark" href="#">
                         <svg class="icon"><use href="#calendar-check"/></svg>
-                        <span class="block margin-5-v">Events</span>
-                        <span class="dark">219</span>
+                        <span class="x-large block margin-5-t">Events</span>
+                        <span class="x-light">219</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-dark" href="#">
                         <svg class="icon"><use href="#files"/></svg>
-                        <span class="block margin-5-v">Documents</span>
-                        <span class="dark">701</span>
+                        <span class="x-large block margin-5-t">Documents</span>
+                        <span class="x-light">701</span>
                     </a>
                 </div>
             </div>
