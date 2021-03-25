@@ -185,6 +185,11 @@
             & > li {
                 &:not(:last-child) { border-bottom: 0; }
             }
+            &.round {
+                & > li {
+                    &,a { border-radius: @round; }
+                }
+            }
         }
 
         &:not(:last-child) {

@@ -4789,6 +4789,10 @@ html:not(.mobile) .dropdown ul.content > li:hover {
 .mobile-menu .dropdown ul.content > li:not(:last-child) {
   border-bottom: 0;
 }
+.mobile-menu .dropdown ul.content.round > li,
+.mobile-menu .dropdown ul.content.round > li a {
+  border-radius: 6px;
+}
 .mobile-menu .dropdown:not(:last-child) .content {
   margin-bottom: 10px !important;
 }
