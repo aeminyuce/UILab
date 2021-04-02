@@ -62,10 +62,11 @@
     &-sidebar {
         td {
             &:first-of-type {
-                font-weight: @font-bold;
-
-                &:extend(.table-border th:not(:last-child));
+                font-weight: @font-bold; ._border-var(@dir: border-right; @var: table-border-color);
             }
+        }
+        &.align-c {
+            td:not(:first-child) { &:extend(.table:not(.table-sidebar).align-c td); }
         }
     }
 
@@ -114,12 +115,6 @@
         }
     }
 
-    &&-sidebar.align-c {
-        td:not(:first-child) { &:extend(.table:not(.table-sidebar).align-c td); }
-    }
-}
-
-.table { // seperated for extends
     &-border {
         ._border-var(@var: table-border-color);
         &:extend(.table[class*="border-"]);

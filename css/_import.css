@@ -6292,6 +6292,8 @@ html:not(.mobile) .close-card:hover {
 }
 .table-sidebar td:first-of-type {
   font-weight: 700;
+  border-right: solid 1px hsl(0, 0%, 87%);
+  border-right: solid 1px var(--table-border-color);
 }
 .table tbody:last-child tr:last-child td,
 .table tfoot tr:last-child td,
@@ -6300,7 +6302,7 @@ html:not(.mobile) .close-card:hover {
 }
 .table:not(.table-sidebar).align-c td,
 .table:not(.table-sidebar).align-c th,
-.table.table-sidebar.align-c td:not(:first-child) {
+.table-sidebar.align-c td:not(:first-child) {
   text-align: center;
 }
 .table[class*="border-"],
