@@ -134,6 +134,38 @@
                     </div>
                 </div>
 
+                <h4>Dropdown Navs with Accordion Tabs</h4>
+                <div class="row padding-30-b form-lg theme-default">
+                    <div class="col-12">
+
+                        <div class="dropdown nav open-hover btn-xs-fluid ease-dropdown">
+                            <button class="btn circle ui-dark">
+                                Nav Dropdown
+                                <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
+                            </button>
+                            <div class="content round shadow-lg no-scroll">
+                                <button class="tab btn-toggle btn block align-l ease-btn">Waiting</button>
+                                <div class="tabs form-lg" data-classes="ui-dark">
+
+                                    <button class="tab btn-toggle btn block align-l ease-btn">
+                                        <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
+                                        Tab Button
+                                    </button>
+                                    <div class="tab-content align-l block-1st ease-1st-btn">
+                                        <button class="tab btn-toggle btn">Inner Button</button>
+                                        <button class="tab btn-toggle btn">Inner Button</button>
+                                        <button class="tab btn-toggle btn">Inner Button</button>
+                                    </div>
+
+                                </div>
+                                <button class="tab btn-toggle btn block align-l ease-btn">Delayed</button>
+                                <button class="tab btn-toggle btn block align-l ease-btn">Expert</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
                 <h4>Dropdowns with Value Toggle</h4>
                 <div class="row padding-30-b form-lg">
                     <div class="col-12 sm-align-c">
