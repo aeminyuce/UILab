@@ -238,7 +238,7 @@ var autocomplete = {
                             // get json data with ajax
                             ajax({
 
-                                url : src,
+                                url : src + '?inputValue=' + v,
                                 beforesend: function (xhr) {
 
                                     // abort still processing previous autocomplete requests
