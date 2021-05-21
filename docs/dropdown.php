@@ -134,32 +134,80 @@
                     </div>
                 </div>
 
-                <h4>Dropdown Navs with Accordion Tabs</h4>
-                <div class="row padding-30-b form-lg theme-default">
-                    <div class="col-12">
+                <h4>Dropdowns with Accordion Tabs</h4>
+                <div class="row padding-30-b block-2nd form-lg theme-default">
+                    <div class="col-3 col-sm-6">
 
-                        <div class="dropdown nav open-hover btn-xs-fluid ease-dropdown">
+                        <div class="dropdown btn-xs-fluid ease-dropdown">
                             <button class="btn circle ui-dark">
-                                Nav Dropdown
+                                Dropdown
                                 <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
                             </button>
-                            <div class="content round shadow-lg no-scroll">
-                                <button class="tab btn-toggle btn block align-l ease-btn">Waiting</button>
-                                <div class="tabs form-lg" data-classes="ui-dark">
+                            <div class="content tabs round align-l shadow-lg block-1st no-scroll" data-classes="ui-dark btn-show">
 
-                                    <button class="tab btn-toggle btn block align-l ease-btn">
-                                        <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
-                                        Tab Button
-                                    </button>
-                                    <div class="tab-content align-l block-1st ease-1st-btn">
-                                        <button class="tab btn-toggle btn">Inner Button</button>
-                                        <button class="tab btn-toggle btn">Inner Button</button>
-                                        <button class="tab btn-toggle btn">Inner Button</button>
-                                    </div>
+                                <button class="btn btn-ghost ease-btn">Waiting</button>
 
+                                <button class="tab btn-toggle btn btn-ghost ease-btn">
+                                    <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
+                                    On Audit
+                                </button>
+                                <div class="tab-content block-1st theme-gray ui-light ease-1st-btn">
+                                    <button class="btn btn-ghost padding-20-l">Inner Link</button>
+                                    <button class="btn btn-ghost padding-20-l">Inner Link</button>
+                                    <button class="btn btn-ghost padding-20-l">Inner Link</button>
                                 </div>
-                                <button class="tab btn-toggle btn block align-l ease-btn">Delayed</button>
-                                <button class="tab btn-toggle btn block align-l ease-btn">Expert</button>
+
+                                <button class="tab btn-toggle btn btn-ghost ease-btn">
+                                    <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
+                                    Expert
+                                </button>
+                                <div class="tab-content block-1st theme-gray ui-light ease-1st-btn">
+                                    <button class="btn btn-ghost padding-20-l">Inner Link</button>
+                                    <button class="btn btn-ghost padding-20-l">Inner Link</button>
+                                    <button class="btn btn-ghost padding-20-l">Inner Link</button>
+                                </div>
+
+                                <button class="btn btn-ghost ease-btn">Delayed</button>
+                                <button class="btn btn-ghost ease-btn">Expert</button>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-3 col-sm-6">
+
+                        <div class="dropdown btn-xs-fluid ease-dropdown">
+                            <button class="btn circle ui-dark">
+                                Dropdown
+                                <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
+                            </button>
+                            <div class="content tabs round align-l shadow-lg block-1st no-scroll" data-classes="ui-dark btn-show">
+
+                                <button class="btn btn-ghost ease-btn">Waiting</button>
+
+                                <button class="tab btn-toggle btn btn-ghost ease-btn">
+                                    <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
+                                    On Audit
+                                </button>
+                                <div class="tab-content block-1st theme-gray ui-light ease-1st-btn">
+                                    <button class="btn btn-ghost padding-20-l">Inner Link</button>
+                                    <button class="btn btn-ghost padding-20-l">Inner Link</button>
+                                    <button class="btn btn-ghost padding-20-l">Inner Link</button>
+                                </div>
+
+                                <button class="tab btn-toggle btn btn-ghost ease-btn">
+                                    <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
+                                    Expert
+                                </button>
+                                <div class="tab-content block-1st theme-gray ui-light ease-1st-btn">
+                                    <button class="btn btn-ghost padding-20-l">Inner Link</button>
+                                    <button class="btn btn-ghost padding-20-l">Inner Link</button>
+                                    <button class="btn btn-ghost padding-20-l">Inner Link</button>
+                                </div>
+
+                                <button class="btn btn-ghost ease-btn">Delayed</button>
+                                <button class="btn btn-ghost ease-btn">Expert</button>
+
                             </div>
                         </div>
 
