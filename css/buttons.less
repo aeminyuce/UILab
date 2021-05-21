@@ -59,7 +59,7 @@
         &:not([class*="align-"]) { text-align: center !important; }
     }
 
-    &-ghost {
+    &-ghost:not(.btn-show) {
         &:not(:hover) { background-color: @no-color !important; }
 
         &.ui-dark,&.ui-x-dark {
@@ -94,8 +94,8 @@
             &:hover .icon { opacity: 1 !important; }
         }
 
-        &:not([class*="ui-x-light"]):not([class*="ui-light"]):not([class*="ui-dark"]):not([class*="ui-x-dark"]):not(.btn-passive):not(.swatch-active):hover { ._bg-var(btn-hover-bg); }
-        &.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-light"]):not([class*="ui-dark"]):not([class*="ui-x-dark"]):not(.btn-passive):not(.swatch-active):hover { ._bg-var(btn-ghost-hover-bg); }
+        &:not([class*="ui-x-light"]):not([class*="ui-light"]):not([class*="ui-dark"]):not([class*="ui-x-dark"]):not(.btn-passive):hover { ._bg-var(btn-hover-bg); }
+        &.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-light"]):not([class*="ui-dark"]):not([class*="ui-x-dark"]):not(.btn-passive):hover { ._bg-var(btn-ghost-hover-bg); }
     }
 }
 

@@ -4085,23 +4085,23 @@ input.btn {
 .btn-square:not([class*="align-"]) {
   text-align: center !important;
 }
-.btn-ghost:not(:hover) {
+.btn-ghost:not(.btn-show):not(:hover) {
   background-color: transparent !important;
 }
-.btn-ghost.ui-dark:not(.ui-text),
-.btn-ghost.ui-x-dark:not(.ui-text),
-.btn-ghost.ui-dark:not(.ui-text) .icon:not(.ui-text),
-.btn-ghost.ui-x-dark:not(.ui-text) .icon:not(.ui-text) {
+.btn-ghost:not(.btn-show).ui-dark:not(.ui-text),
+.btn-ghost:not(.btn-show).ui-x-dark:not(.ui-text),
+.btn-ghost:not(.btn-show).ui-dark:not(.ui-text) .icon:not(.ui-text),
+.btn-ghost:not(.btn-show).ui-x-dark:not(.ui-text) .icon:not(.ui-text) {
   color: hsl(0, 0%, 0%);
   color: var(--black);
 }
-.btn-ghost.ui-dark:hover,
-.btn-ghost.ui-x-dark:hover,
-.btn-ghost.ui-dark:hover .icon,
-.btn-ghost.ui-x-dark:hover .icon {
+.btn-ghost:not(.btn-show).ui-dark:hover,
+.btn-ghost:not(.btn-show).ui-x-dark:hover,
+.btn-ghost:not(.btn-show).ui-dark:hover .icon,
+.btn-ghost:not(.btn-show).ui-x-dark:hover .icon {
   color: hsl(0, 0%, 100%) !important;
 }
-.btn-ghost-border:not(:hover) {
+.btn-ghost:not(.btn-show)-border:not(:hover) {
   border-color: transparent !important;
 }
 .btn-multi {
@@ -4135,11 +4135,11 @@ html:not(.mobile) .btn.ui-dark:hover .icon,
 html:not(.mobile) .btn.ui-x-dark:hover .icon {
   opacity: 1 !important;
 }
-html:not(.mobile) .btn:not([class*="ui-x-light"]):not([class*="ui-light"]):not([class*="ui-dark"]):not([class*="ui-x-dark"]):not(.btn-passive):not(.swatch-active):hover {
+html:not(.mobile) .btn:not([class*="ui-x-light"]):not([class*="ui-light"]):not([class*="ui-dark"]):not([class*="ui-x-dark"]):not(.btn-passive):hover {
   background-color: hsla(0, 0%, 0%, 0.15);
   background-color: var(--btn-hover-bg);
 }
-html:not(.mobile) .btn.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-light"]):not([class*="ui-dark"]):not([class*="ui-x-dark"]):not(.btn-passive):not(.swatch-active):hover {
+html:not(.mobile) .btn.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-light"]):not([class*="ui-dark"]):not([class*="ui-x-dark"]):not(.btn-passive):hover {
   background-color: hsla(0, 0%, 0%, 0.075);
   background-color: var(--btn-ghost-hover-bg);
 }
