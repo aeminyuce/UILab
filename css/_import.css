@@ -4644,6 +4644,18 @@ html:not(.mobile) .top-button:hover .icon {
   transform-origin: top center;
   z-index: 19;
 }
+.dropdown.nav-full-h .content:before,
+.dropdown.nav-full-h .content:after {
+  content: "";
+  display: table;
+}
+.dropdown.nav-full-h .content:after {
+  clear: both;
+}
+.dropdown.nav-full-h .content > .row {
+  margin-left: inherit;
+  margin-right: inherit;
+}
 .dropdown.menu-c .content {
   transform-origin: top center;
 }
@@ -4781,7 +4793,7 @@ html:not(.mobile) .dropdown ul.content > li:hover {
   right: 10px;
   transform: translateY(-50%);
 }
-.mobile-menu .dropdown.open-ease .toggle-icon {
+.mobile-menu .dropdown.open-ease > .btn .toggle-icon {
   position: absolute;
   top: 50%;
   right: 10px;

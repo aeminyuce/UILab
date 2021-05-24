@@ -88,7 +88,13 @@
     &.nav-full-h {
         position: static;
 
-        .content { right: 0; left: 0; transform-origin: top center; z-index: @dropdown-open-z-index; }
+        .content {
+            right: 0; left: 0; transform-origin: top center; z-index: @dropdown-open-z-index;
+
+            &:before,&:after { content: ""; display: table; }
+            &:after { clear: both; }
+            & > .row { margin-left: inherit; margin-right: inherit; }
+        }
     }
     &.menu-c {
         .content { transform-origin: top center; }
@@ -183,7 +189,9 @@
 
         .toggle-icon { position: absolute; top: 50%; right: @dropdown-list-padding; transform+_: translateY(-50%); }
         &.open-ease {
-            .toggle-icon { .toggle-icon(); transform+_: rotate(-180deg); }
+            & > .btn {
+                .toggle-icon { .toggle-icon(); transform+_: rotate(-180deg); }
+            }
         }
 
         .content { background: none; max-height: inherit !important; overflow: inherit; position: static; box-shadow: none; transform-origin: top center !important; }
