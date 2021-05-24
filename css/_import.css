@@ -4787,7 +4787,7 @@ html:not(.mobile) .dropdown ul.content > li:hover {
 .mobile-menu .dropdown {
   display: block;
 }
-.mobile-menu .dropdown .toggle-icon {
+.mobile-menu .dropdown > .btn .toggle-icon {
   position: absolute;
   top: 50%;
   right: 10px;

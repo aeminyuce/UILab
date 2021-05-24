@@ -187,10 +187,12 @@
     .dropdown {
         display: block;
 
-        .toggle-icon { position: absolute; top: 50%; right: @dropdown-list-padding; transform+_: translateY(-50%); }
+        & > .btn {
+            .toggle-icon { position: absolute; top: 50%; right: @dropdown-list-padding; transform+_: translateY(-50%); }
+        }
         &.open-ease {
             & > .btn {
-                .toggle-icon { .toggle-icon(); transform+_: rotate(-180deg); }
+                .toggle-icon { position: absolute; top: 50%; right: @dropdown-list-padding; transform: translateY(-50%) rotate(-180deg); }
             }
         }
 
