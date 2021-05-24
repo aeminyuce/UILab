@@ -74,7 +74,7 @@ var dropdown = {};
                 offset = parent.getBoundingClientRect();
                 list = selector('.content', parent)[0];
 
-                if (events.closest(that, '.mobile-menu')[0] === undefined) { // diable all positionings on mobile menus
+                if (events.closest(that, '.mobile-menu')[0] === undefined && !events.hasClass(parent, 'nav-full-h')) { // diable all positionings on mobile menus and full horizontal navigations
 
                     listStyles = list.style.length;
 

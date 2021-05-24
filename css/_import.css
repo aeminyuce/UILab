@@ -4635,6 +4635,15 @@ html:not(.mobile) .top-button:hover .icon {
 .dropdown:not(.nav) .content {
   max-width: 744px;
 }
+.dropdown.nav-full-h {
+  position: static;
+}
+.dropdown.nav-full-h .content {
+  right: 0;
+  left: 0;
+  transform-origin: top center;
+  z-index: 19;
+}
 .dropdown.menu-c .content {
   transform-origin: top center;
 }

@@ -81,8 +81,14 @@
 
     .content { ._bg-var(highlighted); overflow-x: hidden; overflow-y: auto; position: absolute; transform-origin: top left; -webkit-overflow-scrolling: touch; }
 
+
     &:not(.nav) {
         .content { max-width: @dropdown-content-max-width; }
+    }
+    &.nav-full-h {
+        position: static;
+
+        .content { right: 0; left: 0; transform-origin: top center; z-index: @dropdown-open-z-index; }
     }
     &.menu-c {
         .content { transform-origin: top center; }

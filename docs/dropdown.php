@@ -134,6 +134,47 @@
                     </div>
                 </div>
 
+                <h4>Full Horizontal Dropdown Navs</h4>
+                <div class="row padding-30-b form-lg theme-default">
+                    <div class="col-12">
+
+                        <div class="dropdown nav nav-full-h btn-xs-fluid ease-dropdown">
+                            <button class="btn circle ui-dark">
+                                Nav Dropdown
+                                <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
+                            </button>
+                            <ul class="content list-column-3 has-icon shadow-lg">
+                                <li><a href="#"><b class="list-icon">23</b> Waiting</a></li>
+                                <li><a href="#"><b class="list-icon">258</b> Expert</a></li>
+                                <li><a href="#"><b class="list-icon">49</b> On Audit</a></li>
+                                <li><a href="#"><b class="list-icon">68</b> Delayed</a></li>
+                                <li><a href="#"><b class="list-icon">23</b> Waiting</a></li>
+                                <li><a href="#"><b class="list-icon">258</b> Expert</a></li>
+                                <li><a href="#"><b class="list-icon">49</b> On Audit</a></li>
+                                <li><a href="#"><b class="list-icon">68</b> Delayed</a></li>
+                                <li><a href="#"><b class="list-icon">23</b> Waiting</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown nav nav-full-h btn-xs-fluid ease-dropdown">
+                            <button class="btn circle ui-dark">
+                                Nav Dropdown
+                                <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
+                            </button>
+                            <ul class="content list-column-3 has-icon shadow-lg">
+                                <li><a href="#"><b class="list-icon">23</b> Waiting</a></li>
+                                <li><a href="#"><b class="list-icon">258</b> Expert</a></li>
+                                <li><a href="#"><b class="list-icon">49</b> On Audit</a></li>
+                                <li><a href="#"><b class="list-icon">68</b> Delayed</a></li>
+                                <li><a href="#"><b class="list-icon">23</b> Waiting</a></li>
+                                <li><a href="#"><b class="list-icon">258</b> Expert</a></li>
+                                <li><a href="#"><b class="list-icon">49</b> On Audit</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
                 <h4>Dropdowns with Accordion Tabs</h4>
                 <div class="row padding-30-b block-2nd form-lg theme-default">
                     <div class="col-3 col-sm-6">
