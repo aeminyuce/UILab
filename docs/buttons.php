@@ -18,7 +18,7 @@
                         <a class="btn circle border-dual" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost  href="#">Button</a>
+                        <a class="btn btn-ghost" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
                         <a class="btn btn-ghost border-l border-lg" href="#">Button</a>
