@@ -246,7 +246,7 @@
     font-size: @size; // fallback
 }
 ._font-scale (@size) when (@font-scaling = true) {
-    @number: round(unit(@size / 7));
+    @number: round(unit(@size / 5));
     @viewport: ~'@{number}vw';
 
     font-size: @size; // fallback
