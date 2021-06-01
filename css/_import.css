@@ -1198,6 +1198,12 @@ html .row {
 .col-7x {
   width: 14.28571429%;
 }
+.col-8x {
+  width: 12.5%;
+}
+.col-9x {
+  width: 11.11111111%;
+}
 .col-static {
   width: 100%;
   display: table;
@@ -1414,6 +1420,12 @@ html .row {
   .col-lg-7x {
     width: 14.28571429%;
   }
+  .col-lg-8x {
+    width: 12.5%;
+  }
+  .col-lg-9x {
+    width: 11.11111111%;
+  }
   .col-lg-50 {
     width: 50px;
   }
@@ -1608,6 +1620,12 @@ html .row {
   }
   .col-md-7x {
     width: 14.28571429%;
+  }
+  .col-md-8x {
+    width: 12.5%;
+  }
+  .col-md-9x {
+    width: 11.11111111%;
   }
   .col-md-50 {
     width: 50px;
@@ -1822,6 +1840,12 @@ html .row {
   }
   .col-sm-7x {
     width: 14.28571429%;
+  }
+  .col-sm-8x {
+    width: 12.5%;
+  }
+  .col-sm-9x {
+    width: 11.11111111%;
   }
   .col-sm-50 {
     width: 50px;
@@ -2041,6 +2065,12 @@ html .row {
   }
   .col-xs-7x {
     width: 14.28571429%;
+  }
+  .col-xs-8x {
+    width: 12.5%;
+  }
+  .col-xs-9x {
+    width: 11.11111111%;
   }
   .col-xs-50 {
     width: 50px;
@@ -2297,6 +2327,12 @@ html .row {
   }
   .col-xl-7x {
     width: 14.28571429%;
+  }
+  .col-xl-8x {
+    width: 12.5%;
+  }
+  .col-xl-9x {
+    width: 11.11111111%;
   }
   .col-xl-50 {
     width: 50px;
