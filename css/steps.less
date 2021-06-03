@@ -33,7 +33,7 @@
 
             .card & { ._bg-var(card-bg); }
         }
-        &:after { content: ""; width: 100%; height: @steps-line-size; background-color: @green; position: absolute; top: @steps-margin-v + (@steps-active-size - @steps-line-size) / 2; left: -50%; opacity: @icon-sub-opacity; }
+        &:after { content: ""; width: 100%; height: @steps-line-size; background-color: @green; position: absolute; top: @steps-margin-v + (@steps-active-size - @steps-line-size) / 2; left: calc(-50% - (@steps-active-size / 2)); opacity: @icon-sub-opacity; }
         &:first-child {
             &:after { content: none; }
         }
@@ -52,7 +52,7 @@
 
                     .card & { ._bg-var(card-bg); ._border-color-var(steps-border); }
                 }
-                &:after { ._bg-var(steps-border); }
+                &:after { ._bg-var(steps-border); left: -50%; }
             }
         }
 

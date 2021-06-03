@@ -6737,7 +6737,7 @@ html:not(.mobile) .ui-dark ::-webkit-scrollbar-thumb:active {
   background-color: hsl(142, 82%, 42%);
   position: absolute;
   top: 13px;
-  left: -50%;
+  left: calc(-50% - (18px / 2));
   opacity: 0.45;
 }
 .steps-bar li:first-child:after {
@@ -6772,6 +6772,7 @@ html:not(.mobile) .ui-dark ::-webkit-scrollbar-thumb:active {
 .steps-bar li.active ~ li:after {
   background-color: hsla(0, 0%, 0%, 0.12);
   background-color: var(--steps-border);
+  left: -50%;
 }
 .steps-bar li > span,
 .steps-bar.steps-icon li > .icon {
