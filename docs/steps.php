@@ -28,7 +28,12 @@
                     <span class="sp-15"></span>
                     <ul class="steps-bar theme-yellow ui-text">
                         <li>Step Name Here</li>
+                        <li>Step Name Here</li>
                         <li class="active">Step Name Here</li>
+                    </ul>
+                    <span class="sp-15"></span>
+                    <ul class="steps-bar theme-yellow ui-text">
+                        <li>Step Name Here</li>
                         <li>Step Name Here</li>
                     </ul>
                 </div>
