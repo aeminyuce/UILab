@@ -6698,7 +6698,6 @@ html:not(.mobile) .ui-dark ::-webkit-scrollbar-thumb:active {
   list-style: none;
   padding: 0;
   display: flex;
-  flex-wrap: flex;
 }
 .steps-bar:not([class*="ui-"]) {
   color: hsl(142, 82%, 42%);
@@ -6709,6 +6708,9 @@ html:not(.mobile) .ui-dark ::-webkit-scrollbar-thumb:active {
   text-align: center;
   position: relative;
   flex-grow: 1;
+}
+html:not(.ie) .steps-bar li {
+  flex-basis: 100%;
 }
 .steps-bar li:before {
   content: "";
@@ -6737,7 +6739,7 @@ html:not(.mobile) .ui-dark ::-webkit-scrollbar-thumb:active {
   background-color: hsl(142, 82%, 42%);
   position: absolute;
   top: 13px;
-  left: calc(-50% - (18px / 2));
+  left: -50%;
   opacity: 0.45;
 }
 .steps-bar li:first-child:after {
