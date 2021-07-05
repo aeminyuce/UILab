@@ -6,11 +6,13 @@
 
 @lead-size:                             @x-large;
 
+@heading-icon-right:                    5px;
 @h1-size:                               (@x-largest - 2);
 @h2-size:                               (@largest + 2);
 @h3-size:                               (@largest - 4);
 
-@heading-icon-right:                    5px;
+@pre-bg:                                hsl(220, 8%, 22%);
+@pre-min-height:                        40px;
 @pre-max-height:                        350px;
 
 @code-color:                            hsl(345, 69%, 46%);
@@ -19,7 +21,6 @@
 @blockquote-border:                     hsl(0, 0%, 93%);
 @blockquote-footer-color:               hsl(0, 0%, 47%);
 
-@pre-border:                            fade(@white, 15%);
 @kbd-shadow:                            fade(@black, 15%);
 
 ._global-vars () {
@@ -145,7 +146,7 @@ code { ._color-var(code-color); font-size: 90%; padding: 2px 4px !important; ._b
 kbd { color: @white; font-size: 90%; background-color: @white; padding: 2px 4px !important; border-radius: 3px; box-shadow: inset 0 -1px 0 @kbd-shadow; }
 
 pre,xmp {
-    color: @white; min-height: @btn-lg; background-color: @card-bg-dark; padding: 10px !important; overflow-x: auto !important; overflow-y: auto !important; display: block; border: 1px solid @pre-border;
+    color: @white; min-height: @pre-min-height; background-color: @pre-bg; padding: 10px !important; overflow-x: auto !important; overflow-y: auto !important; display: block;
 
     &:not(:last-child) { margin-bottom: @highlight-space; }
     &.scroll-v { max-height: @pre-max-height; }

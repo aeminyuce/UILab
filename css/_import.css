@@ -3838,13 +3838,12 @@ kbd {
 pre,
 xmp {
   color: hsl(0, 0%, 100%);
-  min-height: 42px;
-  background-color: hsl(220, 14%, 21%);
+  min-height: 40px;
+  background-color: hsl(220, 8%, 22%);
   padding: 10px !important;
   overflow-x: auto !important;
   overflow-y: auto !important;
   display: block;
-  border: 1px solid hsla(0, 0%, 100%, 0.15);
 }
 pre:not(:last-child),
 xmp:not(:last-child) {
