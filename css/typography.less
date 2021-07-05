@@ -1,7 +1,7 @@
 // out: false
 /* typography */ @import '_settings.less';
 
-@code-font-family:                      Menlo, Monaco, Consolas, "Courier New", monospace;
+@code-font-family:                      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 @font-colors:                           green yellow orange red blue default;
 
 @lead-size:                             @x-large;
@@ -19,8 +19,6 @@
 @blockquote-border:                     hsl(0, 0%, 93%);
 @blockquote-footer-color:               hsl(0, 0%, 47%);
 
-@pre-color:                             hsl(0, 0%, 20%);
-@pre-bg:                                hsl(0, 0%, 93%);
 @pre-border:                            fade(@white, 15%);
 @kbd-shadow:                            fade(@black, 15%);
 
@@ -30,9 +28,6 @@
 
     --code-color: @code-color;
     --code-bg: @code-bg;
-
-    --pre-color: @pre-color;
-    --pre-bg: @pre-bg;
 }
 ._global-vars-dark () {
     --dark: @light;
@@ -40,9 +35,6 @@
 
     --code-color: @white;
     --code-bg: @code-color;
-
-    --pre-color: @white;
-    --pre-bg: @card-bg-dark;
 }
 
 body,a { ._color-var(black); }
@@ -150,10 +142,10 @@ blockquote {
 
 code,kbd,pre,samp,xmp { font-family: @code-font-family; }
 code { ._color-var(code-color); font-size: 90%; padding: 2px 4px !important; ._bg-var(code-bg); display: inline-block; border-radius: 2px; }
-kbd { color: @white; font-size: 90%; background-color: @pre-color; padding: 2px 4px !important; border-radius: 3px; box-shadow: inset 0 -1px 0 @kbd-shadow; }
+kbd { color: @white; font-size: 90%; background-color: @white; padding: 2px 4px !important; border-radius: 3px; box-shadow: inset 0 -1px 0 @kbd-shadow; }
 
 pre,xmp {
-    ._color-var(pre-color); ._bg-var(pre-bg); padding: 10px !important; overflow-x: auto !important; overflow-y: auto !important; display: block; border: 1px solid @pre-border;
+    color: @white; min-height: @btn-lg; background-color: @card-bg-dark; padding: 10px !important; overflow-x: auto !important; overflow-y: auto !important; display: block; border: 1px solid @pre-border;
 
     &:not(:last-child) { margin-bottom: @highlight-space; }
     &.scroll-v { max-height: @pre-max-height; }

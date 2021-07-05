@@ -15,8 +15,6 @@
   --x-dark: hsla(0, 0%, 0%, 0.5);
   --code-color: hsl(345, 69%, 46%);
   --code-bg: hsl(343, 37%, 96%);
-  --pre-color: hsl(0, 0%, 20%);
-  --pre-bg: hsl(0, 0%, 93%);
   --dropdown-list-selected-bg: hsla(0, 0%, 0%, 0.075);
   --dropdown-list-hover-bg: hsla(0, 0%, 0%, 0.05);
   --dropdown-list-border: hsla(0, 0%, 0%, 0.045);
@@ -90,8 +88,6 @@
   --x-dark: hsla(0, 0%, 100%, 0.87);
   --code-color: hsl(0, 0%, 100%);
   --code-bg: hsl(345, 69%, 46%);
-  --pre-color: hsl(0, 0%, 100%);
-  --pre-bg: hsl(220, 14%, 21%);
   --dropdown-list-selected-bg: hsla(0, 0%, 100%, 0.075);
   --dropdown-list-hover-bg: hsla(0, 0%, 0%, 0.05);
   --dropdown-list-border: hsla(0, 0%, 100%, 0.065);
@@ -3819,7 +3815,7 @@ kbd,
 pre,
 samp,
 xmp {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 code {
   color: hsl(345, 69%, 46%);
@@ -3834,17 +3830,16 @@ code {
 kbd {
   color: hsl(0, 0%, 100%);
   font-size: 90%;
-  background-color: hsl(0, 0%, 20%);
+  background-color: hsl(0, 0%, 100%);
   padding: 2px 4px !important;
   border-radius: 3px;
   box-shadow: inset 0 -1px 0 hsla(0, 0%, 0%, 0.15);
 }
 pre,
 xmp {
-  color: hsl(0, 0%, 20%);
-  color: var(--pre-color);
-  background-color: hsl(0, 0%, 93%);
-  background-color: var(--pre-bg);
+  color: hsl(0, 0%, 100%);
+  min-height: 42px;
+  background-color: hsl(220, 14%, 21%);
   padding: 10px !important;
   overflow-x: auto !important;
   overflow-y: auto !important;
