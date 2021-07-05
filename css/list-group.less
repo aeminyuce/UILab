@@ -79,7 +79,7 @@
         each(@icon-sizes, {
             &-@{key} {
                 & > li {
-                    &,& > a { padding-right: @value + @list-group-list-padding * 2; }
+                    &,& > a { padding-right: (@value + @list-group-list-padding * 2); }
                     & > a { margin-right: -(@value + @list-group-list-padding * 2); }
                 }
                 .list-icon { ._icon(@value); }
@@ -93,19 +93,19 @@
 
     .has-photo {
         &-lg li {
-            &,& > a { min-height: @photo-img-lg + @list-group-list-padding * 2; padding-left: @photo-img-lg + @list-group-list-padding * 2; }
+            &,& > a { min-height: (@photo-img-lg + @list-group-list-padding * 2); padding-left: (@photo-img-lg + @list-group-list-padding * 2); }
             & > a { margin-left: -(@photo-img-lg + @list-group-list-padding * 2); }
         }
         li {
-            &,& > a { min-height: @photo-img-default + @list-group-list-padding * 2; padding-left: @photo-img-default + @list-group-list-padding * 2; }
+            &,& > a { min-height: (@photo-img-default + @list-group-list-padding * 2); padding-left: (@photo-img-default + @list-group-list-padding * 2); }
             & > a { margin-left: -(@photo-img-default + @list-group-list-padding * 2); }
         }
         &-sm li {
-            &,& > a { min-height: @photo-img-sm + @list-group-list-padding * 2; padding-left: @photo-img-sm + @list-group-list-padding * 2; }
+            &,& > a { min-height: (@photo-img-sm + @list-group-list-padding * 2); padding-left: (@photo-img-sm + @list-group-list-padding * 2); }
             & > a { margin-left: -(@photo-img-sm + @list-group-list-padding * 2); }
         }
         &-xs li {
-            &,& > a { min-height: @photo-img-xs + @list-group-list-padding * 2; padding-left: @photo-img-xs + @list-group-list-padding * 2; }
+            &,& > a { min-height: (@photo-img-xs + @list-group-list-padding * 2); padding-left: (@photo-img-xs + @list-group-list-padding * 2); }
             & > a { margin-left: -(@photo-img-xs + @list-group-list-padding * 2); }
         }
     }

@@ -35,7 +35,7 @@
     caption { font-size: @large; text-align: center; ._bg-var(table-caption-bg); padding: @table-padding; }
 
     &:not(.table-ultra-condensed) {
-        th,td { padding-right: @table-padding / 2; padding-left: @table-padding / 2; }
+        th,td { padding-right: (@table-padding / 2); padding-left: (@table-padding / 2); }
     }
     &:not(.no-separated) {
         th,td { ._border-var(@dir: border-bottom; @var: table-border-color); }
@@ -44,7 +44,7 @@
         th,td { padding-top: @table-padding; padding-bottom: @table-padding; }
     }
     &.table-condensed:not(.table-ultra-condensed) {
-        th,td { padding-top: @table-padding / 2; padding-bottom: @table-padding / 2; }
+        th,td { padding-top: (@table-padding / 2); padding-bottom: (@table-padding / 2); }
     }
     .table-nowrap {
         th,td { white-space: nowrap; text-overflow: ''; overflow: hidden; }

@@ -34,7 +34,7 @@
 
             .card & { ._bg-var(card-bg); }
         }
-        &:after { content: ""; width: 100%; height: @steps-line-size; background-color: @green; position: absolute; top: @steps-margin-v + (@steps-active-size - @steps-line-size) / 2; left: -50%; opacity: @icon-sub-opacity; }
+        &:after { content: ""; width: 100%; height: @steps-line-size; background-color: @green; position: absolute; top: (@steps-margin-v + (@steps-active-size - @steps-line-size) / 2); left: -50%; opacity: @icon-sub-opacity; }
         &:first-child {
             &:after { content: none; }
         }
@@ -49,7 +49,7 @@
                 ._color-var(steps-inactive-color);
 
                 &:before {
-                    width: @steps-passive-size; height: @steps-passive-size; ._bg-var(body-bg); margin: @steps-margin-v + (@steps-active-size - @steps-passive-size) / 2 auto; ._border-color-var(steps-border);
+                    width: @steps-passive-size; height: @steps-passive-size; ._bg-var(body-bg); margin: (@steps-margin-v + (@steps-active-size - @steps-passive-size) / 2) auto; ._border-color-var(steps-border);
 
                     .card & { ._bg-var(card-bg); ._border-color-var(steps-border); }
                 }

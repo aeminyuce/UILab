@@ -49,8 +49,8 @@
             &:not(.dashed):not(.dotted):not(.filled) { stroke-dashoffset: @line-chart-default-size; stroke-dasharray: @line-chart-default-size; }
             &:not([fill]) { fill: @no-color; }
 
-            &.dashed { stroke-dasharray: @line-chart-dashed-size round(@line-chart-dashed-size / 2); }
-            &.dotted { stroke-dasharray: @line-chart-dotted-size round(@line-chart-dashed-size / 2); }
+            &.dashed { stroke-dasharray: @line-chart-dashed-size round((@line-chart-dashed-size / 2)); }
+            &.dotted { stroke-dasharray: @line-chart-dotted-size round((@line-chart-dashed-size / 2)); }
 
             .no-effects &,.ie & {
                 &:not(.dashed):not(.dotted):not(.filled) {
@@ -94,7 +94,7 @@
                     &.dashed,&.dotted { stroke-dashoffset: 0; opacity: 0; }
                     &.filled { transform: translateY(@line-chart-filled-slide-size); opacity: 0; }
                 }
-                circle { transform: translateY(@line-chart-filled-slide-size * 2); opacity: 0; }
+                circle { transform: translateY((@line-chart-filled-slide-size * 2)); opacity: 0; }
             }
         }
     }
@@ -116,9 +116,9 @@
         text-align: center; display: block;
 
         li {
-            margin: 0 @line-chart-info-gap round(@line-chart-info-gap / 2) @line-chart-info-gap; display: inline-block;
+            margin: 0 @line-chart-info-gap round((@line-chart-info-gap / 2)) @line-chart-info-gap; display: inline-block;
 
-            span { vertical-align: middle; width: @line-chart-info-dot-size; height: @line-chart-info-dot-size; margin: round(-@line-chart-info-gap / 2) @line-chart-info-gap 0 0; display: inline-block; border-radius: 50%; }
+            span { vertical-align: middle; width: @line-chart-info-dot-size; height: @line-chart-info-dot-size; margin: round((-(@line-chart-info-gap / 2))) @line-chart-info-gap 0 0; display: inline-block; border-radius: 50%; }
         }
     }
 }

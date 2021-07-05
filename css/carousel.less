@@ -59,12 +59,12 @@
 		white-space: nowrap; text-align: center; margin-top: @carousel-nav-dot-margin-v; overflow: hidden; display: block; cursor: default;
 
 		.dots {
-			vertical-align: middle; min-width: (@carousel-nav-dot-size + @carousel-nav-dot-margin-h * 2) * 5; display: inline-block;
+			vertical-align: middle; min-width: ((@carousel-nav-dot-size + @carousel-nav-dot-margin-h * 2) * 5); display: inline-block;
 
 			i {
 				width: @carousel-nav-dot-size; height: @carousel-nav-dot-size; background-color: currentColor; margin: 0 @carousel-nav-dot-margin-h; display: inline-block !important; border-radius: 50%;
 
-				&:not(.show):not(.faded):not(.selected) { width: 0; height: 0; margin: 0 0 @carousel-nav-dot-size / 2 0; opacity: 0; }
+				&:not(.show):not(.faded):not(.selected) { width: 0; height: 0; margin: 0 0 (@carousel-nav-dot-size / 2) 0; opacity: 0; }
 				&.selected { opacity: 1; transform: scale(@carousel-nav-dot-selected-scale); }
 				&.show { opacity: @carousel-nav-dot-show-opacity; }
 				&.faded { opacity: @carousel-nav-dot-faded-opacity; }

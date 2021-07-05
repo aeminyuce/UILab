@@ -33,7 +33,7 @@
 @weather-clear-left:                    -89px;
 @weather-clear-bg:                      linear-gradient(hsl(0, 100%, 89%), hsl(224, 95%, 92%));
 
-@weather-night-top:                     @weather-padding * 4;
+@weather-night-top:                     (@weather-padding * 4);
 @weather-night-left:                    80%;
 @weather-night-scale:                   .35;
 @weather-night-bg:                      linear-gradient(hsl(226, 45%, 28%), hsl(221, 36%, 65%));
@@ -81,7 +81,7 @@
         &,a { color: @black; @no-user-select(); }
     }
     .now {
-        text-align: center; padding: @weather-padding * 4 @weather-padding @weather-padding * 2 @weather-padding;
+        text-align: center; padding: (@weather-padding * 4) @weather-padding (@weather-padding * 2) @weather-padding;
 
         & > span { font-size: @xx-large; font-weight: @font-light; line-height: normal; display: block;  }
     }
@@ -102,7 +102,7 @@
     }
 
     .w-degree {
-        font-size: @weather-now-numeric-size; font-weight: @font-light; letter-spacing: @weather-now-numeric-letter-spacing; line-height: @weather-now-numeric-size - 12%; margin-bottom: @weather-padding; display: inline-block; position: relative;
+        font-size: @weather-now-numeric-size; font-weight: @font-light; letter-spacing: @weather-now-numeric-letter-spacing; line-height: (@weather-now-numeric-size - 12); margin-bottom: @weather-padding; display: inline-block; position: relative;
 
         &:after { content: ""; width: @weather-now-degree-size; height: @weather-now-degree-size; display: block; border: solid @weather-now-degree-border-size currentColor; border-radius: @weather-now-degree-size; position: absolute; top: @weather-now-degree-top; right: @weather-now-degree-right; }
     }

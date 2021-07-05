@@ -5064,7 +5064,7 @@ html:not(.mobile) .dropdown ul.content > li:hover {
   padding: 5px;
 }
 .select-multi select {
-  margin-bottom: -8px;
+  margin-bottom: -2px;
 }
 .edge .select-multi select {
   margin-bottom: -5px;

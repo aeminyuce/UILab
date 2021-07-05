@@ -20,20 +20,20 @@
 @keyframes pie-spin-r { 0% { -ms-transform: rotate(0deg); transform: rotate(0deg); } }
 
 .ease-pie-chart {
-    li,& > div span { transition-property: opacity; transition-duration: @ease-default * 2; }
+    li,& > div span { transition-property: opacity; transition-duration: (@ease-default * 2); }
 }
 
 .pie-chart {
     position: relative; @no-user-select();
 
     &[data-text] {
-        &:before { content: attr(data-text); color: @black; font-weight: @font-bold; font-size: @pie-chart-title-text-size; text-align: center; line-height: @pie-chart-title-text-size; min-width: @pie-chart-title-height - @pie-chart-title-padding; min-height: @pie-chart-title-height - @pie-chart-title-padding; background: @white; padding: @pie-chart-title-padding @pie-chart-title-padding * 2; display: inline-block; border-radius: @circle; position: absolute; top: 50%; left: 50%; z-index: 2; transform: translate(-50%,-50%); }
+        &:before { content: attr(data-text); color: @black; font-weight: @font-bold; font-size: @pie-chart-title-text-size; text-align: center; line-height: @pie-chart-title-text-size; min-width: (@pie-chart-title-height - @pie-chart-title-padding); min-height: (@pie-chart-title-height - @pie-chart-title-padding); background: @white; padding: @pie-chart-title-padding (@pie-chart-title-padding * 2); display: inline-block; border-radius: @circle; position: absolute; top: 50%; left: 50%; z-index: 2; transform: translate(-50%,-50%); }
     }
     & > div {
         span {
             display: block; position: absolute; top: 50%; right: 0; left: 50%; z-index: 1; transform-origin: left top;
 
-            i { color: @x-dark; font-size: @pie-chart-info-text-size; font-style: normal; font-weight: @font-bold; line-height: @pie-chart-info-text-size; background: @white; padding: @pie-chart-info-padding @pie-chart-info-padding * 2; margin-right: @pie-chart-info-inner-space; border-radius: @circle; float: right; }
+            i { color: @x-dark; font-size: @pie-chart-info-text-size; font-style: normal; font-weight: @font-bold; line-height: @pie-chart-info-text-size; background: @white; padding: @pie-chart-info-padding (@pie-chart-info-padding * 2); margin-right: @pie-chart-info-inner-space; border-radius: @circle; float: right; }
         }
     }
     &:not(.open-ease) {

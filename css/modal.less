@@ -26,7 +26,7 @@
 
 @modal-content-max-height:              92%;
 @modal-content-open-slide:              10px;
-@modal-content-min-width:               @layout-min - 40px;
+@modal-content-min-width:               (@layout-min - 40px);
 @modal-content-lg-min-height:           300px;
 @modal-content-md-min-height:           240px;
 @modal-content-sm-min-height:           120px;
@@ -46,7 +46,7 @@
     }
 
     &-win {
-        &.show { position: fixed; z-index: @modal-z-index + 1; }
+        &.show { position: fixed; z-index: (@modal-z-index + 1); }
         &:not(.show) { display: none; }
 
         &.no-bg {
@@ -77,9 +77,9 @@
 
             &.round {
                 .modal {
-                    &-header { border-radius: @round - 1 @round - 1 0 0; }
-                    &-footer { border-radius: 0 0 @round - 1 @round - 1; }
-                    &-iframe { border-radius: @round - 1; }
+                    &-header { border-radius: (@round - 1) (@round - 1) 0 0; }
+                    &-footer { border-radius: 0 0 (@round - 1) (@round - 1); }
+                    &-iframe { border-radius: (@round - 1); }
                 }
             }
             .close-modal {
@@ -107,7 +107,7 @@
         &.inline-modal { width: auto; }
 
         &.round {
-            .modal { border-radius: @round - 1; }
+            .modal { border-radius: (@round - 1); }
         }
         &.has {
             &-header {
@@ -137,11 +137,11 @@
     &-header,&-footer {
         text-overflow: ellipsis; white-space: nowrap; background-color: @modal-footer-bg; padding: @modal-padding; overflow: hidden; position: absolute; right: 0; left: 0;
 
-        .btn-lg,&.form-lg .btn { margin: (@btn-default - @btn-lg) / 2 0; }
+        .btn-lg,&.form-lg .btn { margin: ((@btn-default - @btn-lg) / 2) 0; }
         .btn {
-            &-sm { margin: (@btn-default - @btn-sm) / 2 0; }
-            &-xs { margin: (@btn-default - @btn-xs) / 2 0; }
-            &-xxs { margin: (@btn-default - @btn-xxs) / 2 0; }
+            &-sm { margin: ((@btn-default - @btn-sm) / 2) 0; }
+            &-xs { margin: ((@btn-default - @btn-xs) / 2) 0; }
+            &-xxs { margin: ((@btn-default - @btn-xxs) / 2) 0; }
         }
     }
 
@@ -152,7 +152,7 @@
     }
 
     &-container {
-        min-height: @modal-padding * 2; height: 100%; max-height: 100%; padding: @modal-padding; overflow: auto; position: relative;
+        min-height: (@modal-padding * 2); height: 100%; max-height: 100%; padding: @modal-padding; overflow: auto; position: relative;
 
         .mobile & { -webkit-overflow-scrolling: touch; }
         & > iframe { width: 100%; height: 100%; overflow: hidden; position: absolute; top: 0; right: 0; bottom: 0; left: 0; }

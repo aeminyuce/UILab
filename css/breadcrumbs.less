@@ -14,7 +14,7 @@
 }
 
 .breadcrumbs {
-    &:not(:last-child) { margin-bottom: @highlight-space / 2; }
+    &:not(:last-child) { margin-bottom: (@highlight-space / 2); }
 
     & > ul {
         & > li {
@@ -27,7 +27,7 @@
     &:not(.no-separated) {
         & > ul {
             & > li {
-                &:not(:first-child):before { content: "\203A"; ._color-var(breadcrumbs-sep-color); font-size: @x-large; line-height: normal; margin: 0 @breadcrumbs-sep-size + 3 0 @breadcrumbs-sep-size - 2; display: inline-block; }
+                &:not(:first-child):before { content: "\203A"; ._color-var(breadcrumbs-sep-color); font-size: @x-large; line-height: normal; margin: 0 (@breadcrumbs-sep-size + 3) 0 (@breadcrumbs-sep-size - 2); display: inline-block; }
             }
         }
     }

@@ -2,11 +2,11 @@
 /* grid */ @import '_settings.less';
 
 @grid-columns:                          range(12);
-@container-gutter:                      @highlight-space / 2;
+@container-gutter:                      (@highlight-space / 2);
 
 @row-gap-breakpoints:                   lg md sm xs;
 @row-gap-lg:                            15px;
-@row-gap:                               @highlight-space / 2;
+@row-gap:                               (@highlight-space / 2);
 @row-gap-md:                            5px;
 @row-gap-sm:                            2px;
 @row-gap-xs:                            1px;
@@ -79,12 +79,12 @@ html {
 [class*="push-"],[class*="pull-"] { position: relative; }
 
 ._create-cols(@name; @i) {
-    @size:  percentage(@i / max(@grid-columns));
+    @size:  (@i / max(@grid-columns));
 
-    .col@{name}@{i} { width: @size; }
-    .offset@{name}@{i} { margin-left: @size; }
-  	.push@{name}@{i} { left: @size; }
-  	.pull@{name}@{i} { right: @size; }
+    .col@{name}@{i} { width: percentage(@size); }
+    .offset@{name}@{i} { margin-left: percentage(@size); }
+  	.push@{name}@{i} { left: percentage(@size); }
+  	.pull@{name}@{i} { right: percentage(@size); }
 };
 
 each(@grid-columns, {
@@ -92,7 +92,8 @@ each(@grid-columns, {
 });
 
 ._create-custom-cols(@name; @size) when (@custom-grids = true) {
-    .col@{name}@{size} { width: percentage((100 / @size) / 100); }
+    @width: ((100 / @size) / 100);
+    .col@{name}@{size} { width: percentage(@width); }
 };
 
 each(@custom-grid-columns, {

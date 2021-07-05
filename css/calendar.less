@@ -2,9 +2,9 @@
 /* calendar */ @import '_settings.less';
 
 @calendar-padding:                      5px;
-@calendar-max-width:                    @sm-breakpoint - @highlight-space - (@border-dual * 2);
+@calendar-max-width:                    (@sm-breakpoint - @highlight-space - (@border-dual * 2));
 @calendar-min-width:                    360px;
-@calendar-min-width-mobile:             @layout-min - 55px;
+@calendar-min-width-mobile:             (@layout-min - 55px);
 @calendar-shadow-size:                  5px 15px;
 
 @calendar-days-padding:                 10px;
@@ -44,11 +44,11 @@
 @calendar-details-slide-size:           20%;
 @calendar-details-list-padding:         10px;
 @calendar-details-list-margin:          2px;
-@calendar-details-days-font-size:       @xx-largest + 14;
+@calendar-details-days-font-size:       (@xx-largest + 14);
 @calendar-details-days-font-spacing:    -0.025em;
 @calendar-details-content-radius:       10px;
 
-@calendar-details-time-font-size:       @font-size - 1;
+@calendar-details-time-font-size:       (@font-size - 1);
 @calendar-details-time-padding:         2px;
 
 @calendar-empty-details-bg:             fade(@black, 12%);
@@ -101,20 +101,20 @@
             padding: @calendar-days-gap;
 
             &.passive {
-                span { padding: @calendar-days-padding - @calendar-days-gap; display: block; opacity: @calendar-days-passive-opacity; }
+                span { padding: (@calendar-days-padding - @calendar-days-gap); display: block; opacity: @calendar-days-passive-opacity; }
             }
 
-            button { width: 100%; background: @no-color; padding: @calendar-days-padding - @calendar-days-gap; display: block; border: 0; position: relative; }
+            button { width: 100%; background: @no-color; padding: (@calendar-days-padding - @calendar-days-gap); display: block; border: 0; position: relative; }
 
             &.toggle-details {
                 button {
                     &:after {
                         content: ""; width: @calendar-notifiers-width; height: @calendar-notifiers-width; background: @calendar-notifiers-bg; display: block; border-radius: 100%; position: absolute;
 
-                        & when (@calendar-notifiers-position = top) { margin-left: -@calendar-notifiers-width / 2; top: @calendar-days-gap; left: 50%; }
-                        & when (@calendar-notifiers-position = bottom) { margin-left: -@calendar-notifiers-width / 2; bottom: @calendar-days-gap; left: 50%; }
-                        & when (@calendar-notifiers-position = right) { margin-top: -@calendar-notifiers-width / 2; top: 50%; right: @calendar-days-gap; }
-                        & when (@calendar-notifiers-position = left) { margin-top: -@calendar-notifiers-width / 2; top: 50%; left: @calendar-days-gap; }
+                        & when (@calendar-notifiers-position = top) { margin-left: -(@calendar-notifiers-width / 2); top: @calendar-days-gap; left: 50%; }
+                        & when (@calendar-notifiers-position = bottom) { margin-left: -(@calendar-notifiers-width / 2); bottom: @calendar-days-gap; left: 50%; }
+                        & when (@calendar-notifiers-position = right) { margin-top: -(@calendar-notifiers-width / 2); top: 50%; right: @calendar-days-gap; }
+                        & when (@calendar-notifiers-position = left) { margin-top: -(@calendar-notifiers-width / 2); top: 50%; left: @calendar-days-gap; }
                     }
                 }
             }
@@ -150,9 +150,9 @@
     }
 
     caption {
-        height: @calendar-caption-buttons-size + @calendar-caption-padding * 2; ._bg-var(calendar-highlighted-bg); padding: @calendar-caption-padding @calendar-caption-buttons-size + @calendar-caption-padding * 2; margin-bottom: @calendar-caption-padding;
+        height: (@calendar-caption-buttons-size + @calendar-caption-padding * 2); ._bg-var(calendar-highlighted-bg); padding: @calendar-caption-padding (@calendar-caption-buttons-size + @calendar-caption-padding * 2); margin-bottom: @calendar-caption-padding;
 
-        button { white-space: nowrap; text-overflow: ellipsis; line-height: @calendar-caption-buttons-size - @calendar-caption-buttons-padding * 2; max-width: @calendar-caption-buttons-max-width; height: @calendar-caption-buttons-size; background-color: @no-color; overflow: hidden; border: 0; }
+        button { white-space: nowrap; text-overflow: ellipsis; line-height: (@calendar-caption-buttons-size - @calendar-caption-buttons-padding * 2); max-width: @calendar-caption-buttons-max-width; height: @calendar-caption-buttons-size; background-color: @no-color; overflow: hidden; border: 0; }
         & > button {
             width: @calendar-caption-buttons-size; padding: @calendar-caption-buttons-padding; display: block;
 
@@ -169,8 +169,8 @@
         button { display: inline-block; }
     }
 
-    &-month { font-weight: @font-bold; padding: @calendar-caption-buttons-padding @calendar-caption-buttons-padding / 2 @calendar-caption-buttons-padding @calendar-caption-buttons-padding; }
-    &-year { font-weight: @font-bold; padding: @calendar-caption-buttons-padding @calendar-caption-buttons-padding @calendar-caption-buttons-padding @calendar-caption-buttons-padding / 2; }
+    &-month { font-weight: @font-bold; padding: @calendar-caption-buttons-padding (@calendar-caption-buttons-padding / 2) @calendar-caption-buttons-padding @calendar-caption-buttons-padding; }
+    &-year { font-weight: @font-bold; padding: @calendar-caption-buttons-padding @calendar-caption-buttons-padding @calendar-caption-buttons-padding (@calendar-caption-buttons-padding / 2); }
 
     &.round {
         caption {
@@ -220,7 +220,7 @@
     }
 
     .details {
-        padding-left: @calendar-details-toggle-btn-size + @calendar-caption-padding; position: absolute; top:  @calendar-caption-buttons-size + @calendar-caption-padding * 3; right: 0; bottom: 0; left: 0; z-index: 2;
+        padding-left: (@calendar-details-toggle-btn-size + @calendar-caption-padding); position: absolute; top: (@calendar-caption-buttons-size + @calendar-caption-padding * 3); right: 0; bottom: 0; left: 0; z-index: 2;
 
         &:not(.open) { display: none; }
         & > button {
@@ -237,18 +237,18 @@
         }
 
         li {
-            min-height: @calendar-details-list-padding; padding: @calendar-details-list-padding @calendar-details-list-padding @calendar-details-list-padding @calendar-details-days-font-size + @calendar-details-list-padding * 3; display: block;
+            min-height: @calendar-details-list-padding; padding: @calendar-details-list-padding @calendar-details-list-padding @calendar-details-list-padding (@calendar-details-days-font-size + @calendar-details-list-padding * 3); display: block;
 
             html:not(.mobile) &:hover { ._bg-var(btn-ghost-hover-bg); }
             &:not(:last-child) { margin-bottom: @highlight-space; }
 
-            & > strong { font-size: @calendar-details-days-font-size; font-weight: @font-light; letter-spacing: @calendar-details-days-font-spacing; text-align: center !important; line-height: @calendar-details-days-font-size - 5; width: @calendar-details-days-font-size; margin-left: -(@calendar-details-days-font-size + @calendar-details-list-padding * 2); float: left; }
+            & > strong { font-size: @calendar-details-days-font-size; font-weight: @font-light; letter-spacing: @calendar-details-days-font-spacing; text-align: center !important; line-height: (@calendar-details-days-font-size - 5); width: @calendar-details-days-font-size; margin-left: -(@calendar-details-days-font-size + @calendar-details-list-padding * 2); float: left; }
             & > b { font-size: @large; margin: @calendar-details-list-padding 0 @calendar-details-list-padding 0; display: inline-block; }
             & > span {
                 display: block;
 
                 &:not(:last-child) { margin-bottom: @calendar-details-list-margin; }
-                & > i { font-size: @calendar-details-time-font-size; font-style: normal; line-height: normal; ._bg-var(btn-bg); padding: @calendar-details-time-padding @calendar-details-time-padding * 2; margin-right: @calendar-details-list-padding / 2; display: inline-block; border-radius: @calendar-details-content-radius; }
+                & > i { font-size: @calendar-details-time-font-size; font-style: normal; line-height: normal; ._bg-var(btn-bg); padding: @calendar-details-time-padding (@calendar-details-time-padding * 2); margin-right: (@calendar-details-list-padding / 2); display: inline-block; border-radius: @calendar-details-content-radius; }
                 & > a {
                     text-decoration: underline;
 
@@ -262,13 +262,13 @@
         li {
             & > strong,& > b,& > span { ._bg-var(calendar-empty-details-bg); }
             & > strong { height: @calendar-details-days-font-size; border-radius: 50%; }
-            & > b { width: @layout-min / 3; height: @calendar-details-list-padding * 2; border-radius: @calendar-details-content-radius; }
+            & > b { width: (@layout-min / 3); height: (@calendar-details-list-padding * 2); border-radius: @calendar-details-content-radius; }
 
             & > span {
-                width: @layout-min - 40; height: @calendar-details-list-padding; margin-bottom: @calendar-details-list-padding !important; border-radius: @calendar-details-content-radius;
+                width: (@layout-min - 40); height: @calendar-details-list-padding; margin-bottom: @calendar-details-list-padding !important; border-radius: @calendar-details-content-radius;
 
-                & + span { width: @layout-min - 80; }
-                & + span + span { width: @layout-min / 2; }
+                & + span { width: (@layout-min - 80); }
+                & + span + span { width: (@layout-min / 2); }
             }
         }
     }
@@ -320,10 +320,10 @@
             .calendar { margin-top: @calendar-picker-space; }
         }
         &:not(.border-dual):not(.no-border) {
-            .calendar { margin-top: @calendar-picker-space + 1; }
+            .calendar { margin-top: (@calendar-picker-space + 1); }
         }
         &.border-dual {
-            .calendar { margin-top: @calendar-picker-space + @border-dual; }
+            .calendar { margin-top: (@calendar-picker-space + @border-dual); }
         }
     }
 
@@ -334,10 +334,10 @@
             .calendar { margin-top: @calendar-picker-space; }
         }
         &:not(.border-dual):not(.no-border) {
-            .calendar { margin-bottom: @calendar-picker-space + 1; }
+            .calendar { margin-bottom: (@calendar-picker-space + 1); }
         }
         &.border-dual {
-            .calendar { margin-bottom: @calendar-picker-space + @border-dual; }
+            .calendar { margin-bottom: (@calendar-picker-space + @border-dual); }
         }
     }
 

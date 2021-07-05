@@ -68,18 +68,18 @@
 @layout-min:                            320px;
 
 @xl-start:                              ~'min-width:' @xl-breakpoint;
-@lg-finish:                             ~'max-width:' @xl-breakpoint - 1;
+@lg-finish:                             ~'max-width:' (@xl-breakpoint - 1);
 
 @lg-start:                              ~'min-width:' @lg-breakpoint;
-@default-finish:                        ~'max-width:' @lg-breakpoint - 1;
+@default-finish:                        ~'max-width:' (@lg-breakpoint - 1);
 
 @default-start:                         ~'min-width:' @md-breakpoint;
-@md-finish:                             ~'max-width:' @md-breakpoint - 1;
+@md-finish:                             ~'max-width:' (@md-breakpoint - 1);
 
 @md-start:                              ~'min-width:' @sm-breakpoint;
-@sm-finish:                             ~'max-width:' @sm-breakpoint - 1;
+@sm-finish:                             ~'max-width:' (@sm-breakpoint - 1);
 
-@sm-start:                              ~'min-width:' @xs-breakpoint + 1;
+@sm-start:                              ~'min-width:' (@xs-breakpoint + 1);
 @xs-finish:                             ~'max-width:' @xs-breakpoint;
 
 // global colors
@@ -246,11 +246,14 @@
     font-size: @size; // fallback
 }
 ._font-scale (@size) when (@font-scaling = true) {
-    @number: round(unit(@size / 5));
+    @unit: (@size / 5);
+    @scale: unit(@unit);
+
+    @number: round(@scale);
     @viewport: ~'@{number}vw';
 
     font-size: @size; // fallback
-    font-size: clamp(@size / 2, @size, @viewport); // clamp(min, val, max)
+    font-size: clamp((@size / 2), @size, @viewport); // clamp(min, val, max)
 }
 
 // icon mixins
@@ -258,7 +261,7 @@
     width: @size; height: @size;
 }
 ._icon-weight(@size) {
-    @stroke-calc: @icon-weight-max + (@icon-weight-min - if(@size < @icon-weight-min, @icon-weight-min, @size));
+    @stroke-calc: (@icon-weight-max + (@icon-weight-min - if(@size < @icon-weight-min, @icon-weight-min, @size)));
     @stroke-size: if(@stroke-calc < @icon-weight-min, @icon-weight-min, @stroke-calc);
 
     stroke-width: @stroke-size;

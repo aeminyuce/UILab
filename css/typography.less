@@ -6,9 +6,9 @@
 
 @lead-size:                             @x-large;
 
-@h1-size:                               @x-largest - 2;
-@h2-size:                               @largest + 2;
-@h3-size:                               @largest - 4;
+@h1-size:                               (@x-largest - 2);
+@h2-size:                               (@largest + 2);
+@h3-size:                               (@largest - 4);
 
 @heading-icon-right:                    5px;
 @pre-max-height:                        350px;
@@ -105,7 +105,7 @@ h1,h2,h3,h4,h5,h6 {
     &:not(:last-child) { margin-bottom: @highlight-space; }
     & > small { font-size: @font-size !important; }
     .icon:not(.right) { margin-right: @heading-icon-right; }
-    .icon-lg:not(.right) { margin-right: @heading-icon-right * 2; }
+    .icon-lg:not(.right) { margin-right: (@heading-icon-right * 2); }
 }
 
 h1,h2,h3 { line-height: 1; }

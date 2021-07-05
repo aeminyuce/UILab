@@ -27,38 +27,38 @@
     &bar {
         height: @progress-bar-default-size; ._bg-var(progress-bar-bg); padding: @progress-bar-padding; display: block; overflow: hidden;
 
-        &:not(:last-child) { margin-bottom: @highlight-space / 2; }
+        &:not(:last-child) { margin-bottom: (@highlight-space / 2); }
         & > span {
-            width: 0; height: @progress-bar-default-size - @progress-bar-padding * 2; ._bg-var(progress-bar-inner-bg); float: left;
+            width: 0; height: (@progress-bar-default-size - @progress-bar-padding * 2); ._bg-var(progress-bar-inner-bg); float: left;
 
             &:not([class*="animate-"]) { animation: progress-fill 2s ease-in-out forwards; }
         }
         &.border > span {
-            height: @progress-bar-default-size - @progress-bar-padding * 2 - 2;
+            height: (@progress-bar-default-size - @progress-bar-padding * 2 - 2);
         }
         &.border-dual > span {
-            height: @progress-bar-default-size - @progress-bar-padding * 2 - @border-dual * 2;
+            height: (@progress-bar-default-size - @progress-bar-padding * 2 - @border-dual * 2);
         }
         &.round > span {
-            &:first-child { border-top-left-radius: @round - @round * 0.3333333333; border-bottom-left-radius: @round - @round * 0.3333333333; }
-            &:last-child { border-top-right-radius: @round - @round * 0.3333333333; border-bottom-right-radius: @round - @round * 0.3333333333; }
+            &:first-child { border-top-left-radius: (@round - @round * 0.3333333333); border-bottom-left-radius: (@round - @round * 0.3333333333); }
+            &:last-child { border-top-right-radius: (@round - @round * 0.3333333333); border-bottom-right-radius: (@round - @round * 0.3333333333); }
         }
     }
 
     &lg {
         height: @progress-bar-lg-size;
 
-        & > span { height: @progress-bar-lg-size - @progress-bar-padding * 2; }
+        & > span { height: (@progress-bar-lg-size - @progress-bar-padding * 2); }
         &.border-dual > span {
-            height: @progress-bar-lg-size - @progress-bar-padding * 2 - @border-dual * 2;
+            height: (@progress-bar-lg-size - @progress-bar-padding * 2 - @border-dual * 2);
         }
     }
     &sm {
         height: @progress-bar-sm-size;
 
-        & > span { height: @progress-bar-sm-size - @progress-bar-padding * 2; }
+        & > span { height: (@progress-bar-sm-size - @progress-bar-padding * 2); }
         &.border-dual > span {
-            height: @progress-bar-sm-size - @progress-bar-padding * 2 - @border-dual * 2;
+            height: (@progress-bar-sm-size - @progress-bar-padding * 2 - @border-dual * 2);
         }
     }
 }

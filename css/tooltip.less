@@ -32,7 +32,7 @@
     &:not(.open) { display: none; }
     &:not(.open-ease) { opacity: 0; }
 
-    &-content { line-height: @tooltip-content-line-height; min-height: @tooltip-min-height; padding: @tooltip-content-padding @tooltip-content-padding * 2; position: relative; z-index: 3; }
+    &-content { line-height: @tooltip-content-line-height; min-height: @tooltip-min-height; padding: @tooltip-content-padding (@tooltip-content-padding * 2); position: relative; z-index: 3; }
 
     &[data-pos="t"] {
         & > span {
@@ -68,14 +68,14 @@
 
     &[data-pos="tr"] {
         & > span {
-            top: 100%; left: @tooltip-arrow-size * 2;
+            top: 100%; left: (@tooltip-arrow-size * 2);
 
             .bg { &:extend(.tooltip[data-pos="t"] > span .bg); }
         }
     }
     &[data-pos="tl"] {
         & > span {
-            top: 100%; right: @tooltip-arrow-size * 2;
+            top: 100%; right: (@tooltip-arrow-size * 2);
 
             .bg { &:extend(.tooltip[data-pos="t"] > span .bg); }
         }
@@ -83,14 +83,14 @@
     }
     &[data-pos="br"] {
         & > span {
-            bottom: 100%; left: @tooltip-arrow-size * 2;
+            bottom: 100%; left: (@tooltip-arrow-size * 2);
 
             .bg { &:extend(.tooltip[data-pos="b"] > span .bg); }
         }
     }
     &[data-pos="bl"] {
         & > span {
-            bottom: 100%; right: @tooltip-arrow-size * 2;
+            bottom: 100%; right: (@tooltip-arrow-size * 2);
 
             .bg { &:extend(.tooltip[data-pos="b"] > span .bg); }
         }

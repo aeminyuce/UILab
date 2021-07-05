@@ -2,8 +2,8 @@
 /* listings */ @import '_settings.less';
 
 @list-gap-less:                         2px;
-@list-gap:                              @highlight-space / 2;
-@list-gap-more:                         @list-gap * 3;
+@list-gap:                              (@highlight-space / 2);
+@list-gap-more:                         (@list-gap * 3);
 
 @horizontal-list-side:                  170px;
 @horizontal-list-space:                 5x;
@@ -57,7 +57,7 @@ dt { font-weight: @font-bold; }
 
             &:after { content: ":"; position: absolute; right: 0; }
         }
-        dd { margin-left: @horizontal-list-side + @highlight-space; }
+        dd { margin-left: (@horizontal-list-side + @highlight-space); }
     }
 }
 @media (@sm-finish) {
@@ -68,7 +68,7 @@ dt { font-weight: @font-bold; }
 @media (@sm-start) {
     each(@list-column-size, {
         .list-column- {
-            &@{value} > li { width: percentage((100 / @value) / 100%); }
+            &@{value} > li { width: percentage(((100 / @value) / 100%)); }
         }
     });
 

@@ -5,7 +5,7 @@
 @alerts-bg:                            fade(@black, 65%);
 
 @alerts-dialog-text-align:             center;
-@alerts-dialog-min-width:              @layout-min - 40px;
+@alerts-dialog-min-width:              (@layout-min - 40px);
 @alerts-dialog-max-width:              680px;
 @alerts-dialog-min-height:             60px;
 @alerts-dialog-padding:                10px;
@@ -34,7 +34,7 @@
 @alerts-dialog-custom-shadow-dark:     fade(@white, 30%);
 
 @alerts-msg-text-align:                center;
-@alerts-msg-width:                     @layout-min - 40px;
+@alerts-msg-width:                     (@layout-min - 40px);
 @alerts-msg-hover-opacity:             .9;
 @alerts-msg-min-height:                30px;
 @alerts-msg-padding:                   10px;
@@ -72,7 +72,7 @@
     }
 
     &-dialog {
-        min-width: @alerts-dialog-min-width; max-width: @alerts-dialog-max-width; ._bg-var(card-bg); min-height: @alerts-dialog-min-height; position: fixed; top: 50%; left: 50%; z-index: @alerts-z-index + 1; transform: translate(-50%,-50%);
+        min-width: @alerts-dialog-min-width; max-width: @alerts-dialog-max-width; ._bg-var(card-bg); min-height: @alerts-dialog-min-height; position: fixed; top: 50%; left: 50%; z-index: (@alerts-z-index + 1); transform: translate(-50%,-50%);
 
         &:not(.show) { display: none; }
         &:not(.show-ease) { opacity: 0; transform: translate(-50%,-50%) scale(@alerts-dialog-showing-scale); }
@@ -83,7 +83,7 @@
     }
 
     &-msg {
-        text-align: @alerts-msg-text-align; width: @alerts-msg-width; min-height: @alerts-msg-min-height; padding: @alerts-msg-padding; position: fixed; z-index: @alerts-z-index + 2; cursor: pointer;
+        text-align: @alerts-msg-text-align; width: @alerts-msg-width; min-height: @alerts-msg-min-height; padding: @alerts-msg-padding; position: fixed; z-index: (@alerts-z-index + 2); cursor: pointer;
 
         html:not(.mobile) &:hover { opacity: @alerts-msg-hover-opacity; }
         &:not(.show) { display: none; }
@@ -113,12 +113,12 @@
 .dialog {
     &-msg { text-align: @alerts-dialog-text-align; font-size: @large; }
     &-buttons {
-        text-align: @alerts-dialog-buttons-text-align; background-color: @alerts-dialog-buttons-bg; padding: @alerts-dialog-padding @alerts-dialog-padding @alerts-dialog-padding / 2 @alerts-dialog-padding;
+        text-align: @alerts-dialog-buttons-text-align; background-color: @alerts-dialog-buttons-bg; padding: @alerts-dialog-padding @alerts-dialog-padding (@alerts-dialog-padding / 2) @alerts-dialog-padding;
 
         button {
-            font-weight: @font-bold; text-align: center; vertical-align: middle; line-height: @alerts-dialog-buttons-line-height; min-width: @alerts-dialog-buttons-min-width; height: @btn-default; padding: @alerts-dialog-buttons-padding @alerts-dialog-buttons-padding * 2; margin-bottom: @alerts-dialog-padding / 2; display: inline-block; border: 0;
+            font-weight: @font-bold; text-align: center; vertical-align: middle; line-height: @alerts-dialog-buttons-line-height; min-width: @alerts-dialog-buttons-min-width; height: @btn-default; padding: @alerts-dialog-buttons-padding (@alerts-dialog-buttons-padding * 2); margin-bottom: (@alerts-dialog-padding / 2); display: inline-block; border: 0;
 
-            &:not(:last-child) { margin-right: @alerts-dialog-padding / 2; }
+            &:not(:last-child) { margin-right: (@alerts-dialog-padding / 2); }
         }
     }
 
@@ -149,15 +149,15 @@
 }
 
 .close-alert {
-    color: currentColor; line-height: 0; background: @no-color; padding: @alerts-dialog-padding / 2; border: 0; position: absolute; top: @alerts-dialog-padding / 2; right: @alerts-dialog-padding / 2; z-index: 1; opacity: @alerts-dialog-close-opacity; cursor: pointer;
+    color: currentColor; line-height: 0; background: @no-color; padding: (@alerts-dialog-padding / 2); border: 0; position: absolute; top: (@alerts-dialog-padding / 2); right: (@alerts-dialog-padding / 2); z-index: 1; opacity: @alerts-dialog-close-opacity; cursor: pointer;
 
     .icon { ._icon(@alerts-dialog-close-icon-size); }
     html:not(.mobile) &:hover { opacity: @alerts-dialog-close-hover-opacity; }
 }
 
 @media (@md-start) {
-    .dialog-msg { padding: @alerts-dialog-padding * 3; }
+    .dialog-msg { padding: (@alerts-dialog-padding * 3); }
 }
 @media (@sm-finish) {
-    .dialog-msg { padding: @alerts-dialog-padding * 3 @alerts-dialog-padding; }
+    .dialog-msg { padding: (@alerts-dialog-padding * 3) @alerts-dialog-padding; }
 }

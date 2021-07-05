@@ -26,7 +26,7 @@
         }
     }
     &:not(.hide-lines) {
-        &:after { content: ""; width: @timeline-line-size; ._bg-var(timeline-line-bg); border-radius: @timeline-line-size / 2; position: absolute; top: 0; bottom: 0; }
+        &:after { content: ""; width: @timeline-line-size; ._bg-var(timeline-line-bg); border-radius: (@timeline-line-size / 2); position: absolute; top: 0; bottom: 0; }
 
         & > li {
             &:before { width: @timeline-line-gap; height: @timeline-line-size; ._bg-var(timeline-line-bg); }
@@ -63,10 +63,10 @@
             &:not([class*="ui-"]),a,button { ._color-var(black); }
         }
         & > .img-photo {
-            & + .card { padding-top: @photo-img-default / 2 + round(@timeline-card-padding / 2); }
-            &-lg + .card { padding-top: @photo-img-lg / 2 + round(@timeline-card-padding / 2); }
-            &-sm + .card { padding-top: @photo-img-sm / 2 + round(@timeline-card-padding / 2); }
-            &-xs + .card { padding-top: @photo-img-xs / 2 + round(@timeline-card-padding / 2); }
+            & + .card { padding-top: ((@photo-img-default / 2) + round((@timeline-card-padding / 2))); }
+            &-lg + .card { padding-top: ((@photo-img-lg / 2) + round((@timeline-card-padding / 2))); }
+            &-sm + .card { padding-top: ((@photo-img-sm / 2) + round((@timeline-card-padding / 2))); }
+            &-xs + .card { padding-top: ((@photo-img-xs / 2) + round((@timeline-card-padding / 2))); }
         }
     }
 
@@ -77,7 +77,7 @@
     }
 
     &.side-l {
-        &:after { left: (@timeline-steps-size - @timeline-line-size) / 2; }
+        &:after { left: ((@timeline-steps-size - @timeline-line-size) / 2); }
         & > li {
             padding-left: @timeline-line-gap;
 
@@ -89,7 +89,7 @@
 @media (@md-start) {
     .timeline {
         &:not(.side-l) {
-            &:after { margin-left: -@timeline-line-size / 2; left: 50%; }
+            &:after { margin-left: -(@timeline-line-size / 2); left: 50%; }
             & > li {
                 width: 50%;
 
@@ -97,13 +97,13 @@
                     padding-right: @timeline-line-gap;
 
                     &:before { right: 0; }
-                    &:after { right: -@timeline-steps-size / 2; }
+                    &:after { right: -(@timeline-steps-size / 2); }
                 }
                 &:nth-child(2n+2) {
                     padding-left: @timeline-line-gap; left: 50%;
 
                     &:before { left: 0; }
-                    &:after { left: -@timeline-steps-size / 2; }
+                    &:after { left: -(@timeline-steps-size / 2); }
                 }
             }
         }
@@ -111,7 +111,7 @@
 }
 @media (@sm-finish) {
     .timeline {
-        &:after { left: (@timeline-steps-size - @timeline-line-size) / 2; }
+        &:after { left: ((@timeline-steps-size - @timeline-line-size) / 2); }
 
         & > li {
             padding-left: @timeline-line-gap;

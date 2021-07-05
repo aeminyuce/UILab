@@ -37,8 +37,8 @@
 
 .col-35 { width: 35px; }
 
-.app { ._bg-var(dashboard-app-bg); border-radius: @app-round * 3; }
-.card { height: 700px; border-radius: @app-round * 2; }
+.app { ._bg-var(dashboard-app-bg); border-radius: (@app-round * 3); }
+.card { height: 700px; border-radius: (@app-round * 2); }
 .data-container { height: 532px; }
 
 .round {
@@ -58,7 +58,7 @@
     }
 }
 
-.tab-content { border-radius: @app-round * 2 - @app-round / 2; }
+.tab-content { border-radius: (@app-round * 2 - @app-round / 2); }
 
 .contacts {
     white-space: nowrap;

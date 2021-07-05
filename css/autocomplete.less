@@ -32,21 +32,21 @@
     }
 
     &:not(.menu-t):not(.border-dual):not(.no-border) {
-        ul { margin-top: @autocomplete-menu-space + 1; }
+        ul { margin-top: (@autocomplete-menu-space + 1); }
     }
     &.border-dual,&.no-border {
         &:not(.menu-t) {
-            ul { margin-top: @border-dual + 1; }
+            ul { margin-top: (@border-dual + 1); }
         }
     }
 
     &.menu-t {
         ul { bottom: 100%; }
         &:not(.border-dual):not(.no-border) {
-            ul { margin-bottom: @autocomplete-menu-space + 1; }
+            ul { margin-bottom: (@autocomplete-menu-space + 1); }
         }
         &.border-dual {
-            ul { margin-bottom: @autocomplete-menu-space + @border-dual; }
+            ul { margin-bottom: (@autocomplete-menu-space + @border-dual); }
         }
         &.no-border {
             ul { margin-bottom: @autocomplete-menu-space; }
