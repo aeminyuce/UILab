@@ -9,8 +9,8 @@
     <div class="col-static sm-fluid">
 
         <!-- sidebar -->
-        <div class="sidebar col-250 set-relative visible-lg theme-panel ease-width ease-slow ease-in-out">
-            <div class="col-250 full-h set-fixed set-l ui-dark ease-layout ease-slow ease-in-out">
+        <div class="sidebar col-250 set-relative visible-lg theme-panel ease-width ease-in-out">
+            <div class="col-250 full-h set-fixed set-l ui-dark ease-layout ease-in-out">
 
                 <div class="ui-x-dark set-relative">
                     <img src="img/logo-udashboard.png" width="194" height="62" alt="">
@@ -210,7 +210,7 @@
         <div class="row">
 
             <!-- header: start -->
-            <header class="col-12 align-r icons-no-opacity shadow-sm form-lg ease-layout ease-slow sidebar-opened" data-classes="shadow-lg">
+            <header class="col-12 align-r icons-no-opacity shadow-sm form-lg ease-layout sidebar-opened" data-classes="shadow-lg">
 
                 <div class="align-c left ease-1st-btn">
                     <button class="sidebar-show btn dark btn-ghost padding-10 circle visible-lg hidden" data-tooltip title="Toggle Sidebar">
@@ -756,7 +756,7 @@
                                                     <span class="ui-dark stripe-light" style="width: 45%;"></span>
                                                 </div>
                                                 <p class="dark large margin-5-b">Pending for the transaction.</p>
-                                                <p class="light">
+                                                <p class="dark">
                                                     <svg class="icon icon-xs"><use href="#clock"/></svg>
                                                     <span class="inline-block">Last updated: 15:12</span>
                                                 </p>
@@ -779,7 +779,7 @@
                                                     <span class="ui-dark stripe-light" style="width: 5%;"></span>
                                                 </div>
                                                 <p class="dark large margin-5-b">Paused for the some reasons.</p>
-                                                <p class="light">
+                                                <p class="dark">
                                                     <svg class="icon icon-xs"><use href="#clock"/></svg>
                                                     <span class="inline-block">Last updated: 15:12</span>
                                                 </p>
@@ -802,7 +802,7 @@
                                                     <span class="ui-dark stripe-light" style="width: 80%;"></span>
                                                 </div>
                                                 <p class="dark large margin-5-b">Reached for the expert.</p>
-                                                <p class="light">
+                                                <p class="dark">
                                                     <svg class="icon icon-xs"><use href="#clock"/></svg>
                                                     <span class="inline-block">Last updated: 15:12</span>
                                                 </p>
@@ -825,7 +825,7 @@
                                                     <span class="ui-dark stripe-light" style="width: 67%;"></span>
                                                 </div>
                                                 <p class="dark large margin-5-b">Confirmed for payment.</p>
-                                                <p class="light">
+                                                <p class="dark">
                                                     <svg class="icon icon-xs"><use href="#clock"/></svg>
                                                     <span class="inline-block">Last updated: 15:12</span>
                                                 </p>
@@ -892,7 +892,7 @@
                                     </div>
                                     <span class="sp-3"></span>
                                     <p class="x-dark large margin-5-b">Daily reports that all received.</p>
-                                    <p class="light">
+                                    <p class="dark">
                                         <svg class="icon icon-xs margin-5-r"><use href="#clock"/></svg>
                                         <span class="inline-block">Last updated: 15:12</span>
                                     </p>
@@ -912,7 +912,7 @@
                                                 <ul class="ease-list-group">
                                                     <li class="no-border">
                                                         <span class="donut-chart col-42 right ease-donut-chart">
-                                                            <strong class="light x-small">88%</strong>
+                                                            <strong class="dark x-small">88%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="88" />
                                                             </svg>
@@ -922,7 +922,7 @@
                                                     </li>
                                                     <li class="no-border">
                                                         <span class="donut-chart col-42 right ease-donut-chart">
-                                                            <strong class="light x-small">76%</strong>
+                                                            <strong class="dark x-small">76%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="76" />
                                                             </svg>
@@ -932,7 +932,7 @@
                                                     </li>
                                                     <li class="no-border">
                                                         <span class="donut-chart col-42 right ease-donut-chart">
-                                                            <strong class="light x-small">69%</strong>
+                                                            <strong class="dark x-small">69%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="69" />
                                                             </svg>
@@ -942,7 +942,7 @@
                                                     </li>
                                                     <li class="no-border">
                                                         <span class="donut-chart col-42 right ease-donut-chart">
-                                                            <strong class="light x-small">52%</strong>
+                                                            <strong class="dark x-small">52%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="52" />
                                                             </svg>
@@ -952,7 +952,7 @@
                                                     </li>
                                                     <li class="no-border">
                                                         <span class="donut-chart col-42 right ease-donut-chart">
-                                                            <strong class="light x-small">36%</strong>
+                                                            <strong class="dark x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="36" />
                                                             </svg>
@@ -962,7 +962,7 @@
                                                     </li>
                                                     <li class="no-border">
                                                         <span class="donut-chart col-42 right ease-donut-chart">
-                                                            <strong class="light x-small">36%</strong>
+                                                            <strong class="dark x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="36" />
                                                             </svg>
@@ -978,7 +978,7 @@
                                                 <ul class="ease-list-group">
                                                     <li class="no-border">
                                                         <span class="donut-chart col-42 right ease-donut-chart">
-                                                            <strong class="light x-small">88%</strong>
+                                                            <strong class="dark x-small">88%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="88" />
                                                             </svg>
@@ -988,7 +988,7 @@
                                                     </li>
                                                     <li class="no-border">
                                                         <span class="donut-chart col-42 right ease-donut-chart">
-                                                            <strong class="light x-small">76%</strong>
+                                                            <strong class="dark x-small">76%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="76" />
                                                             </svg>
@@ -998,7 +998,7 @@
                                                     </li>
                                                     <li class="no-border">
                                                         <span class="donut-chart col-42 right ease-donut-chart">
-                                                            <strong class="light x-small">69%</strong>
+                                                            <strong class="dark x-small">69%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="69" />
                                                             </svg>
@@ -1008,7 +1008,7 @@
                                                     </li>
                                                     <li class="no-border">
                                                         <span class="donut-chart col-42 right ease-donut-chart">
-                                                            <strong class="light x-small">52%</strong>
+                                                            <strong class="dark x-small">52%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="52" />
                                                             </svg>
@@ -1018,7 +1018,7 @@
                                                     </li>
                                                     <li class="no-border">
                                                         <span class="donut-chart col-42 right ease-donut-chart">
-                                                            <strong class="light x-small">36%</strong>
+                                                            <strong class="dark x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="36" />
                                                             </svg>
@@ -1028,7 +1028,7 @@
                                                     </li>
                                                     <li class="no-border">
                                                         <span class="donut-chart col-42 right ease-donut-chart">
-                                                            <strong class="light x-small">36%</strong>
+                                                            <strong class="dark x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="36" />
                                                             </svg>
@@ -1822,7 +1822,7 @@
 </main>
 
 <!-- mobile menu -->
-<div class="mobile-menu show-l theme-panel ui-dark ease-layout ease-slow ease-in-out">
+<div class="mobile-menu show-l theme-panel ui-dark ease-layout ease-in-out">
     <div class="mobile-menu-title no-padding border-b">
         <button class="btn btn-square btn-lg btn-ghost circle ease-btn close-mobile-menu">
             <svg class="icon no-opacity"><use href="#remove"/></svg>

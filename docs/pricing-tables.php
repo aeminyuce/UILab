@@ -85,20 +85,20 @@
                             </div>
                             <div class="card-side padding-30">
                                 <ul class="list-unstyled list-spacer-15 margin-15-v large block-2nd">
-                                    <li><span class="light default">Number of Users</span>1 User</li>
-                                    <li><span class="light default">Domains</span>1 Domain</li>
-                                    <li><span class="light default">Projects</span>1 Project</li>
+                                    <li><span class="dark default">Number of Users</span>1 User</li>
+                                    <li><span class="dark default">Domains</span>1 Domain</li>
+                                    <li><span class="dark default">Projects</span>1 Project</li>
                                     <li>
-                                        <span class="light default">Support</span>
+                                        <span class="dark default">Support</span>
                                         <svg class="icon"><use href="#check"/></svg>
                                     </li>
                                     <li>
-                                        <span class="light default">Tutorials</span>
+                                        <span class="dark default">Tutorials</span>
                                         <svg class="icon"><use href="#ban"/></svg>
                                         </span>
                                     </li>
                                     <li>
-                                        <span class="light default">Cancellation</span>
+                                        <span class="dark default">Cancellation</span>
                                         <svg class="icon"><use href="#ban"/></svg>
                                     </li>
                                 </ul>
@@ -162,20 +162,20 @@
                             </div>
                             <div class="card-side padding-30">
                                 <ul class="list-unstyled list-spacer-15 margin-15-v large block-2nd">
-                                    <li><span class="light default">Number of Users</span>100 Users</li>
-                                    <li><span class="light default">Domains</span>1000 Domains</li>
-                                    <li><span class="light default">Projects</span>Unlimited Projects</li>
+                                    <li><span class="dark default">Number of Users</span>100 Users</li>
+                                    <li><span class="dark default">Domains</span>1000 Domains</li>
+                                    <li><span class="dark default">Projects</span>Unlimited Projects</li>
                                     <li>
-                                        <span class="light default">Support</span>
+                                        <span class="dark default">Support</span>
                                         <svg class="icon"><use href="#check"/></svg>
                                     </li>
                                     <li>
-                                        <span class="light default">Tutorials</span>
+                                        <span class="dark default">Tutorials</span>
                                         <svg class="icon"><use href="#ban"/></svg>
                                         </span>
                                     </li>
                                     <li>
-                                        <span class="light default">Cancellation</span>
+                                        <span class="dark default">Cancellation</span>
                                         <svg class="icon"><use href="#ban"/></svg>
                                     </li>
                                 </ul>

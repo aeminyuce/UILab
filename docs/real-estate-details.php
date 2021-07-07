@@ -93,7 +93,7 @@
                                 <div class="col-5x col-sm-4 col-xs-6">
                                     <div class="donut-chart ease-donut-chart">
                                         <strong>
-                                            <span class="large light">Interior</span>
+                                            <span class="large dark">Interior</span>
                                             <span class="sp-2"></span>4,9/5
                                         </strong>
                                         <svg viewBox="0 0 160 160">
@@ -105,7 +105,7 @@
                                 <div class="col-5x col-sm-4 col-xs-6">
                                     <div class="donut-chart ease-donut-chart">
                                         <strong>
-                                            <span class="large light">Exterior</span>
+                                            <span class="large dark">Exterior</span>
                                             <span class="sp-2"></span>4/5
                                         </strong>
                                         <svg viewBox="0 0 160 160">
@@ -117,7 +117,7 @@
                                 <div class="col-5x col-sm-4 col-xs-6">
                                     <div class="donut-chart ease-donut-chart">
                                         <strong>
-                                            <span class="large light">Quality</span>
+                                            <span class="large dark">Quality</span>
                                             <span class="sp-2"></span>4/5
                                         </strong>
                                         <svg viewBox="0 0 160 160">
@@ -129,7 +129,7 @@
                                 <div class="col-5x col-sm-4 col-xs-6">
                                     <div class="donut-chart ease-donut-chart">
                                         <strong>
-                                            <span class="large light">Savings</span>
+                                            <span class="large dark">Savings</span>
                                             <span class="sp-2"></span>3.9/5
                                         </strong>
                                         <svg viewBox="0 0 160 160">
