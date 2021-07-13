@@ -2167,6 +2167,9 @@ html .row {
   }
 }
 @media (min-width: 1680px) {
+  .fixed-xl {
+    max-width: 1400px;
+  }
   .no-gutter-xl {
     padding-right: 0 !important;
     padding-left: 0 !important;

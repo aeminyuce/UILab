@@ -4,6 +4,9 @@
 @grid-columns:                          range(12);
 @container-gutter:                      (@highlight-space / 2);
 
+@fixed-width:                           @lg-breakpoint;
+@fixed-xl-width:                        1400px;
+
 @row-gap-breakpoints:                   lg md sm xs;
 @row-gap-lg:                            15px;
 @row-gap:                               (@highlight-space / 2);
@@ -131,7 +134,7 @@ each(@custom-static-grid-columns, {
 });
 
 @media (@lg-start) {
-    .fixed { max-width: @lg-breakpoint; }
+    .fixed { max-width: @fixed-width; }
     .no-gutter-lg { padding-right: 0 !important; padding-left: 0 !important; }
     .offset-lg-0 { margin-left: 0; }
 
@@ -307,6 +310,7 @@ each(@custom-static-grid-columns, {
     }
 }
 @media (@xl-start) {
+    .fixed-xl { max-width: @fixed-xl-width; }
     .no-gutter-xl { padding-right: 0 !important; padding-left: 0 !important; }
     .offset-xl-0 { margin-left: 0; }
 
