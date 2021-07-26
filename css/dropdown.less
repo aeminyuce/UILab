@@ -128,11 +128,14 @@
         & > li {
             line-height: @dropdown-list-line-height; min-height: @dropdown-list-min-height;
 
+            &,a,& > label { font-size: @dropdown-list-font-size; }
+
             &:not(.holder) {
                 padding: @dropdown-list-padding;
+
                 &:not(:last-child) { ._border-var(@dir: border-bottom; @var: dropdown-list-border); }
 
-                &,a,& > label { font-size: @dropdown-list-font-size; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; display: block; }
+                &,a,& > label { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; display: block; }
                 & > a { padding: @dropdown-list-padding; margin: -@dropdown-list-padding; }
                 & > label {
                     padding: @dropdown-list-padding; margin: -@dropdown-list-padding; overflow: hidden; position: relative; cursor: pointer;

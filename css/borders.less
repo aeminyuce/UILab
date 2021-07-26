@@ -27,7 +27,11 @@
     &-dashed { border-style: dashed; }
     &-dotted { border-style: dotted; }
 
-    &-light { ._border-color-var(border-light-color) !important; }
+    &-light {
+        ._border-color-var(border-light-color) !important;
+
+        &[class*="ui-dark"],[class*="ui-dark"] & { ._border-color-var(border-light-color-dark) !important; }
+    }
     &-dark { ._border-color-var(border-dark-color) !important; }
 
     &-t { border-right: 0 !important; border-bottom: 0 !important; border-left: 0 !important; }

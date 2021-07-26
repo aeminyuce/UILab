@@ -2401,6 +2401,11 @@ html .row {
   border-color: hsla(0, 0%, 0%, 0.045) !important;
   border-color: var(--border-light-color) !important;
 }
+.border-light[class*="ui-dark"],
+[class*="ui-dark"] .border-light {
+  border-color: hsla(0, 0%, 100%, 0.065) !important;
+  border-color: var(--border-light-color-dark) !important;
+}
 .border-dark {
   border-color: hsla(0, 0%, 0%, 0.35) !important;
   border-color: var(--border-dark-color) !important;
@@ -4731,6 +4736,11 @@ html:not(.mobile) .top-button:hover .icon {
   line-height: 20px;
   min-height: 30px;
 }
+.dropdown ul.content > li,
+.dropdown ul.content > li a,
+.dropdown ul.content > li > label {
+  font-size: 15px;
+}
 .dropdown ul.content > li:not(.holder) {
   padding: 10px;
 }
@@ -4741,7 +4751,6 @@ html:not(.mobile) .top-button:hover .icon {
 .dropdown ul.content > li:not(.holder),
 .dropdown ul.content > li:not(.holder) a,
 .dropdown ul.content > li:not(.holder) > label {
-  font-size: 15px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
