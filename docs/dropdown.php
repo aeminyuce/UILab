@@ -261,28 +261,56 @@
 
                         <div class="dropdown btn-xs-fluid ease-dropdown">
                             <button class="btn circle ui-dark">
-                                Dropdown
+                                List Example
+                                <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
+                            </button>
+                            <ul class="content list-column-2 round shadow-lg">
+                                <li class="holder padding-10">
+                                    <ul class="list-unstyled list-spacer-10">
+                                        <li><a class="hoverline" href="#">Dropdown Item</a></li>
+                                        <li><a class="hoverline" href="#">Dropdown Item</a></li>
+                                        <li><a class="hoverline" href="#">Dropdown Item</a></li>
+                                        <li><a class="hoverline" href="#">Dropdown Item</a></li>
+                                        <li><a class="hoverline" href="#">Dropdown Item</a></li>
+                                    </ul>
+                                </li>
+                                <li class="holder padding-10">
+                                    <ul class="list-unstyled list-spacer-10">
+                                        <li><a class="hoverline" href="#">Dropdown Item</a></li>
+                                        <li><a class="hoverline" href="#">Dropdown Item</a></li>
+                                        <li><a class="hoverline" href="#">Dropdown Item</a></li>
+                                        <li><a class="hoverline" href="#">Dropdown Item</a></li>
+                                        <li><a class="hoverline" href="#">Dropdown Item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-3 col-sm-6">
+
+                        <div class="dropdown btn-xs-fluid ease-dropdown">
+                            <button class="btn circle ui-dark">
+                                Button List Example
                                 <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
                             </button>
                             <ul class="content list-column-2 shadow-lg">
                                 <li class="holder">
                                     <span class="btn-list form-lg ease-1st-btn">
-                                        <a class="btn btn-ghost" href="#">Dropdown Item</a>
-                                        <a class="btn btn-ghost" href="#">Dropdown Item</a>
-                                        <a class="btn btn-ghost" href="#">Dropdown Item</a>
-                                        <a class="btn btn-ghost" href="#">Dropdown Item</a>
-                                        <a class="btn btn-ghost" href="#">Dropdown Item</a>
-                                        <a class="btn btn-ghost" href="#">Dropdown Item</a>
+                                        <a class="btn btn-ghost btn-multi" href="#">Dropdown Item</a>
+                                        <a class="btn btn-ghost btn-multi" href="#">Dropdown Item</a>
+                                        <a class="btn btn-ghost btn-multi" href="#">Dropdown Item</a>
+                                        <a class="btn btn-ghost btn-multi" href="#">Dropdown Item</a>
+                                        <a class="btn btn-ghost btn-multi" href="#">Dropdown Item</a>
                                     </span>
                                 </li>
                                 <li class="holder">
                                     <span class="btn-list form-lg ease-1st-btn">
-                                        <a class="btn btn-ghost" href="#">Dropdown Item</a>
-                                        <a class="btn btn-ghost" href="#">Dropdown Item</a>
-                                        <a class="btn btn-ghost" href="#">Dropdown Item</a>
-                                        <a class="btn btn-ghost" href="#">Dropdown Item</a>
-                                        <a class="btn btn-ghost" href="#">Dropdown Item</a>
-                                        <a class="btn btn-ghost" href="#">Dropdown Item</a>
+                                        <a class="btn btn-ghost btn-multi" href="#">Dropdown Item</a>
+                                        <a class="btn btn-ghost btn-multi" href="#">Dropdown Item</a>
+                                        <a class="btn btn-ghost btn-multi" href="#">Dropdown Item</a>
+                                        <a class="btn btn-ghost btn-multi" href="#">Dropdown Item</a>
+                                        <a class="btn btn-ghost btn-multi" href="#">Dropdown Item</a>
                                     </span>
                                 </li>
                             </ul>
