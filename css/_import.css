@@ -4178,7 +4178,7 @@ html:not(.mobile) .btn.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-ligh
 }
 .btn-lg,
 .form-lg .btn {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 22px;
   height: 42px;
   padding-top: 10px;
@@ -4731,35 +4731,35 @@ html:not(.mobile) .top-button:hover .icon {
 .dropdown ul.content > li:not(.holder) {
   padding: 10px;
 }
-.dropdown ul.content > li:not(:last-child):not(.holder) {
+.dropdown ul.content > li:not(.holder):not(:last-child) {
   border-bottom: solid 1px hsla(0, 0%, 0%, 0.045);
   border-bottom: solid 1px var(--dropdown-list-border);
 }
-.dropdown ul.content > li,
-.dropdown ul.content > li a,
-.dropdown ul.content > li > label {
+.dropdown ul.content > li:not(.holder),
+.dropdown ul.content > li:not(.holder) a,
+.dropdown ul.content > li:not(.holder) > label {
   font-size: 15px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   display: block;
 }
-.dropdown ul.content > li > a {
+.dropdown ul.content > li:not(.holder) > a {
   padding: 10px;
   margin: -10px;
 }
-.dropdown ul.content > li > label {
+.dropdown ul.content > li:not(.holder) > label {
   padding: 10px;
   margin: -10px;
   overflow: hidden;
   position: relative;
   cursor: pointer;
 }
-.dropdown ul.content > li > label input {
+.dropdown ul.content > li:not(.holder) > label input {
   position: absolute;
   left: -20000px;
 }
-.dropdown ul.content > li.selected > label {
+.dropdown ul.content > li:not(.holder).selected > label {
   background-color: hsla(0, 0%, 0%, 0.075);
   background-color: var(--dropdown-list-selected-bg);
 }
