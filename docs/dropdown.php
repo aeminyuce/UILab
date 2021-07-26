@@ -255,6 +255,42 @@
                     </div>
                 </div>
 
+                <h4>Dropdowns with Holder Content</h4>
+                <div class="row padding-30-b block-2nd form-lg theme-default">
+                    <div class="col-3 col-sm-6">
+
+                        <div class="dropdown btn-xs-fluid ease-dropdown">
+                            <button class="btn circle ui-dark">
+                                Dropdown
+                                <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
+                            </button>
+                            <ul class="content list-column-2 shadow-lg">
+                                <li class="holder">
+                                    <span class="btn-list form-lg ease-1st-btn">
+                                        <a class="btn btn-ghost" href="#">Dropdown Item</a>
+                                        <a class="btn btn-ghost" href="#">Dropdown Item</a>
+                                        <a class="btn btn-ghost" href="#">Dropdown Item</a>
+                                        <a class="btn btn-ghost" href="#">Dropdown Item</a>
+                                        <a class="btn btn-ghost" href="#">Dropdown Item</a>
+                                        <a class="btn btn-ghost" href="#">Dropdown Item</a>
+                                    </span>
+                                </li>
+                                <li class="holder">
+                                    <span class="btn-list form-lg ease-1st-btn">
+                                        <a class="btn btn-ghost" href="#">Dropdown Item</a>
+                                        <a class="btn btn-ghost" href="#">Dropdown Item</a>
+                                        <a class="btn btn-ghost" href="#">Dropdown Item</a>
+                                        <a class="btn btn-ghost" href="#">Dropdown Item</a>
+                                        <a class="btn btn-ghost" href="#">Dropdown Item</a>
+                                        <a class="btn btn-ghost" href="#">Dropdown Item</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
                 <h4>Dropdowns with Value Toggle</h4>
                 <div class="row padding-30-b form-lg">
                     <div class="col-12 sm-align-c">

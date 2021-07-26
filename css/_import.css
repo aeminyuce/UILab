@@ -4341,6 +4341,9 @@ html:not(.mobile) .btn.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-ligh
 .pagination .btn-xxs {
   min-width: 18px;
 }
+.btn-list {
+  display: block;
+}
 .btn-list > .btn {
   width: 100%;
   display: block;
@@ -4724,9 +4727,11 @@ html:not(.mobile) .top-button:hover .icon {
 .dropdown ul.content > li {
   line-height: 20px;
   min-height: 30px;
+}
+.dropdown ul.content > li:not(.holder) {
   padding: 10px;
 }
-.dropdown ul.content > li:not(:last-child) {
+.dropdown ul.content > li:not(:last-child):not(.holder) {
   border-bottom: solid 1px hsla(0, 0%, 0%, 0.045);
   border-bottom: solid 1px var(--dropdown-list-border);
 }
@@ -4812,7 +4817,7 @@ html:not(.mobile) .top-button:hover .icon {
 .dropdown .list-column-6 > li:nth-child(6n) {
   border-right: none;
 }
-html:not(.mobile) .dropdown ul.content > li:hover {
+html:not(.mobile) .dropdown ul.content > li:not(.holder):hover {
   background-color: hsla(0, 0%, 0%, 0.05);
   background-color: var(--dropdown-list-hover-bg);
   background-clip: padding-box;

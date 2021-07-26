@@ -208,10 +208,14 @@
     }
 }
 
-.btn-list > .btn {
-    ._create-btn-list(); display: block;
+.btn-list {
+    display: block;
 
-    &:not(:first-child):not(:last-child) { border-radius: 0; }
+    & > .btn {
+        ._create-btn-list(); display: block;
+
+        &:not(:first-child):not(:last-child) { border-radius: 0; }
+    }
 }
 
 ._create-btn-holder() {
