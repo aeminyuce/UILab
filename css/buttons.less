@@ -74,8 +74,9 @@
     }
 
     &-multi {
-        word-wrap: break-word; height: auto !important; min-height: @btn-default;
+        word-wrap: break-word; min-height: @btn-default;
 
+        &:not(.full-h) { height: auto !important; }
         &.btn-sm { min-height: @btn-sm; }
         &.btn-xs { min-height: @btn-xs; }
         &.btn-xxs { min-height: @btn-xxs; }

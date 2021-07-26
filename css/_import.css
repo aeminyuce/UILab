@@ -4147,8 +4147,10 @@ input.btn {
 }
 .btn-multi {
   word-wrap: break-word;
-  height: auto !important;
   min-height: 32px;
+}
+.btn-multi:not(.full-h) {
+  height: auto !important;
 }
 .btn-multi.btn-sm {
   min-height: 26px;
