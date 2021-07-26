@@ -3,14 +3,19 @@
 
 @border-lg:                            5px;
 
-@border-light-color:                   fade(@white, 25%);
+@border-light-color:                   fade(@black, 4.5%);
+@border-light-color-dark:              fade(@white, 6.5%);
+
 @border-dark-color:                    fade(@black, 35%);
+@border-dark-color-dark:               fade(@white, 25%);
 
 ._global-vars () {
+    --border-light-color: @border-light-color;
     --border-dark-color: @border-dark-color;
 }
 ._global-vars-dark () {
-    --border-dark-color: @border-light-color;
+    --border-light-color: @border-light-color-dark;
+    --border-dark-color: @border-dark-color-dark;
 }
 
 .border {
@@ -22,7 +27,7 @@
     &-dashed { border-style: dashed; }
     &-dotted { border-style: dotted; }
 
-    &-light { border-color: @border-light-color !important; }
+    &-light { ._border-color-var(border-light-color) !important; }
     &-dark { ._border-color-var(border-dark-color) !important; }
 
     &-t { border-right: 0 !important; border-bottom: 0 !important; border-left: 0 !important; }

@@ -4,12 +4,13 @@
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
   --border-color: hsla(0, 0%, 0%, 0.15);
-  --table-border-color: hsla(0, 0%, 100%, 0.87);
+  --table-border-color: hsl(0, 0%, 86.7%);
   --card-bg: hsl(0, 0%, 100%);
   --highlighted: hsl(0, 0%, 100%);
   --btn-bg: hsla(0, 0%, 0%, 0.08);
   --btn-hover-bg: hsla(0, 0%, 0%, 0.15);
   --btn-ghost-hover-bg: hsla(0, 0%, 0%, 0.075);
+  --border-light-color: hsla(0, 0%, 0%, 0.045);
   --border-dark-color: hsla(0, 0%, 0%, 0.35);
   --dark: hsla(0, 0%, 0%, 0.35);
   --x-dark: hsla(0, 0%, 0%, 0.5);
@@ -61,7 +62,7 @@
   --calendar-today-btn-hover-bg: hsla(0, 0%, 0%, 0.2);
   --data-list-stripe-bg: hsla(0, 0%, 0%, 0.035);
   --data-list-hover-bg: hsla(0, 0%, 0%, 0.06);
-  --data-list-border: hsla(0, 0%, 100%, 0.87);
+  --data-list-border: hsl(0, 0%, 86.7%);
   --image-uploader-drop-bg: hsl(0, 0%, 93%);
   --image-uploader-tools-bg: hsla(0, 0%, 0%, 0.05);
   --image-uploader-list-bg: hsla(0, 0%, 100%, 0.45);
@@ -83,6 +84,7 @@
   --btn-bg: hsla(0, 0%, 100%, 0.125);
   --btn-hover-bg: hsla(0, 0%, 100%, 0.2);
   --btn-ghost-hover-bg: hsla(0, 0%, 100%, 0.075);
+  --border-light-color: hsla(0, 0%, 100%, 0.065);
   --border-dark-color: hsla(0, 0%, 100%, 0.25);
   --dark: hsla(0, 0%, 100%, 0.72);
   --x-dark: hsla(0, 0%, 100%, 0.87);
@@ -2396,7 +2398,8 @@ html .row {
   border-style: dotted;
 }
 .border-light {
-  border-color: hsla(0, 0%, 100%, 0.25) !important;
+  border-color: hsla(0, 0%, 0%, 0.045) !important;
+  border-color: var(--border-light-color) !important;
 }
 .border-dark {
   border-color: hsla(0, 0%, 0%, 0.35) !important;
@@ -6323,7 +6326,7 @@ html:not(.mobile) .close-card:hover {
 }
 .table:not(.no-separated) th,
 .table:not(.no-separated) td {
-  border-bottom: solid 1px hsla(0, 0%, 100%, 0.87);
+  border-bottom: solid 1px hsl(0, 0%, 86.7%);
   border-bottom: solid 1px var(--table-border-color);
 }
 .table:not(.table-condensed):not(.table-ultra-condensed) th,
@@ -6351,7 +6354,7 @@ html:not(.mobile) .close-card:hover {
 }
 .table-sidebar td:first-of-type {
   font-weight: 700;
-  border-right: solid 1px hsla(0, 0%, 100%, 0.87);
+  border-right: solid 1px hsl(0, 0%, 86.7%);
   border-right: solid 1px var(--table-border-color);
 }
 .table tbody:last-child tr:last-child td,
@@ -6366,7 +6369,7 @@ html:not(.mobile) .close-card:hover {
 }
 .table[class*="border-"],
 .table-border {
-  border-color: hsla(0, 0%, 100%, 0.87);
+  border-color: hsl(0, 0%, 86.7%);
   border-color: var(--table-border-color);
 }
 .table-valign td,
@@ -6395,12 +6398,12 @@ html:not(.mobile) .table-hover tbody tr:not([class*="ui-"]):hover {
   background-color: var(--table-hover-bg);
 }
 .table-border {
-  border: solid 1px hsla(0, 0%, 100%, 0.87);
+  border: solid 1px hsl(0, 0%, 86.7%);
   border: solid 1px var(--table-border-color);
 }
 .table-border th:not(:last-child),
 .table-border td:not(:last-child) {
-  border-right: solid 1px hsla(0, 0%, 100%, 0.87);
+  border-right: solid 1px hsl(0, 0%, 86.7%);
   border-right: solid 1px var(--table-border-color);
 }
 @media (max-width: 959px) {
@@ -8745,7 +8748,7 @@ html:not(.mobile) .carousel-gallery .thumbs .img:not(.selected):not(:hover) {
 }
 .data-list .data-content:not([class*="col-"]) {
   padding: 10px;
-  border-bottom: solid 1px hsla(0, 0%, 100%, 0.87);
+  border-bottom: solid 1px hsl(0, 0%, 86.7%);
   border-bottom: solid 1px var(--data-list-border);
 }
 .data-list .data-content:before,

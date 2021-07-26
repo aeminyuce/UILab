@@ -266,6 +266,7 @@
                             </button>
                             <ul class="content list-column-2 round shadow-lg">
                                 <li class="holder padding-10">
+                                    <b class="padding-10 block border-b border-light">Title</b>
                                     <ul class="list-unstyled list-spacer-10">
                                         <li><a class="hoverline" href="#">Dropdown Item</a></li>
                                         <li><a class="hoverline" href="#">Dropdown Item</a></li>
@@ -275,6 +276,7 @@
                                     </ul>
                                 </li>
                                 <li class="holder padding-10">
+                                    <b class="padding-10 block border-b border-light">Title</b>
                                     <ul class="list-unstyled list-spacer-10">
                                         <li><a class="hoverline" href="#">Dropdown Item</a></li>
                                         <li><a class="hoverline" href="#">Dropdown Item</a></li>
@@ -296,6 +298,7 @@
                             </button>
                             <ul class="content list-column-2 shadow-lg">
                                 <li class="holder">
+                                    <b class="padding-10 block border-b border-light">Title</b>
                                     <span class="btn-list form-lg ease-1st-btn">
                                         <a class="btn btn-ghost btn-multi" href="#">Dropdown Item</a>
                                         <a class="btn btn-ghost btn-multi" href="#">Dropdown Item</a>
@@ -305,6 +308,7 @@
                                     </span>
                                 </li>
                                 <li class="holder">
+                                    <b class="padding-10 block border-b border-light">Title</b>
                                     <span class="btn-list form-lg ease-1st-btn">
                                         <a class="btn btn-ghost btn-multi" href="#">Dropdown Item</a>
                                         <a class="btn btn-ghost btn-multi" href="#">Dropdown Item</a>
