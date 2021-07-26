@@ -265,9 +265,9 @@
                                 <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
                             </button>
                             <ul class="content list-column-2 round shadow-lg">
-                                <li class="holder padding-10">
+                                <li class="holder">
                                     <b class="padding-10 block border-b border-light">Title</b>
-                                    <ul class="list-unstyled list-spacer-10">
+                                    <ul class="list-unstyled list-spacer-10 padding-10">
                                         <li><a class="hoverline" href="#">Dropdown Item</a></li>
                                         <li><a class="hoverline" href="#">Dropdown Item</a></li>
                                         <li><a class="hoverline" href="#">Dropdown Item</a></li>
@@ -275,9 +275,9 @@
                                         <li><a class="hoverline" href="#">Dropdown Item</a></li>
                                     </ul>
                                 </li>
-                                <li class="holder padding-10">
+                                <li class="holder">
                                     <b class="padding-10 block border-b border-light">Title</b>
-                                    <ul class="list-unstyled list-spacer-10">
+                                    <ul class="list-unstyled list-spacer-10 padding-10">
                                         <li><a class="hoverline" href="#">Dropdown Item</a></li>
                                         <li><a class="hoverline" href="#">Dropdown Item</a></li>
                                         <li><a class="hoverline" href="#">Dropdown Item</a></li>
