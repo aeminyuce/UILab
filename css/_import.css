@@ -4584,10 +4584,10 @@ html:not(.mobile) .top-button:hover .icon {
   transition-duration: 0.15s;
 }
 .tabs .tab .toggle-icon {
-  width: 14px !important;
-  height: 14px !important;
-  stroke-width: 36px !important;
-  margin-top: -1px;
+  width: 12px !important;
+  height: 12px !important;
+  stroke-width: 38px !important;
+  margin-top: -2px;
 }
 .tabs .tab .toggle-icon.right {
   margin-top: 4px;
@@ -4650,10 +4650,10 @@ html:not(.mobile) .top-button:hover .icon {
   width: 100%;
 }
 .dropdown > .btn .toggle-icon {
-  width: 14px !important;
-  height: 14px !important;
-  stroke-width: 36px !important;
-  margin-top: -1px;
+  width: 12px !important;
+  height: 12px !important;
+  stroke-width: 38px !important;
+  margin-top: -2px;
 }
 .dropdown > .btn .toggle-icon.right {
   margin-top: 4px;
