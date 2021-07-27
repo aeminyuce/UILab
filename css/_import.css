@@ -3417,7 +3417,7 @@ html .row {
 .ease-svg,
 .ease-1st-svg > *,
 .ease-2nd-svg > * > * {
-  transition-property: fill, stroke;
+  transition-property: fill, stroke, opacity;
 }
 .ease-all {
   transition-property: all;
