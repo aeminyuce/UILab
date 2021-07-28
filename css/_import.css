@@ -4817,6 +4817,12 @@ html:not(.mobile) .top-button:hover .icon {
   border-right: solid 1px hsla(0, 0%, 0%, 0.045);
   border-right: solid 1px var(--dropdown-list-border);
 }
+.dropdown ul.content.has-grid li[class*="ui-dark"],
+.dropdown [class*="list-column-"] > li[class*="ui-dark"],
+[class*="ui-dark"] .dropdown ul.content.has-grid li,
+[class*="ui-dark"] .dropdown [class*="list-column-"] > li {
+  border-color: hsla(0, 0%, 100%, 0.065) !important;
+}
 .dropdown .has-grid > li:nth-last-child(2):not(:nth-child(2n)) {
   border-bottom: 0 !important;
 }

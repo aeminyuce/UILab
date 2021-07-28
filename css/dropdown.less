@@ -169,7 +169,11 @@
             }
         }
     }
-    ul.content.has-grid li,[class*="list-column-"] > li { ._border-var(@dir: border-right; @var: dropdown-list-border); }
+    ul.content.has-grid li,[class*="list-column-"] > li {
+        ._border-var(@dir: border-right; @var: dropdown-list-border);
+
+        &[class*="ui-dark"],[class*="ui-dark"] & { border-color: @dropdown-list-border-dark !important; }
+    }
 
     .has-grid {
         & > li {
