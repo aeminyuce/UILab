@@ -19,7 +19,11 @@
 }
 
 .border {
-    &,&-t,&-r,&-b,&-l,&-h,&-v,&-dual,&-lg { ._border-var(); }
+    &,&-t,&-r,&-b,&-l,&-h,&-v,&-dual,&-lg {
+        ._border-var();
+
+        &[class*="ui-dark"],[class*="ui-dark"] & { border-color: @border-light-color-dark !important; }
+    }
 
     &-dual { border-width: @border-dual !important; }
     &-lg { border-width: @border-lg !important; }

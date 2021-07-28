@@ -2385,6 +2385,26 @@ html .row {
   border: solid 1px hsla(0, 0%, 0%, 0.15);
   border: solid 1px var(--border-color);
 }
+.border[class*="ui-dark"],
+.border-t[class*="ui-dark"],
+.border-r[class*="ui-dark"],
+.border-b[class*="ui-dark"],
+.border-l[class*="ui-dark"],
+.border-h[class*="ui-dark"],
+.border-v[class*="ui-dark"],
+.border-dual[class*="ui-dark"],
+.border-lg[class*="ui-dark"],
+[class*="ui-dark"] .border,
+[class*="ui-dark"] .border-t,
+[class*="ui-dark"] .border-r,
+[class*="ui-dark"] .border-b,
+[class*="ui-dark"] .border-l,
+[class*="ui-dark"] .border-h,
+[class*="ui-dark"] .border-v,
+[class*="ui-dark"] .border-dual,
+[class*="ui-dark"] .border-lg {
+  border-color: hsla(0, 0%, 100%, 0.065) !important;
+}
 .border-dual {
   border-width: 2px !important;
 }
