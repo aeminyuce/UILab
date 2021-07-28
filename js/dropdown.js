@@ -189,7 +189,7 @@ var dropdown = {};
 
         events.on(document,
             'mouseenter',
-            'html:not(.mobile) .dropdown.open-hover.open > .btn,html:not(.mobile) .dropdown.open-hover.open .content',
+            'html:not(.mobile) .dropdown.open-hover.open > .btn,html:not(.mobile) .dropdown.open-hover.open-ease .content',
 
             function () {
                 clearTimeout(dropdownCloseTimer);
