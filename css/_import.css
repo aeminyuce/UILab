@@ -8558,7 +8558,7 @@ html:not(.mobile) .calendar .panel .call:hover {
   overflow: hidden;
 }
 .carousel-slider {
-  display: flex  !important;
+  display: flex !important;
   flex-wrap: wrap;
 }
 .carousel-slider > .slide-content {
