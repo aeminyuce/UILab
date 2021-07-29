@@ -7455,7 +7455,6 @@ html:not(.ie) .svg-map svg {
 }
 .svg-map svg g path {
   stroke-width: 1.5;
-  cursor: pointer;
 }
 .svg-map svg g path:not([fill]) {
   fill: hsla(0, 0%, 0%, 0.08);
@@ -7478,6 +7477,9 @@ html:not(.ie) .svg-map svg {
 }
 .svg-map svg g.active path:hover {
   opacity: 1 !important;
+}
+.svg-map svg g[data-href] path {
+  cursor: pointer;
 }
 /* mobile menu */
 .mobile-menu {

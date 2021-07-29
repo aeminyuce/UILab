@@ -30,7 +30,7 @@
 
         g {
             path {
-                stroke-width: @svg-map-inner-stroke-width; cursor: pointer;
+                stroke-width: @svg-map-inner-stroke-width;
 
                 &:not([fill]) {
                     ._fill-var(svg-map-path-fill);
@@ -49,6 +49,10 @@
                     &:not([fill]) { fill: currentColor; }
                     &:hover { opacity: 1 !important; }
                 }
+            }
+
+            &[data-href] {
+                path { cursor: pointer; }
             }
         }
     }
