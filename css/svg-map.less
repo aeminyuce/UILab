@@ -30,11 +30,20 @@
 
         g {
             path {
-                ._fill-var(svg-map-path-fill); ._stroke-var(body-bg); stroke-width: @svg-map-inner-stroke-width; cursor: pointer;
+                stroke-width: @svg-map-inner-stroke-width; cursor: pointer;
 
-                .card & { ._stroke-var(card-bg); }
-                &:hover { ._fill-var(svg-map-path-fill-hover); }
+                &:not([fill]) {
+                    ._fill-var(svg-map-path-fill);
+
+                    &:hover { ._fill-var(svg-map-path-fill-hover); }
+                }
+                &:not([stroke]) {
+                    ._stroke-var(body-bg);
+
+                    .card & { ._stroke-var(card-bg); }
+                }
             }
+
             &.active {
                 path {
                     fill: currentColor;

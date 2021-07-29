@@ -7454,20 +7454,24 @@ html:not(.ie) .svg-map svg {
   height: 360px;
 }
 .svg-map svg g path {
-  fill: hsla(0, 0%, 0%, 0.08);
-  fill: var(--svg-map-path-fill);
-  stroke: hsl(0, 0%, 98%);
-  stroke: var(--body-bg);
   stroke-width: 1.5;
   cursor: pointer;
 }
-.card .svg-map svg g path {
-  stroke: hsl(0, 0%, 100%);
-  stroke: var(--card-bg);
+.svg-map svg g path:not([fill]) {
+  fill: hsla(0, 0%, 0%, 0.08);
+  fill: var(--svg-map-path-fill);
 }
-.svg-map svg g path:hover {
+.svg-map svg g path:not([fill]):hover {
   fill: hsla(0, 0%, 0%, 0.15);
   fill: var(--svg-map-path-fill-hover);
+}
+.svg-map svg g path:not([stroke]) {
+  stroke: hsl(0, 0%, 98%);
+  stroke: var(--body-bg);
+}
+.card .svg-map svg g path:not([stroke]) {
+  stroke: hsl(0, 0%, 100%);
+  stroke: var(--card-bg);
 }
 .svg-map svg g.active path {
   fill: currentColor;
