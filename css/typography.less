@@ -7,6 +7,8 @@
 @lead-size:                             @x-large;
 
 @heading-icon-right:                    5px;
+@heading-auto-center:                   true;
+
 @h1-size:                               (@x-largest - 2);
 @h2-size:                               (@largest + 2);
 @h3-size:                               (@largest - 4);
@@ -160,8 +162,7 @@ pre,xmp {
 
 @media (@xs-finish) {
     h1,h2,h3,h4,h5,h6 {
-        text-align: center;
-
+        & when (@heading-auto-center = true) { text-align: center; }
         & > small { text-align: center; display: block; }
     }
 }
