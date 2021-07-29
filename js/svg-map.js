@@ -58,7 +58,13 @@ var svgMap = {};
 
         // Events
         events.on('g', 'click', function () {
-            window.location = this.getAttribute('data-href');
+
+            var href = this.getAttribute('data-href');
+
+            if (href !== null) {
+                window.location = href;
+            }
+
         });
 
     };
