@@ -7,32 +7,32 @@
 @set-x-dark:                            hsl(220, 18%, 3%);
 
 .ui-x-light {
-  ._color-var(black);
+    ._color-var(black);
 
-   .icon,a,button {
-      &:not([class*="ui-"]) { &:extend(.ui-x-light); }
-   }
+    .icon,a,button {
+        &:not([class*="ui-"]):not(.dark):not(.x-dark):not(.xx-dark) { &:extend(.ui-x-light); }
+    }
 }
 .ui-light {
-   &:extend(.ui-x-light);
+    &:extend(.ui-x-light);
 
-   .icon,a,button {
-      &:not([class*="ui-"]) { &:extend(.ui-light); }
-   }
+    .icon,a,button {
+    &:not([class*="ui-"]):not(.dark):not(.x-dark):not(.xx-dark) { &:extend(.ui-light); }
+    }
 }
 .ui-dark {
-   color: @white;
+    color: @white;
 
-   .icon,a,button {
-      &:not([class*="ui-"]) { &:extend(.ui-dark); }
-   }
+    .icon,a,button {
+    &:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light) { &:extend(.ui-dark); }
+    }
 }
 .ui-x-dark {
-   &:extend(.ui-dark);
+    &:extend(.ui-dark);
 
-   .icon,a,button {
-      &:not([class*="ui-"]) { &:extend(.ui-x-dark); }
-   }
+    .icon,a,button {
+    &:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light) { &:extend(.ui-x-dark); }
+    }
 }
 
 .bg-white {
