@@ -134,7 +134,12 @@ each(@custom-static-grid-columns, {
 });
 
 @media (@lg-start) {
-    .fixed { max-width: @fixed-width; }
+    .fixed {
+        max-width: @fixed-width;
+
+        &-xl { max-width: @fixed-xl-width; }
+    }
+
     .no-gutter-lg { padding-right: 0 !important; padding-left: 0 !important; }
     .offset-lg-0 { margin-left: 0; }
 
@@ -310,7 +315,6 @@ each(@custom-static-grid-columns, {
     }
 }
 @media (@xl-start) {
-    .fixed-xl { max-width: @fixed-xl-width; }
     .no-gutter-xl { padding-right: 0 !important; padding-left: 0 !important; }
     .offset-xl-0 { margin-left: 0; }
 

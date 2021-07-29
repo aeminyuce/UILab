@@ -1261,6 +1261,9 @@ html .row {
   .fixed {
     max-width: 1200px;
   }
+  .fixed-xl {
+    max-width: 1400px;
+  }
   .no-gutter-lg {
     padding-right: 0 !important;
     padding-left: 0 !important;
@@ -2169,9 +2172,6 @@ html .row {
   }
 }
 @media (min-width: 1680px) {
-  .fixed-xl {
-    max-width: 1400px;
-  }
   .no-gutter-xl {
     padding-right: 0 !important;
     padding-left: 0 !important;
