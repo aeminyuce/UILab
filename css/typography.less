@@ -21,8 +21,6 @@
 @blockquote-border:                     hsl(0, 0%, 93%);
 @blockquote-footer-color:               hsl(0, 0%, 47%);
 
-@kbd-shadow:                            fade(@black, 15%);
-
 ._global-vars () {
     --dark: @dark;
     --x-dark: @x-dark;
@@ -151,7 +149,7 @@ blockquote {
 
 code,kbd,pre,samp,xmp { font-family: @code-font-family; }
 code { ._color-var(code-color); font-size: 90%; padding: 2px 4px !important; ._bg-var(code-bg); display: inline-block; border-radius: 2px; }
-kbd { color: @white; font-size: 90%; background-color: @white; padding: 2px 4px !important; border-radius: 3px; box-shadow: inset 0 -1px 0 @kbd-shadow; }
+kbd { color: @white; font-size: 90%; background-color: @pre-bg; padding: 2px 4px !important; border-radius: 3px; }
 
 pre,xmp {
     color: @white; min-height: @pre-min-height; background-color: @pre-bg; padding: 10px !important; overflow-x: auto !important; overflow-y: auto !important; display: block;
