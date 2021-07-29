@@ -804,34 +804,34 @@
                 <div class="row">
                     <div class="col-4 sm-fluid">
                         <h4 class="x-light margin-30-b">Customer Service</h4>
-                        <ul class="list-unstyled list-spacer-10 x-large">
-                            <li><a class="hoverline" href="#">Order Status</a></li>
-                            <li><a class="hoverline" href="#">Shipping</a></li>
-                            <li><a class="hoverline" href="#">Contact References</a></li>
-                            <li><a class="hoverline" href="#">Returns</a></li>
-                            <li><a class="hoverline" href="#">Contact Us</a></li>
-                            <li><a class="hoverline" href="#">Our Guarantee</a></li>
-                            <li><a class="hoverline" href="#">Tax Notice</a></li>
+                        <ul class="list-unstyled list-spacer-10 hoverline-2nd x-large">
+                            <li><a href="#">Order Status</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Contact References</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Our Guarantee</a></li>
+                            <li><a href="#">Tax Notice</a></li>
                         </ul>
                     </div>
                     <div class="col-4 sm-fluid">
                         <h4 class="x-light margin-30-b">Who We Are</h4>
-                        <ul class="list-unstyled list-spacer-10 x-large">
-                            <li><a class="hoverline" href="#">Good Works</a></li>
-                            <li><a class="hoverline" href="#">About Us</a></li>
-                            <li><a class="hoverline" href="#">Environmental</a></li>
-                            <li><a class="hoverline" href="#">Commitment</a></li>
-                            <li><a class="hoverline" href="#">Corporation</a></li>
-                            <li><a class="hoverline" href="#">Careers</a></li>
+                        <ul class="list-unstyled list-spacer-10 hoverline-2nd x-large">
+                            <li><a href="#">Good Works</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Environmental</a></li>
+                            <li><a href="#">Commitment</a></li>
+                            <li><a href="#">Corporation</a></li>
+                            <li><a href="#">Careers</a></li>
                         </ul>
                     </div>
                     <div class="col-4 sm-fluid">
                         <h4 class="x-light margin-30-b">Quick Links</h4>
-                        <ul class="list-unstyled list-spacer-10 x-large">
-                            <li><a class="hoverline" href="#">Educater &amp; Landscaper</a></li>
-                            <li><a class="hoverline" href="#">Discounts</a></li>
-                            <li><a class="hoverline" href="#">Become an Affiliate</a></li>
-                            <li><a class="hoverline" href="#">Email Unsubscribe</a></li>
+                        <ul class="list-unstyled list-spacer-10 hoverline-2nd x-large">
+                            <li><a href="#">Educater &amp; Landscaper</a></li>
+                            <li><a href="#">Discounts</a></li>
+                            <li><a href="#">Become an Affiliate</a></li>
+                            <li><a href="#">Email Unsubscribe</a></li>
                         </ul>
                         <span class="sp-20 visible-sm"></span>
                     </div>

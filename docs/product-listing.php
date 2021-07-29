@@ -24,14 +24,14 @@
                             <li><a href="#">Headphones</a></li>
                             <li>
                                 <a href="#"><b>Over-Ear Headphones</b></a>
-                                <ul class="list-unstyled padding-15-l">
-                                    <li><a class="hoverline" href="#">Sony</a></li>
-                                    <li><a class="hoverline" href="#">Logitech</a></li>
-                                    <li><a class="hoverline" href="#">JBL</a></li>
-                                    <li><a class="hoverline" href="#">Beats</a></li>
-                                    <li><a class="hoverline" href="#">Pioneer</a></li>
-                                    <li><a class="hoverline" href="#">Philips</a></li>
-                                    <li><a class="hoverline" href="#">Sony</a></li>
+                                <ul class="list-unstyled hoverline-2nd padding-15-l">
+                                    <li><a href="#">Sony</a></li>
+                                    <li><a href="#">Logitech</a></li>
+                                    <li><a href="#">JBL</a></li>
+                                    <li><a href="#">Beats</a></li>
+                                    <li><a href="#">Pioneer</a></li>
+                                    <li><a href="#">Philips</a></li>
+                                    <li><a href="#">Sony</a></li>
                                 </ul>
                             </li>
                         </ul>

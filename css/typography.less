@@ -110,12 +110,20 @@ h5 { font-size: @font-size; }
 h6 { font-size: @small; }
 
 .underline {
-    text-decoration: underline;
+    &,&-1st > *,&-2nd > * > * {
+        text-decoration: underline;
 
-    a&:hover,button&:hover { text-decoration: none; }
+        a,button {
+          &:hover { text-decoration: none; }
+        }
+    }
 }
 .hoverline {
     &:hover { text-decoration: underline; }
+
+    &,&-1st > *,&-2nd > * > * {
+        &:hover { text-decoration: underline; }
+    }
 }
 
 .lowercase { text-transform: lowercase; }

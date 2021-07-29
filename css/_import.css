@@ -3783,14 +3783,25 @@ h5 {
 h6 {
   font-size: 12px;
 }
-.underline {
+.underline,
+.underline-1st > *,
+.underline-2nd > * > * {
   text-decoration: underline;
 }
-a.underline:hover,
-button.underline:hover {
+.underline a:hover,
+.underline-1st > * a:hover,
+.underline-2nd > * > * a:hover,
+.underline button:hover,
+.underline-1st > * button:hover,
+.underline-2nd > * > * button:hover {
   text-decoration: none;
 }
 .hoverline:hover {
+  text-decoration: underline;
+}
+.hoverline:hover,
+.hoverline-1st > *:hover,
+.hoverline-2nd > * > *:hover {
   text-decoration: underline;
 }
 .lowercase {

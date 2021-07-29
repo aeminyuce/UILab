@@ -267,22 +267,22 @@
                             <ul class="content list-column-2 round shadow-lg">
                                 <li class="holder">
                                     <b class="padding-10 block border-b border-light">Title</b>
-                                    <ul class="list-unstyled list-spacer-10 padding-10">
-                                        <li><a class="hoverline" href="#">Dropdown Item</a></li>
-                                        <li><a class="hoverline" href="#">Dropdown Item</a></li>
-                                        <li><a class="hoverline" href="#">Dropdown Item</a></li>
-                                        <li><a class="hoverline" href="#">Dropdown Item</a></li>
-                                        <li><a class="hoverline" href="#">Dropdown Item</a></li>
+                                    <ul class="list-unstyled list-spacer-10 hoverline-2nd padding-10">
+                                        <li><a href="#">Dropdown Item</a></li>
+                                        <li><a href="#">Dropdown Item</a></li>
+                                        <li><a href="#">Dropdown Item</a></li>
+                                        <li><a href="#">Dropdown Item</a></li>
+                                        <li><a href="#">Dropdown Item</a></li>
                                     </ul>
                                 </li>
                                 <li class="holder">
                                     <b class="padding-10 block border-b border-light">Title</b>
-                                    <ul class="list-unstyled list-spacer-10 padding-10">
-                                        <li><a class="hoverline" href="#">Dropdown Item</a></li>
-                                        <li><a class="hoverline" href="#">Dropdown Item</a></li>
-                                        <li><a class="hoverline" href="#">Dropdown Item</a></li>
-                                        <li><a class="hoverline" href="#">Dropdown Item</a></li>
-                                        <li><a class="hoverline" href="#">Dropdown Item</a></li>
+                                    <ul class="list-unstyled list-spacer-10 hoverline-2nd padding-10">
+                                        <li><a href="#">Dropdown Item</a></li>
+                                        <li><a href="#">Dropdown Item</a></li>
+                                        <li><a href="#">Dropdown Item</a></li>
+                                        <li><a href="#">Dropdown Item</a></li>
+                                        <li><a href="#">Dropdown Item</a></li>
                                     </ul>
                                 </li>
                             </ul>
