@@ -46,8 +46,7 @@
 
             &.active {
                 path {
-                    fill: currentColor;
-
+                    &:not([fill]) { fill: currentColor; }
                     &:hover { opacity: 1 !important; }
                 }
             }

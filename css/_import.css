@@ -7473,7 +7473,7 @@ html:not(.ie) .svg-map svg {
   stroke: hsl(0, 0%, 100%);
   stroke: var(--card-bg);
 }
-.svg-map svg g.active path {
+.svg-map svg g.active path:not([fill]) {
   fill: currentColor;
 }
 .svg-map svg g.active path:hover {
