@@ -6,6 +6,7 @@
 
 .icon {
     vertical-align: middle; display: inline-block; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round;
+
     ._icon(@icon-default-size);
 
     &-mirror- {
@@ -22,10 +23,12 @@
     &fr { fill-rule: evenodd; } // fill-rule
 }
 
-each(@icon-sizes, {
+each(@icon-sizes, { // do not merge
     .icon-@{key},.icons-@{key} .icon { ._icon-size(@value) !important; }
     .icon-@{key},.icons-@{key} .icon:not([class*="icon-"]) { ._icon-weight(@value) !important; }
+});
 
+each(@icon-sizes, { // do not merge
     @weight: extract(@icon-weights, @index);
     .icon-@{weight},.icons-@{weight} .icon:not([class*="icon-"]) { ._icon-weight(@value) !important; }
 });

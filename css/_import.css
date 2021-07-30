@@ -5976,10 +5976,6 @@ html:not(.mobile) .autocomplete li:hover,
 .icons-xxl .icon:not([class*="icon-"]) {
   stroke-width: 12px !important;
 }
-.icon-thin,
-.icons-thin .icon:not([class*="icon-"]) {
-  stroke-width: 12px !important;
-}
 .icon-xl,
 .icons-xl .icon {
   width: 34px !important;
@@ -5987,10 +5983,6 @@ html:not(.mobile) .autocomplete li:hover,
 }
 .icon-xl,
 .icons-xl .icon:not([class*="icon-"]) {
-  stroke-width: 16px !important;
-}
-.icon-light,
-.icons-light .icon:not([class*="icon-"]) {
   stroke-width: 16px !important;
 }
 .icon-lg,
@@ -6002,10 +5994,6 @@ html:not(.mobile) .autocomplete li:hover,
 .icons-lg .icon:not([class*="icon-"]) {
   stroke-width: 24px !important;
 }
-.icon-default,
-.icons-default .icon:not([class*="icon-"]) {
-  stroke-width: 24px !important;
-}
 .icon-sm,
 .icons-sm .icon {
   width: 18px !important;
@@ -6013,10 +6001,6 @@ html:not(.mobile) .autocomplete li:hover,
 }
 .icon-sm,
 .icons-sm .icon:not([class*="icon-"]) {
-  stroke-width: 32px !important;
-}
-.icon-semibold,
-.icons-semibold .icon:not([class*="icon-"]) {
   stroke-width: 32px !important;
 }
 .icon-xs,
@@ -6028,10 +6012,6 @@ html:not(.mobile) .autocomplete li:hover,
 .icons-xs .icon:not([class*="icon-"]) {
   stroke-width: 36px !important;
 }
-.icon-bold,
-.icons-bold .icon:not([class*="icon-"]) {
-  stroke-width: 36px !important;
-}
 .icon-xxs,
 .icons-xxs .icon {
   width: 12px !important;
@@ -6040,6 +6020,26 @@ html:not(.mobile) .autocomplete li:hover,
 .icon-xxs,
 .icons-xxs .icon:not([class*="icon-"]) {
   stroke-width: 38px !important;
+}
+.icon-thin,
+.icons-thin .icon:not([class*="icon-"]) {
+  stroke-width: 12px !important;
+}
+.icon-light,
+.icons-light .icon:not([class*="icon-"]) {
+  stroke-width: 16px !important;
+}
+.icon-default,
+.icons-default .icon:not([class*="icon-"]) {
+  stroke-width: 24px !important;
+}
+.icon-semibold,
+.icons-semibold .icon:not([class*="icon-"]) {
+  stroke-width: 32px !important;
+}
+.icon-bold,
+.icons-bold .icon:not([class*="icon-"]) {
+  stroke-width: 36px !important;
 }
 .icon-black,
 .icons-black .icon:not([class*="icon-"]) {
