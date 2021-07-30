@@ -9890,24 +9890,24 @@ html:not(.mobile) .photo-preview .preview-next:hover {
 }
 /* themes */
 .ui-x-light,
-.ui-x-light .icon:not([class*="ui-"]):not(.dark):not(.x-dark):not(.xx-dark),
-.ui-x-light a:not([class*="ui-"]):not(.dark):not(.x-dark):not(.xx-dark),
-.ui-x-light button:not([class*="ui-"]):not(.dark):not(.x-dark):not(.xx-dark),
+.ui-x-light .icon:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light):not(.dark):not(.x-dark):not(.xx-dark),
+.ui-x-light a:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light):not(.dark):not(.x-dark):not(.xx-dark),
+.ui-x-light button:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light):not(.dark):not(.x-dark):not(.xx-dark),
 .ui-light,
-.ui-light .icon:not([class*="ui-"]):not(.dark):not(.x-dark):not(.xx-dark),
-.ui-light a:not([class*="ui-"]):not(.dark):not(.x-dark):not(.xx-dark),
-.ui-light button:not([class*="ui-"]):not(.dark):not(.x-dark):not(.xx-dark) {
+.ui-light .icon:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light):not(.dark):not(.x-dark):not(.xx-dark),
+.ui-light a:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light):not(.dark):not(.x-dark):not(.xx-dark),
+.ui-light button:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light):not(.dark):not(.x-dark):not(.xx-dark) {
   color: hsl(0, 0%, 0%);
   color: var(--black);
 }
 .ui-dark,
-.ui-dark .icon:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light),
-.ui-dark a:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light),
-.ui-dark button:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light),
+.ui-dark .icon:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light):not(.dark):not(.x-dark):not(.xx-dark),
+.ui-dark a:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light):not(.dark):not(.x-dark):not(.xx-dark),
+.ui-dark button:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light):not(.dark):not(.x-dark):not(.xx-dark),
 .ui-x-dark,
-.ui-x-dark .icon:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light),
-.ui-x-dark a:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light),
-.ui-x-dark button:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light) {
+.ui-x-dark .icon:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light):not(.dark):not(.x-dark):not(.xx-dark),
+.ui-x-dark a:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light):not(.dark):not(.x-dark):not(.xx-dark),
+.ui-x-dark button:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light):not(.dark):not(.x-dark):not(.xx-dark) {
   color: hsl(0, 0%, 100%);
 }
 .bg-white:not([class*="ui-"]) {
