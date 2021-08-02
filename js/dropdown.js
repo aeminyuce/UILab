@@ -13,9 +13,13 @@ var dropdown = {};
     var
         dropdownOpenTimer,
         dropdownCloseTimer,
-        listStyles;
+        listStyles,
+        selectOpened,
+        selectInContent;
 
     function dropdownClose() {
+
+        if (selectOpened) { return; }
 
         var that, list;
 
@@ -242,6 +246,34 @@ var dropdown = {};
                 clearTimeout(dropdownOpenTimer);
 
                 dropdownClose();
+
+            });
+
+        // select dropdown fix
+        selectOpened = false;
+        selectInContent = selector('.dropdown .content select');
+
+        events.on(document,
+            'focus',
+            selectInContent,
+
+            function () { selectOpened = true; });
+
+        events.on(document,
+            'blur',
+            selectInContent,
+
+            function () { selectOpened = false; });
+
+        events.on(document,
+            'keyup',
+            selectInContent,
+
+            function (e) {
+
+                if (e.keyCode == 27) {
+                    selectOpened = false;
+                }
 
             });
 
