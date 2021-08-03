@@ -176,13 +176,13 @@ var dropdown = {};
         // open events
         events.on(document,
             'click',
-            '.dropdown:not(.open-hover):not(.open-ease) > .btn',
+            'html:not(.mobile) .dropdown:not(.open-hover):not(.open-ease) > .btn,html.mobile .dropdown:not(.open-ease) > .btn',
 
             function (e) { dropdownOpen(e, this); });
 
         events.on(document,
             'mouseenter',
-            '.dropdown.open-hover:not(.open-ease) > .btn',
+            'html:not(.mobile) .dropdown.open-hover:not(.open-ease) > .btn',
 
             function (e) {
 
