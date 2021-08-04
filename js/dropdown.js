@@ -73,7 +73,7 @@ var dropdown = {};
 
                 dropdownOpenTimer = setTimeout(function () {
                     events.addClass(parent, 'open-ease');
-                }, 300);
+                }, 50);
 
                 offset = parent.getBoundingClientRect();
                 list = selector('.content', parent)[0];
@@ -140,7 +140,7 @@ var dropdown = {};
 
                 } else { setMaxH('default'); }
 
-            }, 0); // do not remove zero timer
+            }, 300);
 
             if (e.type === 'click') {
 
