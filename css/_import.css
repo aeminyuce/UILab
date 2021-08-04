@@ -3909,7 +3909,7 @@ xmp.scroll-v {
   h4 > small,
   h5 > small,
   h6 > small {
-    text-align: center;
+    margin-top: 5px;
     display: block;
   }
 }
