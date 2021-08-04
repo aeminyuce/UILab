@@ -4630,8 +4630,8 @@ html:not(.mobile) .top-button:hover .icon {
   margin-top: -2px;
 }
 .tabs .tab .toggle-icon.right {
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 .tabs .tab.active > .toggle-icon {
   transform: rotate(-180deg);
