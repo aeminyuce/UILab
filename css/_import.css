@@ -8707,6 +8707,7 @@ html:not(.mobile) .carousel-gallery .detail:not(.detail-loader) img:hover {
 .carousel-gallery .thumbs .img {
   width: 100%;
   height: auto;
+  background-clip: content-box;
   border: solid 2px transparent;
   cursor: pointer;
 }

@@ -13,6 +13,7 @@
 @carousel-gallery-detail-hover-opacity:	.45;
 @carousel-gallery-detail-loader-bg:     fade(@black, 7.5%);
 
+@carousel-thumbs-selected-color:		@yellow;
 @carousel-thumbs-margin:     			15px 0;
 @carousel-thumbs-border:     			2px;
 @carousel-thumbs-not-selected-opacity:  .65;
@@ -104,9 +105,9 @@
 			text-align: center; margin: @carousel-thumbs-margin;
 
 			.img {
-				width: 100%; height: auto; border: solid @carousel-thumbs-border @no-color; cursor: pointer;
+				width: 100%; height: auto; background-clip: content-box; border: solid @carousel-thumbs-border @no-color; cursor: pointer;
 
-				&.selected { border-color: @yellow; }
+				&.selected { border-color: @carousel-thumbs-selected-color; }
 				html:not(.mobile) &:not(.selected):not(:hover) { opacity: @carousel-thumbs-not-selected-opacity; }
 			}
 		}
