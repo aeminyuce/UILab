@@ -246,7 +246,7 @@ var carousel = {
 
     carousel.Start = function () {
 
-        var carousels, carouselStart, carouselStop;
+        var carousels, carouselStart, carouselStop, carouselGallery;
 
         // get carousel slide speed
         function getSlideSpeed(slider, ease, i) {
@@ -731,6 +731,21 @@ var carousel = {
             });
 
             // carousel gallery
+            carouselGallery = selector('.carousel-gallery');
+
+            events.each(carouselGallery, function () {
+
+                var thumbs, images;
+
+                thumbs = selector('.thumbs', this);
+                images = selector('.img', this);
+
+                if (images.length <= 1) {
+                    thumbs[0].style.display = 'none'; // hide thumbs when length is 1 or 0
+                }
+
+            });
+
             events.on('.carousel-gallery .thumbs .img', 'click', function () {
 
                 var parent, detail, target, thumbs, index, newImg;
