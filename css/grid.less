@@ -269,18 +269,18 @@ each(@custom-static-grid-columns, {
 
     .row.xs-fluid > [class*="col-"] { width: 100%; clear: both; }
     .row {
-        &:not(.no-fluid):not(.xs-fluid) {
+        &:not(.no-fluid) {
             & > [class*="col-"]:not([class*="col-xs-"]) {
-                &:not(.no-fluid):not(.xs-fluid) { &:extend(.row.xs-fluid > [class*="col-"]); }
+                &:not(.no-fluid) { &:extend(.row.xs-fluid > [class*="col-"]); }
             }
             & > [class*="offset-"]:not([class*="offset-xs-"]) {
-                &:not(.no-fluid):not(.xs-fluid) { margin-left: 0; }
+                &:not(.no-fluid) { margin-left: 0; }
             }
             & > [class*="push-"]:not([class*="push-xs-"]) {
-                &:not(.no-fluid):not(.xs-fluid) { left: 0; }
+                &:not(.no-fluid) { left: 0; }
             }
             & > [class*="pull-"]:not([class*="pull-xs-"]) {
-                &:not(.no-fluid):not(.xs-fluid) { right: 0; }
+                &:not(.no-fluid) { right: 0; }
             }
         }
     }

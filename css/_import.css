@@ -2110,17 +2110,17 @@ html .row {
     width: 42px;
   }
   .row.xs-fluid > [class*="col-"],
-  .row:not(.no-fluid):not(.xs-fluid) > [class*="col-"]:not([class*="col-xs-"]):not(.no-fluid):not(.xs-fluid) {
+  .row:not(.no-fluid) > [class*="col-"]:not([class*="col-xs-"]):not(.no-fluid) {
     width: 100%;
     clear: both;
   }
-  .row:not(.no-fluid):not(.xs-fluid) > [class*="offset-"]:not([class*="offset-xs-"]):not(.no-fluid):not(.xs-fluid) {
+  .row:not(.no-fluid) > [class*="offset-"]:not([class*="offset-xs-"]):not(.no-fluid) {
     margin-left: 0;
   }
-  .row:not(.no-fluid):not(.xs-fluid) > [class*="push-"]:not([class*="push-xs-"]):not(.no-fluid):not(.xs-fluid) {
+  .row:not(.no-fluid) > [class*="push-"]:not([class*="push-xs-"]):not(.no-fluid) {
     left: 0;
   }
-  .row:not(.no-fluid):not(.xs-fluid) > [class*="pull-"]:not([class*="pull-xs-"]):not(.no-fluid):not(.xs-fluid) {
+  .row:not(.no-fluid) > [class*="pull-"]:not([class*="pull-xs-"]):not(.no-fluid) {
     right: 0;
   }
   .col-static:not(.no-fluid) > .row,
