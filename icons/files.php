@@ -256,7 +256,7 @@
     </g>
     <use class="svg-s" href="#file"/>
 </symbol>
-<symbol id="file-svg-f" viewBox="0 0 288 288">
+<symbol id="file-svg-fill" viewBox="0 0 288 288">
     <use class="svg-f" href="#file-svg"/>
 </symbol>
 <symbol id="file-tiff" viewBox="0 0 288 288">
