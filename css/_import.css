@@ -427,7 +427,7 @@ html:not(.mobile) .hidden-dekstop,
 .inline-block,
 .inline-block-1st > *:not(.row):not([class*="hidden-"]),
 .inline-block-2nd > * > *:not(.row):not([class*="hidden-"]) {
-  vertical-align: middle;
+  vertical-align: middle !important;
   display: inline-block !important;
 }
 .scroll {
