@@ -9319,6 +9319,7 @@ html:not(.mobile) .photo-preview .preview-next:hover {
   transition-duration: 0s;
 }
 .close-photo-preview {
+  border-radius: 6px;
   position: fixed;
   z-index: 10;
 }

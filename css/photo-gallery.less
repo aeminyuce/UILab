@@ -16,11 +16,13 @@
 @photo-preview-close-icon-position:     20px;
 @photo-preview-close-icon-z-index:      10;
 
+@photo-preview-btn-radius:              @round;
 @photo-preview-btn-size:                (@btn-lg + 10);
 @photo-preview-btn-padding:             10px;
 @photo-preview-btn-bg:                  fade(@white, 15%);
 @photo-preview-btn-hover-bg:            fade(@white, 25%);
 
+@photo-preview-info-radius:             @round;
 @photo-preview-info-min-height:         40px;
 @photo-preview-info-max-height:         132px;
 @photo-preview-info-padding:            10px;
@@ -106,8 +108,8 @@
             html:not(.mobile) &:hover { background-color: @photo-preview-btn-hover-bg; }
 
         }
-        &prev { border-radius: 0 @round @round 0; left: 0; }
-        &next { border-radius: @round 0 0 @round; right: 0; }
+        &prev { border-radius: 0 @photo-preview-btn-radius @photo-preview-btn-radius 0; left: 0; }
+        &next { border-radius: @photo-preview-btn-radius 0 0 @photo-preview-btn-radius; right: 0; }
 
         &loader {
             color: @white; ._icon(@photo-preview-loader-icon-size); margin: -(@photo-preview-loader-icon-size / 2) 0 0 -(@photo-preview-loader-icon-size / 2); position: absolute; top: 50%; left: 50%; z-index: 3; transform: translate(-50%,-50%); animation: preview-loader 1.15s linear infinite;
@@ -116,7 +118,7 @@
         }
 
         &info {
-            color: @white; min-height: @photo-preview-info-min-height; max-height: @photo-preview-info-max-height; background-color: @photo-preview-info-bg; padding: @photo-preview-info-padding; display: block; border-radius: @round @round 0 0; position: absolute; bottom: 0; z-index: 1; left: 50%; transform: translate(-50%,0);
+            color: @white; min-height: @photo-preview-info-min-height; max-height: @photo-preview-info-max-height; background-color: @photo-preview-info-bg; padding: @photo-preview-info-padding; display: block; border-radius: @photo-preview-info-radius @photo-preview-info-radius 0 0; position: absolute; bottom: 0; z-index: 1; left: 50%; transform: translate(-50%,0);
 
             &:not(.open) { transform: translate(-50%,100%); }
         }
@@ -135,7 +137,7 @@
 }
 
 .close-photo-preview {
-    position: fixed; z-index: @photo-preview-close-icon-z-index;
+    border-radius: @photo-preview-btn-radius; position: fixed; z-index: @photo-preview-close-icon-z-index;
 
     .icon { color: @white; opacity: 1 !important; }
 }
