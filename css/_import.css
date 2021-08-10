@@ -166,7 +166,7 @@ input,
 button,
 textarea,
 select {
-  font: 14px/1.42857143 "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font: 14px/1.42857143 -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 body {
   background-color: hsl(0, 0%, 98%);
