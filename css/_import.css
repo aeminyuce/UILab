@@ -167,7 +167,8 @@ button,
 textarea,
 select {
   font: 14px/1.42857143 -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 600;
+  font-weight: 400;
+  letter-spacing: 0;
 }
 body {
   background-color: hsl(0, 0%, 98%);
@@ -240,7 +241,7 @@ table {
 th,
 td,
 caption {
-  font-weight: 600;
+  font-weight: 400;
   vertical-align: top;
   text-align: left;
 }
@@ -3656,7 +3657,7 @@ a {
   font-weight: 500 !important;
 }
 .font-regular {
-  font-weight: 600 !important;
+  font-weight: 400 !important;
 }
 .font-light {
   font-weight: 300 !important;
@@ -3723,7 +3724,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 0;
 }
 h1:not(:last-child),
@@ -8912,7 +8913,7 @@ html:not(.mobile) .data-list.data-hover .data-content:not([class*="ui-"]):nth-ch
   float: right;
 }
 .image-uploader .file .btn b {
-  font-weight: 600;
+  font-weight: 400;
 }
 .image-uploader .uploader-tools {
   background-color: hsla(0, 0%, 0%, 0.05);
@@ -9629,7 +9630,7 @@ html:not(.mobile) .photo-preview .preview-next:hover {
 }
 .weather .w-date {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   margin-top: 2px;
   display: block;
   opacity: 0.65;
