@@ -11,6 +11,7 @@ var dropdown = {};
     /*globals window, document, selector, events, setTimeout, clearTimeout */
 
     var
+        dropdownHoverTimer,
         dropdownOpenTimer,
         dropdownCloseTimer,
         listStyles,
@@ -73,7 +74,7 @@ var dropdown = {};
 
                 dropdownOpenTimer = setTimeout(function () {
                     events.addClass(parent, 'open-ease');
-                }, 50);
+                }, (dropdownHoverTimer / 6));
 
                 offset = parent.getBoundingClientRect();
                 list = selector('.content', parent)[0];
@@ -112,35 +113,35 @@ var dropdown = {};
 
                     }
 
-                }
+                    setMaxH = function (pos) { // set max-height of list
 
-                setMaxH = function (pos) { // set max-height of list
+                        if (events.hasClass(list, 'no-scroll')) { return; }
 
-                    if (events.hasClass(list, 'no-scroll')) { return; }
+                        if (pos === 'top') {
+                            list.style.maxHeight = window.innerHeight - 21 + 'px'; // 21: margin-top + scrollbar size
 
-                    if (pos === 'top') {
-                        list.style.maxHeight = window.innerHeight - 21 + 'px'; // 21: margin-top + scrollbar size
+                        } else {
+                            list.style.maxHeight = window.innerHeight - (offset.top + that.offsetHeight + 21) + 'px'; // 21: margin-top + scrollbar size
+                        }
 
-                    } else {
-                        list.style.maxHeight = window.innerHeight - (offset.top + that.offsetHeight + 21) + 'px'; // 21: margin-top + scrollbar size
-                    }
+                    };
 
-                };
+                    if (offset.top + parseInt(that.offsetHeight + list.offsetHeight, 10) >= window.innerHeight) { // menu vertical positioning
 
-                if (offset.top + parseInt(that.offsetHeight + list.offsetHeight, 10) >= window.innerHeight) { // menu vertical positioning
+                        if (offset.top - parseInt(that.offsetHeight + list.offsetHeight, 10) + that.offsetHeight > 0) {
 
-                    if (offset.top - parseInt(that.offsetHeight + list.offsetHeight, 10) + that.offsetHeight > 0) {
+                            events.addClass(parent, 'menu-t');
+                            list.style.removeProperty('transform-origin');
 
-                        events.addClass(parent, 'menu-t');
-                        list.style.removeProperty('transform-origin');
+                            setMaxH('top');
 
-                        setMaxH('top');
+                        } else { setMaxH('default'); }
 
                     } else { setMaxH('default'); }
 
-                } else { setMaxH('default'); }
+                }
 
-            }, 300);
+            }, dropdownHoverTimer);
 
             if (e.type === 'click') {
 
@@ -152,9 +153,15 @@ var dropdown = {};
 
                         // prevent for non listing contents
                         if (content !== undefined) {
+
                             if (events.closest(content, '.dropdown')[0] !== undefined) { // check other .content class names
                                 return;
                             }
+
+                        }
+
+                        if (events.closest(ev.target, '.dropdown.nav')[0] !== undefined) { // check dropdwon navs
+                            return;
                         }
 
                         if (ev.button !== 2) { // inherited right clicks
@@ -178,7 +185,12 @@ var dropdown = {};
             'click',
             'html:not(.mobile) .dropdown:not(.open-hover):not(.open-ease) > .btn,html.mobile .dropdown:not(.open-ease) > .btn',
 
-            function (e) { dropdownOpen(e, this); });
+            function (e) {
+
+                dropdownHoverTimer = 0;
+                dropdownOpen(e, this);
+
+            });
 
         events.on(document,
             'mouseenter',
@@ -187,6 +199,8 @@ var dropdown = {};
             function (e) {
 
                 clearTimeout(dropdownCloseTimer);
+                dropdownHoverTimer = 300;
+
                 dropdownOpen(e, this);
 
             });
@@ -196,7 +210,10 @@ var dropdown = {};
             'html:not(.mobile) .dropdown.open-hover.open > .btn,html:not(.mobile) .dropdown.open-hover.open-ease .content',
 
             function () {
+
+                dropdownHoverTimer = 300;
                 clearTimeout(dropdownCloseTimer);
+
             });
 
         // form toggle events
