@@ -113,33 +113,37 @@ var dropdown = {};
 
                     }
 
-                    setMaxH = function (pos) { // set max-height of list
+                }
 
-                        if (events.hasClass(list, 'no-scroll')) { return; }
+                setMaxH = function (pos) { // set max-height of list
 
-                        if (pos === 'top') {
-                            list.style.maxHeight = window.innerHeight - 21 + 'px'; // 21: margin-top + scrollbar size
+                    if (events.hasClass(list, 'no-scroll')) { return; }
 
-                        } else {
-                            list.style.maxHeight = window.innerHeight - (offset.top + that.offsetHeight + 21) + 'px'; // 21: margin-top + scrollbar size
-                        }
+                    if (pos === 'top') {
+                        list.style.maxHeight = window.innerHeight - 21 + 'px'; // 21: margin-top + scrollbar size
 
-                    };
+                    } else {
+                        list.style.maxHeight = window.innerHeight - (offset.top + that.offsetHeight + 21) + 'px'; // 21: margin-top + scrollbar size
+                    }
 
-                    if (offset.top + parseInt(that.offsetHeight + list.offsetHeight, 10) >= window.innerHeight) { // menu vertical positioning
+                };
 
-                        if (offset.top - parseInt(that.offsetHeight + list.offsetHeight, 10) + that.offsetHeight > 0) {
+                if (offset.top + parseInt(that.offsetHeight + list.offsetHeight, 10) >= window.innerHeight) { // menu vertical positioning
+
+                    if (offset.top - parseInt(that.offsetHeight + list.offsetHeight, 10) + that.offsetHeight > 0) {
+
+                        if (!events.hasClass(parent, 'nav-full-h')) { // diable all menu-t on full horizontal navigations
 
                             events.addClass(parent, 'menu-t');
                             list.style.removeProperty('transform-origin');
 
-                            setMaxH('top');
+                        }
 
-                        } else { setMaxH('default'); }
+                        setMaxH('top');
 
                     } else { setMaxH('default'); }
 
-                }
+                } else { setMaxH('default'); }
 
             }, dropdownHoverTimer);
 
@@ -160,7 +164,7 @@ var dropdown = {};
 
                         }
 
-                        if (events.closest(ev.target, '.dropdown.nav')[0] !== undefined) { // check dropdwon navs
+                        if (events.closest(ev.target, '.dropdown.nav-full-h')[0] !== undefined && ev.target.className.split(' ').indexOf('content') === 0) { // check full horizontal navigations
                             return;
                         }
 
