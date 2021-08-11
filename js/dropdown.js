@@ -24,7 +24,7 @@ var dropdown = {};
 
         var that, list;
 
-        that = selector('.dropdown.open');
+        that = selector('.dropdown.open-ease');
         events.removeClass(that, 'open-ease');
 
         clearTimeout(dropdownCloseTimer);
@@ -50,7 +50,7 @@ var dropdown = {};
 
             });
 
-        }, 300);
+        }, 50);
 
     }
 
@@ -63,11 +63,12 @@ var dropdown = {};
 
             var list, alignSize, parent, offset, setMaxH;
 
-            dropdownClose();
             parent = that.parentNode;
 
             clearTimeout(dropdownOpenTimer);
             dropdownOpenTimer = setTimeout(function () {
+
+                dropdownClose();
 
                 clearTimeout(dropdownOpenTimer);
                 events.addClass(parent, 'open');
