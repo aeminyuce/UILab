@@ -74,9 +74,11 @@ var tabs = {};
 
                 if (toggle) {
 
-                    if (classes) { events.toggleClass(tabs[index], classes); }
-                    events.removeClass(tabs[index], 'active');
+                    if (classes) {
+                        events.toggleClass(tabs[index], classes);
+                    }
 
+                    events.removeClass(tabs[index], 'active');
                     events.removeClass(currentContent, 'open-ease');
 
                     setTimeout(function () {
@@ -111,6 +113,41 @@ var tabs = {};
                     }, 50);
 
                 }, 0);
+
+                if (toggle) {
+
+                    // close opened toggle tabs when outside the tabs
+                    events.on(document, 'mouseup.tabToggleClose', function (ev) {
+
+                        if (ev.button !== 2) { // inherited right clicks
+
+                            if (ev.target.className.split(' ').indexOf('btn-toggle') !== -1 && events.closest(ev.target, '.tabs')[0] === parent) { // controlling same toggled tab buttons
+                                return;
+                            }
+
+                            if (ev.target.className.split(' ').indexOf('tab-content') === -1 && events.closest(ev.target, '.tab-content')[0] === undefined) { // controlling inside of the opened tab content
+
+                                if (classes) {
+                                    events.removeClass(tabs, classes);
+                                }
+
+                                events.removeClass(tabs, 'active');
+                                events.removeClass(content, 'open-ease');
+
+                                setTimeout(function () {
+                                    events.removeClass(content, 'open');
+                                }, 0);
+
+                                events.trigger(document, 'tabs:outerToggleClose'); // set custom event
+                                events.off(document, 'mouseup.tabToggleClose');
+
+                            }
+
+                        }
+
+                    });
+
+                }
 
             }
 
