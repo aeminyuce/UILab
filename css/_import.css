@@ -3609,40 +3609,40 @@ a {
   color: hsl(0, 0%, 0%);
   color: var(--black);
 }
-.font-green,
-.font-green .icon:not([class*="ui-"]),
-.font-green a:not([class*="ui-"]),
-.font-green button:not([class*="ui-"]) {
+.text-green,
+.text-green .icon:not([class*="ui-"]),
+.text-green a:not([class*="ui-"]),
+.text-green button:not([class*="ui-"]) {
   color: hsl(142, 82%, 42%) !important;
 }
-.font-yellow,
-.font-yellow .icon:not([class*="ui-"]),
-.font-yellow a:not([class*="ui-"]),
-.font-yellow button:not([class*="ui-"]) {
+.text-yellow,
+.text-yellow .icon:not([class*="ui-"]),
+.text-yellow a:not([class*="ui-"]),
+.text-yellow button:not([class*="ui-"]) {
   color: hsl(42, 100%, 50%) !important;
 }
-.font-orange,
-.font-orange .icon:not([class*="ui-"]),
-.font-orange a:not([class*="ui-"]),
-.font-orange button:not([class*="ui-"]) {
+.text-orange,
+.text-orange .icon:not([class*="ui-"]),
+.text-orange a:not([class*="ui-"]),
+.text-orange button:not([class*="ui-"]) {
   color: hsl(30, 100%, 50%) !important;
 }
-.font-red,
-.font-red .icon:not([class*="ui-"]),
-.font-red a:not([class*="ui-"]),
-.font-red button:not([class*="ui-"]) {
+.text-red,
+.text-red .icon:not([class*="ui-"]),
+.text-red a:not([class*="ui-"]),
+.text-red button:not([class*="ui-"]) {
   color: hsl(0, 74%, 55%) !important;
 }
-.font-blue,
-.font-blue .icon:not([class*="ui-"]),
-.font-blue a:not([class*="ui-"]),
-.font-blue button:not([class*="ui-"]) {
+.text-blue,
+.text-blue .icon:not([class*="ui-"]),
+.text-blue a:not([class*="ui-"]),
+.text-blue button:not([class*="ui-"]) {
   color: hsl(212, 64%, 38%) !important;
 }
-.font-default,
-.font-default .icon:not([class*="ui-"]),
-.font-default a:not([class*="ui-"]),
-.font-default button:not([class*="ui-"]) {
+.text-default,
+.text-default .icon:not([class*="ui-"]),
+.text-default a:not([class*="ui-"]),
+.text-default button:not([class*="ui-"]) {
   color: hsl(226, 52%, 50%) !important;
 }
 .font-lead {

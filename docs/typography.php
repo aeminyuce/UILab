@@ -23,10 +23,10 @@
                     <span class="dark">.dark</span>
                     <span class="x-dark">.x-dark</span>
                     <span class="xx-dark">.xx-dark</span>
-                    <span class="font-green">.font-green</span>
-                    <span class="font-yellow">.font-yellow</span>
-                    <span class="font-red">.font-red</span>
-                    <span class="font-orange">.font-orange</span>
+                    <span class="text-green">.text-green</span>
+                    <span class="text-yellow">.text-yellow</span>
+                    <span class="text-red">.text-red</span>
+                    <span class="text-orange">.text-orange</span>
                 </div>
 
                 <h4>Font Sizes</h4>

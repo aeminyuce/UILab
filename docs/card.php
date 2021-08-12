@@ -206,7 +206,7 @@
                             <svg class="icon"><use href="#remove"/></svg>
                         </button>
                         <h4>
-                            <svg class="icon icon-lg font-green"><use href="#comment"/></svg>
+                            <svg class="icon icon-lg text-green"><use href="#comment"/></svg>
                             Message Title
                         </h4>
                         <p class="large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
@@ -217,7 +217,7 @@
                             <svg class="icon"><use href="#remove"/></svg>
                         </button>
                         <h4>
-                            <svg class="icon icon-lg font-red"><use href="#comment-lines-fill"/></svg>
+                            <svg class="icon icon-lg text-red"><use href="#comment-lines-fill"/></svg>
                             Message Title
                         </h4>
                         <p class="large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
@@ -228,7 +228,7 @@
                             <svg class="icon"><use href="#remove"/></svg>
                         </button>
                         <h4>
-                            <svg class="icon icon-lg font-yellow"><use href="#comment"/></svg>
+                            <svg class="icon icon-lg text-yellow"><use href="#comment"/></svg>
                             Message Title
                         </h4>
                         <p class="large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
