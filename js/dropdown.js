@@ -188,7 +188,7 @@ var dropdown = {};
         // open events
         events.on(document,
             'click',
-            'html:not(.mobile) .dropdown:not(.open-hover):not(.open-ease) > .btn,html.mobile .dropdown:not(.open-ease) > .btn',
+            '.desktop .dropdown:not(.open-hover):not(.open-ease) > .btn,html.mobile .dropdown:not(.open-ease) > .btn',
 
             function (e) {
 
@@ -199,7 +199,7 @@ var dropdown = {};
 
         events.on(document,
             'mouseenter',
-            'html:not(.mobile) .dropdown.open-hover:not(.open-ease) > .btn',
+            '.desktop .dropdown.open-hover:not(.open-ease) > .btn',
 
             function (e) {
 
@@ -212,7 +212,7 @@ var dropdown = {};
 
         events.on(document,
             'mouseenter',
-            'html:not(.mobile) .dropdown.open-hover.open > .btn,html:not(.mobile) .dropdown.open-hover.open-ease .content',
+            '.desktop .dropdown.open-hover.open > .btn,.desktop .dropdown.open-hover.open-ease .content',
 
             function () {
 

@@ -124,7 +124,7 @@
                     font-weight: @font-bold;
 
                     &:not([class*="ui-"]) { ._bg-var(calendar-today-btn-bg); }
-                    html:not(.mobile) & {
+                    .desktop & {
                         &:not([class*="ui-"]):hover { ._bg-var(calendar-today-btn-hover-bg); }
                     }
                 }
@@ -134,7 +134,7 @@
                 button {
                     color: @white !important; font-weight: @font-bold; background-color: @calendar-pickerday-btn-bg;
 
-                    html:not(.mobile) &:hover { background-color: @calendar-pickerday-btn-hover-bg; }
+                    .desktop &:hover { background-color: @calendar-pickerday-btn-hover-bg; }
                 }
             }
         }
@@ -146,7 +146,7 @@
         ._bg-var(btn-bg);
 
         &:not([class*="ui-"]) { ._color-var(black); }
-        html:not(.mobile) &:hover { ._bg-var(btn-hover-bg); }
+        .desktop &:hover { ._bg-var(btn-hover-bg); }
     }
 
     caption {
@@ -239,7 +239,7 @@
         li {
             min-height: @calendar-details-list-padding; padding: @calendar-details-list-padding @calendar-details-list-padding @calendar-details-list-padding (@calendar-details-days-font-size + @calendar-details-list-padding * 3); display: block;
 
-            html:not(.mobile) &:hover { ._bg-var(btn-ghost-hover-bg); }
+            .desktop &:hover { ._bg-var(btn-ghost-hover-bg); }
             &:not(:last-child) { margin-bottom: @highlight-space; }
 
             & > strong { font-size: @calendar-details-days-font-size; font-weight: @font-light; letter-spacing: @calendar-details-days-font-spacing; text-align: center !important; line-height: (@calendar-details-days-font-size - 5); width: @calendar-details-days-font-size; margin-left: -(@calendar-details-days-font-size + @calendar-details-list-padding * 2); float: left; }
@@ -287,9 +287,9 @@
             &.selected {
                 color: @white !important; font-weight: @font-bold; background-color: @calendar-pickerday-btn-bg;
 
-                html:not(.mobile) &:hover { background-color: @calendar-pickerday-btn-hover-bg; }
+                .desktop &:hover { background-color: @calendar-pickerday-btn-hover-bg; }
             }
-            html:not(.mobile) &:hover {._bg-var(btn-hover-bg); }
+            .desktop &:hover {._bg-var(btn-hover-bg); }
         }
     }
 

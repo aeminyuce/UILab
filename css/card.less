@@ -44,7 +44,7 @@
     ._color-var(black); line-height: @cards-close-icon-size; position: absolute; top: @cards-close-icon-position; right: @cards-close-icon-position; z-index: 1; opacity: @cards-close-icon-opacity; cursor: pointer;
 
     .icon { ._icon(@cards-close-icon-size); }
-    html:not(.mobile) &:hover { opacity: @cards-close-icon-opacity-hover; }
+    .desktop &:hover { opacity: @cards-close-icon-opacity-hover; }
 }
 .closing-card { transform: @cards-closing-effect; opacity: 0; }
 

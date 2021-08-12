@@ -70,7 +70,7 @@
         }
         circle {
             &[onclick] { cursor: pointer; }
-            html:not(.mobile) &:hover { stroke-width: @line-chart-circle-hover-size; }
+            .desktop &:hover { stroke-width: @line-chart-circle-hover-size; }
 
             .no-effects &,.ie & { transform: translateY(0); opacity: 1; }
         }

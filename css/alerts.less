@@ -85,7 +85,7 @@
     &-msg {
         text-align: @alerts-msg-text-align; width: @alerts-msg-width; min-height: @alerts-msg-min-height; padding: @alerts-msg-padding; position: fixed; z-index: (@alerts-z-index + 2); cursor: pointer;
 
-        html:not(.mobile) &:hover { opacity: @alerts-msg-hover-opacity; }
+        .desktop &:hover { opacity: @alerts-msg-hover-opacity; }
         &:not(.show) { display: none; }
         &:not(.show-ease) { opacity: 0; }
         &:not([class*="ui-"]) { color: @white; ._bg-var(alerts-msg-bg); }
@@ -127,7 +127,7 @@
             color: @white !important; background-color: @green;
 
             &:focus { ._shadow-var(@spread: @alerts-dialog-buttons-focus-border; @var: alerts-dialog-success-shadow); }
-            html:not(.mobile) &:hover { background-color: @alerts-dialog-success-hover-bg; }
+            .desktop &:hover { background-color: @alerts-dialog-success-hover-bg; }
         }
     }
     &-error {
@@ -135,7 +135,7 @@
             color: @white !important; background-color: @red;
 
             &:focus { ._shadow-var(@spread: @alerts-dialog-buttons-focus-border; @var: alerts-dialog-error-shadow); }
-            html:not(.mobile) &:hover { background-color: @alerts-dialog-error-hover-bg; }
+            .desktop &:hover { background-color: @alerts-dialog-error-hover-bg; }
         }
     }
     &-custom {
@@ -143,7 +143,7 @@
             ._color-var(black); ._bg-var(btn-bg);
 
             &:focus { ._shadow-var(@spread: @alerts-dialog-buttons-focus-border; @var: alerts-dialog-custom-shadow); }
-            html:not(.mobile) &:hover { ._bg-var(btn-hover-bg); }
+            .desktop &:hover { ._bg-var(btn-hover-bg); }
         }
     }
 }
@@ -152,7 +152,7 @@
     color: currentColor; line-height: 0; background: @no-color; padding: (@alerts-dialog-padding / 2); border: 0; position: absolute; top: (@alerts-dialog-padding / 2); right: (@alerts-dialog-padding / 2); z-index: 1; opacity: @alerts-dialog-close-opacity; cursor: pointer;
 
     .icon { ._icon(@alerts-dialog-close-icon-size); }
-    html:not(.mobile) &:hover { opacity: @alerts-dialog-close-hover-opacity; }
+    .desktop &:hover { opacity: @alerts-dialog-close-hover-opacity; }
 }
 
 @media (@md-start) {

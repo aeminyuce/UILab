@@ -6,6 +6,7 @@
 var useragents = {
 
     userLang: '',
+    desktop: false,
     ie: false,
     edge: false,
     edg: false,
@@ -111,7 +112,13 @@ var useragents = {
                 useragents.ios = false;
             }
 
-        } else { events.removeClass(document, 'ios'); }
+        } else {
+
+            events.removeClass(document, 'ios');
+
+            events.addClass(document, 'desktop');
+            useragents.desktop = true;
+        }
 
     };
 

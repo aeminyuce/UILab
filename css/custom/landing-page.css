@@ -23,40 +23,40 @@
 .theme-farmer .ui-bg-dark-300:not([class*="theme-"]) {
   background-color: hsl(43, 100%, 27%);
 }
-html:not(.mobile) .theme-farmer.ui-bg-light-100.hover:hover,
-html:not(.mobile) .theme-farmer .ui-bg-light-100:not([class*="theme-"]).hover:hover,
-html:not(.mobile) .theme-farmer.ui-bg-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) .theme-farmer .ui-bg-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-farmer.ui-bg-light-100.hover:hover,
+.desktop .theme-farmer .ui-bg-light-100:not([class*="theme-"]).hover:hover,
+.desktop .theme-farmer.ui-bg-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-farmer .ui-bg-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsla(43, 100%, 62%, 0.3);
 }
-html:not(.mobile) .theme-farmer.ui-bg-light-200.hover:hover,
-html:not(.mobile) .theme-farmer .ui-bg-light-200:not([class*="theme-"]).hover:hover,
-html:not(.mobile) .theme-farmer.ui-bg-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) .theme-farmer .ui-bg-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-farmer.ui-bg-light-200.hover:hover,
+.desktop .theme-farmer .ui-bg-light-200:not([class*="theme-"]).hover:hover,
+.desktop .theme-farmer.ui-bg-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-farmer .ui-bg-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsla(43, 100%, 67%, 0.5);
 }
-html:not(.mobile) .theme-farmer.ui-bg-light-300.hover:hover,
-html:not(.mobile) .theme-farmer .ui-bg-light-300:not([class*="theme-"]).hover:hover,
-html:not(.mobile) .theme-farmer.ui-bg-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) .theme-farmer .ui-bg-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-farmer.ui-bg-light-300.hover:hover,
+.desktop .theme-farmer .ui-bg-light-300:not([class*="theme-"]).hover:hover,
+.desktop .theme-farmer.ui-bg-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-farmer .ui-bg-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsla(43, 100%, 72%, 0.7);
 }
-html:not(.mobile) .theme-farmer.ui-bg-dark-100.hover:hover,
-html:not(.mobile) .theme-farmer .ui-bg-dark-100:not([class*="theme-"]).hover:hover,
-html:not(.mobile) .theme-farmer.ui-bg-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) .theme-farmer .ui-bg-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-farmer.ui-bg-dark-100.hover:hover,
+.desktop .theme-farmer .ui-bg-dark-100:not([class*="theme-"]).hover:hover,
+.desktop .theme-farmer.ui-bg-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-farmer .ui-bg-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(43, 100%, 67%);
 }
-html:not(.mobile) .theme-farmer.ui-bg-dark-200.hover:hover,
-html:not(.mobile) .theme-farmer .ui-bg-dark-200:not([class*="theme-"]).hover:hover,
-html:not(.mobile) .theme-farmer.ui-bg-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) .theme-farmer .ui-bg-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-farmer.ui-bg-dark-200.hover:hover,
+.desktop .theme-farmer .ui-bg-dark-200:not([class*="theme-"]).hover:hover,
+.desktop .theme-farmer.ui-bg-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-farmer .ui-bg-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(43, 100%, 72%);
 }
-html:not(.mobile) .theme-farmer.ui-bg-dark-300.hover:hover,
-html:not(.mobile) .theme-farmer .ui-bg-dark-300:not([class*="theme-"]).hover:hover,
-html:not(.mobile) .theme-farmer.ui-bg-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) .theme-farmer .ui-bg-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-farmer.ui-bg-dark-300.hover:hover,
+.desktop .theme-farmer .ui-bg-dark-300:not([class*="theme-"]).hover:hover,
+.desktop .theme-farmer.ui-bg-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-farmer .ui-bg-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(43, 100%, 77%);
 }
 .theme-farmer.ui-color,
@@ -91,40 +91,40 @@ html:not(.mobile) .theme-farmer .ui-bg-dark-300:not([class*="theme-"]).btn:not(.
 .theme-farmer2 .ui-bg-dark-300:not([class*="theme-"]) {
   background-color: hsl(140, 86%, 21%);
 }
-html:not(.mobile) .theme-farmer2.ui-bg-light-100.hover:hover,
-html:not(.mobile) .theme-farmer2 .ui-bg-light-100:not([class*="theme-"]).hover:hover,
-html:not(.mobile) .theme-farmer2.ui-bg-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) .theme-farmer2 .ui-bg-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-farmer2.ui-bg-light-100.hover:hover,
+.desktop .theme-farmer2 .ui-bg-light-100:not([class*="theme-"]).hover:hover,
+.desktop .theme-farmer2.ui-bg-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-farmer2 .ui-bg-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsla(140, 86%, 56%, 0.3);
 }
-html:not(.mobile) .theme-farmer2.ui-bg-light-200.hover:hover,
-html:not(.mobile) .theme-farmer2 .ui-bg-light-200:not([class*="theme-"]).hover:hover,
-html:not(.mobile) .theme-farmer2.ui-bg-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) .theme-farmer2 .ui-bg-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-farmer2.ui-bg-light-200.hover:hover,
+.desktop .theme-farmer2 .ui-bg-light-200:not([class*="theme-"]).hover:hover,
+.desktop .theme-farmer2.ui-bg-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-farmer2 .ui-bg-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsla(140, 86%, 61%, 0.5);
 }
-html:not(.mobile) .theme-farmer2.ui-bg-light-300.hover:hover,
-html:not(.mobile) .theme-farmer2 .ui-bg-light-300:not([class*="theme-"]).hover:hover,
-html:not(.mobile) .theme-farmer2.ui-bg-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) .theme-farmer2 .ui-bg-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-farmer2.ui-bg-light-300.hover:hover,
+.desktop .theme-farmer2 .ui-bg-light-300:not([class*="theme-"]).hover:hover,
+.desktop .theme-farmer2.ui-bg-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-farmer2 .ui-bg-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsla(140, 86%, 66%, 0.7);
 }
-html:not(.mobile) .theme-farmer2.ui-bg-dark-100.hover:hover,
-html:not(.mobile) .theme-farmer2 .ui-bg-dark-100:not([class*="theme-"]).hover:hover,
-html:not(.mobile) .theme-farmer2.ui-bg-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) .theme-farmer2 .ui-bg-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-farmer2.ui-bg-dark-100.hover:hover,
+.desktop .theme-farmer2 .ui-bg-dark-100:not([class*="theme-"]).hover:hover,
+.desktop .theme-farmer2.ui-bg-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-farmer2 .ui-bg-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(140, 86%, 61%);
 }
-html:not(.mobile) .theme-farmer2.ui-bg-dark-200.hover:hover,
-html:not(.mobile) .theme-farmer2 .ui-bg-dark-200:not([class*="theme-"]).hover:hover,
-html:not(.mobile) .theme-farmer2.ui-bg-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) .theme-farmer2 .ui-bg-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-farmer2.ui-bg-dark-200.hover:hover,
+.desktop .theme-farmer2 .ui-bg-dark-200:not([class*="theme-"]).hover:hover,
+.desktop .theme-farmer2.ui-bg-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-farmer2 .ui-bg-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(140, 86%, 66%);
 }
-html:not(.mobile) .theme-farmer2.ui-bg-dark-300.hover:hover,
-html:not(.mobile) .theme-farmer2 .ui-bg-dark-300:not([class*="theme-"]).hover:hover,
-html:not(.mobile) .theme-farmer2.ui-bg-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) .theme-farmer2 .ui-bg-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-farmer2.ui-bg-dark-300.hover:hover,
+.desktop .theme-farmer2 .ui-bg-dark-300:not([class*="theme-"]).hover:hover,
+.desktop .theme-farmer2.ui-bg-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-farmer2 .ui-bg-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(140, 86%, 71%);
 }
 .theme-farmer2.ui-color,

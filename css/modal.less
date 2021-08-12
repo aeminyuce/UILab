@@ -85,7 +85,7 @@
             .close-modal {
                 background-color: @modal-close-bg; top: -(@btn-default / 2); right: -(@btn-default / 2);
 
-                html:not(.mobile) &:hover { background-color: @modal-close-hover-bg; }
+                .desktop &:hover { background-color: @modal-close-hover-bg; }
             }
         }
         &.fullscreen {
@@ -97,7 +97,7 @@
             .close-modal {
                 background-color: @modal-close-fullscreen-bg; top: @modal-padding; right: @modal-padding;
 
-                html:not(.mobile) &:hover { background-color: @modal-close-fullscreen-hover-bg; }
+                .desktop &:hover { background-color: @modal-close-fullscreen-hover-bg; }
             }
         }
 
