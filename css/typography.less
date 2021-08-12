@@ -24,15 +24,15 @@
 @blockquote-footer-color:               hsl(0, 0%, 47%);
 
 ._global-vars () {
-    --dark: @dark;
-    --x-dark: @x-dark;
+    --black-muted: @black-muted;
+    --black-50: @black-50;
 
     --code-color: @code-color;
     --code-bg: @code-bg;
 }
 ._global-vars-dark () {
-    --dark: @light;
-    --x-dark: @x-light;
+    --black-muted: @white-muted;
+    --black-50: @white-50;
 
     --code-color: @white;
     --code-bg: @code-color;
@@ -45,10 +45,10 @@ body,a { ._color-var(black); }
         &,.icon:not([class*="ui-"]),a:not([class*="ui-"]),button:not([class*="ui-"]) { color: @white !important; }
 
         &-50 {
-            &,.icon:not([class*="ui-"]),a:not([class*="ui-"]),button:not([class*="ui-"]) { color: @x-light !important; }
+            &,.icon:not([class*="ui-"]),a:not([class*="ui-"]),button:not([class*="ui-"]) { color: @white-50 !important; }
         }
         &-muted {
-            &,.icon:not([class*="ui-"]),a:not([class*="ui-"]),button:not([class*="ui-"]) { color: @light !important; }
+            &,.icon:not([class*="ui-"]),a:not([class*="ui-"]),button:not([class*="ui-"]) { color: @white-muted !important; }
         }
     }
 
@@ -56,10 +56,10 @@ body,a { ._color-var(black); }
         &,.icon:not([class*="ui-"]),a:not([class*="ui-"]),button:not([class*="ui-"]) { ._color-var(black); }
 
         &-50 {
-            &,.icon:not([class*="ui-"]),a:not([class*="ui-"]),button:not([class*="ui-"]) { ._color-var(x-dark); }
+            &,.icon:not([class*="ui-"]),a:not([class*="ui-"]),button:not([class*="ui-"]) { ._color-var(black-50); }
         }
         &-muted {
-            &,.icon:not([class*="ui-"]),a:not([class*="ui-"]),button:not([class*="ui-"]) { ._color-var(dark); }
+            &,.icon:not([class*="ui-"]),a:not([class*="ui-"]),button:not([class*="ui-"]) { ._color-var(black-muted); }
         }
     }
 

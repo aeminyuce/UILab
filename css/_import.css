@@ -12,8 +12,8 @@
   --btn-ghost-hover-bg: hsla(0, 0%, 0%, 0.075);
   --border-light-color: hsla(0, 0%, 0%, 0.045);
   --border-dark-color: hsla(0, 0%, 0%, 0.35);
-  --dark: hsla(0, 0%, 0%, 0.35);
-  --x-dark: hsla(0, 0%, 0%, 0.5);
+  --black-muted: hsla(0, 0%, 0%, 0.35);
+  --black-50: hsla(0, 0%, 0%, 0.5);
   --code-color: hsl(345, 69%, 46%);
   --code-bg: hsl(343, 37%, 96%);
   --dropdown-list-selected-bg: hsla(0, 0%, 0%, 0.075);
@@ -86,8 +86,8 @@
   --btn-ghost-hover-bg: hsla(0, 0%, 100%, 0.075);
   --border-light-color: hsla(0, 0%, 100%, 0.065);
   --border-dark-color: hsla(0, 0%, 100%, 0.25);
-  --dark: hsla(0, 0%, 100%, 0.72);
-  --x-dark: hsla(0, 0%, 100%, 0.87);
+  --black-muted: hsla(0, 0%, 100%, 0.72);
+  --black-50: hsla(0, 0%, 100%, 0.87);
   --code-color: hsl(0, 0%, 100%);
   --code-bg: hsl(345, 69%, 46%);
   --dropdown-list-selected-bg: hsla(0, 0%, 100%, 0.075);
@@ -3603,14 +3603,14 @@ a {
 .color-black-50 a:not([class*="ui-"]),
 .color-black-50 button:not([class*="ui-"]) {
   color: hsla(0, 0%, 0%, 0.5);
-  color: var(--x-dark);
+  color: var(--black-50);
 }
 .color-black-muted,
 .color-black-muted .icon:not([class*="ui-"]),
 .color-black-muted a:not([class*="ui-"]),
 .color-black-muted button:not([class*="ui-"]) {
   color: hsla(0, 0%, 0%, 0.35);
-  color: var(--dark);
+  color: var(--black-muted);
 }
 .color-green,
 .color-green .icon:not([class*="ui-"]),
