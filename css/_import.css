@@ -3595,22 +3595,22 @@ a {
 .color-black .icon:not([class*="ui-"]),
 .color-black a:not([class*="ui-"]),
 .color-black button:not([class*="ui-"]) {
-  color: hsl(0, 0%, 0%);
-  color: var(--black);
+  color: hsl(0, 0%, 0%) !important;
+  color: var(--black) !important;
 }
 .color-black-50,
 .color-black-50 .icon:not([class*="ui-"]),
 .color-black-50 a:not([class*="ui-"]),
 .color-black-50 button:not([class*="ui-"]) {
-  color: hsla(0, 0%, 0%, 0.5);
-  color: var(--black-50);
+  color: hsla(0, 0%, 0%, 0.5) !important;
+  color: var(--black-50) !important;
 }
 .color-black-muted,
 .color-black-muted .icon:not([class*="ui-"]),
 .color-black-muted a:not([class*="ui-"]),
 .color-black-muted button:not([class*="ui-"]) {
-  color: hsla(0, 0%, 0%, 0.35);
-  color: var(--black-muted);
+  color: hsla(0, 0%, 0%, 0.35) !important;
+  color: var(--black-muted) !important;
 }
 .color-green,
 .color-green .icon:not([class*="ui-"]),
@@ -3622,7 +3622,7 @@ a {
 .color-yellow .icon:not([class*="ui-"]),
 .color-yellow a:not([class*="ui-"]),
 .color-yellow button:not([class*="ui-"]) {
-  color: hsl(42, 100%, 50%) !important;
+  color: hsl(42, 100%, 45%) !important;
 }
 .color-orange,
 .color-orange .icon:not([class*="ui-"]),
@@ -5285,7 +5285,7 @@ label.custom {
   transform: translate(-125%, -50%);
 }
 .switch-custom input:indeterminate + .state {
-  background-color: hsl(42, 100%, 50%);
+  background-color: hsl(42, 100%, 45%);
 }
 html:not(.mobile) .switch-custom:hover .state {
   width: 18px;
@@ -5451,14 +5451,14 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + .state {
 .warning .check-custom,
 .warning .radio-custom,
 .warning .switch-custom {
-  background-color: hsla(42, 100%, 50%, 0.1) !important;
-  border-color: hsl(42, 100%, 50%) !important;
+  background-color: hsla(42, 100%, 45%, 0.1) !important;
+  border-color: hsl(42, 100%, 45%) !important;
 }
 .warning:not(.form-holder):not(.required-accept):not(.hint),
 .warning label.check,
 .warning label.radio {
-  background-color: hsla(42, 100%, 50%, 0.1) !important;
-  border-color: hsl(42, 100%, 50%) !important;
+  background-color: hsla(42, 100%, 45%, 0.1) !important;
+  border-color: hsl(42, 100%, 45%) !important;
 }
 .form-light {
   border-color: hsla(0, 0%, 100%, 0.175) !important;
@@ -5482,7 +5482,7 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + .state {
   color: hsl(0, 74%, 55%);
 }
 .hint.warning {
-  color: hsl(42, 100%, 50%);
+  color: hsl(42, 100%, 45%);
 }
 .required-msg {
   color: hsl(0, 74%, 55%);
@@ -5873,7 +5873,7 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + .state {
 }
 [data-counter].warning:before {
   color: hsl(0, 0%, 100%) !important;
-  background-color: hsla(42, 100%, 66%, 0.65) !important;
+  background-color: hsla(42, 100%, 61%, 0.65) !important;
 }
 /* autocomplete */
 .ease-autocomplete {
@@ -6318,13 +6318,13 @@ html:not(.mobile) .list-group > ul > li > a:hover .list-icon {
   border-radius: 0 0 6px 6px;
 }
 .card-info {
-  border-color: hsl(0, 0%, 80%);
+  border-color: hsl(0, 0%, 70%);
 }
 .card-success {
   border-color: hsl(142, 82%, 42%);
 }
 .card-warning {
-  border-color: hsl(42, 100%, 50%);
+  border-color: hsl(42, 100%, 45%);
 }
 .card-danger {
   border-color: hsl(30, 100%, 50%);
@@ -8021,7 +8021,7 @@ html:not(.mobile) .alerts-msg:hover {
   background-color: hsl(142, 82%, 42%) !important;
 }
 .alerts-msg.msg-warning {
-  background-color: hsl(42, 100%, 50%) !important;
+  background-color: hsl(42, 100%, 45%) !important;
 }
 .alerts-msg.msg-danger {
   background-color: hsl(0, 74%, 55%) !important;
@@ -8723,7 +8723,7 @@ html:not(.mobile) .carousel-gallery .detail:not(.detail-loader) img:hover {
   cursor: pointer;
 }
 .carousel-gallery .thumbs .img.selected {
-  border-color: hsl(42, 100%, 50%);
+  border-color: hsl(42, 100%, 45%);
 }
 html:not(.mobile) .carousel-gallery .thumbs .img:not(.selected):not(:hover) {
   opacity: 0.65;
@@ -8829,7 +8829,7 @@ html:not(.mobile) .carousel-gallery .thumbs .img:not(.selected):not(:hover) {
   background-color: var(--data-list-stripe-bg);
 }
 .data-list .data-content.checked {
-  background-color: hsla(42, 100%, 50%, 0.15) !important;
+  background-color: hsla(42, 100%, 45%, 0.15) !important;
 }
 .data-list > .row,
 .data-list .data-content > .row {
@@ -9936,51 +9936,51 @@ html:not(.mobile) .photo-preview .preview-next:hover {
 }
 .theme-gray.ui-x-light,
 .theme-gray .ui-x-light:not([class*="theme-"]) {
-  background-color: hsla(0, 0%, 80%, 0.15);
+  background-color: hsla(0, 0%, 70%, 0.15);
 }
 html:not(.mobile) .theme-gray.ui-x-light.hover:hover,
 html:not(.mobile) .theme-gray .ui-x-light:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-gray.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-gray .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(0, 0%, 80%, 0.5);
+  background-color: hsla(0, 0%, 70%, 0.5);
 }
 .theme-gray.ui-light,
 .theme-gray .ui-light:not([class*="theme-"]) {
-  background-color: hsla(0, 0%, 80%, 0.25);
+  background-color: hsla(0, 0%, 70%, 0.25);
 }
 html:not(.mobile) .theme-gray.ui-light.hover:hover,
 html:not(.mobile) .theme-gray .ui-light:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-gray.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-gray .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(0, 0%, 80%, 0.5);
+  background-color: hsla(0, 0%, 70%, 0.5);
 }
 .theme-gray.ui-dark,
 .theme-gray .ui-dark:not([class*="theme-"]) {
-  background-color: hsl(0, 0%, 80%);
+  background-color: hsl(0, 0%, 70%);
 }
 html:not(.mobile) .theme-gray.ui-dark.hover:hover,
 html:not(.mobile) .theme-gray .ui-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-gray.ui-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-gray .ui-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(0, 0%, 95%);
+  background-color: hsl(0, 0%, 85%);
 }
 .theme-gray.ui-x-dark,
 .theme-gray .ui-x-dark:not([class*="theme-"]) {
-  background-color: hsl(0, 0%, 55%);
+  background-color: hsl(0, 0%, 45%);
 }
 html:not(.mobile) .theme-gray.ui-x-dark.hover:hover,
 html:not(.mobile) .theme-gray .ui-x-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-gray.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-gray .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 90%);
 }
 .theme-gray.ui-color,
 .theme-gray .ui-color:not([class*="theme-"]) {
-  color: hsl(0, 0%, 80%);
+  color: hsl(0, 0%, 70%);
 }
 .theme-gray.ui-border,
 .theme-gray .ui-border:not([class*="theme-"]) {
-  border-color: hsl(0, 0%, 80%);
+  border-color: hsl(0, 0%, 70%);
 }
 .theme-green.ui-x-light,
 .theme-green .ui-x-light:not([class*="theme-"]) {
@@ -10032,51 +10032,51 @@ html:not(.mobile) .theme-green .ui-x-dark:not([class*="theme-"]).btn:not(.btn-pa
 }
 .theme-yellow.ui-x-light,
 .theme-yellow .ui-x-light:not([class*="theme-"]) {
-  background-color: hsla(42, 100%, 50%, 0.15);
+  background-color: hsla(42, 100%, 45%, 0.15);
 }
 html:not(.mobile) .theme-yellow.ui-x-light.hover:hover,
 html:not(.mobile) .theme-yellow .ui-x-light:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-yellow.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-yellow .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(42, 100%, 50%, 0.5);
+  background-color: hsla(42, 100%, 45%, 0.5);
 }
 .theme-yellow.ui-light,
 .theme-yellow .ui-light:not([class*="theme-"]) {
-  background-color: hsla(42, 100%, 50%, 0.25);
+  background-color: hsla(42, 100%, 45%, 0.25);
 }
 html:not(.mobile) .theme-yellow.ui-light.hover:hover,
 html:not(.mobile) .theme-yellow .ui-light:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-yellow.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-yellow .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(42, 100%, 50%, 0.5);
+  background-color: hsla(42, 100%, 45%, 0.5);
 }
 .theme-yellow.ui-dark,
 .theme-yellow .ui-dark:not([class*="theme-"]) {
-  background-color: hsl(42, 100%, 50%);
+  background-color: hsl(42, 100%, 45%);
 }
 html:not(.mobile) .theme-yellow.ui-dark.hover:hover,
 html:not(.mobile) .theme-yellow .ui-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-yellow.ui-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-yellow .ui-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(42, 100%, 65%);
+  background-color: hsl(42, 100%, 60%);
 }
 .theme-yellow.ui-x-dark,
 .theme-yellow .ui-x-dark:not([class*="theme-"]) {
-  background-color: hsl(42, 100%, 25%);
+  background-color: hsl(42, 100%, 20%);
 }
 html:not(.mobile) .theme-yellow.ui-x-dark.hover:hover,
 html:not(.mobile) .theme-yellow .ui-x-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-yellow.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-yellow .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(42, 100%, 70%);
+  background-color: hsl(42, 100%, 65%);
 }
 .theme-yellow.ui-color,
 .theme-yellow .ui-color:not([class*="theme-"]) {
-  color: hsl(42, 100%, 50%);
+  color: hsl(42, 100%, 45%);
 }
 .theme-yellow.ui-border,
 .theme-yellow .ui-border:not([class*="theme-"]) {
-  border-color: hsl(42, 100%, 50%);
+  border-color: hsl(42, 100%, 45%);
 }
 .theme-orange.ui-x-light,
 .theme-orange .ui-x-light:not([class*="theme-"]) {
