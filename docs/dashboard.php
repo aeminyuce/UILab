@@ -640,9 +640,9 @@
                                                 <div class="col-5">
                                                     <div class="text text-icon-l round border-dual ease-form">
                                                         <svg class="icon"><use href="#at"/></svg>
-                                                        <input class="required number" type="email" placeholder="123-123-1234">
+                                                        <input class="required email" type="email">
                                                     </div>
-                                                    <p class="required-msg">Enter your mail.</p>
+                                                    <p class="required-msg">Enter a valid email.</p>
                                                 </div>
 
                                                 <div class="col-3 offset-2">
