@@ -5147,7 +5147,7 @@ html:not(.mobile) .dropdown ul.content > li:not(.holder):hover {
 }
 .file {
   line-height: normal;
-  height: 32px;
+  height: 28px;
   border: solid 1px hsla(0, 0%, 0%, 0.15);
   border: solid 1px var(--border-color);
   overflow: hidden;
@@ -5155,7 +5155,7 @@ html:not(.mobile) .dropdown ul.content > li:not(.holder):hover {
   position: relative;
 }
 .file.border-dual {
-  height: 36px;
+  height: 32px;
 }
 .file input {
   vertical-align: middle;
@@ -5173,8 +5173,15 @@ html:not(.mobile) .dropdown ul.content > li:not(.holder):hover {
   text-overflow: ellipsis;
   white-space: nowrap;
   min-width: 125px;
+  height: 28px;
+  line-height: 14px;
   overflow: hidden;
   float: left;
+}
+.file .btn .icon {
+  width: 14px;
+  height: 14px;
+  stroke-width: 36px;
 }
 .file.round .btn {
   border-radius: 3px 0 0 3px;
@@ -5182,7 +5189,7 @@ html:not(.mobile) .dropdown ul.content > li:not(.holder):hover {
 .file > span:not(.btn) {
   white-space: nowrap;
   text-overflow: ellipsis;
-  line-height: 32px;
+  line-height: 28px;
   width: 100%;
   padding-right: 10px;
   padding-left: 135px;
@@ -5750,14 +5757,23 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + .state {
   stroke-width: 30px;
 }
 .form-lg .file {
-  height: 42px;
+  height: 38px;
 }
 .form-lg .file.border-dual {
-  height: 46px;
+  height: 42px;
+}
+.form-lg .file .btn {
+  height: 38px;
+  line-height: 18px;
+}
+.form-lg .file .btn .icon {
+  width: 18px;
+  height: 18px;
+  stroke-width: 32px;
 }
 .form-lg .file > span:not(.btn) {
   font-size: 16px;
-  line-height: 42px;
+  line-height: 38px;
 }
 @media (min-width: 960px) {
   .form-grid {

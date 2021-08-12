@@ -174,15 +174,19 @@
 .check,.radio { vertical-align: middle; display: inline-block; }
 
 .file {
-    line-height: normal; height: @btn-default; ._border-var(); overflow: hidden; display: block; position: relative;
+    line-height: normal; height: (@btn-default - 4); ._border-var(); overflow: hidden; display: block; position: relative;
 
-    &.border-dual { height: (@btn-default + @border-dual * 2); }
+    &.border-dual { height: ((@btn-default - 4) + @border-dual * 2); }
     input { vertical-align: middle; width: 100%; overflow: hidden; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 3; opacity: 0; } // don't change z-index!
-    .btn { text-overflow: ellipsis; white-space: nowrap; min-width: @file-btn-width; overflow: hidden; float: left; }
+    .btn {
+        text-overflow: ellipsis; white-space: nowrap; min-width: @file-btn-width; height: (@btn-default - 4); line-height: ((@btn-default - 4) - @btn-default-padding * 2); overflow: hidden; float: left;
+
+        .icon { ._icon((@btn-default-icon - 4)); }
+    }
     &.round {
         .btn { border-radius: (@round / 2) 0 0 (@round / 2); }
     }
-    & > span:not(.btn) { white-space: nowrap; text-overflow: ellipsis; line-height: @btn-default; width: 100%; padding-right: (@form-padding * 2); padding-left: (@file-btn-width + @form-padding * 2); overflow: hidden; display: block; position: absolute; }
+    & > span:not(.btn) { white-space: nowrap; text-overflow: ellipsis; line-height: (@btn-default - 4); width: 100%; padding-right: (@form-padding * 2); padding-left: (@file-btn-width + @form-padding * 2); overflow: hidden; display: block; position: absolute; }
     html:not(.mobile) &:hover {
         .btn { ._bg-var(btn-hover-bg); }
     }
@@ -519,10 +523,15 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
     }
 
     .file {
-        height: @btn-lg;
+        height: (@btn-lg - 4);
 
-        &.border-dual { height: (@btn-lg + @border-dual * 2); }
-        & > span:not(.btn) { font-size: @large; line-height: @btn-lg; }
+        &.border-dual { height: ((@btn-lg - 4) + @border-dual * 2); }
+        .btn {
+            height: (@btn-lg - 4); line-height: ((@btn-lg - 4) - @btn-lg-padding * 2);
+
+            .icon { ._icon((@btn-lg-icon - 4)); }
+        }
+        & > span:not(.btn) { font-size: @large; line-height: (@btn-lg - 4); }
     }
 }
 
