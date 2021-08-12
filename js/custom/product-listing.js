@@ -10,7 +10,7 @@ lineCharts.rows = 4; // set number of rows
     lineCharts.showBgGrid = false; // set showing bg grid
     lineCharts.showInfo = false; // set showing info
 
-    alerts.messageTheme = 'theme-default2 ui-dark';
+    alerts.messageTheme = 'theme-default2 ui-bg-dark-100';
 
     events.onload(function () {
         events.on('.load-more', 'click', function () {
@@ -35,7 +35,7 @@ lineCharts.rows = 4; // set number of rows
 
                             alerts.message({
                                 msg: 'Products loaded!',
-                                theme: 'theme-default2 ui-dark'
+                                theme: 'theme-default2 ui-bg-dark-100'
                             });
 
                             loadingMask.toggle(that);

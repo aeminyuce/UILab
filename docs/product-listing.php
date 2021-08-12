@@ -9,7 +9,7 @@
                 <div class="add-mobile-menu-r">
 
                     <div class="card padding-15 round shadow-lg">
-                        <div data-src="json/headphones.json" data-val="name" class="autocomplete text text-icon-both round no-border theme-gray ui-light ease-form has-clear">
+                        <div data-src="json/headphones.json" data-val="name" class="autocomplete text text-icon-both round no-border theme-gray ui-bg-light-300 ease-form has-clear">
                             <svg class="icon text-icon-l"><use href="#search"/></svg>
                             <button type="button" class="clear-form">
                                 <svg class="icon"><use href="#remove"/></svg>
@@ -94,7 +94,7 @@
                             <label class="custom block">
                                 <span class="switch-custom right round ease-form">
                                     <input type="checkbox" checked>
-                                    <i class="state ui-dark"></i>
+                                    <i class="state ui-bg-dark-100"></i>
                                 </span>
                                 <svg class="icon margin-5-r"><use href="#truck"/></svg>
                                 Fast Delivery
@@ -103,7 +103,7 @@
                             <label class="custom block">
                                 <span class="switch-custom right round ease-form">
                                     <input type="checkbox" checked>
-                                    <i class="state ui-dark"></i>
+                                    <i class="state ui-bg-dark-100"></i>
                                 </span>
                                 <svg class="icon margin-5-r"><use href="#check-badge"/></svg>
                                 Deals
@@ -117,28 +117,28 @@
                             <label class="custom block">
                                 <span class="check-custom round ease-form">
                                     <input type="checkbox" checked>
-                                    <i class="state ui-dark"></i>
+                                    <i class="state ui-bg-dark-100"></i>
                                 </span>
                                 Wireless <span class="color-black-muted">4</span>
                             </label>
                             <label class="custom block">
                                 <span class="check-custom round ease-form">
                                     <input type="checkbox" checked>
-                                    <i class="state ui-dark"></i>
+                                    <i class="state ui-bg-dark-100"></i>
                                 </span>
                                 Bluetooth <span class="color-black-muted">11</span>
                             </label>
                             <label class="custom block">
                                 <span class="check-custom round ease-form">
                                     <input type="checkbox" checked>
-                                    <i class="state ui-dark"></i>
+                                    <i class="state ui-bg-dark-100"></i>
                                 </span>
                                 Wired <span class="color-black-muted">9</span>
                             </label>
                             <label class="custom block">
                                 <span class="check-custom round ease-form">
                                     <input type="checkbox">
-                                    <i class="state ui-dark"></i>
+                                    <i class="state ui-bg-dark-100"></i>
                                 </span>
                                 Radio Channel <span class="color-black-muted">17</span>
                             </label>
@@ -152,7 +152,7 @@
                         </div>
 
                         <div class="padding-15">
-                            <button type="submit" class="btn btn-lg block round ui-dark ease-btn"><b>SEARCH</b></button>
+                            <button type="submit" class="btn btn-lg block round ui-bg-dark-100 ease-btn"><b>SEARCH</b></button>
                         </div>
 
                     </div>
@@ -224,7 +224,7 @@
                             <span class="large">Found <b>47</b> and displaying <b>9</b> products.</span>
                         </div>
                         <div class="col-6 align-r sm-no-padding-t">
-                            <div class="select round form-inline no-border theme-gray ui-light ease-form">
+                            <div class="select round form-inline no-border theme-gray ui-bg-light-300 ease-form">
                                 <svg class="icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="1" checked>Sort by</option>
@@ -233,7 +233,7 @@
                                     <option value="4">Price (High to Low)</option>
                                 </select>
                             </div>
-                            <div class="select round form-inline no-border theme-gray ui-light ease-form">
+                            <div class="select round form-inline no-border theme-gray ui-bg-light-300 ease-form">
                                 <svg class="icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="12" checked>Show 9</option>
@@ -243,7 +243,7 @@
                             </div>
                             <span class="sp-10 visible-xs"></span>
                             <span class="align-c theme-default2 ease-1st-btn">
-                                <button class="btn btn-square round ui-dark">
+                                <button class="btn btn-square round ui-bg-dark-100">
                                     <svg class="icon"><use href="#grid-column"/></svg>
                                 </button>
                                 <button class="btn btn-square round">

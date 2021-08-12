@@ -23,14 +23,14 @@
                             Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus.<br>
                             In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
                         </div>
-                        <div class="card-side padding-15 theme-gray ui-x-light">
+                        <div class="card-side padding-15 theme-gray ui-bg-light-100">
                             <h5>Title</h5>
                         </div>
                         <div class="card-side padding-15">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.<br>
                             In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
                         </div>
-                        <div class="card-side padding-15 theme-gray ui-x-light">
+                        <div class="card-side padding-15 theme-gray ui-bg-light-100">
                             Card Footer
                         </div>
                     </div>
@@ -45,8 +45,8 @@
                         <div class="card-side padding-15 align-r sm-align-c border-t ease-2nd-btn">
                             <form action="#">
                                 <button type="button" class="btn padding-30-h btn-ghost border-dual circle">Cancel</button>
-                                <button type="submit" class="btn padding-30-h circle theme-yellow ui-dark">Show Later</button>
-                                <button type="submit" class="btn padding-30-h circle theme-green ui-dark">Accept</button>
+                                <button type="submit" class="btn padding-30-h circle theme-yellow ui-bg-dark-100">Show Later</button>
+                                <button type="submit" class="btn padding-30-h circle theme-green ui-bg-dark-100">Accept</button>
                             </form>
                         </div>
                     </div>
@@ -56,7 +56,7 @@
                 <h4>Card Alerts</h4>
                 <div class="padding-30-b">
 
-                    <div class="card theme-gray padding-15 round ui-light">
+                    <div class="card theme-gray padding-15 round ui-bg-light-300">
                         <button class="close-card ease-btn">
                             <svg class="icon"><use href="#remove"/></svg>
                         </button>
@@ -78,7 +78,7 @@
                         </div>
                         <div class="card-side padding-15 border-b">
 
-                            <div class="card theme-gray padding-15 round ui-light">
+                            <div class="card theme-gray padding-15 round ui-bg-light-300">
                             <button class="close-card ease-btn">
                                 <svg class="icon"><use href="#remove"/></svg>
                             </button>
@@ -100,7 +100,7 @@
                         </div>
                     </div>
 
-                    <div class="card theme-default padding-15 round ui-dark">
+                    <div class="card theme-default padding-15 round ui-bg-dark-100">
                         <button class="close-card ease-btn">
                             <svg class="icon"><use href="#remove"/></svg>
                         </button>
@@ -116,7 +116,7 @@
                         </div>
                     </div>
 
-                    <div class="card theme-default2 padding-15 round ui-dark">
+                    <div class="card theme-default2 padding-15 round ui-bg-dark-100">
                         <button class="close-card ease-btn">
                             <svg class="icon"><use href="#remove"/></svg>
                         </button>
@@ -132,7 +132,7 @@
                         </div>
                     </div>
 
-                    <div class="card theme-green padding-15 round ui-dark">
+                    <div class="card theme-green padding-15 round ui-bg-dark-100">
                         <button class="close-card ease-btn">
                             <svg class="icon"><use href="#remove"/></svg>
                         </button>
@@ -148,7 +148,7 @@
                         </div>
                     </div>
 
-                    <div class="card theme-yellow padding-15 round ui-dark">
+                    <div class="card theme-yellow padding-15 round ui-bg-dark-100">
                         <button class="close-card ease-btn">
                             <svg class="icon"><use href="#remove"/></svg>
                         </button>
@@ -164,7 +164,7 @@
                         </div>
                     </div>
 
-                    <div class="card theme-orange padding-15 round ui-dark">
+                    <div class="card theme-orange padding-15 round ui-bg-dark-100">
                         <button class="close-card ease-btn">
                             <svg class="icon"><use href="#remove"/></svg>
                         </button>
@@ -180,7 +180,7 @@
                         </div>
                     </div>
 
-                    <div class="card theme-red padding-15 round ui-dark">
+                    <div class="card theme-red padding-15 round ui-bg-dark-100">
                         <button class="close-card ease-btn">
                             <svg class="icon"><use href="#remove"/></svg>
                         </button>
@@ -248,7 +248,7 @@
                 </div>
 
                 <h4>Cards with Themes</h4>
-                <div class="card round theme-default2 ui-x-light ui-border">
+                <div class="card round theme-default2 ui-bg-light-100 ui-border">
                     <div class="card-side padding-30">
                         <h4>
                             <svg class="icon icon-xl ui-color"><use href="#help-fill"/></svg>
@@ -256,17 +256,17 @@
                         </h4>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
                         <span class="sp-15"></span>
-                        <a href="#" class="btn btn-xs-fluid circle ui-dark ease-btn">
+                        <a href="#" class="btn btn-xs-fluid circle ui-bg-dark-100 ease-btn">
                             Outgoing Link
                             <svg class="icon margin-5-l"><use href="#link"/></svg>
                         </a>
                     </div>
-                    <div class="card-side padding-30-h padding-15-v ui-light align-r xs-align-c">
+                    <div class="card-side padding-30-h padding-15-v ui-bg-light-300 align-r xs-align-c">
                         <a href="#" class="ui-color underline">Card Footer Link</a>
                     </div>
                 </div>
 
-                <div class="card round theme-default ui-x-light ui-border">
+                <div class="card round theme-default ui-bg-light-100 ui-border">
                     <div class="card-side padding-30">
                         <h4>
                             <svg class="icon icon-xl ui-color"><use href="#help"/></svg>
@@ -274,50 +274,50 @@
                         </h4>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
                         <span class="sp-15"></span>
-                        <a href="#" class="btn btn-xs-fluid circle ui-dark ease-btn">
+                        <a href="#" class="btn btn-xs-fluid circle ui-bg-dark-100 ease-btn">
                             Outgoing Link
                             <svg class="icon margin-5-l"><use href="#link"/></svg>
                         </a>
                     </div>
-                    <div class="card-side padding-30-h padding-15-v ui-light align-r xs-align-c">
+                    <div class="card-side padding-30-h padding-15-v ui-bg-light-300 align-r xs-align-c">
                         <a href="#" class="ui-color underline">Card Footer Link</a>
                     </div>
                 </div>
 
-                <div class="card-warning padding-30 round theme-default ui-x-light ui-border">
+                <div class="card-warning padding-30 round theme-default ui-bg-light-100 ui-border">
                     <h4>
                         <svg class="icon icon-xl ui-color"><use href="#help-fill"/></svg>
                         Message Title
                     </h4>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
                     <span class="sp-15"></span>
-                    <a href="#" class="btn btn-xs-fluid circle ui-dark ease-btn">
+                    <a href="#" class="btn btn-xs-fluid circle ui-bg-dark-100 ease-btn">
                         Outgoing Link
                         <svg class="icon margin-5-l"><use href="#link"/></svg>
                     </a>
                 </div>
 
-                <div class="card-warning padding-30 round theme-green ui-x-light ui-border">
+                <div class="card-warning padding-30 round theme-green ui-bg-light-100 ui-border">
                     <h4>
                         <svg class="icon icon-xl ui-color"><use href="#help"/></svg>
                         Message Title
                     </h4>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
                     <span class="sp-15"></span>
-                    <a href="#" class="btn btn-xs-fluid circle ui-dark ease-btn">
+                    <a href="#" class="btn btn-xs-fluid circle ui-bg-dark-100 ease-btn">
                         Outgoing Link
                         <svg class="icon margin-5-l"><use href="#link"/></svg>
                     </a>
                 </div>
 
-                <div class="card-warning padding-30 round theme-yellow ui-x-light ui-border">
+                <div class="card-warning padding-30 round theme-yellow ui-bg-light-100 ui-border">
                     <h4>
                         <svg class="icon icon-xl ui-color"><use href="#help-fill"/></svg>
                         Message Title
                     </h4>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
                     <span class="sp-15"></span>
-                    <a href="#" class="btn btn-xs-fluid circle ui-dark ease-btn">
+                    <a href="#" class="btn btn-xs-fluid circle ui-bg-dark-100 ease-btn">
                         Outgoing Link
                         <svg class="icon margin-5-l"><use href="#link"/></svg>
                     </a>

@@ -9,7 +9,7 @@
 
                         <div class="row no-row-gap-v row-gap-sm-h margin-2-v">
                             <div class="col-6 lg-fluid">
-                                <div class="text text-icon-both round no-border ui-x-light has-clear ease-form">
+                                <div class="text text-icon-both round no-border ui-bg-light-100 has-clear ease-form">
                                     <svg class="icon text-icon-l"><use href="#search"></svg>
                                     <button class="clear-form">
                                         <svg class="icon"><use href="#remove"/></svg>
@@ -19,7 +19,7 @@
                                 <span class="sp-5 hidden-lg"></span>
                             </div>
                             <div class="col-lg-3 col-6 no-fluid">
-                                <div class="select round no-border ui-x-light ease-form">
+                                <div class="select round no-border ui-bg-light-100 ease-form">
                                     <svg class="icon"><use href="#angle-down"></svg>
                                     <select class="data-filter" data-index="2">
                                         <option value="">Filter</option>
@@ -35,7 +35,7 @@
                             </div>
                             <div class="col-lg-3 col-6 no-fluid">
                                 <div class="dropdown menu-l block ease-dropdown">
-                                    <button class="btn align-l round ui-x-light">
+                                    <button class="btn align-l round ui-bg-light-100">
                                         <span class="value-toggle">
                                             <svg class="icon"><use href="#sort"></svg> Sort
                                         </span>
@@ -1228,7 +1228,7 @@
                             </div>
                         </div>
                         <div class="col-6 align-r">
-                            <div class="data-paging pagination ease-1st-btn" data-default="btn round" data-active="theme-default2 ui-dark"></div>
+                            <div class="data-paging pagination ease-1st-btn" data-default="btn round" data-active="theme-default2 ui-bg-dark-100"></div>
                         </div>
                     </div>
 
@@ -1813,7 +1813,7 @@
                             </div>
                         </div>
                         <div class="col-6 align-r">
-                            <div class="data-paging pagination ease-1st-btn" data-default="btn round" data-active="theme-default2 ui-dark"></div>
+                            <div class="data-paging pagination ease-1st-btn" data-default="btn round" data-active="theme-default2 ui-bg-dark-100"></div>
                         </div>
                     </div>
 

@@ -24,7 +24,7 @@
                             <button data-tooltip="b" data-only="desktop" title="Semibold" data-weight="semibold" class="btn round">
                                 <svg class="icon icon-bold no-opacity"><use href="#remove"/></svg>
                             </button>
-                            <button data-tooltip="b" data-only="desktop" title="Auto Weight" data-weight="" class="btn round ui-dark">
+                            <button data-tooltip="b" data-only="desktop" title="Auto Weight" data-weight="" class="btn round ui-bg-dark-100">
                                 Auto
                             </button>
                             <button data-tooltip="b" data-only="desktop" title="Light" data-weight="light" class="btn round">
@@ -38,7 +38,7 @@
                     <div class="col-8">
                         <h4 class="align-c margin-10-b">Change Size</h4>
                         <div class="btn-holder form-lg icon-modifiers margin-20-b theme-default2 form-lg ease-1st-btn">
-                            <button data-size="xxl" class="btn round ui-dark">XXL</button>
+                            <button data-size="xxl" class="btn round ui-bg-dark-100">XXL</button>
                             <button data-size="xl" class="btn round">XL</button>
                             <button data-size="lg" class="btn round">L</button>
                             <button data-size="" class="btn round">-</button>

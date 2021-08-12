@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 padding-30">
 
-                <div class="card-warning padding-30 round theme-default2 ui-x-light ui-border">
+                <div class="card-warning padding-30 round theme-default2 ui-bg-light-100 ui-border">
                     Ajax JS is a simple javascript to making XHR requests.
                 </div>
 

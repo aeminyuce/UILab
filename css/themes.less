@@ -6,32 +6,19 @@
 @set-dark:                              hsl(216, 19%, 5%);
 @set-x-dark:                            hsl(220, 18%, 3%);
 
-.ui-x-light {
+[class*="ui-bg-light-"] {
     ._color-var(black);
 
     .icon,a,button {
-        &:not([class*="ui-"]):not([class*="color-"]) { &:extend(.ui-x-light); }
+        &:not([class*="ui-"]):not([class*="color-"]) { &:extend([class*="ui-bg-light-"] ); }
     }
 }
-.ui-light {
-    &:extend(.ui-x-light);
 
-    .icon,a,button {
-    &:not([class*="ui-"]):not([class*="color-"]) { &:extend(.ui-light); }
-    }
-}
-.ui-dark {
+[class*="ui-bg-dark-"] {
     color: @white;
 
     .icon,a,button {
-    &:not([class*="ui-"]):not([class*="color-"]) { &:extend(.ui-dark); }
-    }
-}
-.ui-x-dark {
-    &:extend(.ui-dark);
-
-    .icon,a,button {
-    &:not([class*="ui-"]):not([class*="color-"]) { &:extend(.ui-x-dark); }
+        &:not([class*="ui-"]):not([class*="color-"]) { &:extend([class*="ui-bg-dark-"]); }
     }
 }
 

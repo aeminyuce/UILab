@@ -171,7 +171,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-12 theme-default ui-dark round">
+                    <div class="col-12 theme-default ui-bg-dark-100 round">
                         <div class="row">
                             <div class="col-6">
                                 <h5 class="font-bold align-c">Filled Line Charts</h5>
@@ -464,7 +464,7 @@
                     </div>
                 </div>
 
-                <div class="row row-gap-lg-v theme-default ui-dark round">
+                <div class="row row-gap-lg-v theme-default ui-bg-dark-100 round">
                     <div class="col-3 col-xs-6">
                         <div class="donut-chart ease-donut-chart">
                             <strong>HTML</strong>
@@ -622,7 +622,7 @@
                     </div>
                 </div>
 
-                <div class="row row-gap-lg-v theme-default ui-dark round">
+                <div class="row row-gap-lg-v theme-default ui-bg-dark-100 round">
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart">
                             <ul>

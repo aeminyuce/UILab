@@ -22,7 +22,7 @@
     &,&-t,&-r,&-b,&-l,&-h,&-v,&-dual,&-lg {
         ._border-var();
 
-        &[class*="ui-dark"],[class*="ui-dark"] & { border-color: @border-light-color-dark !important; }
+        &[class*="ui-bg-dark-"],[class*="ui-bg-dark-"] & { border-color: @border-light-color-dark !important; }
     }
 
     &-dual { border-width: @border-dual !important; }
@@ -34,7 +34,7 @@
     &-light {
         ._border-color-var(border-light-color) !important;
 
-        &[class*="ui-dark"],[class*="ui-dark"] & { ._border-color-var(border-light-color-dark) !important; }
+        &[class*="ui-bg-dark-"],[class*="ui-bg-dark-"] & { ._border-color-var(border-light-color-dark) !important; }
     }
     &-dark { ._border-color-var(border-dark-color) !important; }
 

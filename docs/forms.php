@@ -389,7 +389,7 @@
 
                             <div class="col-12 ease-1st-btn">
                                 <button type="reset" class="btn btn-xs-fluid round">Reset Form</button>
-                                <button type="submit" class="btn btn-xs-fluid round theme-default2 ui-dark">Submit Form</button>
+                                <button type="submit" class="btn btn-xs-fluid round theme-default2 ui-bg-dark-100">Submit Form</button>
                             </div>
                         </div>
 
@@ -533,7 +533,7 @@
                             <label class="custom">
                                 <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" checked>
-                                        <i class="state theme-default2 ui-dark"></i>
+                                        <i class="state theme-default2 ui-bg-dark-100"></i>
                                 </span>
                                 Custom Switch with Themes
                             </label>
@@ -1513,14 +1513,14 @@
 
                             <div class="col-9 push-3 ease-1st-btn">
                                 <button type="reset" class="btn btn-xs-fluid round">Reset Form</button>
-                                <button type="submit" class="btn btn-xs-fluid round theme-default2 ui-dark">Submit Form</button>
+                                <button type="submit" class="btn btn-xs-fluid round theme-default2 ui-bg-dark-100">Submit Form</button>
                             </div>
                         </div>
                     </form>
                 </div>
 
                 <h4>Forms in Dark Themes</h4>
-                <div class="padding-15 margin-30-b round theme-default ui-dark">
+                <div class="padding-15 margin-30-b round theme-default ui-bg-dark-100">
 
                     <div class="text form-light margin-10-b round border-dual ease-form">
                         <input type="text" placeholder="Placeholder">
@@ -1815,16 +1815,16 @@
                     </div>
                     <div class="col-9 ease-1st-form theme-gray">
 
-                        <div class="text margin-10-b round no-border ui-x-light">
+                        <div class="text margin-10-b round no-border ui-bg-light-100">
                             <input type="text">
                         </div>
-                        <div class="text error margin-10-b round no-border ui-x-light">
+                        <div class="text error margin-10-b round no-border ui-bg-light-100">
                             <input type="text" placeholder="Error Form">
                         </div>
-                        <div class="text warning margin-10-b round no-border ui-x-light">
+                        <div class="text warning margin-10-b round no-border ui-bg-light-100">
                             <input type="text" placeholder="Warning Form">
                         </div>
-                        <div class="select margin-10-b round no-border ui-x-light">
+                        <div class="select margin-10-b round no-border ui-bg-light-100">
                             <svg class="icon"><use href="#angle-down"/></svg>
                             <select>
                                 <option value="">Select</option>
@@ -1833,31 +1833,31 @@
                             </select>
                         </div>
 
-                        <div class="textarea margin-10-b round no-border ui-x-light">
+                        <div class="textarea margin-10-b round no-border ui-bg-light-100">
                             <textarea placeholder="Textarea"></textarea>
                         </div>
-                        <div class="textarea toggle-textarea margin-10-b round no-border ui-x-light">
+                        <div class="textarea toggle-textarea margin-10-b round no-border ui-bg-light-100">
                             <textarea placeholder="Toggle Textarea"></textarea>
                         </div>
 
                         <label class="custom">
-                            <span class="check-custom ui-x-light">
+                            <span class="check-custom ui-bg-light-100">
                                 <input type="checkbox" checked>
-                                <i class="state ui-dark"></i>
+                                <i class="state ui-bg-dark-100"></i>
                             </span>
                             <b>Custom Checkbox</b>
                         </label>
                         <label class="custom">
-                            <span class="radio-custom ui-x-light">
+                            <span class="radio-custom ui-bg-light-100">
                                 <input type="radio" checked>
-                                <i class="state ui-dark"></i>
+                                <i class="state ui-bg-dark-100"></i>
                             </span>
                             <b>Custom Radio</b>
                         </label>
                         <label class="custom">
-                            <span class="switch-custom ui-x-light">
+                            <span class="switch-custom ui-bg-light-100">
                                 <input type="checkbox" checked>
-                                <i class="state ui-dark"></i>
+                                <i class="state ui-bg-dark-100"></i>
                             </span>
                             <b>Custom Switch</b>
                         </label>

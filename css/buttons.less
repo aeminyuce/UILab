@@ -62,7 +62,7 @@
     &-ghost:not(.btn-show) {
         &:not(:hover) { background-color: @no-color !important; }
 
-        &.ui-dark,&.ui-x-dark {
+        &[class*="ui-bg-dark-"] {
             &:not(.ui-color) {
                 &,.icon:not(.ui-color) { ._color-var(black); }
             }
@@ -86,17 +86,17 @@
         &:not(.toggle-icon) { vertical-align: bottom; ._icon(@btn-default-icon); }
         &:not(.no-opacity) { opacity: .45; }
     }
-    &.ui-dark,&.ui-x-dark {
+    &[class*="ui-bg-dark-"] {
         .icon { opacity: 1; }
     }
 
     html:not(.mobile) & {
-        &.ui-dark,&.ui-x-dark {
+        &[class*="ui-bg-dark-"] {
             &:hover .icon { opacity: 1 !important; }
         }
 
-        &:not([class*="ui-x-light"]):not([class*="ui-light"]):not([class*="ui-dark"]):not([class*="ui-x-dark"]):not(.btn-passive):hover { ._bg-var(btn-hover-bg); }
-        &.btn-ghost:not([class*="ui-x-light"]):not([class*="ui-light"]):not([class*="ui-dark"]):not([class*="ui-x-dark"]):not(.btn-passive):hover { ._bg-var(btn-ghost-hover-bg); }
+        &:not([class*="ui-bg-"]):not(.btn-passive):hover { ._bg-var(btn-hover-bg); }
+        &.btn-ghost:not([class*="ui-bg-"]):not(.btn-passive):hover { ._bg-var(btn-ghost-hover-bg); }
     }
 }
 

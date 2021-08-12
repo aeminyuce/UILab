@@ -46,40 +46,40 @@
                 <h4>Button Themes</h4>
                 <div class="row padding-30-b block-2nd form-lg ease-2nd-btn">
                     <div class="col-3 col-sm-6">
-                        <a class="btn theme-red ui-dark" href="#">Button</a>
+                        <a class="btn theme-red ui-bg-dark-100" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn round theme-orange ui-dark" href="#">Button</a>
+                        <a class="btn round theme-orange ui-bg-dark-100" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn circle theme-yellow ui-dark" href="#">Button</a>
+                        <a class="btn circle theme-yellow ui-bg-dark-100" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn circle border-dual theme-default ui-dark" href="#">Button</a>
+                        <a class="btn circle border-dual theme-default ui-bg-dark-100" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost theme-green ui-dark ui-color" href="#">Button</a>
+                        <a class="btn btn-ghost theme-green ui-bg-dark-100 ui-color" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost btn-ghost-border border-l border-lg theme-default2 ui-x-light ui-border" href="#">Button</a>
+                        <a class="btn btn-ghost btn-ghost-border border-l border-lg theme-default2 ui-bg-light-100 ui-border" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost border-b border-dual theme-default ui-x-light ui-border" href="#">Button</a>
+                        <a class="btn btn-ghost border-b border-dual theme-default ui-bg-light-100 ui-border" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost border-b border-lg theme-green ui-dark ui-border" href="#">Button</a>
+                        <a class="btn btn-ghost border-b border-lg theme-green ui-bg-dark-100 ui-border" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost-border border round theme-orange ui-dark" href="#">Button</a>
+                        <a class="btn btn-ghost-border border round theme-orange ui-bg-dark-100" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
                         <a class="btn btn-ghost border-dual circle theme-yellow ui-border ui-color" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost border theme-default2 ui-x-light ui-border ui-color" href="#">Button</a>
+                        <a class="btn btn-ghost border theme-default2 ui-bg-light-100 ui-border ui-color" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn border round theme-default2 ui-dark" href="#">Button</a>
+                        <a class="btn border round theme-default2 ui-bg-dark-100" href="#">Button</a>
                     </div>
                 </div>
 
@@ -149,19 +149,19 @@
 
                 <h4>Square Buttons</h4>
                 <div class="padding-30-b md-align-c theme-default2 ease-1st-btn">
-                    <a class="btn btn-square btn-xxs round ui-dark" href="#">
+                    <a class="btn btn-square btn-xxs round ui-bg-dark-100" href="#">
                         <svg class="icon"><use href="#trash"/></svg>
                     </a>
-                    <a class="btn btn-square btn-xs round ui-dark" href="#">
+                    <a class="btn btn-square btn-xs round ui-bg-dark-100" href="#">
                         <svg class="icon"><use href="#trash"/></svg>
                     </a>
-                    <a class="btn btn-square btn-sm round ui-dark" href="#">
+                    <a class="btn btn-square btn-sm round ui-bg-dark-100" href="#">
                         <svg class="icon"><use href="#trash"/></svg>
                     </a>
-                    <a class="btn btn-square round ui-dark" href="#">
+                    <a class="btn btn-square round ui-bg-dark-100" href="#">
                         <svg class="icon"><use href="#trash"/></svg>
                     </a>
-                    <a class="btn btn-square btn-lg round ui-dark" href="#">
+                    <a class="btn btn-square btn-lg round ui-bg-dark-100" href="#">
                         <svg class="icon"><use href="#trash"/></svg>
                     </a>
                 </div>
@@ -267,10 +267,10 @@
                 <h4>Block Level Buttons</h4>
                 <div class="row padding-30-b form-lg ease-2nd-btn">
                     <div class="col-6 align-c">
-                        <a class="btn btn-xs-fluid round theme-yellow ui-dark" href="#">Responsive Button</a>
+                        <a class="btn btn-xs-fluid round theme-yellow ui-bg-dark-100" href="#">Responsive Button</a>
                     </div>
                     <div class="col-6">
-                        <a class="btn block round theme-orange ui-dark" href="#">Block Level Button</a>
+                        <a class="btn block round theme-orange ui-bg-dark-100" href="#">Block Level Button</a>
                     </div>
                 </div>
 
@@ -305,16 +305,16 @@
                 <h4>Multi Buttons</h4>
                 <div class="row padding-30-b block-2nd theme-green ease-2nd-btn">
                     <div class="col-3 col-sm-6">
-                        <a href="#" class="btn btn-lg btn-multi round ui-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
+                        <a href="#" class="btn btn-lg btn-multi round ui-bg-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a href="#" class="btn btn-multi round ui-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
+                        <a href="#" class="btn btn-multi round ui-bg-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a href="#" class="btn btn-sm btn-multi round ui-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
+                        <a href="#" class="btn btn-sm btn-multi round ui-bg-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a href="#" class="btn btn-xs btn-multi round ui-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
+                        <a href="#" class="btn btn-xs btn-multi round ui-bg-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
                     </div>
                 </div>
 
@@ -329,7 +329,7 @@
                             <svg class="icon"><use href="#angle-left"/></svg>
                         </a>
                         <a class="btn btn-xs round" href="#">1</a>
-                        <a class="btn btn-xs btn-active round ui-dark" href="#">2</a>
+                        <a class="btn btn-xs btn-active round ui-bg-dark-100" href="#">2</a>
                         <a class="btn btn-xs round" href="#">3</a>
                         <a class="btn btn-xs round" href="#">4</a>
                         <a class="btn btn-xs btn-passive round" href="#">...</a>
@@ -350,7 +350,7 @@
                             <svg class="icon"><use href="#angle-left"/></svg>
                         </a>
                         <a class="btn btn-sm round" href="#">1</a>
-                        <a class="btn btn-sm btn-active round ui-dark" href="#">2</a>
+                        <a class="btn btn-sm btn-active round ui-bg-dark-100" href="#">2</a>
                         <a class="btn btn-sm round" href="#">3</a>
                         <a class="btn btn-sm round" href="#">4</a>
                         <a class="btn btn-sm btn-passive round" href="#">...</a>
@@ -371,7 +371,7 @@
                             <svg class="icon"><use href="#angle-left"/></svg>
                         </a>
                         <a class="btn round" href="#">1</a>
-                        <a class="btn btn-active round ui-dark" href="#">2</a>
+                        <a class="btn btn-active round ui-bg-dark-100" href="#">2</a>
                         <a class="btn round" href="#">3</a>
                         <a class="btn round" href="#">4</a>
                         <a class="btn btn-passive round" href="#">...</a>
@@ -467,20 +467,20 @@
                 <div class="row padding-30-b">
                     <div class="col-6">
                         <div class="btn-holder form-lg theme-default ease-1st-btn">
-                            <button class="btn ui-dark">1</button>
-                            <button class="btn ui-dark">2</button>
-                            <button class="btn ui-dark">3</button>
-                            <button class="btn ui-dark">4</button>
-                            <button class="btn ui-dark">5</button>
+                            <button class="btn ui-bg-dark-100">1</button>
+                            <button class="btn ui-bg-dark-100">2</button>
+                            <button class="btn ui-bg-dark-100">3</button>
+                            <button class="btn ui-bg-dark-100">4</button>
+                            <button class="btn ui-bg-dark-100">5</button>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="btn-holder form-lg theme-default2 ease-1st-btn">
-                            <button class="btn round ui-dark">1</button>
-                            <button class="btn round ui-dark">2</button>
-                            <button class="btn round ui-dark">3</button>
-                            <button class="btn round ui-dark">4</button>
-                            <button class="btn round ui-dark">5</button>
+                            <button class="btn round ui-bg-dark-100">1</button>
+                            <button class="btn round ui-bg-dark-100">2</button>
+                            <button class="btn round ui-bg-dark-100">3</button>
+                            <button class="btn round ui-bg-dark-100">4</button>
+                            <button class="btn round ui-bg-dark-100">5</button>
                         </div>
                     </div>
                     <div class="col-6">

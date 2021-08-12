@@ -6,45 +6,65 @@
 [data-theme="dark"] {
   --dashboard-app-bg: hsl(222, 13%, 15%);
 }
-.theme-app.ui-x-light,
-.theme-app .ui-x-light:not([class*="theme-"]) {
+.theme-app.ui-bg-light-100,
+.theme-app .ui-bg-light-100:not([class*="theme-"]) {
   background-color: hsla(214, 100%, 50%, 0.15);
 }
-html:not(.mobile) .theme-app.ui-x-light.hover:hover,
-html:not(.mobile) .theme-app .ui-x-light:not([class*="theme-"]).hover:hover,
-html:not(.mobile) .theme-app.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) .theme-app .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(214, 100%, 50%, 0.5);
+.theme-app.ui-bg-light-200,
+.theme-app .ui-bg-light-200:not([class*="theme-"]) {
+  background-color: hsla(214, 100%, 50%, 0.2);
 }
-.theme-app.ui-light,
-.theme-app .ui-light:not([class*="theme-"]) {
+.theme-app.ui-bg-light-300,
+.theme-app .ui-bg-light-300:not([class*="theme-"]) {
   background-color: hsla(214, 100%, 50%, 0.25);
 }
-html:not(.mobile) .theme-app.ui-light.hover:hover,
-html:not(.mobile) .theme-app .ui-light:not([class*="theme-"]).hover:hover,
-html:not(.mobile) .theme-app.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) .theme-app .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(214, 100%, 50%, 0.5);
-}
-.theme-app.ui-dark,
-.theme-app .ui-dark:not([class*="theme-"]) {
+.theme-app.ui-bg-dark-100,
+.theme-app .ui-bg-dark-100:not([class*="theme-"]) {
   background-color: hsl(214, 100%, 50%);
 }
-html:not(.mobile) .theme-app.ui-dark.hover:hover,
-html:not(.mobile) .theme-app .ui-dark:not([class*="theme-"]).hover:hover,
-html:not(.mobile) .theme-app.ui-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) .theme-app .ui-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(214, 100%, 65%);
+.theme-app.ui-bg-dark-200,
+.theme-app .ui-bg-dark-200:not([class*="theme-"]) {
+  background-color: hsl(214, 100%, 35%);
 }
-.theme-app.ui-x-dark,
-.theme-app .ui-x-dark:not([class*="theme-"]) {
+.theme-app.ui-bg-dark-300,
+.theme-app .ui-bg-dark-300:not([class*="theme-"]) {
   background-color: hsl(214, 100%, 25%);
 }
-html:not(.mobile) .theme-app.ui-x-dark.hover:hover,
-html:not(.mobile) .theme-app .ui-x-dark:not([class*="theme-"]).hover:hover,
-html:not(.mobile) .theme-app.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) .theme-app .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+html:not(.mobile) .theme-app.ui-bg-light-100.hover:hover,
+html:not(.mobile) .theme-app .ui-bg-light-100:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-app.ui-bg-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-app .ui-bg-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsla(214, 100%, 50%, 0.3);
+}
+html:not(.mobile) .theme-app.ui-bg-light-200.hover:hover,
+html:not(.mobile) .theme-app .ui-bg-light-200:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-app.ui-bg-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-app .ui-bg-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsla(214, 100%, 50%, 0.4);
+}
+html:not(.mobile) .theme-app.ui-bg-light-300.hover:hover,
+html:not(.mobile) .theme-app .ui-bg-light-300:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-app.ui-bg-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-app .ui-bg-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsla(214, 100%, 50%, 0.5);
+}
+html:not(.mobile) .theme-app.ui-bg-dark-100.hover:hover,
+html:not(.mobile) .theme-app .ui-bg-dark-100:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-app.ui-bg-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-app .ui-bg-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsl(214, 100%, 65%);
+}
+html:not(.mobile) .theme-app.ui-bg-dark-200.hover:hover,
+html:not(.mobile) .theme-app .ui-bg-dark-200:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-app.ui-bg-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-app .ui-bg-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(214, 100%, 70%);
+}
+html:not(.mobile) .theme-app.ui-bg-dark-300.hover:hover,
+html:not(.mobile) .theme-app .ui-bg-dark-300:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-app.ui-bg-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-app .ui-bg-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsl(214, 100%, 75%);
 }
 .theme-app.ui-color,
 .theme-app .ui-color:not([class*="theme-"]) {
@@ -54,45 +74,65 @@ html:not(.mobile) .theme-app .ui-x-dark:not([class*="theme-"]).btn:not(.btn-pass
 .theme-app .ui-border:not([class*="theme-"]) {
   border-color: hsl(214, 100%, 50%);
 }
-.theme-app2.ui-x-light,
-.theme-app2 .ui-x-light:not([class*="theme-"]) {
+.theme-app2.ui-bg-light-100,
+.theme-app2 .ui-bg-light-100:not([class*="theme-"]) {
   background-color: hsla(349, 100%, 53%, 0.15);
 }
-html:not(.mobile) .theme-app2.ui-x-light.hover:hover,
-html:not(.mobile) .theme-app2 .ui-x-light:not([class*="theme-"]).hover:hover,
-html:not(.mobile) .theme-app2.ui-x-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) .theme-app2 .ui-x-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(349, 100%, 53%, 0.5);
+.theme-app2.ui-bg-light-200,
+.theme-app2 .ui-bg-light-200:not([class*="theme-"]) {
+  background-color: hsla(349, 100%, 53%, 0.2);
 }
-.theme-app2.ui-light,
-.theme-app2 .ui-light:not([class*="theme-"]) {
+.theme-app2.ui-bg-light-300,
+.theme-app2 .ui-bg-light-300:not([class*="theme-"]) {
   background-color: hsla(349, 100%, 53%, 0.25);
 }
-html:not(.mobile) .theme-app2.ui-light.hover:hover,
-html:not(.mobile) .theme-app2 .ui-light:not([class*="theme-"]).hover:hover,
-html:not(.mobile) .theme-app2.ui-light.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) .theme-app2 .ui-light:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(349, 100%, 53%, 0.5);
-}
-.theme-app2.ui-dark,
-.theme-app2 .ui-dark:not([class*="theme-"]) {
+.theme-app2.ui-bg-dark-100,
+.theme-app2 .ui-bg-dark-100:not([class*="theme-"]) {
   background-color: hsl(349, 100%, 53%);
 }
-html:not(.mobile) .theme-app2.ui-dark.hover:hover,
-html:not(.mobile) .theme-app2 .ui-dark:not([class*="theme-"]).hover:hover,
-html:not(.mobile) .theme-app2.ui-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) .theme-app2 .ui-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(349, 100%, 68%);
+.theme-app2.ui-bg-dark-200,
+.theme-app2 .ui-bg-dark-200:not([class*="theme-"]) {
+  background-color: hsl(349, 100%, 38%);
 }
-.theme-app2.ui-x-dark,
-.theme-app2 .ui-x-dark:not([class*="theme-"]) {
+.theme-app2.ui-bg-dark-300,
+.theme-app2 .ui-bg-dark-300:not([class*="theme-"]) {
   background-color: hsl(349, 100%, 28%);
 }
-html:not(.mobile) .theme-app2.ui-x-dark.hover:hover,
-html:not(.mobile) .theme-app2 .ui-x-dark:not([class*="theme-"]).hover:hover,
-html:not(.mobile) .theme-app2.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-html:not(.mobile) .theme-app2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+html:not(.mobile) .theme-app2.ui-bg-light-100.hover:hover,
+html:not(.mobile) .theme-app2 .ui-bg-light-100:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-app2.ui-bg-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-app2 .ui-bg-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsla(349, 100%, 53%, 0.3);
+}
+html:not(.mobile) .theme-app2.ui-bg-light-200.hover:hover,
+html:not(.mobile) .theme-app2 .ui-bg-light-200:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-app2.ui-bg-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-app2 .ui-bg-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsla(349, 100%, 53%, 0.4);
+}
+html:not(.mobile) .theme-app2.ui-bg-light-300.hover:hover,
+html:not(.mobile) .theme-app2 .ui-bg-light-300:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-app2.ui-bg-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-app2 .ui-bg-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsla(349, 100%, 53%, 0.5);
+}
+html:not(.mobile) .theme-app2.ui-bg-dark-100.hover:hover,
+html:not(.mobile) .theme-app2 .ui-bg-dark-100:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-app2.ui-bg-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-app2 .ui-bg-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsl(349, 100%, 68%);
+}
+html:not(.mobile) .theme-app2.ui-bg-dark-200.hover:hover,
+html:not(.mobile) .theme-app2 .ui-bg-dark-200:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-app2.ui-bg-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-app2 .ui-bg-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(349, 100%, 73%);
+}
+html:not(.mobile) .theme-app2.ui-bg-dark-300.hover:hover,
+html:not(.mobile) .theme-app2 .ui-bg-dark-300:not([class*="theme-"]).hover:hover,
+html:not(.mobile) .theme-app2.ui-bg-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+html:not(.mobile) .theme-app2 .ui-bg-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsl(349, 100%, 78%);
 }
 .theme-app2.ui-color,
 .theme-app2 .ui-color:not([class*="theme-"]) {

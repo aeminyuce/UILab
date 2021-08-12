@@ -15,7 +15,7 @@
 
                 <h4>Font Colors</h4>
                 <div class="padding-30-b">
-                    <div class="theme-gray ui-dark">
+                    <div class="theme-gray ui-bg-dark-100">
                         <span class="color-white">.color-white</span>
                         <span class="color-white">.color-white-50</span>
                         <span class="color-white-muted">.color-white-muted</span>
@@ -29,8 +29,6 @@
                     <span class="color-red">.color-red</span>
                     <span class="color-orange">.color-orange</span>
                     <span class="clearfix"></span>
-                    <span class="color-default">.color-default</span>
-                    <span class="color-default2">.color-default2</span>
                 </div>
 
                 <h4>Font Sizes</h4>

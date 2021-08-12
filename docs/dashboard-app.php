@@ -17,7 +17,7 @@
                         <div class="card-side padding-15 no-padding-b icons-no-opacity">
                             <div class="col-static no-fluid">
                                 <div class="col-50">
-                                    <button class="btn btn-ghost btn-square circle ui-x-light ease-btn" data-notifier>
+                                    <button class="btn btn-ghost btn-square circle ui-bg-light-100 ease-btn" data-notifier>
                                         <svg class="icon ui-color"><use href="#bell"/></svg>
                                     </button>
                                 </div>
@@ -27,7 +27,7 @@
                                     </div>
                                 </div>
                                 <div class="col-50 align-r">
-                                    <button class="btn btn-ghost btn-square circle ui-x-light ease-btn">
+                                    <button class="btn btn-ghost btn-square circle ui-bg-light-100 ease-btn">
                                         <svg class="icon ui-color"><use href="#settings"/></svg>
                                     </button>
                                 </div>
@@ -38,7 +38,7 @@
 
                             <div class="row row-gap-md no-fluid ease-2nd-btn">
                                 <div class="col-4">
-                                    <a class="btn btn-multi no-line-height padding-10-v block round ui-x-light" href="#">
+                                    <a class="btn btn-multi no-line-height padding-10-v block round ui-bg-light-100" href="#">
                                         <span class="ui-color x-largest">23</span>
                                         <span class="block">
                                             <span class="color-black-50 small font-ellipsis">Waiting</span>
@@ -46,7 +46,7 @@
                                     </a>
                                 </div>
                                 <div class="col-4">
-                                    <a class="btn btn-multi no-line-height padding-10-v block round ui-x-light" href="#">
+                                    <a class="btn btn-multi no-line-height padding-10-v block round ui-bg-light-100" href="#">
                                         <span class="ui-color x-largest">258</span>
                                         <span class="block">
                                             <span class="color-black-50 small font-ellipsis">Expert</span>
@@ -54,7 +54,7 @@
                                     </a>
                                 </div>
                                 <div class="col-4">
-                                    <a class="btn btn-multi no-line-height padding-10-v block round ui-x-light" href="#">
+                                    <a class="btn btn-multi no-line-height padding-10-v block round ui-bg-light-100" href="#">
                                         <span class="ui-color x-largest">49</span>
                                         <span class="block">
                                             <span class="color-black-50 small font-ellipsis">First Audit</span>
@@ -164,7 +164,7 @@
 
                                     <div class="slide-content list-group no-border padding-1-h">
                                         <ul class="has-photo-sm has-icon-sm ease-list-group">
-                                            <li class="round theme-gray ui-x-light">
+                                            <li class="round theme-gray ui-bg-light-100">
                                                 <a href="#">
                                                     <svg class="list-icon icon"><use href="#angle-right"/></svg>
                                                     <span class="img-photo-sm circle">
@@ -178,7 +178,7 @@
                                     </div>
                                     <div class="slide-content list-group no-border padding-1-h">
                                         <ul class="has-photo-sm has-icon-sm ease-list-group">
-                                            <li class="round theme-gray ui-x-light">
+                                            <li class="round theme-gray ui-bg-light-100">
                                                 <a href="#">
                                                     <svg class="list-icon icon"><use href="#angle-right"/></svg>
                                                     <span class="img-photo-sm circle">
@@ -192,7 +192,7 @@
                                     </div>
                                     <div class="slide-content list-group no-border padding-1-h">
                                         <ul class="has-photo-sm has-icon-sm ease-list-group">
-                                            <li class="round theme-gray ui-x-light">
+                                            <li class="round theme-gray ui-bg-light-100">
                                                 <a href="#">
                                                     <svg class="list-icon icon"><use href="#angle-right"/></svg>
                                                     <span class="img-photo-sm circle">
@@ -257,7 +257,7 @@
                         <div class="card-side padding-15 no-padding-b icons-no-opacity">
                             <div class="col-static no-fluid">
                                 <div class="col-50">
-                                    <button class="btn btn-ghost btn-square circle ui-x-light ease-btn" data-notifier>
+                                    <button class="btn btn-ghost btn-square circle ui-bg-light-100 ease-btn" data-notifier>
                                         <svg class="icon ui-color"><use href="#bell"/></svg>
                                     </button>
                                 </div>
@@ -267,7 +267,7 @@
                                     </div>
                                 </div>
                                 <div class="col-50 align-r">
-                                    <button class="btn btn-ghost btn-square circle ui-x-light ease-btn">
+                                    <button class="btn btn-ghost btn-square circle ui-bg-light-100 ease-btn">
                                         <svg class="icon ui-color"><use href="#settings"/></svg>
                                     </button>
                                 </div>
@@ -291,12 +291,12 @@
 
                                 <div class="row row-gap-xs no-fluid block-2nd ease-2nd-btn">
                                     <div class="col-5">
-                                        <button class="btn align-l circle-l ui-x-light" data-sort="1">
+                                        <button class="btn align-l circle-l ui-bg-light-100" data-sort="1">
                                             <svg class="icon"><use href="#sort"/></svg> Report
                                         </button>
                                     </div>
                                     <div class="col-7">
-                                        <button class="btn align-l circle-r ui-x-light" data-sort="2">
+                                        <button class="btn align-l circle-r ui-bg-light-100" data-sort="2">
                                             <svg class="icon"><use href="#sort"/></svg> Customer
                                         </button>
                                     </div>
@@ -313,7 +313,7 @@
                                                     <b class="color-black-muted">REP-701-2019</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
-                                                    <b class="xx-small circle padding-4-h padding-3-v ui-dark">SS</b>
+                                                    <b class="xx-small circle padding-4-h padding-3-v ui-bg-dark-100">SS</b>
                                                     <span class="margin-3-l">John Doe</span>
                                                 </div>
                                             </div>
@@ -338,7 +338,7 @@
                                                     <b class="color-black-muted">REP-616-2017</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
-                                                    <b class="xx-small circle padding-4-h padding-3-v ui-dark">SU</b>
+                                                    <b class="xx-small circle padding-4-h padding-3-v ui-bg-dark-100">SU</b>
                                                     <span class="margin-3-l">Mike Taylor</span>
                                                 </div>
                                             </div>
@@ -363,7 +363,7 @@
                                                     <b class="color-black-muted">REP-103-2018</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
-                                                    <b class="xx-small circle padding-4-h padding-3-v theme-app2 ui-dark">SD</b>
+                                                    <b class="xx-small circle padding-4-h padding-3-v theme-app2 ui-bg-dark-100">SD</b>
                                                     <span class="margin-3-l">Mary Doe</span>
                                                 </div>
                                             </div>
@@ -388,7 +388,7 @@
                                                     <b class="color-black-muted">REP-701-2019</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
-                                                    <b class="xx-small circle padding-4-h padding-3-v ui-dark">SS</b>
+                                                    <b class="xx-small circle padding-4-h padding-3-v ui-bg-dark-100">SS</b>
                                                     <span class="margin-3-l">John Doe</span>
                                                 </div>
                                             </div>
@@ -413,7 +413,7 @@
                                                     <b class="color-black-muted">REP-616-2017</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
-                                                    <b class="xx-small circle padding-4-h padding-3-v ui-dark">SU</b>
+                                                    <b class="xx-small circle padding-4-h padding-3-v ui-bg-dark-100">SU</b>
                                                     <span class="margin-3-l">Mike Taylor</span>
                                                 </div>
                                             </div>
@@ -438,7 +438,7 @@
                                                     <b class="color-black-muted">REP-103-2018</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
-                                                    <b class="xx-small circle padding-4-h padding-3-v theme-app2 ui-dark">SD</b>
+                                                    <b class="xx-small circle padding-4-h padding-3-v theme-app2 ui-bg-dark-100">SD</b>
                                                     <span class="margin-3-l">Mary Doe</span>
                                                 </div>
                                             </div>
@@ -463,7 +463,7 @@
                                                     <b class="color-black-muted">REP-701-2019</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
-                                                    <b class="xx-small circle padding-4-h padding-3-v ui-dark">SS</b>
+                                                    <b class="xx-small circle padding-4-h padding-3-v ui-bg-dark-100">SS</b>
                                                     <span class="margin-3-l">John Doe</span>
                                                 </div>
                                             </div>
@@ -488,7 +488,7 @@
                                                     <b class="color-black-muted">REP-616-2017</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
-                                                    <b class="xx-small circle padding-4-h padding-3-v ui-dark">SU</b>
+                                                    <b class="xx-small circle padding-4-h padding-3-v ui-bg-dark-100">SU</b>
                                                     <span class="margin-3-l">Mike Taylor</span>
                                                 </div>
                                             </div>
@@ -513,7 +513,7 @@
                                                     <b class="color-black-muted">REP-103-2018</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
-                                                    <b class="xx-small circle padding-4-h padding-3-v theme-app2 ui-dark">SD</b>
+                                                    <b class="xx-small circle padding-4-h padding-3-v theme-app2 ui-bg-dark-100">SD</b>
                                                     <span class="margin-3-l">Mary Doe</span>
                                                 </div>
                                             </div>
@@ -538,7 +538,7 @@
                                                     <b class="color-black-muted">REP-701-2019</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
-                                                    <b class="xx-small circle padding-4-h padding-3-v ui-dark">SS</b>
+                                                    <b class="xx-small circle padding-4-h padding-3-v ui-bg-dark-100">SS</b>
                                                     <span class="margin-3-l">John Doe</span>
                                                 </div>
                                             </div>
@@ -563,7 +563,7 @@
                                                     <b class="color-black-muted">REP-616-2017</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
-                                                    <b class="xx-small circle padding-4-h padding-3-v ui-dark">SU</b>
+                                                    <b class="xx-small circle padding-4-h padding-3-v ui-bg-dark-100">SU</b>
                                                     <span class="margin-3-l">Mike Taylor</span>
                                                 </div>
                                             </div>
@@ -588,7 +588,7 @@
                                                     <b class="color-black-muted">REP-103-2018</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
-                                                    <b class="xx-small circle padding-4-h padding-3-v theme-app2 ui-dark">SD</b>
+                                                    <b class="xx-small circle padding-4-h padding-3-v theme-app2 ui-bg-dark-100">SD</b>
                                                     <span class="margin-3-l">Mary Doe</span>
                                                 </div>
                                             </div>
@@ -656,7 +656,7 @@
                         <div class="card-side padding-15 no-padding-b icons-no-opacity">
                             <div class="col-static no-fluid">
                                 <div class="col-50">
-                                    <button class="btn btn-ghost btn-square circle ui-x-light ease-btn" data-notifier>
+                                    <button class="btn btn-ghost btn-square circle ui-bg-light-100 ease-btn" data-notifier>
                                         <svg class="icon ui-color"><use href="#bell"/></svg>
                                     </button>
                                 </div>
@@ -666,7 +666,7 @@
                                     </div>
                                 </div>
                                 <div class="col-50 align-r">
-                                    <button class="btn btn-ghost btn-square circle ui-x-light ease-btn">
+                                    <button class="btn btn-ghost btn-square circle ui-bg-light-100 ease-btn">
                                         <svg class="icon ui-color"><use href="#settings"/></svg>
                                     </button>
                                 </div>
@@ -685,21 +685,21 @@
                                         <img class="img-photo circle" src="img/profile-image2.jpg" alt="">
                                     </li>
                                     <li class="tab circle">
-                                        <span class="img-photo circle ui-x-light"><span>MT</span></span>
+                                        <span class="img-photo circle ui-bg-light-100"><span>MT</span></span>
                                     </li>
                                     <li class="tab circle">
                                         <img class="img-photo circle" src="img/profile-image3.jpg" alt="">
                                     </li>
                                     <li class="tab circle">
-                                        <span class="img-photo circle ui-x-light"><span>MD</span></span>
+                                        <span class="img-photo circle ui-bg-light-100"><span>MD</span></span>
                                     </li>
                                     <li class="tab circle">
-                                        <span class="img-photo circle ui-x-light"><span>JD</span></span>
+                                        <span class="img-photo circle ui-bg-light-100"><span>JD</span></span>
                                     </li>
                                 </ul>
 
                                 <div class="tab-content padding-10 border-dual open open-ease">
-                                    <div class="row no-fluid no-margin circle theme-gray ui-x-light">
+                                    <div class="row no-fluid no-margin circle theme-gray ui-bg-light-100">
                                         <div class="col-6">
                                             <h5 class="font-bold">John Doe</h5>
                                         </div>
@@ -713,40 +713,40 @@
                                     <ul class="messages list-custom margin-10-b scroll-v">
                                         <li class="left">
                                             <img class="img-photo-xs circle" src="img/profile-image.jpg" alt="">
-                                            <span class="ui-x-light">Hey</span>
+                                            <span class="ui-bg-light-100">Hey</span>
                                         </li>
                                         <li class="left">
-                                            <span class="ui-x-light">Did you check the latest reports?</span>
+                                            <span class="ui-bg-light-100">Did you check the latest reports?</span>
                                         </li>
                                         <li class="right">
-                                            <span class="ui-dark">Sorry</span>
+                                            <span class="ui-bg-dark-100">Sorry</span>
                                         </li>
                                         <li class="right">
-                                            <span class="ui-dark">Not yet!</span>
+                                            <span class="ui-bg-dark-100">Not yet!</span>
                                         </li>
                                         <li class="left">
                                             <img class="img-photo-xs circle" src="img/profile-image.jpg" alt="">
-                                            <span class="ui-x-light">Ok</span>
+                                            <span class="ui-bg-light-100">Ok</span>
                                         </li>
                                         <li class="left">
-                                            <span class="ui-x-light">I need them and i am waiting for you</span>
+                                            <span class="ui-bg-light-100">I need them and i am waiting for you</span>
                                         </li>
                                         <li class="right">
-                                            <span class="ui-dark">But, i  will get back to you as soon as possible.</span>
+                                            <span class="ui-bg-dark-100">But, i  will get back to you as soon as possible.</span>
                                         </li>
                                         <li class="left">
                                             <img class="img-photo-xs circle" src="img/profile-image.jpg" alt="">
-                                            <span class="ui-x-light">Ok i am waiting...</span>
+                                            <span class="ui-bg-light-100">Ok i am waiting...</span>
                                         </li>
                                         <li class="left">
                                             <img class="img-photo-xs circle" src="img/profile-image.jpg" alt="">
-                                            <span class="ui-x-light">Thank you</span>
+                                            <span class="ui-bg-light-100">Thank you</span>
                                         </li>
                                         <li class="right">
-                                            <span class="ui-dark">Ok</span>
+                                            <span class="ui-bg-dark-100">Ok</span>
                                         </li>
                                     </ul>
-                                    <div class="col-static no-fluid padding-5 circle theme-gray ui-x-light">
+                                    <div class="col-static no-fluid padding-5 circle theme-gray ui-bg-light-100">
                                         <div class="col-35">
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
@@ -759,7 +759,7 @@
                                     </div>
                                 </div>
                                 <div class="tab-content padding-10 border-dual">
-                                    <div class="row no-fluid no-margin circle theme-gray ui-x-light">
+                                    <div class="row no-fluid no-margin circle theme-gray ui-bg-light-100">
                                         <div class="col-6">
                                             <h5 class="font-bold">Mary Doe</h5>
                                         </div>
@@ -773,40 +773,40 @@
                                     <ul class="messages list-custom margin-10-b scroll-v">
                                         <li class="left">
                                             <img class="img-photo-xs circle" src="img/profile-image2.jpg" alt="">
-                                            <span class="ui-x-light">Hey</span>
+                                            <span class="ui-bg-light-100">Hey</span>
                                         </li>
                                         <li class="left">
-                                            <span class="ui-x-light">Did you check the latest reports?</span>
+                                            <span class="ui-bg-light-100">Did you check the latest reports?</span>
                                         </li>
                                         <li class="right">
-                                            <span class="ui-dark">Sorry</span>
+                                            <span class="ui-bg-dark-100">Sorry</span>
                                         </li>
                                         <li class="right">
-                                            <span class="ui-dark">Not yet!</span>
+                                            <span class="ui-bg-dark-100">Not yet!</span>
                                         </li>
                                         <li class="left">
                                             <img class="img-photo-xs circle" src="img/profile-image2.jpg" alt="">
-                                            <span class="ui-x-light">Ok</span>
+                                            <span class="ui-bg-light-100">Ok</span>
                                         </li>
                                         <li class="left">
-                                            <span class="ui-x-light">I need them and i am waiting for you</span>
+                                            <span class="ui-bg-light-100">I need them and i am waiting for you</span>
                                         </li>
                                         <li class="right">
-                                            <span class="ui-dark">But, i  will get back to you as soon as possible.</span>
+                                            <span class="ui-bg-dark-100">But, i  will get back to you as soon as possible.</span>
                                         </li>
                                         <li class="left">
                                             <img class="img-photo-xs circle" src="img/profile-image2.jpg" alt="">
-                                            <span class="ui-x-light">Ok i am waiting...</span>
+                                            <span class="ui-bg-light-100">Ok i am waiting...</span>
                                         </li>
                                         <li class="left">
                                             <img class="img-photo-xs circle" src="img/profile-image2.jpg" alt="">
-                                            <span class="ui-x-light">Thank you</span>
+                                            <span class="ui-bg-light-100">Thank you</span>
                                         </li>
                                         <li class="right">
-                                            <span class="ui-dark">Ok</span>
+                                            <span class="ui-bg-dark-100">Ok</span>
                                         </li>
                                     </ul>
-                                    <div class="col-static no-fluid padding-5 circle theme-gray ui-x-light">
+                                    <div class="col-static no-fluid padding-5 circle theme-gray ui-bg-light-100">
                                         <div class="col-35">
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
@@ -819,7 +819,7 @@
                                     </div>
                                 </div>
                                 <div class="tab-content padding-10 border-dual">
-                                    <div class="row no-fluid no-margin circle theme-gray ui-x-light">
+                                    <div class="row no-fluid no-margin circle theme-gray ui-bg-light-100">
                                         <div class="col-6">
                                             <h5 class="font-bold">Mike Taylor</h5>
                                         </div>
@@ -833,40 +833,40 @@
                                     <ul class="messages list-custom margin-10-b scroll-v">
                                         <li class="left">
                                             <span class="img-photo-xs circle"><span>HY</span></span>
-                                            <span class="ui-x-light">Hey</span>
+                                            <span class="ui-bg-light-100">Hey</span>
                                         </li>
                                         <li class="left">
-                                            <span class="ui-x-light">Did you check the latest reports?</span>
+                                            <span class="ui-bg-light-100">Did you check the latest reports?</span>
                                         </li>
                                         <li class="right">
-                                            <span class="ui-dark">Sorry</span>
+                                            <span class="ui-bg-dark-100">Sorry</span>
                                         </li>
                                         <li class="right">
-                                            <span class="ui-dark">Not yet!</span>
+                                            <span class="ui-bg-dark-100">Not yet!</span>
                                         </li>
                                         <li class="left">
                                             <span class="img-photo-xs circle"><span>HY</span></span>
-                                            <span class="ui-x-light">Ok</span>
+                                            <span class="ui-bg-light-100">Ok</span>
                                         </li>
                                         <li class="left">
-                                            <span class="ui-x-light">I need them and i am waiting for you</span>
+                                            <span class="ui-bg-light-100">I need them and i am waiting for you</span>
                                         </li>
                                         <li class="right">
-                                            <span class="ui-dark">But, i  will get back to you as soon as possible.</span>
+                                            <span class="ui-bg-dark-100">But, i  will get back to you as soon as possible.</span>
                                         </li>
                                         <li class="left">
                                             <span class="img-photo-xs circle"><span>HY</span></span>
-                                            <span class="ui-x-light">Ok i am waiting...</span>
+                                            <span class="ui-bg-light-100">Ok i am waiting...</span>
                                         </li>
                                         <li class="left">
                                             <span class="img-photo-xs circle"><span>HY</span></span>
-                                            <span class="ui-x-light">Thank you</span>
+                                            <span class="ui-bg-light-100">Thank you</span>
                                         </li>
                                         <li class="right">
-                                            <span class="ui-dark">Ok</span>
+                                            <span class="ui-bg-dark-100">Ok</span>
                                         </li>
                                     </ul>
-                                    <div class="col-static no-fluid padding-5 circle theme-gray ui-x-light">
+                                    <div class="col-static no-fluid padding-5 circle theme-gray ui-bg-light-100">
                                         <div class="col-35">
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
@@ -879,7 +879,7 @@
                                     </div>
                                 </div>
                                 <div class="tab-content padding-10 border-dual">
-                                    <div class="row no-fluid no-margin circle theme-gray ui-x-light">
+                                    <div class="row no-fluid no-margin circle theme-gray ui-bg-light-100">
                                         <div class="col-6">
                                             <h5 class="font-bold">John Doe</h5>
                                         </div>
@@ -893,40 +893,40 @@
                                     <ul class="messages list-custom margin-10-b scroll-v">
                                         <li class="left">
                                             <img class="img-photo-xs circle" src="img/profile-image3.jpg" alt="">
-                                            <span class="ui-x-light">Hey</span>
+                                            <span class="ui-bg-light-100">Hey</span>
                                         </li>
                                         <li class="left">
-                                            <span class="ui-x-light">Did you check the latest reports?</span>
+                                            <span class="ui-bg-light-100">Did you check the latest reports?</span>
                                         </li>
                                         <li class="right">
-                                            <span class="ui-dark">Sorry</span>
+                                            <span class="ui-bg-dark-100">Sorry</span>
                                         </li>
                                         <li class="right">
-                                            <span class="ui-dark">Not yet!</span>
+                                            <span class="ui-bg-dark-100">Not yet!</span>
                                         </li>
                                         <li class="left">
                                             <img class="img-photo-xs circle" src="img/profile-image3.jpg" alt="">
-                                            <span class="ui-x-light">Ok</span>
+                                            <span class="ui-bg-light-100">Ok</span>
                                         </li>
                                         <li class="left">
-                                            <span class="ui-x-light">I need them and i am waiting for you</span>
+                                            <span class="ui-bg-light-100">I need them and i am waiting for you</span>
                                         </li>
                                         <li class="right">
-                                            <span class="ui-dark">But, i  will get back to you as soon as possible.</span>
+                                            <span class="ui-bg-dark-100">But, i  will get back to you as soon as possible.</span>
                                         </li>
                                         <li class="left">
                                             <img class="img-photo-xs circle" src="img/profile-image3.jpg" alt="">
-                                            <span class="ui-x-light">Ok i am waiting...</span>
+                                            <span class="ui-bg-light-100">Ok i am waiting...</span>
                                         </li>
                                         <li class="left">
                                             <img class="img-photo-xs circle" src="img/profile-image3.jpg" alt="">
-                                            <span class="ui-x-light">Thank you</span>
+                                            <span class="ui-bg-light-100">Thank you</span>
                                         </li>
                                         <li class="right">
-                                            <span class="ui-dark">Ok</span>
+                                            <span class="ui-bg-dark-100">Ok</span>
                                         </li>
                                     </ul>
-                                    <div class="col-static no-fluid padding-5 circle theme-gray ui-x-light">
+                                    <div class="col-static no-fluid padding-5 circle theme-gray ui-bg-light-100">
                                         <div class="col-35">
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
@@ -939,7 +939,7 @@
                                     </div>
                                 </div>
                                 <div class="tab-content padding-10 border-dual">
-                                    <div class="row no-fluid no-margin circle theme-gray ui-x-light">
+                                    <div class="row no-fluid no-margin circle theme-gray ui-bg-light-100">
                                         <div class="col-6">
                                             <h5 class="font-bold">Mary Doe</h5>
                                         </div>
@@ -953,40 +953,40 @@
                                     <ul class="messages list-custom margin-10-b scroll-v">
                                         <li class="left">
                                             <span class="img-photo-xs circle"><span>EK</span></span>
-                                            <span class="ui-x-light">Hey</span>
+                                            <span class="ui-bg-light-100">Hey</span>
                                         </li>
                                         <li class="left">
-                                            <span class="ui-x-light">Did you check the latest reports?</span>
+                                            <span class="ui-bg-light-100">Did you check the latest reports?</span>
                                         </li>
                                         <li class="right">
-                                            <span class="ui-dark">Sorry</span>
+                                            <span class="ui-bg-dark-100">Sorry</span>
                                         </li>
                                         <li class="right">
-                                            <span class="ui-dark">Not yet!</span>
+                                            <span class="ui-bg-dark-100">Not yet!</span>
                                         </li>
                                         <li class="left">
                                             <span class="img-photo-xs circle"><span>EK</span></span>
-                                            <span class="ui-x-light">Ok</span>
+                                            <span class="ui-bg-light-100">Ok</span>
                                         </li>
                                         <li class="left">
-                                            <span class="ui-x-light">I need them and i am waiting for you</span>
+                                            <span class="ui-bg-light-100">I need them and i am waiting for you</span>
                                         </li>
                                         <li class="right">
-                                            <span class="ui-dark">But, i  will get back to you as soon as possible.</span>
+                                            <span class="ui-bg-dark-100">But, i  will get back to you as soon as possible.</span>
                                         </li>
                                         <li class="left">
                                             <span class="img-photo-xs circle"><span>EK</span></span>
-                                            <span class="ui-x-light">Ok i am waiting...</span>
+                                            <span class="ui-bg-light-100">Ok i am waiting...</span>
                                         </li>
                                         <li class="left">
                                             <span class="img-photo-xs circle"><span>EK</span></span>
-                                            <span class="ui-x-light">Thank you</span>
+                                            <span class="ui-bg-light-100">Thank you</span>
                                         </li>
                                         <li class="right">
-                                            <span class="ui-dark">Ok</span>
+                                            <span class="ui-bg-dark-100">Ok</span>
                                         </li>
                                     </ul>
-                                    <div class="col-static no-fluid padding-5 circle theme-gray ui-x-light">
+                                    <div class="col-static no-fluid padding-5 circle theme-gray ui-bg-light-100">
                                         <div class="col-35">
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
@@ -999,7 +999,7 @@
                                     </div>
                                 </div>
                                 <div class="tab-content padding-10 border-dual">
-                                    <div class="row no-fluid no-margin circle theme-gray ui-x-light">
+                                    <div class="row no-fluid no-margin circle theme-gray ui-bg-light-100">
                                         <div class="col-6">
                                             <h5 class="font-bold">John Doe</h5>
                                         </div>
@@ -1013,40 +1013,40 @@
                                     <ul class="messages list-custom margin-10-b scroll-v">
                                         <li class="left">
                                             <span class="img-photo-xs circle"><span>CY</span></span>
-                                            <span class="ui-x-light">Hey</span>
+                                            <span class="ui-bg-light-100">Hey</span>
                                         </li>
                                         <li class="left">
-                                            <span class="ui-x-light">Did you check the latest reports?</span>
+                                            <span class="ui-bg-light-100">Did you check the latest reports?</span>
                                         </li>
                                         <li class="right">
-                                            <span class="ui-dark">Sorry</span>
+                                            <span class="ui-bg-dark-100">Sorry</span>
                                         </li>
                                         <li class="right">
-                                            <span class="ui-dark">Not yet!</span>
+                                            <span class="ui-bg-dark-100">Not yet!</span>
                                         </li>
                                         <li class="left">
                                             <span class="img-photo-xs circle"><span>CY</span></span>
-                                            <span class="ui-x-light">Ok</span>
+                                            <span class="ui-bg-light-100">Ok</span>
                                         </li>
                                         <li class="left">
-                                            <span class="ui-x-light">I need them and i am waiting for you</span>
+                                            <span class="ui-bg-light-100">I need them and i am waiting for you</span>
                                         </li>
                                         <li class="right">
-                                            <span class="ui-dark">But, i  will get back to you as soon as possible.</span>
+                                            <span class="ui-bg-dark-100">But, i  will get back to you as soon as possible.</span>
                                         </li>
                                         <li class="left">
                                             <span class="img-photo-xs circle"><span>CY</span></span>
-                                            <span class="ui-x-light">Ok i am waiting...</span>
+                                            <span class="ui-bg-light-100">Ok i am waiting...</span>
                                         </li>
                                         <li class="left">
                                             <span class="img-photo-xs circle"><span>CY</span></span>
-                                            <span class="ui-x-light">Thank you</span>
+                                            <span class="ui-bg-light-100">Thank you</span>
                                         </li>
                                         <li class="right">
-                                            <span class="ui-dark">Ok</span>
+                                            <span class="ui-bg-dark-100">Ok</span>
                                         </li>
                                     </ul>
-                                    <div class="col-static no-fluid padding-5 circle theme-gray ui-x-light">
+                                    <div class="col-static no-fluid padding-5 circle theme-gray ui-bg-light-100">
                                         <div class="col-35">
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
@@ -1108,7 +1108,7 @@
                         <div class="card-side padding-15 no-padding-b icons-no-opacity">
                             <div class="col-static no-fluid">
                                 <div class="col-50">
-                                    <button class="btn btn-ghost btn-square circle ui-x-light ease-btn" data-notifier>
+                                    <button class="btn btn-ghost btn-square circle ui-bg-light-100 ease-btn" data-notifier>
                                         <svg class="icon ui-color"><use href="#bell"/></svg>
                                     </button>
                                 </div>
@@ -1118,7 +1118,7 @@
                                     </div>
                                 </div>
                                 <div class="col-50 align-r">
-                                    <button class="btn btn-ghost btn-square circle ui-x-light ease-btn">
+                                    <button class="btn btn-ghost btn-square circle ui-bg-light-100 ease-btn">
                                         <svg class="icon ui-color"><use href="#settings"/></svg>
                                     </button>
                                 </div>
@@ -1134,12 +1134,12 @@
                                 <span class="sp-20"></span>
                                 <span class="x-large margin-3-l">John Doe</span>
                                 <span class="sp-2"></span>
-                                <b class="xx-small circle padding-5-h padding-3-v theme-app2 ui-dark">SD</b>
+                                <b class="xx-small circle padding-5-h padding-3-v theme-app2 ui-bg-dark-100">SD</b>
                                 <span class="color-black-50 margin-3-l">Audit Staff</span>
                             </div>
 
                             <h5 class="font-bold margin-10-b">Settings</h5>
-                            <div class="list-group round no-border theme-gray ui-x-light">
+                            <div class="list-group round no-border theme-gray ui-bg-light-100">
                                 <ul class="has-icon-xs ease-list-group">
                                     <li>
                                         <a href="#">
@@ -1172,7 +1172,7 @@
 
                             <h5 class="font-bold margin-10-b">General</h5>
 
-                            <div class="list-group round no-border theme-gray ui-x-light">
+                            <div class="list-group round no-border theme-gray ui-bg-light-100">
                                 <ul class="has-icon-xs ease-list-group">
                                     <li>
                                         <a href="#">
@@ -1197,7 +1197,7 @@
 
                             <span class="sp-25"></span>
 
-                            <div class="list-group round no-border theme-gray ui-x-light">
+                            <div class="list-group round no-border theme-gray ui-bg-light-100">
                                 <ul class="has-icon-xs ease-list-group">
                                     <li>
                                         <a class="round" href="#">

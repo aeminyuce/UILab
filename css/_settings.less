@@ -273,54 +273,39 @@
 
 // theme mixins
 ._theme (@name; @color) {
-    @ui-x-light: fade(@color, 15%);
-    @ui-x-light-hover: fade(@color, 50%);
-    @ui-light: fade(@color, 25%);
-    @ui-light-hover: fade(@color, 50%);
 
-    @ui-dark: @color;
-    @ui-dark-hover: lighten(@color, 15%);
-    @ui-x-dark: darken(@color, 25%);
-    @ui-x-dark-hover: lighten(@color, 20%);
+    @theme-bg-vars: {
+        light-100: fade(lighten(@color, 10%), 15%);
+        light-200: fade(lighten(@color, 15%), 25%);
+        light-300: fade(lighten(@color, 20%), 35%);
 
-    .theme-@{name}.ui-x-light,.theme-@{name} .ui-x-light:not([class*="theme-"]) {
-      background-color: @ui-x-light;
-
-        html:not(.mobile) &.hover:hover,
-        html:not(.mobile) &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-            background-color: @ui-x-light-hover;
-        }
-
+        dark-100: @color;
+        dark-200: darken(@color, 15%);
+        dark-300: darken(@color, 25%);
     }
-    .theme-@{name}.ui-light,.theme-@{name} .ui-light:not([class*="theme-"]) {
-        background-color: @ui-light;
 
-        html:not(.mobile) &.hover:hover,
-        html:not(.mobile) &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-            background-color: @ui-light-hover;
-        }
+    @theme-bg-hover-vars: {
+        light-100: fade(lighten(@color, 10%), 30%);
+        light-200: fade(lighten(@color, 15%), 50%);
+        light-300: fade(lighten(@color, 20%), 70%);
 
+        dark-100: lighten(@color, 15%);
+        dark-200: lighten(@color, 20%);
+        dark-300: lighten(@color, 25%);
     }
-    .theme-@{name}.ui-dark,.theme-@{name} .ui-dark:not([class*="theme-"]) {
-        background-color: @ui-dark;
 
-        html:not(.mobile) &.hover:hover,
-        html:not(.mobile) &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-            background-color: @ui-dark-hover;
-        }
+    each(@theme-bg-vars, {
+        .theme-@{name}.ui-bg-@{key},.theme-@{name} .ui-bg-@{key}:not([class*="theme-"]) { background-color: @value; }
+    });
 
-    }
-    .theme-@{name}.ui-x-dark,.theme-@{name} .ui-x-dark:not([class*="theme-"]) {
-        background-color: @ui-x-dark;
-
-        html:not(.mobile) &.hover:hover,
-        html:not(.mobile) &.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-            background-color: @ui-x-dark-hover;
-        }
-
-    }
+    each(@theme-bg-hover-vars, {
+        .theme-@{name}.ui-bg-@{key},.theme-@{name} .ui-bg-@{key}:not([class*="theme-"]) {
+            html:not(.mobile) & {
+                &.hover:hover,&.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover { background-color: @value; }
+            }
+          }
+    });
 
     .theme-@{name}.ui-color,.theme-@{name} .ui-color:not([class*="theme-"]) { color: @color; }
     .theme-@{name}.ui-border,.theme-@{name} .ui-border:not([class*="theme-"]) { border-color: @color; }
-
 }

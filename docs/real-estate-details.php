@@ -151,7 +151,7 @@
             <div class="col-400 padding-10">
 
                 <div class="card align-c round shadow-lg theme-default2">
-                    <div class="card-side padding-10-v ui-x-dark">
+                    <div class="card-side padding-10-v ui-bg-dark-300">
                         <ul class="list-inline countdown no-user-select">
                             <li class="padding-10-v padding-15-h hidden-xs">
                                 <svg class="icon icon-xxl"><use href="#history"/></svg>
@@ -162,9 +162,9 @@
                             <li class="padding-5"><b class="s xx-large block">17</b>Seconds</li>
                         </ul>
                     </div>
-                    <div class="padding-3 ui-dark stripe-light border-v border-light animate-progress">
+                    <div class="padding-3 ui-bg-dark-100 stripe-light border-v border-light animate-progress">
                     </div>
-                    <div class="card-side padding-5 ui-dark">
+                    <div class="card-side padding-5 ui-bg-dark-100">
                         <b class="small color-white">Closing: 10 August, 2018, Friday</b>
                     </div>
                 </div>
@@ -230,7 +230,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-12 no-padding">
-                                        <div class="text no-border theme-gray ui-x-light ease-form">
+                                        <div class="text no-border theme-gray ui-bg-light-100 ease-form">
                                             <input class="font-bold align-c x-large" type="text" value="645.000" min="645.000" step="5.000" maxlength="12" autocomplete="off">
                                         </div>
                                     </div>
@@ -242,7 +242,7 @@
                                 </div>
                             </div>
                             <span class="sp-15"></span>
-                            <button class="btn btn-lg block round theme-default2 ui-dark ease-btn" type="submit">
+                            <button class="btn btn-lg block round theme-default2 ui-bg-dark-100 ease-btn" type="submit">
                                 <b>MAKE OFFER</b>
                             </button>
                             <span class="sp-5"></span>

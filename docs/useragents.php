@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-12 padding-30">
 
-                <div class="card-warning padding-30 round theme-default2 ui-x-light ui-border">
+                <div class="card-warning padding-30 round theme-default2 ui-bg-light-100 ui-border">
                     User Agents JS requires Events JS.<br>
                     User Agents JS is a simple javascript detecting browsers, devices and operating systems.<br><br>
                     <strong>See your browser results listed below.</strong>

@@ -13,7 +13,7 @@
 
                             <div class="slide-content padding-15 padding-30-b" data-animate="10">
                                 <div class="card padding-15 shadow-lg">
-                                    <div class="row row-gap-lg theme-gray ui-x-light full-h">
+                                    <div class="row row-gap-lg theme-gray ui-bg-light-100 full-h">
                                         <div class="col-4">
                                             <div class="row row-gap-xs ease-2nd-layout ease-slow ease-in-out">
                                                 <div class="col-6 no-fluid">
@@ -52,7 +52,7 @@
 
                             <div class="slide-content padding-15 padding-30-b" data-animate="10">
                                 <div class="card padding-15 shadow-lg">
-                                    <div class="row row-gap-lg theme-gray ui-x-light full-h">
+                                    <div class="row row-gap-lg theme-gray ui-bg-light-100 full-h">
                                         <div class="col-4">
                                             <div class="row row-gap-xs ease-2nd-layout ease-slow ease-in-out">
                                                 <div class="col-6 no-fluid">
@@ -91,7 +91,7 @@
 
                             <div class="slide-content padding-15 padding-30-b" data-animate="10">
                                 <div class="card padding-15 shadow-lg">
-                                    <div class="row row-gap-lg theme-gray ui-x-light full-h">
+                                    <div class="row row-gap-lg theme-gray ui-bg-light-100 full-h">
                                         <div class="col-4 col-md-3">
                                             <div class="row row-gap-xs ease-2nd-layout ease-slow ease-in-out">
                                                 <div class="col-6 no-fluid">
@@ -208,7 +208,7 @@
                     <span class="sp-30"></span>
 
                     <h5 class="font-bold">Half Sized Image Carousel</h5>
-                    <div class="carousel half-sized padding-15-b photo-gallery ease-photo-gallery shadow-in-sm round theme-gray ui-x-light" data-col="4" data-col-md="3" data-col-sm="2" data-col-xs="2">
+                    <div class="carousel half-sized padding-15-b photo-gallery ease-photo-gallery shadow-in-sm round theme-gray ui-bg-light-100" data-col="4" data-col-md="3" data-col-sm="2" data-col-xs="2">
                         <div class="carousel-slider hover-scale-2nd hover-shadow-2nd ease-layout ease-2nd-layout ease-slow ease-in-out">
                             <div class="slide-content padding-15 no-padding-b">
                                 <a class="img shadow ease-default" href="img/image_09.jpg"><img class="img" src="img/image_09.jpg" alt=""></a>

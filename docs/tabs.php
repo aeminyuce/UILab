@@ -51,10 +51,10 @@
 
                 <div class="row padding-30-b">
                     <div class="col-12">
-                        <div class="tabs ease-tabs" data-classes="ui-dark">
+                        <div class="tabs ease-tabs" data-classes="ui-bg-dark-100">
 
                             <div class="btn-holder margin-10-b btn-xs-fluid theme-default2 form-lg ease-1st-btn">
-                                <button class="tab btn round ui-dark active">Mon</button>
+                                <button class="tab btn round ui-bg-dark-100 active">Mon</button>
                                 <button class="tab btn round">Tue</button>
                                 <button class="tab btn round">Wed</button>
                                 <button class="tab btn round">Thu</button>
@@ -294,12 +294,12 @@
                 <div class="tabs padding-30-b form-lg theme-default2 ease-tabs">
 
                     <div id="tabID01" class="tab-content open open-ease">
-                        <button class="tab btn round ui-dark ease-btn" data-id="tabID02">Show Second</button>
+                        <button class="tab btn round ui-bg-dark-100 ease-btn" data-id="tabID02">Show Second</button>
                         <span class="sp-10"></span>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
                     </div>
                     <div id="tabID02" class="tab-content">
-                        <button class="tab btn round ui-dark ease-btn" data-id="tabID01">Show First</button>
+                        <button class="tab btn round ui-bg-dark-100 ease-btn" data-id="tabID01">Show First</button>
                         <span class="sp-10"></span>
                         Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
                         <br><br>
@@ -309,13 +309,13 @@
                 </div>
 
                 <h4>Accordion Tabs</h4>
-                <div class="tabs padding-30-b form-lg theme-default2 ease-tabs" data-classes="ui-dark">
+                <div class="tabs padding-30-b form-lg theme-default2 ease-tabs" data-classes="ui-bg-dark-100">
 
                     <button class="tab btn-toggle btn block align-l margin-1-b round ease-btn">
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Tab Button
                     </button>
-                    <div class="tab-content padding-10 margin-5-b round ui-x-light">
+                    <div class="tab-content padding-10 margin-5-b round ui-bg-light-100">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
                     </div>
 
@@ -323,7 +323,7 @@
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Tab Button
                     </button>
-                    <div class="tab-content padding-10 margin-5-b round ui-x-light">
+                    <div class="tab-content padding-10 margin-5-b round ui-bg-light-100">
                         Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
                         <br><br>
                         Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
@@ -333,7 +333,7 @@
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Tab Button
                     </button>
-                    <div class="tab-content padding-10 round ui-x-light">
+                    <div class="tab-content padding-10 round ui-bg-light-100">
                         Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
                         <br><br>
                         Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
@@ -342,7 +342,7 @@
                 </div>
 
                 <h4>Inner Accordion Tabs</h4>
-                <div class="tabs padding-30-b form-lg theme-default2 ease-tabs" data-classes="ui-dark">
+                <div class="tabs padding-30-b form-lg theme-default2 ease-tabs" data-classes="ui-bg-dark-100">
 
                     <button class="tab btn-toggle btn block align-l margin-1-b ease-btn">
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
