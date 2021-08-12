@@ -27,6 +27,8 @@
                     <span class="text-yellow">.text-yellow</span>
                     <span class="text-red">.text-red</span>
                     <span class="text-orange">.text-orange</span>
+                    <span class="text-default">.text-default</span>
+                    <span class="text-default2">.text-default2</span>
                 </div>
 
                 <h4>Font Sizes</h4>

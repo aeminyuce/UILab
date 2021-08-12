@@ -3645,6 +3645,12 @@ a {
 .text-default button:not([class*="ui-"]) {
   color: hsl(226, 52%, 50%) !important;
 }
+.text-default2,
+.text-default2 .icon:not([class*="ui-"]),
+.text-default2 a:not([class*="ui-"]),
+.text-default2 button:not([class*="ui-"]) {
+  color: hsl(206, 87%, 50%) !important;
+}
 .font-lead {
   font-size: 18px;
   line-height: 1.4;
