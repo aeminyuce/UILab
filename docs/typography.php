@@ -5,24 +5,24 @@
 
                 <h4>Headings</h4>
                 <div class="padding-30-b">
-                    <h1>H1 Heading <small class="dark">Secondary text</small></h1>
-                    <h2>H2 Heading <small class="dark">Secondary text</small></h2>
-                    <h3>H3 Heading <small class="dark">Secondary text</small></h3>
-                    <h4>H4 Heading <small class="dark">Secondary text</small></h4>
-                    <h5>H5 Heading <small class="dark">Secondary text</small></h5>
-                    <h6>H6 Heading <small class="dark">Secondary text</small></h6>
+                    <h1>H1 Heading <small class="color-black-muted">Secondary text</small></h1>
+                    <h2>H2 Heading <small class="color-black-muted">Secondary text</small></h2>
+                    <h3>H3 Heading <small class="color-black-muted">Secondary text</small></h3>
+                    <h4>H4 Heading <small class="color-black-muted">Secondary text</small></h4>
+                    <h5>H5 Heading <small class="color-black-muted">Secondary text</small></h5>
+                    <h6>H6 Heading <small class="color-black-muted">Secondary text</small></h6>
                 </div>
 
                 <h4>Font Colors</h4>
                 <div class="padding-30-b">
                     <div class="theme-gray ui-dark">
-                        <span class="xx-light">.xx-light</span>
-                        <span class="x-light">.x-light</span>
+                        <span class="color-white">.color-white</span>
+                        <span class="color-white">.color-white-50</span>
                     </div>
-                    <span class="light">.light</span>
-                    <span class="dark">.dark</span>
-                    <span class="x-dark">.x-dark</span>
-                    <span class="xx-dark">.xx-dark</span>
+                    <span class="color-white-muted">.color-white-muted</span>
+                    <span class="color-black-muted">.color-black-muted</span>
+                    <span class="color-black-50">.color-black-50</span>
+                    <span class="color-black">.color-black</span>
                     <span class="color-green">.color-green</span>
                     <span class="color-yellow">.color-yellow</span>
                     <span class="color-red">.color-red</span>

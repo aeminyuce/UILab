@@ -133,7 +133,7 @@
                             <button class="carousel-prev btn btn-ghost btn-square">
                                 <svg class="icon"><use href="#angle-left"/></svg>
                             </button>
-                            <span class="dots dark"></span>
+                            <span class="dots color-black-muted"></span>
                             <button class="carousel-next btn btn-ghost btn-square">
                                 <svg class="icon"><use href="#angle-right"/></svg>
                             </button>
@@ -198,7 +198,7 @@
                             <button class="carousel-prev btn btn-ghost btn-square round">
                                 <svg class="icon"><use href="#angle-left"/></svg>
                             </button>
-                            <span class="dots dark"></span>
+                            <span class="dots color-black-muted"></span>
                             <button class="carousel-next btn btn-ghost btn-square round">
                                 <svg class="icon"><use href="#angle-right"/></svg>
                             </button>
@@ -233,7 +233,7 @@
                             <button class="carousel-prev btn btn-ghost btn-square round">
                                 <svg class="icon"><use href="#angle-left"/></svg>
                             </button>
-                            <span class="dots dark"></span>
+                            <span class="dots color-black-muted"></span>
                             <button class="carousel-next btn btn-ghost btn-square round">
                                 <svg class="icon"><use href="#angle-right"/></svg>
                             </button>
@@ -285,7 +285,7 @@
                                 <button class="carousel-prev btn btn-ghost btn-square round">
                                     <svg class="icon"><use href="#angle-left"/></svg>
                                 </button>
-                                <span class="dots dark"></span>
+                                <span class="dots color-black-muted"></span>
                                 <button class="carousel-next btn btn-ghost btn-square round">
                                     <svg class="icon"><use href="#angle-right"/></svg>
                                 </button>

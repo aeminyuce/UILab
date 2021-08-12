@@ -17,7 +17,7 @@
                         <li><a href="#">Hobbies</a></li>
                     </ul>
                     <span class="sp-30"></span>
-                    <ul class="list-unstyled hover-r-more-2nd inline-block-2nd list-spacer-15 large x-dark adding-10 icons-sm icons-margin-10-r ease-2nd-layout">
+                    <ul class="list-unstyled hover-r-more-2nd inline-block-2nd list-spacer-15 large color-black-50 adding-10 icons-sm icons-margin-10-r ease-2nd-layout">
                         <li>
                             <a href="#">
                                 <svg class="icon"><use href="#marker"/></svg>
@@ -47,7 +47,7 @@
                                 <h4 class="margin-10-t">Summer Holiday</h4>
                             </div>
                             <div class="col-6 align-r xs-align-c">
-                                <span class="dark large inline-block">23 Jun - 18 Aug, 2019</span>
+                                <span class="color-black-muted large inline-block">23 Jun - 18 Aug, 2019</span>
                                 <img class="img-photo img-photo-sm circle margin-15-l" src="img/profile-image.jpg" alt="">
                             </div>
                         </div>

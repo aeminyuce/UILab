@@ -4,7 +4,7 @@
             <div class="col-12 padding-30">
 
                 <h4>Breadcrumbs Examples</h4>
-                <div class="breadcrumbs dark">
+                <div class="breadcrumbs color-black-muted">
                     <ul class="list-inline">
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="hoverline" href="#" itemprop="item" title="Home">

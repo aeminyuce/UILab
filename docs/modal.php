@@ -55,14 +55,14 @@
             </div>
             <div class="col-6 no-padding-v">
 
-                <i class="x-dark margin-5-b block">Open modal window with id.</i>
+                <i class="color-black-50 margin-5-b block">Open modal window with id.</i>
                 <pre class="round margin-5-b">modal.open({<br>    source: '#myModalId01'<br>});</pre>
                 <button class="btn btn-sm round ui-dark ease-btn" onclick="modal.open({source: '#myModalId01'});">Run Code</button>
 
             </div>
             <div class="col-6 no-padding-t">
 
-                <i class="x-dark margin-5-b block">Open modal window with class name.</i>
+                <i class="color-black-50 margin-5-b block">Open modal window with class name.</i>
                 <pre class="round margin-5-b">modal.open({<br>    source: '.myModal'<br>});</pre>
                 <button class="btn btn-sm round ui-dark ease-btn" onclick="modal.open({source: '.myModal'});">Run Code</button>
 
@@ -73,42 +73,42 @@
             </div>
             <div class="col-6 no-padding-v">
 
-                <i class="x-dark margin-5-b block">Open large size modal window.</i>
+                <i class="color-black-50 margin-5-b block">Open large size modal window.</i>
                 <pre class="round margin-5-b">modal.open({<br>    source: '.myModal',<br>    size: 'lg'<br>});</pre>
                 <button class="btn btn-sm round ui-dark ease-btn" onclick="modal.open({source: '.myModal', size: 'lg'});">Run Code</button>
 
             </div>
             <div class="col-6 no-padding-t">
 
-                <i class="x-dark margin-5-b block">Open default (medium) size modal window.</i>
+                <i class="color-black-50 margin-5-b block">Open default (medium) size modal window.</i>
                 <pre class="round margin-5-b">modal.open({<br>    source: '.myModal',<br>    size: 'md'<br>});</pre>
                 <button class="btn btn-sm round ui-dark ease-btn" onclick="modal.open({source: '.myModal', size: 'md'});">Run Code</button>
 
             </div>
             <div class="col-6 no-padding-t">
 
-                <i class="x-dark margin-5-b block">Open small size modal window.</i>
+                <i class="color-black-50 margin-5-b block">Open small size modal window.</i>
                 <pre class="round margin-5-b">modal.open({<br>    source: '.myModal',<br>    size: 'sm'<br>});</pre>
                 <button class="btn btn-sm round ui-dark ease-btn" onclick="modal.open({source: '.myModal', size: 'sm'});">Run Code</button>
 
             </div>
             <div class="col-6 no-padding-t">
 
-                <i class="x-dark margin-5-b block">Open fullscreen modal window.</i>
+                <i class="color-black-50 margin-5-b block">Open fullscreen modal window.</i>
                 <pre class="round margin-5-b">modal.open({<br>    source: '.myModal',<br>    size: 'fullscreen'<br>});</pre>
                 <button class="btn btn-sm round ui-dark ease-btn" onclick="modal.open({source: '.myModal', size: 'fullscreen'});">Run Code</button>
 
             </div>
             <div class="col-6 no-padding-t">
 
-                <i class="x-dark margin-5-b block">Open inline modal window.</i>
+                <i class="color-black-50 margin-5-b block">Open inline modal window.</i>
                 <pre class="round margin-5-b">modal.open({<br>    source: '.myModal',<br>    size: 'inline-modal'<br>});</pre>
                 <button class="btn btn-sm round ui-dark ease-btn" onclick="modal.open({source: '.myModal', size: 'inline-modal'});">Run Code</button>
 
             </div>
             <div class="col-6 no-padding-t">
 
-                <i class="x-dark margin-5-b block">Open fixed size modal window.</i>
+                <i class="color-black-50 margin-5-b block">Open fixed size modal window.</i>
                 <pre class="round margin-5-b">modal.open({<br>    source: '.myModal',<br>    size: '560x315'<br>});</pre>
                 <button class="btn btn-sm round ui-dark ease-btn" onclick="modal.open({source: '.myModal', size: '560x315'});">Run Code</button>
 
@@ -117,13 +117,13 @@
             <div class="col-12">
 
                 <b>Type:</b>
-                <i class="x-dark margin-5-b block">Open links with ajax modal.</i>
+                <i class="color-black-50 margin-5-b block">Open links with ajax modal.</i>
                 <pre class="round margin-5-b">modal.open({<br>    source: 'ajax/ajax-modal.php'<br>    size: 'lg',<br>    type: 'ajax'<br>});</pre>
                 <button class="btn btn-sm round ui-dark ease-btn" onclick="modal.open({source: 'ajax/ajax-modal.php', size: 'lg', type: 'ajax'});">Run Code</button>
 
                 <span class="sp-15"></span>
 
-                <i class="x-dark margin-5-b block">
+                <i class="color-black-50 margin-5-b block">
                     Open links with iframe modal.<br>
                     Youtube embed link example:
                 </i>
@@ -132,13 +132,13 @@
 
                 <span class="sp-15"></span>
 
-                <i class="x-dark margin-5-b block">Google map embed link example:</i>
+                <i class="color-black-50 margin-5-b block">Google map embed link example:</i>
                 <pre class="round margin-5-b">modal.open({<br>    source: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d770809.0860158126!2d28.45174621544522!3d41.003964328513874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1549286679927',<br>    size: 'fullscreen',<br>    type: 'iframe'<br>});</pre>
                 <button class="btn btn-sm round ui-dark ease-btn" onclick="modal.open({source: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d770809.0860158126!2d28.45174621544522!3d41.003964328513874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1549286679927', size: 'fullscreen', type: 'iframe'});">Run Code</button>
 
                 <span class="sp-15"></span>
 
-                <i class="x-dark margin-5-b block">Google map embed link with header and footer:</i>
+                <i class="color-black-50 margin-5-b block">Google map embed link with header and footer:</i>
                 <pre class="round margin-5-b">modal.open({<br>    source: '#myModal02'<br>    size: 'fullscreen'<br>});</pre>
                 <button class="btn btn-sm round ui-dark ease-btn" onclick="modal.open({source: '#myModalId02', size: 'fullscreen'});">Run Code</button>
 
@@ -147,7 +147,7 @@
             <div class="col-12">
 
                 <b>Bg:</b>
-                <i class="x-dark margin-5-b block">Enable/Disable modal window background color.</i>
+                <i class="color-black-50 margin-5-b block">Enable/Disable modal window background color.</i>
                 <pre class="round margin-5-b">modal.open({<br>    source: '.search',<br>    bg: 'false'<br>});</pre>
                 <button class="btn btn-sm round ui-dark ease-btn" onclick="modal.open({source: '.search', bg: 'false'});">Run Code</button>
 
@@ -156,7 +156,7 @@
             <div class="col-12">
 
                 <b>Closable:</b>
-                <i class="x-dark margin-5-b block">Close modal window with footer buttons.</i>
+                <i class="color-black-50 margin-5-b block">Close modal window with footer buttons.</i>
                 <pre class="round margin-5-b">modal.open({<br>    source: '.myModal',<br>    closable: false<br>});</pre>
                 <button class="btn btn-sm round ui-dark ease-btn" onclick="modal.open({source: '.myModal', closable: false});">Run Code</button>
 
@@ -165,7 +165,7 @@
             <div class="col-12">
 
                 <b>Callback:</b>
-                <i class="x-dark margin-5-b block">Callback call after open modal.</i>
+                <i class="color-black-50 margin-5-b block">Callback call after open modal.</i>
                 <pre class="round margin-5-b">modal.open({<br>    source: '.myModal',<br>    callback: function () {<br>        alert('Modal opened!');<br>    }<br>});</pre>
                 <button class="btn btn-sm round ui-dark ease-btn" onclick="modal.open({source: '.myModal', callback: function () { alert('Modal opened!'); }});">Run Code</button>
 
@@ -243,7 +243,7 @@
 
         <form action="#successful">
             <h2>Search</h2>
-            <p class="large x-light xs-align-c">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada purus eget enim tempus, sed faucibus ante blandit. Morbi a pharetra sapien.</p>
+            <p class="large color-white-50 xs-align-c">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada purus eget enim tempus, sed faucibus ante blandit. Morbi a pharetra sapien.</p>
 
             <div class="col-static no-fluid">
                 <div class="row no-row-gap-h">
@@ -269,21 +269,21 @@
                     <a class="btn btn-multi no-line-height round ui-dark" href="#">
                         <svg class="icon"><use href="#news"/></svg>
                         <span class="x-large block margin-5-t">News</span>
-                        <span class="x-light">589</span>
+                        <span class="color-white-50">589</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-dark" href="#">
                         <svg class="icon"><use href="#calendar-check"/></svg>
                         <span class="x-large block margin-5-t">Events</span>
-                        <span class="x-light">219</span>
+                        <span class="color-white-50">219</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-dark" href="#">
                         <svg class="icon"><use href="#files"/></svg>
                         <span class="x-large block margin-5-t">Documents</span>
-                        <span class="x-light">701</span>
+                        <span class="color-white-50">701</span>
                     </a>
                 </div>
             </div>

@@ -3570,44 +3570,44 @@ a {
   color: hsl(0, 0%, 0%);
   color: var(--black);
 }
-.xx-light,
-.xx-light .icon:not([class*="ui-"]),
-.xx-light a:not([class*="ui-"]),
-.xx-light button:not([class*="ui-"]) {
+.color-white,
+.color-white .icon:not([class*="ui-"]),
+.color-white a:not([class*="ui-"]),
+.color-white button:not([class*="ui-"]) {
   color: hsl(0, 0%, 100%) !important;
 }
-.x-light,
-.x-light .icon:not([class*="ui-"]),
-.x-light a:not([class*="ui-"]),
-.x-light button:not([class*="ui-"]) {
+.color-white-50,
+.color-white-50 .icon:not([class*="ui-"]),
+.color-white-50 a:not([class*="ui-"]),
+.color-white-50 button:not([class*="ui-"]) {
   color: hsla(0, 0%, 100%, 0.87) !important;
 }
-.light,
-.light .icon:not([class*="ui-"]),
-.light a:not([class*="ui-"]),
-.light button:not([class*="ui-"]) {
+.color-white-muted,
+.color-white-muted .icon:not([class*="ui-"]),
+.color-white-muted a:not([class*="ui-"]),
+.color-white-muted button:not([class*="ui-"]) {
   color: hsla(0, 0%, 100%, 0.72) !important;
 }
-.dark,
-.dark .icon:not([class*="ui-"]),
-.dark a:not([class*="ui-"]),
-.dark button:not([class*="ui-"]) {
-  color: hsla(0, 0%, 0%, 0.35);
-  color: var(--dark);
+.color-black,
+.color-black .icon:not([class*="ui-"]),
+.color-black a:not([class*="ui-"]),
+.color-black button:not([class*="ui-"]) {
+  color: hsl(0, 0%, 0%);
+  color: var(--black);
 }
-.x-dark,
-.x-dark .icon:not([class*="ui-"]),
-.x-dark a:not([class*="ui-"]),
-.x-dark button:not([class*="ui-"]) {
+.color-black-50,
+.color-black-50 .icon:not([class*="ui-"]),
+.color-black-50 a:not([class*="ui-"]),
+.color-black-50 button:not([class*="ui-"]) {
   color: hsla(0, 0%, 0%, 0.5);
   color: var(--x-dark);
 }
-.xx-dark,
-.xx-dark .icon:not([class*="ui-"]),
-.xx-dark a:not([class*="ui-"]),
-.xx-dark button:not([class*="ui-"]) {
-  color: hsl(0, 0%, 0%);
-  color: var(--black);
+.color-black-muted,
+.color-black-muted .icon:not([class*="ui-"]),
+.color-black-muted a:not([class*="ui-"]),
+.color-black-muted button:not([class*="ui-"]) {
+  color: hsla(0, 0%, 0%, 0.35);
+  color: var(--dark);
 }
 .color-green,
 .color-green .icon:not([class*="ui-"]),
@@ -9900,24 +9900,24 @@ html:not(.mobile) .photo-preview .preview-next:hover {
 }
 /* themes */
 .ui-x-light,
-.ui-x-light .icon:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light):not(.dark):not(.x-dark):not(.xx-dark),
-.ui-x-light a:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light):not(.dark):not(.x-dark):not(.xx-dark),
-.ui-x-light button:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light):not(.dark):not(.x-dark):not(.xx-dark),
+.ui-x-light .icon:not([class*="ui-"]):not([class*="color-"]),
+.ui-x-light a:not([class*="ui-"]):not([class*="color-"]),
+.ui-x-light button:not([class*="ui-"]):not([class*="color-"]),
 .ui-light,
-.ui-light .icon:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light):not(.dark):not(.x-dark):not(.xx-dark),
-.ui-light a:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light):not(.dark):not(.x-dark):not(.xx-dark),
-.ui-light button:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light):not(.dark):not(.x-dark):not(.xx-dark) {
+.ui-light .icon:not([class*="ui-"]):not([class*="color-"]),
+.ui-light a:not([class*="ui-"]):not([class*="color-"]),
+.ui-light button:not([class*="ui-"]):not([class*="color-"]) {
   color: hsl(0, 0%, 0%);
   color: var(--black);
 }
 .ui-dark,
-.ui-dark .icon:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light):not(.dark):not(.x-dark):not(.xx-dark),
-.ui-dark a:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light):not(.dark):not(.x-dark):not(.xx-dark),
-.ui-dark button:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light):not(.dark):not(.x-dark):not(.xx-dark),
+.ui-dark .icon:not([class*="ui-"]):not([class*="color-"]),
+.ui-dark a:not([class*="ui-"]):not([class*="color-"]),
+.ui-dark button:not([class*="ui-"]):not([class*="color-"]),
 .ui-x-dark,
-.ui-x-dark .icon:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light):not(.dark):not(.x-dark):not(.xx-dark),
-.ui-x-dark a:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light):not(.dark):not(.x-dark):not(.xx-dark),
-.ui-x-dark button:not([class*="ui-"]):not(.xx-light):not(.x-light):not(.light):not(.dark):not(.x-dark):not(.xx-dark) {
+.ui-x-dark .icon:not([class*="ui-"]):not([class*="color-"]),
+.ui-x-dark a:not([class*="ui-"]):not([class*="color-"]),
+.ui-x-dark button:not([class*="ui-"]):not([class*="color-"]) {
   color: hsl(0, 0%, 100%);
 }
 .bg-white:not([class*="ui-"]) {

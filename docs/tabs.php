@@ -8,7 +8,7 @@
                     <div class="row border-b margin-15-b">
 
                         <div class="col-4 offset-4 no-padding-b">
-                            <div class="btn-holder dark form-lg ease-1st-btn">
+                            <div class="btn-holder color-black-muted form-lg ease-1st-btn">
                                 <button class="tab btn btn-ghost round-t border-lg border-b ui-border ui-text active">Tab Button</button>
                                 <button class="tab btn btn-ghost round-t">Tab Button</button>
                             </div>
@@ -31,7 +31,7 @@
 
                 <div class="tabs padding-30-b theme-default2 ease-tabs" data-classes="ui-border ui-text">
 
-                    <div class="btn-holder dark margin-10-b form-lg ease-1st-btn">
+                    <div class="btn-holder color-black-muted margin-10-b form-lg ease-1st-btn">
                         <button class="tab btn btn-ghost border-b round-t ui-border ui-text active">Tab Button</button>
                         <button class="tab btn btn-ghost border-b round-t">Tab Button</button>
                         <button class="tab btn btn-ghost border-b round-t">Tab Button</button>
@@ -427,27 +427,27 @@
                 <h4>Tabs with Large Icons</h4>
                 <div class="tabs icons-no-opacity padding-30-b ease-tabs" data-classes="ui-text icons-default">
 
-                    <div class="dark margin-30-b align-c icons-xxl xs-align-l theme-default2">
+                    <div class="color-black-muted margin-30-b align-c icons-xxl xs-align-l theme-default2">
                         <button class="tab btn btn-ghost btn-multi btn-sm-fluid round ease-btn ui-text icons-default active">
                             <svg class="icon ui-no hidden-md"><use href="#user-check"/></svg>
                             <span class="block margin-10-t md-no-margin">1. User Details</span>
                         </button>
 
-                        <svg class="icon margin-15-h x-dark hidden-md"><use href="#long-arrow-right"/></svg>
+                        <svg class="icon margin-15-h color-black-50 hidden-md"><use href="#long-arrow-right"/></svg>
 
                         <button class="tab btn btn-ghost btn-multi btn-sm-fluid round ease-btn">
                             <svg class="icon ui-no hidden-md"><use href="#map"/></svg>
                             <span class="block margin-10-t md-no-margin">2. Address Details</span>
                         </button>
 
-                        <svg class="icon margin-15-h x-dark hidden-md"><use href="#long-arrow-right"/></svg>
+                        <svg class="icon margin-15-h color-black-50 hidden-md"><use href="#long-arrow-right"/></svg>
 
                         <button class="tab btn btn-ghost btn-multi btn-sm-fluid round ease-btn">
                             <svg class="icon ui-no hidden-md"><use href="#credit-card"/></svg>
                             <span class="block margin-10-t md-no-margin">3. Payment Details</span>
                         </button>
 
-                        <svg class="icon margin-15-h x-dark hidden-md"><use href="#long-arrow-right"/></svg>
+                        <svg class="icon margin-15-h color-black-50 hidden-md"><use href="#long-arrow-right"/></svg>
 
                         <button class="tab btn btn-ghost btn-multi btn-sm-fluid round ease-btn">
                             <svg class="icon ui-no hidden-md"><use href="#truck-fill"/></svg>

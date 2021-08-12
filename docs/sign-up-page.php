@@ -20,8 +20,8 @@
                     <div class="row">
                         <div class="col-12 padding-15-v align-c">
                             <span class="sp-30"></span>
-                            <a href="?l=login-page" class="btn xx-light btn-lg btn-ghost btn-ghost-border btn-sm-fluid padding-30-h circle border-dual ui-border ease-btn">
-                                <span class="xx-light">Have you already an account?</span>
+                            <a href="?l=login-page" class="btn color-white btn-lg btn-ghost btn-ghost-border btn-sm-fluid padding-30-h circle border-dual ui-border ease-btn">
+                                <span class="color-white">Have you already an account?</span>
                                 <span class="ui-text hidden-sm">Click here to login.</span>
                             </a>
                             <span class="sp-30 margin-20-v"></span>
@@ -45,11 +45,11 @@
                             <div class="row padding-20 form-lg">
                                 <div class="col-12">
                                     <h3 class="margin-30-b">Create your account</h3>
-                                    <p class="dark large">Sign up to create, discover and connect with the global community.</p>
+                                    <p class="color-black-muted large">Sign up to create, discover and connect with the global community.</p>
                                 </div>
                                 <div class="col-6">
 
-                                    <label class="form-label x-dark">First Name</label>
+                                    <label class="form-label color-black-50">First Name</label>
                                     <div class="text round border-dual ease-form">
                                         <input class="required" type="text" placeholder="Enter first name" minlength="3">
                                     </div>
@@ -57,7 +57,7 @@
 
                                     <span class="sp-20"></span>
 
-                                    <label class="form-label x-dark">Last Name</label>
+                                    <label class="form-label color-black-50">Last Name</label>
                                     <div class="text round border-dual ease-form">
                                         <input class="required" type="text" placeholder="Enter last name" minlength="3">
                                     </div>
@@ -65,7 +65,7 @@
 
                                     <span class="sp-20"></span>
 
-                                    <label class="form-label x-dark">Phone</label>
+                                    <label class="form-label color-black-50">Phone</label>
                                     <div class="text round border-dual ease-form">
                                         <input class="required number" type="text" placeholder="123-123-1234" minlength="12" maxlength="12">
                                     </div>
@@ -74,7 +74,7 @@
                                 </div>
                                 <div class="col-6">
 
-                                    <label class="form-label x-dark">Email</label>
+                                    <label class="form-label color-black-50">Email</label>
                                     <div class="text round border-dual ease-form">
                                         <input class="required" type="email" placeholder="Enter your email">
                                     </div>
@@ -82,7 +82,7 @@
 
                                     <span class="sp-20"></span>
 
-                                    <label class="form-label x-dark">Password</label>
+                                    <label class="form-label color-black-50">Password</label>
                                     <div class="text text-icon round border-dual ease-form">
                                         <button type="button" title="Toggle Password" class="show-pass">
                                             <svg class="icon"><use href="#eye-fill"/></svg>
@@ -93,7 +93,7 @@
 
                                     <span class="sp-20"></span>
 
-                                    <label class="form-label x-dark">Confirm Password</label>
+                                    <label class="form-label color-black-50">Confirm Password</label>
                                     <div class="text text-icon round border-dual ease-form">
                                         <button type="button" title="Toggle Password" class="show-pass">
                                             <svg class="icon"><use href="#eye-fill"/></svg>
@@ -111,7 +111,7 @@
                                             <input type="checkbox" checked>
                                             <i class="state"></i>
                                         </span>
-                                        <span class="dark">Yes, I want to receive emails from this platform.</span>
+                                        <span class="color-black-muted">Yes, I want to receive emails from this platform.</span>
                                     </label>
 
                                     <span class="clearfix"></span>
@@ -121,20 +121,20 @@
                                             <input type="checkbox" checked>
                                             <i class="state"></i>
                                         </span>
-                                        <span class="dark">I agree to the</span>
+                                        <span class="color-black-muted">I agree to the</span>
                                         <a class="font-bold hoverline ui-text" href="#">Terms</a>,
                                         <a class="font-bold hoverline ui-text" href="#">Privacy Policy</a>
-                                        <span class="dark">and</span>
+                                        <span class="color-black-muted">and</span>
                                         <a class="font-bold ui-text" href="#">Fees.</a>
                                     </label>
 
                                     <span class="sp-30 margin-15-v"></span>
 
-                                    <button type="submit" class="signup-btn btn btn-md-fluid xx-light circle hover-scale hover-shadow ease-btn">
+                                    <button type="submit" class="signup-btn btn btn-md-fluid color-white circle hover-scale hover-shadow ease-btn">
                                         <b>SIGN UP NOW</b>
                                     </button>
                                     <span class="sp-30"></span>
-                                    <span class="dark">Have you any questions?<br>Please,</span> <a class="font-bold hoverline ui-text" href="#">click here</a> <span class="dark">to access Help Center.</span>
+                                    <span class="color-black-muted">Have you any questions?<br>Please,</span> <a class="font-bold hoverline ui-text" href="#">click here</a> <span class="color-black-muted">to access Help Center.</span>
 
                                 </div>
                             </div>
@@ -147,7 +147,7 @@
                                     Join our<br class="hidden-sm">huge platform<br class="hidden-sm">
                                     <span class="font-bold x-largest">today!</span>
                                 </h3>
-                                <ul class="list-unstyled list-spacer-10 dark x-large icons-sm icons-margin-5-r theme-default2">
+                                <ul class="list-unstyled list-spacer-10 color-black-muted x-large icons-sm icons-margin-5-r theme-default2">
                                     <li>
                                         <svg class="icon ui-text hidden-sm"><use href="#check-circle-fill"/></svg>
                                         Work and build around your team.

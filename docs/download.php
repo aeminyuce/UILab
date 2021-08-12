@@ -41,7 +41,7 @@
                                         <input class="generate-toggle" type="checkbox" checked>
                                         <i class="state"></i>
                                     </span>
-                                    <span class="x-dark">Select/Deselect All</span>
+                                    <span class="color-black-50">Select/Deselect All</span>
                                 </label>
 
                                 <label class="custom">
@@ -96,7 +96,7 @@
                                         <input class="generate-toggle" type="checkbox" checked>
                                         <i class="state"></i>
                                     </span>
-                                    <span class="x-dark">Select/Deselect All</span>
+                                    <span class="color-black-50">Select/Deselect All</span>
                                 </label>
 
                                 <label class="custom">
@@ -116,7 +116,7 @@
                                         <input class="generate-toggle" type="checkbox">
                                         <i class="state"></i>
                                     </span>
-                                    <span class="x-dark">Select/Deselect All</span>
+                                    <span class="color-black-50">Select/Deselect All</span>
                                 </label>
 
                                 <label class="custom">
@@ -146,7 +146,7 @@
                                         <input class="generate-toggle" type="checkbox">
                                         <i class="state"></i>
                                     </span>
-                                    <span class="x-dark">Select/Deselect All</span>
+                                    <span class="color-black-50">Select/Deselect All</span>
                                 </label>
 
                                 <label class="custom">
@@ -187,7 +187,7 @@
                                         <input class="generate-toggle" type="checkbox">
                                         <i class="state"></i>
                                     </span>
-                                    <span class="x-dark">Select/Deselect All</span>
+                                    <span class="color-black-50">Select/Deselect All</span>
                                 </label>
 
                                 <label class="custom">
@@ -221,7 +221,7 @@
                                         <input class="generate-toggle" type="checkbox" checked>
                                         <i class="state"></i>
                                     </span>
-                                    <span class="x-dark">Select/Deselect All</span>
+                                    <span class="color-black-50">Select/Deselect All</span>
                                 </label>
 
                                 <label class="custom">
@@ -244,7 +244,7 @@
                                         <input class="generate-toggle" type="checkbox">
                                         <i class="state"></i>
                                     </span>
-                                    <span class="x-dark">Select/Deselect All</span>
+                                    <span class="color-black-50">Select/Deselect All</span>
                                 </label>
 
                                 <label class="custom">
@@ -347,7 +347,7 @@
                                         <input class="generate-toggle" type="checkbox">
                                         <i class="state"></i>
                                     </span>
-                                    <span class="x-dark">Select/Deselect All</span>
+                                    <span class="color-black-50">Select/Deselect All</span>
                                 </label>
 
                                 <label class="custom">
@@ -391,7 +391,7 @@
                                         <input class="generate-toggle" type="checkbox">
                                         <i class="state"></i>
                                     </span>
-                                    <span class="x-dark">Select/Deselect All</span>
+                                    <span class="color-black-50">Select/Deselect All</span>
                                 </label>
 
                                 <label class="custom">
@@ -481,7 +481,7 @@
                                         <input class="generate-toggle" type="checkbox" checked>
                                         <i class="state"></i>
                                     </span>
-                                    <span class="x-dark">Select/Deselect All</span>
+                                    <span class="color-black-50">Select/Deselect All</span>
                                 </label>
 
                                 <label class="custom">
@@ -500,7 +500,7 @@
                         <div class="col-12 no-padding-t">
 
                             <div class="textarea margin-15-b round border-dual ease-form">
-                                <textarea class="x-dark large padding-10" rows="12" placeholder="Generated CSS will be here!"></textarea>
+                                <textarea class="color-black-50 large padding-10" rows="12" placeholder="Generated CSS will be here!"></textarea>
                                 <div class="border-t border-dual">
                                     <div class="inline-block padding-5-r">
                                         <button title="Clear form!" class="generate-clear btn btn-square btn-ghost left ease-btn">
@@ -552,7 +552,7 @@
                                         <input class="generate-toggle" type="checkbox">
                                         <i class="state"></i>
                                     </span>
-                                    <span class="x-dark">Select/Deselect All</span>
+                                    <span class="color-black-50">Select/Deselect All</span>
                                 </label>
 
                                 <label class="custom">
@@ -600,7 +600,7 @@
                                         <input class="generate-toggle" type="checkbox" checked>
                                         <i class="state"></i>
                                     </span>
-                                    <span class="x-dark">Select/Deselect All</span>
+                                    <span class="color-black-50">Select/Deselect All</span>
                                 </label>
 
                                 <label class="custom">
@@ -620,7 +620,7 @@
                                         <input class="generate-toggle" type="checkbox">
                                         <i class="state"></i>
                                     </span>
-                                    <span class="x-dark">Select/Deselect All</span>
+                                    <span class="color-black-50">Select/Deselect All</span>
                                 </label>
 
                                 <label class="custom">
@@ -657,7 +657,7 @@
                                         <input class="generate-toggle" type="checkbox">
                                         <i class="state"></i>
                                     </span>
-                                    <span class="x-dark">Select/Deselect All</span>
+                                    <span class="color-black-50">Select/Deselect All</span>
                                 </label>
 
                                 <label class="custom">
@@ -719,7 +719,7 @@
                                         <input class="generate-toggle" type="checkbox">
                                         <i class="state"></i>
                                     </span>
-                                    <span class="x-dark">Select/Deselect All</span>
+                                    <span class="color-black-50">Select/Deselect All</span>
                                 </label>
 
                                 <label class="custom">
@@ -749,7 +749,7 @@
                                         <input class="generate-toggle" type="checkbox">
                                         <i class="state"></i>
                                     </span>
-                                    <span class="x-dark">Select/Deselect All</span>
+                                    <span class="color-black-50">Select/Deselect All</span>
                                 </label>
 
                                 <label class="custom">
@@ -856,7 +856,7 @@
                                         <input class="generate-toggle" type="checkbox">
                                         <i class="state"></i>
                                     </span>
-                                    <span class="x-dark">Select/Deselect All</span>
+                                    <span class="color-black-50">Select/Deselect All</span>
                                 </label>
 
                                 <label class="custom">
@@ -897,7 +897,7 @@
                                         <input class="generate-toggle" type="checkbox" checked>
                                         <i class="state"></i>
                                     </span>
-                                    <span class="x-dark">Select/Deselect All</span>
+                                    <span class="color-black-50">Select/Deselect All</span>
                                 </label>
 
                                 <label class="custom">
@@ -916,7 +916,7 @@
                         <div class="col-12 no-padding-t">
 
                             <div class="textarea margin-15-b round border-dual ease-form">
-                                <textarea class="x-dark large padding-10" rows="12" placeholder="Generated JS will be here!"></textarea>
+                                <textarea class="color-black-50 large padding-10" rows="12" placeholder="Generated JS will be here!"></textarea>
                                 <div class="border-t border-dual">
                                     <div class="inline-block padding-5-r">
                                         <button title="Clear form!" class="generate-clear btn btn-square btn-ghost left ease-btn">
@@ -955,7 +955,7 @@
                                         <input class="generate-toggle" type="checkbox">
                                         <i class="state"></i>
                                     </span>
-                                    <span class="x-dark">Select/Deselect All</span>
+                                    <span class="color-black-50">Select/Deselect All</span>
                                 </label>
 
                                 <div class="row no-row-gap-v xs-fluid">
@@ -1047,7 +1047,7 @@
                         <div class="col-12 no-padding-t">
 
                             <div class="textarea margin-15-b round border-dual ease-form">
-                                <textarea class="x-dark large padding-10" rows="12" placeholder="Generated icons will be here!"></textarea>
+                                <textarea class="color-black-50 large padding-10" rows="12" placeholder="Generated icons will be here!"></textarea>
                                 <div class="border-t border-dual">
                                     <div class="inline-block padding-5-r">
                                         <button title="Clear form!" class="generate-clear btn btn-square btn-ghost left ease-btn">
