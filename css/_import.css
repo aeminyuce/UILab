@@ -161,6 +161,9 @@
   outline-style: none;
   outline: 0;
 }
+*:not(pre):not(code) {
+  -webkit-font-smoothing: antialiased;
+}
 body,
 input,
 button,

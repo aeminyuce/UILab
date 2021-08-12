@@ -5,6 +5,7 @@
     &,&:before,&:after { box-sizing: border-box; }
     &:not(ul):not(ol) { padding: 0; margin: 0; }
     &:focus { outline-style: none; outline: 0; }
+    &:not(pre):not(code) { -webkit-font-smoothing: antialiased; }
 }
 
 body,input,button,textarea,select { font: @font-size/@line-height @font-family; font-weight: @font-normal; letter-spacing: @letter-spacing; }
