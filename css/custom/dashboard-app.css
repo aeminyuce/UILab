@@ -8,15 +8,15 @@
 }
 .theme-app.ui-bg-light-100,
 .theme-app .ui-bg-light-100:not([class*="theme-"]) {
-  background-color: hsla(214, 100%, 50%, 0.15);
+  background-color: hsla(214, 100%, 60%, 0.15);
 }
 .theme-app.ui-bg-light-200,
 .theme-app .ui-bg-light-200:not([class*="theme-"]) {
-  background-color: hsla(214, 100%, 50%, 0.2);
+  background-color: hsla(214, 100%, 65%, 0.25);
 }
 .theme-app.ui-bg-light-300,
 .theme-app .ui-bg-light-300:not([class*="theme-"]) {
-  background-color: hsla(214, 100%, 50%, 0.25);
+  background-color: hsla(214, 100%, 70%, 0.35);
 }
 .theme-app.ui-bg-dark-100,
 .theme-app .ui-bg-dark-100:not([class*="theme-"]) {
@@ -34,19 +34,19 @@ html:not(.mobile) .theme-app.ui-bg-light-100.hover:hover,
 html:not(.mobile) .theme-app .ui-bg-light-100:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-app.ui-bg-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-app .ui-bg-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(214, 100%, 50%, 0.3);
+  background-color: hsla(214, 100%, 60%, 0.3);
 }
 html:not(.mobile) .theme-app.ui-bg-light-200.hover:hover,
 html:not(.mobile) .theme-app .ui-bg-light-200:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-app.ui-bg-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-app .ui-bg-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(214, 100%, 50%, 0.4);
+  background-color: hsla(214, 100%, 65%, 0.5);
 }
 html:not(.mobile) .theme-app.ui-bg-light-300.hover:hover,
 html:not(.mobile) .theme-app .ui-bg-light-300:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-app.ui-bg-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-app .ui-bg-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(214, 100%, 50%, 0.5);
+  background-color: hsla(214, 100%, 70%, 0.7);
 }
 html:not(.mobile) .theme-app.ui-bg-dark-100.hover:hover,
 html:not(.mobile) .theme-app .ui-bg-dark-100:not([class*="theme-"]).hover:hover,
@@ -76,15 +76,15 @@ html:not(.mobile) .theme-app .ui-bg-dark-300:not([class*="theme-"]).btn:not(.btn
 }
 .theme-app2.ui-bg-light-100,
 .theme-app2 .ui-bg-light-100:not([class*="theme-"]) {
-  background-color: hsla(349, 100%, 53%, 0.15);
+  background-color: hsla(349, 100%, 63%, 0.15);
 }
 .theme-app2.ui-bg-light-200,
 .theme-app2 .ui-bg-light-200:not([class*="theme-"]) {
-  background-color: hsla(349, 100%, 53%, 0.2);
+  background-color: hsla(349, 100%, 68%, 0.25);
 }
 .theme-app2.ui-bg-light-300,
 .theme-app2 .ui-bg-light-300:not([class*="theme-"]) {
-  background-color: hsla(349, 100%, 53%, 0.25);
+  background-color: hsla(349, 100%, 73%, 0.35);
 }
 .theme-app2.ui-bg-dark-100,
 .theme-app2 .ui-bg-dark-100:not([class*="theme-"]) {
@@ -102,19 +102,19 @@ html:not(.mobile) .theme-app2.ui-bg-light-100.hover:hover,
 html:not(.mobile) .theme-app2 .ui-bg-light-100:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-app2.ui-bg-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-app2 .ui-bg-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(349, 100%, 53%, 0.3);
+  background-color: hsla(349, 100%, 63%, 0.3);
 }
 html:not(.mobile) .theme-app2.ui-bg-light-200.hover:hover,
 html:not(.mobile) .theme-app2 .ui-bg-light-200:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-app2.ui-bg-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-app2 .ui-bg-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(349, 100%, 53%, 0.4);
+  background-color: hsla(349, 100%, 68%, 0.5);
 }
 html:not(.mobile) .theme-app2.ui-bg-light-300.hover:hover,
 html:not(.mobile) .theme-app2 .ui-bg-light-300:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-app2.ui-bg-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-app2 .ui-bg-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(349, 100%, 53%, 0.5);
+  background-color: hsla(349, 100%, 73%, 0.7);
 }
 html:not(.mobile) .theme-app2.ui-bg-dark-100.hover:hover,
 html:not(.mobile) .theme-app2 .ui-bg-dark-100:not([class*="theme-"]).hover:hover,
