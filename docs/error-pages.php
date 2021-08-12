@@ -17,7 +17,7 @@
                     </p>
                     <p class="x-large">Sorry, the page you're looking for cannot be reached.<br>Here are few links that may be helpful.</p>
                     <ul class="color-red list-unstyled list-spacer-10 ease-2nd-btn">
-                        <li><a class="btn btn-ghost circle border-dual" href="#">Home</a class="ui-text"></li>
+                        <li><a class="btn btn-ghost circle border-dual" href="#">Home</a class="ui-color"></li>
                         <li><a class="btn btn-ghost circle border-dual" href="#">Help Center</a></li>
                         <li><a class="btn btn-ghost circle border-dual" href="#">Sign In</a></li>
                     </ul>

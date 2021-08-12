@@ -18,7 +18,7 @@
                             <div class="col-static no-fluid">
                                 <div class="col-50">
                                     <button class="btn btn-ghost btn-square circle ui-x-light ease-btn" data-notifier>
-                                        <svg class="icon ui-text"><use href="#bell"/></svg>
+                                        <svg class="icon ui-color"><use href="#bell"/></svg>
                                     </button>
                                 </div>
                                 <div class="row">
@@ -28,7 +28,7 @@
                                 </div>
                                 <div class="col-50 align-r">
                                     <button class="btn btn-ghost btn-square circle ui-x-light ease-btn">
-                                        <svg class="icon ui-text"><use href="#settings"/></svg>
+                                        <svg class="icon ui-color"><use href="#settings"/></svg>
                                     </button>
                                 </div>
                             </div>
@@ -39,7 +39,7 @@
                             <div class="row row-gap-md no-fluid ease-2nd-btn">
                                 <div class="col-4">
                                     <a class="btn btn-multi no-line-height padding-10-v block round ui-x-light" href="#">
-                                        <span class="ui-text x-largest">23</span>
+                                        <span class="ui-color x-largest">23</span>
                                         <span class="block">
                                             <span class="color-black-50 small font-ellipsis">Waiting</span>
                                         </span>
@@ -47,7 +47,7 @@
                                 </div>
                                 <div class="col-4">
                                     <a class="btn btn-multi no-line-height padding-10-v block round ui-x-light" href="#">
-                                        <span class="ui-text x-largest">258</span>
+                                        <span class="ui-color x-largest">258</span>
                                         <span class="block">
                                             <span class="color-black-50 small font-ellipsis">Expert</span>
                                         </span>
@@ -55,7 +55,7 @@
                                 </div>
                                 <div class="col-4">
                                     <a class="btn btn-multi no-line-height padding-10-v block round ui-x-light" href="#">
-                                        <span class="ui-text x-largest">49</span>
+                                        <span class="ui-color x-largest">49</span>
                                         <span class="block">
                                             <span class="color-black-50 small font-ellipsis">First Audit</span>
                                         </span>
@@ -219,7 +219,7 @@
                     <div class="padding-10 no-padding-b icons-no-opacity">
                         <div class="row no-row-gap no-fluid icons-lg icons-thin block-2nd ease-2nd-btn">
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle icons-semibol ui-text">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle icons-semibol ui-color">
                                     <svg class="icon icon-semibold"><use href="#home"/></svg>
                                     <span class="small block">Home</span>
                                 </button>
@@ -258,7 +258,7 @@
                             <div class="col-static no-fluid">
                                 <div class="col-50">
                                     <button class="btn btn-ghost btn-square circle ui-x-light ease-btn" data-notifier>
-                                        <svg class="icon ui-text"><use href="#bell"/></svg>
+                                        <svg class="icon ui-color"><use href="#bell"/></svg>
                                     </button>
                                 </div>
                                 <div class="row">
@@ -268,7 +268,7 @@
                                 </div>
                                 <div class="col-50 align-r">
                                     <button class="btn btn-ghost btn-square circle ui-x-light ease-btn">
-                                        <svg class="icon ui-text"><use href="#settings"/></svg>
+                                        <svg class="icon ui-color"><use href="#settings"/></svg>
                                     </button>
                                 </div>
                             </div>
@@ -624,7 +624,7 @@
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle ui-text">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle ui-color">
                                     <svg class="icon icon-semibold"><use href="#search"/></svg>
                                     <span class="small block">Search</span>
                                 </button>
@@ -657,7 +657,7 @@
                             <div class="col-static no-fluid">
                                 <div class="col-50">
                                     <button class="btn btn-ghost btn-square circle ui-x-light ease-btn" data-notifier>
-                                        <svg class="icon ui-text"><use href="#bell"/></svg>
+                                        <svg class="icon ui-color"><use href="#bell"/></svg>
                                     </button>
                                 </div>
                                 <div class="row">
@@ -667,7 +667,7 @@
                                 </div>
                                 <div class="col-50 align-r">
                                     <button class="btn btn-ghost btn-square circle ui-x-light ease-btn">
-                                        <svg class="icon ui-text"><use href="#settings"/></svg>
+                                        <svg class="icon ui-color"><use href="#settings"/></svg>
                                     </button>
                                 </div>
                             </div>
@@ -752,7 +752,7 @@
                                         </div>
                                         <div class="row no-row-gap">
                                             <div class="text text-icon no-border padding-2 circle ease-form">
-                                                <button class="icon icon-comment-dots theme-app ui-text"></button>
+                                                <button class="icon icon-comment-dots theme-app ui-color"></button>
                                                 <input type="text" placeholder="Type your message">
                                             </div>
                                         </div>
@@ -812,7 +812,7 @@
                                         </div>
                                         <div class="row no-row-gap">
                                             <div class="text text-icon no-border padding-2 circle ease-form">
-                                                <button class="icon icon-comment-dots theme-app ui-text"></button>
+                                                <button class="icon icon-comment-dots theme-app ui-color"></button>
                                                 <input type="text" placeholder="Type your message">
                                             </div>
                                         </div>
@@ -872,7 +872,7 @@
                                         </div>
                                         <div class="row no-row-gap">
                                             <div class="text text-icon no-border padding-2 circle ease-form">
-                                                <button class="icon icon-comment-dots theme-app ui-text"></button>
+                                                <button class="icon icon-comment-dots theme-app ui-color"></button>
                                                 <input type="text" placeholder="Type your message">
                                             </div>
                                         </div>
@@ -932,7 +932,7 @@
                                         </div>
                                         <div class="row no-row-gap">
                                             <div class="text text-icon no-border padding-2 circle ease-form">
-                                                <button class="icon icon-comment-dots theme-app ui-text"></button>
+                                                <button class="icon icon-comment-dots theme-app ui-color"></button>
                                                 <input type="text" placeholder="Type your message">
                                             </div>
                                         </div>
@@ -992,7 +992,7 @@
                                         </div>
                                         <div class="row no-row-gap">
                                             <div class="text text-icon no-border padding-2 circle ease-form">
-                                                <button class="icon icon-comment-dots theme-app ui-text"></button>
+                                                <button class="icon icon-comment-dots theme-app ui-color"></button>
                                                 <input type="text" placeholder="Type your message">
                                             </div>
                                         </div>
@@ -1052,7 +1052,7 @@
                                         </div>
                                         <div class="row no-row-gap">
                                             <div class="text text-icon no-border padding-2 circle ease-form">
-                                                <button class="icon icon-comment-dots theme-app ui-text"></button>
+                                                <button class="icon icon-comment-dots theme-app ui-color"></button>
                                                 <input type="text" placeholder="Type your message">
                                             </div>
                                         </div>
@@ -1082,7 +1082,7 @@
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle ui-text" data-notifier="2">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle ui-color" data-notifier="2">
                                     <svg class="icon icon-semibold"><use href="#comment"/></svg>
                                     <span class="small block">Chat</span>
                                 </button>
@@ -1109,7 +1109,7 @@
                             <div class="col-static no-fluid">
                                 <div class="col-50">
                                     <button class="btn btn-ghost btn-square circle ui-x-light ease-btn" data-notifier>
-                                        <svg class="icon ui-text"><use href="#bell"/></svg>
+                                        <svg class="icon ui-color"><use href="#bell"/></svg>
                                     </button>
                                 </div>
                                 <div class="row">
@@ -1119,7 +1119,7 @@
                                 </div>
                                 <div class="col-50 align-r">
                                     <button class="btn btn-ghost btn-square circle ui-x-light ease-btn">
-                                        <svg class="icon ui-text"><use href="#settings"/></svg>
+                                        <svg class="icon ui-color"><use href="#settings"/></svg>
                                     </button>
                                 </div>
                             </div>
@@ -1235,7 +1235,7 @@
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle ui-text">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle ui-color">
                                     <svg class="icon icon-semibold"><use href="#user"/></svg>
                                     <span class="small block">Profile</span>
                                 </button>

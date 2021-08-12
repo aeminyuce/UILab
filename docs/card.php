@@ -62,7 +62,7 @@
                         </button>
                         <div class="col-static sm-fluid">
                             <div class="col-42 align-c padding-4-v">
-                                <svg class="icon icon-xl theme-default2 ui-text"><use href="#info-circle-fill"/></svg>
+                                <svg class="icon icon-xl theme-default2 ui-color"><use href="#info-circle-fill"/></svg>
                             </div>
                             <div class="row">
                                 <div class="col-12 sm-align-c large">
@@ -84,7 +84,7 @@
                             </button>
                                 <div class="col-static sm-fluid">
                                     <div class="col-42 padding-4-v align-c">
-                                        <svg class="icon icon-xl theme-default2 ui-text"><use href="#info-circle-fill"/></svg>
+                                        <svg class="icon icon-xl theme-default2 ui-color"><use href="#info-circle-fill"/></svg>
                                     </div>
                                     <div class="row">
                                         <div class="col-12 sm-align-c large">
@@ -251,7 +251,7 @@
                 <div class="card round theme-default2 ui-x-light ui-border">
                     <div class="card-side padding-30">
                         <h4>
-                            <svg class="icon icon-xl ui-text"><use href="#help-fill"/></svg>
+                            <svg class="icon icon-xl ui-color"><use href="#help-fill"/></svg>
                             Card Title
                         </h4>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
@@ -262,14 +262,14 @@
                         </a>
                     </div>
                     <div class="card-side padding-30-h padding-15-v ui-light align-r xs-align-c">
-                        <a href="#" class="ui-text underline">Card Footer Link</a>
+                        <a href="#" class="ui-color underline">Card Footer Link</a>
                     </div>
                 </div>
 
                 <div class="card round theme-default ui-x-light ui-border">
                     <div class="card-side padding-30">
                         <h4>
-                            <svg class="icon icon-xl ui-text"><use href="#help"/></svg>
+                            <svg class="icon icon-xl ui-color"><use href="#help"/></svg>
                             Card Title
                         </h4>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
@@ -280,13 +280,13 @@
                         </a>
                     </div>
                     <div class="card-side padding-30-h padding-15-v ui-light align-r xs-align-c">
-                        <a href="#" class="ui-text underline">Card Footer Link</a>
+                        <a href="#" class="ui-color underline">Card Footer Link</a>
                     </div>
                 </div>
 
                 <div class="card-warning padding-30 round theme-default ui-x-light ui-border">
                     <h4>
-                        <svg class="icon icon-xl ui-text"><use href="#help-fill"/></svg>
+                        <svg class="icon icon-xl ui-color"><use href="#help-fill"/></svg>
                         Message Title
                     </h4>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
@@ -299,7 +299,7 @@
 
                 <div class="card-warning padding-30 round theme-green ui-x-light ui-border">
                     <h4>
-                        <svg class="icon icon-xl ui-text"><use href="#help"/></svg>
+                        <svg class="icon icon-xl ui-color"><use href="#help"/></svg>
                         Message Title
                     </h4>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
@@ -312,7 +312,7 @@
 
                 <div class="card-warning padding-30 round theme-yellow ui-x-light ui-border">
                     <h4>
-                        <svg class="icon icon-xl ui-text"><use href="#help-fill"/></svg>
+                        <svg class="icon icon-xl ui-color"><use href="#help-fill"/></svg>
                         Message Title
                     </h4>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.

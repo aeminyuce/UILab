@@ -22,7 +22,7 @@
                             <span class="sp-30"></span>
                             <a href="?l=login-page" class="btn color-white btn-lg btn-ghost btn-ghost-border btn-sm-fluid padding-30-h circle border-dual ui-border ease-btn">
                                 <span class="color-white">Have you already an account?</span>
-                                <span class="ui-text hidden-sm">Click here to login.</span>
+                                <span class="ui-color hidden-sm">Click here to login.</span>
                             </a>
                             <span class="sp-30 margin-20-v"></span>
                         </div>
@@ -122,10 +122,10 @@
                                             <i class="state"></i>
                                         </span>
                                         <span class="color-black-muted">I agree to the</span>
-                                        <a class="font-bold hoverline ui-text" href="#">Terms</a>,
-                                        <a class="font-bold hoverline ui-text" href="#">Privacy Policy</a>
+                                        <a class="font-bold hoverline ui-color" href="#">Terms</a>,
+                                        <a class="font-bold hoverline ui-color" href="#">Privacy Policy</a>
                                         <span class="color-black-muted">and</span>
-                                        <a class="font-bold ui-text" href="#">Fees.</a>
+                                        <a class="font-bold ui-color" href="#">Fees.</a>
                                     </label>
 
                                     <span class="sp-30 margin-15-v"></span>
@@ -134,7 +134,7 @@
                                         <b>SIGN UP NOW</b>
                                     </button>
                                     <span class="sp-30"></span>
-                                    <span class="color-black-muted">Have you any questions?<br>Please,</span> <a class="font-bold hoverline ui-text" href="#">click here</a> <span class="color-black-muted">to access Help Center.</span>
+                                    <span class="color-black-muted">Have you any questions?<br>Please,</span> <a class="font-bold hoverline ui-color" href="#">click here</a> <span class="color-black-muted">to access Help Center.</span>
 
                                 </div>
                             </div>
@@ -149,19 +149,19 @@
                                 </h3>
                                 <ul class="list-unstyled list-spacer-10 color-black-muted x-large icons-sm icons-margin-5-r theme-default2">
                                     <li>
-                                        <svg class="icon ui-text hidden-sm"><use href="#check-circle-fill"/></svg>
+                                        <svg class="icon ui-color hidden-sm"><use href="#check-circle-fill"/></svg>
                                         Work and build around your team.
                                     </li>
                                     <li>
-                                        <svg class="icon ui-text hidden-sm"><use href="#check-circle-fill"/></svg>
+                                        <svg class="icon ui-color hidden-sm"><use href="#check-circle-fill"/></svg>
                                         Whatever work you do, wherever you do it.
                                     </li>
                                     <li>
-                                        <svg class="icon ui-text hidden-sm"><use href="#check-circle-fill"/></svg>
+                                        <svg class="icon ui-color hidden-sm"><use href="#check-circle-fill"/></svg>
                                         Where humans connect.
                                     </li>
                                     <li>
-                                        <svg class="icon ui-text hidden-sm"><use href="#check-circle-fill"/></svg>
+                                        <svg class="icon ui-color hidden-sm"><use href="#check-circle-fill"/></svg>
                                         Expanding your environment.
                                     </li>
                                 </ul>

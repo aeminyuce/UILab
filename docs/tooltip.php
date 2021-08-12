@@ -33,7 +33,7 @@
                 </div>
 
                 <h4>Using with Icons</h4>
-                <div class="theme-default2 icons-xl ui-text padding-30-b hover-t-more-1st ease-1st-layout">
+                <div class="theme-default2 icons-xl ui-color padding-30-b hover-t-more-1st ease-1st-layout">
                     <svg class="icon" data-tooltip title="Like!"><use href="#heart"/></svg>
                     <svg class="icon" data-tooltip title="Somewhere on Earth!"><use href="#marker"/></svg>
                     <svg class="icon" data-tooltip title="Call us now 555 55 55"><use href="#phone"/></svg>
@@ -55,9 +55,9 @@
 
                 <h4>Using with Paragraphs</h4>
                 <div class="ease-1st-form">
-                    Lorem ipsum dolor sit amet, <b class="theme-red ui-x-light ui-text" data-tooltip title="<b>Nulla facilisi.</b><br>Sed purus ligula, commodo vel nisi et, lobortis ultrices erat.<br>Maecenas ac venenatis enim.">consectetur adipiscing elit.</b> Integer vitae enim quis ante lacinia tincidunt nec sed metus. Donec vitae diam non mi pharetra venenatis quis id nisl. Nunc auctor efficitur nunc nec porta. Nullam ut interdum nulla. Duis dapibus, lacus sed lacinia aliquam, orci ex congue magna, eget euismod lectus lacus ac turpis. Vestibulum facilisis tempus nunc, nec auctor risus cursus vitae. Nam cursus tristique orci non vehicula.
+                    Lorem ipsum dolor sit amet, <b class="theme-red ui-x-light ui-color" data-tooltip title="<b>Nulla facilisi.</b><br>Sed purus ligula, commodo vel nisi et, lobortis ultrices erat.<br>Maecenas ac venenatis enim.">consectetur adipiscing elit.</b> Integer vitae enim quis ante lacinia tincidunt nec sed metus. Donec vitae diam non mi pharetra venenatis quis id nisl. Nunc auctor efficitur nunc nec porta. Nullam ut interdum nulla. Duis dapibus, lacus sed lacinia aliquam, orci ex congue magna, eget euismod lectus lacus ac turpis. Vestibulum facilisis tempus nunc, nec auctor risus cursus vitae. Nam cursus tristique orci non vehicula.
                     <br><br>
-                    Proin ultrices metus non ligula ultrices venenatis. <a href="#" class="theme-orange ui-x-light ui-text" data-tooltip title="Please, click following link for details."><b>Etiam id dapibus sapien.</b></a> Sed ac enim tristique, cursus quam id, vehicula dui. Duis vestibulum, velit sit amet auctor tristique, massa elit commodo dui, eu ultricies felis arcu non enim. Cras id semper risus, eu ultrices enim. Aenean ullamcorper eleifend pharetra. Vestibulum varius, libero a congue aliquet, tortor erat suscipit lectus, id consequat nisl tellus vitae risus. Phasellus vestibulum porttitor leo. Maecenas scelerisque tempor lorem a facilisis. Fusce eu dictum eros. Aenean consequat quam est, sit amet cursus enim ultricies et.
+                    Proin ultrices metus non ligula ultrices venenatis. <a href="#" class="theme-orange ui-x-light ui-color" data-tooltip title="Please, click following link for details."><b>Etiam id dapibus sapien.</b></a> Sed ac enim tristique, cursus quam id, vehicula dui. Duis vestibulum, velit sit amet auctor tristique, massa elit commodo dui, eu ultricies felis arcu non enim. Cras id semper risus, eu ultrices enim. Aenean ullamcorper eleifend pharetra. Vestibulum varius, libero a congue aliquet, tortor erat suscipit lectus, id consequat nisl tellus vitae risus. Phasellus vestibulum porttitor leo. Maecenas scelerisque tempor lorem a facilisis. Fusce eu dictum eros. Aenean consequat quam est, sit amet cursus enim ultricies et.
                 </div>
 
         </div>

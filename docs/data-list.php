@@ -71,7 +71,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-default2 ui-text">
+                                        <ul class="steps-bar steps-icon theme-default2 ui-color">
                                             <li>
                                                 <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -103,7 +103,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-red ui-text">
+                                        <ul class="steps-bar steps-icon theme-red ui-color">
                                             <li>
                                                 <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -135,7 +135,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-green ui-text">
+                                        <ul class="steps-bar steps-icon theme-green ui-color">
                                             <li>
                                                 <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -167,7 +167,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-default2 ui-text">
+                                        <ul class="steps-bar steps-icon theme-default2 ui-color">
                                             <li>
                                                 <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -199,7 +199,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-default2 ui-text">
+                                        <ul class="steps-bar steps-icon theme-default2 ui-color">
                                             <li>
                                                 <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -231,7 +231,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-red ui-text">
+                                        <ul class="steps-bar steps-icon theme-red ui-color">
                                             <li>
                                                 <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -263,7 +263,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-green ui-text">
+                                        <ul class="steps-bar steps-icon theme-green ui-color">
                                             <li>
                                                 <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -295,7 +295,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-default2 ui-text">
+                                        <ul class="steps-bar steps-icon theme-default2 ui-color">
                                             <li>
                                                 <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -327,7 +327,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-default2 ui-text">
+                                        <ul class="steps-bar steps-icon theme-default2 ui-color">
                                             <li>
                                                 <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -359,7 +359,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-red ui-text">
+                                        <ul class="steps-bar steps-icon theme-red ui-color">
                                             <li>
                                                 <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -391,7 +391,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-green ui-text">
+                                        <ul class="steps-bar steps-icon theme-green ui-color">
                                             <li>
                                                 <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -423,7 +423,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-default2 ui-text">
+                                        <ul class="steps-bar steps-icon theme-default2 ui-color">
                                             <li>
                                                 <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -460,7 +460,7 @@
                                 </div>
                             </div>
                             <div class="col-8 no-fluid align-r">
-                                <div class="data-paging pagination ease-1st-btn" data-default="btn round" data-active="border-dual theme-default2 ui-border ui-text"></div>
+                                <div class="data-paging pagination ease-1st-btn" data-default="btn round" data-active="border-dual theme-default2 ui-border ui-color"></div>
                             </div>
                         </div>
 

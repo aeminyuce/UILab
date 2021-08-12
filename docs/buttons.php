@@ -58,7 +58,7 @@
                         <a class="btn circle border-dual theme-default ui-dark" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost theme-green ui-dark ui-text" href="#">Button</a>
+                        <a class="btn btn-ghost theme-green ui-dark ui-color" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
                         <a class="btn btn-ghost btn-ghost-border border-l border-lg theme-default2 ui-x-light ui-border" href="#">Button</a>
@@ -73,10 +73,10 @@
                         <a class="btn btn-ghost-border border round theme-orange ui-dark" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost border-dual circle theme-yellow ui-border ui-text" href="#">Button</a>
+                        <a class="btn btn-ghost border-dual circle theme-yellow ui-border ui-color" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost border theme-default2 ui-x-light ui-border ui-text" href="#">Button</a>
+                        <a class="btn btn-ghost border theme-default2 ui-x-light ui-border ui-color" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
                         <a class="btn border round theme-default2 ui-dark" href="#">Button</a>
@@ -392,7 +392,7 @@
                             <svg class="icon"><use href="#angle-left"/></svg>
                         </a>
                         <a class="btn round" href="#">1</a>
-                        <a class="btn btn-active round border-dual ui-border ui-text" href="#">2</a>
+                        <a class="btn btn-active round border-dual ui-border ui-color" href="#">2</a>
                         <a class="btn round" href="#">3</a>
                         <a class="btn round" href="#">4</a>
                         <a class="btn btn-passive round" href="#">...</a>
@@ -412,52 +412,52 @@
                     <div class="col-6">
                         <div class="btn-list align-l icons-margin-10-r form-lg icons-no-opacity theme-green ease-1st-btn">
                             <button class="btn">
-                                <svg class="icon ui-text"><use href="#shield"/></svg>Administration
+                                <svg class="icon ui-color"><use href="#shield"/></svg>Administration
                             </button>
                             <button class="btn">
-                                <svg class="icon ui-text"><use href="#clock"/></svg>Recent History
+                                <svg class="icon ui-color"><use href="#clock"/></svg>Recent History
                             </button>
                             <button class="btn">
-                                <svg class="icon ui-text"><use href="#settings"/></svg>Tools
+                                <svg class="icon ui-color"><use href="#settings"/></svg>Tools
                             </button>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="btn-list align-l icons-margin-10-r form-lg icons-no-opacity theme-red ease-1st-btn">
                             <button class="btn round">
-                                <svg class="icon ui-text"><use href="#shield"/></svg>Administration
+                                <svg class="icon ui-color"><use href="#shield"/></svg>Administration
                             </button>
                             <button class="btn round">
-                                <svg class="icon ui-text"><use href="#clock"/></svg>Recent History
+                                <svg class="icon ui-color"><use href="#clock"/></svg>Recent History
                             </button>
                             <button class="btn round">
-                                <svg class="icon ui-text"><use href="#settings"/></svg>Tools
+                                <svg class="icon ui-color"><use href="#settings"/></svg>Tools
                             </button>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="btn-list align-l icons-margin-10-r form-lg icons-no-opacity theme-orange ease-1st-btn">
                             <button class="btn btn-ghost round border ui-border">
-                                <svg class="icon ui-text"><use href="#shield"/></svg>Administration
+                                <svg class="icon ui-color"><use href="#shield"/></svg>Administration
                             </button>
                             <button class="btn btn-ghost round border ui-border">
-                                <svg class="icon ui-text"><use href="#clock"/></svg>Recent History
+                                <svg class="icon ui-color"><use href="#clock"/></svg>Recent History
                             </button>
                             <button class="btn btn-ghost round border ui-border">
-                                <svg class="icon ui-text"><use href="#settings"/></svg>Tools
+                                <svg class="icon ui-color"><use href="#settings"/></svg>Tools
                             </button>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="btn-list align-l icons-margin-10-r form-lg icons-no-opacity theme-yellow ease-1st-btn">
                             <button class="btn btn-ghost round border-dual ui-border">
-                                <svg class="icon ui-text"><use href="#shield"/></svg>Administration
+                                <svg class="icon ui-color"><use href="#shield"/></svg>Administration
                             </button>
                             <button class="btn btn-ghost round border-dual ui-border">
-                                <svg class="icon ui-text"><use href="#clock"/></svg>Recent History
+                                <svg class="icon ui-color"><use href="#clock"/></svg>Recent History
                             </button>
                             <button class="btn btn-ghost round border-dual ui-border">
-                                <svg class="icon ui-text"><use href="#settings"/></svg>Tools
+                                <svg class="icon ui-color"><use href="#settings"/></svg>Tools
                             </button>
                         </div>
                     </div>

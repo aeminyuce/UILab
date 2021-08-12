@@ -4170,10 +4170,10 @@ input.btn {
 .btn-ghost:not(.btn-show):not(:hover) {
   background-color: transparent !important;
 }
-.btn-ghost:not(.btn-show).ui-dark:not(.ui-text),
-.btn-ghost:not(.btn-show).ui-x-dark:not(.ui-text),
-.btn-ghost:not(.btn-show).ui-dark:not(.ui-text) .icon:not(.ui-text),
-.btn-ghost:not(.btn-show).ui-x-dark:not(.ui-text) .icon:not(.ui-text) {
+.btn-ghost:not(.btn-show).ui-dark:not(.ui-color),
+.btn-ghost:not(.btn-show).ui-x-dark:not(.ui-color),
+.btn-ghost:not(.btn-show).ui-dark:not(.ui-color) .icon:not(.ui-color),
+.btn-ghost:not(.btn-show).ui-x-dark:not(.ui-color) .icon:not(.ui-color) {
   color: hsl(0, 0%, 0%);
   color: var(--black);
 }
@@ -5316,7 +5316,7 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + .state {
   -moz-appearance: none;
   appearance: none;
 }
-.range.ui-text::-webkit-slider-thumb {
+.range.ui-color::-webkit-slider-thumb {
   background-color: currentColor;
 }
 .range::-webkit-slider-runnable-track {
@@ -5348,7 +5348,7 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + .state {
   -moz-appearance: none;
   appearance: none;
 }
-.range.ui-text::-moz-range-thumb {
+.range.ui-color::-moz-range-thumb {
   background-color: currentColor;
 }
 .range::-moz-range-track {
@@ -5383,7 +5383,7 @@ html:not(.mobile) .switch-custom:hover input:indeterminate + .state {
   -moz-appearance: none;
   appearance: none;
 }
-.range.ui-text::-ms-thumb {
+.range.ui-color::-ms-thumb {
   background-color: currentColor;
 }
 .range::-ms-track {
@@ -6924,11 +6924,11 @@ header.sticky-static {
   padding: 0;
   position: relative;
 }
-.timeline.ui-text:after {
+.timeline.ui-color:after {
   background-color: currentColor;
 }
-.timeline.ui-text > li:after,
-.timeline > li.ui-text:after {
+.timeline.ui-color > li:after,
+.timeline > li.ui-color:after {
   border-color: currentColor;
 }
 .timeline:not(.hide-lines):after {
@@ -6959,7 +6959,7 @@ header.sticky-static {
   background-color: hsl(0, 0%, 100%);
   background-color: var(--card-bg);
 }
-.timeline:not(.hide-lines).ui-text > li:before {
+.timeline:not(.hide-lines).ui-color > li:before {
   background-color: currentColor;
 }
 .timeline:not(:last-child) {
@@ -9974,8 +9974,8 @@ html:not(.mobile) .theme-gray.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):no
 html:not(.mobile) .theme-gray .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(0, 0%, 100%);
 }
-.theme-gray.ui-text,
-.theme-gray .ui-text:not([class*="theme-"]) {
+.theme-gray.ui-color,
+.theme-gray .ui-color:not([class*="theme-"]) {
   color: hsl(0, 0%, 80%);
 }
 .theme-gray.ui-border,
@@ -10022,8 +10022,8 @@ html:not(.mobile) .theme-green.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):n
 html:not(.mobile) .theme-green .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(142, 82%, 62%);
 }
-.theme-green.ui-text,
-.theme-green .ui-text:not([class*="theme-"]) {
+.theme-green.ui-color,
+.theme-green .ui-color:not([class*="theme-"]) {
   color: hsl(142, 82%, 42%);
 }
 .theme-green.ui-border,
@@ -10070,8 +10070,8 @@ html:not(.mobile) .theme-yellow.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):
 html:not(.mobile) .theme-yellow .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(42, 100%, 70%);
 }
-.theme-yellow.ui-text,
-.theme-yellow .ui-text:not([class*="theme-"]) {
+.theme-yellow.ui-color,
+.theme-yellow .ui-color:not([class*="theme-"]) {
   color: hsl(42, 100%, 50%);
 }
 .theme-yellow.ui-border,
@@ -10118,8 +10118,8 @@ html:not(.mobile) .theme-orange.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):
 html:not(.mobile) .theme-orange .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(30, 100%, 70%);
 }
-.theme-orange.ui-text,
-.theme-orange .ui-text:not([class*="theme-"]) {
+.theme-orange.ui-color,
+.theme-orange .ui-color:not([class*="theme-"]) {
   color: hsl(30, 100%, 50%);
 }
 .theme-orange.ui-border,
@@ -10166,8 +10166,8 @@ html:not(.mobile) .theme-red.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not
 html:not(.mobile) .theme-red .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(0, 74%, 75%);
 }
-.theme-red.ui-text,
-.theme-red .ui-text:not([class*="theme-"]) {
+.theme-red.ui-color,
+.theme-red .ui-color:not([class*="theme-"]) {
   color: hsl(0, 74%, 55%);
 }
 .theme-red.ui-border,
@@ -10214,8 +10214,8 @@ html:not(.mobile) .theme-default.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost)
 html:not(.mobile) .theme-default .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(226, 52%, 70%);
 }
-.theme-default.ui-text,
-.theme-default .ui-text:not([class*="theme-"]) {
+.theme-default.ui-color,
+.theme-default .ui-color:not([class*="theme-"]) {
   color: hsl(226, 52%, 50%);
 }
 .theme-default.ui-border,
@@ -10262,8 +10262,8 @@ html:not(.mobile) .theme-default2.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost
 html:not(.mobile) .theme-default2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(206, 87%, 70%);
 }
-.theme-default2.ui-text,
-.theme-default2 .ui-text:not([class*="theme-"]) {
+.theme-default2.ui-color,
+.theme-default2 .ui-color:not([class*="theme-"]) {
   color: hsl(206, 87%, 50%);
 }
 .theme-default2.ui-border,
@@ -10271,10 +10271,10 @@ html:not(.mobile) .theme-default2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn
   border-color: hsl(206, 87%, 50%);
 }
 [data-theme="dark"] .set-dark:not(.theme-gray)[class*="theme-"][class*="ui-"],
-[data-theme="dark"] .set-dark:not(.theme-light)[class*="theme-"] [class*="ui-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) {
+[data-theme="dark"] .set-dark:not(.theme-light)[class*="theme-"] [class*="ui-"]:not([class*="theme-"]):not(.ui-color):not(.ui-border) {
   background-color: hsl(216, 19%, 5%);
 }
 [data-theme="dark"] .set-dark:not(.theme-gray)[class*="theme-"][class*="ui-x-"],
-[data-theme="dark"] .set-dark:not(.theme-light)[class*="theme-"] [class*="ui-x-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) {
+[data-theme="dark"] .set-dark:not(.theme-light)[class*="theme-"] [class*="ui-x-"]:not([class*="theme-"]):not(.ui-color):not(.ui-border) {
   background-color: hsl(220, 18%, 3%);
 }

@@ -77,25 +77,25 @@
                 <div class="countdown row row-gap-sm-h no-fluid theme-default2">
                     <div class="col-3">
                         <div class="border ui-border round padding-10">
-                            <b class="d ui-text largest block">05</b>
+                            <b class="d ui-color largest block">05</b>
                             <span class="color-black-muted">days</span>
                         </div>
                     </div>
                     <div class="col-3">
                         <div class="border ui-border round padding-10">
-                            <b class="h ui-text largest block">24</b>
+                            <b class="h ui-color largest block">24</b>
                             <span class="color-black-muted">hours</span>
                         </div>
                     </div>
                     <div class="col-3">
                         <div class="border ui-border round padding-10">
-                            <b class="m ui-text largest block">24</b>
+                            <b class="m ui-color largest block">24</b>
                             <span class="color-black-muted">minutes</span>
                         </div>
                     </div>
                     <div class="col-3">
                         <div class="border ui-border round padding-10">
-                            <b class="s ui-text largest block">10</b>
+                            <b class="s ui-color largest block">10</b>
                             <span class="color-black-muted">seconds</span>
                         </div>
                     </div>

@@ -137,7 +137,7 @@
             <!-- sidebar -->
             <div class="col-250 theme-gray ui-light hidden-md">
                 <div class="align-l sm-align-c padding-20-t form-lg add-mobile-menu-r">
-                    <h4 class="font-bold padding-10-h theme-default2 ui-text">UI</h4>
+                    <h4 class="font-bold padding-10-h theme-default2 ui-color">UI</h4>
                     <ul class="list-unstyled block-2nd ease-2nd-button">
                         <li><a class="btn btn-ghost" href="?p=alerts">Alerts</a></li>
                         <li><a class="btn btn-ghost" href="?p=breadcrumbs">Breadcrumbs</a></li>
@@ -170,7 +170,7 @@
                         <li><a class="btn btn-ghost" href="?p=typography">Typography</a></li>
                         <li><a class="btn btn-ghost" href="?p=weather">Weather</a></li>
                     </ul>
-                    <h4 class="font-bold padding-10-h theme-default2 ui-text">JS</h4>
+                    <h4 class="font-bold padding-10-h theme-default2 ui-color">JS</h4>
                     <ul class="list-unstyled block-2nd ease-2nd-button">
                         <li><a class="btn btn-ghost" href="?p=selector">Selector</a></li>
                         <li><a class="btn btn-ghost" href="?p=events">Events</a></li>
@@ -189,7 +189,7 @@
                             <p class="large xs-align-c">CSS &amp; JavaScript powered responsive design system.</p>
                             <div class="form-lg ease-1st-btn">
                                 <a href="?p=icons" class="btn btn-xs-fluid padding-30-h circle theme-default2">
-                                    <svg class="icon margin-5-r no-opacity ui-text"><use href="#draw"/></svg> See Icons
+                                    <svg class="icon margin-5-r no-opacity ui-color"><use href="#draw"/></svg> See Icons
                                 </a>
                                 <a href="?p=download" class="btn btn-xs-fluid padding-30-h circle theme-default2 ui-dark">
                                     Download <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>

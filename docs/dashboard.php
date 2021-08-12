@@ -19,7 +19,7 @@
                     </button>
                 </div>
 
-                <div class="tabs align-l icons-no-opacity theme-panel2 ease-tabs ease-1st-btn scroll-v add-mobile-menu-l" data-classes="ui-text">
+                <div class="tabs align-l icons-no-opacity theme-panel2 ease-tabs ease-1st-btn scroll-v add-mobile-menu-l" data-classes="ui-color">
 
                     <div class="padding-10">
                         <div class="small margin-10-b color-white-muted">Personal Activity</div>
@@ -60,14 +60,14 @@
                         Dashboard
                     </a>
 
-                    <button class="tab btn-toggle btn btn-lg btn-ghost padding-10-r block ui-text active">
+                    <button class="tab btn-toggle btn btn-lg btn-ghost padding-10-r block ui-color active">
                         <svg class="icon margin-15-r"><use href="#users"/></svg>
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Employees
                     </button>
 
                     <div class="tab-content padding-15-v padding-3-l open open-ease">
-                        <ul class="tabs list-spacer-15 padding-20-l ease-2nd-btn" data-classes="ui-text">
+                        <ul class="tabs list-spacer-15 padding-20-l ease-2nd-btn" data-classes="ui-color">
                             <li>
                                 <a class="tab btn-toggle opacity" href="#">
                                     <svg class="toggle-icon icon margin-10-r right"><use href="#arrow-down"/></svg>
@@ -249,10 +249,10 @@
                             <svg class="icon"><use href="#grid-column"/></svg>
                         </button>
                         <div class="content round shadow-lg no-scroll">
-                            <div class="tabs xs-full-width theme-panel2 <" data-classes="border-b border-lg ui-border ui-text" style="min-width: 300px;">
+                            <div class="tabs xs-full-width theme-panel2 <" data-classes="border-b border-lg ui-border ui-color" style="min-width: 300px;">
 
                                 <div class="btn-holder color-black-muted align-c border-b ease-1st-btn">
-                                    <button class="tab btn btn-ghost round-t border-b border-lg ui-border ui-text active" data-tooltip data-only="desktop" title="Favorites">
+                                    <button class="tab btn btn-ghost round-t border-b border-lg ui-border ui-color active" data-tooltip data-only="desktop" title="Favorites">
                                         <svg class="icon ui-no"><use href="#star"/></svg>
                                     </button>
                                     <button class="tab btn btn-ghost round-t" data-tooltip data-only="desktop" title="History">
@@ -327,10 +327,10 @@
                             <svg class="icon"><use href="#bars-right"/></svg>
                         </button>
                         <div class="content round shadow-lg no-scroll">
-                            <div class="tabs xs-full-width theme-panel2 ease-tabs" data-classes="border-b border-lg ui-border ui-text" style="min-width: 300px;">
+                            <div class="tabs xs-full-width theme-panel2 ease-tabs" data-classes="border-b border-lg ui-border ui-color" style="min-width: 300px;">
 
                                 <div class="btn-holder color-black-muted align-c border-b ease-1st-btn">
-                                    <button class="tab btn btn-ghost round-t border-b border-lg ui-border ui-text active" data-tooltip data-only="desktop" title="Notifications">
+                                    <button class="tab btn btn-ghost round-t border-b border-lg ui-border ui-color active" data-tooltip data-only="desktop" title="Notifications">
                                         <svg class="icon ui-no"><use href="#bell"/></svg>
                                     </button>
                                     <button class="tab btn btn-ghost round-t" data-tooltip data-only="desktop" title="Notes">
@@ -519,14 +519,14 @@
             <!-- header: end -->
 
             <!-- layouts: start -->
-            <div class="tabs ease-tabs padding-15-b" data-classes="border-lg border-b ui-border ui-text">
+            <div class="tabs ease-tabs padding-15-b" data-classes="border-lg border-b ui-border ui-color">
 
                 <div class="container">
                     <div class="row border-b margin-15-b theme-panel2">
                         <div class="col-4 offset-4 no-padding-b">
 
                             <div class="btn-holder color-black-muted form-lg ease-1st-btn">
-                                <button class="tab btn btn-ghost round-t border-lg border-b ui-border ui-text active">Forms</button>
+                                <button class="tab btn btn-ghost round-t border-lg border-b ui-border ui-color active">Forms</button>
                                 <button class="tab btn btn-ghost round-t">Dashboard</button>
                             </div>
 
@@ -749,7 +749,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-100 align-r">
-                                                        <span class="x-largest ui-text">157</span>
+                                                        <span class="x-largest ui-color">157</span>
                                                     </div>
                                                 </div>
                                                 <div class="progress-bar margin-15-t progress round">
@@ -772,7 +772,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-100 align-r">
-                                                        <span class="x-largest ui-text">23</span>
+                                                        <span class="x-largest ui-color">23</span>
                                                     </div>
                                                 </div>
                                                 <div class="progress-bar margin-15-t progress round">
@@ -795,7 +795,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-100 align-r">
-                                                        <span class="x-largest ui-text">256</span>
+                                                        <span class="x-largest ui-color">256</span>
                                                     </div>
                                                 </div>
                                                 <div class="progress-bar margin-15-t progress round">
@@ -818,7 +818,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-100 align-r">
-                                                        <span class="x-largest ui-text">256</span>
+                                                        <span class="x-largest ui-color">256</span>
                                                     </div>
                                                 </div>
                                                 <div class="progress-bar margin-15-t progress round">
@@ -901,10 +901,10 @@
 
                             <div class="col-xl-3 col-lg-6 col-12 col-md-6">
                                 <div class="card full-h padding-15 padding-10-t round shadow-lg" style="min-height: 350px;">
-                                    <div class="tabs theme-panel2 ease-tabs" data-classes="border-b border-lg ui-border ui-text">
+                                    <div class="tabs theme-panel2 ease-tabs" data-classes="border-b border-lg ui-border ui-color">
 
                                         <div class="btn-holder color-black-muted align-c margin-10-b border-b form-lg ease-1st-btn">
-                                            <button class="tab btn btn-ghost round-t border-b border-lg ui-border ui-text active">Delayed</button>
+                                            <button class="tab btn btn-ghost round-t border-b border-lg ui-border ui-color active">Delayed</button>
                                             <button class="tab btn btn-ghost round-t">Paused</button>
                                         </div>
                                         <div class="tab-content set-absolute set-h scroll-v open open-ease" style="top: 62px; bottom: 15px;">
@@ -1114,10 +1114,10 @@
 
                             <div class="col-xl-3 col-lg-6 col-12 col-md-6">
                                 <div class="card full-h padding-15 padding-10-t round shadow-lg" style="min-height: 350px;">
-                                    <div class="tabs form-lg theme-panel2 ease-tabs" data-classes="border-b border-lg ui-border ui-text">
+                                    <div class="tabs form-lg theme-panel2 ease-tabs" data-classes="border-b border-lg ui-border ui-color">
 
                                         <div class="btn-holder color-black-muted align-c margin-10-b border-b ease-1st-btn">
-                                            <button class="tab btn btn-ghost round-t border-b border-lg ui-border ui-text active">News</button>
+                                            <button class="tab btn btn-ghost round-t border-b border-lg ui-border ui-color active">News</button>
                                             <button class="tab btn btn-ghost round-t">Announcements</button>
                                         </div>
                                         <div class="tab-content set-absolute set-h scroll-v open open-ease" style="top: 62px; bottom: 15px;">
@@ -1312,7 +1312,7 @@
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                                     </div>
                                                     <div class="col-7">
-                                                        <ul class="steps-bar steps-icon theme-yellow ui-text">
+                                                        <ul class="steps-bar steps-icon theme-yellow ui-color">
                                                             <li>
                                                                 <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
                                                             </li>
@@ -1441,7 +1441,7 @@
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                                     </div>
                                                     <div class="col-7">
-                                                        <ul class="steps-bar steps-icon theme-yellow ui-text">
+                                                        <ul class="steps-bar steps-icon theme-yellow ui-color">
                                                             <li>
                                                                 <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
                                                             </li>
@@ -1569,7 +1569,7 @@
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                                     </div>
                                                     <div class="col-7">
-                                                        <ul class="steps-bar steps-icon theme-yellow ui-text">
+                                                        <ul class="steps-bar steps-icon theme-yellow ui-color">
                                                             <li>
                                                                 <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
                                                             </li>
@@ -1697,7 +1697,7 @@
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                                     </div>
                                                     <div class="col-7">
-                                                        <ul class="steps-bar steps-icon theme-yellow ui-text">
+                                                        <ul class="steps-bar steps-icon theme-yellow ui-color">
                                                             <li>
                                                                 <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
                                                             </li>

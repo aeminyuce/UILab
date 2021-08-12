@@ -58,12 +58,12 @@ each(@theme-colors, {
         @media (prefers-color-scheme: dark) {
             .set-dark {
                 &:not(.theme-gray)[class*="theme-"][class*="ui-"],
-                &:not(.theme-light)[class*="theme-"] [class*="ui-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) {
+                &:not(.theme-light)[class*="theme-"] [class*="ui-"]:not([class*="theme-"]):not(.ui-color):not(.ui-border) {
                     background-color: @set-dark;
                 }
 
                 &:not(.theme-gray)[class*="theme-"][class*="ui-x-"],
-                &:not(.theme-light)[class*="theme-"] [class*="ui-x-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) {
+                &:not(.theme-light)[class*="theme-"] [class*="ui-x-"]:not([class*="theme-"]):not(.ui-color):not(.ui-border) {
                     background-color: @set-x-dark;
                 }
             }
@@ -73,12 +73,12 @@ each(@theme-colors, {
         [data-theme="dark"] {
             .set-dark {
                 &:not(.theme-gray)[class*="theme-"][class*="ui-"],
-                &:not(.theme-light)[class*="theme-"] [class*="ui-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) {
+                &:not(.theme-light)[class*="theme-"] [class*="ui-"]:not([class*="theme-"]):not(.ui-color):not(.ui-border) {
                     background-color: @set-dark;
                 }
 
                 &:not(.theme-gray)[class*="theme-"][class*="ui-x-"],
-                &:not(.theme-light)[class*="theme-"] [class*="ui-x-"]:not([class*="theme-"]):not(.ui-text):not(.ui-border) {
+                &:not(.theme-light)[class*="theme-"] [class*="ui-x-"]:not([class*="theme-"]):not(.ui-color):not(.ui-border) {
                     background-color: @set-x-dark;
                 }
             }

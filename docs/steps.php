@@ -12,7 +12,7 @@
                         <li></li>
                     </ul>
                     <span class="sp-15"></span>
-                    <ul class="steps-bar theme-yellow ui-text">
+                    <ul class="steps-bar theme-yellow ui-color">
                         <li></li>
                         <li class="active"></li>
                         <li></li>
@@ -26,13 +26,13 @@
                         <li>Step Name Here</li>
                     </ul>
                     <span class="sp-15"></span>
-                    <ul class="steps-bar theme-yellow ui-text">
+                    <ul class="steps-bar theme-yellow ui-color">
                         <li>Step Name Here</li>
                         <li>Step Name Here</li>
                         <li class="active">Step Name Here</li>
                     </ul>
                     <span class="sp-15"></span>
-                    <ul class="steps-bar theme-yellow ui-text">
+                    <ul class="steps-bar theme-yellow ui-color">
                         <li>Step Name Here</li>
                         <li>Step Name Here</li>
                     </ul>
@@ -47,7 +47,7 @@
                         <li>Step Name Here</li>
                     </ul>
                     <span class="sp-15"></span>
-                    <ul class="steps-bar theme-orange ui-text">
+                    <ul class="steps-bar theme-orange ui-color">
                         <li>
                             <span data-tooltip title="Completed"></span>
                             Step Name Here
@@ -120,7 +120,7 @@
                             <li></li>
                         </ul>
                         <span class="sp-15"></span>
-                        <ul class="steps-bar theme-yellow ui-text">
+                        <ul class="steps-bar theme-yellow ui-color">
                             <li></li>
                             <li class="active"></li>
                             <li></li>
@@ -134,7 +134,7 @@
                             <li>Step Name Here</li>
                         </ul>
                         <span class="sp-15"></span>
-                        <ul class="steps-bar theme-yellow ui-text">
+                        <ul class="steps-bar theme-yellow ui-color">
                             <li>Step Name Here</li>
                             <li class="active">Step Name Here</li>
                             <li>Step Name Here</li>
@@ -150,7 +150,7 @@
                             <li>Step Name Here</li>
                         </ul>
                         <span class="sp-15"></span>
-                        <ul class="steps-bar theme-orange ui-text">
+                        <ul class="steps-bar theme-orange ui-color">
                             <li>
                                 <span data-tooltip title="Completed"></span>
                                 Step Name Here

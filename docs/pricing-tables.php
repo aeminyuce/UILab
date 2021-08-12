@@ -13,7 +13,7 @@
 
                         <div class="card full-h padding-30 round shadow">
                             <div class="margin-30-v">
-                                <svg class="icon icon-72 theme-default2 ui-text"><use href="#box"/></svg>
+                                <svg class="icon icon-72 theme-default2 ui-color"><use href="#box"/></svg>
                             </div>
                             <h2 class="font-bold margin-15-v">Free</h2>
                             <h4 class="color-black-50">1 End Product License</h4>
@@ -49,7 +49,7 @@
 
                         <div class="card full-h padding-30 round shadow">
                             <div class="margin-30-v">
-                                <svg class="icon icon-72 theme-default2 ui-text"><use href="#wallet"/></svg>
+                                <svg class="icon icon-72 theme-default2 ui-color"><use href="#wallet"/></svg>
                             </div>
                             <h2 class="font-bold margin-15-v">$49</h2>
                             <h4 class="color-black-50">Enterprise License</h4>
@@ -73,7 +73,7 @@
                         <div class="card full-h round shadow">
                             <div class="card-side padding-30 border-b">
                                 <div class="margin-30-v">
-                                    <svg class="icon icon-72 theme-default2 ui-text"><use href="#box"/></svg>
+                                    <svg class="icon icon-72 theme-default2 ui-color"><use href="#box"/></svg>
                                 </div>
                                 <h2 class="font-bold margin-15-v">Free</h2>
                                 <h4 class="color-black-50">1 End Product License</h4>
@@ -150,7 +150,7 @@
                         <div class="card full-h round shadow">
                             <div class="card-side padding-30 border-b">
                                 <div class="margin-30-v">
-                                    <svg class="icon icon-72 theme-default2 ui-text"><use href="#wallet"/></svg>
+                                    <svg class="icon icon-72 theme-default2 ui-color"><use href="#wallet"/></svg>
                                 </div>
                                 <h2 class="font-bold margin-15-v">$49</h2>
                                 <h4 class="color-black-50">Enterprise License</h4>

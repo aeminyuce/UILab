@@ -34,20 +34,20 @@ html:not(.mobile) .theme-app.ui-dark.hover:hover,
 html:not(.mobile) .theme-app .ui-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-app.ui-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-app .ui-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(214, 100%, 70%);
+  background-color: hsl(214, 100%, 65%);
 }
 .theme-app.ui-x-dark,
 .theme-app .ui-x-dark:not([class*="theme-"]) {
-  background-color: hsl(214, 100%, 40%);
+  background-color: hsl(214, 100%, 25%);
 }
 html:not(.mobile) .theme-app.ui-x-dark.hover:hover,
 html:not(.mobile) .theme-app .ui-x-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-app.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-app .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(214, 100%, 45%);
+  background-color: hsl(214, 100%, 70%);
 }
-.theme-app.ui-text,
-.theme-app .ui-text:not([class*="theme-"]) {
+.theme-app.ui-color,
+.theme-app .ui-color:not([class*="theme-"]) {
   color: hsl(214, 100%, 50%);
 }
 .theme-app.ui-border,
@@ -82,20 +82,20 @@ html:not(.mobile) .theme-app2.ui-dark.hover:hover,
 html:not(.mobile) .theme-app2 .ui-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-app2.ui-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-app2 .ui-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(349, 100%, 73%);
+  background-color: hsl(349, 100%, 68%);
 }
 .theme-app2.ui-x-dark,
 .theme-app2 .ui-x-dark:not([class*="theme-"]) {
-  background-color: hsl(349, 100%, 43%);
+  background-color: hsl(349, 100%, 28%);
 }
 html:not(.mobile) .theme-app2.ui-x-dark.hover:hover,
 html:not(.mobile) .theme-app2 .ui-x-dark:not([class*="theme-"]).hover:hover,
 html:not(.mobile) .theme-app2.ui-x-dark.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
 html:not(.mobile) .theme-app2 .ui-x-dark:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(349, 100%, 48%);
+  background-color: hsl(349, 100%, 73%);
 }
-.theme-app2.ui-text,
-.theme-app2 .ui-text:not([class*="theme-"]) {
+.theme-app2.ui-color,
+.theme-app2 .ui-color:not([class*="theme-"]) {
   color: hsl(349, 100%, 53%);
 }
 .theme-app2.ui-border,
