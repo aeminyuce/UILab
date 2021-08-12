@@ -3609,46 +3609,46 @@ a {
   color: hsl(0, 0%, 0%);
   color: var(--black);
 }
-.text-green,
-.text-green .icon:not([class*="ui-"]),
-.text-green a:not([class*="ui-"]),
-.text-green button:not([class*="ui-"]) {
+.color-green,
+.color-green .icon:not([class*="ui-"]),
+.color-green a:not([class*="ui-"]),
+.color-green button:not([class*="ui-"]) {
   color: hsl(142, 82%, 42%) !important;
 }
-.text-yellow,
-.text-yellow .icon:not([class*="ui-"]),
-.text-yellow a:not([class*="ui-"]),
-.text-yellow button:not([class*="ui-"]) {
+.color-yellow,
+.color-yellow .icon:not([class*="ui-"]),
+.color-yellow a:not([class*="ui-"]),
+.color-yellow button:not([class*="ui-"]) {
   color: hsl(42, 100%, 50%) !important;
 }
-.text-orange,
-.text-orange .icon:not([class*="ui-"]),
-.text-orange a:not([class*="ui-"]),
-.text-orange button:not([class*="ui-"]) {
+.color-orange,
+.color-orange .icon:not([class*="ui-"]),
+.color-orange a:not([class*="ui-"]),
+.color-orange button:not([class*="ui-"]) {
   color: hsl(30, 100%, 50%) !important;
 }
-.text-red,
-.text-red .icon:not([class*="ui-"]),
-.text-red a:not([class*="ui-"]),
-.text-red button:not([class*="ui-"]) {
+.color-red,
+.color-red .icon:not([class*="ui-"]),
+.color-red a:not([class*="ui-"]),
+.color-red button:not([class*="ui-"]) {
   color: hsl(0, 74%, 55%) !important;
 }
-.text-blue,
-.text-blue .icon:not([class*="ui-"]),
-.text-blue a:not([class*="ui-"]),
-.text-blue button:not([class*="ui-"]) {
+.color-blue,
+.color-blue .icon:not([class*="ui-"]),
+.color-blue a:not([class*="ui-"]),
+.color-blue button:not([class*="ui-"]) {
   color: hsl(212, 64%, 38%) !important;
 }
-.text-default,
-.text-default .icon:not([class*="ui-"]),
-.text-default a:not([class*="ui-"]),
-.text-default button:not([class*="ui-"]) {
+.color-default,
+.color-default .icon:not([class*="ui-"]),
+.color-default a:not([class*="ui-"]),
+.color-default button:not([class*="ui-"]) {
   color: hsl(226, 52%, 50%) !important;
 }
-.text-default2,
-.text-default2 .icon:not([class*="ui-"]),
-.text-default2 a:not([class*="ui-"]),
-.text-default2 button:not([class*="ui-"]) {
+.color-default2,
+.color-default2 .icon:not([class*="ui-"]),
+.color-default2 a:not([class*="ui-"]),
+.color-default2 button:not([class*="ui-"]) {
   color: hsl(206, 87%, 50%) !important;
 }
 .font-lead {

@@ -164,7 +164,7 @@
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_01.jpg" alt="">
                                 <b class="large">Captain Marvel</b>
                                 <span class="x-dark margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
-                                <svg class="icon icon-xs text-yellow"><use href="#star-fill"/></svg>
+                                <svg class="icon icon-xs color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block margin-2-l margin-10-r">
                                     7,0 <span class="dark">/10</span> &nbsp; 7+
                                 </span>
@@ -175,7 +175,7 @@
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_02.jpg" alt="">
                                 <b class="large">Avengers: Endgame</b>
                                 <span class="x-dark margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
-                                <svg class="icon icon-xs text-yellow"><use href="#star-fill"/></svg>
+                                <svg class="icon icon-xs color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block margin-2-l margin-10-r">
                                     8,7 <span class="dark">/10</span> &nbsp; 8+
                                 </span>
@@ -186,7 +186,7 @@
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_03.jpg" alt="">
                                 <b class="large">Captain America</b>
                                 <span class="x-dark margin-5-b block">2014 &nbsp; Action, Sci-Fi</span>
-                                <svg class="icon icon-xs text-yellow"><use href="#star-fill"/></svg>
+                                <svg class="icon icon-xs color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block margin-2-l margin-10-r">
                                     7,8 <span class="dark">/10</span> &nbsp; 13+
                                 </span>
@@ -197,7 +197,7 @@
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_04.jpg" alt="">
                                 <b class="large">Ant-Man</b>
                                 <span class="x-dark margin-5-b block">2015 &nbsp; Action, Comedy</span>
-                                <svg class="icon icon-xs text-yellow"><use href="#star-fill"/></svg>
+                                <svg class="icon icon-xs color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block margin-2-l margin-10-r">
                                     7,3 <span class="dark">/10</span> &nbsp; 13+
                                 </span>
@@ -208,7 +208,7 @@
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_05.jpg" alt="">
                                 <b class="large">Venom</b>
                                 <span class="x-dark margin-5-b block">2018 &nbsp; Action, Thriller</span>
-                                <svg class="icon icon-xs text-yellow"><use href="#star-fill"/></svg>
+                                <svg class="icon icon-xs color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block margin-2-l margin-10-r">
                                     6,7 <span class="dark">/10</span> &nbsp; 15+
                                 </span>
@@ -219,7 +219,7 @@
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_06.jpg" alt="">
                                 <b class="large">Justice League</b>
                                 <span class="x-dark margin-5-b block">2017 &nbsp; Action, Fantasy</span>
-                                <svg class="icon icon-xs text-yellow"><use href="#star-fill"/></svg>
+                                <svg class="icon icon-xs color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block margin-2-l margin-10-r">
                                     6,4 <span class="dark">/10</span> &nbsp; 13+
                                 </span>
@@ -230,7 +230,7 @@
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_01.jpg" alt="">
                                 <b class="large">Captain Marvel</b>
                                 <span class="x-dark margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
-                                <svg class="icon icon-xs text-yellow"><use href="#star-fill"/></svg>
+                                <svg class="icon icon-xs color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block margin-2-l margin-10-r">
                                     7,0 <span class="dark">/10</span> &nbsp; 7+
                                 </span>
@@ -241,7 +241,7 @@
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_02.jpg" alt="">
                                 <b class="large">Avengers: Endgame</b>
                                 <span class="x-dark margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
-                                <svg class="icon icon-xs text-yellow"><use href="#star-fill"/></svg>
+                                <svg class="icon icon-xs color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block margin-2-l margin-10-r">
                                     8,7 <span class="dark">/10</span> &nbsp; 8+
                                 </span>
@@ -252,7 +252,7 @@
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_03.jpg" alt="">
                                 <b class="large">Captain America</b>
                                 <span class="x-dark margin-5-b block">2014 &nbsp; Action, Sci-Fi</span>
-                                <svg class="icon icon-xs text-yellow"><use href="#star-fill"/></svg>
+                                <svg class="icon icon-xs color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block margin-2-l margin-10-r">
                                     7,8 <span class="dark">/10</span> &nbsp; 13+
                                 </span>
@@ -263,7 +263,7 @@
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_04.jpg" alt="">
                                 <b class="large">Ant-Man</b>
                                 <span class="x-dark margin-5-b block">2015 &nbsp; Action, Comedy</span>
-                                <svg class="icon icon-xs text-yellow"><use href="#star-fill"/></svg>
+                                <svg class="icon icon-xs color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block margin-2-l margin-10-r">
                                     7,3 <span class="dark">/10</span> &nbsp; 13+
                                 </span>
@@ -274,7 +274,7 @@
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_05.jpg" alt="">
                                 <b class="large">Venom</b>
                                 <span class="x-dark margin-5-b block">2018 &nbsp; Action, Thriller</span>
-                                <svg class="icon icon-xs text-yellow"><use href="#star-fill"/></svg>
+                                <svg class="icon icon-xs color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block margin-2-l margin-10-r">
                                     6,7 <span class="dark">/10</span> &nbsp; 15+
                                 </span>
@@ -285,7 +285,7 @@
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_06.jpg" alt="">
                                 <b class="large">Justice League</b>
                                 <span class="x-dark margin-5-b block">2017 &nbsp; Action, Fantasy</span>
-                                <svg class="icon icon-xs text-yellow"><use href="#star-fill"/></svg>
+                                <svg class="icon icon-xs color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block margin-2-l margin-10-r">
                                     6,4 <span class="dark">/10</span> &nbsp; 13+
                                 </span>

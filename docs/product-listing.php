@@ -286,7 +286,7 @@
                                     <li class="circle padding-5 border-dual" style="border-color: hsl(206, 73%, 50%);"></li>
                                 </ul>
                                 <span class="left padding-15-v icons-xs">
-                                    <svg class="icon text-yellow"><use href="#star-fill"/></svg>
+                                    <svg class="icon color-yellow"><use href="#star-fill"/></svg>
                                     <b class="x-dark">4.8</b>
                                     <span class="dark">
                                         <svg class="icon margin-5-l"><use href="#comment"/></svg> 24
@@ -322,7 +322,7 @@
                                     <li class="circle padding-5 border-dual" style="border-color: hsl(0, 0%, 87%);"></li>
                                 </ul>
                                 <span class="left padding-15-v icons-xs">
-                                    <svg class="icon text-yellow"><use href="#star-fill"/></svg>
+                                    <svg class="icon color-yellow"><use href="#star-fill"/></svg>
                                     <b class="x-dark">3.9</b>
                                     <span class="dark">
                                         <svg class="icon margin-5-l"><use href="#comment"/></svg> 9
@@ -358,7 +358,7 @@
                                     <li class="circle padding-5 border-dual" style="border-color: hsl(0, 0%, 23%);"></li>
                                 </ul>
                                 <span class="left padding-15-v icons-xs">
-                                    <svg class="icon text-yellow"><use href="#star-fill"/></svg>
+                                    <svg class="icon color-yellow"><use href="#star-fill"/></svg>
                                     <b class="x-dark">4.3</b>
                                     <span class="dark">
                                         <svg class="icon margin-5-l"><use href="#comment"/></svg> 11
@@ -389,7 +389,7 @@
                                     <li class="circle padding-5 border-dual" style="border-color: hsl(0, 0%, 87%);"></li>
                                 </ul>
                                 <span class="left padding-15-v icons-xs">
-                                    <svg class="icon text-yellow"><use href="#star-fill"/></svg>
+                                    <svg class="icon color-yellow"><use href="#star-fill"/></svg>
                                     <b class="x-dark">4.9</b>
                                     <span class="dark">
                                         <svg class="icon margin-5-l"><use href="#comment"/></svg> 32
@@ -420,7 +420,7 @@
                                     <li class="circle padding-10 border" style="background: hsl(0, 0%, 23%);"></li>
                                 </ul>
                                 <span class="left padding-15-v icons-xs">
-                                    <svg class="icon text-yellow"><use href="#star-fill"/></svg>
+                                    <svg class="icon color-yellow"><use href="#star-fill"/></svg>
                                     <b class="x-dark">4.6</b>
                                     <span class="dark">
                                         <svg class="icon margin-5-l"><use href="#comment"/></svg> 44
@@ -457,7 +457,7 @@
                                     <li class="circle padding-5 border-dual" style="border-color: hsl(0, 0%, 87%);"></li>
                                 </ul>
                                 <span class="left padding-15-v icons-xs">
-                                    <svg class="icon text-yellow"><use href="#star-fill"/></svg>
+                                    <svg class="icon color-yellow"><use href="#star-fill"/></svg>
                                     <b class="x-dark">3.9</b>
                                     <span class="dark">
                                         <svg class="icon margin-5-l"><use href="#comment"/></svg> 9

@@ -23,12 +23,12 @@
                     <span class="dark">.dark</span>
                     <span class="x-dark">.x-dark</span>
                     <span class="xx-dark">.xx-dark</span>
-                    <span class="text-green">.text-green</span>
-                    <span class="text-yellow">.text-yellow</span>
-                    <span class="text-red">.text-red</span>
-                    <span class="text-orange">.text-orange</span>
-                    <span class="text-default">.text-default</span>
-                    <span class="text-default2">.text-default2</span>
+                    <span class="color-green">.color-green</span>
+                    <span class="color-yellow">.color-yellow</span>
+                    <span class="color-red">.color-red</span>
+                    <span class="color-orange">.color-orange</span>
+                    <span class="color-default">.color-default</span>
+                    <span class="color-default2">.color-default2</span>
                 </div>
 
                 <h4>Font Sizes</h4>

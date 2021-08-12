@@ -2,7 +2,7 @@
 /* typography */ @import '_settings.less';
 
 @code-font-family:                      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-@text-colors:                           green yellow orange red blue default default2;
+@font-colors:                           green yellow orange red blue default default2;
 
 @lead-size:                             @x-large;
 
@@ -60,8 +60,8 @@ body,a { ._color-var(black); }
     &,.icon:not([class*="ui-"]),a:not([class*="ui-"]),button:not([class*="ui-"]) { ._color-var(black); }
 }
 
-.text- {
-    each(@text-colors, {
+.color- {
+    each(@font-colors, {
         &@{value} {
             &,.icon:not([class*="ui-"]),a:not([class*="ui-"]),button:not([class*="ui-"]) { color: @@value !important; }
         }
