@@ -18,15 +18,17 @@
                     <div class="theme-gray ui-dark">
                         <span class="color-white">.color-white</span>
                         <span class="color-white">.color-white-50</span>
+                        <span class="color-white-muted">.color-white-muted</span>
                     </div>
-                    <span class="color-white-muted">.color-white-muted</span>
                     <span class="color-black-muted">.color-black-muted</span>
                     <span class="color-black-50">.color-black-50</span>
                     <span class="color-black">.color-black</span>
+                    <span class="clearfix"></span>
                     <span class="color-green">.color-green</span>
                     <span class="color-yellow">.color-yellow</span>
                     <span class="color-red">.color-red</span>
                     <span class="color-orange">.color-orange</span>
+                    <span class="clearfix"></span>
                     <span class="color-default">.color-default</span>
                     <span class="color-default2">.color-default2</span>
                 </div>
