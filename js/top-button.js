@@ -64,39 +64,41 @@ var topButton = {
 
     topButton.Start = function () {
 
-        if (useragents.mobile) { return; } // stop on mobile devices
+        if (useragents.desktop) {
 
-        var re, rex, html, styles;
+            var re, rex, html, styles;
 
-        re = new RegExp('\\s+\\s');
-        rex = new RegExp('^\\s|\\s+$');
+            re = new RegExp('\\s+\\s');
+            rex = new RegExp('^\\s|\\s+$');
 
-        styles = topButton.classes + ' ease-layout';
-        styles = styles.replace(re, ' ').replace(rex, '');
+            styles = topButton.classes + ' ease-layout';
+            styles = styles.replace(re, ' ').replace(rex, '');
 
-        html = '<button class="top-button ' + styles + ' ease-layout" title="' + topButton.titleText + '">' +
-                '<svg class="icon ease-layout"><use href="#' + topButton.icon + '"/></svg>' +
-            '</button>';
+            html = '<button class="top-button ' + styles + ' ease-layout" title="' + topButton.titleText + '">' +
+                    '<svg class="icon ease-layout"><use href="#' + topButton.icon + '"/></svg>' +
+                '</button>';
 
-        selector('body')[0].insertAdjacentHTML('beforeend', html);
-        topBtn = selector('.top-button');
+            selector('body')[0].insertAdjacentHTML('beforeend', html);
+            topBtn = selector('.top-button');
 
-        togglerFnc();
+            togglerFnc();
 
-        // Events
-        events.on('.top-button', 'click', function () {
+            // Events
+            events.on('.top-button', 'click', function () {
 
-            clearInterval(btnAnimate);
-            btnAnimate = setInterval(function () {
+                clearInterval(btnAnimate);
+                btnAnimate = setInterval(function () {
 
-                scrollPos -= (scrollPos / 4);
+                    scrollPos -= (scrollPos / 4);
 
-                window.scrollTo(0, scrollPos);
-                if (scrollPos <= 0) { clearInterval(btnAnimate); }
+                    window.scrollTo(0, scrollPos);
+                    if (scrollPos <= 0) { clearInterval(btnAnimate); }
 
-            }, 10);
+                }, 10);
 
-        });
+            });
+
+        }
 
     };
 

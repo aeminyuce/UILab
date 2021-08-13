@@ -580,14 +580,16 @@ var photoGallery = {
 
                 events.on(img, 'mouseup mouseleave', function () {
 
-                    if (useragents.mobile) { return; }
+                    if (useragents.desktop) {
 
-                    if (imgZoom > 1 && (((imgWidth * imgZoom) > window.innerWidth) || (imgHeight * imgZoom) > window.innerHeight)) { // control image exceeds window size
-                        imgLimits();
+                        if (imgZoom > 1 && (((imgWidth * imgZoom) > window.innerWidth) || (imgHeight * imgZoom) > window.innerHeight)) { // control image exceeds window size
+                            imgLimits();
+                        }
+
+                        events.off(img, 'mousemove mouseup mouseleave');
+                        events.removeClass(img, 'pause-easing');
+
                     }
-
-                    events.off(img, 'mousemove mouseup mouseleave');
-                    events.removeClass(img, 'pause-easing');
 
                 });
 
@@ -632,10 +634,11 @@ var photoGallery = {
 
         events.on(document, 'click', '.photo-gallery a.img', function (e) {
 
-            if (useragents.mobile) { return; }
+            if (useragents.desktop) {
 
-            e.preventDefault();
-            galleryFnc(e, this);
+                e.preventDefault();
+                galleryFnc(e, this);
+            }
 
         });
 

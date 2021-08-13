@@ -214,17 +214,20 @@ var tooltip = {
         // Events
         events.on(document, 'mouseenter mouseleave', '[data-tooltip]:not([data-only="mobile"])', function (e) {
 
-            var type;
-            if (useragents.mobile) { return; }
+            if (useragents.desktop) {
 
-            if (e.type === 'mouseenter') {
-                type = 'open';
+                var type;
 
-            } else {
-                type = 'close';
+                if (e.type === 'mouseenter') {
+                    type = 'open';
+
+                } else {
+                    type = 'close';
+                }
+
+                tooltipFnc(this, type);
+
             }
-
-            tooltipFnc(this, type);
 
         });
 
