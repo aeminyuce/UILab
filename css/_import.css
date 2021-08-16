@@ -4698,6 +4698,7 @@ input.btn {
   overflow-x: hidden;
   overflow-y: auto;
   position: absolute;
+  z-index: 1;
   transform-origin: top left;
   -webkit-overflow-scrolling: touch;
 }

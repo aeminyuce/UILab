@@ -24,7 +24,7 @@
 
 .ease-list-group {
     li {
-        &,& > a { transition-property: background-color; transition-duration: @ease-default; }
+        &,& > a:not(.list-link) { transition-property: background-color; transition-duration: @ease-default; }
     }
     .list-icon {
         &:not([class*="ease-"]) { transition-property: opacity; transition-duration: @ease-default; }
@@ -41,12 +41,12 @@
         & > li {
             position: relative;
 
-            &,& > a { line-height: normal; padding: @list-group-list-padding; }
-            &:before,&:after,& > a:before,& > a:after { content: ""; display: table; }
-            &:after,& > a:after { clear: both; }
+            &,& > a:not(.list-link) { line-height: normal; padding: @list-group-list-padding; }
+            &:before,&:after,& > a:not(.list-link):before,& > a:not(.list-link):after { content: ""; display: table; }
+            &:after,& > a:not(.list-link):after { clear: both; }
 
             & > p { margin-bottom: 0; }
-            & > a {
+            & > a:not(.list-link) {
                 margin: -@list-group-list-padding; display: block;
 
                 .desktop & {
@@ -64,10 +64,10 @@
         & > ul:not([class*="list-column-"]) {
             & > li {
                 &:first-child {
-                    &,& > a { border-top-left-radius: @round; border-top-right-radius: @round; }
+                    &,& > a:not(.list-link) { border-top-left-radius: @round; border-top-right-radius: @round; }
                 }
                 &:last-child {
-                    &,& > a { border-bottom-left-radius: @round; border-bottom-right-radius: @round; }
+                    &,& > a:not(.list-link) { border-bottom-left-radius: @round; border-bottom-right-radius: @round; }
                 }
             }
         }
@@ -79,8 +79,8 @@
         each(@icon-sizes, {
             &-@{key} {
                 & > li {
-                    &,& > a { padding-right: (@value + @list-group-list-padding * 2); }
-                    & > a { margin-right: -(@value + @list-group-list-padding * 2); }
+                    &,& > a:not(.list-link) { padding-right: (@value + @list-group-list-padding * 2); }
+                    & > a:not(.list-link) { margin-right: -(@value + @list-group-list-padding * 2); }
                 }
                 .list-icon { ._icon(@value); }
             }
@@ -93,20 +93,20 @@
 
     .has-photo {
         &-lg li {
-            &,& > a { min-height: (@photo-img-lg + @list-group-list-padding * 2); padding-left: (@photo-img-lg + @list-group-list-padding * 2); }
-            & > a { margin-left: -(@photo-img-lg + @list-group-list-padding * 2); }
+            &,& > a:not(.list-link) { min-height: (@photo-img-lg + @list-group-list-padding * 2); padding-left: (@photo-img-lg + @list-group-list-padding * 2); }
+            & > a:not(.list-link) { margin-left: -(@photo-img-lg + @list-group-list-padding * 2); }
         }
         li {
-            &,& > a { min-height: (@photo-img-default + @list-group-list-padding * 2); padding-left: (@photo-img-default + @list-group-list-padding * 2); }
-            & > a { margin-left: -(@photo-img-default + @list-group-list-padding * 2); }
+            &,& > a:not(.list-link) { min-height: (@photo-img-default + @list-group-list-padding * 2); padding-left: (@photo-img-default + @list-group-list-padding * 2); }
+            & > a:not(.list-link) { margin-left: -(@photo-img-default + @list-group-list-padding * 2); }
         }
         &-sm li {
-            &,& > a { min-height: (@photo-img-sm + @list-group-list-padding * 2); padding-left: (@photo-img-sm + @list-group-list-padding * 2); }
-            & > a { margin-left: -(@photo-img-sm + @list-group-list-padding * 2); }
+            &,& > a:not(.list-link) { min-height: (@photo-img-sm + @list-group-list-padding * 2); padding-left: (@photo-img-sm + @list-group-list-padding * 2); }
+            & > a:not(.list-link) { margin-left: -(@photo-img-sm + @list-group-list-padding * 2); }
         }
         &-xs li {
-            &,& > a { min-height: (@photo-img-xs + @list-group-list-padding * 2); padding-left: (@photo-img-xs + @list-group-list-padding * 2); }
-            & > a { margin-left: -(@photo-img-xs + @list-group-list-padding * 2); }
+            &,& > a:not(.list-link) { min-height: (@photo-img-xs + @list-group-list-padding * 2); padding-left: (@photo-img-xs + @list-group-list-padding * 2); }
+            & > a:not(.list-link) { margin-left: -(@photo-img-xs + @list-group-list-padding * 2); }
         }
     }
 }
