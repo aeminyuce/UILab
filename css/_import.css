@@ -533,6 +533,11 @@ p:not(:last-child):not(.hint) {
 .opacity-full {
   opacity: 0 !important;
 }
+.desktop .hover-opacity:hover,
+.desktop .hover-opacity-1st > *:hover,
+.desktop .hover-opacity-2nd > * > *:hover {
+  opacity: 0.75;
+}
 .desktop .hover-shadow:hover,
 .desktop .hover-shadow-1st > *:hover,
 .desktop .hover-shadow-2nd > * > *:hover {
@@ -6088,7 +6093,7 @@ label.custom {
 }
 /* list group */
 .ease-list-group li,
-.ease-list-group li > a {
+.ease-list-group li > a:not(.list-link) {
   transition-property: background-color;
   transition-duration: 0.15s;
 }
@@ -6112,29 +6117,29 @@ label.custom {
   position: relative;
 }
 .list-group > ul > li,
-.list-group > ul > li > a {
+.list-group > ul > li > a:not(.list-link) {
   line-height: normal;
   padding: 10px;
 }
 .list-group > ul > li:before,
 .list-group > ul > li:after,
-.list-group > ul > li > a:before,
-.list-group > ul > li > a:after {
+.list-group > ul > li > a:not(.list-link):before,
+.list-group > ul > li > a:not(.list-link):after {
   content: "";
   display: table;
 }
 .list-group > ul > li:after,
-.list-group > ul > li > a:after {
+.list-group > ul > li > a:not(.list-link):after {
   clear: both;
 }
 .list-group > ul > li > p {
   margin-bottom: 0;
 }
-.list-group > ul > li > a {
+.list-group > ul > li > a:not(.list-link) {
   margin: -10px;
   display: block;
 }
-.desktop .list-group > ul > li > a:hover .list-icon {
+.desktop .list-group > ul > li > a:not(.list-link):hover .list-icon {
   opacity: 0.75;
 }
 .list-group li:nth-child(odd):not([class*="ui-"]) {
@@ -6146,12 +6151,12 @@ label.custom {
   background-color: var(--list-group-hover-bg);
 }
 .list-group.round > ul:not([class*="list-column-"]) > li:first-child,
-.list-group.round > ul:not([class*="list-column-"]) > li:first-child > a {
+.list-group.round > ul:not([class*="list-column-"]) > li:first-child > a:not(.list-link) {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
 .list-group.round > ul:not([class*="list-column-"]) > li:last-child,
-.list-group.round > ul:not([class*="list-column-"]) > li:last-child > a {
+.list-group.round > ul:not([class*="list-column-"]) > li:last-child > a:not(.list-link) {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
@@ -6166,10 +6171,10 @@ label.custom {
   opacity: 0.45;
 }
 .list-group .has-icon-xxl > li,
-.list-group .has-icon-xxl > li > a {
+.list-group .has-icon-xxl > li > a:not(.list-link) {
   padding-right: 70px;
 }
-.list-group .has-icon-xxl > li > a {
+.list-group .has-icon-xxl > li > a:not(.list-link) {
   margin-right: -70px;
 }
 .list-group .has-icon-xxl .list-icon {
@@ -6178,10 +6183,10 @@ label.custom {
   stroke-width: 12px;
 }
 .list-group .has-icon-xl > li,
-.list-group .has-icon-xl > li > a {
+.list-group .has-icon-xl > li > a:not(.list-link) {
   padding-right: 54px;
 }
-.list-group .has-icon-xl > li > a {
+.list-group .has-icon-xl > li > a:not(.list-link) {
   margin-right: -54px;
 }
 .list-group .has-icon-xl .list-icon {
@@ -6190,10 +6195,10 @@ label.custom {
   stroke-width: 16px;
 }
 .list-group .has-icon-lg > li,
-.list-group .has-icon-lg > li > a {
+.list-group .has-icon-lg > li > a:not(.list-link) {
   padding-right: 46px;
 }
-.list-group .has-icon-lg > li > a {
+.list-group .has-icon-lg > li > a:not(.list-link) {
   margin-right: -46px;
 }
 .list-group .has-icon-lg .list-icon {
@@ -6202,10 +6207,10 @@ label.custom {
   stroke-width: 24px;
 }
 .list-group .has-icon-sm > li,
-.list-group .has-icon-sm > li > a {
+.list-group .has-icon-sm > li > a:not(.list-link) {
   padding-right: 38px;
 }
-.list-group .has-icon-sm > li > a {
+.list-group .has-icon-sm > li > a:not(.list-link) {
   margin-right: -38px;
 }
 .list-group .has-icon-sm .list-icon {
@@ -6214,10 +6219,10 @@ label.custom {
   stroke-width: 32px;
 }
 .list-group .has-icon-xs > li,
-.list-group .has-icon-xs > li > a {
+.list-group .has-icon-xs > li > a:not(.list-link) {
   padding-right: 34px;
 }
-.list-group .has-icon-xs > li > a {
+.list-group .has-icon-xs > li > a:not(.list-link) {
   margin-right: -34px;
 }
 .list-group .has-icon-xs .list-icon {
@@ -6226,10 +6231,10 @@ label.custom {
   stroke-width: 36px;
 }
 .list-group .has-icon-xxs > li,
-.list-group .has-icon-xxs > li > a {
+.list-group .has-icon-xxs > li > a:not(.list-link) {
   padding-right: 32px;
 }
-.list-group .has-icon-xxs > li > a {
+.list-group .has-icon-xxs > li > a:not(.list-link) {
   margin-right: -32px;
 }
 .list-group .has-icon-xxs .list-icon {
@@ -6243,35 +6248,35 @@ label.custom {
   left: 10px;
 }
 .list-group .has-photo-lg li,
-.list-group .has-photo-lg li > a {
+.list-group .has-photo-lg li > a:not(.list-link) {
   min-height: 100px;
   padding-left: 100px;
 }
-.list-group .has-photo-lg li > a {
+.list-group .has-photo-lg li > a:not(.list-link) {
   margin-left: -100px;
 }
 .list-group .has-photo li,
-.list-group .has-photo li > a {
+.list-group .has-photo li > a:not(.list-link) {
   min-height: 70px;
   padding-left: 70px;
 }
-.list-group .has-photo li > a {
+.list-group .has-photo li > a:not(.list-link) {
   margin-left: -70px;
 }
 .list-group .has-photo-sm li,
-.list-group .has-photo-sm li > a {
+.list-group .has-photo-sm li > a:not(.list-link) {
   min-height: 62px;
   padding-left: 62px;
 }
-.list-group .has-photo-sm li > a {
+.list-group .has-photo-sm li > a:not(.list-link) {
   margin-left: -62px;
 }
 .list-group .has-photo-xs li,
-.list-group .has-photo-xs li > a {
+.list-group .has-photo-xs li > a:not(.list-link) {
   min-height: 52px;
   padding-left: 52px;
 }
-.list-group .has-photo-xs li > a {
+.list-group .has-photo-xs li > a:not(.list-link) {
   margin-left: -52px;
 }
 /* cards */
