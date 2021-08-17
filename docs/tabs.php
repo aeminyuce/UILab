@@ -93,8 +93,14 @@
                 <div class="tabs padding-30-b ease-tabs" data-classes="ui-border ui-color">
 
                     <div class="margin-10-b md-align-c border-b theme-default2 form-lg ease-1st-btn">
-                        <button class="tab btn-toggle btn btn-ghost border-b border-dual">Tab Button</button>
-                        <button class="tab btn-toggle btn btn-ghost border-b border-dual">Tab Button</button>
+                        <button class="tab btn-toggle btn btn-ghost border-b border-dual">
+                            Tab Button
+                            <svg class="icon toggle-icon margin-3-l"><use href="#angle-down"></use></svg>
+                        </button>
+                        <button class="tab btn-toggle btn btn-ghost border-b border-dual">
+                            Tab Button
+                            <svg class="icon toggle-icon margin-3-l"><use href="#angle-down"></use></svg>
+                        </button>
                     </div>
 
                     <div class="tab-content">

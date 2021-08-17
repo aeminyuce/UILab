@@ -119,6 +119,8 @@ var tabs = {};
                     // close opened toggle tabs when outside the tabs
                     events.on(document, 'mouseup.tabToggleClose', function (ev) {
 
+                        if (typeof ev.target.className === 'object') { return; } // detect SVG elements
+
                         if (ev.button !== 2) { // inherited right clicks
 
                             if (ev.target.className.split(' ').indexOf('btn-toggle') !== -1 && events.closest(ev.target, '.tabs')[0] === parent) { // controlling same toggled tab buttons
