@@ -5,7 +5,7 @@
 
                 <div class="card-warning padding-30 round theme-default2 ui-bg-light-100 ui-border">
                     Events JS requires Selector JS.<br>
-                    Events JS is a simple javascript creating and triggering events.
+                    Events JS is a simple javascript for creating, removing and triggering javascript event listeners.
                 </div>
 
                 <div class="padding-30-v block-1st theme-default">
