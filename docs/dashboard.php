@@ -1197,7 +1197,7 @@
                                         </ul>
                                     </div>
                                     <h4 class="align-l margin-5-t">Events</h4>
-                                    <div class="calendar ease-calendar round no-padding" data-src="json/events.json" data-date="2019,6"></div>
+                                    <div class="calendar ease-calendar round no-padding" data-src="json/calendar.json" data-date="2019,6"></div>
                                 </div>
                             </div>
 

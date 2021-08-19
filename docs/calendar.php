@@ -97,10 +97,10 @@
         <h4>Calendar Details</h4>
         <div class="row sm-fluid padding-30-b">
             <div class="col-6">
-                <div class="calendar ease-calendar round" data-src="json/events.json" data-date="2019,6"></div>
+                <div class="calendar ease-calendar round" data-src="json/calendar.json" data-date="2019,6"></div>
             </div>
             <div class="col-6">
-                <div class="calendar ease-calendar round theme-default2 ui-bg-dark-100" data-src="json/events.json" data-date="2019,6"></div>
+                <div class="calendar ease-calendar round theme-default2 ui-bg-dark-100" data-src="json/calendar.json" data-date="2019,6"></div>
             </div>
         </div>
 
