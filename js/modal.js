@@ -1,9 +1,9 @@
 /*
- Modal JS
- Modal JS requires Selector Js, Events JS, Ajax JS, User Agents JS
+ UI Modal JS
+ Requires UI JS
 */
 
-var modal = {
+ui.modal = {
 
     classes: 'shadow-lg',
     closeIcon: 'remove',
@@ -19,7 +19,7 @@ var modal = {
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, setTimeout, ajax, useragents */
+    /*globals window, document, ui, setTimeout */
 
     var pageYPos;
 
@@ -27,16 +27,16 @@ var modal = {
 
         var win, type, container, bg, openSize, userDefined, customW, customH, minHeight;
 
-        win = selector('.modal-win.show .modal-content:not(.fullscreen)')[0];
+        win = ui.find('.modal-win.show .modal-content:not(.fullscreen)')[0];
         if (win !== undefined) {
 
-            bg = selector('.modal-bg')[0];
+            bg = ui.find('.modal-bg')[0];
 
             openSize = win.getAttribute('data-openSize');
             if (openSize !== null) {
 
                 type = 'md';
-                userDefined = 960; // md, inline-modal
+                userDefined = ui.globals.md + 1; // md, inline-modal
 
                 openSize = Number(openSize);
 
@@ -45,15 +45,15 @@ var modal = {
 
                 } else {
 
-                    if (events.hasClass(win, 'lg')) {
+                    if (ui.hasClass(win, 'lg')) {
 
                         type = 'lg';
-                        userDefined = 1200; // lg
+                        userDefined = ui.globals.lg; // lg
 
-                    } else if (events.hasClass(win, 'sm')) {
+                    } else if (ui.hasClass(win, 'sm')) {
 
                         type = 'sm';
-                        userDefined = 480; // sm
+                        userDefined = ui.globals.md; // sm
                     }
 
                     if (window.innerWidth > userDefined) {
@@ -64,20 +64,20 @@ var modal = {
                     }
                 }
 
-                minHeight = modal.contentMinHeightMd;
+                minHeight = ui.modal.contentMinHeightMd;
 
                 if (type === 'lg') {
-                    minHeight = modal.contentMinHeightLg;
+                    minHeight = ui.modal.contentMinHeightLg;
 
                 } else if (type === 'sm') {
-                    minHeight = modal.contentMinHeightSm;
+                    minHeight = ui.modal.contentMinHeightSm;
                 }
 
-                container = selector('.modal-container', win)[0];
+                container = ui.find('.modal-container', win)[0];
                 win.style.removeProperty('height');
 
                 if (container.offsetHeight < minHeight) {
-                    win.style.height = modal.contentMaxHeight;
+                    win.style.height = ui.modal.contentMaxHeight;
 
                 } else {
                     win.style.height = win.offsetHeight + 'px';
@@ -116,46 +116,46 @@ var modal = {
 
     }
 
-    modal.Start = function () {
+    ui.modal.Start = function () {
 
-        modal.close = function (callback) {
+        ui.modal.close = function (callback) {
 
             var win, bg, removeModal;
 
-            win = selector('.modal-win.show');
+            win = ui.find('.modal-win.show');
             if (win.length === 0) { return; }
 
-            events.each(win, function () {
-                events.removeClass(this, 'show-ease');
+            ui.each(win, function () {
+                ui.removeClass(this, 'show-ease');
             });
 
             setTimeout(function () {
 
-                events.each(win, function () {
+                ui.each(win, function () {
 
-                    removeModal = selector('.modal-remove', win[0]).length;
+                    removeModal = ui.find('.modal-remove', win[0]).length;
 
                     if (removeModal > 0) { // remove modal window
                         win[0].parentNode.removeChild(win[0]);
 
                     } else { // hide modal window
-                        events.removeClass(this, 'show');
+                        ui.removeClass(this, 'show');
                     }
 
                 });
 
-                bg = selector('.modal-bg');
-                events.removeClass(bg, 'open-ease');
+                bg = ui.find('.modal-bg');
+                ui.removeClass(bg, 'open-ease');
 
-                events.removeClass(document, 'modal-opened');
+                ui.removeClass(document, 'modal-opened');
 
-                if (useragents.mobile) {
+                if (ui.userAgents.mobile) {
                     window.scrollTo(0, pageYPos);
                 }
 
                 setTimeout(function () {
 
-                    events.removeClass(bg, 'open');
+                    ui.removeClass(bg, 'open');
 
                     // callback
                     if (callback !== undefined) {
@@ -164,34 +164,44 @@ var modal = {
 
                         setTimeout(function () { // wait for closing modal
                             callback.call();
-                        }, 150);
+                        }, ui.globals.ease);
 
                     }
 
-                }, 150);
+                }, ui.globals.ease);
 
-            }, 150);
+            }, ui.globals.ease);
 
         };
 
-        modal.open = function (set) {
+        ui.modal.open = function (props) {
+
+            /*
+            props list:
+                props.source
+                props.size
+                props.type
+                props.bg
+                props.closable
+                props.callback
+            */
 
             var styles, closeBtn, nonClosable, typeArr, type, created, temp, getSize, size, customSize, sizeArr, forms, bg, html, win, content;
 
-            if (set === undefined) { return; }
-            if (set.source === undefined) { return; }
+            if (props === undefined) { return; }
+            if (props.source === undefined) { return; }
 
-            modal.close(); // hide opened modal windows and prevent multiple modal windows
+            ui.modal.close(); // hide opened modal windows and prevent multiple modal windows
 
-            if (useragents.mobile) {
+            if (ui.userAgents.mobile) {
                 pageYPos = window.pageYOffset; // get current scroll-y position
             }
 
             // check closable
             nonClosable = false;
 
-            if (set.closable !== undefined) {
-                if (!set.closable) { nonClosable = true; }
+            if (props.closable !== undefined) {
+                if (!props.closable) { nonClosable = true; }
             }
 
             // create modal
@@ -202,14 +212,14 @@ var modal = {
                 re = new RegExp('\\s+\\s');
                 rex = new RegExp('^\\s|\\s+$');
 
-                styles = modal.classes + ' ease-layout';
+                styles = ui.modal.classes + ' ease-layout';
                 styles = styles.replace(re, ' ').replace(rex, '');
 
-                bg = selector('.modal-bg')[0];
+                bg = ui.find('.modal-bg')[0];
 
                 html = '<div class="modal-win';
 
-                if (set.bg !== undefined && set.bg === 'false') {
+                if (props.bg !== undefined && props.bg === 'false') {
                     html += ' no-bg';
                 }
 
@@ -218,22 +228,22 @@ var modal = {
                         '</div>';
 
                 if (bg === undefined) { html += '<div class="modal-bg ease-layout"></div>'; }
-                selector('body')[0].insertAdjacentHTML('beforeend', html);
+                ui.find('body')[0].insertAdjacentHTML('beforeend', html);
 
-                win = selector('.modal-win.active')[0];
-                content = selector('.modal-content', win)[0];
+                win = ui.find('.modal-win.active')[0];
+                content = ui.find('.modal-content', win)[0];
 
             }
 
             // check header and footer availability
             function checkHeaderFooter() {
 
-                if (selector('.modal-header', content)[0] !== undefined) {
-                    events.addClass(content, 'has-header');
+                if (ui.find('.modal-header', content)[0] !== undefined) {
+                    ui.addClass(content, 'has-header');
                 }
 
-                if (selector('.modal-footer', content)[0] !== undefined) {
-                    events.addClass(content, 'has-footer');
+                if (ui.find('.modal-footer', content)[0] !== undefined) {
+                    ui.addClass(content, 'has-footer');
                 }
 
             }
@@ -242,7 +252,7 @@ var modal = {
             function showModal() {
 
                 // set modal size
-                events.removeClass(content, 'lg md sm fullscreen inline-modal');
+                ui.removeClass(content, 'lg md sm fullscreen inline-modal');
 
                 content.style.removeProperty('top');
                 content.style.removeProperty('left');
@@ -255,10 +265,10 @@ var modal = {
                 content.removeAttribute('data-customW');
                 content.removeAttribute('data-customH');
 
-                if (set.size === undefined) {
+                if (props.size === undefined) {
 
                     size = 'md';
-                    events.addClass(content, size);
+                    ui.addClass(content, size);
 
                 } else {
 
@@ -267,15 +277,15 @@ var modal = {
                         size = 'md';
                         sizeArr = ['lg', 'md', 'sm', 'fullscreen', 'inline-modal'];
 
-                        if (sizeArr.indexOf(set.size) > -1) {
-                            size = set.size;
+                        if (sizeArr.indexOf(props.size) > -1) {
+                            size = props.size;
                         }
 
-                        events.addClass(content, size);
+                        ui.addClass(content, size);
 
                     };
 
-                    customSize = set.size.split('x'); // check custom size
+                    customSize = props.size.split('x'); // check custom size
                     if (customSize.length === 2) {
 
                         if (customSize[0].match(/^[0-9]+$/) !== null && customSize[1].match(/^[0-9]+$/) !== null) {
@@ -294,14 +304,14 @@ var modal = {
 
                 // set closable
                 if (nonClosable) {
-                    events.removeClass(win, 'closable');
+                    ui.removeClass(win, 'closable');
 
                 } else {
-                    events.addClass(win, 'closable');
+                    ui.addClass(win, 'closable');
                 }
 
                 // add/remove close button
-                closeBtn = selector('.close-modal', win)[0];
+                closeBtn = ui.find('.close-modal', win)[0];
 
                 if (nonClosable) {
 
@@ -314,7 +324,7 @@ var modal = {
                     if (closeBtn === undefined) {
 
                         closeBtn = '<button class="close-modal ease-btn">' +
-                                        '<svg class="icon"><use href="#' + modal.closeIcon + '"/></svg>' +
+                                        '<svg class="icon"><use href="#' + ui.modal.closeIcon + '"/></svg>' +
                                     '</button>';
 
                         content.insertAdjacentHTML('afterbegin', closeBtn);
@@ -324,17 +334,17 @@ var modal = {
                 }
 
                 // showing modal
-                events.addClass(document, 'modal-opened');
+                ui.addClass(document, 'modal-opened');
 
-                bg = selector('.modal-bg');
-                events.addClass(bg, 'open');
+                bg = ui.find('.modal-bg');
+                ui.addClass(bg, 'open');
 
                 setTimeout(function () {
 
-                    events.addClass(bg, 'open-ease');
+                    ui.addClass(bg, 'open-ease');
                     setTimeout(function () {
 
-                        events.addClass(win, 'show');
+                        ui.addClass(win, 'show');
 
                         content.style.top = Math.floor((bg[0].offsetHeight - content.offsetHeight) / 2) + 'px';
                         content.style.left = Math.floor((bg[0].offsetWidth - content.offsetWidth) / 2) + 'px';
@@ -349,56 +359,56 @@ var modal = {
 
                         setTimeout(function () {
 
-                            events.addClass(win, 'show-ease');
-                            events.removeClass(win, 'active');
+                            ui.addClass(win, 'show-ease');
+                            ui.removeClass(win, 'active');
 
                             modalResizer();
-                            events.trigger(document, 'domChange'); // set custom event
+                            ui.trigger(document, 'ui:domChange'); // set custom event
 
                             // callback
-                            if (set.callback !== undefined) {
+                            if (props.callback !== undefined) {
 
                                 setTimeout(function () { // wait for modal dom is ready
-                                    set.callback.call(content);
-                                }, 300);
+                                    props.callback.call(content);
+                                }, ui.globals.ease * 2);
 
                             }
 
                         }, 10);
 
-                    }, 150);
+                    }, ui.globals.ease);
 
                 }, 10);
 
             }
 
             // get source
-            if (set.type === undefined) { // inner sources
+            if (props.type === undefined) { // inner sources
 
                 // check the modal created before
-                set.source = selector(set.source);
-                if (set.source[0] === undefined) { return; }
+                props.source = ui.find(props.source);
+                if (props.source[0] === undefined) { return; }
 
-                created = events.closest(set.source, '.modal-win');
+                created = ui.closest(props.source, '.modal-win');
                 if (created.length > 0) { // modal created before
 
-                    events.addClass(created, 'active');
-                    win = selector('.modal-win.active')[0];
+                    ui.addClass(created, 'active');
+                    win = ui.find('.modal-win.active')[0];
 
-                    content = selector('.modal-content', win)[0];
+                    content = ui.find('.modal-content', win)[0];
                     showModal();
 
                     // reset forms
-                    forms = selector('form', content);
-                    events.each(forms, function () { this.reset(); });
+                    forms = ui.find('form', content);
+                    ui.each(forms, function () { this.reset(); });
 
                 } else { // create modal
 
                     // move source
                     temp = document.createDocumentFragment();
 
-                    events.each(set.source, function (i) {
-                        temp.appendChild(set.source[i]);
+                    ui.each(props.source, function (i) {
+                        temp.appendChild(props.source[i]);
                     });
 
                     createModal();
@@ -413,13 +423,13 @@ var modal = {
 
                 typeArr = ['ajax', 'iframe'];
 
-                if (typeArr.indexOf(set.type) > -1) {
-                    type = set.type;
+                if (typeArr.indexOf(props.type) > -1) {
+                    type = props.type;
                 }
 
                 if (type === 'iframe') { // iframe sources
 
-                    temp = '<iframe class="modal-iframe modal-remove" src="' + set.source + '" frameborder="0" allowfullscreen></iframe>';
+                    temp = '<iframe class="modal-iframe modal-remove" src="' + props.source + '" frameborder="0" allowfullscreen></iframe>';
 
                     createModal();
                     content.insertAdjacentHTML('beforeend', temp);
@@ -428,9 +438,9 @@ var modal = {
 
                 } else if (type === 'ajax') { // ajax sources
 
-                    ajax({
+                    ui.ajax({
 
-                        url : set.source,
+                        url : props.source,
                         callback: function (status, response) {
 
                             if (status === 'success') {
@@ -457,25 +467,25 @@ var modal = {
 
         };
 
-        // Events
+        // Event Listeners
         function userClose() {
 
-            var p = selector('.modal-win.show.closable')[0];
-            if (p !== undefined) { modal.close(); }
+            var p = ui.find('.modal-win.show.closable')[0];
+            if (p !== undefined) { ui.modal.close(); }
 
         }
 
-        events.on(document, 'click', '.close-modal', modal.close);
-        events.on(document, 'click', '.modal-bg', userClose);
+        ui.on(document, 'click', '.close-modal', ui.modal.close);
+        ui.on(document, 'click', '.modal-bg', userClose);
 
-        events.on(document, 'keydown', function (e) {
+        ui.on(document, 'keydown', function (e) {
             if (e.keyCode === 27) { userClose(); } // esc
         });
 
     };
 
     // Loaders
-    events.onload(modal.Start);
-    events.on(window, 'resize', modalResizer);
+    ui.onload(ui.modal.Start);
+    ui.on(window, 'resize', modalResizer);
 
 }());

@@ -1,18 +1,18 @@
 /*
- Donut Chart JS
- Donut Chart JS requires Selector Js, Events JS, User Agents JS
+ UI Donut Chart JS
+ Requires UI JS
 */
 
-var donutChart = {};
+ui.donutChart = {};
 
 (function () {
 
     'use strict';
-    /*globals document, selector, events, setTimeout, ajax, useragents */
+    /*globals document, ui, setTimeout */
 
     var loadCharts;
 
-    donutChart.Start = function () {
+    ui.donutChart.Start = function () {
 
         loadCharts = function () {
 
@@ -21,18 +21,18 @@ var donutChart = {};
             arrPercent = [];
             arrAngle = [];
 
-            chart = selector('.donut-chart');
+            chart = ui.find('.donut-chart');
             if (chart.length > 0) {
 
-                events.each(chart, function (i) {
+                ui.each(chart, function (i) {
 
-                    circles = selector('circle:not(.bg)', this);
+                    circles = ui.find('circle:not(.bg)', this);
 
                     if (circles.length > 1) {
-                        events.addClass(this, 'multiple');
+                        ui.addClass(this, 'multiple');
                     }
 
-                    events.each(circles, function (index) {
+                    ui.each(circles, function (index) {
 
                         var that = this;
 
@@ -52,11 +52,11 @@ var donutChart = {};
 
                         } else { arrAngle.push(0); }
 
-                        if (useragents.ie) {
+                        if (ui.userAgents.ie) {
                             chart[i].style.height = chart[i].offsetWidth + 'px'; // transformed circle has highest height on IE
                         }
 
-                        events.addClass(that, 'loaded');
+                        ui.addClass(that, 'loaded');
 
                     });
 
@@ -70,19 +70,19 @@ var donutChart = {};
         };
         loadCharts();
 
-        // Events
-        events.on(document, 'mouseenter mouseleave touchend', '.donut-chart circle[data-title]', function (e) {
+        // Event Listeners
+        ui.on(document, 'mouseenter mouseleave touchend', '.donut-chart circle[data-title]', function (e) {
 
             var that, circle, chart, msg, msgTitle, title;
 
             that = this;
-            chart = events.closest(that, '.donut-chart')[0];
+            chart = ui.closest(that, '.donut-chart')[0];
 
-            msg = selector('strong', chart)[0];
-            circle = selector('circle', chart);
+            msg = ui.find('strong', chart)[0];
+            circle = ui.find('circle', chart);
 
             setTimeout(function () {
-                events.removeClass(circle, 'selected');
+                ui.removeClass(circle, 'selected');
             }, 0);
 
             if (e.type === 'mouseleave') {
@@ -94,7 +94,7 @@ var donutChart = {};
                 if (msg === undefined) {
 
                     chart.insertAdjacentHTML('beforeEnd', '<strong></strong>');
-                    msg = selector('strong', chart)[0];
+                    msg = ui.find('strong', chart)[0];
 
                 }
 
@@ -111,7 +111,7 @@ var donutChart = {};
                         msg.innerHTML = title;
                     }
 
-                    events.addClass(that, 'selected');
+                    ui.addClass(that, 'selected');
 
                 }, 0);
 
@@ -122,12 +122,12 @@ var donutChart = {};
     };
 
     // Loaders
-    events.onload(donutChart.Start);
-    events.on(document, 'domChange', donutChart.Start);
+    ui.onload(ui.donutChart.Start);
+    ui.on(document, 'ui:domChange', ui.donutChart.Start);
 
-    // ajax callback loader: requires Ajax JS
-    events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.classNames.indexOf('donut-chart') > -1) { loadCharts(); }
+    // ajax callback loader
+    ui.on(document, 'ui:ajaxCallbacks', function () {
+        if (ui.ajax.classNames.indexOf('donut-chart') > -1) { loadCharts(); }
     });
 
 }());

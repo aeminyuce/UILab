@@ -1,32 +1,32 @@
 /*
- Card JS
- Card JS requires Selector Js, Events JS
+ UI Card JS
+ Requires UI JS
 */
 
-var card = {};
+ui.card = {};
 
 (function () {
 
     'use strict';
-    /*globals document, events, setTimeout */
+    /*globals document, ui, setTimeout */
 
-    card.Start = function () {
+    ui.card.Start = function () {
 
-        // Events
-        events.on(document, 'click', '.close-card', function () {
+        // Event Listeners
+        ui.on(document, 'click', '.close-card', function () {
 
             var parentEl = this.parentElement;
-            events.addClass(parentEl, 'closing-card ease-layout');
+            ui.addClass(parentEl, 'closing-card ease-layout');
 
             setTimeout(function () {
                 parentEl.parentNode.removeChild(parentEl);
-            }, 300);
+            }, ui.globals.ease * 2);
 
         });
 
     };
 
     // Loaders
-    events.onload(card.Start);
+    ui.onload(ui.card.Start);
 
 }());

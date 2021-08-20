@@ -1,4 +1,4 @@
-/*globals document, selector, events, setTimeout, sessionStorage */
+/*globals document, ui, setTimeout, sessionStorage */
 
 // Toggle Sidebar
 var testStorage;
@@ -7,20 +7,20 @@ function toggler(onload) {
 
     var sidebar, sidebarInner, toggleClasses, state;
 
-    sidebar = selector('.sidebar')[0];
-    sidebarInner = selector('.sidebar > div')[0];
+    sidebar = ui.find('.sidebar')[0];
+    sidebarInner = ui.find('.sidebar > div')[0];
 
     toggleClasses = function () { // toggle classnames
 
-        events.toggleClass(sidebar, 'hidden visible-lg');
-        events.toggleClass('header', 'sidebar-opened');
+        ui.toggleClass(sidebar, 'hidden visible-lg');
+        ui.toggleClass('header', 'sidebar-opened');
 
-        events.toggleClass('.show-mobile-menu-l', 'hidden-lg');
-        events.toggleClass('.sidebar-show', 'hidden');
+        ui.toggleClass('.show-mobile-menu-l', 'hidden-lg');
+        ui.toggleClass('.sidebar-show', 'hidden');
 
     };
 
-    if (events.hasClass(sidebar, 'hidden')) { // show
+    if (ui.hasClass(sidebar, 'hidden')) { // show
 
         state = 'opened';
         toggleClasses(); // toggle classnames
@@ -48,15 +48,15 @@ function toggler(onload) {
 
         // toggle classnames
         if (onload) {
-            setTimeout(toggleClasses, 400);
+            setTimeout(toggleClasses, ui.globals.slow);
 
         } else { toggleClasses(); }
 
     }
 
     setTimeout(function () {
-        events.trigger(document, 'domChange'); // set custom event
-    }, 400);
+        ui.trigger(document, 'ui:domChange'); // set custom event
+    }, ui.globals.slow);
 
     // set sidebar state
     if (testStorage && sessionStorage !== undefined) {
@@ -65,9 +65,9 @@ function toggler(onload) {
 
 }
 
-events.on(document, 'click', '.sidebar-show,.sidebar-hide', toggler);
+ui.on(document, 'click', '.sidebar-show,.sidebar-hide', toggler);
 
-events.onload(function () { // check stored sidebar position
+ui.onload(function () { // check stored sidebar position
 
     testStorage = true;
 

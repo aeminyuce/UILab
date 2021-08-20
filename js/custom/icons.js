@@ -1,35 +1,35 @@
-/*globals window, document, selector, events, setTimeout, alerts */
+/*globals window, document, ui, setTimeout */
 
-events.onload(function () {
+ui.onload(function () {
 
     'use strict';
 
     var buttons, icons, totalIcons;
 
     totalIcons = 0;
-    buttons = selector('.icon-modifiers .btn');
+    buttons = ui.find('.icon-modifiers .btn');
 
-    events.on(buttons, 'click', function () {
+    ui.on(buttons, 'click', function () {
 
         var that, list, bttns, size, weight;
 
         that = this;
-        list = selector('.icons-list');
-        bttns = selector('.btn', this.parentElement);
+        list = ui.find('.icons-list');
+        bttns = ui.find('.btn', this.parentElement);
 
-        events.removeClass(bttns, 'ui-bg-dark-100');
+        ui.removeClass(bttns, 'ui-bg-dark-100');
         setTimeout(function () {
-            events.addClass(that, 'ui-bg-dark-100');
+            ui.addClass(that, 'ui-bg-dark-100');
         }, 0);
 
         // change size
         size = this.getAttribute('data-size');
         if (size !== null) {
 
-            events.removeClass(list, 'icons-xxl icons-xl icons-lg icons-sm icons-xs icons-xxs');
+            ui.removeClass(list, 'icons-xxl icons-xl icons-lg icons-sm icons-xs icons-xxs');
 
             if (size !== '') {
-                events.addClass(list, 'icons-' + size);
+                ui.addClass(list, 'icons-' + size);
             }
 
         }
@@ -38,35 +38,35 @@ events.onload(function () {
         weight = this.getAttribute('data-weight');
         if (weight !== null) {
 
-            events.removeClass(list, 'icons-black icons-bold icons-semibold icons-light icons-thin');
+            ui.removeClass(list, 'icons-black icons-bold icons-semibold icons-light icons-thin');
 
             if (weight !== '') {
-                events.addClass(list, 'icons-' + weight);
+                ui.addClass(list, 'icons-' + weight);
             }
 
         }
 
     });
 
-    events.each('.icons-list', function () {
+    ui.each('.icons-list', function () {
 
-        var total = selector('li', this).length;
+        var total = ui.find('li', this).length;
         this.previousElementSibling.insertAdjacentHTML('beforeend', ' <small class="margin-5-v block opacity-half">(' + total + ' icons)</small>');
 
         totalIcons += total;
 
     });
 
-    selector('.total')[0].textContent = '(Total ' + totalIcons + ' icons)';
+    ui.find('.total')[0].textContent = '(Total ' + totalIcons + ' icons)';
 
-    icons = selector('.icons-list li');
-    events.on(icons, 'click', function () {
+    icons = ui.find('.icons-list li');
+    ui.on(icons, 'click', function () {
 
         var range, iconName;
 
         range = document.createRange();
 
-        iconName = selector('span', this)[0];
+        iconName = ui.find('span', this)[0];
         range.selectNode(iconName);
 
         window.getSelection().removeAllRanges();
@@ -74,13 +74,13 @@ events.onload(function () {
 
         document.execCommand('copy');
 
-        alerts.message({
+        ui.alerts.message({
             msg: '<b>Copied!</b><br>' + iconName.textContent,
         });
 
     });
 
     // settings
-    alerts.messageTheme = 'theme-default2 ui-bg-dark-100';
+    ui.alerts.messageTheme = 'theme-default2 ui-bg-dark-100';
 
 });

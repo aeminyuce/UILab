@@ -1,40 +1,40 @@
 /*
- Grid JS
- Grid JS requires Selector Js, Events JS
+ UI Grid JS
+ Requires UI JS
 */
 
-var grid = {};
+ui.grid = {};
 
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, ajax */
+    /*globals window, document, ui */
 
-    grid.Start = function () {
+    ui.grid.Start = function () {
 
         var fnc, o, p, siblings, i;
 
-        if (selector('[class*="col-"][class*="order-"]').length > 0) {
+        if (ui.find('[class*="col-"][class*="order-"]').length > 0) {
 
             fnc = function (classType, size) {
 
                 if (size) {
 
-                    events.each('[class*="order-' + classType + '-"]', function () {
+                    ui.each('[class*="order-' + classType + '-"]', function () {
 
                         p = this.parentElement;
                         siblings = p.children;
 
                         i = Array.prototype.slice.call(this.parentElement.children).indexOf(this);
 
-                        if (events.hasClass(this, 'order-' + classType + '-first') && i !== 0) {
+                        if (ui.hasClass(this, 'order-' + classType + '-first') && i !== 0) {
 
                             this.setAttribute('data-ordered-from', i);
                             p.insertBefore(this, p.firstChild);
 
                         }
 
-                        if (events.hasClass(this, 'order-' + classType + '-last') && i !== (siblings.length - 1)) {
+                        if (ui.hasClass(this, 'order-' + classType + '-last') && i !== (siblings.length - 1)) {
 
                             this.setAttribute('data-ordered-from', i);
                             p.appendChild(this);
@@ -45,14 +45,14 @@ var grid = {};
 
                 } else {
 
-                    events.each('[class*="order-' + classType + '-"][data-ordered-from]', function () {
+                    ui.each('[class*="order-' + classType + '-"][data-ordered-from]', function () {
 
                         o = parseInt(this.getAttribute('data-ordered-from'), 10);
 
                         p = this.parentElement;
                         siblings = p.children;
 
-                        if (events.hasClass(this, 'order-' + classType + '-first')) {
+                        if (ui.hasClass(this, 'order-' + classType + '-first')) {
 
                             this.removeAttribute('data-ordered-from');
                             p.insertBefore(this, siblings[o + 1]);
@@ -70,28 +70,28 @@ var grid = {};
 
             };
 
-            fnc('xs', window.innerWidth < 481);
-            fnc('sm', window.innerWidth < 768);
-            fnc('md', window.innerWidth < 960);
+            fnc('xs', window.innerWidth < ui.globals.xs + 1);
+            fnc('sm', window.innerWidth < ui.globals.sm + 1);
+            fnc('md', window.innerWidth < ui.globals.md + 1);
 
-            fnc('default', window.innerWidth < 1200);
+            fnc('default', window.innerWidth < ui.globals.lg);
 
-            fnc('lg', window.innerWidth > 1199);
-            fnc('xl', window.innerWidth > 1679);
+            fnc('lg', window.innerWidth > ui.globals.lg - 1);
+            fnc('xl', window.innerWidth > ui.globals.xl - 1);
 
         }
 
     };
 
     // Loaders
-    events.onload(grid.Start);
+    ui.onload(ui.grid.Start);
 
-    events.on(window, 'resize', grid.Start);
-    events.on(document, 'domChange', grid.Start);
+    ui.on(window, 'resize', ui.grid.Start);
+    ui.on(document, 'ui:domChange', ui.grid.Start);
 
-    // ajax callback loader: requires Ajax JS
-    events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.classNames.indexOf('order-') > -1) { grid.Start(); }
+    // ajax callback loader
+    ui.on(document, 'ui:ajaxCallbacks', function () {
+        if (ui.ajax.classNames.indexOf('order-') > -1) { ui.grid.Start(); }
     });
 
 }());

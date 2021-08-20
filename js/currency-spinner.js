@@ -1,20 +1,20 @@
 /*
- Currency Spinner JS
- Currency Spinner JS requires Selector Js, Events JS
+ UI Currency Spinner JS
+ Requires UI JS
 */
 
-var currencySpinner = {
+ui.currencySpinner = {
     decimals: false
 };
 
 (function () {
 
     'use strict';
-    /*globals document, selector, events */
+    /*globals document, ui */
 
     var cacheCurrencySpinner;
 
-    currencySpinner.Start = function () {
+    ui.currencySpinner.Start = function () {
 
         function convert(s) {
 
@@ -23,7 +23,7 @@ var currencySpinner = {
             regDecimal = new RegExp(/(\,+\d+)/g);
             regClear = new RegExp(/(\s)|(\.)|(\,)/g);
 
-            if (currencySpinner.decimals) {
+            if (ui.currencySpinner.decimals) {
 
                 number = s.replace(regDecimal, '');
 
@@ -56,13 +56,13 @@ var currencySpinner = {
 
             nav = [];
 
-            p = events.closest(that, '.currency-spinner');
-            input = selector('[type="text"]', p);
+            p = ui.closest(that, '.currency-spinner');
+            input = ui.find('[type="text"]', p);
 
             val = convert(input.value);
 
-            nav.up = events.hasClass(that, 'currency-up');
-            nav.down = events.hasClass(that, 'currency-down');
+            nav.up = ui.hasClass(that, 'currency-up');
+            nav.down = ui.hasClass(that, 'currency-down');
 
             if (nav.up || nav.down) {
 
@@ -71,7 +71,7 @@ var currencySpinner = {
 
                 if (nav.up) {
 
-                    if (currencySpinner.decimals) {
+                    if (ui.currencySpinner.decimals) {
 
                         val[0] += step[0];
                         val[1] += step[1];
@@ -80,7 +80,7 @@ var currencySpinner = {
 
                 } else {
 
-                    if (currencySpinner.decimals) {
+                    if (ui.currencySpinner.decimals) {
 
                         val[0] -= step[0];
                         val[1] -= step[1];
@@ -97,7 +97,7 @@ var currencySpinner = {
 
                 }
 
-                if (currencySpinner.decimals) {
+                if (ui.currencySpinner.decimals) {
 
                     step[0] = locales(step[0]);
                     min[0] = locales(min[0]);
@@ -111,7 +111,7 @@ var currencySpinner = {
 
             }
 
-            if (currencySpinner.decimals) {
+            if (ui.currencySpinner.decimals) {
 
                 val[0] = locales(val[0]);
                 input.value = val[0] + ',' + val[1];
@@ -125,15 +125,15 @@ var currencySpinner = {
 
         }
 
-        // Events
-        events.on(document, 'click', '.currency-up,.currency-down', function (e) {
+        // Event Listeners
+        ui.on(document, 'click', '.currency-up,.currency-down', function (e) {
 
             e.preventDefault();
             currencyChange(this);
 
         });
 
-        events.on(document, 'keypress', '.currency-spinner input[type="text"]', function (e) {
+        ui.on(document, 'keypress', '.currency-spinner input[type="text"]', function (e) {
 
             var c, isRefresh = false;
 
@@ -147,7 +147,7 @@ var currencySpinner = {
 
             }
 
-            if (currencySpinner.decimals) {
+            if (ui.currencySpinner.decimals) {
 
                 if (c !== 8 && c !== 9 && c !== 35 && c !== 36 && c !== 37 && c !== 39 && c !== 44 && !isRefresh && (c < 48 || c > 57)) {
                     e.preventDefault();
@@ -163,7 +163,7 @@ var currencySpinner = {
 
         });
 
-        events.on(document,
+        ui.on(document,
 
             'focus',
             '.currency-spinner input[type="text"]',
@@ -172,7 +172,7 @@ var currencySpinner = {
                 cacheCurrencySpinner = this.value;
             });
 
-        events.on(document,
+        ui.on(document,
 
             'keyup blur',
             '.currency-spinner input[type="text"]',
@@ -182,13 +182,13 @@ var currencySpinner = {
                 if (e.keyCode === 27) {
 
                     this.value = cacheCurrencySpinner;
-                    events.trigger(this, 'blur');
+                    ui.trigger(this, 'blur');
 
                     return;
 
                 }
 
-                if (currencySpinner.decimals) {
+                if (ui.currencySpinner.decimals) {
 
                     if (e.type === 'blur') {
                         currencyChange(this);
@@ -200,7 +200,7 @@ var currencySpinner = {
 
                     var input, min;
 
-                    input = selector('.currency-spinner .text input')[0];
+                    input = ui.find('.currency-spinner .text input')[0];
                     min = convert(input.getAttribute('min'));
 
                     if (convert(input.value) < min) { input.value = locales(min); }
@@ -209,17 +209,17 @@ var currencySpinner = {
 
             });
 
-        events.on(document,
+        ui.on(document,
 
             'keydown',
-            events.closest('.currency-spinner', 'form'),
+            ui.closest('.currency-spinner', 'form'),
 
             function (e) {
 
                 if (e.keyCode === 13) {
 
                     e.preventDefault();
-                    events.trigger('.currency-spinner .text input', 'blur');
+                    ui.trigger('.currency-spinner .text input', 'blur');
 
                 } else { return; }
 
@@ -228,6 +228,6 @@ var currencySpinner = {
     };
 
     // Loaders
-    events.onload(currencySpinner.Start);
+    ui.onload(ui.currencySpinner.Start);
 
 }());

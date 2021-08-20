@@ -1,29 +1,29 @@
 /*
- Form Spinner JS
- Form Spinner JS requires Selector Js, Events JS
+ UI Form Spinner JS
+ Requires UI JS
 */
 
-var spinnerForm = {};
+ui.spinnerForm = {};
 
 (function () {
 
     'use strict';
-    /*globals document, selector, events, ajax */
+    /*globals document, ui */
 
     var checkSpinnerForms;
 
-    spinnerForm.Start = function () {
+    ui.spinnerForm.Start = function () {
 
-        // Events
-        events.on(document, 'click', '.spinner-t,.spinner-b', function () {
+        // Event Listeners
+        ui.on(document, 'click', '.spinner-t,.spinner-b', function () {
 
-            var p = events.closest(this, '.form-spinner'), input = selector('[type="text"]', p),
+            var p = ui.closest(this, '.form-spinner'), input = ui.find('[type="text"]', p),
 
                 val = Number(input.value),
                 max = input.getAttribute('max'),
                 min = input.getAttribute('min');
 
-            if (events.hasClass(this, 'spinner-t')) {
+            if (ui.hasClass(this, 'spinner-t')) {
                 val += 1;
                 if (val >= max) { val = max; }
 
@@ -39,9 +39,9 @@ var spinnerForm = {};
 
         checkSpinnerForms = function () {
 
-            events.each('.form-spinner', function () {
+            ui.each('.form-spinner', function () {
 
-                var t = selector('[type="text"]', this)[0];
+                var t = ui.find('[type="text"]', this)[0];
                 t.value = t.getAttribute('value');
 
             });
@@ -52,11 +52,11 @@ var spinnerForm = {};
     };
 
     // Loaders
-    events.onload(spinnerForm.Start);
+    ui.onload(ui.spinnerForm.Start);
 
-    // ajax callback loader: requires Ajax JS
-    events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.classNames.indexOf('form-spinner') > -1) { checkSpinnerForms(); }
+    // ajax callback loader
+    ui.on(document, 'ui:ajaxCallbacks', function () {
+        if (ui.ajax.classNames.indexOf('form-spinner') > -1) { checkSpinnerForms(); }
     });
 
 }());

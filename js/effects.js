@@ -1,9 +1,9 @@
 /*
- Effects JS
- Effects JS requires Selector Js, Events JS, User Agents JS
+ UI Effects JS
+ Requires UI JS
 */
 
-var effects = {
+ui.effects = {
 
     // pause effects
     pauseAll: false,
@@ -21,22 +21,22 @@ var effects = {
 (function () {
 
     'use strict';
-    /*globals window, document, events, useragents, setTimeout, clearTimeout */
+    /*globals window, document, ui, setTimeout, clearTimeout */
 
     var pauseTransitions;
 
     function pauseTransitionsFnc(eName) {
 
-        if (!effects.pauseAll) {
+        if (!ui.effects.pauseAll) {
 
-            if ((eName === 'scroll' && effects.pauseScroll) || (eName === 'resize' && effects.pauseResize)) {
+            if ((eName === 'scroll' && ui.effects.pauseScroll) || (eName === 'resize' && ui.effects.pauseResize)) {
 
                 clearTimeout(pauseTransitions);
-                events.addClass(document, 'pause-effects');
+                ui.addClass(document, 'pause-effects');
 
                 pauseTransitions = setTimeout(function () {
-                    events.removeClass(document, 'pause-effects');
-                }, 300);
+                    ui.removeClass(document, 'pause-effects');
+                }, ui.globals.ease * 2);
 
             }
 
@@ -44,30 +44,30 @@ var effects = {
 
     }
 
-    effects.Start = function () {
+    ui.effects.Start = function () {
 
-        if (useragents.ie && !useragents.edge && !effects.ie) {
-            effects.pauseAll = true;
+        if (ui.userAgents.ie && !ui.userAgents.edge && !ui.effects.ie) {
+            ui.effects.pauseAll = true;
         }
-        if (useragents.mobile && useragents.android && !effects.android) {
-            effects.pauseAll = true;
+        if (ui.userAgents.mobile && ui.userAgents.android && !ui.effects.android) {
+            ui.effects.pauseAll = true;
         }
-        if (useragents.mobile && useragents.androidOld && !effects.androidOld) {
-            effects.pauseAll = true;
+        if (ui.userAgents.mobile && ui.userAgents.androidOld && !ui.effects.androidOld) {
+            ui.effects.pauseAll = true;
         }
 
-        if (effects.pauseAll) {
-            events.addClass(document, 'no-effects');
+        if (ui.effects.pauseAll) {
+            ui.addClass(document, 'no-effects');
 
         } else {
 
             // wait page preload to start transitions
-            if (effects.preload) {
+            if (ui.effects.preload) {
 
-                events.addClass(document, 'pause-effects');
+                ui.addClass(document, 'pause-effects');
                 setTimeout(function () {
-                    events.removeClass(document, 'pause-effects');
-                }, 300);
+                    ui.removeClass(document, 'pause-effects');
+                }, ui.globals.ease * 2);
 
             }
 
@@ -76,7 +76,7 @@ var effects = {
     };
 
     // Loaders
-    events.onload(effects.Start);
-    events.on(window, 'resize scroll', function (e) { pauseTransitionsFnc(e.type); });
+    ui.onload(ui.effects.Start);
+    ui.on(window, 'resize scroll', function (e) { pauseTransitionsFnc(e.type); });
 
 }());

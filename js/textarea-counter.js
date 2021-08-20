@@ -1,18 +1,18 @@
 /*
- Textarea Counter JS
- Textarea Counter JS requires Selector Js, Events JS
+ UI Textarea Counter JS
+ Requires UI JS
 */
 
-var textareaCounter = {};
+ui.textareaCounter = {};
 
 (function () {
 
     'use strict';
-    /*globals document, selector, events, ajax, setTimeout */
+    /*globals document, ui, setTimeout */
 
     var loadCounters;
 
-    textareaCounter.Start = function () {
+    ui.textareaCounter.Start = function () {
 
         function counter(t) {
 
@@ -33,7 +33,7 @@ var textareaCounter = {};
 
             }
 
-            events.addClass(p, 'change');
+            ui.addClass(p, 'change');
             p.setAttribute('data-change', length);
 
             return false;
@@ -42,9 +42,9 @@ var textareaCounter = {};
 
         loadCounters = function () {
 
-            events.each('.textarea[data-counter]:not(.toggle-textarea):not(.change)', function () {
+            ui.each('.textarea[data-counter]:not(.toggle-textarea):not(.change)', function () {
 
-                var textarea = selector('textarea', this)[0];
+                var textarea = ui.find('textarea', this)[0];
                 counter(textarea);
 
             });
@@ -52,8 +52,8 @@ var textareaCounter = {};
         };
         loadCounters();
 
-        // Events
-        events.on(document, 'keydown keypress change', '.textarea[data-counter] textarea', function (e) {
+        // Event Listeners
+        ui.on(document, 'keydown keypress change', '.textarea[data-counter] textarea', function (e) {
 
             if (e.type === 'keydown' && e.ctrlKey) {
 
@@ -64,11 +64,11 @@ var textareaCounter = {};
 
         });
 
-        events.on(document, 'reset', 'form', function () {
+        ui.on(document, 'reset', 'form', function () {
 
             var i, that;
 
-            that = selector('.textarea[data-counter] textarea');
+            that = ui.find('.textarea[data-counter] textarea');
             if (that.length === 0) { return; }
 
             setTimeout(function () {
@@ -84,11 +84,11 @@ var textareaCounter = {};
     };
 
     // Loaders
-    events.onload(textareaCounter.Start);
+    ui.onload(ui.textareaCounter.Start);
 
-    // ajax callback loader: requires Ajax JS
-    events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.text.indexOf('data-counter="') > 0) { loadCounters(); }
+    // ajax callback loader
+    ui.on(document, 'ui:ajaxCallbacks', function () {
+        if (ui.ajax.text.indexOf('data-counter="') > 0) { loadCounters(); }
     });
 
 }());

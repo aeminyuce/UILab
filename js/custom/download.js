@@ -1,4 +1,4 @@
-/*globals document, selector, events, setTimeout, ajax, FileReader, loadingMask */
+/*globals document, ui, setTimeout, FileReader */
 
 function fileSize(holder, code) {
 
@@ -8,7 +8,7 @@ function fileSize(holder, code) {
     fileSize = fileSize / 1000;
 
     fileSize = fileSize.toFixed(2);
-    selector('.generate-size', holder)[0].innerHTML = fileSize + ' kb';
+    ui.find('.generate-size', holder)[0].innerHTML = fileSize + ' kb';
 
 }
 
@@ -16,9 +16,9 @@ function pullFiles(that) {
 
     var holder, list, result, pullResults, count, type, countFnc;
 
-    holder = events.closest(that, '.generate-holder')[0];
-    list = selector('input:checked:not(.generate-toggle)', holder);
-    result = selector('textarea', holder)[0];
+    holder = ui.closest(that, '.generate-holder')[0];
+    list = ui.find('input:checked:not(.generate-toggle)', holder);
+    result = ui.find('textarea', holder)[0];
 
     pullResults = '';
     count = 0;
@@ -27,7 +27,7 @@ function pullFiles(that) {
 
     countFnc = function () {
 
-        ajax({
+        ui.ajax({
 
             url : list[count].getAttribute('value') + '.' + that.name,
             callback: function (status, response) {
@@ -62,8 +62,8 @@ function pullFiles(that) {
 
                         // empty variables
                         setTimeout(function () {
-                            loadingMask.toggle(that); // hide loading
-                        }, 150);
+                            ui.loadingMask.toggle(that); // hide loading
+                        }, ui.globals.ease);
 
                         pullResults = '';
 
@@ -77,12 +77,12 @@ function pullFiles(that) {
 
     };
 
-    loadingMask.toggle(that); // show loading
+    ui.loadingMask.toggle(that); // show loading
     if (list.length < 1) {
 
         setTimeout(function () {
-            loadingMask.toggle(that); // hide loading
-        }, 150);
+            ui.loadingMask.toggle(that); // hide loading
+        }, ui.globals.ease);
 
         return;
 
@@ -90,7 +90,7 @@ function pullFiles(that) {
 
     if (that.name === 'less') { // firstly, import settings file
 
-        ajax({
+        ui.ajax({
 
             url : '../css/_settings.less',
             callback: function (status, response) {
@@ -116,9 +116,9 @@ function readFiles(that) {
 
     var i, holder, forms, elems, list, btn, reader, ext, file, getTypes, count, toggler;
 
-    holder = events.closest(that, '.generate-holder')[0];
-    elems = selector('input', holder);
-    list = selector('input:not(.generate-toggle)', holder);
+    holder = ui.closest(that, '.generate-holder')[0];
+    elems = ui.find('input', holder);
+    list = ui.find('input:not(.generate-toggle)', holder);
 
     reader = new FileReader(); // filereader API
 
@@ -131,11 +131,11 @@ function readFiles(that) {
     }
 
     btn = that.parentElement;
-    btn = selector('.btn', btn)[0];
+    btn = ui.find('.btn', btn)[0];
 
-    loadingMask.toggle(btn); // show loading
+    ui.loadingMask.toggle(btn); // show loading
 
-    events.each(elems, function () {
+    ui.each(elems, function () {
         this.checked = false;
     });
 
@@ -150,8 +150,8 @@ function readFiles(that) {
             if (getTypes === null) {
 
                 setTimeout(function () {
-                    loadingMask.toggle(btn); // hide loading
-                }, 150);
+                    ui.loadingMask.toggle(btn); // hide loading
+                }, ui.globals.ease);
 
                 that.value = '';
 
@@ -168,7 +168,7 @@ function readFiles(that) {
 
             setTimeout(function () {
 
-                events.each(list, function () {
+                ui.each(list, function () {
 
                     if (getTypes.toString().indexOf(this.name) > -1) {
                         this.checked = true;
@@ -180,15 +180,15 @@ function readFiles(that) {
                 });
 
                 // check selected all properties
-                forms = selector('.generate-forms', holder);
-                events.each(forms, function () {
+                forms = ui.find('.generate-forms', holder);
+                ui.each(forms, function () {
 
                     count = 0;
 
-                    elems = selector('input:not(.generate-toggle)', this);
-                    toggler = selector('.generate-toggle', this)[0];
+                    elems = ui.find('input:not(.generate-toggle)', this);
+                    toggler = ui.find('.generate-toggle', this)[0];
 
-                    events.each(elems, function () {
+                    ui.each(elems, function () {
                         if (this.checked) { count += 1; }
                     });
 
@@ -203,21 +203,21 @@ function readFiles(that) {
                 });
 
                 setTimeout(function () {
-                    loadingMask.toggle(btn); // hide loading
-                }, 150);
+                    ui.loadingMask.toggle(btn); // hide loading
+                }, ui.globals.ease);
 
                 // empty variables
                 getTypes = [];
 
-            }, 300);
+            }, ui.globals.ease * 2);
 
         };
 
     } else {
 
         setTimeout(function () {
-            loadingMask.toggle(btn); // hide loading
-        }, 150);
+            ui.loadingMask.toggle(btn); // hide loading
+        }, ui.globals.ease);
 
     }
 
@@ -227,33 +227,33 @@ function readFiles(that) {
 
 function generator() {
 
-    // Events
-    events.on('.generate-import', 'change', function () {
+    // Event Listeners
+    ui.on('.generate-import', 'change', function () {
         readFiles(this);
     });
 
-    events.on('.generate-btn', 'click', function () {
+    ui.on('.generate-btn', 'click', function () {
         pullFiles(this);
     });
 
-    events.on('.generate-clear', 'click', function () {
+    ui.on('.generate-clear', 'click', function () {
 
         var holder, form;
 
-        holder = events.closest(this, '.generate-holder')[0];
-        form = selector('textarea', holder)[0];
+        holder = ui.closest(this, '.generate-holder')[0];
+        form = ui.find('textarea', holder)[0];
 
         form.value = '';
-        selector('.generate-size', holder)[0].innerHTML = '0 kb';
+        ui.find('.generate-size', holder)[0].innerHTML = '0 kb';
 
     });
 
-    events.on('.generate-min', 'click', function () {
+    ui.on('.generate-min', 'click', function () {
 
         var holder, result, code;
 
-        holder = events.closest(this, '.generate-holder')[0];
-        result = selector('textarea', holder)[0];
+        holder = ui.closest(this, '.generate-holder')[0];
+        result = ui.find('textarea', holder)[0];
 
         code = result.value;
         if (code.length === 0) { return; }
@@ -287,15 +287,15 @@ function generator() {
 
     });
 
-    events.on(document, 'paste keydown blur', '.generate-holder textarea', function () {
+    ui.on(document, 'paste keydown blur', '.generate-holder textarea', function () {
 
         var that, holder, result, code;
 
         that = this;
         setTimeout(function () {
 
-            holder = events.closest(that, '.generate-holder')[0];
-            result = selector('textarea', holder)[0];
+            holder = ui.closest(that, '.generate-holder')[0];
+            result = ui.find('textarea', holder)[0];
 
             code = result.value;
             fileSize(holder, code);
@@ -304,12 +304,12 @@ function generator() {
 
     });
 
-    events.on('.generate-copy', 'click', function () {
+    ui.on('.generate-copy', 'click', function () {
 
         var holder, form;
 
-        holder = events.closest(this, '.generate-holder')[0];
-        form = selector('textarea', holder)[0];
+        holder = ui.closest(this, '.generate-holder')[0];
+        form = ui.find('textarea', holder)[0];
 
         if (form.value.length === 0) { return; }
 
@@ -318,22 +318,22 @@ function generator() {
 
     });
 
-    events.on('.generate-toggle', 'change', function () {
+    ui.on('.generate-toggle', 'change', function () {
 
         var forms, elems;
 
-        forms = events.closest(this, '.generate-forms')[0];
-        elems = selector('input', forms);
+        forms = ui.closest(this, '.generate-forms')[0];
+        elems = ui.find('input', forms);
 
         if (this.checked) {
 
-            events.each(elems, function () {
+            ui.each(elems, function () {
                 this.checked = true;
             });
 
         } else {
 
-            events.each(elems, function () {
+            ui.each(elems, function () {
                 this.checked = false;
             });
 
@@ -341,17 +341,17 @@ function generator() {
 
     });
 
-    events.on('.generate-forms input:not(.generate-toggle)', 'change', function () {
+    ui.on('.generate-forms input:not(.generate-toggle)', 'change', function () {
 
         var forms, elems, count, toggler;
         count = 0;
 
-        forms = events.closest(this, '.generate-forms')[0];
-        elems = selector('input:not(.generate-toggle)', forms);
+        forms = ui.closest(this, '.generate-forms')[0];
+        elems = ui.find('input:not(.generate-toggle)', forms);
 
-        toggler = selector('.generate-toggle', forms)[0];
+        toggler = ui.find('.generate-toggle', forms)[0];
 
-        events.each(elems, function () {
+        ui.each(elems, function () {
             if (this.checked) { count += 1; }
         });
 
@@ -366,4 +366,4 @@ function generator() {
 
 }
 
-events.onload(generator);
+ui.onload(generator);

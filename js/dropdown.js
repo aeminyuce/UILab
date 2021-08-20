@@ -1,19 +1,22 @@
 /*
- Dropdown JS
- Dropdown JS requires Selector Js, Events JS
+ UI Dropdown JS
+ Requires UI JS
 */
 
-var dropdown = {};
+ui.dropdown = {};
 
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, setTimeout, clearTimeout */
+    /*globals window, document, ui, setTimeout, clearTimeout */
 
     var
         dropdownHoverTimer,
         dropdownOpenTimer,
+
+        dropdownLeaveTimer,
         dropdownCloseTimer,
+
         listStyles,
         selectOpened,
         selectInContent;
@@ -24,37 +27,42 @@ var dropdown = {};
 
         var that, list;
 
-        that = selector('.dropdown.open-ease');
-        events.removeClass(that, 'open-ease');
+        that = ui.find('.dropdown.open-ease');
+        ui.removeClass(that, 'open-ease');
 
-        clearTimeout(dropdownCloseTimer);
-        dropdownCloseTimer = setTimeout(function () {
+        clearTimeout(dropdownLeaveTimer);
+        dropdownLeaveTimer = setTimeout(function () {
 
-            events.each(that, function () {
+            ui.each(that, function () {
 
-                list = selector('.content', this)[0];
+                clearTimeout(dropdownCloseTimer);
+                list = ui.find('.content', this)[0];
 
-                if (listStyles === 0) {
-                    list.removeAttribute('style');
+                dropdownCloseTimer = setTimeout(function () {
 
-                } else {
+                    if (listStyles === 0) {
+                        list.removeAttribute('style');
 
-                    list.style.removeProperty('max-height');
-                    list.style.removeProperty('right');
-                    list.style.removeProperty('margin-left');
-                    list.style.removeProperty('transform-origin');
+                    } else {
 
-                }
+                        list.style.removeProperty('max-height');
+                        list.style.removeProperty('right');
+                        list.style.removeProperty('margin-left');
+                        list.style.removeProperty('transform-origin');
 
-                events.removeClass(that, 'menu-t open');
+                    }
+
+                    ui.removeClass(that, 'menu-t open');
+
+                }, ui.globals.ease);
 
             });
 
-        }, 50);
+        }, 0);
 
     }
 
-    dropdown.Start = function () {
+    ui.dropdown.Start = function () {
 
         function dropdownOpen(e, that) {
 
@@ -71,22 +79,22 @@ var dropdown = {};
                 dropdownClose();
 
                 clearTimeout(dropdownOpenTimer);
-                events.addClass(parent, 'open');
+                ui.addClass(parent, 'open');
 
                 dropdownOpenTimer = setTimeout(function () {
-                    events.addClass(parent, 'open-ease');
-                }, (dropdownHoverTimer / 6));
+                    ui.addClass(parent, 'open-ease');
+                }, dropdownHoverTimer / 6);
 
                 offset = parent.getBoundingClientRect();
-                list = selector('.content', parent)[0];
+                list = ui.find('.content', parent)[0];
 
-                if (events.closest(that, '.mobile-menu')[0] === undefined && !events.hasClass(parent, 'nav-full-h')) { // diable all positionings on mobile menus and full horizontal navigations
+                if (ui.closest(that, '.mobile-menu')[0] === undefined && !ui.hasClass(parent, 'nav-full-h')) { // diable all positionings on mobile menus and full horizontal navigations
 
                     listStyles = list.style.length;
 
-                    if (window.innerWidth > 767) { // menu horizontal positioning: active
+                    if (window.innerWidth > ui.globals.sm) { // menu horizontal positioning: active
 
-                        if (events.hasClass(parent, 'menu-l') || (offset.left + list.offsetWidth + 15) > window.innerWidth) { // 15px: scrollbar size
+                        if (ui.hasClass(parent, 'menu-l') || (offset.left + list.offsetWidth + 15) > window.innerWidth) { // 15px: scrollbar size
 
                             if (offset.left - (list.offsetWidth - parent.offsetWidth) >= 0) {
 
@@ -97,7 +105,7 @@ var dropdown = {};
 
                             }
 
-                        } else if (events.hasClass(parent, 'menu-c')) {
+                        } else if (ui.hasClass(parent, 'menu-c')) {
 
                             alignSize = Math.abs(list.offsetWidth - parent.offsetWidth) / 2;
 
@@ -118,7 +126,7 @@ var dropdown = {};
 
                 setMaxH = function (pos) { // set max-height of list
 
-                    if (events.hasClass(list, 'no-scroll')) { return; }
+                    if (ui.hasClass(list, 'no-scroll')) { return; }
 
                     if (pos === 'top') {
                         list.style.maxHeight = window.innerHeight - 21 + 'px'; // 21: margin-top + scrollbar size
@@ -133,9 +141,9 @@ var dropdown = {};
 
                     if (offset.top - parseInt(that.offsetHeight + list.offsetHeight, 10) + that.offsetHeight > 0) {
 
-                        if (!events.hasClass(parent, 'nav-full-h')) { // diable all menu-t on full horizontal navigations
+                        if (!ui.hasClass(parent, 'nav-full-h')) { // diable all menu-t on full horizontal navigations
 
-                            events.addClass(parent, 'menu-t');
+                            ui.addClass(parent, 'menu-t');
                             list.style.removeProperty('transform-origin');
 
                         }
@@ -152,41 +160,41 @@ var dropdown = {};
 
                 setTimeout(function () {
 
-                    events.on(document, 'click.dropdownClose', function (ev) {
+                    ui.on(document, 'click.ui:dropdownClose', function (ev) {
 
-                        var content = events.closest(ev.target, '.content')[0];
+                        var content = ui.closest(ev.target, '.content')[0];
 
                         // prevent for non listing contents
                         if (content !== undefined) {
 
-                            if (events.closest(content, '.dropdown')[0] !== undefined) { // check other .content class names
+                            if (ui.closest(content, '.dropdown')[0] !== undefined) { // check other .content class names
                                 return;
                             }
 
                         }
 
-                        if (events.closest(ev.target, '.dropdown.nav-full-h')[0] !== undefined && ev.target.className.split(' ').indexOf('content') === 0) { // check full horizontal navigations
+                        if (ui.closest(ev.target, '.dropdown.nav-full-h')[0] !== undefined && ev.target.className.split(' ').indexOf('content') === 0) { // check full horizontal navigations
                             return;
                         }
 
                         if (ev.button !== 2) { // inherited right clicks
 
                             dropdownClose();
-                            events.off(document, 'click.dropdownClose');
+                            ui.off(document, 'click.ui:dropdownClose');
 
                         }
 
                     });
 
-                }, 0); // do not remove zero timer
+                }, 0);
 
             }
 
         }
 
-        // Events
-        // open events
-        events.on(document,
+        // Event Listeners
+        // open
+        ui.on(document,
             'click',
             '.desktop .dropdown:not(.open-hover):not(.open-ease) > .btn,html.mobile .dropdown:not(.open-ease) > .btn',
 
@@ -197,74 +205,74 @@ var dropdown = {};
 
             });
 
-        events.on(document,
+        ui.on(document,
             'mouseenter',
             '.desktop .dropdown.open-hover:not(.open-ease) > .btn',
 
             function (e) {
 
-                clearTimeout(dropdownCloseTimer);
-                dropdownHoverTimer = 300;
+                clearTimeout(dropdownLeaveTimer);
+                dropdownHoverTimer = ui.globals.ease * 2;
 
                 dropdownOpen(e, this);
 
             });
 
-        events.on(document,
+        ui.on(document,
             'mouseenter',
             '.desktop .dropdown.open-hover.open > .btn,.desktop .dropdown.open-hover.open-ease .content',
 
             function () {
 
-                dropdownHoverTimer = 300;
-                clearTimeout(dropdownCloseTimer);
+                dropdownHoverTimer = ui.globals.ease * 2;
+                clearTimeout(dropdownLeaveTimer);
 
             });
 
-        // form toggle events
-        events.on('.dropdown li > label', 'click', function () {
+        // form toggle
+        ui.on('.dropdown li > label', 'click', function () {
 
             var p, target, input;
 
-            p = events.closest(this, '.dropdown')[0];
+            p = ui.closest(this, '.dropdown')[0];
 
-            target = selector('.btn > .value-toggle', p)[0];
+            target = ui.find('.btn > .value-toggle', p)[0];
             target.innerHTML = '';
             target.insertAdjacentHTML('beforeend', this.innerHTML);
 
-            input = selector('input', target)[0];
+            input = ui.find('input', target)[0];
             if (input !== undefined) {
                 input.parentNode.removeChild(input);
             }
 
-            events.removeClass(selector('.selected', p), 'selected');
-            events.addClass(this.parentNode, 'selected');
+            ui.removeClass(ui.find('.selected', p), 'selected');
+            ui.addClass(this.parentNode, 'selected');
 
         });
 
-        // close events
-        events.on(document,
+        // close
+        ui.on(document,
             'mouseleave',
             '.dropdown.open-hover',
 
             function () {
 
-                clearTimeout(dropdownCloseTimer);
+                clearTimeout(dropdownLeaveTimer);
                 clearTimeout(dropdownOpenTimer);
 
-                dropdownCloseTimer = setTimeout(function () {
+                dropdownLeaveTimer = setTimeout(function () {
                     dropdownClose();
-                }, 300);
+                }, ui.globals.ease * 2);
 
             });
 
-        events.on(document,
+        ui.on(document,
             'mouseup',
             '.dropdown:not(.nav) li',
 
             function () {
 
-                clearTimeout(dropdownCloseTimer);
+                clearTimeout(dropdownLeaveTimer);
                 clearTimeout(dropdownOpenTimer);
 
                 dropdownClose();
@@ -273,21 +281,21 @@ var dropdown = {};
 
         // select dropdown fix
         selectOpened = false;
-        selectInContent = selector('.dropdown .content select');
+        selectInContent = ui.find('.dropdown .content select');
 
-        events.on(document,
+        ui.on(document,
             'focus',
             selectInContent,
 
             function () { selectOpened = true; });
 
-        events.on(document,
+        ui.on(document,
             'blur',
             selectInContent,
 
             function () { selectOpened = false; });
 
-        events.on(document,
+        ui.on(document,
             'keyup',
             selectInContent,
 
@@ -302,7 +310,7 @@ var dropdown = {};
     };
 
     // Loaders
-    events.onload(dropdown.Start);
-    events.on(window, 'resize', dropdownClose);
+    ui.onload(ui.dropdown.Start);
+    ui.on(window, 'resize', dropdownClose);
 
 }());

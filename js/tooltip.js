@@ -1,9 +1,9 @@
 /*
- Tooltip JS
- Tooltip JS requires Selector Js, Events JS, User Agents JS
+ UI Tooltip JS
+ Requires UI JS
 */
 
-var tooltip = {
+ui.tooltip = {
 
     theme: '', // use themes
     border: '', // ex: 'border', 'border-dual', 'border-lg' etc.
@@ -13,7 +13,7 @@ var tooltip = {
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, setTimeout, clearTimeout, useragents */
+    /*globals window, document, ui, setTimeout, clearTimeout */
 
     var
         removeTimer,
@@ -24,21 +24,21 @@ var tooltip = {
 
     function removeFnc() {
 
-        var that = selector('.tooltip')[0];
+        var that = ui.find('.tooltip')[0];
 
         clearTimeout(removeTimer);
 
         removeTimer = setTimeout(function () {
-            events.removeClass(that, 'open-ease');
+            ui.removeClass(that, 'open-ease');
 
             removeTimer2x = setTimeout(function () {
 
-                events.removeClass(that, 'open');
+                ui.removeClass(that, 'open');
                 that.parentNode.removeChild(that);
 
-            }, 150);
+            }, ui.globals.ease);
 
-        }, 150);
+        }, ui.globals.ease);
 
     }
 
@@ -46,7 +46,7 @@ var tooltip = {
 
         var win, winRect, re, rex, html, sourceRect, arr, pos, posRecall, calc, winStyles, arrowStyles;
 
-        win = selector('.tooltip');
+        win = ui.find('.tooltip');
         sourceRect = source.getBoundingClientRect();
 
         // clear remove timers
@@ -55,34 +55,34 @@ var tooltip = {
 
         // create
         if (win.length > 0) {
-            selector('.tooltip-content', win[0])[0].innerHTML = title;
+            ui.find('.tooltip-content', win[0])[0].innerHTML = title;
 
         } else {
 
             re = new RegExp('\\s+\\s');
             rex = new RegExp('^\\s|\\s+$');
 
-            winStyles = tooltip.classes + ' ' + tooltip.border + ' ' + tooltip.theme;
+            winStyles = ui.tooltip.classes + ' ' + ui.tooltip.border + ' ' + ui.tooltip.theme;
             winStyles = winStyles.replace(re, ' ').replace(rex, '');
 
-            arrowStyles = tooltip.border + ' ' + tooltip.theme;
+            arrowStyles = ui.tooltip.border + ' ' + ui.tooltip.theme;
             arrowStyles = arrowStyles.replace(re, ' ').replace(rex, '');
 
             html = '<div class="tooltip ' + winStyles + ' ease-tooltip">' +
                     '<div class="tooltip-content">' + title + '</div>' +
                     '<span>' +
                         '<i class="bg ' + arrowStyles + '"></i>' +
-                        '<i class="' + tooltip.theme + '"></i>' +
+                        '<i class="' + ui.tooltip.theme + '"></i>' +
                     '</span>' +
                 '</div>';
 
-            selector('body')[0].insertAdjacentHTML('afterbegin', html);
-            win = selector('.tooltip');
+            ui.find('body')[0].insertAdjacentHTML('afterbegin', html);
+            win = ui.find('.tooltip');
 
         }
 
         // show
-        events.addClass(win, 'open');
+        ui.addClass(win, 'open');
         setTimeout(function () {
 
             // check screen limits
@@ -167,7 +167,7 @@ var tooltip = {
             win[0].style.left = (sourceRect.left + window.pageXOffset + calc.hor) + 'px';
 
             win[0].setAttribute('data-pos', pos);
-            events.addClass(win, 'open-ease');
+            ui.addClass(win, 'open-ease');
 
         }, 10);
 
@@ -185,7 +185,7 @@ var tooltip = {
             that.setAttribute('data-title', title);
             that.removeAttribute('title');
 
-            events.addClass(that, 'tooltip-active');
+            ui.addClass(that, 'tooltip-active');
 
         } else {
 
@@ -199,7 +199,7 @@ var tooltip = {
                     that.removeAttribute('data-title');
                     that.setAttribute('title', dataTitle);
 
-                    events.removeClass(that, 'tooltip-active');
+                    ui.removeClass(that, 'tooltip-active');
 
                 }
 
@@ -209,12 +209,12 @@ var tooltip = {
 
     }
 
-    tooltip.Start = function () {
+    ui.tooltip.Start = function () {
 
-        // Events
-        events.on(document, 'mouseenter mouseleave', '[data-tooltip]:not([data-only="mobile"])', function (e) {
+        // Event Listeners
+        ui.on(document, 'mouseenter mouseleave', '[data-tooltip]:not([data-only="mobile"])', function (e) {
 
-            if (useragents.desktop) {
+            if (ui.userAgents.desktop) {
 
                 var type;
 
@@ -231,17 +231,17 @@ var tooltip = {
 
         });
 
-        events.on(document, 'touchstart touchmove touchend', '[data-tooltip]:not([data-only="desktop"])', function (e) {
+        ui.on(document, 'touchstart touchmove touchend', '[data-tooltip]:not([data-only="desktop"])', function (e) {
 
             var that = this;
 
             if (e.type === 'touchstart') {
-                touchControl = events.hasClass(that, 'tooltip-active');
+                touchControl = ui.hasClass(that, 'tooltip-active');
             }
 
-            events.off(that, 'touchmove.tooltipClose');
+            ui.off(that, 'touchmove.ui:tooltipClose');
 
-            events.on(that, 'touchmove.tooltipClose', function () {
+            ui.on(that, 'touchmove.ui:tooltipClose', function () {
                 isScrolling = true;
             });
 
@@ -254,7 +254,7 @@ var tooltip = {
 
                 }
 
-                if (useragents.mobile && useragents.ios) {
+                if (ui.userAgents.mobile && ui.userAgents.ios) {
 
                     if (!touchControl) {
                         e.preventDefault();
@@ -272,14 +272,14 @@ var tooltip = {
                 pageTouchmoveTimer = setTimeout(function () {
 
                     tooltipFnc(that, 'open');
-                    events.on(document, 'touchend.tooltipClose', function () {
+                    ui.on(document, 'touchend.ui:tooltipClose', function () {
 
                         tooltipFnc(that, 'close');
-                        events.off(document, 'touchend.tooltipClose');
+                        ui.off(document, 'touchend.ui:tooltipClose');
 
                     });
 
-                }, 50);
+                }, ui.globals.fast / 2);
 
             }
 
@@ -288,6 +288,6 @@ var tooltip = {
     };
 
     // Loaders
-    events.onload(tooltip.Start);
+    ui.onload(ui.tooltip.Start);
 
 }());

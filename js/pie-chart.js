@@ -1,14 +1,14 @@
 /*
- Pie Chart JS
- Pie Chart JS requires Selector Js, Events JS, Tooltip JS
+ UI Pie Chart JS
+ Requires UI JS, Tooltip JS
 */
 
-var pieChart = {};
+ui.pieChart = {};
 
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, setTimeout, ajax */
+    /*globals window, document, ui, setTimeout */
 
     var loadCharts;
 
@@ -16,25 +16,25 @@ var pieChart = {};
 
         var chart, elems;
 
-        chart = selector('.pie-chart');
+        chart = ui.find('.pie-chart');
         if (chart.length < 1) { return; }
 
-        events.each(chart, function () {
+        ui.each(chart, function () {
 
-            elems = selector('ul', this)[0];
+            elems = ui.find('ul', this)[0];
             elems.style.height = elems.offsetWidth + 'px';
 
         });
 
     }
 
-    pieChart.Start = function () {
+    ui.pieChart.Start = function () {
 
         loadCharts = function () {
 
             var chart, elems, deg, textDeg, loadFnc, arr, fill, percent, html, title, msgHolder, msg;
 
-            chart = selector('.pie-chart');
+            chart = ui.find('.pie-chart');
             if (chart.length < 1) { return; }
 
             arr = [];
@@ -75,11 +75,11 @@ var pieChart = {};
                         '<i style="-ms-transform: rotate(' + -textDeg + 'deg); transform: rotate(' + -textDeg + 'deg);">' + percent + '%</i>' +
                     '</span>';
 
-                msgHolder = selector('div', parent)[0];
+                msgHolder = ui.find('div', parent)[0];
                 if (msgHolder === undefined) {
 
                     parent.insertAdjacentHTML('beforeEnd', '<div></div>');
-                    msgHolder = selector('div', parent)[0];
+                    msgHolder = ui.find('div', parent)[0];
 
                 }
 
@@ -88,8 +88,8 @@ var pieChart = {};
                 title = that.getAttribute('data-title');
                 if (title !== null && title !== '') { // add tooltip for data-title attributes
 
-                    msg = selector('span', msgHolder)[i];
-                    msg = selector('i', msg)[0];
+                    msg = ui.find('span', msgHolder)[i];
+                    msg = ui.find('i', msg)[0];
 
                     msg.setAttribute('data-tooltip', '');
                     msg.setAttribute('title', title);
@@ -112,24 +112,27 @@ var pieChart = {};
 
             };
 
-            events.each(chart, function () {
+            ui.each(chart, function () {
 
                 var that = this;
 
-                elems = selector('li', that);
-                selector('ul', this)[0].style.height = that.offsetWidth + 'px';
+                elems = ui.find('li', that);
+                ui.find('ul', this)[0].style.height = that.offsetWidth + 'px';
 
-                events.each(elems, function (i) {
+                ui.each(elems, function (i) {
                     loadFnc(that, this, i);
                 });
 
-                if (events.hasClass(document, 'no-effects')) {
-                    events.addClass(that, 'open open-ease');
+                if (ui.hasClass(document, 'no-effects')) {
+                    ui.addClass(that, 'open open-ease');
 
                 } else {
 
-                    events.addClass(that, 'open');
-                    setTimeout(function () { events.addClass(that, 'open-ease'); }, 2000); // wait for animation complete
+                    ui.addClass(that, 'open');
+
+                    setTimeout(function () {
+                        ui.addClass(that, 'open-ease');
+                    }, ui.globals.slow5x); // wait for animation complete
 
                 }
 
@@ -140,28 +143,28 @@ var pieChart = {};
         loadCharts();
         chartsResizer();
 
-        // Events
-        events.on(document, 'mouseenter mouseleave touchend', '.pie-chart > div span i', function (e) {
+        // Event Listeners
+        ui.on(document, 'mouseenter mouseleave touchend', '.pie-chart > div span i', function (e) {
 
             var i, chart, elems, msg;
 
-            chart = events.closest(this, '.pie-chart')[0];
-            elems = selector('li', chart);
+            chart = ui.closest(this, '.pie-chart')[0];
+            elems = ui.find('li', chart);
 
             if (e.type === 'mouseleave') {
 
-                events.each(elems, function () {
+                ui.each(elems, function () {
                     this.style.removeProperty('opacity');
                 });
 
             } else {
 
-                msg = selector('div', chart)[0];
-                msg = selector('span', msg);
+                msg = ui.find('div', chart)[0];
+                msg = ui.find('span', msg);
 
                 i = Array.prototype.slice.call(msg).indexOf(this.parentElement);
 
-                events.each(elems, function () {
+                ui.each(elems, function () {
                     this.style.opacity = '.25';
                 });
 
@@ -174,14 +177,14 @@ var pieChart = {};
     };
 
     // Loaders
-    events.onload(pieChart.Start);
+    ui.onload(ui.pieChart.Start);
 
-    events.on(window, 'resize', chartsResizer);
-    events.on(document, 'domChange', chartsResizer);
+    ui.on(window, 'resize', chartsResizer);
+    ui.on(document, 'ui:domChange', chartsResizer);
 
-    // ajax callback loader: requires Ajax JS
-    events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.classNames.indexOf('pie-chart') > -1) { loadCharts(); }
+    // ajax callback loader
+    ui.on(document, 'ui:ajaxCallbacks', function () {
+        if (ui.ajax.classNames.indexOf('pie-chart') > -1) { loadCharts(); }
     });
 
 }());

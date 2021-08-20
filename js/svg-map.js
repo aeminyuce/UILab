@@ -1,30 +1,30 @@
 /*
- SVG Map JS
- SVG Map requires Selector Js, Events JS
+ UI SVG Map JS
+ Requires UI JS
 */
 
-var svgMap = {};
+ui.svgMap = {};
 
 (function () {
 
     'use strict';
-    /*globals window, events, selector */
+    /*globals window, ui */
 
-    svgMap.Start = function () {
+    ui.svgMap.Start = function () {
 
         var map, arr, data, g, opacity;
 
-        map = selector('.svg-map');
+        map = ui.find('.svg-map');
         if (map.length === 0) { return; }
 
         arr = [];
 
-        events.each(map, function (i) {
+        ui.each(map, function (i) {
 
             arr[i] = [];
-            g = selector('g[data-size]', this);
+            g = ui.find('g[data-size]', this);
 
-            events.each(g, function () {
+            ui.each(g, function () {
 
                 data = this.getAttribute('data-size');
                 if (data > 0) { arr[i].push(data); }
@@ -33,12 +33,12 @@ var svgMap = {};
 
             arr[i] = arr[i].sort(function (a, b) { return b - a; });
 
-            events.each(g, function () {
+            ui.each(g, function () {
 
                 data = this.getAttribute('data-size');
                 if (data > 0) {
 
-                    events.addClass(this, 'active');
+                    ui.addClass(this, 'active');
 
                     opacity = Math.sqrt(data) / Math.sqrt(arr[i][0]);
                     opacity = opacity.toFixed(2);
@@ -46,7 +46,7 @@ var svgMap = {};
                     if (opacity > 1) { opacity = 1; }
                     if (opacity < 0.5) { opacity = 0.5; } /* optional */
 
-                    selector('path', this)[0].setAttribute('style', 'opacity: ' + opacity + ';');
+                    ui.find('path', this)[0].setAttribute('style', 'opacity: ' + opacity + ';');
 
                 }
 
@@ -56,8 +56,8 @@ var svgMap = {};
 
         });
 
-        // Events
-        events.on('g', 'click', function () {
+        // Event Listeners
+        ui.on('g', 'click', function () {
 
             var href = this.getAttribute('data-href');
 
@@ -70,6 +70,6 @@ var svgMap = {};
     };
 
     // Loaders
-    events.onload(svgMap.Start);
+    ui.onload(ui.svgMap.Start);
 
 }());

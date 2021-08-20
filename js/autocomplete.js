@@ -1,8 +1,9 @@
 /*
- Autocomplete JS
- Autocomplete JS requires Selector Js, Events JS, Ajax JS
+ UI Autocomplete JS
+ Requires UI JS
 */
-var autocomplete = {
+
+ui.autocomplete = {
 
     classes : 'round shadow-lg',
     customLetters : { "İ": "i", "I": "ı", "Ş": "ş", "Ğ": "ğ", "Ü": "ü", "Ö": "ö", "Ç": "ç" }
@@ -12,20 +13,20 @@ var autocomplete = {
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, ajax, clearTimeout, setTimeout */
+    /*globals window, document, ui, clearTimeout, setTimeout */
 
-    autocomplete.Start = function () {
+    ui.autocomplete.Start = function () {
 
         var
             customLowerCase,
-            formEvents,
+            formEventListeners,
             autocompleteRequests  = [];
 
         // custom lowercase
         (function () {
 
             var k, re, chars, keys;
-            keys = Object.keys(autocomplete.customLetters); // returns array
+            keys = Object.keys(ui.autocomplete.customLetters); // returns array
 
             chars = '(([';
             for (k = 0; k < keys.length; k++) { chars += keys[k]; }
@@ -36,7 +37,7 @@ var autocomplete = {
             customLowerCase = function (string) {
 
                 string = string.replace(/["'\[\]\{\}()]/g, '').replace(re, function (l) {
-                    return autocomplete.customLetters[l];
+                    return ui.autocomplete.customLetters[l];
                 });
 
                 return string.toLowerCase();
@@ -45,25 +46,25 @@ var autocomplete = {
 
         }());
 
-        // Events
-        formEvents = selector('.text.autocomplete > [type="text"]');
+        // Event Listeners
+        formEventListeners = ui.find('.text.autocomplete > [type="text"]');
 
-        events.on(document, 'keyup', formEvents, function (e) {
+        ui.on(document, 'keyup', formEventListeners, function (e) {
 
             var i, j, k, n, p, list, listItems, navSelected, navIndex, v, key, checkData, createDropdown, timerShowLines, offset, tHeight, dHeight, m, txt, getVal, src;
 
             p = this.parentNode;
 
-            list = selector('ul', p);
+            list = ui.find('ul', p);
             if (list[0] === undefined) { return; } // clear forms has triggering keyup event
 
             if (e.keyCode === 38 || e.keyCode === 40) {
 
                 // navigate the list
-                listItems = selector('li', list[0]);
+                listItems = ui.find('li', list[0]);
                 if (listItems.length > 0) {
 
-                    navSelected = selector('li.selected', list[0]);
+                    navSelected = ui.find('li.selected', list[0]);
                     if (navSelected.length > 0) {
 
                         navIndex = Array.prototype.slice.call(listItems).indexOf(navSelected[0]);
@@ -91,8 +92,8 @@ var autocomplete = {
 
                     }
 
-                    events.removeClass(navSelected, 'selected');
-                    events.addClass(listItems[navIndex], 'selected');
+                    ui.removeClass(navSelected, 'selected');
+                    ui.addClass(listItems[navIndex], 'selected');
 
                     this.value = listItems[navIndex].textContent;
 
@@ -102,13 +103,13 @@ var autocomplete = {
 
                 if (list.length >= 1) {
 
-                    events.removeClass(p, 'open-ease');
+                    ui.removeClass(p, 'open-ease');
                     setTimeout(function () {
 
-                        events.removeClass(p, 'open');
+                        ui.removeClass(p, 'open');
                         list[0].innerHTML = '';
 
-                    }, 150);
+                    }, ui.globals.ease);
 
                 }
 
@@ -132,7 +133,7 @@ var autocomplete = {
                                 clearTimeout(timerShowLines);
                                 timerShowLines = setTimeout(function () {
 
-                                    events.addClass(list, autocomplete.classes);
+                                    ui.addClass(list, ui.autocomplete.classes);
 
                                     offset = p.getBoundingClientRect();
 
@@ -142,7 +143,7 @@ var autocomplete = {
                                     if (offset.top + parseInt(tHeight + dHeight, 10) >= window.innerHeight) {
 
                                         if (offset.top - parseInt(tHeight + dHeight, 10) + tHeight > 0) {
-                                            events.addClass(p, 'menu-t');
+                                            ui.addClass(p, 'menu-t');
 
                                         } else {
                                             list[0].style.height = (dHeight - (offset.top + parseInt(tHeight + dHeight, 10) - window.innerHeight) - 15) + 'px';
@@ -156,10 +157,10 @@ var autocomplete = {
 
                             k = 0;
 
-                            events.addClass(p, 'open');
-                            setTimeout(function () { events.addClass(p, 'open-ease'); }, 0);
+                            ui.addClass(p, 'open');
+                            setTimeout(function () { ui.addClass(p, 'open-ease'); }, 0);
 
-                            events.removeClass(p, 'menu-t');
+                            ui.removeClass(p, 'menu-t');
                             list[0].innerHTML = '';
 
                             for (i = 0; i < response.length; i++) {
@@ -236,7 +237,7 @@ var autocomplete = {
                         if (src !== null && src !== '') {
 
                             // get json data with ajax
-                            ajax({
+                            ui.ajax({
 
                                 url : src + '?inputValue=' + v,
                                 beforesend: function (xhr) {
@@ -268,13 +269,13 @@ var autocomplete = {
 
                 } else {
 
-                    events.removeClass(p, 'open-ease');
+                    ui.removeClass(p, 'open-ease');
                     setTimeout(function () {
 
-                        events.removeClass(list, 'open');
+                        ui.removeClass(list, 'open');
                         list[0].innerHTML = '';
 
-                    }, 150);
+                    }, ui.globals.ease);
 
                 }
 
@@ -282,17 +283,20 @@ var autocomplete = {
 
         });
 
-        events.on(document, 'keydown', formEvents, function (e) {
+        ui.on(document, 'keydown', formEventListeners, function (e) {
 
             if (e.keyCode === 13) {
 
                 var p = this.parentNode;
-                if (selector('li.selected', p).length > 0) {
+                if (ui.find('li.selected', p).length > 0) {
 
-                    events.removeClass(p, 'open-ease');
-                    setTimeout(function () { events.removeClass(p, 'open'); }, 150);
+                    ui.removeClass(p, 'open-ease');
 
-                    if (!events.hasClass(p, 'auto-submit')) { // auto submit
+                    setTimeout(function () {
+                        ui.removeClass(p, 'open');
+                    }, ui.globals.ease);
+
+                    if (!ui.hasClass(p, 'auto-submit')) { // auto submit
 
                         e.preventDefault();
                         e.stopPropagation();
@@ -305,42 +309,47 @@ var autocomplete = {
 
         });
 
-        events.on(document, 'focus', formEvents, function () {
+        ui.on(document, 'focus', formEventListeners, function () {
 
             var p = this.parentNode;
             this.setAttribute('autocomplete', 'off');
 
-            events.addClass(p, 'open');
-            events.removeClass(p, 'menu-t');
+            ui.addClass(p, 'open');
+            ui.removeClass(p, 'menu-t');
 
             p.insertAdjacentHTML('beforeend', '<ul class="ease-autocomplete"></ul>');
 
         });
 
-        events.on(document, 'blur', formEvents, function () {
+        ui.on(document, 'blur', formEventListeners, function () {
 
             var p, list;
 
             p = this.parentNode;
-            list = selector('ul', p);
+            list = ui.find('ul', p);
 
-            events.removeClass(p, 'open-ease');
+            ui.removeClass(p, 'open-ease');
             setTimeout(function () {
 
-                events.removeClass(p, 'open');
+                ui.removeClass(p, 'open');
                 if (list.length > 0) { p.removeChild(list[0]); }
 
-            }, 150);
+            }, ui.globals.ease);
 
         });
 
-        events.on(document, 'mousedown', '.text.autocomplete.open li', function () {
+        ui.on(document, 'mousedown', '.text.autocomplete.open li', function () {
 
-            var p = events.closest(this, '.autocomplete');
-            selector('[type="text"]', p).value = this.textContent;
+            var p, target;
 
-            if (events.hasClass(p, 'auto-submit')) {
-                events.closest(this, 'form').submit(); // auto submit
+            p = ui.closest(this, '.autocomplete');
+            target = ui.find('[type="text"]', p);
+
+            target.value = this.textContent;
+            ui.trigger(target, 'keyup'); // trigger defined event listeners after autocomplete selected
+
+            if (ui.hasClass(p, 'auto-submit')) {
+                ui.closest(this, 'form').submit(); // auto submit
             }
 
         });
@@ -348,6 +357,6 @@ var autocomplete = {
     };
 
     // Loaders
-    events.onload(autocomplete.Start);
+    ui.onload(ui.autocomplete.Start);
 
 }());

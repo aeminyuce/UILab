@@ -1,9 +1,9 @@
 /*
- Line Charts JS
- Line Charts JS requires Selector Js, Events JS, Tooltip JS
+ UI Line Charts JS
+ Requires UI JS, Tooltip JS
 */
 
-var lineCharts = {
+ui.lineCharts = {
 
     rows: 5, // set number of rows
     rowsHeight: 50, // set height of single row (px)
@@ -40,34 +40,34 @@ var lineCharts = {
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, ajax */
+    /*globals window, document, ui */
 
     var loadCharts;
 
     // load charts
-    lineCharts.Start = function () {
+    ui.lineCharts.Start = function () {
 
         var i, j, k, charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, paths, circles, total, name;
 
         loadCharts = function (method, resizer) {
 
             if (method === 'loaded') {
-                charts = selector('.line-charts.loaded');
+                charts = ui.find('.line-charts.loaded');
 
-            } else if (method === 'domchange') {
+            } else if (method === 'ui:domChange') {
 
-                charts = selector('.line-charts:not(.loaded):not(.resized)');
-                events.removeClass('.line-charts', 'resized');
+                charts = ui.find('.line-charts:not(.loaded):not(.resized)');
+                ui.removeClass('.line-charts', 'resized');
 
             } else {
-                charts = selector('.line-charts:not(.loaded)');
+                charts = ui.find('.line-charts:not(.loaded)');
             }
 
             if (charts.length === 0) { return; }
 
-            events.each(charts, function () {
+            ui.each(charts, function () {
 
-                lines = selector('.line', this);
+                lines = ui.find('.line', this);
                 if (lines.length === 0) { return; }
 
                 data = [];
@@ -77,17 +77,17 @@ var lineCharts = {
                 data.backup = [];
 
                 if (resizer !== undefined && resizer) {
-                    events.addClass(this, 'loaded resized');
+                    ui.addClass(this, 'loaded resized');
 
                 } else {
-                    events.addClass(this, 'loaded');
+                    ui.addClass(this, 'loaded');
                 }
 
                 // calculate height of chart
                 size = this.getAttribute('data-size');
 
-                rows = lineCharts.rows;
-                rowsHeight = lineCharts.rowsHeight;
+                rows = ui.lineCharts.rows;
+                rowsHeight = ui.lineCharts.rowsHeight;
 
                 if (size !== null && size !== '') {
 
@@ -114,7 +114,7 @@ var lineCharts = {
                 yMax = [];
                 data.pass = false;
 
-                events.each(lines, function (i) {
+                ui.each(lines, function (i) {
 
                     data[i] = [];
 
@@ -123,7 +123,7 @@ var lineCharts = {
 
                     data.backup += this.outerHTML;
 
-                    events.each(selector('li', this), function () {
+                    ui.each(ui.find('li', this), function () {
 
                         y = this.getAttribute('data-y');
                         if (y !== null && y !== '') { data[i].y.push(y); } else { return; }
@@ -161,7 +161,7 @@ var lineCharts = {
                 // start html
                 data.svgHeight = data.height;
 
-                if (lineCharts.showInfo || lineCharts.showGridText) {
+                if (ui.lineCharts.showInfo || ui.lineCharts.showGridText) {
                     data.svgHeight += 15;
                 }
 
@@ -187,36 +187,36 @@ var lineCharts = {
                 } else { data.step = false; }
 
                 // create grids
-                col = (data.width - (lineCharts.right + lineCharts.left)) / (x.length - 1);
+                col = (data.width - (ui.lineCharts.right + ui.lineCharts.left)) / (x.length - 1);
                 html += '<g class="x">';
 
                 for (i = 0; i < x.length; i++) {
 
-                    posX = (i * col) + lineCharts.left;
+                    posX = (i * col) + ui.lineCharts.left;
 
-                    if (lineCharts.showGridText) {
+                    if (ui.lineCharts.showGridText) {
 
                         if (data.step) {
 
                             if (data.stepArr.indexOf(i) > -1) {
-                                html += '<text x="' + posX + '" y="' + (data.height - lineCharts.bottom + 20) + '">' + x[i] + '</text>';
+                                html += '<text x="' + posX + '" y="' + (data.height - ui.lineCharts.bottom + 20) + '">' + x[i] + '</text>';
                             }
 
                         } else {
-                            html += '<text x="' + posX + '" y="' + (data.height - lineCharts.bottom + 20) + '">' + x[i] + '</text>';
+                            html += '<text x="' + posX + '" y="' + (data.height - ui.lineCharts.bottom + 20) + '">' + x[i] + '</text>';
                         }
 
                     }
 
-                    if (i === 0 || lineCharts.showBgGrid) {
-                        html += '<line x1="' + posX + '" x2="' + posX + '" y1="' + lineCharts.top + '" ';
+                    if (i === 0 || ui.lineCharts.showBgGrid) {
+                        html += '<line x1="' + posX + '" x2="' + posX + '" y1="' + ui.lineCharts.top + '" ';
                     }
 
                     if (i === 0) { // root of x grid
-                        html += 'y2="' + Math.ceil(data.height - (lineCharts.bottom + (lineCharts.gridStroke / 2))) + '" class="root" stroke-width="' + lineCharts.gridStroke + '"';
+                        html += 'y2="' + Math.ceil(data.height - (ui.lineCharts.bottom + (ui.lineCharts.gridStroke / 2))) + '" class="root" stroke-width="' + ui.lineCharts.gridStroke + '"';
 
                     } else {
-                        html += 'y2="' + (data.height - lineCharts.bottom) + '" stroke-dasharray="4"';
+                        html += 'y2="' + (data.height - ui.lineCharts.bottom) + '" stroke-dasharray="4"';
                     }
 
                     html += '></line>';
@@ -228,21 +228,21 @@ var lineCharts = {
 
                 for (i = 0; i <= rows; i++) {
 
-                    posY = parseInt((i * (data.height - (lineCharts.top + lineCharts.bottom)) / rows) + lineCharts.top, 10);
+                    posY = parseInt((i * (data.height - (ui.lineCharts.top + ui.lineCharts.bottom)) / rows) + ui.lineCharts.top, 10);
 
-                    if (lineCharts.showGridText) {
-                        html += '<text x="' + (lineCharts.left - 10) + '" y="' + (posY + 4) + '">' + (parseInt((yMax - yMin) / rows, 10) * (rows - i) + yMin) + '</text>';
+                    if (ui.lineCharts.showGridText) {
+                        html += '<text x="' + (ui.lineCharts.left - 10) + '" y="' + (posY + 4) + '">' + (parseInt((yMax - yMin) / rows, 10) * (rows - i) + yMin) + '</text>';
                     }
 
-                    if (i === rows || lineCharts.showBgGrid) {
-                        html += '<line x2="' + (data.width - lineCharts.right + 1) + '" y1="' + posY + '" y2="' + posY + '" ';
+                    if (i === rows || ui.lineCharts.showBgGrid) {
+                        html += '<line x2="' + (data.width - ui.lineCharts.right + 1) + '" y1="' + posY + '" y2="' + posY + '" ';
                     }
 
                     if (i >= rows) { // root of y grid
-                        html += 'x1="' + Math.ceil(lineCharts.left - (lineCharts.gridStroke / 2)) + '" class="root" stroke-width="' + lineCharts.gridStroke + '"';
+                        html += 'x1="' + Math.ceil(ui.lineCharts.left - (ui.lineCharts.gridStroke / 2)) + '" class="root" stroke-width="' + ui.lineCharts.gridStroke + '"';
 
                     } else {
-                        html += 'x1="' + Math.floor(lineCharts.left + lineCharts.gridStroke) + '" stroke-dasharray="4"';
+                        html += 'x1="' + Math.floor(ui.lineCharts.left + ui.lineCharts.gridStroke) + '" stroke-dasharray="4"';
                     }
 
                     html += '></line>';
@@ -257,24 +257,24 @@ var lineCharts = {
 
                 html += '<g>';
 
-                events.each(lines, function (j) {
+                ui.each(lines, function (j) {
 
                     paths = '';
                     y = data[j].y;
 
                     // set color
-                    if (j > lineCharts.colors.length - 1) {
-                        data.color.push(lineCharts.colors[j - lineCharts.colors.length]);
+                    if (j > ui.lineCharts.colors.length - 1) {
+                        data.color.push(ui.lineCharts.colors[j - ui.lineCharts.colors.length]);
 
                     } else {
-                        data.color.push(lineCharts.colors[j]);
+                        data.color.push(ui.lineCharts.colors[j]);
                     }
 
                     // create paths and circles
                     for (i = 0; i < y.length; i++) {
 
-                        posX = (i * col) + lineCharts.left;
-                        posY = data.height - (data.height + (((data.height - (lineCharts.top + lineCharts.bottom)) * (y[i] - yMax)) / (yMax - yMin)) - lineCharts.top);
+                        posX = (i * col) + ui.lineCharts.left;
+                        posY = data.height - (data.height + (((data.height - (ui.lineCharts.top + ui.lineCharts.bottom)) * (y[i] - yMax)) / (yMax - yMin)) - ui.lineCharts.top);
 
                         // get line type
                         type = this.getAttribute('data-type');
@@ -290,7 +290,7 @@ var lineCharts = {
 
                         if (type.indexOf('curved') > -1) { // curved
 
-                            data.percent = parseInt((lineCharts.curveSize * (i * col)) / 100);
+                            data.percent = parseInt((ui.lineCharts.curveSize * (i * col)) / 100);
 
                             if (i === 1) { // start curves
 
@@ -314,9 +314,9 @@ var lineCharts = {
                         }
 
                         // create circles
-                        circles += '<circle cx="' + posX + '" cy="' + posY + '" r="' + lineCharts.circleSize + '" fill="' + data.color[j] + '" stroke="' + data.color[j] + '" stroke-width="0" data-tooltip title="' + y[i] + '"';
+                        circles += '<circle cx="' + posX + '" cy="' + posY + '" r="' + ui.lineCharts.circleSize + '" fill="' + data.color[j] + '" stroke="' + data.color[j] + '" stroke-width="0" data-tooltip title="' + y[i] + '"';
 
-                        if (lineCharts.lineStroke === 0) {
+                        if (ui.lineCharts.lineStroke === 0) {
                             circles += ' fill="' + data.color[j] + '"';
                         }
 
@@ -340,7 +340,7 @@ var lineCharts = {
 
                     html += 'd="M ' + pathStart.x + ' ' + pathStart.y +
                         paths +
-                        '" stroke="' + data.color[j] + '" stroke-width="' + lineCharts.lineStroke + '" />';
+                        '" stroke="' + data.color[j] + '" stroke-width="' + ui.lineCharts.lineStroke + '" />';
 
                     if (type.indexOf('filled') > -1) { // add filled paths
 
@@ -352,12 +352,12 @@ var lineCharts = {
                                 '<stop offset="0" stop-color="' + data.color[j] + '"></stop>' +
                                 '<stop offset="100%" stop-color="' + data.color[j] + '" stop-opacity="0.0"></stop>' +
                             '</linearGradient>' +
-                            '<path d="M ' + (pathStart.x + (lineCharts.gridStroke / 2)) + ' ' + pathStart.y +
+                            '<path d="M ' + (pathStart.x + (ui.lineCharts.gridStroke / 2)) + ' ' + pathStart.y +
                                 paths +
-                                ' V ' + (data.height - lineCharts.bottom - (lineCharts.gridStroke / 2)) +
-                                ' H ' + ((lineCharts.gridStroke / 2) + lineCharts.left) + ' Z ' +
+                                ' V ' + (data.height - ui.lineCharts.bottom - (ui.lineCharts.gridStroke / 2)) +
+                                ' H ' + ((ui.lineCharts.gridStroke / 2) + ui.lineCharts.left) + ' Z ' +
 
-                                '" stroke="0" fill="url(#gradientId' + data.id + ')" stroke-width="' + lineCharts.lineStroke + '" class="filled" />';
+                                '" stroke="0" fill="url(#gradientId' + data.id + ')" stroke-width="' + ui.lineCharts.lineStroke + '" class="filled" />';
 
                     }
 
@@ -376,11 +376,11 @@ var lineCharts = {
                 // close svg tag
                 html += circles + '</g></svg>';
                 if (data.width === 0) {
-                    events.removeClass(this, 'loaded resized');
+                    ui.removeClass(this, 'loaded resized');
                 }
 
                 // create info
-                if (lineCharts.showInfo) {
+                if (ui.lineCharts.showInfo) {
 
                     html += '<ul class="info">';
 
@@ -426,14 +426,14 @@ var lineCharts = {
     };
 
     // Loaders
-    events.onload(lineCharts.Start);
+    ui.onload(ui.lineCharts.Start);
 
-    events.on(window, 'resize', function () { loadCharts('loaded', true); }); // resize loaded charts
-    events.on(document, 'domChange', function () { loadCharts('domchange'); }); // resize loaded charts
+    ui.on(window, 'resize', function () { loadCharts('loaded', true); }); // resize loaded charts
+    ui.on(document, 'ui:domChange', function () { loadCharts('ui:domChange'); }); // resize loaded charts
 
-    // ajax callback loader: requires Ajax JS
-    events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.classNames.indexOf('line-charts') > -1) { loadCharts('not-loaded'); } // show not loaded charts
+    // ajax callback loader
+    ui.on(document, 'ui:ajaxCallbacks', function () {
+        if (ui.ajax.classNames.indexOf('line-charts') > -1) { loadCharts('not-loaded'); } // show not loaded charts
     });
 
 }());

@@ -1,57 +1,57 @@
-/*globals window, selector, events, setTimeout, ajax, lineCharts, alerts, loadingMask */
+/*globals window, ui, setTimeout */
 
-lineCharts.rows = 4; // set number of rows
-    lineCharts.rowsHeight = 36; // set height of single row (px)
+ui.lineCharts.rows = 4; // set number of rows
+    ui.lineCharts.rowsHeight = 36; // set height of single row (px)
 
-    lineCharts.top = 16; // set top space (px)
-    lineCharts.right = 20; // set right space (px)
-    lineCharts.bottom = 10; // set bottom space (px)
+    ui.lineCharts.top = 16; // set top space (px)
+    ui.lineCharts.right = 20; // set right space (px)
+    ui.lineCharts.bottom = 10; // set bottom space (px)
 
-    lineCharts.showBgGrid = false; // set showing bg grid
-    lineCharts.showInfo = false; // set showing info
+    ui.lineCharts.showBgGrid = false; // set showing bg grid
+    ui.lineCharts.showInfo = false; // set showing info
 
-    alerts.messageTheme = 'theme-default2 ui-bg-dark-100';
+    ui.alerts.messageTheme = 'theme-default2 ui-bg-dark-100';
 
-    events.onload(function () {
-        events.on('.load-more', 'click', function () {
+    ui.onload(function () {
+        ui.on('.load-more', 'click', function () {
 
             var that, target, scrollPos;
 
             that = this;
-            loadingMask.toggle(this);
+            ui.loadingMask.toggle(this);
 
             scrollPos = that.getBoundingClientRect().top + window.pageYOffset - 15;
 
-            ajax({
-                url : 'ajax/ajax-products.php',
+            ui.ajax({
+                url : 'xhr/ajax-products.php',
                 callback: function (status, response) {
 
-                    target = selector('.products-list');
+                    target = ui.find('.products-list');
                     if (target.length > 0) {
 
                         if (status === 'success') {
 
                             target[0].insertAdjacentHTML('beforeend', response);
 
-                            alerts.message({
+                            ui.alerts.message({
                                 msg: 'Products loaded!',
                                 theme: 'theme-default2 ui-bg-dark-100'
                             });
 
-                            loadingMask.toggle(that);
+                            ui.loadingMask.toggle(that);
                             setTimeout(function () {
                                 window.scrollTo(0, scrollPos);
-                            }, 150);
+                            }, ui.globals.ease);
 
                         } else {
 
-                            alerts.message({
+                            ui.alerts.message({
                                 msg: 'Products not loaded!',
                                 theme: 'danger',
                                 pos: 'tr'
                             });
 
-                            loadingMask.toggle(that);
+                            ui.loadingMask.toggle(that);
 
                         }
 

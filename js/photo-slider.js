@@ -1,9 +1,9 @@
 /*
- Photo Slider JS
- Photo Slider JS requires Selector Js, Events JS
+ UI Photo Slider JS
+ Requires UI JS
 */
 
-var photoSlider = {};
+ui.photoSlider = {};
 
 (function () {
 
@@ -11,15 +11,15 @@ var photoSlider = {};
 
     var count, dataSrcLists, loadedImages;
 
-    /*globals window, document, selector, events, Image, ajax */
+    /*globals window, document, ui, Image */
     function photoSliderLoader() {
 
         var slider, j, retina, images, dataSrc, nav, navHtml;
 
-        slider = selector('.photo-slider');
-        images = selector('.photo-slider img');
+        slider = ui.find('.photo-slider');
+        images = ui.find('.photo-slider img');
 
-        events.each(images, function (i) {
+        ui.each(images, function (i) {
 
             if (dataSrcLists[i] === undefined) {
 
@@ -32,7 +32,7 @@ var photoSlider = {};
                 }
 
                 if (!retina) { dataSrc = images[i].getAttribute('data-src'); }
-                events.addClass(slider[i], 'loaded');
+                ui.addClass(slider[i], 'loaded');
 
                 if (dataSrc !== null && dataSrc !== '') {
 
@@ -54,11 +54,11 @@ var photoSlider = {};
             images[i].removeAttribute('data-srcset');
 
             // create nav
-            nav = selector('.slider-nav', slider[i])[0];
+            nav = ui.find('.slider-nav', slider[i])[0];
             if (dataSrcLists[i].length > 1) {
 
-                events.addClass(selector('button', slider[i]), 'show');
-                events.addClass(nav, 'show');
+                ui.addClass(ui.find('button', slider[i]), 'show');
+                ui.addClass(nav, 'show');
 
                 if (nav.innerHTML === '') {
 
@@ -84,7 +84,7 @@ var photoSlider = {};
 
     }
 
-    photoSlider.Start = function () {
+    ui.photoSlider.Start = function () {
 
         // empty arrays when reloading
         count = [];
@@ -93,8 +93,8 @@ var photoSlider = {};
 
         photoSliderLoader();
 
-        // Events
-        events.on(document,
+        // Event Listeners
+        ui.on(document,
 
             'click', '.photo-slider button',
             function (e) {
@@ -102,17 +102,17 @@ var photoSlider = {};
                 e.preventDefault();
                 var slider, i, img, retina, total, dots;
 
-                slider = events.closest(this, '.photo-slider')[0];
+                slider = ui.closest(this, '.photo-slider')[0];
                 if (slider === undefined) { return; }
 
-                img = selector('img', slider)[0];
+                img = ui.find('img', slider)[0];
 
-                i = Array.prototype.slice.call(selector('.photo-slider')).indexOf(slider);
+                i = Array.prototype.slice.call(ui.find('.photo-slider')).indexOf(slider);
                 if (count[i] === undefined) { count[i] = 0; }
 
                 total = (dataSrcLists[i].length - 1);
 
-                if (events.hasClass(this, 'slide-r')) { // right
+                if (ui.hasClass(this, 'slide-r')) { // right
 
                     if (count[i] >= total) { count[i] = total; return; }
                     count[i] += 1;
@@ -124,12 +124,12 @@ var photoSlider = {};
 
                 }
 
-                dots = selector('.slider-nav i', slider);
+                dots = ui.find('.slider-nav i', slider);
 
-                events.removeClass(dots, 'selected');
-                events.addClass(dots[count[i]], 'selected');
+                ui.removeClass(dots, 'selected');
+                ui.addClass(dots[count[i]], 'selected');
 
-                events.removeClass(slider, 'loaded');
+                ui.removeClass(slider, 'loaded');
 
                 retina = false;
                 if (img.srcset !== '') { retina = true; }
@@ -143,12 +143,12 @@ var photoSlider = {};
                         loadedImages[i][count[i]].onload = function () {
 
                             img.srcset = loadedImages[i][count[i]].srcset;
-                            events.addClass(slider, 'loaded');
+                            ui.addClass(slider, 'loaded');
 
                         };
 
                         img.onerror = function () {
-                            events.removeClass(slider, 'loaded');
+                            ui.removeClass(slider, 'loaded');
                         };
 
                     } else {
@@ -157,12 +157,12 @@ var photoSlider = {};
                         loadedImages[i][count[i]].onload = function () {
 
                             img.src = loadedImages[i][count[i]].src;
-                            events.addClass(slider, 'loaded');
+                            ui.addClass(slider, 'loaded');
 
                         };
 
                         img.onerror = function () {
-                            events.removeClass(slider, 'loaded');
+                            ui.removeClass(slider, 'loaded');
                         };
 
                     }
@@ -176,7 +176,7 @@ var photoSlider = {};
                         img.src = loadedImages[i][count[i]].src;
                     }
 
-                    events.addClass(slider, 'loaded');
+                    ui.addClass(slider, 'loaded');
 
                 }
 
@@ -185,11 +185,11 @@ var photoSlider = {};
     };
 
     // Loaders
-    events.onload(photoSlider.Start);
+    ui.onload(ui.photoSlider.Start);
 
-    // ajax callback loader: requires Ajax JS
-    events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.classNames.indexOf('photo-slider') > -1) { photoSliderLoader(); }
+    // ajax callback loader
+    ui.on(document, 'ui:ajaxCallbacks', function () {
+        if (ui.ajax.classNames.indexOf('photo-slider') > -1) { photoSliderLoader(); }
     });
 
 }());

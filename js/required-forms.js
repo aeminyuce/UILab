@@ -1,26 +1,26 @@
 /*
- Required Forms JS
- Required Forms JS requires Selector Js, Events JS
+ UI Required Forms JS
+ Requires UI JS
 */
 
-var requiredForms = {
+ui.requiredForms = {
     target: ''
 };
 
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, setInterval, clearInterval */
+    /*globals window, document, ui, setInterval, clearInterval */
 
-    requiredForms.Start = function () {
+    ui.requiredForms.Start = function () {
 
         var eventForms = [
 
-            '.text input.required',
-            '.select select.required',
-            '.textarea textarea.required',
-            '.required-accept input.required',
-            '.file input.required'
+            '.text input.required',             // 0
+            '.select select.required',          // 1
+            '.textarea textarea.required',      // 2
+            '.required-accept input.required',  // 3
+            '.file input.required'              // 4
 
         ];
 
@@ -33,20 +33,20 @@ var requiredForms = {
                 showMsg = false;
                 next = p.nextElementSibling;
 
-                if (events.hasClass(next, 'required-msg')) { showMsg = true; }
+                if (ui.hasClass(next, 'required-msg')) { showMsg = true; }
 
                 if (that.type === 'radio') {
 
-                    radios = selector('[type="radio"][name="' + that.name + '"]');
-                    events.addClass(radios, 'success');
+                    radios = ui.find('[type="radio"][name="' + that.name + '"]');
+                    ui.addClass(radios, 'success');
 
                 } else {
-                    events.addClass(that, 'success');
+                    ui.addClass(that, 'success');
                 }
 
-                events.removeClass(p, 'error');
+                ui.removeClass(p, 'error');
 
-                if (showMsg) { events.removeClass(next, 'show'); }
+                if (showMsg) { ui.removeClass(next, 'show'); }
 
             };
 
@@ -57,17 +57,17 @@ var requiredForms = {
 
                     if (t.type === 'radio') {
 
-                        radios = selector('[type="radio"][name="' + that.name + '"]');
-                        events.removeClass(radios, 'success');
+                        radios = ui.find('[type="radio"][name="' + that.name + '"]');
+                        ui.removeClass(radios, 'success');
 
                     } else {
-                        events.removeClass(t, 'success');
+                        ui.removeClass(t, 'success');
                     }
 
-                    events.addClass(p, 'error');
+                    ui.addClass(p, 'error');
 
                     if (showMsg) {
-                        events.addClass(next, 'show');
+                        ui.addClass(next, 'show');
                     }
 
                 };
@@ -85,7 +85,7 @@ var requiredForms = {
                     if (t.type === 'radio') {
 
                         radiosCheck = 0;
-                        radios = selector('[type="radio"][name="' + t.name + '"]');
+                        radios = ui.find('[type="radio"][name="' + t.name + '"]');
 
                         for (i = 0; i < radios.length; i++) {
                             if (radios[i].checked) { radiosCheck += 1; }
@@ -97,7 +97,7 @@ var requiredForms = {
 
                         if (!t.checked) {
 
-                            if (events.hasClass(t, 'indeterminate') && t.indeterminate) {
+                            if (ui.hasClass(t, 'indeterminate') && t.indeterminate) {
                                 return;
                             }
                             showErr();
@@ -152,7 +152,7 @@ var requiredForms = {
 
             };
 
-            checkHolder = events.closest(that, '.form-holder')[0];
+            checkHolder = ui.closest(that, '.form-holder')[0];
             if (checkHolder === undefined) { // single forms
 
                 parentType = type;
@@ -161,7 +161,7 @@ var requiredForms = {
                     parentType = 'text';
                 }
 
-                p = events.closest(that, '.' + parentType)[0];
+                p = ui.closest(that, '.' + parentType)[0];
 
                 hideErr();
                 checkForms(that);
@@ -170,10 +170,10 @@ var requiredForms = {
 
                 p = checkHolder;
 
-                holderForms = selector(eventForms[0] + ',' +  eventForms[1], p); // only eventForms[0] and eventForms[1] needed!
+                holderForms = ui.find(eventForms[0] + ',' +  eventForms[1], p); // only eventForms[0] and eventForms[1] needed!
                 hideErr();
 
-                events.each(holderForms, function () {
+                ui.each(holderForms, function () {
 
                     if (this.tagName === 'SELECT') {
                         type = 'select';
@@ -193,38 +193,38 @@ var requiredForms = {
 
         }
 
-        // Events
-        events.on(document, 'submit', 'form', function (e) {
+        // Event Listeners
+        ui.on(document, 'submit', 'form', function (e) {
 
-            var i, elems, forms, success, getIndex, getRect, scrollIndex, scrollPos, scrollAnimate;
+            var i, elems, formElems, success, getIndex, getRect, scrollIndex, scrollPos, scrollAnimate;
 
-            forms = [];
+            formElems = [];
             elems = e.target.elements; // get submitted element list
 
             for (i = 0; i < elems.length; i++) { // filter required elements
 
-                if (events.hasClass(elems[i], 'required')) {
-                    forms.push(elems[i]);
+                if (ui.hasClass(elems[i], 'required')) {
+                    formElems.push(elems[i]);
                 }
 
             }
 
-            if (forms.length === 0) { return; }
+            if (formElems.length === 0) { return; }
 
             success = 0;
             getIndex = 0;
 
-            if (forms.length !== success) {
+            if (formElems.length !== success) {
 
-                events.each(forms, function () {
-                    events.trigger(this, 'keyup change');
+                ui.each(formElems, function () {
+                    ui.trigger(this, 'keyup change');
                 });
 
             }
 
-            for (i = 0; i < forms.length; i++) {
+            for (i = 0; i < formElems.length; i++) {
 
-                if (events.hasClass(forms[i], 'success')) {
+                if (ui.hasClass(formElems[i], 'success')) {
                     success += 1;
 
                 } else {
@@ -240,14 +240,14 @@ var requiredForms = {
 
             }
 
-            if (forms.length !== success) {
+            if (formElems.length !== success) {
 
                 e.preventDefault();
                 e.stopPropagation();
 
                 scrollPos = window.pageYOffset;
 
-                getRect = forms[scrollIndex].getBoundingClientRect();
+                getRect = formElems[scrollIndex].getBoundingClientRect();
                 scrollIndex = getRect.top - (getRect.height * 2) + scrollPos;
 
                 clearInterval(scrollAnimate);
@@ -264,29 +264,29 @@ var requiredForms = {
 
         });
 
-        events.on(document, 'keyup', eventForms[0], function () {
+        ui.on(document, 'keyup', eventForms[0], function () {
             required(this, this.type);
         });
 
-        events.on(document, 'change', eventForms[1], function () {
+        ui.on(document, 'change', eventForms[1], function () {
             required(this, 'select');
         });
 
-        events.on(document, 'keyup', eventForms[2], function () {
+        ui.on(document, 'keyup', eventForms[2], function () {
             required(this, 'textarea');
         });
 
-        events.on(document, 'change', eventForms[3], function () {
+        ui.on(document, 'change', eventForms[3], function () {
             required(this, 'required-accept');
         });
 
-        events.on(document, 'change', eventForms[4], function () {
+        ui.on(document, 'change', eventForms[4], function () {
             required(this, 'file');
         });
 
     };
 
     // Loaders
-    events.onload(requiredForms.Start);
+    ui.onload(ui.requiredForms.Start);
 
 }());

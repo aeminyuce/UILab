@@ -1,35 +1,35 @@
 /*
- Countdown JS
- Countdown JS requires Selector Js, Events JS
+ UI Countdown JS
+ Requires UI JS
 */
 
-var countdown = {};
+ui.countdown = {};
 
 (function () {
 
     'use strict';
-    /*globals document, selector, events, ajax, setInterval, clearInterval */
+    /*globals document, ui, setInterval, clearInterval */
 
     var countdownTimer;
 
-    countdown.Start = function () {
+    ui.countdown.Start = function () {
 
         var countdown, arr, calc;
 
-        countdown = selector('.countdown');
-        if (countdown.length === 0) { return; }
+        countdown = ui.find('.countdown');
+        if (ui.countdown.length === 0) { return; }
 
         arr = [];
 
-        events.each(countdown, function (i) {
+        ui.each(countdown, function (i) {
 
             var
                 date = new Date(),
 
-                day = selector('.d', this)[0],
-                hour = selector('.h', this)[0],
-                minute = selector('.m', this)[0],
-                sec = selector('.s', this)[0];
+                day = ui.find('.d', this)[0],
+                hour = ui.find('.h', this)[0],
+                minute = ui.find('.m', this)[0],
+                sec = ui.find('.s', this)[0];
 
             if (day !== undefined) { date.setDate(date.getDate() + Number(day.textContent)); }
             if (hour !== undefined) { date.setHours(date.getHours() + Number(hour.textContent)); }
@@ -65,15 +65,15 @@ var countdown = {};
 
         function drawFnc() {
 
-            events.each(countdown, function (i) {
+            ui.each(countdown, function (i) {
 
                 var
                     dateLeft = calc(arr[i] - new Date()),
 
-                    day = selector('.d', this)[0],
-                    hour = selector('.h', this)[0],
-                    minute = selector('.m', this)[0],
-                    sec = selector('.s', this)[0];
+                    day = ui.find('.d', this)[0],
+                    hour = ui.find('.h', this)[0],
+                    minute = ui.find('.m', this)[0],
+                    sec = ui.find('.s', this)[0];
 
                 dateLeft = dateLeft.split(':');
 
@@ -116,11 +116,11 @@ var countdown = {};
     };
 
     // Loaders
-    events.onload(countdown.Start);
+    ui.onload(ui.countdown.Start);
 
-    // ajax callback loader: requires Ajax JS
-    events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.classNames.indexOf('countdown') > -1) { countdown.Start(); }
+    // ajax callback loader
+    ui.on(document, 'ui:ajaxCallbacks', function () {
+        if (ui.ajax.classNames.indexOf('countdown') > -1) { ui.countdown.Start(); }
     });
 
 }());

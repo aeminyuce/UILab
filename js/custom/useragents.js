@@ -1,23 +1,23 @@
-/*globals document, selector, events, useragents, setTimeout */
+/*globals document, ui, setTimeout */
 
-events.onload(function () {
+ui.onload(function () {
 
     setTimeout(function () {
 
-        var results = selector(document)[0].getAttribute('class');
-        selector('.results')[0].innerHTML = '&lt;html class="' + results + '"&gt;';
+        var results = ui.find(document)[0].getAttribute('class');
+        ui.find('.results')[0].innerHTML = '&lt;html class="' + results + '"&gt;';
 
-        selector('.variables')[0].innerHTML = 'useragents.userLang: ' + useragents.userLang + '<br><br>' +
-        'useragents.desktop: ' + useragents.desktop + '<br>' +
-        'useragents.ie: ' + useragents.ie + '<br>' +
-        'useragents.edge: ' + useragents.edge + '<br>' +
-        'useragents.edg: ' + useragents.edg + ' (Chromium Edge)<br><br>' +
-        'useragents.mobile: ' + useragents.mobile + '<br>' +
-        'useragents.ios: ' + useragents.ios + '<br>' +
-        'useragents.android: ' + useragents.android + '<br>' +
-        'useragents.androidOld: ' + useragents.androidOld + '<br>' +
-        'useragents.nativeBrowser: ' + useragents.nativeBrowser;
+        ui.find('.variables')[0].innerHTML = 'ui.userAgents.userLang: ' + ui.userAgents.userLang + '<br><br>' +
+        'ui.userAgents.desktop: ' + ui.userAgents.desktop + '<br>' +
+        'ui.userAgents.ie: ' + ui.userAgents.ie + '<br>' +
+        'ui.userAgents.edge: ' + ui.userAgents.edge + '<br>' +
+        'ui.userAgents.edg: ' + ui.userAgents.edg + ' (Chromium Edge)<br><br>' +
+        'ui.userAgents.mobile: ' + ui.userAgents.mobile + '<br>' +
+        'ui.userAgents.ios: ' + ui.userAgents.ios + '<br>' +
+        'ui.userAgents.android: ' + ui.userAgents.android + '<br>' +
+        'ui.userAgents.androidOld: ' + ui.userAgents.androidOld + '<br>' +
+        'ui.userAgents.nativeBrowser: ' + ui.userAgents.nativeBrowser;
 
-    }, 300);
+    }, ui.globals.ease * 2);
 
 });

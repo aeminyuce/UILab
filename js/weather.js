@@ -1,9 +1,9 @@
 /*
- Weather JS
- Weather JS requires Selector Js, Events JS
+ UI Weather JS
+ Requires UI JS
 */
 
-var weather = {
+ui.weather = {
 
     days: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
     months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
@@ -15,7 +15,7 @@ var weather = {
 (function () {
 
     'use strict';
-    /*globals document, selector, events, setInterval, ajax */
+    /*globals document, ui, setInterval */
 
     var
         dateLoaded,
@@ -26,7 +26,7 @@ var weather = {
 
         loadGraphs;
 
-    weather.Start = function () {
+    ui.weather.Start = function () {
 
         var date, dateText, dateHtml, clockText, clockHtml, minute, hour, day, month, that, graphs, animations, sun, sunPos, sunrise, sunset;
 
@@ -37,8 +37,8 @@ var weather = {
 
             var i, html;
 
-            graphs = selector('.weather .graphs:not(.loaded)');
-            events.each(graphs, function () {
+            graphs = ui.find('.weather .graphs:not(.loaded)');
+            ui.each(graphs, function () {
 
                 var data = this.getAttribute('data-graphs');
                 if (data !== null && data !== '') {
@@ -52,7 +52,7 @@ var weather = {
                             html = '';
                             animations = [];
 
-                            events.addClass(this, 'loaded');
+                            ui.addClass(this, 'loaded');
 
                             for (i = 0; i < data.length; i++) {
 
@@ -84,7 +84,7 @@ var weather = {
 
                             // create animations
                             for (i = 0; i < animations.length; i++) {
-                                html += '<div class="' + animations[i] + '" style="background-image: url(' + weather.graphPath + animations[i] + '.png);"></div>';
+                                html += '<div class="' + animations[i] + '" style="background-image: url(' + ui.weather.graphPath + animations[i] + '.png);"></div>';
                             }
 
                             this.insertAdjacentHTML('beforeend', html);
@@ -111,20 +111,20 @@ var weather = {
             day = date.getDay();
             if (day === 0) { day = 6; } else { day -= 1; }
 
-            dateText = weather.days[day];
+            dateText = ui.weather.days[day];
 
             day = day.toString();
             if (day.length === 1) { day = '0' + day; }
 
             month = date.getMonth();
-            month = weather.months[month];
+            month = ui.weather.months[month];
 
             dateHtml = '<span class="w-dayname">' + dateText + '</span>, ' + month + ' ' + date.getDate() + ', ' + date.getFullYear();
             dateText = dateText + ', ' + month + ' ' + day + ', ' + date.getFullYear();
 
             if (dateLoaded !== dateText) {
 
-                events.each('.w-date', function () {
+                ui.each('.w-date', function () {
                     this.innerHTML = dateHtml;
                 });
 
@@ -144,13 +144,13 @@ var weather = {
 
             if (clockLoaded !== clockText) {
 
-                events.each('.w-clock', function () {
+                ui.each('.w-clock', function () {
                     this.innerHTML = clockHtml;
                 });
 
                 // check sunrise and sunset
-                graphs = selector('.weather .graphs[data-day]');
-                events.each(graphs, function () {
+                graphs = ui.find('.weather .graphs[data-day]');
+                ui.each(graphs, function () {
 
                     sunPos = this.getAttribute('data-day');
                     if (sunPos === null || sunPos === '') { return; }
@@ -171,12 +171,12 @@ var weather = {
                     if (sunset[1].length === 1) { sunset[1] = '0' + sunset[1]; } // sunset minute
 
                     // convert day or night
-                    sun = selector('.clear', this)[0];
-                    that = events.closest(this, '.weather')[0];
+                    sun = ui.find('.clear', this)[0];
+                    that = ui.closest(this, '.weather')[0];
 
                     if (((hour === sunrise[0] && minute < sunrise[1]) || hour < sunrise[0]) || ((hour === sunset[0] && minute > sunset[1]) || hour > sunset[0])) { // night
 
-                        events.addClass(that, 'night');
+                        ui.addClass(that, 'night');
 
                         // sun positioning
                         if (sun !== undefined) {
@@ -185,7 +185,7 @@ var weather = {
 
                     } else { // day
 
-                        events.removeClass(that, 'night');
+                        ui.removeClass(that, 'night');
 
                         // sun positioning
                         if (sun !== undefined) {
@@ -208,11 +208,11 @@ var weather = {
     };
 
     // Loaders
-    events.onload(weather.Start);
+    ui.onload(ui.weather.Start);
 
-    // ajax callback loader: requires Ajax JS
-    events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.classNames.indexOf('weather') > -1) { loadGraphs(); }
+    // ajax callback loader
+    ui.on(document, 'ui:ajaxCallbacks', function () {
+        if (ui.ajax.classNames.indexOf('weather') > -1) { loadGraphs(); }
     });
 
 }());

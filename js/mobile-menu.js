@@ -1,38 +1,38 @@
 /*
- Mobile Menu JS
- Mobile Menu JS requires Selector Js, Events JS
+ UI Mobile Menu JS
+ Requires UI JS
 */
 
-var mobileMenu = {};
+ui.mobileMenu = {};
 
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, setTimeout */
+    /*globals window, document, ui, setTimeout */
 
-    mobileMenu.close = function (panel) {
+    ui.mobileMenu.close = function (panel) {
 
         var i, id, el, contents, bg;
 
-        bg = selector('.mobile-menu-bg')[0];
+        bg = ui.find('.mobile-menu-bg')[0];
 
-        events.removeClass(panel, 'open-ease');
-        events.removeClass(bg, 'open-ease');
-        events.removeClass(document, 'mobile-menu-opened');
+        ui.removeClass(panel, 'open-ease');
+        ui.removeClass(bg, 'open-ease');
+        ui.removeClass(document, 'mobile-menu-opened');
 
         setTimeout(function () {
 
-            events.removeClass(panel, 'open');
-            events.removeClass(bg, 'open');
+            ui.removeClass(panel, 'open');
+            ui.removeClass(bg, 'open');
 
-        }, 400);
+        }, ui.globals.slow);
 
-        contents = selector('[data-mm]');
+        contents = ui.find('[data-mm]');
 
         for (i = 0; i < contents.length; i++) {
 
             id = '.mm-' + contents[i].getAttribute('data-mm');
-            el = selector(id)[0];
+            el = ui.find(id)[0];
 
             contents[i].removeAttribute('data-mm');
 
@@ -43,21 +43,21 @@ var mobileMenu = {};
 
         }
 
-        events.off('.close-mobile-menu', 'click');
+        ui.off('.close-mobile-menu', 'click');
 
     };
 
-    mobileMenu.Start = function () {
+    ui.mobileMenu.Start = function () {
 
-        // Events
-        events.on(document, 'click', '[class*="show-mobile-menu-"]', function () {
+        // Event Listeners
+        ui.on(document, 'click', '[class*="show-mobile-menu-"]', function () {
 
             var html, importers, moveFnc, id, i, j, index, indexArr, position, bg, panel, filtered, content;
 
             html = [];
             position = 'l'; // right
 
-            if (events.hasClass(this, 'show-mobile-menu-r')) {
+            if (ui.hasClass(this, 'show-mobile-menu-r')) {
                 position = 'r'; // left
             }
 
@@ -75,7 +75,7 @@ var mobileMenu = {};
 
             };
 
-            importers = selector('.add-mobile-menu-' + position);
+            importers = ui.find('.add-mobile-menu-' + position);
 
             if (importers.length === 1) {
                 moveFnc(importers[0], 0);
@@ -102,8 +102,8 @@ var mobileMenu = {};
 
             } else { return; }
 
-            panel = selector('.mobile-menu.show-' + position);
-            content = selector('.mobile-menu-content', panel);
+            panel = ui.find('.mobile-menu.show-' + position);
+            content = ui.find('.mobile-menu-content', panel);
 
             filtered = html.filter(function (el) {
                 return el != null;
@@ -113,53 +113,53 @@ var mobileMenu = {};
                 content.appendChild(filtered[j]);
             }
 
-            bg = selector('.mobile-menu-bg')[0];
+            bg = ui.find('.mobile-menu-bg')[0];
             if (bg === undefined) {
 
-                selector('body')[0].insertAdjacentHTML('beforeend', '<div class="mobile-menu-bg ease-slow ease-layout"></div>');
-                bg = selector('.mobile-menu-bg')[0];
+                ui.find('body')[0].insertAdjacentHTML('beforeend', '<div class="mobile-menu-bg ease-slow ease-layout"></div>');
+                bg = ui.find('.mobile-menu-bg')[0];
 
             }
 
-            events.addClass(document, 'mobile-menu-opened');
+            ui.addClass(document, 'mobile-menu-opened');
 
-            events.addClass(panel, 'open');
-            events.addClass(bg, 'open');
+            ui.addClass(panel, 'open');
+            ui.addClass(bg, 'open');
 
             setTimeout(function () {
 
-                events.addClass(panel, 'open-ease');
-                events.addClass(bg, 'open-ease');
+                ui.addClass(panel, 'open-ease');
+                ui.addClass(bg, 'open-ease');
 
                 setTimeout(function () {
-                    events.trigger(document, 'mobilemenu:open domChange'); // set custom event
-                }, 400);
+                    ui.trigger(document, 'mobilemenu:open ui:domChange'); // set custom event
+                }, ui.globals.slow);
 
             }, 10);
 
-            events.on('.close-mobile-menu', 'click', function () {
-                mobileMenu.close(panel);
+            ui.on('.close-mobile-menu', 'click', function () {
+                ui.mobileMenu.close(panel);
             });
 
         });
 
-        events.on(document, 'click', '.mobile-menu-bg', function () {
+        ui.on(document, 'click', '.mobile-menu-bg', function () {
 
-            var panel = selector('.mobile-menu.open');
-            mobileMenu.close(panel);
+            var panel = ui.find('.mobile-menu.open');
+            ui.mobileMenu.close(panel);
 
         });
 
     };
 
     // Loaders
-    events.onload(mobileMenu.Start);
-    events.on(window, 'resize', function () {
+    ui.onload(ui.mobileMenu.Start);
+    ui.on(window, 'resize', function () {
 
-        var panel = selector('.mobile-menu.open');
+        var panel = ui.find('.mobile-menu.open');
 
         if (panel.length > 0) {
-            mobileMenu.close(panel);
+            ui.mobileMenu.close(panel);
         }
 
     });

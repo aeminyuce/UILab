@@ -1,9 +1,9 @@
 /*
- Image Uploader JS
- Image Uploader JS requires Selector Js, Events JS, Ajax JS, Alerts JS
+ UI Image Uploader JS
+ Requires UI JS, UI Alerts JS
 */
 
-var imageUploader = {
+ui.imageUploader = {
 
     ratio: '4:3', // activated when resize: false
 
@@ -33,9 +33,9 @@ var imageUploader = {
 (function () {
 
     'use strict';
-    /*globals document, events, selector, setTimeout, Image, FileReader, FormData, ajax, alerts, atob, Uint8Array, Blob */
+    /*globals document, ui, setTimeout, Image, FileReader, FormData, atob, Uint8Array, Blob */
 
-    imageUploader.Start = function () {
+    ui.imageUploader.Start = function () {
 
         var uploaders, savedImgs;
 
@@ -55,7 +55,7 @@ var imageUploader = {
 
                         ext = ext.toString();
 
-                        if (imageUploader.types.indexOf(ext) > -1) {
+                        if (ui.imageUploader.types.indexOf(ext) > -1) {
                             allowed.push(files[i]);
                         }
 
@@ -80,11 +80,11 @@ var imageUploader = {
                 c = document.createElement("canvas");
                 ctx = c.getContext("2d");
 
-                events.addClass(uploader, 'loading');
-                tools = selector('.uploader-tools', uploader)[0];
+                ui.addClass(uploader, 'loading');
+                tools = ui.find('.uploader-tools', uploader)[0];
 
-                listCont = selector('.uploader-list', uploader)[0];
-                list = selector('.uploader-list ul', uploader)[0];
+                listCont = ui.find('.uploader-list', uploader)[0];
+                list = ui.find('.uploader-list ul', uploader)[0];
 
                 loadImages = function (j, tag) {
 
@@ -93,41 +93,41 @@ var imageUploader = {
                     h[j] = img[j].height;
 
                     // get ratio
-                    r = imageUploader.ratio.split(':');
+                    r = ui.imageUploader.ratio.split(':');
                     if (r.length !== 2) { r = ''; }
 
-                    if (imageUploader.resize && !savedImgs) { // resize images
+                    if (ui.imageUploader.resize && !savedImgs) { // resize images
 
                         if (w[j] > h[j]) { // horizontal image
 
-                            h[j] = (h[j] / w[j]) * imageUploader.resizeWidth;
-                            w[j] = imageUploader.resizeWidth;
+                            h[j] = (h[j] / w[j]) * ui.imageUploader.resizeWidth;
+                            w[j] = ui.imageUploader.resizeWidth;
 
-                            if (h[j] > imageUploader.resizeHeight) {
+                            if (h[j] > ui.imageUploader.resizeHeight) {
 
-                                w[j] = (w[j] / h[j]) * imageUploader.resizeHeight;
-                                h[j] = imageUploader.resizeHeight;
+                                w[j] = (w[j] / h[j]) * ui.imageUploader.resizeHeight;
+                                h[j] = ui.imageUploader.resizeHeight;
 
                             }
 
                         } else { // vertical image
 
-                            w[j] = (w[j] / h[j]) * imageUploader.resizeHeight;
-                            h[j] = imageUploader.resizeHeight;
+                            w[j] = (w[j] / h[j]) * ui.imageUploader.resizeHeight;
+                            h[j] = ui.imageUploader.resizeHeight;
 
-                            if (w[j] > imageUploader.resizeWidth) {
+                            if (w[j] > ui.imageUploader.resizeWidth) {
 
-                                h[j] = (h[j] / w[j]) * imageUploader.resizeWidth;
-                                w[j] = imageUploader.resizeWidth;
+                                h[j] = (h[j] / w[j]) * ui.imageUploader.resizeWidth;
+                                w[j] = ui.imageUploader.resizeWidth;
 
                             }
 
                         }
 
-                        if (imageUploader.fill && !savedImgs) {
+                        if (ui.imageUploader.fill && !savedImgs) {
 
-                            c.width = imageUploader.resizeWidth;
-                            c.height = imageUploader.resizeHeight;
+                            c.width = ui.imageUploader.resizeWidth;
+                            c.height = ui.imageUploader.resizeHeight;
 
                         } else {
 
@@ -138,7 +138,7 @@ var imageUploader = {
 
                     } else {
 
-                        if (!imageUploader.fit && imageUploader.fill && !savedImgs) {
+                        if (!ui.imageUploader.fit && ui.imageUploader.fill && !savedImgs) {
 
                             if (r !== '') {
 
@@ -165,12 +165,12 @@ var imageUploader = {
 
                     }
 
-                    if (imageUploader.fit && !savedImgs) { // crop to fit images
+                    if (ui.imageUploader.fit && !savedImgs) { // crop to fit images
 
-                        if (imageUploader.resize) {
+                        if (ui.imageUploader.resize) {
 
-                            c.width = imageUploader.resizeWidth;
-                            c.height = imageUploader.resizeHeight;
+                            c.width = ui.imageUploader.resizeWidth;
+                            c.height = ui.imageUploader.resizeHeight;
 
                         } else {
 
@@ -192,9 +192,9 @@ var imageUploader = {
 
                     } else {
 
-                        if (imageUploader.fill && !savedImgs) { // fill blank areas
+                        if (ui.imageUploader.fill && !savedImgs) { // fill blank areas
 
-                            ctx.fillStyle = imageUploader.fillColor;
+                            ctx.fillStyle = ui.imageUploader.fillColor;
                             ctx.fillRect(0, 0, c.width, c.height);
 
                             ctx.drawImage(img[j], (c.width - w[j]) / 2, (c.height - h[j]) / 2, w[j], h[j]);
@@ -225,8 +225,8 @@ var imageUploader = {
 
                     } else { // define a new id
 
-                        imageUploader.newID += 1;
-                        imgLoaded[j].id = imageUploader.newID;
+                        ui.imageUploader.newID += 1;
+                        imgLoaded[j].id = ui.imageUploader.newID;
 
                     }
 
@@ -239,7 +239,7 @@ var imageUploader = {
 
                         setTimeout(function () {
 
-                            events.each(imgLoaded, function (k) {
+                            ui.each(imgLoaded, function (k) {
 
                                 if (imgLoaded[k] !== undefined) { // return when image loading failed
 
@@ -264,21 +264,26 @@ var imageUploader = {
 
                         }, 0);
 
-                        events.addClass(tools, 'open');
-                        events.addClass(listCont, 'open');
+                        ui.addClass(tools, 'open');
+                        ui.addClass(listCont, 'open');
 
-                        if (savedImgs) { showTimer = 450; } else { showTimer = 150; }
+                        if (savedImgs) {
+                            showTimer = ui.globals.slow;
+
+                        } else {
+                            showTimer = ui.globals.ease;
+                        }
 
                         setTimeout(function () {
 
-                            events.addClass(tools, 'open-ease');
+                            ui.addClass(tools, 'open-ease');
 
-                            newItem = selector('.uploader-list ul > li.open-ease', listCont);
-                            events.each(newItem, function (k) {
+                            newItem = ui.find('.uploader-list ul > li.open-ease', listCont);
+                            ui.each(newItem, function (k) {
 
                                 setTimeout(function () {
-                                    events.removeClass(newItem[k], 'open-ease');
-                                }, 50 * k);
+                                    ui.removeClass(newItem[k], 'open-ease');
+                                }, (ui.globals.fast / 2) * k);
 
                             });
 
@@ -297,14 +302,14 @@ var imageUploader = {
                         }, showTimer);
 
                         setTimeout(function () {
-                            events.removeClass(uploader, 'loading');
+                            ui.removeClass(uploader, 'loading');
                         }, showTimer);
 
                     }
 
                 };
 
-                events.each(allowed, function (i) {
+                ui.each(allowed, function (i) {
 
                     if (savedImgs) { // array: get images saved before
 
@@ -320,8 +325,8 @@ var imageUploader = {
 
                         img[i].onerror = function () {
 
-                            alerts.message({
-                                msg: allowed[i].name + ' ' + imageUploader.msgImgError,
+                            ui.alerts.message({
+                                msg: allowed[i].name + ' ' + ui.imageUploader.msgImgError,
                                 theme: 'danger'
                             });
 
@@ -354,16 +359,16 @@ var imageUploader = {
         }
 
         // load saved before images
-        uploaders = selector('.image-uploader');
-        events.each(uploaders, function () {
+        uploaders = ui.find('.image-uploader');
+        ui.each(uploaders, function () {
 
             var i, list, imported, img, id, tag;
 
             i = -1;
             imported = [];
 
-            list = selector('.uploader-list ul > li', this);
-            events.each(list, function () {
+            list = ui.find('.uploader-list ul > li', this);
+            ui.each(list, function () {
 
                 img = this.getAttribute('data-img');
                 if (img !== null && img !== '') {
@@ -397,62 +402,62 @@ var imageUploader = {
 
         });
 
-        // Events
-        events.on(document, 'dragenter', '.image-uploader', function (e) {
+        // Event Listeners
+        ui.on(document, 'dragenter', '.image-uploader', function (e) {
 
             e.preventDefault();
             e.stopPropagation();
 
             var that, uploader;
 
-            events.addClass(this, 'drop-highlight');
+            ui.addClass(this, 'drop-highlight');
             that = this;
 
-            events.on('body', 'dragover.uploader', function (ev) {
+            ui.on('body', 'dragover.uploader', function (ev) {
 
                 ev.preventDefault();
                 ev.stopPropagation();
 
-                uploader = events.closest(ev.target, '.image-uploader')[0];
+                uploader = ui.closest(ev.target, '.image-uploader')[0];
 
                 if (uploader === undefined) {
-                    events.removeClass(that, 'drop-highlight');
+                    ui.removeClass(that, 'drop-highlight');
 
                 } else {
-                    events.addClass(that, 'drop-highlight');
+                    ui.addClass(that, 'drop-highlight');
                 }
 
             });
 
         });
 
-        events.on('body', 'drop', function (e) {
+        ui.on('body', 'drop', function (e) {
 
             e.preventDefault();
             e.stopPropagation();
 
-            var uploader = events.closest(e.target, '.image-uploader')[0];
+            var uploader = ui.closest(e.target, '.image-uploader')[0];
 
             if (uploader === undefined) {
-                events.removeClass(uploader, 'drop-highlight');
+                ui.removeClass(uploader, 'drop-highlight');
 
             } else {
 
-                events.addClass(uploader, 'drop-highlight');
+                ui.addClass(uploader, 'drop-highlight');
 
                 savedImgs = false;
                 loadFiles(uploader, e.dataTransfer.files);
 
-                events.removeClass(uploader, 'drop-highlight');
-                events.off(document, 'dragover.uploader');
+                ui.removeClass(uploader, 'drop-highlight');
+                ui.off(document, 'dragover.uploader');
 
             }
 
         });
 
-        events.on(document, 'change', '.image-uploader input[type="file"]', function () {
+        ui.on(document, 'change', '.image-uploader input[type="file"]', function () {
 
-            var uploader = events.closest(this, '.image-uploader')[0];
+            var uploader = ui.closest(this, '.image-uploader')[0];
 
             savedImgs = false;
             loadFiles(uploader, this.files);
@@ -487,7 +492,7 @@ var imageUploader = {
 
         }
 
-        events.on(document, 'submit', '.image-uploader form', function (e) {
+        ui.on(document, 'submit', '.image-uploader form', function (e) {
 
             e.preventDefault();
 
@@ -498,15 +503,15 @@ var imageUploader = {
 
                 formData = new FormData(); // formdata API
 
-                uploader = events.closest(that, '.image-uploader')[0];
-                list = selector('.uploader-list ul > li', uploader);
+                uploader = ui.closest(that, '.image-uploader')[0];
+                list = ui.find('.uploader-list ul > li', uploader);
 
-                events.each(list, function (i) {
+                ui.each(list, function (i) {
 
-                    file = selector('.img img', this)[0];
+                    file = ui.find('.img img', this)[0];
                     formData.append('id[' + i + ']', file.id); // add id
 
-                    tag = selector('.tag', this)[0];
+                    tag = ui.find('.tag', this)[0];
                     if (tag !== undefined) { tag = tag.textContent; } else { tag = ''; }
 
                     formData.append('tag[' + i + ']', tag); // add image tag
@@ -521,9 +526,9 @@ var imageUploader = {
 
                 });
 
-                events.addClass(uploader, 'uploading');
+                ui.addClass(uploader, 'uploading');
 
-                ajax({
+                ui.ajax({
 
                     type: 'POST',
                     url : that.action,
@@ -531,20 +536,20 @@ var imageUploader = {
 
                     callback: function (status, response) {
 
-                        events.removeClass(uploader, 'uploading');
+                        ui.removeClass(uploader, 'uploading');
                         if (status === 'success') { // check ajax connection
 
                             response = JSON.parse(response);
                             if (response.success === true) { // check server connection
 
-                                alerts.message({
+                                ui.alerts.message({
                                     msg: response.message, // show server message
                                     theme: 'success'
                                 });
 
                             } else {
 
-                                alerts.message({
+                                ui.alerts.message({
                                     msg: response.message, // show server message
                                     theme: 'danger'
                                 });
@@ -553,8 +558,8 @@ var imageUploader = {
 
                         } else {
 
-                            alerts.message({
-                                msg: imageUploader.msgError,
+                            ui.alerts.message({
+                                msg: ui.imageUploader.msgError,
                                 theme: 'warning'
                             });
 
@@ -566,11 +571,11 @@ var imageUploader = {
 
             };
 
-            alerts.dialog({
+            ui.alerts.dialog({
 
-                msg: imageUploader.msgBeforeUpload,
-                success: imageUploader.msgConfirm,
-                error: imageUploader.msgNotConfirm,
+                msg: ui.imageUploader.msgBeforeUpload,
+                success: ui.imageUploader.msgConfirm,
+                error: ui.imageUploader.msgNotConfirm,
 
                 callback: function (value) {
                     if (value === 'success') { fnc(); }
@@ -583,6 +588,6 @@ var imageUploader = {
     };
 
     // Loaders
-    events.onload(imageUploader.Start);
+    ui.onload(ui.imageUploader.Start);
 
 }());

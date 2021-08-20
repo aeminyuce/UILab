@@ -1,9 +1,9 @@
 /*
- Alerts JS
- Alerts JS requires Selector Js, Events JS, User Agents JS
+ UI Alerts JS
+ Requires UI JS
 */
 
-var alerts = {
+ui.alerts = {
 
     dialogTheme: '', // use themes
     dialogClasses: 'round shadow-lg',
@@ -11,7 +11,7 @@ var alerts = {
 
     messageTheme: '', // use themes
     messageClasses: 'round shadow-lg',
-    messageTimer: '6000', // miliseconds, wait for atomatically close messages
+    messageTimer: 6000, // miliseconds, wait for atomatically close messages
 
     closeIcon: 'remove'
 
@@ -20,7 +20,7 @@ var alerts = {
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, setTimeout, useragents */
+    /*globals window, document, ui, setTimeout */
 
     var
         pageYPos,
@@ -30,57 +30,65 @@ var alerts = {
         re = new RegExp('\\s+\\s'),
         rex = new RegExp('^\\s|\\s+$');
 
-    alerts.Start = function () {
+    ui.alerts.Start = function () {
 
         // dialogues
-        alerts.closeDialog = function () {
+        ui.alerts.closeDialog = function () {
 
             var bg, dialog;
 
-            dialog = selector('.alerts-dialog')[0];
-            events.removeClass(dialog, 'show-ease');
+            dialog = ui.find('.alerts-dialog')[0];
+            ui.removeClass(dialog, 'show-ease');
 
             setTimeout(function () {
 
                 dialog.parentNode.removeChild(dialog);
 
-                bg = selector('.alerts-bg');
-                events.removeClass(bg, 'open-ease');
+                bg = ui.find('.alerts-bg');
+                ui.removeClass(bg, 'open-ease');
 
-                events.removeClass(document, 'alerts-opened');
+                ui.removeClass(document, 'alerts-opened');
 
-                if (useragents.mobile) {
+                if (ui.userAgents.mobile) {
                     window.scrollTo(0, pageYPos);
                 }
 
                 setTimeout(function () {
-                    events.removeClass(bg, 'open');
-                }, 150);
+                    ui.removeClass(bg, 'open');
+                }, ui.globals.ease);
 
-            }, 150);
+            }, ui.globals.ease);
 
-            events.off('.dialog-buttons button', 'click');
+            ui.off('.dialog-buttons button', 'click');
 
             if (cancelCloseDialog) {
 
-                events.off('body', 'keydown.closeAlertsDialog');
-                events.off('.close-alert,.alerts-bg', 'click.closeAlertsDialog');
+                ui.off('body', 'keydown.closeAlertsDialog');
+                ui.off('.close-alert,.alerts-bg', 'click.ui:closeAlertsDialog');
 
             }
 
         };
 
-        alerts.dialog = function (set) {
+        ui.alerts.dialog = function (props) {
+
+            /*
+            props list:
+                props.msg
+                props.error
+                props.custom
+                props.callback
+            */
 
             var styles, closeBtn, bg, success, buttons, i, keys, val, html, dialog, userCloseDialog;
 
-            if (set === undefined) { return; }
-            if (set.msg === undefined) { return; }
+            if (props === undefined) { return; }
+            if (props.msg === undefined) { return; }
 
-            dialog = selector('.alerts-dialog')[0];
+            dialog = ui.find('.alerts-dialog')[0];
             if (dialog !== undefined) { return; } // prevent multiple dialogues
 
-            if (useragents.mobile) {
+            if (ui.userAgents.mobile) {
                 pageYPos = window.pageYOffset; // get current scroll-y position
             }
 
@@ -90,12 +98,12 @@ var alerts = {
             // create buttons
             buttons = '';
 
-            if (set.custom !== undefined) {
+            if (props.custom !== undefined) {
 
-                keys = Object.keys(set.custom);
+                keys = Object.keys(props.custom);
                 for (i = 0; i < keys.length; i++) {
 
-                    val = set.custom[keys[i]];
+                    val = props.custom[keys[i]];
 
                     if (val !== '') {
                         buttons += '<button class="dialog-custom" value="' + keys[i] + '">' + val + '</button>';
@@ -104,34 +112,34 @@ var alerts = {
 
             }
 
-            if (set.success === undefined) {
+            if (props.success === undefined) {
                 success = 'OK';
 
-            } else { success = set.success; }
+            } else { success = props.success; }
             buttons += '<button class="dialog-success" value="success">' + success + '</button>';
 
-            if (set.error !== undefined) {
+            if (props.error !== undefined) {
 
-                buttons += '<button class="dialog-error" value="error">' + set.error + '</button>';
+                buttons += '<button class="dialog-error" value="error">' + props.error + '</button>';
 
                 // create close icon
                 cancelCloseDialog = true;
 
                 closeBtn = '<button class="close-alert ease-layout">' +
-                        '<svg class="icon"><use href="#' + alerts.closeIcon + '"/></svg>' +
+                        '<svg class="icon"><use href="#' + ui.alerts.closeIcon + '"/></svg>' +
                     '</button>';
             }
 
             // create dialog
-            styles = alerts.dialogClasses + ' ' + alerts.dialogTheme + ' ease-layout ease-in-out';
+            styles = ui.alerts.dialogClasses + ' ' + ui.alerts.dialogTheme + ' ease-layout ease-in-out';
             styles = styles.replace(re, ' ').replace(rex, '');
 
 
-            bg = selector('.alerts-bg')[0];
+            bg = ui.find('.alerts-bg')[0];
 
             html = '<div class="alerts-dialog ' + styles + '">' +
                         closeBtn +
-                        '<div class="dialog-msg">' + set.msg + '</div>' +
+                        '<div class="dialog-msg">' + props.msg + '</div>' +
                         '<div class="dialog-buttons ease-1st-btn">' +
                             buttons +
                         '</div>' +
@@ -141,29 +149,29 @@ var alerts = {
                 html += '<div class="alerts-bg ease-layout"></div>';
             }
 
-            selector('body')[0].insertAdjacentHTML('beforeend', html);
-            events.addClass(document, 'alerts-opened');
+            ui.find('body')[0].insertAdjacentHTML('beforeend', html);
+            ui.addClass(document, 'alerts-opened');
 
             // show dialog
-            bg = selector('.alerts-bg');
-            events.addClass(bg, 'open');
+            bg = ui.find('.alerts-bg');
+            ui.addClass(bg, 'open');
 
             setTimeout(function () {
 
-                events.addClass(bg, 'open-ease');
+                ui.addClass(bg, 'open-ease');
                 setTimeout(function () {
 
-                    dialog = selector('.alerts-dialog');
-                    events.addClass(dialog, 'show');
+                    dialog = ui.find('.alerts-dialog');
+                    ui.addClass(dialog, 'show');
 
-                    selector('.dialog-success')[0].focus(); // fosuc success button
+                    ui.find('.dialog-success')[0].focus(); // fosuc success button
 
                     setTimeout(function () {
-                        events.addClass(dialog, 'show-ease');
+                        ui.addClass(dialog, 'show-ease');
                     }, 10);
 
-                    // Events
-                    events.on('.dialog-buttons button', 'click', function () {
+                    // Event Listeners
+                    ui.on('.dialog-buttons button', 'click', function () {
 
                         var that, msg, msgTimer, theme;
 
@@ -172,25 +180,25 @@ var alerts = {
                         msg = this.textContent;
                         theme = '';
 
-                        if (events.hasClass(this, 'dialog-success')) {
+                        if (ui.hasClass(this, 'dialog-success')) {
                             theme = 'success';
 
-                        } else if (events.hasClass(this, 'dialog-error')) {
+                        } else if (ui.hasClass(this, 'dialog-error')) {
                             theme = 'danger';
                         }
 
-                        if (alerts.dialogMessages) {
-                            msgTimer = 150;
+                        if (ui.alerts.dialogMessages) {
+                            msgTimer = ui.globals.ease;
 
                         } else { msgTimer = 0; }
 
-                        alerts.closeDialog();
+                        ui.alerts.closeDialog();
                         setTimeout(function () {
 
                             // show message
-                            if (alerts.dialogMessages) {
+                            if (ui.alerts.dialogMessages) {
 
-                                alerts.message({
+                                ui.alerts.message({
                                     msg: msg,
                                     theme: theme
                                 });
@@ -198,11 +206,11 @@ var alerts = {
                             }
 
                             // callback
-                            if (set.callback !== undefined) {
+                            if (props.callback !== undefined) {
 
                                 setTimeout(function () { // wait for closing dialog and showing messages
-                                    set.callback.call(that, that.value);
-                                }, 300);
+                                    props.callback.call(that, that.value);
+                                }, ui.globals.ease * 2);
 
                             }
 
@@ -210,37 +218,37 @@ var alerts = {
 
                     });
 
-                    if (cancelCloseDialog) { // attach close events if set.error defined
+                    if (cancelCloseDialog) { // attach close event listeners if props.error defined
 
                         userCloseDialog = function () {
 
-                            var errorBtn = selector('.alerts-dialog .dialog-error')[0];
-                            alerts.closeDialog();
+                            var errorBtn = ui.find('.alerts-dialog .dialog-error')[0];
+                            ui.alerts.closeDialog();
 
                             if (errorBtn !== undefined) {
 
                                 setTimeout(function () {
 
-                                    alerts.message({
+                                    ui.alerts.message({
                                         msg: errorBtn.textContent,
                                         theme: 'danger'
                                     });
 
-                                }, 150);
+                                }, ui.globals.ease);
 
                             }
 
                         };
 
-                        events.on('.close-alert,.alerts-bg', 'click.closeAlertsDialog', userCloseDialog);
+                        ui.on('.close-alert,.alerts-bg', 'click.ui:closeAlertsDialog', userCloseDialog);
 
-                        events.on('body', 'keydown.closeAlertsDialog', function (e) {
+                        ui.on('body', 'keydown.closeAlertsDialog', function (e) {
                             if (e.keyCode === 27) { userCloseDialog(); } // esc
                         });
 
                     }
 
-                }, 150);
+                }, ui.globals.ease);
 
             }, 10);
 
@@ -249,72 +257,79 @@ var alerts = {
         };
 
         // messages
-        alerts.closeMessage = function (win) {
+        ui.alerts.closeMessage = function (win) {
 
-            events.removeClass(win, 'show-ease');
+            ui.removeClass(win, 'show-ease');
             setTimeout(function () {
 
-                events.removeClass(win, 'show');
+                ui.removeClass(win, 'show');
                 win.parentNode.removeChild(win);
 
-            }, 150);
+            }, ui.globals.ease);
 
         };
 
-        alerts.message = function (set) {
+        ui.alerts.message = function (props) {
+
+            /*
+            props list:
+                props.msg
+                props.pos
+                props.theme
+            */
 
             var arr, html, styles, holder, message, prev, i, j, slide;
 
-            if (set === undefined) { return; }
-            if (set.msg === undefined) { return; }
+            if (props === undefined) { return; }
+            if (props.msg === undefined) { return; }
 
             // detect position
             arr = ['tr', 'tl', 'br', 'bl'];
-            if (arr.indexOf(set.pos) < 0) { set.pos = 'br'; }
+            if (arr.indexOf(props.pos) < 0) { props.pos = 'br'; }
 
             // detect theme
             arr = ['success', 'warning', 'danger'];
-            if (arr.indexOf(set.theme) < 0) {
-                set.theme = '';
+            if (arr.indexOf(props.theme) < 0) {
+                props.theme = '';
 
             } else {
-                set.theme = 'msg-' + set.theme ;
+                props.theme = 'msg-' + props.theme ;
             }
 
             // create mssage
-            styles = set.pos + ' ' + set.theme + ' ' + alerts.messageClasses + ' ' + alerts.messageTheme + ' ease-layout ease-in-out';
+            styles = props.pos + ' ' + props.theme + ' ' + ui.alerts.messageClasses + ' ' + ui.alerts.messageTheme + ' ease-layout ease-in-out';
             styles = styles.replace(re, ' ').replace(rex, '');
 
-            holder = selector('.alerts-msg-holder')[0];
+            holder = ui.find('.alerts-msg-holder')[0];
 
             html = '';
 
             if (holder === undefined) { html += '<div class="alerts-msg-holder">'; }
-            html += '<div class="alerts-msg ' + styles + '">' + set.msg + '</div>';
+            html += '<div class="alerts-msg ' + styles + '">' + props.msg + '</div>';
             if (holder === undefined) { html += '</div>'; }
 
             if (holder === undefined) {
-                selector('body')[0].insertAdjacentHTML('beforeend', html);
+                ui.find('body')[0].insertAdjacentHTML('beforeend', html);
 
             } else {
 
-                holder = selector('.alerts-msg-holder')[0];
+                holder = ui.find('.alerts-msg-holder')[0];
                 holder.insertAdjacentHTML('beforeend', html);
 
             }
 
             // show message
-            message = selector('.alerts-msg:last-child');
-            events.addClass(message, 'show');
+            message = ui.find('.alerts-msg:last-child');
+            ui.addClass(message, 'show');
 
             setTimeout(function () {
 
-                events.addClass(message, 'show-ease');
+                ui.addClass(message, 'show-ease');
 
                 // move same position elements
                 if (holder !== undefined) {
 
-                    prev = selector('.alerts-msg.' + set.pos);
+                    prev = ui.find('.alerts-msg.' + props.pos);
                     for (j = 0; j < prev.length; j++) {
 
                         slide = 0;
@@ -323,7 +338,7 @@ var alerts = {
                             slide += Number(prev[i].offsetHeight + 10);
                         }
 
-                        if (set.pos === 'br' || set.pos === 'bl') {
+                        if (props.pos === 'br' || props.pos === 'bl') {
                             slide = -1 * slide;
                         }
 
@@ -340,17 +355,17 @@ var alerts = {
 
                     if (messageQueue[0] === undefined) { return; }
 
-                    alerts.closeMessage(messageQueue[0][0]);
+                    ui.alerts.closeMessage(messageQueue[0][0]);
                     messageQueue.shift();
 
-                }, alerts.messageTimer);
+                }, ui.alerts.messageTimer);
 
             }, 10);
 
         };
 
-        // Events
-        events.on(document, 'click', '.alerts-msg', function () {
+        // Event Listeners
+        ui.on(document, 'click', '.alerts-msg', function () {
 
             var i;
 
@@ -362,13 +377,13 @@ var alerts = {
 
             }
 
-            alerts.closeMessage(this);
+            ui.alerts.closeMessage(this);
 
         });
 
     };
 
     // Loaders
-    events.onload(alerts.Start);
+    ui.onload(ui.alerts.Start);
 
 }());

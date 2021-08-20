@@ -1,28 +1,28 @@
 /*
- Loading Mask JS
- Loading Mask JS requires Selector Js, Events JS
+ UI Loading Mask JS
+ Requires UI JS
 */
 
-var loadingMask = {
+ui.loadingMask = {
     spinner: 'loader-line'
 };
 
 (function () {
 
     'use strict';
-    /*globals selector, events, window, document, setTimeout */
+    /*globals ui, window, document, setTimeout */
 
     var
         maskItems = [],
         maskHolders = [];
 
-    loadingMask.Start = function () {
+    ui.loadingMask.Start = function () {
 
-        loadingMask.toggle = function (that) {
+        ui.loadingMask.toggle = function (that) {
 
             var l, i, j, sticky, status, html;
 
-            l = selector(that);
+            l = ui.find(that);
 
             function effectTimers(type) { // wait for effects
 
@@ -45,13 +45,13 @@ var loadingMask = {
                         for (j = 0; j < l.length; j++) {
 
                             maskItems[j].removeChild(maskHolders[j]);
-                            events.removeClass(maskItems[j], 'loading-mask loading-mask-sticky');
+                            ui.removeClass(maskItems[j], 'loading-mask loading-mask-sticky');
 
                             emptyVars(j, l);
 
                         }
 
-                    }, 150);
+                    }, ui.globals.ease);
 
                 } else { // show
 
@@ -59,7 +59,7 @@ var loadingMask = {
 
                         for (j = 0; j < l.length; j++) {
 
-                            events.addClass(maskHolders[j], 'open-ease');
+                            ui.addClass(maskHolders[j], 'open-ease');
                             emptyVars(j, l);
 
                         }
@@ -72,13 +72,13 @@ var loadingMask = {
 
             for (i = 0; i < l.length; i++) {
 
-                if (events.hasClass(l[i], 'loading-mask')) {
+                if (ui.hasClass(l[i], 'loading-mask')) {
 
                     // hide loading
                     status = 'hide';
 
-                    maskHolders[i] = selector('.loading-spinner', l[i])[0];
-                    events.removeClass(maskHolders[i], 'open-ease');
+                    maskHolders[i] = ui.find('.loading-spinner', l[i])[0];
+                    ui.removeClass(maskHolders[i], 'open-ease');
 
                     maskItems[i] = l[i];
 
@@ -97,7 +97,7 @@ var loadingMask = {
 
                     l[i].insertAdjacentHTML('afterbegin', html);
 
-                    events.addClass(l[i], 'loading-mask');
+                    ui.addClass(l[i], 'loading-mask');
 
                     if (l[i].offsetWidth >= (window.innerWidth - 15)) {
                         sticky = true;
@@ -105,11 +105,11 @@ var loadingMask = {
                     } else { sticky = false; }
 
                     if (sticky) {
-                        events.addClass(l[i], 'loading-mask-sticky');
+                        ui.addClass(l[i], 'loading-mask-sticky');
                     }
 
-                    maskHolders[i] = selector('.loading-spinner', l[i])[0];
-                    events.addClass(maskHolders[i], 'open');
+                    maskHolders[i] = ui.find('.loading-spinner', l[i])[0];
+                    ui.addClass(maskHolders[i], 'open');
 
                 }
 
@@ -121,8 +121,8 @@ var loadingMask = {
 
         };
 
-        // Events
-        events.on(document, 'click', '.loading-mask', function (e) {
+        // Event Listeners
+        ui.on(document, 'click', '.loading-mask', function (e) {
 
             e.preventDefault();
             e.stopPropagation();
@@ -132,6 +132,6 @@ var loadingMask = {
     };
 
     // Loaders
-    events.onload(loadingMask.Start);
+    ui.onload(ui.loadingMask.Start);
 
 }());

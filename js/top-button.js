@@ -1,9 +1,9 @@
 /*
- Top Button JS
- Top Button JS requires Selector Js, Events JS, User Agents JS, User Agents JS
+ UI Top Button JS
+ Requires UI JS
 */
 
-var topButton = {
+ui.topButton = {
 
     titleText : 'Back to top!',
 
@@ -14,7 +14,7 @@ var topButton = {
 (function () {
 
     'use strict';
-    /*globals window, document, events, selector, setTimeout ,setInterval, clearInterval, useragents */
+    /*globals window, document, ui, setTimeout ,setInterval, clearInterval */
 
     var
         topBtn,
@@ -27,10 +27,13 @@ var topButton = {
 
         showTopBtn = function () {
 
-            if (!events.hasClass(topBtn, 'open')) {
+            if (!ui.hasClass(topBtn, 'open')) {
 
-                events.addClass(topBtn, 'open');
-                setTimeout(function () { events.addClass(topBtn, 'open-ease'); }, 400);
+                ui.addClass(topBtn, 'open');
+
+                setTimeout(function () {
+                    ui.addClass(topBtn, 'open-ease');
+                }, ui.globals.slow);
 
             }
 
@@ -38,20 +41,23 @@ var topButton = {
 
         hideTopBtn = function () {
 
-            if (events.hasClass(topBtn, 'open')) {
+            if (ui.hasClass(topBtn, 'open')) {
 
-                events.removeClass(topBtn, 'open-ease');
-                setTimeout(function () { events.removeClass(topBtn, 'open'); }, 400);
+                ui.removeClass(topBtn, 'open-ease');
+
+                setTimeout(function () {
+                    ui.removeClass(topBtn, 'open');
+                }, ui.globals.slow);
 
             }
 
         };
 
-        if (selector('body')[0].offsetHeight > (window.innerHeight * 2)) {
+        if (ui.find('body')[0].offsetHeight > (window.innerHeight * 2)) {
 
             scrollPos = window.pageYOffset;
 
-            if (scrollPos > + (window.innerHeight / 3) && window.innerWidth > 767) {
+            if (scrollPos > + (window.innerHeight / 3) && window.innerWidth > ui.globals.sm) {
                 showTopBtn();
 
             } else {
@@ -62,29 +68,29 @@ var topButton = {
 
     }
 
-    topButton.Start = function () {
+    ui.topButton.Start = function () {
 
-        if (useragents.desktop) {
+        if (ui.userAgents.desktop) {
 
             var re, rex, html, styles;
 
             re = new RegExp('\\s+\\s');
             rex = new RegExp('^\\s|\\s+$');
 
-            styles = topButton.classes + ' ease-layout';
+            styles = ui.topButton.classes + ' ease-layout';
             styles = styles.replace(re, ' ').replace(rex, '');
 
-            html = '<button class="top-button ' + styles + ' ease-layout" title="' + topButton.titleText + '">' +
-                    '<svg class="icon ease-layout"><use href="#' + topButton.icon + '"/></svg>' +
+            html = '<button class="top-button ' + styles + ' ease-layout" title="' + ui.topButton.titleText + '">' +
+                    '<svg class="icon ease-layout"><use href="#' + ui.topButton.icon + '"/></svg>' +
                 '</button>';
 
-            selector('body')[0].insertAdjacentHTML('beforeend', html);
-            topBtn = selector('.top-button');
+            ui.find('body')[0].insertAdjacentHTML('beforeend', html);
+            topBtn = ui.find('.top-button');
 
             togglerFnc();
 
-            // Events
-            events.on('.top-button', 'click', function () {
+            // Event Listeners
+            ui.on('.top-button', 'click', function () {
 
                 clearInterval(btnAnimate);
                 btnAnimate = setInterval(function () {
@@ -103,10 +109,10 @@ var topButton = {
     };
 
     // Loaders
-    events.onload(topButton.Start);
+    ui.onload(ui.topButton.Start);
 
-    events.on(window, 'resize', togglerFnc);
-    events.on(window, 'scroll', togglerFnc);
-    events.on(document, 'domChange', togglerFnc);
+    ui.on(window, 'resize', togglerFnc);
+    ui.on(window, 'scroll', togglerFnc);
+    ui.on(document, 'ui:domChange', togglerFnc);
 
 }());

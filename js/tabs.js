@@ -1,19 +1,19 @@
 /*
- Tabs JS
- Tabs JS requires Selector Js, Events JS
+ UI Tabs JS
+ Requires UI JS
 */
 
-var tabs = {};
+ui.tabs = {};
 
 (function () {
 
     'use strict';
-    /*globals document, selector, events, setTimeout */
+    /*globals document, ui, setTimeout */
 
-    tabs.Start = function () {
+    ui.tabs.Start = function () {
 
-        // Events
-        events.on(document, 'click', '.tabs .tab', function (e) {
+        // Event Listeners
+        ui.on(document, 'click', '.tabs .tab', function (e) {
 
             e.preventDefault();
 
@@ -22,14 +22,14 @@ var tabs = {};
             outerTabs = [];
             outerContent = [];
 
-            parent = events.closest(this, '.tabs')[0];
-            tabs = selector('.tab', parent);
+            parent = ui.closest(this, '.tabs')[0];
+            tabs = ui.find('.tab', parent);
 
             // check inner tabs
-            innerTabs = selector('.tabs .tabs .tab', parent);
+            innerTabs = ui.find('.tabs .tabs .tab', parent);
             innerTabs = Array.prototype.slice.call(innerTabs);
 
-            events.each(tabs, function () {
+            ui.each(tabs, function () {
 
                 if (innerTabs.indexOf(this) === -1) {
                     outerTabs.push(this);
@@ -40,13 +40,13 @@ var tabs = {};
             if (outerTabs.length !== 0) { tabs = outerTabs; }
             index = Array.prototype.slice.call(tabs).indexOf(this);
 
-            content = selector('.tab-content', parent);
+            content = ui.find('.tab-content', parent);
 
             // check inner contents
-            innerContent = selector('.tabs .tabs .tab-content', parent);
+            innerContent = ui.find('.tabs .tabs .tab-content', parent);
             innerContent = Array.prototype.slice.call(innerContent);
 
-            events.each(content, function () {
+            ui.each(content, function () {
 
                 if (innerContent.indexOf(this) === -1) {
                     outerContent.push(this);
@@ -59,7 +59,7 @@ var tabs = {};
             // check ids
             id = this.getAttribute('data-id');
             if (id !== null & id !== '') {
-                currentContent = selector('#' + id, parent);
+                currentContent = ui.find('#' + id, parent);
 
             } else {
                 currentContent = content[index];
@@ -68,21 +68,21 @@ var tabs = {};
             toggle = false;
             classes = parent.getAttribute('data-classes');
 
-            if (events.hasClass(this, 'btn-toggle')) { toggle = true; }
+            if (ui.hasClass(this, 'btn-toggle')) { toggle = true; }
 
-            if (events.hasClass(this, 'active')) {
+            if (ui.hasClass(this, 'active')) {
 
                 if (toggle) {
 
                     if (classes) {
-                        events.toggleClass(tabs[index], classes);
+                        ui.toggleClass(tabs[index], classes);
                     }
 
-                    events.removeClass(tabs[index], 'active');
-                    events.removeClass(currentContent, 'open-ease');
+                    ui.removeClass(tabs[index], 'active');
+                    ui.removeClass(currentContent, 'open-ease');
 
                     setTimeout(function () {
-                        events.removeClass(currentContent, 'open');
+                        ui.removeClass(currentContent, 'open');
                     }, 0);
 
                 }
@@ -91,57 +91,57 @@ var tabs = {};
 
                 if (classes) {
 
-                    events.removeClass(tabs, classes);
-                    events.addClass(tabs[index], classes);
+                    ui.removeClass(tabs, classes);
+                    ui.addClass(tabs[index], classes);
 
                 }
 
-                events.removeClass(tabs, 'active');
-                events.addClass(tabs[index], 'active');
+                ui.removeClass(tabs, 'active');
+                ui.addClass(tabs[index], 'active');
 
-                events.removeClass(content, 'open-ease');
+                ui.removeClass(content, 'open-ease');
                 setTimeout(function () {
 
-                    events.removeClass(content, 'open');
-                    events.addClass(currentContent, 'open');
+                    ui.removeClass(content, 'open');
+                    ui.addClass(currentContent, 'open');
 
                     setTimeout(function () {
 
-                        events.addClass(currentContent, 'open-ease');
-                        events.trigger(document, 'domChange'); // set custom event
+                        ui.addClass(currentContent, 'open-ease');
+                        ui.trigger(document, 'ui:domChange'); // set custom event
 
-                    }, 50);
+                    }, ui.globals.fast / 2);
 
                 }, 0);
 
                 if (toggle) {
 
                     // close opened toggle tabs when outside the tabs
-                    events.on(document, 'mouseup.tabToggleClose', function (ev) {
+                    ui.on(document, 'mouseup.ui:closeToggleTabs', function (ev) {
 
                         if (typeof ev.target.className === 'object') { return; } // detect SVG elements
 
                         if (ev.button !== 2) { // inherited right clicks
 
-                            if (ev.target.className.split(' ').indexOf('btn-toggle') !== -1 && events.closest(ev.target, '.tabs')[0] === parent) { // controlling same toggled tab buttons
+                            if (ev.target.className.split(' ').indexOf('btn-toggle') !== -1 && ui.closest(ev.target, '.tabs')[0] === parent) { // controlling same toggled tab buttons
                                 return;
                             }
 
-                            if (ev.target.className.split(' ').indexOf('tab-content') === -1 && events.closest(ev.target, '.tab-content')[0] === undefined) { // controlling inside of the opened tab content
+                            if (ev.target.className.split(' ').indexOf('tab-content') === -1 && ui.closest(ev.target, '.tab-content')[0] === undefined) { // controlling inside of the opened tab content
 
                                 if (classes) {
-                                    events.removeClass(tabs, classes);
+                                    ui.removeClass(tabs, classes);
                                 }
 
-                                events.removeClass(tabs, 'active');
-                                events.removeClass(content, 'open-ease');
+                                ui.removeClass(tabs, 'active');
+                                ui.removeClass(content, 'open-ease');
 
                                 setTimeout(function () {
-                                    events.removeClass(content, 'open');
+                                    ui.removeClass(content, 'open');
                                 }, 0);
 
-                                events.trigger(document, 'tabs:outerToggleClose'); // set custom event
-                                events.off(document, 'mouseup.tabToggleClose');
+                                ui.trigger(document, 'ui:toggleTabsClosed'); // set custom event
+                                ui.off(document, 'mouseup.ui:closeToggleTabs');
 
                             }
 
@@ -158,6 +158,6 @@ var tabs = {};
     };
 
     // Loaders
-    events.onload(tabs.Start);
+    ui.onload(ui.tabs.Start);
 
 }());

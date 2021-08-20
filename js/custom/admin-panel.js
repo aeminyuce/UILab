@@ -1,6 +1,6 @@
-/*globals lineCharts, calendar */
+/*globals ui */
 
-lineCharts.showBgGrid = false; // set showing bg grid
-lineCharts.gridStroke = 0; // set grid stroke width
+ui.lineCharts.showBgGrid = false; // set showing bg grid
+ui.lineCharts.gridStroke = 0; // set grid stroke width
 
-calendar.todayTheme = 'theme-default2 ui-bg-dark-100' // use themes
+ui.calendar.todayTheme = 'theme-default2 ui-bg-dark-100' // use themes

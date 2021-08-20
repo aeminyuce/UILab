@@ -1,32 +1,32 @@
 /*
- Dual Multi Select JS
- Dual Multi Select JS requires Selector Js, Events JS
+ UI Dual Multi Select JS
+ Requires UI JS
 */
 
-var dualMultiSelect = {};
+ui.dualMultiSelect = {};
 
 (function () {
 
     'use strict';
-    /*globals document, selector, events, ajax, setTimeout, useragents */
+    /*globals document, ui, setTimeout */
 
     var
         resetOptions,
         loadSelects,
         movetoSource;
 
-    dualMultiSelect.Start = function () {
+    ui.dualMultiSelect.Start = function () {
 
         resetOptions = function (selects, isSubmit) { // reset options
 
             var sourceList, targetList;
 
-            sourceList = selector('option', selects[0]);
-            targetList = selector('option', selects[1]);
+            sourceList = ui.find('option', selects[0]);
+            targetList = ui.find('option', selects[1]);
 
-            events.each(sourceList, function () {
+            ui.each(sourceList, function () {
 
-                if (useragents.mobile) {
+                if (ui.userAgents.mobile) {
                     this.selected = true;
 
                 } else {
@@ -35,9 +35,9 @@ var dualMultiSelect = {};
 
             });
 
-            events.each(targetList, function () {
+            ui.each(targetList, function () {
 
-                if (useragents.mobile || isSubmit !== undefined) {
+                if (ui.userAgents.mobile || isSubmit !== undefined) {
                     this.selected = true;
 
                 } else {
@@ -52,13 +52,13 @@ var dualMultiSelect = {};
 
             var i, holder, selects, name, arr, userArr, arrStart, index, options, selected;
 
-            holder = selector('.dual-multi-select');
-            events.each(holder, function () {
+            holder = ui.find('.dual-multi-select');
+            ui.each(holder, function () {
 
                 arr = [];
                 arrStart = [];
 
-                selects = selector('.select-multi select[multiple]', this);
+                selects = ui.find('.select-multi select[multiple]', this);
 
                 // move name attribute from source to target select
                 name = selects[0].name;
@@ -67,8 +67,8 @@ var dualMultiSelect = {};
                 selects[1].name = name;
 
                 // get user defined idexes
-                options = selector('option', selects[0]);
-                events.each(options, function () {
+                options = ui.find('option', selects[0]);
+                ui.each(options, function () {
 
                     index = this.getAttribute('data-index');
                     if (index !== null && index !== '' && !isNaN(index)) {
@@ -111,7 +111,7 @@ var dualMultiSelect = {};
                 }
 
                 // set all indexes to options
-                events.each(options, function (j) {
+                ui.each(options, function (j) {
 
                     this.setAttribute('data-index', arr[j]);
 
@@ -141,7 +141,7 @@ var dualMultiSelect = {};
             var i, j, sourceList, index, arr, inserted;
 
             i = Number(that.getAttribute('data-index'));
-            sourceList = selector('option', selects[0]);
+            sourceList = ui.find('option', selects[0]);
 
             if (sourceList.length === 0) {
 
@@ -195,10 +195,10 @@ var dualMultiSelect = {};
 
         };
 
-        // Events
-        events.on(document, 'change', '.dual-multi-select .select-multi select[multiple]', function (e) {
+        // Event Listeners
+        ui.on(document, 'change', '.dual-multi-select .select-multi select[multiple]', function (e) {
 
-            if (!e.isTrusted) { return; } // prevent trigger change events
+            if (!e.isTrusted) { return; } // prevent trigger change event listeners
 
             var i, that, options, selects, parent, dir;
 
@@ -214,10 +214,10 @@ var dualMultiSelect = {};
 
             }
 
-            selects = events.closest(that, '.dual-multi-select')[0];
-            selects = selector('.select-multi select[multiple]', selects);
+            selects = ui.closest(that, '.dual-multi-select')[0];
+            selects = ui.find('.select-multi select[multiple]', selects);
 
-            parent = events.closest(that, '.select-multi select[multiple]')[0];
+            parent = ui.closest(that, '.select-multi select[multiple]')[0];
             dir = Array.prototype.slice.call(selects).indexOf(parent);
 
             if (dir === 0) { // move from source to target select
@@ -231,19 +231,19 @@ var dualMultiSelect = {};
 
         });
 
-        events.on(document, 'reset', 'form', function () {
+        ui.on(document, 'reset', 'form', function () {
 
             var i, holder, selects, sourceList, targetList, selected;
 
             setTimeout(function () { // wait for form reset started on DOM
 
-                holder = selector('.dual-multi-select');
-                events.each(holder, function () {
+                holder = ui.find('.dual-multi-select');
+                ui.each(holder, function () {
 
-                    selects = selector('.select-multi select[multiple]', this);
+                    selects = ui.find('.select-multi select[multiple]', this);
 
-                    targetList = selector('option', selects[1]);
-                    events.each(targetList, function () {
+                    targetList = ui.find('option', selects[1]);
+                    ui.each(targetList, function () {
 
                         selected = this.getAttribute('selected');
                         i = Number(this.getAttribute('data-index')) - 1;
@@ -254,10 +254,10 @@ var dualMultiSelect = {};
 
                     });
 
-                    targetList = selector('option', selects[1]); // reload modified list
+                    targetList = ui.find('option', selects[1]); // reload modified list
 
-                    sourceList = selector('option', selects[0]);
-                    events.each(sourceList, function () {
+                    sourceList = ui.find('option', selects[0]);
+                    ui.each(sourceList, function () {
 
                         selected = this.getAttribute('selected');
                         if (selected !== null) { // move options to target that selected with attribute
@@ -280,17 +280,17 @@ var dualMultiSelect = {};
 
         });
 
-        events.on(document, 'submit', 'form', function (e) {
+        ui.on(document, 'submit', 'form', function (e) {
 
             var elems, selects;
 
             elems = Array.prototype.slice.call(e.target); // get submitted element list
-            events.each(elems, function () {
+            ui.each(elems, function () {
 
                 if (this.tagName === 'SELECT' && this.multiple) { // get multiple selects
 
-                    selects = events.closest(this, '.dual-multi-select')[0];
-                    selects = selector('.select-multi select[multiple]', selects);
+                    selects = ui.closest(this, '.dual-multi-select')[0];
+                    selects = ui.find('.select-multi select[multiple]', selects);
 
                     if (selects !== undefined) {
                         resetOptions(selects, true); // reset options, set target list to selected before submit
@@ -305,11 +305,11 @@ var dualMultiSelect = {};
     };
 
     // Loaders
-    events.onload(dualMultiSelect.Start);
+    ui.onload(ui.dualMultiSelect.Start);
 
-    // ajax callback loader: requires Ajax JS
-    events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.classNames.indexOf('dual-multi-select') > 0) { loadSelects(); }
+    // ajax callback loader
+    ui.on(document, 'ui:ajaxCallbacks', function () {
+        if (ui.ajax.classNames.indexOf('dual-multi-select') > 0) { loadSelects(); }
     });
 
 }());

@@ -1,9 +1,9 @@
 /*
- Data List JS
- Data List JS requires Selector Js, Events JS
+ UI Data List JS
+ Requires UI JS
 */
 
-var dataList = {
+ui.dataList = {
 
     valueSplit : '|',
 
@@ -21,7 +21,7 @@ var dataList = {
 (function () {
 
     'use strict';
-    /*globals window, document, selector, events, sessionStorage, performance, ajax */
+    /*globals window, document, ui, sessionStorage, performance */
 
     var
         testStorage = true,
@@ -46,7 +46,7 @@ var dataList = {
     (function () {
 
         var k, re, chars, keys;
-        keys = Object.keys(dataList.customLetters); // returns array
+        keys = Object.keys(ui.dataList.customLetters); // returns array
 
         chars = '(([';
         for (k = 0; k < keys.length; k++) { chars += keys[k]; }
@@ -57,7 +57,7 @@ var dataList = {
         customLowerCase = function (string) {
 
             string = string.replace(/["'\[\]\{\}()]/g, '').replace(re, function (l) {
-                return dataList.customLetters[l];
+                return ui.dataList.customLetters[l];
             });
 
             return string.toLowerCase();
@@ -116,7 +116,7 @@ var dataList = {
 
         classes = classes.replace(re, ' ').replace(rex, '');
         html = '<button class="' + classes + '">' +
-                '<svg class="icon"><use href="#' + dataList.prevIcon + '"/></svg>' +
+                '<svg class="icon"><use href="#' + ui.dataList.prevIcon + '"/></svg>' +
             '</button>\n';
 
         for (i = min; i <= max; i++) {
@@ -139,7 +139,7 @@ var dataList = {
 
         classes = classes.replace(re, ' ').replace(rex, '');
         html += '<button class="' + classes + '">' +
-                '<svg class="icon"><use href="#' + dataList.nextIcon + '"/></svg>' +
+                '<svg class="icon"><use href="#' + ui.dataList.nextIcon + '"/></svg>' +
             '</button>\n';
 
         paging[0].innerHTML = '';
@@ -161,15 +161,15 @@ var dataList = {
 
         var i, list, paging, dataTotal, isEven, dataStriped;
 
-        if (events.hasClass(that, 'data-filtered')) {
-            list = selector('.data-content.filtered', that);
+        if (ui.hasClass(that, 'data-filtered')) {
+            list = ui.find('.data-content.filtered', that);
 
         } else {
-            list = selector('.data-content', that);
+            list = ui.find('.data-content', that);
         }
 
         // paging
-        paging = selector('.data-paging', that);
+        paging = ui.find('.data-paging', that);
         if (paging.length > 0) {
 
             if (pagingCount[id] === undefined || pagingCount[id] === 0) {
@@ -184,12 +184,12 @@ var dataList = {
         } else {
 
             pagingCount[id] = 0; // paging not available
-            events.addClass(that, 'data-show-all');
+            ui.addClass(that, 'data-show-all');
 
         }
 
         // total data
-        dataTotal = selector('.data-total', that);
+        dataTotal = ui.find('.data-total', that);
 
         if (dataTotal.length > 0) {
             dataTotal[0].textContent = list.length;
@@ -197,9 +197,9 @@ var dataList = {
 
         // define even elements and visible datas
         isEven = false;
-        dataStriped = events.hasClass(that, 'data-striped');
+        dataStriped = ui.hasClass(that, 'data-striped');
 
-        events.removeClass(selector('.data-content.show', that), 'show');
+        ui.removeClass(ui.find('.data-content.show', that), 'show');
 
         function evenList(t) {
 
@@ -207,19 +207,19 @@ var dataList = {
 
                 if (isEven) {
 
-                    events.addClass(t, 'even');
+                    ui.addClass(t, 'even');
                     isEven = false;
 
                 } else {
 
-                    events.removeClass(t, 'even');
+                    ui.removeClass(t, 'even');
                     isEven = true;
 
                 }
 
             }
 
-            events.addClass(t, 'show');
+            ui.addClass(t, 'show');
 
         }
 
@@ -242,19 +242,19 @@ var dataList = {
 
     }
 
-    // Events
+    // Event Listeners
     // data-paging
-    events.on(document, 'click', '.data-list .data-paging button', function () {
+    ui.on(document, 'click', '.data-list .data-paging button', function () {
 
         var that, id;
 
-        that = events.closest(this, '.data-list')[0];
+        that = ui.closest(this, '.data-list')[0];
         id = that.getAttribute('data-id');
 
-        if (events.hasClass(this, 'next')) {
+        if (ui.hasClass(this, 'next')) {
             pagingCount[id] += 1;
 
-        } else if (events.hasClass(this, 'prev')) {
+        } else if (ui.hasClass(this, 'prev')) {
             pagingCount[id] -= 1;
 
         } else {
@@ -266,11 +266,11 @@ var dataList = {
     });
 
     // data-show
-    events.on(document, 'change', '.data-list select.data-show', function () {
+    ui.on(document, 'change', '.data-list select.data-show', function () {
 
         var that, id;
 
-        that = events.closest(this, '.data-list')[0];
+        that = ui.closest(this, '.data-list')[0];
         id = that.getAttribute('data-id');
 
         if (isNaN(Number(this.value))) {
@@ -278,12 +278,12 @@ var dataList = {
             showCount[id] = 0;
             pagingCount[id] = 1;
 
-            events.addClass(that, 'data-show-all');
+            ui.addClass(that, 'data-show-all');
 
         } else {
 
             showCount[id] = this.value;
-            events.removeClass(that, 'data-show-all');
+            ui.removeClass(that, 'data-show-all');
 
         }
 
@@ -297,51 +297,51 @@ var dataList = {
     });
 
     // data-sort
-    events.on(document, 'mousedown', '.data-list [data-sort]', function () {
+    ui.on(document, 'mousedown', '.data-list [data-sort]', function () {
 
         var that, id, buttons, isAsc, dataContainer, list, sortIndex, sortType, arr, arrSorted;
 
-        that = events.closest(this, '.data-list')[0];
+        that = ui.closest(this, '.data-list')[0];
         id = that.getAttribute('data-id');
 
         // modify buttons
-        buttons = selector('[data-sort]', that);
+        buttons = ui.find('[data-sort]', that);
 
-        events.removeClass(buttons, 'active');
-        events.addClass(this, 'active');
+        ui.removeClass(buttons, 'active');
+        ui.addClass(this, 'active');
 
-        events.each(buttons, function () {
-            if (!events.hasClass(this, 'active')) {
+        ui.each(buttons, function () {
+            if (!ui.hasClass(this, 'active')) {
 
-                events.removeClass(this, 'asc desc');
-                selector('.icon use', this)[0].setAttribute('href', '#' + dataList.sortIcon);
+                ui.removeClass(this, 'asc desc');
+                ui.find('.icon use', this)[0].setAttribute('href', '#' + ui.dataList.sortIcon);
 
             }
         });
 
-        isAsc = events.hasClass(this, 'asc');
+        isAsc = ui.hasClass(this, 'asc');
 
         if (isAsc) {
 
-            events.removeClass(this, 'asc');
-            events.addClass(this, 'desc');
+            ui.removeClass(this, 'asc');
+            ui.addClass(this, 'desc');
 
-            selector('.icon use', this)[0].setAttribute('href', '#' + dataList.descIcon);
+            ui.find('.icon use', this)[0].setAttribute('href', '#' + ui.dataList.descIcon);
 
         } else {
 
-            events.removeClass(this, 'desc');
-            events.addClass(this, 'asc');
+            ui.removeClass(this, 'desc');
+            ui.addClass(this, 'asc');
 
-            selector('.icon use', this)[0].setAttribute('href', '#' + dataList.ascIcon);
+            ui.find('.icon use', this)[0].setAttribute('href', '#' + ui.dataList.ascIcon);
 
         }
 
         // sort
-        dataContainer = selector('.data-container', that)[0];
+        dataContainer = ui.find('.data-container', that)[0];
 
-        list = selector('.data-content', dataContainer);
-        events.each(list, function () {
+        list = ui.find('.data-content', dataContainer);
+        ui.each(list, function () {
             temp.appendChild(this);
         });
 
@@ -358,13 +358,13 @@ var dataList = {
         sortType = this.getAttribute('data-type');
         if (sortType === null) { sortType = ''; }
 
-        list = selector('.data-content', temp);
-        events.each(list, function () {
+        list = ui.find('.data-content', temp);
+        ui.each(list, function () {
 
             var val = this.getAttribute('data-val');
             if (val !== null && val !== '') {
 
-                val = val.split(dataList.valueSplit)[sortIndex];
+                val = val.split(ui.dataList.valueSplit)[sortIndex];
 
                 if (sortType !== 'number') {
                     val = customLowerCase(val);
@@ -397,7 +397,7 @@ var dataList = {
 
         }
 
-        events.each(list, function (i) {
+        ui.each(list, function (i) {
 
             temp.appendChild(list[arr.indexOf(arrSorted[i])]);
             arr[arr.indexOf(arrSorted[i])] = '';
@@ -430,8 +430,8 @@ var dataList = {
         indexes = [];
 
         // read all filter values
-        filters = selector('.data-filter', that);
-        events.each(filters, function (i) {
+        filters = ui.find('.data-filter', that);
+        ui.each(filters, function (i) {
 
             if (firstLoading) {
 
@@ -504,32 +504,32 @@ var dataList = {
                 return filterVal !== '';
             });
 
-            dataContainer = selector('.data-container', that)[0];
+            dataContainer = ui.find('.data-container', that)[0];
 
-            list = selector('.data-content', dataContainer);
-            events.each(list, function () {
+            list = ui.find('.data-content', dataContainer);
+            ui.each(list, function () {
                 temp.appendChild(this);
             });
 
-            list = selector('.data-content', temp);
+            list = ui.find('.data-content', temp);
 
             // remove checked
-            checkAll = selector('.data-check-all', that);
+            checkAll = ui.find('.data-check-all', that);
 
             if (checkAll.length > 0) {
 
-                events.each(checkAll, function () {
+                ui.each(checkAll, function () {
                     this.checked = false;
                 });
 
             }
 
-            events.each(list, function () {
+            ui.each(list, function () {
 
-                if (events.hasClass(this, 'checked')) {
+                if (ui.hasClass(this, 'checked')) {
 
-                    events.removeClass(this, 'checked');
-                    selector('.data-check', this)[0].checked = false;
+                    ui.removeClass(this, 'checked');
+                    ui.find('.data-check', this)[0].checked = false;
 
                 }
 
@@ -537,8 +537,8 @@ var dataList = {
 
             if (activeFilters.length > 0) {
 
-                events.addClass(that, 'data-filtered');
-                events.each(list, function () {
+                ui.addClass(that, 'data-filtered');
+                ui.each(list, function () {
 
                     passed = [];
 
@@ -546,7 +546,7 @@ var dataList = {
                     if (contentVal !== null && contentVal !== '') {
 
                         contentVal = customLowerCase(contentVal);
-                        contentArr = contentVal.split(dataList.valueSplit);
+                        contentArr = contentVal.split(ui.dataList.valueSplit);
 
                         for (j = 0; j < vals.length; j++) {
 
@@ -573,18 +573,18 @@ var dataList = {
                     }
 
                     if (activeFilters.length === passed.length) {
-                        events.addClass(this, 'filtered');
+                        ui.addClass(this, 'filtered');
 
                     } else {
-                        events.removeClass(this, 'filtered');
+                        ui.removeClass(this, 'filtered');
                     }
 
                 });
 
             } else {
 
-                events.removeClass(that, 'data-filtered');
-                events.removeClass(list, 'filtered');
+                ui.removeClass(that, 'data-filtered');
+                ui.removeClass(list, 'filtered');
 
             }
 
@@ -612,38 +612,38 @@ var dataList = {
 
     }
 
-    events.on(document, 'keyup', '.data-list .data-filter[type="text"]', function () {
+    ui.on(document, 'keyup', '.data-list .data-filter[type="text"]', function () {
 
-        var that = events.closest(this, '.data-list')[0];
+        var that = ui.closest(this, '.data-list')[0];
         dataFilter(that, false);
 
     });
 
-    events.on(document, 'change', '.data-list .data-filter:not([type="text"])', function () {
+    ui.on(document, 'change', '.data-list .data-filter:not([type="text"])', function () {
 
-        var that = events.closest(this, '.data-list')[0];
+        var that = ui.closest(this, '.data-list')[0];
         dataFilter(that, false);
 
     });
 
     // data check
-    events.on(document, 'change', '.data-list .data-check-all', function () {
+    ui.on(document, 'change', '.data-list .data-check-all', function () {
 
         var that, list, form, checked, checkFnc, uncheckFnc;
 
-        that = events.closest(this, '.data-list')[0];
-        list = selector('.data-content', that);
+        that = ui.closest(this, '.data-list')[0];
+        list = ui.find('.data-content', that);
 
         checked = this.checked;
 
         checkFnc = function (t) {
 
-            if (!events.hasClass(t, 'checked')) {
+            if (!ui.hasClass(t, 'checked')) {
 
-                form = selector('.data-check', t)[0];
+                form = ui.find('.data-check', t)[0];
                 if (form !== undefined) {
 
-                    events.addClass(t, 'checked');
+                    ui.addClass(t, 'checked');
                     form.checked = true;
 
                 }
@@ -654,12 +654,12 @@ var dataList = {
 
         uncheckFnc = function (t) {
 
-            if (events.hasClass(t, 'checked')) {
+            if (ui.hasClass(t, 'checked')) {
 
-                form = selector('.data-check', t)[0];
+                form = ui.find('.data-check', t)[0];
                 if (form !== undefined) {
 
-                    events.removeClass(t, 'checked');
+                    ui.removeClass(t, 'checked');
                     form.checked = false;
 
                 }
@@ -668,13 +668,13 @@ var dataList = {
 
         };
 
-        events.each(list, function () {
+        ui.each(list, function () {
 
             if (checked) {
 
-                if (events.hasClass(that, 'data-filtered')) {
+                if (ui.hasClass(that, 'data-filtered')) {
 
-                    if (events.hasClass(this, 'filtered')) {
+                    if (ui.hasClass(this, 'filtered')) {
                         checkFnc(this);
 
                     } else { uncheckFnc(this); }
@@ -687,22 +687,22 @@ var dataList = {
 
     });
 
-    events.on(document, 'change', '.data-list .data-check', function () {
+    ui.on(document, 'change', '.data-list .data-check', function () {
 
         var that, list, checkAll;
 
-        that = events.closest(that, '.data-list')[0];
-        list = events.closest(this, '.data-content')[0];
+        that = ui.closest(that, '.data-list')[0];
+        list = ui.closest(this, '.data-content')[0];
 
         if (this.checked) {
-            events.addClass(list, 'checked');
+            ui.addClass(list, 'checked');
 
         } else {
 
-            events.removeClass(list, 'checked');
-            checkAll = selector('.data-check-all', that)[0];
+            ui.removeClass(list, 'checked');
+            checkAll = ui.find('.data-check-all', that)[0];
 
-            if (selector('.data-check-all', that)[0] !== undefined) {
+            if (ui.find('.data-check-all', that)[0] !== undefined) {
                 checkAll.checked = false;
             }
 
@@ -711,9 +711,9 @@ var dataList = {
     });
 
     // first loading
-    dataList.Start = function () {
+    ui.dataList.Start = function () {
 
-        events.each('.data-list:not(.data-list-loaded)', function () {
+        ui.each('.data-list:not(.data-list-loaded)', function () {
 
             var id, dataShow, index, i;
 
@@ -733,7 +733,7 @@ var dataList = {
             }
 
             // calculate data-show
-            dataShow = selector('select.data-show', this)[0];
+            dataShow = ui.find('select.data-show', this)[0];
             if (showCount[id] === 0) {
 
                 if (dataShow !== undefined) {
@@ -745,7 +745,7 @@ var dataList = {
                             showCount[id] = 0;
                             pagingCount[id] = 1;
 
-                            events.addClass(this, 'data-show-all');
+                            ui.addClass(this, 'data-show-all');
 
                         } else {
                             showCount[id] = dataShow.value;
@@ -780,7 +780,7 @@ var dataList = {
             }
 
             // load data
-            events.addClass(this, 'data-list-loaded');
+            ui.addClass(this, 'data-list-loaded');
             loadData(this, id);
 
         });
@@ -788,7 +788,7 @@ var dataList = {
     };
 
     // clear stored variables when page refreshing
-    events.on(window, 'beforeunload', function () {
+    ui.on(window, 'beforeunload', function () {
 
         if (testStorage && sessionStorage !== undefined) {
 
@@ -796,9 +796,9 @@ var dataList = {
                 if (performance.navigation.type !== 1) { // The Navigation Timing API: if === 1 means page refreshed
 
                     var dataLists, id;
-                    dataLists = selector('.data-list');
+                    dataLists = ui.find('.data-list');
 
-                    events.each(dataLists, function () {
+                    ui.each(dataLists, function () {
 
                         id = this.getAttribute('data-id');
 
@@ -816,11 +816,11 @@ var dataList = {
     });
 
     // Loaders
-    events.onload(dataList.Start);
+    ui.onload(ui.dataList.Start);
 
-    // ajax callback loader: requires Ajax JS
-    events.on(document, 'ajaxCallbacks', function () {
-        if (ajax.classNames.indexOf('data-list') > -1) { dataList.Start(); }
+    // ajax callback loader
+    ui.on(document, 'ui:ajaxCallbacks', function () {
+        if (ui.ajax.classNames.indexOf('data-list') > -1) { ui.dataList.Start(); }
     });
 
 }());
