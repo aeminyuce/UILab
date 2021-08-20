@@ -1259,7 +1259,7 @@
 
                 <h4>Required Forms</h4>
                 <div class="padding-30-b">
-                    <form action="#succesful" onsubmit="return alerts.dialog({msg: 'Submit this form?', success: 'Yes', error: 'No', callback: function (value) { if (value === 'success') { document.getElementById('submitForm').submit(); } }});">
+                    <form action="#succesful" onsubmit="return ui.alerts.dialog({msg: 'Submit this form?', success: 'Yes', error: 'No', callback: function (value) { if (value === 'success') { document.getElementById('submitForm').submit(); } }});">
                         <div class="row">
                             <div class="col-3">
                                 <label class="form-grid">Required with message</label>

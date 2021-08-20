@@ -908,7 +908,7 @@
 </main>
 
 <!-- mobile menu -->
-<div class="mobile-menu show-l theme-default ease-layout ease-slow ease-in-out ">
+<div class="mobile-menu show-l theme-default ease-layout ease-in-out ">
     <div class="mobile-menu-title ui-bg-dark-100">
         <button class="btn btn-square btn-lg btn-ghost round ease-btn close-mobile-menu">
             <svg class="icon no-opacity"><use href="#remove"/></svg>

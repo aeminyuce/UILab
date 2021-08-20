@@ -924,7 +924,7 @@
 </div>
 
 <!-- mobile menu -->
-<div class="mobile-menu show-r ease-layout ease-slow ease-in-out">
+<div class="mobile-menu show-r ease-layout ease-in-out">
     <div class="mobile-menu-title border-b">
         <button class="btn btn-square btn-lg btn-ghost ease-btn close-mobile-menu">
             <svg class="icon no-opacity"><use href="#remove"/></svg>

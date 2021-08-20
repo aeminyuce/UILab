@@ -22,11 +22,8 @@
     <link rel="stylesheet" href="../css/custom/layout.css"/>
 
     <!-- import JS -->
-    <script src="../js/selector.js"></script>
-    <script src="../js/events.js"></script>
-    <script src="../js/user-agents.js"></script>
+    <script src="../js/ui.js"></script>
     <script src="../js/grid.js"></script>
-    <script src="../js/ajax.js"></script>
 
     <script src="../js/effects.js"></script>
 
@@ -64,7 +61,6 @@
     <script src="../js/pie-chart.js"></script>
     <script src="../js/svg-map.js"></script>
 
-    <script src="../js/dark-mode.js"></script>
 </head>
 
 <body>
@@ -170,12 +166,9 @@
                         <li><a class="btn btn-ghost" href="?p=typography">Typography</a></li>
                         <li><a class="btn btn-ghost" href="?p=weather">Weather</a></li>
                     </ul>
-                    <h4 class="font-bold padding-10-h theme-default2 ui-color">JS</h4>
+                    <h4 class="font-bold padding-10-h theme-default2 ui-color">Javascript</h4>
                     <ul class="list-unstyled block-2nd ease-2nd-button">
-                        <li><a class="btn btn-ghost" href="?p=selector">Selector</a></li>
-                        <li><a class="btn btn-ghost" href="?p=events">Events</a></li>
-                        <li><a class="btn btn-ghost" href="?p=useragents">User Agents</a></li>
-                        <li><a class="btn btn-ghost" href="?p=ajax">Ajax</a></li>
+                        <li><a class="btn btn-ghost" href="?p=ui">UI JS</a></li>
                     </ul>
                 </div>
             </div>
@@ -311,7 +304,7 @@
     </main>
 
     <!-- mobile menu -->
-    <div class="mobile-menu show-r theme-default ease-layout ease-slow ease-in-out">
+    <div class="mobile-menu show-r theme-default ease-layout ease-in-out">
         <div class="mobile-menu-title padding-15-v ui-bg-dark-100">
             <button class="btn btn-square btn-lg btn-ghost round ease-btn close-mobile-menu">
                 <svg class="icon no-opacity"><use href="#remove"/></svg>

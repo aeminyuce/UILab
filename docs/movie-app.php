@@ -94,7 +94,7 @@
                                 <button class="btn btn-square btn-ghost margin-10-l circle left show-mobile-menu-l visible-md">
                                     <svg class="icon"><use href="#bars-left"/></svg>
                                 </button>
-                                <button class="btn btn-square btn-ghost circle ease-btn visible-md" onclick="modal.open({source: '.search', bg: 'false'});" data-tooltip data-only="desktop" title="Search">
+                                <button class="btn btn-square btn-ghost circle ease-btn visible-md" onclick="ui.modal.open({source: '.search', bg: 'false'});" data-tooltip data-only="desktop" title="Search">
                                     <svg class="icon"><use href="#search"/></svg>
                                 </button>
                                 <button class="btn btn-square btn-ghost circle">
@@ -126,7 +126,7 @@
                             <div class="col-static">
                                 <div class="col-350">
                                     <div class="round set-relative">
-                                        <button class="full-w set-absolute set-all opacity-more ease-layout" onclick="modal.open({source: 'https://www.imdb.com/videoembed/vi4235180569', size: '722x300', type: 'iframe'});">
+                                        <button class="full-w set-absolute set-all opacity-more ease-layout" onclick="ui.modal.open({source: 'https://www.imdb.com/videoembed/vi4235180569', size: '722x300', type: 'iframe'});">
                                             <svg class="icon icon-xxl icon-default color-white set-absolute set-c"><use href="#video"/></svg>
                                         </button>
                                         <img class="img-fluid round shadow-lg" src="img/video-poster.jpg" alt="">
@@ -403,7 +403,7 @@
 </main>
 
 <!-- mobile menu -->
-<div class="mobile-menu show-l ui-bg-dark-100 ease-layout ease-slow ease-in-out">
+<div class="mobile-menu show-l ui-bg-dark-100 ease-layout ease-in-out">
     <div class="mobile-menu-title padding-20-v x-large border-b">
         <button class="btn btn-square btn-lg btn-ghost round ease-btn close-mobile-menu">
             <svg class="icon no-opacity"><use href="#remove"/></svg>

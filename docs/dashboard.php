@@ -219,7 +219,7 @@
                     <button class="btn color-black-muted btn-ghost padding-10 circle show-mobile-menu-l hidden-lg" data-tooltip title="Show Sidebar" data-only="desktop">
                         <svg class="icon"><use href="#bars-left"/></svg>
                     </button>
-                    <button class="btn color-black-muted btn-ghost padding-10 circle" onclick="modal.open({source: '.search', bg: 'false'});" data-tooltip data-only="desktop" title="Search">
+                    <button class="btn color-black-muted btn-ghost padding-10 circle" onclick="ui.modal.open({source: '.search', bg: 'false'});" data-tooltip data-only="desktop" title="Search">
                         <svg class="icon"><use href="#search"/></svg>
                     </button>
                     <div class="dropdown nav ease-dropdown">
@@ -686,7 +686,7 @@
                                                 <div class="col-5">
                                                     <div data-src="json/countries.json" data-val="name" class="autocomplete text text-icon-l round border-dual ease-form">
                                                         <svg class="icon"><use href="#keyboard"/></svg>
-                                                        <input type="text" placeholder="Type/Select your country" autocomplete="off">
+                                                        <input class="required" type="text" placeholder="Type/Select your country" autocomplete="off" minlength="3">
                                                     </div>
                                                     <p class="required-msg">Type/Select your country.</p>
                                                 </div>

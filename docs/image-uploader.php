@@ -2,7 +2,7 @@
     <div class="fixed padding-30-v">
 
         <div class="image-uploader icons-no-opacity round shadow-lg ease-image-uploader">
-            <form action="ajax/image-uploader.php" method="post" enctype="multipart/form-data"> <!-- error testing: image-uploader-error.php-->
+            <form action="xhr/image-uploader.php" method="post" enctype="multipart/form-data"> <!-- error testing: image-uploader-error.php-->
 
                 <div class="uploader-panel form-lg theme-default2">
                     <h4>Image Uploader</h4>
