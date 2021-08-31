@@ -84,7 +84,7 @@ ui.lineCharts = {
                 }
 
                 // calculate height of chart
-                size = this.getAttribute('data-size');
+                size = this.getAttribute('data-ui-size');
 
                 rows = ui.lineCharts.rows;
                 rowsHeight = ui.lineCharts.rowsHeight;
@@ -105,7 +105,7 @@ ui.lineCharts = {
                 data.height = rows * rowsHeight;
 
                 // read all x parameters
-                x = this.getAttribute('data-x');
+                x = this.getAttribute('data-ui-x');
                 if (x !== null && x !== '') { data.x = x.split(','); } else { return; }
 
                 x = data.x;
@@ -125,10 +125,10 @@ ui.lineCharts = {
 
                     ui.each(ui.find('li', this), function () {
 
-                        y = this.getAttribute('data-y');
+                        y = this.getAttribute('data-ui-y');
                         if (y !== null && y !== '') { data[i].y.push(y); } else { return; }
 
-                        link = this.getAttribute('data-link');
+                        link = this.getAttribute('data-ui-link');
                         if (link !== null && link !== '') { data[i].links.push(link); } else { data[i].links.push(''); }
 
                     });
@@ -168,7 +168,7 @@ ui.lineCharts = {
                 html = '<svg style="width: ' + data.width + 'px; height: ' + data.svgHeight + 'px;">';
 
                 // check column stepping
-                data.step = this.getAttribute('data-step');
+                data.step = this.getAttribute('data-ui-step');
                 if (data.step !== null && data.step !== '' && data.step !== '0') {
 
                     if (isNaN(data.step)) {
@@ -277,7 +277,7 @@ ui.lineCharts = {
                         posY = data.height - (data.height + (((data.height - (ui.lineCharts.top + ui.lineCharts.bottom)) * (y[i] - yMax)) / (yMax - yMin)) - ui.lineCharts.top);
 
                         // get line type
-                        type = this.getAttribute('data-type');
+                        type = this.getAttribute('data-ui-type');
                         if (type === null) { type = ''; }
 
                         // create lines
@@ -362,7 +362,7 @@ ui.lineCharts = {
                     }
 
                     // get data names
-                    name = this.getAttribute('data-name');
+                    name = this.getAttribute('data-ui-name');
 
                     if (name !== null && name !== '') {
                         data.name.push(name);

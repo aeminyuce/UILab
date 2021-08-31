@@ -280,15 +280,15 @@
                                     <div class="col-12 full-height">
                                         <div class="select-multi full-height round border-dual ease-form">
                                             <select multiple size="6" name="a">
-                                                <option value="1" data-index="3">Value 1</option>
+                                                <option value="1" data-ui-index="3">Value 1</option>
                                                 <option value="2">Value 2</option>
                                                 <option value="3">Value 3</option>
-                                                <option value="4" data-index="1">Value 4</option>
+                                                <option value="4" data-ui-index="1">Value 4</option>
                                                 <option value="5">Value 5</option>
                                                 <option value="6">Value 6</option>
                                                 <option value="7">Value 7</option>
                                                 <option value="8">Value 8</option>
-                                                <option value="9" data-index="2">Value 9</option>
+                                                <option value="9" data-ui-index="2">Value 9</option>
                                                 <option value="10">Value 10</option>
                                             </select>
                                         </div>
@@ -318,15 +318,15 @@
                                     <div class="col-12 full-height">
                                         <div class="select-multi full-height round border-dual ease-form">
                                             <select multiple size="6" name="b">
-                                                <option value="1" data-index="3" selected>Value 1</option>
+                                                <option value="1" data-ui-index="3" selected>Value 1</option>
                                                 <option value="2">Value 2</option>
                                                 <option value="3">Value 3</option>
-                                                <option value="4" data-index="1" selected>Value 4</option>
+                                                <option value="4" data-ui-index="1" selected>Value 4</option>
                                                 <option value="5">Value 5</option>
                                                 <option value="6">Value 6</option>
                                                 <option value="7">Value 7</option>
                                                 <option value="8">Value 8</option>
-                                                <option value="9" data-index="2" selected>Value 9</option>
+                                                <option value="9" data-ui-index="2" selected>Value 9</option>
                                                 <option value="10">Value 10</option>
                                             </select>
                                         </div>

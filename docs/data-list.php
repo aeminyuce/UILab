@@ -21,7 +21,7 @@
                             <div class="col-lg-3 col-6 no-fluid">
                                 <div class="select round no-border ui-bg-light-100 ease-form">
                                     <svg class="icon"><use href="#angle-down"></svg>
-                                    <select class="data-filter" data-index="2">
+                                    <select class="data-filter" data-ui-index="2">
                                         <option value="">Filter</option>
                                         <option>Starting</option>
                                         <option>Waiting</option>
@@ -42,13 +42,13 @@
                                     </button>
                                     <ul class="content round shadow-lg">
                                         <li>
-                                            <label class="radio" data-sort="1">
+                                            <label class="radio" data-ui-sort="1">
                                                 <svg class="icon"><use href="#sort"></svg>
                                                 <input type="radio" name="s">By Name
                                             </label>
                                         </li>
                                         <li>
-                                            <label class="radio" data-sort="2">
+                                            <label class="radio" data-ui-sort="2">
                                                 <svg class="icon"><use href="#sort"></svg>
                                                 <input type="radio" name="s">By Step
                                             </label>
@@ -65,7 +65,7 @@
 
                         <div class="data-container">
 
-                            <div class="data-content no-border round" data-val="John Atkinson|Paused">
+                            <div class="data-content no-border round" data-ui-val="John Atkinson|Paused">
                                 <div class="row no-row-gap no-fluid">
                                     <div class="col-5">
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
@@ -97,7 +97,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="data-content no-border round" data-val="Mary Doe|Waiting">
+                            <div class="data-content no-border round" data-ui-val="Mary Doe|Waiting">
                                 <div class="row no-row-gap no-fluid">
                                     <div class="col-5">
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -129,7 +129,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="data-content no-border round" data-val="Mike Taylor|Completed">
+                            <div class="data-content no-border round" data-ui-val="Mike Taylor|Completed">
                                 <div class="row no-row-gap no-fluid">
                                     <div class="col-5">
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
@@ -161,7 +161,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="data-content no-border round" data-val="Tony Starky|Paused">
+                            <div class="data-content no-border round" data-ui-val="Tony Starky|Paused">
                                 <div class="row no-row-gap no-fluid">
                                     <div class="col-5">
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
@@ -193,7 +193,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="data-content no-border round" data-val="John Atkinson|Paused">
+                            <div class="data-content no-border round" data-ui-val="John Atkinson|Paused">
                                 <div class="row no-row-gap no-fluid">
                                     <div class="col-5">
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
@@ -225,7 +225,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="data-content no-border round" data-val="Mary Doe|Waiting">
+                            <div class="data-content no-border round" data-ui-val="Mary Doe|Waiting">
                                 <div class="row no-row-gap no-fluid">
                                     <div class="col-5">
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -257,7 +257,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="data-content no-border round" data-val="Mike Taylor|Completed">
+                            <div class="data-content no-border round" data-ui-val="Mike Taylor|Completed">
                                 <div class="row no-row-gap no-fluid">
                                     <div class="col-5">
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
@@ -289,7 +289,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="data-content no-border round" data-val="Tony Starky|Paused">
+                            <div class="data-content no-border round" data-ui-val="Tony Starky|Paused">
                                 <div class="row no-row-gap no-fluid">
                                     <div class="col-5">
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
@@ -321,7 +321,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="data-content no-border round" data-val="John Atkinson|Paused">
+                            <div class="data-content no-border round" data-ui-val="John Atkinson|Paused">
                                 <div class="row no-row-gap no-fluid">
                                     <div class="col-5">
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
@@ -353,7 +353,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="data-content no-border round" data-val="Mary Doe|Waiting">
+                            <div class="data-content no-border round" data-ui-val="Mary Doe|Waiting">
                                 <div class="row no-row-gap no-fluid">
                                     <div class="col-5">
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -385,7 +385,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="data-content no-border round" data-val="Mike Taylor|Completed">
+                            <div class="data-content no-border round" data-ui-val="Mike Taylor|Completed">
                                 <div class="row no-row-gap no-fluid">
                                     <div class="col-5">
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
@@ -417,7 +417,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="data-content no-border round" data-val="Tony Starky|Paused">
+                            <div class="data-content no-border round" data-ui-val="Tony Starky|Paused">
                                 <div class="row no-row-gap no-fluid">
                                     <div class="col-5">
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
@@ -460,7 +460,7 @@
                                 </div>
                             </div>
                             <div class="col-8 no-fluid align-r">
-                                <div class="data-paging pagination ease-1st-btn" data-default="btn round" data-active="border-dual theme-default2 ui-border ui-color"></div>
+                                <div class="data-paging pagination ease-1st-btn" data-ui-default="btn round" data-ui-active="border-dual theme-default2 ui-border ui-color"></div>
                             </div>
                         </div>
 
@@ -494,7 +494,7 @@
 
                             <div class="select form-inline-xs round border-dual ease-form">
                                 <svg class="icon"><use href="#angle-down"></svg>
-                                <select class="data-filter" data-index="1">
+                                <select class="data-filter" data-ui-index="1">
                                     <option value="">Name</option>
                                     <option>John Doe</option>
                                     <option>Mary Doe</option>
@@ -504,7 +504,7 @@
                             </div>
                             <div class="select form-inline-xs round border-dual ease-form">
                                 <svg class="icon"><use href="#angle-down"></svg>
-                                <select class="data-filter" data-index="2" data-type="number">
+                                <select class="data-filter" data-ui-index="2" data-ui-type="number">
                                     <option value="">Age</option>
                                     <option>24</option>
                                     <option>25</option>
@@ -526,19 +526,19 @@
 
                     <div class="row row-gap-xs align-l block-2nd ease-2nd-btn no-fluid">
                         <div class="col-5">
-                            <button class="btn" data-sort="1"><svg class="icon"><use href="#sort"></svg> Name</button>
+                            <button class="btn" data-ui-sort="1"><svg class="icon"><use href="#sort"></svg> Name</button>
                         </div>
                         <div class="col-3">
-                            <button class="btn" data-sort="2" data-type="number"><svg class="icon"><use href="#sort"></svg> Age</button>
+                            <button class="btn" data-ui-sort="2" data-ui-type="number"><svg class="icon"><use href="#sort"></svg> Age</button>
                         </div>
                         <div class="col-4">
-                            <button class="btn" data-sort="3"><svg class="icon"><use href="#sort"></svg> Job</button>
+                            <button class="btn" data-ui-sort="3"><svg class="icon"><use href="#sort"></svg> Job</button>
                         </div>
                     </div>
 
                     <div class="data-container">
 
-                        <div class="data-content" data-val="John Doe|25|Designer">
+                        <div class="data-content" data-ui-val="John Doe|25|Designer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -555,7 +555,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mary Doe|24|Designer">
+                        <div class="data-content" data-ui-val="Mary Doe|24|Designer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -572,7 +572,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mike Taylor|29|Developer">
+                        <div class="data-content" data-ui-val="Mike Taylor|29|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -589,7 +589,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Anna May|25|Designer">
+                        <div class="data-content" data-ui-val="Anna May|25|Designer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -606,7 +606,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="John Doe|24|Designer">
+                        <div class="data-content" data-ui-val="John Doe|24|Designer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -623,7 +623,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mary Doe|24|Researcher">
+                        <div class="data-content" data-ui-val="Mary Doe|24|Researcher">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -640,7 +640,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mike Taylor|29|Developer">
+                        <div class="data-content" data-ui-val="Mike Taylor|29|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -657,7 +657,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Anna May|25|Designer">
+                        <div class="data-content" data-ui-val="Anna May|25|Designer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -674,7 +674,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="John Doe|25|Developer">
+                        <div class="data-content" data-ui-val="John Doe|25|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -691,7 +691,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mary Doe|24|Developer">
+                        <div class="data-content" data-ui-val="Mary Doe|24|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -708,7 +708,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mike Taylor|29|Developer">
+                        <div class="data-content" data-ui-val="Mike Taylor|29|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -725,7 +725,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Anna May|25|Researcher">
+                        <div class="data-content" data-ui-val="Anna May|25|Researcher">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -742,7 +742,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="John Doe|25|Researcher">
+                        <div class="data-content" data-ui-val="John Doe|25|Researcher">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -759,7 +759,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mary Doe|24|Developer">
+                        <div class="data-content" data-ui-val="Mary Doe|24|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -776,7 +776,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mike Taylor|29|Developer">
+                        <div class="data-content" data-ui-val="Mike Taylor|29|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -793,7 +793,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Anna May|25|Researcher">
+                        <div class="data-content" data-ui-val="Anna May|25|Researcher">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -810,7 +810,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="John Doe|24|Designer">
+                        <div class="data-content" data-ui-val="John Doe|24|Designer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -827,7 +827,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mary Doe|24|Researcher">
+                        <div class="data-content" data-ui-val="Mary Doe|24|Researcher">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -844,7 +844,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mike Taylor|29|Developer">
+                        <div class="data-content" data-ui-val="Mike Taylor|29|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -861,7 +861,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Anna May|25|Developer">
+                        <div class="data-content" data-ui-val="Anna May|25|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -878,7 +878,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="John Doe|25|Researcher">
+                        <div class="data-content" data-ui-val="John Doe|25|Researcher">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -895,7 +895,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mary Doe|24|Developer">
+                        <div class="data-content" data-ui-val="Mary Doe|24|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -912,7 +912,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mike Taylor|29|Developer">
+                        <div class="data-content" data-ui-val="Mike Taylor|29|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -929,7 +929,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Anna May|25|Designer">
+                        <div class="data-content" data-ui-val="Anna May|25|Designer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -946,7 +946,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="John Doe|24|Developer">
+                        <div class="data-content" data-ui-val="John Doe|24|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -963,7 +963,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mary Doe|24|Developer">
+                        <div class="data-content" data-ui-val="Mary Doe|24|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -980,7 +980,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mike Taylor|29|Designer">
+                        <div class="data-content" data-ui-val="Mike Taylor|29|Designer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -997,7 +997,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Anna May|25|Researcher">
+                        <div class="data-content" data-ui-val="Anna May|25|Researcher">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -1014,7 +1014,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="John Doe|25|Designer">
+                        <div class="data-content" data-ui-val="John Doe|25|Designer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -1031,7 +1031,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mary Doe|24|Developer">
+                        <div class="data-content" data-ui-val="Mary Doe|24|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -1048,7 +1048,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mike Taylor|29|Researcher">
+                        <div class="data-content" data-ui-val="Mike Taylor|29|Researcher">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -1065,7 +1065,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Anna May|25|Researcher">
+                        <div class="data-content" data-ui-val="Anna May|25|Researcher">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -1082,7 +1082,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="John Doe|25|Designer">
+                        <div class="data-content" data-ui-val="John Doe|25|Designer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -1099,7 +1099,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mary Doe|24|Developer">
+                        <div class="data-content" data-ui-val="Mary Doe|24|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -1116,7 +1116,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mike Taylor|29|Developer">
+                        <div class="data-content" data-ui-val="Mike Taylor|29|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -1133,7 +1133,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Anna May|25|Researcher">
+                        <div class="data-content" data-ui-val="Anna May|25|Researcher">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -1150,7 +1150,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="John Doe|24|Researcher">
+                        <div class="data-content" data-ui-val="John Doe|24|Researcher">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -1167,7 +1167,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mary Doe|24|Developer">
+                        <div class="data-content" data-ui-val="Mary Doe|24|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -1184,7 +1184,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mike Taylor|29|Developer">
+                        <div class="data-content" data-ui-val="Mike Taylor|29|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -1201,7 +1201,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Anna May|25|Researcher">
+                        <div class="data-content" data-ui-val="Anna May|25|Researcher">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     <span class="check-custom no-margin-v round border-dual ease-form">
@@ -1228,7 +1228,7 @@
                             </div>
                         </div>
                         <div class="col-6 align-r">
-                            <div class="data-paging pagination ease-1st-btn" data-default="btn round" data-active="theme-default2 ui-bg-dark-100"></div>
+                            <div class="data-paging pagination ease-1st-btn" data-ui-default="btn round" data-ui-active="theme-default2 ui-bg-dark-100"></div>
                         </div>
                     </div>
 
@@ -1251,7 +1251,7 @@
                         <div class="col-7 align-r sm-align-l">
                             <label class="custom margin-5-r">
                                 <span class="check-custom round border-dual sm-no-margin-t ease-form">
-                                    <input class="data-filter" data-index="2" type="checkbox" value="25">
+                                    <input class="data-filter" data-ui-index="2" type="checkbox" value="25">
                                     <i class="state"></i>
                                 </span>
                                 Show only 25 ages.
@@ -1271,19 +1271,19 @@
 
                     <div class="row row-gap-xs align-l border-v block-2nd ease-2nd-btn no-fluid">
                         <div class="col-5">
-                            <button class="btn btn-ghost" data-sort="1"><svg class="icon"><use href="#sort"></svg> Name</button>
+                            <button class="btn btn-ghost" data-ui-sort="1"><svg class="icon"><use href="#sort"></svg> Name</button>
                         </div>
                         <div class="col-3">
-                            <button class="btn btn-ghost" data-sort="2" data-type="number"><svg class="icon"><use href="#sort"></svg> Age</button>
+                            <button class="btn btn-ghost" data-ui-sort="2" data-ui-type="number"><svg class="icon"><use href="#sort"></svg> Age</button>
                         </div>
                         <div class="col-4">
-                            <button class="btn btn-ghost" data-sort="3"><svg class="icon"><use href="#sort"></svg> Job</button>
+                            <button class="btn btn-ghost" data-ui-sort="3"><svg class="icon"><use href="#sort"></svg> Job</button>
                         </div>
                     </div>
 
                     <div class="data-container">
 
-                        <div class="data-content" data-val="John Doe|25|Designer">
+                        <div class="data-content" data-ui-val="John Doe|25|Designer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     John Doe
@@ -1296,7 +1296,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mary Doe|24|Designer">
+                        <div class="data-content" data-ui-val="Mary Doe|24|Designer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Mary Doe
@@ -1309,7 +1309,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mike Taylor|29|Developer">
+                        <div class="data-content" data-ui-val="Mike Taylor|29|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Mike Taylor
@@ -1322,7 +1322,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Anna May|25|Designer">
+                        <div class="data-content" data-ui-val="Anna May|25|Designer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Anna May
@@ -1335,7 +1335,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="John Doe|24|Designer">
+                        <div class="data-content" data-ui-val="John Doe|24|Designer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     John Doe
@@ -1348,7 +1348,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mary Doe|24|Researcher">
+                        <div class="data-content" data-ui-val="Mary Doe|24|Researcher">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Mary Doe
@@ -1361,7 +1361,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mike Taylor|29|Developer">
+                        <div class="data-content" data-ui-val="Mike Taylor|29|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Mike Taylor
@@ -1374,7 +1374,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Anna May|25|Designer">
+                        <div class="data-content" data-ui-val="Anna May|25|Designer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Anna May
@@ -1387,7 +1387,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="John Doe|25|Developer">
+                        <div class="data-content" data-ui-val="John Doe|25|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     John Doe
@@ -1400,7 +1400,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mary Doe|24|Developer">
+                        <div class="data-content" data-ui-val="Mary Doe|24|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Mary Doe
@@ -1413,7 +1413,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mike Taylor|29|Developer">
+                        <div class="data-content" data-ui-val="Mike Taylor|29|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Mike Taylor
@@ -1426,7 +1426,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Anna May|25|Researcher">
+                        <div class="data-content" data-ui-val="Anna May|25|Researcher">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Anna May
@@ -1439,7 +1439,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="John Doe|25|Researcher">
+                        <div class="data-content" data-ui-val="John Doe|25|Researcher">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     John Doe
@@ -1452,7 +1452,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mary Doe|24|Developer">
+                        <div class="data-content" data-ui-val="Mary Doe|24|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Mary Doe
@@ -1465,7 +1465,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mike Taylor|29|Developer">
+                        <div class="data-content" data-ui-val="Mike Taylor|29|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Mike Taylor
@@ -1478,7 +1478,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Anna May|25|Researcher">
+                        <div class="data-content" data-ui-val="Anna May|25|Researcher">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Anna May
@@ -1491,7 +1491,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="John Doe|24|Designer">
+                        <div class="data-content" data-ui-val="John Doe|24|Designer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     John Doe
@@ -1504,7 +1504,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mary Doe|24|Researcher">
+                        <div class="data-content" data-ui-val="Mary Doe|24|Researcher">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Mary Doe
@@ -1517,7 +1517,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mike Taylor|29|Developer">
+                        <div class="data-content" data-ui-val="Mike Taylor|29|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Mike Taylor
@@ -1530,7 +1530,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Anna May|25|Developer">
+                        <div class="data-content" data-ui-val="Anna May|25|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Anna May
@@ -1543,7 +1543,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="John Doe|25|Researcher">
+                        <div class="data-content" data-ui-val="John Doe|25|Researcher">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     John Doe
@@ -1556,7 +1556,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mary Doe|24|Developer">
+                        <div class="data-content" data-ui-val="Mary Doe|24|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Mary Doe
@@ -1569,7 +1569,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mike Taylor|29|Developer">
+                        <div class="data-content" data-ui-val="Mike Taylor|29|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Mike Taylor
@@ -1582,7 +1582,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Anna May|25|Designer">
+                        <div class="data-content" data-ui-val="Anna May|25|Designer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Anna May
@@ -1595,7 +1595,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="John Doe|24|Developer">
+                        <div class="data-content" data-ui-val="John Doe|24|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     John Doe
@@ -1608,7 +1608,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mary Doe|24|Developer">
+                        <div class="data-content" data-ui-val="Mary Doe|24|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Mary Doe
@@ -1621,7 +1621,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mike Taylor|29|Designer">
+                        <div class="data-content" data-ui-val="Mike Taylor|29|Designer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Mike Taylor
@@ -1634,7 +1634,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Anna May|25|Researcher">
+                        <div class="data-content" data-ui-val="Anna May|25|Researcher">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Anna May
@@ -1647,7 +1647,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="John Doe|25|Designer">
+                        <div class="data-content" data-ui-val="John Doe|25|Designer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     John Doe
@@ -1660,7 +1660,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mary Doe|24|Developer">
+                        <div class="data-content" data-ui-val="Mary Doe|24|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Mary Doe
@@ -1673,7 +1673,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mike Taylor|29|Researcher">
+                        <div class="data-content" data-ui-val="Mike Taylor|29|Researcher">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Mike Taylor
@@ -1686,7 +1686,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Anna May|25|Researcher">
+                        <div class="data-content" data-ui-val="Anna May|25|Researcher">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Anna May
@@ -1699,7 +1699,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="John Doe|25|Designer">
+                        <div class="data-content" data-ui-val="John Doe|25|Designer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     John Doe
@@ -1712,7 +1712,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mary Doe|24|Developer">
+                        <div class="data-content" data-ui-val="Mary Doe|24|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Mary Doe
@@ -1725,7 +1725,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mike Taylor|29|Developer">
+                        <div class="data-content" data-ui-val="Mike Taylor|29|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Mike Taylor
@@ -1738,7 +1738,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Anna May|25|Researcher">
+                        <div class="data-content" data-ui-val="Anna May|25|Researcher">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Anna May
@@ -1751,7 +1751,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="John Doe|24|Researcher">
+                        <div class="data-content" data-ui-val="John Doe|24|Researcher">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     John Doe
@@ -1764,7 +1764,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mary Doe|24|Developer">
+                        <div class="data-content" data-ui-val="Mary Doe|24|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Mary Doe
@@ -1777,7 +1777,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Mike Taylor|29|Developer">
+                        <div class="data-content" data-ui-val="Mike Taylor|29|Developer">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Mike Taylor
@@ -1790,7 +1790,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="data-content" data-val="Anna May|25|Researcher">
+                        <div class="data-content" data-ui-val="Anna May|25|Researcher">
                             <div class="row no-row-gap no-fluid">
                                 <div class="col-5">
                                     Anna May
@@ -1813,7 +1813,7 @@
                             </div>
                         </div>
                         <div class="col-6 align-r">
-                            <div class="data-paging pagination ease-1st-btn" data-default="btn round" data-active="theme-default2 ui-bg-dark-100"></div>
+                            <div class="data-paging pagination ease-1st-btn" data-ui-default="btn round" data-ui-active="theme-default2 ui-bg-dark-100"></div>
                         </div>
                     </div>
 

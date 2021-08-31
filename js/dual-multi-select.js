@@ -70,7 +70,7 @@ ui.dualMultiSelect = {};
                 options = ui.find('option', selects[0]);
                 ui.each(options, function () {
 
-                    index = this.getAttribute('data-index');
+                    index = this.getAttribute('data-ui-index');
                     if (index !== null && index !== '' && !isNaN(index)) {
 
                         arr.push(index);
@@ -113,7 +113,7 @@ ui.dualMultiSelect = {};
                 // set all indexes to options
                 ui.each(options, function (j) {
 
-                    this.setAttribute('data-index', arr[j]);
+                    this.setAttribute('data-ui-index', arr[j]);
 
                     if (userArr.length > 0) { // move user defined options from source to target by index
 
@@ -140,7 +140,7 @@ ui.dualMultiSelect = {};
 
             var i, j, sourceList, index, arr, inserted;
 
-            i = Number(that.getAttribute('data-index'));
+            i = Number(that.getAttribute('data-ui-index'));
             sourceList = ui.find('option', selects[0]);
 
             if (sourceList.length === 0) {
@@ -151,7 +151,7 @@ ui.dualMultiSelect = {};
             } else if (sourceList.length === 1) {
 
                 // only one option in list
-                index = Number(sourceList[0].getAttribute('data-index'));
+                index = Number(sourceList[0].getAttribute('data-ui-index'));
 
                 if (i > index) {
                     selects[0].appendChild(that);
@@ -168,7 +168,7 @@ ui.dualMultiSelect = {};
                 // move to index
                 for (j = 0; j < sourceList.length; j++) {
 
-                    index = Number(sourceList[j].getAttribute('data-index'));
+                    index = Number(sourceList[j].getAttribute('data-ui-index'));
                     arr.push(index);
 
                     if (index - 1 >= i) {
@@ -246,7 +246,7 @@ ui.dualMultiSelect = {};
                     ui.each(targetList, function () {
 
                         selected = this.getAttribute('selected');
-                        i = Number(this.getAttribute('data-index')) - 1;
+                        i = Number(this.getAttribute('data-ui-index')) - 1;
 
                         if (selected === null) { // move options to source that not selected with attribute
                             movetoSource(this, selects);

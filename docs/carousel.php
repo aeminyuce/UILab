@@ -8,10 +8,10 @@
 
                     <h5 class="font-bold">HTML Content Carousel</h5>
 
-                    <div class="carousel" data-col="1" data-slide="4000">
+                    <div class="carousel" data-ui-col="1" data-ui-slide="4000">
                         <div class="carousel-slider ease-2nd-layout ease-layout ease-slow-2x ease-in-out">
 
-                            <div class="slide-content padding-15 padding-30-b" data-animate="10">
+                            <div class="slide-content padding-15 padding-30-b" data-ui-animate="10">
                                 <div class="card padding-15 shadow-lg">
                                     <div class="row row-gap-lg theme-gray ui-bg-light-100 full-h">
                                         <div class="col-4">
@@ -50,7 +50,7 @@
                                 </div>
                             </div>
 
-                            <div class="slide-content padding-15 padding-30-b" data-animate="10">
+                            <div class="slide-content padding-15 padding-30-b" data-ui-animate="10">
                                 <div class="card padding-15 shadow-lg">
                                     <div class="row row-gap-lg theme-gray ui-bg-light-100 full-h">
                                         <div class="col-4">
@@ -89,7 +89,7 @@
                                 </div>
                             </div>
 
-                            <div class="slide-content padding-15 padding-30-b" data-animate="10">
+                            <div class="slide-content padding-15 padding-30-b" data-ui-animate="10">
                                 <div class="card padding-15 shadow-lg">
                                     <div class="row row-gap-lg theme-gray ui-bg-light-100 full-h">
                                         <div class="col-4 col-md-3">
@@ -143,7 +143,7 @@
 
                 <h5 class="font-bold">Image Carousel</h5>
                 <div class="padding-30-b">
-                    <div class="carousel" data-col="8" data-col-md="4" data-col-sm="3" data-col-xs="1" data-slide="2000">
+                    <div class="carousel" data-ui-col="8" data-ui-col-md="4" data-ui-col-sm="3" data-ui-col-xs="1" data-ui-slide="2000">
                         <div class="carousel-slider ease-2nd-layout ease-layout ease-slow ease-in-out">
                             <div class="slide-content">
                                 <img class="img" src="img/image_10.jpg" alt="">
@@ -208,7 +208,7 @@
                     <span class="sp-30"></span>
 
                     <h5 class="font-bold">Half Sized Image Carousel</h5>
-                    <div class="carousel half-sized padding-15-b photo-gallery ease-photo-gallery shadow-in-sm round theme-gray ui-bg-light-100" data-col="4" data-col-md="3" data-col-sm="2" data-col-xs="2">
+                    <div class="carousel half-sized padding-15-b photo-gallery ease-photo-gallery shadow-in-sm round theme-gray ui-bg-light-100" data-ui-col="4" data-ui-col-md="3" data-ui-col-sm="2" data-ui-col-xs="2">
                         <div class="carousel-slider hover-scale-2nd hover-shadow-2nd ease-layout ease-2nd-layout ease-slow ease-in-out">
                             <div class="slide-content padding-15 no-padding-b">
                                 <a class="img shadow ease-default" href="img/image_09.jpg"><img class="img" src="img/image_09.jpg" alt=""></a>
@@ -246,39 +246,39 @@
                     <div class="carousel-gallery card padding-15 round shadow-lg">
                         <div class="row">
                             <div class="detail col-8 col-md-6 push-2 push-md-3 sm-fluid">
-                                <img src="img/house_01.jpg" class="photo-gallery-call cursor-pointer img-fluid ease-layout" data-target="#detail-carousel" data-count="0" alt="">
+                                <img src="img/house_01.jpg" class="photo-gallery-call cursor-pointer img-fluid ease-layout" data-ui-target="#detail-carousel" data-ui-count="0" alt="">
                                 <svg class="zoom-icon icon"><use href="#expand-wide"/></svg>
                                 <svg class="loader-icon icon"><use href="#loader-line"/></svg>
                             </div>
                         </div>
-                        <div id="detail-carousel" class="carousel half-sized thumbs margin-10 md-no-margin-h" data-col="8" data-col-md="6" data-col-sm="5" data-col-xs="3">
+                        <div id="detail-carousel" class="carousel half-sized thumbs margin-10 md-no-margin-h" data-ui-col="8" data-ui-col-md="6" data-ui-col-sm="5" data-ui-col-xs="3">
                             <div class="carousel-slider ease-2nd-layout ease-layout ease-slow photo-gallery-passive">
                                 <div class="slide-content">
-                                    <img class="img ease-default selected" src="img/house_01.jpg" data-href="img/house_01.jpg" alt="">
+                                    <img class="img ease-default selected" src="img/house_01.jpg" data-ui-href="img/house_01.jpg" alt="">
                                 </div>
                                 <div class="slide-content">
-                                    <img class="img ease-default" src="img/house_02.jpg" data-href="img/house_02.jpg" alt="">
+                                    <img class="img ease-default" src="img/house_02.jpg" data-ui-href="img/house_02.jpg" alt="">
                                 </div>
                                 <div class="slide-content">
-                                    <img class="img ease-default" src="img/house_03.jpg" data-href="img/house_03.jpg" alt="">
+                                    <img class="img ease-default" src="img/house_03.jpg" data-ui-href="img/house_03.jpg" alt="">
                                 </div>
                                 <div class="slide-content">
-                                    <img class="img ease-default" src="img/house_04.jpg" data-href="img/house_04.jpg" alt="">
+                                    <img class="img ease-default" src="img/house_04.jpg" data-ui-href="img/house_04.jpg" alt="">
                                 </div>
                                 <div class="slide-content">
-                                    <img class="img ease-default" src="img/house_05.jpg" data-href="img/house_05.jpg" alt="">
+                                    <img class="img ease-default" src="img/house_05.jpg" data-ui-href="img/house_05.jpg" alt="">
                                 </div>
                                 <div class="slide-content">
-                                    <img class="img ease-default" src="img/house_01.jpg" data-href="img/house_01.jpg" alt="">
+                                    <img class="img ease-default" src="img/house_01.jpg" data-ui-href="img/house_01.jpg" alt="">
                                 </div>
                                 <div class="slide-content">
-                                    <img class="img ease-default" src="img/house_02.jpg" data-href="img/house_02.jpg" alt="">
+                                    <img class="img ease-default" src="img/house_02.jpg" data-ui-href="img/house_02.jpg" alt="">
                                 </div>
                                 <div class="slide-content">
-                                    <img class="img ease-default" src="img/house_03.jpg" data-href="img/house_03.jpg" alt="">
+                                    <img class="img ease-default" src="img/house_03.jpg" data-ui-href="img/house_03.jpg" alt="">
                                 </div>
                                 <div class="slide-content">
-                                    <img class="img ease-default" src="img/house_04.jpg" data-href="img/house_04.jpg" alt="">
+                                    <img class="img ease-default" src="img/house_04.jpg" data-ui-href="img/house_04.jpg" alt="">
                                 </div>
                             </div>
                             <div class="carousel-nav ease-1st-btn">
@@ -299,7 +299,7 @@
                     <div class="carousel-gallery card padding-15 round shadow-lg">
                         <div class="row">
                             <div class="detail col-8 col-md-6 push-2 push-md-3 sm-fluid">
-                                <img src="img/image_01.jpg" class="photo-gallery-call cursor-pointer img-fluid ease-layout" data-target="#detail-carousel2" data-count="0" alt="">
+                                <img src="img/image_01.jpg" class="photo-gallery-call cursor-pointer img-fluid ease-layout" data-ui-target="#detail-carousel2" data-ui-count="0" alt="">
                                 <svg class="zoom-icon icon"><use href="#expand-wide"/></svg>
                                 <svg class="loader-icon icon"><use href="#loader-line"/></svg>
                             </div>
@@ -307,19 +307,19 @@
                         <div id="detail-carousel2" class="thumbs">
                             <div class="row row-gap-xs no-fluid ease-2nd-layout">
                                 <div class="col-5x">
-                                    <img class="img ease-default selected" src="img/thumb_01.jpg" data-href="img/image_01.jpg" alt="">
+                                    <img class="img ease-default selected" src="img/thumb_01.jpg" data-ui-href="img/image_01.jpg" alt="">
                                 </div>
                                 <div class="col-5x">
-                                    <img class="img ease-default" src="img/thumb_02.jpg" data-href="img/image_02.jpg" alt="">
+                                    <img class="img ease-default" src="img/thumb_02.jpg" data-ui-href="img/image_02.jpg" alt="">
                                 </div>
                                 <div class="col-5x">
-                                    <img class="img ease-default" src="img/thumb_03.jpg" data-href="img/image_03.jpg" alt="">
+                                    <img class="img ease-default" src="img/thumb_03.jpg" data-ui-href="img/image_03.jpg" alt="">
                                 </div>
                                 <div class="col-5x">
-                                    <img class="img ease-default" src="img/thumb_04.jpg" data-href="img/image_04.jpg" alt="">
+                                    <img class="img ease-default" src="img/thumb_04.jpg" data-ui-href="img/image_04.jpg" alt="">
                                 </div>
                                 <div class="col-5x">
-                                    <img class="img ease-default" src="img/thumb_05.jpg" data-href="img/image_05.jpg" alt="">
+                                    <img class="img ease-default" src="img/thumb_05.jpg" data-ui-href="img/image_05.jpg" alt="">
                                 </div>
                             </div>
                         </div>

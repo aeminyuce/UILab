@@ -370,10 +370,10 @@ ui.imageUploader = {
             list = ui.find('.uploader-list ul > li', this);
             ui.each(list, function () {
 
-                img = this.getAttribute('data-img');
+                img = this.getAttribute('data-ui-img');
                 if (img !== null && img !== '') {
 
-                    id = this.getAttribute('data-id');
+                    id = this.getAttribute('data-ui-id');
                     if (id !== null && id !== '') {
 
                         i += 1;
@@ -383,7 +383,7 @@ ui.imageUploader = {
                         imported[i].id = id;
                         imported[i].tag = '';
 
-                        tag = this.getAttribute('data-tag');
+                        tag = this.getAttribute('data-ui-tag');
                         if (tag !== null) { imported[i].tag = tag; }
 
                     }

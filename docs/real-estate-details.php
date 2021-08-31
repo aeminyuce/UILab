@@ -11,41 +11,41 @@
 
                     <div class="carousel-gallery">
                         <div class="detail shadow-lg">
-                            <img src="img/house_01.jpg" class="round photo-gallery-call cursor-pointer img-fluid ease-layout" data-target="#detail-carousel" data-count="0" alt="">
+                            <img src="img/house_01.jpg" class="round photo-gallery-call cursor-pointer img-fluid ease-layout" data-ui-target="#detail-carousel" data-ui-count="0" alt="">
                             <svg class="zoom-icon icon"><use href="#expand-wide"/></svg>
                             <svg class="loader-icon icon"><use href="#loader-line"/></svg>
                         </div>
-                        <div id="detail-carousel" class="carousel thumbs half-sized" data-col="6" data-col-md="5" data-col-sm="4" data-col-xs="3">
+                        <div id="detail-carousel" class="carousel thumbs half-sized" data-ui-col="6" data-ui-col-md="5" data-ui-col-sm="4" data-ui-col-xs="3">
                             <div class="carousel-slider ease-2nd-layout ease-layout ease-slow photo-gallery-passive">
                                 <div class="slide-content">
-                                    <img class="img round ease-default selected" src="img/house_01.jpg" data-href="img/house_01.jpg" alt="">
+                                    <img class="img round ease-default selected" src="img/house_01.jpg" data-ui-href="img/house_01.jpg" alt="">
                                 </div>
                                 <div class="slide-content">
-                                    <img class="img round ease-default" src="img/house_02.jpg" data-href="img/house_02.jpg" alt="">
+                                    <img class="img round ease-default" src="img/house_02.jpg" data-ui-href="img/house_02.jpg" alt="">
                                 </div>
                                 <div class="slide-content">
-                                    <img class="img round ease-default" src="img/house_03.jpg" data-href="img/house_03.jpg" alt="">
+                                    <img class="img round ease-default" src="img/house_03.jpg" data-ui-href="img/house_03.jpg" alt="">
                                 </div>
                                 <div class="slide-content">
-                                    <img class="img round ease-default" src="img/house_04.jpg" data-href="img/house_04.jpg" alt="">
+                                    <img class="img round ease-default" src="img/house_04.jpg" data-ui-href="img/house_04.jpg" alt="">
                                 </div>
                                 <div class="slide-content">
-                                    <img class="img round ease-default" src="img/house_05.jpg" data-href="img/house_05.jpg" alt="">
+                                    <img class="img round ease-default" src="img/house_05.jpg" data-ui-href="img/house_05.jpg" alt="">
                                 </div>
                                 <div class="slide-content">
-                                    <img class="img round ease-default" src="img/house_01.jpg" data-href="img/house_01.jpg" alt="">
+                                    <img class="img round ease-default" src="img/house_01.jpg" data-ui-href="img/house_01.jpg" alt="">
                                 </div>
                                 <div class="slide-content">
-                                    <img class="img round ease-default" src="img/house_02.jpg" data-href="img/house_02.jpg" alt="">
+                                    <img class="img round ease-default" src="img/house_02.jpg" data-ui-href="img/house_02.jpg" alt="">
                                 </div>
                                 <div class="slide-content">
-                                    <img class="img round ease-default" src="img/house_03.jpg" data-href="img/house_03.jpg" alt="">
+                                    <img class="img round ease-default" src="img/house_03.jpg" data-ui-href="img/house_03.jpg" alt="">
                                 </div>
                                 <div class="slide-content">
-                                    <img class="img round ease-default" src="img/house_04.jpg" data-href="img/house_04.jpg" alt="">
+                                    <img class="img round ease-default" src="img/house_04.jpg" data-ui-href="img/house_04.jpg" alt="">
                                 </div>
                                 <div class="slide-content">
-                                    <img class="img round ease-default" src="img/house_05.jpg" data-href="img/house_05.jpg" alt="">
+                                    <img class="img round ease-default" src="img/house_05.jpg" data-ui-href="img/house_05.jpg" alt="">
                                 </div>
                             </div>
                             <div class="carousel-nav ease-1st-btn">
@@ -98,7 +98,7 @@
                                         </strong>
                                         <svg viewBox="0 0 160 160">
                                             <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                            <circle r="69.85699" cy="80" cx="80" stroke="hsl(186, 70%, 68%)" data-percent="96" />
+                                            <circle r="69.85699" cy="80" cx="80" stroke="hsl(186, 70%, 68%)" data-ui-percent="96" />
                                         </svg>
                                     </div>
                                 </div>
@@ -110,7 +110,7 @@
                                         </strong>
                                         <svg viewBox="0 0 160 160">
                                             <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                            <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-percent="88" />
+                                            <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="88" />
                                         </svg>
                                     </div>
                                 </div>
@@ -122,7 +122,7 @@
                                         </strong>
                                         <svg viewBox="0 0 160 160">
                                             <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                            <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-percent="86" />
+                                            <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-ui-percent="86" />
                                         </svg>
                                     </div>
                                 </div>
@@ -134,7 +134,7 @@
                                         </strong>
                                         <svg viewBox="0 0 160 160">
                                             <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                            <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-percent="80" />
+                                            <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-ui-percent="80" />
                                         </svg>
                                     </div>
                                 </div>
@@ -196,20 +196,20 @@
                 <div class="card margin-20-b round shadow-lg">
                     <div class="padding-30-h padding-10-v">
                         <b>Previous Offers / <span style="color: hsl(30, 100%, 63%);">Averages</span></b>
-                        <div class="line-charts ease-line-charts" data-size="5,20" data-x="1,2,3,4,5">
-                            <ul class="line" data-type="curved dotted">
-                                <li data-y="820000"></li>
-                                <li data-y="380000"></li>
-                                <li data-y="140000"></li>
-                                <li data-y="490000"></li>
-                                <li data-y="560000"></li>
+                        <div class="line-charts ease-line-charts" data-ui-size="5,20" data-ui-x="1,2,3,4,5">
+                            <ul class="line" data-ui-type="curved dotted">
+                                <li data-ui-y="820000"></li>
+                                <li data-ui-y="380000"></li>
+                                <li data-ui-y="140000"></li>
+                                <li data-ui-y="490000"></li>
+                                <li data-ui-y="560000"></li>
                             </ul>
-                            <ul class="line" data-type="curved filled">
-                                <li data-y="510000"></li>
-                                <li data-y="860000"></li>
-                                <li data-y="360000"></li>
-                                <li data-y="1260000"></li>
-                                <li data-y="820000"></li>
+                            <ul class="line" data-ui-type="curved filled">
+                                <li data-ui-y="510000"></li>
+                                <li data-ui-y="860000"></li>
+                                <li data-ui-y="360000"></li>
+                                <li data-ui-y="1260000"></li>
+                                <li data-ui-y="820000"></li>
                             </ul>
                         </div>
                     </div>

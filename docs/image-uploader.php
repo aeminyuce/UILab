@@ -45,10 +45,10 @@
                 <div class="uploader-list">
                     <svg class="icon icon-xxl"><use href="#images-plus"/></svg>
                     <ul>
-                        <li data-img="img/house_01.jpg" data-id="1" data-tag="Exterior"></li>
-                        <li data-img="img/house_02.jpg" data-id="2" data-tag=""></li>
-                        <li data-img="img/house_03.jpg" data-id="3" data-tag="Garden"></li>
-                        <li data-img="img/house_04.jpg" data-id="4" data-tag="Exterior"></li>
+                        <li data-ui-img="img/house_01.jpg" data-ui-id="1" data-ui-tag="Exterior"></li>
+                        <li data-ui-img="img/house_02.jpg" data-ui-id="2" data-ui-tag=""></li>
+                        <li data-ui-img="img/house_03.jpg" data-ui-id="3" data-ui-tag="Garden"></li>
+                        <li data-ui-img="img/house_04.jpg" data-ui-id="4" data-ui-tag="Exterior"></li>
                     </ul>
                 </div>
 

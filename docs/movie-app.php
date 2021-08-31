@@ -157,7 +157,7 @@
                     <h2 class="font-bold padding-15-h md-no-padding">Now Showing</h2>
                 </div>
 
-                <div class="carousel half-sized margin-15-h md-no-margin" data-col-xl="8" data-col-lg="6" data-col="3" data-col-md="4" data-col-sm="4" data-col-xs="2">
+                <div class="carousel half-sized margin-15-h md-no-margin" data-ui-col-xl="8" data-ui-col-lg="6" data-ui-col="3" data-ui-col-md="4" data-ui-col-sm="4" data-ui-col-xs="2">
                     <div class="carousel-slider block-2nd hover-scale-2nd ease-layout ease-2nd-layout ease-slow ease-in-out">
                         <div class="slide-content padding-15">
                             <a class="ease-default" href="#">
@@ -309,7 +309,7 @@
                     <h2 class="font-bold padding-15-h md-no-padding">Categories</h2>
                 </div>
 
-                <div class="carousel half-sized margin-15-h md-no-margin" data-col-xl="6" data-col-lg="6" data-col="3" data-col-md="4" data-col-sm="4" data-col-xs="2">
+                <div class="carousel half-sized margin-15-h md-no-margin" data-ui-col-xl="6" data-ui-col-lg="6" data-ui-col="3" data-ui-col-md="4" data-ui-col-sm="4" data-ui-col-xs="2">
                     <div class="carousel-slider block-2nd hover-scale-2nd ease-layout ease-2nd-layout ease-slow ease-in-out">
                         <div class="slide-content padding-15">
                             <a class="ease-default" href="#">

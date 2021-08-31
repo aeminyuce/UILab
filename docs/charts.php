@@ -7,167 +7,167 @@
                 <div class="row row-gap-lg-v">
                     <div class="col-6">
                         <h5 class="font-bold align-c">Line Chart</h5>
-                        <div class="line-charts ease-line-charts" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                        <div class="line-charts ease-line-charts" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="line">
-                                <li data-y="84"></li>
-                                <li data-y="56"></li>
-                                <li data-y="112"></li>
-                                <li data-y="140"></li>
-                                <li data-y="28"></li>
-                                <li data-y="0"></li>
-                                <li data-y="28"></li>
+                                <li data-ui-y="84"></li>
+                                <li data-ui-y="56"></li>
+                                <li data-ui-y="112"></li>
+                                <li data-ui-y="140"></li>
+                                <li data-ui-y="28"></li>
+                                <li data-ui-y="0"></li>
+                                <li data-ui-y="28"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-6">
                         <h5 class="font-bold align-c">Curved Line Chart</h5>
-                        <div class="line-charts ease-line-charts" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul class="line" data-type="curved">
-                                <li data-y="0"></li>
-                                <li data-y="-56"></li>
-                                <li data-y="-112"></li>
-                                <li data-y="-140"></li>
-                                <li data-y="-28"></li>
-                                <li data-y="-20"></li>
-                                <li data-y="-28"></li>
+                        <div class="line-charts ease-line-charts" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="line" data-ui-type="curved">
+                                <li data-ui-y="0"></li>
+                                <li data-ui-y="-56"></li>
+                                <li data-ui-y="-112"></li>
+                                <li data-ui-y="-140"></li>
+                                <li data-ui-y="-28"></li>
+                                <li data-ui-y="-20"></li>
+                                <li data-ui-y="-28"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-6">
                         <h5 class="font-bold align-c">Dotted Line Chart</h5>
-                        <div class="line-charts ease-line-charts" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul class="line" data-type="dotted">
-                                <li data-y="0"></li>
-                                <li data-y="-56"></li>
-                                <li data-y="-112"></li>
-                                <li data-y="-140"></li>
-                                <li data-y="-28"></li>
-                                <li data-y="-20"></li>
-                                <li data-y="-28"></li>
+                        <div class="line-charts ease-line-charts" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="line" data-ui-type="dotted">
+                                <li data-ui-y="0"></li>
+                                <li data-ui-y="-56"></li>
+                                <li data-ui-y="-112"></li>
+                                <li data-ui-y="-140"></li>
+                                <li data-ui-y="-28"></li>
+                                <li data-ui-y="-20"></li>
+                                <li data-ui-y="-28"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-6">
                         <h5 class="font-bold align-c">Dashed Line Chart</h5>
-                        <div class="line-charts ease-line-charts" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul class="line" data-type="dashed">
-                                <li data-y="0"></li>
-                                <li data-y="-56"></li>
-                                <li data-y="-112"></li>
-                                <li data-y="-140"></li>
-                                <li data-y="-28"></li>
-                                <li data-y="-20"></li>
-                                <li data-y="-28"></li>
+                        <div class="line-charts ease-line-charts" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="line" data-ui-type="dashed">
+                                <li data-ui-y="0"></li>
+                                <li data-ui-y="-56"></li>
+                                <li data-ui-y="-112"></li>
+                                <li data-ui-y="-140"></li>
+                                <li data-ui-y="-28"></li>
+                                <li data-ui-y="-20"></li>
+                                <li data-ui-y="-28"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-6">
                         <h5 class="font-bold align-c">Line Charts</h5>
-                        <div class="line-charts ease-line-charts" data-size="10,25" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul class="line" data-name="1st">
-                                <li data-y="-34" data-link="#1"></li>
-                                <li data-y="-56" data-link="#2"></li>
-                                <li data-y="-112" data-link="#3"></li>
-                                <li data-y="-140" data-link="#4"></li>
-                                <li data-y="-28" data-link="#5"></li>
-                                <li data-y="-20" data-link="#6"></li>
-                                <li data-y="-28" data-link="#7"></li>
+                        <div class="line-charts ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="line" data-ui-name="1st">
+                                <li data-ui-y="-34" data-ui-link="#1"></li>
+                                <li data-ui-y="-56" data-ui-link="#2"></li>
+                                <li data-ui-y="-112" data-ui-link="#3"></li>
+                                <li data-ui-y="-140" data-ui-link="#4"></li>
+                                <li data-ui-y="-28" data-ui-link="#5"></li>
+                                <li data-ui-y="-20" data-ui-link="#6"></li>
+                                <li data-ui-y="-28" data-ui-link="#7"></li>
                             </ul>
-                            <ul class="line" data-name="2nd">
-                                <li data-y="120" data-link="#1"></li>
-                                <li data-y="20" data-link="#2"></li>
-                                <li data-y="159" data-link="#3"></li>
-                                <li data-y="120" data-link="#4"></li>
-                                <li data-y="80" data-link="#5"></li>
-                                <li data-y="0" data-link="#6"></li>
-                                <li data-y="20" data-link="#7"></li>
+                            <ul class="line" data-ui-name="2nd">
+                                <li data-ui-y="120" data-ui-link="#1"></li>
+                                <li data-ui-y="20" data-ui-link="#2"></li>
+                                <li data-ui-y="159" data-ui-link="#3"></li>
+                                <li data-ui-y="120" data-ui-link="#4"></li>
+                                <li data-ui-y="80" data-ui-link="#5"></li>
+                                <li data-ui-y="0" data-ui-link="#6"></li>
+                                <li data-ui-y="20" data-ui-link="#7"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-6">
                         <h5 class="font-bold align-c">Curved Line Charts</h5>
-                        <div class="line-charts ease-line-charts" data-size="10,25" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul class="line" data-name="1st" data-type="curved dotted">
-                                <li data-y="55" data-link="#1"></li>
-                                <li data-y="70" data-link="#2"></li>
-                                <li data-y="92" data-link="#3"></li>
-                                <li data-y="55" data-link="#4"></li>
-                                <li data-y="89" data-link="#5"></li>
-                                <li data-y="98" data-link="#6"></li>
-                                <li data-y="116" data-link="#7"></li>
+                        <div class="line-charts ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="line" data-ui-name="1st" data-ui-type="curved dotted">
+                                <li data-ui-y="55" data-ui-link="#1"></li>
+                                <li data-ui-y="70" data-ui-link="#2"></li>
+                                <li data-ui-y="92" data-ui-link="#3"></li>
+                                <li data-ui-y="55" data-ui-link="#4"></li>
+                                <li data-ui-y="89" data-ui-link="#5"></li>
+                                <li data-ui-y="98" data-ui-link="#6"></li>
+                                <li data-ui-y="116" data-ui-link="#7"></li>
                             </ul>
-                            <ul class="line" data-name="2nd" data-type="curved">
-                                <li data-y="120" data-link="#1"></li>
-                                <li data-y="20" data-link="#2"></li>
-                                <li data-y="159" data-link="#3"></li>
-                                <li data-y="120" data-link="#4"></li>
-                                <li data-y="60" data-link="#5"></li>
-                                <li data-y="0" data-link="#6"></li>
-                                <li data-y="20" data-link="#7"></li>
+                            <ul class="line" data-ui-name="2nd" data-ui-type="curved">
+                                <li data-ui-y="120" data-ui-link="#1"></li>
+                                <li data-ui-y="20" data-ui-link="#2"></li>
+                                <li data-ui-y="159" data-ui-link="#3"></li>
+                                <li data-ui-y="120" data-ui-link="#4"></li>
+                                <li data-ui-y="60" data-ui-link="#5"></li>
+                                <li data-ui-y="0" data-ui-link="#6"></li>
+                                <li data-ui-y="20" data-ui-link="#7"></li>
                             </ul>
-                            <ul class="line" data-name="3rd" data-type="curved">
-                                <li data-y="32" data-link="#1"></li>
-                                <li data-y="52" data-link="#2"></li>
-                                <li data-y="117" data-link="#3"></li>
-                                <li data-y="85" data-link="#4"></li>
-                                <li data-y="137" data-link="#5"></li>
-                                <li data-y="144" data-link="#6"></li>
-                                <li data-y="59" data-link="#7"></li>
+                            <ul class="line" data-ui-name="3rd" data-ui-type="curved">
+                                <li data-ui-y="32" data-ui-link="#1"></li>
+                                <li data-ui-y="52" data-ui-link="#2"></li>
+                                <li data-ui-y="117" data-ui-link="#3"></li>
+                                <li data-ui-y="85" data-ui-link="#4"></li>
+                                <li data-ui-y="137" data-ui-link="#5"></li>
+                                <li data-ui-y="144" data-ui-link="#6"></li>
+                                <li data-ui-y="59" data-ui-link="#7"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-6">
                         <h5 class="font-bold align-c">Filled Line Charts</h5>
-                        <div class="line-charts ease-line-charts" data-size="10,25" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul class="line" data-name="1st" data-type="filled">
-                                <li data-y="-34" data-link="#1"></li>
-                                <li data-y="-56" data-link="#2"></li>
-                                <li data-y="-112" data-link="#3"></li>
-                                <li data-y="-140" data-link="#4"></li>
-                                <li data-y="-28" data-link="#5"></li>
-                                <li data-y="-20" data-link="#6"></li>
-                                <li data-y="-28" data-link="#7"></li>
+                        <div class="line-charts ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="line" data-ui-name="1st" data-ui-type="filled">
+                                <li data-ui-y="-34" data-ui-link="#1"></li>
+                                <li data-ui-y="-56" data-ui-link="#2"></li>
+                                <li data-ui-y="-112" data-ui-link="#3"></li>
+                                <li data-ui-y="-140" data-ui-link="#4"></li>
+                                <li data-ui-y="-28" data-ui-link="#5"></li>
+                                <li data-ui-y="-20" data-ui-link="#6"></li>
+                                <li data-ui-y="-28" data-ui-link="#7"></li>
                             </ul>
-                            <ul class="line" data-name="2nd" data-type="filled">
-                                <li data-y="120" data-link="#1"></li>
-                                <li data-y="20" data-link="#2"></li>
-                                <li data-y="159" data-link="#3"></li>
-                                <li data-y="120" data-link="#4"></li>
-                                <li data-y="80" data-link="#5"></li>
-                                <li data-y="0" data-link="#6"></li>
-                                <li data-y="20" data-link="#7"></li>
+                            <ul class="line" data-ui-name="2nd" data-ui-type="filled">
+                                <li data-ui-y="120" data-ui-link="#1"></li>
+                                <li data-ui-y="20" data-ui-link="#2"></li>
+                                <li data-ui-y="159" data-ui-link="#3"></li>
+                                <li data-ui-y="120" data-ui-link="#4"></li>
+                                <li data-ui-y="80" data-ui-link="#5"></li>
+                                <li data-ui-y="0" data-ui-link="#6"></li>
+                                <li data-ui-y="20" data-ui-link="#7"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-6">
                         <h5 class="font-bold align-c">Filled &amp; Curved Line Charts</h5>
-                        <div class="line-charts ease-line-charts" data-size="10,25" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul class="line" data-name="1st" data-type="curved dotted">
-                                <li data-y="-34" data-link="#1"></li>
-                                <li data-y="-56" data-link="#2"></li>
-                                <li data-y="-112" data-link="#3"></li>
-                                <li data-y="-140" data-link="#4"></li>
-                                <li data-y="-28" data-link="#5"></li>
-                                <li data-y="-20" data-link="#6"></li>
-                                <li data-y="-28" data-link="#7"></li>
+                        <div class="line-charts ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="line" data-ui-name="1st" data-ui-type="curved dotted">
+                                <li data-ui-y="-34" data-ui-link="#1"></li>
+                                <li data-ui-y="-56" data-ui-link="#2"></li>
+                                <li data-ui-y="-112" data-ui-link="#3"></li>
+                                <li data-ui-y="-140" data-ui-link="#4"></li>
+                                <li data-ui-y="-28" data-ui-link="#5"></li>
+                                <li data-ui-y="-20" data-ui-link="#6"></li>
+                                <li data-ui-y="-28" data-ui-link="#7"></li>
                             </ul>
-                            <ul class="line" data-name="2nd" data-type="curved filled">
-                                <li data-y="120" data-link="#1"></li>
-                                <li data-y="20" data-link="#2"></li>
-                                <li data-y="159" data-link="#3"></li>
-                                <li data-y="120" data-link="#4"></li>
-                                <li data-y="80" data-link="#5"></li>
-                                <li data-y="0" data-link="#6"></li>
-                                <li data-y="20" data-link="#7"></li>
+                            <ul class="line" data-ui-name="2nd" data-ui-type="curved filled">
+                                <li data-ui-y="120" data-ui-link="#1"></li>
+                                <li data-ui-y="20" data-ui-link="#2"></li>
+                                <li data-ui-y="159" data-ui-link="#3"></li>
+                                <li data-ui-y="120" data-ui-link="#4"></li>
+                                <li data-ui-y="80" data-ui-link="#5"></li>
+                                <li data-ui-y="0" data-ui-link="#6"></li>
+                                <li data-ui-y="20" data-ui-link="#7"></li>
                             </ul>
-                            <ul class="line" data-name="3rd" data-type="curved filled">
-                                <li data-y="32" data-link="#1"></li>
-                                <li data-y="52" data-link="#2"></li>
-                                <li data-y="117" data-link="#3"></li>
-                                <li data-y="85" data-link="#4"></li>
-                                <li data-y="137" data-link="#5"></li>
-                                <li data-y="144" data-link="#6"></li>
-                                <li data-y="59" data-link="#7"></li>
+                            <ul class="line" data-ui-name="3rd" data-ui-type="curved filled">
+                                <li data-ui-y="32" data-ui-link="#1"></li>
+                                <li data-ui-y="52" data-ui-link="#2"></li>
+                                <li data-ui-y="117" data-ui-link="#3"></li>
+                                <li data-ui-y="85" data-ui-link="#4"></li>
+                                <li data-ui-y="137" data-ui-link="#5"></li>
+                                <li data-ui-y="144" data-ui-link="#6"></li>
+                                <li data-ui-y="59" data-ui-link="#7"></li>
                             </ul>
                         </div>
                     </div>
@@ -175,56 +175,56 @@
                         <div class="row">
                             <div class="col-6">
                                 <h5 class="font-bold align-c">Filled Line Charts</h5>
-                                <div class="line-charts ease-line-charts" data-size="10,25" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                                    <ul class="line" data-name="1st" data-type="filled">
-                                        <li data-y="-34" data-link="#1"></li>
-                                        <li data-y="-56" data-link="#2"></li>
-                                        <li data-y="-112" data-link="#3"></li>
-                                        <li data-y="-140" data-link="#4"></li>
-                                        <li data-y="-28" data-link="#5"></li>
-                                        <li data-y="-20" data-link="#6"></li>
-                                        <li data-y="-28" data-link="#7"></li>
+                                <div class="line-charts ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                                    <ul class="line" data-ui-name="1st" data-ui-type="filled">
+                                        <li data-ui-y="-34" data-ui-link="#1"></li>
+                                        <li data-ui-y="-56" data-ui-link="#2"></li>
+                                        <li data-ui-y="-112" data-ui-link="#3"></li>
+                                        <li data-ui-y="-140" data-ui-link="#4"></li>
+                                        <li data-ui-y="-28" data-ui-link="#5"></li>
+                                        <li data-ui-y="-20" data-ui-link="#6"></li>
+                                        <li data-ui-y="-28" data-ui-link="#7"></li>
                                     </ul>
-                                    <ul class="line" data-name="2nd" data-type="filled">
-                                        <li data-y="120" data-link="#1"></li>
-                                        <li data-y="20" data-link="#2"></li>
-                                        <li data-y="159" data-link="#3"></li>
-                                        <li data-y="120" data-link="#4"></li>
-                                        <li data-y="80" data-link="#5"></li>
-                                        <li data-y="0" data-link="#6"></li>
-                                        <li data-y="20" data-link="#7"></li>
+                                    <ul class="line" data-ui-name="2nd" data-ui-type="filled">
+                                        <li data-ui-y="120" data-ui-link="#1"></li>
+                                        <li data-ui-y="20" data-ui-link="#2"></li>
+                                        <li data-ui-y="159" data-ui-link="#3"></li>
+                                        <li data-ui-y="120" data-ui-link="#4"></li>
+                                        <li data-ui-y="80" data-ui-link="#5"></li>
+                                        <li data-ui-y="0" data-ui-link="#6"></li>
+                                        <li data-ui-y="20" data-ui-link="#7"></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <h5 class="font-bold align-c">Filled &amp; Curved Line Charts</h5>
-                                <div class="line-charts ease-line-charts" data-size="10,25" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                                    <ul class="line" data-name="1st" data-type="curved dotted">
-                                        <li data-y="-34" data-link="#1"></li>
-                                        <li data-y="-56" data-link="#2"></li>
-                                        <li data-y="-112" data-link="#3"></li>
-                                        <li data-y="-140" data-link="#4"></li>
-                                        <li data-y="-28" data-link="#5"></li>
-                                        <li data-y="-20" data-link="#6"></li>
-                                        <li data-y="-28" data-link="#7"></li>
+                                <div class="line-charts ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                                    <ul class="line" data-ui-name="1st" data-ui-type="curved dotted">
+                                        <li data-ui-y="-34" data-ui-link="#1"></li>
+                                        <li data-ui-y="-56" data-ui-link="#2"></li>
+                                        <li data-ui-y="-112" data-ui-link="#3"></li>
+                                        <li data-ui-y="-140" data-ui-link="#4"></li>
+                                        <li data-ui-y="-28" data-ui-link="#5"></li>
+                                        <li data-ui-y="-20" data-ui-link="#6"></li>
+                                        <li data-ui-y="-28" data-ui-link="#7"></li>
                                     </ul>
-                                    <ul class="line" data-name="2nd" data-type="curved filled">
-                                        <li data-y="120" data-link="#1"></li>
-                                        <li data-y="20" data-link="#2"></li>
-                                        <li data-y="159" data-link="#3"></li>
-                                        <li data-y="120" data-link="#4"></li>
-                                        <li data-y="80" data-link="#5"></li>
-                                        <li data-y="0" data-link="#6"></li>
-                                        <li data-y="20" data-link="#7"></li>
+                                    <ul class="line" data-ui-name="2nd" data-ui-type="curved filled">
+                                        <li data-ui-y="120" data-ui-link="#1"></li>
+                                        <li data-ui-y="20" data-ui-link="#2"></li>
+                                        <li data-ui-y="159" data-ui-link="#3"></li>
+                                        <li data-ui-y="120" data-ui-link="#4"></li>
+                                        <li data-ui-y="80" data-ui-link="#5"></li>
+                                        <li data-ui-y="0" data-ui-link="#6"></li>
+                                        <li data-ui-y="20" data-ui-link="#7"></li>
                                     </ul>
-                                    <ul class="line" data-name="3rd" data-type="curved filled">
-                                        <li data-y="32" data-link="#1"></li>
-                                        <li data-y="52" data-link="#2"></li>
-                                        <li data-y="117" data-link="#3"></li>
-                                        <li data-y="85" data-link="#4"></li>
-                                        <li data-y="137" data-link="#5"></li>
-                                        <li data-y="144" data-link="#6"></li>
-                                        <li data-y="59" data-link="#7"></li>
+                                    <ul class="line" data-ui-name="3rd" data-ui-type="curved filled">
+                                        <li data-ui-y="32" data-ui-link="#1"></li>
+                                        <li data-ui-y="52" data-ui-link="#2"></li>
+                                        <li data-ui-y="117" data-ui-link="#3"></li>
+                                        <li data-ui-y="85" data-ui-link="#4"></li>
+                                        <li data-ui-y="137" data-ui-link="#5"></li>
+                                        <li data-ui-y="144" data-ui-link="#6"></li>
+                                        <li data-ui-y="59" data-ui-link="#7"></li>
                                     </ul>
                                 </div>
                             </div>
@@ -251,43 +251,43 @@
 
                                 <div class="tab-content open open-ease">
                                     <h5 class="font-bold align-c">First Chart</h5>
-                                    <div class="line-charts ease-line-charts" data-size="5,48" data-x="Sep,Oct,Nov,Dec,Jan,Fab">
-                                        <ul class="line" data-name="Sales" data-type="curved filled">
-                                            <li data-y="10" data-link="#"></li>
-                                            <li data-y="30" data-link="#"></li>
-                                            <li data-y="70" data-link="#"></li>
-                                            <li data-y="120" data-link="#"></li>
-                                            <li data-y="100" data-link="#"></li>
-                                            <li data-y="150" data-link="#"></li>
+                                    <div class="line-charts ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
+                                        <ul class="line" data-ui-name="Sales" data-ui-type="curved filled">
+                                            <li data-ui-y="10" data-ui-link="#"></li>
+                                            <li data-ui-y="30" data-ui-link="#"></li>
+                                            <li data-ui-y="70" data-ui-link="#"></li>
+                                            <li data-ui-y="120" data-ui-link="#"></li>
+                                            <li data-ui-y="100" data-ui-link="#"></li>
+                                            <li data-ui-y="150" data-ui-link="#"></li>
                                         </ul>
-                                        <ul class="line" data-name="Orders" data-type="dashed">
-                                            <li data-y="50" data-link="#"></li>
-                                            <li data-y="10" data-link="#"></li>
-                                            <li data-y="50" data-link="#"></li>
-                                            <li data-y="40" data-link="#"></li>
-                                            <li data-y="80" data-link="#"></li>
-                                            <li data-y="50" data-link="#"></li>
+                                        <ul class="line" data-ui-name="Orders" data-ui-type="dashed">
+                                            <li data-ui-y="50" data-ui-link="#"></li>
+                                            <li data-ui-y="10" data-ui-link="#"></li>
+                                            <li data-ui-y="50" data-ui-link="#"></li>
+                                            <li data-ui-y="40" data-ui-link="#"></li>
+                                            <li data-ui-y="80" data-ui-link="#"></li>
+                                            <li data-ui-y="50" data-ui-link="#"></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="tab-content">
                                     <h5 class="font-bold align-c">Second Chart</h5>
-                                    <div class="line-charts ease-line-charts" data-size="5,48" data-x="Sep,Oct,Nov,Dec,Jan,Fab">
-                                        <ul class="line" data-name="Sales" data-type="curved filled">
-                                            <li data-y="10" data-link="#"></li>
-                                            <li data-y="60" data-link="#"></li>
-                                            <li data-y="20" data-link="#"></li>
-                                            <li data-y="120" data-link="#"></li>
-                                            <li data-y="10" data-link="#"></li>
-                                            <li data-y="100" data-link="#"></li>
+                                    <div class="line-charts ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
+                                        <ul class="line" data-ui-name="Sales" data-ui-type="curved filled">
+                                            <li data-ui-y="10" data-ui-link="#"></li>
+                                            <li data-ui-y="60" data-ui-link="#"></li>
+                                            <li data-ui-y="20" data-ui-link="#"></li>
+                                            <li data-ui-y="120" data-ui-link="#"></li>
+                                            <li data-ui-y="10" data-ui-link="#"></li>
+                                            <li data-ui-y="100" data-ui-link="#"></li>
                                         </ul>
-                                        <ul class="line" data-name="Orders" data-type="dashed">
-                                            <li data-y="0" data-link="#"></li>
-                                            <li data-y="20" data-link="#"></li>
-                                            <li data-y="50" data-link="#"></li>
-                                            <li data-y="40" data-link="#"></li>
-                                            <li data-y="70" data-link="#"></li>
-                                            <li data-y="50" data-link="#"></li>
+                                        <ul class="line" data-ui-name="Orders" data-ui-type="dashed">
+                                            <li data-ui-y="0" data-ui-link="#"></li>
+                                            <li data-ui-y="20" data-ui-link="#"></li>
+                                            <li data-ui-y="50" data-ui-link="#"></li>
+                                            <li data-ui-y="40" data-ui-link="#"></li>
+                                            <li data-ui-y="70" data-ui-link="#"></li>
+                                            <li data-ui-y="50" data-ui-link="#"></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -296,30 +296,30 @@
                     </div>
                     <div class="col-12">
                         <h5 class="font-bold align-c">Column Stepping Chart</h5>
-                        <div class="line-charts ease-line-charts" data-size="10,25" data-step="6"
-                            data-x="01.12.2019,02.12.2019,03.12.2019,04.12.2019,05.12.2019,06.12.2019,07.12.2019,08.12.2019,09.12.2019,10.12.2019,11.12.2019,12.12.2019,13.12.2019,14.12.2019,15.12.2019,16.12.2019,17.12.2019,18.12.2019,19.12.2019,20.12.2019,21.12.2019">
-                            <ul class="line" data-type="filled dotted">
-                                <li data-y="84"></li>
-                                <li data-y="56"></li>
-                                <li data-y="112"></li>
-                                <li data-y="140"></li>
-                                <li data-y="28"></li>
-                                <li data-y="0"></li>
-                                <li data-y="28"></li>
-                                <li data-y="32"></li>
-                                <li data-y="52"></li>
-                                <li data-y="117"></li>
-                                <li data-y="85"></li>
-                                <li data-y="137"></li>
-                                <li data-y="144"></li>
-                                <li data-y="59"></li>
-                                <li data-y="112"></li>
-                                <li data-y="140"></li>
-                                <li data-y="28"></li>
-                                <li data-y="0"></li>
-                                <li data-y="28"></li>
-                                <li data-y="32"></li>
-                                <li data-y="52"></li>
+                        <div class="line-charts ease-line-charts" data-ui-size="10,25" data-ui-step="6"
+                            data-ui-x="01.12.2019,02.12.2019,03.12.2019,04.12.2019,05.12.2019,06.12.2019,07.12.2019,08.12.2019,09.12.2019,10.12.2019,11.12.2019,12.12.2019,13.12.2019,14.12.2019,15.12.2019,16.12.2019,17.12.2019,18.12.2019,19.12.2019,20.12.2019,21.12.2019">
+                            <ul class="line" data-ui-type="filled dotted">
+                                <li data-ui-y="84"></li>
+                                <li data-ui-y="56"></li>
+                                <li data-ui-y="112"></li>
+                                <li data-ui-y="140"></li>
+                                <li data-ui-y="28"></li>
+                                <li data-ui-y="0"></li>
+                                <li data-ui-y="28"></li>
+                                <li data-ui-y="32"></li>
+                                <li data-ui-y="52"></li>
+                                <li data-ui-y="117"></li>
+                                <li data-ui-y="85"></li>
+                                <li data-ui-y="137"></li>
+                                <li data-ui-y="144"></li>
+                                <li data-ui-y="59"></li>
+                                <li data-ui-y="112"></li>
+                                <li data-ui-y="140"></li>
+                                <li data-ui-y="28"></li>
+                                <li data-ui-y="0"></li>
+                                <li data-ui-y="28"></li>
+                                <li data-ui-y="32"></li>
+                                <li data-ui-y="52"></li>
                             </ul>
                         </div>
                     </div>
@@ -336,7 +336,7 @@
                             <strong>HTML</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-percent="25" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="25" />
                             </svg>
                         </div>
                     </div>
@@ -345,7 +345,7 @@
                             <strong>CSS</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(97, 70%, 70%)" data-percent="50" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(97, 70%, 70%)" data-ui-percent="50" />
                             </svg>
                         </div>
                     </div>
@@ -354,7 +354,7 @@
                             <strong>JS</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-percent="75" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-ui-percent="75" />
                             </svg>
                         </div>
                     </div>
@@ -363,7 +363,7 @@
                             <strong>PHP</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-percent="90" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-ui-percent="90" />
                             </svg>
                         </div>
                     </div>
@@ -375,8 +375,8 @@
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-percent="15" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-percent="85" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="15" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-ui-percent="85" />
                             </svg>
                         </div>
                     </div>
@@ -385,9 +385,9 @@
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-percent="10" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-percent="60" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-percent="30" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="10" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-ui-percent="60" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-ui-percent="30" />
                             </svg>
                         </div>
                     </div>
@@ -396,10 +396,10 @@
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-percent="10" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-percent="20" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-percent="30" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(97, 70%, 70%)" data-percent="40" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="10" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-ui-percent="20" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-ui-percent="30" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(97, 70%, 70%)" data-ui-percent="40" />
                             </svg>
                         </div>
                     </div>
@@ -408,11 +408,11 @@
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-percent="20" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-percent="20" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-percent="20" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(97, 70%, 70%)" data-percent="20" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(186, 70%, 68%)" data-percent="20" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="20" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-ui-percent="20" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-ui-percent="20" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(97, 70%, 70%)" data-ui-percent="20" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(186, 70%, 68%)" data-ui-percent="20" />
                             </svg>
                         </div>
                     </div>
@@ -428,7 +428,7 @@
                             <strong>HTML</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-percent="25" data-title="25% HTML" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="25" data-ui-title="25% HTML" />
                             </svg>
                         </div>
                     </div>
@@ -437,7 +437,7 @@
                             <strong>CSS</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(97, 70%, 70%)" data-percent="50" data-title="50% CSS" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(97, 70%, 70%)" data-ui-percent="50" data-ui-title="50% CSS" />
                             </svg>
                         </div>
                     </div>
@@ -446,8 +446,8 @@
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-percent="15" data-title="15% HTML" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-percent="85" data-title="85% PHP" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="15" data-ui-title="15% HTML" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-ui-percent="85" data-ui-title="85% PHP" />
                             </svg>
                         </div>
                     </div>
@@ -456,9 +456,9 @@
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-percent="10" data-title="10% HTML" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-percent="60" data-title="60% PHP" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-percent="30" data-title="30% JS" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="10" data-ui-title="10% HTML" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-ui-percent="60" data-ui-title="60% PHP" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-ui-percent="30" data-ui-title="30% JS" />
                             </svg>
                         </div>
                     </div>
@@ -470,7 +470,7 @@
                             <strong>HTML</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-percent="25" data-title="25% HTML" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="25" data-ui-title="25% HTML" />
                             </svg>
                         </div>
                     </div>
@@ -479,7 +479,7 @@
                             <strong>CSS</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(97, 70%, 70%)" data-percent="50" data-title="50% CSS" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(97, 70%, 70%)" data-ui-percent="50" data-ui-title="50% CSS" />
                             </svg>
                         </div>
                     </div>
@@ -488,8 +488,8 @@
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-percent="15" data-title="15% HTML" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-percent="85" data-title="85% PHP" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="15" data-ui-title="15% HTML" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-ui-percent="85" data-ui-title="85% PHP" />
                             </svg>
                         </div>
                     </div>
@@ -498,9 +498,9 @@
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-percent="10" data-title="10% HTML" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-percent="60" data-title="60% PHP" />
-                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-percent="30" data-title="30% JS" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="10" data-ui-title="10% HTML" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-ui-percent="60" data-ui-title="60% PHP" />
+                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-ui-percent="30" data-ui-title="30% JS" />
                             </svg>
                         </div>
                     </div>

@@ -96,24 +96,24 @@
                         </div>
 
                         <div class="card-side padding-15 padding-5-b">
-                            <div class="line-charts margin-15-b ease-line-charts" data-size="5,15" data-x="1,2,3,4,5,6,7">
-                                <ul class="line" data-name="1st" data-type="curved dotted">
-                                    <li data-y="159"></li>
-                                    <li data-y="120"></li>
-                                    <li data-y="20"></li>
-                                    <li data-y="118"></li>
-                                    <li data-y="37"></li>
-                                    <li data-y="0"></li>
-                                    <li data-y="76"></li>
+                            <div class="line-charts margin-15-b ease-line-charts" data-ui-size="5,15" data-ui-x="1,2,3,4,5,6,7">
+                                <ul class="line" data-ui-name="1st" data-ui-type="curved dotted">
+                                    <li data-ui-y="159"></li>
+                                    <li data-ui-y="120"></li>
+                                    <li data-ui-y="20"></li>
+                                    <li data-ui-y="118"></li>
+                                    <li data-ui-y="37"></li>
+                                    <li data-ui-y="0"></li>
+                                    <li data-ui-y="76"></li>
                                 </ul>
-                                <ul class="line" data-name="2nd" data-type="curved filled">
-                                    <li data-y="55"></li>
-                                    <li data-y="70"></li>
-                                    <li data-y="92"></li>
-                                    <li data-y="48"></li>
-                                    <li data-y="166"></li>
-                                    <li data-y="98"></li>
-                                    <li data-y="116"></li>
+                                <ul class="line" data-ui-name="2nd" data-ui-type="curved filled">
+                                    <li data-ui-y="55"></li>
+                                    <li data-ui-y="70"></li>
+                                    <li data-ui-y="92"></li>
+                                    <li data-ui-y="48"></li>
+                                    <li data-ui-y="166"></li>
+                                    <li data-ui-y="98"></li>
+                                    <li data-ui-y="116"></li>
                                 </ul>
                             </div>
                         </div>
@@ -129,7 +129,7 @@
                                         <strong>SS</strong>
                                         <svg viewBox="0 0 160 160">
                                             <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                            <circle r="69.85699" cy="80" cx="80" stroke="hsl(214, 100%, 50%)" data-percent="17" data-title="17%" />
+                                            <circle r="69.85699" cy="80" cx="80" stroke="hsl(214, 100%, 50%)" data-ui-percent="17" data-ui-title="17%" />
                                         </svg>
                                     </div>
                                 </div>
@@ -138,7 +138,7 @@
                                         <strong>SU</strong>
                                         <svg viewBox="0 0 160 160">
                                             <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                            <circle r="69.85699" cy="80" cx="80" stroke="hsl(214, 100%, 50%)" data-percent="13" data-title="13%" />
+                                            <circle r="69.85699" cy="80" cx="80" stroke="hsl(214, 100%, 50%)" data-ui-percent="13" data-ui-title="13%" />
                                         </svg>
                                     </div>
                                 </div>
@@ -147,7 +147,7 @@
                                         <strong>SD</strong>
                                         <svg viewBox="0 0 160 160">
                                             <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                            <circle r="69.85699" cy="80" cx="80" stroke="hsl(349, 100%, 53%)" data-percent="70" data-title="70%" />
+                                            <circle r="69.85699" cy="80" cx="80" stroke="hsl(349, 100%, 53%)" data-ui-percent="70" data-ui-title="70%" />
                                         </svg>
                                     </div>
                                 </div>
@@ -159,7 +159,7 @@
                         </div>
 
                         <div class="card-side padding-15">
-                            <div class="carousel" data-col="1">
+                            <div class="carousel" data-ui-col="1">
                                 <div class="carousel-slider ease-2nd-layout ease-layout ease-in-out">
 
                                     <div class="slide-content list-group no-border padding-1-h">
@@ -291,12 +291,12 @@
 
                                 <div class="row row-gap-xs no-fluid block-2nd ease-2nd-btn">
                                     <div class="col-5">
-                                        <button class="btn align-l circle-l ui-bg-light-100" data-sort="1">
+                                        <button class="btn align-l circle-l ui-bg-light-100" data-ui-sort="1">
                                             <svg class="icon"><use href="#sort"/></svg> Report
                                         </button>
                                     </div>
                                     <div class="col-7">
-                                        <button class="btn align-l circle-r ui-bg-light-100" data-sort="2">
+                                        <button class="btn align-l circle-r ui-bg-light-100" data-ui-sort="2">
                                             <svg class="icon"><use href="#sort"/></svg> Customer
                                         </button>
                                     </div>
@@ -306,7 +306,7 @@
 
                                 <div class="data-container scroll-v">
 
-                                    <div class="data-content no-border" data-val="REP-701-2019|John Doe">
+                                    <div class="data-content no-border" data-ui-val="REP-701-2019|John Doe">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -331,7 +331,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="data-content no-border" data-val="REP-616-2017|Mike Taylor">
+                                    <div class="data-content no-border" data-ui-val="REP-616-2017|Mike Taylor">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -356,7 +356,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="data-content no-border" data-val="REP-103-2018|Mary Doe">
+                                    <div class="data-content no-border" data-ui-val="REP-103-2018|Mary Doe">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -381,7 +381,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="data-content no-border" data-val="REP-701-2019|John Doe">
+                                    <div class="data-content no-border" data-ui-val="REP-701-2019|John Doe">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -406,7 +406,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="data-content no-border" data-val="REP-616-2017|Mike Taylor">
+                                    <div class="data-content no-border" data-ui-val="REP-616-2017|Mike Taylor">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -431,7 +431,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="data-content no-border" data-val="REP-103-2018|Mary Doe">
+                                    <div class="data-content no-border" data-ui-val="REP-103-2018|Mary Doe">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -456,7 +456,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="data-content no-border" data-val="REP-701-2019|John Doe">
+                                    <div class="data-content no-border" data-ui-val="REP-701-2019|John Doe">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -481,7 +481,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="data-content no-border" data-val="REP-616-2017|Mike Taylor">
+                                    <div class="data-content no-border" data-ui-val="REP-616-2017|Mike Taylor">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -506,7 +506,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="data-content no-border" data-val="REP-103-2018|Mary Doe">
+                                    <div class="data-content no-border" data-ui-val="REP-103-2018|Mary Doe">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -531,7 +531,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="data-content no-border" data-val="REP-701-2019|John Doe">
+                                    <div class="data-content no-border" data-ui-val="REP-701-2019|John Doe">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -556,7 +556,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="data-content no-border" data-val="REP-616-2017|Mike Taylor">
+                                    <div class="data-content no-border" data-ui-val="REP-616-2017|Mike Taylor">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -581,7 +581,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="data-content no-border" data-val="REP-103-2018|Mary Doe">
+                                    <div class="data-content no-border" data-ui-val="REP-103-2018|Mary Doe">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">

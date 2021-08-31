@@ -74,10 +74,10 @@ ui.dataList = {
         re = new RegExp('\\s+\\s');
         rex = new RegExp('\\s+$');
 
-        defaultClass = paging[0].getAttribute('data-default');
+        defaultClass = paging[0].getAttribute('data-ui-default');
         if (defaultClass === null) { defaultClass = ''; }
 
-        activeClass = paging[0].getAttribute('data-active');
+        activeClass = paging[0].getAttribute('data-ui-active');
         if (activeClass === null) { activeClass = ''; }
 
         if (showCount[id] === undefined || showCount[id] === 0) {
@@ -249,7 +249,7 @@ ui.dataList = {
         var that, id;
 
         that = ui.closest(this, '.data-list')[0];
-        id = that.getAttribute('data-id');
+        id = that.getAttribute('data-ui-id');
 
         if (ui.hasClass(this, 'next')) {
             pagingCount[id] += 1;
@@ -271,7 +271,7 @@ ui.dataList = {
         var that, id;
 
         that = ui.closest(this, '.data-list')[0];
-        id = that.getAttribute('data-id');
+        id = that.getAttribute('data-ui-id');
 
         if (isNaN(Number(this.value))) {
 
@@ -297,15 +297,15 @@ ui.dataList = {
     });
 
     // data-sort
-    ui.on(document, 'mousedown', '.data-list [data-sort]', function () {
+    ui.on(document, 'mousedown', '.data-list [data-ui-sort]', function () {
 
         var that, id, buttons, isAsc, dataContainer, list, sortIndex, sortType, arr, arrSorted;
 
         that = ui.closest(this, '.data-list')[0];
-        id = that.getAttribute('data-id');
+        id = that.getAttribute('data-ui-id');
 
         // modify buttons
-        buttons = ui.find('[data-sort]', that);
+        buttons = ui.find('[data-ui-sort]', that);
 
         ui.removeClass(buttons, 'active');
         ui.addClass(this, 'active');
@@ -348,20 +348,20 @@ ui.dataList = {
         arr = [];
         arrSorted = [];
 
-        sortIndex = this.getAttribute('data-sort');
+        sortIndex = this.getAttribute('data-ui-sort');
 
         if (sortIndex === null || sortIndex === '' || sortIndex === '0') {
             sortIndex = 0;
 
         } else { sortIndex = Number(sortIndex) - 1; }
 
-        sortType = this.getAttribute('data-type');
+        sortType = this.getAttribute('data-ui-type');
         if (sortType === null) { sortType = ''; }
 
         list = ui.find('.data-content', temp);
         ui.each(list, function () {
 
-            var val = this.getAttribute('data-val');
+            var val = this.getAttribute('data-ui-val');
             if (val !== null && val !== '') {
 
                 val = val.split(ui.dataList.valueSplit)[sortIndex];
@@ -424,7 +424,7 @@ ui.dataList = {
 
         var id, filters, val, vals, index, sortType, sortIndex, indexes, list, dataContainer, j, contentVal, contentArr, activeFilters, passed, checkAll;
 
-        id = that.getAttribute('data-id');
+        id = that.getAttribute('data-ui-id');
 
         vals = [];
         indexes = [];
@@ -469,7 +469,7 @@ ui.dataList = {
 
                 val = val.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
 
-                sortType = this.getAttribute('data-type');
+                sortType = this.getAttribute('data-ui-type');
                 if (sortType === null) { sortType = ''; }
 
                 if (sortType === 'number') {
@@ -481,7 +481,7 @@ ui.dataList = {
 
             }
 
-            sortIndex = this.getAttribute('data-index');
+            sortIndex = this.getAttribute('data-ui-index');
             if (sortIndex !== null) {
 
                 if (sortIndex === '' || sortIndex === '0') {
@@ -542,7 +542,7 @@ ui.dataList = {
 
                     passed = [];
 
-                    contentVal = this.getAttribute('data-val');
+                    contentVal = this.getAttribute('data-ui-val');
                     if (contentVal !== null && contentVal !== '') {
 
                         contentVal = customLowerCase(contentVal);
@@ -721,7 +721,7 @@ ui.dataList = {
             startListID += 1;
             id = 'dataList-' + startListID;
 
-            this.setAttribute('data-id', id);
+            this.setAttribute('data-ui-id', id);
 
             // check stored variables
             if (testStorage && sessionStorage !== undefined) {
@@ -800,7 +800,7 @@ ui.dataList = {
 
                     ui.each(dataLists, function () {
 
-                        id = this.getAttribute('data-id');
+                        id = this.getAttribute('data-ui-id');
 
                         sessionStorage.setItem(id + '-vals', '');
                         sessionStorage.setItem(id + '-show', 0);

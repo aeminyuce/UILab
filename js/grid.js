@@ -29,14 +29,14 @@ ui.grid = {};
 
                         if (ui.hasClass(this, 'order-' + classType + '-first') && i !== 0) {
 
-                            this.setAttribute('data-ordered-from', i);
+                            this.setAttribute('data-ui-ordered-from', i);
                             p.insertBefore(this, p.firstChild);
 
                         }
 
                         if (ui.hasClass(this, 'order-' + classType + '-last') && i !== (siblings.length - 1)) {
 
-                            this.setAttribute('data-ordered-from', i);
+                            this.setAttribute('data-ui-ordered-from', i);
                             p.appendChild(this);
 
                         }
@@ -45,21 +45,21 @@ ui.grid = {};
 
                 } else {
 
-                    ui.each('[class*="order-' + classType + '-"][data-ordered-from]', function () {
+                    ui.each('[class*="order-' + classType + '-"][data-ui-ordered-from]', function () {
 
-                        o = parseInt(this.getAttribute('data-ordered-from'), 10);
+                        o = parseInt(this.getAttribute('data-ui-ordered-from'), 10);
 
                         p = this.parentElement;
                         siblings = p.children;
 
                         if (ui.hasClass(this, 'order-' + classType + '-first')) {
 
-                            this.removeAttribute('data-ordered-from');
+                            this.removeAttribute('data-ui-ordered-from');
                             p.insertBefore(this, siblings[o + 1]);
 
                         } else {
 
-                            this.removeAttribute('data-ordered-from');
+                            this.removeAttribute('data-ui-ordered-from');
                             p.insertBefore(this, siblings[o]);
 
                         }

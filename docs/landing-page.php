@@ -222,7 +222,7 @@
 
     <!-- highlight links: start -->
     <div class="highlight-links fixed align-c form-lg theme-farmer2 set-relative">
-        <div class="carousel" data-col="4" data-col-md="2" data-col-sm="2" data-col-xs="1" data-slide="4000">
+        <div class="carousel" data-ui-col="4" data-ui-col-md="2" data-ui-col-sm="2" data-ui-col-xs="1" data-ui-slide="4000">
             <div class="carousel-slider icons-xxl hover-shadow-2nd hover-scale-2nd ease-layout ease-slow-2x ease-in-out">
 
                 <div class="slide-content padding-15">
@@ -752,24 +752,24 @@
                 <div class="col-static">
                     <div class="row">
                         <div class="col-12">
-                            <div class="line-charts ease-line-charts" data-size="10,30" data-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                                <ul class="line" data-name="Last year" data-type="filled">
-                                    <li data-y="30" data-link="#1"></li>
-                                    <li data-y="50" data-link="#2"></li>
-                                    <li data-y="110" data-link="#3"></li>
-                                    <li data-y="140" data-link="#4"></li>
-                                    <li data-y="220" data-link="#5"></li>
-                                    <li data-y="320" data-link="#6"></li>
-                                    <li data-y="360" data-link="#7"></li>
+                            <div class="line-charts ease-line-charts" data-ui-size="10,30" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                                <ul class="line" data-ui-name="Last year" data-ui-type="filled">
+                                    <li data-ui-y="30" data-ui-link="#1"></li>
+                                    <li data-ui-y="50" data-ui-link="#2"></li>
+                                    <li data-ui-y="110" data-ui-link="#3"></li>
+                                    <li data-ui-y="140" data-ui-link="#4"></li>
+                                    <li data-ui-y="220" data-ui-link="#5"></li>
+                                    <li data-ui-y="320" data-ui-link="#6"></li>
+                                    <li data-ui-y="360" data-ui-link="#7"></li>
                                 </ul>
-                                <ul class="line" data-name="This year" data-type="filled">
-                                    <li data-y="120" data-link="#1"></li>
-                                    <li data-y="160" data-link="#2"></li>
-                                    <li data-y="180" data-link="#3"></li>
-                                    <li data-y="220" data-link="#4"></li>
-                                    <li data-y="280" data-link="#5"></li>
-                                    <li data-y="390" data-link="#6"></li>
-                                    <li data-y="430" data-link="#7"></li>
+                                <ul class="line" data-ui-name="This year" data-ui-type="filled">
+                                    <li data-ui-y="120" data-ui-link="#1"></li>
+                                    <li data-ui-y="160" data-ui-link="#2"></li>
+                                    <li data-ui-y="180" data-ui-link="#3"></li>
+                                    <li data-ui-y="220" data-ui-link="#4"></li>
+                                    <li data-ui-y="280" data-ui-link="#5"></li>
+                                    <li data-ui-y="390" data-ui-link="#6"></li>
+                                    <li data-ui-y="430" data-ui-link="#7"></li>
                                 </ul>
                             </div>
                         </div>

@@ -736,7 +736,7 @@
                         <div class="row">
 
                             <div class="col-12 no-padding">
-                                <div class="dashboard-carousel carousel" data-col-xl="4" data-col-lg="2" data-col="2" data-col-md="2" data-col-sm="1" data-col-xs="1">
+                                <div class="dashboard-carousel carousel" data-ui-col-xl="4" data-ui-col-lg="2" data-ui-col="2" data-ui-col-md="2" data-ui-col-sm="1" data-ui-col-xs="1">
                                     <div class="carousel-slider icons-margin-5-r ease-layout ease-slow ease-in-out">
 
                                         <div class="slide-content padding-10-h padding-10-t padding-15-b theme-yellow">
@@ -878,7 +878,7 @@
                                                 </strong>
                                                 <svg viewBox="0 0 160 160">
                                                     <circle r="69.85699" cy="80" cx="80" class="bg" />
-                                                    <circle r="69.85699" cy="80" cx="80" stroke="hsl(186, 70%, 68%)" data-percent="69" />
+                                                    <circle r="69.85699" cy="80" cx="80" stroke="hsl(186, 70%, 68%)" data-ui-percent="69" />
                                                 </svg>
                                             </div>
                                         </div>
@@ -914,7 +914,7 @@
                                                         <span class="donut-chart col-42 right ease-donut-chart">
                                                             <strong class="color-black-muted x-small">88%</strong>
                                                             <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="88" />
+                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="88" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">AAC-2019-013:AGF</b>
@@ -924,7 +924,7 @@
                                                         <span class="donut-chart col-42 right ease-donut-chart">
                                                             <strong class="color-black-muted x-small">76%</strong>
                                                             <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="76" />
+                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="76" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">BDA-2019-642</b>
@@ -934,7 +934,7 @@
                                                         <span class="donut-chart col-42 right ease-donut-chart">
                                                             <strong class="color-black-muted x-small">69%</strong>
                                                             <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="69" />
+                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="69" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">DDG-2019-505:AG</b>
@@ -944,7 +944,7 @@
                                                         <span class="donut-chart col-42 right ease-donut-chart">
                                                             <strong class="color-black-muted x-small">52%</strong>
                                                             <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="52" />
+                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="52" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">OOC-2019-781:F</b>
@@ -954,7 +954,7 @@
                                                         <span class="donut-chart col-42 right ease-donut-chart">
                                                             <strong class="color-black-muted x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="36" />
+                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">BDD-2019-047:G</b>
@@ -964,7 +964,7 @@
                                                         <span class="donut-chart col-42 right ease-donut-chart">
                                                             <strong class="color-black-muted x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="36" />
+                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">RAC-2019-973</b>
@@ -980,7 +980,7 @@
                                                         <span class="donut-chart col-42 right ease-donut-chart">
                                                             <strong class="color-black-muted x-small">88%</strong>
                                                             <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="88" />
+                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="88" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">AAC-2019-013:AGF</b>
@@ -990,7 +990,7 @@
                                                         <span class="donut-chart col-42 right ease-donut-chart">
                                                             <strong class="color-black-muted x-small">76%</strong>
                                                             <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="76" />
+                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="76" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">BDA-2019-642</b>
@@ -1000,7 +1000,7 @@
                                                         <span class="donut-chart col-42 right ease-donut-chart">
                                                             <strong class="color-black-muted x-small">69%</strong>
                                                             <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="69" />
+                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="69" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">DDG-2019-505:AG</b>
@@ -1010,7 +1010,7 @@
                                                         <span class="donut-chart col-42 right ease-donut-chart">
                                                             <strong class="color-black-muted x-small">52%</strong>
                                                             <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="52" />
+                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="52" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">OOC-2019-781:F</b>
@@ -1020,7 +1020,7 @@
                                                         <span class="donut-chart col-42 right ease-donut-chart">
                                                             <strong class="color-black-muted x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="36" />
+                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">BDD-2019-047:G</b>
@@ -1030,7 +1030,7 @@
                                                         <span class="donut-chart col-42 right ease-donut-chart">
                                                             <strong class="color-black-muted x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
-                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-percent="36" />
+                                                                <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">RAC-2019-973</b>
@@ -1069,42 +1069,42 @@
                                         </div>
                                         <h4 class="align-l margin-5-t">Statistics</h4>
                                         <div class="tab-content open open-ease">
-                                            <div class="line-charts ease-line-charts" data-size="5,48" data-x="Sep,Oct,Nov,Dec,Jan,Fab">
-                                                <ul class="line" data-name="Sales" data-type="curved filled">
-                                                    <li data-y="10" data-link="#"></li>
-                                                    <li data-y="30" data-link="#"></li>
-                                                    <li data-y="70" data-link="#"></li>
-                                                    <li data-y="120" data-link="#"></li>
-                                                    <li data-y="100" data-link="#"></li>
-                                                    <li data-y="150" data-link="#"></li>
+                                            <div class="line-charts ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
+                                                <ul class="line" data-ui-name="Sales" data-ui-type="curved filled">
+                                                    <li data-ui-y="10" data-ui-link="#"></li>
+                                                    <li data-ui-y="30" data-ui-link="#"></li>
+                                                    <li data-ui-y="70" data-ui-link="#"></li>
+                                                    <li data-ui-y="120" data-ui-link="#"></li>
+                                                    <li data-ui-y="100" data-ui-link="#"></li>
+                                                    <li data-ui-y="150" data-ui-link="#"></li>
                                                 </ul>
-                                                <ul class="line" data-name="Orders" data-type="dashed">
-                                                    <li data-y="50" data-link="#"></li>
-                                                    <li data-y="10" data-link="#"></li>
-                                                    <li data-y="50" data-link="#"></li>
-                                                    <li data-y="40" data-link="#"></li>
-                                                    <li data-y="80" data-link="#"></li>
-                                                    <li data-y="50" data-link="#"></li>
+                                                <ul class="line" data-ui-name="Orders" data-ui-type="dashed">
+                                                    <li data-ui-y="50" data-ui-link="#"></li>
+                                                    <li data-ui-y="10" data-ui-link="#"></li>
+                                                    <li data-ui-y="50" data-ui-link="#"></li>
+                                                    <li data-ui-y="40" data-ui-link="#"></li>
+                                                    <li data-ui-y="80" data-ui-link="#"></li>
+                                                    <li data-ui-y="50" data-ui-link="#"></li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="tab-content">
-                                            <div class="line-charts ease-line-charts" data-size="5,48" data-x="Sep,Oct,Nov,Dec,Jan,Fab">
-                                                <ul class="line" data-name="Sales" data-type="curved filled">
-                                                    <li data-y="10" data-link="#"></li>
-                                                    <li data-y="60" data-link="#"></li>
-                                                    <li data-y="20" data-link="#"></li>
-                                                    <li data-y="120" data-link="#"></li>
-                                                    <li data-y="10" data-link="#"></li>
-                                                    <li data-y="100" data-link="#"></li>
+                                            <div class="line-charts ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
+                                                <ul class="line" data-ui-name="Sales" data-ui-type="curved filled">
+                                                    <li data-ui-y="10" data-ui-link="#"></li>
+                                                    <li data-ui-y="60" data-ui-link="#"></li>
+                                                    <li data-ui-y="20" data-ui-link="#"></li>
+                                                    <li data-ui-y="120" data-ui-link="#"></li>
+                                                    <li data-ui-y="10" data-ui-link="#"></li>
+                                                    <li data-ui-y="100" data-ui-link="#"></li>
                                                 </ul>
-                                                <ul class="line" data-name="Orders" data-type="dashed">
-                                                    <li data-y="0" data-link="#"></li>
-                                                    <li data-y="20" data-link="#"></li>
-                                                    <li data-y="50" data-link="#"></li>
-                                                    <li data-y="40" data-link="#"></li>
-                                                    <li data-y="70" data-link="#"></li>
-                                                    <li data-y="50" data-link="#"></li>
+                                                <ul class="line" data-ui-name="Orders" data-ui-type="dashed">
+                                                    <li data-ui-y="0" data-ui-link="#"></li>
+                                                    <li data-ui-y="20" data-ui-link="#"></li>
+                                                    <li data-ui-y="50" data-ui-link="#"></li>
+                                                    <li data-ui-y="40" data-ui-link="#"></li>
+                                                    <li data-ui-y="70" data-ui-link="#"></li>
+                                                    <li data-ui-y="50" data-ui-link="#"></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1230,7 +1230,7 @@
                                             <div class="col-lg-3 col-6 no-fluid">
                                                 <div class="select round no-border ui-bg-light-100 ease-form">
                                                     <svg class="icon"><use href="#angle-down"/></svg>
-                                                    <select class="data-filter" data-index="2">
+                                                    <select class="data-filter" data-ui-index="2">
                                                         <option value="">Filter</option>
                                                         <option>Starting</option>
                                                         <option>Waiting</option>
@@ -1251,13 +1251,13 @@
                                                     </button>
                                                     <ul class="content round shadow-lg">
                                                         <li>
-                                                            <label class="radio" data-sort="1">
+                                                            <label class="radio" data-ui-sort="1">
                                                                 <svg class="icon"><use href="#sort"/></svg>
                                                                 <input type="radio" name="s">By Name
                                                             </label>
                                                         </li>
                                                         <li>
-                                                            <label class="radio" data-sort="2">
+                                                            <label class="radio" data-ui-sort="2">
                                                                 <svg class="icon"><use href="#sort"/></svg>
                                                                 <input type="radio" name="s">By Step
                                                             </label>
@@ -1274,7 +1274,7 @@
 
                                         <div class="data-container">
 
-                                            <div class="data-content no-border round" data-val="John Atkinson|Paused">
+                                            <div class="data-content no-border round" data-ui-val="John Atkinson|Paused">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
@@ -1306,7 +1306,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="data-content no-border round" data-val="Mary Doe|Waiting">
+                                            <div class="data-content no-border round" data-ui-val="Mary Doe|Waiting">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -1338,7 +1338,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="data-content no-border round" data-val="Mike Taylor|Completed">
+                                            <div class="data-content no-border round" data-ui-val="Mike Taylor|Completed">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
@@ -1370,7 +1370,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="data-content no-border round" data-val="Tony Starky|Paused">
+                                            <div class="data-content no-border round" data-ui-val="Tony Starky|Paused">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
@@ -1403,7 +1403,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="data-content no-border round" data-val="John Atkinson|Paused">
+                                            <div class="data-content no-border round" data-ui-val="John Atkinson|Paused">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
@@ -1435,7 +1435,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="data-content no-border round" data-val="Mary Doe|Waiting">
+                                            <div class="data-content no-border round" data-ui-val="Mary Doe|Waiting">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -1467,7 +1467,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="data-content no-border round" data-val="Mike Taylor|Completed">
+                                            <div class="data-content no-border round" data-ui-val="Mike Taylor|Completed">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
@@ -1499,7 +1499,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="data-content no-border round" data-val="Tony Starky|Paused">
+                                            <div class="data-content no-border round" data-ui-val="Tony Starky|Paused">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
@@ -1531,7 +1531,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="data-content no-border round" data-val="John Atkinson|Paused">
+                                            <div class="data-content no-border round" data-ui-val="John Atkinson|Paused">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
@@ -1563,7 +1563,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="data-content no-border round" data-val="Mary Doe|Waiting">
+                                            <div class="data-content no-border round" data-ui-val="Mary Doe|Waiting">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -1595,7 +1595,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="data-content no-border round" data-val="Mike Taylor|Completed">
+                                            <div class="data-content no-border round" data-ui-val="Mike Taylor|Completed">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
@@ -1627,7 +1627,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="data-content no-border round" data-val="Tony Starky|Paused">
+                                            <div class="data-content no-border round" data-ui-val="Tony Starky|Paused">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
@@ -1659,7 +1659,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="data-content no-border round" data-val="John Atkinson|Paused">
+                                            <div class="data-content no-border round" data-ui-val="John Atkinson|Paused">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
@@ -1691,7 +1691,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="data-content no-border round" data-val="Mary Doe|Waiting">
+                                            <div class="data-content no-border round" data-ui-val="Mary Doe|Waiting">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -1723,7 +1723,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="data-content no-border round" data-val="Mike Taylor|Completed">
+                                            <div class="data-content no-border round" data-ui-val="Mike Taylor|Completed">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
@@ -1755,7 +1755,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="data-content no-border round" data-val="Tony Starky|Paused">
+                                            <div class="data-content no-border round" data-ui-val="Tony Starky|Paused">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
@@ -1799,7 +1799,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-8 align-r">
-                                                <div class="data-paging pagination ease-1st-btn" data-default="btn round"></div>
+                                                <div class="data-paging pagination ease-1st-btn" data-ui-default="btn round" data-ui-active="theme-panel2 ui-bg-dark-100"></div>
                                             </div>
                                         </div>
 

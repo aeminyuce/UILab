@@ -136,7 +136,7 @@ ui.photoGallery = {
                     loadedImages.push(href);
 
                 } else {
-                    loadedImages.push(this.getAttribute('data-href'));
+                    loadedImages.push(this.getAttribute('data-ui-href'));
                 }
 
                 if (ui.hasClass(this, 'has-info')) {
@@ -646,8 +646,8 @@ ui.photoGallery = {
 
             var target, count;
 
-            target = this.getAttribute('data-target');
-            count = this.getAttribute('data-count');
+            target = this.getAttribute('data-ui-target');
+            count = this.getAttribute('data-ui-count');
 
             if (target === null) { return; }
 

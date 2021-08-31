@@ -30,7 +30,7 @@
                             <li>23<svg class="icon"><use href="#moon"/></svg><span>31</span></li>
                             <li>24<svg class="icon"><use href="#cloud-moon"/></svg><span>29</span></li>
                         </ul>
-                        <div class="carousel card round shadow-lg" data-col="1">
+                        <div class="carousel card round shadow-lg" data-ui-col="1">
                             <div class="carousel-slider icons-lg ease-layout ease-slow ease-in-out">
 
                                 <div class="slide-content padding-30 no-padding-b">
@@ -162,7 +162,7 @@
                             <li>07<svg class="icon"><use href="#sun"/></svg><span>31</span></li>
                             <li>08<svg class="icon"><use href="#cloud-sun"/></svg><span>29</span></li>
                         </ul>
-                        <div class="carousel card round shadow-lg" data-col="1">
+                        <div class="carousel card round shadow-lg" data-ui-col="1">
                             <div class="carousel-slider icons-lg ease-layout ease-slow ease-in-out">
 
                                 <div class="slide-content padding-30 no-padding-b">

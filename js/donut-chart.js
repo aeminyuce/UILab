@@ -36,7 +36,7 @@ ui.donutChart = {};
 
                         var that = this;
 
-                        percent = that.getAttribute('data-percent');
+                        percent = that.getAttributeui-percent');
                         arrPercent.push(percent);
 
                         dasharray = Math.round(percent * 4.4);
@@ -71,7 +71,7 @@ ui.donutChart = {};
         loadCharts();
 
         // Event Listeners
-        ui.on(document, 'mouseenter mouseleave touchend', '.donut-chart circle[data-title]', function (e) {
+        ui.on(document, 'mouseenter mouseleave touchend', '.donut-chart circle[data-ui-title]', function (e) {
 
             var that, circle, chart, msg, msgTitle, title;
 
@@ -86,7 +86,7 @@ ui.donutChart = {};
             }, 0);
 
             if (e.type === 'mouseleave') {
-                msg.innerHTML = msg.getAttribute('data-msg');
+                msg.innerHTML = msg.getAttributeui-msg');
 
             } else {
 
@@ -98,13 +98,13 @@ ui.donutChart = {};
 
                 }
 
-                msgTitle = msg.getAttribute('data-msg');
+                msgTitle = msg.getAttributeui-msg');
 
                 if (msgTitle === null) {
-                    msg.setAttribute('data-msg', msg.innerHTML);
+                    msg.setAttributeui-msg', msg.innerHTML);
                 }
 
-                title = that.getAttribute('data-title');
+                title = that.getAttributeui-title');
                 setTimeout(function () {
 
                     if (title !== null && title !== '') {

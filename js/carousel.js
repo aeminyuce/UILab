@@ -64,7 +64,7 @@ ui.carousel = {
 
         var time, elems, i;
 
-        time = content.getAttribute('data-animate');
+        time = content.getAttribute('data-ui-animate');
         if (time !== null) {
 
             if (time === '') { time = ui.globals.ease; }
@@ -169,7 +169,7 @@ ui.carousel = {
             counts[i] = col;
         }
 
-        that.setAttribute('data-content', (counts[i] + 1));
+        that.setAttribute('data-ui-content', (counts[i] + 1));
         slider[0].style.transform = 'translateX(-' + (counts[i] * contents[0].offsetWidth) + 'px)';
 
         navDots = ui.find('.carousel-nav .dots', that);
@@ -302,7 +302,7 @@ ui.carousel = {
 
                 }
 
-                that.setAttribute('data-content', (counts[i] + 1));
+                that.setAttribute('data-ui-content', (counts[i] + 1));
 
                 ui.removeClass(navDotsEl, 'selected');
                 ui.addClass(navDotsEl[counts[i]], 'selected');
@@ -336,15 +336,15 @@ ui.carousel = {
                 var k, that, contents, col, nav, navDots, navDotsHtml, navDotsEl;
 
                 that = this;
-                cols[j] = that.getAttribute('data-col');
+                cols[j] = that.getAttribute('data-ui-col');
 
-                colsXL[j] = that.getAttribute('data-col-xl');
-                colsLG[j] = that.getAttribute('data-col-lg');
-                colsMD[j] = that.getAttribute('data-col-md');
-                colsSM[j] = that.getAttribute('data-col-sm');
-                colsXS[j] = that.getAttribute('data-col-xs');
+                colsXL[j] = that.getAttribute('data-ui-col-xl');
+                colsLG[j] = that.getAttribute('data-ui-col-lg');
+                colsMD[j] = that.getAttribute('data-ui-col-md');
+                colsSM[j] = that.getAttribute('data-ui-col-sm');
+                colsXS[j] = that.getAttribute('data-ui-col-xs');
 
-                // data-col
+                // data-ui-col
                 if (cols[j] === null) {
                     cols[j] = 1;
 
@@ -357,7 +357,7 @@ ui.carousel = {
 
                 }
 
-                // data-col-xl
+                // data-ui-col-xl
                 if (colsXL[j] === null) {
                     colsXL[j] = cols[j];
 
@@ -370,7 +370,7 @@ ui.carousel = {
 
                 }
 
-                // data-col-lg
+                // data-ui-col-lg
                 if (colsLG[j] === null) {
                     colsLG[j] = cols[j];
 
@@ -383,7 +383,7 @@ ui.carousel = {
 
                 }
 
-                // data-col-md
+                // data-ui-col-md
                 if (colsMD[j] === null) {
                     colsMD[j] = cols[j];
 
@@ -396,7 +396,7 @@ ui.carousel = {
 
                 }
 
-                // data-col-sm
+                // data-ui-col-sm
                 if (colsSM[j] === null) {
                     colsSM[j] = cols[j];
 
@@ -409,7 +409,7 @@ ui.carousel = {
 
                 }
 
-                // data-col-xs
+                // data-ui-col-xs
                 if (colsXS[j] === null) {
                     colsXS[j] = cols[j];
 
@@ -454,7 +454,7 @@ ui.carousel = {
                 navDotsEl = ui.find('.dots i', nav);
 
                 counts[j] = 0;
-                that.setAttribute('data-content', (counts[j] + 1));
+                that.setAttribute('data-ui-content', (counts[j] + 1));
 
                 ui.removeClass(navDotsEl, 'selected');
                 ui.addClass(navDotsEl[counts[j]], 'selected');
@@ -462,7 +462,7 @@ ui.carousel = {
                 filterDots(navDots, navDotsEl, counts[j], j); // filter dots when dots number exceeds
 
                 // auto slider
-                autoTimer[j] = that.getAttribute('data-slide');
+                autoTimer[j] = that.getAttribute('data-ui-slide');
                 if (autoTimer[j] !== null) {
 
                     if (autoTimer[j] === '') {
@@ -512,17 +512,17 @@ ui.carousel = {
             };
 
 
-            ui.on(document, 'mouseenter', '.carousel[data-slide]', function () {
+            ui.on(document, 'mouseenter', '.carousel[data-ui-slide]', function () {
                 carouselStop(this);
             });
 
-            ui.on(document, 'mouseleave', '.carousel[data-slide]', function () {
+            ui.on(document, 'mouseleave', '.carousel[data-ui-slide]', function () {
                 carouselStart(this);
             });
 
             ui.on(window, 'visibilitychange', function () {
 
-                var callCarousels = ui.find('.carousel[data-slide]');
+                var callCarousels = ui.find('.carousel[data-ui-slide]');
                 if (document.hidden) { // stop all carousels when browser windows is not active
 
                     ui.each(callCarousels, function () {
@@ -678,7 +678,7 @@ ui.carousel = {
                         }
 
                         slider.style.transform = 'translateX(' + move + 'px)';
-                        that.setAttribute('data-content', (counts[i] + 1));
+                        that.setAttribute('data-ui-content', (counts[i] + 1));
 
                         ui.removeClass(navDotsEl, 'selected');
                         ui.addClass(navDotsEl[counts[i]], 'selected');
@@ -736,12 +736,12 @@ ui.carousel = {
                 thumbs = ui.find('.thumbs .img', parent[0]);
 
                 index = Array.prototype.slice.call(thumbs).indexOf(this);
-                target.setAttribute('data-count', index);
+                target.setAttribute('data-ui-count', index);
 
                 ui.addClass(detail, 'detail-loader');
 
                 newImg = new Image();
-                newImg.src = this.getAttribute('data-href');
+                newImg.src = this.getAttribute('data-ui-href');
 
                 newImg.onload = function () {
 
