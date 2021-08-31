@@ -1,8 +1,8 @@
 /* dashboard */
-[data-theme="light"] {
+[data-ui-theme="light"] {
   --header-bg: hsl(0, 0%, 100%);
 }
-[data-theme="dark"] {
+[data-ui-theme="dark"] {
   --header-bg: hsl(220, 15%, 16%);
 }
 .theme-panel.ui-bg-light-100,

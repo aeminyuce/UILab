@@ -133,7 +133,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="graphs" data-graphs="clear" data-day="05:53,19:59"></div>
+                    <div class="graphs" data-ui-graphs="clear" data-ui-day="05:53,19:59"></div>
                 </div>
 
             </div>
@@ -265,7 +265,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="graphs" data-graphs="cloud" data-day="19:59,05:53"></div>
+                    <div class="graphs" data-ui-graphs="cloud" data-ui-day="19:59,05:53"></div>
                 </div>
 
             </div>

@@ -40,7 +40,7 @@ ui.weather = {
             graphs = ui.find('.weather .graphs:not(.loaded)');
             ui.each(graphs, function () {
 
-                var data = this.getAttribute('data-graphs');
+                var data = this.getAttribute('data-ui-graphs');
                 if (data !== null && data !== '') {
 
                     data = data.replace(re, ' ').replace(rex, '');
@@ -149,10 +149,10 @@ ui.weather = {
                 });
 
                 // check sunrise and sunset
-                graphs = ui.find('.weather .graphs[data-day]');
+                graphs = ui.find('.weather .graphs[data-ui-day]');
                 ui.each(graphs, function () {
 
-                    sunPos = this.getAttribute('data-day');
+                    sunPos = this.getAttribute('data-ui-day');
                     if (sunPos === null || sunPos === '') { return; }
 
                     sunPos = sunPos.split(',');

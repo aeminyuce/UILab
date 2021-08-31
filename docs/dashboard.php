@@ -695,7 +695,7 @@
                                                     <label class="form-grid">Address</label>
                                                 </div>
                                                 <div class="col-5">
-                                                    <div class="textarea round border-dual ease-form" data-counter="1000">
+                                                    <div class="textarea round border-dual ease-form" data-ui-counter="1000">
                                                         <textarea class="required" rows="3"></textarea>
                                                     </div>
                                                     <p class="required-msg">Enter your address details.</p>

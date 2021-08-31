@@ -28,7 +28,7 @@
                             <li>24<svg class="icon"><use href="#cloud-moon"/></svg><span>29</span></li>
                         </ul>
                     </div>
-                    <div class="graphs" data-graphs="clear" data-day="05:53,19:59"></div>
+                    <div class="graphs" data-ui-graphs="clear" data-ui-day="05:53,19:59"></div>
                 </div>
 
             </div>
@@ -57,7 +57,7 @@
                             <li>24<svg class="icon"><use href="#clouds"/></svg><span>10</span></li>
                         </ul>
                     </div>
-                    <div class="graphs" data-graphs="cloud" data-day="05:53,19:59"></div>
+                    <div class="graphs" data-ui-graphs="cloud" data-ui-day="05:53,19:59"></div>
                 </div>
 
             </div>
@@ -86,7 +86,7 @@
                             <li>24<svg class="icon"><use href="#rain-heavy"/></svg><span>1</span></li>
                         </ul>
                     </div>
-                    <div class="graphs" data-graphs="cloud-heavy" data-day="05:53,19:59"></div>
+                    <div class="graphs" data-ui-graphs="cloud-heavy" data-ui-day="05:53,19:59"></div>
                 </div>
 
             </div>
@@ -115,7 +115,7 @@
                             <li>24<svg class="icon"><use href="#clouds"/></svg><span>10</span></li>
                         </ul>
                     </div>
-                    <div class="graphs" data-graphs="fog" data-day="05:53,19:59"></div>
+                    <div class="graphs" data-ui-graphs="fog" data-ui-day="05:53,19:59"></div>
                 </div>
 
             </div>
@@ -144,7 +144,7 @@
                             <li>24<svg class="icon"><use href="#cloud"/></svg><span>31</span></li>
                         </ul>
                     </div>
-                    <div class="graphs" data-graphs="rain cloud" data-day="05:53,19:59"></div>
+                    <div class="graphs" data-ui-graphs="rain cloud" data-ui-day="05:53,19:59"></div>
                 </div>
 
             </div>
@@ -173,7 +173,7 @@
                             <li>24<svg class="icon"><use href="#rain-heavy"/></svg><span>10</span></li>
                         </ul>
                     </div>
-                    <div class="graphs" data-graphs="bolt rain-heavy cloud-heavy" data-day="05:53,19:59"></div>
+                    <div class="graphs" data-ui-graphs="bolt rain-heavy cloud-heavy" data-ui-day="05:53,19:59"></div>
                 </div>
 
             </div>
@@ -202,7 +202,7 @@
                             <li>24<svg class="icon"><use href="#snow"/></svg><span>1</span></li>
                         </ul>
                     </div>
-                    <div class="graphs" data-graphs="snow cloud-heavy" data-day="05:53,19:59"></div>
+                    <div class="graphs" data-ui-graphs="snow cloud-heavy" data-ui-day="05:53,19:59"></div>
                 </div>
 
             </div>
@@ -231,7 +231,7 @@
                             <li>08<svg class="icon"><use href="#cloud-sun"/></svg><span>29</span></li>
                         </ul>
                     </div>
-                    <div class="graphs" data-graphs="clear" data-day="19:59,05:53"></div>
+                    <div class="graphs" data-ui-graphs="clear" data-ui-day="19:59,05:53"></div>
                 </div>
 
             </div>

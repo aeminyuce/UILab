@@ -403,10 +403,10 @@ each(@increases, {
         }
     }
     & when (@dark-mode-auto-switcher = false) {
-        [data-theme="light"] {
+        [data-ui-theme="light"] {
             .hidden-light,.visible-dark { .hidden(); }
         }
-        [data-theme="dark"] {
+        [data-ui-theme="dark"] {
             .visible-light,.hidden-dark { .hidden(); }
         }
     }

@@ -1,9 +1,9 @@
 /* movie app */
-[data-theme="light"] {
+[data-ui-theme="light"] {
   --movie-app-header-bg: hsl(0, 0%, 100%);
   --movie-app-sidebar-bg: linear-gradient(135deg, hsl(227, 72%, 76%), hsl(261, 72%, 73%));
 }
-[data-theme="dark"] {
+[data-ui-theme="dark"] {
   --movie-app-header-bg: hsl(218, 16%, 10%);
   --movie-app-sidebar-bg: linear-gradient(135deg, hsl(227, 32%, 45%), hsl(261, 56%, 15%));
 }

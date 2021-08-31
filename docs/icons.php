@@ -15,22 +15,22 @@
                     <div class="col-4">
                         <h4 class="align-c margin-10-b">Change Weight</h4>
                         <div class="btn-holder form-lg icon-modifiers margin-20-b theme-default2 form-lg ease-1st-btn">
-                            <button data-ui-tooltip="b" data-ui-only="desktop" title="Black" data-weight="black" class="btn round">
+                            <button data-ui-tooltip="b" data-ui-only="desktop" title="Black" data-ui-weight="black" class="btn round">
                                 <svg class="icon icon-black no-opacity"><use href="#remove"/></svg>
                             </button>
-                            <button data-ui-tooltip="b" data-ui-only="desktop" title="Bold" data-weight="bold" class="btn round">
+                            <button data-ui-tooltip="b" data-ui-only="desktop" title="Bold" data-ui-weight="bold" class="btn round">
                                 <svg class="icon icon-bold no-opacity"><use href="#remove"/></svg>
                             </button>
-                            <button data-ui-tooltip="b" data-ui-only="desktop" title="Semibold" data-weight="semibold" class="btn round">
+                            <button data-ui-tooltip="b" data-ui-only="desktop" title="Semibold" data-ui-weight="semibold" class="btn round">
                                 <svg class="icon icon-bold no-opacity"><use href="#remove"/></svg>
                             </button>
-                            <button data-ui-tooltip="b" data-ui-only="desktop" title="Auto Weight" data-weight="" class="btn round ui-bg-dark-100">
+                            <button data-ui-tooltip="b" data-ui-only="desktop" title="Auto Weight" data-ui-weight="" class="btn round ui-bg-dark-100">
                                 Auto
                             </button>
-                            <button data-ui-tooltip="b" data-ui-only="desktop" title="Light" data-weight="light" class="btn round">
+                            <button data-ui-tooltip="b" data-ui-only="desktop" title="Light" data-ui-weight="light" class="btn round">
                                 <svg class="icon icon-light no-opacity"><use href="#remove"/></svg>
                             </button>
-                            <button data-ui-tooltip="b" data-ui-only="desktop" title="Thin" data-weight="thin" class="btn round">
+                            <button data-ui-tooltip="b" data-ui-only="desktop" title="Thin" data-ui-weight="thin" class="btn round">
                                 <svg class="icon icon-thin no-opacity"><use href="#remove"/></svg>
                             </button>
                         </div>
@@ -38,13 +38,13 @@
                     <div class="col-8">
                         <h4 class="align-c margin-10-b">Change Size</h4>
                         <div class="btn-holder form-lg icon-modifiers margin-20-b theme-default2 form-lg ease-1st-btn">
-                            <button data-size="xxl" class="btn round ui-bg-dark-100">XXL</button>
-                            <button data-size="xl" class="btn round">XL</button>
-                            <button data-size="lg" class="btn round">L</button>
-                            <button data-size="" class="btn round">-</button>
-                            <button data-size="sm" class="btn round">SM</button>
-                            <button data-size="xs" class="btn round">XS</button>
-                            <button data-size="xxs" class="btn round">XXS</button>
+                            <button data-ui-size="xxl" class="btn round ui-bg-dark-100">XXL</button>
+                            <button data-ui-size="xl" class="btn round">XL</button>
+                            <button data-ui-size="lg" class="btn round">L</button>
+                            <button data-ui-size="" class="btn round">-</button>
+                            <button data-ui-size="sm" class="btn round">SM</button>
+                            <button data-ui-size="xs" class="btn round">XS</button>
+                            <button data-ui-size="xxs" class="btn round">XXS</button>
                         </div>
                     </div>
                 </div>

@@ -1,9 +1,9 @@
 /* dashboard app */
-[data-theme="light"] {
+[data-ui-theme="light"] {
   --body-bg: hsl(227, 31%, 94%);
   --dashboard-app-bg: hsl(225, 33%, 98%);
 }
-[data-theme="dark"] {
+[data-ui-theme="dark"] {
   --dashboard-app-bg: hsl(222, 13%, 15%);
 }
 .theme-app.ui-bg-light-100,

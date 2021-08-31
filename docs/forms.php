@@ -405,7 +405,7 @@
                     <div class="textarea toggle-textarea margin-10-b round border-dual ease-form">
                         <textarea placeholder="Toggle textarea example"></textarea>
                     </div>
-                    <div class="textarea round border-dual ease-form" data-counter="255">
+                    <div class="textarea round border-dual ease-form" data-ui-counter="255">
                         <textarea rows="4">Textarea with counter.</textarea>
                     </div>
                 </div>
@@ -1692,7 +1692,7 @@
 
                     <span class="sp-10"></span>
 
-                    <div class="textarea round border-dual form-light ease-form" data-counter="255">
+                    <div class="textarea round border-dual form-light ease-form" data-ui-counter="255">
                         <textarea class="required" rows="4" placeholder="Required example with counter textarea" minlength="10"></textarea>
                     </div>
                     <p class="required-msg">Please, write your comments more than 10 characters.</p>

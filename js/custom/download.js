@@ -23,7 +23,7 @@ function pullFiles(that) {
     pullResults = '';
     count = 0;
 
-    type = that.getAttribute('data-type');
+    type = that.getAttribute('data-ui-type');
 
     countFnc = function () {
 

@@ -1,10 +1,10 @@
 /* sign up page */
-[data-theme="light"] {
+[data-ui-theme="light"] {
   --sign-up-holder-bg: linear-gradient(110deg, hsl(263, 37%, 42%), hsl(242, 88%, 17%), hsl(331, 73%, 25%));
   --sign-up-btn-bg: linear-gradient(130deg, hsl(135, 72%, 60%), hsl(135, 62%, 46%));
   --sign-up-why-bg: linear-gradient(130deg, hsl(0, 0%, 100%), hsl(255, 100%, 94%), hsl(0, 0%, 100%));
 }
-[data-theme="dark"] {
+[data-ui-theme="dark"] {
   --sign-up-holder-bg: linear-gradient(110deg, hsl(262, 100%, 72%), hsl(242, 46%, 31%), hsl(331, 60%, 39%));
   --sign-up-btn-bg: linear-gradient(130deg, hsl(135, 62%, 46%), hsl(135, 77%, 31%));
   --sign-up-why-bg: linear-gradient(130deg, hsl(220, 14%, 21%), hsl(256, 19%, 20%), hsl(220, 14%, 21%));

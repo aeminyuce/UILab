@@ -1,12 +1,12 @@
 /* login page */
-[data-theme="light"] {
+[data-ui-theme="light"] {
   --login-page-forms-container-bg: hsl(255, 57%, 97%);
   --login-page-container-bg: hsl(261, 100%, 91%);
   --login-page-holder-bg: linear-gradient(110deg, hsl(263, 37%, 42%), hsl(242, 88%, 17%), hsl(331, 73%, 25%));
   --login-page-login-btn-bg: linear-gradient(130deg, hsl(135, 72%, 60%), hsl(135, 62%, 46%));
   --login-page-signup-btn-bg: linear-gradient(130deg, hsl(261, 37%, 56%), hsl(331, 73%, 25%));
 }
-[data-theme="dark"] {
+[data-ui-theme="dark"] {
   --login-page-forms-container-bg: transparent;
   --login-page-container-bg: hsl(262, 39%, 20%);
   --login-page-holder-bg: linear-gradient(110deg, hsl(262, 100%, 72%), hsl(242, 46%, 31%), hsl(331, 60%, 39%));

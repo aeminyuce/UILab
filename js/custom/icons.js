@@ -23,7 +23,7 @@ ui.onload(function () {
         }, 0);
 
         // change size
-        size = this.getAttribute('data-size');
+        size = this.getAttribute('data-ui-size');
         if (size !== null) {
 
             ui.removeClass(list, 'icons-xxl icons-xl icons-lg icons-sm icons-xs icons-xxs');
@@ -35,7 +35,7 @@ ui.onload(function () {
         }
 
         // change weight
-        weight = this.getAttribute('data-weight');
+        weight = this.getAttribute('data-ui-weight');
         if (weight !== null) {
 
             ui.removeClass(list, 'icons-black icons-bold icons-semibold icons-light icons-thin');

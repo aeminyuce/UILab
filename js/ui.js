@@ -774,7 +774,7 @@ ui.darkMode = {};
             }
         }
 
-        doc.setAttribute('data-theme', mode);
+        doc.setAttribute('data-ui-theme', mode);
 
         // Event Listeners
         function setState(mode) { // set theme state
@@ -788,7 +788,7 @@ ui.darkMode = {};
         ui.on(darkColorScheme, 'change', function () {
 
             if(darkColorScheme.matches) { mode = 'dark'; } else { mode= 'light'; }
-            doc.setAttribute('data-theme', mode);
+            doc.setAttribute('data-ui-theme', mode);
 
             setState(mode);
 
@@ -799,13 +799,13 @@ ui.darkMode = {};
             e.preventDefault();
 
             // toggle theme color
-            var current = doc.getAttribute('data-theme');
+            var current = doc.getAttribute('data-ui-theme');
 
             if (current !== null && current !== '') {
                 if (current === 'dark') { mode = 'light'; } else { mode = 'dark'; }
             }
 
-            doc.setAttribute('data-theme', mode);
+            doc.setAttribute('data-ui-theme', mode);
             setState(mode);
 
         });

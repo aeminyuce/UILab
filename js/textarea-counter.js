@@ -21,20 +21,20 @@ ui.textareaCounter = {};
             p = t.parentElement;
             v = t.value;
 
-            total = p.getAttribute('data-counter');
+            total = p.getAttribute('data-ui-counter');
             length = (total - v.length);
 
             if (length <= 0) {
 
                 length = 0;
 
-                p.setAttribute('data-change', '0');
+                p.setAttribute('data-ui-change', '0');
                 t.value = v.substring(0, total);
 
             }
 
             ui.addClass(p, 'change');
-            p.setAttribute('data-change', length);
+            p.setAttribute('data-ui-change', length);
 
             return false;
 
@@ -42,7 +42,7 @@ ui.textareaCounter = {};
 
         loadCounters = function () {
 
-            ui.each('.textarea[data-counter]:not(.toggle-textarea):not(.change)', function () {
+            ui.each('.textarea[data-ui-counter]:not(.toggle-textarea):not(.change)', function () {
 
                 var textarea = ui.find('textarea', this)[0];
                 counter(textarea);
@@ -53,7 +53,7 @@ ui.textareaCounter = {};
         loadCounters();
 
         // Event Listeners
-        ui.on(document, 'keydown keypress change', '.textarea[data-counter] textarea', function (e) {
+        ui.on(document, 'keydown keypress change', '.textarea[data-ui-counter] textarea', function (e) {
 
             if (e.type === 'keydown' && e.ctrlKey) {
 
@@ -68,7 +68,7 @@ ui.textareaCounter = {};
 
             var i, that;
 
-            that = ui.find('.textarea[data-counter] textarea');
+            that = ui.find('.textarea[data-ui-counter] textarea');
             if (that.length === 0) { return; }
 
             setTimeout(function () {
@@ -88,7 +88,7 @@ ui.textareaCounter = {};
 
     // ajax callback loader
     ui.on(document, 'ui:ajaxCallbacks', function () {
-        if (ui.ajax.text.indexOf('data-counter="') > 0) { loadCounters(); }
+        if (ui.ajax.text.indexOf('data-ui-counter="') > 0) { loadCounters(); }
     });
 
 }());

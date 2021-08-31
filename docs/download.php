@@ -1023,7 +1023,7 @@
 
                             <div class="align-r align-c ease-1st-btn">
                                 <span class="sp-15 visible-xs"></span>
-                                <button name="php" class="generate-btn btn btn-xs-fluid round ui-bg-dark-100" data-type="icons">Generate Icons</button>
+                                <button name="php" class="generate-btn btn btn-xs-fluid round ui-bg-dark-100" data-ui-type="icons">Generate Icons</button>
                                 <button title="Copy to clipboard!" class="generate-copy btn btn-xs-fluid round">
                                     <svg class="icon ui-color margin-5-r no-opacity"><use href="#files"/></svg>Copy to clipboard
                                 </button>
