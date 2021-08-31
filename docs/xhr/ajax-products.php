@@ -4,8 +4,8 @@
             <svg class="slider-loader icon"><use href="#loader-line"/></svg>
             <img src="img/product_01.png"
                     srcset="img/product_01@2x.png"
-                    data-src="img/product_01.png,img/product_02.png,img/product_03.png"
-                    data-srcset="img/product_01@2x.png,img/product_02@2x.png,img/product_03@2x.png"
+                    data-ui-src="img/product_01.png,img/product_02.png,img/product_03.png"
+                    data-ui-srcset="img/product_01@2x.png,img/product_02@2x.png,img/product_03@2x.png"
                 alt="">
             <button title="Prev" class="slide-l round ease-layout">
                 <svg class="icon"><use href="#angle-left"/></svg>
@@ -41,8 +41,8 @@
             <svg class="slider-loader icon"><use href="#loader-line"/></svg>
             <img src="img/product_02.png"
                     srcset="img/product_02@2x.png"
-                    data-src="img/product_02.png,img/product_04.png"
-                    data-srcset="img/product_02@2x.png,img/product_04@2x.png"
+                    data-ui-src="img/product_02.png,img/product_04.png"
+                    data-ui-srcset="img/product_02@2x.png,img/product_04@2x.png"
                 alt="">
             <button title="Prev" class="slide-l round ease-layout">
                 <svg class="icon"><use href="#angle-left"/></svg>
@@ -77,8 +77,8 @@
             <svg class="slider-loader icon"><use href="#loader-line"/></svg>
             <img src="img/product_03.png"
                     srcset="img/product_03@2x.png"
-                    data-src="img/product_03.png,img/product_05.png"
-                    data-srcset="img/product_03@2x.png,img/product_05@2x.png"
+                    data-ui-src="img/product_03.png,img/product_05.png"
+                    data-ui-srcset="img/product_03@2x.png,img/product_05@2x.png"
                 alt="">
             <button title="Prev" class="slide-l round ease-layout">
                 <svg class="icon"><use href="#angle-left"/></svg>
@@ -173,11 +173,10 @@
     <a class="full-h padding-15 no-padding-t card round shadow-lg ease-layout" href="#">
         <span class="photo-slider margin-20-b">
             <svg class="slider-loader icon"><use href="#loader-line"/></svg>
-            <img
-                    src="img/product_02.png"
+            <img src="img/product_02.png"
                     srcset="img/product_02@2x.png"
-                    data-src="img/product_02.png,img/product_04.png"
-                    data-srcset="img/product_02@2x.png,img/product_04@2x.png"
+                    data-ui-src="img/product_02.png,img/product_04.png"
+                    data-ui-srcset="img/product_02@2x.png,img/product_04@2x.png"
                 alt="">
             <button title="Prev" class="slide-l round ease-layout">
                 <svg class="icon"><use href="#angle-left"/></svg>

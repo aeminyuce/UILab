@@ -57,7 +57,7 @@ ui.tabs = {};
             if (outerContent.length !== 0) { content = outerContent; }
 
             // check ids
-            id = this.getAttribute('data-id');
+            id = this.getAttribute('data-ui-id');
             if (id !== null & id !== '') {
                 currentContent = ui.find('#' + id, parent);
 
@@ -66,7 +66,7 @@ ui.tabs = {};
             }
 
             toggle = false;
-            classes = parent.getAttribute('data-classes');
+            classes = parent.getAttribute('data-ui-classes');
 
             if (ui.hasClass(this, 'btn-toggle')) { toggle = true; }
 

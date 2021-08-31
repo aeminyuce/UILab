@@ -231,7 +231,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="card round shadow-lg tabs ease-tabs" data-classes="font-bold">
+                        <div class="card round shadow-lg tabs ease-tabs" data-ui-classes="font-bold">
                             <div class="card-side padding-10 border-b">
 
                                 <div class="dropdown menu-l right ease-dropdown">
@@ -515,71 +515,71 @@
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart">
                             <ul>
-                                <li data-percent="37" data-fill="hsl(210, 86%, 68%)"></li>
+                                <li data-ui-percent="37" data-ui-fill="hsl(210, 86%, 68%)"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart">
                             <ul>
-                                <li data-percent="66" data-fill="hsl(27, 77%, 59%)"></li>
+                                <li data-ui-percent="66" data-ui-fill="hsl(27, 77%, 59%)"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart">
                             <ul>
-                                <li data-percent="14" data-fill="hsl(285, 70%, 70%)"></li>
-                                <li data-percent="39" data-fill="hsl(97, 70%, 70%)"></li>
+                                <li data-ui-percent="14" data-ui-fill="hsl(285, 70%, 70%)"></li>
+                                <li data-ui-percent="39" data-ui-fill="hsl(97, 70%, 70%)"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
-                        <div class="pie-chart ease-pie-chart" data-text="Text">
+                        <div class="pie-chart ease-pie-chart" data-ui-text="Text">
                             <ul>
-                                <li data-percent="57" data-fill="hsl(186, 70%, 68%)"></li>
-                                <li data-percent="22" data-fill="hsl(210, 86%, 68%)"></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-3 col-xs-6">
-                        <div class="pie-chart ease-pie-chart">
-                            <ul>
-                                <li data-percent="20" data-fill="hsl(210, 86%, 68%)"></li>
-                                <li data-percent="20" data-fill="hsl(27, 77%, 59%)"></li>
-                                <li data-percent="60" data-fill="hsl(285, 70%, 70%)"></li>
+                                <li data-ui-percent="57" data-ui-fill="hsl(186, 70%, 68%)"></li>
+                                <li data-ui-percent="22" data-ui-fill="hsl(210, 86%, 68%)"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart">
                             <ul>
-                                <li data-percent="15" data-fill="hsl(97, 70%, 70%)"></li>
-                                <li data-percent="16" data-fill="hsl(186, 70%, 68%)"></li>
-                                <li data-percent="39" data-fill="hsl(210, 86%, 68%)"></li>
-                                <li data-percent="30" data-fill="hsl(27, 77%, 59%)"></li>
+                                <li data-ui-percent="20" data-ui-fill="hsl(210, 86%, 68%)"></li>
+                                <li data-ui-percent="20" data-ui-fill="hsl(27, 77%, 59%)"></li>
+                                <li data-ui-percent="60" data-ui-fill="hsl(285, 70%, 70%)"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart">
                             <ul>
-                                <li data-percent="49" data-fill="hsl(285, 70%, 70%)"></li>
-                                <li data-percent="14" data-fill="hsl(97, 70%, 70%)"></li>
-                                <li data-percent="11" data-fill="hsl(186, 70%, 68%)"></li>
-                                <li data-percent="14" data-fill="hsl(210, 86%, 68%)"></li>
-                                <li data-percent="12" data-fill="hsl(27, 77%, 59%)"></li>
+                                <li data-ui-percent="15" data-ui-fill="hsl(97, 70%, 70%)"></li>
+                                <li data-ui-percent="16" data-ui-fill="hsl(186, 70%, 68%)"></li>
+                                <li data-ui-percent="39" data-ui-fill="hsl(210, 86%, 68%)"></li>
+                                <li data-ui-percent="30" data-ui-fill="hsl(27, 77%, 59%)"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
-                        <div class="pie-chart ease-pie-chart" data-text="Text">
+                        <div class="pie-chart ease-pie-chart">
                             <ul>
-                                <li data-percent="20" data-fill="hsl(210, 86%, 68%)"></li>
-                                <li data-percent="15" data-fill="hsl(27, 77%, 59%)"></li>
-                                <li data-percent="25" data-fill="hsl(285, 70%, 70%)"></li>
-                                <li data-percent="25" data-fill="hsl(97, 70%, 70%)"></li>
-                                <li data-percent="15" data-fill="hsl(186, 70%, 68%)"></li>
+                                <li data-ui-percent="49" data-ui-fill="hsl(285, 70%, 70%)"></li>
+                                <li data-ui-percent="14" data-ui-fill="hsl(97, 70%, 70%)"></li>
+                                <li data-ui-percent="11" data-ui-fill="hsl(186, 70%, 68%)"></li>
+                                <li data-ui-percent="14" data-ui-fill="hsl(210, 86%, 68%)"></li>
+                                <li data-ui-percent="12" data-ui-fill="hsl(27, 77%, 59%)"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 col-xs-6">
+                        <div class="pie-chart ease-pie-chart" data-ui-text="Text">
+                            <ul>
+                                <li data-ui-percent="20" data-ui-fill="hsl(210, 86%, 68%)"></li>
+                                <li data-ui-percent="15" data-ui-fill="hsl(27, 77%, 59%)"></li>
+                                <li data-ui-percent="25" data-ui-fill="hsl(285, 70%, 70%)"></li>
+                                <li data-ui-percent="25" data-ui-fill="hsl(97, 70%, 70%)"></li>
+                                <li data-ui-percent="15" data-ui-fill="hsl(186, 70%, 68%)"></li>
                             </ul>
                         </div>
                     </div>
@@ -593,30 +593,30 @@
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart">
                             <ul>
-                                <li data-percent="37" data-fill="hsl(210, 86%, 68%)" data-title="37% HTML"></li>
+                                <li data-ui-percent="37" data-ui-fill="hsl(210, 86%, 68%)" data-ui-title="37% HTML"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart">
                             <ul>
-                                <li data-percent="66" data-fill="hsl(27, 77%, 59%)" data-title="66% PHP"></li>
+                                <li data-ui-percent="66" data-ui-fill="hsl(27, 77%, 59%)" data-ui-title="66% PHP"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart">
                             <ul>
-                                <li data-percent="14" data-fill="hsl(285, 70%, 70%)" data-title="14% JS"></li>
-                                <li data-percent="39" data-fill="hsl(97, 70%, 70%)" data-title="39% CSS"></li>
+                                <li data-ui-percent="14" data-ui-fill="hsl(285, 70%, 70%)" data-ui-title="14% JS"></li>
+                                <li data-ui-percent="39" data-ui-fill="hsl(97, 70%, 70%)" data-ui-title="39% CSS"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
-                        <div class="pie-chart ease-pie-chart" data-text="Text">
+                        <div class="pie-chart ease-pie-chart" data-ui-text="Text">
                             <ul>
-                                <li data-percent="57" data-fill="hsl(186, 70%, 68%)" data-title="57% HTML"></li>
-                                <li data-percent="22" data-fill="hsl(210, 86%, 68%)" data-title="22% ASP"></li>
+                                <li data-ui-percent="57" data-ui-fill="hsl(186, 70%, 68%)" data-ui-title="57% HTML"></li>
+                                <li data-ui-percent="22" data-ui-fill="hsl(210, 86%, 68%)" data-ui-title="22% ASP"></li>
                             </ul>
                         </div>
                     </div>
@@ -626,30 +626,30 @@
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart">
                             <ul>
-                                <li data-percent="37" data-fill="hsl(210, 86%, 68%)" data-title="37% HTML"></li>
+                                <li data-ui-percent="37" data-ui-fill="hsl(210, 86%, 68%)" data-ui-title="37% HTML"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart">
                             <ul>
-                                <li data-percent="66" data-fill="hsl(27, 77%, 59%)" data-title="66% PHP"></li>
+                                <li data-ui-percent="66" data-ui-fill="hsl(27, 77%, 59%)" data-ui-title="66% PHP"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
                         <div class="pie-chart ease-pie-chart">
                             <ul>
-                                <li data-percent="14" data-fill="hsl(285, 70%, 70%)" data-title="14% JS"></li>
-                                <li data-percent="39" data-fill="hsl(97, 70%, 70%)" data-title="39% CSS"></li>
+                                <li data-ui-percent="14" data-ui-fill="hsl(285, 70%, 70%)" data-ui-title="14% JS"></li>
+                                <li data-ui-percent="39" data-ui-fill="hsl(97, 70%, 70%)" data-ui-title="39% CSS"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
-                        <div class="pie-chart ease-pie-chart" data-text="Text">
+                        <div class="pie-chart ease-pie-chart" data-ui-text="Text">
                             <ul>
-                                <li data-percent="57" data-fill="hsl(186, 70%, 68%)" data-title="57% HTML"></li>
-                                <li data-percent="22" data-fill="hsl(210, 86%, 68%)" data-title="22% ASP"></li>
+                                <li data-ui-percent="57" data-ui-fill="hsl(186, 70%, 68%)" data-ui-title="57% HTML"></li>
+                                <li data-ui-percent="22" data-ui-fill="hsl(210, 86%, 68%)" data-ui-title="22% ASP"></li>
                             </ul>
                         </div>
                     </div>

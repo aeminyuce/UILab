@@ -26,12 +26,12 @@ ui.photoSlider = {};
                 retina = false;
                 if (window.devicePixelRatio > 1) { // check retina images
 
-                    dataSrc = images[i].getAttribute('data-srcset');
+                    dataSrc = images[i].getAttribute('data-ui-srcset');
                     if (dataSrc !== null && dataSrc !== '') { retina = true; }
 
                 }
 
-                if (!retina) { dataSrc = images[i].getAttribute('data-src'); }
+                if (!retina) { dataSrc = images[i].getAttribute('data-ui-src'); }
                 ui.addClass(slider[i], 'loaded');
 
                 if (dataSrc !== null && dataSrc !== '') {
@@ -50,8 +50,8 @@ ui.photoSlider = {};
 
             if (!dataSrcLists[i][0].match(/(\.png|\.gif|\.jpeg|\.jpg)$/g)) { return; }
 
-            images[i].removeAttribute('data-src');
-            images[i].removeAttribute('data-srcset');
+            images[i].removeAttribute('data-ui-src');
+            images[i].removeAttribute('data-ui-srcset');
 
             // create nav
             nav = ui.find('.slider-nav', slider[i])[0];

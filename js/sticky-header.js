@@ -95,7 +95,7 @@ ui.stickyHeader = {};
             size = 'sticky-xl';
         }
 
-        classes = header.getAttribute('data-classes');
+        classes = header.getAttribute('data-ui-classes');
         stickyStatic = ui.hasClass(header, 'sticky-static');
 
         stickyLoader();

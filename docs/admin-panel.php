@@ -16,12 +16,12 @@
                             <button class="btn btn-ghost btn-square round show-mobile-menu-l visible-md">
                                 <svg class="icon"><use href="#bars-left"/></svg>
                             </button>
-                            <button class="btn btn-ghost round" data-notifier data-tooltip="r" title="Show messages">
+                            <button class="btn btn-ghost round" data-notifier data-ui-tooltip="r" title="Show messages">
                                 <svg class="icon"><use href="#bell-on"/></svg>
                             </button>
                         </div>
                         <div class="dropdown margin-10 set-absolute set-t set-r ease-dropdown">
-                            <button class="btn btn-ghost round" data-tooltip="r" data-only="desktop" title="Settings">
+                            <button class="btn btn-ghost round" data-ui-tooltip="r" data-ui-only="desktop" title="Settings">
                                 <svg class="icon"><use href="#settings"/></svg>
                             </button>
                             <ul class="content icons-margin-10-r round shadow-lg">
@@ -32,7 +32,7 @@
                             </ul>
                         </div>
                         <div class="padding-10 circle inline-block theme-gray ui-bg-light-300">
-                            <a class="hover-scale ease-layout" href="#" data-tooltip="r" title="Show your profile">
+                            <a class="hover-scale ease-layout" href="#" data-ui-tooltip="r" title="Show your profile">
                                 <img class="img-photo-lg circle" src="img/profile-image.jpg" alt="">
                             </a>
                         </div>
@@ -41,7 +41,7 @@
                         </div>
                         <span class="color-black-muted">Supervisor</span>
                         <div class="countdown x-large margin-10-t">
-                            <div data-tooltip title="Idle time">
+                            <div data-ui-tooltip title="Idle time">
                                 <svg class="icon icon-sm color-black-50 margin-3-r"><use href="#clock"/></svg>
                                 <span class="color-black-50 inline-block">
                                     <span class="h">00</span>:<span class="m">59</span>:<span class="s">59</span>
@@ -159,9 +159,9 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <div class="pie-chart ease-pie-chart col-xs-150 col-lg-150 automargin" data-text="Profit" style="max-width: 120px;">
+                                        <div class="pie-chart ease-pie-chart col-xs-150 col-lg-150 automargin" data-ui-text="Profit" style="max-width: 120px;">
                                             <ul>
-                                                <li data-percent="66" data-fill="#60ab57" data-title="66%"></li>
+                                                <li data-ui-percent="66" data-ui-fill="#60ab57" data-ui-title="66%"></li>
                                             </ul>
                                         </div>
                                     </div>

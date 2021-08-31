@@ -32,7 +32,7 @@ ui.modal = {
 
             bg = ui.find('.modal-bg')[0];
 
-            openSize = win.getAttribute('data-openSize');
+            openSize = win.getAttribute('data-ui-openSize');
             if (openSize !== null) {
 
                 type = 'md';
@@ -85,10 +85,10 @@ ui.modal = {
 
             }
 
-            customW = win.getAttribute('data-customW');
+            customW = win.getAttribute('data-ui-customW');
             if (customW !== null) {
 
-                customH = win.getAttribute('data-customH');
+                customH = win.getAttribute('data-ui-customH');
                 if (customH !== null) {
 
                     customW = Number(customW);
@@ -260,10 +260,10 @@ ui.modal = {
                 content.style.removeProperty('width');
                 content.style.removeProperty('height');
 
-                content.removeAttribute('data-openSize');
+                content.removeAttribute('data-ui-openSize');
 
-                content.removeAttribute('data-customW');
-                content.removeAttribute('data-customH');
+                content.removeAttribute('data-ui-customW');
+                content.removeAttribute('data-ui-customH');
 
                 if (props.size === undefined) {
 
@@ -293,8 +293,8 @@ ui.modal = {
                             content.style.width = customSize[0] + 'px';
                             content.style.height = customSize[1] + 'px';
 
-                            content.setAttribute('data-customW', customSize[0]);
-                            content.setAttribute('data-customH', customSize[1]);
+                            content.setAttribute('data-ui-customW', customSize[0]);
+                            content.setAttribute('data-ui-customH', customSize[1]);
 
                         } else { getSize(); }
 
@@ -352,7 +352,7 @@ ui.modal = {
                         if (size !== undefined && size !== 'fullscreen') { // inherit fixed size && fullscreen
 
                             content.style.width = content.offsetWidth + 'px';
-                            content.setAttribute('data-openSize', content.offsetWidth);
+                            content.setAttribute('data-ui-openSize', content.offsetWidth);
                             content.style.height = content.offsetHeight + 'px';
 
                         }

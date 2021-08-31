@@ -41,13 +41,13 @@ ui.pieChart = {};
 
             loadFnc = function (parent, that, i) {
 
-                percent = that.getAttribute('data-percent');
+                percent = that.getAttribute('data-ui-percent');
 
                 if (percent === null && percent === '') {
                     percent = 0;
                 }
 
-                fill = that.getAttribute('data-fill');
+                fill = that.getAttribute('data-ui-fill');
 
                 if (fill !== null && fill !== '') {
                     that.style.color = fill;
@@ -85,13 +85,13 @@ ui.pieChart = {};
 
                 msgHolder.insertAdjacentHTML('beforeEnd', html);
 
-                title = that.getAttribute('data-title');
-                if (title !== null && title !== '') { // add tooltip for data-title attributes
+                title = that.getAttribute('data-ui-title');
+                if (title !== null && title !== '') { // add tooltip for data-ui-title attributes
 
                     msg = ui.find('span', msgHolder)[i];
                     msg = ui.find('i', msg)[0];
 
-                    msg.setAttribute('data-tooltip', '');
+                    msg.setAttribute('data-ui-tooltip', '');
                     msg.setAttribute('title', title);
 
                 }

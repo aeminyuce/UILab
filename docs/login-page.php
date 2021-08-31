@@ -46,7 +46,7 @@
                         <b>LOGIN</b>
                     </button>
                     <span class="sp-15"></span>
-                    <button class="tab btn btn-ghost color-black-50 round block ease-btn" data-id="lost-password">
+                    <button class="tab btn btn-ghost color-black-50 round block ease-btn" data-ui-id="lost-password">
                         <svg class="icon margin-5-r no-opacity"><use href="#lock"/></svg> Forgot password?
                     </button>
 
@@ -70,7 +70,7 @@
                         <b>Reset Password</b>
                     </button>
                     <span class="sp-15"></span>
-                    <button class="tab btn btn-ghost color-black-50 round block ease-btn" data-id="login">
+                    <button class="tab btn btn-ghost color-black-50 round block ease-btn" data-ui-id="login">
                         <svg class="icon margin-5-r no-opacity"><use href="#long-arrow-left"/></svg> Back to login
                     </button>
 

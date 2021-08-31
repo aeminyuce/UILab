@@ -5,7 +5,7 @@
 <script src="../js/custom/landing-page.js"></script>
 
 <!-- header: start -->
-<header class="container no-gutter bg-white" data-classes="shadow-lg">
+<header class="container no-gutter bg-white" data-ui-classes="shadow-lg">
 
     <div class="border-b theme-farmer2">
         <div class="fixed padding-10-v sm-no-padding-v">
@@ -80,7 +80,7 @@
 <main class="container no-gutter">
 
     <!-- tab banner: start -->
-    <div class="tabs form-lg ease-tabs" data-classes="ui-color border-b border-lg ui-border">
+    <div class="tabs form-lg ease-tabs" data-ui-classes="ui-color border-b border-lg ui-border">
 
         <div class="fixed padding-10-t theme-farmer2 set-dark">
             <div class="row no-row-gap-v icons-no-opacity icons-margin-5-r">
@@ -338,7 +338,7 @@
                 </div>
             </div>
         </div>
-        <div class="tabs form-lg border-t padding-10-t ease-tabs" data-classes="ui-color border-b border-lg ui-border">
+        <div class="tabs form-lg border-t padding-10-t ease-tabs" data-ui-classes="ui-color border-b border-lg ui-border">
 
             <div class="fixed">
                 <div class="row no-row-gap-v icons-no-opacity icons-margin-5-r">
@@ -900,25 +900,25 @@
 
 <!-- page social -->
 <div class="page-social icons-lg icons-no-opacity form-lg ease-1st-btn">
-    <a class="btn btn-square btn-facebook" href="#" target="_blank" data-tooltip="r" title="Facebook">
+    <a class="btn btn-square btn-facebook" href="#" target="_blank" data-ui-tooltip="r" title="Facebook">
         <svg class="icon"><use href="#facebook"/></svg>
     </a>
-    <a class="btn btn-square btn-twitter" href="#" target="_blank" data-tooltip="r" title="Twitter">
+    <a class="btn btn-square btn-twitter" href="#" target="_blank" data-ui-tooltip="r" title="Twitter">
         <svg class="icon"><use href="#twitter"/></svg>
     </a>
-    <a class="btn btn-square btn-instagram" href="#" target="_blank" data-tooltip="r" title="Instagram">
+    <a class="btn btn-square btn-instagram" href="#" target="_blank" data-ui-tooltip="r" title="Instagram">
         <svg class="icon"><use href="#instagram"/></svg>
     </a>
-    <a class="btn btn-square btn-linkedin" href="#" target="_blank" data-tooltip="r" title="Linkedin">
+    <a class="btn btn-square btn-linkedin" href="#" target="_blank" data-ui-tooltip="r" title="Linkedin">
         <svg class="icon"><use href="#linkedin"/></svg>
     </a>
-    <a class="btn btn-square btn-google" href="#" target="_blank" data-tooltip="r" title="Google">
+    <a class="btn btn-square btn-google" href="#" target="_blank" data-ui-tooltip="r" title="Google">
         <svg class="icon"><use href="#google"/></svg>
     </a>
-    <a class="btn btn-square btn-whatsapp" href="#" target="_blank" data-tooltip="r" title="Whatsapp">
+    <a class="btn btn-square btn-whatsapp" href="#" target="_blank" data-ui-tooltip="r" title="Whatsapp">
         <svg class="icon"><use href="#whatsapp"/></svg>
     </a>
-    <a class="btn btn-square btn-youtube" href="#" target="_blank" data-tooltip="r" title="Youtube">
+    <a class="btn btn-square btn-youtube" href="#" target="_blank" data-ui-tooltip="r" title="Youtube">
         <svg class="icon"><use href="#youtube"/></svg>
     </a>
 </div>

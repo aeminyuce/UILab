@@ -64,7 +64,7 @@
     white-space: nowrap;
 
     li,.status {
-        &:after { content: attr(data-msg); color: @white; font-size: @x-small; font-weight: font-bold; text-align: center; width: 18px; height: 18px; background-color: @theme-app2; display: block; ._border-var(@width: 2px; @var: card-bg); border-radius: 50%; position: absolute; }
+        &:after { content: attr(data-msg); color: @white; font-size: @x-small; font-weight: @font-bold; text-align: center; width: 18px; height: 18px; background-color: @theme-app2; display: block; ._border-var(@width: 2px; @var: card-bg); border-radius: 50%; position: absolute; }
         &.online {
             &:after { background-color: @green; }
         }

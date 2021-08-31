@@ -71,10 +71,10 @@
 ?>
 
     <!-- header -->
-    <header class="container header form-lg ui-bg-dark-100">
+    <header class="container header form-lg ui-bg-dark-100 ease-layout" data-ui-classes="shadow-lg">
         <div class="row">
             <div class="col-12">
-                <button title="Toggle Theme" data-tooltip data-only="desktop" class="btn-toggle-color btn btn-square round icons-no-opacity right ease-btn">
+                <button title="Toggle Theme" data-ui-tooltip data-ui-only="desktop" class="btn-toggle-color btn btn-square round icons-no-opacity right ease-btn">
                     <svg class="icon visible-dark"><use href="#moon-fill"/></svg>
                     <svg class="icon visible-light"><use href="#sun-fill"/></svg>
                 </button>
@@ -95,7 +95,7 @@
         include ($page.'.php');
 ?>
 
-<button title="Toggle Theme" data-tooltip data-only="desktop" class="btn-toggle-color btn btn-lg btn-square round-l icons-no-opacity ease-btn set-fixed set-r" style="top: 80px;">
+<button title="Toggle Theme" data-ui-tooltip data-ui-only="desktop" class="btn-toggle-color btn btn-lg btn-square round-l icons-no-opacity ease-btn set-fixed set-r" style="top: 80px;">
     <svg class="icon visible-dark"><use href="#moon-fill"/></svg>
     <svg class="icon visible-light"><use href="#sun-fill"/></svg>
 </button>
@@ -103,7 +103,7 @@
     } else {
 ?>
     <!-- header -->
-    <header class="container header form-lg ui-bg-dark-100">
+    <header class="container header form-lg ui-bg-dark-100 ease-layout" data-ui-classes="shadow-lg">
         <div class="row">
             <div class="col-static no-fluid">
                 <div class="col-250 col-xs-150 align-c md-align-l padding-15">
@@ -111,7 +111,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12 align-r padding-15-r icons-no-opacity ease-1st-btn">
-                        <button title="Toggle Theme" data-tooltip data-only="desktop" class="btn-toggle-color btn btn-square round">
+                        <button title="Toggle Theme" data-ui-tooltip data-ui-only="desktop" class="btn-toggle-color btn btn-square round">
                             <svg class="icon visible-dark"><use href="#moon-fill"/></svg>
                             <svg class="icon visible-light"><use href="#sun-fill"/></svg>
                         </button>

@@ -314,7 +314,7 @@ ui.lineCharts = {
                         }
 
                         // create circles
-                        circles += '<circle cx="' + posX + '" cy="' + posY + '" r="' + ui.lineCharts.circleSize + '" fill="' + data.color[j] + '" stroke="' + data.color[j] + '" stroke-width="0" data-tooltip title="' + y[i] + '"';
+                        circles += '<circle cx="' + posX + '" cy="' + posY + '" r="' + ui.lineCharts.circleSize + '" fill="' + data.color[j] + '" stroke="' + data.color[j] + '" stroke-width="0" data-ui-tooltip title="' + y[i] + '"';
 
                         if (ui.lineCharts.lineStroke === 0) {
                             circles += ' fill="' + data.color[j] + '"';

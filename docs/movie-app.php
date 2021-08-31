@@ -79,7 +79,7 @@
 
                 <div class="padding-30 no-padding-b md-no-padding">
 
-                    <header class="row no-row-gap-t sticky-md icons-no-opacity form-lg" data-classes="shadow-lg">
+                    <header class="row no-row-gap-t sticky-md icons-no-opacity form-lg" data-ui-classes="shadow-lg">
                         <div class="col-6 hidden-md ease-1st-form">
                             <div class="text text-icon-both margin-15-b circle no-border theme-gray ui-bg-light-300 has-clear">
                                 <svg class="icon text-icon-l"><use href="#search"/></svg>
@@ -94,7 +94,7 @@
                                 <button class="btn btn-square btn-ghost margin-10-l circle left show-mobile-menu-l visible-md">
                                     <svg class="icon"><use href="#bars-left"/></svg>
                                 </button>
-                                <button class="btn btn-square btn-ghost circle ease-btn visible-md" onclick="ui.modal.open({source: '.search', bg: 'false'});" data-tooltip data-only="desktop" title="Search">
+                                <button class="btn btn-square btn-ghost circle ease-btn visible-md" onclick="ui.modal.open({source: '.search', bg: 'false'});" data-ui-tooltip data-ui-only="desktop" title="Search">
                                     <svg class="icon"><use href="#search"/></svg>
                                 </button>
                                 <button class="btn btn-square btn-ghost circle">

@@ -7321,8 +7321,8 @@ html:not(.edge) .donut-chart svg:not(.icon) {
   -moz-user-select: none;
   user-select: none;
 }
-.pie-chart[data-text]:before {
-  content: attr(data-text);
+.pie-chart[data-ui-text]:before {
+  content: attr(data-ui-text);
   color: hsl(0, 0%, 0%);
   font-weight: 700;
   font-size: 14px;
@@ -7831,7 +7831,7 @@ html:not(.ie) .svg-map svg {
 .ease-tooltip {
   transition-property: top, left, opacity;
 }
-[data-tooltip] {
+[data-ui-tooltip] {
   display: inline-block;
 }
 .tooltip {
@@ -7858,64 +7858,64 @@ html:not(.ie) .svg-map svg {
   position: relative;
   z-index: 3;
 }
-.tooltip[data-pos="t"] > span {
+.tooltip[data-ui-pos="t"] > span {
   top: 100%;
   left: 50%;
 }
-.tooltip[data-pos="t"] > span .bg,
-.tooltip[data-pos="tr"] > span .bg,
-.tooltip[data-pos="tl"] > span .bg {
+.tooltip[data-ui-pos="t"] > span .bg,
+.tooltip[data-ui-pos="tr"] > span .bg,
+.tooltip[data-ui-pos="tl"] > span .bg {
   border-top-color: transparent;
   border-left-color: transparent;
 }
-.tooltip[data-pos="t"] .tooltip-content,
-.tooltip[data-pos="b"] .tooltip-content {
+.tooltip[data-ui-pos="t"] .tooltip-content,
+.tooltip[data-ui-pos="b"] .tooltip-content {
   text-align: center;
 }
-.tooltip[data-pos="b"] > span {
+.tooltip[data-ui-pos="b"] > span {
   bottom: 100%;
   left: 50%;
 }
-.tooltip[data-pos="b"] > span .bg,
-.tooltip[data-pos="br"] > span .bg,
-.tooltip[data-pos="bl"] > span .bg {
+.tooltip[data-ui-pos="b"] > span .bg,
+.tooltip[data-ui-pos="br"] > span .bg,
+.tooltip[data-ui-pos="bl"] > span .bg {
   border-top-color: transparent;
   border-left-color: transparent;
 }
-.tooltip[data-pos="r"] > span {
+.tooltip[data-ui-pos="r"] > span {
   right: 100%;
   top: 50%;
 }
-.tooltip[data-pos="r"] > span .bg {
+.tooltip[data-ui-pos="r"] > span .bg {
   border-top-color: transparent;
   border-right-color: transparent;
 }
-.tooltip[data-pos="l"] > span {
+.tooltip[data-ui-pos="l"] > span {
   left: 100%;
   top: 50%;
 }
-.tooltip[data-pos="l"] > span .bg {
+.tooltip[data-ui-pos="l"] > span .bg {
   border-bottom-color: transparent;
   border-left-color: transparent;
 }
-.tooltip[data-pos="l"] .tooltip-content,
-.tooltip[data-pos="tl"] .tooltip-content,
-.tooltip[data-pos="bl"] .tooltip-content {
+.tooltip[data-ui-pos="l"] .tooltip-content,
+.tooltip[data-ui-pos="tl"] .tooltip-content,
+.tooltip[data-ui-pos="bl"] .tooltip-content {
   text-align: right;
 }
-.tooltip[data-pos="tr"] > span {
+.tooltip[data-ui-pos="tr"] > span {
   top: 100%;
   left: 20px;
 }
-.tooltip[data-pos="tl"] > span {
+.tooltip[data-ui-pos="tl"] > span {
   top: 100%;
   right: 20px;
 }
-.tooltip[data-pos="br"] > span {
+.tooltip[data-ui-pos="br"] > span {
   bottom: 100%;
   left: 20px;
 }
-.tooltip[data-pos="bl"] > span {
+.tooltip[data-ui-pos="bl"] > span {
   bottom: 100%;
   right: 20px;
 }

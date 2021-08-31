@@ -184,7 +184,7 @@
                                 Dropdown
                                 <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
                             </button>
-                            <div class="content tabs round align-l shadow-lg block-1st no-scroll" data-classes="ui-bg-dark-100 btn-show">
+                            <div class="content tabs round align-l shadow-lg block-1st no-scroll" data-ui-classes="ui-bg-dark-100 btn-show">
 
                                 <button class="btn btn-ghost ease-btn">Waiting</button>
 
@@ -222,7 +222,7 @@
                                 Dropdown
                                 <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
                             </button>
-                            <div class="content tabs round align-l shadow-lg block-1st no-scroll" data-classes="ui-bg-dark-100 btn-show">
+                            <div class="content tabs round align-l shadow-lg block-1st no-scroll" data-ui-classes="ui-bg-dark-100 btn-show">
 
                                 <button class="btn btn-ghost ease-btn">Waiting</button>
 

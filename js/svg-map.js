@@ -22,11 +22,11 @@ ui.svgMap = {};
         ui.each(map, function (i) {
 
             arr[i] = [];
-            g = ui.find('g[data-size]', this);
+            g = ui.find('g[data-ui-size]', this);
 
             ui.each(g, function () {
 
-                data = this.getAttribute('data-size');
+                data = this.getAttribute('data-ui-size');
                 if (data > 0) { arr[i].push(data); }
 
             });
@@ -35,7 +35,7 @@ ui.svgMap = {};
 
             ui.each(g, function () {
 
-                data = this.getAttribute('data-size');
+                data = this.getAttribute('data-ui-size');
                 if (data > 0) {
 
                     ui.addClass(this, 'active');
@@ -59,7 +59,7 @@ ui.svgMap = {};
         // Event Listeners
         ui.on('g', 'click', function () {
 
-            var href = this.getAttribute('data-href');
+            var href = this.getAttribute('data-ui-href');
 
             if (href !== null) {
                 window.location = href;

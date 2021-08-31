@@ -91,7 +91,7 @@ ui.tooltip = {
             // detect defined position
             arr = ['t', 'b', 'r', 'l', 'tr', 'tl', 'br', 'bl'];
 
-            pos = source.getAttribute('data-tooltip');
+            pos = source.getAttribute('data-ui-tooltip');
             if (arr.indexOf(pos) < 0) {
                 pos = 't';
             }
@@ -166,7 +166,7 @@ ui.tooltip = {
             win[0].style.top = (sourceRect.top + window.pageYOffset + calc.ver) + 'px';
             win[0].style.left = (sourceRect.left + window.pageXOffset + calc.hor) + 'px';
 
-            win[0].setAttribute('data-pos', pos);
+            win[0].setAttribute('data-ui-pos', pos);
             ui.addClass(win, 'open-ease');
 
         }, 10);
@@ -182,21 +182,21 @@ ui.tooltip = {
 
             createFnc(that, title);
 
-            that.setAttribute('data-title', title);
+            that.setAttribute('data-ui-title', title);
             that.removeAttribute('title');
 
             ui.addClass(that, 'tooltip-active');
 
         } else {
 
-            dataTitle = that.getAttribute('data-title');
+            dataTitle = that.getAttribute('data-ui-title');
             if (dataTitle !== null && dataTitle !== '') {
 
                 if (type === 'close') {
 
                     removeFnc(that);
 
-                    that.removeAttribute('data-title');
+                    that.removeAttribute('data-ui-title');
                     that.setAttribute('title', dataTitle);
 
                     ui.removeClass(that, 'tooltip-active');
@@ -212,7 +212,7 @@ ui.tooltip = {
     ui.tooltip.Start = function () {
 
         // Event Listeners
-        ui.on(document, 'mouseenter mouseleave', '[data-tooltip]:not([data-only="mobile"])', function (e) {
+        ui.on(document, 'mouseenter mouseleave', '[data-ui-tooltip]:not([data-ui-only="mobile"])', function (e) {
 
             if (ui.userAgents.desktop) {
 
@@ -231,7 +231,7 @@ ui.tooltip = {
 
         });
 
-        ui.on(document, 'touchstart touchmove touchend', '[data-tooltip]:not([data-only="desktop"])', function (e) {
+        ui.on(document, 'touchstart touchmove touchend', '[data-ui-tooltip]:not([data-ui-only="desktop"])', function (e) {
 
             var that = this;
 

@@ -27,14 +27,14 @@ ui.mobileMenu = {};
 
         }, ui.globals.slow);
 
-        contents = ui.find('[data-mm]');
+        contents = ui.find('[data-ui-mm]');
 
         for (i = 0; i < contents.length; i++) {
 
-            id = '.mm-' + contents[i].getAttribute('data-mm');
+            id = '.mm-' + contents[i].getAttribute('data-ui-mm');
             el = ui.find(id)[0];
 
-            contents[i].removeAttribute('data-mm');
+            contents[i].removeAttribute('data-ui-mm');
 
             el.appendChild(contents[i]);
             el.parentNode.insertBefore(el.firstChild, el);
@@ -68,7 +68,7 @@ ui.mobileMenu = {};
                 id = id.substring(id.length - 4, id.length) + j;
 
                 that.insertAdjacentHTML('beforebegin', '<div class="mm-' + id + '" style="display: none;"></div>');
-                that.setAttribute('data-mm', id);
+                that.setAttribute('data-ui-mm', id);
 
                 html[j] = document.createDocumentFragment();
                 html[j].appendChild(that);
@@ -85,7 +85,7 @@ ui.mobileMenu = {};
                 indexArr = [];
                 for (i = 0; i < importers.length; i++) {
 
-                    index = importers[i].getAttribute('data-import');
+                    index = importers[i].getAttribute('data-ui-import');
 
                     if (index !== null && index !== '') {
                         indexArr.push(Number(index));

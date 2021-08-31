@@ -73,25 +73,25 @@
                                     <div class="col-7">
                                         <ul class="steps-bar steps-icon theme-default2 ui-color">
                                             <li>
-                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
+                                                <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Waiting"><use href="#check-circle"></svg>2:W
+                                                <svg class="icon" data-ui-tooltip title="Waiting"><use href="#check-circle"></svg>2:W
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></svg>3:E
+                                                <svg class="icon" data-ui-tooltip title="Expert"><use href="#check-circle"></svg>3:E
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></svg>4:F
+                                                <svg class="icon" data-ui-tooltip title="First Audit"><use href="#check-circle"></svg>4:F
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
+                                                <svg class="icon" data-ui-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
                                             </li>
                                             <li class="active">
-                                                <svg class="icon" data-tooltip title="Paused"><use href="#clock"></svg>6:P
+                                                <svg class="icon" data-ui-tooltip title="Paused"><use href="#clock"></svg>6:P
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Delayed"><use href="#check-circle"></svg>7:C
+                                                <svg class="icon" data-ui-tooltip title="Delayed"><use href="#check-circle"></svg>7:C
                                             </li>
                                         </ul>
                                     </div>
@@ -105,25 +105,25 @@
                                     <div class="col-7">
                                         <ul class="steps-bar steps-icon theme-red ui-color">
                                             <li>
-                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
+                                                <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
                                             <li class="active">
-                                                <svg class="icon" data-tooltip title="Waiting"><use href="#clock"></svg>2:W
+                                                <svg class="icon" data-ui-tooltip title="Waiting"><use href="#clock"></svg>2:W
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></svg>3:E
+                                                <svg class="icon" data-ui-tooltip title="Expert"><use href="#check-circle"></svg>3:E
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></svg>4:F
+                                                <svg class="icon" data-ui-tooltip title="First Audit"><use href="#check-circle"></svg>4:F
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
+                                                <svg class="icon" data-ui-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Paused"><use href="#check-circle"></svg>6:P
+                                                <svg class="icon" data-ui-tooltip title="Paused"><use href="#check-circle"></svg>6:P
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Delayed"><use href="#check-circle"></svg>7:C
+                                                <svg class="icon" data-ui-tooltip title="Delayed"><use href="#check-circle"></svg>7:C
                                             </li>
                                         </ul>
                                     </div>
@@ -137,25 +137,25 @@
                                     <div class="col-7">
                                         <ul class="steps-bar steps-icon theme-green ui-color">
                                             <li>
-                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
+                                                <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Waiting"><use href="#check-circle"></svg>2:W
+                                                <svg class="icon" data-ui-tooltip title="Waiting"><use href="#check-circle"></svg>2:W
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></svg>3:E
+                                                <svg class="icon" data-ui-tooltip title="Expert"><use href="#check-circle"></svg>3:E
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></svg>4:F
+                                                <svg class="icon" data-ui-tooltip title="First Audit"><use href="#check-circle"></svg>4:F
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
+                                                <svg class="icon" data-ui-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Paused"><use href="#check-circle"></svg>6:P
+                                                <svg class="icon" data-ui-tooltip title="Paused"><use href="#check-circle"></svg>6:P
                                             </li>
                                             <li class="active">
-                                                <svg class="icon" data-tooltip title="Delayed"><use href="#clock"></svg>7:C
+                                                <svg class="icon" data-ui-tooltip title="Delayed"><use href="#clock"></svg>7:C
                                             </li>
                                         </ul>
                                     </div>
@@ -169,25 +169,25 @@
                                     <div class="col-7">
                                         <ul class="steps-bar steps-icon theme-default2 ui-color">
                                             <li>
-                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
+                                                <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Waiting"><use href="#check-circle"></svg>2:W
+                                                <svg class="icon" data-ui-tooltip title="Waiting"><use href="#check-circle"></svg>2:W
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></svg>3:E
+                                                <svg class="icon" data-ui-tooltip title="Expert"><use href="#check-circle"></svg>3:E
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></svg>4:F
+                                                <svg class="icon" data-ui-tooltip title="First Audit"><use href="#check-circle"></svg>4:F
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
+                                                <svg class="icon" data-ui-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
                                             </li>
                                             <li class="active">
-                                                <svg class="icon" data-tooltip title="Paused"><use href="#clock"></svg>6:P
+                                                <svg class="icon" data-ui-tooltip title="Paused"><use href="#clock"></svg>6:P
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Delayed"><use href="#check-circle"></svg>7:C
+                                                <svg class="icon" data-ui-tooltip title="Delayed"><use href="#check-circle"></svg>7:C
                                             </li>
                                         </ul>
                                     </div>
@@ -201,25 +201,25 @@
                                     <div class="col-7">
                                         <ul class="steps-bar steps-icon theme-default2 ui-color">
                                             <li>
-                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
+                                                <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Waiting"><use href="#check-circle"></svg>2:W
+                                                <svg class="icon" data-ui-tooltip title="Waiting"><use href="#check-circle"></svg>2:W
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></svg>3:E
+                                                <svg class="icon" data-ui-tooltip title="Expert"><use href="#check-circle"></svg>3:E
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></svg>4:F
+                                                <svg class="icon" data-ui-tooltip title="First Audit"><use href="#check-circle"></svg>4:F
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
+                                                <svg class="icon" data-ui-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
                                             </li>
                                             <li class="active">
-                                                <svg class="icon" data-tooltip title="Paused"><use href="#clock"></svg>6:P
+                                                <svg class="icon" data-ui-tooltip title="Paused"><use href="#clock"></svg>6:P
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Delayed"><use href="#check-circle"></svg>7:C
+                                                <svg class="icon" data-ui-tooltip title="Delayed"><use href="#check-circle"></svg>7:C
                                             </li>
                                         </ul>
                                     </div>
@@ -233,25 +233,25 @@
                                     <div class="col-7">
                                         <ul class="steps-bar steps-icon theme-red ui-color">
                                             <li>
-                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
+                                                <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
                                             <li class="active">
-                                                <svg class="icon" data-tooltip title="Waiting"><use href="#clock"></svg>2:W
+                                                <svg class="icon" data-ui-tooltip title="Waiting"><use href="#clock"></svg>2:W
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></svg>3:E
+                                                <svg class="icon" data-ui-tooltip title="Expert"><use href="#check-circle"></svg>3:E
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></svg>4:F
+                                                <svg class="icon" data-ui-tooltip title="First Audit"><use href="#check-circle"></svg>4:F
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
+                                                <svg class="icon" data-ui-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Paused"><use href="#check-circle"></svg>6:P
+                                                <svg class="icon" data-ui-tooltip title="Paused"><use href="#check-circle"></svg>6:P
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Delayed"><use href="#check-circle"></svg>7:C
+                                                <svg class="icon" data-ui-tooltip title="Delayed"><use href="#check-circle"></svg>7:C
                                             </li>
                                         </ul>
                                     </div>
@@ -265,25 +265,25 @@
                                     <div class="col-7">
                                         <ul class="steps-bar steps-icon theme-green ui-color">
                                             <li>
-                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
+                                                <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Waiting"><use href="#check-circle"></svg>2:W
+                                                <svg class="icon" data-ui-tooltip title="Waiting"><use href="#check-circle"></svg>2:W
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></svg>3:E
+                                                <svg class="icon" data-ui-tooltip title="Expert"><use href="#check-circle"></svg>3:E
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></svg>4:F
+                                                <svg class="icon" data-ui-tooltip title="First Audit"><use href="#check-circle"></svg>4:F
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
+                                                <svg class="icon" data-ui-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Paused"><use href="#check-circle"></svg>6:P
+                                                <svg class="icon" data-ui-tooltip title="Paused"><use href="#check-circle"></svg>6:P
                                             </li>
                                             <li class="active">
-                                                <svg class="icon" data-tooltip title="Delayed"><use href="#clock"></svg>7:C
+                                                <svg class="icon" data-ui-tooltip title="Delayed"><use href="#clock"></svg>7:C
                                             </li>
                                         </ul>
                                     </div>
@@ -297,25 +297,25 @@
                                     <div class="col-7">
                                         <ul class="steps-bar steps-icon theme-default2 ui-color">
                                             <li>
-                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
+                                                <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Waiting"><use href="#check-circle"></svg>2:W
+                                                <svg class="icon" data-ui-tooltip title="Waiting"><use href="#check-circle"></svg>2:W
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></svg>3:E
+                                                <svg class="icon" data-ui-tooltip title="Expert"><use href="#check-circle"></svg>3:E
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></svg>4:F
+                                                <svg class="icon" data-ui-tooltip title="First Audit"><use href="#check-circle"></svg>4:F
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
+                                                <svg class="icon" data-ui-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
                                             </li>
                                             <li class="active">
-                                                <svg class="icon" data-tooltip title="Paused"><use href="#clock"></svg>6:P
+                                                <svg class="icon" data-ui-tooltip title="Paused"><use href="#clock"></svg>6:P
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Delayed"><use href="#check-circle"></svg>7:C
+                                                <svg class="icon" data-ui-tooltip title="Delayed"><use href="#check-circle"></svg>7:C
                                             </li>
                                         </ul>
                                     </div>
@@ -329,25 +329,25 @@
                                     <div class="col-7">
                                         <ul class="steps-bar steps-icon theme-default2 ui-color">
                                             <li>
-                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
+                                                <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Waiting"><use href="#check-circle"></svg>2:W
+                                                <svg class="icon" data-ui-tooltip title="Waiting"><use href="#check-circle"></svg>2:W
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></svg>3:E
+                                                <svg class="icon" data-ui-tooltip title="Expert"><use href="#check-circle"></svg>3:E
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></svg>4:F
+                                                <svg class="icon" data-ui-tooltip title="First Audit"><use href="#check-circle"></svg>4:F
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
+                                                <svg class="icon" data-ui-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
                                             </li>
                                             <li class="active">
-                                                <svg class="icon" data-tooltip title="Paused"><use href="#clock"></svg>6:P
+                                                <svg class="icon" data-ui-tooltip title="Paused"><use href="#clock"></svg>6:P
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Delayed"><use href="#check-circle"></svg>7:C
+                                                <svg class="icon" data-ui-tooltip title="Delayed"><use href="#check-circle"></svg>7:C
                                             </li>
                                         </ul>
                                     </div>
@@ -361,25 +361,25 @@
                                     <div class="col-7">
                                         <ul class="steps-bar steps-icon theme-red ui-color">
                                             <li>
-                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
+                                                <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
                                             <li class="active">
-                                                <svg class="icon" data-tooltip title="Waiting"><use href="#clock"></svg>2:W
+                                                <svg class="icon" data-ui-tooltip title="Waiting"><use href="#clock"></svg>2:W
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></svg>3:E
+                                                <svg class="icon" data-ui-tooltip title="Expert"><use href="#check-circle"></svg>3:E
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></svg>4:F
+                                                <svg class="icon" data-ui-tooltip title="First Audit"><use href="#check-circle"></svg>4:F
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
+                                                <svg class="icon" data-ui-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Paused"><use href="#check-circle"></svg>6:P
+                                                <svg class="icon" data-ui-tooltip title="Paused"><use href="#check-circle"></svg>6:P
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Delayed"><use href="#check-circle"></svg>7:C
+                                                <svg class="icon" data-ui-tooltip title="Delayed"><use href="#check-circle"></svg>7:C
                                             </li>
                                         </ul>
                                     </div>
@@ -393,25 +393,25 @@
                                     <div class="col-7">
                                         <ul class="steps-bar steps-icon theme-green ui-color">
                                             <li>
-                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
+                                                <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Waiting"><use href="#check-circle"></svg>2:W
+                                                <svg class="icon" data-ui-tooltip title="Waiting"><use href="#check-circle"></svg>2:W
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></svg>3:E
+                                                <svg class="icon" data-ui-tooltip title="Expert"><use href="#check-circle"></svg>3:E
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></svg>4:F
+                                                <svg class="icon" data-ui-tooltip title="First Audit"><use href="#check-circle"></svg>4:F
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
+                                                <svg class="icon" data-ui-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Paused"><use href="#check-circle"></svg>6:P
+                                                <svg class="icon" data-ui-tooltip title="Paused"><use href="#check-circle"></svg>6:P
                                             </li>
                                             <li class="active">
-                                                <svg class="icon" data-tooltip title="Delayed"><use href="#clock"></svg>7:C
+                                                <svg class="icon" data-ui-tooltip title="Delayed"><use href="#clock"></svg>7:C
                                             </li>
                                         </ul>
                                     </div>
@@ -425,25 +425,25 @@
                                     <div class="col-7">
                                         <ul class="steps-bar steps-icon theme-default2 ui-color">
                                             <li>
-                                                <svg class="icon" data-tooltip title="Starting"><use href="#check-circle"></svg>1:S
+                                                <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Waiting"><use href="#check-circle"></svg>2:W
+                                                <svg class="icon" data-ui-tooltip title="Waiting"><use href="#check-circle"></svg>2:W
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Expert"><use href="#check-circle"></svg>3:E
+                                                <svg class="icon" data-ui-tooltip title="Expert"><use href="#check-circle"></svg>3:E
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="First Audit"><use href="#check-circle"></svg>4:F
+                                                <svg class="icon" data-ui-tooltip title="First Audit"><use href="#check-circle"></svg>4:F
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
+                                                <svg class="icon" data-ui-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
                                             </li>
                                             <li class="active">
-                                                <svg class="icon" data-tooltip title="Paused"><use href="#clock"></svg>6:P
+                                                <svg class="icon" data-ui-tooltip title="Paused"><use href="#clock"></svg>6:P
                                             </li>
                                             <li>
-                                                <svg class="icon" data-tooltip title="Delayed"><use href="#check-circle"></svg>7:C
+                                                <svg class="icon" data-ui-tooltip title="Delayed"><use href="#check-circle"></svg>7:C
                                             </li>
                                         </ul>
                                     </div>
@@ -1258,7 +1258,7 @@
                             </label>
 
                             <div class="select form-inline round border-dual ease-form right">
-                                <svg class="icon" data-tooltip title="Waiting"><use href="#angle-down"></svg>
+                                <svg class="icon" data-ui-tooltip title="Waiting"><use href="#angle-down"></svg>
                                 <select class="data-show">
                                     <option>10</option>
                                     <option>20</option>

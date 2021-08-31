@@ -36,7 +36,7 @@ ui.donutChart = {};
 
                         var that = this;
 
-                        percent = that.getAttributeui-percent');
+                        percent = that.getAttribute('data-ui-percent');
                         arrPercent.push(percent);
 
                         dasharray = Math.round(percent * 4.4);
@@ -86,7 +86,7 @@ ui.donutChart = {};
             }, 0);
 
             if (e.type === 'mouseleave') {
-                msg.innerHTML = msg.getAttributeui-msg');
+                msg.innerHTML = msg.getAttribute('data-ui-msg');
 
             } else {
 
@@ -98,13 +98,13 @@ ui.donutChart = {};
 
                 }
 
-                msgTitle = msg.getAttributeui-msg');
+                msgTitle = msg.getAttribute('data-ui-msg');
 
                 if (msgTitle === null) {
-                    msg.setAttributeui-msg', msg.innerHTML);
+                    msg.setAttribute('data-ui-msg', msg.innerHTML);
                 }
 
-                title = that.getAttributeui-title');
+                title = that.getAttribute('data-ui-title');
                 setTimeout(function () {
 
                     if (title !== null && title !== '') {
