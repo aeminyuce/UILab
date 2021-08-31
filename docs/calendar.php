@@ -35,20 +35,20 @@
         <h4>Calendars with Defined Dates</h4>
         <div class="row sm-fluid padding-30-b block-2nd">
             <div class="col-6">
-                <b class="margin-5-b">Previous Month: data-date="prev"</b>
-                <div class="calendar ease-calendar round shadow" data-date="prev"></div>
+                <b class="margin-5-b">Previous Month: data-ui-date="prev"</b>
+                <div class="calendar ease-calendar round shadow" data-ui-date="prev"></div>
             </div>
             <div class="col-6">
-                <b class="margin-5-b">Next Month: data-date="next"</b>
-                <div class="calendar ease-calendar round shadow" data-date="next"></div>
+                <b class="margin-5-b">Next Month: data-ui-date="next"</b>
+                <div class="calendar ease-calendar round shadow" data-ui-date="next"></div>
             </div>
             <div class="col-6">
-                <b class="margin-5-b">Show Defined Month: data-date="10"</b>
-                <div class="calendar ease-calendar round shadow" data-date="10"></div>
+                <b class="margin-5-b">Show Defined Month: data-ui-date="10"</b>
+                <div class="calendar ease-calendar round shadow" data-ui-date="10"></div>
             </div>
             <div class="col-6">
-                <b class="margin-5-b">Show Defined Year and Month: data-date="2012,1"</b>
-                <div class="calendar ease-calendar round shadow" data-date="2012,1"></div>
+                <b class="margin-5-b">Show Defined Year and Month: data-ui-date="2012,1"</b>
+                <div class="calendar ease-calendar round shadow" data-ui-date="2012,1"></div>
             </div>
         </div>
 
@@ -97,10 +97,10 @@
         <h4>Calendar Details</h4>
         <div class="row sm-fluid padding-30-b">
             <div class="col-6">
-                <div class="calendar ease-calendar round" data-src="json/calendar.json" data-date="2019,6"></div>
+                <div class="calendar ease-calendar round" data-ui-src="json/calendar.json" data-ui-date="2019,6"></div>
             </div>
             <div class="col-6">
-                <div class="calendar ease-calendar round theme-default2 ui-bg-dark-100" data-src="json/calendar.json" data-date="2019,6"></div>
+                <div class="calendar ease-calendar round theme-default2 ui-bg-dark-100" data-ui-src="json/calendar.json" data-ui-date="2019,6"></div>
             </div>
         </div>
 

@@ -229,11 +229,11 @@ ui.autocomplete = {
 
                     };
 
-                    getVal = p.getAttribute('data-val');
+                    getVal = p.getAttribute('data-ui-val');
 
                     if (getVal !== null && getVal !== '') {
 
-                        src = p.getAttribute('data-src');
+                        src = p.getAttribute('data-ui-src');
                         if (src !== null && src !== '') {
 
                             // get json data with ajax

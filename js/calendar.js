@@ -31,10 +31,10 @@ ui.calendar = {
     // first loading
     ui.calendar.Start = function () {
 
-        // get calendar's data-date
+        // get calendar's data-ui-date
         function getAttr(that, date, newDate) {
 
-            var attr = that.getAttribute('data-date');
+            var attr = that.getAttribute('data-ui-date');
             if (attr !== null && attr !== '') {
 
                 attr = attr.split(',');
@@ -126,7 +126,7 @@ ui.calendar = {
                         pickerDay = pickerVal(picker); // check value
                     }
 
-                    getAttr(that, date, newDate); // get data-date
+                    getAttr(that, date, newDate); // get data-ui-date
 
                 } else {
 
@@ -142,11 +142,11 @@ ui.calendar = {
                 }
 
             } else {
-                getAttr(that, date); // get data-date
+                getAttr(that, date); // get data-ui-date
             }
 
-            // set new data-date
-            that.setAttribute('data-date', date.getFullYear() + ',' + (date.getMonth() + 1));
+            // set new data-ui-date
+            that.setAttribute('data-ui-date', date.getFullYear() + ',' + (date.getMonth() + 1));
 
             // create table
             html = '';
@@ -239,20 +239,20 @@ ui.calendar = {
 
                                 if (date.getFullYear() + ',' + date.getMonth() + ',' + days === pickerDay) {
 
-                                    html += '<td data-day="' + days + '" class="pickerday">' +
+                                    html += '<td data-ui-day="' + days + '" class="pickerday">' +
                                             '<button type="button" tabindex="-1">' + days + '</button>' +
                                         '</td>';
 
                                 } else {
 
-                                    html += '<td data-day="' + days + '">' +
+                                    html += '<td data-ui-day="' + days + '">' +
                                             '<button type="button" tabindex="-1">' + days + '</button>' +
                                         '</td>';
                                 }
 
                             } else {
 
-                                html += '<td data-day="' + days + '">' +
+                                html += '<td data-ui-day="' + days + '">' +
                                         '<button type="button" tabindex="-1">' + days + '</button>' +
                                     '</td>';
 
@@ -288,7 +288,7 @@ ui.calendar = {
             }
 
             // check details
-            src = that.getAttribute('data-src');
+            src = that.getAttribute('data-ui-src');
             if (src !== null && src !== '') {
 
                 details = '';
@@ -312,11 +312,11 @@ ui.calendar = {
                                     if (Number(response[i].month) === date.getMonth() + 1) {
 
                                         // select detailed days
-                                        dday = ui.find('[data-day="' + response[i].day + '"]', that);
+                                        dday = ui.find('[data-ui-day="' + response[i].day + '"]', that);
                                         ui.addClass(dday, 'toggle-details');
 
                                         // create details html
-                                        details += '<li data-d="' + response[i].day + '">' +
+                                        details += '<li data-ui-d="' + response[i].day + '">' +
                                             '<strong>' + response[i].day + '</strong>' +
                                             '<b>' + response[i].dayName + '</b><br>';
 
@@ -730,7 +730,7 @@ ui.calendar = {
             that = ui.find('.calendar', picker)[0];
             form = ui.find('[type="text"]', picker)[0];
 
-            getAttr(that, date); // get data-date
+            getAttr(that, date); // get data-ui-date
             date.setDate(this.textContent); // set new day
 
             // set values to input form
@@ -781,12 +781,12 @@ ui.calendar = {
 
                 scroll = 0;
 
-                day = this.getAttribute('data-day');
+                day = this.getAttribute('data-ui-day');
                 list = ui.find('.details li', that);
 
                 for (i = 0; i < list.length; i++) {
 
-                    if (list[i].getAttribute('data-d') === day) {
+                    if (list[i].getAttribute('data-ui-d') === day) {
                         break;
                     }
 

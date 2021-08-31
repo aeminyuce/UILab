@@ -684,7 +684,7 @@
                                                     <label class="form-grid">Country</label>
                                                 </div>
                                                 <div class="col-5">
-                                                    <div data-src="json/countries.json" data-val="name" class="autocomplete text text-icon-l round border-dual ease-form">
+                                                    <div data-ui-src="json/countries.json" data-ui-val="name" class="autocomplete text text-icon-l round border-dual ease-form">
                                                         <svg class="icon"><use href="#keyboard"/></svg>
                                                         <input class="required" type="text" placeholder="Type/Select your country" autocomplete="off" minlength="3">
                                                     </div>
@@ -1197,7 +1197,7 @@
                                         </ul>
                                     </div>
                                     <h4 class="align-l margin-5-t">Events</h4>
-                                    <div class="calendar ease-calendar round no-padding" data-src="json/calendar.json" data-date="2019,6"></div>
+                                    <div class="calendar ease-calendar round no-padding" data-ui-src="json/calendar.json" data-ui-date="2019,6"></div>
                                 </div>
                             </div>
 

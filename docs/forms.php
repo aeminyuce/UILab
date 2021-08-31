@@ -196,11 +196,11 @@
 
                 <h4>Autocomplete Forms</h4>
                 <div class="padding-30-b">
-                    <div data-src="json/countries.json" data-val="code" class="autocomplete text text-icon round border-dual ease-form form-inline-xs">
+                    <div data-ui-src="json/countries.json" data-ui-val="code" class="autocomplete text text-icon round border-dual ease-form form-inline-xs">
                         <svg class="icon"><use href="#keyboard-fill"/></svg>
                         <input type="text" placeholder="Country Code" autocomplete="off">
                     </div>
-                    <div data-src="json/countries.json" data-val="name" class="autocomplete text text-icon round border-dual ease-form form-inline-xs">
+                    <div data-ui-src="json/countries.json" data-ui-val="name" class="autocomplete text text-icon round border-dual ease-form form-inline-xs">
                         <svg class="icon"><use href="#keyboard-fill"/></svg>
                         <input type="text" placeholder="Country" autocomplete="off">
                     </div>
