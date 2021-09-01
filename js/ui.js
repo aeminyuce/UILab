@@ -612,11 +612,33 @@ var ui = {
 // User Agents
 ui.userAgents = {
 
+    target: document,
+
+    nameDesktop: 'desktop',
+
+    nameWindows: 'windows',
+    nameChromiumEdge: 'edg',
+    nameEdge: 'edge',
+    nameIE: 'ie',
+    nameChrome: 'chrome',
+    nameFirefox: 'firefox',
+    nameOpera: 'opera',
+
+    nameMac: 'mac',
+    nameSafari: 'safari',
+
+    nameMobile: 'mobile',
+    nameIos: 'ios',
+    nameAndroid: 'android',
+    nameAndroidBrowser: 'android-browser',
+
     userLang: '',
+
     desktop: false,
     ie: false,
     edge: false,
     edg: false,
+
     mobile: false,
     ios: false,
     android: false,
@@ -633,26 +655,29 @@ ui.userAgents = {
 
         var ua, isMSIE;
 
-        ui.userAgents.userLang = (navigator.language || navigator.userLanguage).split('-')[0];
-        ui.addClass(document, ui.userAgents.userLang);
-
         ua = navigator.userAgent.toLowerCase();
+        ui.userAgents.userLang = (navigator.language || navigator.userLanguage).split('-')[0];
 
-        if (ua.indexOf('firefox') > -1) { ui.addClass(document, 'firefox'); }
-        if (ua.indexOf('safari') > -1) { ui.addClass(document, 'safari'); }
+        if (ua.indexOf('firefox') > -1) {
+            ui.addClass(ui.userAgents.target, ui.userAgents.nameFirefox);
+        }
+
+        if (ua.indexOf('safari') > -1) {
+            ui.addClass(ui.userAgents.target, ui.userAgents.nameSafari);
+        }
 
         if (ua.indexOf('chrome') > -1) {
 
-            ui.addClass(document, 'chrome');
-            ui.removeClass(document, 'safari');
+            ui.addClass(ui.userAgents.target, ui.userAgents.nameChrome);
+            ui.removeClass(ui.userAgents.target, ui.userAgents.nameSafari);
 
         }
 
         if (ua.indexOf('opera') > -1 || ua.indexOf('opr') > -1) {
 
-            ui.addClass(document, 'opera');
-            ui.removeClass(document, 'safari');
-            ui.removeClass(document, 'chrome');
+            ui.addClass(ui.userAgents.target, ui.userAgents.nameOpera);
+            ui.removeClass(ui.userAgents.target, ui.userAgents.nameSafari);
+            ui.removeClass(ui.userAgents.target, ui.userAgents.nameChrome);
 
         }
 
@@ -661,36 +686,43 @@ ui.userAgents = {
 
             ui.userAgents.ie = true;
 
-            ui.addClass(document, 'ie');
-            ui.removeClass(document, 'chrome');
+            ui.addClass(ui.userAgents.target, ui.userAgents.nameIE);
+            ui.removeClass(ui.userAgents.target, ui.userAgents.nameChrome);
 
             if (ua.indexOf('edge') > -1 || ua.indexOf('edg') > -1) {
 
                 ui.userAgents.edge = true;
-                ui.removeClass(document, 'ie');
-                ui.addClass(document, 'edge');
+
+                ui.removeClass(ui.userAgents.target, ui.userAgents.nameIE);
+                ui.addClass(ui.userAgents.target, ui.userAgents.nameEdge);
 
             }
 
         } else if (ua.indexOf('edg') > -1) { // detect new Chromium Edge
 
             ui.userAgents.edg = true;
-            ui.addClass(document, 'edg');
+            ui.addClass(ui.userAgents.target, ui.userAgents.nameChromiumEdge);
 
         }
 
-        if (navigator.appVersion.indexOf('Win') !== -1) { ui.addClass(document, 'windows'); }
-        if (navigator.appVersion.indexOf('Mac') !== -1) { ui.addClass(document, 'mac'); }
+        if (navigator.appVersion.indexOf('Win') !== -1) {
+            ui.addClass(ui.userAgents.target, ui.userAgents.nameWindows);
+        }
+
+        if (navigator.appVersion.indexOf('Mac') !== -1) {
+            ui.addClass(ui.userAgents.target, ui.userAgents.nameMac);
+        }
 
         if (ua.indexOf('mobile') > -1) {
 
-            ui.addClass(document, 'mobile');
+            ui.addClass(ui.userAgents.target, ui.userAgents.nameMobile);
             ui.userAgents.mobile = true;
 
             if (ua.indexOf('apple') > -1) {
 
-                ui.addClass(document, 'ios');
-                ui.removeClass(document, 'mac');
+                ui.addClass(ui.userAgents.target, ui.userAgents.nameIos);
+                ui.removeClass(ui.userAgents.target, ui.userAgents.nameMac);
+
                 ui.userAgents.ios = true;
 
             }
@@ -699,16 +731,16 @@ ui.userAgents = {
 
                 if (ua.indexOf('mozilla/5.0') > -1 && ua.indexOf('applewebkit') > -1 && ua.indexOf('version/') > -1) {
 
-                    ui.removeClass(document, 'chrome');
-                    ui.removeClass(document, 'safari');
+                    ui.removeClass(ui.userAgents.target, ui.userAgents.nameChrome);
+                    ui.removeClass(ui.userAgents.target, ui.userAgents.nameSafari);
+                    ui.addClass(ui.userAgents.target, ui.userAgents.nameAndroidBrowser);
 
-                    ui.addClass(document, 'android-browser');
                     ui.userAgents.nativeBrowser = true;
 
                 }
 
-                ui.addClass(document, 'android');
-                ui.removeClass(document, 'ios');
+                ui.addClass(ui.userAgents.target, ui.userAgents.nameAndroid);
+                ui.removeClass(ui.userAgents.target, ui.userAgents.nameIos);
 
                 if (ui.userAgents.nativeBrowser || parseFloat(ua.match(/android\s([0-9\.]*)/)[1], 10) < parseFloat('4.4')) { // Jelly Bean and before with stock browser is androidOld
                     ui.userAgents.androidOld = true;
@@ -716,14 +748,16 @@ ui.userAgents = {
 
                 ui.userAgents.android = true;
                 ui.userAgents.ios = false;
+
             }
 
         } else {
 
-            ui.removeClass(document, 'ios');
+            ui.removeClass(ui.userAgents.target, ui.userAgents.nameIos);
+            ui.addClass(ui.userAgents.target, ui.userAgents.nameDesktop);
 
-            ui.addClass(document, 'desktop');
             ui.userAgents.desktop = true;
+
         }
 
     });
@@ -736,8 +770,6 @@ ui.darkMode = {
 
     storageTest: 'ui-darkMode-test',
     storage: 'ui-darkMode',
-
-    colorScheme: '(prefers-color-scheme: dark)',
 
     toggleBtn: '.btn-toggle-darkmode',
     dataTheme: 'data-ui-theme'
@@ -766,7 +798,7 @@ ui.darkMode = {
         mode = 'light';
         doc = ui.find(ui.darkMode.target)[0];
 
-        darkColorScheme = window.matchMedia(ui.darkMode.colorScheme);
+        darkColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
         // set current theme color
         if (window.matchMedia) {
