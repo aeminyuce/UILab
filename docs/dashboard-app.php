@@ -41,7 +41,7 @@
                                     <a class="btn btn-multi no-line-height padding-10-v block round ui-bg-light-100" href="#">
                                         <span class="ui-color x-largest">23</span>
                                         <span class="block">
-                                            <span class="color-black-50 small font-ellipsis">Waiting</span>
+                                            <span class="font-color-black-50 small font-ellipsis">Waiting</span>
                                         </span>
                                     </a>
                                 </div>
@@ -49,7 +49,7 @@
                                     <a class="btn btn-multi no-line-height padding-10-v block round ui-bg-light-100" href="#">
                                         <span class="ui-color x-largest">258</span>
                                         <span class="block">
-                                            <span class="color-black-50 small font-ellipsis">Expert</span>
+                                            <span class="font-color-black-50 small font-ellipsis">Expert</span>
                                         </span>
                                     </a>
                                 </div>
@@ -57,7 +57,7 @@
                                     <a class="btn btn-multi no-line-height padding-10-v block round ui-bg-light-100" href="#">
                                         <span class="ui-color x-largest">49</span>
                                         <span class="block">
-                                            <span class="color-black-50 small font-ellipsis">First Audit</span>
+                                            <span class="font-color-black-50 small font-ellipsis">First Audit</span>
                                         </span>
                                     </a>
                                 </div>
@@ -66,25 +66,25 @@
                             <div class="row row-gap-md no-fluid ease-2nd-btn">
                                 <div class="col-4">
                                     <a class="btn btn-ghost btn-multi no-line-height padding-10-v block round border-dual" href="#">
-                                        <span class="color-black-50 xx-large">19</span>
+                                        <span class="font-color-black-50 xx-large">19</span>
                                         <span class="block">
-                                            <span class="color-black-50 small font-ellipsis">Second Audit</span>
+                                            <span class="font-color-black-50 small font-ellipsis">Second Audit</span>
                                         </span>
                                     </a>
                                 </div>
                                 <div class="col-4">
                                     <a class="btn btn-ghost btn-multi no-line-height padding-10-v block round border-dual" href="#">
-                                        <span class="color-black-50 xx-large">20</span>
+                                        <span class="font-color-black-50 xx-large">20</span>
                                         <span class="block">
-                                            <span class="color-black-50 small font-ellipsis">Paused</span>
+                                            <span class="font-color-black-50 small font-ellipsis">Paused</span>
                                         </span>
                                     </a>
                                 </div>
                                 <div class="col-4">
                                     <a class="btn btn-ghost btn-multi no-line-height padding-10-v block round border-dual" href="#">
-                                        <span class="color-black-50 xx-large">68</span>
+                                        <span class="font-color-black-50 xx-large">68</span>
                                         <span class="block">
-                                            <span class="color-black-50 small font-ellipsis">Delayed</span>
+                                            <span class="font-color-black-50 small font-ellipsis">Delayed</span>
                                         </span>
                                     </a>
                                 </div>
@@ -171,7 +171,7 @@
                                                         <svg class="icon"><use href="#clock"/></svg>
                                                     </span>
                                                     <b class="large block">REP-701-2019</b>
-                                                    <span class="small color-black-muted">1 hour ago</span>
+                                                    <span class="small font-color-black-muted">1 hour ago</span>
                                                 </a>
                                             </li>
                                         </ul>
@@ -185,7 +185,7 @@
                                                         <svg class="icon"><use href="#clock"/></svg>
                                                     </span>
                                                     <b class="large block">REP-103-2018</b>
-                                                    <span class="small color-black-muted">2 hours ago</span>
+                                                    <span class="small font-color-black-muted">2 hours ago</span>
                                                 </a>
                                             </li>
                                         </ul>
@@ -199,7 +199,7 @@
                                                         <svg class="icon"><use href="#clock"/></svg>
                                                     </span>
                                                     <b class="large block">REP-616-2017</b>
-                                                    <span class="small color-black-muted">3 days ago</span>
+                                                    <span class="small font-color-black-muted">3 days ago</span>
                                                 </a>
                                             </li>
                                         </ul>
@@ -207,7 +207,7 @@
 
                                 </div>
                                 <div class="carousel-nav ease-1st-btn">
-                                    <span class="dots color-black-muted"></span>
+                                    <span class="dots font-color-black-muted"></span>
                                 </div>
                             </div>
                         </div>
@@ -225,19 +225,19 @@
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle color-black-muted">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle font-color-black-muted">
                                     <svg class="icon"><use href="#search"/></svg>
                                     <span class="small block">Search</span>
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle color-black-muted" data-ui-notifier="2">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle font-color-black-muted" data-ui-notifier="2">
                                     <svg class="icon"><use href="#comment"/></svg>
                                     <span class="small block">Chat</span>
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle color-black-muted">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle font-color-black-muted">
                                     <svg class="icon"><use href="#user"/></svg>
                                     <span class="small block">Profile</span>
                                 </button>
@@ -310,7 +310,7 @@
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
-                                                    <b class="color-black-muted">REP-701-2019</b>
+                                                    <b class="font-color-black-muted">REP-701-2019</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
                                                     <b class="xx-small circle padding-4-h padding-3-v ui-bg-dark-100">SS</b>
@@ -335,7 +335,7 @@
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
-                                                    <b class="color-black-muted">REP-616-2017</b>
+                                                    <b class="font-color-black-muted">REP-616-2017</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
                                                     <b class="xx-small circle padding-4-h padding-3-v ui-bg-dark-100">SU</b>
@@ -360,7 +360,7 @@
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
-                                                    <b class="color-black-muted">REP-103-2018</b>
+                                                    <b class="font-color-black-muted">REP-103-2018</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
                                                     <b class="xx-small circle padding-4-h padding-3-v theme-app2 ui-bg-dark-100">SD</b>
@@ -385,7 +385,7 @@
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
-                                                    <b class="color-black-muted">REP-701-2019</b>
+                                                    <b class="font-color-black-muted">REP-701-2019</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
                                                     <b class="xx-small circle padding-4-h padding-3-v ui-bg-dark-100">SS</b>
@@ -410,7 +410,7 @@
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
-                                                    <b class="color-black-muted">REP-616-2017</b>
+                                                    <b class="font-color-black-muted">REP-616-2017</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
                                                     <b class="xx-small circle padding-4-h padding-3-v ui-bg-dark-100">SU</b>
@@ -435,7 +435,7 @@
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
-                                                    <b class="color-black-muted">REP-103-2018</b>
+                                                    <b class="font-color-black-muted">REP-103-2018</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
                                                     <b class="xx-small circle padding-4-h padding-3-v theme-app2 ui-bg-dark-100">SD</b>
@@ -460,7 +460,7 @@
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
-                                                    <b class="color-black-muted">REP-701-2019</b>
+                                                    <b class="font-color-black-muted">REP-701-2019</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
                                                     <b class="xx-small circle padding-4-h padding-3-v ui-bg-dark-100">SS</b>
@@ -485,7 +485,7 @@
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
-                                                    <b class="color-black-muted">REP-616-2017</b>
+                                                    <b class="font-color-black-muted">REP-616-2017</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
                                                     <b class="xx-small circle padding-4-h padding-3-v ui-bg-dark-100">SU</b>
@@ -510,7 +510,7 @@
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
-                                                    <b class="color-black-muted">REP-103-2018</b>
+                                                    <b class="font-color-black-muted">REP-103-2018</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
                                                     <b class="xx-small circle padding-4-h padding-3-v theme-app2 ui-bg-dark-100">SD</b>
@@ -535,7 +535,7 @@
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
-                                                    <b class="color-black-muted">REP-701-2019</b>
+                                                    <b class="font-color-black-muted">REP-701-2019</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
                                                     <b class="xx-small circle padding-4-h padding-3-v ui-bg-dark-100">SS</b>
@@ -560,7 +560,7 @@
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
-                                                    <b class="color-black-muted">REP-616-2017</b>
+                                                    <b class="font-color-black-muted">REP-616-2017</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
                                                     <b class="xx-small circle padding-4-h padding-3-v ui-bg-dark-100">SU</b>
@@ -585,7 +585,7 @@
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
-                                                    <b class="color-black-muted">REP-103-2018</b>
+                                                    <b class="font-color-black-muted">REP-103-2018</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
                                                     <b class="xx-small circle padding-4-h padding-3-v theme-app2 ui-bg-dark-100">SD</b>
@@ -618,7 +618,7 @@
                     <div class="padding-10 no-padding-b icons-no-opacity">
                         <div class="row no-row-gap no-fluid icons-lg icons-thin block-2nd ease-2nd-btn">
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle color-black-muted">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle font-color-black-muted">
                                     <svg class="icon"><use href="#home"/></svg>
                                     <span class="small block">Home</span>
                                 </button>
@@ -630,13 +630,13 @@
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle color-black-muted" data-ui-notifier="2">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle font-color-black-muted" data-ui-notifier="2">
                                     <svg class="icon"><use href="#comment"/></svg>
                                     <span class="small block">Chat</span>
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle color-black-muted">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle font-color-black-muted">
                                     <svg class="icon"><use href="#user"/></svg>
                                     <span class="small block">Profile</span>
                                 </button>
@@ -704,7 +704,7 @@
                                             <h5 class="font-bold">John Doe</h5>
                                         </div>
                                         <div class="col-6 align-r">
-                                            <span class="color-black-muted">Online</span>
+                                            <span class="font-color-black-muted">Online</span>
                                         </div>
                                     </div>
 
@@ -764,7 +764,7 @@
                                             <h5 class="font-bold">Mary Doe</h5>
                                         </div>
                                         <div class="col-6 align-r">
-                                            <span class="color-black-muted">Online</span>
+                                            <span class="font-color-black-muted">Online</span>
                                         </div>
                                     </div>
 
@@ -824,7 +824,7 @@
                                             <h5 class="font-bold">Mike Taylor</h5>
                                         </div>
                                         <div class="col-6 align-r">
-                                            <span class="color-black-muted">Today 09:22</span>
+                                            <span class="font-color-black-muted">Today 09:22</span>
                                         </div>
                                     </div>
 
@@ -884,7 +884,7 @@
                                             <h5 class="font-bold">John Doe</h5>
                                         </div>
                                         <div class="col-6 align-r">
-                                            <span class="color-black-muted">1 day ago</span>
+                                            <span class="font-color-black-muted">1 day ago</span>
                                         </div>
                                     </div>
 
@@ -944,7 +944,7 @@
                                             <h5 class="font-bold">Mary Doe</h5>
                                         </div>
                                         <div class="col-6 align-r">
-                                            <span class="color-black-muted">2 days ago</span>
+                                            <span class="font-color-black-muted">2 days ago</span>
                                         </div>
                                     </div>
 
@@ -1004,7 +1004,7 @@
                                             <h5 class="font-bold">John Doe</h5>
                                         </div>
                                         <div class="col-6 align-r">
-                                            <span class="color-black-muted">3 days ago</span>
+                                            <span class="font-color-black-muted">3 days ago</span>
                                         </div>
                                     </div>
 
@@ -1070,13 +1070,13 @@
                     <div class="padding-10 no-padding-b icons-no-opacity">
                         <div class="row no-row-gap no-fluid icons-lg icons-thin block-2nd ease-2nd-btn">
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle color-black-muted">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle font-color-black-muted">
                                     <svg class="icon"><use href="#home"/></svg>
                                     <span class="small block">Home</span>
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle color-black-muted">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle font-color-black-muted">
                                     <svg class="icon"><use href="#search"/></svg>
                                     <span class="small block">Search</span>
                                 </button>
@@ -1088,7 +1088,7 @@
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle color-black-muted">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle font-color-black-muted">
                                     <svg class="icon"><use href="#user"/></svg>
                                     <span class="small block">Profile</span>
                                 </button>
@@ -1135,7 +1135,7 @@
                                 <span class="x-large margin-3-l">John Doe</span>
                                 <span class="sp-2"></span>
                                 <b class="xx-small circle padding-5-h padding-3-v theme-app2 ui-bg-dark-100">SD</b>
-                                <span class="color-black-50 margin-3-l">Audit Staff</span>
+                                <span class="font-color-black-50 margin-3-l">Audit Staff</span>
                             </div>
 
                             <h5 class="font-bold margin-10-b">Settings</h5>
@@ -1217,19 +1217,19 @@
                     <div class="padding-10 no-padding-b icons-no-opacity">
                         <div class="row no-row-gap no-fluid icons-lg icons-thin block-2nd ease-2nd-btn">
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle color-black-muted">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle font-color-black-muted">
                                     <svg class="icon"><use href="#home"/></svg>
                                     <span class="small block">Home</span>
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle color-black-muted">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle font-color-black-muted">
                                     <svg class="icon"><use href="#search"/></svg>
                                     <span class="small block">Search</span>
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle color-black-muted" data-ui-notifier="2">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle font-color-black-muted" data-ui-notifier="2">
                                     <svg class="icon"><use href="#comment"/></svg>
                                     <span class="small block">Chat</span>
                                 </button>

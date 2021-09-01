@@ -52,7 +52,7 @@
                                 <button class="carousel-prev btn btn-ghost btn-square round">
                                     <svg class="icon"><use href="#angle-left"/></svg>
                                 </button>
-                                <span class="dots color-black-muted"></span>
+                                <span class="dots font-color-black-muted"></span>
                                 <button class="carousel-next btn btn-ghost btn-square round">
                                     <svg class="icon"><use href="#angle-right"/></svg>
                                 </button>
@@ -93,7 +93,7 @@
                                 <div class="col-5x col-sm-4 col-xs-6">
                                     <div class="donut-chart ease-donut-chart">
                                         <strong>
-                                            <span class="large color-black-muted">Interior</span>
+                                            <span class="large font-color-black-muted">Interior</span>
                                             <span class="sp-2"></span>4,9/5
                                         </strong>
                                         <svg viewBox="0 0 160 160">
@@ -105,7 +105,7 @@
                                 <div class="col-5x col-sm-4 col-xs-6">
                                     <div class="donut-chart ease-donut-chart">
                                         <strong>
-                                            <span class="large color-black-muted">Exterior</span>
+                                            <span class="large font-color-black-muted">Exterior</span>
                                             <span class="sp-2"></span>4/5
                                         </strong>
                                         <svg viewBox="0 0 160 160">
@@ -117,7 +117,7 @@
                                 <div class="col-5x col-sm-4 col-xs-6">
                                     <div class="donut-chart ease-donut-chart">
                                         <strong>
-                                            <span class="large color-black-muted">Quality</span>
+                                            <span class="large font-color-black-muted">Quality</span>
                                             <span class="sp-2"></span>4/5
                                         </strong>
                                         <svg viewBox="0 0 160 160">
@@ -129,7 +129,7 @@
                                 <div class="col-5x col-sm-4 col-xs-6">
                                     <div class="donut-chart ease-donut-chart">
                                         <strong>
-                                            <span class="large color-black-muted">Savings</span>
+                                            <span class="large font-color-black-muted">Savings</span>
                                             <span class="sp-2"></span>3.9/5
                                         </strong>
                                         <svg viewBox="0 0 160 160">
@@ -139,7 +139,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="color-black-muted small align-c padding-10">
+                            <div class="font-color-black-muted small align-c padding-10">
                                 <b>Yearly Savings Costs: $18.970</b>
                             </div>
                         </div>
@@ -165,7 +165,7 @@
                     <div class="padding-3 ui-bg-dark-100 stripe-light border-v border-light animate-progress">
                     </div>
                     <div class="card-side padding-5 ui-bg-dark-100">
-                        <b class="small color-white">Closing: 10 August, 2018, Friday</b>
+                        <b class="small font-color-white">Closing: 10 August, 2018, Friday</b>
                     </div>
                 </div>
 
@@ -185,8 +185,8 @@
                         </li>
                     </ul>
                     <div class="padding-15-b">
-                        <svg class="icon color-black-muted"><use href="#marker"/></svg>
-                        <span class="color-black-muted">Location: <b>New York</b></span>
+                        <svg class="icon font-color-black-muted"><use href="#marker"/></svg>
+                        <span class="font-color-black-muted">Location: <b>New York</b></span>
                     </div>
                     <div class="padding-10 border-t">
                         Real Estate ID: <b>RE-616</b>
@@ -215,11 +215,11 @@
                     </div>
                     <div class="padding-20-t padding-30-h border-t">
                         <div class="largest font-bold">$640.000</div>
-                        <span class="color-black-muted">LATEST OFFER</span>
+                        <span class="font-color-black-muted">LATEST OFFER</span>
                     </div>
                     <div class="padding-30 padding-15-t">
                         <div class="margin-15-b"><b>Min. Offer Amount: $5000</b><br>
-                            <span class="color-black-50">Automatic 5% deposit required.</span>
+                            <span class="font-color-black-50">Automatic 5% deposit required.</span>
                         </div>
                         <form action="#">
                             <div class="col-static no-fluid currency-spinner form-lg">
@@ -254,37 +254,37 @@
                     <h4>Other Details</h4>
                     <ul class="list-unstyled list-spacer-15 icons-lg icons-margin-5-r">
                         <li>
-                            <span class="color-black-muted block margin-5-b">House Type</span>
+                            <span class="font-color-black-muted block margin-5-b">House Type</span>
                             <svg class="icon ui-color"><use href="#house"/></svg>
                             <b>Single Family</b>
                         </li>
                         <li>
-                            <span class="color-black-muted block margin-5-b">Build Surface</span>
+                            <span class="font-color-black-muted block margin-5-b">Build Surface</span>
                             <svg class="icon ui-color"><use href="#house-surface"/></svg>
                             <b>628m<sup>2</sup></b>
                         </li>
                         <li>
-                            <span class="color-black-muted block margin-5-b">Heating/Cooling System</span>
+                            <span class="font-color-black-muted block margin-5-b">Heating/Cooling System</span>
                             <svg class="icon ui-color"><use href="#house-heat"/></svg>
                             <b>Air Cooling</b>
                         </li>
                         <li>
-                            <span class="color-black-muted block margin-5-b">Bedrooms</span>
+                            <span class="font-color-black-muted block margin-5-b">Bedrooms</span>
                             <svg class="icon ui-color"><use href="#bed"/></svg>
                             <b>4</b>
                         </li>
                         <li>
-                            <span class="color-black-muted block margin-5-b">Bathrooms/Guest toilets</span>
+                            <span class="font-color-black-muted block margin-5-b">Bathrooms/Guest toilets</span>
                             <svg class="icon ui-color"><use href="#wc"/></svg>
                             <b>3</b>
                         </li>
                         <li>
-                            <span class="color-black-muted block margin-5-b">Parking</span>
+                            <span class="font-color-black-muted block margin-5-b">Parking</span>
                             <svg class="icon ui-color"><use href="#garage"/></svg>
                             <b>2 Spaces</b>
                         </li>
                         <li>
-                            <span class="color-black-muted block margin-5-b">Year of Build</span>
+                            <span class="font-color-black-muted block margin-5-b">Year of Build</span>
                             <svg class="icon ui-color"><use href="#calendar-day"/></svg>
                             <b>2019</b>
                         </li>

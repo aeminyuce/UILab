@@ -16,7 +16,7 @@
             <span class="slider-nav"></span>
         </span>
         <span class="x-large">Red</span>
-        <span class="color-black-50 block margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
+        <span class="font-color-black-50 block margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
         <b class="xx-large">$164.98</b>
         <span class="block">
             <svg class="icon icon-sm margin-5-r"><use href="#truck"/></svg> Fast Delivery
@@ -27,9 +27,9 @@
             <li class="circle padding-5 border-dual" style="border-color: hsl(206, 73%, 50%);"></li>
         </ul>
         <span class="left padding-15-v icons-xs">
-            <svg class="icon color-yellow"><use href="#star-fill"/></svg>
-            <b class="color-black-50">4.8</b>
-            <span class="color-black-muted">
+            <svg class="icon font-color-yellow"><use href="#star-fill"/></svg>
+            <b class="font-color-black-50">4.8</b>
+            <span class="font-color-black-muted">
                 <svg class="icon margin-5-l"><use href="#comment"/></svg> 24
             </span>
         </span>
@@ -53,8 +53,8 @@
             <span class="slider-nav"></span>
         </span>
         <span class="x-large">Purple</span>
-        <span class="color-black-50 block margin-10-v">beats by dr. dre Studio 3 Bluetooth Headphones</span>
-        <b class="xx-large">$79.95</b> <b class="color-black-50 font-overline">$99.99</b>
+        <span class="font-color-black-50 block margin-10-v">beats by dr. dre Studio 3 Bluetooth Headphones</span>
+        <b class="xx-large">$79.95</b> <b class="font-color-black-50 font-overline">$99.99</b>
         <span class="block">
             <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
         </span>
@@ -63,9 +63,9 @@
             <li class="circle padding-5 border-dual" style="border-color: hsl(0, 0%, 87%);"></li>
         </ul>
         <span class="left padding-15-v icons-xs">
-            <svg class="icon color-yellow"><use href="#star-fill"/></svg>
-            <b class="color-black-50">3.9</b>
-            <span class="color-black-muted">
+            <svg class="icon font-color-yellow"><use href="#star-fill"/></svg>
+            <b class="font-color-black-50">3.9</b>
+            <span class="font-color-black-muted">
                 <svg class="icon margin-5-l"><use href="#comment"/></svg> 9
             </span>
         </span>
@@ -89,7 +89,7 @@
             <span class="slider-nav"></span>
         </span>
         <span class="x-large">Blue</span>
-        <span class="color-black-50 block margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
+        <span class="font-color-black-50 block margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
         <b class="xx-large">$149.99</b>
         <span class="block">
             <svg class="icon icon-sm margin-5-r"><use href="#truck"/></svg> Fast Delivery
@@ -99,9 +99,9 @@
             <li class="circle padding-5 border-dual" style="border-color: hsl(0, 0%, 23%);"></li>
         </ul>
         <span class="left padding-15-v icons-xs">
-            <svg class="icon color-yellow"><use href="#star-fill"/></svg>
-            <b class="color-black-50">4.3</b>
-            <span class="color-black-muted">
+            <svg class="icon font-color-yellow"><use href="#star-fill"/></svg>
+            <b class="font-color-black-50">4.3</b>
+            <span class="font-color-black-muted">
                 <svg class="icon margin-5-l"><use href="#comment"/></svg> 11
             </span>
         </span>
@@ -121,8 +121,8 @@
             <span class="slider-nav"></span>
         </span>
         <span class="x-large">White</span>
-        <span class="color-black-50 block margin-10-v">beats by dr. dre Studio 3 Wired Headphones</span>
-        <b class="xx-large">$89.95</b> <b class="color-black-50 font-overline">$119.99</b>
+        <span class="font-color-black-50 block margin-10-v">beats by dr. dre Studio 3 Wired Headphones</span>
+        <b class="xx-large">$89.95</b> <b class="font-color-black-50 font-overline">$119.99</b>
         <span class="block">
             <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
         </span>
@@ -130,9 +130,9 @@
             <li class="circle padding-5 border-dual" style="border-color: hsl(0, 0%, 87%);"></li>
         </ul>
         <span class="left padding-15-v icons-xs">
-            <svg class="icon color-yellow"><use href="#star-fill"/></svg>
-            <b class="color-black-50">4.9</b>
-            <span class="color-black-muted">
+            <svg class="icon font-color-yellow"><use href="#star-fill"/></svg>
+            <b class="font-color-black-50">4.9</b>
+            <span class="font-color-black-muted">
                 <svg class="icon margin-5-l"><use href="#comment"/></svg> 32
             </span>
         </span>
@@ -152,8 +152,8 @@
             <span class="slider-nav"></span>
         </span>
         <span class="x-large">Black</span>
-        <span class="color-black-50 block margin-10-v">beats by dr. dre Studio 3 Wired Headphones</span>
-        <b class="xx-large">$89.95</b> <b class="color-black-50 font-overline">$119.99</b>
+        <span class="font-color-black-50 block margin-10-v">beats by dr. dre Studio 3 Wired Headphones</span>
+        <b class="xx-large">$89.95</b> <b class="font-color-black-50 font-overline">$119.99</b>
         <span class="block">
             <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
         </span>
@@ -161,9 +161,9 @@
             <li class="circle padding-10 border" style="background: hsl(0, 0%, 23%);"></li>
         </ul>
         <span class="left padding-15-v icons-xs">
-            <svg class="icon color-yellow"><use href="#star-fill"/></svg>
-            <b class="color-black-50">4.6</b>
-            <span class="color-black-muted">
+            <svg class="icon font-color-yellow"><use href="#star-fill"/></svg>
+            <b class="font-color-black-50">4.6</b>
+            <span class="font-color-black-muted">
                 <svg class="icon margin-5-l"><use href="#comment"/></svg> 44
             </span>
         </span>
@@ -187,8 +187,8 @@
             <span class="slider-nav"></span>
         </span>
         <span class="x-large">Purple</span>
-        <span class="color-black-50 block margin-10-v">beats by dr. dre Studio 3 Bluetooth Headphones</span>
-        <b class="xx-large">$79.95</b> <b class="color-black-50 font-overline">$99.99</b>
+        <span class="font-color-black-50 block margin-10-v">beats by dr. dre Studio 3 Bluetooth Headphones</span>
+        <b class="xx-large">$79.95</b> <b class="font-color-black-50 font-overline">$99.99</b>
         <span class="block">
             <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
         </span>
@@ -197,9 +197,9 @@
             <li class="circle padding-5 border-dual" style="border-color: hsl(0, 0%, 87%);"></li>
         </ul>
         <span class="left padding-15-v icons-xs">
-            <svg class="icon color-yellow"><use href="#star-fill"/></svg>
-            <b class="color-black-50">3.9</b>
-            <span class="color-black-muted">
+            <svg class="icon font-color-yellow"><use href="#star-fill"/></svg>
+            <b class="font-color-black-50">3.9</b>
+            <span class="font-color-black-muted">
                 <svg class="icon margin-5-l"><use href="#comment"/></svg> 9
             </span>
         </span>

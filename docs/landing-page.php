@@ -110,7 +110,7 @@
                             <div class="col-12 md-align-c">
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
-                                <p class="xx-large color-white-50">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
+                                <p class="xx-large font-color-white-50">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
                                 <a href="#" class="btn btn-xs-fluid padding-30-h ui-bg-dark-100 ease-btn">
                                     <svg class="icon margin-5-r"><use href="#moneys"/></svg>
                                     <b>Invest Now</b>
@@ -148,7 +148,7 @@
                             <div class="col-12 md-align-c">
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
-                                <p class="xx-large color-white-50">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
+                                <p class="xx-large font-color-white-50">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
                                 <a href="#" class="btn btn-xs-fluid padding-30-h ui-bg-dark-100 ease-btn">
                                     <svg class="icon margin-5-r"><use href="#moneys"/></svg>
                                     <b>Invest Now</b>
@@ -186,7 +186,7 @@
                             <div class="col-12 md-align-c">
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
-                                <p class="xx-large color-white-50">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
+                                <p class="xx-large font-color-white-50">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
                                 <a href="#" class="btn btn-xs-fluid padding-30-h ui-bg-dark-100 ease-btn">
                                     <svg class="icon margin-5-r"><use href="#moneys"/></svg>
                                     <b>Invest Now</b>
@@ -231,7 +231,7 @@
                         <svg class="icon ui-color"><use href="#leaf"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Planting</h3>
-                        <p class="large color-black-50">Complete range of lands caping services.</p>
+                        <p class="large font-color-black-50">Complete range of lands caping services.</p>
                         <a href="#" class="btn btn-ghost block ui-color ui-bg-dark-100 ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
@@ -242,7 +242,7 @@
                         <svg class="icon ui-color"><use href="#wind-sock"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Garden Care</h3>
-                        <p class="large color-black-50">Resolving environmental problems with best results.</p>
+                        <p class="large font-color-black-50">Resolving environmental problems with best results.</p>
                         <a href="#" class="btn btn-ghost block ui-color ui-bg-dark-100 ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
@@ -253,7 +253,7 @@
                         <svg class="icon ui-color"><use href="#water"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Irrigation System</h3>
-                        <p class="large color-black-50">Idea of denouncing pleasure and praising.</p>
+                        <p class="large font-color-black-50">Idea of denouncing pleasure and praising.</p>
                         <a href="#" class="btn btn-ghost block ui-color ui-bg-dark-100 ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
@@ -264,7 +264,7 @@
                         <svg class="icon ui-color"><use href="#land"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Hardscaping</h3>
-                        <p class="large color-black-50">Placing int the landscape with great pleasure.</p>
+                        <p class="large font-color-black-50">Placing int the landscape with great pleasure.</p>
                         <a href="#" class="btn btn-ghost block ui-color ui-bg-dark-100 ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
@@ -275,7 +275,7 @@
                         <svg class="icon ui-color"><use href="#leaf"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Planting</h3>
-                        <p class="large color-black-50">Complete range of lands caping services.</p>
+                        <p class="large font-color-black-50">Complete range of lands caping services.</p>
                         <a href="#" class="btn btn-ghost block ui-color ui-bg-dark-100 ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
@@ -286,7 +286,7 @@
                         <svg class="icon ui-color"><use href="#wind-sock"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Garden Care</h3>
-                        <p class="large color-black-50">Resolving environmental problems with best results.</p>
+                        <p class="large font-color-black-50">Resolving environmental problems with best results.</p>
                         <a href="#" class="btn btn-ghost block ui-color ui-bg-dark-100 ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
@@ -297,7 +297,7 @@
                         <svg class="icon ui-color"><use href="#water"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Irrigation System</h3>
-                        <p class="large color-black-50">Idea of denouncing pleasure and praising.</p>
+                        <p class="large font-color-black-50">Idea of denouncing pleasure and praising.</p>
                         <a href="#" class="btn btn-ghost block ui-color ui-bg-dark-100 ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
@@ -308,7 +308,7 @@
                         <svg class="icon ui-color"><use href="#land"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Hardscaping</h3>
-                        <p class="large color-black-50">Placing int the landscape with great pleasure.</p>
+                        <p class="large font-color-black-50">Placing int the landscape with great pleasure.</p>
                         <a href="#" class="btn btn-ghost block ui-color ui-bg-dark-100 ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
@@ -367,13 +367,13 @@
 
                             <span class="padding-15 block">
                                 <span class="xx-large block">Ready to modern agriculture.</span>
-                                <b class="color-black-muted margin-15-b block">Company</b>
+                                <b class="font-color-black-muted margin-15-b block">Company</b>
 
                                 <img class="img-fluid margin-15-b" src="img/agriculture/news02.jpg" alt="Agriculture News">
-                                <span class="color-black-50 large">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
+                                <span class="font-color-black-50 large">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
                             </span>
 
-                            <span class="small color-black-muted border-t padding-10 block inline-block-1st">
+                            <span class="small font-color-black-muted border-t padding-10 block inline-block-1st">
                                 <svg class="icon margin-2-r"><use href="#clock"/></svg>
                                 <b class="margin-10-r">SEPTEMBER 30, 2019</b>
 
@@ -391,13 +391,13 @@
 
                             <span class="padding-15 block">
                                 <span class="xx-large block">Farmers happy now.</span>
-                                <b class="color-black-muted margin-15-b block">Company</b>
+                                <b class="font-color-black-muted margin-15-b block">Company</b>
 
                                 <img class="img-fluid margin-15-b" src="img/agriculture/news01.jpg" alt="Agriculture News">
-                                <span class="color-black-50 large">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
+                                <span class="font-color-black-50 large">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
                             </span>
 
-                            <span class="small color-black-muted border-t padding-10 block inline-block-1st">
+                            <span class="small font-color-black-muted border-t padding-10 block inline-block-1st">
                                 <svg class="icon margin-2-r"><use href="#clock"/></svg>
                                 <b class="margin-10-r">SEPTEMBER 21, 2019</b>
 
@@ -415,13 +415,13 @@
 
                             <span class="padding-15 block">
                                 <span class="xx-large block">New market prospects.</span>
-                                <b class="color-black-muted margin-15-b block">Company</b>
+                                <b class="font-color-black-muted margin-15-b block">Company</b>
 
                                 <img class="img-fluid margin-15-b" src="img/agriculture/news03.jpg" alt="Agriculture News">
-                                <span class="color-black-50 large">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
+                                <span class="font-color-black-50 large">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
                             </span>
 
-                            <span class="small color-black-muted border-t padding-10 block inline-block-1st">
+                            <span class="small font-color-black-muted border-t padding-10 block inline-block-1st">
                                 <svg class="icon margin-2-r"><use href="#clock"/></svg>
                                 <b class="margin-10-r">SEPTEMBER 09, 2019</b>
 
@@ -439,13 +439,13 @@
 
                             <span class="padding-15 block">
                                 <span class="xx-large block">About product breeding</span>
-                                <b class="color-black-muted margin-15-b block">Company</b>
+                                <b class="font-color-black-muted margin-15-b block">Company</b>
 
                                 <img class="img-fluid margin-15-b" src="img/agriculture/news04.jpg" alt="Agriculture News">
-                                <span class="color-black-50 large">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
+                                <span class="font-color-black-50 large">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
                             </span>
 
-                            <span class="small color-black-muted border-t padding-10 block inline-block-1st">
+                            <span class="small font-color-black-muted border-t padding-10 block inline-block-1st">
                                 <svg class="icon margin-2-r"><use href="#clock"/></svg>
                                 <b class="margin-10-r">SEPTEMBER 01, 2019</b>
 
@@ -472,13 +472,13 @@
 
                             <span class="padding-15 block">
                                 <span class="xx-large block">Farmers happy now.</span>
-                                <b class="color-black-muted margin-15-b block">Social</b>
+                                <b class="font-color-black-muted margin-15-b block">Social</b>
 
                                 <img class="img-fluid margin-15-b" src="img/agriculture/news01.jpg" alt="Agriculture News">
-                                <span class="color-black-50 large">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
+                                <span class="font-color-black-50 large">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
                             </span>
 
-                            <span class="small color-black-muted border-t padding-10 block inline-block-1st">
+                            <span class="small font-color-black-muted border-t padding-10 block inline-block-1st">
                                 <svg class="icon margin-2-r"><use href="#clock"/></svg>
                                 <b class="margin-10-r">SEPTEMBER 21, 2019</b>
 
@@ -496,13 +496,13 @@
 
                             <span class="padding-15 block">
                                 <span class="xx-large block">New market prospects.</span>
-                                <b class="color-black-muted margin-15-b block">Social</b>
+                                <b class="font-color-black-muted margin-15-b block">Social</b>
 
                                 <img class="img-fluid margin-15-b" src="img/agriculture/news03.jpg" alt="Agriculture News">
-                                <span class="color-black-50 large">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
+                                <span class="font-color-black-50 large">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
                             </span>
 
-                            <span class="small color-black-muted border-t padding-10 block inline-block-1st">
+                            <span class="small font-color-black-muted border-t padding-10 block inline-block-1st">
                                 <svg class="icon margin-2-r"><use href="#clock"/></svg>
                                 <b class="margin-10-r">SEPTEMBER 09, 2019</b>
 
@@ -520,13 +520,13 @@
 
                             <span class="padding-15 block">
                                 <span class="xx-large block">About product breeding</span>
-                                <b class="color-black-muted margin-15-b block">Social</b>
+                                <b class="font-color-black-muted margin-15-b block">Social</b>
 
                                 <img class="img-fluid margin-15-b" src="img/agriculture/news04.jpg" alt="Agriculture News">
-                                <span class="color-black-50 large">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
+                                <span class="font-color-black-50 large">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
                             </span>
 
-                            <span class="small color-black-muted border-t padding-10 block inline-block-1st">
+                            <span class="small font-color-black-muted border-t padding-10 block inline-block-1st">
                                 <svg class="icon margin-2-r"><use href="#clock"/></svg>
                                 <b class="margin-10-r">SEPTEMBER 01, 2019</b>
 
@@ -544,13 +544,13 @@
 
                             <span class="padding-15 block">
                                 <span class="xx-large block">Ready to modern agriculture.</span>
-                                <b class="color-black-muted margin-15-b block">Social</b>
+                                <b class="font-color-black-muted margin-15-b block">Social</b>
 
                                 <img class="img-fluid margin-15-b" src="img/agriculture/news02.jpg" alt="Agriculture News">
-                                <span class="color-black-50 large">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
+                                <span class="font-color-black-50 large">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
                             </span>
 
-                            <span class="small color-black-muted border-t padding-10 block inline-block-1st">
+                            <span class="small font-color-black-muted border-t padding-10 block inline-block-1st">
                                 <svg class="icon margin-2-r"><use href="#clock"/></svg>
                                 <b class="margin-10-r">SEPTEMBER 30, 2019</b>
 
@@ -577,13 +577,13 @@
 
                             <span class="padding-15 block">
                                 <span class="xx-large block">Farmers happy now.</span>
-                                <b class="color-black-muted margin-15-b block">Customers</b>
+                                <b class="font-color-black-muted margin-15-b block">Customers</b>
 
                                 <img class="img-fluid margin-15-b" src="img/agriculture/news01.jpg" alt="Agriculture News">
-                                <span class="color-black-50 large">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
+                                <span class="font-color-black-50 large">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
                             </span>
 
-                            <span class="small color-black-muted border-t padding-10 block inline-block-1st">
+                            <span class="small font-color-black-muted border-t padding-10 block inline-block-1st">
                                 <svg class="icon margin-2-r"><use href="#clock"/></svg>
                                 <b class="margin-10-r">SEPTEMBER 21, 2019</b>
 
@@ -601,13 +601,13 @@
 
                             <span class="padding-15 block">
                                 <span class="xx-large block">Ready to modern agriculture.</span>
-                                <b class="color-black-muted margin-15-b block">Customers</b>
+                                <b class="font-color-black-muted margin-15-b block">Customers</b>
 
                                 <img class="img-fluid margin-15-b" src="img/agriculture/news02.jpg" alt="Agriculture News">
-                                <span class="color-black-50 large">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
+                                <span class="font-color-black-50 large">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
                             </span>
 
-                            <span class="small color-black-muted border-t padding-10 block inline-block-1st">
+                            <span class="small font-color-black-muted border-t padding-10 block inline-block-1st">
                                 <svg class="icon margin-2-r"><use href="#clock"/></svg>
                                 <b class="margin-10-r">SEPTEMBER 30, 2019</b>
 
@@ -625,13 +625,13 @@
 
                             <span class="padding-15 block">
                                 <span class="xx-large block">About product breeding</span>
-                                <b class="color-black-muted margin-15-b block">Customers</b>
+                                <b class="font-color-black-muted margin-15-b block">Customers</b>
 
                                 <img class="img-fluid margin-15-b" src="img/agriculture/news04.jpg" alt="Agriculture News">
-                                <span class="color-black-50 large">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
+                                <span class="font-color-black-50 large">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
                             </span>
 
-                            <span class="small color-black-muted border-t padding-10 block inline-block-1st">
+                            <span class="small font-color-black-muted border-t padding-10 block inline-block-1st">
                                 <svg class="icon margin-2-r"><use href="#clock"/></svg>
                                 <b class="margin-10-r">SEPTEMBER 01, 2019</b>
 
@@ -649,13 +649,13 @@
 
                             <span class="padding-15 block">
                                 <span class="xx-large block">New market prospects.</span>
-                                <b class="color-black-muted margin-15-b block">Customers</b>
+                                <b class="font-color-black-muted margin-15-b block">Customers</b>
 
                                 <img class="img-fluid margin-15-b" src="img/agriculture/news03.jpg" alt="Agriculture News">
-                                <span class="color-black-50 large">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
+                                <span class="font-color-black-50 large">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
                             </span>
 
-                            <span class="small color-black-muted border-t padding-10 block inline-block-1st">
+                            <span class="small font-color-black-muted border-t padding-10 block inline-block-1st">
                                 <svg class="icon margin-2-r"><use href="#clock"/></svg>
                                 <b class="margin-10-r">SEPTEMBER 09, 2019</b>
 
@@ -687,7 +687,7 @@
                 <h2 class="font-bold margin-10-b">Our Projects</h2>
                 <h3 class="ui-color margin-25-b">What we are doing?</h3>
 
-                <p class="color-black-50 x-large xs-align-c">Aliquam leo quam, laoreet quis luctus non, vulputate vitae elit. Pellentesque consequat eu mauris ac imperdiet. In dolor velit, pellentesque eu dignissim in, dignissim ac turpis. Sed lobortis diam ante, et posuere ligula convallis suscipit. Maecenas varius ultrices eros, eu vestibulum sem aliquet et.</p>
+                <p class="font-color-black-50 x-large xs-align-c">Aliquam leo quam, laoreet quis luctus non, vulputate vitae elit. Pellentesque consequat eu mauris ac imperdiet. In dolor velit, pellentesque eu dignissim in, dignissim ac turpis. Sed lobortis diam ante, et posuere ligula convallis suscipit. Maecenas varius ultrices eros, eu vestibulum sem aliquet et.</p>
 
                 <span class="sp-30"></span>
 
@@ -698,7 +698,7 @@
                             <span class="x-large">
                                 <svg class="icon icon-xxl left margin-20-r hidden-md ui-color"><use href="#trees"/></svg>
                                 <b>Sed nunc mauris, auctor tristique libero non tristique.</b>
-                                <span class="color-white-muted margin-15-t block hidden-md">
+                                <span class="font-color-white-muted margin-15-t block hidden-md">
                                     Nullam mollis molestie magna nec tincidunt. Phasellus mattis aliquet ex, vel gravida dui elementum ut. Ut euismod nisi in tellus luctus dictum et ut nulla. Sed scelerisque rutrum dui, et suscipit diam sagittis quis. Quisque dapibus varius ornare.
                                 </span>
                             </span>
@@ -775,9 +775,9 @@
                         </div>
                     </div>
                     <div class="col-450 padding-10 xs-align-c">
-                        <p class="color-black-50 x-large margin-30-b">
+                        <p class="font-color-black-50 x-large margin-30-b">
                             <span class="sp-15"></span>
-                            <b class="color-black">Cras non sagittis arcu, eget viverra nunc.</b>
+                            <b class="font-color-black">Cras non sagittis arcu, eget viverra nunc.</b>
                             <span class="sp-15"></span>
                             Suspendisse ut est mi. Nunc hendrerit suscipit ornare. Cras luctus nibh in metus semper lacinia ultricies non nulla.
                             <span class="sp-15"></span>
@@ -803,7 +803,7 @@
             <div class="col-static">
                 <div class="row">
                     <div class="col-4 sm-fluid">
-                        <h4 class="color-white-50 margin-30-b">Customer Service</h4>
+                        <h4 class="font-color-white-50 margin-30-b">Customer Service</h4>
                         <ul class="list-unstyled list-spacer-10 hoverline-2nd x-large">
                             <li><a href="#">Order Status</a></li>
                             <li><a href="#">Shipping</a></li>
@@ -815,7 +815,7 @@
                         </ul>
                     </div>
                     <div class="col-4 sm-fluid">
-                        <h4 class="color-white-50 margin-30-b">Who We Are</h4>
+                        <h4 class="font-color-white-50 margin-30-b">Who We Are</h4>
                         <ul class="list-unstyled list-spacer-10 hoverline-2nd x-large">
                             <li><a href="#">Good Works</a></li>
                             <li><a href="#">About Us</a></li>
@@ -826,7 +826,7 @@
                         </ul>
                     </div>
                     <div class="col-4 sm-fluid">
-                        <h4 class="color-white-50 margin-30-b">Quick Links</h4>
+                        <h4 class="font-color-white-50 margin-30-b">Quick Links</h4>
                         <ul class="list-unstyled list-spacer-10 hoverline-2nd x-large">
                             <li><a href="#">Educater &amp; Landscaper</a></li>
                             <li><a href="#">Discounts</a></li>

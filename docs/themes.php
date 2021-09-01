@@ -108,102 +108,102 @@
                 <b class="margin-5-b block">.theme-gray</b>
                 <div class="row row-gap-xs highlight xs-fluid theme-gray">
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-light-100">
+                        <div class="padding-10 round ui-bg-light-100">
                             <h4>.ui-bg-light-100</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-dark-200">bg-dark-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-light-200">
+                        <div class="padding-10 round ui-bg-light-200">
                             <h4>.ui-bg-light-200</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-dark-200">bg-dark-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-light-300">
+                        <div class="padding-10 round ui-bg-light-300">
                             <h4>.ui-bg-light-300</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-dark-200">bg-dark-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-dark-100">
+                        <div class="padding-10 round ui-bg-dark-100">
                             <h4>.ui-bg-dark-100</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-light-200">bg-light-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-dark-200">
+                        <div class="padding-10 round ui-bg-dark-200">
                             <h4>.ui-bg-dark-200</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-light-200">bg-light-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-dark-300">
+                        <div class="padding-10 round ui-bg-dark-300">
                             <h4>.ui-bg-dark-300</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-light-200">bg-light-200</a>
                             </div>
@@ -214,102 +214,102 @@
                 <b class="margin-5-b block">.theme-green</b>
                 <div class="row row-gap-xs highlight xs-fluid theme-green">
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-light-100">
+                        <div class="padding-10 round ui-bg-light-100">
                             <h4>.ui-bg-light-100</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-dark-200">bg-dark-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-light-200">
+                        <div class="padding-10 round ui-bg-light-200">
                             <h4>.ui-bg-light-200</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-dark-200">bg-dark-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-light-300">
+                        <div class="padding-10 round ui-bg-light-300">
                             <h4>.ui-bg-light-300</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-dark-200">bg-dark-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-dark-100">
+                        <div class="padding-10 round ui-bg-dark-100">
                             <h4>.ui-bg-dark-100</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-light-200">bg-light-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-dark-200">
+                        <div class="padding-10 round ui-bg-dark-200">
                             <h4>.ui-bg-dark-200</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-light-200">bg-light-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-dark-300">
+                        <div class="padding-10 round ui-bg-dark-300">
                             <h4>.ui-bg-dark-300</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-light-200">bg-light-200</a>
                             </div>
@@ -320,102 +320,102 @@
                 <b class="margin-5-b block">.theme-yellow</b>
                 <div class="row row-gap-xs highlight xs-fluid theme-yellow">
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-light-100">
+                        <div class="padding-10 round ui-bg-light-100">
                             <h4>.ui-bg-light-100</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-dark-200">bg-dark-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-light-200">
+                        <div class="padding-10 round ui-bg-light-200">
                             <h4>.ui-bg-light-200</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-dark-200">bg-dark-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-light-300">
+                        <div class="padding-10 round ui-bg-light-300">
                             <h4>.ui-bg-light-300</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-dark-200">bg-dark-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-dark-100">
+                        <div class="padding-10 round ui-bg-dark-100">
                             <h4>.ui-bg-dark-100</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-light-200">bg-light-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-dark-200">
+                        <div class="padding-10 round ui-bg-dark-200">
                             <h4>.ui-bg-dark-200</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-light-200">bg-light-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-dark-300">
+                        <div class="padding-10 round ui-bg-dark-300">
                             <h4>.ui-bg-dark-300</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-light-200">bg-light-200</a>
                             </div>
@@ -426,102 +426,102 @@
                 <b class="margin-5-b block">.theme-orange</b>
                 <div class="row row-gap-xs highlight xs-fluid theme-orange">
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-light-100">
+                        <div class="padding-10 round ui-bg-light-100">
                             <h4>.ui-bg-light-100</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-dark-200">bg-dark-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-light-200">
+                        <div class="padding-10 round ui-bg-light-200">
                             <h4>.ui-bg-light-200</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-dark-200">bg-dark-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-light-300">
+                        <div class="padding-10 round ui-bg-light-300">
                             <h4>.ui-bg-light-300</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-dark-200">bg-dark-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-dark-100">
+                        <div class="padding-10 round ui-bg-dark-100">
                             <h4>.ui-bg-dark-100</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-light-200">bg-light-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-dark-200">
+                        <div class="padding-10 round ui-bg-dark-200">
                             <h4>.ui-bg-dark-200</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-light-200">bg-light-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-dark-300">
+                        <div class="padding-10 round ui-bg-dark-300">
                             <h4>.ui-bg-dark-300</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-light-200">bg-light-200</a>
                             </div>
@@ -532,102 +532,102 @@
                 <b class="margin-5-b block">.theme-red</b>
                 <div class="row row-gap-xs highlight xs-fluid theme-red">
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-light-100">
+                        <div class="padding-10 round ui-bg-light-100">
                             <h4>.ui-bg-light-100</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-dark-200">bg-dark-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-light-200">
+                        <div class="padding-10 round ui-bg-light-200">
                             <h4>.ui-bg-light-200</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-dark-200">bg-dark-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-light-300">
+                        <div class="padding-10 round ui-bg-light-300">
                             <h4>.ui-bg-light-300</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-dark-200">bg-dark-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-dark-100">
+                        <div class="padding-10 round ui-bg-dark-100">
                             <h4>.ui-bg-dark-100</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-light-200">bg-light-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-dark-200">
+                        <div class="padding-10 round ui-bg-dark-200">
                             <h4>.ui-bg-dark-200</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-light-200">bg-light-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-dark-300">
+                        <div class="padding-10 round ui-bg-dark-300">
                             <h4>.ui-bg-dark-300</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-light-200">bg-light-200</a>
                             </div>
@@ -638,102 +638,102 @@
                 <b class="margin-5-b block">.theme-default</b>
                 <div class="row row-gap-xs highlight xs-fluid theme-default">
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-light-100">
+                        <div class="padding-10 round ui-bg-light-100">
                             <h4>.ui-bg-light-100</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-dark-200">bg-dark-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-light-200">
+                        <div class="padding-10 round ui-bg-light-200">
                             <h4>.ui-bg-light-200</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-dark-200">bg-dark-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-light-300">
+                        <div class="padding-10 round ui-bg-light-300">
                             <h4>.ui-bg-light-300</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-dark-200">bg-dark-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-dark-100">
+                        <div class="padding-10 round ui-bg-dark-100">
                             <h4>.ui-bg-dark-100</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-light-200">bg-light-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-dark-200">
+                        <div class="padding-10 round ui-bg-dark-200">
                             <h4>.ui-bg-dark-200</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-light-200">bg-light-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-dark-300">
+                        <div class="padding-10 round ui-bg-dark-300">
                             <h4>.ui-bg-dark-300</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-light-200">bg-light-200</a>
                             </div>
@@ -744,102 +744,102 @@
                 <b class="margin-5-b block">.theme-default2</b>
                 <div class="row row-gap-xs highlight xs-fluid theme-default2">
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-light-100">
+                        <div class="padding-10 round ui-bg-light-100">
                             <h4>.ui-bg-light-100</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-dark-200">bg-dark-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-light-200">
+                        <div class="padding-10 round ui-bg-light-200">
                             <h4>.ui-bg-light-200</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-dark-200">bg-dark-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-light-300">
+                        <div class="padding-10 round ui-bg-light-300">
                             <h4>.ui-bg-light-300</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-dark-200">bg-dark-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-dark-100">
+                        <div class="padding-10 round ui-bg-dark-100">
                             <h4>.ui-bg-dark-100</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-light-200">bg-light-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-dark-200">
+                        <div class="padding-10 round ui-bg-dark-200">
                             <h4>.ui-bg-dark-200</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-light-200">bg-light-200</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 col-md-4 col-sm-6">
-                        <div class="padding-20 round ui-bg-dark-300">
+                        <div class="padding-10 round ui-bg-dark-300">
                             <h4>.ui-bg-dark-300</h4>
-                            <div class="color-white-muted margin-5-b">
-                                <b>color-white-muted</b>
+                            <div class="font-color-white-muted margin-5-b">
+                                <b>font-color-white-muted</b>
                             </div>
-                            <a href="#" class="color-white-muted btn block round ease-btn">color-white-muted</a>
-                            <div class="color-black-muted margin-5-b margin-15-t">
-                                <b>color-black-muted</b>
+                            <a href="#" class="font-color-white-muted btn block round ease-btn">font-color-white-muted</a>
+                            <div class="font-color-black-muted margin-5-b margin-15-t">
+                                <b>font-color-black-muted</b>
                             </div>
                             <div class="block-1st ease-1st-btn">
-                                <a href="#" class="btn round margin-15-b color-black-muted">color-black-muted</a>
+                                <a href="#" class="btn round margin-15-b font-color-black-muted">font-color-black-muted</a>
                                 <a href="#" class="btn round margin-5-b">bg-dark-200</a>
                                 <a href="#" class="btn round ui-bg-light-200">bg-light-200</a>
                             </div>

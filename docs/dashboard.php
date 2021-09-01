@@ -22,13 +22,13 @@
                 <div class="tabs align-l icons-no-opacity theme-panel2 ease-tabs ease-1st-btn scroll-v add-mobile-menu-l" data-ui-classes="ui-color">
 
                     <div class="padding-10">
-                        <div class="small margin-10-b color-white-muted">Personal Activity</div>
+                        <div class="small margin-10-b font-color-white-muted">Personal Activity</div>
 
                         <div class="btn-holder align-c round ease-1st-btn">
                             <button class="btn btn-multi padding-10-v round">
 
                                 <span class="xx-large">13</span>
-                                <span class="small color-white-muted margin-5-b block">Waiting</span>
+                                <span class="small font-color-white-muted margin-5-b block">Waiting</span>
                                 <span class="progress-bar round border-dual">
                                     <span class="ui-bg-dark-100 stripe-light" style="width: 65%;"></span>
                                 </span>
@@ -37,7 +37,7 @@
                             <button class="btn btn-multi padding-10-v round">
 
                                 <span class="xx-large">3</span>
-                                <span class="small color-white-muted margin-5-b block">Paused</span>
+                                <span class="small font-color-white-muted margin-5-b block">Paused</span>
                                 <span class="progress-bar round border-dual">
                                     <span class="ui-bg-dark-100 stripe-light" style="width: 35%;"></span>
                                 </span>
@@ -46,7 +46,7 @@
                             <button class="btn btn-multi padding-10-v round">
 
                                 <span class="xx-large">16</span>
-                                <span class="small color-white-muted margin-5-b block">Delayed</span>
+                                <span class="small font-color-white-muted margin-5-b block">Delayed</span>
                                 <span class="progress-bar round border-dual">
                                     <span class="ui-bg-dark-100 stripe-light" style="width: 75%;"></span>
                                 </span>
@@ -213,21 +213,21 @@
             <header class="col-12 align-r icons-no-opacity shadow-sm form-lg ease-layout sidebar-opened" data-ui-classes="shadow-lg">
 
                 <div class="align-c left ease-1st-btn">
-                    <button class="sidebar-show btn color-black-muted btn-ghost padding-10 circle visible-lg hidden" data-ui-tooltip title="Toggle Sidebar">
+                    <button class="sidebar-show btn font-color-black-muted btn-ghost padding-10 circle visible-lg hidden" data-ui-tooltip title="Toggle Sidebar">
                         <svg class="icon"><use href="#angle-right"/></svg>
                     </button>
-                    <button class="btn color-black-muted btn-ghost padding-10 circle show-mobile-menu-l hidden-lg" data-ui-tooltip title="Show Sidebar" data-ui-only="desktop">
+                    <button class="btn font-color-black-muted btn-ghost padding-10 circle show-mobile-menu-l hidden-lg" data-ui-tooltip title="Show Sidebar" data-ui-only="desktop">
                         <svg class="icon"><use href="#bars-left"/></svg>
                     </button>
-                    <button class="btn color-black-muted btn-ghost padding-10 circle" onclick="ui.modal.open({source: '.search', bg: 'false'});" data-ui-tooltip data-ui-only="desktop" title="Search">
+                    <button class="btn font-color-black-muted btn-ghost padding-10 circle" onclick="ui.modal.open({source: '.search', bg: 'false'});" data-ui-tooltip data-ui-only="desktop" title="Search">
                         <svg class="icon"><use href="#search"/></svg>
                     </button>
                     <div class="dropdown nav ease-dropdown">
-                        <button class="btn color-black-muted btn-ghost padding-10 circle hidden-sm">
+                        <button class="btn font-color-black-muted btn-ghost padding-10 circle hidden-sm">
                             My Jobs
                             <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
                         </button>
-                        <button class="btn color-black-muted btn-ghost padding-10 circle visible-sm">
+                        <button class="btn font-color-black-muted btn-ghost padding-10 circle visible-sm">
                             <svg class="icon"><use href="#angle-down"/></svg>
                         </button>
                         <ul class="content list-column-2 has-icon round shadow-lg">
@@ -245,13 +245,13 @@
 
                 <div class="inline">
                     <div class="dropdown menu-l ease-dropdown">
-                        <button class="btn color-black-muted btn-square btn-ghost circle" data-ui-notifier data-ui-tooltip="l" data-ui-only="desktop" title="Personal Logs">
+                        <button class="btn font-color-black-muted btn-square btn-ghost circle" data-ui-notifier data-ui-tooltip="l" data-ui-only="desktop" title="Personal Logs">
                             <svg class="icon"><use href="#grid-column"/></svg>
                         </button>
                         <div class="content round shadow-lg no-scroll">
                             <div class="tabs xs-full-width theme-panel2" data-ui-classes="border-b border-lg ui-border ui-color" style="min-width: 300px;">
 
-                                <div class="btn-holder color-black-muted align-c border-b ease-1st-btn">
+                                <div class="btn-holder font-color-black-muted align-c border-b ease-1st-btn">
                                     <button class="tab btn btn-ghost round-t border-b border-lg ui-border ui-color active" data-ui-tooltip data-ui-only="desktop" title="Favorites">
                                         <svg class="icon ui-no"><use href="#star"/></svg>
                                     </button>
@@ -323,13 +323,13 @@
                         </div>
                     </div>
                     <div class="dropdown menu-l ease-dropdown">
-                        <button class="btn color-black-muted btn-square btn-ghost circle" data-ui-notifier data-ui-tooltip="l" data-ui-only="desktop" title="Notification Center">
+                        <button class="btn font-color-black-muted btn-square btn-ghost circle" data-ui-notifier data-ui-tooltip="l" data-ui-only="desktop" title="Notification Center">
                             <svg class="icon"><use href="#bars-right"/></svg>
                         </button>
                         <div class="content round shadow-lg no-scroll">
                             <div class="tabs xs-full-width theme-panel2 ease-tabs" data-ui-classes="border-b border-lg ui-border ui-color" style="min-width: 300px;">
 
-                                <div class="btn-holder color-black-muted align-c border-b ease-1st-btn">
+                                <div class="btn-holder font-color-black-muted align-c border-b ease-1st-btn">
                                     <button class="tab btn btn-ghost round-t border-b border-lg ui-border ui-color active" data-ui-tooltip data-ui-only="desktop" title="Notifications">
                                         <svg class="icon ui-no"><use href="#bell"/></svg>
                                     </button>
@@ -512,7 +512,7 @@
                         </ul>
                     </span>
                     <span class="margin-3-t inline-block hidden-xs">aeminyuce</span>
-                    <span class="small color-black-50 block hidden-xs">Premium</span>
+                    <span class="small font-color-black-50 block hidden-xs">Premium</span>
                 </div>
 
             </header>
@@ -525,7 +525,7 @@
                     <div class="row border-b margin-15-b theme-panel2">
                         <div class="col-4 offset-4 no-padding-b">
 
-                            <div class="btn-holder color-black-muted form-lg ease-1st-btn">
+                            <div class="btn-holder font-color-black-muted form-lg ease-1st-btn">
                                 <button class="tab btn btn-ghost round-t border-lg border-b ui-border ui-color active">Forms</button>
                                 <button class="tab btn btn-ghost round-t">Dashboard</button>
                             </div>
@@ -745,7 +745,7 @@
                                                     <div class="row no-row-gap-h row-gap-md-v">
                                                         <div class="col-12">
                                                             <div class="x-large">Pending</div>
-                                                            <span class="color-black-muted large">Total: 45%</span>
+                                                            <span class="font-color-black-muted large">Total: 45%</span>
                                                         </div>
                                                     </div>
                                                     <div class="col-100 align-r">
@@ -755,8 +755,8 @@
                                                 <div class="progress-bar margin-15-t progress round">
                                                     <span class="ui-bg-dark-100 stripe-light" style="width: 45%;"></span>
                                                 </div>
-                                                <p class="color-black-muted large margin-5-b">Pending for the transaction.</p>
-                                                <p class="color-black-muted">
+                                                <p class="font-color-black-muted large margin-5-b">Pending for the transaction.</p>
+                                                <p class="font-color-black-muted">
                                                     <svg class="icon icon-xs"><use href="#clock"/></svg>
                                                     <span class="inline-block">Last updated: 15:12</span>
                                                 </p>
@@ -768,7 +768,7 @@
                                                     <div class="row no-row-gap-h row-gap-md-v">
                                                         <div class="col-12">
                                                             <div class="x-large">Paused</div>
-                                                            <span class="color-black-muted large">Total: 5%</span>
+                                                            <span class="font-color-black-muted large">Total: 5%</span>
                                                         </div>
                                                     </div>
                                                     <div class="col-100 align-r">
@@ -778,8 +778,8 @@
                                                 <div class="progress-bar margin-15-t progress round">
                                                     <span class="ui-bg-dark-100 stripe-light" style="width: 5%;"></span>
                                                 </div>
-                                                <p class="color-black-muted large margin-5-b">Paused for the some reasons.</p>
-                                                <p class="color-black-muted">
+                                                <p class="font-color-black-muted large margin-5-b">Paused for the some reasons.</p>
+                                                <p class="font-color-black-muted">
                                                     <svg class="icon icon-xs"><use href="#clock"/></svg>
                                                     <span class="inline-block">Last updated: 15:12</span>
                                                 </p>
@@ -791,7 +791,7 @@
                                                     <div class="row no-row-gap-h row-gap-md-v">
                                                         <div class="col-12">
                                                             <div class="x-large">Completed</div>
-                                                            <span class="color-black-muted large">Total: 80%</span>
+                                                            <span class="font-color-black-muted large">Total: 80%</span>
                                                         </div>
                                                     </div>
                                                     <div class="col-100 align-r">
@@ -801,8 +801,8 @@
                                                 <div class="progress-bar margin-15-t progress round">
                                                     <span class="ui-bg-dark-100 stripe-light" style="width: 80%;"></span>
                                                 </div>
-                                                <p class="color-black-muted large margin-5-b">Reached for the expert.</p>
-                                                <p class="color-black-muted">
+                                                <p class="font-color-black-muted large margin-5-b">Reached for the expert.</p>
+                                                <p class="font-color-black-muted">
                                                     <svg class="icon icon-xs"><use href="#clock"/></svg>
                                                     <span class="inline-block">Last updated: 15:12</span>
                                                 </p>
@@ -814,7 +814,7 @@
                                                     <div class="row no-row-gap-h row-gap-md-v">
                                                         <div class="col-12">
                                                             <div class="align-l x-large">On Payment</div>
-                                                            <span class="color-black-muted large">Total: 67%</span>
+                                                            <span class="font-color-black-muted large">Total: 67%</span>
                                                         </div>
                                                     </div>
                                                     <div class="col-100 align-r">
@@ -824,8 +824,8 @@
                                                 <div class="progress-bar margin-15-t progress round">
                                                     <span class="ui-bg-dark-100 stripe-light" style="width: 67%;"></span>
                                                 </div>
-                                                <p class="color-black-muted large margin-5-b">Confirmed for payment.</p>
-                                                <p class="color-black-muted">
+                                                <p class="font-color-black-muted large margin-5-b">Confirmed for payment.</p>
+                                                <p class="font-color-black-muted">
                                                     <svg class="icon icon-xs"><use href="#clock"/></svg>
                                                     <span class="inline-block">Last updated: 15:12</span>
                                                 </p>
@@ -837,7 +837,7 @@
                                         <button class="carousel-prev btn btn-ghost btn-square round">
                                             <svg class="icon"><use href="#angle-left"/></svg>
                                         </button>
-                                        <span class="dots color-black-muted"></span>
+                                        <span class="dots font-color-black-muted"></span>
                                         <button class="carousel-next btn btn-ghost btn-square round">
                                             <svg class="icon"><use href="#angle-right"/></svg>
                                         </button>
@@ -862,7 +862,7 @@
                                         <div class="row row no-row-gap-h row-gap-md-v">
                                             <div class="col-12 large">
                                                 <div class="large font-bold">Total Progress</div>
-                                                <span class="color-black-muted">23% Change</span>
+                                                <span class="font-color-black-muted">23% Change</span>
                                             </div>
                                         </div>
                                         <div class="col-150 align-r">
@@ -873,7 +873,7 @@
                                         <div class="col-6">
                                             <div class="donut-chart automargin ease-donut-chart" style="max-width: 150px;">
                                                 <strong>
-                                                    <b class="color-black-50 margin-2-b block">69%</b>
+                                                    <b class="font-color-black-50 margin-2-b block">69%</b>
                                                     Payments
                                                 </strong>
                                                 <svg viewBox="0 0 160 160">
@@ -891,8 +891,8 @@
                                         </div>
                                     </div>
                                     <span class="sp-3"></span>
-                                    <p class="color-black-50 large margin-5-b">Daily reports that all received.</p>
-                                    <p class="color-black-muted">
+                                    <p class="font-color-black-50 large margin-5-b">Daily reports that all received.</p>
+                                    <p class="font-color-black-muted">
                                         <svg class="icon icon-xs margin-5-r"><use href="#clock"/></svg>
                                         <span class="inline-block">Last updated: 15:12</span>
                                     </p>
@@ -903,7 +903,7 @@
                                 <div class="card full-h padding-15 padding-10-t round shadow-lg" style="min-height: 350px;">
                                     <div class="tabs theme-panel2 ease-tabs" data-ui-classes="border-b border-lg ui-border ui-color">
 
-                                        <div class="btn-holder color-black-muted align-c margin-10-b border-b form-lg ease-1st-btn">
+                                        <div class="btn-holder font-color-black-muted align-c margin-10-b border-b form-lg ease-1st-btn">
                                             <button class="tab btn btn-ghost round-t border-b border-lg ui-border ui-color active">Delayed</button>
                                             <button class="tab btn btn-ghost round-t">Paused</button>
                                         </div>
@@ -912,63 +912,63 @@
                                                 <ul class="ease-list-group">
                                                     <li class="no-border">
                                                         <span class="donut-chart col-42 right ease-donut-chart">
-                                                            <strong class="color-black-muted x-small">88%</strong>
+                                                            <strong class="font-color-black-muted x-small">88%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="88" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">AAC-2019-013:AGF</b>
-                                                        <span class="color-black-50 small">3814 Reports</span>
+                                                        <span class="font-color-black-50 small">3814 Reports</span>
                                                     </li>
                                                     <li class="no-border">
                                                         <span class="donut-chart col-42 right ease-donut-chart">
-                                                            <strong class="color-black-muted x-small">76%</strong>
+                                                            <strong class="font-color-black-muted x-small">76%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="76" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">BDA-2019-642</b>
-                                                        <span class="color-black-50 small">2613 Reports</span>
+                                                        <span class="font-color-black-50 small">2613 Reports</span>
                                                     </li>
                                                     <li class="no-border">
                                                         <span class="donut-chart col-42 right ease-donut-chart">
-                                                            <strong class="color-black-muted x-small">69%</strong>
+                                                            <strong class="font-color-black-muted x-small">69%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="69" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">DDG-2019-505:AG</b>
-                                                        <span class="color-black-50 small">1890 Reports</span>
+                                                        <span class="font-color-black-50 small">1890 Reports</span>
                                                     </li>
                                                     <li class="no-border">
                                                         <span class="donut-chart col-42 right ease-donut-chart">
-                                                            <strong class="color-black-muted x-small">52%</strong>
+                                                            <strong class="font-color-black-muted x-small">52%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="52" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">OOC-2019-781:F</b>
-                                                        <span class="color-black-50 small">1605 Reports</span>
+                                                        <span class="font-color-black-50 small">1605 Reports</span>
                                                     </li>
                                                     <li class="no-border">
                                                         <span class="donut-chart col-42 right ease-donut-chart">
-                                                            <strong class="color-black-muted x-small">36%</strong>
+                                                            <strong class="font-color-black-muted x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">BDD-2019-047:G</b>
-                                                        <span class="color-black-50 small">812 Reports</span>
+                                                        <span class="font-color-black-50 small">812 Reports</span>
                                                     </li>
                                                     <li class="no-border">
                                                         <span class="donut-chart col-42 right ease-donut-chart">
-                                                            <strong class="color-black-muted x-small">36%</strong>
+                                                            <strong class="font-color-black-muted x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">RAC-2019-973</b>
-                                                        <span class="color-black-50 small">616 Reports</span>
+                                                        <span class="font-color-black-50 small">616 Reports</span>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -978,63 +978,63 @@
                                                 <ul class="ease-list-group">
                                                     <li class="no-border">
                                                         <span class="donut-chart col-42 right ease-donut-chart">
-                                                            <strong class="color-black-muted x-small">88%</strong>
+                                                            <strong class="font-color-black-muted x-small">88%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="88" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">AAC-2019-013:AGF</b>
-                                                        <span class="color-black-50 small">3814 Reports</span>
+                                                        <span class="font-color-black-50 small">3814 Reports</span>
                                                     </li>
                                                     <li class="no-border">
                                                         <span class="donut-chart col-42 right ease-donut-chart">
-                                                            <strong class="color-black-muted x-small">76%</strong>
+                                                            <strong class="font-color-black-muted x-small">76%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="76" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">BDA-2019-642</b>
-                                                        <span class="color-black-50 small">2613 Reports</span>
+                                                        <span class="font-color-black-50 small">2613 Reports</span>
                                                     </li>
                                                     <li class="no-border">
                                                         <span class="donut-chart col-42 right ease-donut-chart">
-                                                            <strong class="color-black-muted x-small">69%</strong>
+                                                            <strong class="font-color-black-muted x-small">69%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="69" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">DDG-2019-505:AG</b>
-                                                        <span class="color-black-50 small">1890 Reports</span>
+                                                        <span class="font-color-black-50 small">1890 Reports</span>
                                                     </li>
                                                     <li class="no-border">
                                                         <span class="donut-chart col-42 right ease-donut-chart">
-                                                            <strong class="color-black-muted x-small">52%</strong>
+                                                            <strong class="font-color-black-muted x-small">52%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="52" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">OOC-2019-781:F</b>
-                                                        <span class="color-black-50 small">1605 Reports</span>
+                                                        <span class="font-color-black-50 small">1605 Reports</span>
                                                     </li>
                                                     <li class="no-border">
                                                         <span class="donut-chart col-42 right ease-donut-chart">
-                                                            <strong class="color-black-muted x-small">36%</strong>
+                                                            <strong class="font-color-black-muted x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">BDD-2019-047:G</b>
-                                                        <span class="color-black-50 small">812 Reports</span>
+                                                        <span class="font-color-black-50 small">812 Reports</span>
                                                     </li>
                                                     <li class="no-border">
                                                         <span class="donut-chart col-42 right ease-donut-chart">
-                                                            <strong class="color-black-muted x-small">36%</strong>
+                                                            <strong class="font-color-black-muted x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
                                                             </svg>
                                                         </span>
                                                         <b class="margin-5-t block">RAC-2019-973</b>
-                                                        <span class="color-black-50 small">616 Reports</span>
+                                                        <span class="font-color-black-50 small">616 Reports</span>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1116,7 +1116,7 @@
                                 <div class="card full-h padding-15 padding-10-t round shadow-lg" style="min-height: 350px;">
                                     <div class="tabs form-lg theme-panel2 ease-tabs" data-ui-classes="border-b border-lg ui-border ui-color">
 
-                                        <div class="btn-holder color-black-muted align-c margin-10-b border-b ease-1st-btn">
+                                        <div class="btn-holder font-color-black-muted align-c margin-10-b border-b ease-1st-btn">
                                             <button class="tab btn btn-ghost round-t border-b border-lg ui-border ui-color active">News</button>
                                             <button class="tab btn btn-ghost round-t">Announcements</button>
                                         </div>
@@ -1838,7 +1838,7 @@
 
         <form action="#successful">
             <h2>Search</h2>
-            <p class="large color-white-50 xs-align-c">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada purus eget enim tempus, sed faucibus ante blandit. Morbi a pharetra sapien.</p>
+            <p class="large font-color-white-50 xs-align-c">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada purus eget enim tempus, sed faucibus ante blandit. Morbi a pharetra sapien.</p>
 
             <div class="col-static no-fluid">
                 <div class="row no-row-gap-h">
@@ -1864,21 +1864,21 @@
                     <a class="btn btn-multi no-line-height round ui-bg-dark-100" href="#">
                         <svg class="icon"><use href="#news"/></svg>
                         <span class="x-large block margin-5-t">News</span>
-                        <span class="color-white-50">589</span>
+                        <span class="font-color-white-50">589</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-bg-dark-100" href="#">
                         <svg class="icon"><use href="#calendar-check"/></svg>
                         <span class="x-large block margin-5-t">Events</span>
-                        <span class="color-white-50">219</span>
+                        <span class="font-color-white-50">219</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-bg-dark-100" href="#">
                         <svg class="icon"><use href="#files"/></svg>
                         <span class="x-large block margin-5-t">Documents</span>
-                        <span class="color-white-50">701</span>
+                        <span class="font-color-white-50">701</span>
                     </a>
                 </div>
             </div>

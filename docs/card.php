@@ -206,7 +206,7 @@
                             <svg class="icon"><use href="#remove"/></svg>
                         </button>
                         <h4>
-                            <svg class="icon icon-lg color-green"><use href="#comment"/></svg>
+                            <svg class="icon icon-lg font-color-green"><use href="#comment"/></svg>
                             Message Title
                         </h4>
                         <p class="large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
@@ -217,7 +217,7 @@
                             <svg class="icon"><use href="#remove"/></svg>
                         </button>
                         <h4>
-                            <svg class="icon icon-lg color-red"><use href="#comment-lines-fill"/></svg>
+                            <svg class="icon icon-lg font-color-red"><use href="#comment-lines-fill"/></svg>
                             Message Title
                         </h4>
                         <p class="large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
@@ -228,7 +228,7 @@
                             <svg class="icon"><use href="#remove"/></svg>
                         </button>
                         <h4>
-                            <svg class="icon icon-lg color-yellow"><use href="#comment"/></svg>
+                            <svg class="icon icon-lg font-color-yellow"><use href="#comment"/></svg>
                             Message Title
                         </h4>
                         <p class="large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
@@ -239,7 +239,7 @@
                             <svg class="icon"><use href="#remove"/></svg>
                         </button>
                         <h4>
-                            <svg class="icon icon-lg color-black-50"><use href="#comment-lines-fill"/></svg>
+                            <svg class="icon icon-lg font-color-black-50"><use href="#comment-lines-fill"/></svg>
                             Message Title
                         </h4>
                         <p class="large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>

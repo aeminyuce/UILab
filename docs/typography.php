@@ -5,29 +5,29 @@
 
                 <h4>Headings</h4>
                 <div class="padding-30-b">
-                    <h1>H1 Heading <small class="color-black-muted">Secondary text</small></h1>
-                    <h2>H2 Heading <small class="color-black-muted">Secondary text</small></h2>
-                    <h3>H3 Heading <small class="color-black-muted">Secondary text</small></h3>
-                    <h4>H4 Heading <small class="color-black-muted">Secondary text</small></h4>
-                    <h5>H5 Heading <small class="color-black-muted">Secondary text</small></h5>
-                    <h6>H6 Heading <small class="color-black-muted">Secondary text</small></h6>
+                    <h1>H1 Heading <small class="font-color-black-muted">Secondary text</small></h1>
+                    <h2>H2 Heading <small class="font-color-black-muted">Secondary text</small></h2>
+                    <h3>H3 Heading <small class="font-color-black-muted">Secondary text</small></h3>
+                    <h4>H4 Heading <small class="font-color-black-muted">Secondary text</small></h4>
+                    <h5>H5 Heading <small class="font-color-black-muted">Secondary text</small></h5>
+                    <h6>H6 Heading <small class="font-color-black-muted">Secondary text</small></h6>
                 </div>
 
                 <h4>Font Colors</h4>
                 <div class="padding-30-b">
                     <div class="theme-gray ui-bg-dark-100">
-                        <span class="color-white">.color-white</span>
-                        <span class="color-white">.color-white-50</span>
-                        <span class="color-white-muted">.color-white-muted</span>
+                        <span class="font-color-white">.font-color-white</span>
+                        <span class="font-color-white">.font-color-white-50</span>
+                        <span class="font-color-white-muted">.font-color-white-muted</span>
                     </div>
-                    <span class="color-black-muted">.color-black-muted</span>
-                    <span class="color-black-50">.color-black-50</span>
-                    <span class="color-black">.color-black</span>
+                    <span class="font-color-black-muted">.font-color-black-muted</span>
+                    <span class="font-color-black-50">.font-color-black-50</span>
+                    <span class="font-color-black">.font-color-black</span>
                     <span class="clearfix"></span>
-                    <span class="color-green">.color-green</span>
-                    <span class="color-yellow">.color-yellow</span>
-                    <span class="color-red">.color-red</span>
-                    <span class="color-orange">.color-orange</span>
+                    <span class="font-color-green">.font-color-green</span>
+                    <span class="font-color-yellow">.font-color-yellow</span>
+                    <span class="font-color-red">.font-color-red</span>
+                    <span class="font-color-orange">.font-color-orange</span>
                     <span class="clearfix"></span>
                 </div>
 

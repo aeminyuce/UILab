@@ -10,9 +10,9 @@
                 <form id="login" class="tab-content open open-ease" action="#">
 
                     <h3 class="margin-30-b">Login to continue</h3>
-                    <p class="color-black-muted large">Sign in to create, discover and connect with the global community.</p>
+                    <p class="font-color-black-muted large">Sign in to create, discover and connect with the global community.</p>
 
-                    <label class="form-label color-black-50">User Name</label>
+                    <label class="form-label font-color-black-50">User Name</label>
                     <div class="text text-icon round border-dual ease-form">
                         <svg class="icon"><use href="#user"/></svg>
                         <input class="required" type="text" placeholder="Enter user name" minlength="3" autocomplete="username">
@@ -21,7 +21,7 @@
 
                     <span class="sp-15"></span>
 
-                    <label class="form-label color-black-50">Password</label>
+                    <label class="form-label font-color-black-50">Password</label>
                     <div class="text text-icon round border-dual ease-form">
                         <button type="button" title="Toggle Password" class="show-pass">
                             <svg class="icon"><use href="#eye-fill"/></svg>
@@ -42,11 +42,11 @@
 
                     <span class="sp-30"></span>
 
-                    <button type="submit" class="go-signup-btn btn color-white block round hover-scale hover-shadow ease-btn">
+                    <button type="submit" class="go-signup-btn btn font-color-white block round hover-scale hover-shadow ease-btn">
                         <b>LOGIN</b>
                     </button>
                     <span class="sp-15"></span>
-                    <button class="tab btn btn-ghost color-black-50 round block ease-btn" data-ui-id="lost-password">
+                    <button class="tab btn btn-ghost font-color-black-50 round block ease-btn" data-ui-id="lost-password">
                         <svg class="icon margin-5-r no-opacity"><use href="#lock"/></svg> Forgot password?
                     </button>
 
@@ -55,9 +55,9 @@
                 <form id="lost-password" class="tab-content" action="#">
 
                     <h3 class="margin-30-b">Forgot password?</h3>
-                    <p class="color-black-muted large">Please enter your email address. You will receive a link to create a new password via email.</p>
+                    <p class="font-color-black-muted large">Please enter your email address. You will receive a link to create a new password via email.</p>
 
-                    <label class="form-label color-black-50">Your email</label>
+                    <label class="form-label font-color-black-50">Your email</label>
                     <div class="text text-icon round border-dual ease-form">
                         <svg class="icon"><use href="#at"/></svg>
                         <input class="required" type="email" placeholder="Enter email" minlength="3">
@@ -66,11 +66,11 @@
 
                     <span class="sp-30"></span>
 
-                    <button type="submit" class="go-signup-btn btn color-white block round hover-scale hover-shadow ease-btn">
+                    <button type="submit" class="go-signup-btn btn font-color-white block round hover-scale hover-shadow ease-btn">
                         <b>Reset Password</b>
                     </button>
                     <span class="sp-15"></span>
-                    <button class="tab btn btn-ghost color-black-50 round block ease-btn" data-ui-id="login">
+                    <button class="tab btn btn-ghost font-color-black-50 round block ease-btn" data-ui-id="login">
                         <svg class="icon margin-5-r no-opacity"><use href="#long-arrow-left"/></svg> Back to login
                     </button>
 
@@ -84,7 +84,7 @@
 
                 <div class="full-w set-absolute set-c">
                     <h1 class="hidden-md">Create your account</h1>
-                    <p class="x-large color-white-muted">Sign up to create, discover and connect with the global community.</p>
+                    <p class="x-large font-color-white-muted">Sign up to create, discover and connect with the global community.</p>
                     <span class="sp-30"></span>
                     <a href="?l=sign-up-page" class="login-btn btn btn-lg btn-sm-fluid padding-30-h circle hover-scale hover-shadow ease-btn"><b>SIGN UP NOW</b></a>
                 </div>
@@ -99,7 +99,7 @@
 
             </div>
 
-            <svg class="icon color-white visible-lg"><use href="#users"/></svg>
+            <svg class="icon font-color-white visible-lg"><use href="#users"/></svg>
 
         </div>
     </div>
