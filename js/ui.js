@@ -749,6 +749,8 @@ ui.darkMode = {};
 
     ui.onload(function () {
 
+        if (ui.userAgents.ie) { return; } // change event listener for darkColorScheme not supported on IE!
+
         var mode, doc, darkColorScheme, state;
 
         mode = 'light';
