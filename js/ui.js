@@ -731,7 +731,17 @@ ui.userAgents = {
 }());
 
 // Dark Mode
-ui.darkMode = {};
+ui.darkMode = {
+    target: document,
+
+    storageTest: 'ui-darkMode-test',
+    storage: 'ui-darkMode',
+
+    colorScheme: '(prefers-color-scheme: dark)',
+
+    toggleBtn: '.btn-toggle-darkmode',
+    dataTheme: 'data-ui-theme'
+};
 
 (function () {
 
@@ -741,7 +751,7 @@ ui.darkMode = {};
 
     // test for storage is supported?
     try {
-        sessionStorage.setItem('ui-darkMode-test', 0);
+        sessionStorage.setItem(ui.darkMode.storageTest, 0);
 
     } catch (e) {
         testStorage = false;
@@ -754,9 +764,9 @@ ui.darkMode = {};
         var mode, doc, darkColorScheme, state;
 
         mode = 'light';
-        doc = ui.find(document)[0];
+        doc = ui.find(ui.darkMode.target)[0];
 
-        darkColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
+        darkColorScheme = window.matchMedia(ui.darkMode.colorScheme);
 
         // set current theme color
         if (window.matchMedia) {
@@ -770,19 +780,19 @@ ui.darkMode = {};
         // check stored theme color
         if (testStorage && sessionStorage !== undefined) {
 
-            state = sessionStorage.getItem('ui-darkMode-color')
+            state = sessionStorage.getItem(ui.darkMode.storage)
             if (state !== null && state !== null) {
                 mode = state;
             }
         }
 
-        doc.setAttribute('data-ui-theme', mode);
+        doc.setAttribute(ui.darkMode.dataTheme, mode);
 
         // Event Listeners
         function setState(mode) { // set theme state
 
             if (testStorage && sessionStorage !== undefined) {
-                sessionStorage.setItem('ui-darkMode-color', mode);
+                sessionStorage.setItem(ui.darkMode.storage, mode);
             }
 
         }
@@ -790,24 +800,24 @@ ui.darkMode = {};
         ui.on(darkColorScheme, 'change', function () {
 
             if(darkColorScheme.matches) { mode = 'dark'; } else { mode= 'light'; }
-            doc.setAttribute('data-ui-theme', mode);
+            doc.setAttribute(ui.darkMode.dataTheme, mode);
 
             setState(mode);
 
         });
 
-        ui.on(document, 'click', '.btn-toggle-color', function (e) {
+        ui.on(document, 'click', ui.darkMode.toggleBtn, function (e) {
 
             e.preventDefault();
 
             // toggle theme color
-            var current = doc.getAttribute('data-ui-theme');
+            var current = doc.getAttribute(ui.darkMode.dataTheme);
 
             if (current !== null && current !== '') {
                 if (current === 'dark') { mode = 'light'; } else { mode = 'dark'; }
             }
 
-            doc.setAttribute('data-ui-theme', mode);
+            doc.setAttribute(ui.darkMode.dataTheme, mode);
             setState(mode);
 
         });
