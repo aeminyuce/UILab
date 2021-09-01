@@ -295,11 +295,11 @@
     }
 
     each(@theme-bg-vars, {
-        .theme-@{name}.ui-bg-@{key},.theme-@{name} .ui-bg-@{key}:not([class*="theme-"]) { background-color: @value; }
+        .theme-@{name}.ui-fill-@{key},.theme-@{name} .ui-fill-@{key}:not([class*="theme-"]) { background-color: @value; }
     });
 
     each(@theme-bg-hover-vars, {
-        .theme-@{name}.ui-bg-@{key},.theme-@{name} .ui-bg-@{key}:not([class*="theme-"]) {
+        .theme-@{name}.ui-fill-@{key},.theme-@{name} .ui-fill-@{key}:not([class*="theme-"]) {
             .desktop & {
                 &.hover:hover,&.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover { background-color: @value; }
             }

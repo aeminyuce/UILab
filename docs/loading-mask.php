@@ -15,21 +15,21 @@
                 <div class="padding-30-b theme-default">
 
                     <div class="form-lg ease-1st-btn">
-                        <button id="loadingBtn" class="btn btn-xs-fluid padding-25-h round theme-default2 ui-bg-dark-100 ease-btn">Button</button>
+                        <button id="loadingBtn" class="btn btn-xs-fluid padding-25-h round theme-default2 ui-fill-dark-100 ease-btn">Button</button>
                     </div>
 
                     <pre class="round margin-10-t margin-5-b">ui.loadingMask.toggle('#loadingBtn');</pre>
-                    <button class="btn btn-sm round ui-bg-dark-100 ease-btn" onclick="ui.loadingMask.toggle('#loadingBtn');">Run Code</button>
+                    <button class="btn btn-sm round ui-fill-dark-100 ease-btn" onclick="ui.loadingMask.toggle('#loadingBtn');">Run Code</button>
 
                     <span class="sp-30"></span>
 
                     <div class="form-lg ease-1st-btn">
-                        <a href="#" class="loadingBtn btn btn-xs-fluid padding-25-h round theme-default2 ui-bg-dark-100">Link</a>
-                        <button class="loadingBtn btn btn-xs-fluid padding-25-h round theme-default2 ui-bg-dark-100" onclick="alert('Javascript Alert');">Javascript Alert</button>
+                        <a href="#" class="loadingBtn btn btn-xs-fluid padding-25-h round theme-default2 ui-fill-dark-100">Link</a>
+                        <button class="loadingBtn btn btn-xs-fluid padding-25-h round theme-default2 ui-fill-dark-100" onclick="alert('Javascript Alert');">Javascript Alert</button>
                     </div>
 
                     <pre class="round margin-10-t margin-5-b">ui.loadingMask.toggle('.loadingBtn');</pre>
-                    <button class="btn btn-sm round ui-bg-dark-100 ease-btn" onclick="ui.loadingMask.toggle('.loadingBtn');">Run Code</button>
+                    <button class="btn btn-sm round ui-fill-dark-100 ease-btn" onclick="ui.loadingMask.toggle('.loadingBtn');">Run Code</button>
 
                 </div>
 
@@ -42,7 +42,7 @@
                         </div>
                     </div>
                     <pre class="round margin-10-t margin-5-b">ui.loadingMask.toggle('.loadingText1');</pre>
-                    <button class="btn btn-sm round ui-bg-dark-100 ease-btn" onclick="ui.loadingMask.toggle('.loadingText1');">Run Code</button>
+                    <button class="btn btn-sm round ui-fill-dark-100 ease-btn" onclick="ui.loadingMask.toggle('.loadingText1');">Run Code</button>
 
                     <span class="sp-30"></span>
 
@@ -53,7 +53,7 @@
                         </div>
                     </div>
                     <pre class="round margin-10-t margin-5-b">ui.loadingMask.toggle('.loadingText2');</pre>
-                    <button class="btn btn-sm round ui-bg-dark-100 ease-btn" onclick="ui.loadingMask.toggle('.loadingText2');">Run Code</button>
+                    <button class="btn btn-sm round ui-fill-dark-100 ease-btn" onclick="ui.loadingMask.toggle('.loadingText2');">Run Code</button>
 
                     <span class="sp-30"></span>
 
@@ -69,7 +69,7 @@
                         </div>
                     </div>
                     <pre class="round margin-10-t margin-5-b">ui.loadingMask.toggle('.loadingSelect');</pre>
-                    <button class="btn btn-sm round ui-bg-dark-100 ease-btn" onclick="ui.loadingMask.toggle('.loadingSelect');">Run Code</button>
+                    <button class="btn btn-sm round ui-fill-dark-100 ease-btn" onclick="ui.loadingMask.toggle('.loadingSelect');">Run Code</button>
 
                     <span class="sp-30"></span>
 
@@ -77,7 +77,7 @@
                         <textarea rows="4" placeholder="Placeholder Text"></textarea>
                     </div>
                     <pre class="round margin-10-t margin-5-b">ui.loadingMask.toggle('.loadingTextarea');</pre>
-                    <button class="btn btn-sm round ui-bg-dark-100 ease-btn" onclick="ui.loadingMask.toggle('.loadingTextarea');">Run Code</button>
+                    <button class="btn btn-sm round ui-fill-dark-100 ease-btn" onclick="ui.loadingMask.toggle('.loadingTextarea');">Run Code</button>
 
                 </div>
 
@@ -85,7 +85,7 @@
                 <div class="padding-30-b theme-default">
 
                     <pre class="round margin-10-t margin-5-b">ui.loadingMask.toggle('.loadingPage');</pre>
-                    <button class="btn btn-sm round ui-bg-dark-100 ease-btn" onclick="ui.loadingMask.toggle('.loadingPage');">Run Code</button>
+                    <button class="btn btn-sm round ui-fill-dark-100 ease-btn" onclick="ui.loadingMask.toggle('.loadingPage');">Run Code</button>
 
                 </div>
 

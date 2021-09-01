@@ -17,9 +17,9 @@ ui.onload(function () {
         list = ui.find('.icons-list');
         bttns = ui.find('.btn', this.parentElement);
 
-        ui.removeClass(bttns, 'ui-bg-dark-100');
+        ui.removeClass(bttns, 'ui-fill-dark-100');
         setTimeout(function () {
-            ui.addClass(that, 'ui-bg-dark-100');
+            ui.addClass(that, 'ui-fill-dark-100');
         }, 0);
 
         // change size
@@ -81,6 +81,6 @@ ui.onload(function () {
     });
 
     // settings
-    ui.alerts.messageTheme = 'theme-default2 ui-bg-dark-100';
+    ui.alerts.messageTheme = 'theme-default2 ui-fill-dark-100';
 
 });

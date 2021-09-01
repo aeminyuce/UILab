@@ -52,11 +52,11 @@
                                     </a>
                                     <span class="inline-block margin-10-h hidden-md"></span>
                                     <span class="sp-10 visible-sm"></span>
-                                    <a class="btn btn-sm-fluid ui-bg-dark-100" href="#">
+                                    <a class="btn btn-sm-fluid ui-fill-dark-100" href="#">
                                         <svg class="icon margin-5-r visible-sm"><use href="#sign-in"/></svg>
                                         <b>Login</b>
                                     </a>
-                                    <a class="btn btn-sm-fluid theme-farmer ui-bg-dark-100" href="#">
+                                    <a class="btn btn-sm-fluid theme-farmer ui-fill-dark-100" href="#">
                                         <svg class="icon margin-5-r visible-sm"><use href="#user-plus"/></svg>
                                         <b>Sign Up</b>
                                     </a>
@@ -102,7 +102,7 @@
             <span class="sp-10 visible-sm"></span>
         </div>
 
-        <div class="banner-content banner-tab01 tab-content padding-30-v set-relative theme-farmer ui-bg-dark-100 open open-ease" style="background-image: url(img/agriculture/lg01.jpg)">
+        <div class="banner-content banner-tab01 tab-content padding-30-v set-relative theme-farmer ui-fill-dark-100 open open-ease" style="background-image: url(img/agriculture/lg01.jpg)">
             <div class="fixed padding-30-v set-relative">
                 <div class="row">
                     <div class="col-static">
@@ -111,7 +111,7 @@
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
                                 <p class="xx-large font-color-white-50">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
-                                <a href="#" class="btn btn-xs-fluid padding-30-h ui-bg-dark-100 ease-btn">
+                                <a href="#" class="btn btn-xs-fluid padding-30-h ui-fill-dark-100 ease-btn">
                                     <svg class="icon margin-5-r"><use href="#moneys"/></svg>
                                     <b>Invest Now</b>
                                 </a>
@@ -127,7 +127,7 @@
                                     <span class="sp-30 hidden-md"></span>
                                     <h3 class="font-bold xx-large">Long term investment</h3>
                                     <p class="x-large">Consider terms that have long term investment program.</p>
-                                    <a href="#" class="btn block theme-farmer2 ui-bg-dark-100 ease-btn">
+                                    <a href="#" class="btn block theme-farmer2 ui-fill-dark-100 ease-btn">
                                         <b>Learn more</b>
                                         <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                                     </a>
@@ -140,7 +140,7 @@
             </div>
             <span class="sp-30 margin-10-v"></span>
         </div>
-        <div class="banner-content banner-tab02 tab-content padding-30-v set-relative theme-farmer ui-bg-dark-100" style="background-image: url(img/agriculture/lg02.jpg)">
+        <div class="banner-content banner-tab02 tab-content padding-30-v set-relative theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg02.jpg)">
             <div class="fixed padding-30-v set-relative">
                 <div class="row">
                     <div class="col-static">
@@ -149,7 +149,7 @@
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
                                 <p class="xx-large font-color-white-50">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
-                                <a href="#" class="btn btn-xs-fluid padding-30-h ui-bg-dark-100 ease-btn">
+                                <a href="#" class="btn btn-xs-fluid padding-30-h ui-fill-dark-100 ease-btn">
                                     <svg class="icon margin-5-r"><use href="#moneys"/></svg>
                                     <b>Invest Now</b>
                                 </a>
@@ -165,7 +165,7 @@
                                     <span class="sp-30"></span>
                                     <h3 class="font-bold xx-large">Connect with Our Farmers</h3>
                                     <p class="x-large">Consider terms that connect with our farmers program.</p>
-                                    <a href="#" class="btn block theme-farmer2 ui-bg-dark-100 ease-btn">
+                                    <a href="#" class="btn block theme-farmer2 ui-fill-dark-100 ease-btn">
                                         <b>Learn more</b>
                                         <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                                     </a>
@@ -178,7 +178,7 @@
             </div>
             <span class="sp-30 margin-10-v"></span>
         </div>
-        <div class="banner-content banner-tab03 tab-content padding-30-v set-relative theme-farmer ui-bg-dark-100" style="background-image: url(img/agriculture/lg03.jpg)">
+        <div class="banner-content banner-tab03 tab-content padding-30-v set-relative theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg03.jpg)">
             <div class="fixed padding-30-v set-relative">
                 <div class="row">
                     <div class="col-static">
@@ -187,7 +187,7 @@
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
                                 <p class="xx-large font-color-white-50">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
-                                <a href="#" class="btn btn-xs-fluid padding-30-h ui-bg-dark-100 ease-btn">
+                                <a href="#" class="btn btn-xs-fluid padding-30-h ui-fill-dark-100 ease-btn">
                                     <svg class="icon margin-5-r"><use href="#moneys"/></svg>
                                     <b>Invest Now</b>
                                 </a>
@@ -203,7 +203,7 @@
                                     <span class="sp-30"></span>
                                     <h3 class="font-bold xx-large">Social Impact Investment</h3>
                                     <p class="x-large">Consider terms that have social impact investment program.</p>
-                                    <a href="#" class="btn block theme-farmer2 ui-bg-dark-100 ease-btn">
+                                    <a href="#" class="btn block theme-farmer2 ui-fill-dark-100 ease-btn">
                                         <b>Learn more</b>
                                         <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                                     </a>
@@ -232,7 +232,7 @@
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Planting</h3>
                         <p class="large font-color-black-50">Complete range of lands caping services.</p>
-                        <a href="#" class="btn btn-ghost block ui-color ui-bg-dark-100 ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
@@ -243,7 +243,7 @@
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Garden Care</h3>
                         <p class="large font-color-black-50">Resolving environmental problems with best results.</p>
-                        <a href="#" class="btn btn-ghost block ui-color ui-bg-dark-100 ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
@@ -254,7 +254,7 @@
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Irrigation System</h3>
                         <p class="large font-color-black-50">Idea of denouncing pleasure and praising.</p>
-                        <a href="#" class="btn btn-ghost block ui-color ui-bg-dark-100 ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
@@ -265,7 +265,7 @@
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Hardscaping</h3>
                         <p class="large font-color-black-50">Placing int the landscape with great pleasure.</p>
-                        <a href="#" class="btn btn-ghost block ui-color ui-bg-dark-100 ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
@@ -276,7 +276,7 @@
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Planting</h3>
                         <p class="large font-color-black-50">Complete range of lands caping services.</p>
-                        <a href="#" class="btn btn-ghost block ui-color ui-bg-dark-100 ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
@@ -287,7 +287,7 @@
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Garden Care</h3>
                         <p class="large font-color-black-50">Resolving environmental problems with best results.</p>
-                        <a href="#" class="btn btn-ghost block ui-color ui-bg-dark-100 ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
@@ -298,7 +298,7 @@
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Irrigation System</h3>
                         <p class="large font-color-black-50">Idea of denouncing pleasure and praising.</p>
-                        <a href="#" class="btn btn-ghost block ui-color ui-bg-dark-100 ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
@@ -309,17 +309,17 @@
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Hardscaping</h3>
                         <p class="large font-color-black-50">Placing int the landscape with great pleasure.</p>
-                        <a href="#" class="btn btn-ghost block ui-color ui-bg-dark-100 ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
             </div>
             <div class="carousel-nav margin-10-t icons-no-opacity ease-1st-btn">
-                <button class="carousel-prev btn btn-square btn-ghost ui-bg-dark-100">
+                <button class="carousel-prev btn btn-square btn-ghost ui-fill-dark-100">
                     <svg class="icon ui-color"><use href="#arrow-left"/></svg>
                 </button>
                 <span class="dots ui-color"></span>
-                <button class="carousel-next btn btn-square btn-ghost ui-bg-dark-100">
+                <button class="carousel-next btn btn-square btn-ghost ui-fill-dark-100">
                     <svg class="icon ui-color"><use href="#arrow-right"/></svg>
                 </button>
             </div>
@@ -329,7 +329,7 @@
     <!-- highlight links: end -->
 
     <!-- news: start -->
-    <div class="padding-30-v theme-farmer ui-bg-light-100">
+    <div class="padding-30-v theme-farmer ui-fill-light-100">
         <div class="fixed margin-30-b">
             <div class="row">
                 <div class="col-12">
@@ -460,7 +460,7 @@
                     </div>
                 </div>
                 <div class="align-c padding-30-t padding-10-b">
-                    <a href="#" class="btn btn-xs-fluid padding-30-h theme-farmer2 ui-bg-dark-100 ease-btn">
+                    <a href="#" class="btn btn-xs-fluid padding-30-h theme-farmer2 ui-fill-dark-100 ease-btn">
                         <b>View all company news</b> <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                     </a>
                 </div>
@@ -565,7 +565,7 @@
                     </div>
                 </div>
                 <div class="align-c padding-30-t padding-10-b">
-                    <a href="#" class="btn btn-xs-fluid padding-30-h theme-farmer2 ui-bg-dark-100 ease-btn">
+                    <a href="#" class="btn btn-xs-fluid padding-30-h theme-farmer2 ui-fill-dark-100 ease-btn">
                         <b>View all social news</b> <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                     </a>
                 </div>
@@ -670,7 +670,7 @@
                     </div>
                 </div>
                 <div class="align-c padding-30-t padding-10-b">
-                    <a href="#" class="btn btn-xs-fluid padding-30-h theme-farmer2 ui-bg-dark-100 ease-btn">
+                    <a href="#" class="btn btn-xs-fluid padding-30-h theme-farmer2 ui-fill-dark-100 ease-btn">
                         <b>View all customer news</b> <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                     </a>
                 </div>
@@ -707,31 +707,31 @@
                     <li>
                         <a class="img has-info" href="img/agriculture/md02.jpg">
                             <img src="img/agriculture/md02.jpg" alt="">
-                            <span class="x-large theme-farmer ui-bg-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
+                            <span class="x-large theme-farmer ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                         </a>
                     </li>
                     <li>
                         <a class="img has-info" href="img/agriculture/md03.jpg">
                             <img src="img/agriculture/md03.jpg" alt="">
-                            <span class="x-large ui-bg-dark-100">Aenean dapibus malesuada posuere. Nulla ac tempus nisi, sed rhoncus purus.</span>
+                            <span class="x-large ui-fill-dark-100">Aenean dapibus malesuada posuere. Nulla ac tempus nisi, sed rhoncus purus.</span>
                         </a>
                     </li>
                     <li>
                         <a class="img has-info" href="img/agriculture/md04.jpg">
                             <img src="img/agriculture/md04.jpg" alt="">
-                            <span class="x-large theme-farmer ui-bg-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            <span class="x-large theme-farmer ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         </a>
                     </li>
                     <li>
                         <a class="img has-info" href="img/agriculture/md05.jpg">
                             <img src="img/agriculture/md05.jpg" alt="">
-                            <span class="x-large ui-bg-dark-100">Consectetur adipiscing elit. Integer eu dignissim libero.</span>
+                            <span class="x-large ui-fill-dark-100">Consectetur adipiscing elit. Integer eu dignissim libero.</span>
                         </a>
                     </li>
                     <li>
                         <a class="img has-info" href="img/agriculture/md06.jpg">
                             <img src="img/agriculture/md06.jpg" alt="">
-                            <span class="x-large theme-farmer ui-bg-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            <span class="x-large theme-farmer ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         </a>
                     </li>
                 </ul>
@@ -742,7 +742,7 @@
     <!-- gallery: end -->
 
     <!-- statistics: start -->
-    <div class="padding-15-t padding-30-b theme-farmer ui-bg-light-100">
+    <div class="padding-15-t padding-30-b theme-farmer ui-fill-light-100">
         <div class="fixed padding-30-v">
             <div class="row">
                 <div class="col-12">
@@ -783,7 +783,7 @@
                             <span class="sp-15"></span>
                             Pellentesque mattis sed diam a rutrum. Sed fermentum accumsan egestas.
                         </p>
-                        <a href="#" class="btn btn-lg btn-xs-fluid padding-20-h margin-30-b theme-farmer2 ui-bg-dark-100 ease-btn">
+                        <a href="#" class="btn btn-lg btn-xs-fluid padding-20-h margin-30-b theme-farmer2 ui-fill-dark-100 ease-btn">
                             <b>View all statistics</b>
                             <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                         </a>
@@ -797,7 +797,7 @@
 </main>
 
 <!-- footer: start -->
-<footer class="container no-gutter padding-30-v theme-farmer2 ui-bg-dark-100">
+<footer class="container no-gutter padding-30-v theme-farmer2 ui-fill-dark-100">
     <div class="fixed padding-30-v sm-align-c">
         <div class="row">
             <div class="col-static">
@@ -839,7 +839,7 @@
                 <div class="col-450 padding-10">
 
                     <div class="footer-social padding-15 icons-no-opacity">
-                        <div class="card padding-30 shadow-lg theme-farmer ui-bg-dark-100">
+                        <div class="card padding-30 shadow-lg theme-farmer ui-fill-dark-100">
                             <h4 class="margin-15-b">Social</h4>
                             <div class="form-lg ease-1st-btn">
                                 <a class="btn btn-square" href="#" target="_blank">
@@ -874,13 +874,13 @@
                                 <div class="form-holder col-static no-fluid form-lg">
                                     <div class="row no-row-gap">
                                         <div class="col-12">
-                                            <div class="text no-border ui-bg-light-100 ease-form">
+                                            <div class="text no-border ui-fill-light-100 ease-form">
                                                 <input class="required" type="email" maxlength="4" placeholder="your@email.com">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-42">
-                                        <button class="btn btn-square theme-farmer2 ui-bg-dark-100 ease-btn">
+                                        <button class="btn btn-square theme-farmer2 ui-fill-dark-100 ease-btn">
                                             <svg class="icon"><use href="#send"/></svg>
                                         </button>
                                     </div>

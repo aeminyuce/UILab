@@ -6,7 +6,7 @@
 
                 <div class="uploader-panel form-lg theme-default2">
                     <h4>Image Uploader</h4>
-                    <div class="file no-border round ui-bg-dark-100 hover ease-form">
+                    <div class="file no-border round ui-fill-dark-100 hover ease-form">
                         <input type="file" name="images[]" multiple>
                         <span class="btn btn-square ease-btn">
                             <svg class="icon"><use href="#plus"/></svg>
@@ -36,7 +36,7 @@
                     <button type="button" title="Sort" class="uploader-sort btn btn-square round">
                         <svg class="icon"><use href="#move"/></svg>
                     </button>
-                    <button type="submit" name="send" class="uploader-upload btn margin-5-l round theme-green ui-bg-dark-100">
+                    <button type="submit" name="send" class="uploader-upload btn margin-5-l round theme-green ui-fill-dark-100">
                         <span class="hidden-xs margin-2-r">Save</span>
                         <svg class="icon"><use href="#save"/></svg>
                     </button>

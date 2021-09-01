@@ -15,7 +15,7 @@
 
                 <h4>Font Colors</h4>
                 <div class="padding-30-b">
-                    <div class="theme-gray ui-bg-dark-100">
+                    <div class="theme-gray ui-fill-dark-100">
                         <span class="font-color-white">.font-color-white</span>
                         <span class="font-color-white">.font-color-white-50</span>
                         <span class="font-color-white-muted">.font-color-white-muted</span>

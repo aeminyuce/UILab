@@ -103,7 +103,7 @@
                 <div class="breadcrumbs theme-default2">
                     <ul class="list-inline">
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="btn round ui-bg-dark-100 ease-btn" href="#" itemprop="item" title="Home">
+                            <a class="btn round ui-fill-dark-100 ease-btn" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">
                                     <svg class="icon margin-5-r"><use href="#home"/></svg> Home
                                 </span>
@@ -111,7 +111,7 @@
                             <meta itemprop="position" content="1" />
                         </li>
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="btn round ui-bg-dark-100 ease-btn" href="#" itemprop="item" title="Search Results">
+                            <a class="btn round ui-fill-dark-100 ease-btn" href="#" itemprop="item" title="Search Results">
                                     <span itemprop="name">
                                         Search Results
                                 </span>
@@ -119,7 +119,7 @@
                             </a>
                         </li>
                         <li>
-                            <button class="btn btn-passive round ui-bg-dark-100">Content Details</button>
+                            <button class="btn btn-passive round ui-fill-dark-100">Content Details</button>
                         </li>
                     </ul>
                 </div>
@@ -155,7 +155,7 @@
                 <div class="breadcrumbs no-separated theme-default">
                     <ul class="list-inline">
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="btn round ui-bg-dark-100 ease-btn" href="#" itemprop="item" title="Home">
+                            <a class="btn round ui-fill-dark-100 ease-btn" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">
                                     <svg class="icon"><use href="#home"/></svg>
                                 </span>
@@ -164,7 +164,7 @@
                         </li>
                         <li>
                             <span class="dropdown ease-dropdown">
-                                <button class="btn round ui-bg-dark-100">
+                                <button class="btn round ui-fill-dark-100">
                                 <svg class="icon"><use href="#ellipsis-h"/></svg>
                                 </button>
                                 <ul class="content round shadow-lg">
@@ -196,7 +196,7 @@
                             </span>
                         </li>
                         <li>
-                            <button class="btn btn-passive round ui-bg-dark-100">Content Details</button>
+                            <button class="btn btn-passive round ui-fill-dark-100">Content Details</button>
                         </li>
                     </ul>
                 </div>
@@ -206,7 +206,7 @@
                 <div class="breadcrumbs no-separated theme-default2">
                     <ul class="list-inline">
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="btn round ui-bg-dark-100 ease-btn" href="#" itemprop="item" title="Home">
+                            <a class="btn round ui-fill-dark-100 ease-btn" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">
                                     <svg class="icon"><use href="#home"/></svg>
                                 </span>
@@ -215,7 +215,7 @@
                         </li>
                         <li>
                             <span class="dropdown ease-dropdown">
-                                <button class="btn round ui-bg-dark-100">
+                                <button class="btn round ui-fill-dark-100">
                                     <svg class="icon"><use href="#ellipsis-h"/></svg>
                                 </button>
                                 <ul class="content round shadow-lg">
@@ -247,7 +247,7 @@
                             </span>
                         </li>
                         <li>
-                            <button class="btn btn-passive round ui-bg-dark-100">Content Details</button>
+                            <button class="btn btn-passive round ui-fill-dark-100">Content Details</button>
                         </li>
                     </ul>
                 </div>

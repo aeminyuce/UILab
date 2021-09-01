@@ -4,7 +4,7 @@
 <main class="container no-gutter">
     <div class="col-static no-fluid">
         <div class="col-200 set-relative hidden-md">
-            <div class="sidebar col-200 full-h set-fixed set-l padding-5 ui-bg-dark-100 hidden-md scroll-v">
+            <div class="sidebar col-200 full-h set-fixed set-l padding-5 ui-fill-dark-100 hidden-md scroll-v">
 
                 <div class="align-l padding-10 icons-no-opacity icons-margin-10-r form-lg add-mobile-menu-l">
                     <h5 class="font-color-white-50 padding-15 margin-5-b">LIBRARY</h5>
@@ -81,7 +81,7 @@
 
                     <header class="row no-row-gap-t sticky-md icons-no-opacity form-lg" data-ui-classes="shadow-lg">
                         <div class="col-6 hidden-md ease-1st-form">
-                            <div class="text text-icon-both margin-15-b circle no-border theme-gray ui-bg-light-300 has-clear">
+                            <div class="text text-icon-both margin-15-b circle no-border theme-gray ui-fill-light-300 has-clear">
                                 <svg class="icon text-icon-l"><use href="#search"/></svg>
                                 <button type="button" class="clear-form">
                                     <svg class="icon"><use href="#remove"/></svg>
@@ -403,7 +403,7 @@
 </main>
 
 <!-- mobile menu -->
-<div class="mobile-menu show-l ui-bg-dark-100 ease-layout ease-in-out">
+<div class="mobile-menu show-l ui-fill-dark-100 ease-layout ease-in-out">
     <div class="mobile-menu-title padding-20-v x-large border-b">
         <button class="btn btn-square btn-lg btn-ghost round ease-btn close-mobile-menu">
             <svg class="icon no-opacity"><use href="#remove"/></svg>
@@ -424,7 +424,7 @@
             <div class="col-static no-fluid">
                 <div class="row no-row-gap-h">
                     <div class="col-12 ease-1st-form">
-                        <div class="text text-icon has-clear round-l no-border shadow-in-sm theme-gray ui-bg-light-300 ease-form">
+                        <div class="text text-icon has-clear round-l no-border shadow-in-sm theme-gray ui-fill-light-300 ease-form">
                             <button type="button" class="clear-form">
                                 <svg class="icon"><use href="#remove"/></svg>
                             </button>
@@ -434,7 +434,7 @@
                     </div>
                 </div>
                 <div class="col-100 col-xs-50 padding-10-v">
-                    <button class="btn block round-r theme-default2 ui-bg-dark-100 ease-btn" type="submit">
+                    <button class="btn block round-r theme-default2 ui-fill-dark-100 ease-btn" type="submit">
                         <svg class="icon"><use href="#search"/></svg>
                     </button>
                 </div>
@@ -442,42 +442,42 @@
 
             <div class="row no-fluid icons-xxl block-2nd icons-no-opacity icons-margin-5-v hover-t-more-2nd theme-default ease-2nd-btn">
                 <div class="col-4 padding-10-b">
-                    <a class="btn btn-multi no-line-height round ui-bg-dark-100" href="#">
+                    <a class="btn btn-multi no-line-height round ui-fill-dark-100" href="#">
                         <svg class="icon"><use href="#tv"/></svg>
                         <span class="x-large block margin-5-t">TV Shows</span>
                         <span class="font-color-black-muted">1024</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
-                    <a class="btn btn-multi no-line-height round ui-bg-dark-100" href="#">
+                    <a class="btn btn-multi no-line-height round ui-fill-dark-100" href="#">
                         <svg class="icon"><use href="#film"/></svg>
                         <span class="x-large block margin-5-t">Films</span>
                         <span class="font-color-black-muted">775</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
-                    <a class="btn btn-multi no-line-height round ui-bg-dark-100" href="#">
+                    <a class="btn btn-multi no-line-height round ui-fill-dark-100" href="#">
                         <svg class="icon"><use href="#trophy-star"/></svg>
                         <span class="x-large block margin-5-t">Sports</span>
                         <span class="font-color-black-muted">316</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
-                    <a class="btn btn-multi no-line-height round ui-bg-dark-100" href="#">
+                    <a class="btn btn-multi no-line-height round ui-fill-dark-100" href="#">
                         <svg class="icon"><use href="#music"/></svg>
                         <span class="x-large block margin-5-t">Concerts</span>
                         <span class="font-color-black-muted">589</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
-                    <a class="btn btn-multi no-line-height round ui-bg-dark-100" href="#">
+                    <a class="btn btn-multi no-line-height round ui-fill-dark-100" href="#">
                         <svg class="icon"><use href="#face-smile"/></svg>
                         <span class="x-large block margin-5-t">Comedy</span>
                         <span class="font-color-black-muted">219</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
-                    <a class="btn btn-multi no-line-height round ui-bg-dark-100" href="#">
+                    <a class="btn btn-multi no-line-height round ui-fill-dark-100" href="#">
                         <svg class="icon"><use href="#video"/></svg>
                         <span class="x-large block margin-5-t">Others</span>
                         <span class="font-color-black-muted">701</span>

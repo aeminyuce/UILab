@@ -59,11 +59,11 @@
     &.grid-hover {
         .grid-content {
             &.even {
-                &:not([class*="ui-bg-"]) { ._bg-var(grid-list-stripe-bg); }
+                &:not([class*="ui-fill-"]) { ._bg-var(grid-list-stripe-bg); }
             }
 
             .desktop & {
-                &:not([class*="ui-bg-"]) {
+                &:not([class*="ui-fill-"]) {
                     &:hover,&:nth-child(odd):hover { ._bg-var(grid-list-hover-bg); }
                 }
             }

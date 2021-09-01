@@ -62,7 +62,7 @@
     &-ghost:not(.btn-show) {
         &:not(:hover) { background-color: @no-color !important; }
 
-        &[class*="ui-bg-dark-"] {
+        &[class*="ui-fill-dark-"] {
             &:not(.ui-color) {
                 &,.icon:not(.ui-color) { ._color-var(black); }
             }
@@ -86,17 +86,17 @@
         &:not(.toggle-icon) { vertical-align: bottom; ._icon(@btn-default-icon); }
         &:not(.no-opacity) { opacity: .45; }
     }
-    &[class*="ui-bg-dark-"] {
+    &[class*="ui-fill-dark-"] {
         .icon { opacity: 1; }
     }
 
     .desktop & {
-        &[class*="ui-bg-dark-"] {
+        &[class*="ui-fill-dark-"] {
             &:hover .icon { opacity: 1 !important; }
         }
 
-        &:not([class*="ui-bg-"]):not(.btn-passive):hover { ._bg-var(btn-hover-bg); }
-        &.btn-ghost:not([class*="ui-bg-"]):not(.btn-passive):hover { ._bg-var(btn-ghost-hover-bg); }
+        &:not([class*="ui-fill-"]):not(.btn-passive):hover { ._bg-var(btn-hover-bg); }
+        &.btn-ghost:not([class*="ui-fill-"]):not(.btn-passive):hover { ._bg-var(btn-ghost-hover-bg); }
     }
 }
 

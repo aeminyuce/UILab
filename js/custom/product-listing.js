@@ -10,7 +10,7 @@ ui.lineCharts.rows = 4; // set number of rows
     ui.lineCharts.showBgGrid = false; // set showing bg grid
     ui.lineCharts.showInfo = false; // set showing info
 
-    ui.alerts.messageTheme = 'theme-default2 ui-bg-dark-100';
+    ui.alerts.messageTheme = 'theme-default2 ui-fill-dark-100';
 
     ui.onload(function () {
         ui.on('.load-more', 'click', function () {
@@ -35,7 +35,7 @@ ui.lineCharts.rows = 4; // set number of rows
 
                             ui.alerts.message({
                                 msg: 'Products loaded!',
-                                theme: 'theme-default2 ui-bg-dark-100'
+                                theme: 'theme-default2 ui-fill-dark-100'
                             });
 
                             ui.loadingMask.toggle(that);

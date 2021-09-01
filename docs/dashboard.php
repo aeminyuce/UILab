@@ -10,9 +10,9 @@
 
         <!-- sidebar -->
         <div class="sidebar col-250 set-relative visible-lg theme-panel ease-width ease-in-out">
-            <div class="col-250 full-h set-fixed set-l ui-bg-dark-100 ease-layout ease-in-out">
+            <div class="col-250 full-h set-fixed set-l ui-fill-dark-100 ease-layout ease-in-out">
 
-                <div class="ui-bg-dark-300 set-relative">
+                <div class="ui-fill-dark-300 set-relative">
                     <img src="img/logo-udashboard.png" width="194" height="62" alt="">
                     <button class="sidebar-hide opacity-more padding-10-h ease-btn set-absolute set-cy set-r" data-ui-tooltip title="Toggle Sidebar">
                         <svg class="icon"><use href="#angle-left"/></svg>
@@ -30,7 +30,7 @@
                                 <span class="xx-large">13</span>
                                 <span class="small font-color-white-muted margin-5-b block">Waiting</span>
                                 <span class="progress-bar round border-dual">
-                                    <span class="ui-bg-dark-100 stripe-light" style="width: 65%;"></span>
+                                    <span class="ui-fill-dark-100 stripe-light" style="width: 65%;"></span>
                                 </span>
 
                             </button>
@@ -39,7 +39,7 @@
                                 <span class="xx-large">3</span>
                                 <span class="small font-color-white-muted margin-5-b block">Paused</span>
                                 <span class="progress-bar round border-dual">
-                                    <span class="ui-bg-dark-100 stripe-light" style="width: 35%;"></span>
+                                    <span class="ui-fill-dark-100 stripe-light" style="width: 35%;"></span>
                                 </span>
 
                             </button>
@@ -48,7 +48,7 @@
                                 <span class="xx-large">16</span>
                                 <span class="small font-color-white-muted margin-5-b block">Delayed</span>
                                 <span class="progress-bar round border-dual">
-                                    <span class="ui-bg-dark-100 stripe-light" style="width: 75%;"></span>
+                                    <span class="ui-fill-dark-100 stripe-light" style="width: 75%;"></span>
                                 </span>
 
                             </button>
@@ -711,7 +711,7 @@
                                                         Cancel
                                                     </button>
 
-                                                    <button type="submit" class="btn btn-lg btn-xs-fluid padding-15-h round theme-green ui-bg-dark-100">
+                                                    <button type="submit" class="btn btn-lg btn-xs-fluid padding-15-h round theme-green ui-fill-dark-100">
                                                         <svg class="icon margin-5-r"><use href="#save"/></svg> Save
                                                     </button>
 
@@ -753,7 +753,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="progress-bar margin-15-t progress round">
-                                                    <span class="ui-bg-dark-100 stripe-light" style="width: 45%;"></span>
+                                                    <span class="ui-fill-dark-100 stripe-light" style="width: 45%;"></span>
                                                 </div>
                                                 <p class="font-color-black-muted large margin-5-b">Pending for the transaction.</p>
                                                 <p class="font-color-black-muted">
@@ -776,7 +776,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="progress-bar margin-15-t progress round">
-                                                    <span class="ui-bg-dark-100 stripe-light" style="width: 5%;"></span>
+                                                    <span class="ui-fill-dark-100 stripe-light" style="width: 5%;"></span>
                                                 </div>
                                                 <p class="font-color-black-muted large margin-5-b">Paused for the some reasons.</p>
                                                 <p class="font-color-black-muted">
@@ -799,7 +799,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="progress-bar margin-15-t progress round">
-                                                    <span class="ui-bg-dark-100 stripe-light" style="width: 80%;"></span>
+                                                    <span class="ui-fill-dark-100 stripe-light" style="width: 80%;"></span>
                                                 </div>
                                                 <p class="font-color-black-muted large margin-5-b">Reached for the expert.</p>
                                                 <p class="font-color-black-muted">
@@ -822,7 +822,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="progress-bar margin-15-t progress round">
-                                                    <span class="ui-bg-dark-100 stripe-light" style="width: 67%;"></span>
+                                                    <span class="ui-fill-dark-100 stripe-light" style="width: 67%;"></span>
                                                 </div>
                                                 <p class="font-color-black-muted large margin-5-b">Confirmed for payment.</p>
                                                 <p class="font-color-black-muted">
@@ -1218,7 +1218,7 @@
 
                                         <div class="row no-row-gap-v row-gap-sm-h">
                                             <div class="col-6 lg-fluid">
-                                                <div class="text text-icon-both round no-border ui-bg-light-100 has-clear ease-form">
+                                                <div class="text text-icon-both round no-border ui-fill-light-100 has-clear ease-form">
                                                     <svg class="icon text-icon-l"><use href="#search"/></svg>
                                                     <button class="clear-form">
                                                         <svg class="icon"><use href="#remove"/></svg>
@@ -1228,7 +1228,7 @@
                                                 <span class="sp-5 hidden-lg"></span>
                                             </div>
                                             <div class="col-lg-3 col-6 no-fluid">
-                                                <div class="select round no-border ui-bg-light-100 ease-form">
+                                                <div class="select round no-border ui-fill-light-100 ease-form">
                                                     <svg class="icon"><use href="#angle-down"/></svg>
                                                     <select class="grid-filter" data-ui-index="2">
                                                         <option value="">Filter</option>
@@ -1799,7 +1799,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-8 align-r">
-                                                <div class="grid-paging pagination ease-1st-btn" data-ui-default="btn round" data-ui-active="theme-panel2 ui-bg-dark-100"></div>
+                                                <div class="grid-paging pagination ease-1st-btn" data-ui-default="btn round" data-ui-active="theme-panel2 ui-fill-dark-100"></div>
                                             </div>
                                         </div>
 
@@ -1822,7 +1822,7 @@
 </main>
 
 <!-- mobile menu -->
-<div class="mobile-menu show-l theme-panel ui-bg-dark-100 ease-layout ease-in-out">
+<div class="mobile-menu show-l theme-panel ui-fill-dark-100 ease-layout ease-in-out">
     <div class="mobile-menu-title no-padding border-b">
         <button class="btn btn-square btn-lg btn-ghost circle ease-btn close-mobile-menu">
             <svg class="icon no-opacity"><use href="#remove"/></svg>
@@ -1843,7 +1843,7 @@
             <div class="col-static no-fluid">
                 <div class="row no-row-gap-h">
                     <div class="col-12 ease-1st-form">
-                        <div class="text text-icon has-clear round-l no-border shadow-in-sm theme-gray ui-bg-light-300">
+                        <div class="text text-icon has-clear round-l no-border shadow-in-sm theme-gray ui-fill-light-300">
                             <button type="button" class="clear-form">
                                 <svg class="icon"><use href="#remove"/></svg>
                             </button>
@@ -1853,7 +1853,7 @@
                     </div>
                 </div>
                 <div class="col-100 col-xs-50 padding-10-v">
-                    <button class="btn block round-r theme-panel2 ui-bg-dark-100 ease-btn" type="submit">
+                    <button class="btn block round-r theme-panel2 ui-fill-dark-100 ease-btn" type="submit">
                         <svg class="icon"><use href="#search"/></svg>
                     </button>
                 </div>
@@ -1861,21 +1861,21 @@
 
             <div class="row xs-fluid icons-xxl block-2nd icons-no-opacity hover-t-more-2nd icons-margin-5-v theme-panel ease-2nd-btn">
                 <div class="col-4 padding-10-b">
-                    <a class="btn btn-multi no-line-height round ui-bg-dark-100" href="#">
+                    <a class="btn btn-multi no-line-height round ui-fill-dark-100" href="#">
                         <svg class="icon"><use href="#news"/></svg>
                         <span class="x-large block margin-5-t">News</span>
                         <span class="font-color-white-50">589</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
-                    <a class="btn btn-multi no-line-height round ui-bg-dark-100" href="#">
+                    <a class="btn btn-multi no-line-height round ui-fill-dark-100" href="#">
                         <svg class="icon"><use href="#calendar-check"/></svg>
                         <span class="x-large block margin-5-t">Events</span>
                         <span class="font-color-white-50">219</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
-                    <a class="btn btn-multi no-line-height round ui-bg-dark-100" href="#">
+                    <a class="btn btn-multi no-line-height round ui-fill-dark-100" href="#">
                         <svg class="icon"><use href="#files"/></svg>
                         <span class="x-large block margin-5-t">Documents</span>
                         <span class="font-color-white-50">701</span>

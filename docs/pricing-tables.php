@@ -18,7 +18,7 @@
                             <h2 class="font-bold margin-15-v">Free</h2>
                             <h4 class="font-color-black-50">1 End Product License</h4>
                             <p class="font-color-black-muted large margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
-                            <a class="btn btn-lg btn-xs-fluid padding-30-h margin-30-b round theme-green ui-bg-dark-100 ease-btn" href="#">
+                            <a class="btn btn-lg btn-xs-fluid padding-30-h margin-30-b round theme-green ui-fill-dark-100 ease-btn" href="#">
                                 <b>GET FOR FREE</b>
                                 <svg class="icon margin-5-l"><use href="#heart"/></svg>
                             </a>
@@ -27,7 +27,7 @@
                     </div>
                     <div class="col-4 no-padding-v">
 
-                        <div class="card full-h padding-30 round shadow-lg theme-default2 ui-bg-dark-100">
+                        <div class="card full-h padding-30 round shadow-lg theme-default2 ui-fill-dark-100">
                             <div class="margin-30-v">
                                 <svg class="icon icon-72 animate-bounce-x"><use href="#gift"/></svg>
                             </div>
@@ -35,7 +35,7 @@
                             <h4>Business License</h4>
                             <p class="font-color-white-50 large margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                             <span class="sp-10"></span>
-                            <a class="btn btn-multi btn-lg btn-xs-fluid padding-30-h padding-15-v round theme-default ui-bg-dark-100 ease-btn" href="#">
+                            <a class="btn btn-multi btn-lg btn-xs-fluid padding-30-h padding-15-v round theme-default ui-fill-dark-100 ease-btn" href="#">
                                 <b>PURCHASE</b>
                                 <svg class="icon margin-5-l"><use href="#shopping-cart"/></svg>
                             </a>
@@ -54,7 +54,7 @@
                             <h2 class="font-bold margin-15-v">$49</h2>
                             <h4 class="font-color-black-50">Enterprise License</h4>
                             <p class="font-color-black-muted large margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
-                            <a class="btn btn-lg btn-xs-fluid padding-30-h margin-30-b round theme-default ui-bg-dark-100 ease-btn" href="#">
+                            <a class="btn btn-lg btn-xs-fluid padding-30-h margin-30-b round theme-default ui-fill-dark-100 ease-btn" href="#">
                                 <b>PURCHASE</b>
                                 <svg class="icon margin-5-l"><use href="#shopping-basket"/></svg>
                             </a>
@@ -78,7 +78,7 @@
                                 <h2 class="font-bold margin-15-v">Free</h2>
                                 <h4 class="font-color-black-50">1 End Product License</h4>
                                 <p class="font-color-black-muted large margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
-                                <a class="btn btn-lg btn-xs-fluid padding-30-h margin-30-b round theme-green ui-bg-dark-100 ease-btn" href="#">
+                                <a class="btn btn-lg btn-xs-fluid padding-30-h margin-30-b round theme-green ui-fill-dark-100 ease-btn" href="#">
                                     <b>GET FOR FREE</b>
                                     <svg class="icon margin-5-l"><use href="#heart"/></svg>
                                 </a>
@@ -108,7 +108,7 @@
                     </div>
                     <div class="col-4 no-padding-v">
 
-                        <div class="card full-h round shadow-lg theme-default2 ui-bg-dark-100">
+                        <div class="card full-h round shadow-lg theme-default2 ui-fill-dark-100">
                             <div class="card-side padding-30 border-b border-light">
                                 <div class="margin-30-v">
                                     <svg class="icon icon-72 animate-bounce-x"><use href="#gift"/></svg>
@@ -117,7 +117,7 @@
                                 <h4>Business License</h4>
                                 <p class="font-color-white-50 large margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                                 <span class="sp-10"></span>
-                                <a class="btn btn-multi btn-lg btn-xs-fluid padding-30-h padding-15-v margin-25-b round theme-default ui-bg-dark-100 ease-btn" href="#">
+                                <a class="btn btn-multi btn-lg btn-xs-fluid padding-30-h padding-15-v margin-25-b round theme-default ui-fill-dark-100 ease-btn" href="#">
                                     <b>PURCHASE</b>
                                     <svg class="icon margin-5-l"><use href="#shopping-cart"/></svg>
                                 </a>
@@ -155,7 +155,7 @@
                                 <h2 class="font-bold margin-15-v">$49</h2>
                                 <h4 class="font-color-black-50">Enterprise License</h4>
                                 <p class="font-color-black-muted large margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
-                                <a class="btn btn-lg btn-xs-fluid padding-30-h margin-30-b round theme-default ui-bg-dark-100 ease-btn" href="#">
+                                <a class="btn btn-lg btn-xs-fluid padding-30-h margin-30-b round theme-default ui-fill-dark-100 ease-btn" href="#">
                                     <b>PURCHASE</b>
                                     <svg class="icon margin-5-l"><use href="#shopping-basket"/></svg>
                                 </a>

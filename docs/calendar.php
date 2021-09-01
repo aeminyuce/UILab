@@ -13,22 +13,22 @@
                 <div class="calendar ease-calendar round shadow"></div>
             </div>
             <div class="col-4 col-md-6">
-                <div class="calendar ease-calendar no-padding margin-5 shadow-lg theme-default2 ui-bg-dark-100"></div>
+                <div class="calendar ease-calendar no-padding margin-5 shadow-lg theme-default2 ui-fill-dark-100"></div>
             </div>
             <div class="col-4 col-md-6">
-                <div class="calendar ease-calendar round theme-default2 ui-bg-dark-300"></div>
+                <div class="calendar ease-calendar round theme-default2 ui-fill-dark-300"></div>
             </div>
             <div class="col-4 col-md-6">
-                <div class="calendar ease-calendar round shadow-lg theme-default ui-bg-dark-100"></div>
+                <div class="calendar ease-calendar round shadow-lg theme-default ui-fill-dark-100"></div>
             </div>
             <div class="col-4 col-md-6">
-                <div class="calendar ease-calendar no-padding margin-5 shadow-lg theme-yellow ui-bg-dark-100"></div>
+                <div class="calendar ease-calendar no-padding margin-5 shadow-lg theme-yellow ui-fill-dark-100"></div>
             </div>
             <div class="col-4 col-md-6">
-                <div class="calendar ease-calendar round theme-orange ui-bg-dark-100"></div>
+                <div class="calendar ease-calendar round theme-orange ui-fill-dark-100"></div>
             </div>
             <div class="col-4 col-md-6">
-                <div class="calendar ease-calendar round shadow-lg theme-green ui-bg-dark-100"></div>
+                <div class="calendar ease-calendar round shadow-lg theme-green ui-fill-dark-100"></div>
             </div>
         </div>
 
@@ -100,7 +100,7 @@
                 <div class="calendar ease-calendar round" data-ui-src="json/calendar.json" data-ui-date="2019,6"></div>
             </div>
             <div class="col-6">
-                <div class="calendar ease-calendar round theme-default2 ui-bg-dark-100" data-ui-src="json/calendar.json" data-ui-date="2019,6"></div>
+                <div class="calendar ease-calendar round theme-default2 ui-fill-dark-100" data-ui-src="json/calendar.json" data-ui-date="2019,6"></div>
             </div>
         </div>
 

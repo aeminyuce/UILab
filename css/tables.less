@@ -104,13 +104,13 @@
     }
 
     &-striped {
-        tr:nth-child(even):not([class*="ui-bg-"]) { ._bg-var(table-stripe-bg); }
+        tr:nth-child(even):not([class*="ui-fill-"]) { ._bg-var(table-stripe-bg); }
     }
 
     &-hover {
         .desktop & {
             tbody {
-                tr:not([class*="ui-bg-"]):hover { ._bg-var(table-hover-bg); }
+                tr:not([class*="ui-fill-"]):hover { ._bg-var(table-hover-bg); }
             }
         }
     }

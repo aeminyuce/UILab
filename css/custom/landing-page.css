@@ -1,62 +1,62 @@
 /* landing page */
-.theme-farmer.ui-bg-light-100,
-.theme-farmer .ui-bg-light-100:not([class*="theme-"]) {
+.theme-farmer.ui-fill-light-100,
+.theme-farmer .ui-fill-light-100:not([class*="theme-"]) {
   background-color: hsla(43, 100%, 62%, 0.15);
 }
-.theme-farmer.ui-bg-light-200,
-.theme-farmer .ui-bg-light-200:not([class*="theme-"]) {
+.theme-farmer.ui-fill-light-200,
+.theme-farmer .ui-fill-light-200:not([class*="theme-"]) {
   background-color: hsla(43, 100%, 67%, 0.25);
 }
-.theme-farmer.ui-bg-light-300,
-.theme-farmer .ui-bg-light-300:not([class*="theme-"]) {
+.theme-farmer.ui-fill-light-300,
+.theme-farmer .ui-fill-light-300:not([class*="theme-"]) {
   background-color: hsla(43, 100%, 72%, 0.35);
 }
-.theme-farmer.ui-bg-dark-100,
-.theme-farmer .ui-bg-dark-100:not([class*="theme-"]) {
+.theme-farmer.ui-fill-dark-100,
+.theme-farmer .ui-fill-dark-100:not([class*="theme-"]) {
   background-color: hsl(43, 100%, 52%);
 }
-.theme-farmer.ui-bg-dark-200,
-.theme-farmer .ui-bg-dark-200:not([class*="theme-"]) {
+.theme-farmer.ui-fill-dark-200,
+.theme-farmer .ui-fill-dark-200:not([class*="theme-"]) {
   background-color: hsl(43, 100%, 37%);
 }
-.theme-farmer.ui-bg-dark-300,
-.theme-farmer .ui-bg-dark-300:not([class*="theme-"]) {
+.theme-farmer.ui-fill-dark-300,
+.theme-farmer .ui-fill-dark-300:not([class*="theme-"]) {
   background-color: hsl(43, 100%, 27%);
 }
-.desktop .theme-farmer.ui-bg-light-100.hover:hover,
-.desktop .theme-farmer .ui-bg-light-100:not([class*="theme-"]).hover:hover,
-.desktop .theme-farmer.ui-bg-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-farmer .ui-bg-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-farmer.ui-fill-light-100.hover:hover,
+.desktop .theme-farmer .ui-fill-light-100:not([class*="theme-"]).hover:hover,
+.desktop .theme-farmer.ui-fill-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-farmer .ui-fill-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsla(43, 100%, 62%, 0.3);
 }
-.desktop .theme-farmer.ui-bg-light-200.hover:hover,
-.desktop .theme-farmer .ui-bg-light-200:not([class*="theme-"]).hover:hover,
-.desktop .theme-farmer.ui-bg-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-farmer .ui-bg-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-farmer.ui-fill-light-200.hover:hover,
+.desktop .theme-farmer .ui-fill-light-200:not([class*="theme-"]).hover:hover,
+.desktop .theme-farmer.ui-fill-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-farmer .ui-fill-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsla(43, 100%, 67%, 0.5);
 }
-.desktop .theme-farmer.ui-bg-light-300.hover:hover,
-.desktop .theme-farmer .ui-bg-light-300:not([class*="theme-"]).hover:hover,
-.desktop .theme-farmer.ui-bg-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-farmer .ui-bg-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-farmer.ui-fill-light-300.hover:hover,
+.desktop .theme-farmer .ui-fill-light-300:not([class*="theme-"]).hover:hover,
+.desktop .theme-farmer.ui-fill-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-farmer .ui-fill-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsla(43, 100%, 72%, 0.7);
 }
-.desktop .theme-farmer.ui-bg-dark-100.hover:hover,
-.desktop .theme-farmer .ui-bg-dark-100:not([class*="theme-"]).hover:hover,
-.desktop .theme-farmer.ui-bg-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-farmer .ui-bg-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-farmer.ui-fill-dark-100.hover:hover,
+.desktop .theme-farmer .ui-fill-dark-100:not([class*="theme-"]).hover:hover,
+.desktop .theme-farmer.ui-fill-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-farmer .ui-fill-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(43, 100%, 67%);
 }
-.desktop .theme-farmer.ui-bg-dark-200.hover:hover,
-.desktop .theme-farmer .ui-bg-dark-200:not([class*="theme-"]).hover:hover,
-.desktop .theme-farmer.ui-bg-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-farmer .ui-bg-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-farmer.ui-fill-dark-200.hover:hover,
+.desktop .theme-farmer .ui-fill-dark-200:not([class*="theme-"]).hover:hover,
+.desktop .theme-farmer.ui-fill-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-farmer .ui-fill-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(43, 100%, 72%);
 }
-.desktop .theme-farmer.ui-bg-dark-300.hover:hover,
-.desktop .theme-farmer .ui-bg-dark-300:not([class*="theme-"]).hover:hover,
-.desktop .theme-farmer.ui-bg-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-farmer .ui-bg-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-farmer.ui-fill-dark-300.hover:hover,
+.desktop .theme-farmer .ui-fill-dark-300:not([class*="theme-"]).hover:hover,
+.desktop .theme-farmer.ui-fill-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-farmer .ui-fill-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(43, 100%, 77%);
 }
 .theme-farmer.ui-color,
@@ -67,64 +67,64 @@
 .theme-farmer .ui-stroke:not([class*="theme-"]) {
   border-color: hsl(43, 100%, 52%);
 }
-.theme-farmer2.ui-bg-light-100,
-.theme-farmer2 .ui-bg-light-100:not([class*="theme-"]) {
+.theme-farmer2.ui-fill-light-100,
+.theme-farmer2 .ui-fill-light-100:not([class*="theme-"]) {
   background-color: hsla(140, 86%, 56%, 0.15);
 }
-.theme-farmer2.ui-bg-light-200,
-.theme-farmer2 .ui-bg-light-200:not([class*="theme-"]) {
+.theme-farmer2.ui-fill-light-200,
+.theme-farmer2 .ui-fill-light-200:not([class*="theme-"]) {
   background-color: hsla(140, 86%, 61%, 0.25);
 }
-.theme-farmer2.ui-bg-light-300,
-.theme-farmer2 .ui-bg-light-300:not([class*="theme-"]) {
+.theme-farmer2.ui-fill-light-300,
+.theme-farmer2 .ui-fill-light-300:not([class*="theme-"]) {
   background-color: hsla(140, 86%, 66%, 0.35);
 }
-.theme-farmer2.ui-bg-dark-100,
-.theme-farmer2 .ui-bg-dark-100:not([class*="theme-"]) {
+.theme-farmer2.ui-fill-dark-100,
+.theme-farmer2 .ui-fill-dark-100:not([class*="theme-"]) {
   background-color: hsl(140, 86%, 46%);
 }
-.theme-farmer2.ui-bg-dark-200,
-.theme-farmer2 .ui-bg-dark-200:not([class*="theme-"]) {
+.theme-farmer2.ui-fill-dark-200,
+.theme-farmer2 .ui-fill-dark-200:not([class*="theme-"]) {
   background-color: hsl(140, 86%, 31%);
 }
-.theme-farmer2.ui-bg-dark-300,
-.theme-farmer2 .ui-bg-dark-300:not([class*="theme-"]) {
+.theme-farmer2.ui-fill-dark-300,
+.theme-farmer2 .ui-fill-dark-300:not([class*="theme-"]) {
   background-color: hsl(140, 86%, 21%);
 }
-.desktop .theme-farmer2.ui-bg-light-100.hover:hover,
-.desktop .theme-farmer2 .ui-bg-light-100:not([class*="theme-"]).hover:hover,
-.desktop .theme-farmer2.ui-bg-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-farmer2 .ui-bg-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-farmer2.ui-fill-light-100.hover:hover,
+.desktop .theme-farmer2 .ui-fill-light-100:not([class*="theme-"]).hover:hover,
+.desktop .theme-farmer2.ui-fill-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-farmer2 .ui-fill-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsla(140, 86%, 56%, 0.3);
 }
-.desktop .theme-farmer2.ui-bg-light-200.hover:hover,
-.desktop .theme-farmer2 .ui-bg-light-200:not([class*="theme-"]).hover:hover,
-.desktop .theme-farmer2.ui-bg-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-farmer2 .ui-bg-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-farmer2.ui-fill-light-200.hover:hover,
+.desktop .theme-farmer2 .ui-fill-light-200:not([class*="theme-"]).hover:hover,
+.desktop .theme-farmer2.ui-fill-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-farmer2 .ui-fill-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsla(140, 86%, 61%, 0.5);
 }
-.desktop .theme-farmer2.ui-bg-light-300.hover:hover,
-.desktop .theme-farmer2 .ui-bg-light-300:not([class*="theme-"]).hover:hover,
-.desktop .theme-farmer2.ui-bg-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-farmer2 .ui-bg-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-farmer2.ui-fill-light-300.hover:hover,
+.desktop .theme-farmer2 .ui-fill-light-300:not([class*="theme-"]).hover:hover,
+.desktop .theme-farmer2.ui-fill-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-farmer2 .ui-fill-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsla(140, 86%, 66%, 0.7);
 }
-.desktop .theme-farmer2.ui-bg-dark-100.hover:hover,
-.desktop .theme-farmer2 .ui-bg-dark-100:not([class*="theme-"]).hover:hover,
-.desktop .theme-farmer2.ui-bg-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-farmer2 .ui-bg-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-farmer2.ui-fill-dark-100.hover:hover,
+.desktop .theme-farmer2 .ui-fill-dark-100:not([class*="theme-"]).hover:hover,
+.desktop .theme-farmer2.ui-fill-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-farmer2 .ui-fill-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(140, 86%, 61%);
 }
-.desktop .theme-farmer2.ui-bg-dark-200.hover:hover,
-.desktop .theme-farmer2 .ui-bg-dark-200:not([class*="theme-"]).hover:hover,
-.desktop .theme-farmer2.ui-bg-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-farmer2 .ui-bg-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-farmer2.ui-fill-dark-200.hover:hover,
+.desktop .theme-farmer2 .ui-fill-dark-200:not([class*="theme-"]).hover:hover,
+.desktop .theme-farmer2.ui-fill-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-farmer2 .ui-fill-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(140, 86%, 66%);
 }
-.desktop .theme-farmer2.ui-bg-dark-300.hover:hover,
-.desktop .theme-farmer2 .ui-bg-dark-300:not([class*="theme-"]).hover:hover,
-.desktop .theme-farmer2.ui-bg-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-farmer2 .ui-bg-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-farmer2.ui-fill-dark-300.hover:hover,
+.desktop .theme-farmer2 .ui-fill-dark-300:not([class*="theme-"]).hover:hover,
+.desktop .theme-farmer2.ui-fill-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-farmer2 .ui-fill-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(140, 86%, 71%);
 }
 .theme-farmer2.ui-color,

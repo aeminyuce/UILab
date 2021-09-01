@@ -71,7 +71,7 @@
 ?>
 
     <!-- header -->
-    <header class="container header form-lg ui-bg-dark-100 ease-layout" data-ui-classes="shadow-lg">
+    <header class="container header form-lg ui-fill-dark-100 ease-layout" data-ui-classes="shadow-lg">
         <div class="row">
             <div class="col-12">
                 <button title="Toggle Theme" data-ui-tooltip data-ui-only="desktop" class="btn-toggle-color btn btn-square round icons-no-opacity right ease-btn">
@@ -103,7 +103,7 @@
     } else {
 ?>
     <!-- header -->
-    <header class="container header form-lg ui-bg-dark-100 ease-layout" data-ui-classes="shadow-lg">
+    <header class="container header form-lg ui-fill-dark-100 ease-layout" data-ui-classes="shadow-lg">
         <div class="row">
             <div class="col-static no-fluid">
                 <div class="col-250 col-xs-150 align-c md-align-l padding-15">
@@ -131,7 +131,7 @@
         <div class="col-static no-fluid">
 
             <!-- sidebar -->
-            <div class="col-250 theme-gray ui-bg-light-300 hidden-md">
+            <div class="col-250 theme-gray ui-fill-light-300 hidden-md">
                 <div class="align-l sm-align-c padding-20-t form-lg add-mobile-menu-r">
                     <h4 class="font-bold padding-10-h theme-default2 ui-color">UI</h4>
                     <ul class="list-unstyled block-2nd ease-2nd-button">
@@ -184,7 +184,7 @@
                                 <a href="?p=icons" class="btn btn-xs-fluid padding-30-h circle theme-default2">
                                     <svg class="icon margin-5-r no-opacity ui-color"><use href="#draw"/></svg> See Icons
                                 </a>
-                                <a href="?p=download" class="btn btn-xs-fluid padding-30-h circle theme-default2 ui-bg-dark-100">
+                                <a href="?p=download" class="btn btn-xs-fluid padding-30-h circle theme-default2 ui-fill-dark-100">
                                     Download <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                                 </a>
                             </div>
@@ -305,13 +305,13 @@
 
     <!-- mobile menu -->
     <div class="mobile-menu show-r theme-default ease-layout ease-in-out">
-        <div class="mobile-menu-title padding-15-v ui-bg-dark-100">
+        <div class="mobile-menu-title padding-15-v ui-fill-dark-100">
             <button class="btn btn-square btn-lg btn-ghost round ease-btn close-mobile-menu">
                 <svg class="icon no-opacity"><use href="#remove"/></svg>
             </button>
             <img src="img/uilab-logo.png" alt="" srcset="img/uilab-logo@2x.png 2x">
         </div>
-        <div class="mobile-menu-content no-padding theme-gray ui-bg-light-100 scroll-v"></div>
+        <div class="mobile-menu-content no-padding theme-gray ui-fill-light-100 scroll-v"></div>
     </div>
 <?php
     }

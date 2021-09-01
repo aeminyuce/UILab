@@ -28,7 +28,7 @@
 .tooltip {
     min-width: @tooltip-min-width; max-width: @tooltip-max-width; position: absolute; z-index: @tooltip-z-index;
 
-    &:not([class*="ui-bg-"]) { color: @white; ._bg-var(tooltip-bg); }
+    &:not([class*="ui-fill-"]) { color: @white; ._bg-var(tooltip-bg); }
     &:not(.open) { display: none; }
     &:not(.open-ease) { opacity: 0; }
 
@@ -108,7 +108,7 @@
         .bg { z-index: 1; }
     }
 
-    &:not([class*="ui-bg-"]) {
+    &:not([class*="ui-fill-"]) {
         & > span {
             i { ._bg-var(tooltip-bg); }
         }

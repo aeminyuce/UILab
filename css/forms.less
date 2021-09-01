@@ -233,10 +233,10 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
         &:checked + .state {
             transform: translate(25%,-50%);
 
-            &:not([class*="ui-bg-"]) { background-color: @green; }
+            &:not([class*="ui-fill-"]) { background-color: @green; }
         }
         &:not(:checked) + .state {
-            &,&[class*="ui-bg-"] { ._bg-var(switch-custom-bg); }
+            &,&[class*="ui-fill-"] { ._bg-var(switch-custom-bg); }
         }
         &:not(:indeterminate):not(:checked):not(:indeterminate) + .state { transform: translate(-125%,-50%); }
         &:indeterminate + .state { background-color: @yellow; }

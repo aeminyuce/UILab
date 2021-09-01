@@ -3,33 +3,33 @@
 
 @theme-colors:                          gray green yellow orange red default default2;
 
-[class*="ui-bg-light-"] {
+[class*="ui-fill-light-"] {
     ._color-var(black);
 
     .icon,a,button {
-        &:not([class*="ui-bg-"]):not([class*="font-color-"]) { &:extend([class*="ui-bg-light-"] ); }
+        &:not([class*="ui-fill-"]):not([class*="font-color-"]) { &:extend([class*="ui-fill-light-"] ); }
     }
 }
 
-[class*="ui-bg-dark-"] {
+[class*="ui-fill-dark-"] {
     color: @white;
 
     .icon,a,button {
-        &:not([class*="ui-bg-"]):not([class*="font-color-"]) { &:extend([class*="ui-bg-dark-"]); }
+        &:not([class*="ui-fill-"]):not([class*="font-color-"]) { &:extend([class*="ui-fill-dark-"]); }
     }
 }
 
 .bg-white {
-   &:not([class*="ui-bg-"]) { ._bg-var(white) !important; }
+   &:not([class*="ui-fill-"]) { ._bg-var(white) !important; }
 }
 .card {
    .bg-white {
-       &:not([class*="ui-bg-"]) { ._bg-var(card-bg) !important; }
+       &:not([class*="ui-fill-"]) { ._bg-var(card-bg) !important; }
    }
 }
 
 .bg-black {
-   &:not([class*="ui-bg-"]) { background-color: @black !important; }
+   &:not([class*="ui-fill-"]) { background-color: @black !important; }
 }
 
 each(@theme-colors, {

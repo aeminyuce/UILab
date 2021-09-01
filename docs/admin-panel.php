@@ -31,7 +31,7 @@
                                 <li><a href="#"><svg class="icon"><use href="#sign-out"/></svg>Log Out</a></li>
                             </ul>
                         </div>
-                        <div class="padding-10 circle inline-block theme-gray ui-bg-light-300">
+                        <div class="padding-10 circle inline-block theme-gray ui-fill-light-300">
                             <a class="hover-scale ease-layout" href="#" data-ui-tooltip="r" title="Show your profile">
                                 <img class="img-photo-lg circle" src="img/profile-image.jpg" alt="">
                             </a>
@@ -101,7 +101,7 @@
                     <svg class="icon margin-10-r"><use href="#help"/></svg>
                     <b>System Tips</b>
                     <div class="font-color-black-50 large no-line-height margin-5-t margin-15-b">You can backup your stats weekly.</div>
-                    <button class="btn block circle theme-green ui-bg-dark-100 ease-btn"><b>Got it!</b></button>
+                    <button class="btn block circle theme-green ui-fill-dark-100 ease-btn"><b>Got it!</b></button>
                 </div>
 
             </div>
@@ -222,7 +222,7 @@
 
                             <div class="row sm-fluid">
                                 <div class="col-5 sm-no-padding-b">
-                                    <div class="text text-icon-both round no-border ui-bg-light-100 has-clear ease-form">
+                                    <div class="text text-icon-both round no-border ui-fill-light-100 has-clear ease-form">
                                         <svg class="icon text-icon-l"><use href="#search"/></svg>
                                         <button class="clear-form">
                                             <svg class="icon"><use href="#remove"/></svg>
@@ -231,7 +231,7 @@
                                     </div>
                                 </div>
                                 <div class="col-7 ease-1st-form align-r sm-align-l">
-                                    <div class="select form-inline round no-border ui-bg-light-100">
+                                    <div class="select form-inline round no-border ui-fill-light-100">
                                         <svg class="icon"><use href="#angle-down"/></svg>
                                         <select class="grid-filter" data-ui-index="1">
                                             <option value="">Name</option>
@@ -241,7 +241,7 @@
                                             <option>Bob Pool</option>
                                         </select>
                                     </div>
-                                    <div class="select form-inline round no-border ui-bg-light-100">
+                                    <div class="select form-inline round no-border ui-fill-light-100">
                                         <svg class="icon"><use href="#angle-down"/></svg>
                                         <select class="grid-filter" data-ui-index="2" data-ui-type="number">
                                             <option value="">Age</option>
@@ -250,7 +250,7 @@
                                             <option>29</option>
                                         </select>
                                     </div>
-                                    <div class="select form-inline round no-border ui-bg-light-100">
+                                    <div class="select form-inline round no-border ui-fill-light-100">
                                         <svg class="icon"><use href="#angle-down"/></svg>
                                         <select class="grid-show">
                                             <option>5</option>
@@ -262,7 +262,7 @@
                                 </div>
                             </div>
 
-                            <div class="row row-gap-xs align-l no-fluid block-2nd ui-bg-light-100 ease-2nd-btn">
+                            <div class="row row-gap-xs align-l no-fluid block-2nd ui-fill-light-100 ease-2nd-btn">
                                 <div class="col-5">
                                     <button class="btn btn-ghost" data-ui-sort="1">
                                         <svg class="icon"><use href="#sort"/></svg> Name
@@ -892,7 +892,7 @@
                                     </div>
                                 </div>
                                 <div class="col-6 align-r">
-                                    <div class="grid-paging pagination ease-1st-btn" data-ui-default="btn round" data-ui-active="theme-default2 ui-bg-dark-100"></div>
+                                    <div class="grid-paging pagination ease-1st-btn" data-ui-default="btn round" data-ui-active="theme-default2 ui-fill-dark-100"></div>
                                 </div>
                             </div>
 
@@ -909,7 +909,7 @@
 
 <!-- mobile menu -->
 <div class="mobile-menu show-l theme-default ease-layout ease-in-out ">
-    <div class="mobile-menu-title ui-bg-dark-100">
+    <div class="mobile-menu-title ui-fill-dark-100">
         <button class="btn btn-square btn-lg btn-ghost round ease-btn close-mobile-menu">
             <svg class="icon no-opacity"><use href="#remove"/></svg>
         </button>

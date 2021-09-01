@@ -123,9 +123,9 @@
                 button {
                     font-weight: @font-bold;
 
-                    &:not([class*="ui-bg-"]) { ._bg-var(calendar-today-btn-bg); }
+                    &:not([class*="ui-fill-"]) { ._bg-var(calendar-today-btn-bg); }
                     .desktop & {
-                        &:not([class*="ui-bg-"]):hover { ._bg-var(calendar-today-btn-hover-bg); }
+                        &:not([class*="ui-fill-"]):hover { ._bg-var(calendar-today-btn-hover-bg); }
                     }
                 }
             }
@@ -134,8 +134,8 @@
                 button {
                      font-weight: @font-bold;
 
-                    &:not([class*="ui-bg-"]) { color: @white !important; background-color: @calendar-pickerday-btn-bg; }
-                    .desktop &:not([class*="ui-bg-"]):hover { background-color: @calendar-pickerday-btn-hover-bg; }
+                    &:not([class*="ui-fill-"]) { color: @white !important; background-color: @calendar-pickerday-btn-bg; }
+                    .desktop &:not([class*="ui-fill-"]):hover { background-color: @calendar-pickerday-btn-hover-bg; }
                 }
             }
         }
@@ -146,8 +146,8 @@
     button {
         ._bg-var(btn-bg);
 
-        &:not([class*="ui-bg-"]) { ._color-var(black); }
-        .desktop &:not([class*="ui-bg-"]):hover { ._bg-var(btn-hover-bg); }
+        &:not([class*="ui-fill-"]) { ._color-var(black); }
+        .desktop &:not([class*="ui-fill-"]):hover { ._bg-var(btn-hover-bg); }
     }
 
     caption {
