@@ -61,22 +61,22 @@
                         <a class="btn btn-ghost theme-green ui-bg-dark-100 ui-color" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost btn-ghost-border border-l border-lg theme-default2 ui-bg-light-100 ui-border" href="#">Button</a>
+                        <a class="btn btn-ghost btn-ghost-border border-l border-lg theme-default2 ui-bg-light-100 ui-stroke" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost border-b border-dual theme-default ui-bg-light-100 ui-border" href="#">Button</a>
+                        <a class="btn btn-ghost border-b border-dual theme-default ui-bg-light-100 ui-stroke" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost border-b border-lg theme-green ui-bg-dark-100 ui-border" href="#">Button</a>
+                        <a class="btn btn-ghost border-b border-lg theme-green ui-bg-dark-100 ui-stroke" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
                         <a class="btn btn-ghost-border border round theme-orange ui-bg-dark-100" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost border-dual circle theme-yellow ui-border ui-color" href="#">Button</a>
+                        <a class="btn btn-ghost border-dual circle theme-yellow ui-stroke ui-color" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost border theme-default2 ui-bg-light-100 ui-border ui-color" href="#">Button</a>
+                        <a class="btn btn-ghost border theme-default2 ui-bg-light-100 ui-stroke ui-color" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
                         <a class="btn border round theme-default2 ui-bg-dark-100" href="#">Button</a>
@@ -392,7 +392,7 @@
                             <svg class="icon"><use href="#angle-left"/></svg>
                         </a>
                         <a class="btn round" href="#">1</a>
-                        <a class="btn btn-active round border-dual ui-border ui-color" href="#">2</a>
+                        <a class="btn btn-active round border-dual ui-stroke ui-color" href="#">2</a>
                         <a class="btn round" href="#">3</a>
                         <a class="btn round" href="#">4</a>
                         <a class="btn btn-passive round" href="#">...</a>
@@ -437,26 +437,26 @@
                     </div>
                     <div class="col-6">
                         <div class="btn-list align-l icons-margin-10-r form-lg icons-no-opacity theme-orange ease-1st-btn">
-                            <button class="btn btn-ghost round border ui-border">
+                            <button class="btn btn-ghost round border ui-stroke">
                                 <svg class="icon ui-color"><use href="#shield"/></svg>Administration
                             </button>
-                            <button class="btn btn-ghost round border ui-border">
+                            <button class="btn btn-ghost round border ui-stroke">
                                 <svg class="icon ui-color"><use href="#clock"/></svg>Recent History
                             </button>
-                            <button class="btn btn-ghost round border ui-border">
+                            <button class="btn btn-ghost round border ui-stroke">
                                 <svg class="icon ui-color"><use href="#settings"/></svg>Tools
                             </button>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="btn-list align-l icons-margin-10-r form-lg icons-no-opacity theme-yellow ease-1st-btn">
-                            <button class="btn btn-ghost round border-dual ui-border">
+                            <button class="btn btn-ghost round border-dual ui-stroke">
                                 <svg class="icon ui-color"><use href="#shield"/></svg>Administration
                             </button>
-                            <button class="btn btn-ghost round border-dual ui-border">
+                            <button class="btn btn-ghost round border-dual ui-stroke">
                                 <svg class="icon ui-color"><use href="#clock"/></svg>Recent History
                             </button>
-                            <button class="btn btn-ghost round border-dual ui-border">
+                            <button class="btn btn-ghost round border-dual ui-stroke">
                                 <svg class="icon ui-color"><use href="#settings"/></svg>Tools
                             </button>
                         </div>

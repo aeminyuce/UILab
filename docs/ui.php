@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-12 padding-30">
 
-                <div class="card-warning padding-30 round theme-default2 ui-bg-light-100 ui-border">
+                <div class="card-warning padding-30 round theme-default2 ui-bg-light-100 ui-stroke">
                     UI JS is a simple javascript for creating, removing and triggering javascript event listeners and finding HTML elements.
                 </div>
 

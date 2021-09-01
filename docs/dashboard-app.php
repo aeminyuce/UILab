@@ -675,10 +675,10 @@
 
                         <div class="card-side padding-10">
 
-                            <div class="tabs ease-tabs" data-ui-classes="theme-app ui-border">
+                            <div class="tabs ease-tabs" data-ui-classes="theme-app ui-stroke">
 
                                 <ul class="contacts list-inline margin-5-t margin-10-b ease-1st-border scroll-h">
-                                    <li class="tab circle online theme-app ui-border active">
+                                    <li class="tab circle online theme-app ui-stroke active">
                                         <img class="img-photo circle" src="img/profile-image.jpg" alt="">
                                     </li>
                                     <li class="tab circle online" data-ui-msg="2">

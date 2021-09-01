@@ -55,37 +55,37 @@
                 <nav class="form-lg margin-25-v icons-lg icons-no-opacity theme-default hidden-md">
                     <ul class="list-unstyled list-spacer-20 align-l icons-margin-10-r block-2nd ease-2nd-button add-mobile-menu-l">
                         <li>
-                            <a class="btn btn-ghost border-r border-lg ui-border" href="#">
+                            <a class="btn btn-ghost border-r border-lg ui-stroke" href="#">
                                 <svg class="icon"><use href="#chart-pie"/></svg>
                                 Dashboard
                             </a>
                         </li>
                         <li>
-                            <a class="btn btn-ghost btn-ghost-border border-r border-lg ui-border" href="#">
+                            <a class="btn btn-ghost btn-ghost-border border-r border-lg ui-stroke" href="#">
                                 <svg class="icon"><use href="#users"/></svg>
                                 Employees
                             </a>
                         </li>
                         <li>
-                            <a class="btn btn-ghost btn-ghost-border border-r border-lg ui-border" href="#">
+                            <a class="btn btn-ghost btn-ghost-border border-r border-lg ui-stroke" href="#">
                                 <svg class="icon"><use href="#moneys"/></svg>
                                 Payments
                             </a>
                         </li>
                         <li>
-                            <a class="btn btn-ghost btn-ghost-border border-r border-lg ui-border" href="#">
+                            <a class="btn btn-ghost btn-ghost-border border-r border-lg ui-stroke" href="#">
                                 <svg class="icon"><use href="#calendar-days"/></svg>
                                 Events
                             </a>
                         </li>
                         <li>
-                            <a class="btn btn-ghost btn-ghost-border border-r border-lg ui-border" href="#">
+                            <a class="btn btn-ghost btn-ghost-border border-r border-lg ui-stroke" href="#">
                                 <svg class="icon"><use href="#docs"/></svg>
                                 Documents
                             </a>
                         </li>
                         <li>
-                            <a class="btn margin-5-b btn-ghost btn-ghost-border border-r border-lg ui-border" href="#">
+                            <a class="btn margin-5-b btn-ghost btn-ghost-border border-r border-lg ui-stroke" href="#">
                                 <svg class="icon"><use href="#clipboard-list"/></svg>
                                 Lists
                             </a>

@@ -80,12 +80,12 @@
 <main class="container no-gutter">
 
     <!-- tab banner: start -->
-    <div class="tabs form-lg ease-tabs" data-ui-classes="ui-color border-b border-lg ui-border">
+    <div class="tabs form-lg ease-tabs" data-ui-classes="ui-color border-b border-lg ui-stroke">
 
         <div class="fixed padding-10-t theme-farmer2">
             <div class="row no-row-gap-v icons-no-opacity icons-margin-5-r">
                 <div class="col-12 xs-align-l align-c ease-1st-btn">
-                    <button class="tab btn btn-xs-fluid btn-ghost margin-1-b ui-color border-b border-lg ui-border active">
+                    <button class="tab btn btn-xs-fluid btn-ghost margin-1-b ui-color border-b border-lg ui-stroke active">
                         <svg class="icon"><use href="#factory"/></svg>
                         Long Term Investment
                     </button>
@@ -338,12 +338,12 @@
                 </div>
             </div>
         </div>
-        <div class="tabs form-lg border-t padding-10-t ease-tabs" data-ui-classes="ui-color border-b border-lg ui-border">
+        <div class="tabs form-lg border-t padding-10-t ease-tabs" data-ui-classes="ui-color border-b border-lg ui-stroke">
 
             <div class="fixed">
                 <div class="row no-row-gap-v icons-no-opacity icons-margin-5-r">
                     <div class="col-12 xs-align-l align-c ease-1st-btn">
-                        <button class="tab btn btn-xs-fluid btn-ghost margin-1-b ui-color border-b border-lg ui-border active">
+                        <button class="tab btn btn-xs-fluid btn-ghost margin-1-b ui-color border-b border-lg ui-stroke active">
                             <svg class="icon ui-color"><use href="#building"/></svg>
                             Company
                         </button>

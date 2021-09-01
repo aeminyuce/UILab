@@ -9983,8 +9983,8 @@ button.dialog-custom:focus {
 .theme-gray .ui-color:not([class*="theme-"]) {
   color: hsl(0, 0%, 70%);
 }
-.theme-gray.ui-border,
-.theme-gray .ui-border:not([class*="theme-"]) {
+.theme-gray.ui-stroke,
+.theme-gray .ui-stroke:not([class*="theme-"]) {
   border-color: hsl(0, 0%, 70%);
 }
 .theme-green.ui-bg-light-100,
@@ -10051,8 +10051,8 @@ button.dialog-custom:focus {
 .theme-green .ui-color:not([class*="theme-"]) {
   color: hsl(142, 82%, 42%);
 }
-.theme-green.ui-border,
-.theme-green .ui-border:not([class*="theme-"]) {
+.theme-green.ui-stroke,
+.theme-green .ui-stroke:not([class*="theme-"]) {
   border-color: hsl(142, 82%, 42%);
 }
 .theme-yellow.ui-bg-light-100,
@@ -10119,8 +10119,8 @@ button.dialog-custom:focus {
 .theme-yellow .ui-color:not([class*="theme-"]) {
   color: hsl(42, 100%, 45%);
 }
-.theme-yellow.ui-border,
-.theme-yellow .ui-border:not([class*="theme-"]) {
+.theme-yellow.ui-stroke,
+.theme-yellow .ui-stroke:not([class*="theme-"]) {
   border-color: hsl(42, 100%, 45%);
 }
 .theme-orange.ui-bg-light-100,
@@ -10187,8 +10187,8 @@ button.dialog-custom:focus {
 .theme-orange .ui-color:not([class*="theme-"]) {
   color: hsl(30, 100%, 50%);
 }
-.theme-orange.ui-border,
-.theme-orange .ui-border:not([class*="theme-"]) {
+.theme-orange.ui-stroke,
+.theme-orange .ui-stroke:not([class*="theme-"]) {
   border-color: hsl(30, 100%, 50%);
 }
 .theme-red.ui-bg-light-100,
@@ -10255,8 +10255,8 @@ button.dialog-custom:focus {
 .theme-red .ui-color:not([class*="theme-"]) {
   color: hsl(0, 74%, 55%);
 }
-.theme-red.ui-border,
-.theme-red .ui-border:not([class*="theme-"]) {
+.theme-red.ui-stroke,
+.theme-red .ui-stroke:not([class*="theme-"]) {
   border-color: hsl(0, 74%, 55%);
 }
 .theme-default.ui-bg-light-100,
@@ -10323,8 +10323,8 @@ button.dialog-custom:focus {
 .theme-default .ui-color:not([class*="theme-"]) {
   color: hsl(226, 52%, 50%);
 }
-.theme-default.ui-border,
-.theme-default .ui-border:not([class*="theme-"]) {
+.theme-default.ui-stroke,
+.theme-default .ui-stroke:not([class*="theme-"]) {
   border-color: hsl(226, 52%, 50%);
 }
 .theme-default2.ui-bg-light-100,
@@ -10391,7 +10391,7 @@ button.dialog-custom:focus {
 .theme-default2 .ui-color:not([class*="theme-"]) {
   color: hsl(206, 87%, 50%);
 }
-.theme-default2.ui-border,
-.theme-default2 .ui-border:not([class*="theme-"]) {
+.theme-default2.ui-stroke,
+.theme-default2 .ui-stroke:not([class*="theme-"]) {
   border-color: hsl(206, 87%, 50%);
 }

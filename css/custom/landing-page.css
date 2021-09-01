@@ -63,8 +63,8 @@
 .theme-farmer .ui-color:not([class*="theme-"]) {
   color: hsl(43, 100%, 52%);
 }
-.theme-farmer.ui-border,
-.theme-farmer .ui-border:not([class*="theme-"]) {
+.theme-farmer.ui-stroke,
+.theme-farmer .ui-stroke:not([class*="theme-"]) {
   border-color: hsl(43, 100%, 52%);
 }
 .theme-farmer2.ui-bg-light-100,
@@ -131,8 +131,8 @@
 .theme-farmer2 .ui-color:not([class*="theme-"]) {
   color: hsl(140, 86%, 46%);
 }
-.theme-farmer2.ui-border,
-.theme-farmer2 .ui-border:not([class*="theme-"]) {
+.theme-farmer2.ui-stroke,
+.theme-farmer2 .ui-stroke:not([class*="theme-"]) {
   border-color: hsl(140, 86%, 46%);
 }
 .col-220 {

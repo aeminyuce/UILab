@@ -460,7 +460,7 @@
                                 </div>
                             </div>
                             <div class="col-8 no-fluid align-r">
-                                <div class="grid-paging pagination ease-1st-btn" data-ui-default="btn round" data-ui-active="border-dual theme-default2 ui-border ui-color"></div>
+                                <div class="grid-paging pagination ease-1st-btn" data-ui-default="btn round" data-ui-active="border-dual theme-default2 ui-stroke ui-color"></div>
                             </div>
                         </div>
 

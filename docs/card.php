@@ -248,7 +248,7 @@
                 </div>
 
                 <h4>Cards with Themes</h4>
-                <div class="card round theme-default2 ui-bg-light-100 ui-border">
+                <div class="card round theme-default2 ui-bg-light-100 ui-stroke">
                     <div class="card-side padding-30">
                         <h4>
                             <svg class="icon icon-xl ui-color"><use href="#help-fill"/></svg>
@@ -266,7 +266,7 @@
                     </div>
                 </div>
 
-                <div class="card round theme-default ui-bg-light-100 ui-border">
+                <div class="card round theme-default ui-bg-light-100 ui-stroke">
                     <div class="card-side padding-30">
                         <h4>
                             <svg class="icon icon-xl ui-color"><use href="#help"/></svg>
@@ -284,7 +284,7 @@
                     </div>
                 </div>
 
-                <div class="card-warning padding-30 round theme-default ui-bg-light-100 ui-border">
+                <div class="card-warning padding-30 round theme-default ui-bg-light-100 ui-stroke">
                     <h4>
                         <svg class="icon icon-xl ui-color"><use href="#help-fill"/></svg>
                         Message Title
@@ -297,7 +297,7 @@
                     </a>
                 </div>
 
-                <div class="card-warning padding-30 round theme-green ui-bg-light-100 ui-border">
+                <div class="card-warning padding-30 round theme-green ui-bg-light-100 ui-stroke">
                     <h4>
                         <svg class="icon icon-xl ui-color"><use href="#help"/></svg>
                         Message Title
@@ -310,7 +310,7 @@
                     </a>
                 </div>
 
-                <div class="card-warning padding-30 round theme-yellow ui-bg-light-100 ui-border">
+                <div class="card-warning padding-30 round theme-yellow ui-bg-light-100 ui-stroke">
                     <h4>
                         <svg class="icon icon-xl ui-color"><use href="#help-fill"/></svg>
                         Message Title

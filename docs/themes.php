@@ -53,49 +53,49 @@
             </div>
             <div class="col-12 padding-30">
 
-                <h4>Theme Border Colors</h4>
+                <h4>Theme Stroke Colors</h4>
 
                 <div class="row row-gap-md highlight xs-fluid">
                     <div class="col-5x col-md-6 col-sm-6">
-                        <div class="padding-15 round border border-dual theme-gray ui-border">
+                        <div class="padding-15 round border border-dual theme-gray ui-stroke">
                             .theme-gray<br>
-                            .ui-border
+                            .ui-stroke
                         </div>
                     </div>
                     <div class="col-5x col-md-6 col-sm-6">
-                        <div class="padding-15 round border border-dual theme-green ui-border">
+                        <div class="padding-15 round border border-dual theme-green ui-stroke">
                             .theme-green<br>
-                            .ui-border
+                            .ui-stroke
                         </div>
                     </div>
                     <div class="col-5x col-md-6 col-sm-6">
-                        <div class="padding-15 round border border-dual theme-yellow ui-border">
+                        <div class="padding-15 round border border-dual theme-yellow ui-stroke">
                             .theme-yellow<br>
-                            .ui-border
+                            .ui-stroke
                         </div>
                     </div>
                     <div class="col-5x col-md-6 col-sm-6">
-                        <div class="padding-15 round border border-dual theme-orange ui-border">
+                        <div class="padding-15 round border border-dual theme-orange ui-stroke">
                             .theme-orange<br>
-                            .ui-border
+                            .ui-stroke
                         </div>
                     </div>
                     <div class="col-5x col-md-6 col-sm-6">
-                        <div class="padding-15 round border border-dual theme-red ui-border">
+                        <div class="padding-15 round border border-dual theme-red ui-stroke">
                             .theme-red<br>
-                            .ui-border
+                            .ui-stroke
                         </div>
                     </div>
                     <div class="col-5x col-md-6 col-sm-6">
-                        <div class="padding-15 round border border-dual theme-default ui-border">
+                        <div class="padding-15 round border border-dual theme-default ui-stroke">
                             .theme-default<br>
-                            .ui-border
+                            .ui-stroke
                         </div>
                     </div>
                     <div class="col-5x col-md-6 col-sm-6">
-                        <div class="padding-15 round border border-dual theme-default2 ui-border">
+                        <div class="padding-15 round border border-dual theme-default2 ui-stroke">
                             .theme-default2<br>
-                            .ui-border
+                            .ui-stroke
                         </div>
                     </div>
                 </div>

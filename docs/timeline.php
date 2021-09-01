@@ -27,19 +27,19 @@
                         <span class="img-photo-sm circle ui-bg-dark-100">
                             <svg class="icon"><use href="#user"/></svg>
                         </span>
-                        <span class="card border-dual round ui-border shadow-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span>
+                        <span class="card border-dual round ui-stroke shadow-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span>
                     </li>
                     <li>
                         <span class="img-photo-sm circle ui-bg-dark-100">
                             <svg class="icon"><use href="#heart"/></svg>
                         </span>
-                        <span class="card border-dual round ui-border shadow-lg">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span>
+                        <span class="card border-dual round ui-stroke shadow-lg">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span>
                     </li>
                     <li>
                         <span class="img-photo-sm circle ui-bg-dark-100">
                             <svg class="icon"><use href="#flag"/></svg>
                         </span>
-                        <span class="card border-dual round ui-border shadow-lg">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span>
+                        <span class="card border-dual round ui-stroke shadow-lg">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span>
                     </li>
                 </ul>
 

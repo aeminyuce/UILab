@@ -69,8 +69,8 @@
 .theme-panel .ui-color:not([class*="theme-"]) {
   color: hsl(231, 55%, 47%);
 }
-.theme-panel.ui-border,
-.theme-panel .ui-border:not([class*="theme-"]) {
+.theme-panel.ui-stroke,
+.theme-panel .ui-stroke:not([class*="theme-"]) {
   border-color: hsl(231, 55%, 47%);
 }
 .theme-panel2.ui-bg-light-100,
@@ -137,8 +137,8 @@
 .theme-panel2 .ui-color:not([class*="theme-"]) {
   color: hsl(189, 95%, 40%);
 }
-.theme-panel2.ui-border,
-.theme-panel2 .ui-border:not([class*="theme-"]) {
+.theme-panel2.ui-stroke,
+.theme-panel2 .ui-stroke:not([class*="theme-"]) {
   border-color: hsl(189, 95%, 40%);
 }
 body {

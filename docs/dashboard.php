@@ -249,10 +249,10 @@
                             <svg class="icon"><use href="#grid-column"/></svg>
                         </button>
                         <div class="content round shadow-lg no-scroll">
-                            <div class="tabs xs-full-width theme-panel2" data-ui-classes="border-b border-lg ui-border ui-color" style="min-width: 300px;">
+                            <div class="tabs xs-full-width theme-panel2" data-ui-classes="border-b border-lg ui-stroke ui-color" style="min-width: 300px;">
 
                                 <div class="btn-holder font-color-black-muted align-c border-b ease-1st-btn">
-                                    <button class="tab btn btn-ghost round-t border-b border-lg ui-border ui-color active" data-ui-tooltip data-ui-only="desktop" title="Favorites">
+                                    <button class="tab btn btn-ghost round-t border-b border-lg ui-stroke ui-color active" data-ui-tooltip data-ui-only="desktop" title="Favorites">
                                         <svg class="icon ui-no"><use href="#star"/></svg>
                                     </button>
                                     <button class="tab btn btn-ghost round-t" data-ui-tooltip data-ui-only="desktop" title="History">
@@ -327,10 +327,10 @@
                             <svg class="icon"><use href="#bars-right"/></svg>
                         </button>
                         <div class="content round shadow-lg no-scroll">
-                            <div class="tabs xs-full-width theme-panel2 ease-tabs" data-ui-classes="border-b border-lg ui-border ui-color" style="min-width: 300px;">
+                            <div class="tabs xs-full-width theme-panel2 ease-tabs" data-ui-classes="border-b border-lg ui-stroke ui-color" style="min-width: 300px;">
 
                                 <div class="btn-holder font-color-black-muted align-c border-b ease-1st-btn">
-                                    <button class="tab btn btn-ghost round-t border-b border-lg ui-border ui-color active" data-ui-tooltip data-ui-only="desktop" title="Notifications">
+                                    <button class="tab btn btn-ghost round-t border-b border-lg ui-stroke ui-color active" data-ui-tooltip data-ui-only="desktop" title="Notifications">
                                         <svg class="icon ui-no"><use href="#bell"/></svg>
                                     </button>
                                     <button class="tab btn btn-ghost round-t" data-ui-tooltip data-ui-only="desktop" title="Notes">
@@ -519,14 +519,14 @@
             <!-- header: end -->
 
             <!-- layouts: start -->
-            <div class="tabs ease-tabs padding-15-b" data-ui-classes="border-lg border-b ui-border ui-color">
+            <div class="tabs ease-tabs padding-15-b" data-ui-classes="border-lg border-b ui-stroke ui-color">
 
                 <div class="container">
                     <div class="row border-b margin-15-b theme-panel2">
                         <div class="col-4 offset-4 no-padding-b">
 
                             <div class="btn-holder font-color-black-muted form-lg ease-1st-btn">
-                                <button class="tab btn btn-ghost round-t border-lg border-b ui-border ui-color active">Forms</button>
+                                <button class="tab btn btn-ghost round-t border-lg border-b ui-stroke ui-color active">Forms</button>
                                 <button class="tab btn btn-ghost round-t">Dashboard</button>
                             </div>
 
@@ -901,10 +901,10 @@
 
                             <div class="col-xl-3 col-lg-6 col-12 col-md-6">
                                 <div class="card full-h padding-15 padding-10-t round shadow-lg" style="min-height: 350px;">
-                                    <div class="tabs theme-panel2 ease-tabs" data-ui-classes="border-b border-lg ui-border ui-color">
+                                    <div class="tabs theme-panel2 ease-tabs" data-ui-classes="border-b border-lg ui-stroke ui-color">
 
                                         <div class="btn-holder font-color-black-muted align-c margin-10-b border-b form-lg ease-1st-btn">
-                                            <button class="tab btn btn-ghost round-t border-b border-lg ui-border ui-color active">Delayed</button>
+                                            <button class="tab btn btn-ghost round-t border-b border-lg ui-stroke ui-color active">Delayed</button>
                                             <button class="tab btn btn-ghost round-t">Paused</button>
                                         </div>
                                         <div class="tab-content set-absolute set-h scroll-v open open-ease" style="top: 62px; bottom: 15px;">
@@ -1114,10 +1114,10 @@
 
                             <div class="col-xl-3 col-lg-6 col-12 col-md-6">
                                 <div class="card full-h padding-15 padding-10-t round shadow-lg" style="min-height: 350px;">
-                                    <div class="tabs form-lg theme-panel2 ease-tabs" data-ui-classes="border-b border-lg ui-border ui-color">
+                                    <div class="tabs form-lg theme-panel2 ease-tabs" data-ui-classes="border-b border-lg ui-stroke ui-color">
 
                                         <div class="btn-holder font-color-black-muted align-c margin-10-b border-b ease-1st-btn">
-                                            <button class="tab btn btn-ghost round-t border-b border-lg ui-border ui-color active">News</button>
+                                            <button class="tab btn btn-ghost round-t border-b border-lg ui-stroke ui-color active">News</button>
                                             <button class="tab btn btn-ghost round-t">Announcements</button>
                                         </div>
                                         <div class="tab-content set-absolute set-h scroll-v open open-ease" style="top: 62px; bottom: 15px;">

@@ -20,7 +20,7 @@
                     <div class="row">
                         <div class="col-12 padding-15-v align-c">
                             <span class="sp-30"></span>
-                            <a href="?l=login-page" class="btn font-color-white btn-lg btn-ghost btn-ghost-border btn-sm-fluid padding-30-h circle border-dual ui-border ease-btn">
+                            <a href="?l=login-page" class="btn font-color-white btn-lg btn-ghost btn-ghost-border btn-sm-fluid padding-30-h circle border-dual ui-stroke ease-btn">
                                 <span class="font-color-white">Have you already an account?</span>
                                 <span class="ui-color hidden-sm">Click here to login.</span>
                             </a>

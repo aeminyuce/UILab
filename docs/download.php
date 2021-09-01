@@ -4,13 +4,13 @@
 <main class="container">
     <div class="row">
         <div class="col-12">
-            <div class="padding-30-v sm-no-padding tabs theme-default2 ease-tabs" data-ui-classes="border-b border-lg ui-border">
+            <div class="padding-30-v sm-no-padding tabs theme-default2 ease-tabs" data-ui-classes="border-b border-lg ui-stroke">
 
                 <div class="row border-b margin-15-b">
 
                     <div class="col-4 offset-4 no-padding-b">
                         <div class="btn-holder form-lg ease-1st-btn">
-                            <button class="tab btn btn-ghost round-t border-b border-lg ui-border active">CSS</button>
+                            <button class="tab btn btn-ghost round-t border-b border-lg ui-stroke active">CSS</button>
                             <button class="tab btn btn-ghost round-t">JS</button>
                             <button class="tab btn btn-ghost round-t">Icons</button>
                         </div>

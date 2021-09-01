@@ -107,10 +107,10 @@
                     <span class="sp-5 visible-sm"></span>
 
                     <div class="photos-holder circle hover-scale-more-2nd ease-2nd-layout theme-default2 ui-bg-dark-100">
-                        <a href="#"><img class="img-photo border-lg ui-border circle" src="img/profile-image.jpg" alt=""></a>
-                        <a href="#"><img class="img-photo border-lg ui-border circle" src="img/profile-image2.jpg" alt=""></a>
-                        <a href="#"><img class="img-photo border-lg ui-border circle" src="img/profile-image3.jpg" alt=""></a>
-                        <a href="#"><img class="img-photo border-lg ui-border circle" src="img/profile-image.jpg" alt=""></a>
+                        <a href="#"><img class="img-photo border-lg ui-stroke circle" src="img/profile-image.jpg" alt=""></a>
+                        <a href="#"><img class="img-photo border-lg ui-stroke circle" src="img/profile-image2.jpg" alt=""></a>
+                        <a href="#"><img class="img-photo border-lg ui-stroke circle" src="img/profile-image3.jpg" alt=""></a>
+                        <a href="#"><img class="img-photo border-lg ui-stroke circle" src="img/profile-image.jpg" alt=""></a>
                         <a class="btn btn-lg margin-5-r circle ui-bg-dark-300 ease-btn" href="#">+177</a>
                     </div>
 
@@ -126,10 +126,10 @@
                     <span class="sp-5 visible-sm"></span>
 
                     <div class="photos-holder padding-5 circle hover-scale-more-2nd ease-2nd-layout theme-default2 ui-bg-dark-100">
-                        <a href="#"><img class="img-photo border-lg ui-border circle" src="img/profile-image.jpg" alt=""></a>
-                        <a href="#"><img class="img-photo border-lg ui-border circle" src="img/profile-image2.jpg" alt=""></a>
-                        <a href="#"><img class="img-photo border-lg ui-border circle" src="img/profile-image3.jpg" alt=""></a>
-                        <a href="#"><img class="img-photo border-lg ui-border circle" src="img/profile-image.jpg" alt=""></a>
+                        <a href="#"><img class="img-photo border-lg ui-stroke circle" src="img/profile-image.jpg" alt=""></a>
+                        <a href="#"><img class="img-photo border-lg ui-stroke circle" src="img/profile-image2.jpg" alt=""></a>
+                        <a href="#"><img class="img-photo border-lg ui-stroke circle" src="img/profile-image3.jpg" alt=""></a>
+                        <a href="#"><img class="img-photo border-lg ui-stroke circle" src="img/profile-image.jpg" alt=""></a>
                         <a class="btn btn-lg margin-5-r circle ui-bg-dark-300 ease-btn" href="#">+177</a>
                     </div>
 
