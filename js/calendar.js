@@ -17,7 +17,8 @@ ui.calendar = {
     nextIcon: 'arrow-right', // header's next button
     backIcon: 'angle-left', // detail's back button
 
-    todayTheme: '' // use themes with hover
+    todayTheme: '', // use themes with hover
+    pickerDayTheme: '' // use themes with hover
 
 };
 
@@ -109,7 +110,7 @@ ui.calendar = {
         // create calendar table
         function createFnc(that, newDate, picker) {
 
-            var date, today, pickerDay, container, html, i, j, todayStyles, sysDays, activeDay, days, prevLastDay, firstDay, lastDay, src, keys, dday, details;
+            var date, today, pickerDay, container, html, i, j, todayStyles, pickerDayStyles, sysDays, activeDay, days, prevLastDay, firstDay, lastDay, src, keys, dday, details;
 
             date = new Date();
             date.setDate(1); // for the prev and next implementations
@@ -177,19 +178,31 @@ ui.calendar = {
                 '</caption>' +
                 '<thead>';
 
-            for (i = 0; i < ui.calendar.days.length; i++) {
-                html += '<th>' + ui.calendar.days[i] + '</th>';
+            if (ui.calendar.startDayofWeek === 0) { // Sunday
+
+                html += '<th>' + ui.calendar.days[ui.calendar.days.length - 1] + '</th>';
+
+                for (i = 0; i < ui.calendar.days.length - 1; i++) {
+                    html += '<th>' + ui.calendar.days[i] + '</th>';
+                }
+
+            } else { // Monday
+
+                for (i = 0; i < ui.calendar.days.length; i++) {
+                    html += '<th>' + ui.calendar.days[i] + '</th>';
+                }
+
             }
 
             html += '</thead><tbody>';
 
             firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
-            if (ui.calendar.startDayofWeek === 0) {
+            if (ui.calendar.startDayofWeek === 0) { // Sunday
 
                 sysDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']; // don't update to your language
                 firstDay = sysDays.indexOf(sysDays[firstDay.getDay()]);
 
-            } else {
+            } else { // Monday
 
                 sysDays = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']; // don't update to your language
                 firstDay = sysDays.indexOf(sysDays[firstDay.getDay() - 1]);
@@ -246,8 +259,14 @@ ui.calendar = {
 
                                 if (date.getFullYear() + ',' + date.getMonth() + ',' + days === pickerDay) {
 
+                                    pickerDayStyles = '';
+
+                                    if (ui.calendar.pickerDayStyles !== '') {
+                                        pickerDayStyles = ui.calendar.pickerDayTheme + ' hover';
+                                    }
+
                                     html += '<td data-ui-day="' + days + '" class="pickerday">' +
-                                            '<button type="button" tabindex="-1">' + days + '</button>' +
+                                            '<button class="' + pickerDayStyles + '" type="button" tabindex="-1">' + days + '</button>' +
                                         '</td>';
 
                                 } else {
