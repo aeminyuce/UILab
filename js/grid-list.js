@@ -1,9 +1,9 @@
 /*
- UI Data List JS
+ UI Grid List JS
  Requires UI JS
 */
 
-ui.dataList = {
+ui.gridList = {
 
     valueSplit : '|',
 
@@ -36,7 +36,7 @@ ui.dataList = {
 
     // test for storage is supported?
     try {
-        sessionStorage.setItem('dataListTest', 0);
+        sessionStorage.setItem('gridListTest', 0);
 
     } catch (e) {
         testStorage = false;
@@ -46,7 +46,7 @@ ui.dataList = {
     (function () {
 
         var k, re, chars, keys;
-        keys = Object.keys(ui.dataList.customLetters); // returns array
+        keys = Object.keys(ui.gridList.customLetters); // returns array
 
         chars = '(([';
         for (k = 0; k < keys.length; k++) { chars += keys[k]; }
@@ -57,7 +57,7 @@ ui.dataList = {
         customLowerCase = function (string) {
 
             string = string.replace(/["'\[\]\{\}()]/g, '').replace(re, function (l) {
-                return ui.dataList.customLetters[l];
+                return ui.gridList.customLetters[l];
             });
 
             return string.toLowerCase();
@@ -116,7 +116,7 @@ ui.dataList = {
 
         classes = classes.replace(re, ' ').replace(rex, '');
         html = '<button class="' + classes + '">' +
-                '<svg class="icon"><use href="#' + ui.dataList.prevIcon + '"/></svg>' +
+                '<svg class="icon"><use href="#' + ui.gridList.prevIcon + '"/></svg>' +
             '</button>\n';
 
         for (i = min; i <= max; i++) {
@@ -139,7 +139,7 @@ ui.dataList = {
 
         classes = classes.replace(re, ' ').replace(rex, '');
         html += '<button class="' + classes + '">' +
-                '<svg class="icon"><use href="#' + ui.dataList.nextIcon + '"/></svg>' +
+                '<svg class="icon"><use href="#' + ui.gridList.nextIcon + '"/></svg>' +
             '</button>\n';
 
         paging[0].innerHTML = '';
@@ -156,20 +156,20 @@ ui.dataList = {
 
     }
 
-    // data loader
-    function loadData(that, id) {
+    // grid loader
+    function loadGrid(that, id) {
 
-        var i, list, paging, dataTotal, isEven, dataStriped;
+        var i, list, paging, gridTotal, isEven, gridStriped;
 
-        if (ui.hasClass(that, 'data-filtered')) {
-            list = ui.find('.data-content.filtered', that);
+        if (ui.hasClass(that, 'grid-filtered')) {
+            list = ui.find('.grid-content.filtered', that);
 
         } else {
-            list = ui.find('.data-content', that);
+            list = ui.find('.grid-content', that);
         }
 
         // paging
-        paging = ui.find('.data-paging', that);
+        paging = ui.find('.grid-paging', that);
         if (paging.length > 0) {
 
             if (pagingCount[id] === undefined || pagingCount[id] === 0) {
@@ -184,26 +184,26 @@ ui.dataList = {
         } else {
 
             pagingCount[id] = 0; // paging not available
-            ui.addClass(that, 'data-show-all');
+            ui.addClass(that, 'grid-show-all');
 
         }
 
-        // total data
-        dataTotal = ui.find('.data-total', that);
+        // total grids
+        gridTotal = ui.find('.grid-total', that);
 
-        if (dataTotal.length > 0) {
-            dataTotal[0].textContent = list.length;
+        if (gridTotal.length > 0) {
+            gridTotal[0].textContent = list.length;
         }
 
-        // define even elements and visible datas
+        // define even elements and visible grids
         isEven = false;
-        dataStriped = ui.hasClass(that, 'data-striped');
+        gridStriped = ui.hasClass(that, 'grid-striped');
 
-        ui.removeClass(ui.find('.data-content.show', that), 'show');
+        ui.removeClass(ui.find('.grid-content.show', that), 'show');
 
         function evenList(t) {
 
-            if (dataStriped) {
+            if (gridStriped) {
 
                 if (isEven) {
 
@@ -243,12 +243,12 @@ ui.dataList = {
     }
 
     // Event Listeners
-    // data-paging
-    ui.on(document, 'click', '.data-list .data-paging button', function () {
+    // grid-paging
+    ui.on(document, 'click', '.grid-list .grid-paging button', function () {
 
         var that, id;
 
-        that = ui.closest(this, '.data-list')[0];
+        that = ui.closest(this, '.grid-list')[0];
         id = that.getAttribute('data-ui-id');
 
         if (ui.hasClass(this, 'next')) {
@@ -261,16 +261,16 @@ ui.dataList = {
             pagingCount[id] = Number(this.textContent);
         }
 
-        loadData(that, id);
+        loadGrid(that, id);
 
     });
 
-    // data-show
-    ui.on(document, 'change', '.data-list select.data-show', function () {
+    // grid-show
+    ui.on(document, 'change', '.grid-list select.grid-show', function () {
 
         var that, id;
 
-        that = ui.closest(this, '.data-list')[0];
+        that = ui.closest(this, '.grid-list')[0];
         id = that.getAttribute('data-ui-id');
 
         if (isNaN(Number(this.value))) {
@@ -278,12 +278,12 @@ ui.dataList = {
             showCount[id] = 0;
             pagingCount[id] = 1;
 
-            ui.addClass(that, 'data-show-all');
+            ui.addClass(that, 'grid-show-all');
 
         } else {
 
             showCount[id] = this.value;
-            ui.removeClass(that, 'data-show-all');
+            ui.removeClass(that, 'grid-show-all');
 
         }
 
@@ -292,16 +292,16 @@ ui.dataList = {
             sessionStorage.setItem(id + '-show', showCount[id]);
         }
 
-        loadData(that, id);
+        loadGrid(that, id);
 
     });
 
-    // data-sort
-    ui.on(document, 'mousedown', '.data-list [data-ui-sort]', function () {
+    // grid-sort
+    ui.on(document, 'mousedown', '.grid-list [data-ui-sort]', function () {
 
-        var that, id, buttons, isAsc, dataContainer, list, sortIndex, sortType, arr, arrSorted;
+        var that, id, buttons, isAsc, gridContainer, list, sortIndex, sortType, arr, arrSorted;
 
-        that = ui.closest(this, '.data-list')[0];
+        that = ui.closest(this, '.grid-list')[0];
         id = that.getAttribute('data-ui-id');
 
         // modify buttons
@@ -314,7 +314,7 @@ ui.dataList = {
             if (!ui.hasClass(this, 'active')) {
 
                 ui.removeClass(this, 'asc desc');
-                ui.find('.icon use', this)[0].setAttribute('href', '#' + ui.dataList.sortIcon);
+                ui.find('.icon use', this)[0].setAttribute('href', '#' + ui.gridList.sortIcon);
 
             }
         });
@@ -326,21 +326,21 @@ ui.dataList = {
             ui.removeClass(this, 'asc');
             ui.addClass(this, 'desc');
 
-            ui.find('.icon use', this)[0].setAttribute('href', '#' + ui.dataList.descIcon);
+            ui.find('.icon use', this)[0].setAttribute('href', '#' + ui.gridList.descIcon);
 
         } else {
 
             ui.removeClass(this, 'desc');
             ui.addClass(this, 'asc');
 
-            ui.find('.icon use', this)[0].setAttribute('href', '#' + ui.dataList.ascIcon);
+            ui.find('.icon use', this)[0].setAttribute('href', '#' + ui.gridList.ascIcon);
 
         }
 
         // sort
-        dataContainer = ui.find('.data-container', that)[0];
+        gridContainer = ui.find('.grid-container', that)[0];
 
-        list = ui.find('.data-content', dataContainer);
+        list = ui.find('.grid-content', gridContainer);
         ui.each(list, function () {
             temp.appendChild(this);
         });
@@ -358,13 +358,13 @@ ui.dataList = {
         sortType = this.getAttribute('data-ui-type');
         if (sortType === null) { sortType = ''; }
 
-        list = ui.find('.data-content', temp);
+        list = ui.find('.grid-content', temp);
         ui.each(list, function () {
 
             var val = this.getAttribute('data-ui-val');
             if (val !== null && val !== '') {
 
-                val = val.split(ui.dataList.valueSplit)[sortIndex];
+                val = val.split(ui.gridList.valueSplit)[sortIndex];
 
                 if (sortType !== 'number') {
                     val = customLowerCase(val);
@@ -404,11 +404,11 @@ ui.dataList = {
 
         });
 
-        // load sorted data
-        dataContainer.appendChild(temp);
+        // load sorted grids
+        gridContainer.appendChild(temp);
         pagingCount[id] = 1;
 
-        loadData(that, id);
+        loadGrid(that, id);
 
         // empty variables
         arr = [];
@@ -419,10 +419,10 @@ ui.dataList = {
 
     });
 
-    // data-filter
-    function dataFilter(that, firstLoading) {
+    // grid-filter
+    function gridFilter(that, firstLoading) {
 
-        var id, filters, val, vals, index, sortType, sortIndex, indexes, list, dataContainer, j, contentVal, contentArr, activeFilters, passed, checkAll;
+        var id, filters, val, vals, index, sortType, sortIndex, indexes, list, gridContainer, j, contentVal, contentArr, activeFilters, passed, checkAll;
 
         id = that.getAttribute('data-ui-id');
 
@@ -430,7 +430,7 @@ ui.dataList = {
         indexes = [];
 
         // read all filter values
-        filters = ui.find('.data-filter', that);
+        filters = ui.find('.grid-filter', that);
         ui.each(filters, function (i) {
 
             if (firstLoading) {
@@ -504,17 +504,17 @@ ui.dataList = {
                 return filterVal !== '';
             });
 
-            dataContainer = ui.find('.data-container', that)[0];
+            gridContainer = ui.find('.grid-container', that)[0];
 
-            list = ui.find('.data-content', dataContainer);
+            list = ui.find('.grid-content', gridContainer);
             ui.each(list, function () {
                 temp.appendChild(this);
             });
 
-            list = ui.find('.data-content', temp);
+            list = ui.find('.grid-content', temp);
 
             // remove checked
-            checkAll = ui.find('.data-check-all', that);
+            checkAll = ui.find('.grid-check-all', that);
 
             if (checkAll.length > 0) {
 
@@ -529,7 +529,7 @@ ui.dataList = {
                 if (ui.hasClass(this, 'checked')) {
 
                     ui.removeClass(this, 'checked');
-                    ui.find('.data-check', this)[0].checked = false;
+                    ui.find('.grid-check', this)[0].checked = false;
 
                 }
 
@@ -537,7 +537,7 @@ ui.dataList = {
 
             if (activeFilters.length > 0) {
 
-                ui.addClass(that, 'data-filtered');
+                ui.addClass(that, 'grid-filtered');
                 ui.each(list, function () {
 
                     passed = [];
@@ -546,7 +546,7 @@ ui.dataList = {
                     if (contentVal !== null && contentVal !== '') {
 
                         contentVal = customLowerCase(contentVal);
-                        contentArr = contentVal.split(ui.dataList.valueSplit);
+                        contentArr = contentVal.split(ui.gridList.valueSplit);
 
                         for (j = 0; j < vals.length; j++) {
 
@@ -583,7 +583,7 @@ ui.dataList = {
 
             } else {
 
-                ui.removeClass(that, 'data-filtered');
+                ui.removeClass(that, 'grid-filtered');
                 ui.removeClass(list, 'filtered');
 
             }
@@ -593,13 +593,13 @@ ui.dataList = {
                 sessionStorage.setItem(id + '-vals', vals.toString());
             }
 
-            // load filtered data
-            dataContainer.appendChild(temp);
+            // load filtered grids
+            gridContainer.appendChild(temp);
 
         }
 
-        // load filtered data
-        loadData(that, id);
+        // load filtered grids
+        loadGrid(that, id);
 
         // empty variables
         vals = [];
@@ -612,27 +612,27 @@ ui.dataList = {
 
     }
 
-    ui.on(document, 'keyup', '.data-list .data-filter[type="text"]', function () {
+    ui.on(document, 'keyup', '.grid-list .grid-filter[type="text"]', function () {
 
-        var that = ui.closest(this, '.data-list')[0];
-        dataFilter(that, false);
-
-    });
-
-    ui.on(document, 'change', '.data-list .data-filter:not([type="text"])', function () {
-
-        var that = ui.closest(this, '.data-list')[0];
-        dataFilter(that, false);
+        var that = ui.closest(this, '.grid-list')[0];
+        gridFilter(that, false);
 
     });
 
-    // data check
-    ui.on(document, 'change', '.data-list .data-check-all', function () {
+    ui.on(document, 'change', '.grid-list .grid-filter:not([type="text"])', function () {
+
+        var that = ui.closest(this, '.grid-list')[0];
+        gridFilter(that, false);
+
+    });
+
+    // grid check
+    ui.on(document, 'change', '.grid-list .grid-check-all', function () {
 
         var that, list, form, checked, checkFnc, uncheckFnc;
 
-        that = ui.closest(this, '.data-list')[0];
-        list = ui.find('.data-content', that);
+        that = ui.closest(this, '.grid-list')[0];
+        list = ui.find('.grid-content', that);
 
         checked = this.checked;
 
@@ -640,7 +640,7 @@ ui.dataList = {
 
             if (!ui.hasClass(t, 'checked')) {
 
-                form = ui.find('.data-check', t)[0];
+                form = ui.find('.grid-check', t)[0];
                 if (form !== undefined) {
 
                     ui.addClass(t, 'checked');
@@ -656,7 +656,7 @@ ui.dataList = {
 
             if (ui.hasClass(t, 'checked')) {
 
-                form = ui.find('.data-check', t)[0];
+                form = ui.find('.grid-check', t)[0];
                 if (form !== undefined) {
 
                     ui.removeClass(t, 'checked');
@@ -672,7 +672,7 @@ ui.dataList = {
 
             if (checked) {
 
-                if (ui.hasClass(that, 'data-filtered')) {
+                if (ui.hasClass(that, 'grid-filtered')) {
 
                     if (ui.hasClass(this, 'filtered')) {
                         checkFnc(this);
@@ -687,12 +687,12 @@ ui.dataList = {
 
     });
 
-    ui.on(document, 'change', '.data-list .data-check', function () {
+    ui.on(document, 'change', '.grid-list .grid-check', function () {
 
         var that, list, checkAll;
 
-        that = ui.closest(that, '.data-list')[0];
-        list = ui.closest(this, '.data-content')[0];
+        that = ui.closest(that, '.grid-list')[0];
+        list = ui.closest(this, '.grid-content')[0];
 
         if (this.checked) {
             ui.addClass(list, 'checked');
@@ -700,9 +700,9 @@ ui.dataList = {
         } else {
 
             ui.removeClass(list, 'checked');
-            checkAll = ui.find('.data-check-all', that)[0];
+            checkAll = ui.find('.grid-check-all', that)[0];
 
-            if (ui.find('.data-check-all', that)[0] !== undefined) {
+            if (ui.find('.grid-check-all', that)[0] !== undefined) {
                 checkAll.checked = false;
             }
 
@@ -711,15 +711,15 @@ ui.dataList = {
     });
 
     // first loading
-    ui.dataList.Start = function () {
+    ui.gridList.Start = function () {
 
-        ui.each('.data-list:not(.data-list-loaded)', function () {
+        ui.each('.grid-list:not(.grid-list-loaded)', function () {
 
-            var id, dataShow, index, i;
+            var id, gridShow, index, i;
 
             // define id
             startListID += 1;
-            id = 'dataList-' + startListID;
+            id = 'gridList-' + startListID;
 
             this.setAttribute('data-ui-id', id);
 
@@ -732,23 +732,23 @@ ui.dataList = {
 
             }
 
-            // calculate data-show
-            dataShow = ui.find('select.data-show', this)[0];
+            // calculate grid-show
+            gridShow = ui.find('select.grid-show', this)[0];
             if (showCount[id] === 0) {
 
-                if (dataShow !== undefined) {
+                if (gridShow !== undefined) {
 
                     if (showCount[id] === undefined || showCount[id] === 0) {
 
-                        if (isNaN(Number(dataShow.value))) {
+                        if (isNaN(Number(gridShow.value))) {
 
                             showCount[id] = 0;
                             pagingCount[id] = 1;
 
-                            ui.addClass(this, 'data-show-all');
+                            ui.addClass(this, 'grid-show-all');
 
                         } else {
-                            showCount[id] = dataShow.value;
+                            showCount[id] = gridShow.value;
                         }
 
                     }
@@ -757,12 +757,12 @@ ui.dataList = {
 
             } else {
 
-                for (i = 0; i < dataShow.options.length; i++) {
+                for (i = 0; i < gridShow.options.length; i++) {
 
-                    if (Number(customLowerCase(dataShow.options[i].innerText)) === showCount[id]) {
+                    if (Number(customLowerCase(gridShow.options[i].innerText)) === showCount[id]) {
 
-                        index = Array.prototype.slice.call(dataShow.options).indexOf(dataShow.options[i]);
-                        dataShow.selectedIndex = index;
+                        index = Array.prototype.slice.call(gridShow.options).indexOf(gridShow.options[i]);
+                        gridShow.selectedIndex = index;
 
                     }
 
@@ -774,14 +774,14 @@ ui.dataList = {
             if (loadedVals[id] !== undefined && loadedVals[id] !== null) {
 
                 if (loadedVals[id].length > 0) {
-                    dataFilter(this, true);
+                    gridFilter(this, true);
                 }
 
             }
 
-            // load data
-            ui.addClass(this, 'data-list-loaded');
-            loadData(this, id);
+            // load grids
+            ui.addClass(this, 'grid-list-loaded');
+            loadGrid(this, id);
 
         });
 
@@ -795,10 +795,10 @@ ui.dataList = {
             if (window.performance) {
                 if (performance.navigation.type !== 1) { // The Navigation Timing API: if === 1 means page refreshed
 
-                    var dataLists, id;
-                    dataLists = ui.find('.data-list');
+                    var gridLists, id;
+                    gridLists = ui.find('.grid-list');
 
-                    ui.each(dataLists, function () {
+                    ui.each(gridLists, function () {
 
                         id = this.getAttribute('data-ui-id');
 
@@ -816,11 +816,11 @@ ui.dataList = {
     });
 
     // Loaders
-    ui.onload(ui.dataList.Start);
+    ui.onload(ui.gridList.Start);
 
     // ajax callback loader
     ui.on(document, 'ui:ajaxCallbacks', function () {
-        if (ui.ajax.classNames.indexOf('data-list') > -1) { ui.dataList.Start(); }
+        if (ui.ajax.classNames.indexOf('grid-list') > -1) { ui.gridList.Start(); }
     });
 
 }());

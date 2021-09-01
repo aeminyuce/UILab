@@ -60,9 +60,9 @@
   --calendar-empty-details-bg: hsla(0, 0%, 0%, 0.12);
   --calendar-today-btn-bg: hsla(0, 0%, 0%, 0.15);
   --calendar-today-btn-hover-bg: hsla(0, 0%, 0%, 0.2);
-  --data-list-stripe-bg: hsla(0, 0%, 0%, 0.035);
-  --data-list-hover-bg: hsla(0, 0%, 0%, 0.06);
-  --data-list-border: hsl(0, 0%, 86.7%);
+  --grid-list-stripe-bg: hsla(0, 0%, 0%, 0.035);
+  --grid-list-hover-bg: hsla(0, 0%, 0%, 0.06);
+  --grid-list-border: hsl(0, 0%, 86.7%);
   --image-uploader-drop-bg: hsl(0, 0%, 93%);
   --image-uploader-tools-bg: hsla(0, 0%, 0%, 0.05);
   --image-uploader-list-bg: hsla(0, 0%, 100%, 0.45);
@@ -134,9 +134,9 @@
   --calendar-empty-details-bg: hsla(0, 0%, 100%, 0.18);
   --calendar-today-btn-bg: hsla(0, 0%, 100%, 0.15);
   --calendar-today-btn-hover-bg: hsla(0, 0%, 100%, 0.2);
-  --data-list-stripe-bg: hsla(0, 0%, 100%, 0.035);
-  --data-list-hover-bg: hsla(0, 0%, 100%, 0.06);
-  --data-list-border: hsl(220, 8%, 28%);
+  --grid-list-stripe-bg: hsla(0, 0%, 100%, 0.035);
+  --grid-list-hover-bg: hsla(0, 0%, 100%, 0.06);
+  --grid-list-border: hsl(220, 8%, 28%);
   --image-uploader-drop-bg: hsl(222, 13%, 15%);
   --image-uploader-tools-bg: hsla(0, 0%, 100%, 0.035);
   --image-uploader-list-bg: hsla(0, 0%, 100%, 0.035);
@@ -6482,7 +6482,7 @@ label.custom {
   .table-fluid > .table tr > * {
     white-space: nowrap;
   }
-  .table-fluid > .data-list {
+  .table-fluid > .grid-list {
     min-width: 858px;
   }
 }
@@ -8804,52 +8804,52 @@ button.dialog-custom:focus {
     transform: translateX(-15px);
   }
 }
-/* data list */
-.ease-data-list .data-content {
+/* grid list */
+.ease-grid-list .grid-content {
   transition-property: background-color;
   transition-duration: 0.15s;
 }
-.data-list .data-content:not([class*="col-"]) {
+.grid-list .grid-content:not([class*="col-"]) {
   padding: 10px;
   border-bottom: solid 1px hsl(0, 0%, 86.7%);
-  border-bottom: solid 1px var(--data-list-border);
+  border-bottom: solid 1px var(--grid-list-border);
 }
-.data-list .data-content:before,
-.data-list .data-content:after {
+.grid-list .grid-content:before,
+.grid-list .grid-content:after {
   content: "";
   display: table;
 }
-.data-list .data-content:after {
+.grid-list .grid-content:after {
   clear: both;
 }
-.data-list .data-content.even {
+.grid-list .grid-content.even {
   background-color: hsla(0, 0%, 0%, 0.035);
-  background-color: var(--data-list-stripe-bg);
+  background-color: var(--grid-list-stripe-bg);
 }
-.data-list .data-content.checked {
+.grid-list .grid-content.checked {
   background-color: hsla(42, 100%, 45%, 0.15) !important;
 }
-.data-list > .row,
-.data-list .data-content > .row {
+.grid-list > .row,
+.grid-list .grid-content > .row {
   margin-left: inherit;
   margin-right: inherit;
 }
-.data-list:not(.data-show-all) .data-content:not(.show) {
+.grid-list:not(.grid-show-all) .grid-content:not(.show) {
   display: none;
 }
-.data-list.data-show-all.data-filtered .data-content:not(.filtered) {
+.grid-list.grid-show-all.grid-filtered .grid-content:not(.filtered) {
   display: none;
 }
-.data-list.data-hover .data-content.even:not([class*="ui-"]) {
+.grid-list.grid-hover .grid-content.even:not([class*="ui-"]) {
   background-color: hsla(0, 0%, 0%, 0.035);
-  background-color: var(--data-list-stripe-bg);
+  background-color: var(--grid-list-stripe-bg);
 }
-.desktop .data-list.data-hover .data-content:not([class*="ui-"]):hover,
-.desktop .data-list.data-hover .data-content:not([class*="ui-"]):nth-child(odd):hover {
+.desktop .grid-list.grid-hover .grid-content:not([class*="ui-"]):hover,
+.desktop .grid-list.grid-hover .grid-content:not([class*="ui-"]):nth-child(odd):hover {
   background-color: hsla(0, 0%, 0%, 0.06);
-  background-color: var(--data-list-hover-bg);
+  background-color: var(--grid-list-hover-bg);
 }
-.data-list .data-paging button:not(.btn) {
+.grid-list .grid-paging button:not(.btn) {
   color: inherit;
   background-color: transparent;
   border: 0;

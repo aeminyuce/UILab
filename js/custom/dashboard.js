@@ -73,7 +73,7 @@ ui.onload(function () { // check stored sidebar position
 
     // test for storage is supported?
     try {
-        sessionStorage.setItem('dataListTest', 0);
+        sessionStorage.setItem('dashboardLeftSidebarTest', 0);
 
     } catch (e) {
         testStorage = false;

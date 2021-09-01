@@ -50,7 +50,7 @@
     <script src="../js/calendar.js"></script>
     <script src="../js/carousel.js"></script>
     <script src="../js/countdown.js"></script>
-    <script src="../js/data-list.js"></script>
+    <script src="../js/grid-list.js"></script>
     <script src="../js/image-uploader.js"></script>
     <script src="../js/photo-gallery.js"></script>
     <script src="../js/photo-slider.js"></script>
@@ -143,11 +143,11 @@
                         <li><a class="btn btn-ghost" href="?p=carousel">Carousel</a></li>
                         <li><a class="btn btn-ghost" href="?p=charts">Charts</a></li>
                         <li><a class="btn btn-ghost" href="?p=countdown">Countdown</a></li>
-                        <li><a class="btn btn-ghost" href="?p=data-list">Data List</a></li>
                         <li><a class="btn btn-ghost" href="?p=dropdown">Dropdown</a></li>
                         <li><a class="btn btn-ghost" href="?p=error-pages">Error Pages</a></li>
                         <li><a class="btn btn-ghost" href="?p=forms">Forms</a></li>
                         <li><a class="btn btn-ghost" href="?p=grid">Grid</a></li>
+                        <li><a class="btn btn-ghost" href="?p=grid-list">Grid List</a></li>
                         <li><a class="btn btn-ghost" href="?p=image-uploader">Image Uploader</a></li>
                         <li><a class="btn btn-ghost" href="?p=list-group">List Group</a></li>
                         <li><a class="btn btn-ghost" href="?p=loading-mask">Loading Mask</a></li>

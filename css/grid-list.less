@@ -1,0 +1,78 @@
+// out: false
+/* grid list */ @import '_settings.less';
+
+@grid-list-content-padding:             10px;
+
+@grid-list-stripe-bg:                   fade(@black, 3.5%);
+@grid-list-stripe-bg-dark:              fade(@white, 3.5%);
+
+@grid-list-hover-bg:                    fade(@black, 6%);
+@grid-list-hover-bg-dark:               fade(@white, 6%);
+
+@grid-list-border:                      @table-border-color;
+@grid-list-border-dark:                 @highlighted-dark;
+
+@grid-list-checked:                     fade(@yellow, 15%);
+
+._global-vars () {
+    --grid-list-stripe-bg: @grid-list-stripe-bg;
+    --grid-list-hover-bg: @grid-list-hover-bg;
+
+    --grid-list-border: @grid-list-border;
+}
+._global-vars-dark () {
+    --grid-list-stripe-bg: @grid-list-stripe-bg-dark;
+    --grid-list-hover-bg: @grid-list-hover-bg-dark;
+
+    --grid-list-border: @grid-list-border-dark;
+}
+
+.ease-grid-list {
+    .grid-content { transition-property: background-color; transition-duration: @ease-default; }
+}
+
+.grid-list {
+    .grid-content {
+        &:not([class*="col-"]) { padding: @grid-list-content-padding; ._border-var(@dir: border-bottom; @var: grid-list-border); }
+        &:before,&:after { content: ""; display: table; }
+        &:after { clear: both; }
+        &.even { ._bg-var(grid-list-stripe-bg); }
+        &.checked { background-color: @grid-list-checked !important; }
+    }
+    &,.grid-content {
+        & > .row { margin-left: inherit; margin-right: inherit; }
+    }
+
+    &:not(.grid-show-all) {
+        .grid-content {
+            &:not(.show) { display: none; }
+        }
+    }
+    &.grid-show-all {
+        &.grid-filtered {
+            .grid-content {
+                &:not(.filtered) { display: none; }
+            }
+        }
+    }
+
+    &.grid-hover {
+        .grid-content {
+            &.even {
+                &:not([class*="ui-"]) { ._bg-var(grid-list-stripe-bg); }
+            }
+
+            .desktop & {
+                &:not([class*="ui-"]) {
+                    &:hover,&:nth-child(odd):hover { ._bg-var(grid-list-hover-bg); }
+                }
+            }
+        }
+    }
+
+    .grid-paging {
+        button {
+            &:not(.btn) { color: inherit; background-color: @no-color; border: 0; }
+        }
+    }
+}

@@ -438,10 +438,10 @@
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
-                                        <input type="checkbox" name="data list" value="../css/data-list">
+                                        <input type="checkbox" name="grid list" value="../css/grid-list">
                                         <i class="state ui-bg-dark-100"></i>
                                     </span>
-                                    Data List
+                                    Grid List
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
@@ -782,10 +782,10 @@
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
-                                        <input type="checkbox" name="data list js" value="../js/data-list">
+                                        <input type="checkbox" name="grid list js" value="../js/grid-list">
                                         <i class="state ui-bg-dark-100"></i>
                                     </span>
-                                    Data List
+                                    Grid List
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
