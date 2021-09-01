@@ -60,7 +60,7 @@ function toggler(onload) {
 
     // set sidebar state
     if (testStorage && sessionStorage !== undefined) {
-        sessionStorage.setItem('dashboard-left-sidebar', state);
+        sessionStorage.setItem('ui-dashboard-left-sidebar', state);
     }
 
 }
@@ -73,7 +73,7 @@ ui.onload(function () { // check stored sidebar position
 
     // test for storage is supported?
     try {
-        sessionStorage.setItem('dashboardLeftSidebarTest', 0);
+        sessionStorage.setItem('ui-dashboard-left-sidebar-test', 0);
 
     } catch (e) {
         testStorage = false;
@@ -81,7 +81,7 @@ ui.onload(function () { // check stored sidebar position
 
     if (testStorage && sessionStorage !== undefined) {
 
-        var state = sessionStorage.getItem('dashboard-left-sidebar');
+        var state = sessionStorage.getItem('ui-dashboard-left-sidebar');
         if (state !== null && state === 'closed') { toggler(true); }
 
     }

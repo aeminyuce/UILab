@@ -741,7 +741,7 @@ ui.darkMode = {};
 
     // test for storage is supported?
     try {
-        sessionStorage.setItem('darkModeSateTest', 0);
+        sessionStorage.setItem('ui-darkMode-test', 0);
 
     } catch (e) {
         testStorage = false;
@@ -768,7 +768,7 @@ ui.darkMode = {};
         // check stored theme color
         if (testStorage && sessionStorage !== undefined) {
 
-            state = sessionStorage.getItem('dark-mode-color')
+            state = sessionStorage.getItem('ui-darkMode-color')
             if (state !== null && state !== null) {
                 mode = state;
             }
@@ -780,7 +780,7 @@ ui.darkMode = {};
         function setState(mode) { // set theme state
 
             if (testStorage && sessionStorage !== undefined) {
-                sessionStorage.setItem('dark-mode-color', mode);
+                sessionStorage.setItem('ui-darkMode-color', mode);
             }
 
         }

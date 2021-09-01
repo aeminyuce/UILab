@@ -36,7 +36,7 @@ ui.gridList = {
 
     // test for storage is supported?
     try {
-        sessionStorage.setItem('gridListTest', 0);
+        sessionStorage.setItem('ui-gridList-test', 0);
 
     } catch (e) {
         testStorage = false;
@@ -147,7 +147,7 @@ ui.gridList = {
 
         // set paging to storage
         if (testStorage && sessionStorage !== undefined) {
-            sessionStorage.setItem(id + '-paging', pagingCount[id]);
+            sessionStorage.setItem('ui-gridList-' + id + '-paging', pagingCount[id]);
         }
 
         // empty variables
@@ -289,7 +289,7 @@ ui.gridList = {
 
         // set show count to storage
         if (testStorage && sessionStorage !== undefined) {
-            sessionStorage.setItem(id + '-show', showCount[id]);
+            sessionStorage.setItem('ui-gridList-' + id + '-show', showCount[id]);
         }
 
         loadGrid(that, id);
@@ -590,7 +590,7 @@ ui.gridList = {
 
             // set filters to storage
             if (testStorage && sessionStorage !== undefined) {
-                sessionStorage.setItem(id + '-vals', vals.toString());
+                sessionStorage.setItem('ui-gridList-' + id + '-vals', vals.toString());
             }
 
             // load filtered grids
@@ -726,9 +726,9 @@ ui.gridList = {
             // check stored variables
             if (testStorage && sessionStorage !== undefined) {
 
-                loadedVals[id] = sessionStorage.getItem(id + '-vals');
-                showCount[id] = Number(sessionStorage.getItem(id + '-show'));
-                pagingCount[id] = Number(sessionStorage.getItem(id + '-paging'));
+                loadedVals[id] = sessionStorage.getItem('ui-gridList-' + id + '-vals');
+                showCount[id] = Number(sessionStorage.getItem('ui-gridList-' + id + '-show'));
+                pagingCount[id] = Number(sessionStorage.getItem('ui-gridList-' + id + '-paging'));
 
             }
 
@@ -802,9 +802,9 @@ ui.gridList = {
 
                         id = this.getAttribute('data-ui-id');
 
-                        sessionStorage.setItem(id + '-vals', '');
-                        sessionStorage.setItem(id + '-show', 0);
-                        sessionStorage.setItem(id + '-paging', 0);
+                        sessionStorage.setItem('ui-gridList-' + id + '-vals', '');
+                        sessionStorage.setItem('ui-gridList-' + id + '-show', 0);
+                        sessionStorage.setItem('ui-gridList-' + id + '-paging', 0);
 
                     });
 
