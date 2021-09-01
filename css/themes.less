@@ -3,14 +3,11 @@
 
 @theme-colors:                          gray green yellow orange red default default2;
 
-@set-dark:                              hsl(216, 19%, 5%);
-@set-x-dark:                            hsl(220, 18%, 3%);
-
 [class*="ui-bg-light-"] {
     ._color-var(black);
 
     .icon,a,button {
-        &:not([class*="ui-"]):not([class*="color-"]) { &:extend([class*="ui-bg-light-"] ); }
+        &:not([class*="ui-bg-"]):not([class*="color-"]) { &:extend([class*="ui-bg-light-"] ); }
     }
 }
 
@@ -18,57 +15,24 @@
     color: @white;
 
     .icon,a,button {
-        &:not([class*="ui-"]):not([class*="color-"]) { &:extend([class*="ui-bg-dark-"]); }
+        &:not([class*="ui-bg-"]):not([class*="color-"]) { &:extend([class*="ui-bg-dark-"]); }
     }
 }
 
 .bg-white {
-   &:not([class*="ui-"]) { ._bg-var(white) !important; }
+   &:not([class*="ui-bg-"]) { ._bg-var(white) !important; }
 }
 .card {
    .bg-white {
-       &:not([class*="ui-"]) { ._bg-var(card-bg) !important; }
+       &:not([class*="ui-bg-"]) { ._bg-var(card-bg) !important; }
    }
 }
 
 .bg-black {
-   &:not([class*="ui-"]) { background-color: @black !important; }
+   &:not([class*="ui-bg-"]) { background-color: @black !important; }
 }
 
 each(@theme-colors, {
     @color: @@value;
     ._theme(@value,  @color);
 });
-
-& when (@dark-mode = true) {
-    & when (@dark-mode-auto-switcher = true) {
-        @media (prefers-color-scheme: dark) {
-            .set-dark {
-                &:not(.theme-gray)[class*="theme-"][class*="ui-"],
-                &:not(.theme-light)[class*="theme-"] [class*="ui-"]:not([class*="theme-"]):not(.ui-color):not(.ui-border) {
-                    background-color: @set-dark;
-                }
-
-                &:not(.theme-gray)[class*="theme-"][class*="ui-x-"],
-                &:not(.theme-light)[class*="theme-"] [class*="ui-x-"]:not([class*="theme-"]):not(.ui-color):not(.ui-border) {
-                    background-color: @set-x-dark;
-                }
-            }
-        }
-    }
-    & when (@dark-mode-auto-switcher = false) {
-        [data-ui-theme="dark"] {
-            .set-dark {
-                &:not(.theme-gray)[class*="theme-"][class*="ui-"],
-                &:not(.theme-light)[class*="theme-"] [class*="ui-"]:not([class*="theme-"]):not(.ui-color):not(.ui-border) {
-                    background-color: @set-dark;
-                }
-
-                &:not(.theme-gray)[class*="theme-"][class*="ui-x-"],
-                &:not(.theme-light)[class*="theme-"] [class*="ui-x-"]:not([class*="theme-"]):not(.ui-color):not(.ui-border) {
-                    background-color: @set-x-dark;
-                }
-            }
-        }
-    }
-}

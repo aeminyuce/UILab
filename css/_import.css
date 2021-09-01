@@ -4671,9 +4671,9 @@ input.btn {
 .dropdown.open {
   z-index: 19;
 }
-.dropdown.open > .btn-ghost:not([class*="ui-"]) {
-  background-color: hsla(0, 0%, 0%, 0.075);
-  background-color: var(--btn-ghost-hover-bg);
+.dropdown.open > .btn-ghost:not([class*="ui-bg-"]) {
+  background-color: hsla(0, 0%, 0%, 0.075) !important;
+  background-color: var(--btn-ghost-hover-bg) !important;
 }
 .dropdown.open-ease > .btn .toggle-icon {
   transform: rotate(-180deg);
@@ -5268,11 +5268,11 @@ label.custom {
 .switch-custom input:checked + .state {
   transform: translate(25%, -50%);
 }
-.switch-custom input:checked + .state:not([class*="ui-"]) {
+.switch-custom input:checked + .state:not([class*="ui-bg-"]) {
   background-color: hsl(142, 82%, 42%);
 }
 .switch-custom input:not(:checked) + .state,
-.switch-custom input:not(:checked) + .state[class*="ui-"] {
+.switch-custom input:not(:checked) + .state[class*="ui-bg-"] {
   background-color: hsla(0, 0%, 0%, 0.15);
   background-color: var(--switch-custom-bg);
 }
@@ -5540,14 +5540,14 @@ label.custom {
 .form-focus > select,
 .form-focus.form-light > select option,
 .form-focus > textarea,
-.form-focus .icon:not([class*="ui-"]) {
+.form-focus .icon:not([class*="ui-color"]) {
   color: hsl(0, 0%, 0%);
   color: var(--black);
 }
 .form-focus.form-light > input,
 .form-focus.form-light > select,
 .form-focus.form-light > textarea,
-.form-focus.form-light .icon:not([class*="ui-"]) {
+.form-focus.form-light .icon:not([class*="ui-color"]) {
   color: hsl(0, 0%, 100%) !important;
 }
 .form-focus[class*="text-icon"] .icon,
@@ -6142,11 +6142,11 @@ label.custom {
 .desktop .list-group > ul > li > a:not(.list-link):hover .list-icon {
   opacity: 0.75;
 }
-.list-group li:nth-child(odd):not([class*="ui-"]) {
+.list-group li:nth-child(odd):not([class*="ui-bg-"]) {
   background-color: hsla(0, 0%, 0%, 0.035);
   background-color: var(--list-group-stripe-bg);
 }
-.list-group li:not([class*="ui-"]):hover {
+.list-group li:not([class*="ui-bg-"]):hover {
   background-color: hsla(0, 0%, 0%, 0.06);
   background-color: var(--list-group-hover-bg);
 }
@@ -6451,11 +6451,11 @@ label.custom {
 .table-scroll > .table tr > * {
   white-space: nowrap;
 }
-.table-striped tr:nth-child(even):not([class*="ui-"]) {
+.table-striped tr:nth-child(even):not([class*="ui-bg-"]) {
   background-color: hsla(0, 0%, 0%, 0.045);
   background-color: var(--table-stripe-bg);
 }
-.desktop .table-hover tbody tr:not([class*="ui-"]):hover {
+.desktop .table-hover tbody tr:not([class*="ui-bg-"]):hover {
   background-color: hsla(0, 0%, 0%, 0.1);
   background-color: var(--table-hover-bg);
 }
@@ -6760,7 +6760,7 @@ label.custom {
   padding: 0;
   display: flex;
 }
-.steps-bar:not([class*="ui-"]) {
+.steps-bar:not([class*="ui-color"]) {
   color: hsl(142, 82%, 42%);
 }
 .steps-bar li {
@@ -6855,11 +6855,11 @@ html:not(.ie) .steps-bar li {
   background-color: hsl(0, 0%, 98%);
   background-color: var(--body-bg);
 }
-.steps-bar[class*="ui-"] li:before {
+.steps-bar[class*="ui-color"] li:before {
   background-color: currentColor;
   border-color: currentColor;
 }
-.steps-bar[class*="ui-"] li:after {
+.steps-bar[class*="ui-color"] li:after {
   background-color: currentColor;
 }
 .steps-bar.steps-icon li:before {
@@ -6990,7 +6990,7 @@ header.sticky-static {
   display: block;
   position: relative;
 }
-.timeline > li > .card:not([class*="ui-"]),
+.timeline > li > .card:not([class*="ui-bg"]),
 .timeline > li > .card a,
 .timeline > li > .card button {
   color: hsl(0, 0%, 0%);
@@ -7840,7 +7840,7 @@ html:not(.ie) .svg-map svg {
   position: absolute;
   z-index: 99;
 }
-.tooltip:not([class*="ui-"]) {
+.tooltip:not([class*="ui-bg-"]) {
   color: hsl(0, 0%, 100%);
   background-color: hsl(220, 14%, 21%);
   background-color: var(--tooltip-bg);
@@ -7940,7 +7940,7 @@ html:not(.ie) .svg-map svg {
 .tooltip > span .bg {
   z-index: 1;
 }
-.tooltip:not([class*="ui-"]) > span i {
+.tooltip:not([class*="ui-bg-"]) > span i {
   background-color: hsl(220, 14%, 21%);
   background-color: var(--tooltip-bg);
 }
@@ -8010,7 +8010,7 @@ html:not(.ie) .svg-map svg {
 .alerts-msg:not(.show-ease) {
   opacity: 0;
 }
-.alerts-msg:not([class*="ui-"]) {
+.alerts-msg:not([class*="ui-bg-"]) {
   color: hsl(0, 0%, 100%);
   background-color: hsl(0, 0%, 9%);
   background-color: var(--alerts-msg-bg);
@@ -8220,20 +8220,22 @@ button.dialog-custom:focus {
 .calendar tbody td.today button {
   font-weight: 700;
 }
-.calendar tbody td.today button:not([class*="ui-"]) {
+.calendar tbody td.today button:not([class*="ui-bg-"]) {
   background-color: hsla(0, 0%, 0%, 0.15);
   background-color: var(--calendar-today-btn-bg);
 }
-.desktop .calendar tbody td.today button:not([class*="ui-"]):hover {
+.desktop .calendar tbody td.today button:not([class*="ui-bg-"]):hover {
   background-color: hsla(0, 0%, 0%, 0.2);
   background-color: var(--calendar-today-btn-hover-bg);
 }
 .calendar tbody td.pickerday button {
-  color: hsl(0, 0%, 100%) !important;
   font-weight: 700;
+}
+.calendar tbody td.pickerday button:not([class*="ui-bg-"]) {
+  color: hsl(0, 0%, 100%) !important;
   background-color: hsl(212, 64%, 38%);
 }
-.desktop .calendar tbody td.pickerday button:hover {
+.desktop .calendar tbody td.pickerday button:not([class*="ui-bg-"]):hover {
   background-color: hsl(212, 64%, 53%);
 }
 .calendar ul {
@@ -8246,11 +8248,11 @@ button.dialog-custom:focus {
   background-color: hsla(0, 0%, 0%, 0.08);
   background-color: var(--btn-bg);
 }
-.calendar button:not([class*="ui-"]) {
+.calendar button:not([class*="ui-bg-"]) {
   color: hsl(0, 0%, 0%);
   color: var(--black);
 }
-.desktop .calendar button:hover {
+.desktop .calendar button:not([class*="ui-bg-"]):hover {
   background-color: hsla(0, 0%, 0%, 0.15);
   background-color: var(--btn-hover-bg);
 }
@@ -8531,14 +8533,7 @@ button.dialog-custom:focus {
   transform: translateY(110%);
 }
 .text.calendar-picker {
-  color: hsl(0, 0%, 0%);
-  color: var(--black);
   overflow: visible !important;
-}
-.text.calendar-picker button:not([class*="ui-"]),
-.text.calendar-picker .text.calendar-picker button:not([class*="ui-"]) .icon {
-  color: hsl(0, 0%, 0%);
-  color: var(--black);
 }
 .text .calendar {
   width: 100%;
@@ -8840,12 +8835,12 @@ button.dialog-custom:focus {
 .grid-list.grid-show-all.grid-filtered .grid-content:not(.filtered) {
   display: none;
 }
-.grid-list.grid-hover .grid-content.even:not([class*="ui-"]) {
+.grid-list.grid-hover .grid-content.even:not([class*="ui-bg-"]) {
   background-color: hsla(0, 0%, 0%, 0.035);
   background-color: var(--grid-list-stripe-bg);
 }
-.desktop .grid-list.grid-hover .grid-content:not([class*="ui-"]):hover,
-.desktop .grid-list.grid-hover .grid-content:not([class*="ui-"]):nth-child(odd):hover {
+.desktop .grid-list.grid-hover .grid-content:not([class*="ui-bg-"]):hover,
+.desktop .grid-list.grid-hover .grid-content:not([class*="ui-bg-"]):nth-child(odd):hover {
   background-color: hsla(0, 0%, 0%, 0.06);
   background-color: var(--grid-list-hover-bg);
 }
@@ -9901,27 +9896,27 @@ button.dialog-custom:focus {
 }
 /* themes */
 [class*="ui-bg-light-"],
-[class*="ui-bg-light-"] .icon:not([class*="ui-"]):not([class*="color-"]),
-[class*="ui-bg-light-"] a:not([class*="ui-"]):not([class*="color-"]),
-[class*="ui-bg-light-"] button:not([class*="ui-"]):not([class*="color-"]) {
+[class*="ui-bg-light-"] .icon:not([class*="ui-bg-"]):not([class*="color-"]),
+[class*="ui-bg-light-"] a:not([class*="ui-bg-"]):not([class*="color-"]),
+[class*="ui-bg-light-"] button:not([class*="ui-bg-"]):not([class*="color-"]) {
   color: hsl(0, 0%, 0%);
   color: var(--black);
 }
 [class*="ui-bg-dark-"],
-[class*="ui-bg-dark-"] .icon:not([class*="ui-"]):not([class*="color-"]),
-[class*="ui-bg-dark-"] a:not([class*="ui-"]):not([class*="color-"]),
-[class*="ui-bg-dark-"] button:not([class*="ui-"]):not([class*="color-"]) {
+[class*="ui-bg-dark-"] .icon:not([class*="ui-bg-"]):not([class*="color-"]),
+[class*="ui-bg-dark-"] a:not([class*="ui-bg-"]):not([class*="color-"]),
+[class*="ui-bg-dark-"] button:not([class*="ui-bg-"]):not([class*="color-"]) {
   color: hsl(0, 0%, 100%);
 }
-.bg-white:not([class*="ui-"]) {
+.bg-white:not([class*="ui-bg-"]) {
   background-color: hsl(0, 0%, 100%) !important;
   background-color: var(--white) !important;
 }
-.card .bg-white:not([class*="ui-"]) {
+.card .bg-white:not([class*="ui-bg-"]) {
   background-color: hsl(0, 0%, 100%) !important;
   background-color: var(--card-bg) !important;
 }
-.bg-black:not([class*="ui-"]) {
+.bg-black:not([class*="ui-bg-"]) {
   background-color: hsl(0, 0%, 0%) !important;
 }
 .theme-gray.ui-bg-light-100,
@@ -10399,12 +10394,4 @@ button.dialog-custom:focus {
 .theme-default2.ui-border,
 .theme-default2 .ui-border:not([class*="theme-"]) {
   border-color: hsl(206, 87%, 50%);
-}
-[data-ui-theme="dark"] .set-dark:not(.theme-gray)[class*="theme-"][class*="ui-"],
-[data-ui-theme="dark"] .set-dark:not(.theme-light)[class*="theme-"] [class*="ui-"]:not([class*="theme-"]):not(.ui-color):not(.ui-border) {
-  background-color: hsl(216, 19%, 5%);
-}
-[data-ui-theme="dark"] .set-dark:not(.theme-gray)[class*="theme-"][class*="ui-x-"],
-[data-ui-theme="dark"] .set-dark:not(.theme-light)[class*="theme-"] [class*="ui-x-"]:not([class*="theme-"]):not(.ui-color):not(.ui-border) {
-  background-color: hsl(220, 18%, 3%);
 }

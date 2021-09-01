@@ -233,10 +233,10 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
         &:checked + .state {
             transform: translate(25%,-50%);
 
-            &:not([class*="ui-"]) { background-color: @green; }
+            &:not([class*="ui-bg-"]) { background-color: @green; }
         }
         &:not(:checked) + .state {
-            &,&[class*="ui-"] { ._bg-var(switch-custom-bg); }
+            &,&[class*="ui-bg-"] { ._bg-var(switch-custom-bg); }
         }
         &:not(:indeterminate):not(:checked):not(:indeterminate) + .state { transform: translate(-125%,-50%); }
         &:indeterminate + .state { background-color: @yellow; }
@@ -353,9 +353,9 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
     &.form-light { border-color: @form-focus-border-dark !important; }
     &:not(.form-readonly) { ._bg-var(form-focus-bg); box-shadow: @form-focus-shadow; }
 
-    & > input,& > select,&.form-light > select option,& > textarea,.icon:not([class*="ui-"]) { ._color-var(black); }
+    & > input,& > select,&.form-light > select option,& > textarea,.icon:not([class*="ui-color"]) { ._color-var(black); }
     &.form-light {
-        & > input,& > select,& > textarea,.icon:not([class*="ui-"]) { color: @white !important; }
+        & > input,& > select,& > textarea,.icon:not([class*="ui-color"]) { color: @white !important; }
     }
 
     &[class*="text-icon"],&.select {

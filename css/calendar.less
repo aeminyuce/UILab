@@ -123,18 +123,19 @@
                 button {
                     font-weight: @font-bold;
 
-                    &:not([class*="ui-"]) { ._bg-var(calendar-today-btn-bg); }
+                    &:not([class*="ui-bg-"]) { ._bg-var(calendar-today-btn-bg); }
                     .desktop & {
-                        &:not([class*="ui-"]):hover { ._bg-var(calendar-today-btn-hover-bg); }
+                        &:not([class*="ui-bg-"]):hover { ._bg-var(calendar-today-btn-hover-bg); }
                     }
                 }
             }
 
             &.pickerday {
                 button {
-                    color: @white !important; font-weight: @font-bold; background-color: @calendar-pickerday-btn-bg;
+                     font-weight: @font-bold;
 
-                    .desktop &:hover { background-color: @calendar-pickerday-btn-hover-bg; }
+                    &:not([class*="ui-bg-"]) { color: @white !important; background-color: @calendar-pickerday-btn-bg; }
+                    .desktop &:not([class*="ui-bg-"]):hover { background-color: @calendar-pickerday-btn-hover-bg; }
                 }
             }
         }
@@ -145,8 +146,8 @@
     button {
         ._bg-var(btn-bg);
 
-        &:not([class*="ui-"]) { ._color-var(black); }
-        .desktop &:hover { ._bg-var(btn-hover-bg); }
+        &:not([class*="ui-bg-"]) { ._color-var(black); }
+        .desktop &:not([class*="ui-bg-"]):hover { ._bg-var(btn-hover-bg); }
     }
 
     caption {
@@ -303,11 +304,7 @@
 }
 
 .text {
-    &.calendar-picker {
-        ._color-var(black); overflow: visible !important;
-
-        button:not([class*="ui-"]),.text.calendar-picker button:not([class*="ui-"]) .icon { ._color-var(black); }
-    }
+    &.calendar-picker { overflow: visible !important; }
 
     .calendar {
         width: 100%; max-width: @calendar-max-width; position: absolute; z-index: @calendar-picker-z-index; box-shadow: 0 @calendar-shadow-size @calendar-picker-shadow;
