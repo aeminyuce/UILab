@@ -23,7 +23,7 @@
                     <button onclick="alert('Test');" class="btn margin-5-b round ui-bg-dark-100" data-ui-tooltip="t" title="Run javascript aler now!">Javascript</button>
                 </div>
 
-                <h4>data-only Attributes</h4>
+                <h4>data-ui-only Attributes</h4>
                 <div class="theme-default ease-1st-btn padding-30-b">
                     <a href="http://www.google.com/" target="_blank" class="btn margin-5-b round ui-bg-dark-100" data-ui-tooltip="t" data-ui-only="mobile" title="Open link now!">Link (mobile)</a>
                     <a href="http://www.google.com/" target="_blank" class="btn margin-5-b round ui-bg-dark-100" data-ui-tooltip="t" data-ui-only="desktop" title="Open link now!">Link (desktop)</a>

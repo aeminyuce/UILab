@@ -16,7 +16,7 @@
                             <button class="btn btn-ghost btn-square round show-mobile-menu-l visible-md">
                                 <svg class="icon"><use href="#bars-left"/></svg>
                             </button>
-                            <button class="btn btn-ghost round" data-notifier data-ui-tooltip="r" title="Show messages">
+                            <button class="btn btn-ghost round" data-ui-notifier data-ui-tooltip="r" title="Show messages">
                                 <svg class="icon"><use href="#bell-on"/></svg>
                             </button>
                         </div>

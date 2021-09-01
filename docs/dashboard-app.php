@@ -17,7 +17,7 @@
                         <div class="card-side padding-15 no-padding-b icons-no-opacity">
                             <div class="col-static no-fluid">
                                 <div class="col-50">
-                                    <button class="btn btn-ghost btn-square circle ui-bg-light-100 ease-btn" data-notifier>
+                                    <button class="btn btn-ghost btn-square circle ui-bg-light-100 ease-btn" data-ui-notifier>
                                         <svg class="icon ui-color"><use href="#bell"/></svg>
                                     </button>
                                 </div>
@@ -231,7 +231,7 @@
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle color-black-muted" data-notifier="2">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle color-black-muted" data-ui-notifier="2">
                                     <svg class="icon"><use href="#comment"/></svg>
                                     <span class="small block">Chat</span>
                                 </button>
@@ -257,7 +257,7 @@
                         <div class="card-side padding-15 no-padding-b icons-no-opacity">
                             <div class="col-static no-fluid">
                                 <div class="col-50">
-                                    <button class="btn btn-ghost btn-square circle ui-bg-light-100 ease-btn" data-notifier>
+                                    <button class="btn btn-ghost btn-square circle ui-bg-light-100 ease-btn" data-ui-notifier>
                                         <svg class="icon ui-color"><use href="#bell"/></svg>
                                     </button>
                                 </div>
@@ -630,7 +630,7 @@
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle color-black-muted" data-notifier="2">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle color-black-muted" data-ui-notifier="2">
                                     <svg class="icon"><use href="#comment"/></svg>
                                     <span class="small block">Chat</span>
                                 </button>
@@ -656,7 +656,7 @@
                         <div class="card-side padding-15 no-padding-b icons-no-opacity">
                             <div class="col-static no-fluid">
                                 <div class="col-50">
-                                    <button class="btn btn-ghost btn-square circle ui-bg-light-100 ease-btn" data-notifier>
+                                    <button class="btn btn-ghost btn-square circle ui-bg-light-100 ease-btn" data-ui-notifier>
                                         <svg class="icon ui-color"><use href="#bell"/></svg>
                                     </button>
                                 </div>
@@ -681,7 +681,7 @@
                                     <li class="tab circle online theme-app ui-border active">
                                         <img class="img-photo circle" src="img/profile-image.jpg" alt="">
                                     </li>
-                                    <li class="tab circle online" data-msg="2">
+                                    <li class="tab circle online" data-ui-msg="2">
                                         <img class="img-photo circle" src="img/profile-image2.jpg" alt="">
                                     </li>
                                     <li class="tab circle">
@@ -1082,7 +1082,7 @@
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle ui-color" data-notifier="2">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle ui-color" data-ui-notifier="2">
                                     <svg class="icon icon-semibold"><use href="#comment"/></svg>
                                     <span class="small block">Chat</span>
                                 </button>
@@ -1108,7 +1108,7 @@
                         <div class="card-side padding-15 no-padding-b icons-no-opacity">
                             <div class="col-static no-fluid">
                                 <div class="col-50">
-                                    <button class="btn btn-ghost btn-square circle ui-bg-light-100 ease-btn" data-notifier>
+                                    <button class="btn btn-ghost btn-square circle ui-bg-light-100 ease-btn" data-ui-notifier>
                                         <svg class="icon ui-color"><use href="#bell"/></svg>
                                     </button>
                                 </div>
@@ -1229,7 +1229,7 @@
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-multi btn-ghost padding-10-t circle color-black-muted" data-notifier="2">
+                                <button class="btn btn-multi btn-ghost padding-10-t circle color-black-muted" data-ui-notifier="2">
                                     <svg class="icon"><use href="#comment"/></svg>
                                     <span class="small block">Chat</span>
                                 </button>

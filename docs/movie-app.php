@@ -100,7 +100,7 @@
                                 <button class="btn btn-square btn-ghost circle">
                                     <svg class="icon"><use href="#user"/></svg>
                                 </button>
-                                <button class="btn btn-square btn-ghost circle" data-notifier>
+                                <button class="btn btn-square btn-ghost circle" data-ui-notifier>
                                     <svg class="icon"><use href="#bell"/></svg>
                                 </button>
                                 <button class="btn btn-square btn-ghost circle">

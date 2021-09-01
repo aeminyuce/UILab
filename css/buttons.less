@@ -37,10 +37,10 @@
 
     input& { @no-appearance(); }
 
-    &[data-notifier] {
-        &:after { content: attr(data-notifier); color: @white; font-size: @small; text-align: center !important; line-height: 1; min-width: (@btn-notifier-size * 2); min-height: (@btn-notifier-size * 2); background-color: @red; padding: (@btn-notifier-size / 4) (@btn-notifier-size / 2); border-radius: 200px; position: absolute; top: 0; left: 100%; z-index: 1; transform: translateX(-75%); }
+    &[data-ui-notifier] {
+        &:after { content: attr(data-ui-notifier); color: @white; font-size: @small; text-align: center !important; line-height: 1; min-width: (@btn-notifier-size * 2); min-height: (@btn-notifier-size * 2); background-color: @red; padding: (@btn-notifier-size / 4) (@btn-notifier-size / 2); border-radius: 200px; position: absolute; top: 0; left: 100%; z-index: 1; transform: translateX(-75%); }
     }
-    &[data-notifier=""] {
+    &[data-ui-notifier=""] {
         &:after { min-width: @btn-notifier-size; min-height: @btn-notifier-size; }
     }
 

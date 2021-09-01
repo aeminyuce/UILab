@@ -4116,8 +4116,8 @@ input.btn {
   -moz-appearance: none;
   appearance: none;
 }
-.btn[data-notifier]:after {
-  content: attr(data-notifier);
+.btn[data-ui-notifier]:after {
+  content: attr(data-ui-notifier);
   color: hsl(0, 0%, 100%);
   font-size: 12px;
   text-align: center !important;
@@ -4133,7 +4133,7 @@ input.btn {
   z-index: 1;
   transform: translateX(-75%);
 }
-.btn[data-notifier=""]:after {
+.btn[data-ui-notifier=""]:after {
   min-width: 8px;
   min-height: 8px;
 }
@@ -7487,7 +7487,7 @@ html:not(.ie) .svg-map svg {
 .svg-map svg g.active path:hover {
   opacity: 1 !important;
 }
-.svg-map svg g[data-href] path {
+.svg-map svg g[data-ui-href] path {
   cursor: pointer;
 }
 /* mobile menu */

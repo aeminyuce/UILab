@@ -245,7 +245,7 @@
 
                 <div class="inline">
                     <div class="dropdown menu-l ease-dropdown">
-                        <button class="btn color-black-muted btn-square btn-ghost circle" data-notifier data-ui-tooltip="l" data-ui-only="desktop" title="Personal Logs">
+                        <button class="btn color-black-muted btn-square btn-ghost circle" data-ui-notifier data-ui-tooltip="l" data-ui-only="desktop" title="Personal Logs">
                             <svg class="icon"><use href="#grid-column"/></svg>
                         </button>
                         <div class="content round shadow-lg no-scroll">
@@ -323,7 +323,7 @@
                         </div>
                     </div>
                     <div class="dropdown menu-l ease-dropdown">
-                        <button class="btn color-black-muted btn-square btn-ghost circle" data-notifier data-ui-tooltip="l" data-ui-only="desktop" title="Notification Center">
+                        <button class="btn color-black-muted btn-square btn-ghost circle" data-ui-notifier data-ui-tooltip="l" data-ui-only="desktop" title="Notification Center">
                             <svg class="icon"><use href="#bars-right"/></svg>
                         </button>
                         <div class="content round shadow-lg no-scroll">

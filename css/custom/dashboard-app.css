@@ -154,7 +154,7 @@
   height: 700px;
   border-radius: 32px;
 }
-.data-container {
+.grid-container {
   height: 532px;
 }
 .round:not(.tooltip):not(.btn-square) {
@@ -178,7 +178,7 @@
 }
 .contacts li:after,
 .contacts .status:after {
-  content: attr(data-msg);
+  content: attr(data-ui-msg);
   color: hsl(0, 0%, 100%);
   font-size: 11px;
   font-weight: 700;

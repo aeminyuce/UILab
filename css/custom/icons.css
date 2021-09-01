@@ -37,7 +37,6 @@
   background-color: var(--icons-list-hover-bg);
 }
 .icons-list li > span {
-  content: attr(data-name);
   color: hsla(0, 0%, 0%, 0.5);
   color: var(--icons-name-color);
   font-size: 13px;
