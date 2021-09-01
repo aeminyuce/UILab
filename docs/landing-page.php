@@ -82,7 +82,7 @@
     <!-- tab banner: start -->
     <div class="tabs form-lg ease-tabs" data-ui-classes="ui-color border-b border-lg ui-border">
 
-        <div class="fixed padding-10-t theme-farmer2 set-dark">
+        <div class="fixed padding-10-t theme-farmer2">
             <div class="row no-row-gap-v icons-no-opacity icons-margin-5-r">
                 <div class="col-12 xs-align-l align-c ease-1st-btn">
                     <button class="tab btn btn-xs-fluid btn-ghost margin-1-b ui-color border-b border-lg ui-border active">
@@ -329,7 +329,7 @@
     <!-- highlight links: end -->
 
     <!-- news: start -->
-    <div class="padding-30-v theme-farmer set-dark ui-bg-light-100">
+    <div class="padding-30-v theme-farmer ui-bg-light-100">
         <div class="fixed margin-30-b">
             <div class="row">
                 <div class="col-12">
@@ -742,7 +742,7 @@
     <!-- gallery: end -->
 
     <!-- statistics: start -->
-    <div class="padding-15-t padding-30-b theme-farmer set-dark ui-bg-light-100">
+    <div class="padding-15-t padding-30-b theme-farmer ui-bg-light-100">
         <div class="fixed padding-30-v">
             <div class="row">
                 <div class="col-12">
@@ -797,7 +797,7 @@
 </main>
 
 <!-- footer: start -->
-<footer class="container no-gutter padding-30-v theme-farmer2 set-dark ui-bg-dark-100">
+<footer class="container no-gutter padding-30-v theme-farmer2 ui-bg-dark-100">
     <div class="fixed padding-30-v sm-align-c">
         <div class="row">
             <div class="col-static">
