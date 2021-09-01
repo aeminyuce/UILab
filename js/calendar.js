@@ -17,7 +17,7 @@ ui.calendar = {
     nextIcon: 'arrow-right', // header's next button
     backIcon: 'angle-left', // detail's back button
 
-    todayTheme: '' // use themes
+    todayTheme: '' // use themes with hover
 
 };
 
@@ -109,7 +109,7 @@ ui.calendar = {
         // create calendar table
         function createFnc(that, newDate, picker) {
 
-            var date, today, pickerDay, container, html, i, j, sysDays, activeDay, days, prevLastDay, firstDay, lastDay, src, keys, dday, details;
+            var date, today, pickerDay, container, html, i, j, todayStyles, sysDays, activeDay, days, prevLastDay, firstDay, lastDay, src, keys, dday, details;
 
             date = new Date();
             date.setDate(1); // for the prev and next implementations
@@ -229,8 +229,15 @@ ui.calendar = {
                     if (activeDay) {
 
                         if (date.getFullYear() + ' ' + date.getMonth() + ' ' + days === today) { // today
+
+                            todayStyles = '';
+
+                            if (ui.calendar.todayTheme !== '') {
+                                todayStyles = ui.calendar.todayTheme + ' hover';
+                            }
+
                             html += '<td class="today">' +
-                                    '<button class="' + ui.calendar.todayTheme + '" type="button" tabindex="-1">' + days + '</button>' +
+                                    '<button class="' + todayStyles + '" type="button" tabindex="-1">' + days + '</button>' +
                                 '</td>';
 
                         } else { // other days
