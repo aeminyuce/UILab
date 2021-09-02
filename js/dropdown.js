@@ -3,7 +3,38 @@
  Requires UI JS
 */
 
-ui.dropdown = {};
+ui.dropdown = {
+
+    target: 'dropdown',
+
+    nameOpen: 'open',
+    nameOpenEase: 'open-ease',
+    nameHover: 'open-hover',
+
+    nameNav: 'nav',
+    nameNavFullHor: 'nav-full-h',
+
+    nameMenuTop: 'menu-t',
+    nameMenuLeft: 'menu-l',
+    nameMenuCenter: 'menu-c',
+
+    nameContent: 'content',
+    nameContentItems: 'li',
+
+    nameValueToggle: 'value-toggle',
+    nameValueToggleItems: 'label',
+    nameValueToggleSelected: 'selected',
+
+    nameBtn: 'btn',
+    nameMobileMenu: 'mobile-menu',
+    nameNoScrolling: 'no-scroll',
+
+    scrollbarSize: 20,
+    menuTopMargin: 1,
+
+    eventDropdownClose: 'click.ui:dropdownClose'
+
+};
 
 (function () {
 
@@ -27,8 +58,8 @@ ui.dropdown = {};
 
         var that, list;
 
-        that = ui.find('.dropdown.open-ease');
-        ui.removeClass(that, 'open-ease');
+        that = ui.find('.' + ui.dropdown.target + '.' + ui.dropdown.nameOpen);
+        ui.removeClass(that, ui.dropdown.nameOpenEase);
 
         clearTimeout(dropdownLeaveTimer);
         dropdownLeaveTimer = setTimeout(function () {
@@ -36,7 +67,7 @@ ui.dropdown = {};
             ui.each(that, function () {
 
                 clearTimeout(dropdownCloseTimer);
-                list = ui.find('.content', this)[0];
+                list = ui.find('.' + ui.dropdown.nameContent, this)[0];
 
                 dropdownCloseTimer = setTimeout(function () {
 
@@ -52,7 +83,7 @@ ui.dropdown = {};
 
                     }
 
-                    ui.removeClass(that, 'menu-t open');
+                    ui.removeClass(that, ui.dropdown.nameMenuTop + ' ' + ui.dropdown.nameOpen);
 
                 }, ui.globals.ease);
 
@@ -79,22 +110,22 @@ ui.dropdown = {};
                 dropdownClose();
 
                 clearTimeout(dropdownOpenTimer);
-                ui.addClass(parent, 'open');
+                ui.addClass(parent, ui.dropdown.nameOpen);
 
                 dropdownOpenTimer = setTimeout(function () {
-                    ui.addClass(parent, 'open-ease');
+                    ui.addClass(parent, ui.dropdown.nameOpenEase);
                 }, dropdownHoverTimer / 6);
 
                 offset = parent.getBoundingClientRect();
-                list = ui.find('.content', parent)[0];
+                list = ui.find('.' + ui.dropdown.nameContent, parent)[0];
 
-                if (ui.closest(that, '.mobile-menu')[0] === undefined && !ui.hasClass(parent, 'nav-full-h')) { // diable all positionings on mobile menus and full horizontal navigations
+                if (ui.closest(that, '.' + ui.dropdown.nameMobileMenu)[0] === undefined && !ui.hasClass(parent, ui.dropdown.nameNavFullHor)) { // diable all positionings on mobile menus and full horizontal navigations
 
                     listStyles = list.style.length;
 
                     if (window.innerWidth > ui.globals.sm) { // menu horizontal positioning: active
 
-                        if (ui.hasClass(parent, 'menu-l') || (offset.left + list.offsetWidth + 15) > window.innerWidth) { // 15px: scrollbar size
+                        if (ui.hasClass(parent, ui.dropdown.nameMenuLeft) || (offset.left + list.offsetWidth + ui.dropdown.scrollbarSize) > window.innerWidth) {
 
                             if (offset.left - (list.offsetWidth - parent.offsetWidth) >= 0) {
 
@@ -105,7 +136,7 @@ ui.dropdown = {};
 
                             }
 
-                        } else if (ui.hasClass(parent, 'menu-c')) {
+                        } else if (ui.hasClass(parent, ui.dropdown.nameMenuCenter)) {
 
                             alignSize = Math.abs(list.offsetWidth - parent.offsetWidth) / 2;
 
@@ -117,8 +148,8 @@ ui.dropdown = {};
 
                     } else { // menu horizontal positioning: passive
 
-                        list.style.marginLeft = -(offset.left - 10) + 'px';
-                        list.style.width = (window.innerWidth - 20) + 'px';
+                        list.style.marginLeft = -(offset.left - (ui.dropdown.scrollbarSize / 2)) + 'px';
+                        list.style.width = (window.innerWidth - ui.dropdown.scrollbarSize) + 'px';
 
                     }
 
@@ -126,13 +157,15 @@ ui.dropdown = {};
 
                 setMaxH = function (pos) { // set max-height of list
 
-                    if (ui.hasClass(list, 'no-scroll')) { return; }
+                    if (ui.hasClass(list, ui.dropdown.nameNoScrolling)) {
+                        return;
+                    }
 
                     if (pos === 'top') {
-                        list.style.maxHeight = window.innerHeight - 21 + 'px'; // 21: margin-top + scrollbar size
+                        list.style.maxHeight = window.innerHeight - (ui.dropdown.scrollbarSize + ui.dropdown.menuTopMargin) + 'px';
 
                     } else {
-                        list.style.maxHeight = window.innerHeight - (offset.top + that.offsetHeight + 21) + 'px'; // 21: margin-top + scrollbar size
+                        list.style.maxHeight = window.innerHeight - (offset.top + that.offsetHeight + ui.dropdown.scrollbarSize + ui.dropdown.menuTopMargin) + 'px';
                     }
 
                 };
@@ -141,9 +174,9 @@ ui.dropdown = {};
 
                     if (offset.top - parseInt(that.offsetHeight + list.offsetHeight) + that.offsetHeight > 0) {
 
-                        if (!ui.hasClass(parent, 'nav-full-h')) { // diable all menu-t on full horizontal navigations
+                        if (!ui.hasClass(parent, ui.dropdown.nameNavFullHor)) { // disable top menu with full horizontal navigations
 
-                            ui.addClass(parent, 'menu-t');
+                            ui.addClass(parent, ui.dropdown.nameMenuTop);
                             list.style.removeProperty('transform-origin');
 
                         }
@@ -160,27 +193,27 @@ ui.dropdown = {};
 
                 setTimeout(function () {
 
-                    ui.on(document, 'click.ui:dropdownClose', function (ev) {
+                    ui.on(document, ui.dropdown.eventDropdownClose, function (ev) {
 
-                        var content = ui.closest(ev.target, '.content')[0];
+                        var content = ui.closest(ev.target, '.' + ui.dropdown.nameContent)[0];
 
                         // prevent for non listing contents
                         if (content !== undefined) {
 
-                            if (ui.closest(content, '.dropdown')[0] !== undefined) { // check other .content class names
+                            if (ui.closest(content, '.' + ui.dropdown.target)[0] !== undefined) { // check other content class names
                                 return;
                             }
 
                         }
 
-                        if (ui.closest(ev.target, '.dropdown.nav-full-h')[0] !== undefined && ev.target.className.split(' ').indexOf('content') === 0) { // check full horizontal navigations
+                        if (ui.closest(ev.target, '.' + ui.dropdown.target + '.' + ui.dropdown.nameNavFullHor)[0] !== undefined && ev.target.className.split(' ').indexOf(ui.dropdown.nameContent) === 0) { // check full horizontal navigations
                             return;
                         }
 
                         if (ev.button !== 2) { // inherited right clicks
 
                             dropdownClose();
-                            ui.off(document, 'click.ui:dropdownClose');
+                            ui.off(document, ui.dropdown.eventDropdownClose);
 
                         }
 
@@ -196,7 +229,9 @@ ui.dropdown = {};
         // open
         ui.on(document,
             'click',
-            '.desktop .dropdown:not(.open-hover):not(.open-ease) > .btn,html.mobile .dropdown:not(.open-ease) > .btn',
+
+            '.' + ui.userAgents.nameDesktop + ' .' + ui.dropdown.target + ':not(.' + ui.dropdown.nameHover + '):not(.' + ui.dropdown.nameOpenEase + ') > .' + ui.dropdown.nameBtn + ',' +
+            '.' + ui.userAgents.nameMobile + ' .' + ui.dropdown.target + ':not(.' + ui.dropdown.nameOpenEase + ') > .' + ui.dropdown.nameBtn,
 
             function (e) {
 
@@ -207,7 +242,8 @@ ui.dropdown = {};
 
         ui.on(document,
             'mouseenter',
-            '.desktop .dropdown.open-hover:not(.open-ease) > .btn',
+
+            '.' + ui.userAgents.nameDesktop + ' .' + ui.dropdown.target + '.' + ui.dropdown.nameHover + ':not(.' + ui.dropdown.nameOpenEase + ') > .' + ui.dropdown.nameBtn,
 
             function (e) {
 
@@ -220,7 +256,9 @@ ui.dropdown = {};
 
         ui.on(document,
             'mouseenter',
-            '.desktop .dropdown.open-hover.open > .btn,.desktop .dropdown.open-hover.open-ease .content',
+
+            '.' + ui.userAgents.nameDesktop + ' .' + ui.dropdown.target + '.' + ui.dropdown.nameHover + '.' + ui.dropdown.nameOpen + ' > .' + ui.dropdown.nameBtn + ',' +
+            '.' + ui.userAgents.nameDesktop + ' .' + ui.dropdown.target + '.' + ui.dropdown.nameHover + '.' + ui.dropdown.nameOpenEase + ' .' + ui.dropdown.nameContent,
 
             function () {
 
@@ -230,13 +268,13 @@ ui.dropdown = {};
             });
 
         // form toggle
-        ui.on('.dropdown li > label', 'click', function () {
+        ui.on('.' + ui.dropdown.target + ' ' + ui.dropdown.nameContentItems + ' > ' + ui.dropdown.nameValueToggleItems, 'click', function () {
 
             var p, target, input;
 
-            p = ui.closest(this, '.dropdown')[0];
+            p = ui.closest(this, '.' + ui.dropdown.target)[0];
 
-            target = ui.find('.btn > .value-toggle', p)[0];
+            target = ui.find('.' + ui.dropdown.nameBtn + ' > .' + ui.dropdown.nameValueToggle, p)[0];
             target.innerHTML = '';
             target.insertAdjacentHTML('beforeend', this.innerHTML);
 
@@ -245,15 +283,16 @@ ui.dropdown = {};
                 input.parentNode.removeChild(input);
             }
 
-            ui.removeClass(ui.find('.selected', p), 'selected');
-            ui.addClass(this.parentNode, 'selected');
+            ui.removeClass(ui.find('.' + ui.dropdown.nameValueToggleSelected, p), ui.dropdown.nameValueToggleSelected);
+            ui.addClass(this.parentNode, ui.dropdown.nameValueToggleSelected);
 
         });
 
         // close
         ui.on(document,
             'mouseleave',
-            '.dropdown.open-hover',
+
+            '.' + ui.dropdown.target + '.' + ui.dropdown.nameHover,
 
             function () {
 
@@ -268,7 +307,7 @@ ui.dropdown = {};
 
         ui.on(document,
             'mouseup',
-            '.dropdown:not(.nav) li',
+            '.' + ui.dropdown.target + ':not(.' + ui.dropdown.nameNav + ') ' + ui.dropdown.nameContentItems,
 
             function () {
 
@@ -281,7 +320,7 @@ ui.dropdown = {};
 
         // select dropdown fix
         selectOpened = false;
-        selectInContent = ui.find('.dropdown .content select');
+        selectInContent = ui.find('.' + ui.dropdown.target + ' .' + ui.dropdown.nameContent + ' select');
 
         ui.on(document,
             'focus',
