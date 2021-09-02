@@ -3,7 +3,29 @@
  Requires UI JS
 */
 
-ui.tabs = {};
+ui.tabs = {
+
+    // targets
+    targetParent: 'tabs',
+    targetTab: 'tab',
+
+    // classnames
+    nameOpen: 'open',
+    nameOpenEase: 'open-ease',
+
+    nameContent: 'tab-content',
+    nameToggleTab: 'tab-toggle',
+    nameActive: 'active',
+
+    // data attributes
+    dataID: 'data-ui-id',
+    dataClasses: 'data-ui-classes',
+
+    // custom events
+    eventCloseToggleTabs: 'ui:closeToggleTabs',
+    eventToggleTabsClosed: 'ui:toggleTabsClosed'
+
+};
 
 (function () {
 
@@ -13,147 +35,153 @@ ui.tabs = {};
     ui.tabs.Start = function () {
 
         // Event Listeners
-        ui.on(document, 'click', '.tabs .tab', function (e) {
+        ui.on(document,
+            'click',
 
-            e.preventDefault();
+            '.' + ui.tabs.targetParent + ' .' + ui.tabs.targetTab,
 
-            var parent, tabs, index, innerTabs, outerTabs, id, content, innerContent, outerContent, currentContent, classes, toggle;
+            function (e) {
 
-            outerTabs = [];
-            outerContent = [];
+                e.preventDefault();
 
-            parent = ui.closest(this, '.tabs')[0];
-            tabs = ui.find('.tab', parent);
+                var parent, tabs, index, innerTabs, outerTabs, id, content, innerContent, outerContent, currentContent, classes, toggle;
 
-            // check inner tabs
-            innerTabs = ui.find('.tabs .tabs .tab', parent);
-            innerTabs = Array.prototype.slice.call(innerTabs);
+                outerTabs = [];
+                outerContent = [];
 
-            ui.each(tabs, function () {
+                parent = ui.closest(this, '.' + ui.tabs.targetParent)[0];
+                tabs = ui.find('.' + ui.tabs.targetTab, parent);
 
-                if (innerTabs.indexOf(this) === -1) {
-                    outerTabs.push(this);
-                }
+                // check inner tabs
+                innerTabs = ui.find('.' + ui.tabs.targetParent + ' .' + ui.tabs.targetParent + ' .' + ui.tabs.targetTab, parent);
+                innerTabs = Array.prototype.slice.call(innerTabs);
 
-            });
+                ui.each(tabs, function () {
 
-            if (outerTabs.length !== 0) { tabs = outerTabs; }
-            index = Array.prototype.slice.call(tabs).indexOf(this);
-
-            content = ui.find('.tab-content', parent);
-
-            // check inner contents
-            innerContent = ui.find('.tabs .tabs .tab-content', parent);
-            innerContent = Array.prototype.slice.call(innerContent);
-
-            ui.each(content, function () {
-
-                if (innerContent.indexOf(this) === -1) {
-                    outerContent.push(this);
-                }
-
-            });
-
-            if (outerContent.length !== 0) { content = outerContent; }
-
-            // check ids
-            id = this.getAttribute('data-ui-id');
-            if (id !== null & id !== '') {
-                currentContent = ui.find('#' + id, parent);
-
-            } else {
-                currentContent = content[index];
-            }
-
-            toggle = false;
-            classes = parent.getAttribute('data-ui-classes');
-
-            if (ui.hasClass(this, 'btn-toggle')) { toggle = true; }
-
-            if (ui.hasClass(this, 'active')) {
-
-                if (toggle) {
-
-                    if (classes) {
-                        ui.toggleClass(tabs[index], classes);
+                    if (innerTabs.indexOf(this) === -1) {
+                        outerTabs.push(this);
                     }
 
-                    ui.removeClass(tabs[index], 'active');
-                    ui.removeClass(currentContent, 'open-ease');
+                });
 
-                    setTimeout(function () {
-                        ui.removeClass(currentContent, 'open');
-                    }, 0);
+                if (outerTabs.length !== 0) { tabs = outerTabs; }
+                index = Array.prototype.slice.call(tabs).indexOf(this);
 
+                content = ui.find('.' + ui.tabs.nameContent, parent);
+
+                // check inner contents
+                innerContent = ui.find('.' + ui.tabs.targetParent + ' .' + ui.tabs.targetParent + ' .' + ui.tabs.nameContent, parent);
+                innerContent = Array.prototype.slice.call(innerContent);
+
+                ui.each(content, function () {
+
+                    if (innerContent.indexOf(this) === -1) {
+                        outerContent.push(this);
+                    }
+
+                });
+
+                if (outerContent.length !== 0) { content = outerContent; }
+
+                // check ids
+                id = this.getAttribute(ui.tabs.dataID);
+
+                if (id !== null & id !== '') {
+                    currentContent = ui.find('#' + id, parent);
+
+                } else {
+                    currentContent = content[index];
                 }
 
-            } else {
+                toggle = false;
+                classes = parent.getAttribute(ui.tabs.dataClasses);
 
-                if (classes) {
+                if (ui.hasClass(this, ui.tabs.nameToggleTab)) { toggle = true; }
 
-                    ui.removeClass(tabs, classes);
-                    ui.addClass(tabs[index], classes);
+                if (ui.hasClass(this, ui.tabs.nameActive)) {
 
-                }
+                    if (toggle) {
 
-                ui.removeClass(tabs, 'active');
-                ui.addClass(tabs[index], 'active');
-
-                ui.removeClass(content, 'open-ease');
-                setTimeout(function () {
-
-                    ui.removeClass(content, 'open');
-                    ui.addClass(currentContent, 'open');
-
-                    setTimeout(function () {
-
-                        ui.addClass(currentContent, 'open-ease');
-                        ui.trigger(document, ui.globals.eventDomChange); // set custom event
-
-                    }, ui.globals.fast / 2);
-
-                }, 0);
-
-                if (toggle) {
-
-                    // close opened toggle tabs when outside the tabs
-                    ui.on(document, 'mouseup.ui:closeToggleTabs', function (ev) {
-
-                        if (typeof ev.target.className === 'object') { return; } // detect SVG elements
-
-                        if (ev.button !== 2) { // inherited right clicks
-
-                            if (ev.target.className.split(' ').indexOf('btn-toggle') !== -1 && ui.closest(ev.target, '.tabs')[0] === parent) { // controlling same toggled tab buttons
-                                return;
-                            }
-
-                            if (ev.target.className.split(' ').indexOf('tab-content') === -1 && ui.closest(ev.target, '.tab-content')[0] === undefined) { // controlling inside of the opened tab content
-
-                                if (classes) {
-                                    ui.removeClass(tabs, classes);
-                                }
-
-                                ui.removeClass(tabs, 'active');
-                                ui.removeClass(content, 'open-ease');
-
-                                setTimeout(function () {
-                                    ui.removeClass(content, 'open');
-                                }, 0);
-
-                                ui.trigger(document, 'ui:toggleTabsClosed'); // set custom event
-                                ui.off(document, 'mouseup.ui:closeToggleTabs');
-
-                            }
-
+                        if (classes) {
+                            ui.toggleClass(tabs[index], classes);
                         }
 
-                    });
+                        ui.removeClass(tabs[index], ui.tabs.nameActive);
+                        ui.removeClass(currentContent, ui.tabs.nameOpenEase);
+
+                        setTimeout(function () {
+                            ui.removeClass(currentContent, ui.tabs.nameOpen);
+                        }, 0);
+
+                    }
+
+                } else {
+
+                    if (classes) {
+
+                        ui.removeClass(tabs, classes);
+                        ui.addClass(tabs[index], classes);
+
+                    }
+
+                    ui.removeClass(tabs, ui.tabs.nameActive);
+                    ui.addClass(tabs[index], ui.tabs.nameActive);
+
+                    ui.removeClass(content, ui.tabs.nameOpenEase);
+                    setTimeout(function () {
+
+                        ui.removeClass(content, ui.tabs.nameOpen);
+                        ui.addClass(currentContent, ui.tabs.nameOpen);
+
+                        setTimeout(function () {
+
+                            ui.addClass(currentContent, ui.tabs.nameOpenEase);
+                            ui.trigger(document, ui.globals.eventDomChange); // set custom event
+
+                        }, ui.globals.fast / 2);
+
+                    }, 0);
+
+                    if (toggle) {
+
+                        // close opened toggle tabs when outside the tabs
+                        ui.on(document, 'mouseup.' + ui.tabs.eventCloseToggleTabs, function (ev) {
+
+                            if (typeof ev.target.className === 'object') { return; } // fix: when clicking on SVG icons inside the toggle tab
+
+                            if (ev.button !== 2) { // inherited right clicks
+
+                                if (ev.target.className.split(' ').indexOf(ui.tabs.nameToggleTab) !== -1 && ui.closest(ev.target, '.' + ui.tabs.targetParent)[0] === parent) { // controlling same toggled tab buttons
+                                    return;
+                                }
+
+                                if (ev.target.className.split(' ').indexOf(ui.tabs.nameContent) === -1 && ui.closest(ev.target, '.' + ui.tabs.nameContent)[0] === undefined) { // controlling inside of the opened tab content
+
+                                    if (classes) {
+                                        ui.removeClass(tabs, classes);
+                                    }
+
+                                    ui.removeClass(tabs, ui.tabs.nameActive);
+                                    ui.removeClass(content, ui.tabs.nameOpenEase);
+
+                                    setTimeout(function () {
+                                        ui.removeClass(content, ui.tabs.nameOpen);
+                                    }, 0);
+
+                                    ui.trigger(document, ui.tabs.eventToggleTabsClosed); // set custom event
+                                    ui.off(document, 'mouseup.' + ui.tabs.eventCloseToggleTabs);
+
+                                }
+
+                            }
+
+                        });
+
+                    }
 
                 }
 
-            }
-
-        });
+            });
 
     };
 

@@ -5,17 +5,22 @@
 
 ui.topButton = {
 
+    // targets
     target: 'top-button',
-    classesTarget: 'circle ease-layout',
-    scrollableTarget: 'body', // IE 10 not supported html tag!
+    targetScrollable: 'body', // don't use html tag: IE 10 not supported!
 
-    titleText : 'Back to top!',
-
-    icon: 'arrow-to-top',
-    classesIcon: 'icon ease-layout',
+    // classnames
+    nameTarget: 'circle ease-layout',
+    nameIcon: 'icon ease-layout',
 
     nameOpen: 'open',
-    nameOpenEase: 'open-ease'
+    nameOpenEase: 'open-ease',
+
+    // icons
+    icon: 'arrow-to-top',
+
+    // custom texts
+    titleText : 'Back to top!'
 
 };
 
@@ -62,7 +67,7 @@ ui.topButton = {
 
         };
 
-        if (ui.topButton.scrollableTarget === 'body') {
+        if (ui.topButton.targetScrollable === 'body') {
 
             if (scrollEl.offsetHeight > (window.innerHeight * 2) && window.innerWidth > ui.globals.sm) {
 
@@ -95,15 +100,15 @@ ui.topButton = {
 
         if (ui.userAgents.desktop) {
 
-            var html = '<button class="' + ui.topButton.target + ' ' + ui.topButton.classesTarget + '" title="' + ui.topButton.titleText + '">' +
-                    '<svg class="' + ui.topButton.classesIcon + '"><use href="#' + ui.topButton.icon + '"/></svg>' +
+            var html = '<button class="' + ui.topButton.target + ' ' + ui.topButton.nameTarget + '" title="' + ui.topButton.titleText + '">' +
+                    '<svg class="' + ui.topButton.nameIcon + '"><use href="#' + ui.topButton.icon + '"/></svg>' +
                 '</button>';
 
-            if (ui.topButton.scrollableTarget === 'body') {
-                scrollEl = ui.find(ui.topButton.scrollableTarget)[0];
+            if (ui.topButton.targetScrollable === 'body') {
+                scrollEl = ui.find(ui.topButton.targetScrollable)[0];
 
             } else {
-                scrollEl = ui.find('.' + ui.topButton.scrollableTarget)[0];
+                scrollEl = ui.find('.' + ui.topButton.targetScrollable)[0];
             }
 
             scrollEl.insertAdjacentHTML('beforeend', html);
@@ -119,7 +124,7 @@ ui.topButton = {
 
                     scrollPos -= (scrollPos / 4);
 
-                    if (ui.topButton.scrollableTarget === 'body') {
+                    if (ui.topButton.targetScrollable === 'body') {
                         window.scrollTo(0, scrollPos);
 
                     } else {

@@ -625,9 +625,10 @@ var ui = {
 // UI User Agents
 ui.userAgents = {
 
+    // targets
     target: document,
 
-    // classes
+    // classnames
     nameDesktop: 'desktop',
 
     nameWindows: 'windows',
@@ -782,16 +783,21 @@ ui.userAgents = {
 // UI Dark Mode
 ui.darkMode = {
 
+    // targets
     target: document,
 
+    // storages
     storageTest: 'ui-darkMode-test',
     storage: 'ui-darkMode',
 
-    toggleBtn: 'ui-darkmode-toggle',
-    dataTheme: 'data-ui-theme',
+    // classnames
+    nameToggleBtn: 'ui-darkmode-toggle',
 
     nameDark: 'dark',
-    nameLight: 'light'
+    nameLight: 'light',
+
+    // data attributes
+    dataTheme: 'data-ui-theme'
 
 };
 
@@ -858,7 +864,7 @@ ui.darkMode = {
 
         });
 
-        ui.on(document, 'click', '.' + ui.darkMode.toggleBtn, function (e) {
+        ui.on(document, 'click', '.' + ui.darkMode.nameToggleBtn, function (e) {
 
             e.preventDefault();
 
@@ -881,6 +887,7 @@ ui.darkMode = {
 // UI Effects
 ui.effects = {
 
+    // targets
     target: document,
 
     // pause effects
@@ -894,7 +901,7 @@ ui.effects = {
     android: true,
     androidOld: false,
 
-    // classes
+    // classnames
     namePause: 'pause-effects',
     nameNoEffects: 'no-effects'
 

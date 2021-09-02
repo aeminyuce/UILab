@@ -5,8 +5,10 @@
 
 ui.dropdown = {
 
+    // targets
     target: 'dropdown',
 
+    // classnames
     nameOpen: 'open',
     nameOpenEase: 'open-ease',
     nameHover: 'open-hover',
@@ -29,10 +31,12 @@ ui.dropdown = {
     nameMobileMenu: 'mobile-menu',
     nameNoScrolling: 'no-scroll',
 
+    // values
     scrollbarSize: 20,
     menuTopMargin: 1,
 
-    eventDropdownClose: 'click.ui:dropdownClose'
+    // custom events
+    eventDropdownClose: 'ui:dropdownClose'
 
 };
 
@@ -193,7 +197,7 @@ ui.dropdown = {
 
                 setTimeout(function () {
 
-                    ui.on(document, ui.dropdown.eventDropdownClose, function (ev) {
+                    ui.on(document, 'click.' + ui.dropdown.eventDropdownClose, function (ev) {
 
                         var content = ui.closest(ev.target, '.' + ui.dropdown.nameContent)[0];
 
@@ -213,7 +217,7 @@ ui.dropdown = {
                         if (ev.button !== 2) { // inherited right clicks
 
                             dropdownClose();
-                            ui.off(document, ui.dropdown.eventDropdownClose);
+                            ui.off(document, 'click.' + ui.dropdown.eventDropdownClose);
 
                         }
 
@@ -268,25 +272,30 @@ ui.dropdown = {
             });
 
         // form toggle
-        ui.on('.' + ui.dropdown.target + ' ' + ui.dropdown.nameContentItems + ' > ' + ui.dropdown.nameValueToggleItems, 'click', function () {
+        ui.on(document,
+            'click',
 
-            var p, target, input;
+            '.' + ui.dropdown.target + ' ' + ui.dropdown.nameContentItems + ' > ' + ui.dropdown.nameValueToggleItems,
 
-            p = ui.closest(this, '.' + ui.dropdown.target)[0];
+            function () {
 
-            target = ui.find('.' + ui.dropdown.nameBtn + ' > .' + ui.dropdown.nameValueToggle, p)[0];
-            target.innerHTML = '';
-            target.insertAdjacentHTML('beforeend', this.innerHTML);
+                var p, target, input;
 
-            input = ui.find('input', target)[0];
-            if (input !== undefined) {
-                input.parentNode.removeChild(input);
-            }
+                p = ui.closest(this, '.' + ui.dropdown.target)[0];
 
-            ui.removeClass(ui.find('.' + ui.dropdown.nameValueToggleSelected, p), ui.dropdown.nameValueToggleSelected);
-            ui.addClass(this.parentNode, ui.dropdown.nameValueToggleSelected);
+                target = ui.find('.' + ui.dropdown.nameBtn + ' > .' + ui.dropdown.nameValueToggle, p)[0];
+                target.innerHTML = '';
+                target.insertAdjacentHTML('beforeend', this.innerHTML);
 
-        });
+                input = ui.find('input', target)[0];
+                if (input !== undefined) {
+                    input.parentNode.removeChild(input);
+                }
+
+                ui.removeClass(ui.find('.' + ui.dropdown.nameValueToggleSelected, p), ui.dropdown.nameValueToggleSelected);
+                ui.addClass(this.parentNode, ui.dropdown.nameValueToggleSelected);
+
+            });
 
         // close
         ui.on(document,
