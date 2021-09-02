@@ -2,7 +2,7 @@
  UI JS
 */
 
-/*globals window, document, Event, navigator, NodeList, setTimeout, XMLHttpRequest, sessionStorage */
+/*globals window, document, Event, navigator, NodeList, setTimeout, clearTimeout, XMLHttpRequest, sessionStorage */
 var ui = {
 
     globals: {
@@ -622,7 +622,7 @@ var ui = {
 
 };
 
-// User Agents
+// UI User Agents
 ui.userAgents = {
 
     target: document,
@@ -779,7 +779,7 @@ ui.userAgents = {
 
 }());
 
-// Dark Mode
+// UI Dark Mode
 ui.darkMode = {
 
     target: document,
@@ -873,6 +873,87 @@ ui.darkMode = {
             setState(mode);
 
         });
+
+    });
+
+}());
+
+// UI Effects
+ui.effects = {
+
+    target: document,
+
+    // pause effects
+    pauseAll: false,
+    pauseScroll: false, // pause effects when scrolling
+    pauseResize: true, // pause effects when resizing
+    preload: true, // wait page preload to start effects
+
+    // show effects
+    ie: true,
+    android: true,
+    androidOld: false,
+
+    // classes
+    namePause: 'pause-effects',
+    nameNoEffects: 'no-effects'
+
+};
+
+(function () {
+
+    'use strict';
+
+    var pauseTransitionsTimer;
+
+    ui.on(window, 'resize scroll', function (e) {
+
+        if (!ui.effects.pauseAll) {
+
+            if ((e.type === 'scroll' && ui.effects.pauseScroll) || (e.type === 'resize' && ui.effects.pauseResize)) {
+
+                clearTimeout(pauseTransitionsTimer);
+                ui.addClass(ui.effects.target, ui.effects.namePause);
+
+                pauseTransitionsTimer = setTimeout(function () {
+                    ui.removeClass(ui.effects.target, ui.effects.namePause);
+                }, ui.globals.ease * 2);
+
+            }
+
+        }
+
+    });
+
+    ui.onload(function () {
+
+        if (ui.userAgents.ie && !ui.userAgents.edge && !ui.effects.ie) {
+            ui.effects.pauseAll = true;
+        }
+        if (ui.userAgents.mobile && ui.userAgents.android && !ui.effects.android) {
+            ui.effects.pauseAll = true;
+        }
+        if (ui.userAgents.mobile && ui.userAgents.androidOld && !ui.effects.androidOld) {
+            ui.effects.pauseAll = true;
+        }
+
+        if (ui.effects.pauseAll) {
+            ui.addClass(ui.effects.target, ui.effects.nameNoEffects);
+
+        } else {
+
+            // wait page preload to start transitions
+            if (ui.effects.preload) {
+
+                ui.addClass(ui.effects.target, ui.effects.namePause);
+
+                setTimeout(function () {
+                    ui.removeClass(ui.effects.target, ui.effects.namePause);
+                }, ui.globals.ease * 2);
+
+            }
+
+        }
 
     });
 

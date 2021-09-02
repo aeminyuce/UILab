@@ -23,9 +23,8 @@
 
     <!-- import JS -->
     <script src="../js/ui.js"></script>
-    <script src="../js/grid.js"></script>
 
-    <script src="../js/effects.js"></script>
+    <script src="../js/grid.js"></script>
 
     <script src="../js/top-button.js"></script>
     <script src="../js/dropdown.js"></script>

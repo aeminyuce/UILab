@@ -562,16 +562,9 @@
                                     </span>
                                     UI
                                 </label>
-                                <label class="custom">
-                                    <span class="switch-custom round border-dual ease-form">
-                                        <input type="checkbox" name="grid js" value="../js/grid" checked>
-                                        <i class="state ui-fill-dark-100"></i>
-                                    </span>
-                                    Grid
-                                </label>
                             </div>
 
-                            <h5 class="font-bold">Effects</h5>
+                            <h5 class="font-bold">Grid System</h5>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ease-opacity">
@@ -584,10 +577,10 @@
 
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
-                                        <input type="checkbox" name="effects js" value="../js/effects" checked>
+                                        <input type="checkbox" name="grid js" value="../js/grid" checked>
                                         <i class="state ui-fill-dark-100"></i>
                                     </span>
-                                    Effects
+                                    Grid
                                 </label>
                             </div>
 
