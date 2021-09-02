@@ -132,7 +132,7 @@ ui.mobileMenu = {};
                 ui.addClass(bg, 'open-ease');
 
                 setTimeout(function () {
-                    ui.trigger(document, 'mobilemenu:open ui:domChange'); // set custom event
+                    ui.trigger(document, 'mobilemenu:open ' + ui.globals.eventDomChange); // set custom event
                 }, ui.globals.slow);
 
             }, 10);

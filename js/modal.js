@@ -363,7 +363,7 @@ ui.modal = {
                             ui.removeClass(win, 'active');
 
                             modalResizer();
-                            ui.trigger(document, 'ui:domChange'); // set custom event
+                            ui.trigger(document, ui.globals.eventDomChange); // set custom event
 
                             // callback
                             if (props.callback !== undefined) {

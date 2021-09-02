@@ -773,6 +773,6 @@ ui.carousel = {
     ui.onload(ui.carousel.Start);
 
     ui.on(window, 'resize scroll', carouselResizer);
-    ui.on(document, 'ui:domChange', function () { carouselResizer('resize'); });
+    ui.on(document, ui.globals.eventDomChange, function () { carouselResizer('resize'); });
 
 }());

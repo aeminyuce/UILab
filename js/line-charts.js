@@ -54,7 +54,7 @@ ui.lineCharts = {
             if (method === 'loaded') {
                 charts = ui.find('.line-charts.loaded');
 
-            } else if (method === 'ui:domChange') {
+            } else if (method === ui.globals.eventDomChange) {
 
                 charts = ui.find('.line-charts:not(.loaded):not(.resized)');
                 ui.removeClass('.line-charts', 'resized');
@@ -429,7 +429,7 @@ ui.lineCharts = {
     ui.onload(ui.lineCharts.Start);
 
     ui.on(window, 'resize', function () { loadCharts('loaded', true); }); // resize loaded charts
-    ui.on(document, 'ui:domChange', function () { loadCharts('ui:domChange'); }); // resize loaded charts
+    ui.on(document, ui.globals.eventDomChange, function () { loadCharts(ui.globals.eventDomChange); }); // resize loaded charts
 
     // ajax callback loader
     ui.on(document, ui.globals.eventAjaxCallback, function () {

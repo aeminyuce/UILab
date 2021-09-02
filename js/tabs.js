@@ -108,7 +108,7 @@ ui.tabs = {};
                     setTimeout(function () {
 
                         ui.addClass(currentContent, 'open-ease');
-                        ui.trigger(document, 'ui:domChange'); // set custom event
+                        ui.trigger(document, ui.globals.eventDomChange); // set custom event
 
                     }, ui.globals.fast / 2);
 

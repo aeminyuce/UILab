@@ -3,7 +3,17 @@
  Requires UI JS
 */
 
-ui.grid = {};
+ui.grid = {
+
+    targetCols: 'col-',
+    targetOrders: 'order-',
+
+    suffixFirst: '-first',
+    suffixLast: '-last',
+
+    dataOrdered: 'data-ui-ordered'
+
+};
 
 (function () {
 
@@ -14,29 +24,29 @@ ui.grid = {};
 
         var fnc, o, p, siblings, i;
 
-        if (ui.find('[class*="col-"][class*="order-"]').length > 0) {
+        if (ui.find('[class*="' + ui.grid.targetCols + '"][class*="' + ui.grid.targetOrders + '"]').length > 0) {
 
             fnc = function (classType, size) {
 
                 if (size) {
 
-                    ui.each('[class*="order-' + classType + '-"]', function () {
+                    ui.each('[class*="' + ui.grid.targetOrders + classType + '-"]', function () {
 
                         p = this.parentElement;
                         siblings = p.children;
 
                         i = Array.prototype.slice.call(this.parentElement.children).indexOf(this);
 
-                        if (ui.hasClass(this, 'order-' + classType + '-first') && i !== 0) {
+                        if (ui.hasClass(this, ui.grid.targetOrders + classType + ui.grid.suffixFirst) && i !== 0) {
 
-                            this.setAttribute('data-ui-ordered-from', i);
+                            this.setAttribute(ui.grid.dataOrdered, i);
                             p.insertBefore(this, p.firstChild);
 
                         }
 
-                        if (ui.hasClass(this, 'order-' + classType + '-last') && i !== (siblings.length - 1)) {
+                        if (ui.hasClass(this, ui.grid.targetOrders + classType + ui.grid.suffixLast) && i !== (siblings.length - 1)) {
 
-                            this.setAttribute('data-ui-ordered-from', i);
+                            this.setAttribute(ui.grid.dataOrdered, i);
                             p.appendChild(this);
 
                         }
@@ -45,21 +55,21 @@ ui.grid = {};
 
                 } else {
 
-                    ui.each('[class*="order-' + classType + '-"][data-ui-ordered-from]', function () {
+                    ui.each('[class*="' + ui.grid.targetOrders + classType + '-"][' + ui.grid.dataOrdered + ']', function () {
 
-                        o = parseInt(this.getAttribute('data-ui-ordered-from'), 10);
+                        o = parseInt(this.getAttribute(ui.grid.dataOrdered), 10);
 
                         p = this.parentElement;
                         siblings = p.children;
 
-                        if (ui.hasClass(this, 'order-' + classType + '-first')) {
+                        if (ui.hasClass(this, ui.grid.targetOrders + classType + ui.grid.suffixFirst)) {
 
-                            this.removeAttribute('data-ui-ordered-from');
+                            this.removeAttribute(ui.grid.dataOrdered);
                             p.insertBefore(this, siblings[o + 1]);
 
                         } else {
 
-                            this.removeAttribute('data-ui-ordered-from');
+                            this.removeAttribute(ui.grid.dataOrdered);
                             p.insertBefore(this, siblings[o]);
 
                         }
@@ -87,11 +97,11 @@ ui.grid = {};
     ui.onload(ui.grid.Start);
 
     ui.on(window, 'resize', ui.grid.Start);
-    ui.on(document, 'ui:domChange', ui.grid.Start);
+    ui.on(document, ui.globals.eventDomChange, ui.grid.Start);
 
     // ajax callback loader
     ui.on(document, ui.globals.eventAjaxCallback, function () {
-        if (ui.ajax.classNames.indexOf('order-') > -1) { ui.grid.Start(); }
+        if (ui.ajax.classNames.indexOf(ui.grid.targetOrders) > -1) { ui.grid.Start(); }
     });
 
 }());

@@ -108,6 +108,6 @@ ui.stickyHeader = {};
     ui.on(window, 'scroll', stickyLoader);
 
     ui.on(window, 'resize', stickyLoader); // for custom header animations
-    ui.on(document, 'ui:domChange', stickyLoader);
+    ui.on(document, ui.globals.eventDomChange, stickyLoader);
 
 }());

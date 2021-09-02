@@ -113,6 +113,6 @@ ui.topButton = {
 
     ui.on(window, 'resize', togglerFnc);
     ui.on(window, 'scroll', togglerFnc);
-    ui.on(document, 'ui:domChange', togglerFnc);
+    ui.on(document, ui.globals.eventDomChange, togglerFnc);
 
 }());

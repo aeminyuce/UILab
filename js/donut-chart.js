@@ -123,7 +123,7 @@ ui.donutChart = {};
 
     // Loaders
     ui.onload(ui.donutChart.Start);
-    ui.on(document, 'ui:domChange', ui.donutChart.Start);
+    ui.on(document, ui.globals.eventDomChange, ui.donutChart.Start);
 
     // ajax callback loader
     ui.on(document, ui.globals.eventAjaxCallback, function () {

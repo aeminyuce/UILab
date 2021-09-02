@@ -180,7 +180,7 @@ ui.pieChart = {};
     ui.onload(ui.pieChart.Start);
 
     ui.on(window, 'resize', chartsResizer);
-    ui.on(document, 'ui:domChange', chartsResizer);
+    ui.on(document, ui.globals.eventDomChange, chartsResizer);
 
     // ajax callback loader
     ui.on(document, ui.globals.eventAjaxCallback, function () {

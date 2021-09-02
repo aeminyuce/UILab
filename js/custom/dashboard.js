@@ -55,7 +55,7 @@ function toggler(onload) {
     }
 
     setTimeout(function () {
-        ui.trigger(document, 'ui:domChange'); // set custom event
+        ui.trigger(document, ui.globals.eventDomChange); // set custom event
     }, ui.globals.slow);
 
     // set sidebar state

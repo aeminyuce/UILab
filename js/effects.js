@@ -5,8 +5,10 @@
 
 ui.effects = {
 
+    target: document,
+
     // pause effects
-    pauseAll: false,
+    pauseAll: true,
     pauseScroll: false, // pause effects when scrolling
     pauseResize: true, // pause effects when resizing
     preload: true, // wait page preload to start effects
@@ -14,7 +16,11 @@ ui.effects = {
     // show effects
     ie: true,
     android: true,
-    androidOld: false
+    androidOld: false,
+
+    // classes
+    namePause: 'pause-effects',
+    nameNoEffects: 'no-effects'
 
 };
 
@@ -32,10 +38,10 @@ ui.effects = {
             if ((eName === 'scroll' && ui.effects.pauseScroll) || (eName === 'resize' && ui.effects.pauseResize)) {
 
                 clearTimeout(pauseTransitions);
-                ui.addClass(document, 'pause-effects');
+                ui.addClass(ui.effects.target, ui.effects.namePause);
 
                 pauseTransitions = setTimeout(function () {
-                    ui.removeClass(document, 'pause-effects');
+                    ui.removeClass(ui.effects.target, ui.effects.namePause);
                 }, ui.globals.ease * 2);
 
             }
@@ -57,16 +63,17 @@ ui.effects = {
         }
 
         if (ui.effects.pauseAll) {
-            ui.addClass(document, 'no-effects');
+            ui.addClass(ui.effects.target, ui.effects.nameNoEffects);
 
         } else {
 
             // wait page preload to start transitions
             if (ui.effects.preload) {
 
-                ui.addClass(document, 'pause-effects');
+                ui.addClass(ui.effects.target, ui.effects.namePause);
+
                 setTimeout(function () {
-                    ui.removeClass(document, 'pause-effects');
+                    ui.removeClass(ui.effects.target, ui.effects.namePause);
                 }, ui.globals.ease * 2);
 
             }

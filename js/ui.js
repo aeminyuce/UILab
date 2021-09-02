@@ -31,6 +31,7 @@ var ui = {
 
         // custom events
         eventAjaxCallback: 'ui:ajaxCallbacks',
+        eventDomChange: 'ui:domChange'
 
     },
     onload: function (callback) {
@@ -626,6 +627,7 @@ ui.userAgents = {
 
     target: document,
 
+    // classes
     nameDesktop: 'desktop',
 
     nameWindows: 'windows',
@@ -644,6 +646,7 @@ ui.userAgents = {
     nameAndroid: 'android',
     nameAndroidBrowser: 'android-browser',
 
+    // variables
     userLang: '',
 
     desktop: false,
@@ -778,13 +781,18 @@ ui.userAgents = {
 
 // Dark Mode
 ui.darkMode = {
+
     target: document,
 
     storageTest: 'ui-darkMode-test',
     storage: 'ui-darkMode',
 
     toggleBtn: '.ui-darkmode-toggle',
-    dataTheme: 'data-ui-theme'
+    dataTheme: 'data-ui-theme',
+
+    nameDark: 'dark',
+    nameLight: 'light'
+
 };
 
 (function () {
@@ -807,7 +815,7 @@ ui.darkMode = {
 
         var mode, doc, darkColorScheme, state;
 
-        mode = 'light';
+        mode = ui.darkMode.nameLight;
         doc = ui.find(ui.darkMode.target)[0];
 
         darkColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
@@ -816,7 +824,7 @@ ui.darkMode = {
         if (window.matchMedia) {
 
             if(darkColorScheme.matches) {
-                mode = 'dark';
+                mode = ui.darkMode.nameDark;
             }
 
         }
@@ -843,7 +851,7 @@ ui.darkMode = {
 
         ui.on(darkColorScheme, 'change', function () {
 
-            if(darkColorScheme.matches) { mode = 'dark'; } else { mode= 'light'; }
+            if(darkColorScheme.matches) { mode = ui.darkMode.nameDark; } else { mode= ui.darkMode.nameLight; }
             doc.setAttribute(ui.darkMode.dataTheme, mode);
 
             setState(mode);
@@ -858,7 +866,7 @@ ui.darkMode = {
             var current = doc.getAttribute(ui.darkMode.dataTheme);
 
             if (current !== null && current !== '') {
-                if (current === 'dark') { mode = 'light'; } else { mode = 'dark'; }
+                if (current === ui.darkMode.nameDark) { mode = ui.darkMode.nameLight; } else { mode = ui.darkMode.nameDark; }
             }
 
             doc.setAttribute(ui.darkMode.dataTheme, mode);
