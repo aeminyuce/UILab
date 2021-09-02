@@ -137,9 +137,9 @@ ui.dropdown = {};
 
                 };
 
-                if (offset.top + parseInt(that.offsetHeight + list.offsetHeight, 10) >= window.innerHeight) { // menu vertical positioning
+                if (offset.top + parseInt(that.offsetHeight + list.offsetHeight) >= window.innerHeight) { // menu vertical positioning
 
-                    if (offset.top - parseInt(that.offsetHeight + list.offsetHeight, 10) + that.offsetHeight > 0) {
+                    if (offset.top - parseInt(that.offsetHeight + list.offsetHeight) + that.offsetHeight > 0) {
 
                         if (!ui.hasClass(parent, 'nav-full-h')) { // diable all menu-t on full horizontal navigations
 

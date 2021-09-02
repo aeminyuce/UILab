@@ -691,9 +691,9 @@ ui.calendar = {
 
                 }
 
-                if (offset.top + parseInt(formHeight + pickerHeight, 10) >= window.innerHeight) {
+                if (offset.top + parseInt(formHeight + pickerHeight) >= window.innerHeight) {
 
-                    if (offset.top - parseInt(formHeight + pickerHeight, 10) + formHeight > 0) {
+                    if (offset.top - parseInt(formHeight + pickerHeight) + formHeight > 0) {
                         ui.addClass(form, 'picker-t');
                     }
 

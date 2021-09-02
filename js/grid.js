@@ -57,7 +57,7 @@ ui.grid = {
 
                     ui.each('[class*="' + ui.grid.targetOrders + classType + '-"][' + ui.grid.dataOrdered + ']', function () {
 
-                        o = parseInt(this.getAttribute(ui.grid.dataOrdered), 10);
+                        o = parseInt(this.getAttribute(ui.grid.dataOrdered));
 
                         p = this.parentElement;
                         siblings = p.children;

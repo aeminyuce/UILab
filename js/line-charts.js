@@ -94,7 +94,7 @@ ui.lineCharts = {
                     size = size.split(',');
                     if (!isNaN(size[0]) && !isNaN(size[1])) {
 
-                        rows = parseInt(size[0], 10);
+                        rows = parseInt(size[0]);
                         rowsHeight = size[1];
 
                     }
@@ -155,8 +155,8 @@ ui.lineCharts = {
                     return b - a;
                 });
 
-                yMin = parseInt(yMax[yMax.length - 1], 10);
-                yMax = Math.ceil((parseInt(yMax[0], 10) - yMin) / rows) * rows + yMin; // convert yMax to divide with rows
+                yMin = parseInt(yMax[yMax.length - 1]);
+                yMax = Math.ceil((parseInt(yMax[0]) - yMin) / rows) * rows + yMin; // convert yMax to divide with rows
 
                 // start html
                 data.svgHeight = data.height;
@@ -228,10 +228,10 @@ ui.lineCharts = {
 
                 for (i = 0; i <= rows; i++) {
 
-                    posY = parseInt((i * (data.height - (ui.lineCharts.top + ui.lineCharts.bottom)) / rows) + ui.lineCharts.top, 10);
+                    posY = parseInt((i * (data.height - (ui.lineCharts.top + ui.lineCharts.bottom)) / rows) + ui.lineCharts.top);
 
                     if (ui.lineCharts.showGridText) {
-                        html += '<text x="' + (ui.lineCharts.left - 10) + '" y="' + (posY + 4) + '">' + (parseInt((yMax - yMin) / rows, 10) * (rows - i) + yMin) + '</text>';
+                        html += '<text x="' + (ui.lineCharts.left - 10) + '" y="' + (posY + 4) + '">' + (parseInt((yMax - yMin) / rows) * (rows - i) + yMin) + '</text>';
                     }
 
                     if (i === rows || ui.lineCharts.showBgGrid) {
@@ -389,7 +389,7 @@ ui.lineCharts = {
                         total = 0;
 
                         for (j = 0; j < data[i].y.length; j++) {
-                            total += parseInt(data[i].y[j], 10);
+                            total += parseInt(data[i].y[j]);
                         }
 
                         html += '<li><span style="background: ' + data.color[i] + '"></span>';

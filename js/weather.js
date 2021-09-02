@@ -189,7 +189,7 @@ ui.weather = {
 
                         // sun positioning
                         if (sun !== undefined) {
-                            sun.style.left = parseInt((hour - sunrise[0]) * 100 / (sunset[0] - sunrise[0]), 10) + '%';
+                            sun.style.left = parseInt(hour - sunrise[0]) * 100 / (sunset[0] - sunrise[0]) + '%';
                         }
 
                     }

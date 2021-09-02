@@ -140,13 +140,13 @@ ui.autocomplete = {
                                     tHeight = p.offsetHeight;
                                     dHeight = list[0].offsetHeight;
 
-                                    if (offset.top + parseInt(tHeight + dHeight, 10) >= window.innerHeight) {
+                                    if (offset.top + parseInt(tHeight + dHeight) >= window.innerHeight) {
 
-                                        if (offset.top - parseInt(tHeight + dHeight, 10) + tHeight > 0) {
+                                        if (offset.top - parseInt(tHeight + dHeight) + tHeight > 0) {
                                             ui.addClass(p, 'menu-t');
 
                                         } else {
-                                            list[0].style.height = (dHeight - (offset.top + parseInt(tHeight + dHeight, 10) - window.innerHeight) - 15) + 'px';
+                                            list[0].style.height = (dHeight - (offset.top + parseInt(tHeight + dHeight) - window.innerHeight) - 15) + 'px';
                                         }
 
                                     }

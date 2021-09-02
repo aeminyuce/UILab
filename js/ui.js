@@ -757,7 +757,7 @@ ui.userAgents = {
                 ui.addClass(ui.userAgents.target, ui.userAgents.nameAndroid);
                 ui.removeClass(ui.userAgents.target, ui.userAgents.nameIos);
 
-                if (ui.userAgents.nativeBrowser || parseFloat(ua.match(/android\s([0-9\.]*)/)[1], 10) < parseFloat('4.4')) { // Jelly Bean and before with stock browser is androidOld
+                if (ui.userAgents.nativeBrowser || parseFloat(ua.match(/android\s([0-9\.]*)/)[1]) < parseFloat('4.4')) { // Jelly Bean and before with stock browser is androidOld
                     ui.userAgents.androidOld = true;
                 }
 
