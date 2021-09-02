@@ -832,7 +832,8 @@ ui.calendar = {
     ui.onload(ui.calendar.Start);
 
     // ajax callback loader
-    ui.on(document, 'ui:ajaxCallbacks', function () {
+    ui.on(document, ui.globals.eventAjaxCallback, function () {
+        console.log(111);
         if (ui.ajax.classNames.indexOf('calendar') > -1) { checkCalendars(); }
     });
 

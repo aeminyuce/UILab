@@ -23,6 +23,15 @@ var ui = {
         slow4x: 1600,
         slow5x: 2000,
 
+        // non-closest event listeners
+        nonClosestElems: ['mouseenter', 'mouseleave', 'mouseout', 'mouseover'],
+
+        // svg elements
+        svgElems: ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'],
+
+        // custom events
+        eventAjaxCallback: 'ui:ajaxCallbacks',
+
     },
     onload: function (callback) {
 
@@ -79,7 +88,8 @@ var ui = {
     on: function (t, e, that, callback) {
 
         'use strict';
-        var arr, f, fnc, handlerFnc, targetEl, objName, isWindowEvent, l, customEvent, isMSIE, eName, nonClosest, delegate, i, j, k, m;
+
+        var arr, f, fnc, handlerFnc, targetEl, objName, isWindowEvent, l, customEvent, isMSIE, eName, delegate, i, j, k, m;
 
         fnc = function (e) {
 
@@ -95,11 +105,9 @@ var ui = {
                     eName = e.split('.')[0]; // split for event naming
                     targetEl = ui.find(that); // catches future updated DOM!
 
-                    nonClosest = ['mouseenter', 'mouseleave', 'mouseout', 'mouseover']; // non-closest event listeners
-
                     for (j = 0; j < targetEl.length; j++) {
 
-                        if (nonClosest.indexOf(eName) > -1) { // control non-closest event listeners
+                        if (ui.globals.nonClosestElems.indexOf(eName) > -1) { // control non-closest event listeners
 
                             if (event.target === targetEl[j]) {
                                 callback.call(targetEl[j], event, event.toElement);
@@ -213,6 +221,7 @@ var ui = {
     off: function (t, e) {
 
         'use strict';
+
         var arr, fnc, handlerFnc, l, i, j, k;
 
         fnc = function (e) {
@@ -260,6 +269,7 @@ var ui = {
     trigger: function (t, e) {
 
         'use strict';
+
         var arr, fnc, event, l, i, j;
 
         fnc = function (e) {
@@ -291,12 +301,11 @@ var ui = {
 
         'use strict';
 
-        var svg, re, l = ui.find(t), i;
-        svg = ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'];
+        var re, l = ui.find(t), i;
 
         for (i = 0; i < l.length; i++) {
 
-            if (svg.indexOf(l[i].tagName.toLowerCase()) !== -1) { // check SVG and own elements
+            if (ui.globals.svgElems.indexOf(l[i].tagName.toLowerCase()) !== -1) { // check SVG and own elements
                 re =  new RegExp('(^| )' + name + '( |$)', 'gi').test(l[i].className.baseVal);
 
             } else {
@@ -311,15 +320,14 @@ var ui = {
 
         'use strict';
 
-        var svg, arr, l = ui.find(t), i, j, re = new RegExp('^\\s+|\\s+$');
+        var arr, l = ui.find(t), i, j, re = new RegExp('^\\s+|\\s+$');
 
         name = name.split(' ');
-        svg = ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'];
 
         for (i = 0; i < l.length; i++) {
             for (j = 0; j < name.length; j++) {
 
-                if (svg.indexOf(l[i].tagName.toLowerCase()) !== -1) { // check SVG and own elements
+                if (ui.globals.svgElems.indexOf(l[i].tagName.toLowerCase()) !== -1) { // check SVG and own elements
 
                     arr = l[i].className.baseVal.split(' ');
                     if (arr.indexOf(name[j]) === -1) {
@@ -349,17 +357,16 @@ var ui = {
 
         'use strict';
 
-        var svg, l = ui.find(t), i, j, rex = new RegExp('^\\s+|\\s+$'), re;
+        var l = ui.find(t), i, j, rex = new RegExp('^\\s+|\\s+$'), re;
 
         name = name.split(' ');
-        svg = ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'];
 
         for (i = 0; i < l.length; i++) {
             for (j = 0; j < name.length; j++) {
 
                 re = new RegExp('(\\s|^)' + name[j] + '(\\s|$)');
 
-                if (svg.indexOf(l[i].tagName.toLowerCase()) !== -1) { // check SVG and own elements
+                if (ui.globals.svgElems.indexOf(l[i].tagName.toLowerCase()) !== -1) { // check SVG and own elements
                     l[i].className.baseVal = l[i].className.baseVal.replace(re, ' ').replace(rex, '');
 
                 } else {
@@ -379,14 +386,14 @@ var ui = {
     toggleClass: function (t, name) {
 
         'use strict';
-        var svg, isSvgElements, arr, newArr, index, l = ui.find(t), i, j, re = new RegExp('^\\s+|\\s+$');
+
+        var isSvgElements, arr, newArr, index, l = ui.find(t), i, j, re = new RegExp('^\\s+|\\s+$');
 
         name = name.split(' ');
-        svg = ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'];
 
         for (i = 0; i < l.length; i++) {
 
-            isSvgElements = svg.indexOf(l[i].tagName.toLowerCase()) !== -1; // check SVG and own elements
+            isSvgElements = ui.globals.svgElems.indexOf(l[i].tagName.toLowerCase()) !== -1; // check SVG and own elements
 
             if (isSvgElements) {
                 arr = l[i].className.baseVal.split(' ');
@@ -423,6 +430,7 @@ var ui = {
     show: function (t) {
 
         'use strict';
+
         var l = ui.find(t), i;
         for (i = 0; i < l.length; i++) { l[i].style.display = 'block'; }
 
@@ -430,6 +438,7 @@ var ui = {
     hide: function (t) {
 
         'use strict';
+
         var l = ui.find(t), i;
         for (i = 0; i < l.length; i++) { l[i].style.display = 'none'; }
 
@@ -437,6 +446,7 @@ var ui = {
     each: function (t, callback) {
 
         'use strict';
+
         var l = ui.find(t), i;
         for (i = 0; i < l.length; i++) { callback.call(l[i], i); }
 
@@ -444,6 +454,7 @@ var ui = {
     closest: function (t, outer) {
 
         'use strict';
+
         var l, o, i, j, p;
 
         if (typeof outer !== 'object') { o = ui.find(outer); } else { o = [outer]; }
@@ -465,6 +476,7 @@ var ui = {
     find: function (item, outer) {
 
         'use strict';
+
         var i, objName, call, outerEl, outerElIndex, foundEl = [];
 
         if (typeof item === 'object') {
@@ -590,7 +602,7 @@ var ui = {
 
                     // ajax callbacks
                     ui.ajax.text = ui.ajax.requests[i].responseText;
-                    ui.trigger(document, 'ui:ajaxCallbacks'); // set custom event
+                    ui.trigger(document, ui.globals.eventAjaxCallback); // set custom event
 
                 }
 
@@ -771,7 +783,7 @@ ui.darkMode = {
     storageTest: 'ui-darkMode-test',
     storage: 'ui-darkMode',
 
-    toggleBtn: '.btn-toggle-darkmode',
+    toggleBtn: '.ui-darkmode-toggle',
     dataTheme: 'data-ui-theme'
 };
 

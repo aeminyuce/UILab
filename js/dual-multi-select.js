@@ -308,7 +308,7 @@ ui.dualMultiSelect = {};
     ui.onload(ui.dualMultiSelect.Start);
 
     // ajax callback loader
-    ui.on(document, 'ui:ajaxCallbacks', function () {
+    ui.on(document, ui.globals.eventAjaxCallback, function () {
         if (ui.ajax.classNames.indexOf('dual-multi-select') > 0) { loadSelects(); }
     });
 

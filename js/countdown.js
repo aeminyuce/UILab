@@ -119,7 +119,7 @@ ui.countdown = {};
     ui.onload(ui.countdown.Start);
 
     // ajax callback loader
-    ui.on(document, 'ui:ajaxCallbacks', function () {
+    ui.on(document, ui.globals.eventAjaxCallback, function () {
         if (ui.ajax.classNames.indexOf('countdown') > -1) { ui.countdown.Start(); }
     });
 

@@ -432,7 +432,7 @@ ui.lineCharts = {
     ui.on(document, 'ui:domChange', function () { loadCharts('ui:domChange'); }); // resize loaded charts
 
     // ajax callback loader
-    ui.on(document, 'ui:ajaxCallbacks', function () {
+    ui.on(document, ui.globals.eventAjaxCallback, function () {
         if (ui.ajax.classNames.indexOf('line-charts') > -1) { loadCharts('not-loaded'); } // show not loaded charts
     });
 

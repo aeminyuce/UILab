@@ -211,7 +211,7 @@ ui.weather = {
     ui.onload(ui.weather.Start);
 
     // ajax callback loader
-    ui.on(document, 'ui:ajaxCallbacks', function () {
+    ui.on(document, ui.globals.eventAjaxCallback, function () {
         if (ui.ajax.classNames.indexOf('weather') > -1) { loadGraphs(); }
     });
 

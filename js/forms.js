@@ -292,7 +292,7 @@ ui.forms = {};
     ui.onload(ui.forms.Start);
 
     // ajax callback loader
-    ui.on(document, 'ui:ajaxCallbacks', function () {
+    ui.on(document, ui.globals.eventAjaxCallback, function () {
         if (ui.ajax.classNames.indexOf('clear-form') > 0) { loadClearForms(); }
     });
 

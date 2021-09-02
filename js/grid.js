@@ -90,7 +90,7 @@ ui.grid = {};
     ui.on(document, 'ui:domChange', ui.grid.Start);
 
     // ajax callback loader
-    ui.on(document, 'ui:ajaxCallbacks', function () {
+    ui.on(document, ui.globals.eventAjaxCallback, function () {
         if (ui.ajax.classNames.indexOf('order-') > -1) { ui.grid.Start(); }
     });
 
