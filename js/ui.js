@@ -787,7 +787,7 @@ ui.darkMode = {
     storageTest: 'ui-darkMode-test',
     storage: 'ui-darkMode',
 
-    toggleBtn: '.ui-darkmode-toggle',
+    toggleBtn: 'ui-darkmode-toggle',
     dataTheme: 'data-ui-theme',
 
     nameDark: 'dark',
@@ -858,7 +858,7 @@ ui.darkMode = {
 
         });
 
-        ui.on(document, 'click', ui.darkMode.toggleBtn, function (e) {
+        ui.on(document, 'click', '.' + ui.darkMode.toggleBtn, function (e) {
 
             e.preventDefault();
 
