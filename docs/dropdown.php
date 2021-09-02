@@ -188,7 +188,7 @@
 
                                 <button class="btn btn-ghost ease-btn">Waiting</button>
 
-                                <button class="tab btn-toggle btn btn-ghost ease-btn">
+                                <button class="tab tab-toggle btn btn-ghost ease-btn">
                                     <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                                     On Audit
                                 </button>
@@ -198,7 +198,7 @@
                                     <button class="btn btn-ghost padding-20-l">Inner Link</button>
                                 </div>
 
-                                <button class="tab btn-toggle btn btn-ghost ease-btn">
+                                <button class="tab tab-toggle btn btn-ghost ease-btn">
                                     <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                                     Expert
                                 </button>
@@ -226,7 +226,7 @@
 
                                 <button class="btn btn-ghost ease-btn">Waiting</button>
 
-                                <button class="tab btn-toggle btn btn-ghost ease-btn">
+                                <button class="tab tab-toggle btn btn-ghost ease-btn">
                                     <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                                     On Audit
                                 </button>
@@ -236,7 +236,7 @@
                                     <button class="btn btn-ghost padding-20-l">Inner Link</button>
                                 </div>
 
-                                <button class="tab btn-toggle btn btn-ghost ease-btn">
+                                <button class="tab tab-toggle btn btn-ghost ease-btn">
                                     <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                                     Expert
                                 </button>

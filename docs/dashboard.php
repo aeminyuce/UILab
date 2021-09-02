@@ -60,7 +60,7 @@
                         Dashboard
                     </a>
 
-                    <button class="tab btn-toggle btn btn-lg btn-ghost padding-10-r block ui-color active">
+                    <button class="tab tab-toggle btn btn-lg btn-ghost padding-10-r block ui-color active">
                         <svg class="icon margin-15-r"><use href="#users"/></svg>
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Employees
@@ -69,7 +69,7 @@
                     <div class="tab-content padding-15-v padding-3-l open open-ease">
                         <ul class="tabs list-spacer-15 padding-20-l ease-2nd-btn" data-ui-classes="ui-color">
                             <li>
-                                <a class="tab btn-toggle opacity" href="#">
+                                <a class="tab tab-toggle opacity" href="#">
                                     <svg class="toggle-icon icon margin-10-r right"><use href="#arrow-down"/></svg>
                                     Managers
                                 </a>
@@ -80,7 +80,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a class="tab btn-toggle opacity" href="#">
+                                <a class="tab tab-toggle opacity" href="#">
                                     <svg class="toggle-icon icon margin-10-r right"><use href="#arrow-down"/></svg>
                                     Team Leaders
                                 </a>
@@ -96,7 +96,7 @@
                         </ul>
                     </div>
 
-                    <button class="tab btn-toggle btn btn-lg btn-ghost padding-10-r block">
+                    <button class="tab tab-toggle btn btn-lg btn-ghost padding-10-r block">
                         <svg class="icon margin-15-r"><use href="#moneys"/></svg>
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Payments
@@ -111,7 +111,7 @@
                         </ul>
                     </div>
 
-                    <button class="tab btn-toggle btn btn-lg btn-ghost padding-10-r block">
+                    <button class="tab tab-toggle btn btn-lg btn-ghost padding-10-r block">
                         <svg class="icon margin-15-r"><use href="#calendar-check"/></svg>
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Events
@@ -125,7 +125,7 @@
                         </ul>
                     </div>
 
-                    <button class="tab btn-toggle btn btn-lg btn-ghost padding-10-r block">
+                    <button class="tab tab-toggle btn btn-lg btn-ghost padding-10-r block">
                         <svg class="icon margin-15-r"><use href="#files"/></svg>
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Documents
@@ -141,7 +141,7 @@
                         </ul>
                     </div>
 
-                    <button class="tab btn-toggle btn btn-lg btn-ghost padding-10-r block">
+                    <button class="tab tab-toggle btn btn-lg btn-ghost padding-10-r block">
                         <svg class="icon margin-15-r"><use href="#chart-line"/></svg>
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Statistics
@@ -155,7 +155,7 @@
                         </ul>
                     </div>
 
-                    <button class="tab btn-toggle btn btn-lg btn-ghost padding-10-r block">
+                    <button class="tab tab-toggle btn btn-lg btn-ghost padding-10-r block">
                         <svg class="icon margin-15-r"><use href="#doc"/></svg>
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Reports
@@ -171,7 +171,7 @@
                         </ul>
                     </div>
 
-                    <button class="tab btn-toggle btn btn-lg btn-ghost padding-10-r block">
+                    <button class="tab tab-toggle btn btn-lg btn-ghost padding-10-r block">
                         <svg class="icon margin-15-r"><use href="#truck"/></svg>
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Orders

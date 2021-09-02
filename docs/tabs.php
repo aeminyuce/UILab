@@ -93,11 +93,11 @@
                 <div class="tabs padding-30-b ease-tabs" data-ui-classes="ui-stroke ui-color">
 
                     <div class="margin-10-b md-align-c border-b theme-default2 form-lg ease-1st-btn">
-                        <button class="tab btn-toggle btn btn-ghost border-b border-dual">
+                        <button class="tab tab-toggle btn btn-ghost border-b border-dual">
                             Tab Button
                             <svg class="icon toggle-icon margin-3-l"><use href="#angle-down"></use></svg>
                         </button>
-                        <button class="tab btn-toggle btn btn-ghost border-b border-dual">
+                        <button class="tab tab-toggle btn btn-ghost border-b border-dual">
                             Tab Button
                             <svg class="icon toggle-icon margin-3-l"><use href="#angle-down"></use></svg>
                         </button>
@@ -317,7 +317,7 @@
                 <h4>Accordion Tabs</h4>
                 <div class="tabs padding-30-b form-lg theme-default2 ease-tabs" data-ui-classes="ui-fill-dark-100">
 
-                    <button class="tab btn-toggle btn block align-l margin-1-b round ease-btn">
+                    <button class="tab tab-toggle btn block align-l margin-1-b round ease-btn">
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Tab Button
                     </button>
@@ -325,7 +325,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
                     </div>
 
-                    <button class="tab btn-toggle btn block align-l margin-1-b round ease-btn">
+                    <button class="tab tab-toggle btn block align-l margin-1-b round ease-btn">
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Tab Button
                     </button>
@@ -335,7 +335,7 @@
                         Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
                     </div>
 
-                    <button class="tab btn-toggle btn block align-l margin-1-b round ease-btn">
+                    <button class="tab tab-toggle btn block align-l margin-1-b round ease-btn">
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Tab Button
                     </button>
@@ -350,14 +350,14 @@
                 <h4>Inner Accordion Tabs</h4>
                 <div class="tabs padding-30-b form-lg theme-default2 ease-tabs" data-ui-classes="ui-fill-dark-100">
 
-                    <button class="tab btn-toggle btn block align-l margin-1-b ease-btn">
+                    <button class="tab tab-toggle btn block align-l margin-1-b ease-btn">
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Tab Button
                     </button>
                     <div class="tab-content padding-10">
 
                         <div class="tabs icons-xs" data-ui-classes="ui-color">
-                            <button class="tab btn-toggle btn-ghost btn align-l block ease-btn">
+                            <button class="tab tab-toggle btn-ghost btn align-l block ease-btn">
                                 <svg class="toggle-icon icon right"><use href="#arrow-down"/></svg>
                                 Inner Tab Button
                             </button>
@@ -365,7 +365,7 @@
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
                             </div>
 
-                            <button class="tab btn-toggle btn-ghost btn align-l block ease-btn">
+                            <button class="tab tab-toggle btn-ghost btn align-l block ease-btn">
                                 <svg class="toggle-icon icon right"><use href="#arrow-down"/></svg>
                                 Inner Tab Button
                             </button>
@@ -376,14 +376,14 @@
 
                     </div>
 
-                    <button class="tab btn-toggle btn block align-l margin-1-b ease-btn">
+                    <button class="tab tab-toggle btn block align-l margin-1-b ease-btn">
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Tab Button
                     </button>
                     <div class="tab-content padding-10">
 
                         <div class="tabs icons-xs" data-ui-classes="ui-color">
-                            <button class="tab btn-toggle btn-ghost btn align-l block round ease-btn">
+                            <button class="tab tab-toggle btn-ghost btn align-l block round ease-btn">
                                 <svg class="toggle-icon icon right"><use href="#arrow-down"/></svg>
                                 Inner Tab Button
                             </button>
@@ -391,7 +391,7 @@
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
                             </div>
 
-                            <button class="tab btn-toggle btn-ghost btn align-l block ease-btn">
+                            <button class="tab tab-toggle btn-ghost btn align-l block ease-btn">
                                 <svg class="toggle-icon icon right"><use href="#arrow-down"/></svg>
                                 Inner Tab Button
                             </button>
@@ -402,14 +402,14 @@
 
                     </div>
 
-                    <button class="tab btn-toggle btn block align-l margin-1-b ease-btn">
+                    <button class="tab tab-toggle btn block align-l margin-1-b ease-btn">
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Tab Button
                     </button>
                     <div class="tab-content padding-10">
 
                         <div class="tabs icons-xs" data-ui-classes="ui-color">
-                            <button class="tab btn-toggle btn-ghost btn align-l block ease-btn">
+                            <button class="tab tab-toggle btn-ghost btn align-l block ease-btn">
                                 <svg class="toggle-icon icon right"><use href="#arrow-down"/></svg>
                                 Inner Tab Button
                             </button>
@@ -417,7 +417,7 @@
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
                             </div>
 
-                            <button class="tab btn-toggle btn-ghost btn align-l block ease-btn">
+                            <button class="tab tab-toggle btn-ghost btn align-l block ease-btn">
                                 <svg class="toggle-icon icon right"><use href="#arrow-down"/></svg>
                                 Inner Tab Button
                             </button>
