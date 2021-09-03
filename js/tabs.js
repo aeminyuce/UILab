@@ -9,12 +9,13 @@ ui.tabs = {
     targetParent: 'tabs',
     targetTab: 'tab',
 
-    // classnames
-    nameOpen: 'open',
-    nameOpenEase: 'open-ease',
-
+    // main classnames
     nameContent: 'tab-content',
     nameToggleTab: 'tab-toggle',
+
+    // helper classnames
+    nameOpen: 'open',
+    nameOpenEase: 'open-ease',
     nameActive: 'active',
 
     // data attributes

@@ -628,7 +628,7 @@ ui.userAgents = {
     // targets
     target: document,
 
-    // classnames
+    // main classnames
     nameDesktop: 'desktop',
 
     nameWindows: 'windows',
@@ -786,15 +786,16 @@ ui.darkMode = {
     // targets
     target: document,
 
+    // main classnames
+    nameToggleBtn: 'ui-darkmode-toggle',
+
+    // helper classnames
+    nameDark: 'dark',
+    nameLight: 'light',
+
     // storages
     storageTest: 'ui-darkMode-test',
     storage: 'ui-darkMode',
-
-    // classnames
-    nameToggleBtn: 'ui-darkmode-toggle',
-
-    nameDark: 'dark',
-    nameLight: 'light',
 
     // data attributes
     dataTheme: 'data-ui-theme'
@@ -901,7 +902,7 @@ ui.effects = {
     android: true,
     androidOld: false,
 
-    // classnames
+    // main classnames
     namePause: 'pause-effects',
     nameNoEffects: 'no-effects'
 

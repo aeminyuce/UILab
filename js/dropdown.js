@@ -8,28 +8,32 @@ ui.dropdown = {
     // targets
     target: 'dropdown',
 
-    // classnames
-    nameOpen: 'open',
-    nameOpenEase: 'open-ease',
-    nameHover: 'open-hover',
+    // main classnames
+    nameMenu: 'dropdown-menu',
 
-    nameNav: 'nav',
-    nameNavFullHor: 'nav-full-h',
-
+    nameHover: 'menu-hover',
     nameMenuTop: 'menu-t',
     nameMenuLeft: 'menu-l',
     nameMenuCenter: 'menu-c',
 
-    nameContent: 'content',
-    nameContentItems: 'li',
+    nameNav: 'nav',
+    nameNavFullHor: 'nav-full-h',
 
-    nameValueToggle: 'value-toggle',
-    nameValueToggleItems: 'label',
-    nameValueToggleSelected: 'selected',
+    // helper classnames
+    nameOpen: 'open',
+    nameOpenEase: 'open-ease',
+    nameValSelected: 'selected',
 
+    // outer classnames
     nameBtn: 'btn',
     nameMobileMenu: 'mobile-menu',
     nameNoScrolling: 'no-scroll',
+
+    // tags
+    nameMenuItems: 'li',
+
+    nameVal: 'span',
+    nameValItems: 'label',
 
     // values
     scrollbarSize: 20,
@@ -71,7 +75,7 @@ ui.dropdown = {
             ui.each(that, function () {
 
                 clearTimeout(dropdownCloseTimer);
-                list = ui.find('.' + ui.dropdown.nameContent, this)[0];
+                list = ui.find('.' + ui.dropdown.nameMenu, this)[0];
 
                 dropdownCloseTimer = setTimeout(function () {
 
@@ -121,7 +125,7 @@ ui.dropdown = {
                 }, dropdownHoverTimer / 6);
 
                 offset = parent.getBoundingClientRect();
-                list = ui.find('.' + ui.dropdown.nameContent, parent)[0];
+                list = ui.find('.' + ui.dropdown.nameMenu, parent)[0];
 
                 if (ui.closest(that, '.' + ui.dropdown.nameMobileMenu)[0] === undefined && !ui.hasClass(parent, ui.dropdown.nameNavFullHor)) { // diable all positionings on mobile menus and full horizontal navigations
 
@@ -199,7 +203,7 @@ ui.dropdown = {
 
                     ui.on(document, 'click.' + ui.dropdown.eventDropdownClose, function (ev) {
 
-                        var content = ui.closest(ev.target, '.' + ui.dropdown.nameContent)[0];
+                        var content = ui.closest(ev.target, '.' + ui.dropdown.nameMenu)[0];
 
                         // prevent for non listing contents
                         if (content !== undefined) {
@@ -210,7 +214,7 @@ ui.dropdown = {
 
                         }
 
-                        if (ui.closest(ev.target, '.' + ui.dropdown.target + '.' + ui.dropdown.nameNavFullHor)[0] !== undefined && ev.target.className.split(' ').indexOf(ui.dropdown.nameContent) === 0) { // check full horizontal navigations
+                        if (ui.closest(ev.target, '.' + ui.dropdown.target + '.' + ui.dropdown.nameNavFullHor)[0] !== undefined && ev.target.className.split(' ').indexOf(ui.dropdown.nameMenu) === 0) { // check full horizontal navigations
                             return;
                         }
 
@@ -262,7 +266,7 @@ ui.dropdown = {
             'mouseenter',
 
             '.' + ui.userAgents.nameDesktop + ' .' + ui.dropdown.target + '.' + ui.dropdown.nameHover + '.' + ui.dropdown.nameOpen + ' > .' + ui.dropdown.nameBtn + ',' +
-            '.' + ui.userAgents.nameDesktop + ' .' + ui.dropdown.target + '.' + ui.dropdown.nameHover + '.' + ui.dropdown.nameOpenEase + ' .' + ui.dropdown.nameContent,
+            '.' + ui.userAgents.nameDesktop + ' .' + ui.dropdown.target + '.' + ui.dropdown.nameHover + '.' + ui.dropdown.nameOpenEase + ' .' + ui.dropdown.nameMenu,
 
             function () {
 
@@ -275,7 +279,7 @@ ui.dropdown = {
         ui.on(document,
             'click',
 
-            '.' + ui.dropdown.target + ' ' + ui.dropdown.nameContentItems + ' > ' + ui.dropdown.nameValueToggleItems,
+            '.' + ui.dropdown.target + ' ' + ui.dropdown.nameMenuItems + ' > ' + ui.dropdown.nameValItems,
 
             function () {
 
@@ -283,7 +287,7 @@ ui.dropdown = {
 
                 p = ui.closest(this, '.' + ui.dropdown.target)[0];
 
-                target = ui.find('.' + ui.dropdown.nameBtn + ' > .' + ui.dropdown.nameValueToggle, p)[0];
+                target = ui.find('.' + ui.dropdown.nameBtn + ' > ' + ui.dropdown.nameVal, p)[0];
                 target.innerHTML = '';
                 target.insertAdjacentHTML('beforeend', this.innerHTML);
 
@@ -292,8 +296,8 @@ ui.dropdown = {
                     input.parentNode.removeChild(input);
                 }
 
-                ui.removeClass(ui.find('.' + ui.dropdown.nameValueToggleSelected, p), ui.dropdown.nameValueToggleSelected);
-                ui.addClass(this.parentNode, ui.dropdown.nameValueToggleSelected);
+                ui.removeClass(ui.find('.' + ui.dropdown.nameValSelected, p), ui.dropdown.nameValSelected);
+                ui.addClass(this.parentNode, ui.dropdown.nameValSelected);
 
             });
 
@@ -316,7 +320,7 @@ ui.dropdown = {
 
         ui.on(document,
             'mouseup',
-            '.' + ui.dropdown.target + ':not(.' + ui.dropdown.nameNav + ') ' + ui.dropdown.nameContentItems,
+            '.' + ui.dropdown.target + ':not(.' + ui.dropdown.nameNav + ') ' + ui.dropdown.nameMenuItems,
 
             function () {
 
@@ -329,7 +333,7 @@ ui.dropdown = {
 
         // select dropdown fix
         selectOpened = false;
-        selectInContent = ui.find('.' + ui.dropdown.target + ' .' + ui.dropdown.nameContent + ' select');
+        selectInContent = ui.find('.' + ui.dropdown.target + ' .' + ui.dropdown.nameMenu + ' select');
 
         ui.on(document,
             'focus',
