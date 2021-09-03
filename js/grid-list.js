@@ -10,21 +10,21 @@ ui.gridList = {
     targetLoaded: 'grid-list-loaded',
 
     // main classnames
-    nameContainer: 'grid-container',
+    nameContainer: 'grid-list-container',
 
-    nameListContent: 'grid-content',
-    nameListStriped: 'grid-striped',
-    nameListShow: 'grid-show',
-    nameListFiltered: 'grid-filtered',
+    nameListContent: 'grid-list-content',
+    nameListStriped: 'grid-list-striped',
+    nameListShowAll: 'grid-list-showed-all',
+    nameListFiltered: 'grid-list-filtered',
 
-    nameTotal: 'grid-total',
-    namePaging: 'grid-paging',
+    nameFilter: 'grid-list-filter',
+    nameListShow: 'grid-list-show',
 
-    nameFilter: 'grid-filter',
-    nameListShowAll: 'grid-show-all',
+    nameCheckAll: 'grid-list-check-all',
+    nameCheck: 'grid-list-check',
 
-    nameCheck: 'grid-check',
-    nameCheckAll: 'grid-check-all',
+    nameTotal: 'grid-list-total',
+    namePaging: 'grid-list-paging',
 
     // helper classnames
     nameActive: 'active',
