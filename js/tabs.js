@@ -57,13 +57,15 @@ ui.tabs = {
                 innerTabs = ui.find('.' + ui.tabs.targetParent + ' .' + ui.tabs.targetParent + ' .' + ui.tabs.targetTab, parent);
                 innerTabs = Array.prototype.slice.call(innerTabs);
 
-                ui.each(tabs, function () {
+                ui.each(tabs,
 
-                    if (innerTabs.indexOf(this) === -1) {
-                        outerTabs.push(this);
-                    }
+                    function () {
 
-                });
+                        if (innerTabs.indexOf(this) === -1) {
+                            outerTabs.push(this);
+                        }
+
+                    });
 
                 if (outerTabs.length !== 0) { tabs = outerTabs; }
                 index = Array.prototype.slice.call(tabs).indexOf(this);
@@ -74,13 +76,15 @@ ui.tabs = {
                 innerContent = ui.find('.' + ui.tabs.targetParent + ' .' + ui.tabs.targetParent + ' .' + ui.tabs.nameContent, parent);
                 innerContent = Array.prototype.slice.call(innerContent);
 
-                ui.each(content, function () {
+                ui.each(content,
 
-                    if (innerContent.indexOf(this) === -1) {
-                        outerContent.push(this);
-                    }
+                    function () {
 
-                });
+                        if (innerContent.indexOf(this) === -1) {
+                            outerContent.push(this);
+                        }
+
+                    });
 
                 if (outerContent.length !== 0) { content = outerContent; }
 

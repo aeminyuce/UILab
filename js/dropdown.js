@@ -72,30 +72,32 @@ ui.dropdown = {
         clearTimeout(dropdownLeaveTimer);
         dropdownLeaveTimer = setTimeout(function () {
 
-            ui.each(that, function () {
+            ui.each(that,
 
-                clearTimeout(dropdownCloseTimer);
-                list = ui.find('.' + ui.dropdown.nameMenu, this)[0];
+                function () {
 
-                dropdownCloseTimer = setTimeout(function () {
+                    clearTimeout(dropdownCloseTimer);
+                    list = ui.find('.' + ui.dropdown.nameMenu, this)[0];
 
-                    if (listStyles === 0) {
-                        list.removeAttribute('style');
+                    dropdownCloseTimer = setTimeout(function () {
 
-                    } else {
+                        if (listStyles === 0) {
+                            list.removeAttribute('style');
 
-                        list.style.removeProperty('max-height');
-                        list.style.removeProperty('right');
-                        list.style.removeProperty('margin-left');
-                        list.style.removeProperty('transform-origin');
+                        } else {
 
-                    }
+                            list.style.removeProperty('max-height');
+                            list.style.removeProperty('right');
+                            list.style.removeProperty('margin-left');
+                            list.style.removeProperty('transform-origin');
 
-                    ui.removeClass(that, ui.dropdown.nameMenuTop + ' ' + ui.dropdown.nameOpen);
+                        }
 
-                }, ui.globals.ease);
+                        ui.removeClass(that, ui.dropdown.nameMenuTop + ' ' + ui.dropdown.nameOpen);
 
-            });
+                    }, ui.globals.ease);
+
+                });
 
         }, 0);
 
