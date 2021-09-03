@@ -37,7 +37,10 @@ ui.forms = {
     nameOpenEase: 'open-ease',
 
     // outer classnames
-    nameIcon: 'icon'
+    nameIcon: 'icon',
+
+    // tags
+    tagFileInfo: 'i'
 
 };
 
@@ -68,6 +71,7 @@ ui.forms = {
             if (holder.length === 1) {
 
                 ui.removeClass('.' + ui.forms.nameHolderFocus, ui.forms.nameHolderFocus);
+
                 if (type === 'add') {
                     ui.addClass(holder, ui.forms.nameHolderFocus);
                 }
@@ -161,7 +165,7 @@ ui.forms = {
 
             function () {
 
-                var info = ui.find('span:not([class])', this.parentElement)[0];
+                var info = ui.find(ui.forms.tagFileInfo, this.parentElement)[0];
 
                 if (info !== undefined) {
                     info.innerHTML = this.value;
@@ -195,6 +199,7 @@ ui.forms = {
             function () {
 
                 var that = this.parentElement;
+
                 that = ui.find('input', that)[0];
 
                 if (that.getAttribute('type') === 'password') {

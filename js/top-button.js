@@ -38,6 +38,8 @@ ui.topButton = {
 
     function togglerFnc() {
 
+        if (scrollEl === undefined) { return; }
+
         var showTopBtn, hideTopBtn;
 
         showTopBtn = function () {
@@ -148,8 +150,7 @@ ui.topButton = {
     // Loaders
     ui.onload(ui.topButton.Start);
 
-    ui.on(window, 'resize', togglerFnc);
-    ui.on(window, 'scroll', togglerFnc);
+    ui.on(window, 'resize scroll', togglerFnc);
     ui.on(document, ui.globals.eventDomChange, togglerFnc);
 
 }());
