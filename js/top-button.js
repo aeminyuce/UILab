@@ -118,25 +118,28 @@ ui.topButton = {
             togglerFnc();
 
             // Event Listeners
-            ui.on('.' + ui.topButton.target, 'click', function () {
+            ui.on('.' + ui.topButton.target,
+                'click',
 
-                clearInterval(btnAnimate);
-                btnAnimate = setInterval(function () {
+                function () {
 
-                    scrollPos -= (scrollPos / 4);
+                    clearInterval(btnAnimate);
+                    btnAnimate = setInterval(function () {
 
-                    if (ui.topButton.targetScrollable === 'body') {
-                        window.scrollTo(0, scrollPos);
+                        scrollPos -= (scrollPos / 4);
 
-                    } else {
-                        scrollEl.scrollTop = scrollPos; // IE, EDGE: scrollTo() not supported for div element
-                    }
+                        if (ui.topButton.targetScrollable === 'body') {
+                            window.scrollTo(0, scrollPos);
 
-                    if (scrollPos <= 0) { clearInterval(btnAnimate); }
+                        } else {
+                            scrollEl.scrollTop = scrollPos; // IE, EDGE: scrollTo() not supported for div element
+                        }
 
-                }, 10);
+                        if (scrollPos <= 0) { clearInterval(btnAnimate); }
 
-            });
+                    }, 10);
+
+                });
 
         }
 

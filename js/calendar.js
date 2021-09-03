@@ -832,8 +832,15 @@ ui.calendar = {
     ui.onload(ui.calendar.Start);
 
     // ajax callback loader
-    ui.on(document, ui.globals.eventAjaxCallback, function () {
-        if (ui.ajax.classNames.indexOf('calendar') > -1) { checkCalendars(); }
-    });
+    ui.on(document,
+        ui.globals.eventAjaxCallback,
+
+        function () {
+
+            if (ui.ajax.classNames.indexOf('calendar') > -1) {
+                checkCalendars();
+            }
+
+        });
 
 }());

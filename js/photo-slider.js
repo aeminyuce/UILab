@@ -188,8 +188,15 @@ ui.photoSlider = {};
     ui.onload(ui.photoSlider.Start);
 
     // ajax callback loader
-    ui.on(document, ui.globals.eventAjaxCallback, function () {
-        if (ui.ajax.classNames.indexOf('photo-slider') > -1) { photoSliderLoader(); }
-    });
+    ui.on(document,
+        ui.globals.eventAjaxCallback,
+
+        function () {
+
+            if (ui.ajax.classNames.indexOf('photo-slider') > -1) {
+                photoSliderLoader();
+            }
+
+        });
 
 }());

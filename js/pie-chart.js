@@ -183,8 +183,15 @@ ui.pieChart = {};
     ui.on(document, ui.globals.eventDomChange, chartsResizer);
 
     // ajax callback loader
-    ui.on(document, ui.globals.eventAjaxCallback, function () {
-        if (ui.ajax.classNames.indexOf('pie-chart') > -1) { loadCharts(); }
-    });
+    ui.on(document,
+        ui.globals.eventAjaxCallback,
+
+        function () {
+
+            if (ui.ajax.classNames.indexOf('pie-chart') > -1) {
+                loadCharts();
+            }
+
+        });
 
 }());

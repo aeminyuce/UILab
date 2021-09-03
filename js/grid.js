@@ -103,8 +103,15 @@ ui.grid = {
     ui.on(document, ui.globals.eventDomChange, ui.grid.Start);
 
     // ajax callback loader
-    ui.on(document, ui.globals.eventAjaxCallback, function () {
-        if (ui.ajax.classNames.indexOf(ui.grid.targetOrders) > -1) { ui.grid.Start(); }
-    });
+    ui.on(document,
+        ui.globals.eventAjaxCallback,
+
+        function () {
+
+            if (ui.ajax.classNames.indexOf(ui.grid.targetOrders) > -1) {
+                ui.grid.Start();
+            }
+
+        });
 
 }());

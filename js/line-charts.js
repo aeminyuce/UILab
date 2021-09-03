@@ -432,8 +432,15 @@ ui.lineCharts = {
     ui.on(document, ui.globals.eventDomChange, function () { loadCharts(ui.globals.eventDomChange); }); // resize loaded charts
 
     // ajax callback loader
-    ui.on(document, ui.globals.eventAjaxCallback, function () {
-        if (ui.ajax.classNames.indexOf('line-charts') > -1) { loadCharts('not-loaded'); } // show not loaded charts
-    });
+    ui.on(document,
+        ui.globals.eventAjaxCallback,
+
+        function () {
+
+            if (ui.ajax.classNames.indexOf('line-charts') > -1) {
+                loadCharts('not-loaded'); // show not loaded charts
+            }
+
+        });
 
 }());

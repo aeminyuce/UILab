@@ -146,37 +146,40 @@ ui.tabs = {
                     if (toggle) {
 
                         // close opened toggle tabs when outside the tabs
-                        ui.on(document, 'mouseup.' + ui.tabs.eventCloseToggleTabs, function (ev) {
+                        ui.on(document,
+                            'mouseup.' + ui.tabs.eventCloseToggleTabs,
 
-                            if (typeof ev.target.className === 'object') { return; } // fix: when clicking on SVG icons inside the toggle tab
+                            function (ev) {
 
-                            if (ev.button !== 2) { // inherited right clicks
+                                if (typeof ev.target.className === 'object') { return; } // fix: when clicking on SVG icons inside the toggle tab
 
-                                if (ev.target.className.split(' ').indexOf(ui.tabs.nameToggleTab) !== -1 && ui.closest(ev.target, '.' + ui.tabs.targetParent)[0] === parent) { // controlling same toggled tab buttons
-                                    return;
-                                }
+                                if (ev.button !== 2) { // inherited right clicks
 
-                                if (ev.target.className.split(' ').indexOf(ui.tabs.nameContent) === -1 && ui.closest(ev.target, '.' + ui.tabs.nameContent)[0] === undefined) { // controlling inside of the opened tab content
-
-                                    if (classes) {
-                                        ui.removeClass(tabs, classes);
+                                    if (ev.target.className.split(' ').indexOf(ui.tabs.nameToggleTab) !== -1 && ui.closest(ev.target, '.' + ui.tabs.targetParent)[0] === parent) { // controlling same toggled tab buttons
+                                        return;
                                     }
 
-                                    ui.removeClass(tabs, ui.tabs.nameActive);
-                                    ui.removeClass(content, ui.tabs.nameOpenEase);
+                                    if (ev.target.className.split(' ').indexOf(ui.tabs.nameContent) === -1 && ui.closest(ev.target, '.' + ui.tabs.nameContent)[0] === undefined) { // controlling inside of the opened tab content
 
-                                    setTimeout(function () {
-                                        ui.removeClass(content, ui.tabs.nameOpen);
-                                    }, 0);
+                                        if (classes) {
+                                            ui.removeClass(tabs, classes);
+                                        }
 
-                                    ui.trigger(document, ui.tabs.eventToggleTabsClosed); // set custom event
-                                    ui.off(document, 'mouseup.' + ui.tabs.eventCloseToggleTabs);
+                                        ui.removeClass(tabs, ui.tabs.nameActive);
+                                        ui.removeClass(content, ui.tabs.nameOpenEase);
+
+                                        setTimeout(function () {
+                                            ui.removeClass(content, ui.tabs.nameOpen);
+                                        }, 0);
+
+                                        ui.trigger(document, ui.tabs.eventToggleTabsClosed); // set custom event
+                                        ui.off(document, 'mouseup.' + ui.tabs.eventCloseToggleTabs);
+
+                                    }
 
                                 }
 
-                            }
-
-                        });
+                            });
 
                     }
 

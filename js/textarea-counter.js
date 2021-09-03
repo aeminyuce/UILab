@@ -87,8 +87,15 @@ ui.textareaCounter = {};
     ui.onload(ui.textareaCounter.Start);
 
     // ajax callback loader
-    ui.on(document, ui.globals.eventAjaxCallback, function () {
-        if (ui.ajax.text.indexOf('data-ui-counter="') > 0) { loadCounters(); }
-    });
+    ui.on(document,
+        ui.globals.eventAjaxCallback,
+
+        function () {
+
+            if (ui.ajax.text.indexOf('data-ui-counter="') > 0) {
+                loadCounters();
+            }
+
+        });
 
 }());

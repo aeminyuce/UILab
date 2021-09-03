@@ -55,8 +55,15 @@ ui.spinnerForm = {};
     ui.onload(ui.spinnerForm.Start);
 
     // ajax callback loader
-    ui.on(document, ui.globals.eventAjaxCallback, function () {
-        if (ui.ajax.classNames.indexOf('form-spinner') > -1) { checkSpinnerForms(); }
-    });
+    ui.on(document,
+        ui.globals.eventAjaxCallback,
+
+        function () {
+
+            if (ui.ajax.classNames.indexOf('form-spinner') > -1) {
+                checkSpinnerForms();
+            }
+
+        });
 
 }());

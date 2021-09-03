@@ -3,7 +3,43 @@
  Requires UI JS
 */
 
-ui.forms = {};
+ui.forms = {
+
+    // targets
+    targetText: 'text',
+    targetSelect: 'select',
+    targetSelectMulti: 'select-multi',
+    targetTextarea: 'textarea',
+    targetFile: 'file',
+    targetIndeterminate: 'indeterminate',
+
+    // main classnames
+    nameFocus: 'form-focus',
+
+    nameHolder: 'form-holder',
+    nameHolderFocus: 'form-holder-focus',
+
+    nameHasClear: 'has-clear',
+    nameClear: 'clear-form',
+
+    nameShowPass: 'show-pass',
+    nameNumber: 'number',
+
+    nameTextIcon: 'text-icon',
+
+    nameError: 'error',
+
+    nameRequired: 'required',
+    nameRequiredMsg: 'required-msg',
+
+    // helper classnames
+    nameOpen: 'open',
+    nameOpenEase: 'open-ease',
+
+    // outer classnames
+    nameIcon: 'icon'
+
+};
 
 (function () {
 
@@ -20,17 +56,23 @@ ui.forms = {};
 
             var i, parent, classes, holder;
 
-            classes = ['text', 'select', 'select-multi', 'textarea'];
-            holder = ui.closest(t, '.form-holder');
+            classes = [
+                ui.forms.targetText,
+                ui.forms.targetSelect,
+                ui.forms.targetSelectMulti,
+                ui.forms.targetTextarea
+            ];
+
+            holder = ui.closest(t, '.' + ui.forms.nameHolder);
 
             if (holder.length === 1) {
 
-                ui.removeClass('.form-holder-focus', 'form-holder-focus');
+                ui.removeClass('.' + ui.forms.nameHolderFocus, ui.forms.nameHolderFocus);
                 if (type === 'add') {
-                    ui.addClass(holder, 'form-holder-focus');
+                    ui.addClass(holder, ui.forms.nameHolderFocus);
                 }
 
-            } else { ui.removeClass('.form-focus', 'form-focus'); }
+            } else { ui.removeClass('.' + ui.forms.nameFocus, ui.forms.nameFocus); }
 
             for (i = 0; i < classes.length; i++) {
 
@@ -39,10 +81,10 @@ ui.forms = {};
                 if (parent.length === 1) {
 
                     if (type === 'add') {
-                        ui.addClass(parent, 'form-focus');
+                        ui.addClass(parent, ui.forms.nameFocus);
 
                     } else {
-                        ui.removeClass(parent, 'form-focus');
+                        ui.removeClass(parent, ui.forms.nameFocus);
                     }
 
                     break;
@@ -55,22 +97,22 @@ ui.forms = {};
         // clear with form icons
         clearForms = function (that) {
 
-            var btn = ui.find('.clear-form', that.parentElement)[0];
+            var btn = ui.find('.' + ui.forms.nameClear, that.parentElement)[0];
 
             if (that.value !== '') {
 
-                ui.addClass(btn, 'open');
+                ui.addClass(btn, ui.forms.nameOpen);
 
                 setTimeout(function () {
-                    ui.addClass(btn, 'open-ease');
+                    ui.addClass(btn, ui.forms.nameOpenEase);
                 }, 10);
 
             } else {
 
-                ui.removeClass(btn, 'open-ease');
+                ui.removeClass(btn, ui.forms.nameOpenEase);
 
                 setTimeout(function () {
-                    ui.removeClass(btn, 'open');
+                    ui.removeClass(btn, ui.forms.nameOpen);
                 }, ui.globals.ease);
 
             }
@@ -79,7 +121,7 @@ ui.forms = {};
 
         loadClearForms = function () {
 
-            ui.each('.text.has-clear input', function () {
+            ui.each('.' + ui.forms.targetText + '.' + ui.forms.nameHasClear + ' input', function () {
 
                 var that = this;
                 setTimeout(function () { clearForms(that); }, 0);
@@ -91,9 +133,12 @@ ui.forms = {};
 
         // Event Listeners
         ui.on(document,
-
             'focus',
-            '.text input,.select select,.select .select-filter,.select-multi select,.textarea textarea',
+
+            '.' + ui.forms.targetText + ' input,' +
+            '.' + ui.forms.targetSelect + ' select,' +
+            '.' + ui.forms.targetSelectMulti + ' select,' +
+            '.' + ui.forms.targetTextarea + ' textarea',
 
             function () {
                 formFocus(this, 'add');
@@ -102,121 +147,147 @@ ui.forms = {};
         ui.on(document,
 
               'blur',
-              'input,select,.select .select-filter,textarea,.custom-select .text',
+              'input,select,textarea',
 
             function () {
                 formFocus(this, 'remove');
             });
 
         // file inputs
-        ui.on(document, 'change', '.file input', function () {
+        ui.on(document,
+            'change',
 
-            var info = ui.find('span:not([class])', this.parentElement)[0];
+            '.' + ui.forms.targetFile + ' input',
 
-            if (info !== undefined) {
-                info.innerHTML = this.value;
-            }
+            function () {
 
-        });
+                var info = ui.find('span:not([class])', this.parentElement)[0];
+
+                if (info !== undefined) {
+                    info.innerHTML = this.value;
+                }
+
+            });
 
         // indeterminate
-        ui.on(document, 'click', 'input[type="checkbox"].indeterminate', function () {
+        ui.on(document,
+            'click',
 
-            if (this.readOnly) {
-                this.checked = this.readOnly = false;
+            'input[type="checkbox"].' + ui.forms.targetIndeterminate,
 
-            } else if (!this.checked) {
-                this.readOnly = this.indeterminate = true;
-            }
+            function () {
 
-        });
+                if (this.readOnly) {
+                    this.checked = this.readOnly = false;
+
+                } else if (!this.checked) {
+                    this.readOnly = this.indeterminate = true;
+                }
+
+            });
 
         // toggle password
-        ui.on(document, 'click touchend', '.show-pass', function () {
+        ui.on(document,
+            'click touchend',
 
-            var that = this.parentElement;
-            that = ui.find('input', that)[0];
+            '.' + ui.forms.nameShowPass,
 
-            if (that.getAttribute('type') === 'password') {
-                that.setAttribute('type', 'text');
+            function () {
 
-            } else {
-                that.setAttribute('type', 'password');
-            }
+                var that = this.parentElement;
+                that = ui.find('input', that)[0];
 
-        });
+                if (that.getAttribute('type') === 'password') {
+                    that.setAttribute('type', 'text');
+
+                } else {
+                    that.setAttribute('type', 'password');
+                }
+
+            });
 
         // number
-        ui.on(document, 'keypress', '.text > .number', function (e) {
+        ui.on(document,
+            'keypress',
 
-            var c, isRefresh = false;
+            '.' + ui.forms.targetText + ' > .' + ui.forms.nameNumber,
 
-            if (e.which) {
-                c = e.which;
+            function (e) {
 
-            } else {
+                var c, isRefresh = false;
 
-                c = e.keyCode;
-                if (c === 116) { isRefresh = true; }
+                if (e.which) {
+                    c = e.which;
 
-            }
+                } else {
 
-            if (c !== 8 && c !== 9 && c !== 35 && c !== 36 && c !== 37 && c !== 39 && c !== 46 && !isRefresh && (c < 48 || c > 57)) {
-                e.preventDefault();
-            }
+                    c = e.keyCode;
+                    if (c === 116) { isRefresh = true; }
 
-        });
+                }
 
-        ui.on(document, 'paste', '.text > .number', function () {
+                if (c !== 8 && c !== 9 && c !== 35 && c !== 36 && c !== 37 && c !== 39 && c !== 46 && !isRefresh && (c < 48 || c > 57)) {
+                    e.preventDefault();
+                }
 
-            var i, re, that, getValues, newValues, maxLength;
+            });
 
-            that = this;
+        ui.on(document,
+            'paste',
 
-            maxLength = that.getAttribute('maxlength');
-            that.removeAttribute('maxlength');
+            '.' + ui.forms.targetText + ' > .' + ui.forms.nameNumber,
 
-            setTimeout(function () {
+            function () {
 
-                newValues = '';
-                getValues = that.value.match(new RegExp(/[0-9]/, 'g'));
+                var i, re, that, getValues, newValues, maxLength;
 
-                if (getValues !== null) {
+                that = this;
 
-                    for (i = 0; i < getValues.length; i++) {
-                        newValues += getValues[i];
+                maxLength = that.getAttribute('maxlength');
+                that.removeAttribute('maxlength');
+
+                setTimeout(function () {
+
+                    newValues = '';
+                    getValues = that.value.match(new RegExp(/[0-9]/, 'g'));
+
+                    if (getValues !== null) {
+
+                        for (i = 0; i < getValues.length; i++) {
+                            newValues += getValues[i];
+                        }
+
+                    } else {
+
+                        that.value = newValues;
+                        return false;
+
                     }
 
-                } else {
+                    if (maxLength !== null) {
 
-                    that.value = newValues;
-                    return false;
+                        re = '[0-9]{1,' + maxLength + '}';
+                        re = new RegExp(re, 'g');
 
-                }
+                        that.value = newValues.match(re)[0];
+                        that.setAttribute('maxlength', maxLength);
 
-                if (maxLength !== null) {
+                    } else {
+                        that.value = newValues;
+                    }
 
-                    re = '[0-9]{1,' + maxLength + '}';
-                    re = new RegExp(re, 'g');
+                }, 0);
 
-                    that.value = newValues.match(re)[0];
-                    that.setAttribute('maxlength', maxLength);
-
-                } else {
-                    that.value = newValues;
-                }
-
-            }, 0);
-
-        });
+            });
 
         // form icons
         if (ui.userAgents.mobile) { // fix: buttons not clicked on form focus at mobile devices
 
             ui.on(document,
-
                 'mousedown',
-                '[class*="text-icon"] > button.icon,[class*="text-icon"] > input.icon',
+
+                '[class*="' + ui.forms.nameTextIcon + '"] > button.' + ui.forms.nameIcon + ',' +
+                '[class*="' + ui.forms.nameTextIcon + '"] > input.' + ui.forms.nameIcon,
 
                 function (e) {
 
@@ -226,65 +297,85 @@ ui.forms = {};
                 });
 
             // submit with form icons (ios fix)
-            ui.on(document, 'click', '.text > [type="submit"]', function () {
+            ui.on(document,
+                'click',
 
-                var form = ui.closest(this, '.text')[0];
-                ui.trigger(form, 'submit');
+                '.' + ui.forms.targetText + ' > [type="submit"]',
 
-            });
+                function () {
+
+                    var form = ui.closest(this, '.' + ui.forms.targetText)[0];
+                    ui.trigger(form, 'submit');
+
+                });
 
         }
 
         // trigger custom event listeners when form resetting
-        ui.on(document, 'reset', 'form', function (e) {
+        ui.on(document,
+            'reset',
 
-            var forms, errors, reqMessages;
-            forms = Array.prototype.slice.call(e.target);
+            'form',
 
-            errors = ui.find('.error', this);
-            reqMessages = ui.find('.required-msg', this);
+            function (e) {
 
-            setTimeout(function () { // wait for form reset started on DOM
+                var forms, errors, reqMessages;
+                forms = Array.prototype.slice.call(e.target);
 
-                ui.each(forms, function () {
+                errors = ui.find('.' + ui.forms.nameError, this);
+                reqMessages = ui.find('.' + ui.forms.nameRequiredMsg, this);
 
-                    // trigger defined event listeners after form clear
-                    //ui.trigger(this, 'change');
+                setTimeout(function () { // wait for form reset started on DOM
 
-                    if (!ui.hasClass(this, 'required')) { // discard required forms
-                        ui.trigger(this, 'keydown keyup');
-                    }
+                    ui.each(forms, function () {
 
-                });
+                        // trigger defined event listeners after form clear
+                        //ui.trigger(this, 'change');
 
-                // remove errors
-                ui.removeClass(errors, 'error');
+                        if (!ui.hasClass(this, ui.forms.nameRequired)) { // discard required forms
+                            ui.trigger(this, 'keydown keyup');
+                        }
 
-                // remove error messages
-                ui.removeClass(reqMessages, 'show');
+                    });
 
-            }, 0);
+                    // remove errors
+                    ui.removeClass(errors, 'error');
 
-        });
+                    // remove error messages
+                    ui.removeClass(reqMessages, 'show');
+
+                }, 0);
+
+            });
 
         // clear with form icons
-        ui.on(document, 'change keyup', '.text.has-clear input', function () {
-            clearForms(this);
-        });
+        ui.on(document,
+            'change keyup',
 
-        ui.on(document, 'click', '.text.has-clear .clear-form', function () {
+            '.' + ui.forms.targetText + '.' + ui.forms.nameHasClear + ' input',
 
-            var form = ui.find('input', this.parentElement)[0];
-            form.value = '';
+            function () {
+                clearForms(this);
+            });
 
-            if (!ui.hasClass(form, 'required')) { // discard required forms
+        ui.on(document,
+            'click',
 
-                // trigger defined event listeners after form clear
-                ui.trigger(form, 'change keydown keyup');
+            '.' + ui.forms.targetText + '.' + ui.forms.nameHasClear + ' .' + ui.forms.nameClear,
 
-            }
+            function () {
 
-        });
+                var form = ui.find('input', this.parentElement)[0];
+                form.value = '';
+
+                if (!ui.hasClass(form, ui.forms.nameRequired)) { // discard required forms
+
+                    // trigger defined event listeners after form clear
+                    ui.trigger(form, 'change keydown keyup');
+
+                }
+
+            });
 
     };
 
@@ -292,8 +383,15 @@ ui.forms = {};
     ui.onload(ui.forms.Start);
 
     // ajax callback loader
-    ui.on(document, ui.globals.eventAjaxCallback, function () {
-        if (ui.ajax.classNames.indexOf('clear-form') > 0) { loadClearForms(); }
-    });
+    ui.on(document,
+        ui.globals.eventAjaxCallback,
+
+        function () {
+
+            if (ui.ajax.classNames.indexOf(ui.forms.nameClear) > 0) {
+                loadClearForms();
+            }
+
+        });
 
 }());

@@ -856,30 +856,36 @@ ui.darkMode = {
 
         }
 
-        ui.on(darkColorScheme, 'change', function () {
+        ui.on(darkColorScheme,
+            'change',
 
-            if(darkColorScheme.matches) { mode = ui.darkMode.nameDark; } else { mode= ui.darkMode.nameLight; }
-            doc.setAttribute(ui.darkMode.dataTheme, mode);
+            function () {
 
-            setState(mode);
+                if(darkColorScheme.matches) { mode = ui.darkMode.nameDark; } else { mode= ui.darkMode.nameLight; }
+                doc.setAttribute(ui.darkMode.dataTheme, mode);
 
-        });
+                setState(mode);
 
-        ui.on(document, 'click', '.' + ui.darkMode.nameToggleBtn, function (e) {
+            });
 
-            e.preventDefault();
+        ui.on(document,
+            'click',
 
-            // toggle theme color
-            var current = doc.getAttribute(ui.darkMode.dataTheme);
+            '.' + ui.darkMode.nameToggleBtn, function (e) {
 
-            if (current !== null && current !== '') {
-                if (current === ui.darkMode.nameDark) { mode = ui.darkMode.nameLight; } else { mode = ui.darkMode.nameDark; }
-            }
+                e.preventDefault();
 
-            doc.setAttribute(ui.darkMode.dataTheme, mode);
-            setState(mode);
+                // toggle theme color
+                var current = doc.getAttribute(ui.darkMode.dataTheme);
 
-        });
+                if (current !== null && current !== '') {
+                    if (current === ui.darkMode.nameDark) { mode = ui.darkMode.nameLight; } else { mode = ui.darkMode.nameDark; }
+                }
+
+                doc.setAttribute(ui.darkMode.dataTheme, mode);
+                setState(mode);
+
+            });
 
     });
 
@@ -914,22 +920,25 @@ ui.effects = {
 
     var pauseTransitionsTimer;
 
-    ui.on(window, 'resize scroll', function (e) {
+    ui.on(window,
+        'resize scroll',
 
-        if (!ui.effects.pauseAll) {
+        function (e) {
 
-            if ((e.type === 'scroll' && ui.effects.pauseScroll) || (e.type === 'resize' && ui.effects.pauseResize)) {
+            if (!ui.effects.pauseAll) {
 
-                clearTimeout(pauseTransitionsTimer);
-                ui.addClass(ui.effects.target, ui.effects.namePause);
+                if ((e.type === 'scroll' && ui.effects.pauseScroll) || (e.type === 'resize' && ui.effects.pauseResize)) {
 
-                pauseTransitionsTimer = setTimeout(function () {
-                    ui.removeClass(ui.effects.target, ui.effects.namePause);
-                }, ui.globals.ease * 2);
+                    clearTimeout(pauseTransitionsTimer);
+                    ui.addClass(ui.effects.target, ui.effects.namePause);
+
+                    pauseTransitionsTimer = setTimeout(function () {
+                        ui.removeClass(ui.effects.target, ui.effects.namePause);
+                    }, ui.globals.ease * 2);
+
+                }
 
             }
-
-        }
 
     });
 

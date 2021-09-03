@@ -126,8 +126,15 @@ ui.donutChart = {};
     ui.on(document, ui.globals.eventDomChange, ui.donutChart.Start);
 
     // ajax callback loader
-    ui.on(document, ui.globals.eventAjaxCallback, function () {
-        if (ui.ajax.classNames.indexOf('donut-chart') > -1) { loadCharts(); }
-    });
+    ui.on(document,
+        ui.globals.eventAjaxCallback,
+
+        function () {
+
+            if (ui.ajax.classNames.indexOf('donut-chart') > -1) {
+                loadCharts();
+            }
+
+        });
 
 }());

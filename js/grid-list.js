@@ -819,8 +819,15 @@ ui.gridList = {
     ui.onload(ui.gridList.Start);
 
     // ajax callback loader
-    ui.on(document, ui.globals.eventAjaxCallback, function () {
-        if (ui.ajax.classNames.indexOf('grid-list') > -1) { ui.gridList.Start(); }
-    });
+    ui.on(document,
+        ui.globals.eventAjaxCallback,
+
+        function () {
+
+            if (ui.ajax.classNames.indexOf('grid-list') > -1) {
+                ui.gridList.Start();
+            }
+
+        });
 
 }());
