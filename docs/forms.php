@@ -415,7 +415,7 @@
                     <div class="file round border-dual ease-form">
                         <input type="file">
                         <span class="btn ease-btn">Browse</span>
-                        <span>Choose file.</span>
+                        <i>Choose file.</i>
                     </div>
 
                     <span class="sp-10"></span>
@@ -425,7 +425,7 @@
                         <div class="file round border-dual">
                             <input type="file">
                             <span class="btn ease-btn">Browse</span>
-                            <span>Choose file.</span>
+                            <i>Choose file.</i>
                         </div>
                     </div>
                 </div>
@@ -1395,7 +1395,7 @@
                                 <div class="file round border-dual ease-form">
                                     <input class="required" type="file">
                                     <span class="btn ease-btn">Browse</span>
-                                    <span>Choose file.</span>
+                                    <i>Choose file.</i>
                                 </div>
                                 <p class="required-msg">Please, select a file.</p>
                                 <i class="hint font-color-black-muted">* Required</i>

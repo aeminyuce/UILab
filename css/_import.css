@@ -5176,8 +5176,9 @@ input.btn {
 .file.round .btn {
   border-radius: 3px 0 0 3px;
 }
-.file > span:not(.btn) {
+.file > i {
   white-space: nowrap;
+  font-style: normal;
   text-overflow: ellipsis;
   line-height: 28px;
   width: 100%;
@@ -5761,7 +5762,7 @@ label.custom {
   height: 18px;
   stroke-width: 32px;
 }
-.form-lg .file > span:not(.btn) {
+.form-lg .file > i {
   font-size: 16px;
   line-height: 38px;
 }
