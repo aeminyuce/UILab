@@ -22,7 +22,7 @@ ui.dropdown = {
     // helper classnames
     nameOpen: 'open',
     nameOpenEase: 'open-ease',
-    nameValSelected: 'selected',
+    tagValueSelected: 'selected',
 
     // outer classnames
     nameBtn: 'btn',
@@ -30,10 +30,10 @@ ui.dropdown = {
     nameNoScrolling: 'no-scroll',
 
     // tags
-    nameMenuItems: 'li',
+    tagMenuItems: 'li',
 
-    nameVal: 'span',
-    nameValItems: 'label',
+    tagValue: 'span',
+    tagValueItems: 'label',
 
     // values
     scrollbarSize: 20,
@@ -201,31 +201,34 @@ ui.dropdown = {
 
                 setTimeout(function () {
 
-                    ui.on(document, 'click.' + ui.dropdown.eventDropdownClose, function (ev) {
+                    ui.on(document,
+                        'click.' + ui.dropdown.eventDropdownClose,
 
-                        var content = ui.closest(ev.target, '.' + ui.dropdown.nameMenu)[0];
+                        function (ev) {
 
-                        // prevent for non listing contents
-                        if (content !== undefined) {
+                            var content = ui.closest(ev.target, '.' + ui.dropdown.nameMenu)[0];
 
-                            if (ui.closest(content, '.' + ui.dropdown.target)[0] !== undefined) { // check other content class names
+                            // prevent for non listing contents
+                            if (content !== undefined) {
+
+                                if (ui.closest(content, '.' + ui.dropdown.target)[0] !== undefined) { // check other content class names
+                                    return;
+                                }
+
+                            }
+
+                            if (ui.closest(ev.target, '.' + ui.dropdown.target + '.' + ui.dropdown.nameNavFullHor)[0] !== undefined && ev.target.className.split(' ').indexOf(ui.dropdown.nameMenu) === 0) { // check full horizontal navigations
                                 return;
                             }
 
-                        }
+                            if (ev.button !== 2) { // inherited right clicks
 
-                        if (ui.closest(ev.target, '.' + ui.dropdown.target + '.' + ui.dropdown.nameNavFullHor)[0] !== undefined && ev.target.className.split(' ').indexOf(ui.dropdown.nameMenu) === 0) { // check full horizontal navigations
-                            return;
-                        }
+                                dropdownClose();
+                                ui.off(document, 'click.' + ui.dropdown.eventDropdownClose);
 
-                        if (ev.button !== 2) { // inherited right clicks
+                            }
 
-                            dropdownClose();
-                            ui.off(document, 'click.' + ui.dropdown.eventDropdownClose);
-
-                        }
-
-                    });
+                        });
 
                 }, 0);
 
@@ -279,7 +282,7 @@ ui.dropdown = {
         ui.on(document,
             'click',
 
-            '.' + ui.dropdown.target + ' ' + ui.dropdown.nameMenuItems + ' > ' + ui.dropdown.nameValItems,
+            '.' + ui.dropdown.target + ' ' + ui.dropdown.tagMenuItems + ' > ' + ui.dropdown.tagValueItems,
 
             function () {
 
@@ -287,7 +290,7 @@ ui.dropdown = {
 
                 p = ui.closest(this, '.' + ui.dropdown.target)[0];
 
-                target = ui.find('.' + ui.dropdown.nameBtn + ' > ' + ui.dropdown.nameVal, p)[0];
+                target = ui.find('.' + ui.dropdown.nameBtn + ' > ' + ui.dropdown.tagValue, p)[0];
                 target.innerHTML = '';
                 target.insertAdjacentHTML('beforeend', this.innerHTML);
 
@@ -296,8 +299,8 @@ ui.dropdown = {
                     input.parentNode.removeChild(input);
                 }
 
-                ui.removeClass(ui.find('.' + ui.dropdown.nameValSelected, p), ui.dropdown.nameValSelected);
-                ui.addClass(this.parentNode, ui.dropdown.nameValSelected);
+                ui.removeClass(ui.find('.' + ui.dropdown.tagValueSelected, p), ui.dropdown.tagValueSelected);
+                ui.addClass(this.parentNode, ui.dropdown.tagValueSelected);
 
             });
 
@@ -320,7 +323,8 @@ ui.dropdown = {
 
         ui.on(document,
             'mouseup',
-            '.' + ui.dropdown.target + ':not(.' + ui.dropdown.nameNav + ') ' + ui.dropdown.nameMenuItems,
+
+            '.' + ui.dropdown.target + ':not(.' + ui.dropdown.nameNav + ') ' + ui.dropdown.tagMenuItems,
 
             function () {
 
@@ -337,18 +341,21 @@ ui.dropdown = {
 
         ui.on(document,
             'focus',
+
             selectInContent,
 
             function () { selectOpened = true; });
 
         ui.on(document,
             'blur',
+
             selectInContent,
 
             function () { selectOpened = false; });
 
         ui.on(document,
             'keyup',
+
             selectInContent,
 
             function (e) {
