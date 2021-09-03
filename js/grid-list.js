@@ -28,8 +28,17 @@ ui.gridList = {
 
     // helper classnames
     nameActive: 'active',
-    nameShow: 'show',
+    nameEven: 'even',
+
+    nameShow: 'showed',
     nameFiltered: 'filtered',
+    nameChecked: 'checked',
+
+    nameAsc: 'asc',
+    nameDesc: 'desc',
+
+    namePrev: 'prev',
+    nameNext: 'next',
 
     // outer classnames
     nameIcon: 'icon',
@@ -52,6 +61,7 @@ ui.gridList = {
     valueSplit : '|',
     customLetters : { "İ": "i", "I": "ı", "Ş": "ş", "Ğ": "ğ", "Ü": "ü", "Ö": "ö", "Ç": "ç" },
     listIdNaming: 'ui-gridList-',
+    sortTypeNumber: 'number',
 
     // storages
     storageTest: 'ui-gridList-test',
@@ -163,7 +173,7 @@ ui.gridList = {
 
         if (max > total) { max = total; }
 
-        classes = 'prev ' + defaultClass;
+        classes = ui.gridList.namePrev + ' ' + defaultClass;
         if (pagingCount[id] === 1) { classes += ' ' + ui.gridList.nameBtnPassive; }
 
         classes = classes.replace(re, ' ').replace(rex, '');
@@ -186,7 +196,7 @@ ui.gridList = {
 
         }
 
-        classes = 'next ' + defaultClass;
+        classes = ui.gridList.nameNext + ' ' + defaultClass;
         if (pagingCount[id] === total) { classes += ' ' + ui.gridList.nameBtnPassive; }
 
         classes = classes.replace(re, ' ').replace(rex, '');
@@ -259,12 +269,12 @@ ui.gridList = {
 
                 if (isEven) {
 
-                    ui.addClass(t, 'even');
+                    ui.addClass(t, ui.gridList.nameEven);
                     isEven = false;
 
                 } else {
 
-                    ui.removeClass(t, 'even');
+                    ui.removeClass(t, ui.gridList.nameEven);
                     isEven = true;
 
                 }
@@ -308,10 +318,10 @@ ui.gridList = {
             that = ui.closest(this, '.' + ui.gridList.target)[0];
             id = that.getAttribute(ui.gridList.dataID);
 
-            if (ui.hasClass(this, 'next')) {
+            if (ui.hasClass(this, ui.gridList.nameNext)) {
                 pagingCount[id] += 1;
 
-            } else if (ui.hasClass(this, 'prev')) {
+            } else if (ui.hasClass(this, ui.gridList.namePrev)) {
                 pagingCount[id] -= 1;
 
             } else {
@@ -383,26 +393,26 @@ ui.gridList = {
 
                     if (!ui.hasClass(this, ui.gridList.nameActive)) {
 
-                        ui.removeClass(this, 'asc desc');
+                        ui.removeClass(this, ui.gridList.nameAsc + ' ' + ui.gridList.nameDesc);
                         ui.find('.' + ui.gridList.nameIcon + ' ' + ui.gridList.tagUse, this)[0].setAttribute('href', '#' + ui.gridList.sortIcon);
 
                     }
 
                 });
 
-            isAsc = ui.hasClass(this, 'asc');
+            isAsc = ui.hasClass(this, ui.gridList.nameAsc);
 
             if (isAsc) {
 
-                ui.removeClass(this, 'asc');
-                ui.addClass(this, 'desc');
+                ui.removeClass(this, ui.gridList.nameAsc);
+                ui.addClass(this, ui.gridList.nameDesc);
 
                 ui.find('.' + ui.gridList.nameIcon + ' ' + ui.gridList.tagUse, this)[0].setAttribute('href', '#' + ui.gridList.descIcon);
 
             } else {
 
-                ui.removeClass(this, 'desc');
-                ui.addClass(this, 'asc');
+                ui.removeClass(this, ui.gridList.nameDesc);
+                ui.addClass(this, ui.gridList.nameAsc);
 
                 ui.find('.' + ui.gridList.nameIcon + ' ' + ui.gridList.tagUse, this)[0].setAttribute('href', '#' + ui.gridList.ascIcon);
 
@@ -442,7 +452,7 @@ ui.gridList = {
 
                         val = val.split(ui.gridList.valueSplit)[sortIndex];
 
-                        if (sortType !== 'number') {
+                        if (sortType !== ui.gridList.sortTypeNumber) {
                             val = customLowerCase(val);
                         }
 
@@ -455,7 +465,7 @@ ui.gridList = {
 
             if (isAsc) {
 
-                if (sortType === 'number') {
+                if (sortType === ui.gridList.sortTypeNumber) {
                     arrSorted.sort(function (a, b) { return b - a; });
 
                 } else {
@@ -464,7 +474,7 @@ ui.gridList = {
 
             } else {
 
-                if (sortType === 'number') {
+                if (sortType === ui.gridList.sortTypeNumber) {
                     arrSorted.sort(function (a, b) { return a - b; });
 
                 } else {
@@ -552,7 +562,7 @@ ui.gridList = {
                     sortType = this.getAttribute(ui.gridList.dataType);
                     if (sortType === null) { sortType = ''; }
 
-                    if (sortType === 'number') {
+                    if (sortType === ui.gridList.sortTypeNumber) {
                         vals.push(val);
 
                     } else {
@@ -612,9 +622,9 @@ ui.gridList = {
 
                 function () {
 
-                    if (ui.hasClass(this, 'checked')) {
+                    if (ui.hasClass(this, ui.gridList.nameChecked)) {
 
-                        ui.removeClass(this, 'checked');
+                        ui.removeClass(this, ui.gridList.nameChecked);
                         ui.find('.' + ui.gridList.nameCheck, this)[0].checked = false;
 
                     }
@@ -742,12 +752,12 @@ ui.gridList = {
 
             checkFnc = function (t) {
 
-                if (!ui.hasClass(t, 'checked')) {
+                if (!ui.hasClass(t, ui.gridList.nameChecked)) {
 
                     form = ui.find('.' + ui.gridList.nameCheck, t)[0];
                     if (form !== undefined) {
 
-                        ui.addClass(t, 'checked');
+                        ui.addClass(t, ui.gridList.nameChecked);
                         form.checked = true;
 
                     }
@@ -758,12 +768,12 @@ ui.gridList = {
 
             uncheckFnc = function (t) {
 
-                if (ui.hasClass(t, 'checked')) {
+                if (ui.hasClass(t, ui.gridList.nameChecked)) {
 
                     form = ui.find('.' + ui.gridList.nameCheck, t)[0];
                     if (form !== undefined) {
 
-                        ui.removeClass(t, 'checked');
+                        ui.removeClass(t, ui.gridList.nameChecked);
                         form.checked = false;
 
                     }
@@ -806,11 +816,11 @@ ui.gridList = {
             list = ui.closest(this, '.' + ui.gridList.nameListContent)[0];
 
             if (this.checked) {
-                ui.addClass(list, 'checked');
+                ui.addClass(list, ui.gridList.nameChecked);
 
             } else {
 
-                ui.removeClass(list, 'checked');
+                ui.removeClass(list, ui.gridList.nameChecked);
                 checkAll = ui.find('.' + ui.gridList.nameCheckAll, that)[0];
 
                 if (ui.find('.' + ui.gridList.nameCheckAll, that)[0] !== undefined) {
