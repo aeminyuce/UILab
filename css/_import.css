@@ -8829,7 +8829,7 @@ button.dialog-custom:focus {
   margin-left: inherit;
   margin-right: inherit;
 }
-.grid-list:not(.grid-list-showed-all) .grid-list-content:not(.show) {
+.grid-list:not(.grid-list-showed-all) .grid-list-content:not(.showed) {
   display: none;
 }
 .grid-list.grid-list-showed-all.grid-list-filtered .grid-list-content:not(.filtered) {
