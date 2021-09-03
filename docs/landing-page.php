@@ -29,7 +29,7 @@
                                             <b>Products</b>
                                             <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
                                         </button>
-                                        <ul class="content shadow-lg">
+                                        <ul class="dropdown-menu shadow-lg">
                                             <li><a href="#">Gardening</a></li>
                                             <li><a href="#">Planting</a></li>
                                             <li><a href="#">Irrigation Systems</a></li>

@@ -236,10 +236,10 @@
 
                                 <div class="dropdown menu-l right ease-dropdown">
                                     <button class="btn btn-ghost round">
-                                        <span class="value-toggle">First Chart</span>
+                                        <span>First Chart</span>
                                         <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
                                     </button>
-                                    <ul class="content round shadow-lg">
+                                    <ul class="dropdown-menu round shadow-lg">
                                         <li><label class="tab active bold selected">First chart</label></li>
                                         <li><label class="tab">Second chart</label></li>
                                     </ul>

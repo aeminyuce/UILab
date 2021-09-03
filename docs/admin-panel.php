@@ -24,7 +24,7 @@
                             <button class="btn btn-ghost round" data-ui-tooltip="r" data-ui-only="desktop" title="Settings">
                                 <svg class="icon"><use href="#settings"/></svg>
                             </button>
-                            <ul class="content icons-margin-10-r round shadow-lg">
+                            <ul class="dropdown-menu icons-margin-10-r round shadow-lg">
                                 <li><a href="#"><svg class="icon"><use href="#user"/></svg>Show Profile</a></li>
                                 <li><a href="#"><svg class="icon"><use href="#image"/></svg>Change Profile Photo</a></li>
                                 <li><a href="#"><svg class="icon"><use href="#key"/></svg>Change Password</a></li>

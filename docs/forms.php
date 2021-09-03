@@ -716,7 +716,7 @@
                                     Dropdown Button
                                     <svg class="toggle-icon icon margin-3-l"><use href="#angle-down"/></svg>
                                 </button>
-                                <ul class="content round shadow-lg">
+                                <ul class="dropdown-menu round shadow-lg">
                                     <li><a href="#">Dropdown Link</a></li>
                                     <li><a href="#">Dropdown Link</a></li>
                                     <li><a href="#">Dropdown Link</a></li>

@@ -36,11 +36,11 @@
                             <div class="col-lg-3 col-6 no-fluid">
                                 <div class="dropdown menu-l block ease-dropdown">
                                     <button class="btn align-l round ui-fill-light-100">
-                                        <span class="value-toggle">
+                                        <span>
                                             <svg class="icon"><use href="#sort"></svg> Sort
                                         </span>
                                     </button>
-                                    <ul class="content round shadow-lg">
+                                    <ul class="dropdown-menu round shadow-lg">
                                         <li>
                                             <label class="radio" data-ui-sort="1">
                                                 <svg class="icon"><use href="#sort"></svg>

@@ -19,7 +19,7 @@
                         <button type="button" title="Tags" class="btn btn-square round">
                             <svg class="icon"><use href="#tag"/></svg>
                         </button>
-                        <ul class="content round shadow-lg">
+                        <ul class="dropdown-menu round shadow-lg">
                             <li>Interior</li>
                             <li>Exterior</li>
                             <li>Garden</li>

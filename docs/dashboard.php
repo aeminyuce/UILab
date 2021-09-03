@@ -230,7 +230,7 @@
                         <button class="btn font-color-black-muted btn-ghost padding-10 circle visible-sm">
                             <svg class="icon"><use href="#angle-down"/></svg>
                         </button>
-                        <ul class="content list-column-2 has-icon round shadow-lg">
+                        <ul class="dropdown-menu list-column-2 has-icon round shadow-lg">
                             <li><a href="#"><b class="list-icon">23</b> Waiting</a></li>
                             <li><a href="#"><b class="list-icon">258</b> Expert</a></li>
                             <li><a href="#"><b class="list-icon">49</b> On Audit</a></li>
@@ -248,7 +248,7 @@
                         <button class="btn font-color-black-muted btn-square btn-ghost circle" data-ui-notifier data-ui-tooltip="l" data-ui-only="desktop" title="Personal Logs">
                             <svg class="icon"><use href="#grid-column"/></svg>
                         </button>
-                        <div class="content round shadow-lg no-scroll">
+                        <div class="dropdown-menu round shadow-lg no-scroll">
                             <div class="tabs xs-full-width theme-panel2" data-ui-classes="border-b border-lg ui-stroke ui-color" style="min-width: 300px;">
 
                                 <div class="btn-holder font-color-black-muted align-c border-b ease-1st-btn">
@@ -326,7 +326,7 @@
                         <button class="btn font-color-black-muted btn-square btn-ghost circle" data-ui-notifier data-ui-tooltip="l" data-ui-only="desktop" title="Notification Center">
                             <svg class="icon"><use href="#bars-right"/></svg>
                         </button>
-                        <div class="content round shadow-lg no-scroll">
+                        <div class="dropdown-menu round shadow-lg no-scroll">
                             <div class="tabs xs-full-width theme-panel2 ease-tabs" data-ui-classes="border-b border-lg ui-stroke ui-color" style="min-width: 300px;">
 
                                 <div class="btn-holder font-color-black-muted align-c border-b ease-1st-btn">
@@ -472,7 +472,7 @@
                         <button class="btn no-padding circle hover-scale-more">
                             <img class="img-photo img-photo-sm circle" src="img/profile-image.jpg" alt="">
                         </button>
-                        <ul class="content has-grid align-c icons-lg round shadow-lg">
+                        <ul class="dropdown-menu has-grid align-c icons-lg round shadow-lg">
                             <li>
                                 <a href="#">
                                     <svg class="icon"><use href="#user"/></svg>
@@ -557,7 +557,7 @@
                                                         <button type="button" class="btn btn-lg btn-ghost btn-square round">
                                                             <svg class="icon default-icon"><use href="#ellipsis-h"/></svg>
                                                         </button>
-                                                        <ul class="content has-icon round shadow-lg">
+                                                        <ul class="dropdown-menu has-icon round shadow-lg">
                                                             <li><a href="#">
                                                                 <svg class="list-icon icon"><use href="#check"/></svg>
                                                                 Save &amp; Continue</a>
@@ -851,7 +851,7 @@
                                         <button class="btn btn-square btn-ghost round">
                                             <svg class="icon"><use href="#ellipsis-h"/></svg>
                                         </button>
-                                        <ul class="content has-icon round shadow-lg">
+                                        <ul class="dropdown-menu has-icon round shadow-lg">
                                             <li><a href="#"><svg class="list-icon icon"><use href="#file-pdf"/></svg>Download PDF</a></li>
                                             <li><a href="#"><svg class="list-icon icon"><use href="#file-xls"/></svg>Download Excel</a></li>
                                             <li><a href="#"><svg class="list-icon icon"><use href="#eye"/></svg>See Detailed Activity</a></li>
@@ -1051,7 +1051,7 @@
                                             <button class="btn btn-square btn-ghost round">
                                                 <svg class="icon"><use href="#ellipsis-h"/></svg>
                                             </button>
-                                            <ul class="content has-icon round shadow-lg">
+                                            <ul class="dropdown-menu has-icon round shadow-lg">
                                                 <li><a href="#"><svg class="list-icon icon"><use href="#file-pdf"/></svg>Download PDF</a></li>
                                                 <li><a href="#"><svg class="list-icon icon"><use href="#file-xls"/></svg>Download Excel</a></li>
                                                 <li><a href="#"><svg class="list-icon icon"><use href="#eye"/></svg>See Detailed Statistics</a></li>
@@ -1059,10 +1059,10 @@
                                         </div>
                                         <div class="dropdown menu-l margin-5-r right ease-dropdown">
                                             <button class="btn btn-ghost round">
-                                                <span class="value-toggle">Last year</span>
+                                                <span>Last year</span>
                                                 <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
                                             </button>
-                                            <ul class="content round shadow-lg">
+                                            <ul class="dropdown-menu round shadow-lg">
                                                 <li><label class="tab active font-bold selected">Last year</label></li>
                                                 <li><label class="tab">Past year</label></li>
                                             </ul>
@@ -1191,7 +1191,7 @@
                                         <button class="btn btn-square btn-ghost round">
                                             <svg class="icon"><use href="#ellipsis-h"/></svg>
                                         </button>
-                                        <ul class="content has-icon round shadow-lg">
+                                        <ul class="dropdown-menu has-icon round shadow-lg">
                                             <li><a href="#"><svg class="list-icon icon"><use href="#calendar-plus"/></svg>Add to Your Calendar</a></li>
                                             <li><a href="#"><svg class="list-icon icon"><use href="#eye"/></svg>See All Events</a></li>
                                         </ul>
@@ -1207,7 +1207,7 @@
                                         <button class="btn btn-square btn-ghost round">
                                             <svg class="icon"><use href="#ellipsis-h"/></svg>
                                         </button>
-                                        <ul class="content has-icon round shadow-lg">
+                                        <ul class="dropdown-menu has-icon round shadow-lg">
                                             <li><a href="#"><svg class="list-icon icon"><use href="#file-pdf"/></svg>Download PDF</a></li>
                                             <li><a href="#"><svg class="list-icon icon"><use href="#file-xls"/></svg>Download Excel</a></li>
                                             <li><a href="#"><svg class="list-icon icon"><use href="#eye"/></svg>See All Experts</a></li>
@@ -1245,11 +1245,11 @@
                                             <div class="col-lg-3 col-6 no-fluid">
                                                 <div class="dropdown menu-l block ease-dropdown">
                                                     <button class="btn align-l round">
-                                                        <span class="value-toggle">
+                                                        <span>
                                                             <svg class="icon"><use href="#sort"/></svg> Sort
                                                         </span>
                                                     </button>
-                                                    <ul class="content round shadow-lg">
+                                                    <ul class="dropdown-menu round shadow-lg">
                                                         <li>
                                                             <label class="radio" data-ui-sort="1">
                                                                 <svg class="icon"><use href="#sort"/></svg>

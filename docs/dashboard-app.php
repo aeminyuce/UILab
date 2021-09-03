@@ -322,7 +322,7 @@
                                                     <button class="btn btn-ghost btn-square circle">
                                                         <svg class="icon"><use href="#ellipsis-h"/></svg>
                                                     </button>
-                                                    <ul class="content round shadow-lg">
+                                                    <ul class="dropdown-menu round shadow-lg">
                                                         <li><a href="#">View Details</a></li>
                                                         <li><a href="#">Send Message</a></li>
                                                     </ul>
@@ -347,7 +347,7 @@
                                                     <button class="btn btn-ghost btn-square circle">
                                                         <svg class="icon"><use href="#ellipsis-h"/></svg>
                                                     </button>
-                                                    <ul class="content round shadow-lg">
+                                                    <ul class="dropdown-menu round shadow-lg">
                                                         <li><a href="#">View Details</a></li>
                                                         <li><a href="#">Send Message</a></li>
                                                     </ul>
@@ -372,7 +372,7 @@
                                                     <button class="btn btn-ghost btn-square circle">
                                                         <svg class="icon"><use href="#ellipsis-h"/></svg>
                                                     </button>
-                                                    <ul class="content round shadow-lg">
+                                                    <ul class="dropdown-menu round shadow-lg">
                                                         <li><a href="#">View Details</a></li>
                                                         <li><a href="#">Send Message</a></li>
                                                     </ul>
@@ -397,7 +397,7 @@
                                                     <button class="btn btn-ghost btn-square circle">
                                                         <svg class="icon"><use href="#ellipsis-h"/></svg>
                                                     </button>
-                                                    <ul class="content round shadow-lg">
+                                                    <ul class="dropdown-menu round shadow-lg">
                                                         <li><a href="#">View Details</a></li>
                                                         <li><a href="#">Send Message</a></li>
                                                     </ul>
@@ -422,7 +422,7 @@
                                                     <button class="btn btn-ghost btn-square circle">
                                                         <svg class="icon"><use href="#ellipsis-h"/></svg>
                                                     </button>
-                                                    <ul class="content round shadow-lg">
+                                                    <ul class="dropdown-menu round shadow-lg">
                                                         <li><a href="#">View Details</a></li>
                                                         <li><a href="#">Send Message</a></li>
                                                     </ul>
@@ -447,7 +447,7 @@
                                                     <button class="btn btn-ghost btn-square circle">
                                                         <svg class="icon"><use href="#ellipsis-h"/></svg>
                                                     </button>
-                                                    <ul class="content round shadow-lg">
+                                                    <ul class="dropdown-menu round shadow-lg">
                                                         <li><a href="#">View Details</a></li>
                                                         <li><a href="#">Send Message</a></li>
                                                     </ul>
@@ -472,7 +472,7 @@
                                                     <button class="btn btn-ghost btn-square circle">
                                                         <svg class="icon"><use href="#ellipsis-h"/></svg>
                                                     </button>
-                                                    <ul class="content round shadow-lg">
+                                                    <ul class="dropdown-menu round shadow-lg">
                                                         <li><a href="#">View Details</a></li>
                                                         <li><a href="#">Send Message</a></li>
                                                     </ul>
@@ -497,7 +497,7 @@
                                                     <button class="btn btn-ghost btn-square circle">
                                                         <svg class="icon"><use href="#ellipsis-h"/></svg>
                                                     </button>
-                                                    <ul class="content round shadow-lg">
+                                                    <ul class="dropdown-menu round shadow-lg">
                                                         <li><a href="#">View Details</a></li>
                                                         <li><a href="#">Send Message</a></li>
                                                     </ul>
@@ -522,7 +522,7 @@
                                                     <button class="btn btn-ghost btn-square circle">
                                                         <svg class="icon"><use href="#ellipsis-h"/></svg>
                                                     </button>
-                                                    <ul class="content round shadow-lg">
+                                                    <ul class="dropdown-menu round shadow-lg">
                                                         <li><a href="#">View Details</a></li>
                                                         <li><a href="#">Send Message</a></li>
                                                     </ul>
@@ -547,7 +547,7 @@
                                                     <button class="btn btn-ghost btn-square circle">
                                                         <svg class="icon"><use href="#ellipsis-h"/></svg>
                                                     </button>
-                                                    <ul class="content round shadow-lg">
+                                                    <ul class="dropdown-menu round shadow-lg">
                                                         <li><a href="#">View Details</a></li>
                                                         <li><a href="#">Send Message</a></li>
                                                     </ul>
@@ -572,7 +572,7 @@
                                                     <button class="btn btn-ghost btn-square circle">
                                                         <svg class="icon"><use href="#ellipsis-h"/></svg>
                                                     </button>
-                                                    <ul class="content round shadow-lg">
+                                                    <ul class="dropdown-menu round shadow-lg">
                                                         <li><a href="#">View Details</a></li>
                                                         <li><a href="#">Send Message</a></li>
                                                     </ul>
@@ -597,7 +597,7 @@
                                                     <button class="btn btn-ghost btn-square circle">
                                                         <svg class="icon"><use href="#ellipsis-h"/></svg>
                                                     </button>
-                                                    <ul class="content round shadow-lg">
+                                                    <ul class="dropdown-menu round shadow-lg">
                                                         <li><a href="#">View Details</a></li>
                                                         <li><a href="#">Send Message</a></li>
                                                     </ul>
