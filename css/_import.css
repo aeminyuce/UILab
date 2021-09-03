@@ -6485,9 +6485,6 @@ label.custom {
   .table-fluid > .table tr > * {
     white-space: nowrap;
   }
-  .table-fluid > .grid-list {
-    min-width: 858px;
-  }
 }
 /* breadcrumbs */
 .breadcrumbs:not(:last-child) {
@@ -8803,51 +8800,51 @@ button.dialog-custom:focus {
   }
 }
 /* grid list */
-.ease-grid-list .grid-content {
+.ease-grid-list .grid-list-content {
   transition-property: background-color;
   transition-duration: 0.15s;
 }
-.grid-list .grid-content:not([class*="col-"]) {
+.grid-list-content:not([class*="col-"]) {
   padding: 10px;
   border-bottom: solid 1px hsl(0, 0%, 86.7%);
   border-bottom: solid 1px var(--grid-list-border);
 }
-.grid-list .grid-content:before,
-.grid-list .grid-content:after {
+.grid-list-content:before,
+.grid-list-content:after {
   content: "";
   display: table;
 }
-.grid-list .grid-content:after {
+.grid-list-content:after {
   clear: both;
 }
-.grid-list .grid-content.even {
+.grid-list-content.even {
   background-color: hsla(0, 0%, 0%, 0.035);
   background-color: var(--grid-list-stripe-bg);
 }
-.grid-list .grid-content.checked {
+.grid-list-content.checked {
   background-color: hsla(42, 100%, 45%, 0.15) !important;
 }
 .grid-list > .row,
-.grid-list .grid-content > .row {
+.grid-list .grid-list-content > .row {
   margin-left: inherit;
   margin-right: inherit;
 }
-.grid-list:not(.grid-show-all) .grid-content:not(.show) {
+.grid-list:not(.grid-list-showed-all) .grid-list-content:not(.show) {
   display: none;
 }
-.grid-list.grid-show-all.grid-filtered .grid-content:not(.filtered) {
+.grid-list.grid-list-showed-all.grid-list-filtered .grid-list-content:not(.filtered) {
   display: none;
 }
-.grid-list.grid-hover .grid-content.even:not([class*="ui-fill-"]) {
+.grid-list.grid-hover .grid-list-content.even:not([class*="ui-fill-"]) {
   background-color: hsla(0, 0%, 0%, 0.035);
   background-color: var(--grid-list-stripe-bg);
 }
-.desktop .grid-list.grid-hover .grid-content:not([class*="ui-fill-"]):hover,
-.desktop .grid-list.grid-hover .grid-content:not([class*="ui-fill-"]):nth-child(odd):hover {
+.desktop .grid-list.grid-hover .grid-list-content:not([class*="ui-fill-"]):hover,
+.desktop .grid-list.grid-hover .grid-list-content:not([class*="ui-fill-"]):nth-child(odd):hover {
   background-color: hsla(0, 0%, 0%, 0.06);
   background-color: var(--grid-list-hover-bg);
 }
-.grid-list .grid-paging button:not(.btn) {
+.grid-list .grid-list-paging button:not(.btn) {
   color: inherit;
   background-color: transparent;
   border: 0;

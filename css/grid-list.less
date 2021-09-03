@@ -28,36 +28,36 @@
 }
 
 .ease-grid-list {
-    .grid-content { transition-property: background-color; transition-duration: @ease-default; }
+    .grid-list-content { transition-property: background-color; transition-duration: @ease-default; }
 }
 
 .grid-list {
-    .grid-content {
+    &-content {
         &:not([class*="col-"]) { padding: @grid-list-content-padding; ._border-var(@dir: border-bottom; @var: grid-list-border); }
         &:before,&:after { content: ""; display: table; }
         &:after { clear: both; }
         &.even { ._bg-var(grid-list-stripe-bg); }
         &.checked { background-color: @grid-list-checked !important; }
     }
-    &,.grid-content {
+    &,.grid-list-content {
         & > .row { margin-left: inherit; margin-right: inherit; }
     }
 
-    &:not(.grid-show-all) {
-        .grid-content {
+    &:not(.grid-list-showed-all) {
+        .grid-list-content {
             &:not(.show) { display: none; }
         }
     }
-    &.grid-show-all {
-        &.grid-filtered {
-            .grid-content {
+    &.grid-list-showed-all {
+        &.grid-list-filtered {
+            .grid-list-content {
                 &:not(.filtered) { display: none; }
             }
         }
     }
 
     &.grid-hover {
-        .grid-content {
+        .grid-list-content {
             &.even {
                 &:not([class*="ui-fill-"]) { ._bg-var(grid-list-stripe-bg); }
             }
@@ -70,7 +70,7 @@
         }
     }
 
-    .grid-paging {
+    .grid-list-paging {
         button {
             &:not(.btn) { color: inherit; background-color: @no-color; border: 0; }
         }
