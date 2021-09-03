@@ -218,7 +218,7 @@
                     <div class="col-6">
 
                         <!-- employee list -->
-                        <div class="grid-list grid-striped grid-hover card full-h round shadow-lg theme-gray ease-grid-list">
+                        <div class="grid-list grid-list-striped grid-hover card full-h round shadow-lg theme-gray ease-grid-list">
 
                             <div class="row sm-fluid">
                                 <div class="col-5 sm-no-padding-b">
@@ -227,13 +227,13 @@
                                         <button class="clear-form">
                                             <svg class="icon"><use href="#remove"/></svg>
                                         </button>
-                                        <input class="grid-filter" type="text" placeholder="Search">
+                                        <input class="grid-list-filter" type="text" placeholder="Search">
                                     </div>
                                 </div>
                                 <div class="col-7 ease-1st-form align-r sm-align-l">
                                     <div class="select form-inline round no-border ui-fill-light-100">
                                         <svg class="icon"><use href="#angle-down"/></svg>
-                                        <select class="grid-filter" data-ui-index="1">
+                                        <select class="grid-list-filter" data-ui-index="1">
                                             <option value="">Name</option>
                                             <option>John Doe</option>
                                             <option>Mary Doe</option>
@@ -243,7 +243,7 @@
                                     </div>
                                     <div class="select form-inline round no-border ui-fill-light-100">
                                         <svg class="icon"><use href="#angle-down"/></svg>
-                                        <select class="grid-filter" data-ui-index="2" data-ui-type="number">
+                                        <select class="grid-list-filter" data-ui-index="2" data-ui-type="number">
                                             <option value="">Age</option>
                                             <option>24</option>
                                             <option>25</option>
@@ -252,7 +252,7 @@
                                     </div>
                                     <div class="select form-inline round no-border ui-fill-light-100">
                                         <svg class="icon"><use href="#angle-down"/></svg>
-                                        <select class="grid-show">
+                                        <select class="grid-list-show">
                                             <option>5</option>
                                             <option>15</option>
                                             <option>30</option>
@@ -280,9 +280,9 @@
                                 </div>
                             </div>
 
-                            <div class="grid-container icons-xxs">
+                            <div class="grid-list-container icons-xxs">
 
-                                <div class="grid-content no-border" data-ui-val="John Doe|25|Designer">
+                                <div class="grid-list-content no-border" data-ui-val="John Doe|25|Designer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
@@ -297,7 +297,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Mary Doe|24|Designer">
+                                <div class="grid-list-content no-border" data-ui-val="Mary Doe|24|Designer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -312,7 +312,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Mike Taylor|29|Developer">
+                                <div class="grid-list-content no-border" data-ui-val="Mike Taylor|29|Developer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Mike Taylor
@@ -327,7 +327,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Bob Pool|25|Designer">
+                                <div class="grid-list-content no-border" data-ui-val="Bob Pool|25|Designer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Bob Pool
@@ -342,7 +342,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="John Doe|24|Designer">
+                                <div class="grid-list-content no-border" data-ui-val="John Doe|24|Designer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
@@ -357,7 +357,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Mary Doe|24|Researcher">
+                                <div class="grid-list-content no-border" data-ui-val="Mary Doe|24|Researcher">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -372,7 +372,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Mike Taylor|29|Developer">
+                                <div class="grid-list-content no-border" data-ui-val="Mike Taylor|29|Developer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Mike Taylor
@@ -387,7 +387,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Bob Pool|25|Designer">
+                                <div class="grid-list-content no-border" data-ui-val="Bob Pool|25|Designer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Bob Pool
@@ -402,7 +402,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="John Doe|25|Developer">
+                                <div class="grid-list-content no-border" data-ui-val="John Doe|25|Developer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
@@ -417,7 +417,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Mary Doe|24|Developer">
+                                <div class="grid-list-content no-border" data-ui-val="Mary Doe|24|Developer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -432,7 +432,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Mike Taylor|29|Developer">
+                                <div class="grid-list-content no-border" data-ui-val="Mike Taylor|29|Developer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Mike Taylor
@@ -447,7 +447,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Bob Pool|25|Researcher">
+                                <div class="grid-list-content no-border" data-ui-val="Bob Pool|25|Researcher">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Bob Pool
@@ -462,7 +462,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="John Doe|25|Researcher">
+                                <div class="grid-list-content no-border" data-ui-val="John Doe|25|Researcher">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
@@ -477,7 +477,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Mary Doe|24|Developer">
+                                <div class="grid-list-content no-border" data-ui-val="Mary Doe|24|Developer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -492,7 +492,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Mike Taylor|29|Developer">
+                                <div class="grid-list-content no-border" data-ui-val="Mike Taylor|29|Developer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Mike Taylor
@@ -507,7 +507,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Bob Pool|25|Researcher">
+                                <div class="grid-list-content no-border" data-ui-val="Bob Pool|25|Researcher">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Bob Pool
@@ -522,7 +522,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="John Doe|24|Designer">
+                                <div class="grid-list-content no-border" data-ui-val="John Doe|24|Designer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
@@ -537,7 +537,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Mary Doe|24|Researcher">
+                                <div class="grid-list-content no-border" data-ui-val="Mary Doe|24|Researcher">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -552,7 +552,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Mike Taylor|29|Developer">
+                                <div class="grid-list-content no-border" data-ui-val="Mike Taylor|29|Developer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Mike Taylor
@@ -567,7 +567,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Bob Pool|25|Developer">
+                                <div class="grid-list-content no-border" data-ui-val="Bob Pool|25|Developer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Bob Pool
@@ -582,7 +582,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="John Doe|25|Researcher">
+                                <div class="grid-list-content no-border" data-ui-val="John Doe|25|Researcher">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
@@ -597,7 +597,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Mary Doe|24|Developer">
+                                <div class="grid-list-content no-border" data-ui-val="Mary Doe|24|Developer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -612,7 +612,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Mike Taylor|29|Developer">
+                                <div class="grid-list-content no-border" data-ui-val="Mike Taylor|29|Developer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Mike Taylor
@@ -627,7 +627,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Bob Pool|25|Designer">
+                                <div class="grid-list-content no-border" data-ui-val="Bob Pool|25|Designer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Bob Pool
@@ -642,7 +642,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="John Doe|24|Developer">
+                                <div class="grid-list-content no-border" data-ui-val="John Doe|24|Developer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
@@ -657,7 +657,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Mary Doe|24|Developer">
+                                <div class="grid-list-content no-border" data-ui-val="Mary Doe|24|Developer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -672,7 +672,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Mike Taylor|29|Designer">
+                                <div class="grid-list-content no-border" data-ui-val="Mike Taylor|29|Designer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Mike Taylor
@@ -687,7 +687,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Bob Pool|25|Researcher">
+                                <div class="grid-list-content no-border" data-ui-val="Bob Pool|25|Researcher">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Bob Pool
@@ -702,7 +702,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="John Doe|25|Designer">
+                                <div class="grid-list-content no-border" data-ui-val="John Doe|25|Designer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
@@ -717,7 +717,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Mary Doe|24|Developer">
+                                <div class="grid-list-content no-border" data-ui-val="Mary Doe|24|Developer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -732,7 +732,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Mike Taylor|29|Researcher">
+                                <div class="grid-list-content no-border" data-ui-val="Mike Taylor|29|Researcher">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Mike Taylor
@@ -747,7 +747,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Bob Pool|25|Researcher">
+                                <div class="grid-list-content no-border" data-ui-val="Bob Pool|25|Researcher">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Bob Pool
@@ -762,7 +762,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="John Doe|25|Designer">
+                                <div class="grid-list-content no-border" data-ui-val="John Doe|25|Designer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
@@ -777,7 +777,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Mary Doe|24|Developer">
+                                <div class="grid-list-content no-border" data-ui-val="Mary Doe|24|Developer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -792,7 +792,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Mike Taylor|29|Developer">
+                                <div class="grid-list-content no-border" data-ui-val="Mike Taylor|29|Developer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Mike Taylor
@@ -807,7 +807,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Bob Pool|25|Researcher">
+                                <div class="grid-list-content no-border" data-ui-val="Bob Pool|25|Researcher">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Bob Pool
@@ -822,7 +822,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="John Doe|24|Researcher">
+                                <div class="grid-list-content no-border" data-ui-val="John Doe|24|Researcher">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Doe
@@ -837,7 +837,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Mary Doe|24|Developer">
+                                <div class="grid-list-content no-border" data-ui-val="Mary Doe|24|Developer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -852,7 +852,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Mike Taylor|29|Developer">
+                                <div class="grid-list-content no-border" data-ui-val="Mike Taylor|29|Developer">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Mike Taylor
@@ -867,7 +867,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-content no-border" data-ui-val="Bob Pool|25|Researcher">
+                                <div class="grid-list-content no-border" data-ui-val="Bob Pool|25|Researcher">
                                     <div class="row no-row-gap no-fluid">
                                         <div class="col-5">
                                             <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Bob Pool
@@ -888,11 +888,11 @@
                             <div class="row no-fluid border-t">
                                 <div class="col-6">
                                     <div class="padding-5-v">
-                                        Total <b class="grid-total"></b>
+                                        Total <b class="grid-list-total"></b>
                                     </div>
                                 </div>
                                 <div class="col-6 align-r">
-                                    <div class="grid-paging pagination ease-1st-btn" data-ui-default="btn round" data-ui-active="theme-default2 ui-fill-dark-100"></div>
+                                    <div class="grid-list-paging pagination ease-1st-btn" data-ui-default="btn round" data-ui-active="theme-default2 ui-fill-dark-100"></div>
                                 </div>
                             </div>
 

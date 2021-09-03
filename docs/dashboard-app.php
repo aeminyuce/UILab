@@ -275,7 +275,7 @@
                         </div>
 
                         <div class="card-side padding-15">
-                            <div class="grid-list grid-striped grid-hover ease-grid-list">
+                            <div class="grid-list grid-list-striped grid-hover ease-grid-list">
 
                                 <div class="form-lg ease-1st-form">
                                     <div class="text text-icon-both border-dual has-clear circle">
@@ -283,7 +283,7 @@
                                         <button class="clear-form">
                                             <svg class="icon"><use href="#remove"/></svg>
                                         </button>
-                                        <input class="grid-filter" type="text" placeholder="Search">
+                                        <input class="grid-list-filter" type="text" placeholder="Search">
                                     </div>
                                 </div>
 
@@ -304,9 +304,9 @@
 
                                 <span class="sp-5"></span>
 
-                                <div class="grid-container scroll-v" style="height: 534px;">
+                                <div class="grid-list-container scroll-v" style="height: 534px;">
 
-                                    <div class="grid-content no-border" data-ui-val="REP-701-2019|John Doe">
+                                    <div class="grid-list-content no-border" data-ui-val="REP-701-2019|John Doe">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -331,7 +331,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="grid-content no-border" data-ui-val="REP-616-2017|Mike Taylor">
+                                    <div class="grid-list-content no-border" data-ui-val="REP-616-2017|Mike Taylor">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -356,7 +356,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="grid-content no-border" data-ui-val="REP-103-2018|Mary Doe">
+                                    <div class="grid-list-content no-border" data-ui-val="REP-103-2018|Mary Doe">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -381,7 +381,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="grid-content no-border" data-ui-val="REP-701-2019|John Doe">
+                                    <div class="grid-list-content no-border" data-ui-val="REP-701-2019|John Doe">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -406,7 +406,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="grid-content no-border" data-ui-val="REP-616-2017|Mike Taylor">
+                                    <div class="grid-list-content no-border" data-ui-val="REP-616-2017|Mike Taylor">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -431,7 +431,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="grid-content no-border" data-ui-val="REP-103-2018|Mary Doe">
+                                    <div class="grid-list-content no-border" data-ui-val="REP-103-2018|Mary Doe">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -456,7 +456,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="grid-content no-border" data-ui-val="REP-701-2019|John Doe">
+                                    <div class="grid-list-content no-border" data-ui-val="REP-701-2019|John Doe">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -481,7 +481,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="grid-content no-border" data-ui-val="REP-616-2017|Mike Taylor">
+                                    <div class="grid-list-content no-border" data-ui-val="REP-616-2017|Mike Taylor">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -506,7 +506,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="grid-content no-border" data-ui-val="REP-103-2018|Mary Doe">
+                                    <div class="grid-list-content no-border" data-ui-val="REP-103-2018|Mary Doe">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -531,7 +531,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="grid-content no-border" data-ui-val="REP-701-2019|John Doe">
+                                    <div class="grid-list-content no-border" data-ui-val="REP-701-2019|John Doe">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -556,7 +556,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="grid-content no-border" data-ui-val="REP-616-2017|Mike Taylor">
+                                    <div class="grid-list-content no-border" data-ui-val="REP-616-2017|Mike Taylor">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -581,7 +581,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="grid-content no-border" data-ui-val="REP-103-2018|Mary Doe">
+                                    <div class="grid-list-content no-border" data-ui-val="REP-103-2018|Mary Doe">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
