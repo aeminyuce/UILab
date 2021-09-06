@@ -112,7 +112,7 @@ ui.topButton = {
                 scrollEl = ui.find('.' + ui.topButton.targetScrollable)[0];
             }
 
-            scrollEl.insertAdjacentHTML('beforeend', html);
+            ui.find('body')[0].insertAdjacentHTML('beforeend', html);
             togglerFnc();
 
             // Event Listeners
