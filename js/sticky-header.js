@@ -3,7 +3,26 @@
  Requires UI JS
 */
 
-ui.stickyHeader = {};
+ui.stickyHeader = {
+
+    // targets
+    target: 'header',
+
+    // main classnames
+    nameHeader: 'sticky-header',
+    nameStatic: 'sticky-static',
+
+    nameSticky: 'sticky',
+    nameXS: 'sticky-xs',
+    nameSM: 'sticky-sm',
+    nameMD: 'sticky-md',
+    nameLG: 'sticky-lg',
+    nameXL: 'sticky-xl',
+
+    // data attributes
+    dataClasses: 'data-ui-classes'
+
+};
 
 (function () {
 
@@ -21,14 +40,14 @@ ui.stickyHeader = {};
 
     clearSticky = function () {
 
-        if (ui.hasClass(document, 'sticky-header')) { // checked class name for avoiding lots of removing class when scrolling
+        if (ui.hasClass(document, ui.stickyHeader.nameHeader)) { // checked class name for avoiding lots of removing class when scrolling
 
             if (!stickyStatic) {
                 ui.find('body')[0].style.paddingTop = '0';
             }
 
-            ui.removeClass(document, 'sticky-header');
-            ui.removeClass(header, 'sticky');
+            ui.removeClass(document, ui.stickyHeader.nameHeader);
+            ui.removeClass(header, ui.stickyHeader.nameSticky);
 
             if (classes !== null && classes !== '') {
                 ui.removeClass(header, classes);
@@ -44,12 +63,12 @@ ui.stickyHeader = {};
 
             if (size !== '') {
 
-                if (window.innerWidth > ui.globals.xs && size === 'sticky-xs') { clearSticky(); return; }
-                if (window.innerWidth > ui.globals.sm && size === 'sticky-sm') { clearSticky(); return; }
-                if (window.innerWidth > ui.globals.md && size === 'sticky-md') { clearSticky(); return; }
+                if (window.innerWidth > ui.globals.xs && size === ui.stickyHeader.nameXS) { clearSticky(); return; }
+                if (window.innerWidth > ui.globals.sm && size === ui.stickyHeader.nameSM) { clearSticky(); return; }
+                if (window.innerWidth > ui.globals.md && size === ui.stickyHeader.nameMD) { clearSticky(); return; }
 
-                if (window.innerWidth < ui.globals.lg && size === 'sticky-lg') { clearSticky(); return; }
-                if (window.innerWidth < ui.globals.xl && size === 'sticky-xl') { clearSticky(); return; }
+                if (window.innerWidth < ui.globals.lg && size === ui.stickyHeader.nameLG) { clearSticky(); return; }
+                if (window.innerWidth < ui.globals.xl && size === ui.stickyHeader.nameXL) { clearSticky(); return; }
 
             }
 
@@ -57,8 +76,8 @@ ui.stickyHeader = {};
                 ui.find('body')[0].style.paddingTop = header.offsetHeight + 'px';
             }
 
-            ui.addClass(document, 'sticky-header');
-            ui.addClass(header, 'sticky');
+            ui.addClass(document, ui.stickyHeader.nameHeader);
+            ui.addClass(header, ui.stickyHeader.nameSticky);
 
             if (classes !== null && classes !== '') {
                 ui.addClass(header, classes);
@@ -70,7 +89,7 @@ ui.stickyHeader = {};
 
     ui.stickyHeader.Start = function () {
 
-        header = ui.find('header');
+        header = ui.find(ui.stickyHeader.target);
         if (header.length === 0) { return; }
 
         size = '';
@@ -79,24 +98,24 @@ ui.stickyHeader = {};
         classList = header.getAttribute('class');
         classList = classList.split(' ');
 
-        if (classList.indexOf('sticky-xs') > -1) {
-            size = 'sticky-xs';
+        if (classList.indexOf(ui.stickyHeader.nameXS) > -1) {
+            size = ui.stickyHeader.nameXS;
 
-        } else if (classList.indexOf('sticky-sm') > -1) {
-            size = 'sticky-sm';
+        } else if (classList.indexOf(ui.stickyHeader.nameSM) > -1) {
+            size = ui.stickyHeader.nameSM;
 
-        } else if (classList.indexOf('sticky-md') > -1) {
-            size = 'sticky-md';
+        } else if (classList.indexOf(ui.stickyHeader.nameMD) > -1) {
+            size = ui.stickyHeader.nameMD;
 
-        } else if (classList.indexOf('sticky-lg') > -1) {
-            size = 'sticky-lg';
+        } else if (classList.indexOf(ui.stickyHeader.nameLG) > -1) {
+            size = ui.stickyHeader.nameLG;
 
-        } else if (classList.indexOf('sticky-xl') > -1) {
-            size = 'sticky-xl';
+        } else if (classList.indexOf(ui.stickyHeader.nameXL) > -1) {
+            size = ui.stickyHeader.nameXL;
         }
 
-        classes = header.getAttribute('data-ui-classes');
-        stickyStatic = ui.hasClass(header, 'sticky-static');
+        classes = header.getAttribute(ui.stickyHeader.dataClasses);
+        stickyStatic = ui.hasClass(header, ui.stickyHeader.nameStatic);
 
         stickyLoader();
 
