@@ -31,18 +31,16 @@ ui.topButton = {
     /*globals window, document, ui, setTimeout ,setInterval, clearInterval */
 
     var
-        topBtn,
         scrollPos,
         scrollEl,
         btnAnimate;
 
     function togglerFnc() {
 
-        if (scrollEl === undefined) { return; }
+        var topBtn, showBtn, hideBtn;
+        topBtn = ui.find('.' + ui.topButton.target);
 
-        var showTopBtn, hideTopBtn;
-
-        showTopBtn = function () {
+        showBtn = function () {
 
             if (!ui.hasClass(topBtn, ui.topButton.nameOpen)) {
 
@@ -56,7 +54,7 @@ ui.topButton = {
 
         };
 
-        hideTopBtn = function () {
+        hideBtn = function () {
 
             if (ui.hasClass(topBtn, ui.topButton.nameOpen)) {
 
@@ -77,10 +75,10 @@ ui.topButton = {
                 scrollPos = window.pageYOffset;
 
                 if (scrollPos > (window.innerHeight / 3)) {
-                    showTopBtn();
+                    showBtn();
 
                 } else {
-                    hideTopBtn();
+                    hideBtn();
                 }
 
             }
@@ -90,10 +88,10 @@ ui.topButton = {
             scrollPos = scrollEl.scrollTop;
 
             if (scrollPos > (scrollEl.offsetHeight / 3) && window.innerWidth > ui.globals.sm) {
-                showTopBtn();
+                showBtn();
 
             } else {
-                hideTopBtn();
+                hideBtn();
             }
         }
 
@@ -115,8 +113,6 @@ ui.topButton = {
             }
 
             scrollEl.insertAdjacentHTML('beforeend', html);
-            topBtn = ui.find('.' + ui.topButton.target);
-
             togglerFnc();
 
             // Event Listeners
