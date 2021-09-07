@@ -5,10 +5,38 @@
 
 ui.weather = {
 
+    // targets
+    target: 'weather',
+
+    // main classnames
+    nameGraphs: 'graphs',
+    nameNight: 'night',
+
+    nameWday: 'w-dayname',
+    nameWdate: 'w-date',
+    nameWclock: 'w-clock',
+
+    // helper classnames
+    nameLoaded: 'loaded',
+
+    // animations: using with class names and file names!
+    nameClear: 'clear',
+    nameStars: 'stars',
+    nameShootingStar: 'shooting-star',
+    nameCloud: 'cloud',
+    nameCloudHeavy: 'cloud-heavy',
+    nameFog: 'fog',
+
+    // values
     days: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
     months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
 
-    graphPath: 'img/weather/' // animation graphics folder
+    graphPath: 'img/weather/', // animation graphics folder
+    fileType: 'png',
+
+    // data attributes
+    dataGraphs: 'data-ui-graphs',
+    dataDay: 'data-ui-day'
 
 };
 
@@ -20,11 +48,10 @@ ui.weather = {
     var
         dateLoaded,
         clockLoaded,
+        loadGraphs,
 
         re = new RegExp('\\s+\\s'),
-        rex = new RegExp('^\\s|\\s+$'),
-
-        loadGraphs;
+        rex = new RegExp('^\\s|\\s+$');
 
     ui.weather.Start = function () {
 
@@ -37,66 +64,71 @@ ui.weather = {
 
             var i, html;
 
-            graphs = ui.find('.weather .graphs:not(.loaded)');
-            ui.each(graphs, function () {
+            graphs = ui.find('.' + ui.weather.target + ' .' + ui.weather.nameGraphs + ':not(.' + ui.weather.nameLoaded + ')');
+            ui.each(graphs,
 
-                var data = this.getAttribute('data-ui-graphs');
-                if (data !== null && data !== '') {
+                function () {
 
-                    data = data.replace(re, ' ').replace(rex, '');
-                    if (data !== '') {
+                    var data = this.getAttribute(ui.weather.dataGraphs);
+                    if (data !== null && data !== '') {
 
-                        data = data.split(' ');
-                        if (data.length > 0) {
+                        data = data.replace(re, ' ').replace(rex, '');
+                        if (data !== '') {
 
-                            html = '';
-                            animations = [];
+                            data = data.split(' ');
+                            if (data.length > 0) {
 
-                            ui.addClass(this, 'loaded');
+                                html = '';
+                                animations = [];
 
-                            for (i = 0; i < data.length; i++) {
+                                ui.addClass(this, ui.weather.nameLoaded);
 
-                                if (data[i] === 'clear') { // convert sun to stars
-                                    animations.push('stars');
+                                for (i = 0; i < data.length; i++) {
 
-                                } else if (data[i] === 'stars') { // convert stars to sun
-                                    animations.push('clear');
+                                    if (data[i] === ui.weather.nameClear) { // convert sun to stars
+                                        animations.push(ui.weather.nameStars);
+
+                                    } else if (data[i] === ui.weather.nameStars) { // convert stars to sun
+                                        animations.push(ui.weather.nameClear);
+                                    }
+
+                                    if (data.length === 1 && (data[i] === ui.weather.nameCloud || data[i] === ui.weather.nameFog)) { // add sun and stars for cloudy and foggy weather
+
+                                        animations.push(ui.weather.nameClear);
+                                        animations.push(ui.weather.nameStars);
+
+                                    }
+
+                                    if (data[i] === ui.weather.nameCloudHeavy) { // add stars for mostly cloudy weather
+                                        animations.push(ui.weather.nameStars);
+                                    }
+
+                                    if (data.length === 1 && (data[i] === ui.weather.nameClear || data[i] === ui.weather.nameStars)) { // add shooting star if weather is clear
+                                        animations.push(ui.weather.nameShootingStar);
+                                    }
+
+                                    animations.push(data[i]); // add other animations
+
                                 }
 
-                                if (data.length === 1 && (data[i] === 'cloud' || data[i] === 'fog')) { // add sun and stars for cloudy and foggy weather
-
-                                    animations.push('clear');
-                                    animations.push('stars');
-
+                                // create animations
+                                for (i = 0; i < animations.length; i++) {
+                                    html += '<div ' +
+                                        'class="' + animations[i] + '" ' +
+                                        'style="background-image: url(' + ui.weather.graphPath + animations[i] + '.' + ui.weather.fileType + ');">' +
+                                    '</div>';
                                 }
 
-                                if (data[i] === 'cloud-heavy') { // add stars for mostly cloudy weather
-                                    animations.push('stars');
-                                }
-
-                                if (data.length === 1 && (data[i] === 'clear' || data[i] === 'stars')) { // add shooting star if weather is clear
-                                    animations.push('shooting-star');
-                                }
-
-                                animations.push(data[i]); // add other animations
+                                this.insertAdjacentHTML('beforeend', html);
+                                html = '';
 
                             }
-
-                            // create animations
-                            for (i = 0; i < animations.length; i++) {
-                                html += '<div class="' + animations[i] + '" style="background-image: url(' + ui.weather.graphPath + animations[i] + '.png);"></div>';
-                            }
-
-                            this.insertAdjacentHTML('beforeend', html);
-                            html = '';
 
                         }
 
                     }
 
-                }
-
-            });
+                });
 
         };
 
@@ -119,14 +151,16 @@ ui.weather = {
             month = date.getMonth();
             month = ui.weather.months[month];
 
-            dateHtml = '<span class="w-dayname">' + dateText + '</span>, ' + month + ' ' + date.getDate() + ', ' + date.getFullYear();
+            dateHtml = '<span class="' + ui.weather.nameWday + '">' + dateText + '</span>, ' + month + ' ' + date.getDate() + ', ' + date.getFullYear();
             dateText = dateText + ', ' + month + ' ' + day + ', ' + date.getFullYear();
 
             if (dateLoaded !== dateText) {
 
-                ui.each('.w-date', function () {
-                    this.innerHTML = dateHtml;
-                });
+                ui.each('.' + ui.weather.nameWdate,
+
+                    function () {
+                        this.innerHTML = dateHtml;
+                    });
 
             }
 
@@ -134,7 +168,7 @@ ui.weather = {
 
             // clock
             hour = date.getHours().toString();
-            if (hour.length === 1) { hour = '0' + hour; }
+            if (hour.length === 1) { hour = '0' + hour; } // convert two digits
 
             minute = date.getMinutes().toString();
             if (minute.length === 1) { minute = '0' + minute; }
@@ -144,57 +178,61 @@ ui.weather = {
 
             if (clockLoaded !== clockText) {
 
-                ui.each('.w-clock', function () {
-                    this.innerHTML = clockHtml;
-                });
+                ui.each('.' + ui.weather.nameWclock,
+
+                    function () {
+                        this.innerHTML = clockHtml;
+                    });
 
                 // check sunrise and sunset
-                graphs = ui.find('.weather .graphs[data-ui-day]');
-                ui.each(graphs, function () {
+                graphs = ui.find('.' + ui.weather.target + ' .' + ui.weather.nameGraphs + '[' + ui.weather.dataDay + ']');
+                ui.each(graphs,
 
-                    sunPos = this.getAttribute('data-ui-day');
-                    if (sunPos === null || sunPos === '') { return; }
+                    function () {
 
-                    sunPos = sunPos.split(',');
-                    if (sunPos.length !== 2) { return; }
+                        sunPos = this.getAttribute(ui.weather.dataDay);
+                        if (sunPos === null || sunPos === '') { return; }
 
-                    sunrise = sunPos[0].split(':');
-                    if (sunrise.length !== 2) { return; }
+                        sunPos = sunPos.split(',');
+                        if (sunPos.length !== 2) { return; }
 
-                    if (sunrise[0].length === 1) { sunrise[0] = '0' + sunrise[0]; } // sunrise hour
-                    if (sunrise[1].length === 1) { sunrise[1] = '0' + sunrise[1]; } // sunrise minute
+                        sunrise = sunPos[0].split(':');
+                        if (sunrise.length !== 2) { return; }
 
-                    sunset = sunPos[1].split(':');
-                    if (sunset.length !== 2) { return; }
+                        if (sunrise[0].length === 1) { sunrise[0] = '0' + sunrise[0]; } // sunrise hour
+                        if (sunrise[1].length === 1) { sunrise[1] = '0' + sunrise[1]; } // sunrise minute
 
-                    if (sunset[0].length === 1) { sunset[0] = '0' + sunset[0]; } // sunset hour
-                    if (sunset[1].length === 1) { sunset[1] = '0' + sunset[1]; } // sunset minute
+                        sunset = sunPos[1].split(':');
+                        if (sunset.length !== 2) { return; }
 
-                    // convert day or night
-                    sun = ui.find('.clear', this)[0];
-                    that = ui.closest(this, '.weather')[0];
+                        if (sunset[0].length === 1) { sunset[0] = '0' + sunset[0]; } // sunset hour
+                        if (sunset[1].length === 1) { sunset[1] = '0' + sunset[1]; } // sunset minute
 
-                    if (((hour === sunrise[0] && minute < sunrise[1]) || hour < sunrise[0]) || ((hour === sunset[0] && minute > sunset[1]) || hour > sunset[0])) { // night
+                        // convert day or night
+                        sun = ui.find('.' + ui.weather.nameClear, this)[0];
+                        that = ui.closest(this, '.' + ui.weather.target)[0];
 
-                        ui.addClass(that, 'night');
+                        if (((hour === sunrise[0] && minute < sunrise[1]) || hour < sunrise[0]) || ((hour === sunset[0] && minute > sunset[1]) || hour > sunset[0])) { // night
 
-                        // sun positioning
-                        if (sun !== undefined) {
-                            sun.style.removeProperty('left');
+                            ui.addClass(that, ui.weather.nameNight);
+
+                            // sun positioning
+                            if (sun !== undefined) {
+                                sun.style.removeProperty('left');
+                            }
+
+                        } else { // day
+
+                            ui.removeClass(that, ui.weather.nameNight);
+
+                            // sun positioning
+                            if (sun !== undefined) {
+                                sun.style.left = parseInt(hour - sunrise[0]) * 100 / (sunset[0] - sunrise[0]) + '%';
+                            }
+
                         }
 
-                    } else { // day
-
-                        ui.removeClass(that, 'night');
-
-                        // sun positioning
-                        if (sun !== undefined) {
-                            sun.style.left = parseInt(hour - sunrise[0]) * 100 / (sunset[0] - sunrise[0]) + '%';
-                        }
-
-                    }
-
-                });
+                    });
 
             }
 
@@ -216,7 +254,7 @@ ui.weather = {
 
         function () {
 
-            if (ui.ajax.classNames.indexOf('weather') > -1) {
+            if (ui.ajax.classNames.indexOf(ui.weather.target) > -1) {
                 loadGraphs();
             }
 
