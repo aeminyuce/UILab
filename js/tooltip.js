@@ -5,9 +5,27 @@
 
 ui.tooltip = {
 
-    theme: '', // use themes
-    border: '', // ex: 'border', 'border-dual', 'border-lg' etc.
-    classes: 'round' // class names for tooltip content
+    // targets
+    target: 'tooltip',
+
+    // main classnames
+    nameActive: 'tooltip-active',
+    nameContent: 'tooltip-content',
+
+    // helper classnames
+    nameOpen: 'open',
+    nameOpenEase: 'open-ease',
+    nameClose: 'close',
+
+    // styling classnames
+    stylesTarget: 'round ease-tooltip',
+    stylesArrow: '',
+
+    // custom events
+    eventClose: 'ui:tooltipClose',
+
+    // data attributes
+
 };
 
 (function () {
@@ -24,16 +42,16 @@ ui.tooltip = {
 
     function removeFnc() {
 
-        var that = ui.find('.tooltip')[0];
+        var that = ui.find('.' + ui.tooltip.target)[0];
 
         clearTimeout(removeTimer);
 
         removeTimer = setTimeout(function () {
-            ui.removeClass(that, 'open-ease');
+            ui.removeClass(that, ui.tooltip.nameOpenEase);
 
             removeTimer2x = setTimeout(function () {
 
-                ui.removeClass(that, 'open');
+                ui.removeClass(that, ui.tooltip.nameOpen);
                 that.parentNode.removeChild(that);
 
             }, ui.globals.ease);
@@ -44,9 +62,9 @@ ui.tooltip = {
 
     function createFnc(source, title) {
 
-        var win, winRect, re, rex, html, sourceRect, arr, pos, posRecall, calc, winStyles, arrowStyles;
+        var win, winRect, html, sourceRect, arr, pos, posRecall, calc;
 
-        win = ui.find('.tooltip');
+        win = ui.find('.' + ui.tooltip.target);
         sourceRect = source.getBoundingClientRect();
 
         // clear remove timers
@@ -55,34 +73,24 @@ ui.tooltip = {
 
         // create
         if (win.length > 0) {
-            ui.find('.tooltip-content', win[0])[0].innerHTML = title;
+            ui.find('.' + ui.tooltip.nameContent, win[0])[0].innerHTML = title;
 
         } else {
 
-            re = new RegExp('\\s+\\s');
-            rex = new RegExp('^\\s|\\s+$');
-
-            winStyles = ui.tooltip.classes + ' ' + ui.tooltip.border + ' ' + ui.tooltip.theme;
-            winStyles = winStyles.replace(re, ' ').replace(rex, '');
-
-            arrowStyles = ui.tooltip.border + ' ' + ui.tooltip.theme;
-            arrowStyles = arrowStyles.replace(re, ' ').replace(rex, '');
-
-            html = '<div class="tooltip ' + winStyles + ' ease-tooltip">' +
-                    '<div class="tooltip-content">' + title + '</div>' +
-                    '<span>' +
-                        '<i class="bg ' + arrowStyles + '"></i>' +
-                        '<i class="' + ui.tooltip.theme + '"></i>' +
-                    '</span>' +
-                '</div>';
+            html = '<div class="' + ui.tooltip.target + ' ' + ui.tooltip.stylesTarget + '">' +
+                        '<div class="' + ui.tooltip.nameContent + '">' + title + '</div>' +
+                        '<span>' +
+                            '<i class="' + ui.tooltip.stylesArrow + '"></i>' +
+                        '</span>' +
+                    '</div>';
 
             ui.find('body')[0].insertAdjacentHTML('afterbegin', html);
-            win = ui.find('.tooltip');
+            win = ui.find('.' + ui.tooltip.target);
 
         }
 
         // show
-        ui.addClass(win, 'open');
+        ui.addClass(win, ui.tooltip.nameOpen);
         setTimeout(function () {
 
             // check screen limits
@@ -167,7 +175,7 @@ ui.tooltip = {
             win[0].style.left = (sourceRect.left + window.pageXOffset + calc.hor) + 'px';
 
             win[0].setAttribute('data-ui-pos', pos);
-            ui.addClass(win, 'open-ease');
+            ui.addClass(win, ui.tooltip.nameOpenEase);
 
         }, 10);
 
@@ -178,28 +186,28 @@ ui.tooltip = {
         var title, dataTitle;
 
         title = that.getAttribute('title'); // don't change to that.title
-        if (type === 'open' && title !== null && title !== '') {
+        if (type === ui.tooltip.nameOpen && title !== null && title !== '') {
 
             createFnc(that, title);
 
             that.setAttribute('data-ui-title', title);
             that.removeAttribute('title');
 
-            ui.addClass(that, 'tooltip-active');
+            ui.addClass(that, ui.tooltip.nameActive);
 
         } else {
 
             dataTitle = that.getAttribute('data-ui-title');
             if (dataTitle !== null && dataTitle !== '') {
 
-                if (type === 'close') {
+                if (type === ui.tooltip.nameClose) {
 
                     removeFnc(that);
 
                     that.removeAttribute('data-ui-title');
                     that.setAttribute('title', dataTitle);
 
-                    ui.removeClass(that, 'tooltip-active');
+                    ui.removeClass(that, ui.tooltip.nameActive);
 
                 }
 
@@ -212,78 +220,94 @@ ui.tooltip = {
     ui.tooltip.Start = function () {
 
         // Event Listeners
-        ui.on(document, 'mouseenter mouseleave', '[data-ui-tooltip]:not([data-ui-only="mobile"])', function (e) {
+        ui.on(document,
+            'mouseenter mouseleave',
 
-            if (ui.userAgents.desktop) {
+            '[data-ui-tooltip]:not([data-ui-only="mobile"])',
 
-                var type;
+            function (e) {
 
-                if (e.type === 'mouseenter') {
-                    type = 'open';
+                if (ui.userAgents.desktop) {
 
-                } else {
-                    type = 'close';
+                    var type;
+
+                    if (e.type === 'mouseenter') {
+                        type = ui.tooltip.nameOpen;
+
+                    } else {
+                        type = ui.tooltip.nameClose;
+                    }
+
+                    tooltipFnc(this, type);
+
                 }
 
-                tooltipFnc(this, type);
-
-            }
-
-        });
-
-        ui.on(document, 'touchstart touchmove touchend', '[data-ui-tooltip]:not([data-ui-only="desktop"])', function (e) {
-
-            var that = this;
-
-            if (e.type === 'touchstart') {
-                touchControl = ui.hasClass(that, 'tooltip-active');
-            }
-
-            ui.off(that, 'touchmove.ui:tooltipClose');
-
-            ui.on(that, 'touchmove.ui:tooltipClose', function () {
-                isScrolling = true;
             });
 
-            if (e.type === 'touchend') {
+        ui.on(document,
+            'touchstart touchmove touchend',
 
-                if (isScrolling) {
+            '[data-ui-tooltip]:not([data-ui-only="desktop"])',
 
-                    isScrolling = false;
-                    return;
+            function (e) {
 
+                var that = this;
+
+                if (e.type === 'touchstart') {
+                    touchControl = ui.hasClass(that, ui.tooltip.nameActive);
                 }
 
-                if (ui.userAgents.mobile && ui.userAgents.ios) {
+                ui.off(that, 'touchmove.' + ui.tooltip.eventClose);
 
-                    if (!touchControl) {
-                        e.preventDefault();
-                    }
+                ui.on(that,
+                    'touchmove.' + ui.tooltip.eventClose,
 
-                } else {
-
-                    if (!touchControl && e.cancelable && e.defaultPrevented) { // touchstart or touchmove with preventDefault we need this. Because, now Chrome and Android browsers preventDefault automatically.
-                        e.preventDefault();
-                    }
-
-                }
-
-                clearTimeout(pageTouchmoveTimer);
-                pageTouchmoveTimer = setTimeout(function () {
-
-                    tooltipFnc(that, 'open');
-                    ui.on(document, 'touchend.ui:tooltipClose', function () {
-
-                        tooltipFnc(that, 'close');
-                        ui.off(document, 'touchend.ui:tooltipClose');
-
+                    function () {
+                        isScrolling = true;
                     });
 
-                }, ui.globals.fast / 2);
+                if (e.type === 'touchend') {
 
-            }
+                    if (isScrolling) {
 
-        });
+                        isScrolling = false;
+                        return;
+
+                    }
+
+                    if (ui.userAgents.mobile && ui.userAgents.ios) {
+
+                        if (!touchControl) {
+                            e.preventDefault();
+                        }
+
+                    } else {
+
+                        if (!touchControl && e.cancelable && e.defaultPrevented) { // touchstart or touchmove with preventDefault we need this. Because, now Chrome and Android browsers preventDefault automatically.
+                            e.preventDefault();
+                        }
+
+                    }
+
+                    clearTimeout(pageTouchmoveTimer);
+                    pageTouchmoveTimer = setTimeout(function () {
+
+                        tooltipFnc(that, ui.tooltip.nameOpen);
+                        ui.on(document,
+                            'touchend.' + ui.tooltip.eventClose,
+
+                            function () {
+
+                                tooltipFnc(that, ui.tooltip.nameClose);
+                                ui.off(document, 'touchend.' + ui.tooltip.eventClose);
+
+                            });
+
+                    }, ui.globals.fast / 2);
+
+                }
+
+            });
 
     };
 

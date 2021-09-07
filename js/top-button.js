@@ -14,8 +14,8 @@ ui.topButton = {
     nameOpenEase: 'open-ease',
 
     // styling classnames
-    nameTarget: 'circle ease-layout',
-    nameIcon: 'icon ease-layout',
+    stylesTarget: 'circle ease-layout',
+    stylesIcon: 'icon ease-layout',
 
     // icons
     icon: 'arrow-to-top',
@@ -101,8 +101,8 @@ ui.topButton = {
 
         if (ui.userAgents.desktop) {
 
-            var html = '<button class="' + ui.topButton.target + ' ' + ui.topButton.nameTarget + '" title="' + ui.topButton.titleText + '">' +
-                    '<svg class="' + ui.topButton.nameIcon + '"><use href="#' + ui.topButton.icon + '"/></svg>' +
+            var html = '<button class="' + ui.topButton.target + ' ' + ui.topButton.stylesTarget + '" title="' + ui.topButton.titleText + '">' +
+                    '<svg class="' + ui.topButton.stylesIcon + '"><use href="#' + ui.topButton.icon + '"/></svg>' +
                 '</button>';
 
             if (ui.topButton.targetScrollable === 'body') {
