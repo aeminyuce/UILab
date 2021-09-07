@@ -79,7 +79,11 @@
         }
     }
 
-    .dropdown-menu { ._bg-var(highlighted); overflow-x: hidden; overflow-y: auto; position: absolute; z-index: 1; transform-origin: top left; -webkit-overflow-scrolling: touch; }
+    .dropdown-menu {
+        ._bg-var(highlighted); overflow-x: hidden; overflow-y: auto; position: absolute; z-index: 1; transform-origin: top left;
+
+        .mobile & { -webkit-overflow-scrolling: touch; }
+    }
 
 
     &:not(.nav) {

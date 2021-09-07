@@ -4707,6 +4707,8 @@ input.btn {
   position: absolute;
   z-index: 1;
   transform-origin: top left;
+}
+.mobile .dropdown .dropdown-menu {
   -webkit-overflow-scrolling: touch;
 }
 .dropdown:not(.nav) .dropdown-menu {
