@@ -12,6 +12,7 @@
                             <span>
                                 Clear <span class="w-date"></span>
                             </span>
+                            <span class="w-clock"></span>
                         </div>
                         <ul class="days icons-lg">
                             <li><b>Now</b><svg class="icon"><use href="#temperature"/></svg><span>36</span></li>
@@ -41,6 +42,7 @@
                             <span>
                                 Cloudy <b class="w-date"></b>
                             </span>
+                            <span class="w-clock"></span>
                         </div>
                         <ul class="days icons-lg">
                             <li><b>Now</b><svg class="icon"><use href="#cloud-sun"/></svg><span>12</span></li>
@@ -70,6 +72,7 @@
                             <span>
                                 Mostly Cloudy <b class="w-date"></b>
                             </span>
+                            <span class="w-clock"></span>
                         </div>
                         <ul class="days icons-lg">
                             <li><b>Now</b><svg class="icon"><use href="#fog"/></svg><span>3</span></li>
@@ -99,6 +102,7 @@
                             <span>
                                 Foggy <b class="w-date"></b>
                             </span>
+                            <span class="w-clock"></span>
                         </div>
                         <ul class="days icons-lg">
                             <li><b>Now</b><svg class="icon"><use href="#cloud"/></svg><span>12</span></li>
@@ -128,6 +132,7 @@
                             <span>
                                 Rainy <b class="w-date"></b>
                             </span>
+                            <span class="w-clock"></span>
                         </div>
                         <ul class="days icons-lg">
                             <li><b>Now</b><svg class="icon"><use href="#rain"/></svg><span>36</span></li>
@@ -157,6 +162,7 @@
                             <span>
                                 Mostly Rainy <b class="w-date"></b>
                             </span>
+                            <span class="w-clock"></span>
                         </div>
                         <ul class="days icons-lg">
                             <li><b>Now</b><svg class="icon"><use href="#bolt"/></svg><span>12</span></li>
@@ -186,6 +192,7 @@
                             <span>
                                 Snow <b class="w-date"></b>
                             </span>
+                            <span class="w-clock"></span>
                         </div>
                         <ul class="days icons-lg">
                             <li><b>Now</b><svg class="icon"><use href="#rain-snow"/></svg><span>3</span></li>
@@ -215,6 +222,7 @@
                             <span>
                                 Clear <b class="w-date"></b>
                             </span>
+                            <span class="w-clock"></span>
                         </div>
                         <ul class="days icons-lg">
                             <li><b>Now</b><svg class="icon"><use href="#moon"/></svg><span>32</span></li>
