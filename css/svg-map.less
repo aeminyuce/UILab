@@ -28,32 +28,27 @@
         html:not(.ie) & { height: auto; }
         .ie & { height: @svg-map-height-for-ie; }
 
-        g {
-            path {
-                stroke-width: @svg-map-inner-stroke-width;
+        path {
+            stroke-width: @svg-map-inner-stroke-width;
 
-                &:not([fill]) {
-                    ._fill-var(svg-map-path-fill);
+            &:not([fill]) {
+                ._fill-var(svg-map-path-fill);
 
-                    &:hover { ._fill-var(svg-map-path-fill-hover); }
-                }
-                &:not([stroke]) {
-                    ._stroke-var(body-bg);
+                &:hover { ._fill-var(svg-map-path-fill-hover); }
+            }
+            &:not([stroke]) {
+                ._stroke-var(body-bg);
 
-                    .card & { ._stroke-var(card-bg); }
-                }
+                .card & { ._stroke-var(card-bg); }
             }
 
             &.active {
-                path {
-                    &:not([fill]) { fill: currentColor; }
-                    &:hover { opacity: 1 !important; }
-                }
+                &:not([fill]) { fill: currentColor; }
+                &:hover { opacity: 1 !important; }
             }
 
-            &[data-ui-href] {
-                path { cursor: pointer; }
-            }
+            &[data-ui-href] { cursor: pointer; }
         }
+
     }
 }

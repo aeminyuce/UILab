@@ -7462,32 +7462,32 @@ html:not(.ie) .svg-map svg {
 .ie .svg-map svg {
   height: 360px;
 }
-.svg-map svg g path {
+.svg-map svg path {
   stroke-width: 1.5;
 }
-.svg-map svg g path:not([fill]) {
+.svg-map svg path:not([fill]) {
   fill: hsla(0, 0%, 0%, 0.08);
   fill: var(--svg-map-path-fill);
 }
-.svg-map svg g path:not([fill]):hover {
+.svg-map svg path:not([fill]):hover {
   fill: hsla(0, 0%, 0%, 0.15);
   fill: var(--svg-map-path-fill-hover);
 }
-.svg-map svg g path:not([stroke]) {
+.svg-map svg path:not([stroke]) {
   stroke: hsl(0, 0%, 98%);
   stroke: var(--body-bg);
 }
-.card .svg-map svg g path:not([stroke]) {
+.card .svg-map svg path:not([stroke]) {
   stroke: hsl(0, 0%, 100%);
   stroke: var(--card-bg);
 }
-.svg-map svg g.active path:not([fill]) {
+.svg-map svg path.active:not([fill]) {
   fill: currentColor;
 }
-.svg-map svg g.active path:hover {
+.svg-map svg path.active:hover {
   opacity: 1 !important;
 }
-.svg-map svg g[data-ui-href] path {
+.svg-map svg path[data-ui-href] {
   cursor: pointer;
 }
 /* mobile menu */
