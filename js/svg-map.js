@@ -3,7 +3,26 @@
  Requires UI JS
 */
 
-ui.svgMap = {};
+ui.svgMap = {
+
+    // targets
+    target: '.svg-map',
+
+    // helper classnames
+    nameActive: 'active',
+
+    // tags
+    tagTarget: 'path',
+
+    // values
+    opacityMax: '0.75',
+    opacityMin: '0.25',
+
+    // data attributes
+    dataSize: 'data-ui-size',
+    dataHref: 'data-ui-href'
+
+};
 
 (function () {
 
@@ -12,60 +31,74 @@ ui.svgMap = {};
 
     ui.svgMap.Start = function () {
 
-        var map, arr, data, g, opacity;
+        var map, arr, data, items, opacity;
 
-        map = ui.find('.svg-map');
+        map = ui.find(ui.svgMap.target);
         if (map.length === 0) { return; }
 
         arr = [];
 
-        ui.each(map, function (i) {
+        ui.each(map,
 
-            arr[i] = [];
-            g = ui.find('g[data-ui-size]', this);
+            function (i) {
 
-            ui.each(g, function () {
+                arr[i] = [];
+                items = ui.find(ui.svgMap.tagTarget + '[' + ui.svgMap.dataSize + ']', this);
 
-                data = this.getAttribute('data-ui-size');
-                if (data > 0) { arr[i].push(data); }
+                ui.each(items,
+
+                    function () {
+
+                        data = this.getAttribute(ui.svgMap.dataSize);
+                        if (data > 0) { arr[i].push(data); }
+
+                    });
+
+                arr[i] = arr[i].sort(function (a, b) { return b - a; });
+
+                ui.each(items,
+
+                    function () {
+
+                        data = this.getAttribute(ui.svgMap.dataSize);
+                        if (data > 0) {
+
+                            ui.addClass(this, ui.svgMap.nameActive);
+
+                            opacity = Math.sqrt(data) / Math.sqrt(arr[i][0]);
+                            opacity = opacity.toFixed(2);
+
+                            if (opacity > ui.svgMap.opacityMax) {
+                                opacity = ui.svgMap.opacityMax;
+                            }
+
+                            if (opacity < ui.svgMap.opacityMin) {
+                                opacity = ui.svgMap.opacityMin;
+                            }
+
+                            this.setAttribute('style', 'opacity: ' + opacity + ';');
+
+                        }
+
+                    });
+
+                arr[i] = [];
 
             });
 
-            arr[i] = arr[i].sort(function (a, b) { return b - a; });
+        // Event Listeners
+        ui.on(ui.svgMap.tagTarget,
+            'click',
 
-            ui.each(g, function () {
+            function () {
 
-                data = this.getAttribute('data-ui-size');
-                if (data > 0) {
+                var href = this.getAttribute(ui.svgMap.dataHref);
 
-                    ui.addClass(this, 'active');
-
-                    opacity = Math.sqrt(data) / Math.sqrt(arr[i][0]);
-                    opacity = opacity.toFixed(2);
-
-                    if (opacity > 1) { opacity = 1; }
-                    if (opacity < 0.5) { opacity = 0.5; } /* optional */
-
-                    ui.find('path', this)[0].setAttribute('style', 'opacity: ' + opacity + ';');
-
+                if (href !== null) {
+                    window.location = href;
                 }
 
             });
-
-            arr[i] = [];
-
-        });
-
-        // Event Listeners
-        ui.on('g', 'click', function () {
-
-            var href = this.getAttribute('data-ui-href');
-
-            if (href !== null) {
-                window.location = href;
-            }
-
-        });
 
     };
 
