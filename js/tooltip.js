@@ -21,10 +21,29 @@ ui.tooltip = {
     stylesTarget: 'round ease-tooltip',
     stylesArrow: '',
 
-    // custom events
-    eventClose: 'ui:tooltipClose',
+    // values
+    scrollbarSize: 15,
+
+    t: 't',
+    b: 'b',
+    r: 'r',
+    l: 'l',
+
+    tr: 'tr',
+    tl: 'tl',
+    br: 'br',
+    bl: 'bl',
 
     // data attributes
+    dataTooltip: 'data-ui-tooltip',
+    dataTitle: 'data-ui-title',
+    dataPos: 'data-ui-pos',
+
+    dataDesktop: 'data-ui-only="desktop"',
+    dataMobile: 'data-ui-only="mobile"',
+
+    // custom events
+    eventClose: 'ui:tooltipClose'
 
 };
 
@@ -97,11 +116,11 @@ ui.tooltip = {
             winRect = win[0].getBoundingClientRect();
 
             // detect defined position
-            arr = ['t', 'b', 'r', 'l', 'tr', 'tl', 'br', 'bl'];
+            arr = [ui.tooltip.t, ui.tooltip.b, ui.tooltip.r, ui.tooltip.l, ui.tooltip.tr, ui.tooltip.tl, ui.tooltip.br, ui.tooltip.bl];
 
-            pos = source.getAttribute('data-ui-tooltip');
+            pos = source.getAttribute(ui.tooltip.dataTooltip);
             if (arr.indexOf(pos) < 0) {
-                pos = 't';
+                pos = ui.tooltip.t;
             }
 
             // calculate positioning
@@ -114,33 +133,33 @@ ui.tooltip = {
 
             calc.Fnc = function () {
 
-                if (pos === 't' || pos === 'b') { // top || bottom
+                if (pos === ui.tooltip.t || pos === ui.tooltip.b) { // top || bottom
                     calc.hor = (sourceRect.width - winRect.width) / 2;
                 }
 
-                if (pos === 't' || pos === 'tr' || pos === 'tl') { // top
-                    calc.ver = -sourceRect.height + (sourceRect.height - winRect.height) - 15;
+                if (pos === ui.tooltip.t || pos === ui.tooltip.tr || pos === ui.tooltip.tl) { // top
+                    calc.ver = -sourceRect.height + (sourceRect.height - winRect.height) - ui.tooltip.scrollbarSize;
 
-                } else if (pos === 'b' || pos === 'br' || pos === 'bl') { // bottom
-                    calc.ver = sourceRect.height + 15;
+                } else if (pos === ui.tooltip.b || pos === ui.tooltip.br || pos === ui.tooltip.bl) { // bottom
+                    calc.ver = sourceRect.height + ui.tooltip.scrollbarSize;
 
-                } else if (pos === 'r') { // right
-
-                    calc.ver = (sourceRect.height / 2) - (winRect.height / 2);
-                    calc.hor = sourceRect.width + 15;
-
-                } else if (pos === 'l') { // left
+                } else if (pos === ui.tooltip.r) { // right
 
                     calc.ver = (sourceRect.height / 2) - (winRect.height / 2);
-                    calc.hor = -sourceRect.width + (sourceRect.width - winRect.width) - 15;
+                    calc.hor = sourceRect.width + ui.tooltip.scrollbarSize;
+
+                } else if (pos === ui.tooltip.l) { // left
+
+                    calc.ver = (sourceRect.height / 2) - (winRect.height / 2);
+                    calc.hor = -sourceRect.width + (sourceRect.width - winRect.width) - ui.tooltip.scrollbarSize;
 
                 }
 
-                if (pos === 'tr' || pos === 'br') { // top right || bottom right
-                    calc.hor = (sourceRect.width / 2) - 15;
+                if (pos === ui.tooltip.tr || pos === ui.tooltip.br) { // top right || bottom right
+                    calc.hor = (sourceRect.width / 2) - ui.tooltip.scrollbarSize;
 
-                } else if (pos === 'tl' || pos === 'bl') { // top left || bottom left
-                    calc.hor = -(sourceRect.width / 2) + (sourceRect.width - winRect.width) + 15;
+                } else if (pos === ui.tooltip.tl || pos === ui.tooltip.bl) { // top left || bottom left
+                    calc.hor = -(sourceRect.width / 2) + (sourceRect.width - winRect.width) + ui.tooltip.scrollbarSize;
                 }
 
             };
@@ -150,17 +169,17 @@ ui.tooltip = {
             posRecall = '';
 
             if (sourceRect.top - window.pageYOffset + calc.ver < -window.pageYOffset) { // top
-                posRecall += 'b';
+                posRecall += ui.tooltip.b;
 
             } else if (sourceRect.top + window.pageYOffset + winRect.height + calc.ver > window.innerHeight + window.pageYOffset) { // bottom
-                posRecall += 't';
+                posRecall += ui.tooltip.t;
             }
 
             if (sourceRect.left + window.pageXOffset + calc.hor + winRect.width > window.innerWidth + window.pageXOffset) { // right
-                posRecall += 'l';
+                posRecall += ui.tooltip.l;
 
             } else if (sourceRect.left - window.pageXOffset + calc.hor < 0) { // left
-                posRecall += 'r';
+                posRecall += ui.tooltip.r;
             }
 
             if (posRecall !== '') { calc.reCall = true; }
@@ -174,7 +193,7 @@ ui.tooltip = {
             win[0].style.top = (sourceRect.top + window.pageYOffset + calc.ver) + 'px';
             win[0].style.left = (sourceRect.left + window.pageXOffset + calc.hor) + 'px';
 
-            win[0].setAttribute('data-ui-pos', pos);
+            win[0].setAttribute(ui.tooltip.dataPos, pos);
             ui.addClass(win, ui.tooltip.nameOpenEase);
 
         }, 10);
@@ -185,26 +204,26 @@ ui.tooltip = {
 
         var title, dataTitle;
 
-        title = that.getAttribute('title'); // don't change to that.title
+        title = that.getAttribute('title');
         if (type === ui.tooltip.nameOpen && title !== null && title !== '') {
 
             createFnc(that, title);
 
-            that.setAttribute('data-ui-title', title);
+            that.setAttribute(ui.tooltip.dataTitle, title);
             that.removeAttribute('title');
 
             ui.addClass(that, ui.tooltip.nameActive);
 
         } else {
 
-            dataTitle = that.getAttribute('data-ui-title');
+            dataTitle = that.getAttribute(ui.tooltip.dataTitle);
             if (dataTitle !== null && dataTitle !== '') {
 
                 if (type === ui.tooltip.nameClose) {
 
                     removeFnc(that);
 
-                    that.removeAttribute('data-ui-title');
+                    that.removeAttribute(ui.tooltip.dataTitle);
                     that.setAttribute('title', dataTitle);
 
                     ui.removeClass(that, ui.tooltip.nameActive);
@@ -223,7 +242,7 @@ ui.tooltip = {
         ui.on(document,
             'mouseenter mouseleave',
 
-            '[data-ui-tooltip]:not([data-ui-only="mobile"])',
+            '[' + ui.tooltip.dataTooltip + ']:not([' + ui.tooltip.dataMobile + '])',
 
             function (e) {
 
@@ -247,7 +266,7 @@ ui.tooltip = {
         ui.on(document,
             'touchstart touchmove touchend',
 
-            '[data-ui-tooltip]:not([data-ui-only="desktop"])',
+            '[' + ui.tooltip.dataTooltip + ']:not([' + ui.tooltip.dataDesktop + '])',
 
             function (e) {
 

@@ -7939,9 +7939,6 @@ html:not(.ie) .svg-map svg {
   background-color: hsl(220, 14%, 21%);
   background-color: var(--tooltip-bg);
 }
-.tooltip > span i.round {
-  border-radius: 0;
-}
 /* alerts */
 .alerts-opened,
 .alerts-opened > body {
