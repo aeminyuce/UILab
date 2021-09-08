@@ -3,7 +3,25 @@
  Requires UI JS
 */
 
-ui.textareaCounter = {};
+ui.textareaCounter = {
+
+    // targets
+    target: 'textarea',
+
+    // main classnames
+    nameToggle: 'toggle-textarea',
+
+    // helper classnames
+    nameChange: 'change',
+
+    // tags
+    tagTextarea: 'textarea',
+
+    // data attributes
+    dataCounter: 'data-ui-counter',
+    dataChange: 'data-ui-change'
+
+};
 
 (function () {
 
@@ -21,20 +39,20 @@ ui.textareaCounter = {};
             p = t.parentElement;
             v = t.value;
 
-            total = p.getAttribute('data-ui-counter');
+            total = p.getAttribute(ui.textareaCounter.dataCounter);
             length = (total - v.length);
 
             if (length <= 0) {
 
                 length = 0;
 
-                p.setAttribute('data-ui-change', '0');
+                p.setAttribute(ui.textareaCounter.dataChange, '0');
                 t.value = v.substring(0, total);
 
             }
 
-            ui.addClass(p, 'change');
-            p.setAttribute('data-ui-change', length);
+            ui.addClass(p, ui.textareaCounter.nameChange);
+            p.setAttribute(ui.textareaCounter.dataChange, length);
 
             return false;
 
@@ -42,44 +60,51 @@ ui.textareaCounter = {};
 
         loadCounters = function () {
 
-            ui.each('.textarea[data-ui-counter]:not(.toggle-textarea):not(.change)', function () {
+            ui.each('.' + ui.textareaCounter.target + '[' + ui.textareaCounter.dataCounter + ']:not(.' + ui.textareaCounter.nameToggle + '):not(.' + ui.textareaCounter.nameChange + ')',
 
-                var textarea = ui.find('textarea', this)[0];
-                counter(textarea);
-
-            });
+                function () {
+                    counter(ui.find(ui.textareaCounter.tagTextarea, this)[0]);
+                });
 
         };
         loadCounters();
 
         // Event Listeners
-        ui.on(document, 'keydown keypress change', '.textarea[data-ui-counter] textarea', function (e) {
+        ui.on(document,
+            'keydown keyup keypress change',
+            '.' + ui.textareaCounter.target + '[' + ui.textareaCounter.dataCounter + '] ' + ui.textareaCounter.tagTextarea,
 
-            if (e.type === 'keydown' && e.ctrlKey) {
+            function (e) {
 
-                var that = this;
-                setTimeout(function () { counter(that); }, 0);
+                if (e.type === 'keydown' && e.ctrlKey) {
 
-            } else { counter(this); }
+                    var that = this;
+                    setTimeout(function () { counter(that); }, 0);
 
-        });
+                } else { counter(this); }
 
-        ui.on(document, 'reset', 'form', function () {
+            });
 
-            var i, that;
+        ui.on(document,
+            'reset',
+            'form',
 
-            that = ui.find('.textarea[data-ui-counter] textarea');
-            if (that.length === 0) { return; }
+            function () {
 
-            setTimeout(function () {
+                var i, that;
 
-                for (i = 0; i < that.length; i++) {
-                    counter(that[i]);
-                }
+                that = ui.find('.' + ui.textareaCounter.target + '[' + ui.textareaCounter.dataCounter + '] ' + ui.textareaCounter.tagTextarea);
+                if (that.length === 0) { return; }
 
-            }, 0);
+                setTimeout(function () {
 
-        });
+                    for (i = 0; i < that.length; i++) {
+                        counter(that[i]);
+                    }
+
+                }, 0);
+
+            });
 
     };
 
@@ -92,7 +117,7 @@ ui.textareaCounter = {};
 
         function () {
 
-            if (ui.ajax.text.indexOf('data-ui-counter="') > 0) {
+            if (ui.ajax.text.indexOf(ui.textareaCounter.dataCounter) > 0) {
                 loadCounters();
             }
 

@@ -787,7 +787,7 @@ ui.darkMode = {
     target: document,
 
     // main classnames
-    nameToggleBtn: 'ui-darkmode-toggle',
+    nameToggle: 'ui-darkmode-toggle',
 
     // helper classnames
     nameDark: 'dark',
@@ -871,7 +871,7 @@ ui.darkMode = {
         ui.on(document,
             'click',
 
-            '.' + ui.darkMode.nameToggleBtn, function (e) {
+            '.' + ui.darkMode.nameToggle, function (e) {
 
                 e.preventDefault();
 

@@ -11,7 +11,7 @@ ui.tabs = {
 
     // main classnames
     nameContent: 'tab-content',
-    nameToggleTab: 'tab-toggle',
+    nameToggle: 'tab-toggle',
 
     // helper classnames
     nameOpen: 'open',
@@ -101,7 +101,7 @@ ui.tabs = {
                 toggle = false;
                 classes = parent.getAttribute(ui.tabs.dataClasses);
 
-                if (ui.hasClass(this, ui.tabs.nameToggleTab)) { toggle = true; }
+                if (ui.hasClass(this, ui.tabs.nameToggle)) { toggle = true; }
 
                 if (ui.hasClass(this, ui.tabs.nameActive)) {
 
@@ -159,7 +159,7 @@ ui.tabs = {
 
                                 if (ev.button !== 2) { // inherited right clicks
 
-                                    if (ev.target.className.split(' ').indexOf(ui.tabs.nameToggleTab) !== -1 && ui.closest(ev.target, '.' + ui.tabs.targetParent)[0] === parent) { // controlling same toggled tab buttons
+                                    if (ev.target.className.split(' ').indexOf(ui.tabs.nameToggle) !== -1 && ui.closest(ev.target, '.' + ui.tabs.targetParent)[0] === parent) { // controlling same toggled tab buttons
                                         return;
                                     }
 

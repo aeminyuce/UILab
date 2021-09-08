@@ -70,6 +70,8 @@ ui.topButton = {
 
         if (ui.topButton.targetScrollable === 'body') {
 
+            if (scrollEl === undefined) { return; }
+
             if (scrollEl.offsetHeight > (window.innerHeight * 2) && window.innerWidth > ui.globals.sm) {
 
                 scrollPos = window.pageYOffset;
