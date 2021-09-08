@@ -213,7 +213,7 @@ ui.dropdown = {
                             // prevent for non listing contents
                             if (content !== undefined) {
 
-                                if (ui.closest(content, '.' + ui.dropdown.target)[0] !== undefined) { // check other content class names
+                                if (ui.closest(content, '.' + ui.dropdown.target)[0] !== undefined) { // check other content classnames
                                     return;
                                 }
 

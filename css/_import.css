@@ -7414,20 +7414,20 @@ html:not(.edge) .donut-chart svg:not(.icon) {
   height: 100%;
   position: absolute;
 }
-.pie-chart li .l {
+.pie-chart li .pie-l {
   left: 0;
 }
-.pie-chart li .l b {
+.pie-chart li .pie-l b {
   left: 100%;
   border-radius: 0 1000px 1000px 0;
   -ms-transform-origin: left;
   transform-origin: left;
 }
-.pie-chart li .r {
+.pie-chart li .pie-r {
   overflow: hidden;
   left: 50%;
 }
-.pie-chart li .r b {
+.pie-chart li .pie-r b {
   left: -100%;
   border-radius: 1000px 0 0 1000px;
   -ms-transform: rotate(180deg);
@@ -7438,13 +7438,13 @@ html:not(.edge) .donut-chart svg:not(.icon) {
 .pie-chart:not(.open) li {
   opacity: 0;
 }
-.pie-chart.open li .l b {
+.pie-chart.open li .pie-l b {
   animation: pie-spin-l 1.6s ease-out forwards;
 }
-.pie-chart.open li .l + .r b {
+.pie-chart.open li .pie-l + .pie-r b {
   animation: pie-spin-r 0.8s ease-in forwards;
 }
-.pie-chart.open li .r b {
+.pie-chart.open li .pie-r b {
   animation: pie-spin-r 1.6s ease-in forwards;
 }
 /* svg map */

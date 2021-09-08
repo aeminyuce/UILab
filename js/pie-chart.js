@@ -3,7 +3,42 @@
  Requires UI JS, Tooltip JS
 */
 
-ui.pieChart = {};
+ui.pieChart = {
+
+    // targets
+    target: 'pie-chart',
+
+    // main classnames
+    namePieLeft: 'pie-l',
+    namePieRight: 'pie-r',
+
+    // helper classnames
+    nameOpen: 'open',
+    nameOpenEase: 'open-ease',
+
+    // outer classnames
+    nameNoEffects: 'no-effects',
+
+    // tags
+    tagDatasHolder: 'ul',
+    tagData: 'li',
+
+    tagPiesHolder: 'span',
+    tagPie: 'b',
+
+    tagMsgHolder: 'div',
+    tagMsg: 'span',
+    tagTitle: 'i',
+
+    // values
+    opacityShowTitle: '.25',
+
+    // data attributes
+    dataPercent: 'data-ui-percent',
+    dataFill: 'data-ui-fill',
+    dataTitle: 'data-ui-title'
+
+};
 
 (function () {
 
@@ -16,15 +51,17 @@ ui.pieChart = {};
 
         var chart, elems;
 
-        chart = ui.find('.pie-chart');
+        chart = ui.find('.' + ui.pieChart.target);
         if (chart.length < 1) { return; }
 
-        ui.each(chart, function () {
+        ui.each(chart,
 
-            elems = ui.find('ul', this)[0];
-            elems.style.height = elems.offsetWidth + 'px';
+            function () {
 
-        });
+                elems = ui.find(ui.pieChart.tagDatasHolder, this)[0];
+                elems.style.height = elems.offsetWidth + 'px';
+
+            });
 
     }
 
@@ -34,20 +71,20 @@ ui.pieChart = {};
 
             var chart, elems, deg, textDeg, loadFnc, arr, fill, percent, html, title, msgHolder, msg;
 
-            chart = ui.find('.pie-chart');
+            chart = ui.find('.' + ui.pieChart.target);
             if (chart.length < 1) { return; }
 
             arr = [];
 
             loadFnc = function (parent, that, i) {
 
-                percent = that.getAttribute('data-ui-percent');
+                percent = that.getAttribute(ui.pieChart.dataPercent);
 
                 if (percent === null && percent === '') {
                     percent = 0;
                 }
 
-                fill = that.getAttribute('data-ui-fill');
+                fill = that.getAttribute(ui.pieChart.dataFill);
 
                 if (fill !== null && fill !== '') {
                     that.style.color = fill;
@@ -56,11 +93,26 @@ ui.pieChart = {};
                 deg = (percent * 360) / 100;
                 if (deg > 180) {
 
-                    html = '<span class="l"><b style="-ms-transform: rotate(' + (deg - 180) + 'deg); transform: rotate(' + (deg - 180) + 'deg);"></b></span>' +
-                        '<span class="r"><b></b></span>';
+                    html = '<' + ui.pieChart.tagPiesHolder + ' class="' + ui.pieChart.namePieLeft + '">' +
+
+                                '<' + ui.pieChart.tagPie + ' style="-ms-transform: rotate(' + (deg - 180) + 'deg); transform: rotate(' + (deg - 180) + 'deg);">' +
+                                '</' + ui.pieChart.tagPie + '>' +
+
+                            '</' + ui.pieChart.tagPiesHolder + '>' +
+                            '<' + ui.pieChart.tagPiesHolder + ' class="' + ui.pieChart.namePieRight + '">' +
+
+                                '<' + ui.pieChart.tagPie + '>' +
+                                '</' + ui.pieChart.tagPie + '>' +
+
+                            '</' + ui.pieChart.tagPiesHolder + '>';
 
                 } else {
-                    html = '<span class="r"><b style="-ms-transform: rotate(' + deg + 'deg); transform: rotate(' + deg + 'deg);"></b></span>';
+                    html = '<' + ui.pieChart.tagPiesHolder + ' class="' + ui.pieChart.namePieRight + '">' +
+
+                                '<' + ui.pieChart.tagPie + ' style="-ms-transform: rotate(' + deg + 'deg); transform: rotate(' + deg + 'deg);">' +
+                                '</' + ui.pieChart.tagPie + '>' +
+
+                            '</' + ui.pieChart.tagPiesHolder + '>';
                 }
 
                 that.insertAdjacentHTML('beforeEnd', html);
@@ -71,27 +123,30 @@ ui.pieChart = {};
 
                 textDeg = arr[i - 1] - 90 + (deg / 2);
 
-                html = '<span style="-ms-transform: rotate(' + textDeg + 'deg) translateY(-50%); transform: rotate(' + textDeg + 'deg) translateY(-50%);">' +
-                        '<i style="-ms-transform: rotate(' + -textDeg + 'deg); transform: rotate(' + -textDeg + 'deg);">' + percent + '%</i>' +
-                    '</span>';
+                html = '<' + ui.pieChart.tagMsg + ' style="-ms-transform: rotate(' + textDeg + 'deg) translateY(-50%); transform: rotate(' + textDeg + 'deg) translateY(-50%);">' +
 
-                msgHolder = ui.find('div', parent)[0];
+                            '<' + ui.pieChart.tagTitle + ' style="-ms-transform: rotate(' + -textDeg + 'deg); transform: rotate(' + -textDeg + 'deg);">' + percent + '%' +
+                            '</' + ui.pieChart.tagTitle + '>' +
+
+                        '</' + ui.pieChart.tagMsg + '>';
+
+                msgHolder = ui.find(ui.pieChart.tagMsgHolder, parent)[0];
                 if (msgHolder === undefined) {
 
-                    parent.insertAdjacentHTML('beforeEnd', '<div></div>');
-                    msgHolder = ui.find('div', parent)[0];
+                    parent.insertAdjacentHTML('beforeEnd', '<' + ui.pieChart.tagMsgHolder + '></' + ui.pieChart.tagMsgHolder + '>');
+                    msgHolder = ui.find(ui.pieChart.tagMsgHolder, parent)[0];
 
                 }
 
                 msgHolder.insertAdjacentHTML('beforeEnd', html);
 
-                title = that.getAttribute('data-ui-title');
-                if (title !== null && title !== '') { // add tooltip for data-ui-title attributes
+                title = that.getAttribute(ui.pieChart.dataTitle);
+                if (title !== null && title !== '') { // add tooltip for dataTitle attributes
 
-                    msg = ui.find('span', msgHolder)[i];
-                    msg = ui.find('i', msg)[0];
+                    msg = ui.find(ui.pieChart.tagMsg, msgHolder)[i];
+                    msg = ui.find(ui.pieChart.tagTitle, msg)[0];
 
-                    msg.setAttribute('data-ui-tooltip', '');
+                    msg.setAttribute(ui.tooltip.dataTooltip, '');
                     msg.setAttribute('title', title);
 
                 }
@@ -112,31 +167,35 @@ ui.pieChart = {};
 
             };
 
-            ui.each(chart, function () {
+            ui.each(chart,
 
-                var that = this;
+                function () {
 
-                elems = ui.find('li', that);
-                ui.find('ul', this)[0].style.height = that.offsetWidth + 'px';
+                    var that = this;
 
-                ui.each(elems, function (i) {
-                    loadFnc(that, this, i);
+                    elems = ui.find(ui.pieChart.tagData, that);
+                    ui.find(ui.pieChart.tagDatasHolder, this)[0].style.height = that.offsetWidth + 'px';
+
+                    ui.each(elems,
+
+                        function (i) {
+                            loadFnc(that, this, i);
+                        });
+
+                    if (ui.hasClass(document, ui.pieChart.nameNoEffects)) {
+                        ui.addClass(that, ui.pieChart.nameOpen + ' ' + ui.pieChart.nameOpenEase);
+
+                    } else {
+
+                        ui.addClass(that, ui.pieChart.nameOpen);
+
+                        setTimeout(function () {
+                            ui.addClass(that, ui.pieChart.nameOpenEase);
+                        }, ui.globals.slow5x); // wait for animations complete
+
+                    }
+
                 });
-
-                if (ui.hasClass(document, 'no-effects')) {
-                    ui.addClass(that, 'open open-ease');
-
-                } else {
-
-                    ui.addClass(that, 'open');
-
-                    setTimeout(function () {
-                        ui.addClass(that, 'open-ease');
-                    }, ui.globals.slow5x); // wait for animation complete
-
-                }
-
-            });
 
         };
 
@@ -144,35 +203,44 @@ ui.pieChart = {};
         chartsResizer();
 
         // Event Listeners
-        ui.on(document, 'mouseenter mouseleave touchend', '.pie-chart > div span i', function (e) {
+        ui.on(document,
+            'mouseenter mouseleave touchend',
 
-            var i, chart, elems, msg;
+            '.' + ui.pieChart.target + ' > ' + ui.pieChart.tagMsgHolder + ' ' + ui.pieChart.tagMsg + ' ' + ui.pieChart.tagTitle,
 
-            chart = ui.closest(this, '.pie-chart')[0];
-            elems = ui.find('li', chart);
+            function (e) {
 
-            if (e.type === 'mouseleave') {
+                var i, chart, elems, msg;
 
-                ui.each(elems, function () {
-                    this.style.removeProperty('opacity');
-                });
+                chart = ui.closest(this, '.' + ui.pieChart.target)[0];
+                elems = ui.find(ui.pieChart.tagData, chart);
 
-            } else {
+                if (e.type === 'mouseleave') {
 
-                msg = ui.find('div', chart)[0];
-                msg = ui.find('span', msg);
+                    ui.each(elems,
 
-                i = Array.prototype.slice.call(msg).indexOf(this.parentElement);
+                        function () {
+                            this.style.removeProperty('opacity');
+                        });
 
-                ui.each(elems, function () {
-                    this.style.opacity = '.25';
-                });
+                } else {
 
-                elems[i].style.removeProperty('opacity');
+                    msg = ui.find(ui.pieChart.tagMsgHolder, chart)[0];
+                    msg = ui.find(ui.pieChart.tagMsg, msg);
 
-            }
+                    i = Array.prototype.slice.call(msg).indexOf(this.parentElement);
 
-        });
+                    ui.each(elems,
+
+                        function () {
+                            this.style.opacity = ui.pieChart.opacityShowTitle;
+                        });
+
+                    elems[i].style.removeProperty('opacity');
+
+                }
+
+            });
 
     };
 
@@ -188,7 +256,7 @@ ui.pieChart = {};
 
         function () {
 
-            if (ui.ajax.classNames.indexOf('pie-chart') > -1) {
+            if (ui.ajax.classNames.indexOf(ui.pieChart.target) > -1) {
                 loadCharts();
             }
 

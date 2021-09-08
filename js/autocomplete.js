@@ -239,7 +239,7 @@ ui.autocomplete = {
                             // get json data with ajax
                             ui.ajax({
 
-                                url : src + '?inputValue=' + v,
+                                url : src + '?val=' + v,
                                 beforesend: function (xhr) {
 
                                     // abort still processing previous autocomplete requests

@@ -97,10 +97,14 @@ ui.tooltip = {
         } else {
 
             html = '<div class="' + ui.tooltip.target + ' ' + ui.tooltip.stylesTarget + '">' +
-                        '<div class="' + ui.tooltip.nameContent + '">' + title + '</div>' +
+
+                        '<div class="' + ui.tooltip.nameContent + '">' +
+                            title +
+                        '</div>' +
                         '<span>' +
                             '<i class="' + ui.tooltip.stylesArrow + '"></i>' +
                         '</span>' +
+
                     '</div>';
 
             ui.find('body')[0].insertAdjacentHTML('afterbegin', html);

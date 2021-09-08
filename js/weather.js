@@ -19,7 +19,7 @@ ui.weather = {
     // helper classnames
     nameLoaded: 'loaded',
 
-    // animations: using with class names and file names!
+    // animations: using with classnames and file names!
     nameClear: 'clear',
     nameStars: 'stars',
     nameShootingStar: 'shooting-star',
@@ -114,9 +114,9 @@ ui.weather = {
                                 // create animations
                                 for (i = 0; i < animations.length; i++) {
                                     html += '<div ' +
-                                        'class="' + animations[i] + '" ' +
-                                        'style="background-image: url(' + ui.weather.graphPath + animations[i] + '.' + ui.weather.fileType + ');">' +
-                                    '</div>';
+                                                'class="' + animations[i] + '" ' +
+                                                'style="background-image: url(' + ui.weather.graphPath + animations[i] + '.' + ui.weather.fileType + ');">' +
+                                            '</div>';
                                 }
 
                                 this.insertAdjacentHTML('beforeend', html);

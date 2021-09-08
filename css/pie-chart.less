@@ -59,12 +59,12 @@
 
             b { background-color: currentColor; width: 100%; height: 100%; position: absolute; }
         }
-        .l {
+        .pie-l {
             left: 0;
 
             b { left: 100%; border-radius: 0 @circle @circle 0; -ms-transform-origin: left; transform-origin: left; }
         }
-        .r {
+        .pie-r {
             overflow: hidden; left: 50%;
 
             b { left: -100%; border-radius: @circle 0 0 @circle; -ms-transform: rotate(180deg); transform: rotate(180deg); -ms-transform-origin: right; transform-origin: right; }
@@ -75,11 +75,11 @@
     }
     &.open {
         li {
-            .l {
+            .pie-l {
                 b { animation: pie-spin-l 1.6s ease-out forwards; }
-                & + .r b { animation: pie-spin-r .8s ease-in forwards; }
+                & + .pie-r b { animation: pie-spin-r .8s ease-in forwards; }
             }
-            .r b { animation: pie-spin-r 1.6s ease-in forwards; }
+            .pie-r b { animation: pie-spin-r 1.6s ease-in forwards; }
         }
     }
 }
