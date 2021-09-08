@@ -333,7 +333,7 @@ ui.lineCharts = {
 
                         } else {
 
-                            circles += 'data-ui-tooltip ' +
+                            circles += ui.tooltip.dataTooltip + ' ' +
                                        'title="' + y[i] + '" ' +
                                     '/>';
 

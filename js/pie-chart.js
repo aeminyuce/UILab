@@ -36,10 +36,7 @@ ui.pieChart = {
     // data attributes
     dataPercent: 'data-ui-percent',
     dataFill: 'data-ui-fill',
-    dataTitle: 'data-ui-title',
-
-    // outer data attributes
-    dataTooltip: 'data-ui-tooltip'
+    dataTitle: 'data-ui-title'
 
 };
 
@@ -149,8 +146,11 @@ ui.pieChart = {
                     msg = ui.find(ui.pieChart.tagMsg, msgHolder)[i];
                     msg = ui.find(ui.pieChart.tagTitle, msg)[0];
 
-                    msg.setAttribute(ui.pieChart.dataTooltip, ''); // Optional!
                     msg.setAttribute('title', title);
+
+                    if (ui.tooltip !== undefined) { // Optional!
+                        msg.setAttribute(ui.tooltip.dataTooltip, '');
+                    }
 
                 }
 
