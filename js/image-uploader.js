@@ -1,6 +1,6 @@
 /*
  UI Image Uploader JS
- Requires UI JS, UI Alerts JS
+ Requires UI JS
 */
 
 ui.imageUploader = {
@@ -33,7 +33,7 @@ ui.imageUploader = {
 (function () {
 
     'use strict';
-    /*globals document, ui, setTimeout, Image, FileReader, FormData, atob, Uint8Array, Blob */
+    /*globals document, ui, setTimeout, Image, FileReader, FormData, atob, Uint8Array, Blob, confirm, alert */
 
     ui.imageUploader.Start = function () {
 
@@ -325,10 +325,17 @@ ui.imageUploader = {
 
                         img[i].onerror = function () {
 
-                            ui.alerts.message({
-                                msg: allowed[i].name + ' ' + ui.imageUploader.msgImgError,
-                                theme: 'danger'
-                            });
+                            if (ui.alerts === undefined) {
+                                alert(ui.imageUploader.msgImgError);
+
+                            } else {
+
+                                ui.alerts.message({
+                                    msg: allowed[i].name + ' ' + ui.imageUploader.msgImgError,
+                                    theme: 'danger'
+                                });
+
+                            }
 
                             loadImagesAfter(); // end of images
 
@@ -496,7 +503,7 @@ ui.imageUploader = {
 
             e.preventDefault();
 
-            var fnc, that, formData, uploader, list, file, tag, img, imgType;
+            var fnc, that, formData, uploader, list, file, tag, img, imgType, confirmed;
             that = this;
 
             fnc = function () {
@@ -540,28 +547,43 @@ ui.imageUploader = {
                         if (status === 'success') { // check ajax connection
 
                             response = JSON.parse(response);
-                            if (response.success === true) { // check server connection
 
-                                ui.alerts.message({
-                                    msg: response.message, // show server message
-                                    theme: 'success'
-                                });
+                            if (ui.alerts === undefined) {
+                                alert(response.message); // show server message
 
                             } else {
 
-                                ui.alerts.message({
-                                    msg: response.message, // show server message
-                                    theme: 'danger'
-                                });
+                                if (response.success === true) { // check server connection
+
+                                    ui.alerts.message({
+                                        msg: response.message, // show server message
+                                        theme: 'success'
+                                    });
+
+                                } else {
+
+                                    ui.alerts.message({
+                                        msg: response.message, // show server message
+                                        theme: 'danger'
+                                    });
+
+                                }
 
                             }
 
                         } else {
 
-                            ui.alerts.message({
-                                msg: ui.imageUploader.msgError,
-                                theme: 'warning'
-                            });
+                            if (ui.alerts === undefined) {
+                                alert(ui.imageUploader.msgError);
+
+                            } else {
+
+                                ui.alerts.message({
+                                    msg: ui.imageUploader.msgError,
+                                    theme: 'warning'
+                                });
+
+                            }
 
                         }
 
@@ -571,17 +593,24 @@ ui.imageUploader = {
 
             };
 
-            ui.alerts.dialog({
+            if (ui.alerts === undefined) {
 
-                msg: ui.imageUploader.msgBeforeUpload,
-                success: ui.imageUploader.msgConfirm,
-                error: ui.imageUploader.msgNotConfirm,
+                confirmed = confirm(ui.imageUploader.msgBeforeUpload);
+                if (confirmed) { fnc(); }
 
-                callback: function (value) {
-                    if (value === 'success') { fnc(); }
-                }
+            } else {
 
-            });
+                ui.alerts.dialog({
+
+                    msg: ui.imageUploader.msgBeforeUpload,
+
+                    callback: function (value) {
+                        if (value === 'success') { fnc(); }
+                    }
+
+                });
+
+            }
 
         });
 

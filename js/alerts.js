@@ -7,11 +7,11 @@ ui.alerts = {
 
     dialogTheme: '', // use themes
     dialogClasses: 'round shadow-lg',
-    dialogMessages: true,
+    dialogMessages: false, // shows automatically clicked buttons textContent
 
     messageTheme: '', // use themes
     messageClasses: 'round shadow-lg',
-    messageTimer: 6000, // miliseconds, wait for atomatically close messages
+    messageTimer: 6000, // wait for atomatically close messages
 
     closeIcon: 'remove'
 

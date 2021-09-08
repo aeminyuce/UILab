@@ -1,6 +1,6 @@
 /*
  UI Line Charts JS
- Requires UI JS, Tooltip JS
+ Requires UI JS
 */
 
 ui.lineCharts = {
@@ -314,16 +314,32 @@ ui.lineCharts = {
                         }
 
                         // create circles
-                        circles += '<circle cx="' + posX + '" cy="' + posY + '" r="' + ui.lineCharts.circleSize + '" fill="' + data.color[j] + '" stroke="' + data.color[j] + '" stroke-width="0" data-ui-tooltip title="' + y[i] + '"';
-
-                        if (ui.lineCharts.lineStroke === 0) {
-                            circles += ' fill="' + data.color[j] + '"';
-                        }
+                        circles += '<circle ' +
+                                        'cx="' + posX + '" ' +
+                                        'cy="' + posY + '" ' +
+                                        'r="' + ui.lineCharts.circleSize + '" ' +
+                                        'fill="' + data.color[j] + '" ' +
+                                        'stroke="' + data.color[j] + '" ' +
+                                        'stroke-width="0" ';
 
                         if (data[j].links[i] !== '') { // check links
-                            circles += ' onclick="location.href = \'' + data[j].links[i] + '\';"';
+                            circles += 'onclick="location.href = \'' + data[j].links[i] + '\';"';
                         }
-                        circles += '/>';
+
+                        if (ui.tooltip === undefined) { // Optional!
+
+                            circles += '/>' +
+                                        '<title>' + y[i] + '</title>';
+
+                        } else {
+
+                            circles += 'data-ui-tooltip ' +
+                                       'title="' + y[i] + '" ' +
+                                    '/>';
+
+                        }
+
+                        '</circle>';
 
                     }
 

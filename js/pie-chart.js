@@ -1,6 +1,6 @@
 /*
  UI Pie Chart JS
- Requires UI JS, Tooltip JS
+ Requires UI JS
 */
 
 ui.pieChart = {
@@ -36,7 +36,10 @@ ui.pieChart = {
     // data attributes
     dataPercent: 'data-ui-percent',
     dataFill: 'data-ui-fill',
-    dataTitle: 'data-ui-title'
+    dataTitle: 'data-ui-title',
+
+    // outer data attributes
+    dataTooltip: 'data-ui-tooltip'
 
 };
 
@@ -141,12 +144,12 @@ ui.pieChart = {
                 msgHolder.insertAdjacentHTML('beforeEnd', html);
 
                 title = that.getAttribute(ui.pieChart.dataTitle);
-                if (title !== null && title !== '') { // add tooltip for dataTitle attributes
+                if (title !== null && title !== '') { // add titles for dataTitle attributes
 
                     msg = ui.find(ui.pieChart.tagMsg, msgHolder)[i];
                     msg = ui.find(ui.pieChart.tagTitle, msg)[0];
 
-                    msg.setAttribute(ui.tooltip.dataTooltip, '');
+                    msg.setAttribute(ui.pieChart.dataTooltip, ''); // Optional!
                     msg.setAttribute('title', title);
 
                 }
