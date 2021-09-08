@@ -72,6 +72,7 @@ ui.textareaCounter = {
         // Event Listeners
         ui.on(document,
             'keydown keyup keypress change',
+
             '.' + ui.textareaCounter.target + '[' + ui.textareaCounter.dataCounter + '] ' + ui.textareaCounter.tagTextarea,
 
             function (e) {
@@ -87,6 +88,7 @@ ui.textareaCounter = {
 
         ui.on(document,
             'reset',
+
             'form',
 
             function () {
