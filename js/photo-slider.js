@@ -29,8 +29,7 @@ ui.photoSlider = {
     rexFiles: '(\.png|\.gif|\.jeg|\.jpg|\.svg)$', // .webp and .tiff not supported!
 
     // data attributes
-    dataSrc: 'data-ui-src',
-    dataSrcset: 'data-ui-srcset'
+    dataSrc: 'data-ui-src'
 
 };
 
@@ -40,11 +39,10 @@ ui.photoSlider = {
 
     var
         count,
-        retina,
         dataSrcLists,
         loadedImages;
 
-    /*globals window, document, ui, Image */
+    /*globals document, ui, Image */
     function photoSliderLoader() {
 
         var slider, j, images, dataSrc, nav, navDots, re;
@@ -55,13 +53,7 @@ ui.photoSlider = {
             function (i) {
 
                 if (dataSrcLists[i] !== undefined) { return; }
-
-                if (retina) {
-                    dataSrc = images[i].getAttribute(ui.photoSlider.dataSrcset);
-
-                } else {
-                    dataSrc = images[i].getAttribute(ui.photoSlider.dataSrc);
-                }
+                dataSrc = images[i].getAttribute(ui.photoSlider.dataSrc);
 
                 slider = ui.closest(this, '.' + ui.photoSlider.target)[0];
                 ui.addClass(slider, ui.photoSlider.nameLoaded);
@@ -82,7 +74,6 @@ ui.photoSlider = {
                 if (!dataSrcLists[i][0].match(re)) { return;  }
 
                 images[i].removeAttribute(ui.photoSlider.dataSrc);
-                images[i].removeAttribute(ui.photoSlider.dataSrcset);
 
                 // create nav
                 nav = ui.find('.' + ui.photoSlider.nameNav, slider)[0];
@@ -122,12 +113,6 @@ ui.photoSlider = {
         count = [];
         dataSrcLists = [];
         loadedImages = [];
-
-        retina = false;
-
-        if (window.devicePixelRatio > 1) { // check retina images
-            retina = true;
-        }
 
         photoSliderLoader();
 
@@ -179,45 +164,23 @@ ui.photoSlider = {
                 if (loadedImages[i][count[i]] === undefined) {
 
                     loadedImages[i][count[i]] = new Image();
-                    if (retina) {
+                    loadedImages[i][count[i]].src = dataSrcLists[i][count[i]];
 
-                        loadedImages[i][count[i]].srcset = dataSrcLists[i][count[i]];
-                        loadedImages[i][count[i]].onload = function () {
+                    loadedImages[i][count[i]].onload = function () {
 
-                            img.srcset = loadedImages[i][count[i]].srcset;
-                            ui.addClass(slider, ui.photoSlider.nameLoaded);
+                        img.src = loadedImages[i][count[i]].src;
+                        ui.addClass(slider, ui.photoSlider.nameLoaded);
 
-                        };
+                    };
 
-                        img.onerror = function () {
-                            ui.removeClass(slider, ui.photoSlider.nameLoaded);
-                        };
+                    img.onerror = function () {
+                        ui.removeClass(slider, ui.photoSlider.nameLoaded);
+                    };
 
-                    } else {
-
-                        loadedImages[i][count[i]].src = dataSrcLists[i][count[i]];
-                        loadedImages[i][count[i]].onload = function () {
-
-                            img.src = loadedImages[i][count[i]].src;
-                            ui.addClass(slider, ui.photoSlider.nameLoaded);
-
-                        };
-
-                        img.onerror = function () {
-                            ui.removeClass(slider, ui.photoSlider.nameLoaded);
-                        };
-
-                    }
 
                 } else {
 
-                    if (retina) {
-                        img.srcset = loadedImages[i][count[i]].srcset;
-
-                    } else {
-                        img.src = loadedImages[i][count[i]].src;
-                    }
-
+                    img.src = loadedImages[i][count[i]].src;
                     ui.addClass(slider, ui.photoSlider.nameLoaded);
 
                 }
