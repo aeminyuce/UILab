@@ -261,18 +261,21 @@
                             <a class="full-h padding-15 no-padding-t card round shadow-lg ease-layout" href="#">
                                 <span class="photo-slider margin-20-b">
                                     <svg class="slider-loader icon"><use href="#loader-line"/></svg>
-                                    <img src="img/product_01.png"
-                                            srcset="img/product_01@2x.png"
-                                            data-ui-src="img/product_01.png,img/product_02.png,img/product_03.png"
-                                            data-ui-srcset="img/product_01@2x.png,img/product_02@2x.png,img/product_03@2x.png"
-                                        alt="">
-                                    <button title="Prev" class="slide-l round ease-layout">
+                                    <img
+                                        src="img/product_01.png"
+                                        srcset="img/product_01@2x.png 2x"
+                                        alt=""
+
+                                        data-ui-src="img/product_01.png,img/product_02.png,img/product_03.png"
+                                        data-ui-srcset="img/product_01@2x.png,img/product_02@2x.png,img/product_03@2x.png"
+                                    >
+                                    <button title="Prev" class="prev btn btn-ghost btn-square round ease-btn">
                                         <svg class="icon"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="slide-r round ease-layout">
+                                    <button title="Next" class="next btn btn-ghost btn-square round ease-btn">
                                         <svg class="icon"><use href="#angle-right"/></svg>
                                     </button>
-                                    <span class="slider-nav"></span>
+                                    <span class="photo-slider-nav ease-1st-layout"></span>
                                 </span>
                                 <span class="x-large">Red</span>
                                 <span class="font-color-black-50 block margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
@@ -298,18 +301,21 @@
                             <a class="full-h padding-15 no-padding-t card round shadow-lg ease-layout" href="#">
                                 <span class="photo-slider margin-20-b">
                                     <svg class="slider-loader icon"><use href="#loader-line"/></svg>
-                                    <img src="img/product_02.png"
-                                            srcset="img/product_02@2x.png"
-                                            data-ui-src="img/product_02.png,img/product_04.png"
-                                            data-ui-srcset="img/product_02@2x.png,img/product_04@2x.png"
-                                        alt="">
-                                    <button title="Prev" class="slide-l round ease-layout">
+                                    <img
+                                        src="img/product_02.png"
+                                        srcset="img/product_02@2x.png 2x"
+                                        alt=""
+
+                                        data-ui-src="img/product_02.png,img/product_04.png"
+                                        data-ui-srcset="img/product_02@2x.png,img/product_04@2x.png"
+                                    >
+                                    <button title="Prev" class="prev btn btn-ghost btn-square round ease-btn">
                                         <svg class="icon"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="slide-r round ease-layout">
+                                    <button title="Next" class="next btn btn-ghost btn-square round ease-btn">
                                         <svg class="icon"><use href="#angle-right"/></svg>
                                     </button>
-                                    <span class="slider-nav"></span>
+                                    <span class="photo-slider-nav ease-1st-layout"></span>
                                 </span>
                                 <span class="x-large">Purple</span>
                                 <span class="font-color-black-50 block margin-10-v">beats by dr. dre Studio 3 Bluetooth Headphones</span>
@@ -334,18 +340,21 @@
                             <a class="full-h padding-15 no-padding-t card round shadow-lg ease-layout" href="#">
                                 <span class="photo-slider margin-20-b">
                                     <svg class="slider-loader icon"><use href="#loader-line"/></svg>
-                                    <img src="img/product_03.png"
-                                            srcset="img/product_03@2x.png"
-                                            data-ui-src="img/product_03.png,img/product_05.png"
-                                            data-ui-srcset="img/product_03@2x.png,img/product_05@2x.png"
-                                        alt="">
-                                    <button title="Prev" class="slide-l round ease-layout">
+                                    <img
+                                        src="img/product_03.png"
+                                        srcset="img/product_03@2x.png"
+                                        alt=""
+
+                                        data-ui-src="img/product_03.png,img/product_05.png"
+                                        data-ui-srcset="img/product_03@2x.png,img/product_05@2x.png"
+                                    >
+                                    <button title="Prev" class="prev btn btn-ghost btn-square round ease-btn">
                                         <svg class="icon"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="slide-r round ease-layout">
+                                    <button title="Next" class="next btn btn-ghost btn-square round ease-btn">
                                         <svg class="icon"><use href="#angle-right"/></svg>
                                     </button>
-                                    <span class="slider-nav"></span>
+                                    <span class="photo-slider-nav ease-1st-layout"></span>
                                 </span>
                                 <span class="x-large">Blue</span>
                                 <span class="font-color-black-50 block margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
@@ -370,14 +379,18 @@
                             <a class="full-h padding-15 no-padding-t card round shadow-lg ease-layout" href="#">
                                 <span class="photo-slider margin-20-b">
                                     <svg class="slider-loader icon"><use href="#loader-line"/></svg>
-                                    <img src="img/product_04.png" srcset="img/product_04@2x.png" alt="">
-                                    <button title="Prev" class="slide-l round ease-layout">
+                                    <img
+                                        src="img/product_04.png"
+                                        srcset="img/product_04@2x.png"
+                                        alt=""
+                                    >
+                                    <button title="Prev" class="prev btn btn-ghost btn-square round ease-btn">
                                         <svg class="icon"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="slide-r round ease-layout">
+                                    <button title="Next" class="next btn btn-ghost btn-square round ease-btn">
                                         <svg class="icon"><use href="#angle-right"/></svg>
                                     </button>
-                                    <span class="slider-nav"></span>
+                                    <span class="photo-slider-nav ease-1st-layout"></span>
                                 </span>
                                 <span class="x-large">White</span>
                                 <span class="font-color-black-50 block margin-10-v">beats by dr. dre Studio 3 Wired Headphones</span>
@@ -401,14 +414,18 @@
                             <a class="full-h padding-15 no-padding-t card round shadow-lg ease-layout" href="#">
                                 <span class="photo-slider margin-20-b">
                                     <svg class="slider-loader icon"><use href="#loader-line"/></svg>
-                                    <img src="img/product_05.png" srcset="img/product_05@2x.png" alt="">
-                                    <button title="Prev" class="slide-l round ease-layout">
+                                    <img
+                                        src="img/product_05.png"
+                                        srcset="img/product_05@2x.png"
+                                        alt=""
+                                    >
+                                    <button title="Prev" class="prev btn btn-ghost btn-square round ease-btn">
                                         <svg class="icon"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="slide-r round ease-layout">
+                                    <button title="Next" class="next btn btn-ghost btn-square round ease-btn">
                                         <svg class="icon"><use href="#angle-right"/></svg>
                                     </button>
-                                    <span class="slider-nav"></span>
+                                    <span class="photo-slider-nav ease-1st-layout"></span>
                                 </span>
                                 <span class="x-large">Black</span>
                                 <span class="font-color-black-50 block margin-10-v">beats by dr. dre Studio 3 Wired Headphones</span>
@@ -432,18 +449,21 @@
                             <a class="full-h padding-15 no-padding-t card round shadow-lg ease-layout" href="#">
                                 <span class="photo-slider margin-20-b">
                                     <svg class="slider-loader icon"><use href="#loader-line"/></svg>
-                                    <img src="img/product_02.png"
-                                            srcset="img/product_02@2x.png"
-                                            data-ui-src="img/product_02.png,img/product_04.png"
-                                            data-ui-srcset="img/product_02@2x.png,img/product_04@2x.png"
-                                        alt="">
-                                    <button title="Prev" class="slide-l round ease-layout">
+                                    <img
+                                        src="img/product_02.png"
+                                        srcset="img/product_02@2x.png"
+                                        alt=""
+
+                                        data-ui-src="img/product_02.png,img/product_04.png"
+                                        data-ui-srcset="img/product_02@2x.png,img/product_04@2x.png"
+                                    >
+                                    <button title="Prev" class="prev btn btn-ghost btn-square round ease-btn">
                                         <svg class="icon"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="slide-r round ease-layout">
+                                    <button title="Next" class="next btn btn-ghost btn-square round ease-btn">
                                         <svg class="icon"><use href="#angle-right"/></svg>
                                     </button>
-                                    <span class="slider-nav"></span>
+                                    <span class="photo-slider-nav ease-1st-layout"></span>
                                 </span>
                                 <span class="x-large">Purple</span>
                                 <span class="font-color-black-50 block margin-10-v">beats by dr. dre Studio 3 Bluetooth Headphones</span>
