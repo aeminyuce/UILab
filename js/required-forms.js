@@ -28,7 +28,7 @@ ui.requiredForms = {
     nameError: 'error',
 
     // values
-    regexMail: '^[a-z0-9][a-z0-9-_\\.]+@([a-z]|[a-z0-9]?[a-z0-9-]+[a-z0-9])\\.[a-z0-9]{2,10}(?:\\.[a-z]{2,10})?$'
+    rexMail: '^[a-z0-9][a-z0-9-_\\.]+@([a-z]|[a-z0-9]?[a-z0-9-]+[a-z0-9])\\.[a-z0-9]{2,10}(?:\\.[a-z]{2,10})?$'
 
 };
 
@@ -160,7 +160,7 @@ ui.requiredForms = {
                 // check email
                 if (type === 'email') {
 
-                    reMail = new RegExp(ui.requiredForms.regexMail);
+                    reMail = new RegExp(ui.requiredForms.rexMail);
                     if (val.match(reMail) === null) { showErr(); }
 
                 }

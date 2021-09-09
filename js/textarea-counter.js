@@ -14,9 +14,6 @@ ui.textareaCounter = {
     // helper classnames
     nameChange: 'change',
 
-    // tags
-    tagTextarea: 'textarea',
-
     // data attributes
     dataCounter: 'data-ui-counter',
     dataChange: 'data-ui-change'
@@ -63,7 +60,7 @@ ui.textareaCounter = {
             ui.each('.' + ui.textareaCounter.target + '[' + ui.textareaCounter.dataCounter + ']:not(.' + ui.textareaCounter.nameToggle + '):not(.' + ui.textareaCounter.nameChange + ')',
 
                 function () {
-                    counter(ui.find(ui.textareaCounter.tagTextarea, this)[0]);
+                    counter(ui.find('textarea', this)[0]);
                 });
 
         };
@@ -73,7 +70,7 @@ ui.textareaCounter = {
         ui.on(document,
             'keydown keyup keypress change',
 
-            '.' + ui.textareaCounter.target + '[' + ui.textareaCounter.dataCounter + '] ' + ui.textareaCounter.tagTextarea,
+            '.' + ui.textareaCounter.target + '[' + ui.textareaCounter.dataCounter + '] textarea',
 
             function (e) {
 
@@ -95,7 +92,7 @@ ui.textareaCounter = {
 
                 var i, that;
 
-                that = ui.find('.' + ui.textareaCounter.target + '[' + ui.textareaCounter.dataCounter + '] ' + ui.textareaCounter.tagTextarea);
+                that = ui.find('.' + ui.textareaCounter.target + '[' + ui.textareaCounter.dataCounter + '] textarea');
                 if (that.length === 0) { return; }
 
                 setTimeout(function () {

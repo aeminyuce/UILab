@@ -3,36 +3,68 @@
  Requires UI JS
 */
 
-ui.photoSlider = {};
+ui.photoSlider = {
+
+    // targets
+    target: 'photo-slider',
+
+    // main classnames
+    nameNav: 'photo-slider-nav',
+
+    // helper classNames
+    namePrev: 'prev',
+    nameNext: 'next',
+
+    nameShow: 'show',
+    nameSelected: 'selected',
+    nameLoaded: 'loaded',
+
+    // outer classnames
+    nameBtn: 'btn',
+
+    // tags
+    tagNavDot: 'i',
+
+    // values
+    rexFiles: '(\.png|\.gif|\.jeg|\.jpg|\.svg)$', // .webp and .tiff not supported!
+
+    // data attributes
+    dataSrc: 'data-ui-src',
+    dataSrcset: 'data-ui-srcset'
+
+};
 
 (function () {
 
     'use strict';
 
-    var count, dataSrcLists, loadedImages;
+    var
+        count,
+        retina,
+        dataSrcLists,
+        loadedImages;
 
     /*globals window, document, ui, Image */
     function photoSliderLoader() {
 
-        var slider, j, retina, images, dataSrc, nav, navHtml;
+        var slider, j, images, dataSrc, nav, navDots, re;
 
-        slider = ui.find('.photo-slider');
-        images = ui.find('.photo-slider img');
+        images = ui.find('.' + ui.photoSlider.target + ' img');
+        ui.each(images,
 
-        ui.each(images, function (i) {
+            function (i) {
 
-            if (dataSrcLists[i] === undefined) {
+                if (dataSrcLists[i] !== undefined) { return; }
 
-                retina = false;
-                if (window.devicePixelRatio > 1) { // check retina images
+                if (retina) {
+                    dataSrc = images[i].getAttribute(ui.photoSlider.dataSrcset);
 
-                    dataSrc = images[i].getAttribute('data-ui-srcset');
-                    if (dataSrc !== null && dataSrc !== '') { retina = true; }
-
+                } else {
+                    dataSrc = images[i].getAttribute(ui.photoSlider.dataSrc);
                 }
 
-                if (!retina) { dataSrc = images[i].getAttribute('data-ui-src'); }
-                ui.addClass(slider[i], 'loaded');
+                slider = ui.closest(this, '.' + ui.photoSlider.target)[0];
+                ui.addClass(slider, ui.photoSlider.nameLoaded);
 
                 if (dataSrc !== null && dataSrc !== '') {
 
@@ -46,41 +78,41 @@ ui.photoSlider = {};
 
                 }
 
-            } else { return; }
+                re = new RegExp(ui.photoSlider.rexFiles);
+                if (!dataSrcLists[i][0].match(re)) { return;  }
 
-            if (!dataSrcLists[i][0].match(/(\.png|\.gif|\.jpeg|\.jpg)$/g)) { return; }
+                images[i].removeAttribute(ui.photoSlider.dataSrc);
+                images[i].removeAttribute(ui.photoSlider.dataSrcset);
 
-            images[i].removeAttribute('data-ui-src');
-            images[i].removeAttribute('data-ui-srcset');
+                // create nav
+                nav = ui.find('.' + ui.photoSlider.nameNav, slider)[0];
+                if (dataSrcLists[i].length > 1) {
 
-            // create nav
-            nav = ui.find('.slider-nav', slider[i])[0];
-            if (dataSrcLists[i].length > 1) {
+                    ui.addClass(ui.find('.' + ui.photoSlider.nameBtn, slider), ui.photoSlider.nameShow);
+                    ui.addClass(nav, ui.photoSlider.nameShow);
 
-                ui.addClass(ui.find('button', slider[i]), 'show');
-                ui.addClass(nav, 'show');
+                    if (nav.innerHTML === '') {
 
-                if (nav.innerHTML === '') {
+                        navDots = '';
 
-                    navHtml = '';
+                        for (j = 0; j < dataSrcLists[i].length; j++) {
 
-                    for (j = 0; j < dataSrcLists[i].length; j++) {
+                            if (j === 0) {
+                                navDots += '<' + ui.photoSlider.tagNavDot + ' class="' + ui.photoSlider.nameSelected + '"></' + ui.photoSlider.tagNavDot + '>';
 
-                        if (j === 0) {
-                            navHtml += '<i class="selected ease-layout"></i>';
-                        } else {
-                            navHtml += '<i class="ease-layout"></i>';
+                            } else {
+                                navDots += '<' + ui.photoSlider.tagNavDot  + '></' + ui.photoSlider.tagNavDot  + '>';
+                            }
+
                         }
+
+                        nav.insertAdjacentHTML('beforeend', navDots);
 
                     }
 
-                    nav.insertAdjacentHTML('beforeend', navHtml);
-
                 }
 
-            }
-
-        });
+            });
 
     }
 
@@ -91,48 +123,58 @@ ui.photoSlider = {};
         dataSrcLists = [];
         loadedImages = [];
 
+        retina = false;
+
+        if (window.devicePixelRatio > 1) { // check retina images
+            retina = true;
+        }
+
         photoSliderLoader();
 
         // Event Listeners
         ui.on(document,
 
-            'click', '.photo-slider button',
+            'click', '.' + ui.photoSlider.target + ' .' + ui.photoSlider.nameBtn,
+
             function (e) {
 
                 e.preventDefault();
-                var slider, i, img, retina, total, dots;
+                var slider, i, img, total, dots;
 
-                slider = ui.closest(this, '.photo-slider')[0];
+                slider = ui.closest(this, '.' + ui.photoSlider.target)[0];
                 if (slider === undefined) { return; }
 
                 img = ui.find('img', slider)[0];
 
-                i = Array.prototype.slice.call(ui.find('.photo-slider')).indexOf(slider);
+                i = Array.prototype.slice.call(ui.find('.' + ui.photoSlider.target)).indexOf(slider);
                 if (count[i] === undefined) { count[i] = 0; }
 
                 total = (dataSrcLists[i].length - 1);
 
-                if (ui.hasClass(this, 'slide-r')) { // right
+                if (ui.hasClass(this, ui.photoSlider.namePrev)) {
 
-                    if (count[i] >= total) { count[i] = total; return; }
-                    count[i] += 1;
+                    if (count[i] <= 0) {
+                        count[i] = 0; return;
+                    }
 
-                } else { // left
-
-                    if (count[i] <= 0) { count[i] = 0; return; }
                     count[i] -= 1;
+
+                } else if (ui.hasClass(this, ui.photoSlider.nameNext)) {
+
+                    if (count[i] >= total) {
+                        count[i] = total; return;
+                    }
+
+                    count[i] += 1;
 
                 }
 
-                dots = ui.find('.slider-nav i', slider);
+                dots = ui.find('.' + ui.photoSlider.nameNav + ' i', slider);
 
-                ui.removeClass(dots, 'selected');
-                ui.addClass(dots[count[i]], 'selected');
+                ui.removeClass(dots, ui.photoSlider.nameSelected);
+                ui.addClass(dots[count[i]], ui.photoSlider.nameSelected);
 
-                ui.removeClass(slider, 'loaded');
-
-                retina = false;
-                if (img.srcset !== '') { retina = true; }
+                ui.removeClass(slider, ui.photoSlider.nameLoaded);
 
                 if (loadedImages[i][count[i]] === undefined) {
 
@@ -143,12 +185,12 @@ ui.photoSlider = {};
                         loadedImages[i][count[i]].onload = function () {
 
                             img.srcset = loadedImages[i][count[i]].srcset;
-                            ui.addClass(slider, 'loaded');
+                            ui.addClass(slider, ui.photoSlider.nameLoaded);
 
                         };
 
                         img.onerror = function () {
-                            ui.removeClass(slider, 'loaded');
+                            ui.removeClass(slider, ui.photoSlider.nameLoaded);
                         };
 
                     } else {
@@ -157,12 +199,12 @@ ui.photoSlider = {};
                         loadedImages[i][count[i]].onload = function () {
 
                             img.src = loadedImages[i][count[i]].src;
-                            ui.addClass(slider, 'loaded');
+                            ui.addClass(slider, ui.photoSlider.nameLoaded);
 
                         };
 
                         img.onerror = function () {
-                            ui.removeClass(slider, 'loaded');
+                            ui.removeClass(slider, ui.photoSlider.nameLoaded);
                         };
 
                     }
@@ -176,7 +218,7 @@ ui.photoSlider = {};
                         img.src = loadedImages[i][count[i]].src;
                     }
 
-                    ui.addClass(slider, 'loaded');
+                    ui.addClass(slider, ui.photoSlider.nameLoaded);
 
                 }
 
@@ -193,7 +235,7 @@ ui.photoSlider = {};
 
         function () {
 
-            if (ui.ajax.classNames.indexOf('photo-slider') > -1) {
+            if (ui.ajax.classNames.indexOf(ui.photoSlider.target) > -1) {
                 photoSliderLoader();
             }
 
