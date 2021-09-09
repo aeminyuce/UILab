@@ -16,11 +16,13 @@
 @photo-preview-close-icon-position:     20px;
 @photo-preview-close-icon-z-index:      10;
 
-@photo-preview-btn-radius:              @round;
-@photo-preview-btn-size:                (@btn-lg + 10);
+@photo-preview-btn-position:            10px;
+@photo-preview-btn-size:                (@btn-lg + 20);
 @photo-preview-btn-padding:             10px;
-@photo-preview-btn-bg:                  fade(@white, 15%);
-@photo-preview-btn-hover-bg:            fade(@white, 25%);
+@photo-preview-btn-hover-bg:            fade(@white, 8%);
+
+@photo-preview-icon-size:               40px;
+@photo-preview-icon-stroke-size:        14px;
 
 @photo-preview-info-radius:             @round;
 @photo-preview-info-min-height:         40px;
@@ -54,7 +56,7 @@
             img {
                 width: auto; height: 100%; position: absolute; left: 50%; transform: translate(-50%,0);
 
-                &.cover-h { width: 100%; height: auto; top: 50%; left: 0; transform: translate(0,-50%); }
+                &.img-v { width: 100%; height: auto; top: 50%; left: 0; transform: translate(0,-50%); }
             }
         }
     }
@@ -70,11 +72,11 @@
             &:after { background-color: @photo-gallery-img-hover-bg; }
         }
         &.has-info {
-            &,&.touch-hover {
+            &,&.touch-info {
                 &:after { background-color: @photo-gallery-info-bg; }
                 & > span { color: @white; text-align: left; overflow: hidden; display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 2; opacity: 0; }
             }
-            .desktop &:hover,&.touch-hover {
+            .desktop &:hover,&.touch-info {
                 & > span { opacity: 1; }
             }
         }
@@ -83,7 +85,7 @@
              &:after,& > span { opacity: 1; }
         }
 
-        .desktop &:hover,&.touch-hover {
+        .desktop &:hover,&.touch-info {
             &:after { opacity: 1; }
         }
     }
@@ -101,16 +103,17 @@
 
     &-bg { background-color: @photo-preview-bg; position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
 
+    .prev,.next {
+        color: @white; text-align: center; width: @photo-preview-btn-size; height: @photo-preview-btn-size; padding: @photo-preview-btn-padding; display: none; border: 0; position: absolute; z-index: 2; top: 50%; transform: translateY(-50%);
+
+        .icon { width: @photo-preview-icon-size; height: @photo-preview-icon-size; stroke-width: @photo-preview-icon-stroke-size; }
+        .desktop &:hover { background-color: @photo-preview-btn-hover-bg; }
+
+    }
+    .prev { left: @photo-preview-btn-position; }
+    .next { right: @photo-preview-btn-position; }
+
     .preview- {
-        &prev,&next {
-            color: @white; text-align: center; width: @photo-preview-btn-size; height: @photo-preview-btn-size; background-color: @photo-preview-btn-bg; padding: @photo-preview-btn-padding; display: none; border: 0; position: absolute; z-index: 2; top: 50%; transform: translateY(-50%);
-
-            .desktop &:hover { background-color: @photo-preview-btn-hover-bg; }
-
-        }
-        &prev { border-radius: 0 @photo-preview-btn-radius @photo-preview-btn-radius 0; left: 0; }
-        &next { border-radius: @photo-preview-btn-radius 0 0 @photo-preview-btn-radius; right: 0; }
-
         &loader {
             color: @white; ._icon(@photo-preview-loader-icon-size); margin: -(@photo-preview-loader-icon-size / 2) 0 0 -(@photo-preview-loader-icon-size / 2); position: absolute; top: 50%; left: 50%; z-index: 3; transform: translate(-50%,-50%); animation: preview-loader 1.15s linear infinite;
 
@@ -133,11 +136,11 @@
 
 
     & > .preview-zoom { z-index: (@photo-preview-close-icon-z-index / 2); }
-    & > .pause-easing { transition-duration: 0s; }
+    & > .pause-ease { transition-duration: 0s; }
 }
 
 .close-photo-preview {
-    border-radius: @photo-preview-btn-radius; position: fixed; z-index: @photo-preview-close-icon-z-index;
+    position: fixed; z-index: @photo-preview-close-icon-z-index;
 
     .icon { color: @white; opacity: 1 !important; }
 }
@@ -163,7 +166,7 @@
 
     .photo-preview {
         & > img {
-            &:not(.cover-h):not(.preview-zoom) { max-width: @lg-breakpoint; }
+            &:not(.img-v):not(.preview-zoom) { max-width: @lg-breakpoint; }
         }
     }
 }
@@ -173,7 +176,7 @@
     }
     .photo-preview {
         & > img {
-            &:not(.cover-h):not(.preview-zoom) { width: 100%; height: auto; }
+            &:not(.img-v):not(.preview-zoom) { width: 100%; height: auto; }
         }
     }
 }
@@ -181,7 +184,7 @@
     .photo-gallery {
         .img {
             &.has-info {
-                &,&.touch-hover {
+                &,&.touch-info {
                     & > span { padding: @photo-gallery-info-padding; }
                 }
             }
@@ -195,7 +198,7 @@
     .photo-gallery {
         .img {
             &.has-info {
-                &,&.touch-hover {
+                &,&.touch-info {
                     & > span { padding: (@photo-gallery-info-padding / 2); }
                 }
             }
@@ -218,7 +221,7 @@
     .photo-gallery {
         .img {
             &.has-info {
-                &,&.touch-hover {
+                &,&.touch-info {
                     & > span { font-size: @font-size !important; }
                 }
             }
@@ -232,7 +235,7 @@
 @media (@sm-start) {
     .photo-preview {
         & > img {
-            &.cover-h:not(.preview-zoom) { width: auto; height: 96%; }
+            &.img-v:not(.preview-zoom) { width: auto; height: 96%; }
         }
     }
 }
@@ -244,7 +247,7 @@
     }
     .photo-preview {
         & > img {
-            &.cover-h:not(.preview-zoom) { width: auto; max-width: 100%; }
+            &.img-v:not(.preview-zoom) { width: auto; max-width: 100%; }
         }
     }
 }

@@ -104,8 +104,8 @@ ui.topButton = {
         if (ui.userAgents.desktop) {
 
             var html = '<button class="' + ui.topButton.target + ' ' + ui.topButton.stylesTarget + '" title="' + ui.topButton.titleText + '">' +
-                    '<svg class="' + ui.topButton.stylesIcon + '"><use href="#' + ui.topButton.icon + '"/></svg>' +
-                '</button>';
+                            '<svg class="' + ui.topButton.stylesIcon + '"><use href="#' + ui.topButton.icon + '"/></svg>' +
+                        '</button>';
 
             if (ui.topButton.targetScrollable === 'body') {
                 scrollEl = ui.find(ui.topButton.targetScrollable)[0];

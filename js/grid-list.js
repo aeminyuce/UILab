@@ -54,9 +54,6 @@ ui.gridList = {
     prevIcon : 'angle-left',
     nextIcon : 'angle-right',
 
-    // tags
-    tagIconSrc: 'use',
-
     // values
     valueSplit : '|',
     customLetters : { "İ": "i", "I": "ı", "Ş": "ş", "Ğ": "ğ", "Ü": "ü", "Ö": "ö", "Ç": "ç" },
@@ -394,7 +391,7 @@ ui.gridList = {
                     if (!ui.hasClass(this, ui.gridList.nameActive)) {
 
                         ui.removeClass(this, ui.gridList.nameAsc + ' ' + ui.gridList.nameDesc);
-                        ui.find('.' + ui.gridList.nameIcon + ' ' + ui.gridList.tagIconSrc, this)[0].setAttribute('href', '#' + ui.gridList.sortIcon);
+                        ui.find('.' + ui.gridList.nameIcon + ' use', this)[0].setAttribute('href', '#' + ui.gridList.sortIcon);
 
                     }
 
@@ -407,14 +404,14 @@ ui.gridList = {
                 ui.removeClass(this, ui.gridList.nameAsc);
                 ui.addClass(this, ui.gridList.nameDesc);
 
-                ui.find('.' + ui.gridList.nameIcon + ' ' + ui.gridList.tagIconSrc, this)[0].setAttribute('href', '#' + ui.gridList.descIcon);
+                ui.find('.' + ui.gridList.nameIcon + ' use', this)[0].setAttribute('href', '#' + ui.gridList.descIcon);
 
             } else {
 
                 ui.removeClass(this, ui.gridList.nameDesc);
                 ui.addClass(this, ui.gridList.nameAsc);
 
-                ui.find('.' + ui.gridList.nameIcon + ' ' + ui.gridList.tagIconSrc, this)[0].setAttribute('href', '#' + ui.gridList.ascIcon);
+                ui.find('.' + ui.gridList.nameIcon + ' use', this)[0].setAttribute('href', '#' + ui.gridList.ascIcon);
 
             }
 

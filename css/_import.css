@@ -9147,7 +9147,7 @@ button.dialog-custom:focus {
   left: 50%;
   transform: translate(-50%, 0);
 }
-.photo-gallery > li .img img.cover-h {
+.photo-gallery > li .img img.img-v {
   width: 100%;
   height: auto;
   top: 50%;
@@ -9177,11 +9177,11 @@ button.dialog-custom:focus {
   background-color: hsla(0, 0%, 100%, 0.25);
 }
 .photo-gallery .img.has-info:after,
-.photo-gallery .img.has-info.touch-hover:after {
+.photo-gallery .img.has-info.touch-info:after {
   background-color: hsla(0, 0%, 0%, 0.65);
 }
 .photo-gallery .img.has-info > span,
-.photo-gallery .img.has-info.touch-hover > span {
+.photo-gallery .img.has-info.touch-info > span {
   color: hsl(0, 0%, 100%);
   text-align: left;
   overflow: hidden;
@@ -9195,7 +9195,7 @@ button.dialog-custom:focus {
   opacity: 0;
 }
 .desktop .photo-gallery .img.has-info:hover > span,
-.photo-gallery .img.has-info.touch-hover > span {
+.photo-gallery .img.has-info.touch-info > span {
   opacity: 1;
 }
 .photo-gallery .img.show-info:after,
@@ -9203,7 +9203,7 @@ button.dialog-custom:focus {
   opacity: 1;
 }
 .desktop .photo-gallery .img:hover:after,
-.photo-gallery .img.touch-hover:after {
+.photo-gallery .img.touch-info:after {
   opacity: 1;
 }
 .photo-preview {
@@ -9234,13 +9234,12 @@ button.dialog-custom:focus {
   bottom: 0;
   left: 0;
 }
-.photo-preview .preview-prev,
-.photo-preview .preview-next {
+.photo-preview .prev,
+.photo-preview .next {
   color: hsl(0, 0%, 100%);
   text-align: center;
-  width: 52px;
-  height: 52px;
-  background-color: hsla(0, 0%, 100%, 0.15);
+  width: 62px;
+  height: 62px;
   padding: 10px;
   display: none;
   border: 0;
@@ -9249,17 +9248,21 @@ button.dialog-custom:focus {
   top: 50%;
   transform: translateY(-50%);
 }
-.desktop .photo-preview .preview-prev:hover,
-.desktop .photo-preview .preview-next:hover {
-  background-color: hsla(0, 0%, 100%, 0.25);
+.photo-preview .prev .icon,
+.photo-preview .next .icon {
+  width: 40px;
+  height: 40px;
+  stroke-width: 14px;
 }
-.photo-preview .preview-prev {
-  border-radius: 0 6px 6px 0;
-  left: 0;
+.desktop .photo-preview .prev:hover,
+.desktop .photo-preview .next:hover {
+  background-color: hsla(0, 0%, 100%, 0.08);
 }
-.photo-preview .preview-next {
-  border-radius: 6px 0 0 6px;
-  right: 0;
+.photo-preview .prev {
+  left: 10px;
+}
+.photo-preview .next {
+  right: 10px;
 }
 .photo-preview .preview-loader {
   color: hsl(0, 0%, 100%);
@@ -9312,11 +9315,10 @@ button.dialog-custom:focus {
 .photo-preview > .preview-zoom {
   z-index: 5;
 }
-.photo-preview > .pause-easing {
+.photo-preview > .pause-ease {
   transition-duration: 0s;
 }
 .close-photo-preview {
-  border-radius: 6px;
   position: fixed;
   z-index: 10;
 }
@@ -9337,7 +9339,7 @@ button.dialog-custom:focus {
   .photo-gallery.has-cover > li:first-child .img {
     height: 360px;
   }
-  .photo-preview > img:not(.cover-h):not(.preview-zoom) {
+  .photo-preview > img:not(.img-v):not(.preview-zoom) {
     max-width: 1200px;
   }
 }
@@ -9345,14 +9347,14 @@ button.dialog-custom:focus {
   .photo-gallery > li {
     width: 25%;
   }
-  .photo-preview > img:not(.cover-h):not(.preview-zoom) {
+  .photo-preview > img:not(.img-v):not(.preview-zoom) {
     width: 100%;
     height: auto;
   }
 }
 @media (min-width: 768px) {
   .photo-gallery .img.has-info > span,
-  .photo-gallery .img.has-info.touch-hover > span {
+  .photo-gallery .img.has-info.touch-info > span {
     padding: 20px;
   }
   .preview-info {
@@ -9365,7 +9367,7 @@ button.dialog-custom:focus {
 }
 @media (max-width: 767px) {
   .photo-gallery .img.has-info > span,
-  .photo-gallery .img.has-info.touch-hover > span {
+  .photo-gallery .img.has-info.touch-info > span {
     padding: 10px;
   }
   .photo-gallery > li {
@@ -9386,7 +9388,7 @@ button.dialog-custom:focus {
 }
 @media (max-width: 620px) {
   .photo-gallery .img.has-info > span,
-  .photo-gallery .img.has-info.touch-hover > span {
+  .photo-gallery .img.has-info.touch-info > span {
     font-size: 14px !important;
   }
   .photo-gallery > li .img {
@@ -9394,7 +9396,7 @@ button.dialog-custom:focus {
   }
 }
 @media (min-width: 481px) {
-  .photo-preview > img.cover-h:not(.preview-zoom) {
+  .photo-preview > img.img-v:not(.preview-zoom) {
     width: auto;
     height: 96%;
   }
@@ -9403,7 +9405,7 @@ button.dialog-custom:focus {
   .photo-gallery > li .img {
     height: 120px;
   }
-  .photo-preview > img.cover-h:not(.preview-zoom) {
+  .photo-preview > img.img-v:not(.preview-zoom) {
     width: auto;
     max-width: 100%;
   }
