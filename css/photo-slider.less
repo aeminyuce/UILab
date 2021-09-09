@@ -4,13 +4,7 @@
 @photo-slider-loader-icon-size:         42px;
 @photo-slider-loader-opacity:           .45;
 
-@photo-slider-btn-size:                 @btn-default;
 @photo-slider-btn-z-index:              10;
-@photo-slider-btn-opacity:              .45;
-@photo-slider-btn-padding:              6px;
-@photo-slider-btn-icon-size:            18px;
-@photo-slider-btn-bg:                   fade(@black, 10%);
-@photo-slider-btn-bg-dark:              fade(@white, 10%);
 
 @photo-slider-dot-size:     		    7px;
 @photo-slider-dot-margin-v:			    6px;
@@ -23,14 +17,10 @@
 @photo-slider-dot-selected-bg-dark:     fade(@white, 35%);
 
 ._global-vars () {
-    --photo-slider-btn-bg: @photo-slider-btn-bg;
-
     --photo-slider-dot-bg: @photo-slider-dot-bg;
     --photo-slider-dot-selected-bg: @photo-slider-dot-selected-bg;
 }
 ._global-vars-dark () {
-    --photo-slider-btn-bg: @photo-slider-btn-bg-dark;
-
     --photo-slider-dot-bg: @photo-slider-dot-bg-dark;
     --photo-slider-dot-selected-bg: @photo-slider-dot-selected-bg-dark;
 }
@@ -54,22 +44,15 @@
     .slider-loader { ._icon(@photo-slider-loader-icon-size); margin: -(@photo-slider-loader-icon-size / 2) 0 0 -(@photo-slider-loader-icon-size / 2); position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); opacity: 0; z-index: 1; }
     img { width: 100%; display: inline-block; position: relative; z-index: 2; }
 
-    button {
-        ._color-var(black); text-align: center; width: @photo-slider-btn-size; height: @photo-slider-btn-size; background-color: @no-color; padding: @photo-slider-btn-padding; border: 0; position: absolute; top: 50%; z-index: @photo-slider-btn-z-index; transform: translateY(-50%);
+    .btn {
+        position: absolute; top: 50%; z-index: @photo-slider-btn-z-index; transform: translateY(-50%);
 
         &:not(.show) { display: none; }
-        &:not(:hover) { opacity: @photo-slider-btn-opacity; }
-        &:hover { ._bg-var(photo-slider-btn-bg); }
-
-        .icon { ._icon(@photo-slider-btn-icon-size); }
+        &.prev { left: 0; }
+        &.next { right: 0; }
     }
 
-    .slide- {
-        &l { left: 0; }
-        &r { right: 0; }
-    }
-
-    .slider-nav {
+    .photo-slider-nav {
         white-space: nowrap; text-align: center; line-height: @photo-slider-dot-size; padding: @photo-slider-dot-margin-v @photo-slider-dot-margin-v; display: block; position: absolute; bottom: 0; left: 50%; z-index: 3; cursor: default; transform: translateX(-50%);
 
         &:not(.show) { display: none; }
