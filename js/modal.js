@@ -4,15 +4,79 @@
 */
 
 ui.modal = {
+    // targets
+    target: 'modal',
+    targetWin: 'modal-win',
+    targetBg: 'modal-bg',
 
-    classes: 'shadow-lg',
+    // main classnames
+    nameModalOpened: 'modal-opened',
+    nameWinNoBG: 'modal-no-bg',
+
+    nameContent: 'modal-content',
+    nameHasHeader: 'has-header',
+    nameHasFooter: 'has-footer',
+
+    nameHeader: 'modal-header',
+    nameContainer: 'modal-container',
+    nameFooter: 'modal-footer',
+
+    nameClosable: 'modal-closable',
+    nameRemovable: 'modal-removable',
+    nameIframe: 'modal-iframe',
+
+    nameModalClose: 'close-modal',
+
+    nameSizePrefix: 'modal-', // using when converting sizes to classnames
+    nameLG: 'modal-lg',
+    nameMD: 'modal-md',
+    nameSM: 'modal-sm',
+
+    nameInline: 'modal-inline',
+    nameFullscreen: 'modal-fullscreen',
+
+    // helper classnames
+    nameOpen: 'open',
+    nameOpenEase: 'open-ease',
+
+    nameShow: 'show',
+    nameShowEase: 'show-ease',
+
+    nameActive: 'active',
+
+    // outer classnames
+    nameIcon: 'icon',
+
+    // styling classnames
+    stylesContent: 'shadow-lg ease-layout',
+    stylesCloseBtn: 'ease-btn',
+    stylesModalBg: 'ease-layout',
+
+    // icons
     closeIcon: 'remove',
 
-    contentMaxHeight: '92%',
+    // values
+    winMargin: 15,
 
-    contentMinHeightLg: '300',
-    contentMinHeightMd: '240',
-    contentMinHeightSm: '120'
+    sizeLG: 'lg',
+    sizeMD: 'md',
+    sizeSM: 'sm',
+
+    sizeInline: 'inline',
+    sizeFullscreen: 'fullscreen',
+
+    typeAjax: 'ajax',
+    typeIframe: 'iframe',
+
+    heightMax: '92%',
+    heightMinLG: '300',
+    heightMinMD: '240',
+    heightMinSM: '120',
+
+    // data attributes
+    dataCustomW: 'data-ui-customW',
+    dataCustomH: 'data-ui-customH',
+    dataOpenSize: 'data-ui-openSize'
 
 };
 
@@ -27,30 +91,30 @@ ui.modal = {
 
         var win, type, container, bg, openSize, userDefined, customW, customH, minHeight;
 
-        win = ui.find('.modal-win.show .modal-content:not(.fullscreen)')[0];
+        win = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameShow + ' .' + ui.modal.nameContent + ':not(.' + ui.modal.nameFullscreen + ')')[0];
         if (win !== undefined) {
 
-            bg = ui.find('.modal-bg')[0];
+            bg = ui.find('.' + ui.modal.targetBg)[0];
 
-            openSize = win.getAttribute('data-ui-openSize');
+            openSize = win.getAttribute(ui.modal.dataOpenSize);
             if (openSize !== null) {
 
                 type = 'md';
-                userDefined = ui.globals.md + 1; // md, inline-modal
+                userDefined = ui.globals.md + 1; // md, inline
 
                 openSize = Number(openSize);
 
                 if (window.innerWidth < openSize) {
-                    win.style.width = (window.innerWidth - 30) + 'px';
+                    win.style.width = (window.innerWidth - (ui.modal.winMargin * 2)) + 'px';
 
                 } else {
 
-                    if (ui.hasClass(win, 'lg')) {
+                    if (ui.hasClass(win, ui.modal.nameLG)) {
 
                         type = 'lg';
                         userDefined = ui.globals.lg; // lg
 
-                    } else if (ui.hasClass(win, 'sm')) {
+                    } else if (ui.hasClass(win, ui.modal.nameSM)) {
 
                         type = 'sm';
                         userDefined = ui.globals.md; // sm
@@ -60,24 +124,24 @@ ui.modal = {
                         win.style.width = userDefined + 'px';
 
                     } else {
-                        win.style.width = (window.innerWidth - 30) + 'px';
+                        win.style.width = (window.innerWidth - (ui.modal.winMargin * 2)) + 'px';
                     }
                 }
 
-                minHeight = ui.modal.contentMinHeightMd;
+                minHeight = ui.modal.heightMinMD;
 
                 if (type === 'lg') {
-                    minHeight = ui.modal.contentMinHeightLg;
+                    minHeight = ui.modal.heightMinLG;
 
                 } else if (type === 'sm') {
-                    minHeight = ui.modal.contentMinHeightSm;
+                    minHeight = ui.modal.heightMinSM;
                 }
 
-                container = ui.find('.modal-container', win)[0];
+                container = ui.find('.' + ui.modal.nameContainer, win)[0];
                 win.style.removeProperty('height');
 
                 if (container.offsetHeight < minHeight) {
-                    win.style.height = ui.modal.contentMaxHeight;
+                    win.style.height = (window.innerHeight - (ui.modal.winMargin * 2)) + 'px';
 
                 } else {
                     win.style.height = win.offsetHeight + 'px';
@@ -85,10 +149,10 @@ ui.modal = {
 
             }
 
-            customW = win.getAttribute('data-ui-customW');
+            customW = win.getAttribute(ui.modal.dataCustomW);
             if (customW !== null) {
 
-                customH = win.getAttribute('data-ui-customH');
+                customH = win.getAttribute(ui.modal.dataCustomH);
                 if (customH !== null) {
 
                     customW = Number(customW);
@@ -101,8 +165,8 @@ ui.modal = {
 
                     } else {
 
-                        win.style.width = (window.innerWidth - 30) + 'px';
-                        win.style.height = (window.innerWidth - 30) / (customW / customH) + 'px';
+                        win.style.width = (window.innerWidth - (ui.modal.winMargin * 2)) + 'px';
+                        win.style.height = (window.innerWidth - (ui.modal.winMargin * 2)) / (customW / customH) + 'px';
 
                     }
 
@@ -122,32 +186,36 @@ ui.modal = {
 
             var win, bg, removeModal;
 
-            win = ui.find('.modal-win.show');
+            win = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameShow);
             if (win.length === 0) { return; }
 
-            ui.each(win, function () {
-                ui.removeClass(this, 'show-ease');
-            });
+            ui.each(win,
+
+                function () {
+                    ui.removeClass(this, ui.modal.nameShowEase);
+                });
 
             setTimeout(function () {
 
-                ui.each(win, function () {
+                ui.each(win,
 
-                    removeModal = ui.find('.modal-remove', win[0]).length;
+                    function () {
 
-                    if (removeModal > 0) { // remove modal window
-                        win[0].parentNode.removeChild(win[0]);
+                        removeModal = ui.find('.' + ui.modal.nameRemovable, win[0]).length;
 
-                    } else { // hide modal window
-                        ui.removeClass(this, 'show');
-                    }
+                        if (removeModal > 0) { // remove modal window
+                            win[0].parentNode.removeChild(win[0]);
 
-                });
+                        } else { // hide modal window
+                            ui.removeClass(this, ui.modal.nameShow);
+                        }
 
-                bg = ui.find('.modal-bg');
-                ui.removeClass(bg, 'open-ease');
+                    });
 
-                ui.removeClass(document, 'modal-opened');
+                bg = ui.find('.' + ui.modal.targetBg);
+                ui.removeClass(bg, ui.modal.nameOpenEase);
+
+                ui.removeClass(document, ui.modal.nameModalOpened);
 
                 if (ui.userAgents.mobile) {
                     window.scrollTo(0, pageYPos);
@@ -155,7 +223,7 @@ ui.modal = {
 
                 setTimeout(function () {
 
-                    ui.removeClass(bg, 'open');
+                    ui.removeClass(bg, ui.modal.nameOpen);
 
                     // callback
                     if (callback !== undefined) {
@@ -186,7 +254,7 @@ ui.modal = {
                 props.callback
             */
 
-            var styles, closeBtn, nonClosable, typeArr, type, created, temp, getSize, size, customSize, sizeArr, forms, bg, html, win, content;
+            var closeBtn, nonClosable, typeArr, type, created, temp, getSize, size, customSize, sizeArr, forms, bg, html, win, content;
 
             if (props === undefined) { return; }
             if (props.source === undefined) { return; }
@@ -207,43 +275,37 @@ ui.modal = {
             // create modal
             function createModal() {
 
-                var re, rex;
-
-                re = new RegExp('\\s+\\s');
-                rex = new RegExp('^\\s|\\s+$');
-
-                styles = ui.modal.classes + ' ease-layout';
-                styles = styles.replace(re, ' ').replace(rex, '');
-
-                bg = ui.find('.modal-bg')[0];
-
-                html = '<div class="modal-win';
+                bg = ui.find('.' + ui.modal.targetBg)[0];
+                html = '<div class="' + ui.modal.targetWin;
 
                 if (props.bg !== undefined && props.bg === 'false') {
-                    html += ' no-bg';
+                    html += ' ' + ui.modal.nameWinNoBG;
                 }
 
-                html += ' active">' +
-                            '<div class="modal-content ' + styles + '"></div>' +
+                html += ' ' + ui.modal.nameActive + '">' +
+                            '<div class="' + ui.modal.nameContent + ' ' + ui.modal.stylesContent + '"></div>' +
                         '</div>';
 
-                if (bg === undefined) { html += '<div class="modal-bg ease-layout"></div>'; }
+                if (bg === undefined) {
+                    html += '<div class="' + ui.modal.targetBg + ' ' + ui.modal.stylesModalBg + '"></div>';
+                }
+
                 ui.find('body')[0].insertAdjacentHTML('beforeend', html);
 
-                win = ui.find('.modal-win.active')[0];
-                content = ui.find('.modal-content', win)[0];
+                win = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameActive)[0];
+                content = ui.find('.' + ui.modal.nameContent, win)[0];
 
             }
 
             // check header and footer availability
             function checkHeaderFooter() {
 
-                if (ui.find('.modal-header', content)[0] !== undefined) {
-                    ui.addClass(content, 'has-header');
+                if (ui.find('.' + ui.modal.nameHeader, content)[0] !== undefined) {
+                    ui.addClass(content, ui.modal.nameHasHeader);
                 }
 
-                if (ui.find('.modal-footer', content)[0] !== undefined) {
-                    ui.addClass(content, 'has-footer');
+                if (ui.find('.' + ui.modal.nameFooter, content)[0] !== undefined) {
+                    ui.addClass(content, ui.modal.nameHasFooter);
                 }
 
             }
@@ -252,7 +314,7 @@ ui.modal = {
             function showModal() {
 
                 // set modal size
-                ui.removeClass(content, 'lg md sm fullscreen inline-modal');
+                ui.removeClass(content, ui.modal.nameLG + ' ' + ui.modal.nameMD + ' ' + ui.modal.nameSM + ' ' + ui.modal.nameFullscreen + ' ' + ui.modal.nameInline);
 
                 content.style.removeProperty('top');
                 content.style.removeProperty('left');
@@ -260,25 +322,25 @@ ui.modal = {
                 content.style.removeProperty('width');
                 content.style.removeProperty('height');
 
-                content.removeAttribute('data-ui-openSize');
+                content.removeAttribute(ui.modal.dataOpenSize);
 
-                content.removeAttribute('data-ui-customW');
-                content.removeAttribute('data-ui-customH');
+                content.removeAttribute(ui.modal.dataCustomW);
+                content.removeAttribute(ui.modal.dataCustomH);
 
                 if (props.size === undefined) {
 
-                    size = 'md';
+                    size = ui.modal.nameMD;
                     ui.addClass(content, size);
 
                 } else {
 
                     getSize = function () {
 
-                        size = 'md';
-                        sizeArr = ['lg', 'md', 'sm', 'fullscreen', 'inline-modal'];
+                        size = ui.modal.nameMD;
+                        sizeArr = [ui.modal.sizeLG, ui.modal.sizeMD, ui.modal.sizeSM, ui.modal.sizeFullscreen, ui.modal.sizeInline];
 
                         if (sizeArr.indexOf(props.size) > -1) {
-                            size = props.size;
+                            size = ui.modal.nameSizePrefix + props.size;
                         }
 
                         ui.addClass(content, size);
@@ -293,8 +355,8 @@ ui.modal = {
                             content.style.width = customSize[0] + 'px';
                             content.style.height = customSize[1] + 'px';
 
-                            content.setAttribute('data-ui-customW', customSize[0]);
-                            content.setAttribute('data-ui-customH', customSize[1]);
+                            content.setAttribute(ui.modal.dataCustomW, customSize[0]);
+                            content.setAttribute(ui.modal.dataCustomH, customSize[1]);
 
                         } else { getSize(); }
 
@@ -304,14 +366,14 @@ ui.modal = {
 
                 // set closable
                 if (nonClosable) {
-                    ui.removeClass(win, 'closable');
+                    ui.removeClass(win, ui.modal.nameClosable);
 
                 } else {
-                    ui.addClass(win, 'closable');
+                    ui.addClass(win, ui.modal.nameClosable);
                 }
 
                 // add/remove close button
-                closeBtn = ui.find('.close-modal', win)[0];
+                closeBtn = ui.find('.' + ui.modal.nameModalClose, win)[0];
 
                 if (nonClosable) {
 
@@ -323,8 +385,8 @@ ui.modal = {
 
                     if (closeBtn === undefined) {
 
-                        closeBtn = '<button class="close-modal ease-btn">' +
-                                        '<svg class="icon"><use href="#' + ui.modal.closeIcon + '"/></svg>' +
+                        closeBtn = '<button class="' + ui.modal.nameModalClose + ' ' + ui.modal.stylesCloseBtn + '">' +
+                                        '<svg class="' + ui.modal.nameIcon + '"><use href="#' + ui.modal.closeIcon + '"/></svg>' +
                                     '</button>';
 
                         content.insertAdjacentHTML('afterbegin', closeBtn);
@@ -334,33 +396,33 @@ ui.modal = {
                 }
 
                 // showing modal
-                ui.addClass(document, 'modal-opened');
+                ui.addClass(document, ui.modal.nameModalOpened);
 
-                bg = ui.find('.modal-bg');
-                ui.addClass(bg, 'open');
+                bg = ui.find('.' + ui.modal.targetBg);
+                ui.addClass(bg, ui.modal.nameOpen);
 
                 setTimeout(function () {
 
-                    ui.addClass(bg, 'open-ease');
+                    ui.addClass(bg, ui.modal.nameOpenEase);
                     setTimeout(function () {
 
-                        ui.addClass(win, 'show');
+                        ui.addClass(win, ui.modal.nameShow);
 
                         content.style.top = Math.floor((bg[0].offsetHeight - content.offsetHeight) / 2) + 'px';
                         content.style.left = Math.floor((bg[0].offsetWidth - content.offsetWidth) / 2) + 'px';
 
-                        if (size !== undefined && size !== 'fullscreen') { // inherit fixed size && fullscreen
+                        if (size !== undefined && size !== ui.modal.nameFullscreen) { // inherit fixed size && fullscreen
 
                             content.style.width = content.offsetWidth + 'px';
-                            content.setAttribute('data-ui-openSize', content.offsetWidth);
+                            content.setAttribute(ui.modal.dataOpenSize, content.offsetWidth);
                             content.style.height = content.offsetHeight + 'px';
 
                         }
 
                         setTimeout(function () {
 
-                            ui.addClass(win, 'show-ease');
-                            ui.removeClass(win, 'active');
+                            ui.addClass(win, ui.modal.nameShowEase);
+                            ui.removeClass(win, ui.modal.nameActive);
 
                             modalResizer();
                             ui.trigger(document, ui.globals.eventDomChange); // set custom event
@@ -389,27 +451,33 @@ ui.modal = {
                 props.source = ui.find(props.source);
                 if (props.source[0] === undefined) { return; }
 
-                created = ui.closest(props.source, '.modal-win');
+                created = ui.closest(props.source, '.' + ui.modal.targetWin);
                 if (created.length > 0) { // modal created before
 
-                    ui.addClass(created, 'active');
-                    win = ui.find('.modal-win.active')[0];
+                    ui.addClass(created, ui.modal.nameActive);
+                    win = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameActive)[0];
 
-                    content = ui.find('.modal-content', win)[0];
+                    content = ui.find('.' + ui.modal.nameContent, win)[0];
                     showModal();
 
                     // reset forms
                     forms = ui.find('form', content);
-                    ui.each(forms, function () { this.reset(); });
+                    ui.each(forms,
+
+                        function () {
+                            this.reset();
+                        });
 
                 } else { // create modal
 
                     // move source
                     temp = document.createDocumentFragment();
 
-                    ui.each(props.source, function (i) {
-                        temp.appendChild(props.source[i]);
-                    });
+                    ui.each(props.source,
+
+                        function (i) {
+                            temp.appendChild(props.source[i]);
+                        });
 
                     createModal();
                     content.appendChild(temp);
@@ -421,22 +489,28 @@ ui.modal = {
 
             } else { // other source types
 
-                typeArr = ['ajax', 'iframe'];
+                typeArr = [ui.modal.typeAjax, ui.modal.typeIframe];
 
                 if (typeArr.indexOf(props.type) > -1) {
                     type = props.type;
                 }
 
-                if (type === 'iframe') { // iframe sources
+                if (type === ui.modal.typeIframe) { // iframe sources
 
-                    temp = '<iframe class="modal-iframe modal-remove" src="' + props.source + '" frameborder="0" allowfullscreen></iframe>';
+                    temp = '<iframe '+
+                                'class="' + ui.modal.nameIframe + ' ' + ui.modal.nameRemovable + '" '+
+                                'src="' + props.source + '" ' +
+                                'frameborder="0" ' +
+                                'allowfullscreen' +
+                            '>' +
+                            '</iframe>';
 
                     createModal();
                     content.insertAdjacentHTML('beforeend', temp);
 
                     showModal();
 
-                } else if (type === 'ajax') { // ajax sources
+                } else if (type === ui.modal.typeAjax) { // ajax sources
 
                     ui.ajax({
 
@@ -445,7 +519,9 @@ ui.modal = {
 
                             if (status === 'success') {
 
-                                temp = '<div class="modal modal-remove">' + response + '</div>';
+                                temp = '<div class="' + ui.modal.target + ' ' + ui.modal.nameRemovable + '">' +
+                                            response +
+                                        '</div>';
 
                                 createModal();
                                 content.insertAdjacentHTML('beforeend', temp);
@@ -470,13 +546,13 @@ ui.modal = {
         // Event Listeners
         function userClose() {
 
-            var p = ui.find('.modal-win.show.closable')[0];
+            var p = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameShow + '.' + ui.modal.nameClosable)[0];
             if (p !== undefined) { ui.modal.close(); }
 
         }
 
-        ui.on(document, 'click', '.close-modal', ui.modal.close);
-        ui.on(document, 'click', '.modal-bg', userClose);
+        ui.on(document, 'click', '.' + ui.modal.nameModalClose, ui.modal.close);
+        ui.on(document, 'click', '.' + ui.modal.targetBg, userClose);
 
         ui.on(document, 'keydown', function (e) {
             if (e.keyCode === 27) { userClose(); } // esc

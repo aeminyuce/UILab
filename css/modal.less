@@ -24,9 +24,9 @@
 @modal-close-fullscreen-bg:             fade(@black, 20%);
 @modal-close-fullscreen-hover-bg:       fade(@black, 35%);
 
-@modal-content-max-height:              92%;
 @modal-content-open-slide:              10px;
 @modal-content-min-width:               (@layout-min - 40px);
+@modal-content-margin:                  15px;
 @modal-content-lg-min-height:           300px;
 @modal-content-md-min-height:           240px;
 @modal-content-sm-min-height:           120px;
@@ -49,7 +49,7 @@
         &.show { position: fixed; z-index: (@modal-z-index + 1); }
         &:not(.show) { display: none; }
 
-        &.no-bg {
+        &.modal-no-bg {
             &,.text input,.select select,.select-multi select,.textarea textarea,.text .icon,.select .icon { color: @white; }
 
             ::placeholder { color: fade(@white, 40%); }
@@ -72,8 +72,8 @@
     &-content {
         min-width: @modal-content-min-width; ._bg-var(body-bg); position: fixed;
 
-        &:not(.fullscreen) {
-            max-height: @modal-content-max-height;
+        &:not(.modal-fullscreen) {
+            max-height: calc(100% - (@modal-content-margin * 2));
 
             &.round {
                 .modal {
@@ -88,23 +88,26 @@
                 .desktop &:hover { background-color: @modal-close-hover-bg; }
             }
         }
-        &.fullscreen {
-            width: 100%; height: 100%; border-radius: 0 !important;
+        &.modal-{
+            &fullscreen {
+                width: 100%; height: 100%; border-radius: 0 !important;
 
-            .modal-header {
-                .modal-buttons { padding-right: @btn-lg; }
-            }
-            .close-modal {
-                background-color: @modal-close-fullscreen-bg; top: @modal-padding; right: @modal-padding;
+                .modal-header {
+                    .modal-buttons { padding-right: @btn-lg; }
+                }
+                .close-modal {
+                    background-color: @modal-close-fullscreen-bg; top: @modal-padding; right: @modal-padding;
 
-                .desktop &:hover { background-color: @modal-close-fullscreen-hover-bg; }
+                    .desktop &:hover { background-color: @modal-close-fullscreen-hover-bg; }
+                }
             }
+
+            &lg { max-width: @lg-breakpoint; min-height: @modal-content-lg-min-height; }
+            &md { max-width: @md-breakpoint; min-height: @modal-content-md-min-height; }
+            &sm { max-width: @xs-breakpoint; min-height: @modal-content-sm-min-height; }
+
+            &inline { width: auto; }
         }
-
-        &.lg { max-width: @lg-breakpoint; min-height: @modal-content-lg-min-height; }
-        &.md { max-width: @md-breakpoint; min-height: @modal-content-md-min-height; }
-        &.sm { max-width: @xs-breakpoint; min-height: @modal-content-sm-min-height; }
-        &.inline-modal { width: auto; }
 
         &.round {
             .modal { border-radius: (@round - 1); }

@@ -57,6 +57,8 @@ ui.photoGallery = {
 
     // values
     imgVerRatio: '1.33',
+    imgZoomMin: '1',
+    imgZoomMax: '6',
 
     // data attributes
     dataTarget: 'data-ui-target',
@@ -613,17 +615,19 @@ ui.photoGallery = {
                                 newScale = ((pinch - pinchStart) / pinch) * ((imgWidth / imgHeight) * 2);
                                 imgZoom = parseFloat(matrix[3]) + parseFloat(newScale);
 
-                                if (imgZoom <= 1) {
+                                if (imgZoom <= ui.photoGallery.imgZoomMin) {
 
                                     imgPosX = '-50';
                                     imgPosY = '-50';
 
-                                    imgZoom = 1;
+                                    imgZoom = ui.photoGallery.imgZoomMin;
                                     ui.removeClass(img, ui.photoGallery.namePreviewZoom);
 
                                 } else { ui.addClass(img, ui.photoGallery.namePreviewZoom); }
 
-                                if (imgZoom > 6) { imgZoom = 6; }
+                                if (imgZoom > ui.photoGallery.imgZoomMax) {
+                                    imgZoom = ui.photoGallery.imgZoomMax;
+                                }
 
                             }
 
@@ -769,6 +773,7 @@ ui.photoGallery = {
                 } else {
 
                     count = Number(count);
+
                     if (!count || count === '') {
                         count = 0;
                     }

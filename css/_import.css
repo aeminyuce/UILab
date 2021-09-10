@@ -7594,29 +7594,29 @@ html:not(.ie) .svg-map svg {
 .modal-win:not(.show) {
   display: none;
 }
-.modal-win.no-bg,
-.modal-win.no-bg .text input,
-.modal-win.no-bg .select select,
-.modal-win.no-bg .select-multi select,
-.modal-win.no-bg .textarea textarea,
-.modal-win.no-bg .text .icon,
-.modal-win.no-bg .select .icon {
+.modal-win.modal-no-bg,
+.modal-win.modal-no-bg .text input,
+.modal-win.modal-no-bg .select select,
+.modal-win.modal-no-bg .select-multi select,
+.modal-win.modal-no-bg .textarea textarea,
+.modal-win.modal-no-bg .text .icon,
+.modal-win.modal-no-bg .select .icon {
   color: hsl(0, 0%, 100%);
 }
-.modal-win.no-bg ::placeholder {
+.modal-win.modal-no-bg ::placeholder {
   color: hsla(0, 0%, 100%, 0.4);
 }
-.modal-win.no-bg ::-ms-input-placeholder {
+.modal-win.modal-no-bg ::-ms-input-placeholder {
   color: hsla(0, 0%, 100%, 0.4);
 }
-.modal-win.no-bg .modal-content {
+.modal-win.modal-no-bg .modal-content {
   background: none !important;
   box-shadow: none !important;
 }
-.modal-win.no-bg .error:not(.form-holder) {
+.modal-win.modal-no-bg .error:not(.form-holder) {
   background-color: hsl(0, 74%, 55%) !important;
 }
-.modal-win.no-bg .error .icon {
+.modal-win.modal-no-bg .error .icon {
   color: hsl(0, 0%, 100%) !important;
 }
 .modal-win:not(.show-ease) .modal-content {
@@ -7633,55 +7633,55 @@ html:not(.ie) .svg-map svg {
   background-color: var(--body-bg);
   position: fixed;
 }
-.modal-content:not(.fullscreen) {
-  max-height: 92%;
+.modal-content:not(.modal-fullscreen) {
+  max-height: calc(100% - (15px * 2));
 }
-.modal-content:not(.fullscreen).round .modal-header {
+.modal-content:not(.modal-fullscreen).round .modal-header {
   border-radius: 5px 5px 0 0;
 }
-.modal-content:not(.fullscreen).round .modal-footer {
+.modal-content:not(.modal-fullscreen).round .modal-footer {
   border-radius: 0 0 5px 5px;
 }
-.modal-content:not(.fullscreen).round .modal-iframe {
+.modal-content:not(.modal-fullscreen).round .modal-iframe {
   border-radius: 5px;
 }
-.modal-content:not(.fullscreen) .close-modal {
+.modal-content:not(.modal-fullscreen) .close-modal {
   background-color: hsla(0, 0%, 0%, 0.65);
   top: -16px;
   right: -16px;
 }
-.desktop .modal-content:not(.fullscreen) .close-modal:hover {
+.desktop .modal-content:not(.modal-fullscreen) .close-modal:hover {
   background-color: hsl(0, 0%, 20%);
 }
-.modal-content.fullscreen {
+.modal-content.modal-fullscreen {
   width: 100%;
   height: 100%;
   border-radius: 0 !important;
 }
-.modal-content.fullscreen .modal-header .modal-buttons {
+.modal-content.modal-fullscreen .modal-header .modal-buttons {
   padding-right: 42px;
 }
-.modal-content.fullscreen .close-modal {
+.modal-content.modal-fullscreen .close-modal {
   background-color: hsla(0, 0%, 0%, 0.2);
   top: 10px;
   right: 10px;
 }
-.desktop .modal-content.fullscreen .close-modal:hover {
+.desktop .modal-content.modal-fullscreen .close-modal:hover {
   background-color: hsla(0, 0%, 0%, 0.35);
 }
-.modal-content.lg {
+.modal-content.modal-lg {
   max-width: 1200px;
   min-height: 300px;
 }
-.modal-content.md {
+.modal-content.modal-md {
   max-width: 960px;
   min-height: 240px;
 }
-.modal-content.sm {
+.modal-content.modal-sm {
   max-width: 480px;
   min-height: 120px;
 }
-.modal-content.inline-modal {
+.modal-content.modal-inline {
   width: auto;
 }
 .modal-content.round .modal {

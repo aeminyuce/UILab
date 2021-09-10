@@ -18,7 +18,7 @@
                     <dd class="margin-15-b">
                         Optional. Set the size of modal.<br>
                         Default value: <code>'md'</code><br>
-                        Available values: <code>'lg', 'md', 'sm', 'fullscreen', inline-modal, {'width', 'height'}</code>
+                        Available values: <code>'lg', 'md', 'sm', 'fullscreen', inline, {'width', 'height'}</code>
                     </dd>
 
                     <dt>type</dt>
@@ -102,8 +102,8 @@
             <div class="col-6 no-padding-t">
 
                 <i class="font-color-black-50 margin-5-b block">Open inline modal window.</i>
-                <pre class="round margin-5-b">ui.modal.open({<br>    source: '.myModal',<br>    size: 'inline-modal'<br>});</pre>
-                <button class="btn btn-sm round ui-fill-dark-100 ease-btn" onclick="ui.modal.open({source: '.myModal', size: 'inline-modal'});">Run Code</button>
+                <pre class="round margin-5-b">ui.modal.open({<br>    source: '.myModal',<br>    size: 'inline'<br>});</pre>
+                <button class="btn btn-sm round ui-fill-dark-100 ease-btn" onclick="ui.modal.open({source: '.myModal', size: 'inline'});">Run Code</button>
 
             </div>
             <div class="col-6 no-padding-t">
