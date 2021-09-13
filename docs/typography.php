@@ -171,7 +171,7 @@
                     </ul>
                 </div>
 
-                <h4>List Gaps</h4>
+                <h4>List Gaps (only inline lists)</h4>
                 <div class="padding-30-b">
                     <ul class="list-inline list-gap-less">
                         <li>Lorem ipsum</li>
@@ -192,18 +192,6 @@
                         <li>adipiscing elit</li>
                     </ul>
 
-                    <span class="sp-30"></span>
-
-                    <ul class="list-unstyled list-column-4 list-gap">
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Consectetur adipiscing elit</li>
-                        <li>Integer molestie lorem at massa</li>
-                        <li>Facilisis in pretium nisl aliquet</li>
-                        <li>Nulla volutpat aliquam velit</li>
-                        <li>Faucibus porta lacus fringilla vel</li>
-                        <li>Aenean sit amet erat nunc</li>
-                        <li>Eget porttitor lorem</li>
-                    </ul>
                 </div>
 
                 <h4>List Spacers</h4>
