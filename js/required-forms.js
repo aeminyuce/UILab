@@ -28,6 +28,7 @@ ui.requiredForms = {
     nameError: 'error',
 
     // values
+    scrollingSpeed: 10,
     rexMail: '^[a-z0-9][a-z0-9-_\\.]+@([a-z]|[a-z0-9]?[a-z0-9-]+[a-z0-9])\\.[a-z0-9]{2,10}(?:\\.[a-z]{2,10})?$'
 
 };
@@ -225,7 +226,7 @@ ui.requiredForms = {
 
                 for (i = 0; i < elems.length; i++) { // filter required elements
 
-                    if (ui.hasClass(elems[i], ui.requiredForms.target)) {
+                    if (ui.hasClass(elems[i], ui.requiredForms.target) && !elems[i].disabled) { // extract disabled elements
                         formElems.push(elems[i]);
                     }
 
@@ -274,13 +275,17 @@ ui.requiredForms = {
                     getRect = formElems[scrollIndex].getBoundingClientRect();
                     scrollIndex = getRect.top - (getRect.height * 2) + scrollPos;
 
+                    if (ui.hasClass(document, ui.modal.nameModalOpened)) { return; } // stop scrolling when modal opened
+
                     clearInterval(scrollAnimate);
                     scrollAnimate = setInterval(function () {
 
-                        scrollPos -= 10;
-
+                        scrollPos -= ui.requiredForms.scrollingSpeed;
                         window.scrollTo(scrollIndex, scrollPos);
-                        if (scrollPos + 10 <= scrollIndex) { clearInterval(scrollAnimate); }
+
+                        if (scrollPos + ui.requiredForms.scrollingSpeed <= scrollIndex) {
+                            clearInterval(scrollAnimate);
+                        }
 
                     }, 2);
 

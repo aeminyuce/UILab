@@ -1262,6 +1262,15 @@
                     <form action="#succesful" onsubmit="return ui.alerts.dialog({msg: 'Submit this form?', success: 'Yes', error: 'No', callback: function (value) { if (value === 'success') { document.getElementById('submitForm').submit(); } }});">
                         <div class="row">
                             <div class="col-3">
+                                <label class="form-grid">Required with disabled forms</label>
+                            </div>
+                            <div class="col-9">
+                                <div class="text round border-dual form-disabled ease-form">
+                                    <input class="required" type="text" placeholder="Disabled required forms are inherited!" disabled>
+                                </div>
+                            </div>
+
+                            <div class="col-3">
                                 <label class="form-grid">Required with message</label>
                             </div>
                             <div class="col-9">
