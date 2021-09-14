@@ -3,7 +3,28 @@
  Requires UI JS
 */
 
-ui.mobileMenu = {};
+ui.mobileMenu = {
+
+    // targets
+    target: 'mobile-menu',
+    targetBg: 'mobile-menu-bg',
+
+    // main classnames
+    nameOpened: 'mobile-menu-opened',
+    nameClose: 'close-mobile-menu',
+
+    // helper classnames
+    nameOpen: 'open',
+    nameOpenEase: 'open-ease',
+
+    // data attributes
+    dataMM: 'data-ui-mm',
+    dataImport: 'data-ui-import',
+
+    // custom events
+    eventMenuOpen: 'ui:mobileMenuOpen'
+
+};
 
 (function () {
 
@@ -14,27 +35,28 @@ ui.mobileMenu = {};
 
         var i, id, el, contents, bg;
 
-        bg = ui.find('.mobile-menu-bg')[0];
+        bg = ui.find('.' + ui.mobileMenu.targetBg)[0];
 
-        ui.removeClass(panel, 'open-ease');
-        ui.removeClass(bg, 'open-ease');
-        ui.removeClass(document, 'mobile-menu-opened');
+        ui.removeClass(panel, ui.mobileMenu.nameOpenEase);
+        ui.removeClass(bg, ui.mobileMenu.nameOpenEase);
+
+        ui.removeClass(document, ui.mobileMenu.nameOpened);
 
         setTimeout(function () {
 
-            ui.removeClass(panel, 'open');
-            ui.removeClass(bg, 'open');
+            ui.removeClass(panel, ui.mobileMenu.nameOpen);
+            ui.removeClass(bg, ui.mobileMenu.nameOpen);
 
         }, ui.globals.slow);
 
-        contents = ui.find('[data-ui-mm]');
+        contents = ui.find('[' + ui.mobileMenu.dataMM + ']');
 
         for (i = 0; i < contents.length; i++) {
 
-            id = '.mm-' + contents[i].getAttribute('data-ui-mm');
+            id = '.mm-' + contents[i].getAttribute(ui.mobileMenu.dataMM);
             el = ui.find(id)[0];
 
-            contents[i].removeAttribute('data-ui-mm');
+            contents[i].removeAttribute(ui.mobileMenu.dataMM);
 
             el.appendChild(contents[i]);
             el.parentNode.insertBefore(el.firstChild, el);
@@ -43,125 +65,141 @@ ui.mobileMenu = {};
 
         }
 
-        ui.off('.close-mobile-menu', 'click');
+        ui.off('.' + ui.mobileMenu.nameClose, 'click');
 
     };
 
     ui.mobileMenu.Start = function () {
 
         // Event Listeners
-        ui.on(document, 'click', '[class*="show-mobile-menu-"]', function () {
+        ui.on(document,
+            'click',
 
-            var html, importers, moveFnc, id, i, j, index, indexArr, position, bg, panel, filtered, content;
+            '[class*="show-mobile-menu-"]',
 
-            html = [];
-            position = 'l'; // right
+            function () {
 
-            if (ui.hasClass(this, 'show-mobile-menu-r')) {
-                position = 'r'; // left
-            }
+                var html, importers, moveFnc, id, i, j, index, indexArr, position, bg, panel, filtered, content;
 
-            moveFnc = function (that, j) {
+                html = [];
+                position = 'l'; // right
 
-                id = new Date().getTime();
-                id = id.toString();
-                id = id.substring(id.length - 4, id.length) + j;
+                if (ui.hasClass(this, 'show-mobile-menu-r')) {
+                    position = 'r'; // left
+                }
 
-                that.insertAdjacentHTML('beforebegin', '<div class="mm-' + id + '" style="display: none;"></div>');
-                that.setAttribute('data-ui-mm', id);
+                moveFnc = function (that, j) {
 
-                html[j] = document.createDocumentFragment();
-                html[j].appendChild(that);
+                    id = new Date().getTime();
+                    id = id.toString();
+                    id = id.substring(id.length - 4, id.length) + j;
 
-            };
+                    that.insertAdjacentHTML('beforebegin', '<div class="mm-' + id + '" style="display: none;"></div>');
+                    that.setAttribute(ui.mobileMenu.dataMM, id);
 
-            importers = ui.find('.add-mobile-menu-' + position);
+                    html[j] = document.createDocumentFragment();
+                    html[j].appendChild(that);
 
-            if (importers.length === 1) {
-                moveFnc(importers[0], 0);
+                };
 
-            } else if (importers.length > 1) {
+                importers = ui.find('.add-mobile-menu-' + position);
 
-                indexArr = [];
-                for (i = 0; i < importers.length; i++) {
+                if (importers.length === 1) {
+                    moveFnc(importers[0], 0);
 
-                    index = importers[i].getAttribute('data-ui-import');
+                } else if (importers.length > 1) {
 
-                    if (index !== null && index !== '') {
-                        indexArr.push(Number(index));
+                    indexArr = [];
+                    for (i = 0; i < importers.length; i++) {
 
-                    } else {
-                        indexArr.push(i);
+                        index = importers[i].getAttribute(ui.mobileMenu.dataImport);
+
+                        if (index !== null && index !== '') {
+                            indexArr.push(Number(index));
+
+                        } else {
+                            indexArr.push(i);
+                        }
+
                     }
 
+                    for (i = 0; i < importers.length; i++) {
+                        moveFnc(importers[i], indexArr[i]);
+                    }
+
+                } else { return; }
+
+                panel = ui.find('.' + ui.mobileMenu.target + '.show-' + position);
+                content = ui.find('.mobile-menu-content', panel);
+
+                filtered = html.filter(function (el) {
+                    return el != null;
+                });
+
+                for (j = 0; j < filtered.length; j++) {
+                    content.appendChild(filtered[j]);
                 }
 
-                for (i = 0; i < importers.length; i++) {
-                    moveFnc(importers[i], indexArr[i]);
+                bg = ui.find('.' + ui.mobileMenu.targetBg)[0];
+                if (bg === undefined) {
+
+                    ui.find('body')[0].insertAdjacentHTML('beforeend', '<div class="mobile-menu-bg ease-slow ease-layout"></div>');
+                    bg = ui.find('.' + ui.mobileMenu.targetBg)[0];
+
                 }
 
-            } else { return; }
+                ui.addClass(document, ui.mobileMenu.nameOpened);
 
-            panel = ui.find('.mobile-menu.show-' + position);
-            content = ui.find('.mobile-menu-content', panel);
-
-            filtered = html.filter(function (el) {
-                return el != null;
-            });
-
-            for (j = 0; j < filtered.length; j++) {
-                content.appendChild(filtered[j]);
-            }
-
-            bg = ui.find('.mobile-menu-bg')[0];
-            if (bg === undefined) {
-
-                ui.find('body')[0].insertAdjacentHTML('beforeend', '<div class="mobile-menu-bg ease-slow ease-layout"></div>');
-                bg = ui.find('.mobile-menu-bg')[0];
-
-            }
-
-            ui.addClass(document, 'mobile-menu-opened');
-
-            ui.addClass(panel, 'open');
-            ui.addClass(bg, 'open');
-
-            setTimeout(function () {
-
-                ui.addClass(panel, 'open-ease');
-                ui.addClass(bg, 'open-ease');
+                ui.addClass(panel, ui.mobileMenu.nameOpen);
+                ui.addClass(bg, ui.mobileMenu.nameOpen);
 
                 setTimeout(function () {
-                    ui.trigger(document, 'mobilemenu:open ' + ui.globals.eventDomChange); // set custom event
-                }, ui.globals.slow);
 
-            }, 10);
+                    ui.addClass(panel, ui.mobileMenu.nameOpenEase);
+                    ui.addClass(bg, ui.mobileMenu.nameOpenEase);
 
-            ui.on('.close-mobile-menu', 'click', function () {
-                ui.mobileMenu.close(panel);
+                    setTimeout(function () {
+                        ui.trigger(document, ui.mobileMenu.eventMenuOpen + ' ' + ui.globals.eventDomChange); // set custom event
+                    }, ui.globals.slow);
+
+                }, 10);
+
+                ui.on('.' + ui.mobileMenu.nameClose,
+                    'click',
+
+                    function () {
+                        ui.mobileMenu.close(panel);
+                    });
+
             });
 
-        });
+        ui.on(document,
+            'click',
 
-        ui.on(document, 'click', '.mobile-menu-bg', function () {
+            '.' + ui.mobileMenu.targetBg,
 
-            var panel = ui.find('.mobile-menu.open');
-            ui.mobileMenu.close(panel);
+            function () {
 
-        });
+                var panel = ui.find('.' + ui.mobileMenu.target + '.' + ui.mobileMenu.nameOpen);
+                ui.mobileMenu.close(panel);
+
+            });
 
     };
 
     // Loaders
     ui.onload(ui.mobileMenu.Start);
-    ui.on(window, 'resize', function () {
+    ui.on(window,
+        'resize',
 
-        var panel = ui.find('.mobile-menu.open');
+        function () {
 
-        if (panel.length > 0) {
-            ui.mobileMenu.close(panel);
-        }
+            var panel = ui.find('.' + ui.mobileMenu.target + '.' + ui.mobileMenu.nameOpen);
 
-    });
+            if (panel.length > 0) {
+                ui.mobileMenu.close(panel);
+            }
+
+        });
 
 }());

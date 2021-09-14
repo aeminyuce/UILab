@@ -4,6 +4,7 @@
 */
 
 ui.modal = {
+
     // targets
     target: 'modal',
     targetWin: 'modal-win',
