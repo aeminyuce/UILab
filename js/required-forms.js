@@ -28,7 +28,9 @@ ui.requiredForms = {
     nameError: 'error',
 
     // values
-    scrollingSpeed: 10,
+    scrollingSpeed: 15,
+    scrollingTopSpacing: 20,
+
     rexMail: '^[a-z0-9][a-z0-9-_\\.]+@([a-z]|[a-z0-9]?[a-z0-9-]+[a-z0-9])\\.[a-z0-9]{2,10}(?:\\.[a-z]{2,10})?$'
 
 };
@@ -283,7 +285,7 @@ ui.requiredForms = {
                         scrollPos -= ui.requiredForms.scrollingSpeed;
                         window.scrollTo(scrollIndex, scrollPos);
 
-                        if (scrollPos + ui.requiredForms.scrollingSpeed <= scrollIndex) {
+                        if (scrollPos + ui.requiredForms.scrollingTopSpacing <= scrollIndex) {
                             clearInterval(scrollAnimate);
                         }
 
