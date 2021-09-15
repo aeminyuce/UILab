@@ -12,10 +12,27 @@ ui.mobileMenu = {
     // main classnames
     nameOpened: 'mobile-menu-opened',
     nameClose: 'close-mobile-menu',
+    nameContent: 'mobile-menu-content',
+
+    nameDataTarget: 'ui-mm',
+
+    nameShowingMenu: 'show-mobile-menu-', // adding suffixes
+    nameAddContent: 'add-mobile-menu-', // adding suffixes
 
     // helper classnames
+    nameShow: 'show-', // adding suffixes
+
     nameOpen: 'open',
     nameOpenEase: 'open-ease',
+
+    nameLeft: 'l',
+    nameRight: 'r',
+
+    // styling classnames
+    stylesBg: 'ease-slow ease-layout',
+
+    // tags
+    tagDataTarget: 'i',
 
     // data attributes
     dataMM: 'data-ui-mm',
@@ -53,7 +70,7 @@ ui.mobileMenu = {
 
         for (i = 0; i < contents.length; i++) {
 
-            id = '.mm-' + contents[i].getAttribute(ui.mobileMenu.dataMM);
+            id = '.' + ui.mobileMenu.nameDataTarget + '-' + contents[i].getAttribute(ui.mobileMenu.dataMM);
             el = ui.find(id)[0];
 
             contents[i].removeAttribute(ui.mobileMenu.dataMM);
@@ -75,17 +92,17 @@ ui.mobileMenu = {
         ui.on(document,
             'click',
 
-            '[class*="show-mobile-menu-"]',
+            '[class*="' + ui.mobileMenu.nameShowingMenu + '"]',
 
             function () {
 
                 var html, importers, moveFnc, id, i, j, index, indexArr, position, bg, panel, filtered, content;
 
                 html = [];
-                position = 'l'; // right
+                position = ui.mobileMenu.nameLeft;
 
-                if (ui.hasClass(this, 'show-mobile-menu-r')) {
-                    position = 'r'; // left
+                if (ui.hasClass(this, ui.mobileMenu.nameShowingMenu + ui.mobileMenu.nameRight)) {
+                    position = ui.mobileMenu.nameRight;
                 }
 
                 moveFnc = function (that, j) {
@@ -94,7 +111,13 @@ ui.mobileMenu = {
                     id = id.toString();
                     id = id.substring(id.length - 4, id.length) + j;
 
-                    that.insertAdjacentHTML('beforebegin', '<div class="mm-' + id + '" style="display: none;"></div>');
+                    that.insertAdjacentHTML(
+                        'beforebegin',
+
+                        '<' + ui.mobileMenu.tagDataTarget + ' class="' + ui.mobileMenu.nameDataTarget + '-' + id + '" style="display: none;">' +
+                        '</' + ui.mobileMenu.tagDataTarget + '>'
+                    );
+
                     that.setAttribute(ui.mobileMenu.dataMM, id);
 
                     html[j] = document.createDocumentFragment();
@@ -102,7 +125,7 @@ ui.mobileMenu = {
 
                 };
 
-                importers = ui.find('.add-mobile-menu-' + position);
+                importers = ui.find('.' + ui.mobileMenu.nameAddContent + position);
 
                 if (importers.length === 1) {
                     moveFnc(importers[0], 0);
@@ -110,6 +133,7 @@ ui.mobileMenu = {
                 } else if (importers.length > 1) {
 
                     indexArr = [];
+
                     for (i = 0; i < importers.length; i++) {
 
                         index = importers[i].getAttribute(ui.mobileMenu.dataImport);
@@ -129,8 +153,8 @@ ui.mobileMenu = {
 
                 } else { return; }
 
-                panel = ui.find('.' + ui.mobileMenu.target + '.show-' + position);
-                content = ui.find('.mobile-menu-content', panel);
+                panel = ui.find('.' + ui.mobileMenu.target + '.' + ui.mobileMenu.nameShow + position);
+                content = ui.find('.' + ui.mobileMenu.nameContent, panel);
 
                 filtered = html.filter(function (el) {
                     return el != null;
@@ -143,7 +167,11 @@ ui.mobileMenu = {
                 bg = ui.find('.' + ui.mobileMenu.targetBg)[0];
                 if (bg === undefined) {
 
-                    ui.find('body')[0].insertAdjacentHTML('beforeend', '<div class="mobile-menu-bg ease-slow ease-layout"></div>');
+                    ui.find('body')[0].insertAdjacentHTML(
+                        'beforeend',
+                        '<div class="' + ui.mobileMenu.targetBg + ' ' + ui.mobileMenu.stylesBg + '"></div>'
+                    );
+
                     bg = ui.find('.' + ui.mobileMenu.targetBg)[0];
 
                 }
@@ -189,6 +217,7 @@ ui.mobileMenu = {
 
     // Loaders
     ui.onload(ui.mobileMenu.Start);
+
     ui.on(window,
         'resize',
 

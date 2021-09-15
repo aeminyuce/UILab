@@ -216,7 +216,10 @@ ui.autocomplete = {
 
                                         }
 
-                                        list[0].insertAdjacentHTML('beforeend', '<li>' + txt + '</li>');
+                                        list[0].insertAdjacentHTML(
+                                            'beforeend',
+                                            '<li>' + txt + '</li>'
+                                        );
 
                                     }
 
@@ -317,7 +320,10 @@ ui.autocomplete = {
             ui.addClass(p, 'open');
             ui.removeClass(p, 'menu-t');
 
-            p.insertAdjacentHTML('beforeend', '<ul class="ease-autocomplete"></ul>');
+            p.insertAdjacentHTML(
+                'beforeend',
+                '<ul class="ease-autocomplete"></ul>'
+            );
 
         });
 

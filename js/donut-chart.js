@@ -93,7 +93,11 @@ ui.donutChart = {};
                 // show titles
                 if (msg === undefined) {
 
-                    chart.insertAdjacentHTML('beforeEnd', '<strong></strong>');
+                    chart.insertAdjacentHTML(
+                        'beforeEnd',
+                        '<strong></strong>'
+                    );
+
                     msg = ui.find('strong', chart)[0];
 
                 }

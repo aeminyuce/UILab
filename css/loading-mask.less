@@ -1,11 +1,11 @@
 // out: false
 /* loading mask */ @import '_settings.less';
 
-@loading-spinner-bg:                          fade(@black, 46%);
-@loading-spinner-max-size:                    76px;
-@loading-spinner-z-index:                     10;
+@loading-mask-spinner-bg:                     fade(@black, 46%);
+@loading-mask-spinner-max-size:               76px;
+@loading-mask-spinner-z-index:                10;
 
-@loading-stroke-width:                        8%;
+@loading-mask-stroke-width:                   8%;
 
 @keyframes loading-spin {
     from { transform: rotate(0deg); }
@@ -13,22 +13,25 @@
 }
 
 .loading {
-    &-mask { overflow: hidden !important; position: relative !important; cursor: default !important; }
+    &-mask {
+        overflow: hidden !important; position: relative !important; cursor: default !important;
 
-    &-spinner {
-        height: 100%; background-color: @loading-spinner-bg; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: @loading-spinner-z-index;
+        &-spinner {
+            height: 100%; background-color: @loading-mask-spinner-bg; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: @loading-mask-spinner-z-index;
 
-        &:not(.open) { display: none; }
-        &:not(.open-ease) { opacity: 0; }
+            &:not(.open) { display: none; }
+            &:not(.open-ease) { opacity: 0; }
 
-        span {
-            display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            span {
+                display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
 
-            svg { max-height: @loading-spinner-max-size !important; display: block; fill: none; stroke: @white; stroke-width: @loading-stroke-width; stroke-linecap: round; stroke-linejoin: round; animation: loading-spin 1.15s linear infinite; }
+                svg { max-height: @loading-mask-spinner-max-size !important; display: block; fill: none; stroke: @white; stroke-width: @loading-mask-stroke-width; stroke-linecap: round; stroke-linejoin: round; animation: loading-spin 1.15s linear infinite; }
+            }
         }
-    }
 
-    &-mask-sticky {
-        & > .loading-spinner { position: fixed; }
+        &-sticky {
+            & > .loading-mask-spinner { position: fixed; }
+        }
+
     }
 }

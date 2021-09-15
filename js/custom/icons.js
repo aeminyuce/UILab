@@ -51,7 +51,11 @@ ui.onload(function () {
     ui.each('.icons-list', function () {
 
         var total = ui.find('li', this).length;
-        this.previousElementSibling.insertAdjacentHTML('beforeend', ' <small class="margin-5-v block opacity-half">(' + total + ' icons)</small>');
+
+        this.previousElementSibling.insertAdjacentHTML(
+            'beforeend',
+            ' <small class="margin-5-v block opacity-half">(' + total + ' icons)</small>'
+        );
 
         totalIcons += total;
 

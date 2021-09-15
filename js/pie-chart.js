@@ -133,7 +133,11 @@ ui.pieChart = {
                 msgHolder = ui.find(ui.pieChart.tagMsgHolder, parent)[0];
                 if (msgHolder === undefined) {
 
-                    parent.insertAdjacentHTML('beforeEnd', '<' + ui.pieChart.tagMsgHolder + '></' + ui.pieChart.tagMsgHolder + '>');
+                    parent.insertAdjacentHTML(
+                        'beforeEnd',
+                        '<' + ui.pieChart.tagMsgHolder + '></' + ui.pieChart.tagMsgHolder + '>'
+                    );
+
                     msgHolder = ui.find(ui.pieChart.tagMsgHolder, parent)[0];
 
                 }
