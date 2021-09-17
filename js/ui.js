@@ -2,7 +2,7 @@
  UI JS
 */
 
-/*globals window, document, Event, navigator, NodeList, setTimeout, clearTimeout, XMLHttpRequest, sessionStorage */
+/*globals window, document, Event, navigator, NodeList, setTimeout, clearTimeout, XMLHttpRequest */
 var ui = {
 
     globals: {
@@ -793,9 +793,8 @@ ui.darkMode = {
     nameDark: 'dark',
     nameLight: 'light',
 
-    // storages
-    storageTest: 'ui-darkMode-test',
-    storage: 'ui-darkMode',
+    // values
+    cookieName: 'ui-darkMode',
 
     // data attributes
     dataTheme: 'data-ui-theme'
@@ -806,21 +805,11 @@ ui.darkMode = {
 
     'use strict';
 
-    var testStorage = true;
-
-    // test for storage is supported?
-    try {
-        sessionStorage.setItem(ui.darkMode.storageTest, 0);
-
-    } catch (e) {
-        testStorage = false;
-    }
-
     ui.onload(function () {
 
         if (ui.userAgents.ie) { return; } // change event listener for darkColorScheme not supported on IE!
 
-        var mode, doc, darkColorScheme, state;
+        var i, mode, doc, darkColorScheme, state, cookies, cookieName;
 
         mode = ui.darkMode.nameLight;
         doc = ui.find(ui.darkMode.target)[0];
@@ -837,12 +826,18 @@ ui.darkMode = {
         }
 
         // check stored theme color
-        if (testStorage && sessionStorage !== undefined) {
+        state = decodeURIComponent(document.cookie).split('; ');
+        for (i = 0; i < state.length; i++ ) {
 
-            state = sessionStorage.getItem(ui.darkMode.storage)
-            if (state !== null && state !== null) {
-                mode = state;
+            cookies = state[i].split('=');
+
+            cookieName = cookies[0];
+            cookieName = cookieName.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
+
+            if (cookieName === 'ui-darkMode') {
+                mode = cookies[1];
             }
+
         }
 
         doc.setAttribute(ui.darkMode.dataTheme, mode);
@@ -850,9 +845,13 @@ ui.darkMode = {
         // Event Listeners
         function setState(mode) { // set theme state
 
-            if (testStorage && sessionStorage !== undefined) {
-                sessionStorage.setItem(ui.darkMode.storage, mode);
-            }
+            var d, expires;
+
+            d = new Date();
+            d.setTime(d.getTime() + 365 * 24 * 60 * 60 * 1000);
+
+            expires = "expires=" + d.toUTCString();
+            document.cookie =  ui.darkMode.cookieName + '=' + mode + ';' + expires;
 
         }
 
