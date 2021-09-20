@@ -794,6 +794,7 @@ ui.darkMode = {
     nameLight: 'light',
 
     // values
+    cookieDays: 365,
     cookieName: 'ui-darkMode',
 
     // data attributes
@@ -845,13 +846,10 @@ ui.darkMode = {
         // Event Listeners
         function setState(mode) { // set theme state
 
-            var d, expires;
+            var d = new Date();
 
-            d = new Date();
-            d.setTime(d.getTime() + 365 * 24 * 60 * 60 * 1000);
-
-            expires = "expires=" + d.toUTCString();
-            document.cookie =  ui.darkMode.cookieName + '=' + mode + ';' + expires;
+            d.setTime(d.getTime() + ui.darkMode.cookieDays * (24 * 60 * 60 * 1000));
+            document.cookie = ui.darkMode.cookieName + '=' + mode + ';' + "expires=" + d.toUTCString();
 
         }
 
