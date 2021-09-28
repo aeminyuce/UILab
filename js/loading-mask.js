@@ -17,7 +17,11 @@ ui.loadingMask = {
     nameOpenEase: 'open-ease',
 
     // styling classnames
-    stylesSpinner: 'ease-layout'
+    stylesSpinner: 'ease-layout',
+
+    // values
+    loadingBox: '-128 -12 288 288',
+    loadingPath: '<path d="M12 12a120 120 0 01120 120"/>'
 
 };
 
@@ -103,8 +107,8 @@ ui.loadingMask = {
 
                     html = '<span class="' + ui.loadingMask.nameSpinner + ' ' + ui.loadingMask.stylesSpinner + '">' +
                                 '<span>' +
-                                    '<svg viewBox="-128 -12 288 288" style="height: ' + (l[i].offsetHeight / 2) + 'px;">' +
-                                        '<path d="M12 12a120 120 0 01120 120"/>' +
+                                    '<svg viewBox="' + ui.loadingMask.loadingBox + '" style="height: ' + (l[i].offsetHeight / 2) + 'px;">' +
+                                        ui.loadingMask.loadingPath +
                                     '</svg>' +
                                 '</span>' +
                             '</span>';

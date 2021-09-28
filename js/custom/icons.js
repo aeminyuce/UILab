@@ -9,80 +9,88 @@ ui.onload(function () {
     totalIcons = 0;
     buttons = ui.find('.icon-modifiers .btn');
 
-    ui.on(buttons, 'click', function () {
+    ui.on(buttons,
+        'click',
 
-        var that, list, bttns, size, weight;
+        function () {
 
-        that = this;
-        list = ui.find('.icons-list');
-        bttns = ui.find('.btn', this.parentElement);
+            var that, list, bttns, size, weight;
 
-        ui.removeClass(bttns, 'ui-fill-dark-100');
-        setTimeout(function () {
-            ui.addClass(that, 'ui-fill-dark-100');
-        }, 0);
+            that = this;
+            list = ui.find('.icons-list');
+            bttns = ui.find('.btn', this.parentElement);
 
-        // change size
-        size = this.getAttribute('data-ui-size');
-        if (size !== null) {
+            ui.removeClass(bttns, 'ui-fill-dark-100');
+            setTimeout(function () {
+                ui.addClass(that, 'ui-fill-dark-100');
+            }, 0);
 
-            ui.removeClass(list, 'icons-xxl icons-xl icons-lg icons-sm icons-xs icons-xxs');
+            // change size
+            size = this.getAttribute('data-ui-size');
+            if (size !== null) {
 
-            if (size !== '') {
-                ui.addClass(list, 'icons-' + size);
+                ui.removeClass(list, 'icons-xxl icons-xl icons-lg icons-sm icons-xs icons-xxs');
+
+                if (size !== '') {
+                    ui.addClass(list, 'icons-' + size);
+                }
+
             }
 
-        }
+            // change weight
+            weight = this.getAttribute('data-ui-weight');
+            if (weight !== null) {
 
-        // change weight
-        weight = this.getAttribute('data-ui-weight');
-        if (weight !== null) {
+                ui.removeClass(list, 'icons-black icons-bold icons-semibold icons-light icons-thin');
 
-            ui.removeClass(list, 'icons-black icons-bold icons-semibold icons-light icons-thin');
+                if (weight !== '') {
+                    ui.addClass(list, 'icons-' + weight);
+                }
 
-            if (weight !== '') {
-                ui.addClass(list, 'icons-' + weight);
             }
 
-        }
+        });
 
-    });
+    ui.each('.icons-list',
 
-    ui.each('.icons-list', function () {
+        function () {
 
-        var total = ui.find('li', this).length;
+            var total = ui.find('li', this).length;
 
-        this.previousElementSibling.insertAdjacentHTML(
-            'beforeend',
-            ' <small class="margin-5-v block opacity-half">(' + total + ' icons)</small>'
-        );
+            this.previousElementSibling.insertAdjacentHTML(
+                'beforeend',
+                ' <small class="margin-5-v block opacity-half">(' + total + ' icons)</small>'
+            );
 
-        totalIcons += total;
+            totalIcons += total;
 
-    });
+        });
 
     ui.find('.total')[0].textContent = '(Total ' + totalIcons + ' icons)';
 
     icons = ui.find('.icons-list li');
-    ui.on(icons, 'click', function () {
+    ui.on(icons,
+        'click',
 
-        var range, iconName;
+        function () {
 
-        range = document.createRange();
+            var range, iconName;
 
-        iconName = ui.find('span', this)[0];
-        range.selectNode(iconName);
+            range = document.createRange();
 
-        window.getSelection().removeAllRanges();
-        window.getSelection().addRange(range);
+            iconName = ui.find('span', this)[0];
+            range.selectNode(iconName);
 
-        document.execCommand('copy');
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
 
-        ui.alerts.message({
-            msg: '<b>Copied!</b><br>' + iconName.textContent,
+            document.execCommand('copy');
+
+            ui.alerts.message({
+                msg: '<b>Copied!</b><br>' + iconName.textContent,
+            });
+
         });
-
-    });
 
     // settings
     ui.alerts.messageTheme = 'theme-default2 ui-fill-dark-100';

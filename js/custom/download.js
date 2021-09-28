@@ -135,9 +135,11 @@ function readFiles(that) {
 
     ui.loadingMask.toggle(btn); // show loading
 
-    ui.each(elems, function () {
-        this.checked = false;
-    });
+    ui.each(elems,
+
+        function () {
+            this.checked = false;
+        });
 
     ext = file.name.match(/\.[0-9a-z]+$/i)[0];
     if (ext === '.' + that.name) {
@@ -168,39 +170,45 @@ function readFiles(that) {
 
             setTimeout(function () {
 
-                ui.each(list, function () {
+                ui.each(list,
 
-                    if (getTypes.toString().indexOf(this.name) > -1) {
-                        this.checked = true;
+                    function () {
 
-                    } else {
-                        this.checked = false;
-                    }
+                        if (getTypes.toString().indexOf(this.name) > -1) {
+                            this.checked = true;
 
-                });
+                        } else {
+                            this.checked = false;
+                        }
+
+                    });
 
                 // check selected all properties
                 forms = ui.find('.generate-forms', holder);
-                ui.each(forms, function () {
+                ui.each(forms,
 
-                    count = 0;
+                    function () {
 
-                    elems = ui.find('input:not(.generate-toggle)', this);
-                    toggler = ui.find('.generate-toggle', this)[0];
+                        count = 0;
 
-                    ui.each(elems, function () {
-                        if (this.checked) { count += 1; }
+                        elems = ui.find('input:not(.generate-toggle)', this);
+                        toggler = ui.find('.generate-toggle', this)[0];
+
+                        ui.each(elems,
+
+                            function () {
+                                if (this.checked) { count += 1; }
+                            });
+
+
+                        if (elems.length > 0 && count === elems.length) {
+                            toggler.checked = true;
+
+                        } else {
+                            toggler.checked = false;
+                        }
+
                     });
-
-
-                    if (elems.length > 0 && count === elems.length) {
-                        toggler.checked = true;
-
-                    } else {
-                        toggler.checked = false;
-                    }
-
-                });
 
                 setTimeout(function () {
                     ui.loadingMask.toggle(btn); // hide loading
@@ -228,141 +236,173 @@ function readFiles(that) {
 function generator() {
 
     // Event Listeners
-    ui.on('.generate-import', 'change', function () {
-        readFiles(this);
-    });
+    ui.on('.generate-import',
+        'change',
 
-    ui.on('.generate-btn', 'click', function () {
-        pullFiles(this);
-    });
+        function () {
+            readFiles(this);
+        });
 
-    ui.on('.generate-clear', 'click', function () {
+    ui.on('.generate-btn',
+        'click',
 
-        var holder, form;
+        function () {
+            pullFiles(this);
+        });
 
-        holder = ui.closest(this, '.generate-holder')[0];
-        form = ui.find('textarea', holder)[0];
+    ui.on('.generate-clear',
+        'click',
 
-        form.value = '';
-        ui.find('.generate-size', holder)[0].innerHTML = '0 kb';
+        function () {
 
-    });
+            var holder, form;
 
-    ui.on('.generate-min', 'click', function () {
+            holder = ui.closest(this, '.generate-holder')[0];
+            form = ui.find('textarea', holder)[0];
 
-        var holder, result, code;
+            form.value = '';
+            ui.find('.generate-size', holder)[0].innerHTML = '0 kb';
 
-        holder = ui.closest(this, '.generate-holder')[0];
-        result = ui.find('textarea', holder)[0];
+        });
 
-        code = result.value;
-        if (code.length === 0) { return; }
+    ui.on('.generate-min',
+        'click',
 
-        // comments
-        code = code.replace(/\/\*[\s\S]*?\*\/|([^\\:]|^)\/\/.*$/gm, ''); // remove // /*
-        code = code.replace(/(<!--.*?-->)|(<!--[\w\W\n\s]+?-->)/gm, ''); // remove <!-- -->
+        function () {
 
-        // line breaks and multiple spaces
-        if (this.name === 'css') {
+            var holder, result, code;
 
-            code = code.replace(/ {/g, '{').replace(/: /g, ':');
-            code = code.replace(/ >/g, '>').replace(/> /g, '>');
-            code = code.replace(/, /g, ',');
-
-        }
-
-        if (this.name === 'js') {
-            code = code.replace(/\n/g, ' ').replace(/\s+\s/g, ' ');
-
-        } else {
-            code = code.replace(/\n/g, '').replace(/\s+\s/g, '').replace(/^\s|\s+$/g, '');
-        }
-
-        code = code.replace(/^\s|\s+$/g, '');
-
-        result.value = code;
-        result.scrollTop = 0; // IE, EDGE: scrollTo() not supported for textarea element
-
-        fileSize(holder, code);
-
-    });
-
-    ui.on(document, 'paste keydown blur', '.generate-holder textarea', function () {
-
-        var that, holder, result, code;
-
-        that = this;
-        setTimeout(function () {
-
-            holder = ui.closest(that, '.generate-holder')[0];
+            holder = ui.closest(this, '.generate-holder')[0];
             result = ui.find('textarea', holder)[0];
 
             code = result.value;
+            if (code.length === 0) { return; }
+
+            // comments
+            code = code.replace(/\/\*[\s\S]*?\*\/|([^\\:]|^)\/\/.*$/gm, ''); // remove // /*
+            code = code.replace(/(<!--.*?-->)|(<!--[\w\W\n\s]+?-->)/gm, ''); // remove <!-- -->
+
+            // line breaks and multiple spaces
+            if (this.name === 'css') {
+
+                code = code.replace(/ {/g, '{').replace(/: /g, ':');
+                code = code.replace(/ >/g, '>').replace(/> /g, '>');
+                code = code.replace(/, /g, ',');
+
+            }
+
+            if (this.name === 'js') {
+                code = code.replace(/\n/g, ' ').replace(/\s+\s/g, ' ');
+
+            } else {
+                code = code.replace(/\n/g, '').replace(/\s+\s/g, '').replace(/^\s|\s+$/g, '');
+            }
+
+            code = code.replace(/^\s|\s+$/g, '');
+
+            result.value = code;
+            result.scrollTop = 0; // IE, EDGE: scrollTo() not supported for textarea element
+
             fileSize(holder, code);
 
-        }, 0);
-
-    });
-
-    ui.on('.generate-copy', 'click', function () {
-
-        var holder, form;
-
-        holder = ui.closest(this, '.generate-holder')[0];
-        form = ui.find('textarea', holder)[0];
-
-        if (form.value.length === 0) { return; }
-
-        form.select();
-        document.execCommand('copy');
-
-    });
-
-    ui.on('.generate-toggle', 'change', function () {
-
-        var forms, elems;
-
-        forms = ui.closest(this, '.generate-forms')[0];
-        elems = ui.find('input', forms);
-
-        if (this.checked) {
-
-            ui.each(elems, function () {
-                this.checked = true;
-            });
-
-        } else {
-
-            ui.each(elems, function () {
-                this.checked = false;
-            });
-
-        }
-
-    });
-
-    ui.on('.generate-forms input:not(.generate-toggle)', 'change', function () {
-
-        var forms, elems, count, toggler;
-        count = 0;
-
-        forms = ui.closest(this, '.generate-forms')[0];
-        elems = ui.find('input:not(.generate-toggle)', forms);
-
-        toggler = ui.find('.generate-toggle', forms)[0];
-
-        ui.each(elems, function () {
-            if (this.checked) { count += 1; }
         });
 
-        if (count === elems.length) {
-            toggler.checked = true;
+    ui.on(document,
+        'paste keydown blur',
 
-        } else {
-            toggler.checked = false;
-        }
+        '.generate-holder textarea',
 
-    });
+        function () {
+
+            var that, holder, result, code;
+
+            that = this;
+            setTimeout(function () {
+
+                holder = ui.closest(that, '.generate-holder')[0];
+                result = ui.find('textarea', holder)[0];
+
+                code = result.value;
+                fileSize(holder, code);
+
+            }, 0);
+
+        });
+
+    ui.on('.generate-copy',
+        'click',
+
+        function () {
+
+            var holder, form;
+
+            holder = ui.closest(this, '.generate-holder')[0];
+            form = ui.find('textarea', holder)[0];
+
+            if (form.value.length === 0) { return; }
+
+            form.select();
+            document.execCommand('copy');
+
+        });
+
+    ui.on('.generate-toggle',
+        'change',
+
+        function () {
+
+            var forms, elems;
+
+            forms = ui.closest(this, '.generate-forms')[0];
+            elems = ui.find('input', forms);
+
+            if (this.checked) {
+
+                ui.each(elems,
+
+                    function () {
+                        this.checked = true;
+                    });
+
+            } else {
+
+                ui.each(elems,
+
+                    function () {
+                        this.checked = false;
+                    });
+
+            }
+
+        });
+
+    ui.on('.generate-forms input:not(.generate-toggle)',
+        'change',
+
+        function () {
+
+            var forms, elems, count, toggler;
+            count = 0;
+
+            forms = ui.closest(this, '.generate-forms')[0];
+            elems = ui.find('input:not(.generate-toggle)', forms);
+
+            toggler = ui.find('.generate-toggle', forms)[0];
+
+            ui.each(elems,
+
+                function () {
+                    if (this.checked) { count += 1; }
+                });
+
+            if (count === elems.length) {
+                toggler.checked = true;
+
+            } else {
+                toggler.checked = false;
+            }
+
+        });
 
 }
 

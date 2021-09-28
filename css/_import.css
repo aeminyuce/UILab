@@ -7106,7 +7106,7 @@ header.sticky-static {
   padding: 0;
   display: inline-block;
 }
-.line-charts ul.line {
+.line-charts ul.lines {
   display: none;
 }
 .line-charts svg {

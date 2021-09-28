@@ -1,19 +1,23 @@
 /*globals window, ui, setTimeout */
 
-ui.lineCharts.rows = 4; // set number of rows
-    ui.lineCharts.rowsHeight = 36; // set height of single row (px)
+ui.lineCharts.rows = 4;
+ui.lineCharts.rowsHeight = 36;
 
-    ui.lineCharts.top = 16; // set top space (px)
-    ui.lineCharts.right = 20; // set right space (px)
-    ui.lineCharts.bottom = 10; // set bottom space (px)
+ui.lineCharts.top = 16;
+ui.lineCharts.right = 20;
+ui.lineCharts.bottom = 10;
 
-    ui.lineCharts.showBgGrid = false; // set showing bg grid
-    ui.lineCharts.showInfo = false; // set showing info
+ui.lineCharts.showBgGrid = false;
+ui.lineCharts.showInfo = false;
 
-    ui.alerts.messageTheme = 'theme-default2 ui-fill-dark-100';
+ui.alerts.messageTheme = 'theme-default2 ui-fill-dark-100';
 
-    ui.onload(function () {
-        ui.on('.load-more', 'click', function () {
+ui.onload(function () {
+    ui.on('.load-more',
+
+        'click',
+
+        function () {
 
             var that, target, scrollPos;
 
@@ -62,4 +66,4 @@ ui.lineCharts.rows = 4; // set number of rows
 
         });
 
-    });
+});
