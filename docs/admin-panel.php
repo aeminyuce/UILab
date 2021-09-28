@@ -190,7 +190,7 @@
                             <div class="padding-15-h padding-20-v">
 
                                 <div class="line-charts ease-line-charts" data-ui-size="5,57" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                                    <ul class="line" data-ui-name="1st" data-ui-type="curved dashed">
+                                    <ul class="lines" data-ui-name="1st" data-ui-type="curved dashed">
                                         <li data-ui-y="55" data-ui-link="#1"></li>
                                         <li data-ui-y="70" data-ui-link="#2"></li>
                                         <li data-ui-y="92" data-ui-link="#3"></li>
@@ -199,7 +199,7 @@
                                         <li data-ui-y="98" data-ui-link="#6"></li>
                                         <li data-ui-y="116" data-ui-link="#7"></li>
                                     </ul>
-                                    <ul class="line" data-ui-name="2nd" data-ui-type="filled curved">
+                                    <ul class="lines" data-ui-name="2nd" data-ui-type="filled curved">
                                         <li data-ui-y="120" data-ui-link="#1"></li>
                                         <li data-ui-y="20" data-ui-link="#2"></li>
                                         <li data-ui-y="159" data-ui-link="#3"></li>

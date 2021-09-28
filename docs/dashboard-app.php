@@ -97,7 +97,7 @@
 
                         <div class="card-side padding-15 padding-5-b">
                             <div class="line-charts margin-15-b ease-line-charts" data-ui-size="5,15" data-ui-x="1,2,3,4,5,6,7">
-                                <ul class="line" data-ui-name="1st" data-ui-type="curved dotted">
+                                <ul class="lines" data-ui-name="1st" data-ui-type="curved dotted">
                                     <li data-ui-y="159"></li>
                                     <li data-ui-y="120"></li>
                                     <li data-ui-y="20"></li>
@@ -106,7 +106,7 @@
                                     <li data-ui-y="0"></li>
                                     <li data-ui-y="76"></li>
                                 </ul>
-                                <ul class="line" data-ui-name="2nd" data-ui-type="curved filled">
+                                <ul class="lines" data-ui-name="2nd" data-ui-type="curved filled">
                                     <li data-ui-y="55"></li>
                                     <li data-ui-y="70"></li>
                                     <li data-ui-y="92"></li>

@@ -753,7 +753,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="line-charts ease-line-charts" data-ui-size="10,30" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                                <ul class="line" data-ui-name="Last year" data-ui-type="filled">
+                                <ul class="lines" data-ui-name="Last year" data-ui-type="filled">
                                     <li data-ui-y="30" data-ui-link="#1"></li>
                                     <li data-ui-y="50" data-ui-link="#2"></li>
                                     <li data-ui-y="110" data-ui-link="#3"></li>
@@ -762,7 +762,7 @@
                                     <li data-ui-y="320" data-ui-link="#6"></li>
                                     <li data-ui-y="360" data-ui-link="#7"></li>
                                 </ul>
-                                <ul class="line" data-ui-name="This year" data-ui-type="filled">
+                                <ul class="lines" data-ui-name="This year" data-ui-type="filled">
                                     <li data-ui-y="120" data-ui-link="#1"></li>
                                     <li data-ui-y="160" data-ui-link="#2"></li>
                                     <li data-ui-y="180" data-ui-link="#3"></li>
