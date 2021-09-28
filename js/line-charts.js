@@ -11,11 +11,20 @@ ui.lineCharts = {
     // main classnames
     nameLine: 'lines',
 
+    nameX: 'x',
+    nameY: 'y',
+
+    nameRoot: 'root-grid',
+    nameInfo: 'chart-info',
+
     // helper classnames
     nameLoaded: 'loaded',
     nameNotLoaded: 'not-loaded',
 
     nameResized: 'resized',
+
+    // ids
+    idGradient: 'ui-gradient',
 
     // tags
     tagLines: 'li',
@@ -43,6 +52,8 @@ ui.lineCharts = {
     curveSize: 10,
 
     gridStroke: 1,
+    gridStrokeArray: 4,
+
     lineStroke: 2,
     circleSize: 4,
 
@@ -50,6 +61,11 @@ ui.lineCharts = {
     right: 8,
     bottom: 15,
     left: 35,
+
+    dotted: 'dotted',
+    dashed: 'dashed',
+    curved: 'curved',
+    filled: 'filled',
 
     // data attributes
     dataX: 'data-ui-x',
@@ -59,7 +75,7 @@ ui.lineCharts = {
     dataLink: 'data-ui-link',
     dataType: 'data-ui-type',
     dataName: 'data-ui-name',
-    dataStep: 'data-ui-step',
+    dataStep: 'data-ui-step'
 
 };
 
@@ -134,7 +150,11 @@ ui.lineCharts = {
 
                     // read all x parameters
                     x = this.getAttribute(ui.lineCharts.dataX);
-                    if (x !== null && x !== '') { data.x = x.split(','); } else { return; }
+
+                    if (x !== null && x !== '') {
+                        data.x = x.split(',');
+
+                    } else { return; }
 
                     x = data.x;
 
@@ -158,10 +178,20 @@ ui.lineCharts = {
                                 function () {
 
                                     y = this.getAttribute(ui.lineCharts.dataY);
-                                    if (y !== null && y !== '') { data[i].y.push(y); } else { return; }
+
+                                    if (y !== null && y !== '') {
+                                        data[i].y.push(y);
+
+                                    } else { return; }
 
                                     link = this.getAttribute(ui.lineCharts.dataLink);
-                                    if (link !== null && link !== '') { data[i].links.push(link); } else { data[i].links.push(''); }
+
+                                    if (link !== null && link !== '') {
+                                        data[i].links.push(link);
+
+                                    } else {
+                                        data[i].links.push('');
+                                    }
 
                                 });
 
@@ -220,7 +250,7 @@ ui.lineCharts = {
 
                     // create grids
                     col = (data.width - (ui.lineCharts.right + ui.lineCharts.left)) / (x.length - 1);
-                    html += '<g class="x">';
+                    html += '<g class="' + ui.lineCharts.nameX + '">';
 
                     for (i = 0; i < x.length; i++) {
 
@@ -231,24 +261,40 @@ ui.lineCharts = {
                             if (data.step) {
 
                                 if (data.stepArr.indexOf(i) > -1) {
-                                    html += '<text x="' + posX + '" y="' + (data.height - ui.lineCharts.bottom + 20) + '">' + x[i] + '</text>';
+                                    html += '<text ' +
+                                                'x="' + posX + '" ' +
+                                                'y="' + (data.height - ui.lineCharts.bottom + 20) +
+                                            '">' +
+                                                x[i] +
+                                            '</text>';
                                 }
 
                             } else {
-                                html += '<text x="' + posX + '" y="' + (data.height - ui.lineCharts.bottom + 20) + '">' + x[i] + '</text>';
+                                html += '<text ' +
+                                            'x="' + posX + '" ' +
+                                            'y="' + (data.height - ui.lineCharts.bottom + 20) +
+                                        '">' +
+                                            x[i] +
+                                        '</text>';
                             }
 
                         }
 
                         if (i === 0 || ui.lineCharts.showBgGrid) {
-                            html += '<line x1="' + posX + '" x2="' + posX + '" y1="' + ui.lineCharts.top + '" ';
+                            html += '<line ' +
+                                        'x1="' + posX + '" ' +
+                                        'x2="' + posX + '" ' +
+                                        'y1="' + ui.lineCharts.top + '" ';
                         }
 
                         if (i === 0) { // root of x grid
-                            html += 'y2="' + Math.ceil(data.height - (ui.lineCharts.bottom + (ui.lineCharts.gridStroke / 2))) + '" class="root" stroke-width="' + ui.lineCharts.gridStroke + '"';
+                            html += 'y2="' + Math.ceil(data.height - (ui.lineCharts.bottom + (ui.lineCharts.gridStroke / 2))) +'" ' +
+                                    'class="' + ui.lineCharts.nameRoot + '" ' +
+                                    'stroke-width="' + ui.lineCharts.gridStroke + '"';
 
                         } else {
-                            html += 'y2="' + (data.height - ui.lineCharts.bottom) + '" stroke-dasharray="4"';
+                            html += 'y2="' + (data.height - ui.lineCharts.bottom) + '" ' +
+                                    'stroke-dasharray="' + ui.lineCharts.gridStrokeArray + '"';
                         }
 
                         html += '></line>';
@@ -256,25 +302,36 @@ ui.lineCharts = {
                     }
 
                     html += '</g>' +
-                        '<g class="y">';
+                        '<g class="' + ui.lineCharts.nameY + '">';
 
                     for (i = 0; i <= rows; i++) {
 
                         posY = parseInt((i * (data.height - (ui.lineCharts.top + ui.lineCharts.bottom)) / rows) + ui.lineCharts.top);
 
                         if (ui.lineCharts.showGridText) {
-                            html += '<text x="' + (ui.lineCharts.left - 10) + '" y="' + (posY + 4) + '">' + (parseInt((yMax - yMin) / rows) * (rows - i) + yMin) + '</text>';
+                            html += '<text ' +
+                                        'x="' + (ui.lineCharts.left - 10) + '" ' +
+                                        'y="' + (posY + 4) +
+                                    '">' +
+                                        (parseInt((yMax - yMin) / rows) * (rows - i) + yMin) +
+                                    '</text>';
                         }
 
                         if (i === rows || ui.lineCharts.showBgGrid) {
-                            html += '<line x2="' + (data.width - ui.lineCharts.right + 1) + '" y1="' + posY + '" y2="' + posY + '" ';
+                            html += '<line ' +
+                                        'x2="' + (data.width - ui.lineCharts.right + 1) + '" ' +
+                                        'y1="' + posY + '" ' +
+                                        'y2="' + posY + '" ';
                         }
 
                         if (i >= rows) { // root of y grid
-                            html += 'x1="' + Math.ceil(ui.lineCharts.left - (ui.lineCharts.gridStroke / 2)) + '" class="root" stroke-width="' + ui.lineCharts.gridStroke + '"';
+                            html += 'x1="' + Math.ceil(ui.lineCharts.left - (ui.lineCharts.gridStroke / 2)) + '" ' +
+                                    'class="' + ui.lineCharts.nameRoot + '" ' +
+                                    'stroke-width="' + ui.lineCharts.gridStroke + '"';
 
                         } else {
-                            html += 'x1="' + Math.floor(ui.lineCharts.left + ui.lineCharts.gridStroke) + '" stroke-dasharray="4"';
+                            html += 'x1="' + Math.floor(ui.lineCharts.left + ui.lineCharts.gridStroke) + '" ' +
+                                    'stroke-dasharray="' + ui.lineCharts.gridStrokeArray + '"';
                         }
 
                         html += '></line>';
@@ -322,7 +379,7 @@ ui.lineCharts = {
 
                                 }
 
-                                if (type.indexOf('curved') > -1) { // curved
+                                if (type.indexOf(ui.lineCharts.curved) > -1) { // curved
 
                                     data.percent = parseInt((ui.lineCharts.curveSize * (i * col)) / 100);
 
@@ -368,7 +425,7 @@ ui.lineCharts = {
                                 } else {
 
                                     circles += ui.tooltip.dataTooltip + ' ' +
-                                            'title="' + y[i] + '" ' +
+                                                'title="' + y[i] + '" ' +
                                             '/>';
 
                                 }
@@ -378,36 +435,46 @@ ui.lineCharts = {
                             }
 
                             // create paths
-                            if (type.indexOf('dashed') > -1) { // dashed
-                                html += '<path class="dashed" ';
+                            if (type.indexOf(ui.lineCharts.dashed) > -1) { // dashed
+                                html += '<path class="' + ui.lineCharts.dashed + '" ';
 
-                            } else if (type.indexOf('dotted') > -1) { // dotted
-                                html += '<path class="dotted" ';
+                            } else if (type.indexOf(ui.lineCharts.dotted) > -1) { // dotted
+                                html += '<path class="' + ui.lineCharts.dotted + '" ';
 
                             } else {
                                 html += '<path ';
                             }
 
                             html += 'd="M ' + pathStart.x + ' ' + pathStart.y +
-                                paths +
-                                '" stroke="' + data.color[j] + '" stroke-width="' + ui.lineCharts.lineStroke + '" />';
+                                    paths + '" ' +
+                                    'stroke="' + data.color[j] + '" ' +
+                                    'stroke-width="' + ui.lineCharts.lineStroke + '" ' +
+                                '/>';
 
-                            if (type.indexOf('filled') > -1) { // add filled paths
+                            if (type.indexOf(ui.lineCharts.filled) > -1) { // add filled paths
 
                                 data.id = new Date().getTime();
                                 data.id = data.id.toString();
                                 data.id = data.id.substring(data.id.length - 4, data.id.length) + j;
 
-                                html += '<linearGradient id="gradientId' + data.id + '" x1="0" y1="0" x2="0" y2="100%">' +
-                                        '<stop offset="0" stop-color="' + data.color[j] + '"></stop>' +
-                                        '<stop offset="100%" stop-color="' + data.color[j] + '" stop-opacity="0.0"></stop>' +
-                                    '</linearGradient>' +
-                                    '<path d="M ' + (pathStart.x + (ui.lineCharts.gridStroke / 2)) + ' ' + pathStart.y +
-                                        paths +
-                                        ' V ' + (data.height - ui.lineCharts.bottom - (ui.lineCharts.gridStroke / 2)) +
-                                        ' H ' + ((ui.lineCharts.gridStroke / 2) + ui.lineCharts.left) + ' Z ' +
+                                html += '<linearGradient id="' + ui.lineCharts.idGradient + data.id + '" x1="0" y1="0" x2="0" y2="100%">' +
+                                            '<stop offset="0" stop-color="' + data.color[j] + '"></stop>' +
+                                            '<stop offset="100%" stop-color="' + data.color[j] + '" stop-opacity="0.0"></stop>' +
+                                        '</linearGradient>' +
 
-                                        '" stroke="0" fill="url(#gradientId' + data.id + ')" stroke-width="' + ui.lineCharts.lineStroke + '" class="filled" />';
+                                        '<path d="M ' + (pathStart.x + (ui.lineCharts.gridStroke / 2)) + ' ' + pathStart.y +
+
+                                            paths +
+
+                                            ' V ' + (data.height - ui.lineCharts.bottom - (ui.lineCharts.gridStroke / 2)) +
+                                            ' H ' + ((ui.lineCharts.gridStroke / 2) + ui.lineCharts.left) + ' Z" ' +
+
+                                            'stroke="0" ' +
+                                            'fill="url(#' + ui.lineCharts.idGradient + data.id + ')" ' +
+                                            'stroke-width="' + ui.lineCharts.lineStroke + '" ' +
+                                            'class="' + ui.lineCharts.filled + '" ' +
+
+                                        '/>';
 
                             }
 
@@ -433,7 +500,7 @@ ui.lineCharts = {
                     // create info
                     if (ui.lineCharts.showInfo) {
 
-                        html += '<ul class="info">';
+                        html += '<ul class="' + ui.lineCharts.nameInfo + '">';
 
                         for (i = 0; i < lines.length; i++) {
 
@@ -486,7 +553,12 @@ ui.lineCharts = {
             loadCharts(ui.lineCharts.nameLoaded, true); // resize loaded charts
         });
 
-    ui.on(document, ui.globals.eventDomChange, function () { loadCharts(ui.globals.eventDomChange); }); // resize loaded charts
+    ui.on(document,
+        ui.globals.eventDomChange,
+
+        function () {
+            loadCharts(ui.globals.eventDomChange); // resize loaded charts
+        });
 
     // ajax callback loader
     ui.on(document,

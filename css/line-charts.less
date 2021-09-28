@@ -65,8 +65,8 @@
             stroke: currentColor;
             html:not(.firefox) & { shape-rendering: crispEdges; }
 
-            &.root { opacity: @line-chart-stroke-opacity; }
-            &:not(.root) { stroke-width: @line-chart-bg-grid-stroke-size; opacity: @line-chart-bg-grid-opacity; }
+            &.root-grid { opacity: @line-chart-stroke-opacity; }
+            &:not(.root-grid) { stroke-width: @line-chart-bg-grid-stroke-size; opacity: @line-chart-bg-grid-opacity; }
         }
         circle {
             &[onclick] { cursor: pointer; }
@@ -83,7 +83,8 @@
     &.resized {
         svg {
             path {
-                &.filled { opacity: @line-chart-filled-opacity; }
+                &.filled { opacity: 0; }
+                &.dashed,&.dotted { stroke-dashoffset: 0; opacity: 0; }
             }
         }
     }
@@ -112,7 +113,7 @@
         }
     }
 
-    .info {
+    .chart-info {
         text-align: center; display: block;
 
         li {
