@@ -166,7 +166,8 @@ html,
 input,
 button,
 textarea,
-select {
+select,
+.chrome input:-webkit-autofill {
   font-family: -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 14px;
   font-weight: 400;
@@ -290,15 +291,6 @@ p:not(:last-child):not(.hint) {
 }
 .ios {
   -webkit-text-size-adjust: 100%;
-}
-.firefox input::-moz-focus-inner,
-.firefox button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-.chrome input:-webkit-autofill {
-  transition-delay: 9999s;
-  transition: color 0s ease-out, background-color 9999s ease-out;
 }
 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
   .mac.chrome body {
@@ -5066,6 +5058,15 @@ input.btn {
 }
 .toggle-textarea:not(.form-focus).no-border textarea {
   height: 32px;
+}
+.chrome .text input:-webkit-autofill {
+  -webkit-background-clip: text;
+}
+[data-ui-theme="light"].chrome .text input:-webkit-autofill {
+  -webkit-text-fill-color: hsl(0, 0%, 0%) !important;
+}
+[data-ui-theme="dark"].chrome .text input:-webkit-autofill {
+  -webkit-text-fill-color: hsl(0, 0%, 100%) !important;
 }
 .no-border.text input,
 .no-border.select select {

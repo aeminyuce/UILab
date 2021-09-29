@@ -8,7 +8,7 @@
     &:not(pre):not(code) { -webkit-font-smoothing: antialiased; }
 }
 
-html,input,button,textarea,select { font-family: @font-family; font-size: @font-size; font-weight: @font-normal; line-height: @line-height; letter-spacing: @letter-spacing; }
+html,input,button,textarea,select,.chrome input:-webkit-autofill { font-family: @font-family; font-size: @font-size; font-weight: @font-normal; line-height: @line-height; letter-spacing: @letter-spacing; }
 html { ._bg-var(body-bg); }
 
 article,aside,details,figcaption,figure,footer,header,main,nav,section,summary,audio,canvas,video { display: block; }
@@ -54,13 +54,6 @@ p {
     * { -webkit-tap-highlight-color: @no-color; }
 }
 .ios { -webkit-text-size-adjust: 100%; }
-
-.firefox {
-    input::-moz-focus-inner,button::-moz-focus-inner { padding: 0; border: 0; }
-}
-.chrome {
-    input:-webkit-autofill { transition-delay: 9999s; transition: color 0s ease-out, background-color 9999s ease-out; }
-}
 
 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
     .mac.chrome {

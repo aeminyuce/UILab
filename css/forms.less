@@ -143,6 +143,37 @@
     }
 }
 
+.chrome {
+    .text input:-webkit-autofill { -webkit-background-clip: text; } // removes autofill bg
+}
+
+& when (@dark-mode = true) {
+    & when (@dark-mode-auto-switcher = true) {
+        @media (prefers-color-scheme: light) {
+            &.chrome {
+                .text input:-webkit-autofill { -webkit-text-fill-color: @black !important; }
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            &.chrome {
+                .text input:-webkit-autofill { -webkit-text-fill-color: @white !important; }
+            }
+        }
+    }
+    & when (@dark-mode-auto-switcher = false) {
+        [data-ui-theme="light"] {
+            &.chrome {
+                .text input:-webkit-autofill { -webkit-text-fill-color: @black !important; }
+            }
+        }
+        [data-ui-theme="dark"] {
+            &.chrome {
+                .text input:-webkit-autofill { -webkit-text-fill-color: @white !important; }
+            }
+        }
+    }
+}
+
 .no-border {
     &.text input,&.select select { line-height: (@btn-default - @form-padding * 2); height: @btn-default; }
 }
