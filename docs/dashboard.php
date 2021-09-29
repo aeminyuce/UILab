@@ -60,40 +60,46 @@
                         Dashboard
                     </a>
 
-                    <button class="tab tab-toggle btn btn-lg btn-ghost padding-10-r block ui-color active">
+                    <button class="tab tab-toggle btn btn-lg btn-ghost padding-10-r block ui-color">
                         <svg class="icon margin-15-r"><use href="#users"/></svg>
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Employees
                     </button>
 
-                    <div class="tab-content padding-15-v padding-3-l open open-ease">
-                        <ul class="tabs list-spacer-15 padding-20-l ease-2nd-btn" data-ui-classes="ui-color">
-                            <li>
-                                <a class="tab tab-toggle opacity" href="#">
-                                    <svg class="toggle-icon icon margin-10-r right"><use href="#arrow-down"/></svg>
-                                    Managers
-                                </a>
-                                <ul class="tab-content list-spacer-15 padding-20-l margin-20-b ease-2nd-btn">
-                                    <li><a class="opacity" href="#">Search</a></li>
-                                    <li><a class="opacity" href="#">Change Group</a></li>
-                                    <li><a class="opacity" href="#">Add/Remove Managers</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a class="tab tab-toggle opacity" href="#">
-                                    <svg class="toggle-icon icon margin-10-r right"><use href="#arrow-down"/></svg>
-                                    Team Leaders
-                                </a>
-                                <ul class="tab-content list-spacer-15 padding-20-l margin-20-b ease-2nd-btn">
-                                    <li><a class="opacity" href="#">Search</a></li>
-                                    <li><a class="opacity" href="#">Change Team</a></li>
-                                    <li><a class="opacity" href="#">Add/Remove Team Leaders</a></li>
-                                </ul>
-                            </li>
-                            <li><a class="opacity" href="#">Teams</a></li>
-                            <li><a class="opacity" href="#">Human Resources</a></li>
-                            <li><a class="opacity" href="#">Annual Leaves</a></li>
-                        </ul>
+                    <div class="tab-content">
+                        <div class="padding-15-v padding-3-l">
+                            <ul class="tabs list-spacer-15 padding-20-l ease-2nd-btn" data-ui-classes="ui-color">
+                                <li>
+                                    <a class="tab tab-toggle opacity" href="#">
+                                        <svg class="toggle-icon icon margin-10-r right"><use href="#arrow-down"/></svg>
+                                        Managers
+                                    </a>
+                                    <div class="tab-content">
+                                        <ul class="list-spacer-15 padding-20 no-padding-r no-margin ease-2nd-btn">
+                                            <li><a class="opacity" href="#">Search</a></li>
+                                            <li><a class="opacity" href="#">Change Group</a></li>
+                                            <li><a class="opacity" href="#">Add/Remove Managers</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="tab tab-toggle opacity" href="#">
+                                        <svg class="toggle-icon icon margin-10-r right"><use href="#arrow-down"/></svg>
+                                        Team Leaders
+                                    </a>
+                                    <div class="tab-content">
+                                        <ul class="list-spacer-15 padding-20 no-padding-r no-margin ease-2nd-btn">
+                                            <li><a class="opacity" href="#">Search</a></li>
+                                            <li><a class="opacity" href="#">Change Team</a></li>
+                                            <li><a class="opacity" href="#">Add/Remove Team Leaders</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a class="opacity" href="#">Teams</a></li>
+                                <li><a class="opacity" href="#">Human Resources</a></li>
+                                <li><a class="opacity" href="#">Annual Leaves</a></li>
+                            </ul>
+                        </div>
                     </div>
 
                     <button class="tab tab-toggle btn btn-lg btn-ghost padding-10-r block">
@@ -101,14 +107,16 @@
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Payments
                     </button>
-                    <div class="tab-content padding-15-v padding-3-l">
-                    <ul class="list-spacer-15 padding-20-l ease-2nd-btn">
-                            <li><a class="opacity" href="#">New Payment</a></li>
-                            <li><a class="opacity" href="#">Recent Payments</a></li>
-                            <li><a class="opacity" href="#">Last Month</a></li>
-                            <li><a class="opacity" href="#">Last Year</a></li>
-                            <li><a class="opacity" href="#">Annual Profits</a></li>
-                        </ul>
+                    <div class="tab-content">
+                        <div class="padding-15-v padding-3-l">
+                            <ul class="list-spacer-15 padding-20-l ease-2nd-btn">
+                                <li><a class="opacity" href="#">New Payment</a></li>
+                                <li><a class="opacity" href="#">Recent Payments</a></li>
+                                <li><a class="opacity" href="#">Last Month</a></li>
+                                <li><a class="opacity" href="#">Last Year</a></li>
+                                <li><a class="opacity" href="#">Annual Profits</a></li>
+                            </ul>
+                        </div>
                     </div>
 
                     <button class="tab tab-toggle btn btn-lg btn-ghost padding-10-r block">
@@ -116,13 +124,15 @@
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Events
                     </button>
-                    <div class="tab-content padding-15-v padding-3-l">
-                        <ul class="list-spacer-15 padding-20-l ease-2nd-btn">
-                            <li><a class="opacity" href="#">New Event</a></li>
-                            <li><a class="opacity" href="#">Recent Activities</a></li>
-                            <li><a class="opacity" href="#">This Week</a></li>
-                            <li><a class="opacity" href="#">Statistics</a></li>
-                        </ul>
+                    <div class="tab-content">
+                        <div class="padding-15-v padding-3-l">
+                            <ul class="list-spacer-15 padding-20-l ease-2nd-btn">
+                                <li><a class="opacity" href="#">New Event</a></li>
+                                <li><a class="opacity" href="#">Recent Activities</a></li>
+                                <li><a class="opacity" href="#">This Week</a></li>
+                                <li><a class="opacity" href="#">Statistics</a></li>
+                            </ul>
+                        </div>
                     </div>
 
                     <button class="tab tab-toggle btn btn-lg btn-ghost padding-10-r block">
@@ -130,15 +140,17 @@
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Documents
                     </button>
-                    <div class="tab-content padding-15-v padding-3-l">
-                        <ul class="list-spacer-15 padding-20-l ease-2nd-btn">
-                            <li><a class="opacity" href="#">New Document</a></li>
-                            <li><a class="opacity" href="#">Members</a></li>
-                            <li><a class="opacity" href="#">Groups</a></li>
-                            <li><a class="opacity" href="#">Projects</a></li>
-                            <li><a class="opacity" href="#">Other Files</a></li>
-                            <li><a class="opacity" href="#">Archive</a></li>
-                        </ul>
+                    <div class="tab-content">
+                        <div class="padding-15-v padding-3-l">
+                            <ul class="list-spacer-15 padding-20-l ease-2nd-btn">
+                                <li><a class="opacity" href="#">New Document</a></li>
+                                <li><a class="opacity" href="#">Members</a></li>
+                                <li><a class="opacity" href="#">Groups</a></li>
+                                <li><a class="opacity" href="#">Projects</a></li>
+                                <li><a class="opacity" href="#">Other Files</a></li>
+                                <li><a class="opacity" href="#">Archive</a></li>
+                            </ul>
+                        </div>
                     </div>
 
                     <button class="tab tab-toggle btn btn-lg btn-ghost padding-10-r block">
@@ -146,13 +158,15 @@
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Statistics
                     </button>
-                    <div class="tab-content padding-15-v padding-3-l">
-                        <ul class="list-spacer-15 padding-20-l ease-2nd-btn">
-                            <li><a class="opacity" href="#">Sales</a></li>
-                            <li><a class="opacity" href="#">Profit</a></li>
-                            <li><a class="opacity" href="#">Registrations</a></li>
-                            <li><a class="opacity" href="#">Sponsors</a></li>
-                        </ul>
+                    <div class="tab-content">
+                        <div class="padding-15-v padding-3-l">
+                            <ul class="list-spacer-15 padding-20-l ease-2nd-btn">
+                                <li><a class="opacity" href="#">Sales</a></li>
+                                <li><a class="opacity" href="#">Profit</a></li>
+                                <li><a class="opacity" href="#">Registrations</a></li>
+                                <li><a class="opacity" href="#">Sponsors</a></li>
+                            </ul>
+                        </div>
                     </div>
 
                     <button class="tab tab-toggle btn btn-lg btn-ghost padding-10-r block">
@@ -160,15 +174,17 @@
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Reports
                     </button>
-                    <div class="tab-content padding-15-v padding-3-l">
-                        <ul class="list-spacer-15 padding-20-l ease-2nd-btn">
-                            <li><a class="opacity" href="#">New Report</a></li>
-                            <li><a class="opacity" href="#">Market Research</a></li>
-                            <li><a class="opacity" href="#">Industry Data</a></li>
-                            <li><a class="opacity" href="#">Finance Report</a></li>
-                            <li><a class="opacity" href="#">Gross Profit</a></li>
-                            <li><a class="opacity" href="#">Cumulative Losses</a></li>
-                        </ul>
+                    <div class="tab-content">
+                        <div class="padding-15-v padding-3-l">
+                            <ul class="list-spacer-15 padding-20-l ease-2nd-btn">
+                                <li><a class="opacity" href="#">New Report</a></li>
+                                <li><a class="opacity" href="#">Market Research</a></li>
+                                <li><a class="opacity" href="#">Industry Data</a></li>
+                                <li><a class="opacity" href="#">Finance Report</a></li>
+                                <li><a class="opacity" href="#">Gross Profit</a></li>
+                                <li><a class="opacity" href="#">Cumulative Losses</a></li>
+                            </ul>
+                        </div>
                     </div>
 
                     <button class="tab tab-toggle btn btn-lg btn-ghost padding-10-r block">
@@ -176,13 +192,15 @@
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Orders
                     </button>
-                    <div class="tab-content padding-15-v padding-3-l">
-                        <ul class="list-spacer-15 padding-20-l ease-2nd-btn">
-                            <li><a class="opacity" href="#">New Order</a></li>
-                            <li><a class="opacity" href="#">Activity</a></li>
-                            <li><a class="opacity" href="#">Delivered</a></li>
-                            <li><a class="opacity" href="#">Dispatched</a></li>
-                        </ul>
+                    <div class="tab-content">
+                        <div class="padding-15-v padding-3-l">
+                            <ul class="list-spacer-15 padding-20-l ease-2nd-btn">
+                                <li><a class="opacity" href="#">New Order</a></li>
+                                <li><a class="opacity" href="#">Activity</a></li>
+                                <li><a class="opacity" href="#">Delivered</a></li>
+                                <li><a class="opacity" href="#">Dispatched</a></li>
+                            </ul>
+                        </div>
                     </div>
 
                     <span class="sp-15"></span>
@@ -249,7 +267,7 @@
                             <svg class="icon"><use href="#grid-column"/></svg>
                         </button>
                         <div class="dropdown-menu round shadow-lg no-scroll">
-                            <div class="tabs xs-full-width theme-panel2" data-ui-classes="border-b border-lg ui-stroke ui-color" style="min-width: 300px;">
+                            <div class="tabs xs-full-width theme-panel2 ease-tabs" data-ui-classes="border-b border-lg ui-stroke ui-color" style="min-width: 300px;">
 
                                 <div class="btn-holder font-color-black-muted align-c border-b ease-1st-btn">
                                     <button class="tab btn btn-ghost round-t border-b border-lg ui-stroke ui-color active" data-ui-tooltip data-ui-only="desktop" title="Favorites">

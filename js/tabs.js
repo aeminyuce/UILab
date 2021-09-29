@@ -45,7 +45,7 @@ ui.tabs = {
 
                 e.preventDefault();
 
-                var parent, tabs, index, innerTabs, outerTabs, id, content, innerContent, outerContent, currentContent, classes, toggle;
+                var parent, tabs, index, innerTabs, outerTabs, id, content, lastOpened, innerContent, outerContent, currentContent, currentHeight, classes, toggle;
 
                 outerTabs = [];
                 outerContent = [];
@@ -92,7 +92,7 @@ ui.tabs = {
                 id = this.getAttribute(ui.tabs.dataID);
 
                 if (id !== null & id !== '') {
-                    currentContent = ui.find('#' + id, parent);
+                    currentContent = ui.find('#' + id, parent)[0];
 
                 } else {
                     currentContent = content[index];
@@ -101,21 +101,36 @@ ui.tabs = {
                 toggle = false;
                 classes = parent.getAttribute(ui.tabs.dataClasses);
 
-                if (ui.hasClass(this, ui.tabs.nameToggle)) { toggle = true; }
+                if (ui.hasClass(this, ui.tabs.nameToggle)) {
+                    toggle = true;
+                }
 
                 if (ui.hasClass(this, ui.tabs.nameActive)) {
 
                     if (toggle) {
 
-                        if (classes) {
-                            ui.toggleClass(tabs[index], classes);
-                        }
-
-                        ui.removeClass(tabs[index], ui.tabs.nameActive);
-                        ui.removeClass(currentContent, ui.tabs.nameOpenEase);
+                        currentContent.style.height = currentContent.offsetHeight + 'px';
+                        currentContent.style.overflow = 'hidden';
 
                         setTimeout(function () {
-                            ui.removeClass(currentContent, ui.tabs.nameOpen);
+
+                            currentContent.style.height = '0';
+                            setTimeout(function () {
+
+                                if (classes) {
+                                    ui.toggleClass(tabs[index], classes);
+                                }
+
+                                ui.removeClass(tabs[index], ui.tabs.nameActive);
+                                ui.removeClass(currentContent, ui.tabs.nameOpenEase);
+
+                                currentContent.style.removeProperty('height');
+                                currentContent.style.removeProperty('overflow');
+
+                                ui.removeClass(currentContent, ui.tabs.nameOpen);
+
+                            }, ui.globals.ease * 2);
+
                         }, 0);
 
                     }
@@ -132,22 +147,73 @@ ui.tabs = {
                     ui.removeClass(tabs, ui.tabs.nameActive);
                     ui.addClass(tabs[index], ui.tabs.nameActive);
 
-                    ui.removeClass(content, ui.tabs.nameOpenEase);
-                    setTimeout(function () {
-
-                        ui.removeClass(content, ui.tabs.nameOpen);
-                        ui.addClass(currentContent, ui.tabs.nameOpen);
-
-                        setTimeout(function () {
-
-                            ui.addClass(currentContent, ui.tabs.nameOpenEase);
-                            ui.trigger(document, ui.globals.eventDomChange); // set custom event
-
-                        }, ui.globals.fast / 2);
-
-                    }, 0);
-
                     if (toggle) {
+
+                        lastOpened = '';
+
+                        ui.each(content,
+
+                            function () {
+
+                                if (this !== currentContent) {
+
+                                    if (ui.hasClass(this, 'open')) {
+                                        lastOpened = this; // find last opened content
+                                    }
+
+                                }
+
+                            });
+
+                            if (lastOpened) { // hide last opened content
+
+                                lastOpened.style.height = lastOpened.offsetHeight + 'px';
+                                lastOpened.style.overflow = 'hidden';
+
+                                setTimeout(function () {
+
+                                    lastOpened.style.height = '0';
+                                    setTimeout(function () {
+
+                                        ui.removeClass(lastOpened, ui.tabs.nameOpenEase);
+
+                                        lastOpened.style.removeProperty('height');
+                                        lastOpened.style.removeProperty('overflow');
+
+                                        ui.removeClass(lastOpened, ui.tabs.nameOpen);
+
+                                    }, ui.globals.ease * 2);
+
+                                }, 0);
+
+                            }
+
+                        setTimeout(function () { // open current clicked content
+
+                            ui.addClass(currentContent, ui.tabs.nameOpen);
+
+                            currentHeight = currentContent.offsetHeight;
+
+                            currentContent.style.height = '0';
+                            currentContent.style.overflow = 'hidden';
+
+                            setTimeout(function () {
+
+                                ui.addClass(currentContent, ui.tabs.nameOpenEase);
+                                currentContent.style.height = currentHeight + 'px';
+
+                                ui.trigger(document, ui.globals.eventDomChange); // set custom event
+
+                                setTimeout(function () {
+
+                                    currentContent.style.removeProperty('height');
+                                    currentContent.style.removeProperty('overflow');
+
+                                }, ui.globals.ease * 2);
+
+                            }, ui.globals.fast / 2);
+
+                        }, 0);
 
                         // close opened toggle tabs when outside the tabs
                         ui.on(document,
@@ -165,15 +231,28 @@ ui.tabs = {
 
                                     if (ev.target.className.split(' ').indexOf(ui.tabs.nameContent) === -1 && ui.closest(ev.target, '.' + ui.tabs.nameContent)[0] === undefined) { // controlling inside of the opened tab content
 
-                                        if (classes) {
-                                            ui.removeClass(tabs, classes);
-                                        }
-
-                                        ui.removeClass(tabs, ui.tabs.nameActive);
-                                        ui.removeClass(content, ui.tabs.nameOpenEase);
+                                        currentContent.style.height = currentContent.offsetHeight + 'px';
+                                        currentContent.style.overflow = 'hidden';
 
                                         setTimeout(function () {
-                                            ui.removeClass(content, ui.tabs.nameOpen);
+
+                                            currentContent.style.height = '0';
+                                            setTimeout(function () {
+
+                                                if (classes) {
+                                                    ui.removeClass(tabs, classes);
+                                                }
+
+                                                ui.removeClass(tabs, ui.tabs.nameActive);
+                                                ui.removeClass(content, ui.tabs.nameOpenEase);
+
+                                                currentContent.style.removeProperty('height');
+                                                currentContent.style.removeProperty('overflow');
+
+                                                ui.removeClass(content, ui.tabs.nameOpen);
+
+                                            }, ui.globals.ease * 2);
+
                                         }, 0);
 
                                         ui.trigger(document, ui.tabs.eventToggleTabsClosed); // set custom event
@@ -184,6 +263,23 @@ ui.tabs = {
                                 }
 
                             });
+
+                    } else {
+
+                        ui.removeClass(content, ui.tabs.nameOpenEase);
+                        setTimeout(function () {
+
+                            ui.removeClass(content, ui.tabs.nameOpen);
+                            ui.addClass(currentContent, ui.tabs.nameOpen);
+
+                            setTimeout(function () {
+
+                                ui.addClass(currentContent, ui.tabs.nameOpenEase);
+                                ui.trigger(document, ui.globals.eventDomChange); // set custom event
+
+                            }, ui.globals.fast / 2);
+
+                        }, 0);
 
                     }
 

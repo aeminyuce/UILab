@@ -5,11 +5,11 @@
 @tabs-toggle-icon-size:                 12px;
 @tabs-toggle-right-icon-margins:        3px;
 
-@tabs-content-open-y-slide:             -1%;
-
 .ease-tabs {
-    .toggle-icon { transition-property: opacity, transform; transition-duration: (@ease-default * 2); }
-    .tab-content { transition-property: opacity, transform; transition-duration: @ease-default; }
+    .tab {
+        .toggle-icon { transition-property: opacity, transform; transition-duration: (@ease-default * 2); }
+        &-content { transition-property: height, opacity; transition-duration: (@ease-default * 2); }
+    }
 }
 
 .tabs {
@@ -25,10 +25,8 @@
         }
 
         &-content {
-            transform-origin: top center;
-
             &:not(.open) { display: none !important; }
-            &:not(.open-ease) { opacity: 0; transform: translateY(@tabs-content-open-y-slide); }
+            &:not(.open-ease) { opacity: 0; }
         }
     }
 }
