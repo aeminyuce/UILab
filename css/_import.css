@@ -3556,14 +3556,6 @@ html .row {
   transition-property: none !important;
   animation-play-state: paused !important;
 }
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *:before,
-  *:after {
-    transition-property: none !important;
-    animation: none !important;
-  }
-}
 /* typography */
 body,
 a {
@@ -4946,55 +4938,21 @@ input.btn {
   transition-property: height;
   transition-duration: 0.15s;
 }
-.ease-range::-webkit-slider-thumb {
+html:not(.no-effects) .ease-range::-webkit-slider-thumb {
   transition-property: transform;
   transition-duration: 0.15s;
 }
-.ease-range::-moz-range-thumb {
+html:not(.no-effects) .ease-range::-moz-range-thumb {
   transition-property: transform;
   transition-duration: 0.15s;
 }
-.ease-range::-webkit-slider-runnable-track {
+html:not(.no-effects) .ease-range::-webkit-slider-runnable-track {
   transition-property: background-color;
   transition-duration: 0.15s;
 }
-.ease-range::-moz-range-track {
+html:not(.no-effects) .ease-range::-moz-range-track {
   transition-property: background-color;
   transition-duration: 0.15s;
-}
-.no-effects .ease-range::-webkit-slider-thumb {
-  transition-property: transform;
-  transition-duration: 0.15s;
-}
-.no-effects .ease-range::-moz-range-thumb {
-  transition-property: transform;
-  transition-duration: 0.15s;
-}
-.no-effects .ease-range::-webkit-slider-runnable-track {
-  transition-property: background-color;
-  transition-duration: 0.15s;
-}
-.no-effects .ease-range::-moz-range-track {
-  transition-property: background-color;
-  transition-duration: 0.15s;
-}
-@media (prefers-reduced-motion: reduce) {
-  .ease-range::-webkit-slider-thumb {
-    transition-property: transform;
-    transition-duration: 0.15s;
-  }
-  .ease-range::-moz-range-thumb {
-    transition-property: transform;
-    transition-duration: 0.15s;
-  }
-  .ease-range::-webkit-slider-runnable-track {
-    transition-property: background-color;
-    transition-duration: 0.15s;
-  }
-  .ease-range::-moz-range-track {
-    transition-property: background-color;
-    transition-duration: 0.15s;
-  }
 }
 .text,
 .select,

@@ -105,20 +105,12 @@
     }
 }
 
-._create-ease-range() {
+html:not(.no-effects) {
     .ease-range {
         &::-webkit-slider-thumb { transition-property: transform; transition-duration: @ease-default; }
         &::-moz-range-thumb { transition-property: transform; transition-duration: @ease-default; }
         &::-webkit-slider-runnable-track { transition-property: background-color; transition-duration: @ease-default; }
         &::-moz-range-track { transition-property: background-color; transition-duration: @ease-default; }
-    }
-}
-._create-ease-range();
-.no-effects { ._create-ease-range(); }
-
-& when (@reduced-motion = true) {
-    @media (prefers-reduced-motion: reduce) {
-        ._create-ease-range();
     }
 }
 

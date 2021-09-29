@@ -898,7 +898,9 @@ ui.effects = {
     pauseAll: false,
     pauseScroll: false, // pause effects when scrolling
     pauseResize: true, // pause effects when resizing
+
     preload: true, // wait page preload to start effects
+    reduceMotion: true, // detecting device reduce motions
 
     // show effects
     ie: true,
@@ -941,6 +943,8 @@ ui.effects = {
 
     ui.onload(function () {
 
+        var detectMotion, reduceTimers;
+
         if (ui.userAgents.ie && !ui.userAgents.edge && !ui.effects.ie) {
             ui.effects.pauseAll = true;
         }
@@ -951,8 +955,33 @@ ui.effects = {
             ui.effects.pauseAll = true;
         }
 
+        reduceTimers = function () { // reduce effect timers
+
+            ui.globals.fast = ui.globals.fast / 100;
+            ui.globals.ease = ui.globals.ease / 100;
+            ui.globals.slow = ui.globals.slow / 100;
+            ui.globals.slow2x = ui.globals.slow2x / 100;
+            ui.globals.slow3x = ui.globals.slow3x / 100;
+            ui.globals.slow4x = ui.globals.slow4x / 100;
+            ui.globals.slow5x = ui.globals.slow5x / 100;
+
+        }
+
+        if (ui.effects.reduceMotion) {
+
+            detectMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+            if (!detectMotion || detectMotion.matches) {
+
+                ui.addClass(ui.effects.target, ui.effects.nameNoEffects);
+                reduceTimers();
+
+            }
+        }
+
         if (ui.effects.pauseAll) {
+
             ui.addClass(ui.effects.target, ui.effects.nameNoEffects);
+            reduceTimers();
 
         } else {
 
