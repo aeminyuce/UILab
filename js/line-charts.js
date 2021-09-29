@@ -9,12 +9,12 @@ ui.lineCharts = {
     target: 'line-charts',
 
     // main classnames
-    nameLine: 'lines',
+    nameLines: 'lines',
 
-    nameX: 'x',
-    nameY: 'y',
+    nameGridRoot: 'root-grid',
+    nameGridX: 'x-grid',
+    nameGridY: 'y-grid',
 
-    nameRoot: 'root-grid',
     nameInfo: 'chart-info',
 
     // helper classnames
@@ -42,7 +42,7 @@ ui.lineCharts = {
         'hsl(225, 43%, 57%)'
     ],
 
-    showBgGrid: true,
+    showGrid: true,
     showGridText: true,
     showInfo: true,
 
@@ -111,7 +111,7 @@ ui.lineCharts = {
 
                 function () {
 
-                    lines = ui.find('.' + ui.lineCharts.nameLine, this);
+                    lines = ui.find('.' + ui.lineCharts.nameLines, this);
                     if (lines.length === 0) { return; }
 
                     data = [];
@@ -250,7 +250,7 @@ ui.lineCharts = {
 
                     // create grids
                     col = (data.width - (ui.lineCharts.right + ui.lineCharts.left)) / (x.length - 1);
-                    html += '<g class="' + ui.lineCharts.nameX + '">';
+                    html += '<g class="' + ui.lineCharts.nameGridX + '">';
 
                     for (i = 0; i < x.length; i++) {
 
@@ -280,7 +280,7 @@ ui.lineCharts = {
 
                         }
 
-                        if (i === 0 || ui.lineCharts.showBgGrid) {
+                        if (i === 0 || ui.lineCharts.showGrid) {
                             html += '<line ' +
                                         'x1="' + posX + '" ' +
                                         'x2="' + posX + '" ' +
@@ -289,7 +289,7 @@ ui.lineCharts = {
 
                         if (i === 0) { // root of x grid
                             html += 'y2="' + Math.ceil(data.height - (ui.lineCharts.bottom + (ui.lineCharts.gridStroke / 2))) +'" ' +
-                                    'class="' + ui.lineCharts.nameRoot + '" ' +
+                                    'class="' + ui.lineCharts.nameGridRoot + '" ' +
                                     'stroke-width="' + ui.lineCharts.gridStroke + '"';
 
                         } else {
@@ -302,7 +302,7 @@ ui.lineCharts = {
                     }
 
                     html += '</g>' +
-                        '<g class="' + ui.lineCharts.nameY + '">';
+                        '<g class="' + ui.lineCharts.nameGridY + '">';
 
                     for (i = 0; i <= rows; i++) {
 
@@ -317,7 +317,7 @@ ui.lineCharts = {
                                     '</text>';
                         }
 
-                        if (i === rows || ui.lineCharts.showBgGrid) {
+                        if (i === rows || ui.lineCharts.showGrid) {
                             html += '<line ' +
                                         'x2="' + (data.width - ui.lineCharts.right + 1) + '" ' +
                                         'y1="' + posY + '" ' +
@@ -326,7 +326,7 @@ ui.lineCharts = {
 
                         if (i >= rows) { // root of y grid
                             html += 'x1="' + Math.ceil(ui.lineCharts.left - (ui.lineCharts.gridStroke / 2)) + '" ' +
-                                    'class="' + ui.lineCharts.nameRoot + '" ' +
+                                    'class="' + ui.lineCharts.nameGridRoot + '" ' +
                                     'stroke-width="' + ui.lineCharts.gridStroke + '"';
 
                         } else {

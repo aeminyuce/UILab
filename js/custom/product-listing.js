@@ -7,7 +7,7 @@ ui.lineCharts.top = 16;
 ui.lineCharts.right = 20;
 ui.lineCharts.bottom = 10;
 
-ui.lineCharts.showBgGrid = false;
+ui.lineCharts.showGrid = false;
 ui.lineCharts.showInfo = false;
 
 ui.alerts.messageTheme = 'theme-default2 ui-fill-dark-100';

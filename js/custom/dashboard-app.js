@@ -16,7 +16,7 @@ ui.lineCharts.colors = [
 ui.lineCharts.bottom = 0;
 ui.lineCharts.left = 6;
 
-ui.lineCharts.showBgGrid = false;
+ui.lineCharts.showGrid = false;
 ui.lineCharts.showGridText = false;
 
 ui.lineCharts.gridStroke = 0;
