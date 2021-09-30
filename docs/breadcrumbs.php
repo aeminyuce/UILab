@@ -165,9 +165,9 @@
                         <li>
                             <span class="dropdown ease-dropdown">
                                 <button class="btn round ui-fill-dark-100">
-                                <svg class="icon"><use href="#ellipsis-h"/></svg>
+                                    <svg class="icon"><use href="#ellipsis-h"/></svg>
                                 </button>
-                                <ul class="content round shadow-lg">
+                                <ul class="dropdown-menu round shadow-lg">
                                     <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                                         <a href="#" itemprop="item">
                                             <span itemprop="name">

@@ -1856,7 +1856,7 @@
 
         <form action="#successful">
             <h2>Search</h2>
-            <p class="large font-color-white-50 xs-align-c">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada purus eget enim tempus, sed faucibus ante blandit. Morbi a pharetra sapien.</p>
+            <p class="highlight large font-color-white-50 xs-align-c">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada purus eget enim tempus, sed faucibus ante blandit. Morbi a pharetra sapien.</p>
 
             <div class="col-static no-fluid">
                 <div class="row no-row-gap-h">

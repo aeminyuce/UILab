@@ -93,9 +93,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie. Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus. In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
-                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie. Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus. In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.</p>
 
                         </div>
                     </div>

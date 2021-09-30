@@ -178,7 +178,7 @@
                     <div class="card round shadow-lg">
                         <div class="card-side padding-30">
                             <h2 class="margin-10-b">UILab</h2>
-                            <p class="large xs-align-c">CSS &amp; JavaScript powered responsive design system.</p>
+                            <p class="highlight large xs-align-c">CSS &amp; JavaScript powered responsive design system.</p>
                             <div class="form-lg ease-1st-btn">
                                 <a href="?p=icons" class="btn btn-xs-fluid padding-30-h circle theme-default2">
                                     <svg class="icon margin-5-r no-opacity ui-color"><use href="#draw"/></svg> See Icons

@@ -110,7 +110,7 @@
                             <div class="col-12 md-align-c">
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
-                                <p class="xx-large font-color-white-50">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
+                                <p class="highlight xx-large font-color-white-50">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
                                 <a href="#" class="btn btn-xs-fluid padding-30-h ui-fill-dark-100 ease-btn">
                                     <svg class="icon margin-5-r"><use href="#moneys"/></svg>
                                     <b>Invest Now</b>
@@ -126,7 +126,7 @@
                                     <svg class="icon icon-xxl icon-semibold"><use href="#factory"/></svg>
                                     <span class="sp-30 hidden-md"></span>
                                     <h3 class="font-bold xx-large">Long term investment</h3>
-                                    <p class="x-large">Consider terms that have long term investment program.</p>
+                                    <p class="highlight x-large">Consider terms that have long term investment program.</p>
                                     <a href="#" class="btn block theme-farmer2 ui-fill-dark-100 ease-btn">
                                         <b>Learn more</b>
                                         <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
@@ -148,7 +148,7 @@
                             <div class="col-12 md-align-c">
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
-                                <p class="xx-large font-color-white-50">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
+                                <p class="highlight xx-large font-color-white-50">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
                                 <a href="#" class="btn btn-xs-fluid padding-30-h ui-fill-dark-100 ease-btn">
                                     <svg class="icon margin-5-r"><use href="#moneys"/></svg>
                                     <b>Invest Now</b>
@@ -164,7 +164,7 @@
                                     <svg class="icon icon-xxl icon-semibold"><use href="#network"/></svg>
                                     <span class="sp-30"></span>
                                     <h3 class="font-bold xx-large">Connect with Our Farmers</h3>
-                                    <p class="x-large">Consider terms that connect with our farmers program.</p>
+                                    <p class="highlight x-large">Consider terms that connect with our farmers program.</p>
                                     <a href="#" class="btn block theme-farmer2 ui-fill-dark-100 ease-btn">
                                         <b>Learn more</b>
                                         <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
@@ -186,7 +186,7 @@
                             <div class="col-12 md-align-c">
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
-                                <p class="xx-large font-color-white-50">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
+                                <p class="highlight xx-large font-color-white-50">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
                                 <a href="#" class="btn btn-xs-fluid padding-30-h ui-fill-dark-100 ease-btn">
                                     <svg class="icon margin-5-r"><use href="#moneys"/></svg>
                                     <b>Invest Now</b>
@@ -202,7 +202,7 @@
                                     <svg class="icon icon-xxl icon-semibold"><use href="#user-circle"/></svg>
                                     <span class="sp-30"></span>
                                     <h3 class="font-bold xx-large">Social Impact Investment</h3>
-                                    <p class="x-large">Consider terms that have social impact investment program.</p>
+                                    <p class="highlight x-large">Consider terms that have social impact investment program.</p>
                                     <a href="#" class="btn block theme-farmer2 ui-fill-dark-100 ease-btn">
                                         <b>Learn more</b>
                                         <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
@@ -231,7 +231,7 @@
                         <svg class="icon ui-color"><use href="#leaf"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Planting</h3>
-                        <p class="large font-color-black-50">Complete range of lands caping services.</p>
+                        <p class="highlight large font-color-black-50">Complete range of lands caping services.</p>
                         <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
@@ -242,7 +242,7 @@
                         <svg class="icon ui-color"><use href="#wind-sock"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Garden Care</h3>
-                        <p class="large font-color-black-50">Resolving environmental problems with best results.</p>
+                        <p class="highlight large font-color-black-50">Resolving environmental problems with best results.</p>
                         <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
@@ -253,7 +253,7 @@
                         <svg class="icon ui-color"><use href="#water"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Irrigation System</h3>
-                        <p class="large font-color-black-50">Idea of denouncing pleasure and praising.</p>
+                        <p class="highlight large font-color-black-50">Idea of denouncing pleasure and praising.</p>
                         <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
@@ -264,7 +264,7 @@
                         <svg class="icon ui-color"><use href="#land"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Hardscaping</h3>
-                        <p class="large font-color-black-50">Placing int the landscape with great pleasure.</p>
+                        <p class="highlight large font-color-black-50">Placing int the landscape with great pleasure.</p>
                         <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
@@ -275,7 +275,7 @@
                         <svg class="icon ui-color"><use href="#leaf"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Planting</h3>
-                        <p class="large font-color-black-50">Complete range of lands caping services.</p>
+                        <p class="highlight large font-color-black-50">Complete range of lands caping services.</p>
                         <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
@@ -286,7 +286,7 @@
                         <svg class="icon ui-color"><use href="#wind-sock"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Garden Care</h3>
-                        <p class="large font-color-black-50">Resolving environmental problems with best results.</p>
+                        <p class="highlight large font-color-black-50">Resolving environmental problems with best results.</p>
                         <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
@@ -297,7 +297,7 @@
                         <svg class="icon ui-color"><use href="#water"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Irrigation System</h3>
-                        <p class="large font-color-black-50">Idea of denouncing pleasure and praising.</p>
+                        <p class="highlight large font-color-black-50">Idea of denouncing pleasure and praising.</p>
                         <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
@@ -308,7 +308,7 @@
                         <svg class="icon ui-color"><use href="#land"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Hardscaping</h3>
-                        <p class="large font-color-black-50">Placing int the landscape with great pleasure.</p>
+                        <p class="highlight large font-color-black-50">Placing int the landscape with great pleasure.</p>
                         <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
@@ -689,7 +689,7 @@
 
                 <p class="font-color-black-50 x-large xs-align-c">Aliquam leo quam, laoreet quis luctus non, vulputate vitae elit. Pellentesque consequat eu mauris ac imperdiet. In dolor velit, pellentesque eu dignissim in, dignissim ac turpis. Sed lobortis diam ante, et posuere ligula convallis suscipit. Maecenas varius ultrices eros, eu vestibulum sem aliquet et.</p>
 
-                <span class="sp-30"></span>
+                <span class="sp-30 margin-10-v"></span>
 
                 <ul class="photo-gallery block-2nd has-cover ease-photo-gallery">
                     <li>
@@ -868,7 +868,7 @@
                             <span class="sp-30"></span>
 
                             <h4 class="margin-15-b">Sign Up for Email</h4>
-                            <p>Get in on the best deals, new products and gardening tips.</p>
+                            <p class="highlight">Get in on the best deals, new products and gardening tips.</p>
                             <form action="#">
 
                                 <div class="form-holder col-static no-fluid form-lg">

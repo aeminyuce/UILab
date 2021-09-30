@@ -10,7 +10,7 @@
                 <form id="login" class="tab-content open open-ease" action="#">
 
                     <h3 class="margin-30-b">Login to continue</h3>
-                    <p class="font-color-black-muted large">Sign in to create, discover and connect with the global community.</p>
+                    <p class="highlight font-color-black-muted large">Sign in to create, discover and connect with the global community.</p>
 
                     <label class="form-label font-color-black-50">User Name</label>
                     <div class="text text-icon round border-dual ease-form">
@@ -55,7 +55,7 @@
                 <form id="lost-password" class="tab-content" action="#">
 
                     <h3 class="margin-30-b">Forgot password?</h3>
-                    <p class="font-color-black-muted large">Please enter your email address. You will receive a link to create a new password via email.</p>
+                    <p class="highlight font-color-black-muted large">Please enter your email address. You will receive a link to create a new password via email.</p>
 
                     <label class="form-label font-color-black-50">Your email</label>
                     <div class="text text-icon round border-dual ease-form">
@@ -85,7 +85,7 @@
                 <div class="full-w set-absolute set-c">
                     <h1 class="hidden-md">Create your account</h1>
                     <p class="x-large font-color-white-muted">Sign up to create, discover and connect with the global community.</p>
-                    <span class="sp-30"></span>
+                    <span class="sp-30 margin-10-v"></span>
                     <a href="?l=sign-up-page" class="login-btn btn btn-lg btn-sm-fluid padding-30-h circle hover-scale hover-shadow ease-btn"><b>SIGN UP NOW</b></a>
                 </div>
 

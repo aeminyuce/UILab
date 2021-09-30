@@ -292,9 +292,7 @@
             <div class="col-6 padding-30">
 
                 <h4>Lead</h4>
-                <div class="padding-30-b">
-                    <p class="font-lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
-                </div>
+                <p class="font-lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
 
                 <h4>Quotes</h4>
                 <div class="padding-30-b">
@@ -353,8 +351,8 @@
                     <br>
                     <div class="align-r">.align-r</div>
                     <br>
-                    <p class="align-justify no-margin"><strong>.align-justify:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae faucibus orci. Etiam bibendum arcu sodales velit iaculis, a semper arcu gravida.</p>
-                    <p class="align-nowrap no-margin"><strong>.align-nowrap:</strong> Lorem ipsum dolor sit amet.</p>
+                    <p class="align-justify"><strong>.align-justify:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae faucibus orci. Etiam bibendum arcu sodales velit iaculis, a semper arcu gravida.</p>
+                    <p class="align-nowrap"><strong>.align-nowrap:</strong> Lorem ipsum dolor sit amet.</p>
                 </div>
 
                 <h4>Transformation Classes</h4>
@@ -385,15 +383,15 @@
                 <h4>Blockquotes</h4>
                 <div class="padding-30-b">
                     <blockquote>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <p class="highlight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                         <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
                     </blockquote>
                     <blockquote>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <p class="highlight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                         <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
                     </blockquote>
                     <blockquote class="reverse">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <p class="highlight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                         <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
                     </blockquote>
                 </div>

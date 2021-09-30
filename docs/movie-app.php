@@ -137,9 +137,7 @@
                                         <span class="sp-15 visible-md"></span>
                                         <h2 class="font-bold">Related Video</h2>
                                         <b class="large">Captain Marvel (2019)</b>
-                                        <p class="margin-10-v">
-                                            After crashing an experimental aircraft, Air Force pilot Carol Danvers is discovered by the Kree and trained as a member of the elite Starforce Military under the command of her mentor Yon-Rogg. Six years later, after escaping to Earth while under attack by the Skrulls.
-                                        </p>
+                                        <p class="margin-10-v">After crashing an experimental aircraft, Air Force pilot Carol Danvers is discovered by the Kree and trained as a member of the elite Starforce Military under the command of her mentor Yon-Rogg. Six years later, after escaping to Earth while under attack by the Skrulls.</p>
                                         <div class="photos-holder padding-15-h hover-scale-more-2nd ease-2nd-layout">
                                             <a href="#"><img class="img-photo border-lg circle" src="img/profile-image.jpg" alt=""></a>
                                             <a href="#"><img class="img-photo border-lg circle" src="img/profile-image2.jpg" alt=""></a>
@@ -419,7 +417,7 @@
 
         <form action="#successful">
             <h2>Search</h2>
-            <p class="large font-color-white-50 xs-align-c">Search for movies, TV shows...</p>
+            <p class="highlight large font-color-white-50 xs-align-c">Search for movies, TV shows...</p>
 
             <div class="col-static no-fluid">
                 <div class="row no-row-gap-h">

@@ -162,7 +162,7 @@
                             <li class="padding-5"><b class="s xx-large block">17</b>Seconds</li>
                         </ul>
                     </div>
-                    <div class="padding-3 ui-fill-dark-100 stripe-light border-v border-light animate-progress">
+                    <div class="padding-3 ui-fill-dark-100 stripe-light animate-progress">
                     </div>
                     <div class="card-side padding-5 ui-fill-dark-100">
                         <b class="small font-color-white">Closing: 10 August, 2018, Friday</b>

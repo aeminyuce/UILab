@@ -752,7 +752,9 @@
                                         </div>
                                         <div class="row no-row-gap">
                                             <div class="text text-icon no-border padding-2 circle ease-form">
-                                                <button class="icon icon-comment-dots theme-app ui-color"></button>
+                                                <button type="button">
+                                                    <svg class="icon"><use href="#comment-dots"/></svg>
+                                                </button>
                                                 <input type="text" placeholder="Type your message">
                                             </div>
                                         </div>
@@ -872,7 +874,9 @@
                                         </div>
                                         <div class="row no-row-gap">
                                             <div class="text text-icon no-border padding-2 circle ease-form">
-                                                <button class="icon icon-comment-dots theme-app ui-color"></button>
+                                                <button type="button">
+                                                    <svg class="icon"><use href="#comment-dots"/></svg>
+                                                </button>
                                                 <input type="text" placeholder="Type your message">
                                             </div>
                                         </div>
@@ -992,7 +996,9 @@
                                         </div>
                                         <div class="row no-row-gap">
                                             <div class="text text-icon no-border padding-2 circle ease-form">
-                                                <button class="icon icon-comment-dots theme-app ui-color"></button>
+                                                <button type="button">
+                                                    <svg class="icon"><use href="#comment-dots"/></svg>
+                                                </button>
                                                 <input type="text" placeholder="Type your message">
                                             </div>
                                         </div>
@@ -1052,7 +1058,9 @@
                                         </div>
                                         <div class="row no-row-gap">
                                             <div class="text text-icon no-border padding-2 circle ease-form">
-                                                <button class="icon icon-comment-dots theme-app ui-color"></button>
+                                                <button type="button">
+                                                    <svg class="icon"><use href="#comment-dots"/></svg>
+                                                </button>
                                                 <input type="text" placeholder="Type your message">
                                             </div>
                                         </div>
