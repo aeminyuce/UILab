@@ -73,7 +73,7 @@
     <header class="container header form-lg ui-fill-dark-100 ease-layout" data-ui-classes="shadow-lg">
         <div class="row">
             <div class="col-12">
-                <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle btn btn-square round icons-no-opacity right ease-btn">
+                <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle btn btn-square round icons-no-opacity right ease-btn hidden-ie">
                     <svg class="icon visible-dark"><use href="#moon-fill"/></svg>
                     <svg class="icon visible-light"><use href="#sun-fill"/></svg>
                 </button>
@@ -94,7 +94,7 @@
         include ($page.'.php');
 ?>
 
-<button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle btn btn-lg btn-square round-l icons-no-opacity ease-btn set-fixed set-r" style="top: 80px;">
+<button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle btn btn-lg btn-square round-l icons-no-opacity ease-btn set-fixed set-r hidden-ie" style="top: 80px;">
     <svg class="icon visible-dark"><use href="#moon-fill"/></svg>
     <svg class="icon visible-light"><use href="#sun-fill"/></svg>
 </button>
@@ -110,7 +110,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12 align-r padding-15-r icons-no-opacity ease-1st-btn">
-                        <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle btn btn-square round">
+                        <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle btn btn-square round hidden-ie">
                             <svg class="icon visible-dark"><use href="#moon-fill"/></svg>
                             <svg class="icon visible-light"><use href="#sun-fill"/></svg>
                         </button>
