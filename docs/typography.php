@@ -401,7 +401,7 @@
                 <h4>hr Tag</h4>
                 <div class="padding-30-b">
                     Lorem ipsum dolor sit amet.
-                    <hr>
+                    <hr class="hr">
                     Lorem ipsum dolor sit amet.
                 </div>
 
