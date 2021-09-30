@@ -622,7 +622,7 @@ var ui = {
 
 };
 
-// UI User Agents
+// user agents
 ui.userAgents = {
 
     // targets
@@ -780,7 +780,7 @@ ui.userAgents = {
 
 }());
 
-// UI Dark Mode
+// dark mode
 ui.darkMode = {
 
     // targets
@@ -888,7 +888,7 @@ ui.darkMode = {
 
 }());
 
-// UI Effects
+// effects
 ui.effects = {
 
     // targets

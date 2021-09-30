@@ -49,8 +49,6 @@
   --steps-inactive-color: hsla(0, 0%, 0%, 0.32);
   --steps-border: hsla(0, 0%, 0%, 0.12);
   --timeline-line-bg: hsla(0, 0%, 0%, 0.15);
-  --svg-map-path-fill: hsla(0, 0%, 0%, 0.08);
-  --svg-map-path-fill-hover: hsla(0, 0%, 0%, 0.15);
   --tooltip-bg: hsl(220, 14%, 21%);
   --alerts-dialog-error-shadow: hsl(0, 74%, 47%);
   --alerts-dialog-success-shadow: hsl(142, 82%, 34%);
@@ -71,6 +69,8 @@
   --image-uploader-list-tag-bg: hsla(0, 0%, 0%, 0.08);
   --photo-slider-dot-bg: hsla(0, 0%, 0%, 0.2);
   --photo-slider-dot-selected-bg: hsla(0, 0%, 0%, 0.35);
+  --svg-map-path-fill: hsla(0, 0%, 0%, 0.08);
+  --svg-map-path-fill-hover: hsla(0, 0%, 0%, 0.15);
 }
 [data-ui-theme="dark"] {
   --body-bg: hsl(218, 16%, 10%);
@@ -122,8 +122,6 @@
   --steps-inactive-color: hsla(0, 0%, 100%, 0.32);
   --steps-border: hsla(0, 0%, 100%, 0.12);
   --timeline-line-bg: hsla(0, 0%, 100%, 0.175);
-  --svg-map-path-fill: hsla(0, 0%, 100%, 0.08);
-  --svg-map-path-fill-hover: hsla(0, 0%, 100%, 0.15);
   --tooltip-bg: hsl(0, 0%, 0%);
   --alerts-dialog-error-shadow: hsl(0, 74%, 71%);
   --alerts-dialog-success-shadow: hsl(142, 82%, 58%);
@@ -144,8 +142,9 @@
   --image-uploader-list-tag-bg: hsla(0, 0%, 100%, 0.08);
   --photo-slider-dot-bg: hsla(0, 0%, 100%, 0.2);
   --photo-slider-dot-selected-bg: hsla(0, 0%, 100%, 0.35);
+  --svg-map-path-fill: hsla(0, 0%, 100%, 0.08);
+  --svg-map-path-fill-hover: hsla(0, 0%, 100%, 0.15);
 }
-/* reset */
 * {
   padding: 0;
   margin: 0;
@@ -191,631 +190,701 @@ img {
     perspective: 1000;
   }
 }
-/* helpers */
-.visible {
-  display: block !important;
-}
-.hidden,
-.desktop .visible-mobile,
-.desktop .hidden-dekstop,
-.mobile .visible-desktop,
-.mobile .hidden-mobile {
-  display: none !important;
-}
-.rtl {
-  direction: rtl;
-}
-.full-w,
-.clearfix,
-.img-fluid {
-  width: 100% !important;
-}
-.full-h {
-  height: 100% !important;
-}
-.auto-h {
-  height: auto !important;
-}
-.left {
-  float: left;
-}
-.right {
-  float: right;
-}
-.automargin {
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
-}
-.no-user-select {
-  -ms-user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-.no-float {
-  float: none !important;
-}
-.set-fixed {
-  position: fixed !important;
-}
-.set-relative {
-  position: relative !important;
-}
-.set-absolute {
-  position: absolute !important;
-}
-.set-t {
-  top: 0;
-}
-.set-r {
-  right: 0;
-}
-.set-b {
-  bottom: 0;
-}
-.set-l {
-  left: 0;
-}
-.set-h {
-  right: 0;
-  left: 0;
-}
-.set-v {
-  top: 0;
-  bottom: 0;
-}
-.set-all {
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
-.set-cx {
-  left: 50%;
-  transform: translateX(-50%);
-}
-.set-cy {
-  top: 50%;
-  transform: translateY(-50%);
-}
-.set-c {
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  top: 50%;
-}
-.cursor-default {
-  cursor: default !important;
-}
-.cursor-pointer {
-  cursor: pointer !important;
-}
-.clearfix {
-  clear: both !important;
-  display: block;
-}
-.img-fluid {
-  height: auto !important;
-}
-.highlight {
-  display: block;
-}
-.highlight:not(:last-child) {
-  margin-bottom: 20px !important;
-}
-.block,
-.block-1st > *:not(.row):not([class*="hidden-"]),
-.block-2nd > * > *:not(.row):not([class*="hidden-"]) {
-  width: 100%;
-  display: block !important;
-}
-.inline,
-.inline-1st > *:not(.row):not([class*="hidden-"]),
-.inline-2nd > * > *:not(.row):not([class*="hidden-"]) {
-  display: inline !important;
-}
-.inline-block,
-.inline-block-1st > *:not(.row):not([class*="hidden-"]),
-.inline-block-2nd > * > *:not(.row):not([class*="hidden-"]) {
-  vertical-align: middle !important;
-  display: inline-block !important;
-}
-.scroll {
-  overflow: auto !important;
-}
-.scroll-v {
-  overflow-y: auto !important;
-}
-.scroll-h {
-  overflow-x: auto !important;
-}
-.no-scroll {
-  overflow: hidden !important;
-}
-[class*="round-"],
-[class*="circle-"],
-.round,
-.circle {
-  background-clip: padding-box;
-}
-.round {
-  border-radius: 6px;
-}
-.round > .round {
-  border-radius: 5px;
-}
-.round-t {
-  border-radius: 6px 6px 0 0;
-}
-.round-r {
-  border-radius: 0 6px 6px 0;
-}
-.round-b {
-  border-radius: 0 0 6px 6px;
-}
-.round-l {
-  border-radius: 6px 0 0 6px;
-}
-.round-tl {
-  border-radius: 6px 0 0 0;
-}
-.round-tr {
-  border-radius: 0 6px 0 0;
-}
-.round-bl {
-  border-radius: 0 0 0 6px;
-}
-.round-br {
-  border-radius: 0 0 6px 0;
-}
-.circle {
-  border-radius: 1000px;
-}
-.circle-t {
-  border-radius: 1000px 1000px 0 0;
-}
-.circle-r {
-  border-radius: 0 1000px 1000px 0;
-}
-.circle-b {
-  border-radius: 0 0 1000px 1000px;
-}
-.circle-l {
-  border-radius: 1000px 0 0 1000px;
-}
-.shadow {
-  box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.1);
-}
-.shadow-sm {
-  box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.05);
-}
-.shadow-lg {
-  box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.1);
-}
-.shadow-in {
-  box-shadow: inset 0 1px 3px hsla(0, 0%, 0%, 0.1);
-}
-.shadow-in-sm {
-  box-shadow: inset 0 1px 3px hsla(0, 0%, 0%, 0.05);
-}
-.shadow-in-lg {
-  box-shadow: inset 0 5px 15px hsla(0, 0%, 0%, 0.1);
-}
-.no-opacity,
-.desktop .opacity:hover,
-.desktop .opacity-more:hover {
-  opacity: 1 !important;
-}
-.opacity {
-  opacity: 0.75 !important;
-}
-.opacity-more {
-  opacity: 0.45 !important;
-}
-.opacity-half {
-  opacity: 0.5 !important;
-}
-.opacity-full {
-  opacity: 0 !important;
-}
-.desktop .hover-opacity:hover,
-.desktop .hover-opacity-1st > *:hover,
-.desktop .hover-opacity-2nd > * > *:hover {
-  opacity: 0.75;
-}
-.desktop .hover-shadow:hover,
-.desktop .hover-shadow-1st > *:hover,
-.desktop .hover-shadow-2nd > * > *:hover {
-  box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.2);
-}
-.desktop .hover-scale:hover,
-.desktop .hover-scale-1st > *:hover,
-.desktop .hover-scale-2nd > * > *:hover {
-  transform: scale(1.06);
-}
-.desktop .hover-scale-more:hover,
-.desktop .hover-scale-more-1st > *:hover,
-.desktop .hover-scale-more-2nd > * > *:hover {
-  transform: scale(1.2);
-}
-.desktop .hover-t:hover,
-.desktop .hover-t-1st > *:hover,
-.desktop .hover-t-2nd > * > *:hover {
-  transform: translateY(-1%);
-}
-.desktop .hover-t-more:hover,
-.desktop .hover-t-more-1st > *:hover,
-.desktop .hover-t-more-2nd > * > *:hover {
-  transform: translateY(-5%);
-}
-.desktop .hover-r:hover,
-.desktop .hover-r-1st > *:hover,
-.desktop .hover-r-2nd > * > *:hover {
-  transform: translateX(1%);
-}
-.desktop .hover-r-more:hover,
-.desktop .hover-r-more-1st > *:hover,
-.desktop .hover-r-more-2nd > * > *:hover {
-  transform: translateX(5%);
-}
-.desktop .hover-b:hover,
-.desktop .hover-b-1st > *:hover,
-.desktop .hover-b-2nd > * > *:hover {
-  transform: translateY(1%);
-}
-.desktop .hover-b-more:hover,
-.desktop .hover-b-more-1st > *:hover,
-.desktop .hover-b-more-2nd > * > *:hover {
-  transform: translateY(5%);
-}
-.desktop .hover-l:hover,
-.desktop .hover-l-1st > *:hover,
-.desktop .hover-l-2nd > * > *:hover {
-  transform: translateX(-1%);
-}
-.desktop .hover-l-more:hover,
-.desktop .hover-l-more-1st > *:hover,
-.desktop .hover-l-more-2nd > * > *:hover {
-  transform: translateX(-5%);
-}
-.mobile .scroll,
-.mobile .scroll-v,
-.mobile .scroll-h {
-  -webkit-overflow-scrolling: touch;
-}
-.list-custom,
-.list-inline,
-.list-unstyled {
-  list-style: none;
-}
-.list-custom ul,
-.list-inline ul,
-.list-custom ol,
-.list-inline ol {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.list-unstyled:not(:last-child) {
-  margin-bottom: 20px;
-}
-.list-inline ul,
-.list-inline ol,
-.list-inline li {
-  vertical-align: middle;
-  display: inline-block;
-}
-[class*="sp-"] {
-  width: 100%;
-  display: block !important;
-  clear: both !important;
-}
-.sp-1 {
-  height: 1px;
-}
-.sp-2 {
-  height: 2px;
-}
-.sp-3 {
-  height: 3px;
-}
-.sp-4 {
-  height: 4px;
-}
-.sp-5 {
-  height: 5px;
-}
-.sp-10 {
-  height: 10px;
-}
-.sp-15 {
-  height: 15px;
-}
-.sp-20 {
-  height: 20px;
-}
-.sp-25 {
-  height: 25px;
-}
-.sp-30 {
-  height: 30px;
-}
-.align-justify {
-  text-align: justify !important;
-}
-.align-nowrap {
-  white-space: nowrap !important;
-}
-.align-r,
-.align-r * {
-  text-align: right !important;
-}
-.align-l,
-.align-l * {
-  text-align: left !important;
-}
-.align-c,
-.align-c * {
-  text-align: center !important;
-}
-@media print {
-  .hidden-print {
-    display: none !important;
+[class*="ease-"],
+[class*="ease-1st-"] > *,
+[class*="ease-2nd-"] > * > * {
+  transition-duration: 0.15s;
+  transition-timing-function: ease-out;
+}
+.ease-fast,
+.ease-fast[class*="ease-1st-"] > *,
+.ease-fast[class*="ease-2nd-"] > * > * {
+  transition-duration: 0.1s;
+}
+.ease-slow,
+.ease-slow[class*="ease-1st-"] > *,
+.ease-slow[class*="ease-2nd-"] > * > * {
+  transition-duration: 0.4s;
+}
+.ease-slow-2x,
+.ease-slow-2x[class*="ease-1st-"] > *,
+.ease-slow-2x[class*="ease-2nd-"] > * > * {
+  transition-duration: 0.8s;
+}
+.ease-slow-3x,
+.ease-slow-3x[class*="ease-1st-"] > *,
+.ease-slow-3x[class*="ease-2nd-"] > * > * {
+  transition-duration: 1.2s;
+}
+.ease-slow-4x,
+.ease-slow-4x[class*="ease-1st-"] > *,
+.ease-slow-4x[class*="ease-2nd-"] > * > * {
+  transition-duration: 1.6s;
+}
+.ease-slow-5x,
+.ease-slow-5x[class*="ease-1st-"] > *,
+.ease-slow-5x[class*="ease-2nd-"] > * > * {
+  transition-duration: 2s;
+}
+.ease-color,
+.ease-1st-color > *,
+.ease-2nd-color > * > * {
+  transition-property: color;
+}
+.ease-width,
+.ease-1st-width > *,
+.ease-2nd-width > * > * {
+  transition-property: width;
+}
+.ease-height,
+.ease-1st-height > *,
+.ease-2nd-height > * > * {
+  transition-property: height;
+}
+.ease-bg,
+.ease-1st-bg > *,
+.ease-2nd-bg > * > * {
+  transition-property: background-color;
+}
+.ease-margin,
+.ease-1st-margin > *,
+.ease-2nd-margin > * > * {
+  transition-property: margin;
+}
+.ease-border,
+.ease-1st-border > *,
+.ease-2nd-border > * > * {
+  transition-property: border-color, border-width;
+}
+.ease-position,
+.ease-1st-position > *,
+.ease-2nd-position > * > * {
+  transition-property: top, right, bottom, left;
+}
+.ease-layout,
+.ease-1st-layout > *,
+.ease-2nd-layout > * > * {
+  transition-property: transform, opacity, box-shadow;
+}
+.ease-svg,
+.ease-1st-svg > *,
+.ease-2nd-svg > * > * {
+  transition-property: fill, stroke, opacity;
+}
+.ease-all {
+  transition-property: all;
+}
+.ease-default,
+.ease-default[class*="ease-1st-"] > *,
+.ease-default[class*="ease-2nd-"] > * > * {
+  transition-duration: ease-out !important;
+  transition-timing-function: ease !important;
+}
+.ease-in,
+.ease-in[class*="ease-1st-"] > *,
+.ease-in[class*="ease-2nd-"] > * > * {
+  transition-timing-function: in;
+}
+.ease-out,
+.ease-out[class*="ease-1st-"] > *,
+.ease-out[class*="ease-2nd-"] > * > * {
+  transition-timing-function: out;
+}
+.ease-in-out,
+.ease-in-out[class*="ease-1st-"] > *,
+.ease-in-out[class*="ease-2nd-"] > * > * {
+  transition-timing-function: in-out;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
-@media (min-width: 1200px) {
-  .hidden-lg {
-    display: none !important;
+@keyframes progress {
+  from {
+    background-position: 40px 0;
   }
-  .no-float-lg {
-    float: none !important;
-  }
-}
-@media (min-width: 960px) {
-  .visible-md {
-    display: none !important;
+  to {
+    background-position: 0 0;
   }
 }
-@media (max-width: 959px) {
-  .md-full-w {
-    width: 100% !important;
+@keyframes bounce-x {
+  from {
+    transform: translateX(0);
   }
-  .hidden-md {
-    display: none !important;
+  25% {
+    transform: translateX(-12%);
   }
-}
-@media (min-width: 768px) {
-  .visible-sm {
-    display: none !important;
+  75% {
+    transform: translateX(12%);
   }
-}
-@media (min-width: 768px) and (max-width: 959px) {
-  .img-md-fluid {
-    width: 100% !important;
-    height: auto !important;
-  }
-  .no-float-md {
-    float: none !important;
-  }
-  .clearfix-md {
-    clear: both !important;
-    display: block;
-  }
-  .md-align-c,
-  .md-align-c *,
-  .md-align-c *,
-  .md-align-c * * {
-    text-align: center !important;
-  }
-  .md-align-l,
-  .md-align-l *,
-  .md-align-l *,
-  .md-align-l * * {
-    text-align: left !important;
-  }
-  .md-align-r,
-  .md-align-r *,
-  .md-align-r *,
-  .md-align-r * * {
-    text-align: right !important;
+  100% {
+    transform: translateX(0);
   }
 }
-@media (max-width: 767px) {
-  .sm-full-w {
-    width: 100% !important;
+@keyframes bounce-y {
+  from {
+    transform: translateY(0);
   }
-  .hidden-sm {
-    display: none !important;
+  25% {
+    transform: translateY(-12%);
   }
-}
-@media (min-width: 481px) {
-  .visible-xs {
-    display: none !important;
+  75% {
+    transform: translateY(12%);
   }
-}
-@media (min-width: 481px) and (max-width: 767px) {
-  .img-md-fluid,
-  .img-sm-fluid {
-    width: 100% !important;
-    height: auto !important;
-  }
-  .no-float-md,
-  .no-float-sm {
-    float: none !important;
-  }
-  .clearfix-md,
-  .clearfix-sm {
-    clear: both !important;
-    display: block;
-  }
-  .md-align-c,
-  .sm-align-c,
-  .md-align-c *,
-  .sm-align-c *,
-  .md-align-c *,
-  .sm-align-c *,
-  .md-align-c * *,
-  .sm-align-c * * {
-    text-align: center !important;
-  }
-  .md-align-l,
-  .sm-align-l,
-  .md-align-l *,
-  .sm-align-l *,
-  .md-align-l *,
-  .sm-align-l *,
-  .md-align-l * *,
-  .sm-align-l * * {
-    text-align: left !important;
-  }
-  .md-align-r,
-  .sm-align-r,
-  .md-align-r *,
-  .sm-align-r *,
-  .md-align-r *,
-  .sm-align-r *,
-  .md-align-r * *,
-  .sm-align-r * * {
-    text-align: right !important;
+  100% {
+    transform: translateY(0);
   }
 }
-@media (max-width: 480px) {
-  .xs-full-w {
-    width: 100% !important;
+@keyframes bounce-z {
+  from {
+    transform: scale(1);
   }
-  .hidden-xs {
-    display: none !important;
+  25% {
+    transform: scale(0.9);
   }
-  .img-md-fluid,
-  .img-sm-fluid,
-  .img-xs-fluid {
-    width: 100% !important;
-    height: auto !important;
+  75% {
+    transform: scale(1.1);
   }
-  .no-float-md,
-  .no-float-sm,
-  .no-float-xs {
-    float: none !important;
-  }
-  .clearfix-md,
-  .clearfix-sm,
-  .clearfix-xs {
-    clear: both !important;
-    display: block;
-  }
-  .md-align-c,
-  .sm-align-c,
-  .xs-align-c,
-  .md-align-c *,
-  .sm-align-c *,
-  .xs-align-c *,
-  .md-align-c *,
-  .sm-align-c *,
-  .xs-align-c *,
-  .md-align-c * *,
-  .sm-align-c * *,
-  .xs-align-c * * {
-    text-align: center !important;
-  }
-  .md-align-l,
-  .sm-align-l,
-  .xs-align-l,
-  .md-align-l *,
-  .sm-align-l *,
-  .xs-align-l *,
-  .md-align-l *,
-  .sm-align-l *,
-  .xs-align-l *,
-  .md-align-l * *,
-  .sm-align-l * *,
-  .xs-align-l * * {
-    text-align: left !important;
-  }
-  .md-align-r,
-  .sm-align-r,
-  .xs-align-r,
-  .md-align-r *,
-  .sm-align-r *,
-  .xs-align-r *,
-  .md-align-r *,
-  .sm-align-r *,
-  .xs-align-r *,
-  .md-align-r * *,
-  .sm-align-r * *,
-  .xs-align-r * * {
-    text-align: right !important;
+  100% {
+    transform: scale(1);
   }
 }
-@media (max-width: 1199px) {
-  .visible-lg {
-    display: none !important;
-  }
-  .clearfix-lg {
-    clear: both !important;
-    display: block;
-  }
-  .lg-align-c,
-  .lg-align-c *,
-  .lg-align-c *,
-  .lg-align-c * * {
-    text-align: center !important;
-  }
-  .lg-align-l,
-  .lg-align-l *,
-  .lg-align-l *,
-  .lg-align-l * * {
-    text-align: left !important;
-  }
-  .lg-align-r,
-  .lg-align-r *,
-  .lg-align-r *,
-  .lg-align-r * * {
-    text-align: right !important;
-  }
+.animate-spin {
+  animation: spin 1.15s linear infinite;
 }
-@media (max-width: 1679px) {
-  .visible-xl {
-    display: none !important;
-  }
+.animate-progress {
+  animation: progress 3s linear infinite;
 }
-@media (min-width: 1680px) {
-  .hidden-xl {
-    display: none !important;
-  }
-  .no-float-xl {
-    float: none !important;
-  }
-  .xl-align-c,
-  .xl-align-c *,
-  .xl-align-c *,
-  .xl-align-c * * {
-    text-align: center !important;
-  }
-  .xl-align-l,
-  .xl-align-l *,
-  .xl-align-l *,
-  .xl-align-l * * {
-    text-align: left !important;
-  }
-  .xl-align-r,
-  .xl-align-r *,
-  .xl-align-r *,
-  .xl-align-r * * {
-    text-align: right !important;
-  }
+.animate-bounce-x {
+  animation: bounce-x 6s linear infinite;
 }
-.ie .hidden-ie,
-.ie .hidden-light,
-.ie .visible-dark {
-  display: none !important;
+.animate-bounce-y {
+  animation: bounce-y 6s linear infinite;
 }
-[data-ui-theme="light"] .hidden-light,
-[data-ui-theme="light"] .visible-dark {
-  display: none !important;
+.animate-bounce-z {
+  animation: bounce-z 6s linear infinite;
 }
-[data-ui-theme="dark"] .visible-light,
-[data-ui-theme="dark"] .hidden-dark {
-  display: none !important;
+.no-effects,
+.no-effects:before,
+.no-effects:after,
+.no-effects *,
+.no-effects *:before,
+.no-effects *:after {
+  transition-property: none !important;
+  animation: none !important;
+}
+.pause-effects,
+.pause-effects:before,
+.pause-effects:after,
+.pause-effects *,
+.pause-effects *:before,
+.pause-effects *:after {
+  transition-property: none !important;
+  animation-play-state: paused !important;
+}
+[class*="ui-fill-light-"],
+[class*="ui-fill-light-"] .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+[class*="ui-fill-light-"] a:not([class*="ui-fill-"]):not([class*="font-color-"]),
+[class*="ui-fill-light-"] button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
+  color: hsl(0, 0%, 0%);
+  color: var(--black);
+}
+[class*="ui-fill-dark-"],
+[class*="ui-fill-dark-"] .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+[class*="ui-fill-dark-"] a:not([class*="ui-fill-"]):not([class*="font-color-"]),
+[class*="ui-fill-dark-"] button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
+  color: hsl(0, 0%, 100%);
+}
+.bg-white:not([class*="ui-fill-"]) {
+  background-color: hsl(0, 0%, 100%) !important;
+  background-color: var(--white) !important;
+}
+.card .bg-white:not([class*="ui-fill-"]) {
+  background-color: hsl(0, 0%, 100%) !important;
+  background-color: var(--card-bg) !important;
+}
+.bg-black:not([class*="ui-fill-"]) {
+  background-color: hsl(0, 0%, 0%) !important;
+}
+.theme-gray.ui-fill-light-100,
+.theme-gray .ui-fill-light-100:not([class*="theme-"]) {
+  background-color: hsla(0, 0%, 80%, 0.15);
+}
+.theme-gray.ui-fill-light-200,
+.theme-gray .ui-fill-light-200:not([class*="theme-"]) {
+  background-color: hsla(0, 0%, 85%, 0.25);
+}
+.theme-gray.ui-fill-light-300,
+.theme-gray .ui-fill-light-300:not([class*="theme-"]) {
+  background-color: hsla(0, 0%, 90%, 0.35);
+}
+.theme-gray.ui-fill-dark-100,
+.theme-gray .ui-fill-dark-100:not([class*="theme-"]) {
+  background-color: hsl(0, 0%, 70%);
+}
+.theme-gray.ui-fill-dark-200,
+.theme-gray .ui-fill-dark-200:not([class*="theme-"]) {
+  background-color: hsl(0, 0%, 55%);
+}
+.theme-gray.ui-fill-dark-300,
+.theme-gray .ui-fill-dark-300:not([class*="theme-"]) {
+  background-color: hsl(0, 0%, 45%);
+}
+.desktop .theme-gray.ui-fill-light-100.hover:hover,
+.desktop .theme-gray .ui-fill-light-100:not([class*="theme-"]).hover:hover,
+.desktop .theme-gray.ui-fill-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-gray .ui-fill-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsla(0, 0%, 80%, 0.3);
+}
+.desktop .theme-gray.ui-fill-light-200.hover:hover,
+.desktop .theme-gray .ui-fill-light-200:not([class*="theme-"]).hover:hover,
+.desktop .theme-gray.ui-fill-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-gray .ui-fill-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsla(0, 0%, 85%, 0.5);
+}
+.desktop .theme-gray.ui-fill-light-300.hover:hover,
+.desktop .theme-gray .ui-fill-light-300:not([class*="theme-"]).hover:hover,
+.desktop .theme-gray.ui-fill-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-gray .ui-fill-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsla(0, 0%, 90%, 0.7);
+}
+.desktop .theme-gray.ui-fill-dark-100.hover:hover,
+.desktop .theme-gray .ui-fill-dark-100:not([class*="theme-"]).hover:hover,
+.desktop .theme-gray.ui-fill-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-gray .ui-fill-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsl(0, 0%, 85%);
+}
+.desktop .theme-gray.ui-fill-dark-200.hover:hover,
+.desktop .theme-gray .ui-fill-dark-200:not([class*="theme-"]).hover:hover,
+.desktop .theme-gray.ui-fill-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-gray .ui-fill-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsl(0, 0%, 90%);
+}
+.desktop .theme-gray.ui-fill-dark-300.hover:hover,
+.desktop .theme-gray .ui-fill-dark-300:not([class*="theme-"]).hover:hover,
+.desktop .theme-gray.ui-fill-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-gray .ui-fill-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsl(0, 0%, 95%);
+}
+.theme-gray.ui-color,
+.theme-gray .ui-color:not([class*="theme-"]) {
+  color: hsl(0, 0%, 70%);
+}
+.theme-gray.ui-stroke,
+.theme-gray .ui-stroke:not([class*="theme-"]) {
+  border-color: hsl(0, 0%, 70%);
+}
+.theme-green.ui-fill-light-100,
+.theme-green .ui-fill-light-100:not([class*="theme-"]) {
+  background-color: hsla(142, 82%, 52%, 0.15);
+}
+.theme-green.ui-fill-light-200,
+.theme-green .ui-fill-light-200:not([class*="theme-"]) {
+  background-color: hsla(142, 82%, 57%, 0.25);
+}
+.theme-green.ui-fill-light-300,
+.theme-green .ui-fill-light-300:not([class*="theme-"]) {
+  background-color: hsla(142, 82%, 62%, 0.35);
+}
+.theme-green.ui-fill-dark-100,
+.theme-green .ui-fill-dark-100:not([class*="theme-"]) {
+  background-color: hsl(142, 82%, 42%);
+}
+.theme-green.ui-fill-dark-200,
+.theme-green .ui-fill-dark-200:not([class*="theme-"]) {
+  background-color: hsl(142, 82%, 27%);
+}
+.theme-green.ui-fill-dark-300,
+.theme-green .ui-fill-dark-300:not([class*="theme-"]) {
+  background-color: hsl(142, 82%, 17%);
+}
+.desktop .theme-green.ui-fill-light-100.hover:hover,
+.desktop .theme-green .ui-fill-light-100:not([class*="theme-"]).hover:hover,
+.desktop .theme-green.ui-fill-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-green .ui-fill-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsla(142, 82%, 52%, 0.3);
+}
+.desktop .theme-green.ui-fill-light-200.hover:hover,
+.desktop .theme-green .ui-fill-light-200:not([class*="theme-"]).hover:hover,
+.desktop .theme-green.ui-fill-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-green .ui-fill-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsla(142, 82%, 57%, 0.5);
+}
+.desktop .theme-green.ui-fill-light-300.hover:hover,
+.desktop .theme-green .ui-fill-light-300:not([class*="theme-"]).hover:hover,
+.desktop .theme-green.ui-fill-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-green .ui-fill-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsla(142, 82%, 62%, 0.7);
+}
+.desktop .theme-green.ui-fill-dark-100.hover:hover,
+.desktop .theme-green .ui-fill-dark-100:not([class*="theme-"]).hover:hover,
+.desktop .theme-green.ui-fill-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-green .ui-fill-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsl(142, 82%, 57%);
+}
+.desktop .theme-green.ui-fill-dark-200.hover:hover,
+.desktop .theme-green .ui-fill-dark-200:not([class*="theme-"]).hover:hover,
+.desktop .theme-green.ui-fill-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-green .ui-fill-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsl(142, 82%, 62%);
+}
+.desktop .theme-green.ui-fill-dark-300.hover:hover,
+.desktop .theme-green .ui-fill-dark-300:not([class*="theme-"]).hover:hover,
+.desktop .theme-green.ui-fill-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-green .ui-fill-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsl(142, 82%, 67%);
+}
+.theme-green.ui-color,
+.theme-green .ui-color:not([class*="theme-"]) {
+  color: hsl(142, 82%, 42%);
+}
+.theme-green.ui-stroke,
+.theme-green .ui-stroke:not([class*="theme-"]) {
+  border-color: hsl(142, 82%, 42%);
+}
+.theme-yellow.ui-fill-light-100,
+.theme-yellow .ui-fill-light-100:not([class*="theme-"]) {
+  background-color: hsla(42, 100%, 55%, 0.15);
+}
+.theme-yellow.ui-fill-light-200,
+.theme-yellow .ui-fill-light-200:not([class*="theme-"]) {
+  background-color: hsla(42, 100%, 60%, 0.25);
+}
+.theme-yellow.ui-fill-light-300,
+.theme-yellow .ui-fill-light-300:not([class*="theme-"]) {
+  background-color: hsla(42, 100%, 65%, 0.35);
+}
+.theme-yellow.ui-fill-dark-100,
+.theme-yellow .ui-fill-dark-100:not([class*="theme-"]) {
+  background-color: hsl(42, 100%, 45%);
+}
+.theme-yellow.ui-fill-dark-200,
+.theme-yellow .ui-fill-dark-200:not([class*="theme-"]) {
+  background-color: hsl(42, 100%, 30%);
+}
+.theme-yellow.ui-fill-dark-300,
+.theme-yellow .ui-fill-dark-300:not([class*="theme-"]) {
+  background-color: hsl(42, 100%, 20%);
+}
+.desktop .theme-yellow.ui-fill-light-100.hover:hover,
+.desktop .theme-yellow .ui-fill-light-100:not([class*="theme-"]).hover:hover,
+.desktop .theme-yellow.ui-fill-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-yellow .ui-fill-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsla(42, 100%, 55%, 0.3);
+}
+.desktop .theme-yellow.ui-fill-light-200.hover:hover,
+.desktop .theme-yellow .ui-fill-light-200:not([class*="theme-"]).hover:hover,
+.desktop .theme-yellow.ui-fill-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-yellow .ui-fill-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsla(42, 100%, 60%, 0.5);
+}
+.desktop .theme-yellow.ui-fill-light-300.hover:hover,
+.desktop .theme-yellow .ui-fill-light-300:not([class*="theme-"]).hover:hover,
+.desktop .theme-yellow.ui-fill-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-yellow .ui-fill-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsla(42, 100%, 65%, 0.7);
+}
+.desktop .theme-yellow.ui-fill-dark-100.hover:hover,
+.desktop .theme-yellow .ui-fill-dark-100:not([class*="theme-"]).hover:hover,
+.desktop .theme-yellow.ui-fill-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-yellow .ui-fill-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsl(42, 100%, 60%);
+}
+.desktop .theme-yellow.ui-fill-dark-200.hover:hover,
+.desktop .theme-yellow .ui-fill-dark-200:not([class*="theme-"]).hover:hover,
+.desktop .theme-yellow.ui-fill-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-yellow .ui-fill-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsl(42, 100%, 65%);
+}
+.desktop .theme-yellow.ui-fill-dark-300.hover:hover,
+.desktop .theme-yellow .ui-fill-dark-300:not([class*="theme-"]).hover:hover,
+.desktop .theme-yellow.ui-fill-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-yellow .ui-fill-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsl(42, 100%, 70%);
+}
+.theme-yellow.ui-color,
+.theme-yellow .ui-color:not([class*="theme-"]) {
+  color: hsl(42, 100%, 45%);
+}
+.theme-yellow.ui-stroke,
+.theme-yellow .ui-stroke:not([class*="theme-"]) {
+  border-color: hsl(42, 100%, 45%);
+}
+.theme-orange.ui-fill-light-100,
+.theme-orange .ui-fill-light-100:not([class*="theme-"]) {
+  background-color: hsla(30, 100%, 60%, 0.15);
+}
+.theme-orange.ui-fill-light-200,
+.theme-orange .ui-fill-light-200:not([class*="theme-"]) {
+  background-color: hsla(30, 100%, 65%, 0.25);
+}
+.theme-orange.ui-fill-light-300,
+.theme-orange .ui-fill-light-300:not([class*="theme-"]) {
+  background-color: hsla(30, 100%, 70%, 0.35);
+}
+.theme-orange.ui-fill-dark-100,
+.theme-orange .ui-fill-dark-100:not([class*="theme-"]) {
+  background-color: hsl(30, 100%, 50%);
+}
+.theme-orange.ui-fill-dark-200,
+.theme-orange .ui-fill-dark-200:not([class*="theme-"]) {
+  background-color: hsl(30, 100%, 35%);
+}
+.theme-orange.ui-fill-dark-300,
+.theme-orange .ui-fill-dark-300:not([class*="theme-"]) {
+  background-color: hsl(30, 100%, 25%);
+}
+.desktop .theme-orange.ui-fill-light-100.hover:hover,
+.desktop .theme-orange .ui-fill-light-100:not([class*="theme-"]).hover:hover,
+.desktop .theme-orange.ui-fill-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-orange .ui-fill-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsla(30, 100%, 60%, 0.3);
+}
+.desktop .theme-orange.ui-fill-light-200.hover:hover,
+.desktop .theme-orange .ui-fill-light-200:not([class*="theme-"]).hover:hover,
+.desktop .theme-orange.ui-fill-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-orange .ui-fill-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsla(30, 100%, 65%, 0.5);
+}
+.desktop .theme-orange.ui-fill-light-300.hover:hover,
+.desktop .theme-orange .ui-fill-light-300:not([class*="theme-"]).hover:hover,
+.desktop .theme-orange.ui-fill-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-orange .ui-fill-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsla(30, 100%, 70%, 0.7);
+}
+.desktop .theme-orange.ui-fill-dark-100.hover:hover,
+.desktop .theme-orange .ui-fill-dark-100:not([class*="theme-"]).hover:hover,
+.desktop .theme-orange.ui-fill-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-orange .ui-fill-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsl(30, 100%, 65%);
+}
+.desktop .theme-orange.ui-fill-dark-200.hover:hover,
+.desktop .theme-orange .ui-fill-dark-200:not([class*="theme-"]).hover:hover,
+.desktop .theme-orange.ui-fill-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-orange .ui-fill-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsl(30, 100%, 70%);
+}
+.desktop .theme-orange.ui-fill-dark-300.hover:hover,
+.desktop .theme-orange .ui-fill-dark-300:not([class*="theme-"]).hover:hover,
+.desktop .theme-orange.ui-fill-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-orange .ui-fill-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsl(30, 100%, 75%);
+}
+.theme-orange.ui-color,
+.theme-orange .ui-color:not([class*="theme-"]) {
+  color: hsl(30, 100%, 50%);
+}
+.theme-orange.ui-stroke,
+.theme-orange .ui-stroke:not([class*="theme-"]) {
+  border-color: hsl(30, 100%, 50%);
+}
+.theme-red.ui-fill-light-100,
+.theme-red .ui-fill-light-100:not([class*="theme-"]) {
+  background-color: hsla(0, 74%, 65%, 0.15);
+}
+.theme-red.ui-fill-light-200,
+.theme-red .ui-fill-light-200:not([class*="theme-"]) {
+  background-color: hsla(0, 74%, 70%, 0.25);
+}
+.theme-red.ui-fill-light-300,
+.theme-red .ui-fill-light-300:not([class*="theme-"]) {
+  background-color: hsla(0, 74%, 75%, 0.35);
+}
+.theme-red.ui-fill-dark-100,
+.theme-red .ui-fill-dark-100:not([class*="theme-"]) {
+  background-color: hsl(0, 74%, 55%);
+}
+.theme-red.ui-fill-dark-200,
+.theme-red .ui-fill-dark-200:not([class*="theme-"]) {
+  background-color: hsl(0, 74%, 40%);
+}
+.theme-red.ui-fill-dark-300,
+.theme-red .ui-fill-dark-300:not([class*="theme-"]) {
+  background-color: hsl(0, 74%, 30%);
+}
+.desktop .theme-red.ui-fill-light-100.hover:hover,
+.desktop .theme-red .ui-fill-light-100:not([class*="theme-"]).hover:hover,
+.desktop .theme-red.ui-fill-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-red .ui-fill-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsla(0, 74%, 65%, 0.3);
+}
+.desktop .theme-red.ui-fill-light-200.hover:hover,
+.desktop .theme-red .ui-fill-light-200:not([class*="theme-"]).hover:hover,
+.desktop .theme-red.ui-fill-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-red .ui-fill-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsla(0, 74%, 70%, 0.5);
+}
+.desktop .theme-red.ui-fill-light-300.hover:hover,
+.desktop .theme-red .ui-fill-light-300:not([class*="theme-"]).hover:hover,
+.desktop .theme-red.ui-fill-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-red .ui-fill-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsla(0, 74%, 75%, 0.7);
+}
+.desktop .theme-red.ui-fill-dark-100.hover:hover,
+.desktop .theme-red .ui-fill-dark-100:not([class*="theme-"]).hover:hover,
+.desktop .theme-red.ui-fill-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-red .ui-fill-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsl(0, 74%, 70%);
+}
+.desktop .theme-red.ui-fill-dark-200.hover:hover,
+.desktop .theme-red .ui-fill-dark-200:not([class*="theme-"]).hover:hover,
+.desktop .theme-red.ui-fill-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-red .ui-fill-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsl(0, 74%, 75%);
+}
+.desktop .theme-red.ui-fill-dark-300.hover:hover,
+.desktop .theme-red .ui-fill-dark-300:not([class*="theme-"]).hover:hover,
+.desktop .theme-red.ui-fill-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-red .ui-fill-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsl(0, 74%, 80%);
+}
+.theme-red.ui-color,
+.theme-red .ui-color:not([class*="theme-"]) {
+  color: hsl(0, 74%, 55%);
+}
+.theme-red.ui-stroke,
+.theme-red .ui-stroke:not([class*="theme-"]) {
+  border-color: hsl(0, 74%, 55%);
+}
+.theme-default.ui-fill-light-100,
+.theme-default .ui-fill-light-100:not([class*="theme-"]) {
+  background-color: hsla(226, 52%, 60%, 0.15);
+}
+.theme-default.ui-fill-light-200,
+.theme-default .ui-fill-light-200:not([class*="theme-"]) {
+  background-color: hsla(226, 52%, 65%, 0.25);
+}
+.theme-default.ui-fill-light-300,
+.theme-default .ui-fill-light-300:not([class*="theme-"]) {
+  background-color: hsla(226, 52%, 70%, 0.35);
+}
+.theme-default.ui-fill-dark-100,
+.theme-default .ui-fill-dark-100:not([class*="theme-"]) {
+  background-color: hsl(226, 52%, 50%);
+}
+.theme-default.ui-fill-dark-200,
+.theme-default .ui-fill-dark-200:not([class*="theme-"]) {
+  background-color: hsl(226, 52%, 35%);
+}
+.theme-default.ui-fill-dark-300,
+.theme-default .ui-fill-dark-300:not([class*="theme-"]) {
+  background-color: hsl(226, 52%, 25%);
+}
+.desktop .theme-default.ui-fill-light-100.hover:hover,
+.desktop .theme-default .ui-fill-light-100:not([class*="theme-"]).hover:hover,
+.desktop .theme-default.ui-fill-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-default .ui-fill-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsla(226, 52%, 60%, 0.3);
+}
+.desktop .theme-default.ui-fill-light-200.hover:hover,
+.desktop .theme-default .ui-fill-light-200:not([class*="theme-"]).hover:hover,
+.desktop .theme-default.ui-fill-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-default .ui-fill-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsla(226, 52%, 65%, 0.5);
+}
+.desktop .theme-default.ui-fill-light-300.hover:hover,
+.desktop .theme-default .ui-fill-light-300:not([class*="theme-"]).hover:hover,
+.desktop .theme-default.ui-fill-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-default .ui-fill-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsla(226, 52%, 70%, 0.7);
+}
+.desktop .theme-default.ui-fill-dark-100.hover:hover,
+.desktop .theme-default .ui-fill-dark-100:not([class*="theme-"]).hover:hover,
+.desktop .theme-default.ui-fill-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-default .ui-fill-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsl(226, 52%, 65%);
+}
+.desktop .theme-default.ui-fill-dark-200.hover:hover,
+.desktop .theme-default .ui-fill-dark-200:not([class*="theme-"]).hover:hover,
+.desktop .theme-default.ui-fill-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-default .ui-fill-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsl(226, 52%, 70%);
+}
+.desktop .theme-default.ui-fill-dark-300.hover:hover,
+.desktop .theme-default .ui-fill-dark-300:not([class*="theme-"]).hover:hover,
+.desktop .theme-default.ui-fill-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-default .ui-fill-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsl(226, 52%, 75%);
+}
+.theme-default.ui-color,
+.theme-default .ui-color:not([class*="theme-"]) {
+  color: hsl(226, 52%, 50%);
+}
+.theme-default.ui-stroke,
+.theme-default .ui-stroke:not([class*="theme-"]) {
+  border-color: hsl(226, 52%, 50%);
+}
+.theme-default2.ui-fill-light-100,
+.theme-default2 .ui-fill-light-100:not([class*="theme-"]) {
+  background-color: hsla(206, 87%, 60%, 0.15);
+}
+.theme-default2.ui-fill-light-200,
+.theme-default2 .ui-fill-light-200:not([class*="theme-"]) {
+  background-color: hsla(206, 87%, 65%, 0.25);
+}
+.theme-default2.ui-fill-light-300,
+.theme-default2 .ui-fill-light-300:not([class*="theme-"]) {
+  background-color: hsla(206, 87%, 70%, 0.35);
+}
+.theme-default2.ui-fill-dark-100,
+.theme-default2 .ui-fill-dark-100:not([class*="theme-"]) {
+  background-color: hsl(206, 87%, 50%);
+}
+.theme-default2.ui-fill-dark-200,
+.theme-default2 .ui-fill-dark-200:not([class*="theme-"]) {
+  background-color: hsl(206, 87%, 35%);
+}
+.theme-default2.ui-fill-dark-300,
+.theme-default2 .ui-fill-dark-300:not([class*="theme-"]) {
+  background-color: hsl(206, 87%, 25%);
+}
+.desktop .theme-default2.ui-fill-light-100.hover:hover,
+.desktop .theme-default2 .ui-fill-light-100:not([class*="theme-"]).hover:hover,
+.desktop .theme-default2.ui-fill-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-default2 .ui-fill-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsla(206, 87%, 60%, 0.3);
+}
+.desktop .theme-default2.ui-fill-light-200.hover:hover,
+.desktop .theme-default2 .ui-fill-light-200:not([class*="theme-"]).hover:hover,
+.desktop .theme-default2.ui-fill-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-default2 .ui-fill-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsla(206, 87%, 65%, 0.5);
+}
+.desktop .theme-default2.ui-fill-light-300.hover:hover,
+.desktop .theme-default2 .ui-fill-light-300:not([class*="theme-"]).hover:hover,
+.desktop .theme-default2.ui-fill-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-default2 .ui-fill-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsla(206, 87%, 70%, 0.7);
+}
+.desktop .theme-default2.ui-fill-dark-100.hover:hover,
+.desktop .theme-default2 .ui-fill-dark-100:not([class*="theme-"]).hover:hover,
+.desktop .theme-default2.ui-fill-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-default2 .ui-fill-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsl(206, 87%, 65%);
+}
+.desktop .theme-default2.ui-fill-dark-200.hover:hover,
+.desktop .theme-default2 .ui-fill-dark-200:not([class*="theme-"]).hover:hover,
+.desktop .theme-default2.ui-fill-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-default2 .ui-fill-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsl(206, 87%, 70%);
+}
+.desktop .theme-default2.ui-fill-dark-300.hover:hover,
+.desktop .theme-default2 .ui-fill-dark-300:not([class*="theme-"]).hover:hover,
+.desktop .theme-default2.ui-fill-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-default2 .ui-fill-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+  background-color: hsl(206, 87%, 75%);
+}
+.theme-default2.ui-color,
+.theme-default2 .ui-color:not([class*="theme-"]) {
+  color: hsl(206, 87%, 50%);
+}
+.theme-default2.ui-stroke,
+.theme-default2 .ui-stroke:not([class*="theme-"]) {
+  border-color: hsl(206, 87%, 50%);
 }
 /* grid */
 .container,
@@ -2274,6 +2343,632 @@ html .row {
     width: 42px;
   }
 }
+/* helpers */
+.visible {
+  display: block !important;
+}
+.hidden,
+.desktop .visible-mobile,
+.desktop .hidden-dekstop,
+.mobile .visible-desktop,
+.mobile .hidden-mobile {
+  display: none !important;
+}
+.rtl {
+  direction: rtl;
+}
+.full-w,
+.clearfix,
+.img-fluid {
+  width: 100% !important;
+}
+.full-h {
+  height: 100% !important;
+}
+.auto-h {
+  height: auto !important;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.automargin {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+.no-user-select {
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.no-float {
+  float: none !important;
+}
+.set-fixed {
+  position: fixed !important;
+}
+.set-relative {
+  position: relative !important;
+}
+.set-absolute {
+  position: absolute !important;
+}
+.set-t {
+  top: 0;
+}
+.set-r {
+  right: 0;
+}
+.set-b {
+  bottom: 0;
+}
+.set-l {
+  left: 0;
+}
+.set-h {
+  right: 0;
+  left: 0;
+}
+.set-v {
+  top: 0;
+  bottom: 0;
+}
+.set-all {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.set-cx {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.set-cy {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.set-c {
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+}
+.cursor-default {
+  cursor: default !important;
+}
+.cursor-pointer {
+  cursor: pointer !important;
+}
+.clearfix {
+  clear: both !important;
+  display: block;
+}
+.img-fluid {
+  height: auto !important;
+}
+.highlight {
+  display: block;
+}
+.highlight:not(:last-child) {
+  margin-bottom: 20px !important;
+}
+.block,
+.block-1st > *:not(.row):not([class*="hidden-"]),
+.block-2nd > * > *:not(.row):not([class*="hidden-"]) {
+  width: 100%;
+  display: block !important;
+}
+.inline,
+.inline-1st > *:not(.row):not([class*="hidden-"]),
+.inline-2nd > * > *:not(.row):not([class*="hidden-"]) {
+  display: inline !important;
+}
+.inline-block,
+.inline-block-1st > *:not(.row):not([class*="hidden-"]),
+.inline-block-2nd > * > *:not(.row):not([class*="hidden-"]) {
+  vertical-align: middle !important;
+  display: inline-block !important;
+}
+.scroll {
+  overflow: auto !important;
+}
+.scroll-v {
+  overflow-y: auto !important;
+}
+.scroll-h {
+  overflow-x: auto !important;
+}
+.no-scroll {
+  overflow: hidden !important;
+}
+[class*="round-"],
+[class*="circle-"],
+.round,
+.circle {
+  background-clip: padding-box;
+}
+.round {
+  border-radius: 6px;
+}
+.round > .round {
+  border-radius: 5px;
+}
+.round-t {
+  border-radius: 6px 6px 0 0;
+}
+.round-r {
+  border-radius: 0 6px 6px 0;
+}
+.round-b {
+  border-radius: 0 0 6px 6px;
+}
+.round-l {
+  border-radius: 6px 0 0 6px;
+}
+.round-tl {
+  border-radius: 6px 0 0 0;
+}
+.round-tr {
+  border-radius: 0 6px 0 0;
+}
+.round-bl {
+  border-radius: 0 0 0 6px;
+}
+.round-br {
+  border-radius: 0 0 6px 0;
+}
+.circle {
+  border-radius: 1000px;
+}
+.circle-t {
+  border-radius: 1000px 1000px 0 0;
+}
+.circle-r {
+  border-radius: 0 1000px 1000px 0;
+}
+.circle-b {
+  border-radius: 0 0 1000px 1000px;
+}
+.circle-l {
+  border-radius: 1000px 0 0 1000px;
+}
+.shadow {
+  box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.1);
+}
+.shadow-sm {
+  box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.05);
+}
+.shadow-lg {
+  box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.1);
+}
+.shadow-in {
+  box-shadow: inset 0 1px 3px hsla(0, 0%, 0%, 0.1);
+}
+.shadow-in-sm {
+  box-shadow: inset 0 1px 3px hsla(0, 0%, 0%, 0.05);
+}
+.shadow-in-lg {
+  box-shadow: inset 0 5px 15px hsla(0, 0%, 0%, 0.1);
+}
+.no-opacity,
+.desktop .opacity:hover,
+.desktop .opacity-more:hover {
+  opacity: 1 !important;
+}
+.opacity {
+  opacity: 0.75 !important;
+}
+.opacity-more {
+  opacity: 0.45 !important;
+}
+.opacity-half {
+  opacity: 0.5 !important;
+}
+.opacity-full {
+  opacity: 0 !important;
+}
+.desktop .hover-opacity:hover,
+.desktop .hover-opacity-1st > *:hover,
+.desktop .hover-opacity-2nd > * > *:hover {
+  opacity: 0.75;
+}
+.desktop .hover-shadow:hover,
+.desktop .hover-shadow-1st > *:hover,
+.desktop .hover-shadow-2nd > * > *:hover {
+  box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.2);
+}
+.desktop .hover-scale:hover,
+.desktop .hover-scale-1st > *:hover,
+.desktop .hover-scale-2nd > * > *:hover {
+  transform: scale(1.06);
+}
+.desktop .hover-scale-more:hover,
+.desktop .hover-scale-more-1st > *:hover,
+.desktop .hover-scale-more-2nd > * > *:hover {
+  transform: scale(1.2);
+}
+.desktop .hover-t:hover,
+.desktop .hover-t-1st > *:hover,
+.desktop .hover-t-2nd > * > *:hover {
+  transform: translateY(-1%);
+}
+.desktop .hover-t-more:hover,
+.desktop .hover-t-more-1st > *:hover,
+.desktop .hover-t-more-2nd > * > *:hover {
+  transform: translateY(-5%);
+}
+.desktop .hover-r:hover,
+.desktop .hover-r-1st > *:hover,
+.desktop .hover-r-2nd > * > *:hover {
+  transform: translateX(1%);
+}
+.desktop .hover-r-more:hover,
+.desktop .hover-r-more-1st > *:hover,
+.desktop .hover-r-more-2nd > * > *:hover {
+  transform: translateX(5%);
+}
+.desktop .hover-b:hover,
+.desktop .hover-b-1st > *:hover,
+.desktop .hover-b-2nd > * > *:hover {
+  transform: translateY(1%);
+}
+.desktop .hover-b-more:hover,
+.desktop .hover-b-more-1st > *:hover,
+.desktop .hover-b-more-2nd > * > *:hover {
+  transform: translateY(5%);
+}
+.desktop .hover-l:hover,
+.desktop .hover-l-1st > *:hover,
+.desktop .hover-l-2nd > * > *:hover {
+  transform: translateX(-1%);
+}
+.desktop .hover-l-more:hover,
+.desktop .hover-l-more-1st > *:hover,
+.desktop .hover-l-more-2nd > * > *:hover {
+  transform: translateX(-5%);
+}
+.mobile .scroll,
+.mobile .scroll-v,
+.mobile .scroll-h {
+  -webkit-overflow-scrolling: touch;
+}
+.list-custom,
+.list-inline,
+.list-unstyled {
+  list-style: none;
+}
+.list-custom ul,
+.list-inline ul,
+.list-custom ol,
+.list-inline ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.list-unstyled:not(:last-child) {
+  margin-bottom: 20px;
+}
+.list-inline ul,
+.list-inline ol,
+.list-inline li {
+  vertical-align: middle;
+  display: inline-block;
+}
+[class*="sp-"] {
+  width: 100%;
+  display: block !important;
+  clear: both !important;
+}
+.sp-1 {
+  height: 1px;
+}
+.sp-2 {
+  height: 2px;
+}
+.sp-3 {
+  height: 3px;
+}
+.sp-4 {
+  height: 4px;
+}
+.sp-5 {
+  height: 5px;
+}
+.sp-10 {
+  height: 10px;
+}
+.sp-15 {
+  height: 15px;
+}
+.sp-20 {
+  height: 20px;
+}
+.sp-25 {
+  height: 25px;
+}
+.sp-30 {
+  height: 30px;
+}
+.align-justify {
+  text-align: justify !important;
+}
+.align-nowrap {
+  white-space: nowrap !important;
+}
+.align-r,
+.align-r * {
+  text-align: right !important;
+}
+.align-l,
+.align-l * {
+  text-align: left !important;
+}
+.align-c,
+.align-c * {
+  text-align: center !important;
+}
+@media print {
+  .hidden-print {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important;
+  }
+  .no-float-lg {
+    float: none !important;
+  }
+}
+@media (min-width: 960px) {
+  .visible-md {
+    display: none !important;
+  }
+}
+@media (max-width: 959px) {
+  .md-full-w {
+    width: 100% !important;
+  }
+  .hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  .visible-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 959px) {
+  .img-md-fluid {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .no-float-md {
+    float: none !important;
+  }
+  .clearfix-md {
+    clear: both !important;
+    display: block;
+  }
+  .md-align-c,
+  .md-align-c *,
+  .md-align-c *,
+  .md-align-c * * {
+    text-align: center !important;
+  }
+  .md-align-l,
+  .md-align-l *,
+  .md-align-l *,
+  .md-align-l * * {
+    text-align: left !important;
+  }
+  .md-align-r,
+  .md-align-r *,
+  .md-align-r *,
+  .md-align-r * * {
+    text-align: right !important;
+  }
+}
+@media (max-width: 767px) {
+  .sm-full-w {
+    width: 100% !important;
+  }
+  .hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 481px) {
+  .visible-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .img-md-fluid,
+  .img-sm-fluid {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .no-float-md,
+  .no-float-sm {
+    float: none !important;
+  }
+  .clearfix-md,
+  .clearfix-sm {
+    clear: both !important;
+    display: block;
+  }
+  .md-align-c,
+  .sm-align-c,
+  .md-align-c *,
+  .sm-align-c *,
+  .md-align-c *,
+  .sm-align-c *,
+  .md-align-c * *,
+  .sm-align-c * * {
+    text-align: center !important;
+  }
+  .md-align-l,
+  .sm-align-l,
+  .md-align-l *,
+  .sm-align-l *,
+  .md-align-l *,
+  .sm-align-l *,
+  .md-align-l * *,
+  .sm-align-l * * {
+    text-align: left !important;
+  }
+  .md-align-r,
+  .sm-align-r,
+  .md-align-r *,
+  .sm-align-r *,
+  .md-align-r *,
+  .sm-align-r *,
+  .md-align-r * *,
+  .sm-align-r * * {
+    text-align: right !important;
+  }
+}
+@media (max-width: 480px) {
+  .xs-full-w {
+    width: 100% !important;
+  }
+  .hidden-xs {
+    display: none !important;
+  }
+  .img-md-fluid,
+  .img-sm-fluid,
+  .img-xs-fluid {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .no-float-md,
+  .no-float-sm,
+  .no-float-xs {
+    float: none !important;
+  }
+  .clearfix-md,
+  .clearfix-sm,
+  .clearfix-xs {
+    clear: both !important;
+    display: block;
+  }
+  .md-align-c,
+  .sm-align-c,
+  .xs-align-c,
+  .md-align-c *,
+  .sm-align-c *,
+  .xs-align-c *,
+  .md-align-c *,
+  .sm-align-c *,
+  .xs-align-c *,
+  .md-align-c * *,
+  .sm-align-c * *,
+  .xs-align-c * * {
+    text-align: center !important;
+  }
+  .md-align-l,
+  .sm-align-l,
+  .xs-align-l,
+  .md-align-l *,
+  .sm-align-l *,
+  .xs-align-l *,
+  .md-align-l *,
+  .sm-align-l *,
+  .xs-align-l *,
+  .md-align-l * *,
+  .sm-align-l * *,
+  .xs-align-l * * {
+    text-align: left !important;
+  }
+  .md-align-r,
+  .sm-align-r,
+  .xs-align-r,
+  .md-align-r *,
+  .sm-align-r *,
+  .xs-align-r *,
+  .md-align-r *,
+  .sm-align-r *,
+  .xs-align-r *,
+  .md-align-r * *,
+  .sm-align-r * *,
+  .xs-align-r * * {
+    text-align: right !important;
+  }
+}
+@media (max-width: 1199px) {
+  .visible-lg {
+    display: none !important;
+  }
+  .clearfix-lg {
+    clear: both !important;
+    display: block;
+  }
+  .lg-align-c,
+  .lg-align-c *,
+  .lg-align-c *,
+  .lg-align-c * * {
+    text-align: center !important;
+  }
+  .lg-align-l,
+  .lg-align-l *,
+  .lg-align-l *,
+  .lg-align-l * * {
+    text-align: left !important;
+  }
+  .lg-align-r,
+  .lg-align-r *,
+  .lg-align-r *,
+  .lg-align-r * * {
+    text-align: right !important;
+  }
+}
+@media (max-width: 1679px) {
+  .visible-xl {
+    display: none !important;
+  }
+}
+@media (min-width: 1680px) {
+  .hidden-xl {
+    display: none !important;
+  }
+  .no-float-xl {
+    float: none !important;
+  }
+  .xl-align-c,
+  .xl-align-c *,
+  .xl-align-c *,
+  .xl-align-c * * {
+    text-align: center !important;
+  }
+  .xl-align-l,
+  .xl-align-l *,
+  .xl-align-l *,
+  .xl-align-l * * {
+    text-align: left !important;
+  }
+  .xl-align-r,
+  .xl-align-r *,
+  .xl-align-r *,
+  .xl-align-r * * {
+    text-align: right !important;
+  }
+}
+.ie .hidden-ie,
+.ie .hidden-light,
+.ie .visible-dark {
+  display: none !important;
+}
+[data-ui-theme="light"] .hidden-light,
+[data-ui-theme="light"] .visible-dark {
+  display: none !important;
+}
+[data-ui-theme="dark"] .visible-light,
+[data-ui-theme="dark"] .hidden-dark {
+  display: none !important;
+}
 /* borders */
 .border,
 .border-t,
@@ -3258,203 +3953,6 @@ html .row {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
   }
-}
-/* effects */
-[class*="ease-"],
-[class*="ease-1st-"] > *,
-[class*="ease-2nd-"] > * > * {
-  transition-duration: 0.15s;
-  transition-timing-function: ease-out;
-}
-.ease-fast,
-.ease-fast[class*="ease-1st-"] > *,
-.ease-fast[class*="ease-2nd-"] > * > * {
-  transition-duration: 0.1s;
-}
-.ease-slow,
-.ease-slow[class*="ease-1st-"] > *,
-.ease-slow[class*="ease-2nd-"] > * > * {
-  transition-duration: 0.4s;
-}
-.ease-slow-2x,
-.ease-slow-2x[class*="ease-1st-"] > *,
-.ease-slow-2x[class*="ease-2nd-"] > * > * {
-  transition-duration: 0.8s;
-}
-.ease-slow-3x,
-.ease-slow-3x[class*="ease-1st-"] > *,
-.ease-slow-3x[class*="ease-2nd-"] > * > * {
-  transition-duration: 1.2s;
-}
-.ease-slow-4x,
-.ease-slow-4x[class*="ease-1st-"] > *,
-.ease-slow-4x[class*="ease-2nd-"] > * > * {
-  transition-duration: 1.6s;
-}
-.ease-slow-5x,
-.ease-slow-5x[class*="ease-1st-"] > *,
-.ease-slow-5x[class*="ease-2nd-"] > * > * {
-  transition-duration: 2s;
-}
-.ease-color,
-.ease-1st-color > *,
-.ease-2nd-color > * > * {
-  transition-property: color;
-}
-.ease-width,
-.ease-1st-width > *,
-.ease-2nd-width > * > * {
-  transition-property: width;
-}
-.ease-height,
-.ease-1st-height > *,
-.ease-2nd-height > * > * {
-  transition-property: height;
-}
-.ease-bg,
-.ease-1st-bg > *,
-.ease-2nd-bg > * > * {
-  transition-property: background-color;
-}
-.ease-margin,
-.ease-1st-margin > *,
-.ease-2nd-margin > * > * {
-  transition-property: margin;
-}
-.ease-border,
-.ease-1st-border > *,
-.ease-2nd-border > * > * {
-  transition-property: border-color, border-width;
-}
-.ease-position,
-.ease-1st-position > *,
-.ease-2nd-position > * > * {
-  transition-property: top, right, bottom, left;
-}
-.ease-layout,
-.ease-1st-layout > *,
-.ease-2nd-layout > * > * {
-  transition-property: transform, opacity, box-shadow;
-}
-.ease-svg,
-.ease-1st-svg > *,
-.ease-2nd-svg > * > * {
-  transition-property: fill, stroke, opacity;
-}
-.ease-all {
-  transition-property: all;
-}
-.ease-default,
-.ease-default[class*="ease-1st-"] > *,
-.ease-default[class*="ease-2nd-"] > * > * {
-  transition-duration: ease-out !important;
-  transition-timing-function: ease !important;
-}
-.ease-in,
-.ease-in[class*="ease-1st-"] > *,
-.ease-in[class*="ease-2nd-"] > * > * {
-  transition-timing-function: in;
-}
-.ease-out,
-.ease-out[class*="ease-1st-"] > *,
-.ease-out[class*="ease-2nd-"] > * > * {
-  transition-timing-function: out;
-}
-.ease-in-out,
-.ease-in-out[class*="ease-1st-"] > *,
-.ease-in-out[class*="ease-2nd-"] > * > * {
-  transition-timing-function: in-out;
-}
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes progress {
-  from {
-    background-position: 40px 0;
-  }
-  to {
-    background-position: 0 0;
-  }
-}
-@keyframes bounce-x {
-  from {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-12%);
-  }
-  75% {
-    transform: translateX(12%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@keyframes bounce-y {
-  from {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(-12%);
-  }
-  75% {
-    transform: translateY(12%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-@keyframes bounce-z {
-  from {
-    transform: scale(1);
-  }
-  25% {
-    transform: scale(0.9);
-  }
-  75% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-.animate-spin {
-  animation: spin 1.15s linear infinite;
-}
-.animate-progress {
-  animation: progress 3s linear infinite;
-}
-.animate-bounce-x {
-  animation: bounce-x 6s linear infinite;
-}
-.animate-bounce-y {
-  animation: bounce-y 6s linear infinite;
-}
-.animate-bounce-z {
-  animation: bounce-z 6s linear infinite;
-}
-.no-effects,
-.no-effects:before,
-.no-effects:after,
-.no-effects *,
-.no-effects *:before,
-.no-effects *:after {
-  transition-property: none !important;
-  animation: none !important;
-}
-.pause-effects,
-.pause-effects:before,
-.pause-effects:after,
-.pause-effects *,
-.pause-effects *:before,
-.pause-effects *:after {
-  transition-property: none !important;
-  animation-play-state: paused !important;
 }
 /* typography */
 body,
@@ -6952,429 +7450,6 @@ header.sticky-static {
     left: 0;
   }
 }
-/* line charts */
-@keyframes line-draw {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes line-dashed-dotted {
-  to {
-    opacity: 1;
-  }
-}
-@keyframes line-filled {
-  to {
-    transform: translateY(0);
-    opacity: 0.15;
-  }
-}
-@keyframes line-circles {
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-.ease-line-charts circle {
-  transition-property: stroke-width;
-  transition-duration: 0.15s;
-}
-.line-charts {
-  -ms-user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-.line-charts .lines {
-  display: none !important;
-}
-.line-charts svg {
-  width: 100%;
-}
-.line-charts svg g {
-  display: block;
-}
-.line-charts svg path {
-  stroke-linecap: round;
-}
-.line-charts svg path:not(.dashed):not(.dotted):not(.filled) {
-  stroke-dashoffset: 3000;
-  stroke-dasharray: 3000;
-}
-.line-charts svg path:not([fill]) {
-  fill: transparent;
-}
-.line-charts svg path.dashed {
-  stroke-dasharray: 10 5;
-}
-.line-charts svg path.dotted {
-  stroke-dasharray: 1 5;
-}
-.no-effects .line-charts svg path:not(.dashed):not(.dotted):not(.filled),
-.ie .line-charts svg path:not(.dashed):not(.dotted):not(.filled) {
-  stroke-dashoffset: 0;
-}
-.no-effects .line-charts svg path.dashed,
-.ie .line-charts svg path.dashed,
-.no-effects .line-charts svg path.dotted,
-.ie .line-charts svg path.dotted {
-  opacity: 1;
-}
-.no-effects .line-charts svg path.filled,
-.ie .line-charts svg path.filled {
-  transform: translateY(0);
-  opacity: 0.15;
-}
-.line-charts svg line {
-  stroke: currentColor;
-}
-html:not(.firefox) .line-charts svg line {
-  shape-rendering: crispEdges;
-}
-.line-charts svg line.root-grid {
-  opacity: 0.35;
-}
-.line-charts svg line:not(.root-grid) {
-  stroke-width: 1;
-  opacity: 0.12;
-}
-.line-charts svg circle[onclick] {
-  cursor: pointer;
-}
-.desktop .line-charts svg circle:hover {
-  stroke-width: 4;
-}
-.no-effects .line-charts svg circle,
-.ie .line-charts svg circle {
-  transform: translateY(0);
-  opacity: 1;
-}
-.line-charts svg text {
-  fill: currentColor;
-  font-size: 12px;
-  opacity: 0.65;
-}
-.line-charts svg .x-grid {
-  text-anchor: middle;
-}
-.line-charts svg .y-grid {
-  text-anchor: end;
-}
-.line-charts.resized svg path.filled {
-  opacity: 0;
-}
-.line-charts.resized svg path.dashed,
-.line-charts.resized svg path.dotted {
-  stroke-dashoffset: 0;
-  opacity: 0;
-}
-html:not(.ie) .line-charts:not(.resized) svg path.dashed,
-html:not(.ie) .line-charts:not(.resized) svg path.dotted {
-  stroke-dashoffset: 0;
-  opacity: 0;
-}
-html:not(.ie) .line-charts:not(.resized) svg path.filled {
-  transform: translateY(15px);
-  opacity: 0;
-}
-html:not(.ie) .line-charts:not(.resized) svg circle {
-  transform: translateY(30px);
-  opacity: 0;
-}
-html:not(.ie) .line-charts.loaded svg path:not(.dashed):not(.dotted):not(.filled) {
-  animation: line-draw 2s 0.6s ease-in forwards;
-}
-html:not(.ie) .line-charts.loaded svg path.dashed,
-html:not(.ie) .line-charts.loaded svg path.dotted {
-  animation: line-dashed-dotted 1s 0.6s ease-in forwards;
-}
-html:not(.ie) .line-charts.loaded svg path.filled {
-  animation: line-filled 0.6s forwards;
-}
-html:not(.ie) .line-charts.loaded svg circle {
-  animation: line-circles 0.6s forwards;
-}
-.line-charts .chart-info {
-  list-style: none;
-  text-align: center;
-  display: block;
-}
-.line-charts .chart-info li {
-  margin: 0 5px 3px 5px;
-  display: inline-block;
-}
-.line-charts .chart-info li span {
-  vertical-align: middle;
-  width: 13px;
-  height: 13px;
-  margin: -3px 5px 0 0;
-  display: inline-block;
-  border-radius: 50%;
-}
-/* donut chart */
-@keyframes donut-draw {
-  to {
-    stroke-dasharray: 0 440;
-  }
-}
-.ease-donut-chart circle:not(.bg) {
-  transition-property: opacity stroke;
-  transition-duration: 0.15s;
-  transition-timing-function: ease-in-out;
-}
-.donut-chart {
-  text-align: left !important;
-  display: block;
-  position: relative;
-  -ms-user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-.donut-chart strong {
-  text-align: center;
-  font-size: 14px;
-  line-height: 14px;
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  z-index: 1;
-  transform: translateY(-50%);
-}
-.donut-chart svg:not(.icon) {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-html:not(.edge) .donut-chart svg:not(.icon) {
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-}
-.edge .donut-chart svg:not(.icon) {
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-.donut-chart circle {
-  fill: none;
-  stroke-width: 10;
-}
-.donut-chart circle.loaded:not(.bg) {
-  animation: donut-draw 1.6s ease-in reverse;
-}
-.donut-chart circle.selected {
-  stroke-width: 16;
-  transition-duration: 0.15s;
-}
-.donut-chart circle.bg {
-  stroke: currentColor;
-  stroke-width: 6;
-  stroke-dashoffset: 0;
-  opacity: 0.05;
-}
-.donut-chart:not(.multiple) circle {
-  stroke-linecap: round;
-}
-/* pie chart */
-@keyframes pie-spin-l {
-  0% {
-    opacity: 0;
-  }
-  49% {
-    opacity: 0;
-  }
-  50% {
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-}
-@keyframes pie-spin-r {
-  0% {
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-}
-.ease-pie-chart li,
-.ease-pie-chart > div span {
-  transition-property: opacity;
-  transition-duration: 0.3s;
-}
-.pie-chart {
-  position: relative;
-  -ms-user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-.pie-chart[data-ui-text]:before {
-  content: attr(data-ui-text);
-  color: hsl(0, 0%, 0%);
-  font-weight: 700;
-  font-size: 14px;
-  text-align: center;
-  line-height: 14px;
-  min-width: 18px;
-  min-height: 18px;
-  background: hsl(0, 0%, 100%);
-  padding: 4px 8px;
-  display: inline-block;
-  border-radius: 1000px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 2;
-  transform: translate(-50%, -50%);
-}
-.pie-chart > div span {
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  left: 50%;
-  z-index: 1;
-  transform-origin: left top;
-}
-.pie-chart > div span i {
-  color: hsla(0, 0%, 0%, 0.5);
-  font-size: 11px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 11px;
-  background: hsl(0, 0%, 100%);
-  padding: 2px 4px;
-  margin-right: 5px;
-  border-radius: 1000px;
-  float: right;
-}
-.pie-chart:not(.open-ease) > div span {
-  opacity: 0;
-}
-.pie-chart ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  display: block;
-  border-radius: 50%;
-  position: relative;
-}
-.pie-chart ul:after {
-  content: "";
-  background-color: currentColor;
-  display: block;
-  border-radius: 50%;
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  bottom: 5px;
-  left: 5px;
-  opacity: 0.05;
-}
-.pie-chart li {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  z-index: 1;
-}
-.pie-chart li:first-child {
-  position: relative;
-}
-.pie-chart li:not(:first-child) {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.pie-chart li span {
-  width: 50%;
-  height: 100%;
-  display: block;
-  position: absolute;
-  top: 0;
-}
-.pie-chart li span b {
-  background-color: currentColor;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-.pie-chart li .pie-l {
-  left: 0;
-}
-.pie-chart li .pie-l b {
-  left: 100%;
-  border-radius: 0 1000px 1000px 0;
-  -ms-transform-origin: left;
-  transform-origin: left;
-}
-.pie-chart li .pie-r {
-  overflow: hidden;
-  left: 50%;
-}
-.pie-chart li .pie-r b {
-  left: -100%;
-  border-radius: 1000px 0 0 1000px;
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-  -ms-transform-origin: right;
-  transform-origin: right;
-}
-.pie-chart:not(.open) li {
-  opacity: 0;
-}
-.pie-chart.open li .pie-l b {
-  animation: pie-spin-l 1.6s ease-out forwards;
-}
-.pie-chart.open li .pie-l + .pie-r b {
-  animation: pie-spin-r 0.8s ease-in forwards;
-}
-.pie-chart.open li .pie-r b {
-  animation: pie-spin-r 1.6s ease-in forwards;
-}
-/* svg map */
-.svg-map {
-  position: relative;
-}
-.svg-map svg {
-  width: 100%;
-  height: auto;
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
-}
-html:not(.ie) .svg-map svg {
-  height: auto;
-}
-.ie .svg-map svg {
-  height: 360px;
-}
-.svg-map svg path {
-  stroke-width: 1.5;
-}
-.svg-map svg path:not([fill]) {
-  fill: hsla(0, 0%, 0%, 0.08);
-  fill: var(--svg-map-path-fill);
-}
-.svg-map svg path:not([fill]):hover {
-  fill: hsla(0, 0%, 0%, 0.15);
-  fill: var(--svg-map-path-fill-hover);
-}
-.svg-map svg path:not([stroke]) {
-  stroke: hsl(0, 0%, 98%);
-  stroke: var(--body-bg);
-}
-.card .svg-map svg path:not([stroke]) {
-  stroke: hsl(0, 0%, 100%);
-  stroke: var(--card-bg);
-}
-.svg-map svg path.active:not([fill]) {
-  fill: currentColor;
-}
-.svg-map svg path.active:hover {
-  opacity: 1 !important;
-}
-.svg-map svg path[data-ui-href] {
-  cursor: pointer;
-}
 /* mobile menu */
 .mobile-menu {
   width: 100%;
@@ -9753,504 +9828,426 @@ button.dialog-custom:focus {
 .weather:not(.night) .graphs .shooting-star {
   display: none;
 }
-/* themes */
-[class*="ui-fill-light-"],
-[class*="ui-fill-light-"] .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-[class*="ui-fill-light-"] a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-[class*="ui-fill-light-"] button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
+/* line charts */
+@keyframes line-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes line-dashed-dotted {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes line-filled {
+  to {
+    transform: translateY(0);
+    opacity: 0.15;
+  }
+}
+@keyframes line-circles {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.ease-line-charts circle {
+  transition-property: stroke-width;
+  transition-duration: 0.15s;
+}
+.line-charts {
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.line-charts .lines {
+  display: none !important;
+}
+.line-charts svg {
+  width: 100%;
+}
+.line-charts svg g {
+  display: block;
+}
+.line-charts svg path {
+  stroke-linecap: round;
+}
+.line-charts svg path:not(.dashed):not(.dotted):not(.filled) {
+  stroke-dashoffset: 3000;
+  stroke-dasharray: 3000;
+}
+.line-charts svg path:not([fill]) {
+  fill: transparent;
+}
+.line-charts svg path.dashed {
+  stroke-dasharray: 10 5;
+}
+.line-charts svg path.dotted {
+  stroke-dasharray: 1 5;
+}
+.no-effects .line-charts svg path:not(.dashed):not(.dotted):not(.filled),
+.ie .line-charts svg path:not(.dashed):not(.dotted):not(.filled) {
+  stroke-dashoffset: 0;
+}
+.no-effects .line-charts svg path.dashed,
+.ie .line-charts svg path.dashed,
+.no-effects .line-charts svg path.dotted,
+.ie .line-charts svg path.dotted {
+  opacity: 1;
+}
+.no-effects .line-charts svg path.filled,
+.ie .line-charts svg path.filled {
+  transform: translateY(0);
+  opacity: 0.15;
+}
+.line-charts svg line {
+  stroke: currentColor;
+}
+html:not(.firefox) .line-charts svg line {
+  shape-rendering: crispEdges;
+}
+.line-charts svg line.root-grid {
+  opacity: 0.35;
+}
+.line-charts svg line:not(.root-grid) {
+  stroke-width: 1;
+  opacity: 0.12;
+}
+.line-charts svg circle[onclick] {
+  cursor: pointer;
+}
+.desktop .line-charts svg circle:hover {
+  stroke-width: 4;
+}
+.no-effects .line-charts svg circle,
+.ie .line-charts svg circle {
+  transform: translateY(0);
+  opacity: 1;
+}
+.line-charts svg text {
+  fill: currentColor;
+  font-size: 12px;
+  opacity: 0.65;
+}
+.line-charts svg .x-grid {
+  text-anchor: middle;
+}
+.line-charts svg .y-grid {
+  text-anchor: end;
+}
+.line-charts.resized svg path.filled {
+  opacity: 0;
+}
+.line-charts.resized svg path.dashed,
+.line-charts.resized svg path.dotted {
+  stroke-dashoffset: 0;
+  opacity: 0;
+}
+html:not(.ie) .line-charts:not(.resized) svg path.dashed,
+html:not(.ie) .line-charts:not(.resized) svg path.dotted {
+  stroke-dashoffset: 0;
+  opacity: 0;
+}
+html:not(.ie) .line-charts:not(.resized) svg path.filled {
+  transform: translateY(15px);
+  opacity: 0;
+}
+html:not(.ie) .line-charts:not(.resized) svg circle {
+  transform: translateY(30px);
+  opacity: 0;
+}
+html:not(.ie) .line-charts.loaded svg path:not(.dashed):not(.dotted):not(.filled) {
+  animation: line-draw 2s 0.6s ease-in forwards;
+}
+html:not(.ie) .line-charts.loaded svg path.dashed,
+html:not(.ie) .line-charts.loaded svg path.dotted {
+  animation: line-dashed-dotted 1s 0.6s ease-in forwards;
+}
+html:not(.ie) .line-charts.loaded svg path.filled {
+  animation: line-filled 0.6s forwards;
+}
+html:not(.ie) .line-charts.loaded svg circle {
+  animation: line-circles 0.6s forwards;
+}
+.line-charts .chart-info {
+  list-style: none;
+  text-align: center;
+  display: block;
+}
+.line-charts .chart-info li {
+  margin: 0 5px 3px 5px;
+  display: inline-block;
+}
+.line-charts .chart-info li span {
+  vertical-align: middle;
+  width: 13px;
+  height: 13px;
+  margin: -3px 5px 0 0;
+  display: inline-block;
+  border-radius: 50%;
+}
+/* donut chart */
+@keyframes donut-draw {
+  to {
+    stroke-dasharray: 0 440;
+  }
+}
+.ease-donut-chart circle:not(.bg) {
+  transition-property: opacity stroke;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+}
+.donut-chart {
+  text-align: left !important;
+  display: block;
+  position: relative;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.donut-chart strong {
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+.donut-chart svg:not(.icon) {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+html:not(.edge) .donut-chart svg:not(.icon) {
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.edge .donut-chart svg:not(.icon) {
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.donut-chart circle {
+  fill: none;
+  stroke-width: 10;
+}
+.donut-chart circle.loaded:not(.bg) {
+  animation: donut-draw 1.6s ease-in reverse;
+}
+.donut-chart circle.selected {
+  stroke-width: 16;
+  transition-duration: 0.15s;
+}
+.donut-chart circle.bg {
+  stroke: currentColor;
+  stroke-width: 6;
+  stroke-dashoffset: 0;
+  opacity: 0.05;
+}
+.donut-chart:not(.multiple) circle {
+  stroke-linecap: round;
+}
+/* pie chart */
+@keyframes pie-spin-l {
+  0% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes pie-spin-r {
+  0% {
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+.ease-pie-chart li,
+.ease-pie-chart > div span {
+  transition-property: opacity;
+  transition-duration: 0.3s;
+}
+.pie-chart {
+  position: relative;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.pie-chart[data-ui-text]:before {
+  content: attr(data-ui-text);
   color: hsl(0, 0%, 0%);
-  color: var(--black);
-}
-[class*="ui-fill-dark-"],
-[class*="ui-fill-dark-"] .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-[class*="ui-fill-dark-"] a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-[class*="ui-fill-dark-"] button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
-  color: hsl(0, 0%, 100%);
-}
-.bg-white:not([class*="ui-fill-"]) {
-  background-color: hsl(0, 0%, 100%) !important;
-  background-color: var(--white) !important;
-}
-.card .bg-white:not([class*="ui-fill-"]) {
-  background-color: hsl(0, 0%, 100%) !important;
-  background-color: var(--card-bg) !important;
-}
-.bg-black:not([class*="ui-fill-"]) {
-  background-color: hsl(0, 0%, 0%) !important;
-}
-.theme-gray.ui-fill-light-100,
-.theme-gray .ui-fill-light-100:not([class*="theme-"]) {
-  background-color: hsla(0, 0%, 80%, 0.15);
-}
-.theme-gray.ui-fill-light-200,
-.theme-gray .ui-fill-light-200:not([class*="theme-"]) {
-  background-color: hsla(0, 0%, 85%, 0.25);
-}
-.theme-gray.ui-fill-light-300,
-.theme-gray .ui-fill-light-300:not([class*="theme-"]) {
-  background-color: hsla(0, 0%, 90%, 0.35);
-}
-.theme-gray.ui-fill-dark-100,
-.theme-gray .ui-fill-dark-100:not([class*="theme-"]) {
-  background-color: hsl(0, 0%, 70%);
-}
-.theme-gray.ui-fill-dark-200,
-.theme-gray .ui-fill-dark-200:not([class*="theme-"]) {
-  background-color: hsl(0, 0%, 55%);
-}
-.theme-gray.ui-fill-dark-300,
-.theme-gray .ui-fill-dark-300:not([class*="theme-"]) {
-  background-color: hsl(0, 0%, 45%);
-}
-.desktop .theme-gray.ui-fill-light-100.hover:hover,
-.desktop .theme-gray .ui-fill-light-100:not([class*="theme-"]).hover:hover,
-.desktop .theme-gray.ui-fill-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-gray .ui-fill-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(0, 0%, 80%, 0.3);
-}
-.desktop .theme-gray.ui-fill-light-200.hover:hover,
-.desktop .theme-gray .ui-fill-light-200:not([class*="theme-"]).hover:hover,
-.desktop .theme-gray.ui-fill-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-gray .ui-fill-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(0, 0%, 85%, 0.5);
-}
-.desktop .theme-gray.ui-fill-light-300.hover:hover,
-.desktop .theme-gray .ui-fill-light-300:not([class*="theme-"]).hover:hover,
-.desktop .theme-gray.ui-fill-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-gray .ui-fill-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(0, 0%, 90%, 0.7);
-}
-.desktop .theme-gray.ui-fill-dark-100.hover:hover,
-.desktop .theme-gray .ui-fill-dark-100:not([class*="theme-"]).hover:hover,
-.desktop .theme-gray.ui-fill-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-gray .ui-fill-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(0, 0%, 85%);
-}
-.desktop .theme-gray.ui-fill-dark-200.hover:hover,
-.desktop .theme-gray .ui-fill-dark-200:not([class*="theme-"]).hover:hover,
-.desktop .theme-gray.ui-fill-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-gray .ui-fill-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(0, 0%, 90%);
-}
-.desktop .theme-gray.ui-fill-dark-300.hover:hover,
-.desktop .theme-gray .ui-fill-dark-300:not([class*="theme-"]).hover:hover,
-.desktop .theme-gray.ui-fill-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-gray .ui-fill-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(0, 0%, 95%);
-}
-.theme-gray.ui-color,
-.theme-gray .ui-color:not([class*="theme-"]) {
-  color: hsl(0, 0%, 70%);
-}
-.theme-gray.ui-stroke,
-.theme-gray .ui-stroke:not([class*="theme-"]) {
-  border-color: hsl(0, 0%, 70%);
-}
-.theme-green.ui-fill-light-100,
-.theme-green .ui-fill-light-100:not([class*="theme-"]) {
-  background-color: hsla(142, 82%, 52%, 0.15);
-}
-.theme-green.ui-fill-light-200,
-.theme-green .ui-fill-light-200:not([class*="theme-"]) {
-  background-color: hsla(142, 82%, 57%, 0.25);
-}
-.theme-green.ui-fill-light-300,
-.theme-green .ui-fill-light-300:not([class*="theme-"]) {
-  background-color: hsla(142, 82%, 62%, 0.35);
-}
-.theme-green.ui-fill-dark-100,
-.theme-green .ui-fill-dark-100:not([class*="theme-"]) {
-  background-color: hsl(142, 82%, 42%);
-}
-.theme-green.ui-fill-dark-200,
-.theme-green .ui-fill-dark-200:not([class*="theme-"]) {
-  background-color: hsl(142, 82%, 27%);
-}
-.theme-green.ui-fill-dark-300,
-.theme-green .ui-fill-dark-300:not([class*="theme-"]) {
-  background-color: hsl(142, 82%, 17%);
-}
-.desktop .theme-green.ui-fill-light-100.hover:hover,
-.desktop .theme-green .ui-fill-light-100:not([class*="theme-"]).hover:hover,
-.desktop .theme-green.ui-fill-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-green .ui-fill-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(142, 82%, 52%, 0.3);
-}
-.desktop .theme-green.ui-fill-light-200.hover:hover,
-.desktop .theme-green .ui-fill-light-200:not([class*="theme-"]).hover:hover,
-.desktop .theme-green.ui-fill-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-green .ui-fill-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(142, 82%, 57%, 0.5);
-}
-.desktop .theme-green.ui-fill-light-300.hover:hover,
-.desktop .theme-green .ui-fill-light-300:not([class*="theme-"]).hover:hover,
-.desktop .theme-green.ui-fill-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-green .ui-fill-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(142, 82%, 62%, 0.7);
-}
-.desktop .theme-green.ui-fill-dark-100.hover:hover,
-.desktop .theme-green .ui-fill-dark-100:not([class*="theme-"]).hover:hover,
-.desktop .theme-green.ui-fill-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-green .ui-fill-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(142, 82%, 57%);
-}
-.desktop .theme-green.ui-fill-dark-200.hover:hover,
-.desktop .theme-green .ui-fill-dark-200:not([class*="theme-"]).hover:hover,
-.desktop .theme-green.ui-fill-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-green .ui-fill-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(142, 82%, 62%);
-}
-.desktop .theme-green.ui-fill-dark-300.hover:hover,
-.desktop .theme-green .ui-fill-dark-300:not([class*="theme-"]).hover:hover,
-.desktop .theme-green.ui-fill-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-green .ui-fill-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(142, 82%, 67%);
-}
-.theme-green.ui-color,
-.theme-green .ui-color:not([class*="theme-"]) {
-  color: hsl(142, 82%, 42%);
-}
-.theme-green.ui-stroke,
-.theme-green .ui-stroke:not([class*="theme-"]) {
-  border-color: hsl(142, 82%, 42%);
-}
-.theme-yellow.ui-fill-light-100,
-.theme-yellow .ui-fill-light-100:not([class*="theme-"]) {
-  background-color: hsla(42, 100%, 55%, 0.15);
-}
-.theme-yellow.ui-fill-light-200,
-.theme-yellow .ui-fill-light-200:not([class*="theme-"]) {
-  background-color: hsla(42, 100%, 60%, 0.25);
-}
-.theme-yellow.ui-fill-light-300,
-.theme-yellow .ui-fill-light-300:not([class*="theme-"]) {
-  background-color: hsla(42, 100%, 65%, 0.35);
-}
-.theme-yellow.ui-fill-dark-100,
-.theme-yellow .ui-fill-dark-100:not([class*="theme-"]) {
-  background-color: hsl(42, 100%, 45%);
-}
-.theme-yellow.ui-fill-dark-200,
-.theme-yellow .ui-fill-dark-200:not([class*="theme-"]) {
-  background-color: hsl(42, 100%, 30%);
-}
-.theme-yellow.ui-fill-dark-300,
-.theme-yellow .ui-fill-dark-300:not([class*="theme-"]) {
-  background-color: hsl(42, 100%, 20%);
-}
-.desktop .theme-yellow.ui-fill-light-100.hover:hover,
-.desktop .theme-yellow .ui-fill-light-100:not([class*="theme-"]).hover:hover,
-.desktop .theme-yellow.ui-fill-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-yellow .ui-fill-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(42, 100%, 55%, 0.3);
-}
-.desktop .theme-yellow.ui-fill-light-200.hover:hover,
-.desktop .theme-yellow .ui-fill-light-200:not([class*="theme-"]).hover:hover,
-.desktop .theme-yellow.ui-fill-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-yellow .ui-fill-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(42, 100%, 60%, 0.5);
-}
-.desktop .theme-yellow.ui-fill-light-300.hover:hover,
-.desktop .theme-yellow .ui-fill-light-300:not([class*="theme-"]).hover:hover,
-.desktop .theme-yellow.ui-fill-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-yellow .ui-fill-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(42, 100%, 65%, 0.7);
-}
-.desktop .theme-yellow.ui-fill-dark-100.hover:hover,
-.desktop .theme-yellow .ui-fill-dark-100:not([class*="theme-"]).hover:hover,
-.desktop .theme-yellow.ui-fill-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-yellow .ui-fill-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(42, 100%, 60%);
-}
-.desktop .theme-yellow.ui-fill-dark-200.hover:hover,
-.desktop .theme-yellow .ui-fill-dark-200:not([class*="theme-"]).hover:hover,
-.desktop .theme-yellow.ui-fill-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-yellow .ui-fill-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(42, 100%, 65%);
-}
-.desktop .theme-yellow.ui-fill-dark-300.hover:hover,
-.desktop .theme-yellow .ui-fill-dark-300:not([class*="theme-"]).hover:hover,
-.desktop .theme-yellow.ui-fill-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-yellow .ui-fill-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(42, 100%, 70%);
-}
-.theme-yellow.ui-color,
-.theme-yellow .ui-color:not([class*="theme-"]) {
-  color: hsl(42, 100%, 45%);
-}
-.theme-yellow.ui-stroke,
-.theme-yellow .ui-stroke:not([class*="theme-"]) {
-  border-color: hsl(42, 100%, 45%);
-}
-.theme-orange.ui-fill-light-100,
-.theme-orange .ui-fill-light-100:not([class*="theme-"]) {
-  background-color: hsla(30, 100%, 60%, 0.15);
-}
-.theme-orange.ui-fill-light-200,
-.theme-orange .ui-fill-light-200:not([class*="theme-"]) {
-  background-color: hsla(30, 100%, 65%, 0.25);
-}
-.theme-orange.ui-fill-light-300,
-.theme-orange .ui-fill-light-300:not([class*="theme-"]) {
-  background-color: hsla(30, 100%, 70%, 0.35);
-}
-.theme-orange.ui-fill-dark-100,
-.theme-orange .ui-fill-dark-100:not([class*="theme-"]) {
-  background-color: hsl(30, 100%, 50%);
-}
-.theme-orange.ui-fill-dark-200,
-.theme-orange .ui-fill-dark-200:not([class*="theme-"]) {
-  background-color: hsl(30, 100%, 35%);
-}
-.theme-orange.ui-fill-dark-300,
-.theme-orange .ui-fill-dark-300:not([class*="theme-"]) {
-  background-color: hsl(30, 100%, 25%);
-}
-.desktop .theme-orange.ui-fill-light-100.hover:hover,
-.desktop .theme-orange .ui-fill-light-100:not([class*="theme-"]).hover:hover,
-.desktop .theme-orange.ui-fill-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-orange .ui-fill-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(30, 100%, 60%, 0.3);
-}
-.desktop .theme-orange.ui-fill-light-200.hover:hover,
-.desktop .theme-orange .ui-fill-light-200:not([class*="theme-"]).hover:hover,
-.desktop .theme-orange.ui-fill-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-orange .ui-fill-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(30, 100%, 65%, 0.5);
-}
-.desktop .theme-orange.ui-fill-light-300.hover:hover,
-.desktop .theme-orange .ui-fill-light-300:not([class*="theme-"]).hover:hover,
-.desktop .theme-orange.ui-fill-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-orange .ui-fill-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(30, 100%, 70%, 0.7);
-}
-.desktop .theme-orange.ui-fill-dark-100.hover:hover,
-.desktop .theme-orange .ui-fill-dark-100:not([class*="theme-"]).hover:hover,
-.desktop .theme-orange.ui-fill-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-orange .ui-fill-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(30, 100%, 65%);
-}
-.desktop .theme-orange.ui-fill-dark-200.hover:hover,
-.desktop .theme-orange .ui-fill-dark-200:not([class*="theme-"]).hover:hover,
-.desktop .theme-orange.ui-fill-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-orange .ui-fill-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(30, 100%, 70%);
-}
-.desktop .theme-orange.ui-fill-dark-300.hover:hover,
-.desktop .theme-orange .ui-fill-dark-300:not([class*="theme-"]).hover:hover,
-.desktop .theme-orange.ui-fill-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-orange .ui-fill-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(30, 100%, 75%);
-}
-.theme-orange.ui-color,
-.theme-orange .ui-color:not([class*="theme-"]) {
-  color: hsl(30, 100%, 50%);
-}
-.theme-orange.ui-stroke,
-.theme-orange .ui-stroke:not([class*="theme-"]) {
-  border-color: hsl(30, 100%, 50%);
-}
-.theme-red.ui-fill-light-100,
-.theme-red .ui-fill-light-100:not([class*="theme-"]) {
-  background-color: hsla(0, 74%, 65%, 0.15);
-}
-.theme-red.ui-fill-light-200,
-.theme-red .ui-fill-light-200:not([class*="theme-"]) {
-  background-color: hsla(0, 74%, 70%, 0.25);
-}
-.theme-red.ui-fill-light-300,
-.theme-red .ui-fill-light-300:not([class*="theme-"]) {
-  background-color: hsla(0, 74%, 75%, 0.35);
-}
-.theme-red.ui-fill-dark-100,
-.theme-red .ui-fill-dark-100:not([class*="theme-"]) {
-  background-color: hsl(0, 74%, 55%);
-}
-.theme-red.ui-fill-dark-200,
-.theme-red .ui-fill-dark-200:not([class*="theme-"]) {
-  background-color: hsl(0, 74%, 40%);
-}
-.theme-red.ui-fill-dark-300,
-.theme-red .ui-fill-dark-300:not([class*="theme-"]) {
-  background-color: hsl(0, 74%, 30%);
-}
-.desktop .theme-red.ui-fill-light-100.hover:hover,
-.desktop .theme-red .ui-fill-light-100:not([class*="theme-"]).hover:hover,
-.desktop .theme-red.ui-fill-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-red .ui-fill-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(0, 74%, 65%, 0.3);
-}
-.desktop .theme-red.ui-fill-light-200.hover:hover,
-.desktop .theme-red .ui-fill-light-200:not([class*="theme-"]).hover:hover,
-.desktop .theme-red.ui-fill-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-red .ui-fill-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(0, 74%, 70%, 0.5);
-}
-.desktop .theme-red.ui-fill-light-300.hover:hover,
-.desktop .theme-red .ui-fill-light-300:not([class*="theme-"]).hover:hover,
-.desktop .theme-red.ui-fill-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-red .ui-fill-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(0, 74%, 75%, 0.7);
-}
-.desktop .theme-red.ui-fill-dark-100.hover:hover,
-.desktop .theme-red .ui-fill-dark-100:not([class*="theme-"]).hover:hover,
-.desktop .theme-red.ui-fill-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-red .ui-fill-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(0, 74%, 70%);
-}
-.desktop .theme-red.ui-fill-dark-200.hover:hover,
-.desktop .theme-red .ui-fill-dark-200:not([class*="theme-"]).hover:hover,
-.desktop .theme-red.ui-fill-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-red .ui-fill-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(0, 74%, 75%);
-}
-.desktop .theme-red.ui-fill-dark-300.hover:hover,
-.desktop .theme-red .ui-fill-dark-300:not([class*="theme-"]).hover:hover,
-.desktop .theme-red.ui-fill-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-red .ui-fill-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(0, 74%, 80%);
-}
-.theme-red.ui-color,
-.theme-red .ui-color:not([class*="theme-"]) {
-  color: hsl(0, 74%, 55%);
-}
-.theme-red.ui-stroke,
-.theme-red .ui-stroke:not([class*="theme-"]) {
-  border-color: hsl(0, 74%, 55%);
-}
-.theme-default.ui-fill-light-100,
-.theme-default .ui-fill-light-100:not([class*="theme-"]) {
-  background-color: hsla(226, 52%, 60%, 0.15);
-}
-.theme-default.ui-fill-light-200,
-.theme-default .ui-fill-light-200:not([class*="theme-"]) {
-  background-color: hsla(226, 52%, 65%, 0.25);
-}
-.theme-default.ui-fill-light-300,
-.theme-default .ui-fill-light-300:not([class*="theme-"]) {
-  background-color: hsla(226, 52%, 70%, 0.35);
-}
-.theme-default.ui-fill-dark-100,
-.theme-default .ui-fill-dark-100:not([class*="theme-"]) {
-  background-color: hsl(226, 52%, 50%);
-}
-.theme-default.ui-fill-dark-200,
-.theme-default .ui-fill-dark-200:not([class*="theme-"]) {
-  background-color: hsl(226, 52%, 35%);
-}
-.theme-default.ui-fill-dark-300,
-.theme-default .ui-fill-dark-300:not([class*="theme-"]) {
-  background-color: hsl(226, 52%, 25%);
-}
-.desktop .theme-default.ui-fill-light-100.hover:hover,
-.desktop .theme-default .ui-fill-light-100:not([class*="theme-"]).hover:hover,
-.desktop .theme-default.ui-fill-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-default .ui-fill-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(226, 52%, 60%, 0.3);
-}
-.desktop .theme-default.ui-fill-light-200.hover:hover,
-.desktop .theme-default .ui-fill-light-200:not([class*="theme-"]).hover:hover,
-.desktop .theme-default.ui-fill-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-default .ui-fill-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(226, 52%, 65%, 0.5);
-}
-.desktop .theme-default.ui-fill-light-300.hover:hover,
-.desktop .theme-default .ui-fill-light-300:not([class*="theme-"]).hover:hover,
-.desktop .theme-default.ui-fill-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-default .ui-fill-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(226, 52%, 70%, 0.7);
-}
-.desktop .theme-default.ui-fill-dark-100.hover:hover,
-.desktop .theme-default .ui-fill-dark-100:not([class*="theme-"]).hover:hover,
-.desktop .theme-default.ui-fill-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-default .ui-fill-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(226, 52%, 65%);
-}
-.desktop .theme-default.ui-fill-dark-200.hover:hover,
-.desktop .theme-default .ui-fill-dark-200:not([class*="theme-"]).hover:hover,
-.desktop .theme-default.ui-fill-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-default .ui-fill-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(226, 52%, 70%);
-}
-.desktop .theme-default.ui-fill-dark-300.hover:hover,
-.desktop .theme-default .ui-fill-dark-300:not([class*="theme-"]).hover:hover,
-.desktop .theme-default.ui-fill-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-default .ui-fill-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(226, 52%, 75%);
-}
-.theme-default.ui-color,
-.theme-default .ui-color:not([class*="theme-"]) {
-  color: hsl(226, 52%, 50%);
-}
-.theme-default.ui-stroke,
-.theme-default .ui-stroke:not([class*="theme-"]) {
-  border-color: hsl(226, 52%, 50%);
-}
-.theme-default2.ui-fill-light-100,
-.theme-default2 .ui-fill-light-100:not([class*="theme-"]) {
-  background-color: hsla(206, 87%, 60%, 0.15);
-}
-.theme-default2.ui-fill-light-200,
-.theme-default2 .ui-fill-light-200:not([class*="theme-"]) {
-  background-color: hsla(206, 87%, 65%, 0.25);
-}
-.theme-default2.ui-fill-light-300,
-.theme-default2 .ui-fill-light-300:not([class*="theme-"]) {
-  background-color: hsla(206, 87%, 70%, 0.35);
-}
-.theme-default2.ui-fill-dark-100,
-.theme-default2 .ui-fill-dark-100:not([class*="theme-"]) {
-  background-color: hsl(206, 87%, 50%);
-}
-.theme-default2.ui-fill-dark-200,
-.theme-default2 .ui-fill-dark-200:not([class*="theme-"]) {
-  background-color: hsl(206, 87%, 35%);
-}
-.theme-default2.ui-fill-dark-300,
-.theme-default2 .ui-fill-dark-300:not([class*="theme-"]) {
-  background-color: hsl(206, 87%, 25%);
-}
-.desktop .theme-default2.ui-fill-light-100.hover:hover,
-.desktop .theme-default2 .ui-fill-light-100:not([class*="theme-"]).hover:hover,
-.desktop .theme-default2.ui-fill-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-default2 .ui-fill-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(206, 87%, 60%, 0.3);
-}
-.desktop .theme-default2.ui-fill-light-200.hover:hover,
-.desktop .theme-default2 .ui-fill-light-200:not([class*="theme-"]).hover:hover,
-.desktop .theme-default2.ui-fill-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-default2 .ui-fill-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(206, 87%, 65%, 0.5);
-}
-.desktop .theme-default2.ui-fill-light-300.hover:hover,
-.desktop .theme-default2 .ui-fill-light-300:not([class*="theme-"]).hover:hover,
-.desktop .theme-default2.ui-fill-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-default2 .ui-fill-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsla(206, 87%, 70%, 0.7);
-}
-.desktop .theme-default2.ui-fill-dark-100.hover:hover,
-.desktop .theme-default2 .ui-fill-dark-100:not([class*="theme-"]).hover:hover,
-.desktop .theme-default2.ui-fill-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-default2 .ui-fill-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(206, 87%, 65%);
-}
-.desktop .theme-default2.ui-fill-dark-200.hover:hover,
-.desktop .theme-default2 .ui-fill-dark-200:not([class*="theme-"]).hover:hover,
-.desktop .theme-default2.ui-fill-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-default2 .ui-fill-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(206, 87%, 70%);
-}
-.desktop .theme-default2.ui-fill-dark-300.hover:hover,
-.desktop .theme-default2 .ui-fill-dark-300:not([class*="theme-"]).hover:hover,
-.desktop .theme-default2.ui-fill-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-default2 .ui-fill-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
-  background-color: hsl(206, 87%, 75%);
-}
-.theme-default2.ui-color,
-.theme-default2 .ui-color:not([class*="theme-"]) {
-  color: hsl(206, 87%, 50%);
-}
-.theme-default2.ui-stroke,
-.theme-default2 .ui-stroke:not([class*="theme-"]) {
-  border-color: hsl(206, 87%, 50%);
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  line-height: 14px;
+  min-width: 18px;
+  min-height: 18px;
+  background: hsl(0, 0%, 100%);
+  padding: 4px 8px;
+  display: inline-block;
+  border-radius: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+}
+.pie-chart > div span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 50%;
+  z-index: 1;
+  transform-origin: left top;
+}
+.pie-chart > div span i {
+  color: hsla(0, 0%, 0%, 0.5);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 11px;
+  background: hsl(0, 0%, 100%);
+  padding: 2px 4px;
+  margin-right: 5px;
+  border-radius: 1000px;
+  float: right;
+}
+.pie-chart:not(.open-ease) > div span {
+  opacity: 0;
+}
+.pie-chart ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+}
+.pie-chart ul:after {
+  content: "";
+  background-color: currentColor;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  left: 5px;
+  opacity: 0.05;
+}
+.pie-chart li {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: 1;
+}
+.pie-chart li:first-child {
+  position: relative;
+}
+.pie-chart li:not(:first-child) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.pie-chart li span {
+  width: 50%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+}
+.pie-chart li span b {
+  background-color: currentColor;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.pie-chart li .pie-l {
+  left: 0;
+}
+.pie-chart li .pie-l b {
+  left: 100%;
+  border-radius: 0 1000px 1000px 0;
+  -ms-transform-origin: left;
+  transform-origin: left;
+}
+.pie-chart li .pie-r {
+  overflow: hidden;
+  left: 50%;
+}
+.pie-chart li .pie-r b {
+  left: -100%;
+  border-radius: 1000px 0 0 1000px;
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -ms-transform-origin: right;
+  transform-origin: right;
+}
+.pie-chart:not(.open) li {
+  opacity: 0;
+}
+.pie-chart.open li .pie-l b {
+  animation: pie-spin-l 1.6s ease-out forwards;
+}
+.pie-chart.open li .pie-l + .pie-r b {
+  animation: pie-spin-r 0.8s ease-in forwards;
+}
+.pie-chart.open li .pie-r b {
+  animation: pie-spin-r 1.6s ease-in forwards;
+}
+/* svg map */
+.svg-map {
+  position: relative;
+}
+.svg-map svg {
+  width: 100%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+html:not(.ie) .svg-map svg {
+  height: auto;
+}
+.ie .svg-map svg {
+  height: 360px;
+}
+.svg-map svg path {
+  stroke-width: 1.5;
+}
+.svg-map svg path:not([fill]) {
+  fill: hsla(0, 0%, 0%, 0.08);
+  fill: var(--svg-map-path-fill);
+}
+.svg-map svg path:not([fill]):hover {
+  fill: hsla(0, 0%, 0%, 0.15);
+  fill: var(--svg-map-path-fill-hover);
+}
+.svg-map svg path:not([stroke]) {
+  stroke: hsl(0, 0%, 98%);
+  stroke: var(--body-bg);
+}
+.card .svg-map svg path:not([stroke]) {
+  stroke: hsl(0, 0%, 100%);
+  stroke: var(--card-bg);
+}
+.svg-map svg path.active:not([fill]) {
+  fill: currentColor;
+}
+.svg-map svg path.active:hover {
+  opacity: 1 !important;
+}
+.svg-map svg path[data-ui-href] {
+  cursor: pointer;
 }

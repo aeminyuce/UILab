@@ -92,7 +92,6 @@ ui.onload(function () {
 
         });
 
-    // settings
     ui.alerts.messageTheme = 'theme-default2 ui-fill-dark-100';
 
 });

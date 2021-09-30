@@ -46,7 +46,7 @@ function pullFiles(that) {
 
                         if (that.name === 'less') {
 
-                            pullResults = pullResults.replace(/ @import '_settings.less';/g, ''); // remove repeated import settings file
+                            pullResults = pullResults.replace(/ @import 'ui.less';/g, ''); // remove repeated main ui file
                             pullResults = pullResults.replace(/\/\/ out: false/g, ''); // remove less settings
 
                         }
@@ -88,11 +88,11 @@ function pullFiles(that) {
 
     }
 
-    if (that.name === 'less') { // firstly, import settings file
+    if (that.name === 'less') { // firstly, import main ui file
 
         ui.ajax({
 
-            url : '../css/_settings.less',
+            url : '../css/ui.less',
             callback: function (status, response) {
 
                 if (status === 'success') {
