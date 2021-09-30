@@ -34,11 +34,8 @@
 .line-charts {
     @no-user-select();
 
-    ul {
-        list-style: none; vertical-align: middle; padding: 0; display: inline-block;
+    .lines { display: none !important; }
 
-        &.lines { display: none; }
-    }
     svg {
         width: 100%;
 
@@ -114,7 +111,7 @@
     }
 
     .chart-info {
-        text-align: center; display: block;
+        list-style: none; text-align: center; display: block;
 
         li {
             margin: 0 @line-chart-info-gap round((@line-chart-info-gap / 2)) @line-chart-info-gap; display: inline-block;
