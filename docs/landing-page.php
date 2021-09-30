@@ -220,8 +220,8 @@
     </div>
     <!-- tab banner: end -->
 
-    <!-- highlight links: start -->
-    <div class="highlight-links fixed align-c form-lg theme-farmer2 set-relative">
+    <!-- home links: start -->
+    <div class="home-links fixed align-c form-lg theme-farmer2 set-relative">
         <div class="carousel" data-ui-col="4" data-ui-col-md="2" data-ui-col-sm="2" data-ui-col-xs="1" data-ui-slide="4000">
             <div class="carousel-slider icons-xxl hover-shadow-2nd hover-scale-2nd ease-layout ease-slow-2x ease-in-out">
 
@@ -326,7 +326,7 @@
         </div>
     </div>
     <span class="sp-30 margin-15-v"></span>
-    <!-- highlight links: end -->
+    <!-- home links: end -->
 
     <!-- news: start -->
     <div class="padding-30-v theme-farmer ui-fill-light-100">

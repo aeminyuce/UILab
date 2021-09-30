@@ -161,15 +161,15 @@
 .banner-slogan > div {
   background-color: hsla(43, 100%, 52%, 0.8);
 }
-.highlight-links {
+.home-links {
   margin-top: -80px;
   z-index: 1;
 }
-.highlight-links .carousel {
+.home-links .carousel {
   margin: 0 -15px;
 }
 @media (max-width: 959px) {
-  .highlight-links {
+  .home-links {
     padding: 0 15px;
   }
 }
