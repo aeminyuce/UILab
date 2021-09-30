@@ -162,37 +162,14 @@
 *:not(pre):not(code) {
   -webkit-font-smoothing: antialiased;
 }
-html,
-input,
-button,
-textarea,
-select,
-.chrome input:-webkit-autofill {
-  font-family: -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+html {
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.42857143;
   letter-spacing: 0;
-}
-html {
   background-color: hsl(0, 0%, 98%);
   background-color: var(--body-bg);
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-nav,
-section,
-summary,
-audio,
-canvas,
-video {
-  display: block;
 }
 a,
 a:active,
@@ -200,28 +177,10 @@ a:hover {
   word-wrap: break-word;
   text-decoration: none;
 }
-label {
-  cursor: default;
-}
-textarea {
-  vertical-align: top;
-  width: 100%;
-  overflow: auto;
-  resize: none;
-}
-textarea:not([rows]) {
-  height: 3em;
-}
-button {
-  text-align: inherit;
-  text-transform: none;
-  background-color: transparent;
-  overflow: visible;
+img {
+  vertical-align: middle;
+  display: inline-block;
   border: 0;
-  cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 ul,
 ol {
@@ -237,54 +196,6 @@ ol ol {
 li {
   list-style-position: inside;
   display: list-item;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-th,
-td,
-caption {
-  font-weight: 400;
-  vertical-align: top;
-  text-align: left;
-}
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  vertical-align: baseline;
-  position: relative;
-}
-sup {
-  top: -0.5em;
-}
-sub {
-  bottom: -0.25em;
-}
-img {
-  vertical-align: middle;
-  display: inline-block;
-  border: 0;
-}
-hr {
-  box-sizing: content-box;
-  width: 100%;
-  height: 1px;
-  background-color: hsla(0, 0%, 0%, 0.15);
-  background-color: var(--border-color);
-  margin-top: 20px !important;
-  margin-bottom: 20px !important;
-  border: 0;
-}
-q {
-  quotes: "\201C" "\201D" "\2018" "\2019";
-}
-p:not(:last-child):not(.hint) {
-  margin-bottom: 20px;
-}
-[hidden] {
-  display: none;
 }
 .mobile * {
   -webkit-tap-highlight-color: transparent;
@@ -908,6 +819,11 @@ p:not(:last-child):not(.hint) {
   .xl-align-r * * {
     text-align: right !important;
   }
+}
+.ie .hidden-ie,
+.ie .hidden-light,
+.ie .visible-dark {
+  display: none !important;
 }
 [data-ui-theme="light"] .hidden-light,
 [data-ui-theme="light"] .visible-dark {
@@ -3882,6 +3798,16 @@ pre.scroll-v,
 xmp.scroll-v {
   max-height: 350px;
 }
+hr.hr {
+  box-sizing: content-box;
+  width: 100%;
+  height: 1px;
+  background-color: hsla(0, 0%, 0%, 0.15);
+  background-color: var(--border-color);
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  border: 0;
+}
 @media (max-width: 480px) {
   h1,
   h2,
@@ -4080,6 +4006,9 @@ dt {
   display: inline-block;
   position: relative;
   cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .btn:not(.border):not([class*="border-"]) {
   border-width: 0;
@@ -4094,11 +4023,6 @@ dt {
 .btn.circle {
   padding-right: 13px;
   padding-left: 13px;
-}
-input.btn {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 .btn[data-ui-notifier]:after {
   content: attr(data-ui-notifier);
@@ -4970,18 +4894,14 @@ html:not(.no-effects) .ease-range::-moz-range-track {
   line-height: normal;
   min-height: 32px;
 }
-.text:not([class*="align-"]) input,
-.select:not([class*="align-"]) select,
-.select-multi:not([class*="align-"]) select,
-.textarea:not([class*="align-"]) textarea {
-  text-align: left !important;
-}
 .text input,
 .select select,
 .select-multi select,
 .textarea textarea {
   color: hsl(0, 0%, 0%);
   color: var(--black);
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
   width: 100%;
   background-color: transparent;
   border: 0;
@@ -5006,19 +4926,18 @@ html:not(.no-effects) .ease-range::-moz-range-track {
   height: 30px;
   overflow: hidden;
 }
-.toggle-textarea:not(.form-focus) textarea {
-  line-height: 22px;
-  height: 30px;
-}
-.toggle-textarea:not(.form-focus).border-dual textarea {
-  line-height: 18px;
-  height: 28px;
-}
-.toggle-textarea:not(.form-focus).no-border textarea {
-  height: 32px;
+.text:not([class*="align-"]) input,
+.select:not([class*="align-"]) select,
+.select-multi:not([class*="align-"]) select,
+.textarea:not([class*="align-"]) textarea {
+  text-align: left !important;
 }
 .chrome .text input:-webkit-autofill {
   -webkit-background-clip: text;
+}
+.chrome .text input:-webkit-autofill::first-line {
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
 }
 [data-ui-theme="light"].chrome .text input:-webkit-autofill {
   -webkit-text-fill-color: hsl(0, 0%, 0%) !important;
@@ -5084,6 +5003,26 @@ html:not(.no-effects) .ease-range::-moz-range-track {
 .select-multi option:not(:last-child) {
   border-bottom: solid 1px hsla(0, 0%, 0%, 0.045);
   border-bottom: solid 1px var(--select-multi-options-border);
+}
+.textarea textarea {
+  vertical-align: top;
+  width: 100%;
+  overflow: auto;
+  resize: none;
+}
+.textarea textarea:not([rows]) {
+  height: 3em;
+}
+.toggle-textarea:not(.form-focus) textarea {
+  line-height: 22px;
+  height: 30px;
+}
+.toggle-textarea:not(.form-focus).border-dual textarea {
+  line-height: 18px;
+  height: 28px;
+}
+.toggle-textarea:not(.form-focus).no-border textarea {
+  height: 32px;
 }
 .check,
 .radio {
@@ -5428,7 +5367,6 @@ label.custom {
 .hint {
   font-size: 13px;
   margin-top: 5px;
-  margin-bottom: 0 !important;
   display: block;
 }
 .hint.error {
@@ -5440,7 +5378,6 @@ label.custom {
 .required-msg {
   color: hsl(0, 74%, 55%);
   margin-top: 5px;
-  margin-bottom: 0 !important;
 }
 .required-msg.show {
   display: block;
@@ -5570,6 +5507,10 @@ label.custom {
 [class*="text-icon"]:not(.text-icon-l) > input {
   padding-right: 26px !important;
 }
+[class*="text-icon"] > button {
+  background-color: transparent;
+  border: 0;
+}
 [class*="text-icon"] > button,
 [class*="text-icon"] > button .icon {
   cursor: pointer;
@@ -5588,6 +5529,11 @@ label.custom {
 }
 .text-icon-both > input {
   padding-right: 26px !important;
+}
+.clear-form {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
 }
 .clear-form:not(.open) {
   display: none;
@@ -5666,6 +5612,9 @@ label.custom {
 .form-lg .select.border-dual select {
   line-height: 28px;
   height: 38px;
+}
+.chrome .form-lg .text input:-webkit-autofill::first-line {
+  font-size: 16px;
 }
 .form-lg .select select {
   padding-right: 40px;
@@ -6090,9 +6039,6 @@ label.custom {
 .list-group > ul > li > a:not(.list-link):after {
   clear: both;
 }
-.list-group > ul > li > p {
-  margin-bottom: 0;
-}
 .list-group > ul > li > a:not(.list-link) {
   margin: -10px;
   display: block;
@@ -6295,6 +6241,8 @@ label.custom {
   color: hsl(0, 0%, 0%);
   color: var(--black);
   line-height: 12px;
+  background-color: transparent;
+  border: 0;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -6328,6 +6276,8 @@ label.custom {
   width: 100%;
   background-color: hsl(0, 0%, 100%);
   background-color: var(--card-bg);
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 .table:not(:last-child) {
   margin-bottom: 20px;
@@ -6338,6 +6288,12 @@ label.custom {
   background-color: hsla(0, 0%, 0%, 0.025);
   background-color: var(--table-caption-bg);
   padding: 10px;
+}
+.table th,
+.table td {
+  font-weight: 400;
+  vertical-align: top;
+  text-align: left;
 }
 .table:not(.table-ultra-condensed) th,
 .table:not(.table-ultra-condensed) td {
@@ -9200,6 +9156,7 @@ button.dialog-custom:focus {
   text-align: center;
   width: 62px;
   height: 62px;
+  background-color: transparent;
   padding: 10px;
   display: none;
   border: 0;
@@ -9207,6 +9164,7 @@ button.dialog-custom:focus {
   z-index: 2;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 .photo-preview .prev .icon,
 .photo-preview .next .icon {
