@@ -129,6 +129,9 @@
 @btn-ghost-hover-bg:                    fade(@black, 7.5%);
 @btn-ghost-hover-bg-dark:               fade(@white, 7.5%);
 
+// compiling
+@referenceCompiling:                    false; // disable duplicate compilings when main ui file imported as reference
+
 // rulesets
 @no-appearance:                         { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 @no-user-select:                        { -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
@@ -448,7 +451,11 @@ img { vertical-align: middle; display: inline-block; border: 0; }
     .theme-@{name}.ui-stroke,.theme-@{name} .ui-stroke:not([class*="theme-"]) { border-color: @color; }
 }
 
-each(@theme-colors, {
-    @color: @@value;
-    ._theme(@value,  @color);
-});
+& when (@referenceCompiling = false) { // not compiled when reference importing
+
+    each(@theme-colors, {
+        @color: @@value;
+        ._theme(@value,  @color);
+    });
+
+}
