@@ -5,7 +5,7 @@
 
                 <h4>Tables</h4>
                 <table class="table padding-30-b">
-                    <caption>Optional table caption.</caption>
+                    <caption>Table Caption</caption>
                     <thead>
                         <tr>
                             <th>#</th>
