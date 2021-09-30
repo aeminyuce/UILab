@@ -36,6 +36,7 @@ body { overflow-x: hidden; }
 header { ._bg-var(header-bg); }
 
 .sidebar {
+    &-hide { background-color: @no-color; border: 0; cursor: pointer; }
     .sticky-header & { top: -@header-height; }
 
     .tabs { height: calc(100% - @header-height); }

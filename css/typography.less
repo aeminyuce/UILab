@@ -185,6 +185,8 @@ pre,xmp {
     &.scroll-v { max-height: @pre-max-height; }
 }
 
+hr.hr { box-sizing: content-box; width: 100%; height: 1px; ._bg-var(border-color); margin-top: @highlight-space !important; margin-bottom: @highlight-space !important; border: 0; }
+
 @media (@xs-finish) {
     h1,h2,h3,h4,h5,h6 {
         & when (@heading-auto-center = true) { text-align: center; }

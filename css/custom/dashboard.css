@@ -148,6 +148,11 @@ header {
   background-color: hsl(0, 0%, 100%);
   background-color: var(--header-bg);
 }
+.sidebar-hide {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
 .sticky-header .sidebar {
   top: -62px;
 }
