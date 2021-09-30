@@ -393,6 +393,10 @@ each(@increases, {
     }
 }
 
+.ie {
+    .hidden-ie,.hidden-light,.visible-dark { .hidden(); }
+}
+
 & when (@dark-mode = true) {
     & when (@dark-mode-auto-switcher = true) {
         @media (prefers-color-scheme: light) {
