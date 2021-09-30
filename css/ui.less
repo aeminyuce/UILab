@@ -1,4 +1,6 @@
 // out: false
+/* ui */
+
 // fonts
 @font-scaling:                          true; // responsive scaling for largest font sizes
 
@@ -166,7 +168,6 @@
 }
 
 & when (@dark-mode = true) {
-    /* global variables */
     & when (@dark-mode-auto-switcher = true) {
         @media (prefers-color-scheme: light) {
             :root { ._global-vars(); }

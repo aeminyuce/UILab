@@ -1,4 +1,4 @@
-/* global variables */
+/* ui */
 [data-ui-theme="light"] {
   --body-bg: hsl(0, 0%, 98%);
   --white: hsl(0, 0%, 100%);
