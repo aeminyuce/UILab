@@ -37,14 +37,14 @@
                         </div>
                     </div>
                     <div class="col-5x col-md-6 col-sm-6">
-                        <div class="theme-default ui-color">
-                            .theme-default<br>
+                        <div class="theme-base ui-color">
+                            .theme-base<br>
                             .ui-color
                         </div>
                     </div>
                     <div class="col-5x col-md-6 col-sm-6">
-                        <div class="theme-default2 ui-color">
-                            .theme-default2<br>
+                        <div class="theme-sub ui-color">
+                            .theme-sub<br>
                             .ui-color
                         </div>
                     </div>
@@ -87,14 +87,14 @@
                         </div>
                     </div>
                     <div class="col-5x col-md-6 col-sm-6">
-                        <div class="padding-15 round border border-dual theme-default ui-stroke">
-                            .theme-default<br>
+                        <div class="padding-15 round border border-dual theme-base ui-stroke">
+                            .theme-base<br>
                             .ui-stroke
                         </div>
                     </div>
                     <div class="col-5x col-md-6 col-sm-6">
-                        <div class="padding-15 round border border-dual theme-default2 ui-stroke">
-                            .theme-default2<br>
+                        <div class="padding-15 round border border-dual theme-sub ui-stroke">
+                            .theme-sub<br>
                             .ui-stroke
                         </div>
                     </div>
@@ -635,8 +635,8 @@
                     </div>
                 </div>
 
-                <b class="margin-5-b block">.theme-default</b>
-                <div class="row row-gap-xs highlight xs-fluid theme-default">
+                <b class="margin-5-b block">.theme-base</b>
+                <div class="row row-gap-xs highlight xs-fluid theme-base">
                     <div class="col-2 col-md-4 col-sm-6">
                         <div class="padding-10 round ui-fill-light-100">
                             <h4>.ui-fill-light-100</h4>
@@ -741,8 +741,8 @@
                     </div>
                 </div>
 
-                <b class="margin-5-b block">.theme-default2</b>
-                <div class="row row-gap-xs highlight xs-fluid theme-default2">
+                <b class="margin-5-b block">.theme-sub</b>
+                <div class="row row-gap-xs highlight xs-fluid theme-sub">
                     <div class="col-2 col-md-4 col-sm-6">
                         <div class="padding-10 round ui-fill-light-100">
                             <h4>.ui-fill-light-100</h4>

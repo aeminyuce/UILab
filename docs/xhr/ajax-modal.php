@@ -1,4 +1,4 @@
-<div class="modal-header theme-default ui-fill-dark-100">
+<div class="modal-header theme-base ui-fill-dark-100">
     <h4>Modal Header</h4>
     <div class="modal-buttons ease-1st-btn">
         <button class="btn circle ui-fill-dark-300">Header Button</button>

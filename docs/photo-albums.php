@@ -2,7 +2,7 @@
     <div class="fixed">
         <div class="row">
             <div class="col-static sm-fluid padding-30-v">
-                <div class="col-250 padding-30 order-sm-last sm-align-c theme-default2">
+                <div class="col-250 padding-30 order-sm-last sm-align-c theme-sub">
                     <a href="#" class="btn btn-lg btn-xs-fluid align-l block circle ui-fill-dark-100 ease-btn">
                         Create New
                         <svg class="icon right"><use href="#plus"/></svg>
@@ -52,7 +52,7 @@
                             </div>
                         </div>
 
-                        <ul class="photo-gallery has-cover block-2nd ease-photo-gallery theme-default2">
+                        <ul class="photo-gallery has-cover block-2nd ease-photo-gallery theme-sub">
                             <li>
                                 <a class="img has-info show-info" href="img/image_01.jpg">
                                     <img src="img/image_01.jpg" alt="">

@@ -1,5 +1,5 @@
 <main class="container no-gutter">
-    <div class="fixed padding-30-v theme-default">
+    <div class="fixed padding-30-v theme-base">
         <div class="row">
 
             <div class="col-12">
@@ -66,7 +66,7 @@
                 <b class="margin-5-b block">Submit form example:</b>
                 <pre class="round margin-5-b">return ui.alerts.dialog({<br>    msg: 'Submit this form?',<br>    success: 'Yes',<br>    error: 'No',<br>    callback: function (value) {<br>        if (value === 'success') {<br>            document.getElementById('submitForm').submit();<br>        }<br>    }<br>});</pre>
                 <form id="submitForm" action="#succesful" onsubmit="return ui.alerts.dialog({msg: 'Submit this form?', success: 'Yes', error: 'No', callback: function (value) { if (value === 'success') { document.getElementById('submitForm').submit(); } }});">
-                    <button type="submit" class="btn round theme-default2 ui-fill-dark-100 ease-btn">Submit Form</button>
+                    <button type="submit" class="btn round theme-sub ui-fill-dark-100 ease-btn">Submit Form</button>
                 </form>
 
             </div>

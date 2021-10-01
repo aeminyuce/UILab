@@ -37,7 +37,7 @@
                         </ul>
                     </div>
 
-                    <div class="card round shadow-lg theme-default2">
+                    <div class="card round shadow-lg theme-sub">
 
                         <div class="padding-15 md-align-c border-b">
                             <h5 class="margin-10-b font-color-black-50">COLORS</h5>
@@ -242,7 +242,7 @@
                                 </select>
                             </div>
                             <span class="sp-10 visible-xs"></span>
-                            <span class="align-c theme-default2 ease-1st-btn">
+                            <span class="align-c theme-sub ease-1st-btn">
                                 <button class="btn btn-square round ui-fill-dark-100">
                                     <svg class="icon"><use href="#grid-column"/></svg>
                                 </button>

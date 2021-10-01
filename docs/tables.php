@@ -339,13 +339,13 @@
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
-                        <tr class="theme-default ui-fill-light-100 hover">
+                        <tr class="theme-base ui-fill-light-100 hover">
                             <th scope="row">1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
-                        <tr class="theme-default2 ui-fill-light-100 hover">
+                        <tr class="theme-sub ui-fill-light-100 hover">
                             <th scope="row">1</th>
                             <td>Mark</td>
                             <td>Otto</td>
@@ -385,7 +385,7 @@
                     </tbody>
                 </table>
 
-                <table class="table padding-30-b table-hover theme-default2 ease-table">
+                <table class="table padding-30-b table-hover theme-sub ease-table">
                     <thead>
                         <tr>
                             <th>#</th>

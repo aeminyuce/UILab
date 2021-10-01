@@ -4,7 +4,7 @@
         <div class="image-uploader icons-no-opacity round shadow-lg ease-image-uploader">
             <form action="xhr/image-uploader.php" method="post" enctype="multipart/form-data"> <!-- error testing: image-uploader-error.php-->
 
-                <div class="uploader-panel form-lg theme-default2">
+                <div class="uploader-panel form-lg theme-sub">
                     <h4>Image Uploader</h4>
                     <div class="file no-border round ui-fill-dark-100 hover ease-form">
                         <input type="file" name="images[]" multiple>
@@ -14,7 +14,7 @@
                     </div>
                 </div>
 
-                <div class="uploader-tools align-r ease-1st-btn theme-default2">
+                <div class="uploader-tools align-r ease-1st-btn theme-sub">
                     <div class="dropdown menu-l ease-dropdown">
                         <button type="button" title="Tags" class="btn btn-square round">
                             <svg class="icon"><use href="#tag"/></svg>

@@ -52,7 +52,7 @@
                 </div>
 
                 <!-- nav -->
-                <nav class="form-lg margin-25-v icons-lg icons-no-opacity theme-default hidden-md">
+                <nav class="form-lg margin-25-v icons-lg icons-no-opacity theme-base hidden-md">
                     <ul class="list-unstyled list-spacer-20 align-l icons-margin-10-r block-2nd ease-2nd-button add-mobile-menu-l">
                         <li>
                             <a class="btn btn-ghost border-r border-lg ui-stroke" href="#">
@@ -892,7 +892,7 @@
                                     </div>
                                 </div>
                                 <div class="col-6 align-r">
-                                    <div class="grid-list-paging pagination ease-1st-btn" data-ui-default="btn round" data-ui-active="theme-default2 ui-fill-dark-100"></div>
+                                    <div class="grid-list-paging pagination ease-1st-btn" data-ui-default="btn round" data-ui-active="theme-sub ui-fill-dark-100"></div>
                                 </div>
                             </div>
 
@@ -908,7 +908,7 @@
 </main>
 
 <!-- mobile menu -->
-<div class="mobile-menu show-l theme-default ease-layout ease-in-out ">
+<div class="mobile-menu show-l theme-base ease-layout ease-in-out ">
     <div class="mobile-menu-title ui-fill-dark-100">
         <button class="btn btn-square btn-lg btn-ghost round ease-btn close-mobile-menu">
             <svg class="icon no-opacity"><use href="#remove"/></svg>

@@ -699,140 +699,140 @@ img {
 .theme-red .ui-stroke:not([class*="theme-"]) {
   border-color: hsl(0, 74%, 55%);
 }
-.theme-default.ui-fill-light-100,
-.theme-default .ui-fill-light-100:not([class*="theme-"]) {
+.theme-base.ui-fill-light-100,
+.theme-base .ui-fill-light-100:not([class*="theme-"]) {
   background-color: hsla(226, 52%, 60%, 0.15);
 }
-.theme-default.ui-fill-light-200,
-.theme-default .ui-fill-light-200:not([class*="theme-"]) {
+.theme-base.ui-fill-light-200,
+.theme-base .ui-fill-light-200:not([class*="theme-"]) {
   background-color: hsla(226, 52%, 65%, 0.25);
 }
-.theme-default.ui-fill-light-300,
-.theme-default .ui-fill-light-300:not([class*="theme-"]) {
+.theme-base.ui-fill-light-300,
+.theme-base .ui-fill-light-300:not([class*="theme-"]) {
   background-color: hsla(226, 52%, 70%, 0.35);
 }
-.theme-default.ui-fill-dark-100,
-.theme-default .ui-fill-dark-100:not([class*="theme-"]) {
+.theme-base.ui-fill-dark-100,
+.theme-base .ui-fill-dark-100:not([class*="theme-"]) {
   background-color: hsl(226, 52%, 50%);
 }
-.theme-default.ui-fill-dark-200,
-.theme-default .ui-fill-dark-200:not([class*="theme-"]) {
+.theme-base.ui-fill-dark-200,
+.theme-base .ui-fill-dark-200:not([class*="theme-"]) {
   background-color: hsl(226, 52%, 35%);
 }
-.theme-default.ui-fill-dark-300,
-.theme-default .ui-fill-dark-300:not([class*="theme-"]) {
+.theme-base.ui-fill-dark-300,
+.theme-base .ui-fill-dark-300:not([class*="theme-"]) {
   background-color: hsl(226, 52%, 25%);
 }
-.desktop .theme-default.ui-fill-light-100.hover:hover,
-.desktop .theme-default .ui-fill-light-100:not([class*="theme-"]).hover:hover,
-.desktop .theme-default.ui-fill-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-default .ui-fill-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-base.ui-fill-light-100.hover:hover,
+.desktop .theme-base .ui-fill-light-100:not([class*="theme-"]).hover:hover,
+.desktop .theme-base.ui-fill-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-base .ui-fill-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsla(226, 52%, 60%, 0.3);
 }
-.desktop .theme-default.ui-fill-light-200.hover:hover,
-.desktop .theme-default .ui-fill-light-200:not([class*="theme-"]).hover:hover,
-.desktop .theme-default.ui-fill-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-default .ui-fill-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-base.ui-fill-light-200.hover:hover,
+.desktop .theme-base .ui-fill-light-200:not([class*="theme-"]).hover:hover,
+.desktop .theme-base.ui-fill-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-base .ui-fill-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsla(226, 52%, 65%, 0.5);
 }
-.desktop .theme-default.ui-fill-light-300.hover:hover,
-.desktop .theme-default .ui-fill-light-300:not([class*="theme-"]).hover:hover,
-.desktop .theme-default.ui-fill-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-default .ui-fill-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-base.ui-fill-light-300.hover:hover,
+.desktop .theme-base .ui-fill-light-300:not([class*="theme-"]).hover:hover,
+.desktop .theme-base.ui-fill-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-base .ui-fill-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsla(226, 52%, 70%, 0.7);
 }
-.desktop .theme-default.ui-fill-dark-100.hover:hover,
-.desktop .theme-default .ui-fill-dark-100:not([class*="theme-"]).hover:hover,
-.desktop .theme-default.ui-fill-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-default .ui-fill-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-base.ui-fill-dark-100.hover:hover,
+.desktop .theme-base .ui-fill-dark-100:not([class*="theme-"]).hover:hover,
+.desktop .theme-base.ui-fill-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-base .ui-fill-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(226, 52%, 65%);
 }
-.desktop .theme-default.ui-fill-dark-200.hover:hover,
-.desktop .theme-default .ui-fill-dark-200:not([class*="theme-"]).hover:hover,
-.desktop .theme-default.ui-fill-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-default .ui-fill-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-base.ui-fill-dark-200.hover:hover,
+.desktop .theme-base .ui-fill-dark-200:not([class*="theme-"]).hover:hover,
+.desktop .theme-base.ui-fill-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-base .ui-fill-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(226, 52%, 70%);
 }
-.desktop .theme-default.ui-fill-dark-300.hover:hover,
-.desktop .theme-default .ui-fill-dark-300:not([class*="theme-"]).hover:hover,
-.desktop .theme-default.ui-fill-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-default .ui-fill-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-base.ui-fill-dark-300.hover:hover,
+.desktop .theme-base .ui-fill-dark-300:not([class*="theme-"]).hover:hover,
+.desktop .theme-base.ui-fill-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-base .ui-fill-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(226, 52%, 75%);
 }
-.theme-default.ui-color,
-.theme-default .ui-color:not([class*="theme-"]) {
+.theme-base.ui-color,
+.theme-base .ui-color:not([class*="theme-"]) {
   color: hsl(226, 52%, 50%);
 }
-.theme-default.ui-stroke,
-.theme-default .ui-stroke:not([class*="theme-"]) {
+.theme-base.ui-stroke,
+.theme-base .ui-stroke:not([class*="theme-"]) {
   border-color: hsl(226, 52%, 50%);
 }
-.theme-default2.ui-fill-light-100,
-.theme-default2 .ui-fill-light-100:not([class*="theme-"]) {
+.theme-sub.ui-fill-light-100,
+.theme-sub .ui-fill-light-100:not([class*="theme-"]) {
   background-color: hsla(206, 87%, 60%, 0.15);
 }
-.theme-default2.ui-fill-light-200,
-.theme-default2 .ui-fill-light-200:not([class*="theme-"]) {
+.theme-sub.ui-fill-light-200,
+.theme-sub .ui-fill-light-200:not([class*="theme-"]) {
   background-color: hsla(206, 87%, 65%, 0.25);
 }
-.theme-default2.ui-fill-light-300,
-.theme-default2 .ui-fill-light-300:not([class*="theme-"]) {
+.theme-sub.ui-fill-light-300,
+.theme-sub .ui-fill-light-300:not([class*="theme-"]) {
   background-color: hsla(206, 87%, 70%, 0.35);
 }
-.theme-default2.ui-fill-dark-100,
-.theme-default2 .ui-fill-dark-100:not([class*="theme-"]) {
+.theme-sub.ui-fill-dark-100,
+.theme-sub .ui-fill-dark-100:not([class*="theme-"]) {
   background-color: hsl(206, 87%, 50%);
 }
-.theme-default2.ui-fill-dark-200,
-.theme-default2 .ui-fill-dark-200:not([class*="theme-"]) {
+.theme-sub.ui-fill-dark-200,
+.theme-sub .ui-fill-dark-200:not([class*="theme-"]) {
   background-color: hsl(206, 87%, 35%);
 }
-.theme-default2.ui-fill-dark-300,
-.theme-default2 .ui-fill-dark-300:not([class*="theme-"]) {
+.theme-sub.ui-fill-dark-300,
+.theme-sub .ui-fill-dark-300:not([class*="theme-"]) {
   background-color: hsl(206, 87%, 25%);
 }
-.desktop .theme-default2.ui-fill-light-100.hover:hover,
-.desktop .theme-default2 .ui-fill-light-100:not([class*="theme-"]).hover:hover,
-.desktop .theme-default2.ui-fill-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-default2 .ui-fill-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-sub.ui-fill-light-100.hover:hover,
+.desktop .theme-sub .ui-fill-light-100:not([class*="theme-"]).hover:hover,
+.desktop .theme-sub.ui-fill-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-sub .ui-fill-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsla(206, 87%, 60%, 0.3);
 }
-.desktop .theme-default2.ui-fill-light-200.hover:hover,
-.desktop .theme-default2 .ui-fill-light-200:not([class*="theme-"]).hover:hover,
-.desktop .theme-default2.ui-fill-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-default2 .ui-fill-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-sub.ui-fill-light-200.hover:hover,
+.desktop .theme-sub .ui-fill-light-200:not([class*="theme-"]).hover:hover,
+.desktop .theme-sub.ui-fill-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-sub .ui-fill-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsla(206, 87%, 65%, 0.5);
 }
-.desktop .theme-default2.ui-fill-light-300.hover:hover,
-.desktop .theme-default2 .ui-fill-light-300:not([class*="theme-"]).hover:hover,
-.desktop .theme-default2.ui-fill-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-default2 .ui-fill-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-sub.ui-fill-light-300.hover:hover,
+.desktop .theme-sub .ui-fill-light-300:not([class*="theme-"]).hover:hover,
+.desktop .theme-sub.ui-fill-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-sub .ui-fill-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsla(206, 87%, 70%, 0.7);
 }
-.desktop .theme-default2.ui-fill-dark-100.hover:hover,
-.desktop .theme-default2 .ui-fill-dark-100:not([class*="theme-"]).hover:hover,
-.desktop .theme-default2.ui-fill-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-default2 .ui-fill-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-sub.ui-fill-dark-100.hover:hover,
+.desktop .theme-sub .ui-fill-dark-100:not([class*="theme-"]).hover:hover,
+.desktop .theme-sub.ui-fill-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-sub .ui-fill-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(206, 87%, 65%);
 }
-.desktop .theme-default2.ui-fill-dark-200.hover:hover,
-.desktop .theme-default2 .ui-fill-dark-200:not([class*="theme-"]).hover:hover,
-.desktop .theme-default2.ui-fill-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-default2 .ui-fill-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-sub.ui-fill-dark-200.hover:hover,
+.desktop .theme-sub .ui-fill-dark-200:not([class*="theme-"]).hover:hover,
+.desktop .theme-sub.ui-fill-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-sub .ui-fill-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(206, 87%, 70%);
 }
-.desktop .theme-default2.ui-fill-dark-300.hover:hover,
-.desktop .theme-default2 .ui-fill-dark-300:not([class*="theme-"]).hover:hover,
-.desktop .theme-default2.ui-fill-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-default2 .ui-fill-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.desktop .theme-sub.ui-fill-dark-300.hover:hover,
+.desktop .theme-sub .ui-fill-dark-300:not([class*="theme-"]).hover:hover,
+.desktop .theme-sub.ui-fill-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.desktop .theme-sub .ui-fill-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(206, 87%, 75%);
 }
-.theme-default2.ui-color,
-.theme-default2 .ui-color:not([class*="theme-"]) {
+.theme-sub.ui-color,
+.theme-sub .ui-color:not([class*="theme-"]) {
   color: hsl(206, 87%, 50%);
 }
-.theme-default2.ui-stroke,
-.theme-default2 .ui-stroke:not([class*="theme-"]) {
+.theme-sub.ui-stroke,
+.theme-sub .ui-stroke:not([class*="theme-"]) {
   border-color: hsl(206, 87%, 50%);
 }
 /* grid */

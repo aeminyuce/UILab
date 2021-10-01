@@ -381,7 +381,7 @@
                         <li>
                             <a href="#">
                                 <svg class="list-icon icon"><use href="#angle-right"/></svg>
-                                <span class="img-photo-xs circle theme-default2 ui-fill-dark-100"><span>EKY</span></span>
+                                <span class="img-photo-xs circle theme-sub ui-fill-dark-100"><span>EKY</span></span>
                                 <b class="large block">Title</b>
                                 <span class="font-color-black-muted">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
@@ -433,7 +433,7 @@
                         <li>
                             <a href="#">
                                 <svg class="list-icon icon"><use href="#angle-right"/></svg>
-                                <span class="img-photo-sm circle theme-default2 ui-fill-dark-100"><span>EKY</span></span>
+                                <span class="img-photo-sm circle theme-sub ui-fill-dark-100"><span>EKY</span></span>
                                 <b class="large block">Title</b>
                                 <span class="font-color-black-muted">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
@@ -485,7 +485,7 @@
                         <li>
                             <a href="#">
                                 <svg class="list-icon icon"><use href="#angle-right"/></svg>
-                                <span class="img-photo circle theme-default2 ui-fill-dark-100"><span>EKY</span></span>
+                                <span class="img-photo circle theme-sub ui-fill-dark-100"><span>EKY</span></span>
                                 <b class="large block">Title</b>
                                 <span class="font-color-black-muted">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
@@ -537,7 +537,7 @@
                         <li>
                             <a href="#">
                                 <svg class="list-icon icon"><use href="#angle-right"/></svg>
-                                <span class="img-photo-lg circle theme-default2 ui-fill-dark-100"><span>EKY</span></span>
+                                <span class="img-photo-lg circle theme-sub ui-fill-dark-100"><span>EKY</span></span>
                                 <b class="xx-large block">Title</b>
                                 <span class="font-color-black-muted large">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
@@ -578,7 +578,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="theme-default2 ui-fill-light-100">
+                            <a href="#" class="theme-sub ui-fill-light-100">
                                 <svg class="list-icon icon"><use href="#angle-right"/></svg>
                                 <span class="img-photo circle ui-fill-dark-100"><span>EKY</span></span>
                                 <b class="large block">Title</b>
@@ -636,7 +636,7 @@
 
                 <span class="sp-30"></span>
 
-                <div class="list-group border round theme-default2">
+                <div class="list-group border round theme-sub">
                     <ul class="has-photo has-icon-sm ease-list-group">
                         <li>
                             <a href="#" class="ui-fill-light-100">

@@ -389,7 +389,7 @@
 
                             <div class="col-12 ease-1st-btn">
                                 <button type="reset" class="btn btn-xs-fluid round">Reset Form</button>
-                                <button type="submit" class="btn btn-xs-fluid round theme-default2 ui-fill-dark-100">Submit Form</button>
+                                <button type="submit" class="btn btn-xs-fluid round theme-sub ui-fill-dark-100">Submit Form</button>
                             </div>
                         </div>
 
@@ -533,7 +533,7 @@
                             <label class="custom">
                                 <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" checked>
-                                        <i class="state theme-default2 ui-fill-dark-100"></i>
+                                        <i class="state theme-sub ui-fill-dark-100"></i>
                                 </span>
                                 Custom Switch with Themes
                             </label>
@@ -555,9 +555,9 @@
                 <div class="padding-30-b">
                     <input class="range ease-range" type="range" min="0" max="10" value="0">
                     <span class="sp-10"></span>
-                    <input class="range theme-default ui-color ease-range" type="range" min="0" max="10" value="2">
+                    <input class="range theme-base ui-color ease-range" type="range" min="0" max="10" value="2">
                     <span class="sp-10"></span>
-                    <input class="range theme-default2 ui-color ease-range" type="range" min="0" max="10" value="4">
+                    <input class="range theme-sub ui-color ease-range" type="range" min="0" max="10" value="4">
                     <span class="sp-10"></span>
                     <input class="range theme-yellow ui-color ease-range" type="range" min="0" max="10" value="6">
                     <span class="sp-10"></span>
@@ -1522,14 +1522,14 @@
 
                             <div class="col-9 push-3 ease-1st-btn">
                                 <button type="reset" class="btn btn-xs-fluid round">Reset Form</button>
-                                <button type="submit" class="btn btn-xs-fluid round theme-default2 ui-fill-dark-100">Submit Form</button>
+                                <button type="submit" class="btn btn-xs-fluid round theme-sub ui-fill-dark-100">Submit Form</button>
                             </div>
                         </div>
                     </form>
                 </div>
 
                 <h4>Forms in Dark Themes</h4>
-                <div class="padding-15 margin-30-b round theme-default ui-fill-dark-100">
+                <div class="padding-15 margin-30-b round theme-base ui-fill-dark-100">
 
                     <div class="text form-light margin-10-b round border-dual ease-form">
                         <input type="text" placeholder="Placeholder">

@@ -132,7 +132,7 @@
             <!-- sidebar -->
             <div class="col-250 theme-gray ui-fill-light-300 hidden-md">
                 <div class="align-l sm-align-c padding-20-t form-lg add-mobile-menu-r">
-                    <h4 class="font-bold padding-10-h theme-default2 ui-color">UI</h4>
+                    <h4 class="font-bold padding-10-h theme-sub ui-color">UI</h4>
                     <ul class="list-unstyled block-2nd ease-2nd-button">
                         <li><a class="btn btn-ghost" href="?p=alerts">Alerts</a></li>
                         <li><a class="btn btn-ghost" href="?p=breadcrumbs">Breadcrumbs</a></li>
@@ -165,7 +165,7 @@
                         <li><a class="btn btn-ghost" href="?p=typography">Typography</a></li>
                         <li><a class="btn btn-ghost" href="?p=weather">Weather</a></li>
                     </ul>
-                    <h4 class="font-bold padding-10-h theme-default2 ui-color">Javascript</h4>
+                    <h4 class="font-bold padding-10-h theme-sub ui-color">Javascript</h4>
                     <ul class="list-unstyled block-2nd ease-2nd-button">
                         <li><a class="btn btn-ghost" href="?p=ui">UI JS</a></li>
                     </ul>
@@ -180,10 +180,10 @@
                             <h2 class="margin-10-b">UILab</h2>
                             <p class="highlight large xs-align-c">CSS &amp; JavaScript powered responsive design system.</p>
                             <div class="form-lg ease-1st-btn">
-                                <a href="?p=icons" class="btn btn-xs-fluid padding-30-h circle theme-default2">
+                                <a href="?p=icons" class="btn btn-xs-fluid padding-30-h circle theme-sub">
                                     <svg class="icon margin-5-r no-opacity ui-color"><use href="#draw"/></svg> See Icons
                                 </a>
-                                <a href="?p=download" class="btn btn-xs-fluid padding-30-h circle theme-default2 ui-fill-dark-100">
+                                <a href="?p=download" class="btn btn-xs-fluid padding-30-h circle theme-sub ui-fill-dark-100">
                                     Download <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                                 </a>
                             </div>
@@ -303,7 +303,7 @@
     </main>
 
     <!-- mobile menu -->
-    <div class="mobile-menu show-r theme-default ease-layout ease-in-out">
+    <div class="mobile-menu show-r theme-base ease-layout ease-in-out">
         <div class="mobile-menu-title padding-15-v ui-fill-dark-100">
             <button class="btn btn-square btn-lg btn-ghost round ease-btn close-mobile-menu">
                 <svg class="icon no-opacity"><use href="#remove"/></svg>

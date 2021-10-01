@@ -74,7 +74,7 @@
                     </div>
                 </div>
 
-                <div class="countdown row row-gap-sm-h no-fluid theme-default2">
+                <div class="countdown row row-gap-sm-h no-fluid theme-sub">
                     <div class="col-3">
                         <div class="border ui-stroke round padding-10">
                             <b class="d ui-color largest block">05</b>
@@ -128,7 +128,7 @@
                     </div>
                 </div>
 
-                <div class="countdown row row-gap-sm-h no-fluid theme-default2">
+                <div class="countdown row row-gap-sm-h no-fluid theme-sub">
                     <div class="col-3">
                         <div class="ui-fill-dark-100 round padding-10">
                             <b class="d largest block">00</b>

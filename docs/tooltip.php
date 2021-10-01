@@ -5,7 +5,7 @@
             <div class="col-12">
 
                 <h4>Positioning</h4>
-                <div class="ease-1st-btn theme-default padding-30-b">
+                <div class="ease-1st-btn theme-base padding-30-b">
                     <button class="btn margin-5-b round ui-fill-dark-100" data-ui-tooltip="t" title="Tooltip <b>Top</b>">Tooltip <b>Top</b></button>
                     <button class="btn margin-5-b round ui-fill-dark-100" data-ui-tooltip="b" title="Tooltip <u>Bottom</u>">Tooltip <b>Bottom</b></button>
                     <button class="btn margin-5-b round ui-fill-dark-100" data-ui-tooltip="r" title="Tooltip <i>Right</i>">Tooltip <b>Right</b></button>
@@ -18,13 +18,13 @@
                 </div>
 
                 <h4>Preventing Actions on Touch</h4>
-                <div class="theme-default2 ease-1st-btn padding-30-b">
+                <div class="theme-sub ease-1st-btn padding-30-b">
                     <a href="http://www.google.com/" target="_blank" class="btn margin-5-b round ui-fill-dark-100" data-ui-tooltip="t" title="Open link now!">Link</a>
                     <button onclick="alert('Test');" class="btn margin-5-b round ui-fill-dark-100" data-ui-tooltip="t" title="Run javascript aler now!">Javascript</button>
                 </div>
 
                 <h4>data-ui-only Attributes</h4>
-                <div class="theme-default ease-1st-btn padding-30-b">
+                <div class="theme-base ease-1st-btn padding-30-b">
                     <a href="http://www.google.com/" target="_blank" class="btn margin-5-b round ui-fill-dark-100" data-ui-tooltip="t" data-ui-only="mobile" title="Open link now!">Link (mobile)</a>
                     <a href="http://www.google.com/" target="_blank" class="btn margin-5-b round ui-fill-dark-100" data-ui-tooltip="t" data-ui-only="desktop" title="Open link now!">Link (desktop)</a>
                     <span class="sp-10"></span>
@@ -33,7 +33,7 @@
                 </div>
 
                 <h4>Using with Icons</h4>
-                <div class="theme-default2 icons-xl ui-color padding-30-b hover-t-more-1st ease-1st-layout">
+                <div class="theme-sub icons-xl ui-color padding-30-b hover-t-more-1st ease-1st-layout">
                     <svg class="icon" data-ui-tooltip title="Like!"><use href="#heart"/></svg>
                     <svg class="icon" data-ui-tooltip title="Somewhere on Earth!"><use href="#marker"/></svg>
                     <svg class="icon" data-ui-tooltip title="Call us now 555 55 55"><use href="#phone"/></svg>

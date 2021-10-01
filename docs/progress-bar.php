@@ -30,8 +30,8 @@
                 </div>
                 <span class="sp-15"></span>
                 <div class="progress-bar progress-lg round">
-                    <span class="theme-default ui-fill-dark-100" style="width: 40%;"></span>
-                    <span class="theme-default2 ui-fill-dark-100" style="width: 45%;"></span>
+                    <span class="theme-base ui-fill-dark-100" style="width: 40%;"></span>
+                    <span class="theme-sub ui-fill-dark-100" style="width: 45%;"></span>
                 </div>
 
                 <span class="sp-30"></span>
@@ -64,10 +64,10 @@
                 <span class="sp-30"></span>
 
                 <div class="progress-bar progress-lg round">
-                    <span class="theme-default2 ui-fill-light-300 stripe-light animate-progress" style="width: 80%;"></span>
+                    <span class="theme-sub ui-fill-light-300 stripe-light animate-progress" style="width: 80%;"></span>
                 </div>
                 <div class="progress-bar progress-lg round">
-                    <span class="theme-default2 ui-fill-dark-100 stripe-dark animate-progress" style="width: 80%;"></span>
+                    <span class="theme-sub ui-fill-dark-100 stripe-dark animate-progress" style="width: 80%;"></span>
                 </div>
 
             </div>
