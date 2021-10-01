@@ -350,31 +350,10 @@ img { vertical-align: middle; display: inline-block; border: 0; }
     from { background-position: 40px 0; }
     to { background-position: 0 0; }
 }
-@keyframes bounce-x {
-    from { transform: translateX(0); }
-    25% { transform: translateX(-12%); }
-    75% { transform: translateX(12%); }
-    100% { transform: translateX(0); }
-}
-@keyframes bounce-y {
-    from { transform: translateY(0); }
-    25% { transform: translateY(-12%); }
-    75% { transform: translateY(12%); }
-    100% { transform: translateY(0); }
-}
-@keyframes bounce-z {
-    from { transform: scale(1); }
-    25% { transform: scale(.9); }
-    75% { transform: scale(1.1); }
-    100% { transform: scale(1); }
-}
 
 .animate- {
     &spin { animation: spin 1.15s linear infinite; }
     &progress { animation: progress 3s linear infinite; }
-    &bounce-x { animation: bounce-x 6s linear infinite; }
-    &bounce-y { animation: bounce-y 6s linear infinite; }
-    &bounce-z { animation: bounce-z 6s linear infinite; }
 }
 
 .no-effects {

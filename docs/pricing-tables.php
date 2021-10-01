@@ -29,7 +29,7 @@
 
                         <div class="card full-h padding-30 round shadow-lg theme-default2 ui-fill-dark-100">
                             <div class="margin-30-v">
-                                <svg class="icon icon-72 animate-bounce-x"><use href="#gift"/></svg>
+                                <svg class="icon icon-72"><use href="#gift"/></svg>
                             </div>
                             <h2 class="font-bold margin-15-v">$19</h2>
                             <h4>Business License</h4>
@@ -111,7 +111,7 @@
                         <div class="card full-h round shadow-lg theme-default2 ui-fill-dark-100">
                             <div class="card-side padding-30 border-b border-light">
                                 <div class="margin-30-v">
-                                    <svg class="icon icon-72 animate-bounce-x"><use href="#gift"/></svg>
+                                    <svg class="icon icon-72"><use href="#gift"/></svg>
                                 </div>
                                 <h2 class="font-bold margin-15-v">$19</h2>
                                 <h4>Business License</h4>
