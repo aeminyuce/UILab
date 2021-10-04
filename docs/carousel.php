@@ -211,22 +211,34 @@
                     <div class="carousel half-sized padding-15-b photo-gallery ease-photo-gallery shadow-in-sm round theme-gray ui-fill-light-100" data-ui-col="4" data-ui-col-md="3" data-ui-col-sm="2" data-ui-col-xs="2">
                         <div class="carousel-slider hover-scale-2nd hover-shadow-2nd ease-layout ease-2nd-layout ease-slow ease-in-out">
                             <div class="slide-content padding-15 no-padding-b">
-                                <a class="img shadow ease-default" href="img/image_09.jpg"><img class="img" src="img/image_09.jpg" alt=""></a>
+                                <a class="img shadow ease-default" href="img/image_09.jpg">
+                                    <img class="img" src="img/image_09.jpg" alt="">
+                                </a>
                             </div>
                             <div class="slide-content padding-15 no-padding-b">
-                                <a class="img shadow ease-default" href="img/image_07.jpg"><img class="img" src="img/image_07.jpg" alt=""></a>
+                                <a class="img shadow ease-default" href="img/image_07.jpg">
+                                    <img class="img" src="img/image_07.jpg" alt="">
+                                </a>
                             </div>
                             <div class="slide-content padding-15 no-padding-b">
-                                <a class="img shadow ease-default" href="img/image_08.jpg"><img class="img" src="img/image_05.jpg" alt=""></a>
+                                <a class="img shadow ease-default" href="img/image_08.jpg">
+                                    <img class="img" src="img/image_05.jpg" alt="">
+                                </a>
                             </div>
                             <div class="slide-content padding-15 no-padding-b">
-                                <a class="img shadow ease-default" href="img/image_04.jpg"><img class="img" src="img/image_04.jpg" alt=""></a>
+                                <a class="img shadow ease-default" href="img/image_04.jpg">
+                                    <img class="img" src="img/image_04.jpg" alt="">
+                                </a>
                             </div>
                             <div class="slide-content padding-15 no-padding-b">
-                                <a class="img shadow ease-default" href="img/image_01.jpg"><img class="img" src="img/image_01.jpg" alt=""></a>
+                                <a class="img shadow ease-default" href="img/image_01.jpg">
+                                    <img class="img" src="img/image_01.jpg" alt="">
+                                </a>
                             </div>
                             <div class="slide-content padding-15 no-padding-b">
-                                <a class="img shadow ease-default" href="img/image_06.jpg"><img class="img" src="img/image_06.jpg" alt=""></a>
+                                <a class="img shadow ease-default" href="img/image_06.jpg">
+                                    <img class="img" src="img/image_06.jpg" alt="">
+                                </a>
                             </div>
                         </div>
                         <div class="carousel-nav margin-10-t ease-1st-btn">
