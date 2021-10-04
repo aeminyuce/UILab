@@ -370,7 +370,7 @@ ui.photoGallery = {
             ui.on('.' + ui.photoGallery.namePreviewBg, 'click', closeGallery);
 
             // gallery nav
-            function navigateGallery(direction) {
+            function navigateGallery(that, direction) {
 
                 // control prev/next
                 if (direction === 'next') {
@@ -421,7 +421,7 @@ ui.photoGallery = {
 
                     imgZoom = 1;
 
-                    ui.removeClass(this, ui.photoGallery.namePreviewZoom);
+                    ui.removeClass(that, ui.photoGallery.namePreviewZoom);
                     img.style.transform = 'translate(' + imgPosX + '%,' + imgPosY + '%) scale(' + imgZoom + ')';
 
                 }, ui.globals.ease);
@@ -429,16 +429,16 @@ ui.photoGallery = {
             }
 
             // Event Listeners
-            ui.on('.' + ui.photoGallery.namePrev + ',.' + ui.photoGallery.nameNext,
+            ui.on('.' + ui.photoGallery.targetPreview + ' .' + ui.photoGallery.namePrev + ',.' + ui.photoGallery.targetPreview + ' .' + ui.photoGallery.nameNext,
                 'click',
 
                 function () {
 
                     if (ui.hasClass(this, ui.photoGallery.nameNext)) {
-                        navigateGallery('next');
+                        navigateGallery(this, 'next');
 
                     } else {
-                        navigateGallery('prev');
+                        navigateGallery(this, 'prev');
                     }
 
                 });
@@ -449,10 +449,10 @@ ui.photoGallery = {
                 function (e) {
 
                     if (e.keyCode === 39) {
-                        navigateGallery('next');
+                        navigateGallery(this, 'next');
 
                     } else if (e.keyCode === 37) {
-                        navigateGallery('prev');
+                        navigateGallery(this, 'prev');
                     }
 
                 });
