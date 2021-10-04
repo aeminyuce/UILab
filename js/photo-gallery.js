@@ -706,7 +706,10 @@ ui.photoGallery = {
 
             function (e) {
 
-                e.preventDefault();
+                if (e.cancelable && e.defaultPrevented) { // touchstart or touchmove with preventDefault we need this. Because, now Chrome and Android browsers preventDefault automatically.
+                    e.preventDefault();
+                }
+
                 if (e.type === 'touchmove') { pageTouchmove = true; }
 
                 var that = this;
