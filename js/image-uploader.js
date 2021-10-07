@@ -5,6 +5,17 @@
 
 ui.imageUploader = {
 
+    // targets
+    target: 'image-uploader',
+
+    // main classnames
+    nameList: 'uploader-list',
+
+    // helper classnames
+    nameLoading: 'loading',
+    nameUploading: 'uploading',
+
+    // values
     ratio: '4:3', // activated when resize: false
 
     resize: true, // resize images
@@ -41,7 +52,7 @@ ui.imageUploader = {
 
         function loadFiles(uploader, files) {
 
-            var i, ext, c, ctx, data, img, imgLoaded, w, h, r, size, allowed, showTimer, readers, listCont, list, tools, loaded, loadImages, loadImagesAfter, html, newItem;
+            var i, ext, c, ctx, data, img, imgLoaded, w, h, r, size, allowed, showTimer, readers, listCont, list, loaded, loadImages, loadImagesAfter, html, newItem;
 
             if (files.length > 0) {
 
@@ -80,11 +91,10 @@ ui.imageUploader = {
                 c = document.createElement("canvas");
                 ctx = c.getContext("2d");
 
-                ui.addClass(uploader, 'loading');
-                tools = ui.find('.uploader-tools', uploader)[0];
+                ui.addClass(uploader, ui.imageUploader.nameLoading);
 
-                listCont = ui.find('.uploader-list', uploader)[0];
-                list = ui.find('.uploader-list ul', uploader)[0];
+                listCont = ui.find('.' + ui.imageUploader.nameList, uploader)[0];
+                list = ui.find('.' + ui.imageUploader.nameList + ' ul', uploader)[0];
 
                 loadImages = function (j, tag) {
 
@@ -239,32 +249,33 @@ ui.imageUploader = {
 
                         setTimeout(function () {
 
-                            ui.each(imgLoaded, function (k) {
+                            ui.each(imgLoaded,
 
-                                if (imgLoaded[k] !== undefined) { // return when image loading failed
+                                function (k) {
 
-                                    html += '<li class="open-ease">' +
-                                        '<span class="img">' +
-                                            '<img id="' + imgLoaded[k].id + '" src="' + imgLoaded[k].data + '" alt="">' +
-                                        '</span>' +
-                                        '<span class="name">' + imgLoaded[k].name + '</span>' +
-                                        '<span class="info">' + imgLoaded[k].size + 'kb' + '</span>';
+                                    if (imgLoaded[k] !== undefined) { // return when image loading failed
 
-                                    if (imgLoaded[k].tag !== '') { // add tags
-                                        html += '<span class="tag">' + imgLoaded[k].tag + '</span>';
+                                        html += '<li class="open-ease">' +
+                                            '<span class="img">' +
+                                                '<img id="' + imgLoaded[k].id + '" src="' + imgLoaded[k].data + '" alt="">' +
+                                            '</span>' +
+                                            '<span class="name">' + imgLoaded[k].name + '</span>' +
+                                            '<span class="info">' + imgLoaded[k].size + 'kb' + '</span>';
+
+                                        if (imgLoaded[k].tag !== '') { // add tags
+                                            html += '<span class="tag">' + imgLoaded[k].tag + '</span>';
+                                        }
+
+                                        html += '</li>';
+
                                     }
 
-                                    html += '</li>';
-
-                                }
-
-                            });
+                                });
 
                             list.insertAdjacentHTML('beforeend', html);
 
                         }, 0);
 
-                        ui.addClass(tools, 'open');
                         ui.addClass(listCont, 'open');
 
                         if (savedImgs) {
@@ -276,16 +287,16 @@ ui.imageUploader = {
 
                         setTimeout(function () {
 
-                            ui.addClass(tools, 'open-ease');
+                            newItem = ui.find('.' + ui.imageUploader.nameList + ' li.open-ease', listCont);
+                            ui.each(newItem,
 
-                            newItem = ui.find('.uploader-list ul > li.open-ease', listCont);
-                            ui.each(newItem, function (k) {
+                                function (k) {
 
-                                setTimeout(function () {
-                                    ui.removeClass(newItem[k], 'open-ease');
-                                }, (ui.globals.fast / 2) * k);
+                                    setTimeout(function () {
+                                        ui.removeClass(newItem[k], 'open-ease');
+                                    }, (ui.globals.fast / 2) * k);
 
-                            });
+                                });
 
                             // empty variables
                             allowed = [];
@@ -302,169 +313,187 @@ ui.imageUploader = {
                         }, showTimer);
 
                         setTimeout(function () {
-                            ui.removeClass(uploader, 'loading');
+                            ui.removeClass(uploader, ui.imageUploader.nameLoading);
                         }, showTimer);
 
                     }
 
                 };
 
-                ui.each(allowed, function (i) {
+                ui.each(allowed,
 
-                    if (savedImgs) { // array: get images saved before
+                    function (i) {
 
-                        img[i] = new Image();
-                        img[i].src = allowed[i].name;
-
-                        img[i].onload = function () {
-
-                            loadImages(i, allowed[i].tag);
-                            loadImagesAfter(); // end of images
-
-                        };
-
-                        img[i].onerror = function () {
-
-                            if (ui.alerts === undefined) {
-                                alert(ui.imageUploader.msgImgError);
-
-                            } else {
-
-                                ui.alerts.message({
-                                    msg: allowed[i].name + ' ' + ui.imageUploader.msgImgError,
-                                    theme: 'danger'
-                                });
-
-                            }
-
-                            loadImagesAfter(); // end of images
-
-                        };
-
-                    } else { // FileList object: get images from user selected
-
-                        readers[i] = new FileReader(); // filereader API
-                        readers[i].readAsDataURL(allowed[i]);
-
-                        readers[i].onload = function () {
+                        if (savedImgs) { // array: get images saved before
 
                             img[i] = new Image();
-                            img[i].src = this.result;
+                            img[i].src = allowed[i].name;
 
-                            img[i].onload = function () { loadImages(i, ''); };
+                            img[i].onload = function () {
 
-                        };
+                                loadImages(i, allowed[i].tag);
+                                loadImagesAfter(); // end of images
 
-                        readers[i].onloadend = loadImagesAfter; // end of images
+                            };
 
-                    }
+                            img[i].onerror = function () {
 
-                });
+                                if (ui.alerts === undefined) {
+                                    alert(ui.imageUploader.msgImgError);
+
+                                } else {
+
+                                    ui.alerts.message({
+                                        msg: allowed[i].name + ' ' + ui.imageUploader.msgImgError,
+                                        theme: 'danger'
+                                    });
+
+                                }
+
+                                loadImagesAfter(); // end of images
+
+                            };
+
+                        } else { // FileList object: get images from user selected
+
+                            readers[i] = new FileReader(); // filereader API
+                            readers[i].readAsDataURL(allowed[i]);
+
+                            readers[i].onload = function () {
+
+                                img[i] = new Image();
+                                img[i].src = this.result;
+
+                                img[i].onload = function () { loadImages(i, ''); };
+
+                            };
+
+                            readers[i].onloadend = loadImagesAfter; // end of images
+
+                        }
+
+                    });
 
             }
 
         }
 
         // load saved before images
-        uploaders = ui.find('.image-uploader');
-        ui.each(uploaders, function () {
+        uploaders = ui.find('.' + ui.imageUploader.target);
+        ui.each(uploaders,
 
-            var i, list, imported, img, id, tag;
+            function () {
 
-            i = -1;
-            imported = [];
+                var i, list, imported, img, id, tag;
 
-            list = ui.find('.uploader-list ul > li', this);
-            ui.each(list, function () {
+                i = -1;
+                imported = [];
 
-                img = this.getAttribute('data-ui-img');
-                if (img !== null && img !== '') {
+                list = ui.find('.' + ui.imageUploader.nameList + ' li', this);
+                ui.each(list,
 
-                    id = this.getAttribute('data-ui-id');
-                    if (id !== null && id !== '') {
+                    function () {
 
-                        i += 1;
-                        imported[i] = [];
+                        img = this.getAttribute('data-ui-img');
+                        if (img !== null && img !== '') {
 
-                        imported[i].name = img;
-                        imported[i].id = id;
-                        imported[i].tag = '';
+                            id = this.getAttribute('data-ui-id');
+                            if (id !== null && id !== '') {
 
-                        tag = this.getAttribute('data-ui-tag');
-                        if (tag !== null) { imported[i].tag = tag; }
+                                i += 1;
+                                imported[i] = [];
 
-                    }
+                                imported[i].name = img;
+                                imported[i].id = id;
+                                imported[i].tag = '';
 
-                }
+                                tag = this.getAttribute('data-ui-tag');
+                                if (tag !== null) { imported[i].tag = tag; }
 
-                this.parentNode.removeChild(this);
+                            }
+
+                        }
+
+                        this.parentNode.removeChild(this);
+
+                    });
+
+                savedImgs = true;
+                loadFiles(this, imported);
+
+                // empty variables
+                imported = [];
 
             });
-
-            savedImgs = true;
-            loadFiles(this, imported);
-
-            // empty variables
-            imported = [];
-
-        });
 
         // Event Listeners
-        ui.on(document, 'dragenter', '.image-uploader', function (e) {
+        ui.on(document,
 
-            e.preventDefault();
-            e.stopPropagation();
+            'dragenter', '.' + ui.imageUploader.target,
 
-            var that, uploader;
+            function (e) {
 
-            ui.addClass(this, 'drop-highlight');
-            that = this;
+                e.preventDefault();
+                e.stopPropagation();
 
-            ui.on('body', 'dragover.uploader', function (ev) {
+                var that, uploader;
 
-                ev.preventDefault();
-                ev.stopPropagation();
+                ui.addClass(this, 'drop-highlight');
+                that = this;
 
-                uploader = ui.closest(ev.target, '.image-uploader')[0];
+                ui.on('body',
+
+                    'dragover.uploader',
+
+                    function (ev) {
+
+                        ev.preventDefault();
+                        ev.stopPropagation();
+
+                        uploader = ui.closest(ev.target, '.' + ui.imageUploader.target)[0];
+
+                        if (uploader === undefined) {
+                            ui.removeClass(that, 'drop-highlight');
+
+                        } else {
+                            ui.addClass(that, 'drop-highlight');
+                        }
+
+                    });
+
+            });
+
+        ui.on('body',
+
+            'drop',
+
+            function (e) {
+
+                e.preventDefault();
+                e.stopPropagation();
+
+                var uploader = ui.closest(e.target, '.' + ui.imageUploader.target)[0];
 
                 if (uploader === undefined) {
-                    ui.removeClass(that, 'drop-highlight');
+                    ui.removeClass(uploader, 'drop-highlight');
 
                 } else {
-                    ui.addClass(that, 'drop-highlight');
+
+                    ui.addClass(uploader, 'drop-highlight');
+
+                    savedImgs = false;
+                    loadFiles(uploader, e.dataTransfer.files);
+
+                    ui.removeClass(uploader, 'drop-highlight');
+                    ui.off(document, 'dragover.uploader');
+
                 }
 
             });
 
-        });
+        ui.on(document, 'change', '.' + ui.imageUploader.target + ' input[type="file"]', function () {
 
-        ui.on('body', 'drop', function (e) {
-
-            e.preventDefault();
-            e.stopPropagation();
-
-            var uploader = ui.closest(e.target, '.image-uploader')[0];
-
-            if (uploader === undefined) {
-                ui.removeClass(uploader, 'drop-highlight');
-
-            } else {
-
-                ui.addClass(uploader, 'drop-highlight');
-
-                savedImgs = false;
-                loadFiles(uploader, e.dataTransfer.files);
-
-                ui.removeClass(uploader, 'drop-highlight');
-                ui.off(document, 'dragover.uploader');
-
-            }
-
-        });
-
-        ui.on(document, 'change', '.image-uploader input[type="file"]', function () {
-
-            var uploader = ui.closest(this, '.image-uploader')[0];
+            var uploader = ui.closest(this, '.' + ui.imageUploader.target)[0];
 
             savedImgs = false;
             loadFiles(uploader, this.files);
@@ -499,120 +528,126 @@ ui.imageUploader = {
 
         }
 
-        ui.on(document, 'submit', '.image-uploader form', function (e) {
+        ui.on(document,
 
-            e.preventDefault();
+            'submit', '.' + ui.imageUploader.target + ' form',
 
-            var fnc, that, formData, uploader, list, file, tag, img, imgType, confirmed;
-            that = this;
+            function (e) {
 
-            fnc = function () {
+                e.preventDefault();
 
-                formData = new FormData(); // formdata API
+                var fnc, that, formData, uploader, list, file, tag, img, imgType, confirmed;
+                that = this;
 
-                uploader = ui.closest(that, '.image-uploader')[0];
-                list = ui.find('.uploader-list ul > li', uploader);
+                fnc = function () {
 
-                ui.each(list, function (i) {
+                    formData = new FormData(); // formdata API
 
-                    file = ui.find('.img img', this)[0];
-                    formData.append('id[' + i + ']', file.id); // add id
+                    uploader = ui.closest(that, '.' + ui.imageUploader.target)[0];
+                    list = ui.find('.' + ui.imageUploader.nameList + ' li', uploader);
 
-                    tag = ui.find('.tag', this)[0];
-                    if (tag !== undefined) { tag = tag.textContent; } else { tag = ''; }
+                    ui.each(list,
 
-                    formData.append('tag[' + i + ']', tag); // add image tag
+                        function (i) {
 
-                    img = file.src.split(";");
-                    imgType = img[0].split(":")[1]; // get image type
+                            file = ui.find('.img img', this)[0];
+                            formData.append('id[' + i + ']', file.id); // add id
 
-                    img = img[1].split(",")[1];
-                    img = toBlob(img, imgType); // convert to blob to using server's file protocol
+                            tag = ui.find('.tag', this)[0];
+                            if (tag !== undefined) { tag = tag.textContent; } else { tag = ''; }
 
-                    formData.append('img[' + i + ']', img); // add image file
+                            formData.append('tag[' + i + ']', tag); // add image tag
 
-                });
+                            img = file.src.split(";");
+                            imgType = img[0].split(":")[1]; // get image type
 
-                ui.addClass(uploader, 'uploading');
+                            img = img[1].split(",")[1];
+                            img = toBlob(img, imgType); // convert to blob to using server's file protocol
 
-                ui.ajax({
+                            formData.append('img[' + i + ']', img); // add image file
 
-                    type: 'POST',
-                    url : that.action,
-                    data: formData,
+                        });
 
-                    callback: function (status, response) {
+                    ui.addClass(uploader, ui.imageUploader.nameUploading);
 
-                        ui.removeClass(uploader, 'uploading');
-                        if (status === 'success') { // check ajax connection
+                    ui.ajax({
 
-                            response = JSON.parse(response);
+                        type: 'POST',
+                        url : that.action,
+                        data: formData,
 
-                            if (ui.alerts === undefined) {
-                                alert(response.message); // show server message
+                        callback: function (status, response) {
+
+                            ui.removeClass(uploader, ui.imageUploader.nameUploading);
+                            if (status === 'success') { // check ajax connection
+
+                                response = JSON.parse(response);
+
+                                if (ui.alerts === undefined) {
+                                    alert(response.message); // show server message
+
+                                } else {
+
+                                    if (response.success === true) { // check server connection
+
+                                        ui.alerts.message({
+                                            msg: response.message, // show server message
+                                            theme: 'success'
+                                        });
+
+                                    } else {
+
+                                        ui.alerts.message({
+                                            msg: response.message, // show server message
+                                            theme: 'danger'
+                                        });
+
+                                    }
+
+                                }
 
                             } else {
 
-                                if (response.success === true) { // check server connection
-
-                                    ui.alerts.message({
-                                        msg: response.message, // show server message
-                                        theme: 'success'
-                                    });
+                                if (ui.alerts === undefined) {
+                                    alert(ui.imageUploader.msgError);
 
                                 } else {
 
                                     ui.alerts.message({
-                                        msg: response.message, // show server message
-                                        theme: 'danger'
+                                        msg: ui.imageUploader.msgError,
+                                        theme: 'warning'
                                     });
 
                                 }
 
                             }
 
-                        } else {
-
-                            if (ui.alerts === undefined) {
-                                alert(ui.imageUploader.msgError);
-
-                            } else {
-
-                                ui.alerts.message({
-                                    msg: ui.imageUploader.msgError,
-                                    theme: 'warning'
-                                });
-
-                            }
-
                         }
 
-                    }
+                    });
 
-                });
+                };
 
-            };
+                if (ui.alerts === undefined) {
 
-            if (ui.alerts === undefined) {
+                    confirmed = confirm(ui.imageUploader.msgBeforeUpload);
+                    if (confirmed) { fnc(); }
 
-                confirmed = confirm(ui.imageUploader.msgBeforeUpload);
-                if (confirmed) { fnc(); }
+                } else {
 
-            } else {
+                    ui.alerts.dialog({
 
-                ui.alerts.dialog({
+                        msg: ui.imageUploader.msgBeforeUpload,
 
-                    msg: ui.imageUploader.msgBeforeUpload,
+                        callback: function (value) {
+                            if (value === 'success') { fnc(); }
+                        }
 
-                    callback: function (value) {
-                        if (value === 'success') { fnc(); }
-                    }
+                    });
 
-                });
+                }
 
-            }
-
-        });
+            });
 
     };
 

@@ -2,14 +2,10 @@
 /* image uploader */ @import 'ui.less';
 
 @image-uploader-padding:                      10px;
-@image-uploader-add-btn-size:                 @btn-lg;
 
 @image-uploader-drop-opacity:                 .15;
 @image-uploader-drop-bg:                      hsl(0, 0%, 93%);
 @image-uploader-drop-bg-dark:                 hsl(222, 13%, 15%);
-
-@image-uploader-tools-bg:                     fade(@black, 5%);
-@image-uploader-tools-bg-dark:                fade(@white, 3.5%);
 
 @image-uploader-list-min-height:              220px;
 @image-uploader-list-bg:                      fade(@white, 45%);
@@ -47,7 +43,6 @@
 
 ._global-vars () {
     --image-uploader-drop-bg: @image-uploader-drop-bg;
-    --image-uploader-tools-bg: @image-uploader-tools-bg;
 
     --image-uploader-list-bg: @image-uploader-list-bg;
     --image-uploader-list-border: @image-uploader-list-border;
@@ -57,7 +52,6 @@
 }
 ._global-vars-dark () {
     --image-uploader-drop-bg: @image-uploader-drop-bg-dark;
-    --image-uploader-tools-bg: @image-uploader-tools-bg-dark;
 
     --image-uploader-list-bg: @image-uploader-list-bg-dark;
     --image-uploader-list-border: @image-uploader-list-border-dark;
@@ -78,58 +72,29 @@
         transition-property: margin; transition-duration: @ease-default;
 
         & > .icon { transition-property: opacity; transition-duration: @ease-default; }
-        ul {
-            & > li {
-                transition-property: opacity; transition-duration: (@ease-default * 2);
+        li {
+            transition-property: opacity; transition-duration: (@ease-default * 2);
 
-                img { transition-property: transform, box-shadow; transition-duration: @ease-default; }
-            }
+            img { transition-property: transform, box-shadow; transition-duration: @ease-default; }
         }
     }
-
-    .uploader-tools { &:extend(.ease-image-uploader .uploader-list ul > li); }
 }
 
 .image-uploader {
     ._bg-var(card-bg); overflow: hidden; position: relative;
 
-    .uploader-panel {
-        text-align: right; min-height: (@image-uploader-add-btn-size + @image-uploader-padding); padding: (@image-uploader-padding / 2) @image-uploader-padding;
-
-        & > .row { margin-left: 0; margin-right: 0; }
-        h3,h4,h5,h6 { font-size: @x-large; line-height: @image-uploader-add-btn-size; margin-bottom: 0; float: left; }
-    }
-
     &.loading,&.uploading {
-        .file,.uploader-upload { background-image: @image-uploader-loading-bg; background-size: @image-uploader-loading-stripe-size @image-uploader-loading-stripe-size; animation: uploader-loader 1s linear infinite; }
-    }
-
-    .file {
-        float: right;
-
-        .btn {
-            b { font-weight: @font-normal; }
-        }
-    }
-
-    .uploader-tools {
-        ._bg-var(image-uploader-tools-bg); padding: (@image-uploader-padding / 2) @image-uploader-padding;
-
-        &:not(.open) { display: none; }
-        &:not(.open-ease) { opacity: 0; }
+        .file,.uploader-send { background-image: @image-uploader-loading-bg; background-size: @image-uploader-loading-stripe-size @image-uploader-loading-stripe-size; animation: uploader-loader 1s linear infinite; }
     }
 
     &.drop-highlight {
         ._bg-var(image-uploader-drop-bg);
 
-        .uploader-tools { opacity: @image-uploader-drop-opacity; }
         .uploader-list {
             &:extend(.image-uploader .uploader-list:not(.open));
 
             & > .icon { display: block; }
-            ul {
-                & > li { opacity: @image-uploader-drop-opacity; }
-            }
+            li { opacity: @image-uploader-drop-opacity; }
         }
     }
 
@@ -142,7 +107,7 @@
         ul {
             list-style: none; padding: (@image-uploader-padding / 2); margin: 0; display: flex; flex-wrap: wrap;
 
-            & > li {
+           li {
                 padding: (@image-uploader-padding / 2);
 
                 &.open-ease { opacity: 0; }
@@ -168,46 +133,44 @@
         }
 
         &:not(.open) {
-            ._bg-var(image-uploader-list-bg); margin: (@image-uploader-padding / 2) @image-uploader-padding @image-uploader-padding @image-uploader-padding; ._border-var(@style: @image-uploader-list-border-style; @width: @image-uploader-list-border-size; @var: image-uploader-list-border); border-radius: @round;
+            ._bg-var(image-uploader-list-bg); margin: @image-uploader-padding; ._border-var(@style: @image-uploader-list-border-style; @width: @image-uploader-list-border-size; @var: image-uploader-list-border); border-radius: @round;
 
-            ul {
-                & > li { display: none; }
-            }
+            li { display: none; }
         }
     }
 }
 
 @media (@default-start) {
     .uploader-list {
-        ul > li { width: 20%; }
+        li { width: 20%; }
     }
 }
 @media (@md-finish) {
     .uploader-list {
-        ul > li { width: 25%; }
+        li { width: 25%; }
     }
 }
 @media (@sm-finish) {
     .uploader-list {
-        ul > li { width: 33.333332%; }
+        li { width: 33.333332%; }
     }
 }
 @media (@sm-start) {
     .uploader-list {
-        ul > li {
+        li {
             .img { min-height: @image-uploader-list-img-min-height; }
         }
     }
 }
 @media (@xs-finish) {
     .uploader-list {
-        ul > li {
+        li {
             .img { min-height: @image-uploader-list-img-min-height-xs; }
         }
     }
 }
 @media (max-width: (@layout-min + 60)) {
     .uploader-list {
-        ul > li { width: 50%; }
+        li { width: 50%; }
     }
 }

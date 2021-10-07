@@ -29,6 +29,9 @@ ui.lineCharts = {
     // tags
     tagLines: 'li',
 
+    tagInfoColor: 'span',
+    tagInfoStat: 'b',
+
     // values
     colors: [
         'hsl(30, 100%, 63%)',
@@ -510,16 +513,18 @@ ui.lineCharts = {
                                 total += parseInt(data[i].y[j]);
                             }
 
-                            html += '<li><span style="background: ' + data.color[i] + '"></span>';
+                            html += '<li>' +
+                                '<' + ui.lineCharts.tagInfoColor +' style="background: ' + data.color[i] + '">' +
+                                '</' + ui.lineCharts.tagInfoColor + '>';
 
                             if (data.name[i] === '') {
-                                html += '<b>' + total;
+                                html += '<' + ui.lineCharts.tagInfoStat + '>' + total;
 
                             } else {
                                 html += data.name[i] + ': <b>' + total;
                             }
 
-                            html += '</b></li>';
+                            html += '</' + ui.lineCharts.tagInfoStat + '></li>';
 
                         }
 

@@ -465,19 +465,19 @@
 
                     <label class="form-label padding-10-b">File Input Like Buttons</label>
                     <div>
-                        <div class="file no-border inline-block round hover ease-form">
+                        <div class="file no-border inline-block round ease-form">
                             <input type="file">
                             <span class="btn btn-square ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>
-                        <div class="file inline-block round hover ease-form">
+                        <div class="file inline-block round ease-form">
                             <input type="file">
                             <span class="btn btn-square ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>
-                        <div class="file border-dual inline-block round hover ease-form">
+                        <div class="file border-dual inline-block round ease-form">
                             <input type="file">
                             <span class="btn btn-square ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
@@ -488,21 +488,21 @@
                     <span class="sp-10"></span>
 
                     <div class="form-lg">
-                        <div class="file no-border inline-block round hover ease-form">
+                        <div class="file no-border inline-block round ease-form">
                             <input type="file">
                             <span class="btn btn-square ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>
 
-                        <div class="file inline-block round hover ease-form">
+                        <div class="file inline-block round ease-form">
                             <input type="file">
                             <span class="btn btn-square ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>
 
-                        <div class="file border-dual inline-block round hover ease-form">
+                        <div class="file border-dual inline-block round ease-form">
                             <input type="file">
                             <span class="btn btn-square ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
