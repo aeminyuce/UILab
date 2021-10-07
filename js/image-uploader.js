@@ -256,11 +256,11 @@ ui.imageUploader = {
                                     if (imgLoaded[k] !== undefined) { // return when image loading failed
 
                                         html += '<li class="open-ease">' +
-                                            '<span class="img">' +
-                                                '<img id="' + imgLoaded[k].id + '" src="' + imgLoaded[k].data + '" alt="">' +
-                                            '</span>' +
-                                            '<span class="name">' + imgLoaded[k].name + '</span>' +
-                                            '<span class="info">' + imgLoaded[k].size + 'kb' + '</span>';
+                                                    '<span class="img">' +
+                                                        '<img id="' + imgLoaded[k].id + '" src="' + imgLoaded[k].data + '" alt="">' +
+                                                    '</span>' +
+                                                    '<span class="name">' + imgLoaded[k].name + '</span>' +
+                                                    '<span class="info">' + imgLoaded[k].size + 'kb' + '</span>';
 
                                         if (imgLoaded[k].tag !== '') { // add tags
                                             html += '<span class="tag">' + imgLoaded[k].tag + '</span>';
@@ -428,8 +428,9 @@ ui.imageUploader = {
 
         // Event Listeners
         ui.on(document,
+            'dragenter',
 
-            'dragenter', '.' + ui.imageUploader.target,
+            '.' + ui.imageUploader.target,
 
             function (e) {
 
@@ -442,7 +443,6 @@ ui.imageUploader = {
                 that = this;
 
                 ui.on('body',
-
                     'dragover.uploader',
 
                     function (ev) {
@@ -464,7 +464,6 @@ ui.imageUploader = {
             });
 
         ui.on('body',
-
             'drop',
 
             function (e) {
@@ -491,14 +490,19 @@ ui.imageUploader = {
 
             });
 
-        ui.on(document, 'change', '.' + ui.imageUploader.target + ' input[type="file"]', function () {
+        ui.on(document,
+            'change',
 
-            var uploader = ui.closest(this, '.' + ui.imageUploader.target)[0];
+            '.' + ui.imageUploader.target + ' input[type="file"]',
 
-            savedImgs = false;
-            loadFiles(uploader, this.files);
+            function () {
 
-        });
+                var uploader = ui.closest(this, '.' + ui.imageUploader.target)[0];
+
+                savedImgs = false;
+                loadFiles(uploader, this.files);
+
+            });
 
         function toBlob(base, type, sliceSize) { // convert base64 images to blob
 
@@ -529,8 +533,9 @@ ui.imageUploader = {
         }
 
         ui.on(document,
+            'submit',
 
-            'submit', '.' + ui.imageUploader.target + ' form',
+            '.' + ui.imageUploader.target + ' form',
 
             function (e) {
 
@@ -646,6 +651,18 @@ ui.imageUploader = {
                     });
 
                 }
+
+            });
+
+        ui.on(document,
+            'click',
+
+            '.' + ui.imageUploader.nameLoading + ',.' + ui.imageUploader.nameUploading,
+
+            function (e) { // prevent clicks when loading and uploading
+
+                e.preventDefault();
+                e.stopPropagation();
 
             });
 

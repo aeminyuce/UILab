@@ -18,7 +18,7 @@
                                 </span>
                             </div>
 
-                            <button type="submit" name="send" class="uploader-send btn btn-square round theme-base ui-fill-dark-100 ease-btn">
+                            <button type="submit" name="send" class="btn btn-square round theme-base ui-fill-dark-100 ease-btn">
                                 <svg class="icon"><use href="#save"/></svg>
                             </button>
 
