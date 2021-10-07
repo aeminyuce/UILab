@@ -114,9 +114,6 @@
                                 </label>
                             </div>
 
-                        </div>
-                        <div class="col-3 col-md-4 col-sm-6">
-
                             <h5 class="font-bold">Typography</h5>
 
                             <div class="generate-forms margin-20-b block-1st">
@@ -143,6 +140,9 @@
                                     Listings
                                 </label>
                             </div>
+
+                        </div>
+                        <div class="col-3 col-md-4 col-sm-6">
 
                             <h5 class="font-bold">Buttons</h5>
 
@@ -219,9 +219,6 @@
                                 </label>
                             </div>
 
-                        </div>
-                        <div class="col-3 col-md-4 col-sm-6">
-
                             <h5 class="font-bold">Icons</h5>
 
                             <div class="generate-forms margin-20-b block-1st">
@@ -241,6 +238,9 @@
                                     Icons
                                 </label>
                             </div>
+
+                        </div>
+                        <div class="col-3 col-md-4 col-sm-6">
 
                             <h5 class="font-bold">Layout</h5>
 
@@ -345,6 +345,47 @@
                                 </label>
                             </div>
 
+                            <h5 class="font-bold">Charts</h5>
+
+                            <div class="generate-forms margin-20-b block-1st">
+                                <label class="custom margin-5-b opacity ease-opacity">
+                                    <span class="switch-custom round border-dual ease-form">
+                                        <input class="generate-toggle" type="checkbox">
+                                        <i class="state"></i>
+                                    </span>
+                                    <span class="font-color-black-50">Select/Deselect All</span>
+                                </label>
+
+                                <label class="custom">
+                                    <span class="switch-custom round border-dual ease-form">
+                                        <input type="checkbox" name="line charts" value="../css/line-charts">
+                                        <i class="state ui-fill-dark-100"></i>
+                                    </span>
+                                    Line Charts
+                                </label>
+                                <label class="custom">
+                                    <span class="switch-custom round border-dual ease-form">
+                                        <input type="checkbox" name="donut chart" value="../css/donut-chart">
+                                        <i class="state ui-fill-dark-100"></i>
+                                    </span>
+                                    Donut Chart
+                                </label>
+                                <label class="custom">
+                                    <span class="switch-custom round border-dual ease-form">
+                                        <input type="checkbox" name="pie chart" value="../css/pie-chart">
+                                        <i class="state ui-fill-dark-100"></i>
+                                    </span>
+                                    Pie Chart
+                                </label>
+                                <label class="custom">
+                                    <span class="switch-custom round border-dual ease-form">
+                                        <input type="checkbox" name="svg map" value="../css/svg-map">
+                                        <i class="state ui-fill-dark-100"></i>
+                                    </span>
+                                    SVG Map
+                                </label>
+                            </div>
+
                         </div>
                         <div class="col-3 col-md-4 col-sm-6">
 
@@ -438,12 +479,12 @@
                                 </label>
                             </div>
 
-                            <h5 class="font-bold">Charts</h5>
+                            <h5 class="font-bold">Themes</h5>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ease-opacity">
                                     <span class="switch-custom round border-dual ease-form">
-                                        <input class="generate-toggle" type="checkbox">
+                                        <input class="generate-toggle" type="checkbox" checked>
                                         <i class="state"></i>
                                     </span>
                                     <span class="font-color-black-50">Select/Deselect All</span>
@@ -451,31 +492,10 @@
 
                                 <label class="custom">
                                     <span class="switch-custom round border-dual ease-form">
-                                        <input type="checkbox" name="line charts" value="../css/line-charts">
+                                        <input type="checkbox" name="themes" value="../css/themes" checked>
                                         <i class="state ui-fill-dark-100"></i>
                                     </span>
-                                    Line Charts
-                                </label>
-                                <label class="custom">
-                                    <span class="switch-custom round border-dual ease-form">
-                                        <input type="checkbox" name="donut chart" value="../css/donut-chart">
-                                        <i class="state ui-fill-dark-100"></i>
-                                    </span>
-                                    Donut Chart
-                                </label>
-                                <label class="custom">
-                                    <span class="switch-custom round border-dual ease-form">
-                                        <input type="checkbox" name="pie chart" value="../css/pie-chart">
-                                        <i class="state ui-fill-dark-100"></i>
-                                    </span>
-                                    Pie Chart
-                                </label>
-                                <label class="custom">
-                                    <span class="switch-custom round border-dual ease-form">
-                                        <input type="checkbox" name="svg map" value="../css/svg-map">
-                                        <i class="state ui-fill-dark-100"></i>
-                                    </span>
-                                    SVG Map
+                                    Themes
                                 </label>
                             </div>
 

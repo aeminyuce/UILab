@@ -129,7 +129,7 @@
 @btn-ghost-hover-bg-dark:               fade(@white, 7.5%);
 
 // compiling
-@referenceCompiling:                    false; // disable duplicate compilings when main ui file imported as reference
+@referenceCompiling:                    false; // disable duplicate compilings when less files imported as reference
 
 // rulesets
 @no-appearance:                         { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
@@ -360,82 +360,4 @@ img { vertical-align: middle; display: inline-block; border: 0; }
 }
 .pause-effects {
     &,&:before,&:after,*,*:before,*:after { transition-property: none !important; animation-play-state: paused !important; }
-}
-
-// themes
-@theme-colors:                          gray green yellow orange red base sub;
-
-[class*="ui-fill-light-"] {
-    ._color-var(black);
-
-    .icon,a,button {
-        &:not([class*="ui-fill-"]):not([class*="font-color-"]) { &:extend([class*="ui-fill-light-"] ); }
-    }
-}
-
-[class*="ui-fill-dark-"] {
-    color: @white;
-
-    .icon,a,button {
-        &:not([class*="ui-fill-"]):not([class*="font-color-"]) { &:extend([class*="ui-fill-dark-"]); }
-    }
-}
-
-.bg-white {
-   &:not([class*="ui-fill-"]) { ._bg-var(white) !important; }
-}
-.card {
-   .bg-white {
-       &:not([class*="ui-fill-"]) { ._bg-var(card-bg) !important; }
-   }
-}
-
-.bg-black {
-   &:not([class*="ui-fill-"]) { background-color: @black !important; }
-}
-
-._theme (@name; @color) {
-    @theme-bg-vars: {
-        light-100: fade(lighten(@color, 10%), 15%);
-        light-200: fade(lighten(@color, 15%), 25%);
-        light-300: fade(lighten(@color, 20%), 35%);
-
-        dark-100: @color;
-        dark-200: darken(@color, 15%);
-        dark-300: darken(@color, 25%);
-    }
-
-    @theme-bg-hover-vars: {
-        light-100: fade(lighten(@color, 10%), 30%);
-        light-200: fade(lighten(@color, 15%), 50%);
-        light-300: fade(lighten(@color, 20%), 70%);
-
-        dark-100: lighten(@color, 15%);
-        dark-200: lighten(@color, 20%);
-        dark-300: lighten(@color, 25%);
-    }
-
-    each(@theme-bg-vars, {
-        .theme-@{name}.ui-fill-@{key},.theme-@{name} .ui-fill-@{key}:not([class*="theme-"]) { background-color: @value; }
-    });
-
-    each(@theme-bg-hover-vars, {
-        .theme-@{name}.ui-fill-@{key},.theme-@{name} .ui-fill-@{key}:not([class*="theme-"]) {
-            .desktop & {
-                &.hover:hover,&.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover { background-color: @value; }
-            }
-          }
-    });
-
-    .theme-@{name}.ui-color,.theme-@{name} .ui-color:not([class*="theme-"]) { color: @color; }
-    .theme-@{name}.ui-stroke,.theme-@{name} .ui-stroke:not([class*="theme-"]) { border-color: @color; }
-}
-
-& when (@referenceCompiling = false) { // not compiled when reference importing
-
-    each(@theme-colors, {
-        @color: @@value;
-        ._theme(@value,  @color);
-    });
-
 }
