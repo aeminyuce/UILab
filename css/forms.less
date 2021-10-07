@@ -25,6 +25,7 @@
 @file-btn-width:                       125px;
 @file-btn-padding:                     7px;
 @file-btn-padding-lg:                  10px;
+@file-input-hover-opacity:             .35;
 
 @range-radius:                         20px;
 @range-thumb-color:                    hsl(220, 3%, 57%);
@@ -104,6 +105,9 @@
         .state { transition-property: width, height, background-color, transform, opacity; transition-duration: @ease-default; }
         select { transition-property: opacity; transition-duration: @ease-default; }
         textarea { transition-property: height; transition-duration: @ease-default; }
+        &.file {
+            input { transition-property: opacity; transition-duration: @ease-default; }
+        }
     }
 }
 
@@ -228,19 +232,20 @@ html:not(.no-effects) {
 .file {
     height: @btn-default; ._border-var(); overflow: hidden; display: block; position: relative;
 
-    input { vertical-align: middle; width: 100%; overflow: hidden; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 3; opacity: 0; } // don't change z-index!
+    input { vertical-align: middle; width: 100%; overflow: hidden; position: absolute; top: -30px; right: 0; bottom: 0; left: 0; z-index: 3; opacity: 0; } // don't change z-index!
     & > i { white-space: nowrap; font-style: normal; text-overflow: ellipsis; line-height: (@btn-default - 2); width: 100%; padding-right: (@form-padding * 2); padding-left: (@file-btn-width + @form-padding * 2); overflow: hidden; display: block; position: absolute; }
 
     .btn {
-        text-overflow: ellipsis; white-space: nowrap; min-width: @file-btn-width; height: @btn-default; line-height: (@btn-default - (@file-btn-padding * 2 + 2)); overflow: hidden; float: left;
+        text-overflow: ellipsis; white-space: nowrap; min-width: @file-btn-width; line-height: (@btn-default - (@file-btn-padding * 2 + 2)); overflow: hidden; float: left;
 
         .icon { ._icon((@btn-default-icon - 2)); }
     }
     &.round {
-        .btn { border-radius: (@round / 2) 0 0 (@round / 2); }
+        .btn:not(.btn-square) { border-radius: (@round / 2) 0 0 (@round / 2); }
     }
     .desktop &:hover {
-        .btn { ._bg-var(btn-hover-bg); }
+        input[class] { opacity: @file-input-hover-opacity; }
+        .btn:not([class*="ui-fill-"]):not(.btn-passive) { ._bg-var(btn-hover-bg); }
     }
 
     &.no-border {
@@ -597,7 +602,7 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
         & > i { font-size: @large; line-height: (@btn-lg - 2); }
 
         .btn {
-            height: @btn-lg; line-height: (@btn-lg - (@file-btn-padding-lg * 2 + 2));
+            line-height: (@btn-lg - (@file-btn-padding-lg * 2 + 2));
 
             .icon { ._icon((@btn-lg-icon - 2)); }
         }
