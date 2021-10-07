@@ -466,20 +466,32 @@
                     <label class="form-label padding-10-b">File Input Like Buttons</label>
                     <div>
                         <div class="file no-border inline-block round ease-form">
-                            <input type="file">
+                            <input class="cursor-pointer" type="file">
                             <span class="btn btn-square ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>
                         <div class="file inline-block round ease-form">
-                            <input type="file">
+                            <input class="cursor-pointer" type="file">
                             <span class="btn btn-square ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>
                         <div class="file border-dual inline-block round ease-form">
-                            <input type="file">
+                            <input class="cursor-pointer" type="file">
                             <span class="btn btn-square ease-btn">
+                                <svg class="icon"><use href="#plus"/></svg>
+                            </span>
+                        </div>
+                        <div class="file no-border inline-block round ease-form">
+                            <input class="bg-white cursor-pointer" type="file">
+                            <span class="btn btn-square theme-base ui-fill-dark-100 ease-btn">
+                                <svg class="icon"><use href="#plus"/></svg>
+                            </span>
+                        </div>
+                        <div class="file no-border inline-block round ease-form">
+                            <input class="bg-white cursor-pointer" type="file">
+                            <span class="btn btn-square theme-green ui-fill-dark-100 ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>
@@ -489,22 +501,32 @@
 
                     <div class="form-lg">
                         <div class="file no-border inline-block round ease-form">
-                            <input type="file">
+                            <input class="cursor-pointer" type="file">
                             <span class="btn btn-square ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>
-
                         <div class="file inline-block round ease-form">
-                            <input type="file">
+                            <input class="cursor-pointer" type="file">
                             <span class="btn btn-square ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>
-
                         <div class="file border-dual inline-block round ease-form">
-                            <input type="file">
+                            <input class="cursor-pointer" type="file">
                             <span class="btn btn-square ease-btn">
+                                <svg class="icon"><use href="#plus"/></svg>
+                            </span>
+                        </div>
+                        <div class="file no-border inline-block round ease-form">
+                            <input class="bg-white cursor-pointer" type="file">
+                            <span class="btn btn-square theme-base ui-fill-dark-100 ease-btn">
+                                <svg class="icon"><use href="#plus"/></svg>
+                            </span>
+                        </div>
+                        <div class="file no-border inline-block round ease-form">
+                            <input class="bg-white cursor-pointer" type="file">
+                            <span class="btn btn-square theme-green ui-fill-dark-100 ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>

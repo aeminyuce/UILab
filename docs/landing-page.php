@@ -5,7 +5,7 @@
 <script src="../js/custom/landing-page.js"></script>
 
 <!-- header: start -->
-<header class="container no-gutter bg-white" data-ui-classes="shadow-lg">
+<header class="container no-gutter" data-ui-classes="shadow-lg">
 
     <div class="border-b theme-farmer2">
         <div class="fixed padding-10-v sm-no-padding-v">

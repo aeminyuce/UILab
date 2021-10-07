@@ -44,31 +44,31 @@
                             <label class="custom">
                                 <span class="check-custom no-border circle ease-form" style="background: hsl(358, 86%, 54%);">
                                     <input type="checkbox" checked>
-                                    <i class="state bg-white circle"></i>
+                                    <i class="state circle"></i>
                                 </span>
                             </label>
                             <label class="custom">
                                 <span class="check-custom no-border circle ease-form" style="background: hsl(296, 73%, 53%);">
                                     <input type="checkbox" checked>
-                                    <i class="state bg-white circle"></i>
+                                    <i class="state circle"></i>
                                 </span>
                             </label>
                             <label class="custom">
                                 <span class="check-custom no-border circle ease-form" style="background: hsl(206, 73%, 50%);">
                                     <input type="checkbox" checked>
-                                    <i class="state bg-white circle"></i>
+                                    <i class="state circle"></i>
                                 </span>
                             </label>
                             <label class="custom">
                                 <span class="check-custom no-border circle ease-form" style="background: hsl(17, 80%, 57%);">
                                     <input type="checkbox">
-                                    <i class="state bg-white circle"></i>
+                                    <i class="state circle"></i>
                                 </span>
                             </label>
                             <label class="custom">
                                 <span class="check-custom no-border circle ease-form" style="background: hsl(48, 85%, 60%);">
                                     <input type="checkbox">
-                                    <i class="state bg-white circle"></i>
+                                    <i class="state circle"></i>
                                 </span>
                             </label>
 
@@ -77,11 +77,11 @@
                             <label class="custom">
                                 <span class="check-custom no-border circle ease-form" style="background: hsl(218, 16%, 10%);">
                                     <input type="checkbox" checked>
-                                    <i class="state bg-white circle"></i>
+                                    <i class="state circle"></i>
                                 </span>
                             </label>
                             <label class="custom">
-                                <span class="check-custom border bg-white circle ease-form">
+                                <span class="check-custom border circle ease-form" style="background: hsl(0, 0%, 77%);">
                                     <input type="checkbox" checked>
                                     <i class="state circle border" style="background: hsl(0, 0%, 96%);"></i>
                                 </span>
@@ -317,7 +317,7 @@
                                 </span>
                                 <ul class="list-inline margin-15-v right">
                                     <li class="circle padding-5 border-dual" style="border-color: hsl(296, 73%, 53%);"></li>
-                                    <li class="circle padding-5 border-dual" style="border-color: hsl(0, 0%, 87%);"></li>
+                                    <li class="circle padding-5 border-dual" style="border-color: hsl(0, 0%, 77%);"></li>
                                 </ul>
                                 <span class="left padding-15-v icons-xs">
                                     <svg class="icon font-color-yellow"><use href="#star-fill"/></svg>
@@ -383,7 +383,7 @@
                                     <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
                                 <ul class="list-inline margin-15-v right">
-                                    <li class="circle padding-5 border-dual" style="border-color: hsl(0, 0%, 87%);"></li>
+                                    <li class="circle padding-5 border-dual" style="border-color: hsl(0, 0%, 77%);"></li>
                                 </ul>
                                 <span class="left padding-15-v icons-xs">
                                     <svg class="icon font-color-yellow"><use href="#star-fill"/></svg>
@@ -449,7 +449,7 @@
                                 </span>
                                 <ul class="list-inline margin-15-v right">
                                     <li class="circle padding-5 border-dual" style="border-color: hsl(296, 73%, 53%);"></li>
-                                    <li class="circle padding-5 border-dual" style="border-color: hsl(0, 0%, 87%);"></li>
+                                    <li class="circle padding-5 border-dual" style="border-color: hsl(0, 0%, 77%);"></li>
                                 </ul>
                                 <span class="left padding-15-v icons-xs">
                                     <svg class="icon font-color-yellow"><use href="#star-fill"/></svg>
