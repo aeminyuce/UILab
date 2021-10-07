@@ -19,19 +19,6 @@
     }
 }
 
-.bg-white {
-   &:not([class*="ui-fill-"]) { ._bg-var(white) !important; }
-}
-.card {
-   .bg-white {
-       &:not([class*="ui-fill-"]) { ._bg-var(card-bg) !important; }
-   }
-}
-
-.bg-black {
-   &:not([class*="ui-fill-"]) { background-color: @black !important; }
-}
-
 ._theme(@name; @color) {
     @theme-bg-vars: {
         light-100: fade(lighten(@color, 10%), 15%);
