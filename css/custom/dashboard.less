@@ -25,8 +25,8 @@
         }
     }
     & when (@dark-mode-auto-switcher = false) {
-        [data-ui-theme="light"] { ._dashboard-vars(); }
-        [data-ui-theme="dark"] { ._dashboard-vars-dark(); }
+        [data-ui-mode="light"] { ._dashboard-vars(); }
+        [data-ui-mode="dark"] { ._dashboard-vars-dark(); }
     }
 }
 ._theme(panel, @theme-panel);

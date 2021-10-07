@@ -407,10 +407,10 @@ each(@increases, {
         }
     }
     & when (@dark-mode-auto-switcher = false) {
-        [data-ui-theme="light"] {
+        [data-ui-mode="light"] {
             .hidden-light,.visible-dark { .hidden(); }
         }
-        [data-ui-theme="dark"] {
+        [data-ui-mode="dark"] {
             .visible-light,.hidden-dark { .hidden(); }
         }
     }

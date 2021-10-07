@@ -1,5 +1,5 @@
 /* ui */
-[data-ui-theme="light"] {
+[data-ui-mode="light"] {
   --body-bg: hsl(0, 0%, 98%);
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
@@ -71,7 +71,7 @@
   --svg-map-path-fill: hsla(0, 0%, 0%, 0.08);
   --svg-map-path-fill-hover: hsla(0, 0%, 0%, 0.15);
 }
-[data-ui-theme="dark"] {
+[data-ui-mode="dark"] {
   --body-bg: hsl(218, 16%, 10%);
   --white: hsl(0, 0%, 0%);
   --black: hsl(0, 0%, 100%);
@@ -2908,12 +2908,12 @@ html .row {
 .ie .visible-dark {
   display: none !important;
 }
-[data-ui-theme="light"] .hidden-light,
-[data-ui-theme="light"] .visible-dark {
+[data-ui-mode="light"] .hidden-light,
+[data-ui-mode="light"] .visible-dark {
   display: none !important;
 }
-[data-ui-theme="dark"] .visible-light,
-[data-ui-theme="dark"] .hidden-dark {
+[data-ui-mode="dark"] .visible-light,
+[data-ui-mode="dark"] .hidden-dark {
   display: none !important;
 }
 /* borders */
@@ -5366,10 +5366,10 @@ html:not(.no-effects) .ease-range::-moz-range-track {
   font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 14px;
 }
-[data-ui-theme="light"].chrome .text input:-webkit-autofill {
+[data-ui-mode="light"].chrome .text input:-webkit-autofill {
   -webkit-text-fill-color: hsl(0, 0%, 0%) !important;
 }
-[data-ui-theme="dark"].chrome .text input:-webkit-autofill {
+[data-ui-mode="dark"].chrome .text input:-webkit-autofill {
   -webkit-text-fill-color: hsl(0, 0%, 100%) !important;
 }
 .no-border.text input,

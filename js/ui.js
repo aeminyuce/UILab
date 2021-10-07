@@ -798,7 +798,7 @@ ui.darkMode = {
     cookieName: 'ui-darkMode',
 
     // data attributes
-    dataTheme: 'data-ui-theme'
+    dataMod: 'data-ui-mode'
 
 };
 
@@ -841,7 +841,7 @@ ui.darkMode = {
 
         }
 
-        doc.setAttribute(ui.darkMode.dataTheme, mode);
+        doc.setAttribute(ui.darkMode.dataMod, mode);
 
         // Event Listeners
         function setState(mode) { // set theme state
@@ -859,7 +859,7 @@ ui.darkMode = {
             function () {
 
                 if(darkColorScheme.matches) { mode = ui.darkMode.nameDark; } else { mode= ui.darkMode.nameLight; }
-                doc.setAttribute(ui.darkMode.dataTheme, mode);
+                doc.setAttribute(ui.darkMode.dataMod, mode);
 
                 setState(mode);
 
@@ -873,13 +873,13 @@ ui.darkMode = {
                 e.preventDefault();
 
                 // toggle theme color
-                var current = doc.getAttribute(ui.darkMode.dataTheme);
+                var current = doc.getAttribute(ui.darkMode.dataMod);
 
                 if (current !== null && current !== '') {
                     if (current === ui.darkMode.nameDark) { mode = ui.darkMode.nameLight; } else { mode = ui.darkMode.nameDark; }
                 }
 
-                doc.setAttribute(ui.darkMode.dataTheme, mode);
+                doc.setAttribute(ui.darkMode.dataMod, mode);
                 setState(mode);
 
             });

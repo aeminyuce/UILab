@@ -152,12 +152,12 @@ html:not(.no-effects) {
         }
     }
     & when (@dark-mode-auto-switcher = false) {
-        [data-ui-theme="light"] {
+        [data-ui-mode="light"] {
             &.chrome {
                 .text input:-webkit-autofill { -webkit-text-fill-color: @black !important; }
             }
         }
-        [data-ui-theme="dark"] {
+        [data-ui-mode="dark"] {
             &.chrome {
                 .text input:-webkit-autofill { -webkit-text-fill-color: @white !important; }
             }

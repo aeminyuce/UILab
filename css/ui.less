@@ -101,7 +101,6 @@
 @black-50:                              hsla(0, 0%, 0%, 0.50);
 @black:                                 hsl(0, 0%, 0%);
 
-@theme-colors:                          gray green yellow orange red base sub;
 @gray:                                  hsl(0, 0%, 70%);
 @green:                                 hsl(142, 82%, 42%);
 @yellow:                                hsl(42, 100%, 45%);
@@ -180,8 +179,8 @@
         }
     }
     & when (@dark-mode-auto-switcher = false) {
-        [data-ui-theme="light"] { ._global-vars(); }
-        [data-ui-theme="dark"] { ._global-vars-dark(); }
+        [data-ui-mode="light"] { ._global-vars(); }
+        [data-ui-mode="dark"] { ._global-vars-dark(); }
     }
 }
 
@@ -364,6 +363,8 @@ img { vertical-align: middle; display: inline-block; border: 0; }
 }
 
 // themes
+@theme-colors:                          gray green yellow orange red base sub;
+
 [class*="ui-fill-light-"] {
     ._color-var(black);
 
