@@ -2157,6 +2157,12 @@ html .row {
 .align-c * {
   text-align: center !important;
 }
+.bg-white:not([class*="ui-fill-"]) {
+  background-color: hsl(0, 0%, 100%) !important;
+}
+.bg-black:not([class*="ui-fill-"]) {
+  background-color: hsl(0, 0%, 0%) !important;
+}
 @media print {
   .hidden-print {
     display: none !important;
@@ -4789,6 +4795,12 @@ dt {
   transition-property: height;
   transition-duration: 0.15s;
 }
+.ease-form.file input,
+.ease-1st-form > *.file input,
+.ease-2nd-form > * > *.file input {
+  transition-property: opacity;
+  transition-duration: 0.15s;
+}
 html:not(.no-effects) .ease-range::-webkit-slider-thumb {
   transition-property: transform;
   transition-duration: 0.15s;
@@ -4969,7 +4981,7 @@ html:not(.no-effects) .ease-range::-moz-range-track {
   width: 100%;
   overflow: hidden;
   position: absolute;
-  top: 0;
+  top: -30px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -4992,7 +5004,6 @@ html:not(.no-effects) .ease-range::-moz-range-track {
   text-overflow: ellipsis;
   white-space: nowrap;
   min-width: 125px;
-  height: 32px;
   line-height: 16px;
   overflow: hidden;
   float: left;
@@ -5002,10 +5013,13 @@ html:not(.no-effects) .ease-range::-moz-range-track {
   height: 16px;
   stroke-width: 34px;
 }
-.file.round .btn {
+.file.round .btn:not(.btn-square) {
   border-radius: 3px 0 0 3px;
 }
-.desktop .file:hover .btn {
+.desktop .file:hover input[class] {
+  opacity: 0.35;
+}
+.desktop .file:hover .btn:not([class*="ui-fill-"]):not(.btn-passive) {
   background-color: hsla(0, 0%, 0%, 0.15);
   background-color: var(--btn-hover-bg);
 }
@@ -5594,7 +5608,6 @@ label.custom {
   line-height: 40px;
 }
 .form-lg .file .btn {
-  height: 42px;
   line-height: 20px;
 }
 .form-lg .file .btn .icon {
@@ -8301,8 +8314,8 @@ button.dialog-custom:focus {
   overflow: hidden;
   position: relative;
 }
-.image-uploader.loading .file,
-.image-uploader.uploading .file,
+.image-uploader.loading .file .btn,
+.image-uploader.uploading .file .btn,
 .image-uploader.loading .uploader-send,
 .image-uploader.uploading .uploader-send {
   background-image: linear-gradient(45deg, transparent 25%, hsla(0, 0%, 100%, 0.25) 25%, hsla(0, 0%, 100%, 0.25) 50%, transparent 50%, transparent 75%, hsla(0, 0%, 100%, 0.25) 75%);
@@ -9689,17 +9702,6 @@ html:not(.ie) .svg-map svg {
 [class*="ui-fill-dark-"] a:not([class*="ui-fill-"]):not([class*="font-color-"]),
 [class*="ui-fill-dark-"] button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
   color: hsl(0, 0%, 100%);
-}
-.bg-white:not([class*="ui-fill-"]) {
-  background-color: hsl(0, 0%, 100%) !important;
-  background-color: var(--white) !important;
-}
-.card .bg-white:not([class*="ui-fill-"]) {
-  background-color: hsl(0, 0%, 100%) !important;
-  background-color: var(--card-bg) !important;
-}
-.bg-black:not([class*="ui-fill-"]) {
-  background-color: hsl(0, 0%, 0%) !important;
 }
 .theme-gray.ui-fill-light-100,
 .theme-gray .ui-fill-light-100:not([class*="theme-"]) {
