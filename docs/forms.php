@@ -411,7 +411,23 @@
                 </div>
 
                 <h4>File Input</h4>
-                <div class="padding-30-b">
+                <div class="padding-30-b theme-gray">
+                    <div class="file round no-border ui-fill-light-100 ease-form">
+                        <input type="file">
+                        <span class="btn ease-btn">Browse</span>
+                        <i>Choose file.</i>
+                    </div>
+
+                    <span class="sp-10"></span>
+
+                    <div class="file round ease-form">
+                        <input type="file">
+                        <span class="btn ease-btn">Browse</span>
+                        <i>Choose file.</i>
+                    </div>
+
+                    <span class="sp-10"></span>
+
                     <div class="file round border-dual ease-form">
                         <input type="file">
                         <span class="btn ease-btn">Browse</span>
@@ -422,10 +438,75 @@
 
                     <label class="form-label padding-10-b">File Input with Large Forms</label>
                     <div class="form-lg ease-1st-form">
+                        <div class="file round no-border ui-fill-light-100">
+                            <input type="file">
+                            <span class="btn ease-btn">Browse</span>
+                            <i>Choose file.</i>
+                        </div>
+
+                        <span class="sp-10"></span>
+
+                        <div class="file round">
+                            <input type="file">
+                            <span class="btn ease-btn">Browse</span>
+                            <i>Choose file.</i>
+                        </div>
+
+                        <span class="sp-10"></span>
+
                         <div class="file round border-dual">
                             <input type="file">
                             <span class="btn ease-btn">Browse</span>
                             <i>Choose file.</i>
+                        </div>
+                    </div>
+
+                    <span class="sp-10"></span>
+
+                    <label class="form-label padding-10-b">File Input Like Buttons</label>
+                    <div>
+                        <div class="file no-border inline-block round hover ease-form">
+                            <input type="file">
+                            <span class="btn btn-square ease-btn">
+                                <svg class="icon"><use href="#plus"/></svg>
+                            </span>
+                        </div>
+                        <div class="file inline-block round hover ease-form">
+                            <input type="file">
+                            <span class="btn btn-square ease-btn">
+                                <svg class="icon"><use href="#plus"/></svg>
+                            </span>
+                        </div>
+                        <div class="file border-dual inline-block round hover ease-form">
+                            <input type="file">
+                            <span class="btn btn-square ease-btn">
+                                <svg class="icon"><use href="#plus"/></svg>
+                            </span>
+                        </div>
+                    </div>
+
+                    <span class="sp-10"></span>
+
+                    <div class="form-lg">
+                        <div class="file no-border inline-block round hover ease-form">
+                            <input type="file">
+                            <span class="btn btn-square ease-btn">
+                                <svg class="icon"><use href="#plus"/></svg>
+                            </span>
+                        </div>
+
+                        <div class="file inline-block round hover ease-form">
+                            <input type="file">
+                            <span class="btn btn-square ease-btn">
+                                <svg class="icon"><use href="#plus"/></svg>
+                            </span>
+                        </div>
+
+                        <div class="file border-dual inline-block round hover ease-form">
+                            <input type="file">
+                            <span class="btn btn-square ease-btn">
+                                <svg class="icon"><use href="#plus"/></svg>
+                            </span>
                         </div>
                     </div>
                 </div>
