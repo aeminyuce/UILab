@@ -88,27 +88,7 @@ function pullFiles(that) {
 
     }
 
-    if (that.name === 'less') { // firstly, import main ui file
-
-        ui.ajax({
-
-            url : '../css/ui.less',
-            callback: function (status, response) {
-
-                if (status === 'success') {
-
-                    pullResults += response;
-                    pullResults += '\n';
-
-                    countFnc();
-
-                }
-
-            }
-
-        });
-
-    } else { countFnc(); }
+    countFnc();
 
 }
 

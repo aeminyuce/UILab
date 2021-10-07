@@ -37,16 +37,16 @@
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ease-opacity">
-                                    <span class="switch-custom round border-dual ease-form">
-                                        <input class="generate-toggle" type="checkbox" checked>
+                                    <span class="switch-custom round border-dual ease-form form-disabled">
+                                        <input class="generate-toggle" type="checkbox" checked disabled>
                                         <i class="state"></i>
                                     </span>
                                     <span class="font-color-black-50">Select/Deselect All</span>
                                 </label>
 
                                 <label class="custom">
-                                    <span class="switch-custom round border-dual ease-form">
-                                        <input type="checkbox" name="ui" value="../css/ui" checked>
+                                    <span class="switch-custom round border-dual ease-form form-disabled">
+                                        <input type="checkbox" name="ui" value="../css/ui" checked disabled>
                                         <i class="state ui-fill-dark-100"></i>
                                     </span>
                                     UI
