@@ -22,7 +22,7 @@
 
                     <div class="align-c margin-30-b">
                         <div class="file no-border round circle no-border ease-form form-inline-xs">
-                            <input name="less" class="generate-import" type="file">
+                            <input class="cursor-pointer" name="less" class="generate-import" type="file">
                             <span class="btn circle block ease-btn">
                                 <span class="inline-block">Import LESS File</span>
                                 <svg class="icon margin-5-l"><use href="#import"/></svg>
@@ -539,7 +539,7 @@
 
                     <div class="align-c margin-30-b">
                         <div class="file no-border round circle no-border ease-form form-inline-xs">
-                            <input name="js" class="generate-import" type="file">
+                            <input class="cursor-pointer" name="js" class="generate-import" type="file">
                             <span class="btn circle block ease-btn">
                                 <span class="inline-block">Import JS File</span>
                                 <svg class="icon margin-5-l"><use href="#import"/></svg>
