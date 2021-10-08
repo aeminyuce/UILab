@@ -8,12 +8,27 @@ ui.imageUploader = {
     // targets
     target: 'image-uploader',
 
+    targetImages: 'img',
+    targetNames: 'name',
+    targetInfos: 'info',
+    targetTags: 'tag',
+
     // main classnames
     nameList: 'uploader-list',
+    nameDrop: 'drop-highlight',
 
     // helper classnames
+    nameOpen: 'open',
+    nameOpenEase: 'open-ease',
+
     nameLoading: 'loading',
     nameUploading: 'uploading',
+
+    // tags
+    tagList: 'li',
+
+    tagNames: 'b',
+    tagInfos: 'i',
 
     // values
     ratio: '4:3', // activated when resize: false
@@ -37,7 +52,20 @@ ui.imageUploader = {
     msgImgError: 'is not found!',
 
     msgBeforeUpload: 'Do you want to upload your files?',
-    msgError: 'Your files not saved! Please, check your connection and try again.'
+    msgError: 'Your files not saved! Please, check your connection and try again.',
+
+    // data attributes
+    dataID: 'data-ui-id',
+    dataImg: 'data-ui-img',
+    dataTag: 'data-ui-tag',
+
+    // formData API names
+    formDataID: 'id',
+    formDataTag: 'tag',
+    formDataImg: 'img',
+
+    // custom events
+    eventUploader: 'ui:imageUploader'
 
 };
 
@@ -255,18 +283,29 @@ ui.imageUploader = {
 
                                     if (imgLoaded[k] !== undefined) { // return when image loading failed
 
-                                        html += '<li class="open-ease">' +
-                                                    '<span class="img">' +
+                                        html += '<' + ui.imageUploader.tagList + ' class="' + ui.imageUploader.nameOpenEase + '">' +
+
+                                                    '<span class="' + ui.imageUploader.targetImages + '">' +
                                                         '<img id="' + imgLoaded[k].id + '" src="' + imgLoaded[k].data + '" alt="">' +
                                                     '</span>' +
-                                                    '<span class="name">' + imgLoaded[k].name + '</span>' +
-                                                    '<span class="info">' + imgLoaded[k].size + 'kb' + '</span>';
+
+                                                    '<' + ui.imageUploader.tagNames + ' class="' + ui.imageUploader.targetNames + '">' +
+                                                        imgLoaded[k].name +
+                                                    '</' + ui.imageUploader.tagNames +'>' +
+
+                                                    '<' + ui.imageUploader.tagInfos + ' class="' + ui.imageUploader.targetInfos + '">' +
+                                                        imgLoaded[k].size + 'kb' +
+                                                    '</' + ui.imageUploader.tagInfos + '>';
 
                                         if (imgLoaded[k].tag !== '') { // add tags
-                                            html += '<span class="tag">' + imgLoaded[k].tag + '</span>';
+
+                                            html += '<span class="' + ui.imageUploader.targetTags + '">' +
+                                                        imgLoaded[k].tag +
+                                                    '</span>';
+
                                         }
 
-                                        html += '</li>';
+                                        html += '</' + ui.imageUploader.tagList + '>';
 
                                     }
 
@@ -276,7 +315,7 @@ ui.imageUploader = {
 
                         }, 0);
 
-                        ui.addClass(listCont, 'open');
+                        ui.addClass(listCont, ui.imageUploader.nameOpen);
 
                         if (savedImgs) {
                             showTimer = ui.globals.slow;
@@ -287,13 +326,13 @@ ui.imageUploader = {
 
                         setTimeout(function () {
 
-                            newItem = ui.find('.' + ui.imageUploader.nameList + ' li.open-ease', listCont);
+                            newItem = ui.find('.' + ui.imageUploader.nameList + ' ' + ui.imageUploader.tagList + '.' + ui.imageUploader.nameOpenEase, listCont);
                             ui.each(newItem,
 
                                 function (k) {
 
                                     setTimeout(function () {
-                                        ui.removeClass(newItem[k], 'open-ease');
+                                        ui.removeClass(newItem[k], ui.imageUploader.nameOpenEase);
                                     }, (ui.globals.fast / 2) * k);
 
                                 });
@@ -394,10 +433,10 @@ ui.imageUploader = {
 
                     function () {
 
-                        img = this.getAttribute('data-ui-img');
+                        img = this.getAttribute(ui.imageUploader.dataImg);
                         if (img !== null && img !== '') {
 
-                            id = this.getAttribute('data-ui-id');
+                            id = this.getAttribute(ui.imageUploader.dataID);
                             if (id !== null && id !== '') {
 
                                 i += 1;
@@ -407,7 +446,7 @@ ui.imageUploader = {
                                 imported[i].id = id;
                                 imported[i].tag = '';
 
-                                tag = this.getAttribute('data-ui-tag');
+                                tag = this.getAttribute(ui.imageUploader.dataTag);
                                 if (tag !== null) { imported[i].tag = tag; }
 
                             }
@@ -439,11 +478,11 @@ ui.imageUploader = {
 
                 var that, uploader;
 
-                ui.addClass(this, 'drop-highlight');
+                ui.addClass(this, ui.imageUploader.nameDrop);
                 that = this;
 
                 ui.on('body',
-                    'dragover.uploader',
+                    'dragover.' + ui.imageUploader.eventUploader,
 
                     function (ev) {
 
@@ -453,10 +492,10 @@ ui.imageUploader = {
                         uploader = ui.closest(ev.target, '.' + ui.imageUploader.target)[0];
 
                         if (uploader === undefined) {
-                            ui.removeClass(that, 'drop-highlight');
+                            ui.removeClass(that, ui.imageUploader.nameDrop);
 
                         } else {
-                            ui.addClass(that, 'drop-highlight');
+                            ui.addClass(that, ui.imageUploader.nameDrop);
                         }
 
                     });
@@ -474,17 +513,17 @@ ui.imageUploader = {
                 var uploader = ui.closest(e.target, '.' + ui.imageUploader.target)[0];
 
                 if (uploader === undefined) {
-                    ui.removeClass(uploader, 'drop-highlight');
+                    ui.removeClass(uploader, ui.imageUploader.nameDrop);
 
                 } else {
 
-                    ui.addClass(uploader, 'drop-highlight');
+                    ui.addClass(uploader, ui.imageUploader.nameDrop);
 
                     savedImgs = false;
                     loadFiles(uploader, e.dataTransfer.files);
 
-                    ui.removeClass(uploader, 'drop-highlight');
-                    ui.off(document, 'dragover.uploader');
+                    ui.removeClass(uploader, ui.imageUploader.nameDrop);
+                    ui.off(document, 'dragover.' + ui.imageUploader.eventUploader);
 
                 }
 
@@ -549,19 +588,19 @@ ui.imageUploader = {
                     formData = new FormData(); // formdata API
 
                     uploader = ui.closest(that, '.' + ui.imageUploader.target)[0];
-                    list = ui.find('.' + ui.imageUploader.nameList + ' li', uploader);
+                    list = ui.find('.' + ui.imageUploader.nameList + ' ' + ui.imageUploader.tagList, uploader);
 
                     ui.each(list,
 
                         function (i) {
 
-                            file = ui.find('.img img', this)[0];
-                            formData.append('id[' + i + ']', file.id); // add id
+                            file = ui.find('.' + ui.imageUploader.targetImages + ' img', this)[0];
+                            formData.append(ui.imageUploader.formDataID + '[' + i + ']', file.id); // add id
 
-                            tag = ui.find('.tag', this)[0];
+                            tag = ui.find('.' + ui.imageUploader.targetTags, this)[0];
                             if (tag !== undefined) { tag = tag.textContent; } else { tag = ''; }
 
-                            formData.append('tag[' + i + ']', tag); // add image tag
+                            formData.append(ui.imageUploader.formDataTag + '[' + i + ']', tag); // add image tag
 
                             img = file.src.split(";");
                             imgType = img[0].split(":")[1]; // get image type
@@ -569,7 +608,7 @@ ui.imageUploader = {
                             img = img[1].split(",")[1];
                             img = toBlob(img, imgType); // convert to blob to using server's file protocol
 
-                            formData.append('img[' + i + ']', img); // add image file
+                            formData.append(ui.imageUploader.formDataImg + '[' + i + ']', img); // add image file
 
                         });
 
