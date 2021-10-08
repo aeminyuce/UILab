@@ -9431,7 +9431,7 @@ html:not(.ie) .line-charts.loaded svg circle {
     stroke-dasharray: 0 440;
   }
 }
-.ease-donut-chart circle:not(.bg) {
+.ease-donut-chart circle:not(.donut-bg) {
   transition-property: opacity stroke;
   transition-duration: 0.15s;
   transition-timing-function: ease-in-out;
@@ -9472,14 +9472,14 @@ html:not(.edge) .donut-chart svg:not(.icon) {
   fill: none;
   stroke-width: 10;
 }
-.donut-chart circle.loaded:not(.bg) {
+.donut-chart circle.loaded:not(.donut-bg) {
   animation: donut-draw 1.6s ease-in reverse;
 }
 .donut-chart circle.selected {
   stroke-width: 16;
   transition-duration: 0.15s;
 }
-.donut-chart circle.bg {
+.donut-chart circle.donut-bg {
   stroke: currentColor;
   stroke-width: 6;
   stroke-dashoffset: 0;
