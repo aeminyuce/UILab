@@ -1307,12 +1307,12 @@
                                 </div>
                             </div>
                             <div class="col-32">
-                                <button class="spinner-b btn btn-square btn-ghost border-dual round ease-btn">
+                                <button class="spinner-down btn btn-square btn-ghost border-dual round ease-btn">
                                     <svg class="icon"><use href="#minus"/></svg>
                                 </button>
                             </div>
                             <div class="col-32">
-                                <button class="spinner-t btn btn-square btn-ghost border-dual round ease-btn">
+                                <button class="spinner-up btn btn-square btn-ghost border-dual round ease-btn">
                                     <svg class="icon"><use href="#plus"/></svg>
                                 </button>
                             </div>

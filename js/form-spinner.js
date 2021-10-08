@@ -3,7 +3,16 @@
  Requires UI JS
 */
 
-ui.spinnerForm = {};
+ui.formSpinner = {
+
+    // targets
+    target: 'form-spinner',
+
+    // main classnames
+    nameUp: 'spinner-up',
+    nameDown: 'spinner-down'
+
+};
 
 (function () {
 
@@ -12,39 +21,51 @@ ui.spinnerForm = {};
 
     var checkSpinnerForms;
 
-    ui.spinnerForm.Start = function () {
+    ui.formSpinner.Start = function () {
 
         // Event Listeners
-        ui.on(document, 'click', '.spinner-t,.spinner-b', function () {
+        ui.on(document,
+            'click',
 
-            var p = ui.closest(this, '.form-spinner'), input = ui.find('[type="text"]', p),
+            '.' + ui.formSpinner.nameUp + ',.' + ui.formSpinner.nameDown,
 
-                val = Number(input.value),
-                max = input.getAttribute('max'),
+            function () {
+
+                var p, input, val, max, min;
+
+                p = ui.closest(this, '.' + ui.formSpinner.target),
+                input = ui.find('[type="text"]', p);
+
+                val = Number(input.value);
+                max = input.getAttribute('max');
                 min = input.getAttribute('min');
 
-            if (ui.hasClass(this, 'spinner-t')) {
-                val += 1;
-                if (val >= max) { val = max; }
+                if (ui.hasClass(this, ui.formSpinner.nameUp)) {
 
-            } else {
-                val -= 1;
-                if (val <= min) { val = min; }
+                    val += 1;
+                    if (val >= max) { val = max; }
 
-            }
+                } else {
 
-            input.value = val;
+                    val -= 1;
+                    if (val <= min) { val = min; }
 
-        });
+                }
+
+                input.value = val;
+
+            });
 
         checkSpinnerForms = function () {
 
-            ui.each('.form-spinner', function () {
+            ui.each('.' + ui.formSpinner.target,
 
-                var t = ui.find('[type="text"]', this)[0];
-                t.value = t.getAttribute('value');
+                function () {
 
-            });
+                    var t = ui.find('[type="text"]', this)[0];
+                    t.value = t.getAttribute('value');
+
+                });
 
         };
         checkSpinnerForms();
@@ -52,7 +73,7 @@ ui.spinnerForm = {};
     };
 
     // Loaders
-    ui.onload(ui.spinnerForm.Start);
+    ui.onload(ui.formSpinner.Start);
 
     // ajax callback loader
     ui.on(document,
@@ -60,7 +81,7 @@ ui.spinnerForm = {};
 
         function () {
 
-            if (ui.ajax.classNames.indexOf('form-spinner') > -1) {
+            if (ui.ajax.classNames.indexOf(ui.formSpinner.target) > -1) {
                 checkSpinnerForms();
             }
 

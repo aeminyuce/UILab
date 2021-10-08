@@ -8469,7 +8469,7 @@ button.dialog-custom:focus {
   position: relative !important;
   cursor: default !important;
 }
-.loading-mask-spinner {
+.loading-mask-loader {
   height: 100%;
   background-color: hsla(0, 0%, 0%, 0.46);
   position: absolute;
@@ -8479,20 +8479,20 @@ button.dialog-custom:focus {
   left: 0;
   z-index: 10;
 }
-.loading-mask-spinner:not(.open) {
+.loading-mask-loader:not(.open) {
   display: none;
 }
-.loading-mask-spinner:not(.open-ease) {
+.loading-mask-loader:not(.open-ease) {
   opacity: 0;
 }
-.loading-mask-spinner span {
+.loading-mask-loader span {
   display: block;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.loading-mask-spinner span svg {
+.loading-mask-loader span svg {
   max-height: 76px !important;
   display: block;
   fill: none;
@@ -8502,7 +8502,7 @@ button.dialog-custom:focus {
   stroke-linejoin: round;
   animation: loading-spin 1.15s linear infinite;
 }
-.loading-mask-sticky > .loading-mask-spinner {
+.loading-mask-sticky > .loading-mask-loader {
   position: fixed;
 }
 /* photo gallery */

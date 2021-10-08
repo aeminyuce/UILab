@@ -10,14 +10,14 @@ ui.loadingMask = {
 
     // main classnames
     nameSticky: 'loading-mask-sticky',
-    nameSpinner: 'loading-mask-spinner',
+    nameLoader: 'loading-mask-loader',
 
     // helper classnames
     nameOpen: 'open',
     nameOpenEase: 'open-ease',
 
     // styling classnames
-    stylesSpinner: 'ease-layout',
+    stylesLoader: 'ease-layout',
 
     // values
     loadingBox: '-128 -12 288 288',
@@ -95,7 +95,7 @@ ui.loadingMask = {
                     // hide loading
                     status = 'hide';
 
-                    maskHolders[i] = ui.find('.' + ui.loadingMask.nameSpinner, l[i])[0];
+                    maskHolders[i] = ui.find('.' + ui.loadingMask.nameLoader, l[i])[0];
                     ui.removeClass(maskHolders[i], ui.loadingMask.nameOpenEase);
 
                     maskItems[i] = l[i];
@@ -105,7 +105,7 @@ ui.loadingMask = {
                     // show loading
                     status = 'show';
 
-                    html = '<span class="' + ui.loadingMask.nameSpinner + ' ' + ui.loadingMask.stylesSpinner + '">' +
+                    html = '<span class="' + ui.loadingMask.nameLoader + ' ' + ui.loadingMask.stylesLoader + '">' +
                                 '<span>' +
                                     '<svg viewBox="' + ui.loadingMask.loadingBox + '" style="height: ' + (l[i].offsetHeight / 2) + 'px;">' +
                                         ui.loadingMask.loadingPath +
@@ -126,7 +126,7 @@ ui.loadingMask = {
                         ui.addClass(l[i], ui.loadingMask.nameSticky);
                     }
 
-                    maskHolders[i] = ui.find('.' + ui.loadingMask.nameSpinner, l[i])[0];
+                    maskHolders[i] = ui.find('.' + ui.loadingMask.nameLoader, l[i])[0];
                     ui.addClass(maskHolders[i], ui.loadingMask.nameOpen);
 
                 }
