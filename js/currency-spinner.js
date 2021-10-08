@@ -4,6 +4,18 @@
 */
 
 ui.currencySpinner = {
+
+    // targets
+    target: 'currency-spinner',
+
+    // main classnames
+    nameUp: 'currency-up',
+    nameDown: 'currency-down',
+
+    // outer classnames
+    nameText: 'text',
+
+    // values
     decimals: false
 };
 
@@ -26,9 +38,14 @@ ui.currencySpinner = {
             if (ui.currencySpinner.decimals) {
 
                 number = s.replace(regDecimal, '');
-
                 decimal = s.match(regDecimal);
-                if (decimal === null) { decimal = '0'; } else { decimal = decimal[0]; }
+
+                if (decimal === null) {
+                    decimal = '0';
+
+                } else {
+                    decimal = decimal[0];
+                }
 
                 number = Number(number.replace(regClear, ''));
                 decimal = Number(decimal.replace(regClear, ''));
@@ -56,13 +73,13 @@ ui.currencySpinner = {
 
             nav = [];
 
-            p = ui.closest(that, '.currency-spinner');
+            p = ui.closest(that, '.' + ui.currencySpinner.target);
             input = ui.find('[type="text"]', p);
 
             val = convert(input.value);
 
-            nav.up = ui.hasClass(that, 'currency-up');
-            nav.down = ui.hasClass(that, 'currency-down');
+            nav.up = ui.hasClass(that, ui.currencySpinner.nameUp);
+            nav.down = ui.hasClass(that, ui.currencySpinner.nameDown);
 
             if (nav.up || nav.down) {
 
@@ -126,56 +143,66 @@ ui.currencySpinner = {
         }
 
         // Event Listeners
-        ui.on(document, 'click', '.currency-up,.currency-down', function (e) {
+        ui.on(document,
+            'click',
 
-            e.preventDefault();
-            currencyChange(this);
+            '.' + ui.currencySpinner.nameUp + ',.' + ui.currencySpinner.nameDown,
 
-        });
+            function (e) {
 
-        ui.on(document, 'keypress', '.currency-spinner input[type="text"]', function (e) {
+                e.preventDefault();
+                currencyChange(this);
 
-            var c, isRefresh = false;
-
-            if (e.which) {
-                c = e.which;
-
-            } else {
-
-                c = e.keyCode;
-                if (c === 116) { isRefresh = true; }
-
-            }
-
-            if (ui.currencySpinner.decimals) {
-
-                if (c !== 8 && c !== 9 && c !== 35 && c !== 36 && c !== 37 && c !== 39 && c !== 44 && !isRefresh && (c < 48 || c > 57)) {
-                    e.preventDefault();
-                }
-
-            } else {
-
-                if (c !== 8 && c !== 9 && c !== 35 && c !== 36 && c !== 37 && c !== 39 && !isRefresh && (c < 48 || c > 57)) {
-                    e.preventDefault();
-                }
-
-            }
-
-        });
+            });
 
         ui.on(document,
+            'keypress',
 
+            '.' + ui.currencySpinner.target + ' input[type="text"]',
+
+            function (e) {
+
+                var c, isRefresh = false;
+
+                if (e.which) {
+                    c = e.which;
+
+                } else {
+
+                    c = e.keyCode;
+                    if (c === 116) { isRefresh = true; }
+
+                }
+
+                if (ui.currencySpinner.decimals) {
+
+                    if (c !== 8 && c !== 9 && c !== 35 && c !== 36 && c !== 37 && c !== 39 && c !== 44 && !isRefresh && (c < 48 || c > 57)) {
+                        e.preventDefault();
+                    }
+
+                } else {
+
+                    if (c !== 8 && c !== 9 && c !== 35 && c !== 36 && c !== 37 && c !== 39 && !isRefresh && (c < 48 || c > 57)) {
+                        e.preventDefault();
+                    }
+
+                }
+
+            });
+
+        ui.on(document,
             'focus',
-            '.currency-spinner input[type="text"]',
 
-                function () {
+            '.' + ui.currencySpinner.target + ' input[type="text"]',
+
+            function () {
                 cacheCurrencySpinner = this.value;
             });
 
         ui.on(document,
-
             'keyup blur',
-            '.currency-spinner input[type="text"]',
+
+            '.' + ui.currencySpinner.target + ' input[type="text"]',
 
             function (e) {
 
@@ -200,7 +227,7 @@ ui.currencySpinner = {
 
                     var input, min;
 
-                    input = ui.find('.currency-spinner .text input')[0];
+                    input = ui.find('.' + ui.currencySpinner.target + ' .' + ui.currencySpinner.nameText + ' input')[0];
                     min = convert(input.getAttribute('min'));
 
                     if (convert(input.value) < min) { input.value = locales(min); }
@@ -210,16 +237,16 @@ ui.currencySpinner = {
             });
 
         ui.on(document,
-
             'keydown',
-            ui.closest('.currency-spinner', 'form'),
+
+            ui.closest('.' + ui.currencySpinner.target, 'form'),
 
             function (e) {
 
                 if (e.keyCode === 13) {
 
                     e.preventDefault();
-                    ui.trigger('.currency-spinner .text input', 'blur');
+                    ui.trigger('.' + ui.currencySpinner.target + ' .' + ui.currencySpinner.nameText + ' input', 'blur');
 
                 } else { return; }
 

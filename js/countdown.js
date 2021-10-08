@@ -3,7 +3,17 @@
  Requires UI JS
 */
 
-ui.countdown = {};
+ui.countdown = {
+
+    // targets
+    target: 'countdown',
+
+    // main classnames
+    nameDay: 'd',
+    nameHour: 'h',
+    nameMinute: 'm',
+    nameSecond: 's'
+};
 
 (function () {
 
@@ -16,43 +26,47 @@ ui.countdown = {};
 
         var countdown, arr, calc;
 
-        countdown = ui.find('.countdown');
+        countdown = ui.find('.' + ui.countdown.target);
         if (ui.countdown.length === 0) { return; }
 
         arr = [];
 
-        ui.each(countdown, function (i) {
+        ui.each(countdown,
 
-            var
-                date = new Date(),
+            function (i) {
 
-                day = ui.find('.d', this)[0],
-                hour = ui.find('.h', this)[0],
-                minute = ui.find('.m', this)[0],
-                sec = ui.find('.s', this)[0];
+                var date, day, hour, minute, sec;
 
-            if (day !== undefined) { date.setDate(date.getDate() + Number(day.textContent)); }
-            if (hour !== undefined) { date.setHours(date.getHours() + Number(hour.textContent)); }
-            if (minute !== undefined) { date.setMinutes(date.getMinutes() + Number(minute.textContent)); }
-            if (sec !== undefined) { date.setSeconds(date.getSeconds() + Number(sec.textContent)); }
+                date = new Date();
 
-            arr[i] = date.getTime();
+                day = ui.find('.' + ui.countdown.nameDay, this)[0];
+                hour = ui.find('.' + ui.countdown.nameHour, this)[0];
+                minute = ui.find('.' + ui.countdown.nameMinute, this)[0];
+                sec = ui.find('.' + ui.countdown.nameSecond, this)[0];
 
-        });
+                if (day !== undefined) { date.setDate(date.getDate() + Number(day.textContent)); }
+                if (hour !== undefined) { date.setHours(date.getHours() + Number(hour.textContent)); }
+                if (minute !== undefined) { date.setMinutes(date.getMinutes() + Number(minute.textContent)); }
+                if (sec !== undefined) { date.setSeconds(date.getSeconds() + Number(sec.textContent)); }
+
+                arr[i] = date.getTime();
+
+            });
 
         calc = function (ms) {
 
-            var
-                days = Math.floor(ms / (24 * 60 * 60 * 1000)),
-                daysMs = ms % (24 * 60 * 60 * 1000),
+            var days, daysMs, hours, hoursMs, minutes, minutesMs, sec;
 
-                hours = Math.floor(daysMs / (60 * 60 * 1000)),
-                hoursMs = ms % (60 * 60 * 1000),
+            days = Math.floor(ms / (24 * 60 * 60 * 1000));
+            daysMs = ms % (24 * 60 * 60 * 1000);
 
-                minutes = Math.floor(hoursMs / (60 * 1000)),
-                minutesMs = ms % (60 * 1000),
+            hours = Math.floor(daysMs / (60 * 60 * 1000));
+            hoursMs = ms % (60 * 60 * 1000);
 
-                sec = Math.floor(minutesMs / 1000) + 1;
+            minutes = Math.floor(hoursMs / (60 * 1000));
+            minutesMs = ms % (60 * 1000);
+
+            sec = Math.floor(minutesMs / 1000) + 1;
 
             if (days < 0) { days = 0; }
             if (hours < 0) { hours = 0; }
@@ -65,48 +79,51 @@ ui.countdown = {};
 
         function drawFnc() {
 
-            ui.each(countdown, function (i) {
+            ui.each(countdown,
 
-                var
-                    dateLeft = calc(arr[i] - new Date()),
+                function (i) {
 
-                    day = ui.find('.d', this)[0],
-                    hour = ui.find('.h', this)[0],
-                    minute = ui.find('.m', this)[0],
-                    sec = ui.find('.s', this)[0];
+                    var dateLeft, day, hour, minute, sec;
 
-                dateLeft = dateLeft.split(':');
+                    dateLeft = calc(arr[i] - new Date());
 
-                if (day !== undefined) {
+                    day = ui.find('.' + ui.countdown.nameDay, this)[0];
+                    hour = ui.find('.' + ui.countdown.nameHour, this)[0];
+                    minute = ui.find('.' + ui.countdown.nameMinute, this)[0];
+                    sec = ui.find('.' + ui.countdown.nameSecond, this)[0];
 
-                    if (dateLeft[0] === '0') { day.textContent = '00'; } else {
-                        if (dateLeft[0].length === 1) { day.textContent = '0' + dateLeft[0]; } else { day.textContent = dateLeft[0];}
+                    dateLeft = dateLeft.split(':');
+
+                    if (day !== undefined) {
+
+                        if (dateLeft[0] === '0') { day.textContent = '00'; } else {
+                            if (dateLeft[0].length === 1) { day.textContent = '0' + dateLeft[0]; } else { day.textContent = dateLeft[0];}
+                        }
+
+                    }
+                    if (hour !== undefined) {
+
+                        if (dateLeft[1] === '0') { hour.textContent = '00'; } else {
+                            if (dateLeft[1].length === 1) { hour.textContent = '0' + dateLeft[1]; } else { hour.textContent = dateLeft[1];}
+                        }
+
+                    }
+                    if (minute !== undefined) {
+
+                        if (dateLeft[2] === '0') { minute.textContent = '00'; } else {
+                            if (dateLeft[2].length === 1) { minute.textContent = '0' + dateLeft[2]; } else { minute.textContent = dateLeft[2];}
+                        }
+
+                    }
+                    if (sec !== undefined) {
+
+                        if (dateLeft[3] === '0') { sec.textContent = '00'; } else {
+                            if (dateLeft[3].length === 1) { sec.textContent = '0' + dateLeft[3]; } else { sec.textContent = dateLeft[3];}
+                        }
+
                     }
 
-                }
-                if (hour !== undefined) {
-
-                    if (dateLeft[1] === '0') { hour.textContent = '00'; } else {
-                        if (dateLeft[1].length === 1) { hour.textContent = '0' + dateLeft[1]; } else { hour.textContent = dateLeft[1];}
-                    }
-
-                }
-                if (minute !== undefined) {
-
-                    if (dateLeft[2] === '0') { minute.textContent = '00'; } else {
-                        if (dateLeft[2].length === 1) { minute.textContent = '0' + dateLeft[2]; } else { minute.textContent = dateLeft[2];}
-                    }
-
-                }
-                if (sec !== undefined) {
-
-                    if (dateLeft[3] === '0') { sec.textContent = '00'; } else {
-                        if (dateLeft[3].length === 1) { sec.textContent = '0' + dateLeft[3]; } else { sec.textContent = dateLeft[3];}
-                    }
-
-                }
-
-            });
+                });
 
         }
 
@@ -124,7 +141,7 @@ ui.countdown = {};
 
         function () {
 
-            if (ui.ajax.classNames.indexOf('countdown') > -1) {
+            if (ui.ajax.classNames.indexOf(ui.countdown.target) > -1) {
                 ui.countdown.Start();
             }
 
