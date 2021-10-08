@@ -97,7 +97,7 @@
                                             <span class="sp-2"></span>4,9/5
                                         </strong>
                                         <svg viewBox="0 0 160 160">
-                                            <circle r="69.85699" cy="80" cx="80" class="bg" />
+                                            <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
                                             <circle r="69.85699" cy="80" cx="80" stroke="hsl(186, 70%, 68%)" data-ui-percent="96" />
                                         </svg>
                                     </div>
@@ -109,7 +109,7 @@
                                             <span class="sp-2"></span>4/5
                                         </strong>
                                         <svg viewBox="0 0 160 160">
-                                            <circle r="69.85699" cy="80" cx="80" class="bg" />
+                                            <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
                                             <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="88" />
                                         </svg>
                                     </div>
@@ -121,7 +121,7 @@
                                             <span class="sp-2"></span>4/5
                                         </strong>
                                         <svg viewBox="0 0 160 160">
-                                            <circle r="69.85699" cy="80" cx="80" class="bg" />
+                                            <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
                                             <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-ui-percent="86" />
                                         </svg>
                                     </div>
@@ -133,7 +133,7 @@
                                             <span class="sp-2"></span>3.9/5
                                         </strong>
                                         <svg viewBox="0 0 160 160">
-                                            <circle r="69.85699" cy="80" cx="80" class="bg" />
+                                            <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
                                             <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-ui-percent="80" />
                                         </svg>
                                     </div>

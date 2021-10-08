@@ -128,7 +128,7 @@
                                     <div class="donut-chart ease-donut-chart">
                                         <strong>SS</strong>
                                         <svg viewBox="0 0 160 160">
-                                            <circle r="69.85699" cy="80" cx="80" class="bg" />
+                                            <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
                                             <circle r="69.85699" cy="80" cx="80" stroke="hsl(214, 100%, 50%)" data-ui-percent="17" data-ui-title="17%" />
                                         </svg>
                                     </div>
@@ -137,7 +137,7 @@
                                     <div class="donut-chart ease-donut-chart">
                                         <strong>SU</strong>
                                         <svg viewBox="0 0 160 160">
-                                            <circle r="69.85699" cy="80" cx="80" class="bg" />
+                                            <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
                                             <circle r="69.85699" cy="80" cx="80" stroke="hsl(214, 100%, 50%)" data-ui-percent="13" data-ui-title="13%" />
                                         </svg>
                                     </div>
@@ -146,7 +146,7 @@
                                     <div class="donut-chart ease-donut-chart">
                                         <strong>SD</strong>
                                         <svg viewBox="0 0 160 160">
-                                            <circle r="69.85699" cy="80" cx="80" class="bg" />
+                                            <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
                                             <circle r="69.85699" cy="80" cx="80" stroke="hsl(349, 100%, 53%)" data-ui-percent="70" data-ui-title="70%" />
                                         </svg>
                                     </div>
