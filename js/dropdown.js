@@ -22,7 +22,6 @@ ui.dropdown = {
     // helper classnames
     nameOpen: 'open',
     nameOpenEase: 'open-ease',
-    tagValueSelected: 'selected',
 
     // outer classnames
     nameBtn: 'btn',
@@ -34,6 +33,7 @@ ui.dropdown = {
 
     tagValue: 'span',
     tagValueItems: 'label',
+    tagValueSelected: 'selected',
 
     // values
     scrollbarSize: 20,
