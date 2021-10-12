@@ -5,20 +5,29 @@
 
 ui.calendar = {
 
+    // targets
+    target: 'calendar',
+
+    // styling classnames
+    stylesToday: '',
+    stylesPickerDay: '',
+
+    // icons
+    prevIcon: 'arrow-left', // header's previous button
+    nextIcon: 'arrow-right', // header's next button
+    backIcon: 'angle-left', // detail's back button
+
+    // styling classnames
+    stylesClosing: 'closing-card ease-layout',
+
+    // values
     days: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
     months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
 
     dateFormat: 1, // 0: dd/mm/yyyy, 1: mm/dd/yyyy
     startDayofWeek: 1, // 0: Sunday, 1: Monday
 
-    fillWeekends: true, // true: fills dark color to weekends' background
-
-    prevIcon: 'arrow-left', // header's previous button
-    nextIcon: 'arrow-right', // header's next button
-    backIcon: 'angle-left', // detail's back button
-
-    todayTheme: '', // use themes with hover
-    pickerDayTheme: '' // use themes with hover
+    fillWeekends: true // true: fills dark color to weekends' background
 
 };
 
@@ -245,8 +254,8 @@ ui.calendar = {
 
                             todayStyles = '';
 
-                            if (ui.calendar.todayTheme !== '') {
-                                todayStyles = ui.calendar.todayTheme + ' hover';
+                            if (ui.calendar.stylesToday !== '') {
+                                todayStyles = ui.calendar.stylesToday + ' hover';
                             }
 
                             html += '<td class="today">' +
@@ -262,7 +271,7 @@ ui.calendar = {
                                     pickerDayStyles = '';
 
                                     if (ui.calendar.pickerDayStyles !== '') {
-                                        pickerDayStyles = ui.calendar.pickerDayTheme + ' hover';
+                                        pickerDayStyles = ui.calendar.stylesPickerDay + ' hover';
                                     }
 
                                     html += '<td data-ui-day="' + days + '" class="pickerday">' +
@@ -419,12 +428,14 @@ ui.calendar = {
         // ckeck not loaded calendars
         checkCalendars = function () {
 
-            var calendars = ui.find('.calendar:not(.active)');
+            var calendars = ui.find('.' + ui.calendar.target + ':not(.active)');
             if (calendars.length > 0) {
 
-                ui.each(calendars, function () {
-                    createFnc(this);
-                });
+                ui.each(calendars,
+
+                    function () {
+                        createFnc(this);
+                    });
 
             }
 
@@ -433,158 +444,173 @@ ui.calendar = {
 
         // Event Listeners
         // calendar navigation
-        ui.on(document, 'click', '.calendar-prev,.calendar-next', function () {
+        ui.on(document,
+            'click',
 
-            var that, picker, form;
+            '.calendar-prev,.calendar-next',
 
-            that = ui.closest(this, '.calendar')[0];
-            picker = ui.closest(that, '.calendar-picker')[0]; // check called from picker
+            function () {
 
-            if (ui.hasClass(this, 'calendar-next')) {
+                var that, picker, form;
 
-                if (picker === undefined) {
-                    createFnc(that, 'next');
+                that = ui.closest(this, '.' + ui.calendar.target)[0];
+                picker = ui.closest(that, '.calendar-picker')[0]; // check called from picker
 
-                } else { // picker
+                if (ui.hasClass(this, 'calendar-next')) {
 
-                    form = ui.find('[type="text"]', picker)[0];
-                    createFnc(that, 'next', form);
+                    if (picker === undefined) {
+                        createFnc(that, 'next');
+
+                    } else { // picker
+
+                        form = ui.find('[type="text"]', picker)[0];
+                        createFnc(that, 'next', form);
+
+                    }
+
+                } else {
+
+                    if (picker === undefined) {
+                        createFnc(that, 'prev');
+
+                    } else { // picker
+
+                        form = ui.find('[type="text"]', picker)[0];
+                        createFnc(that, 'prev', form);
+
+                    }
 
                 }
 
-            } else {
-
-                if (picker === undefined) {
-                    createFnc(that, 'prev');
-
-                } else { // picker
-
-                    form = ui.find('[type="text"]', picker)[0];
-                    createFnc(that, 'prev', form);
-
-                }
-
-            }
-
-        });
+            });
 
         // change month and year with panel
-        ui.on(document, 'click', '.calendar-month,.calendar-year', function () {
+        ui.on(document,
+            'click',
 
-            var that, date, year, years, month, html, i, panelType, getList, getSelected, getIndex;
+            '.calendar-month,.calendar-year',
 
-            date = new Date();
-            that = ui.closest(this, '.calendar')[0];
+            function () {
 
-            getAttr(that, date);
+                var that, date, year, years, month, html, i, panelType, getList, getSelected, getIndex;
 
-            // create panel
-            html = '<div class="panel ease-layout ease-slow ease-in-out">' +
-                    '<ul>';
+                date = new Date();
+                that = ui.closest(this, '.' + ui.calendar.target)[0];
 
-            if (ui.hasClass(this, 'calendar-year')) { // years
+                getAttr(that, date);
 
-                panelType = 'year';
+                // create panel
+                html = '<div class="panel ease-layout ease-slow ease-in-out">' +
+                        '<ul>';
 
-                year = date.getFullYear();
-                years = 1920 + (new Date().getFullYear() - 1920) + 100;
+                if (ui.hasClass(this, 'calendar-year')) { // years
 
-                for (i = 1920; i <= years; i++) {
+                    panelType = 'year';
 
-                    html += '<li><button type="button" tabindex="-1" ';
+                    year = date.getFullYear();
+                    years = 1920 + (new Date().getFullYear() - 1920) + 100;
 
-                    if (year === i) {
-                        html += 'class="call selected" ';
+                    for (i = 1920; i <= years; i++) {
 
-                    } else {
-                        html += 'class="call" ';
+                        html += '<li><button type="button" tabindex="-1" ';
+
+                        if (year === i) {
+                            html += 'class="call selected" ';
+
+                        } else {
+                            html += 'class="call" ';
+                        }
+
+                        html += 'name="' + i + '">' + i + '</button></li>';
+
                     }
 
-                    html += 'name="' + i + '">' + i + '</button></li>';
+                } else { // months
 
-                }
+                    panelType = 'month';
 
-            } else { // months
+                    month = ui.calendar.months[date.getMonth()];
+                    for (i = 0; i < ui.calendar.months.length; i++) {
 
-                panelType = 'month';
+                        html += '<li><button type="button" tabindex="-1" ';
 
-                month = ui.calendar.months[date.getMonth()];
-                for (i = 0; i < ui.calendar.months.length; i++) {
+                        if (month === ui.calendar.months[i]) {
+                            html += 'class="call selected" ';
 
-                    html += '<li><button type="button" tabindex="-1" ';
+                        } else {
+                            html += 'class="call" ';
+                        }
 
-                    if (month === ui.calendar.months[i]) {
-                        html += 'class="call selected" ';
-
-                    } else {
-                        html += 'class="call" ';
+                        html += 'name="' + i + '">' + ui.calendar.months[i] + '</button></li>';
                     }
 
-                    html += 'name="' + i + '">' + ui.calendar.months[i] + '</button></li>';
                 }
 
-            }
+                html += '</ul>' +
+                    '</div>';
 
-            html += '</ul>' +
-                '</div>';
+                // show panel
+                that.insertAdjacentHTML('afterbegin', html);
+                html = '';
 
-            // show panel
-            that.insertAdjacentHTML('afterbegin', html);
-            html = '';
+                // animate panel
+                setTimeout(function () {
 
-            // animate panel
-            setTimeout(function () {
+                    ui.addClass(that, 'show-panel');
 
-                ui.addClass(that, 'show-panel');
+                    // scroll to active year
+                    if (panelType === 'year') {
 
-                // scroll to active year
-                if (panelType === 'year') {
+                        getList = ui.find('.' + ui.calendar.target + ' .panel .call', that);
+                        getSelected = ui.find('.' + ui.calendar.target + ' .panel .call.selected', that)[0];
 
-                    getList = ui.find('.calendar .panel .call', that);
-                    getSelected = ui.find('.calendar .panel .call.selected', that)[0];
+                        getIndex = Math.floor(Array.prototype.slice.call(getList).indexOf(getSelected) / 12);
+                        ui.find('.panel', that)[0].scrollTop = (getIndex * (that.offsetHeight - 10)); // IE, EDGE: scrollTo() not supported for div element
 
-                    getIndex = Math.floor(Array.prototype.slice.call(getList).indexOf(getSelected) / 12);
-                    ui.find('.panel', that)[0].scrollTop = (getIndex * (that.offsetHeight - 10)); // IE, EDGE: scrollTo() not supported for div element
+                        getList = '';
 
-                    getList = '';
+                    }
 
-                }
+                }, 10);
 
-            }, 10);
-
-        });
+            });
 
         // close panel
-        ui.on(document, 'click', '.calendar .panel .call', function () {
+        ui.on(document,
+            'click',
 
-            var that, date;
+            '.' + ui.calendar.target + ' .panel .call',
 
-            date = new Date();
-            that = ui.closest(this, '.calendar')[0];
+            function () {
 
-            getAttr(that, date);
-            ui.removeClass(that, 'show-panel');
+                var that, date;
 
-            if (!ui.hasClass(this, 'selected')) { // check user selected different date
+                date = new Date();
+                that = ui.closest(this, '.' + ui.calendar.target)[0];
 
-                if (this.name.length === 4) { // selected year
-                    createFnc(that, this.name + ',' + date.getMonth());
+                getAttr(that, date);
+                ui.removeClass(that, 'show-panel');
 
-                } else { // selected month
-                    createFnc(that, date.getFullYear() + ',' + this.name);
+                if (!ui.hasClass(this, 'selected')) { // check user selected different date
+
+                    if (this.name.length === 4) { // selected year
+                        createFnc(that, this.name + ',' + date.getMonth());
+
+                    } else { // selected month
+                        createFnc(that, date.getFullYear() + ',' + this.name);
+                    }
                 }
-            }
 
-            setTimeout(function () {
-                that.removeChild(ui.find('.panel', that)[0]);
-            }, ui.globals.slow);
+                setTimeout(function () {
+                    that.removeChild(ui.find('.panel', that)[0]);
+                }, ui.globals.slow);
 
-        });
+            });
 
         // close picker
         function pickerCloseFnc(type, target) {
 
-            var allPickers = ui.find('.calendar-picker .calendar');
+            var allPickers = ui.find('.calendar-picker .' + ui.calendar.target);
 
             function removePicker(form, picker) {
 
@@ -595,39 +621,43 @@ ui.calendar = {
 
             if (type === 'continuous') { // when the user holds the tab button continuously
 
-                ui.each(allPickers, function (i) {
+                ui.each(allPickers,
 
-                    ui.removeClass(this, 'open-ease');
-                    setTimeout(function () {
+                    function (i) {
 
-                        var that, form;
+                        ui.removeClass(this, 'open-ease');
+                        setTimeout(function () {
 
-                        that = ui.find('.calendar-picker .calendar')[i];
-                        if (that === undefined) { return; }
+                            var that, form;
 
-                        form = that.parentElement;
-                        removePicker(form, that);
+                            that = ui.find('.calendar-picker .' + ui.calendar.target)[i];
+                            if (that === undefined) { return; }
 
-                    }, ui.globals.ease);
+                            form = that.parentElement;
+                            removePicker(form, that);
 
-                });
+                        }, ui.globals.ease);
+
+                    });
 
             } else {
 
-                ui.each(allPickers, function () {
+                ui.each(allPickers,
 
-                    var that, form;
+                    function () {
 
-                    that = this;
-                    form = that.parentElement;
+                        var that, form;
 
-                    ui.removeClass(that, 'open-ease');
+                        that = this;
+                        form = that.parentElement;
 
-                    setTimeout(function () {
-                        removePicker(form, that);
-                    }, ui.globals.ease);
+                        ui.removeClass(that, 'open-ease');
 
-                });
+                        setTimeout(function () {
+                            removePicker(form, that);
+                        }, ui.globals.ease);
+
+                    });
 
             }
 
@@ -638,100 +668,39 @@ ui.calendar = {
         }
 
         // show picker
-        ui.on(document, 'focus', '.calendar-picker > [type="text"]', function () {
+        ui.on(document,
+            'focus',
 
-            var that, form, offset, html, picker, inputDate, formHeight, pickerWidth, pickerHeight;
+            '.calendar-picker > [type="text"]',
 
-            that = this;
+            function () {
 
-            // check duplicate
-            form = that.parentElement;
-            if (ui.find('.calendar', form).length > 0) { return; }
+                var that, form, offset, html, picker, inputDate, formHeight, pickerWidth, pickerHeight;
 
-            // remove event listeners
-            ui.off('body', 'mousedown.ui:pickerClose');
-            ui.off(that, 'keydown.ui:pickerClose keyup.ui:pickerChange');
+                that = this;
 
-            // create picker
-            html = '<div class="calendar';
+                // check duplicate
+                form = that.parentElement;
+                if (ui.find('.' + ui.calendar.target, form).length > 0) { return; }
 
-            if (ui.hasClass(form, 'round')) {
-                html += ' round';
-            }
+                // remove event listeners
+                ui.off('body', 'mousedown.ui:pickerClose');
+                ui.off(that, 'keydown.ui:pickerClose keyup.ui:pickerChange');
 
-            html += ' ease-calendar"></div>';
-            form.insertAdjacentHTML('beforeend', html);
+                // create picker
+                html = '<div class="calendar';
 
-            picker = ui.find('.calendar', form)[0];
-
-            // check value
-            inputDate = pickerVal(that);
-
-            if (inputDate === '') {
-                createFnc(picker);
-
-            } else {
-                createFnc(picker, inputDate);
-            }
-
-            setTimeout(function () {
-
-                // check picker position
-                offset = form.getBoundingClientRect();
-
-                formHeight = form.offsetHeight;
-                pickerWidth = picker.offsetWidth;
-                pickerHeight = picker.offsetHeight;
-
-                if (offset.left + pickerWidth + 15 > window.innerWidth) { // 15px: scrollbar size
-
-                    if ((offset.left - (pickerWidth - form.offsetWidth) - 15) > 0) {
-                        ui.addClass(form, 'picker-l');
-                    }
-
+                if (ui.hasClass(form, 'round')) {
+                    html += ' round';
                 }
 
-                if (offset.top + parseInt(formHeight + pickerHeight) >= window.innerHeight) {
+                html += ' ease-calendar"></div>';
+                form.insertAdjacentHTML('beforeend', html);
 
-                    if (offset.top - parseInt(formHeight + pickerHeight) + formHeight > 0) {
-                        ui.addClass(form, 'picker-t');
-                    }
+                picker = ui.find('.' + ui.calendar.target, form)[0];
 
-                }
-
-                // show picker
-                setTimeout(function () {
-                    ui.addClass(picker, 'open-ease');
-                }, 10);
-
-            }, 0);
-
-            // close event listeners
-            ui.on('body', 'mousedown.ui:pickerClose', function (ev) {
-
-                // prevent for picker elements
-                if (ui.closest(ev.target, form)[0] !== undefined) {
-                    return;
-                }
-
-                if (ev.button !== 2) { // inherited right clicks
-                    pickerCloseFnc('default', that);
-                }
-
-            });
-
-            ui.on(that, 'keydown.ui:pickerClose', function (ev) {
-
-                if (ev.keyCode === 9 || ev.keyCode === 13 || ev.keyCode === 27) { // Tab || Enter || Esc
-                    pickerCloseFnc('continuous', that);
-                }
-
-            });
-
-            // change event
-            ui.on(that, 'keyup.ui:pickerChange', function () {
-
-                inputDate = pickerVal(this); // check value
+                // check value
+                inputDate = pickerVal(that);
 
                 if (inputDate === '') {
                     createFnc(picker);
@@ -740,91 +709,176 @@ ui.calendar = {
                     createFnc(picker, inputDate);
                 }
 
-            });
-
-        });
-
-        // picker buttons
-        ui.on(document, 'click', '.calendar-picker .calendar tbody td button', function () {
-
-            var date, day, month, picker, that, form;
-
-            date = new Date();
-
-            picker = ui.closest(this, '.calendar-picker')[0];
-
-            that = ui.find('.calendar', picker)[0];
-            form = ui.find('[type="text"]', picker)[0];
-
-            getAttr(that, date); // get data-ui-date
-            date.setDate(this.textContent); // set new day
-
-            // set values to input form
-            day = date.getDate().toString();
-            if (day.length === 1) { day = '0' + day; }
-
-            month = date.getMonth();
-            month += 1;
-
-            month = month.toString();
-            if (month.length === 1) { month = '0' + month; }
-
-            if (ui.calendar.dateFormat === 1) {
-                form.value = month + '/' + day + '/' + date.getFullYear(); // mm/dd/yyyy
-
-            } else {
-                form.value = day + '/' + month + '/' + date.getFullYear(); // dd/mm/yyyy
-            }
-
-            // close picker
-            pickerCloseFnc('default', form);
-
-        });
-
-        // toggle details
-        ui.on(document, 'click', '.calendar .toggle-details', function () {
-
-            var that, details, day, i, list, scroll;
-
-            that = ui.closest(this, '.calendar')[0];
-            details = ui.find('.details', that)[0];
-
-            if (ui.hasClass(that, 'show-details')) {
-
-                ui.removeClass(that, 'show-details');
-
                 setTimeout(function () {
-                    ui.removeClass(details, 'open');
-                }, ui.globals.ease * 2);
 
-            } else {
+                    // check picker position
+                    offset = form.getBoundingClientRect();
 
-                ui.addClass(details, 'open');
+                    formHeight = form.offsetHeight;
+                    pickerWidth = picker.offsetWidth;
+                    pickerHeight = picker.offsetHeight;
 
-                setTimeout(function () {
-                    ui.addClass(that, 'show-details');
-                }, 10);
+                    if (offset.left + pickerWidth + 15 > window.innerWidth) { // 15px: scrollbar size
 
-                scroll = 0;
+                        if ((offset.left - (pickerWidth - form.offsetWidth) - 15) > 0) {
+                            ui.addClass(form, 'picker-l');
+                        }
 
-                day = this.getAttribute('data-ui-day');
-                list = ui.find('.details li', that);
-
-                for (i = 0; i < list.length; i++) {
-
-                    if (list[i].getAttribute('data-ui-d') === day) {
-                        break;
                     }
 
-                    scroll += list[i].offsetHeight + 20; // 20: margin-bottom size
+                    if (offset.top + parseInt(formHeight + pickerHeight) >= window.innerHeight) {
+
+                        if (offset.top - parseInt(formHeight + pickerHeight) + formHeight > 0) {
+                            ui.addClass(form, 'picker-t');
+                        }
+
+                    }
+
+                    // show picker
+                    setTimeout(function () {
+                        ui.addClass(picker, 'open-ease');
+                    }, 10);
+
+                }, 0);
+
+                // close event listeners
+                ui.on('body',
+                    'mousedown.ui:pickerClose',
+
+                    function (ev) {
+
+                        // prevent for picker elements
+                        if (ui.closest(ev.target, form)[0] !== undefined) {
+                            return;
+                        }
+
+                        if (ev.button !== 2) { // inherited right clicks
+                            pickerCloseFnc('default', that);
+                        }
+
+                    });
+
+                ui.on(that,
+                    'keydown.ui:pickerClose',
+
+                    function (ev) {
+
+                        if (ev.keyCode === 9 || ev.keyCode === 13 || ev.keyCode === 27) { // Tab || Enter || Esc
+                            pickerCloseFnc('continuous', that);
+                        }
+
+                    });
+
+                // change event
+                ui.on(that,
+                    'keyup.ui:pickerChange',
+
+                    function () {
+
+                        inputDate = pickerVal(this); // check value
+
+                        if (inputDate === '') {
+                            createFnc(picker);
+
+                        } else {
+                            createFnc(picker, inputDate);
+                        }
+
+                    });
+
+            });
+
+        // picker buttons
+        ui.on(document,
+            'click',
+
+            '.calendar-picker .' + ui.calendar.target + ' tbody td button',
+
+            function () {
+
+                var date, day, month, picker, that, form;
+
+                date = new Date();
+
+                picker = ui.closest(this, '.calendar-picker')[0];
+
+                that = ui.find('.' + ui.calendar.target, picker)[0];
+                form = ui.find('[type="text"]', picker)[0];
+
+                getAttr(that, date); // get data-ui-date
+                date.setDate(this.textContent); // set new day
+
+                // set values to input form
+                day = date.getDate().toString();
+                if (day.length === 1) { day = '0' + day; }
+
+                month = date.getMonth();
+                month += 1;
+
+                month = month.toString();
+                if (month.length === 1) { month = '0' + month; }
+
+                if (ui.calendar.dateFormat === 1) {
+                    form.value = month + '/' + day + '/' + date.getFullYear(); // mm/dd/yyyy
+
+                } else {
+                    form.value = day + '/' + month + '/' + date.getFullYear(); // dd/mm/yyyy
+                }
+
+                // close picker
+                pickerCloseFnc('default', form);
+
+            });
+
+        // toggle details
+        ui.on(document,
+            'click',
+
+            '.' + ui.calendar.target + ' .toggle-details',
+
+            function () {
+
+                var that, details, day, i, list, scroll;
+
+                that = ui.closest(this, '.' + ui.calendar.target)[0];
+                details = ui.find('.details', that)[0];
+
+                if (ui.hasClass(that, 'show-details')) {
+
+                    ui.removeClass(that, 'show-details');
+
+                    setTimeout(function () {
+                        ui.removeClass(details, 'open');
+                    }, ui.globals.ease * 2);
+
+                } else {
+
+                    ui.addClass(details, 'open');
+
+                    setTimeout(function () {
+                        ui.addClass(that, 'show-details');
+                    }, 10);
+
+                    scroll = 0;
+
+                    day = this.getAttribute('data-ui-day');
+                    list = ui.find('.details li', that);
+
+                    for (i = 0; i < list.length; i++) {
+
+                        if (list[i].getAttribute('data-ui-d') === day) {
+                            break;
+                        }
+
+                        scroll += list[i].offsetHeight + 20; // 20: margin-bottom size
+
+                    }
+
+                    ui.find('ul', details)[0].scrollTop = scroll; // IE, EDGE: scrollTo() not supported for div element
 
                 }
 
-                ui.find('ul', details)[0].scrollTop = scroll; // IE, EDGE: scrollTo() not supported for div element
-
-            }
-
-        });
+            });
 
     };
 
@@ -837,7 +891,7 @@ ui.calendar = {
 
         function () {
 
-            if (ui.ajax.classNames.indexOf('calendar') > -1) {
+            if (ui.ajax.classNames.indexOf(ui.calendar.target) > -1) {
                 checkCalendars();
             }
 
