@@ -43,6 +43,7 @@ ui.onload(function () {
                             });
 
                             ui.loadingMask.toggle(that);
+
                             setTimeout(function () {
                                 window.scrollTo(0, scrollPos);
                             }, ui.globals.ease);

@@ -3,7 +3,15 @@
  Requires UI JS
 */
 
-ui.card = {};
+ui.card = {
+
+    // targets
+    targetClose: 'close-card',
+
+    // styling classnames
+    stylesClosing: 'closing-card ease-layout',
+
+};
 
 (function () {
 
@@ -13,16 +21,21 @@ ui.card = {};
     ui.card.Start = function () {
 
         // Event Listeners
-        ui.on(document, 'click', '.close-card', function () {
+        ui.on(document,
+            'click',
 
-            var parentEl = this.parentElement;
-            ui.addClass(parentEl, 'closing-card ease-layout');
+            '.' + ui.card.targetClose,
 
-            setTimeout(function () {
-                parentEl.parentNode.removeChild(parentEl);
-            }, ui.globals.ease * 2);
+            function () {
 
-        });
+                var parentEl = this.parentElement;
+                ui.addClass(parentEl, ui.card.stylesClosing);
+
+                setTimeout(function () {
+                    parentEl.parentNode.removeChild(parentEl);
+                }, ui.globals.ease * 2);
+
+            });
 
     };
 
