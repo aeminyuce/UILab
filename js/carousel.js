@@ -755,10 +755,8 @@ ui.carousel = {
                             currenty = e.targetTouches[0].pageY;
 
                             if (Math.abs(startx - currentx) > ui.carousel.touchMoveToleranceX && Math.abs(starty - currenty) < ui.carousel.touchMoveToleranceY) {
-                                touchMove = true;
-                            }
 
-                            if (touchMove) {
+                                touchMove = true;
 
                                 that.style.transitionDuration = '0s';
                                 slider.style.transitionDuration = '0s';
