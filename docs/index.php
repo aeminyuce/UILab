@@ -10,8 +10,18 @@
     <meta name="description" content="CSS & JavaScript powered responsive design system." />
     <meta name="author" content="A. Emin Yuce"/>
 
+    <!-- charset -->
     <meta charset="utf-8" />
+
+    <!-- scaling settings -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!-- disable browser caching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <!-- favicon -->
     <link rel="icon" href="img/favicon.ico" />
 
     <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
