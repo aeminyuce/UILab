@@ -54,7 +54,8 @@
   --alerts-dialog-success-shadow: hsl(142, 82%, 34%);
   --alerts-dialog-custom-shadow: hsla(0, 0%, 0%, 0.3);
   --alerts-msg-bg: hsl(0, 0%, 9%);
-  --calendar-highlighted-bg: hsla(0, 0%, 0%, 0.05);
+  --calendar-highlighted-bg: hsla(0, 0%, 0%, 0.08);
+  --calendar-weekend-bg: hsla(0, 0%, 0%, 0.04);
   --calendar-empty-details-bg: hsla(0, 0%, 0%, 0.12);
   --calendar-today-btn-bg: hsla(0, 0%, 0%, 0.15);
   --calendar-today-btn-hover-bg: hsla(0, 0%, 0%, 0.2);
@@ -126,7 +127,8 @@
   --alerts-dialog-success-shadow: hsl(142, 82%, 58%);
   --alerts-dialog-custom-shadow: hsla(0, 0%, 100%, 0.3);
   --alerts-msg-bg: hsl(220, 14%, 21%);
-  --calendar-highlighted-bg: hsla(0, 0%, 100%, 0.05);
+  --calendar-highlighted-bg: hsla(0, 0%, 100%, 0.08);
+  --calendar-weekend-bg: hsla(0, 0%, 100%, 0.04);
   --calendar-empty-details-bg: hsla(0, 0%, 100%, 0.18);
   --calendar-today-btn-bg: hsla(0, 0%, 100%, 0.15);
   --calendar-today-btn-hover-bg: hsla(0, 0%, 100%, 0.2);
@@ -278,20 +280,20 @@ img {
   transition-duration: ease-out !important;
   transition-timing-function: ease !important;
 }
-.ease-in,
-.ease-in[class*="ease-1st-"] > *,
-.ease-in[class*="ease-2nd-"] > * > * {
-  transition-timing-function: in;
+.ease-ease-in,
+.ease-ease-in[class*="ease-1st-"] > *,
+.ease-ease-in[class*="ease-2nd-"] > * > * {
+  transition-timing-function: ease-in;
 }
-.ease-out,
-.ease-out[class*="ease-1st-"] > *,
-.ease-out[class*="ease-2nd-"] > * > * {
-  transition-timing-function: out;
+.ease-ease-out,
+.ease-ease-out[class*="ease-1st-"] > *,
+.ease-ease-out[class*="ease-2nd-"] > * > * {
+  transition-timing-function: ease-out;
 }
-.ease-in-out,
-.ease-in-out[class*="ease-1st-"] > *,
-.ease-in-out[class*="ease-2nd-"] > * > * {
-  transition-timing-function: in-out;
+.ease-ease-in-out,
+.ease-ease-in-out[class*="ease-1st-"] > *,
+.ease-ease-in-out[class*="ease-2nd-"] > * > * {
+  transition-timing-function: ease-in-out;
 }
 @keyframes spin {
   from {
@@ -7611,8 +7613,8 @@ button.dialog-custom:focus {
 }
 .calendar table.fill-weekends th:nth-child(n+6),
 .calendar table.fill-weekends td:nth-child(n+6) {
-  background-color: hsla(0, 0%, 0%, 0.05);
-  background-color: var(--calendar-highlighted-bg);
+  background-color: hsla(0, 0%, 0%, 0.04);
+  background-color: var(--calendar-weekend-bg);
 }
 .calendar th {
   font-weight: 700;
@@ -7623,12 +7625,14 @@ button.dialog-custom:focus {
   padding: 2px;
 }
 .calendar tbody td.passive span {
-  padding: 8px;
+  min-height: 32px;
+  padding: 6px;
   display: block;
   opacity: 0.45;
 }
 .calendar tbody td button {
   width: 100%;
+  min-height: 32px;
   background: transparent;
   padding: 8px;
   display: block;
@@ -7688,7 +7692,7 @@ button.dialog-custom:focus {
 }
 .calendar caption {
   height: 52px;
-  background-color: hsla(0, 0%, 0%, 0.05);
+  background-color: hsla(0, 0%, 0%, 0.08);
   background-color: var(--calendar-highlighted-bg);
   padding: 5px 52px;
   margin-bottom: 5px;

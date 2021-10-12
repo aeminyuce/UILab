@@ -35,8 +35,11 @@
 @calendar-picker-z-index:               10;
 @calendar-picker-shadow:                fade(@black, 15%);
 
-@calendar-highlighted-bg:               fade(@black, 5%);
-@calendar-highlighted-bg-dark:          fade(@white, 5%);
+@calendar-highlighted-bg:               fade(@black, 8%);
+@calendar-highlighted-bg-dark:          fade(@white, 8%);
+
+@calendar-weekend-bg:                   fade(@black, 4%);
+@calendar-weekend-bg-dark:              fade(@white, 4%);
 
 @calendar-details-toggle-btn-size:      @btn-default;
 @calendar-details-toggle-btn-icon-size: 20px;
@@ -60,6 +63,7 @@
 
 ._global-vars () {
     --calendar-highlighted-bg: @calendar-highlighted-bg;
+    --calendar-weekend-bg: @calendar-weekend-bg;
     --calendar-empty-details-bg: @calendar-empty-details-bg;
 
     --calendar-today-btn-bg: @calendar-today-btn-bg;
@@ -67,6 +71,7 @@
 }
 ._global-vars-dark () {
     --calendar-highlighted-bg: @calendar-highlighted-bg-dark;
+    --calendar-weekend-bg: @calendar-weekend-bg-dark;
     --calendar-empty-details-bg: @calendar-empty-details-bg-dark;
 
     --calendar-today-btn-bg: @calendar-today-btn-bg-dark;
@@ -91,7 +96,7 @@
 
         &.fill-weekends {
             th,td {
-                &:nth-child(n+6) { ._bg-var(calendar-highlighted-bg); }
+                &:nth-child(n+6) { ._bg-var(calendar-weekend-bg); }
             }
         }
     }
@@ -101,10 +106,10 @@
             padding: @calendar-days-gap;
 
             &.passive {
-                span { padding: (@calendar-days-padding - @calendar-days-gap); display: block; opacity: @calendar-days-passive-opacity; }
+                span { min-height: @btn-default; padding: (@calendar-days-padding - (@calendar-days-gap * 2)); display: block; opacity: @calendar-days-passive-opacity; }
             }
 
-            button { width: 100%; background: @no-color; padding: (@calendar-days-padding - @calendar-days-gap); display: block; border: 0; position: relative; }
+            button { width: 100%; min-height: @btn-default; background: @no-color; padding: (@calendar-days-padding - @calendar-days-gap); display: block; border: 0; position: relative; }
 
             &.toggle-details {
                 button {
