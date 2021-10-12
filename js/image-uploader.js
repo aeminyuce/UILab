@@ -286,7 +286,7 @@ ui.imageUploader = {
                                         html += '<' + ui.imageUploader.tagList + ' class="' + ui.imageUploader.nameOpenEase + '">' +
 
                                                     '<span class="' + ui.imageUploader.targetImages + '">' +
-                                                        '<img id="' + imgLoaded[k].id + '" src="' + imgLoaded[k].data + '" alt="">' +
+                                                        '<img id="' + imgLoaded[k].id + '" src="' + imgLoaded[k].data + '">' +
                                                     '</span>' +
 
                                                     '<' + ui.imageUploader.tagNames + ' class="' + ui.imageUploader.targetNames + '">' +

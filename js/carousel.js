@@ -24,9 +24,16 @@ ui.carousel = {
     nameNext: 'carousel-next',
     nameDots: 'dots',
 
+    nameGalleryDetail: 'detail',
+    nameGalleryDetailLoader: 'detail-loader',
+
+    nameGalleryThumbs: 'thumbs',
+    nameGalleryImg: 'img',
+
     // helper classnames
     nameShow: 'show',
     nameFaded: 'faded',
+    nameActive: 'active',
 
     nameFiltered: 'filtered',
     nameNavSelected: 'selected',
@@ -37,8 +44,25 @@ ui.carousel = {
     nameScrollV: 'scroll-v',
     nameScrollH: 'scroll-h',
 
+    nameEaseFast: 'ease-fast',
+    nameEaseSlow: 'ease-slow',
+    nameEaseSlow2x: 'ease-slow-2x',
+    nameEaseSlow3x: 'ease-slow-3x',
+    nameEaseSlow4x: 'ease-slow-4x',
+    nameEaseSlow5x: 'ease-slow-5x',
+
+    // styling classnames
+    stylesDots: 'ease-all ease-slow',
+
+    // tags
+    tagDots: 'i',
+
     // values
     halfSize: 0.5, // set percent of default half size
+    defaultSlideTimer: 8000,
+
+    touchMoveToleranceX: 15,
+    touchMoveToleranceY: 25,
 
     // data attributes
     dataCols: 'data-ui-col',
@@ -84,7 +108,9 @@ ui.carousel = {
         carouselNav,
 
         isScrollingTimer,
-        isScrolling = false;
+        isScrolling = false,
+
+        touchStarted = false;
 
     function getCols(i) {
 
@@ -204,7 +230,10 @@ ui.carousel = {
         slider = ui.find('.' + ui.carousel.targetSlider, that);
 
         size = col;
-        if (halfSized && col > 1 && col !== contents.length) { size -= ui.carousel.halfSize; }
+
+        if (halfSized && col > 1 && col !== contents.length) {
+            size -= ui.carousel.halfSize;
+        }
 
         size = Math.round(that.offsetWidth / size);
 
@@ -247,6 +276,8 @@ ui.carousel = {
     function carouselResizer(e) {
 
         var that, slider;
+
+        if (touchStarted) { return; }
 
         if (e === 'resize' || e.type === 'resize') {
 
@@ -304,22 +335,22 @@ ui.carousel = {
 
             ease = ui.globals.ease;
 
-            if (ui.hasClass(slider, 'ease-fast')) {
+            if (ui.hasClass(slider, ui.carousel.nameEaseFast)) {
                 ease = ui.globals.fast;
 
-            } else if (ui.hasClass(slider, 'ease-slow')) {
+            } else if (ui.hasClass(slider, ui.carousel.nameEaseSlow)) {
                 ease = ui.globals.slow;
 
-            } else if (ui.hasClass(slider, 'ease-slow-2x')) {
+            } else if (ui.hasClass(slider, ui.carousel.nameEaseSlow2x)) {
                 ease = ui.globals.slow2x;
 
-            } else if (ui.hasClass(slider, 'ease-slow-3x')) {
+            } else if (ui.hasClass(slider, ui.carousel.nameEaseSlow3x)) {
                 ease = ui.globals.slow3x;
 
-            } else if (ui.hasClass(slider, 'ease-slow-4x')) {
+            } else if (ui.hasClass(slider, ui.carousel.nameEaseSlow4x)) {
                 ease = ui.globals.slow4x;
 
-            } else if (ui.hasClass(slider, 'ease-slow-5x')) {
+            } else if (ui.hasClass(slider, ui.carousel.nameEaseSlow5x)) {
                 ease = ui.globals.slow5x;
             }
 
@@ -352,12 +383,18 @@ ui.carousel = {
                 if (direction === 'next') {
 
                     counts[i] += 1;
-                    if (counts[i] > contents.length - col) { counts[i] = 0; }
+
+                    if (counts[i] > contents.length - col) {
+                        counts[i] = 0;
+                    }
 
                 } else if (direction === 'prev') {
 
                     counts[i] -= 1;
-                    if (counts[i] < 0) { counts[i] = 0; }
+
+                    if (counts[i] < 0) {
+                        counts[i] = 0;
+                    }
 
                 }
 
@@ -414,6 +451,7 @@ ui.carousel = {
                     } else {
 
                         cols[j] = Number(cols[j]);
+
                         if (!cols[j] || cols[j] === '0' || cols[j] === '') {
                             cols[j] = 1;
                         }
@@ -427,6 +465,7 @@ ui.carousel = {
                     } else {
 
                         colsXL[j] = Number(colsXL[j]);
+
                         if (!colsXL[j] || colsXL[j] === '0' || colsXL[j] === '') {
                             colsXL[j] = cols[j];
                         }
@@ -440,6 +479,7 @@ ui.carousel = {
                     } else {
 
                         colsLG[j] = Number(colsLG[j]);
+
                         if (!colsLG[j] || colsLG[j] === '0' || colsLG[j] === '') {
                             colsLG[j] = cols[j];
                         }
@@ -453,6 +493,7 @@ ui.carousel = {
                     } else {
 
                         colsMD[j] = Number(colsMD[j]);
+
                         if (!colsMD[j] || colsMD[j] === '0' || colsMD[j] === '') {
                             colsMD[j] = cols[j];
                         }
@@ -466,6 +507,7 @@ ui.carousel = {
                     } else {
 
                         colsSM[j] = Number(colsSM[j]);
+
                         if (!colsSM[j] || colsSM[j] === '0' || colsSM[j] === '') {
                             colsSM[j] = cols[j];
                         }
@@ -479,6 +521,7 @@ ui.carousel = {
                     } else {
 
                         colsXS[j] = Number(colsXS[j]);
+
                         if (!colsXS[j] || colsXS[j] === '0' || colsXS[j] === '') {
                             colsXS[j] = cols[j];
                         }
@@ -493,7 +536,7 @@ ui.carousel = {
                     nav = ui.find('.' + ui.carousel.targetNav, that)[0];
                     if (nav === undefined) { return; }
 
-                    ui.addClass(that, 'active');
+                    ui.addClass(that, ui.carousel.nameActive);
                     carouselModifier(j, that, 'static');
 
                     // create nav
@@ -510,7 +553,11 @@ ui.carousel = {
                     navDots.innerHTML = '';
 
                     for (k = 0; k < contents.length; k++) {
-                        navDotsHtml += '<i class="ease-all ease-slow"></i>';
+
+                        navDotsHtml += '<' + ui.carousel.tagDots + ' ' +
+                                            'class="' + ui.carousel.stylesDots + '">' +
+                                       '</' + ui.carousel.tagDots + '>';
+
                     }
 
                     navDots.insertAdjacentHTML('beforeend', navDotsHtml);
@@ -526,10 +573,11 @@ ui.carousel = {
 
                     // auto slider
                     autoTimer[j] = that.getAttribute(ui.carousel.dataSlide);
+
                     if (autoTimer[j] !== null) {
 
                         if (autoTimer[j] === '') {
-                            autoTimer[j] = 8000;
+                            autoTimer[j] = ui.carousel.defaultSlideTimer;
                         }
 
                         autoSlider[j] = setInterval(function () {
@@ -611,6 +659,7 @@ ui.carousel = {
                 function () {
 
                     var callCarousels = ui.find('.' + ui.carousel.target + '[' + ui.carousel.dataSlide + ']');
+
                     if (document.hidden) { // stop all carousels when browser windows is not active
 
                         ui.each(callCarousels,
@@ -635,7 +684,9 @@ ui.carousel = {
             ui.on(document,
                  'scroll',
 
-                 '.' + ui.carousel.target + ' .' + ui.carousel.nameScroll + ',.' + ui.carousel.target + ' .' + ui.carousel.nameScrollV + ',.' + ui.carousel.target + ' .' + ui.carousel.nameScrollH,
+                 '.' + ui.carousel.target + ' .' + ui.carousel.nameScroll + ',' +
+                 '.' + ui.carousel.target + ' .' + ui.carousel.nameScrollV + ',' +
+                 '.' + ui.carousel.target + ' .' + ui.carousel.nameScrollH,
 
                 function (e) {
 
@@ -662,7 +713,9 @@ ui.carousel = {
                     var i, startx, starty, currentx, currenty, startMove, touchMove, move, that, slider, sliderMax, col, navDotsEl, halfSized, touchEndTimer, contents;
 
                     if (isScrolling) { return; }
+
                     touchMove = false;
+                    touchStarted = true;
 
                     startx = e.targetTouches[0].pageX;
                     starty = e.targetTouches[0].pageY;
@@ -685,6 +738,7 @@ ui.carousel = {
                     startMove = startMove.split('|')[4];
 
                     ui.off(document, 'touchmove');
+
                     ui.on(document,
                         'touchmove',
 
@@ -700,7 +754,7 @@ ui.carousel = {
                             currentx = e.targetTouches[0].pageX;
                             currenty = e.targetTouches[0].pageY;
 
-                            if (Math.abs(startx - currentx) > 10 && Math.abs(starty - currenty) < 10) {
+                            if (Math.abs(startx - currentx) > ui.carousel.touchMoveToleranceX && Math.abs(starty - currenty) < ui.carousel.touchMoveToleranceY) {
                                 touchMove = true;
                             }
 
@@ -739,6 +793,7 @@ ui.carousel = {
                         });
 
                     ui.off(document, 'touchend.' + ui.carousel.eventTouchEnd + ' touchcancel.' + ui.carousel.eventTouchCancel);
+
                     ui.on(document,
                         'touchend.' + ui.carousel.eventTouchEnd + ' touchcancel.' + ui.carousel.eventTouchCancel,
 
@@ -746,82 +801,94 @@ ui.carousel = {
 
                             if (touchMove) {
 
-                                var beforeCount, navDots;
-                                navDots = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots, that[i])[0];
-
-                                beforeCount = counts[i];
-                                counts[i] = Math.abs(move) / contents[0].offsetWidth;
-
-                                if (currentx < 0) {
-                                    currentx = 0;
-
-                                } else if (currentx > contents[0].offsetWidth) {
-                                    currentx = contents[0].offsetWidth;
-                                }
-
-                                if ((currentx - startx) > 0) { // slide to right
-
-                                    if (counts[i].toFixed(2).split('.')[1] < 85) {
-                                        counts[i] = Math.floor(counts[i]);
-
-                                    } else {
-                                        counts[i] = beforeCount;
-                                    }
-
-                                } else { // slide to left
-
-                                    if (counts[i].toFixed(2).split('.')[1] > 15) {
-                                        counts[i] = Math.ceil(counts[i]);
-
-                                    } else {
-                                        counts[i] = beforeCount;
-                                    }
-
-                                }
-
-                                move = -Math.ceil(counts[i] * contents[0].offsetWidth);
-
-                                if (halfSized && (counts[i] === contents.length - col)) {
-                                    move -= contents[0].offsetWidth * ui.carousel.halfSize;
-                                }
-
-                                slider.style.transform = 'translateX(' + move + 'px)';
-                                that.setAttribute(ui.carousel.dataContent, (counts[i] + 1));
-
-                                ui.removeClass(navDotsEl, ui.carousel.nameNavSelected);
-                                ui.addClass(navDotsEl[counts[i]], ui.carousel.nameNavSelected);
-
-                                filterDots(navDots, navDotsEl, counts[i], i); // filter dots when dots number exceeds
-
-                                clearTimeout(touchEndTimer);
-                                touchEndTimer = setTimeout(function () {
-
-                                    getSlideSpeed(slider, contentsEase[i], i); // get carousel slide speed
-
-                                    // wait auto slider until touchmove ends
-                                    if (autoTimer[i] !== null) {
-
-                                        clearInterval(autoSlider[i]);
-
-                                        autoSlider[i] = setInterval(function () {
-                                            carouselNav(that, 'next');
-                                        }, autoTimer[i]);
-
-                                    }
-
-                                    // detect carousel animates
-                                    ui.each(contents,
-
-                                        function () {
-                                            carouselAnimate(this, contentsEase[i], 'touch');
-                                        });
-
-                                    ui.removeClass(document, ui.carousel.nameTouchMove);
-
-                                }, ui.globals.fast);
-
                                 that.style.transitionDuration = '';
                                 slider.style.transitionDuration = '';
+
+                                setTimeout(function () {
+
+                                    var beforeCount, navDots;
+                                    navDots = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots, that[i])[0];
+
+                                    beforeCount = counts[i];
+                                    counts[i] = Math.abs(move) / contents[0].offsetWidth;
+
+                                    if (currentx > startx) { // slide to right
+
+                                        if (counts[i].toFixed(2).split('.')[1] > ui.carousel.touchMoveToleranceX) {
+                                            counts[i] = Math.floor(counts[i]);
+
+                                        } else {
+
+                                            if (beforeCount <= 0) {
+                                                counts[i] = 0;
+
+                                            } else {
+                                                counts[i] = beforeCount - 1;
+                                            }
+
+                                        }
+
+                                    } else { // slide to left
+
+                                        if (counts[i].toFixed(2).split('.')[1] > ui.carousel.touchMoveToleranceX) {
+                                            counts[i] = Math.ceil(counts[i]);
+
+                                        } else {
+
+                                            if (beforeCount >= (contents.length - 1)) {
+                                                beforeCount = (contents.length - 1);
+
+                                            } else {
+                                                counts[i] = beforeCount + 1;
+                                            }
+
+                                        }
+
+                                    }
+
+                                    move = -Math.ceil(counts[i] * contents[0].offsetWidth);
+
+                                    if (halfSized && (counts[i] === contents.length - col)) {
+                                        move -= contents[0].offsetWidth * ui.carousel.halfSize;
+                                    }
+
+                                    slider.style.transform = 'translateX(' + move + 'px)';
+                                    that.setAttribute(ui.carousel.dataContent, (counts[i] + 1));
+
+                                    ui.removeClass(navDotsEl, ui.carousel.nameNavSelected);
+                                    ui.addClass(navDotsEl[counts[i]], ui.carousel.nameNavSelected);
+
+                                    filterDots(navDots, navDotsEl, counts[i], i); // filter dots when dots number exceeds
+
+                                    clearTimeout(touchEndTimer);
+                                    touchEndTimer = setTimeout(function () {
+
+                                        getSlideSpeed(slider, contentsEase[i], i); // get carousel slide speed
+
+                                        // wait auto slider until touchmove ends
+                                        if (autoTimer[i] !== null) {
+
+                                            clearInterval(autoSlider[i]);
+
+                                            autoSlider[i] = setInterval(function () {
+                                                carouselNav(that, 'next');
+                                            }, autoTimer[i]);
+
+                                        }
+
+                                        // detect carousel animates
+                                        ui.each(contents,
+
+                                            function () {
+                                                carouselAnimate(this, contentsEase[i], 'touch');
+                                            });
+
+                                        ui.removeClass(document, ui.carousel.nameTouchMove);
+                                        touchStarted = false;
+
+                                    }, ui.globals.fast);
+
+                                }, 0);
 
                             }
 
@@ -835,7 +902,7 @@ ui.carousel = {
                 });
 
             // carousel gallery
-            ui.on('.' + ui.carousel.targetGallery + ' .thumbs .img',
+            ui.on('.' + ui.carousel.targetGallery + ' .' + ui.carousel.nameGalleryThumbs + ' .' + ui.carousel.nameGalleryImg,
                 'click',
 
                 function () {
@@ -844,14 +911,15 @@ ui.carousel = {
 
                     parent = ui.closest(this, '.' + ui.carousel.targetGallery);
 
-                    detail = ui.find('.detail', parent[0]);
-                    target = ui.find('img', detail);
-                    thumbs = ui.find('.thumbs .img', parent[0]);
+                    detail = ui.find('.' + ui.carousel.nameGalleryDetail, parent[0]);
+                    target = ui.find(ui.carousel.nameGalleryImg, detail);
+
+                    thumbs = ui.find('.' + ui.carousel.nameGalleryThumbs + ' .' + ui.carousel.nameGalleryImg, parent[0]);
 
                     index = Array.prototype.slice.call(thumbs).indexOf(this);
                     target.setAttribute(ui.carousel.dataCount, index);
 
-                    ui.addClass(detail, 'detail-loader');
+                    ui.addClass(detail, ui.carousel.nameGalleryDetailLoader);
 
                     newImg = new Image();
                     newImg.src = this.getAttribute(ui.carousel.dataHref);
@@ -859,7 +927,7 @@ ui.carousel = {
                     newImg.onload = function () {
 
                         target.src = newImg.src;
-                        ui.removeClass(detail, 'detail-loader');
+                        ui.removeClass(detail, ui.carousel.nameGalleryDetailLoader);
 
                     };
 
@@ -868,11 +936,11 @@ ui.carousel = {
 
                 });
 
-            ui.each('.' + ui.carousel.targetGallery + ' .thumbs',
+            ui.each('.' + ui.carousel.targetGallery + ' .' + ui.carousel.nameGalleryThumbs,
 
                 function () {
 
-                    var images = ui.find('.img', this);
+                    var images = ui.find('.' + ui.carousel.nameGalleryImg, this);
 
                     if (images.length <= 1) {
                         this.style.display = 'none'; // hide thumbs when image length is 1 or 0
@@ -887,7 +955,7 @@ ui.carousel = {
     // Loaders
     ui.onload(ui.carousel.Start);
 
-    ui.on(window, 'resize scroll', carouselResizer);
+    ui.on(window, 'resize', carouselResizer);
     ui.on(document, ui.globals.eventDomChange, function () { carouselResizer('resize'); });
 
 }());
