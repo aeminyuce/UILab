@@ -894,10 +894,14 @@ ui.effects = {
     // targets
     target: document,
 
+    // main classnames
+    namePause: 'pause-effects',
+    nameNoEffects: 'no-effects',
+
     // pause effects
     pauseAll: false,
     pauseScroll: false, // pause effects when scrolling
-    pauseResize: true, // pause effects when resizing
+    pauseResize: false, // pause effects when resizing
 
     preload: true, // wait page preload to start effects
     reduceMotion: true, // detecting device reduce motions
@@ -905,11 +909,7 @@ ui.effects = {
     // show effects
     ie: true,
     android: true,
-    androidOld: false,
-
-    // main classnames
-    namePause: 'pause-effects',
-    nameNoEffects: 'no-effects'
+    androidOld: false
 
 };
 
@@ -957,13 +957,14 @@ ui.effects = {
 
         reduceTimers = function () { // reduce effect timers
 
-            ui.globals.fast = ui.globals.fast / 100;
-            ui.globals.ease = ui.globals.ease / 100;
-            ui.globals.slow = ui.globals.slow / 100;
-            ui.globals.slow2x = ui.globals.slow2x / 100;
-            ui.globals.slow3x = ui.globals.slow3x / 100;
-            ui.globals.slow4x = ui.globals.slow4x / 100;
-            ui.globals.slow5x = ui.globals.slow5x / 100;
+            // they must be bigger than 10!
+            ui.globals.fast = 11;
+            ui.globals.ease = 12;
+            ui.globals.slow = 13;
+            ui.globals.slow2x = 14;
+            ui.globals.slow3x = 15;
+            ui.globals.slow4x = 16;
+            ui.globals.slow5x = 17;
 
         }
 

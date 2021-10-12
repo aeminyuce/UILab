@@ -364,7 +364,7 @@ ui.calendar = {
 
                                 setTimeout(function () {
                                     ui.addClass(ui.find('.details', container), 'open');
-                                }, 20);
+                                }, 10);
 
                             }
 
@@ -550,7 +550,7 @@ ui.calendar = {
 
                 }
 
-            }, 20);
+            }, 10);
 
         });
 
@@ -803,7 +803,7 @@ ui.calendar = {
 
                 setTimeout(function () {
                     ui.addClass(that, 'show-details');
-                }, 20);
+                }, 10);
 
                 scroll = 0;
 

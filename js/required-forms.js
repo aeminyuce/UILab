@@ -289,7 +289,7 @@ ui.requiredForms = {
                             clearInterval(scrollAnimate);
                         }
 
-                    }, 2);
+                    }, 10);
 
                 } else { return; }
 
