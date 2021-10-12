@@ -1,5 +1,5 @@
 <!-- custom JS -->
-<script src="../js/custom/real-estate-details.js"></script>
+<script src="../js/custom/real-estate-details.js?v=<?php echo filemtime('../js/custom/real-estate-details.js'); ?>"></script>
 
 <main class="container no-gutter">
     <div class="fixed padding-30-v">

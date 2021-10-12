@@ -1,5 +1,5 @@
 <!-- custom JS -->
-<script src="../js/custom/admin-panel.js"></script>
+<script src="../js/custom/admin-panel.js?v=<?php echo filemtime('../js/custom/admin-panel.js'); ?>"></script>
 
 <main class="container no-gutter">
     <div class="col-static">

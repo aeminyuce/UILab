@@ -1,5 +1,5 @@
 <!-- custom CSS -->
-<link rel="stylesheet" href="../css/custom/weather-app.css"/>
+<link rel="stylesheet" href="../css/custom/weather-app.css?v=<?php echo filemtime('../css/custom/weather-app.css'); ?>"/>
 
 <main class="container no-gutter">
     <div class="fixed padding-30-v">

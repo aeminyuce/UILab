@@ -1,5 +1,5 @@
 <!-- custom CSS -->
-<link rel="stylesheet" href="../css/custom/login-page.css"/>
+<link rel="stylesheet" href="../css/custom/login-page.css?v=<?php echo filemtime('../css/custom/login-page.css'); ?>"/>
 
 <main class="login-page container full-h no-gutter">
 

@@ -1,5 +1,5 @@
 <!-- custom CSS -->
-<link rel="stylesheet" href="../css/custom/movie-app.css"/>
+<link rel="stylesheet" href="../css/custom/movie-app.css?v=<?php echo filemtime('../css/custom/movie-app.css'); ?>"/>
 
 <main class="container no-gutter">
     <div class="col-static no-fluid">
@@ -126,7 +126,7 @@
                             <div class="col-static">
                                 <div class="col-350">
                                     <div class="round set-relative">
-                                        <button class="full-w set-absolute set-all opacity-more ease-layout" onclick="ui.modal.open({source: 'https://www.imdb.com/videoembed/vi4235180569', size: '722x300', type: 'iframe'});">
+                                        <button class="btn full-w full-h set-absolute opacity-more ease-layout" onclick="ui.modal.open({source: 'https://www.imdb.com/videoembed/vi4235180569', size: '722x300', type: 'iframe'});">
                                             <svg class="icon icon-xxl icon-default font-color-white set-absolute set-c"><use href="#video"/></svg>
                                         </button>
                                         <img class="img-fluid round shadow-lg" src="img/video-poster.jpg" alt="">

@@ -1,8 +1,8 @@
 <!-- custom CSS -->
-<link rel="stylesheet" href="../css/custom/icons.css"/>
+<link rel="stylesheet" href="../css/custom/icons.css?v=<?php echo filemtime('../css/custom/icons.css'); ?>"/>
 
 <!-- custom JS -->
-<script src="../js/custom/icons.js"></script>
+<script src="../js/custom/icons.js?v=<?php echo filemtime('../js/custom/icons.js'); ?>"></script>
 
 <main class="container">
     <div class="row">

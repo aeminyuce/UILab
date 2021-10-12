@@ -1,8 +1,8 @@
 <!-- custom CSS -->
-<link rel="stylesheet" href="../css/custom/dashboard.css"/>
+<link rel="stylesheet" href="../css/custom/dashboard.css?v=<?php echo filemtime('../css/custom/dashboard.css'); ?>"/>
 
 <!-- custom JS -->
-<script src="../js/custom/dashboard.js"></script>
+<script src="../js/custom/dashboard.js?v=<?php echo filemtime('../js/custom/dashboard.js'); ?>"></script>
 
 <main class="container no-gutter">
 

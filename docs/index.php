@@ -22,53 +22,53 @@
     <meta http-equiv="Expires" content="0" />
 
     <!-- favicon -->
-    <link rel="icon" href="img/favicon.ico" />
+    <link rel="icon" href="img/favicon.ico?v=<?php echo filemtime('img/favicon.ico'); ?>" />
 
     <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
     <!--[if lt IE 10]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
 
     <!-- import CSS -->
-    <link rel="stylesheet" href="../css/_import.css"/>
-    <link rel="stylesheet" href="../css/custom/layout.css"/>
+    <link rel="stylesheet" href="../css/_import.css?v=<?php echo filemtime('../css/_import.css'); ?>"/>
+    <link rel="stylesheet" href="../css/custom/layout.css?v=<?php echo filemtime('../css/custom/layout.css'); ?>"/>
 
     <!-- import JS -->
-    <script src="../js/ui.js"></script>
+    <script src="../js/ui.js?v=<?php echo filemtime('../js/ui.js'); ?>"></script>
 
-    <script src="../js/grid.js"></script>
+    <script src="../js/grid.js?v=<?php echo filemtime('../js/grid.js'); ?>"></script>
 
-    <script src="../js/top-button.js"></script>
-    <script src="../js/dropdown.js"></script>
-    <script src="../js/loading-mask.js"></script>
-    <script src="../js/tabs.js"></script>
+    <script src="../js/top-button.js?v=<?php echo filemtime('../js/top-button.js'); ?>"></script>
+    <script src="../js/dropdown.js?v=<?php echo filemtime('../js/dropdown.js'); ?>"></script>
+    <script src="../js/loading-mask.js?v=<?php echo filemtime('../js/loading-mask.js'); ?>"></script>
+    <script src="../js/tabs.js?v=<?php echo filemtime('../js/tabs.js'); ?>"></script>
 
-    <script src="../js/forms.js"></script>
-    <script src="../js/autocomplete.js"></script>
-    <script src="../js/currency-spinner.js"></script>
-    <script src="../js/dual-multi-select.js"></script>
-    <script src="../js/form-spinner.js"></script>
-    <script src="../js/required-forms.js"></script>
-    <script src="../js/textarea-counter.js"></script>
+    <script src="../js/forms.js?v=<?php echo filemtime('../js/forms.js'); ?>"></script>
+    <script src="../js/autocomplete.js?v=<?php echo filemtime('../js/autocomplete.js'); ?>"></script>
+    <script src="../js/currency-spinner.js?v=<?php echo filemtime('../js/currency-spinner.js'); ?>"></script>
+    <script src="../js/dual-multi-select.js?v=<?php echo filemtime('../js/dual-multi-select.js'); ?>"></script>
+    <script src="../js/form-spinner.js?v=<?php echo filemtime('../js/form-spinner.js'); ?>"></script>
+    <script src="../js/required-forms.js?v=<?php echo filemtime('../js/required-forms.js'); ?>"></script>
+    <script src="../js/textarea-counter.js?v=<?php echo filemtime('../js/textarea-counter.js'); ?>"></script>
 
-    <script src="../js/card.js"></script>
-    <script src="../js/sticky-header.js"></script>
+    <script src="../js/card.js?v=<?php echo filemtime('../js/card.js'); ?>"></script>
+    <script src="../js/sticky-header.js?v=<?php echo filemtime('../js/sticky-header.js'); ?>"></script>
 
-    <script src="../js/mobile-menu.js"></script>
-    <script src="../js/modal.js"></script>
-    <script src="../js/tooltip.js"></script>
-    <script src="../js/alerts.js"></script>
-    <script src="../js/calendar.js"></script>
-    <script src="../js/carousel.js"></script>
-    <script src="../js/countdown.js"></script>
-    <script src="../js/grid-list.js"></script>
-    <script src="../js/image-uploader.js"></script>
-    <script src="../js/photo-gallery.js"></script>
-    <script src="../js/photo-slider.js"></script>
-    <script src="../js/weather.js"></script>
+    <script src="../js/mobile-menu.js?v=<?php echo filemtime('../js/mobile-menu.js'); ?>"></script>
+    <script src="../js/modal.js?v=<?php echo filemtime('../js/modal.js'); ?>"></script>
+    <script src="../js/tooltip.js?v=<?php echo filemtime('../js/tooltip.js'); ?>"></script>
+    <script src="../js/alerts.js?v=<?php echo filemtime('../js/alerts.js'); ?>"></script>
+    <script src="../js/calendar.js?v=<?php echo filemtime('../js/calendar.js'); ?>"></script>
+    <script src="../js/carousel.js?v=<?php echo filemtime('../js/carousel.js'); ?>"></script>
+    <script src="../js/countdown.js?v=<?php echo filemtime('../js/countdown.js'); ?>"></script>
+    <script src="../js/grid-list.js?v=<?php echo filemtime('../js/grid-list.js'); ?>"></script>
+    <script src="../js/image-uploader.js?v=<?php echo filemtime('../js/image-uploader.js'); ?>"></script>
+    <script src="../js/photo-gallery.js?v=<?php echo filemtime('../js/photo-gallery.js'); ?>"></script>
+    <script src="../js/photo-slider.js?v=<?php echo filemtime('../js/photo-slider.js'); ?>"></script>
+    <script src="../js/weather.js?v=<?php echo filemtime('../js/weather.js'); ?>"></script>
 
-    <script src="../js/line-charts.js"></script>
-    <script src="../js/donut-chart.js"></script>
-    <script src="../js/pie-chart.js"></script>
-    <script src="../js/svg-map.js"></script>
+    <script src="../js/line-charts.js?v=<?php echo filemtime('../js/line-charts.js'); ?>"></script>
+    <script src="../js/donut-chart.js?v=<?php echo filemtime('../js/donut-chart.js'); ?>"></script>
+    <script src="../js/pie-chart.js?v=<?php echo filemtime('../js/pie-chart.js'); ?>"></script>
+    <script src="../js/svg-map.js?v=<?php echo filemtime('../js/svg-map.js'); ?>"></script>
 
 </head>
 

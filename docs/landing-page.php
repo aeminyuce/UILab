@@ -1,8 +1,8 @@
 <!-- custom CSS -->
-<link rel="stylesheet" href="../css/custom/landing-page.css"/>
+<link rel="stylesheet" href="../css/custom/landing-page.css?v=<?php echo filemtime('../css/custom/landing-page.css'); ?>"/>
 
 <!-- custom JS -->
-<script src="../js/custom/landing-page.js"></script>
+<script src="../js/custom/landing-page.js?v=<?php echo filemtime('../js/custom/landing-page.js'); ?>"></script>
 
 <!-- header: start -->
 <header class="container no-gutter" data-ui-classes="shadow-lg">

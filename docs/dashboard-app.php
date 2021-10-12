@@ -1,8 +1,8 @@
 <!-- custom CSS -->
-<link rel="stylesheet" href="../css/custom/dashboard-app.css"/>
+<link rel="stylesheet" href="../css/custom/dashboard-app.css?v=<?php echo filemtime('../css/custom/dashboard-app.css'); ?>"/>
 
 <!-- custom JS -->
-<script src="../js/custom/dashboard-app.js"></script>
+<script src="../js/custom/dashboard-app.js?v=<?php echo filemtime('../js/custom/dashboard-app.js'); ?>"></script>
 
 <main class="container no-gutter">
     <div class="fixed padding-30-v no-scroll">

@@ -1,5 +1,5 @@
 <!-- custom JS -->
-<script src="../js/custom/download.js"></script>
+<script src="../js/custom/download.js?v=<?php echo filemtime('../js/custom/download.js'); ?>"></script>
 
 <main class="container">
     <div class="row">

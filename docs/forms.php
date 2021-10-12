@@ -1,5 +1,5 @@
 <!-- custom CSS -->
-<link rel="stylesheet" href="../css/custom/forms.css"/>
+<link rel="stylesheet" href="../css/custom/forms.css?v=<?php echo filemtime('../css/custom/forms.css'); ?>"/>
 
 <main class="container no-gutter">
     <div class="fixed">

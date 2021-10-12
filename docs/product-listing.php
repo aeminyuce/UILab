@@ -1,5 +1,5 @@
 <!-- custom JS -->
-<script src="../js/custom/product-listing.js"></script>
+<script src="../js/custom/product-listing.js?v=<?php echo filemtime('../js/custom/product-listing.js'); ?>"></script>
 
 <main class="container no-gutter">
     <div class="fixed">

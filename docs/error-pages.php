@@ -1,5 +1,5 @@
 <!-- custom CSS -->
-<link rel="stylesheet" href="../css/custom/error-pages.css"/>
+<link rel="stylesheet" href="../css/custom/error-pages.css?v=<?php echo filemtime('../css/custom/error-pages.css'); ?>"/>
 
 <main class="container no-gutter">
     <div class="fixed">
