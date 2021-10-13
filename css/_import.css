@@ -54,7 +54,7 @@
   --alerts-dialog-success-shadow: hsl(142, 82%, 34%);
   --alerts-dialog-custom-shadow: hsla(0, 0%, 0%, 0.3);
   --alerts-msg-bg: hsl(0, 0%, 9%);
-  --calendar-highlighted-bg: hsla(0, 0%, 0%, 0.08);
+  --calendar-highlighted-bg: hsla(0, 0%, 0%, 0.15);
   --calendar-weekend-bg: hsla(0, 0%, 0%, 0.04);
   --calendar-empty-details-bg: hsla(0, 0%, 0%, 0.12);
   --calendar-today-btn-bg: hsla(0, 0%, 0%, 0.15);
@@ -127,7 +127,7 @@
   --alerts-dialog-success-shadow: hsl(142, 82%, 58%);
   --alerts-dialog-custom-shadow: hsla(0, 0%, 100%, 0.3);
   --alerts-msg-bg: hsl(220, 14%, 21%);
-  --calendar-highlighted-bg: hsla(0, 0%, 100%, 0.08);
+  --calendar-highlighted-bg: hsla(0, 0%, 100%, 0.15);
   --calendar-weekend-bg: hsla(0, 0%, 100%, 0.04);
   --calendar-empty-details-bg: hsla(0, 0%, 100%, 0.18);
   --calendar-today-btn-bg: hsla(0, 0%, 100%, 0.15);
@@ -7692,7 +7692,7 @@ button.dialog-custom:focus {
 }
 .calendar caption {
   height: 52px;
-  background-color: hsla(0, 0%, 0%, 0.08);
+  background-color: hsla(0, 0%, 0%, 0.15);
   background-color: var(--calendar-highlighted-bg);
   padding: 5px 52px;
   margin-bottom: 5px;
@@ -7835,15 +7835,17 @@ button.dialog-custom:focus {
 }
 .calendar-details li {
   min-height: 10px;
+  background-color: hsla(0, 0%, 0%, 0.08);
+  background-color: var(--btn-bg);
   padding: 10px 10px 10px 92px;
   display: block;
 }
 .desktop .calendar-details li:hover {
-  background-color: hsla(0, 0%, 0%, 0.075);
-  background-color: var(--btn-ghost-hover-bg);
+  background-color: hsla(0, 0%, 0%, 0.15);
+  background-color: var(--btn-hover-bg);
 }
 .calendar-details li:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .calendar-details li > strong {
   font-size: 62px;
