@@ -40,7 +40,7 @@ ui.dropdown = {
     menuTopMargin: 1,
 
     // custom events
-    eventDropdownClose: 'ui:dropdownClose'
+    eventClose: 'ui:dropdownClose'
 
 };
 
@@ -204,7 +204,7 @@ ui.dropdown = {
                 setTimeout(function () {
 
                     ui.on(document,
-                        'click.' + ui.dropdown.eventDropdownClose,
+                        'click.' + ui.dropdown.eventClose,
 
                         function (ev) {
 
@@ -226,7 +226,7 @@ ui.dropdown = {
                             if (ev.button !== 2) { // inherited right clicks
 
                                 dropdownClose();
-                                ui.off(document, 'click.' + ui.dropdown.eventDropdownClose);
+                                ui.off(document, 'click.' + ui.dropdown.eventClose);
 
                             }
 

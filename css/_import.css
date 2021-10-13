@@ -7575,7 +7575,7 @@ button.dialog-custom:focus {
 .ease-calendar {
   transition-property: opacity;
 }
-.ease-calendar .details,
+.ease-calendar .calendar-details,
 .ease-calendar thead,
 .ease-calendar tbody {
   transition-property: transform, opacity;
@@ -7584,7 +7584,7 @@ button.dialog-custom:focus {
 }
 .ease-calendar button,
 .ease-calendar a,
-.ease-calendar .details li {
+.ease-calendar .calendar-details li {
   transition-property: background-color, opacity;
   transition-duration: 0.15s;
 }
@@ -7749,7 +7749,7 @@ button.dialog-custom:focus {
 .calendar.round .calendar-panel {
   border-radius: 6px;
 }
-.calendar.round .calendar-panel .call {
+.calendar.round .calendar-panel .panel-call {
   border-radius: 6px;
 }
 .calendar.round .calendar-month {
@@ -7757,6 +7757,12 @@ button.dialog-custom:focus {
 }
 .calendar.round .calendar-year {
   border-radius: 0 6px 6px 0;
+}
+.calendar.round .calendar-details > button {
+  border-radius: 6px;
+}
+.calendar.round .calendar-details li {
+  border-radius: 6px;
 }
 .calendar.round table.fill-weekends th:nth-child(6) {
   border-radius: 6px 0 0 0;
@@ -7773,13 +7779,7 @@ button.dialog-custom:focus {
 .calendar.round td button {
   border-radius: 6px;
 }
-.calendar.round .details > button {
-  border-radius: 6px;
-}
-.calendar.round .details li {
-  border-radius: 6px;
-}
-.calendar:not(.show-details) .details {
+.calendar:not(.show-details) .calendar-details {
   opacity: 0;
   transform: translateX(20%);
 }
@@ -7794,7 +7794,7 @@ button.dialog-custom:focus {
 .ie .calendar.show-details tbody {
   visibility: hidden;
 }
-.calendar .details {
+.calendar-details {
   padding-left: 37px;
   position: absolute;
   top: 57px;
@@ -7803,10 +7803,10 @@ button.dialog-custom:focus {
   left: 0;
   z-index: 2;
 }
-.calendar .details:not(.open) {
+.calendar-details:not(.open) {
   display: none;
 }
-.calendar .details > button {
+.calendar-details > button {
   width: 32px;
   height: 100%;
   border: 0;
@@ -7815,37 +7815,37 @@ button.dialog-custom:focus {
   left: 0;
   cursor: pointer;
 }
-.calendar .details > button .icon {
+.calendar-details > button .icon {
   width: 20px;
   height: 20px;
   stroke-width: 30px;
   opacity: 0.65;
 }
-.calendar .details ul {
+.calendar-details ul {
   height: 100%;
   overflow-x: hidden !important;
   overflow-y: auto !important;
 }
-.calendar .details ul,
-.calendar .details ul * {
+.calendar-details ul,
+.calendar-details ul * {
   text-align: left !important;
 }
-.mobile .calendar .details ul {
+.mobile .calendar-details ul {
   -webkit-overflow-scrolling: touch;
 }
-.calendar .details li {
+.calendar-details li {
   min-height: 10px;
   padding: 10px 10px 10px 92px;
   display: block;
 }
-.desktop .calendar .details li:hover {
+.desktop .calendar-details li:hover {
   background-color: hsla(0, 0%, 0%, 0.075);
   background-color: var(--btn-ghost-hover-bg);
 }
-.calendar .details li:not(:last-child) {
+.calendar-details li:not(:last-child) {
   margin-bottom: 20px;
 }
-.calendar .details li > strong {
+.calendar-details li > strong {
   font-size: 62px;
   font-weight: 300;
   letter-spacing: -0.025em;
@@ -7855,18 +7855,18 @@ button.dialog-custom:focus {
   margin-left: -82px;
   float: left;
 }
-.calendar .details li > b {
+.calendar-details li > b {
   font-size: 16px;
   margin: 10px 0 10px 0;
   display: inline-block;
 }
-.calendar .details li > span {
+.calendar-details li > span {
   display: block;
 }
-.calendar .details li > span:not(:last-child) {
+.calendar-details li > span:not(:last-child) {
   margin-bottom: 2px;
 }
-.calendar .details li > span > i {
+.calendar-details li > span > i {
   font-size: 13px;
   font-style: normal;
   line-height: normal;
@@ -7877,10 +7877,10 @@ button.dialog-custom:focus {
   display: inline-block;
   border-radius: 10px;
 }
-.calendar .details li > span > a {
+.calendar-details li > span > a {
   text-decoration: underline;
 }
-.calendar .details li > span > a:hover {
+.calendar-details li > span > a:hover {
   text-decoration: none;
 }
 .calendar .empty-details li > strong,
@@ -7933,7 +7933,7 @@ button.dialog-custom:focus {
   padding: 2px;
   flex-grow: 1;
 }
-.calendar-panel .call {
+.calendar-panel .panel-call {
   font-size: 14px;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -7945,15 +7945,15 @@ button.dialog-custom:focus {
   overflow: hidden;
   border: 0;
 }
-.calendar-panel .call.selected {
+.calendar-panel .panel-call.selected {
   color: hsl(0, 0%, 100%) !important;
   font-weight: 700;
   background-color: hsl(212, 64%, 38%);
 }
-.desktop .calendar-panel .call.selected:hover {
+.desktop .calendar-panel .panel-call.selected:hover {
   background-color: hsl(212, 64%, 53%);
 }
-.desktop .calendar-panel .call:hover {
+.desktop .calendar-panel .panel-call:hover {
   background-color: hsla(0, 0%, 0%, 0.15);
   background-color: var(--btn-hover-bg);
 }
@@ -7976,7 +7976,7 @@ button.dialog-custom:focus {
   z-index: 10;
   box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.15);
 }
-.text .calendar .calendar:not(.open-ease) {
+.text .calendar:not(.open-ease) {
   opacity: 0;
 }
 .text:not(.picker-t).no-border .calendar {

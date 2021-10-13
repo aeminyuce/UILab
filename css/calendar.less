@@ -81,8 +81,8 @@
 .ease-calendar {
     transition-property: opacity;
 
-    .details,thead,tbody { transition-property: transform, opacity; transition-duration: .25s; transition-timing-function: ease-in-out; }
-    button,a,.details li { transition-property: background-color, opacity; transition-duration: @ease-default; }
+    .calendar-details,thead,tbody { transition-property: transform, opacity; transition-duration: .25s; transition-timing-function: ease-in-out; }
+    button,a,.calendar-details li { transition-property: background-color, opacity; transition-duration: @ease-default; }
 }
 
 .calendar {
@@ -187,11 +187,16 @@
             &-panel {
                 border-radius: @round;
 
-                .call { border-radius: @round; }
+                .panel-call { border-radius: @round; }
             }
 
             &-month { border-radius: @round 0 0 @round; }
             &-year { border-radius: 0 @round @round 0; }
+
+            &-details {
+                & > button { border-radius: @round; }
+                li { border-radius: @round; }
+            }
         }
 
         table {
@@ -209,15 +214,10 @@
         td {
             button { border-radius: @round; }
         }
-
-        .details {
-            & > button { border-radius: @round; }
-            li { border-radius: @round; }
-        }
     }
 
     &:not(.show-details) {
-        .details { opacity: 0; transform: translateX(@calendar-details-slide-size); }
+        .calendar-details { opacity: 0; transform: translateX(@calendar-details-slide-size); }
     }
     &.show-details {
         thead,tbody {
@@ -227,7 +227,7 @@
         }
     }
 
-    .details {
+    &-details {
         padding-left: (@calendar-details-toggle-btn-size + @calendar-caption-padding); position: absolute; top: (@calendar-caption-buttons-size + @calendar-caption-padding * 3); right: 0; bottom: 0; left: 0; z-index: 2;
 
         &:not(.open) { display: none; }
@@ -289,7 +289,7 @@
         ul { display: flex; flex-wrap: wrap; }
         li { width: 33.333332%; height: 25%; padding: @calendar-panel-items-gap; flex-grow: 1; }
 
-        .call {
+        .panel-call {
             font-size: @calendar-panel-items-font-size; white-space: nowrap; text-overflow: ellipsis; line-height: 100%; width: 100%; height: 100%; background-color: @no-color; padding: @calendar-panel-items-padding; overflow: hidden; border: 0;
 
             &.selected {
@@ -318,7 +318,7 @@
     .calendar {
         width: 100%; max-width: @calendar-max-width; position: absolute; z-index: @calendar-picker-z-index; box-shadow: 0 @calendar-shadow-size @calendar-picker-shadow;
 
-        .calendar:not(.open-ease) { opacity: 0; }
+        &:not(.open-ease) { opacity: 0; }
     }
 
     &:not(.picker-t) {

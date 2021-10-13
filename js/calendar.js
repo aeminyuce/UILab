@@ -10,8 +10,15 @@ ui.calendar = {
 
     // main classnames
     nameContainer: 'calendar-container',
+    nameDetails: 'calendar-details',
+
+    namePicker: 'calendar-picker',
+    namePickerTop: 'picker-t',
+    namePickerLeft: 'picker-l',
+
     namePanel: 'calendar-panel',
-    nameWeekend: 'fill-weekends',
+    nameShowPanel: 'show-panel',
+    namePanelCall: 'panel-call',
 
     nameMonth: 'calendar-month',
     nameYear: 'calendar-year',
@@ -19,15 +26,34 @@ ui.calendar = {
     namePrev: 'calendar-prev',
     nameNext: 'calendar-next',
 
-    // outer clasnames
+    nameToday: 'today',
+    namePickerDay: 'pickerday',
+    namePassiveDay: 'passive',
+
+    nameWeekend: 'fill-weekends',
+
+    nameToggleDetails: 'toggle-details',
+    nameShowDetails: 'show-details',
+    nameHasDetails: 'has-details',
+    nameEmptyDetails: 'empty-details',
+
+    // helper classnames
+    nameOpen: 'open',
+    nameOpenEase: 'open-ease',
+
+    nameActive: 'active',
+    nameSelected: 'selected',
+
+    // outer classnames
     nameIcon: 'icon',
+    nameHover: 'hover',
 
     // styling classnames
     stylesContainer: 'ease-layout ease-slow ease-in-out',
     stylesPanel: 'ease-layout ease-slow ease-in-out',
 
-    stylesToday: '',
-    stylesPickerDay: '',
+    stylesToday: 'theme-sub ui-fill-dark-100',
+    stylesPickerDay: 'theme-red ui-fill-dark-100',
 
     // icons
     prevIcon: 'arrow-left', // header's previous button
@@ -44,14 +70,23 @@ ui.calendar = {
     dateFormat: 1, // 0: dd/mm/yyyy, 1: mm/dd/yyyy
     startDayofWeek: 1, // 0: Sunday, 1: Monday
 
+    setPrev: 'prev',
+    setNext: 'next',
+
     fillWeekends: true, // true: fills dark color to weekends' background
+
+    scrollbarSize: 15,
 
     // data attributes
     dataDate: 'data-ui-date',
     dataSrc: 'data-ui-src',
 
     dataDay: 'data-ui-day',
-    dataD: 'data-ui-d'
+    dataD: 'data-ui-d',
+
+    // custom events
+    eventClose: 'ui:pickerClose',
+    eventChange: 'ui:pickerChange'
 
 };
 
@@ -69,6 +104,7 @@ ui.calendar = {
         function getAttr(that, date, newDate) {
 
             var attr = that.getAttribute(ui.calendar.dataDate);
+
             if (attr !== null && attr !== '') {
 
                 attr = attr.split(',');
@@ -103,10 +139,10 @@ ui.calendar = {
                     attr = newDate.toString();
                 }
 
-                if (attr === 'prev') {
+                if (attr === ui.calendar.setPrev) {
                     date.setMonth(date.getMonth() - 1);
 
-                } else if (attr === 'next') {
+                } else if (attr === ui.calendar.setNext) {
                     date.setMonth(date.getMonth() + 1);
                 }
 
@@ -120,6 +156,7 @@ ui.calendar = {
             if (that.value !== '') {
 
                 var val = that.value.split('/');
+
                 if (val.length === 3 && val[0].length <= 2 && val[1].length <= 2 && val[2].length === 4) {
 
                     if (!isNaN(val[0]) && !isNaN(val[1]) && !isNaN(val[2])) {
@@ -153,7 +190,7 @@ ui.calendar = {
             // set new date
             if (newDate !== undefined) {
 
-                if (newDate === 'prev' || newDate === 'next') {
+                if (newDate === ui.calendar.setPrev || newDate === ui.calendar.setNext) {
 
                     if (picker) { // called from picker
                         pickerDay = pickerVal(picker); // check value
@@ -196,23 +233,23 @@ ui.calendar = {
             }
 
             html += '>' +
-                '<caption>' +
+            '<caption>' +
 
-                    '<button type="button" tabindex="-1" class="' + ui.calendar.namePrev + '">' +
-                        '<svg class="' + ui.calendar.nameIcon + '"><use href="#' + ui.calendar.prevIcon + '"/></svg>' +
-                    '</button>' +
+                '<button type="button" tabindex="-1" class="' + ui.calendar.namePrev + '">' +
+                    '<svg class="' + ui.calendar.nameIcon + '"><use href="#' + ui.calendar.prevIcon + '"/></svg>' +
+                '</button>' +
 
-                    '<span class="calendar-title ease-bg">' +
-                        '<button type="button" tabindex="-1" class="' + ui.calendar.nameMonth + '">' + ui.calendar.months[date.getMonth()] + '</button>' +
-                        '<button type="button" tabindex="-1" class="' + ui.calendar.nameYear + '">' + date.getFullYear() + '</button>' +
-                    '</span>' +
+                '<span class="calendar-title ease-bg">' +
+                    '<button type="button" tabindex="-1" class="' + ui.calendar.nameMonth + '">' + ui.calendar.months[date.getMonth()] + '</button>' +
+                    '<button type="button" tabindex="-1" class="' + ui.calendar.nameYear + '">' + date.getFullYear() + '</button>' +
+                '</span>' +
 
-                    '<button type="button" tabindex="-1" class="' + ui.calendar.nameNext + '">' +
-                        '<svg class="' + ui.calendar.nameIcon + '"><use href="#' + ui.calendar.nextIcon + '"/></svg>' +
-                    '</button>' +
+                '<button type="button" tabindex="-1" class="' + ui.calendar.nameNext + '">' +
+                    '<svg class="' + ui.calendar.nameIcon + '"><use href="#' + ui.calendar.nextIcon + '"/></svg>' +
+                '</button>' +
 
-                '</caption>' +
-                '<thead>';
+            '</caption>' +
+            '<thead>';
 
             if (ui.calendar.startDayofWeek === 0) { // Sunday
 
@@ -230,9 +267,11 @@ ui.calendar = {
 
             }
 
-            html += '</thead><tbody>';
+            html += '</thead>' +
+                    '<tbody>';
 
             firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
+
             if (ui.calendar.startDayofWeek === 0) { // Sunday
 
                 sysDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']; // don't update to your language
@@ -282,12 +321,12 @@ ui.calendar = {
                             todayStyles = '';
 
                             if (ui.calendar.stylesToday !== '') {
-                                todayStyles = ui.calendar.stylesToday + ' hover';
+                                todayStyles = ui.calendar.stylesToday + ' ' + ui.calendar.nameHover;
                             }
 
-                            html += '<td class="today">' +
-                                    '<button class="' + todayStyles + '" type="button" tabindex="-1">' + days + '</button>' +
-                                '</td>';
+                            html += '<td class="' + ui.calendar.nameToday + '">' +
+                                        '<button class="' + todayStyles + '" type="button" tabindex="-1">' + days + '</button>' +
+                                    '</td>';
 
                         } else { // other days
 
@@ -298,10 +337,10 @@ ui.calendar = {
                                     pickerDayStyles = '';
 
                                     if (ui.calendar.pickerDayStyles !== '') {
-                                        pickerDayStyles = ui.calendar.stylesPickerDay + ' hover';
+                                        pickerDayStyles = ui.calendar.stylesPickerDay + ' ' + ui.calendar.nameHover;
                                     }
 
-                                    html += '<td ' + ui.calendar.dataDay + '="' + days + '" class="pickerday">' +
+                                    html += '<td ' + ui.calendar.dataDay + '="' + days + '" class="' + ui.calendar.namePickerDay + '">' +
                                                 '<button class="' + pickerDayStyles + '" type="button" tabindex="-1">' + days + '</button>' +
                                             '</td>';
 
@@ -323,7 +362,9 @@ ui.calendar = {
                         }
 
                     } else { // passive days
-                        html += '<td class="passive"><span>' + days + '</span></td>';
+                        html += '<td class="' + ui.calendar.namePassiveDay + '">' +
+                                    '<span>' + days + '</span>' +
+                                '</td>';
                     }
 
                     days += 1;
@@ -375,7 +416,7 @@ ui.calendar = {
 
                                         // select detailed days
                                         dday = ui.find('[' + ui.calendar.dataDay + '="' + response[i].day + '"]', that);
-                                        ui.addClass(dday, 'toggle-details');
+                                        ui.addClass(dday, ui.calendar.nameToggleDetails);
 
                                         // create details html
                                         details += '<li ' + ui.calendar.dataD + '="' + response[i].day + '">' +
@@ -385,7 +426,12 @@ ui.calendar = {
                                         keys = Object.keys(response[i].details);
 
                                         for (j = 0; j < keys.length; j++) {
-                                            details += '<span><i>' + keys[j] + '</i> ' + response[i].details[keys[j]] + '</span>';
+
+                                            details += '<span>' +
+                                                            '<i>' + keys[j] + '</i> ' +
+                                                            response[i].details[keys[j]] +
+                                                        '</span>';
+
                                         }
 
                                         details += '</li>';
@@ -396,29 +442,30 @@ ui.calendar = {
                             }
 
                             container = ui.find('.' + ui.calendar.nameContainer, that)[0];
-                            if (ui.hasClass(that, 'show-details')) {
+
+                            if (ui.hasClass(that, ui.calendar.nameShowDetails)) {
 
                                 setTimeout(function () {
-                                    ui.addClass(ui.find('.details', container), 'open');
+                                    ui.addClass(ui.find('.' + ui.calendar.nameDetails, container), ui.calendar.nameOpen);
                                 }, 10);
 
                             }
 
                             if (details !== '') {
 
-                                details = '<div class="details">' +
-                                                '<button class="toggle-details" type="button" tabindex="-1">' +
+                                details = '<div class="' + ui.calendar.nameDetails + '">' +
+                                                '<button class="' + ui.calendar.nameToggleDetails + '" type="button" tabindex="-1">' +
                                                     '<svg class="' + ui.calendar.nameIcon + '"><use href="#' + ui.calendar.backIcon + '"/></svg>' +
                                                 '</button>' +
                                                 '<ul>' + details + '</ul>' +
                                             '</div>';
 
-                                ui.addClass(container, 'has-details'); // enable buttons click event
+                                ui.addClass(container, ui.calendar.nameHasDetails); // enable buttons click event
 
                             } else {
 
-                                details = '<div class="details empty-details">' +
-                                                '<button class="toggle-details" type="button" tabindex="-1">' +
+                                details = '<div class="' + ui.calendar.nameDetails + ' ' + ui.calendar.nameEmptyDetails + '">' +
+                                                '<button class="' + ui.calendar.nameToggleDetails + '" type="button" tabindex="-1">' +
                                                     '<svg class="' + ui.calendar.nameIcon + '"><use href="#' + ui.calendar.backIcon + '"/></svg>' +
                                                 '</button>' +
                                                 '<ul>' +
@@ -432,7 +479,7 @@ ui.calendar = {
                                                 '</ul>' +
                                             '</div>';
 
-                                ui.removeClass(container, 'has-details'); // disable buttons click event
+                                ui.removeClass(container, ui.calendar.nameHasDetails); // disable buttons click event
 
                             }
 
@@ -448,14 +495,15 @@ ui.calendar = {
             }
 
             html = '';
-            ui.addClass(that, 'active');
+            ui.addClass(that, ui.calendar.nameActive);
 
         }
 
         // ckeck not loaded calendars
         checkCalendars = function () {
 
-            var calendars = ui.find('.' + ui.calendar.target + ':not(.active)');
+            var calendars = ui.find('.' + ui.calendar.target + ':not(.' + ui.calendar.nameActive + ')');
+
             if (calendars.length > 0) {
 
                 ui.each(calendars,
@@ -481,29 +529,29 @@ ui.calendar = {
                 var that, picker, form;
 
                 that = ui.closest(this, '.' + ui.calendar.target)[0];
-                picker = ui.closest(that, '.calendar-picker')[0]; // check called from picker
+                picker = ui.closest(that, '.' + ui.calendar.namePicker)[0]; // check called from picker
 
                 if (ui.hasClass(this, ui.calendar.nameNext)) {
 
                     if (picker === undefined) {
-                        createFnc(that, 'next');
+                        createFnc(that, ui.calendar.setNext);
 
                     } else { // picker
 
                         form = ui.find('[type="text"]', picker)[0];
-                        createFnc(that, 'next', form);
+                        createFnc(that, ui.calendar.setNext, form);
 
                     }
 
                 } else {
 
                     if (picker === undefined) {
-                        createFnc(that, 'prev');
+                        createFnc(that, ui.calendar.setPrev);
 
                     } else { // picker
 
                         form = ui.find('[type="text"]', picker)[0];
-                        createFnc(that, 'prev', form);
+                        createFnc(that, ui.calendar.setPrev, form);
 
                     }
 
@@ -543,10 +591,10 @@ ui.calendar = {
                                     '<button type="button" tabindex="-1" ';
 
                         if (year === i) {
-                            html += 'class="call selected" ';
+                            html += 'class="' + ui.calendar.namePanelCall + ' ' + ui.calendar.nameSelected + '" ';
 
                         } else {
-                            html += 'class="call" ';
+                            html += 'class="' + ui.calendar.namePanelCall + '" ';
                         }
 
                         html += 'name="' + i + '">' + i + '</button>' +
@@ -565,10 +613,10 @@ ui.calendar = {
                                     '<button type="button" tabindex="-1" ';
 
                         if (month === ui.calendar.months[i]) {
-                            html += 'class="call selected" ';
+                            html += 'class="' + ui.calendar.namePanelCall + ' ' + ui.calendar.nameSelected + '" ';
 
                         } else {
-                            html += 'class="call" ';
+                            html += 'class="' + ui.calendar.namePanelCall + '" ';
                         }
 
                         html += 'name="' + i + '">' + ui.calendar.months[i] + '</button>' +
@@ -587,13 +635,13 @@ ui.calendar = {
                 // animate panel
                 setTimeout(function () {
 
-                    ui.addClass(that, 'show-panel');
+                    ui.addClass(that, ui.calendar.nameShowPanel);
 
                     // scroll to active year
                     if (panelType === 'year') {
 
-                        getList = ui.find('.' + ui.calendar.target + ' .' + ui.calendar.namePanel + ' .call', that);
-                        getSelected = ui.find('.' + ui.calendar.target + ' .' + ui.calendar.namePanel + ' .call.selected', that)[0];
+                        getList = ui.find('.' + ui.calendar.target + ' .' + ui.calendar.namePanel + ' .' + ui.calendar.namePanelCall, that);
+                        getSelected = ui.find('.' + ui.calendar.target + ' .' + ui.calendar.namePanel + ' .' + ui.calendar.namePanelCall + '.' + ui.calendar.nameSelected, that)[0];
 
                         getIndex = Math.floor(Array.prototype.slice.call(getList).indexOf(getSelected) / 12);
                         ui.find('.' + ui.calendar.namePanel, that)[0].scrollTop = (getIndex * (that.offsetHeight - 10)); // IE, EDGE: scrollTo() not supported for div element
@@ -610,7 +658,7 @@ ui.calendar = {
         ui.on(document,
             'click',
 
-            '.' + ui.calendar.target + ' .' + ui.calendar.namePanel + ' .call',
+            '.' + ui.calendar.target + ' .' + ui.calendar.namePanel + ' .' + ui.calendar.namePanelCall,
 
             function () {
 
@@ -620,9 +668,9 @@ ui.calendar = {
                 that = ui.closest(this, '.' + ui.calendar.target)[0];
 
                 getAttr(that, date);
-                ui.removeClass(that, 'show-panel');
+                ui.removeClass(that, ui.calendar.nameShowPanel);
 
-                if (!ui.hasClass(this, 'selected')) { // check user selected different date
+                if (!ui.hasClass(this, ui.calendar.nameSelected)) { // check user selected different date
 
                     if (this.name.length === 4) { // selected year
                         createFnc(that, this.name + ',' + date.getMonth());
@@ -641,12 +689,12 @@ ui.calendar = {
         // close picker
         function pickerCloseFnc(type, target) {
 
-            var allPickers = ui.find('.calendar-picker .' + ui.calendar.target);
+            var allPickers = ui.find('.' + ui.calendar.namePicker + ' .' + ui.calendar.target);
 
             function removePicker(form, picker) {
 
                 form.removeChild(picker);
-                ui.removeClass(form, 'picker-l picker-t');
+                ui.removeClass(form, ui.calendar.namePickerLeft + ' ' + ui.calendar.namePickerTop);
 
             }
 
@@ -656,12 +704,13 @@ ui.calendar = {
 
                     function (i) {
 
-                        ui.removeClass(this, 'open-ease');
+                        ui.removeClass(this, ui.calendar.nameOpenEase);
+
                         setTimeout(function () {
 
                             var that, form;
 
-                            that = ui.find('.calendar-picker .' + ui.calendar.target)[i];
+                            that = ui.find('.' + ui.calendar.namePicker + ' .' + ui.calendar.target)[i];
                             if (that === undefined) { return; }
 
                             form = that.parentElement;
@@ -682,7 +731,7 @@ ui.calendar = {
                         that = this;
                         form = that.parentElement;
 
-                        ui.removeClass(that, 'open-ease');
+                        ui.removeClass(that, ui.calendar.nameOpenEase);
 
                         setTimeout(function () {
                             removePicker(form, that);
@@ -693,8 +742,8 @@ ui.calendar = {
             }
 
             // remove event listeners
-            ui.off('body', 'mousedown.ui:pickerClose');
-            ui.off(target, 'keydown.ui:pickerClose keyup.ui:pickerChange');
+            ui.off('body', 'mousedown.' + ui.calendar.eventClose);
+            ui.off(target, 'keydown.' + ui.calendar.eventClose + ' keyup.' + ui.calendar.eventChange);
 
         }
 
@@ -702,7 +751,7 @@ ui.calendar = {
         ui.on(document,
             'focus',
 
-            '.calendar-picker > [type="text"]',
+            '.' + ui.calendar.namePicker + ' > [type="text"]',
 
             function () {
 
@@ -715,8 +764,8 @@ ui.calendar = {
                 if (ui.find('.' + ui.calendar.target, form).length > 0) { return; }
 
                 // remove event listeners
-                ui.off('body', 'mousedown.ui:pickerClose');
-                ui.off(that, 'keydown.ui:pickerClose keyup.ui:pickerChange');
+                ui.off('body', 'mousedown.' + ui.calendar.eventClose);
+                ui.off(that, 'keydown.' + ui.calendar.eventClose + ' keyup.' + ui.calendar.eventChange);
 
                 // create picker
                 html = '<div class="calendar';
@@ -740,41 +789,37 @@ ui.calendar = {
                     createFnc(picker, inputDate);
                 }
 
+                // check picker position
+                offset = form.getBoundingClientRect();
+
+                formHeight = form.offsetHeight;
+                pickerWidth = picker.offsetWidth;
+                pickerHeight = picker.offsetHeight;
+
+                if (offset.left + pickerWidth + ui.calendar.scrollbarSize > window.innerWidth) {
+
+                    if ((offset.left - (pickerWidth - form.offsetWidth) - ui.calendar.scrollbarSize) > 0) {
+                        ui.addClass(form, ui.calendar.namePickerLeft);
+                    }
+
+                }
+
+                if (offset.top + parseInt(formHeight + pickerHeight) >= window.innerHeight) {
+
+                    if (offset.top - parseInt(formHeight + pickerHeight) + formHeight > 0) {
+                        ui.addClass(form, ui.calendar.namePickerTop);
+                    }
+
+                }
+
+                // show picker
                 setTimeout(function () {
-
-                    // check picker position
-                    offset = form.getBoundingClientRect();
-
-                    formHeight = form.offsetHeight;
-                    pickerWidth = picker.offsetWidth;
-                    pickerHeight = picker.offsetHeight;
-
-                    if (offset.left + pickerWidth + 15 > window.innerWidth) { // 15px: scrollbar size
-
-                        if ((offset.left - (pickerWidth - form.offsetWidth) - 15) > 0) {
-                            ui.addClass(form, 'picker-l');
-                        }
-
-                    }
-
-                    if (offset.top + parseInt(formHeight + pickerHeight) >= window.innerHeight) {
-
-                        if (offset.top - parseInt(formHeight + pickerHeight) + formHeight > 0) {
-                            ui.addClass(form, 'picker-t');
-                        }
-
-                    }
-
-                    // show picker
-                    setTimeout(function () {
-                        ui.addClass(picker, 'open-ease');
-                    }, 10);
-
-                }, 0);
+                    ui.addClass(picker, ui.calendar.nameOpenEase);
+                }, 10);
 
                 // close event listeners
                 ui.on('body',
-                    'mousedown.ui:pickerClose',
+                    'mousedown.' + ui.calendar.eventClose,
 
                     function (ev) {
 
@@ -790,7 +835,7 @@ ui.calendar = {
                     });
 
                 ui.on(that,
-                    'keydown.ui:pickerClose',
+                    'keydown.' + ui.calendar.eventClose,
 
                     function (ev) {
 
@@ -802,7 +847,7 @@ ui.calendar = {
 
                 // change event
                 ui.on(that,
-                    'keyup.ui:pickerChange',
+                    'keyup.' + ui.calendar.eventChange,
 
                     function () {
 
@@ -823,7 +868,7 @@ ui.calendar = {
         ui.on(document,
             'click',
 
-            '.calendar-picker .' + ui.calendar.target + ' tbody td button',
+            '.' + ui.calendar.namePicker + ' .' + ui.calendar.target + ' tbody td button',
 
             function () {
 
@@ -831,7 +876,7 @@ ui.calendar = {
 
                 date = new Date();
 
-                picker = ui.closest(this, '.calendar-picker')[0];
+                picker = ui.closest(this, '.' + ui.calendar.namePicker)[0];
 
                 that = ui.find('.' + ui.calendar.target, picker)[0];
                 form = ui.find('[type="text"]', picker)[0];
@@ -865,35 +910,35 @@ ui.calendar = {
         ui.on(document,
             'click',
 
-            '.' + ui.calendar.target + ' .toggle-details',
+            '.' + ui.calendar.target + ' .' + ui.calendar.nameToggleDetails,
 
             function () {
 
                 var that, details, day, i, list, scroll;
 
                 that = ui.closest(this, '.' + ui.calendar.target)[0];
-                details = ui.find('.details', that)[0];
+                details = ui.find('.' + ui.calendar.nameDetails, that)[0];
 
-                if (ui.hasClass(that, 'show-details')) {
+                if (ui.hasClass(that, ui.calendar.nameShowDetails)) {
 
-                    ui.removeClass(that, 'show-details');
+                    ui.removeClass(that, ui.calendar.nameShowDetails);
 
                     setTimeout(function () {
-                        ui.removeClass(details, 'open');
+                        ui.removeClass(details, ui.calendar.nameOpen);
                     }, ui.globals.ease * 2);
 
                 } else {
 
-                    ui.addClass(details, 'open');
+                    ui.addClass(details, ui.calendar.nameOpen);
 
                     setTimeout(function () {
-                        ui.addClass(that, 'show-details');
+                        ui.addClass(that, ui.calendar.nameShowDetails);
                     }, 10);
 
                     scroll = 0;
 
                     day = this.getAttribute(ui.calendar.dataDay);
-                    list = ui.find('.details li', that);
+                    list = ui.find('.' + ui.calendar.nameDetails + ' li', that);
 
                     for (i = 0; i < list.length; i++) {
 
