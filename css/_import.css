@@ -7746,6 +7746,12 @@ button.dialog-custom:focus {
 .calendar.round caption button {
   border-radius: 6px;
 }
+.calendar.round .calendar-panel {
+  border-radius: 6px;
+}
+.calendar.round .calendar-panel .call {
+  border-radius: 6px;
+}
 .calendar.round .calendar-month {
   border-radius: 6px 0 0 6px;
 }
@@ -7771,12 +7777,6 @@ button.dialog-custom:focus {
   border-radius: 6px;
 }
 .calendar.round .details li {
-  border-radius: 6px;
-}
-.calendar.round .panel {
-  border-radius: 6px;
-}
-.calendar.round .panel .call {
   border-radius: 6px;
 }
 .calendar:not(.show-details) .details {
@@ -7910,7 +7910,7 @@ button.dialog-custom:focus {
 .calendar .empty-details li > span + span + span {
   width: 160px;
 }
-.calendar .panel {
+.calendar-panel {
   position: absolute;
   top: 5px;
   right: 5px;
@@ -7920,20 +7920,20 @@ button.dialog-custom:focus {
   overflow-y: auto !important;
   transform: translateY(-110%);
 }
-.mobile .calendar .panel {
+.mobile .calendar-panel {
   -webkit-overflow-scrolling: touch;
 }
-.calendar .panel ul {
+.calendar-panel ul {
   display: flex;
   flex-wrap: wrap;
 }
-.calendar .panel li {
+.calendar-panel li {
   width: 33.333332%;
   height: 25%;
   padding: 2px;
   flex-grow: 1;
 }
-.calendar .panel .call {
+.calendar-panel .call {
   font-size: 14px;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -7945,22 +7945,22 @@ button.dialog-custom:focus {
   overflow: hidden;
   border: 0;
 }
-.calendar .panel .call.selected {
+.calendar-panel .call.selected {
   color: hsl(0, 0%, 100%) !important;
   font-weight: 700;
   background-color: hsl(212, 64%, 38%);
 }
-.desktop .calendar .panel .call.selected:hover {
+.desktop .calendar-panel .call.selected:hover {
   background-color: hsl(212, 64%, 53%);
 }
-.desktop .calendar .panel .call:hover {
+.desktop .calendar-panel .call:hover {
   background-color: hsla(0, 0%, 0%, 0.15);
   background-color: var(--btn-hover-bg);
 }
 .calendar .calendar-container {
   position: relative;
 }
-.calendar.show-panel .panel {
+.calendar.show-panel .calendar-panel {
   transform: translateY(0);
 }
 .calendar.show-panel .calendar-container {

@@ -183,8 +183,16 @@
             &,button { border-radius: @round; }
         }
 
-        .calendar-month { border-radius: @round 0 0 @round; }
-        .calendar-year { border-radius: 0 @round @round 0; }
+        .calendar {
+            &-panel {
+                border-radius: @round;
+
+                .call { border-radius: @round; }
+            }
+
+            &-month { border-radius: @round 0 0 @round; }
+            &-year { border-radius: 0 @round @round 0; }
+        }
 
         table {
             &.fill-weekends {
@@ -205,12 +213,6 @@
         .details {
             & > button { border-radius: @round; }
             li { border-radius: @round; }
-        }
-
-        .panel {
-            border-radius: @round;
-
-            .call { border-radius: @round; }
         }
     }
 
@@ -279,7 +281,7 @@
         }
     }
 
-    .panel {
+    &-panel {
         position: absolute; top: @calendar-padding; right: @calendar-padding; bottom: @calendar-padding; left: @calendar-padding; overflow-x: hidden !important; overflow-y: auto !important; transform: translateY(-110%);
 
         .mobile & { -webkit-overflow-scrolling: touch; }
@@ -302,8 +304,10 @@
     .calendar-container { position: relative; }
 
     &.show-panel {
-        .panel { transform: translateY(0); }
-        .calendar-container { transform: translateY(110%); }
+        .calendar {
+            &-panel { transform: translateY(0); }
+            &-container { transform: translateY(110%); }
+        }
     }
 
 }
