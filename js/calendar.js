@@ -76,6 +76,7 @@ ui.calendar = {
     fillWeekends: true, // true: fills dark color to weekends' background
 
     scrollbarSize: 15,
+    detailsListMargin: 5,
 
     // data attributes
     dataDate: 'data-ui-date',
@@ -946,7 +947,7 @@ ui.calendar = {
                             break;
                         }
 
-                        scroll += list[i].offsetHeight + 20; // 20: margin-bottom size
+                        scroll += list[i].offsetHeight + ui.calendar.detailsListMargin;
 
                     }
 

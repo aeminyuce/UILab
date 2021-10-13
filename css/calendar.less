@@ -35,8 +35,8 @@
 @calendar-picker-z-index:               10;
 @calendar-picker-shadow:                fade(@black, 15%);
 
-@calendar-highlighted-bg:               fade(@black, 8%);
-@calendar-highlighted-bg-dark:          fade(@white, 8%);
+@calendar-highlighted-bg:               fade(@black, 15%);
+@calendar-highlighted-bg-dark:          fade(@white, 15%);
 
 @calendar-weekend-bg:                   fade(@black, 4%);
 @calendar-weekend-bg-dark:              fade(@white, 4%);
@@ -46,7 +46,8 @@
 
 @calendar-details-slide-size:           20%;
 @calendar-details-list-padding:         10px;
-@calendar-details-list-margin:          2px;
+@calendar-details-list-margin:          5px;
+@calendar-details-list-item-margin:     2px;
 @calendar-details-days-font-size:       (@xx-largest + 14);
 @calendar-details-days-font-spacing:    -0.025em;
 @calendar-details-content-radius:       10px;
@@ -244,18 +245,17 @@
             .mobile & { -webkit-overflow-scrolling: touch; }
         }
 
-        li {
-            min-height: @calendar-details-list-padding; padding: @calendar-details-list-padding @calendar-details-list-padding @calendar-details-list-padding (@calendar-details-days-font-size + @calendar-details-list-padding * 3); display: block;
+        li { min-height: @calendar-details-list-padding; ._bg-var(btn-bg); padding: @calendar-details-list-padding @calendar-details-list-padding @calendar-details-list-padding (@calendar-details-days-font-size + @calendar-details-list-padding * 3); display: block;
 
-            .desktop &:hover { ._bg-var(btn-ghost-hover-bg); }
-            &:not(:last-child) { margin-bottom: @highlight-space; }
+            .desktop &:hover { ._bg-var(btn-hover-bg); }
+            &:not(:last-child) { margin-bottom: @calendar-details-list-margin; }
 
             & > strong { font-size: @calendar-details-days-font-size; font-weight: @font-light; letter-spacing: @calendar-details-days-font-spacing; text-align: center !important; line-height: (@calendar-details-days-font-size - 5); width: @calendar-details-days-font-size; margin-left: -(@calendar-details-days-font-size + @calendar-details-list-padding * 2); float: left; }
             & > b { font-size: @large; margin: @calendar-details-list-padding 0 @calendar-details-list-padding 0; display: inline-block; }
             & > span {
                 display: block;
 
-                &:not(:last-child) { margin-bottom: @calendar-details-list-margin; }
+                &:not(:last-child) { margin-bottom: @calendar-details-list-item-margin; }
                 & > i { font-size: @calendar-details-time-font-size; font-style: normal; line-height: normal; ._bg-var(btn-bg); padding: @calendar-details-time-padding (@calendar-details-time-padding * 2); margin-right: (@calendar-details-list-padding / 2); display: inline-block; border-radius: @calendar-details-content-radius; }
                 & > a {
                     text-decoration: underline;
