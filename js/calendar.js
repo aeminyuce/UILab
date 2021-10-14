@@ -47,8 +47,11 @@ ui.calendar = {
     // outer classnames
     nameIcon: 'icon',
     nameHover: 'hover',
+    nameRound: 'round',
 
     // styling classnames
+    stylesCalendar: 'ease-calendar',
+
     stylesContainer: 'ease-layout ease-slow ease-in-out',
     stylesPanel: 'ease-layout ease-slow ease-in-out',
 
@@ -64,10 +67,12 @@ ui.calendar = {
     stylesClosing: 'closing-card ease-layout',
 
     // values
+    pickerSep: '/',
+
     days: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
     months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
 
-    dateFormat: 1, // 0: dd/mm/yyyy, 1: mm/dd/yyyy
+    dateFormat: 1, // 0: dd mm yyyy, 1: mm dd yyyy
     startDayofWeek: 1, // 0: Sunday, 1: Monday
 
     setPrev: 'prev',
@@ -75,8 +80,8 @@ ui.calendar = {
 
     fillWeekends: true, // true: fills dark color to weekends' background
 
+    calendarPadding: 5,
     scrollbarSize: 15,
-    detailsListMargin: 5,
 
     // data attributes
     dataDate: 'data-ui-date',
@@ -113,7 +118,10 @@ ui.calendar = {
 
                     if (!isNaN(Number(attr[0])) && attr[0].length <= 2) {
 
-                        if (attr[0] === '0') { attr[0] = 1; }
+                        if (attr[0] === '0') {
+                            attr[0] = 1;
+                        }
+
                         date.setMonth(attr[0] - 1);
 
                     }
@@ -125,7 +133,10 @@ ui.calendar = {
 
                             date.setFullYear(attr[0]);
 
-                            if (attr[1] === '0') { attr[1] = 1; }
+                            if (attr[1] === '0') {
+                                attr[1] = 1;
+                            }
+
                             date.setMonth(attr[1] - 1);
 
                         }
@@ -156,17 +167,17 @@ ui.calendar = {
 
             if (that.value !== '') {
 
-                var val = that.value.split('/');
+                var val = that.value.split(ui.calendar.pickerSep);
 
                 if (val.length === 3 && val[0].length <= 2 && val[1].length <= 2 && val[2].length === 4) {
 
                     if (!isNaN(val[0]) && !isNaN(val[1]) && !isNaN(val[2])) {
 
                         if (ui.calendar.dateFormat === 1) {
-                            return Number(val[2]) + ',' + Number(val[0] - 1) + ',' + Number(val[1]); // mm/dd/yyyy
+                            return Number(val[2]) + ',' + Number(val[0] - 1) + ',' + Number(val[1]); // mm dd yyyy
                         }
 
-                        return Number(val[2]) + ',' + Number(val[1] - 1) + ',' + Number(val[0]); // dd/mm/yyyy
+                        return Number(val[2]) + ',' + Number(val[1] - 1) + ',' + Number(val[0]); // dd mm yyyy
 
                     }
 
@@ -645,7 +656,7 @@ ui.calendar = {
                         getSelected = ui.find('.' + ui.calendar.target + ' .' + ui.calendar.namePanel + ' .' + ui.calendar.namePanelCall + '.' + ui.calendar.nameSelected, that)[0];
 
                         getIndex = Math.floor(Array.prototype.slice.call(getList).indexOf(getSelected) / 12);
-                        ui.find('.' + ui.calendar.namePanel, that)[0].scrollTop = (getIndex * (that.offsetHeight - 10)); // IE, EDGE: scrollTo() not supported for div element
+                        ui.find('.' + ui.calendar.namePanel, that)[0].scrollTop = (getIndex * (that.offsetHeight - (ui.calendar.calendarPadding * 2))); // IE, EDGE: scrollTo() not supported for div element
 
                         getList = '';
 
@@ -769,13 +780,15 @@ ui.calendar = {
                 ui.off(that, 'keydown.' + ui.calendar.eventClose + ' keyup.' + ui.calendar.eventChange);
 
                 // create picker
-                html = '<div class="calendar';
+                html = '<div class="' + ui.calendar.target;
 
-                if (ui.hasClass(form, 'round')) {
-                    html += ' round';
+                if (ui.hasClass(form, ui.calendar.nameRound)) {
+                    html += ' ' + ui.calendar.nameRound;
                 }
 
-                html += ' ease-calendar"></div>';
+                html += ' ' + ui.calendar.stylesCalendar + '">' +
+                    '</div>';
+
                 form.insertAdjacentHTML('beforeend', html);
 
                 picker = ui.find('.' + ui.calendar.target, form)[0];
@@ -794,6 +807,7 @@ ui.calendar = {
                 offset = form.getBoundingClientRect();
 
                 formHeight = form.offsetHeight;
+
                 pickerWidth = picker.offsetWidth;
                 pickerHeight = picker.offsetHeight;
 
@@ -896,10 +910,10 @@ ui.calendar = {
                 if (month.length === 1) { month = '0' + month; }
 
                 if (ui.calendar.dateFormat === 1) {
-                    form.value = month + '/' + day + '/' + date.getFullYear(); // mm/dd/yyyy
+                    form.value = month + ui.calendar.pickerSep + day + ui.calendar.pickerSep + date.getFullYear(); // mm dd yyyy
 
                 } else {
-                    form.value = day + '/' + month + '/' + date.getFullYear(); // dd/mm/yyyy
+                    form.value = day + ui.calendar.pickerSep + month + ui.calendar.pickerSep + date.getFullYear(); // dd mm yyyy
                 }
 
                 // close picker
@@ -947,7 +961,7 @@ ui.calendar = {
                             break;
                         }
 
-                        scroll += list[i].offsetHeight + ui.calendar.detailsListMargin;
+                        scroll += list[i].offsetHeight + ui.calendar.calendarPadding;
 
                     }
 

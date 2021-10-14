@@ -5,15 +5,20 @@
 
 ui.alerts = {
 
-    dialogTheme: '', // use themes
-    dialogClasses: 'round shadow-lg',
-    dialogMessages: false, // shows automatically clicked buttons textContent
+    // targets
+    targetDialog: 'alerts-dialog',
+    targetMsg: 'alerts-msg',
 
-    messageTheme: '', // use themes
-    messageClasses: 'round shadow-lg',
-    messageTimer: 6000, // wait for atomatically close messages
+    // styling classnames
+    stylesDialog: 'round shadow-lg ease-layout ease-in-out',
+    stylesMessage: 'round shadow-lg ease-layout ease-in-out',
 
-    closeIcon: 'remove'
+    // icons
+    closeIcon: 'remove',
+
+    // values
+    dialogMessages: false, // shows automatically clicked buttons text
+    messageTimer: 6000 // wait for atomatically close messages
 
 };
 
@@ -25,10 +30,7 @@ ui.alerts = {
     var
         pageYPos,
         cancelCloseDialog,
-        messageQueue = [],
-
-        re = new RegExp('\\s+\\s'),
-        rex = new RegExp('^\\s|\\s+$');
+        messageQueue = [];
 
     ui.alerts.Start = function () {
 
@@ -37,7 +39,7 @@ ui.alerts = {
 
             var bg, dialog;
 
-            dialog = ui.find('.alerts-dialog')[0];
+            dialog = ui.find('.' + ui.alerts.targetDialog)[0];
             ui.removeClass(dialog, 'show-ease');
 
             setTimeout(function () {
@@ -80,12 +82,12 @@ ui.alerts = {
                 props.callback
             */
 
-            var styles, closeBtn, bg, success, buttons, i, keys, val, html, dialog, userCloseDialog;
+            var closeBtn, bg, success, buttons, i, keys, val, html, dialog, userCloseDialog;
 
             if (props === undefined) { return; }
             if (props.msg === undefined) { return; }
 
-            dialog = ui.find('.alerts-dialog')[0];
+            dialog = ui.find('.' + ui.alerts.targetDialog)[0];
             if (dialog !== undefined) { return; } // prevent multiple dialogues
 
             if (ui.userAgents.mobile) {
@@ -126,18 +128,14 @@ ui.alerts = {
                 cancelCloseDialog = true;
 
                 closeBtn = '<button class="close-alert ease-layout">' +
-                        '<svg class="icon"><use href="#' + ui.alerts.closeIcon + '"/></svg>' +
-                    '</button>';
+                                '<svg class="icon"><use href="#' + ui.alerts.closeIcon + '"/></svg>' +
+                            '</button>';
             }
 
             // create dialog
-            styles = ui.alerts.dialogClasses + ' ' + ui.alerts.dialogTheme + ' ease-layout ease-in-out';
-            styles = styles.replace(re, ' ').replace(rex, '');
-
-
             bg = ui.find('.alerts-bg')[0];
 
-            html = '<div class="alerts-dialog ' + styles + '">' +
+            html = '<div class="' + ui.alerts.targetDialog + ' ' + ui.alerts.stylesDialog + '">' +
                         closeBtn +
                         '<div class="dialog-msg">' + props.msg + '</div>' +
                         '<div class="dialog-buttons ease-1st-btn">' +
@@ -161,7 +159,7 @@ ui.alerts = {
                 ui.addClass(bg, 'open-ease');
                 setTimeout(function () {
 
-                    dialog = ui.find('.alerts-dialog');
+                    dialog = ui.find('.' + ui.alerts.targetDialog);
                     ui.addClass(dialog, 'show');
 
                     ui.find('.dialog-success')[0].focus(); // fosuc success button
@@ -171,58 +169,61 @@ ui.alerts = {
                     }, 10);
 
                     // Event Listeners
-                    ui.on('.dialog-buttons button', 'click', function () {
+                    ui.on('.dialog-buttons button',
+                        'click',
 
-                        var that, msg, msgTimer, theme;
+                        function () {
 
-                        that = this;
+                            var that, msg, msgTimer, theme;
 
-                        msg = this.textContent;
-                        theme = '';
+                            that = this;
 
-                        if (ui.hasClass(this, 'dialog-success')) {
-                            theme = 'success';
+                            msg = this.textContent;
+                            theme = '';
 
-                        } else if (ui.hasClass(this, 'dialog-error')) {
-                            theme = 'danger';
-                        }
+                            if (ui.hasClass(this, 'dialog-success')) {
+                                theme = 'success';
 
-                        if (ui.alerts.dialogMessages) {
-                            msgTimer = ui.globals.ease;
+                            } else if (ui.hasClass(this, 'dialog-error')) {
+                                theme = 'danger';
+                            }
 
-                        } else { msgTimer = 0; }
-
-                        ui.alerts.closeDialog();
-                        setTimeout(function () {
-
-                            // show message
                             if (ui.alerts.dialogMessages) {
+                                msgTimer = ui.globals.ease;
 
-                                ui.alerts.message({
-                                    msg: msg,
-                                    theme: theme
-                                });
+                            } else { msgTimer = 0; }
 
-                            }
+                            ui.alerts.closeDialog();
+                            setTimeout(function () {
 
-                            // callback
-                            if (props.callback !== undefined) {
+                                // show message
+                                if (ui.alerts.dialogMessages) {
 
-                                setTimeout(function () { // wait for closing dialog and showing messages
-                                    props.callback.call(that, that.value);
-                                }, ui.globals.ease * 2);
+                                    ui.alerts.message({
+                                        msg: msg,
+                                        theme: theme
+                                    });
 
-                            }
+                                }
 
-                        }, msgTimer);
+                                // callback
+                                if (props.callback !== undefined) {
 
-                    });
+                                    setTimeout(function () { // wait for closing dialog and showing messages
+                                        props.callback.call(that, that.value);
+                                    }, ui.globals.ease * 2);
+
+                                }
+
+                            }, msgTimer);
+
+                        });
 
                     if (cancelCloseDialog) { // attach close event listeners if props.error defined
 
                         userCloseDialog = function () {
 
-                            var errorBtn = ui.find('.alerts-dialog .dialog-error')[0];
+                            var errorBtn = ui.find('.' + ui.alerts.targetDialog + ' .dialog-error')[0];
                             ui.alerts.closeDialog();
 
                             if (errorBtn !== undefined) {
@@ -242,9 +243,12 @@ ui.alerts = {
 
                         ui.on('.close-alert,.alerts-bg', 'click.ui:closeAlertsDialog', userCloseDialog);
 
-                        ui.on('body', 'keydown.closeAlertsDialog', function (e) {
-                            if (e.keyCode === 27) { userCloseDialog(); } // esc
-                        });
+                        ui.on('body',
+                            'keydown.closeAlertsDialog',
+
+                            function (e) {
+                                if (e.keyCode === 27) { userCloseDialog(); } // esc
+                            });
 
                     }
 
@@ -278,7 +282,7 @@ ui.alerts = {
                 props.theme
             */
 
-            var arr, html, styles, holder, message, prev, i, j, slide;
+            var arr, html, holder, message, prev, i, j, slide;
 
             if (props === undefined) { return; }
             if (props.msg === undefined) { return; }
@@ -297,18 +301,21 @@ ui.alerts = {
             }
 
             // create mssage
-            styles = props.pos + ' ' + props.theme + ' ' + ui.alerts.messageClasses + ' ' + ui.alerts.messageTheme + ' ease-layout ease-in-out';
-            styles = styles.replace(re, ' ').replace(rex, '');
-
             holder = ui.find('.alerts-msg-holder')[0];
 
             html = '';
 
-            if (holder === undefined) { html += '<div class="alerts-msg-holder">'; }
-            html += '<div class="alerts-msg ' + styles + '">' + props.msg + '</div>';
-            if (holder === undefined) { html += '</div>'; }
+            if (holder === undefined) {
+                html += '<div class="alerts-msg-holder">';
+            }
+
+            html += '<div class="' + ui.alerts.targetMsg + ' ' + props.pos + ' ' + props.theme + ' ' + ui.alerts.stylesMessage + '">' +
+                        props.msg +
+                    '</div>';
 
             if (holder === undefined) {
+
+                html += '</div>';
                 ui.find('body')[0].insertAdjacentHTML('beforeend', html);
 
             } else {
@@ -319,7 +326,7 @@ ui.alerts = {
             }
 
             // show message
-            message = ui.find('.alerts-msg:last-child');
+            message = ui.find('.' + ui.alerts.targetMsg + ':last-child');
             ui.addClass(message, 'show');
 
             setTimeout(function () {
@@ -329,7 +336,8 @@ ui.alerts = {
                 // move same position elements
                 if (holder !== undefined) {
 
-                    prev = ui.find('.alerts-msg.' + props.pos);
+                    prev = ui.find('.' + ui.alerts.targetMsg + '.' + props.pos);
+
                     for (j = 0; j < prev.length; j++) {
 
                         slide = 0;
@@ -365,21 +373,26 @@ ui.alerts = {
         };
 
         // Event Listeners
-        ui.on(document, 'click', '.alerts-msg', function () {
+        ui.on(document,
+            'click',
 
-            var i;
+            '.' + ui.alerts.targetMsg,
 
-            for (i = 0; i < messageQueue.length; i++) {
+            function () {
 
-                if (messageQueue[i][0] === this) {
-                    messageQueue.splice(i, 1);
+                var i;
+
+                for (i = 0; i < messageQueue.length; i++) {
+
+                    if (messageQueue[i][0] === this) {
+                        messageQueue.splice(i, 1);
+                    }
+
                 }
 
-            }
+                ui.alerts.closeMessage(this);
 
-            ui.alerts.closeMessage(this);
-
-        });
+            });
 
     };
 
