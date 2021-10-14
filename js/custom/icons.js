@@ -92,6 +92,6 @@ ui.onload(function () {
 
         });
 
-    ui.alerts.messageTheme = 'theme-sub ui-fill-dark-100';
+    ui.alerts.stylesMessage = 'round shadow-lg theme-sub ui-fill-dark-100 ease-layout ease-in-out';
 
 });

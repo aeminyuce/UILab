@@ -10,7 +10,7 @@ ui.lineCharts.bottom = 10;
 ui.lineCharts.showGrid = false;
 ui.lineCharts.showInfo = false;
 
-ui.alerts.messageTheme = 'theme-sub ui-fill-dark-100';
+ui.alerts.stylesMessage = 'round shadow-lg theme-sub ui-fill-dark-100 ease-layout ease-in-out';
 
 ui.onload(function () {
     ui.on('.load-more',
@@ -52,8 +52,8 @@ ui.onload(function () {
 
                             ui.alerts.message({
                                 msg: 'Products not loaded!',
-                                theme: 'danger',
-                                pos: 'tr'
+                                theme: ui.alerts.themeDanger,
+                                pos: ui.alerts.posTopRight
                             });
 
                             ui.loadingMask.toggle(that);

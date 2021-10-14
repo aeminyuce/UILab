@@ -384,7 +384,7 @@ ui.imageUploader = {
 
                                     ui.alerts.message({
                                         msg: allowed[i].name + ' ' + ui.imageUploader.msgImgError,
-                                        theme: 'danger'
+                                        theme: ui.alerts.themeDanger
                                     });
 
                                 }
@@ -636,14 +636,14 @@ ui.imageUploader = {
 
                                         ui.alerts.message({
                                             msg: response.message, // show server message
-                                            theme: 'success'
+                                            theme: ui.alerts.themeSuccess
                                         });
 
                                     } else {
 
                                         ui.alerts.message({
                                             msg: response.message, // show server message
-                                            theme: 'danger'
+                                            theme: ui.alerts.themeDanger
                                         });
 
                                     }
@@ -659,7 +659,7 @@ ui.imageUploader = {
 
                                     ui.alerts.message({
                                         msg: ui.imageUploader.msgError,
-                                        theme: 'warning'
+                                        theme: ui.alerts.themeWarning
                                     });
 
                                 }
