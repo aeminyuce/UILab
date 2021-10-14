@@ -195,16 +195,28 @@
                 </div>
 
                 <h4>Autocomplete Forms</h4>
-                <div class="padding-30-b">
-                    <div data-ui-src="json/countries.json" data-ui-val="code" class="autocomplete text text-icon round border-dual ease-form form-inline-xs">
-                        <svg class="icon"><use href="#keyboard-fill"/></svg>
-                        <input type="text" placeholder="Country Code" autocomplete="off">
+                <form action="#succesful">
+                    <div class="row padding-30-b">
+
+                        <div class="col-12">
+                            <div data-ui-src="json/countries.json" data-ui-val="code" class="autocomplete text text-icon round border-dual ease-form form-inline-xs">
+                                <svg class="icon"><use href="#keyboard-fill"/></svg>
+                                <input type="text" placeholder="Country Code" autocomplete="off">
+                            </div>
+                            <div data-ui-src="json/countries.json" data-ui-val="name" class="autocomplete text text-icon round border-dual ease-form form-inline-xs">
+                                <svg class="icon"><use href="#keyboard-fill"/></svg>
+                                <input type="text" placeholder="Country" autocomplete="off">
+                            </div>
+                        </div>
+
+                        <div class="col-12 ease-1st-btn">
+                            <button type="reset" class="btn btn-xs-fluid round">Reset Form</button>
+                            <button type="submit" class="btn btn-xs-fluid round theme-sub ui-fill-dark-100">Submit Form</button>
+                        </div>
+
                     </div>
-                    <div data-ui-src="json/countries.json" data-ui-val="name" class="autocomplete text text-icon round border-dual ease-form form-inline-xs">
-                        <svg class="icon"><use href="#keyboard-fill"/></svg>
-                        <input type="text" placeholder="Country" autocomplete="off">
-                    </div>
-                </div>
+                </form>
+
 
                 <h4>Select Forms</h4>
                 <div class="padding-30-b">
