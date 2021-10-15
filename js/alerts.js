@@ -21,6 +21,7 @@ ui.alerts = {
     nameDialogError: 'dialog-error',
 
     nameMsgHolder: 'alerts-msg-holder',
+    nameMsgThemePrefix: 'msg-',
 
     // helper classnames
     nameOpen: 'open',
@@ -37,7 +38,8 @@ ui.alerts = {
     stylesCloseDialog: 'ease-layout',
     stylesDialogBtnHolder: 'ease-1st-btn',
 
-    stylesMessage: 'round shadow-lg ease-layout ease-in-out',
+    stylesMsg: 'round shadow-lg ease-layout ease-in-out',
+    stylesMsgTheme: 'theme-orange ui-fill-dark-100',
 
     stylesBg: 'ease-layout',
 
@@ -51,14 +53,14 @@ ui.alerts = {
 
     messageTimer: 6000, // wait for atomatically close messages
 
-    themeSuccess: 'success',
-    themeWarning: 'warning',
-    themeDanger: 'danger',
-
     posTopRight: 'tr',
     posTopLeft: 'tl',
     posBottomRight: 'br',
     posBottomLeft: 'bl',
+
+    themeSuccess: 'success',
+    themeWarning: 'warning',
+    themeDanger: 'danger',
 
     // messages
     msgDialogSuccess: 'OK',
@@ -193,13 +195,16 @@ ui.alerts = {
             bg = ui.find('.' + ui.alerts.targetBg)[0];
 
             html = '<div class="' + ui.alerts.targetDialog + ' ' + ui.alerts.stylesDialog + '">' +
+
                         closeBtn +
+
                         '<div class="' + ui.alerts.nameDialogMsg + '">' +
                             props.msg +
                         '</div>' +
                         '<div class="' + ui.alerts.nameDialogBtnHolder + ' ' + ui.alerts.stylesDialogBtnHolder + '">' +
                             buttons +
                         '</div>' +
+
                     '</div>';
 
             if (bg === undefined) {
@@ -239,8 +244,8 @@ ui.alerts = {
                             var that, msg, msgTimer, theme;
 
                             that = this;
-
                             msg = this.textContent;
+
                             theme = '';
 
                             if (ui.hasClass(this, ui.alerts.nameDialogSuccess)) {
@@ -253,7 +258,9 @@ ui.alerts = {
                             if (ui.alerts.dialogMessages) {
                                 msgTimer = ui.globals.ease;
 
-                            } else { msgTimer = 0; }
+                            } else {
+                                msgTimer = 0;
+                            }
 
                             ui.alerts.closeDialog();
 
@@ -351,7 +358,7 @@ ui.alerts = {
                 props.theme
             */
 
-            var arr, html, holder, message, prev, i, j, slide;
+            var arr, html, holder, message, msgStyles, prev, i, j, slide;
 
             if (props === undefined) { return; }
             if (props.msg === undefined) { return; }
@@ -364,13 +371,14 @@ ui.alerts = {
             }
 
             // detect theme
+            msgStyles = '';
             arr = [ui.alerts.themeSuccess, ui.alerts.themeWarning, ui.alerts.themeDanger];
 
-            if (arr.indexOf(props.theme) < 0) {
-                props.theme = '';
+            if (arr.indexOf(props.theme) > -1) {
+                msgStyles += ui.alerts.nameMsgThemePrefix + props.theme ;
 
-            } else {
-                props.theme = 'msg-' + props.theme ;
+            } else if (ui.alerts.stylesMsgTheme !== '') {
+                msgStyles += ' ' + ui.alerts.stylesMsgTheme;
             }
 
             // create mssage
@@ -382,7 +390,9 @@ ui.alerts = {
                 html += '<div class="' + ui.alerts.nameMsgHolder + '">';
             }
 
-            html += '<div class="' + ui.alerts.targetMsg + ' ' + props.pos + ' ' + props.theme + ' ' + ui.alerts.stylesMessage + '">' +
+            msgStyles += ' ' + ui.alerts.stylesMsg;
+
+            html += '<div class="' + ui.alerts.targetMsg + ' ' + props.pos + ' ' + msgStyles + '">' +
                         props.msg +
                     '</div>';
 

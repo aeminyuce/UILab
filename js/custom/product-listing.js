@@ -10,7 +10,7 @@ ui.lineCharts.bottom = 10;
 ui.lineCharts.showGrid = false;
 ui.lineCharts.showInfo = false;
 
-ui.alerts.stylesMessage = 'round shadow-lg theme-sub ui-fill-dark-100 ease-layout ease-in-out';
+ui.alerts.stylesMsgTheme = 'theme-sub ui-fill-dark-100';
 
 ui.onload(function () {
     ui.on('.load-more',

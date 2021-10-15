@@ -683,8 +683,8 @@ ui.imageUploader = {
 
                         msg: ui.imageUploader.msgBeforeUpload,
 
-                        callback: function (value) {
-                            if (value === 'success') { fnc(); }
+                        callback: function (val) {
+                            if (val === ui.alerts.successBtnValue) { fnc(); }
                         }
 
                     });
