@@ -39,7 +39,7 @@ ui.alerts = {
     stylesDialogBtnHolder: 'ease-1st-btn',
 
     stylesMsg: 'round shadow-lg ease-layout ease-in-out',
-    stylesMsgTheme: 'theme-orange ui-fill-dark-100',
+    stylesMsgTheme: '',
 
     stylesBg: 'ease-layout',
 
