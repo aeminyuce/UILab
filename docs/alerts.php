@@ -122,10 +122,7 @@
             <div class="col-12">
 
                 <b class="margin-5-b block">Show Default:</b>
-                <div class="align-c col-250 padding-10 round shadow-lg bg-black font-color-white hidden-dark">
-                    Default message
-                </div>
-                <div class="align-c col-250 padding-10 round shadow-lg hidden-light" style="background: hsl(220, 14%, 21%);">
+                <div class="font-color-white align-c col-250 padding-10 round shadow-lg" style="background: hsl(220, 14%, 21%);">
                     Default message
                 </div>
                 <span class="sp-15"></span>

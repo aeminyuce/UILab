@@ -5,7 +5,7 @@
 <script src="../js/custom/landing-page.js?v=<?php echo filemtime('../js/custom/landing-page.js'); ?>"></script>
 
 <!-- header: start -->
-<header class="container no-gutter" data-ui-classes="shadow-lg">
+<header class="container no-gutter bg-white invert-bg" data-ui-classes="shadow-lg">
 
     <div class="border-b theme-farmer2">
         <div class="fixed padding-10-v sm-no-padding-v">
@@ -736,7 +736,7 @@
                     </li>
                     <li>
                         <a class="img has-info" href="img/agriculture/md07.jpg">
-                            <img class="img-invert" src="img/agriculture/md07.jpg" alt="">
+                            <img class="invert-img" src="img/agriculture/md07.jpg" alt="">
                             <span class="x-large ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         </a>
                     </li>
@@ -803,7 +803,7 @@
 </main>
 
 <!-- footer: start -->
-<footer class="container no-gutter padding-30-v theme-farmer2 ui-fill-dark-100">
+<footer class="container no-gutter padding-30-v invert-bg theme-farmer2 ui-fill-dark-100">
     <div class="fixed padding-30-v sm-align-c">
         <div class="row">
             <div class="col-static">
@@ -847,26 +847,26 @@
                     <div class="footer-social padding-15 icons-no-opacity">
                         <div class="card padding-30 shadow-lg theme-farmer ui-fill-dark-100">
                             <h4 class="margin-15-b">Social</h4>
-                            <div class="form-lg ease-1st-btn">
-                                <a class="btn btn-square" href="#" target="_blank">
+                            <div class="font-color-black form-lg ease-1st-btn">
+                                <a class="btn btn-ghost btn-square" href="#" target="_blank">
                                     <svg class="icon"><use href="#facebook"/></svg>
                                 </a>
-                                <a class="btn btn-square" href="#" target="_blank">
+                                <a class="btn btn-ghost btn-square" href="#" target="_blank">
                                     <svg class="icon"><use href="#twitter"/></svg>
                                 </a>
-                                <a class="btn btn-square" href="#" target="_blank">
+                                <a class="btn btn-ghost btn-square" href="#" target="_blank">
                                     <svg class="icon"><use href="#instagram"/></svg>
                                 </a>
-                                <a class="btn btn-square" href="#" target="_blank">
+                                <a class="btn btn-ghost btn-square" href="#" target="_blank">
                                     <svg class="icon"><use href="#linkedin"/></svg>
                                 </a>
-                                <a class="btn btn-square" href="#" target="_blank">
+                                <a class="btn btn-ghost btn-square" href="#" target="_blank">
                                     <svg class="icon"><use href="#google"/></svg>
                                 </a>
-                                <a class="btn btn-square" href="#" target="_blank">
+                                <a class="btn btn-ghost btn-square" href="#" target="_blank">
                                     <svg class="icon"><use href="#whatsapp"/></svg>
                                 </a>
-                                <a class="btn btn-square" href="#" target="_blank">
+                                <a class="btn btn-ghost btn-square" href="#" target="_blank">
                                     <svg class="icon"><use href="#youtube"/></svg>
                                 </a>
                             </div>
@@ -880,7 +880,7 @@
                                 <div class="form-holder col-static no-fluid form-lg">
                                     <div class="row no-row-gap">
                                         <div class="col-12">
-                                            <div class="text no-border ui-fill-light-100 ease-form">
+                                            <div class="text no-border bg-white invert-bg ease-form">
                                                 <input class="required" type="email" maxlength="4" placeholder="your@email.com">
                                             </div>
                                         </div>

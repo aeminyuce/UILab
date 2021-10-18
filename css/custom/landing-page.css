@@ -138,10 +138,6 @@
 .col-220 {
   width: 220px;
 }
-header.container {
-  background-color: hsl(0, 0%, 100%);
-  background-color: var(--white);
-}
 .banner-content {
   background: no-repeat center center;
   background-size: cover;
