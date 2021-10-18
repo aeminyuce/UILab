@@ -629,23 +629,23 @@ ui.userAgents = {
     target: document,
 
     // main classnames
-    nameDesktop: 'desktop',
+    nameDesktop: 'ui-desktop',
 
-    nameWindows: 'windows',
-    nameChromiumEdge: 'edg',
-    nameEdge: 'edge',
-    nameIE: 'ie',
-    nameChrome: 'chrome',
-    nameFirefox: 'firefox',
-    nameOpera: 'opera',
+    nameWindows: 'ui-windows',
+    nameChromiumEdge: 'ui-edg',
+    nameEdge: 'ui-edge',
+    nameIE: 'ui-ie',
+    nameChrome: 'ui-chrome',
+    nameFirefox: 'ui-firefox',
+    nameOpera: 'ui-opera',
 
-    nameMac: 'mac',
-    nameSafari: 'safari',
+    nameMac: 'ui-mac',
+    nameSafari: 'ui-safari',
 
-    nameMobile: 'mobile',
-    nameIos: 'ios',
-    nameAndroid: 'android',
-    nameAndroidBrowser: 'android-browser',
+    nameMobile: 'ui-mobile',
+    nameIos: 'ui-ios',
+    nameAndroid: 'ui-android',
+    nameAndroidBrowser: 'ui-android-browser',
 
     // variables
     userLang: '',
@@ -789,11 +789,10 @@ ui.darkMode = {
     // main classnames
     nameToggle: 'ui-darkmode-toggle',
 
-    // helper classnames
-    nameDark: 'dark',
-    nameLight: 'light',
-
     // values
+    valueDark: 'dark',
+    valueLight: 'light',
+
     cookieDays: 365,
     cookieName: 'ui-darkMode',
 
@@ -812,7 +811,7 @@ ui.darkMode = {
 
         var i, mode, doc, darkColorScheme, state, cookies, cookieName;
 
-        mode = ui.darkMode.nameLight;
+        mode = ui.darkMode.valueLight;
         doc = ui.find(ui.darkMode.target)[0];
 
         darkColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
@@ -821,7 +820,7 @@ ui.darkMode = {
         if (window.matchMedia) {
 
             if(darkColorScheme.matches) {
-                mode = ui.darkMode.nameDark;
+                mode = ui.darkMode.valueDark;
             }
 
         }
@@ -858,7 +857,7 @@ ui.darkMode = {
 
             function () {
 
-                if(darkColorScheme.matches) { mode = ui.darkMode.nameDark; } else { mode= ui.darkMode.nameLight; }
+                if(darkColorScheme.matches) { mode = ui.darkMode.valueDark; } else { mode= ui.darkMode.valueLight; }
                 doc.setAttribute(ui.darkMode.dataMod, mode);
 
                 setState(mode);
@@ -876,7 +875,7 @@ ui.darkMode = {
                 var current = doc.getAttribute(ui.darkMode.dataMod);
 
                 if (current !== null && current !== '') {
-                    if (current === ui.darkMode.nameDark) { mode = ui.darkMode.nameLight; } else { mode = ui.darkMode.nameDark; }
+                    if (current === ui.darkMode.valueDark) { mode = ui.darkMode.valueLight; } else { mode = ui.darkMode.valueDark; }
                 }
 
                 doc.setAttribute(ui.darkMode.dataMod, mode);
@@ -895,8 +894,8 @@ ui.effects = {
     target: document,
 
     // main classnames
-    namePause: 'pause-effects',
-    nameNoEffects: 'no-effects',
+    namePause: 'ui-pause-effects',
+    nameNoEffects: 'ui-no-effects',
 
     // pause effects
     pauseAll: false,

@@ -152,7 +152,7 @@
 
 }
 
-.desktop {
+.ui-desktop {
     .opacity {
         &:hover,&-more:hover { &:extend(.no-opacity); }
     }
@@ -222,7 +222,7 @@
     .visible-mobile { &:extend(.hidden); }
     .hidden-dekstop { &:extend(.hidden); }
 }
-.mobile {
+.ui-mobile {
     .visible-desktop { &:extend(.hidden); }
     .hidden-mobile { &:extend(.hidden); }
     .scroll,.scroll-v,.scroll-h { -webkit-overflow-scrolling: touch; }
@@ -400,7 +400,7 @@ each(@increases, {
     }
 }
 
-.ie {
+.ui-ie {
     .hidden-ie,.hidden-light,.visible-dark { .hidden(); }
 }
 

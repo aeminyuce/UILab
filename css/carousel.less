@@ -81,7 +81,7 @@
 
 			img { display: block; position: relative; z-index: 2; }
 			img,&.detail-holder img { width: 100%; display: inline-block; position: relative; z-index: 1; cursor: pointer; }
-			.desktop &:not(.detail-loader) {
+			.ui-desktop &:not(.detail-loader) {
 				img {
 					&:hover { opacity: @carousel-gallery-detail-hover-opacity; }
 				}
@@ -108,7 +108,7 @@
 				width: 100%; height: auto; background-clip: content-box; border: solid @carousel-thumbs-border @no-color; cursor: pointer;
 
 				&.selected { border-color: @carousel-thumbs-selected-color; }
-				.desktop &:not(.selected):not(:hover) { opacity: @carousel-thumbs-not-selected-opacity; }
+				.ui-desktop &:not(.selected):not(:hover) { opacity: @carousel-thumbs-not-selected-opacity; }
 			}
 		}
 	}

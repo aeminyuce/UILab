@@ -30,40 +30,40 @@
 .theme-app .ui-fill-dark-300:not([class*="theme-"]) {
   background-color: hsl(214, 100%, 25%);
 }
-.desktop .theme-app.ui-fill-light-100.hover:hover,
-.desktop .theme-app .ui-fill-light-100:not([class*="theme-"]).hover:hover,
-.desktop .theme-app.ui-fill-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-app .ui-fill-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.ui-desktop .theme-app.ui-fill-light-100.hover:hover,
+.ui-desktop .theme-app .ui-fill-light-100:not([class*="theme-"]).hover:hover,
+.ui-desktop .theme-app.ui-fill-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.ui-desktop .theme-app .ui-fill-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsla(214, 100%, 60%, 0.3);
 }
-.desktop .theme-app.ui-fill-light-200.hover:hover,
-.desktop .theme-app .ui-fill-light-200:not([class*="theme-"]).hover:hover,
-.desktop .theme-app.ui-fill-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-app .ui-fill-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.ui-desktop .theme-app.ui-fill-light-200.hover:hover,
+.ui-desktop .theme-app .ui-fill-light-200:not([class*="theme-"]).hover:hover,
+.ui-desktop .theme-app.ui-fill-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.ui-desktop .theme-app .ui-fill-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsla(214, 100%, 65%, 0.5);
 }
-.desktop .theme-app.ui-fill-light-300.hover:hover,
-.desktop .theme-app .ui-fill-light-300:not([class*="theme-"]).hover:hover,
-.desktop .theme-app.ui-fill-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-app .ui-fill-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.ui-desktop .theme-app.ui-fill-light-300.hover:hover,
+.ui-desktop .theme-app .ui-fill-light-300:not([class*="theme-"]).hover:hover,
+.ui-desktop .theme-app.ui-fill-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.ui-desktop .theme-app .ui-fill-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsla(214, 100%, 70%, 0.7);
 }
-.desktop .theme-app.ui-fill-dark-100.hover:hover,
-.desktop .theme-app .ui-fill-dark-100:not([class*="theme-"]).hover:hover,
-.desktop .theme-app.ui-fill-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-app .ui-fill-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.ui-desktop .theme-app.ui-fill-dark-100.hover:hover,
+.ui-desktop .theme-app .ui-fill-dark-100:not([class*="theme-"]).hover:hover,
+.ui-desktop .theme-app.ui-fill-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.ui-desktop .theme-app .ui-fill-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(214, 100%, 65%);
 }
-.desktop .theme-app.ui-fill-dark-200.hover:hover,
-.desktop .theme-app .ui-fill-dark-200:not([class*="theme-"]).hover:hover,
-.desktop .theme-app.ui-fill-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-app .ui-fill-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.ui-desktop .theme-app.ui-fill-dark-200.hover:hover,
+.ui-desktop .theme-app .ui-fill-dark-200:not([class*="theme-"]).hover:hover,
+.ui-desktop .theme-app.ui-fill-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.ui-desktop .theme-app .ui-fill-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(214, 100%, 70%);
 }
-.desktop .theme-app.ui-fill-dark-300.hover:hover,
-.desktop .theme-app .ui-fill-dark-300:not([class*="theme-"]).hover:hover,
-.desktop .theme-app.ui-fill-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-app .ui-fill-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.ui-desktop .theme-app.ui-fill-dark-300.hover:hover,
+.ui-desktop .theme-app .ui-fill-dark-300:not([class*="theme-"]).hover:hover,
+.ui-desktop .theme-app.ui-fill-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.ui-desktop .theme-app .ui-fill-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(214, 100%, 75%);
 }
 .theme-app.ui-color,
@@ -98,40 +98,40 @@
 .theme-app2 .ui-fill-dark-300:not([class*="theme-"]) {
   background-color: hsl(349, 100%, 28%);
 }
-.desktop .theme-app2.ui-fill-light-100.hover:hover,
-.desktop .theme-app2 .ui-fill-light-100:not([class*="theme-"]).hover:hover,
-.desktop .theme-app2.ui-fill-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-app2 .ui-fill-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.ui-desktop .theme-app2.ui-fill-light-100.hover:hover,
+.ui-desktop .theme-app2 .ui-fill-light-100:not([class*="theme-"]).hover:hover,
+.ui-desktop .theme-app2.ui-fill-light-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.ui-desktop .theme-app2 .ui-fill-light-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsla(349, 100%, 63%, 0.3);
 }
-.desktop .theme-app2.ui-fill-light-200.hover:hover,
-.desktop .theme-app2 .ui-fill-light-200:not([class*="theme-"]).hover:hover,
-.desktop .theme-app2.ui-fill-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-app2 .ui-fill-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.ui-desktop .theme-app2.ui-fill-light-200.hover:hover,
+.ui-desktop .theme-app2 .ui-fill-light-200:not([class*="theme-"]).hover:hover,
+.ui-desktop .theme-app2.ui-fill-light-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.ui-desktop .theme-app2 .ui-fill-light-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsla(349, 100%, 68%, 0.5);
 }
-.desktop .theme-app2.ui-fill-light-300.hover:hover,
-.desktop .theme-app2 .ui-fill-light-300:not([class*="theme-"]).hover:hover,
-.desktop .theme-app2.ui-fill-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-app2 .ui-fill-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.ui-desktop .theme-app2.ui-fill-light-300.hover:hover,
+.ui-desktop .theme-app2 .ui-fill-light-300:not([class*="theme-"]).hover:hover,
+.ui-desktop .theme-app2.ui-fill-light-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.ui-desktop .theme-app2 .ui-fill-light-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsla(349, 100%, 73%, 0.7);
 }
-.desktop .theme-app2.ui-fill-dark-100.hover:hover,
-.desktop .theme-app2 .ui-fill-dark-100:not([class*="theme-"]).hover:hover,
-.desktop .theme-app2.ui-fill-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-app2 .ui-fill-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.ui-desktop .theme-app2.ui-fill-dark-100.hover:hover,
+.ui-desktop .theme-app2 .ui-fill-dark-100:not([class*="theme-"]).hover:hover,
+.ui-desktop .theme-app2.ui-fill-dark-100.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.ui-desktop .theme-app2 .ui-fill-dark-100:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(349, 100%, 68%);
 }
-.desktop .theme-app2.ui-fill-dark-200.hover:hover,
-.desktop .theme-app2 .ui-fill-dark-200:not([class*="theme-"]).hover:hover,
-.desktop .theme-app2.ui-fill-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-app2 .ui-fill-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.ui-desktop .theme-app2.ui-fill-dark-200.hover:hover,
+.ui-desktop .theme-app2 .ui-fill-dark-200:not([class*="theme-"]).hover:hover,
+.ui-desktop .theme-app2.ui-fill-dark-200.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.ui-desktop .theme-app2 .ui-fill-dark-200:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(349, 100%, 73%);
 }
-.desktop .theme-app2.ui-fill-dark-300.hover:hover,
-.desktop .theme-app2 .ui-fill-dark-300:not([class*="theme-"]).hover:hover,
-.desktop .theme-app2.ui-fill-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
-.desktop .theme-app2 .ui-fill-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
+.ui-desktop .theme-app2.ui-fill-dark-300.hover:hover,
+.ui-desktop .theme-app2 .ui-fill-dark-300:not([class*="theme-"]).hover:hover,
+.ui-desktop .theme-app2.ui-fill-dark-300.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover,
+.ui-desktop .theme-app2 .ui-fill-dark-300:not([class*="theme-"]).btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(349, 100%, 78%);
 }
 .theme-app2.ui-color,

@@ -82,7 +82,7 @@
     .dropdown-menu {
         ._bg-var(highlighted); overflow-x: hidden; overflow-y: auto; position: absolute; z-index: 1; transform-origin: top left;
 
-        .mobile & { -webkit-overflow-scrolling: touch; }
+        .ui-mobile & { -webkit-overflow-scrolling: touch; }
     }
 
 
@@ -190,7 +190,7 @@
         &2 > li:nth-child(2n),&3 > li:nth-child(3n),&4 > li:nth-child(4n),&5 > li:nth-child(5n),&6 > li:nth-child(6n) { border-right: none; }
     }
 
-    .desktop & {
+    .ui-desktop & {
         ul.dropdown-menu {
             & > li {
                 &:not(.holder):hover { ._bg-var(dropdown-list-hover-bg); background-clip: padding-box; }

@@ -46,7 +46,7 @@
 
     each(@theme-bg-hover-vars, {
         .theme-@{name}.ui-fill-@{key},.theme-@{name} .ui-fill-@{key}:not([class*="theme-"]) {
-            .desktop & {
+            .ui-desktop & {
                 &.hover:hover,&.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover { background-color: @value; }
             }
           }

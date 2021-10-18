@@ -98,7 +98,7 @@
     &-scroll {
         width: 100%; overflow-x: auto;
 
-        .mobile & { -webkit-overflow-scrolling: touch; }
+        .ui-mobile & { -webkit-overflow-scrolling: touch; }
         .table { margin-bottom: 0 !important; }
         & > .table {
             tr > * { white-space: nowrap; }
@@ -110,7 +110,7 @@
     }
 
     &-hover {
-        .desktop & {
+        .ui-desktop & {
             tbody {
                 tr:not([class*="ui-fill-"]):hover { ._bg-var(table-hover-bg); }
             }
@@ -132,7 +132,7 @@
         &-fluid {
             width: 100%; overflow-x: auto;
 
-            .mobile & { -webkit-overflow-scrolling: touch; }
+            .ui-mobile & { -webkit-overflow-scrolling: touch; }
             .table { margin-bottom: 0 !important; }
             & > .table {
                 tr > * { white-space: nowrap; }

@@ -76,7 +76,7 @@
                 &:after { background-color: @photo-gallery-info-bg; }
                 & > span { color: @white; text-align: left; overflow: hidden; display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 2; opacity: 0; }
             }
-            .desktop &:hover,&.touch-info {
+            .ui-desktop &:hover,&.touch-info {
                 & > span { opacity: 1; }
             }
         }
@@ -85,7 +85,7 @@
              &:after,& > span { opacity: 1; }
         }
 
-        .desktop &:hover,&.touch-info {
+        .ui-desktop &:hover,&.touch-info {
             &:after { opacity: 1; }
         }
     }
@@ -107,7 +107,7 @@
         color: @white; text-align: center; width: @photo-preview-btn-size; height: @photo-preview-btn-size; background-color: @no-color; padding: @photo-preview-btn-padding; display: none; border: 0; position: absolute; z-index: 2; top: 50%; transform: translateY(-50%); cursor: pointer;
 
         .icon { width: @photo-preview-icon-size; height: @photo-preview-icon-size; stroke-width: @photo-preview-icon-stroke-size; }
-        .desktop &:hover { background-color: @photo-preview-btn-hover-bg; }
+        .ui-desktop &:hover { background-color: @photo-preview-btn-hover-bg; }
 
     }
     .prev { left: @photo-preview-btn-position; }

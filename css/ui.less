@@ -298,13 +298,13 @@ a {
 img { vertical-align: middle; display: inline-block; border: 0; }
 
 // user agents
-.mobile {
+.ui-mobile {
     * { -webkit-tap-highlight-color: @no-color; }
 }
-.ios { -webkit-text-size-adjust: 100%; }
+.ui-ios { -webkit-text-size-adjust: 100%; }
 
 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
-    .mac.chrome {
+    .ui-mac.ui-chrome {
         body { backface-visibility: hidden; perspective: 1000; } // chrome high pixel ratio display fix
     }
 }
@@ -359,9 +359,9 @@ img { vertical-align: middle; display: inline-block; border: 0; }
     &progress { animation: progress 3s linear infinite; }
 }
 
-.no-effects {
+.ui-no-effects {
     &,&:before,&:after,*,*:before,*:after { transition-property: none !important; animation: none !important; }
 }
-.pause-effects {
+.ui-pause-effects {
     &,&:before,&:after,*,*:before,*:after { transition-property: none !important; animation-play-state: paused !important; }
 }

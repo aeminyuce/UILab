@@ -49,7 +49,7 @@
             &.dashed { stroke-dasharray: @line-chart-dashed-size round((@line-chart-dashed-size / 2)); }
             &.dotted { stroke-dasharray: @line-chart-dotted-size round((@line-chart-dashed-size / 2)); }
 
-            .no-effects &,.ie & {
+            .ui-no-effects &,.ui-ie & {
                 &:not(.dashed):not(.dotted):not(.filled) {
                 	stroke-dashoffset: 0;
                 }
@@ -60,16 +60,16 @@
         }
         line {
             stroke: currentColor;
-            html:not(.firefox) & { shape-rendering: crispEdges; }
+            html:not(.ui-firefox) & { shape-rendering: crispEdges; }
 
             &.root-grid { opacity: @line-chart-stroke-opacity; }
             &:not(.root-grid) { stroke-width: @line-chart-bg-grid-stroke-size; opacity: @line-chart-bg-grid-opacity; }
         }
         circle {
             &[onclick] { cursor: pointer; }
-            .desktop &:hover { stroke-width: @line-chart-circle-hover-size; }
+            .ui-desktop &:hover { stroke-width: @line-chart-circle-hover-size; }
 
-            .no-effects &,.ie & { transform: translateY(0); opacity: 1; }
+            .ui-no-effects &,.ui-ie & { transform: translateY(0); opacity: 1; }
         }
 
         text { fill: currentColor; font-size: @line-chart-text-size; opacity: @line-chart-grid-text-opacity; }
@@ -87,7 +87,7 @@
     }
     &:not(.resized) {
         svg {
-            html:not(.ie) & {
+            html:not(.ui-ie) & {
                 path {
                     &.dashed,&.dotted { stroke-dashoffset: 0; opacity: 0; }
                     &.filled { transform: translateY(@line-chart-filled-slide-size); opacity: 0; }
@@ -99,7 +99,7 @@
 
     &.loaded {
         svg {
-            html:not(.ie) & {
+            html:not(.ui-ie) & {
                 path {
                     &:not(.dashed):not(.dotted):not(.filled) { animation: line-draw 2s .6s ease-in forwards; }
                     &.dashed,&.dotted { animation: line-dashed-dotted 1s .6s ease-in forwards; }

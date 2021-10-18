@@ -17,7 +17,7 @@ ui.pieChart = {
     nameOpenEase: 'open-ease',
 
     // outer classnames
-    nameNoEffects: 'no-effects',
+    nameNoEffects: 'ui-no-effects',
 
     // tags
     tagDatasHolder: 'ul',
