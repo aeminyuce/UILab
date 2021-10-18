@@ -8,10 +8,26 @@
                     <div class="col-3 col-sm-6">
                         <div class="dropdown ease-dropdown">
                             <button class="btn circle ui-fill-dark-100">
-                                Dropdown
+                                Dropdown (Long Listed)
                                 <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                             </button>
                             <ul class="dropdown-menu round shadow-lg">
+                                <li>Dropdown Item</li>
+                                <li>Dropdown Item</li>
+                                <li>Dropdown Item</li>
+                                <li>Dropdown Item</li>
+                                <li>Dropdown Item</li>
+                                <li>Dropdown Item</li>
+                                <li>Dropdown Item</li>
+                                <li>Dropdown Item</li>
+                                <li>Dropdown Item</li>
+                                <li>Dropdown Item</li>
+                                <li>Dropdown Item</li>
+                                <li>Dropdown Item</li>
+                                <li>Dropdown Item</li>
+                                <li>Dropdown Item</li>
+                                <li>Dropdown Item</li>
+                                <li>Dropdown Item</li>
                                 <li>Dropdown Item</li>
                                 <li>Dropdown Item</li>
                                 <li>Dropdown Item</li>
