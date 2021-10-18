@@ -2424,6 +2424,9 @@ html .row {
 [data-ui-mode="dark"] .hidden-dark {
   display: none !important;
 }
+[data-ui-mode="dark"] .img-invert {
+  filter: invert(1) hue-rotate(180deg);
+}
 /* borders */
 .border,
 .border-t,

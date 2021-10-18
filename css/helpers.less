@@ -411,6 +411,7 @@ each(@increases, {
         }
         @media (prefers-color-scheme: dark) {
             .visible-light,.hidden-dark { .hidden(); }
+            .img-invert { filter: invert(1) hue-rotate(180deg); }
         }
     }
     & when (@dark-mode-auto-switcher = false) {
@@ -419,6 +420,7 @@ each(@increases, {
         }
         [data-ui-mode="dark"] {
             .visible-light,.hidden-dark { .hidden(); }
+            .img-invert { filter: invert(1) hue-rotate(180deg); }
         }
     }
 }
