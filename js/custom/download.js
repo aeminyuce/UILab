@@ -46,7 +46,7 @@ function pullFiles(that) {
 
                         if (that.name === 'less') {
 
-                            pullResults = pullResults.replace(/ @import 'ui.less';/g, ''); // remove repeated main ui file
+                            pullResults = pullResults.replace(/ @import \(reference\) 'ui.less';/g, ''); // remove repeated main ui file
                             pullResults = pullResults.replace(/\/\/ out: false/g, ''); // remove less settings
 
                         }
