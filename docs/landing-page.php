@@ -730,8 +730,14 @@
                     </li>
                     <li>
                         <a class="img has-info" href="img/agriculture/md06.jpg">
-                            <img src="img/agriculture/md06.jpg" alt="">
+                            <img class="" src="img/agriculture/md06.jpg" alt="">
                             <span class="x-large theme-farmer ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="img has-info" href="img/agriculture/md07.jpg">
+                            <img class="img-invert" src="img/agriculture/md07.jpg" alt="">
+                            <span class="x-large ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         </a>
                     </li>
                 </ul>
