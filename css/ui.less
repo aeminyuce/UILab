@@ -335,11 +335,15 @@ img { vertical-align: middle; display: inline-block; border: 0; }
     }
 }
 
-each(@ease-timings, {
-    .@{value} {
-        &,&[class*="ease-1st-"]> *,&[class*="ease-2nd-"] > * > * { transition-timing-function: @value; }
-    }
-});
+& when (@referenceCompiling = false) { // not compiled when reference importing
+
+    each(@ease-timings, {
+        .@{value} {
+            &,&[class*="ease-1st-"]> *,&[class*="ease-2nd-"] > * > * { transition-timing-function: @value; }
+        }
+    });
+
+}
 
 @keyframes spin {
     from { transform: rotate(0deg); }
