@@ -29,7 +29,6 @@
 
     <!-- import CSS -->
     <link rel="stylesheet" href="../css/_import.css?v=<?php echo filemtime('../css/_import.css'); ?>"/>
-    <link rel="stylesheet" href="../css/custom/layout.css?v=<?php echo filemtime('../css/custom/layout.css'); ?>"/>
 
     <!-- import JS -->
     <script src="../js/ui.js?v=<?php echo filemtime('../js/ui.js'); ?>"></script>
@@ -80,7 +79,7 @@
 ?>
 
     <!-- header -->
-    <header class="container header form-lg ui-fill-dark-100 ease-layout" data-ui-classes="shadow-lg">
+    <header class="container header form-lg theme-sub invert-bg ui-fill-dark-100 ease-layout" data-ui-classes="shadow-lg">
         <div class="row">
             <div class="col-12">
                 <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle btn btn-square round icons-no-opacity right ease-btn hidden-ie">
@@ -90,7 +89,7 @@
                 <a href="index.php" class="btn btn-square circle margin-10-r ease-btn">
                     <svg class="icon icon-hybrid no-opacity"><use href="#long-arrow-left"/></svg>
                 </a>
-                <h1 class="x-large inline-block">UI Lab, <span class="capitalize"><?php echo str_replace("-", " ", $page); ?></span></h1>
+                <h1 class="x-large inline-block"><span class="capitalize"><?php echo str_replace("-", " ", $page); ?></span></h1>
             </div>
         </div>
     </header>
@@ -112,7 +111,7 @@
     } else {
 ?>
     <!-- header -->
-    <header class="container header form-lg ui-fill-dark-100 ease-layout" data-ui-classes="shadow-lg">
+    <header class="container header form-lg invert-bg theme-base ui-fill-dark-100 ease-layout" data-ui-classes="shadow-lg">
         <div class="row">
             <div class="col-static no-fluid">
                 <div class="col-250 col-xs-150 align-c md-align-l padding-15">
