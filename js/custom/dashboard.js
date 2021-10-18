@@ -3,7 +3,7 @@
 // Toggle Sidebar
 var testStorage;
 
-function toggler(onload) {
+function sidebarToggler(onload) {
 
     var sidebar, sidebarInner, toggleClasses, state;
 
@@ -65,7 +65,7 @@ function toggler(onload) {
 
 }
 
-ui.on(document, 'click', '.sidebar-show,.sidebar-hide', toggler);
+ui.on(document, 'click', '.sidebar-show,.sidebar-hide', sidebarToggler);
 
 ui.onload(function () { // check stored sidebar position
 
@@ -82,7 +82,7 @@ ui.onload(function () { // check stored sidebar position
     if (testStorage && sessionStorage !== undefined) {
 
         var state = sessionStorage.getItem('ui-dashboard-left-sidebar');
-        if (state !== null && state === 'closed') { toggler(true); }
+        if (state !== null && state === 'closed') { sidebarToggler(true); }
 
     }
 

@@ -14,7 +14,6 @@ ui.alerts.stylesMsgTheme = 'theme-sub ui-fill-dark-100';
 
 ui.onload(function () {
     ui.on('.load-more',
-
         'click',
 
         function () {
