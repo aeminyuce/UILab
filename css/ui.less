@@ -333,13 +333,13 @@ img { vertical-align: middle; display: inline-block; border: 0; }
     &default {
         &,&[class*="ease-1st-"]> *,&[class*="ease-2nd-"] > * > * { transition-duration: ease-out !important; transition-timing-function: ease !important; }
     }
-
-    each(@ease-timings, {
-        &@{value} {
-            &,&[class*="ease-1st-"]> *,&[class*="ease-2nd-"] > * > * { transition-timing-function: @value; }
-        }
-    });
 }
+
+each(@ease-timings, {
+    .@{value} {
+        &,&[class*="ease-1st-"]> *,&[class*="ease-2nd-"] > * > * { transition-timing-function: @value; }
+    }
+});
 
 @keyframes spin {
     from { transform: rotate(0deg); }

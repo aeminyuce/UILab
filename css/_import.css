@@ -282,19 +282,19 @@ img {
   transition-duration: ease-out !important;
   transition-timing-function: ease !important;
 }
-.ease-ease-in,
-.ease-ease-in[class*="ease-1st-"] > *,
-.ease-ease-in[class*="ease-2nd-"] > * > * {
+.ease-in,
+.ease-in[class*="ease-1st-"] > *,
+.ease-in[class*="ease-2nd-"] > * > * {
   transition-timing-function: ease-in;
 }
-.ease-ease-out,
-.ease-ease-out[class*="ease-1st-"] > *,
-.ease-ease-out[class*="ease-2nd-"] > * > * {
+.ease-out,
+.ease-out[class*="ease-1st-"] > *,
+.ease-out[class*="ease-2nd-"] > * > * {
   transition-timing-function: ease-out;
 }
-.ease-ease-in-out,
-.ease-ease-in-out[class*="ease-1st-"] > *,
-.ease-ease-in-out[class*="ease-2nd-"] > * > * {
+.ease-in-out,
+.ease-in-out[class*="ease-1st-"] > *,
+.ease-in-out[class*="ease-2nd-"] > * > * {
   transition-timing-function: ease-in-out;
 }
 @keyframes spin {
