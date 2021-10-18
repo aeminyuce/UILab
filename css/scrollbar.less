@@ -7,6 +7,9 @@
 @scrollbar-scroll-bg:                   darken(@body-bg, 6%);
 @scrollbar-scroll-bg-dark:              lighten(@body-bg-dark, 8%);
 
+@scrollbar-scroll-faded-bg:             fade(@black, 4.5%);
+@scrollbar-scroll-faded-bg-dark:        fade(@white, 4.5%);
+
 @scrollbar-thumb-bg:                    fade(@black, 15%);
 @scrollbar-thumb-bg-dark:               fade(@white, 20%);
 
@@ -18,6 +21,7 @@
 
 ._global-vars () {
     --scrollbar-scroll-bg: @scrollbar-scroll-bg;
+    --scrollbar-scroll-fadedbg: @scrollbar-scroll-faded-bg;
 
     --scrollbar-thumb-bg: @scrollbar-thumb-bg;
     --scrollbar-thumb-hover-bg: @scrollbar-thumb-hover-bg;
@@ -25,6 +29,7 @@
 }
 ._global-vars-dark () {
     --scrollbar-scroll-bg: @scrollbar-scroll-bg-dark;
+    --scrollbar-scroll-faded-bg: @scrollbar-scroll-faded-bg-dark;
 
     --scrollbar-thumb-bg: @scrollbar-thumb-bg-dark;
     --scrollbar-thumb-hover-bg: @scrollbar-thumb-hover-bg-dark;
@@ -33,6 +38,10 @@
 
 .desktop {
     ::-webkit-scrollbar { width: @scrollbar-size; height: @scrollbar-size; ._bg-var(scrollbar-scroll-bg); }
+    .scrollbar-faded {
+        &::-webkit-scrollbar { ._bg-var(scrollbar-scroll-faded-bg); }
+    }
+
     body::-webkit-scrollbar { width: @page-scrollbar-size; height: @page-scrollbar-size; }
 
     ::-webkit-scrollbar-thumb {
