@@ -2160,10 +2160,10 @@ html .row {
   text-align: center !important;
 }
 .bg-white:not([class*="ui-fill-"]) {
-  background-color: hsl(0, 0%, 100%) !important;
+  background-color: hsl(0, 0%, 100%);
 }
 .bg-black:not([class*="ui-fill-"]) {
-  background-color: hsl(0, 0%, 0%) !important;
+  background-color: hsl(0, 0%, 0%);
 }
 @media print {
   .hidden-print {
@@ -2424,8 +2424,12 @@ html .row {
 [data-ui-mode="dark"] .hidden-dark {
   display: none !important;
 }
-[data-ui-mode="dark"] .img-invert {
-  filter: invert(1) hue-rotate(180deg);
+[data-ui-mode="dark"] .invert-img {
+  filter: invert(1) hue-rotate(180deg) !important;
+}
+[data-ui-mode="dark"] .invert-bg {
+  background-color: hsl(0, 0%, 100%) !important;
+  background-color: var(--card-bg) !important;
 }
 /* borders */
 .border,
