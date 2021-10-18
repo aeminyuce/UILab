@@ -10,16 +10,16 @@
 
         <!-- sidebar -->
         <div class="sidebar col-250 set-relative visible-lg theme-panel ease-width ease-in-out">
-            <div class="col-250 full-h set-fixed set-l ui-fill-dark-100 ease-layout ease-in-out">
+            <div class="col-250 full-h set-fixed set-l invert-bg ui-fill-dark-100 ease-layout ease-in-out">
 
-                <div class="ui-fill-dark-300 set-relative">
+                <div class="set-relative">
                     <img src="img/logo-udashboard.png" width="194" height="62" alt="">
                     <button class="sidebar-hide opacity-more padding-10-h ease-btn set-absolute set-cy set-r" data-ui-tooltip title="Toggle Sidebar">
                         <svg class="icon"><use href="#angle-left"/></svg>
                     </button>
                 </div>
 
-                <div class="tabs align-l icons-no-opacity theme-panel2 ease-tabs ease-1st-btn scroll-v add-mobile-menu-l" data-ui-classes="ui-color">
+                <div class="tabs align-l icons-no-opacity theme-panel2 ease-tabs ease-1st-btn scroll-v scrollbar-faded add-mobile-menu-l" data-ui-classes="ui-color">
 
                     <div class="padding-10">
                         <div class="small margin-10-b font-color-white-muted">Personal Activity</div>

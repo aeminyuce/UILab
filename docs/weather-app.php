@@ -16,7 +16,7 @@
                                 <a class="x-large margin-5-t block opacity ease-layout" href="#">Istanbul</a>
                             </span>
                         </div>
-                        <ul class="days icons-lg">
+                        <ul class="days icons-lg scrollbar-faded round">
                             <li><b>Now</b><svg class="icon"><use href="#temperature"/></svg><span>36</span></li>
                             <li>14<svg class="icon"><use href="#sun"/></svg><span>32</span></li>
                             <li>15<svg class="icon"><use href="#sun"/></svg><span>31</span></li>
@@ -37,59 +37,59 @@
                                     <h3 class="font-bold margin-15-v">Next Week</h3>
                                     <table class="table table-striped no-separated">
                                         <tr>
-                                            <td class="font-color-black-muted large">Tuesday</th>
+                                            <td class="font-color-black-50 large">Tuesday</th>
                                             <td><svg class="icon"><use href="#sun"/></svg></td>
                                             <td class="align-r large">
                                                 <span class="deg margin-20-r">36</span>
-                                                <span class="deg font-color-black-muted">28</span>
+                                                <span class="deg font-color-black-50">28</span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="font-color-black-muted large">Wednesday</th>
+                                            <td class="font-color-black-50 large">Wednesday</th>
                                             <td><svg class="icon"><use href="#sun"/></svg></td>
                                             <td class="align-r large">
                                                 <span class="deg margin-20-r">32</span>
-                                                <span class="deg font-color-black-muted">26</span>
+                                                <span class="deg font-color-black-50">26</span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="font-color-black-muted large">Thursday</th>
+                                            <td class="font-color-black-50 large">Thursday</th>
                                             <td><svg class="icon"><use href="#cloud-sun"/></svg></td>
                                             <td class="align-r large">
                                                 <span class="deg margin-20-r">26</span>
-                                                <span class="deg font-color-black-muted">18</span>
+                                                <span class="deg font-color-black-50">18</span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="font-color-black-muted large">Friday</th>
+                                            <td class="font-color-black-50 large">Friday</th>
                                             <td><svg class="icon"><use href="#rain"/></svg></td>
                                             <td class="align-r large">
                                                 <span class="deg margin-20-r">21</span>
-                                                <span class="deg font-color-black-muted">16</span>
+                                                <span class="deg font-color-black-50">16</span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="font-color-black-muted large">Saturday</th>
+                                            <td class="font-color-black-50 large">Saturday</th>
                                             <td><svg class="icon"><use href="#clouds"/></svg></td>
                                             <td class="align-r large">
                                                 <span class="deg margin-20-r">23</span>
-                                                <span class="deg font-color-black-muted">18</span>
+                                                <span class="deg font-color-black-50">18</span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="font-color-black-muted large">Sunday</th>
+                                            <td class="font-color-black-50 large">Sunday</th>
                                             <td><svg class="icon"><use href="#cloud"/></svg></td>
                                             <td class="align-r large">
                                                 <span class="deg margin-20-r">24</span>
-                                                <span class="deg font-color-black-muted">17</span>
+                                                <span class="deg font-color-black-50">17</span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="font-color-black-muted large">Monday</th>
+                                            <td class="font-color-black-50 large">Monday</th>
                                             <td><svg class="icon"><use href="#cloud-sun"/></svg></td>
                                             <td class="align-r large">
                                                 <span class="deg margin-20-r">27</span>
-                                                <span class="deg font-color-black-muted">19</span>
+                                                <span class="deg font-color-black-50">19</span>
                                             </td>
                                         </tr>
                                     </table>
@@ -111,12 +111,12 @@
                                     </div>
                                     <div class="padding-15 align-c">
                                         <ul class="list-unstyled list-column-2">
-                                            <li><span class="xx-large">0%</span><br><span class="font-color-black-muted">Chance of Rain</span></li>
-                                            <li><span class="xx-large">74%</span><br><span class="font-color-black-muted">Humidity</span></li>
-                                            <li><span class="xx-large">30<sup>o</sup></span><br><span class="font-color-black-muted">Feels Like</span></li>
-                                            <li><span class="xx-large">7 km</span><br><span class="font-color-black-muted">Wind</span></li>
-                                            <li><span class="xx-large">7</span><br><span class="font-color-black-muted">UV Index</span></li>
-                                            <li><span class="xx-large">10.0 mi</span><br><span class="font-color-black-muted">Visibility</span></li>
+                                            <li><span class="xx-large">0%</span><br><span class="font-color-black-50">Chance of Rain</span></li>
+                                            <li><span class="xx-large">74%</span><br><span class="font-color-black-50">Humidity</span></li>
+                                            <li><span class="xx-large">30<sup>o</sup></span><br><span class="font-color-black-50">Feels Like</span></li>
+                                            <li><span class="xx-large">7 km</span><br><span class="font-color-black-50">Wind</span></li>
+                                            <li><span class="xx-large">7</span><br><span class="font-color-black-50">UV Index</span></li>
+                                            <li><span class="xx-large">10.0 mi</span><br><span class="font-color-black-50">Visibility</span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -126,7 +126,7 @@
                                 <button class="carousel-prev btn btn-ghost btn-square round">
                                     <svg class="icon"><use href="#angle-left"/></svg>
                                 </button>
-                                <span class="dots font-color-black-muted"></span>
+                                <span class="dots font-color-black-50"></span>
                                 <button class="carousel-next btn btn-ghost btn-square round">
                                     <svg class="icon"><use href="#angle-right"/></svg>
                                 </button>
@@ -148,7 +148,7 @@
                                 <a class="x-large margin-5-t block opacity ease-layout" href="#">Istanbul</a>
                             </span>
                         </div>
-                        <ul class="days icons-lg">
+                        <ul class="days icons-lg scrollbar-faded round">
                             <li><b>Now</b><svg class="icon"><use href="#moon"/></svg><span>32</span></li>
                             <li>22<svg class="icon"><use href="#moon"/></svg><span>32</span></li>
                             <li>23<svg class="icon"><use href="#moon"/></svg><span>31</span></li>
@@ -182,12 +182,12 @@
                                     </div>
                                     <div class="padding-15 align-c">
                                         <ul class="list-unstyled list-column-2">
-                                            <li><span class="xx-large">0%</span><br><span class="font-color-black-muted">Chance of Rain</span></li>
-                                            <li><span class="xx-large">74%</span><br><span class="font-color-black-muted">Humidity</span></li>
-                                            <li><span class="xx-large">30<sup>o</sup></span><br><span class="font-color-black-muted">Feels Like</span></li>
-                                            <li><span class="xx-large">7 km</span><br><span class="font-color-black-muted">Wind</span></li>
-                                            <li><span class="xx-large">7</span><br><span class="font-color-black-muted">UV Index</span></li>
-                                            <li><span class="xx-large">10.0 mi</span><br><span class="font-color-black-muted">Visibility</span></li>
+                                            <li><span class="xx-large">0%</span><br><span class="font-color-black-50">Chance of Rain</span></li>
+                                            <li><span class="xx-large">74%</span><br><span class="font-color-black-50">Humidity</span></li>
+                                            <li><span class="xx-large">30<sup>o</sup></span><br><span class="font-color-black-50">Feels Like</span></li>
+                                            <li><span class="xx-large">7 km</span><br><span class="font-color-black-50">Wind</span></li>
+                                            <li><span class="xx-large">7</span><br><span class="font-color-black-50">UV Index</span></li>
+                                            <li><span class="xx-large">10.0 mi</span><br><span class="font-color-black-50">Visibility</span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -195,59 +195,59 @@
                                     <h3 class="font-bold margin-15-v">Next Week</h3>
                                     <table class="table table-striped no-separated">
                                         <tr>
-                                            <td class="font-color-black-muted large">Tuesday</th>
+                                            <td class="font-color-black-50 large">Tuesday</th>
                                             <td><svg class="icon"><use href="#sun"/></svg></td>
                                             <td class="align-r large">
                                                 <span class="deg margin-20-r">36</span>
-                                                <span class="deg font-color-black-muted">28</span>
+                                                <span class="deg font-color-black-50">28</span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="font-color-black-muted large">Wednesday</th>
+                                            <td class="font-color-black-50 large">Wednesday</th>
                                             <td><svg class="icon"><use href="#sun"/></svg></td>
                                             <td class="align-r large">
                                                 <span class="deg margin-20-r">32</span>
-                                                <span class="deg font-color-black-muted">26</span>
+                                                <span class="deg font-color-black-50">26</span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="font-color-black-muted large">Thursday</th>
+                                            <td class="font-color-black-50 large">Thursday</th>
                                             <td><svg class="icon"><use href="#cloud-sun"/></svg></td>
                                             <td class="align-r large">
                                                 <span class="deg margin-20-r">26</span>
-                                                <span class="deg font-color-black-muted">18</span>
+                                                <span class="deg font-color-black-50">18</span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="font-color-black-muted large">Friday</th>
+                                            <td class="font-color-black-50 large">Friday</th>
                                             <td><svg class="icon"><use href="#rain"/></svg></td>
                                             <td class="align-r large">
                                                 <span class="deg margin-20-r">21</span>
-                                                <span class="deg font-color-black-muted">16</span>
+                                                <span class="deg font-color-black-50">16</span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="font-color-black-muted large">Saturday</th>
+                                            <td class="font-color-black-50 large">Saturday</th>
                                             <td><svg class="icon"><use href="#clouds"/></svg></td>
                                             <td class="align-r large">
                                                 <span class="deg margin-20-r">23</span>
-                                                <span class="deg font-color-black-muted">18</span>
+                                                <span class="deg font-color-black-50">18</span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="font-color-black-muted large">Sunday</th>
+                                            <td class="font-color-black-50 large">Sunday</th>
                                             <td><svg class="icon"><use href="#cloud"/></svg></td>
                                             <td class="align-r large">
                                                 <span class="deg margin-20-r">24</span>
-                                                <span class="deg font-color-black-muted">17</span>
+                                                <span class="deg font-color-black-50">17</span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="font-color-black-muted large">Monday</th>
+                                            <td class="font-color-black-50 large">Monday</th>
                                             <td><svg class="icon"><use href="#cloud-sun"/></svg></td>
                                             <td class="align-r large">
                                                 <span class="deg margin-20-r">27</span>
-                                                <span class="deg font-color-black-muted">19</span>
+                                                <span class="deg font-color-black-50">19</span>
                                             </td>
                                         </tr>
                                     </table>
@@ -258,7 +258,7 @@
                                 <button class="carousel-prev btn btn-ghost btn-square round">
                                     <svg class="icon"><use href="#angle-left"/></svg>
                                 </button>
-                                <span class="dots font-color-black-muted"></span>
+                                <span class="dots font-color-black-50"></span>
                                 <button class="carousel-next btn btn-ghost btn-square round">
                                     <svg class="icon"><use href="#angle-right"/></svg>
                                 </button>
