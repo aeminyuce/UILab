@@ -4,14 +4,14 @@
 @scrollbar-size:                        8px;
 @page-scrollbar-size:                   12px;
 
-@scrollbar-scroll-bg:                   fade(@black, 4.5%);
-@scrollbar-scroll-bg-dark:              fade(@white, 4.5%);
+@scrollbar-scroll-bg:                   darken(@body-bg, 6%);
+@scrollbar-scroll-bg-dark:              lighten(@body-bg-dark, 8%);
 
-@scrollbar-thumb-bg:                    fade(@black, 10%);
-@scrollbar-thumb-bg-dark:               fade(@white, 15%);
+@scrollbar-thumb-bg:                    fade(@black, 15%);
+@scrollbar-thumb-bg-dark:               fade(@white, 20%);
 
-@scrollbar-thumb-hover-bg:              fade(@black, 15%);
-@scrollbar-thumb-hover-bg-dark:         fade(@white, 20%);
+@scrollbar-thumb-hover-bg:              fade(@black, 25%);
+@scrollbar-thumb-hover-bg-dark:         fade(@white, 30%);
 
 @scrollbar-thumb-bg-active:             fade(@black, 25%);
 @scrollbar-thumb-bg-active-dark:        fade(@white, 25%);
@@ -35,7 +35,6 @@
     ::-webkit-scrollbar { width: @scrollbar-size; height: @scrollbar-size; ._bg-var(scrollbar-scroll-bg); }
     body::-webkit-scrollbar { width: @page-scrollbar-size; height: @page-scrollbar-size; }
 
-    ::-webkit-scrollbar-track { background-color: @no-color; }
     ::-webkit-scrollbar-thumb {
         ._bg-var(scrollbar-thumb-bg);
 
