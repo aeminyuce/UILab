@@ -5,7 +5,7 @@
 
                 <h4>Grid List Examples</h4>
                 <div class="card padding-10 round shadow-lg">
-                    <div class="grid-list grid-list-striped grid-hover theme-gray ease-grid-list">
+                    <div class="grid-list grid-list-striped grid-hover ui-theme-gray ease-grid-list">
 
                         <div class="row no-row-gap-v row-gap-sm-h margin-2-v">
                             <div class="col-6 lg-fluid">
@@ -71,7 +71,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-sub ui-color">
+                                        <ul class="steps-bar steps-icon ui-theme-sub ui-color">
                                             <li>
                                                 <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -103,7 +103,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-red ui-color">
+                                        <ul class="steps-bar steps-icon ui-theme-red ui-color">
                                             <li>
                                                 <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -135,7 +135,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-green ui-color">
+                                        <ul class="steps-bar steps-icon ui-theme-green ui-color">
                                             <li>
                                                 <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -167,7 +167,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-sub ui-color">
+                                        <ul class="steps-bar steps-icon ui-theme-sub ui-color">
                                             <li>
                                                 <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -199,7 +199,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-sub ui-color">
+                                        <ul class="steps-bar steps-icon ui-theme-sub ui-color">
                                             <li>
                                                 <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -231,7 +231,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-red ui-color">
+                                        <ul class="steps-bar steps-icon ui-theme-red ui-color">
                                             <li>
                                                 <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -263,7 +263,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-green ui-color">
+                                        <ul class="steps-bar steps-icon ui-theme-green ui-color">
                                             <li>
                                                 <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -295,7 +295,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-sub ui-color">
+                                        <ul class="steps-bar steps-icon ui-theme-sub ui-color">
                                             <li>
                                                 <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -327,7 +327,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-sub ui-color">
+                                        <ul class="steps-bar steps-icon ui-theme-sub ui-color">
                                             <li>
                                                 <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -359,7 +359,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-red ui-color">
+                                        <ul class="steps-bar steps-icon ui-theme-red ui-color">
                                             <li>
                                                 <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -391,7 +391,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-green ui-color">
+                                        <ul class="steps-bar steps-icon ui-theme-green ui-color">
                                             <li>
                                                 <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -423,7 +423,7 @@
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
                                     </div>
                                     <div class="col-7">
-                                        <ul class="steps-bar steps-icon theme-sub ui-color">
+                                        <ul class="steps-bar steps-icon ui-theme-sub ui-color">
                                             <li>
                                                 <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -460,7 +460,7 @@
                                 </div>
                             </div>
                             <div class="col-8 no-fluid align-r">
-                                <div class="grid-list-paging pagination ease-1st-btn" data-ui-default="btn round" data-ui-active="border-dual theme-sub ui-stroke ui-color"></div>
+                                <div class="grid-list-paging pagination ease-1st-btn" data-ui-default="btn round" data-ui-active="border-dual ui-theme-sub ui-stroke ui-color"></div>
                             </div>
                         </div>
 
@@ -1228,7 +1228,7 @@
                             </div>
                         </div>
                         <div class="col-6 align-r">
-                            <div class="grid-list-paging pagination ease-1st-btn" data-ui-default="btn round" data-ui-active="theme-sub ui-fill-dark-100"></div>
+                            <div class="grid-list-paging pagination ease-1st-btn" data-ui-default="btn round" data-ui-active="ui-theme-sub ui-fill-dark-100"></div>
                         </div>
                     </div>
 
@@ -1813,7 +1813,7 @@
                             </div>
                         </div>
                         <div class="col-6 align-r">
-                            <div class="grid-list-paging pagination ease-1st-btn" data-ui-default="btn round" data-ui-active="theme-sub ui-fill-dark-100"></div>
+                            <div class="grid-list-paging pagination ease-1st-btn" data-ui-default="btn round" data-ui-active="ui-theme-sub ui-fill-dark-100"></div>
                         </div>
                     </div>
 

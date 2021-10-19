@@ -10,7 +10,7 @@
         <div class="row row-gap-lg sm-fluid padding-30-b">
             <div class="col-lg-3 col-6">
 
-                <div class="app padding-15 theme-app">
+                <div class="app padding-15 ui-theme-app">
 
                     <div class="card no-margin-b">
 
@@ -164,7 +164,7 @@
 
                                     <div class="slide-content list-group no-border padding-1-h">
                                         <ul class="has-photo-sm has-icon-sm ease-list-group">
-                                            <li class="round theme-gray ui-fill-light-100">
+                                            <li class="round ui-theme-gray ui-fill-light-100">
                                                 <a href="#">
                                                     <svg class="list-icon icon"><use href="#angle-right"/></svg>
                                                     <span class="img-photo-sm circle">
@@ -178,7 +178,7 @@
                                     </div>
                                     <div class="slide-content list-group no-border padding-1-h">
                                         <ul class="has-photo-sm has-icon-sm ease-list-group">
-                                            <li class="round theme-gray ui-fill-light-100">
+                                            <li class="round ui-theme-gray ui-fill-light-100">
                                                 <a href="#">
                                                     <svg class="list-icon icon"><use href="#angle-right"/></svg>
                                                     <span class="img-photo-sm circle">
@@ -192,7 +192,7 @@
                                     </div>
                                     <div class="slide-content list-group no-border padding-1-h">
                                         <ul class="has-photo-sm has-icon-sm ease-list-group">
-                                            <li class="round theme-gray ui-fill-light-100">
+                                            <li class="round ui-theme-gray ui-fill-light-100">
                                                 <a href="#">
                                                     <svg class="list-icon icon"><use href="#angle-right"/></svg>
                                                     <span class="img-photo-sm circle">
@@ -250,7 +250,7 @@
             </div>
             <div class="col-lg-3 col-6">
 
-                <div class="app padding-15 theme-app">
+                <div class="app padding-15 ui-theme-app">
 
                     <div class="card no-margin-b">
 
@@ -363,7 +363,7 @@
                                                     <b class="font-color-black-muted">REP-103-2018</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
-                                                    <b class="xx-small circle padding-4-h padding-3-v theme-app2 ui-fill-dark-100">SD</b>
+                                                    <b class="xx-small circle padding-4-h padding-3-v ui-theme-app2 ui-fill-dark-100">SD</b>
                                                     <span class="margin-3-l">Mary Doe</span>
                                                 </div>
                                             </div>
@@ -438,7 +438,7 @@
                                                     <b class="font-color-black-muted">REP-103-2018</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
-                                                    <b class="xx-small circle padding-4-h padding-3-v theme-app2 ui-fill-dark-100">SD</b>
+                                                    <b class="xx-small circle padding-4-h padding-3-v ui-theme-app2 ui-fill-dark-100">SD</b>
                                                     <span class="margin-3-l">Mary Doe</span>
                                                 </div>
                                             </div>
@@ -513,7 +513,7 @@
                                                     <b class="font-color-black-muted">REP-103-2018</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
-                                                    <b class="xx-small circle padding-4-h padding-3-v theme-app2 ui-fill-dark-100">SD</b>
+                                                    <b class="xx-small circle padding-4-h padding-3-v ui-theme-app2 ui-fill-dark-100">SD</b>
                                                     <span class="margin-3-l">Mary Doe</span>
                                                 </div>
                                             </div>
@@ -588,7 +588,7 @@
                                                     <b class="font-color-black-muted">REP-103-2018</b>
                                                 </div>
                                                 <div class="col-6 inline-block-1st">
-                                                    <b class="xx-small circle padding-4-h padding-3-v theme-app2 ui-fill-dark-100">SD</b>
+                                                    <b class="xx-small circle padding-4-h padding-3-v ui-theme-app2 ui-fill-dark-100">SD</b>
                                                     <span class="margin-3-l">Mary Doe</span>
                                                 </div>
                                             </div>
@@ -649,7 +649,7 @@
             </div>
             <div class="col-lg-3 col-6">
 
-                <div class="app padding-15 theme-app">
+                <div class="app padding-15 ui-theme-app">
 
                     <div class="card no-margin-b">
 
@@ -675,10 +675,10 @@
 
                         <div class="card-side padding-10">
 
-                            <div class="tabs ease-tabs" data-ui-classes="theme-app ui-stroke">
+                            <div class="tabs ease-tabs" data-ui-classes="ui-theme-app ui-stroke">
 
                                 <ul class="contacts list-inline margin-5-t margin-10-b ease-1st-border scroll-h">
-                                    <li class="tab circle online theme-app ui-stroke active">
+                                    <li class="tab circle online ui-theme-app ui-stroke active">
                                         <img class="img-photo circle" src="img/profile-image.jpg" alt="">
                                     </li>
                                     <li class="tab circle online" data-ui-msg="2">
@@ -699,7 +699,7 @@
                                 </ul>
 
                                 <div class="tab-content padding-10 border-dual open open-ease">
-                                    <div class="row no-fluid no-margin circle theme-gray ui-fill-light-100">
+                                    <div class="row no-fluid no-margin circle ui-theme-gray ui-fill-light-100">
                                         <div class="col-6">
                                             <h5 class="font-bold">John Doe</h5>
                                         </div>
@@ -746,7 +746,7 @@
                                             <span class="ui-fill-dark-100">Ok</span>
                                         </li>
                                     </ul>
-                                    <div class="col-static no-fluid padding-5 circle theme-gray ui-fill-light-100">
+                                    <div class="col-static no-fluid padding-5 circle ui-theme-gray ui-fill-light-100">
                                         <div class="col-35">
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
@@ -761,7 +761,7 @@
                                     </div>
                                 </div>
                                 <div class="tab-content padding-10 border-dual">
-                                    <div class="row no-fluid no-margin circle theme-gray ui-fill-light-100">
+                                    <div class="row no-fluid no-margin circle ui-theme-gray ui-fill-light-100">
                                         <div class="col-6">
                                             <h5 class="font-bold">Mary Doe</h5>
                                         </div>
@@ -808,20 +808,20 @@
                                             <span class="ui-fill-dark-100">Ok</span>
                                         </li>
                                     </ul>
-                                    <div class="col-static no-fluid padding-5 circle theme-gray ui-fill-light-100">
+                                    <div class="col-static no-fluid padding-5 circle ui-theme-gray ui-fill-light-100">
                                         <div class="col-35">
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
                                         <div class="row no-row-gap">
                                             <div class="text text-icon no-border padding-2 circle ease-form">
-                                                <button class="icon icon-comment-dots theme-app ui-color"></button>
+                                                <button class="icon icon-comment-dots ui-theme-app ui-color"></button>
                                                 <input type="text" placeholder="Type your message">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="tab-content padding-10 border-dual">
-                                    <div class="row no-fluid no-margin circle theme-gray ui-fill-light-100">
+                                    <div class="row no-fluid no-margin circle ui-theme-gray ui-fill-light-100">
                                         <div class="col-6">
                                             <h5 class="font-bold">Mike Taylor</h5>
                                         </div>
@@ -868,7 +868,7 @@
                                             <span class="ui-fill-dark-100">Ok</span>
                                         </li>
                                     </ul>
-                                    <div class="col-static no-fluid padding-5 circle theme-gray ui-fill-light-100">
+                                    <div class="col-static no-fluid padding-5 circle ui-theme-gray ui-fill-light-100">
                                         <div class="col-35">
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
@@ -883,7 +883,7 @@
                                     </div>
                                 </div>
                                 <div class="tab-content padding-10 border-dual">
-                                    <div class="row no-fluid no-margin circle theme-gray ui-fill-light-100">
+                                    <div class="row no-fluid no-margin circle ui-theme-gray ui-fill-light-100">
                                         <div class="col-6">
                                             <h5 class="font-bold">John Doe</h5>
                                         </div>
@@ -930,20 +930,20 @@
                                             <span class="ui-fill-dark-100">Ok</span>
                                         </li>
                                     </ul>
-                                    <div class="col-static no-fluid padding-5 circle theme-gray ui-fill-light-100">
+                                    <div class="col-static no-fluid padding-5 circle ui-theme-gray ui-fill-light-100">
                                         <div class="col-35">
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
                                         <div class="row no-row-gap">
                                             <div class="text text-icon no-border padding-2 circle ease-form">
-                                                <button class="icon icon-comment-dots theme-app ui-color"></button>
+                                                <button class="icon icon-comment-dots ui-theme-app ui-color"></button>
                                                 <input type="text" placeholder="Type your message">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="tab-content padding-10 border-dual">
-                                    <div class="row no-fluid no-margin circle theme-gray ui-fill-light-100">
+                                    <div class="row no-fluid no-margin circle ui-theme-gray ui-fill-light-100">
                                         <div class="col-6">
                                             <h5 class="font-bold">Mary Doe</h5>
                                         </div>
@@ -990,7 +990,7 @@
                                             <span class="ui-fill-dark-100">Ok</span>
                                         </li>
                                     </ul>
-                                    <div class="col-static no-fluid padding-5 circle theme-gray ui-fill-light-100">
+                                    <div class="col-static no-fluid padding-5 circle ui-theme-gray ui-fill-light-100">
                                         <div class="col-35">
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
@@ -1005,7 +1005,7 @@
                                     </div>
                                 </div>
                                 <div class="tab-content padding-10 border-dual">
-                                    <div class="row no-fluid no-margin circle theme-gray ui-fill-light-100">
+                                    <div class="row no-fluid no-margin circle ui-theme-gray ui-fill-light-100">
                                         <div class="col-6">
                                             <h5 class="font-bold">John Doe</h5>
                                         </div>
@@ -1052,7 +1052,7 @@
                                             <span class="ui-fill-dark-100">Ok</span>
                                         </li>
                                     </ul>
-                                    <div class="col-static no-fluid padding-5 circle theme-gray ui-fill-light-100">
+                                    <div class="col-static no-fluid padding-5 circle ui-theme-gray ui-fill-light-100">
                                         <div class="col-35">
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
@@ -1109,7 +1109,7 @@
             </div>
             <div class="col-lg-3 col-6">
 
-                <div class="app padding-15 theme-app">
+                <div class="app padding-15 ui-theme-app">
 
                     <div class="card no-margin-b">
 
@@ -1142,12 +1142,12 @@
                                 <span class="sp-20"></span>
                                 <span class="x-large margin-3-l">John Doe</span>
                                 <span class="sp-2"></span>
-                                <b class="xx-small circle padding-5-h padding-3-v theme-app2 ui-fill-dark-100">SD</b>
+                                <b class="xx-small circle padding-5-h padding-3-v ui-theme-app2 ui-fill-dark-100">SD</b>
                                 <span class="font-color-black-50 margin-3-l">Audit Staff</span>
                             </div>
 
                             <h5 class="font-bold margin-10-b">Settings</h5>
-                            <div class="list-group round no-border theme-gray ui-fill-light-100">
+                            <div class="list-group round no-border ui-theme-gray ui-fill-light-100">
                                 <ul class="has-icon-xs ease-list-group">
                                     <li>
                                         <a href="#">
@@ -1180,7 +1180,7 @@
 
                             <h5 class="font-bold margin-10-b">General</h5>
 
-                            <div class="list-group round no-border theme-gray ui-fill-light-100">
+                            <div class="list-group round no-border ui-theme-gray ui-fill-light-100">
                                 <ul class="has-icon-xs ease-list-group">
                                     <li>
                                         <a href="#">
@@ -1205,7 +1205,7 @@
 
                             <span class="sp-25"></span>
 
-                            <div class="list-group round no-border theme-gray ui-fill-light-100">
+                            <div class="list-group round no-border ui-theme-gray ui-fill-light-100">
                                 <ul class="has-icon-xs ease-list-group">
                                     <li>
                                         <a class="round" href="#">

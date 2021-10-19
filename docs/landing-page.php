@@ -7,7 +7,7 @@
 <!-- header: start -->
 <header class="container no-gutter bg-white invert-bg" data-ui-classes="shadow-lg">
 
-    <div class="border-b theme-farmer2">
+    <div class="border-b ui-theme-farmer2">
         <div class="fixed padding-10-v sm-no-padding-v">
             <div class="row">
                 <div class="col-static no-fluid">
@@ -56,7 +56,7 @@
                                         <svg class="icon margin-5-r visible-sm"><use href="#sign-in"/></svg>
                                         <b>Login</b>
                                     </a>
-                                    <a class="btn btn-sm-fluid theme-farmer ui-fill-dark-100" href="#">
+                                    <a class="btn btn-sm-fluid ui-theme-farmer ui-fill-dark-100" href="#">
                                         <svg class="icon margin-5-r visible-sm"><use href="#user-plus"/></svg>
                                         <b>Sign Up</b>
                                     </a>
@@ -82,7 +82,7 @@
     <!-- tab banner: start -->
     <div class="tabs form-lg ease-tabs" data-ui-classes="ui-color border-b border-lg ui-stroke">
 
-        <div class="fixed padding-10-t theme-farmer2">
+        <div class="fixed padding-10-t ui-theme-farmer2">
             <div class="row no-row-gap-v icons-no-opacity icons-margin-5-r">
                 <div class="col-12 xs-align-l align-c ease-1st-btn">
                     <button class="tab btn btn-xs-fluid btn-ghost margin-1-b ui-color border-b border-lg ui-stroke active">
@@ -102,7 +102,7 @@
             <span class="sp-10 visible-sm"></span>
         </div>
 
-        <div class="banner-content banner-tab01 tab-content padding-30-v set-relative theme-farmer ui-fill-dark-100 open open-ease" style="background-image: url(img/agriculture/lg01.jpg)">
+        <div class="banner-content banner-tab01 tab-content padding-30-v set-relative ui-theme-farmer ui-fill-dark-100 open open-ease" style="background-image: url(img/agriculture/lg01.jpg)">
             <div class="fixed padding-30-v set-relative">
                 <div class="row">
                     <div class="col-static">
@@ -127,7 +127,7 @@
                                     <span class="sp-30 hidden-md"></span>
                                     <h3 class="font-bold xx-large">Long term investment</h3>
                                     <p class="highlight x-large">Consider terms that have long term investment program.</p>
-                                    <a href="#" class="btn block theme-farmer2 ui-fill-dark-100 ease-btn">
+                                    <a href="#" class="btn block ui-theme-farmer2 ui-fill-dark-100 ease-btn">
                                         <b>Learn more</b>
                                         <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                                     </a>
@@ -140,7 +140,7 @@
             </div>
             <span class="sp-30 margin-10-v"></span>
         </div>
-        <div class="banner-content banner-tab02 tab-content padding-30-v set-relative theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg02.jpg)">
+        <div class="banner-content banner-tab02 tab-content padding-30-v set-relative ui-theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg02.jpg)">
             <div class="fixed padding-30-v set-relative">
                 <div class="row">
                     <div class="col-static">
@@ -165,7 +165,7 @@
                                     <span class="sp-30"></span>
                                     <h3 class="font-bold xx-large">Connect with Our Farmers</h3>
                                     <p class="highlight x-large">Consider terms that connect with our farmers program.</p>
-                                    <a href="#" class="btn block theme-farmer2 ui-fill-dark-100 ease-btn">
+                                    <a href="#" class="btn block ui-theme-farmer2 ui-fill-dark-100 ease-btn">
                                         <b>Learn more</b>
                                         <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                                     </a>
@@ -178,7 +178,7 @@
             </div>
             <span class="sp-30 margin-10-v"></span>
         </div>
-        <div class="banner-content banner-tab03 tab-content padding-30-v set-relative theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg03.jpg)">
+        <div class="banner-content banner-tab03 tab-content padding-30-v set-relative ui-theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg03.jpg)">
             <div class="fixed padding-30-v set-relative">
                 <div class="row">
                     <div class="col-static">
@@ -203,7 +203,7 @@
                                     <span class="sp-30"></span>
                                     <h3 class="font-bold xx-large">Social Impact Investment</h3>
                                     <p class="highlight x-large">Consider terms that have social impact investment program.</p>
-                                    <a href="#" class="btn block theme-farmer2 ui-fill-dark-100 ease-btn">
+                                    <a href="#" class="btn block ui-theme-farmer2 ui-fill-dark-100 ease-btn">
                                         <b>Learn more</b>
                                         <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                                     </a>
@@ -221,7 +221,7 @@
     <!-- tab banner: end -->
 
     <!-- home links: start -->
-    <div class="home-links fixed align-c form-lg theme-farmer2 set-relative">
+    <div class="home-links fixed align-c form-lg ui-theme-farmer2 set-relative">
         <div class="carousel" data-ui-col="4" data-ui-col-md="2" data-ui-col-sm="2" data-ui-col-xs="1" data-ui-slide="4000">
             <div class="carousel-slider icons-xxl hover-shadow-2nd hover-scale-2nd ease-layout ease-slow-2x ease-in-out">
 
@@ -329,7 +329,7 @@
     <!-- home links: end -->
 
     <!-- news: start -->
-    <div class="padding-30-v theme-farmer ui-fill-light-100">
+    <div class="padding-30-v ui-theme-farmer ui-fill-light-100">
         <div class="fixed margin-30-b">
             <div class="row">
                 <div class="col-12">
@@ -460,7 +460,7 @@
                     </div>
                 </div>
                 <div class="align-c padding-30-t padding-10-b">
-                    <a href="#" class="btn btn-xs-fluid padding-30-h theme-farmer2 ui-fill-dark-100 ease-btn">
+                    <a href="#" class="btn btn-xs-fluid padding-30-h ui-theme-farmer2 ui-fill-dark-100 ease-btn">
                         <b>View all company news</b> <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                     </a>
                 </div>
@@ -565,7 +565,7 @@
                     </div>
                 </div>
                 <div class="align-c padding-30-t padding-10-b">
-                    <a href="#" class="btn btn-xs-fluid padding-30-h theme-farmer2 ui-fill-dark-100 ease-btn">
+                    <a href="#" class="btn btn-xs-fluid padding-30-h ui-theme-farmer2 ui-fill-dark-100 ease-btn">
                         <b>View all social news</b> <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                     </a>
                 </div>
@@ -670,7 +670,7 @@
                     </div>
                 </div>
                 <div class="align-c padding-30-t padding-10-b">
-                    <a href="#" class="btn btn-xs-fluid padding-30-h theme-farmer2 ui-fill-dark-100 ease-btn">
+                    <a href="#" class="btn btn-xs-fluid padding-30-h ui-theme-farmer2 ui-fill-dark-100 ease-btn">
                         <b>View all customer news</b> <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                     </a>
                 </div>
@@ -681,7 +681,7 @@
     <!-- news: end -->
 
     <!-- gallery: start -->
-    <div class="fixed theme-farmer2">
+    <div class="fixed ui-theme-farmer2">
         <div class="row">
             <div class="col-12">
                 <h2 class="font-bold margin-10-b">Our Projects</h2>
@@ -707,7 +707,7 @@
                     <li>
                         <a class="img has-info" href="img/agriculture/md02.jpg">
                             <img src="img/agriculture/md02.jpg" alt="">
-                            <span class="x-large theme-farmer ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
+                            <span class="x-large ui-theme-farmer ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                         </a>
                     </li>
                     <li>
@@ -719,7 +719,7 @@
                     <li>
                         <a class="img has-info" href="img/agriculture/md04.jpg">
                             <img src="img/agriculture/md04.jpg" alt="">
-                            <span class="x-large theme-farmer ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            <span class="x-large ui-theme-farmer ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         </a>
                     </li>
                     <li>
@@ -731,7 +731,7 @@
                     <li>
                         <a class="img has-info" href="img/agriculture/md06.jpg">
                             <img class="" src="img/agriculture/md06.jpg" alt="">
-                            <span class="x-large theme-farmer ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            <span class="x-large ui-theme-farmer ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         </a>
                     </li>
                     <li>
@@ -748,7 +748,7 @@
     <!-- gallery: end -->
 
     <!-- statistics: start -->
-    <div class="padding-15-t padding-30-b theme-farmer ui-fill-light-100">
+    <div class="padding-15-t padding-30-b ui-theme-farmer ui-fill-light-100">
         <div class="fixed padding-30-v">
             <div class="row">
                 <div class="col-12">
@@ -789,7 +789,7 @@
                             <span class="sp-15"></span>
                             Pellentesque mattis sed diam a rutrum. Sed fermentum accumsan egestas.
                         </p>
-                        <a href="#" class="btn btn-lg btn-xs-fluid padding-20-h margin-30-b theme-farmer2 ui-fill-dark-100 ease-btn">
+                        <a href="#" class="btn btn-lg btn-xs-fluid padding-20-h margin-30-b ui-theme-farmer2 ui-fill-dark-100 ease-btn">
                             <b>View all statistics</b>
                             <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                         </a>
@@ -803,7 +803,7 @@
 </main>
 
 <!-- footer: start -->
-<footer class="container no-gutter padding-30-v invert-bg theme-farmer2 ui-fill-dark-100">
+<footer class="container no-gutter padding-30-v invert-bg ui-theme-farmer2 ui-fill-dark-100">
     <div class="fixed padding-30-v sm-align-c">
         <div class="row">
             <div class="col-static">
@@ -845,7 +845,7 @@
                 <div class="col-450 padding-10">
 
                     <div class="footer-social padding-15 icons-no-opacity">
-                        <div class="card padding-30 shadow-lg theme-farmer ui-fill-dark-100">
+                        <div class="card padding-30 shadow-lg ui-theme-farmer ui-fill-dark-100">
                             <h4 class="margin-15-b">Social</h4>
                             <div class="font-color-black form-lg ease-1st-btn">
                                 <a class="btn btn-ghost btn-square" href="#" target="_blank">
@@ -886,7 +886,7 @@
                                         </div>
                                     </div>
                                     <div class="col-42">
-                                        <button class="btn btn-square theme-farmer2 ui-fill-dark-100 ease-btn">
+                                        <button class="btn btn-square ui-theme-farmer2 ui-fill-dark-100 ease-btn">
                                             <svg class="icon"><use href="#send"/></svg>
                                         </button>
                                     </div>
@@ -937,5 +937,5 @@
         </button>
         <a href="#"><img src="img/agriculture/logo.png" alt="" srcset="img/agriculture/logo@2x.png 2x"></a>
     </div>
-    <div class="mobile-menu-content align-l theme-farmer2 scroll-v"></div>
+    <div class="mobile-menu-content align-l ui-theme-farmer2 scroll-v"></div>
 </div>

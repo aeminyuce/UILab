@@ -10,7 +10,7 @@ ui.lineCharts.bottom = 10;
 ui.lineCharts.showGrid = false;
 ui.lineCharts.showInfo = false;
 
-ui.alerts.stylesMsgTheme = 'theme-sub ui-fill-dark-100';
+ui.alerts.stylesMsgTheme = 'ui-theme-sub ui-fill-dark-100';
 
 ui.onload(function () {
     ui.on('.load-more',
@@ -38,7 +38,7 @@ ui.onload(function () {
 
                             ui.alerts.message({
                                 msg: 'Products loaded!',
-                                theme: 'theme-sub ui-fill-dark-100'
+                                theme: 'ui-theme-sub ui-fill-dark-100'
                             });
 
                             ui.loadingMask.toggle(that);

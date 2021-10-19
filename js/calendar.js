@@ -55,8 +55,8 @@ ui.calendar = {
     stylesContainer: 'ease-layout ease-slow ease-in-out',
     stylesPanel: 'ease-layout ease-slow ease-in-out',
 
-    stylesToday: 'theme-sub ui-fill-dark-100',
-    stylesPickerDay: 'theme-red ui-fill-dark-100',
+    stylesToday: 'ui-theme-sub ui-fill-dark-100',
+    stylesPickerDay: 'ui-theme-red ui-fill-dark-100',
 
     // icons
     prevIcon: 'arrow-left', // header's previous button

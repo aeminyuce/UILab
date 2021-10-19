@@ -4,7 +4,7 @@
             <div class="col-12">
 
                 <h4>Showing/Hiding Loading Masks</h4>
-                <div class="padding-30-b theme-base">
+                <div class="padding-30-b ui-theme-base">
 
                     <pre class="round">ui.loadingMask.toggle(id);</pre>
                     <pre class="round">ui.loadingMask.toggle(classname);<br><br>- or -<br><br>var variable = ui.find(element);<br>ui.loadingMask.toggle(variable);</pre>
@@ -12,10 +12,10 @@
                 </div>
 
                 <h4>Loading Mask with Buttons</h4>
-                <div class="padding-30-b theme-base">
+                <div class="padding-30-b ui-theme-base">
 
                     <div class="form-lg ease-1st-btn">
-                        <button id="loadingBtn" class="btn btn-xs-fluid padding-25-h round theme-sub ui-fill-dark-100 ease-btn">Button</button>
+                        <button id="loadingBtn" class="btn btn-xs-fluid padding-25-h round ui-theme-sub ui-fill-dark-100 ease-btn">Button</button>
                     </div>
 
                     <pre class="round margin-10-t margin-5-b">ui.loadingMask.toggle('#loadingBtn');</pre>
@@ -24,8 +24,8 @@
                     <span class="sp-30"></span>
 
                     <div class="form-lg ease-1st-btn">
-                        <a href="#" class="loadingBtn btn btn-xs-fluid padding-25-h round theme-sub ui-fill-dark-100">Link</a>
-                        <button class="loadingBtn btn btn-xs-fluid padding-25-h round theme-sub ui-fill-dark-100" onclick="alert('Javascript Alert');">Javascript Alert</button>
+                        <a href="#" class="loadingBtn btn btn-xs-fluid padding-25-h round ui-theme-sub ui-fill-dark-100">Link</a>
+                        <button class="loadingBtn btn btn-xs-fluid padding-25-h round ui-theme-sub ui-fill-dark-100" onclick="alert('Javascript Alert');">Javascript Alert</button>
                     </div>
 
                     <pre class="round margin-10-t margin-5-b">ui.loadingMask.toggle('.loadingBtn');</pre>
@@ -34,7 +34,7 @@
                 </div>
 
                 <h4>Loading Mask with Forms</h4>
-                <div class="padding-30-b theme-base">
+                <div class="padding-30-b ui-theme-base">
 
                     <div class="form-lg">
                         <div class="loadingText1 text border-dual round form-inline ease-form">
@@ -82,7 +82,7 @@
                 </div>
 
                 <h4>Loading Mask with Whole Page</h4>
-                <div class="padding-30-b theme-base">
+                <div class="padding-30-b ui-theme-base">
 
                     <pre class="round margin-10-t margin-5-b">ui.loadingMask.toggle('.loadingPage');</pre>
                     <button class="btn btn-sm round ui-fill-dark-100 ease-btn" onclick="ui.loadingMask.toggle('.loadingPage');">Run Code</button>

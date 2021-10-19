@@ -5,11 +5,11 @@
         <div class="row">
             <div class="col-12 padding-30">
 
-                <div class="card-warning padding-30 round theme-sub ui-fill-light-100 ui-stroke">
+                <div class="card-warning padding-30 round ui-theme-sub ui-fill-light-100 ui-stroke">
                     UI JS is a simple javascript for creating, removing and triggering javascript event listeners and finding HTML elements.
                 </div>
 
-                <div class="padding-30-v block-1st theme-base">
+                <div class="padding-30-v block-1st ui-theme-base">
 
                     <b class="margin-5-b">Page load event listener:</b>
                     <pre class="round margin-5-b">ui.onload(function)</pre>

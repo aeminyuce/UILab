@@ -79,7 +79,7 @@
 ?>
 
     <!-- header -->
-    <header class="container header form-lg theme-sub invert-bg ui-fill-dark-100 ease-layout" data-ui-classes="shadow-lg">
+    <header class="container header form-lg ui-theme-sub invert-bg ui-fill-dark-100 ease-layout" data-ui-classes="shadow-lg">
         <div class="row">
             <div class="col-12">
                 <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle btn btn-square round icons-no-opacity right ease-btn hidden-ie">
@@ -111,7 +111,7 @@
     } else {
 ?>
     <!-- header -->
-    <header class="container header form-lg invert-bg theme-base ui-fill-dark-100 ease-layout" data-ui-classes="shadow-lg">
+    <header class="container header form-lg invert-bg ui-theme-base ui-fill-dark-100 ease-layout" data-ui-classes="shadow-lg">
         <div class="row">
             <div class="col-static no-fluid">
                 <div class="col-250 col-xs-150 align-c md-align-l padding-15">
@@ -139,9 +139,9 @@
         <div class="col-static no-fluid">
 
             <!-- sidebar -->
-            <div class="col-250 theme-gray ui-fill-light-300 hidden-md">
+            <div class="col-250 ui-theme-gray ui-fill-light-300 hidden-md">
                 <div class="align-l sm-align-c padding-20-t form-lg add-mobile-menu-r">
-                    <h4 class="font-bold padding-10-h theme-sub ui-color">UI</h4>
+                    <h4 class="font-bold padding-10-h ui-theme-sub ui-color">UI</h4>
                     <ul class="list-unstyled block-2nd ease-2nd-button">
                         <li><a class="btn btn-ghost" href="?p=alerts">Alerts</a></li>
                         <li><a class="btn btn-ghost" href="?p=breadcrumbs">Breadcrumbs</a></li>
@@ -174,7 +174,7 @@
                         <li><a class="btn btn-ghost" href="?p=typography">Typography</a></li>
                         <li><a class="btn btn-ghost" href="?p=weather">Weather</a></li>
                     </ul>
-                    <h4 class="font-bold padding-10-h theme-sub ui-color">Javascript</h4>
+                    <h4 class="font-bold padding-10-h ui-theme-sub ui-color">Javascript</h4>
                     <ul class="list-unstyled block-2nd ease-2nd-button">
                         <li><a class="btn btn-ghost" href="?p=ui">UI JS</a></li>
                     </ul>
@@ -189,10 +189,10 @@
                             <h2 class="margin-10-b">UILab</h2>
                             <p class="highlight large xs-align-c">CSS &amp; JavaScript powered responsive design system.</p>
                             <div class="form-lg ease-1st-btn">
-                                <a href="?p=icons" class="btn btn-xs-fluid padding-30-h circle theme-sub">
+                                <a href="?p=icons" class="btn btn-xs-fluid padding-30-h circle ui-theme-sub">
                                     <svg class="icon margin-5-r no-opacity ui-color"><use href="#draw"/></svg> See Icons
                                 </a>
-                                <a href="?p=download" class="btn btn-xs-fluid padding-30-h circle theme-sub ui-fill-dark-100">
+                                <a href="?p=download" class="btn btn-xs-fluid padding-30-h circle ui-theme-sub ui-fill-dark-100">
                                     Download <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                                 </a>
                             </div>
@@ -312,14 +312,14 @@
     </main>
 
     <!-- mobile menu -->
-    <div class="mobile-menu show-r theme-base ease-layout ease-in-out">
+    <div class="mobile-menu show-r ui-theme-base ease-layout ease-in-out">
         <div class="mobile-menu-title padding-15-v ui-fill-dark-100">
             <button class="btn btn-square btn-lg btn-ghost round ease-btn close-mobile-menu">
                 <svg class="icon no-opacity"><use href="#remove"/></svg>
             </button>
             <img src="img/uilab-logo.png" alt="" srcset="img/uilab-logo@2x.png 2x">
         </div>
-        <div class="mobile-menu-content no-padding theme-gray ui-fill-light-100 scroll-v"></div>
+        <div class="mobile-menu-content no-padding ui-theme-gray ui-fill-light-100 scroll-v"></div>
     </div>
 <?php
     }

@@ -4,7 +4,7 @@
 <main class="container">
     <div class="row">
         <div class="col-12">
-            <div class="padding-30-v sm-no-padding tabs theme-sub ease-tabs" data-ui-classes="border-b border-lg ui-stroke">
+            <div class="padding-30-v sm-no-padding tabs ui-theme-sub ease-tabs" data-ui-classes="border-b border-lg ui-stroke">
 
                 <div class="row border-b margin-15-b">
 

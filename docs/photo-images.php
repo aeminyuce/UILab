@@ -14,11 +14,11 @@
 
                     <span class="sp-5 visible-sm"></span>
 
-                    <span class="img-photo-xs circle theme-orange ui-fill-dark-100">
+                    <span class="img-photo-xs circle ui-theme-orange ui-fill-dark-100">
                         <svg class="icon"><use href="#user"/></svg>
                     </span>
-                    <span class="img-photo-xs circle theme-yellow ui-fill-dark-100"><span>HY</span></span>
-                    <span class="img-photo-xs circle theme-sub ui-fill-dark-100"><span>EKY</span></span>
+                    <span class="img-photo-xs circle ui-theme-yellow ui-fill-dark-100"><span>HY</span></span>
+                    <span class="img-photo-xs circle ui-theme-sub ui-fill-dark-100"><span>EKY</span></span>
 
                     <span class="sp-30"></span>
 
@@ -30,11 +30,11 @@
 
                     <span class="sp-5 visible-sm"></span>
 
-                    <span class="img-photo-sm circle theme-orange ui-fill-dark-100">
+                    <span class="img-photo-sm circle ui-theme-orange ui-fill-dark-100">
                         <svg class="icon"><use href="#user"/></svg>
                     </span>
-                    <span class="img-photo-sm circle theme-yellow ui-fill-dark-100"><span>HY</span></span>
-                    <span class="img-photo-sm circle theme-sub ui-fill-dark-100"><span>EKY</span></span>
+                    <span class="img-photo-sm circle ui-theme-yellow ui-fill-dark-100"><span>HY</span></span>
+                    <span class="img-photo-sm circle ui-theme-sub ui-fill-dark-100"><span>EKY</span></span>
 
                     <span class="sp-30"></span>
 
@@ -46,11 +46,11 @@
 
                     <span class="sp-5 visible-sm"></span>
 
-                    <span class="img-photo circle theme-orange ui-fill-dark-100">
+                    <span class="img-photo circle ui-theme-orange ui-fill-dark-100">
                         <svg class="icon"><use href="#user"/></svg>
                     </span>
-                    <span class="img-photo circle theme-yellow ui-fill-dark-100"><span>HY</span></span>
-                    <span class="img-photo circle theme-sub ui-fill-dark-100"><span>EKY</span></span>
+                    <span class="img-photo circle ui-theme-yellow ui-fill-dark-100"><span>HY</span></span>
+                    <span class="img-photo circle ui-theme-sub ui-fill-dark-100"><span>EKY</span></span>
 
                     <span class="sp-30"></span>
 
@@ -62,11 +62,11 @@
 
                     <span class="sp-5 visible-sm"></span>
 
-                    <span class="img-photo-lg circle theme-orange ui-fill-dark-100">
+                    <span class="img-photo-lg circle ui-theme-orange ui-fill-dark-100">
                         <svg class="icon"><use href="#user"/></svg>
                     </span>
-                    <span class="img-photo-lg circle theme-yellow ui-fill-dark-100"><span>HY</span></span>
-                    <span class="img-photo-lg circle theme-sub ui-fill-dark-100"><span>EKY</span></span>
+                    <span class="img-photo-lg circle ui-theme-yellow ui-fill-dark-100"><span>HY</span></span>
+                    <span class="img-photo-lg circle ui-theme-sub ui-fill-dark-100"><span>EKY</span></span>
 
                 </div>
 
@@ -106,7 +106,7 @@
 
                     <span class="sp-5 visible-sm"></span>
 
-                    <div class="photos-holder circle hover-scale-more-2nd ease-2nd-layout theme-sub ui-fill-dark-100">
+                    <div class="photos-holder circle hover-scale-more-2nd ease-2nd-layout ui-theme-sub ui-fill-dark-100">
                         <a href="#"><img class="img-photo border-lg ui-stroke circle" src="img/profile-image.jpg" alt=""></a>
                         <a href="#"><img class="img-photo border-lg ui-stroke circle" src="img/profile-image2.jpg" alt=""></a>
                         <a href="#"><img class="img-photo border-lg ui-stroke circle" src="img/profile-image3.jpg" alt=""></a>
@@ -125,7 +125,7 @@
 
                     <span class="sp-5 visible-sm"></span>
 
-                    <div class="photos-holder padding-5 circle hover-scale-more-2nd ease-2nd-layout theme-sub ui-fill-dark-100">
+                    <div class="photos-holder padding-5 circle hover-scale-more-2nd ease-2nd-layout ui-theme-sub ui-fill-dark-100">
                         <a href="#"><img class="img-photo border-lg ui-stroke circle" src="img/profile-image.jpg" alt=""></a>
                         <a href="#"><img class="img-photo border-lg ui-stroke circle" src="img/profile-image2.jpg" alt=""></a>
                         <a href="#"><img class="img-photo border-lg ui-stroke circle" src="img/profile-image3.jpg" alt=""></a>

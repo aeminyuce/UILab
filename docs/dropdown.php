@@ -4,7 +4,7 @@
             <div class="col-12 padding-30">
 
                 <h4>Dropdowns</h4>
-                <div class="row padding-30-b block-2nd form-lg theme-base">
+                <div class="row padding-30-b block-2nd form-lg ui-theme-base">
                     <div class="col-3 col-sm-6">
                         <div class="dropdown ease-dropdown">
                             <button class="btn circle ui-fill-dark-100">
@@ -81,7 +81,7 @@
                 </div>
 
                 <h4>Dropdown Navs with List Columns</h4>
-                <div class="row padding-30-b form-lg theme-base">
+                <div class="row padding-30-b form-lg ui-theme-base">
                     <div class="col-12">
 
                         <div class="dropdown nav menu-hover btn-xs-fluid ease-dropdown">
@@ -151,7 +151,7 @@
                 </div>
 
                 <h4>Full Horizontal Dropdown Navs</h4>
-                <div class="row padding-30-b form-lg theme-base">
+                <div class="row padding-30-b form-lg ui-theme-base">
                     <div class="col-12">
 
                         <div class="dropdown nav nav-full-h btn-xs-fluid ease-dropdown">
@@ -192,7 +192,7 @@
                 </div>
 
                 <h4>Dropdowns with Accordion Tabs</h4>
-                <div class="row padding-30-b block-2nd form-lg theme-base">
+                <div class="row padding-30-b block-2nd form-lg ui-theme-base">
                     <div class="col-3 col-sm-6">
 
                         <div class="dropdown btn-xs-fluid ease-dropdown">
@@ -208,7 +208,7 @@
                                     <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                                     On Audit
                                 </button>
-                                <div class="tab-content block-1st theme-gray ui-fill-light-300 ease-1st-btn">
+                                <div class="tab-content block-1st ui-theme-gray ui-fill-light-300 ease-1st-btn">
                                     <button class="btn btn-ghost padding-20-l">Inner Link</button>
                                     <button class="btn btn-ghost padding-20-l">Inner Link</button>
                                     <button class="btn btn-ghost padding-20-l">Inner Link</button>
@@ -218,7 +218,7 @@
                                     <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                                     Expert
                                 </button>
-                                <div class="tab-content block-1st theme-gray ui-fill-light-300 ease-1st-btn">
+                                <div class="tab-content block-1st ui-theme-gray ui-fill-light-300 ease-1st-btn">
                                     <button class="btn btn-ghost padding-20-l">Inner Link</button>
                                     <button class="btn btn-ghost padding-20-l">Inner Link</button>
                                     <button class="btn btn-ghost padding-20-l">Inner Link</button>
@@ -246,7 +246,7 @@
                                     <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                                     On Audit
                                 </button>
-                                <div class="tab-content block-1st theme-gray ui-fill-light-300 ease-1st-btn">
+                                <div class="tab-content block-1st ui-theme-gray ui-fill-light-300 ease-1st-btn">
                                     <button class="btn btn-ghost padding-20-l">Inner Link</button>
                                     <button class="btn btn-ghost padding-20-l">Inner Link</button>
                                     <button class="btn btn-ghost padding-20-l">Inner Link</button>
@@ -256,7 +256,7 @@
                                     <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                                     Expert
                                 </button>
-                                <div class="tab-content block-1st theme-gray ui-fill-light-300 ease-1st-btn">
+                                <div class="tab-content block-1st ui-theme-gray ui-fill-light-300 ease-1st-btn">
                                     <button class="btn btn-ghost padding-20-l">Inner Link</button>
                                     <button class="btn btn-ghost padding-20-l">Inner Link</button>
                                     <button class="btn btn-ghost padding-20-l">Inner Link</button>
@@ -272,7 +272,7 @@
                 </div>
 
                 <h4>Dropdowns with Holder Content</h4>
-                <div class="row padding-30-b block-2nd form-lg theme-base">
+                <div class="row padding-30-b block-2nd form-lg ui-theme-base">
                     <div class="col-3 col-sm-6">
 
                         <div class="dropdown btn-xs-fluid ease-dropdown">

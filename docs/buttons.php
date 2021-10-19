@@ -46,40 +46,40 @@
                 <h4>Button Themes</h4>
                 <div class="row padding-30-b block-2nd form-lg ease-2nd-btn">
                     <div class="col-3 col-sm-6">
-                        <a class="btn theme-red ui-fill-dark-100" href="#">Button</a>
+                        <a class="btn ui-theme-red ui-fill-dark-100" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn round theme-orange ui-fill-dark-100" href="#">Button</a>
+                        <a class="btn round ui-theme-orange ui-fill-dark-100" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn circle theme-yellow ui-fill-dark-100" href="#">Button</a>
+                        <a class="btn circle ui-theme-yellow ui-fill-dark-100" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn circle border-dual theme-base ui-fill-dark-100" href="#">Button</a>
+                        <a class="btn circle border-dual ui-theme-base ui-fill-dark-100" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost theme-green ui-fill-dark-100 ui-color" href="#">Button</a>
+                        <a class="btn btn-ghost ui-theme-green ui-fill-dark-100 ui-color" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost btn-ghost-border border-l border-lg theme-sub ui-fill-light-100 ui-stroke" href="#">Button</a>
+                        <a class="btn btn-ghost btn-ghost-border border-l border-lg ui-theme-sub ui-fill-light-100 ui-stroke" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost border-b border-dual theme-base ui-fill-light-100 ui-stroke" href="#">Button</a>
+                        <a class="btn btn-ghost border-b border-dual ui-theme-base ui-fill-light-100 ui-stroke" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost border-b border-lg theme-green ui-fill-dark-100 ui-stroke" href="#">Button</a>
+                        <a class="btn btn-ghost border-b border-lg ui-theme-green ui-fill-dark-100 ui-stroke" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost-border border round theme-orange ui-fill-dark-100" href="#">Button</a>
+                        <a class="btn btn-ghost-border border round ui-theme-orange ui-fill-dark-100" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost border-dual circle theme-yellow ui-stroke ui-color" href="#">Button</a>
+                        <a class="btn btn-ghost border-dual circle ui-theme-yellow ui-stroke ui-color" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost border theme-sub ui-fill-light-100 ui-stroke ui-color" href="#">Button</a>
+                        <a class="btn btn-ghost border ui-theme-sub ui-fill-light-100 ui-stroke ui-color" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn border round theme-sub ui-fill-dark-100" href="#">Button</a>
+                        <a class="btn border round ui-theme-sub ui-fill-dark-100" href="#">Button</a>
                     </div>
                 </div>
 
@@ -148,7 +148,7 @@
                 </div>
 
                 <h4>Square Buttons</h4>
-                <div class="padding-30-b md-align-c theme-sub ease-1st-btn">
+                <div class="padding-30-b md-align-c ui-theme-sub ease-1st-btn">
                     <a class="btn btn-square btn-xxs round ui-fill-dark-100" href="#">
                         <svg class="icon"><use href="#trash"/></svg>
                     </a>
@@ -267,10 +267,10 @@
                 <h4>Block Level Buttons</h4>
                 <div class="row padding-30-b form-lg ease-2nd-btn">
                     <div class="col-6 align-c">
-                        <a class="btn btn-xs-fluid round theme-yellow ui-fill-dark-100" href="#">Responsive Button</a>
+                        <a class="btn btn-xs-fluid round ui-theme-yellow ui-fill-dark-100" href="#">Responsive Button</a>
                     </div>
                     <div class="col-6">
-                        <a class="btn block round theme-orange ui-fill-dark-100" href="#">Block Level Button</a>
+                        <a class="btn block round ui-theme-orange ui-fill-dark-100" href="#">Block Level Button</a>
                     </div>
                 </div>
 
@@ -303,7 +303,7 @@
                 </div>
 
                 <h4>Multi Buttons</h4>
-                <div class="row padding-30-b block-2nd theme-green ease-2nd-btn">
+                <div class="row padding-30-b block-2nd ui-theme-green ease-2nd-btn">
                     <div class="col-3 col-sm-6">
                         <a href="#" class="btn btn-lg btn-multi round ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
                     </div>
@@ -321,7 +321,7 @@
                 <h4>Pagination Buttons</h4>
                 <div class="padding-30-b">
 
-                    <div class="pagination align-c theme-sub ease-1st-btn">
+                    <div class="pagination align-c ui-theme-sub ease-1st-btn">
                         <a class="btn btn-xs prev round" href="#">
                             <svg class="icon"><use href="#angle-dual-left"/></svg>
                         </a>
@@ -342,7 +342,7 @@
                         </a>
                     </div>
 
-                    <div class="pagination align-c theme-sub ease-1st-btn">
+                    <div class="pagination align-c ui-theme-sub ease-1st-btn">
                         <a class="btn btn-sm prev round" href="#">
                             <svg class="icon"><use href="#angle-dual-left"/></svg>
                         </a>
@@ -363,7 +363,7 @@
                         </a>
                     </div>
 
-                    <div class="pagination align-c theme-sub ease-1st-btn">
+                    <div class="pagination align-c ui-theme-sub ease-1st-btn">
                         <a class="btn prev round" href="#">
                             <svg class="icon"><use href="#angle-dual-left"/></svg>
                         </a>
@@ -384,7 +384,7 @@
                         </a>
                     </div>
 
-                    <div class="pagination form-lg align-c theme-sub ease-1st-btn">
+                    <div class="pagination form-lg align-c ui-theme-sub ease-1st-btn">
                         <a class="btn prev round" href="#">
                             <svg class="icon"><use href="#angle-dual-left"/></svg>
                         </a>
@@ -410,7 +410,7 @@
                 <h4>Button List</h4>
                 <div class="row padding-30-b">
                     <div class="col-6">
-                        <div class="btn-list align-l icons-margin-10-r form-lg icons-no-opacity theme-green ease-1st-btn">
+                        <div class="btn-list align-l icons-margin-10-r form-lg icons-no-opacity ui-theme-green ease-1st-btn">
                             <button class="btn">
                                 <svg class="icon ui-color"><use href="#shield"/></svg>Administration
                             </button>
@@ -423,7 +423,7 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="btn-list align-l icons-margin-10-r form-lg icons-no-opacity theme-red ease-1st-btn">
+                        <div class="btn-list align-l icons-margin-10-r form-lg icons-no-opacity ui-theme-red ease-1st-btn">
                             <button class="btn round">
                                 <svg class="icon ui-color"><use href="#shield"/></svg>Administration
                             </button>
@@ -436,7 +436,7 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="btn-list align-l icons-margin-10-r form-lg icons-no-opacity theme-orange ease-1st-btn">
+                        <div class="btn-list align-l icons-margin-10-r form-lg icons-no-opacity ui-theme-orange ease-1st-btn">
                             <button class="btn btn-ghost round border ui-stroke">
                                 <svg class="icon ui-color"><use href="#shield"/></svg>Administration
                             </button>
@@ -449,7 +449,7 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="btn-list align-l icons-margin-10-r form-lg icons-no-opacity theme-yellow ease-1st-btn">
+                        <div class="btn-list align-l icons-margin-10-r form-lg icons-no-opacity ui-theme-yellow ease-1st-btn">
                             <button class="btn btn-ghost round border-dual ui-stroke">
                                 <svg class="icon ui-color"><use href="#shield"/></svg>Administration
                             </button>
@@ -466,7 +466,7 @@
                 <h4>Button Holder</h4>
                 <div class="row padding-30-b">
                     <div class="col-6">
-                        <div class="btn-holder form-lg theme-base ease-1st-btn">
+                        <div class="btn-holder form-lg ui-theme-base ease-1st-btn">
                             <button class="btn ui-fill-dark-100">1</button>
                             <button class="btn ui-fill-dark-100">2</button>
                             <button class="btn ui-fill-dark-100">3</button>
@@ -475,7 +475,7 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="btn-holder form-lg theme-sub ease-1st-btn">
+                        <div class="btn-holder form-lg ui-theme-sub ease-1st-btn">
                             <button class="btn round ui-fill-dark-100">1</button>
                             <button class="btn round ui-fill-dark-100">2</button>
                             <button class="btn round ui-fill-dark-100">3</button>

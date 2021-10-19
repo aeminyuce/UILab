@@ -1,5 +1,5 @@
 <main class="container no-gutter">
-    <div class="fixed padding-30-v theme-base">
+    <div class="fixed padding-30-v ui-theme-base">
         <div class="row">
 
             <div class="col-12">
@@ -200,7 +200,7 @@
 </main>
 
 <!-- modal sources -->
-<div id="myModalId01" class="modal myModal theme-base">
+<div id="myModalId01" class="modal myModal ui-theme-base">
     <div class="modal-header ui-fill-dark-100">
         <h4>Modal Header</h4>
         <div class="modal-buttons ease-1st-btn">
@@ -218,7 +218,7 @@
         <div class="modal-buttons ease-1st-btn">
             <button type="button" class="btn btn-ghost border-dual circle" onclick="ui.modal.close(function () { alert('Modal closed!'); });">Callback</button>
             <button type="button" class="btn btn-ghost border-dual circle" onclick="ui.modal.close();">Cancel</button>
-            <button type="submit" class="btn circle theme-green ui-fill-dark-100" onclick="ui.modal.close();">Accept</button>
+            <button type="submit" class="btn circle ui-theme-green ui-fill-dark-100" onclick="ui.modal.close();">Accept</button>
         </div>
     </div>
 </div>
@@ -232,7 +232,7 @@
     </div>
     <div class="modal-footer">
         <div class="modal-buttons ease-1st-btn">
-            <button type="submit" class="btn padding-30-h circle theme-green ui-fill-dark-100" onclick="ui.modal.close();">Save</button>
+            <button type="submit" class="btn padding-30-h circle ui-theme-green ui-fill-dark-100" onclick="ui.modal.close();">Save</button>
         </div>
     </div>
 </div>
@@ -248,7 +248,7 @@
             <div class="col-static no-fluid">
                 <div class="row no-row-gap-h">
                     <div class="col-12 ease-1st-form">
-                        <div class="text text-icon has-clear round-l no-border shadow-in-sm theme-gray ui-fill-light-300 ease-form">
+                        <div class="text text-icon has-clear round-l no-border shadow-in-sm ui-theme-gray ui-fill-light-300 ease-form">
                             <button type="button" class="clear-form">
                                 <svg class="icon"><use href="#remove"/></svg>
                             </button>
@@ -258,13 +258,13 @@
                     </div>
                 </div>
                 <div class="col-100 col-xs-50 padding-10-v">
-                    <button class="btn block round-r theme-sub ui-fill-dark-100 ease-btn" type="submit">
+                    <button class="btn block round-r ui-theme-sub ui-fill-dark-100 ease-btn" type="submit">
                         <svg class="icon"><use href="#search"/></svg>
                     </button>
                 </div>
             </div>
 
-            <div class="row xs-fluid icons-xxl block-2nd icons-no-opacity hover-t-more-2nd icons-margin-5-v theme-base form-lg ease-2nd-btn">
+            <div class="row xs-fluid icons-xxl block-2nd icons-no-opacity hover-t-more-2nd icons-margin-5-v ui-theme-base form-lg ease-2nd-btn">
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-fill-dark-100" href="#">
                         <svg class="icon"><use href="#news"/></svg>

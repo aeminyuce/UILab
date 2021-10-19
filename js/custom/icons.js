@@ -92,6 +92,6 @@ ui.onload(function () {
 
         });
 
-    ui.alerts.stylesMsgTheme = 'theme-red ui-fill-dark-100';
+    ui.alerts.stylesMsgTheme = 'ui-theme-red ui-fill-dark-100';
 
 });

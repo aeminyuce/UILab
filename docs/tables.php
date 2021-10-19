@@ -309,43 +309,43 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="theme-gray ui-fill-light-100 hover">
+                        <tr class="ui-theme-gray ui-fill-light-100 hover">
                             <th scope="row">1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
-                        <tr class="theme-orange ui-fill-light-100 hover">
+                        <tr class="ui-theme-orange ui-fill-light-100 hover">
                             <th scope="row">2</th>
                             <td>Jacob</td>
                             <td>Thornton</td>
                             <td>@fat</td>
                         </tr>
-                        <tr class="theme-red ui-fill-light-100 hover">
+                        <tr class="ui-theme-red ui-fill-light-100 hover">
                             <th scope="row">1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
-                        <tr class="theme-yellow ui-fill-light-100 hover">
+                        <tr class="ui-theme-yellow ui-fill-light-100 hover">
                             <th scope="row">2</th>
                             <td>Jacob</td>
                             <td>Thornton</td>
                             <td>@fat</td>
                         </tr>
-                        <tr class="theme-green ui-fill-light-100 hover">
+                        <tr class="ui-theme-green ui-fill-light-100 hover">
                             <th scope="row">1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
-                        <tr class="theme-base ui-fill-light-100 hover">
+                        <tr class="ui-theme-base ui-fill-light-100 hover">
                             <th scope="row">1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
-                        <tr class="theme-sub ui-fill-light-100 hover">
+                        <tr class="ui-theme-sub ui-fill-light-100 hover">
                             <th scope="row">1</th>
                             <td>Mark</td>
                             <td>Otto</td>
@@ -354,7 +354,7 @@
                     </tbody>
                 </table>
 
-                <table class="table padding-30-b table-hover theme-red ease-table">
+                <table class="table padding-30-b table-hover ui-theme-red ease-table">
                     <thead>
                         <tr>
                             <th>#</th>
@@ -385,7 +385,7 @@
                     </tbody>
                 </table>
 
-                <table class="table padding-30-b table-hover theme-sub ease-table">
+                <table class="table padding-30-b table-hover ui-theme-sub ease-table">
                     <thead>
                         <tr>
                             <th>#</th>

@@ -81,7 +81,7 @@
 
                     <header class="row no-row-gap-t sticky-md icons-no-opacity form-lg" data-ui-classes="shadow-lg">
                         <div class="col-6 hidden-md ease-1st-form">
-                            <div class="text text-icon-both margin-15-b circle no-border theme-gray ui-fill-light-300 has-clear">
+                            <div class="text text-icon-both margin-15-b circle no-border ui-theme-gray ui-fill-light-300 has-clear">
                                 <svg class="icon text-icon-l"><use href="#search"/></svg>
                                 <button type="button" class="clear-form">
                                     <svg class="icon"><use href="#remove"/></svg>
@@ -422,7 +422,7 @@
             <div class="col-static no-fluid">
                 <div class="row no-row-gap-h">
                     <div class="col-12 ease-1st-form">
-                        <div class="text text-icon has-clear round-l no-border shadow-in-sm theme-gray ui-fill-light-300 ease-form">
+                        <div class="text text-icon has-clear round-l no-border shadow-in-sm ui-theme-gray ui-fill-light-300 ease-form">
                             <button type="button" class="clear-form">
                                 <svg class="icon"><use href="#remove"/></svg>
                             </button>
@@ -432,13 +432,13 @@
                     </div>
                 </div>
                 <div class="col-100 col-xs-50 padding-10-v">
-                    <button class="btn block round-r theme-sub ui-fill-dark-100 ease-btn" type="submit">
+                    <button class="btn block round-r ui-theme-sub ui-fill-dark-100 ease-btn" type="submit">
                         <svg class="icon"><use href="#search"/></svg>
                     </button>
                 </div>
             </div>
 
-            <div class="row no-fluid icons-xxl block-2nd icons-no-opacity icons-margin-5-v hover-t-more-2nd theme-base ease-2nd-btn">
+            <div class="row no-fluid icons-xxl block-2nd icons-no-opacity icons-margin-5-v hover-t-more-2nd ui-theme-base ease-2nd-btn">
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-fill-dark-100" href="#">
                         <svg class="icon"><use href="#tv"/></svg>

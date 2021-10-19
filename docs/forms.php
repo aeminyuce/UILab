@@ -211,7 +211,7 @@
 
                         <div class="col-12 ease-1st-btn">
                             <button type="reset" class="btn btn-xs-fluid round">Reset Form</button>
-                            <button type="submit" class="btn btn-xs-fluid round theme-sub ui-fill-dark-100">Submit Form</button>
+                            <button type="submit" class="btn btn-xs-fluid round ui-theme-sub ui-fill-dark-100">Submit Form</button>
                         </div>
 
                     </div>
@@ -401,7 +401,7 @@
 
                             <div class="col-12 ease-1st-btn">
                                 <button type="reset" class="btn btn-xs-fluid round">Reset Form</button>
-                                <button type="submit" class="btn btn-xs-fluid round theme-sub ui-fill-dark-100">Submit Form</button>
+                                <button type="submit" class="btn btn-xs-fluid round ui-theme-sub ui-fill-dark-100">Submit Form</button>
                             </div>
                         </div>
 
@@ -423,7 +423,7 @@
                 </div>
 
                 <h4>File Input</h4>
-                <div class="padding-30-b theme-gray">
+                <div class="padding-30-b ui-theme-gray">
                     <div class="file round no-border ui-fill-light-100 ease-form">
                         <input type="file">
                         <span class="btn ease-btn">Browse</span>
@@ -497,13 +497,13 @@
                         </div>
                         <div class="file no-border inline-block round ease-form">
                             <input class="bg-white cursor-pointer" type="file">
-                            <span class="btn btn-square theme-base ui-fill-dark-100 ease-btn">
+                            <span class="btn btn-square ui-theme-base ui-fill-dark-100 ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>
                         <div class="file no-border inline-block round ease-form">
                             <input class="bg-white cursor-pointer" type="file">
-                            <span class="btn btn-square theme-green ui-fill-dark-100 ease-btn">
+                            <span class="btn btn-square ui-theme-green ui-fill-dark-100 ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>
@@ -532,13 +532,13 @@
                         </div>
                         <div class="file no-border inline-block round ease-form">
                             <input class="bg-white cursor-pointer" type="file">
-                            <span class="btn btn-square theme-base ui-fill-dark-100 ease-btn">
+                            <span class="btn btn-square ui-theme-base ui-fill-dark-100 ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>
                         <div class="file no-border inline-block round ease-form">
                             <input class="bg-white cursor-pointer" type="file">
-                            <span class="btn btn-square theme-green ui-fill-dark-100 ease-btn">
+                            <span class="btn btn-square ui-theme-green ui-fill-dark-100 ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>
@@ -648,7 +648,7 @@
                             <label class="custom">
                                 <span class="switch-custom round border-dual ease-form">
                                         <input type="checkbox" checked>
-                                        <i class="state theme-sub ui-fill-dark-100"></i>
+                                        <i class="state ui-theme-sub ui-fill-dark-100"></i>
                                 </span>
                                 Custom Switch with Themes
                             </label>
@@ -670,15 +670,15 @@
                 <div class="padding-30-b">
                     <input class="range ease-range" type="range" min="0" max="10" value="0">
                     <span class="sp-10"></span>
-                    <input class="range theme-base ui-color ease-range" type="range" min="0" max="10" value="2">
+                    <input class="range ui-theme-base ui-color ease-range" type="range" min="0" max="10" value="2">
                     <span class="sp-10"></span>
-                    <input class="range theme-sub ui-color ease-range" type="range" min="0" max="10" value="4">
+                    <input class="range ui-theme-sub ui-color ease-range" type="range" min="0" max="10" value="4">
                     <span class="sp-10"></span>
-                    <input class="range theme-yellow ui-color ease-range" type="range" min="0" max="10" value="6">
+                    <input class="range ui-theme-yellow ui-color ease-range" type="range" min="0" max="10" value="6">
                     <span class="sp-10"></span>
-                    <input class="range theme-orange ui-color ease-range" type="range" min="0" max="10" value="8">
+                    <input class="range ui-theme-orange ui-color ease-range" type="range" min="0" max="10" value="8">
                     <span class="sp-10"></span>
-                    <input class="range theme-red ui-color ease-range" type="range" min="0" max="10" value="10">
+                    <input class="range ui-theme-red ui-color ease-range" type="range" min="0" max="10" value="10">
                     <span class="sp-10"></span>
                     <input class="range ease-range" disabled type="range" min="0" max="10" value="5">
                 </div>
@@ -1637,14 +1637,14 @@
 
                             <div class="col-9 push-3 ease-1st-btn">
                                 <button type="reset" class="btn btn-xs-fluid round">Reset Form</button>
-                                <button type="submit" class="btn btn-xs-fluid round theme-sub ui-fill-dark-100">Submit Form</button>
+                                <button type="submit" class="btn btn-xs-fluid round ui-theme-sub ui-fill-dark-100">Submit Form</button>
                             </div>
                         </div>
                     </form>
                 </div>
 
                 <h4>Forms in Dark Themes</h4>
-                <div class="padding-15 margin-30-b round theme-base ui-fill-dark-100">
+                <div class="padding-15 margin-30-b round ui-theme-base ui-fill-dark-100">
 
                     <div class="text form-light margin-10-b round border-dual ease-form">
                         <input type="text" placeholder="Placeholder">
@@ -1937,7 +1937,7 @@
                     <div class="col-3">
                         <label class="form-grid">Using themes with no radius and no border style:</label>
                     </div>
-                    <div class="col-9 ease-1st-form theme-gray">
+                    <div class="col-9 ease-1st-form ui-theme-gray">
 
                         <div class="text margin-10-b round no-border ui-fill-light-100">
                             <input type="text">

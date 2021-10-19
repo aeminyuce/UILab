@@ -31,7 +31,7 @@
                                 <li><a href="#"><svg class="icon"><use href="#sign-out"/></svg>Log Out</a></li>
                             </ul>
                         </div>
-                        <div class="padding-10 circle inline-block theme-gray ui-fill-light-300">
+                        <div class="padding-10 circle inline-block ui-theme-gray ui-fill-light-300">
                             <a class="hover-scale ease-layout" href="#" data-ui-tooltip="r" title="Show your profile">
                                 <img class="img-photo-lg circle" src="img/profile-image.jpg" alt="">
                             </a>
@@ -52,7 +52,7 @@
                 </div>
 
                 <!-- nav -->
-                <nav class="form-lg margin-25-v icons-lg icons-no-opacity theme-base hidden-md">
+                <nav class="form-lg margin-25-v icons-lg icons-no-opacity ui-theme-base hidden-md">
                     <ul class="list-unstyled list-spacer-20 align-l icons-margin-10-r block-2nd ease-2nd-button add-mobile-menu-l">
                         <li>
                             <a class="btn btn-ghost border-r border-lg ui-stroke" href="#">
@@ -101,7 +101,7 @@
                     <svg class="icon margin-10-r"><use href="#help"/></svg>
                     <b>System Tips</b>
                     <div class="font-color-black-50 large no-line-height margin-5-t margin-15-b">You can backup your stats weekly.</div>
-                    <button class="btn block circle theme-green ui-fill-dark-100 ease-btn"><b>Got it!</b></button>
+                    <button class="btn block circle ui-theme-green ui-fill-dark-100 ease-btn"><b>Got it!</b></button>
                 </div>
 
             </div>
@@ -218,7 +218,7 @@
                     <div class="col-6">
 
                         <!-- employee list -->
-                        <div class="grid-list grid-list-striped grid-hover card full-h round shadow-lg theme-gray ease-grid-list">
+                        <div class="grid-list grid-list-striped grid-hover card full-h round shadow-lg ui-theme-gray ease-grid-list">
 
                             <div class="row sm-fluid">
                                 <div class="col-5 sm-no-padding-b">
@@ -892,7 +892,7 @@
                                     </div>
                                 </div>
                                 <div class="col-6 align-r">
-                                    <div class="grid-list-paging pagination ease-1st-btn" data-ui-default="btn round" data-ui-active="theme-sub ui-fill-dark-100"></div>
+                                    <div class="grid-list-paging pagination ease-1st-btn" data-ui-default="btn round" data-ui-active="ui-theme-sub ui-fill-dark-100"></div>
                                 </div>
                             </div>
 
@@ -908,7 +908,7 @@
 </main>
 
 <!-- mobile menu -->
-<div class="mobile-menu show-l theme-base ease-layout ease-in-out ">
+<div class="mobile-menu show-l ui-theme-base ease-layout ease-in-out ">
     <div class="mobile-menu-title ui-fill-dark-100">
         <button class="btn btn-square btn-lg btn-ghost round ease-btn close-mobile-menu">
             <svg class="icon no-opacity"><use href="#remove"/></svg>

@@ -16,7 +16,7 @@
                     <svg class="icon"><use href="#plus"/></svg>
                 </div>
 
-                <div class="fixed theme-green">
+                <div class="fixed ui-theme-green">
                     <div class="row">
                         <div class="col-12 padding-15-v align-c">
                             <span class="sp-30"></span>
@@ -103,7 +103,7 @@
                                     <p class="required-msg">Please confirm your password.</p>
 
                                 </div>
-                                <div class="col-12 theme-sub">
+                                <div class="col-12 ui-theme-sub">
 
                                     <span class="sp-15"></span>
                                     <label class="custom">
@@ -147,7 +147,7 @@
                                     Join our<br class="hidden-sm">huge platform<br class="hidden-sm">
                                     <span class="font-bold x-largest">today!</span>
                                 </h3>
-                                <ul class="list-unstyled list-spacer-10 font-color-black-muted x-large icons-sm icons-margin-5-r theme-sub">
+                                <ul class="list-unstyled list-spacer-10 font-color-black-muted x-large icons-sm icons-margin-5-r ui-theme-sub">
                                     <li>
                                         <svg class="icon ui-color hidden-sm"><use href="#check-circle-fill"/></svg>
                                         Work and build around your team.

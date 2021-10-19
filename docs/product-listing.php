@@ -9,7 +9,7 @@
                 <div class="add-mobile-menu-r">
 
                     <div class="card padding-15 round shadow-lg">
-                        <div data-ui-src="json/headphones.json" data-ui-val="name" class="autocomplete text text-icon-both round no-border theme-gray ui-fill-light-300 ease-form has-clear">
+                        <div data-ui-src="json/headphones.json" data-ui-val="name" class="autocomplete text text-icon-both round no-border ui-theme-gray ui-fill-light-300 ease-form has-clear">
                             <svg class="icon text-icon-l"><use href="#search"/></svg>
                             <button type="button" class="clear-form">
                                 <svg class="icon"><use href="#remove"/></svg>
@@ -37,7 +37,7 @@
                         </ul>
                     </div>
 
-                    <div class="card round shadow-lg theme-sub">
+                    <div class="card round shadow-lg ui-theme-sub">
 
                         <div class="padding-15 md-align-c border-b">
                             <h5 class="margin-10-b font-color-black-50">COLORS</h5>
@@ -224,7 +224,7 @@
                             <span class="large">Found <b>47</b> and displaying <b>9</b> products.</span>
                         </div>
                         <div class="col-6 align-r sm-no-padding-t">
-                            <div class="select round form-inline no-border theme-gray ui-fill-light-300 ease-form">
+                            <div class="select round form-inline no-border ui-theme-gray ui-fill-light-300 ease-form">
                                 <svg class="icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="1" checked>Sort by</option>
@@ -233,7 +233,7 @@
                                     <option value="4">Price (High to Low)</option>
                                 </select>
                             </div>
-                            <div class="select round form-inline no-border theme-gray ui-fill-light-300 ease-form">
+                            <div class="select round form-inline no-border ui-theme-gray ui-fill-light-300 ease-form">
                                 <svg class="icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="12" checked>Show 9</option>
@@ -242,7 +242,7 @@
                                 </select>
                             </div>
                             <span class="sp-10 visible-xs"></span>
-                            <span class="align-c theme-sub ease-1st-btn">
+                            <span class="align-c ui-theme-sub ease-1st-btn">
                                 <button class="btn btn-square round ui-fill-dark-100">
                                     <svg class="icon"><use href="#grid-column"/></svg>
                                 </button>

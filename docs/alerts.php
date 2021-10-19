@@ -1,5 +1,5 @@
 <main class="container no-gutter">
-    <div class="fixed padding-30-v theme-base">
+    <div class="fixed padding-30-v ui-theme-base">
         <div class="row">
 
             <div class="col-12">
@@ -66,7 +66,7 @@
                 <b class="margin-5-b block">Submit form example:</b>
                 <pre class="round margin-5-b">return ui.alerts.dialog({<br>    msg: 'Submit this form?',<br>    success: 'Yes',<br>    error: 'No',<br>    callback: function (value) {<br>        if (value === 'success') {<br>            document.getElementById('submitForm').submit();<br>        }<br>    }<br>});</pre>
                 <form id="submitForm" action="#succesful" onsubmit="return ui.alerts.dialog({msg: 'Submit this form?', success: 'Yes', error: 'No', callback: function (value) { if (value === 'success') { document.getElementById('submitForm').submit(); } }});">
-                    <button type="submit" class="btn round theme-sub ui-fill-dark-100 ease-btn">Submit Form</button>
+                    <button type="submit" class="btn round ui-theme-sub ui-fill-dark-100 ease-btn">Submit Form</button>
                 </form>
 
             </div>
@@ -133,7 +133,7 @@
                 <span class="sp-30"></span>
 
                 <b class="margin-5-b block">Show Success:</b>
-                <div class="align-c col-250 padding-10 round shadow-lg theme-green ui-fill-dark-100">
+                <div class="align-c col-250 padding-10 round shadow-lg ui-theme-green ui-fill-dark-100">
                     Success message
                 </div>
                 <span class="sp-15"></span>
@@ -144,7 +144,7 @@
                 <span class="sp-30"></span>
 
                 <b class="margin-5-b block">Show Warning:</b>
-                <div class="align-c col-250 padding-10 round shadow-lg theme-yellow ui-fill-dark-100">
+                <div class="align-c col-250 padding-10 round shadow-lg ui-theme-yellow ui-fill-dark-100">
                     Warning message
                 </div>
                 <span class="sp-15"></span>
@@ -155,7 +155,7 @@
                 <span class="sp-30"></span>
 
                 <b class="margin-5-b block">Show Danger:</b>
-                <div class="align-c col-250 padding-10 round shadow-lg theme-red ui-fill-dark-100">
+                <div class="align-c col-250 padding-10 round shadow-lg ui-theme-red ui-fill-dark-100">
                     Danger message
                 </div>
                 <span class="sp-15"></span>

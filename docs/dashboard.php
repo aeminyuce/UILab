@@ -9,7 +9,7 @@
     <div class="col-static sm-fluid">
 
         <!-- sidebar -->
-        <div class="sidebar col-250 set-relative visible-lg theme-panel ease-width ease-in-out">
+        <div class="sidebar col-250 set-relative visible-lg ui-theme-panel ease-width ease-in-out">
             <div class="col-250 full-h set-fixed set-l invert-bg ui-fill-dark-100 ease-layout ease-in-out">
 
                 <div class="set-relative">
@@ -19,7 +19,7 @@
                     </button>
                 </div>
 
-                <div class="tabs align-l icons-no-opacity theme-panel2 ease-tabs ease-1st-btn scroll-v scrollbar-faded add-mobile-menu-l" data-ui-classes="ui-color">
+                <div class="tabs align-l icons-no-opacity ui-theme-panel2 ease-tabs ease-1st-btn scroll-v scrollbar-faded add-mobile-menu-l" data-ui-classes="ui-color">
 
                     <div class="padding-10">
                         <div class="small margin-10-b font-color-white-muted">Personal Activity</div>
@@ -267,7 +267,7 @@
                             <svg class="icon"><use href="#grid-column"/></svg>
                         </button>
                         <div class="dropdown-menu round shadow-lg no-scroll">
-                            <div class="tabs xs-full-width theme-panel2 ease-tabs" data-ui-classes="border-b border-lg ui-stroke ui-color" style="min-width: 300px;">
+                            <div class="tabs xs-full-width ui-theme-panel2 ease-tabs" data-ui-classes="border-b border-lg ui-stroke ui-color" style="min-width: 300px;">
 
                                 <div class="btn-holder font-color-black-muted align-c border-b ease-1st-btn">
                                     <button class="tab btn btn-ghost round-t border-b border-lg ui-stroke ui-color active" data-ui-tooltip data-ui-only="desktop" title="Favorites">
@@ -345,7 +345,7 @@
                             <svg class="icon"><use href="#bars-right"/></svg>
                         </button>
                         <div class="dropdown-menu round shadow-lg no-scroll">
-                            <div class="tabs xs-full-width theme-panel2 ease-tabs" data-ui-classes="border-b border-lg ui-stroke ui-color" style="min-width: 300px;">
+                            <div class="tabs xs-full-width ui-theme-panel2 ease-tabs" data-ui-classes="border-b border-lg ui-stroke ui-color" style="min-width: 300px;">
 
                                 <div class="btn-holder font-color-black-muted align-c border-b ease-1st-btn">
                                     <button class="tab btn btn-ghost round-t border-b border-lg ui-stroke ui-color active" data-ui-tooltip data-ui-only="desktop" title="Notifications">
@@ -540,7 +540,7 @@
             <div class="tabs ease-tabs padding-15-b" data-ui-classes="border-lg border-b ui-stroke ui-color">
 
                 <div class="container">
-                    <div class="row border-b margin-15-b theme-panel2">
+                    <div class="row border-b margin-15-b ui-theme-panel2">
                         <div class="col-4 offset-4 no-padding-b">
 
                             <div class="btn-holder font-color-black-muted form-lg ease-1st-btn">
@@ -729,7 +729,7 @@
                                                         Cancel
                                                     </button>
 
-                                                    <button type="submit" class="btn btn-lg btn-xs-fluid padding-15-h round theme-green ui-fill-dark-100">
+                                                    <button type="submit" class="btn btn-lg btn-xs-fluid padding-15-h round ui-theme-green ui-fill-dark-100">
                                                         <svg class="icon margin-5-r"><use href="#save"/></svg> Save
                                                     </button>
 
@@ -757,7 +757,7 @@
                                 <div class="dashboard-carousel carousel" data-ui-col-xl="4" data-ui-col-lg="2" data-ui-col="2" data-ui-col-md="2" data-ui-col-sm="1" data-ui-col-xs="1">
                                     <div class="carousel-slider icons-margin-5-r ease-layout ease-slow ease-in-out">
 
-                                        <div class="slide-content padding-10-h padding-10-t padding-15-b theme-yellow">
+                                        <div class="slide-content padding-10-h padding-10-t padding-15-b ui-theme-yellow">
                                             <div class="card full-h padding-15 round shadow-lg">
                                                 <div class="col-static no-fluid">
                                                     <div class="row no-row-gap-h row-gap-md-v">
@@ -780,7 +780,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="slide-content padding-10-h padding-10-t padding-15-b theme-yellow">
+                                        <div class="slide-content padding-10-h padding-10-t padding-15-b ui-theme-yellow">
                                             <div class="card full-h padding-15 round shadow-lg">
                                                 <div class="col-static no-fluid">
                                                     <div class="row no-row-gap-h row-gap-md-v">
@@ -803,7 +803,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="slide-content padding-10-h padding-10-t padding-15-b theme-green">
+                                        <div class="slide-content padding-10-h padding-10-t padding-15-b ui-theme-green">
                                             <div class="card full-h padding-15 round shadow-lg">
                                                 <div class="col-static no-fluid">
                                                     <div class="row no-row-gap-h row-gap-md-v">
@@ -826,7 +826,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="slide-content padding-10-h padding-10-t padding-15-b theme-panel2">
+                                        <div class="slide-content padding-10-h padding-10-t padding-15-b ui-theme-panel2">
                                             <div class="card full-h padding-15 round shadow-lg">
                                                 <div class="col-static no-fluid">
                                                     <div class="row no-row-gap-h row-gap-md-v">
@@ -919,7 +919,7 @@
 
                             <div class="col-xl-3 col-lg-6 col-12 col-md-6">
                                 <div class="card full-h padding-15 padding-10-t round shadow-lg" style="min-height: 350px;">
-                                    <div class="tabs theme-panel2 ease-tabs" data-ui-classes="border-b border-lg ui-stroke ui-color">
+                                    <div class="tabs ui-theme-panel2 ease-tabs" data-ui-classes="border-b border-lg ui-stroke ui-color">
 
                                         <div class="btn-holder font-color-black-muted align-c margin-10-b border-b form-lg ease-1st-btn">
                                             <button class="tab btn btn-ghost round-t border-b border-lg ui-stroke ui-color active">Delayed</button>
@@ -1132,7 +1132,7 @@
 
                             <div class="col-xl-3 col-lg-6 col-12 col-md-6">
                                 <div class="card full-h padding-15 padding-10-t round shadow-lg" style="min-height: 350px;">
-                                    <div class="tabs form-lg theme-panel2 ease-tabs" data-ui-classes="border-b border-lg ui-stroke ui-color">
+                                    <div class="tabs form-lg ui-theme-panel2 ease-tabs" data-ui-classes="border-b border-lg ui-stroke ui-color">
 
                                         <div class="btn-holder font-color-black-muted align-c margin-10-b border-b ease-1st-btn">
                                             <button class="tab btn btn-ghost round-t border-b border-lg ui-stroke ui-color active">News</button>
@@ -1232,7 +1232,7 @@
                                         </ul>
                                     </div>
                                     <h4 class="align-l margin-5-t">Experts</h4>
-                                    <div class="grid-list grid-list-striped grid-hover theme-gray ease-grid-list">
+                                    <div class="grid-list grid-list-striped grid-hover ui-theme-gray ease-grid-list">
 
                                         <div class="row no-row-gap-v row-gap-sm-h">
                                             <div class="col-6 lg-fluid">
@@ -1330,7 +1330,7 @@
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                                     </div>
                                                     <div class="col-7">
-                                                        <ul class="steps-bar steps-icon theme-yellow ui-color">
+                                                        <ul class="steps-bar steps-icon ui-theme-yellow ui-color">
                                                             <li>
                                                                 <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
                                                             </li>
@@ -1459,7 +1459,7 @@
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                                     </div>
                                                     <div class="col-7">
-                                                        <ul class="steps-bar steps-icon theme-yellow ui-color">
+                                                        <ul class="steps-bar steps-icon ui-theme-yellow ui-color">
                                                             <li>
                                                                 <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
                                                             </li>
@@ -1587,7 +1587,7 @@
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                                     </div>
                                                     <div class="col-7">
-                                                        <ul class="steps-bar steps-icon theme-yellow ui-color">
+                                                        <ul class="steps-bar steps-icon ui-theme-yellow ui-color">
                                                             <li>
                                                                 <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
                                                             </li>
@@ -1715,7 +1715,7 @@
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                                     </div>
                                                     <div class="col-7">
-                                                        <ul class="steps-bar steps-icon theme-yellow ui-color">
+                                                        <ul class="steps-bar steps-icon ui-theme-yellow ui-color">
                                                             <li>
                                                                 <svg class="icon" data-ui-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
                                                             </li>
@@ -1817,7 +1817,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-8 align-r">
-                                                <div class="grid-list-paging pagination ease-1st-btn" data-ui-default="btn round" data-ui-active="theme-panel2 ui-fill-dark-100"></div>
+                                                <div class="grid-list-paging pagination ease-1st-btn" data-ui-default="btn round" data-ui-active="ui-theme-panel2 ui-fill-dark-100"></div>
                                             </div>
                                         </div>
 
@@ -1840,7 +1840,7 @@
 </main>
 
 <!-- mobile menu -->
-<div class="mobile-menu show-l theme-panel ui-fill-dark-100 ease-layout ease-in-out">
+<div class="mobile-menu show-l ui-theme-panel ui-fill-dark-100 ease-layout ease-in-out">
     <div class="mobile-menu-title no-padding border-b">
         <button class="btn btn-square btn-lg btn-ghost circle ease-btn close-mobile-menu">
             <svg class="icon no-opacity"><use href="#remove"/></svg>
@@ -1861,7 +1861,7 @@
             <div class="col-static no-fluid">
                 <div class="row no-row-gap-h">
                     <div class="col-12 ease-1st-form">
-                        <div class="text text-icon has-clear round-l no-border shadow-in-sm theme-gray ui-fill-light-300">
+                        <div class="text text-icon has-clear round-l no-border shadow-in-sm ui-theme-gray ui-fill-light-300">
                             <button type="button" class="clear-form">
                                 <svg class="icon"><use href="#remove"/></svg>
                             </button>
@@ -1871,13 +1871,13 @@
                     </div>
                 </div>
                 <div class="col-100 col-xs-50 padding-10-v">
-                    <button class="btn block round-r theme-panel2 ui-fill-dark-100 ease-btn" type="submit">
+                    <button class="btn block round-r ui-theme-panel2 ui-fill-dark-100 ease-btn" type="submit">
                         <svg class="icon"><use href="#search"/></svg>
                     </button>
                 </div>
             </div>
 
-            <div class="row xs-fluid icons-xxl block-2nd icons-no-opacity hover-t-more-2nd icons-margin-5-v theme-panel ease-2nd-btn">
+            <div class="row xs-fluid icons-xxl block-2nd icons-no-opacity hover-t-more-2nd icons-margin-5-v ui-theme-panel ease-2nd-btn">
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-fill-dark-100" href="#">
                         <svg class="icon"><use href="#news"/></svg>
