@@ -34,14 +34,14 @@ ui.alerts = {
     nameIcon: 'icon',
 
     // styling classnames
-    stylesDialog: 'round shadow-lg ease-layout ease-in-out',
-    stylesCloseDialog: 'ease-layout',
-    stylesDialogBtnHolder: 'ease-1st-btn',
+    stylesDialog: 'round shadow-lg ui-ease-layout ui-ease-in-out',
+    stylesCloseDialog: 'ui-ease-layout',
+    stylesDialogBtnHolder: 'ui-ease-1st-btn',
 
-    stylesMsg: 'round shadow-lg ease-layout ease-in-out',
+    stylesMsg: 'round shadow-lg ui-ease-layout ui-ease-in-out',
     stylesMsgTheme: '',
 
-    stylesBg: 'ease-layout',
+    stylesBg: 'ui-ease-layout',
 
     // icons
     closeIcon: 'remove',

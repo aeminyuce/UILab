@@ -185,7 +185,7 @@
                 </div>
 
                 <h4>Hover Rows</h4>
-                <table class="table padding-30-b table-hover table-striped ease-table">
+                <table class="table padding-30-b table-hover table-striped ui-ease-table">
                     <thead>
                         <tr>
                             <th>#</th>
@@ -299,7 +299,7 @@
                 </table>
 
                 <h4>Rows Themes</h4>
-                <table class="table padding-30-b table-hover ease-table">
+                <table class="table padding-30-b table-hover ui-ease-table">
                     <thead>
                         <tr>
                             <th>#</th>
@@ -354,7 +354,7 @@
                     </tbody>
                 </table>
 
-                <table class="table padding-30-b table-hover ui-theme-red ease-table">
+                <table class="table padding-30-b table-hover ui-theme-red ui-ease-table">
                     <thead>
                         <tr>
                             <th>#</th>
@@ -385,7 +385,7 @@
                     </tbody>
                 </table>
 
-                <table class="table padding-30-b table-hover ui-theme-sub ease-table">
+                <table class="table padding-30-b table-hover ui-theme-sub ui-ease-table">
                     <thead>
                         <tr>
                             <th>#</th>

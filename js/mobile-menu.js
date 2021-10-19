@@ -29,7 +29,7 @@ ui.mobileMenu = {
     nameRight: 'r',
 
     // styling classnames
-    stylesBg: 'ease-slow ease-layout',
+    stylesBg: 'ui-ease-slow ui-ease-layout',
 
     // tags
     tagDataTarget: 'i',

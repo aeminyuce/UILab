@@ -1,7 +1,7 @@
 <main class="container no-gutter">
     <div class="fixed padding-30-v">
 
-        <div class="image-uploader round shadow-lg ease-image-uploader">
+        <div class="image-uploader round shadow-lg ui-ease-image-uploader">
             <form action="xhr/image-uploader.php" method="post" enctype="multipart/form-data"> <!-- error testing: image-uploader-error.php-->
 
                 <div class="padding-10-h border-b border-light">
@@ -11,14 +11,14 @@
                         </div>
                         <div class="col-6 align-r sm-no-padding-t form-lg">
 
-                            <div class="file no-border inline-block round ease-form">
+                            <div class="file no-border inline-block round ui-ease-form">
                                 <input class="bg-white cursor-pointer" type="file" name="images[]" multiple>
-                                <span class="btn btn-square ui-theme-green ui-fill-dark-100 ease-btn">
+                                <span class="btn btn-square ui-theme-green ui-fill-dark-100 ui-ease-btn">
                                     <svg class="icon no-opacity"><use href="#plus"/></svg>
                                 </span>
                             </div>
 
-                            <button type="submit" name="send" class="btn btn-square round ui-theme-base ui-fill-dark-100 ease-btn">
+                            <button type="submit" name="send" class="btn btn-square round ui-theme-base ui-fill-dark-100 ui-ease-btn">
                                 <svg class="icon"><use href="#save"/></svg>
                             </button>
 

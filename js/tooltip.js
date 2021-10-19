@@ -18,7 +18,7 @@ ui.tooltip = {
     nameClose: 'close',
 
     // styling classnames
-    stylesTarget: 'round ease-tooltip',
+    stylesTarget: 'round ui-ease-tooltip',
     stylesArrow: '',
 
     // values

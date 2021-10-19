@@ -7,13 +7,13 @@
         <div class="row row-gap-lg padding-30-b">
             <div class="col-4 offset-2 col-md-6 offset-md-0">
 
-                <div class="weather round ease-weather">
+                <div class="weather round ui-ease-weather">
                     <div class="details">
                         <div class="now">
                             <b class="w-degree">33</b>
                             <span>
                                 Clear <b class="w-date"></b>
-                                <a class="x-large margin-5-t block opacity ease-layout" href="#">Istanbul</a>
+                                <a class="x-large margin-5-t block opacity ui-ease-layout" href="#">Istanbul</a>
                             </span>
                         </div>
                         <ul class="days icons-lg scrollbar-faded round">
@@ -31,7 +31,7 @@
                             <li>24<svg class="icon"><use href="#cloud-moon"/></svg><span>29</span></li>
                         </ul>
                         <div class="carousel card round shadow-lg" data-ui-col="1">
-                            <div class="carousel-slider icons-lg ease-layout ease-slow ease-in-out">
+                            <div class="carousel-slider icons-lg ui-ease-layout ui-ease-slow ui-ease-in-out">
 
                                 <div class="slide-content padding-30 no-padding-b">
                                     <h3 class="font-bold margin-15-v">Next Week</h3>
@@ -122,7 +122,7 @@
                                 </div>
 
                             </div>
-                            <div class="carousel-nav padding-10-b no-margin-t ease-1st-btn">
+                            <div class="carousel-nav padding-10-b no-margin-t ui-ease-1st-btn">
                                 <button class="carousel-prev btn btn-ghost btn-square round">
                                     <svg class="icon"><use href="#angle-left"/></svg>
                                 </button>
@@ -139,13 +139,13 @@
             </div>
             <div class="col-4 col-md-6">
 
-                <div class="weather round ease-weather">
+                <div class="weather round ui-ease-weather">
                     <div class="details">
                         <div class="now">
                             <b class="w-degree">33</b>
                             <span>
                                 Partly Cloudy <b class="w-date"></b>
-                                <a class="x-large margin-5-t block opacity ease-layout" href="#">Istanbul</a>
+                                <a class="x-large margin-5-t block opacity ui-ease-layout" href="#">Istanbul</a>
                             </span>
                         </div>
                         <ul class="days icons-lg scrollbar-faded round">
@@ -163,7 +163,7 @@
                             <li>08<svg class="icon"><use href="#cloud-sun"/></svg><span>29</span></li>
                         </ul>
                         <div class="carousel card round shadow-lg" data-ui-col="1">
-                            <div class="carousel-slider icons-lg ease-layout ease-slow ease-in-out">
+                            <div class="carousel-slider icons-lg ui-ease-layout ui-ease-slow ui-ease-in-out">
 
                                 <div class="slide-content padding-30 no-padding-b">
                                     <div class="padding-15 no-padding-t">
@@ -254,7 +254,7 @@
                                 </div>
 
                             </div>
-                            <div class="carousel-nav padding-10-b no-margin-t ease-1st-btn">
+                            <div class="carousel-nav padding-10-b no-margin-t ui-ease-1st-btn">
                                 <button class="carousel-prev btn btn-ghost btn-square round">
                                     <svg class="icon"><use href="#angle-left"/></svg>
                                 </button>

@@ -9,7 +9,7 @@
                 <div class="add-mobile-menu-r">
 
                     <div class="card padding-15 round shadow-lg">
-                        <div data-ui-src="json/headphones.json" data-ui-val="name" class="autocomplete text text-icon-both round no-border ui-theme-gray ui-fill-light-300 ease-form has-clear">
+                        <div data-ui-src="json/headphones.json" data-ui-val="name" class="autocomplete text text-icon-both round no-border ui-theme-gray ui-fill-light-300 ui-ease-form has-clear">
                             <svg class="icon text-icon-l"><use href="#search"/></svg>
                             <button type="button" class="clear-form">
                                 <svg class="icon"><use href="#remove"/></svg>
@@ -42,31 +42,31 @@
                         <div class="padding-15 md-align-c border-b">
                             <h5 class="margin-10-b font-color-black-50">COLORS</h5>
                             <label class="custom">
-                                <span class="check-custom no-border circle ease-form" style="background: hsl(358, 86%, 54%);">
+                                <span class="check-custom no-border circle ui-ease-form" style="background: hsl(358, 86%, 54%);">
                                     <input type="checkbox" checked>
                                     <i class="state circle"></i>
                                 </span>
                             </label>
                             <label class="custom">
-                                <span class="check-custom no-border circle ease-form" style="background: hsl(296, 73%, 53%);">
+                                <span class="check-custom no-border circle ui-ease-form" style="background: hsl(296, 73%, 53%);">
                                     <input type="checkbox" checked>
                                     <i class="state circle"></i>
                                 </span>
                             </label>
                             <label class="custom">
-                                <span class="check-custom no-border circle ease-form" style="background: hsl(206, 73%, 50%);">
+                                <span class="check-custom no-border circle ui-ease-form" style="background: hsl(206, 73%, 50%);">
                                     <input type="checkbox" checked>
                                     <i class="state circle"></i>
                                 </span>
                             </label>
                             <label class="custom">
-                                <span class="check-custom no-border circle ease-form" style="background: hsl(17, 80%, 57%);">
+                                <span class="check-custom no-border circle ui-ease-form" style="background: hsl(17, 80%, 57%);">
                                     <input type="checkbox">
                                     <i class="state circle"></i>
                                 </span>
                             </label>
                             <label class="custom">
-                                <span class="check-custom no-border circle ease-form" style="background: hsl(48, 85%, 60%);">
+                                <span class="check-custom no-border circle ui-ease-form" style="background: hsl(48, 85%, 60%);">
                                     <input type="checkbox">
                                     <i class="state circle"></i>
                                 </span>
@@ -75,13 +75,13 @@
                             <span class="clearfix hidden-md"></span>
 
                             <label class="custom">
-                                <span class="check-custom no-border circle ease-form" style="background: hsl(218, 16%, 10%);">
+                                <span class="check-custom no-border circle ui-ease-form" style="background: hsl(218, 16%, 10%);">
                                     <input type="checkbox" checked>
                                     <i class="state circle"></i>
                                 </span>
                             </label>
                             <label class="custom">
-                                <span class="check-custom border circle ease-form" style="background: hsl(0, 0%, 77%);">
+                                <span class="check-custom border circle ui-ease-form" style="background: hsl(0, 0%, 77%);">
                                     <input type="checkbox" checked>
                                     <i class="state circle border" style="background: hsl(0, 0%, 96%);"></i>
                                 </span>
@@ -92,7 +92,7 @@
 
                             <h5 class="margin-10-b font-color-black-50">PROMOTIONS</h5>
                             <label class="custom block">
-                                <span class="switch-custom right round ease-form">
+                                <span class="switch-custom right round ui-ease-form">
                                     <input type="checkbox" checked>
                                     <i class="state ui-fill-dark-100"></i>
                                 </span>
@@ -101,7 +101,7 @@
                             </label>
                             <span class="sp-5"></span>
                             <label class="custom block">
-                                <span class="switch-custom right round ease-form">
+                                <span class="switch-custom right round ui-ease-form">
                                     <input type="checkbox" checked>
                                     <i class="state ui-fill-dark-100"></i>
                                 </span>
@@ -115,28 +115,28 @@
 
                             <h5 class="margin-10-b font-color-black-50">CONNECTIONS</h5>
                             <label class="custom block">
-                                <span class="check-custom round ease-form">
+                                <span class="check-custom round ui-ease-form">
                                     <input type="checkbox" checked>
                                     <i class="state ui-fill-dark-100"></i>
                                 </span>
                                 Wireless <span class="font-color-black-muted">4</span>
                             </label>
                             <label class="custom block">
-                                <span class="check-custom round ease-form">
+                                <span class="check-custom round ui-ease-form">
                                     <input type="checkbox" checked>
                                     <i class="state ui-fill-dark-100"></i>
                                 </span>
                                 Bluetooth <span class="font-color-black-muted">11</span>
                             </label>
                             <label class="custom block">
-                                <span class="check-custom round ease-form">
+                                <span class="check-custom round ui-ease-form">
                                     <input type="checkbox" checked>
                                     <i class="state ui-fill-dark-100"></i>
                                 </span>
                                 Wired <span class="font-color-black-muted">9</span>
                             </label>
                             <label class="custom block">
-                                <span class="check-custom round ease-form">
+                                <span class="check-custom round ui-ease-form">
                                     <input type="checkbox">
                                     <i class="state ui-fill-dark-100"></i>
                                 </span>
@@ -144,7 +144,7 @@
                             </label>
 
                             <span class="sp-10"></span>
-                            <button class="btn btn-sm circle ease-btn">
+                            <button class="btn btn-sm circle ui-ease-btn">
                                 See All
                                 <svg class="icon margin-5-l"><use href="#angle-down"/></svg>
                             </button>
@@ -152,7 +152,7 @@
                         </div>
 
                         <div class="padding-15">
-                            <button type="submit" class="btn btn-lg block round ui-fill-dark-100 ease-btn"><b>SEARCH</b></button>
+                            <button type="submit" class="btn btn-lg block round ui-fill-dark-100 ui-ease-btn"><b>SEARCH</b></button>
                         </div>
 
                     </div>
@@ -173,7 +173,7 @@
                                 </h4>
                             </div>
                             <div class="col-8">
-                                <div class="line-charts ease-line-charts" data-ui-x="1st Week,2nd Week,3rd Week,4th Week">
+                                <div class="line-charts ui-ease-line-charts" data-ui-x="1st Week,2nd Week,3rd Week,4th Week">
                                     <ul class="lines" data-ui-type="curved dashed">
                                         <li data-ui-y="156"></li>
                                         <li data-ui-y="180"></li>
@@ -224,7 +224,7 @@
                             <span class="large">Found <b>47</b> and displaying <b>9</b> products.</span>
                         </div>
                         <div class="col-6 align-r sm-no-padding-t">
-                            <div class="select round form-inline no-border ui-theme-gray ui-fill-light-300 ease-form">
+                            <div class="select round form-inline no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
                                 <svg class="icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="1" checked>Sort by</option>
@@ -233,7 +233,7 @@
                                     <option value="4">Price (High to Low)</option>
                                 </select>
                             </div>
-                            <div class="select round form-inline no-border ui-theme-gray ui-fill-light-300 ease-form">
+                            <div class="select round form-inline no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
                                 <svg class="icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="12" checked>Show 9</option>
@@ -242,7 +242,7 @@
                                 </select>
                             </div>
                             <span class="sp-10 visible-xs"></span>
-                            <span class="align-c ui-theme-sub ease-1st-btn">
+                            <span class="align-c ui-theme-sub ui-ease-1st-btn">
                                 <button class="btn btn-square round ui-fill-dark-100">
                                     <svg class="icon"><use href="#grid-column"/></svg>
                                 </button>
@@ -256,22 +256,22 @@
                         </div>
                     </div>
 
-                    <div class="products-list row hover-shadow-2nd ease-2nd-layout hover-t-2nd">
+                    <div class="products-list row hover-shadow-2nd ui-ease-2nd-layout hover-t-2nd">
                         <div class="col-4 col-sm-6">
-                            <a class="full-h padding-15 no-padding-t card round shadow-lg ease-layout" href="#">
+                            <a class="full-h padding-15 no-padding-t card round shadow-lg ui-ease-layout" href="#">
                                 <span class="photo-slider margin-20-b">
                                     <svg class="slider-loader icon"><use href="#loader-line"/></svg>
                                     <img
                                         src="img/product_01.png" alt=""
                                         data-ui-src="img/product_01.png,img/product_02.png,img/product_03.png"
                                     >
-                                    <button title="Prev" class="prev btn btn-ghost btn-square round ease-btn">
+                                    <button title="Prev" class="prev btn btn-ghost btn-square round ui-ease-btn">
                                         <svg class="icon"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="next btn btn-ghost btn-square round ease-btn">
+                                    <button title="Next" class="next btn btn-ghost btn-square round ui-ease-btn">
                                         <svg class="icon"><use href="#angle-right"/></svg>
                                     </button>
-                                    <span class="photo-slider-nav ease-1st-layout"></span>
+                                    <span class="photo-slider-nav ui-ease-1st-layout"></span>
                                 </span>
                                 <span class="x-large">Red</span>
                                 <span class="font-color-black-50 block margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
@@ -294,20 +294,20 @@
                             </a>
                         </div>
                         <div class="col-4 col-sm-6">
-                            <a class="full-h padding-15 no-padding-t card round shadow-lg ease-layout" href="#">
+                            <a class="full-h padding-15 no-padding-t card round shadow-lg ui-ease-layout" href="#">
                                 <span class="photo-slider margin-20-b">
                                     <svg class="slider-loader icon"><use href="#loader-line"/></svg>
                                     <img
                                         src="img/product_02.png" alt=""
                                         data-ui-src="img/product_02.png,img/product_04.png"
                                     >
-                                    <button title="Prev" class="prev btn btn-ghost btn-square round ease-btn">
+                                    <button title="Prev" class="prev btn btn-ghost btn-square round ui-ease-btn">
                                         <svg class="icon"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="next btn btn-ghost btn-square round ease-btn">
+                                    <button title="Next" class="next btn btn-ghost btn-square round ui-ease-btn">
                                         <svg class="icon"><use href="#angle-right"/></svg>
                                     </button>
-                                    <span class="photo-slider-nav ease-1st-layout"></span>
+                                    <span class="photo-slider-nav ui-ease-1st-layout"></span>
                                 </span>
                                 <span class="x-large">Purple</span>
                                 <span class="font-color-black-50 block margin-10-v">beats by dr. dre Studio 3 Bluetooth Headphones</span>
@@ -329,20 +329,20 @@
                             </a>
                         </div>
                         <div class="col-4 col-sm-6">
-                            <a class="full-h padding-15 no-padding-t card round shadow-lg ease-layout" href="#">
+                            <a class="full-h padding-15 no-padding-t card round shadow-lg ui-ease-layout" href="#">
                                 <span class="photo-slider margin-20-b">
                                     <svg class="slider-loader icon"><use href="#loader-line"/></svg>
                                     <img
                                         src="img/product_03.png" alt=""
                                         data-ui-src="img/product_03.png,img/product_05.png"
                                     >
-                                    <button title="Prev" class="prev btn btn-ghost btn-square round ease-btn">
+                                    <button title="Prev" class="prev btn btn-ghost btn-square round ui-ease-btn">
                                         <svg class="icon"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="next btn btn-ghost btn-square round ease-btn">
+                                    <button title="Next" class="next btn btn-ghost btn-square round ui-ease-btn">
                                         <svg class="icon"><use href="#angle-right"/></svg>
                                     </button>
-                                    <span class="photo-slider-nav ease-1st-layout"></span>
+                                    <span class="photo-slider-nav ui-ease-1st-layout"></span>
                                 </span>
                                 <span class="x-large">Blue</span>
                                 <span class="font-color-black-50 block margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
@@ -364,17 +364,17 @@
                             </a>
                         </div>
                         <div class="col-4 col-sm-6">
-                            <a class="full-h padding-15 no-padding-t card round shadow-lg ease-layout" href="#">
+                            <a class="full-h padding-15 no-padding-t card round shadow-lg ui-ease-layout" href="#">
                                 <span class="photo-slider margin-20-b">
                                     <svg class="slider-loader icon"><use href="#loader-line"/></svg>
                                     <img src="img/product_04.png" alt="" >
-                                    <button title="Prev" class="prev btn btn-ghost btn-square round ease-btn">
+                                    <button title="Prev" class="prev btn btn-ghost btn-square round ui-ease-btn">
                                         <svg class="icon"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="next btn btn-ghost btn-square round ease-btn">
+                                    <button title="Next" class="next btn btn-ghost btn-square round ui-ease-btn">
                                         <svg class="icon"><use href="#angle-right"/></svg>
                                     </button>
-                                    <span class="photo-slider-nav ease-1st-layout"></span>
+                                    <span class="photo-slider-nav ui-ease-1st-layout"></span>
                                 </span>
                                 <span class="x-large">White</span>
                                 <span class="font-color-black-50 block margin-10-v">beats by dr. dre Studio 3 Wired Headphones</span>
@@ -395,17 +395,17 @@
                             </a>
                         </div>
                         <div class="col-4 col-sm-6">
-                            <a class="full-h padding-15 no-padding-t card round shadow-lg ease-layout" href="#">
+                            <a class="full-h padding-15 no-padding-t card round shadow-lg ui-ease-layout" href="#">
                                 <span class="photo-slider margin-20-b">
                                     <svg class="slider-loader icon"><use href="#loader-line"/></svg>
                                     <img src="img/product_05.png" alt="" >
-                                    <button title="Prev" class="prev btn btn-ghost btn-square round ease-btn">
+                                    <button title="Prev" class="prev btn btn-ghost btn-square round ui-ease-btn">
                                         <svg class="icon"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="next btn btn-ghost btn-square round ease-btn">
+                                    <button title="Next" class="next btn btn-ghost btn-square round ui-ease-btn">
                                         <svg class="icon"><use href="#angle-right"/></svg>
                                     </button>
-                                    <span class="photo-slider-nav ease-1st-layout"></span>
+                                    <span class="photo-slider-nav ui-ease-1st-layout"></span>
                                 </span>
                                 <span class="x-large">Black</span>
                                 <span class="font-color-black-50 block margin-10-v">beats by dr. dre Studio 3 Wired Headphones</span>
@@ -426,20 +426,20 @@
                             </a>
                         </div>
                         <div class="col-4 col-sm-6">
-                            <a class="full-h padding-15 no-padding-t card round shadow-lg ease-layout" href="#">
+                            <a class="full-h padding-15 no-padding-t card round shadow-lg ui-ease-layout" href="#">
                                 <span class="photo-slider margin-20-b">
                                     <svg class="slider-loader icon"><use href="#loader-line"/></svg>
                                     <img
                                         src="img/product_02.png" alt=""
                                         data-ui-src="img/product_02.png,img/product_04.png"
                                     >
-                                    <button title="Prev" class="prev btn btn-ghost btn-square round ease-btn">
+                                    <button title="Prev" class="prev btn btn-ghost btn-square round ui-ease-btn">
                                         <svg class="icon"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="next btn btn-ghost btn-square round ease-btn">
+                                    <button title="Next" class="next btn btn-ghost btn-square round ui-ease-btn">
                                         <svg class="icon"><use href="#angle-right"/></svg>
                                     </button>
-                                    <span class="photo-slider-nav ease-1st-layout"></span>
+                                    <span class="photo-slider-nav ui-ease-1st-layout"></span>
                                 </span>
                                 <span class="x-large">Purple</span>
                                 <span class="font-color-black-50 block margin-10-v">beats by dr. dre Studio 3 Bluetooth Headphones</span>
@@ -464,7 +464,7 @@
 
                     <div class="row">
                         <div class="col-12 align-c">
-                            <button class="load-more btn btn-lg btn-xs-fluid padding-30-h circle ease-btn">Load more</button>
+                            <button class="load-more btn btn-lg btn-xs-fluid padding-30-h circle ui-ease-btn">Load more</button>
                         </div>
                     </div>
 
@@ -476,9 +476,9 @@
 </main>
 
 <!-- mobile menu -->
-<div class="mobile-menu show-r ease-layout ease-in-out">
+<div class="mobile-menu show-r ui-ease-layout ui-ease-in-out">
     <div class="mobile-menu-title padding-20-v x-large border-b">
-        <button class="btn btn-square btn-lg btn-ghost circle ease-btn close-mobile-menu">
+        <button class="btn btn-square btn-lg btn-ghost circle ui-ease-btn close-mobile-menu">
             <svg class="icon no-opacity"><use href="#remove"/></svg>
         </button>
         Filters

@@ -12,7 +12,7 @@
                 <!-- profile -->
                 <div class="card padding-15-v md-no-padding-v md-no-margin round shadow-lg set-relative">
                     <div class="align-c padding-10-v">
-                        <div class="padding-10 set-absolute set-t set-l ease-1st-btn">
+                        <div class="padding-10 set-absolute set-t set-l ui-ease-1st-btn">
                             <button class="btn btn-ghost btn-square round show-mobile-menu-l visible-md">
                                 <svg class="icon"><use href="#bars-left"/></svg>
                             </button>
@@ -20,7 +20,7 @@
                                 <svg class="icon"><use href="#bell-on"/></svg>
                             </button>
                         </div>
-                        <div class="dropdown margin-10 set-absolute set-t set-r ease-dropdown">
+                        <div class="dropdown margin-10 set-absolute set-t set-r ui-ease-dropdown">
                             <button class="btn btn-ghost round" data-ui-tooltip="r" data-ui-only="desktop" title="Settings">
                                 <svg class="icon"><use href="#settings"/></svg>
                             </button>
@@ -32,7 +32,7 @@
                             </ul>
                         </div>
                         <div class="padding-10 circle inline-block ui-theme-gray ui-fill-light-300">
-                            <a class="hover-scale ease-layout" href="#" data-ui-tooltip="r" title="Show your profile">
+                            <a class="hover-scale ui-ease-layout" href="#" data-ui-tooltip="r" title="Show your profile">
                                 <img class="img-photo-lg circle" src="img/profile-image.jpg" alt="">
                             </a>
                         </div>
@@ -52,9 +52,9 @@
                 </div>
 
                 <!-- nav -->
-                <nav class="form-lg margin-25-v icons-lg icons-no-opacity ui-theme-base hidden-md">
-                    <ul class="list-unstyled list-spacer-20 align-l icons-margin-10-r block-2nd ease-2nd-button add-mobile-menu-l">
-                        <li>
+                <nav class="form-lg margin-25-v icons-no-opacity ui-theme-base hidden-md">
+                    <ul class="list-unstyled list-spacer-20 align-l icons-margin-10-r block-2nd ui-ease-2nd-button add-mobile-menu-l">
+                        <li><
                             <a class="btn btn-ghost border-r border-lg ui-stroke" href="#">
                                 <svg class="icon"><use href="#chart-pie"/></svg>
                                 Dashboard
@@ -95,13 +95,13 @@
 
                 <!-- tips -->
                 <div class="card padding-15 round shadow-lg hidden-md">
-                    <button class="close-card ease-btn">
+                    <button class="close-card ui-ease-btn">
                         <svg class="icon"><use href="#remove"/></svg>
                     </button>
                     <svg class="icon margin-10-r"><use href="#help"/></svg>
                     <b>System Tips</b>
                     <div class="font-color-black-50 large no-line-height margin-5-t margin-15-b">You can backup your stats weekly.</div>
-                    <button class="btn block circle ui-theme-green ui-fill-dark-100 ease-btn"><b>Got it!</b></button>
+                    <button class="btn block circle ui-theme-green ui-fill-dark-100 ui-ease-btn"><b>Got it!</b></button>
                 </div>
 
             </div>
@@ -116,7 +116,7 @@
 
                         <div class="card full-h round shadow-lg">
                             <div class="card-side padding-15 border-b">
-                                <a href="#" class="btn right circle ease-btn hidden-xs">
+                                <a href="#" class="btn right circle ui-ease-btn hidden-xs">
                                     Details
                                     <svg class="icon margin-5-l"><use href="#arrow-right"/></svg>
                                 </a>
@@ -124,7 +124,7 @@
                                 <div class="font-color-black-50 xs-align-c">
                                     Finished per Month <b>263</b> works.
                                 </div>
-                                <a href="#" class="btn block margin-10-t circle ease-btn visible-xs">
+                                <a href="#" class="btn block margin-10-t circle ui-ease-btn visible-xs">
                                     Show More
                                     <svg class="icon margin-5-l"><use href="#arrow-right"/></svg>
                                 </a>
@@ -133,7 +133,7 @@
 
                                 <div class="row row-gap-md xs-fluid icons-lg margin-25-t md-no-margin">
                                     <div class="col-4">
-                                        <div class="donut-chart ease-donut-chart col-xs-150 col-lg-150 automargin" style="max-width: 120px;">
+                                        <div class="donut-chart ui-ease-donut-chart col-xs-150 col-lg-150 automargin" style="max-width: 120px;">
                                             <strong>
                                                 <svg class="icon"><use href="#box"/></svg>
                                                 <b class="font-color-black-muted margin-10-t margin-5-b block">Last Month</b>
@@ -146,7 +146,7 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <div class="donut-chart ease-donut-chart col-xs-150 col-lg-150 automargin" style="max-width: 120px;">
+                                        <div class="donut-chart ui-ease-donut-chart col-xs-150 col-lg-150 automargin" style="max-width: 120px;">
                                             <strong>
                                                 <svg class="icon"><use href="#boxes"/></svg>
                                                 <b class="font-color-black-muted margin-10-t margin-5-b block">Last year</b>
@@ -159,7 +159,7 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <div class="pie-chart ease-pie-chart col-xs-150 col-lg-150 automargin" data-ui-text="Profit" style="max-width: 120px;">
+                                        <div class="pie-chart ui-ease-pie-chart col-xs-150 col-lg-150 automargin" data-ui-text="Profit" style="max-width: 120px;">
                                             <ul>
                                                 <li data-ui-percent="66" data-ui-fill="#60ab57" data-ui-title="66%"></li>
                                             </ul>
@@ -173,7 +173,7 @@
                     </div>
 
                     <div class="col-6">
-                        <div class="calendar ease-calendar round shadow-lg"></div>
+                        <div class="calendar ui-ease-calendar round shadow-lg"></div>
                     </div>
 
                     <div class="col-6">
@@ -189,7 +189,7 @@
 
                             <div class="padding-15-h padding-20-v">
 
-                                <div class="line-charts ease-line-charts" data-ui-size="5,57" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                                <div class="line-charts ui-ease-line-charts" data-ui-size="5,57" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                                     <ul class="lines" data-ui-name="1st" data-ui-type="curved dashed">
                                         <li data-ui-y="55" data-ui-link="#1"></li>
                                         <li data-ui-y="70" data-ui-link="#2"></li>
@@ -218,11 +218,11 @@
                     <div class="col-6">
 
                         <!-- employee list -->
-                        <div class="grid-list grid-list-striped grid-hover card full-h round shadow-lg ui-theme-gray ease-grid-list">
+                        <div class="grid-list grid-list-striped grid-hover card full-h round shadow-lg ui-theme-gray ui-ease-grid-list">
 
                             <div class="row sm-fluid">
                                 <div class="col-5 sm-no-padding-b">
-                                    <div class="text text-icon-both round no-border ui-fill-light-100 has-clear ease-form">
+                                    <div class="text text-icon-both round no-border ui-fill-light-100 has-clear ui-ease-form">
                                         <svg class="icon text-icon-l"><use href="#search"/></svg>
                                         <button class="clear-form">
                                             <svg class="icon"><use href="#remove"/></svg>
@@ -230,8 +230,8 @@
                                         <input class="grid-list-filter" type="text" placeholder="Search">
                                     </div>
                                 </div>
-                                <div class="col-7 ease-1st-form align-r sm-align-l">
-                                    <div class="select form-inline round no-border ui-fill-light-100">
+                                <div class="col-7 ui-ease-1st-form align-r sm-align-l">
+                                    <div class="select align-l form-inline round no-border ui-fill-light-100">
                                         <svg class="icon"><use href="#angle-down"/></svg>
                                         <select class="grid-list-filter" data-ui-index="1">
                                             <option value="">Name</option>
@@ -241,7 +241,7 @@
                                             <option>Bob Pool</option>
                                         </select>
                                     </div>
-                                    <div class="select form-inline round no-border ui-fill-light-100">
+                                    <div class="select align-l form-inline round no-border ui-fill-light-100">
                                         <svg class="icon"><use href="#angle-down"/></svg>
                                         <select class="grid-list-filter" data-ui-index="2" data-ui-type="number">
                                             <option value="">Age</option>
@@ -262,7 +262,7 @@
                                 </div>
                             </div>
 
-                            <div class="row row-gap-xs align-l no-fluid block-2nd ui-fill-light-100 ease-2nd-btn">
+                            <div class="row row-gap-xs align-l no-fluid block-2nd ui-fill-light-100 ui-ease-2nd-btn">
                                 <div class="col-5">
                                     <button class="btn btn-ghost" data-ui-sort="1">
                                         <svg class="icon"><use href="#sort"/></svg> Name
@@ -892,7 +892,7 @@
                                     </div>
                                 </div>
                                 <div class="col-6 align-r">
-                                    <div class="grid-list-paging pagination ease-1st-btn" data-ui-default="btn round" data-ui-active="ui-theme-sub ui-fill-dark-100"></div>
+                                    <div class="grid-list-paging pagination ui-ease-1st-btn" data-ui-default="btn round" data-ui-active="ui-theme-sub ui-fill-dark-100"></div>
                                 </div>
                             </div>
 
@@ -908,9 +908,9 @@
 </main>
 
 <!-- mobile menu -->
-<div class="mobile-menu show-l ui-theme-base ease-layout ease-in-out ">
+<div class="mobile-menu show-l ui-theme-base ui-ease-layout ui-ease-in-out ">
     <div class="mobile-menu-title ui-fill-dark-100">
-        <button class="btn btn-square btn-lg btn-ghost round ease-btn close-mobile-menu">
+        <button class="btn btn-square btn-lg btn-ghost round ui-ease-btn close-mobile-menu">
             <svg class="icon no-opacity"><use href="#remove"/></svg>
         </button>
         <div class="x-large padding-10">Admin Panel, Menu</div>

@@ -5,10 +5,12 @@
 @tabs-toggle-icon-size:                 12px;
 @tabs-toggle-right-icon-margins:        3px;
 
-.ease-tabs {
-    .tab {
-        .toggle-icon { transition-property: opacity, transform; transition-duration: (@ease-default * 2); }
-        &-content { transition-property: height, opacity; transition-duration: (@ease-default * 2); }
+.ui {
+    &-ease-tabs {
+        .tab {
+            .toggle-icon { transition-property: opacity, transform; transition-duration: (@ease-default * 2); }
+            &-content { transition-property: height, opacity; transition-duration: (@ease-default * 2); }
+        }
     }
 }
 

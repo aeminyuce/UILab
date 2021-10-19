@@ -11,11 +11,13 @@
 
 @autocomplete-list-hover-bg:            fade(@black, 7.5%);
 
-.ease-autocomplete {
-    transition-property: margin-top, opacity;
+.ui {
+    &-ease-autocomplete {
+        transition-property: margin-top, opacity;
 
-    ul { transition-property: opacity; transition-duration: @ease-default; }
-    li { transition-property: background-color; transition-duration: @ease-default; }
+        ul { transition-property: opacity; transition-duration: @ease-default; }
+        li { transition-property: background-color; transition-duration: @ease-default; }
+    }
 }
 
 .autocomplete {

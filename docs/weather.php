@@ -5,7 +5,7 @@
         <div class="row padding-30-b">
             <div class="col-3 col-md-6">
 
-                <div class="weather round ease-weather">
+                <div class="weather round ui-ease-weather">
                     <div class="details">
                         <div class="now">
                             <b class="w-degree">33</b>
@@ -35,7 +35,7 @@
             </div>
             <div class="col-3 col-md-6">
 
-                <div class="weather round ease-weather">
+                <div class="weather round ui-ease-weather">
                     <div class="details">
                         <div class="now">
                             <b class="w-degree">12</b>
@@ -65,7 +65,7 @@
             </div>
             <div class="col-3 col-md-6">
 
-                <div class="weather round ease-weather">
+                <div class="weather round ui-ease-weather">
                     <div class="details">
                         <div class="now">
                             <b class="w-degree">2</b>
@@ -95,7 +95,7 @@
             </div>
             <div class="col-3 col-md-6">
 
-                <div class="weather round ease-weather">
+                <div class="weather round ui-ease-weather">
                     <div class="details">
                         <div class="now">
                             <b class="w-degree">11</b>
@@ -125,7 +125,7 @@
             </div>
             <div class="col-3 col-md-6">
 
-                <div class="weather round ease-weather">
+                <div class="weather round ui-ease-weather">
                     <div class="details">
                         <div class="now">
                             <b class="w-degree">28</b>
@@ -155,7 +155,7 @@
             </div>
             <div class="col-3 col-md-6">
 
-                <div class="weather round ease-weather">
+                <div class="weather round ui-ease-weather">
                     <div class="details">
                         <div class="now">
                             <b class="w-degree">10</b>
@@ -185,7 +185,7 @@
             </div>
             <div class="col-3 col-md-6">
 
-                <div class="weather round ease-weather">
+                <div class="weather round ui-ease-weather">
                     <div class="details">
                         <div class="now">
                             <b class="w-degree">0</b>
@@ -215,7 +215,7 @@
             </div>
             <div class="col-3 col-md-6">
 
-                <div class="weather round ease-weather">
+                <div class="weather round ui-ease-weather">
                     <div class="details">
                         <div class="now">
                             <b class="w-degree">33</b>

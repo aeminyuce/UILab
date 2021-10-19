@@ -187,115 +187,10 @@ img {
   -webkit-text-size-adjust: 100%;
 }
 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
-  .ui .ui-mac.ui-chrome body {
+  .ui-mac.ui-chrome body {
     backface-visibility: hidden;
     perspective: 1000;
   }
-}
-[class*="ease-"],
-[class*="ease-1st-"] > *,
-[class*="ease-2nd-"] > * > * {
-  transition-duration: 0.15s;
-  transition-timing-function: ease-out;
-}
-.ease-fast,
-.ease-fast[class*="ease-1st-"] > *,
-.ease-fast[class*="ease-2nd-"] > * > * {
-  transition-duration: 0.1s;
-}
-.ease-slow,
-.ease-slow[class*="ease-1st-"] > *,
-.ease-slow[class*="ease-2nd-"] > * > * {
-  transition-duration: 0.4s;
-}
-.ease-slow-2x,
-.ease-slow-2x[class*="ease-1st-"] > *,
-.ease-slow-2x[class*="ease-2nd-"] > * > * {
-  transition-duration: 0.8s;
-}
-.ease-slow-3x,
-.ease-slow-3x[class*="ease-1st-"] > *,
-.ease-slow-3x[class*="ease-2nd-"] > * > * {
-  transition-duration: 1.2s;
-}
-.ease-slow-4x,
-.ease-slow-4x[class*="ease-1st-"] > *,
-.ease-slow-4x[class*="ease-2nd-"] > * > * {
-  transition-duration: 1.6s;
-}
-.ease-slow-5x,
-.ease-slow-5x[class*="ease-1st-"] > *,
-.ease-slow-5x[class*="ease-2nd-"] > * > * {
-  transition-duration: 2s;
-}
-.ease-color,
-.ease-1st-color > *,
-.ease-2nd-color > * > * {
-  transition-property: color;
-}
-.ease-width,
-.ease-1st-width > *,
-.ease-2nd-width > * > * {
-  transition-property: width;
-}
-.ease-height,
-.ease-1st-height > *,
-.ease-2nd-height > * > * {
-  transition-property: height;
-}
-.ease-bg,
-.ease-1st-bg > *,
-.ease-2nd-bg > * > * {
-  transition-property: background-color;
-}
-.ease-margin,
-.ease-1st-margin > *,
-.ease-2nd-margin > * > * {
-  transition-property: margin;
-}
-.ease-border,
-.ease-1st-border > *,
-.ease-2nd-border > * > * {
-  transition-property: border-color, border-width;
-}
-.ease-position,
-.ease-1st-position > *,
-.ease-2nd-position > * > * {
-  transition-property: top, right, bottom, left;
-}
-.ease-layout,
-.ease-1st-layout > *,
-.ease-2nd-layout > * > * {
-  transition-property: transform, opacity, box-shadow;
-}
-.ease-svg,
-.ease-1st-svg > *,
-.ease-2nd-svg > * > * {
-  transition-property: fill, stroke, opacity;
-}
-.ease-all {
-  transition-property: all;
-}
-.ease-default,
-.ease-default[class*="ease-1st-"] > *,
-.ease-default[class*="ease-2nd-"] > * > * {
-  transition-duration: ease-out !important;
-  transition-timing-function: ease !important;
-}
-.ease-in,
-.ease-in[class*="ease-1st-"] > *,
-.ease-in[class*="ease-2nd-"] > * > * {
-  transition-timing-function: ease-in;
-}
-.ease-out,
-.ease-out[class*="ease-1st-"] > *,
-.ease-out[class*="ease-2nd-"] > * > * {
-  transition-timing-function: ease-out;
-}
-.ease-in-out,
-.ease-in-out[class*="ease-1st-"] > *,
-.ease-in-out[class*="ease-2nd-"] > * > * {
-  transition-timing-function: ease-in-out;
 }
 @keyframes ui-spin {
   from {
@@ -313,7 +208,13 @@ img {
     background-position: 0 0;
   }
 }
-.ui-animate-spin {
+[class*="ui-ease-"],
+[class*="ui-ease-1st-"] > *,
+[class*="ui-ease-2nd-"] > * > * {
+  transition-duration: 0.15s;
+  transition-timing-function: ease-out;
+}
+.ui-animate-pin {
   animation: ui-spin 1.15s linear infinite;
 }
 .ui-animate-progress {
@@ -336,6 +237,105 @@ img {
 .ui-pause-effects *:after {
   transition-property: none !important;
   animation-play-state: paused !important;
+}
+.ui-ease-fast,
+.ui-ease-fast[class*="ui-ease-1st-"] > *,
+.ui-ease-fast[class*="ui-ease-2nd-"] > * > * {
+  transition-duration: 0.1s;
+}
+.ui-ease-slow,
+.ui-ease-slow[class*="ui-ease-1st-"] > *,
+.ui-ease-slow[class*="ui-ease-2nd-"] > * > * {
+  transition-duration: 0.4s;
+}
+.ui-ease-slow-2x,
+.ui-ease-slow-2x[class*="ui-ease-1st-"] > *,
+.ui-ease-slow-2x[class*="ui-ease-2nd-"] > * > * {
+  transition-duration: 0.8s;
+}
+.ui-ease-slow-3x,
+.ui-ease-slow-3x[class*="ui-ease-1st-"] > *,
+.ui-ease-slow-3x[class*="ui-ease-2nd-"] > * > * {
+  transition-duration: 1.2s;
+}
+.ui-ease-slow-4x,
+.ui-ease-slow-4x[class*="ui-ease-1st-"] > *,
+.ui-ease-slow-4x[class*="ui-ease-2nd-"] > * > * {
+  transition-duration: 1.6s;
+}
+.ui-ease-slow-5x,
+.ui-ease-slow-5x[class*="ui-ease-1st-"] > *,
+.ui-ease-slow-5x[class*="ui-ease-2nd-"] > * > * {
+  transition-duration: 2s;
+}
+.ui-ease-color,
+.ui-ease-1st-color > *,
+.ui-ease-2nd-color > * > * {
+  transition-property: color;
+}
+.ui-ease-width,
+.ui-ease-1st-width > *,
+.ui-ease-2nd-width > * > * {
+  transition-property: width;
+}
+.ui-ease-height,
+.ui-ease-1st-height > *,
+.ui-ease-2nd-height > * > * {
+  transition-property: height;
+}
+.ui-ease-bg,
+.ui-ease-1st-bg > *,
+.ui-ease-2nd-bg > * > * {
+  transition-property: background-color;
+}
+.ui-ease-margin,
+.ui-ease-1st-margin > *,
+.ui-ease-2nd-margin > * > * {
+  transition-property: margin;
+}
+.ui-ease-border,
+.ui-ease-1st-border > *,
+.ui-ease-2nd-border > * > * {
+  transition-property: border-color, border-width;
+}
+.ui-ease-position,
+.ui-ease-1st-position > *,
+.ui-ease-2nd-position > * > * {
+  transition-property: top, right, bottom, left;
+}
+.ui-ease-layout,
+.ui-ease-1st-layout > *,
+.ui-ease-2nd-layout > * > * {
+  transition-property: transform, opacity, box-shadow;
+}
+.ui-ease-svg,
+.ui-ease-1st-svg > *,
+.ui-ease-2nd-svg > * > * {
+  transition-property: fill, stroke, opacity;
+}
+.ui-ease-all {
+  transition-property: all;
+}
+.ui-ease-default,
+.ui-ease-default[class*="ui-ease-1st-"] > *,
+.ui-ease-default[class*="ui-ease-2nd-"] > * > * {
+  transition-duration: ease-out !important;
+  transition-timing-function: ease !important;
+}
+.ui-ease-in,
+.ui-ease-in[class*="ui-ease-1st-"] > *,
+.ui-ease-in[class*="ui-ease-2nd-"] > * > * {
+  transition-timing-function: ease-in;
+}
+.ui-ease-out,
+.ui-ease-out[class*="ui-ease-1st-"] > *,
+.ui-ease-out[class*="ui-ease-2nd-"] > * > * {
+  transition-timing-function: ease-out;
+}
+.ui-ease-in-out,
+.ui-ease-in-out[class*="ui-ease-1st-"] > *,
+.ui-ease-in-out[class*="ui-ease-2nd-"] > * > * {
+  transition-timing-function: ease-in-out;
 }
 /* grid */
 .container,
@@ -3927,14 +3927,14 @@ dt {
   }
 }
 /* buttons */
-.ease-btn,
-.ease-1st-btn > *,
-.ease-2nd-btn > * > * {
+.ui-ease-btn,
+.ui-ease-1st-btn > *,
+.ui-ease-2nd-btn > * > * {
   transition-property: color, background-color, border-width, border-color, opacity, transform, box-shadow;
 }
-.ease-btn .icon,
-.ease-1st-btn > * .icon,
-.ease-2nd-btn > * > * .icon {
+.ui-ease-btn .icon,
+.ui-ease-1st-btn > * .icon,
+.ui-ease-2nd-btn > * > * .icon {
   transition-property: color, transform, opacity, stroke-width;
   transition-duration: 0.15s;
 }
@@ -4467,11 +4467,11 @@ dt {
   }
 }
 /* tabs */
-.ease-tabs .tab .toggle-icon {
+.ui-ease-tabs .tab .toggle-icon {
   transition-property: opacity, transform;
   transition-duration: 0.3s;
 }
-.ease-tabs .tab-content {
+.ui-ease-tabs .tab-content {
   transition-property: height, opacity;
   transition-duration: 0.3s;
 }
@@ -4496,20 +4496,20 @@ dt {
   opacity: 0;
 }
 /* dropdown */
-.ease-dropdown li {
+.ui-ease-dropdown li {
   transition-property: background-color;
   transition-duration: 0.15s;
 }
-.ease-dropdown .dropdown-menu {
+.ui-ease-dropdown .dropdown-menu {
   transition-property: opacity, transform;
   transition-duration: 0.15s;
   transition-timing-function: ease-in-out;
 }
-.ease-dropdown > .btn {
+.ui-ease-dropdown > .btn {
   transition-property: color, background-color, border-width, border-color, opacity, transform, box-shadow;
   transition-duration: 0.15s;
 }
-.ease-dropdown > .btn .icon {
+.ui-ease-dropdown > .btn .icon {
   transition-property: color, transform, opacity;
   transition-duration: 0.15s;
 }
@@ -4777,38 +4777,38 @@ dt {
   }
 }
 /* forms */
-.ease-form,
-.ease-1st-form > *,
-.ease-2nd-form > * > * {
+.ui-ease-form,
+.ui-ease-1st-form > *,
+.ui-ease-2nd-form > * > * {
   transition-property: color, background-color, border-color;
 }
-.ease-form .icon,
-.ease-1st-form > * .icon,
-.ease-2nd-form > * > * .icon {
+.ui-ease-form .icon,
+.ui-ease-1st-form > * .icon,
+.ui-ease-2nd-form > * > * .icon {
   transition-property: color, transform, opacity;
   transition-duration: 0.3s;
 }
-.ease-form .state,
-.ease-1st-form > * .state,
-.ease-2nd-form > * > * .state {
+.ui-ease-form .state,
+.ui-ease-1st-form > * .state,
+.ui-ease-2nd-form > * > * .state {
   transition-property: width, height, background-color, transform, opacity;
   transition-duration: 0.15s;
 }
-.ease-form select,
-.ease-1st-form > * select,
-.ease-2nd-form > * > * select {
+.ui-ease-form select,
+.ui-ease-1st-form > * select,
+.ui-ease-2nd-form > * > * select {
   transition-property: opacity;
   transition-duration: 0.15s;
 }
-.ease-form textarea,
-.ease-1st-form > * textarea,
-.ease-2nd-form > * > * textarea {
+.ui-ease-form textarea,
+.ui-ease-1st-form > * textarea,
+.ui-ease-2nd-form > * > * textarea {
   transition-property: height;
   transition-duration: 0.15s;
 }
-.ease-form.file input,
-.ease-1st-form > *.file input,
-.ease-2nd-form > * > *.file input {
+.ui-ease-form.file input,
+.ui-ease-1st-form > *.file input,
+.ui-ease-2nd-form > * > *.file input {
   transition-property: opacity;
   transition-duration: 0.15s;
 }
@@ -5755,14 +5755,14 @@ label.custom {
   background-color: hsla(42, 100%, 61%, 0.65) !important;
 }
 /* autocomplete */
-.ease-autocomplete {
+.ui-ease-autocomplete {
   transition-property: margin-top, opacity;
 }
-.ease-autocomplete ul {
+.ui-ease-autocomplete ul {
   transition-property: opacity;
   transition-duration: 0.15s;
 }
-.ease-autocomplete li {
+.ui-ease-autocomplete li {
   transition-property: background-color;
   transition-duration: 0.15s;
 }
@@ -5967,12 +5967,12 @@ label.custom {
   margin-left: 10px !important;
 }
 /* list group */
-.ease-list-group li,
-.ease-list-group li > a:not(.list-link) {
+.ui-ease-list-group li,
+.ui-ease-list-group li > a:not(.list-link) {
   transition-property: background-color;
   transition-duration: 0.15s;
 }
-.ease-list-group .list-icon:not([class*="ease-"]) {
+.ui-ease-list-group .list-icon:not([class*="ui-ease-"]) {
   transition-property: opacity;
   transition-duration: 0.15s;
 }
@@ -6230,7 +6230,7 @@ label.custom {
   }
 }
 /* tables */
-.ease-table tr {
+.ui-ease-table tr {
   transition-property: background-color;
   transition-duration: 0.15s;
 }
@@ -7277,7 +7277,7 @@ header.sticky-static {
   }
 }
 /* tooltip*/
-.ease-tooltip {
+.ui-ease-tooltip {
   transition-property: top, left, opacity;
 }
 [data-ui-tooltip] {
@@ -7582,19 +7582,19 @@ button.dialog-custom:focus {
   }
 }
 /* calendar */
-.ease-calendar {
+.ui-ease-calendar {
   transition-property: opacity;
 }
-.ease-calendar .calendar-details,
-.ease-calendar thead,
-.ease-calendar tbody {
+.ui-ease-calendar .calendar-details,
+.ui-ease-calendar thead,
+.ui-ease-calendar tbody {
   transition-property: transform, opacity;
   transition-duration: 0.25s;
   transition-timing-function: ease-in-out;
 }
-.ease-calendar button,
-.ease-calendar a,
-.ease-calendar .calendar-details li {
+.ui-ease-calendar button,
+.ui-ease-calendar a,
+.ui-ease-calendar .calendar-details li {
   transition-property: background-color, opacity;
   transition-duration: 0.15s;
 }
@@ -8246,7 +8246,7 @@ button.dialog-custom:focus {
   }
 }
 /* grid list */
-.ease-grid-list .grid-list-content {
+.ui-ease-grid-list .grid-list-content {
   transition-property: background-color;
   transition-duration: 0.15s;
 }
@@ -8304,23 +8304,23 @@ button.dialog-custom:focus {
     background-position: 0 0;
   }
 }
-.ease-image-uploader {
+.ui-ease-image-uploader {
   transition-property: background-color;
   transition-duration: 0.15s;
 }
-.ease-image-uploader .uploader-list {
+.ui-ease-image-uploader .uploader-list {
   transition-property: margin;
   transition-duration: 0.15s;
 }
-.ease-image-uploader .uploader-list > .icon {
+.ui-ease-image-uploader .uploader-list > .icon {
   transition-property: opacity;
   transition-duration: 0.15s;
 }
-.ease-image-uploader .uploader-list li {
+.ui-ease-image-uploader .uploader-list li {
   transition-property: opacity;
   transition-duration: 0.3s;
 }
-.ease-image-uploader .uploader-list li img {
+.ui-ease-image-uploader .uploader-list li img {
   transition-property: transform, box-shadow;
   transition-duration: 0.15s;
 }
@@ -8530,8 +8530,8 @@ button.dialog-custom:focus {
     transform: rotate(360deg);
   }
 }
-.ease-photo-gallery .img:after,
-.ease-photo-gallery .img.has-info > span {
+.ui-ease-photo-gallery .img:after,
+.ui-ease-photo-gallery .img.has-info > span {
   transition-property: opacity;
   transition-duration: 0.15s;
 }
@@ -8922,14 +8922,14 @@ button.dialog-custom:focus {
   transform: scale(1.5);
 }
 /* weather */
-.ease-weather .graphs {
+.ui-ease-weather .graphs {
   transition-property: background-color;
 }
-.ease-weather .graphs,
-.ease-weather .graphs > div {
+.ui-ease-weather .graphs,
+.ui-ease-weather .graphs > div {
   transition-duration: 0.8s;
 }
-.ease-weather .graphs > div {
+.ui-ease-weather .graphs > div {
   transition-property: left;
 }
 .weather {
@@ -9288,7 +9288,7 @@ button.dialog-custom:focus {
     stroke-dashoffset: 0;
   }
 }
-@keyframes ui-ui-line-dashed-dotted {
+@keyframes ui-line-dashed-dotted {
   to {
     opacity: 1;
   }
@@ -9305,7 +9305,7 @@ button.dialog-custom:focus {
     opacity: 1;
   }
 }
-.ease-line-charts circle {
+.ui-ease-line-charts circle {
   transition-property: stroke-width;
   transition-duration: 0.15s;
 }
@@ -9416,7 +9416,7 @@ html:not(.ui-ie) .line-charts.loaded svg path:not(.dashed):not(.dotted):not(.fil
 }
 html:not(.ui-ie) .line-charts.loaded svg path.dashed,
 html:not(.ui-ie) .line-charts.loaded svg path.dotted {
-  animation: ui-ui-line-dashed-dotted 1s 0.6s ease-in forwards;
+  animation: ui-line-dashed-dotted 1s 0.6s ease-in forwards;
 }
 html:not(.ui-ie) .line-charts.loaded svg path.filled {
   animation: ui-line-filled 0.6s forwards;
@@ -9447,7 +9447,7 @@ html:not(.ui-ie) .line-charts.loaded svg circle {
     stroke-dasharray: 0 440;
   }
 }
-.ease-donut-chart circle:not(.donut-bg) {
+.ui-ease-donut-chart circle:not(.donut-bg) {
   transition-property: opacity stroke;
   transition-duration: 0.15s;
   transition-timing-function: ease-in-out;
@@ -9524,8 +9524,8 @@ html:not(.ui-edge) .donut-chart svg:not(.icon) {
     transform: rotate(0deg);
   }
 }
-.ease-pie-chart li,
-.ease-pie-chart > div span {
+.ui-ease-pie-chart li,
+.ui-ease-pie-chart > div span {
   transition-property: opacity;
   transition-duration: 0.3s;
 }

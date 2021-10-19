@@ -17,7 +17,7 @@ ui.loadingMask = {
     nameOpenEase: 'open-ease',
 
     // styling classnames
-    stylesLoader: 'ease-layout',
+    stylesLoader: 'ui-ease-layout',
 
     // values
     loadingBox: '-128 -12 288 288',

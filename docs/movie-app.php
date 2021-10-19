@@ -8,7 +8,7 @@
 
                 <div class="align-l padding-10 icons-no-opacity icons-margin-10-r form-lg add-mobile-menu-l">
                     <h5 class="font-color-white-50 padding-15 margin-5-b">LIBRARY</h5>
-                    <ul class="list-unstyled list-spacer-15 large font-bold block-2nd ease-2nd-btn">
+                    <ul class="list-unstyled list-spacer-15 large font-bold block-2nd ui-ease-2nd-btn">
                         <li>
                             <a class="btn btn-ghost circle" href="#">
                                 <svg class="icon"><use href="#tv"/></svg>
@@ -50,7 +50,7 @@
                     <span class="sp-30"></span>
 
                     <h5 class="font-color-white-50 padding-15 margin-5-b">NEWS &amp; EVENTS</h5>
-                    <ul class="list-unstyled list-spacer-15 font-color-white-50 large block-2nd ease-2nd-btn">
+                    <ul class="list-unstyled list-spacer-15 font-color-white-50 large block-2nd ui-ease-2nd-btn">
                         <li>
                             <a class="btn btn-ghost circle" href="#">
                                 <svg class="icon"><use href="#news"/></svg>
@@ -80,7 +80,7 @@
                 <div class="padding-30 no-padding-b md-no-padding">
 
                     <header class="row no-row-gap-t sticky-md icons-no-opacity form-lg" data-ui-classes="shadow-lg">
-                        <div class="col-6 hidden-md ease-1st-form">
+                        <div class="col-6 hidden-md ui-ease-1st-form">
                             <div class="text text-icon-both margin-15-b circle no-border ui-theme-gray ui-fill-light-300 has-clear">
                                 <svg class="icon text-icon-l"><use href="#search"/></svg>
                                 <button type="button" class="clear-form">
@@ -90,11 +90,11 @@
                             </div>
                         </div>
                         <div class="col-6 align-r">
-                            <span class="align-c font-color-black-50 margin-20-r sm-no-margin ease-1st-btn">
+                            <span class="align-c font-color-black-50 margin-20-r sm-no-margin ui-ease-1st-btn">
                                 <button class="btn btn-square btn-ghost margin-10-l circle left show-mobile-menu-l visible-md">
                                     <svg class="icon"><use href="#bars-left"/></svg>
                                 </button>
-                                <button class="btn btn-square btn-ghost circle ease-btn visible-md" onclick="ui.modal.open({source: '.search', bg: 'false'});" data-ui-tooltip data-ui-only="desktop" title="Search">
+                                <button class="btn btn-square btn-ghost circle ui-ease-btn visible-md" onclick="ui.modal.open({source: '.search', bg: 'false'});" data-ui-tooltip data-ui-only="desktop" title="Search">
                                     <svg class="icon"><use href="#search"/></svg>
                                 </button>
                                 <button class="btn btn-square btn-ghost circle">
@@ -126,7 +126,7 @@
                             <div class="col-static">
                                 <div class="col-350">
                                     <div class="round set-relative">
-                                        <button class="btn full-w full-h set-absolute opacity-more ease-layout" onclick="ui.modal.open({source: 'https://www.imdb.com/videoembed/vi4235180569', size: '722x300', type: 'iframe'});">
+                                        <button class="btn full-w full-h set-absolute opacity-more ui-ease-layout" onclick="ui.modal.open({source: 'https://www.imdb.com/videoembed/vi4235180569', size: '722x300', type: 'iframe'});">
                                             <svg class="icon icon-xxl icon-default font-color-white set-absolute set-c"><use href="#video"/></svg>
                                         </button>
                                         <img class="img-fluid round shadow-lg" src="img/video-poster.jpg" alt="">
@@ -138,11 +138,11 @@
                                         <h2 class="font-bold">Related Video</h2>
                                         <b class="large">Captain Marvel (2019)</b>
                                         <p class="margin-10-v">After crashing an experimental aircraft, Air Force pilot Carol Danvers is discovered by the Kree and trained as a member of the elite Starforce Military under the command of her mentor Yon-Rogg. Six years later, after escaping to Earth while under attack by the Skrulls.</p>
-                                        <div class="photos-holder padding-15-h hover-scale-more-2nd ease-2nd-layout">
+                                        <div class="photos-holder padding-15-h hover-scale-more-2nd ui-ease-2nd-layout">
                                             <a href="#"><img class="img-photo border-lg circle" src="img/profile-image.jpg" alt=""></a>
                                             <a href="#"><img class="img-photo border-lg circle" src="img/profile-image2.jpg" alt=""></a>
                                             <a href="#"><img class="img-photo border-lg circle" src="img/profile-image3.jpg" alt=""></a>
-                                            <a class="btn btn-lg circle ease-btn" href="#">+38</a>
+                                            <a class="btn btn-lg circle ui-ease-btn" href="#">+38</a>
                                         </div>
                                     </div>
                                 </div>
@@ -156,9 +156,9 @@
                 </div>
 
                 <div class="carousel half-sized margin-15-h md-no-margin" data-ui-col-xl="8" data-ui-col-lg="6" data-ui-col="3" data-ui-col-md="4" data-ui-col-sm="4" data-ui-col-xs="2">
-                    <div class="carousel-slider block-2nd hover-scale-2nd ease-layout ease-2nd-layout ease-slow ease-in-out">
+                    <div class="carousel-slider block-2nd hover-scale-2nd ui-ease-layout ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
                         <div class="slide-content padding-15">
-                            <a class="ease-default" href="#">
+                            <a class="ui-ease-default" href="#">
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_01.jpg" alt="">
                                 <b class="large">Captain Marvel</b>
                                 <span class="font-color-black-50 margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
@@ -169,7 +169,7 @@
                             </a>
                         </div>
                         <div class="slide-content padding-15">
-                            <a class="ease-default" href="#">
+                            <a class="ui-ease-default" href="#">
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_02.jpg" alt="">
                                 <b class="large">Avengers: Endgame</b>
                                 <span class="font-color-black-50 margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
@@ -180,7 +180,7 @@
                             </a>
                         </div>
                         <div class="slide-content padding-15">
-                            <a class="ease-default" href="#">
+                            <a class="ui-ease-default" href="#">
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_03.jpg" alt="">
                                 <b class="large">Captain America</b>
                                 <span class="font-color-black-50 margin-5-b block">2014 &nbsp; Action, Sci-Fi</span>
@@ -191,7 +191,7 @@
                             </a>
                         </div>
                         <div class="slide-content padding-15">
-                            <a class="ease-default" href="#">
+                            <a class="ui-ease-default" href="#">
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_04.jpg" alt="">
                                 <b class="large">Ant-Man</b>
                                 <span class="font-color-black-50 margin-5-b block">2015 &nbsp; Action, Comedy</span>
@@ -202,7 +202,7 @@
                             </a>
                         </div>
                         <div class="slide-content padding-15">
-                            <a class="ease-default" href="#">
+                            <a class="ui-ease-default" href="#">
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_05.jpg" alt="">
                                 <b class="large">Venom</b>
                                 <span class="font-color-black-50 margin-5-b block">2018 &nbsp; Action, Thriller</span>
@@ -213,7 +213,7 @@
                             </a>
                         </div>
                         <div class="slide-content padding-15">
-                            <a class="ease-default" href="#">
+                            <a class="ui-ease-default" href="#">
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_06.jpg" alt="">
                                 <b class="large">Justice League</b>
                                 <span class="font-color-black-50 margin-5-b block">2017 &nbsp; Action, Fantasy</span>
@@ -224,7 +224,7 @@
                             </a>
                         </div>
                         <div class="slide-content padding-15">
-                            <a class="ease-default" href="#">
+                            <a class="ui-ease-default" href="#">
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_01.jpg" alt="">
                                 <b class="large">Captain Marvel</b>
                                 <span class="font-color-black-50 margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
@@ -235,7 +235,7 @@
                             </a>
                         </div>
                         <div class="slide-content padding-15">
-                            <a class="ease-default" href="#">
+                            <a class="ui-ease-default" href="#">
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_02.jpg" alt="">
                                 <b class="large">Avengers: Endgame</b>
                                 <span class="font-color-black-50 margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
@@ -246,7 +246,7 @@
                             </a>
                         </div>
                         <div class="slide-content padding-15">
-                            <a class="ease-default" href="#">
+                            <a class="ui-ease-default" href="#">
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_03.jpg" alt="">
                                 <b class="large">Captain America</b>
                                 <span class="font-color-black-50 margin-5-b block">2014 &nbsp; Action, Sci-Fi</span>
@@ -257,7 +257,7 @@
                             </a>
                         </div>
                         <div class="slide-content padding-15">
-                            <a class="ease-default" href="#">
+                            <a class="ui-ease-default" href="#">
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_04.jpg" alt="">
                                 <b class="large">Ant-Man</b>
                                 <span class="font-color-black-50 margin-5-b block">2015 &nbsp; Action, Comedy</span>
@@ -268,7 +268,7 @@
                             </a>
                         </div>
                         <div class="slide-content padding-15">
-                            <a class="ease-default" href="#">
+                            <a class="ui-ease-default" href="#">
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_05.jpg" alt="">
                                 <b class="large">Venom</b>
                                 <span class="font-color-black-50 margin-5-b block">2018 &nbsp; Action, Thriller</span>
@@ -279,7 +279,7 @@
                             </a>
                         </div>
                         <div class="slide-content padding-15">
-                            <a class="ease-default" href="#">
+                            <a class="ui-ease-default" href="#">
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_06.jpg" alt="">
                                 <b class="large">Justice League</b>
                                 <span class="font-color-black-50 margin-5-b block">2017 &nbsp; Action, Fantasy</span>
@@ -290,7 +290,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="carousel-nav ease-1st-btn">
+                    <div class="carousel-nav ui-ease-1st-btn">
                         <button class="carousel-prev btn btn-ghost btn-square round">
                             <svg class="icon"><use href="#angle-left"/></svg>
                         </button>
@@ -308,81 +308,81 @@
                 </div>
 
                 <div class="carousel half-sized margin-15-h md-no-margin" data-ui-col-xl="6" data-ui-col-lg="6" data-ui-col="3" data-ui-col-md="4" data-ui-col-sm="4" data-ui-col-xs="2">
-                    <div class="carousel-slider block-2nd hover-scale-2nd ease-layout ease-2nd-layout ease-slow ease-in-out">
+                    <div class="carousel-slider block-2nd hover-scale-2nd ui-ease-layout ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
                         <div class="slide-content padding-15">
-                            <a class="ease-default" href="#">
+                            <a class="ui-ease-default" href="#">
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_category_01.jpg" alt="">
                                 <b class="large">Action</b>
                             </a>
                         </div>
                         <div class="slide-content padding-15">
-                            <a class="ease-default" href="#">
+                            <a class="ui-ease-default" href="#">
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_category_02.jpg" alt="">
                                 <b class="large">Adventure</b>
                             </a>
                         </div>
                         <div class="slide-content padding-15">
-                            <a class="ease-default" href="#">
+                            <a class="ui-ease-default" href="#">
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_category_03.jpg" alt="">
                                 <b class="large">Comedy</b>
                             </a>
                         </div>
                         <div class="slide-content padding-15">
-                            <a class="ease-default" href="#">
+                            <a class="ui-ease-default" href="#">
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_category_04.jpg" alt="">
                                 <b class="large">Sci-Fi</b>
                             </a>
                         </div>
                         <div class="slide-content padding-15">
-                            <a class="ease-default" href="#">
+                            <a class="ui-ease-default" href="#">
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_category_05.jpg" alt="">
                                 <b class="large">Animation</b>
                             </a>
                         </div>
                         <div class="slide-content padding-15">
-                            <a class="ease-default" href="#">
+                            <a class="ui-ease-default" href="#">
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_category_06.jpg" alt="">
                                 <b class="large">Horror</b>
                             </a>
                         </div>
                         <div class="slide-content padding-15">
-                            <a class="ease-default" href="#">
+                            <a class="ui-ease-default" href="#">
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_category_01.jpg" alt="">
                                 <b class="large">Action</b>
                             </a>
                         </div>
                         <div class="slide-content padding-15">
-                            <a class="ease-default" href="#">
+                            <a class="ui-ease-default" href="#">
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_category_02.jpg" alt="">
                                 <b class="large">Adventure</b>
                             </a>
                         </div>
                         <div class="slide-content padding-15">
-                            <a class="ease-default" href="#">
+                            <a class="ui-ease-default" href="#">
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_category_03.jpg" alt="">
                                 <b class="large">Comedy</b>
                             </a>
                         </div>
                         <div class="slide-content padding-15">
-                            <a class="ease-default" href="#">
+                            <a class="ui-ease-default" href="#">
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_category_04.jpg" alt="">
                                 <b class="large">Sci-Fi</b>
                             </a>
                         </div>
                         <div class="slide-content padding-15">
-                            <a class="ease-default" href="#">
+                            <a class="ui-ease-default" href="#">
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_category_05.jpg" alt="">
                                 <b class="large">Animation</b>
                             </a>
                         </div>
                         <div class="slide-content padding-15">
-                            <a class="ease-default" href="#">
+                            <a class="ui-ease-default" href="#">
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_category_06.jpg" alt="">
                                 <b class="large">Horror</b>
                             </a>
                         </div>
                     </div>
-                    <div class="carousel-nav ease-1st-btn">
+                    <div class="carousel-nav ui-ease-1st-btn">
                         <button class="carousel-prev btn btn-ghost btn-square round">
                             <svg class="icon"><use href="#angle-left"/></svg>
                         </button>
@@ -401,9 +401,9 @@
 </main>
 
 <!-- mobile menu -->
-<div class="mobile-menu show-l ui-fill-dark-100 ease-layout ease-in-out">
+<div class="mobile-menu show-l ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
     <div class="mobile-menu-title padding-20-v x-large border-b">
-        <button class="btn btn-square btn-lg btn-ghost round ease-btn close-mobile-menu">
+        <button class="btn btn-square btn-lg btn-ghost round ui-ease-btn close-mobile-menu">
             <svg class="icon no-opacity"><use href="#remove"/></svg>
         </button>
         Categories
@@ -421,8 +421,8 @@
 
             <div class="col-static no-fluid">
                 <div class="row no-row-gap-h">
-                    <div class="col-12 ease-1st-form">
-                        <div class="text text-icon has-clear round-l no-border shadow-in-sm ui-theme-gray ui-fill-light-300 ease-form">
+                    <div class="col-12 ui-ease-1st-form">
+                        <div class="text text-icon has-clear round-l no-border shadow-in-sm ui-theme-gray ui-fill-light-300 ui-ease-form">
                             <button type="button" class="clear-form">
                                 <svg class="icon"><use href="#remove"/></svg>
                             </button>
@@ -432,13 +432,13 @@
                     </div>
                 </div>
                 <div class="col-100 col-xs-50 padding-10-v">
-                    <button class="btn block round-r ui-theme-sub ui-fill-dark-100 ease-btn" type="submit">
+                    <button class="btn block round-r ui-theme-sub ui-fill-dark-100 ui-ease-btn" type="submit">
                         <svg class="icon"><use href="#search"/></svg>
                     </button>
                 </div>
             </div>
 
-            <div class="row no-fluid icons-xxl block-2nd icons-no-opacity icons-margin-5-v hover-t-more-2nd ui-theme-base ease-2nd-btn">
+            <div class="row no-fluid icons-xxl block-2nd icons-no-opacity icons-margin-5-v hover-t-more-2nd ui-theme-base ui-ease-2nd-btn">
                 <div class="col-4 padding-10-b">
                     <a class="btn btn-multi no-line-height round ui-fill-dark-100" href="#">
                         <svg class="icon"><use href="#tv"/></svg>

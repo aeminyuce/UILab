@@ -97,16 +97,18 @@
     --ui-form-readonly-color: @form-readonly-color-dark;
 }
 
-.ease- {
-    &form,&1st-form > *,&2nd-form > * > * {
-        transition-property: color, background-color, border-color;
+.ui {
+    &-ease- {
+        &form,&1st-form > *,&2nd-form > * > * {
+            transition-property: color, background-color, border-color;
 
-        .icon { transition-property: color, transform, opacity; transition-duration: (@ease-default * 2); }
-        .state { transition-property: width, height, background-color, transform, opacity; transition-duration: @ease-default; }
-        select { transition-property: opacity; transition-duration: @ease-default; }
-        textarea { transition-property: height; transition-duration: @ease-default; }
-        &.file {
-            input { transition-property: opacity; transition-duration: @ease-default; }
+            .icon { transition-property: color, transform, opacity; transition-duration: (@ease-default * 2); }
+            .state { transition-property: width, height, background-color, transform, opacity; transition-duration: @ease-default; }
+            select { transition-property: opacity; transition-duration: @ease-default; }
+            textarea { transition-property: height; transition-duration: @ease-default; }
+            &.file {
+                input { transition-property: opacity; transition-duration: @ease-default; }
+            }
         }
     }
 }

@@ -18,12 +18,12 @@
                         <div class="col-12 align-r">
 
                             <div class="hidden-sm">
-                                <div class="ease-1st-btn icons-no-opacity form-lg add-mobile-menu-r">
+                                <div class="ui-ease-1st-btn icons-no-opacity form-lg add-mobile-menu-r">
                                     <a class="btn btn-sm-fluid btn-ghost" href="#">
                                         <svg class="icon margin-5-r visible-sm"><use href="#home"/></svg>
                                         <b>Home</b>
                                     </a>
-                                    <div class="dropdown ease-dropdown">
+                                    <div class="dropdown ui-ease-dropdown">
                                         <button class="btn btn-sm-fluid btn-ghost">
                                             <svg class="icon margin-5-r visible-sm"><use href="#box"/></svg>
                                             <b>Products</b>
@@ -63,7 +63,7 @@
                                 </div>
                             </div>
 
-                            <button class="btn btn-lg btn-square btn-ghost ui-color ease-btn show-mobile-menu-r visible-sm">
+                            <button class="btn btn-lg btn-square btn-ghost ui-color ui-ease-btn show-mobile-menu-r visible-sm">
                                 <svg class="icon no-opacity"><use href="#bars"/></svg>
                             </button>
 
@@ -80,11 +80,11 @@
 <main class="container no-gutter">
 
     <!-- tab banner: start -->
-    <div class="tabs form-lg ease-tabs" data-ui-classes="ui-color border-b border-lg ui-stroke">
+    <div class="tabs form-lg ui-ease-tabs" data-ui-classes="ui-color border-b border-lg ui-stroke">
 
         <div class="fixed padding-10-t ui-theme-farmer2">
             <div class="row no-row-gap-v icons-no-opacity icons-margin-5-r">
-                <div class="col-12 xs-align-l align-c ease-1st-btn">
+                <div class="col-12 xs-align-l align-c ui-ease-1st-btn">
                     <button class="tab btn btn-xs-fluid btn-ghost margin-1-b ui-color border-b border-lg ui-stroke active">
                         <svg class="icon"><use href="#factory"/></svg>
                         Long Term Investment
@@ -111,7 +111,7 @@
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
                                 <p class="highlight xx-large font-color-white-50">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
-                                <a href="#" class="btn btn-xs-fluid padding-30-h ui-fill-dark-100 ease-btn">
+                                <a href="#" class="btn btn-xs-fluid padding-30-h ui-fill-dark-100 ui-ease-btn">
                                     <svg class="icon margin-5-r"><use href="#moneys"/></svg>
                                     <b>Invest Now</b>
                                 </a>
@@ -127,7 +127,7 @@
                                     <span class="sp-30 hidden-md"></span>
                                     <h3 class="font-bold xx-large">Long term investment</h3>
                                     <p class="highlight x-large">Consider terms that have long term investment program.</p>
-                                    <a href="#" class="btn block ui-theme-farmer2 ui-fill-dark-100 ease-btn">
+                                    <a href="#" class="btn block ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                                         <b>Learn more</b>
                                         <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                                     </a>
@@ -149,7 +149,7 @@
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
                                 <p class="highlight xx-large font-color-white-50">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
-                                <a href="#" class="btn btn-xs-fluid padding-30-h ui-fill-dark-100 ease-btn">
+                                <a href="#" class="btn btn-xs-fluid padding-30-h ui-fill-dark-100 ui-ease-btn">
                                     <svg class="icon margin-5-r"><use href="#moneys"/></svg>
                                     <b>Invest Now</b>
                                 </a>
@@ -165,7 +165,7 @@
                                     <span class="sp-30"></span>
                                     <h3 class="font-bold xx-large">Connect with Our Farmers</h3>
                                     <p class="highlight x-large">Consider terms that connect with our farmers program.</p>
-                                    <a href="#" class="btn block ui-theme-farmer2 ui-fill-dark-100 ease-btn">
+                                    <a href="#" class="btn block ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                                         <b>Learn more</b>
                                         <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                                     </a>
@@ -187,7 +187,7 @@
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
                                 <p class="highlight xx-large font-color-white-50">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
-                                <a href="#" class="btn btn-xs-fluid padding-30-h ui-fill-dark-100 ease-btn">
+                                <a href="#" class="btn btn-xs-fluid padding-30-h ui-fill-dark-100 ui-ease-btn">
                                     <svg class="icon margin-5-r"><use href="#moneys"/></svg>
                                     <b>Invest Now</b>
                                 </a>
@@ -203,7 +203,7 @@
                                     <span class="sp-30"></span>
                                     <h3 class="font-bold xx-large">Social Impact Investment</h3>
                                     <p class="highlight x-large">Consider terms that have social impact investment program.</p>
-                                    <a href="#" class="btn block ui-theme-farmer2 ui-fill-dark-100 ease-btn">
+                                    <a href="#" class="btn block ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                                         <b>Learn more</b>
                                         <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                                     </a>
@@ -223,98 +223,98 @@
     <!-- home links: start -->
     <div class="home-links fixed align-c form-lg ui-theme-farmer2 set-relative">
         <div class="carousel" data-ui-col="4" data-ui-col-md="2" data-ui-col-sm="2" data-ui-col-xs="1" data-ui-slide="4000">
-            <div class="carousel-slider icons-xxl hover-shadow-2nd hover-scale-2nd ease-layout ease-slow-2x ease-in-out">
+            <div class="carousel-slider icons-xxl hover-shadow-2nd hover-scale-2nd ui-ease-layout ui-ease-slow-2x ui-ease-in-out">
 
                 <div class="slide-content padding-15">
-                    <div class="card padding-15 full-h shadow-lg ease-layout">
+                    <div class="card padding-15 full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
                         <svg class="icon ui-color"><use href="#leaf"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Planting</h3>
                         <p class="highlight large font-color-black-50">Complete range of lands caping services.</p>
-                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
                 <div class="slide-content padding-15">
-                    <div class="card padding-15 full-h shadow-lg ease-layout">
+                    <div class="card padding-15 full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
                         <svg class="icon ui-color"><use href="#wind-sock"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Garden Care</h3>
                         <p class="highlight large font-color-black-50">Resolving environmental problems with best results.</p>
-                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
                 <div class="slide-content padding-15">
-                    <div class="card padding-15 full-h shadow-lg ease-layout">
+                    <div class="card padding-15 full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
                         <svg class="icon ui-color"><use href="#water"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Irrigation System</h3>
                         <p class="highlight large font-color-black-50">Idea of denouncing pleasure and praising.</p>
-                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
                 <div class="slide-content padding-15">
-                    <div class="card padding-15 full-h shadow-lg ease-layout">
+                    <div class="card padding-15 full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
                         <svg class="icon ui-color"><use href="#land"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Hardscaping</h3>
                         <p class="highlight large font-color-black-50">Placing int the landscape with great pleasure.</p>
-                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
                 <div class="slide-content padding-15">
-                    <div class="card padding-15 full-h shadow-lg ease-layout">
+                    <div class="card padding-15 full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
                         <svg class="icon ui-color"><use href="#leaf"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Planting</h3>
                         <p class="highlight large font-color-black-50">Complete range of lands caping services.</p>
-                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
                 <div class="slide-content padding-15">
-                    <div class="card padding-15 full-h shadow-lg ease-layout">
+                    <div class="card padding-15 full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
                         <svg class="icon ui-color"><use href="#wind-sock"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Garden Care</h3>
                         <p class="highlight large font-color-black-50">Resolving environmental problems with best results.</p>
-                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
                 <div class="slide-content padding-15">
-                    <div class="card padding-15 full-h shadow-lg ease-layout">
+                    <div class="card padding-15 full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
                         <svg class="icon ui-color"><use href="#water"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Irrigation System</h3>
                         <p class="highlight large font-color-black-50">Idea of denouncing pleasure and praising.</p>
-                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
                 <div class="slide-content padding-15">
-                    <div class="card padding-15 full-h shadow-lg ease-layout">
+                    <div class="card padding-15 full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
                         <svg class="icon ui-color"><use href="#land"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Hardscaping</h3>
                         <p class="highlight large font-color-black-50">Placing int the landscape with great pleasure.</p>
-                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
             </div>
-            <div class="carousel-nav margin-10-t icons-no-opacity ease-1st-btn">
+            <div class="carousel-nav margin-10-t icons-no-opacity ui-ease-1st-btn">
                 <button class="carousel-prev btn btn-square btn-ghost ui-fill-dark-100">
                     <svg class="icon ui-color"><use href="#arrow-left"/></svg>
                 </button>
@@ -338,11 +338,11 @@
                 </div>
             </div>
         </div>
-        <div class="tabs form-lg border-t padding-10-t ease-tabs" data-ui-classes="ui-color border-b border-lg ui-stroke">
+        <div class="tabs form-lg border-t padding-10-t ui-ease-tabs" data-ui-classes="ui-color border-b border-lg ui-stroke">
 
             <div class="fixed">
                 <div class="row no-row-gap-v icons-no-opacity icons-margin-5-r">
-                    <div class="col-12 xs-align-l align-c ease-1st-btn">
+                    <div class="col-12 xs-align-l align-c ui-ease-1st-btn">
                         <button class="tab btn btn-xs-fluid btn-ghost margin-1-b ui-color border-b border-lg ui-stroke active">
                             <svg class="icon ui-color"><use href="#building"/></svg>
                             Company
@@ -363,7 +363,7 @@
             <div class="tab-content padding-10 open open-ease">
                 <div class="row sm-fluid icons-sm hover-shadow-2nd hover-t-2nd">
                     <div class="col-3 col-md-6">
-                        <a class="card full-h shadow ease-layout" href="#">
+                        <a class="card full-h shadow ui-ease-layout" href="#">
 
                             <span class="padding-15 block">
                                 <span class="xx-large block">Ready to modern agriculture.</span>
@@ -387,7 +387,7 @@
                         </a>
                     </div>
                     <div class="col-3 col-md-6">
-                        <a class="card full-h shadow ease-layout" href="#">
+                        <a class="card full-h shadow ui-ease-layout" href="#">
 
                             <span class="padding-15 block">
                                 <span class="xx-large block">Farmers happy now.</span>
@@ -411,7 +411,7 @@
                         </a>
                     </div>
                     <div class="col-3 col-md-6">
-                        <a class="card full-h shadow ease-layout" href="#">
+                        <a class="card full-h shadow ui-ease-layout" href="#">
 
                             <span class="padding-15 block">
                                 <span class="xx-large block">New market prospects.</span>
@@ -435,7 +435,7 @@
                         </a>
                     </div>
                     <div class="col-3 col-md-6">
-                        <a class="card full-h shadow ease-layout" href="#">
+                        <a class="card full-h shadow ui-ease-layout" href="#">
 
                             <span class="padding-15 block">
                                 <span class="xx-large block">About product breeding</span>
@@ -460,7 +460,7 @@
                     </div>
                 </div>
                 <div class="align-c padding-30-t padding-10-b">
-                    <a href="#" class="btn btn-xs-fluid padding-30-h ui-theme-farmer2 ui-fill-dark-100 ease-btn">
+                    <a href="#" class="btn btn-xs-fluid padding-30-h ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                         <b>View all company news</b> <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                     </a>
                 </div>
@@ -468,7 +468,7 @@
             <div class="tab-content padding-10">
                 <div class="row sm-fluid">
                     <div class="col-3 col-md-6">
-                        <a class="card full-h shadow ease-layout" href="#">
+                        <a class="card full-h shadow ui-ease-layout" href="#">
 
                             <span class="padding-15 block">
                                 <span class="xx-large block">Farmers happy now.</span>
@@ -492,7 +492,7 @@
                         </a>
                     </div>
                     <div class="col-3 col-md-6">
-                        <a class="card full-h shadow ease-layout" href="#">
+                        <a class="card full-h shadow ui-ease-layout" href="#">
 
                             <span class="padding-15 block">
                                 <span class="xx-large block">New market prospects.</span>
@@ -516,7 +516,7 @@
                         </a>
                     </div>
                     <div class="col-3 col-md-6">
-                        <a class="card full-h shadow ease-layout" href="#">
+                        <a class="card full-h shadow ui-ease-layout" href="#">
 
                             <span class="padding-15 block">
                                 <span class="xx-large block">About product breeding</span>
@@ -540,7 +540,7 @@
                         </a>
                     </div>
                     <div class="col-3 col-md-6">
-                        <a class="card full-h shadow ease-layout" href="#">
+                        <a class="card full-h shadow ui-ease-layout" href="#">
 
                             <span class="padding-15 block">
                                 <span class="xx-large block">Ready to modern agriculture.</span>
@@ -565,7 +565,7 @@
                     </div>
                 </div>
                 <div class="align-c padding-30-t padding-10-b">
-                    <a href="#" class="btn btn-xs-fluid padding-30-h ui-theme-farmer2 ui-fill-dark-100 ease-btn">
+                    <a href="#" class="btn btn-xs-fluid padding-30-h ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                         <b>View all social news</b> <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                     </a>
                 </div>
@@ -573,7 +573,7 @@
             <div class="tab-content padding-10">
                 <div class="row sm-fluid">
                     <div class="col-3 col-md-6">
-                        <a class="card full-h shadow ease-layout" href="#">
+                        <a class="card full-h shadow ui-ease-layout" href="#">
 
                             <span class="padding-15 block">
                                 <span class="xx-large block">Farmers happy now.</span>
@@ -597,7 +597,7 @@
                         </a>
                     </div>
                     <div class="col-3 col-md-6">
-                        <a class="card full-h shadow ease-layout" href="#">
+                        <a class="card full-h shadow ui-ease-layout" href="#">
 
                             <span class="padding-15 block">
                                 <span class="xx-large block">Ready to modern agriculture.</span>
@@ -621,7 +621,7 @@
                         </a>
                     </div>
                     <div class="col-3 col-md-6">
-                        <a class="card full-h shadow ease-layout" href="#">
+                        <a class="card full-h shadow ui-ease-layout" href="#">
 
                             <span class="padding-15 block">
                                 <span class="xx-large block">About product breeding</span>
@@ -645,7 +645,7 @@
                         </a>
                     </div>
                     <div class="col-3 col-md-6">
-                        <a class="card full-h shadow ease-layout" href="#">
+                        <a class="card full-h shadow ui-ease-layout" href="#">
 
                             <span class="padding-15 block">
                                 <span class="xx-large block">New market prospects.</span>
@@ -670,7 +670,7 @@
                     </div>
                 </div>
                 <div class="align-c padding-30-t padding-10-b">
-                    <a href="#" class="btn btn-xs-fluid padding-30-h ui-theme-farmer2 ui-fill-dark-100 ease-btn">
+                    <a href="#" class="btn btn-xs-fluid padding-30-h ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                         <b>View all customer news</b> <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                     </a>
                 </div>
@@ -691,7 +691,7 @@
 
                 <span class="sp-30 margin-10-v"></span>
 
-                <ul class="photo-gallery block-2nd has-cover ease-photo-gallery">
+                <ul class="photo-gallery block-2nd has-cover ui-ease-photo-gallery">
                     <li>
                         <a class="img has-info show-info" href="img/agriculture/md01.jpg">
                             <img src="img/agriculture/md01.jpg" alt="">
@@ -758,7 +758,7 @@
                 <div class="col-static">
                     <div class="row">
                         <div class="col-12">
-                            <div class="line-charts ease-line-charts" data-ui-size="10,30" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <div class="line-charts ui-ease-line-charts" data-ui-size="10,30" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                                 <ul class="lines" data-ui-name="Last year" data-ui-type="filled">
                                     <li data-ui-y="30" data-ui-link="#1"></li>
                                     <li data-ui-y="50" data-ui-link="#2"></li>
@@ -789,7 +789,7 @@
                             <span class="sp-15"></span>
                             Pellentesque mattis sed diam a rutrum. Sed fermentum accumsan egestas.
                         </p>
-                        <a href="#" class="btn btn-lg btn-xs-fluid padding-20-h margin-30-b ui-theme-farmer2 ui-fill-dark-100 ease-btn">
+                        <a href="#" class="btn btn-lg btn-xs-fluid padding-20-h margin-30-b ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                             <b>View all statistics</b>
                             <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                         </a>
@@ -847,7 +847,7 @@
                     <div class="footer-social padding-15 icons-no-opacity">
                         <div class="card padding-30 shadow-lg ui-theme-farmer ui-fill-dark-100">
                             <h4 class="margin-15-b">Social</h4>
-                            <div class="font-color-black form-lg ease-1st-btn">
+                            <div class="font-color-black form-lg ui-ease-1st-btn">
                                 <a class="btn btn-ghost btn-square" href="#" target="_blank">
                                     <svg class="icon"><use href="#facebook"/></svg>
                                 </a>
@@ -880,13 +880,13 @@
                                 <div class="form-holder col-static no-fluid form-lg">
                                     <div class="row no-row-gap">
                                         <div class="col-12">
-                                            <div class="text no-border bg-white invert-bg ease-form">
+                                            <div class="text no-border bg-white invert-bg ui-ease-form">
                                                 <input class="required" type="email" maxlength="4" placeholder="your@email.com">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-42">
-                                        <button class="btn btn-square ui-theme-farmer2 ui-fill-dark-100 ease-btn">
+                                        <button class="btn btn-square ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                                             <svg class="icon"><use href="#send"/></svg>
                                         </button>
                                     </div>
@@ -905,7 +905,7 @@
 <!-- footer: end -->
 
 <!-- page social -->
-<div class="page-social icons-lg icons-no-opacity form-lg ease-1st-btn">
+<div class="page-social icons-lg icons-no-opacity form-lg ui-ease-1st-btn">
     <a class="btn btn-square btn-facebook" href="#" target="_blank" data-ui-tooltip="r" title="Facebook">
         <svg class="icon"><use href="#facebook"/></svg>
     </a>
@@ -930,9 +930,9 @@
 </div>
 
 <!-- mobile menu -->
-<div class="mobile-menu show-r ease-layout ease-in-out">
+<div class="mobile-menu show-r ui-ease-layout ui-ease-in-out">
     <div class="mobile-menu-title border-b">
-        <button class="btn btn-square btn-lg btn-ghost ease-btn close-mobile-menu">
+        <button class="btn btn-square btn-lg btn-ghost ui-ease-btn close-mobile-menu">
             <svg class="icon no-opacity"><use href="#remove"/></svg>
         </button>
         <a href="#"><img src="img/agriculture/logo.png" alt="" srcset="img/agriculture/logo@2x.png 2x"></a>

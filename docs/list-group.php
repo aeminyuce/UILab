@@ -6,7 +6,7 @@
                 <h4>List Group Examples</h4>
 
                 <div class="list-group border round">
-                    <ul class="ease-list-group">
+                    <ul class="ui-ease-list-group">
                         <li>Lorem ipsum dolor sit amet.</li>
                         <li>Sed finibus rhoncus.</li>
                         <li>Lorem ipsum dolor sit amet.</li>
@@ -17,48 +17,7 @@
                 <span class="sp-30"></span>
 
                 <div class="list-group border round">
-                    <ul class="list-column-2 ease-list-group">
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Sed finibus rhoncus.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Sed finibus rhoncus.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Sed finibus rhoncus.</li>
-                    </ul>
-                </div>
-
-                <span class="sp-30"></span>
-
-                <div class="list-group border round">
-                    <ul class="list-column-3 ease-list-group">
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Sed finibus rhoncus.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Sed finibus rhoncus.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Sed finibus rhoncus.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Sed finibus rhoncus.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Sed finibus rhoncus.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Sed finibus rhoncus.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Sed finibus rhoncus.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                    </ul>
-                </div>
-
-                <span class="sp-30"></span>
-
-                <div class="list-group border round">
-                    <ul class="list-column-4 ease-list-group">
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Sed finibus rhoncus.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Sed finibus rhoncus.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Sed finibus rhoncus.</li>
+                    <ul class="list-column-2 ui-ease-list-group">
                         <li>Lorem ipsum dolor sit amet.</li>
                         <li>Sed finibus rhoncus.</li>
                         <li>Lorem ipsum dolor sit amet.</li>
@@ -71,7 +30,48 @@
                 <span class="sp-30"></span>
 
                 <div class="list-group border round">
-                    <ul class="ease-list-group">
+                    <ul class="list-column-3 ui-ease-list-group">
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Sed finibus rhoncus.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Sed finibus rhoncus.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Sed finibus rhoncus.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Sed finibus rhoncus.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Sed finibus rhoncus.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Sed finibus rhoncus.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Sed finibus rhoncus.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+
+                <span class="sp-30"></span>
+
+                <div class="list-group border round">
+                    <ul class="list-column-4 ui-ease-list-group">
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Sed finibus rhoncus.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Sed finibus rhoncus.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Sed finibus rhoncus.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Sed finibus rhoncus.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Sed finibus rhoncus.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Sed finibus rhoncus.</li>
+                    </ul>
+                </div>
+
+                <span class="sp-30"></span>
+
+                <div class="list-group border round">
+                    <ul class="ui-ease-list-group">
                         <li>
                             <a href="#">
                                 <svg class="list-icon icon"><use href="#angle-right"/></svg>
@@ -102,7 +102,7 @@
                 <span class="sp-30"></span>
 
                 <div class="list-group border round">
-                    <ul class="ease-list-group">
+                    <ul class="ui-ease-list-group">
                         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                         <li>Sed finibus rhoncus erat, vitae porttitor sem gravida et.</li>
                         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
@@ -116,7 +116,7 @@
                 <h4>List Groups with List Icons</h4>
 
                 <div class="list-group border round">
-                    <ul class="has-icon-xxl ease-list-group">
+                    <ul class="has-icon-xxl ui-ease-list-group">
                         <li>
                             <a href="#">
                                 <svg class="list-icon icon"><use href="#angle-right"/></svg>
@@ -147,7 +147,7 @@
                 <span class="sp-30"></span>
 
                 <div class="list-group border round">
-                    <ul class="has-icon-xl ease-list-group">
+                    <ul class="has-icon-xl ui-ease-list-group">
                         <li>
                             <a href="#">
                                 <svg class="list-icon icon"><use href="#angle-right"/></svg>
@@ -175,7 +175,7 @@
                 <span class="sp-30"></span>
 
                 <div class="list-group border round">
-                    <ul class="has-icon-lg ease-list-group">
+                    <ul class="has-icon-lg ui-ease-list-group">
                         <li>
                             <a href="#">
                                 <svg class="list-icon icon"><use href="#angle-right"/></svg>
@@ -200,7 +200,7 @@
                 <span class="sp-30"></span>
 
                 <div class="list-group border round">
-                    <ul class="has-icon ease-list-group">
+                    <ul class="has-icon ui-ease-list-group">
                         <li>
                             <a href="#">
                                 <svg class="list-icon icon"><use href="#angle-right"/></svg>
@@ -225,7 +225,7 @@
                 <span class="sp-30"></span>
 
                 <div class="list-group border round">
-                    <ul class="has-icon-sm ease-list-group">
+                    <ul class="has-icon-sm ui-ease-list-group">
                         <li>
                             <a href="#">
                                 <svg class="list-icon icon"><use href="#angle-right"/></svg>
@@ -250,7 +250,7 @@
                 <span class="sp-30"></span>
 
                 <div class="list-group border round">
-                    <ul class="has-icon-xs ease-list-group">
+                    <ul class="has-icon-xs ui-ease-list-group">
                         <li>
                             <a href="#">
                                 <svg class="list-icon icon"><use href="#angle-right"/></svg>
@@ -275,7 +275,7 @@
                 <span class="sp-30"></span>
 
                 <div class="list-group border round">
-                    <ul class="has-icon-xss ease-list-group">
+                    <ul class="has-icon-xss ui-ease-list-group">
                         <li>
                             <a href="#">
                                 <svg class="list-icon icon"><use href="#angle-right"/></svg>
@@ -302,7 +302,7 @@
                 <h4>List Groups with Icons</h4>
 
                 <div class="list-group border round">
-                    <ul class="ease-list-group icons-margin-5-r">
+                    <ul class="ui-ease-list-group icons-margin-5-r">
                         <li>
                             <a href="#">
                                 <svg class="icon"><use href="#user"/></svg>
@@ -341,7 +341,7 @@
                 <h4>List Groups with Photo Images</h4>
 
                 <div class="list-group border round">
-                    <ul class="has-photo-xs has-icon-xs ease-list-group">
+                    <ul class="has-photo-xs has-icon-xs ui-ease-list-group">
                         <li>
                             <a href="#">
                                 <svg class="list-icon icon"><use href="#angle-right"/></svg>
@@ -393,7 +393,7 @@
                 <span class="sp-30"></span>
 
                 <div class="list-group border round">
-                    <ul class="has-photo-sm has-icon-sm ease-list-group">
+                    <ul class="has-photo-sm has-icon-sm ui-ease-list-group">
                         <li>
                             <a href="#">
                                 <svg class="list-icon icon"><use href="#angle-right"/></svg>
@@ -445,7 +445,7 @@
                 <span class="sp-30"></span>
 
                 <div class="list-group border round">
-                    <ul class="has-photo has-icon ease-list-group">
+                    <ul class="has-photo has-icon ui-ease-list-group">
                         <li>
                             <a href="#">
                                 <svg class="list-icon icon"><use href="#angle-right"/></svg>
@@ -497,7 +497,7 @@
                 <span class="sp-30"></span>
 
                 <div class="list-group border round">
-                    <ul class="has-photo-lg has-icon-lg ease-list-group">
+                    <ul class="has-photo-lg has-icon-lg ui-ease-list-group">
                         <li>
                             <a href="#">
                                 <svg class="list-icon icon"><use href="#angle-right"/></svg>
@@ -549,7 +549,7 @@
                 <span class="sp-30"></span>
 
                 <div class="list-group border round">
-                    <ul class="has-photo has-icon-sm ease-list-group">
+                    <ul class="has-photo has-icon-sm ui-ease-list-group">
                         <li>
                             <a href="#" class="ui-theme-red ui-fill-light-100">
                                 <svg class="list-icon icon"><use href="#angle-right"/></svg>
@@ -594,7 +594,7 @@
                 <h4>List Groups with Swatches</h4>
 
                 <div class="list-group border round ui-theme-red">
-                    <ul class="has-photo has-icon-sm ease-list-group">
+                    <ul class="has-photo has-icon-sm ui-ease-list-group">
                         <li>
                             <a href="#" class="ui-fill-light-100">
                                 <svg class="list-icon icon"><use href="#angle-right"/></svg>
@@ -637,7 +637,7 @@
                 <span class="sp-30"></span>
 
                 <div class="list-group border round ui-theme-sub">
-                    <ul class="has-photo has-icon-sm ease-list-group">
+                    <ul class="has-photo has-icon-sm ui-ease-list-group">
                         <li>
                             <a href="#" class="ui-fill-light-100">
                                 <svg class="list-icon icon"><use href="#angle-right"/></svg>

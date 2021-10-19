@@ -10,6 +10,7 @@ ui.calendar = {
 
     // main classnames
     nameContainer: 'calendar-container',
+    nameTitle: 'calendar-title',
     nameDetails: 'calendar-details',
 
     namePicker: 'calendar-picker',
@@ -50,21 +51,21 @@ ui.calendar = {
     nameRound: 'round',
 
     // styling classnames
-    stylesCalendar: 'ease-calendar',
+    stylesCalendar: 'ui-ease-calendar',
+    stylesTitle: 'ui-ease-bg',
 
-    stylesContainer: 'ease-layout ease-slow ease-in-out',
-    stylesPanel: 'ease-layout ease-slow ease-in-out',
+    stylesContainer: 'ui-ease-layout ui-ease-slow ui-ease-in-out',
+    stylesPanel: 'ui-ease-layout ui-ease-slow ui-ease-in-out',
 
     stylesToday: 'ui-theme-sub ui-fill-dark-100',
     stylesPickerDay: 'ui-theme-red ui-fill-dark-100',
+
+    stylesClosing: 'closing-card ui-ease-layout',
 
     // icons
     prevIcon: 'arrow-left', // header's previous button
     nextIcon: 'arrow-right', // header's next button
     backIcon: 'angle-left', // detail's back button
-
-    // styling classnames
-    stylesClosing: 'closing-card ease-layout',
 
     // values
     pickerSep: '/',
@@ -251,7 +252,7 @@ ui.calendar = {
                     '<svg class="' + ui.calendar.nameIcon + '"><use href="#' + ui.calendar.prevIcon + '"/></svg>' +
                 '</button>' +
 
-                '<span class="calendar-title ease-bg">' +
+                '<span class="' + ui.calendar.nameTitle + ' ' + ui.calendar.stylesTitle + '">' +
                     '<button type="button" tabindex="-1" class="' + ui.calendar.nameMonth + '">' + ui.calendar.months[date.getMonth()] + '</button>' +
                     '<button type="button" tabindex="-1" class="' + ui.calendar.nameYear + '">' + date.getFullYear() + '</button>' +
                 '</span>' +

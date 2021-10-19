@@ -41,14 +41,16 @@
     --ui-dropdown-list-border: @dropdown-list-border-dark;
 }
 
-.ease-dropdown {
-    li { transition-property: background-color; transition-duration: @ease-default; }
-    .dropdown-menu { transition-property: opacity, transform; transition-duration: @ease-default; transition-timing-function: ease-in-out; }
+.ui {
+    &-ease-dropdown {
+        li { transition-property: background-color; transition-duration: @ease-default; }
+        .dropdown-menu { transition-property: opacity, transform; transition-duration: @ease-default; transition-timing-function: ease-in-out; }
 
-    & > .btn {
-        transition-property: color, background-color, border-width, border-color, opacity, transform, box-shadow; transition-duration: @ease-default;
+        & > .btn {
+            transition-property: color, background-color, border-width, border-color, opacity, transform, box-shadow; transition-duration: @ease-default;
 
-        .icon { transition-property: color, transform, opacity; transition-duration: @ease-default; }
+            .icon { transition-property: color, transform, opacity; transition-duration: @ease-default; }
+        }
     }
 }
 

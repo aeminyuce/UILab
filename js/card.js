@@ -9,7 +9,7 @@ ui.card = {
     targetClose: 'close-card',
 
     // styling classnames
-    stylesClosing: 'closing-card ease-layout',
+    stylesClosing: 'closing-card ui-ease-layout',
 
 };
 

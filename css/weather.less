@@ -60,12 +60,14 @@
 @weather-bolt-opacity:                  .45;
 @weather-bolt-bg:                       fade(@white, 15%);
 
-.ease-weather {
-    .graphs {
-        transition-property: background-color;
+.ui {
+    &-ease-weather {
+        .graphs {
+            transition-property: background-color;
 
-        &,& > div { transition-duration: .8s; }
-        & > div { transition-property: left; }
+            &,& > div { transition-duration: .8s; }
+            & > div { transition-property: left; }
+        }
     }
 }
 

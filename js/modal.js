@@ -49,9 +49,9 @@ ui.modal = {
     nameIcon: 'icon',
 
     // styling classnames
-    stylesContent: 'shadow-lg ease-layout',
-    stylesCloseBtn: 'ease-btn',
-    stylesModalBg: 'ease-layout',
+    stylesContent: 'shadow-lg ui-ease-layout',
+    stylesCloseBtn: 'ui-ease-btn',
+    stylesModalBg: 'ui-ease-layout',
 
     // icons
     closeIcon: 'remove',

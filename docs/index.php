@@ -79,14 +79,14 @@
 ?>
 
     <!-- header -->
-    <header class="container header form-lg ui-theme-sub invert-bg ui-fill-dark-100 ease-layout" data-ui-classes="shadow-lg">
+    <header class="container header form-lg ui-theme-sub invert-bg ui-fill-dark-100 ui-ease-layout" data-ui-classes="shadow-lg">
         <div class="row">
             <div class="col-12">
-                <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle btn btn-square round icons-no-opacity right ease-btn hidden-ie">
+                <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle btn btn-square round icons-no-opacity right ui-ease-btn hidden-ie">
                     <svg class="icon visible-dark"><use href="#moon-fill"/></svg>
                     <svg class="icon visible-light"><use href="#sun-fill"/></svg>
                 </button>
-                <a href="index.php" class="btn btn-square circle margin-10-r ease-btn">
+                <a href="index.php" class="btn btn-square circle margin-10-r ui-ease-btn">
                     <svg class="icon icon-hybrid no-opacity"><use href="#long-arrow-left"/></svg>
                 </a>
                 <h1 class="x-large inline-block"><span class="capitalize"><?php echo str_replace("-", " ", $page); ?></span></h1>
@@ -103,7 +103,7 @@
         include ($page.'.php');
 ?>
 
-<button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle btn btn-lg btn-square round-l icons-no-opacity ease-btn set-fixed set-r hidden-ie" style="top: 80px;">
+<button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle btn btn-lg btn-square round-l icons-no-opacity ui-ease-btn set-fixed set-r hidden-ie" style="top: 80px;">
     <svg class="icon visible-dark"><use href="#moon-fill"/></svg>
     <svg class="icon visible-light"><use href="#sun-fill"/></svg>
 </button>
@@ -111,14 +111,14 @@
     } else {
 ?>
     <!-- header -->
-    <header class="container header form-lg invert-bg ui-theme-base ui-fill-dark-100 ease-layout" data-ui-classes="shadow-lg">
+    <header class="container header form-lg invert-bg ui-theme-base ui-fill-dark-100 ui-ease-layout" data-ui-classes="shadow-lg">
         <div class="row">
             <div class="col-static no-fluid">
                 <div class="col-250 col-xs-150 align-c md-align-l padding-15">
                     <img src="img/uilab-logo.png" alt="UILab" srcset="img/uilab-logo@2x.png 2x">
                 </div>
                 <div class="row">
-                    <div class="col-12 align-r padding-15-r icons-no-opacity ease-1st-btn">
+                    <div class="col-12 align-r padding-15-r icons-no-opacity ui-ease-1st-btn">
                         <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle btn btn-square round hidden-ie">
                             <svg class="icon visible-dark"><use href="#moon-fill"/></svg>
                             <svg class="icon visible-light"><use href="#sun-fill"/></svg>
@@ -142,7 +142,7 @@
             <div class="col-250 ui-theme-gray ui-fill-light-300 hidden-md">
                 <div class="align-l sm-align-c padding-20-t form-lg add-mobile-menu-r">
                     <h4 class="font-bold padding-10-h ui-theme-sub ui-color">UI</h4>
-                    <ul class="list-unstyled block-2nd ease-2nd-button">
+                    <ul class="list-unstyled block-2nd ui-ease-2nd-button">
                         <li><a class="btn btn-ghost" href="?p=alerts">Alerts</a></li>
                         <li><a class="btn btn-ghost" href="?p=breadcrumbs">Breadcrumbs</a></li>
                         <li><a class="btn btn-ghost" href="?p=buttons">Buttons</a></li>
@@ -175,7 +175,7 @@
                         <li><a class="btn btn-ghost" href="?p=weather">Weather</a></li>
                     </ul>
                     <h4 class="font-bold padding-10-h ui-theme-sub ui-color">Javascript</h4>
-                    <ul class="list-unstyled block-2nd ease-2nd-button">
+                    <ul class="list-unstyled block-2nd ui-ease-2nd-button">
                         <li><a class="btn btn-ghost" href="?p=ui">UI JS</a></li>
                     </ul>
                 </div>
@@ -188,7 +188,7 @@
                         <div class="card-side padding-30">
                             <h2 class="margin-10-b">UILab</h2>
                             <p class="highlight large xs-align-c">CSS &amp; JavaScript powered responsive design system.</p>
-                            <div class="form-lg ease-1st-btn">
+                            <div class="form-lg ui-ease-1st-btn">
                                 <a href="?p=icons" class="btn btn-xs-fluid padding-30-h circle ui-theme-sub">
                                     <svg class="icon margin-5-r no-opacity ui-color"><use href="#draw"/></svg> See Icons
                                 </a>
@@ -205,7 +205,7 @@
                     <h4>Example Layouts</h4>
                     <div class="row large align-c hover-shadow-2nd hover-t-2nd">
                         <div class="col-4 col-md-6">
-                            <a class="card padding-2 round shadow-lg ease-layout" href="?l=dashboard-app">
+                            <a class="card padding-2 round shadow-lg ui-ease-layout" href="?l=dashboard-app">
                                 <img class="img-fluid round visible-light" src="img/layout-dashboard-app.jpg" alt="Dashboard App">
                                 <img class="img-fluid round visible-dark" src="img/layout-dashboard-app-dark.jpg" alt="Dashboard App Dark">
                                 <span class="inline-block padding-20-v">
@@ -214,7 +214,7 @@
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
-                            <a class="card padding-2 round shadow-lg ease-layout" href="?l=dashboard">
+                            <a class="card padding-2 round shadow-lg ui-ease-layout" href="?l=dashboard">
                                 <img class="img-fluid round visible-light" src="img/layout-dashboard.jpg" alt="Dashboard">
                                 <img class="img-fluid round visible-dark" src="img/layout-dashboard-dark.jpg" alt="Dashboard Dark">
                                 <span class="inline-block padding-20-v">
@@ -223,7 +223,7 @@
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
-                            <a class="card padding-2 round shadow-lg ease-layout" href="?l=sign-up-page">
+                            <a class="card padding-2 round shadow-lg ui-ease-layout" href="?l=sign-up-page">
                                 <img class="img-fluid round visible-light" src="img/layout-sign-up-page.jpg" alt="Sign Up Page">
                                 <img class="img-fluid round visible-dark" src="img/layout-sign-up-page-dark.jpg" alt="Sign Up Page Dark">
                                 <span class="inline-block padding-20-v">
@@ -232,7 +232,7 @@
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
-                            <a class="card padding-2 round shadow-lg ease-layout" href="?l=login-page">
+                            <a class="card padding-2 round shadow-lg ui-ease-layout" href="?l=login-page">
                                 <img class="img-fluid round visible-light" src="img/layout-login-page.jpg" alt="Login Page">
                                 <img class="img-fluid round visible-dark" src="img/layout-login-page-dark.jpg" alt="Login Page Dark">
                                 <span class="inline-block padding-20-v">
@@ -241,7 +241,7 @@
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
-                            <a class="card padding-2 round shadow-lg ease-layout" href="?l=landing-page">
+                            <a class="card padding-2 round shadow-lg ui-ease-layout" href="?l=landing-page">
                                 <img class="img-fluid round visible-light" src="img/layout-landing-page.jpg" alt="Landing Page">
                                 <img class="img-fluid round visible-dark" src="img/layout-landing-page-dark.jpg" alt="Landing Page Dark">
                                 <span class="inline-block padding-20-v">
@@ -250,7 +250,7 @@
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
-                            <a class="card padding-2 round shadow-lg ease-layout" href="?l=movie-app">
+                            <a class="card padding-2 round shadow-lg ui-ease-layout" href="?l=movie-app">
                                 <img class="img-fluid round visible-light" src="img/layout-movie-app.jpg" alt="Movie App">
                                 <img class="img-fluid round visible-dark" src="img/layout-movie-app-dark.jpg" alt="Movie App Dark">
                                 <span class="inline-block padding-20-v">
@@ -259,7 +259,7 @@
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
-                            <a class="card padding-2 round shadow-lg ease-layout" href="?l=weather-app">
+                            <a class="card padding-2 round shadow-lg ui-ease-layout" href="?l=weather-app">
                                 <img class="img-fluid round visible-light" src="img/layout-weather-app.jpg" alt="Weather App">
                                 <img class="img-fluid round visible-dark" src="img/layout-weather-app-dark.jpg" alt="Weather App Dark">
                                 <span class="inline-block padding-20-v">
@@ -268,7 +268,7 @@
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
-                            <a class="card padding-2 round shadow-lg ease-layout" href="?l=admin-panel">
+                            <a class="card padding-2 round shadow-lg ui-ease-layout" href="?l=admin-panel">
                                 <img class="img-fluid round visible-light" src="img/layout-admin-panel.jpg" alt="Admin Panel">
                                 <img class="img-fluid round visible-dark" src="img/layout-admin-panel-dark.jpg" alt="Admin Panel Dark">
                                 <span class="inline-block padding-20-v">
@@ -277,7 +277,7 @@
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
-                            <a class="card padding-2 round shadow-lg ease-layout" href="?l=product-listing">
+                            <a class="card padding-2 round shadow-lg ui-ease-layout" href="?l=product-listing">
                                 <img class="img-fluid round visible-light" src="img/layout-product-listing.jpg" alt="Product Listing">
                                 <img class="img-fluid round visible-dark" src="img/layout-product-listing-dark.jpg" alt="Product Listing Dark">
                                 <span class="inline-block padding-20-v">
@@ -286,7 +286,7 @@
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
-                            <a class="card padding-2 round shadow-lg ease-layout" href="?l=real-estate-details">
+                            <a class="card padding-2 round shadow-lg ui-ease-layout" href="?l=real-estate-details">
                                 <img class="img-fluid round visible-light" src="img/layout-real-estate-details.jpg" alt="Real Estate Details">
                                 <img class="img-fluid round visible-dark" src="img/layout-real-estate-details-dark.jpg" alt="Real Estate Details Dark">
                                 <span class="inline-block padding-20-v">
@@ -295,7 +295,7 @@
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
-                            <a class="card padding-2 round shadow-lg ease-layout" href="?l=photo-albums">
+                            <a class="card padding-2 round shadow-lg ui-ease-layout" href="?l=photo-albums">
                                 <img class="img-fluid round visible-light" src="img/layout-photo-albums.jpg" alt="Photo Albums">
                                 <img class="img-fluid round visible-dark" src="img/layout-photo-albums-dark.jpg" alt="Photo Albums Dark">
                                 <span class="inline-block padding-20-v">
@@ -312,9 +312,9 @@
     </main>
 
     <!-- mobile menu -->
-    <div class="mobile-menu show-r ui-theme-base ease-layout ease-in-out">
+    <div class="mobile-menu show-r ui-theme-base ui-ease-layout ui-ease-in-out">
         <div class="mobile-menu-title padding-15-v ui-fill-dark-100">
-            <button class="btn btn-square btn-lg btn-ghost round ease-btn close-mobile-menu">
+            <button class="btn btn-square btn-lg btn-ghost round ui-ease-btn close-mobile-menu">
                 <svg class="icon no-opacity"><use href="#remove"/></svg>
             </button>
             <img src="img/uilab-logo.png" alt="" srcset="img/uilab-logo@2x.png 2x">

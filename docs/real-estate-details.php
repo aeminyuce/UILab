@@ -11,44 +11,44 @@
 
                     <div class="carousel-gallery">
                         <div class="detail shadow-lg">
-                            <img src="img/house_01.jpg" class="round photo-gallery-call cursor-pointer img-fluid ease-layout" data-ui-target="#detail-carousel" data-ui-count="0" alt="">
+                            <img src="img/house_01.jpg" class="round photo-gallery-call cursor-pointer img-fluid ui-ease-layout" data-ui-target="#detail-carousel" data-ui-count="0" alt="">
                             <svg class="zoom-icon icon"><use href="#expand-wide"/></svg>
                             <svg class="loader-icon icon"><use href="#loader-line"/></svg>
                         </div>
                         <div id="detail-carousel" class="carousel thumbs half-sized" data-ui-col="6" data-ui-col-md="5" data-ui-col-sm="4" data-ui-col-xs="3">
-                            <div class="carousel-slider ease-2nd-layout ease-layout ease-slow photo-gallery-passive">
+                            <div class="carousel-slider ui-ease-2nd-layout ui-ease-layout ui-ease-slow photo-gallery-passive">
                                 <div class="slide-content">
-                                    <img class="img round ease-default selected" src="img/house_01.jpg" data-ui-href="img/house_01.jpg" alt="">
+                                    <img class="img round ui-ease-default selected" src="img/house_01.jpg" data-ui-href="img/house_01.jpg" alt="">
                                 </div>
                                 <div class="slide-content">
-                                    <img class="img round ease-default" src="img/house_02.jpg" data-ui-href="img/house_02.jpg" alt="">
+                                    <img class="img round ui-ease-default" src="img/house_02.jpg" data-ui-href="img/house_02.jpg" alt="">
                                 </div>
                                 <div class="slide-content">
-                                    <img class="img round ease-default" src="img/house_03.jpg" data-ui-href="img/house_03.jpg" alt="">
+                                    <img class="img round ui-ease-default" src="img/house_03.jpg" data-ui-href="img/house_03.jpg" alt="">
                                 </div>
                                 <div class="slide-content">
-                                    <img class="img round ease-default" src="img/house_04.jpg" data-ui-href="img/house_04.jpg" alt="">
+                                    <img class="img round ui-ease-default" src="img/house_04.jpg" data-ui-href="img/house_04.jpg" alt="">
                                 </div>
                                 <div class="slide-content">
-                                    <img class="img round ease-default" src="img/house_05.jpg" data-ui-href="img/house_05.jpg" alt="">
+                                    <img class="img round ui-ease-default" src="img/house_05.jpg" data-ui-href="img/house_05.jpg" alt="">
                                 </div>
                                 <div class="slide-content">
-                                    <img class="img round ease-default" src="img/house_01.jpg" data-ui-href="img/house_01.jpg" alt="">
+                                    <img class="img round ui-ease-default" src="img/house_01.jpg" data-ui-href="img/house_01.jpg" alt="">
                                 </div>
                                 <div class="slide-content">
-                                    <img class="img round ease-default" src="img/house_02.jpg" data-ui-href="img/house_02.jpg" alt="">
+                                    <img class="img round ui-ease-default" src="img/house_02.jpg" data-ui-href="img/house_02.jpg" alt="">
                                 </div>
                                 <div class="slide-content">
-                                    <img class="img round ease-default" src="img/house_03.jpg" data-ui-href="img/house_03.jpg" alt="">
+                                    <img class="img round ui-ease-default" src="img/house_03.jpg" data-ui-href="img/house_03.jpg" alt="">
                                 </div>
                                 <div class="slide-content">
-                                    <img class="img round ease-default" src="img/house_04.jpg" data-ui-href="img/house_04.jpg" alt="">
+                                    <img class="img round ui-ease-default" src="img/house_04.jpg" data-ui-href="img/house_04.jpg" alt="">
                                 </div>
                                 <div class="slide-content">
-                                    <img class="img round ease-default" src="img/house_05.jpg" data-ui-href="img/house_05.jpg" alt="">
+                                    <img class="img round ui-ease-default" src="img/house_05.jpg" data-ui-href="img/house_05.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="carousel-nav ease-1st-btn">
+                            <div class="carousel-nav ui-ease-1st-btn">
                                 <button class="carousel-prev btn btn-ghost btn-square round">
                                     <svg class="icon"><use href="#angle-left"/></svg>
                                 </button>
@@ -84,14 +84,14 @@
                         <div class="padding-15-b padding-30-h">
                             <div class="row row-gap-lg">
                                 <div class="col-5x col-sm-4 col-xs-6">
-                                    <div class="pie-chart ease-pie-chart" data-ui-text="Total">
+                                    <div class="pie-chart ui-ease-pie-chart" data-ui-text="Total">
                                         <ul>
                                             <li data-ui-percent="78" data-ui-fill="hsl(97, 70%, 70%)"></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-5x col-sm-4 col-xs-6">
-                                    <div class="donut-chart ease-donut-chart">
+                                    <div class="donut-chart ui-ease-donut-chart">
                                         <strong>
                                             <span class="large font-color-black-muted">Interior</span>
                                             <span class="sp-2"></span>4,9/5
@@ -103,7 +103,7 @@
                                     </div>
                                 </div>
                                 <div class="col-5x col-sm-4 col-xs-6">
-                                    <div class="donut-chart ease-donut-chart">
+                                    <div class="donut-chart ui-ease-donut-chart">
                                         <strong>
                                             <span class="large font-color-black-muted">Exterior</span>
                                             <span class="sp-2"></span>4/5
@@ -115,7 +115,7 @@
                                     </div>
                                 </div>
                                 <div class="col-5x col-sm-4 col-xs-6">
-                                    <div class="donut-chart ease-donut-chart">
+                                    <div class="donut-chart ui-ease-donut-chart">
                                         <strong>
                                             <span class="large font-color-black-muted">Quality</span>
                                             <span class="sp-2"></span>4/5
@@ -127,7 +127,7 @@
                                     </div>
                                 </div>
                                 <div class="col-5x col-sm-4 col-xs-6">
-                                    <div class="donut-chart ease-donut-chart">
+                                    <div class="donut-chart ui-ease-donut-chart">
                                         <strong>
                                             <span class="large font-color-black-muted">Savings</span>
                                             <span class="sp-2"></span>3.9/5
@@ -196,7 +196,7 @@
                 <div class="card margin-20-b round shadow-lg">
                     <div class="padding-30-h padding-10-v">
                         <b>Previous Offers / <span style="color: hsl(30, 100%, 63%);">Averages</span></b>
-                        <div class="line-charts ease-line-charts" data-ui-size="5,20" data-ui-x="1,2,3,4,5">
+                        <div class="line-charts ui-ease-line-charts" data-ui-size="5,20" data-ui-x="1,2,3,4,5">
                             <ul class="lines" data-ui-type="curved dotted">
                                 <li data-ui-y="820000"></li>
                                 <li data-ui-y="380000"></li>
@@ -224,25 +224,25 @@
                         <form action="#">
                             <div class="col-static no-fluid currency-spinner form-lg">
                                 <div class="col-50">
-                                    <button class="currency-down btn no-padding-h block round-l ease-btn" type="button">
+                                    <button class="currency-down btn no-padding-h block round-l ui-ease-btn" type="button">
                                         <svg class="icon"><use href="#minus"/></svg>
                                     </button>
                                 </div>
                                 <div class="row">
                                     <div class="col-12 no-padding">
-                                        <div class="text no-border ui-theme-gray ui-fill-light-100 ease-form">
+                                        <div class="text no-border ui-theme-gray ui-fill-light-100 ui-ease-form">
                                             <input class="font-bold align-c x-large" type="text" value="645.000" min="645.000" step="5.000" maxlength="12" autocomplete="off">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-50">
-                                    <button class="currency-up btn no-padding-h block round-r ease-btn" type="button">
+                                    <button class="currency-up btn no-padding-h block round-r ui-ease-btn" type="button">
                                         <svg class="icon"><use href="#plus"/></svg>
                                     </button>
                                 </div>
                             </div>
                             <span class="sp-15"></span>
-                            <button class="btn btn-lg block round ui-theme-sub ui-fill-dark-100 ease-btn" type="submit">
+                            <button class="btn btn-lg block round ui-theme-sub ui-fill-dark-100 ui-ease-btn" type="submit">
                                 <b>MAKE OFFER</b>
                             </button>
                             <span class="sp-5"></span>
@@ -290,7 +290,7 @@
                         </li>
                     </ul>
                     <span class="sp-5"></span>
-                    <div class="align-l icons-no-opacity form-lg ease-1st-btn">
+                    <div class="align-l icons-no-opacity form-lg ui-ease-1st-btn">
                         <a class="btn block btn-multi round-t" href="#">
                             <svg class="icon right"><use href="#images"/></svg>
                             Show All HD Images

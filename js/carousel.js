@@ -44,15 +44,15 @@ ui.carousel = {
     nameScrollV: 'scroll-v',
     nameScrollH: 'scroll-h',
 
-    nameEaseFast: 'ease-fast',
-    nameEaseSlow: 'ease-slow',
-    nameEaseSlow2x: 'ease-slow-2x',
-    nameEaseSlow3x: 'ease-slow-3x',
-    nameEaseSlow4x: 'ease-slow-4x',
-    nameEaseSlow5x: 'ease-slow-5x',
+    nameEaseFast: 'ui-ease-fast',
+    nameEaseSlow: 'ui-ease-slow',
+    nameEaseSlow2x: 'ui-ease-slow-2x',
+    nameEaseSlow3x: 'ui-ease-slow-3x',
+    nameEaseSlow4x: 'ui-ease-slow-4x',
+    nameEaseSlow5x: 'ui-ease-slow-5x',
 
     // styling classnames
-    stylesDots: 'ease-all ease-slow',
+    stylesDots: 'ui-ease-all ui-ease-slow',
 
     // tags
     tagDots: 'i',

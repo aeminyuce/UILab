@@ -17,7 +17,7 @@
                         <div class="card-side padding-15 no-padding-b icons-no-opacity">
                             <div class="col-static no-fluid">
                                 <div class="col-50">
-                                    <button class="btn btn-ghost btn-square circle ui-fill-light-100 ease-btn" data-ui-notifier>
+                                    <button class="btn btn-ghost btn-square circle ui-fill-light-100 ui-ease-btn" data-ui-notifier>
                                         <svg class="icon ui-color"><use href="#bell"/></svg>
                                     </button>
                                 </div>
@@ -27,7 +27,7 @@
                                     </div>
                                 </div>
                                 <div class="col-50 align-r">
-                                    <button class="btn btn-ghost btn-square circle ui-fill-light-100 ease-btn">
+                                    <button class="btn btn-ghost btn-square circle ui-fill-light-100 ui-ease-btn">
                                         <svg class="icon ui-color"><use href="#settings"/></svg>
                                     </button>
                                 </div>
@@ -36,7 +36,7 @@
 
                         <div class="card-side padding-10">
 
-                            <div class="row row-gap-md no-fluid ease-2nd-btn">
+                            <div class="row row-gap-md no-fluid ui-ease-2nd-btn">
                                 <div class="col-4">
                                     <a class="btn btn-multi no-line-height padding-10-v block round ui-fill-light-100" href="#">
                                         <span class="ui-color x-largest">23</span>
@@ -63,7 +63,7 @@
                                 </div>
                             </div>
 
-                            <div class="row row-gap-md no-fluid ease-2nd-btn">
+                            <div class="row row-gap-md no-fluid ui-ease-2nd-btn">
                                 <div class="col-4">
                                     <a class="btn btn-ghost btn-multi no-line-height padding-10-v block round border-dual" href="#">
                                         <span class="font-color-black-50 xx-large">19</span>
@@ -96,7 +96,7 @@
                         </div>
 
                         <div class="card-side padding-15 padding-5-b">
-                            <div class="line-charts margin-15-b ease-line-charts" data-ui-size="5,15" data-ui-x="1,2,3,4,5,6,7">
+                            <div class="line-charts margin-15-b ui-ease-line-charts" data-ui-size="5,15" data-ui-x="1,2,3,4,5,6,7">
                                 <ul class="lines" data-ui-name="1st" data-ui-type="curved dotted">
                                     <li data-ui-y="159"></li>
                                     <li data-ui-y="120"></li>
@@ -125,7 +125,7 @@
                         <div class="card-side padding-15">
                             <div class="row row-gap-md no-fluid">
                                 <div class="col-4">
-                                    <div class="donut-chart ease-donut-chart">
+                                    <div class="donut-chart ui-ease-donut-chart">
                                         <strong>SS</strong>
                                         <svg viewBox="0 0 160 160">
                                             <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
@@ -134,7 +134,7 @@
                                     </div>
                                 </div>
                                 <div class="col-4">
-                                    <div class="donut-chart ease-donut-chart">
+                                    <div class="donut-chart ui-ease-donut-chart">
                                         <strong>SU</strong>
                                         <svg viewBox="0 0 160 160">
                                             <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
@@ -143,7 +143,7 @@
                                     </div>
                                 </div>
                                 <div class="col-4">
-                                    <div class="donut-chart ease-donut-chart">
+                                    <div class="donut-chart ui-ease-donut-chart">
                                         <strong>SD</strong>
                                         <svg viewBox="0 0 160 160">
                                             <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
@@ -160,10 +160,10 @@
 
                         <div class="card-side padding-15">
                             <div class="carousel" data-ui-col="1">
-                                <div class="carousel-slider ease-2nd-layout ease-layout ease-in-out">
+                                <div class="carousel-slider ui-ease-2nd-layout ui-ease-layout ui-ease-in-out">
 
                                     <div class="slide-content list-group no-border padding-1-h">
-                                        <ul class="has-photo-sm has-icon-sm ease-list-group">
+                                        <ul class="has-photo-sm has-icon-sm ui-ease-list-group">
                                             <li class="round ui-theme-gray ui-fill-light-100">
                                                 <a href="#">
                                                     <svg class="list-icon icon"><use href="#angle-right"/></svg>
@@ -177,7 +177,7 @@
                                         </ul>
                                     </div>
                                     <div class="slide-content list-group no-border padding-1-h">
-                                        <ul class="has-photo-sm has-icon-sm ease-list-group">
+                                        <ul class="has-photo-sm has-icon-sm ui-ease-list-group">
                                             <li class="round ui-theme-gray ui-fill-light-100">
                                                 <a href="#">
                                                     <svg class="list-icon icon"><use href="#angle-right"/></svg>
@@ -191,7 +191,7 @@
                                         </ul>
                                     </div>
                                     <div class="slide-content list-group no-border padding-1-h">
-                                        <ul class="has-photo-sm has-icon-sm ease-list-group">
+                                        <ul class="has-photo-sm has-icon-sm ui-ease-list-group">
                                             <li class="round ui-theme-gray ui-fill-light-100">
                                                 <a href="#">
                                                     <svg class="list-icon icon"><use href="#angle-right"/></svg>
@@ -206,7 +206,7 @@
                                     </div>
 
                                 </div>
-                                <div class="carousel-nav ease-1st-btn">
+                                <div class="carousel-nav ui-ease-1st-btn">
                                     <span class="dots font-color-black-muted"></span>
                                 </div>
                             </div>
@@ -217,7 +217,7 @@
                     <span class="sp-5"></span>
 
                     <div class="padding-10 no-padding-b icons-no-opacity">
-                        <div class="row no-row-gap no-fluid icons-lg icons-thin block-2nd ease-2nd-btn">
+                        <div class="row no-row-gap no-fluid icons-lg icons-thin block-2nd ui-ease-2nd-btn">
                             <div class="col-3">
                                 <button class="btn btn-multi btn-ghost padding-10-t circle icons-semibol ui-color">
                                     <svg class="icon icon-semibold"><use href="#home"/></svg>
@@ -257,7 +257,7 @@
                         <div class="card-side padding-15 no-padding-b icons-no-opacity">
                             <div class="col-static no-fluid">
                                 <div class="col-50">
-                                    <button class="btn btn-ghost btn-square circle ui-fill-light-100 ease-btn" data-ui-notifier>
+                                    <button class="btn btn-ghost btn-square circle ui-fill-light-100 ui-ease-btn" data-ui-notifier>
                                         <svg class="icon ui-color"><use href="#bell"/></svg>
                                     </button>
                                 </div>
@@ -267,7 +267,7 @@
                                     </div>
                                 </div>
                                 <div class="col-50 align-r">
-                                    <button class="btn btn-ghost btn-square circle ui-fill-light-100 ease-btn">
+                                    <button class="btn btn-ghost btn-square circle ui-fill-light-100 ui-ease-btn">
                                         <svg class="icon ui-color"><use href="#settings"/></svg>
                                     </button>
                                 </div>
@@ -275,9 +275,9 @@
                         </div>
 
                         <div class="card-side padding-15">
-                            <div class="grid-list grid-list-striped grid-hover ease-grid-list">
+                            <div class="grid-list grid-list-striped grid-hover ui-ease-grid-list">
 
-                                <div class="form-lg ease-1st-form">
+                                <div class="form-lg ui-ease-1st-form">
                                     <div class="text text-icon-both border-dual has-clear circle">
                                         <svg class="icon text-icon-l"><use href="#search"/></svg>
                                         <button class="clear-form">
@@ -289,7 +289,7 @@
 
                                 <span class="sp-10"></span>
 
-                                <div class="row row-gap-xs no-fluid block-2nd ease-2nd-btn">
+                                <div class="row row-gap-xs no-fluid block-2nd ui-ease-2nd-btn">
                                     <div class="col-5">
                                         <button class="btn align-l circle-l ui-fill-light-100" data-ui-sort="1">
                                             <svg class="icon"><use href="#sort"/></svg> Report
@@ -318,7 +318,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-32">
-                                                <span class="dropdown menu-l ease-dropdown">
+                                                <span class="dropdown menu-l ui-ease-dropdown">
                                                     <button class="btn btn-ghost btn-square circle">
                                                         <svg class="icon"><use href="#ellipsis-h"/></svg>
                                                     </button>
@@ -343,7 +343,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-32">
-                                                <span class="dropdown menu-l ease-dropdown">
+                                                <span class="dropdown menu-l ui-ease-dropdown">
                                                     <button class="btn btn-ghost btn-square circle">
                                                         <svg class="icon"><use href="#ellipsis-h"/></svg>
                                                     </button>
@@ -368,7 +368,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-32">
-                                                <span class="dropdown menu-l ease-dropdown">
+                                                <span class="dropdown menu-l ui-ease-dropdown">
                                                     <button class="btn btn-ghost btn-square circle">
                                                         <svg class="icon"><use href="#ellipsis-h"/></svg>
                                                     </button>
@@ -393,7 +393,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-32">
-                                                <span class="dropdown menu-l ease-dropdown">
+                                                <span class="dropdown menu-l ui-ease-dropdown">
                                                     <button class="btn btn-ghost btn-square circle">
                                                         <svg class="icon"><use href="#ellipsis-h"/></svg>
                                                     </button>
@@ -418,7 +418,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-32">
-                                                <span class="dropdown menu-l ease-dropdown">
+                                                <span class="dropdown menu-l ui-ease-dropdown">
                                                     <button class="btn btn-ghost btn-square circle">
                                                         <svg class="icon"><use href="#ellipsis-h"/></svg>
                                                     </button>
@@ -443,7 +443,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-32">
-                                                <span class="dropdown menu-l ease-dropdown">
+                                                <span class="dropdown menu-l ui-ease-dropdown">
                                                     <button class="btn btn-ghost btn-square circle">
                                                         <svg class="icon"><use href="#ellipsis-h"/></svg>
                                                     </button>
@@ -468,7 +468,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-32">
-                                                <span class="dropdown menu-l ease-dropdown">
+                                                <span class="dropdown menu-l ui-ease-dropdown">
                                                     <button class="btn btn-ghost btn-square circle">
                                                         <svg class="icon"><use href="#ellipsis-h"/></svg>
                                                     </button>
@@ -493,7 +493,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-32">
-                                                <span class="dropdown menu-l ease-dropdown">
+                                                <span class="dropdown menu-l ui-ease-dropdown">
                                                     <button class="btn btn-ghost btn-square circle">
                                                         <svg class="icon"><use href="#ellipsis-h"/></svg>
                                                     </button>
@@ -518,7 +518,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-32">
-                                                <span class="dropdown menu-l ease-dropdown">
+                                                <span class="dropdown menu-l ui-ease-dropdown">
                                                     <button class="btn btn-ghost btn-square circle">
                                                         <svg class="icon"><use href="#ellipsis-h"/></svg>
                                                     </button>
@@ -543,7 +543,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-32">
-                                                <span class="dropdown menu-l ease-dropdown">
+                                                <span class="dropdown menu-l ui-ease-dropdown">
                                                     <button class="btn btn-ghost btn-square circle">
                                                         <svg class="icon"><use href="#ellipsis-h"/></svg>
                                                     </button>
@@ -568,7 +568,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-32">
-                                                <span class="dropdown menu-l ease-dropdown">
+                                                <span class="dropdown menu-l ui-ease-dropdown">
                                                     <button class="btn btn-ghost btn-square circle">
                                                         <svg class="icon"><use href="#ellipsis-h"/></svg>
                                                     </button>
@@ -593,7 +593,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-32">
-                                                <span class="dropdown menu-l ease-dropdown">
+                                                <span class="dropdown menu-l ui-ease-dropdown">
                                                     <button class="btn btn-ghost btn-square circle">
                                                         <svg class="icon"><use href="#ellipsis-h"/></svg>
                                                     </button>
@@ -616,7 +616,7 @@
                     <span class="sp-5"></span>
 
                     <div class="padding-10 no-padding-b icons-no-opacity">
-                        <div class="row no-row-gap no-fluid icons-lg icons-thin block-2nd ease-2nd-btn">
+                        <div class="row no-row-gap no-fluid icons-lg icons-thin block-2nd ui-ease-2nd-btn">
                             <div class="col-3">
                                 <button class="btn btn-multi btn-ghost padding-10-t circle font-color-black-muted">
                                     <svg class="icon"><use href="#home"/></svg>
@@ -656,7 +656,7 @@
                         <div class="card-side padding-15 no-padding-b icons-no-opacity">
                             <div class="col-static no-fluid">
                                 <div class="col-50">
-                                    <button class="btn btn-ghost btn-square circle ui-fill-light-100 ease-btn" data-ui-notifier>
+                                    <button class="btn btn-ghost btn-square circle ui-fill-light-100 ui-ease-btn" data-ui-notifier>
                                         <svg class="icon ui-color"><use href="#bell"/></svg>
                                     </button>
                                 </div>
@@ -666,7 +666,7 @@
                                     </div>
                                 </div>
                                 <div class="col-50 align-r">
-                                    <button class="btn btn-ghost btn-square circle ui-fill-light-100 ease-btn">
+                                    <button class="btn btn-ghost btn-square circle ui-fill-light-100 ui-ease-btn">
                                         <svg class="icon ui-color"><use href="#settings"/></svg>
                                     </button>
                                 </div>
@@ -675,9 +675,9 @@
 
                         <div class="card-side padding-10">
 
-                            <div class="tabs ease-tabs" data-ui-classes="ui-theme-app ui-stroke">
+                            <div class="tabs ui-ease-tabs" data-ui-classes="ui-theme-app ui-stroke">
 
-                                <ul class="contacts list-inline margin-5-t margin-10-b ease-1st-border scroll-h">
+                                <ul class="contacts list-inline margin-5-t margin-10-b ui-ease-1st-border scroll-h">
                                     <li class="tab circle online ui-theme-app ui-stroke active">
                                         <img class="img-photo circle" src="img/profile-image.jpg" alt="">
                                     </li>
@@ -751,7 +751,7 @@
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
                                         <div class="row no-row-gap">
-                                            <div class="text text-icon no-border padding-2 circle ease-form">
+                                            <div class="text text-icon no-border padding-2 circle ui-ease-form">
                                                 <button type="button">
                                                     <svg class="icon"><use href="#comment-dots"/></svg>
                                                 </button>
@@ -813,7 +813,7 @@
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
                                         <div class="row no-row-gap">
-                                            <div class="text text-icon no-border padding-2 circle ease-form">
+                                            <div class="text text-icon no-border padding-2 circle ui-ease-form">
                                                 <button class="icon icon-comment-dots ui-theme-app ui-color"></button>
                                                 <input type="text" placeholder="Type your message">
                                             </div>
@@ -873,7 +873,7 @@
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
                                         <div class="row no-row-gap">
-                                            <div class="text text-icon no-border padding-2 circle ease-form">
+                                            <div class="text text-icon no-border padding-2 circle ui-ease-form">
                                                 <button type="button">
                                                     <svg class="icon"><use href="#comment-dots"/></svg>
                                                 </button>
@@ -935,7 +935,7 @@
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
                                         <div class="row no-row-gap">
-                                            <div class="text text-icon no-border padding-2 circle ease-form">
+                                            <div class="text text-icon no-border padding-2 circle ui-ease-form">
                                                 <button class="icon icon-comment-dots ui-theme-app ui-color"></button>
                                                 <input type="text" placeholder="Type your message">
                                             </div>
@@ -995,7 +995,7 @@
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
                                         <div class="row no-row-gap">
-                                            <div class="text text-icon no-border padding-2 circle ease-form">
+                                            <div class="text text-icon no-border padding-2 circle ui-ease-form">
                                                 <button type="button">
                                                     <svg class="icon"><use href="#comment-dots"/></svg>
                                                 </button>
@@ -1057,7 +1057,7 @@
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
                                         <div class="row no-row-gap">
-                                            <div class="text text-icon no-border padding-2 circle ease-form">
+                                            <div class="text text-icon no-border padding-2 circle ui-ease-form">
                                                 <button type="button">
                                                     <svg class="icon"><use href="#comment-dots"/></svg>
                                                 </button>
@@ -1076,7 +1076,7 @@
                     <span class="sp-5"></span>
 
                     <div class="padding-10 no-padding-b icons-no-opacity">
-                        <div class="row no-row-gap no-fluid icons-lg icons-thin block-2nd ease-2nd-btn">
+                        <div class="row no-row-gap no-fluid icons-lg icons-thin block-2nd ui-ease-2nd-btn">
                             <div class="col-3">
                                 <button class="btn btn-multi btn-ghost padding-10-t circle font-color-black-muted">
                                     <svg class="icon"><use href="#home"/></svg>
@@ -1116,7 +1116,7 @@
                         <div class="card-side padding-15 no-padding-b icons-no-opacity">
                             <div class="col-static no-fluid">
                                 <div class="col-50">
-                                    <button class="btn btn-ghost btn-square circle ui-fill-light-100 ease-btn" data-ui-notifier>
+                                    <button class="btn btn-ghost btn-square circle ui-fill-light-100 ui-ease-btn" data-ui-notifier>
                                         <svg class="icon ui-color"><use href="#bell"/></svg>
                                     </button>
                                 </div>
@@ -1126,7 +1126,7 @@
                                     </div>
                                 </div>
                                 <div class="col-50 align-r">
-                                    <button class="btn btn-ghost btn-square circle ui-fill-light-100 ease-btn">
+                                    <button class="btn btn-ghost btn-square circle ui-fill-light-100 ui-ease-btn">
                                         <svg class="icon ui-color"><use href="#settings"/></svg>
                                     </button>
                                 </div>
@@ -1148,7 +1148,7 @@
 
                             <h5 class="font-bold margin-10-b">Settings</h5>
                             <div class="list-group round no-border ui-theme-gray ui-fill-light-100">
-                                <ul class="has-icon-xs ease-list-group">
+                                <ul class="has-icon-xs ui-ease-list-group">
                                     <li>
                                         <a href="#">
                                             <svg class="list-icon icon"><use href="#angle-right"/></svg>
@@ -1181,7 +1181,7 @@
                             <h5 class="font-bold margin-10-b">General</h5>
 
                             <div class="list-group round no-border ui-theme-gray ui-fill-light-100">
-                                <ul class="has-icon-xs ease-list-group">
+                                <ul class="has-icon-xs ui-ease-list-group">
                                     <li>
                                         <a href="#">
                                             <svg class="list-icon icon"><use href="#angle-right"/></svg>
@@ -1206,7 +1206,7 @@
                             <span class="sp-25"></span>
 
                             <div class="list-group round no-border ui-theme-gray ui-fill-light-100">
-                                <ul class="has-icon-xs ease-list-group">
+                                <ul class="has-icon-xs ui-ease-list-group">
                                     <li>
                                         <a class="round" href="#">
                                             <svg class="list-icon icon"><use href="#sign-out"/></svg>
@@ -1223,7 +1223,7 @@
                     <span class="sp-5"></span>
 
                     <div class="padding-10 no-padding-b icons-no-opacity">
-                        <div class="row no-row-gap no-fluid icons-lg icons-thin block-2nd ease-2nd-btn">
+                        <div class="row no-row-gap no-fluid icons-lg icons-thin block-2nd ui-ease-2nd-btn">
                             <div class="col-3">
                                 <button class="btn btn-multi btn-ghost padding-10-t circle font-color-black-muted">
                                     <svg class="icon"><use href="#home"/></svg>

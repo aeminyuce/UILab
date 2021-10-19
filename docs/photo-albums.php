@@ -3,12 +3,12 @@
         <div class="row">
             <div class="col-static sm-fluid padding-30-v">
                 <div class="col-250 padding-30 order-sm-last sm-align-c ui-theme-sub">
-                    <a href="#" class="btn btn-lg btn-xs-fluid align-l block circle ui-fill-dark-100 ease-btn">
+                    <a href="#" class="btn btn-lg btn-xs-fluid align-l block circle ui-fill-dark-100 ui-ease-btn">
                         Create New
                         <svg class="icon right"><use href="#plus"/></svg>
                     </a>
                     <span class="sp-30"></span>
-                    <ul class="list-unstyled hover-r-more-2nd inline-block-2nd large font-bold list-spacer-30 padding-10 ease-2nd-layout">
+                    <ul class="list-unstyled hover-r-more-2nd inline-block-2nd large font-bold list-spacer-30 padding-10 ui-ease-2nd-layout">
                         <li><a class="ui-color" href="#">Summer Holiday</a></li>
                         <li><a href="#">Autumn Comes</a></li>
                         <li><a href="#">Travelling</a></li>
@@ -17,7 +17,7 @@
                         <li><a href="#">Hobbies</a></li>
                     </ul>
                     <span class="sp-30"></span>
-                    <ul class="list-unstyled hover-r-more-2nd inline-block-2nd list-spacer-15 large font-color-black-50 adding-10 icons-sm icons-margin-10-r ease-2nd-layout">
+                    <ul class="list-unstyled hover-r-more-2nd inline-block-2nd list-spacer-15 large font-color-black-50 adding-10 icons-sm icons-margin-10-r ui-ease-2nd-layout">
                         <li>
                             <a href="#">
                                 <svg class="icon"><use href="#marker"/></svg>
@@ -52,7 +52,7 @@
                             </div>
                         </div>
 
-                        <ul class="photo-gallery has-cover block-2nd ease-photo-gallery ui-theme-sub">
+                        <ul class="photo-gallery has-cover block-2nd ui-ease-photo-gallery ui-theme-sub">
                             <li>
                                 <a class="img has-info show-info" href="img/image_01.jpg">
                                     <img src="img/image_01.jpg" alt="">

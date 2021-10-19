@@ -14,8 +14,8 @@ ui.topButton = {
     nameOpenEase: 'open-ease',
 
     // styling classnames
-    stylesTarget: 'circle ease-layout',
-    stylesIcon: 'icon ease-layout',
+    stylesTarget: 'circle ui-ease-layout',
+    stylesIcon: 'icon ui-ease-layout',
 
     // icons
     icon: 'arrow-to-top',
