@@ -867,19 +867,37 @@ ui.darkMode = {
         ui.on(document,
             'click',
 
-            '.' + ui.darkMode.nameToggle, function (e) {
+            '.' + ui.darkMode.nameToggle,
+
+            function (e) {
 
                 e.preventDefault();
 
                 // toggle theme color
                 var current = doc.getAttribute(ui.darkMode.dataMod);
+                ui.addClass(ui.effects.target, ui.effects.nameNoEffects);
 
-                if (current !== null && current !== '') {
-                    if (current === ui.darkMode.valueDark) { mode = ui.darkMode.valueLight; } else { mode = ui.darkMode.valueDark; }
-                }
+                setTimeout(function () {
 
-                doc.setAttribute(ui.darkMode.dataMod, mode);
-                setState(mode);
+                    if (current !== null && current !== '') {
+
+                        if (current === ui.darkMode.valueDark) {
+                            mode = ui.darkMode.valueLight;
+
+                        } else {
+                            mode = ui.darkMode.valueDark;
+                        }
+
+                    }
+
+                    doc.setAttribute(ui.darkMode.dataMod, mode);
+                    setState(mode);
+
+                    setTimeout(function () {
+                        ui.removeClass(ui.effects.target, ui.effects.nameNoEffects);
+                    }, 10);
+
+                }, 0);
 
             });
 
