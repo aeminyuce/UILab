@@ -1,151 +1,151 @@
 /* ui */
 [data-ui-mode="light"] {
-  --body-bg: hsl(0, 0%, 98%);
-  --white: hsl(0, 0%, 100%);
-  --black: hsl(0, 0%, 0%);
-  --border-color: hsla(0, 0%, 0%, 0.15);
-  --table-border-color: hsl(0, 0%, 86.7%);
-  --card-bg: hsl(0, 0%, 100%);
-  --highlighted: hsl(0, 0%, 100%);
-  --btn-bg: hsla(0, 0%, 0%, 0.08);
-  --btn-hover-bg: hsla(0, 0%, 0%, 0.15);
-  --btn-ghost-hover-bg: hsla(0, 0%, 0%, 0.075);
-  --border-light-color: hsla(0, 0%, 0%, 0.045);
-  --border-dark-color: hsla(0, 0%, 0%, 0.35);
-  --black-muted: hsla(0, 0%, 0%, 0.35);
-  --black-50: hsla(0, 0%, 0%, 0.5);
-  --code-color: hsl(345, 69%, 46%);
-  --code-bg: hsl(343, 37%, 96%);
-  --dropdown-list-selected-bg: hsla(0, 0%, 0%, 0.075);
-  --dropdown-list-hover-bg: hsla(0, 0%, 0%, 0.05);
-  --dropdown-list-border: hsla(0, 0%, 0%, 0.045);
-  --form-focus-bg: hsla(0, 0%, 0%, 0.015);
-  --form-focus-border: hsla(0, 0%, 0%, 0.35);
-  --select-multi-options-border: hsla(0, 0%, 0%, 0.045);
-  --range-thumb-color: hsl(220, 3%, 57%);
-  --range-track-bg: hsla(0, 0%, 0%, 0.08);
-  --range-track-hover-bg: hsla(0, 0%, 0%, 0.15);
-  --placeholder-color: hsla(0, 0%, 0%, 0.4);
-  --placeholder-focus-color: hsla(0, 0%, 0%, 0.23);
-  --check-custom-bg: hsla(0, 0%, 0%, 0.65);
-  --switch-custom-bg: hsla(0, 0%, 0%, 0.15);
-  --form-disabled-bg: hsla(0, 0%, 0%, 0.075);
-  --form-readonly-color: hsla(0, 0%, 0%, 0.5);
-  --textarea-counter-color: hsla(0, 0%, 0%, 0.45);
-  --textarea-counter-bg: hsla(0, 0%, 0%, 0.035);
-  --list-group-stripe-bg: hsla(0, 0%, 0%, 0.035);
-  --list-group-hover-bg: hsla(0, 0%, 0%, 0.06);
-  --table-caption-bg: hsla(0, 0%, 0%, 0.025);
-  --table-stripe-bg: hsla(0, 0%, 0%, 0.045);
-  --table-hover-bg: hsla(0, 0%, 0%, 0.1);
-  --breadcrumbs-sep-color: hsla(0, 0%, 0%, 0.25);
-  --img-photo-bg: hsla(0, 0%, 0%, 0.08);
-  --progress-bar-bg: hsla(0, 0%, 0%, 0.075);
-  --progress-bar-inner-bg: hsla(0, 0%, 0%, 0.15);
-  --scrollbar-scroll-bg: hsl(0, 0%, 92%);
-  --scrollbar-scroll-fadedbg: hsla(0, 0%, 0%, 0.045);
-  --scrollbar-thumb-bg: hsla(0, 0%, 0%, 0.15);
-  --scrollbar-thumb-hover-bg: hsla(0, 0%, 0%, 0.25);
-  --scrollbar-thumb-bg-active: hsla(0, 0%, 0%, 0.25);
-  --steps-inactive-color: hsla(0, 0%, 0%, 0.32);
-  --steps-border: hsla(0, 0%, 0%, 0.12);
-  --timeline-line-bg: hsla(0, 0%, 0%, 0.15);
-  --tooltip-bg: hsl(220, 14%, 21%);
-  --alerts-dialog-error-shadow: hsl(0, 74%, 47%);
-  --alerts-dialog-success-shadow: hsl(142, 82%, 34%);
-  --alerts-dialog-custom-shadow: hsla(0, 0%, 0%, 0.3);
-  --alerts-msg-bg: hsl(0, 0%, 9%);
-  --calendar-highlighted-bg: hsla(0, 0%, 0%, 0.15);
-  --calendar-weekend-bg: hsla(0, 0%, 0%, 0.04);
-  --calendar-empty-details-bg: hsla(0, 0%, 0%, 0.12);
-  --calendar-today-btn-bg: hsla(0, 0%, 0%, 0.15);
-  --calendar-today-btn-hover-bg: hsla(0, 0%, 0%, 0.2);
-  --grid-list-stripe-bg: hsla(0, 0%, 0%, 0.035);
-  --grid-list-hover-bg: hsla(0, 0%, 0%, 0.06);
-  --grid-list-border: hsl(0, 0%, 86.7%);
-  --image-uploader-drop-bg: hsl(0, 0%, 93%);
-  --image-uploader-list-bg: hsla(0, 0%, 100%, 0.45);
-  --image-uploader-list-border: hsla(0, 0%, 0%, 0.15);
-  --image-uploader-list-tag-color: hsla(0, 0%, 0%, 0.5);
-  --image-uploader-list-tag-bg: hsla(0, 0%, 0%, 0.08);
-  --photo-slider-dot-bg: hsla(0, 0%, 0%, 0.2);
-  --photo-slider-dot-selected-bg: hsla(0, 0%, 0%, 0.35);
-  --svg-map-path-fill: hsla(0, 0%, 0%, 0.08);
-  --svg-map-path-fill-hover: hsla(0, 0%, 0%, 0.15);
+  --ui-body-bg: hsl(0, 0%, 98%);
+  --ui-white: hsl(0, 0%, 100%);
+  --ui-black: hsl(0, 0%, 0%);
+  --ui-border-color: hsla(0, 0%, 0%, 0.15);
+  --ui-table-border-color: hsl(0, 0%, 86.7%);
+  --ui-card-bg: hsl(0, 0%, 100%);
+  --ui-highlighted: hsl(0, 0%, 100%);
+  --ui-btn-bg: hsla(0, 0%, 0%, 0.08);
+  --ui-btn-hover-bg: hsla(0, 0%, 0%, 0.15);
+  --ui-btn-ghost-hover-bg: hsla(0, 0%, 0%, 0.075);
+  --ui-border-light-color: hsla(0, 0%, 0%, 0.045);
+  --ui-border-dark-color: hsla(0, 0%, 0%, 0.35);
+  --ui-black-muted: hsla(0, 0%, 0%, 0.35);
+  --ui-black-50: hsla(0, 0%, 0%, 0.5);
+  --ui-code-color: hsl(345, 69%, 46%);
+  --ui-code-bg: hsl(343, 37%, 96%);
+  --ui-dropdown-list-selected-bg: hsla(0, 0%, 0%, 0.075);
+  --ui-dropdown-list-hover-bg: hsla(0, 0%, 0%, 0.05);
+  --ui-dropdown-list-border: hsla(0, 0%, 0%, 0.045);
+  --ui-form-focus-bg: hsla(0, 0%, 0%, 0.015);
+  --ui-form-focus-border: hsla(0, 0%, 0%, 0.35);
+  --ui-select-multi-options-border: hsla(0, 0%, 0%, 0.045);
+  --ui-range-thumb-color: hsl(220, 3%, 57%);
+  --ui-range-track-bg: hsla(0, 0%, 0%, 0.08);
+  --ui-range-track-hover-bg: hsla(0, 0%, 0%, 0.15);
+  --ui-placeholder-color: hsla(0, 0%, 0%, 0.4);
+  --ui-placeholder-focus-color: hsla(0, 0%, 0%, 0.23);
+  --ui-check-custom-bg: hsla(0, 0%, 0%, 0.65);
+  --ui-switch-custom-bg: hsla(0, 0%, 0%, 0.15);
+  --ui-form-disabled-bg: hsla(0, 0%, 0%, 0.075);
+  --ui-form-readonly-color: hsla(0, 0%, 0%, 0.5);
+  --ui-textarea-counter-color: hsla(0, 0%, 0%, 0.45);
+  --ui-textarea-counter-bg: hsla(0, 0%, 0%, 0.035);
+  --ui-list-group-stripe-bg: hsla(0, 0%, 0%, 0.035);
+  --ui-list-group-hover-bg: hsla(0, 0%, 0%, 0.06);
+  --ui-table-caption-bg: hsla(0, 0%, 0%, 0.025);
+  --ui-table-stripe-bg: hsla(0, 0%, 0%, 0.045);
+  --ui-table-hover-bg: hsla(0, 0%, 0%, 0.1);
+  --ui-breadcrumbs-sep-color: hsla(0, 0%, 0%, 0.25);
+  --ui-img-photo-bg: hsla(0, 0%, 0%, 0.08);
+  --ui-progress-bar-bg: hsla(0, 0%, 0%, 0.075);
+  --ui-progress-bar-inner-bg: hsla(0, 0%, 0%, 0.15);
+  --ui-scrollbar-scroll-bg: hsl(0, 0%, 92%);
+  --ui-scrollbar-scroll-fadedbg: hsla(0, 0%, 0%, 0.045);
+  --ui-scrollbar-thumb-bg: hsla(0, 0%, 0%, 0.15);
+  --ui-scrollbar-thumb-hover-bg: hsla(0, 0%, 0%, 0.25);
+  --ui-scrollbar-thumb-bg-active: hsla(0, 0%, 0%, 0.25);
+  --ui-steps-inactive-color: hsla(0, 0%, 0%, 0.32);
+  --ui-steps-border: hsla(0, 0%, 0%, 0.12);
+  --ui-timeline-line-bg: hsla(0, 0%, 0%, 0.15);
+  --ui-tooltip-bg: hsl(220, 14%, 21%);
+  --ui-alerts-dialog-error-shadow: hsl(0, 74%, 47%);
+  --ui-alerts-dialog-success-shadow: hsl(142, 82%, 34%);
+  --ui-alerts-dialog-custom-shadow: hsla(0, 0%, 0%, 0.3);
+  --ui-alerts-msg-bg: hsl(0, 0%, 9%);
+  --ui-calendar-highlighted-bg: hsla(0, 0%, 0%, 0.15);
+  --ui-calendar-weekend-bg: hsla(0, 0%, 0%, 0.04);
+  --ui-calendar-empty-details-bg: hsla(0, 0%, 0%, 0.12);
+  --ui-calendar-today-btn-bg: hsla(0, 0%, 0%, 0.15);
+  --ui-calendar-today-btn-hover-bg: hsla(0, 0%, 0%, 0.2);
+  --ui-grid-list-stripe-bg: hsla(0, 0%, 0%, 0.035);
+  --ui-grid-list-hover-bg: hsla(0, 0%, 0%, 0.06);
+  --ui-grid-list-border: hsl(0, 0%, 86.7%);
+  --ui-image-uploader-drop-bg: hsl(0, 0%, 93%);
+  --ui-image-uploader-list-bg: hsla(0, 0%, 100%, 0.45);
+  --ui-image-uploader-list-border: hsla(0, 0%, 0%, 0.15);
+  --ui-image-uploader-list-tag-color: hsla(0, 0%, 0%, 0.5);
+  --ui-image-uploader-list-tag-bg: hsla(0, 0%, 0%, 0.08);
+  --ui-photo-slider-dot-bg: hsla(0, 0%, 0%, 0.2);
+  --ui-photo-slider-dot-selected-bg: hsla(0, 0%, 0%, 0.35);
+  --ui-svg-map-path-fill: hsla(0, 0%, 0%, 0.08);
+  --ui-svg-map-path-fill-hover: hsla(0, 0%, 0%, 0.15);
 }
 [data-ui-mode="dark"] {
-  --body-bg: hsl(218, 16%, 10%);
-  --white: hsl(0, 0%, 0%);
-  --black: hsl(0, 0%, 100%);
-  --border-color: hsla(0, 0%, 100%, 0.175);
-  --table-border-color: hsl(220, 8%, 28%);
-  --card-bg: hsl(220, 14%, 21%);
-  --highlighted: hsl(220, 8%, 28%);
-  --btn-bg: hsla(0, 0%, 100%, 0.125);
-  --btn-hover-bg: hsla(0, 0%, 100%, 0.2);
-  --btn-ghost-hover-bg: hsla(0, 0%, 100%, 0.075);
-  --border-light-color: hsla(0, 0%, 100%, 0.065);
-  --border-dark-color: hsla(0, 0%, 100%, 0.25);
-  --black-muted: hsla(0, 0%, 100%, 0.72);
-  --black-50: hsla(0, 0%, 100%, 0.87);
-  --code-color: hsl(0, 0%, 100%);
-  --code-bg: hsl(345, 69%, 46%);
-  --dropdown-list-selected-bg: hsla(0, 0%, 100%, 0.075);
-  --dropdown-list-hover-bg: hsla(0, 0%, 0%, 0.05);
-  --dropdown-list-border: hsla(0, 0%, 100%, 0.065);
-  --select-multi-options-border: hsla(0, 0%, 100%, 0.045);
-  --range-thumb-color: hsl(219, 7%, 40%);
-  --range-track-bg: hsla(0, 0%, 100%, 0.08);
-  --range-track-hover-bg: hsla(0, 0%, 100%, 0.15);
-  --form-focus-bg: hsla(0, 0%, 100%, 0.075);
-  --form-focus-border: hsla(0, 0%, 100%, 0.65);
-  --placeholder-color: hsla(0, 0%, 100%, 0.4);
-  --placeholder-focus-color: hsla(0, 0%, 100%, 0.23);
-  --check-custom-bg: hsla(0, 0%, 100%, 0.65);
-  --switch-custom-bg: hsla(0, 0%, 100%, 0.15);
-  --form-disabled-bg: hsla(0, 0%, 100%, 0.075);
-  --form-readonly-color: hsla(0, 0%, 100%, 0.65);
-  --textarea-counter-color: hsl(0, 0%, 100%);
-  --textarea-counter-bg: hsla(0, 0%, 100%, 0.175);
-  --list-group-stripe-bg: hsla(0, 0%, 100%, 0.035);
-  --list-group-hover-bg: hsla(0, 0%, 100%, 0.06);
-  --table-caption-bg: hsla(0, 0%, 100%, 0.025);
-  --table-stripe-bg: hsla(0, 0%, 100%, 0.035);
-  --table-hover-bg: hsla(0, 0%, 100%, 0.08);
-  --breadcrumbs-sep-color: hsla(0, 0%, 100%, 0.25);
-  --img-photo-bg: hsla(0, 0%, 100%, 0.08);
-  --progress-bar-bg: hsla(0, 0%, 0%, 0.45);
-  --progress-bar-inner-bg: hsla(0, 0%, 100%, 0.15);
-  --scrollbar-scroll-bg: hsl(218, 16%, 18%);
-  --scrollbar-scroll-faded-bg: hsla(0, 0%, 100%, 0.045);
-  --scrollbar-thumb-bg: hsla(0, 0%, 100%, 0.2);
-  --scrollbar-thumb-hover-bg: hsla(0, 0%, 100%, 0.3);
-  --scrollbar-thumb-bg-active: hsla(0, 0%, 100%, 0.25);
-  --steps-inactive-color: hsla(0, 0%, 100%, 0.32);
-  --steps-border: hsla(0, 0%, 100%, 0.12);
-  --timeline-line-bg: hsla(0, 0%, 100%, 0.175);
-  --tooltip-bg: hsl(0, 0%, 0%);
-  --alerts-dialog-error-shadow: hsl(0, 74%, 71%);
-  --alerts-dialog-success-shadow: hsl(142, 82%, 58%);
-  --alerts-dialog-custom-shadow: hsla(0, 0%, 100%, 0.3);
-  --alerts-msg-bg: hsl(220, 14%, 21%);
-  --calendar-highlighted-bg: hsla(0, 0%, 100%, 0.15);
-  --calendar-weekend-bg: hsla(0, 0%, 100%, 0.04);
-  --calendar-empty-details-bg: hsla(0, 0%, 100%, 0.18);
-  --calendar-today-btn-bg: hsla(0, 0%, 100%, 0.15);
-  --calendar-today-btn-hover-bg: hsla(0, 0%, 100%, 0.2);
-  --grid-list-stripe-bg: hsla(0, 0%, 100%, 0.035);
-  --grid-list-hover-bg: hsla(0, 0%, 100%, 0.06);
-  --grid-list-border: hsl(220, 8%, 28%);
-  --image-uploader-drop-bg: hsl(222, 13%, 15%);
-  --image-uploader-list-bg: hsla(0, 0%, 100%, 0.035);
-  --image-uploader-list-border: hsla(0, 0%, 100%, 0.15);
-  --image-uploader-list-tag-color: hsl(0, 0%, 73%);
-  --image-uploader-list-tag-bg: hsla(0, 0%, 100%, 0.08);
-  --photo-slider-dot-bg: hsla(0, 0%, 100%, 0.2);
-  --photo-slider-dot-selected-bg: hsla(0, 0%, 100%, 0.35);
-  --svg-map-path-fill: hsla(0, 0%, 100%, 0.08);
-  --svg-map-path-fill-hover: hsla(0, 0%, 100%, 0.15);
+  --ui-body-bg: hsl(218, 16%, 10%);
+  --ui-white: hsl(0, 0%, 0%);
+  --ui-black: hsl(0, 0%, 100%);
+  --ui-border-color: hsla(0, 0%, 100%, 0.175);
+  --ui-table-border-color: hsl(220, 8%, 28%);
+  --ui-card-bg: hsl(220, 14%, 21%);
+  --ui-highlighted: hsl(220, 8%, 28%);
+  --ui-btn-bg: hsla(0, 0%, 100%, 0.125);
+  --ui-btn-hover-bg: hsla(0, 0%, 100%, 0.2);
+  --ui-btn-ghost-hover-bg: hsla(0, 0%, 100%, 0.075);
+  --ui-border-light-color: hsla(0, 0%, 100%, 0.065);
+  --ui-border-dark-color: hsla(0, 0%, 100%, 0.25);
+  --ui-black-muted: hsla(0, 0%, 100%, 0.72);
+  --ui-black-50: hsla(0, 0%, 100%, 0.87);
+  --ui-code-color: hsl(0, 0%, 100%);
+  --ui-code-bg: hsl(345, 69%, 46%);
+  --ui-dropdown-list-selected-bg: hsla(0, 0%, 100%, 0.075);
+  --ui-dropdown-list-hover-bg: hsla(0, 0%, 0%, 0.05);
+  --ui-dropdown-list-border: hsla(0, 0%, 100%, 0.065);
+  --ui-select-multi-options-border: hsla(0, 0%, 100%, 0.045);
+  --ui-range-thumb-color: hsl(219, 7%, 40%);
+  --ui-range-track-bg: hsla(0, 0%, 100%, 0.08);
+  --ui-range-track-hover-bg: hsla(0, 0%, 100%, 0.15);
+  --ui-form-focus-bg: hsla(0, 0%, 100%, 0.075);
+  --ui-form-focus-border: hsla(0, 0%, 100%, 0.65);
+  --ui-placeholder-color: hsla(0, 0%, 100%, 0.4);
+  --ui-placeholder-focus-color: hsla(0, 0%, 100%, 0.23);
+  --ui-check-custom-bg: hsla(0, 0%, 100%, 0.65);
+  --ui-switch-custom-bg: hsla(0, 0%, 100%, 0.15);
+  --ui-form-disabled-bg: hsla(0, 0%, 100%, 0.075);
+  --ui-form-readonly-color: hsla(0, 0%, 100%, 0.65);
+  --ui-textarea-counter-color: hsl(0, 0%, 100%);
+  --ui-textarea-counter-bg: hsla(0, 0%, 100%, 0.175);
+  --ui-list-group-stripe-bg: hsla(0, 0%, 100%, 0.035);
+  --ui-list-group-hover-bg: hsla(0, 0%, 100%, 0.06);
+  --ui-table-caption-bg: hsla(0, 0%, 100%, 0.025);
+  --ui-table-stripe-bg: hsla(0, 0%, 100%, 0.035);
+  --ui-table-hover-bg: hsla(0, 0%, 100%, 0.08);
+  --ui-breadcrumbs-sep-color: hsla(0, 0%, 100%, 0.25);
+  --ui-img-photo-bg: hsla(0, 0%, 100%, 0.08);
+  --ui-progress-bar-bg: hsla(0, 0%, 0%, 0.45);
+  --ui-progress-bar-inner-bg: hsla(0, 0%, 100%, 0.15);
+  --ui-scrollbar-scroll-bg: hsl(218, 16%, 18%);
+  --ui-scrollbar-scroll-faded-bg: hsla(0, 0%, 100%, 0.045);
+  --ui-scrollbar-thumb-bg: hsla(0, 0%, 100%, 0.2);
+  --ui-scrollbar-thumb-hover-bg: hsla(0, 0%, 100%, 0.3);
+  --ui-scrollbar-thumb-bg-active: hsla(0, 0%, 100%, 0.25);
+  --ui-steps-inactive-color: hsla(0, 0%, 100%, 0.32);
+  --ui-steps-border: hsla(0, 0%, 100%, 0.12);
+  --ui-timeline-line-bg: hsla(0, 0%, 100%, 0.175);
+  --ui-tooltip-bg: hsl(0, 0%, 0%);
+  --ui-alerts-dialog-error-shadow: hsl(0, 74%, 71%);
+  --ui-alerts-dialog-success-shadow: hsl(142, 82%, 58%);
+  --ui-alerts-dialog-custom-shadow: hsla(0, 0%, 100%, 0.3);
+  --ui-alerts-msg-bg: hsl(220, 14%, 21%);
+  --ui-calendar-highlighted-bg: hsla(0, 0%, 100%, 0.15);
+  --ui-calendar-weekend-bg: hsla(0, 0%, 100%, 0.04);
+  --ui-calendar-empty-details-bg: hsla(0, 0%, 100%, 0.18);
+  --ui-calendar-today-btn-bg: hsla(0, 0%, 100%, 0.15);
+  --ui-calendar-today-btn-hover-bg: hsla(0, 0%, 100%, 0.2);
+  --ui-grid-list-stripe-bg: hsla(0, 0%, 100%, 0.035);
+  --ui-grid-list-hover-bg: hsla(0, 0%, 100%, 0.06);
+  --ui-grid-list-border: hsl(220, 8%, 28%);
+  --ui-image-uploader-drop-bg: hsl(222, 13%, 15%);
+  --ui-image-uploader-list-bg: hsla(0, 0%, 100%, 0.035);
+  --ui-image-uploader-list-border: hsla(0, 0%, 100%, 0.15);
+  --ui-image-uploader-list-tag-color: hsl(0, 0%, 73%);
+  --ui-image-uploader-list-tag-bg: hsla(0, 0%, 100%, 0.08);
+  --ui-photo-slider-dot-bg: hsla(0, 0%, 100%, 0.2);
+  --ui-photo-slider-dot-selected-bg: hsla(0, 0%, 100%, 0.35);
+  --ui-svg-map-path-fill: hsla(0, 0%, 100%, 0.08);
+  --ui-svg-map-path-fill-hover: hsla(0, 0%, 100%, 0.15);
 }
 * {
   padding: 0;
@@ -167,7 +167,7 @@ html {
   line-height: 1.42857143;
   letter-spacing: 0;
   background-color: hsl(0, 0%, 98%);
-  background-color: var(--body-bg);
+  background-color: var(--ui-body-bg);
 }
 a,
 a:active,
@@ -2431,7 +2431,7 @@ html .row {
 }
 [data-ui-mode="dark"] .invert-bg {
   background-color: hsl(0, 0%, 100%) !important;
-  background-color: var(--card-bg) !important;
+  background-color: var(--ui-card-bg) !important;
 }
 /* borders */
 .border,
@@ -2444,7 +2444,7 @@ html .row {
 .border-dual,
 .border-lg {
   border: solid 1px hsla(0, 0%, 0%, 0.15);
-  border: solid 1px var(--border-color);
+  border: solid 1px var(--ui-border-color);
 }
 .border[class*="ui-fill-dark-"],
 .border-t[class*="ui-fill-dark-"],
@@ -2480,16 +2480,16 @@ html .row {
 }
 .border-light {
   border-color: hsla(0, 0%, 0%, 0.045) !important;
-  border-color: var(--border-light-color) !important;
+  border-color: var(--ui-border-light-color) !important;
 }
 .border-light[class*="ui-fill-dark-"],
 [class*="ui-fill-dark-"] .border-light {
   border-color: hsla(0, 0%, 100%, 0.065) !important;
-  border-color: var(--border-light-color-dark) !important;
+  border-color: var(--ui-border-light-color-dark) !important;
 }
 .border-dark {
   border-color: hsla(0, 0%, 0%, 0.35) !important;
-  border-color: var(--border-dark-color) !important;
+  border-color: var(--ui-border-dark-color) !important;
 }
 .border-t {
   border-right: 0 !important;
@@ -3422,7 +3422,7 @@ html .row {
 body,
 a {
   color: hsl(0, 0%, 0%);
-  color: var(--black);
+  color: var(--ui-black);
 }
 .font-color-white,
 .font-color-white .icon:not([class*="ui-color-"]):not([class*="ui-fill-"]),
@@ -3447,21 +3447,21 @@ a {
 .font-color-black a:not([class*="ui-color"]):not([class*="ui-fill-"]),
 .font-color-black button:not([class*="ui-color"]):not([class*="ui-fill-"]) {
   color: hsl(0, 0%, 0%) !important;
-  color: var(--black) !important;
+  color: var(--ui-black) !important;
 }
 .font-color-black-50,
 .font-color-black-50 .icon:not([class*="ui-color"]):not([class*="ui-fill-"]),
 .font-color-black-50 a:not([class*="ui-color"]):not([class*="ui-fill-"]),
 .font-color-black-50 button:not([class*="ui-color"]):not([class*="ui-fill-"]) {
   color: hsla(0, 0%, 0%, 0.5) !important;
-  color: var(--black-50) !important;
+  color: var(--ui-black-50) !important;
 }
 .font-color-black-muted,
 .font-color-black-muted .icon:not([class*="ui-color"]):not([class*="ui-fill-"]),
 .font-color-black-muted a:not([class*="ui-color"]):not([class*="ui-fill-"]),
 .font-color-black-muted button:not([class*="ui-color"]):not([class*="ui-fill-"]) {
   color: hsla(0, 0%, 0%, 0.35) !important;
-  color: var(--black-muted) !important;
+  color: var(--ui-black-muted) !important;
 }
 .font-color-green,
 .font-color-green .icon:not([class*="ui-color"]):not([class*="ui-fill-"]),
@@ -3711,11 +3711,11 @@ xmp {
 }
 code {
   color: hsl(345, 69%, 46%);
-  color: var(--code-color);
+  color: var(--ui-code-color);
   font-size: 90%;
   padding: 2px 4px !important;
   background-color: hsl(343, 37%, 96%);
-  background-color: var(--code-bg);
+  background-color: var(--ui-code-bg);
   display: inline-block;
   border-radius: 2px;
 }
@@ -3749,7 +3749,7 @@ hr.hr {
   width: 100%;
   height: 1px;
   background-color: hsla(0, 0%, 0%, 0.15);
-  background-color: var(--border-color);
+  background-color: var(--ui-border-color);
   margin-top: 20px !important;
   margin-bottom: 20px !important;
   border: 0;
@@ -3940,13 +3940,13 @@ dt {
 }
 .btn {
   color: hsl(0, 0%, 0%);
-  color: var(--black);
+  color: var(--ui-black);
   text-align: center;
   vertical-align: middle;
   line-height: 18px;
   height: 32px;
   background-color: hsla(0, 0%, 0%, 0.08);
-  background-color: var(--btn-bg);
+  background-color: var(--ui-btn-bg);
   padding-top: 7px;
   padding-bottom: 7px;
   display: inline-block;
@@ -4020,7 +4020,7 @@ dt {
 .btn-ghost:not(.btn-show)[class*="ui-fill-dark-"]:not(.ui-color),
 .btn-ghost:not(.btn-show)[class*="ui-fill-dark-"]:not(.ui-color) .icon:not(.ui-color) {
   color: hsl(0, 0%, 0%);
-  color: var(--black);
+  color: var(--ui-black);
 }
 .btn-ghost:not(.btn-show)[class*="ui-fill-dark-"]:hover,
 .btn-ghost:not(.btn-show)[class*="ui-fill-dark-"]:hover .icon {
@@ -4062,11 +4062,11 @@ dt {
 }
 .ui-desktop .btn:not([class*="ui-fill-"]):not(.btn-passive):hover {
   background-color: hsla(0, 0%, 0%, 0.15);
-  background-color: var(--btn-hover-bg);
+  background-color: var(--ui-btn-hover-bg);
 }
 .ui-desktop .btn.btn-ghost:not([class*="ui-fill-"]):not(.btn-passive):hover {
   background-color: hsla(0, 0%, 0%, 0.075);
-  background-color: var(--btn-ghost-hover-bg);
+  background-color: var(--ui-btn-ghost-hover-bg);
 }
 .btn-lg,
 .form-lg .btn {
@@ -4523,7 +4523,7 @@ dt {
 }
 .dropdown.open > .btn-ghost:not([class*="ui-fill-"]) {
   background-color: hsla(0, 0%, 0%, 0.075) !important;
-  background-color: var(--btn-ghost-hover-bg) !important;
+  background-color: var(--ui-btn-ghost-hover-bg) !important;
 }
 .dropdown.open-ease > .btn .toggle-icon {
   transform: rotate(-180deg);
@@ -4549,7 +4549,7 @@ dt {
 }
 .dropdown .dropdown-menu {
   background-color: hsl(0, 0%, 100%);
-  background-color: var(--highlighted);
+  background-color: var(--ui-highlighted);
   overflow-x: hidden;
   overflow-y: auto;
   position: absolute;
@@ -4627,7 +4627,7 @@ dt {
 }
 .dropdown ul.dropdown-menu > li:not(.holder):not(:last-child) {
   border-bottom: solid 1px hsla(0, 0%, 0%, 0.045);
-  border-bottom: solid 1px var(--dropdown-list-border);
+  border-bottom: solid 1px var(--ui-dropdown-list-border);
 }
 .dropdown ul.dropdown-menu > li:not(.holder),
 .dropdown ul.dropdown-menu > li:not(.holder) a,
@@ -4654,7 +4654,7 @@ dt {
 }
 .dropdown ul.dropdown-menu > li:not(.holder).selected > label {
   background-color: hsla(0, 0%, 0%, 0.075);
-  background-color: var(--dropdown-list-selected-bg);
+  background-color: var(--ui-dropdown-list-selected-bg);
 }
 .dropdown ul.dropdown-menu:not(.has-grid) > li,
 .dropdown ul.dropdown-menu:not(.has-grid) > li * {
@@ -4694,7 +4694,7 @@ dt {
 .dropdown ul.dropdown-menu.has-grid li,
 .dropdown [class*="list-column-"] > li {
   border-right: solid 1px hsla(0, 0%, 0%, 0.045);
-  border-right: solid 1px var(--dropdown-list-border);
+  border-right: solid 1px var(--ui-dropdown-list-border);
 }
 .dropdown ul.dropdown-menu.has-grid li[class*="ui-fill-dark-"],
 .dropdown [class*="list-column-"] > li[class*="ui-fill-dark-"],
@@ -4718,7 +4718,7 @@ dt {
 }
 .ui-desktop .dropdown ul.dropdown-menu > li:not(.holder):hover {
   background-color: hsla(0, 0%, 0%, 0.05);
-  background-color: var(--dropdown-list-hover-bg);
+  background-color: var(--ui-dropdown-list-hover-bg);
   background-clip: padding-box;
 }
 .mobile-menu .dropdown {
@@ -4833,7 +4833,7 @@ html:not(.ui-no-effects) .ease-range::-moz-range-track {
 .select-multi,
 .textarea {
   border: solid 1px hsla(0, 0%, 0%, 0.15);
-  border: solid 1px var(--border-color);
+  border: solid 1px var(--ui-border-color);
   overflow: hidden;
   display: block;
   position: relative;
@@ -4849,7 +4849,7 @@ html:not(.ui-no-effects) .ease-range::-moz-range-track {
 .select-multi select,
 .textarea textarea {
   color: hsl(0, 0%, 0%);
-  color: var(--black);
+  color: var(--ui-black);
   font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 14px;
   width: 100%;
@@ -4916,7 +4916,7 @@ html:not(.ui-no-effects) .ease-range::-moz-range-track {
 .select option,
 .select optgroup {
   background-color: hsl(0, 0%, 100%);
-  background-color: var(--highlighted);
+  background-color: var(--ui-highlighted);
 }
 .select .icon {
   width: 12px;
@@ -4952,7 +4952,7 @@ html:not(.ui-no-effects) .ease-range::-moz-range-track {
 }
 .select-multi option:not(:last-child) {
   border-bottom: solid 1px hsla(0, 0%, 0%, 0.045);
-  border-bottom: solid 1px var(--select-multi-options-border);
+  border-bottom: solid 1px var(--ui-select-multi-options-border);
 }
 .textarea textarea {
   vertical-align: top;
@@ -4982,7 +4982,7 @@ html:not(.ui-no-effects) .ease-range::-moz-range-track {
 .file {
   height: 32px;
   border: solid 1px hsla(0, 0%, 0%, 0.15);
-  border: solid 1px var(--border-color);
+  border: solid 1px var(--ui-border-color);
   overflow: hidden;
   display: block;
   position: relative;
@@ -5032,7 +5032,7 @@ html:not(.ui-no-effects) .ease-range::-moz-range-track {
 }
 .ui-desktop .file:hover .btn:not([class*="ui-fill-"]):not(.btn-passive) {
   background-color: hsla(0, 0%, 0%, 0.15);
-  background-color: var(--btn-hover-bg);
+  background-color: var(--ui-btn-hover-bg);
 }
 .file.no-border .btn {
   line-height: 18px;
@@ -5059,7 +5059,7 @@ label.custom {
   height: 22px;
   margin-bottom: 2px;
   border: solid 1px hsla(0, 0%, 0%, 0.15);
-  border: solid 1px var(--border-color);
+  border: solid 1px var(--ui-border-color);
   overflow: hidden;
   display: inline-block;
   position: relative;
@@ -5095,7 +5095,7 @@ label.custom {
 .check-custom .state,
 .radio-custom .state {
   background-color: hsla(0, 0%, 0%, 0.65);
-  background-color: var(--check-custom-bg);
+  background-color: var(--ui-check-custom-bg);
   opacity: 0;
 }
 .radio-custom,
@@ -5131,7 +5131,7 @@ label.custom {
 .switch-custom input:not(:checked) + .state,
 .switch-custom input:not(:checked) + .state[class*="ui-fill-"] {
   background-color: hsla(0, 0%, 0%, 0.15);
-  background-color: var(--switch-custom-bg);
+  background-color: var(--ui-switch-custom-bg);
 }
 .switch-custom input:not(:indeterminate):not(:checked):not(:indeterminate) + .state {
   transform: translate(-125%, -50%);
@@ -5175,14 +5175,14 @@ label.custom {
   width: 100%;
   height: 0.5rem;
   background-color: hsla(0, 0%, 0%, 0.08);
-  background-color: var(--range-track-bg);
+  background-color: var(--ui-range-track-bg);
   border-color: transparent;
   border-radius: 20px;
   cursor: pointer;
 }
 .range:hover::-webkit-slider-runnable-track {
   background-color: hsla(0, 0%, 0%, 0.15);
-  background-color: var(--range-track-hover-bg);
+  background-color: var(--ui-range-track-hover-bg);
 }
 .range:not(:disabled):hover::-webkit-slider-thumb {
   transform: scale(1.2);
@@ -5207,14 +5207,14 @@ label.custom {
   width: 100%;
   height: 0.5rem;
   background-color: hsla(0, 0%, 0%, 0.08);
-  background-color: var(--range-track-bg);
+  background-color: var(--ui-range-track-bg);
   border-color: transparent;
   border-radius: 20px;
   cursor: pointer;
 }
 .range:hover::-moz-range-track {
   background-color: hsla(0, 0%, 0%, 0.15);
-  background-color: var(--range-track-hover-bg);
+  background-color: var(--ui-range-track-hover-bg);
 }
 .range:not(:disabled):hover::-moz-range-thumb {
   transform: scale(1.2);
@@ -5254,33 +5254,33 @@ label.custom {
 }
 .range::-ms-fill-lower {
   background-color: hsla(0, 0%, 0%, 0.08);
-  background-color: var(--range-track-bg);
+  background-color: var(--ui-range-track-bg);
   border-radius: 20px;
 }
 .range:hover::-ms-fill-lower {
   background-color: hsla(0, 0%, 0%, 0.15);
-  background-color: var(--range-track-hover-bg);
+  background-color: var(--ui-range-track-hover-bg);
 }
 .range::-ms-fill-upper {
   background-color: hsla(0, 0%, 0%, 0.08);
-  background-color: var(--range-track-bg);
+  background-color: var(--ui-range-track-bg);
   border-radius: 20px;
 }
 .range:hover::-ms-fill-upper {
   background-color: hsla(0, 0%, 0%, 0.15);
-  background-color: var(--range-track-hover-bg);
+  background-color: var(--ui-range-track-hover-bg);
 }
 .range:disabled::-webkit-slider-thumb {
   background-color: hsl(220, 3%, 57%);
-  background-color: var(--range-thumb-color);
+  background-color: var(--ui-range-thumb-color);
 }
 .range:disabled::-moz-range-thumb {
   background-color: hsl(220, 3%, 57%);
-  background-color: var(--range-thumb-color);
+  background-color: var(--ui-range-thumb-color);
 }
 .range:disabled::-ms-thumb {
   background-color: hsl(220, 3%, 57%);
-  background-color: var(--range-thumb-color);
+  background-color: var(--ui-range-thumb-color);
 }
 .range:disabled::-webkit-slider-runnable-track {
   cursor: default;
@@ -5352,7 +5352,7 @@ label.custom {
 }
 .form-disabled {
   background-color: hsla(0, 0%, 0%, 0.075);
-  background-color: var(--form-disabled-bg);
+  background-color: var(--ui-form-disabled-bg);
   opacity: 0.65;
 }
 .form-disabled.form-light {
@@ -5361,7 +5361,7 @@ label.custom {
 .form-readonly input,
 .form-readonly textarea {
   color: hsla(0, 0%, 0%, 0.5);
-  color: var(--form-readonly-color);
+  color: var(--ui-form-readonly-color);
 }
 .form-readonly.form-light input,
 .form-readonly.form-light textarea {
@@ -5381,14 +5381,14 @@ label.custom {
 }
 .form-focus {
   border-color: hsla(0, 0%, 0%, 0.35);
-  border-color: var(--form-focus-border);
+  border-color: var(--ui-form-focus-border);
 }
 .form-focus.form-light {
   border-color: hsla(0, 0%, 100%, 0.65) !important;
 }
 .form-focus:not(.form-readonly) {
   background-color: hsla(0, 0%, 0%, 0.015);
-  background-color: var(--form-focus-bg);
+  background-color: var(--ui-form-focus-bg);
   box-shadow: inset 0 0 2px hsla(0, 0%, 0%, 0.075);
 }
 .form-focus > input,
@@ -5397,7 +5397,7 @@ label.custom {
 .form-focus > textarea,
 .form-focus .icon:not([class*="ui-color"]) {
   color: hsl(0, 0%, 0%);
-  color: var(--black);
+  color: var(--ui-black);
 }
 .form-focus.form-light > input,
 .form-focus.form-light > select,
@@ -5414,11 +5414,11 @@ label.custom {
 }
 ::placeholder {
   color: hsla(0, 0%, 0%, 0.4);
-  color: var(--placeholder-color);
+  color: var(--ui-placeholder-color);
 }
 .form-focus > ::placeholder {
   color: hsla(0, 0%, 0%, 0.23);
-  color: var(--placeholder-focus-color);
+  color: var(--ui-placeholder-focus-color);
 }
 .form-light > ::placeholder {
   color: hsla(0, 0%, 100%, 0.4);
@@ -5428,11 +5428,11 @@ label.custom {
 }
 ::-ms-input-placeholder {
   color: hsla(0, 0%, 0%, 0.4);
-  color: var(--placeholder-color);
+  color: var(--ui-placeholder-color);
 }
 .form-focus > ::-ms-input-placeholder {
   color: hsla(0, 0%, 0%, 0.23);
-  color: var(--placeholder-focus-color);
+  color: var(--ui-placeholder-focus-color);
 }
 .form-light > ::-ms-input-placeholder {
   color: hsla(0, 0%, 100%, 0.4);
@@ -5446,7 +5446,7 @@ label.custom {
 [class*="text-icon"] .icon,
 [class*="text-icon"] > button {
   color: hsl(0, 0%, 0%);
-  color: var(--black);
+  color: var(--ui-black);
   cursor: default;
 }
 [class*="text-icon"] > .icon,
@@ -5512,7 +5512,7 @@ label.custom {
 }
 .form-holder-focus [class*="col-"] > * {
   border-color: hsla(0, 0%, 0%, 0.35);
-  border-color: var(--form-focus-border);
+  border-color: var(--ui-form-focus-border);
 }
 .form-holder-focus [class*="col-"] > .form-light,
 .form-holder-focus [class*="col-"] > .border-light {
@@ -5732,9 +5732,9 @@ label.custom {
 .textarea:not(.toggle-textarea)[data-ui-counter]:not(.form-light):before,
 .textarea:not(.toggle-textarea)[data-ui-counter].form-focus:before {
   color: hsla(0, 0%, 0%, 0.45);
-  color: var(--textarea-counter-color);
+  color: var(--ui-textarea-counter-color);
   background-color: hsla(0, 0%, 0%, 0.035);
-  background-color: var(--textarea-counter-bg);
+  background-color: var(--ui-textarea-counter-bg);
 }
 .textarea:not(.toggle-textarea)[data-ui-counter].form-light:not(.form-focus) {
   color: hsl(0, 0%, 100%);
@@ -5774,12 +5774,12 @@ label.custom {
 }
 .autocomplete ul {
   color: hsl(0, 0%, 0%);
-  color: var(--black);
+  color: var(--ui-black);
   list-style: none;
   min-width: 200px;
   width: 100%;
   background-color: hsl(0, 0%, 100%);
-  background-color: var(--highlighted);
+  background-color: var(--ui-highlighted);
   padding: 0;
   margin: 0;
   position: absolute;
@@ -6010,11 +6010,11 @@ label.custom {
 }
 .list-group li:nth-child(odd):not([class*="ui-fill-"]) {
   background-color: hsla(0, 0%, 0%, 0.035);
-  background-color: var(--list-group-stripe-bg);
+  background-color: var(--ui-list-group-stripe-bg);
 }
 .list-group li:not([class*="ui-fill-"]):hover {
   background-color: hsla(0, 0%, 0%, 0.06);
-  background-color: var(--list-group-hover-bg);
+  background-color: var(--ui-list-group-hover-bg);
 }
 .list-group.round > ul:not([class*="list-column-"]) > li:first-child,
 .list-group.round > ul:not([class*="list-column-"]) > li:first-child > a:not(.list-link) {
@@ -6149,7 +6149,7 @@ label.custom {
 .card,
 [class*="card-"]:not(.card-side) {
   background-color: hsl(0, 0%, 100%);
-  background-color: var(--card-bg);
+  background-color: var(--ui-card-bg);
   display: block;
   position: relative;
 }
@@ -6201,7 +6201,7 @@ label.custom {
 }
 .close-card {
   color: hsl(0, 0%, 0%);
-  color: var(--black);
+  color: var(--ui-black);
   line-height: 12px;
   background-color: transparent;
   border: 0;
@@ -6237,7 +6237,7 @@ label.custom {
 .table {
   width: 100%;
   background-color: hsl(0, 0%, 100%);
-  background-color: var(--card-bg);
+  background-color: var(--ui-card-bg);
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -6248,7 +6248,7 @@ label.custom {
   font-size: 16px;
   text-align: center;
   background-color: hsla(0, 0%, 0%, 0.025);
-  background-color: var(--table-caption-bg);
+  background-color: var(--ui-table-caption-bg);
   padding: 10px;
 }
 .table th,
@@ -6265,7 +6265,7 @@ label.custom {
 .table:not(.no-separated) th,
 .table:not(.no-separated) td {
   border-bottom: solid 1px hsl(0, 0%, 86.7%);
-  border-bottom: solid 1px var(--table-border-color);
+  border-bottom: solid 1px var(--ui-table-border-color);
 }
 .table:not(.table-condensed):not(.table-ultra-condensed) th,
 .table:not(.table-condensed):not(.table-ultra-condensed) td {
@@ -6293,7 +6293,7 @@ label.custom {
 .table-sidebar td:first-of-type {
   font-weight: 700;
   border-right: solid 1px hsl(0, 0%, 86.7%);
-  border-right: solid 1px var(--table-border-color);
+  border-right: solid 1px var(--ui-table-border-color);
 }
 .table tbody:last-child tr:last-child td,
 .table tfoot tr:last-child td,
@@ -6308,7 +6308,7 @@ label.custom {
 .table[class*="border-"],
 .table-border {
   border-color: hsl(0, 0%, 86.7%);
-  border-color: var(--table-border-color);
+  border-color: var(--ui-table-border-color);
 }
 .table-valign td,
 .table-valign th {
@@ -6329,20 +6329,20 @@ label.custom {
 }
 .table-striped tr:nth-child(even):not([class*="ui-fill-"]) {
   background-color: hsla(0, 0%, 0%, 0.045);
-  background-color: var(--table-stripe-bg);
+  background-color: var(--ui-table-stripe-bg);
 }
 .ui-desktop .table-hover tbody tr:not([class*="ui-fill-"]):hover {
   background-color: hsla(0, 0%, 0%, 0.1);
-  background-color: var(--table-hover-bg);
+  background-color: var(--ui-table-hover-bg);
 }
 .table-border {
   border: solid 1px hsl(0, 0%, 86.7%);
-  border: solid 1px var(--table-border-color);
+  border: solid 1px var(--ui-table-border-color);
 }
 .table-border th:not(:last-child),
 .table-border td:not(:last-child) {
   border-right: solid 1px hsl(0, 0%, 86.7%);
-  border-right: solid 1px var(--table-border-color);
+  border-right: solid 1px var(--ui-table-border-color);
 }
 @media (max-width: 959px) {
   .table-fluid {
@@ -6373,7 +6373,7 @@ label.custom {
 .breadcrumbs:not(.no-separated) > ul > li:not(:first-child):before {
   content: "\203A";
   color: hsla(0, 0%, 0%, 0.25);
-  color: var(--breadcrumbs-sep-color);
+  color: var(--ui-breadcrumbs-sep-color);
   font-size: 18px;
   line-height: normal;
   margin: 0 8px 0 3px;
@@ -6465,15 +6465,15 @@ label.custom {
 }
 .photos-holder [class*="img-photo"] {
   border-color: hsl(0, 0%, 98%);
-  border-color: var(--body-bg);
+  border-color: var(--ui-body-bg);
 }
 .dropdown .photos-holder [class*="img-photo"] {
   border-color: hsl(0, 0%, 100%);
-  border-color: var(--highlighted);
+  border-color: var(--ui-highlighted);
 }
 .card .photos-holder [class*="img-photo"] {
   border-color: hsl(0, 0%, 100%);
-  border-color: var(--card-bg);
+  border-color: var(--ui-card-bg);
 }
 [class*="img-photo"] {
   text-align: center;
@@ -6482,7 +6482,7 @@ label.custom {
 }
 [class*="img-photo"]:not(img) {
   background-color: hsla(0, 0%, 0%, 0.08);
-  background-color: var(--img-photo-bg);
+  background-color: var(--ui-img-photo-bg);
   display: inline-block;
 }
 [class*="img-photo"]:not(img) > span,
@@ -6536,7 +6536,7 @@ label.custom {
 .progress-bar {
   height: 14px;
   background-color: hsla(0, 0%, 0%, 0.075);
-  background-color: var(--progress-bar-bg);
+  background-color: var(--ui-progress-bar-bg);
   padding: 2px;
   display: block;
   overflow: hidden;
@@ -6548,7 +6548,7 @@ label.custom {
   width: 0;
   height: 10px;
   background-color: hsla(0, 0%, 0%, 0.15);
-  background-color: var(--progress-bar-inner-bg);
+  background-color: var(--ui-progress-bar-inner-bg);
   float: left;
 }
 .progress-bar > span:not([class*="animate-"]) {
@@ -6591,11 +6591,11 @@ label.custom {
   width: 8px;
   height: 8px;
   background-color: hsl(0, 0%, 92%);
-  background-color: var(--scrollbar-scroll-bg);
+  background-color: var(--ui-scrollbar-scroll-bg);
 }
 .ui-desktop .scrollbar-faded::-webkit-scrollbar {
   background-color: hsla(0, 0%, 0%, 0.045);
-  background-color: var(--scrollbar-scroll-faded-bg);
+  background-color: var(--ui-scrollbar-scroll-faded-bg);
 }
 .ui-desktop body::-webkit-scrollbar {
   width: 12px;
@@ -6603,15 +6603,15 @@ label.custom {
 }
 .ui-desktop ::-webkit-scrollbar-thumb {
   background-color: hsla(0, 0%, 0%, 0.15);
-  background-color: var(--scrollbar-thumb-bg);
+  background-color: var(--ui-scrollbar-thumb-bg);
 }
 .ui-desktop ::-webkit-scrollbar-thumb:hover {
   background-color: hsla(0, 0%, 0%, 0.25);
-  background-color: var(--scrollbar-thumb-hover-bg);
+  background-color: var(--ui-scrollbar-thumb-hover-bg);
 }
 .ui-desktop ::-webkit-scrollbar-thumb:active {
   background-color: hsla(0, 0%, 0%, 0.25);
-  background-color: var(--scrollbar-thumb-bg-active);
+  background-color: var(--ui-scrollbar-thumb-bg-active);
 }
 .ui-desktop .round::-webkit-scrollbar-thumb {
   border-radius: 6px;
@@ -6652,7 +6652,7 @@ html:not(.ui-ie) .steps-bar li {
   font-size: 11px;
   text-align: center;
   background-color: hsl(0, 0%, 98%);
-  background-color: var(--body-bg);
+  background-color: var(--ui-body-bg);
   width: 18px;
   height: 18px;
   margin: 5px auto;
@@ -6664,7 +6664,7 @@ html:not(.ui-ie) .steps-bar li {
 }
 .card .steps-bar li:before {
   background-color: hsl(0, 0%, 100%);
-  background-color: var(--card-bg);
+  background-color: var(--ui-card-bg);
 }
 .steps-bar li:after {
   content: "";
@@ -6684,30 +6684,30 @@ html:not(.ui-ie) .steps-bar li {
 }
 .card .steps-bar li.active:before {
   background-color: hsl(0, 0%, 100%) !important;
-  background-color: var(--card-bg) !important;
+  background-color: var(--ui-card-bg) !important;
 }
 .steps-bar li.active ~ li {
   color: hsla(0, 0%, 0%, 0.32);
-  color: var(--steps-inactive-color);
+  color: var(--ui-steps-inactive-color);
 }
 .steps-bar li.active ~ li:before {
   width: 10px;
   height: 10px;
   background-color: hsl(0, 0%, 98%);
-  background-color: var(--body-bg);
+  background-color: var(--ui-body-bg);
   margin: 9px auto;
   border-color: hsla(0, 0%, 0%, 0.12);
-  border-color: var(--steps-border);
+  border-color: var(--ui-steps-border);
 }
 .card .steps-bar li.active ~ li:before {
   background-color: hsl(0, 0%, 100%);
-  background-color: var(--card-bg);
+  background-color: var(--ui-card-bg);
   border-color: hsla(0, 0%, 0%, 0.12);
-  border-color: var(--steps-border);
+  border-color: var(--ui-steps-border);
 }
 .steps-bar li.active ~ li:after {
   background-color: hsla(0, 0%, 0%, 0.12);
-  background-color: var(--steps-border);
+  background-color: var(--ui-steps-border);
   left: -50%;
 }
 .steps-bar li > span,
@@ -6726,7 +6726,7 @@ html:not(.ui-ie) .steps-bar li {
 }
 .steps-bar:not(.steps-icon) li.active:before {
   background-color: hsl(0, 0%, 98%);
-  background-color: var(--body-bg);
+  background-color: var(--ui-body-bg);
 }
 .steps-bar[class*="ui-color"] li:before {
   background-color: currentColor;
@@ -6737,15 +6737,15 @@ html:not(.ui-ie) .steps-bar li {
 }
 .steps-bar.steps-icon li:before {
   background-color: hsl(0, 0%, 98%);
-  background-color: var(--body-bg);
+  background-color: var(--ui-body-bg);
   border-color: hsl(0, 0%, 98%);
-  border-color: var(--body-bg);
+  border-color: var(--ui-body-bg);
 }
 .card .steps-bar.steps-icon li:before {
   background-color: hsl(0, 0%, 100%);
-  background-color: var(--card-bg);
+  background-color: var(--ui-card-bg);
   border-color: hsla(0, 0%, 0%, 0.12);
-  border-color: var(--steps-border);
+  border-color: var(--ui-steps-border);
 }
 .steps-bar.steps-icon li > .icon {
   color: currentColor;
@@ -6805,7 +6805,7 @@ header.sticky-static {
   content: "";
   width: 2px;
   background-color: hsla(0, 0%, 0%, 0.15);
-  background-color: var(--timeline-line-bg);
+  background-color: var(--ui-timeline-line-bg);
   border-radius: 1px;
   position: absolute;
   top: 0;
@@ -6815,19 +6815,19 @@ header.sticky-static {
   width: 30px;
   height: 2px;
   background-color: hsla(0, 0%, 0%, 0.15);
-  background-color: var(--timeline-line-bg);
+  background-color: var(--ui-timeline-line-bg);
 }
 .timeline:not(.hide-lines) > li:after {
   background-color: hsl(0, 0%, 98%);
-  background-color: var(--body-bg);
+  background-color: var(--ui-body-bg);
 }
 .dropdown .timeline:not(.hide-lines) > li:after {
   background-color: hsl(0, 0%, 100%);
-  background-color: var(--highlighted);
+  background-color: var(--ui-highlighted);
 }
 .card .timeline:not(.hide-lines) > li:after {
   background-color: hsl(0, 0%, 100%);
-  background-color: var(--card-bg);
+  background-color: var(--ui-card-bg);
 }
 .timeline:not(.hide-lines).ui-color > li:before {
   background-color: currentColor;
@@ -6846,7 +6846,7 @@ header.sticky-static {
   width: 14px;
   height: 14px;
   border: solid 2px hsla(0, 0%, 0%, 0.15);
-  border: solid 2px var(--timeline-line-bg);
+  border: solid 2px var(--ui-timeline-line-bg);
   border-radius: 50%;
 }
 .timeline > li > [class*="img-photo"] {
@@ -6857,7 +6857,7 @@ header.sticky-static {
 }
 .timeline > li > .card {
   background-color: hsl(0, 0%, 98%);
-  background-color: var(--body-bg);
+  background-color: var(--ui-body-bg);
   padding: 15px;
   display: block;
   position: relative;
@@ -6866,7 +6866,7 @@ header.sticky-static {
 .timeline > li > .card a,
 .timeline > li > .card button {
   color: hsl(0, 0%, 0%);
-  color: var(--black);
+  color: var(--ui-black);
 }
 .timeline > li > .img-photo + .card {
   padding-top: 33px;
@@ -6944,7 +6944,7 @@ header.sticky-static {
   width: 100%;
   width: 320px;
   background-color: hsl(0, 0%, 98%);
-  background-color: var(--body-bg);
+  background-color: var(--ui-body-bg);
   position: fixed;
   top: 0;
   bottom: 0;
@@ -7079,7 +7079,7 @@ header.sticky-static {
 .modal-content {
   min-width: 280px;
   background-color: hsl(0, 0%, 98%);
-  background-color: var(--body-bg);
+  background-color: var(--ui-body-bg);
   position: fixed;
 }
 .modal-content:not(.modal-fullscreen) {
@@ -7292,7 +7292,7 @@ header.sticky-static {
 .tooltip:not([class*="ui-fill-"]) {
   color: hsl(0, 0%, 100%);
   background-color: hsl(220, 14%, 21%);
-  background-color: var(--tooltip-bg);
+  background-color: var(--ui-tooltip-bg);
 }
 .tooltip:not(.open) {
   display: none;
@@ -7384,7 +7384,7 @@ header.sticky-static {
 }
 .tooltip > span i:not([class*="ui-fill-"]) {
   background-color: hsl(220, 14%, 21%);
-  background-color: var(--tooltip-bg);
+  background-color: var(--ui-tooltip-bg);
 }
 /* alerts */
 .alerts-opened,
@@ -7413,7 +7413,7 @@ header.sticky-static {
   min-width: 280px;
   max-width: 680px;
   background-color: hsl(0, 0%, 100%);
-  background-color: var(--card-bg);
+  background-color: var(--ui-card-bg);
   min-height: 60px;
   position: fixed;
   top: 50%;
@@ -7455,7 +7455,7 @@ header.sticky-static {
 .alerts-msg:not([class*="ui-fill-"]) {
   color: hsl(0, 0%, 100%);
   background-color: hsl(0, 0%, 9%);
-  background-color: var(--alerts-msg-bg);
+  background-color: var(--ui-alerts-msg-bg);
 }
 .alerts-msg.msg-success {
   background-color: hsl(142, 82%, 42%) !important;
@@ -7520,7 +7520,7 @@ button.dialog-success {
 }
 button.dialog-success:focus {
   box-shadow: 0 0 0 2px hsl(142, 82%, 34%);
-  box-shadow: 0 0 0 2px var(--alerts-dialog-success-shadow);
+  box-shadow: 0 0 0 2px var(--ui-alerts-dialog-success-shadow);
 }
 .ui-desktop button.dialog-success:hover {
   background-color: hsl(142, 82%, 48%);
@@ -7531,24 +7531,24 @@ button.dialog-error {
 }
 button.dialog-error:focus {
   box-shadow: 0 0 0 2px hsl(0, 74%, 47%);
-  box-shadow: 0 0 0 2px var(--alerts-dialog-error-shadow);
+  box-shadow: 0 0 0 2px var(--ui-alerts-dialog-error-shadow);
 }
 .ui-desktop button.dialog-error:hover {
   background-color: hsl(0, 74%, 61%);
 }
 button.dialog-custom {
   color: hsl(0, 0%, 0%);
-  color: var(--black);
+  color: var(--ui-black);
   background-color: hsla(0, 0%, 0%, 0.08);
-  background-color: var(--btn-bg);
+  background-color: var(--ui-btn-bg);
 }
 button.dialog-custom:focus {
   box-shadow: 0 0 0 2px hsla(0, 0%, 0%, 0.3);
-  box-shadow: 0 0 0 2px var(--alerts-dialog-custom-shadow);
+  box-shadow: 0 0 0 2px var(--ui-alerts-dialog-custom-shadow);
 }
 .ui-desktop button.dialog-custom:hover {
   background-color: hsla(0, 0%, 0%, 0.15);
-  background-color: var(--btn-hover-bg);
+  background-color: var(--ui-btn-hover-bg);
 }
 .close-alert {
   color: currentColor;
@@ -7600,7 +7600,7 @@ button.dialog-custom:focus {
 }
 .calendar {
   background-color: hsl(0, 0%, 100%);
-  background-color: var(--card-bg);
+  background-color: var(--ui-card-bg);
   padding: 5px;
   overflow: hidden;
   display: block;
@@ -7624,7 +7624,7 @@ button.dialog-custom:focus {
 .calendar table.fill-weekends th:nth-child(n+6),
 .calendar table.fill-weekends td:nth-child(n+6) {
   background-color: hsla(0, 0%, 0%, 0.04);
-  background-color: var(--calendar-weekend-bg);
+  background-color: var(--ui-calendar-weekend-bg);
 }
 .calendar th {
   font-weight: 700;
@@ -7666,11 +7666,11 @@ button.dialog-custom:focus {
 }
 .calendar tbody td.today button:not([class*="ui-fill-"]) {
   background-color: hsla(0, 0%, 0%, 0.15);
-  background-color: var(--calendar-today-btn-bg);
+  background-color: var(--ui-calendar-today-btn-bg);
 }
 .ui-desktop .calendar tbody td.today button:not([class*="ui-fill-"]):hover {
   background-color: hsla(0, 0%, 0%, 0.2);
-  background-color: var(--calendar-today-btn-hover-bg);
+  background-color: var(--ui-calendar-today-btn-hover-bg);
 }
 .calendar tbody td.pickerday button {
   font-weight: 700;
@@ -7690,20 +7690,20 @@ button.dialog-custom:focus {
 }
 .calendar button {
   background-color: hsla(0, 0%, 0%, 0.08);
-  background-color: var(--btn-bg);
+  background-color: var(--ui-btn-bg);
 }
 .calendar button:not([class*="ui-fill-"]) {
   color: hsl(0, 0%, 0%);
-  color: var(--black);
+  color: var(--ui-black);
 }
 .ui-desktop .calendar button:not([class*="ui-fill-"]):hover {
   background-color: hsla(0, 0%, 0%, 0.15);
-  background-color: var(--btn-hover-bg);
+  background-color: var(--ui-btn-hover-bg);
 }
 .calendar caption {
   height: 52px;
   background-color: hsla(0, 0%, 0%, 0.15);
-  background-color: var(--calendar-highlighted-bg);
+  background-color: var(--ui-calendar-highlighted-bg);
   padding: 5px 52px;
   margin-bottom: 5px;
 }
@@ -7846,13 +7846,13 @@ button.dialog-custom:focus {
 .calendar-details li {
   min-height: 10px;
   background-color: hsla(0, 0%, 0%, 0.08);
-  background-color: var(--btn-bg);
+  background-color: var(--ui-btn-bg);
   padding: 10px 10px 10px 92px;
   display: block;
 }
 .ui-desktop .calendar-details li:hover {
   background-color: hsla(0, 0%, 0%, 0.15);
-  background-color: var(--btn-hover-bg);
+  background-color: var(--ui-btn-hover-bg);
 }
 .calendar-details li:not(:last-child) {
   margin-bottom: 5px;
@@ -7883,7 +7883,7 @@ button.dialog-custom:focus {
   font-style: normal;
   line-height: normal;
   background-color: hsla(0, 0%, 0%, 0.08);
-  background-color: var(--btn-bg);
+  background-color: var(--ui-btn-bg);
   padding: 2px 4px;
   margin-right: 5px;
   display: inline-block;
@@ -7899,7 +7899,7 @@ button.dialog-custom:focus {
 .calendar .empty-details li > b,
 .calendar .empty-details li > span {
   background-color: hsla(0, 0%, 0%, 0.12);
-  background-color: var(--calendar-empty-details-bg);
+  background-color: var(--ui-calendar-empty-details-bg);
 }
 .calendar .empty-details li > strong {
   height: 62px;
@@ -7967,7 +7967,7 @@ button.dialog-custom:focus {
 }
 .ui-desktop .calendar-panel .panel-call:hover {
   background-color: hsla(0, 0%, 0%, 0.15);
-  background-color: var(--btn-hover-bg);
+  background-color: var(--ui-btn-hover-bg);
 }
 .calendar .calendar-container {
   position: relative;
@@ -8253,7 +8253,7 @@ button.dialog-custom:focus {
 .grid-list-content:not([class*="col-"]) {
   padding: 10px;
   border-bottom: solid 1px hsl(0, 0%, 86.7%);
-  border-bottom: solid 1px var(--grid-list-border);
+  border-bottom: solid 1px var(--ui-grid-list-border);
 }
 .grid-list-content:before,
 .grid-list-content:after {
@@ -8265,7 +8265,7 @@ button.dialog-custom:focus {
 }
 .grid-list-content.even {
   background-color: hsla(0, 0%, 0%, 0.035);
-  background-color: var(--grid-list-stripe-bg);
+  background-color: var(--ui-grid-list-stripe-bg);
 }
 .grid-list-content.checked {
   background-color: hsla(42, 100%, 45%, 0.15) !important;
@@ -8283,12 +8283,12 @@ button.dialog-custom:focus {
 }
 .grid-list.grid-hover .grid-list-content.even:not([class*="ui-fill-"]) {
   background-color: hsla(0, 0%, 0%, 0.035);
-  background-color: var(--grid-list-stripe-bg);
+  background-color: var(--ui-grid-list-stripe-bg);
 }
 .ui-desktop .grid-list.grid-hover .grid-list-content:not([class*="ui-fill-"]):hover,
 .ui-desktop .grid-list.grid-hover .grid-list-content:not([class*="ui-fill-"]):nth-child(odd):hover {
   background-color: hsla(0, 0%, 0%, 0.06);
-  background-color: var(--grid-list-hover-bg);
+  background-color: var(--ui-grid-list-hover-bg);
 }
 .grid-list .grid-list-paging button:not(.btn) {
   color: inherit;
@@ -8326,7 +8326,7 @@ button.dialog-custom:focus {
 }
 .image-uploader {
   background-color: hsl(0, 0%, 100%);
-  background-color: var(--card-bg);
+  background-color: var(--ui-card-bg);
   overflow: hidden;
   position: relative;
 }
@@ -8340,7 +8340,7 @@ button.dialog-custom:focus {
 }
 .image-uploader.drop-highlight {
   background-color: hsl(0, 0%, 93%);
-  background-color: var(--image-uploader-drop-bg);
+  background-color: var(--ui-image-uploader-drop-bg);
 }
 .image-uploader.drop-highlight .uploader-list > .icon {
   display: block;
@@ -8421,21 +8421,21 @@ button.dialog-custom:focus {
 }
 .image-uploader .uploader-list ul li .tag {
   color: hsla(0, 0%, 0%, 0.5);
-  color: var(--image-uploader-list-tag-color);
+  color: var(--ui-image-uploader-list-tag-color);
   font-size: 13px;
   white-space: nowrap;
   padding: 1px 6px;
   background-color: hsla(0, 0%, 0%, 0.08);
-  background-color: var(--image-uploader-list-tag-bg);
+  background-color: var(--ui-image-uploader-list-tag-bg);
   border-radius: 20px;
 }
 .image-uploader .uploader-list:not(.open),
 .image-uploader.drop-highlight .uploader-list {
   background-color: hsla(0, 0%, 100%, 0.45);
-  background-color: var(--image-uploader-list-bg);
+  background-color: var(--ui-image-uploader-list-bg);
   margin: 10px;
   border: dashed 2px hsla(0, 0%, 0%, 0.15);
-  border: dashed 2px var(--image-uploader-list-border);
+  border: dashed 2px var(--ui-image-uploader-list-border);
   border-radius: 6px;
 }
 .image-uploader .uploader-list:not(.open) li {
@@ -8845,11 +8845,11 @@ button.dialog-custom:focus {
 }
 .photo-slider:not(.loaded) {
   background-color: hsl(0, 0%, 98%);
-  background-color: var(--body-bg);
+  background-color: var(--ui-body-bg);
 }
 .card .photo-slider:not(.loaded) {
   background-color: hsl(0, 0%, 100%);
-  background-color: var(--card-bg);
+  background-color: var(--ui-card-bg);
 }
 .photo-slider:not(.loaded) .slider-loader {
   opacity: 0.45;
@@ -8911,14 +8911,14 @@ button.dialog-custom:focus {
   width: 7px;
   height: 7px;
   background-color: hsla(0, 0%, 0%, 0.2);
-  background-color: var(--photo-slider-dot-bg);
+  background-color: var(--ui-photo-slider-dot-bg);
   margin: 0 3px;
   display: inline-block;
   border-radius: 50%;
 }
 .photo-slider .photo-slider-nav i.selected {
   background-color: hsla(0, 0%, 0%, 0.35);
-  background-color: var(--photo-slider-dot-selected-bg);
+  background-color: var(--ui-photo-slider-dot-selected-bg);
   transform: scale(1.5);
 }
 /* weather */
@@ -9682,19 +9682,19 @@ html:not(.ui-ie) .svg-map svg {
 }
 .svg-map svg path:not([fill]) {
   fill: hsla(0, 0%, 0%, 0.08);
-  fill: var(--svg-map-path-fill);
+  fill: var(--ui-svg-map-path-fill);
 }
 .svg-map svg path:not([fill]):hover {
   fill: hsla(0, 0%, 0%, 0.15);
-  fill: var(--svg-map-path-fill-hover);
+  fill: var(--ui-svg-map-path-fill-hover);
 }
 .svg-map svg path:not([stroke]) {
   stroke: hsl(0, 0%, 98%);
-  stroke: var(--body-bg);
+  stroke: var(--ui-body-bg);
 }
 .card .svg-map svg path:not([stroke]) {
   stroke: hsl(0, 0%, 100%);
-  stroke: var(--card-bg);
+  stroke: var(--ui-card-bg);
 }
 .svg-map svg path.active:not([fill]) {
   fill: currentColor;
@@ -9711,7 +9711,7 @@ html:not(.ui-ie) .svg-map svg {
 [class*="ui-fill-light-"] a:not([class*="ui-fill-"]):not([class*="font-color-"]),
 [class*="ui-fill-light-"] button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
   color: hsl(0, 0%, 0%);
-  color: var(--black);
+  color: var(--ui-black);
 }
 [class*="ui-fill-dark-"],
 [class*="ui-fill-dark-"] .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),

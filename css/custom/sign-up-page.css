@@ -1,20 +1,20 @@
 /* sign up page */
 [data-ui-mode="light"] {
-  --sign-up-holder-bg: linear-gradient(110deg, hsl(263, 37%, 42%), hsl(242, 88%, 17%), hsl(331, 73%, 25%));
-  --sign-up-btn-bg: linear-gradient(130deg, hsl(135, 72%, 60%), hsl(135, 62%, 46%));
-  --sign-up-why-bg: linear-gradient(130deg, hsl(0, 0%, 100%), hsl(255, 100%, 94%), hsl(0, 0%, 100%));
+  --ui-sign-up-holder-bg: linear-gradient(110deg, hsl(263, 37%, 42%), hsl(242, 88%, 17%), hsl(331, 73%, 25%));
+  --ui-sign-up-btn-bg: linear-gradient(130deg, hsl(135, 72%, 60%), hsl(135, 62%, 46%));
+  --ui-sign-up-why-bg: linear-gradient(130deg, hsl(0, 0%, 100%), hsl(255, 100%, 94%), hsl(0, 0%, 100%));
 }
 [data-ui-mode="dark"] {
-  --sign-up-holder-bg: linear-gradient(110deg, hsl(262, 100%, 72%), hsl(242, 46%, 31%), hsl(331, 60%, 39%));
-  --sign-up-btn-bg: linear-gradient(130deg, hsl(135, 62%, 46%), hsl(135, 77%, 31%));
-  --sign-up-why-bg: linear-gradient(130deg, hsl(220, 14%, 21%), hsl(256, 19%, 20%), hsl(220, 14%, 21%));
+  --ui-sign-up-holder-bg: linear-gradient(110deg, hsl(262, 100%, 72%), hsl(242, 46%, 31%), hsl(331, 60%, 39%));
+  --ui-sign-up-btn-bg: linear-gradient(130deg, hsl(135, 62%, 46%), hsl(135, 77%, 31%));
+  --ui-sign-up-why-bg: linear-gradient(130deg, hsl(220, 14%, 21%), hsl(256, 19%, 20%), hsl(220, 14%, 21%));
 }
 .signup-container {
   margin-top: -50px;
 }
 .signup-holder {
   background-image: linear-gradient(110deg, hsl(263, 37%, 42%), hsl(242, 88%, 17%), hsl(331, 73%, 25%));
-  background-image: var(--sign-up-holder-bg);
+  background-image: var(--ui-sign-up-holder-bg);
 }
 .signup-icons .icon {
   position: absolute;
@@ -62,9 +62,9 @@
 .signup-btn {
   min-width: 42%;
   background-image: linear-gradient(130deg, hsl(135, 72%, 60%), hsl(135, 62%, 46%));
-  background-image: var(--sign-up-btn-bg);
+  background-image: var(--ui-sign-up-btn-bg);
 }
 .why-join {
   background-image: linear-gradient(130deg, hsl(0, 0%, 100%), hsl(255, 100%, 94%), hsl(0, 0%, 100%));
-  background-image: var(--sign-up-why-bg);
+  background-image: var(--ui-sign-up-why-bg);
 }

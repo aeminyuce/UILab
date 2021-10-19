@@ -1,9 +1,9 @@
 /* dashboard */
 [data-ui-mode="light"] {
-  --header-bg: hsl(0, 0%, 100%);
+  --ui-header-bg: hsl(0, 0%, 100%);
 }
 [data-ui-mode="dark"] {
-  --header-bg: hsl(220, 15%, 16%);
+  --ui-header-bg: hsl(220, 15%, 16%);
 }
 .ui-theme-panel.ui-fill-light-100,
 .ui-theme-panel .ui-fill-light-100:not([class*="ui-theme-"]) {
@@ -146,7 +146,7 @@ body {
 }
 header {
   background-color: hsl(0, 0%, 100%);
-  background-color: var(--header-bg);
+  background-color: var(--ui-header-bg);
 }
 .sidebar-hide {
   background-color: transparent;

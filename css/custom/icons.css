@@ -1,15 +1,15 @@
 /* icons */
 [data-ui-mode="light"] {
-  --icons-list-color: hsl(214, 10%, 32%);
-  --icons-list-bg: hsla(0, 0%, 0%, 0.07);
-  --icons-list-hover-bg: hsla(0, 0%, 0%, 0.12);
-  --icons-name-color: hsla(0, 0%, 0%, 0.5);
+  --ui-icons-list-color: hsl(214, 10%, 32%);
+  --ui-icons-list-bg: hsla(0, 0%, 0%, 0.07);
+  --ui-icons-list-hover-bg: hsla(0, 0%, 0%, 0.12);
+  --ui-icons-name-color: hsla(0, 0%, 0%, 0.5);
 }
 [data-ui-mode="dark"] {
-  --icons-list-color: hsl(0, 0%, 100%);
-  --icons-list-bg: hsl(220, 14%, 21%);
-  --icons-list-hover-bg: hsl(219, 12%, 27%);
-  --icons-name-color: hsl(0, 0%, 82%);
+  --ui-icons-list-color: hsl(0, 0%, 100%);
+  --ui-icons-list-bg: hsl(220, 14%, 21%);
+  --ui-icons-list-hover-bg: hsl(219, 12%, 27%);
+  --ui-icons-name-color: hsl(0, 0%, 82%);
 }
 .icons-list {
   margin: -1px;
@@ -22,10 +22,10 @@
 }
 .icons-list li {
   color: hsl(214, 10%, 32%);
-  color: var(--icons-list-color);
+  color: var(--ui-icons-list-color);
   max-width: 160px;
   background-color: hsla(0, 0%, 0%, 0.07);
-  background-color: var(--icons-list-bg);
+  background-color: var(--ui-icons-list-bg);
   padding: 15px 10px;
   margin: 1px;
   border-radius: 6px;
@@ -34,11 +34,11 @@
 }
 .ui-desktop .icons-list li:hover {
   background-color: hsla(0, 0%, 0%, 0.12);
-  background-color: var(--icons-list-hover-bg);
+  background-color: var(--ui-icons-list-hover-bg);
 }
 .icons-list li > span {
   color: hsla(0, 0%, 0%, 0.5);
-  color: var(--icons-name-color);
+  color: var(--ui-icons-name-color);
   font-size: 13px;
   white-space: nowrap;
   text-overflow: ellipsis;

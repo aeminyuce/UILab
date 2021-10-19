@@ -137,36 +137,36 @@
 
 // variables
 ._global-vars () {
-    --body-bg: @body-bg;
+    --ui-body-bg: @body-bg;
 
-    --white: @white;
-    --black: @black;
+    --ui-white: @white;
+    --ui-black: @black;
 
-    --border-color: @border-color;
-    --table-border-color: @table-border-color;
+    --ui-border-color: @border-color;
+    --ui-table-border-color: @table-border-color;
 
-    --card-bg: @card-bg;
-    --highlighted: @highlighted;
+    --ui-card-bg: @card-bg;
+    --ui-highlighted: @highlighted;
 
-    --btn-bg: @btn-bg;
-    --btn-hover-bg: @btn-hover-bg;
-    --btn-ghost-hover-bg: @btn-ghost-hover-bg;
+    --ui-btn-bg: @btn-bg;
+    --ui-btn-hover-bg: @btn-hover-bg;
+    --ui-btn-ghost-hover-bg: @btn-ghost-hover-bg;
 }
 ._global-vars-dark () {
-    --body-bg: @body-bg-dark;
+    --ui-body-bg: @body-bg-dark;
 
-    --white: @black;
-    --black: @white;
+    --ui-white: @black;
+    --ui-black: @white;
 
-    --border-color: @border-color-dark;
-    --table-border-color: @table-border-color-dark;
+    --ui-border-color: @border-color-dark;
+    --ui-table-border-color: @table-border-color-dark;
 
-    --card-bg: @card-bg-dark;
-    --highlighted: @highlighted-dark;
+    --ui-card-bg: @card-bg-dark;
+    --ui-highlighted: @highlighted-dark;
 
-    --btn-bg: @btn-bg-dark;
-    --btn-hover-bg: @btn-hover-bg-dark;
-    --btn-ghost-hover-bg: @btn-ghost-hover-bg-dark;
+    --ui-btn-bg: @btn-bg-dark;
+    --ui-btn-hover-bg: @btn-hover-bg-dark;
+    --ui-btn-ghost-hover-bg: @btn-ghost-hover-bg-dark;
 }
 
 & when (@dark-mode = true) {
@@ -190,7 +190,7 @@
 }
 ._color-var (@var) when (@dark-mode = true) {
     color: @@var; // fallback
-    color: ~'var(--@{var})';
+    color: ~'var(--ui-@{var})';
 }
 
 ._bg-var (@var) when (@dark-mode = false) {
@@ -198,7 +198,7 @@
 }
 ._bg-var (@var) when (@dark-mode = true) {
     background-color: @@var; // fallback
-    background-color: ~'var(--@{var})';
+    background-color: ~'var(--ui-@{var})';
 }
 
 ._gradient-var (@var) when (@dark-mode = false) {
@@ -206,7 +206,7 @@
 }
 ._gradient-var (@var) when (@dark-mode = true) {
     background-image: @@var; // fallback
-    background-image: ~'var(--@{var})';
+    background-image: ~'var(--ui-@{var})';
 }
 
 ._border-color-var (@var: border-color) when (@dark-mode = false) {
@@ -214,7 +214,7 @@
 }
 ._border-color-var (@var: border-color) when (@dark-mode = true) {
     border-color: @@var; // fallback
-    border-color: ~'var(--@{var})';
+    border-color: ~'var(--ui-@{var})';
 }
 
 ._border-var (@dir: border; @style: solid; @width: 1px; @var: border-color) when (@dark-mode = false) {
@@ -222,7 +222,7 @@
 }
 ._border-var (@dir: border; @style: solid; @width: 1px; @var: border-color) when (@dark-mode = true) {
     @{dir}: @style @width @@var; // fallback
-    @{dir}: @style @width ~'var(--@{var})';
+    @{dir}: @style @width ~'var(--ui-@{var})';
 }
 
 ._shadow-var (@h: 0; @v: 0; @blur: 0; @spread: 0; @var: border-color) when (@dark-mode = false) {
@@ -230,7 +230,7 @@
 }
 ._shadow-var (@h: 0; @v: 0; @blur: 0; @spread: 0; @var: border-color) when (@dark-mode = true) {
     box-shadow: @h @v @blur @spread @@var; // fallback
-    box-shadow: @h @v @blur @spread ~'var(--@{var})';
+    box-shadow: @h @v @blur @spread ~'var(--ui-@{var})';
 }
 
 ._fill-var (@var) when (@dark-mode = false) {
@@ -238,7 +238,7 @@
 }
 ._fill-var (@var) when (@dark-mode = true) {
     fill: @@var; // fallback
-    fill: ~'var(--@{var})';
+    fill: ~'var(--ui-@{var})';
 }
 
 ._stroke-var (@var) when (@dark-mode = false) {
@@ -246,7 +246,7 @@
 }
 ._stroke-var (@var) when (@dark-mode = true) {
     stroke: @@var; // fallback
-    stroke: ~'var(--@{var})';
+    stroke: ~'var(--ui-@{var})';
 }
 
 // font mixins
