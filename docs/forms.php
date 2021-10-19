@@ -84,8 +84,8 @@
                             </div>
                             <div class="col-32">
                                 <button class="btn btn-square btn-ghost border-dual ease-btn">
-                                    <!-- for loading toggle "animate-spin" -->
-                                    <svg class="icon no-opacity animate-spin"><use href="#sync"/></svg>
+                                    <!-- for loading toggle "ui-animate-spin" -->
+                                    <svg class="icon no-opacity ui-animate-spin"><use href="#sync"/></svg>
                                 </button>
                             </div>
                             <div class="row no-row-gap">
@@ -156,8 +156,8 @@
                                 </div>
                                 <div class="col-42">
                                     <button class="btn btn-square btn-ghost border-dual ease-btn">
-                                        <!-- for loading toggle "animate-spin" -->
-                                        <svg class="icon no-opacity animate-spin"><use href="#sync" /></svg>
+                                        <!-- for loading toggle "ui-animate-spin" -->
+                                        <svg class="icon no-opacity ui-animate-spin"><use href="#sync" /></svg>
                                     </button>
                                 </div>
                                 <div class="row no-row-gap">
@@ -1785,8 +1785,8 @@
                         </div>
                         <div class="col-32">
                             <button class="btn btn-square btn-ghost border-dual border-light ease-btn">
-                                <!-- for loading toggle "animate-spin" -->
-                                <svg class="icon no-opacity animate-spin"><use href="#sync"/></svg>
+                                <!-- for loading toggle "ui-animate-spin" -->
+                                <svg class="icon no-opacity ui-animate-spin"><use href="#sync"/></svg>
                             </button>
                         </div>
                         <div class="row no-row-gap">

@@ -65,8 +65,8 @@
 
                 <div class="row no-fluid padding-30-b">
                     <div class="col-6">
-                        <div class="ui-theme-yellow padding-30 ui-fill-dark-100 stripe-light round animate-progress">
-                            .ui-theme-yellow .ui-fill-dark-100 .animate-progress
+                        <div class="ui-theme-yellow padding-30 ui-fill-dark-100 stripe-light round ui-animate-progress">
+                            .ui-theme-yellow .ui-fill-dark-100 .ui-animate-progress
                         </div>
                     </div>
                     <div class="col-6">
@@ -76,8 +76,8 @@
                     </div>
                     <div class="sp-5"></div>
                     <div class="col-6">
-                        <div class="ui-theme-red padding-30 ui-fill-dark-100 stripe-light round animate-progress">
-                            .ui-theme-red .ui-fill-dark-100 .animate-progress
+                        <div class="ui-theme-red padding-30 ui-fill-dark-100 stripe-light round ui-animate-progress">
+                            .ui-theme-red .ui-fill-dark-100 .ui-animate-progress
                         </div>
                     </div>
                     <div class="col-6">

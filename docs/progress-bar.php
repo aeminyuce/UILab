@@ -64,10 +64,10 @@
                 <span class="sp-30"></span>
 
                 <div class="progress-bar progress-lg round">
-                    <span class="ui-theme-sub ui-fill-light-300 stripe-light animate-progress" style="width: 80%;"></span>
+                    <span class="ui-theme-sub ui-fill-light-300 stripe-light ui-animate-progress" style="width: 80%;"></span>
                 </div>
                 <div class="progress-bar progress-lg round">
-                    <span class="ui-theme-sub ui-fill-dark-100 stripe-dark animate-progress" style="width: 80%;"></span>
+                    <span class="ui-theme-sub ui-fill-dark-100 stripe-dark ui-animate-progress" style="width: 80%;"></span>
                 </div>
 
             </div>

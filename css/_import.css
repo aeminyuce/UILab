@@ -187,7 +187,7 @@ img {
   -webkit-text-size-adjust: 100%;
 }
 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
-  .ui-mac.ui-chrome body {
+  .ui .ui-mac.ui-chrome body {
     backface-visibility: hidden;
     perspective: 1000;
   }
@@ -313,10 +313,10 @@ img {
     background-position: 0 0;
   }
 }
-.animate-spin {
+.ui-animate-spin {
   animation: ui-spin 1.15s linear infinite;
 }
-.animate-progress {
+.ui-animate-progress {
   animation: ui-progress 3s linear infinite;
 }
 .ui-no-effects,
