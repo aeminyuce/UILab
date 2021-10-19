@@ -2,11 +2,14 @@
 
 @weather-app-all-day-bg:                linear-gradient(135deg, hsl(227, 72%, 76%), hsl(261, 72%, 73%));
 
-.weather.round {
-    .graphs { border-radius: 36px; }
+.ui {
+    &-weather.round {
+        .ui-graphs { border-radius: 36px; }
+    }
+
+    &-all-day { background-image: @weather-app-all-day-bg; }
 }
+
 .round {
     &.card { border-radius: 32px; }
 }
-
-.all-day { background-image: @weather-app-all-day-bg; }

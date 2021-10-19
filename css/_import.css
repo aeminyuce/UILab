@@ -8922,56 +8922,56 @@ button.dialog-custom:focus {
   transform: scale(1.5);
 }
 /* weather */
-.ui-ease-weather .graphs {
+.ui-ease-weather .ui-graphs {
   transition-property: background-color;
 }
-.ui-ease-weather .graphs,
-.ui-ease-weather .graphs > div {
+.ui-ease-weather .ui-graphs,
+.ui-ease-weather .ui-graphs > div {
   transition-duration: 0.8s;
 }
-.ui-ease-weather .graphs > div {
+.ui-ease-weather .ui-graphs > div {
   transition-property: left;
 }
-.weather {
+.ui-weather {
   position: relative;
 }
-.weather:before,
-.weather:after,
-.weather .days:before,
-.weather .days:after {
+.ui-weather:before,
+.ui-weather:after,
+.ui-weather .ui-days:before,
+.ui-weather .ui-days:after {
   content: "";
   display: table;
 }
-.weather:after,
-.weather .days:after {
+.ui-weather:after,
+.ui-weather .ui-days:after {
   clear: both;
 }
-.weather .details {
+.ui-weather .ui-details {
   width: 100%;
   position: relative;
   z-index: 2;
 }
-.weather .now,
-.weather .days,
-.weather .now a,
-.weather .days a {
+.ui-weather .ui-now,
+.ui-weather .ui-days,
+.ui-weather .ui-now a,
+.ui-weather .ui-days a {
   color: hsl(0, 0%, 0%);
   -ms-user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
 }
-.weather .now {
+.ui-weather .ui-now {
   text-align: center;
   padding: 60px 15px 30px 15px;
 }
-.weather .now > span {
+.ui-weather .ui-now > span {
   font-size: 22px;
   font-weight: 300;
   line-height: normal;
   display: block;
 }
-.weather .days {
+.ui-weather .ui-days {
   white-space: nowrap;
   list-style: none;
   padding: 0 0 15px 0;
@@ -8979,26 +8979,26 @@ button.dialog-custom:focus {
   overflow-x: auto !important;
   overflow-y: hidden !important;
 }
-.ui-mobile .weather .days {
+.ui-mobile .ui-weather .ui-days {
   -webkit-overflow-scrolling: touch;
 }
-.weather .days li {
+.ui-weather .ui-days li {
   text-align: center;
   width: 20.65%;
   display: inline-block;
 }
-.weather .days li .icon {
+.ui-weather .ui-days li .icon {
   margin: 15px auto;
   display: block;
 }
-.weather .days li > span {
+.ui-weather .ui-days li > span {
   font-size: 14px;
   line-height: 14px;
   display: inline-block;
   position: relative;
   opacity: 0.85;
 }
-.weather .w-degree {
+.ui-weather .ui-w-degree {
   font-size: 72px;
   font-weight: 300;
   letter-spacing: -0.025em;
@@ -9007,7 +9007,7 @@ button.dialog-custom:focus {
   display: inline-block;
   position: relative;
 }
-.weather .w-degree:after {
+.ui-weather .ui-w-degree:after {
   content: "";
   width: 16px;
   height: 16px;
@@ -9018,21 +9018,20 @@ button.dialog-custom:focus {
   top: 0;
   right: -20px;
 }
-.weather .w-date {
+.ui-weather .ui-w-date {
   font-size: 14px;
   font-weight: 400;
   margin-top: 2px;
   display: block;
   opacity: 0.65;
 }
-.weather .deg {
+.ui-weather .ui-deg {
   vertical-align: middle;
   margin-right: 6px;
   display: inline-block;
   position: relative;
 }
-.weather .deg:after,
-.weather .days li span:after {
+.ui-weather .ui-deg:after {
   content: "";
   width: 6px;
   height: 6px;
@@ -9043,7 +9042,7 @@ button.dialog-custom:focus {
   top: 0;
   right: -7px;
 }
-.weather .clear {
+.ui-weather .ui-clear {
   width: 178px;
   height: 178px;
   background: no-repeat;
@@ -9064,7 +9063,7 @@ button.dialog-custom:focus {
     opacity: 0;
   }
 }
-.weather .w-clock > span:first-child:after {
+.ui-weather .ui-w-clock > span:first-child:after {
   content: ":";
   animation: ui-clock 2s linear infinite;
 }
@@ -9085,7 +9084,7 @@ button.dialog-custom:focus {
     transform: translate(100%, 35%);
   }
 }
-.weather .shooting-star {
+.ui-weather .ui-shooting-star {
   width: 335px;
   height: 115px;
   background: no-repeat top center;
@@ -9094,7 +9093,7 @@ button.dialog-custom:focus {
   opacity: 0.65;
   animation: ui-shooting 6s linear infinite;
 }
-.weather .stars {
+.ui-weather .ui-stars {
   width: 100%;
   height: 100%;
   background: no-repeat top center;
@@ -9109,8 +9108,8 @@ button.dialog-custom:focus {
     transform: translateX(-1486px);
   }
 }
-.weather .cloud,
-.weather .cloud-heavy {
+.ui-weather .ui-cloud,
+.ui-weather .ui-cloud-heavy {
   width: 2972px;
   height: 100%;
   background: repeat-x;
@@ -9128,7 +9127,7 @@ button.dialog-custom:focus {
     transform: translateX(-1248px);
   }
 }
-.weather .fog {
+.ui-weather .ui-fog {
   width: 2496px;
   height: 100%;
   background: repeat-x;
@@ -9144,11 +9143,11 @@ button.dialog-custom:focus {
     transform: translateY(0);
   }
 }
-.weather .rain {
+.ui-weather .ui-rain {
   animation: ui-rain 6s linear infinite;
 }
-.weather .rain,
-.weather .rain-heavy {
+.ui-weather .ui-rain,
+.ui-weather .ui-rain-heavy {
   width: 100%;
   height: 1000px;
   background: no-repeat top center;
@@ -9157,7 +9156,7 @@ button.dialog-custom:focus {
   z-index: 1;
   opacity: 0.8;
 }
-.weather .rain-heavy {
+.ui-weather .ui-rain-heavy {
   animation: ui-rain 4s linear infinite;
 }
 @keyframes ui-bolt {
@@ -9183,7 +9182,7 @@ button.dialog-custom:focus {
     opacity: 0;
   }
 }
-.weather .bolt {
+.ui-weather .ui-bolt {
   width: 100%;
   height: 100%;
   background: hsla(0, 0%, 100%, 0.15) no-repeat top center;
@@ -9201,7 +9200,7 @@ button.dialog-custom:focus {
     transform: translateY(0);
   }
 }
-.weather .snow {
+.ui-weather .ui-snow {
   width: 100%;
   height: 1000px;
   background: no-repeat top center;
@@ -9211,7 +9210,7 @@ button.dialog-custom:focus {
   opacity: 0.8;
   animation: ui-snow 40s linear infinite;
 }
-.weather .graphs {
+.ui-weather .ui-graphs {
   height: 100%;
   overflow: hidden;
   position: absolute;
@@ -9221,65 +9220,65 @@ button.dialog-custom:focus {
   left: 0;
   z-index: 1;
 }
-.weather .graphs[data-ui-graphs*="clear"] {
+.ui-weather .ui-graphs[data-ui-graphs*="clear"] {
   background-image: linear-gradient(hsl(0, 100%, 89%), hsl(224, 95%, 92%));
 }
-.weather .graphs[data-ui-graphs*="cloud"] {
+.ui-weather .ui-graphs[data-ui-graphs*="cloud"] {
   background-image: linear-gradient(hsl(209, 100%, 86%), hsl(224, 95%, 92%));
 }
-.weather .graphs[data-ui-graphs*="fog"] {
+.ui-weather .ui-graphs[data-ui-graphs*="fog"] {
   background-image: linear-gradient(hsl(228, 97%, 86%), hsl(224, 95%, 92%));
 }
-.weather .graphs[data-ui-graphs*="rain"],
-.weather .graphs[data-ui-graphs*="bolt"] {
+.ui-weather .ui-graphs[data-ui-graphs*="rain"],
+.ui-weather .ui-graphs[data-ui-graphs*="bolt"] {
   background-image: linear-gradient(hsl(266, 100%, 88%), hsl(224, 95%, 92%));
 }
-.weather .graphs[data-ui-graphs*="snow"] {
+.ui-weather .ui-graphs[data-ui-graphs*="snow"] {
   background-image: linear-gradient(hsl(201, 78%, 72%), hsl(224, 95%, 92%));
 }
-.weather .graphs > div {
+.ui-weather .ui-graphs > div {
   position: absolute;
 }
-.weather.round .graphs {
+.ui-weather.round .ui-graphs {
   border-radius: 6px;
 }
-.weather.night .now,
-.weather.night .days,
-.weather.night .now a,
-.weather.night .days a,
-.weather.night .now .icons,
-.weather.night .days .icons {
+.ui-weather.ui-night .ui-now,
+.ui-weather.ui-night .ui-days,
+.ui-weather.ui-night .ui-now a,
+.ui-weather.ui-night .ui-days a,
+.ui-weather.ui-night .ui-now .icons,
+.ui-weather.ui-night .ui-days .icons {
   color: hsl(0, 0%, 100%);
 }
-.weather.night .graphs {
+.ui-weather.ui-night .ui-graphs {
   background-image: linear-gradient(hsl(226, 45%, 28%), hsl(221, 36%, 65%)) !important;
 }
-.weather.night .clear {
+.ui-weather.ui-night .ui-clear {
   top: 60px;
   left: 80%;
   z-index: 1;
   transform: scale(0.35);
 }
-.weather.night .cloud,
-.weather.night .cloud-heavy {
+.ui-weather.ui-night .ui-cloud,
+.ui-weather.ui-night .ui-cloud-heavy {
   opacity: 0.3;
 }
-.weather.night .fog {
+.ui-weather.ui-night .ui-fog {
   opacity: 0.3;
 }
-.weather.night .rain,
-.weather.night .rain-heavy {
+.ui-weather.ui-night .ui-rain,
+.ui-weather.ui-night .ui-rain-heavy {
   opacity: 0.45;
 }
-.weather.night .snow {
+.ui-weather.ui-night .ui-snow {
   opacity: 0.65;
 }
-.weather:not(.night) .clear {
+.ui-weather:not(.ui-night) .ui-clear {
   top: 15px;
   opacity: 0.85;
 }
-.weather:not(.night) .graphs .stars,
-.weather:not(.night) .graphs .shooting-star {
+.ui-weather:not(.ui-night) .ui-graphs .ui-stars,
+.ui-weather:not(.ui-night) .ui-graphs .ui-shooting-star {
   display: none;
 }
 /* line charts */

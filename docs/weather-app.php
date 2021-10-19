@@ -7,16 +7,16 @@
         <div class="row row-gap-lg padding-30-b">
             <div class="col-4 offset-2 col-md-6 offset-md-0">
 
-                <div class="weather round ui-ease-weather">
-                    <div class="details">
-                        <div class="now">
-                            <b class="w-degree">33</b>
+                <div class="ui-weather round ui-ease-weather">
+                    <div class="ui-details">
+                        <div class="ui-now">
+                            <b class="ui-w-degree">33</b>
                             <span>
-                                Clear <b class="w-date"></b>
+                                Clear <b class="ui-w-date"></b>
                                 <a class="x-large margin-5-t block opacity ui-ease-layout" href="#">Istanbul</a>
                             </span>
                         </div>
-                        <ul class="days icons-lg scrollbar-faded round">
+                        <ul class="ui-days icons-lg scrollbar-faded round">
                             <li><b>Now</b><svg class="icon"><use href="#temperature"/></svg><span>36</span></li>
                             <li>14<svg class="icon"><use href="#sun"/></svg><span>32</span></li>
                             <li>15<svg class="icon"><use href="#sun"/></svg><span>31</span></li>
@@ -103,7 +103,7 @@
                                             Partly cloudy tonight with a low of 28<sup>o</sup>.
                                         </p>
                                     </div>
-                                    <div class="all-day largest font-color-white align-c inline-block-1st padding-10 circle">
+                                    <div class="ui-all-day largest font-color-white align-c inline-block-1st padding-10 circle">
                                         <svg class="icon"><use href="#sunrise"/></svg>
                                         <span class="margin-30-r">05:53</span>
                                         <span>19:59</span>
@@ -133,22 +133,22 @@
                             </div>
                         </div>
                     </div>
-                    <div class="graphs" data-ui-graphs="clear" data-ui-day="05:53,19:59"></div>
+                    <div class="ui-graphs" data-ui-graphs="clear" data-ui-day="05:53,19:59"></div>
                 </div>
 
             </div>
             <div class="col-4 col-md-6">
 
-                <div class="weather round ui-ease-weather">
-                    <div class="details">
-                        <div class="now">
-                            <b class="w-degree">33</b>
+                <div class="ui-weather round ui-ease-weather">
+                    <div class="ui-details">
+                        <div class="ui-now">
+                            <b class="ui-w-degree">33</b>
                             <span>
-                                Partly Cloudy <b class="w-date"></b>
+                                Partly Cloudy <b class="ui-w-date"></b>
                                 <a class="x-large margin-5-t block opacity ui-ease-layout" href="#">Istanbul</a>
                             </span>
                         </div>
-                        <ul class="days icons-lg scrollbar-faded round">
+                        <ul class="ui-days icons-lg scrollbar-faded round">
                             <li><b>Now</b><svg class="icon"><use href="#moon"/></svg><span>32</span></li>
                             <li>22<svg class="icon"><use href="#moon"/></svg><span>32</span></li>
                             <li>23<svg class="icon"><use href="#moon"/></svg><span>31</span></li>
@@ -174,7 +174,7 @@
                                             Partly cloudy tonight with a low of 28<sup>o</sup>.
                                         </p>
                                     </div>
-                                    <div class="all-day largest font-color-white align-c inline-block-1st padding-10 circle">
+                                    <div class="ui-all-day largest font-color-white align-c inline-block-1st padding-10 circle">
                                         <svg class="icon"><use href="#sunrise"/></svg>
                                         <span class="margin-30-r">05:53</span>
                                         <span>19:59</span>
@@ -265,7 +265,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="graphs" data-ui-graphs="cloud" data-ui-day="19:59,05:53"></div>
+                    <div class="ui-graphs" data-ui-graphs="cloud" data-ui-day="19:59,05:53"></div>
                 </div>
 
             </div>

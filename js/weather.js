@@ -6,26 +6,29 @@
 ui.weather = {
 
     // targets
-    target: 'weather',
+    target: 'ui-weather',
 
     // main classnames
-    nameGraphs: 'graphs',
-    nameNight: 'night',
+    nameGraphs: 'ui-graphs',
+    nameNight: 'ui-night',
+    nameClear: 'ui-clear',
 
-    nameWday: 'w-dayname',
-    nameWdate: 'w-date',
-    nameWclock: 'w-clock',
+    nameWday: 'ui-w-dayname',
+    nameWdate: 'ui-w-date',
+    nameWclock: 'ui-w-clock',
+
+    nameAnimatePrefix: 'ui-',
 
     // helper classnames
-    nameLoaded: 'loaded',
+    nameLoaded: 'ui-loaded',
 
-    // animations: using with classnames and file names!
-    nameClear: 'clear',
-    nameStars: 'stars',
-    nameShootingStar: 'shooting-star',
-    nameCloud: 'cloud',
-    nameCloudHeavy: 'cloud-heavy',
-    nameFog: 'fog',
+    // animations
+    animateClear: 'clear',
+    animateStars: 'stars',
+    animateShootingStar: 'shooting-star',
+    animateCloud: 'cloud',
+    animateCloudHeavy: 'cloud-heavy',
+    animateFog: 'fog',
 
     // values
     days: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
@@ -85,26 +88,26 @@ ui.weather = {
 
                                 for (i = 0; i < data.length; i++) {
 
-                                    if (data[i] === ui.weather.nameClear) { // convert sun to stars
-                                        animations.push(ui.weather.nameStars);
+                                    if (data[i] === ui.weather.animateClear) { // convert sun to stars
+                                        animations.push(ui.weather.animateStars);
 
-                                    } else if (data[i] === ui.weather.nameStars) { // convert stars to sun
-                                        animations.push(ui.weather.nameClear);
+                                    } else if (data[i] === ui.weather.animateStars) { // convert stars to sun
+                                        animations.push(ui.weather.animateClear);
                                     }
 
-                                    if (data.length === 1 && (data[i] === ui.weather.nameCloud || data[i] === ui.weather.nameFog)) { // add sun and stars for cloudy and foggy weather
+                                    if (data.length === 1 && (data[i] === ui.weather.animateCloud || data[i] === ui.weather.animateFog)) { // add sun and stars for cloudy and foggy weather
 
-                                        animations.push(ui.weather.nameClear);
-                                        animations.push(ui.weather.nameStars);
+                                        animations.push(ui.weather.animateClear);
+                                        animations.push(ui.weather.animateStars);
 
                                     }
 
-                                    if (data[i] === ui.weather.nameCloudHeavy) { // add stars for mostly cloudy weather
-                                        animations.push(ui.weather.nameStars);
+                                    if (data[i] === ui.weather.animateCloudHeavy) { // add stars for mostly cloudy weather
+                                        animations.push(ui.weather.animateStars);
                                     }
 
-                                    if (data.length === 1 && (data[i] === ui.weather.nameClear || data[i] === ui.weather.nameStars)) { // add shooting star if weather is clear
-                                        animations.push(ui.weather.nameShootingStar);
+                                    if (data.length === 1 && (data[i] === ui.weather.animateClear || data[i] === ui.weather.animateStars)) { // add shooting star if weather is clear
+                                        animations.push(ui.weather.animateShootingStar);
                                     }
 
                                     animations.push(data[i]); // add other animations
@@ -114,7 +117,7 @@ ui.weather = {
                                 // create animations
                                 for (i = 0; i < animations.length; i++) {
                                     html += '<div ' +
-                                                'class="' + animations[i] + '" ' +
+                                                'class="' + ui.weather.nameAnimatePrefix + animations[i] + '" ' +
                                                 'style="background-image: url(' + ui.weather.graphPath + animations[i] + '.' + ui.weather.fileType + ');">' +
                                             '</div>';
                                 }
