@@ -6,12 +6,12 @@
 ui.topButton = {
 
     // targets
-    target: 'top-button',
+    target: 'ui-top-button',
     targetScrollable: 'body', // don't use html tag: IE 10 not supported!
 
     // helper classnames
-    nameOpen: 'open',
-    nameOpenEase: 'open-ease',
+    nameOpen: 'ui-open',
+    nameOpenEase: 'ui-open-ease',
 
     // styling classnames
     stylesTarget: 'circle ui-ease-layout',

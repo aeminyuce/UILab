@@ -4431,7 +4431,7 @@ dt {
   }
 }
 /* top button */
-.top-button {
+.ui-top-button {
   text-align: center;
   width: 40px;
   height: 40px;
@@ -4443,26 +4443,27 @@ dt {
   bottom: 45px;
   z-index: 7;
   opacity: 0;
+  cursor: pointer;
 }
-.top-button.open {
+.ui-top-button.ui-open {
   display: block;
 }
-.top-button.open-ease {
+.ui-top-button.ui-open-ease {
   opacity: 0.45;
   transform: translateY(30px);
 }
-.top-button .icon {
+.ui-top-button .icon {
   color: hsl(0, 0%, 100%);
   opacity: 1 !important;
 }
-.ui-desktop .top-button:hover {
+.ui-desktop .ui-top-button:hover {
   opacity: 0.75;
 }
-.ui-desktop .top-button:hover .icon {
+.ui-desktop .ui-top-button:hover .icon {
   transform: translateY(-3px);
 }
 @media (max-width: 320px) {
-  .top-button {
+  .ui-top-button {
     display: none !important;
   }
 }
