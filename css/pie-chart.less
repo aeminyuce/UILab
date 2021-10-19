@@ -12,12 +12,12 @@
 @pie-chart-back-inner-space:            5px;
 @pie-chart-back-opacity:                .05;
 
-@keyframes pie-spin-l {
+@keyframes ui-pie-spin-l {
     0% { opacity: 0; }
     49% { opacity: 0; }
     50% { -ms-transform: rotate(0deg); transform: rotate(0deg); opacity: 1; }
 }
-@keyframes pie-spin-r { 0% { -ms-transform: rotate(0deg); transform: rotate(0deg); } }
+@keyframes ui-pie-spin-r { 0% { -ms-transform: rotate(0deg); transform: rotate(0deg); } }
 
 .ease-pie-chart {
     li,& > div span { transition-property: opacity; transition-duration: (@ease-default * 2); }
@@ -76,10 +76,10 @@
     &.open {
         li {
             .pie-l {
-                b { animation: pie-spin-l 1.6s ease-out forwards; }
-                & + .pie-r b { animation: pie-spin-r .8s ease-in forwards; }
+                b { animation: ui-pie-spin-l 1.6s ease-out forwards; }
+                & + .pie-r b { animation: ui-pie-spin-r .8s ease-in forwards; }
             }
-            .pie-r b { animation: pie-spin-r 1.6s ease-in forwards; }
+            .pie-r b { animation: ui-pie-spin-r 1.6s ease-in forwards; }
         }
     }
 }

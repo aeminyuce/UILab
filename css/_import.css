@@ -297,7 +297,7 @@ img {
 .ease-in-out[class*="ease-2nd-"] > * > * {
   transition-timing-function: ease-in-out;
 }
-@keyframes spin {
+@keyframes ui-spin {
   from {
     transform: rotate(0deg);
   }
@@ -305,7 +305,7 @@ img {
     transform: rotate(360deg);
   }
 }
-@keyframes progress {
+@keyframes ui-progress {
   from {
     background-position: 40px 0;
   }
@@ -314,10 +314,10 @@ img {
   }
 }
 .animate-spin {
-  animation: spin 1.15s linear infinite;
+  animation: ui-spin 1.15s linear infinite;
 }
 .animate-progress {
-  animation: progress 3s linear infinite;
+  animation: ui-progress 3s linear infinite;
 }
 .ui-no-effects,
 .ui-no-effects:before,
@@ -6528,7 +6528,7 @@ label.custom {
   stroke-width: 36px;
 }
 /* progress bar */
-@keyframes progress-fill {
+@keyframes ui-progress-fill {
   from {
     width: 0;
   }
@@ -6552,7 +6552,7 @@ label.custom {
   float: left;
 }
 .progress-bar > span:not([class*="animate-"]) {
-  animation: progress-fill 2s ease-in-out forwards;
+  animation: ui-progress-fill 2s ease-in-out forwards;
 }
 .progress-bar.border > span {
   height: 8px;
@@ -8026,7 +8026,7 @@ button.dialog-custom:focus {
   }
 }
 /* carousel */
-@keyframes carousel-gallery-loader {
+@keyframes ui-carousel-gallery-loader {
   from {
     transform: rotate(0deg);
   }
@@ -8145,7 +8145,7 @@ button.dialog-custom:focus {
   display: none;
 }
 .carousel-gallery .detail.detail-loader .loader-icon {
-  animation: carousel-gallery-loader 1.15s linear infinite;
+  animation: ui-carousel-gallery-loader 1.15s linear infinite;
 }
 .carousel-gallery .detail:not(.detail-loader) .loader-icon {
   display: none;
@@ -8296,7 +8296,7 @@ button.dialog-custom:focus {
   border: 0;
 }
 /* image uploader */
-@keyframes uploader-loader {
+@keyframes ui-uploader-loader {
   from {
     background-position: 40px 0;
   }
@@ -8336,7 +8336,7 @@ button.dialog-custom:focus {
 .image-uploader.uploading [type="submit"] {
   background-image: linear-gradient(45deg, transparent 25%, hsla(0, 0%, 100%, 0.25) 25%, hsla(0, 0%, 100%, 0.25) 50%, transparent 50%, transparent 75%, hsla(0, 0%, 100%, 0.25) 75%);
   background-size: 20px 20px;
-  animation: uploader-loader 1s linear infinite;
+  animation: ui-uploader-loader 1s linear infinite;
 }
 .image-uploader.drop-highlight {
   background-color: hsl(0, 0%, 93%);
@@ -8472,7 +8472,7 @@ button.dialog-custom:focus {
   }
 }
 /* loading mask */
-@keyframes loading-spin {
+@keyframes ui-loading-spin {
   from {
     transform: rotate(0deg);
   }
@@ -8516,13 +8516,13 @@ button.dialog-custom:focus {
   stroke-width: 8%;
   stroke-linecap: round;
   stroke-linejoin: round;
-  animation: loading-spin 1.15s linear infinite;
+  animation: ui-loading-spin 1.15s linear infinite;
 }
 .loading-mask-sticky > .loading-mask-loader {
   position: fixed;
 }
 /* photo gallery */
-@keyframes preview-loader {
+@keyframes ui-preview-loader {
   from {
     transform: rotate(0deg);
   }
@@ -8688,7 +8688,7 @@ button.dialog-custom:focus {
   left: 50%;
   z-index: 3;
   transform: translate(-50%, -50%);
-  animation: preview-loader 1.15s linear infinite;
+  animation: ui-preview-loader 1.15s linear infinite;
 }
 .photo-preview .preview-loader.pause {
   color: hsl(0, 74%, 55%);
@@ -8829,7 +8829,7 @@ button.dialog-custom:focus {
   }
 }
 /* photo slider */
-@keyframes photo-slider-loader {
+@keyframes ui-photo-slider-loader {
   from {
     transform: rotate(0deg);
   }
@@ -8853,7 +8853,7 @@ button.dialog-custom:focus {
 }
 .photo-slider:not(.loaded) .slider-loader {
   opacity: 0.45;
-  animation: photo-slider-loader 1.15s linear infinite;
+  animation: ui-photo-slider-loader 1.15s linear infinite;
 }
 .photo-slider:not(.loaded) img {
   opacity: 0;
@@ -9050,7 +9050,7 @@ button.dialog-custom:focus {
   margin: -39px 0 0 -89px;
   left: 0;
 }
-@keyframes clock {
+@keyframes ui-clock {
   0% {
     opacity: 1;
   }
@@ -9066,9 +9066,9 @@ button.dialog-custom:focus {
 }
 .weather .w-clock > span:first-child:after {
   content: ":";
-  animation: clock 2s linear infinite;
+  animation: ui-clock 2s linear infinite;
 }
-@keyframes shooting {
+@keyframes ui-shooting {
   0% {
     transform: translate(-100%, -35%);
   }
@@ -9092,7 +9092,7 @@ button.dialog-custom:focus {
   top: 30px;
   right: 0;
   opacity: 0.65;
-  animation: shooting 6s linear infinite;
+  animation: ui-shooting 6s linear infinite;
 }
 .weather .stars {
   width: 100%;
@@ -9101,7 +9101,7 @@ button.dialog-custom:focus {
   top: 0;
   left: 0;
 }
-@keyframes cloud {
+@keyframes ui-cloud {
   0% {
     transform: translateX(0);
   }
@@ -9118,9 +9118,9 @@ button.dialog-custom:focus {
   left: 0;
   z-index: 2;
   opacity: 0.8;
-  animation: cloud 220s linear infinite;
+  animation: ui-cloud 220s linear infinite;
 }
-@keyframes fog {
+@keyframes ui-fog {
   0% {
     transform: translateX(0);
   }
@@ -9134,9 +9134,9 @@ button.dialog-custom:focus {
   background: repeat-x;
   bottom: 0;
   left: 0;
-  animation: fog 220s linear infinite;
+  animation: ui-fog 220s linear infinite;
 }
-@keyframes rain {
+@keyframes ui-rain {
   0% {
     transform: translateY(-50%);
   }
@@ -9145,7 +9145,7 @@ button.dialog-custom:focus {
   }
 }
 .weather .rain {
-  animation: rain 6s linear infinite;
+  animation: ui-rain 6s linear infinite;
 }
 .weather .rain,
 .weather .rain-heavy {
@@ -9158,9 +9158,9 @@ button.dialog-custom:focus {
   opacity: 0.8;
 }
 .weather .rain-heavy {
-  animation: rain 4s linear infinite;
+  animation: ui-rain 4s linear infinite;
 }
-@keyframes bolt {
+@keyframes ui-bolt {
   0% {
     opacity: 0;
   }
@@ -9191,9 +9191,9 @@ button.dialog-custom:focus {
   left: 0;
   z-index: 3;
   opacity: 0.45;
-  animation: bolt 10s linear infinite;
+  animation: ui-bolt 10s linear infinite;
 }
-@keyframes snow {
+@keyframes ui-snow {
   0% {
     transform: translateY(-50%);
   }
@@ -9209,7 +9209,7 @@ button.dialog-custom:focus {
   left: 0;
   z-index: 1;
   opacity: 0.8;
-  animation: snow 40s linear infinite;
+  animation: ui-snow 40s linear infinite;
 }
 .weather .graphs {
   height: 100%;
@@ -9283,23 +9283,23 @@ button.dialog-custom:focus {
   display: none;
 }
 /* line charts */
-@keyframes line-draw {
+@keyframes ui-line-draw {
   to {
     stroke-dashoffset: 0;
   }
 }
-@keyframes line-dashed-dotted {
+@keyframes ui-ui-line-dashed-dotted {
   to {
     opacity: 1;
   }
 }
-@keyframes line-filled {
+@keyframes ui-line-filled {
   to {
     transform: translateY(0);
     opacity: 0.15;
   }
 }
-@keyframes line-circles {
+@keyframes ui-line-circles {
   to {
     transform: translateY(0);
     opacity: 1;
@@ -9412,17 +9412,17 @@ html:not(.ui-ie) .line-charts:not(.resized) svg circle {
   opacity: 0;
 }
 html:not(.ui-ie) .line-charts.loaded svg path:not(.dashed):not(.dotted):not(.filled) {
-  animation: line-draw 2s 0.6s ease-in forwards;
+  animation: ui-line-draw 2s 0.6s ease-in forwards;
 }
 html:not(.ui-ie) .line-charts.loaded svg path.dashed,
 html:not(.ui-ie) .line-charts.loaded svg path.dotted {
-  animation: line-dashed-dotted 1s 0.6s ease-in forwards;
+  animation: ui-ui-line-dashed-dotted 1s 0.6s ease-in forwards;
 }
 html:not(.ui-ie) .line-charts.loaded svg path.filled {
-  animation: line-filled 0.6s forwards;
+  animation: ui-line-filled 0.6s forwards;
 }
 html:not(.ui-ie) .line-charts.loaded svg circle {
-  animation: line-circles 0.6s forwards;
+  animation: ui-line-circles 0.6s forwards;
 }
 .line-charts .chart-info {
   list-style: none;
@@ -9442,7 +9442,7 @@ html:not(.ui-ie) .line-charts.loaded svg circle {
   border-radius: 50%;
 }
 /* donut chart */
-@keyframes donut-draw {
+@keyframes ui-donut-draw {
   to {
     stroke-dasharray: 0 440;
   }
@@ -9489,7 +9489,7 @@ html:not(.ui-edge) .donut-chart svg:not(.icon) {
   stroke-width: 10;
 }
 .donut-chart circle.loaded:not(.donut-bg) {
-  animation: donut-draw 1.6s ease-in reverse;
+  animation: ui-donut-draw 1.6s ease-in reverse;
 }
 .donut-chart circle.selected {
   stroke-width: 16;
@@ -9505,7 +9505,7 @@ html:not(.ui-edge) .donut-chart svg:not(.icon) {
   stroke-linecap: round;
 }
 /* pie chart */
-@keyframes pie-spin-l {
+@keyframes ui-pie-spin-l {
   0% {
     opacity: 0;
   }
@@ -9518,7 +9518,7 @@ html:not(.ui-edge) .donut-chart svg:not(.icon) {
     opacity: 1;
   }
 }
-@keyframes pie-spin-r {
+@keyframes ui-pie-spin-r {
   0% {
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -9652,13 +9652,13 @@ html:not(.ui-edge) .donut-chart svg:not(.icon) {
   opacity: 0;
 }
 .pie-chart.open li .pie-l b {
-  animation: pie-spin-l 1.6s ease-out forwards;
+  animation: ui-pie-spin-l 1.6s ease-out forwards;
 }
 .pie-chart.open li .pie-l + .pie-r b {
-  animation: pie-spin-r 0.8s ease-in forwards;
+  animation: ui-pie-spin-r 0.8s ease-in forwards;
 }
 .pie-chart.open li .pie-r b {
-  animation: pie-spin-r 1.6s ease-in forwards;
+  animation: ui-pie-spin-r 1.6s ease-in forwards;
 }
 /* svg map */
 .svg-map {

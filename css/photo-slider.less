@@ -25,7 +25,7 @@
     --ui-photo-slider-dot-selected-bg: @photo-slider-dot-selected-bg-dark;
 }
 
-@keyframes photo-slider-loader {
+@keyframes ui-photo-slider-loader {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
@@ -37,7 +37,7 @@
         ._bg-var(body-bg);
 
         .card & { ._bg-var(card-bg); }
-        .slider-loader { opacity: @photo-slider-loader-opacity; animation: photo-slider-loader 1.15s linear infinite; }
+        .slider-loader { opacity: @photo-slider-loader-opacity; animation: ui-photo-slider-loader 1.15s linear infinite; }
         img { opacity: 0; }
     }
 

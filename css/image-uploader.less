@@ -60,7 +60,7 @@
     --ui-image-uploader-list-tag-bg: @image-uploader-list-tag-bg-dark;
 }
 
-@keyframes uploader-loader {
+@keyframes ui-uploader-loader {
     from { background-position: (@image-uploader-loading-stripe-size * 2) 0; }
     to { background-position: 0 0; }
 }
@@ -84,7 +84,7 @@
     ._bg-var(card-bg); overflow: hidden; position: relative;
 
     &.loading,&.uploading {
-        .file .btn,[type="submit"] { background-image: @image-uploader-loading-bg; background-size: @image-uploader-loading-stripe-size @image-uploader-loading-stripe-size; animation: uploader-loader 1s linear infinite; }
+        .file .btn,[type="submit"] { background-image: @image-uploader-loading-bg; background-size: @image-uploader-loading-stripe-size @image-uploader-loading-stripe-size; animation: ui-uploader-loader 1s linear infinite; }
     }
 
     &.drop-highlight {

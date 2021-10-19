@@ -32,7 +32,7 @@
 @photo-preview-img-shadow-size:         5px 30px;
 @photo-preview-img-shadow:              fade(@black, 75%);
 
-@keyframes preview-loader {
+@keyframes ui-preview-loader {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
@@ -115,7 +115,7 @@
 
     .preview- {
         &loader {
-            color: @white; ._icon(@photo-preview-loader-icon-size); margin: -(@photo-preview-loader-icon-size / 2) 0 0 -(@photo-preview-loader-icon-size / 2); position: absolute; top: 50%; left: 50%; z-index: 3; transform: translate(-50%,-50%); animation: preview-loader 1.15s linear infinite;
+            color: @white; ._icon(@photo-preview-loader-icon-size); margin: -(@photo-preview-loader-icon-size / 2) 0 0 -(@photo-preview-loader-icon-size / 2); position: absolute; top: 50%; left: 50%; z-index: 3; transform: translate(-50%,-50%); animation: ui-preview-loader 1.15s linear infinite;
 
             &.pause { color: @red; margin: 0; animation: none; }
         }

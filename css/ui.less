@@ -345,18 +345,18 @@ img { vertical-align: middle; display: inline-block; border: 0; }
 
 }
 
-@keyframes spin {
+@keyframes ui-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
-@keyframes progress {
+@keyframes ui-progress {
     from { background-position: 40px 0; }
     to { background-position: 0 0; }
 }
 
 .animate- {
-    &spin { animation: spin 1.15s linear infinite; }
-    &progress { animation: progress 3s linear infinite; }
+    &spin { animation: ui-spin 1.15s linear infinite; }
+    &progress { animation: ui-progress 3s linear infinite; }
 }
 
 .ui-no-effects {

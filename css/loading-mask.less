@@ -7,7 +7,7 @@
 
 @loading-mask-stroke-width:                   8%;
 
-@keyframes loading-spin {
+@keyframes ui-loading-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
@@ -25,7 +25,7 @@
             span {
                 display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
 
-                svg { max-height: @loading-mask-loader-max-size !important; display: block; fill: none; stroke: @white; stroke-width: @loading-mask-stroke-width; stroke-linecap: round; stroke-linejoin: round; animation: loading-spin 1.15s linear infinite; }
+                svg { max-height: @loading-mask-loader-max-size !important; display: block; fill: none; stroke: @white; stroke-width: @loading-mask-stroke-width; stroke-linecap: round; stroke-linejoin: round; animation: ui-loading-spin 1.15s linear infinite; }
             }
         }
 

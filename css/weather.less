@@ -116,7 +116,7 @@
 
     .clear { width: @weather-clear-size; height: @weather-clear-size; background: no-repeat; margin: @weather-clear-top 0 0 @weather-clear-left; left: 0; }
 
-    @keyframes clock {
+    @keyframes ui-clock {
         0% { opacity: 1; }
         49% { opacity: 1; }
         50% { opacity: 0; }
@@ -125,11 +125,11 @@
 
     .w-clock {
         & > span {
-            &:first-child:after { content: ":"; animation: clock 2s linear infinite; }
+            &:first-child:after { content: ":"; animation: ui-clock 2s linear infinite; }
         }
     }
 
-    @keyframes shooting {
+    @keyframes ui-shooting {
         0% { transform: translate(-100%,-35%); }
         4% { opacity: 1; }
         7% { opacity: 0; }
@@ -137,36 +137,36 @@
         100% { transform: translate(100%,35%); }
     }
 
-    .shooting-star { width: @weather-shooting-star-width; height: @weather-shooting-star-height; background: no-repeat top center; top: @weather-shooting-star-top; right: @weather-shooting-star-right; opacity: @weather-shooting-star-opacity; animation: shooting 6s linear infinite; }
+    .shooting-star { width: @weather-shooting-star-width; height: @weather-shooting-star-height; background: no-repeat top center; top: @weather-shooting-star-top; right: @weather-shooting-star-right; opacity: @weather-shooting-star-opacity; animation: ui-shooting 6s linear infinite; }
     .stars { width: 100%; height: 100%; background: no-repeat top center; top: 0; left: 0; }
 
-    @keyframes cloud {
+    @keyframes ui-cloud {
         0% { transform: translateX(0); }
         100% { transform: translateX(-(@weather-cloud-width / 2)); }
     }
 
-    .cloud,.cloud-heavy { width: @weather-cloud-width; height: 100%; background: repeat-x; top: 0; left: 0; z-index: 2; opacity: @weather-cloud-opacity; animation: cloud 220s linear infinite; }
+    .cloud,.cloud-heavy { width: @weather-cloud-width; height: 100%; background: repeat-x; top: 0; left: 0; z-index: 2; opacity: @weather-cloud-opacity; animation: ui-cloud 220s linear infinite; }
 
-    @keyframes fog {
+    @keyframes ui-fog {
         0% { transform: translateX(0); }
         100% { transform: translateX(-(@weather-fog-width / 2)); }
     }
 
-    .fog { width: @weather-fog-width; height: 100%; background: repeat-x; bottom: 0; left: 0; animation: fog 220s linear infinite; }
+    .fog { width: @weather-fog-width; height: 100%; background: repeat-x; bottom: 0; left: 0; animation: ui-fog 220s linear infinite; }
 
-    @keyframes rain {
+    @keyframes ui-rain {
         0% { transform: translateY(-50%); }
         100% { transform: translateY(0); }
     }
 
     .rain {
-        animation: rain 6s linear infinite;
+        animation: ui-rain 6s linear infinite;
 
         &,&-heavy { width: 100%; height: @weather-rain-height; background: no-repeat top center; top: 0; left: 0; z-index: 1; opacity: @weather-rain-opacity; }
-        &-heavy { animation: rain 4s linear infinite; }
+        &-heavy { animation: ui-rain 4s linear infinite; }
     }
 
-    @keyframes bolt {
+    @keyframes ui-bolt {
         0% { opacity: 0; }
         10% { opacity: 0; }
         11% { opacity: .45; }
@@ -176,14 +176,14 @@
         100% { opacity: 0; }
     }
 
-    .bolt { width: 100%; height: 100%; background: @weather-bolt-bg no-repeat top center; top: 0; left: 0; z-index: 3; opacity: @weather-bolt-opacity; animation: bolt 10s linear infinite; }
+    .bolt { width: 100%; height: 100%; background: @weather-bolt-bg no-repeat top center; top: 0; left: 0; z-index: 3; opacity: @weather-bolt-opacity; animation: ui-bolt 10s linear infinite; }
 
-    @keyframes snow {
+    @keyframes ui-snow {
         0% { transform: translateY(-50%); }
         100% { transform: translateY(0); }
     }
 
-    .snow { width: 100%; height: @weather-snow-height; background: no-repeat top center; top: 0; left: 0; z-index: 1; opacity: @weather-snow-opacity; animation: snow 40s linear infinite; }
+    .snow { width: 100%; height: @weather-snow-height; background: no-repeat top center; top: 0; left: 0; z-index: 1; opacity: @weather-snow-opacity; animation: ui-snow 40s linear infinite; }
 
     .graphs {
         height: 100%; overflow: hidden; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1;

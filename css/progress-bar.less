@@ -21,7 +21,7 @@
     --ui-progress-bar-inner-bg: @progress-bar-inner-bg-dark;
 }
 
-@keyframes progress-fill { from { width: 0; } }
+@keyframes ui-progress-fill { from { width: 0; } }
 
 .progress- {
     &bar {
@@ -31,7 +31,7 @@
         & > span {
             width: 0; height: (@progress-bar-default-size - @progress-bar-padding * 2); ._bg-var(progress-bar-inner-bg); float: left;
 
-            &:not([class*="animate-"]) { animation: progress-fill 2s ease-in-out forwards; }
+            &:not([class*="animate-"]) { animation: ui-progress-fill 2s ease-in-out forwards; }
         }
         &.border > span {
             height: (@progress-bar-default-size - @progress-bar-padding * 2 - 2);
