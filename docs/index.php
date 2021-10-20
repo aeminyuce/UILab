@@ -139,9 +139,9 @@
         <div class="col-static no-fluid">
 
             <!-- sidebar -->
-            <div class="col-250 ui-theme-gray ui-fill-light-300 hidden-md">
-                <div class="align-l sm-align-c padding-20-t form-lg add-mobile-menu-r">
-                    <h4 class="font-bold padding-10-h ui-theme-sub ui-color">UI</h4>
+            <div class="col-250 ui-theme-gray ui-fill-light-200 hidden-md">
+                <div class="align-l sm-align-c padding-10 form-lg add-mobile-menu-r">
+                    <h4 class="font-bold margin-10">UI</h4>
                     <ul class="list-unstyled block-2nd ui-ease-2nd-button">
                         <li><a class="btn btn-ghost" href="?p=alerts">Alerts</a></li>
                         <li><a class="btn btn-ghost" href="?p=breadcrumbs">Breadcrumbs</a></li>
@@ -174,7 +174,7 @@
                         <li><a class="btn btn-ghost" href="?p=typography">Typography</a></li>
                         <li><a class="btn btn-ghost" href="?p=weather">Weather</a></li>
                     </ul>
-                    <h4 class="font-bold padding-10-h ui-theme-sub ui-color">Javascript</h4>
+                    <h4 class="font-bold margin-10">Javascript</h4>
                     <ul class="list-unstyled block-2nd ui-ease-2nd-button">
                         <li><a class="btn btn-ghost" href="?p=ui">UI JS</a></li>
                     </ul>
@@ -200,9 +200,6 @@
                         </div>
                     </div>
 
-                    <span class="sp-10"></span>
-
-                    <h4>Example Layouts</h4>
                     <div class="row large align-c hover-shadow-2nd hover-t-2nd">
                         <div class="col-4 col-md-6">
                             <a class="card padding-2 round shadow-lg ui-ease-layout" href="?l=dashboard-app">
