@@ -4,7 +4,7 @@
         <div class="ui-image-uploader round shadow-lg ui-ease-image-uploader">
             <form action="xhr/image-uploader.php" method="post" enctype="multipart/form-data"> <!-- error testing: image-uploader-error.php-->
 
-                <div class="padding-10-h border-b border-light">
+                <div class="padding-10-h ui-border-b ui-border-light">
                     <div class="row sm-align-c sm-fluid">
                         <div class="col-6">
                             <h4 class="margin-10-v sm-no-margin">Image Uploader</h4>

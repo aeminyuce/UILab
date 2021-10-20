@@ -42,12 +42,12 @@
 
                 <h4>Using with Forms</h4>
                 <div class="ui-ease-1st-form padding-30-b form-lg ui-ease-1st-form">
-                    <div class="text text-icon round border-dual ui-ease-form">
+                    <div class="text text-icon round ui-border-dual ui-ease-form">
                         <svg class="icon" data-ui-tooltip="tl" title="Your message here!"><use href="#question-circle-fill"/></svg>
                         <input type="text" placeholder="Placeholder Text">
                     </div>
                     <span class="sp-15"></span>
-                    <div class="text text-icon-l round border-dual ui-ease-form">
+                    <div class="text text-icon-l round ui-border-dual ui-ease-form">
                         <svg class="icon" data-ui-tooltip="tr" title="Your message here!"><use href="#question-circle-fill"/></svg>
                         <input type="text" placeholder="Placeholder Text">
                     </div>

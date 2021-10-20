@@ -139,9 +139,9 @@
                                         <b class="large">Captain Marvel (2019)</b>
                                         <p class="margin-10-v">After crashing an experimental aircraft, Air Force pilot Carol Danvers is discovered by the Kree and trained as a member of the elite Starforce Military under the command of her mentor Yon-Rogg. Six years later, after escaping to Earth while under attack by the Skrulls.</p>
                                         <div class="photos-holder padding-15-h hover-scale-more-2nd ui-ease-2nd-layout">
-                                            <a href="#"><img class="img-photo border-lg circle" src="img/profile-image.jpg" alt=""></a>
-                                            <a href="#"><img class="img-photo border-lg circle" src="img/profile-image2.jpg" alt=""></a>
-                                            <a href="#"><img class="img-photo border-lg circle" src="img/profile-image3.jpg" alt=""></a>
+                                            <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image.jpg" alt=""></a>
+                                            <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image2.jpg" alt=""></a>
+                                            <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image3.jpg" alt=""></a>
                                             <a class="btn btn-lg circle ui-ease-btn" href="#">+38</a>
                                         </div>
                                     </div>
@@ -402,7 +402,7 @@
 
 <!-- mobile menu -->
 <div class="mobile-menu show-l ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
-    <div class="mobile-menu-title padding-20-v x-large border-b">
+    <div class="mobile-menu-title padding-20-v x-large ui-border-b">
         <button class="btn btn-square btn-lg btn-ghost round ui-ease-btn close-mobile-menu">
             <svg class="icon no-opacity"><use href="#remove"/></svg>
         </button>

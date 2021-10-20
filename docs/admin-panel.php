@@ -55,37 +55,37 @@
                 <nav class="form-lg margin-25-v icons-no-opacity ui-theme-base hidden-md">
                     <ul class="list-unstyled list-spacer-20 align-l icons-margin-10-r block-2nd ui-ease-2nd-button add-mobile-menu-l">
                         <li>
-                            <a class="btn btn-ghost border-r border-lg ui-stroke" href="#">
+                            <a class="btn btn-ghost ui-border-r ui-border-lg ui-stroke" href="#">
                                 <svg class="icon"><use href="#chart-pie"/></svg>
                                 Dashboard
                             </a>
                         </li>
                         <li>
-                            <a class="btn btn-ghost btn-ghost-border border-r border-lg ui-stroke" href="#">
+                            <a class="btn btn-ghost btn-ghost-border ui-border-r ui-border-lg ui-stroke" href="#">
                                 <svg class="icon"><use href="#users"/></svg>
                                 Employees
                             </a>
                         </li>
                         <li>
-                            <a class="btn btn-ghost btn-ghost-border border-r border-lg ui-stroke" href="#">
+                            <a class="btn btn-ghost btn-ghost-border ui-border-r ui-border-lg ui-stroke" href="#">
                                 <svg class="icon"><use href="#moneys"/></svg>
                                 Payments
                             </a>
                         </li>
                         <li>
-                            <a class="btn btn-ghost btn-ghost-border border-r border-lg ui-stroke" href="#">
+                            <a class="btn btn-ghost btn-ghost-border ui-border-r ui-border-lg ui-stroke" href="#">
                                 <svg class="icon"><use href="#calendar-days"/></svg>
                                 Events
                             </a>
                         </li>
                         <li>
-                            <a class="btn btn-ghost btn-ghost-border border-r border-lg ui-stroke" href="#">
+                            <a class="btn btn-ghost btn-ghost-border ui-border-r ui-border-lg ui-stroke" href="#">
                                 <svg class="icon"><use href="#docs"/></svg>
                                 Documents
                             </a>
                         </li>
                         <li>
-                            <a class="btn margin-5-b btn-ghost btn-ghost-border border-r border-lg ui-stroke" href="#">
+                            <a class="btn margin-5-b btn-ghost btn-ghost-border ui-border-r ui-border-lg ui-stroke" href="#">
                                 <svg class="icon"><use href="#clipboard-list"/></svg>
                                 Lists
                             </a>
@@ -115,7 +115,7 @@
                     <div class="col-6">
 
                         <div class="card full-h round shadow-lg">
-                            <div class="card-side padding-15 border-b">
+                            <div class="card-side padding-15 ui-border-b">
                                 <a href="#" class="btn right circle ui-ease-btn hidden-xs">
                                     Details
                                     <svg class="icon margin-5-l"><use href="#arrow-right"/></svg>
@@ -180,7 +180,7 @@
 
                         <div class="card full-h round shadow-lg">
 
-                            <div class="card-side padding-15 border-b">
+                            <div class="card-side padding-15 ui-border-b">
                                 <h4 class="margin-5-b">Last Week Stats</h4>
                                 <div class="font-color-black-50 xs-align-c">
                                     Maximum value of profit <b>159</b> packages.
@@ -885,7 +885,7 @@
 
                             </div>
 
-                            <div class="row no-fluid border-t">
+                            <div class="row no-fluid ui-border-t">
                                 <div class="col-6">
                                     <div class="padding-5-v">
                                         Total <b class="grid-list-total"></b>

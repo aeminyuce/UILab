@@ -37,7 +37,7 @@
                 <div class="padding-30-b ui-theme-base">
 
                     <div class="form-lg">
-                        <div class="loadingText1 text border-dual round form-inline ui-ease-form">
+                        <div class="loadingText1 text ui-border-dual round form-inline ui-ease-form">
                             <input type="text" placeholder="Enter name">
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                     <span class="sp-30"></span>
 
                     <div class="form-lg">
-                        <div class="loadingText2 text text-icon-l margin-10-b round border-dual form-inline ui-ease-form">
+                        <div class="loadingText2 text text-icon-l margin-10-b round ui-border-dual form-inline ui-ease-form">
                             <svg class="icon"><use href="#search"/></svg>
                             <input type="text" placeholder="Left icon">
                         </div>
@@ -58,7 +58,7 @@
                     <span class="sp-30"></span>
 
                     <div class="form-lg">
-                        <div class="loadingSelect select round border-dual form-inline ui-ease-form">
+                        <div class="loadingSelect select round ui-border-dual form-inline ui-ease-form">
                             <svg class="icon"><use href="#angle-down"/></svg>
                             <select>
                                 <option value="">Select your age</option>
@@ -73,7 +73,7 @@
 
                     <span class="sp-30"></span>
 
-                    <div class="loadingTextarea textarea round border-dual ui-ease-form">
+                    <div class="loadingTextarea textarea round ui-border-dual ui-ease-form">
                         <textarea rows="4" placeholder="Placeholder Text"></textarea>
                     </div>
                     <pre class="round margin-10-t margin-5-b">ui.loadingMask.toggle('.loadingTextarea');</pre>

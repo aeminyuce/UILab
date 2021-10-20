@@ -232,7 +232,7 @@
                     </div>
                     <div class="col-12">
                         <div class="card round shadow-lg tabs ui-ease-tabs" data-ui-classes="font-bold">
-                            <div class="card-side padding-10 border-b">
+                            <div class="card-side padding-10 ui-border-b">
 
                                 <div class="dropdown menu-l right ui-ease-dropdown">
                                     <button class="btn btn-ghost round">

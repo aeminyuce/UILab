@@ -2434,92 +2434,92 @@ html .row {
   background-color: var(--ui-card-bg) !important;
 }
 /* borders */
-.border,
-.border-t,
-.border-r,
-.border-b,
-.border-l,
-.border-h,
-.border-v,
-.border-dual,
-.border-lg {
+.ui-border,
+.ui-border-t,
+.ui-border-r,
+.ui-border-b,
+.ui-border-l,
+.ui-border-h,
+.ui-border-v,
+.ui-border-dual,
+.ui-border-lg {
   border: solid 1px hsla(0, 0%, 0%, 0.15);
   border: solid 1px var(--ui-border-color);
 }
-.border[class*="ui-fill-dark-"],
-.border-t[class*="ui-fill-dark-"],
-.border-r[class*="ui-fill-dark-"],
-.border-b[class*="ui-fill-dark-"],
-.border-l[class*="ui-fill-dark-"],
-.border-h[class*="ui-fill-dark-"],
-.border-v[class*="ui-fill-dark-"],
-.border-dual[class*="ui-fill-dark-"],
-.border-lg[class*="ui-fill-dark-"],
-[class*="ui-fill-dark-"] .border,
-[class*="ui-fill-dark-"] .border-t,
-[class*="ui-fill-dark-"] .border-r,
-[class*="ui-fill-dark-"] .border-b,
-[class*="ui-fill-dark-"] .border-l,
-[class*="ui-fill-dark-"] .border-h,
-[class*="ui-fill-dark-"] .border-v,
-[class*="ui-fill-dark-"] .border-dual,
-[class*="ui-fill-dark-"] .border-lg {
+.ui-border[class*="ui-fill-dark-"],
+.ui-border-t[class*="ui-fill-dark-"],
+.ui-border-r[class*="ui-fill-dark-"],
+.ui-border-b[class*="ui-fill-dark-"],
+.ui-border-l[class*="ui-fill-dark-"],
+.ui-border-h[class*="ui-fill-dark-"],
+.ui-border-v[class*="ui-fill-dark-"],
+.ui-border-dual[class*="ui-fill-dark-"],
+.ui-border-lg[class*="ui-fill-dark-"],
+[class*="ui-fill-dark-"] .ui-border,
+[class*="ui-fill-dark-"] .ui-border-t,
+[class*="ui-fill-dark-"] .ui-border-r,
+[class*="ui-fill-dark-"] .ui-border-b,
+[class*="ui-fill-dark-"] .ui-border-l,
+[class*="ui-fill-dark-"] .ui-border-h,
+[class*="ui-fill-dark-"] .ui-border-v,
+[class*="ui-fill-dark-"] .ui-border-dual,
+[class*="ui-fill-dark-"] .ui-border-lg {
   border-color: hsla(0, 0%, 100%, 0.065) !important;
 }
-.border-dual {
+.ui-border-dual {
   border-width: 2px !important;
 }
-.border-lg {
+.ui-border-lg {
   border-width: 5px !important;
 }
-.border-dashed {
+.ui-border-dashed {
   border-style: dashed;
 }
-.border-dotted {
+.ui-border-dotted {
   border-style: dotted;
 }
-.border-light {
+.ui-border-light {
   border-color: hsla(0, 0%, 0%, 0.045) !important;
   border-color: var(--ui-border-light-color) !important;
 }
-.border-light[class*="ui-fill-dark-"],
-[class*="ui-fill-dark-"] .border-light {
+.ui-border-light[class*="ui-fill-dark-"],
+[class*="ui-fill-dark-"] .ui-border-light {
   border-color: hsla(0, 0%, 100%, 0.065) !important;
   border-color: var(--ui-border-light-color-dark) !important;
 }
-.border-dark {
+.ui-border-dark {
   border-color: hsla(0, 0%, 0%, 0.35) !important;
   border-color: var(--ui-border-dark-color) !important;
 }
-.border-t {
+.ui-border-t {
   border-right: 0 !important;
   border-bottom: 0 !important;
   border-left: 0 !important;
 }
-.border-r {
+.ui-border-r {
   border-top: 0 !important;
   border-bottom: 0 !important;
   border-left: 0 !important;
 }
-.border-b {
+.ui-border-b {
   border-top: 0 !important;
   border-right: 0 !important;
   border-left: 0 !important;
 }
-.border-l {
+.ui-border-l {
   border-top: 0 !important;
   border-right: 0 !important;
   border-bottom: 0 !important;
 }
-.border-h {
+.ui-border-h {
   border-top: 0 !important;
   border-bottom: 0 !important;
 }
-.border-v {
+.ui-border-v {
   border-right: 0 !important;
   border-left: 0 !important;
 }
-.no-border {
+.ui-no-border {
   border-width: 0 !important;
 }
 /* paddings */
@@ -3956,7 +3956,7 @@ dt {
   -moz-appearance: none;
   appearance: none;
 }
-.btn:not(.border):not([class*="border-"]) {
+.btn:not(.ui-border):not([class*="border-"]) {
   border-width: 0;
 }
 .btn:not(.btn-multi) {
@@ -3991,11 +3991,11 @@ dt {
   min-width: 8px;
   min-height: 8px;
 }
-.btn.border {
+.btn.ui-border {
   padding-top: 6px;
   padding-bottom: 6px;
 }
-.btn.border-dual {
+.btn.ui-border-dual {
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -4084,13 +4084,13 @@ dt {
 .form-lg .btn.btn-square {
   width: 42px;
 }
-.btn-lg.border,
-.form-lg .btn.border {
+.btn-lg.ui-border,
+.form-lg .btn.ui-border {
   padding-top: 9px;
   padding-bottom: 9px;
 }
-.btn-lg.border-dual,
-.form-lg .btn.border-dual {
+.btn-lg.ui-border-dual,
+.form-lg .btn.ui-border-dual {
   padding-top: 8px;
   padding-bottom: 8px;
 }
@@ -4121,11 +4121,11 @@ dt {
 .btn-sm.btn-square {
   width: 26px;
 }
-.btn-sm.border {
+.btn-sm.ui-border {
   padding-top: 4px;
   padding-bottom: 4px;
 }
-.btn-sm.border-dual {
+.btn-sm.ui-border-dual {
   padding-top: 3px;
   padding-bottom: 3px;
 }
@@ -4155,11 +4155,11 @@ dt {
 .btn-xs.btn-square {
   width: 22px;
 }
-.btn-xs.border {
+.btn-xs.ui-border {
   padding-top: 3px;
   padding-bottom: 3px;
 }
-.btn-xs.border-dual {
+.btn-xs.ui-border-dual {
   padding-top: 2px;
   padding-bottom: 2px;
 }
@@ -4189,11 +4189,11 @@ dt {
 .btn-xxs.btn-square {
   width: 18px;
 }
-.btn-xxs.border {
+.btn-xxs.ui-border {
   padding-top: 2px;
   padding-bottom: 2px;
 }
-.btn-xxs.border-dual {
+.btn-xxs.ui-border-dual {
   padding-top: 1px;
   padding-bottom: 1px;
 }
@@ -4243,21 +4243,21 @@ dt {
 .btn-list > .btn:not(:first-child) {
   border-top: 0;
 }
-.btn-list > .btn:not(:last-child):not(.border):not(.border-dual):not(.border-b) {
+.btn-list > .btn:not(:last-child):not(.ui-border):not(.ui-border-dual):not(.ui-border-b) {
   margin-bottom: 1px;
 }
 .btn-list > .btn:first-child {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-list > .btn:first-child:not(.border):not(.border-dual):not(.border-dual) {
+.btn-list > .btn:first-child:not(.ui-border):not(.ui-border-dual):not(.ui-border-dual) {
   border-top: 0;
 }
 .btn-list > .btn:last-child {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
-.btn-list > .btn:last-child:not(.border):not(.border-dual):not(.border-dual) {
+.btn-list > .btn:last-child:not(.ui-border):not(.ui-border-dual):not(.ui-border-dual) {
   border-bottom: 0;
 }
 .btn-list > .btn:not(:first-child):not(:last-child) {
@@ -4275,21 +4275,21 @@ dt {
 .btn-holder:not(.btn-sm-fluid):not(.btn-xs-fluid) > .btn:not(:first-child) {
   border-left: 0;
 }
-.btn-holder:not(.btn-sm-fluid):not(.btn-xs-fluid) > .btn:not(:last-child):not(.border):not(.border-dual):not(.border-r) {
+.btn-holder:not(.btn-sm-fluid):not(.btn-xs-fluid) > .btn:not(:last-child):not(.ui-border):not(.ui-border-dual):not(.ui-border-r) {
   margin-right: 1px;
 }
 .btn-holder:not(.btn-sm-fluid):not(.btn-xs-fluid) > .btn:first-child {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.btn-holder:not(.btn-sm-fluid):not(.btn-xs-fluid) > .btn:first-child:not(.border):not(.border-dual):not(.border-dual) {
+.btn-holder:not(.btn-sm-fluid):not(.btn-xs-fluid) > .btn:first-child:not(.ui-border):not(.ui-border-dual):not(.ui-border-dual) {
   border-left: 0;
 }
 .btn-holder:not(.btn-sm-fluid):not(.btn-xs-fluid) > .btn:last-child {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-holder:not(.btn-sm-fluid):not(.btn-xs-fluid) > .btn:last-child:not(.border):not(.border-dual):not(.border-dual) {
+.btn-holder:not(.btn-sm-fluid):not(.btn-xs-fluid) > .btn:last-child:not(.ui-border):not(.ui-border-dual):not(.ui-border-dual) {
   border-right: 0;
 }
 @media (max-width: 959px) {
@@ -4316,21 +4316,21 @@ dt {
   .btn-holder.btn-sm-fluid > .btn:not(:first-child) {
     border-left: 0;
   }
-  .btn-holder.btn-sm-fluid > .btn:not(:last-child):not(.border):not(.border-dual):not(.border-r) {
+  .btn-holder.btn-sm-fluid > .btn:not(:last-child):not(.ui-border):not(.ui-border-dual):not(.ui-border-r) {
     margin-right: 1px;
   }
   .btn-holder.btn-sm-fluid > .btn:first-child {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
-  .btn-holder.btn-sm-fluid > .btn:first-child:not(.border):not(.border-dual):not(.border-dual) {
+  .btn-holder.btn-sm-fluid > .btn:first-child:not(.ui-border):not(.ui-border-dual):not(.ui-border-dual) {
     border-left: 0;
   }
   .btn-holder.btn-sm-fluid > .btn:last-child {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-  .btn-holder.btn-sm-fluid > .btn:last-child:not(.border):not(.border-dual):not(.border-dual) {
+  .btn-holder.btn-sm-fluid > .btn:last-child:not(.ui-border):not(.ui-border-dual):not(.ui-border-dual) {
     border-right: 0;
   }
 }
@@ -4358,21 +4358,21 @@ dt {
   .btn-holder.btn-sm-fluid > .btn:not(:first-child) {
     border-top: 0;
   }
-  .btn-holder.btn-sm-fluid > .btn:not(:last-child):not(.border):not(.border-dual):not(.border-b) {
+  .btn-holder.btn-sm-fluid > .btn:not(:last-child):not(.ui-border):not(.ui-border-dual):not(.ui-border-b) {
     margin-bottom: 1px;
   }
   .btn-holder.btn-sm-fluid > .btn:first-child {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
   }
-  .btn-holder.btn-sm-fluid > .btn:first-child:not(.border):not(.border-dual):not(.border-dual) {
+  .btn-holder.btn-sm-fluid > .btn:first-child:not(.ui-border):not(.ui-border-dual):not(.ui-border-dual) {
     border-top: 0;
   }
   .btn-holder.btn-sm-fluid > .btn:last-child {
     border-top-right-radius: 0;
     border-top-left-radius: 0;
   }
-  .btn-holder.btn-sm-fluid > .btn:last-child:not(.border):not(.border-dual):not(.border-dual) {
+  .btn-holder.btn-sm-fluid > .btn:last-child:not(.ui-border):not(.ui-border-dual):not(.ui-border-dual) {
     border-bottom: 0;
   }
 }
@@ -4380,21 +4380,21 @@ dt {
   .btn-holder.btn-xs-fluid > .btn:not(:first-child) {
     border-left: 0;
   }
-  .btn-holder.btn-xs-fluid > .btn:not(:last-child):not(.border):not(.border-dual):not(.border-r) {
+  .btn-holder.btn-xs-fluid > .btn:not(:last-child):not(.ui-border):not(.ui-border-dual):not(.ui-border-r) {
     margin-right: 1px;
   }
   .btn-holder.btn-xs-fluid > .btn:first-child {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
-  .btn-holder.btn-xs-fluid > .btn:first-child:not(.border):not(.border-dual):not(.border-dual) {
+  .btn-holder.btn-xs-fluid > .btn:first-child:not(.ui-border):not(.ui-border-dual):not(.ui-border-dual) {
     border-left: 0;
   }
   .btn-holder.btn-xs-fluid > .btn:last-child {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-  .btn-holder.btn-xs-fluid > .btn:last-child:not(.border):not(.border-dual):not(.border-dual) {
+  .btn-holder.btn-xs-fluid > .btn:last-child:not(.ui-border):not(.ui-border-dual):not(.ui-border-dual) {
     border-right: 0;
   }
 }
@@ -4412,21 +4412,21 @@ dt {
   .btn-holder.btn-xs-fluid > .btn:not(:first-child) {
     border-top: 0;
   }
-  .btn-holder.btn-xs-fluid > .btn:not(:last-child):not(.border):not(.border-dual):not(.border-b) {
+  .btn-holder.btn-xs-fluid > .btn:not(:last-child):not(.ui-border):not(.ui-border-dual):not(.ui-border-b) {
     margin-bottom: 1px;
   }
   .btn-holder.btn-xs-fluid > .btn:first-child {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
   }
-  .btn-holder.btn-xs-fluid > .btn:first-child:not(.border):not(.border-dual):not(.border-dual) {
+  .btn-holder.btn-xs-fluid > .btn:first-child:not(.ui-border):not(.ui-border-dual):not(.ui-border-dual) {
     border-top: 0;
   }
   .btn-holder.btn-xs-fluid > .btn:last-child {
     border-top-right-radius: 0;
     border-top-left-radius: 0;
   }
-  .btn-holder.btn-xs-fluid > .btn:last-child:not(.border):not(.border-dual):not(.border-dual) {
+  .btn-holder.btn-xs-fluid > .btn:last-child:not(.ui-border):not(.ui-border-dual):not(.ui-border-dual) {
     border-bottom: 0;
   }
 }
@@ -4896,13 +4896,13 @@ html:not(.ui-no-effects) .ease-range::-moz-range-track {
 [data-ui-mode="dark"].ui-chrome .text input:-webkit-autofill {
   -webkit-text-fill-color: hsl(0, 0%, 100%) !important;
 }
-.no-border.text input,
-.no-border.select select {
+.ui-no-border.text input,
+.ui-no-border.select select {
   line-height: 22px;
   height: 32px;
 }
-.border-dual.text input,
-.border-dual.select select {
+.ui-border-dual.text input,
+.ui-border-dual.select select {
   line-height: 18px;
   height: 28px;
 }
@@ -4968,11 +4968,11 @@ html:not(.ui-no-effects) .ease-range::-moz-range-track {
   line-height: 22px;
   height: 30px;
 }
-.toggle-textarea:not(.form-focus).border-dual textarea {
+.toggle-textarea:not(.form-focus).ui-border-dual textarea {
   line-height: 18px;
   height: 28px;
 }
-.toggle-textarea:not(.form-focus).no-border textarea {
+.toggle-textarea:not(.form-focus).ui-no-border textarea {
   height: 32px;
 }
 .check,
@@ -5035,16 +5035,16 @@ html:not(.ui-no-effects) .ease-range::-moz-range-track {
   background-color: hsla(0, 0%, 0%, 0.15);
   background-color: var(--ui-btn-hover-bg);
 }
-.file.no-border .btn {
+.file.ui-no-border .btn {
   line-height: 18px;
 }
-.file.no-border > i {
+.file.ui-no-border > i {
   line-height: 32px;
 }
-.file.border-dual .btn {
+.file.ui-border-dual .btn {
   line-height: 14px;
 }
-.file.border-dual > i {
+.file.ui-border-dual > i {
   line-height: 28px;
 }
 label.custom {
@@ -5516,7 +5516,7 @@ label.custom {
   border-color: var(--ui-form-focus-border);
 }
 .form-holder-focus [class*="col-"] > .form-light,
-.form-holder-focus [class*="col-"] > .border-light {
+.form-holder-focus [class*="col-"] > .ui-border-light {
   border-color: hsla(0, 0%, 100%, 0.65) !important;
 }
 .form-holder [class*="col-"]:not(:first-child) > * {
@@ -5544,7 +5544,7 @@ label.custom {
 }
 .form-holder.error .text,
 .form-holder.error .select,
-.form-holder.error .border,
+.form-holder.error .ui-border,
 .form-holder.error [class*="border-"] {
   border-color: hsl(0, 74%, 55%) !important;
 }
@@ -5564,13 +5564,13 @@ label.custom {
   padding-right: 10px;
   padding-left: 10px;
 }
-.form-lg .text.no-border input,
-.form-lg .select.no-border select {
+.form-lg .text.ui-no-border input,
+.form-lg .select.ui-no-border select {
   line-height: 30px;
   height: 42px;
 }
-.form-lg .text.border-dual input,
-.form-lg .select.border-dual select {
+.form-lg .text.ui-border-dual input,
+.form-lg .select.ui-border-dual select {
   line-height: 28px;
   height: 38px;
 }
@@ -5627,16 +5627,16 @@ label.custom {
   height: 20px;
   stroke-width: 30px;
 }
-.form-lg .file.no-border .btn {
+.form-lg .file.ui-no-border .btn {
   line-height: 22px;
 }
-.form-lg .file.no-border > i {
+.form-lg .file.ui-no-border > i {
   line-height: 42px;
 }
-.form-lg .file.border-dual .btn {
+.form-lg .file.ui-border-dual .btn {
   line-height: 18px;
 }
-.form-lg .file.border-dual > i {
+.form-lg .file.ui-border-dual > i {
   line-height: 38px;
 }
 @media (min-width: 960px) {
@@ -5791,23 +5791,23 @@ label.custom {
 .ui-autocomplete:not(.ui-open-ease) ul {
   opacity: 0;
 }
-.ui-autocomplete:not(.ui-menu-t):not(.border-dual):not(.no-border) ul {
+.ui-autocomplete:not(.ui-menu-t):not(.ui-border-dual):not(.ui-no-border) ul {
   margin-top: 2px;
 }
-.ui-autocomplete.border-dual:not(.ui-menu-t) ul,
-.ui-autocomplete.no-border:not(.ui-menu-t) ul {
+.ui-autocomplete.ui-border-dual:not(.ui-menu-t) ul,
+.ui-autocomplete.ui-no-border:not(.ui-menu-t) ul {
   margin-top: 3px;
 }
 .ui-autocomplete.ui-menu-t ul {
   bottom: 100%;
 }
-.ui-autocomplete.ui-menu-t:not(.border-dual):not(.no-border) ul {
+.ui-autocomplete.ui-menu-t:not(.ui-border-dual):not(.ui-no-border) ul {
   margin-bottom: 2px;
 }
-.ui-autocomplete.ui-menu-t.border-dual ul {
+.ui-autocomplete.ui-menu-t.ui-border-dual ul {
   margin-bottom: 3px;
 }
-.ui-autocomplete.ui-menu-t.no-border ul {
+.ui-autocomplete.ui-menu-t.ui-no-border ul {
   margin-bottom: 1px;
 }
 .ui-autocomplete li {
@@ -6555,10 +6555,10 @@ label.custom {
 .progress-bar > span:not([class*="animate-"]) {
   animation: ui-progress-fill 2s ease-in-out forwards;
 }
-.progress-bar.border > span {
+.progress-bar.ui-border > span {
   height: 8px;
 }
-.progress-bar.border-dual > span {
+.progress-bar.ui-border-dual > span {
   height: 6px;
 }
 .progress-bar.round > span:first-child {
@@ -6575,7 +6575,7 @@ label.custom {
 .progress-lg > span {
   height: 16px;
 }
-.progress-lg.border-dual > span {
+.progress-lg.ui-border-dual > span {
   height: 12px;
 }
 .progress-sm {
@@ -6584,7 +6584,7 @@ label.custom {
 .progress-sm > span {
   height: 6px;
 }
-.progress-sm.border-dual > span {
+.progress-sm.ui-border-dual > span {
   height: 2px;
 }
 /* scrollbar */
@@ -7992,25 +7992,25 @@ button.ui-dialog-custom:focus {
 .text .calendar:not(.open-ease) {
   opacity: 0;
 }
-.text:not(.picker-t).no-border .calendar {
+.text:not(.picker-t).ui-no-border .calendar {
   margin-top: 1px;
 }
-.text:not(.picker-t):not(.border-dual):not(.no-border) .calendar {
+.text:not(.picker-t):not(.ui-border-dual):not(.ui-no-border) .calendar {
   margin-top: 2px;
 }
-.text:not(.picker-t).border-dual .calendar {
+.text:not(.picker-t).ui-border-dual .calendar {
   margin-top: 3px;
 }
 .text.picker-t .calendar {
   bottom: 100%;
 }
-.text.picker-t.no-border .calendar {
+.text.picker-t.ui-no-border .calendar {
   margin-top: 1px;
 }
-.text.picker-t:not(.border-dual):not(.no-border) .calendar {
+.text.picker-t:not(.ui-border-dual):not(.ui-no-border) .calendar {
   margin-bottom: 2px;
 }
-.text.picker-t.border-dual .calendar {
+.text.picker-t.ui-border-dual .calendar {
   margin-bottom: 3px;
 }
 .text.picker-l .calendar {

@@ -20,7 +20,7 @@
                     <div class="row">
                         <div class="col-12 padding-15-v align-c">
                             <span class="sp-30"></span>
-                            <a href="?l=login-page" class="btn font-color-white btn-lg btn-ghost btn-ghost-border btn-sm-fluid padding-30-h circle border-dual ui-stroke ui-ease-btn">
+                            <a href="?l=login-page" class="btn font-color-white btn-lg btn-ghost btn-ghost-border btn-sm-fluid padding-30-h circle ui-border-dual ui-stroke ui-ease-btn">
                                 <span class="font-color-white">Have you already an account?</span>
                                 <span class="ui-color hidden-sm">Click here to login.</span>
                             </a>
@@ -50,7 +50,7 @@
                                 <div class="col-6">
 
                                     <label class="form-label font-color-black-50">First Name</label>
-                                    <div class="text round border-dual ui-ease-form">
+                                    <div class="text round ui-border-dual ui-ease-form">
                                         <input class="required" type="text" placeholder="Enter first name" minlength="3">
                                     </div>
                                     <p class="required-msg">Enter your first name.</p>
@@ -58,7 +58,7 @@
                                     <span class="sp-20"></span>
 
                                     <label class="form-label font-color-black-50">Last Name</label>
-                                    <div class="text round border-dual ui-ease-form">
+                                    <div class="text round ui-border-dual ui-ease-form">
                                         <input class="required" type="text" placeholder="Enter last name" minlength="3">
                                     </div>
                                     <p class="required-msg">Enter your last name.</p>
@@ -66,7 +66,7 @@
                                     <span class="sp-20"></span>
 
                                     <label class="form-label font-color-black-50">Phone</label>
-                                    <div class="text round border-dual ui-ease-form">
+                                    <div class="text round ui-border-dual ui-ease-form">
                                         <input class="required number" type="text" placeholder="123-123-1234" minlength="12" maxlength="12">
                                     </div>
                                     <p class="required-msg">Enter your phone.</p>
@@ -75,7 +75,7 @@
                                 <div class="col-6">
 
                                     <label class="form-label font-color-black-50">Email</label>
-                                    <div class="text round border-dual ui-ease-form">
+                                    <div class="text round ui-border-dual ui-ease-form">
                                         <input class="required" type="email" placeholder="Enter your email">
                                     </div>
                                     <p class="required-msg">Enter your email.</p>
@@ -83,7 +83,7 @@
                                     <span class="sp-20"></span>
 
                                     <label class="form-label font-color-black-50">Password</label>
-                                    <div class="text text-icon round border-dual ui-ease-form">
+                                    <div class="text text-icon round ui-border-dual ui-ease-form">
                                         <button type="button" title="Toggle Password" class="show-pass">
                                             <svg class="icon"><use href="#eye-fill"/></svg>
                                         </button>
@@ -94,7 +94,7 @@
                                     <span class="sp-20"></span>
 
                                     <label class="form-label font-color-black-50">Confirm Password</label>
-                                    <div class="text text-icon round border-dual ui-ease-form">
+                                    <div class="text text-icon round ui-border-dual ui-ease-form">
                                         <button type="button" title="Toggle Password" class="show-pass">
                                             <svg class="icon"><use href="#eye-fill"/></svg>
                                         </button>
@@ -107,7 +107,7 @@
 
                                     <span class="sp-15"></span>
                                     <label class="custom">
-                                        <span class="check-custom round border-dual ui-ease-form">
+                                        <span class="check-custom round ui-border-dual ui-ease-form">
                                             <input type="checkbox" checked>
                                             <i class="state"></i>
                                         </span>
@@ -117,7 +117,7 @@
                                     <span class="clearfix"></span>
 
                                     <label class="custom">
-                                        <span class="check-custom round border-dual ui-ease-form">
+                                        <span class="check-custom round ui-border-dual ui-ease-form">
                                             <input type="checkbox" checked>
                                             <i class="state"></i>
                                         </span>

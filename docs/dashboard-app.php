@@ -65,7 +65,7 @@
 
                             <div class="row row-gap-md no-fluid ui-ease-2nd-btn">
                                 <div class="col-4">
-                                    <a class="btn btn-ghost btn-multi no-line-height padding-10-v block round border-dual" href="#">
+                                    <a class="btn btn-ghost btn-multi no-line-height padding-10-v block round ui-border-dual" href="#">
                                         <span class="font-color-black-50 xx-large">19</span>
                                         <span class="block">
                                             <span class="font-color-black-50 small font-ellipsis">Second Audit</span>
@@ -73,7 +73,7 @@
                                     </a>
                                 </div>
                                 <div class="col-4">
-                                    <a class="btn btn-ghost btn-multi no-line-height padding-10-v block round border-dual" href="#">
+                                    <a class="btn btn-ghost btn-multi no-line-height padding-10-v block round ui-border-dual" href="#">
                                         <span class="font-color-black-50 xx-large">20</span>
                                         <span class="block">
                                             <span class="font-color-black-50 small font-ellipsis">Paused</span>
@@ -81,7 +81,7 @@
                                     </a>
                                 </div>
                                 <div class="col-4">
-                                    <a class="btn btn-ghost btn-multi no-line-height padding-10-v block round border-dual" href="#">
+                                    <a class="btn btn-ghost btn-multi no-line-height padding-10-v block round ui-border-dual" href="#">
                                         <span class="font-color-black-50 xx-large">68</span>
                                         <span class="block">
                                             <span class="font-color-black-50 small font-ellipsis">Delayed</span>
@@ -278,7 +278,7 @@
                             <div class="grid-list grid-list-striped grid-hover ui-ease-grid-list">
 
                                 <div class="form-lg ui-ease-1st-form">
-                                    <div class="text text-icon-both border-dual has-clear circle">
+                                    <div class="text text-icon-both ui-border-dual has-clear circle">
                                         <svg class="icon text-icon-l"><use href="#search"/></svg>
                                         <button class="clear-form">
                                             <svg class="icon"><use href="#remove"/></svg>
@@ -698,7 +698,7 @@
                                     </li>
                                 </ul>
 
-                                <div class="tab-content padding-10 border-dual open open-ease">
+                                <div class="tab-content padding-10 ui-border-dual open open-ease">
                                     <div class="row no-fluid no-margin circle ui-theme-gray ui-fill-light-100">
                                         <div class="col-6">
                                             <h5 class="font-bold">John Doe</h5>
@@ -760,7 +760,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-content padding-10 border-dual">
+                                <div class="tab-content padding-10 ui-border-dual">
                                     <div class="row no-fluid no-margin circle ui-theme-gray ui-fill-light-100">
                                         <div class="col-6">
                                             <h5 class="font-bold">Mary Doe</h5>
@@ -820,7 +820,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-content padding-10 border-dual">
+                                <div class="tab-content padding-10 ui-border-dual">
                                     <div class="row no-fluid no-margin circle ui-theme-gray ui-fill-light-100">
                                         <div class="col-6">
                                             <h5 class="font-bold">Mike Taylor</h5>
@@ -882,7 +882,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-content padding-10 border-dual">
+                                <div class="tab-content padding-10 ui-border-dual">
                                     <div class="row no-fluid no-margin circle ui-theme-gray ui-fill-light-100">
                                         <div class="col-6">
                                             <h5 class="font-bold">John Doe</h5>
@@ -942,7 +942,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-content padding-10 border-dual">
+                                <div class="tab-content padding-10 ui-border-dual">
                                     <div class="row no-fluid no-margin circle ui-theme-gray ui-fill-light-100">
                                         <div class="col-6">
                                             <h5 class="font-bold">Mary Doe</h5>
@@ -1004,7 +1004,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-content padding-10 border-dual">
+                                <div class="tab-content padding-10 ui-border-dual">
                                     <div class="row no-fluid no-margin circle ui-theme-gray ui-fill-light-100">
                                         <div class="col-6">
                                             <h5 class="font-bold">John Doe</h5>
@@ -1135,7 +1135,7 @@
 
                         <div class="card-side padding-10">
 
-                            <div class="align-c padding-30 margin-5-t margin-15-b round border-dual">
+                            <div class="align-c padding-30 margin-5-t margin-15-b round ui-border-dual">
                                 <div class="status">
                                     <img class="img-photo-lg circle" src="img/profile-image.jpg" alt="">
                                 </div>

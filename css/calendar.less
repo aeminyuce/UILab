@@ -322,13 +322,13 @@
     }
 
     &:not(.picker-t) {
-        &.no-border {
+        &.ui-no-border {
             .calendar { margin-top: @calendar-picker-space; }
         }
-        &:not(.border-dual):not(.no-border) {
+        &:not(.ui-border-dual):not(.ui-no-border) {
             .calendar { margin-top: (@calendar-picker-space + 1); }
         }
-        &.border-dual {
+        &.ui-border-dual {
             .calendar { margin-top: (@calendar-picker-space + @border-dual); }
         }
     }
@@ -336,13 +336,13 @@
     &.picker-t {
         .calendar { bottom: 100%; }
 
-        &.no-border {
+        &.ui-no-border {
             .calendar { margin-top: @calendar-picker-space; }
         }
-        &:not(.border-dual):not(.no-border) {
+        &:not(.ui-border-dual):not(.ui-no-border) {
             .calendar { margin-bottom: (@calendar-picker-space + 1); }
         }
-        &.border-dual {
+        &.ui-border-dual {
             .calendar { margin-bottom: (@calendar-picker-space + @border-dual); }
         }
     }

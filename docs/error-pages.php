@@ -17,9 +17,9 @@
                     </p>
                     <p class="highlight x-large">Sorry, the page you're looking for cannot be reached.<br>Here are few links that may be helpful.</p>
                     <ul class="font-color-red list-unstyled list-spacer-10 ui-ease-2nd-btn">
-                        <li><a class="btn btn-ghost circle border-dual" href="#">Home</a class="ui-color"></li>
-                        <li><a class="btn btn-ghost circle border-dual" href="#">Help Center</a></li>
-                        <li><a class="btn btn-ghost circle border-dual" href="#">Sign In</a></li>
+                        <li><a class="btn btn-ghost circle ui-border-dual" href="#">Home</a class="ui-color"></li>
+                        <li><a class="btn btn-ghost circle ui-border-dual" href="#">Help Center</a></li>
+                        <li><a class="btn btn-ghost circle ui-border-dual" href="#">Sign In</a></li>
                     </ul>
                 </div>
 
@@ -33,7 +33,7 @@
                         <span class="inline-block">3</span>
                     </p>
                     <p class="highlight x-large">You don't have access to this page.<br>Please contact support if this wasn't supposed to happen.</p>
-                    <a class="font-color-yellow btn btn-ghost border-dual padding-30-h circle ui-ease-btn" href="#">
+                    <a class="font-color-yellow btn btn-ghost ui-border-dual padding-30-h circle ui-ease-btn" href="#">
                         <svg class="icon margin-5-r no-opacity"><use href="#long-arrow-left"/></svg>
                         Go Back
                     </a>
@@ -49,7 +49,7 @@
                         <svg class="icon"><use href="#face-blank"/></svg>
                     </p>
                     <p class="highlight x-large">We are having some issues at the moment.<br>We will have it fixed in no time!</p>
-                    <a class="font-color-orange btn btn-ghost border-dual padding-30-h circle ui-ease-btn" href="#">
+                    <a class="font-color-orange btn btn-ghost ui-border-dual padding-30-h circle ui-ease-btn" href="#">
                         <svg class="icon margin-5-r no-opacity"><use href="#long-arrow-left"/></svg>
                         Go Back
                     </a>

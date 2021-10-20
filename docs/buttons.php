@@ -15,28 +15,28 @@
                         <a class="btn circle" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn circle border-dual" href="#">Button</a>
+                        <a class="btn circle ui-border-dual" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
                         <a class="btn btn-ghost" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost border-l border-lg" href="#">Button</a>
+                        <a class="btn btn-ghost ui-border-l ui-border-lg" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost border-b border-dual" href="#">Button</a>
+                        <a class="btn btn-ghost ui-border-b ui-border-dual" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost border-b border-lg" href="#">Button</a>
+                        <a class="btn btn-ghost ui-border-b ui-border-lg" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
                         <a class="btn btn-ghost-border border round" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost border-dual circle" href="#">Button</a>
+                        <a class="btn btn-ghost ui-border-dual circle" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost border" href="#">Button</a>
+                        <a class="btn btn-ghost ui-border" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
                         <a class="btn border round" href="#">Button</a>
@@ -55,25 +55,25 @@
                         <a class="btn circle ui-theme-yellow ui-fill-dark-100" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn circle border-dual ui-theme-base ui-fill-dark-100" href="#">Button</a>
+                        <a class="btn circle ui-border-dual ui-theme-base ui-fill-dark-100" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
                         <a class="btn btn-ghost ui-theme-green ui-fill-dark-100 ui-color" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost btn-ghost-border border-l border-lg ui-theme-sub ui-fill-light-100 ui-stroke" href="#">Button</a>
+                        <a class="btn btn-ghost btn-ghost-border ui-border-l ui-border-lg ui-theme-sub ui-fill-light-100 ui-stroke" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost border-b border-dual ui-theme-base ui-fill-light-100 ui-stroke" href="#">Button</a>
+                        <a class="btn btn-ghost ui-border-b ui-border-dual ui-theme-base ui-fill-light-100 ui-stroke" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost border-b border-lg ui-theme-green ui-fill-dark-100 ui-stroke" href="#">Button</a>
+                        <a class="btn btn-ghost ui-border-b ui-border-lg ui-theme-green ui-fill-dark-100 ui-stroke" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
                         <a class="btn btn-ghost-border border round ui-theme-orange ui-fill-dark-100" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
-                        <a class="btn btn-ghost border-dual circle ui-theme-yellow ui-stroke ui-color" href="#">Button</a>
+                        <a class="btn btn-ghost ui-border-dual circle ui-theme-yellow ui-stroke ui-color" href="#">Button</a>
                     </div>
                     <div class="col-3 col-sm-6">
                         <a class="btn btn-ghost border ui-theme-sub ui-fill-light-100 ui-stroke ui-color" href="#">Button</a>
@@ -86,32 +86,32 @@
                 <h4>Button Sizes</h4>
                 <div class="row xs-fluid align-l padding-30-b icons-margin-5-l block-2nd ui-ease-2nd-btn">
                     <div class="col-6">
-                        <a class="btn btn-ghost btn-lg circle border" href="#">
+                        <a class="btn btn-ghost btn-lg circle ui-border" href="#">
                             Large Button <svg class="icon right"><use href="#settings"/></svg>
                         </a>
                     </div>
                     <div class="col-6">
-                        <a class="btn btn-ghost btn-lg circle border" href="#">
+                        <a class="btn btn-ghost btn-lg circle ui-border" href="#">
                             Large Button <svg class="icon right"><use href="#settings"/></svg>
                         </a>
                     </div>
                     <div class="col-6">
-                        <a class="btn btn-ghost circle border" href="#">
+                        <a class="btn btn-ghost circle ui-border" href="#">
                             Default Button <svg class="icon right"><use href="#settings"/></svg>
                         </a>
                     </div>
                     <div class="col-6">
-                        <a class="btn btn-ghost btn-sm circle border" href="#">
+                        <a class="btn btn-ghost btn-sm circle ui-border" href="#">
                             Small Button <svg class="icon right"><use href="#settings"/></svg>
                         </a>
                     </div>
                     <div class="col-6">
-                        <a class="btn btn-ghost btn-xs circle border" href="#">
+                        <a class="btn btn-ghost btn-xs circle ui-border" href="#">
                             Extra Small Button <svg class="icon right"><use href="#settings"/></svg>
                         </a>
                     </div>
                     <div class="col-6">
-                        <a class="btn btn-ghost btn-xxs circle border" href="#">
+                        <a class="btn btn-ghost btn-xxs circle ui-border" href="#">
                             2x Extra Small Button <svg class="icon right"><use href="#settings"/></svg>
                         </a>
                     </div>
@@ -392,7 +392,7 @@
                             <svg class="icon"><use href="#angle-left"/></svg>
                         </a>
                         <a class="btn round" href="#">1</a>
-                        <a class="btn btn-active round border-dual ui-stroke ui-color" href="#">2</a>
+                        <a class="btn btn-active round ui-border-dual ui-stroke ui-color" href="#">2</a>
                         <a class="btn round" href="#">3</a>
                         <a class="btn round" href="#">4</a>
                         <a class="btn btn-passive round" href="#">...</a>
@@ -450,13 +450,13 @@
                     </div>
                     <div class="col-6">
                         <div class="btn-list align-l icons-margin-10-r form-lg icons-no-opacity ui-theme-yellow ui-ease-1st-btn">
-                            <button class="btn btn-ghost round border-dual ui-stroke">
+                            <button class="btn btn-ghost round ui-border-dual ui-stroke">
                                 <svg class="icon ui-color"><use href="#shield"/></svg>Administration
                             </button>
-                            <button class="btn btn-ghost round border-dual ui-stroke">
+                            <button class="btn btn-ghost round ui-border-dual ui-stroke">
                                 <svg class="icon ui-color"><use href="#clock"/></svg>Recent History
                             </button>
-                            <button class="btn btn-ghost round border-dual ui-stroke">
+                            <button class="btn btn-ghost round ui-border-dual ui-stroke">
                                 <svg class="icon ui-color"><use href="#settings"/></svg>Tools
                             </button>
                         </div>
@@ -499,34 +499,34 @@
                     </div>
                     <div class="col-6">
                         <div class="btn-holder form-lg ui-ease-1st-btn">
-                            <button class="btn round border-r">1</button>
-                            <button class="btn round border-r">2</button>
-                            <button class="btn round border-r">3</button>
-                            <button class="btn round border-r">4</button>
-                            <button class="btn round border-r">5</button>
+                            <button class="btn round ui-border-r">1</button>
+                            <button class="btn round ui-border-r">2</button>
+                            <button class="btn round ui-border-r">3</button>
+                            <button class="btn round ui-border-r">4</button>
+                            <button class="btn round ui-border-r">5</button>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="btn-holder form-lg ui-ease-1st-btn">
-                            <button class="btn round border">1</button>
-                            <button class="btn round border">2</button>
-                            <button class="btn round border">3</button>
-                            <button class="btn round border">4</button>
-                            <button class="btn round border">5</button>
+                            <button class="btn round ui-border">1</button>
+                            <button class="btn round ui-border">2</button>
+                            <button class="btn round ui-border">3</button>
+                            <button class="btn round ui-border">4</button>
+                            <button class="btn round ui-border">5</button>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="btn-holder btn-sm-fluid form-lg ui-ease-1st-btn">
-                            <button class="btn round border">One</button>
-                            <button class="btn round border">Two</button>
-                            <button class="btn round border">Three</button>
+                            <button class="btn round ui-border">One</button>
+                            <button class="btn round ui-border">Two</button>
+                            <button class="btn round ui-border">Three</button>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="btn-holder btn-xs-fluid form-lg ui-ease-1st-btn">
-                            <button class="btn round border-dual">One</button>
-                            <button class="btn round border-dual">Two</button>
-                            <button class="btn round border-dual">Three</button>
+                            <button class="btn round ui-border-dual">One</button>
+                            <button class="btn round ui-border-dual">Two</button>
+                            <button class="btn round ui-border-dual">Three</button>
                         </div>
                     </div>
                 </div>

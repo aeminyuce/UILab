@@ -15,7 +15,7 @@
                 <div class="padding-30-b">
 
                     <div class="card round shadow">
-                        <div class="card-side padding-15 border-b">
+                        <div class="card-side padding-15 ui-border-b">
                             <h4><svg class="icon icon-lg"><use href="#user"/></svg>Card Title</h4>
                         </div>
                         <div class="card-side padding-15">
@@ -36,15 +36,15 @@
                     </div>
 
                     <div class="card round shadow">
-                        <div class="card-side padding-15 border-b">
+                        <div class="card-side padding-15 ui-border-b">
                             <h4><svg class="icon icon-lg"><use href="#lab"/></svg>Card Title</h4>
                         </div>
                         <div class="card-side padding-15">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie. Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus. In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
                         </div>
-                        <div class="card-side padding-15 align-r sm-align-c border-t ui-ease-2nd-btn">
+                        <div class="card-side padding-15 align-r sm-align-c ui-border-t ui-ease-2nd-btn">
                             <form action="#">
-                                <button type="button" class="btn padding-30-h btn-ghost border-dual circle">Cancel</button>
+                                <button type="button" class="btn padding-30-h btn-ghost ui-border-dual circle">Cancel</button>
                                 <button type="submit" class="btn padding-30-h circle ui-theme-yellow ui-fill-dark-100">Show Later</button>
                                 <button type="submit" class="btn padding-30-h circle ui-theme-green ui-fill-dark-100">Accept</button>
                             </form>
@@ -73,10 +73,10 @@
                     </div>
 
                     <div class="card round shadow">
-                        <div class="card-side padding-15 border-b">
+                        <div class="card-side padding-15 ui-border-b">
                             <h4><svg class="icon icon-lg"><use href="#check-badge"/></svg>Card Title</h4>
                         </div>
-                        <div class="card-side padding-15 border-b">
+                        <div class="card-side padding-15 ui-border-b">
 
                             <div class="card ui-theme-gray padding-15 round ui-fill-light-300">
                             <button class="close-card ui-ease-btn">

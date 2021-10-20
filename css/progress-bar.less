@@ -33,10 +33,10 @@
 
             &:not([class*="animate-"]) { animation: ui-progress-fill 2s ease-in-out forwards; }
         }
-        &.border > span {
+        &.ui-border > span {
             height: (@progress-bar-default-size - @progress-bar-padding * 2 - 2);
         }
-        &.border-dual > span {
+        &.ui-border-dual > span {
             height: (@progress-bar-default-size - @progress-bar-padding * 2 - @border-dual * 2);
         }
         &.round > span {
@@ -49,7 +49,7 @@
         height: @progress-bar-lg-size;
 
         & > span { height: (@progress-bar-lg-size - @progress-bar-padding * 2); }
-        &.border-dual > span {
+        &.ui-border-dual > span {
             height: (@progress-bar-lg-size - @progress-bar-padding * 2 - @border-dual * 2);
         }
     }
@@ -57,7 +57,7 @@
         height: @progress-bar-sm-size;
 
         & > span { height: (@progress-bar-sm-size - @progress-bar-padding * 2); }
-        &.border-dual > span {
+        &.ui-border-dual > span {
             height: (@progress-bar-sm-size - @progress-bar-padding * 2 - @border-dual * 2);
         }
     }

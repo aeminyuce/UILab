@@ -30,7 +30,7 @@
 .btn {
     ._color-var(black); text-align: center; vertical-align: middle; line-height: (@btn-default - @btn-default-padding * 2); height: @btn-default; ._bg-var(btn-bg); padding-top: @btn-default-padding; padding-bottom: @btn-default-padding; display: inline-block; position: relative; cursor: pointer; @no-appearance();
 
-    &:not(.border):not([class*="border-"]) { border-width: 0; }
+    &:not(.ui-border):not([class*="border-"]) { border-width: 0; }
     &:not(.btn-multi) { white-space: nowrap; }
     &:not(.circle) { padding-right: @btn-default-padding; padding-left: @btn-default-padding; }
     &.circle { padding-right: (@btn-default-padding + @btn-circle-extra-padding); padding-left: (@btn-default-padding + @btn-circle-extra-padding); }
@@ -42,7 +42,7 @@
         &:after { min-width: @btn-notifier-size; min-height: @btn-notifier-size; }
     }
 
-    &.border {
+    &.ui-border {
         padding-top: (@btn-default-padding - 1); padding-bottom: (@btn-default-padding - 1);
 
         &-dual { padding-top: (@btn-default-padding - @border-dual); padding-bottom: (@btn-default-padding - @border-dual); }
@@ -104,7 +104,7 @@
     &.round { border-radius: (@round * 1.3333333333); }
     &.btn-square { width: @btn-lg; }
 
-    &.border {
+    &.ui-border {
         padding-top: (@btn-lg-padding - 1); padding-bottom: (@btn-lg-padding - 1);
 
         &-dual { padding-top: (@btn-lg-padding - @border-dual); padding-bottom: (@btn-lg-padding - @border-dual); }
@@ -122,7 +122,7 @@
     &.round { border-radius: (@round - @round * 0.3333333333); }
     &.btn-square { width: @btn-sm; }
 
-    &.border {
+    &.ui-border {
         padding-top: (@btn-sm-padding - 1); padding-bottom: (@btn-sm-padding - 1);
 
         &-dual { padding-top: (@btn-sm-padding - @border-dual); padding-bottom: (@btn-sm-padding - @border-dual); }
@@ -140,7 +140,7 @@
     &.round { border-radius: (@round / 2); }
     &.btn-square { width: @btn-xs; }
 
-    &.border {
+    &.ui-border {
         padding-top: (@btn-xs-padding - 1); padding-bottom: (@btn-xs-padding - 1);
 
         &-dual { padding-top: (@btn-xs-padding - @border-dual); padding-bottom: (@btn-xs-padding - @border-dual); }
@@ -158,7 +158,7 @@
     &.round { border-radius: (@round * 0.3333333333); }
     &.btn-square { width: @btn-xxs; }
 
-    &.border {
+    &.ui-border {
         padding-top: (@btn-xxs-padding - 1); padding-bottom: (@btn-xxs-padding - 1);
 
         &-dual { padding-top: (@btn-xxs-padding - @border-dual); padding-bottom: (@btn-xxs-padding - @border-dual); }
@@ -193,17 +193,17 @@
     width: 100%;
 
     &:not(:first-child) { border-top: 0; }
-    &:not(:last-child):not(.border):not(.border-dual):not(.border-b) { margin-bottom: @btn-list-space; }
+    &:not(:last-child):not(.ui-border):not(.ui-border-dual):not(.ui-border-b) { margin-bottom: @btn-list-space; }
 
     &:first-child {
         border-bottom-right-radius: 0; border-bottom-left-radius: 0;
 
-        &:not(.border):not(.border-dual):not(.border-dual) { border-top: 0; }
+        &:not(.ui-border):not(.ui-border-dual):not(.ui-border-dual) { border-top: 0; }
     }
     &:last-child {
         border-top-right-radius: 0; border-top-left-radius: 0;
 
-        &:not(.border):not(.border-dual):not(.border-dual) { border-bottom: 0; }
+        &:not(.ui-border):not(.ui-border-dual):not(.ui-border-dual) { border-bottom: 0; }
     }
 }
 
@@ -219,17 +219,17 @@
 
 ._create-btn-holder() {
     &:not(:first-child) { border-left: 0; }
-    &:not(:last-child):not(.border):not(.border-dual):not(.border-r) { margin-right: 1px; }
+    &:not(:last-child):not(.ui-border):not(.ui-border-dual):not(.ui-border-r) { margin-right: 1px; }
 
     &:first-child {
         border-top-right-radius: 0; border-bottom-right-radius: 0;
 
-        &:not(.border):not(.border-dual):not(.border-dual) { border-left: 0; }
+        &:not(.ui-border):not(.ui-border-dual):not(.ui-border-dual) { border-left: 0; }
     }
     &:last-child {
         border-top-left-radius: 0; border-bottom-left-radius: 0;
 
-        &:not(.border):not(.border-dual):not(.border-dual) { border-right: 0; }
+        &:not(.ui-border):not(.ui-border-dual):not(.ui-border-dual) { border-right: 0; }
     }
 }
 

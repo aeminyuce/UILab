@@ -29,7 +29,7 @@
 
                                 <span class="xx-large">13</span>
                                 <span class="small font-color-white-muted margin-5-b block">Waiting</span>
-                                <span class="progress-bar round border-dual">
+                                <span class="progress-bar round ui-border-dual">
                                     <span class="ui-fill-dark-100 stripe-light" style="width: 65%;"></span>
                                 </span>
 
@@ -38,7 +38,7 @@
 
                                 <span class="xx-large">3</span>
                                 <span class="small font-color-white-muted margin-5-b block">Paused</span>
-                                <span class="progress-bar round border-dual">
+                                <span class="progress-bar round ui-border-dual">
                                     <span class="ui-fill-dark-100 stripe-light" style="width: 35%;"></span>
                                 </span>
 
@@ -47,7 +47,7 @@
 
                                 <span class="xx-large">16</span>
                                 <span class="small font-color-white-muted margin-5-b block">Delayed</span>
-                                <span class="progress-bar round border-dual">
+                                <span class="progress-bar round ui-border-dual">
                                     <span class="ui-fill-dark-100 stripe-light" style="width: 75%;"></span>
                                 </span>
 
@@ -267,10 +267,10 @@
                             <svg class="icon"><use href="#grid-column"/></svg>
                         </button>
                         <div class="dropdown-menu round shadow-lg no-scroll">
-                            <div class="tabs xs-full-width ui-theme-panel2 ui-ease-tabs" data-ui-classes="border-b border-lg ui-stroke ui-color" style="min-width: 300px;">
+                            <div class="tabs xs-full-width ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-b ui-border-lg ui-stroke ui-color" style="min-width: 300px;">
 
-                                <div class="btn-holder font-color-black-muted align-c border-b ui-ease-1st-btn">
-                                    <button class="tab btn btn-ghost round-t border-b border-lg ui-stroke ui-color active" data-ui-tooltip data-ui-only="desktop" title="Favorites">
+                                <div class="btn-holder font-color-black-muted align-c ui-border-b ui-ease-1st-btn">
+                                    <button class="tab btn btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color active" data-ui-tooltip data-ui-only="desktop" title="Favorites">
                                         <svg class="icon ui-no"><use href="#star"/></svg>
                                     </button>
                                     <button class="tab btn btn-ghost round-t" data-ui-tooltip data-ui-only="desktop" title="History">
@@ -283,9 +283,9 @@
                                         <li>
                                             Lorem ipsum dolor sit amet.
                                             <span class="photos-holder margin-5-t hover-scale-more-2nd ui-ease-2nd-layout">
-                                                <a href="#"><img class="img-photo border-lg circle" src="img/profile-image.jpg" alt=""></a>
-                                                <a href="#"><img class="img-photo border-lg circle" src="img/profile-image2.jpg" alt=""></a>
-                                                <a href="#"><img class="img-photo border-lg circle" src="img/profile-image3.jpg" alt=""></a>
+                                                <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image.jpg" alt=""></a>
+                                                <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image2.jpg" alt=""></a>
+                                                <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image3.jpg" alt=""></a>
                                                 <a class="btn no-margin circle ui-ease-btn" href="#">+12</a>
                                             </span>
                                         </li>
@@ -345,10 +345,10 @@
                             <svg class="icon"><use href="#bars-right"/></svg>
                         </button>
                         <div class="dropdown-menu round shadow-lg no-scroll">
-                            <div class="tabs xs-full-width ui-theme-panel2 ui-ease-tabs" data-ui-classes="border-b border-lg ui-stroke ui-color" style="min-width: 300px;">
+                            <div class="tabs xs-full-width ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-b ui-border-lg ui-stroke ui-color" style="min-width: 300px;">
 
-                                <div class="btn-holder font-color-black-muted align-c border-b ui-ease-1st-btn">
-                                    <button class="tab btn btn-ghost round-t border-b border-lg ui-stroke ui-color active" data-ui-tooltip data-ui-only="desktop" title="Notifications">
+                                <div class="btn-holder font-color-black-muted align-c ui-border-b ui-ease-1st-btn">
+                                    <button class="tab btn btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color active" data-ui-tooltip data-ui-only="desktop" title="Notifications">
                                         <svg class="icon ui-no"><use href="#bell"/></svg>
                                     </button>
                                     <button class="tab btn btn-ghost round-t" data-ui-tooltip data-ui-only="desktop" title="Notes">
@@ -367,9 +367,9 @@
                                         <li>
                                             Lorem ipsum dolor sit amet.
                                             <span class="photos-holder margin-5-t hover-scale-more-2nd ui-ease-2nd-layout">
-                                                <a href="#"><img class="img-photo border-lg circle" src="img/profile-image.jpg" alt=""></a>
-                                                <a href="#"><img class="img-photo border-lg circle" src="img/profile-image2.jpg" alt=""></a>
-                                                <a href="#"><img class="img-photo border-lg circle" src="img/profile-image3.jpg" alt=""></a>
+                                                <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image.jpg" alt=""></a>
+                                                <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image2.jpg" alt=""></a>
+                                                <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image3.jpg" alt=""></a>
                                                 <a class="btn no-margin circle ui-ease-btn" href="#">+12</a>
                                             </span>
                                         </li>
@@ -426,9 +426,9 @@
                                         <li>
                                             Lorem ipsum dolor sit amet.
                                             <span class="photos-holder margin-5-t hover-scale-more-2nd ui-ease-2nd-layout">
-                                                <a href="#"><img class="img-photo border-lg circle" src="img/profile-image.jpg" alt=""></a>
-                                                <a href="#"><img class="img-photo border-lg circle" src="img/profile-image2.jpg" alt=""></a>
-                                                <a href="#"><img class="img-photo border-lg circle" src="img/profile-image3.jpg" alt=""></a>
+                                                <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image.jpg" alt=""></a>
+                                                <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image2.jpg" alt=""></a>
+                                                <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image3.jpg" alt=""></a>
                                                 <a class="btn no-margin circle ui-ease-btn" href="#">+12</a>
                                             </span>
                                         </li>
@@ -537,14 +537,14 @@
             <!-- header: end -->
 
             <!-- layouts: start -->
-            <div class="tabs ui-ease-tabs padding-15-b" data-ui-classes="border-lg border-b ui-stroke ui-color">
+            <div class="tabs ui-ease-tabs padding-15-b" data-ui-classes="ui-border-lg ui-border-b ui-stroke ui-color">
 
                 <div class="container">
-                    <div class="row border-b margin-15-b ui-theme-panel2">
+                    <div class="row ui-border-b margin-15-b ui-theme-panel2">
                         <div class="col-4 offset-4 no-padding-b">
 
                             <div class="btn-holder font-color-black-muted form-lg ui-ease-1st-btn">
-                                <button class="tab btn btn-ghost round-t border-lg border-b ui-stroke ui-color active">Forms</button>
+                                <button class="tab btn btn-ghost round-t ui-border-lg ui-border-b ui-stroke ui-color active">Forms</button>
                                 <button class="tab btn btn-ghost round-t">Dashboard</button>
                             </div>
 
@@ -562,7 +562,7 @@
                                 <div class="card round shadow-lg">
 
                                     <form action="#succesful">
-                                        <div class="card-side padding-5-h border-b">
+                                        <div class="card-side padding-5-h ui-border-b">
                                             <div class="col-static no-fluid">
                                                 <div class="row">
                                                     <div class="col-12">
@@ -609,7 +609,7 @@
                                                     <label class="form-grid">First Name</label>
                                                 </div>
                                                 <div class="col-5">
-                                                    <div class="text round border-dual ui-ease-form">
+                                                    <div class="text round ui-border-dual ui-ease-form">
                                                         <input class="required" type="text" placeholder="Enter first name" minlength="3">
                                                     </div>
                                                     <p class="required-msg">Enter your first name.</p>
@@ -619,7 +619,7 @@
                                                     <label class="form-grid">Last Name</label>
                                                 </div>
                                                 <div class="col-5">
-                                                    <div class="text round border-dual ui-ease-form">
+                                                    <div class="text round ui-border-dual ui-ease-form">
                                                         <input class="required" type="text" placeholder="Enter last name" minlength="3">
                                                     </div>
                                                     <p class="required-msg">Enter your last name.</p>
@@ -629,7 +629,7 @@
                                                     <label class="form-grid">Contact Phone</label>
                                                 </div>
                                                 <div class="col-5">
-                                                    <div class="text text-icon-l round border-dual ui-ease-form">
+                                                    <div class="text text-icon-l round ui-border-dual ui-ease-form">
                                                         <svg class="icon"><use href="#phone"/></svg>
                                                         <input class="required number" type="text" placeholder="123-123-1234" minlength="12" maxlength="12">
                                                     </div>
@@ -640,7 +640,7 @@
                                                     <label class="form-grid">Age</label>
                                                 </div>
                                                 <div class="col-5">
-                                                    <div class="select round border-dual ui-ease-form">
+                                                    <div class="select round ui-border-dual ui-ease-form">
                                                         <svg class="icon"><use href="#angle-down"/></svg>
                                                         <select class="required">
                                                             <option value="">Select your age</option>
@@ -656,7 +656,7 @@
                                                     <label class="form-grid">Email Address</label>
                                                 </div>
                                                 <div class="col-5">
-                                                    <div class="text text-icon-l round border-dual ui-ease-form">
+                                                    <div class="text text-icon-l round ui-border-dual ui-ease-form">
                                                         <svg class="icon"><use href="#at"/></svg>
                                                         <input class="required email" type="email">
                                                     </div>
@@ -671,14 +671,14 @@
 
                                                         <div class="row no-row-gap">
                                                             <div class="col-12">
-                                                                <div class="text text-icon-l round border-dual ui-ease-form">
+                                                                <div class="text text-icon-l round ui-border-dual ui-ease-form">
                                                                     <svg class="icon"><use href="#browser"/></svg>
                                                                     <input class="required" type="text" placeholder="Site name">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="col-200">
-                                                            <div class="select round border-dual ui-ease-form">
+                                                            <div class="select round ui-border-dual ui-ease-form">
                                                                 <svg class="icon"><use href="#angle-down"/></svg>
                                                                 <select>
                                                                     <option>.com</option>
@@ -692,7 +692,7 @@
                                                     <p class="required-msg">Enter your site name.</p>
                                                 </div>
 
-                                                <div class="sp-1 margin-20 border-b border-dashed"></div>
+                                                <div class="sp-1 margin-20 ui-border-b ui-border-dashed"></div>
 
                                                 <div class="col-8 offset-2">
                                                     <h3>Address Details</h3>
@@ -702,7 +702,7 @@
                                                     <label class="form-grid">Country</label>
                                                 </div>
                                                 <div class="col-5">
-                                                    <div data-ui-src="json/countries.json" data-ui-val="name" class="autocomplete text text-icon-l round border-dual ui-ease-form">
+                                                    <div data-ui-src="json/countries.json" data-ui-val="name" class="autocomplete text text-icon-l round ui-border-dual ui-ease-form">
                                                         <svg class="icon"><use href="#keyboard"/></svg>
                                                         <input class="required" type="text" placeholder="Type/Select your country" autocomplete="off" minlength="3">
                                                     </div>
@@ -713,7 +713,7 @@
                                                     <label class="form-grid">Address</label>
                                                 </div>
                                                 <div class="col-5">
-                                                    <div class="textarea round border-dual ui-ease-form" data-ui-counter="1000">
+                                                    <div class="textarea round ui-border-dual ui-ease-form" data-ui-counter="1000">
                                                         <textarea class="required" rows="3"></textarea>
                                                     </div>
                                                     <p class="required-msg">Enter your address details.</p>
@@ -721,7 +721,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="card-side padding-5-h border-t">
+                                        <div class="card-side padding-5-h ui-border-t">
                                             <div class="row">
                                                 <div class="col-12 align-r xs-align-c ui-ease-1st-btn">
 
@@ -919,10 +919,10 @@
 
                             <div class="col-xl-3 col-lg-6 col-12 col-md-6">
                                 <div class="card full-h padding-15 padding-10-t round shadow-lg" style="min-height: 350px;">
-                                    <div class="tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="border-b border-lg ui-stroke ui-color">
+                                    <div class="tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-b ui-border-lg ui-stroke ui-color">
 
-                                        <div class="btn-holder font-color-black-muted align-c margin-10-b border-b form-lg ui-ease-1st-btn">
-                                            <button class="tab btn btn-ghost round-t border-b border-lg ui-stroke ui-color active">Delayed</button>
+                                        <div class="btn-holder font-color-black-muted align-c margin-10-b ui-border-b form-lg ui-ease-1st-btn">
+                                            <button class="tab btn btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color active">Delayed</button>
                                             <button class="tab btn btn-ghost round-t">Paused</button>
                                         </div>
                                         <div class="tab-content set-absolute set-h scroll-v open open-ease" style="top: 62px; bottom: 15px;">
@@ -1132,10 +1132,10 @@
 
                             <div class="col-xl-3 col-lg-6 col-12 col-md-6">
                                 <div class="card full-h padding-15 padding-10-t round shadow-lg" style="min-height: 350px;">
-                                    <div class="tabs form-lg ui-theme-panel2 ui-ease-tabs" data-ui-classes="border-b border-lg ui-stroke ui-color">
+                                    <div class="tabs form-lg ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-b ui-border-lg ui-stroke ui-color">
 
-                                        <div class="btn-holder font-color-black-muted align-c margin-10-b border-b ui-ease-1st-btn">
-                                            <button class="tab btn btn-ghost round-t border-b border-lg ui-stroke ui-color active">News</button>
+                                        <div class="btn-holder font-color-black-muted align-c margin-10-b ui-border-b ui-ease-1st-btn">
+                                            <button class="tab btn btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color active">News</button>
                                             <button class="tab btn btn-ghost round-t">Announcements</button>
                                         </div>
                                         <div class="tab-content set-absolute set-h scroll-v open open-ease" style="top: 62px; bottom: 15px;">
@@ -1144,9 +1144,9 @@
                                                 <li>
                                                     Lorem ipsum dolor sit amet.
                                                     <span class="photos-holder margin-5-t hover-scale-more-2nd ui-ease-2nd-layout">
-                                                        <a href="#"><img class="img-photo border-lg circle" src="img/profile-image.jpg" alt=""></a>
-                                                        <a href="#"><img class="img-photo border-lg circle" src="img/profile-image2.jpg" alt=""></a>
-                                                        <a href="#"><img class="img-photo border-lg circle" src="img/profile-image3.jpg" alt=""></a>
+                                                        <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image.jpg" alt=""></a>
+                                                        <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image2.jpg" alt=""></a>
+                                                        <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image3.jpg" alt=""></a>
                                                         <a class="btn btn-lg no-margin circle ui-ease-btn" href="#">+12</a>
                                                     </span>
                                                 </li>
@@ -1841,7 +1841,7 @@
 
 <!-- mobile menu -->
 <div class="mobile-menu show-l invert-bg ui-theme-panel ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
-    <div class="mobile-menu-title no-padding border-b">
+    <div class="mobile-menu-title no-padding ui-border-b">
         <button class="btn btn-square btn-lg btn-ghost circle ui-ease-btn close-mobile-menu">
             <svg class="icon no-opacity"><use href="#remove"/></svg>
         </button>

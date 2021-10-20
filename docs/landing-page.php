@@ -7,7 +7,7 @@
 <!-- header: start -->
 <header class="container no-gutter bg-white invert-bg" data-ui-classes="shadow-lg">
 
-    <div class="border-b ui-theme-farmer2">
+    <div class="ui-border-b ui-theme-farmer2">
         <div class="fixed padding-10-v sm-no-padding-v">
             <div class="row">
                 <div class="col-static no-fluid">
@@ -80,12 +80,12 @@
 <main class="container no-gutter">
 
     <!-- tab banner: start -->
-    <div class="tabs form-lg ui-ease-tabs" data-ui-classes="ui-color border-b border-lg ui-stroke">
+    <div class="tabs form-lg ui-ease-tabs" data-ui-classes="ui-color ui-border-b ui-border-lg ui-stroke">
 
         <div class="fixed padding-10-t ui-theme-farmer2">
             <div class="row no-row-gap-v icons-no-opacity icons-margin-5-r">
                 <div class="col-12 xs-align-l align-c ui-ease-1st-btn">
-                    <button class="tab btn btn-xs-fluid btn-ghost margin-1-b ui-color border-b border-lg ui-stroke active">
+                    <button class="tab btn btn-xs-fluid btn-ghost margin-1-b ui-color ui-border-b ui-border-lg ui-stroke active">
                         <svg class="icon"><use href="#factory"/></svg>
                         Long Term Investment
                     </button>
@@ -338,12 +338,12 @@
                 </div>
             </div>
         </div>
-        <div class="tabs form-lg border-t padding-10-t ui-ease-tabs" data-ui-classes="ui-color border-b border-lg ui-stroke">
+        <div class="tabs form-lg ui-border-t padding-10-t ui-ease-tabs" data-ui-classes="ui-color ui-border-b ui-border-lg ui-stroke">
 
             <div class="fixed">
                 <div class="row no-row-gap-v icons-no-opacity icons-margin-5-r">
                     <div class="col-12 xs-align-l align-c ui-ease-1st-btn">
-                        <button class="tab btn btn-xs-fluid btn-ghost margin-1-b ui-color border-b border-lg ui-stroke active">
+                        <button class="tab btn btn-xs-fluid btn-ghost margin-1-b ui-color ui-border-b ui-border-lg ui-stroke active">
                             <svg class="icon ui-color"><use href="#building"/></svg>
                             Company
                         </button>
@@ -373,7 +373,7 @@
                                 <span class="font-color-black-50 large">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
                             </span>
 
-                            <span class="small font-color-black-muted border-t padding-10 block inline-block-1st">
+                            <span class="small font-color-black-muted ui-border-t padding-10 block inline-block-1st">
                                 <svg class="icon margin-2-r"><use href="#clock"/></svg>
                                 <b class="margin-10-r">SEPTEMBER 30, 2019</b>
 
@@ -397,7 +397,7 @@
                                 <span class="font-color-black-50 large">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
                             </span>
 
-                            <span class="small font-color-black-muted border-t padding-10 block inline-block-1st">
+                            <span class="small font-color-black-muted ui-border-t padding-10 block inline-block-1st">
                                 <svg class="icon margin-2-r"><use href="#clock"/></svg>
                                 <b class="margin-10-r">SEPTEMBER 21, 2019</b>
 
@@ -421,7 +421,7 @@
                                 <span class="font-color-black-50 large">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
                             </span>
 
-                            <span class="small font-color-black-muted border-t padding-10 block inline-block-1st">
+                            <span class="small font-color-black-muted ui-border-t padding-10 block inline-block-1st">
                                 <svg class="icon margin-2-r"><use href="#clock"/></svg>
                                 <b class="margin-10-r">SEPTEMBER 09, 2019</b>
 
@@ -445,7 +445,7 @@
                                 <span class="font-color-black-50 large">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
                             </span>
 
-                            <span class="small font-color-black-muted border-t padding-10 block inline-block-1st">
+                            <span class="small font-color-black-muted ui-border-t padding-10 block inline-block-1st">
                                 <svg class="icon margin-2-r"><use href="#clock"/></svg>
                                 <b class="margin-10-r">SEPTEMBER 01, 2019</b>
 
@@ -478,7 +478,7 @@
                                 <span class="font-color-black-50 large">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
                             </span>
 
-                            <span class="small font-color-black-muted border-t padding-10 block inline-block-1st">
+                            <span class="small font-color-black-muted ui-border-t padding-10 block inline-block-1st">
                                 <svg class="icon margin-2-r"><use href="#clock"/></svg>
                                 <b class="margin-10-r">SEPTEMBER 21, 2019</b>
 
@@ -502,7 +502,7 @@
                                 <span class="font-color-black-50 large">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
                             </span>
 
-                            <span class="small font-color-black-muted border-t padding-10 block inline-block-1st">
+                            <span class="small font-color-black-muted ui-border-t padding-10 block inline-block-1st">
                                 <svg class="icon margin-2-r"><use href="#clock"/></svg>
                                 <b class="margin-10-r">SEPTEMBER 09, 2019</b>
 
@@ -526,7 +526,7 @@
                                 <span class="font-color-black-50 large">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
                             </span>
 
-                            <span class="small font-color-black-muted border-t padding-10 block inline-block-1st">
+                            <span class="small font-color-black-muted ui-border-t padding-10 block inline-block-1st">
                                 <svg class="icon margin-2-r"><use href="#clock"/></svg>
                                 <b class="margin-10-r">SEPTEMBER 01, 2019</b>
 
@@ -550,7 +550,7 @@
                                 <span class="font-color-black-50 large">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
                             </span>
 
-                            <span class="small font-color-black-muted border-t padding-10 block inline-block-1st">
+                            <span class="small font-color-black-muted ui-border-t padding-10 block inline-block-1st">
                                 <svg class="icon margin-2-r"><use href="#clock"/></svg>
                                 <b class="margin-10-r">SEPTEMBER 30, 2019</b>
 
@@ -583,7 +583,7 @@
                                 <span class="font-color-black-50 large">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
                             </span>
 
-                            <span class="small font-color-black-muted border-t padding-10 block inline-block-1st">
+                            <span class="small font-color-black-muted ui-border-t padding-10 block inline-block-1st">
                                 <svg class="icon margin-2-r"><use href="#clock"/></svg>
                                 <b class="margin-10-r">SEPTEMBER 21, 2019</b>
 
@@ -607,7 +607,7 @@
                                 <span class="font-color-black-50 large">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
                             </span>
 
-                            <span class="small font-color-black-muted border-t padding-10 block inline-block-1st">
+                            <span class="small font-color-black-muted ui-border-t padding-10 block inline-block-1st">
                                 <svg class="icon margin-2-r"><use href="#clock"/></svg>
                                 <b class="margin-10-r">SEPTEMBER 30, 2019</b>
 
@@ -631,7 +631,7 @@
                                 <span class="font-color-black-50 large">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
                             </span>
 
-                            <span class="small font-color-black-muted border-t padding-10 block inline-block-1st">
+                            <span class="small font-color-black-muted ui-border-t padding-10 block inline-block-1st">
                                 <svg class="icon margin-2-r"><use href="#clock"/></svg>
                                 <b class="margin-10-r">SEPTEMBER 01, 2019</b>
 
@@ -655,7 +655,7 @@
                                 <span class="font-color-black-50 large">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
                             </span>
 
-                            <span class="small font-color-black-muted border-t padding-10 block inline-block-1st">
+                            <span class="small font-color-black-muted ui-border-t padding-10 block inline-block-1st">
                                 <svg class="icon margin-2-r"><use href="#clock"/></svg>
                                 <b class="margin-10-r">SEPTEMBER 09, 2019</b>
 
@@ -931,7 +931,7 @@
 
 <!-- mobile menu -->
 <div class="mobile-menu show-r ui-ease-layout ui-ease-in-out">
-    <div class="mobile-menu-title border-b">
+    <div class="mobile-menu-title ui-border-b">
         <button class="btn btn-square btn-lg btn-ghost ui-ease-btn close-mobile-menu">
             <svg class="icon no-opacity"><use href="#remove"/></svg>
         </button>

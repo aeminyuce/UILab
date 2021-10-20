@@ -6,7 +6,7 @@
 
                 <h4>Showing Dialogues</h4>
                 <pre class="round">ui.alerts.dialog({ msg: '', success: '', error: '', custom: { value: 'button text', value: 'button text' }, callback });</pre>
-                <dl class="dl-horizontal padding-15 round border">
+                <dl class="dl-horizontal padding-15 round ui-border">
                     <dt>msg</dt>
                     <dd class="margin-15-b">
                         Required. Your dialog text.<br>
@@ -75,7 +75,7 @@
 
                 <h4>Showing Messages</h4>
                 <pre class="round">ui.alerts.message({ msg: '', pos: '', theme: '' });</pre>
-                <dl class="dl-horizontal padding-15 round border">
+                <dl class="dl-horizontal padding-15 round ui-border">
                     <dt>msg</dt>
                     <dd class="margin-15-b">Required. Your alert message.</dd>
 

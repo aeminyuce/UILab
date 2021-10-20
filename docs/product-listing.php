@@ -42,7 +42,7 @@
 
                     <div class="card round shadow-lg ui-theme-sub">
 
-                        <div class="padding-15 md-align-c border-b">
+                        <div class="padding-15 md-align-c ui-border-b">
                             <h5 class="margin-10-b font-color-black-50">COLORS</h5>
                             <label class="custom">
                                 <span class="check-custom no-border circle ui-ease-form ui-product-select-red">
@@ -91,7 +91,7 @@
                             </label>
                         </div>
 
-                        <div class="padding-15 border-b">
+                        <div class="padding-15 ui-border-b">
 
                             <h5 class="margin-10-b font-color-black-50">PROMOTIONS</h5>
                             <label class="custom block">
@@ -114,7 +114,7 @@
 
                         </div>
 
-                        <div class="padding-15 border-b">
+                        <div class="padding-15 ui-border-b">
 
                             <h5 class="margin-10-b font-color-black-50">CONNECTIONS</h5>
                             <label class="custom block">
@@ -167,7 +167,7 @@
 
                     <div class="card margin-10-b round shadow-lg">
                         <div class="row row-gap-lg sm-fluid">
-                            <div class="col-12 border-b">
+                            <div class="col-12 ui-border-b">
                                 <h4>
                                     <svg class="icon icon-lg"><use href="#history"/></svg>
                                     <span class="inline-block">
@@ -283,9 +283,9 @@
                                     <svg class="icon icon-sm margin-5-r"><use href="#truck"/></svg> Fast Delivery
                                 </span>
                                 <ul class="list-inline margin-15-v right">
-                                    <li class="circle padding-5 border-dual ui-product-red"></li>
-                                    <li class="circle padding-5 border-dual ui-product-pink"></li>
-                                    <li class="circle padding-5 border-dual ui-product-blue"></li>
+                                    <li class="circle padding-5 ui-border-dual ui-product-red"></li>
+                                    <li class="circle padding-5 ui-border-dual ui-product-pink"></li>
+                                    <li class="circle padding-5 ui-border-dual ui-product-blue"></li>
                                 </ul>
                                 <span class="left padding-15-v icons-xs">
                                     <svg class="icon font-color-yellow"><use href="#star-fill"/></svg>
@@ -319,8 +319,8 @@
                                     <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
                                 <ul class="list-inline margin-15-v right">
-                                    <li class="circle padding-5 border-dual ui-product-pink"></li>
-                                    <li class="circle padding-5 border-dual ui-product-white"></li>
+                                    <li class="circle padding-5 ui-border-dual ui-product-pink"></li>
+                                    <li class="circle padding-5 ui-border-dual ui-product-white"></li>
                                 </ul>
                                 <span class="left padding-15-v icons-xs">
                                     <svg class="icon font-color-yellow"><use href="#star-fill"/></svg>
@@ -354,8 +354,8 @@
                                     <svg class="icon icon-sm margin-5-r"><use href="#truck"/></svg> Fast Delivery
                                 </span>
                                 <ul class="list-inline margin-15-v right">
-                                    <li class="circle padding-5 border-dual ui-product-blue"></li>
-                                    <li class="circle padding-5 border-dual ui-product-black"></li>
+                                    <li class="circle padding-5 ui-border-dual ui-product-blue"></li>
+                                    <li class="circle padding-5 ui-border-dual ui-product-black"></li>
                                 </ul>
                                 <span class="left padding-15-v icons-xs">
                                     <svg class="icon font-color-yellow"><use href="#star-fill"/></svg>
@@ -386,7 +386,7 @@
                                     <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
                                 <ul class="list-inline margin-15-v right">
-                                    <li class="circle padding-5 border-dual ui-product-white"></li>
+                                    <li class="circle padding-5 ui-border-dual ui-product-white"></li>
                                 </ul>
                                 <span class="left padding-15-v icons-xs">
                                     <svg class="icon font-color-yellow"><use href="#star-fill"/></svg>
@@ -417,7 +417,7 @@
                                     <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
                                 <ul class="list-inline margin-15-v right">
-                                    <li class="circle padding-5 border-dual ui-product-black"></li>
+                                    <li class="circle padding-5 ui-border-dual ui-product-black"></li>
                                 </ul>
                                 <span class="left padding-15-v icons-xs">
                                     <svg class="icon font-color-yellow"><use href="#star-fill"/></svg>
@@ -451,8 +451,8 @@
                                     <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
                                 <ul class="list-inline margin-15-v right">
-                                    <li class="circle padding-5 border-dual ui-product-pink"></li>
-                                    <li class="circle padding-5 border-dual ui-product-white"></li>
+                                    <li class="circle padding-5 ui-border-dual ui-product-pink"></li>
+                                    <li class="circle padding-5 ui-border-dual ui-product-white"></li>
                                 </ul>
                                 <span class="left padding-15-v icons-xs">
                                     <svg class="icon font-color-yellow"><use href="#star-fill"/></svg>
@@ -480,7 +480,7 @@
 
 <!-- mobile menu -->
 <div class="mobile-menu show-r ui-ease-layout ui-ease-in-out">
-    <div class="mobile-menu-title padding-20-v x-large border-b">
+    <div class="mobile-menu-title padding-20-v x-large ui-border-b">
         <button class="btn btn-square btn-lg btn-ghost circle ui-ease-btn close-mobile-menu">
             <svg class="icon no-opacity"><use href="#remove"/></svg>
         </button>

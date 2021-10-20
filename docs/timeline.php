@@ -27,26 +27,26 @@
                         <span class="img-photo-sm circle ui-fill-dark-100">
                             <svg class="icon"><use href="#user"/></svg>
                         </span>
-                        <span class="card border-dual round ui-stroke shadow-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span>
+                        <span class="card ui-border-dual round ui-stroke shadow-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span>
                     </li>
                     <li>
                         <span class="img-photo-sm circle ui-fill-dark-100">
                             <svg class="icon"><use href="#heart"/></svg>
                         </span>
-                        <span class="card border-dual round ui-stroke shadow-lg">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span>
+                        <span class="card ui-border-dual round ui-stroke shadow-lg">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span>
                     </li>
                     <li>
                         <span class="img-photo-sm circle ui-fill-dark-100">
                             <svg class="icon"><use href="#flag"/></svg>
                         </span>
-                        <span class="card border-dual round ui-stroke shadow-lg">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span>
+                        <span class="card ui-border-dual round ui-stroke shadow-lg">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span>
                     </li>
                 </ul>
 
                 <h3 class="align-c">2016</h3>
                 <ul class="timeline large">
-                    <li><span class="card border-dual border-dark round">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span></li>
-                    <li><span class="card border-dual border-dark round">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span></li>
+                    <li><span class="card ui-border-dual ui-border-dark round">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span></li>
+                    <li><span class="card ui-border-dual ui-border-dark round">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span></li>
                 </ul>
 
                 <h3 class="align-c">2015</h3>
@@ -57,8 +57,8 @@
 
                 <h3 class="align-c">2014</h3>
                 <ul class="timeline large ui-theme-gray">
-                    <li><span class="card border-dual round ui-fill-light-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span></li>
-                    <li><span class="card border-dual round ui-fill-light-300">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span></li>
+                    <li><span class="card ui-border-dual round ui-fill-light-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span></li>
+                    <li><span class="card ui-border-dual round ui-fill-light-300">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span></li>
                 </ul>
 
                 <h3 class="align-c">2013</h3>

@@ -73,7 +73,7 @@
                             <span class="sp-20"></span>
                             The development of 3 luxury villas is planned in the residential neighborhood.
                         </div>
-                        <div class="padding-30 border-t">
+                        <div class="padding-30 ui-border-t">
                             <h4 class="margin-15-b">Power Saving Statistics</h4>
                             <svg class="icon icon-xl left margin-5-t margin-10-r"><use href="#bolt"/></svg>
                             <ul class="list-unstyled padding-2-t">
@@ -188,7 +188,7 @@
                         <svg class="icon font-color-black-muted"><use href="#marker"/></svg>
                         <span class="font-color-black-muted">Location: <b>New York</b></span>
                     </div>
-                    <div class="padding-10 border-t">
+                    <div class="padding-10 ui-border-t">
                         Real Estate ID: <b>RE-616</b>
                     </div>
                 </div>
@@ -213,7 +213,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="padding-20-t padding-30-h border-t">
+                    <div class="padding-20-t padding-30-h ui-border-t">
                         <div class="largest font-bold">$640.000</div>
                         <span class="font-color-black-muted">LATEST OFFER</span>
                     </div>

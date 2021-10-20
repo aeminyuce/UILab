@@ -21,9 +21,9 @@
             <svg class="icon icon-sm margin-5-r"><use href="#truck"/></svg> Fast Delivery
         </span>
         <ul class="list-inline margin-15-v right">
-            <li class="circle padding-5 border-dual ui-product-red"></li>
-            <li class="circle padding-5 border-dual ui-product-pink"></li>
-            <li class="circle padding-5 border-dual ui-product-blue"></li>
+            <li class="circle padding-5 ui-border-dual ui-product-red"></li>
+            <li class="circle padding-5 ui-border-dual ui-product-pink"></li>
+            <li class="circle padding-5 ui-border-dual ui-product-blue"></li>
         </ul>
         <span class="left padding-15-v icons-xs">
             <svg class="icon font-color-yellow"><use href="#star-fill"/></svg>
@@ -57,8 +57,8 @@
             <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
         </span>
         <ul class="list-inline margin-15-v right">
-            <li class="circle padding-5 border-dual ui-product-pink"></li>
-            <li class="circle padding-5 border-dual ui-product-white"></li>
+            <li class="circle padding-5 ui-border-dual ui-product-pink"></li>
+            <li class="circle padding-5 ui-border-dual ui-product-white"></li>
         </ul>
         <span class="left padding-15-v icons-xs">
             <svg class="icon font-color-yellow"><use href="#star-fill"/></svg>
@@ -92,8 +92,8 @@
             <svg class="icon icon-sm margin-5-r"><use href="#truck"/></svg> Fast Delivery
         </span>
         <ul class="list-inline margin-15-v right">
-            <li class="circle padding-5 border-dual ui-product-blue"></li>
-            <li class="circle padding-5 border-dual ui-product-black"></li>
+            <li class="circle padding-5 ui-border-dual ui-product-blue"></li>
+            <li class="circle padding-5 ui-border-dual ui-product-black"></li>
         </ul>
         <span class="left padding-15-v icons-xs">
             <svg class="icon font-color-yellow"><use href="#star-fill"/></svg>
@@ -124,7 +124,7 @@
             <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
         </span>
         <ul class="list-inline margin-15-v right">
-            <li class="circle padding-5 border-dual ui-product-white"></li>
+            <li class="circle padding-5 ui-border-dual ui-product-white"></li>
         </ul>
         <span class="left padding-15-v icons-xs">
             <svg class="icon font-color-yellow"><use href="#star-fill"/></svg>
@@ -155,7 +155,7 @@
             <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
         </span>
         <ul class="list-inline margin-15-v right">
-            <li class="circle padding-5 border-dual ui-product-black"></li>
+            <li class="circle padding-5 ui-border-dual ui-product-black"></li>
         </ul>
         <span class="left padding-15-v icons-xs">
             <svg class="icon font-color-yellow"><use href="#star-fill"/></svg>
@@ -189,8 +189,8 @@
             <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
         </span>
         <ul class="list-inline margin-15-v right">
-            <li class="circle padding-5 border-dual ui-product-pink"></li>
-            <li class="circle padding-5 border-dual ui-product-white"></li>
+            <li class="circle padding-5 ui-border-dual ui-product-pink"></li>
+            <li class="circle padding-5 ui-border-dual ui-product-white"></li>
         </ul>
         <span class="left padding-15-v icons-xs">
             <svg class="icon font-color-yellow"><use href="#star-fill"/></svg>

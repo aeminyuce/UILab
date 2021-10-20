@@ -169,10 +169,10 @@ html:not(.ui-no-effects) {
     }
 }
 
-.no-border {
+.ui-no-border {
     &.text input,&.select select { line-height: (@btn-default - @form-padding * 2); height: @btn-default; }
 }
-.border-dual {
+.ui-border-dual {
     &.text input,&.select select { line-height: (@btn-default - @form-padding * 2 - @border-dual * 2); height: (@btn-default - @border-dual * 2); }
 }
 
@@ -218,10 +218,10 @@ html:not(.ui-no-effects) {
 .toggle-textarea {
     &:not(.form-focus) {
         textarea { line-height: (@btn-default - @form-padding * 2); height: (@btn-default - 2); }
-        &.border-dual {
+        &.ui-border-dual {
             textarea { line-height: (@btn-default - 2 * @border-dual - @form-padding * 2); height: (@btn-default - 2 * @border-dual); }
         }
-        &.no-border {
+        &.ui-no-border {
             textarea { height: @btn-default; }
         }
     }
@@ -248,11 +248,11 @@ html:not(.ui-no-effects) {
         .btn:not([class*="ui-fill-"]):not(.btn-passive) { ._bg-var(btn-hover-bg); }
     }
 
-    &.no-border {
+    &.ui-no-border {
         .btn { line-height: (@btn-default - @file-btn-padding * 2); }
         & > i { line-height: @btn-default; }
     }
-    &.border-dual {
+    &.ui-border-dual {
         .btn { line-height: (@btn-default - (@file-btn-padding * 2 + @border-dual * 2)); }
         & > i { line-height: (@btn-default - 4); }
     }
@@ -498,7 +498,7 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
     &-focus {
         [class*="col-"] {
             & > * { ._border-color-var(form-focus-border); }
-            & > .form-light,& > .border-light { border-color: @form-focus-border-dark !important; }
+            & > .form-light,& > .ui-border-light { border-color: @form-focus-border-dark !important; }
         }
     }
 
@@ -533,7 +533,7 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
     }
 
     &.error {
-        .text,.select,.border,[class*="border-"] { border-color: @red !important; }
+        .text,.select,.ui-border,[class*="border-"] { border-color: @red !important; }
         .text,.select { background-color: @form-error-bg; }
     }
 }
@@ -545,10 +545,10 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
         input {
             font-size: @large; line-height: (@btn-lg - 2 * @form-padding); height: @btn-lg; padding-right: (@form-padding * 2); padding-left: (@form-padding * 2);
         }
-        &.no-border {
+        &.ui-no-border {
             input { line-height: (@btn-lg - 2 * @form-padding - 2); height: @btn-lg; }
         }
-        &.border-dual {
+        &.ui-border-dual {
             input { line-height: (@btn-lg - 2 * @form-padding - @border-dual * 2); height: (@btn-lg - @border-dual * 2); }
         }
     }
@@ -563,11 +563,11 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
 
             &:extend(.form-lg .text input);
         }
-        &.no-border {
-            select { &:extend(.form-lg .text.no-border input); }
+        &.ui-no-border {
+            select { &:extend(.form-lg .text.ui-no-border input); }
         }
-        &.border-dual {
-            select { &:extend(.form-lg .text.border-dual input); }
+        &.ui-border-dual {
+            select { &:extend(.form-lg .text.ui-border-dual input); }
         }
         .icon { ._icon(@icon-default-size); right: (@form-padding * 2); }
     }
@@ -607,11 +607,11 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
             .icon { ._icon((@btn-lg-icon - 2)); }
         }
 
-        &.no-border {
+        &.ui-no-border {
             .btn { line-height: (@btn-lg - @file-btn-padding-lg * 2); }
             & > i { line-height: @btn-lg; }
         }
-        &.border-dual {
+        &.ui-border-dual {
             .btn { line-height: (@btn-lg - (@file-btn-padding-lg * 2 + @border-dual * 2)); }
             & > i { line-height: (@btn-lg - 4); }
         }

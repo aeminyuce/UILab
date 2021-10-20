@@ -13,7 +13,7 @@
                     <p class="highlight font-color-black-muted large">Sign in to create, discover and connect with the global community.</p>
 
                     <label class="form-label font-color-black-50">User Name</label>
-                    <div class="text text-icon round border-dual ui-ease-form">
+                    <div class="text text-icon round ui-border-dual ui-ease-form">
                         <svg class="icon"><use href="#user"/></svg>
                         <input class="required" type="text" placeholder="Enter user name" minlength="3" autocomplete="username">
                     </div>
@@ -22,7 +22,7 @@
                     <span class="sp-15"></span>
 
                     <label class="form-label font-color-black-50">Password</label>
-                    <div class="text text-icon round border-dual ui-ease-form">
+                    <div class="text text-icon round ui-border-dual ui-ease-form">
                         <button type="button" title="Toggle Password" class="show-pass">
                             <svg class="icon"><use href="#eye-fill"/></svg>
                         </button>
@@ -33,7 +33,7 @@
                     <span class="sp-15"></span>
 
                     <label class="custom">
-                        <span class="check-custom round border-dual ui-ease-form">
+                        <span class="check-custom round ui-border-dual ui-ease-form">
                             <input type="checkbox" checked>
                             <i class="state"></i>
                         </span>
@@ -58,7 +58,7 @@
                     <p class="highlight font-color-black-muted large">Please enter your email address. You will receive a link to create a new password via email.</p>
 
                     <label class="form-label font-color-black-50">Your email</label>
-                    <div class="text text-icon round border-dual ui-ease-form">
+                    <div class="text text-icon round ui-border-dual ui-ease-form">
                         <svg class="icon"><use href="#at"/></svg>
                         <input class="required" type="email" placeholder="Enter email" minlength="3">
                     </div>

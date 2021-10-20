@@ -71,7 +71,7 @@
                     <div class="col-4">
 
                         <div class="card full-h round shadow">
-                            <div class="card-side padding-30 border-b">
+                            <div class="card-side padding-30 ui-border-b">
                                 <div class="margin-30-v">
                                     <svg class="icon icon-72 ui-theme-sub ui-color"><use href="#box"/></svg>
                                 </div>
@@ -109,7 +109,7 @@
                     <div class="col-4 no-padding-v">
 
                         <div class="card full-h round shadow-lg ui-theme-sub ui-fill-dark-100">
-                            <div class="card-side padding-30 border-b border-light">
+                            <div class="card-side padding-30 ui-border-b ui-border-light">
                                 <div class="margin-30-v">
                                     <svg class="icon icon-72"><use href="#gift"/></svg>
                                 </div>
@@ -148,7 +148,7 @@
                     <div class="col-4">
 
                         <div class="card full-h round shadow">
-                            <div class="card-side padding-30 border-b">
+                            <div class="card-side padding-30 ui-border-b">
                                 <div class="margin-30-v">
                                     <svg class="icon icon-72 ui-theme-sub ui-color"><use href="#wallet"/></svg>
                                 </div>

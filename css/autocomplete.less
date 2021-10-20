@@ -31,10 +31,10 @@
         ul { opacity: 0; }
     }
 
-    &:not(.ui-menu-t):not(.border-dual):not(.no-border) {
+    &:not(.ui-menu-t):not(.ui-border-dual):not(.ui-no-border) {
         ul { margin-top: (@autocomplete-menu-space + 1); }
     }
-    &.border-dual,&.no-border {
+    &.ui-border-dual,&.ui-no-border {
         &:not(.ui-menu-t) {
             ul { margin-top: (@border-dual + 1); }
         }
@@ -42,13 +42,13 @@
 
     &.ui-menu-t {
         ul { bottom: 100%; }
-        &:not(.border-dual):not(.no-border) {
+        &:not(.ui-border-dual):not(.ui-no-border) {
             ul { margin-bottom: (@autocomplete-menu-space + 1); }
         }
-        &.border-dual {
+        &.ui-border-dual {
             ul { margin-bottom: (@autocomplete-menu-space + @border-dual); }
         }
-        &.no-border {
+        &.ui-no-border {
             ul { margin-bottom: @autocomplete-menu-space; }
         }
     }

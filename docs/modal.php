@@ -7,7 +7,7 @@
                 <h4>Open Modal</h4>
                 <pre class="round">ui.modal.open({ source, size, type, closable, callback });</pre>
 
-                <dl class="dl-horizontal padding-15 round border">
+                <dl class="dl-horizontal padding-15 round ui-border">
                     <dt>source</dt>
                     <dd class="margin-15-b">
                         Required. Set the source of modal.<br>
@@ -176,7 +176,7 @@
                 <h4>Close Modal</h4>
                 <pre class="round">ui.modal.close(callback);</pre>
 
-                <dl class="dl-horizontal padding-15 round border">
+                <dl class="dl-horizontal padding-15 round ui-border">
                     <dt>callback</dt>
                     <dd>
                         Optional. Set a callback function after modal closes.<br>
@@ -216,8 +216,8 @@
     </div>
     <div class="modal-footer">
         <div class="modal-buttons ui-ease-1st-btn">
-            <button type="button" class="btn btn-ghost border-dual circle" onclick="ui.modal.close(function () { alert('Modal closed!'); });">Callback</button>
-            <button type="button" class="btn btn-ghost border-dual circle" onclick="ui.modal.close();">Cancel</button>
+            <button type="button" class="btn btn-ghost ui-border-dual circle" onclick="ui.modal.close(function () { alert('Modal closed!'); });">Callback</button>
+            <button type="button" class="btn btn-ghost ui-border-dual circle" onclick="ui.modal.close();">Cancel</button>
             <button type="submit" class="btn circle ui-theme-green ui-fill-dark-100" onclick="ui.modal.close();">Accept</button>
         </div>
     </div>
