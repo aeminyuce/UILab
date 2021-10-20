@@ -18,8 +18,8 @@
                                 </span>
                             </div>
 
-                            <button type="submit" name="send" class="btn btn-square round ui-theme-base ui-fill-dark-100 ui-ease-btn">
-                                <svg class="icon"><use href="#save"/></svg>
+                            <button title="Send Images" type="submit" name="send" class="btn btn-square round ui-theme-base ui-fill-dark-100 ui-ease-btn">
+                                <svg class="icon"><use href="#send"/></svg>
                             </button>
 
                         </div>
