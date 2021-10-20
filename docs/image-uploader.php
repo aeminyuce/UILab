@@ -1,7 +1,7 @@
 <main class="container no-gutter">
     <div class="fixed padding-30-v">
 
-        <div class="image-uploader round shadow-lg ui-ease-image-uploader">
+        <div class="ui-image-uploader round shadow-lg ui-ease-image-uploader">
             <form action="xhr/image-uploader.php" method="post" enctype="multipart/form-data"> <!-- error testing: image-uploader-error.php-->
 
                 <div class="padding-10-h border-b border-light">
@@ -26,7 +26,7 @@
                     </div>
                 </div>
 
-                <div class="uploader-list">
+                <div class="ui-uploader-list">
                     <svg class="icon icon-xxl"><use href="#images-plus"/></svg>
                     <ul>
                         <li data-ui-img="img/house_01.jpg" data-ui-id="1" data-ui-tag="Exterior"></li>

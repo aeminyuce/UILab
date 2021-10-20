@@ -6,23 +6,23 @@
 ui.imageUploader = {
 
     // targets
-    target: 'image-uploader',
+    target: 'ui-image-uploader',
 
-    targetImages: 'img',
-    targetNames: 'name',
-    targetInfos: 'info',
-    targetTags: 'tag',
+    targetImages: 'ui-img',
+    targetNames: 'ui-name',
+    targetInfos: 'ui-info',
+    targetTags: 'ui-tag',
 
     // main classnames
-    nameList: 'uploader-list',
-    nameDrop: 'drop-highlight',
+    nameList: 'ui-uploader-list',
+    nameDrop: 'ui-drop-highlight',
 
     // helper classnames
-    nameOpen: 'open',
-    nameOpenEase: 'open-ease',
+    nameOpen: 'ui-open',
+    nameOpenEase: 'ui-open-ease',
 
-    nameLoading: 'loading',
-    nameUploading: 'uploading',
+    nameLoading: 'ui-loading',
+    nameUploading: 'ui-uploading',
 
     // tags
     tagList: 'li',

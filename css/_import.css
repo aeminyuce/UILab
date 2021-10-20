@@ -8309,79 +8309,81 @@ button.dialog-custom:focus {
   transition-property: background-color;
   transition-duration: 0.15s;
 }
-.ui-ease-image-uploader .uploader-list {
+.ui-ease-image-uploader .ui-uploader-list {
   transition-property: margin;
   transition-duration: 0.15s;
 }
-.ui-ease-image-uploader .uploader-list > .icon {
+.ui-ease-image-uploader .ui-uploader-list > .icon {
   transition-property: opacity;
   transition-duration: 0.15s;
 }
-.ui-ease-image-uploader .uploader-list li {
+.ui-ease-image-uploader .ui-uploader-list li {
   transition-property: opacity;
   transition-duration: 0.3s;
 }
-.ui-ease-image-uploader .uploader-list li img {
-  transition-property: transform, box-shadow;
-  transition-duration: 0.15s;
-}
-.image-uploader {
+.ui-image-uploader {
   background-color: hsl(0, 0%, 100%);
   background-color: var(--ui-card-bg);
   overflow: hidden;
   position: relative;
 }
-.image-uploader.loading .file .btn,
-.image-uploader.uploading .file .btn,
-.image-uploader.loading [type="submit"],
-.image-uploader.uploading [type="submit"] {
+.ui-image-uploader.ui-loading .file .btn,
+.ui-image-uploader.ui-uploading .file .btn,
+.ui-image-uploader.ui-loading [type="submit"],
+.ui-image-uploader.ui-uploading [type="submit"] {
   background-image: linear-gradient(45deg, transparent 25%, hsla(0, 0%, 100%, 0.25) 25%, hsla(0, 0%, 100%, 0.25) 50%, transparent 50%, transparent 75%, hsla(0, 0%, 100%, 0.25) 75%);
   background-size: 20px 20px;
   animation: ui-uploader-loader 1s linear infinite;
 }
-.image-uploader.drop-highlight {
+.ui-image-uploader.ui-drop-highlight {
   background-color: hsl(0, 0%, 93%);
   background-color: var(--ui-image-uploader-drop-bg);
 }
-.image-uploader.drop-highlight .uploader-list > .icon {
+.ui-image-uploader.ui-drop-highlight .ui-uploader-list > .icon {
   display: block;
 }
-.image-uploader.drop-highlight .uploader-list li {
+.ui-image-uploader.ui-drop-highlight .ui-uploader-list li {
   opacity: 0.15;
 }
-.image-uploader .uploader-list {
+.ui-image-uploader .ui-uploader-list {
   min-height: 220px;
   position: relative;
 }
-.image-uploader .uploader-list > .icon {
+.ui-image-uploader .ui-uploader-list > .icon {
   position: absolute;
   top: 50%;
   left: 50%;
   z-index: 1;
   transform: translate(-50%, -50%);
 }
-.image-uploader .uploader-list.open > .icon {
+.ui-image-uploader .ui-uploader-list.ui-open > .icon {
   display: none;
 }
-.image-uploader .uploader-list ul {
+.ui-image-uploader .ui-uploader-list ul {
   list-style: none;
   padding: 5px;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
 }
-.image-uploader .uploader-list ul li {
+.ui-image-uploader .ui-uploader-list ul li {
   padding: 5px;
 }
-.image-uploader .uploader-list ul li.open-ease {
+.ui-image-uploader .ui-uploader-list ul li.ui-open-ease {
   opacity: 0;
 }
-.image-uploader .uploader-list ul li .img {
+.ui-image-uploader .ui-uploader-list ul li .ui-img {
   display: block;
   clear: both;
   position: relative;
 }
-.image-uploader .uploader-list ul li .img img {
+.ui-image-uploader .ui-uploader-list ul li .ui-img:not(:first-child) {
+  margin-top: 10px;
+}
+.ui-image-uploader .ui-uploader-list ul li .ui-img:not(:last-child) {
+  margin-bottom: 10px;
+}
+.ui-image-uploader .ui-uploader-list ul li .ui-img img {
   width: auto;
   max-width: 100%;
   height: auto;
@@ -8392,18 +8394,7 @@ button.dialog-custom:focus {
   box-shadow: 0 1px 6px hsla(0, 0%, 0%, 0.25);
   transform: translate(-50%, -50%);
 }
-.ui-desktop .image-uploader .uploader-list ul li .img img:hover {
-  transform: translate(-50%, -50%) scale(1.05);
-  box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.2);
-  cursor: pointer;
-}
-.image-uploader .uploader-list ul li .img:not(:first-child) {
-  margin-top: 10px;
-}
-.image-uploader .uploader-list ul li .img:not(:last-child) {
-  margin-bottom: 10px;
-}
-.image-uploader .uploader-list ul li .name {
+.ui-image-uploader .ui-uploader-list ul li .ui-name {
   white-space: nowrap;
   text-overflow: ellipsis;
   line-height: 22px;
@@ -8411,16 +8402,16 @@ button.dialog-custom:focus {
   overflow: hidden;
   display: block;
 }
-.image-uploader .uploader-list ul li .info,
-.image-uploader .uploader-list ul li .tag {
+.ui-image-uploader .ui-uploader-list ul li .ui-info,
+.ui-image-uploader .ui-uploader-list ul li .ui-tag {
   vertical-align: middle;
   display: inline-block;
 }
-.image-uploader .uploader-list ul li .info {
+.ui-image-uploader .ui-uploader-list ul li .ui-info {
   color: hsl(0, 0%, 49%);
   padding: 1px 6px 1px 0;
 }
-.image-uploader .uploader-list ul li .tag {
+.ui-image-uploader .ui-uploader-list ul li .ui-tag {
   color: hsla(0, 0%, 0%, 0.5);
   color: var(--ui-image-uploader-list-tag-color);
   font-size: 13px;
@@ -8430,8 +8421,8 @@ button.dialog-custom:focus {
   background-color: var(--ui-image-uploader-list-tag-bg);
   border-radius: 20px;
 }
-.image-uploader .uploader-list:not(.open),
-.image-uploader.drop-highlight .uploader-list {
+.ui-image-uploader .ui-uploader-list:not(.ui-open),
+.ui-image-uploader.ui-drop-highlight .ui-uploader-list {
   background-color: hsla(0, 0%, 100%, 0.45);
   background-color: var(--ui-image-uploader-list-bg);
   margin: 10px;
@@ -8439,36 +8430,36 @@ button.dialog-custom:focus {
   border: dashed 2px var(--ui-image-uploader-list-border);
   border-radius: 6px;
 }
-.image-uploader .uploader-list:not(.open) li {
+.ui-image-uploader .ui-uploader-list:not(.ui-open) li {
   display: none;
 }
 @media (min-width: 960px) {
-  .uploader-list li {
+  .ui-uploader-list li {
     width: 20%;
   }
 }
 @media (max-width: 959px) {
-  .uploader-list li {
+  .ui-uploader-list li {
     width: 25%;
   }
 }
 @media (max-width: 767px) {
-  .uploader-list li {
+  .ui-uploader-list li {
     width: 33.333332%;
   }
 }
 @media (min-width: 481px) {
-  .uploader-list li .img {
+  .ui-uploader-list li .ui-img {
     min-height: 164px;
   }
 }
 @media (max-width: 480px) {
-  .uploader-list li .img {
+  .ui-uploader-list li .ui-img {
     min-height: 98px;
   }
 }
 @media (max-width: 380px) {
-  .uploader-list li {
+  .ui-uploader-list li {
     width: 50%;
   }
 }
