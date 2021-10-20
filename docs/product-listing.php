@@ -224,7 +224,7 @@
                             <span class="large">Found <b>47</b> and displaying <b>9</b> products.</span>
                         </div>
                         <div class="col-6 align-r sm-no-padding-t">
-                            <div class="select round form-inline no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
+                            <div class="select align-l round form-inline no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
                                 <svg class="icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="1" checked>Sort by</option>
@@ -233,7 +233,7 @@
                                     <option value="4">Price (High to Low)</option>
                                 </select>
                             </div>
-                            <div class="select round form-inline no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
+                            <div class="select align-l round form-inline no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
                                 <svg class="icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="12" checked>Show 9</option>
