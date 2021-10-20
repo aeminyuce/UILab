@@ -54,7 +54,7 @@
                 <!-- nav -->
                 <nav class="form-lg margin-25-v icons-no-opacity ui-theme-base hidden-md">
                     <ul class="list-unstyled list-spacer-20 align-l icons-margin-10-r block-2nd ui-ease-2nd-button add-mobile-menu-l">
-                        <li><
+                        <li>
                             <a class="btn btn-ghost border-r border-lg ui-stroke" href="#">
                                 <svg class="icon"><use href="#chart-pie"/></svg>
                                 Dashboard
