@@ -3,16 +3,16 @@
 
 @sticky-header-z-index:                 89;
 
-.sticky-header {
-    .hidden-sticky { display: none; }
+.ui-sticky-header {
+    .ui-hidden-sticky { display: none; }
 }
 html {
-    &:not(.sticky-header) {
-        .visible-sticky { &:extend(.sticky-header .hidden-sticky); }
+    &:not(.ui-sticky-header) {
+        .ui-visible-sticky { &:extend(.ui-sticky-header .ui-hidden-sticky); }
     }
 }
 
-header.sticky {
+header.ui-sticky {
     position: fixed;
 
     &,&-static { top: 0; right: 0; left: 0; z-index: @sticky-header-z-index; }

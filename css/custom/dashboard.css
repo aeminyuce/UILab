@@ -153,7 +153,7 @@ header {
   border: 0;
   cursor: pointer;
 }
-.sticky-header .sidebar {
+.ui-sticky-header .sidebar {
   top: -62px;
 }
 .sidebar .tabs {
@@ -168,7 +168,7 @@ header {
   }
 }
 @media (min-width: 1200px) {
-  header.sticky.sidebar-opened {
+  header.ui-sticky.sidebar-opened {
     width: calc(100% - 250px);
     left: 250px;
   }

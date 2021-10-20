@@ -6755,21 +6755,21 @@ html:not(.ui-ie) .steps-bar li {
   opacity: 0;
 }
 /* sticky header */
-.sticky-header .hidden-sticky,
-html:not(.sticky-header) .visible-sticky {
+.ui-sticky-header .ui-hidden-sticky,
+html:not(.ui-sticky-header) .ui-visible-sticky {
   display: none;
 }
-header.sticky {
+header.ui-sticky {
   position: fixed;
 }
-header.sticky,
-header.sticky-static {
+header.ui-sticky,
+header.ui-sticky-static {
   top: 0;
   right: 0;
   left: 0;
   z-index: 89;
 }
-header.sticky-static {
+header.ui-sticky-static {
   position: absolute;
 }
 /* stripes */
@@ -9032,7 +9032,8 @@ button.dialog-custom:focus {
   display: inline-block;
   position: relative;
 }
-.ui-weather .ui-deg:after {
+.ui-weather .ui-deg:after,
+.ui-weather .ui-days li span:after {
   content: "";
   width: 6px;
   height: 6px;

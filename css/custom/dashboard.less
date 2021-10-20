@@ -37,7 +37,7 @@ header { ._bg-var(header-bg); }
 
 .sidebar {
     &-hide { background-color: @no-color; border: 0; cursor: pointer; }
-    .sticky-header & { top: -@header-height; }
+    .ui-sticky-header & { top: -@header-height; }
 
     .tabs { height: calc(100% - @header-height); }
 }
@@ -49,7 +49,7 @@ header { ._bg-var(header-bg); }
 }
 @media (@lg-start) {
     header {
-        &.sticky {
+        &.ui-sticky {
             &.sidebar-opened { width: calc(100% - 250px); left: 250px; }
         }
     }

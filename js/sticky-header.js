@@ -9,15 +9,15 @@ ui.stickyHeader = {
     target: 'header',
 
     // main classnames
-    nameHeader: 'sticky-header',
-    nameStatic: 'sticky-static',
+    nameHeader: 'ui-sticky-header',
+    nameStatic: 'ui-sticky-static',
 
-    nameSticky: 'sticky',
-    nameXS: 'sticky-xs',
-    nameSM: 'sticky-sm',
-    nameMD: 'sticky-md',
-    nameLG: 'sticky-lg',
-    nameXL: 'sticky-xl',
+    nameSticky: 'ui-sticky',
+    nameXS: 'ui-sticky-xs',
+    nameSM: 'ui-sticky-sm',
+    nameMD: 'ui-sticky-md',
+    nameLG: 'ui-sticky-lg',
+    nameXL: 'ui-sticky-xl',
 
     // data attributes
     dataClasses: 'data-ui-classes'

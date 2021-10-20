@@ -79,7 +79,7 @@
 
                 <div class="padding-30 no-padding-b md-no-padding">
 
-                    <header class="row no-row-gap-t sticky-md icons-no-opacity form-lg" data-ui-classes="shadow-lg">
+                    <header class="row no-row-gap-t ui-sticky-md icons-no-opacity form-lg" data-ui-classes="shadow-lg">
                         <div class="col-6 hidden-md ui-ease-1st-form">
                             <div class="text text-icon-both margin-15-b circle no-border ui-theme-gray ui-fill-light-300 has-clear">
                                 <svg class="icon text-icon-l"><use href="#search"/></svg>

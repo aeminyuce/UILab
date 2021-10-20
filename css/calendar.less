@@ -79,13 +79,11 @@
     --ui-calendar-today-btn-hover-bg: @calendar-today-btn-hover-bg-dark;
 }
 
-.ui {
-    &-ease-calendar {
-        transition-property: opacity;
+.ui-ease-calendar {
+    transition-property: opacity;
 
-        .calendar-details,thead,tbody { transition-property: transform, opacity; transition-duration: .25s; transition-timing-function: ease-in-out; }
-        button,a,.calendar-details li { transition-property: background-color, opacity; transition-duration: @ease-default; }
-    }
+    .calendar-details,thead,tbody { transition-property: transform, opacity; transition-duration: .25s; transition-timing-function: ease-in-out; }
+    button,a,.calendar-details li { transition-property: background-color, opacity; transition-duration: @ease-default; }
 }
 
 .calendar {

@@ -1840,14 +1840,14 @@
 </main>
 
 <!-- mobile menu -->
-<div class="mobile-menu show-l ui-theme-panel ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
+<div class="mobile-menu show-l invert-bg ui-theme-panel ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
     <div class="mobile-menu-title no-padding border-b">
         <button class="btn btn-square btn-lg btn-ghost circle ui-ease-btn close-mobile-menu">
             <svg class="icon no-opacity"><use href="#remove"/></svg>
         </button>
         <img src="img/logo-udashboard.png" height="66" alt="">
     </div>
-    <div class="mobile-menu-content no-padding scroll-v"></div>
+    <div class="mobile-menu-content no-padding scroll-v scrollbar-faded"></div>
 </div>
 
 <!-- modal search -->

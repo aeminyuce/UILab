@@ -40,22 +40,20 @@
         dark-300: lighten(@color, 25%);
     }
 
-    .ui {
-        each(@theme-bg-vars, {
-            &-theme-@{name}.ui-fill-@{key},&-theme-@{name} .ui-fill-@{key}:not([class*="ui-theme-"]) { background-color: @value; }
-        });
+    each(@theme-bg-vars, {
+        .ui-theme-@{name}.ui-fill-@{key},.ui-theme-@{name} .ui-fill-@{key}:not([class*="ui-theme-"]) { background-color: @value; }
+    });
 
-        each(@theme-bg-hover-vars, {
-            &-theme-@{name}.ui-fill-@{key},&-theme-@{name} .ui-fill-@{key}:not([class*="ui-theme-"]) {
-                .ui-desktop & {
-                    &.hover:hover,&.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover { background-color: @value; }
-                }
-              }
-        });
+    each(@theme-bg-hover-vars, {
+        .ui-theme-@{name}.ui-fill-@{key},.ui-theme-@{name} .ui-fill-@{key}:not([class*="ui-theme-"]) {
+            .ui-desktop & {
+                &.hover:hover,&.btn:not(.btn-passive):not(.btn-ghost):not(.opacity):not(.opacity-more):hover { background-color: @value; }
+            }
+          }
+    });
 
-        &-theme-@{name}.ui-color,&-theme-@{name} .ui-color:not([class*="ui-theme-"]) { color: @color; }
-        &-theme-@{name}.ui-stroke,&-theme-@{name} .ui-stroke:not([class*="ui-theme-"]) { border-color: @color; }
-    }
+    .ui-theme-@{name}.ui-color,.ui-theme-@{name} .ui-color:not([class*="ui-theme-"]) { color: @color; }
+    .ui-theme-@{name}.ui-stroke,.ui-theme-@{name} .ui-stroke:not([class*="ui-theme-"]) { border-color: @color; }
 }
 
 & when (@referenceCompiling = false) { // not compiled when reference importing
