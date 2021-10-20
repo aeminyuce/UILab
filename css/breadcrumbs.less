@@ -13,7 +13,7 @@
     --ui-breadcrumbs-sep-color: @breadcrumbs-sep-color-dark;
 }
 
-.breadcrumbs {
+.ui-breadcrumbs {
     &:not(:last-child) { margin-bottom: (@highlight-space / 2); }
 
     & > ul {
@@ -24,7 +24,7 @@
         }
     }
 
-    &:not(.no-separated) {
+    &:not(.ui-no-separated) {
         & > ul {
             & > li {
                 &:not(:first-child):before { content: "\203A"; ._color-var(breadcrumbs-sep-color); font-size: @x-large; line-height: normal; margin: 0 (@breadcrumbs-sep-size + 3) 0 (@breadcrumbs-sep-size - 2); display: inline-block; }
@@ -34,7 +34,7 @@
 }
 
 @media (@xs-finish) {
-    .breadcrumbs {
+    .ui-breadcrumbs {
         text-align: center; margin-top: @breadcrumbs-sep-size;
 
         & > ul {
