@@ -6,17 +6,17 @@
 ui.autocomplete = {
 
     // targets
-    target: 'autocomplete',
+    target: 'ui-autocomplete',
 
     // main classnames
-    nameMenuTop: 'menu-t',
+    nameMenuTop: 'ui-menu-t',
 
     // helper classnames
-    nameOpen: 'open',
-    nameOpenEase: 'open-ease',
+    nameOpen: 'ui-open',
+    nameOpenEase: 'ui-open-ease',
 
-    nameLoaded: 'loaded',
-    nameSelected: 'selected',
+    nameLoaded: 'ui-loaded',
+    nameSelected: 'ui-selected',
 
     // outer classnames
     nameRound: 'round',

@@ -1,4 +1,4 @@
-// out: false
+// out: true
 /* autocomplete */ @import (reference) 'ui.less';
 
 @autocomplete-list-min-width:           200px;
@@ -18,29 +18,29 @@
     li { transition-property: background-color; transition-duration: @ease-default; }
 }
 
-.autocomplete {
+.ui-autocomplete {
     overflow: visible !important;
 
-    &.open { z-index: @autocomplete-open-z-index; }
+    &.ui-open { z-index: @autocomplete-open-z-index; }
 
     ul { ._color-var(black); list-style: none; min-width: @autocomplete-list-min-width; width: 100%; ._bg-var(highlighted); padding: 0; margin: 0; position: absolute; }
-    &:not(.open) {
+    &:not(.ui-open) {
         ul { display: none; }
     }
-    &:not(.open-ease) {
+    &:not(.ui-open-ease) {
         ul { opacity: 0; }
     }
 
-    &:not(.menu-t):not(.border-dual):not(.no-border) {
+    &:not(.ui-menu-t):not(.border-dual):not(.no-border) {
         ul { margin-top: (@autocomplete-menu-space + 1); }
     }
     &.border-dual,&.no-border {
-        &:not(.menu-t) {
+        &:not(.ui-menu-t) {
             ul { margin-top: (@border-dual + 1); }
         }
     }
 
-    &.menu-t {
+    &.ui-menu-t {
         ul { bottom: 100%; }
         &:not(.border-dual):not(.no-border) {
             ul { margin-bottom: (@autocomplete-menu-space + 1); }
@@ -56,6 +56,6 @@
     li {
         white-space: nowrap; text-overflow: ellipsis; text-align: left; line-height: @autocomplete-list-line-height; height: @autocomplete-list-height; padding: @autocomplete-list-padding; overflow: hidden;
 
-        .ui-desktop &:hover,&.selected { background-color: @autocomplete-list-hover-bg; cursor: default; }
+        .ui-desktop &:hover,&.ui-selected { background-color: @autocomplete-list-hover-bg; cursor: default; }
     }
 }

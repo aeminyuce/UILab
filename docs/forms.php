@@ -199,11 +199,11 @@
                     <div class="row padding-30-b">
 
                         <div class="col-12">
-                            <div data-ui-src="json/countries.json" data-ui-val="code" class="autocomplete text text-icon round border-dual ui-ease-form form-inline-xs">
+                            <div data-ui-src="json/countries.json" data-ui-val="code" class="ui-autocomplete text text-icon round border-dual ui-ease-form form-inline-xs">
                                 <svg class="icon"><use href="#keyboard-fill"/></svg>
                                 <input type="text" placeholder="Country Code" autocomplete="off">
                             </div>
-                            <div data-ui-src="json/countries.json" data-ui-val="name" class="autocomplete text text-icon round border-dual ui-ease-form form-inline-xs">
+                            <div data-ui-src="json/countries.json" data-ui-val="name" class="ui-autocomplete text text-icon round border-dual ui-ease-form form-inline-xs">
                                 <svg class="icon"><use href="#keyboard-fill"/></svg>
                                 <input type="text" placeholder="Country" autocomplete="off">
                             </div>

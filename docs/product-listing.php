@@ -9,7 +9,7 @@
                 <div class="add-mobile-menu-r">
 
                     <div class="card padding-15 round shadow-lg">
-                        <div data-ui-src="json/headphones.json" data-ui-val="name" class="autocomplete text text-icon-both round no-border ui-theme-gray ui-fill-light-300 ui-ease-form has-clear">
+                        <div data-ui-src="json/headphones.json" data-ui-val="name" class="ui-autocomplete text text-icon-both round no-border ui-theme-gray ui-fill-light-300 ui-ease-form has-clear">
                             <svg class="icon text-icon-l"><use href="#search"/></svg>
                             <button type="button" class="clear-form">
                                 <svg class="icon"><use href="#remove"/></svg>
