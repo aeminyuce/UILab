@@ -2162,10 +2162,10 @@ html .row {
   text-align: center !important;
 }
 .bg-white:not([class*="ui-fill-"]) {
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 100%) !important;
 }
 .bg-black:not([class*="ui-fill-"]) {
-  background-color: hsl(0, 0%, 0%);
+  background-color: hsl(0, 0%, 0%) !important;
 }
 @media print {
   .hidden-print {
