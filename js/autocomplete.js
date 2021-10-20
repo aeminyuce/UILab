@@ -143,7 +143,7 @@ ui.autocomplete = {
 
                     }
 
-                } else if (e.keyCode === 13 || e.keyCode === 27) {
+                } else if (e.keyCode === 13 || e.keyCode === 27 || e.keyCode === undefined) { // undefined: detect keyup trigger event when clicking!
 
                     if (list.length >= 1) {
 
