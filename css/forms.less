@@ -200,7 +200,13 @@ html:not(.ui-no-effects) {
     select { margin-bottom: -(@form-spacing - 3); }
     .ui-edge & select { margin-bottom: -@form-padding; }
     option,optgroup { padding: (@form-spacing - 2) @form-padding; }
-    option:not(:last-child) { ._border-var(@dir: border-bottom; @var: select-multi-options-border); }
+
+    &:not(.form-light) {
+        option:not(:last-child) { ._border-var(@dir: border-bottom; @var: select-multi-options-border); }
+    }
+    &.form-light {
+        option:not(:last-child) { border-bottom: solid 1px @select-multi-options-border-dark; }
+    }
 }
 
 .textarea {

@@ -4951,9 +4951,12 @@ html:not(.ui-no-effects) .ease-range::-moz-range-track {
 .select-multi optgroup {
   padding: 3px 5px;
 }
-.select-multi option:not(:last-child) {
+.select-multi:not(.form-light) option:not(:last-child) {
   border-bottom: solid 1px hsla(0, 0%, 0%, 0.045);
   border-bottom: solid 1px var(--ui-select-multi-options-border);
+}
+.select-multi.form-light option:not(:last-child) {
+  border-bottom: solid 1px hsla(0, 0%, 100%, 0.045);
 }
 .textarea textarea {
   vertical-align: top;
@@ -5736,10 +5739,6 @@ label.custom {
   color: var(--ui-textarea-counter-color);
   background-color: hsla(0, 0%, 0%, 0.035);
   background-color: var(--ui-textarea-counter-bg);
-}
-.textarea:not(.toggle-textarea)[data-ui-counter].form-light:not(.form-focus) {
-  color: hsl(0, 0%, 100%);
-  background-color: hsla(0, 0%, 100%, 0.175);
 }
 .textarea:not(.toggle-textarea)[data-ui-counter].change:before {
   content: attr(data-ui-change);
