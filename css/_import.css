@@ -2485,7 +2485,6 @@ html .row {
 .ui-border-light[class*="ui-fill-dark-"],
 [class*="ui-fill-dark-"] .ui-border-light {
   border-color: hsla(0, 0%, 100%, 0.065) !important;
-  border-color: var(--ui-border-light-color-dark) !important;
 }
 .ui-border-dark {
   border-color: hsla(0, 0%, 0%, 0.35) !important;
