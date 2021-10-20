@@ -81,7 +81,7 @@
 
                     <header class="row no-row-gap-t ui-sticky-md icons-no-opacity form-lg" data-ui-classes="shadow-lg">
                         <div class="col-6 hidden-md ui-ease-1st-form">
-                            <div class="text text-icon-both margin-15-b circle no-border ui-theme-gray ui-fill-light-300 has-clear">
+                            <div class="text text-icon-both margin-15-b circle ui-no-border ui-theme-gray ui-fill-light-300 has-clear">
                                 <svg class="icon text-icon-l"><use href="#search"/></svg>
                                 <button type="button" class="clear-form">
                                     <svg class="icon"><use href="#remove"/></svg>
@@ -422,7 +422,7 @@
             <div class="col-static no-fluid">
                 <div class="row no-row-gap-h">
                     <div class="col-12 ui-ease-1st-form">
-                        <div class="text text-icon has-clear round-l no-border shadow-in-sm ui-theme-gray ui-fill-light-300 ui-ease-form">
+                        <div class="text text-icon has-clear round-l ui-no-border shadow-in-sm ui-theme-gray ui-fill-light-300 ui-ease-form">
                             <button type="button" class="clear-form">
                                 <svg class="icon"><use href="#remove"/></svg>
                             </button>

@@ -230,7 +230,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-12 no-padding">
-                                        <div class="text no-border ui-theme-gray ui-fill-light-100 ui-ease-form">
+                                        <div class="text ui-no-border ui-theme-gray ui-fill-light-100 ui-ease-form">
                                             <input class="font-bold align-c x-large" type="text" value="645.000" min="645.000" step="5.000" maxlength="12" autocomplete="off">
                                         </div>
                                     </div>

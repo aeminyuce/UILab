@@ -12,7 +12,7 @@
                 <div class="add-mobile-menu-r">
 
                     <div class="card padding-15 round shadow-lg">
-                        <div data-ui-src="json/headphones.json" data-ui-val="name" class="ui-autocomplete text text-icon-both round no-border ui-theme-gray ui-fill-light-300 ui-ease-form has-clear">
+                        <div data-ui-src="json/headphones.json" data-ui-val="name" class="ui-autocomplete text text-icon-both round ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form has-clear">
                             <svg class="icon text-icon-l"><use href="#search"/></svg>
                             <button type="button" class="clear-form">
                                 <svg class="icon"><use href="#remove"/></svg>
@@ -45,31 +45,31 @@
                         <div class="padding-15 md-align-c ui-border-b">
                             <h5 class="margin-10-b font-color-black-50">COLORS</h5>
                             <label class="custom">
-                                <span class="check-custom no-border circle ui-ease-form ui-product-select-red">
+                                <span class="check-custom ui-no-border circle ui-ease-form ui-product-select-red">
                                     <input type="checkbox" checked>
                                     <i class="state circle bg-white invert-bg"></i>
                                 </span>
                             </label>
                             <label class="custom">
-                                <span class="check-custom no-border circle ui-ease-form ui-product-select-pink">
+                                <span class="check-custom ui-no-border circle ui-ease-form ui-product-select-pink">
                                     <input type="checkbox" checked>
                                     <i class="state circle bg-white invert-bg"></i>
                                 </span>
                             </label>
                             <label class="custom">
-                                <span class="check-custom no-border circle ui-ease-form ui-product-select-blue">
+                                <span class="check-custom ui-no-border circle ui-ease-form ui-product-select-blue">
                                     <input type="checkbox" checked>
                                     <i class="state circle bg-white invert-bg"></i>
                                 </span>
                             </label>
                             <label class="custom">
-                                <span class="check-custom no-border circle ui-ease-form ui-product-select-orange">
+                                <span class="check-custom ui-no-border circle ui-ease-form ui-product-select-orange">
                                     <input type="checkbox">
                                     <i class="state circle bg-white invert-bg"></i>
                                 </span>
                             </label>
                             <label class="custom">
-                                <span class="check-custom no-border circle ui-ease-form ui-product-select-yellow">
+                                <span class="check-custom ui-no-border circle ui-ease-form ui-product-select-yellow">
                                     <input type="checkbox">
                                     <i class="state circle bg-white invert-bg"></i>
                                 </span>
@@ -78,13 +78,13 @@
                             <span class="clearfix hidden-md"></span>
 
                             <label class="custom">
-                                <span class="check-custom no-border circle ui-ease-form ui-product-select-black">
+                                <span class="check-custom ui-no-border circle ui-ease-form ui-product-select-black">
                                     <input type="checkbox" checked>
                                     <i class="state circle bg-white invert-bg"></i>
                                 </span>
                             </label>
                             <label class="custom">
-                                <span class="check-custom no-border circle ui-ease-form ui-product-select-white">
+                                <span class="check-custom ui-no-border circle ui-ease-form ui-product-select-white">
                                     <input type="checkbox" checked>
                                     <i class="state circle bg-white invert-bg"></i>
                                 </span>
@@ -227,7 +227,7 @@
                             <span class="large">Found <b>47</b> and displaying <b>9</b> products.</span>
                         </div>
                         <div class="col-6 align-r sm-no-padding-t">
-                            <div class="select align-l round form-inline no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
+                            <div class="select align-l round form-inline ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
                                 <svg class="icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="1" checked>Sort by</option>
@@ -236,7 +236,7 @@
                                     <option value="4">Price (High to Low)</option>
                                 </select>
                             </div>
-                            <div class="select align-l round form-inline no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
+                            <div class="select align-l round form-inline ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
                                 <svg class="icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="12" checked>Show 9</option>

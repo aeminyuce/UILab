@@ -424,7 +424,7 @@
 
                 <h4>File Input</h4>
                 <div class="padding-30-b ui-theme-gray">
-                    <div class="file round no-border ui-fill-light-100 ui-ease-form">
+                    <div class="file round ui-no-border ui-fill-light-100 ui-ease-form">
                         <input type="file">
                         <span class="btn ui-ease-btn">Browse</span>
                         <i>Choose file.</i>
@@ -450,7 +450,7 @@
 
                     <label class="form-label padding-10-b">File Input with Large Forms</label>
                     <div class="form-lg ui-ease-1st-form">
-                        <div class="file round no-border ui-fill-light-100">
+                        <div class="file round ui-no-border ui-fill-light-100">
                             <input type="file">
                             <span class="btn ui-ease-btn">Browse</span>
                             <i>Choose file.</i>
@@ -477,7 +477,7 @@
 
                     <label class="form-label padding-10-b">File Input Like Buttons</label>
                     <div>
-                        <div class="file no-border inline-block round ui-ease-form">
+                        <div class="file ui-no-border inline-block round ui-ease-form">
                             <input class="cursor-pointer" type="file">
                             <span class="btn btn-square ui-ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
@@ -495,13 +495,13 @@
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>
-                        <div class="file no-border inline-block round ui-ease-form">
+                        <div class="file ui-no-border inline-block round ui-ease-form">
                             <input class="bg-white cursor-pointer" type="file">
                             <span class="btn btn-square ui-theme-base ui-fill-dark-100 ui-ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>
-                        <div class="file no-border inline-block round ui-ease-form">
+                        <div class="file ui-no-border inline-block round ui-ease-form">
                             <input class="bg-white cursor-pointer" type="file">
                             <span class="btn btn-square ui-theme-green ui-fill-dark-100 ui-ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
@@ -512,7 +512,7 @@
                     <span class="sp-10"></span>
 
                     <div class="form-lg">
-                        <div class="file no-border inline-block round ui-ease-form">
+                        <div class="file ui-no-border inline-block round ui-ease-form">
                             <input class="cursor-pointer" type="file">
                             <span class="btn btn-square ui-ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
@@ -530,13 +530,13 @@
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>
-                        <div class="file no-border inline-block round ui-ease-form">
+                        <div class="file ui-no-border inline-block round ui-ease-form">
                             <input class="bg-white cursor-pointer" type="file">
                             <span class="btn btn-square ui-theme-base ui-fill-dark-100 ui-ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>
-                        <div class="file no-border inline-block round ui-ease-form">
+                        <div class="file ui-no-border inline-block round ui-ease-form">
                             <input class="bg-white cursor-pointer" type="file">
                             <span class="btn btn-square ui-theme-green ui-fill-dark-100 ui-ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
@@ -1656,13 +1656,13 @@
                     <div class="text error form-light margin-10-b round ui-border-dual ui-ease-form">
                         <input type="text" placeholder="Error Form">
                     </div>
-                    <div class="text error form-light margin-10-b round no-border ui-ease-form">
+                    <div class="text error form-light margin-10-b round ui-no-border ui-ease-form">
                         <input type="text" placeholder="Error Form">
                     </div>
                     <div class="text warning form-light margin-10-b round ui-border-dual ui-ease-form">
                         <input type="text" placeholder="Warning Form">
                     </div>
-                    <div class="text warning form-light round no-border ui-ease-form">
+                    <div class="text warning form-light round ui-no-border ui-ease-form">
                         <input type="text" placeholder="Warning Form">
                     </div>
 
@@ -1885,16 +1885,16 @@
                     </div>
                     <div class="col-9 ui-ease-1st-form">
 
-                        <div class="text margin-10-b shadow-in no-border">
+                        <div class="text margin-10-b shadow-in ui-no-border">
                             <input type="text">
                         </div>
-                        <div class="text error margin-10-b shadow-in no-border">
+                        <div class="text error margin-10-b shadow-in ui-no-border">
                             <input type="text" placeholder="Error Form">
                         </div>
-                        <div class="text warning margin-10-b shadow-in no-border">
+                        <div class="text warning margin-10-b shadow-in ui-no-border">
                             <input type="text" placeholder="Warning Form">
                         </div>
-                        <div class="select margin-10-b shadow-in no-border">
+                        <div class="select margin-10-b shadow-in ui-no-border">
                             <svg class="icon"><use href="#angle-down"/></svg>
                             <select>
                                 <option value="">Select</option>
@@ -1903,29 +1903,29 @@
                             </select>
                         </div>
 
-                        <div class="textarea margin-10-b shadow-in no-border">
+                        <div class="textarea margin-10-b shadow-in ui-no-border">
                             <textarea placeholder="Textarea"></textarea>
                         </div>
-                        <div class="textarea toggle-textarea margin-10-b shadow-in no-border">
+                        <div class="textarea toggle-textarea margin-10-b shadow-in ui-no-border">
                             <textarea placeholder="Toggle Textarea"></textarea>
                         </div>
 
                         <label class="custom">
-                            <span class="check-custom shadow-in no-border">
+                            <span class="check-custom shadow-in ui-no-border">
                                 <input type="checkbox" checked>
                                 <i class="state"></i>
                             </span>
                             <b>Custom Checkbox</b>
                         </label>
                         <label class="custom">
-                            <span class="radio-custom shadow-in no-border">
+                            <span class="radio-custom shadow-in ui-no-border">
                                 <input type="radio" checked>
                                 <i class="state"></i>
                             </span>
                             <b>Custom Radio</b>
                         </label>
                         <label class="custom">
-                            <span class="switch-custom shadow-in no-border">
+                            <span class="switch-custom shadow-in ui-no-border">
                                 <input type="checkbox" checked>
                                 <i class="state"></i>
                             </span>
@@ -1939,16 +1939,16 @@
                     </div>
                     <div class="col-9 ui-ease-1st-form ui-theme-gray">
 
-                        <div class="text margin-10-b round no-border ui-fill-light-100">
+                        <div class="text margin-10-b round ui-no-border ui-fill-light-100">
                             <input type="text">
                         </div>
-                        <div class="text error margin-10-b round no-border ui-fill-light-100">
+                        <div class="text error margin-10-b round ui-no-border ui-fill-light-100">
                             <input type="text" placeholder="Error Form">
                         </div>
-                        <div class="text warning margin-10-b round no-border ui-fill-light-100">
+                        <div class="text warning margin-10-b round ui-no-border ui-fill-light-100">
                             <input type="text" placeholder="Warning Form">
                         </div>
-                        <div class="select margin-10-b round no-border ui-fill-light-100">
+                        <div class="select margin-10-b round ui-no-border ui-fill-light-100">
                             <svg class="icon"><use href="#angle-down"/></svg>
                             <select>
                                 <option value="">Select</option>
@@ -1957,10 +1957,10 @@
                             </select>
                         </div>
 
-                        <div class="textarea margin-10-b round no-border ui-fill-light-100">
+                        <div class="textarea margin-10-b round ui-no-border ui-fill-light-100">
                             <textarea placeholder="Textarea"></textarea>
                         </div>
-                        <div class="textarea toggle-textarea margin-10-b round no-border ui-fill-light-100">
+                        <div class="textarea toggle-textarea margin-10-b round ui-no-border ui-fill-light-100">
                             <textarea placeholder="Toggle Textarea"></textarea>
                         </div>
 

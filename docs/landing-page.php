@@ -880,7 +880,7 @@
                                 <div class="form-holder col-static no-fluid form-lg">
                                     <div class="row no-row-gap">
                                         <div class="col-12">
-                                            <div class="text no-border bg-white invert-bg ui-ease-form">
+                                            <div class="text ui-no-border bg-white invert-bg ui-ease-form">
                                                 <input class="required" type="email" maxlength="4" placeholder="your@email.com">
                                             </div>
                                         </div>

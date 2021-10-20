@@ -162,7 +162,7 @@
                             <div class="carousel" data-ui-col="1">
                                 <div class="carousel-slider ui-ease-2nd-layout ui-ease-layout ui-ease-in-out">
 
-                                    <div class="slide-content list-group no-border padding-1-h">
+                                    <div class="slide-content list-group ui-no-border padding-1-h">
                                         <ul class="has-photo-sm has-icon-sm ui-ease-list-group">
                                             <li class="round ui-theme-gray ui-fill-light-100">
                                                 <a href="#">
@@ -176,7 +176,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="slide-content list-group no-border padding-1-h">
+                                    <div class="slide-content list-group ui-no-border padding-1-h">
                                         <ul class="has-photo-sm has-icon-sm ui-ease-list-group">
                                             <li class="round ui-theme-gray ui-fill-light-100">
                                                 <a href="#">
@@ -190,7 +190,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="slide-content list-group no-border padding-1-h">
+                                    <div class="slide-content list-group ui-no-border padding-1-h">
                                         <ul class="has-photo-sm has-icon-sm ui-ease-list-group">
                                             <li class="round ui-theme-gray ui-fill-light-100">
                                                 <a href="#">
@@ -306,7 +306,7 @@
 
                                 <div class="grid-list-container scroll-v" style="height: 534px;">
 
-                                    <div class="grid-list-content no-border" data-ui-val="REP-701-2019|John Doe">
+                                    <div class="grid-list-content ui-no-border" data-ui-val="REP-701-2019|John Doe">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -331,7 +331,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="grid-list-content no-border" data-ui-val="REP-616-2017|Mike Taylor">
+                                    <div class="grid-list-content ui-no-border" data-ui-val="REP-616-2017|Mike Taylor">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -356,7 +356,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="grid-list-content no-border" data-ui-val="REP-103-2018|Mary Doe">
+                                    <div class="grid-list-content ui-no-border" data-ui-val="REP-103-2018|Mary Doe">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -381,7 +381,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="grid-list-content no-border" data-ui-val="REP-701-2019|John Doe">
+                                    <div class="grid-list-content ui-no-border" data-ui-val="REP-701-2019|John Doe">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -406,7 +406,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="grid-list-content no-border" data-ui-val="REP-616-2017|Mike Taylor">
+                                    <div class="grid-list-content ui-no-border" data-ui-val="REP-616-2017|Mike Taylor">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -431,7 +431,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="grid-list-content no-border" data-ui-val="REP-103-2018|Mary Doe">
+                                    <div class="grid-list-content ui-no-border" data-ui-val="REP-103-2018|Mary Doe">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -456,7 +456,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="grid-list-content no-border" data-ui-val="REP-701-2019|John Doe">
+                                    <div class="grid-list-content ui-no-border" data-ui-val="REP-701-2019|John Doe">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -481,7 +481,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="grid-list-content no-border" data-ui-val="REP-616-2017|Mike Taylor">
+                                    <div class="grid-list-content ui-no-border" data-ui-val="REP-616-2017|Mike Taylor">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -506,7 +506,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="grid-list-content no-border" data-ui-val="REP-103-2018|Mary Doe">
+                                    <div class="grid-list-content ui-no-border" data-ui-val="REP-103-2018|Mary Doe">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -531,7 +531,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="grid-list-content no-border" data-ui-val="REP-701-2019|John Doe">
+                                    <div class="grid-list-content ui-no-border" data-ui-val="REP-701-2019|John Doe">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -556,7 +556,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="grid-list-content no-border" data-ui-val="REP-616-2017|Mike Taylor">
+                                    <div class="grid-list-content ui-no-border" data-ui-val="REP-616-2017|Mike Taylor">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -581,7 +581,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="grid-list-content no-border" data-ui-val="REP-103-2018|Mary Doe">
+                                    <div class="grid-list-content ui-no-border" data-ui-val="REP-103-2018|Mary Doe">
                                         <div class="col-static no-fluid">
                                             <div class="row no-row-gap-h no-fluid row-gap-md-v">
                                                 <div class="col-6">
@@ -751,7 +751,7 @@
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
                                         <div class="row no-row-gap">
-                                            <div class="text text-icon no-border padding-2 circle ui-ease-form">
+                                            <div class="text text-icon ui-no-border padding-2 circle ui-ease-form">
                                                 <button type="button">
                                                     <svg class="icon"><use href="#comment-dots"/></svg>
                                                 </button>
@@ -813,7 +813,7 @@
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
                                         <div class="row no-row-gap">
-                                            <div class="text text-icon no-border padding-2 circle ui-ease-form">
+                                            <div class="text text-icon ui-no-border padding-2 circle ui-ease-form">
                                                 <button class="icon icon-comment-dots ui-theme-app ui-color"></button>
                                                 <input type="text" placeholder="Type your message">
                                             </div>
@@ -873,7 +873,7 @@
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
                                         <div class="row no-row-gap">
-                                            <div class="text text-icon no-border padding-2 circle ui-ease-form">
+                                            <div class="text text-icon ui-no-border padding-2 circle ui-ease-form">
                                                 <button type="button">
                                                     <svg class="icon"><use href="#comment-dots"/></svg>
                                                 </button>
@@ -935,7 +935,7 @@
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
                                         <div class="row no-row-gap">
-                                            <div class="text text-icon no-border padding-2 circle ui-ease-form">
+                                            <div class="text text-icon ui-no-border padding-2 circle ui-ease-form">
                                                 <button class="icon icon-comment-dots ui-theme-app ui-color"></button>
                                                 <input type="text" placeholder="Type your message">
                                             </div>
@@ -995,7 +995,7 @@
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
                                         <div class="row no-row-gap">
-                                            <div class="text text-icon no-border padding-2 circle ui-ease-form">
+                                            <div class="text text-icon ui-no-border padding-2 circle ui-ease-form">
                                                 <button type="button">
                                                     <svg class="icon"><use href="#comment-dots"/></svg>
                                                 </button>
@@ -1057,7 +1057,7 @@
                                             <img class="img-photo-xs margin-1 circle" src="img/profile-image3.jpg" alt="">
                                         </div>
                                         <div class="row no-row-gap">
-                                            <div class="text text-icon no-border padding-2 circle ui-ease-form">
+                                            <div class="text text-icon ui-no-border padding-2 circle ui-ease-form">
                                                 <button type="button">
                                                     <svg class="icon"><use href="#comment-dots"/></svg>
                                                 </button>
@@ -1147,7 +1147,7 @@
                             </div>
 
                             <h5 class="font-bold margin-10-b">Settings</h5>
-                            <div class="list-group round no-border ui-theme-gray ui-fill-light-100">
+                            <div class="list-group round ui-no-border ui-theme-gray ui-fill-light-100">
                                 <ul class="has-icon-xs ui-ease-list-group">
                                     <li>
                                         <a href="#">
@@ -1180,7 +1180,7 @@
 
                             <h5 class="font-bold margin-10-b">General</h5>
 
-                            <div class="list-group round no-border ui-theme-gray ui-fill-light-100">
+                            <div class="list-group round ui-no-border ui-theme-gray ui-fill-light-100">
                                 <ul class="has-icon-xs ui-ease-list-group">
                                     <li>
                                         <a href="#">
@@ -1205,7 +1205,7 @@
 
                             <span class="sp-25"></span>
 
-                            <div class="list-group round no-border ui-theme-gray ui-fill-light-100">
+                            <div class="list-group round ui-no-border ui-theme-gray ui-fill-light-100">
                                 <ul class="has-icon-xs ui-ease-list-group">
                                     <li>
                                         <a class="round" href="#">

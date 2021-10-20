@@ -11,7 +11,7 @@
                         </div>
                         <div class="col-6 align-r sm-no-padding-t form-lg">
 
-                            <div class="file no-border inline-block round ui-ease-form">
+                            <div class="file ui-no-border inline-block round ui-ease-form">
                                 <input class="bg-white cursor-pointer" type="file" name="images[]" multiple>
                                 <span class="btn btn-square ui-theme-green ui-fill-dark-100 ui-ease-btn">
                                     <svg class="icon no-opacity"><use href="#plus"/></svg>

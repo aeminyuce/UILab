@@ -9,7 +9,7 @@
 
                         <div class="row no-row-gap-v row-gap-sm-h margin-2-v">
                             <div class="col-6 lg-fluid">
-                                <div class="text text-icon-both round no-border ui-fill-light-100 has-clear ui-ease-form">
+                                <div class="text text-icon-both round ui-no-border ui-fill-light-100 has-clear ui-ease-form">
                                     <svg class="icon text-icon-l"><use href="#search"></svg>
                                     <button class="clear-form">
                                         <svg class="icon"><use href="#remove"/></svg>
@@ -19,7 +19,7 @@
                                 <span class="sp-5 hidden-lg"></span>
                             </div>
                             <div class="col-lg-3 col-6 no-fluid">
-                                <div class="select round no-border ui-fill-light-100 ui-ease-form">
+                                <div class="select round ui-no-border ui-fill-light-100 ui-ease-form">
                                     <svg class="icon"><use href="#angle-down"></svg>
                                     <select class="grid-list-filter" data-ui-index="2">
                                         <option value="">Filter</option>
@@ -65,7 +65,7 @@
 
                         <div class="grid-list-container">
 
-                            <div class="grid-list-content no-border round" data-ui-val="John Atkinson|Paused">
+                            <div class="grid-list-content ui-no-border round" data-ui-val="John Atkinson|Paused">
                                 <div class="row no-row-gap no-fluid">
                                     <div class="col-5">
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
@@ -97,7 +97,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-list-content no-border round" data-ui-val="Mary Doe|Waiting">
+                            <div class="grid-list-content ui-no-border round" data-ui-val="Mary Doe|Waiting">
                                 <div class="row no-row-gap no-fluid">
                                     <div class="col-5">
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -129,7 +129,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-list-content no-border round" data-ui-val="Mike Taylor|Completed">
+                            <div class="grid-list-content ui-no-border round" data-ui-val="Mike Taylor|Completed">
                                 <div class="row no-row-gap no-fluid">
                                     <div class="col-5">
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
@@ -161,7 +161,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-list-content no-border round" data-ui-val="Tony Starky|Paused">
+                            <div class="grid-list-content ui-no-border round" data-ui-val="Tony Starky|Paused">
                                 <div class="row no-row-gap no-fluid">
                                     <div class="col-5">
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
@@ -193,7 +193,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-list-content no-border round" data-ui-val="John Atkinson|Paused">
+                            <div class="grid-list-content ui-no-border round" data-ui-val="John Atkinson|Paused">
                                 <div class="row no-row-gap no-fluid">
                                     <div class="col-5">
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
@@ -225,7 +225,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-list-content no-border round" data-ui-val="Mary Doe|Waiting">
+                            <div class="grid-list-content ui-no-border round" data-ui-val="Mary Doe|Waiting">
                                 <div class="row no-row-gap no-fluid">
                                     <div class="col-5">
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -257,7 +257,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-list-content no-border round" data-ui-val="Mike Taylor|Completed">
+                            <div class="grid-list-content ui-no-border round" data-ui-val="Mike Taylor|Completed">
                                 <div class="row no-row-gap no-fluid">
                                     <div class="col-5">
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
@@ -289,7 +289,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-list-content no-border round" data-ui-val="Tony Starky|Paused">
+                            <div class="grid-list-content ui-no-border round" data-ui-val="Tony Starky|Paused">
                                 <div class="row no-row-gap no-fluid">
                                     <div class="col-5">
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
@@ -321,7 +321,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-list-content no-border round" data-ui-val="John Atkinson|Paused">
+                            <div class="grid-list-content ui-no-border round" data-ui-val="John Atkinson|Paused">
                                 <div class="row no-row-gap no-fluid">
                                     <div class="col-5">
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
@@ -353,7 +353,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-list-content no-border round" data-ui-val="Mary Doe|Waiting">
+                            <div class="grid-list-content ui-no-border round" data-ui-val="Mary Doe|Waiting">
                                 <div class="row no-row-gap no-fluid">
                                     <div class="col-5">
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -385,7 +385,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-list-content no-border round" data-ui-val="Mike Taylor|Completed">
+                            <div class="grid-list-content ui-no-border round" data-ui-val="Mike Taylor|Completed">
                                 <div class="row no-row-gap no-fluid">
                                     <div class="col-5">
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
@@ -417,7 +417,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-list-content no-border round" data-ui-val="Tony Starky|Paused">
+                            <div class="grid-list-content ui-no-border round" data-ui-val="Tony Starky|Paused">
                                 <div class="row no-row-gap no-fluid">
                                     <div class="col-5">
                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky

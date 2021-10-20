@@ -928,7 +928,7 @@
                                         <div class="tab-content set-absolute set-h scroll-v open open-ease" style="top: 62px; bottom: 15px;">
                                             <div class="list-group margin-15-h">
                                                 <ul class="ui-ease-list-group">
-                                                    <li class="no-border">
+                                                    <li class="ui-no-border">
                                                         <span class="donut-chart col-42 right ui-ease-donut-chart">
                                                             <strong class="font-color-black-muted x-small">88%</strong>
                                                             <svg viewBox="0 0 160 160">
@@ -938,7 +938,7 @@
                                                         <b class="margin-5-t block">AAC-2019-013:AGF</b>
                                                         <span class="font-color-black-50 small">3814 Reports</span>
                                                     </li>
-                                                    <li class="no-border">
+                                                    <li class="ui-no-border">
                                                         <span class="donut-chart col-42 right ui-ease-donut-chart">
                                                             <strong class="font-color-black-muted x-small">76%</strong>
                                                             <svg viewBox="0 0 160 160">
@@ -948,7 +948,7 @@
                                                         <b class="margin-5-t block">BDA-2019-642</b>
                                                         <span class="font-color-black-50 small">2613 Reports</span>
                                                     </li>
-                                                    <li class="no-border">
+                                                    <li class="ui-no-border">
                                                         <span class="donut-chart col-42 right ui-ease-donut-chart">
                                                             <strong class="font-color-black-muted x-small">69%</strong>
                                                             <svg viewBox="0 0 160 160">
@@ -958,7 +958,7 @@
                                                         <b class="margin-5-t block">DDG-2019-505:AG</b>
                                                         <span class="font-color-black-50 small">1890 Reports</span>
                                                     </li>
-                                                    <li class="no-border">
+                                                    <li class="ui-no-border">
                                                         <span class="donut-chart col-42 right ui-ease-donut-chart">
                                                             <strong class="font-color-black-muted x-small">52%</strong>
                                                             <svg viewBox="0 0 160 160">
@@ -968,7 +968,7 @@
                                                         <b class="margin-5-t block">OOC-2019-781:F</b>
                                                         <span class="font-color-black-50 small">1605 Reports</span>
                                                     </li>
-                                                    <li class="no-border">
+                                                    <li class="ui-no-border">
                                                         <span class="donut-chart col-42 right ui-ease-donut-chart">
                                                             <strong class="font-color-black-muted x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
@@ -978,7 +978,7 @@
                                                         <b class="margin-5-t block">BDD-2019-047:G</b>
                                                         <span class="font-color-black-50 small">812 Reports</span>
                                                     </li>
-                                                    <li class="no-border">
+                                                    <li class="ui-no-border">
                                                         <span class="donut-chart col-42 right ui-ease-donut-chart">
                                                             <strong class="font-color-black-muted x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
@@ -994,7 +994,7 @@
                                         <div class="tab-content set-absolute set-h scroll-v" style="top: 62px; bottom: 15px;">
                                             <div class="list-group margin-15-h">
                                                 <ul class="ui-ease-list-group">
-                                                    <li class="no-border">
+                                                    <li class="ui-no-border">
                                                         <span class="donut-chart col-42 right ui-ease-donut-chart">
                                                             <strong class="font-color-black-muted x-small">88%</strong>
                                                             <svg viewBox="0 0 160 160">
@@ -1004,7 +1004,7 @@
                                                         <b class="margin-5-t block">AAC-2019-013:AGF</b>
                                                         <span class="font-color-black-50 small">3814 Reports</span>
                                                     </li>
-                                                    <li class="no-border">
+                                                    <li class="ui-no-border">
                                                         <span class="donut-chart col-42 right ui-ease-donut-chart">
                                                             <strong class="font-color-black-muted x-small">76%</strong>
                                                             <svg viewBox="0 0 160 160">
@@ -1014,7 +1014,7 @@
                                                         <b class="margin-5-t block">BDA-2019-642</b>
                                                         <span class="font-color-black-50 small">2613 Reports</span>
                                                     </li>
-                                                    <li class="no-border">
+                                                    <li class="ui-no-border">
                                                         <span class="donut-chart col-42 right ui-ease-donut-chart">
                                                             <strong class="font-color-black-muted x-small">69%</strong>
                                                             <svg viewBox="0 0 160 160">
@@ -1024,7 +1024,7 @@
                                                         <b class="margin-5-t block">DDG-2019-505:AG</b>
                                                         <span class="font-color-black-50 small">1890 Reports</span>
                                                     </li>
-                                                    <li class="no-border">
+                                                    <li class="ui-no-border">
                                                         <span class="donut-chart col-42 right ui-ease-donut-chart">
                                                             <strong class="font-color-black-muted x-small">52%</strong>
                                                             <svg viewBox="0 0 160 160">
@@ -1034,7 +1034,7 @@
                                                         <b class="margin-5-t block">OOC-2019-781:F</b>
                                                         <span class="font-color-black-50 small">1605 Reports</span>
                                                     </li>
-                                                    <li class="no-border">
+                                                    <li class="ui-no-border">
                                                         <span class="donut-chart col-42 right ui-ease-donut-chart">
                                                             <strong class="font-color-black-muted x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
@@ -1044,7 +1044,7 @@
                                                         <b class="margin-5-t block">BDD-2019-047:G</b>
                                                         <span class="font-color-black-50 small">812 Reports</span>
                                                     </li>
-                                                    <li class="no-border">
+                                                    <li class="ui-no-border">
                                                         <span class="donut-chart col-42 right ui-ease-donut-chart">
                                                             <strong class="font-color-black-muted x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
@@ -1236,7 +1236,7 @@
 
                                         <div class="row no-row-gap-v row-gap-sm-h">
                                             <div class="col-6 lg-fluid">
-                                                <div class="text text-icon-both round no-border ui-fill-light-100 has-clear ui-ease-form">
+                                                <div class="text text-icon-both round ui-no-border ui-fill-light-100 has-clear ui-ease-form">
                                                     <svg class="icon text-icon-l"><use href="#search"/></svg>
                                                     <button class="clear-form">
                                                         <svg class="icon"><use href="#remove"/></svg>
@@ -1246,7 +1246,7 @@
                                                 <span class="sp-5 hidden-lg"></span>
                                             </div>
                                             <div class="col-lg-3 col-6 no-fluid">
-                                                <div class="select round no-border ui-fill-light-100 ui-ease-form">
+                                                <div class="select round ui-no-border ui-fill-light-100 ui-ease-form">
                                                     <svg class="icon"><use href="#angle-down"/></svg>
                                                     <select class="grid-list-filter" data-ui-index="2">
                                                         <option value="">Filter</option>
@@ -1292,7 +1292,7 @@
 
                                         <div class="grid-list-container">
 
-                                            <div class="grid-list-content no-border round" data-ui-val="John Atkinson|Paused">
+                                            <div class="grid-list-content ui-no-border round" data-ui-val="John Atkinson|Paused">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
@@ -1324,7 +1324,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="grid-list-content no-border round" data-ui-val="Mary Doe|Waiting">
+                                            <div class="grid-list-content ui-no-border round" data-ui-val="Mary Doe|Waiting">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -1356,7 +1356,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="grid-list-content no-border round" data-ui-val="Mike Taylor|Completed">
+                                            <div class="grid-list-content ui-no-border round" data-ui-val="Mike Taylor|Completed">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
@@ -1388,7 +1388,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="grid-list-content no-border round" data-ui-val="Tony Starky|Paused">
+                                            <div class="grid-list-content ui-no-border round" data-ui-val="Tony Starky|Paused">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
@@ -1421,7 +1421,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="grid-list-content no-border round" data-ui-val="John Atkinson|Paused">
+                                            <div class="grid-list-content ui-no-border round" data-ui-val="John Atkinson|Paused">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
@@ -1453,7 +1453,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="grid-list-content no-border round" data-ui-val="Mary Doe|Waiting">
+                                            <div class="grid-list-content ui-no-border round" data-ui-val="Mary Doe|Waiting">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -1485,7 +1485,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="grid-list-content no-border round" data-ui-val="Mike Taylor|Completed">
+                                            <div class="grid-list-content ui-no-border round" data-ui-val="Mike Taylor|Completed">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
@@ -1517,7 +1517,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="grid-list-content no-border round" data-ui-val="Tony Starky|Paused">
+                                            <div class="grid-list-content ui-no-border round" data-ui-val="Tony Starky|Paused">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
@@ -1549,7 +1549,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="grid-list-content no-border round" data-ui-val="John Atkinson|Paused">
+                                            <div class="grid-list-content ui-no-border round" data-ui-val="John Atkinson|Paused">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
@@ -1581,7 +1581,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="grid-list-content no-border round" data-ui-val="Mary Doe|Waiting">
+                                            <div class="grid-list-content ui-no-border round" data-ui-val="Mary Doe|Waiting">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -1613,7 +1613,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="grid-list-content no-border round" data-ui-val="Mike Taylor|Completed">
+                                            <div class="grid-list-content ui-no-border round" data-ui-val="Mike Taylor|Completed">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
@@ -1645,7 +1645,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="grid-list-content no-border round" data-ui-val="Tony Starky|Paused">
+                                            <div class="grid-list-content ui-no-border round" data-ui-val="Tony Starky|Paused">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
@@ -1677,7 +1677,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="grid-list-content no-border round" data-ui-val="John Atkinson|Paused">
+                                            <div class="grid-list-content ui-no-border round" data-ui-val="John Atkinson|Paused">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
@@ -1709,7 +1709,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="grid-list-content no-border round" data-ui-val="Mary Doe|Waiting">
+                                            <div class="grid-list-content ui-no-border round" data-ui-val="Mary Doe|Waiting">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -1741,7 +1741,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="grid-list-content no-border round" data-ui-val="Mike Taylor|Completed">
+                                            <div class="grid-list-content ui-no-border round" data-ui-val="Mike Taylor|Completed">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
@@ -1773,7 +1773,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="grid-list-content no-border round" data-ui-val="Tony Starky|Paused">
+                                            <div class="grid-list-content ui-no-border round" data-ui-val="Tony Starky|Paused">
                                                 <div class="row no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="img-photo-sm margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
@@ -1861,7 +1861,7 @@
             <div class="col-static no-fluid">
                 <div class="row no-row-gap-h">
                     <div class="col-12 ui-ease-1st-form">
-                        <div class="text text-icon has-clear round-l no-border shadow-in-sm ui-theme-gray ui-fill-light-300">
+                        <div class="text text-icon has-clear round-l ui-no-border shadow-in-sm ui-theme-gray ui-fill-light-300">
                             <button type="button" class="clear-form">
                                 <svg class="icon"><use href="#remove"/></svg>
                             </button>
