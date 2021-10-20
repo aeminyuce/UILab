@@ -79,7 +79,7 @@
                     <div class="col-9">
                         <div class="form-holder col-static no-fluid">
 
-                            <div class="col-75">
+                            <div class="col-76">
                                 <img class="img-fluid ui-border-dual round ui-ease-border" src="img/captcha.jpg" alt="">
                             </div>
                             <div class="col-32">
@@ -1780,18 +1780,18 @@
                     <label class="form-label">Captcha</label>
                     <div class="form-holder col-static no-fluid">
 
-                        <div class="col-75">
+                        <div class="col-76">
                             <img class="img-fluid ui-border-dual ui-border-light round ui-ease-border" src="img/captcha.jpg" alt="">
                         </div>
                         <div class="col-32">
-                            <button class="btn btn-square btn-ghost ui-border-dual ui-ease-btn">
+                            <button class="btn btn-square btn-ghost ui-border-dual ui-border-light ui-ease-btn">
                                 <!-- for loading toggle "ui-animate-spin" -->
                                 <svg class="icon no-opacity ui-animate-spin"><use href="#sync"/></svg>
                             </button>
                         </div>
                         <div class="row no-row-gap">
                             <div class="col-12">
-                                <div class="text ui-border-dual round form-light ui-ease-form">
+                                <div class="text ui-border-dual round ui-ease-form form-light">
                                     <input type="text" maxlength="4" placeholder="Please enter code">
                                 </div>
                             </div>
