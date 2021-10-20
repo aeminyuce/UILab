@@ -6,29 +6,31 @@
 ui.alerts = {
 
     // targets
-    targetDialog: 'alerts-dialog',
-    targetMsg: 'alerts-msg',
-    targetBg: 'alerts-bg',
+    targetDialog: 'ui-alerts-dialog',
+    targetMsg: 'ui-alerts-msg',
+    targetBg: 'ui-alerts-bg',
 
     // main classnames
-    nameDialogOpened: 'alerts-opened',
-    nameDialogMsg: 'dialog-msg',
-    nameCloseDialog: 'close-alert',
+    nameDialogOpened: 'ui-alerts-opened',
+    nameDialogMsg: 'ui-dialog-msg',
+    nameCloseDialog: 'ui-close-alert',
 
-    nameDialogBtnHolder: 'dialog-buttons',
-    nameDialogCustom: 'dialog-custom',
-    nameDialogSuccess: 'dialog-success',
-    nameDialogError: 'dialog-error',
+    nameDialogBtnHolder: 'ui-dialog-buttons',
+    nameDialogCustom: 'ui-dialog-custom',
+    nameDialogSuccess: 'ui-dialog-success',
+    nameDialogError: 'ui-dialog-error',
 
-    nameMsgHolder: 'alerts-msg-holder',
-    nameMsgThemePrefix: 'msg-',
+    nameMsgHolder: 'ui-alerts-msg-holder',
+    nameMsgThemePrefix: 'ui-msg-',
+
+    namePosPrefix: 'ui-',
 
     // helper classnames
-    nameOpen: 'open',
-    nameOpenEase: 'open-ease',
+    nameOpen: 'ui-open',
+    nameOpenEase: 'ui-open-ease',
 
-    nameShow: 'show',
-    nameShowEase: 'show-ease',
+    nameShow: 'ui-show',
+    nameShowEase: 'ui-show-ease',
 
     // outer classnames
     nameIcon: 'icon',
@@ -375,10 +377,10 @@ ui.alerts = {
             arr = [ui.alerts.themeSuccess, ui.alerts.themeWarning, ui.alerts.themeDanger];
 
             if (arr.indexOf(props.theme) > -1) {
-                msgStyles += ui.alerts.nameMsgThemePrefix + props.theme ;
+                msgStyles += ui.alerts.nameMsgThemePrefix + props.theme + ' ';
 
             } else if (ui.alerts.stylesMsgTheme !== '') {
-                msgStyles += ' ' + ui.alerts.stylesMsgTheme;
+                msgStyles += ui.alerts.stylesMsgTheme + ' ';
             }
 
             // create mssage
@@ -390,9 +392,9 @@ ui.alerts = {
                 html += '<div class="' + ui.alerts.nameMsgHolder + '">';
             }
 
-            msgStyles += ' ' + ui.alerts.stylesMsg;
+            msgStyles += ui.alerts.stylesMsg;
 
-            html += '<div class="' + ui.alerts.targetMsg + ' ' + props.pos + ' ' + msgStyles + '">' +
+            html += '<div class="' + ui.alerts.targetMsg + ' ' + ui.alerts.namePosPrefix + props.pos + ' ' + msgStyles + '">' +
                         props.msg +
                     '</div>';
 
@@ -419,7 +421,7 @@ ui.alerts = {
                 // move same position elements
                 if (holder !== undefined) {
 
-                    prev = ui.find('.' + ui.alerts.targetMsg + '.' + props.pos);
+                    prev = ui.find('.' + ui.alerts.targetMsg + '.' + ui.alerts.namePosPrefix + props.pos);
 
                     for (j = 0; j < prev.length; j++) {
 

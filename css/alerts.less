@@ -59,7 +59,7 @@
     --ui-alerts-msg-bg: @alerts-msg-bg-dark;
 }
 
-.alerts {
+.ui-alerts {
     &-opened {
         &,& > body { overflow: hidden; }
     }
@@ -67,17 +67,17 @@
     &-bg {
         width: 100%; min-width: @layout-min; height: 100%; background-color: @alerts-bg; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: @alerts-z-index;
 
-        &:not(.open) { display: none; }
-        &:not(.open-ease) { opacity: 0; }
+        &:not(.ui-open) { display: none; }
+        &:not(.ui-open-ease) { opacity: 0; }
     }
 
     &-dialog {
         min-width: @alerts-dialog-min-width; max-width: @alerts-dialog-max-width; ._bg-var(card-bg); min-height: @alerts-dialog-min-height; position: fixed; top: 50%; left: 50%; z-index: (@alerts-z-index + 1); transform: translate(-50%,-50%);
 
-        &:not(.show) { display: none; }
-        &:not(.show-ease) { opacity: 0; transform: translate(-50%,-50%) scale(@alerts-dialog-showing-scale); }
+        &:not(.ui-show) { display: none; }
+        &:not(.ui-show-ease) { opacity: 0; transform: translate(-50%,-50%) scale(@alerts-dialog-showing-scale); }
         &.round {
-            .dialog-buttons { border-radius: 0 0 @round @round; }
+            .ui-dialog-buttons { border-radius: 0 0 @round @round; }
             button { border-radius: @round; }
         }
     }
@@ -86,31 +86,32 @@
         text-align: @alerts-msg-text-align; width: @alerts-msg-width; min-height: @alerts-msg-min-height; padding: @alerts-msg-padding; position: fixed; z-index: (@alerts-z-index + 2); cursor: pointer;
 
         .ui-desktop &:hover { opacity: @alerts-msg-hover-opacity; }
-        &:not(.show) { display: none; }
-        &:not(.show-ease) { opacity: 0; }
+
+        &:not(.ui-show) { display: none; }
+        &:not(.ui-show-ease) { opacity: 0; }
         &:not([class*="ui-fill-"]) { color: @white; ._bg-var(alerts-msg-bg); }
 
-        &.msg- {
+        &.ui-msg- {
             &success { background-color: @green !important; }
             &warning { background-color: @yellow !important; }
             &danger { background-color: @red !important; }
         }
 
-        &.tr { top: @alerts-msg-window-space; right: @alerts-msg-window-space; }
-        &.tl { top: @alerts-msg-window-space; left: @alerts-msg-window-space; }
-        &.br { bottom: @alerts-msg-window-space; right: @alerts-msg-window-space; }
-        &.bl { bottom: @alerts-msg-window-space; left: @alerts-msg-window-space; }
+        &.ui-tr { top: @alerts-msg-window-space; right: @alerts-msg-window-space; }
+        &.ui-tl { top: @alerts-msg-window-space; left: @alerts-msg-window-space; }
+        &.ui-br { bottom: @alerts-msg-window-space; right: @alerts-msg-window-space; }
+        &.ui-bl { bottom: @alerts-msg-window-space; left: @alerts-msg-window-space; }
 
-        &.tr,&.tl {
-            &:not(.show-ease) { transform: translateY(-@alerts-msg-slide-size); }
+        &.ui-tr,&.ui-tl {
+            &:not(.ui-show-ease) { transform: translateY(-@alerts-msg-slide-size); }
         }
-        &.br,&.bl {
-            &:not(.show-ease) { transform: translateY(@alerts-msg-slide-size); }
+        &.ui-br,&.ui-bl {
+            &:not(.ui-show-ease) { transform: translateY(@alerts-msg-slide-size); }
         }
     }
 }
 
-.dialog {
+.ui-dialog {
     &-msg { text-align: @alerts-dialog-text-align; font-size: @large; }
     &-buttons {
         text-align: @alerts-dialog-buttons-text-align; background-color: @alerts-dialog-buttons-bg; padding: @alerts-dialog-padding @alerts-dialog-padding (@alerts-dialog-padding / 2) @alerts-dialog-padding;
@@ -148,7 +149,7 @@
     }
 }
 
-.close-alert {
+.ui-close-alert {
     color: currentColor; line-height: 0; background: @no-color; padding: (@alerts-dialog-padding / 2); border: 0; position: absolute; top: (@alerts-dialog-padding / 2); right: (@alerts-dialog-padding / 2); z-index: 1; opacity: @alerts-dialog-close-opacity; cursor: pointer;
 
     .icon { ._icon(@alerts-dialog-close-icon-size); }
@@ -156,8 +157,8 @@
 }
 
 @media (@md-start) {
-    .dialog-msg { padding: (@alerts-dialog-padding * 3); }
+    .ui-dialog-msg { padding: (@alerts-dialog-padding * 3); }
 }
 @media (@sm-finish) {
-    .dialog-msg { padding: (@alerts-dialog-padding * 3) @alerts-dialog-padding; }
+    .ui-dialog-msg { padding: (@alerts-dialog-padding * 3) @alerts-dialog-padding; }
 }

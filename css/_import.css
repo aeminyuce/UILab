@@ -7388,11 +7388,11 @@ header.ui-sticky-static {
   background-color: var(--ui-tooltip-bg);
 }
 /* alerts */
-.alerts-opened,
-.alerts-opened > body {
+.ui-alerts-opened,
+.ui-alerts-opened > body {
   overflow: hidden;
 }
-.alerts-bg {
+.ui-alerts-bg {
   width: 100%;
   min-width: 320px;
   height: 100%;
@@ -7404,13 +7404,13 @@ header.ui-sticky-static {
   left: 0;
   z-index: 97;
 }
-.alerts-bg:not(.open) {
+.ui-alerts-bg:not(.ui-open) {
   display: none;
 }
-.alerts-bg:not(.open-ease) {
+.ui-alerts-bg:not(.ui-open-ease) {
   opacity: 0;
 }
-.alerts-dialog {
+.ui-alerts-dialog {
   min-width: 280px;
   max-width: 680px;
   background-color: hsl(0, 0%, 100%);
@@ -7422,20 +7422,20 @@ header.ui-sticky-static {
   z-index: 98;
   transform: translate(-50%, -50%);
 }
-.alerts-dialog:not(.show) {
+.ui-alerts-dialog:not(.ui-show) {
   display: none;
 }
-.alerts-dialog:not(.show-ease) {
+.ui-alerts-dialog:not(.ui-show-ease) {
   opacity: 0;
   transform: translate(-50%, -50%) scale(0.8);
 }
-.alerts-dialog.round .dialog-buttons {
+.ui-alerts-dialog.round .ui-dialog-buttons {
   border-radius: 0 0 6px 6px;
 }
-.alerts-dialog.round button {
+.ui-alerts-dialog.round button {
   border-radius: 6px;
 }
-.alerts-msg {
+.ui-alerts-msg {
   text-align: center;
   width: 280px;
   min-height: 30px;
@@ -7444,63 +7444,63 @@ header.ui-sticky-static {
   z-index: 99;
   cursor: pointer;
 }
-.ui-desktop .alerts-msg:hover {
+.ui-desktop .ui-alerts-msg:hover {
   opacity: 0.9;
 }
-.alerts-msg:not(.show) {
+.ui-alerts-msg:not(.ui-show) {
   display: none;
 }
-.alerts-msg:not(.show-ease) {
+.ui-alerts-msg:not(.ui-show-ease) {
   opacity: 0;
 }
-.alerts-msg:not([class*="ui-fill-"]) {
+.ui-alerts-msg:not([class*="ui-fill-"]) {
   color: hsl(0, 0%, 100%);
   background-color: hsl(0, 0%, 9%);
   background-color: var(--ui-alerts-msg-bg);
 }
-.alerts-msg.msg-success {
+.ui-alerts-msg.ui-msg-success {
   background-color: hsl(142, 82%, 42%) !important;
 }
-.alerts-msg.msg-warning {
+.ui-alerts-msg.ui-msg-warning {
   background-color: hsl(42, 100%, 45%) !important;
 }
-.alerts-msg.msg-danger {
+.ui-alerts-msg.ui-msg-danger {
   background-color: hsl(0, 74%, 55%) !important;
 }
-.alerts-msg.tr {
+.ui-alerts-msg.ui-tr {
   top: 20px;
   right: 20px;
 }
-.alerts-msg.tl {
+.ui-alerts-msg.ui-tl {
   top: 20px;
   left: 20px;
 }
-.alerts-msg.br {
+.ui-alerts-msg.ui-br {
   bottom: 20px;
   right: 20px;
 }
-.alerts-msg.bl {
+.ui-alerts-msg.ui-bl {
   bottom: 20px;
   left: 20px;
 }
-.alerts-msg.tr:not(.show-ease),
-.alerts-msg.tl:not(.show-ease) {
+.ui-alerts-msg.ui-tr:not(.ui-show-ease),
+.ui-alerts-msg.ui-tl:not(.ui-show-ease) {
   transform: translateY(-40px);
 }
-.alerts-msg.br:not(.show-ease),
-.alerts-msg.bl:not(.show-ease) {
+.ui-alerts-msg.ui-br:not(.ui-show-ease),
+.ui-alerts-msg.ui-bl:not(.ui-show-ease) {
   transform: translateY(40px);
 }
-.dialog-msg {
+.ui-dialog-msg {
   text-align: center;
   font-size: 16px;
 }
-.dialog-buttons {
+.ui-dialog-buttons {
   text-align: right;
   background-color: hsla(0, 0%, 0%, 0.1);
   padding: 10px 10px 5px 10px;
 }
-.dialog-buttons button {
+.ui-dialog-buttons button {
   font-weight: 700;
   text-align: center;
   vertical-align: middle;
@@ -7512,46 +7512,46 @@ header.ui-sticky-static {
   display: inline-block;
   border: 0;
 }
-.dialog-buttons button:not(:last-child) {
+.ui-dialog-buttons button:not(:last-child) {
   margin-right: 5px;
 }
-button.dialog-success {
+button.ui-dialog-success {
   color: hsl(0, 0%, 100%) !important;
   background-color: hsl(142, 82%, 42%);
 }
-button.dialog-success:focus {
+button.ui-dialog-success:focus {
   box-shadow: 0 0 0 2px hsl(142, 82%, 34%);
   box-shadow: 0 0 0 2px var(--ui-alerts-dialog-success-shadow);
 }
-.ui-desktop button.dialog-success:hover {
+.ui-desktop button.ui-dialog-success:hover {
   background-color: hsl(142, 82%, 48%);
 }
-button.dialog-error {
+button.ui-dialog-error {
   color: hsl(0, 0%, 100%) !important;
   background-color: hsl(0, 74%, 55%);
 }
-button.dialog-error:focus {
+button.ui-dialog-error:focus {
   box-shadow: 0 0 0 2px hsl(0, 74%, 47%);
   box-shadow: 0 0 0 2px var(--ui-alerts-dialog-error-shadow);
 }
-.ui-desktop button.dialog-error:hover {
+.ui-desktop button.ui-dialog-error:hover {
   background-color: hsl(0, 74%, 61%);
 }
-button.dialog-custom {
+button.ui-dialog-custom {
   color: hsl(0, 0%, 0%);
   color: var(--ui-black);
   background-color: hsla(0, 0%, 0%, 0.08);
   background-color: var(--ui-btn-bg);
 }
-button.dialog-custom:focus {
+button.ui-dialog-custom:focus {
   box-shadow: 0 0 0 2px hsla(0, 0%, 0%, 0.3);
   box-shadow: 0 0 0 2px var(--ui-alerts-dialog-custom-shadow);
 }
-.ui-desktop button.dialog-custom:hover {
+.ui-desktop button.ui-dialog-custom:hover {
   background-color: hsla(0, 0%, 0%, 0.15);
   background-color: var(--ui-btn-hover-bg);
 }
-.close-alert {
+.ui-close-alert {
   color: currentColor;
   line-height: 0;
   background: transparent;
@@ -7564,21 +7564,21 @@ button.dialog-custom:focus {
   opacity: 0.45;
   cursor: pointer;
 }
-.close-alert .icon {
+.ui-close-alert .icon {
   width: 12px;
   height: 12px;
   stroke-width: 38px;
 }
-.ui-desktop .close-alert:hover {
+.ui-desktop .ui-close-alert:hover {
   opacity: 0.75;
 }
 @media (min-width: 768px) {
-  .dialog-msg {
+  .ui-dialog-msg {
     padding: 30px;
   }
 }
 @media (max-width: 767px) {
-  .dialog-msg {
+  .ui-dialog-msg {
     padding: 30px 10px;
   }
 }
