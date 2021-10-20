@@ -5767,13 +5767,13 @@ label.custom {
   transition-property: background-color;
   transition-duration: 0.15s;
 }
-.autocomplete {
+.ui-autocomplete {
   overflow: visible !important;
 }
-.autocomplete.open {
+.ui-autocomplete.ui-open {
   z-index: 19;
 }
-.autocomplete ul {
+.ui-autocomplete ul {
   color: hsl(0, 0%, 0%);
   color: var(--ui-black);
   list-style: none;
@@ -5785,32 +5785,32 @@ label.custom {
   margin: 0;
   position: absolute;
 }
-.autocomplete:not(.open) ul {
+.ui-autocomplete:not(.ui-open) ul {
   display: none;
 }
-.autocomplete:not(.open-ease) ul {
+.ui-autocomplete:not(.ui-open-ease) ul {
   opacity: 0;
 }
-.autocomplete:not(.menu-t):not(.border-dual):not(.no-border) ul {
+.ui-autocomplete:not(.ui-menu-t):not(.border-dual):not(.no-border) ul {
   margin-top: 2px;
 }
-.autocomplete.border-dual:not(.menu-t) ul,
-.autocomplete.no-border:not(.menu-t) ul {
+.ui-autocomplete.border-dual:not(.ui-menu-t) ul,
+.ui-autocomplete.no-border:not(.ui-menu-t) ul {
   margin-top: 3px;
 }
-.autocomplete.menu-t ul {
+.ui-autocomplete.ui-menu-t ul {
   bottom: 100%;
 }
-.autocomplete.menu-t:not(.border-dual):not(.no-border) ul {
+.ui-autocomplete.ui-menu-t:not(.border-dual):not(.no-border) ul {
   margin-bottom: 2px;
 }
-.autocomplete.menu-t.border-dual ul {
+.ui-autocomplete.ui-menu-t.border-dual ul {
   margin-bottom: 3px;
 }
-.autocomplete.menu-t.no-border ul {
+.ui-autocomplete.ui-menu-t.no-border ul {
   margin-bottom: 1px;
 }
-.autocomplete li {
+.ui-autocomplete li {
   white-space: nowrap;
   text-overflow: ellipsis;
   text-align: left;
@@ -5819,8 +5819,8 @@ label.custom {
   padding: 5px 10px;
   overflow: hidden;
 }
-.ui-desktop .autocomplete li:hover,
-.autocomplete li.selected {
+.ui-desktop .ui-autocomplete li:hover,
+.ui-autocomplete li.ui-selected {
   background-color: hsla(0, 0%, 0%, 0.075);
   cursor: default;
 }
