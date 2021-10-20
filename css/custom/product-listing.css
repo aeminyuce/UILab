@@ -1,0 +1,43 @@
+/* product listing */
+.ui-product-red {
+  border-color: hsl(358, 86%, 54%);
+}
+.ui-product-pink {
+  border-color: hsl(296, 73%, 53%);
+}
+.ui-product-blue {
+  border-color: hsl(206, 73%, 50%);
+}
+.ui-product-orange {
+  background: hsl(17, 80%, 57%);
+}
+.ui-product-yellow {
+  background: hsl(48, 85%, 60%);
+}
+.ui-product-white {
+  border-color: hsl(0, 0%, 77%);
+}
+.ui-product-black {
+  border-color: hsl(0, 0%, 23%);
+}
+.ui-product-select-red {
+  background-color: hsl(358, 86%, 54%);
+}
+.ui-product-select-pink {
+  background-color: hsl(296, 73%, 53%);
+}
+.ui-product-select-blue {
+  background-color: hsl(206, 73%, 50%);
+}
+.ui-product-select-orange {
+  background-color: hsl(17, 80%, 57%);
+}
+.ui-product-select-yellow {
+  background-color: hsl(48, 85%, 60%);
+}
+.ui-product-select-white {
+  background-color: hsl(0, 0%, 77%);
+}
+.ui-product-select-black {
+  background-color: hsl(0, 0%, 23%);
+}
