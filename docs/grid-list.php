@@ -469,7 +469,7 @@
 
                 <span class="sp-30"></span>
 
-                <div class="grid-list grid-list-striped grid-hover border ui-ease-grid-list round">
+                <div class="grid-list grid-list-striped grid-hover ui-border ui-ease-grid-list round">
 
                     <div class="row sm-fluid">
                         <div class="col-5 sm-no-padding-b">
@@ -1236,7 +1236,7 @@
 
                 <span class="sp-30"></span>
 
-                <div class="grid-list grid-hover border ui-ease-grid-list round">
+                <div class="grid-list grid-hover ui-border ui-ease-grid-list round">
 
                     <div class="row sm-fluid">
                         <div class="col-5 sm-no-padding-b">

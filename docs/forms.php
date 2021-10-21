@@ -1827,7 +1827,7 @@
                 <h4>Different Form Styles</h4>
                 <div class="row">
                     <div class="col-3">
-                        <label class="form-grid">light border with no radius style:</label>
+                        <label class="form-grid">light ui-border with no radius style:</label>
                     </div>
                     <div class="col-9 ui-ease-1st-form">
 
@@ -1881,7 +1881,7 @@
                     </div>
 
                     <div class="col-3">
-                        <label class="form-grid">Inner shadow with no radius and no border style:</label>
+                        <label class="form-grid">Inner shadow with no radius and no ui-border style:</label>
                     </div>
                     <div class="col-9 ui-ease-1st-form">
 
@@ -1935,7 +1935,7 @@
                     </div>
 
                     <div class="col-3">
-                        <label class="form-grid">Using themes with no radius and no border style:</label>
+                        <label class="form-grid">Using themes with no radius and no ui-border style:</label>
                     </div>
                     <div class="col-9 ui-ease-1st-form ui-theme-gray">
 
